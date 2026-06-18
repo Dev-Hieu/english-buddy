@@ -5,20 +5,15 @@ import type { Student } from "@/types";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
-type LessonProgress = Record<string, string[]>;
-
 interface TopicListPageProps {
   student: Student;
-  lessonProgress: LessonProgress;
+  studiedWordIds: string[]; // từ DB trung tâm (đã học = mastery>0)
   onBackHome: () => void;
   onStartTopic: (topicId: string) => void;
 }
 
-function progressKey(studentId: string, topicId: string) {
-  return `${studentId}:${topicId}`;
-}
-
-export function TopicListPage({ student, lessonProgress, onBackHome, onStartTopic }: TopicListPageProps) {
+export function TopicListPage({ student, studiedWordIds, onBackHome, onStartTopic }: TopicListPageProps) {
+  const learned = new Set(studiedWordIds);
   return (
     <main className="mx-auto flex min-h-screen w-full max-w-6xl flex-col gap-6 px-4 py-6 sm:px-6 lg:px-8">
       <header className="flex flex-col gap-4 rounded-lg border border-border bg-white/85 p-5 shadow-soft backdrop-blur sm:flex-row sm:items-center sm:justify-between">
@@ -41,7 +36,7 @@ export function TopicListPage({ student, lessonProgress, onBackHome, onStartTopi
       <section className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {SEED_TOPICS.map((topic) => {
           const words = SEED_VOCABULARY.filter((word) => word.topicIds.includes(topic.id));
-          const studied = lessonProgress[progressKey(student.id, topic.id)]?.length ?? 0;
+          const studied = words.filter((w) => learned.has(w.id)).length;
           const progress = words.length === 0 ? 0 : Math.round((studied / words.length) * 100);
           const complete = progress >= 100;
           const enabled = words.length > 0;

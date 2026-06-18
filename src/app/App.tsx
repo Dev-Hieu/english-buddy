@@ -1,6 +1,8 @@
-import { useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { SEED_STUDENTS } from "@/data/seedStudents";
+import type { StudentVocabularyProgress } from "@/types";
 import { isLoggedIn, logout } from "@/services/authService";
+import { getStudentProgress, recordAnswer } from "@/services/progressService";
 import { HomePage } from "@/pages/HomePage";
 import { LoginPage } from "@/pages/LoginPage";
 import { LessonPage } from "@/pages/LessonPage";
@@ -23,50 +25,64 @@ interface Route {
 }
 
 const SELECTED_STUDENT_KEY = "english-buddy:selected-student";
-const LESSON_PROGRESS_KEY = "english-buddy:lesson-progress";
-type LessonProgress = Record<string, string[]>;
-
 const readSelected = () => (typeof window === "undefined" ? null : localStorage.getItem(SELECTED_STUDENT_KEY));
-function readLessonProgress(): LessonProgress {
-  try {
-    return JSON.parse(localStorage.getItem(LESSON_PROGRESS_KEY) || "{}") as LessonProgress;
-  } catch {
-    return {};
-  }
-}
-const progressKey = (s: string, t: string) => `${s}:${t}`;
 
 export function App() {
   const [authed, setAuthed] = useState(isLoggedIn());
   const [selectedStudentId, setSelectedStudentId] = useState<string | null>(readSelected);
   const [route, setRoute] = useState<Route>({ view: "home", topicId: "topic_food" });
-  const [lessonProgress, setLessonProgress] = useState<LessonProgress>(readLessonProgress);
+  // Tiến độ lấy từ DB trung tâm (đồng bộ mọi máy), KHÔNG dùng localStorage.
+  const [progress, setProgress] = useState<StudentVocabularyProgress[]>([]);
 
   const student = SEED_STUDENTS.find((s) => s.id === selectedStudentId) ?? null;
-  const navigate = (view: View, topicId = route.topicId) => setRoute({ view, topicId });
+
+  const loadProgress = useCallback(() => {
+    if (!authed || !selectedStudentId) return;
+    getStudentProgress(selectedStudentId).then(setProgress).catch(() => {});
+  }, [authed, selectedStudentId]);
+
+  // Tải tiến độ khi đăng nhập / đổi bé.
+  useEffect(() => {
+    loadProgress();
+  }, [loadProgress]);
+
+  const navigate = (view: View, topicId = route.topicId) => {
+    setRoute({ view, topicId });
+    // Làm tươi tiến độ khi quay về các màn hiển thị tiến độ.
+    if (view === "home" || view === "topics") loadProgress();
+  };
 
   const selectStudent = (id: string) => {
     setSelectedStudentId(id);
     localStorage.setItem(SELECTED_STUDENT_KEY, id);
+    setProgress([]);
     setRoute({ view: "home", topicId: "topic_food" });
   };
 
-  const markWordStudied = (topicId: string, wordId: string) => {
+  // Học/đánh dấu 1 từ -> ghi DB (recordAnswer) + cập nhật tiến độ tại chỗ (optimistic).
+  const markWordStudied = (wordId: string) => {
     if (!student) return;
-    setLessonProgress((prev) => {
-      const key = progressKey(student.id, topicId);
-      const next = { ...prev, [key]: Array.from(new Set([...(prev[key] ?? []), wordId])) };
-      localStorage.setItem(LESSON_PROGRESS_KEY, JSON.stringify(next));
-      return next;
+    setProgress((prev) => {
+      const existing = prev.find((p) => p.wordId === wordId);
+      if (existing && existing.mastery > 0) return prev;
+      const stub: StudentVocabularyProgress = existing
+        ? { ...existing, mastery: Math.max(1, existing.mastery) as StudentVocabularyProgress["mastery"], status: "learning" }
+        : { studentId: student.id, wordId, status: "learning", mastery: 1, correctCount: 1, wrongCount: 0, lastReviewedAt: Date.now(), nextReviewAt: Date.now() };
+      return existing ? prev.map((p) => (p.wordId === wordId ? stub : p)) : [...prev, stub];
     });
+    recordAnswer(student.id, wordId, true)
+      .then(loadProgress)
+      .catch(() => {});
   };
+
+  const studiedWordIds = progress.filter((p) => p.mastery > 0).map((p) => p.wordId);
 
   const doLogout = () => {
     logout();
     setAuthed(false);
   };
 
-  if (!authed) return <LoginPage onLogin={() => setAuthed(true)} />;
+  if (!authed) return <LoginPage onLogin={() => { setAuthed(true); loadProgress(); }} />;
 
   if (!student || route.view === "student-select") {
     return <StudentSelectPage selectedStudentId={selectedStudentId} onSelectStudent={selectStudent} />;
@@ -77,7 +93,7 @@ export function App() {
       return (
         <TopicListPage
           student={student}
-          lessonProgress={lessonProgress}
+          studiedWordIds={studiedWordIds}
           onBackHome={() => navigate("home")}
           onStartTopic={(topicId) => navigate("lesson", topicId)}
         />
@@ -87,8 +103,8 @@ export function App() {
         <LessonPage
           topicId={route.topicId}
           student={student}
-          studiedWordIds={lessonProgress[progressKey(student.id, route.topicId)] ?? []}
-          onMarkWordStudied={(wordId) => markWordStudied(route.topicId, wordId)}
+          studiedWordIds={studiedWordIds}
+          onMarkWordStudied={markWordStudied}
           onBackHome={() => navigate("home")}
           onPracticeFlashcard={() => navigate("flashcard")}
           onStartTest={() => navigate("test")}
