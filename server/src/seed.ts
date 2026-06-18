@@ -35,16 +35,21 @@ export function seedAll(): void {
      VALUES (@id, @email, @passwordHash, @name, @role, @createdAt, @studentLimit)`
   );
 
-  // Giữ ảnh đã có sẵn trong DB (vd do imageWorker lấy) nếu seed không có ảnh cho từ đó.
-  const getImg = db.prepare("SELECT imageUrl FROM vocabulary WHERE id = ?");
+  // Ảnh đã có sẵn trong DB (vd imageWorker lấy) -> map để giữ lại khi nạp lại.
+  const existingImg: Record<string, string> = {};
+  for (const r of db.prepare("SELECT id, imageUrl FROM vocabulary WHERE imageUrl IS NOT NULL AND imageUrl != ''").all() as { id: string; imageUrl: string }[]) {
+    existingImg[r.id] = r.imageUrl;
+  }
   // SEED_CONTENT_ONLY=1: chỉ nạp chủ đề + từ vựng (deploy cập nhật nội dung),
   // KHÔNG đụng tài khoản/học sinh demo -> không reset mật khẩu/tiến độ trên production.
   const contentOnly = process.env.SEED_CONTENT_ONLY === "1";
   const tx = db.transaction(() => {
     if (!contentOnly) for (const u of SEED_USERS) insUser.run({ ...u, passwordHash: hashPassword("123456"), createdAt: Date.now() });
+    // Xóa rồi nạp lại để loại bỏ chủ đề/từ đã bị gỡ (vd bản trùng) — không để rác trong DB.
+    db.exec("DELETE FROM topics");
+    db.exec("DELETE FROM vocabulary");
     for (const t of SEED_TOPICS) insTopic.run(t);
     for (const w of SEED_VOCABULARY) {
-      const existing = w.imageUrl ? "" : ((getImg.get(w.id) as { imageUrl?: string } | undefined)?.imageUrl ?? "");
       insWord.run({
         ...w,
         phonetic: w.phonetic ?? null,
@@ -52,7 +57,7 @@ export function seedAll(): void {
         example: w.example ?? null,
         example_vi: w.example_vi ?? null,
         audioUrl: w.audioUrl ?? null,
-        imageUrl: w.imageUrl || existing,
+        imageUrl: w.imageUrl || existingImg[w.id] || "",
         topicIds: JSON.stringify(w.topicIds),
       });
     }

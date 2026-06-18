@@ -144,9 +144,18 @@ const CORE_WORDS: VocabularyWord[] = [
   word({ id: "word_mountain", word: "mountain", phonetic: "/ˈmaʊn.tɪn/", meaning_vi: "ngọn núi", example: "The mountain is high.", example_vi: "Ngọn núi cao.", topicIds: ["topic_travel"] }),
 ];
 
-// Gộp toàn bộ: từ cơ bản + mọi cấp độ do các agent sinh (khử trùng id, giữ bản đầu).
-function dedupeById(list: VocabularyWord[]): VocabularyWord[] {
-  const seen = new Set<string>();
-  return list.filter((w) => (seen.has(w.id) ? false : (seen.add(w.id), true)));
+// Gộp toàn bộ: từ cơ bản + mọi cấp độ do các agent sinh.
+// Khử trùng theo id VÀ theo (cấp + từ) — tránh lặp thẻ khi nhiều đợt agent sinh cùng 1 từ
+// trong cùng cấp. Giữ bản XUẤT HIỆN ĐẦU (CORE_WORDS đứng trước nên giữ bản đã soạn kỹ).
+function dedupeVocab(list: VocabularyWord[]): VocabularyWord[] {
+  const seenId = new Set<string>();
+  const seenWord = new Set<string>();
+  return list.filter((w) => {
+    const wk = `${w.level}|${w.word.toLowerCase().trim()}`;
+    if (seenId.has(w.id) || seenWord.has(wk)) return false;
+    seenId.add(w.id);
+    seenWord.add(wk);
+    return true;
+  });
 }
-export const SEED_VOCABULARY: VocabularyWord[] = dedupeById([...CORE_WORDS, ...ALL_LEVEL_WORDS]);
+export const SEED_VOCABULARY: VocabularyWord[] = dedupeVocab([...CORE_WORDS, ...ALL_LEVEL_WORDS]);
