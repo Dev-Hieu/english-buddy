@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chọn ảnh — English Buddy</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: system-ui, -apple-system, sans-serif; margin: 0; background: #f6f7fb; color: #1f2430; }
+    header { position: sticky; top: 0; background: #fff; border-bottom: 1px solid #e5e7eb; padding: 14px 20px; }
+    header h1 { margin: 0 0 4px; font-size: 18px; }
+    header p { margin: 0; font-size: 13px; color: #6b7280; }
+    .filter { margin-top: 10px; }
+    .filter select { padding: 6px 10px; border-radius: 8px; border: 1px solid #d1d5db; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 14px; padding: 20px; }
+    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 12px; }
+    .card .head { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+    .card .word { font-weight: 800; font-size: 18px; text-transform: capitalize; }
+    .card .vi { color: #6b7280; font-size: 13px; }
+    .current { width: 100%; height: 150px; object-fit: cover; border-radius: 8px; background: #eef0f5; margin: 10px 0; }
+    .current.empty { display: flex; align-items: center; justify-content: center; color: #9aa1ad; font-size: 40px; font-weight: 800; }
+    .row { display: flex; gap: 6px; }
+    .row input { flex: 1; padding: 7px 9px; border: 1px solid #d1d5db; border-radius: 8px; font-size: 13px; }
+    button { padding: 7px 12px; border: 0; border-radius: 8px; background: #6d5efc; color: #fff; font-weight: 600; cursor: pointer; font-size: 13px; }
+    button.ghost { background: #eef0f5; color: #374151; }
+    .cands { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; margin-top: 8px; }
+    .cands img { width: 100%; height: 64px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 3px solid transparent; }
+    .cands img:hover { border-color: #6d5efc; }
+    .saved { color: #16a34a; font-size: 12px; font-weight: 700; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🖼️ Chọn ảnh minh hoạ — English Buddy</h1>
+    <p>Bấm “Đổi ảnh” ở từ bất kỳ → xem ứng viên từ Pexels → bấm ảnh để chọn. Lưu xong app tự cập nhật (F5 trang học).</p>
+    <div class="filter">Chủ đề: <select id="topicFilter"><option value="">Tất cả</option></select></div>
+  </header>
+  <div class="grid" id="grid"></div>
+
+  <script>
+    const API = location.origin;
+    let WORDS = [];
+
+    async function load() {
+      WORDS = await (await fetch(API + "/api/vocabulary")).json();
+      const topics = await (await fetch(API + "/api/topics")).json();
+      const sel = document.getElementById("topicFilter");
+      topics.forEach(t => { const o = document.createElement("option"); o.value = t.id; o.textContent = t.name + " (" + t.name_vi + ")"; sel.appendChild(o); });
+      sel.onchange = render;
+      render();
+    }
+
+    function render() {
+      const topic = document.getElementById("topicFilter").value;
+      const grid = document.getElementById("grid");
+      grid.innerHTML = "";
+      WORDS.filter(w => !topic || w.topicIds.includes(topic)).forEach(w => grid.appendChild(card(w)));
+    }
+
+    function card(w) {
+      const el = document.createElement("div");
+      el.className = "card";
+      const img = w.imageUrl
+        ? '<img class="current" src="' + w.imageUrl + '" alt="">'
+        : '<div class="current empty">' + w.word[0].toUpperCase() + '</div>';
+      el.innerHTML =
+        '<div class="head"><span class="word">' + w.word + '</span><span class="vi">' + w.meaning_vi + '</span></div>' +
+        img +
+        '<div class="row"><input value="' + w.word + '" /><button>Đổi ảnh</button></div>' +
+        '<div class="cands"></div><div class="msg"></div>';
+
+      const input = el.querySelector("input");
+      const btn = el.querySelector("button");
+      const cands = el.querySelector(".cands");
+      const msg = el.querySelector(".msg");
+
+      btn.onclick = async () => {
+        btn.textContent = "Đang tìm…";
+        const list = await (await fetch(API + "/api/image?count=12&query=" + encodeURIComponent(input.value))).json();
+        btn.textContent = "Đổi ảnh";
+        cands.innerHTML = "";
+        list.forEach(im => {
+          const t = document.createElement("img");
+          t.src = im.thumbUrl; t.title = im.photographer;
+          t.onclick = () => pick(w, im.url, el);
+          cands.appendChild(t);
+        });
+        // ô dán URL tuỳ ý
+        const custom = document.createElement("div");
+        custom.className = "row"; custom.style.marginTop = "8px";
+        custom.innerHTML = '<input placeholder="Hoặc dán URL ảnh..." /><button class="ghost">Dùng URL</button>';
+        custom.querySelector("button").onclick = () => pick(w, custom.querySelector("input").value.trim(), el);
+        cands.after(custom);
+      };
+      return el;
+    }
+
+    async function pick(w, url, el) {
+      await fetch(API + "/api/image-pick", {
+        method: "POST", headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ wordId: w.id, url })
+      });
+      w.imageUrl = url;
+      const cur = el.querySelector(".current");
+      const fresh = '<img class="current" src="' + url + '" alt="">';
+      cur.outerHTML = fresh;
+      el.querySelector(".msg").innerHTML = '<span class="saved">✓ Đã lưu</span>';
+    }
+
+    load();
+  </script>
+</body>
+</html>

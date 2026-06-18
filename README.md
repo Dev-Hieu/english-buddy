@@ -40,6 +40,9 @@ npm run test       # vitest
 npm run build      # build production
 ```
 
+## Chọn ảnh minh hoạ (phụ huynh)
+Khi server chạy, mở **http://localhost:8787/picker** để xem nhiều ảnh ứng viên (Pexels) cho từng từ, bấm chọn ảnh ưng ý (hoặc dán URL riêng). Lưu xong app học tự cập nhật (F5).
+
 ## Cấu hình môi trường
 - Frontend `.env.local`: `VITE_API_BASE_URL`.
 - Server `server/.env` (KHÔNG commit): `PARENT_PASSWORD`, `PEXELS_KEY` (và `UNSPLASH_KEY` tùy chọn). API key chỉ nằm ở server, không lộ ra frontend.

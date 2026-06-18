@@ -1,13 +1,32 @@
 import cors from "cors";
 import express from "express";
+import { writeFileSync } from "node:fs";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
 import { db, initSchema } from "./db.js";
 import { login, requireAuth } from "./auth.js";
 import { nextReview } from "../../src/utils/spacedRepetition";
 import { buildQuiz } from "../../src/utils/quizGenerator";
 import type { VocabularyWord } from "../../src/types";
 
+const dir = path.dirname(fileURLToPath(import.meta.url));
+const PUBLIC_DIR = path.join(dir, "..", "public");
+const SEED_IMAGES_PATH = path.join(dir, "..", "..", "src", "data", "seedImages.ts");
+
 function rowToWord(r: any): VocabularyWord {
   return { ...r, topicIds: JSON.parse(r.topicIds) };
+}
+
+// Ghi lại src/data/seedImages.ts từ imageUrl hiện tại trong DB -> app tự cập nhật (Vite HMR).
+function regenerateSeedImages(): void {
+  const rows = db.prepare("SELECT id, imageUrl FROM vocabulary").all() as any[];
+  const map: Record<string, string> = {};
+  for (const r of rows) map[r.id] = r.imageUrl || "";
+  const body = `// Ảnh minh họa cho seed words — chỉnh qua trang /picker hoặc sửa tay (C-002).
+// key = word id; rỗng -> WordCard hiện placeholder chữ cái.
+export const IMAGE_URLS: Record<string, string> = ${JSON.stringify(map, null, 2)};
+`;
+  writeFileSync(SEED_IMAGES_PATH, body);
 }
 
 export function createApp() {
@@ -15,8 +34,12 @@ export function createApp() {
   const app = express();
   app.use(cors());
   app.use(express.json());
+  app.use(express.static(PUBLIC_DIR));
 
   app.get("/api/health", (_req, res) => res.json({ ok: true }));
+
+  // Trang chọn ảnh cho phụ huynh.
+  app.get("/picker", (_req, res) => res.sendFile(path.join(PUBLIC_DIR, "picker.html")));
 
   // ── Auth ──
   app.post("/api/login", (req, res) => {
@@ -108,14 +131,25 @@ export function createApp() {
   // ── Proxy ảnh (Pexels + fallback Unsplash) ──
   app.get("/api/image", async (req, res) => {
     const query = String(req.query.query || "").trim();
+    const count = Math.min(Number(req.query.count || 5), 15);
     if (!query) return res.status(400).json({ error: "thiếu query" });
     try {
-      let images = await fromPexels(query);
-      if (images.length === 0) images = await fromUnsplash(query);
+      let images = await fromPexels(query, count);
+      if (images.length === 0) images = await fromUnsplash(query, count);
       res.json(images);
     } catch {
       res.status(502).json({ error: "image proxy lỗi" });
     }
+  });
+
+  // ── Chọn/đổi ảnh cho 1 từ (dùng bởi trang /picker) ──
+  app.post("/api/image-pick", (req, res) => {
+    const { wordId, url } = req.body || {};
+    if (!wordId) return res.status(400).json({ error: "thiếu wordId" });
+    const r = db.prepare("UPDATE vocabulary SET imageUrl = ? WHERE id = ?").run(url ?? "", wordId);
+    if (r.changes === 0) return res.status(404).json({ error: "không có wordId" });
+    regenerateSeedImages(); // cập nhật src/data/seedImages.ts -> app tự reload
+    res.json({ ok: true, wordId, url: url ?? "" });
   });
 
   // ── Proxy dịch (MyMemory en->vi) + cache trong DB ──
@@ -139,10 +173,10 @@ export function createApp() {
   return app;
 }
 
-async function fromPexels(query: string) {
+async function fromPexels(query: string, count = 5) {
   const key = process.env.PEXELS_KEY || "";
   if (!key) return [];
-  const r = await fetch(`https://api.pexels.com/v1/search?query=${encodeURIComponent(query)}&per_page=5`, {
+  const r = await fetch(`https://api.pexels.com/v1/search?query=${encodeURIComponent(query)}&per_page=${count}`, {
     headers: { Authorization: key },
   });
   if (!r.ok) return [];
@@ -153,10 +187,10 @@ async function fromPexels(query: string) {
   }));
 }
 
-async function fromUnsplash(query: string) {
+async function fromUnsplash(query: string, count = 5) {
   const key = process.env.UNSPLASH_KEY || "";
   if (!key) return [];
-  const r = await fetch(`https://api.unsplash.com/search/photos?query=${encodeURIComponent(query)}&per_page=5`, {
+  const r = await fetch(`https://api.unsplash.com/search/photos?query=${encodeURIComponent(query)}&per_page=${count}`, {
     headers: { Authorization: `Client-ID ${key}` },
   });
   if (!r.ok) return [];

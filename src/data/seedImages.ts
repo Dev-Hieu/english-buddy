@@ -1,5 +1,5 @@
-// Ảnh minh họa cho seed words — lấy tự động từ Pexels (review/đổi tay khi cần, C-002).
-// Đổi 1 URL ở đây để thay ảnh cho 1 từ; key = word id. Rỗng -> WordCard hiện placeholder chữ cái.
+// Ảnh minh họa cho seed words — chỉnh qua trang /picker hoặc sửa tay (C-002).
+// key = word id; rỗng -> WordCard hiện placeholder chữ cái.
 export const IMAGE_URLS: Record<string, string> = {
   "word_apple": "https://images.pexels.com/photos/11663121/pexels-photo-11663121.jpeg?auto=compress&cs=tinysrgb&h=350",
   "word_banana": "https://images.pexels.com/photos/16829201/pexels-photo-16829201.jpeg?auto=compress&cs=tinysrgb&h=350",
@@ -60,7 +60,7 @@ export const IMAGE_URLS: Record<string, string> = {
   "word_cycling": "https://images.pexels.com/photos/10553761/pexels-photo-10553761.jpeg?auto=compress&cs=tinysrgb&h=350",
   "word_ball": "https://images.pexels.com/photos/13849500/pexels-photo-13849500.jpeg?auto=compress&cs=tinysrgb&h=350",
   "word_team": "https://images.pexels.com/photos/7640444/pexels-photo-7640444.jpeg?auto=compress&cs=tinysrgb&h=350",
-  "word_happy": "https://images.pexels.com/photos/18262758/pexels-photo-18262758.jpeg?auto=compress&cs=tinysrgb&h=350",
+  "word_happy": "https://images.pexels.com/photos/9582995/pexels-photo-9582995.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
   "word_sad": "https://images.pexels.com/photos/8424626/pexels-photo-8424626.jpeg?auto=compress&cs=tinysrgb&h=350",
   "word_angry": "https://images.pexels.com/photos/3823495/pexels-photo-3823495.jpeg?auto=compress&cs=tinysrgb&h=350",
   "word_tired": "https://images.pexels.com/photos/31051562/pexels-photo-31051562.jpeg?auto=compress&cs=tinysrgb&h=350",
