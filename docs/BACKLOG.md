@@ -26,7 +26,7 @@
 | T-011 | StudentSelectPage (chọn Bảo Ngọc/Bảo Nam) | Codex | TODO | T-010 | chọn & nhớ profile |
 | T-012 | HomePage (mục tiêu hôm nay + nút điều hướng) | Codex | TODO | T-011 | điều hướng đủ 5 nút |
 | T-013 | Seed data local 100 từ (cấu trúc) + seedTopics | Claude | IN_PROGRESS | T-003 | khung + 10 topics + Food (10 từ) xong; 9 chủ đề chờ nội dung (C-001/C-002) |
-| T-014 | progressService + spacedRepetition util | Claude | IN_REVIEW | T-003,T-004 | code xong (`spacedRepetition`, `normalizeWord`, `progressService`); chờ typecheck sau T-001 |
+| T-014 | progressService + spacedRepetition util | Claude | IN_REVIEW | T-003,T-004 | ✅ typecheck pass; `progressService` cần Firebase project để chạy thật |
 
 ## Sprint 2 — Lát cắt dọc Food (học từ vựng)
 
@@ -35,24 +35,24 @@
 | T-020 | TopicListPage (hiện tiến độ mỗi chủ đề) | Codex | TODO | T-012,T-013 | list 10 chủ đề + % |
 | T-021 | WordCard component (ảnh/từ/phiên âm/nghe) | Codex | TODO | T-003 | render đúng 1 từ |
 | T-022 | LessonPage chủ đề Food (5–10 từ) | Codex | TODO | T-021 | học hết 1 bài |
-| T-023 | speechService (audioUrl → TTS fallback) | Claude | IN_REVIEW | T-003 | code xong; chờ typecheck sau T-001 |
+| T-023 | speechService (audioUrl → TTS fallback) | Claude | DONE | T-003 | ✅ typecheck pass; thuần browser API |
 | T-024 | Flashcard + ghi mastery qua progressService | Both | TODO | T-014,T-021 | "I know/Need review" lưu đúng |
 
 ## Sprint 3 — Quick Lookup
 
 | ID | Task | Owner | Status | Depends | DoD |
 |----|------|-------|--------|---------|-----|
-| T-030 | dictionaryService (chuẩn hóa Dictionary API) | Claude | IN_REVIEW | T-003 | code xong; chờ typecheck sau T-001 |
+| T-030 | dictionaryService (chuẩn hóa Dictionary API) | Claude | DONE | T-003 | ✅ typecheck pass; API không cần key |
 | T-031 | Functions `/image` (Pexels proxy, safe-search) | Claude | IN_REVIEW | T-004 | code xong (`functions/index.js`); **chờ PEXELS_KEY + deploy** |
 | T-032 | Functions `/translate` + cache | Claude | IN_REVIEW | T-004 | code xong (MyMemory + cache theo instance); chờ deploy |
-| T-033 | imageService + translateService (gọi Functions) | Claude | IN_REVIEW | T-031,T-032 | code xong, khớp CONTRACTS; chờ typecheck |
+| T-033 | imageService + translateService (gọi Functions) | Claude | IN_REVIEW | T-031,T-032 | ✅ typecheck pass; cần Functions deploy để chạy thật |
 | T-034 | LookupPage + Word Card + Save to My Words | Codex | TODO | T-030,T-033 | tra & lưu được |
 
 ## Sprint 4 — Ôn tập, Game, Test
 
 | ID | Task | Owner | Status | Depends | DoD |
 |----|------|-------|--------|---------|-----|
-| T-040 | quizGenerator util + quizService (distractor cùng chủ đề) | Claude | IN_REVIEW | T-013 | code xong (`buildQuiz` + `quizService`); chờ typecheck |
+| T-040 | quizGenerator util + quizService (distractor cùng chủ đề) | Claude | IN_REVIEW | T-013 | ✅ typecheck pass; `buildQuiz` thuần xong; `quizService` cần Firestore để chạy |
 | T-041 | ReviewPage (từ đến hạn ôn) | Codex | TODO | T-014,T-024 | hiện đúng từ due |
 | T-042 | Game: Match Word + Pick Picture | Codex | TODO | T-040 | chơi & cộng XP |
 | T-043 | Game: Listen & Choose + Word Builder | Codex | TODO | T-040,T-023 | chơi được |
