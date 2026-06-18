@@ -26,7 +26,8 @@ function makeQuestion(pool: VocabularyWord[]): Q {
 }
 
 function Lane({ emoji, pos, label, lead }: { emoji: string; pos: number; label: string; lead: boolean }) {
-  const left = `${Math.min(pos / GOAL, 1) * 84}%`;
+  // chừa lề hai bên: bắt đầu cách mép trái ~5%, tới đích dừng ~79% (trước cờ).
+  const left = `${5 + Math.min(pos / GOAL, 1) * 74}%`;
   return (
     <div>
       <p className="mb-1 flex items-center gap-1 text-xs font-extrabold text-muted-foreground">
