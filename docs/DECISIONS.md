@@ -40,12 +40,24 @@ Có `audioUrl` (Dictionary) thì phát file đó; không có mới fallback Web 
 Từ thuộc nhiều chủ đề (vd `fish`) lưu 1 document với mảng `topicIds`, tránh trùng `id`.
 
 ## D-009 — Firebase Emulator cho dev
-**Ngày:** 2026-06-18 · **Trạng thái:** ✅ Chốt
-Hỗ trợ chạy local không cần project thật: `firebase emulators:start` + `VITE_USE_EMULATOR=true`. `firebase.ts` tự kết nối Auth (9099) + Firestore (8080) khi cờ bật.
-**Lý do:** chạy lát cắt Food end-to-end ngay, không chặn bởi việc tạo project.
+**Ngày:** 2026-06-18 · **Trạng thái:** ⛔ Bị thay thế bởi D-010
+~~Hỗ trợ chạy local bằng Firebase Emulator.~~ Không còn dùng Firebase.
+
+## D-010 — Backend tự host (SQLite + Express API) thay cho Firebase
+**Ngày:** 2026-06-18 · **Trạng thái:** ✅ Chốt · **Thay thế:** phần backend của D-001, D-007, D-009
+Theo yêu cầu "DB riêng cho chủ động". Dựng `server/` (Node + Express + better-sqlite3):
+- DB SQLite (`server/data.db`), seed dùng chung nguồn với client (`src/data`).
+- API: topics/vocabulary (public), students/progress/quiz/lookup (cần auth), proxy `/api/image` (Pexels) + `/api/translate` (MyMemory, cache trong DB).
+- Auth tối giản: 1 mật khẩu phụ huynh (env `PARENT_PASSWORD`) → token in-memory.
+- Client gọi API qua `src/services/api.ts`; **CONTRACTS chữ ký service dữ liệu giữ nguyên** → UI không đổi.
+- Spaced repetition & quiz generator **dùng chung** `src/utils` giữa client và server (single source).
+**Lý do:** chủ động hoàn toàn (không phụ thuộc tạo Firebase project/key) **và** có đồng bộ đa thiết bị qua server.
+**Đánh đổi:** cần host server ở nơi các thiết bị truy cập được (LAN/VPS) để sync thật; key Pexels đặt ở `server/.env` (không commit).
+**Đã verify:** seed 99 từ; auth/progress/quiz/translate/image (Pexels key thật) chạy OK; client+server typecheck sạch; 10 unit test pass.
 
 ---
 
 ## Đang chờ chốt
-- **Cách đăng nhập phụ huynh** (Google sign-in vs email/password) — cần cho **T-010** của Codex. Claude đề xuất **Google sign-in**. Chờ anh Hieu chốt.
-- `M-002`: phạm vi nội dung seed — Claude đã soạn nháp toàn bộ ~100 từ (chờ anh review).
+- **Đăng nhập:** đã chốt qua D-010 — dùng **1 mật khẩu phụ huynh** (đổi `PARENT_PASSWORD` trong `server/.env`). T-010 (LoginPage) gọi `authService.login(password)`.
+- `M-002`: nội dung seed — Claude đã soạn nháp toàn bộ ~100 từ (chờ anh review chất lượng).
+- **Hosting server:** chọn nơi host (máy ở nhà trên LAN / VPS / Railway…) để 2 bé dùng chung — chờ anh quyết khi deploy.

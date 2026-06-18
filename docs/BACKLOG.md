@@ -15,18 +15,18 @@
 | T-001 | Init project React+Vite+TS | Codex | DONE | — | root, `src/app` | ✅ `npm run dev` chạy, Vite phục vụ HTTP 200 |
 | T-002 | Cài Tailwind + shadcn/ui + layout gốc | Codex | DONE | T-001 | `src/app`, config | ✅ Tailwind + shadcn-style UI render trong layout gốc |
 | T-003 | Khóa `src/types/*` theo CONTRACTS v1 | Claude | DONE | — | `src/types` | ✅ 7 file types khớp CONTRACTS v1 |
-| T-004 | Setup Firebase project + `firebase.ts` + security rules | Claude | IN_REVIEW | — | `firebase.ts`, `firestore.rules`, `firebase.json` | code xong; **chờ anh Hieu tạo project + điền `.env.local`** rồi mới kết nối thật |
+| T-004 | ~~Firebase~~ → **API server tự host + DB** (`server/`, D-010) | Claude | DONE | — | `server/**`, `api.ts`, `authService` | ✅ Express+SQLite; seed 99 từ; auth/progress/quiz/translate/image verified live |
 | T-005 | `.gitignore`, README, scripts (`dev/build/typecheck`) | Both | DONE | T-001 | root | ✅ scripts có `dev/build/typecheck/preview`, secret vẫn bị ignore |
 
 ## Sprint 1 — Khung app chạy được
 
 | ID | Task | Owner | Status | Depends | DoD |
 |----|------|-------|--------|---------|-----|
-| T-010 | LoginPage (1 parent) + Auth flow | Codex | BLOCKED | T-002,T-004 | chờ anh Hieu chốt Google sign-in vs email/password |
+| T-010 | LoginPage (1 parent) + Auth flow | Codex | TODO | T-004 | **Hết BLOCKED (D-010):** gọi `authService.login(password)`; lưu token; chặn route khi chưa đăng nhập |
 | T-011 | StudentSelectPage (chọn Bảo Ngọc/Bảo Nam) | Codex | DONE | T-010 | ✅ chọn & nhớ profile bằng `localStorage` |
 | T-012 | HomePage (mục tiêu hôm nay + nút điều hướng) | Codex | DONE | T-011 | ✅ hiện profile, mục tiêu ngày, 5 nút điều hướng |
 | T-013 | Seed data local 100 từ (cấu trúc) + seedTopics | Claude | DONE | T-003 | ✅ 10 topics + ~100 từ (nháp, chờ anh review) + seedStudents; ảnh chờ C-002 |
-| T-014 | progressService + spacedRepetition util | Claude | IN_REVIEW | T-003,T-004 | ✅ typecheck + 6 unit test SR pass; `progressService` cần Firebase/emulator để chạy thật |
+| T-014 | progressService + spacedRepetition util | Claude | DONE | T-003,T-004 | ✅ progressService gọi API; SR dùng chung client+server; 6 unit test + endpoint verified |
 
 ## Sprint 2 — Lát cắt dọc Food (học từ vựng)
 
@@ -43,16 +43,16 @@
 | ID | Task | Owner | Status | Depends | DoD |
 |----|------|-------|--------|---------|-----|
 | T-030 | dictionaryService (chuẩn hóa Dictionary API) | Claude | DONE | T-003 | ✅ typecheck pass; API không cần key |
-| T-031 | Functions `/image` (Pexels proxy, safe-search) | Claude | IN_REVIEW | T-004 | code xong (`functions/index.js`); **chờ PEXELS_KEY + deploy** |
-| T-032 | Functions `/translate` + cache | Claude | IN_REVIEW | T-004 | code xong (MyMemory + cache theo instance); chờ deploy |
-| T-033 | imageService + translateService (gọi Functions) | Claude | IN_REVIEW | T-031,T-032 | ✅ typecheck pass; cần Functions deploy để chạy thật |
+| T-031 | `/api/image` (Pexels proxy) trong server | Claude | DONE | T-004 | ✅ verified: Pexels key thật trả 5 ảnh |
+| T-032 | `/api/translate` + cache (DB) trong server | Claude | DONE | T-004 | ✅ verified: "butterfly" → "con bướm", cache trong SQLite |
+| T-033 | imageService + translateService (gọi API) | Claude | DONE | T-031,T-032 | ✅ gọi `/api/image`, `/api/translate`; typecheck sạch |
 | T-034 | LookupPage + Word Card + Save to My Words | Codex | TODO | T-030,T-033 | tra & lưu được |
 
 ## Sprint 4 — Ôn tập, Game, Test
 
 | ID | Task | Owner | Status | Depends | DoD |
 |----|------|-------|--------|---------|-----|
-| T-040 | quizGenerator util + quizService (distractor cùng chủ đề) | Claude | IN_REVIEW | T-013 | ✅ typecheck + 4 unit test buildQuiz pass; `quizService` cần Firestore để chạy |
+| T-040 | quizGenerator util + quizService (distractor cùng chủ đề) | Claude | DONE | T-013 | ✅ `/api/quiz` verified (5 câu, đáp án đúng ∈ options); 4 unit test pass |
 | T-041 | ReviewPage (từ đến hạn ôn) | Codex | TODO | T-014,T-024 | hiện đúng từ due |
 | T-042 | Game: Match Word + Pick Picture | Codex | TODO | T-040 | chơi & cộng XP |
 | T-043 | Game: Listen & Choose + Word Builder | Codex | TODO | T-040,T-023 | chơi được |
@@ -64,7 +64,7 @@
 |----|------|-------|--------|---------|-----|
 | T-050 | ParentDashboard (tiến độ từng bé) | Codex | TODO | T-014,T-044 | đủ 10 mục thống kê |
 | T-051 | Nhân nội dung 9 chủ đề còn lại | Hieu | TODO | T-022 | đủ 100 từ có nghĩa+ảnh+phát âm |
-| T-052 | Deploy Firebase Hosting | Claude | TODO | tất cả | URL chạy trên PC+mobile |
+| T-052 | Deploy: host server (`server/`) + static frontend | Claude | TODO | tất cả | chờ anh chọn nơi host (LAN/VPS); URL chạy PC+mobile |
 | T-053 | Nghiệm thu theo DoD (TECH_SPEC §14) | Both+Hieu | TODO | T-052 | đủ 10 tiêu chí |
 
 ---
@@ -86,3 +86,4 @@
 - 2026-06-18 — T-013 DONE: nháp ~100 từ/10 chủ đề + `seedStudents`; Firebase Emulator (D-009); vitest + 10 unit test (SR + quiz) pass; `tsc -b` sạch (Claude).
 - 2026-06-18 — T-021/T-022 DONE: `WordCard` có phát âm qua `speechService`; `LessonPage` Food lướt 10 từ + progress local; `typecheck/build/test` pass (Codex).
 - 2026-06-18 — T-011/T-012/T-020 DONE: chọn profile, Home theo bé, TopicList 10 chủ đề + progress local; T-010 BLOCKED chờ quyết định login (Codex).
+- 2026-06-18 — **PIVOT D-010:** backend Firebase → **server tự host (Express+SQLite)** trong `server/`. T-004/T-014/T-031/T-032/T-033/T-040 DONE & verified live (auth, progress, quiz, image với Pexels key, translate). Client service đấu vào `api.ts`, gỡ Firebase. CONTRACTS v2 (+authService, +contentService, chữ ký cũ giữ nguyên). T-010 hết BLOCKED (Claude).

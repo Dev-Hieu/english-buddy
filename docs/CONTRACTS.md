@@ -5,7 +5,9 @@
 > **Quy tắc vàng:** muốn đổi bất kỳ type nào ở đây → mở một **REQUEST** trong [MESSAGES.md](./MESSAGES.md), đợi ack, rồi mới sửa. Không đổi lén.
 > Mỗi thay đổi: tăng **Contracts version** ở dưới và ghi 1 dòng changelog.
 
-**Contracts version:** `1` · cập nhật lần cuối: 2026-06-18
+**Contracts version:** `2` · cập nhật lần cuối: 2026-06-18
+
+> **Kiến trúc backend (D-010):** services gọi **API server tự host** (`server/`, SQLite + Express) qua `src/services/api.ts`. **Chữ ký các service dữ liệu KHÔNG đổi** so với v1 → UI không phải sửa. Domain types giữ nguyên. v2 chỉ *thêm* `authService` và `contentService`.
 
 Source code tương ứng: `src/types/*.ts`. File `.md` này và code phải khớp nhau.
 
@@ -194,6 +196,19 @@ export function generateQuiz(topicId: string, count: number): Promise<QuizQuesti
 export function submitQuiz(result: QuizResult): Promise<void>;
 ```
 
+### authService.ts *(v2)*
+```ts
+export function login(password: string): Promise<void>; // lưu token (localStorage)
+export function logout(): void;
+export function isLoggedIn(): boolean;
+```
+
+### contentService.ts *(v2 — lấy nội dung từ API thay cho SEED_* nếu muốn)*
+```ts
+export function getTopics(): Promise<Topic[]>;
+export function getVocabulary(topicId?: string): Promise<VocabularyWord[]>;
+```
+
 ---
 
 ## 3. Utils (`src/utils`, owner: Claude)
@@ -217,3 +232,4 @@ export function normalizeWord(raw: string): string; // trim, lowercase, bỏ ký
 | Version | Ngày | Thay đổi | Bởi |
 |---------|------|----------|-----|
 | 1 | 2026-06-18 | Khởi tạo contracts ban đầu (đã đổi `topicId`→`topicIds`, thêm `translateService`) | Claude |
+| 2 | 2026-06-18 | Pivot backend sang API tự host (D-010). Thêm `authService`, `contentService`. Chữ ký service dữ liệu giữ nguyên. | Claude |

@@ -3,7 +3,7 @@
 > Hai agent cùng làm trên một repo. File này là **luật chơi** để hai bên không giẫm chân và bàn giao việc rõ ràng. Đọc file này đầu mỗi phiên làm việc.
 
 Hai vai:
-- **Claude** — sở hữu `src/services`, `src/utils`, `src/data`, `functions`. Steward của `src/types`.
+- **Claude** — sở hữu `src/services`, `src/utils`, `src/data`, **`server/`** (API + DB tự host, D-010). Steward của `src/types`.
 - **Codex** — sở hữu `src/app`, `src/components`, `src/pages`, assets/UI.
 
 Kênh giao tiếp gồm 4 file trong `docs/`:

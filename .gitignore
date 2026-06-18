@@ -1,5 +1,12 @@
 # dependencies
 node_modules/
+server/node_modules/
+
+# sqlite db (dữ liệu local của server)
+*.db
+*.db-shm
+*.db-wal
+server/data.db*
 
 # build
 dist/
