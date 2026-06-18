@@ -53,6 +53,11 @@ export function LessonPage({
     setCurrentIndex((index) => Math.max(index - 1, 0));
   };
 
+  const finishLesson = () => {
+    markCurrentStudied();
+    onBackHome();
+  };
+
   if (!topic || !currentWord) {
     return (
       <main className="mx-auto flex min-h-screen w-full max-w-4xl flex-col justify-center px-4 py-8">
@@ -125,7 +130,7 @@ export function LessonPage({
             word={currentWord}
             studied={studiedIds.has(currentWord.id)}
             onReview={markCurrentStudied}
-            onKnow={goNext}
+            onKnow={currentIndex === words.length - 1 ? finishLesson : goNext}
           />
 
           <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
@@ -135,12 +140,12 @@ export function LessonPage({
             </Button>
             <Button
               type="button"
-              onClick={currentIndex === words.length - 1 ? markCurrentStudied : goNext}
+              onClick={currentIndex === words.length - 1 ? finishLesson : goNext}
             >
               {currentIndex === words.length - 1 ? (
                 <>
                   <CheckCircle2 className="h-4 w-4" />
-                  Hoàn thành bài Food
+                  Hoàn thành bài học
                 </>
               ) : (
                 <>
