@@ -17,6 +17,23 @@ function rowToWord(r: any): VocabularyWord {
   return { ...r, topicIds: JSON.parse(r.topicIds) };
 }
 
+function dayStr(d: Date): string {
+  return `${d.getFullYear()}-${d.getMonth() + 1}-${d.getDate()}`;
+}
+
+// Cập nhật chuỗi ngày học liên tiếp khi bé hoạt động: mới hôm nay liên tiếp +1, bỏ ngày -> về 1.
+function bumpStreak(studentId: string): void {
+  const s = db.prepare("SELECT streak, lastActiveDate FROM students WHERE id = ?").get(studentId) as any;
+  if (!s) return;
+  const today = dayStr(new Date());
+  if (s.lastActiveDate === today) return; // hôm nay đã tính
+  const y = new Date();
+  y.setDate(y.getDate() - 1);
+  const yesterday = dayStr(y);
+  const streak = s.lastActiveDate === yesterday ? (s.streak || 0) + 1 : 1;
+  db.prepare("UPDATE students SET streak = ?, lastActiveDate = ? WHERE id = ?").run(streak, today, studentId);
+}
+
 // Ghi lại src/data/seedImages.ts từ imageUrl hiện tại trong DB -> app tự cập nhật (Vite HMR).
 function regenerateSeedImages(): void {
   const rows = db.prepare("SELECT id, imageUrl FROM vocabulary").all() as any[];
@@ -88,7 +105,14 @@ export function createApp() {
         (studentId, wordId, status, mastery, correctCount, wrongCount, lastReviewedAt, nextReviewAt)
        VALUES (@studentId, @wordId, @status, @mastery, @correctCount, @wrongCount, @lastReviewedAt, @nextReviewAt)`
     ).run(row);
+    bumpStreak(studentId);
     res.json(row);
+  });
+
+  app.get("/api/students/:id", requireAuth, (req, res) => {
+    const s = db.prepare("SELECT * FROM students WHERE id = ?").get(req.params.id);
+    if (!s) return res.status(404).json({ error: "không có học sinh" });
+    res.json(s);
   });
 
   app.get("/api/students/:id/reviews", requireAuth, (req, res) => {
@@ -131,6 +155,7 @@ export function createApp() {
       r.studentId, r.topicId, r.score, r.totalQuestions, r.correctAnswers, r.wrongAnswers,
       JSON.stringify(r.wrongWordIds ?? []), r.durationSeconds, r.createdAt ?? Date.now()
     );
+    if (r.studentId) bumpStreak(r.studentId);
     res.json({ ok: true });
   });
 

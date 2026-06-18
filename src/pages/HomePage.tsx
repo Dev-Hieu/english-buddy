@@ -11,6 +11,7 @@ type Nav = (view: string, topicId?: string) => void;
 interface HomePageProps {
   student: Student;
   studiedWordIds: string[];
+  streak: number;
   learnedTotal: number;
   learnedToday: number;
   onChangeStudent: () => void;
@@ -18,7 +19,7 @@ interface HomePageProps {
   onNavigate: Nav;
 }
 
-export function HomePage({ student, studiedWordIds, learnedTotal, learnedToday, onChangeStudent, onLogout, onNavigate }: HomePageProps) {
+export function HomePage({ student, studiedWordIds, streak, learnedTotal, learnedToday, onChangeStudent, onLogout, onNavigate }: HomePageProps) {
   const learned = new Set(studiedWordIds);
   const goal = student.dailyGoal || 10;
   const goalReached = learnedToday >= goal;
@@ -38,7 +39,7 @@ export function HomePage({ student, studiedWordIds, learnedTotal, learnedToday, 
         </div>
         <div className="flex items-center gap-2">
           <span className="flex items-center gap-1 rounded-full bg-accent/15 px-3 py-1.5 text-sm font-extrabold text-accent">
-            <Flame className="h-4 w-4" /> {student.streak}
+            <Flame className="h-4 w-4" /> {streak}
           </span>
           <span className="flex items-center gap-1 rounded-full bg-secondary px-3 py-1.5 text-sm font-extrabold text-secondary-foreground">
             <Star className="h-4 w-4" /> {learnedTotal}

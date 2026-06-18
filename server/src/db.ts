@@ -12,7 +12,8 @@ export function initSchema(): void {
   db.exec(`
     CREATE TABLE IF NOT EXISTS students (
       id TEXT PRIMARY KEY, parentId TEXT, name TEXT, grade INTEGER, level TEXT,
-      avatar TEXT, dailyGoal INTEGER, xp INTEGER, streak INTEGER, createdAt INTEGER
+      avatar TEXT, dailyGoal INTEGER, xp INTEGER, streak INTEGER, createdAt INTEGER,
+      lastActiveDate TEXT
     );
     CREATE TABLE IF NOT EXISTS topics (
       id TEXT PRIMARY KEY, name TEXT, name_vi TEXT, level TEXT, "order" INTEGER
@@ -38,4 +39,10 @@ export function initSchema(): void {
     );
     CREATE TABLE IF NOT EXISTS translation_cache (text TEXT PRIMARY KEY, translation TEXT);
   `);
+  // Migration cho DB cũ: thêm cột lastActiveDate nếu chưa có.
+  try {
+    db.exec("ALTER TABLE students ADD COLUMN lastActiveDate TEXT");
+  } catch {
+    /* cột đã tồn tại */
+  }
 }

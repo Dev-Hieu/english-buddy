@@ -3,6 +3,7 @@ import { SEED_STUDENTS } from "@/data/seedStudents";
 import type { StudentVocabularyProgress } from "@/types";
 import { isLoggedIn, logout } from "@/services/authService";
 import { getStudentProgress, recordAnswer } from "@/services/progressService";
+import { getStudent } from "@/services/studentService";
 import { TabBar, type TabKey } from "@/components/layout/TabBar";
 import { HomePage } from "@/pages/HomePage";
 import { LoginPage } from "@/pages/LoginPage";
@@ -38,12 +39,14 @@ export function App() {
   const [selectedStudentId, setSelectedStudentId] = useState<string | null>(readSelected);
   const [route, setRoute] = useState<Route>({ view: "home", topicId: "topic_food" });
   const [progress, setProgress] = useState<StudentVocabularyProgress[]>([]);
+  const [streak, setStreak] = useState(0);
 
   const student = SEED_STUDENTS.find((s) => s.id === selectedStudentId) ?? null;
 
   const loadProgress = useCallback(() => {
     if (!authed || !selectedStudentId) return;
     getStudentProgress(selectedStudentId).then(setProgress).catch(() => {});
+    getStudent(selectedStudentId).then((s) => setStreak(s.streak ?? 0)).catch(() => {});
   }, [authed, selectedStudentId]);
 
   useEffect(() => {
@@ -129,6 +132,7 @@ export function App() {
         <HomePage
           student={student}
           studiedWordIds={studiedWordIds}
+          streak={streak}
           learnedTotal={studiedWordIds.length}
           learnedToday={learnedToday}
           onChangeStudent={() => navigate("student-select")}
