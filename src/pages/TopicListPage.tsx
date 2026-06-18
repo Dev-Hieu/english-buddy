@@ -16,7 +16,7 @@ interface TopicListPageProps {
 
 export function TopicListPage({ student, studiedWordIds, onStartTopic }: TopicListPageProps) {
   const learned = new Set(studiedWordIds);
-  const [level, setLevel] = useState<Level | "all">("all");
+  const [level, setLevel] = useState<Level | "all">((student.level as Level) ?? "all");
   const topics = SEED_TOPICS.filter((t) => level === "all" || t.level === level);
 
   return (

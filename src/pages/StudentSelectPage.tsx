@@ -1,6 +1,6 @@
 import { LogOut, Pencil, Plus, Shield, Trash2, X } from "lucide-react";
 import { useState } from "react";
-import type { Student } from "@/types";
+import { LEVEL_LABELS, LEVEL_ORDER, type Student } from "@/types";
 import type { AuthUser } from "@/services/authService";
 import type { NewStudent } from "@/services/studentService";
 import { Button } from "@/components/ui/button";
@@ -105,13 +105,14 @@ function StudentForm({ initial, onClose, onSubmit }: { initial?: Student; onClos
   const [name, setName] = useState(initial?.name ?? "");
   const [grade, setGrade] = useState(initial?.grade ?? 5);
   const [avatar, setAvatar] = useState(initial?.avatar ?? "girl_avatar_01");
+  const [level, setLevel] = useState<string>(initial?.level ?? "a1");
   const [busy, setBusy] = useState(false);
 
   const submit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!name.trim()) return;
     setBusy(true);
-    try { await onSubmit({ name: name.trim(), grade, avatar, dailyGoal: initial?.dailyGoal ?? 10 }); }
+    try { await onSubmit({ name: name.trim(), grade, avatar, dailyGoal: initial?.dailyGoal ?? 10, level }); }
     finally { setBusy(false); }
   };
 
@@ -131,6 +132,9 @@ function StudentForm({ initial, onClose, onSubmit }: { initial?: Student; onClos
           <option value="boy_avatar_01">👦 Bạn trai</option>
         </select>
       </div>
+      <select className="h-11 rounded-2xl border-2 border-border px-2 font-bold" value={level} onChange={(e) => setLevel(e.target.value)}>
+        {LEVEL_ORDER.map((lv) => <option key={lv} value={lv}>Trình độ: {LEVEL_LABELS[lv]}</option>)}
+      </select>
       <Button type="submit" disabled={busy || !name.trim()}>{initial ? "Lưu" : <><Plus className="h-4 w-4" /> Tạo hồ sơ</>}</Button>
     </form>
   );

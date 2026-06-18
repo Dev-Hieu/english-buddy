@@ -27,11 +27,22 @@ import { C1D_WORDS } from "./c1d";
 import { C1E_WORDS } from "./c1e";
 import { C1F_WORDS } from "./c1f";
 import { C1G_WORDS } from "./c1g";
+import { KIDS6_WORDS } from "./kids6";
+import { A2F_WORDS } from "./a2f";
+import { A2G_WORDS } from "./a2g";
+import { B1F_WORDS } from "./b1f";
+import { B1G_WORDS } from "./b1g";
+import { B2F_WORDS } from "./b2f";
+import { B2G_WORDS } from "./b2g";
+import { C1H_WORDS } from "./c1h";
+import { C1I_WORDS } from "./c1i";
+import { C1J_WORDS } from "./c1j";
 
 export const ALL_LEVEL_WORDS: VocabularyWord[] = [
-  ...KIDS_WORDS, ...KIDS2_WORDS, ...KIDS3_WORDS, ...KIDS4_WORDS, ...KIDS5_WORDS,
-  ...A2_WORDS, ...A2B_WORDS, ...A2C_WORDS, ...A2D_WORDS, ...A2E_WORDS,
-  ...B1_WORDS, ...B1B_WORDS, ...B1C_WORDS, ...B1D_WORDS, ...B1E_WORDS,
-  ...B2_WORDS, ...B2B_WORDS, ...B2C_WORDS, ...B2D_WORDS, ...B2E_WORDS,
+  ...KIDS_WORDS, ...KIDS2_WORDS, ...KIDS3_WORDS, ...KIDS4_WORDS, ...KIDS5_WORDS, ...KIDS6_WORDS,
+  ...A2_WORDS, ...A2B_WORDS, ...A2C_WORDS, ...A2D_WORDS, ...A2E_WORDS, ...A2F_WORDS, ...A2G_WORDS,
+  ...B1_WORDS, ...B1B_WORDS, ...B1C_WORDS, ...B1D_WORDS, ...B1E_WORDS, ...B1F_WORDS, ...B1G_WORDS,
+  ...B2_WORDS, ...B2B_WORDS, ...B2C_WORDS, ...B2D_WORDS, ...B2E_WORDS, ...B2F_WORDS, ...B2G_WORDS,
   ...C1_WORDS, ...C1B_WORDS, ...C1C_WORDS, ...C1D_WORDS, ...C1E_WORDS, ...C1F_WORDS, ...C1G_WORDS,
+  ...C1H_WORDS, ...C1I_WORDS, ...C1J_WORDS,
 ];
