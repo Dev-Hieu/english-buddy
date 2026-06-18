@@ -1,0 +1,120 @@
+// Ngữ pháp tiếng Anh cấp A1 (giải thích tiếng Việt). KHÔNG bao gồm 'Present Simple' (đã có ở index).
+import type { GrammarTopic } from "../../types";
+
+export const A1_GRAMMAR: GrammarTopic[] = [
+  {
+    id: "gr_a1_to_be",
+    level: "a1",
+    title: "Verb to be (am / is / are)",
+    title_vi: "Động từ to be (thì, là, ở)",
+    summary_vi: "Dùng 'am' với I, 'is' với he/she/it (số ít), 'are' với you/we/they (số nhiều).",
+    points: [
+      "I am a student. — Tôi là học sinh.",
+      "She is happy. — Cô ấy vui.",
+      "They are at home. — Họ ở nhà.",
+      "Phủ định: thêm 'not': I am not tired. / He is not (isn't) here.",
+    ],
+    exercises: [
+      { id: "e1", type: "choice", question: "I ___ a teacher.", options: ["am", "is", "are"], answer: "am", explain_vi: "Chủ ngữ 'I' luôn đi với 'am'." },
+      { id: "e2", type: "choice", question: "She ___ my friend.", options: ["am", "is", "are"], answer: "is", explain_vi: "Chủ ngữ số ít 'she' đi với 'is'." },
+      { id: "e3", type: "fill", question: "We ___ students. (am/is/are)", answer: "are", explain_vi: "Chủ ngữ 'we' (số nhiều) đi với 'are'." },
+      { id: "e4", type: "fill", question: "He ___ not at school. (am/is/are)", answer: "is", explain_vi: "'he' đi với 'is'; phủ định là is not / isn't." },
+      { id: "e5", type: "reorder", question: "Sắp xếp:", options: ["are", "You", "tall"], answer: "You are tall", explain_vi: "Trật tự: S (You) + to be (are) + tính từ." },
+    ],
+  },
+  {
+    id: "gr_a1_there_is",
+    level: "a1",
+    title: "There is / There are",
+    title_vi: "Có (số ít / số nhiều)",
+    summary_vi: "There is + danh từ số ít; There are + danh từ số nhiều.",
+    points: [
+      "There is a book on the table. — Có một quyển sách trên bàn.",
+      "There are two cats. — Có hai con mèo.",
+      "Phủ định: There isn't / There aren't: There aren't any chairs. — Không có cái ghế nào.",
+    ],
+    exercises: [
+      { id: "e1", type: "choice", question: "___ three apples.", options: ["There is", "There are"], answer: "There are", explain_vi: "'three apples' là số nhiều -> There are." },
+      { id: "e2", type: "choice", question: "___ a dog in the garden.", options: ["There is", "There are"], answer: "There is", explain_vi: "'a dog' số ít -> There is." },
+      { id: "e3", type: "fill", question: "There ___ a pen. (is/are)", answer: "is", explain_vi: "'a pen' số ít -> is." },
+      { id: "e4", type: "fill", question: "There ___ many people here. (is/are)", answer: "are", explain_vi: "'many people' số nhiều -> are." },
+      { id: "e5", type: "reorder", question: "Sắp xếp:", options: ["are", "There", "two", "dogs"], answer: "There are two dogs", explain_vi: "There are + danh từ số nhiều." },
+    ],
+  },
+  {
+    id: "gr_a1_articles",
+    level: "a1",
+    title: "Articles (a / an / the)",
+    title_vi: "Mạo từ (a / an / the)",
+    summary_vi: "Dùng 'a' trước phụ âm, 'an' trước nguyên âm (a,e,i,o,u); 'the' cho danh từ đã xác định.",
+    points: [
+      "a + phụ âm: a book, a car. — một quyển sách, một chiếc xe.",
+      "an + nguyên âm: an apple, an egg. — một quả táo, một quả trứng.",
+      "the = cái đã nhắc đến / duy nhất: The sun is hot. — Mặt trời thì nóng.",
+    ],
+    exercises: [
+      { id: "e1", type: "choice", question: "I have ___ orange.", options: ["a", "an", "the"], answer: "an", explain_vi: "'orange' bắt đầu bằng nguyên âm 'o' -> an." },
+      { id: "e2", type: "choice", question: "She is reading ___ book.", options: ["a", "an"], answer: "a", explain_vi: "'book' bắt đầu bằng phụ âm 'b' -> a." },
+      { id: "e3", type: "fill", question: "He bought ___ umbrella. (a/an)", answer: "an", explain_vi: "'umbrella' bắt đầu bằng nguyên âm 'u' (âm /ʌ/) -> an." },
+      { id: "e4", type: "choice", question: "Look at ___ moon tonight.", options: ["a", "an", "the"], answer: "the", explain_vi: "Mặt trăng là vật duy nhất -> the." },
+      { id: "e5", type: "reorder", question: "Sắp xếp:", options: ["an", "It", "egg", "is"], answer: "It is an egg", explain_vi: "S + to be + a/an + danh từ; 'egg' dùng 'an'." },
+    ],
+  },
+  {
+    id: "gr_a1_can",
+    level: "a1",
+    title: "Can / Can't",
+    title_vi: "Có thể / Không thể (khả năng)",
+    summary_vi: "'can' diễn tả khả năng; sau 'can' là động từ nguyên thể (không 'to', không '-s').",
+    points: [
+      "I can swim. — Tôi có thể bơi.",
+      "She can speak English. — Cô ấy có thể nói tiếng Anh.",
+      "Phủ định: can't (cannot): He can't drive. — Anh ấy không lái xe được.",
+    ],
+    exercises: [
+      { id: "e1", type: "choice", question: "Birds ___ fly.", options: ["can", "cans", "to can"], answer: "can", explain_vi: "'can' không thay đổi theo chủ ngữ." },
+      { id: "e2", type: "choice", question: "She can ___ the piano.", options: ["play", "plays", "playing"], answer: "play", explain_vi: "Sau 'can' dùng động từ nguyên thể, không thêm -s." },
+      { id: "e3", type: "fill", question: "Fish can't ___. (walk)", answer: "walk", explain_vi: "Sau can't dùng động từ nguyên thể: walk." },
+      { id: "e4", type: "fill", question: "I ___ sing very well. (can/cans)", answer: "can", explain_vi: "'can' giữ nguyên với mọi chủ ngữ." },
+      { id: "e5", type: "reorder", question: "Sắp xếp:", options: ["can", "swim", "I"], answer: "I can swim", explain_vi: "Trật tự: S + can + V." },
+    ],
+  },
+  {
+    id: "gr_a1_present_continuous",
+    level: "a1",
+    title: "Present Continuous",
+    title_vi: "Thì hiện tại tiếp diễn (am/is/are + V-ing)",
+    summary_vi: "Diễn tả hành động đang xảy ra: to be (am/is/are) + động từ thêm -ing.",
+    points: [
+      "I am reading a book. — Tôi đang đọc sách.",
+      "She is cooking now. — Cô ấy đang nấu ăn lúc này.",
+      "They are playing football. — Họ đang chơi bóng đá.",
+    ],
+    exercises: [
+      { id: "e1", type: "choice", question: "He ___ watching TV.", options: ["am", "is", "are"], answer: "is", explain_vi: "Chủ ngữ 'he' đi với 'is'." },
+      { id: "e2", type: "choice", question: "They ___ playing now.", options: ["is", "are"], answer: "are", explain_vi: "Chủ ngữ số nhiều 'they' đi với 'are'." },
+      { id: "e3", type: "fill", question: "I am ___ (run) in the park.", answer: "running", explain_vi: "run + -ing và gấp đôi 'n' -> running." },
+      { id: "e4", type: "fill", question: "She is ___ (write) a letter.", answer: "writing", explain_vi: "write bỏ 'e' rồi thêm -ing -> writing." },
+      { id: "e5", type: "reorder", question: "Sắp xếp:", options: ["is", "She", "singing"], answer: "She is singing", explain_vi: "Trật tự: S + is/are/am + V-ing." },
+    ],
+  },
+  {
+    id: "gr_a1_prepositions_place",
+    level: "a1",
+    title: "Prepositions of place (in / on / at)",
+    title_vi: "Giới từ chỉ nơi chốn (in / on / at)",
+    summary_vi: "'in' = bên trong; 'on' = trên bề mặt; 'at' = tại một điểm cụ thể.",
+    points: [
+      "in = trong: The cat is in the box. — Con mèo ở trong hộp.",
+      "on = trên (bề mặt): The book is on the table. — Quyển sách ở trên bàn.",
+      "at = tại (điểm): I am at school. — Tôi ở trường.",
+    ],
+    exercises: [
+      { id: "e1", type: "choice", question: "The pen is ___ the bag.", options: ["in", "on", "at"], answer: "in", explain_vi: "Bên trong cái túi -> in." },
+      { id: "e2", type: "choice", question: "The cup is ___ the table.", options: ["in", "on", "at"], answer: "on", explain_vi: "Trên bề mặt bàn -> on." },
+      { id: "e3", type: "fill", question: "She is ___ the bus stop. (in/on/at)", answer: "at", explain_vi: "Tại một điểm cụ thể (trạm xe buýt) -> at." },
+      { id: "e4", type: "fill", question: "The picture is ___ the wall. (in/on/at)", answer: "on", explain_vi: "Trên bề mặt tường -> on." },
+      { id: "e5", type: "reorder", question: "Sắp xếp:", options: ["in", "is", "The", "room", "boy", "the"], answer: "The boy is in the room", explain_vi: "S + to be + giới từ + nơi chốn; bên trong phòng -> in." },
+    ],
+  },
+];

@@ -1,0 +1,118 @@
+import type { GrammarTopic } from "../../types";
+
+export const KIDS_GRAMMAR: GrammarTopic[] = [
+  {
+    id: "gr_kids_aan",
+    level: "kids",
+    title: "A / An",
+    title_vi: "Mạo từ a và an",
+    summary_vi: "Dùng 'a' trước phụ âm, 'an' trước nguyên âm (a, e, i, o, u).",
+    points: [
+      "a + phụ âm: a cat — một con mèo",
+      "an + nguyên âm: an apple — một quả táo",
+      "Mạo từ a/an đứng trước danh từ số ít, chỉ một cái.",
+    ],
+    exercises: [
+      { id: "e1", type: "choice", question: "I see ___ elephant.", options: ["a", "an"], answer: "an", explain_vi: "elephant bắt đầu bằng nguyên âm e -> an." },
+      { id: "e2", type: "choice", question: "She has ___ ball.", options: ["a", "an"], answer: "a", explain_vi: "ball bắt đầu bằng phụ âm b -> a." },
+      { id: "e3", type: "fill", question: "It is ___ orange. (điền a hoặc an)", answer: "an", explain_vi: "orange bắt đầu bằng nguyên âm o -> an." },
+      { id: "e4", type: "fill", question: "This is ___ dog. (điền a hoặc an)", answer: "a", explain_vi: "dog bắt đầu bằng phụ âm d -> a." },
+      { id: "e5", type: "reorder", question: "Sắp xếp thành câu đúng:", options: ["is", "This", "an", "egg"], answer: "This is an egg", explain_vi: "Trật tự: This + is + an + egg (một quả trứng)." },
+    ],
+  },
+  {
+    id: "gr_kids_plural_s",
+    level: "kids",
+    title: "Plural -s",
+    title_vi: "Danh từ số nhiều thêm -s",
+    summary_vi: "Khi có nhiều hơn một, ta thêm -s vào sau danh từ.",
+    points: [
+      "one cat -> two cats — một con mèo -> hai con mèo",
+      "one book -> three books — một quyển sách -> ba quyển sách",
+      "Số nhiều nghĩa là có nhiều cái (từ hai trở lên).",
+    ],
+    exercises: [
+      { id: "e1", type: "choice", question: "I have three ___.", options: ["dog", "dogs"], answer: "dogs", explain_vi: "three (ba) là số nhiều nên thêm -s -> dogs." },
+      { id: "e2", type: "choice", question: "She has one ___.", options: ["pen", "pens"], answer: "pen", explain_vi: "one (một) là số ít nên giữ nguyên -> pen." },
+      { id: "e3", type: "fill", question: "Two ___ (cat) are on the bed.", answer: "cats", explain_vi: "two (hai) là số nhiều -> thêm -s thành cats." },
+      { id: "e4", type: "fill", question: "I see five ___ (apple).", answer: "apples", explain_vi: "five (năm) là số nhiều -> thêm -s thành apples." },
+      { id: "e5", type: "reorder", question: "Sắp xếp thành câu đúng:", options: ["two", "I", "balls", "have"], answer: "I have two balls", explain_vi: "Trật tự: I + have + two + balls (hai quả bóng)." },
+    ],
+  },
+  {
+    id: "gr_kids_tobe",
+    level: "kids",
+    title: "I am / You are / It is",
+    title_vi: "Động từ to be (am, is, are)",
+    summary_vi: "I dùng 'am'; he/she/it dùng 'is'; you/we/they dùng 'are'.",
+    points: [
+      "I am happy. — Tôi vui.",
+      "You are tall. — Bạn cao.",
+      "It is a cat. — Nó là một con mèo.",
+    ],
+    exercises: [
+      { id: "e1", type: "choice", question: "I ___ a student.", options: ["am", "is", "are"], answer: "am", explain_vi: "Với I luôn dùng am." },
+      { id: "e2", type: "choice", question: "You ___ my friend.", options: ["am", "is", "are"], answer: "are", explain_vi: "Với you dùng are." },
+      { id: "e3", type: "fill", question: "It ___ a big dog. (am/is/are)", answer: "is", explain_vi: "Với it dùng is." },
+      { id: "e4", type: "fill", question: "She ___ happy. (am/is/are)", answer: "is", explain_vi: "Với she dùng is." },
+      { id: "e5", type: "reorder", question: "Sắp xếp thành câu đúng:", options: ["am", "I", "boy", "a"], answer: "I am a boy", explain_vi: "Trật tự: I + am + a + boy (một cậu bé)." },
+    ],
+  },
+  {
+    id: "gr_kids_can",
+    level: "kids",
+    title: "Can",
+    title_vi: "Động từ can (khả năng)",
+    summary_vi: "Dùng 'can' để nói có thể làm gì. Sau 'can' là động từ nguyên mẫu.",
+    points: [
+      "I can swim. — Tôi có thể bơi.",
+      "He can run. — Cậu ấy có thể chạy.",
+      "Phủ định: cannot / can't: I can't fly. — Tôi không thể bay.",
+    ],
+    exercises: [
+      { id: "e1", type: "choice", question: "A bird ___ fly.", options: ["can", "is"], answer: "can", explain_vi: "Nói khả năng (có thể bay) dùng can." },
+      { id: "e2", type: "choice", question: "I can ___.", options: ["sing", "sings"], answer: "sing", explain_vi: "Sau can dùng động từ nguyên mẫu -> sing." },
+      { id: "e3", type: "fill", question: "She can ___ (jump) high.", answer: "jump", explain_vi: "Sau can giữ nguyên động từ -> jump." },
+      { id: "e4", type: "fill", question: "Fish ___ swim. (điền can)", answer: "can", explain_vi: "Cá có thể bơi -> dùng can." },
+      { id: "e5", type: "reorder", question: "Sắp xếp thành câu đúng:", options: ["can", "I", "run"], answer: "I can run", explain_vi: "Trật tự: I + can + run (Tôi có thể chạy)." },
+    ],
+  },
+  {
+    id: "gr_kids_have_has",
+    level: "kids",
+    title: "Have / Has",
+    title_vi: "Động từ have và has",
+    summary_vi: "I/you/we/they dùng 'have'; he/she/it dùng 'has'. Nghĩa là 'có'.",
+    points: [
+      "I have a cat. — Tôi có một con mèo.",
+      "She has a doll. — Cô ấy có một con búp bê.",
+      "It has four legs. — Nó có bốn chân.",
+    ],
+    exercises: [
+      { id: "e1", type: "choice", question: "I ___ a red bag.", options: ["have", "has"], answer: "have", explain_vi: "Với I dùng have." },
+      { id: "e2", type: "choice", question: "He ___ a new ball.", options: ["have", "has"], answer: "has", explain_vi: "Với he dùng has." },
+      { id: "e3", type: "fill", question: "She ___ two cats. (have/has)", answer: "has", explain_vi: "Với she dùng has." },
+      { id: "e4", type: "fill", question: "We ___ a big house. (have/has)", answer: "have", explain_vi: "Với we dùng have." },
+      { id: "e5", type: "reorder", question: "Sắp xếp thành câu đúng:", options: ["a", "has", "She", "dog"], answer: "She has a dog", explain_vi: "Trật tự: She + has + a + dog (một con chó)." },
+    ],
+  },
+  {
+    id: "gr_kids_in_on_under",
+    level: "kids",
+    title: "In / On / Under",
+    title_vi: "Giới từ in, on, under",
+    summary_vi: "in = ở trong; on = ở trên (chạm bề mặt); under = ở dưới.",
+    points: [
+      "in the box — ở trong cái hộp",
+      "on the table — ở trên bàn",
+      "under the chair — ở dưới cái ghế",
+    ],
+    exercises: [
+      { id: "e1", type: "choice", question: "The cat is ___ the box. (ở trong)", options: ["in", "on", "under"], answer: "in", explain_vi: "Ở trong cái hộp dùng in." },
+      { id: "e2", type: "choice", question: "The book is ___ the table. (ở trên)", options: ["in", "on", "under"], answer: "on", explain_vi: "Ở trên mặt bàn dùng on." },
+      { id: "e3", type: "fill", question: "The ball is ___ the bed. (ở dưới)", answer: "under", explain_vi: "Ở dưới giường dùng under." },
+      { id: "e4", type: "fill", question: "The pen is ___ the bag. (ở trong)", answer: "in", explain_vi: "Ở trong túi dùng in." },
+      { id: "e5", type: "reorder", question: "Sắp xếp thành câu đúng:", options: ["on", "is", "It", "the", "chair"], answer: "It is on the chair", explain_vi: "Trật tự: It + is + on + the + chair (trên ghế)." },
+    ],
+  },
+];

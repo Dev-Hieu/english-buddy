@@ -1,5 +1,11 @@
 // Tổng hợp bài học ngữ pháp theo cấp độ. Thêm đợt mới -> import file & nối vào mảng.
 import type { GrammarTopic } from "../../types";
+import { KIDS_GRAMMAR } from "./kids";
+import { A1_GRAMMAR } from "./a1";
+import { A2_GRAMMAR } from "./a2";
+import { B1_GRAMMAR } from "./b1";
+import { B2_GRAMMAR } from "./b2";
+import { C1_GRAMMAR } from "./c1";
 
 // Mẫu khởi tạo (kids + a1) — các file cấp khác do agent sinh, nối ở dưới.
 const SEED_GRAMMAR: GrammarTopic[] = [
@@ -39,4 +45,12 @@ const SEED_GRAMMAR: GrammarTopic[] = [
   },
 ];
 
-export const GRAMMAR_TOPICS: GrammarTopic[] = [...SEED_GRAMMAR];
+function dedupe(list: GrammarTopic[]): GrammarTopic[] {
+  const seen = new Set<string>();
+  return list.filter((t) => (seen.has(t.id) ? false : (seen.add(t.id), true)));
+}
+
+export const GRAMMAR_TOPICS: GrammarTopic[] = dedupe([
+  ...SEED_GRAMMAR,
+  ...KIDS_GRAMMAR, ...A1_GRAMMAR, ...A2_GRAMMAR, ...B1_GRAMMAR, ...B2_GRAMMAR, ...C1_GRAMMAR,
+]);
