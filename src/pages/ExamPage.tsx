@@ -1,0 +1,139 @@
+import { RotateCcw, Volume2 } from "lucide-react";
+import { useMemo, useRef, useState } from "react";
+import { SEED_VOCABULARY } from "@/data/seedVocabulary";
+import { buildQuiz } from "@/utils/quizGenerator";
+import { recordAnswer } from "@/services/progressService";
+import { submitQuiz } from "@/services/quizService";
+import { speakText } from "@/services/speechService";
+import { LEVEL_LABELS, type Level, type Student } from "@/types";
+import { cn } from "@/components/ui/cn";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { ProgressRing } from "@/components/ui/progress";
+import { SessionHeader } from "@/components/layout/SessionHeader";
+
+interface ExamPageProps {
+  student: Student;
+  level?: string;
+  onBackHome: () => void;
+}
+
+const wordById = new Map(SEED_VOCABULARY.map((w) => [w.id, w]));
+const EXAM_SIZE = 20;
+
+export function ExamPage({ student, level = "all", onBackHome }: ExamPageProps) {
+  const lv = level;
+  const questions = useMemo(() => {
+    const words = SEED_VOCABULARY.filter((w) => lv === "all" || w.level === lv);
+    return buildQuiz(words, EXAM_SIZE);
+  }, [lv]);
+
+  const [index, setIndex] = useState(0);
+  const [picked, setPicked] = useState<string | null>(null);
+  const [correct, setCorrect] = useState(0);
+  const [wrongIds, setWrongIds] = useState<string[]>([]);
+  const [finished, setFinished] = useState(false);
+  const startedAt = useRef(Date.now());
+
+  const levelName = LEVEL_LABELS[lv as Level] ?? "Tất cả";
+  const title = `Làm đề · ${levelName}`;
+  const q = questions[index];
+
+  const choose = (opt: string) => {
+    if (picked || !q) return;
+    setPicked(opt);
+    const ok = opt === q.answer;
+    if (ok) setCorrect((c) => c + 1);
+    else setWrongIds((w) => [...w, q.wordId]);
+    recordAnswer(student.id, q.wordId, ok).catch(() => {});
+    setTimeout(() => {
+      if (index + 1 >= questions.length) {
+        setFinished(true);
+        const score = Math.round(((ok ? correct + 1 : correct) / questions.length) * 100);
+        submitQuiz({
+          studentId: student.id, topicId: "exam", score,
+          totalQuestions: questions.length, correctAnswers: ok ? correct + 1 : correct,
+          wrongAnswers: questions.length - (ok ? correct + 1 : correct),
+          wrongWordIds: ok ? wrongIds : [...wrongIds, q.wordId],
+          durationSeconds: Math.round((Date.now() - startedAt.current) / 1000), createdAt: Date.now(),
+        }).catch(() => {});
+      } else {
+        setIndex((i) => i + 1);
+        setPicked(null);
+      }
+    }, 700);
+  };
+
+  if (questions.length === 0) {
+    return (
+      <main className="mx-auto w-full max-w-xl px-4">
+        <SessionHeader title={title} onClose={onBackHome} />
+        <Card><CardContent className="p-8 text-center font-bold text-muted-foreground">Chưa đủ từ ở cấp này để tạo đề.</CardContent></Card>
+      </main>
+    );
+  }
+
+  if (finished) {
+    const score = Math.round((correct / questions.length) * 100);
+    const wrongWords = wrongIds.map((id) => wordById.get(id)).filter(Boolean);
+    return (
+      <main className="mx-auto w-full max-w-xl px-4 pb-10">
+        <SessionHeader title={title} onClose={onBackHome} />
+        <Card><CardContent className="flex flex-col items-center gap-3 p-6 text-center">
+          <ProgressRing value={correct} max={questions.length} size={100} stroke={11}>
+            <span className="text-2xl font-black">{score}%</span>
+          </ProgressRing>
+          <p className="text-xl font-black">{correct}/{questions.length} câu đúng</p>
+          <p className="font-semibold text-muted-foreground">{score >= 80 ? "Xuất sắc! 🏆" : score >= 50 ? "Khá rồi, ôn thêm nhé 👍" : "Cần ôn lại nhiều hơn 💪"}</p>
+        </CardContent></Card>
+
+        {wrongWords.length ? (
+          <section className="mt-5">
+            <h2 className="mb-2 text-lg font-extrabold">Phân tích lỗi — {wrongWords.length} từ cần ôn</h2>
+            <p className="mb-3 text-sm font-semibold text-muted-foreground">Các từ này đã được đưa vào hàng đợi ôn tập của con.</p>
+            <ul className="space-y-2">
+              {wrongWords.map((w) => (
+                <li key={w!.id} className="flex items-center gap-3 rounded-2xl border border-border/70 bg-card p-3 shadow-card">
+                  <span className="min-w-0 flex-1">
+                    <span className="text-lg font-extrabold capitalize">{w!.word}</span>
+                    {w!.phonetic ? <span className="ml-2 text-xs font-bold text-muted-foreground">{w!.phonetic}</span> : null}
+                    <span className="block text-sm font-semibold text-primary">{w!.meaning_vi}</span>
+                  </span>
+                  <button type="button" aria-label="Nghe" onClick={() => speakText(w!.word, w!.audioUrl)}
+                    className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border-2 border-border text-muted-foreground">
+                    <Volume2 className="h-5 w-5" />
+                  </button>
+                </li>
+              ))}
+            </ul>
+          </section>
+        ) : (
+          <p className="mt-5 text-center font-bold text-success">Không sai câu nào — tuyệt vời! 🎉</p>
+        )}
+
+        <Button type="button" size="lg" className="mt-5 w-full" onClick={onBackHome}>Xong</Button>
+      </main>
+    );
+  }
+
+  return (
+    <main className="mx-auto w-full max-w-xl px-4">
+      <SessionHeader title={title} onClose={onBackHome} progress={Math.round((index / questions.length) * 100)} />
+      <p className="mb-3 text-center text-sm font-extrabold text-muted-foreground">Câu {index + 1}/{questions.length}</p>
+      <Card><CardContent className="space-y-5 p-6">
+        <p className="text-center text-xl font-extrabold">{q.question}</p>
+        <div className="grid gap-2">
+          {q.options.map((o) => {
+            const state = !picked ? "" : o === q.answer ? "ring-4 ring-success bg-success/10" : o === picked ? "ring-4 ring-red-400 bg-red-50" : "opacity-50";
+            return (
+              <button key={o} type="button" disabled={!!picked} onClick={() => choose(o)}
+                className={cn("rounded-2xl border-2 border-border bg-card px-4 py-3 text-left text-lg font-bold transition-all", state)}>
+                {o}
+              </button>
+            );
+          })}
+        </div>
+      </CardContent></Card>
+    </main>
+  );
+}

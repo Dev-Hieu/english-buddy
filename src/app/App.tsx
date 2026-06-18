@@ -20,13 +20,14 @@ import { MyWordsPage } from "@/pages/MyWordsPage";
 import { TopicWordsPage } from "@/pages/TopicWordsPage";
 import { GrammarListPage } from "@/pages/GrammarListPage";
 import { GrammarRunnerPage } from "@/pages/GrammarRunnerPage";
+import { ExamPage } from "@/pages/ExamPage";
 import { LeaderboardPage } from "@/pages/LeaderboardPage";
 import { StudentSelectPage } from "@/pages/StudentSelectPage";
 import { TopicListPage } from "@/pages/TopicListPage";
 
 type View =
   | "student-select" | "admin" | "home" | "topics" | "lesson"
-  | "flashcard" | "review" | "lookup" | "test" | "games" | "speak" | "dashboard" | "mywords" | "leaderboard" | "topicwords" | "grammar" | "grammar-lesson";
+  | "flashcard" | "review" | "lookup" | "test" | "games" | "speak" | "dashboard" | "mywords" | "leaderboard" | "topicwords" | "grammar" | "grammar-lesson" | "exam";
 
 interface Route { view: View; topicId: string; level: Level | "all"; }
 
@@ -36,7 +37,7 @@ const readSelected = () => (typeof window === "undefined" ? null : localStorage.
 const ACTIVE_TAB: Record<View, TabKey | null> = {
   "student-select": null, admin: null, home: "home", topics: "home", lesson: "home", flashcard: "home",
   review: "review", lookup: "lookup", test: "test", games: "games", speak: "speak", dashboard: null, mywords: null, leaderboard: null, topicwords: null,
-  grammar: null, "grammar-lesson": null,
+  grammar: null, "grammar-lesson": null, exam: null,
 };
 
 export function App() {
@@ -171,6 +172,9 @@ export function App() {
       break;
     case "grammar-lesson":
       content = <GrammarRunnerPage topicId={route.topicId} onBackHome={() => navigate("grammar")} />;
+      break;
+    case "exam":
+      content = <ExamPage student={student} level={student.level} onBackHome={() => navigate("home")} />;
       break;
     case "flashcard":
       content = <FlashcardPage student={student} topicId={route.topicId} level={route.level} onBackHome={() => navigate("home")} />;
