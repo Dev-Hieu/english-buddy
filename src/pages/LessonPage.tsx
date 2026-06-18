@@ -1,4 +1,4 @@
-import { ArrowLeft, ArrowRight, BookOpen, CheckCircle2 } from "lucide-react";
+import { ArrowLeft, ArrowRight, BookOpen, CheckCircle2, GraduationCap, Layers } from "lucide-react";
 import { useMemo, useState } from "react";
 import { SEED_TOPICS } from "@/data/seedTopics";
 import { SEED_VOCABULARY } from "@/data/seedVocabulary";
@@ -14,6 +14,8 @@ interface LessonPageProps {
   studiedWordIds: string[];
   onMarkWordStudied: (wordId: string) => void;
   onBackHome: () => void;
+  onPracticeFlashcard?: () => void;
+  onStartTest?: () => void;
 }
 
 export function LessonPage({
@@ -22,6 +24,8 @@ export function LessonPage({
   studiedWordIds,
   onMarkWordStudied,
   onBackHome,
+  onPracticeFlashcard,
+  onStartTest,
 }: LessonPageProps) {
   const topic = SEED_TOPICS.find((item) => item.id === topicId);
   const words = useMemo(
@@ -92,6 +96,21 @@ export function LessonPage({
           </p>
         </div>
       </header>
+
+      {(onPracticeFlashcard || onStartTest) ? (
+        <section className="flex flex-wrap gap-3">
+          {onPracticeFlashcard ? (
+            <Button type="button" variant="secondary" onClick={onPracticeFlashcard}>
+              <Layers className="h-4 w-4" /> Luyện flashcard
+            </Button>
+          ) : null}
+          {onStartTest ? (
+            <Button type="button" variant="secondary" onClick={onStartTest}>
+              <GraduationCap className="h-4 w-4" /> Làm bài test
+            </Button>
+          ) : null}
+        </section>
+      ) : null}
 
       <section className="grid gap-5 lg:grid-cols-[1fr_18rem]">
         <div className="space-y-4">

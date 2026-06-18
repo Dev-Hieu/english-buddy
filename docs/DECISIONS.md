@@ -57,6 +57,14 @@ Theo yêu cầu "DB riêng cho chủ động". Dựng `server/` (Node + Express 
 
 ---
 
+## D-011 — Claude tạm tiếp quản toàn bộ UI
+**Ngày:** 2026-06-18 · **Trạng thái:** ✅ Chốt (anh Hieu)
+Để hoàn thiện app nhanh, Claude dựng nốt toàn bộ UI còn lại (Login, Flashcard, Review, Lookup, Test, Games, Dashboard) + router/auth, thay vì chờ Codex. Codex **tạm dừng** vùng `src/pages`/`src/components`/`src/app` để tránh sửa cùng file.
+**Lý do:** một mình một mạch, nhanh, không phụ thuộc phiên Codex.
+**Hệ quả:** trong giai đoạn này Claude sở hữu cả UI; nếu Codex quay lại, đồng bộ qua MESSAGES trước khi sửa.
+
+---
+
 ## Đang chờ chốt
 - **Đăng nhập:** đã chốt qua D-010 — dùng **1 mật khẩu phụ huynh** (đổi `PARENT_PASSWORD` trong `server/.env`). T-010 (LoginPage) gọi `authService.login(password)`.
 - `M-002`: nội dung seed — Claude đã soạn nháp toàn bộ ~100 từ (chờ anh review chất lượng).

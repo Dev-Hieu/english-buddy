@@ -4,7 +4,7 @@
 
 Hai vai:
 - **Claude** — sở hữu `src/services`, `src/utils`, `src/data`, **`server/`** (API + DB tự host, D-010). Steward của `src/types`.
-- **Codex** — sở hữu `src/app`, `src/components`, `src/pages`, assets/UI.
+- **Codex** — sở hữu `src/app`, `src/components`, `src/pages`, assets/UI. *(D-011: Claude tạm tiếp quản UI để hoàn thiện app; Codex tạm dừng vùng này tới khi anh Hieu nói khác.)*
 
 Kênh giao tiếp gồm 4 file trong `docs/`:
 | File | Vai trò |

@@ -194,6 +194,7 @@ export function saveLookup(entry: LookupHistory): Promise<void>;
 ```ts
 export function generateQuiz(topicId: string, count: number): Promise<QuizQuestion[]>;
 export function submitQuiz(result: QuizResult): Promise<void>;
+export function getQuizResults(studentId: string): Promise<QuizResult[]>; // v3
 ```
 
 ### authService.ts *(v2)*
@@ -233,3 +234,4 @@ export function normalizeWord(raw: string): string; // trim, lowercase, bỏ ký
 |---------|------|----------|-----|
 | 1 | 2026-06-18 | Khởi tạo contracts ban đầu (đã đổi `topicId`→`topicIds`, thêm `translateService`) | Claude |
 | 2 | 2026-06-18 | Pivot backend sang API tự host (D-010). Thêm `authService`, `contentService`. Chữ ký service dữ liệu giữ nguyên. | Claude |
+| 3 | 2026-06-18 | Thêm `quizService.getQuizResults(studentId)` cho Parent Dashboard. | Claude |

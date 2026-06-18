@@ -22,7 +22,7 @@
 
 | ID | Task | Owner | Status | Depends | DoD |
 |----|------|-------|--------|---------|-----|
-| T-010 | LoginPage (1 parent) + Auth flow | Codex | TODO | T-004 | **Hết BLOCKED (D-010):** gọi `authService.login(password)`; lưu token; chặn route khi chưa đăng nhập |
+| T-010 | LoginPage (1 parent) + Auth flow | Claude | DONE | T-004 | ✅ `LoginPage` gọi `authService.login`; App gate toàn bộ sau đăng nhập; logout ở Home |
 | T-011 | StudentSelectPage (chọn Bảo Ngọc/Bảo Nam) | Codex | DONE | T-010 | ✅ chọn & nhớ profile bằng `localStorage` |
 | T-012 | HomePage (mục tiêu hôm nay + nút điều hướng) | Codex | DONE | T-011 | ✅ hiện profile, mục tiêu ngày, 5 nút điều hướng |
 | T-013 | Seed data local 100 từ (cấu trúc) + seedTopics | Claude | DONE | T-003 | ✅ 10 topics + ~100 từ (nháp, chờ anh review) + seedStudents; ảnh chờ C-002 |
@@ -36,7 +36,7 @@
 | T-021 | WordCard component (ảnh/từ/phiên âm/nghe) | Codex | DONE | T-003 | ✅ render `VocabularyWord`, nút nghe gọi `speakText` |
 | T-022 | LessonPage chủ đề Food (5–10 từ) | Codex | DONE | T-021 | ✅ lướt 10 từ Food, đánh dấu đã xem, progress local |
 | T-023 | speechService (audioUrl → TTS fallback) | Claude | DONE | T-003 | ✅ typecheck pass; thuần browser API |
-| T-024 | Flashcard + ghi mastery qua progressService | Both | TODO | T-014,T-021 | "I know/Need review" lưu đúng |
+| T-024 | Flashcard + ghi mastery qua progressService | Claude | DONE | T-014,T-021 | ✅ `Flashcard`+`DeckRunner`+`FlashcardPage`; "nhớ rồi/cần ôn" → `recordAnswer` API |
 
 ## Sprint 3 — Quick Lookup
 
@@ -46,23 +46,23 @@
 | T-031 | `/api/image` (Pexels proxy) trong server | Claude | DONE | T-004 | ✅ verified: Pexels key thật trả 5 ảnh |
 | T-032 | `/api/translate` + cache (DB) trong server | Claude | DONE | T-004 | ✅ verified: "butterfly" → "con bướm", cache trong SQLite |
 | T-033 | imageService + translateService (gọi API) | Claude | DONE | T-031,T-032 | ✅ gọi `/api/image`, `/api/translate`; typecheck sạch |
-| T-034 | LookupPage + Word Card + Save to My Words | Codex | TODO | T-030,T-033 | tra & lưu được |
+| T-034 | LookupPage + Word Card + Save to My Words | Claude | DONE | T-030,T-033 | ✅ tra (dictionary+dịch VN+ảnh song song) + nghe + Save to My Words |
 
 ## Sprint 4 — Ôn tập, Game, Test
 
 | ID | Task | Owner | Status | Depends | DoD |
 |----|------|-------|--------|---------|-----|
 | T-040 | quizGenerator util + quizService (distractor cùng chủ đề) | Claude | DONE | T-013 | ✅ `/api/quiz` verified (5 câu, đáp án đúng ∈ options); 4 unit test pass |
-| T-041 | ReviewPage (từ đến hạn ôn) | Codex | TODO | T-014,T-024 | hiện đúng từ due |
-| T-042 | Game: Match Word + Pick Picture | Codex | TODO | T-040 | chơi & cộng XP |
-| T-043 | Game: Listen & Choose + Word Builder | Codex | TODO | T-040,T-023 | chơi được |
-| T-044 | TestPage (10 câu) + lưu quiz_results | Both | TODO | T-040 | nộp bài, lưu kết quả |
+| T-041 | ReviewPage (từ đến hạn ôn) | Claude | DONE | T-014,T-024 | ✅ `getDueReviews` → DeckRunner; rỗng thì báo "không có từ cần ôn" |
+| T-042 | Game: Match Word + Pick Picture | Claude | DONE | T-040 | ✅ 2 game trong GamesPage, ghi `recordAnswer` |
+| T-043 | Game: Listen & Choose (+ Word Builder để sau) | Claude | DONE | T-040,T-023 | ✅ Listen&Choose chơi được; đủ 3 game (DoD ≥3) |
+| T-044 | TestPage (10 câu) + lưu quiz_results | Claude | DONE | T-040 | ✅ `generateQuiz`→làm bài→`submitQuiz`; verified GET quiz-results |
 
 ## Sprint 5 — Parent Dashboard & mở rộng nội dung
 
 | ID | Task | Owner | Status | Depends | DoD |
 |----|------|-------|--------|---------|-----|
-| T-050 | ParentDashboard (tiến độ từng bé) | Codex | TODO | T-014,T-044 | đủ 10 mục thống kê |
+| T-050 | ParentDashboard (tiến độ từng bé) | Claude | DONE | T-014,T-044 | ✅ DashboardPage: đã học/cần ôn/thành thạo, điểm test gần nhất, từ hay sai theo từng bé |
 | T-051 | Nhân nội dung 9 chủ đề còn lại | Hieu | TODO | T-022 | đủ 100 từ có nghĩa+ảnh+phát âm |
 | T-052 | Deploy: host server (`server/`) + static frontend | Claude | TODO | tất cả | chờ anh chọn nơi host (LAN/VPS); URL chạy PC+mobile |
 | T-053 | Nghiệm thu theo DoD (TECH_SPEC §14) | Both+Hieu | TODO | T-052 | đủ 10 tiêu chí |
@@ -87,3 +87,5 @@
 - 2026-06-18 — T-021/T-022 DONE: `WordCard` có phát âm qua `speechService`; `LessonPage` Food lướt 10 từ + progress local; `typecheck/build/test` pass (Codex).
 - 2026-06-18 — T-011/T-012/T-020 DONE: chọn profile, Home theo bé, TopicList 10 chủ đề + progress local; T-010 BLOCKED chờ quyết định login (Codex).
 - 2026-06-18 — **PIVOT D-010:** backend Firebase → **server tự host (Express+SQLite)** trong `server/`. T-004/T-014/T-031/T-032/T-033/T-040 DONE & verified live (auth, progress, quiz, image với Pexels key, translate). Client service đấu vào `api.ts`, gỡ Firebase. CONTRACTS v2 (+authService, +contentService, chữ ký cũ giữ nguyên). T-010 hết BLOCKED (Claude).
+- 2026-06-18 — Trang chọn ảnh `/picker` (C-002 IN_REVIEW); ~100 từ có ảnh Pexels.
+- 2026-06-18 — **Claude tiếp quản UI (D-011):** dựng nốt Login, Flashcard/DeckRunner, Review, Lookup, Test, 3 Games, Dashboard + router/auth trong App. T-010/024/034/041/042/043/044/050 DONE. typecheck/build/test sạch; quiz-results endpoint verified. **App đã đủ vòng học end-to-end** (Claude).

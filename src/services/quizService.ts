@@ -8,3 +8,7 @@ export function generateQuiz(topicId: string, count: number): Promise<QuizQuesti
 export async function submitQuiz(result: QuizResult): Promise<void> {
   await apiRequest(`/api/quiz-results`, { method: "POST", body: result });
 }
+
+export function getQuizResults(studentId: string): Promise<QuizResult[]> {
+  return apiRequest(`/api/students/${studentId}/quiz-results`);
+}

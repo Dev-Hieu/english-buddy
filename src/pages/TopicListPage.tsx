@@ -44,7 +44,7 @@ export function TopicListPage({ student, lessonProgress, onBackHome, onStartTopi
           const studied = lessonProgress[progressKey(student.id, topic.id)]?.length ?? 0;
           const progress = words.length === 0 ? 0 : Math.round((studied / words.length) * 100);
           const complete = progress >= 100;
-          const enabled = topic.id === "topic_food";
+          const enabled = words.length > 0;
 
           return (
             <Card key={topic.id} className={enabled ? "" : "opacity-75"}>

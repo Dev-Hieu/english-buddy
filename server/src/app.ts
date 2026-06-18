@@ -115,6 +115,12 @@ export function createApp() {
     res.json(buildQuiz(words, count));
   });
 
+  app.get("/api/students/:id/quiz-results", requireAuth, (req, res) => {
+    res.json(
+      db.prepare("SELECT * FROM quiz_results WHERE studentId = ? ORDER BY createdAt DESC").all(req.params.id)
+    );
+  });
+
   app.post("/api/quiz-results", requireAuth, (req, res) => {
     const r = req.body || {};
     db.prepare(
