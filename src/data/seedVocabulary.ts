@@ -1,10 +1,6 @@
 import type { VocabularyWord } from "../types";
 import { IMAGE_URLS } from "./seedImages";
-import { KIDS_WORDS } from "./vocab/kids";
-import { A2_WORDS } from "./vocab/a2";
-import { B1_WORDS } from "./vocab/b1";
-import { B2_WORDS } from "./vocab/b2";
-import { C1_WORDS } from "./vocab/c1";
+import { ALL_LEVEL_WORDS } from "./vocab";
 
 // Mốc thời gian seed cố định (tránh giá trị động giữa các lần chạy).
 const SEED_CREATED_AT = Date.UTC(2026, 5, 18); // 2026-06-18
@@ -148,7 +144,9 @@ const CORE_WORDS: VocabularyWord[] = [
   word({ id: "word_mountain", word: "mountain", phonetic: "/ˈmaʊn.tɪn/", meaning_vi: "ngọn núi", example: "The mountain is high.", example_vi: "Ngọn núi cao.", topicIds: ["topic_travel"] }),
 ];
 
-// Gộp toàn bộ: từ cơ bản + 5 cấp độ (kids/a2/b1/b2/c1) do các agent sinh.
-export const SEED_VOCABULARY: VocabularyWord[] = [
-  ...CORE_WORDS, ...KIDS_WORDS, ...A2_WORDS, ...B1_WORDS, ...B2_WORDS, ...C1_WORDS,
-];
+// Gộp toàn bộ: từ cơ bản + mọi cấp độ do các agent sinh (khử trùng id, giữ bản đầu).
+function dedupeById(list: VocabularyWord[]): VocabularyWord[] {
+  const seen = new Set<string>();
+  return list.filter((w) => (seen.has(w.id) ? false : (seen.add(w.id), true)));
+}
+export const SEED_VOCABULARY: VocabularyWord[] = dedupeById([...CORE_WORDS, ...ALL_LEVEL_WORDS]);
