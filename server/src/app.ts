@@ -162,11 +162,12 @@ export function createApp() {
   // ── Proxy ảnh (Pexels + fallback Unsplash) ──
   app.get("/api/image", async (req, res) => {
     const query = String(req.query.query || "").trim();
-    const count = Math.min(Number(req.query.count || 5), 15);
+    const count = Math.min(Number(req.query.count || 5), 80); // Pexels per_page tối đa 80
+    const page = Math.max(1, Number(req.query.page || 1));
     if (!query) return res.status(400).json({ error: "thiếu query" });
     try {
-      let images = await fromPexels(query, count);
-      if (images.length === 0) images = await fromUnsplash(query, count);
+      let images = await fromPexels(query, count, page);
+      if (images.length === 0) images = await fromUnsplash(query, count, page);
       res.json(images);
     } catch {
       res.status(502).json({ error: "image proxy lỗi" });
@@ -207,10 +208,10 @@ export function createApp() {
   return app;
 }
 
-async function fromPexels(query: string, count = 5) {
+async function fromPexels(query: string, count = 5, page = 1) {
   const key = process.env.PEXELS_KEY || "";
   if (!key) return [];
-  const r = await fetch(`https://api.pexels.com/v1/search?query=${encodeURIComponent(query)}&per_page=${count}`, {
+  const r = await fetch(`https://api.pexels.com/v1/search?query=${encodeURIComponent(query)}&per_page=${count}&page=${page}`, {
     headers: { Authorization: key },
   });
   if (!r.ok) return [];
@@ -221,10 +222,10 @@ async function fromPexels(query: string, count = 5) {
   }));
 }
 
-async function fromUnsplash(query: string, count = 5) {
+async function fromUnsplash(query: string, count = 5, page = 1) {
   const key = process.env.UNSPLASH_KEY || "";
   if (!key) return [];
-  const r = await fetch(`https://api.unsplash.com/search/photos?query=${encodeURIComponent(query)}&per_page=${count}`, {
+  const r = await fetch(`https://api.unsplash.com/search/photos?query=${encodeURIComponent(query)}&per_page=${count}&page=${page}`, {
     headers: { Authorization: `Client-ID ${key}` },
   });
   if (!r.ok) return [];

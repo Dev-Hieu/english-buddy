@@ -7,39 +7,78 @@
   <style>
     * { box-sizing: border-box; }
     body { font-family: system-ui, -apple-system, sans-serif; margin: 0; background: #f6f7fb; color: #1f2430; }
-    header { position: sticky; top: 0; background: #fff; border-bottom: 1px solid #e5e7eb; padding: 14px 20px; }
+    header { position: sticky; top: 0; z-index: 5; background: #fff; border-bottom: 1px solid #e5e7eb; padding: 14px 20px; }
     header h1 { margin: 0 0 4px; font-size: 18px; }
     header p { margin: 0; font-size: 13px; color: #6b7280; }
     .filter { margin-top: 10px; }
     .filter select { padding: 6px 10px; border-radius: 8px; border: 1px solid #d1d5db; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 14px; padding: 20px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 14px; padding: 20px; }
     .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 12px; }
     .card .head { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
     .card .word { font-weight: 800; font-size: 18px; text-transform: capitalize; }
     .card .vi { color: #6b7280; font-size: 13px; }
-    .current { width: 100%; height: 150px; object-fit: cover; border-radius: 8px; background: #eef0f5; margin: 10px 0; }
+    .current { width: 100%; height: 140px; object-fit: cover; border-radius: 8px; background: #eef0f5; margin: 10px 0; }
     .current.empty { display: flex; align-items: center; justify-content: center; color: #9aa1ad; font-size: 40px; font-weight: 800; }
-    .row { display: flex; gap: 6px; }
-    .row input { flex: 1; padding: 7px 9px; border: 1px solid #d1d5db; border-radius: 8px; font-size: 13px; }
-    button { padding: 7px 12px; border: 0; border-radius: 8px; background: #6d5efc; color: #fff; font-weight: 600; cursor: pointer; font-size: 13px; }
+    button { padding: 8px 12px; border: 0; border-radius: 8px; background: #1cb0a8; color: #fff; font-weight: 700; cursor: pointer; font-size: 13px; }
     button.ghost { background: #eef0f5; color: #374151; }
-    .cands { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; margin-top: 8px; }
-    .cands img { width: 100%; height: 64px; object-fit: cover; border-radius: 6px; cursor: pointer; border: 3px solid transparent; }
-    .cands img:hover { border-color: #6d5efc; }
+    button:disabled { opacity: .4; cursor: default; }
     .saved { color: #16a34a; font-size: 12px; font-weight: 700; }
+
+    /* Modal chọn ảnh */
+    .overlay { position: fixed; inset: 0; background: rgba(15,30,40,.55); display: none; align-items: flex-start; justify-content: center; z-index: 20; padding: 24px; overflow: auto; }
+    .overlay.open { display: flex; }
+    .panel { background: #fff; border-radius: 16px; width: 100%; max-width: 820px; padding: 18px; }
+    .panel .ptitle { font-size: 18px; font-weight: 800; }
+    .panel .psub { color: #6b7280; font-size: 13px; margin-bottom: 10px; }
+    .mgrid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; min-height: 120px; }
+    .mgrid img { width: 100%; height: 110px; object-fit: cover; border-radius: 8px; cursor: pointer; border: 3px solid transparent; }
+    .mgrid img:hover { border-color: #1cb0a8; }
+    .nav { display: flex; align-items: center; gap: 10px; justify-content: center; margin-top: 12px; }
+    .nav .pg { font-weight: 700; font-size: 13px; }
+    .urlrow { display: flex; gap: 6px; margin-top: 12px; }
+    .urlrow input { flex: 1; padding: 8px 10px; border: 1px solid #d1d5db; border-radius: 8px; }
+    .ptop { display: flex; justify-content: space-between; align-items: center; }
+    @media (max-width: 560px) { .mgrid { grid-template-columns: repeat(3, 1fr); } }
   </style>
 </head>
 <body>
   <header>
     <h1>🖼️ Chọn ảnh minh hoạ — English Buddy</h1>
-    <p>Bấm “Đổi ảnh” ở từ bất kỳ → xem ứng viên từ Pexels → bấm ảnh để chọn. Lưu xong app tự cập nhật (F5 trang học).</p>
+    <p>Bấm “Đổi ảnh” → duyệt nhiều ảnh từ Pexels (có phân trang) → bấm ảnh để chọn. Lưu xong app tự cập nhật (F5 trang học).</p>
     <div class="filter">Chủ đề: <select id="topicFilter"><option value="">Tất cả</option></select></div>
   </header>
   <div class="grid" id="grid"></div>
 
+  <!-- Modal -->
+  <div class="overlay" id="overlay">
+    <div class="panel">
+      <div class="ptop">
+        <div>
+          <div class="ptitle" id="mTitle"></div>
+          <div class="psub" id="mSub"></div>
+        </div>
+        <button class="ghost" id="mClose">Đóng ✕</button>
+      </div>
+      <div class="mgrid" id="mGrid"></div>
+      <div class="nav">
+        <button id="mPrev" class="ghost">◀ Trước</button>
+        <span class="pg" id="mPage">Trang 1</span>
+        <button id="mNext" class="ghost">Sau ▶</button>
+      </div>
+      <div class="urlrow">
+        <input id="mUrl" placeholder="Hoặc dán URL ảnh tuỳ ý..." />
+        <button id="mUrlBtn">Dùng URL</button>
+      </div>
+    </div>
+  </div>
+
   <script>
     const API = location.origin;
+    const PER_PAGE = 28;
     let WORDS = [];
+    let cur = null;      // từ đang chọn ảnh
+    let page = 1;
+    let curCardEl = null;
 
     async function load() {
       WORDS = await (await fetch(API + "/api/vocabulary")).json();
@@ -66,46 +105,58 @@
       el.innerHTML =
         '<div class="head"><span class="word">' + w.word + '</span><span class="vi">' + w.meaning_vi + '</span></div>' +
         img +
-        '<div class="row"><input value="' + w.word + '" /><button>Đổi ảnh</button></div>' +
-        '<div class="cands"></div><div class="msg"></div>';
-
-      const input = el.querySelector("input");
-      const btn = el.querySelector("button");
-      const cands = el.querySelector(".cands");
-      const msg = el.querySelector(".msg");
-
-      btn.onclick = async () => {
-        btn.textContent = "Đang tìm…";
-        const list = await (await fetch(API + "/api/image?count=12&query=" + encodeURIComponent(input.value))).json();
-        btn.textContent = "Đổi ảnh";
-        cands.innerHTML = "";
-        list.forEach(im => {
-          const t = document.createElement("img");
-          t.src = im.thumbUrl; t.title = im.photographer;
-          t.onclick = () => pick(w, im.url, el);
-          cands.appendChild(t);
-        });
-        // ô dán URL tuỳ ý
-        const custom = document.createElement("div");
-        custom.className = "row"; custom.style.marginTop = "8px";
-        custom.innerHTML = '<input placeholder="Hoặc dán URL ảnh..." /><button class="ghost">Dùng URL</button>';
-        custom.querySelector("button").onclick = () => pick(w, custom.querySelector("input").value.trim(), el);
-        cands.after(custom);
-      };
+        '<button>Đổi ảnh</button> <span class="msg"></span>';
+      el.querySelector("button").onclick = () => openModal(w, el);
       return el;
     }
 
-    async function pick(w, url, el) {
+    function openModal(w, el) {
+      cur = w; curCardEl = el; page = 1;
+      document.getElementById("mTitle").textContent = w.word;
+      document.getElementById("mSub").textContent = w.meaning_vi;
+      document.getElementById("mUrl").value = "";
+      document.getElementById("overlay").classList.add("open");
+      loadPage(1);
+    }
+
+    function closeModal() { document.getElementById("overlay").classList.remove("open"); }
+
+    async function loadPage(p) {
+      const grid = document.getElementById("mGrid");
+      grid.innerHTML = "<p style='grid-column:1/-1;color:#6b7280'>Đang tải ảnh…</p>";
+      const list = await (await fetch(API + "/api/image?count=" + PER_PAGE + "&page=" + p + "&query=" + encodeURIComponent(cur.word))).json();
+      page = p;
+      grid.innerHTML = "";
+      (list || []).forEach(im => {
+        const t = document.createElement("img");
+        t.src = im.thumbUrl; t.title = im.photographer || "";
+        t.onclick = () => pick(im.url);
+        grid.appendChild(t);
+      });
+      if (!list || list.length === 0) grid.innerHTML = "<p style='grid-column:1/-1;color:#6b7280'>Không còn ảnh.</p>";
+      document.getElementById("mPage").textContent = "Trang " + p;
+      document.getElementById("mPrev").disabled = p <= 1;
+      document.getElementById("mNext").disabled = !list || list.length < PER_PAGE; // hết trang
+    }
+
+    async function pick(url) {
       await fetch(API + "/api/image-pick", {
         method: "POST", headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ wordId: w.id, url })
+        body: JSON.stringify({ wordId: cur.id, url })
       });
-      w.imageUrl = url;
-      const cur = el.querySelector(".current");
-      const fresh = '<img class="current" src="' + url + '" alt="">';
-      cur.outerHTML = fresh;
-      el.querySelector(".msg").innerHTML = '<span class="saved">✓ Đã lưu</span>';
+      cur.imageUrl = url;
+      // cập nhật ảnh trên card + đánh dấu đã lưu
+      const c = curCardEl.querySelector(".current");
+      if (c) c.outerHTML = '<img class="current" src="' + url + '" alt="">';
+      curCardEl.querySelector(".msg").innerHTML = '<span class="saved">✓ Đã lưu</span>';
+      closeModal();
     }
+
+    document.getElementById("mPrev").onclick = () => page > 1 && loadPage(page - 1);
+    document.getElementById("mNext").onclick = () => loadPage(page + 1);
+    document.getElementById("mClose").onclick = closeModal;
+    document.getElementById("mUrlBtn").onclick = () => { const u = document.getElementById("mUrl").value.trim(); if (u) pick(u); };
+    document.getElementById("overlay").onclick = (e) => { if (e.target.id === "overlay") closeModal(); };
 
     load();
   </script>
