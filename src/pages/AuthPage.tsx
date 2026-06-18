@@ -3,6 +3,7 @@ import { useState } from "react";
 import { login, register, type AuthUser } from "@/services/authService";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/components/ui/cn";
+import { ParrotLogo } from "@/components/ParrotLogo";
 
 interface AuthPageProps {
   onAuthed: (user: AuthUser) => void;
@@ -36,7 +37,9 @@ export function AuthPage({ onAuthed }: AuthPageProps) {
   return (
     <main className="mx-auto flex min-h-screen w-full max-w-md flex-col justify-center px-5 py-10">
       <header className="mb-6 text-center">
-        <div className="mx-auto mb-4 flex h-20 w-20 items-center justify-center rounded-[1.75rem] bg-secondary text-5xl shadow-card">🦉</div>
+        <div className="mx-auto mb-4 flex h-20 w-20 items-center justify-center rounded-[1.75rem] bg-secondary shadow-card">
+          <ParrotLogo size={56} />
+        </div>
         <h1 className="text-3xl font-black tracking-tight">English Buddy</h1>
         <p className="mt-2 font-semibold text-muted-foreground">Học tiếng Anh vui cho cả nhà</p>
       </header>
