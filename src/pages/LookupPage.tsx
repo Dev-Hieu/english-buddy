@@ -52,6 +52,7 @@ export function LookupPage({ student, onBackHome }: LookupPageProps) {
 }
 
 function WordLookup({ student }: { student: Student }) {
+  const [from, setFrom] = useState<Lang>("en"); // Anh→Việt hoặc Việt→Anh
   const [query, setQuery] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
@@ -60,23 +61,35 @@ function WordLookup({ student }: { student: Student }) {
 
   const search = async (e: React.FormEvent) => {
     e.preventDefault();
-    const q = normalizeWord(query);
-    if (!q) return;
+    const raw = query.trim();
+    if (!raw) return;
     setLoading(true);
     setError("");
     setResult(null);
     setSaved(false);
-    const [dict, vi, images] = await Promise.all([
-      getWordDefinition(q).catch(() => null),
-      translateToVi(q).catch(() => ""),
-      getWordImages(q).catch(() => [] as ImageResult[]),
-    ]);
-    setLoading(false);
-    if (!dict && !vi && images.length === 0) {
-      setError(`Không tìm thấy dữ liệu cho "${q}".`);
+
+    let englishWord = "";
+    let viMeaning = "";
+    if (from === "en") {
+      englishWord = normalizeWord(raw);
+      viMeaning = await translateToVi(englishWord).catch(() => "");
+    } else {
+      // Việt→Anh: dịch sang tiếng Anh rồi tra định nghĩa/ảnh của từ Anh đó.
+      const en = await translate(raw, "vi", "en").catch(() => "");
+      englishWord = normalizeWord(en);
+      viMeaning = raw; // từ tiếng Việt người dùng nhập chính là nghĩa
+    }
+    if (!englishWord) {
+      setLoading(false);
+      setError(`Không dịch được "${raw}".`);
       return;
     }
-    setResult({ query: q, dict, vi, images });
+    const [dict, images] = await Promise.all([
+      getWordDefinition(englishWord).catch(() => null),
+      getWordImages(englishWord).catch(() => [] as ImageResult[]),
+    ]);
+    setLoading(false);
+    setResult({ query: englishWord, dict, vi: viMeaning, images });
   };
 
   const save = async () => {
@@ -85,12 +98,22 @@ function WordLookup({ student }: { student: Student }) {
     setSaved(true);
   };
 
+  const to: Lang = from === "en" ? "vi" : "en";
+  const labels: Record<Lang, string> = { en: "Anh", vi: "Việt" };
+
   return (
     <>
+      <div className="flex items-center justify-center gap-2">
+        <span className={cn("rounded-md px-3 py-1 font-bold", from === "en" ? "bg-primary text-primary-foreground" : "bg-muted")}>{labels[from]}</span>
+        <Button type="button" size="icon" variant="outline" onClick={() => { setFrom(to); setResult(null); setError(""); }} aria-label="Đổi chiều tra">
+          <ArrowLeftRight className="h-4 w-4" />
+        </Button>
+        <span className={cn("rounded-md px-3 py-1 font-bold", to === "en" ? "bg-primary text-primary-foreground" : "bg-muted")}>{labels[to]}</span>
+      </div>
       <form className="flex gap-2" onSubmit={search}>
         <div className="flex flex-1 items-center gap-2 rounded-md border border-border bg-white px-3">
           <Search className="h-4 w-4 text-muted-foreground" />
-          <input className="h-11 flex-1 bg-transparent outline-none" placeholder="Nhập 1 từ tiếng Anh..." value={query} onChange={(e) => setQuery(e.target.value)} autoFocus />
+          <input className="h-11 flex-1 bg-transparent outline-none" placeholder={from === "en" ? "Nhập 1 từ tiếng Anh..." : "Nhập 1 từ tiếng Việt..."} value={query} onChange={(e) => setQuery(e.target.value)} autoFocus />
         </div>
         <Button type="submit" size="lg" disabled={loading || !query.trim()}>
           {loading ? <Loader2 className="h-5 w-5 animate-spin" /> : <Search className="h-5 w-5" />} Tra
