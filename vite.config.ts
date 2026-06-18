@@ -19,4 +19,17 @@ export default defineConfig({
       "/pronounce": { target: "http://localhost:8788", changeOrigin: true },
     },
   },
+  build: {
+    chunkSizeWarningLimit: 1200,
+    rollupOptions: {
+      output: {
+        // Tách dữ liệu từ vựng/ảnh và vendor thành chunk riêng -> cache tốt, app code nhẹ hơn.
+        manualChunks(id) {
+          if (id.includes("/src/data/")) return "vocab-data";
+          if (id.includes("node_modules/react") || id.includes("node_modules/scheduler")) return "react";
+          if (id.includes("node_modules")) return "vendor";
+        },
+      },
+    },
+  },
 });
