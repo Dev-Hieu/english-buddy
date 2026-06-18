@@ -73,7 +73,7 @@
 | ID | Task | Status |
 |----|------|--------|
 | C-001 | Soạn `meaning_vi` + `example_vi` cho 100 từ | TODO |
-| C-002 | Chọn ảnh an toàn (URL cố định) cho 100 từ | TODO |
+| C-002 | Chọn ảnh an toàn (URL cố định) cho 100 từ | IN_REVIEW | Pexels tự fill 99/99 (`seedImages.ts`); **anh review độ phù hợp/an toàn, đổi tay URL nào chưa ổn** |
 
 ---
 

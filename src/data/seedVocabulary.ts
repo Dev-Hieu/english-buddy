@@ -1,4 +1,5 @@
 import type { VocabularyWord } from "../types";
+import { IMAGE_URLS } from "./seedImages";
 
 // Mốc thời gian seed cố định (tránh giá trị động giữa các lần chạy).
 const SEED_CREATED_AT = Date.UTC(2026, 5, 18); // 2026-06-18
@@ -11,7 +12,14 @@ const SEED_CREATED_AT = Date.UTC(2026, 5, 18); // 2026-06-18
 type Seed = Omit<VocabularyWord, "level" | "source" | "createdAt" | "imageUrl" | "audioUrl">;
 
 function word(s: Seed): VocabularyWord {
-  return { ...s, level: "beginner", imageUrl: "", audioUrl: "", source: "seed", createdAt: SEED_CREATED_AT };
+  return {
+    ...s,
+    level: "beginner",
+    imageUrl: IMAGE_URLS[s.id] ?? "", // ảnh Pexels (seedImages.ts); rỗng -> placeholder
+    audioUrl: "",
+    source: "seed",
+    createdAt: SEED_CREATED_AT,
+  };
 }
 
 export const SEED_VOCABULARY: VocabularyWord[] = [
