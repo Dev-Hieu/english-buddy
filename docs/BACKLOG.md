@@ -22,9 +22,9 @@
 
 | ID | Task | Owner | Status | Depends | DoD |
 |----|------|-------|--------|---------|-----|
-| T-010 | LoginPage (1 parent) + Auth flow | Codex | TODO | T-002,T-004 | đăng nhập được |
-| T-011 | StudentSelectPage (chọn Bảo Ngọc/Bảo Nam) | Codex | TODO | T-010 | chọn & nhớ profile |
-| T-012 | HomePage (mục tiêu hôm nay + nút điều hướng) | Codex | TODO | T-011 | điều hướng đủ 5 nút |
+| T-010 | LoginPage (1 parent) + Auth flow | Codex | BLOCKED | T-002,T-004 | chờ anh Hieu chốt Google sign-in vs email/password |
+| T-011 | StudentSelectPage (chọn Bảo Ngọc/Bảo Nam) | Codex | DONE | T-010 | ✅ chọn & nhớ profile bằng `localStorage` |
+| T-012 | HomePage (mục tiêu hôm nay + nút điều hướng) | Codex | DONE | T-011 | ✅ hiện profile, mục tiêu ngày, 5 nút điều hướng |
 | T-013 | Seed data local 100 từ (cấu trúc) + seedTopics | Claude | DONE | T-003 | ✅ 10 topics + ~100 từ (nháp, chờ anh review) + seedStudents; ảnh chờ C-002 |
 | T-014 | progressService + spacedRepetition util | Claude | IN_REVIEW | T-003,T-004 | ✅ typecheck + 6 unit test SR pass; `progressService` cần Firebase/emulator để chạy thật |
 
@@ -32,7 +32,7 @@
 
 | ID | Task | Owner | Status | Depends | DoD |
 |----|------|-------|--------|---------|-----|
-| T-020 | TopicListPage (hiện tiến độ mỗi chủ đề) | Codex | TODO | T-012,T-013 | list 10 chủ đề + % |
+| T-020 | TopicListPage (hiện tiến độ mỗi chủ đề) | Codex | DONE | T-012,T-013 | ✅ list 10 chủ đề + % tiến độ local theo profile |
 | T-021 | WordCard component (ảnh/từ/phiên âm/nghe) | Codex | DONE | T-003 | ✅ render `VocabularyWord`, nút nghe gọi `speakText` |
 | T-022 | LessonPage chủ đề Food (5–10 từ) | Codex | DONE | T-021 | ✅ lướt 10 từ Food, đánh dấu đã xem, progress local |
 | T-023 | speechService (audioUrl → TTS fallback) | Claude | DONE | T-003 | ✅ typecheck pass; thuần browser API |
@@ -85,3 +85,4 @@
 - 2026-06-18 — T-001/T-002/T-005 DONE: React+Vite+TS, Tailwind, shadcn-style UI primitives, layout gốc, scripts và lockfile; `typecheck` + `build` pass (Codex).
 - 2026-06-18 — T-013 DONE: nháp ~100 từ/10 chủ đề + `seedStudents`; Firebase Emulator (D-009); vitest + 10 unit test (SR + quiz) pass; `tsc -b` sạch (Claude).
 - 2026-06-18 — T-021/T-022 DONE: `WordCard` có phát âm qua `speechService`; `LessonPage` Food lướt 10 từ + progress local; `typecheck/build/test` pass (Codex).
+- 2026-06-18 — T-011/T-012/T-020 DONE: chọn profile, Home theo bé, TopicList 10 chủ đề + progress local; T-010 BLOCKED chờ quyết định login (Codex).

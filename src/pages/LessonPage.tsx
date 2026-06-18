@@ -2,6 +2,7 @@ import { ArrowLeft, ArrowRight, BookOpen, CheckCircle2 } from "lucide-react";
 import { useMemo, useState } from "react";
 import { SEED_TOPICS } from "@/data/seedTopics";
 import { SEED_VOCABULARY } from "@/data/seedVocabulary";
+import type { Student } from "@/types";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { cn } from "@/components/ui/cn";
@@ -9,17 +10,26 @@ import { WordCard } from "@/components/vocabulary/WordCard";
 
 interface LessonPageProps {
   topicId?: string;
+  student: Student;
+  studiedWordIds: string[];
+  onMarkWordStudied: (wordId: string) => void;
   onBackHome: () => void;
 }
 
-export function LessonPage({ topicId = "topic_food", onBackHome }: LessonPageProps) {
+export function LessonPage({
+  topicId = "topic_food",
+  student,
+  studiedWordIds,
+  onMarkWordStudied,
+  onBackHome,
+}: LessonPageProps) {
   const topic = SEED_TOPICS.find((item) => item.id === topicId);
   const words = useMemo(
     () => SEED_VOCABULARY.filter((word) => word.topicIds.includes(topicId)),
     [topicId],
   );
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [studiedIds, setStudiedIds] = useState<Set<string>>(() => new Set());
+  const studiedIds = useMemo(() => new Set(studiedWordIds), [studiedWordIds]);
 
   const currentWord = words[currentIndex];
   const studiedCount = studiedIds.size;
@@ -27,7 +37,7 @@ export function LessonPage({ topicId = "topic_food", onBackHome }: LessonPagePro
 
   const markCurrentStudied = () => {
     if (!currentWord) return;
-    setStudiedIds((previous) => new Set(previous).add(currentWord.id));
+    onMarkWordStudied(currentWord.id);
   };
 
   const goNext = () => {
@@ -62,7 +72,7 @@ export function LessonPage({ topicId = "topic_food", onBackHome }: LessonPagePro
             Trang chủ
           </Button>
           <div>
-            <p className="text-sm font-semibold text-primary">Lesson</p>
+            <p className="text-sm font-semibold text-primary">Lesson · {student.name}</p>
             <h1 className="mt-1 text-3xl font-black tracking-tight sm:text-4xl">
               {topic.name}: {topic.name_vi}
             </h1>

@@ -135,6 +135,23 @@ Verify: `npm run typecheck`, `npm run build`, `npm test` đều pass. Dev server
 
 ---
 
+### [M-012] Codex → Claude | HANDOFF | 2026-06-18
+**Re:** T-011/T-012/T-020 hoàn tất; T-010 blocked
+**Status:** OPEN
+
+Mình tiếp tục phần không bị chặn bởi Login:
+- `src/pages/StudentSelectPage.tsx`: chọn Bảo Ngọc / Bảo Nam từ `SEED_STUDENTS`, nhớ profile bằng `localStorage`.
+- `src/app/App.tsx`: state điều hướng `student-select/home/topics/lesson`, lưu progress xem từ theo key `studentId:topicId`.
+- `src/pages/HomePage.tsx`: hiển thị profile hiện tại, mục tiêu ngày, 5 nút điều hướng, nút đổi bé, nút xem chủ đề.
+- `src/pages/TopicListPage.tsx`: list 10 topic từ `SEED_TOPICS`, tính số từ từ `SEED_VOCABULARY`, hiển thị % progress local theo profile. Hiện chỉ Food mở nút học, topic khác để “Sắp mở”.
+- `LessonPage` nhận progress từ App nên học Food xong quay lại TopicList sẽ thấy % tăng.
+
+Verify: `npm run typecheck`, `npm run build`, `npm test` đều pass; dev server `http://127.0.0.1:5173/` trả HTTP 200.
+
+T-010 mình chuyển `BLOCKED` vì DECISIONS còn chờ anh Hieu chốt Google sign-in vs email/password.
+
+---
+
 ### [M-008] Codex → Claude | HANDOFF | 2026-06-18
 **Re:** T-001/T-002/T-005 hoàn tất
 **Status:** CLOSED
