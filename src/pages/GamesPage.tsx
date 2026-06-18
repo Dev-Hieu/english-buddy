@@ -1,5 +1,5 @@
 import { Car, Ear, Grid3x3, Images, Link2, PartyPopper, Puzzle, Volume2 } from "lucide-react";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { SEED_VOCABULARY } from "@/data/seedVocabulary";
 import type { Student, VocabularyWord } from "@/types";
 import { recordAnswer } from "@/services/progressService";
@@ -22,7 +22,7 @@ interface GamesPageProps {
   onBackHome: () => void;
 }
 
-type Game = "menu" | "match" | "pick" | "listen" | "build" | "race" | "sudoku";
+type Game = "menu" | "match" | "pick" | "listen" | "dictation" | "build" | "race" | "sudoku";
 
 function shuffle<T>(a: T[]): T[] {
   const r = [...a];
@@ -59,6 +59,7 @@ export function GamesPage({ student, topicId, level = "all", studiedWordIds, onB
       { id: "match" as const, name: "Ghép từ", desc: "Nối từ với nghĩa", emoji: "🔗" },
       { id: "pick" as const, name: "Chọn ảnh", desc: "Nhìn từ, chọn ảnh", emoji: "🖼️" },
       { id: "listen" as const, name: "Nghe & chọn", desc: "Nghe rồi chọn từ", emoji: "👂" },
+      { id: "dictation" as const, name: "Nghe & gõ", desc: "Nghe rồi gõ lại từ (chính tả)", emoji: "⌨️" },
       { id: "build" as const, name: "Đuổi hình bắt chữ", desc: "Nhìn hình, ghép chữ", emoji: "🧩" },
       { id: "race" as const, name: "Đua xe học từ", desc: "Đáp đúng để về đích", emoji: "🏎️" },
       { id: "sudoku" as const, name: "Sudoku", desc: "Điền số 1-9 rèn tư duy", emoji: "🔢" },
@@ -104,6 +105,7 @@ export function GamesPage({ student, topicId, level = "all", studiedWordIds, onB
       {game === "match" && <MatchGame pool={reviewPool} onRecord={record} onClose={back} hard={hard} />}
       {game === "pick" && <PickGame pool={reviewPool} onRecord={record} onClose={back} hard={hard} />}
       {game === "listen" && <ListenGame pool={reviewPool} onRecord={record} onClose={back} hard={hard} />}
+      {game === "dictation" && <DictationGame pool={reviewPool} onRecord={record} onClose={back} hard={hard} />}
       {game === "build" && <PictureWordGame pool={base} onRecord={record} onClose={back} hard={hard} />}
       {game === "race" && <CarRaceGame pool={reviewPool} onRecord={record} onClose={back} hard={hard} />}
       {game === "sudoku" && <SudokuGame onClose={back} />}
@@ -256,6 +258,67 @@ function ListenGame({ pool, onRecord, onClose, hard }: GameProps) {
             );
           })}
         </div>
+      </CardContent></Card>
+    </>
+  );
+}
+
+// Nghe & gõ chính tả: nghe từ rồi gõ lại đúng chính tả.
+function DictationGame({ pool, onRecord, onClose, hard }: GameProps) {
+  const [targets] = useState(() => pickWords(pool, hard ? 8 : 5));
+  const [n, setN] = useState(0);
+  const [input, setInput] = useState("");
+  const [checked, setChecked] = useState<null | boolean>(null);
+  const target = targets[Math.min(n, Math.max(0, targets.length - 1))];
+
+  // Tự đọc từ khi sang câu mới (gợi ý nghe).
+  useEffect(() => {
+    if (target) speakText(target.word, target.audioUrl);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [n]);
+
+  if (n >= targets.length || !target) return (<><SessionHeader title="Nghe & gõ" onClose={onClose} /><Finished onClose={onClose} /></>);
+
+  const submit = () => {
+    if (checked !== null || !input.trim()) return;
+    const ok = input.trim().toLowerCase() === target.word.toLowerCase();
+    setChecked(ok);
+    onRecord(target.id, ok);
+  };
+  const next = () => { setInput(""); setChecked(null); setN((x) => x + 1); };
+
+  return (
+    <>
+      <SessionHeader title="Nghe & gõ" onClose={onClose} progress={Math.round((n / targets.length) * 100)} />
+      <Card><CardContent className="space-y-5 p-6 text-center">
+        <Button type="button" size="xl" className="w-full" onClick={() => speakText(target.word, target.audioUrl)}>
+          <Volume2 className="h-7 w-7" /> Nghe lại
+        </Button>
+        <p className="text-sm font-bold text-muted-foreground">Nghĩa gợi ý: {target.meaning_vi}</p>
+        <input
+          autoFocus
+          className={cn(
+            "h-14 w-full rounded-2xl border-2 px-4 text-center text-2xl font-black lowercase outline-none",
+            checked === null ? "border-border focus:border-primary" : checked ? "border-success bg-success/10" : "border-red-400 bg-red-50",
+          )}
+          placeholder="gõ từ con nghe được..."
+          value={input}
+          disabled={checked !== null}
+          onChange={(e) => setInput(e.target.value)}
+          onKeyDown={(e) => e.key === "Enter" && submit()}
+        />
+        {checked === null ? (
+          <Button type="button" className="w-full" disabled={!input.trim()} onClick={submit}>Kiểm tra</Button>
+        ) : (
+          <div className="space-y-3">
+            <p className={cn("text-lg font-extrabold", checked ? "text-success" : "text-red-600")}>
+              {checked ? "Chính xác! 🎉" : `Đáp án đúng: ${target.word}`}
+            </p>
+            <Button type="button" className="w-full" onClick={next}>
+              {n + 1 >= targets.length ? "Xong" : "Từ tiếp"}
+            </Button>
+          </div>
+        )}
       </CardContent></Card>
     </>
   );
