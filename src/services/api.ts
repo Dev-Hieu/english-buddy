@@ -27,6 +27,9 @@ export async function apiRequest<T>(path: string, opts: Opts = {}): Promise<T> {
     res = await fetch(BASE + path, {
       method: opts.method ?? "GET",
       headers,
+      // Không để trình duyệt cache GET (vd /api/students) -> sau khi sửa hồ sơ
+      // sẽ luôn lấy dữ liệu mới, không "trả về như cũ".
+      cache: "no-store",
       body: opts.body !== undefined ? JSON.stringify(opts.body) : undefined,
     });
   } catch {

@@ -70,6 +70,8 @@ export function createApp() {
   const app = express();
   app.use(cors());
   app.use(express.json());
+  // Không cache phản hồi API -> client luôn nhận dữ liệu mới sau khi sửa hồ sơ/tiến độ.
+  app.use("/api", (_req, res, next) => { res.set("Cache-Control", "no-store"); next(); });
   app.use(express.static(PUBLIC_DIR));
 
   app.get("/api/health", (_req, res) => res.json({ ok: true }));
