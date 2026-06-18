@@ -12,7 +12,7 @@ export function initSchema(): void {
   db.exec(`
     CREATE TABLE IF NOT EXISTS users (
       id TEXT PRIMARY KEY, email TEXT UNIQUE, passwordHash TEXT, name TEXT,
-      role TEXT, createdAt INTEGER, studentLimit INTEGER DEFAULT 3
+      role TEXT, createdAt INTEGER, studentLimit INTEGER DEFAULT 1
     );
     CREATE TABLE IF NOT EXISTS students (
       id TEXT PRIMARY KEY, parentId TEXT, name TEXT, grade INTEGER, level TEXT,
@@ -45,5 +45,5 @@ export function initSchema(): void {
   `);
   // Migration cho DB cũ: thêm cột nếu chưa có.
   try { db.exec("ALTER TABLE students ADD COLUMN lastActiveDate TEXT"); } catch { /* đã có */ }
-  try { db.exec("ALTER TABLE users ADD COLUMN studentLimit INTEGER DEFAULT 3"); } catch { /* đã có */ }
+  try { db.exec("ALTER TABLE users ADD COLUMN studentLimit INTEGER DEFAULT 1"); } catch { /* đã có */ }
 }

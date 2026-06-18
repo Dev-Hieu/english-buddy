@@ -139,8 +139,8 @@ export function createApp() {
     if (!name || !String(name).trim()) return res.status(400).json({ error: "thiếu tên bé" });
     if (user.role !== "admin") {
       const count = (db.prepare("SELECT COUNT(*) AS c FROM students WHERE parentId = ?").get(user.id) as any).c;
-      if (count >= (user.studentLimit ?? 3)) {
-        return res.status(403).json({ error: `Đã đạt giới hạn ${user.studentLimit ?? 3} bé. Liên hệ admin để tăng hạn mức.` });
+      if (count >= (user.studentLimit ?? 1)) {
+        return res.status(403).json({ error: `Đã đạt giới hạn ${user.studentLimit ?? 1} bé. Liên hệ admin để tăng hạn mức.` });
       }
     }
     const row = {

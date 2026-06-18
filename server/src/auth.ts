@@ -16,7 +16,7 @@ export interface User {
 
 const publicUser = (r: any): User => ({
   id: r.id, email: r.email, name: r.name, role: r.role, createdAt: r.createdAt,
-  studentLimit: r.studentLimit ?? 3,
+  studentLimit: r.studentLimit ?? 1,
 });
 
 // ── Mật khẩu (scrypt) ──
@@ -53,7 +53,7 @@ export function registerUser(email: string, password: string, name: string): { t
   if (!password || password.length < 4) return { error: "mật khẩu tối thiểu 4 ký tự" };
   if (db.prepare("SELECT id FROM users WHERE email = ?").get(email)) return { error: "email đã được dùng" };
   const id = randomUUID();
-  db.prepare("INSERT INTO users (id, email, passwordHash, name, role, createdAt, studentLimit) VALUES (?, ?, ?, ?, 'parent', ?, 3)")
+  db.prepare("INSERT INTO users (id, email, passwordHash, name, role, createdAt, studentLimit) VALUES (?, ?, ?, ?, 'parent', ?, 1)")
     .run(id, email, hashPassword(password), (name || "").trim() || email.split("@")[0], Date.now());
   return { token: sign(id), user: publicUser(db.prepare("SELECT * FROM users WHERE id = ?").get(id)) };
 }

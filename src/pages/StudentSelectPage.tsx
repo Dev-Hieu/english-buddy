@@ -28,7 +28,7 @@ export function StudentSelectPage(p: StudentSelectPageProps) {
   const [error, setError] = useState("");
 
   const isAdmin = user.role === "admin";
-  const limit = user.studentLimit ?? 3;
+  const limit = user.studentLimit ?? 1;
   const atLimit = !isAdmin && students.length >= limit;
 
   return (
