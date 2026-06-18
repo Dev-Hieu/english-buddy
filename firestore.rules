@@ -1,0 +1,45 @@
+rules_version = '2';
+
+// Security rules tối giản cho app 1 gia đình (DECISIONS D-007).
+// MVP chỉ có 1 tài khoản phụ huynh -> chỉ user đã đăng nhập mới đọc/ghi dữ liệu học.
+// Ghi chú: nếu sau này nhiều phụ huynh, cần siết theo chuỗi parentId.
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function signedIn() {
+      return request.auth != null;
+    }
+
+    // Nội dung học: client chỉ ĐỌC. Ghi qua seed script / console / admin.
+    match /vocabulary/{id} {
+      allow read: if signedIn();
+      allow write: if false;
+    }
+    match /topics/{id} {
+      allow read: if signedIn();
+      allow write: if false;
+    }
+
+    // Hồ sơ phụ huynh: chỉ chính chủ.
+    match /users/{uid} {
+      allow read, write: if signedIn() && request.auth.uid == uid;
+    }
+
+    // Hồ sơ học sinh: thuộc về parent đang đăng nhập.
+    match /students/{id} {
+      allow read, write: if signedIn() && resource.data.parentId == request.auth.uid;
+      allow create: if signedIn() && request.resource.data.parentId == request.auth.uid;
+    }
+
+    // Tiến độ / kết quả / lịch sử tra: chỉ user đã đăng nhập (app 1 gia đình).
+    match /student_vocabulary_progress/{id} {
+      allow read, write: if signedIn();
+    }
+    match /quiz_results/{id} {
+      allow read, write: if signedIn();
+    }
+    match /lookup_history/{id} {
+      allow read, write: if signedIn();
+    }
+  }
+}

@@ -25,6 +25,38 @@ Khi bắt đầu task nào, nhớ đổi Status trong BACKLOG sang CLAIMED + ghi
 
 ---
 
+### [M-005] Claude → Hieu | REQUEST | 2026-06-18
+**Re:** điều kiện cần để verify lớp backend
+**Status:** OPEN
+
+Em đã code xong toàn bộ phần Claude. Để chuyển từ IN_REVIEW → DONE cần anh:
+1. **Tạo Firebase project** → bật Authentication + Firestore → copy config web vào `.env.local` (mẫu ở `.env.example`).
+2. **Lấy Pexels API key** (miễn phí) → đặt vào Functions env `PEXELS_KEY` (đừng để ở frontend). Unsplash key tùy chọn.
+3. (MyMemory dịch không cần key.)
+
+Trước khi có project thật, Codex vẫn chạy UI được với `SEED_VOCABULARY`/`SEED_TOPICS` (chủ đề Food); chỉ phần lưu tiến độ/quiz/tra từ là cần Firebase. Nếu anh muốn chạy thử end-to-end ngay mà chưa tạo project, em có thể thêm tùy chọn **Firebase Emulator** — anh cho biết có cần không.
+
+---
+
+### [M-004] Claude → Codex | FYI | 2026-06-18
+**Re:** lớp service đã sẵn sàng để UI gọi
+**Status:** OPEN
+
+Mình đã đẩy xong toàn bộ service trong vùng của mình. UI cứ import theo CONTRACTS:
+- `getWordDefinition(word)` — `@/services/dictionaryService`
+- `getWordImages(query)` — `@/services/imageService`
+- `translateToVi(text)` — `@/services/translateService`
+- `speakText(text, audioUrl?, lang?)` — `@/services/speechService`
+- `getStudentProgress / recordAnswer / getDueReviews / saveLookup` — `@/services/progressService`
+- `generateQuiz / submitQuiz` — `@/services/quizService`
+- Seed để render khi chưa có Firebase: `SEED_TOPICS`, `SEED_VOCABULARY` ở `@/data/...`
+
+Lưu ý: `recordAnswer` hiện trả `void` đúng CONTRACTS v1. Nếu UI flashcard cần progress mới ngay sau khi chấm, báo mình một REQUEST để mình đổi chữ ký + tăng Contracts version (đừng tự sửa type).
+
+Còn chờ bạn **T-001/T-002** (xem M-003) để mình chạy `typecheck` xác nhận toàn bộ build sạch.
+
+---
+
 ### [M-003] Claude → Codex | HANDOFF | 2026-06-18
 **Re:** T-001, T-002 — bạn bắt đầu được rồi
 **Status:** OPEN

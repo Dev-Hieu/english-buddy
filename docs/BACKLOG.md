@@ -15,7 +15,7 @@
 | T-001 | Init project React+Vite+TS | Codex | TODO | — | root, `src/app` | `npm run dev` chạy, trang trắng load OK |
 | T-002 | Cài Tailwind + shadcn/ui + layout gốc | Codex | TODO | T-001 | `src/app`, config | Tailwind class render đúng |
 | T-003 | Khóa `src/types/*` theo CONTRACTS v1 | Claude | DONE | — | `src/types` | ✅ 7 file types khớp CONTRACTS v1 |
-| T-004 | Setup Firebase project + `firebase.ts` + security rules | Claude | TODO | — | `src/services/firebase.ts` | Auth + Firestore kết nối được |
+| T-004 | Setup Firebase project + `firebase.ts` + security rules | Claude | IN_REVIEW | — | `firebase.ts`, `firestore.rules`, `firebase.json` | code xong; **chờ anh Hieu tạo project + điền `.env.local`** rồi mới kết nối thật |
 | T-005 | `.gitignore`, README, scripts (`dev/build/typecheck`) | Both | TODO | T-001 | root | repo sạch, không lộ key |
 
 ## Sprint 1 — Khung app chạy được
@@ -26,7 +26,7 @@
 | T-011 | StudentSelectPage (chọn Bảo Ngọc/Bảo Nam) | Codex | TODO | T-010 | chọn & nhớ profile |
 | T-012 | HomePage (mục tiêu hôm nay + nút điều hướng) | Codex | TODO | T-011 | điều hướng đủ 5 nút |
 | T-013 | Seed data local 100 từ (cấu trúc) + seedTopics | Claude | IN_PROGRESS | T-003 | khung + 10 topics + Food (10 từ) xong; 9 chủ đề chờ nội dung (C-001/C-002) |
-| T-014 | progressService + spacedRepetition util | Claude | IN_PROGRESS | T-003,T-004 | `spacedRepetition` + `normalizeWord` xong; `progressService` đợi Firebase (T-004) |
+| T-014 | progressService + spacedRepetition util | Claude | IN_REVIEW | T-003,T-004 | code xong (`spacedRepetition`, `normalizeWord`, `progressService`); chờ typecheck sau T-001 |
 
 ## Sprint 2 — Lát cắt dọc Food (học từ vựng)
 
@@ -35,24 +35,24 @@
 | T-020 | TopicListPage (hiện tiến độ mỗi chủ đề) | Codex | TODO | T-012,T-013 | list 10 chủ đề + % |
 | T-021 | WordCard component (ảnh/từ/phiên âm/nghe) | Codex | TODO | T-003 | render đúng 1 từ |
 | T-022 | LessonPage chủ đề Food (5–10 từ) | Codex | TODO | T-021 | học hết 1 bài |
-| T-023 | speechService (audioUrl → TTS fallback) | Claude | TODO | T-003 | nghe được từ & câu |
+| T-023 | speechService (audioUrl → TTS fallback) | Claude | IN_REVIEW | T-003 | code xong; chờ typecheck sau T-001 |
 | T-024 | Flashcard + ghi mastery qua progressService | Both | TODO | T-014,T-021 | "I know/Need review" lưu đúng |
 
 ## Sprint 3 — Quick Lookup
 
 | ID | Task | Owner | Status | Depends | DoD |
 |----|------|-------|--------|---------|-----|
-| T-030 | dictionaryService (chuẩn hóa Dictionary API) | Claude | TODO | T-003 | trả DictionaryResult |
-| T-031 | Functions `/image` (Pexels proxy, safe-search) | Claude | TODO | T-004 | trả ImageResult[], giấu key |
-| T-032 | Functions `/translate` + cache | Claude | TODO | T-004 | trả nghĩa VN |
-| T-033 | imageService + translateService (gọi Functions) | Claude | TODO | T-031,T-032 | khớp CONTRACTS |
+| T-030 | dictionaryService (chuẩn hóa Dictionary API) | Claude | IN_REVIEW | T-003 | code xong; chờ typecheck sau T-001 |
+| T-031 | Functions `/image` (Pexels proxy, safe-search) | Claude | IN_REVIEW | T-004 | code xong (`functions/index.js`); **chờ PEXELS_KEY + deploy** |
+| T-032 | Functions `/translate` + cache | Claude | IN_REVIEW | T-004 | code xong (MyMemory + cache theo instance); chờ deploy |
+| T-033 | imageService + translateService (gọi Functions) | Claude | IN_REVIEW | T-031,T-032 | code xong, khớp CONTRACTS; chờ typecheck |
 | T-034 | LookupPage + Word Card + Save to My Words | Codex | TODO | T-030,T-033 | tra & lưu được |
 
 ## Sprint 4 — Ôn tập, Game, Test
 
 | ID | Task | Owner | Status | Depends | DoD |
 |----|------|-------|--------|---------|-----|
-| T-040 | quizGenerator util + quizService (distractor cùng chủ đề) | Claude | TODO | T-013 | sinh 10 câu hợp lệ |
+| T-040 | quizGenerator util + quizService (distractor cùng chủ đề) | Claude | IN_REVIEW | T-013 | code xong (`buildQuiz` + `quizService`); chờ typecheck |
 | T-041 | ReviewPage (từ đến hạn ôn) | Codex | TODO | T-014,T-024 | hiện đúng từ due |
 | T-042 | Game: Match Word + Pick Picture | Codex | TODO | T-040 | chơi & cộng XP |
 | T-043 | Game: Listen & Choose + Word Builder | Codex | TODO | T-040,T-023 | chơi được |
@@ -81,3 +81,4 @@
 - 2026-06-18 — Khởi tạo backlog, repo, bộ docs phối hợp (Claude).
 - 2026-06-18 — T-003 DONE: `src/types` (user/student/vocabulary/progress/quiz/service + index) khớp CONTRACTS v1 (Claude).
 - 2026-06-18 — T-013/T-014 tiến hành: `spacedRepetition.ts`, `normalizeWord.ts`, `seedTopics.ts`, `seedVocabulary.ts` (Food) (Claude).
+- 2026-06-18 — Hoàn tất lớp service Claude (code, chờ verify): `firebase.ts`, `progressService`, `speechService`, `dictionaryService`, `imageService`, `translateService`, `quizService`, `quizGenerator`, `functions/` (image+translate), `firestore.rules`, `firebase.json`, `.env.example` (Claude).
