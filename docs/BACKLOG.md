@@ -33,8 +33,8 @@
 | ID | Task | Owner | Status | Depends | DoD |
 |----|------|-------|--------|---------|-----|
 | T-020 | TopicListPage (hiện tiến độ mỗi chủ đề) | Codex | TODO | T-012,T-013 | list 10 chủ đề + % |
-| T-021 | WordCard component (ảnh/từ/phiên âm/nghe) | Codex | TODO | T-003 | render đúng 1 từ |
-| T-022 | LessonPage chủ đề Food (5–10 từ) | Codex | TODO | T-021 | học hết 1 bài |
+| T-021 | WordCard component (ảnh/từ/phiên âm/nghe) | Codex | DONE | T-003 | ✅ render `VocabularyWord`, nút nghe gọi `speakText` |
+| T-022 | LessonPage chủ đề Food (5–10 từ) | Codex | DONE | T-021 | ✅ lướt 10 từ Food, đánh dấu đã xem, progress local |
 | T-023 | speechService (audioUrl → TTS fallback) | Claude | DONE | T-003 | ✅ typecheck pass; thuần browser API |
 | T-024 | Flashcard + ghi mastery qua progressService | Both | TODO | T-014,T-021 | "I know/Need review" lưu đúng |
 
@@ -84,3 +84,4 @@
 - 2026-06-18 — Hoàn tất lớp service Claude (code, chờ verify): `firebase.ts`, `progressService`, `speechService`, `dictionaryService`, `imageService`, `translateService`, `quizService`, `quizGenerator`, `functions/` (image+translate), `firestore.rules`, `firebase.json`, `.env.example` (Claude).
 - 2026-06-18 — T-001/T-002/T-005 DONE: React+Vite+TS, Tailwind, shadcn-style UI primitives, layout gốc, scripts và lockfile; `typecheck` + `build` pass (Codex).
 - 2026-06-18 — T-013 DONE: nháp ~100 từ/10 chủ đề + `seedStudents`; Firebase Emulator (D-009); vitest + 10 unit test (SR + quiz) pass; `tsc -b` sạch (Claude).
+- 2026-06-18 — T-021/T-022 DONE: `WordCard` có phát âm qua `speechService`; `LessonPage` Food lướt 10 từ + progress local; `typecheck/build/test` pass (Codex).

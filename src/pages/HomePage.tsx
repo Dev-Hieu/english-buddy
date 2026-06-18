@@ -3,7 +3,7 @@ import { SEED_TOPICS } from "@/data/seedTopics";
 import { SEED_VOCABULARY } from "@/data/seedVocabulary";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { WordPreviewCard } from "@/components/vocabulary/WordPreviewCard";
+import { WordCard } from "@/components/vocabulary/WordCard";
 
 const foodWords = SEED_VOCABULARY.filter((word) => word.topicIds.includes("topic_food"));
 const firstLessonWords = foodWords.slice(0, 3);
@@ -16,7 +16,11 @@ const actions = [
   { label: "Test", icon: GraduationCap },
 ];
 
-export function HomePage() {
+interface HomePageProps {
+  onStartFoodLesson: () => void;
+}
+
+export function HomePage({ onStartFoodLesson }: HomePageProps) {
   return (
     <main className="mx-auto flex min-h-screen w-full max-w-6xl flex-col gap-8 px-4 py-6 sm:px-6 lg:px-8">
       <header className="flex flex-col gap-4 rounded-lg border border-border bg-white/80 p-5 shadow-soft backdrop-blur sm:flex-row sm:items-center sm:justify-between">
@@ -36,8 +40,15 @@ export function HomePage() {
 
       <section className="grid gap-3 sm:grid-cols-5">
         {actions.map((action) => (
-          <Button key={action.label} type="button" variant="outline" size="lg" className="h-14 bg-white">
-            <action.icon className="h-5 w-5 text-primary" />
+          <Button
+            key={action.label}
+            type="button"
+            variant={action.label === "Học từ" ? "default" : "outline"}
+            size="lg"
+            className={action.label === "Học từ" ? "h-14" : "h-14 bg-white"}
+            onClick={action.label === "Học từ" ? onStartFoodLesson : undefined}
+          >
+            <action.icon className={action.label === "Học từ" ? "h-5 w-5" : "h-5 w-5 text-primary"} />
             {action.label}
           </Button>
         ))}
@@ -46,7 +57,7 @@ export function HomePage() {
       <section className="grid gap-5 lg:grid-cols-[1fr_18rem]">
         <div className="grid gap-4 sm:grid-cols-3">
           {firstLessonWords.map((word) => (
-            <WordPreviewCard key={word.id} word={word} />
+            <WordCard key={word.id} word={word} compact />
           ))}
         </div>
 
