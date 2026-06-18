@@ -4,6 +4,7 @@ import { SEED_VOCABULARY } from "@/data/seedVocabulary";
 import type { Student } from "@/types";
 import { Button } from "@/components/ui/button";
 import { ProgressBar, ProgressRing } from "@/components/ui/progress";
+import { ThemePicker } from "@/components/ui/ThemePicker";
 import { avatarEmoji, topicEmoji } from "@/components/ui/emoji";
 
 type Nav = (view: string, topicId?: string) => void;
@@ -44,6 +45,7 @@ export function HomePage({ student, studiedWordIds, streak, learnedTotal, learne
           <span className="flex items-center gap-1 rounded-full bg-secondary px-3 py-1.5 text-sm font-extrabold text-secondary-foreground">
             <Star className="h-4 w-4" /> {learnedTotal}
           </span>
+          <ThemePicker />
           <Button type="button" size="icon" variant="outline" aria-label="Đổi bé" onClick={onChangeStudent}>
             <UserRound className="h-5 w-5" />
           </Button>
