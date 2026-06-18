@@ -5,6 +5,11 @@ import { KIDS2_WORDS } from "./kids2";
 import { KIDS3_WORDS } from "./kids3";
 import { KIDS4_WORDS } from "./kids4";
 import { KIDS5_WORDS } from "./kids5";
+import { A1F_WORDS } from "./a1f";
+import { A1G_WORDS } from "./a1g";
+import { A1H_WORDS } from "./a1h";
+import { A1I_WORDS } from "./a1i";
+import { A1J_WORDS } from "./a1j";
 import { A2_WORDS } from "./a2";
 import { A2B_WORDS } from "./a2b";
 import { A2C_WORDS } from "./a2c";
@@ -40,6 +45,7 @@ import { C1J_WORDS } from "./c1j";
 
 export const ALL_LEVEL_WORDS: VocabularyWord[] = [
   ...KIDS_WORDS, ...KIDS2_WORDS, ...KIDS3_WORDS, ...KIDS4_WORDS, ...KIDS5_WORDS, ...KIDS6_WORDS,
+  ...A1F_WORDS, ...A1G_WORDS, ...A1H_WORDS, ...A1I_WORDS, ...A1J_WORDS,
   ...A2_WORDS, ...A2B_WORDS, ...A2C_WORDS, ...A2D_WORDS, ...A2E_WORDS, ...A2F_WORDS, ...A2G_WORDS,
   ...B1_WORDS, ...B1B_WORDS, ...B1C_WORDS, ...B1D_WORDS, ...B1E_WORDS, ...B1F_WORDS, ...B1G_WORDS,
   ...B2_WORDS, ...B2B_WORDS, ...B2C_WORDS, ...B2D_WORDS, ...B2E_WORDS, ...B2F_WORDS, ...B2G_WORDS,
