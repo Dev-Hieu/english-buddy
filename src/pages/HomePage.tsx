@@ -9,6 +9,7 @@ import { ThemePicker } from "@/components/ui/ThemePicker";
 import { computeBadges, levelOf } from "@/components/ui/badges";
 import { avatarEmoji, topicEmoji } from "@/components/ui/emoji";
 import { cn } from "@/components/ui/cn";
+import { ParrotLogo } from "@/components/ParrotLogo";
 import { topicWords, topicsWithLevel } from "@/utils/levelFilter";
 
 type Nav = (view: string, topicId?: string, level?: string) => void;
@@ -81,6 +82,7 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
       {/* App bar */}
       <header className="flex items-center justify-between">
         <div className="flex items-center gap-3">
+          <ParrotLogo size={44} />
           <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-secondary text-2xl shadow-card">
             {avatarEmoji(student.avatar)}
           </div>
