@@ -64,8 +64,8 @@
 |----|------|-------|--------|---------|-----|
 | T-050 | ParentDashboard (tiến độ từng bé) | Claude | DONE | T-014,T-044 | ✅ DashboardPage: đã học/cần ôn/thành thạo, điểm test gần nhất, từ hay sai theo từng bé |
 | T-051 | Nhân nội dung 9 chủ đề còn lại | Hieu | TODO | T-022 | đủ 100 từ có nghĩa+ảnh+phát âm |
-| T-052 | Deploy: host server (`server/`) + static frontend | Claude | TODO | tất cả | chờ anh chọn nơi host (LAN/VPS); URL chạy PC+mobile |
-| T-053 | Nghiệm thu theo DoD (TECH_SPEC §14) | Both+Hieu | IN_PROGRESS | T-052 | 8/10 đạt; còn #2 (ảnh đang tự fill) & #9 (chưa deploy/mobile HTTPS). Đã thêm 12 test API + 8 test util (tổng 30 pass) |
+| T-052 | Deploy: host server (`server/`) + static frontend | Claude | IN_REVIEW | tất cả | Cấu hình đầy đủ (Caddy+systemd+deploy.sh+DEPLOY.md) cho en.vev.vn. Chờ chạy trên VPS |
+| T-053 | Nghiệm thu theo DoD (TECH_SPEC §14) | Both+Hieu | IN_PROGRESS | T-052 | 8/10 đạt; còn #2 (ảnh đang tự fill) & #9 (chờ deploy VPS). **35 test pass**; smoke same-origin PASS; bundle tách (app 89KB) |
 
 ---
 
