@@ -13,13 +13,14 @@ import { ReviewPage } from "@/pages/ReviewPage";
 import { LookupPage } from "@/pages/LookupPage";
 import { TestPage } from "@/pages/TestPage";
 import { GamesPage } from "@/pages/GamesPage";
+import { SpeakingPage } from "@/pages/SpeakingPage";
 import { DashboardPage } from "@/pages/DashboardPage";
 import { StudentSelectPage } from "@/pages/StudentSelectPage";
 import { TopicListPage } from "@/pages/TopicListPage";
 
 type View =
   | "student-select" | "home" | "topics" | "lesson"
-  | "flashcard" | "review" | "lookup" | "test" | "games" | "dashboard";
+  | "flashcard" | "review" | "lookup" | "test" | "games" | "speak" | "dashboard";
 
 interface Route {
   view: View;
@@ -31,7 +32,7 @@ const readSelected = () => (typeof window === "undefined" ? null : localStorage.
 
 const ACTIVE_TAB: Record<View, TabKey | null> = {
   "student-select": null, home: "home", topics: "home", lesson: "home", flashcard: "home",
-  review: "review", lookup: "lookup", test: "test", games: "games", dashboard: null,
+  review: "review", lookup: "lookup", test: "test", games: "games", speak: "speak", dashboard: null,
 };
 
 export function App() {
@@ -90,6 +91,7 @@ export function App() {
     if (key === "home") navigate("home");
     else if (key === "games") navigate("games", route.topicId || "topic_food");
     else if (key === "test") navigate("test", route.topicId || "topic_food");
+    else if (key === "speak") navigate("speak", route.topicId || "topic_food");
     else navigate(key);
   };
 
@@ -125,6 +127,9 @@ export function App() {
       break;
     case "games":
       content = <GamesPage student={student} topicId={route.topicId} studiedWordIds={studiedWordIds} onBackHome={() => navigate("home")} />;
+      break;
+    case "speak":
+      content = <SpeakingPage student={student} topicId={route.topicId} onBackHome={() => navigate("home")} />;
       break;
     case "dashboard":
       content = <DashboardPage onBackHome={() => navigate("home")} />;
