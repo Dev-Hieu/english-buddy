@@ -49,9 +49,19 @@ def recognize_phonemes(path: str) -> str:
     return processor.batch_decode(ids)[0]
 
 
+@app.on_event("startup")
+def _warmup():
+    # Nạp model ngay khi khởi động để lần chấm đầu KHÔNG bị chậm/timeout (cold start).
+    try:
+        get_model()
+        print("[speech-eval] model đã nạp sẵn, sẵn sàng chấm.")
+    except Exception as e:  # noqa: BLE001
+        print("[speech-eval] warmup lỗi (sẽ nạp lại khi có request):", e)
+
+
 @app.get("/health")
 def health():
-    return {"ok": True}
+    return {"ok": True, "modelReady": _model is not None}
 
 
 @app.post("/pronounce")
