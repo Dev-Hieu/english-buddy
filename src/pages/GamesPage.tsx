@@ -11,6 +11,7 @@ import { SessionHeader } from "@/components/layout/SessionHeader";
 import { SudokuGame } from "@/components/games/SudokuGame";
 import { PictureWordGame } from "@/components/games/PictureWordGame";
 import { CarRaceGame } from "@/components/games/CarRaceGame";
+import { pickWords } from "@/components/games/wordRotation";
 
 interface GamesPageProps {
   student: Student;
@@ -32,12 +33,12 @@ function shuffle<T>(a: T[]): T[] {
 
 export function GamesPage({ student, topicId, studiedWordIds, onBackHome }: GamesPageProps) {
   const [game, setGame] = useState<Game>("menu");
-  // base: từ của chủ đề (bù bằng toàn bộ nếu chủ đề chưa đủ 4 từ để có lựa chọn).
+  const [hard, setHard] = useState(false);
+
   const base = useMemo(() => {
     const t = SEED_VOCABULARY.filter((w) => w.topicIds.includes(topicId));
     return t.length >= 4 ? t : SEED_VOCABULARY;
   }, [topicId]);
-  // reviewPool: ưu tiên từ ĐÃ học để ôn; chưa đủ 4 thì dùng base (tránh kẹt lúc đầu).
   const reviewPool = useMemo(() => {
     const learned = new Set(studiedWordIds);
     const r = base.filter((w) => learned.has(w.id));
@@ -53,29 +54,37 @@ export function GamesPage({ student, topicId, studiedWordIds, onBackHome }: Game
 
   if (game === "menu") {
     const games = [
-      { id: "match" as const, name: "Ghép từ", desc: "Nối từ với nghĩa", icon: Link2, emoji: "🔗" },
-      { id: "pick" as const, name: "Chọn ảnh", desc: "Nhìn từ, chọn ảnh", icon: Images, emoji: "🖼️" },
-      { id: "listen" as const, name: "Nghe & chọn", desc: "Nghe rồi chọn từ", icon: Ear, emoji: "👂" },
-      { id: "build" as const, name: "Đuổi hình bắt chữ", desc: "Nhìn hình, ghép chữ", icon: Puzzle, emoji: "🧩" },
-      { id: "race" as const, name: "Đua xe học từ", desc: "Đáp đúng để về đích", icon: Car, emoji: "🏎️" },
-      { id: "sudoku" as const, name: "Sudoku", desc: "Điền số 1-9 rèn tư duy", icon: Grid3x3, emoji: "🔢" },
+      { id: "match" as const, name: "Ghép từ", desc: "Nối từ với nghĩa", emoji: "🔗" },
+      { id: "pick" as const, name: "Chọn ảnh", desc: "Nhìn từ, chọn ảnh", emoji: "🖼️" },
+      { id: "listen" as const, name: "Nghe & chọn", desc: "Nghe rồi chọn từ", emoji: "👂" },
+      { id: "build" as const, name: "Đuổi hình bắt chữ", desc: "Nhìn hình, ghép chữ", emoji: "🧩" },
+      { id: "race" as const, name: "Đua xe học từ", desc: "Đáp đúng để về đích", emoji: "🏎️" },
+      { id: "sudoku" as const, name: "Sudoku", desc: "Điền số 1-9 rèn tư duy", emoji: "🔢" },
     ];
     return (
       <main className="mx-auto w-full max-w-xl px-4">
         <SessionHeader title="Trò chơi" onClose={onBackHome} />
+
+        {/* Độ khó (áp dụng cho game từ vựng; Sudoku có độ khó riêng) */}
+        <div className="mb-4 grid grid-cols-2 gap-1 rounded-2xl bg-muted p-1">
+          {[{ k: false, l: "Dễ" }, { k: true, l: "Khó" }].map((d) => (
+            <button key={d.l} type="button" onClick={() => setHard(d.k)}
+              className={cn("rounded-xl py-2 text-sm font-extrabold transition-colors", hard === d.k ? "bg-card text-primary shadow-card" : "text-muted-foreground")}>
+              {d.l}
+            </button>
+          ))}
+        </div>
+
         {learnedCount < 4 ? (
           <div className="mb-3 rounded-2xl bg-secondary p-3 text-sm font-bold text-secondary-foreground">
             💡 Học thêm từ ở mục Học để game ôn đúng từ của con nhé. (Đuổi hình bắt chữ vẫn chơi được với từ mới.)
           </div>
         ) : null}
+
         <div className="space-y-3">
           {games.map((g) => (
-            <button
-              key={g.id}
-              type="button"
-              onClick={() => setGame(g.id)}
-              className="flex w-full items-center gap-4 rounded-3xl border border-border/70 bg-card p-4 text-left shadow-card transition-transform active:scale-[0.99]"
-            >
+            <button key={g.id} type="button" onClick={() => setGame(g.id)}
+              className="flex w-full items-center gap-4 rounded-3xl border border-border/70 bg-card p-4 text-left shadow-card transition-transform active:scale-[0.99]">
               <span className="flex h-14 w-14 items-center justify-center rounded-2xl bg-secondary text-3xl">{g.emoji}</span>
               <span className="flex-1">
                 <span className="block text-lg font-extrabold">{g.name}</span>
@@ -90,11 +99,11 @@ export function GamesPage({ student, topicId, studiedWordIds, onBackHome }: Game
 
   return (
     <main className="mx-auto w-full max-w-xl px-4">
-      {game === "match" && <MatchGame pool={reviewPool} onRecord={record} onClose={back} />}
-      {game === "pick" && <PickGame pool={reviewPool} onRecord={record} onClose={back} />}
-      {game === "listen" && <ListenGame pool={reviewPool} onRecord={record} onClose={back} />}
-      {game === "build" && <PictureWordGame pool={base} onRecord={record} onClose={back} />}
-      {game === "race" && <CarRaceGame pool={reviewPool} onRecord={record} onClose={back} />}
+      {game === "match" && <MatchGame pool={reviewPool} onRecord={record} onClose={back} hard={hard} />}
+      {game === "pick" && <PickGame pool={reviewPool} onRecord={record} onClose={back} hard={hard} />}
+      {game === "listen" && <ListenGame pool={reviewPool} onRecord={record} onClose={back} hard={hard} />}
+      {game === "build" && <PictureWordGame pool={base} onRecord={record} onClose={back} hard={hard} />}
+      {game === "race" && <CarRaceGame pool={reviewPool} onRecord={record} onClose={back} hard={hard} />}
       {game === "sudoku" && <SudokuGame onClose={back} />}
     </main>
   );
@@ -104,22 +113,23 @@ interface GameProps {
   pool: VocabularyWord[];
   onRecord: (wordId: string, correct: boolean) => void;
   onClose: () => void;
+  hard: boolean;
 }
 
-function Finished({ onClose }: { onClose: () => void }) {
+function Finished({ onClose, score }: { onClose: () => void; score?: string }) {
   return (
-    <Card>
+    <Card className="animate-pop">
       <CardContent className="flex flex-col items-center gap-4 p-8 text-center">
         <PartyPopper className="h-12 w-12 text-accent" />
-        <p className="text-2xl font-black text-primary">Hoàn thành! 🎉</p>
+        <p className="text-2xl font-black text-primary">{score ? score : "Hoàn thành! 🎉"}</p>
         <Button type="button" size="lg" className="w-full" onClick={onClose}>Chơi tiếp</Button>
       </CardContent>
     </Card>
   );
 }
 
-function MatchGame({ pool, onRecord, onClose }: GameProps) {
-  const [round] = useState(() => shuffle(pool).slice(0, 5));
+function MatchGame({ pool, onRecord, onClose, hard }: GameProps) {
+  const [round] = useState(() => pickWords(pool, hard ? 6 : 4));
   const [vis] = useState(() => shuffle(round));
   const [left, setLeft] = useState<string | null>(null);
   const [matched, setMatched] = useState<Set<string>>(new Set());
@@ -165,36 +175,35 @@ function MatchGame({ pool, onRecord, onClose }: GameProps) {
   );
 }
 
-function PickGame({ pool, onRecord, onClose }: GameProps) {
-  const withImg = useMemo(() => pool.filter((w) => w.imageUrl), [pool]);
+function PickGame({ pool, onRecord, onClose, hard }: GameProps) {
+  const imgPool = useMemo(() => { const w = pool.filter((x) => x.imageUrl); return w.length >= 4 ? w : pool; }, [pool]);
+  const [targets] = useState(() => pickWords(imgPool, hard ? 8 : 5));
   const [n, setN] = useState(0);
   const [picked, setPicked] = useState<string | null>(null);
-  const rounds = 5;
-  const set = useMemo(() => {
-    const base = withImg.length >= 4 ? withImg : pool;
-    const shuffled = shuffle(base);
-    const target = shuffled[0];
-    const opts = shuffle([target, ...shuffle(base.filter((w) => w.id !== target.id)).slice(0, 3)]);
-    return { target, opts };
-  }, [n, withImg, pool]);
+  const target = targets[Math.min(n, Math.max(0, targets.length - 1))];
+  const opts = useMemo(() => {
+    if (!target) return [];
+    return shuffle([target, ...shuffle(imgPool.filter((w) => w.id !== target.id)).slice(0, 3)]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [n, targets]);
 
-  if (n >= rounds) return (<><SessionHeader title="Chọn ảnh" onClose={onClose} /><Finished onClose={onClose} /></>);
+  if (n >= targets.length || !target) return (<><SessionHeader title="Chọn ảnh" onClose={onClose} /><Finished onClose={onClose} /></>);
 
   const choose = (w: VocabularyWord) => {
     if (picked) return;
     setPicked(w.id);
-    onRecord(set.target.id, w.id === set.target.id);
+    onRecord(target.id, w.id === target.id);
     setTimeout(() => { setPicked(null); setN((x) => x + 1); }, 800);
   };
 
   return (
     <>
-      <SessionHeader title="Chọn ảnh đúng" onClose={onClose} progress={Math.round((n / rounds) * 100)} />
+      <SessionHeader title="Chọn ảnh đúng" onClose={onClose} progress={Math.round((n / targets.length) * 100)} />
       <Card><CardContent className="space-y-4 p-6">
-        <h2 className="text-center text-4xl font-black capitalize">{set.target.word}</h2>
+        <h2 className="text-center text-4xl font-black capitalize">{target.word}</h2>
         <div className="grid grid-cols-2 gap-3">
-          {set.opts.map((w) => {
-            const state = !picked ? "" : w.id === set.target.id ? "ring-4 ring-success" : w.id === picked ? "ring-4 ring-red-400" : "opacity-50";
+          {opts.map((w) => {
+            const state = !picked ? "" : w.id === target.id ? "ring-4 ring-success" : w.id === picked ? "ring-4 ring-red-400" : "opacity-50";
             return (
               <button key={w.id} type="button" onClick={() => choose(w)} className={cn("overflow-hidden rounded-2xl border-2 border-border transition-all active:translate-y-[1px]", state)}>
                 <img src={w.imageUrl} alt="" className="h-32 w-full object-cover" />
@@ -207,36 +216,36 @@ function PickGame({ pool, onRecord, onClose }: GameProps) {
   );
 }
 
-function ListenGame({ pool, onRecord, onClose }: GameProps) {
+function ListenGame({ pool, onRecord, onClose, hard }: GameProps) {
+  const [targets] = useState(() => pickWords(pool, hard ? 8 : 5));
   const [n, setN] = useState(0);
   const [picked, setPicked] = useState<string | null>(null);
-  const rounds = 5;
-  const set = useMemo(() => {
-    const shuffled = shuffle(pool);
-    const target = shuffled[0];
-    const opts = shuffle([target, ...shuffle(pool.filter((w) => w.id !== target.id)).slice(0, 3)]);
-    return { target, opts };
-  }, [n, pool]);
+  const target = targets[Math.min(n, Math.max(0, targets.length - 1))];
+  const opts = useMemo(() => {
+    if (!target) return [];
+    return shuffle([target, ...shuffle(pool.filter((w) => w.id !== target.id)).slice(0, 3)]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [n, targets]);
 
-  if (n >= rounds) return (<><SessionHeader title="Nghe & chọn" onClose={onClose} /><Finished onClose={onClose} /></>);
+  if (n >= targets.length || !target) return (<><SessionHeader title="Nghe & chọn" onClose={onClose} /><Finished onClose={onClose} /></>);
 
   const choose = (w: VocabularyWord) => {
     if (picked) return;
     setPicked(w.id);
-    onRecord(set.target.id, w.id === set.target.id);
+    onRecord(target.id, w.id === target.id);
     setTimeout(() => { setPicked(null); setN((x) => x + 1); }, 800);
   };
 
   return (
     <>
-      <SessionHeader title="Nghe & chọn" onClose={onClose} progress={Math.round((n / rounds) * 100)} />
+      <SessionHeader title="Nghe & chọn" onClose={onClose} progress={Math.round((n / targets.length) * 100)} />
       <Card><CardContent className="space-y-5 p-6 text-center">
-        <Button type="button" size="xl" className="w-full" onClick={() => speakText(set.target.word, set.target.audioUrl)}>
+        <Button type="button" size="xl" className="w-full" onClick={() => speakText(target.word, target.audioUrl)}>
           <Volume2 className="h-7 w-7" /> Nghe lại
         </Button>
         <div className="grid grid-cols-2 gap-3">
-          {set.opts.map((w) => {
-            const state = !picked ? "" : w.id === set.target.id ? "ring-4 ring-success bg-success text-white" : w.id === picked ? "ring-4 ring-red-400" : "opacity-50";
+          {opts.map((w) => {
+            const state = !picked ? "" : w.id === target.id ? "ring-4 ring-success bg-success text-white" : w.id === picked ? "ring-4 ring-red-400" : "opacity-50";
             return (
               <button key={w.id} type="button" onClick={() => choose(w)}
                 className={cn("rounded-2xl border-2 border-border bg-card px-4 py-4 text-lg font-extrabold capitalize transition-all active:translate-y-[1px]", state)}>

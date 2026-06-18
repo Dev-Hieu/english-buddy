@@ -6,29 +6,31 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { cn } from "@/components/ui/cn";
 import { SessionHeader } from "@/components/layout/SessionHeader";
+import { pickWords } from "./wordRotation";
 
 interface Props {
   pool: VocabularyWord[];
   onRecord: (wordId: string, correct: boolean) => void;
   onClose: () => void;
+  hard: boolean;
 }
 
-const ROUNDS = 5;
 const shuffle = <T,>(s: T[]): T[] => s.slice().sort(() => Math.random() - 0.5);
 
-function makeTray(word: string): string[] {
+function makeTray(word: string, hard: boolean): string[] {
   const letters = word.toLowerCase().split("");
-  const extras = word.length <= 6 ? 3 : word.length <= 8 ? 2 : 0;
+  const baseExtra = word.length <= 6 ? 3 : word.length <= 8 ? 2 : 0;
+  const extras = baseExtra + (hard ? 2 : 0); // Khó: thêm nhiều chữ nhiễu hơn
   const alphabet = "abcdefghijklmnopqrstuvwxyz".split("");
   for (let i = 0; i < extras; i++) letters.push(alphabet[Math.floor(Math.random() * 26)]);
   return shuffle(letters);
 }
 
-export function PictureWordGame({ pool, onRecord, onClose }: Props) {
+export function PictureWordGame({ pool, onRecord, onClose, hard }: Props) {
   const eligible = useMemo(() => pool.filter((w) => w.imageUrl && !w.word.includes(" ")), [pool]);
-  const [words] = useState(() => shuffle(eligible).slice(0, ROUNDS));
+  const [words] = useState(() => pickWords(eligible, hard ? 8 : 5));
   const [n, setN] = useState(0);
-  const [tray, setTray] = useState<string[]>(() => (words[0] ? makeTray(words[0].word) : []));
+  const [tray, setTray] = useState<string[]>(() => (words[0] ? makeTray(words[0].word, hard) : []));
   const [placed, setPlaced] = useState<number[]>([]);
   const [status, setStatus] = useState<"playing" | "right" | "wrong">("playing");
   const [solved, setSolved] = useState(0);
@@ -64,7 +66,7 @@ export function PictureWordGame({ pool, onRecord, onClose }: Props) {
   const advance = () => {
     const m = n + 1;
     if (m >= words.length) { setDone(true); return; }
-    setN(m); setPlaced([]); setStatus("playing"); setTray(makeTray(words[m].word));
+    setN(m); setPlaced([]); setStatus("playing"); setTray(makeTray(words[m].word, hard));
   };
 
   const tap = (i: number) => {

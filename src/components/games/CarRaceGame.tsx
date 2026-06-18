@@ -1,33 +1,23 @@
 import { Flame } from "lucide-react";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import type { VocabularyWord } from "@/types";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { cn } from "@/components/ui/cn";
 import { SessionHeader } from "@/components/layout/SessionHeader";
+import { pickWords } from "./wordRotation";
 
 interface Props {
   pool: VocabularyWord[];
   onRecord: (wordId: string, correct: boolean) => void;
   onClose: () => void;
+  hard: boolean;
 }
 
-const GOAL = 8;        // số bước tới đích
-const LIMIT = 8;       // giây mỗi câu
 const shuffle = <T,>(s: T[]): T[] => s.slice().sort(() => Math.random() - 0.5);
 
-interface Q { word: VocabularyWord; options: string[]; }
-
-function makeQuestion(pool: VocabularyWord[]): Q {
-  const s = shuffle(pool);
-  const word = s[0];
-  const distractors = s.filter((w) => w.word !== word.word).slice(0, 3).map((w) => w.word);
-  return { word, options: shuffle([word.word, ...distractors]) };
-}
-
-function Lane({ emoji, pos, label, lead }: { emoji: string; pos: number; label: string; lead: boolean }) {
-  // chừa lề hai bên: bắt đầu cách mép trái ~5%, tới đích dừng ~79% (trước cờ).
-  const left = `${5 + Math.min(pos / GOAL, 1) * 74}%`;
+function Lane({ emoji, pos, goal, label, lead }: { emoji: string; pos: number; goal: number; label: string; lead: boolean }) {
+  const left = `${5 + Math.min(pos / goal, 1) * 74}%`;
   return (
     <div>
       <p className="mb-1 flex items-center gap-1 text-xs font-extrabold text-muted-foreground">
@@ -35,61 +25,67 @@ function Lane({ emoji, pos, label, lead }: { emoji: string; pos: number; label: 
       </p>
       <div className="relative h-12 overflow-hidden rounded-full border-2 border-dashed border-border bg-muted">
         <span className="absolute right-2 top-1/2 -translate-y-1/2 text-2xl">🏁</span>
-        {/* scaleX(-1): emoji xe mặc định quay trái -> lật cho quay phải, chạy đúng chiều về đích */}
-        <span className="absolute top-1/2 text-3xl transition-all duration-500" style={{ left, transform: "translateY(-50%) scaleX(-1)" }}>
-          {emoji}
-        </span>
+        <span className="absolute top-1/2 text-3xl transition-all duration-500" style={{ left, transform: "translateY(-50%) scaleX(-1)" }}>{emoji}</span>
       </div>
     </div>
   );
 }
 
-export function CarRaceGame({ pool, onRecord, onClose }: Props) {
-  const [q, setQ] = useState<Q | null>(() => (pool.length >= 4 ? makeQuestion(pool) : null));
+export function CarRaceGame({ pool, onRecord, onClose, hard }: Props) {
+  const goal = hard ? 10 : 6;
+  const limit = hard ? 6 : 9;
+
+  const seq = useMemo(() => (pool.length >= 4 ? pickWords(pool, 30) : []), [pool]);
+  const [qi, setQi] = useState(0);
+  const target = seq.length ? seq[qi % seq.length] : null;
+  const options = useMemo(() => {
+    if (!target) return [];
+    return shuffle([target.word, ...shuffle(pool.filter((w) => w.word !== target.word)).slice(0, 3).map((w) => w.word)]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [qi, seq]);
+
   const [player, setPlayer] = useState(0);
   const [rival, setRival] = useState(0);
   const [picked, setPicked] = useState<string | null>(null);
   const [over, setOver] = useState(false);
   const [streak, setStreak] = useState(0);
   const [turbo, setTurbo] = useState(false);
-  const [timeLeft, setTimeLeft] = useState(LIMIT);
+  const [timeLeft, setTimeLeft] = useState(limit);
 
-  // Đồng hồ đếm ngược cho mỗi câu (chỉ chạy khi đang chờ trả lời).
   useEffect(() => {
-    if (!q || picked !== null || over) return;
-    setTimeLeft(LIMIT);
+    if (!target || picked !== null || over) return;
+    setTimeLeft(limit);
     const id = setInterval(() => setTimeLeft((t) => Math.max(0, +(t - 0.1).toFixed(1))), 100);
     return () => clearInterval(id);
-  }, [q, picked, over]);
+  }, [qi, picked, over, target, limit]);
 
-  // Hết giờ = trả lời sai.
   useEffect(() => {
-    if (timeLeft <= 0 && picked === null && !over && q) resolve(false, "⏰");
+    if (timeLeft <= 0 && picked === null && !over && target) resolve(false, "⏰");
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [timeLeft]);
 
   function resolve(ok: boolean, label: string) {
-    if (!q) return;
+    if (!target) return;
     setPicked(label);
-    onRecord(q.word.id, ok);
+    onRecord(target.id, ok);
     let np = player, nr = rival, ns = streak, boost = false;
     if (ok) {
       ns = streak + 1;
-      boost = ns >= 3; // 3 câu đúng liên tiếp -> tăng tốc +2
+      boost = ns >= 3;
       np = player + (boost ? 2 : 1);
     } else {
       ns = 0;
-      nr = rival + 1; // sai/hết giờ -> xe máy vượt lên
+      nr = rival + 1;
     }
     setStreak(ns); setTurbo(boost); setPlayer(np); setRival(nr);
     setTimeout(() => {
       setTurbo(false);
-      if (np >= GOAL || nr >= GOAL) setOver(true);
-      else { setPicked(null); setQ(makeQuestion(pool)); }
+      if (np >= goal || nr >= goal) setOver(true);
+      else { setPicked(null); setQi((x) => x + 1); }
     }, 800);
   }
 
-  if (!q) {
+  if (!target) {
     return (
       <>
         <SessionHeader title="Đua xe học từ" onClose={onClose} />
@@ -99,7 +95,7 @@ export function CarRaceGame({ pool, onRecord, onClose }: Props) {
   }
 
   if (over) {
-    const won = player >= GOAL;
+    const won = player >= goal;
     return (
       <>
         <SessionHeader title="Đua xe học từ" onClose={onClose} />
@@ -115,48 +111,36 @@ export function CarRaceGame({ pool, onRecord, onClose }: Props) {
     );
   }
 
-  const timePct = (timeLeft / LIMIT) * 100;
+  const timePct = (timeLeft / limit) * 100;
   const optClass = (opt: string) =>
-    picked === null ? "" : opt === q.word.word ? "ring-4 ring-success bg-success text-white" : opt === picked ? "ring-4 ring-red-400" : "opacity-50";
+    picked === null ? "" : opt === target.word ? "ring-4 ring-success bg-success text-white" : opt === picked ? "ring-4 ring-red-400" : "opacity-50";
 
   return (
     <>
       <SessionHeader title="Đua xe học từ" onClose={onClose} />
-
       <div className="mb-4 space-y-3">
-        <Lane emoji="🏎️" pos={player} label={`Bé (${player}/${GOAL})`} lead={player > rival} />
-        <Lane emoji="🚗" pos={rival} label={`Máy tính (${rival}/${GOAL})`} lead={rival > player} />
+        <Lane emoji="🏎️" pos={player} goal={goal} label={`Bé (${player}/${goal})`} lead={player > rival} />
+        <Lane emoji="🚗" pos={rival} goal={goal} label={`Máy tính (${rival}/${goal})`} lead={rival > player} />
       </div>
 
       <Card>
         <CardContent className="space-y-4 p-6">
-          {/* thanh thời gian */}
           <div className="h-2.5 w-full overflow-hidden rounded-full bg-muted">
-            <div
-              className={cn("h-full rounded-full transition-[width] duration-100", timeLeft > 3 ? "bg-primary" : "bg-red-500")}
-              style={{ width: `${timePct}%` }}
-            />
+            <div className={cn("h-full rounded-full transition-[width] duration-100", timeLeft > 3 ? "bg-primary" : "bg-red-500")} style={{ width: `${timePct}%` }} />
           </div>
-
           <div className="flex items-center justify-center gap-2">
-            <h2 className="text-center text-xl font-black">Từ nào nghĩa là “{q.word.meaning_vi}”?</h2>
+            <h2 className="text-center text-xl font-black">Từ nào nghĩa là “{target.meaning_vi}”?</h2>
             {streak >= 2 ? (
               <span className="flex items-center gap-0.5 rounded-full bg-accent/15 px-2 py-0.5 text-sm font-extrabold text-accent">
                 <Flame className="h-4 w-4" />{streak}
               </span>
             ) : null}
           </div>
-
           {turbo ? <p className="text-center font-black text-accent">🔥 TĂNG TỐC! +2</p> : null}
-
           <div className="grid grid-cols-2 gap-3">
-            {q.options.map((opt) => (
-              <button
-                key={opt}
-                type="button"
-                onClick={() => picked === null && resolve(opt === q.word.word, opt)}
-                className={cn("rounded-2xl border-2 border-border bg-card px-4 py-4 text-lg font-extrabold capitalize transition-all active:translate-y-[1px]", optClass(opt))}
-              >
+            {options.map((opt) => (
+              <button key={opt} type="button" onClick={() => picked === null && resolve(opt === target.word, opt)}
+                className={cn("rounded-2xl border-2 border-border bg-card px-4 py-4 text-lg font-extrabold capitalize transition-all active:translate-y-[1px]", optClass(opt))}>
                 {opt}
               </button>
             ))}

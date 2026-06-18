@@ -35,7 +35,9 @@ export function LessonPage({
   const studiedIds = useMemo(() => new Set(studiedWordIds), [studiedWordIds]);
 
   const currentWord = words[currentIndex];
-  const progress = words.length === 0 ? 0 : Math.round((studiedIds.size / words.length) * 100);
+  // chỉ đếm từ ĐÃ học THUỘC chủ đề này (tránh >100%)
+  const studiedInTopic = words.filter((w) => studiedIds.has(w.id)).length;
+  const progress = words.length === 0 ? 0 : Math.round((studiedInTopic / words.length) * 100);
 
   const markCurrentStudied = () => currentWord && onMarkWordStudied(currentWord.id);
   const goNext = () => {
