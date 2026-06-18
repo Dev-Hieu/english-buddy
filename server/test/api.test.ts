@@ -136,3 +136,52 @@ describe("My Words + Xếp hạng", () => {
     expect(Array.isArray(lb)).toBe(true);
   });
 });
+
+describe("Admin + hạn mức", () => {
+  let tAdmin = "";
+  test("non-admin không vào được /api/admin/users -> 403", async () => {
+    expect((await get("/api/admin/users", t1)).status).toBe(403);
+  });
+
+  test("admin xem users + nâng hạn mức -> phụ huynh tạo thêm bé được", async () => {
+    tAdmin = (await (await post("/api/login", { email: "admin@buddy.vn", password: "123456" })).json()).token;
+    expect(tAdmin).toBeTruthy();
+    const users = await (await get("/api/admin/users", tAdmin)).json();
+    expect(Array.isArray(users)).toBe(true);
+
+    const me = await (await get("/api/me", t1)).json();
+    const up = await put(`/api/admin/users/${me.id}`, { studentLimit: 3 }, tAdmin);
+    expect((await up.json()).studentLimit).toBe(3);
+
+    // Trước đó u1 đã đạt giới hạn 1; giờ nâng lên 3 -> tạo thêm OK.
+    expect((await post("/api/students", { name: "Bé 2", level: "a1" }, t1)).status).toBe(200);
+  });
+});
+
+describe("Quiz results + Review", () => {
+  test("lưu kết quả test -> đọc lại có + XP +5/câu đúng", async () => {
+    const before = (await (await get(`/api/students/${studentId}`, t1)).json()).xp ?? 0;
+    await post("/api/quiz-results", {
+      studentId, topicId: "topic_food", score: 80, totalQuestions: 5,
+      correctAnswers: 4, wrongAnswers: 1, wrongWordIds: [], durationSeconds: 30,
+    }, t1);
+    const list = await (await get(`/api/students/${studentId}/quiz-results`, t1)).json();
+    expect(list.length).toBeGreaterThan(0);
+    const after = (await (await get(`/api/students/${studentId}`, t1)).json()).xp ?? 0;
+    expect(after).toBe(before + 20); // 4 câu đúng * 5
+  });
+
+  test("hàng đợi ôn trả về mảng", async () => {
+    const due = await (await get(`/api/students/${studentId}/reviews`, t1)).json();
+    expect(Array.isArray(due)).toBe(true);
+  });
+});
+
+describe("Xóa hồ sơ bé", () => {
+  test("tạo rồi xóa -> không còn trong danh sách", async () => {
+    const s = await (await post("/api/students", { name: "Bé Xóa", level: "a1" }, t2)).json();
+    expect((await fetch(base + `/api/students/${s.id}`, { method: "DELETE", headers: { authorization: `Bearer ${t2}` } })).status).toBe(200);
+    const list = await (await get("/api/students", t2)).json();
+    expect(list.some((x: any) => x.id === s.id)).toBe(false);
+  });
+});
