@@ -9,7 +9,7 @@ import { computeBadges, levelOf } from "@/components/ui/badges";
 import { avatarEmoji, topicEmoji } from "@/components/ui/emoji";
 import { cn } from "@/components/ui/cn";
 
-type Nav = (view: string, topicId?: string) => void;
+type Nav = (view: string, topicId?: string, level?: string) => void;
 
 interface HomePageProps {
   student: Student;
@@ -28,6 +28,11 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
   const goal = student.dailyGoal || 10;
   const goalReached = learnedToday >= goal;
   const level = levelOf(xp);
+  // Lọc chủ đề theo trình độ đã chọn của bé (chủ đề có chứa từ ở cấp đó).
+  const learnLevel = (student.level as string) || "all";
+  const wordsOf = (topicId: string) =>
+    SEED_VOCABULARY.filter((w) => w.topicIds.includes(topicId) && (learnLevel === "all" || w.level === learnLevel));
+  const topicsAtLevel = SEED_TOPICS.filter((t) => wordsOf(t.id).length > 0);
   const badges = computeBadges({ learned: learnedTotal, streak, xp });
   const earnedBadges = badges.filter((b) => b.earned);
 
@@ -111,15 +116,15 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
           </button>
         </div>
         <div className="grid grid-cols-2 gap-3">
-          {SEED_TOPICS.map((topic) => {
-            const words = SEED_VOCABULARY.filter((w) => w.topicIds.includes(topic.id));
+          {topicsAtLevel.map((topic) => {
+            const words = wordsOf(topic.id);
             const done = words.filter((w) => learned.has(w.id)).length;
             const pct = words.length ? Math.round((done / words.length) * 100) : 0;
             return (
               <button
                 key={topic.id}
                 type="button"
-                onClick={() => onNavigate("lesson", topic.id)}
+                onClick={() => onNavigate("lesson", topic.id, learnLevel)}
                 className="rounded-3xl border border-border/70 bg-card p-4 text-left shadow-card transition-transform active:scale-[0.98]"
               >
                 <div className="flex items-center justify-between">
