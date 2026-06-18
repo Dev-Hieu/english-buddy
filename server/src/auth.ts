@@ -3,7 +3,7 @@ import type { NextFunction, Request, Response } from "express";
 
 // Auth tối giản cho app 1 gia đình: 1 mật khẩu phụ huynh (env PARENT_PASSWORD).
 // Token là STATELESS (hash của mật khẩu) -> KHÔNG mất khi restart server.
-const PARENT_PASSWORD = process.env.PARENT_PASSWORD || "bao-ngoc-bao-nam";
+const PARENT_PASSWORD = process.env.PARENT_PASSWORD || "123456";
 
 function expectedToken(): string {
   return createHash("sha256").update("english-buddy:" + PARENT_PASSWORD).digest("hex");
