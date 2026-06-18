@@ -1,11 +1,10 @@
-import { ArrowLeft, ArrowRight, CheckCircle2, GraduationCap, Layers } from "lucide-react";
+import { ArrowLeft, ArrowRight, CheckCircle2, GraduationCap, Layers, List } from "lucide-react";
 import { useMemo, useState } from "react";
 import { SEED_TOPICS } from "@/data/seedTopics";
 import { SEED_VOCABULARY } from "@/data/seedVocabulary";
 import type { Student } from "@/types";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { cn } from "@/components/ui/cn";
 import { SessionHeader } from "@/components/layout/SessionHeader";
 import { WordCard } from "@/components/vocabulary/WordCard";
 import { topicEmoji } from "@/components/ui/emoji";
@@ -19,6 +18,7 @@ interface LessonPageProps {
   onBackHome: () => void;
   onPracticeFlashcard?: () => void;
   onStartTest?: () => void;
+  onViewWordList?: () => void;
 }
 
 export function LessonPage({
@@ -30,6 +30,7 @@ export function LessonPage({
   onBackHome,
   onPracticeFlashcard,
   onStartTest,
+  onViewWordList,
 }: LessonPageProps) {
   const topic = SEED_TOPICS.find((item) => item.id === topicId);
   const words = useMemo(
@@ -103,26 +104,11 @@ export function LessonPage({
         </div>
       ) : null}
 
-      {/* Điều hướng nhanh: từ ĐÃ học hiện chữ + ✓; từ CHƯA học chỉ hiện số (không lộ từ mới). */}
-      <div className="mt-5 flex flex-wrap gap-2">
-        {words.map((w, i) => {
-          const done = studiedIds.has(w.id);
-          return (
-            <button
-              key={w.id}
-              type="button"
-              onClick={() => setCurrentIndex(i)}
-              aria-label={done ? w.word : `Từ ${i + 1}`}
-              className={cn(
-                "flex h-9 min-w-9 items-center justify-center gap-1 rounded-full px-3 text-sm font-bold transition-colors",
-                i === currentIndex ? "bg-primary text-primary-foreground" : done ? "bg-secondary text-secondary-foreground" : "bg-muted text-muted-foreground",
-              )}
-            >
-              {done ? (<><CheckCircle2 className="h-3.5 w-3.5" />{w.word}</>) : i + 1}
-            </button>
-          );
-        })}
-      </div>
+      {onViewWordList ? (
+        <Button type="button" variant="ghost" className="mt-3 w-full" onClick={onViewWordList}>
+          <List className="h-4 w-4" /> Xem danh sách từ chủ đề
+        </Button>
+      ) : null}
     </main>
   );
 }

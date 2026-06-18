@@ -17,13 +17,14 @@ import { GamesPage } from "@/pages/GamesPage";
 import { SpeakingPage } from "@/pages/SpeakingPage";
 import { DashboardPage } from "@/pages/DashboardPage";
 import { MyWordsPage } from "@/pages/MyWordsPage";
+import { TopicWordsPage } from "@/pages/TopicWordsPage";
 import { LeaderboardPage } from "@/pages/LeaderboardPage";
 import { StudentSelectPage } from "@/pages/StudentSelectPage";
 import { TopicListPage } from "@/pages/TopicListPage";
 
 type View =
   | "student-select" | "admin" | "home" | "topics" | "lesson"
-  | "flashcard" | "review" | "lookup" | "test" | "games" | "speak" | "dashboard" | "mywords" | "leaderboard";
+  | "flashcard" | "review" | "lookup" | "test" | "games" | "speak" | "dashboard" | "mywords" | "leaderboard" | "topicwords";
 
 interface Route { view: View; topicId: string; level: Level | "all"; }
 
@@ -32,7 +33,7 @@ const readSelected = () => (typeof window === "undefined" ? null : localStorage.
 
 const ACTIVE_TAB: Record<View, TabKey | null> = {
   "student-select": null, admin: null, home: "home", topics: "home", lesson: "home", flashcard: "home",
-  review: "review", lookup: "lookup", test: "test", games: "games", speak: "speak", dashboard: null, mywords: null, leaderboard: null,
+  review: "review", lookup: "lookup", test: "test", games: "games", speak: "speak", dashboard: null, mywords: null, leaderboard: null, topicwords: null,
 };
 
 export function App() {
@@ -156,7 +157,10 @@ export function App() {
       content = <TopicListPage student={student} studiedWordIds={studiedWordIds} onBackHome={() => navigate("home")} onStartTopic={(t, lv) => navigate("lesson", t, lv)} />;
       break;
     case "lesson":
-      content = <LessonPage topicId={route.topicId} level={route.level} student={student} studiedWordIds={studiedWordIds} onAnswerWord={markWord} onBackHome={() => navigate("home")} onPracticeFlashcard={() => navigate("flashcard")} onStartTest={() => navigate("test")} />;
+      content = <LessonPage topicId={route.topicId} level={route.level} student={student} studiedWordIds={studiedWordIds} onAnswerWord={markWord} onBackHome={() => navigate("home")} onPracticeFlashcard={() => navigate("flashcard")} onStartTest={() => navigate("test")} onViewWordList={() => navigate("topicwords")} />;
+      break;
+    case "topicwords":
+      content = <TopicWordsPage topicId={route.topicId} level={route.level} studiedWordIds={studiedWordIds} onBack={() => navigate("lesson")} />;
       break;
     case "flashcard":
       content = <FlashcardPage student={student} topicId={route.topicId} level={route.level} onBackHome={() => navigate("home")} />;
