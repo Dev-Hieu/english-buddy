@@ -14,12 +14,13 @@ import { SessionHeader } from "@/components/layout/SessionHeader";
 interface TestPageProps {
   student: Student;
   topicId: string;
+  level?: string;
   onBackHome: () => void;
 }
 
 const wordById = new Map(SEED_VOCABULARY.map((w) => [w.id, w]));
 
-export function TestPage({ student, topicId, onBackHome }: TestPageProps) {
+export function TestPage({ student, topicId, level = "all", onBackHome }: TestPageProps) {
   const topic = SEED_TOPICS.find((t) => t.id === topicId);
   const [questions, setQuestions] = useState<QuizQuestion[] | null>(null);
   const [index, setIndex] = useState(0);
@@ -31,9 +32,9 @@ export function TestPage({ student, topicId, onBackHome }: TestPageProps) {
 
   useEffect(() => {
     let alive = true;
-    generateQuiz(topicId, 10).then((qs) => alive && setQuestions(qs)).catch(() => alive && setQuestions([]));
+    generateQuiz(topicId, 10, level).then((qs) => alive && setQuestions(qs)).catch(() => alive && setQuestions([]));
     return () => { alive = false; };
-  }, [topicId]);
+  }, [topicId, level]);
 
   const title = `Bài test · ${topic?.name ?? ""}`;
 

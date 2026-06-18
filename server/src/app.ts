@@ -247,8 +247,11 @@ export function createApp() {
   app.get("/api/quiz", requireAuth, (req, res) => {
     const topicId = String(req.query.topicId || "");
     const count = Number(req.query.count || 10);
+    const level = String(req.query.level || "");
     const rows = db.prepare("SELECT * FROM vocabulary").all() as any[];
-    const words = rows.map(rowToWord).filter((w) => w.topicIds.includes(topicId));
+    const words = rows
+      .map(rowToWord)
+      .filter((w) => w.topicIds.includes(topicId) && (!level || w.level === level));
     res.json(buildQuiz(words, count));
   });
 

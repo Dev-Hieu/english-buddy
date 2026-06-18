@@ -11,13 +11,16 @@ interface TopicListPageProps {
   student: Student;
   studiedWordIds: string[]; // từ DB trung tâm (đã học = mastery>0)
   onBackHome: () => void;
-  onStartTopic: (topicId: string) => void;
+  onStartTopic: (topicId: string, level: Level | "all") => void;
 }
 
 export function TopicListPage({ student, studiedWordIds, onStartTopic }: TopicListPageProps) {
   const learned = new Set(studiedWordIds);
   const [level, setLevel] = useState<Level | "all">((student.level as Level) ?? "all");
-  const topics = SEED_TOPICS.filter((t) => level === "all" || t.level === level);
+  // Lọc theo từ Ở CẤP đó (không theo level của chủ đề) -> "Trẻ em" vẫn hiện các chủ đề có từ kids.
+  const wordsOf = (topicId: string) =>
+    SEED_VOCABULARY.filter((w) => w.topicIds.includes(topicId) && (level === "all" || w.level === level));
+  const topics = SEED_TOPICS.filter((t) => wordsOf(t.id).length > 0);
 
   return (
     <main className="mx-auto w-full max-w-2xl px-4 pt-6">
@@ -45,7 +48,7 @@ export function TopicListPage({ student, studiedWordIds, onStartTopic }: TopicLi
 
       <section className="space-y-3">
         {topics.map((topic) => {
-          const words = SEED_VOCABULARY.filter((word) => word.topicIds.includes(topic.id));
+          const words = wordsOf(topic.id);
           const studied = words.filter((w) => learned.has(w.id)).length;
           const pct = words.length === 0 ? 0 : Math.round((studied / words.length) * 100);
           const complete = pct >= 100 && words.length > 0;
@@ -53,7 +56,7 @@ export function TopicListPage({ student, studiedWordIds, onStartTopic }: TopicLi
             <button
               key={topic.id}
               type="button"
-              onClick={() => onStartTopic(topic.id)}
+              onClick={() => onStartTopic(topic.id, level)}
               className="flex w-full items-center gap-4 rounded-3xl border border-border/70 bg-card p-4 text-left shadow-card transition-transform active:scale-[0.99]"
             >
               <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-secondary text-3xl">

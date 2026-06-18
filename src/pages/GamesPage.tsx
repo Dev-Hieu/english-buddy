@@ -16,6 +16,7 @@ import { pickWords } from "@/components/games/wordRotation";
 interface GamesPageProps {
   student: Student;
   topicId: string;
+  level?: string;
   studiedWordIds: string[];
   onBackHome: () => void;
 }
@@ -31,14 +32,14 @@ function shuffle<T>(a: T[]): T[] {
   return r;
 }
 
-export function GamesPage({ student, topicId, studiedWordIds, onBackHome }: GamesPageProps) {
+export function GamesPage({ student, topicId, level = "all", studiedWordIds, onBackHome }: GamesPageProps) {
   const [game, setGame] = useState<Game>("menu");
   const [hard, setHard] = useState(false);
 
   const base = useMemo(() => {
-    const t = SEED_VOCABULARY.filter((w) => w.topicIds.includes(topicId));
+    const t = SEED_VOCABULARY.filter((w) => w.topicIds.includes(topicId) && (level === "all" || w.level === level));
     return t.length >= 4 ? t : SEED_VOCABULARY;
-  }, [topicId]);
+  }, [topicId, level]);
   const reviewPool = useMemo(() => {
     const learned = new Set(studiedWordIds);
     const r = base.filter((w) => learned.has(w.id));

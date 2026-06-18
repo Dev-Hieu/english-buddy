@@ -12,6 +12,7 @@ import { topicEmoji } from "@/components/ui/emoji";
 
 interface LessonPageProps {
   topicId?: string;
+  level?: string;
   student: Student;
   studiedWordIds: string[];
   onAnswerWord: (wordId: string, correct: boolean) => void;
@@ -22,6 +23,7 @@ interface LessonPageProps {
 
 export function LessonPage({
   topicId = "topic_food",
+  level = "all",
   student,
   studiedWordIds,
   onAnswerWord,
@@ -30,7 +32,10 @@ export function LessonPage({
   onStartTest,
 }: LessonPageProps) {
   const topic = SEED_TOPICS.find((item) => item.id === topicId);
-  const words = useMemo(() => SEED_VOCABULARY.filter((w) => w.topicIds.includes(topicId)), [topicId]);
+  const words = useMemo(
+    () => SEED_VOCABULARY.filter((w) => w.topicIds.includes(topicId) && (level === "all" || w.level === level)),
+    [topicId, level],
+  );
   const [currentIndex, setCurrentIndex] = useState(0);
   const studiedIds = useMemo(() => new Set(studiedWordIds), [studiedWordIds]);
 

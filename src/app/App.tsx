@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from "react";
-import type { Student, StudentVocabularyProgress } from "@/types";
+import type { Level, Student, StudentVocabularyProgress } from "@/types";
 import { getUser, isLoggedIn, logout, refreshMe, type AuthUser } from "@/services/authService";
 import { createStudent, deleteStudent, listStudents, updateStudent, type NewStudent } from "@/services/studentService";
 import { getStudentProgress, recordAnswer } from "@/services/progressService";
@@ -25,7 +25,7 @@ type View =
   | "student-select" | "admin" | "home" | "topics" | "lesson"
   | "flashcard" | "review" | "lookup" | "test" | "games" | "speak" | "dashboard" | "mywords" | "leaderboard";
 
-interface Route { view: View; topicId: string; }
+interface Route { view: View; topicId: string; level: Level | "all"; }
 
 const SELECTED_STUDENT_KEY = "english-buddy:selected-student";
 const readSelected = () => (typeof window === "undefined" ? null : localStorage.getItem(SELECTED_STUDENT_KEY));
@@ -39,7 +39,7 @@ export function App() {
   const [user, setUser] = useState<AuthUser | null>(isLoggedIn() ? getUser() : null);
   const [students, setStudents] = useState<Student[]>([]);
   const [selectedStudentId, setSelectedStudentId] = useState<string | null>(readSelected);
-  const [route, setRoute] = useState<Route>({ view: "home", topicId: "topic_food" });
+  const [route, setRoute] = useState<Route>({ view: "home", topicId: "topic_food", level: "all" });
   const [progress, setProgress] = useState<StudentVocabularyProgress[]>([]);
   const [streak, setStreak] = useState(0);
   const [xp, setXp] = useState(0);
@@ -64,8 +64,8 @@ export function App() {
 
   useEffect(() => { loadProgress(); }, [loadProgress]);
 
-  const navigate = (view: View, topicId = route.topicId) => {
-    setRoute({ view, topicId });
+  const navigate = (view: View, topicId = route.topicId, level: Level | "all" = route.level) => {
+    setRoute({ view, topicId, level });
     if (view === "home" || view === "topics") loadProgress();
   };
 
@@ -73,7 +73,7 @@ export function App() {
     setSelectedStudentId(id);
     localStorage.setItem(SELECTED_STUDENT_KEY, id);
     setProgress([]);
-    setRoute({ view: "home", topicId: "topic_food" });
+    setRoute({ view: "home", topicId: "topic_food", level: "all" });
   };
 
   const addStudent = async (data: NewStudent) => {
@@ -141,7 +141,7 @@ export function App() {
         onUpdateStudent={editStudent}
         onDeleteStudent={removeStudent}
         onLogout={doLogout}
-        onOpenAdmin={() => setRoute({ view: "admin", topicId: "topic_food" })}
+        onOpenAdmin={() => setRoute({ view: "admin", topicId: "topic_food", level: "all" })}
       />
     );
   }
@@ -153,13 +153,13 @@ export function App() {
   let content: React.ReactNode;
   switch (route.view) {
     case "topics":
-      content = <TopicListPage student={student} studiedWordIds={studiedWordIds} onBackHome={() => navigate("home")} onStartTopic={(t) => navigate("lesson", t)} />;
+      content = <TopicListPage student={student} studiedWordIds={studiedWordIds} onBackHome={() => navigate("home")} onStartTopic={(t, lv) => navigate("lesson", t, lv)} />;
       break;
     case "lesson":
-      content = <LessonPage topicId={route.topicId} student={student} studiedWordIds={studiedWordIds} onAnswerWord={markWord} onBackHome={() => navigate("home")} onPracticeFlashcard={() => navigate("flashcard")} onStartTest={() => navigate("test")} />;
+      content = <LessonPage topicId={route.topicId} level={route.level} student={student} studiedWordIds={studiedWordIds} onAnswerWord={markWord} onBackHome={() => navigate("home")} onPracticeFlashcard={() => navigate("flashcard")} onStartTest={() => navigate("test")} />;
       break;
     case "flashcard":
-      content = <FlashcardPage student={student} topicId={route.topicId} onBackHome={() => navigate("home")} />;
+      content = <FlashcardPage student={student} topicId={route.topicId} level={route.level} onBackHome={() => navigate("home")} />;
       break;
     case "review":
       content = <ReviewPage student={student} onBackHome={() => navigate("home")} />;
@@ -168,10 +168,10 @@ export function App() {
       content = <LookupPage student={student} onBackHome={() => navigate("home")} />;
       break;
     case "test":
-      content = <TestPage student={student} topicId={route.topicId} onBackHome={() => navigate("home")} />;
+      content = <TestPage student={student} topicId={route.topicId} level={route.level} onBackHome={() => navigate("home")} />;
       break;
     case "games":
-      content = <GamesPage student={student} topicId={route.topicId} studiedWordIds={studiedWordIds} onBackHome={() => navigate("home")} />;
+      content = <GamesPage student={student} topicId={route.topicId} level={route.level} studiedWordIds={studiedWordIds} onBackHome={() => navigate("home")} />;
       break;
     case "speak":
       content = <SpeakingPage student={student} topicId={route.topicId} onBackHome={() => navigate("home")} />;
