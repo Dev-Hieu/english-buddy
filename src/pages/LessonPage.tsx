@@ -14,7 +14,7 @@ interface LessonPageProps {
   topicId?: string;
   student: Student;
   studiedWordIds: string[];
-  onMarkWordStudied: (wordId: string) => void;
+  onAnswerWord: (wordId: string, correct: boolean) => void;
   onBackHome: () => void;
   onPracticeFlashcard?: () => void;
   onStartTest?: () => void;
@@ -24,7 +24,7 @@ export function LessonPage({
   topicId = "topic_food",
   student,
   studiedWordIds,
-  onMarkWordStudied,
+  onAnswerWord,
   onBackHome,
   onPracticeFlashcard,
   onStartTest,
@@ -39,15 +39,15 @@ export function LessonPage({
   const studiedInTopic = words.filter((w) => studiedIds.has(w.id)).length;
   const progress = words.length === 0 ? 0 : Math.round((studiedInTopic / words.length) * 100);
 
-  const markCurrentStudied = () => currentWord && onMarkWordStudied(currentWord.id);
-  const goNext = () => {
-    markCurrentStudied();
-    setCurrentIndex((i) => Math.min(i + 1, words.length - 1));
-  };
   const goPrevious = () => setCurrentIndex((i) => Math.max(i - 1, 0));
-  const finishLesson = () => {
-    markCurrentStudied();
-    onBackHome();
+  const goNext = () => setCurrentIndex((i) => Math.min(i + 1, words.length - 1));
+
+  // Trả lời 1 từ rồi sang từ tiếp (hoặc về nhà nếu là từ cuối).
+  const answer = (correct: boolean) => {
+    if (!currentWord) return;
+    onAnswerWord(currentWord.id, correct);
+    if (currentIndex >= words.length - 1) onBackHome();
+    else goNext();
   };
 
   if (!topic || !currentWord) {
@@ -70,15 +70,15 @@ export function LessonPage({
       <WordCard
         word={currentWord}
         studied={studiedIds.has(currentWord.id)}
-        onReview={markCurrentStudied}
-        onKnow={isLast ? finishLesson : goNext}
+        onReview={() => answer(false)}
+        onKnow={() => answer(true)}
       />
 
       <div className="mt-4 flex items-center justify-between gap-3">
         <Button type="button" variant="outline" onClick={goPrevious} disabled={currentIndex === 0}>
           <ArrowLeft className="h-4 w-4" /> Trước
         </Button>
-        <Button type="button" onClick={isLast ? finishLesson : goNext}>
+        <Button type="button" variant="outline" onClick={isLast ? onBackHome : goNext}>
           {isLast ? (<><CheckCircle2 className="h-4 w-4" /> Hoàn thành</>) : (<>Tiếp <ArrowRight className="h-4 w-4" /></>)}
         </Button>
       </div>

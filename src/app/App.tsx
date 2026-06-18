@@ -65,18 +65,20 @@ export function App() {
     setRoute({ view: "home", topicId: "topic_food" });
   };
 
-  const markWordStudied = (wordId: string) => {
+  // Ghi 1 lần trả lời cho 1 từ (đúng = nhớ rồi, sai = cần ôn lại). Optimistic + đồng bộ DB.
+  const markWord = (wordId: string, correct: boolean) => {
     if (!student) return;
     setProgress((prev) => {
       const existing = prev.find((p) => p.wordId === wordId);
       if (existing && existing.mastery > 0) return prev;
       const stub: StudentVocabularyProgress = {
         studentId: student.id, wordId, status: "learning", mastery: 1,
-        correctCount: 1, wrongCount: 0, lastReviewedAt: Date.now(), nextReviewAt: Date.now(),
+        correctCount: correct ? 1 : 0, wrongCount: correct ? 0 : 1,
+        lastReviewedAt: Date.now(), nextReviewAt: Date.now(),
       };
       return existing ? prev.map((p) => (p.wordId === wordId ? stub : p)) : [...prev, stub];
     });
-    recordAnswer(student.id, wordId, true).then(loadProgress).catch(() => {});
+    recordAnswer(student.id, wordId, correct).then(loadProgress).catch(() => {});
   };
 
   const doLogout = () => {
@@ -107,7 +109,7 @@ export function App() {
       content = <TopicListPage student={student} studiedWordIds={studiedWordIds} onBackHome={() => navigate("home")} onStartTopic={(t) => navigate("lesson", t)} />;
       break;
     case "lesson":
-      content = <LessonPage topicId={route.topicId} student={student} studiedWordIds={studiedWordIds} onMarkWordStudied={markWordStudied} onBackHome={() => navigate("home")} onPracticeFlashcard={() => navigate("flashcard")} onStartTest={() => navigate("test")} />;
+      content = <LessonPage topicId={route.topicId} student={student} studiedWordIds={studiedWordIds} onAnswerWord={markWord} onBackHome={() => navigate("home")} onPracticeFlashcard={() => navigate("flashcard")} onStartTest={() => navigate("test")} />;
       break;
     case "flashcard":
       content = <FlashcardPage student={student} topicId={route.topicId} onBackHome={() => navigate("home")} />;
