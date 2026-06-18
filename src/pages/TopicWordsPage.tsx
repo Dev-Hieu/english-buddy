@@ -6,6 +6,7 @@ import { speakText } from "@/services/speechService";
 import { SessionHeader } from "@/components/layout/SessionHeader";
 import { topicEmoji } from "@/components/ui/emoji";
 import { cn } from "@/components/ui/cn";
+import { topicWords } from "@/utils/levelFilter";
 
 interface TopicWordsPageProps {
   topicId: string;
@@ -18,10 +19,7 @@ interface TopicWordsPageProps {
 export function TopicWordsPage({ topicId, level = "all", studiedWordIds, onBack }: TopicWordsPageProps) {
   const topic = SEED_TOPICS.find((t) => t.id === topicId);
   const studied = useMemo(() => new Set(studiedWordIds), [studiedWordIds]);
-  const words = useMemo(
-    () => SEED_VOCABULARY.filter((w) => w.topicIds.includes(topicId) && (level === "all" || w.level === level)),
-    [topicId, level],
-  );
+  const words = useMemo(() => topicWords(SEED_VOCABULARY, topicId, level), [topicId, level]);
   const doneCount = words.filter((w) => studied.has(w.id)).length;
 
   return (

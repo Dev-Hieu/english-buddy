@@ -8,6 +8,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { SessionHeader } from "@/components/layout/SessionHeader";
 import { WordCard } from "@/components/vocabulary/WordCard";
 import { topicEmoji } from "@/components/ui/emoji";
+import { topicWords } from "@/utils/levelFilter";
 
 interface LessonPageProps {
   topicId?: string;
@@ -33,10 +34,7 @@ export function LessonPage({
   onViewWordList,
 }: LessonPageProps) {
   const topic = SEED_TOPICS.find((item) => item.id === topicId);
-  const words = useMemo(
-    () => SEED_VOCABULARY.filter((w) => w.topicIds.includes(topicId) && (level === "all" || w.level === level)),
-    [topicId, level],
-  );
+  const words = useMemo(() => topicWords(SEED_VOCABULARY, topicId, level), [topicId, level]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const studiedIds = useMemo(() => new Set(studiedWordIds), [studiedWordIds]);
 

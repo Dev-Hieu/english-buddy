@@ -9,6 +9,7 @@ import { ThemePicker } from "@/components/ui/ThemePicker";
 import { computeBadges, levelOf } from "@/components/ui/badges";
 import { avatarEmoji, topicEmoji } from "@/components/ui/emoji";
 import { cn } from "@/components/ui/cn";
+import { topicWords, topicsWithLevel } from "@/utils/levelFilter";
 
 type Nav = (view: string, topicId?: string, level?: string) => void;
 
@@ -60,9 +61,8 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
   const validLevel = LEVEL_ORDER.includes(student.level as Level);
   const learnLevel = validLevel ? (student.level as string) : "all";
   const levelLabel = validLevel ? LEVEL_LABELS[student.level as Level] : null;
-  const wordsOf = (topicId: string) =>
-    SEED_VOCABULARY.filter((w) => w.topicIds.includes(topicId) && (learnLevel === "all" || w.level === learnLevel));
-  const topicsAtLevel = SEED_TOPICS.filter((t) => wordsOf(t.id).length > 0);
+  const wordsOf = (topicId: string) => topicWords(SEED_VOCABULARY, topicId, learnLevel);
+  const topicsAtLevel = topicsWithLevel(SEED_TOPICS, SEED_VOCABULARY, learnLevel);
   const earnedBadges = computeBadges({ learned: learnedTotal, streak, xp }).filter((b) => b.earned);
 
   // "Học tiếp": ưu tiên chủ đề đang học dở; nếu chưa có thì chủ đề đầu tiên.

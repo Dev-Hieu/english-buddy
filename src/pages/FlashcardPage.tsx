@@ -3,6 +3,7 @@ import { SEED_TOPICS } from "@/data/seedTopics";
 import { SEED_VOCABULARY } from "@/data/seedVocabulary";
 import type { Student } from "@/types";
 import { DeckRunner } from "@/components/vocabulary/DeckRunner";
+import { topicWords } from "@/utils/levelFilter";
 
 interface FlashcardPageProps {
   student: Student;
@@ -13,10 +14,7 @@ interface FlashcardPageProps {
 
 export function FlashcardPage({ student, topicId, level = "all", onBackHome }: FlashcardPageProps) {
   const topic = SEED_TOPICS.find((t) => t.id === topicId);
-  const words = useMemo(
-    () => SEED_VOCABULARY.filter((w) => w.topicIds.includes(topicId) && (level === "all" || w.level === level)),
-    [topicId, level],
-  );
+  const words = useMemo(() => topicWords(SEED_VOCABULARY, topicId, level), [topicId, level]);
 
   return (
     <DeckRunner

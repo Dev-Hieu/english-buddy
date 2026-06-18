@@ -12,6 +12,7 @@ import { SudokuGame } from "@/components/games/SudokuGame";
 import { PictureWordGame } from "@/components/games/PictureWordGame";
 import { CarRaceGame } from "@/components/games/CarRaceGame";
 import { pickWords } from "@/components/games/wordRotation";
+import { topicWords } from "@/utils/levelFilter";
 
 interface GamesPageProps {
   student: Student;
@@ -37,7 +38,7 @@ export function GamesPage({ student, topicId, level = "all", studiedWordIds, onB
   const [hard, setHard] = useState(false);
 
   const base = useMemo(() => {
-    const t = SEED_VOCABULARY.filter((w) => w.topicIds.includes(topicId) && (level === "all" || w.level === level));
+    const t = topicWords(SEED_VOCABULARY, topicId, level);
     return t.length >= 4 ? t : SEED_VOCABULARY;
   }, [topicId, level]);
   const reviewPool = useMemo(() => {

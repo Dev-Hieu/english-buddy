@@ -6,6 +6,7 @@ import { LEVEL_LABELS, LEVEL_ORDER, type Level, type Student } from "@/types";
 import { ProgressBar } from "@/components/ui/progress";
 import { topicEmoji } from "@/components/ui/emoji";
 import { cn } from "@/components/ui/cn";
+import { topicWords, topicsWithLevel } from "@/utils/levelFilter";
 
 interface TopicListPageProps {
   student: Student;
@@ -18,9 +19,8 @@ export function TopicListPage({ student, studiedWordIds, onStartTopic }: TopicLi
   const learned = new Set(studiedWordIds);
   const [level, setLevel] = useState<Level | "all">(LEVEL_ORDER.includes(student.level as Level) ? (student.level as Level) : "all");
   // Lọc theo từ Ở CẤP đó (không theo level của chủ đề) -> "Trẻ em" vẫn hiện các chủ đề có từ kids.
-  const wordsOf = (topicId: string) =>
-    SEED_VOCABULARY.filter((w) => w.topicIds.includes(topicId) && (level === "all" || w.level === level));
-  const topics = SEED_TOPICS.filter((t) => wordsOf(t.id).length > 0);
+  const wordsOf = (topicId: string) => topicWords(SEED_VOCABULARY, topicId, level);
+  const topics = topicsWithLevel(SEED_TOPICS, SEED_VOCABULARY, level);
 
   return (
     <main className="mx-auto w-full max-w-2xl px-4 pt-6">
