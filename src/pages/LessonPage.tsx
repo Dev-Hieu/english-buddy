@@ -103,21 +103,25 @@ export function LessonPage({
         </div>
       ) : null}
 
+      {/* Điều hướng nhanh: từ ĐÃ học hiện chữ + ✓; từ CHƯA học chỉ hiện số (không lộ từ mới). */}
       <div className="mt-5 flex flex-wrap gap-2">
-        {words.map((w, i) => (
-          <button
-            key={w.id}
-            type="button"
-            onClick={() => setCurrentIndex(i)}
-            className={cn(
-              "flex h-9 items-center gap-1 rounded-full px-3 text-sm font-bold transition-colors",
-              i === currentIndex ? "bg-primary text-primary-foreground" : studiedIds.has(w.id) ? "bg-secondary text-secondary-foreground" : "bg-muted text-muted-foreground",
-            )}
-          >
-            {studiedIds.has(w.id) ? <CheckCircle2 className="h-3.5 w-3.5" /> : null}
-            {w.word}
-          </button>
-        ))}
+        {words.map((w, i) => {
+          const done = studiedIds.has(w.id);
+          return (
+            <button
+              key={w.id}
+              type="button"
+              onClick={() => setCurrentIndex(i)}
+              aria-label={done ? w.word : `Từ ${i + 1}`}
+              className={cn(
+                "flex h-9 min-w-9 items-center justify-center gap-1 rounded-full px-3 text-sm font-bold transition-colors",
+                i === currentIndex ? "bg-primary text-primary-foreground" : done ? "bg-secondary text-secondary-foreground" : "bg-muted text-muted-foreground",
+              )}
+            >
+              {done ? (<><CheckCircle2 className="h-3.5 w-3.5" />{w.word}</>) : i + 1}
+            </button>
+          );
+        })}
       </div>
     </main>
   );
