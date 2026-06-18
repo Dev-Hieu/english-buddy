@@ -1,5 +1,7 @@
 fastapi
 uvicorn[standard]
 python-multipart
-allosaurus
+transformers
+torch
+soundfile
 numpy
