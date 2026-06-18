@@ -34,6 +34,11 @@ function bumpStreak(studentId: string): void {
   db.prepare("UPDATE students SET streak = ?, lastActiveDate = ? WHERE id = ?").run(streak, today, studentId);
 }
 
+function addXp(studentId: string, delta: number): void {
+  if (delta <= 0) return;
+  db.prepare("UPDATE students SET xp = COALESCE(xp, 0) + ? WHERE id = ?").run(delta, studentId);
+}
+
 // Ghi lại src/data/seedImages.ts từ imageUrl hiện tại trong DB -> app tự cập nhật (Vite HMR).
 function regenerateSeedImages(): void {
   const rows = db.prepare("SELECT id, imageUrl FROM vocabulary").all() as any[];
@@ -106,6 +111,7 @@ export function createApp() {
        VALUES (@studentId, @wordId, @status, @mastery, @correctCount, @wrongCount, @lastReviewedAt, @nextReviewAt)`
     ).run(row);
     bumpStreak(studentId);
+    if (correct) addXp(studentId, 10); // +10 XP cho mỗi từ trả lời đúng
     res.json(row);
   });
 
@@ -120,6 +126,13 @@ export function createApp() {
     res.json(
       db.prepare("SELECT * FROM progress WHERE studentId = ? AND nextReviewAt <= ?").all(req.params.id, now)
     );
+  });
+
+  app.get("/api/students/:id/lookups", requireAuth, (req, res) => {
+    const rows = db.prepare(
+      "SELECT query, type, MAX(createdAt) AS createdAt FROM lookup_history WHERE studentId = ? AND saved = 1 GROUP BY query ORDER BY createdAt DESC LIMIT 100"
+    ).all(req.params.id);
+    res.json(rows);
   });
 
   app.post("/api/lookup", requireAuth, (req, res) => {
@@ -155,7 +168,10 @@ export function createApp() {
       r.studentId, r.topicId, r.score, r.totalQuestions, r.correctAnswers, r.wrongAnswers,
       JSON.stringify(r.wrongWordIds ?? []), r.durationSeconds, r.createdAt ?? Date.now()
     );
-    if (r.studentId) bumpStreak(r.studentId);
+    if (r.studentId) {
+      bumpStreak(r.studentId);
+      addXp(r.studentId, (Number(r.correctAnswers) || 0) * 5); // +5 XP mỗi câu test đúng
+    }
     res.json({ ok: true });
   });
 

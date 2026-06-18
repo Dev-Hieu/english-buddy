@@ -15,12 +15,13 @@ import { TestPage } from "@/pages/TestPage";
 import { GamesPage } from "@/pages/GamesPage";
 import { SpeakingPage } from "@/pages/SpeakingPage";
 import { DashboardPage } from "@/pages/DashboardPage";
+import { MyWordsPage } from "@/pages/MyWordsPage";
 import { StudentSelectPage } from "@/pages/StudentSelectPage";
 import { TopicListPage } from "@/pages/TopicListPage";
 
 type View =
   | "student-select" | "home" | "topics" | "lesson"
-  | "flashcard" | "review" | "lookup" | "test" | "games" | "speak" | "dashboard";
+  | "flashcard" | "review" | "lookup" | "test" | "games" | "speak" | "dashboard" | "mywords";
 
 interface Route {
   view: View;
@@ -32,7 +33,7 @@ const readSelected = () => (typeof window === "undefined" ? null : localStorage.
 
 const ACTIVE_TAB: Record<View, TabKey | null> = {
   "student-select": null, home: "home", topics: "home", lesson: "home", flashcard: "home",
-  review: "review", lookup: "lookup", test: "test", games: "games", speak: "speak", dashboard: null,
+  review: "review", lookup: "lookup", test: "test", games: "games", speak: "speak", dashboard: null, mywords: null,
 };
 
 export function App() {
@@ -41,13 +42,14 @@ export function App() {
   const [route, setRoute] = useState<Route>({ view: "home", topicId: "topic_food" });
   const [progress, setProgress] = useState<StudentVocabularyProgress[]>([]);
   const [streak, setStreak] = useState(0);
+  const [xp, setXp] = useState(0);
 
   const student = SEED_STUDENTS.find((s) => s.id === selectedStudentId) ?? null;
 
   const loadProgress = useCallback(() => {
     if (!authed || !selectedStudentId) return;
     getStudentProgress(selectedStudentId).then(setProgress).catch(() => {});
-    getStudent(selectedStudentId).then((s) => setStreak(s.streak ?? 0)).catch(() => {});
+    getStudent(selectedStudentId).then((s) => { setStreak(s.streak ?? 0); setXp(s.xp ?? 0); }).catch(() => {});
   }, [authed, selectedStudentId]);
 
   useEffect(() => {
@@ -134,12 +136,16 @@ export function App() {
     case "dashboard":
       content = <DashboardPage onBackHome={() => navigate("home")} />;
       break;
+    case "mywords":
+      content = <MyWordsPage student={student} onBackHome={() => navigate("home")} />;
+      break;
     default:
       content = (
         <HomePage
           student={student}
           studiedWordIds={studiedWordIds}
           streak={streak}
+          xp={xp}
           learnedTotal={studiedWordIds.length}
           learnedToday={learnedToday}
           onChangeStudent={() => navigate("student-select")}

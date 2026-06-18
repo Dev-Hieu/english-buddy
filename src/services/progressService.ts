@@ -27,3 +27,12 @@ export function getDueReviews(
 export async function saveLookup(entry: LookupHistory): Promise<void> {
   await apiRequest(`/api/lookup`, { method: "POST", body: entry });
 }
+
+export interface SavedWord {
+  query: string;
+  type: "word" | "sentence";
+  createdAt: number;
+}
+export function getMyWords(studentId: string): Promise<SavedWord[]> {
+  return apiRequest(`/api/students/${studentId}/lookups`);
+}

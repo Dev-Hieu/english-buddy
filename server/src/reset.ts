@@ -8,7 +8,7 @@ const tx = db.transaction(() => {
   db.prepare("DELETE FROM progress").run();
   db.prepare("DELETE FROM quiz_results").run();
   db.prepare("DELETE FROM lookup_history").run();
-  db.prepare("UPDATE students SET streak = 0, lastActiveDate = NULL").run();
+  db.prepare("UPDATE students SET streak = 0, xp = 0, lastActiveDate = NULL").run();
 });
 tx();
 console.log("Đã xoá tiến độ/kết quả/lịch sử. Topics, vocabulary, students giữ nguyên.");
