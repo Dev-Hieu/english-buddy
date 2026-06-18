@@ -32,6 +32,9 @@ export interface SavedWord {
   query: string;
   type: "word" | "sentence";
   createdAt: number;
+  meaning?: string;
+  phonetic?: string;
+  imageUrl?: string;
 }
 export function getMyWords(studentId: string): Promise<SavedWord[]> {
   return apiRequest(`/api/students/${studentId}/lookups`);

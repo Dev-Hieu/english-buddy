@@ -231,17 +231,17 @@ export function createApp() {
   app.get("/api/students/:id/lookups", requireAuth, (req, res) => {
     if (!canAccessStudent(req, res, req.params.id)) return;
     const rows = db.prepare(
-      "SELECT query, type, MAX(createdAt) AS createdAt FROM lookup_history WHERE studentId = ? AND saved = 1 GROUP BY query ORDER BY createdAt DESC LIMIT 100"
+      "SELECT query, type, meaning, phonetic, imageUrl, MAX(createdAt) AS createdAt FROM lookup_history WHERE studentId = ? AND saved = 1 GROUP BY query ORDER BY createdAt DESC LIMIT 100"
     ).all(req.params.id);
     res.json(rows);
   });
 
   app.post("/api/lookup", requireAuth, (req, res) => {
-    const { studentId, query, type, saved, createdAt } = req.body || {};
+    const { studentId, query, type, saved, createdAt, meaning, phonetic, imageUrl } = req.body || {};
     if (!canAccessStudent(req, res, studentId)) return;
     db.prepare(
-      `INSERT INTO lookup_history (studentId, query, type, saved, createdAt) VALUES (?, ?, ?, ?, ?)`
-    ).run(studentId, query, type, saved ? 1 : 0, createdAt ?? Date.now());
+      `INSERT INTO lookup_history (studentId, query, type, saved, createdAt, meaning, phonetic, imageUrl) VALUES (?, ?, ?, ?, ?, ?, ?, ?)`
+    ).run(studentId, query, type, saved ? 1 : 0, createdAt ?? Date.now(), meaning ?? null, phonetic ?? null, imageUrl ?? null);
     res.json({ ok: true });
   });
 

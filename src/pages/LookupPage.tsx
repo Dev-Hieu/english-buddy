@@ -89,7 +89,16 @@ function WordLookup({ student }: { student: Student }) {
 
   const save = async () => {
     if (!result) return;
-    await saveLookup({ studentId: student.id, query: result.query, type: "word", saved: true, createdAt: Date.now() }).catch(() => {});
+    await saveLookup({
+      studentId: student.id,
+      query: result.query,
+      type: "word",
+      saved: true,
+      createdAt: Date.now(),
+      meaning: result.vi || undefined,
+      phonetic: result.dict?.phonetic || undefined,
+      imageUrl: result.images[0]?.url || undefined,
+    }).catch(() => {});
     setSaved(true);
   };
 
@@ -155,7 +164,7 @@ function SentenceTranslate({ student }: { student: Student }) {
   };
   const flip = () => { setFrom(to); setText(out && !out.startsWith("(") ? out : text); setOut(""); };
   const englishText = from === "en" ? text : out;
-  const save = () => { saveLookup({ studentId: student.id, query: text.trim(), type: "sentence", saved: true, createdAt: Date.now() }).catch(() => {}); };
+  const save = () => { saveLookup({ studentId: student.id, query: text.trim(), type: "sentence", saved: true, createdAt: Date.now(), meaning: out && !out.startsWith("(") ? out : undefined }).catch(() => {}); };
 
   return (
     <form className="space-y-4" onSubmit={run}>

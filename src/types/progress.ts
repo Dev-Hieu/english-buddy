@@ -22,4 +22,7 @@ export interface LookupHistory {
   type: "word" | "sentence";
   saved: boolean;
   createdAt: number;
+  meaning?: string;
+  phonetic?: string;
+  imageUrl?: string;
 }
