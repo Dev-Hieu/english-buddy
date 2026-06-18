@@ -1,24 +1,23 @@
-import { randomUUID } from "node:crypto";
+import { createHash } from "node:crypto";
 import type { NextFunction, Request, Response } from "express";
 
 // Auth tối giản cho app 1 gia đình: 1 mật khẩu phụ huynh (env PARENT_PASSWORD).
-// Đăng nhập đúng -> cấp token (lưu in-memory). Khởi động lại server thì cần đăng nhập lại.
+// Token là STATELESS (hash của mật khẩu) -> KHÔNG mất khi restart server.
 const PARENT_PASSWORD = process.env.PARENT_PASSWORD || "bao-ngoc-bao-nam";
-const tokens = new Set<string>();
+
+function expectedToken(): string {
+  return createHash("sha256").update("english-buddy:" + PARENT_PASSWORD).digest("hex");
+}
 
 export function login(password: string): string | null {
-  if (password !== PARENT_PASSWORD) return null;
-  const token = randomUUID();
-  tokens.add(token);
-  return token;
+  return password === PARENT_PASSWORD ? expectedToken() : null;
 }
 
 export function requireAuth(req: Request, res: Response, next: NextFunction): void {
-  const header = req.header("authorization") || "";
-  const token = header.replace(/^Bearer\s+/i, "");
-  if (!token || !tokens.has(token)) {
-    res.status(401).json({ error: "unauthorized" });
+  const token = (req.header("authorization") || "").replace(/^Bearer\s+/i, "");
+  if (token && token === expectedToken()) {
+    next();
     return;
   }
-  next();
+  res.status(401).json({ error: "unauthorized" });
 }

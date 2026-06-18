@@ -33,7 +33,14 @@ export async function apiRequest<T>(path: string, opts: Opts = {}): Promise<T> {
     throw serviceError("network", `Không gọi được API: ${path}`);
   }
 
-  if (res.status === 401) throw serviceError("unknown", "Chưa đăng nhập hoặc hết phiên");
+  if (res.status === 401) {
+    // Token hết hạn/không hợp lệ trên endpoint cần auth -> xoá token, quay về Login.
+    if (opts.auth !== false) {
+      clearToken();
+      if (typeof window !== "undefined") window.location.reload();
+    }
+    throw serviceError("unknown", "Chưa đăng nhập hoặc hết phiên");
+  }
   if (res.status === 404) throw serviceError("not_found", path);
   if (res.status === 429) throw serviceError("rate_limit", "Quá nhiều yêu cầu");
   if (!res.ok) throw serviceError("unknown", `Lỗi ${res.status}: ${path}`);
