@@ -1,4 +1,4 @@
-import { ArrowRight, Mic, PartyPopper, Volume2 } from "lucide-react";
+import { ArrowRight, Mic, PartyPopper, ThumbsUp, Volume2 } from "lucide-react";
 import { useMemo, useState } from "react";
 import { SEED_TOPICS } from "@/data/seedTopics";
 import { SEED_VOCABULARY } from "@/data/seedVocabulary";
@@ -40,6 +40,10 @@ function judge(target: string, heard: string[]): Verdict {
   return "wrong";
 }
 
+// App chỉ tự chấm phát âm khi có nhận giọng + ngữ cảnh bảo mật (HTTPS/localhost).
+const CAN_RECOGNIZE =
+  typeof window !== "undefined" && isRecognitionSupported() && window.isSecureContext;
+
 export function SpeakingPage({ topicId, onBackHome }: SpeakingPageProps) {
   const topic = SEED_TOPICS.find((t) => t.id === topicId);
   const words = useMemo(() => {
@@ -47,7 +51,6 @@ export function SpeakingPage({ topicId, onBackHome }: SpeakingPageProps) {
     return pickWords(t.length >= 1 ? t : SEED_VOCABULARY, 8);
   }, [topicId]);
 
-  const supported = isRecognitionSupported();
   const [n, setN] = useState(0);
   const [status, setStatus] = useState<Status>("idle");
   const [verdict, setVerdict] = useState<Verdict | null>(null);
@@ -66,19 +69,6 @@ export function SpeakingPage({ topicId, onBackHome }: SpeakingPageProps) {
     );
   }
 
-  if (!supported) {
-    return (
-      <>
-        <SessionHeader title="Luyện nói" onClose={onBackHome} />
-        <Card><CardContent className="space-y-3 p-8 text-center">
-          <Mic className="mx-auto h-12 w-12 text-muted-foreground" />
-          <p className="font-bold">Trình duyệt này chưa hỗ trợ nhận giọng nói.</p>
-          <p className="text-sm font-semibold text-muted-foreground">Hãy mở bằng <b>Chrome</b> hoặc <b>Safari</b> để luyện nói nhé.</p>
-        </CardContent></Card>
-      </>
-    );
-  }
-
   if (done) {
     return (
       <>
@@ -86,13 +76,20 @@ export function SpeakingPage({ topicId, onBackHome }: SpeakingPageProps) {
         <Card className="animate-pop">
           <CardContent className="flex flex-col items-center gap-4 p-8 text-center">
             <PartyPopper className="h-14 w-14 text-accent" />
-            <p className="text-2xl font-black text-primary">Đọc đúng {good}/{words.length} từ! 🎉</p>
+            <p className="text-2xl font-black text-primary">
+              {CAN_RECOGNIZE ? `Đọc đúng ${good}/${words.length} từ! 🎉` : `Đã luyện ${words.length} từ! 🎉`}
+            </p>
             <Button type="button" size="lg" className="w-full" onClick={onBackHome}>Xong</Button>
           </CardContent>
         </Card>
       </>
     );
   }
+
+  const next = () => {
+    if (n + 1 >= words.length) setDone(true);
+    else { setN((x) => x + 1); setStatus("idle"); setVerdict(null); setHeard(""); }
+  };
 
   const record = async () => {
     setStatus("listening");
@@ -112,11 +109,6 @@ export function SpeakingPage({ topicId, onBackHome }: SpeakingPageProps) {
     }
   };
 
-  const next = () => {
-    if (n + 1 >= words.length) setDone(true);
-    else { setN((x) => x + 1); setStatus("idle"); setVerdict(null); setHeard(""); }
-  };
-
   const feedback = {
     correct: { text: "Tuyệt vời! Phát âm chuẩn 🎉", cls: "text-success" },
     near: { text: "Gần đúng rồi, thử lại cho rõ hơn nhé", cls: "text-warning" },
@@ -133,43 +125,63 @@ export function SpeakingPage({ topicId, onBackHome }: SpeakingPageProps) {
           {word.imageUrl ? <img src={word.imageUrl} alt="" className="h-40 w-full rounded-2xl object-cover" /> : null}
           <h2 className="text-4xl font-black capitalize">{word.word}</h2>
           {word.phonetic ? <p className="font-bold text-muted-foreground">{word.phonetic}</p> : null}
-          <Button type="button" variant="outline" onClick={() => speakText(word.word, word.audioUrl)}>
+          <Button type="button" variant="outline" size="lg" onClick={() => speakText(word.word, word.audioUrl)}>
             <Volume2 className="h-5 w-5" /> Nghe mẫu
           </Button>
 
-          {/* nút mic */}
-          <button
-            type="button"
-            onClick={record}
-            disabled={status === "listening"}
-            className={cn(
-              "mt-2 flex h-20 w-20 items-center justify-center rounded-full text-white shadow-card transition-all active:translate-y-[2px]",
-              status === "listening" ? "animate-pulse bg-red-500" : "bg-primary hover:brightness-105",
-            )}
-            aria-label="Bấm để nói"
-          >
-            <Mic className="h-9 w-9" strokeWidth={2.5} />
-          </button>
-          <p className="text-sm font-bold text-muted-foreground">
-            {status === "listening" ? "Đang nghe... đọc to từ trên nhé!" : "Bấm micro rồi đọc to từ"}
-          </p>
+          {CAN_RECOGNIZE ? (
+            <>
+              <button
+                type="button"
+                onClick={record}
+                disabled={status === "listening"}
+                className={cn(
+                  "mt-2 flex h-20 w-20 items-center justify-center rounded-full text-white shadow-card transition-all active:translate-y-[2px]",
+                  status === "listening" ? "animate-pulse bg-red-500" : "bg-primary hover:brightness-105",
+                )}
+                aria-label="Bấm để nói"
+              >
+                <Mic className="h-9 w-9" strokeWidth={2.5} />
+              </button>
+              <p className="text-sm font-bold text-muted-foreground">
+                {status === "listening" ? "Đang nghe... đọc to từ trên nhé!" : "Bấm micro rồi đọc to từ"}
+              </p>
 
-          {status === "result" && verdict ? (
-            <div className="w-full space-y-2 rounded-2xl bg-muted p-4">
-              <p className={cn("text-lg font-black", feedback[verdict].cls)}>{feedback[verdict].text}</p>
-              {heard ? <p className="text-sm font-semibold text-muted-foreground">App nghe được: “{heard}”</p> : null}
+              {status === "result" && verdict ? (
+                <div className="w-full space-y-2 rounded-2xl bg-muted p-4">
+                  <p className={cn("text-lg font-black", feedback[verdict].cls)}>{feedback[verdict].text}</p>
+                  {heard ? <p className="text-sm font-semibold text-muted-foreground">App nghe được: “{heard}”</p> : null}
+                  <div className="flex gap-2">
+                    <Button type="button" variant="outline" className="flex-1" onClick={record}><Mic className="h-5 w-5" /> Đọc lại</Button>
+                    <Button type="button" className="flex-1" onClick={next}>{n + 1 >= words.length ? "Xong" : (<>Từ tiếp <ArrowRight className="h-5 w-5" /></>)}</Button>
+                  </div>
+                </div>
+              ) : null}
+            </>
+          ) : (
+            // Chế độ Nghe & nhắc lại (máy không tự chấm được): bé đọc theo rồi tự đánh giá.
+            <div className="w-full space-y-3">
+              <p className="rounded-2xl bg-muted p-3 text-sm font-bold text-muted-foreground">
+                🔊 Nghe mẫu rồi đọc to theo nhé. (Thiết bị này chưa tự chấm phát âm được — xem ghi chú dưới.)
+              </p>
               <div className="flex gap-2">
-                <Button type="button" variant="outline" className="flex-1" onClick={record}>
-                  <Mic className="h-5 w-5" /> Đọc lại
+                <Button type="button" variant="outline" className="flex-1" onClick={() => speakText(word.word, word.audioUrl)}>
+                  <Volume2 className="h-5 w-5" /> Nghe lại
                 </Button>
                 <Button type="button" className="flex-1" onClick={next}>
-                  {n + 1 >= words.length ? "Xong" : (<>Từ tiếp <ArrowRight className="h-5 w-5" /></>)}
+                  <ThumbsUp className="h-5 w-5" /> {n + 1 >= words.length ? "Xong" : "Con đọc được"}
                 </Button>
               </div>
             </div>
-          ) : null}
+          )}
         </CardContent>
       </Card>
+
+      {!CAN_RECOGNIZE ? (
+        <p className="mt-3 text-center text-xs font-semibold text-muted-foreground">
+          Để app tự chấm phát âm: mở trên <b>máy tính (Chrome)</b> hoặc bản <b>HTTPS</b>. Trình duyệt di động qua HTTP không cho dùng micro.
+        </p>
+      ) : null}
     </>
   );
 }
