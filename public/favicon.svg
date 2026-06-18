@@ -1,19 +1,30 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
   <rect width="120" height="120" rx="24" fill="#1CB0A8"/>
+  <!-- Body -->
+  <ellipse cx="60" cy="72" rx="30" ry="32" fill="#FFF8E1"/>
+  <!-- Wings -->
+  <ellipse cx="32" cy="70" rx="12" ry="22" fill="#FFB300" transform="rotate(10 32 70)"/>
+  <ellipse cx="88" cy="70" rx="12" ry="22" fill="#FFB300" transform="rotate(-10 88 70)"/>
   <!-- Head -->
-  <ellipse cx="50" cy="42" rx="32" ry="32" fill="#26C7BD"/>
-  <!-- Eye white -->
-  <circle cx="62" cy="36" r="10" fill="#fff"/>
-  <!-- Pupil -->
-  <circle cx="65" cy="35" r="5" fill="#262633"/>
-  <!-- Eye shine -->
-  <circle cx="67" cy="33" r="2" fill="#fff"/>
+  <ellipse cx="60" cy="38" rx="26" ry="24" fill="#4CAF50"/>
+  <!-- Crest -->
+  <ellipse cx="60" cy="16" rx="6" ry="9" fill="#FF5722"/>
+  <ellipse cx="52" cy="19" rx="5" ry="8" fill="#FF7043" transform="rotate(12 52 19)"/>
+  <ellipse cx="68" cy="19" rx="5" ry="8" fill="#FF7043" transform="rotate(-12 68 19)"/>
+  <!-- Eyes -->
+  <ellipse cx="49" cy="36" rx="8" ry="9" fill="#fff"/>
+  <circle cx="50" cy="36" r="5" fill="#1A1A2E"/>
+  <circle cx="52" cy="34" r="2" fill="#fff"/>
+  <ellipse cx="71" cy="36" rx="8" ry="9" fill="#fff"/>
+  <circle cx="70" cy="36" r="5" fill="#1A1A2E"/>
+  <circle cx="72" cy="34" r="2" fill="#fff"/>
   <!-- Beak -->
-  <polygon points="80,40 96,46 80,52" fill="#FFA726" rx="2"/>
-  <!-- Wing hint -->
-  <ellipse cx="38" cy="62" rx="18" ry="24" fill="#15A39B" transform="rotate(-10 38 62)"/>
-  <!-- Speech bubble -->
-  <rect x="58" y="72" width="40" height="30" rx="10" fill="#fff"/>
-  <!-- Hi! text -->
-  <text x="68" y="93" font-family="Arial,sans-serif" font-weight="bold" font-size="16" fill="#1CB0A8">Hi!</text>
+  <path d="M54,48 L60,56 L66,48 Z" fill="#FF6D00"/>
+  <path d="M54,48 L60,52 L66,48 Z" fill="#FFB300"/>
+  <!-- Cheeks -->
+  <circle cx="42" cy="44" r="5" fill="#FF8A80" opacity="0.5"/>
+  <circle cx="78" cy="44" r="5" fill="#FF8A80" opacity="0.5"/>
+  <!-- Feet -->
+  <rect x="48" y="100" width="10" height="5" rx="2.5" fill="#FF6D00"/>
+  <rect x="62" y="100" width="10" height="5" rx="2.5" fill="#FF6D00"/>
 </svg>
