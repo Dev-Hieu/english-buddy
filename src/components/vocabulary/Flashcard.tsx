@@ -22,13 +22,12 @@ export function Flashcard({ word, onKnow, onReview }: FlashcardProps) {
   return (
     <div className="space-y-4">
       <Card
-        className="cursor-pointer select-none overflow-hidden"
+        className="min-h-[22rem] cursor-pointer select-none overflow-hidden animate-pop"
         onClick={() => setFlipped((f) => !f)}
-        title="Bấm để lật thẻ"
       >
         {!flipped ? (
           <div className="flex flex-col items-center gap-4 p-6">
-            <div className="h-48 w-full overflow-hidden rounded-md bg-secondary">
+            <div className="h-44 w-full overflow-hidden rounded-2xl bg-secondary">
               {word.imageUrl ? (
                 <img src={word.imageUrl} alt="" className="h-full w-full object-cover" />
               ) : (
@@ -38,32 +37,32 @@ export function Flashcard({ word, onKnow, onReview }: FlashcardProps) {
               )}
             </div>
             <h2 className="text-4xl font-black capitalize">{word.word}</h2>
-            <Button type="button" variant="outline" onClick={speak} aria-label="Nghe">
+            <Button type="button" variant="outline" onClick={speak}>
               <Volume2 className="h-5 w-5" /> Nghe
             </Button>
-            <p className="text-sm text-muted-foreground">Bấm vào thẻ để xem nghĩa</p>
+            <p className="text-sm font-bold text-muted-foreground">Bấm vào thẻ để xem nghĩa</p>
           </div>
         ) : (
-          <div className="flex flex-col items-center gap-3 p-6 text-center">
-            <p className="text-3xl font-black text-primary">{word.meaning_vi}</p>
-            {word.phonetic ? <p className="text-muted-foreground">{word.phonetic}</p> : null}
+          <div className="flex min-h-[22rem] flex-col items-center justify-center gap-3 p-6 text-center">
+            <p className="text-4xl font-black text-primary">{word.meaning_vi}</p>
+            {word.phonetic ? <p className="font-bold text-muted-foreground">{word.phonetic}</p> : null}
             {word.example ? (
-              <div className="rounded-md bg-muted p-3">
-                <p className="font-semibold">{word.example}</p>
-                {word.example_vi ? <p className="mt-1 text-sm text-muted-foreground">{word.example_vi}</p> : null}
+              <div className="mt-2 rounded-2xl bg-muted p-3">
+                <p className="font-bold">{word.example}</p>
+                {word.example_vi ? <p className="mt-1 text-sm font-semibold text-muted-foreground">{word.example_vi}</p> : null}
               </div>
             ) : null}
-            <p className="text-sm text-muted-foreground">Bấm thẻ để lật lại</p>
+            <p className="text-sm font-bold text-muted-foreground">Bấm thẻ để lật lại</p>
           </div>
         )}
       </Card>
 
       <div className="grid grid-cols-2 gap-3">
-        <Button type="button" variant="outline" onClick={onReview}>
-          <RotateCcw className="h-4 w-4" /> Cần ôn lại
+        <Button type="button" variant="outline" size="lg" onClick={onReview}>
+          <RotateCcw className="h-5 w-5" /> Cần ôn lại
         </Button>
-        <Button type="button" onClick={onKnow}>
-          <CheckCircle2 className="h-4 w-4" /> Con nhớ rồi
+        <Button type="button" size="lg" onClick={onKnow}>
+          <CheckCircle2 className="h-5 w-5" /> Con nhớ rồi
         </Button>
       </div>
     </div>

@@ -138,11 +138,12 @@ export function App() {
       );
   }
 
-  const tab = ACTIVE_TAB[route.view];
+  // Tab bar chỉ hiện ở các màn "hub"; ẩn khi đang học/chơi/test để tập trung.
+  const showTab = route.view === "home" || route.view === "topics" || route.view === "lookup";
   return (
     <>
-      <div className="pb-24">{content}</div>
-      {tab !== null ? <TabBar active={tab} onSelect={onTab} /> : null}
+      <div className={showTab ? "pb-24" : ""}>{content}</div>
+      {showTab ? <TabBar active={ACTIVE_TAB[route.view]} onSelect={onTab} /> : null}
     </>
   );
 }

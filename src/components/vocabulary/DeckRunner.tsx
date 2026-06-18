@@ -1,9 +1,11 @@
-import { ArrowLeft, PartyPopper } from "lucide-react";
+import { PartyPopper } from "lucide-react";
 import { useState } from "react";
 import type { VocabularyWord } from "@/types";
 import { recordAnswer } from "@/services/progressService";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { ProgressRing } from "@/components/ui/progress";
+import { SessionHeader } from "@/components/layout/SessionHeader";
 import { Flashcard } from "./Flashcard";
 
 interface DeckRunnerProps {
@@ -14,53 +16,42 @@ interface DeckRunnerProps {
   emptyText?: string;
 }
 
-// Chạy 1 bộ flashcard: lật thẻ, "nhớ rồi" (đúng) / "cần ôn" (sai) -> recordAnswer (API).
 export function DeckRunner({ title, studentId, words, onBack, emptyText }: DeckRunnerProps) {
   const [index, setIndex] = useState(0);
   const [known, setKnown] = useState(0);
   const [done, setDone] = useState(false);
 
-  const answer = async (correct: boolean) => {
+  const answer = (correct: boolean) => {
     const word = words[index];
-    if (word) {
-      // Ghi tiến độ; lỗi mạng không chặn việc học (vẫn đi tiếp).
-      recordAnswer(studentId, word.id, correct).catch(() => {});
-    }
+    if (word) recordAnswer(studentId, word.id, correct).catch(() => {});
     if (correct) setKnown((k) => k + 1);
     if (index + 1 >= words.length) setDone(true);
     else setIndex((i) => i + 1);
   };
 
-  const header = (
-    <header className="rounded-lg border border-border bg-white/85 p-5 shadow-soft">
-      <Button type="button" variant="ghost" className="-ml-3" onClick={onBack}>
-        <ArrowLeft className="h-4 w-4" /> Trang chủ
-      </Button>
-      <h1 className="mt-2 text-3xl font-black tracking-tight">{title}</h1>
-    </header>
-  );
-
   if (words.length === 0) {
     return (
-      <main className="mx-auto flex min-h-screen w-full max-w-2xl flex-col gap-6 px-4 py-6">
-        {header}
-        <Card><CardContent className="p-6 text-center text-muted-foreground">{emptyText ?? "Chưa có từ nào."}</CardContent></Card>
+      <main className="mx-auto w-full max-w-xl px-4">
+        <SessionHeader title={title} onClose={onBack} />
+        <Card><CardContent className="p-8 text-center font-bold text-muted-foreground">{emptyText ?? "Chưa có từ nào."}</CardContent></Card>
       </main>
     );
   }
 
   if (done) {
     return (
-      <main className="mx-auto flex min-h-screen w-full max-w-2xl flex-col gap-6 px-4 py-6">
-        {header}
+      <main className="mx-auto w-full max-w-xl px-4">
+        <SessionHeader title={title} onClose={onBack} />
         <Card>
-          <CardContent className="space-y-4 p-8 text-center">
-            <PartyPopper className="mx-auto h-12 w-12 text-primary" />
+          <CardContent className="flex flex-col items-center gap-4 p-8 text-center">
+            <PartyPopper className="h-14 w-14 text-accent" />
             <h2 className="text-2xl font-black">Hoàn thành!</h2>
-            <p className="text-muted-foreground">
-              Con nhớ <span className="font-black text-primary">{known}</span>/{words.length} từ.
-            </p>
-            <Button type="button" size="lg" onClick={onBack}>Về trang chủ</Button>
+            <ProgressRing value={known} max={words.length} size={96} stroke={11}>
+              <span className="text-2xl font-black">{known}</span>
+              <span className="text-xs font-bold text-muted-foreground">/{words.length}</span>
+            </ProgressRing>
+            <p className="font-bold text-muted-foreground">Con nhớ {known}/{words.length} từ. Giỏi lắm!</p>
+            <Button type="button" size="lg" className="w-full" onClick={onBack}>Xong</Button>
           </CardContent>
         </Card>
       </main>
@@ -68,18 +59,10 @@ export function DeckRunner({ title, studentId, words, onBack, emptyText }: DeckR
   }
 
   return (
-    <main className="mx-auto flex min-h-screen w-full max-w-2xl flex-col gap-5 px-4 py-6">
-      {header}
-      <div className="flex items-center justify-between rounded-lg bg-white/75 px-4 py-3 text-sm font-semibold shadow-soft">
-        <span>Thẻ {index + 1} / {words.length}</span>
-        <span className="text-muted-foreground">Đã nhớ: {known}</span>
-      </div>
-      <Flashcard
-        key={words[index].id}
-        word={words[index]}
-        onKnow={() => answer(true)}
-        onReview={() => answer(false)}
-      />
+    <main className="mx-auto w-full max-w-xl px-4">
+      <SessionHeader title={title} onClose={onBack} progress={Math.round((index / words.length) * 100)} />
+      <p className="mb-3 text-center text-sm font-extrabold text-muted-foreground">Thẻ {index + 1} / {words.length}</p>
+      <Flashcard key={words[index].id} word={words[index]} onKnow={() => answer(true)} onReview={() => answer(false)} />
     </main>
   );
 }

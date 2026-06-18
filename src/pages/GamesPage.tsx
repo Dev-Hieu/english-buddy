@@ -1,4 +1,4 @@
-import { ArrowLeft, Ear, Images, Link2, Volume2 } from "lucide-react";
+import { Ear, Images, Link2, PartyPopper, Volume2 } from "lucide-react";
 import { useMemo, useState } from "react";
 import { SEED_VOCABULARY } from "@/data/seedVocabulary";
 import type { Student, VocabularyWord } from "@/types";
@@ -7,6 +7,7 @@ import { speakText } from "@/services/speechService";
 import { cn } from "@/components/ui/cn";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { SessionHeader } from "@/components/layout/SessionHeader";
 
 interface GamesPageProps {
   student: Student;
@@ -33,36 +34,31 @@ export function GamesPage({ student, topicId, onBackHome }: GamesPageProps) {
   }, [topicId]);
 
   const record = (wordId: string, correct: boolean) => recordAnswer(student.id, wordId, correct).catch(() => {});
-
   const back = () => setGame("menu");
-
-  const header = (title: string, onBack: () => void) => (
-    <header className="rounded-lg border border-border bg-white/85 p-5 shadow-soft">
-      <Button type="button" variant="ghost" className="-ml-3" onClick={onBack}>
-        <ArrowLeft className="h-4 w-4" /> {onBack === onBackHome ? "Trang chủ" : "Chọn game"}
-      </Button>
-      <h1 className="mt-2 text-3xl font-black tracking-tight">{title}</h1>
-    </header>
-  );
 
   if (game === "menu") {
     const games = [
-      { id: "match" as const, name: "Ghép từ", desc: "Nối từ tiếng Anh với nghĩa", icon: Link2 },
-      { id: "pick" as const, name: "Chọn ảnh đúng", desc: "Nhìn từ, chọn ảnh", icon: Images },
-      { id: "listen" as const, name: "Nghe và chọn", desc: "Nghe phát âm, chọn từ", icon: Ear },
+      { id: "match" as const, name: "Ghép từ", desc: "Nối từ với nghĩa", icon: Link2, emoji: "🔗" },
+      { id: "pick" as const, name: "Chọn ảnh", desc: "Nhìn từ, chọn ảnh", icon: Images, emoji: "🖼️" },
+      { id: "listen" as const, name: "Nghe & chọn", desc: "Nghe rồi chọn từ", icon: Ear, emoji: "👂" },
     ];
     return (
-      <main className="mx-auto flex min-h-screen w-full max-w-3xl flex-col gap-5 px-4 py-6">
-        {header("Trò chơi", onBackHome)}
-        <div className="grid gap-4 sm:grid-cols-3">
+      <main className="mx-auto w-full max-w-xl px-4">
+        <SessionHeader title="Trò chơi" onClose={onBackHome} />
+        <div className="space-y-3">
           {games.map((g) => (
-            <Card key={g.id} className="cursor-pointer hover:border-primary/60" onClick={() => setGame(g.id)}>
-              <CardContent className="space-y-2 p-5 text-center">
-                <g.icon className="mx-auto h-10 w-10 text-primary" />
-                <h2 className="text-xl font-black">{g.name}</h2>
-                <p className="text-sm text-muted-foreground">{g.desc}</p>
-              </CardContent>
-            </Card>
+            <button
+              key={g.id}
+              type="button"
+              onClick={() => setGame(g.id)}
+              className="flex w-full items-center gap-4 rounded-3xl border border-border/70 bg-card p-4 text-left shadow-card transition-transform active:scale-[0.99]"
+            >
+              <span className="flex h-14 w-14 items-center justify-center rounded-2xl bg-secondary text-3xl">{g.emoji}</span>
+              <span className="flex-1">
+                <span className="block text-lg font-extrabold">{g.name}</span>
+                <span className="block text-sm font-semibold text-muted-foreground">{g.desc}</span>
+              </span>
+            </button>
           ))}
         </div>
       </main>
@@ -70,10 +66,10 @@ export function GamesPage({ student, topicId, onBackHome }: GamesPageProps) {
   }
 
   return (
-    <main className="mx-auto flex min-h-screen w-full max-w-2xl flex-col gap-5 px-4 py-6">
-      {game === "match" && <MatchGame pool={pool} onRecord={record} header={header("Ghép từ", back)} />}
-      {game === "pick" && <PickGame pool={pool} onRecord={record} header={header("Chọn ảnh đúng", back)} />}
-      {game === "listen" && <ListenGame pool={pool} onRecord={record} header={header("Nghe và chọn", back)} />}
+    <main className="mx-auto w-full max-w-xl px-4">
+      {game === "match" && <MatchGame pool={pool} onRecord={record} onClose={back} />}
+      {game === "pick" && <PickGame pool={pool} onRecord={record} onClose={back} />}
+      {game === "listen" && <ListenGame pool={pool} onRecord={record} onClose={back} />}
     </main>
   );
 }
@@ -81,10 +77,22 @@ export function GamesPage({ student, topicId, onBackHome }: GamesPageProps) {
 interface GameProps {
   pool: VocabularyWord[];
   onRecord: (wordId: string, correct: boolean) => void;
-  header: React.ReactNode;
+  onClose: () => void;
 }
 
-function MatchGame({ pool, onRecord, header }: GameProps) {
+function Finished({ onClose }: { onClose: () => void }) {
+  return (
+    <Card>
+      <CardContent className="flex flex-col items-center gap-4 p-8 text-center">
+        <PartyPopper className="h-12 w-12 text-accent" />
+        <p className="text-2xl font-black text-primary">Hoàn thành! 🎉</p>
+        <Button type="button" size="lg" className="w-full" onClick={onClose}>Chơi tiếp</Button>
+      </CardContent>
+    </Card>
+  );
+}
+
+function MatchGame({ pool, onRecord, onClose }: GameProps) {
   const [round] = useState(() => shuffle(pool).slice(0, 5));
   const [vis] = useState(() => shuffle(round));
   const [left, setLeft] = useState<string | null>(null);
@@ -106,30 +114,23 @@ function MatchGame({ pool, onRecord, header }: GameProps) {
   };
 
   const done = matched.size === round.length;
-
   return (
     <>
-      {header}
-      {done ? (
-        <Card><CardContent className="p-8 text-center"><p className="text-2xl font-black text-primary">Ghép đúng hết! 🎉</p></CardContent></Card>
-      ) : (
+      <SessionHeader title="Ghép từ" onClose={onClose} />
+      {done ? <Finished onClose={onClose} /> : (
         <div className="grid grid-cols-2 gap-3">
           <div className="space-y-2">
             {round.map((w) => (
               <Button key={w.id} type="button" variant={left === w.id ? "default" : "outline"} size="lg"
                 className={cn("w-full justify-start capitalize", matched.has(w.id) && "opacity-40")}
-                disabled={matched.has(w.id)} onClick={() => setLeft(w.id)}>
-                {w.word}
-              </Button>
+                disabled={matched.has(w.id)} onClick={() => setLeft(w.id)}>{w.word}</Button>
             ))}
           </div>
           <div className="space-y-2">
             {vis.map((w) => (
               <Button key={w.id} type="button" variant="secondary" size="lg"
-                className={cn("w-full justify-start", matched.has(w.id) && "opacity-40", wrong === w.id && "ring-2 ring-red-400")}
-                disabled={matched.has(w.id)} onClick={() => pickRight(w)}>
-                {w.meaning_vi}
-              </Button>
+                className={cn("w-full justify-start", matched.has(w.id) && "opacity-40", wrong === w.id && "ring-4 ring-red-400")}
+                disabled={matched.has(w.id)} onClick={() => pickRight(w)}>{w.meaning_vi}</Button>
             ))}
           </div>
         </div>
@@ -138,7 +139,7 @@ function MatchGame({ pool, onRecord, header }: GameProps) {
   );
 }
 
-function PickGame({ pool, onRecord, header }: GameProps) {
+function PickGame({ pool, onRecord, onClose }: GameProps) {
   const withImg = useMemo(() => pool.filter((w) => w.imageUrl), [pool]);
   const [n, setN] = useState(0);
   const [picked, setPicked] = useState<string | null>(null);
@@ -151,9 +152,7 @@ function PickGame({ pool, onRecord, header }: GameProps) {
     return { target, opts };
   }, [n, withImg, pool]);
 
-  if (n >= rounds) {
-    return <>{header}<Card><CardContent className="p-8 text-center"><p className="text-2xl font-black text-primary">Hoàn thành! 🎉</p></CardContent></Card></>;
-  }
+  if (n >= rounds) return (<><SessionHeader title="Chọn ảnh" onClose={onClose} /><Finished onClose={onClose} /></>);
 
   const choose = (w: VocabularyWord) => {
     if (picked) return;
@@ -164,15 +163,14 @@ function PickGame({ pool, onRecord, header }: GameProps) {
 
   return (
     <>
-      {header}
+      <SessionHeader title="Chọn ảnh đúng" onClose={onClose} progress={Math.round((n / rounds) * 100)} />
       <Card><CardContent className="space-y-4 p-6">
-        <p className="text-center text-sm font-semibold text-muted-foreground">Vòng {n + 1}/{rounds}</p>
         <h2 className="text-center text-4xl font-black capitalize">{set.target.word}</h2>
         <div className="grid grid-cols-2 gap-3">
           {set.opts.map((w) => {
-            const state = !picked ? "" : w.id === set.target.id ? "ring-4 ring-green-500" : w.id === picked ? "ring-4 ring-red-400" : "opacity-60";
+            const state = !picked ? "" : w.id === set.target.id ? "ring-4 ring-success" : w.id === picked ? "ring-4 ring-red-400" : "opacity-50";
             return (
-              <button key={w.id} type="button" onClick={() => choose(w)} className={cn("overflow-hidden rounded-md border border-border", state)}>
+              <button key={w.id} type="button" onClick={() => choose(w)} className={cn("overflow-hidden rounded-2xl border-2 border-border transition-all active:translate-y-[1px]", state)}>
                 <img src={w.imageUrl} alt="" className="h-32 w-full object-cover" />
               </button>
             );
@@ -183,7 +181,7 @@ function PickGame({ pool, onRecord, header }: GameProps) {
   );
 }
 
-function ListenGame({ pool, onRecord, header }: GameProps) {
+function ListenGame({ pool, onRecord, onClose }: GameProps) {
   const [n, setN] = useState(0);
   const [picked, setPicked] = useState<string | null>(null);
   const rounds = 5;
@@ -194,9 +192,7 @@ function ListenGame({ pool, onRecord, header }: GameProps) {
     return { target, opts };
   }, [n, pool]);
 
-  if (n >= rounds) {
-    return <>{header}<Card><CardContent className="p-8 text-center"><p className="text-2xl font-black text-primary">Hoàn thành! 🎉</p></CardContent></Card></>;
-  }
+  if (n >= rounds) return (<><SessionHeader title="Nghe & chọn" onClose={onClose} /><Finished onClose={onClose} /></>);
 
   const choose = (w: VocabularyWord) => {
     if (picked) return;
@@ -207,21 +203,19 @@ function ListenGame({ pool, onRecord, header }: GameProps) {
 
   return (
     <>
-      {header}
-      <Card><CardContent className="space-y-4 p-6 text-center">
-        <p className="text-sm font-semibold text-muted-foreground">Vòng {n + 1}/{rounds}</p>
-        <Button type="button" size="lg" onClick={() => speakText(set.target.word, set.target.audioUrl)}>
-          <Volume2 className="h-6 w-6" /> Nghe lại
+      <SessionHeader title="Nghe & chọn" onClose={onClose} progress={Math.round((n / rounds) * 100)} />
+      <Card><CardContent className="space-y-5 p-6 text-center">
+        <Button type="button" size="xl" className="w-full" onClick={() => speakText(set.target.word, set.target.audioUrl)}>
+          <Volume2 className="h-7 w-7" /> Nghe lại
         </Button>
         <div className="grid grid-cols-2 gap-3">
           {set.opts.map((w) => {
-            const state = !picked ? "outline" : w.id === set.target.id ? "default" : w.id === picked ? "secondary" : "ghost";
+            const state = !picked ? "" : w.id === set.target.id ? "ring-4 ring-success bg-success text-white" : w.id === picked ? "ring-4 ring-red-400" : "opacity-50";
             return (
-              <Button key={w.id} type="button" variant={state as "outline" | "default" | "secondary" | "ghost"} size="lg"
-                className={cn("capitalize", picked && w.id === set.target.id && "bg-green-600 text-white hover:bg-green-600")}
-                onClick={() => choose(w)}>
+              <button key={w.id} type="button" onClick={() => choose(w)}
+                className={cn("rounded-2xl border-2 border-border bg-card px-4 py-4 text-lg font-extrabold capitalize transition-all active:translate-y-[1px]", state)}>
                 {w.word}
-              </Button>
+              </button>
             );
           })}
         </div>
