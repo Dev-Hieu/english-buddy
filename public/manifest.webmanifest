@@ -1,0 +1,15 @@
+{
+  "name": "English Buddy — Học tiếng Anh vui",
+  "short_name": "English Buddy",
+  "description": "Học tiếng Anh cho trẻ em đến IELTS: từ vựng, ngữ pháp, phát âm, trò chơi.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#ffffff",
+  "theme_color": "#1CB0A8",
+  "lang": "vi",
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
