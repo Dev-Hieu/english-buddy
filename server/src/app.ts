@@ -113,6 +113,13 @@ export function createApp() {
     res.json({ ok: true, studentLimit: limit });
   });
 
+  // ── Bảng xếp hạng (theo XP, mọi học sinh) ──
+  app.get("/api/leaderboard", requireAuth, (_req, res) => {
+    res.json(db.prepare(
+      "SELECT id, name, avatar, COALESCE(xp,0) AS xp, COALESCE(streak,0) AS streak FROM students ORDER BY xp DESC, streak DESC, name LIMIT 50"
+    ).all());
+  });
+
   // ── Nội dung (public) ──
   app.get("/api/topics", (_req, res) => {
     res.json(db.prepare(`SELECT * FROM topics ORDER BY "order"`).all());

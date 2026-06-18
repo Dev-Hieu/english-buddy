@@ -43,3 +43,14 @@ export function listUsers(): Promise<AdminUser[]> {
 export function setStudentLimit(userId: string, studentLimit: number): Promise<{ ok: boolean; studentLimit: number }> {
   return apiRequest(`/api/admin/users/${userId}`, { method: "PUT", body: { studentLimit } });
 }
+
+export interface LeaderEntry {
+  id: string;
+  name: string;
+  avatar: string;
+  xp: number;
+  streak: number;
+}
+export function getLeaderboard(): Promise<LeaderEntry[]> {
+  return apiRequest(`/api/leaderboard`);
+}

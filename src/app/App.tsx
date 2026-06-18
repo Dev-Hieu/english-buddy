@@ -17,12 +17,13 @@ import { GamesPage } from "@/pages/GamesPage";
 import { SpeakingPage } from "@/pages/SpeakingPage";
 import { DashboardPage } from "@/pages/DashboardPage";
 import { MyWordsPage } from "@/pages/MyWordsPage";
+import { LeaderboardPage } from "@/pages/LeaderboardPage";
 import { StudentSelectPage } from "@/pages/StudentSelectPage";
 import { TopicListPage } from "@/pages/TopicListPage";
 
 type View =
   | "student-select" | "admin" | "home" | "topics" | "lesson"
-  | "flashcard" | "review" | "lookup" | "test" | "games" | "speak" | "dashboard" | "mywords";
+  | "flashcard" | "review" | "lookup" | "test" | "games" | "speak" | "dashboard" | "mywords" | "leaderboard";
 
 interface Route { view: View; topicId: string; }
 
@@ -31,7 +32,7 @@ const readSelected = () => (typeof window === "undefined" ? null : localStorage.
 
 const ACTIVE_TAB: Record<View, TabKey | null> = {
   "student-select": null, admin: null, home: "home", topics: "home", lesson: "home", flashcard: "home",
-  review: "review", lookup: "lookup", test: "test", games: "games", speak: "speak", dashboard: null, mywords: null,
+  review: "review", lookup: "lookup", test: "test", games: "games", speak: "speak", dashboard: null, mywords: null, leaderboard: null,
 };
 
 export function App() {
@@ -180,6 +181,9 @@ export function App() {
       break;
     case "mywords":
       content = <MyWordsPage student={student} onBackHome={() => navigate("home")} />;
+      break;
+    case "leaderboard":
+      content = <LeaderboardPage currentStudentId={student.id} onBackHome={() => navigate("home")} />;
       break;
     default:
       content = (

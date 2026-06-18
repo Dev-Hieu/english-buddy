@@ -1,4 +1,4 @@
-import { BarChart3, BookMarked, ChevronRight, Flame, LogOut, Play, Star, UserRound } from "lucide-react";
+import { BarChart3, BookMarked, ChevronRight, Flame, LogOut, Play, Star, Trophy, UserRound } from "lucide-react";
 import { SEED_TOPICS } from "@/data/seedTopics";
 import { SEED_VOCABULARY } from "@/data/seedVocabulary";
 import type { Student } from "@/types";
@@ -135,8 +135,22 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
         </div>
       </section>
 
-      {/* My Words + Báo cáo phụ huynh */}
+      {/* My Words + Xếp hạng + Báo cáo phụ huynh */}
       <section className="mt-6 space-y-3">
+        <button
+          type="button"
+          onClick={() => onNavigate("leaderboard")}
+          className="flex w-full items-center gap-3 rounded-3xl border border-border/70 bg-card p-4 shadow-card transition-transform active:scale-[0.99]"
+        >
+          <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-accent/15 text-accent">
+            <Trophy className="h-5 w-5" />
+          </span>
+          <span className="flex-1 text-left">
+            <span className="block font-extrabold">Bảng xếp hạng</span>
+            <span className="block text-sm font-semibold text-muted-foreground">Thi đua điểm XP với các bạn</span>
+          </span>
+          <ChevronRight className="h-5 w-5 text-muted-foreground" />
+        </button>
         <button
           type="button"
           onClick={() => onNavigate("mywords")}
