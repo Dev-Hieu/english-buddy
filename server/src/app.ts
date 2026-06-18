@@ -158,18 +158,21 @@ export function createApp() {
     res.json({ ok: true, wordId, url: url ?? "" });
   });
 
-  // ── Proxy dịch (MyMemory en->vi) + cache trong DB ──
+  // ── Proxy dịch (MyMemory) 2 chiều + cache trong DB ──
   app.get("/api/translate", async (req, res) => {
     const text = String(req.query.text || "").trim();
+    const from = String(req.query.from || "en") === "vi" ? "vi" : "en";
+    const to = from === "vi" ? "en" : (String(req.query.to || "vi") === "en" ? "en" : "vi");
     if (!text) return res.status(400).json({ error: "thiếu text" });
-    const cached = db.prepare("SELECT translation FROM translation_cache WHERE text = ?").get(text) as any;
+    const cacheKey = `${from}|${to}|${text}`; // cache theo cả hướng dịch
+    const cached = db.prepare("SELECT translation FROM translation_cache WHERE text = ?").get(cacheKey) as any;
     if (cached) return res.json({ translation: cached.translation });
     try {
-      const url = `https://api.mymemory.translated.net/get?q=${encodeURIComponent(text)}&langpair=en|vi`;
+      const url = `https://api.mymemory.translated.net/get?q=${encodeURIComponent(text)}&langpair=${from}|${to}`;
       const r = await fetch(url);
       const data: any = await r.json();
       const translation = data?.responseData?.translatedText || "";
-      db.prepare("INSERT OR REPLACE INTO translation_cache (text, translation) VALUES (?, ?)").run(text, translation);
+      db.prepare("INSERT OR REPLACE INTO translation_cache (text, translation) VALUES (?, ?)").run(cacheKey, translation);
       res.json({ translation });
     } catch {
       res.status(502).json({ error: "translate proxy lỗi" });

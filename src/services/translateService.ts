@@ -1,12 +1,19 @@
 import { apiRequest } from "./api";
 
-// Gọi /api/translate (server proxy MyMemory en->vi, có cache) — public endpoint.
-export async function translateToVi(text: string): Promise<string> {
+export type Lang = "en" | "vi";
+
+// Dịch 2 chiều qua /api/translate (server proxy MyMemory, có cache) — public endpoint.
+export async function translate(text: string, from: Lang, to: Lang): Promise<string> {
   const q = text.trim();
   if (!q) return "";
   const data = await apiRequest<{ translation: string }>(
-    `/api/translate?text=${encodeURIComponent(q)}`,
+    `/api/translate?text=${encodeURIComponent(q)}&from=${from}&to=${to}`,
     { auth: false }
   );
   return data.translation ?? "";
+}
+
+// Tiện ích cho tra từ: Anh -> Việt.
+export function translateToVi(text: string): Promise<string> {
+  return translate(text, "en", "vi");
 }
