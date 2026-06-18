@@ -50,4 +50,6 @@ export function initSchema(): void {
   try { db.exec("ALTER TABLE lookup_history ADD COLUMN meaning TEXT"); } catch { /* đã có */ }
   try { db.exec("ALTER TABLE lookup_history ADD COLUMN phonetic TEXT"); } catch { /* đã có */ }
   try { db.exec("ALTER TABLE lookup_history ADD COLUMN imageUrl TEXT"); } catch { /* đã có */ }
+  // Chuẩn hoá level cũ ("beginner"... ) về tập CEFR hợp lệ để bộ lọc theo cấp hoạt động.
+  try { db.exec("UPDATE students SET level='a1' WHERE level IS NULL OR level NOT IN ('kids','a1','a2','b1','b2','c1')"); } catch { /* bỏ qua */ }
 }

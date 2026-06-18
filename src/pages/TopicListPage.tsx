@@ -16,7 +16,7 @@ interface TopicListPageProps {
 
 export function TopicListPage({ student, studiedWordIds, onStartTopic }: TopicListPageProps) {
   const learned = new Set(studiedWordIds);
-  const [level, setLevel] = useState<Level | "all">((student.level as Level) ?? "all");
+  const [level, setLevel] = useState<Level | "all">(LEVEL_ORDER.includes(student.level as Level) ? (student.level as Level) : "all");
   // Lọc theo từ Ở CẤP đó (không theo level của chủ đề) -> "Trẻ em" vẫn hiện các chủ đề có từ kids.
   const wordsOf = (topicId: string) =>
     SEED_VOCABULARY.filter((w) => w.topicIds.includes(topicId) && (level === "all" || w.level === level));

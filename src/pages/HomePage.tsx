@@ -2,7 +2,7 @@ import { BarChart3, BookMarked, ChevronRight, Flame, LogOut, Play, RotateCcw, St
 import type { ComponentType } from "react";
 import { SEED_TOPICS } from "@/data/seedTopics";
 import { SEED_VOCABULARY } from "@/data/seedVocabulary";
-import type { Student } from "@/types";
+import { LEVEL_ORDER, type Level, type Student } from "@/types";
 import { Button } from "@/components/ui/button";
 import { ProgressBar, ProgressRing } from "@/components/ui/progress";
 import { ThemePicker } from "@/components/ui/ThemePicker";
@@ -56,8 +56,8 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
   const goal = student.dailyGoal || 10;
   const goalReached = learnedToday >= goal;
   const level = levelOf(xp);
-  // Lọc chủ đề theo trình độ đã chọn của bé (chủ đề có chứa từ ở cấp đó).
-  const learnLevel = (student.level as string) || "all";
+  // Lọc chủ đề theo trình độ đã chọn của bé (chủ đề có chứa từ ở cấp đó). Level lạ -> "all".
+  const learnLevel = LEVEL_ORDER.includes(student.level as Level) ? (student.level as string) : "all";
   const wordsOf = (topicId: string) =>
     SEED_VOCABULARY.filter((w) => w.topicIds.includes(topicId) && (learnLevel === "all" || w.level === learnLevel));
   const topicsAtLevel = SEED_TOPICS.filter((t) => wordsOf(t.id).length > 0);
