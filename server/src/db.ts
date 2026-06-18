@@ -10,6 +10,10 @@ db.pragma("journal_mode = WAL");
 
 export function initSchema(): void {
   db.exec(`
+    CREATE TABLE IF NOT EXISTS users (
+      id TEXT PRIMARY KEY, email TEXT UNIQUE, passwordHash TEXT, name TEXT,
+      role TEXT, createdAt INTEGER
+    );
     CREATE TABLE IF NOT EXISTS students (
       id TEXT PRIMARY KEY, parentId TEXT, name TEXT, grade INTEGER, level TEXT,
       avatar TEXT, dailyGoal INTEGER, xp INTEGER, streak INTEGER, createdAt INTEGER,

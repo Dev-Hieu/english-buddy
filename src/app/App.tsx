@@ -1,12 +1,13 @@
 import { useCallback, useEffect, useState } from "react";
-import { SEED_STUDENTS } from "@/data/seedStudents";
-import type { StudentVocabularyProgress } from "@/types";
-import { isLoggedIn, logout } from "@/services/authService";
+import type { Student, StudentVocabularyProgress } from "@/types";
+import { getUser, isLoggedIn, logout, type AuthUser } from "@/services/authService";
+import { createStudent, deleteStudent, listStudents, type NewStudent } from "@/services/studentService";
 import { getStudentProgress, recordAnswer } from "@/services/progressService";
 import { getStudent } from "@/services/studentService";
 import { TabBar, type TabKey } from "@/components/layout/TabBar";
 import { HomePage } from "@/pages/HomePage";
-import { LoginPage } from "@/pages/LoginPage";
+import { AuthPage } from "@/pages/AuthPage";
+import { AdminPage } from "@/pages/AdminPage";
 import { LessonPage } from "@/pages/LessonPage";
 import { FlashcardPage } from "@/pages/FlashcardPage";
 import { ReviewPage } from "@/pages/ReviewPage";
@@ -20,41 +21,44 @@ import { StudentSelectPage } from "@/pages/StudentSelectPage";
 import { TopicListPage } from "@/pages/TopicListPage";
 
 type View =
-  | "student-select" | "home" | "topics" | "lesson"
+  | "student-select" | "admin" | "home" | "topics" | "lesson"
   | "flashcard" | "review" | "lookup" | "test" | "games" | "speak" | "dashboard" | "mywords";
 
-interface Route {
-  view: View;
-  topicId: string;
-}
+interface Route { view: View; topicId: string; }
 
 const SELECTED_STUDENT_KEY = "english-buddy:selected-student";
 const readSelected = () => (typeof window === "undefined" ? null : localStorage.getItem(SELECTED_STUDENT_KEY));
 
 const ACTIVE_TAB: Record<View, TabKey | null> = {
-  "student-select": null, home: "home", topics: "home", lesson: "home", flashcard: "home",
+  "student-select": null, admin: null, home: "home", topics: "home", lesson: "home", flashcard: "home",
   review: "review", lookup: "lookup", test: "test", games: "games", speak: "speak", dashboard: null, mywords: null,
 };
 
 export function App() {
-  const [authed, setAuthed] = useState(isLoggedIn());
+  const [user, setUser] = useState<AuthUser | null>(isLoggedIn() ? getUser() : null);
+  const [students, setStudents] = useState<Student[]>([]);
   const [selectedStudentId, setSelectedStudentId] = useState<string | null>(readSelected);
   const [route, setRoute] = useState<Route>({ view: "home", topicId: "topic_food" });
   const [progress, setProgress] = useState<StudentVocabularyProgress[]>([]);
   const [streak, setStreak] = useState(0);
   const [xp, setXp] = useState(0);
 
-  const student = SEED_STUDENTS.find((s) => s.id === selectedStudentId) ?? null;
+  const student = students.find((s) => s.id === selectedStudentId) ?? null;
+
+  const loadStudents = useCallback(() => {
+    if (!user) return;
+    listStudents().then(setStudents).catch(() => {});
+  }, [user]);
+
+  useEffect(() => { loadStudents(); }, [loadStudents]);
 
   const loadProgress = useCallback(() => {
-    if (!authed || !selectedStudentId) return;
+    if (!user || !selectedStudentId) return;
     getStudentProgress(selectedStudentId).then(setProgress).catch(() => {});
     getStudent(selectedStudentId).then((s) => { setStreak(s.streak ?? 0); setXp(s.xp ?? 0); }).catch(() => {});
-  }, [authed, selectedStudentId]);
+  }, [user, selectedStudentId]);
 
-  useEffect(() => {
-    loadProgress();
-  }, [loadProgress]);
+  useEffect(() => { loadProgress(); }, [loadProgress]);
 
   const navigate = (view: View, topicId = route.topicId) => {
     setRoute({ view, topicId });
@@ -68,7 +72,16 @@ export function App() {
     setRoute({ view: "home", topicId: "topic_food" });
   };
 
-  // Ghi 1 lần trả lời cho 1 từ (đúng = nhớ rồi, sai = cần ôn lại). Optimistic + đồng bộ DB.
+  const addStudent = async (data: NewStudent) => {
+    const s = await createStudent(data);
+    setStudents((prev) => [...prev, s]);
+  };
+  const removeStudent = async (id: string) => {
+    await deleteStudent(id);
+    setStudents((prev) => prev.filter((s) => s.id !== id));
+    if (selectedStudentId === id) { setSelectedStudentId(null); localStorage.removeItem(SELECTED_STUDENT_KEY); }
+  };
+
   const markWord = (wordId: string, correct: boolean) => {
     if (!student) return;
     setProgress((prev) => {
@@ -86,7 +99,9 @@ export function App() {
 
   const doLogout = () => {
     logout();
-    setAuthed(false);
+    setUser(null);
+    setStudents([]);
+    setSelectedStudentId(null);
   };
 
   const onTab = (key: TabKey) => {
@@ -97,10 +112,29 @@ export function App() {
     else navigate(key);
   };
 
-  if (!authed) return <LoginPage onLogin={() => { setAuthed(true); loadProgress(); }} />;
+  // ── Chưa đăng nhập ──
+  if (!user) {
+    return <AuthPage onAuthed={(u) => { setUser(u); }} />;
+  }
 
+  if (route.view === "admin") {
+    return <AdminPage onBack={() => navigate("student-select")} />;
+  }
+
+  // ── Chưa chọn bé ──
   if (!student || route.view === "student-select") {
-    return <StudentSelectPage selectedStudentId={selectedStudentId} onSelectStudent={selectStudent} />;
+    return (
+      <StudentSelectPage
+        students={students}
+        user={user}
+        selectedStudentId={selectedStudentId}
+        onSelectStudent={selectStudent}
+        onAddStudent={addStudent}
+        onDeleteStudent={removeStudent}
+        onLogout={doLogout}
+        onOpenAdmin={() => setRoute({ view: "admin", topicId: "topic_food" })}
+      />
+    );
   }
 
   const studiedWordIds = progress.filter((p) => p.mastery > 0).map((p) => p.wordId);
@@ -134,7 +168,7 @@ export function App() {
       content = <SpeakingPage student={student} topicId={route.topicId} onBackHome={() => navigate("home")} />;
       break;
     case "dashboard":
-      content = <DashboardPage onBackHome={() => navigate("home")} />;
+      content = <DashboardPage students={students} onBackHome={() => navigate("home")} />;
       break;
     case "mywords":
       content = <MyWordsPage student={student} onBackHome={() => navigate("home")} />;
@@ -155,7 +189,6 @@ export function App() {
       );
   }
 
-  // Tab bar chỉ hiện ở các màn "hub"; ẩn khi đang học/chơi/test để tập trung.
   const showTab = route.view === "home" || route.view === "topics" || route.view === "lookup";
   return (
     <>

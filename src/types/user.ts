@@ -1,6 +1,6 @@
 // Đồng bộ với docs/CONTRACTS.md §1 (Contracts version 1)
 
-export type Role = "parent";
+export type Role = "parent" | "admin";
 
 export interface User {
   uid: string;

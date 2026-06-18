@@ -65,6 +65,18 @@ Theo yêu cầu "DB riêng cho chủ động". Dựng `server/` (Node + Express 
 
 ---
 
+## D-012 — Đa người dùng (giai đoạn 1): tài khoản + cô lập dữ liệu
+**Ngày:** 2026-06-18 · **Trạng thái:** ✅ Chốt (anh Hieu)
+Mở rộng từ "1 gia đình" sang nhiều người dùng:
+- **Tài khoản**: tự đăng ký email + mật khẩu (scrypt hash). Token stateless HMAC (sống qua restart).
+- **Vai trò**: `parent` (quản bé của mình) + `admin` (xem/quản mọi tài khoản qua `/api/admin/users`).
+- **Cô lập dữ liệu**: mỗi `student` có `parentId = users.id`; mọi API student/progress/quiz/lookup kiểm tra quyền sở hữu (admin bỏ qua).
+- **Quản lý bé động**: thêm/sửa/xoá hồ sơ bé (CRUD `/api/students`), bỏ 2 bé cứng. Seed sẵn 1 phụ huynh demo (giữ Bảo Ngọc/Bảo Nam) + 1 admin (mật khẩu 123456).
+- Thay `PARENT_PASSWORD` bằng `AUTH_SECRET` (ký token).
+**Đã verify:** đăng ký/đăng nhập, cô lập (user khác → 403), admin liệt kê users, phụ huynh gọi admin → 403.
+
+---
+
 ## Đang chờ chốt
 - **Đăng nhập:** đã chốt qua D-010 — dùng **1 mật khẩu phụ huynh** (đổi `PARENT_PASSWORD` trong `server/.env`). T-010 (LoginPage) gọi `authService.login(password)`.
 - `M-002`: nội dung seed — Claude đã soạn nháp toàn bộ ~100 từ (chờ anh review chất lượng).

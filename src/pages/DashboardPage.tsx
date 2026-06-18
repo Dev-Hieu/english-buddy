@@ -1,9 +1,8 @@
 import { Loader2 } from "lucide-react";
 import { useEffect, useState } from "react";
-import { SEED_STUDENTS } from "@/data/seedStudents";
 import { SEED_TOPICS } from "@/data/seedTopics";
 import { SEED_VOCABULARY } from "@/data/seedVocabulary";
-import type { QuizResult, StudentVocabularyProgress } from "@/types";
+import type { QuizResult, Student, StudentVocabularyProgress } from "@/types";
 import { getStudentProgress } from "@/services/progressService";
 import { getStudent } from "@/services/studentService";
 import { getQuizResults } from "@/services/quizService";
@@ -13,6 +12,7 @@ import { avatarEmoji } from "@/components/ui/emoji";
 import { levelOf } from "@/components/ui/badges";
 
 interface DashboardPageProps {
+  students: Student[];
   onBackHome: () => void;
 }
 
@@ -60,15 +60,15 @@ async function loadStats(id: string, name: string, avatar: string): Promise<Stud
   };
 }
 
-export function DashboardPage({ onBackHome }: DashboardPageProps) {
+export function DashboardPage({ students, onBackHome }: DashboardPageProps) {
   const [stats, setStats] = useState<StudentStats[] | null>(null);
 
   useEffect(() => {
     let alive = true;
-    Promise.all(SEED_STUDENTS.map((s) => loadStats(s.id, s.name, s.avatar)))
+    Promise.all(students.map((s) => loadStats(s.id, s.name, s.avatar)))
       .then((r) => alive && setStats(r)).catch(() => alive && setStats([]));
     return () => { alive = false; };
-  }, []);
+  }, [students]);
 
   return (
     <main className="mx-auto w-full max-w-2xl px-4">
