@@ -2,7 +2,7 @@ import { BarChart3, BookMarked, ChevronRight, Flame, LogOut, Play, RotateCcw, St
 import type { ComponentType } from "react";
 import { SEED_TOPICS } from "@/data/seedTopics";
 import { SEED_VOCABULARY } from "@/data/seedVocabulary";
-import { LEVEL_ORDER, type Level, type Student } from "@/types";
+import { LEVEL_LABELS, LEVEL_ORDER, type Level, type Student } from "@/types";
 import { Button } from "@/components/ui/button";
 import { ProgressBar, ProgressRing } from "@/components/ui/progress";
 import { ThemePicker } from "@/components/ui/ThemePicker";
@@ -57,7 +57,9 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
   const goalReached = learnedToday >= goal;
   const level = levelOf(xp);
   // Lọc chủ đề theo trình độ đã chọn của bé (chủ đề có chứa từ ở cấp đó). Level lạ -> "all".
-  const learnLevel = LEVEL_ORDER.includes(student.level as Level) ? (student.level as string) : "all";
+  const validLevel = LEVEL_ORDER.includes(student.level as Level);
+  const learnLevel = validLevel ? (student.level as string) : "all";
+  const levelLabel = validLevel ? LEVEL_LABELS[student.level as Level] : null;
   const wordsOf = (topicId: string) =>
     SEED_VOCABULARY.filter((w) => w.topicIds.includes(topicId) && (learnLevel === "all" || w.level === learnLevel));
   const topicsAtLevel = SEED_TOPICS.filter((t) => wordsOf(t.id).length > 0);
@@ -87,7 +89,9 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
               {student.name}
               <span className="rounded-full bg-primary px-2 py-0.5 text-xs font-extrabold text-primary-foreground">Lv {level}</span>
             </p>
-            <p className="text-sm font-semibold text-muted-foreground">Lớp {student.grade}</p>
+            <p className="text-sm font-semibold text-muted-foreground">
+              Lớp {student.grade}{levelLabel ? <> · <span className="font-extrabold text-primary">{levelLabel}</span></> : null}
+            </p>
           </div>
         </div>
         <div className="flex items-center gap-2">
@@ -168,11 +172,12 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
               >
                 <div className="flex items-center justify-between">
                   <span className="text-3xl">{topicEmoji(topic.id)}</span>
-                  <span className="text-xs font-extrabold text-muted-foreground">{pct}%</span>
+                  <span className="rounded-full bg-secondary px-2 py-0.5 text-xs font-extrabold text-secondary-foreground">{words.length} từ</span>
                 </div>
                 <p className="mt-2 font-extrabold leading-tight">{topic.name}</p>
                 <p className="text-sm font-semibold text-muted-foreground">{topic.name_vi}</p>
                 <ProgressBar value={pct} className="mt-3 h-2" />
+                <p className="mt-1 text-xs font-bold text-muted-foreground">Đã học {done}/{words.length}</p>
               </button>
             );
           })}
