@@ -1,4 +1,5 @@
 import type { Level, VocabularyWord } from "../../types";
+import { IMAGE_URLS } from "../seedImages";
 
 const CREATED = Date.UTC(2026, 5, 18);
 
@@ -17,6 +18,6 @@ export function mk(
 ): VocabularyWord {
   return {
     id, word, phonetic, meaning_vi, meaning_en, example, example_vi,
-    topicIds, level, imageUrl: "", audioUrl: "", source: "seed", createdAt: CREATED,
+    topicIds, level, imageUrl: IMAGE_URLS[id] ?? "", audioUrl: "", source: "seed", createdAt: CREATED,
   };
 }

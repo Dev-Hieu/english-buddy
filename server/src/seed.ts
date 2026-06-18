@@ -35,10 +35,13 @@ export function seedAll(): void {
      VALUES (@id, @email, @passwordHash, @name, @role, @createdAt, @studentLimit)`
   );
 
+  // Giữ ảnh đã có sẵn trong DB (vd do imageWorker lấy) nếu seed không có ảnh cho từ đó.
+  const getImg = db.prepare("SELECT imageUrl FROM vocabulary WHERE id = ?");
   const tx = db.transaction(() => {
     for (const u of SEED_USERS) insUser.run({ ...u, passwordHash: hashPassword("123456"), createdAt: Date.now() });
     for (const t of SEED_TOPICS) insTopic.run(t);
     for (const w of SEED_VOCABULARY) {
+      const existing = w.imageUrl ? "" : ((getImg.get(w.id) as { imageUrl?: string } | undefined)?.imageUrl ?? "");
       insWord.run({
         ...w,
         phonetic: w.phonetic ?? null,
@@ -46,6 +49,7 @@ export function seedAll(): void {
         example: w.example ?? null,
         example_vi: w.example_vi ?? null,
         audioUrl: w.audioUrl ?? null,
+        imageUrl: w.imageUrl || existing,
         topicIds: JSON.stringify(w.topicIds),
       });
     }
