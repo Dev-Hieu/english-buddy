@@ -1,109 +1,125 @@
-import { BarChart3, BookOpen, Gamepad2, GraduationCap, LogOut, Search, Sparkles, UserRound } from "lucide-react";
+import { BarChart3, ChevronRight, Flame, LogOut, Play, Star, UserRound } from "lucide-react";
 import { SEED_TOPICS } from "@/data/seedTopics";
 import { SEED_VOCABULARY } from "@/data/seedVocabulary";
 import type { Student } from "@/types";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { WordCard } from "@/components/vocabulary/WordCard";
+import { ProgressBar, ProgressRing } from "@/components/ui/progress";
+import { avatarEmoji, topicEmoji } from "@/components/ui/emoji";
 
 type Nav = (view: string, topicId?: string) => void;
 
-const foodWords = SEED_VOCABULARY.filter((word) => word.topicIds.includes("topic_food"));
-const firstLessonWords = foodWords.slice(0, 3);
-
 interface HomePageProps {
   student: Student;
+  studiedWordIds: string[];
+  learnedTotal: number;
+  learnedToday: number;
   onChangeStudent: () => void;
   onLogout: () => void;
   onNavigate: Nav;
 }
 
-export function HomePage({ student, onChangeStudent, onLogout, onNavigate }: HomePageProps) {
-  const actions: { label: string; icon: typeof BookOpen; go: () => void; primary?: boolean }[] = [
-    { label: "Học từ", icon: BookOpen, go: () => onNavigate("topics"), primary: true },
-    { label: "Tra từ", icon: Search, go: () => onNavigate("lookup") },
-    { label: "Ôn tập", icon: Sparkles, go: () => onNavigate("review") },
-    { label: "Game", icon: Gamepad2, go: () => onNavigate("games", "topic_food") },
-    { label: "Test", icon: GraduationCap, go: () => onNavigate("test", "topic_food") },
-  ];
+export function HomePage({ student, studiedWordIds, learnedTotal, learnedToday, onChangeStudent, onLogout, onNavigate }: HomePageProps) {
+  const learned = new Set(studiedWordIds);
+  const goal = student.dailyGoal || 10;
+  const goalReached = learnedToday >= goal;
 
   return (
-    <main className="mx-auto flex min-h-screen w-full max-w-6xl flex-col gap-8 px-4 py-6 sm:px-6 lg:px-8">
-      <header className="flex flex-col gap-4 rounded-lg border border-border bg-white/80 p-5 shadow-soft backdrop-blur sm:flex-row sm:items-center sm:justify-between">
-        <div>
-          <p className="text-sm font-semibold text-primary">English Buddy · {student.name}</p>
-          <h1 className="mt-1 text-3xl font-black tracking-tight sm:text-4xl">Hôm nay học gì nào?</h1>
-          <p className="mt-2 max-w-2xl text-muted-foreground">
-            Chọn chủ đề để học từ mới, ôn lại từ cũ, chơi game hoặc làm bài test.
-          </p>
-        </div>
-        <div className="flex flex-col gap-3 rounded-lg bg-secondary px-4 py-3 text-secondary-foreground">
+    <main className="mx-auto w-full max-w-2xl px-4 pt-5">
+      {/* App bar */}
+      <header className="flex items-center justify-between">
+        <div className="flex items-center gap-3">
+          <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-secondary text-2xl shadow-card">
+            {avatarEmoji(student.avatar)}
+          </div>
           <div>
-            <p className="text-sm font-semibold">Mục tiêu hôm nay</p>
-            <p className="text-2xl font-black">{student.dailyGoal} từ</p>
+            <p className="text-lg font-extrabold leading-tight">{student.name}</p>
+            <p className="text-sm font-semibold text-muted-foreground">Lớp {student.grade}</p>
           </div>
-          <div className="flex gap-2">
-            <Button type="button" size="sm" variant="outline" onClick={onChangeStudent}>
-              <UserRound className="h-4 w-4" /> Đổi bé
-            </Button>
-            <Button type="button" size="sm" variant="outline" onClick={onLogout}>
-              <LogOut className="h-4 w-4" /> Thoát
-            </Button>
-          </div>
+        </div>
+        <div className="flex items-center gap-2">
+          <span className="flex items-center gap-1 rounded-full bg-accent/15 px-3 py-1.5 text-sm font-extrabold text-accent">
+            <Flame className="h-4 w-4" /> {student.streak}
+          </span>
+          <span className="flex items-center gap-1 rounded-full bg-secondary px-3 py-1.5 text-sm font-extrabold text-secondary-foreground">
+            <Star className="h-4 w-4" /> {learnedTotal}
+          </span>
+          <Button type="button" size="icon" variant="outline" aria-label="Đổi bé" onClick={onChangeStudent}>
+            <UserRound className="h-5 w-5" />
+          </Button>
+          <Button type="button" size="icon" variant="ghost" aria-label="Thoát" onClick={onLogout}>
+            <LogOut className="h-5 w-5" />
+          </Button>
         </div>
       </header>
 
-      <section className="grid gap-3 sm:grid-cols-5">
-        {actions.map((action) => (
-          <Button
-            key={action.label}
-            type="button"
-            variant={action.primary ? "default" : "outline"}
-            size="lg"
-            className={action.primary ? "h-14" : "h-14 bg-white"}
-            onClick={action.go}
-          >
-            <action.icon className={action.primary ? "h-5 w-5" : "h-5 w-5 text-primary"} />
-            {action.label}
-          </Button>
-        ))}
-      </section>
-
-      <section className="grid gap-4 md:grid-cols-[1fr_auto] md:items-center">
-        <div>
-          <h2 className="text-xl font-black">Bắt đầu nhanh</h2>
-          <p className="text-muted-foreground">Chọn một chủ đề bên dưới để vào học ngay.</p>
+      {/* Hero: mục tiêu hôm nay */}
+      <section className="mt-5 overflow-hidden rounded-3xl bg-gradient-to-br from-primary to-success p-5 text-primary-foreground shadow-soft">
+        <div className="flex items-center gap-5">
+          <ProgressRing value={learnedToday} max={goal} size={92} stroke={10}>
+            <span className="text-2xl font-black leading-none">{learnedToday}</span>
+            <span className="text-[11px] font-bold opacity-90">/{goal}</span>
+          </ProgressRing>
+          <div className="flex-1">
+            <p className="text-sm font-bold opacity-90">Mục tiêu hôm nay</p>
+            <h1 className="text-2xl font-black leading-tight">
+              {goalReached ? "Hoàn thành rồi! 🎉" : `Học ${goal - learnedToday} từ nữa nào`}
+            </h1>
+          </div>
         </div>
-        <Button type="button" variant="secondary" size="lg" onClick={() => onNavigate("dashboard")}>
-          <BarChart3 className="h-5 w-5" /> Bảng theo dõi (phụ huynh)
+        <Button type="button" variant="accent" size="lg" className="mt-4 w-full" onClick={() => onNavigate("topics")}>
+          <Play className="h-5 w-5" /> Học tiếp
         </Button>
       </section>
 
-      <section className="grid gap-5 lg:grid-cols-[1fr_18rem]">
-        <div className="grid gap-4 sm:grid-cols-3">
-          {firstLessonWords.map((word) => (
-            <WordCard key={word.id} word={word} compact />
-          ))}
+      {/* Chủ đề */}
+      <section className="mt-6">
+        <div className="mb-3 flex items-center justify-between">
+          <h2 className="text-xl font-extrabold">Chủ đề</h2>
+          <button type="button" className="flex items-center text-sm font-bold text-primary" onClick={() => onNavigate("topics")}>
+            Tất cả <ChevronRight className="h-4 w-4" />
+          </button>
         </div>
-
-        <Card>
-          <CardHeader>
-            <CardTitle>10 chủ đề</CardTitle>
-          </CardHeader>
-          <CardContent className="space-y-2">
-            {SEED_TOPICS.map((topic) => (
+        <div className="grid grid-cols-2 gap-3">
+          {SEED_TOPICS.map((topic) => {
+            const words = SEED_VOCABULARY.filter((w) => w.topicIds.includes(topic.id));
+            const done = words.filter((w) => learned.has(w.id)).length;
+            const pct = words.length ? Math.round((done / words.length) * 100) : 0;
+            return (
               <button
                 key={topic.id}
                 type="button"
-                className="flex w-full items-center justify-between rounded-md bg-muted px-3 py-2 text-left transition-colors hover:bg-secondary"
                 onClick={() => onNavigate("lesson", topic.id)}
+                className="rounded-3xl border border-border/70 bg-card p-4 text-left shadow-card transition-transform active:scale-[0.98]"
               >
-                <span className="font-semibold">{topic.name}</span>
-                <span className="text-sm text-muted-foreground">{topic.name_vi}</span>
+                <div className="flex items-center justify-between">
+                  <span className="text-3xl">{topicEmoji(topic.id)}</span>
+                  <span className="text-xs font-extrabold text-muted-foreground">{pct}%</span>
+                </div>
+                <p className="mt-2 font-extrabold leading-tight">{topic.name}</p>
+                <p className="text-sm font-semibold text-muted-foreground">{topic.name_vi}</p>
+                <ProgressBar value={pct} className="mt-3 h-2" />
               </button>
-            ))}
-          </CardContent>
-        </Card>
+            );
+          })}
+        </div>
+      </section>
+
+      {/* Báo cáo phụ huynh */}
+      <section className="mt-6">
+        <button
+          type="button"
+          onClick={() => onNavigate("dashboard")}
+          className="flex w-full items-center gap-3 rounded-3xl border border-border/70 bg-card p-4 shadow-card transition-transform active:scale-[0.99]"
+        >
+          <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-secondary text-secondary-foreground">
+            <BarChart3 className="h-5 w-5" />
+          </span>
+          <span className="flex-1 text-left">
+            <span className="block font-extrabold">Bảng theo dõi</span>
+            <span className="block text-sm font-semibold text-muted-foreground">Tiến độ của các bé (phụ huynh)</span>
+          </span>
+          <ChevronRight className="h-5 w-5 text-muted-foreground" />
+        </button>
       </section>
     </main>
   );

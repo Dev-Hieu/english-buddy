@@ -3,6 +3,7 @@ import { SEED_STUDENTS } from "@/data/seedStudents";
 import type { StudentVocabularyProgress } from "@/types";
 import { isLoggedIn, logout } from "@/services/authService";
 import { getStudentProgress, recordAnswer } from "@/services/progressService";
+import { TabBar, type TabKey } from "@/components/layout/TabBar";
 import { HomePage } from "@/pages/HomePage";
 import { LoginPage } from "@/pages/LoginPage";
 import { LessonPage } from "@/pages/LessonPage";
@@ -27,11 +28,15 @@ interface Route {
 const SELECTED_STUDENT_KEY = "english-buddy:selected-student";
 const readSelected = () => (typeof window === "undefined" ? null : localStorage.getItem(SELECTED_STUDENT_KEY));
 
+const ACTIVE_TAB: Record<View, TabKey | null> = {
+  "student-select": null, home: "home", topics: "home", lesson: "home", flashcard: "home",
+  review: "review", lookup: "lookup", test: "test", games: "games", dashboard: null,
+};
+
 export function App() {
   const [authed, setAuthed] = useState(isLoggedIn());
   const [selectedStudentId, setSelectedStudentId] = useState<string | null>(readSelected);
   const [route, setRoute] = useState<Route>({ view: "home", topicId: "topic_food" });
-  // Tiến độ lấy từ DB trung tâm (đồng bộ mọi máy), KHÔNG dùng localStorage.
   const [progress, setProgress] = useState<StudentVocabularyProgress[]>([]);
 
   const student = SEED_STUDENTS.find((s) => s.id === selectedStudentId) ?? null;
@@ -41,14 +46,12 @@ export function App() {
     getStudentProgress(selectedStudentId).then(setProgress).catch(() => {});
   }, [authed, selectedStudentId]);
 
-  // Tải tiến độ khi đăng nhập / đổi bé.
   useEffect(() => {
     loadProgress();
   }, [loadProgress]);
 
   const navigate = (view: View, topicId = route.topicId) => {
     setRoute({ view, topicId });
-    // Làm tươi tiến độ khi quay về các màn hiển thị tiến độ.
     if (view === "home" || view === "topics") loadProgress();
   };
 
@@ -59,27 +62,30 @@ export function App() {
     setRoute({ view: "home", topicId: "topic_food" });
   };
 
-  // Học/đánh dấu 1 từ -> ghi DB (recordAnswer) + cập nhật tiến độ tại chỗ (optimistic).
   const markWordStudied = (wordId: string) => {
     if (!student) return;
     setProgress((prev) => {
       const existing = prev.find((p) => p.wordId === wordId);
       if (existing && existing.mastery > 0) return prev;
-      const stub: StudentVocabularyProgress = existing
-        ? { ...existing, mastery: Math.max(1, existing.mastery) as StudentVocabularyProgress["mastery"], status: "learning" }
-        : { studentId: student.id, wordId, status: "learning", mastery: 1, correctCount: 1, wrongCount: 0, lastReviewedAt: Date.now(), nextReviewAt: Date.now() };
+      const stub: StudentVocabularyProgress = {
+        studentId: student.id, wordId, status: "learning", mastery: 1,
+        correctCount: 1, wrongCount: 0, lastReviewedAt: Date.now(), nextReviewAt: Date.now(),
+      };
       return existing ? prev.map((p) => (p.wordId === wordId ? stub : p)) : [...prev, stub];
     });
-    recordAnswer(student.id, wordId, true)
-      .then(loadProgress)
-      .catch(() => {});
+    recordAnswer(student.id, wordId, true).then(loadProgress).catch(() => {});
   };
-
-  const studiedWordIds = progress.filter((p) => p.mastery > 0).map((p) => p.wordId);
 
   const doLogout = () => {
     logout();
     setAuthed(false);
+  };
+
+  const onTab = (key: TabKey) => {
+    if (key === "home") navigate("home");
+    else if (key === "games") navigate("games", route.topicId || "topic_food");
+    else if (key === "test") navigate("test", route.topicId || "topic_food");
+    else navigate(key);
   };
 
   if (!authed) return <LoginPage onLogin={() => { setAuthed(true); loadProgress(); }} />;
@@ -88,48 +94,55 @@ export function App() {
     return <StudentSelectPage selectedStudentId={selectedStudentId} onSelectStudent={selectStudent} />;
   }
 
+  const studiedWordIds = progress.filter((p) => p.mastery > 0).map((p) => p.wordId);
+  const todayStr = new Date().toDateString();
+  const learnedToday = progress.filter((p) => p.lastReviewedAt && new Date(p.lastReviewedAt).toDateString() === todayStr).length;
+
+  let content: React.ReactNode;
   switch (route.view) {
     case "topics":
-      return (
-        <TopicListPage
-          student={student}
-          studiedWordIds={studiedWordIds}
-          onBackHome={() => navigate("home")}
-          onStartTopic={(topicId) => navigate("lesson", topicId)}
-        />
-      );
+      content = <TopicListPage student={student} studiedWordIds={studiedWordIds} onBackHome={() => navigate("home")} onStartTopic={(t) => navigate("lesson", t)} />;
+      break;
     case "lesson":
-      return (
-        <LessonPage
-          topicId={route.topicId}
-          student={student}
-          studiedWordIds={studiedWordIds}
-          onMarkWordStudied={markWordStudied}
-          onBackHome={() => navigate("home")}
-          onPracticeFlashcard={() => navigate("flashcard")}
-          onStartTest={() => navigate("test")}
-        />
-      );
+      content = <LessonPage topicId={route.topicId} student={student} studiedWordIds={studiedWordIds} onMarkWordStudied={markWordStudied} onBackHome={() => navigate("home")} onPracticeFlashcard={() => navigate("flashcard")} onStartTest={() => navigate("test")} />;
+      break;
     case "flashcard":
-      return <FlashcardPage student={student} topicId={route.topicId} onBackHome={() => navigate("home")} />;
+      content = <FlashcardPage student={student} topicId={route.topicId} onBackHome={() => navigate("home")} />;
+      break;
     case "review":
-      return <ReviewPage student={student} onBackHome={() => navigate("home")} />;
+      content = <ReviewPage student={student} onBackHome={() => navigate("home")} />;
+      break;
     case "lookup":
-      return <LookupPage student={student} onBackHome={() => navigate("home")} />;
+      content = <LookupPage student={student} onBackHome={() => navigate("home")} />;
+      break;
     case "test":
-      return <TestPage student={student} topicId={route.topicId} onBackHome={() => navigate("home")} />;
+      content = <TestPage student={student} topicId={route.topicId} onBackHome={() => navigate("home")} />;
+      break;
     case "games":
-      return <GamesPage student={student} topicId={route.topicId} onBackHome={() => navigate("home")} />;
+      content = <GamesPage student={student} topicId={route.topicId} onBackHome={() => navigate("home")} />;
+      break;
     case "dashboard":
-      return <DashboardPage onBackHome={() => navigate("home")} />;
+      content = <DashboardPage onBackHome={() => navigate("home")} />;
+      break;
     default:
-      return (
+      content = (
         <HomePage
           student={student}
+          studiedWordIds={studiedWordIds}
+          learnedTotal={studiedWordIds.length}
+          learnedToday={learnedToday}
           onChangeStudent={() => navigate("student-select")}
           onLogout={doLogout}
           onNavigate={(view, topicId) => navigate(view as View, topicId)}
         />
       );
   }
+
+  const tab = ACTIVE_TAB[route.view];
+  return (
+    <>
+      <div className="pb-24">{content}</div>
+      {tab !== null ? <TabBar active={tab} onSelect={onTab} /> : null}
+    </>
+  );
 }
