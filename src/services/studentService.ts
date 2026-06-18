@@ -19,6 +19,10 @@ export function createStudent(data: NewStudent): Promise<Student> {
   return apiRequest(`/api/students`, { method: "POST", body: data });
 }
 
+export function updateStudent(id: string, data: Partial<NewStudent>): Promise<Student> {
+  return apiRequest(`/api/students/${id}`, { method: "PUT", body: data });
+}
+
 export function deleteStudent(id: string): Promise<{ ok: boolean }> {
   return apiRequest(`/api/students/${id}`, { method: "DELETE" });
 }
@@ -31,7 +35,11 @@ export interface AdminUser {
   role: string;
   createdAt: number;
   studentCount: number;
+  studentLimit: number;
 }
 export function listUsers(): Promise<AdminUser[]> {
   return apiRequest(`/api/admin/users`);
+}
+export function setStudentLimit(userId: string, studentLimit: number): Promise<{ ok: boolean; studentLimit: number }> {
+  return apiRequest(`/api/admin/users/${userId}`, { method: "PUT", body: { studentLimit } });
 }

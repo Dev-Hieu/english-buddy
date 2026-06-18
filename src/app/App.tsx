@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useState } from "react";
 import type { Student, StudentVocabularyProgress } from "@/types";
-import { getUser, isLoggedIn, logout, type AuthUser } from "@/services/authService";
-import { createStudent, deleteStudent, listStudents, type NewStudent } from "@/services/studentService";
+import { getUser, isLoggedIn, logout, refreshMe, type AuthUser } from "@/services/authService";
+import { createStudent, deleteStudent, listStudents, updateStudent, type NewStudent } from "@/services/studentService";
 import { getStudentProgress, recordAnswer } from "@/services/progressService";
 import { getStudent } from "@/services/studentService";
 import { TabBar, type TabKey } from "@/components/layout/TabBar";
@@ -52,6 +52,9 @@ export function App() {
 
   useEffect(() => { loadStudents(); }, [loadStudents]);
 
+  // Làm tươi tài khoản 1 lần (vd hạn mức admin vừa đổi).
+  useEffect(() => { if (isLoggedIn()) refreshMe().then((u) => u && setUser(u)); }, []);
+
   const loadProgress = useCallback(() => {
     if (!user || !selectedStudentId) return;
     getStudentProgress(selectedStudentId).then(setProgress).catch(() => {});
@@ -75,6 +78,10 @@ export function App() {
   const addStudent = async (data: NewStudent) => {
     const s = await createStudent(data);
     setStudents((prev) => [...prev, s]);
+  };
+  const editStudent = async (id: string, data: Partial<NewStudent>) => {
+    const s = await updateStudent(id, data);
+    setStudents((prev) => prev.map((x) => (x.id === id ? s : x)));
   };
   const removeStudent = async (id: string) => {
     await deleteStudent(id);
@@ -130,6 +137,7 @@ export function App() {
         selectedStudentId={selectedStudentId}
         onSelectStudent={selectStudent}
         onAddStudent={addStudent}
+        onUpdateStudent={editStudent}
         onDeleteStudent={removeStudent}
         onLogout={doLogout}
         onOpenAdmin={() => setRoute({ view: "admin", topicId: "topic_food" })}

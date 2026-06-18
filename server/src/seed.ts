@@ -9,8 +9,8 @@ import { SEED_STUDENTS } from "../../src/data/seedStudents";
 
 // Tài khoản seed: 1 phụ huynh demo (sở hữu 2 bé sẵn có) + 1 admin. Mật khẩu: 123456.
 const SEED_USERS = [
-  { id: "parent_uid", email: "phuhuynh@buddy.vn", name: "Phụ huynh demo", role: "parent" },
-  { id: "admin_uid", email: "admin@buddy.vn", name: "Quản trị viên", role: "admin" },
+  { id: "parent_uid", email: "phuhuynh@buddy.vn", name: "Phụ huynh demo", role: "parent", studentLimit: 5 },
+  { id: "admin_uid", email: "admin@buddy.vn", name: "Quản trị viên", role: "admin", studentLimit: 99 },
 ];
 
 export function seedAll(): void {
@@ -31,8 +31,8 @@ export function seedAll(): void {
   );
 
   const insUser = db.prepare(
-    `INSERT OR REPLACE INTO users (id, email, passwordHash, name, role, createdAt)
-     VALUES (@id, @email, @passwordHash, @name, @role, @createdAt)`
+    `INSERT OR REPLACE INTO users (id, email, passwordHash, name, role, createdAt, studentLimit)
+     VALUES (@id, @email, @passwordHash, @name, @role, @createdAt, @studentLimit)`
   );
 
   const tx = db.transaction(() => {

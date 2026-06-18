@@ -97,11 +97,20 @@ export function createApp() {
   // ── Admin: quản lý người dùng ──
   app.get("/api/admin/users", requireAdmin, (_req, res) => {
     const rows = db.prepare(`
-      SELECT u.id, u.email, u.name, u.role, u.createdAt,
+      SELECT u.id, u.email, u.name, u.role, u.createdAt, u.studentLimit,
              (SELECT COUNT(*) FROM students s WHERE s.parentId = u.id) AS studentCount
       FROM users u ORDER BY u.createdAt DESC
     `).all();
     res.json(rows);
+  });
+
+  // Admin đặt hạn mức số bé cho 1 phụ huynh.
+  app.put("/api/admin/users/:id", requireAdmin, (req, res) => {
+    const limit = Math.max(0, Math.min(50, Number(req.body?.studentLimit)));
+    if (Number.isNaN(limit)) return res.status(400).json({ error: "studentLimit không hợp lệ" });
+    const r = db.prepare("UPDATE users SET studentLimit = ? WHERE id = ?").run(limit, req.params.id);
+    if (r.changes === 0) return res.status(404).json({ error: "không có user" });
+    res.json({ ok: true, studentLimit: limit });
   });
 
   // ── Nội dung (public) ──
@@ -128,6 +137,12 @@ export function createApp() {
     const user = (req as any).user;
     const { name, grade, avatar, dailyGoal } = req.body || {};
     if (!name || !String(name).trim()) return res.status(400).json({ error: "thiếu tên bé" });
+    if (user.role !== "admin") {
+      const count = (db.prepare("SELECT COUNT(*) AS c FROM students WHERE parentId = ?").get(user.id) as any).c;
+      if (count >= (user.studentLimit ?? 3)) {
+        return res.status(403).json({ error: `Đã đạt giới hạn ${user.studentLimit ?? 3} bé. Liên hệ admin để tăng hạn mức.` });
+      }
+    }
     const row = {
       id: "student_" + randomUUID().slice(0, 8), parentId: user.id, name: String(name).trim(),
       grade: Number(grade) || 1, level: "beginner", avatar: avatar || "girl_avatar_01",

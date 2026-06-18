@@ -6,6 +6,7 @@ export interface AuthUser {
   name: string;
   role: "parent" | "admin";
   createdAt: number;
+  studentLimit: number;
 }
 
 const USER_KEY = "eb_user";
@@ -42,6 +43,17 @@ export function isLoggedIn(): boolean {
 export function getUser(): AuthUser | null {
   try {
     return JSON.parse(localStorage.getItem(USER_KEY) || "null");
+  } catch {
+    return null;
+  }
+}
+
+// Làm tươi thông tin tài khoản (vd hạn mức admin vừa đổi).
+export async function refreshMe(): Promise<AuthUser | null> {
+  try {
+    const u = await apiRequest<AuthUser>("/api/me");
+    localStorage.setItem(USER_KEY, JSON.stringify(u));
+    return u;
   } catch {
     return null;
   }
