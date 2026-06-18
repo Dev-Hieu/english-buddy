@@ -1,0 +1,90 @@
+- main [ref=e308]:
+  - generic [ref=e309]:
+    - generic [ref=e310]:
+      - button "Trang chủ" [ref=e311] [cursor=pointer]:
+        - img [ref=e312]
+        - text: Trang chủ
+      - generic [ref=e314]:
+        - paragraph [ref=e315]: Lesson · Bảo Ngọc
+        - 'heading "Food: Đồ ăn" [level=1] [ref=e316]'
+    - generic [ref=e317]:
+      - generic [ref=e318]:
+        - generic [ref=e319]: Tiến độ
+        - generic [ref=e320]: 130%
+      - paragraph [ref=e323]: 13/10 từ đã xem
+  - generic [ref=e324]:
+    - button "Luyện flashcard" [ref=e325] [cursor=pointer]:
+      - img [ref=e326]
+      - text: Luyện flashcard
+    - button "Làm bài test" [ref=e330] [cursor=pointer]:
+      - img [ref=e331]
+      - text: Làm bài test
+  - generic [ref=e334]:
+    - generic [ref=e335]:
+      - generic [ref=e336]:
+        - generic [ref=e337]: Từ 1 / 10
+        - generic [ref=e338]: Nghe, đọc ví dụ, rồi đánh dấu khi con nhớ.
+      - generic [ref=e339]:
+        - img "quả táo" [ref=e341]
+        - generic [ref=e342]:
+          - generic [ref=e343]:
+            - generic [ref=e344]:
+              - heading "apple" [level=2] [ref=e345]
+              - paragraph [ref=e346]: /ˈæp.əl/
+            - button "Nghe từ apple" [ref=e347] [cursor=pointer]:
+              - img [ref=e348]
+          - generic [ref=e352]:
+            - paragraph [ref=e353]: quả táo
+            - paragraph [ref=e354]: a round fruit with red, green, or yellow skin
+          - generic [ref=e355]:
+            - paragraph [ref=e356]: I eat an apple every day.
+            - paragraph [ref=e357]: Con ăn một quả táo mỗi ngày.
+          - generic [ref=e358]:
+            - button "Cần ôn lại" [ref=e359] [cursor=pointer]:
+              - img [ref=e360]
+              - text: Cần ôn lại
+            - button "Con nhớ rồi" [ref=e363] [cursor=pointer]:
+              - img [ref=e364]
+              - text: Con nhớ rồi
+      - generic [ref=e367]:
+        - button "Từ trước" [disabled]:
+          - img
+          - text: Từ trước
+        - button "Từ tiếp theo" [ref=e368] [cursor=pointer]:
+          - text: Từ tiếp theo
+          - img [ref=e369]
+    - generic [ref=e372]:
+      - generic [ref=e373]:
+        - img [ref=e374]
+        - text: Food words
+      - generic [ref=e376]:
+        - button "apple 1" [ref=e377] [cursor=pointer]:
+          - generic [ref=e378]: apple
+          - generic [ref=e379]: "1"
+        - button "banana 2" [ref=e380] [cursor=pointer]:
+          - generic [ref=e381]: banana
+          - generic [ref=e382]: "2"
+        - button "rice" [ref=e383] [cursor=pointer]:
+          - generic [ref=e384]: rice
+          - img [ref=e385]
+        - button "bread 4" [ref=e388] [cursor=pointer]:
+          - generic [ref=e389]: bread
+          - generic [ref=e390]: "4"
+        - button "milk 5" [ref=e391] [cursor=pointer]:
+          - generic [ref=e392]: milk
+          - generic [ref=e393]: "5"
+        - button "water" [ref=e394] [cursor=pointer]:
+          - generic [ref=e395]: water
+          - img [ref=e396]
+        - button "egg 7" [ref=e399] [cursor=pointer]:
+          - generic [ref=e400]: egg
+          - generic [ref=e401]: "7"
+        - button "chicken" [ref=e402] [cursor=pointer]:
+          - generic [ref=e403]: chicken
+          - img [ref=e404]
+        - button "fish 9" [ref=e407] [cursor=pointer]:
+          - generic [ref=e408]: fish
+          - generic [ref=e409]: "9"
+        - button "orange 10" [ref=e410] [cursor=pointer]:
+          - generic [ref=e411]: orange
+          - generic [ref=e412]: "10"

@@ -1,0 +1,13 @@
+- main [ref=e1045]:
+  - generic [ref=e1047]:
+    - button "Đóng" [ref=e1048] [cursor=pointer]:
+      - img [ref=e1049]
+    - heading "Bài test · Food" [level=1] [ref=e1052]
+  - paragraph [ref=e1054]: Câu 1 / 10
+  - generic [ref=e1056]:
+    - heading "\"orange\" nghĩa là gì?" [level=2] [ref=e1058]
+    - generic [ref=e1059]:
+      - button "quả táo" [ref=e1060] [cursor=pointer]
+      - button "quả chuối" [ref=e1061] [cursor=pointer]
+      - button "quả cam" [ref=e1062] [cursor=pointer]
+      - button "nước" [ref=e1063] [cursor=pointer]

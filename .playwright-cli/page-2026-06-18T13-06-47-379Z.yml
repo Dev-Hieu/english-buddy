@@ -1,0 +1,24 @@
+- main [ref=e413]:
+  - generic [ref=e414]:
+    - button "Trang chủ" [ref=e415] [cursor=pointer]:
+      - img [ref=e416]
+      - text: Trang chủ
+    - heading "Flashcard · Food" [level=1] [ref=e418]
+  - generic [ref=e419]:
+    - generic [ref=e420]: Thẻ 1 / 10
+    - generic [ref=e421]: "Đã nhớ: 0"
+  - generic [ref=e422]:
+    - generic "Bấm để lật thẻ" [ref=e423] [cursor=pointer]:
+      - generic [ref=e424]:
+        - heading "apple" [level=2] [ref=e426]
+        - button "Nghe" [ref=e427]:
+          - img [ref=e428]
+          - text: Nghe
+        - paragraph [ref=e432]: Bấm vào thẻ để xem nghĩa
+    - generic [ref=e433]:
+      - button "Cần ôn lại" [ref=e434] [cursor=pointer]:
+        - img [ref=e435]
+        - text: Cần ôn lại
+      - button "Con nhớ rồi" [ref=e438] [cursor=pointer]:
+        - img [ref=e439]
+        - text: Con nhớ rồi

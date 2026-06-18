@@ -1,0 +1,120 @@
+- main [ref=e462]:
+  - generic [ref=e463]:
+    - generic [ref=e464]:
+      - paragraph [ref=e465]: English Buddy · Bảo Ngọc
+      - heading "Hôm nay học gì nào?" [level=1] [ref=e466]
+      - paragraph [ref=e467]: Chọn chủ đề để học từ mới, ôn lại từ cũ, chơi game hoặc làm bài test.
+    - generic [ref=e468]:
+      - generic [ref=e469]:
+        - paragraph [ref=e470]: Mục tiêu hôm nay
+        - paragraph [ref=e471]: 10 từ
+      - generic [ref=e472]:
+        - button "Đổi bé" [ref=e473] [cursor=pointer]:
+          - img [ref=e474]
+          - text: Đổi bé
+        - button "Thoát" [ref=e477] [cursor=pointer]:
+          - img [ref=e478]
+          - text: Thoát
+  - generic [ref=e481]:
+    - button "Học từ" [ref=e482] [cursor=pointer]:
+      - img [ref=e483]
+      - text: Học từ
+    - button "Tra từ" [ref=e485] [cursor=pointer]:
+      - img [ref=e486]
+      - text: Tra từ
+    - button "Ôn tập" [ref=e489] [cursor=pointer]:
+      - img [ref=e490]
+      - text: Ôn tập
+    - button "Game" [ref=e493] [cursor=pointer]:
+      - img [ref=e494]
+      - text: Game
+    - button "Test" [ref=e496] [cursor=pointer]:
+      - img [ref=e497]
+      - text: Test
+  - generic [ref=e500]:
+    - generic [ref=e501]:
+      - heading "Bắt đầu nhanh" [level=2] [ref=e502]
+      - paragraph [ref=e503]: Chọn một chủ đề bên dưới để vào học ngay.
+    - button "Bảng theo dõi (phụ huynh)" [ref=e504] [cursor=pointer]:
+      - img [ref=e505]
+      - text: Bảng theo dõi (phụ huynh)
+  - generic [ref=e507]:
+    - generic [ref=e508]:
+      - generic [ref=e509]:
+        - img "quả táo" [ref=e511]
+        - generic [ref=e512]:
+          - generic [ref=e513]:
+            - generic [ref=e514]:
+              - heading "apple" [level=2] [ref=e515]
+              - paragraph [ref=e516]: /ˈæp.əl/
+            - button "Nghe từ apple" [ref=e517] [cursor=pointer]:
+              - img [ref=e518]
+          - generic [ref=e522]:
+            - paragraph [ref=e523]: quả táo
+            - paragraph [ref=e524]: a round fruit with red, green, or yellow skin
+          - generic [ref=e525]:
+            - paragraph [ref=e526]: I eat an apple every day.
+            - paragraph [ref=e527]: Con ăn một quả táo mỗi ngày.
+      - generic [ref=e528]:
+        - img "quả chuối" [ref=e530]
+        - generic [ref=e531]:
+          - generic [ref=e532]:
+            - generic [ref=e533]:
+              - heading "banana" [level=2] [ref=e534]
+              - paragraph [ref=e535]: /bəˈnɑː.nə/
+            - button "Nghe từ banana" [ref=e536] [cursor=pointer]:
+              - img [ref=e537]
+          - generic [ref=e541]:
+            - paragraph [ref=e542]: quả chuối
+            - paragraph [ref=e543]: a long curved fruit with yellow skin
+          - generic [ref=e544]:
+            - paragraph [ref=e545]: Monkeys like bananas.
+            - paragraph [ref=e546]: Khỉ thích chuối.
+      - generic [ref=e547]:
+        - img "cơm / gạo" [ref=e549]
+        - generic [ref=e550]:
+          - generic [ref=e551]:
+            - generic [ref=e552]:
+              - heading "rice" [level=2] [ref=e553]
+              - paragraph [ref=e554]: /raɪs/
+            - button "Nghe từ rice" [ref=e555] [cursor=pointer]:
+              - img [ref=e556]
+          - generic [ref=e560]:
+            - paragraph [ref=e561]: cơm / gạo
+            - paragraph [ref=e562]: small white or brown grains eaten as food
+          - generic [ref=e563]:
+            - paragraph [ref=e564]: We eat rice for lunch.
+            - paragraph [ref=e565]: Chúng con ăn cơm vào bữa trưa.
+    - generic [ref=e566]:
+      - heading "10 chủ đề" [level=3] [ref=e568]
+      - generic [ref=e569]:
+        - button "Food Đồ ăn" [ref=e570] [cursor=pointer]:
+          - generic [ref=e571]: Food
+          - generic [ref=e572]: Đồ ăn
+        - button "School Trường học" [ref=e573] [cursor=pointer]:
+          - generic [ref=e574]: School
+          - generic [ref=e575]: Trường học
+        - button "Family Gia đình" [ref=e576] [cursor=pointer]:
+          - generic [ref=e577]: Family
+          - generic [ref=e578]: Gia đình
+        - button "Animals Động vật" [ref=e579] [cursor=pointer]:
+          - generic [ref=e580]: Animals
+          - generic [ref=e581]: Động vật
+        - button "Sports Thể thao" [ref=e582] [cursor=pointer]:
+          - generic [ref=e583]: Sports
+          - generic [ref=e584]: Thể thao
+        - button "Daily Activities Hoạt động hằng ngày" [ref=e585] [cursor=pointer]:
+          - generic [ref=e586]: Daily Activities
+          - generic [ref=e587]: Hoạt động hằng ngày
+        - button "Feelings Cảm xúc" [ref=e588] [cursor=pointer]:
+          - generic [ref=e589]: Feelings
+          - generic [ref=e590]: Cảm xúc
+        - button "House Ngôi nhà" [ref=e591] [cursor=pointer]:
+          - generic [ref=e592]: House
+          - generic [ref=e593]: Ngôi nhà
+        - button "Clothes Quần áo" [ref=e594] [cursor=pointer]:
+          - generic [ref=e595]: Clothes
+          - generic [ref=e596]: Quần áo
+        - button "Travel Du lịch" [ref=e597] [cursor=pointer]:
+          - generic [ref=e598]: Travel
+          - generic [ref=e599]: Du lịch

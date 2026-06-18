@@ -1,0 +1,20 @@
+- main [ref=e1227]:
+  - generic [ref=e1229]:
+    - button "Đóng" [ref=e1230] [cursor=pointer]:
+      - img [ref=e1231]
+    - heading "Ôn tập hôm nay" [level=1] [ref=e1234]
+  - paragraph [ref=e1236]: Thẻ 1 / 1
+  - generic [ref=e1237]:
+    - generic [ref=e1239] [cursor=pointer]:
+      - heading "lesson" [level=2] [ref=e1241]
+      - button "Nghe" [ref=e1242]:
+        - img [ref=e1243]
+        - text: Nghe
+      - paragraph [ref=e1247]: Bấm vào thẻ để xem nghĩa
+    - generic [ref=e1248]:
+      - button "Cần ôn lại" [ref=e1249] [cursor=pointer]:
+        - img [ref=e1250]
+        - text: Cần ôn lại
+      - button "Con nhớ rồi" [ref=e1253] [cursor=pointer]:
+        - img [ref=e1254]
+        - text: Con nhớ rồi

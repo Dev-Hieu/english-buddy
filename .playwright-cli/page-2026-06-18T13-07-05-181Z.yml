@@ -1,0 +1,24 @@
+- main [ref=e413]:
+  - generic [ref=e414]:
+    - button "Trang chủ" [ref=e415] [cursor=pointer]:
+      - img [ref=e416]
+      - text: Trang chủ
+    - heading "Flashcard · Food" [level=1] [ref=e418]
+  - generic [ref=e419]:
+    - generic [ref=e420]: Thẻ 2 / 10
+    - generic [ref=e421]: "Đã nhớ: 1"
+  - generic [ref=e442]:
+    - generic "Bấm để lật thẻ" [ref=e443] [cursor=pointer]:
+      - generic [ref=e444]:
+        - heading "banana" [level=2] [ref=e446]
+        - button "Nghe" [ref=e447]:
+          - img [ref=e448]
+          - text: Nghe
+        - paragraph [ref=e452]: Bấm vào thẻ để xem nghĩa
+    - generic [ref=e453]:
+      - button "Cần ôn lại" [ref=e454] [cursor=pointer]:
+        - img [ref=e455]
+        - text: Cần ôn lại
+      - button "Con nhớ rồi" [ref=e458] [cursor=pointer]:
+        - img [ref=e459]
+        - text: Con nhớ rồi

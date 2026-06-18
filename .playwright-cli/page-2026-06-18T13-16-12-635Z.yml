@@ -1,0 +1,25 @@
+- main [ref=e600]:
+  - generic [ref=e601]:
+    - button "Trang chủ" [ref=e602] [cursor=pointer]:
+      - img [ref=e603]
+      - text: Trang chủ
+    - heading "Tra từ & Dịch câu" [level=1] [ref=e605]
+  - generic [ref=e606]:
+    - button "Tra từ" [ref=e607] [cursor=pointer]:
+      - img [ref=e608]
+      - text: Tra từ
+    - button "Dịch câu" [ref=e611] [cursor=pointer]:
+      - img [ref=e612]
+      - text: Dịch câu
+  - generic [ref=e616]:
+    - generic [ref=e617]: Anh
+    - button "Đổi chiều tra" [ref=e618] [cursor=pointer]:
+      - img [ref=e619]
+    - generic [ref=e622]: Việt
+  - generic [ref=e623]:
+    - generic [ref=e624]:
+      - img [ref=e625]
+      - textbox "Nhập 1 từ tiếng Anh..." [ref=e628]: butterfly
+    - button "Tra" [disabled]:
+      - img
+      - text: Tra

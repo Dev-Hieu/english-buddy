@@ -1,0 +1,18 @@
+- main [ref=e820]:
+  - generic [ref=e845]:
+    - button "Đóng" [ref=e846] [cursor=pointer]:
+      - img [ref=e847]
+    - heading "Ghép từ" [level=1] [ref=e850]
+  - generic [ref=e851]:
+    - generic [ref=e852]:
+      - button "bread" [ref=e853] [cursor=pointer]
+      - button "rice" [ref=e854] [cursor=pointer]
+      - button "orange" [ref=e855] [cursor=pointer]
+      - button "banana" [ref=e856] [cursor=pointer]
+      - button "chicken" [ref=e857] [cursor=pointer]
+    - generic [ref=e858]:
+      - button "quả chuối" [ref=e859] [cursor=pointer]
+      - button "thịt gà / con gà" [ref=e860] [cursor=pointer]
+      - button "quả cam" [ref=e861] [cursor=pointer]
+      - button "bánh mì" [ref=e862] [cursor=pointer]
+      - button "cơm / gạo" [ref=e863] [cursor=pointer]

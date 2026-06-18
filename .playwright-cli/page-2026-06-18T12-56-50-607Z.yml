@@ -1,0 +1,17 @@
+- main [ref=e3]:
+  - generic [ref=e4]:
+    - paragraph [ref=e5]: English Buddy 🦉
+    - heading "Phụ huynh đăng nhập" [level=1] [ref=e6]
+    - paragraph [ref=e7]: Nhập mật khẩu để mở khoá việc học của hai bé.
+  - generic [ref=e10]:
+    - generic [ref=e11]:
+      - text: Mật khẩu phụ huynh
+      - generic [ref=e12]:
+        - img [ref=e13]
+        - textbox "Mật khẩu phụ huynh" [ref=e16]:
+          - /placeholder: ••••••••
+          - text: bao-ngoc-bao-nam
+    - paragraph [ref=e21]: Sai mật khẩu, hoặc server chưa chạy.
+    - button "Đăng nhập" [ref=e17] [cursor=pointer]:
+      - img [ref=e22]
+      - text: Đăng nhập

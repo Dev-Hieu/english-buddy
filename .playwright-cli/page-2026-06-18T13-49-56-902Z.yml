@@ -1,0 +1,122 @@
+- generic [ref=e2]:
+  - main [ref=e1070]:
+    - generic [ref=e1071]:
+      - generic [ref=e1072]:
+        - generic [ref=e1073]: 👧
+        - generic [ref=e1074]:
+          - paragraph [ref=e1075]: Bảo Ngọc
+          - paragraph [ref=e1076]: Lớp 7
+      - generic [ref=e1077]:
+        - generic [ref=e1078]:
+          - img [ref=e1079]
+          - text: "0"
+        - generic [ref=e1081]:
+          - img [ref=e1082]
+          - text: "30"
+        - button "Đổi bé" [ref=e1084] [cursor=pointer]:
+          - img [ref=e1085]
+        - button "Thoát" [ref=e1088] [cursor=pointer]:
+          - img [ref=e1089]
+    - generic [ref=e1092]:
+      - generic [ref=e1093]:
+        - generic [ref=e1094]:
+          - img [ref=e1095]
+          - generic [ref=e1098]:
+            - generic [ref=e1099]: "30"
+            - generic [ref=e1100]: /10
+        - generic [ref=e1101]:
+          - paragraph [ref=e1102]: Mục tiêu hôm nay
+          - heading "Hoàn thành rồi! 🎉" [level=1] [ref=e1103]
+      - button "Học tiếp" [ref=e1104] [cursor=pointer]:
+        - img [ref=e1105]
+        - text: Học tiếp
+    - generic [ref=e1107]:
+      - generic [ref=e1108]:
+        - heading "Chủ đề" [level=2] [ref=e1109]
+        - button "Tất cả" [ref=e1110] [cursor=pointer]:
+          - text: Tất cả
+          - img [ref=e1111]
+      - generic [ref=e1113]:
+        - button "🍎 100% Food Đồ ăn" [ref=e1114] [cursor=pointer]:
+          - generic [ref=e1115]:
+            - generic [ref=e1116]: 🍎
+            - generic [ref=e1117]: 100%
+          - paragraph [ref=e1118]: Food
+          - paragraph [ref=e1119]: Đồ ăn
+        - button "🏫 100% School Trường học" [ref=e1122] [cursor=pointer]:
+          - generic [ref=e1123]:
+            - generic [ref=e1124]: 🏫
+            - generic [ref=e1125]: 100%
+          - paragraph [ref=e1126]: School
+          - paragraph [ref=e1127]: Trường học
+        - button "👨‍👩‍👧 0% Family Gia đình" [ref=e1130] [cursor=pointer]:
+          - generic [ref=e1131]:
+            - generic [ref=e1132]: 👨‍👩‍👧
+            - generic [ref=e1133]: 0%
+          - paragraph [ref=e1134]: Family
+          - paragraph [ref=e1135]: Gia đình
+        - button "🐶 18% Animals Động vật" [ref=e1137] [cursor=pointer]:
+          - generic [ref=e1138]:
+            - generic [ref=e1139]: 🐶
+            - generic [ref=e1140]: 18%
+          - paragraph [ref=e1141]: Animals
+          - paragraph [ref=e1142]: Động vật
+        - button "⚽ 0% Sports Thể thao" [ref=e1145] [cursor=pointer]:
+          - generic [ref=e1146]:
+            - generic [ref=e1147]: ⚽
+            - generic [ref=e1148]: 0%
+          - paragraph [ref=e1149]: Sports
+          - paragraph [ref=e1150]: Thể thao
+        - button "🌅 0% Daily Activities Hoạt động hằng ngày" [ref=e1152] [cursor=pointer]:
+          - generic [ref=e1153]:
+            - generic [ref=e1154]: 🌅
+            - generic [ref=e1155]: 0%
+          - paragraph [ref=e1156]: Daily Activities
+          - paragraph [ref=e1157]: Hoạt động hằng ngày
+        - button "😊 0% Feelings Cảm xúc" [ref=e1159] [cursor=pointer]:
+          - generic [ref=e1160]:
+            - generic [ref=e1161]: 😊
+            - generic [ref=e1162]: 0%
+          - paragraph [ref=e1163]: Feelings
+          - paragraph [ref=e1164]: Cảm xúc
+        - button "🏠 100% House Ngôi nhà" [ref=e1166] [cursor=pointer]:
+          - generic [ref=e1167]:
+            - generic [ref=e1168]: 🏠
+            - generic [ref=e1169]: 100%
+          - paragraph [ref=e1170]: House
+          - paragraph [ref=e1171]: Ngôi nhà
+        - button "👕 0% Clothes Quần áo" [ref=e1174] [cursor=pointer]:
+          - generic [ref=e1175]:
+            - generic [ref=e1176]: 👕
+            - generic [ref=e1177]: 0%
+          - paragraph [ref=e1178]: Clothes
+          - paragraph [ref=e1179]: Quần áo
+        - button "✈️ 0% Travel Du lịch" [ref=e1181] [cursor=pointer]:
+          - generic [ref=e1182]:
+            - generic [ref=e1183]: ✈️
+            - generic [ref=e1184]: 0%
+          - paragraph [ref=e1185]: Travel
+          - paragraph [ref=e1186]: Du lịch
+    - button "Bảng theo dõi Tiến độ của các bé (phụ huynh)" [ref=e1189] [cursor=pointer]:
+      - img [ref=e1191]
+      - generic [ref=e1193]:
+        - generic [ref=e1194]: Bảng theo dõi
+        - generic [ref=e1195]: Tiến độ của các bé (phụ huynh)
+      - img [ref=e1196]
+  - navigation [ref=e1198]:
+    - generic [ref=e1199]:
+      - button "Học" [ref=e1200] [cursor=pointer]:
+        - img [ref=e1202]
+        - text: Học
+      - button "Tra từ" [ref=e1205] [cursor=pointer]:
+        - img [ref=e1207]
+        - text: Tra từ
+      - button "Ôn tập" [ref=e1210] [cursor=pointer]:
+        - img [ref=e1212]
+        - text: Ôn tập
+      - button "Chơi" [ref=e1218] [cursor=pointer]:
+        - img [ref=e1220]
+        - text: Chơi
+      - button "Test" [ref=e1222] [cursor=pointer]:
+        - img [ref=e1224]
+        - text: Test

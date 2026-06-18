@@ -1,0 +1,123 @@
+- main [ref=e183]:
+  - generic [ref=e184]:
+    - generic [ref=e185]:
+      - button "Trang chủ" [ref=e186] [cursor=pointer]:
+        - img [ref=e187]
+        - text: Trang chủ
+      - generic [ref=e189]:
+        - paragraph [ref=e190]: Bảo Ngọc
+        - heading "Chọn chủ đề học" [level=1] [ref=e191]
+    - generic [ref=e192]:
+      - paragraph [ref=e193]: Mục tiêu mỗi ngày
+      - paragraph [ref=e194]: 10 từ
+  - generic [ref=e195]:
+    - generic [ref=e197]:
+      - generic [ref=e198]:
+        - generic [ref=e199]:
+          - paragraph [ref=e200]: "#1"
+          - heading "Food" [level=2] [ref=e201]
+          - paragraph [ref=e202]: Đồ ăn
+        - img [ref=e203]
+      - generic [ref=e206]:
+        - generic [ref=e207]: 0/10 từ
+        - generic [ref=e208]: 0%
+      - button "Học chủ đề này" [ref=e210] [cursor=pointer]
+    - generic [ref=e212]:
+      - generic [ref=e213]:
+        - generic [ref=e214]:
+          - paragraph [ref=e215]: "#2"
+          - heading "School" [level=2] [ref=e216]
+          - paragraph [ref=e217]: Trường học
+        - img [ref=e218]
+      - generic [ref=e221]:
+        - generic [ref=e222]: 0/10 từ
+        - generic [ref=e223]: 0%
+      - button "Học chủ đề này" [ref=e225] [cursor=pointer]
+    - generic [ref=e227]:
+      - generic [ref=e228]:
+        - generic [ref=e229]:
+          - paragraph [ref=e230]: "#3"
+          - heading "Family" [level=2] [ref=e231]
+          - paragraph [ref=e232]: Gia đình
+        - img [ref=e233]
+      - generic [ref=e236]:
+        - generic [ref=e237]: 0/10 từ
+        - generic [ref=e238]: 0%
+      - button "Học chủ đề này" [ref=e240] [cursor=pointer]
+    - generic [ref=e242]:
+      - generic [ref=e243]:
+        - generic [ref=e244]:
+          - paragraph [ref=e245]: "#4"
+          - heading "Animals" [level=2] [ref=e246]
+          - paragraph [ref=e247]: Động vật
+        - img [ref=e248]
+      - generic [ref=e251]:
+        - generic [ref=e252]: 0/11 từ
+        - generic [ref=e253]: 0%
+      - button "Học chủ đề này" [ref=e255] [cursor=pointer]
+    - generic [ref=e257]:
+      - generic [ref=e258]:
+        - generic [ref=e259]:
+          - paragraph [ref=e260]: "#5"
+          - heading "Sports" [level=2] [ref=e261]
+          - paragraph [ref=e262]: Thể thao
+        - img [ref=e263]
+      - generic [ref=e266]:
+        - generic [ref=e267]: 0/10 từ
+        - generic [ref=e268]: 0%
+      - button "Học chủ đề này" [ref=e270] [cursor=pointer]
+    - generic [ref=e272]:
+      - generic [ref=e273]:
+        - generic [ref=e274]:
+          - paragraph [ref=e275]: "#6"
+          - heading "Daily Activities" [level=2] [ref=e276]
+          - paragraph [ref=e277]: Hoạt động hằng ngày
+        - img [ref=e278]
+      - generic [ref=e281]:
+        - generic [ref=e282]: 0/10 từ
+        - generic [ref=e283]: 0%
+      - button "Học chủ đề này" [ref=e285] [cursor=pointer]
+    - generic [ref=e287]:
+      - generic [ref=e288]:
+        - generic [ref=e289]:
+          - paragraph [ref=e290]: "#7"
+          - heading "Feelings" [level=2] [ref=e291]
+          - paragraph [ref=e292]: Cảm xúc
+        - img [ref=e293]
+      - generic [ref=e296]:
+        - generic [ref=e297]: 0/10 từ
+        - generic [ref=e298]: 0%
+      - button "Học chủ đề này" [ref=e300] [cursor=pointer]
+    - generic [ref=e302]:
+      - generic [ref=e303]:
+        - generic [ref=e304]:
+          - paragraph [ref=e305]: "#8"
+          - heading "House" [level=2] [ref=e306]
+          - paragraph [ref=e307]: Ngôi nhà
+        - img [ref=e308]
+      - generic [ref=e311]:
+        - generic [ref=e312]: 0/10 từ
+        - generic [ref=e313]: 0%
+      - button "Học chủ đề này" [ref=e315] [cursor=pointer]
+    - generic [ref=e317]:
+      - generic [ref=e318]:
+        - generic [ref=e319]:
+          - paragraph [ref=e320]: "#9"
+          - heading "Clothes" [level=2] [ref=e321]
+          - paragraph [ref=e322]: Quần áo
+        - img [ref=e323]
+      - generic [ref=e326]:
+        - generic [ref=e327]: 0/10 từ
+        - generic [ref=e328]: 0%
+      - button "Học chủ đề này" [ref=e330] [cursor=pointer]
+    - generic [ref=e332]:
+      - generic [ref=e333]:
+        - generic [ref=e334]:
+          - paragraph [ref=e335]: "#10"
+          - heading "Travel" [level=2] [ref=e336]
+          - paragraph [ref=e337]: Du lịch
+        - img [ref=e338]
+      - generic [ref=e341]:
+        - generic [ref=e342]: 0/10 từ
+        - generic [ref=e343]: 0%
+      - button "Học chủ đề này" [ref=e345] [cursor=pointer]

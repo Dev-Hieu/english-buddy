@@ -1,0 +1,21 @@
+- main [ref=e820]:
+  - generic [ref=e865]:
+    - button "Đóng" [ref=e866] [cursor=pointer]:
+      - img [ref=e867]
+    - heading "Trò chơi" [level=1] [ref=e870]
+  - generic [ref=e871]:
+    - button "🔗 Ghép từ Nối từ với nghĩa" [ref=e872] [cursor=pointer]:
+      - generic [ref=e873]: 🔗
+      - generic [ref=e874]:
+        - generic [ref=e875]: Ghép từ
+        - generic [ref=e876]: Nối từ với nghĩa
+    - button "🖼️ Chọn ảnh Nhìn từ, chọn ảnh" [ref=e877] [cursor=pointer]:
+      - generic [ref=e878]: 🖼️
+      - generic [ref=e879]:
+        - generic [ref=e880]: Chọn ảnh
+        - generic [ref=e881]: Nhìn từ, chọn ảnh
+    - button "👂 Nghe & chọn Nghe rồi chọn từ" [ref=e882] [cursor=pointer]:
+      - generic [ref=e883]: 👂
+      - generic [ref=e884]:
+        - generic [ref=e885]: Nghe & chọn
+        - generic [ref=e886]: Nghe rồi chọn từ

@@ -1,0 +1,54 @@
+- main [ref=e1414]:
+  - generic [ref=e1416]:
+    - button "Đóng" [ref=e1417] [cursor=pointer]:
+      - img [ref=e1418]
+    - heading "Bảng theo dõi" [level=1] [ref=e1421]
+  - generic [ref=e1422]:
+    - generic [ref=e1424]:
+      - generic [ref=e1425]:
+        - generic [ref=e1426]: 👧
+        - heading "Bảo Ngọc" [level=2] [ref=e1427]
+      - generic [ref=e1428]:
+        - generic [ref=e1429]:
+          - paragraph [ref=e1430]: "40"
+          - paragraph [ref=e1431]: Đã học
+        - generic [ref=e1432]:
+          - paragraph [ref=e1433]: "1"
+          - paragraph [ref=e1434]: Cần ôn
+        - generic [ref=e1435]:
+          - paragraph [ref=e1436]: "2"
+          - paragraph [ref=e1437]: Thành thạo
+      - generic [ref=e1438]:
+        - generic [ref=e1439]:
+          - paragraph [ref=e1440]: 100%
+          - paragraph [ref=e1441]: Điểm test gần nhất
+        - generic [ref=e1442]:
+          - paragraph [ref=e1443]: "2"
+          - paragraph [ref=e1444]: Số bài test
+      - generic [ref=e1445]:
+        - paragraph [ref=e1446]: Từ hay sai
+        - paragraph [ref=e1447]: lesson
+    - generic [ref=e1449]:
+      - generic [ref=e1450]:
+        - generic [ref=e1451]: 👦
+        - heading "Bảo Nam" [level=2] [ref=e1452]
+      - generic [ref=e1453]:
+        - generic [ref=e1454]:
+          - paragraph [ref=e1455]: "81"
+          - paragraph [ref=e1456]: Đã học
+        - generic [ref=e1457]:
+          - paragraph [ref=e1458]: "11"
+          - paragraph [ref=e1459]: Cần ôn
+        - generic [ref=e1460]:
+          - paragraph [ref=e1461]: "2"
+          - paragraph [ref=e1462]: Thành thạo
+      - generic [ref=e1463]:
+        - generic [ref=e1464]:
+          - paragraph [ref=e1465]: 90%
+          - paragraph [ref=e1466]: Điểm test gần nhất
+        - generic [ref=e1467]:
+          - paragraph [ref=e1468]: "3"
+          - paragraph [ref=e1469]: Số bài test
+      - generic [ref=e1470]:
+        - paragraph [ref=e1471]: Từ hay sai
+        - paragraph [ref=e1472]: rice, apple, water, badminton, ball

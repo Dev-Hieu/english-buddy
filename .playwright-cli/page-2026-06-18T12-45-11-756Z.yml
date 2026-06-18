@@ -1,0 +1,38 @@
+- main [ref=e21]:
+  - generic [ref=e22]:
+    - paragraph [ref=e23]: English Buddy
+    - heading "Hôm nay ai học tiếng Anh?" [level=1] [ref=e24]
+    - paragraph [ref=e25]: Chọn một profile để app nhớ mục tiêu, tiến độ bài Food và các bài ôn tiếp theo.
+  - generic [ref=e26]:
+    - generic [ref=e28]:
+      - generic [ref=e30]:
+        - generic [ref=e31]: c
+        - generic [ref=e32]:
+          - heading "Bảo Ngọc" [level=2] [ref=e33]
+          - paragraph [ref=e34]: Lớp 7 · 10 từ/ngày
+      - generic [ref=e35]:
+        - generic [ref=e36]:
+          - paragraph [ref=e37]: XP
+          - paragraph [ref=e38]: "0"
+        - generic [ref=e39]:
+          - paragraph [ref=e40]: Streak
+          - paragraph [ref=e41]: 0 ngày
+      - button "Vào học với Bảo Ngọc" [ref=e42] [cursor=pointer]:
+        - img [ref=e43]
+        - text: Vào học với Bảo Ngọc
+    - generic [ref=e46]:
+      - generic [ref=e48]:
+        - generic [ref=e49]: m
+        - generic [ref=e50]:
+          - heading "Bảo Nam" [level=2] [ref=e51]
+          - paragraph [ref=e52]: Lớp 5 · 10 từ/ngày
+      - generic [ref=e53]:
+        - generic [ref=e54]:
+          - paragraph [ref=e55]: XP
+          - paragraph [ref=e56]: "0"
+        - generic [ref=e57]:
+          - paragraph [ref=e58]: Streak
+          - paragraph [ref=e59]: 0 ngày
+      - button "Vào học với Bảo Nam" [ref=e60] [cursor=pointer]:
+        - img [ref=e61]
+        - text: Vào học với Bảo Nam
