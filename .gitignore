@@ -1,0 +1,24 @@
+# dependencies
+node_modules/
+
+# build
+dist/
+build/
+
+# env & secrets (KHÔNG commit API key)
+.env
+.env.local
+.env.*.local
+*.key
+serviceAccount*.json
+
+# firebase
+.firebase/
+firebase-debug.log
+functions/node_modules/
+
+# editor / OS
+.DS_Store
+.vscode/
+.idea/
+*.log
