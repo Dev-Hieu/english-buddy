@@ -150,6 +150,7 @@ export function App() {
   const studiedWordIds = progress.filter((p) => p.mastery > 0).map((p) => p.wordId);
   const todayStr = new Date().toDateString();
   const learnedToday = progress.filter((p) => p.lastReviewedAt && new Date(p.lastReviewedAt).toDateString() === todayStr).length;
+  const reviewDue = progress.filter((p) => p.mastery > 0 && p.nextReviewAt && p.nextReviewAt <= Date.now()).length;
 
   let content: React.ReactNode;
   switch (route.view) {
@@ -198,9 +199,10 @@ export function App() {
           xp={xp}
           learnedTotal={studiedWordIds.length}
           learnedToday={learnedToday}
+          reviewDue={reviewDue}
           onChangeStudent={() => navigate("student-select")}
           onLogout={doLogout}
-          onNavigate={(view, topicId) => navigate(view as View, topicId)}
+          onNavigate={(view, topicId, level) => navigate(view as View, topicId, level as Level | "all" | undefined)}
         />
       );
   }

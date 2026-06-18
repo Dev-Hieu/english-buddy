@@ -1,4 +1,5 @@
-import { BarChart3, BookMarked, ChevronRight, Flame, LogOut, Play, Star, Trophy, UserRound } from "lucide-react";
+import { BarChart3, BookMarked, ChevronRight, Flame, LogOut, Play, RotateCcw, Star, Trophy, UserRound } from "lucide-react";
+import type { ComponentType } from "react";
 import { SEED_TOPICS } from "@/data/seedTopics";
 import { SEED_VOCABULARY } from "@/data/seedVocabulary";
 import type { Student } from "@/types";
@@ -18,12 +19,39 @@ interface HomePageProps {
   xp: number;
   learnedTotal: number;
   learnedToday: number;
+  reviewDue: number;
   onChangeStudent: () => void;
   onLogout: () => void;
   onNavigate: Nav;
 }
 
-export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, learnedToday, onChangeStudent, onLogout, onNavigate }: HomePageProps) {
+// Thẻ điều hướng dạng hàng (dùng lại cho Xếp hạng / My Words / Bảng theo dõi).
+function NavRow({ icon: Icon, iconClass, title, subtitle, onClick }: {
+  icon: ComponentType<{ className?: string }>;
+  iconClass: string;
+  title: string;
+  subtitle: string;
+  onClick: () => void;
+}) {
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      className="flex w-full items-center gap-3 rounded-3xl border border-border/70 bg-card p-4 shadow-card transition-transform active:scale-[0.99]"
+    >
+      <span className={cn("flex h-11 w-11 items-center justify-center rounded-2xl", iconClass)}>
+        <Icon className="h-5 w-5" />
+      </span>
+      <span className="flex-1 text-left">
+        <span className="block font-extrabold">{title}</span>
+        <span className="block text-sm font-semibold text-muted-foreground">{subtitle}</span>
+      </span>
+      <ChevronRight className="h-5 w-5 text-muted-foreground" />
+    </button>
+  );
+}
+
+export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, learnedToday, reviewDue, onChangeStudent, onLogout, onNavigate }: HomePageProps) {
   const learned = new Set(studiedWordIds);
   const goal = student.dailyGoal || 10;
   const goalReached = learnedToday >= goal;
@@ -33,8 +61,18 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
   const wordsOf = (topicId: string) =>
     SEED_VOCABULARY.filter((w) => w.topicIds.includes(topicId) && (learnLevel === "all" || w.level === learnLevel));
   const topicsAtLevel = SEED_TOPICS.filter((t) => wordsOf(t.id).length > 0);
-  const badges = computeBadges({ learned: learnedTotal, streak, xp });
-  const earnedBadges = badges.filter((b) => b.earned);
+  const earnedBadges = computeBadges({ learned: learnedTotal, streak, xp }).filter((b) => b.earned);
+
+  // "Học tiếp": ưu tiên chủ đề đang học dở; nếu chưa có thì chủ đề đầu tiên.
+  const resumeTopic =
+    topicsAtLevel.find((t) => {
+      const ws = wordsOf(t.id);
+      const done = ws.filter((w) => learned.has(w.id)).length;
+      return done > 0 && done < ws.length;
+    }) ?? topicsAtLevel[0];
+  const resumeStarted = resumeTopic ? wordsOf(resumeTopic.id).some((w) => learned.has(w.id)) : false;
+  const startLearning = () =>
+    resumeTopic ? onNavigate("lesson", resumeTopic.id, learnLevel) : onNavigate("topics");
 
   return (
     <main className="mx-auto w-full max-w-2xl px-4 pt-5">
@@ -53,12 +91,6 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
           </div>
         </div>
         <div className="flex items-center gap-2">
-          <span className="flex items-center gap-1 rounded-full bg-accent/15 px-3 py-1.5 text-sm font-extrabold text-accent">
-            <Flame className="h-4 w-4" /> {streak}
-          </span>
-          <span className="flex items-center gap-1 rounded-full bg-secondary px-3 py-1.5 text-sm font-extrabold text-secondary-foreground">
-            <Star className="h-4 w-4" /> {xp}
-          </span>
           <ThemePicker />
           <Button type="button" size="icon" variant="outline" aria-label="Đổi bé" onClick={onChangeStudent}>
             <UserRound className="h-5 w-5" />
@@ -69,7 +101,7 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
         </div>
       </header>
 
-      {/* Hero: mục tiêu hôm nay */}
+      {/* Hero: mục tiêu hôm nay + streak/XP */}
       <section className="mt-5 overflow-hidden rounded-3xl bg-gradient-to-br from-primary to-success p-5 text-primary-foreground shadow-soft">
         <div className="flex items-center gap-5">
           <ProgressRing value={learnedToday} max={goal} size={92} stroke={10}>
@@ -81,31 +113,38 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
             <h1 className="text-2xl font-black leading-tight">
               {goalReached ? "Hoàn thành rồi! 🎉" : `Học ${goal - learnedToday} từ nữa nào`}
             </h1>
+            <div className="mt-2 flex items-center gap-2">
+              <span className="flex items-center gap-1 rounded-full bg-white/20 px-2.5 py-1 text-sm font-extrabold">
+                <Flame className="h-4 w-4" /> {streak}
+              </span>
+              <span className="flex items-center gap-1 rounded-full bg-white/20 px-2.5 py-1 text-sm font-extrabold">
+                <Star className="h-4 w-4" /> {xp}
+              </span>
+            </div>
           </div>
         </div>
-        <Button type="button" variant="accent" size="lg" className="mt-4 w-full" onClick={() => onNavigate("topics")}>
-          <Play className="h-5 w-5" /> Học tiếp
+        <Button type="button" variant="accent" size="lg" className="mt-4 w-full" onClick={startLearning}>
+          <Play className="h-5 w-5" /> {resumeStarted ? "Học tiếp" : "Bắt đầu học"}
         </Button>
       </section>
 
-      {/* Huy hiệu */}
-      <section className="mt-5">
-        <h2 className="mb-2 text-xl font-extrabold">Huy hiệu {earnedBadges.length ? `(${earnedBadges.length})` : ""}</h2>
-        <div className="flex flex-wrap gap-2">
-          {badges.map((b) => (
-            <span
-              key={b.id}
-              title={b.label}
-              className={cn(
-                "flex items-center gap-1 rounded-full px-3 py-1.5 text-sm font-extrabold",
-                b.earned ? "bg-accent/15 text-accent" : "bg-muted text-muted-foreground opacity-50",
-              )}
-            >
-              <span className={b.earned ? "" : "grayscale"}>{b.emoji}</span> {b.label}
-            </span>
-          ))}
-        </div>
-      </section>
+      {/* Cần ôn hôm nay (chỉ hiện khi có từ đến hạn) */}
+      {reviewDue > 0 ? (
+        <button
+          type="button"
+          onClick={() => onNavigate("review")}
+          className="mt-4 flex w-full items-center gap-3 rounded-3xl border-2 border-accent/40 bg-accent/10 p-4 shadow-card transition-transform active:scale-[0.99]"
+        >
+          <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-accent/20 text-accent">
+            <RotateCcw className="h-5 w-5" />
+          </span>
+          <span className="flex-1 text-left">
+            <span className="block font-extrabold">Cần ôn hôm nay</span>
+            <span className="block text-sm font-semibold text-muted-foreground">{reviewDue} từ đã đến hạn ôn tập</span>
+          </span>
+          <ChevronRight className="h-5 w-5 text-accent" />
+        </button>
+      ) : null}
 
       {/* Chủ đề */}
       <section className="mt-6">
@@ -140,50 +179,25 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
         </div>
       </section>
 
-      {/* My Words + Xếp hạng + Báo cáo phụ huynh */}
+      {/* Huy hiệu đã đạt (thu gọn) */}
+      {earnedBadges.length ? (
+        <section className="mt-6">
+          <h2 className="mb-2 text-xl font-extrabold">Huy hiệu ({earnedBadges.length})</h2>
+          <div className="flex flex-wrap gap-2">
+            {earnedBadges.map((b) => (
+              <span key={b.id} title={b.label} className="flex items-center gap-1 rounded-full bg-accent/15 px-3 py-1.5 text-sm font-extrabold text-accent">
+                <span>{b.emoji}</span> {b.label}
+              </span>
+            ))}
+          </div>
+        </section>
+      ) : null}
+
+      {/* Xếp hạng + My Words + Báo cáo phụ huynh */}
       <section className="mt-6 space-y-3">
-        <button
-          type="button"
-          onClick={() => onNavigate("leaderboard")}
-          className="flex w-full items-center gap-3 rounded-3xl border border-border/70 bg-card p-4 shadow-card transition-transform active:scale-[0.99]"
-        >
-          <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-accent/15 text-accent">
-            <Trophy className="h-5 w-5" />
-          </span>
-          <span className="flex-1 text-left">
-            <span className="block font-extrabold">Bảng xếp hạng</span>
-            <span className="block text-sm font-semibold text-muted-foreground">Thi đua điểm XP với các bạn</span>
-          </span>
-          <ChevronRight className="h-5 w-5 text-muted-foreground" />
-        </button>
-        <button
-          type="button"
-          onClick={() => onNavigate("mywords")}
-          className="flex w-full items-center gap-3 rounded-3xl border border-border/70 bg-card p-4 shadow-card transition-transform active:scale-[0.99]"
-        >
-          <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-secondary text-secondary-foreground">
-            <BookMarked className="h-5 w-5" />
-          </span>
-          <span className="flex-1 text-left">
-            <span className="block font-extrabold">My Words</span>
-            <span className="block text-sm font-semibold text-muted-foreground">Từ con đã lưu khi tra</span>
-          </span>
-          <ChevronRight className="h-5 w-5 text-muted-foreground" />
-        </button>
-        <button
-          type="button"
-          onClick={() => onNavigate("dashboard")}
-          className="flex w-full items-center gap-3 rounded-3xl border border-border/70 bg-card p-4 shadow-card transition-transform active:scale-[0.99]"
-        >
-          <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-secondary text-secondary-foreground">
-            <BarChart3 className="h-5 w-5" />
-          </span>
-          <span className="flex-1 text-left">
-            <span className="block font-extrabold">Bảng theo dõi</span>
-            <span className="block text-sm font-semibold text-muted-foreground">Tiến độ của các bé (phụ huynh)</span>
-          </span>
-          <ChevronRight className="h-5 w-5 text-muted-foreground" />
-        </button>
+        <NavRow icon={Trophy} iconClass="bg-accent/15 text-accent" title="Bảng xếp hạng" subtitle="Thi đua điểm XP với các bạn" onClick={() => onNavigate("leaderboard")} />
+        <NavRow icon={BookMarked} iconClass="bg-secondary text-secondary-foreground" title="My Words" subtitle="Từ con đã lưu khi tra" onClick={() => onNavigate("mywords")} />
+        <NavRow icon={BarChart3} iconClass="bg-secondary text-secondary-foreground" title="Bảng theo dõi" subtitle="Tiến độ của các bé (phụ huynh)" onClick={() => onNavigate("dashboard")} />
       </section>
     </main>
   );
