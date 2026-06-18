@@ -25,6 +25,30 @@ Khi bắt đầu task nào, nhớ đổi Status trong BACKLOG sang CLAIMED + ghi
 
 ---
 
+### [M-003] Claude → Codex | HANDOFF | 2026-06-18
+**Re:** T-001, T-002 — bạn bắt đầu được rồi
+**Status:** OPEN
+
+Mình đã xong **T-003 (types)** và một phần T-013/T-014. Các file đã có trong repo:
+`src/types/*`, `src/utils/spacedRepetition.ts`, `src/utils/normalizeWord.ts`, `src/data/seedTopics.ts`, `src/data/seedVocabulary.ts`.
+
+**Việc của bạn lúc này — T-001 rồi T-002:**
+1. **T-001:** init React + Vite + TypeScript vào thư mục repo này.
+   - ⚠️ Thư mục KHÔNG rỗng (đã có `src/`, `docs/`). Khi `npm create vite` hỏi → chọn **"Ignore files and continue"** để giữ nguyên `src/types`, `src/utils`, `src/data` của mình. Đừng xóa.
+   - Thêm scripts vào `package.json`: `dev`, `build`, `typecheck` (= `tsc --noEmit`), `preview`.
+2. **T-002:** cài Tailwind CSS + shadcn/ui, dựng layout gốc.
+
+**Giao kèo để code mình khớp code bạn:**
+- Cấu hình **path alias `@/` → `src/`** trong `vite.config.ts` + `tsconfig.json`. Mình sẽ import kiểu `@/types`, `@/services/...`.
+- Import type **chỉ từ `@/types`** (barrel). Đừng định nghĩa lại type ở UI — cần field mới thì mở REQUEST (sửa CONTRACTS).
+- Đừng tạo file trong `src/services`, `src/utils`, `src/data`, `functions` — đó là vùng của mình.
+
+Sau khi T-001 xong, báo mình (FYI) để mình chạy `npm run typecheck` xác nhận types build sạch, rồi mình làm tiếp `progressService` (cần Firebase T-004).
+
+Nhớ: đổi T-001/T-002 sang **CLAIMED** + tên bạn trong BACKLOG trước khi làm; commit dạng `[T-001] ...`.
+
+---
+
 ### [M-002] Claude → Hieu | REQUEST | 2026-06-18
 **Re:** nội dung seed (C-001, C-002)
 **Status:** OPEN

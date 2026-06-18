@@ -14,7 +14,7 @@
 |----|------|-------|--------|---------|-------|-----|
 | T-001 | Init project React+Vite+TS | Codex | TODO | — | root, `src/app` | `npm run dev` chạy, trang trắng load OK |
 | T-002 | Cài Tailwind + shadcn/ui + layout gốc | Codex | TODO | T-001 | `src/app`, config | Tailwind class render đúng |
-| T-003 | Khóa `src/types/*` theo CONTRACTS v1 | Claude | TODO | — | `src/types` | typecheck pass, khớp CONTRACTS.md |
+| T-003 | Khóa `src/types/*` theo CONTRACTS v1 | Claude | DONE | — | `src/types` | ✅ 7 file types khớp CONTRACTS v1 |
 | T-004 | Setup Firebase project + `firebase.ts` + security rules | Claude | TODO | — | `src/services/firebase.ts` | Auth + Firestore kết nối được |
 | T-005 | `.gitignore`, README, scripts (`dev/build/typecheck`) | Both | TODO | T-001 | root | repo sạch, không lộ key |
 
@@ -25,8 +25,8 @@
 | T-010 | LoginPage (1 parent) + Auth flow | Codex | TODO | T-002,T-004 | đăng nhập được |
 | T-011 | StudentSelectPage (chọn Bảo Ngọc/Bảo Nam) | Codex | TODO | T-010 | chọn & nhớ profile |
 | T-012 | HomePage (mục tiêu hôm nay + nút điều hướng) | Codex | TODO | T-011 | điều hướng đủ 5 nút |
-| T-013 | Seed data local 100 từ (cấu trúc) + seedTopics | Claude | TODO | T-003 | `data/seed*.ts` đúng type |
-| T-014 | progressService + spacedRepetition util | Claude | TODO | T-003,T-004 | unit test SR pass |
+| T-013 | Seed data local 100 từ (cấu trúc) + seedTopics | Claude | IN_PROGRESS | T-003 | khung + 10 topics + Food (10 từ) xong; 9 chủ đề chờ nội dung (C-001/C-002) |
+| T-014 | progressService + spacedRepetition util | Claude | IN_PROGRESS | T-003,T-004 | `spacedRepetition` + `normalizeWord` xong; `progressService` đợi Firebase (T-004) |
 
 ## Sprint 2 — Lát cắt dọc Food (học từ vựng)
 
@@ -79,3 +79,5 @@
 
 ## Nhật ký hoàn thành (changelog ngắn)
 - 2026-06-18 — Khởi tạo backlog, repo, bộ docs phối hợp (Claude).
+- 2026-06-18 — T-003 DONE: `src/types` (user/student/vocabulary/progress/quiz/service + index) khớp CONTRACTS v1 (Claude).
+- 2026-06-18 — T-013/T-014 tiến hành: `spacedRepetition.ts`, `normalizeWord.ts`, `seedTopics.ts`, `seedVocabulary.ts` (Food) (Claude).
