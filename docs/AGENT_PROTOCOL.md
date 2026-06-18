@@ -74,6 +74,21 @@ Quy tắc:
 
 ---
 
+## 4b. Ý kiến / phản biện đi vào đâu?
+
+**MESSAGES.md = nơi thảo luận. DECISIONS.md = nơi ghi kết luận đã chốt.**
+Bất kỳ agent nào (kể cả Codex) có ý kiến đều mở tin ở MESSAGES.md trước; **không tự sửa thẳng** DECISIONS.md / CONTRACTS.md khi chưa trao đổi.
+
+| Loại ý kiến | File | Cách ghi |
+|-------------|------|----------|
+| Phản biện một quyết định thiết kế | MESSAGES.md `DECISION` | bàn → nếu chốt, thêm mục `D-xxx` mới vào DECISIONS.md (tham chiếu mục cũ, không sửa lịch sử) |
+| Đổi/thêm type chung | MESSAGES.md `REQUEST` | Claude (steward) cập nhật CONTRACTS.md + tăng version |
+| Bị chặn / cần hỗ trợ | MESSAGES.md `BLOCKER`/`REQUEST` | + đổi task sang `BLOCKED` trong BACKLOG.md |
+| Góp ý phạm vi/chia task | BACKLOG.md (ghi chú) + `FYI` ở MESSAGES.md | |
+| Nhờ review / trao đổi chung | MESSAGES.md `REVIEW`/`FYI` | |
+
+Người chốt cuối cho các `DECISION` còn phân vân: **anh Hiếu**.
+
 ## 5. Nghi thức đầu/cuối phiên (bắt buộc)
 
 **Đầu phiên:**
