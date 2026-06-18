@@ -1,4 +1,4 @@
-import { Ear, Grid3x3, Images, Link2, PartyPopper, Volume2 } from "lucide-react";
+import { Ear, Grid3x3, Images, Link2, PartyPopper, Puzzle, Volume2 } from "lucide-react";
 import { useMemo, useState } from "react";
 import { SEED_VOCABULARY } from "@/data/seedVocabulary";
 import type { Student, VocabularyWord } from "@/types";
@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { SessionHeader } from "@/components/layout/SessionHeader";
 import { SudokuGame } from "@/components/games/SudokuGame";
+import { PictureWordGame } from "@/components/games/PictureWordGame";
 
 interface GamesPageProps {
   student: Student;
@@ -16,7 +17,7 @@ interface GamesPageProps {
   onBackHome: () => void;
 }
 
-type Game = "menu" | "match" | "pick" | "listen" | "sudoku";
+type Game = "menu" | "match" | "pick" | "listen" | "build" | "sudoku";
 
 function shuffle<T>(a: T[]): T[] {
   const r = [...a];
@@ -42,6 +43,7 @@ export function GamesPage({ student, topicId, onBackHome }: GamesPageProps) {
       { id: "match" as const, name: "Ghép từ", desc: "Nối từ với nghĩa", icon: Link2, emoji: "🔗" },
       { id: "pick" as const, name: "Chọn ảnh", desc: "Nhìn từ, chọn ảnh", icon: Images, emoji: "🖼️" },
       { id: "listen" as const, name: "Nghe & chọn", desc: "Nghe rồi chọn từ", icon: Ear, emoji: "👂" },
+      { id: "build" as const, name: "Đuổi hình bắt chữ", desc: "Nhìn hình, ghép chữ", icon: Puzzle, emoji: "🧩" },
       { id: "sudoku" as const, name: "Sudoku", desc: "Điền số 1-9 rèn tư duy", icon: Grid3x3, emoji: "🔢" },
     ];
     return (
@@ -72,6 +74,7 @@ export function GamesPage({ student, topicId, onBackHome }: GamesPageProps) {
       {game === "match" && <MatchGame pool={pool} onRecord={record} onClose={back} />}
       {game === "pick" && <PickGame pool={pool} onRecord={record} onClose={back} />}
       {game === "listen" && <ListenGame pool={pool} onRecord={record} onClose={back} />}
+      {game === "build" && <PictureWordGame pool={pool} onRecord={record} onClose={back} />}
       {game === "sudoku" && <SudokuGame onClose={back} />}
     </main>
   );
