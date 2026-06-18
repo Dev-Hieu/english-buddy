@@ -1,5 +1,10 @@
 import type { VocabularyWord } from "../types";
 import { IMAGE_URLS } from "./seedImages";
+import { KIDS_WORDS } from "./vocab/kids";
+import { A2_WORDS } from "./vocab/a2";
+import { B1_WORDS } from "./vocab/b1";
+import { B2_WORDS } from "./vocab/b2";
+import { C1_WORDS } from "./vocab/c1";
 
 // Mốc thời gian seed cố định (tránh giá trị động giữa các lần chạy).
 const SEED_CREATED_AT = Date.UTC(2026, 5, 18); // 2026-06-18
@@ -14,7 +19,7 @@ type Seed = Omit<VocabularyWord, "level" | "source" | "createdAt" | "imageUrl" |
 function word(s: Seed): VocabularyWord {
   return {
     ...s,
-    level: "beginner",
+    level: "a1",
     imageUrl: IMAGE_URLS[s.id] ?? "", // ảnh Pexels (seedImages.ts); rỗng -> placeholder
     audioUrl: "",
     source: "seed",
@@ -22,7 +27,7 @@ function word(s: Seed): VocabularyWord {
   };
 }
 
-export const SEED_VOCABULARY: VocabularyWord[] = [
+const CORE_WORDS: VocabularyWord[] = [
   // ── Food ──
   word({ id: "word_apple", word: "apple", phonetic: "/ˈæp.əl/", meaning_vi: "quả táo", meaning_en: "a round fruit with red, green, or yellow skin", example: "I eat an apple every day.", example_vi: "Con ăn một quả táo mỗi ngày.", topicIds: ["topic_food"] }),
   word({ id: "word_banana", word: "banana", phonetic: "/bəˈnɑː.nə/", meaning_vi: "quả chuối", meaning_en: "a long curved fruit with yellow skin", example: "Monkeys like bananas.", example_vi: "Khỉ thích chuối.", topicIds: ["topic_food"] }),
@@ -141,4 +146,9 @@ export const SEED_VOCABULARY: VocabularyWord[] = [
   word({ id: "word_hotel", word: "hotel", phonetic: "/həʊˈtel/", meaning_vi: "khách sạn", example: "We stay in a hotel.", example_vi: "Chúng con ở khách sạn.", topicIds: ["topic_travel"] }),
   word({ id: "word_beach", word: "beach", phonetic: "/biːtʃ/", meaning_vi: "bãi biển", example: "I play on the beach.", example_vi: "Con chơi ở bãi biển.", topicIds: ["topic_travel"] }),
   word({ id: "word_mountain", word: "mountain", phonetic: "/ˈmaʊn.tɪn/", meaning_vi: "ngọn núi", example: "The mountain is high.", example_vi: "Ngọn núi cao.", topicIds: ["topic_travel"] }),
+];
+
+// Gộp toàn bộ: từ cơ bản + 5 cấp độ (kids/a2/b1/b2/c1) do các agent sinh.
+export const SEED_VOCABULARY: VocabularyWord[] = [
+  ...CORE_WORDS, ...KIDS_WORDS, ...A2_WORDS, ...B1_WORDS, ...B2_WORDS, ...C1_WORDS,
 ];

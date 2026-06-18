@@ -1,0 +1,60 @@
+import type { VocabularyWord } from "../../types";
+import { mk } from "./_mk";
+
+// mk(level, id, word, phonetic, meaning_vi, meaning_en, example, example_vi, topicIds)
+export const B1_WORDS: VocabularyWord[] = [
+  mk("b1", "word_b1_pollution", "pollution", "/pəˈluː.ʃən/", "ô nhiễm", "harmful substances in air, water or soil", "Air pollution is a big problem.", "Ô nhiễm không khí là vấn đề lớn.", ["topic_environment"]),
+  mk("b1", "word_b1_recycle", "recycle", "/ˌriːˈsaɪ.kəl/", "tái chế", "to treat waste so it can be used again", "We should recycle paper and plastic.", "Chúng ta nên tái chế giấy và nhựa.", ["topic_environment"]),
+  mk("b1", "word_b1_climate", "climate", "/ˈklaɪ.mət/", "khí hậu", "the usual weather conditions in an area", "The climate is changing very fast.", "Khí hậu đang thay đổi rất nhanh.", ["topic_environment"]),
+  mk("b1", "word_b1_renewable", "renewable", "/rɪˈnjuː.ə.bəl/", "có thể tái tạo", "energy that does not run out", "Solar power is a renewable energy source.", "Năng lượng mặt trời là nguồn năng lượng tái tạo.", ["topic_environment"]),
+  mk("b1", "word_b1_endangered", "endangered", "/ɪnˈdeɪn.dʒəd/", "có nguy cơ tuyệt chủng", "at risk of disappearing", "Tigers are an endangered species.", "Hổ là loài có nguy cơ tuyệt chủng.", ["topic_environment"]),
+  mk("b1", "word_b1_waste", "waste", "/weɪst/", "rác thải, lãng phí", "material that is no longer useful", "The factory produces a lot of waste.", "Nhà máy tạo ra rất nhiều rác thải.", ["topic_environment"]),
+  mk("b1", "word_b1_forest", "forest", "/ˈfɒr.ɪst/", "rừng", "a large area covered with trees", "Many animals live in the forest.", "Nhiều loài vật sống trong rừng.", ["topic_environment"]),
+  mk("b1", "word_b1_drought", "drought", "/draʊt/", "hạn hán", "a long period without rain", "The drought destroyed many crops.", "Hạn hán đã phá hủy nhiều vụ mùa.", ["topic_environment"]),
+
+  mk("b1", "word_b1_device", "device", "/dɪˈvaɪs/", "thiết bị", "a piece of equipment for a purpose", "This device can measure your heart rate.", "Thiết bị này có thể đo nhịp tim của bạn.", ["topic_technology"]),
+  mk("b1", "word_b1_software", "software", "/ˈsɒft.weər/", "phần mềm", "programs used by a computer", "I need to update the software on my laptop.", "Tôi cần cập nhật phần mềm trên máy tính.", ["topic_technology"]),
+  mk("b1", "word_b1_download", "download", "/ˌdaʊnˈləʊd/", "tải xuống", "to copy data from the internet", "It took an hour to download the file.", "Mất một giờ để tải xuống tập tin.", ["topic_technology"]),
+  mk("b1", "word_b1_password", "password", "/ˈpɑːs.wɜːd/", "mật khẩu", "a secret word used to access something", "Please choose a strong password.", "Hãy chọn một mật khẩu mạnh.", ["topic_technology"]),
+  mk("b1", "word_b1_screen", "screen", "/skriːn/", "màn hình", "the flat surface that shows images", "The phone has a large screen.", "Chiếc điện thoại có màn hình lớn.", ["topic_technology"]),
+  mk("b1", "word_b1_network", "network", "/ˈnet.wɜːk/", "mạng lưới", "a system of connected computers", "The office network is very slow today.", "Mạng của văn phòng hôm nay rất chậm.", ["topic_technology"]),
+  mk("b1", "word_b1_wireless", "wireless", "/ˈwaɪə.ləs/", "không dây", "working without wires or cables", "The hotel offers free wireless internet.", "Khách sạn cung cấp internet không dây miễn phí.", ["topic_technology"]),
+  mk("b1", "word_b1_update", "update", "/ʌpˈdeɪt/", "cập nhật", "to make something more modern", "You should update your app regularly.", "Bạn nên cập nhật ứng dụng thường xuyên.", ["topic_technology"]),
+
+  mk("b1", "word_b1_symptom", "symptom", "/ˈsɪmp.təm/", "triệu chứng", "a sign that you have an illness", "A fever is a common symptom of flu.", "Sốt là một triệu chứng phổ biến của cúm.", ["topic_health"]),
+  mk("b1", "word_b1_disease", "disease", "/dɪˈziːz/", "bệnh tật", "an illness of the body", "Doctors are trying to cure the disease.", "Các bác sĩ đang cố gắng chữa căn bệnh này.", ["topic_health"]),
+  mk("b1", "word_b1_treatment", "treatment", "/ˈtriːt.mənt/", "sự điều trị", "medical care given to a patient", "The treatment lasted three weeks.", "Quá trình điều trị kéo dài ba tuần.", ["topic_health"]),
+  mk("b1", "word_b1_exercise", "exercise", "/ˈek.sə.saɪz/", "tập thể dục", "physical activity to stay fit", "Regular exercise keeps you healthy.", "Tập thể dục thường xuyên giúp bạn khỏe mạnh.", ["topic_health"]),
+  mk("b1", "word_b1_nutrition", "nutrition", "/njuːˈtrɪʃ.ən/", "dinh dưỡng", "the food needed for health and growth", "Good nutrition is important for children.", "Dinh dưỡng tốt rất quan trọng với trẻ em.", ["topic_health"]),
+  mk("b1", "word_b1_injury", "injury", "/ˈɪn.dʒər.i/", "chấn thương", "physical harm to the body", "He suffered a knee injury while running.", "Anh ấy bị chấn thương đầu gối khi chạy.", ["topic_health"]),
+  mk("b1", "word_b1_recover", "recover", "/rɪˈkʌv.ər/", "hồi phục", "to become healthy again", "She is recovering well after the surgery.", "Cô ấy đang hồi phục tốt sau ca phẫu thuật.", ["topic_health"]),
+  mk("b1", "word_b1_prescription", "prescription", "/prɪˈskrɪp.ʃən/", "đơn thuốc", "a written order for medicine", "The doctor gave me a prescription.", "Bác sĩ đã đưa cho tôi một đơn thuốc.", ["topic_health"]),
+
+  mk("b1", "word_b1_destination", "destination", "/ˌdes.tɪˈneɪ.ʃən/", "điểm đến", "the place you are travelling to", "Paris is a popular tourist destination.", "Paris là một điểm đến du lịch nổi tiếng.", ["topic_travel"]),
+  mk("b1", "word_b1_luggage", "luggage", "/ˈlʌɡ.ɪdʒ/", "hành lý", "the bags you take when travelling", "Don't forget your luggage at the airport.", "Đừng quên hành lý ở sân bay.", ["topic_travel"]),
+  mk("b1", "word_b1_passport", "passport", "/ˈpɑːs.pɔːt/", "hộ chiếu", "an official document for travel abroad", "You need a passport to travel abroad.", "Bạn cần hộ chiếu để đi du lịch nước ngoài.", ["topic_travel"]),
+  mk("b1", "word_b1_booking", "booking", "/ˈbʊk.ɪŋ/", "việc đặt chỗ", "an arrangement made in advance", "I made a booking for two nights.", "Tôi đã đặt phòng cho hai đêm.", ["topic_travel"]),
+  mk("b1", "word_b1_journey", "journey", "/ˈdʒɜː.ni/", "chuyến đi", "an act of travelling from one place to another", "The journey to the mountains took five hours.", "Chuyến đi tới vùng núi mất năm tiếng.", ["topic_travel"]),
+  mk("b1", "word_b1_sightseeing", "sightseeing", "/ˈsaɪtˌsiː.ɪŋ/", "tham quan", "visiting interesting places as a tourist", "We went sightseeing in the old town.", "Chúng tôi đi tham quan khu phố cổ.", ["topic_travel"]),
+  mk("b1", "word_b1_abroad", "abroad", "/əˈbrɔːd/", "ở nước ngoài", "in or to a foreign country", "She is studying abroad this year.", "Cô ấy đang du học ở nước ngoài năm nay.", ["topic_travel"]),
+  mk("b1", "word_b1_souvenir", "souvenir", "/ˌsuː.vənˈɪər/", "quà lưu niệm", "an object kept to remember a place", "I bought a souvenir for my mother.", "Tôi đã mua một món quà lưu niệm cho mẹ.", ["topic_travel"]),
+
+  mk("b1", "word_b1_colleague", "colleague", "/ˈkɒl.iːɡ/", "đồng nghiệp", "a person you work with", "My colleague helped me with the report.", "Đồng nghiệp của tôi đã giúp tôi làm báo cáo.", ["topic_work"]),
+  mk("b1", "word_b1_deadline", "deadline", "/ˈded.laɪn/", "hạn chót", "the time by which something must be done", "We must finish before the deadline.", "Chúng ta phải hoàn thành trước hạn chót.", ["topic_work"]),
+  mk("b1", "word_b1_meeting", "meeting", "/ˈmiː.tɪŋ/", "cuộc họp", "an event where people gather to discuss", "The meeting starts at nine o'clock.", "Cuộc họp bắt đầu lúc chín giờ.", ["topic_work"]),
+  mk("b1", "word_b1_salary", "salary", "/ˈsæl.ər.i/", "lương", "money paid for a job each month", "He earns a good salary at the bank.", "Anh ấy kiếm được mức lương tốt ở ngân hàng.", ["topic_work"]),
+  mk("b1", "word_b1_interview", "interview", "/ˈɪn.tə.vjuː/", "phỏng vấn", "a formal meeting to assess someone", "She has a job interview tomorrow.", "Cô ấy có buổi phỏng vấn việc làm vào ngày mai.", ["topic_work"]),
+  mk("b1", "word_b1_promotion", "promotion", "/prəˈməʊ.ʃən/", "sự thăng chức", "a move to a higher job position", "He got a promotion after two years.", "Anh ấy được thăng chức sau hai năm.", ["topic_work"]),
+  mk("b1", "word_b1_employee", "employee", "/ɪmˈplɔɪ.iː/", "nhân viên", "a person who works for a company", "The company has over 500 employees.", "Công ty có hơn 500 nhân viên.", ["topic_work"]),
+  mk("b1", "word_b1_skill", "skill", "/skɪl/", "kỹ năng", "an ability to do something well", "Communication is an important skill.", "Giao tiếp là một kỹ năng quan trọng.", ["topic_work"]),
+  mk("b1", "word_b1_schedule", "schedule", "/ˈʃed.juːl/", "lịch trình", "a plan of things to do at set times", "My schedule is very busy this week.", "Lịch trình của tôi rất bận trong tuần này.", ["topic_work"]),
+
+  mk("b1", "word_b1_neighbour", "neighbour", "/ˈneɪ.bər/", "hàng xóm", "a person who lives near you", "My neighbour is very friendly.", "Hàng xóm của tôi rất thân thiện.", ["topic_daily"]),
+  mk("b1", "word_b1_chore", "chore", "/tʃɔːr/", "việc vặt", "a small job done regularly at home", "Washing dishes is my least favourite chore.", "Rửa bát là việc vặt tôi ít thích nhất.", ["topic_daily"]),
+  mk("b1", "word_b1_routine", "routine", "/ruːˈtiːn/", "thói quen hằng ngày", "a regular way of doing things", "Going for a walk is part of my routine.", "Đi dạo là một phần thói quen của tôi.", ["topic_daily"]),
+  mk("b1", "word_b1_grocery", "grocery", "/ˈɡrəʊ.sər.i/", "đồ tạp hóa", "food and items bought at a shop", "I do the grocery shopping on Sundays.", "Tôi đi mua đồ tạp hóa vào Chủ nhật.", ["topic_daily"]),
+  mk("b1", "word_b1_furniture", "furniture", "/ˈfɜː.nɪ.tʃər/", "đồ nội thất", "large objects used in a home", "We bought new furniture for the living room.", "Chúng tôi mua đồ nội thất mới cho phòng khách.", ["topic_daily"]),
+  mk("b1", "word_b1_appointment", "appointment", "/əˈpɔɪnt.mənt/", "cuộc hẹn", "an arrangement to meet at a set time", "I have a dentist appointment at noon.", "Tôi có cuộc hẹn với nha sĩ vào buổi trưa.", ["topic_daily"]),
+  mk("b1", "word_b1_budget", "budget", "/ˈbʌdʒ.ɪt/", "ngân sách", "a plan for spending money", "We need to stick to our monthly budget.", "Chúng ta cần tuân theo ngân sách hằng tháng.", ["topic_daily"]),
+  mk("b1", "word_b1_hobby", "hobby", "/ˈhɒb.i/", "sở thích", "an activity done for pleasure", "Painting is her favourite hobby.", "Vẽ tranh là sở thích yêu thích của cô ấy.", ["topic_daily"]),
+];

@@ -152,7 +152,7 @@ export function createApp() {
     }
     const row = {
       id: "student_" + randomUUID().slice(0, 8), parentId: user.id, name: String(name).trim(),
-      grade: Number(grade) || 1, level: "beginner", avatar: avatar || "girl_avatar_01",
+      grade: Number(grade) || 1, level: "a1", avatar: avatar || "girl_avatar_01",
       dailyGoal: Number(dailyGoal) || 10, xp: 0, streak: 0, createdAt: Date.now(), lastActiveDate: null,
     };
     db.prepare(`INSERT INTO students (id,parentId,name,grade,level,avatar,dailyGoal,xp,streak,createdAt,lastActiveDate)
