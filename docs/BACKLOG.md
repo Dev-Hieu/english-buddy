@@ -65,7 +65,7 @@
 | T-050 | ParentDashboard (tiến độ từng bé) | Claude | DONE | T-014,T-044 | ✅ DashboardPage: đã học/cần ôn/thành thạo, điểm test gần nhất, từ hay sai theo từng bé |
 | T-051 | Nhân nội dung 9 chủ đề còn lại | Hieu | TODO | T-022 | đủ 100 từ có nghĩa+ảnh+phát âm |
 | T-052 | Deploy: host server (`server/`) + static frontend | Claude | TODO | tất cả | chờ anh chọn nơi host (LAN/VPS); URL chạy PC+mobile |
-| T-053 | Nghiệm thu theo DoD (TECH_SPEC §14) | Both+Hieu | TODO | T-052 | đủ 10 tiêu chí |
+| T-053 | Nghiệm thu theo DoD (TECH_SPEC §14) | Both+Hieu | IN_PROGRESS | T-052 | 8/10 đạt; còn #2 (ảnh đang tự fill) & #9 (chưa deploy/mobile HTTPS). Đã thêm 12 test API + 8 test util (tổng 30 pass) |
 
 ---
 
@@ -89,3 +89,5 @@
 - 2026-06-18 — **PIVOT D-010:** backend Firebase → **server tự host (Express+SQLite)** trong `server/`. T-004/T-014/T-031/T-032/T-033/T-040 DONE & verified live (auth, progress, quiz, image với Pexels key, translate). Client service đấu vào `api.ts`, gỡ Firebase. CONTRACTS v2 (+authService, +contentService, chữ ký cũ giữ nguyên). T-010 hết BLOCKED (Claude).
 - 2026-06-18 — Trang chọn ảnh `/picker` (C-002 IN_REVIEW); ~100 từ có ảnh Pexels.
 - 2026-06-18 — **Claude tiếp quản UI (D-011):** dựng nốt Login, Flashcard/DeckRunner, Review, Lookup, Test, 3 Games, Dashboard + router/auth trong App. T-010/024/034/041/042/043/044/050 DONE. typecheck/build/test sạch; quiz-results endpoint verified. **App đã đủ vòng học end-to-end** (Claude).
+- 2026-06-19 — Mở rộng nội dung ~3.500 từ/18 chủ đề/6 cấp (CEFR); chọn trình độ end-to-end; đa người dùng + hạn mức; xếp hạng; phát âm wav2vec2; My Words học được; worker ảnh nền tự cập nhật (Claude).
+- 2026-06-19 — **T-053 nghiệm thu (đang làm):** chấm DoD 8/10 (còn #2 ảnh đang tự fill, #9 chưa deploy). Thêm test tự động: 12 test tích hợp API (auth/hạn mức/cô lập/tiến độ/quiz+lọc cấp/My Words/leaderboard) + 8 unit test util lọc cấp; tổng **30 test pass** (Claude).
