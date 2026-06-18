@@ -37,8 +37,11 @@ export function seedAll(): void {
 
   // Giữ ảnh đã có sẵn trong DB (vd do imageWorker lấy) nếu seed không có ảnh cho từ đó.
   const getImg = db.prepare("SELECT imageUrl FROM vocabulary WHERE id = ?");
+  // SEED_CONTENT_ONLY=1: chỉ nạp chủ đề + từ vựng (deploy cập nhật nội dung),
+  // KHÔNG đụng tài khoản/học sinh demo -> không reset mật khẩu/tiến độ trên production.
+  const contentOnly = process.env.SEED_CONTENT_ONLY === "1";
   const tx = db.transaction(() => {
-    for (const u of SEED_USERS) insUser.run({ ...u, passwordHash: hashPassword("123456"), createdAt: Date.now() });
+    if (!contentOnly) for (const u of SEED_USERS) insUser.run({ ...u, passwordHash: hashPassword("123456"), createdAt: Date.now() });
     for (const t of SEED_TOPICS) insTopic.run(t);
     for (const w of SEED_VOCABULARY) {
       const existing = w.imageUrl ? "" : ((getImg.get(w.id) as { imageUrl?: string } | undefined)?.imageUrl ?? "");
@@ -53,7 +56,7 @@ export function seedAll(): void {
         topicIds: JSON.stringify(w.topicIds),
       });
     }
-    for (const s of SEED_STUDENTS) insStudent.run(s);
+    if (!contentOnly) for (const s of SEED_STUDENTS) insStudent.run(s);
   });
   tx();
 

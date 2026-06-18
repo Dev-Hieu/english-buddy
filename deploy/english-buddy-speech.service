@@ -1,0 +1,17 @@
+# (TÙY CHỌN) systemd unit cho dịch vụ chấm phát âm wav2vec2.
+# Nặng (torch ~vài GB RAM). Chỉ bật nếu VPS đủ tài nguyên.
+# Cài: cd speech-eval && python3.11 -m venv .venv && .venv/bin/pip install -r requirements.txt
+[Unit]
+Description=English Buddy Speech Eval (FastAPI wav2vec2)
+After=network.target
+
+[Service]
+Type=simple
+User=www-data
+WorkingDirectory=/var/www/english-buddy/speech-eval
+ExecStart=/var/www/english-buddy/speech-eval/.venv/bin/uvicorn app:app --host 127.0.0.1 --port 8788
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

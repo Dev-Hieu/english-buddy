@@ -1,0 +1,19 @@
+# systemd unit cho API server. Cài: sao chép vào /etc/systemd/system/, rồi:
+#   sudo systemctl daemon-reload && sudo systemctl enable --now english-buddy-api
+[Unit]
+Description=English Buddy API (Express + SQLite)
+After=network.target
+
+[Service]
+Type=simple
+# Sửa User và đường dẫn cho khớp VPS.
+User=www-data
+WorkingDirectory=/var/www/english-buddy/server
+# Đọc biến môi trường từ server/.env (AUTH_SECRET, PEXELS_KEY, DB_PATH, PORT...).
+EnvironmentFile=/var/www/english-buddy/server/.env
+ExecStart=/usr/bin/npm start
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target

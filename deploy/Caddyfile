@@ -1,0 +1,18 @@
+# Caddy: tự động cấp HTTPS (Let's Encrypt) cho en.vev.vn + reverse proxy.
+# Đặt file này ở /etc/caddy/Caddyfile (hoặc import). Sau khi sửa: `sudo systemctl reload caddy`.
+en.vev.vn {
+	encode gzip
+
+	# API server tự host (Node/Express) — giữ nguyên tiền tố /api.
+	@api path /api/*
+	reverse_proxy @api 127.0.0.1:8787
+
+	# Dịch vụ chấm phát âm (Python/FastAPI) — tùy chọn, bật nếu chạy speech-eval.
+	@pron path /pronounce*
+	reverse_proxy @pron 127.0.0.1:8788
+
+	# Frontend tĩnh đã build (Vite) + SPA fallback về index.html.
+	root * /var/www/english-buddy/dist
+	try_files {path} /index.html
+	file_server
+}
