@@ -15,6 +15,7 @@ import { CarRaceGame } from "@/components/games/CarRaceGame";
 interface GamesPageProps {
   student: Student;
   topicId: string;
+  studiedWordIds: string[];
   onBackHome: () => void;
 }
 
@@ -29,12 +30,23 @@ function shuffle<T>(a: T[]): T[] {
   return r;
 }
 
-export function GamesPage({ student, topicId, onBackHome }: GamesPageProps) {
+export function GamesPage({ student, topicId, studiedWordIds, onBackHome }: GamesPageProps) {
   const [game, setGame] = useState<Game>("menu");
-  const pool = useMemo(() => {
+  // base: từ của chủ đề (bù bằng toàn bộ nếu chủ đề chưa đủ 4 từ để có lựa chọn).
+  const base = useMemo(() => {
     const t = SEED_VOCABULARY.filter((w) => w.topicIds.includes(topicId));
     return t.length >= 4 ? t : SEED_VOCABULARY;
   }, [topicId]);
+  // reviewPool: ưu tiên từ ĐÃ học để ôn; chưa đủ 4 thì dùng base (tránh kẹt lúc đầu).
+  const reviewPool = useMemo(() => {
+    const learned = new Set(studiedWordIds);
+    const r = base.filter((w) => learned.has(w.id));
+    return r.length >= 4 ? r : base;
+  }, [base, studiedWordIds]);
+  const learnedCount = useMemo(() => {
+    const learned = new Set(studiedWordIds);
+    return base.filter((w) => learned.has(w.id)).length;
+  }, [base, studiedWordIds]);
 
   const record = (wordId: string, correct: boolean) => recordAnswer(student.id, wordId, correct).catch(() => {});
   const back = () => setGame("menu");
@@ -51,6 +63,11 @@ export function GamesPage({ student, topicId, onBackHome }: GamesPageProps) {
     return (
       <main className="mx-auto w-full max-w-xl px-4">
         <SessionHeader title="Trò chơi" onClose={onBackHome} />
+        {learnedCount < 4 ? (
+          <div className="mb-3 rounded-2xl bg-secondary p-3 text-sm font-bold text-secondary-foreground">
+            💡 Học thêm từ ở mục Học để game ôn đúng từ của con nhé. (Đuổi hình bắt chữ vẫn chơi được với từ mới.)
+          </div>
+        ) : null}
         <div className="space-y-3">
           {games.map((g) => (
             <button
@@ -73,11 +90,11 @@ export function GamesPage({ student, topicId, onBackHome }: GamesPageProps) {
 
   return (
     <main className="mx-auto w-full max-w-xl px-4">
-      {game === "match" && <MatchGame pool={pool} onRecord={record} onClose={back} />}
-      {game === "pick" && <PickGame pool={pool} onRecord={record} onClose={back} />}
-      {game === "listen" && <ListenGame pool={pool} onRecord={record} onClose={back} />}
-      {game === "build" && <PictureWordGame pool={pool} onRecord={record} onClose={back} />}
-      {game === "race" && <CarRaceGame pool={pool} onRecord={record} onClose={back} />}
+      {game === "match" && <MatchGame pool={reviewPool} onRecord={record} onClose={back} />}
+      {game === "pick" && <PickGame pool={reviewPool} onRecord={record} onClose={back} />}
+      {game === "listen" && <ListenGame pool={reviewPool} onRecord={record} onClose={back} />}
+      {game === "build" && <PictureWordGame pool={base} onRecord={record} onClose={back} />}
+      {game === "race" && <CarRaceGame pool={reviewPool} onRecord={record} onClose={back} />}
       {game === "sudoku" && <SudokuGame onClose={back} />}
     </main>
   );

@@ -119,7 +119,7 @@ export function App() {
       content = <TestPage student={student} topicId={route.topicId} onBackHome={() => navigate("home")} />;
       break;
     case "games":
-      content = <GamesPage student={student} topicId={route.topicId} onBackHome={() => navigate("home")} />;
+      content = <GamesPage student={student} topicId={route.topicId} studiedWordIds={studiedWordIds} onBackHome={() => navigate("home")} />;
       break;
     case "dashboard":
       content = <DashboardPage onBackHome={() => navigate("home")} />;
