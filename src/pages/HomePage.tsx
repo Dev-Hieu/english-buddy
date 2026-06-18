@@ -1,4 +1,4 @@
-import { BarChart3, BookMarked, ChevronRight, Flame, LogOut, Play, RotateCcw, Star, Trophy, UserRound } from "lucide-react";
+import { BarChart3, BookMarked, BookOpen, ChevronRight, Flame, LogOut, Play, RotateCcw, Star, Trophy, UserRound } from "lucide-react";
 import type { ComponentType } from "react";
 import { SEED_TOPICS } from "@/data/seedTopics";
 import { SEED_VOCABULARY } from "@/data/seedVocabulary";
@@ -200,8 +200,9 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
         </section>
       ) : null}
 
-      {/* Xếp hạng + My Words + Báo cáo phụ huynh */}
+      {/* Ngữ pháp + Xếp hạng + My Words + Báo cáo phụ huynh */}
       <section className="mt-6 space-y-3">
+        <NavRow icon={BookOpen} iconClass="bg-primary/15 text-primary" title="Ngữ pháp" subtitle="Bài học ngắn + bài tập theo cấp" onClick={() => onNavigate("grammar")} />
         <NavRow icon={Trophy} iconClass="bg-accent/15 text-accent" title="Bảng xếp hạng" subtitle="Thi đua điểm XP với các bạn" onClick={() => onNavigate("leaderboard")} />
         <NavRow icon={BookMarked} iconClass="bg-secondary text-secondary-foreground" title="My Words" subtitle="Từ con đã lưu khi tra" onClick={() => onNavigate("mywords")} />
         <NavRow icon={BarChart3} iconClass="bg-secondary text-secondary-foreground" title="Bảng theo dõi" subtitle="Tiến độ của các bé (phụ huynh)" onClick={() => onNavigate("dashboard")} />

@@ -4,4 +4,5 @@ export * from "./student";
 export * from "./vocabulary";
 export * from "./progress";
 export * from "./quiz";
+export * from "./grammar";
 export * from "./service";

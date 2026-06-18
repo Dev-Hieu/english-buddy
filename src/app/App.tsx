@@ -18,13 +18,15 @@ import { SpeakingPage } from "@/pages/SpeakingPage";
 import { DashboardPage } from "@/pages/DashboardPage";
 import { MyWordsPage } from "@/pages/MyWordsPage";
 import { TopicWordsPage } from "@/pages/TopicWordsPage";
+import { GrammarListPage } from "@/pages/GrammarListPage";
+import { GrammarRunnerPage } from "@/pages/GrammarRunnerPage";
 import { LeaderboardPage } from "@/pages/LeaderboardPage";
 import { StudentSelectPage } from "@/pages/StudentSelectPage";
 import { TopicListPage } from "@/pages/TopicListPage";
 
 type View =
   | "student-select" | "admin" | "home" | "topics" | "lesson"
-  | "flashcard" | "review" | "lookup" | "test" | "games" | "speak" | "dashboard" | "mywords" | "leaderboard" | "topicwords";
+  | "flashcard" | "review" | "lookup" | "test" | "games" | "speak" | "dashboard" | "mywords" | "leaderboard" | "topicwords" | "grammar" | "grammar-lesson";
 
 interface Route { view: View; topicId: string; level: Level | "all"; }
 
@@ -34,6 +36,7 @@ const readSelected = () => (typeof window === "undefined" ? null : localStorage.
 const ACTIVE_TAB: Record<View, TabKey | null> = {
   "student-select": null, admin: null, home: "home", topics: "home", lesson: "home", flashcard: "home",
   review: "review", lookup: "lookup", test: "test", games: "games", speak: "speak", dashboard: null, mywords: null, leaderboard: null, topicwords: null,
+  grammar: null, "grammar-lesson": null,
 };
 
 export function App() {
@@ -162,6 +165,12 @@ export function App() {
       break;
     case "topicwords":
       content = <TopicWordsPage topicId={route.topicId} level={route.level} studiedWordIds={studiedWordIds} onBack={() => navigate("lesson")} />;
+      break;
+    case "grammar":
+      content = <GrammarListPage student={student} onBackHome={() => navigate("home")} onPick={(id) => navigate("grammar-lesson", id)} />;
+      break;
+    case "grammar-lesson":
+      content = <GrammarRunnerPage topicId={route.topicId} onBackHome={() => navigate("grammar")} />;
       break;
     case "flashcard":
       content = <FlashcardPage student={student} topicId={route.topicId} level={route.level} onBackHome={() => navigate("home")} />;
