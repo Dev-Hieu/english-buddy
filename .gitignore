@@ -2,6 +2,11 @@
 node_modules/
 server/node_modules/
 
+# python (speech-eval)
+speech-eval/.venv/
+__pycache__/
+*.pyc
+
 # sqlite db (dữ liệu local của server)
 *.db
 *.db-shm
