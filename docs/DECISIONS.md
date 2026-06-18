@@ -39,7 +39,13 @@ Có `audioUrl` (Dictionary) thì phát file đó; không có mới fallback Web 
 **Ngày:** 2026-06-18 · **Trạng thái:** ✅ Chốt
 Từ thuộc nhiều chủ đề (vd `fish`) lưu 1 document với mảng `topicIds`, tránh trùng `id`.
 
+## D-009 — Firebase Emulator cho dev
+**Ngày:** 2026-06-18 · **Trạng thái:** ✅ Chốt
+Hỗ trợ chạy local không cần project thật: `firebase emulators:start` + `VITE_USE_EMULATOR=true`. `firebase.ts` tự kết nối Auth (9099) + Firestore (8080) khi cờ bật.
+**Lý do:** chạy lát cắt Food end-to-end ngay, không chặn bởi việc tạo project.
+
 ---
 
 ## Đang chờ chốt
-- (none) — `M-002` đang hỏi anh Hieu về phạm vi điền nội dung seed.
+- **Cách đăng nhập phụ huynh** (Google sign-in vs email/password) — cần cho **T-010** của Codex. Claude đề xuất **Google sign-in**. Chờ anh Hieu chốt.
+- `M-002`: phạm vi nội dung seed — Claude đã soạn nháp toàn bộ ~100 từ (chờ anh review).

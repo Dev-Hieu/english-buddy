@@ -1,6 +1,6 @@
 import { initializeApp } from "firebase/app";
-import { getAuth } from "firebase/auth";
-import { getFirestore } from "firebase/firestore";
+import { connectAuthEmulator, getAuth } from "firebase/auth";
+import { connectFirestoreEmulator, getFirestore } from "firebase/firestore";
 
 // Config lấy từ env (.env.local — KHÔNG commit). Anh Hieu tạo Firebase project rồi điền:
 //   VITE_FIREBASE_API_KEY, VITE_FIREBASE_AUTH_DOMAIN, VITE_FIREBASE_PROJECT_ID,
@@ -18,6 +18,13 @@ const firebaseConfig = {
 export const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
 export const db = getFirestore(app);
+
+// Dev không cần project thật: chạy `firebase emulators:start` và đặt
+// VITE_USE_EMULATOR=true trong .env.local. (DECISIONS D-009)
+if (import.meta.env.VITE_USE_EMULATOR === "true") {
+  connectAuthEmulator(auth, "http://127.0.0.1:9099", { disableWarnings: true });
+  connectFirestoreEmulator(db, "127.0.0.1", 8080);
+}
 
 export const FUNCTIONS_BASE_URL: string =
   import.meta.env.VITE_FUNCTIONS_BASE_URL ?? "";

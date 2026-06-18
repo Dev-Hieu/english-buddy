@@ -25,8 +25,8 @@
 | T-010 | LoginPage (1 parent) + Auth flow | Codex | TODO | T-002,T-004 | đăng nhập được |
 | T-011 | StudentSelectPage (chọn Bảo Ngọc/Bảo Nam) | Codex | TODO | T-010 | chọn & nhớ profile |
 | T-012 | HomePage (mục tiêu hôm nay + nút điều hướng) | Codex | TODO | T-011 | điều hướng đủ 5 nút |
-| T-013 | Seed data local 100 từ (cấu trúc) + seedTopics | Claude | IN_PROGRESS | T-003 | khung + 10 topics + Food (10 từ) xong; 9 chủ đề chờ nội dung (C-001/C-002) |
-| T-014 | progressService + spacedRepetition util | Claude | IN_REVIEW | T-003,T-004 | ✅ typecheck pass; `progressService` cần Firebase project để chạy thật |
+| T-013 | Seed data local 100 từ (cấu trúc) + seedTopics | Claude | DONE | T-003 | ✅ 10 topics + ~100 từ (nháp, chờ anh review) + seedStudents; ảnh chờ C-002 |
+| T-014 | progressService + spacedRepetition util | Claude | IN_REVIEW | T-003,T-004 | ✅ typecheck + 6 unit test SR pass; `progressService` cần Firebase/emulator để chạy thật |
 
 ## Sprint 2 — Lát cắt dọc Food (học từ vựng)
 
@@ -52,7 +52,7 @@
 
 | ID | Task | Owner | Status | Depends | DoD |
 |----|------|-------|--------|---------|-----|
-| T-040 | quizGenerator util + quizService (distractor cùng chủ đề) | Claude | IN_REVIEW | T-013 | ✅ typecheck pass; `buildQuiz` thuần xong; `quizService` cần Firestore để chạy |
+| T-040 | quizGenerator util + quizService (distractor cùng chủ đề) | Claude | IN_REVIEW | T-013 | ✅ typecheck + 4 unit test buildQuiz pass; `quizService` cần Firestore để chạy |
 | T-041 | ReviewPage (từ đến hạn ôn) | Codex | TODO | T-014,T-024 | hiện đúng từ due |
 | T-042 | Game: Match Word + Pick Picture | Codex | TODO | T-040 | chơi & cộng XP |
 | T-043 | Game: Listen & Choose + Word Builder | Codex | TODO | T-040,T-023 | chơi được |
@@ -83,3 +83,4 @@
 - 2026-06-18 — T-013/T-014 tiến hành: `spacedRepetition.ts`, `normalizeWord.ts`, `seedTopics.ts`, `seedVocabulary.ts` (Food) (Claude).
 - 2026-06-18 — Hoàn tất lớp service Claude (code, chờ verify): `firebase.ts`, `progressService`, `speechService`, `dictionaryService`, `imageService`, `translateService`, `quizService`, `quizGenerator`, `functions/` (image+translate), `firestore.rules`, `firebase.json`, `.env.example` (Claude).
 - 2026-06-18 — T-001/T-002/T-005 DONE: React+Vite+TS, Tailwind, shadcn-style UI primitives, layout gốc, scripts và lockfile; `typecheck` + `build` pass (Codex).
+- 2026-06-18 — T-013 DONE: nháp ~100 từ/10 chủ đề + `seedStudents`; Firebase Emulator (D-009); vitest + 10 unit test (SR + quiz) pass; `tsc -b` sạch (Claude).
