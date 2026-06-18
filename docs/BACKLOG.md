@@ -12,11 +12,11 @@
 
 | ID | Task | Owner | Status | Depends | Files | DoD |
 |----|------|-------|--------|---------|-------|-----|
-| T-001 | Init project React+Vite+TS | Codex | TODO | — | root, `src/app` | `npm run dev` chạy, trang trắng load OK |
-| T-002 | Cài Tailwind + shadcn/ui + layout gốc | Codex | TODO | T-001 | `src/app`, config | Tailwind class render đúng |
+| T-001 | Init project React+Vite+TS | Codex | DONE | — | root, `src/app` | ✅ `npm run dev` chạy, Vite phục vụ HTTP 200 |
+| T-002 | Cài Tailwind + shadcn/ui + layout gốc | Codex | DONE | T-001 | `src/app`, config | ✅ Tailwind + shadcn-style UI render trong layout gốc |
 | T-003 | Khóa `src/types/*` theo CONTRACTS v1 | Claude | DONE | — | `src/types` | ✅ 7 file types khớp CONTRACTS v1 |
 | T-004 | Setup Firebase project + `firebase.ts` + security rules | Claude | IN_REVIEW | — | `firebase.ts`, `firestore.rules`, `firebase.json` | code xong; **chờ anh Hieu tạo project + điền `.env.local`** rồi mới kết nối thật |
-| T-005 | `.gitignore`, README, scripts (`dev/build/typecheck`) | Both | TODO | T-001 | root | repo sạch, không lộ key |
+| T-005 | `.gitignore`, README, scripts (`dev/build/typecheck`) | Both | DONE | T-001 | root | ✅ scripts có `dev/build/typecheck/preview`, secret vẫn bị ignore |
 
 ## Sprint 1 — Khung app chạy được
 
@@ -82,3 +82,4 @@
 - 2026-06-18 — T-003 DONE: `src/types` (user/student/vocabulary/progress/quiz/service + index) khớp CONTRACTS v1 (Claude).
 - 2026-06-18 — T-013/T-014 tiến hành: `spacedRepetition.ts`, `normalizeWord.ts`, `seedTopics.ts`, `seedVocabulary.ts` (Food) (Claude).
 - 2026-06-18 — Hoàn tất lớp service Claude (code, chờ verify): `firebase.ts`, `progressService`, `speechService`, `dictionaryService`, `imageService`, `translateService`, `quizService`, `quizGenerator`, `functions/` (image+translate), `firestore.rules`, `firebase.json`, `.env.example` (Claude).
+- 2026-06-18 — T-001/T-002/T-005 DONE: React+Vite+TS, Tailwind, shadcn-style UI primitives, layout gốc, scripts và lockfile; `typecheck` + `build` pass (Codex).
