@@ -50,7 +50,7 @@ export function ImagePickerPage({ onBackHome }: ImagePickerPageProps) {
     setCands(null);
     setCands(await getWordImages(query.trim() || "object", 36, pg).catch(() => [])); // nhiều ảnh hơn để chọn đa dạng
   };
-  const COLS: Record<number, string> = { 2: "grid-cols-2", 3: "grid-cols-3", 4: "grid-cols-4", 6: "grid-cols-6" };
+  const COLS: Record<number, string> = { 2: "grid-cols-2", 3: "grid-cols-3", 4: "grid-cols-4", 5: "grid-cols-5", 6: "grid-cols-6" };
   const openModal = (w: VocabularyWord) => { setActive(w); setSearchQ(w.word); setSearchPage(1); void doSearch(w.word, 1); };
   const choose = async (url: string) => {
     if (!active) return;
@@ -149,7 +149,7 @@ export function ImagePickerPage({ onBackHome }: ImagePickerPageProps) {
                 <p className="text-xs font-semibold text-muted-foreground">💡 Đổi từ khoá nếu ảnh chưa hợp (vd "ripe banana", "banana fruit", "cartoon banana").</p>
                 <div className="flex shrink-0 items-center gap-1">
                   <span className="text-xs font-bold text-muted-foreground">Lưới:</span>
-                  {[2, 3, 4, 6].map((c) => (
+                  {[2, 3, 4, 5, 6].map((c) => (
                     <button key={c} type="button" onClick={() => setCols(c)}
                       className={cn("h-7 w-7 rounded-lg text-xs font-extrabold", cols === c ? "bg-primary text-primary-foreground" : "bg-muted text-muted-foreground")}>{c}</button>
                   ))}
