@@ -3,16 +3,19 @@
  * Chỉ nhận trường hợp lệ: phonetic dạng /.../, meaning_vi không rỗng, level ∈ CEFR.
  * Chạy:  cd server && ./node_modules/.bin/tsx src/applyAudit.ts
  */
-import { readFileSync, writeFileSync } from "node:fs";
+import { readFileSync, writeFileSync, readdirSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
-const REPORT = path.resolve(fileURLToPath(import.meta.url), "../../audit-report.json");
+const SRV = path.resolve(fileURLToPath(import.meta.url), "../..");
 const OUT = path.resolve(fileURLToPath(import.meta.url), "../../../src/data/vocabOverrides.ts");
 const LEVELS = ["kids", "a1", "a2", "b1", "b2", "c1"];
 
+// Gộp mọi file báo cáo (audit-report*.json) — hỗ trợ chạy song song nhiều dải.
 const POS = ["danh từ", "động từ", "tính từ", "trạng từ", "giới từ", "đại từ", "liên từ", "thán từ", "mạo từ", "số từ"];
-const report: any[] = JSON.parse(readFileSync(REPORT, "utf8"));
+const files = readdirSync(SRV).filter((f) => /^audit-report.*\.json$/.test(f));
+const report: any[] = files.flatMap((f) => { try { return JSON.parse(readFileSync(path.join(SRV, f), "utf8")); } catch { return []; } });
+console.log(`Gộp ${files.length} file báo cáo -> ${report.length} mục.`);
 const overrides: Record<string, any> = {};
 let nPhon = 0, nMean = 0, nLevel = 0, nPos = 0;
 

@@ -17,7 +17,8 @@ const MODEL = process.env.DEEPSEEK_MODEL || "deepseek-chat";
 const START = Number(process.argv[2] || 0);
 const COUNT = Number(process.argv[3] || SEED_VOCABULARY.length);
 const BATCH = 20;
-const OUT = path.resolve(fileURLToPath(import.meta.url), "../../audit-report.json");
+// Ghi theo dải để chạy song song nhiều luồng không tranh file; gộp lại sau.
+const OUT = path.resolve(fileURLToPath(import.meta.url), `../../audit-report-${START}.json`);
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
 
 const SYS = [
