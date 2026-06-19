@@ -8,6 +8,7 @@ import { TabBar, type TabKey } from "@/components/layout/TabBar";
 import { HomePage } from "@/pages/HomePage";
 import { AuthPage } from "@/pages/AuthPage";
 import { AdminPage } from "@/pages/AdminPage";
+import { ImagePickerPage } from "@/pages/ImagePickerPage";
 import { LessonPage } from "@/pages/LessonPage";
 import { FlashcardPage } from "@/pages/FlashcardPage";
 import { ReviewPage } from "@/pages/ReviewPage";
@@ -28,7 +29,7 @@ import { TopicListPage } from "@/pages/TopicListPage";
 
 type View =
   | "student-select" | "admin" | "home" | "topics" | "lesson"
-  | "flashcard" | "review" | "lookup" | "test" | "games" | "speak" | "dashboard" | "mywords" | "leaderboard" | "topicwords" | "grammar" | "grammar-lesson" | "exam" | "conversation";
+  | "flashcard" | "review" | "lookup" | "test" | "games" | "speak" | "dashboard" | "mywords" | "leaderboard" | "topicwords" | "grammar" | "grammar-lesson" | "exam" | "conversation" | "imagepicker";
 
 interface Route { view: View; topicId: string; level: Level | "all"; }
 
@@ -38,7 +39,7 @@ const readSelected = () => (typeof window === "undefined" ? null : localStorage.
 const ACTIVE_TAB: Record<View, TabKey | null> = {
   "student-select": null, admin: null, home: "home", topics: "home", lesson: "home", flashcard: "home",
   review: "review", lookup: "lookup", test: "test", games: "games", speak: "speak", dashboard: null, mywords: null, leaderboard: null, topicwords: null,
-  grammar: null, "grammar-lesson": null, exam: null, conversation: null,
+  grammar: null, "grammar-lesson": null, exam: null, conversation: null, imagepicker: null,
 };
 
 export function App() {
@@ -132,7 +133,10 @@ export function App() {
   }
 
   if (route.view === "admin") {
-    return <AdminPage onBack={() => navigate("student-select")} />;
+    return <AdminPage onBack={() => navigate("student-select")} onOpenPicker={() => navigate("imagepicker")} />;
+  }
+  if (route.view === "imagepicker") {
+    return <ImagePickerPage onBackHome={() => navigate("admin")} />;
   }
 
   // ── Chưa chọn bé ──

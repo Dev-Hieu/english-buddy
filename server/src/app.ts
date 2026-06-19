@@ -351,8 +351,8 @@ export function createApp() {
     }
   });
 
-  // ── Chọn/đổi ảnh cho 1 từ (dùng bởi trang /picker) ──
-  app.post("/api/image-pick", (req, res) => {
+  // ── Chọn/đổi ảnh cho 1 từ (chỉ admin — sửa nội dung chung) ──
+  app.post("/api/image-pick", requireAdmin, (req, res) => {
     const { wordId, url } = req.body || {};
     if (!wordId) return res.status(400).json({ error: "thiếu wordId" });
     const r = db.prepare("UPDATE vocabulary SET imageUrl = ? WHERE id = ?").run(url ?? "", wordId);
