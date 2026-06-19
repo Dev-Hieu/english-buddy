@@ -1,6 +1,7 @@
 import type { VocabularyWord } from "../types";
 import { IMAGE_URLS } from "./seedImages";
 import { ALL_LEVEL_WORDS } from "./vocab";
+import { VOCAB_OVERRIDES } from "./vocabOverrides";
 
 // Mốc thời gian seed cố định (tránh giá trị động giữa các lần chạy).
 const SEED_CREATED_AT = Date.UTC(2026, 5, 18); // 2026-06-18
@@ -158,4 +159,8 @@ function dedupeVocab(list: VocabularyWord[]): VocabularyWord[] {
     return true;
   });
 }
-export const SEED_VOCABULARY: VocabularyWord[] = dedupeVocab([...CORE_WORDS, ...ALL_LEVEL_WORDS]);
+// Áp các bản sửa theo từ điển (override theo id) trước khi khử trùng.
+const withOverrides = [...CORE_WORDS, ...ALL_LEVEL_WORDS].map((w) =>
+  VOCAB_OVERRIDES[w.id] ? { ...w, ...VOCAB_OVERRIDES[w.id] } : w,
+);
+export const SEED_VOCABULARY: VocabularyWord[] = dedupeVocab(withOverrides);
