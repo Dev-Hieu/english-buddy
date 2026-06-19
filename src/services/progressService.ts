@@ -17,17 +17,6 @@ export async function recordAnswer(
   });
 }
 
-export function getDueReviews(
-  studentId: string,
-  now: number
-): Promise<StudentVocabularyProgress[]> {
-  return apiRequest(`/api/students/${studentId}/reviews?now=${now}`);
-}
-
-// Hoàn thành 1 bộ flashcard -> thưởng điểm khuyến khích (1 lần/bộ/ngày).
-export async function deckComplete(studentId: string, deckId: string, cards: number): Promise<void> {
-  await apiRequest(`/api/students/${studentId}/deck-complete`, { method: "POST", body: { deckId, cards } });
-}
 
 export async function saveLookup(entry: LookupHistory): Promise<void> {
   await apiRequest(`/api/lookup`, { method: "POST", body: entry });

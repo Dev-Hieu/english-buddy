@@ -110,3 +110,11 @@ Mở rộng từ "1 gia đình" sang nhiều người dùng:
 - **Sổ cái `xp_events`** (studentId, type, points, refId, createdAt): mọi điểm cộng đều ghi lại → minh bạch, **kiểm tra/khôi phục/sửa chính xác**. `students.xp` = tổng cộng dồn (tính lại được). Backfill giữ XP cũ (event 'legacy').
 - **Luật điểm "học thật" chống cày:** từ mới +10 (1 lần/từ), thuộc hẳn +20 (1 lần/từ), ôn đúng hạn +5, luyện lại +1; test 3đ/câu đúng (1 lần/chủ đề/ngày, trần 50); mốc streak 3/7/14/30 ngày.
 - **Xếp hạng:** mặc định **điểm TUẦN** (reset thứ Hai) + **tách theo cấp độ** (công bằng cho bé nhỏ/bé mới); có tab 'mọi thời gian'.
+
+## D-018 — Điểm CHỈ từ Thi kỹ năng (chống gian lận nghiêm ngặt)
+**Ngày:** 2026-06-20 · **Trạng thái:** ✅ Chốt (thay luật điểm cũ ở D-017) · Spec: `docs/superpowers/specs/2026-06-20-vocab-skill-test-scoring-design.md`
+- **Học tự do KHÔNG điểm:** flashcard/học/game chỉ cập nhật tiến độ. Bé bấm "Thuộc" → kho **Chờ thi** (`pending_test`); "Cần ôn"/sai → **Cần ôn** (`relearn`, học lại đến khi Thuộc).
+- **Điểm = số kỹ năng ĐANG qua mỗi từ**, server chấm (giữ đáp án trong `skill_test_sessions`): mỗi kỹ năng qua +1, thi lại quên −1, cải thiện +1. Trừ không trần; cộng trần **500đ/ngày**.
+- **Kỹ năng theo cấp:** trẻ em = Nghe chọn chữ + Nhìn hình đoán chữ (≤2đ); a1..c1 = Nghe + Nói (phát âm ≥60) + Viết (≤3đ).
+- **Vòng đời:** đủ 10 từ Chờ thi → nhắc thi (bỏ qua được). Đã thi đạt → kho **ôn ngắt quãng**; đến hạn **thi lại** (qua: giãn lịch; rớt kỹ năng: −điểm + về Cần ôn).
+- **Gỡ** điểm flashcard/deck-complete/quiz-results/streak (giữ lịch sử + 🔥 không cộng). Sổ cái `xp_events` ghi cả ± (type `skill_pass`/`skill_lose`).

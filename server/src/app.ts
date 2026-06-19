@@ -318,13 +318,6 @@ export function createApp() {
     res.json(row);
   });
 
-  // /deck-complete: GIỮ để client cũ không lỗi, nhưng KHÔNG còn cộng điểm (điểm chỉ từ thi).
-  app.post("/api/students/:id/deck-complete", requireAuth, (req, res) => {
-    if (!canAccessStudent(req, res, req.params.id)) return;
-    bumpStreak(req.params.id);
-    res.json({ ok: true, bonus: 0 });
-  });
-
   // Kho CHỜ THI (đã báo thuộc, chưa thi). Đủ 10 -> client nhắc thi.
   app.get("/api/students/:id/pending", requireAuth, (req, res) => {
     if (!canAccessStudent(req, res, req.params.id)) return;

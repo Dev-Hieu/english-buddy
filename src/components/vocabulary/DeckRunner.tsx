@@ -1,7 +1,7 @@
 import { PartyPopper } from "lucide-react";
 import { useState } from "react";
 import type { VocabularyWord } from "@/types";
-import { deckComplete, recordAnswer } from "@/services/progressService";
+import { recordAnswer } from "@/services/progressService";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ProgressRing } from "@/components/ui/progress";
@@ -14,10 +14,9 @@ interface DeckRunnerProps {
   words: VocabularyWord[];
   onBack: () => void;
   emptyText?: string;
-  deckId?: string; // để thưởng hoàn thành bộ (1 lần/bộ/ngày)
 }
 
-export function DeckRunner({ title, studentId, words, onBack, emptyText, deckId }: DeckRunnerProps) {
+export function DeckRunner({ title, studentId, words, onBack, emptyText }: DeckRunnerProps) {
   const [index, setIndex] = useState(0);
   const [known, setKnown] = useState(0);
   const [done, setDone] = useState(false);
@@ -26,11 +25,8 @@ export function DeckRunner({ title, studentId, words, onBack, emptyText, deckId 
     const word = words[index];
     if (word) recordAnswer(studentId, word.id, correct).catch(() => {});
     if (correct) setKnown((k) => k + 1);
-    if (index + 1 >= words.length) {
-      setDone(true);
-      // Thưởng khuyến khích khi học xong cả bộ.
-      deckComplete(studentId, deckId || title, words.length).catch(() => {});
-    } else setIndex((i) => i + 1);
+    if (index + 1 >= words.length) setDone(true);
+    else setIndex((i) => i + 1);
   };
 
   if (words.length === 0) {
