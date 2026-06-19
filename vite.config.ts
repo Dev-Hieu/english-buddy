@@ -17,6 +17,7 @@ export default defineConfig({
     proxy: {
       "/api": { target: "http://localhost:8787", changeOrigin: true },
       "/pronounce": { target: "http://localhost:8788", changeOrigin: true },
+      "/picker": { target: "http://localhost:8787", changeOrigin: true },
     },
   },
   build: {

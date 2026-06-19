@@ -11,6 +11,10 @@ en.vev.vn {
 	@pron path /pronounce*
 	reverse_proxy @pron 127.0.0.1:8788
 
+	# Trang chỉnh/chọn ảnh từ vựng cho phụ huynh (server phục vụ picker.html).
+	@picker path /picker
+	reverse_proxy @picker 127.0.0.1:8787
+
 	# Frontend tĩnh đã build (Vite) + SPA fallback về index.html.
 	root * /var/www/english-buddy/dist
 	try_files {path} /index.html

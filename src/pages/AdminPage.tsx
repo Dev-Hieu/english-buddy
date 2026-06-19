@@ -1,4 +1,4 @@
-import { Check, Crown, Loader2, Shield } from "lucide-react";
+import { Check, Crown, Image as ImageIcon, Loader2, Shield } from "lucide-react";
 import { useEffect, useState } from "react";
 import { listUsers, setPremium, setStudentLimit, type AdminUser } from "@/services/studentService";
 import { cn } from "@/components/ui/cn";
@@ -34,6 +34,22 @@ export function AdminPage({ onBack }: { onBack: () => void }) {
   return (
     <main className="mx-auto w-full max-w-2xl px-4">
       <SessionHeader title="Quản trị người dùng" onClose={onBack} />
+
+      <a
+        href="/picker"
+        target="_blank"
+        rel="noreferrer"
+        className="mb-4 flex items-center gap-3 rounded-3xl border border-border/70 bg-card p-4 shadow-card transition-transform active:scale-[0.99]"
+      >
+        <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-secondary text-secondary-foreground">
+          <ImageIcon className="h-5 w-5" />
+        </span>
+        <span className="flex-1">
+          <span className="block font-extrabold">Chỉnh ảnh từ vựng</span>
+          <span className="block text-sm font-semibold text-muted-foreground">Tìm & chọn ảnh phù hợp cho từng từ (mở tab mới)</span>
+        </span>
+      </a>
+
       {users === null ? (
         <div className="flex justify-center py-12"><Loader2 className="h-8 w-8 animate-spin text-primary" /></div>
       ) : (
