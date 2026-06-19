@@ -1,10 +1,17 @@
-import type { VocabularyWord } from "../types";
+import { LEVEL_ORDER, type VocabularyWord } from "../types";
 
 // "all" = mọi cấp; còn lại là một Level cụ thể (kids/a1/a2/b1/b2/c1).
 export type LevelFilter = string;
 
+const rank = (lv: string): number => LEVEL_ORDER.indexOf(lv as never);
+
+// Kế thừa: từ ở cấp THẤP cũng xuất hiện ở cấp CAO hơn (a1 = kids+a1; b2 = kids..b2).
 export function matchesLevel(wordLevel: string, level: LevelFilter): boolean {
-  return level === "all" || wordLevel === level;
+  if (level === "all") return true;
+  const wr = rank(wordLevel);
+  const lr = rank(level);
+  if (wr < 0 || lr < 0) return wordLevel === level; // cấp lạ -> so khớp tuyệt đối
+  return wr <= lr;
 }
 
 // Các từ thuộc 1 chủ đề và đúng cấp đang chọn.

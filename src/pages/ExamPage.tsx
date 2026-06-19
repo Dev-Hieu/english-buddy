@@ -2,6 +2,7 @@ import { RotateCcw, Volume2 } from "lucide-react";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { SEED_VOCABULARY } from "@/data/seedVocabulary";
 import { buildQuiz } from "@/utils/quizGenerator";
+import { matchesLevel } from "@/utils/levelFilter";
 import { recordAnswer } from "@/services/progressService";
 import { submitQuiz } from "@/services/quizService";
 import { speakText } from "@/services/speechService";
@@ -24,7 +25,7 @@ const EXAM_SIZE = 20;
 export function ExamPage({ student, level = "all", onBackHome }: ExamPageProps) {
   const lv = level;
   const questions = useMemo(() => {
-    const words = SEED_VOCABULARY.filter((w) => lv === "all" || w.level === lv);
+    const words = SEED_VOCABULARY.filter((w) => matchesLevel(w.level, lv)); // kế thừa: ≤ cấp
     return buildQuiz(words, EXAM_SIZE);
   }, [lv]);
 

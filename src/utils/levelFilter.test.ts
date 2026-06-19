@@ -15,37 +15,40 @@ const WORDS = [
 ];
 const TOPICS = [{ id: "topic_food" }, { id: "topic_animals" }, { id: "topic_work" }];
 
-describe("matchesLevel", () => {
+describe("matchesLevel (kế thừa: ≤ cấp)", () => {
   it("'all' khớp mọi cấp", () => {
     expect(matchesLevel("kids", "all")).toBe(true);
     expect(matchesLevel("c1", "all")).toBe(true);
   });
-  it("khớp đúng cấp, lệch thì không", () => {
-    expect(matchesLevel("kids", "kids")).toBe(true);
-    expect(matchesLevel("a1", "kids")).toBe(false);
+  it("từ cấp THẤP hiện ở cấp CAO; từ cấp cao KHÔNG hiện ở cấp thấp", () => {
+    expect(matchesLevel("kids", "a1")).toBe(true); // kids ≤ a1
+    expect(matchesLevel("a1", "a1")).toBe(true);
+    expect(matchesLevel("a1", "kids")).toBe(false); // a1 > kids
+    expect(matchesLevel("b1", "a2")).toBe(false);
+  });
+  it("cấp lạ -> so khớp tuyệt đối", () => {
+    expect(matchesLevel("beginner", "a1")).toBe(false);
   });
 });
 
-describe("topicWords", () => {
-  it("lọc theo chủ đề + cấp", () => {
+describe("topicWords (kế thừa)", () => {
+  it("'kids' chỉ lấy từ kids", () => {
     expect(topicWords(WORDS, "topic_food", "kids").map((w) => w.id)).toEqual(["k1", "k2"]);
-    expect(topicWords(WORDS, "topic_food", "a1").map((w) => w.id)).toEqual(["a1"]);
+  });
+  it("'a1' lấy kids + a1", () => {
+    expect(topicWords(WORDS, "topic_food", "a1").map((w) => w.id)).toEqual(["k1", "k2", "a1"]);
   });
   it("'all' lấy mọi cấp trong chủ đề", () => {
     expect(topicWords(WORDS, "topic_food", "all").map((w) => w.id)).toEqual(["k1", "k2", "a1"]);
   });
-  it("cấp không có từ -> rỗng", () => {
-    expect(topicWords(WORDS, "topic_food", "c1")).toEqual([]);
-  });
 });
 
-describe("topicsWithLevel", () => {
-  it("chỉ chủ đề có từ ở cấp đó", () => {
+describe("topicsWithLevel (kế thừa)", () => {
+  it("'kids' -> chủ đề có từ kids", () => {
     expect(topicsWithLevel(TOPICS, WORDS, "kids").map((t) => t.id)).toEqual(["topic_food", "topic_animals"]);
-    expect(topicsWithLevel(TOPICS, WORDS, "b1").map((t) => t.id)).toEqual(["topic_work"]);
   });
-  it("cấp/level lạ -> không chủ đề nào", () => {
-    expect(topicsWithLevel(TOPICS, WORDS, "beginner")).toEqual([]);
+  it("'b1' -> mọi chủ đề có từ ≤ b1", () => {
+    expect(topicsWithLevel(TOPICS, WORDS, "b1").map((t) => t.id)).toEqual(["topic_food", "topic_animals", "topic_work"]);
   });
   it("'all' -> mọi chủ đề có từ", () => {
     expect(topicsWithLevel(TOPICS, WORDS, "all").map((t) => t.id)).toEqual(["topic_food", "topic_animals", "topic_work"]);

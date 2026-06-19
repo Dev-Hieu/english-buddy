@@ -301,10 +301,12 @@ export function createApp() {
     const topicId = String(req.query.topicId || "");
     const count = Number(req.query.count || 10);
     const level = String(req.query.level || "");
+    const ORDER = ["kids", "a1", "a2", "b1", "b2", "c1"];
+    const lr = ORDER.indexOf(level); // kế thừa: lấy từ ở cấp ≤ cấp chọn
     const rows = db.prepare("SELECT * FROM vocabulary").all() as any[];
     const words = rows
       .map(rowToWord)
-      .filter((w) => w.topicIds.includes(topicId) && (!level || w.level === level));
+      .filter((w) => w.topicIds.includes(topicId) && (!level || lr < 0 ? true : ORDER.indexOf(w.level) <= lr));
     res.json(buildQuiz(words, count));
   });
 

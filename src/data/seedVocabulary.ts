@@ -1,4 +1,4 @@
-import type { VocabularyWord } from "../types";
+import { LEVEL_ORDER, type VocabularyWord } from "../types";
 import { IMAGE_URLS } from "./seedImages";
 import { ALL_LEVEL_WORDS } from "./vocab";
 import { VOCAB_OVERRIDES } from "./vocabOverrides";
@@ -145,19 +145,20 @@ const CORE_WORDS: VocabularyWord[] = [
   word({ id: "word_mountain", word: "mountain", phonetic: "/ˈmaʊn.tɪn/", meaning_vi: "ngọn núi", example: "The mountain is high.", example_vi: "Ngọn núi cao.", topicIds: ["topic_travel"] }),
 ];
 
-// Gộp toàn bộ: từ cơ bản + mọi cấp độ do các agent sinh.
-// Khử trùng theo id VÀ theo (cấp + từ) — tránh lặp thẻ khi nhiều đợt agent sinh cùng 1 từ
-// trong cùng cấp. Giữ bản XUẤT HIỆN ĐẦU (CORE_WORDS đứng trước nên giữ bản đã soạn kỹ).
+// Gộp toàn bộ: mỗi TỪ chỉ giữ 1 bản, ở CẤP THẤP NHẤT (mô hình kế thừa: từ cấp thấp
+// tự xuất hiện ở cấp cao hơn nhờ bộ lọc ≤ cấp). Tránh lặp ở mọi nơi (học/chơi/picker).
 function dedupeVocab(list: VocabularyWord[]): VocabularyWord[] {
+  const lvRank = (lv: string) => { const i = LEVEL_ORDER.indexOf(lv as never); return i < 0 ? 99 : i; };
   const seenId = new Set<string>();
-  const seenWord = new Set<string>();
-  return list.filter((w) => {
-    const wk = `${w.level}|${w.word.toLowerCase().trim()}`;
-    if (seenId.has(w.id) || seenWord.has(wk)) return false;
+  const byWord = new Map<string, VocabularyWord>();
+  for (const w of list) {
+    if (seenId.has(w.id)) continue;
     seenId.add(w.id);
-    seenWord.add(wk);
-    return true;
-  });
+    const k = w.word.toLowerCase().trim();
+    const cur = byWord.get(k);
+    if (!cur || lvRank(w.level) < lvRank(cur.level)) byWord.set(k, w); // giữ bản cấp thấp nhất
+  }
+  return [...byWord.values()];
 }
 // Áp các bản sửa theo từ điển (override theo id) trước khi khử trùng.
 const withOverrides = [...CORE_WORDS, ...ALL_LEVEL_WORDS].map((w) =>
