@@ -213,6 +213,19 @@ describe("Chống cày điểm + xếp hạng tuần", () => {
     expect(x2 - x1).toBeLessThan(10); // luyện lại chỉ +1, không cày được
   });
 
+  test("ôn lại SỚM không tăng mastery (phải đúng lịch giãn cách)", async () => {
+    const vocab = await (await get("/api/vocabulary")).json();
+    const w = vocab.find((x: any) => x.topicIds.includes("topic_society")) || vocab[1200];
+    await post(`/api/students/${studentId}/answer`, { wordId: w.id, correct: true }, t1); // học mới -> mastery 1
+    let prog = await (await get(`/api/students/${studentId}/progress`, t1)).json();
+    const m1 = prog.find((p: any) => p.wordId === w.id).mastery;
+    await post(`/api/students/${studentId}/answer`, { wordId: w.id, correct: true }, t1); // ôn lại NGAY (chưa tới hạn)
+    prog = await (await get(`/api/students/${studentId}/progress`, t1)).json();
+    const m2 = prog.find((p: any) => p.wordId === w.id).mastery;
+    expect(m1).toBe(1);
+    expect(m2).toBe(1); // không tăng vì chưa tới hạn ôn
+  });
+
   test("leaderboard tuần trả về điểm (points) theo cấp", async () => {
     const lb = await (await get("/api/leaderboard?period=week", t1)).json();
     expect(Array.isArray(lb)).toBe(true);

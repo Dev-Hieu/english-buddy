@@ -23,12 +23,20 @@ function dayStr(d: Date): string {
   return `${d.getFullYear()}-${d.getMonth() + 1}-${d.getDate()}`;
 }
 
+// Trần điểm mỗi ngày (chống farm bằng script). Đổi qua env DAILY_XP_CAP.
+const DAILY_XP_CAP = Number(process.env.DAILY_XP_CAP || 500);
+function startOfToday(): number { const d = new Date(); d.setHours(0, 0, 0, 0); return d.getTime(); }
+
 // Ghi 1 sự kiện điểm vào sổ cái + cập nhật tổng XP (cộng dồn tính lại được từ sổ cái).
+// Có TRẦN/ngày: vượt trần thì không cộng thêm (số điểm khủng bất thường -> bị chặn).
 function awardXp(studentId: string, type: string, points: number, refId: string | null = null): void {
   if (points <= 0) return;
+  const today = (db.prepare("SELECT COALESCE(SUM(points),0) AS c FROM xp_events WHERE studentId=? AND createdAt>=?").get(studentId, startOfToday()) as any).c;
+  if (today >= DAILY_XP_CAP) return;
+  const grant = Math.min(points, DAILY_XP_CAP - today);
   db.prepare("INSERT INTO xp_events (studentId, type, points, refId, createdAt) VALUES (?, ?, ?, ?, ?)")
-    .run(studentId, type, points, refId, Date.now());
-  db.prepare("UPDATE students SET xp = COALESCE(xp, 0) + ? WHERE id = ?").run(points, studentId);
+    .run(studentId, type, grant, refId, Date.now());
+  db.prepare("UPDATE students SET xp = COALESCE(xp, 0) + ? WHERE id = ?").run(grant, studentId);
 }
 
 // Chỉ thưởng 1 lần cho mỗi (loại, tham chiếu) — vd: học/thuộc 1 từ chỉ tính 1 lần (chống cày).
@@ -254,28 +262,31 @@ export function createApp() {
 
     const prev = db.prepare("SELECT * FROM progress WHERE studentId = ? AND wordId = ?").get(studentId, wordId) as any;
     const now = Date.now();
-    const base = prev || { mastery: 0, correctCount: 0, wrongCount: 0 };
-    const { mastery, nextReviewAt, status } = nextReview(base.mastery, !!correct, now);
-    const row = {
-      studentId, wordId, status, mastery,
-      correctCount: base.correctCount + (correct ? 1 : 0),
-      wrongCount: base.wrongCount + (correct ? 0 : 1),
-      lastReviewedAt: now, nextReviewAt,
-    };
+    // CHỐNG GIAN LẬN: mastery chỉ TIẾN khi (a) học từ mới lần đầu, hoặc (b) ôn đúng LÚC ĐẾN HẠN.
+    // Trả lời lại sớm (chưa tới hạn) KHÔNG tăng mastery, KHÔNG cộng điểm -> không thể bấm liên tục để cày;
+    // muốn "thuộc hẳn" phải ôn đúng đúng lịch giãn cách nhiều ngày (phản ánh trí nhớ thật).
+    let row: any;
+    if (!prev) {
+      const nr = nextReview(0, !!correct, now);
+      row = { studentId, wordId, status: nr.status, mastery: nr.mastery, correctCount: correct ? 1 : 0, wrongCount: correct ? 0 : 1, lastReviewedAt: now, nextReviewAt: nr.nextReviewAt };
+      if (correct) awardXpOnce(studentId, "first_learn", wordId, 10);
+    } else if (correct && prev.nextReviewAt > now) {
+      // Chưa tới hạn ôn -> chỉ ghi nhận đã xem, KHÔNG tiến mastery, KHÔNG điểm.
+      row = { studentId, wordId, status: prev.status, mastery: prev.mastery, correctCount: prev.correctCount + 1, wrongCount: prev.wrongCount, lastReviewedAt: now, nextReviewAt: prev.nextReviewAt };
+    } else {
+      const nr = nextReview(prev.mastery, !!correct, now);
+      row = { studentId, wordId, status: nr.status, mastery: nr.mastery, correctCount: prev.correctCount + (correct ? 1 : 0), wrongCount: prev.wrongCount + (correct ? 0 : 1), lastReviewedAt: now, nextReviewAt: nr.nextReviewAt };
+      if (correct) {
+        if (nr.mastery >= 5 && prev.mastery < 5) awardXpOnce(studentId, "mastered", wordId, 20); // thuộc hẳn (sau nhiều lần ôn đúng hạn)
+        else awardXp(studentId, "review", 5, wordId); // ôn đúng từ đến hạn
+      }
+    }
     db.prepare(
       `INSERT OR REPLACE INTO progress
         (studentId, wordId, status, mastery, correctCount, wrongCount, lastReviewedAt, nextReviewAt)
        VALUES (@studentId, @wordId, @status, @mastery, @correctCount, @wrongCount, @lastReviewedAt, @nextReviewAt)`
     ).run(row);
     bumpStreak(studentId);
-    // Điểm thưởng "học thật" (chống cày): thưởng theo tiến bộ, không theo số lần bấm.
-    if (correct) {
-      const wasDue = prev && prev.nextReviewAt <= now;
-      if ((base.mastery ?? 0) === 0) awardXpOnce(studentId, "first_learn", wordId, 10); // học từ mới lần đầu
-      else if (mastery >= 5 && (base.mastery ?? 0) < 5) awardXpOnce(studentId, "mastered", wordId, 20); // thuộc hẳn
-      else if (wasDue) awardXp(studentId, "review", 5, wordId); // ôn đúng từ đến hạn
-      else awardXp(studentId, "practice", 1, wordId); // luyện lại từ đã biết
-    }
     res.json(row);
   });
 
