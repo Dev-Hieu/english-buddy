@@ -26,6 +26,7 @@ export function ImagePickerPage({ onBackHome }: ImagePickerPageProps) {
   const [searchPage, setSearchPage] = useState(1);
   const [cands, setCands] = useState<ImageResult[] | null>(null);
   const [saving, setSaving] = useState("");
+  const [cols, setCols] = useState(3); // cỡ lưới ảnh trong modal
 
   const imgOf = (w: VocabularyWord) => overrides[w.id] ?? w.imageUrl;
 
@@ -47,8 +48,9 @@ export function ImagePickerPage({ onBackHome }: ImagePickerPageProps) {
 
   const doSearch = async (query: string, pg: number) => {
     setCands(null);
-    setCands(await getWordImages(query.trim() || "object", 12, pg).catch(() => []));
+    setCands(await getWordImages(query.trim() || "object", 30, pg).catch(() => [])); // nhiều ảnh hơn để chọn đa dạng
   };
+  const COLS: Record<number, string> = { 2: "grid-cols-2", 3: "grid-cols-3", 4: "grid-cols-4" };
   const openModal = (w: VocabularyWord) => { setActive(w); setSearchQ(w.word); setSearchPage(1); void doSearch(w.word, 1); };
   const choose = async (url: string) => {
     if (!active) return;
@@ -138,17 +140,29 @@ export function ImagePickerPage({ onBackHome }: ImagePickerPageProps) {
               </div>
               <button type="button" onClick={() => setActive(null)} className="flex h-9 w-9 items-center justify-center rounded-full bg-muted text-muted-foreground hover:bg-red-100 hover:text-red-500"><X className="h-5 w-5" /></button>
             </div>
-            <form className="flex gap-2 p-3" onSubmit={(e) => { e.preventDefault(); setSearchPage(1); void doSearch(searchQ, 1); }}>
-              <input className="h-10 flex-1 rounded-2xl border-2 border-border px-3 font-bold outline-none focus:border-primary" value={searchQ} onChange={(e) => setSearchQ(e.target.value)} placeholder="Từ khoá tìm ảnh..." />
-              <Button type="submit"><Search className="h-4 w-4" /> Tìm</Button>
-            </form>
+            <div className="space-y-2 p-3">
+              <form className="flex gap-2" onSubmit={(e) => { e.preventDefault(); setSearchPage(1); void doSearch(searchQ, 1); }}>
+                <input className="h-10 flex-1 rounded-2xl border-2 border-border px-3 font-bold outline-none focus:border-primary" value={searchQ} onChange={(e) => setSearchQ(e.target.value)} placeholder="Nhập từ khoá khác để tìm ảnh..." />
+                <Button type="submit"><Search className="h-4 w-4" /> Tìm</Button>
+              </form>
+              <div className="flex items-center justify-between gap-2">
+                <p className="text-xs font-semibold text-muted-foreground">💡 Đổi từ khoá nếu ảnh chưa hợp (vd "ripe banana", "banana fruit", "cartoon banana").</p>
+                <div className="flex shrink-0 items-center gap-1">
+                  <span className="text-xs font-bold text-muted-foreground">Lưới:</span>
+                  {[2, 3, 4].map((c) => (
+                    <button key={c} type="button" onClick={() => setCols(c)}
+                      className={cn("h-7 w-7 rounded-lg text-xs font-extrabold", cols === c ? "bg-primary text-primary-foreground" : "bg-muted text-muted-foreground")}>{c}</button>
+                  ))}
+                </div>
+              </div>
+            </div>
             <div className="flex-1 overflow-y-auto px-3 pb-3">
               {cands === null ? (
                 <div className="flex justify-center py-10"><Loader2 className="h-8 w-8 animate-spin text-primary" /></div>
               ) : cands.length === 0 ? (
                 <p className="py-10 text-center font-bold text-muted-foreground">Không có ảnh. Thử từ khoá khác.</p>
               ) : (
-                <div className="grid grid-cols-2 gap-2 sm:grid-cols-3">
+                <div className={cn("grid gap-2", COLS[cols])}>
                   {cands.map((im) => (
                     <button key={im.id} type="button" disabled={!!saving} onClick={() => choose(im.url)}
                       className="group relative overflow-hidden rounded-2xl border-2 border-border transition-all hover:border-primary active:scale-[0.98]">
