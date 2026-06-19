@@ -356,6 +356,14 @@ export function createApp() {
     }
   });
 
+  // Bản đồ ảnh hiện tại từ DB (id -> url) để client áp đè ảnh build sẵn -> ảnh đổi hiện cho MỌI người.
+  app.get("/api/images", (_req, res) => {
+    const rows = db.prepare("SELECT id, imageUrl FROM vocabulary WHERE imageUrl IS NOT NULL AND imageUrl != ''").all() as { id: string; imageUrl: string }[];
+    const map: Record<string, string> = {};
+    for (const r of rows) map[r.id] = r.imageUrl;
+    res.json(map);
+  });
+
   // ── Chọn/đổi ảnh cho 1 từ (admin hoặc user được cấp quyền sửa ảnh) ──
   app.post("/api/image-pick", requireAuth, (req, res) => {
     const u = (req as any).user;

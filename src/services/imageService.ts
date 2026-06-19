@@ -10,3 +10,8 @@ export function getWordImages(query: string, count = 12, page = 1): Promise<Imag
 export function pickImage(wordId: string, url: string): Promise<{ ok: boolean }> {
   return apiRequest(`/api/image-pick`, { method: "POST", body: { wordId, url } });
 }
+
+// Bản đồ ảnh mới nhất từ DB (id -> url) — áp đè ảnh build sẵn để mọi người thấy ảnh đã đổi.
+export function getImageMap(): Promise<Record<string, string>> {
+  return apiRequest(`/api/images`, { auth: false });
+}

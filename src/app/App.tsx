@@ -4,6 +4,8 @@ import { getUser, isLoggedIn, logout, refreshMe, type AuthUser } from "@/service
 import { createStudent, deleteStudent, listStudents, updateStudent, type NewStudent } from "@/services/studentService";
 import { getStudentProgress, recordAnswer } from "@/services/progressService";
 import { getStudent } from "@/services/studentService";
+import { getImageMap } from "@/services/imageService";
+import { SEED_VOCABULARY } from "@/data/seedVocabulary";
 import { TabBar, type TabKey } from "@/components/layout/TabBar";
 import { HomePage } from "@/pages/HomePage";
 import { AuthPage } from "@/pages/AuthPage";
@@ -62,6 +64,18 @@ export function App() {
 
   // Làm tươi tài khoản 1 lần (vd hạn mức admin vừa đổi).
   useEffect(() => { if (isLoggedIn()) refreshMe().then((u) => u && setUser(u)); }, []);
+
+  // Áp ảnh mới nhất từ DB lên dữ liệu build sẵn -> ảnh ai đó đã đổi hiện cho MỌI người.
+  const [, setImgVer] = useState(0);
+  useEffect(() => {
+    getImageMap().then((map) => {
+      let changed = false;
+      for (const w of SEED_VOCABULARY) {
+        if (map[w.id] && map[w.id] !== w.imageUrl) { w.imageUrl = map[w.id]; changed = true; }
+      }
+      if (changed) setImgVer((v) => v + 1);
+    }).catch(() => {});
+  }, []);
 
   const loadProgress = useCallback(() => {
     if (!user || !selectedStudentId) return;
