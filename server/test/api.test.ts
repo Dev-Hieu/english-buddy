@@ -4,6 +4,7 @@ import { afterAll, beforeAll, describe, expect, test } from "vitest";
 import { tmpdir } from "node:os";
 import path from "node:path";
 import { rmSync } from "node:fs";
+import { db } from "../src/db.js";
 
 const DBP = path.join(tmpdir(), `eb_api_${Date.now()}.db`);
 let server: any;
@@ -102,15 +103,23 @@ describe("Tiến độ + điểm (flashcard không cộng điểm mỗi thẻ)",
     expect(after).toBe(before); // KHÔNG cộng điểm mỗi thẻ
   });
 
-  test("học xong 1 bộ flashcard -> cộng điểm khuyến khích (1 lần/bộ/ngày)", async () => {
+  test("báo 'Thuộc' -> đưa vào kho Chờ thi (status=pending_test), KHÔNG điểm", async () => {
     const before = (await (await get(`/api/students/${studentId}`, t1)).json()).xp ?? 0;
-    await post(`/api/students/${studentId}/deck-complete`, { deckId: "fc_topic_food_kids", cards: 8 }, t1);
+    const vocab = await (await get("/api/vocabulary")).json();
+    const w = vocab.find((x: any) => x.topicIds.includes("topic_animals")) || vocab[300];
+    await post(`/api/students/${studentId}/answer`, { wordId: w.id, correct: true }, t1);
+    const pending = await (await get(`/api/students/${studentId}/pending`, t1)).json();
+    expect(pending.words).toContain(w.id);
     const after = (await (await get(`/api/students/${studentId}`, t1)).json()).xp ?? 0;
-    expect(after).toBe(before + 8); // tỉ lệ theo số thẻ (min 20)
-    // hoàn thành lại cùng bộ trong ngày -> không cộng thêm
-    await post(`/api/students/${studentId}/deck-complete`, { deckId: "fc_topic_food_kids", cards: 8 }, t1);
-    const after2 = (await (await get(`/api/students/${studentId}`, t1)).json()).xp ?? 0;
-    expect(after2).toBe(after);
+    expect(after).toBe(before); // học tự do không cộng điểm
+  });
+
+  test("báo 'Cần ôn' -> đưa vào kho Cần ôn (status=relearn)", async () => {
+    const vocab = await (await get("/api/vocabulary")).json();
+    const w = vocab.find((x: any) => x.topicIds.includes("topic_animals")) || vocab[301];
+    await post(`/api/students/${studentId}/answer`, { wordId: w.id, correct: false }, t1);
+    const relearn = await (await get(`/api/students/${studentId}/relearn`, t1)).json();
+    expect(relearn.words).toContain(w.id);
   });
 });
 
@@ -167,7 +176,7 @@ describe("Admin + hạn mức", () => {
 });
 
 describe("Quiz results + Review", () => {
-  test("lưu kết quả test -> đọc lại có + XP (3đ/câu, 1 lần/chủ đề/ngày)", async () => {
+  test("lưu kết quả test -> đọc lại có, nhưng KHÔNG cộng điểm (điểm chỉ từ Thi kỹ năng)", async () => {
     const before = (await (await get(`/api/students/${studentId}`, t1)).json()).xp ?? 0;
     const body = {
       studentId, topicId: "topic_food", score: 80, totalQuestions: 5,
@@ -177,11 +186,7 @@ describe("Quiz results + Review", () => {
     const list = await (await get(`/api/students/${studentId}/quiz-results`, t1)).json();
     expect(list.length).toBeGreaterThan(0);
     const after = (await (await get(`/api/students/${studentId}`, t1)).json()).xp ?? 0;
-    expect(after).toBe(before + 12); // 4 câu đúng * 3
-    // Làm lại cùng chủ đề trong ngày -> KHÔNG cộng thêm (chống cày)
-    await post("/api/quiz-results", body, t1);
-    const after2 = (await (await get(`/api/students/${studentId}`, t1)).json()).xp ?? 0;
-    expect(after2).toBe(after);
+    expect(after).toBe(before); // luyện tập không cộng điểm
   });
 
   test("hàng đợi ôn trả về mảng", async () => {
@@ -237,6 +242,76 @@ describe("Chống cày điểm + xếp hạng tuần", () => {
     const lb = await (await get("/api/leaderboard?period=week", t1)).json();
     expect(Array.isArray(lb)).toBe(true);
     if (lb.length) { expect(lb[0]).toHaveProperty("points"); expect(lb[0]).toHaveProperty("level"); }
+  });
+});
+
+describe("Thi kỹ năng (điểm = số kỹ năng đang qua)", () => {
+  let w: any;
+  const xpOf = async () => (await (await get(`/api/students/${studentId}`, t1)).json()).xp ?? 0;
+  const progOf = async (id: string) =>
+    (await (await get(`/api/students/${studentId}/progress`, t1)).json()).find((p: any) => p.wordId === id);
+
+  test("chấm đúng đủ 3 kỹ năng -> scored + cộng đúng điểm (server chấm)", async () => {
+    db.prepare("DELETE FROM progress WHERE studentId=?").run(studentId); // cô lập
+    const vocab = await (await get("/api/vocabulary")).json();
+    w = vocab[0];
+    db.prepare("INSERT OR REPLACE INTO progress (studentId,wordId,status,mastery,correctCount,wrongCount,lastReviewedAt,nextReviewAt,skillsPassed) VALUES (?,?,?,?,?,?,?,?,?)")
+      .run(studentId, w.id, "pending_test", 1, 0, 0, Date.now(), Date.now(), null);
+    const start = await (await post(`/api/students/${studentId}/skill-test/start`, { mode: "new" }, t1)).json();
+    expect(start.skills.length).toBe(3); // a2 = nghe/nói/viết
+    expect(start.items.length).toBe(1);
+    expect(start.items[0].options.length).toBe(4); // nghe chọn chữ -> 4 lựa chọn
+
+    const before = await xpOf();
+    const answers = [
+      { wordId: w.id, skill: "listen_word", value: w.word },
+      { wordId: w.id, skill: "write", value: w.word },
+      { wordId: w.id, skill: "speak", value: 85 },
+    ];
+    const sub = await (await post(`/api/students/${studentId}/skill-test/submit`, { sessionId: start.sessionId, answers }, t1)).json();
+    expect(sub.totalDelta).toBe(3);
+    expect(sub.results[0].points).toBe(3);
+    expect(await xpOf()).toBe(before + 3);
+    expect((await progOf(w.id)).status).toBe("scored");
+  });
+
+  test("thi LẠI quên 1 kỹ năng -> trừ điểm kỹ năng đó + về Cần ôn", async () => {
+    // đưa từ đã scored về diện thi lại (đến hạn), đủ 3 kỹ năng
+    db.prepare("UPDATE progress SET status='scored', nextReviewAt=?, skillsPassed=? WHERE studentId=? AND wordId=?")
+      .run(Date.now() - 1000, JSON.stringify(["listen_word", "speak", "write"]), studentId, w.id);
+    const start = await (await post(`/api/students/${studentId}/skill-test/start`, { mode: "review" }, t1)).json();
+    expect(start.items.some((i: any) => i.wordId === w.id)).toBe(true);
+
+    const before = await xpOf();
+    const answers = [
+      { wordId: w.id, skill: "listen_word", value: w.word },
+      { wordId: w.id, skill: "write", value: w.word },
+      { wordId: w.id, skill: "speak", value: 30 }, // phát âm kém -> rớt
+    ];
+    const sub = await (await post(`/api/students/${studentId}/skill-test/submit`, { sessionId: start.sessionId, answers }, t1)).json();
+    const r = sub.results.find((x: any) => x.wordId === w.id);
+    expect(r.lost).toContain("speak");
+    expect(await xpOf()).toBe(before - 1); // mất 1 điểm kỹ năng nói
+    expect((await progOf(w.id)).status).toBe("relearn");
+  });
+
+  test("chấm SAI -> không qua kỹ năng, 0 điểm", async () => {
+    db.prepare("DELETE FROM progress WHERE studentId=?").run(studentId);
+    const vocab = await (await get("/api/vocabulary")).json();
+    const w2 = vocab[1];
+    db.prepare("INSERT OR REPLACE INTO progress (studentId,wordId,status,mastery,correctCount,wrongCount,lastReviewedAt,nextReviewAt,skillsPassed) VALUES (?,?,?,?,?,?,?,?,?)")
+      .run(studentId, w2.id, "pending_test", 1, 0, 0, Date.now(), Date.now(), null);
+    const start = await (await post(`/api/students/${studentId}/skill-test/start`, { mode: "new" }, t1)).json();
+    const before = await xpOf();
+    const answers = [
+      { wordId: w2.id, skill: "listen_word", value: "___sai___" },
+      { wordId: w2.id, skill: "write", value: "___sai___" },
+      { wordId: w2.id, skill: "speak", value: 10 },
+    ];
+    const sub = await (await post(`/api/students/${studentId}/skill-test/submit`, { sessionId: start.sessionId, answers }, t1)).json();
+    expect(sub.totalDelta).toBe(0);
+    expect(await xpOf()).toBe(before);
+    expect((await progOf(w2.id)).status).toBe("relearn");
   });
 });
 

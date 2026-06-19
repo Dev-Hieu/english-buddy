@@ -39,14 +39,7 @@ function awardXp(studentId: string, type: string, points: number, refId: string 
   db.prepare("UPDATE students SET xp = COALESCE(xp, 0) + ? WHERE id = ?").run(grant, studentId);
 }
 
-// Chỉ thưởng 1 lần cho mỗi (loại, tham chiếu) — vd: học/thuộc 1 từ chỉ tính 1 lần (chống cày).
-function awardXpOnce(studentId: string, type: string, refId: string, points: number): void {
-  const existed = db.prepare("SELECT 1 FROM xp_events WHERE studentId=? AND type=? AND refId=? LIMIT 1").get(studentId, type, refId);
-  if (existed) return;
-  awardXp(studentId, type, points, refId);
-}
-
-// Cập nhật chuỗi ngày học liên tiếp; thưởng điểm mốc 3/7/30 ngày.
+// Cập nhật chuỗi ngày học liên tiếp (chỉ để hiển thị 🔥 khích lệ — KHÔNG cộng điểm).
 function bumpStreak(studentId: string): void {
   const s = db.prepare("SELECT streak, lastActiveDate FROM students WHERE id = ?").get(studentId) as any;
   if (!s) return;
@@ -57,8 +50,49 @@ function bumpStreak(studentId: string): void {
   const yesterday = dayStr(y);
   const streak = s.lastActiveDate === yesterday ? (s.streak || 0) + 1 : 1;
   db.prepare("UPDATE students SET streak = ?, lastActiveDate = ? WHERE id = ?").run(streak, today, studentId);
-  const bonus: Record<number, number> = { 3: 10, 7: 30, 14: 60, 30: 150 };
-  if (bonus[streak]) awardXp(studentId, "streak_milestone", bonus[streak], `streak_${streak}_${today}`);
+}
+
+// ── Thi kỹ năng (điểm = số kỹ năng đang qua mỗi từ) ──
+const SKILLS_BY_LEVEL: Record<string, string[]> = {
+  kids: ["listen_word", "image_word"],
+};
+const DEFAULT_SKILLS = ["listen_word", "speak", "write"];
+function skillsForLevel(level: string): string[] {
+  return SKILLS_BY_LEVEL[level] || DEFAULT_SKILLS;
+}
+const SPEAK_PASS = Number(process.env.SPEAK_PASS || 60);
+
+// Trừ điểm (quên khi thi lại): ghi sự kiện âm vào sổ cái, hạ tổng (sàn 0). Không bị trần ngày.
+function deductXp(studentId: string, type: string, points: number, refId: string | null = null): void {
+  if (points <= 0) return;
+  const cur = (db.prepare("SELECT COALESCE(xp,0) AS c FROM students WHERE id=?").get(studentId) as any)?.c ?? 0;
+  const dec = Math.min(points, cur); // không để tổng âm
+  if (dec <= 0) return;
+  db.prepare("INSERT INTO xp_events (studentId, type, points, refId, createdAt) VALUES (?, ?, ?, ?, ?)")
+    .run(studentId, type, -dec, refId, Date.now());
+  db.prepare("UPDATE students SET xp = COALESCE(xp,0) - ? WHERE id = ?").run(dec, studentId);
+}
+
+const normWrite = (s: string): string => String(s || "").trim().toLowerCase().replace(/\s+/g, " ");
+// Chấm 1 kỹ năng ở SERVER (không tin client). value: lựa chọn/chữ gõ; speak: điểm phát âm 0-100.
+function gradeSkill(skill: string, value: any, correctWord: string): boolean {
+  if (skill === "write") return normWrite(value) === normWrite(correctWord);
+  if (skill === "speak") return Number(value) >= SPEAK_PASS;
+  // listen_word / image_word: chọn đúng từ
+  return String(value) === String(correctWord);
+}
+
+// 4 lựa chọn chữ (1 đúng + 3 nhiễu) cho câu nghe/nhìn hình.
+function buildOptions(correct: string, pool: string[]): string[] {
+  const others = pool.filter((w) => w !== correct);
+  const picks: string[] = [];
+  while (picks.length < 3 && others.length) {
+    const i = Math.floor(Math.random() * others.length);
+    picks.push(others.splice(i, 1)[0]);
+  }
+  const opts = [correct, ...picks];
+  for (let i = opts.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [opts[i], opts[j]] = [opts[j], opts[i]]; }
+  return opts;
 }
 
 // Mốc đầu tuần (thứ 2, 00:00 giờ máy chủ) cho bảng xếp hạng theo tuần.
@@ -254,46 +288,136 @@ export function createApp() {
     res.json(db.prepare("SELECT * FROM progress WHERE studentId = ?").all(req.params.id));
   });
 
+  // HỌC TỰ DO: bé tự báo "Thuộc" / "Cần ôn" — KHÔNG cộng/trừ điểm, chỉ xếp từ vào diện thi.
+  // (Giữ tên /answer + body {wordId, correct} để client cũ vẫn chạy; correct=true nghĩa là "Thuộc".)
   app.post("/api/students/:id/answer", requireAuth, (req, res) => {
     if (!canAccessStudent(req, res, req.params.id)) return;
     const studentId = req.params.id;
     const { wordId, correct } = req.body || {};
     if (!wordId) return res.status(400).json({ error: "thiếu wordId" });
-
+    const known = !!correct;
     const prev = db.prepare("SELECT * FROM progress WHERE studentId = ? AND wordId = ?").get(studentId, wordId) as any;
     const now = Date.now();
-    // Tự học (flashcard/lesson/game) là TỰ ĐÁNH GIÁ -> KHÔNG cộng điểm mỗi thẻ (chống gian lận).
-    // Chỉ cập nhật tiến độ/lịch ôn (mastery vẫn theo lịch giãn cách). Điểm đến từ: hoàn thành bộ
-    // flashcard (thưởng nhỏ), làm Test/Làm đề, và streak.
-    let row: any;
-    if (!prev) {
-      const nr = nextReview(0, !!correct, now);
-      row = { studentId, wordId, status: nr.status, mastery: nr.mastery, correctCount: correct ? 1 : 0, wrongCount: correct ? 0 : 1, lastReviewedAt: now, nextReviewAt: nr.nextReviewAt };
-    } else if (correct && prev.nextReviewAt > now) {
-      // Chưa tới hạn ôn -> chỉ ghi nhận đã xem, không tiến mastery.
-      row = { studentId, wordId, status: prev.status, mastery: prev.mastery, correctCount: prev.correctCount + 1, wrongCount: prev.wrongCount, lastReviewedAt: now, nextReviewAt: prev.nextReviewAt };
-    } else {
-      const nr = nextReview(prev.mastery, !!correct, now);
-      row = { studentId, wordId, status: nr.status, mastery: nr.mastery, correctCount: prev.correctCount + (correct ? 1 : 0), wrongCount: prev.wrongCount + (correct ? 0 : 1), lastReviewedAt: now, nextReviewAt: nr.nextReviewAt };
-    }
+    // Đã có điểm (scored) mà bé xem lại & báo thuộc -> giữ nguyên (thi lại theo lịch ôn, không hạ).
+    const status = known ? (prev?.status === "scored" ? "scored" : "pending_test") : "relearn";
+    const row = {
+      studentId, wordId, status,
+      mastery: known ? Math.max(1, prev?.mastery || 0) : (prev?.mastery || 0),
+      correctCount: (prev?.correctCount || 0) + (known ? 1 : 0),
+      wrongCount: (prev?.wrongCount || 0) + (known ? 0 : 1),
+      lastReviewedAt: now,
+      nextReviewAt: prev?.nextReviewAt || now,
+      skillsPassed: prev?.skillsPassed || null,
+    };
     db.prepare(
       `INSERT OR REPLACE INTO progress
-        (studentId, wordId, status, mastery, correctCount, wrongCount, lastReviewedAt, nextReviewAt)
-       VALUES (@studentId, @wordId, @status, @mastery, @correctCount, @wrongCount, @lastReviewedAt, @nextReviewAt)`
+        (studentId, wordId, status, mastery, correctCount, wrongCount, lastReviewedAt, nextReviewAt, skillsPassed)
+       VALUES (@studentId, @wordId, @status, @mastery, @correctCount, @wrongCount, @lastReviewedAt, @nextReviewAt, @skillsPassed)`
     ).run(row);
     bumpStreak(studentId);
     res.json(row);
   });
 
-  // Thưởng khuyến khích khi HỌC XONG 1 BỘ flashcard — theo số thẻ (trần 20), 1 lần/bộ/ngày (chống cày).
+  // /deck-complete: GIỮ để client cũ không lỗi, nhưng KHÔNG còn cộng điểm (điểm chỉ từ thi).
   app.post("/api/students/:id/deck-complete", requireAuth, (req, res) => {
     if (!canAccessStudent(req, res, req.params.id)) return;
-    const { deckId, cards } = req.body || {};
-    const n = Math.max(1, Math.min(50, Number(cards) || 0));
-    const bonus = Math.min(20, n); // tỉ lệ theo số thẻ, tối đa 20
     bumpStreak(req.params.id);
-    awardXpOnce(req.params.id, "deck", `${deckId || "deck"}_${dayStr(new Date())}`, bonus);
-    res.json({ ok: true, bonus });
+    res.json({ ok: true, bonus: 0 });
+  });
+
+  // Kho CHỜ THI (đã báo thuộc, chưa thi). Đủ 10 -> client nhắc thi.
+  app.get("/api/students/:id/pending", requireAuth, (req, res) => {
+    if (!canAccessStudent(req, res, req.params.id)) return;
+    const rows = db.prepare("SELECT wordId FROM progress WHERE studentId=? AND status='pending_test' ORDER BY lastReviewedAt").all(req.params.id) as any[];
+    res.json({ words: rows.map((r) => r.wordId), count: rows.length });
+  });
+
+  // Kho CẦN ÔN (bấm cần ôn / sai / rớt thi lại) — lặp học đến khi báo thuộc.
+  app.get("/api/students/:id/relearn", requireAuth, (req, res) => {
+    if (!canAccessStudent(req, res, req.params.id)) return;
+    const rows = db.prepare("SELECT wordId FROM progress WHERE studentId=? AND status='relearn' ORDER BY lastReviewedAt").all(req.params.id) as any[];
+    res.json({ words: rows.map((r) => r.wordId), count: rows.length });
+  });
+
+  // Từ đã có điểm tới hạn ôn -> cần THI LẠI kiểm tra trí nhớ.
+  app.get("/api/students/:id/due-tests", requireAuth, (req, res) => {
+    if (!canAccessStudent(req, res, req.params.id)) return;
+    const now = req.query.now ? Number(req.query.now) : Date.now();
+    const rows = db.prepare("SELECT wordId FROM progress WHERE studentId=? AND status='scored' AND nextReviewAt<=? ORDER BY nextReviewAt").all(req.params.id, now) as any[];
+    res.json({ words: rows.map((r) => r.wordId), count: rows.length });
+  });
+
+  // Bắt đầu bài thi: server chọn từ + tạo đề + GIỮ đáp án trong phiên (không gửi đáp án write/speak).
+  app.post("/api/students/:id/skill-test/start", requireAuth, (req, res) => {
+    if (!canAccessStudent(req, res, req.params.id)) return;
+    const studentId = req.params.id;
+    const student = db.prepare("SELECT * FROM students WHERE id=?").get(studentId) as any;
+    if (!student) return res.status(404).json({ error: "không có học sinh" });
+    const mode = req.body?.mode === "review" ? "review" : "new";
+    const now = Date.now();
+    const picked = mode === "review"
+      ? db.prepare("SELECT wordId FROM progress WHERE studentId=? AND status='scored' AND nextReviewAt<=? ORDER BY nextReviewAt LIMIT 10").all(studentId, now) as any[]
+      : db.prepare("SELECT wordId FROM progress WHERE studentId=? AND status='pending_test' ORDER BY lastReviewedAt LIMIT 10").all(studentId) as any[];
+    if (!picked.length) return res.status(400).json({ error: "chưa có từ để thi" });
+    const ids = picked.map((r) => r.wordId);
+    const rows = db.prepare(`SELECT * FROM vocabulary WHERE id IN (${ids.map(() => "?").join(",")})`).all(...ids) as any[];
+    const allWords = (db.prepare("SELECT word FROM vocabulary").all() as any[]).map((r) => r.word);
+    const skills = skillsForLevel(student.level);
+    const needOptions = skills.some((s) => s === "listen_word" || s === "image_word");
+    const items = rows.map((w) => ({
+      wordId: w.id, word: w.word, phonetic: w.phonetic, meaning_vi: w.meaning_vi,
+      imageUrl: w.imageUrl, audioUrl: w.audioUrl,
+      options: needOptions ? buildOptions(w.word, allWords) : undefined,
+    }));
+    const key: Record<string, string> = {};
+    for (const w of rows) key[w.id] = w.word;
+    const sessionId = randomUUID();
+    db.prepare("INSERT INTO skill_test_sessions (id, studentId, mode, level, itemsJson, keyJson, createdAt) VALUES (?,?,?,?,?,?,?)")
+      .run(sessionId, studentId, mode, student.level, JSON.stringify(items), JSON.stringify(key), now);
+    res.json({ sessionId, level: student.level, skills, items });
+  });
+
+  // Nộp bài: server chấm từng (từ, kỹ năng); kỹ năng mới qua +1, kỹ năng quên -1; cập nhật trạng thái.
+  app.post("/api/students/:id/skill-test/submit", requireAuth, (req, res) => {
+    if (!canAccessStudent(req, res, req.params.id)) return;
+    const studentId = req.params.id;
+    const { sessionId, answers } = req.body || {};
+    const sess = db.prepare("SELECT * FROM skill_test_sessions WHERE id=? AND studentId=?").get(sessionId, studentId) as any;
+    if (!sess) return res.status(404).json({ error: "phiên thi không tồn tại" });
+    const key = JSON.parse(sess.keyJson) as Record<string, string>;
+    const skills = skillsForLevel(sess.level);
+    const ans: any[] = Array.isArray(answers) ? answers : [];
+    const find = (wordId: string, skill: string) => ans.find((a) => a.wordId === wordId && a.skill === skill);
+    const now = Date.now();
+    const results: any[] = [];
+    let totalDelta = 0;
+    for (const wordId of Object.keys(key)) {
+      const prev = db.prepare("SELECT * FROM progress WHERE studentId=? AND wordId=?").get(studentId, wordId) as any;
+      const old: string[] = prev?.skillsPassed ? JSON.parse(prev.skillsPassed) : [];
+      const newPassed: string[] = [];
+      for (const skill of skills) {
+        const a = find(wordId, skill);
+        // Kỹ năng "nói" không có dịch vụ chấm (không gửi value) -> bỏ qua: giữ nguyên trạng thái cũ.
+        const pass = (skill === "speak" && (a == null || a.value == null || a.value === "skip"))
+          ? old.includes(skill)
+          : gradeSkill(skill, a?.value, key[wordId]);
+        if (pass) newPassed.push(skill);
+      }
+      const passed: string[] = [], lost: string[] = [];
+      for (const skill of skills) {
+        const isNew = newPassed.includes(skill);
+        if (isNew && !old.includes(skill)) { awardXp(studentId, "skill_pass", 1, `${wordId}_${skill}`); passed.push(skill); totalDelta += 1; }
+        else if (!isNew && old.includes(skill)) { deductXp(studentId, "skill_lose", 1, `${wordId}_${skill}`); lost.push(skill); totalDelta -= 1; }
+      }
+      const full = newPassed.length >= skills.length;
+      const nr = nextReview(prev?.mastery ?? 0, full, now);
+      db.prepare("UPDATE progress SET status=?, mastery=?, nextReviewAt=?, lastReviewedAt=?, skillsPassed=? WHERE studentId=? AND wordId=?")
+        .run(full ? "scored" : "relearn", nr.mastery, nr.nextReviewAt, now, JSON.stringify(newPassed), studentId, wordId);
+      results.push({ wordId, passed, lost, points: newPassed.length });
+    }
+    db.prepare("DELETE FROM skill_test_sessions WHERE id=?").run(sessionId);
+    bumpStreak(studentId);
+    res.json({ results, totalDelta });
   });
 
   app.get("/api/students/:id", requireAuth, (req, res) => {
@@ -360,13 +484,8 @@ export function createApp() {
       r.studentId, r.topicId, r.score, r.totalQuestions, r.correctAnswers, r.wrongAnswers,
       JSON.stringify(r.wrongWordIds ?? []), r.durationSeconds, r.createdAt ?? Date.now()
     );
-    if (r.studentId) {
-      bumpStreak(r.studentId);
-      // Thưởng theo số câu đúng nhưng chỉ tính LẦN ĐẦU mỗi (chủ đề, ngày) -> chống làm đi làm lại để cày.
-      const today = dayStr(new Date());
-      const pts = Math.min(50, (Number(r.correctAnswers) || 0) * 3);
-      awardXpOnce(r.studentId, "quiz", `${r.topicId || "exam"}_${today}`, pts);
-    }
+    // Lưu lịch sử luyện tập (KHÔNG cộng điểm — điểm chỉ đến từ bài Thi kỹ năng).
+    if (r.studentId) bumpStreak(r.studentId);
     res.json({ ok: true });
   });
 

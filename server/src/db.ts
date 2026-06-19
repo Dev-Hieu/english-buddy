@@ -49,6 +49,12 @@ export function initSchema(): void {
     );
     CREATE INDEX IF NOT EXISTS idx_xp_student ON xp_events(studentId);
     CREATE INDEX IF NOT EXISTS idx_xp_created ON xp_events(createdAt);
+    -- Phiên thi kỹ năng: server giữ đáp án để chấm (không tin client).
+    CREATE TABLE IF NOT EXISTS skill_test_sessions (
+      id TEXT PRIMARY KEY, studentId TEXT, mode TEXT, level TEXT,
+      itemsJson TEXT, keyJson TEXT, createdAt INTEGER
+    );
+    CREATE INDEX IF NOT EXISTS idx_sts_student ON skill_test_sessions(studentId);
   `);
   // Migration cho DB cũ: thêm cột nếu chưa có.
   try { db.exec("ALTER TABLE students ADD COLUMN lastActiveDate TEXT"); } catch { /* đã có */ }
@@ -59,6 +65,8 @@ export function initSchema(): void {
   try { db.exec("ALTER TABLE lookup_history ADD COLUMN meaning TEXT"); } catch { /* đã có */ }
   try { db.exec("ALTER TABLE lookup_history ADD COLUMN phonetic TEXT"); } catch { /* đã có */ }
   try { db.exec("ALTER TABLE lookup_history ADD COLUMN imageUrl TEXT"); } catch { /* đã có */ }
+  // Thi kỹ năng: cột kỹ năng đang qua của mỗi từ (JSON mảng). Điểm từ = độ dài mảng.
+  try { db.exec("ALTER TABLE progress ADD COLUMN skillsPassed TEXT"); } catch { /* đã có */ }
   // Chuẩn hoá level cũ ("beginner"... ) về tập CEFR hợp lệ để bộ lọc theo cấp hoạt động.
   try { db.exec("UPDATE students SET level='a1' WHERE level IS NULL OR level NOT IN ('kids','a1','a2','b1','b2','c1')"); } catch { /* bỏ qua */ }
   // Backfill sổ cái: giữ nguyên XP cũ của bé (1 dòng 'legacy') để không mất quyền lợi.
