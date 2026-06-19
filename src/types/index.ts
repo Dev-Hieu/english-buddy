@@ -5,4 +5,5 @@ export * from "./vocabulary";
 export * from "./progress";
 export * from "./quiz";
 export * from "./grammar";
+export * from "./conversation";
 export * from "./service";

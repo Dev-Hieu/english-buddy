@@ -37,12 +37,16 @@ export interface AdminUser {
   createdAt: number;
   studentCount: number;
   studentLimit: number;
+  isPremium?: number;
 }
 export function listUsers(): Promise<AdminUser[]> {
   return apiRequest(`/api/admin/users`);
 }
 export function setStudentLimit(userId: string, studentLimit: number): Promise<{ ok: boolean; studentLimit: number }> {
   return apiRequest(`/api/admin/users/${userId}`, { method: "PUT", body: { studentLimit } });
+}
+export function setPremium(userId: string, isPremium: boolean): Promise<{ ok: boolean; isPremium: boolean }> {
+  return apiRequest(`/api/admin/users/${userId}`, { method: "PUT", body: { isPremium } });
 }
 
 export interface LeaderEntry {

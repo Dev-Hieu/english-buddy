@@ -99,20 +99,27 @@ export function createApp() {
   // ── Admin: quản lý người dùng ──
   app.get("/api/admin/users", requireAdmin, (_req, res) => {
     const rows = db.prepare(`
-      SELECT u.id, u.email, u.name, u.role, u.createdAt, u.studentLimit,
+      SELECT u.id, u.email, u.name, u.role, u.createdAt, u.studentLimit, u.isPremium,
              (SELECT COUNT(*) FROM students s WHERE s.parentId = u.id) AS studentCount
       FROM users u ORDER BY u.createdAt DESC
     `).all();
     res.json(rows);
   });
 
-  // Admin đặt hạn mức số bé cho 1 phụ huynh.
+  // Admin đặt hạn mức số bé và/hoặc cấp premium (chat AI) cho 1 phụ huynh.
   app.put("/api/admin/users/:id", requireAdmin, (req, res) => {
-    const limit = Math.max(0, Math.min(50, Number(req.body?.studentLimit)));
-    if (Number.isNaN(limit)) return res.status(400).json({ error: "studentLimit không hợp lệ" });
-    const r = db.prepare("UPDATE users SET studentLimit = ? WHERE id = ?").run(limit, req.params.id);
-    if (r.changes === 0) return res.status(404).json({ error: "không có user" });
-    res.json({ ok: true, studentLimit: limit });
+    const body = req.body || {};
+    if (body.studentLimit !== undefined) {
+      const limit = Math.max(0, Math.min(50, Number(body.studentLimit)));
+      if (Number.isNaN(limit)) return res.status(400).json({ error: "studentLimit không hợp lệ" });
+      db.prepare("UPDATE users SET studentLimit = ? WHERE id = ?").run(limit, req.params.id);
+    }
+    if (body.isPremium !== undefined) {
+      db.prepare("UPDATE users SET isPremium = ? WHERE id = ?").run(body.isPremium ? 1 : 0, req.params.id);
+    }
+    const row = db.prepare("SELECT id, studentLimit, isPremium FROM users WHERE id = ?").get(req.params.id) as any;
+    if (!row) return res.status(404).json({ error: "không có user" });
+    res.json({ ok: true, studentLimit: row.studentLimit, isPremium: !!row.isPremium });
   });
 
   // ── Bảng xếp hạng (theo XP, mọi học sinh) ──
@@ -327,6 +334,54 @@ export function createApp() {
       res.json({ translation });
     } catch {
       res.status(502).json({ error: "translate proxy lỗi" });
+    }
+  });
+
+  // Chế độ chat: AI bật khi server có key VÀ user trả phí (premium). Còn lại -> kịch bản.
+  app.get("/api/chat/status", requireAuth, (req, res) => {
+    const keyOk = !!(process.env.DEEPSEEK_API_KEY || "");
+    const u = (req as any).user;
+    res.json({ enabled: keyOk && !!u.isPremium, premium: !!u.isPremium, configured: keyOk });
+  });
+
+  // ── Hội thoại AI (proxy DeepSeek, key ở server/.env, không lộ ra client) — chỉ user premium ──
+  app.post("/api/chat", requireAuth, async (req, res) => {
+    const key = process.env.DEEPSEEK_API_KEY || "";
+    if (!key) return res.status(503).json({ error: "Chatbot chưa cấu hình (thiếu DEEPSEEK_API_KEY)." });
+    const u = (req as any).user;
+    if (!u.isPremium) return res.status(403).json({ error: "Chat AI dành cho tài khoản nâng cấp (premium)." });
+    const { messages, level, scenario } = req.body || {};
+    if (!Array.isArray(messages)) return res.status(400).json({ error: "thiếu messages" });
+
+    const levelHint: Record<string, string> = {
+      kids: "rất đơn giản, câu 3-6 từ", a1: "đơn giản, thì hiện tại", a2: "câu ngắn, từ vựng cơ bản",
+      b1: "trung cấp", b2: "khá nâng cao", c1: "nâng cao, học thuật",
+    };
+    const sys = [
+      "You are a friendly English tutor for a Vietnamese child learning English.",
+      scenario ? `Role-play this situation: ${scenario}.` : "Have a simple, friendly conversation.",
+      `Keep YOUR English replies short and at CEFR level ${level || "a1"} (${levelHint[level] || "simple"}).`,
+      "Always answer in English first (1-2 sentences, stay in character).",
+      "If the child's message has an English mistake, after your reply add a new line starting with '💡' giving a SHORT correction explained in Vietnamese (tiếng Việt). If no mistake, add '💡 Tốt lắm!'.",
+      "Be encouraging and never use difficult words above the level.",
+    ].join(" ");
+
+    try {
+      const r = await fetch("https://api.deepseek.com/chat/completions", {
+        method: "POST",
+        headers: { "content-type": "application/json", authorization: `Bearer ${key}` },
+        body: JSON.stringify({
+          model: process.env.DEEPSEEK_MODEL || "deepseek-chat",
+          messages: [{ role: "system", content: sys }, ...messages.slice(-12)],
+          temperature: 0.7, max_tokens: 220,
+        }),
+      });
+      if (!r.ok) return res.status(502).json({ error: `DeepSeek lỗi ${r.status}` });
+      const data: any = await r.json();
+      const reply = data?.choices?.[0]?.message?.content?.trim() || "...";
+      res.json({ reply });
+    } catch {
+      res.status(502).json({ error: "Không gọi được DeepSeek." });
     }
   });
 

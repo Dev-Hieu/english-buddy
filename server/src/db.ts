@@ -46,6 +46,7 @@ export function initSchema(): void {
   // Migration cho DB cũ: thêm cột nếu chưa có.
   try { db.exec("ALTER TABLE students ADD COLUMN lastActiveDate TEXT"); } catch { /* đã có */ }
   try { db.exec("ALTER TABLE users ADD COLUMN studentLimit INTEGER DEFAULT 1"); } catch { /* đã có */ }
+  try { db.exec("ALTER TABLE users ADD COLUMN isPremium INTEGER DEFAULT 0"); } catch { /* đã có */ }
   // Lưu nghĩa/phiên âm/ảnh khi tra để My Words hiển thị + học được.
   try { db.exec("ALTER TABLE lookup_history ADD COLUMN meaning TEXT"); } catch { /* đã có */ }
   try { db.exec("ALTER TABLE lookup_history ADD COLUMN phonetic TEXT"); } catch { /* đã có */ }

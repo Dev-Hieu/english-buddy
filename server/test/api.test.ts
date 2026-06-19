@@ -177,6 +177,24 @@ describe("Quiz results + Review", () => {
   });
 });
 
+describe("Chat AI premium", () => {
+  test("free: status enabled=false, POST chat -> 503 (chưa key)", async () => {
+    const st = await (await get("/api/chat/status", t1)).json();
+    expect(st.enabled).toBe(false);
+    expect(st.premium).toBe(false);
+    expect((await post("/api/chat", { messages: [{ role: "user", content: "hi" }] }, t1)).status).toBe(503);
+  });
+
+  test("admin cấp premium -> status.premium=true (enabled vẫn false vì chưa key)", async () => {
+    const tAdmin = (await (await post("/api/login", { email: "admin@buddy.vn", password: "123456" })).json()).token;
+    const me = await (await get("/api/me", t1)).json();
+    await put(`/api/admin/users/${me.id}`, { isPremium: true }, tAdmin);
+    const st = await (await get("/api/chat/status", t1)).json();
+    expect(st.premium).toBe(true);
+    expect(st.enabled).toBe(false); // chưa có DEEPSEEK_API_KEY trong test
+  });
+});
+
 describe("Xóa hồ sơ bé", () => {
   test("tạo rồi xóa -> không còn trong danh sách", async () => {
     const s = await (await post("/api/students", { name: "Bé Xóa", level: "a1" }, t2)).json();

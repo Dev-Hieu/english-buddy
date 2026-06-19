@@ -12,11 +12,13 @@ export interface User {
   role: string; // "parent" | "admin"
   createdAt: number;
   studentLimit: number; // hạn mức số bé (admin cấp)
+  isPremium: boolean; // trả phí -> mở chat AI nâng cao (DeepSeek)
 }
 
 const publicUser = (r: any): User => ({
   id: r.id, email: r.email, name: r.name, role: r.role, createdAt: r.createdAt,
   studentLimit: r.studentLimit ?? 1,
+  isPremium: !!r.isPremium || r.role === "admin",
 });
 
 // ── Mật khẩu (scrypt) ──

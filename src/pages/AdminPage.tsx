@@ -1,6 +1,7 @@
-import { Check, Loader2, Shield } from "lucide-react";
+import { Check, Crown, Loader2, Shield } from "lucide-react";
 import { useEffect, useState } from "react";
-import { listUsers, setStudentLimit, type AdminUser } from "@/services/studentService";
+import { listUsers, setPremium, setStudentLimit, type AdminUser } from "@/services/studentService";
+import { cn } from "@/components/ui/cn";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { SessionHeader } from "@/components/layout/SessionHeader";
@@ -22,6 +23,12 @@ export function AdminPage({ onBack }: { onBack: () => void }) {
     await setStudentLimit(u.id, u.studentLimit).catch(() => {});
     setSaved(u.id);
     setTimeout(() => setSaved((s) => (s === u.id ? null : s)), 1500);
+  };
+
+  const togglePremium = async (u: AdminUser) => {
+    const next = u.isPremium ? 0 : 1;
+    setUsers((prev) => prev?.map((x) => (x.id === u.id ? { ...x, isPremium: next } : x)) ?? null);
+    await setPremium(u.id, !!next).catch(() => {});
   };
 
   return (
@@ -55,6 +62,10 @@ export function AdminPage({ onBack }: { onBack: () => void }) {
                       <Button type="button" size="icon" variant={saved === u.id ? "default" : "outline"} aria-label="Lưu" onClick={() => save(u)}>
                         <Check className="h-5 w-5" />
                       </Button>
+                      <button type="button" onClick={() => togglePremium(u)}
+                        className={cn("flex items-center gap-1 rounded-xl px-3 py-2 text-sm font-extrabold", u.isPremium ? "bg-accent text-white" : "bg-muted text-muted-foreground")}>
+                        <Crown className="h-4 w-4" /> {u.isPremium ? "Premium" : "Free"}
+                      </button>
                     </div>
                   ) : null}
                 </CardContent>
