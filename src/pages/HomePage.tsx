@@ -1,5 +1,6 @@
 import { BarChart3, BookMarked, BookOpen, ChevronRight, Flame, GraduationCap, LogOut, MessageCircle, Play, RotateCcw, Star, Trophy, UserRound } from "lucide-react";
-import type { ComponentType } from "react";
+import { useEffect, useState, type ComponentType } from "react";
+import { getLeaderboard } from "@/services/studentService";
 import { SEED_TOPICS } from "@/data/seedTopics";
 import { SEED_VOCABULARY } from "@/data/seedVocabulary";
 import { LEVEL_LABELS, LEVEL_ORDER, type Level, type Student } from "@/types";
@@ -66,6 +67,16 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
   const topicsAtLevel = topicsWithLevel(SEED_TOPICS, SEED_VOCABULARY, learnLevel);
   const earnedBadges = computeBadges({ learned: learnedTotal, streak, xp }).filter((b) => b.earned);
 
+  // Hạng tuần (trong cùng cấp) để hiện trên hero — khích lệ.
+  const [weekRank, setWeekRank] = useState<number | null>(null);
+  useEffect(() => {
+    let alive = true;
+    getLeaderboard("week", student.level)
+      .then((rows) => { if (alive) { const i = rows.findIndex((r) => r.id === student.id); setWeekRank(i >= 0 ? i + 1 : null); } })
+      .catch(() => {});
+    return () => { alive = false; };
+  }, [student.id, student.level]);
+
   // "Học tiếp": ưu tiên chủ đề đang học dở; nếu chưa có thì chủ đề đầu tiên.
   const resumeTopic =
     topicsAtLevel.find((t) => {
@@ -119,13 +130,21 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
             <h1 className="text-2xl font-black leading-tight">
               {goalReached ? "Hoàn thành rồi! 🎉" : `Học ${goal - learnedToday} từ nữa nào`}
             </h1>
-            <div className="mt-2 flex items-center gap-2">
-              <span className="flex items-center gap-1 rounded-full bg-white/20 px-2.5 py-1 text-sm font-extrabold">
+            <div className="mt-2 flex flex-wrap items-center gap-2">
+              <span className="flex items-center gap-1 rounded-full bg-white/20 px-2.5 py-1 text-sm font-extrabold" title="Chuỗi ngày học">
                 <Flame className="h-4 w-4" /> {streak}
               </span>
-              <span className="flex items-center gap-1 rounded-full bg-white/20 px-2.5 py-1 text-sm font-extrabold">
+              <span className="flex items-center gap-1 rounded-full bg-white/20 px-2.5 py-1 text-sm font-extrabold" title="Điểm XP">
                 <Star className="h-4 w-4" /> {xp}
               </span>
+              <button
+                type="button"
+                onClick={() => onNavigate("leaderboard")}
+                title="Hạng tuần này — xem bảng xếp hạng"
+                className="flex items-center gap-1 rounded-full bg-white/25 px-2.5 py-1 text-sm font-extrabold transition-colors hover:bg-white/40"
+              >
+                <Trophy className="h-4 w-4" /> {weekRank ? `#${weekRank}` : "—"}
+              </button>
             </div>
           </div>
         </div>
