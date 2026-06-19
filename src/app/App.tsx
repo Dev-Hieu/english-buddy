@@ -66,15 +66,19 @@ export function App() {
   useEffect(() => { if (isLoggedIn()) refreshMe().then((u) => u && setUser(u)); }, []);
 
   // Áp ảnh mới nhất từ DB lên dữ liệu build sẵn -> ảnh ai đó đã đổi hiện cho MỌI người.
+  // Tải lúc mở app + mỗi khi quay lại tab (đồng bộ gần tức thời giữa người dùng).
   const [, setImgVer] = useState(0);
   useEffect(() => {
-    getImageMap().then((map) => {
+    const apply = () => getImageMap().then((map) => {
       let changed = false;
       for (const w of SEED_VOCABULARY) {
         if (map[w.id] && map[w.id] !== w.imageUrl) { w.imageUrl = map[w.id]; changed = true; }
       }
       if (changed) setImgVer((v) => v + 1);
     }).catch(() => {});
+    apply();
+    window.addEventListener("focus", apply);
+    return () => window.removeEventListener("focus", apply);
   }, []);
 
   const loadProgress = useCallback(() => {

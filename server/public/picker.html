@@ -40,6 +40,11 @@
     .colsel { display: inline-flex; gap: 4px; align-items: center; }
     .colsel button { width: 30px; height: 30px; border-radius: 8px; border: 0; font-weight: 800; background: #eef0f3; color: #6b7280; cursor: pointer; }
     .colsel button.active { background: #1cb0a8; color: #fff; }
+    .authbar { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin: 10px 0; font-weight: 700; font-size: 14px; }
+    .authbar input { height: 36px; border: 2px solid #e5e7eb; border-radius: 10px; padding: 0 10px; font-weight: 700; }
+    .authbar .ok { color: #047857; } .authbar .warn { color: #b91c1c; }
+    .authbar button { height: 36px; border: 0; border-radius: 10px; padding: 0 14px; font-weight: 800; cursor: pointer; background: #1cb0a8; color: #fff; }
+    .authbar button.ghost { background: #eef0f3; color: #374151; }
 
     /* ── Card ── */
     .card { background: #fff; border: 2px solid #e8ebf0; border-radius: 16px; overflow: hidden; transition: border-color .15s, box-shadow .15s; }
@@ -99,7 +104,8 @@
   <!-- Header -->
   <div class="header">
     <h1>🖼️ Chọn ảnh minh hoạ</h1>
-    <p class="desc">Bấm "Đổi ảnh" → duyệt ảnh Pexels → hover ✓ để chọn. Lưu xong app tự cập nhật.</p>
+    <p class="desc">Bấm "Đổi ảnh" → duyệt ảnh Pexels → hover ✓ để chọn. Lưu xong đồng bộ cho mọi người.</p>
+    <div class="authbar" id="authBar"></div>
     <div class="stats" id="stats"></div>
     <div class="filters">
       <input class="search-box" id="searchBox" placeholder="🔎 Tìm từ..." />
@@ -170,8 +176,53 @@
     let mPage = 1;
     let curCardEl = null;
 
+    // ── Đăng nhập + phân quyền (giống trang chỉnh ảnh trong app) ──
+    let ME = null;
+    function token() { return localStorage.getItem("eb_token") || ""; }
+    function canEdit() { return !!ME && (ME.role === "admin" || ME.canEditImages); }
+
+    async function checkAuth() {
+      ME = null;
+      const t = token();
+      if (t) {
+        try { const r = await fetch(API + "/api/me", { headers: { Authorization: "Bearer " + t } }); if (r.ok) ME = await r.json(); } catch (e) {}
+      }
+      renderAuthBar();
+    }
+    function renderAuthBar() {
+      const bar = document.getElementById("authBar");
+      if (canEdit()) {
+        bar.innerHTML = '<span class="ok">✓ ' + ME.name + ' — được phép sửa ảnh</span> <button class="ghost" id="logoutBtn">Đăng xuất</button>';
+        document.getElementById("logoutBtn").onclick = () => { localStorage.removeItem("eb_token"); localStorage.removeItem("eb_user"); checkAuth(); };
+      } else if (ME) {
+        bar.innerHTML = '<span class="warn">⚠ ' + ME.name + ': chưa được cấp quyền sửa ảnh. Liên hệ admin.</span> <button class="ghost" id="logoutBtn">Đăng xuất</button>';
+        document.getElementById("logoutBtn").onclick = () => { localStorage.removeItem("eb_token"); localStorage.removeItem("eb_user"); checkAuth(); };
+      } else {
+        bar.innerHTML =
+          '<span class="warn">Đăng nhập để sửa ảnh:</span>' +
+          '<input id="liEmail" type="email" placeholder="email" autocomplete="username" />' +
+          '<input id="liPass" type="password" placeholder="mật khẩu" autocomplete="current-password" />' +
+          '<button id="loginBtn">Đăng nhập</button>';
+        document.getElementById("loginBtn").onclick = doLogin;
+        document.getElementById("liPass").onkeydown = (e) => { if (e.key === "Enter") doLogin(); };
+      }
+    }
+    async function doLogin() {
+      const email = document.getElementById("liEmail").value.trim();
+      const password = document.getElementById("liPass").value;
+      try {
+        const r = await fetch(API + "/api/login", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ email, password }) });
+        if (!r.ok) { alert("Sai email hoặc mật khẩu."); return; }
+        const d = await r.json();
+        localStorage.setItem("eb_token", d.token);
+        if (d.user) localStorage.setItem("eb_user", JSON.stringify(d.user));
+        await checkAuth();
+      } catch (e) { alert("Lỗi đăng nhập."); }
+    }
+
     // ── Init ──
     async function init() {
+      await checkAuth();
       ALL_WORDS = await (await fetch(API + "/api/vocabulary")).json();
       const topics = await (await fetch(API + "/api/topics")).json();
 
@@ -357,17 +408,15 @@
     }
 
     async function pick(url) {
-      // image-pick yêu cầu admin -> gửi token đã lưu khi đăng nhập app (cùng origin).
-      const token = localStorage.getItem("eb_token") || "";
+      if (!canEdit()) { alert("Hãy đăng nhập tài khoản được cấp quyền sửa ảnh (thanh trên cùng)."); return; }
       const res = await fetch(API + "/api/image-pick", {
         method: "POST",
-        headers: { "Content-Type": "application/json", ...(token ? { Authorization: "Bearer " + token } : {}) },
+        headers: { "Content-Type": "application/json", Authorization: "Bearer " + token() },
         body: JSON.stringify({ wordId: cur.id, url })
       });
       if (!res.ok) {
-        alert(res.status === 403 || res.status === 401
-          ? "Cần đăng nhập bằng tài khoản ADMIN trong app (cùng trình duyệt) rồi mở lại trang này."
-          : "Lưu ảnh lỗi (" + res.status + ").");
+        if (res.status === 401 || res.status === 403) { alert("Phiên hết hạn hoặc chưa đủ quyền. Đăng nhập lại."); await checkAuth(); return; }
+        alert("Lưu ảnh lỗi (" + res.status + ").");
         return;
       }
       cur.imageUrl = url;
