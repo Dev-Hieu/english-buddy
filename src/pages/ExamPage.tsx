@@ -1,5 +1,5 @@
 import { RotateCcw, Volume2 } from "lucide-react";
-import { useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { SEED_VOCABULARY } from "@/data/seedVocabulary";
 import { buildQuiz } from "@/utils/quizGenerator";
 import { recordAnswer } from "@/services/progressService";
@@ -38,6 +38,13 @@ export function ExamPage({ student, level = "all", onBackHome }: ExamPageProps) 
   const levelName = LEVEL_LABELS[lv as Level] ?? "Tất cả";
   const title = `Làm đề · ${levelName}`;
   const q = questions[index];
+
+  // Câu nghe: tự đọc từ khi sang câu mới.
+  useEffect(() => {
+    const cur = questions[index];
+    if (cur && cur.type === "listen_choose") speakText(cur.answer);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [index]);
 
   const choose = (opt: string) => {
     if (picked || !q) return;
@@ -121,18 +128,40 @@ export function ExamPage({ student, level = "all", onBackHome }: ExamPageProps) 
       <SessionHeader title={title} onClose={onBackHome} progress={Math.round((index / questions.length) * 100)} />
       <p className="mb-3 text-center text-sm font-extrabold text-muted-foreground">Câu {index + 1}/{questions.length}</p>
       <Card><CardContent className="space-y-5 p-6">
-        <p className="text-center text-xl font-extrabold">{q.question}</p>
-        <div className="grid gap-2">
-          {q.options.map((o) => {
-            const state = !picked ? "" : o === q.answer ? "ring-4 ring-success bg-success/10" : o === picked ? "ring-4 ring-red-400 bg-red-50" : "opacity-50";
-            return (
-              <button key={o} type="button" disabled={!!picked} onClick={() => choose(o)}
-                className={cn("rounded-2xl border-2 border-border bg-card px-4 py-3 text-left text-lg font-bold transition-all", state)}>
-                {o}
-              </button>
-            );
-          })}
+        <div className="flex items-center justify-center gap-3">
+          <p className="text-center text-xl font-extrabold">{q.question}</p>
+          {q.type === "listen_choose" ? (
+            <Button type="button" size="icon" variant="outline" aria-label="Nghe" onClick={() => speakText(q.answer)}>
+              <Volume2 className="h-5 w-5" />
+            </Button>
+          ) : null}
         </div>
+
+        {q.type === "choose_picture" && q.imageOptions ? (
+          <div className="grid grid-cols-2 gap-3">
+            {q.options.map((o, i) => {
+              const state = !picked ? "" : o === q.answer ? "ring-4 ring-success" : o === picked ? "ring-4 ring-red-400" : "opacity-50";
+              return (
+                <button key={o} type="button" disabled={!!picked} onClick={() => choose(o)}
+                  className={cn("overflow-hidden rounded-2xl border-2 border-border transition-all", state)}>
+                  {q.imageOptions?.[i] ? <img src={q.imageOptions[i]} alt="" className="h-28 w-full object-cover" /> : <div className="flex h-28 items-center justify-center px-2 text-center font-bold">{o}</div>}
+                </button>
+              );
+            })}
+          </div>
+        ) : (
+          <div className="grid gap-2">
+            {q.options.map((o) => {
+              const state = !picked ? "" : o === q.answer ? "ring-4 ring-success bg-success/10" : o === picked ? "ring-4 ring-red-400 bg-red-50" : "opacity-50";
+              return (
+                <button key={o} type="button" disabled={!!picked} onClick={() => choose(o)}
+                  className={cn("rounded-2xl border-2 border-border bg-card px-4 py-3 text-left text-lg font-bold transition-all", state)}>
+                  {o}
+                </button>
+              );
+            })}
+          </div>
+        )}
       </CardContent></Card>
     </main>
   );
