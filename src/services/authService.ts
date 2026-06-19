@@ -7,6 +7,8 @@ export interface AuthUser {
   role: "parent" | "admin";
   createdAt: number;
   studentLimit: number;
+  isPremium?: boolean;
+  canEditImages?: boolean;
 }
 
 const USER_KEY = "eb_user";

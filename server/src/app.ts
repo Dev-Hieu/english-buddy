@@ -120,7 +120,7 @@ export function createApp() {
   // ── Admin: quản lý người dùng ──
   app.get("/api/admin/users", requireAdmin, (_req, res) => {
     const rows = db.prepare(`
-      SELECT u.id, u.email, u.name, u.role, u.createdAt, u.studentLimit, u.isPremium,
+      SELECT u.id, u.email, u.name, u.role, u.createdAt, u.studentLimit, u.isPremium, u.canEditImages,
              (SELECT COUNT(*) FROM students s WHERE s.parentId = u.id) AS studentCount
       FROM users u ORDER BY u.createdAt DESC
     `).all();
@@ -138,9 +138,12 @@ export function createApp() {
     if (body.isPremium !== undefined) {
       db.prepare("UPDATE users SET isPremium = ? WHERE id = ?").run(body.isPremium ? 1 : 0, req.params.id);
     }
-    const row = db.prepare("SELECT id, studentLimit, isPremium FROM users WHERE id = ?").get(req.params.id) as any;
+    if (body.canEditImages !== undefined) {
+      db.prepare("UPDATE users SET canEditImages = ? WHERE id = ?").run(body.canEditImages ? 1 : 0, req.params.id);
+    }
+    const row = db.prepare("SELECT id, studentLimit, isPremium, canEditImages FROM users WHERE id = ?").get(req.params.id) as any;
     if (!row) return res.status(404).json({ error: "không có user" });
-    res.json({ ok: true, studentLimit: row.studentLimit, isPremium: !!row.isPremium });
+    res.json({ ok: true, studentLimit: row.studentLimit, isPremium: !!row.isPremium, canEditImages: !!row.canEditImages });
   });
 
   // ── Bảng xếp hạng: điểm TUẦN (mặc định) hoặc mọi thời gian, lọc theo cấp ──
@@ -353,8 +356,10 @@ export function createApp() {
     }
   });
 
-  // ── Chọn/đổi ảnh cho 1 từ (chỉ admin — sửa nội dung chung) ──
-  app.post("/api/image-pick", requireAdmin, (req, res) => {
+  // ── Chọn/đổi ảnh cho 1 từ (admin hoặc user được cấp quyền sửa ảnh) ──
+  app.post("/api/image-pick", requireAuth, (req, res) => {
+    const u = (req as any).user;
+    if (!u.canEditImages) return res.status(403).json({ error: "Bạn chưa được cấp quyền sửa ảnh." });
     const { wordId, url } = req.body || {};
     if (!wordId) return res.status(400).json({ error: "thiếu wordId" });
     const r = db.prepare("UPDATE vocabulary SET imageUrl = ? WHERE id = ?").run(url ?? "", wordId);

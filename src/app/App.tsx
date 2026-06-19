@@ -136,7 +136,7 @@ export function App() {
     return <AdminPage onBack={() => navigate("student-select")} onOpenPicker={() => navigate("imagepicker")} />;
   }
   if (route.view === "imagepicker") {
-    return <ImagePickerPage onBackHome={() => navigate("admin")} />;
+    return <ImagePickerPage onBackHome={() => navigate("student-select")} />;
   }
 
   // ── Chưa chọn bé ──
@@ -152,6 +152,7 @@ export function App() {
         onDeleteStudent={removeStudent}
         onLogout={doLogout}
         onOpenAdmin={() => setRoute({ view: "admin", topicId: "topic_food", level: "all" })}
+        onOpenPicker={() => setRoute({ view: "imagepicker", topicId: "topic_food", level: "all" })}
       />
     );
   }

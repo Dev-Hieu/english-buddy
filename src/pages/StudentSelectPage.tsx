@@ -1,4 +1,4 @@
-import { LogOut, Pencil, Plus, Shield, Trash2, X } from "lucide-react";
+import { Image as ImageIcon, LogOut, Pencil, Plus, Shield, Trash2, X } from "lucide-react";
 import { useState } from "react";
 import { LEVEL_LABELS, LEVEL_ORDER, type Student } from "@/types";
 import type { AuthUser } from "@/services/authService";
@@ -17,12 +17,13 @@ interface StudentSelectPageProps {
   onDeleteStudent: (id: string) => Promise<void>;
   onLogout: () => void;
   onOpenAdmin: () => void;
+  onOpenPicker: () => void;
 }
 
 type FormState = null | { mode: "add" } | { mode: "edit"; student: Student };
 
 export function StudentSelectPage(p: StudentSelectPageProps) {
-  const { students, user, selectedStudentId, onSelectStudent, onAddStudent, onUpdateStudent, onDeleteStudent, onLogout, onOpenAdmin } = p;
+  const { students, user, selectedStudentId, onSelectStudent, onAddStudent, onUpdateStudent, onDeleteStudent, onLogout, onOpenAdmin, onOpenPicker } = p;
   const [form, setForm] = useState<FormState>(null);
   const [manage, setManage] = useState(false);
   const [error, setError] = useState("");
@@ -95,6 +96,7 @@ export function StudentSelectPage(p: StudentSelectPageProps) {
       <div className="flex flex-wrap items-center justify-center gap-3">
         {students.length > 0 ? <Button type="button" variant="outline" onClick={() => setManage((m) => !m)}>{manage ? "Xong" : "Quản lý hồ sơ"}</Button> : null}
         {isAdmin ? <Button type="button" variant="secondary" onClick={onOpenAdmin}><Shield className="h-4 w-4" /> Quản trị</Button> : null}
+        {isAdmin || user.canEditImages ? <Button type="button" variant="secondary" onClick={onOpenPicker}><ImageIcon className="h-4 w-4" /> Chỉnh ảnh</Button> : null}
         <Button type="button" variant="ghost" onClick={onLogout}><LogOut className="h-4 w-4" /> Đăng xuất</Button>
       </div>
     </main>

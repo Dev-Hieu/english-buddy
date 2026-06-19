@@ -1,6 +1,6 @@
 import { Check, Crown, Image as ImageIcon, Loader2, Shield } from "lucide-react";
 import { useEffect, useState } from "react";
-import { listUsers, setPremium, setStudentLimit, type AdminUser } from "@/services/studentService";
+import { listUsers, setImageEditor, setPremium, setStudentLimit, type AdminUser } from "@/services/studentService";
 import { cn } from "@/components/ui/cn";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -29,6 +29,12 @@ export function AdminPage({ onBack, onOpenPicker }: { onBack: () => void; onOpen
     const next = u.isPremium ? 0 : 1;
     setUsers((prev) => prev?.map((x) => (x.id === u.id ? { ...x, isPremium: next } : x)) ?? null);
     await setPremium(u.id, !!next).catch(() => {});
+  };
+
+  const toggleEditor = async (u: AdminUser) => {
+    const next = u.canEditImages ? 0 : 1;
+    setUsers((prev) => prev?.map((x) => (x.id === u.id ? { ...x, canEditImages: next } : x)) ?? null);
+    await setImageEditor(u.id, !!next).catch(() => {});
   };
 
   return (
@@ -80,6 +86,10 @@ export function AdminPage({ onBack, onOpenPicker }: { onBack: () => void; onOpen
                       <button type="button" onClick={() => togglePremium(u)}
                         className={cn("flex items-center gap-1 rounded-xl px-3 py-2 text-sm font-extrabold", u.isPremium ? "bg-accent text-white" : "bg-muted text-muted-foreground")}>
                         <Crown className="h-4 w-4" /> {u.isPremium ? "Premium" : "Free"}
+                      </button>
+                      <button type="button" onClick={() => toggleEditor(u)}
+                        className={cn("flex items-center gap-1 rounded-xl px-3 py-2 text-sm font-extrabold", u.canEditImages ? "bg-primary text-primary-foreground" : "bg-muted text-muted-foreground")}>
+                        <ImageIcon className="h-4 w-4" /> {u.canEditImages ? "Sửa ảnh: Bật" : "Sửa ảnh: Tắt"}
                       </button>
                     </div>
                   ) : null}

@@ -38,6 +38,7 @@ export interface AdminUser {
   studentCount: number;
   studentLimit: number;
   isPremium?: number;
+  canEditImages?: number;
 }
 export function listUsers(): Promise<AdminUser[]> {
   return apiRequest(`/api/admin/users`);
@@ -47,6 +48,9 @@ export function setStudentLimit(userId: string, studentLimit: number): Promise<{
 }
 export function setPremium(userId: string, isPremium: boolean): Promise<{ ok: boolean; isPremium: boolean }> {
   return apiRequest(`/api/admin/users/${userId}`, { method: "PUT", body: { isPremium } });
+}
+export function setImageEditor(userId: string, canEditImages: boolean): Promise<{ ok: boolean; canEditImages: boolean }> {
+  return apiRequest(`/api/admin/users/${userId}`, { method: "PUT", body: { canEditImages } });
 }
 
 export interface LeaderEntry {
