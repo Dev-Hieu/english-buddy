@@ -15,6 +15,7 @@ export interface VocabularyWord {
   phonetic?: string; // "/ˈæp.əl/"
   meaning_vi: string; // "quả táo"
   meaning_en?: string;
+  pos?: string; // loại từ (danh từ/động từ/tính từ...) — chuẩn từ điển
   example?: string;
   example_vi?: string;
   topicIds: string[]; // 1 từ có thể thuộc nhiều chủ đề (vd "fish")

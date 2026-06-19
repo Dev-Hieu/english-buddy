@@ -23,13 +23,14 @@ const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
 const SYS = [
   "You are an expert English lexicographer. Audit each vocabulary item against the Oxford Learner's Dictionary,",
   "Cambridge Dictionary, the Oxford 3000/5000 and the Cambridge English Vocabulary Profile (EVP).",
-  "For each item check three things:",
-  "1) phonetic: correct British English IPA wrapped in /.../;",
-  "2) meaning_vi: a correct, natural Vietnamese meaning for THAT word (sense matching common usage);",
-  "3) level: correct CEFR band (kids|a1|a2|b1|b2|c1) — 'kids' = very basic concrete words for young children, otherwise use EVP/Oxford bands.",
-  "Return ONLY a JSON array. Include an item ONLY if something is wrong, as:",
-  '{"id":"...","fixes":{"phonetic":"/.../","meaning_vi":"...","level":"a2"},"note":"why"} (omit fields that are already correct).',
-  "If everything in the batch is correct, return []. No prose, JSON only.",
+  "Return a JSON object {\"items\":[...]} with EXACTLY ONE object per input word:",
+  '{"id":"...","pos":"<loại từ tiếng Việt>","fixes":{...}}',
+  "- pos: ALWAYS provide the part of speech IN VIETNAMESE for the word's main sense, one of:",
+  "  danh từ, động từ, tính từ, trạng từ, giới từ, đại từ, liên từ, thán từ, mạo từ, số từ.",
+  "- fixes: include a field ONLY if the current value is wrong; omit fixes entirely if all correct. Fields:",
+  "  phonetic (correct British IPA wrapped in /.../), meaning_vi (correct natural Vietnamese meaning),",
+  "  level (correct CEFR: kids|a1|a2|b1|b2|c1; 'kids'=very basic concrete words for young children).",
+  "JSON only, no prose.",
 ].join(" ");
 
 async function auditBatch(items: any[]): Promise<any[]> {
@@ -41,7 +42,7 @@ async function auditBatch(items: any[]): Promise<any[]> {
       response_format: { type: "json_object" },
       messages: [
         { role: "system", content: SYS },
-        { role: "user", content: `Audit these (return {"corrections":[...]}):\n${JSON.stringify(items)}` },
+        { role: "user", content: `Audit these:\n${JSON.stringify(items)}` },
       ],
     }),
   });
@@ -49,7 +50,7 @@ async function auditBatch(items: any[]): Promise<any[]> {
   const data: any = await r.json();
   try {
     const parsed = JSON.parse(data.choices?.[0]?.message?.content || "{}");
-    return Array.isArray(parsed) ? parsed : (parsed.corrections || []);
+    return Array.isArray(parsed) ? parsed : (parsed.items || parsed.corrections || []);
   } catch { return []; }
 }
 

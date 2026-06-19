@@ -7,6 +7,7 @@ export interface VocabOverride {
   phonetic?: string;
   meaning_vi?: string;
   meaning_en?: string;
+  pos?: string;
   level?: Level;
 }
 

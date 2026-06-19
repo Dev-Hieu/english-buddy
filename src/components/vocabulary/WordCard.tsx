@@ -35,7 +35,10 @@ export function WordCard({ word, compact = false, studied = false, onKnow, onRev
         <div className="flex items-start justify-between gap-4">
           <div>
             <h2 className={cn("font-black capitalize tracking-tight", compact ? "text-2xl" : "text-4xl")}>{word.word}</h2>
-            <p className="mt-1 text-sm font-bold text-muted-foreground">{word.phonetic || "Listen and repeat"}</p>
+            <p className="mt-1 flex items-center gap-2 text-sm font-bold text-muted-foreground">
+              {word.pos ? <span className="rounded-full bg-primary/15 px-2 py-0.5 text-xs font-extrabold text-primary">{word.pos}</span> : null}
+              {word.phonetic || "Listen and repeat"}
+            </p>
           </div>
           <Button type="button" size="icon" variant="outline" aria-label={`Nghe ${word.word}`} onClick={() => speakText(word.word, word.audioUrl)}>
             <Volume2 className="h-5 w-5" />
