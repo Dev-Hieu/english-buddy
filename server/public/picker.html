@@ -5,49 +5,112 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Chọn ảnh — English Buddy</title>
   <style>
-    * { box-sizing: border-box; }
-    body { font-family: system-ui, -apple-system, sans-serif; margin: 0; background: #f6f7fb; color: #1f2430; }
-    header { position: sticky; top: 0; z-index: 5; background: #fff; border-bottom: 1px solid #e5e7eb; padding: 14px 20px; }
-    header h1 { margin: 0 0 4px; font-size: 18px; }
-    header p { margin: 0; font-size: 13px; color: #6b7280; }
-    .filter { margin-top: 10px; }
-    .filter select { padding: 6px 10px; border-radius: 8px; border: 1px solid #d1d5db; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 14px; padding: 20px; }
-    .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 12px; }
-    .card .head { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
-    .card .word { font-weight: 800; font-size: 18px; text-transform: capitalize; }
-    .card .vi { color: #6b7280; font-size: 13px; }
-    .current { width: 100%; height: 140px; object-fit: cover; border-radius: 8px; background: #eef0f5; margin: 10px 0; }
-    .current.empty { display: flex; align-items: center; justify-content: center; color: #9aa1ad; font-size: 40px; font-weight: 800; }
-    button { padding: 8px 12px; border: 0; border-radius: 8px; background: #1cb0a8; color: #fff; font-weight: 700; cursor: pointer; font-size: 13px; }
-    button.ghost { background: #eef0f5; color: #374151; }
-    button:disabled { opacity: .4; cursor: default; }
-    .saved { color: #16a34a; font-size: 12px; font-weight: 700; }
+    * { box-sizing: border-box; margin: 0; }
+    body { font-family: 'Nunito', system-ui, sans-serif; background: #f0f2f7; color: #1f2430; }
+    a { color: #1cb0a8; }
 
-    /* Modal chọn ảnh */
-    .overlay { position: fixed; inset: 0; background: rgba(15,30,40,.55); display: none; align-items: flex-start; justify-content: center; z-index: 20; padding: 24px; overflow: auto; }
+    /* ── Header ── */
+    .header { position: sticky; top: 0; z-index: 10; background: #fff; border-bottom: 1px solid #e2e5ec; padding: 16px 24px; }
+    .header h1 { font-size: 20px; font-weight: 900; }
+    .header .desc { font-size: 13px; color: #6b7280; margin-top: 2px; }
+
+    /* ── Stats bar ── */
+    .stats { display: flex; align-items: center; gap: 8px; margin-top: 10px; font-size: 13px; font-weight: 700; color: #374151; flex-wrap: wrap; }
+    .stats .pill { padding: 4px 10px; border-radius: 20px; font-size: 12px; font-weight: 800; }
+    .stats .pill.green { background: #d1fae5; color: #047857; }
+    .stats .pill.red { background: #fee2e2; color: #b91c1c; }
+
+    /* ── Filters ── */
+    .filters { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; align-items: center; }
+    .search-box { padding: 8px 12px; border: 2px solid #e2e5ec; border-radius: 10px; font-size: 14px; font-weight: 600; width: 200px; outline: none; transition: border .2s; }
+    .search-box:focus { border-color: #1cb0a8; }
+    .filters select { padding: 8px 12px; border: 2px solid #e2e5ec; border-radius: 10px; font-size: 13px; font-weight: 700; background: #fff; cursor: pointer; }
+    .chip-row { display: flex; gap: 4px; flex-wrap: wrap; }
+    .chip { padding: 5px 12px; border-radius: 20px; border: 2px solid #e2e5ec; background: #fff; font-size: 12px; font-weight: 800; cursor: pointer; transition: all .15s; }
+    .chip:hover { border-color: #1cb0a8; }
+    .chip.active { background: #1cb0a8; color: #fff; border-color: #1cb0a8; }
+    .btn-filter { padding: 7px 14px; border-radius: 10px; border: 2px solid #e2e5ec; background: #fff; font-size: 13px; font-weight: 800; cursor: pointer; transition: all .15s; }
+    .btn-filter:hover { border-color: #1cb0a8; }
+    .btn-filter.active { background: #fef3c7; border-color: #f59e0b; color: #92400e; }
+
+    /* ── Grid ── */
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; padding: 20px 24px; }
+    @media (max-width: 900px) { .grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 520px) { .grid { grid-template-columns: 1fr; gap: 12px; padding: 12px; } }
+
+    /* ── Card ── */
+    .card { background: #fff; border: 2px solid #e8ebf0; border-radius: 16px; overflow: hidden; transition: border-color .15s, box-shadow .15s; }
+    .card:hover { border-color: #1cb0a8; box-shadow: 0 4px 20px rgba(28,176,168,.12); }
+    .card .img-wrap { position: relative; width: 100%; aspect-ratio: 4/3; background: #eef1f6; overflow: hidden; }
+    .card .img-wrap img { width: 100%; height: 100%; object-fit: cover; }
+    .card .placeholder { display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%; height: 100%; color: #9aa1ad; gap: 4px; }
+    .card .placeholder .letter { font-size: 48px; font-weight: 900; opacity: .4; }
+    .card .placeholder .ph-text { font-size: 12px; font-weight: 700; }
+    .card .info { padding: 12px 14px; }
+    .card .top-row { display: flex; justify-content: space-between; align-items: center; gap: 6px; }
+    .card .word { font-size: 17px; font-weight: 900; text-transform: capitalize; }
+    .card .level-badge { padding: 2px 8px; border-radius: 10px; font-size: 11px; font-weight: 800; background: #e0f2fe; color: #0369a1; white-space: nowrap; }
+    .card .vi { color: #6b7280; font-size: 13px; margin-top: 2px; }
+    .card .actions { display: flex; align-items: center; gap: 8px; margin-top: 10px; }
+    .btn { padding: 8px 14px; border: 0; border-radius: 10px; font-size: 13px; font-weight: 800; cursor: pointer; transition: all .15s; }
+    .btn-primary { background: #1cb0a8; color: #fff; }
+    .btn-primary:hover { background: #17998f; }
+    .btn-warn { background: #fef3c7; color: #92400e; }
+    .btn-warn:hover { background: #fde68a; }
+    .saved-msg { color: #059669; font-size: 12px; font-weight: 800; }
+
+    /* ── Pagination ── */
+    .pagination { display: flex; align-items: center; justify-content: center; gap: 10px; padding: 20px; }
+    .pagination .pg-info { font-size: 14px; font-weight: 800; color: #374151; }
+    .pagination .btn-pg { padding: 8px 16px; border-radius: 10px; border: 2px solid #e2e5ec; background: #fff; font-size: 13px; font-weight: 800; cursor: pointer; }
+    .pagination .btn-pg:hover:not(:disabled) { border-color: #1cb0a8; color: #1cb0a8; }
+    .pagination .btn-pg:disabled { opacity: .3; cursor: default; }
+
+    /* ── Modal ── */
+    .overlay { position: fixed; inset: 0; background: rgba(15,30,40,.6); backdrop-filter: blur(4px); display: none; align-items: flex-start; justify-content: center; z-index: 50; padding: 24px; overflow: auto; }
     .overlay.open { display: flex; }
-    .panel { background: #fff; border-radius: 16px; width: 100%; max-width: 820px; padding: 18px; }
-    .panel .ptitle { font-size: 18px; font-weight: 800; }
-    .panel .psub { color: #6b7280; font-size: 13px; margin-bottom: 10px; }
-    .mgrid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; min-height: 120px; }
-    .mgrid img { width: 100%; height: 110px; object-fit: cover; border-radius: 8px; cursor: pointer; border: 3px solid transparent; }
-    .mgrid img:hover { border-color: #1cb0a8; }
-    .nav { display: flex; align-items: center; gap: 10px; justify-content: center; margin-top: 12px; }
-    .nav .pg { font-weight: 700; font-size: 13px; }
-    .urlrow { display: flex; gap: 6px; margin-top: 12px; }
-    .urlrow input { flex: 1; padding: 8px 10px; border: 1px solid #d1d5db; border-radius: 8px; }
-    .ptop { display: flex; justify-content: space-between; align-items: center; }
-    @media (max-width: 560px) { .mgrid { grid-template-columns: repeat(3, 1fr); } }
+    .panel { background: #fff; border-radius: 20px; width: 100%; max-width: 860px; padding: 20px 24px; box-shadow: 0 20px 60px rgba(0,0,0,.2); }
+    .panel .ptop { display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; }
+    .panel .ptitle { font-size: 20px; font-weight: 900; }
+    .panel .psub { color: #6b7280; font-size: 13px; }
+    .panel .btn-close { padding: 8px 14px; border-radius: 10px; border: 2px solid #e2e5ec; background: #fff; font-size: 13px; font-weight: 800; cursor: pointer; }
+    .panel .btn-close:hover { border-color: #ef4444; color: #ef4444; }
+    .mgrid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; min-height: 120px; }
+    .mgrid .img-cell { position: relative; border-radius: 12px; overflow: hidden; cursor: pointer; aspect-ratio: 4/3; border: 3px solid transparent; transition: all .15s; }
+    .mgrid .img-cell:hover { border-color: #1cb0a8; transform: scale(1.03); }
+    .mgrid .img-cell:hover .check { opacity: 1; }
+    .mgrid .img-cell img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .mgrid .check { position: absolute; top: 6px; right: 6px; width: 28px; height: 28px; border-radius: 50%; background: #1cb0a8; color: #fff; display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 900; opacity: 0; transition: opacity .15s; box-shadow: 0 2px 8px rgba(0,0,0,.25); }
+    .mgrid .loading, .mgrid .empty { grid-column: 1/-1; text-align: center; color: #6b7280; padding: 40px 0; font-weight: 700; }
+    .mnav { display: flex; align-items: center; gap: 10px; justify-content: center; margin-top: 14px; }
+    .mnav .pg { font-weight: 800; font-size: 13px; }
+    .urlrow { display: flex; gap: 8px; margin-top: 14px; }
+    .urlrow input { flex: 1; padding: 10px 14px; border: 2px solid #e2e5ec; border-radius: 10px; font-size: 14px; font-weight: 600; outline: none; }
+    .urlrow input:focus { border-color: #1cb0a8; }
+    @media (max-width: 600px) { .mgrid { grid-template-columns: repeat(2, 1fr); } }
   </style>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>🖼️ Chọn ảnh minh hoạ — English Buddy</h1>
-    <p>Bấm “Đổi ảnh” → duyệt nhiều ảnh từ Pexels (có phân trang) → bấm ảnh để chọn. Lưu xong app tự cập nhật (F5 trang học).</p>
-    <div class="filter">Chủ đề: <select id="topicFilter"><option value="">Tất cả</option></select></div>
-  </header>
+
+  <!-- Header -->
+  <div class="header">
+    <h1>🖼️ Chọn ảnh minh hoạ</h1>
+    <p class="desc">Bấm "Đổi ảnh" → duyệt ảnh Pexels → hover ✓ để chọn. Lưu xong app tự cập nhật.</p>
+    <div class="stats" id="stats"></div>
+    <div class="filters">
+      <input class="search-box" id="searchBox" placeholder="🔎 Tìm từ..." />
+      <select id="topicFilter"><option value="">Tất cả chủ đề</option></select>
+      <button class="btn-filter" id="missingBtn">📷 Chỉ thiếu ảnh</button>
+      <div class="chip-row" id="levelChips"></div>
+    </div>
+  </div>
+
+  <!-- Grid -->
   <div class="grid" id="grid"></div>
+
+  <!-- Pagination -->
+  <div class="pagination" id="pagination"></div>
 
   <!-- Modal -->
   <div class="overlay" id="overlay">
@@ -57,108 +120,238 @@
           <div class="ptitle" id="mTitle"></div>
           <div class="psub" id="mSub"></div>
         </div>
-        <button class="ghost" id="mClose">Đóng ✕</button>
+        <button class="btn-close" id="mClose">✕ Đóng</button>
       </div>
       <div class="mgrid" id="mGrid"></div>
-      <div class="nav">
-        <button id="mPrev" class="ghost">◀ Trước</button>
+      <div class="mnav">
+        <button class="btn-pg" id="mPrev">◀ Trước</button>
         <span class="pg" id="mPage">Trang 1</span>
-        <button id="mNext" class="ghost">Sau ▶</button>
+        <button class="btn-pg" id="mNext">Sau ▶</button>
       </div>
       <div class="urlrow">
         <input id="mUrl" placeholder="Hoặc dán URL ảnh tuỳ ý..." />
-        <button id="mUrlBtn">Dùng URL</button>
+        <button class="btn btn-primary" id="mUrlBtn">Dùng URL</button>
       </div>
     </div>
   </div>
 
   <script>
     const API = location.origin;
-    const PER_PAGE = 28;
-    let WORDS = [];
-    let cur = null;      // từ đang chọn ảnh
-    let page = 1;
+    const PAGE_SIZE = 24;
+    const LEVELS = [
+      { value: "", label: "Tất cả" },
+      { value: "kids", label: "Trẻ em" },
+      { value: "a1", label: "A1" },
+      { value: "a2", label: "A2" },
+      { value: "b1", label: "B1" },
+      { value: "b2", label: "B2" },
+      { value: "c1", label: "C1" },
+    ];
+
+    let ALL_WORDS = [];
+    let filtered = [];
+    let currentPage = 1;
+    let filterLevel = "";
+    let filterMissing = false;
+    let filterSearch = "";
+    let filterTopic = "";
+
+    // Modal state
+    let cur = null;
+    let mPage = 1;
     let curCardEl = null;
 
-    async function load() {
-      WORDS = await (await fetch(API + "/api/vocabulary")).json();
+    // ── Init ──
+    async function init() {
+      ALL_WORDS = await (await fetch(API + "/api/vocabulary")).json();
       const topics = await (await fetch(API + "/api/topics")).json();
+
       const sel = document.getElementById("topicFilter");
-      topics.forEach(t => { const o = document.createElement("option"); o.value = t.id; o.textContent = t.name + " (" + t.name_vi + ")"; sel.appendChild(o); });
-      sel.onchange = render;
-      render();
+      topics.forEach(t => {
+        const o = document.createElement("option");
+        o.value = t.id;
+        o.textContent = t.name + " — " + t.name_vi;
+        sel.appendChild(o);
+      });
+
+      // Level chips
+      const chipRow = document.getElementById("levelChips");
+      LEVELS.forEach(lv => {
+        const c = document.createElement("button");
+        c.className = "chip" + (lv.value === "" ? " active" : "");
+        c.textContent = lv.label;
+        c.dataset.level = lv.value;
+        c.onclick = () => {
+          filterLevel = lv.value;
+          chipRow.querySelectorAll(".chip").forEach(ch => ch.classList.toggle("active", ch.dataset.level === lv.value));
+          currentPage = 1;
+          applyFilter();
+        };
+        chipRow.appendChild(c);
+      });
+
+      // Events
+      sel.onchange = () => { filterTopic = sel.value; currentPage = 1; applyFilter(); };
+      document.getElementById("searchBox").oninput = (e) => { filterSearch = e.target.value.toLowerCase().trim(); currentPage = 1; applyFilter(); };
+      document.getElementById("missingBtn").onclick = () => {
+        filterMissing = !filterMissing;
+        document.getElementById("missingBtn").classList.toggle("active", filterMissing);
+        currentPage = 1;
+        applyFilter();
+      };
+
+      applyFilter();
     }
 
-    function render() {
-      const topic = document.getElementById("topicFilter").value;
+    // ── Filter + render ──
+    function applyFilter() {
+      filtered = ALL_WORDS.filter(w => {
+        if (filterTopic && !w.topicIds.includes(filterTopic)) return false;
+        if (filterLevel && w.level !== filterLevel) return false;
+        if (filterMissing && w.imageUrl) return false;
+        if (filterSearch && !w.word.toLowerCase().includes(filterSearch) && !w.meaning_vi.toLowerCase().includes(filterSearch)) return false;
+        return true;
+      });
+      renderStats();
+      renderGrid();
+      renderPagination();
+    }
+
+    function renderStats() {
+      const total = filtered.length;
+      const hasImg = filtered.filter(w => w.imageUrl).length;
+      const missing = total - hasImg;
+      document.getElementById("stats").innerHTML =
+        '<span>Hiển thị ' + total + ' từ</span>' +
+        '<span class="pill green">✓ Có ảnh ' + hasImg + '/' + total + '</span>' +
+        (missing > 0 ? '<span class="pill red">✗ Thiếu ' + missing + '</span>' : '');
+    }
+
+    function renderGrid() {
       const grid = document.getElementById("grid");
       grid.innerHTML = "";
-      WORDS.filter(w => !topic || w.topicIds.includes(topic)).forEach(w => grid.appendChild(card(w)));
+      const start = (currentPage - 1) * PAGE_SIZE;
+      const pageWords = filtered.slice(start, start + PAGE_SIZE);
+      if (pageWords.length === 0) {
+        grid.innerHTML = '<div style="grid-column:1/-1;text-align:center;padding:60px 0;color:#9aa1ad;font-weight:700">Không có từ nào phù hợp</div>';
+        return;
+      }
+      pageWords.forEach(w => grid.appendChild(createCard(w)));
     }
 
-    function card(w) {
+    function createCard(w) {
       const el = document.createElement("div");
       el.className = "card";
-      const img = w.imageUrl
-        ? '<img class="current" src="' + w.imageUrl + '" alt="">'
-        : '<div class="current empty">' + w.word[0].toUpperCase() + '</div>';
+      el.dataset.id = w.id;
+
+      const hasImg = !!w.imageUrl;
+      const imgHtml = hasImg
+        ? '<img src="' + w.imageUrl + '" alt="' + w.word + '" loading="lazy">'
+        : '<div class="placeholder"><span class="letter">' + w.word[0].toUpperCase() + '</span><span class="ph-text">Chưa có ảnh</span></div>';
+
+      const levelColor = { kids: "#f3e8ff;color:#7c3aed", a1: "#e0f2fe;color:#0369a1", a2: "#d1fae5;color:#047857", b1: "#fef3c7;color:#92400e", b2: "#fee2e2;color:#b91c1c", c1: "#f3e8ff;color:#6b21a8" };
+      const badgeStyle = levelColor[w.level] || "#f3f4f6;color:#374151";
+
       el.innerHTML =
-        '<div class="head"><span class="word">' + w.word + '</span><span class="vi">' + w.meaning_vi + '</span></div>' +
-        img +
-        '<button>Đổi ảnh</button> <span class="msg"></span>';
-      el.querySelector("button").onclick = () => openModal(w, el);
+        '<div class="img-wrap">' + imgHtml + '</div>' +
+        '<div class="info">' +
+          '<div class="top-row">' +
+            '<span class="word">' + w.word + '</span>' +
+            '<span class="level-badge" style="background:' + badgeStyle + '">' + (w.level || "?").toUpperCase() + '</span>' +
+          '</div>' +
+          '<div class="vi">' + w.meaning_vi + '</div>' +
+          '<div class="actions">' +
+            '<button class="btn ' + (hasImg ? "btn-primary" : "btn-warn") + '">' + (hasImg ? "Đổi ảnh" : "➕ Thêm ảnh") + '</button>' +
+            '<span class="saved-msg"></span>' +
+          '</div>' +
+        '</div>';
+
+      el.querySelector(".btn").onclick = () => openModal(w, el);
       return el;
     }
 
-    function openModal(w, el) {
-      cur = w; curCardEl = el; page = 1;
-      document.getElementById("mTitle").textContent = w.word;
-      document.getElementById("mSub").textContent = w.meaning_vi;
-      document.getElementById("mUrl").value = "";
-      document.getElementById("overlay").classList.add("open");
-      loadPage(1);
+    function renderPagination() {
+      const totalPages = Math.ceil(filtered.length / PAGE_SIZE);
+      const pg = document.getElementById("pagination");
+      if (totalPages <= 1) { pg.innerHTML = ""; return; }
+      pg.innerHTML =
+        '<button class="btn-pg" id="pgPrev" ' + (currentPage <= 1 ? "disabled" : "") + '>◀ Trước</button>' +
+        '<span class="pg-info">Trang ' + currentPage + ' / ' + totalPages + '</span>' +
+        '<button class="btn-pg" id="pgNext" ' + (currentPage >= totalPages ? "disabled" : "") + '>Sau ▶</button>';
+      document.getElementById("pgPrev").onclick = () => { if (currentPage > 1) { currentPage--; renderGrid(); renderPagination(); window.scrollTo(0, 0); } };
+      document.getElementById("pgNext").onclick = () => { if (currentPage < totalPages) { currentPage++; renderGrid(); renderPagination(); window.scrollTo(0, 0); } };
     }
 
-    function closeModal() { document.getElementById("overlay").classList.remove("open"); }
+    // ── Modal ──
+    function openModal(w, el) {
+      cur = w; curCardEl = el; mPage = 1;
+      document.getElementById("mTitle").textContent = w.word + " — " + w.meaning_vi;
+      document.getElementById("mSub").textContent = "Chọn ảnh phù hợp từ Pexels hoặc dán URL";
+      document.getElementById("mUrl").value = "";
+      document.getElementById("overlay").classList.add("open");
+      document.body.style.overflow = "hidden";
+      loadModalPage(1);
+    }
 
-    async function loadPage(p) {
+    function closeModal() {
+      document.getElementById("overlay").classList.remove("open");
+      document.body.style.overflow = "";
+    }
+
+    async function loadModalPage(p) {
       const grid = document.getElementById("mGrid");
-      grid.innerHTML = "<p style='grid-column:1/-1;color:#6b7280'>Đang tải ảnh…</p>";
-      const list = await (await fetch(API + "/api/image?count=" + PER_PAGE + "&page=" + p + "&query=" + encodeURIComponent(cur.word))).json();
-      page = p;
-      grid.innerHTML = "";
-      (list || []).forEach(im => {
-        const t = document.createElement("img");
-        t.src = im.thumbUrl; t.title = im.photographer || "";
-        t.onclick = () => pick(im.url);
-        grid.appendChild(t);
-      });
-      if (!list || list.length === 0) grid.innerHTML = "<p style='grid-column:1/-1;color:#6b7280'>Không còn ảnh.</p>";
-      document.getElementById("mPage").textContent = "Trang " + p;
-      document.getElementById("mPrev").disabled = p <= 1;
-      document.getElementById("mNext").disabled = !list || list.length < PER_PAGE; // hết trang
+      grid.innerHTML = '<div class="loading">Đang tải ảnh…</div>';
+      try {
+        const list = await (await fetch(API + "/api/image?count=28&page=" + p + "&query=" + encodeURIComponent(cur.word))).json();
+        mPage = p;
+        grid.innerHTML = "";
+        if (!list || list.length === 0) {
+          grid.innerHTML = '<div class="empty">Không tìm thấy ảnh cho "' + cur.word + '"</div>';
+        } else {
+          list.forEach(im => {
+            const cell = document.createElement("div");
+            cell.className = "img-cell";
+            cell.innerHTML = '<img src="' + im.thumbUrl + '" alt="' + (im.photographer || "") + '" loading="lazy"><div class="check">✓</div>';
+            cell.onclick = () => pick(im.url);
+            grid.appendChild(cell);
+          });
+        }
+        document.getElementById("mPage").textContent = "Trang " + p;
+        document.getElementById("mPrev").disabled = p <= 1;
+        document.getElementById("mNext").disabled = !list || list.length < 28;
+      } catch (e) {
+        grid.innerHTML = '<div class="empty">Lỗi tải ảnh. Thử lại sau.</div>';
+      }
     }
 
     async function pick(url) {
       await fetch(API + "/api/image-pick", {
-        method: "POST", headers: { "Content-Type": "application/json" },
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ wordId: cur.id, url })
       });
       cur.imageUrl = url;
-      // cập nhật ảnh trên card + đánh dấu đã lưu
-      const c = curCardEl.querySelector(".current");
-      if (c) c.outerHTML = '<img class="current" src="' + url + '" alt="">';
-      curCardEl.querySelector(".msg").innerHTML = '<span class="saved">✓ Đã lưu</span>';
+      // Update card in-place
+      const wrap = curCardEl.querySelector(".img-wrap");
+      wrap.innerHTML = '<img src="' + url + '" alt="' + cur.word + '">';
+      const btn = curCardEl.querySelector(".btn");
+      btn.className = "btn btn-primary";
+      btn.textContent = "Đổi ảnh";
+      curCardEl.querySelector(".saved-msg").textContent = "✓ Đã lưu";
+      // Update stats
+      renderStats();
       closeModal();
     }
 
-    document.getElementById("mPrev").onclick = () => page > 1 && loadPage(page - 1);
-    document.getElementById("mNext").onclick = () => loadPage(page + 1);
+    // Modal events
+    document.getElementById("mPrev").onclick = () => mPage > 1 && loadModalPage(mPage - 1);
+    document.getElementById("mNext").onclick = () => loadModalPage(mPage + 1);
     document.getElementById("mClose").onclick = closeModal;
     document.getElementById("mUrlBtn").onclick = () => { const u = document.getElementById("mUrl").value.trim(); if (u) pick(u); };
     document.getElementById("overlay").onclick = (e) => { if (e.target.id === "overlay") closeModal(); };
+    document.addEventListener("keydown", (e) => { if (e.key === "Escape") closeModal(); });
 
-    load();
+    init();
   </script>
 </body>
 </html>
