@@ -42,6 +42,13 @@ export function initSchema(): void {
       saved INTEGER, createdAt INTEGER
     );
     CREATE TABLE IF NOT EXISTS translation_cache (text TEXT PRIMARY KEY, translation TEXT);
+    -- Sổ cái điểm: mỗi lần cộng XP ghi 1 dòng -> minh bạch, kiểm tra/khôi phục được.
+    CREATE TABLE IF NOT EXISTS xp_events (
+      id INTEGER PRIMARY KEY AUTOINCREMENT, studentId TEXT, type TEXT, points INTEGER,
+      refId TEXT, createdAt INTEGER
+    );
+    CREATE INDEX IF NOT EXISTS idx_xp_student ON xp_events(studentId);
+    CREATE INDEX IF NOT EXISTS idx_xp_created ON xp_events(createdAt);
   `);
   // Migration cho DB cũ: thêm cột nếu chưa có.
   try { db.exec("ALTER TABLE students ADD COLUMN lastActiveDate TEXT"); } catch { /* đã có */ }
@@ -53,4 +60,10 @@ export function initSchema(): void {
   try { db.exec("ALTER TABLE lookup_history ADD COLUMN imageUrl TEXT"); } catch { /* đã có */ }
   // Chuẩn hoá level cũ ("beginner"... ) về tập CEFR hợp lệ để bộ lọc theo cấp hoạt động.
   try { db.exec("UPDATE students SET level='a1' WHERE level IS NULL OR level NOT IN ('kids','a1','a2','b1','b2','c1')"); } catch { /* bỏ qua */ }
+  // Backfill sổ cái: giữ nguyên XP cũ của bé (1 dòng 'legacy') để không mất quyền lợi.
+  try {
+    db.exec(`INSERT INTO xp_events (studentId, type, points, refId, createdAt)
+             SELECT id, 'legacy', xp, NULL, COALESCE(createdAt, 0) FROM students
+             WHERE COALESCE(xp,0) > 0 AND id NOT IN (SELECT DISTINCT studentId FROM xp_events)`);
+  } catch { /* bỏ qua */ }
 }

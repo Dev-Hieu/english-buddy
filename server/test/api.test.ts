@@ -159,16 +159,21 @@ describe("Admin + hạn mức", () => {
 });
 
 describe("Quiz results + Review", () => {
-  test("lưu kết quả test -> đọc lại có + XP +5/câu đúng", async () => {
+  test("lưu kết quả test -> đọc lại có + XP (3đ/câu, 1 lần/chủ đề/ngày)", async () => {
     const before = (await (await get(`/api/students/${studentId}`, t1)).json()).xp ?? 0;
-    await post("/api/quiz-results", {
+    const body = {
       studentId, topicId: "topic_food", score: 80, totalQuestions: 5,
       correctAnswers: 4, wrongAnswers: 1, wrongWordIds: [], durationSeconds: 30,
-    }, t1);
+    };
+    await post("/api/quiz-results", body, t1);
     const list = await (await get(`/api/students/${studentId}/quiz-results`, t1)).json();
     expect(list.length).toBeGreaterThan(0);
     const after = (await (await get(`/api/students/${studentId}`, t1)).json()).xp ?? 0;
-    expect(after).toBe(before + 20); // 4 câu đúng * 5
+    expect(after).toBe(before + 12); // 4 câu đúng * 3
+    // Làm lại cùng chủ đề trong ngày -> KHÔNG cộng thêm (chống cày)
+    await post("/api/quiz-results", body, t1);
+    const after2 = (await (await get(`/api/students/${studentId}`, t1)).json()).xp ?? 0;
+    expect(after2).toBe(after);
   });
 
   test("hàng đợi ôn trả về mảng", async () => {
@@ -192,6 +197,26 @@ describe("Chat AI premium", () => {
     const st = await (await get("/api/chat/status", t1)).json();
     expect(st.premium).toBe(true);
     expect(st.enabled).toBe(false); // chưa có DEEPSEEK_API_KEY trong test
+  });
+});
+
+describe("Chống cày điểm + xếp hạng tuần", () => {
+  test("từ mới +10, trả lời lại KHÔNG +10 nữa (chống cày)", async () => {
+    const vocab = await (await get("/api/vocabulary")).json();
+    const w = vocab.find((x: any) => x.topicIds.includes("topic_technology")) || vocab[800];
+    const x0 = (await (await get(`/api/students/${studentId}`, t1)).json()).xp ?? 0;
+    await post(`/api/students/${studentId}/answer`, { wordId: w.id, correct: true }, t1);
+    const x1 = (await (await get(`/api/students/${studentId}`, t1)).json()).xp ?? 0;
+    await post(`/api/students/${studentId}/answer`, { wordId: w.id, correct: true }, t1);
+    const x2 = (await (await get(`/api/students/${studentId}`, t1)).json()).xp ?? 0;
+    expect(x1 - x0).toBe(10); // học từ mới lần đầu
+    expect(x2 - x1).toBeLessThan(10); // luyện lại chỉ +1, không cày được
+  });
+
+  test("leaderboard tuần trả về điểm (points) theo cấp", async () => {
+    const lb = await (await get("/api/leaderboard?period=week", t1)).json();
+    expect(Array.isArray(lb)).toBe(true);
+    if (lb.length) { expect(lb[0]).toHaveProperty("points"); expect(lb[0]).toHaveProperty("level"); }
   });
 });
 

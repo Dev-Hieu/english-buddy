@@ -205,7 +205,7 @@ export function App() {
       content = <MyWordsPage student={student} onBackHome={() => navigate("home")} />;
       break;
     case "leaderboard":
-      content = <LeaderboardPage currentStudentId={student.id} onBackHome={() => navigate("home")} />;
+      content = <LeaderboardPage currentStudentId={student.id} level={student.level} onBackHome={() => navigate("home")} />;
       break;
     default:
       content = (

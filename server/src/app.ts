@@ -23,7 +23,22 @@ function dayStr(d: Date): string {
   return `${d.getFullYear()}-${d.getMonth() + 1}-${d.getDate()}`;
 }
 
-// Cập nhật chuỗi ngày học liên tiếp khi bé hoạt động: mới hôm nay liên tiếp +1, bỏ ngày -> về 1.
+// Ghi 1 sự kiện điểm vào sổ cái + cập nhật tổng XP (cộng dồn tính lại được từ sổ cái).
+function awardXp(studentId: string, type: string, points: number, refId: string | null = null): void {
+  if (points <= 0) return;
+  db.prepare("INSERT INTO xp_events (studentId, type, points, refId, createdAt) VALUES (?, ?, ?, ?, ?)")
+    .run(studentId, type, points, refId, Date.now());
+  db.prepare("UPDATE students SET xp = COALESCE(xp, 0) + ? WHERE id = ?").run(points, studentId);
+}
+
+// Chỉ thưởng 1 lần cho mỗi (loại, tham chiếu) — vd: học/thuộc 1 từ chỉ tính 1 lần (chống cày).
+function awardXpOnce(studentId: string, type: string, refId: string, points: number): void {
+  const existed = db.prepare("SELECT 1 FROM xp_events WHERE studentId=? AND type=? AND refId=? LIMIT 1").get(studentId, type, refId);
+  if (existed) return;
+  awardXp(studentId, type, points, refId);
+}
+
+// Cập nhật chuỗi ngày học liên tiếp; thưởng điểm mốc 3/7/30 ngày.
 function bumpStreak(studentId: string): void {
   const s = db.prepare("SELECT streak, lastActiveDate FROM students WHERE id = ?").get(studentId) as any;
   if (!s) return;
@@ -34,11 +49,17 @@ function bumpStreak(studentId: string): void {
   const yesterday = dayStr(y);
   const streak = s.lastActiveDate === yesterday ? (s.streak || 0) + 1 : 1;
   db.prepare("UPDATE students SET streak = ?, lastActiveDate = ? WHERE id = ?").run(streak, today, studentId);
+  const bonus: Record<number, number> = { 3: 10, 7: 30, 14: 60, 30: 150 };
+  if (bonus[streak]) awardXp(studentId, "streak_milestone", bonus[streak], `streak_${streak}_${today}`);
 }
 
-function addXp(studentId: string, delta: number): void {
-  if (delta <= 0) return;
-  db.prepare("UPDATE students SET xp = COALESCE(xp, 0) + ? WHERE id = ?").run(delta, studentId);
+// Mốc đầu tuần (thứ 2, 00:00 giờ máy chủ) cho bảng xếp hạng theo tuần.
+function startOfWeek(): number {
+  const d = new Date();
+  d.setHours(0, 0, 0, 0);
+  const dow = (d.getDay() + 6) % 7; // 0 = thứ 2
+  d.setDate(d.getDate() - dow);
+  return d.getTime();
 }
 
 // Kiểm tra học sinh thuộc tài khoản đang đăng nhập (admin xem được tất cả).
@@ -122,11 +143,25 @@ export function createApp() {
     res.json({ ok: true, studentLimit: row.studentLimit, isPremium: !!row.isPremium });
   });
 
-  // ── Bảng xếp hạng (theo XP, mọi học sinh) ──
-  app.get("/api/leaderboard", requireAuth, (_req, res) => {
-    res.json(db.prepare(
-      "SELECT id, name, avatar, COALESCE(xp,0) AS xp, COALESCE(streak,0) AS streak FROM students ORDER BY xp DESC, streak DESC, name LIMIT 50"
-    ).all());
+  // ── Bảng xếp hạng: điểm TUẦN (mặc định) hoặc mọi thời gian, lọc theo cấp ──
+  app.get("/api/leaderboard", requireAuth, (req, res) => {
+    const period = String(req.query.period || "week");
+    const level = String(req.query.level || "");
+    const levelFilter = ["kids", "a1", "a2", "b1", "b2", "c1"].includes(level) ? "AND s.level = @level" : "";
+    if (period === "all") {
+      res.json(db.prepare(
+        `SELECT s.id, s.name, s.avatar, s.level, COALESCE(s.xp,0) AS points, COALESCE(s.streak,0) AS streak
+         FROM students s WHERE 1=1 ${levelFilter} ORDER BY points DESC, streak DESC, s.name LIMIT 50`
+      ).all({ level }));
+    } else {
+      // Điểm kiếm trong tuần (từ sổ cái) -> bé mới vẫn có cơ hội đua.
+      res.json(db.prepare(
+        `SELECT s.id, s.name, s.avatar, s.level, COALESCE(s.streak,0) AS streak,
+                COALESCE((SELECT SUM(points) FROM xp_events e WHERE e.studentId = s.id AND e.createdAt >= @wk), 0) AS points
+         FROM students s WHERE 1=1 ${levelFilter}
+         ORDER BY points DESC, streak DESC, s.name LIMIT 50`
+      ).all({ wk: startOfWeek(), level }));
+    }
   });
 
   // ── Nội dung (public) ──
@@ -218,7 +253,14 @@ export function createApp() {
        VALUES (@studentId, @wordId, @status, @mastery, @correctCount, @wrongCount, @lastReviewedAt, @nextReviewAt)`
     ).run(row);
     bumpStreak(studentId);
-    if (correct) addXp(studentId, 10); // +10 XP cho mỗi từ trả lời đúng
+    // Điểm thưởng "học thật" (chống cày): thưởng theo tiến bộ, không theo số lần bấm.
+    if (correct) {
+      const wasDue = prev && prev.nextReviewAt <= now;
+      if ((base.mastery ?? 0) === 0) awardXpOnce(studentId, "first_learn", wordId, 10); // học từ mới lần đầu
+      else if (mastery >= 5 && (base.mastery ?? 0) < 5) awardXpOnce(studentId, "mastered", wordId, 20); // thuộc hẳn
+      else if (wasDue) awardXp(studentId, "review", 5, wordId); // ôn đúng từ đến hạn
+      else awardXp(studentId, "practice", 1, wordId); // luyện lại từ đã biết
+    }
     res.json(row);
   });
 
@@ -286,7 +328,10 @@ export function createApp() {
     );
     if (r.studentId) {
       bumpStreak(r.studentId);
-      addXp(r.studentId, (Number(r.correctAnswers) || 0) * 5); // +5 XP mỗi câu test đúng
+      // Thưởng theo số câu đúng nhưng chỉ tính LẦN ĐẦU mỗi (chủ đề, ngày) -> chống làm đi làm lại để cày.
+      const today = dayStr(new Date());
+      const pts = Math.min(50, (Number(r.correctAnswers) || 0) * 3);
+      awardXpOnce(r.studentId, "quiz", `${r.topicId || "exam"}_${today}`, pts);
     }
     res.json({ ok: true });
   });

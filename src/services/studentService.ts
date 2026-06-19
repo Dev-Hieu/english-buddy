@@ -53,9 +53,11 @@ export interface LeaderEntry {
   id: string;
   name: string;
   avatar: string;
-  xp: number;
+  level: string;
+  points: number;
   streak: number;
 }
-export function getLeaderboard(): Promise<LeaderEntry[]> {
-  return apiRequest(`/api/leaderboard`);
+export function getLeaderboard(period: "week" | "all" = "week", level = ""): Promise<LeaderEntry[]> {
+  const lv = level ? `&level=${encodeURIComponent(level)}` : "";
+  return apiRequest(`/api/leaderboard?period=${period}${lv}`);
 }
