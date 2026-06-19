@@ -23,6 +23,9 @@ interface HomePageProps {
   learnedTotal: number;
   learnedToday: number;
   reviewDue: number;
+  pendingCount: number;
+  dueTestCount: number;
+  onStartSkillTest: (mode: "new" | "review") => void;
   onChangeStudent: () => void;
   onLogout: () => void;
   onNavigate: Nav;
@@ -54,7 +57,7 @@ function NavRow({ icon: Icon, iconClass, title, subtitle, onClick }: {
   );
 }
 
-export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, learnedToday, reviewDue, onChangeStudent, onLogout, onNavigate }: HomePageProps) {
+export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, learnedToday, reviewDue, pendingCount, dueTestCount, onStartSkillTest, onChangeStudent, onLogout, onNavigate }: HomePageProps) {
   const learned = new Set(studiedWordIds);
   const goal = student.dailyGoal || 10;
   const goalReached = learnedToday >= goal;
@@ -152,6 +155,46 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
           <Play className="h-5 w-5" /> {resumeStarted ? "Học tiếp" : "Bắt đầu học"}
         </Button>
       </section>
+
+      {/* Sẵn sàng thi lấy điểm (đủ 10 từ đã thuộc) */}
+      {pendingCount >= 10 ? (
+        <button
+          type="button"
+          onClick={() => onStartSkillTest("new")}
+          className="mt-4 flex w-full items-center gap-3 rounded-3xl border-2 border-success/50 bg-success/10 p-4 shadow-card transition-transform active:scale-[0.99]"
+        >
+          <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-success/20 text-success">
+            <GraduationCap className="h-5 w-5" />
+          </span>
+          <span className="flex-1 text-left">
+            <span className="block font-extrabold">Sẵn sàng thi lấy điểm! 🎯</span>
+            <span className="block text-sm font-semibold text-muted-foreground">{pendingCount} từ đã thuộc — thi để ghi điểm</span>
+          </span>
+          <ChevronRight className="h-5 w-5 text-success" />
+        </button>
+      ) : pendingCount > 0 ? (
+        <p className="mt-4 rounded-3xl border border-border/70 bg-card p-3 text-center text-sm font-bold text-muted-foreground shadow-card">
+          Còn {10 - pendingCount} từ nữa (bấm "Thuộc" khi học) để mở bài thi lấy điểm.
+        </p>
+      ) : null}
+
+      {/* Đến hạn thi lại (ôn trí nhớ) */}
+      {dueTestCount > 0 ? (
+        <button
+          type="button"
+          onClick={() => onStartSkillTest("review")}
+          className="mt-4 flex w-full items-center gap-3 rounded-3xl border-2 border-primary/40 bg-primary/10 p-4 shadow-card transition-transform active:scale-[0.99]"
+        >
+          <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-primary/20 text-primary">
+            <RotateCcw className="h-5 w-5" />
+          </span>
+          <span className="flex-1 text-left">
+            <span className="block font-extrabold">Thi lại giữ điểm</span>
+            <span className="block text-sm font-semibold text-muted-foreground">{dueTestCount} từ đến hạn ôn — thi lại kẻo quên</span>
+          </span>
+          <ChevronRight className="h-5 w-5 text-primary" />
+        </button>
+      ) : null}
 
       {/* Cần ôn hôm nay (chỉ hiện khi có từ đến hạn) */}
       {reviewDue > 0 ? (

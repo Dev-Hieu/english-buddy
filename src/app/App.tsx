@@ -28,12 +28,13 @@ import { ConversationPage } from "@/pages/ConversationPage";
 import { LeaderboardPage } from "@/pages/LeaderboardPage";
 import { StudentSelectPage } from "@/pages/StudentSelectPage";
 import { TopicListPage } from "@/pages/TopicListPage";
+import { SkillTestPage } from "@/pages/SkillTestPage";
 
 type View =
   | "student-select" | "admin" | "home" | "topics" | "lesson"
-  | "flashcard" | "review" | "lookup" | "test" | "games" | "speak" | "dashboard" | "mywords" | "leaderboard" | "topicwords" | "grammar" | "grammar-lesson" | "exam" | "conversation" | "imagepicker";
+  | "flashcard" | "review" | "lookup" | "test" | "games" | "speak" | "dashboard" | "mywords" | "leaderboard" | "topicwords" | "grammar" | "grammar-lesson" | "exam" | "conversation" | "imagepicker" | "skilltest";
 
-interface Route { view: View; topicId: string; level: Level | "all"; }
+interface Route { view: View; topicId: string; level: Level | "all"; mode?: "new" | "review"; }
 
 const SELECTED_STUDENT_KEY = "english-buddy:selected-student";
 const readSelected = () => (typeof window === "undefined" ? null : localStorage.getItem(SELECTED_STUDENT_KEY));
@@ -41,7 +42,7 @@ const readSelected = () => (typeof window === "undefined" ? null : localStorage.
 const ACTIVE_TAB: Record<View, TabKey | null> = {
   "student-select": null, admin: null, home: "home", topics: "home", lesson: "home", flashcard: "home",
   review: "review", lookup: "lookup", test: "test", games: "games", speak: "speak", dashboard: null, mywords: null, leaderboard: null, topicwords: null,
-  grammar: null, "grammar-lesson": null, exam: null, conversation: null, imagepicker: null,
+  grammar: null, "grammar-lesson": null, exam: null, conversation: null, imagepicker: null, skilltest: null,
 };
 
 export function App() {
@@ -179,6 +180,9 @@ export function App() {
   const todayStr = new Date().toDateString();
   const learnedToday = progress.filter((p) => p.lastReviewedAt && new Date(p.lastReviewedAt).toDateString() === todayStr).length;
   const reviewDue = progress.filter((p) => p.mastery > 0 && p.nextReviewAt && p.nextReviewAt <= Date.now()).length;
+  const pendingCount = progress.filter((p) => (p as any).status === "pending_test").length;
+  const dueTestCount = progress.filter((p) => (p as any).status === "scored" && p.nextReviewAt && p.nextReviewAt <= Date.now()).length;
+  const openSkillTest = (mode: "new" | "review") => setRoute({ view: "skilltest", topicId: route.topicId, level: route.level, mode });
 
   let content: React.ReactNode;
   switch (route.view) {
@@ -230,6 +234,9 @@ export function App() {
     case "leaderboard":
       content = <LeaderboardPage currentStudentId={student.id} level={student.level} onBackHome={() => navigate("home")} />;
       break;
+    case "skilltest":
+      content = <SkillTestPage student={student} mode={route.mode ?? "new"} onBackHome={() => { loadProgress(); navigate("home"); }} />;
+      break;
     default:
       content = (
         <HomePage
@@ -240,6 +247,9 @@ export function App() {
           learnedTotal={studiedWordIds.length}
           learnedToday={learnedToday}
           reviewDue={reviewDue}
+          pendingCount={pendingCount}
+          dueTestCount={dueTestCount}
+          onStartSkillTest={openSkillTest}
           onChangeStudent={() => navigate("student-select")}
           onLogout={doLogout}
           onNavigate={(view, topicId, level) => navigate(view as View, topicId, level as Level | "all" | undefined)}
