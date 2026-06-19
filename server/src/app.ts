@@ -127,12 +127,16 @@ export function createApp() {
     res.json(rows);
   });
 
-  // Admin reset toàn bộ điểm (xp) + streak của mọi học sinh để bắt đầu cuộc đua mới.
-  // KHÔNG xoá tiến độ học (progress) — chỉ xoá điểm/sổ cái/streak.
-  app.post("/api/admin/reset-scores", requireAdmin, (_req, res) => {
-    db.exec("DELETE FROM xp_events");
-    const r = db.prepare("UPDATE students SET xp = 0, streak = 0, lastActiveDate = NULL").run();
-    res.json({ ok: true, students: r.changes });
+  // Admin chọn reset MỤC NÀO cho mọi học sinh (mỗi cờ độc lập). Không chọn gì -> không làm gì.
+  app.post("/api/admin/reset-scores", requireAdmin, (req, res) => {
+    const o = req.body || {};
+    const done: string[] = [];
+    if (o.xp) { db.exec("DELETE FROM xp_events"); db.prepare("UPDATE students SET xp = 0").run(); done.push("xp"); }
+    if (o.streak) { db.prepare("UPDATE students SET streak = 0, lastActiveDate = NULL").run(); done.push("streak"); }
+    if (o.progress) { db.exec("DELETE FROM progress"); done.push("progress"); }
+    if (o.quiz) { db.exec("DELETE FROM quiz_results"); done.push("quiz"); }
+    if (o.lookups) { db.exec("DELETE FROM lookup_history"); done.push("lookups"); }
+    res.json({ ok: true, done });
   });
 
   // Admin đặt hạn mức số bé và/hoặc cấp premium (chat AI) cho 1 phụ huynh.

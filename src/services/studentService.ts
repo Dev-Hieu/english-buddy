@@ -52,8 +52,9 @@ export function setPremium(userId: string, isPremium: boolean): Promise<{ ok: bo
 export function setImageEditor(userId: string, canEditImages: boolean): Promise<{ ok: boolean; canEditImages: boolean }> {
   return apiRequest(`/api/admin/users/${userId}`, { method: "PUT", body: { canEditImages } });
 }
-export function resetScores(): Promise<{ ok: boolean; students: number }> {
-  return apiRequest(`/api/admin/reset-scores`, { method: "POST" });
+export interface ResetOptions { xp?: boolean; streak?: boolean; progress?: boolean; quiz?: boolean; lookups?: boolean }
+export function resetScores(opts: ResetOptions): Promise<{ ok: boolean; done: string[] }> {
+  return apiRequest(`/api/admin/reset-scores`, { method: "POST", body: opts });
 }
 
 export interface LeaderEntry {

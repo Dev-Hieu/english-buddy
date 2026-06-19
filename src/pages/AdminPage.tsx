@@ -37,11 +37,22 @@ export function AdminPage({ onBack, onOpenPicker }: { onBack: () => void; onOpen
     await setImageEditor(u.id, !!next).catch(() => {});
   };
 
+  const RESET_ITEMS = [
+    { key: "xp", label: "Điểm XP (⭐) + bảng xếp hạng" },
+    { key: "streak", label: "Chuỗi ngày học (streak 🔥)" },
+    { key: "progress", label: "Tiến độ học (từ đã thuộc + lịch ôn)" },
+    { key: "quiz", label: "Lịch sử bài test" },
+    { key: "lookups", label: "My Words (từ đã lưu khi tra)" },
+  ] as const;
+  const [resetOpts, setResetOpts] = useState<Record<string, boolean>>({});
   const [resetting, setResetting] = useState(false);
+  const anySel = Object.values(resetOpts).some(Boolean);
   const doReset = async () => {
-    if (!confirm("Reset điểm (XP) và streak của TẤT CẢ học sinh về 0 để bắt đầu cuộc đua mới? Tiến độ học (từ đã thuộc) vẫn giữ. Không hoàn tác được.")) return;
+    const chosen = RESET_ITEMS.filter((i) => resetOpts[i.key]).map((i) => i.label);
+    if (!chosen.length) return;
+    if (!confirm("Reset cho TẤT CẢ học sinh các mục:\n- " + chosen.join("\n- ") + "\n\nKhông hoàn tác được. Tiếp tục?")) return;
     setResetting(true);
-    try { const r = await resetScores(); alert("Đã reset " + r.students + " học sinh. Cuộc đua mới bắt đầu!"); }
+    try { await resetScores(resetOpts); alert("Đã reset xong các mục đã chọn."); setResetOpts({}); }
     catch { alert("Reset lỗi."); } finally { setResetting(false); }
   };
 
@@ -63,20 +74,22 @@ export function AdminPage({ onBack, onOpenPicker }: { onBack: () => void; onOpen
         </span>
       </button>
 
-      <button
-        type="button"
-        onClick={doReset}
-        disabled={resetting}
-        className="mb-4 flex w-full items-center gap-3 rounded-3xl border-2 border-accent/40 bg-accent/10 p-4 text-left shadow-card transition-transform active:scale-[0.99]"
-      >
-        <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-accent/20 text-accent">
-          {resetting ? <Loader2 className="h-5 w-5 animate-spin" /> : <RotateCcw className="h-5 w-5" />}
-        </span>
-        <span className="flex-1">
-          <span className="block font-extrabold">Reset điểm & streak (cuộc đua mới)</span>
-          <span className="block text-sm font-semibold text-muted-foreground">Đưa XP + streak mọi học sinh về 0; giữ tiến độ học</span>
-        </span>
-      </button>
+      <div className="mb-4 rounded-3xl border-2 border-accent/40 bg-accent/10 p-4">
+        <div className="mb-2 flex items-center gap-2 font-extrabold"><RotateCcw className="h-5 w-5 text-accent" /> Reset dữ liệu học sinh</div>
+        <p className="mb-2 text-sm font-semibold text-muted-foreground">Chọn mục cần reset cho TẤT CẢ học sinh:</p>
+        <div className="space-y-1.5">
+          {RESET_ITEMS.map((it) => (
+            <label key={it.key} className="flex cursor-pointer items-center gap-2 font-bold">
+              <input type="checkbox" className="h-4 w-4 accent-accent" checked={!!resetOpts[it.key]}
+                onChange={(e) => setResetOpts((o) => ({ ...o, [it.key]: e.target.checked }))} />
+              {it.label}
+            </label>
+          ))}
+        </div>
+        <Button type="button" variant="destructive" className="mt-3" disabled={!anySel || resetting} onClick={doReset}>
+          {resetting ? <Loader2 className="h-4 w-4 animate-spin" /> : <RotateCcw className="h-4 w-4" />} Reset mục đã chọn
+        </Button>
+      </div>
 
       {users === null ? (
         <div className="flex justify-center py-12"><Loader2 className="h-8 w-8 animate-spin text-primary" /></div>
