@@ -8735,5 +8735,425 @@ export const VOCAB_OVERRIDES: Record<string, VocabOverride> = {
   },
   "word_a2c_stomach": {
     "pos": "danh từ"
+  },
+  "word_kids6_ostrich": {
+    "pos": "danh từ"
+  },
+  "word_kids6_flamingo": {
+    "pos": "danh từ"
+  },
+  "word_kids6_robin": {
+    "pos": "danh từ"
+  },
+  "word_kids6_lizard": {
+    "pos": "danh từ"
+  },
+  "word_kids6_crocodile": {
+    "pos": "danh từ"
+  },
+  "word_kids6_gecko": {
+    "pos": "danh từ"
+  },
+  "word_kids6_chameleon": {
+    "pos": "danh từ"
+  },
+  "word_kids6_iguana": {
+    "pos": "danh từ"
+  },
+  "word_kids6_tortoise": {
+    "pos": "danh từ"
+  },
+  "word_kids6_alligator": {
+    "pos": "danh từ"
+  },
+  "word_kids6_dinosaur": {
+    "pos": "danh từ"
+  },
+  "word_kids6_trex": {
+    "pos": "danh từ"
+  },
+  "word_kids6_stegosaurus": {
+    "pos": "danh từ"
+  },
+  "word_kids6_triceratops": {
+    "pos": "danh từ"
+  },
+  "word_kids6_brontosaurus": {
+    "pos": "danh từ"
+  },
+  "word_kids6_pterodactyl": {
+    "pos": "danh từ"
+  },
+  "word_kids6_velociraptor": {
+    "pos": "danh từ"
+  },
+  "word_kids6_fossil": {
+    "pos": "danh từ"
+  },
+  "word_kids6_hamster": {
+    "pos": "danh từ"
+  },
+  "word_kids6_goldfish": {
+    "pos": "danh từ"
+  },
+  "word_kids6_guineapig": {
+    "pos": "danh từ"
+  },
+  "word_kids6_kitten": {
+    "pos": "danh từ"
+  },
+  "word_kids6_puppy": {
+    "pos": "danh từ"
+  },
+  "word_kids6_cage": {
+    "pos": "danh từ"
+  },
+  "word_kids6_leash": {
+    "pos": "danh từ"
+  },
+  "word_kids6_paw": {
+    "pos": "danh từ"
+  },
+  "word_kids6_bathtub": {
+    "pos": "danh từ"
+  },
+  "word_kids6_sink": {
+    "pos": "danh từ"
+  },
+  "word_kids6_faucet": {
+    "pos": "danh từ"
+  },
+  "word_kids6_shampoo": {
+    "pos": "danh từ"
+  },
+  "word_kids6_comb": {
+    "pos": "danh từ"
+  },
+  "word_kids6_toilet": {
+    "pos": "danh từ"
+  },
+  "word_kids6_sponge": {
+    "pos": "danh từ"
+  },
+  "word_kids6_oven": {
+    "pos": "danh từ"
+  },
+  "word_kids6_stove": {
+    "pos": "danh từ"
+  },
+  "word_kids6_kettle": {
+    "pos": "danh từ"
+  },
+  "word_kids6_napkin": {
+    "pos": "danh từ"
+  },
+  "word_kids6_apron": {
+    "pos": "danh từ"
+  },
+  "word_kids6_blender": {
+    "pos": "danh từ"
+  },
+  "word_kids6_toaster": {
+    "pos": "danh từ"
+  },
+  "word_a2e_cook": {
+    "pos": "động từ"
+  },
+  "word_a2f_floor": {
+    "pos": "danh từ"
+  },
+  "word_a2g_menu": {
+    "pos": "danh từ"
+  },
+  "word_a2g_boil": {
+    "pos": "động từ"
+  },
+  "word_a2g_fry": {
+    "pos": "động từ"
+  },
+  "word_a2g_bake": {
+    "pos": "động từ"
+  },
+  "word_a2g_knife": {
+    "pos": "danh từ"
+  },
+  "word_b1d_donate": {
+    "pos": "động từ"
+  },
+  "word_b1d_homeless": {
+    "pos": "tính từ"
+  },
+  "word_b1d_neighbourhood": {
+    "pos": "danh từ"
+  },
+  "word_b1d_public": {
+    "pos": "tính từ"
+  },
+  "word_b1d_society_member": {
+    "pos": "danh từ"
+  },
+  "word_b1d_support": {
+    "pos": "danh từ"
+  },
+  "word_b1d_cooperate": {
+    "pos": "động từ"
+  },
+  "word_b1d_inequality": {
+    "pos": "danh từ"
+  },
+  "word_b1d_celebrate": {
+    "pos": "động từ"
+  },
+  "word_b1d_festival": {
+    "pos": "danh từ"
+  },
+  "word_b1d_diversity": {
+    "pos": "danh từ"
+  },
+  "word_b1d_tourist": {
+    "pos": "danh từ"
+  },
+  "word_b1d_flight": {
+    "pos": "danh từ"
+  },
+  "word_b1d_airport": {
+    "pos": "danh từ"
+  },
+  "word_b1d_accommodation": {
+    "pos": "danh từ"
+  },
+  "word_b1d_reservation": {
+    "pos": "danh từ"
+  },
+  "word_b1d_guide": {
+    "pos": "danh từ"
+  },
+  "word_b1d_itinerary": {
+    "pos": "danh từ"
+  },
+  "word_b1d_explore": {
+    "pos": "động từ"
+  },
+  "word_b1d_adventure": {
+    "pos": "danh từ"
+  },
+  "word_b2e_welfare_state": {
+    "pos": "danh từ"
+  },
+  "word_b2e_taxpayer": {
+    "pos": "danh từ"
+  },
+  "word_b2e_protest": {
+    "pos": "danh từ"
+  },
+  "word_b2e_campaign": {
+    "pos": "danh từ"
+  },
+  "word_b2e_awareness": {
+    "pos": "danh từ"
+  },
+  "word_b2e_solidarity_social": {
+    "pos": "danh từ"
+  },
+  "word_b2e_conflict": {
+    "pos": "danh từ"
+  },
+  "word_b2e_integration_social": {
+    "pos": "danh từ"
+  },
+  "word_b2e_minority": {
+    "pos": "danh từ"
+  },
+  "word_b2e_majority": {
+    "pos": "danh từ"
+  },
+  "word_b2e_gap": {
+    "pos": "danh từ"
+  },
+  "word_b2e_norm_social": {
+    "pos": "danh từ"
+  },
+  "word_b2e_inclusion": {
+    "pos": "danh từ"
+  },
+  "word_b2f_advancement": {
+    "pos": "danh từ"
+  },
+  "word_b2f_raise": {
+    "pos": "danh từ"
+  },
+  "word_b2f_bonus": {
+    "pos": "danh từ"
+  },
+  "word_b2f_appraise": {
+    "pos": "động từ"
+  },
+  "word_b2f_feedback": {
+    "pos": "danh từ"
+  },
+  "word_b2f_recruit": {
+    "pos": "động từ"
+  },
+  "word_b2f_candidate": {
+    "pos": "danh từ"
+  },
+  "word_c1d_ecosystem": {
+    "pos": "danh từ"
+  },
+  "word_c1f_analysis": {
+    "pos": "danh từ"
+  },
+  "word_c1f_variable": {
+    "pos": "danh từ"
+  },
+  "word_c1f_synthesis": {
+    "pos": "danh từ"
+  },
+  "word_c1f_molecule": {
+    "pos": "danh từ"
+  },
+  "word_c1f_organism": {
+    "pos": "danh từ"
+  },
+  "word_c1f_evolution": {
+    "pos": "danh từ"
+  },
+  "word_c1f_radiation": {
+    "pos": "danh từ"
+  },
+  "word_c1f_density": {
+    "pos": "danh từ"
+  },
+  "word_c1f_inference": {
+    "pos": "danh từ"
+  },
+  "word_c1f_replicate": {
+    "pos": "động từ"
+  },
+  "word_c1f_validity": {
+    "pos": "danh từ"
+  },
+  "word_c1f_isolate": {
+    "pos": "động từ"
+  },
+  "word_c1f_simulation": {
+    "pos": "danh từ"
+  },
+  "word_c1f_decompose": {
+    "pos": "động từ"
+  },
+  "word_c1f_microbe": {
+    "pos": "danh từ"
+  },
+  "word_c1f_photosynthesis": {
+    "pos": "danh từ"
+  },
+  "word_c1f_aquatic": {
+    "pos": "tính từ"
+  },
+  "word_c1f_terrestrial": {
+    "pos": "tính từ"
+  },
+  "word_c1f_dormant": {
+    "pos": "tính từ"
+  },
+  "word_c1f_accumulate": {
+    "pos": "động từ"
+  },
+  "word_c1g_acculturation": {
+    "pos": "danh từ"
+  },
+  "word_c1g_ethnicity": {
+    "pos": "danh từ"
+  },
+  "word_c1g_multiculturalism": {
+    "pos": "danh từ"
+  },
+  "word_c1g_cosmopolitan": {
+    "pos": "tính từ"
+  },
+  "word_c1g_ancestral": {
+    "pos": "tính từ"
+  },
+  "word_c1g_vernacular": {
+    "pos": "danh từ"
+  },
+  "word_c1g_dialect": {
+    "pos": "danh từ"
+  },
+  "word_c1g_linguistic": {
+    "pos": "tính từ"
+  },
+  "word_c1g_folklore": {
+    "pos": "danh từ"
+  },
+  "word_c1g_artisan": {
+    "pos": "danh từ"
+  },
+  "word_c1g_craftsmanship": {
+    "pos": "danh từ"
+  },
+  "word_c1g_monument": {
+    "pos": "danh từ"
+  },
+  "word_c1g_artefactual": {
+    "pos": "tính từ"
+  },
+  "word_c1g_antiquity": {
+    "pos": "danh từ"
+  },
+  "word_c1g_aesthetics": {
+    "pos": "danh từ"
+  },
+  "word_c1g_iconography": {
+    "pos": "danh từ"
+  },
+  "word_c1g_symbolism": {
+    "pos": "danh từ"
+  },
+  "word_c1g_repertoire": {
+    "pos": "danh từ"
+  },
+  "word_c1g_renaissance": {
+    "pos": "danh từ"
+  },
+  "word_c1g_canonical": {
+    "pos": "tính từ"
+  },
+  "word_c1g_oeuvre": {
+    "pos": "danh từ"
+  },
+  "word_c1g_provenance": {
+    "pos": "danh từ"
+  },
+  "word_c1g_custodian": {
+    "pos": "danh từ"
+  },
+  "word_c1g_commemorate": {
+    "pos": "động từ"
+  },
+  "word_c1g_secularism": {
+    "pos": "danh từ"
+  },
+  "word_c1g_doctrine": {
+    "pos": "danh từ"
+  },
+  "word_c1g_devout": {
+    "pos": "tính từ"
+  },
+  "word_c1g_pilgrimage": {
+    "pos": "danh từ"
+  },
+  "word_c1g_kinship": {
+    "pos": "danh từ"
+  },
+  "word_c1g_communal": {
+    "pos": "tính từ"
+  },
+  "word_c1i_retention": {
+    "pos": "danh từ"
+  },
+  "word_c1i_benchmark": {
+    "pos": "danh từ"
   }
 };
