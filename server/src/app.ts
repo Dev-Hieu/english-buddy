@@ -262,24 +262,19 @@ export function createApp() {
 
     const prev = db.prepare("SELECT * FROM progress WHERE studentId = ? AND wordId = ?").get(studentId, wordId) as any;
     const now = Date.now();
-    // CHỐNG GIAN LẬN: mastery chỉ TIẾN khi (a) học từ mới lần đầu, hoặc (b) ôn đúng LÚC ĐẾN HẠN.
-    // Trả lời lại sớm (chưa tới hạn) KHÔNG tăng mastery, KHÔNG cộng điểm -> không thể bấm liên tục để cày;
-    // muốn "thuộc hẳn" phải ôn đúng đúng lịch giãn cách nhiều ngày (phản ánh trí nhớ thật).
+    // Tự học (flashcard/lesson/game) là TỰ ĐÁNH GIÁ -> KHÔNG cộng điểm mỗi thẻ (chống gian lận).
+    // Chỉ cập nhật tiến độ/lịch ôn (mastery vẫn theo lịch giãn cách). Điểm đến từ: hoàn thành bộ
+    // flashcard (thưởng nhỏ), làm Test/Làm đề, và streak.
     let row: any;
     if (!prev) {
       const nr = nextReview(0, !!correct, now);
       row = { studentId, wordId, status: nr.status, mastery: nr.mastery, correctCount: correct ? 1 : 0, wrongCount: correct ? 0 : 1, lastReviewedAt: now, nextReviewAt: nr.nextReviewAt };
-      if (correct) awardXpOnce(studentId, "first_learn", wordId, 10);
     } else if (correct && prev.nextReviewAt > now) {
-      // Chưa tới hạn ôn -> chỉ ghi nhận đã xem, KHÔNG tiến mastery, KHÔNG điểm.
+      // Chưa tới hạn ôn -> chỉ ghi nhận đã xem, không tiến mastery.
       row = { studentId, wordId, status: prev.status, mastery: prev.mastery, correctCount: prev.correctCount + 1, wrongCount: prev.wrongCount, lastReviewedAt: now, nextReviewAt: prev.nextReviewAt };
     } else {
       const nr = nextReview(prev.mastery, !!correct, now);
       row = { studentId, wordId, status: nr.status, mastery: nr.mastery, correctCount: prev.correctCount + (correct ? 1 : 0), wrongCount: prev.wrongCount + (correct ? 0 : 1), lastReviewedAt: now, nextReviewAt: nr.nextReviewAt };
-      if (correct) {
-        if (nr.mastery >= 5 && prev.mastery < 5) awardXpOnce(studentId, "mastered", wordId, 20); // thuộc hẳn (sau nhiều lần ôn đúng hạn)
-        else awardXp(studentId, "review", 5, wordId); // ôn đúng từ đến hạn
-      }
     }
     db.prepare(
       `INSERT OR REPLACE INTO progress
@@ -288,6 +283,17 @@ export function createApp() {
     ).run(row);
     bumpStreak(studentId);
     res.json(row);
+  });
+
+  // Thưởng khuyến khích khi HỌC XONG 1 BỘ flashcard — theo số thẻ (trần 20), 1 lần/bộ/ngày (chống cày).
+  app.post("/api/students/:id/deck-complete", requireAuth, (req, res) => {
+    if (!canAccessStudent(req, res, req.params.id)) return;
+    const { deckId, cards } = req.body || {};
+    const n = Math.max(1, Math.min(50, Number(cards) || 0));
+    const bonus = Math.min(20, n); // tỉ lệ theo số thẻ, tối đa 20
+    bumpStreak(req.params.id);
+    awardXpOnce(req.params.id, "deck", `${deckId || "deck"}_${dayStr(new Date())}`, bonus);
+    res.json({ ok: true, bonus });
   });
 
   app.get("/api/students/:id", requireAuth, (req, res) => {

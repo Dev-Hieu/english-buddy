@@ -53,6 +53,7 @@ export function MyWordsPage({ student, onBackHome }: MyWordsPageProps) {
         words={deck}
         onBack={() => setStudying(false)}
         emptyText="Chưa có từ đơn nào để học."
+        deckId="mywords"
       />
     );
   }

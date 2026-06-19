@@ -23,6 +23,7 @@ export function FlashcardPage({ student, topicId, level = "all", onBackHome }: F
       words={words}
       onBack={onBackHome}
       emptyText="Chủ đề này chưa có từ."
+      deckId={`fc_${topicId}_${level}`}
     />
   );
 }

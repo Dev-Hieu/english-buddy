@@ -88,21 +88,29 @@ describe("Hồ sơ bé + hạn mức + cô lập", () => {
   });
 });
 
-describe("Tiến độ + XP", () => {
-  test("trả lời đúng -> mastery>0 và XP tăng", async () => {
+describe("Tiến độ + điểm (flashcard không cộng điểm mỗi thẻ)", () => {
+  test("trả lời -> mastery>0 nhưng KHÔNG cộng XP mỗi thẻ (chống gian lận)", async () => {
     const vocab = await (await get("/api/vocabulary")).json();
     const word = vocab.find((w: any) => w.topicIds.includes("topic_food"));
     expect(word).toBeTruthy();
 
     const before = (await (await get(`/api/students/${studentId}`, t1)).json()).xp ?? 0;
     const ans = await post(`/api/students/${studentId}/answer`, { wordId: word.id, correct: true }, t1);
-    expect((await ans.json()).mastery).toBeGreaterThan(0);
+    expect((await ans.json()).mastery).toBeGreaterThan(0); // tiến độ vẫn ghi nhận
 
     const after = (await (await get(`/api/students/${studentId}`, t1)).json()).xp ?? 0;
-    expect(after).toBe(before + 10);
+    expect(after).toBe(before); // KHÔNG cộng điểm mỗi thẻ
+  });
 
-    const prog = await (await get(`/api/students/${studentId}/progress`, t1)).json();
-    expect(prog.some((p: any) => p.wordId === word.id && p.mastery > 0)).toBe(true);
+  test("học xong 1 bộ flashcard -> cộng điểm khuyến khích (1 lần/bộ/ngày)", async () => {
+    const before = (await (await get(`/api/students/${studentId}`, t1)).json()).xp ?? 0;
+    await post(`/api/students/${studentId}/deck-complete`, { deckId: "fc_topic_food_kids", cards: 8 }, t1);
+    const after = (await (await get(`/api/students/${studentId}`, t1)).json()).xp ?? 0;
+    expect(after).toBe(before + 8); // tỉ lệ theo số thẻ (min 20)
+    // hoàn thành lại cùng bộ trong ngày -> không cộng thêm
+    await post(`/api/students/${studentId}/deck-complete`, { deckId: "fc_topic_food_kids", cards: 8 }, t1);
+    const after2 = (await (await get(`/api/students/${studentId}`, t1)).json()).xp ?? 0;
+    expect(after2).toBe(after);
   });
 });
 
@@ -201,16 +209,15 @@ describe("Chat AI premium", () => {
 });
 
 describe("Chống cày điểm + xếp hạng tuần", () => {
-  test("từ mới +10, trả lời lại KHÔNG +10 nữa (chống cày)", async () => {
+  test("trả lời thẻ KHÔNG cộng điểm dù bấm nhiều lần (chống cày)", async () => {
     const vocab = await (await get("/api/vocabulary")).json();
     const w = vocab.find((x: any) => x.topicIds.includes("topic_technology")) || vocab[800];
     const x0 = (await (await get(`/api/students/${studentId}`, t1)).json()).xp ?? 0;
     await post(`/api/students/${studentId}/answer`, { wordId: w.id, correct: true }, t1);
-    const x1 = (await (await get(`/api/students/${studentId}`, t1)).json()).xp ?? 0;
     await post(`/api/students/${studentId}/answer`, { wordId: w.id, correct: true }, t1);
-    const x2 = (await (await get(`/api/students/${studentId}`, t1)).json()).xp ?? 0;
-    expect(x1 - x0).toBe(10); // học từ mới lần đầu
-    expect(x2 - x1).toBeLessThan(10); // luyện lại chỉ +1, không cày được
+    await post(`/api/students/${studentId}/answer`, { wordId: w.id, correct: true }, t1);
+    const x1 = (await (await get(`/api/students/${studentId}`, t1)).json()).xp ?? 0;
+    expect(x1).toBe(x0); // bấm 3 lần vẫn 0 điểm
   });
 
   test("ôn lại SỚM không tăng mastery (phải đúng lịch giãn cách)", async () => {
