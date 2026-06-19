@@ -171,7 +171,7 @@ export function App() {
       content = <GrammarListPage student={student} onBackHome={() => navigate("home")} onPick={(id) => navigate("grammar-lesson", id)} />;
       break;
     case "grammar-lesson":
-      content = <GrammarRunnerPage topicId={route.topicId} onBackHome={() => navigate("grammar")} />;
+      content = <GrammarRunnerPage topicId={route.topicId} studentId={student.id} onBackHome={() => navigate("grammar")} />;
       break;
     case "exam":
       content = <ExamPage student={student} level={student.level} onBackHome={() => navigate("home")} />;

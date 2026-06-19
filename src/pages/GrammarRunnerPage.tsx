@@ -2,6 +2,7 @@ import { ArrowRight, Check, RotateCcw, Sparkles, X } from "lucide-react";
 import { useState } from "react";
 import { GRAMMAR_TOPICS } from "@/data/grammar";
 import { checkGrammar } from "@/utils/grammarCheck";
+import { submitQuiz } from "@/services/quizService";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { SessionHeader } from "@/components/layout/SessionHeader";
@@ -9,10 +10,11 @@ import { cn } from "@/components/ui/cn";
 
 interface GrammarRunnerPageProps {
   topicId: string;
+  studentId: string;
   onBackHome: () => void;
 }
 
-export function GrammarRunnerPage({ topicId, onBackHome }: GrammarRunnerPageProps) {
+export function GrammarRunnerPage({ topicId, studentId, onBackHome }: GrammarRunnerPageProps) {
   const topic = GRAMMAR_TOPICS.find((t) => t.id === topicId);
   const [phase, setPhase] = useState<"learn" | "quiz" | "done">("learn");
   const [index, setIndex] = useState(0);
@@ -45,7 +47,16 @@ export function GrammarRunnerPage({ topicId, onBackHome }: GrammarRunnerPageProp
   };
 
   const next = () => {
-    if (index + 1 >= topic.exercises.length) { setPhase("done"); return; }
+    if (index + 1 >= topic.exercises.length) {
+      setPhase("done");
+      // Thưởng XP theo số câu đúng (+5/câu) — tích hợp gamification như Test/Làm đề.
+      submitQuiz({
+        studentId, topicId: `grammar_${topic.id}`, score: Math.round((score / topic.exercises.length) * 100),
+        totalQuestions: topic.exercises.length, correctAnswers: score,
+        wrongAnswers: topic.exercises.length - score, wrongWordIds: [], durationSeconds: 0, createdAt: Date.now(),
+      }).catch(() => {});
+      return;
+    }
     setIndex((i) => i + 1);
     resetQ();
   };
