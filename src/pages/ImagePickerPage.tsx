@@ -26,7 +26,7 @@ export function ImagePickerPage({ onBackHome }: ImagePickerPageProps) {
   const [searchPage, setSearchPage] = useState(1);
   const [cands, setCands] = useState<ImageResult[] | null>(null);
   const [saving, setSaving] = useState("");
-  const [cols, setCols] = useState(3); // cỡ lưới ảnh trong modal
+  const [cols, setCols] = useState(6); // cỡ lưới ảnh trong modal (mặc định 6/hàng)
 
   const imgOf = (w: VocabularyWord) => overrides[w.id] ?? w.imageUrl;
 
@@ -48,9 +48,9 @@ export function ImagePickerPage({ onBackHome }: ImagePickerPageProps) {
 
   const doSearch = async (query: string, pg: number) => {
     setCands(null);
-    setCands(await getWordImages(query.trim() || "object", 30, pg).catch(() => [])); // nhiều ảnh hơn để chọn đa dạng
+    setCands(await getWordImages(query.trim() || "object", 36, pg).catch(() => [])); // nhiều ảnh hơn để chọn đa dạng
   };
-  const COLS: Record<number, string> = { 2: "grid-cols-2", 3: "grid-cols-3", 4: "grid-cols-4" };
+  const COLS: Record<number, string> = { 2: "grid-cols-2", 3: "grid-cols-3", 4: "grid-cols-4", 6: "grid-cols-6" };
   const openModal = (w: VocabularyWord) => { setActive(w); setSearchQ(w.word); setSearchPage(1); void doSearch(w.word, 1); };
   const choose = async (url: string) => {
     if (!active) return;
@@ -149,7 +149,7 @@ export function ImagePickerPage({ onBackHome }: ImagePickerPageProps) {
                 <p className="text-xs font-semibold text-muted-foreground">💡 Đổi từ khoá nếu ảnh chưa hợp (vd "ripe banana", "banana fruit", "cartoon banana").</p>
                 <div className="flex shrink-0 items-center gap-1">
                   <span className="text-xs font-bold text-muted-foreground">Lưới:</span>
-                  {[2, 3, 4].map((c) => (
+                  {[2, 3, 4, 6].map((c) => (
                     <button key={c} type="button" onClick={() => setCols(c)}
                       className={cn("h-7 w-7 rounded-lg text-xs font-extrabold", cols === c ? "bg-primary text-primary-foreground" : "bg-muted text-muted-foreground")}>{c}</button>
                   ))}
