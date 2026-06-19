@@ -104,3 +104,9 @@ Mở rộng từ "1 gia đình" sang nhiều người dùng:
 - **Đăng nhập:** đã chốt qua D-010 — dùng **1 mật khẩu phụ huynh** (đổi `PARENT_PASSWORD` trong `server/.env`). T-010 (LoginPage) gọi `authService.login(password)`.
 - `M-002`: nội dung seed — Claude đã soạn nháp toàn bộ ~100 từ (chờ anh review chất lượng).
 - **Hosting server:** chọn nơi host (máy ở nhà trên LAN / VPS / Railway…) để 2 bé dùng chung — chờ anh quyết khi deploy.
+
+## D-017 — Điểm số, xếp hạng & sổ cái (đảm bảo quyền lợi các con)
+**Ngày:** 2026-06-20 · **Trạng thái:** ✅ Chốt
+- **Sổ cái `xp_events`** (studentId, type, points, refId, createdAt): mọi điểm cộng đều ghi lại → minh bạch, **kiểm tra/khôi phục/sửa chính xác**. `students.xp` = tổng cộng dồn (tính lại được). Backfill giữ XP cũ (event 'legacy').
+- **Luật điểm "học thật" chống cày:** từ mới +10 (1 lần/từ), thuộc hẳn +20 (1 lần/từ), ôn đúng hạn +5, luyện lại +1; test 3đ/câu đúng (1 lần/chủ đề/ngày, trần 50); mốc streak 3/7/14/30 ngày.
+- **Xếp hạng:** mặc định **điểm TUẦN** (reset thứ Hai) + **tách theo cấp độ** (công bằng cho bé nhỏ/bé mới); có tab 'mọi thời gian'.
