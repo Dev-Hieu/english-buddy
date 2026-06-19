@@ -65,7 +65,18 @@
 | T-050 | ParentDashboard (tiến độ từng bé) | Claude | DONE | T-014,T-044 | ✅ DashboardPage: đã học/cần ôn/thành thạo, điểm test gần nhất, từ hay sai theo từng bé |
 | T-051 | Nhân nội dung 9 chủ đề còn lại | Hieu | TODO | T-022 | đủ 100 từ có nghĩa+ảnh+phát âm |
 | T-052 | Deploy: host server (`server/`) + static frontend | Claude | IN_REVIEW | tất cả | Cấu hình đầy đủ (Caddy+systemd+deploy.sh+DEPLOY.md) cho en.vev.vn. Chờ chạy trên VPS |
-| T-053 | Nghiệm thu theo DoD (TECH_SPEC §14) | Both+Hieu | IN_PROGRESS | T-052 | 8/10 đạt; còn #2 (ảnh đang tự fill) & #9 (chờ deploy VPS). **35 test pass**; smoke same-origin PASS; bundle tách (app 89KB) |
+| T-053 | Nghiệm thu theo DoD (TECH_SPEC §14) | Both+Hieu | IN_PROGRESS | T-052 | 8/10 đạt; còn #2 (ảnh đang tự fill) & #9 (chờ deploy VPS). **38 test pass**; smoke same-origin PASS; bundle tách (app 89KB) |
+
+## Sprint 6 — Tính năng nâng cao (roadmap §15)
+
+| ID | Task | Owner | Status | Depends | DoD |
+|----|------|-------|--------|---------|-----|
+| T-060 | Ngữ pháp (GĐ4): trang học + bài tập chọn/điền/sắp xếp | Claude | DONE | — | ✅ 38 chủ đề/186 bài tập (6 cấp); util chấm + 3 unit test; vào từ Home |
+| T-061 | Làm đề (GĐ5): đề theo trình độ + phân tích lỗi | Claude | DONE | T-040 | ✅ ExamPage 20 câu/cấp; từ sai vào hàng đợi ôn; lưu quiz_results |
+| T-062 | Game Nghe & gõ (chính tả) | Claude | DONE | T-043 | ✅ nghe TTS -> gõ lại; ghi recordAnswer |
+| T-063 | PWA: installable + offline app-shell | Claude | DONE | — | ✅ manifest + service worker (không thêm dependency); đăng ký ở production |
+| T-064 | Worker ảnh tự động (Pexels) | Claude | DONE | T-031 | ✅ server/imageWorker + đợt nền; lấp ảnh dần, đồng bộ seedImages.ts |
+| T-065 | Hội thoại AI (GĐ3) | Claude | BLOCKED | LLM API | chờ thầy chọn nhà cung cấp LLM |
 
 ---
 
@@ -91,3 +102,6 @@
 - 2026-06-18 — **Claude tiếp quản UI (D-011):** dựng nốt Login, Flashcard/DeckRunner, Review, Lookup, Test, 3 Games, Dashboard + router/auth trong App. T-010/024/034/041/042/043/044/050 DONE. typecheck/build/test sạch; quiz-results endpoint verified. **App đã đủ vòng học end-to-end** (Claude).
 - 2026-06-19 — Mở rộng nội dung ~3.500 từ/18 chủ đề/6 cấp (CEFR); chọn trình độ end-to-end; đa người dùng + hạn mức; xếp hạng; phát âm wav2vec2; My Words học được; worker ảnh nền tự cập nhật (Claude).
 - 2026-06-19 — **T-053 nghiệm thu (đang làm):** chấm DoD 8/10 (còn #2 ảnh đang tự fill, #9 chưa deploy). Thêm test tự động: 12 test tích hợp API (auth/hạn mức/cô lập/tiến độ/quiz+lọc cấp/My Words/leaderboard) + 8 unit test util lọc cấp; tổng **30 test pass** (Claude).
+- 2026-06-19 — **Deploy (T-052) cấu hình xong:** Caddy (auto HTTPS en.vev.vn) + systemd + `deploy.sh` + `docs/DEPLOY.md`; `.env.production` same-origin; `seed:content` không reset tài khoản. Chờ chạy trên VPS.
+- 2026-06-19 — **Sửa lỗi:** PUT student lưu cả `level`; chuẩn hoá level cũ "beginner"→a1; cache `no-store` (sửa "cập nhật trả về như cũ"); speech-eval warm-up model (sửa cold-start "chưa chấm được"); dedupe 660 từ trùng (còn 2841 unique).
+- 2026-06-19 — **Sprint 6 tính năng nâng cao:** T-060 Ngữ pháp (38 chủ đề/186 bài tập), T-061 Làm đề + phân tích lỗi, T-062 game Nghe&gõ, T-063 PWA offline, T-064 worker ảnh. **38 test pass**, mỗi phase test + push riêng (Claude).

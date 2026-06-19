@@ -77,6 +77,29 @@ Mở rộng từ "1 gia đình" sang nhiều người dùng:
 
 ---
 
+## D-013 — Mở rộng nội dung & cá nhân hoá theo cấp (CEFR)
+**Ngày:** 2026-06-19 · **Trạng thái:** ✅ Chốt
+- Từ vựng ~3.500 (dedupe còn 2.841 unique) / 18 chủ đề / 6 cấp **kids→C1** (nhiều agent song song).
+- Mỗi bé chọn **trình độ**; Home/Chọn chủ đề/Học/Chơi/Test/Làm đề lọc theo cấp (util `levelFilter`). Lọc chủ đề theo **từ ở cấp đó**. Chuẩn hoá level cũ "beginner"→a1; guard level lạ→"all".
+
+## D-014 — Ảnh từ vựng: worker nền tự động
+**Ngày:** 2026-06-19 · **Trạng thái:** ✅ Chốt
+- `server/imageWorker` định kỳ lấy Pexels cho từ thiếu ảnh, ghi DB + đồng bộ `seedImages.ts` (merge). `mk()` áp `IMAGE_URLS` cho mọi từ.
+- VPS đặt `IMAGE_WORKER=off`; ảnh sinh ở dev → commit → deploy (tránh xung đột git). Seed giữ ảnh đã có khi nạp lại.
+
+## D-015 — Tính năng nâng cao (roadmap §15)
+**Ngày:** 2026-06-19 · **Trạng thái:** ✅ Chốt
+- **GĐ4 Ngữ pháp** (`src/data/grammar`) + **GĐ5 Làm đề** (phân tích lỗi) + game **Nghe&gõ** + **PWA offline**.
+- **GĐ3 Hội thoại AI** hoãn — cần LLM API ngoài, chờ thầy chọn nhà cung cấp.
+
+## D-016 — Deploy production (VPS en.vev.vn qua GitHub)
+**Ngày:** 2026-06-19 · **Trạng thái:** 🔜 Sẵn sàng (chờ chạy trên VPS)
+- **Caddy** auto HTTPS, proxy `/api`→8787, `/pronounce`→8788, phục vụ `dist`; client build **same-origin**. systemd cho API + speech-eval.
+- Cập nhật bằng `deploy.sh` (pull→build→`seed:content` không reset tài khoản→restart). API `Cache-Control: no-store`; speech-eval warm-up model.
+- ⚠️ Token GitHub từng lộ — cần thu hồi, dùng SSH deploy key (DEPLOY.md §0).
+
+---
+
 ## Đang chờ chốt
 - **Đăng nhập:** đã chốt qua D-010 — dùng **1 mật khẩu phụ huynh** (đổi `PARENT_PASSWORD` trong `server/.env`). T-010 (LoginPage) gọi `authService.login(password)`.
 - `M-002`: nội dung seed — Claude đã soạn nháp toàn bộ ~100 từ (chờ anh review chất lượng).

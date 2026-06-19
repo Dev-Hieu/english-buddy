@@ -317,7 +317,9 @@ Thứ tự sprint: xem [BACKLOG.md](./BACKLOG.md).
 ---
 
 ## 15. Roadmap sau MVP
-- **GĐ2 Luyện phát âm:** ghi âm, nhận dạng từ bé đọc, chấm cơ bản.
-- **GĐ3 Hội thoại AI:** chatbot theo tình huống, sửa lỗi câu.
-- **GĐ4 Ngữ pháp:** bài học ngắn, bài tập chọn/điền/sắp xếp.
-- **GĐ5 Làm đề:** đề theo trình độ/lớp, phân tích lỗi sai.
+- **GĐ2 Luyện phát âm:** ✅ DONE — ghi âm + chấm IPA từng âm (wav2vec2 tự host, warm-up khi khởi động).
+- **GĐ3 Hội thoại AI:** ⏳ TODO — chatbot theo tình huống, sửa lỗi câu (cần LLM API ngoài).
+- **GĐ4 Ngữ pháp:** ✅ DONE — 38 chủ đề/186 bài tập (kids→C1), 3 dạng chọn/điền/sắp xếp, chấm + giải thích VN.
+- **GĐ5 Làm đề:** ✅ DONE — đề 20 câu theo trình độ + phân tích lỗi sai, từ sai vào hàng đợi ôn.
+
+**Đã thêm ngoài roadmap:** đa người dùng + hạn mức, xếp hạng XP, chọn trình độ end-to-end, game Nghe&gõ (chính tả), PWA cài được/offline, worker ảnh tự động, ~3500 từ/18 chủ đề/6 cấp.
