@@ -1,6 +1,6 @@
-import { Check, Crown, Image as ImageIcon, Loader2, Shield } from "lucide-react";
+import { Check, Crown, Image as ImageIcon, Loader2, RotateCcw, Shield } from "lucide-react";
 import { useEffect, useState } from "react";
-import { listUsers, setImageEditor, setPremium, setStudentLimit, type AdminUser } from "@/services/studentService";
+import { listUsers, resetScores, setImageEditor, setPremium, setStudentLimit, type AdminUser } from "@/services/studentService";
 import { cn } from "@/components/ui/cn";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -37,6 +37,14 @@ export function AdminPage({ onBack, onOpenPicker }: { onBack: () => void; onOpen
     await setImageEditor(u.id, !!next).catch(() => {});
   };
 
+  const [resetting, setResetting] = useState(false);
+  const doReset = async () => {
+    if (!confirm("Reset điểm (XP) và streak của TẤT CẢ học sinh về 0 để bắt đầu cuộc đua mới? Tiến độ học (từ đã thuộc) vẫn giữ. Không hoàn tác được.")) return;
+    setResetting(true);
+    try { const r = await resetScores(); alert("Đã reset " + r.students + " học sinh. Cuộc đua mới bắt đầu!"); }
+    catch { alert("Reset lỗi."); } finally { setResetting(false); }
+  };
+
   return (
     <main className="mx-auto w-full max-w-2xl px-4">
       <SessionHeader title="Quản trị người dùng" onClose={onBack} />
@@ -52,6 +60,21 @@ export function AdminPage({ onBack, onOpenPicker }: { onBack: () => void; onOpen
         <span className="flex-1">
           <span className="block font-extrabold">Chỉnh ảnh từ vựng</span>
           <span className="block text-sm font-semibold text-muted-foreground">Tìm & chọn ảnh phù hợp cho từng từ</span>
+        </span>
+      </button>
+
+      <button
+        type="button"
+        onClick={doReset}
+        disabled={resetting}
+        className="mb-4 flex w-full items-center gap-3 rounded-3xl border-2 border-accent/40 bg-accent/10 p-4 text-left shadow-card transition-transform active:scale-[0.99]"
+      >
+        <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-accent/20 text-accent">
+          {resetting ? <Loader2 className="h-5 w-5 animate-spin" /> : <RotateCcw className="h-5 w-5" />}
+        </span>
+        <span className="flex-1">
+          <span className="block font-extrabold">Reset điểm & streak (cuộc đua mới)</span>
+          <span className="block text-sm font-semibold text-muted-foreground">Đưa XP + streak mọi học sinh về 0; giữ tiến độ học</span>
         </span>
       </button>
 

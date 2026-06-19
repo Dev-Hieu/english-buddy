@@ -127,6 +127,14 @@ export function createApp() {
     res.json(rows);
   });
 
+  // Admin reset toàn bộ điểm (xp) + streak của mọi học sinh để bắt đầu cuộc đua mới.
+  // KHÔNG xoá tiến độ học (progress) — chỉ xoá điểm/sổ cái/streak.
+  app.post("/api/admin/reset-scores", requireAdmin, (_req, res) => {
+    db.exec("DELETE FROM xp_events");
+    const r = db.prepare("UPDATE students SET xp = 0, streak = 0, lastActiveDate = NULL").run();
+    res.json({ ok: true, students: r.changes });
+  });
+
   // Admin đặt hạn mức số bé và/hoặc cấp premium (chat AI) cho 1 phụ huynh.
   app.put("/api/admin/users/:id", requireAdmin, (req, res) => {
     const body = req.body || {};
