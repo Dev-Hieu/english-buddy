@@ -75,8 +75,9 @@ export function ConversationPage({ student, onBackHome }: ConversationPageProps)
   const send = async () => {
     const text = input.trim();
     if (!text || loading || !scenario) return;
+    setInput(""); // xoá ô nhập NGAY để gõ đoạn tiếp theo
     const next: ChatMessage[] = [...messages, { role: "user", content: text }];
-    setMessages(next); setInput(""); setLoading(true); setError("");
+    setMessages(next); setLoading(true); setError("");
     try {
       const { reply } = await sendChat(next, student.level, scenario.prompt);
       setMessages((m) => [...m, { role: "assistant", content: reply }]);
