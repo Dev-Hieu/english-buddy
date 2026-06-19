@@ -33,10 +33,13 @@
     .btn-filter:hover { border-color: #1cb0a8; }
     .btn-filter.active { background: #fef3c7; border-color: #f59e0b; color: #92400e; }
 
-    /* ── Grid ── */
-    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; padding: 20px 24px; }
-    @media (max-width: 900px) { .grid { grid-template-columns: repeat(2, 1fr); } }
-    @media (max-width: 520px) { .grid { grid-template-columns: 1fr; gap: 12px; padding: 12px; } }
+    /* ── Grid ── (số cột đặt qua JS, mặc định 6) */
+    .grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 14px; padding: 16px 24px; }
+    @media (max-width: 1100px) { .grid { grid-template-columns: repeat(4, 1fr); } }
+    @media (max-width: 760px) { .grid { grid-template-columns: repeat(2, 1fr); gap: 12px; padding: 12px; } }
+    .colsel { display: inline-flex; gap: 4px; align-items: center; }
+    .colsel button { width: 30px; height: 30px; border-radius: 8px; border: 0; font-weight: 800; background: #eef0f3; color: #6b7280; cursor: pointer; }
+    .colsel button.active { background: #1cb0a8; color: #fff; }
 
     /* ── Card ── */
     .card { background: #fff; border: 2px solid #e8ebf0; border-radius: 16px; overflow: hidden; transition: border-color .15s, box-shadow .15s; }
@@ -75,7 +78,7 @@
     .panel .psub { color: #6b7280; font-size: 13px; }
     .panel .btn-close { padding: 8px 14px; border-radius: 10px; border: 2px solid #e2e5ec; background: #fff; font-size: 13px; font-weight: 800; cursor: pointer; }
     .panel .btn-close:hover { border-color: #ef4444; color: #ef4444; }
-    .mgrid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; min-height: 120px; }
+    .mgrid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px; min-height: 120px; }
     .mgrid .img-cell { position: relative; border-radius: 12px; overflow: hidden; cursor: pointer; aspect-ratio: 4/3; border: 3px solid transparent; transition: all .15s; }
     .mgrid .img-cell:hover { border-color: #1cb0a8; transform: scale(1.03); }
     .mgrid .img-cell:hover .check { opacity: 1; }
@@ -103,6 +106,7 @@
       <select id="topicFilter"><option value="">Tất cả chủ đề</option></select>
       <button class="btn-filter" id="missingBtn">📷 Chỉ thiếu ảnh</button>
       <div class="chip-row" id="levelChips"></div>
+      <span class="colsel" id="colSel" title="Số cột"></span>
     </div>
   </div>
 
@@ -121,6 +125,11 @@
           <div class="psub" id="mSub"></div>
         </div>
         <button class="btn-close" id="mClose">✕ Đóng</button>
+      </div>
+      <div class="urlrow" style="border:0;padding-bottom:0">
+        <input id="mQuery" placeholder="🔎 Đổi từ khoá để tìm ảnh khác (vd: ripe banana)..." />
+        <button class="btn btn-primary" id="mSearchBtn">Tìm</button>
+        <span class="colsel" id="mColSel" title="Số cột"></span>
       </div>
       <div class="mgrid" id="mGrid"></div>
       <div class="mnav">
@@ -200,7 +209,28 @@
         applyFilter();
       };
 
+      // Bộ chọn số cột (2..6) cho lưới từ và lưới ảnh trong modal
+      setupColSel("colSel", 6, (n) => { document.getElementById("grid").style.gridTemplateColumns = "repeat(" + n + ", 1fr)"; });
+      setupColSel("mColSel", 6, (n) => { document.getElementById("mGrid").style.gridTemplateColumns = "repeat(" + n + ", 1fr)"; });
+
+      // Tìm ảnh theo từ khoá khác
+      document.getElementById("mSearchBtn").onclick = () => loadModalPage(1);
+      document.getElementById("mQuery").addEventListener("keydown", (e) => { if (e.key === "Enter") { e.preventDefault(); loadModalPage(1); } });
+
       applyFilter();
+    }
+
+    // Tạo nút chọn số cột 2..6 (không áp inline lúc đầu để giữ responsive; click mới áp).
+    function setupColSel(elId, def, apply) {
+      const host = document.getElementById(elId);
+      host.innerHTML = "";
+      [2, 3, 4, 5, 6].forEach(n => {
+        const b = document.createElement("button");
+        b.textContent = n;
+        b.className = n === def ? "active" : "";
+        b.onclick = () => { host.querySelectorAll("button").forEach(x => x.classList.toggle("active", x === b)); apply(n); };
+        host.appendChild(b);
+      });
     }
 
     // ── Filter + render ──
@@ -288,6 +318,7 @@
       document.getElementById("mTitle").textContent = w.word + " — " + w.meaning_vi;
       document.getElementById("mSub").textContent = "Chọn ảnh phù hợp từ Pexels hoặc dán URL";
       document.getElementById("mUrl").value = "";
+      document.getElementById("mQuery").value = w.word;
       document.getElementById("overlay").classList.add("open");
       document.body.style.overflow = "hidden";
       loadModalPage(1);
@@ -302,11 +333,12 @@
       const grid = document.getElementById("mGrid");
       grid.innerHTML = '<div class="loading">Đang tải ảnh…</div>';
       try {
-        const list = await (await fetch(API + "/api/image?count=28&page=" + p + "&query=" + encodeURIComponent(cur.word))).json();
+        const query = (document.getElementById("mQuery").value || "").trim() || cur.word;
+        const list = await (await fetch(API + "/api/image?count=30&page=" + p + "&query=" + encodeURIComponent(query))).json();
         mPage = p;
         grid.innerHTML = "";
         if (!list || list.length === 0) {
-          grid.innerHTML = '<div class="empty">Không tìm thấy ảnh cho "' + cur.word + '"</div>';
+          grid.innerHTML = '<div class="empty">Không tìm thấy ảnh cho "' + query + '"</div>';
         } else {
           list.forEach(im => {
             const cell = document.createElement("div");
@@ -318,18 +350,26 @@
         }
         document.getElementById("mPage").textContent = "Trang " + p;
         document.getElementById("mPrev").disabled = p <= 1;
-        document.getElementById("mNext").disabled = !list || list.length < 28;
+        document.getElementById("mNext").disabled = !list || list.length < 30;
       } catch (e) {
         grid.innerHTML = '<div class="empty">Lỗi tải ảnh. Thử lại sau.</div>';
       }
     }
 
     async function pick(url) {
-      await fetch(API + "/api/image-pick", {
+      // image-pick yêu cầu admin -> gửi token đã lưu khi đăng nhập app (cùng origin).
+      const token = localStorage.getItem("eb_token") || "";
+      const res = await fetch(API + "/api/image-pick", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: { "Content-Type": "application/json", ...(token ? { Authorization: "Bearer " + token } : {}) },
         body: JSON.stringify({ wordId: cur.id, url })
       });
+      if (!res.ok) {
+        alert(res.status === 403 || res.status === 401
+          ? "Cần đăng nhập bằng tài khoản ADMIN trong app (cùng trình duyệt) rồi mở lại trang này."
+          : "Lưu ảnh lỗi (" + res.status + ").");
+        return;
+      }
       cur.imageUrl = url;
       // Update card in-place
       const wrap = curCardEl.querySelector(".img-wrap");
