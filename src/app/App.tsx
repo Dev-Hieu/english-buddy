@@ -179,7 +179,7 @@ export function App() {
   const studiedWordIds = progress.filter((p) => p.mastery > 0).map((p) => p.wordId);
   const todayStr = new Date().toDateString();
   const learnedToday = progress.filter((p) => p.lastReviewedAt && new Date(p.lastReviewedAt).toDateString() === todayStr).length;
-  const reviewDue = progress.filter((p) => p.mastery > 0 && p.nextReviewAt && p.nextReviewAt <= Date.now()).length;
+  const reviewDue = progress.filter((p) => (p as any).status === "relearn").length; // kho Cần ôn
   const pendingCount = progress.filter((p) => (p as any).status === "pending_test").length;
   const dueTestCount = progress.filter((p) => (p as any).status === "scored" && p.nextReviewAt && p.nextReviewAt <= Date.now()).length;
   const openSkillTest = (mode: "new" | "review") => setRoute({ view: "skilltest", topicId: route.topicId, level: route.level, mode });

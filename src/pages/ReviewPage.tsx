@@ -2,7 +2,7 @@ import { Loader2 } from "lucide-react";
 import { useEffect, useState } from "react";
 import { SEED_VOCABULARY } from "@/data/seedVocabulary";
 import type { Student, VocabularyWord } from "@/types";
-import { getDueReviews } from "@/services/progressService";
+import { getRelearn } from "@/services/skillTestService";
 import { DeckRunner } from "@/components/vocabulary/DeckRunner";
 
 interface ReviewPageProps {
@@ -15,10 +15,10 @@ export function ReviewPage({ student, onBackHome }: ReviewPageProps) {
 
   useEffect(() => {
     let alive = true;
-    getDueReviews(student.id, Date.now())
-      .then((rows) => {
+    getRelearn(student.id)
+      .then(({ words: ids }) => {
         const byId = new Map(SEED_VOCABULARY.map((w) => [w.id, w]));
-        const due = rows.map((r) => byId.get(r.wordId)).filter((w): w is VocabularyWord => !!w);
+        const due = ids.map((id) => byId.get(id)).filter((w): w is VocabularyWord => !!w);
         if (alive) setWords(due);
       })
       .catch(() => alive && setWords([]));
@@ -37,11 +37,11 @@ export function ReviewPage({ student, onBackHome }: ReviewPageProps) {
 
   return (
     <DeckRunner
-      title="Ôn tập hôm nay"
+      title="Cần ôn"
       studentId={student.id}
       words={words}
       onBack={onBackHome}
-      emptyText="Tuyệt vời! Hôm nay không có từ nào cần ôn. Học thêm từ mới nhé."
+      emptyText="Tuyệt vời! Không có từ nào cần ôn. Học thêm từ mới nhé."
     />
   );
 }

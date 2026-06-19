@@ -207,8 +207,8 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
             <RotateCcw className="h-5 w-5" />
           </span>
           <span className="flex-1 text-left">
-            <span className="block font-extrabold">Cần ôn hôm nay</span>
-            <span className="block text-sm font-semibold text-muted-foreground">{reviewDue} từ đã đến hạn ôn tập</span>
+            <span className="block font-extrabold">Cần ôn</span>
+            <span className="block text-sm font-semibold text-muted-foreground">{reviewDue} từ cần học lại để thi qua</span>
           </span>
           <ChevronRight className="h-5 w-5 text-accent" />
         </button>
