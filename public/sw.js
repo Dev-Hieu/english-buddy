@@ -1,7 +1,7 @@
 // Service worker tối giản cho English Buddy (PWA installable + offline app-shell).
 // Chiến lược: API/pronounce -> network (không cache); điều hướng -> network-first (fallback index đã cache);
 // tài nguyên cùng origin (JS/CSS/ảnh hashed) -> cache-first.
-const CACHE = "eb-cache-v1";
+const CACHE = "eb-cache-v2";
 const APP_SHELL = ["/", "/index.html", "/manifest.webmanifest", "/favicon.svg"];
 
 self.addEventListener("install", (e) => {
@@ -20,7 +20,8 @@ self.addEventListener("fetch", (e) => {
   if (req.method !== "GET") return;
   const url = new URL(req.url);
   if (url.origin !== self.location.origin) return; // bỏ qua cross-origin (fonts, ảnh Pexels...)
-  if (url.pathname.startsWith("/api") || url.pathname.startsWith("/pronounce")) return; // luôn lấy mạng
+  // Luôn lấy từ server (không cache, không can thiệp): API, chấm phát âm, trang chỉnh ảnh.
+  if (url.pathname.startsWith("/api") || url.pathname.startsWith("/pronounce") || url.pathname.startsWith("/picker")) return;
 
   // Điều hướng (mở trang) -> network-first, lỗi mạng thì trả index đã cache (chạy offline).
   if (req.mode === "navigate") {
