@@ -6569,9 +6569,7 @@ export const VOCAB_OVERRIDES: Record<string, VocabOverride> = {
     "pos": "tính từ"
   },
   "word_c1h_pedagogue": {
-    "pos": "danh từ",
-    "phonetic": "/ˈped.ə.ɡɒɡ/",
-    "meaning_vi": "nhà sư phạm, người dạy học"
+    "pos": "danh từ"
   },
   "word_c1h_disseminate_knowledge": {
     "pos": "động từ",
@@ -7233,9 +7231,7 @@ export const VOCAB_OVERRIDES: Record<string, VocabOverride> = {
     "pos": "danh từ"
   },
   "word_a1f_chocolate_bar": {
-    "pos": "danh từ",
-    "phonetic": "/ˈtʃɒklət bɑːr/",
-    "meaning_vi": "thanh sô cô la"
+    "pos": "danh từ"
   },
   "word_a1f_lollipop": {
     "pos": "danh từ"
