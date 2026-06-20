@@ -7177,7 +7177,8 @@ export const VOCAB_OVERRIDES: Record<string, VocabOverride> = {
   },
   "word_a1f_honey_food": {
     "pos": "danh từ",
-    "level": "a2"
+    "level": "a2",
+    "meaning_vi": "tảng sáp ong (tổ ong mật)"
   },
   "word_a1f_toast": {
     "pos": "danh từ"
@@ -7207,7 +7208,8 @@ export const VOCAB_OVERRIDES: Record<string, VocabOverride> = {
     "pos": "danh từ"
   },
   "word_a1f_bun": {
-    "pos": "danh từ"
+    "pos": "danh từ",
+    "meaning_vi": "bánh mì tròn nhỏ"
   },
   "word_a1f_biscuit": {
     "pos": "danh từ"
