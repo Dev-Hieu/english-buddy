@@ -517,42 +517,56 @@ export function createApp() {
     res.json({ ok: true, wordId, url: url ?? "" });
   });
 
-  // ── Dịch câu 2 chiều: DeepSeek AI (chính xác) → fallback MyMemory (miễn phí) ──
+  // ── Dịch câu 2 chiều: premium → DeepSeek AI (chính xác), free → MyMemory ──
+  // Hỗ trợ cả có auth (biết premium) lẫn không auth (mặc định free).
   app.get("/api/translate", async (req, res) => {
     const text = String(req.query.text || "").trim();
     const from = String(req.query.from || "en") === "vi" ? "vi" : "en";
     const to = from === "vi" ? "en" : (String(req.query.to || "vi") === "en" ? "en" : "vi");
     if (!text) return res.status(400).json({ error: "thiếu text" });
-    const cacheKey = `ds|${from}|${to}|${text}`;
-    const cached = db.prepare("SELECT translation FROM translation_cache WHERE text = ?").get(cacheKey) as any;
-    if (cached) return res.json({ translation: cached.translation });
 
-    const dsKey = process.env.DEEPSEEK_API_KEY || "";
-    let translation = "";
-
-    // DeepSeek AI — dịch chính xác
-    if (dsKey) {
-      try {
-        const langName = { en: "English", vi: "Vietnamese" };
-        const r = await fetch("https://api.deepseek.com/chat/completions", {
-          method: "POST",
-          headers: { "Content-Type": "application/json", Authorization: `Bearer ${dsKey}` },
-          body: JSON.stringify({
-            model: process.env.DEEPSEEK_MODEL || "deepseek-chat",
-            messages: [
-              { role: "system", content: `You are a translator. Translate from ${langName[from]} to ${langName[to]}. Return ONLY the translation, nothing else. Be accurate and natural.` },
-              { role: "user", content: text },
-            ],
-            temperature: 0.3,
-            max_tokens: 500,
-          }),
-        });
-        const data: any = await r.json();
-        translation = (data?.choices?.[0]?.message?.content || "").trim();
-      } catch { /* fallback below */ }
+    // Xác định premium: parse token nếu có (không bắt buộc đăng nhập)
+    let isPremium = false;
+    const auth = req.headers.authorization?.replace("Bearer ", "") || "";
+    if (auth) {
+      const uid = auth.split(".")[0];
+      const u = db.prepare("SELECT isPremium FROM users WHERE id = ?").get(uid) as any;
+      if (u?.isPremium) isPremium = true;
     }
 
-    // Fallback: MyMemory (miễn phí, kém chính xác hơn)
+    const engine = isPremium ? "ds" : "mm";
+    const cacheKey = `${engine}|${from}|${to}|${text}`;
+    const cached = db.prepare("SELECT translation FROM translation_cache WHERE text = ?").get(cacheKey) as any;
+    if (cached) return res.json({ translation: cached.translation, engine });
+
+    let translation = "";
+
+    if (isPremium) {
+      // DeepSeek AI — dịch chính xác (premium)
+      const dsKey = process.env.DEEPSEEK_API_KEY || "";
+      if (dsKey) {
+        try {
+          const langName: Record<string, string> = { en: "English", vi: "Vietnamese" };
+          const r = await fetch("https://api.deepseek.com/chat/completions", {
+            method: "POST",
+            headers: { "Content-Type": "application/json", Authorization: `Bearer ${dsKey}` },
+            body: JSON.stringify({
+              model: process.env.DEEPSEEK_MODEL || "deepseek-chat",
+              messages: [
+                { role: "system", content: `You are a translator. Translate from ${langName[from]} to ${langName[to]}. Return ONLY the translation, nothing else. Be accurate and natural.` },
+                { role: "user", content: text },
+              ],
+              temperature: 0.3,
+              max_tokens: 500,
+            }),
+          });
+          const data: any = await r.json();
+          translation = (data?.choices?.[0]?.message?.content || "").trim();
+        } catch { /* fallback below */ }
+      }
+    }
+
+    // MyMemory (miễn phí) — dùng cho free hoặc fallback khi DeepSeek lỗi
     if (!translation) {
       try {
         const url = `https://api.mymemory.translated.net/get?q=${encodeURIComponent(text)}&langpair=${from}|${to}`;
@@ -564,7 +578,7 @@ export function createApp() {
 
     if (!translation) return res.status(502).json({ error: "translate proxy lỗi" });
     db.prepare("INSERT OR REPLACE INTO translation_cache (text, translation) VALUES (?, ?)").run(cacheKey, translation);
-    res.json({ translation });
+    res.json({ translation, engine });
   });
 
   // Chế độ chat: AI bật khi server có key VÀ user trả phí (premium). Còn lại -> kịch bản.
