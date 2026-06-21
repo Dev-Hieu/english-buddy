@@ -11,6 +11,10 @@ en.vev.vn {
 	@pron path /pronounce*
 	reverse_proxy @pron 127.0.0.1:8788
 
+	# Dịch vụ đọc từ/câu (Piper TTS) — tùy chọn, bật nếu chạy tts.
+	@tts path /tts*
+	reverse_proxy @tts 127.0.0.1:8789
+
 	# Trang chỉnh/chọn ảnh từ vựng cho phụ huynh (server phục vụ picker.html).
 	@picker path /picker
 	reverse_proxy @picker 127.0.0.1:8787

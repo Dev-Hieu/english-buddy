@@ -3,6 +3,12 @@
 > Mỗi quyết định đã chốt ghi 1 mục. Muốn đổi → mở DECISION mới tham chiếu mục cũ, không sửa lịch sử.
 > Người chốt cuối: **anh Hiếu (phụ huynh)**.
 
+## D-019 — Phát âm tự nhiên: Web Speech (A) + Piper TTS tự host (D)
+**Ngày:** 2026-06-21 · **Trạng thái:** ✅ Chốt
+- **Thứ tự phát âm** (`speechService.speakText`): (1) `audioUrl` người thật nếu có → (2) **Piper TTS** neural tự host qua `/tts` (có cache) → (3) **Web Speech** trình duyệt (đã chọn giọng en tốt nhất + tốc độ 0.92). Dịch vụ TTS tắt → tự fallback, không lỗi.
+- **Dịch vụ `tts/`** (FastAPI + piper-tts, cổng 8789, giọng `en_US-amy-medium`): `GET /tts?text=` trả WAV, cache theo nội dung (lần 2 ~tức thì). Nhẹ (không cần torch). Caddy proxy `/tts*`→8789; vite proxy; sw bỏ qua `/tts`; systemd `english-buddy-tts.service`. Cài: `tts/README.md`.
+- Lý do: giọng đồng đều, tự nhiên mọi thiết bị, không phụ thuộc bên thứ ba, gần như miễn phí về sau nhờ cache.
+
 ---
 
 ## D-001 — Tech stack MVP

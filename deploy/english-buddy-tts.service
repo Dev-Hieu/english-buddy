@@ -1,0 +1,16 @@
+# systemd unit cho dịch vụ TTS (Piper) — đọc từ/câu tiếng Anh tự nhiên.
+# Nhẹ (không cần torch). Cài: xem tts/README.md.
+[Unit]
+Description=English Buddy TTS (FastAPI Piper)
+After=network.target
+
+[Service]
+Type=simple
+User=www-data
+WorkingDirectory=/var/www/english-buddy/tts
+ExecStart=/var/www/english-buddy/tts/.venv/bin/uvicorn app:app --host 127.0.0.1 --port 8789
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
