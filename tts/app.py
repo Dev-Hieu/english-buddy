@@ -1,92 +1,64 @@
-"""Microservice TTS neural tự host bằng Piper — đọc từ/câu tiếng Anh tự nhiên.
+"""Microservice TTS neural — dùng Microsoft Edge TTS (miễn phí, chất lượng cao).
 
 Chạy:  cd tts && .venv/bin/uvicorn app:app --host 0.0.0.0 --port 8789
-Giọng: tải model .onnx (+ .onnx.json) vào tts/voices/ — xem README.
-API:   GET /tts?text=...  -> audio/mp3 (có cache theo nội dung). GET /health.
+API:   GET /tts?text=...&voice=us-female  -> audio/mp3 (có cache). GET /health.
 """
+import asyncio
 import hashlib
 import os
-import subprocess
-import sys
 
+import edge_tts
 from fastapi import FastAPI, Response
 from fastapi.middleware.cors import CORSMiddleware
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 CACHE = os.environ.get("TTS_CACHE", os.path.join(HERE, "cache"))
-PIPER = os.environ.get("PIPER_BIN", os.path.join(os.path.dirname(sys.executable), "piper"))
-FFMPEG = os.environ.get("FFMPEG_BIN", "ffmpeg")
 os.makedirs(CACHE, exist_ok=True)
 
-
-def _v(name):
-    return os.path.join(HERE, "voices", name)
-
-
+# Giọng Edge TTS — tự nhiên, rõ ràng, đọc từ đơn chuẩn
 VOICES = {
-    "us-female": os.environ.get("PIPER_VOICE_US_F", _v("en_US-lessac-high.onnx")),
-    "us-male": os.environ.get("PIPER_VOICE_US_M", _v("en_US-ryan-high.onnx")),
-    "gb-female": os.environ.get("PIPER_VOICE_GB_F", _v("en_GB-cori-high.onnx")),
-    "gb-male": os.environ.get("PIPER_VOICE_GB_M", _v("en_GB-alan-medium.onnx")),
+    "us-female": "en-US-JennyNeural",
+    "us-male": "en-US-AndrewNeural",
+    "gb-female": "en-GB-SoniaNeural",
+    "gb-male": "en-GB-RyanNeural",
 }
 DEFAULT_VOICE = "us-female"
 
-
-def pick_model(voice: str) -> str:
-    m = VOICES.get(voice) or VOICES[DEFAULT_VOICE]
-    if os.path.exists(m):
-        return m
-    region = (voice or "").split("-")[0]
-    same = [v for k, v in VOICES.items() if k.startswith(region) and os.path.exists(v)]
-    return same[0] if same else next((v for v in VOICES.values() if os.path.exists(v)), m)
-
-
-app = FastAPI(title="English Buddy — TTS (Piper)")
+app = FastAPI(title="English Buddy — TTS (Edge)")
 app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["*"], allow_headers=["*"])
 
 
 @app.get("/health")
 def health():
-    return {"ok": True, "voices": {k: os.path.exists(v) for k, v in VOICES.items()}}
+    return {"ok": True, "engine": "edge-tts", "voices": VOICES}
+
+
+async def _synthesize(text: str, voice: str, rate: str, out_path: str):
+    comm = edge_tts.Communicate(text, voice, rate=rate)
+    await comm.save(out_path)
 
 
 @app.get("/tts")
-def tts(text: str, voice: str = DEFAULT_VOICE, ls: float = 1.0):
+async def tts(text: str, voice: str = DEFAULT_VOICE, ls: float = 1.0):
     t = (text or "").strip()[:400]
     if not t:
         return Response(status_code=400)
-    model = pick_model(voice)
-    ls = max(0.6, min(1.6, float(ls)))
-    key = hashlib.sha1(f"v5|{os.path.basename(model)}|{ls}|{t}".encode("utf-8")).hexdigest()
-    mp3_path = os.path.join(CACHE, key + ".mp3")
 
-    if not os.path.exists(mp3_path):
-        wav_path = mp3_path.replace(".mp3", ".wav")
+    edge_voice = VOICES.get(voice, VOICES[DEFAULT_VOICE])
+    # length_scale → Edge rate: ls=1.0 → +0%, ls=1.3 → -20%, ls=0.8 → +15%
+    ls = max(0.6, min(1.6, float(ls)))
+    pct = round((1.0 - ls) * 50)
+    rate = f"{pct:+d}%" if pct != 0 else "+0%"
+
+    key = hashlib.sha1(f"edge|{edge_voice}|{rate}|{t}".encode("utf-8")).hexdigest()
+    path = os.path.join(CACHE, key + ".mp3")
+
+    if not os.path.exists(path):
         try:
-            # Piper → WAV 22050Hz
-            subprocess.run(
-                [PIPER, "-m", model, "-f", wav_path, "--length-scale", str(ls)],
-                input=t.encode("utf-8"), check=True,
-                stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
-            )
-            # WAV → MP3 44100Hz (tương thích mobile, nhẹ hơn, không rè)
-            subprocess.run(
-                [FFMPEG, "-y", "-i", wav_path,
-                 "-ar", "44100",       # resample lên 44.1kHz
-                 "-af", "adelay=100|100,apad=pad_dur=0.1",  # pad 100ms đầu + cuối
-                 "-b:a", "128k",       # bitrate đủ rõ
-                 mp3_path],
-                check=True,
-                stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
-            )
+            await _synthesize(t, edge_voice, rate, path)
         except Exception:
             return Response(status_code=500)
-        finally:
-            try:
-                os.unlink(wav_path)
-            except OSError:
-                pass
 
-    with open(mp3_path, "rb") as f:
+    with open(path, "rb") as f:
         data = f.read()
     return Response(data, media_type="audio/mpeg", headers={"Cache-Control": "public, max-age=86400"})
