@@ -7,6 +7,7 @@ import { LEVEL_LABELS, LEVEL_ORDER, type Level, type Student } from "@/types";
 import { Button } from "@/components/ui/button";
 import { ProgressBar, ProgressRing } from "@/components/ui/progress";
 import { ThemePicker } from "@/components/ui/ThemePicker";
+import { VoicePicker } from "@/components/ui/VoicePicker";
 import { computeBadges, levelOf } from "@/components/ui/badges";
 import { avatarEmoji, topicEmoji } from "@/components/ui/emoji";
 import { cn } from "@/components/ui/cn";
@@ -111,6 +112,7 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
           </div>
         </div>
         <div className="flex items-center gap-2">
+          <VoicePicker />
           <ThemePicker />
           <Button type="button" size="icon" variant="outline" aria-label="Đổi bé" onClick={onChangeStudent}>
             <UserRound className="h-5 w-5" />

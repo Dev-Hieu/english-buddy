@@ -6,7 +6,8 @@
 ## D-019 — Phát âm tự nhiên: Web Speech (A) + Piper TTS tự host (D)
 **Ngày:** 2026-06-21 · **Trạng thái:** ✅ Chốt
 - **Thứ tự phát âm** (`speechService.speakText`): (1) `audioUrl` người thật nếu có → (2) **Piper TTS** neural tự host qua `/tts` (có cache) → (3) **Web Speech** trình duyệt (đã chọn giọng en tốt nhất + tốc độ 0.92). Dịch vụ TTS tắt → tự fallback, không lỗi.
-- **Dịch vụ `tts/`** (FastAPI + piper-tts, cổng 8789, giọng `en_US-amy-medium`): `GET /tts?text=` trả WAV, cache theo nội dung (lần 2 ~tức thì). Nhẹ (không cần torch). Caddy proxy `/tts*`→8789; vite proxy; sw bỏ qua `/tts`; systemd `english-buddy-tts.service`. Cài: `tts/README.md`.
+- **Dịch vụ `tts/`** (FastAPI + piper-tts, cổng 8789): `GET /tts?text=&voice=&ls=` trả WAV, cache theo (giọng+tốc độ+nội dung) (lần 2 ~tức thì). Nhẹ (không cần torch). Caddy proxy `/tts*`→8789; vite proxy; sw bỏ qua `/tts`; systemd `english-buddy-tts.service`. Cài: `tts/README.md`.
+- **Tùy chọn giọng** (`voicePrefs` + `VoicePicker`, lưu localStorage): Vùng **Anh-Mỹ/Anh-Anh** × Giới **Nữ/Nam** × Tốc độ **Chậm/Vừa/Nhanh**. 4 model: `en_US-amy/ryan`, `en_GB-jenny_dioco/alan`. Áp cho cả Piper (`voice`+`ls`) và Web Speech fallback (lang+giọng+rate). Đặt ở Home + Luyện nói.
 - Lý do: giọng đồng đều, tự nhiên mọi thiết bị, không phụ thuộc bên thứ ba, gần như miễn phí về sau nhờ cache.
 
 ---

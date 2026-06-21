@@ -10,6 +10,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { cn } from "@/components/ui/cn";
 import { ProgressRing } from "@/components/ui/progress";
+import { VoicePicker } from "@/components/ui/VoicePicker";
 import { SessionHeader } from "@/components/layout/SessionHeader";
 import { pickWords } from "@/components/games/wordRotation";
 
@@ -93,7 +94,7 @@ export function SpeakingPage({ topicId, onBackHome }: SpeakingPageProps) {
 
   return (
     <main className="mx-auto w-full max-w-xl px-4">
-      <SessionHeader title={`Luyện nói${topic ? " · " + topic.name : ""}`} onClose={onBackHome} progress={Math.round((n / words.length) * 100)} />
+      <SessionHeader title={`Luyện nói${topic ? " · " + topic.name : ""}`} onClose={onBackHome} progress={Math.round((n / words.length) * 100)} right={<VoicePicker />} />
       <p className="mb-3 text-center text-sm font-extrabold text-muted-foreground">Từ {n + 1} / {words.length}</p>
 
       <Card>

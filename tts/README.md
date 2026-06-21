@@ -9,26 +9,27 @@ cd tts
 python3.11 -m venv .venv
 .venv/bin/pip install -r requirements.txt
 
-# Tải 1 giọng tiếng Anh (amy-medium, ~60MB) -> tải cả .onnx và .onnx.json:
-.venv/bin/python -m piper.download_voices en_US-amy-medium --data-dir voices
-#   (nếu lệnh trên không có, tải thủ công 2 file từ:
-#    https://huggingface.co/rhasspy/piper-voices/tree/main/en/en_US/amy/medium
-#    lưu vào tts/voices/en_US-amy-medium.onnx và .onnx.json)
+# Tải 4 giọng: Anh-Mỹ (nữ amy, nam ryan) + Anh-Anh (nữ jenny_dioco, nam alan) — ~60MB/giọng:
+.venv/bin/python -m piper.download_voices \
+  en_US-amy-medium en_US-ryan-medium en_GB-jenny_dioco-medium en_GB-alan-medium --data-dir voices
+#   (nếu lệnh trên không có, tải thủ công .onnx + .onnx.json từ
+#    https://huggingface.co/rhasspy/piper-voices vào tts/voices/)
 
 .venv/bin/uvicorn app:app --host 0.0.0.0 --port 8789
 ```
-Kiểm tra: `curl "localhost:8789/health"` → `{"ok":true,"ready":true}`.
-Thử:     `curl "localhost:8789/tts?text=Good%20morning" -o test.wav`
+Kiểm tra: `curl "localhost:8789/health"` → `{"ok":true,"voices":{"us-female":true,...}}`.
+Thử:     `curl "localhost:8789/tts?text=Good%20morning&voice=gb-male&ls=1.3" -o test.wav`
 
-## Đổi giọng
-Đặt env `PIPER_MODEL=/đường/dẫn/voice.onnx`. Giọng khác: `en_US-lessac-medium`, `en_GB-...`, v.v.
-(Anh-Anh dùng `en_GB-*`.)
+## Tham số /tts
+- `voice`: `us-female` | `us-male` | `gb-female` | `gb-male` (mặc định `us-female`).
+- `ls` (length-scale): `>1` chậm hơn, `<1` nhanh hơn (client gửi 1.3 chậm / 1.0 vừa / 0.82 nhanh).
+- Đổi model cho mỗi giọng qua env: `PIPER_VOICE_US_F/US_M/GB_F/GB_M=/đường/dẫn.onnx`.
 
 ## Triển khai (VPS)
 ```bash
 cd /var/www/english-buddy/tts
 python3.11 -m venv .venv && .venv/bin/pip install -r requirements.txt
-.venv/bin/python -m piper.download_voices en_US-amy-medium --data-dir voices
+.venv/bin/python -m piper.download_voices en_US-amy-medium en_US-ryan-medium en_GB-jenny_dioco-medium en_GB-alan-medium --data-dir voices
 sudo cp ../deploy/english-buddy-tts.service /etc/systemd/system/
 sudo systemctl daemon-reload && sudo systemctl enable --now english-buddy-tts
 ```
