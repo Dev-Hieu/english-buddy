@@ -32,7 +32,7 @@ interface HomePageProps {
   onNavigate: Nav;
 }
 
-// Thẻ điều hướng dạng ô vuông nhỏ gọn (grid 2-3 cột).
+// Thẻ điều hướng dạng ô vuông (grid 2-3 cột).
 function NavTile({ icon: Icon, iconClass, title, onClick }: {
   icon: ComponentType<{ className?: string }>;
   iconClass: string;
@@ -43,12 +43,12 @@ function NavTile({ icon: Icon, iconClass, title, onClick }: {
     <button
       type="button"
       onClick={onClick}
-      className="flex flex-col items-center gap-2 rounded-2xl border border-border/70 bg-card p-3 shadow-card transition-transform active:scale-[0.97]"
+      className="flex flex-col items-center gap-2 rounded-2xl border border-border/70 bg-card p-3.5 shadow-card transition-transform active:scale-[0.97]"
     >
-      <span className={cn("flex h-9 w-9 items-center justify-center rounded-xl", iconClass)}>
-        <Icon className="h-4 w-4" />
+      <span className={cn("flex h-10 w-10 items-center justify-center rounded-xl", iconClass)}>
+        <Icon className="h-5 w-5" />
       </span>
-      <span className="text-xs font-extrabold text-center leading-tight">{title}</span>
+      <span className="text-sm font-extrabold text-center leading-tight">{title}</span>
     </button>
   );
 }
@@ -109,36 +109,36 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
         {/* Hàng 1: thành tích (trái) — tài khoản (phải) */}
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-1.5">
-            <span className="flex items-center gap-0.5 rounded-full bg-white/20 px-1.5 py-0.5 text-[11px] font-extrabold" title="XP"><Star className="h-3 w-3" />{xp}</span>
-            <span className="flex items-center gap-0.5 rounded-full bg-white/20 px-1.5 py-0.5 text-[11px] font-extrabold" title="Streak"><Flame className="h-3 w-3" />{streak}</span>
-            <button type="button" onClick={() => onNavigate("leaderboard")} title="Xếp hạng" className="flex items-center gap-0.5 rounded-full bg-white/25 px-1.5 py-0.5 text-[11px] font-extrabold hover:bg-white/40">
-              <Trophy className="h-3 w-3" />{weekRank ? `#${weekRank}` : "—"}
+            <span className="flex items-center gap-1 rounded-full bg-white/20 px-2 py-0.5 text-sm font-extrabold" title="XP"><Star className="h-4 w-4" />{xp}</span>
+            <span className="flex items-center gap-1 rounded-full bg-white/20 px-2 py-0.5 text-sm font-extrabold" title="Streak"><Flame className="h-4 w-4" />{streak}</span>
+            <button type="button" onClick={() => onNavigate("leaderboard")} title="Xếp hạng" className="flex items-center gap-1 rounded-full bg-white/25 px-2 py-0.5 text-sm font-extrabold hover:bg-white/40">
+              <Trophy className="h-4 w-4" />{weekRank ? `#${weekRank}` : "—"}
             </button>
           </div>
           <div className="flex items-center gap-2">
             <div className="text-right">
-              <p className="text-xs font-black leading-tight">{student.name}</p>
-              <p className="text-[10px] font-bold opacity-75">Lv {level}{levelLabel ? ` · ${levelLabel}` : ""}</p>
+              <p className="text-sm font-black leading-tight">{student.name}</p>
+              <p className="text-xs font-bold opacity-75">Lv {level}{levelLabel ? ` · ${levelLabel}` : ""}</p>
             </div>
-            <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-white/20 text-base">
+            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-white/20 text-xl">
               {avatarEmoji(student.avatar)}
             </div>
           </div>
         </div>
         {/* Hàng 2: mục tiêu hôm nay + tổng vốn từ + nút học */}
-        <div className="mt-2.5 flex items-center gap-3">
-          <ProgressRing value={learnedToday} max={goal} size={52} stroke={6}>
-            <span className="text-base font-black leading-none">{learnedToday}</span>
-            <span className="text-[9px] font-bold opacity-80">/{goal}</span>
+        <div className="mt-3 flex items-center gap-3">
+          <ProgressRing value={learnedToday} max={goal} size={60} stroke={7}>
+            <span className="text-xl font-black leading-none">{learnedToday}</span>
+            <span className="text-xs font-bold opacity-80">/{goal}</span>
           </ProgressRing>
           <div className="flex-1 min-w-0">
-            <p className="text-[13px] font-black leading-tight">
+            <p className="text-base font-black leading-tight">
               {goalReached ? "Hoàn thành rồi! 🎉" : `Học ${goal - learnedToday} từ nữa nào`}
             </p>
-            <p className="text-[11px] font-bold opacity-75">Vốn từ: {learnedTotal} từ đã thuộc</p>
+            <p className="text-sm font-bold opacity-75">Vốn từ: {learnedTotal} từ đã thuộc</p>
           </div>
           <Button type="button" variant="accent" className="shrink-0" onClick={startLearning}>
-            <Play className="h-4 w-4" /> {resumeStarted ? "Học tiếp" : "Bắt đầu"}
+            <Play className="h-5 w-5" /> {resumeStarted ? "Học tiếp" : "Bắt đầu"}
           </Button>
         </div>
       </section>
@@ -170,7 +170,7 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
         </div>
       )}
       {pendingCount > 0 && pendingCount < 10 && (
-        <p className="mt-2 text-center text-xs font-bold text-muted-foreground">
+        <p className="mt-2 text-center text-sm font-bold text-muted-foreground">
           Còn {10 - pendingCount} từ nữa để mở bài thi lấy điểm
         </p>
       )}
@@ -178,12 +178,12 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
       {/* Chủ đề */}
       <section className="mt-4">
         <div className="mb-2 flex items-center justify-between">
-          <h2 className="text-lg font-extrabold">Chủ đề</h2>
-          <button type="button" className="flex items-center text-xs font-bold text-primary" onClick={() => onNavigate("topics")}>
-            Tất cả <ChevronRight className="h-3.5 w-3.5" />
+          <h2 className="text-xl font-extrabold">Chủ đề</h2>
+          <button type="button" className="flex items-center text-sm font-bold text-primary" onClick={() => onNavigate("topics")}>
+            Tất cả <ChevronRight className="h-4 w-4" />
           </button>
         </div>
-        <div className="grid grid-cols-2 gap-2">
+        <div className="grid grid-cols-2 gap-2.5">
           {topicsAtLevel.map((topic) => {
             const words = wordsOf(topic.id);
             const done = words.filter((w) => learned.has(w.id)).length;
@@ -193,17 +193,17 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
                 key={topic.id}
                 type="button"
                 onClick={() => onNavigate("lesson", topic.id, learnLevel)}
-                className="rounded-2xl border border-border/70 bg-card p-3 text-left shadow-card transition-transform active:scale-[0.98]"
+                className="rounded-2xl border border-border/70 bg-card p-3.5 text-left shadow-card transition-transform active:scale-[0.98]"
               >
-                <div className="flex items-center gap-2">
-                  <span className="text-xl">{topicEmoji(topic.id)}</span>
+                <div className="flex items-center gap-2.5">
+                  <span className="text-2xl">{topicEmoji(topic.id)}</span>
                   <div className="flex-1 min-w-0">
-                    <p className="text-sm font-extrabold leading-tight truncate">{topic.name}</p>
-                    <p className="text-xs font-semibold text-muted-foreground truncate">{topic.name_vi}</p>
+                    <p className="text-base font-extrabold leading-tight truncate">{topic.name}</p>
+                    <p className="text-sm font-semibold text-muted-foreground truncate">{topic.name_vi}</p>
                   </div>
-                  <span className="text-[10px] font-extrabold text-muted-foreground shrink-0">{done}/{words.length}</span>
+                  <span className="text-xs font-extrabold text-muted-foreground shrink-0">{done}/{words.length}</span>
                 </div>
-                <ProgressBar value={pct} className="mt-2 h-1.5" />
+                <ProgressBar value={pct} className="mt-2 h-2" />
               </button>
             );
           })}
@@ -212,7 +212,7 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
 
       {/* Thêm */}
       <section className="mt-4 mb-4">
-        <h2 className="mb-2 text-lg font-extrabold">Thêm</h2>
+        <h2 className="mb-2 text-xl font-extrabold">Thêm</h2>
         <div className="grid grid-cols-3 gap-2">
           <NavTile icon={BookOpen} iconClass="bg-primary/15 text-primary" title="Ngữ pháp" onClick={() => onNavigate("grammar")} />
           <NavTile icon={GraduationCap} iconClass="bg-success/15 text-success" title="Làm đề" onClick={() => onNavigate("exam")} />
