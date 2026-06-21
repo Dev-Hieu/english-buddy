@@ -22,6 +22,11 @@ export async function saveLookup(entry: LookupHistory): Promise<void> {
   await apiRequest(`/api/lookup`, { method: "POST", body: entry });
 }
 
+export async function getLookupHistory(studentId: string, type: "word" | "sentence", limit = 8): Promise<{ query: string }[]> {
+  const all = await apiRequest<{ query: string }[]>(`/api/students/${studentId}/lookups`);
+  return all.filter((r) => r.query).slice(0, limit);
+}
+
 export interface SavedWord {
   query: string;
   type: "word" | "sentence";
