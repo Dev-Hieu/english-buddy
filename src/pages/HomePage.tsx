@@ -32,28 +32,23 @@ interface HomePageProps {
   onNavigate: Nav;
 }
 
-// Thẻ điều hướng dạng hàng (dùng lại cho Xếp hạng / My Words / Bảng theo dõi).
-function NavRow({ icon: Icon, iconClass, title, subtitle, onClick }: {
+// Thẻ điều hướng dạng ô vuông nhỏ gọn (grid 2-3 cột).
+function NavTile({ icon: Icon, iconClass, title, onClick }: {
   icon: ComponentType<{ className?: string }>;
   iconClass: string;
   title: string;
-  subtitle: string;
   onClick: () => void;
 }) {
   return (
     <button
       type="button"
       onClick={onClick}
-      className="flex w-full items-center gap-3 rounded-3xl border border-border/70 bg-card p-4 shadow-card transition-transform active:scale-[0.99]"
+      className="flex flex-col items-center gap-2 rounded-2xl border border-border/70 bg-card p-3 shadow-card transition-transform active:scale-[0.97]"
     >
-      <span className={cn("flex h-11 w-11 items-center justify-center rounded-2xl", iconClass)}>
-        <Icon className="h-5 w-5" />
+      <span className={cn("flex h-9 w-9 items-center justify-center rounded-xl", iconClass)}>
+        <Icon className="h-4 w-4" />
       </span>
-      <span className="flex-1 text-left">
-        <span className="block font-extrabold">{title}</span>
-        <span className="block text-sm font-semibold text-muted-foreground">{subtitle}</span>
-      </span>
-      <ChevronRight className="h-5 w-5 text-muted-foreground" />
+      <span className="text-xs font-extrabold text-center leading-tight">{title}</span>
     </button>
   );
 }
@@ -152,73 +147,47 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
         </Button>
       </section>
 
-      {/* Sẵn sàng thi lấy điểm (đủ 10 từ đã thuộc) */}
-      {pendingCount >= 10 ? (
-        <button
-          type="button"
-          onClick={() => onStartSkillTest("new")}
-          className="mt-4 flex w-full items-center gap-3 rounded-3xl border-2 border-success/50 bg-success/10 p-4 shadow-card transition-transform active:scale-[0.99]"
-        >
-          <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-success/20 text-success">
-            <GraduationCap className="h-5 w-5" />
-          </span>
-          <span className="flex-1 text-left">
-            <span className="block font-extrabold">Sẵn sàng thi lấy điểm! 🎯</span>
-            <span className="block text-sm font-semibold text-muted-foreground">{pendingCount} từ đã thuộc — thi để ghi điểm</span>
-          </span>
-          <ChevronRight className="h-5 w-5 text-success" />
-        </button>
-      ) : pendingCount > 0 ? (
-        <p className="mt-4 rounded-3xl border border-border/70 bg-card p-3 text-center text-sm font-bold text-muted-foreground shadow-card">
-          Còn {10 - pendingCount} từ nữa (bấm "Thuộc" khi học) để mở bài thi lấy điểm.
+      {/* Action cards gọn — chỉ hiện khi cần */}
+      {(pendingCount >= 10 || dueTestCount > 0 || reviewDue > 0) && (
+        <div className="mt-3 flex flex-wrap gap-2">
+          {pendingCount >= 10 && (
+            <button type="button" onClick={() => onStartSkillTest("new")}
+              className="flex flex-1 items-center gap-2 rounded-2xl border-2 border-success/50 bg-success/10 px-3 py-2.5 transition-transform active:scale-[0.98]">
+              <GraduationCap className="h-4 w-4 text-success shrink-0" />
+              <span className="text-sm font-extrabold">Thi lấy điểm ({pendingCount})</span>
+            </button>
+          )}
+          {dueTestCount > 0 && (
+            <button type="button" onClick={() => onStartSkillTest("review")}
+              className="flex flex-1 items-center gap-2 rounded-2xl border-2 border-primary/40 bg-primary/10 px-3 py-2.5 transition-transform active:scale-[0.98]">
+              <RotateCcw className="h-4 w-4 text-primary shrink-0" />
+              <span className="text-sm font-extrabold">Thi lại ({dueTestCount})</span>
+            </button>
+          )}
+          {reviewDue > 0 && (
+            <button type="button" onClick={() => onNavigate("review")}
+              className="flex flex-1 items-center gap-2 rounded-2xl border-2 border-accent/40 bg-accent/10 px-3 py-2.5 transition-transform active:scale-[0.98]">
+              <RotateCcw className="h-4 w-4 text-accent shrink-0" />
+              <span className="text-sm font-extrabold">Cần ôn ({reviewDue})</span>
+            </button>
+          )}
+        </div>
+      )}
+      {pendingCount > 0 && pendingCount < 10 && (
+        <p className="mt-2 text-center text-xs font-bold text-muted-foreground">
+          Còn {10 - pendingCount} từ nữa để mở bài thi lấy điểm
         </p>
-      ) : null}
-
-      {/* Đến hạn thi lại (ôn trí nhớ) */}
-      {dueTestCount > 0 ? (
-        <button
-          type="button"
-          onClick={() => onStartSkillTest("review")}
-          className="mt-4 flex w-full items-center gap-3 rounded-3xl border-2 border-primary/40 bg-primary/10 p-4 shadow-card transition-transform active:scale-[0.99]"
-        >
-          <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-primary/20 text-primary">
-            <RotateCcw className="h-5 w-5" />
-          </span>
-          <span className="flex-1 text-left">
-            <span className="block font-extrabold">Thi lại giữ điểm</span>
-            <span className="block text-sm font-semibold text-muted-foreground">{dueTestCount} từ đến hạn ôn — thi lại kẻo quên</span>
-          </span>
-          <ChevronRight className="h-5 w-5 text-primary" />
-        </button>
-      ) : null}
-
-      {/* Cần ôn hôm nay (chỉ hiện khi có từ đến hạn) */}
-      {reviewDue > 0 ? (
-        <button
-          type="button"
-          onClick={() => onNavigate("review")}
-          className="mt-4 flex w-full items-center gap-3 rounded-3xl border-2 border-accent/40 bg-accent/10 p-4 shadow-card transition-transform active:scale-[0.99]"
-        >
-          <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-accent/20 text-accent">
-            <RotateCcw className="h-5 w-5" />
-          </span>
-          <span className="flex-1 text-left">
-            <span className="block font-extrabold">Cần ôn</span>
-            <span className="block text-sm font-semibold text-muted-foreground">{reviewDue} từ cần học lại để thi qua</span>
-          </span>
-          <ChevronRight className="h-5 w-5 text-accent" />
-        </button>
-      ) : null}
+      )}
 
       {/* Chủ đề */}
-      <section className="mt-6">
-        <div className="mb-3 flex items-center justify-between">
-          <h2 className="text-xl font-extrabold">Chủ đề</h2>
-          <button type="button" className="flex items-center text-sm font-bold text-primary" onClick={() => onNavigate("topics")}>
-            Tất cả <ChevronRight className="h-4 w-4" />
+      <section className="mt-4">
+        <div className="mb-2 flex items-center justify-between">
+          <h2 className="text-lg font-extrabold">Chủ đề</h2>
+          <button type="button" className="flex items-center text-xs font-bold text-primary" onClick={() => onNavigate("topics")}>
+            Tất cả <ChevronRight className="h-3.5 w-3.5" />
           </button>
         </div>
-        <div className="grid grid-cols-2 gap-3">
+        <div className="grid grid-cols-2 gap-2">
           {topicsAtLevel.map((topic) => {
             const words = wordsOf(topic.id);
             const done = words.filter((w) => learned.has(w.id)).length;
@@ -228,44 +197,48 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
                 key={topic.id}
                 type="button"
                 onClick={() => onNavigate("lesson", topic.id, learnLevel)}
-                className="rounded-3xl border border-border/70 bg-card p-4 text-left shadow-card transition-transform active:scale-[0.98]"
+                className="rounded-2xl border border-border/70 bg-card p-3 text-left shadow-card transition-transform active:scale-[0.98]"
               >
-                <div className="flex items-center justify-between">
-                  <span className="text-3xl">{topicEmoji(topic.id)}</span>
-                  <span className="rounded-full bg-secondary px-2 py-0.5 text-xs font-extrabold text-secondary-foreground">{words.length} từ</span>
+                <div className="flex items-center gap-2">
+                  <span className="text-xl">{topicEmoji(topic.id)}</span>
+                  <div className="flex-1 min-w-0">
+                    <p className="text-sm font-extrabold leading-tight truncate">{topic.name}</p>
+                    <p className="text-xs font-semibold text-muted-foreground truncate">{topic.name_vi}</p>
+                  </div>
+                  <span className="text-[10px] font-extrabold text-muted-foreground shrink-0">{done}/{words.length}</span>
                 </div>
-                <p className="mt-2 font-extrabold leading-tight">{topic.name}</p>
-                <p className="text-sm font-semibold text-muted-foreground">{topic.name_vi}</p>
-                <ProgressBar value={pct} className="mt-3 h-2" />
-                <p className="mt-1 text-xs font-bold text-muted-foreground">Đã học {done}/{words.length}</p>
+                <ProgressBar value={pct} className="mt-2 h-1.5" />
               </button>
             );
           })}
         </div>
       </section>
 
-      {/* Huy hiệu đã đạt (thu gọn) */}
+      {/* Huy hiệu */}
       {earnedBadges.length ? (
-        <section className="mt-6">
-          <h2 className="mb-2 text-xl font-extrabold">Huy hiệu ({earnedBadges.length})</h2>
-          <div className="flex flex-wrap gap-2">
+        <section className="mt-4">
+          <h2 className="mb-1.5 text-lg font-extrabold">Huy hiệu ({earnedBadges.length})</h2>
+          <div className="flex flex-wrap gap-1.5">
             {earnedBadges.map((b) => (
-              <span key={b.id} title={b.label} className="flex items-center gap-1 rounded-full bg-accent/15 px-3 py-1.5 text-sm font-extrabold text-accent">
-                <span>{b.emoji}</span> {b.label}
+              <span key={b.id} title={b.label} className="flex items-center gap-1 rounded-full bg-accent/15 px-2.5 py-1 text-xs font-extrabold text-accent">
+                {b.emoji} {b.label}
               </span>
             ))}
           </div>
         </section>
       ) : null}
 
-      {/* Ngữ pháp + Xếp hạng + My Words + Báo cáo phụ huynh */}
-      <section className="mt-6 space-y-3">
-        <NavRow icon={BookOpen} iconClass="bg-primary/15 text-primary" title="Ngữ pháp" subtitle="Bài học ngắn + bài tập theo cấp" onClick={() => onNavigate("grammar")} />
-        <NavRow icon={GraduationCap} iconClass="bg-success/15 text-success" title="Làm đề" subtitle="Đề 20 câu theo trình độ + phân tích lỗi" onClick={() => onNavigate("exam")} />
-        <NavRow icon={MessageCircle} iconClass="bg-accent/15 text-accent" title="Luyện hội thoại" subtitle="Trò chuyện theo tình huống (AI cho bản nâng cấp)" onClick={() => onNavigate("conversation")} />
-        <NavRow icon={Trophy} iconClass="bg-accent/15 text-accent" title="Bảng xếp hạng" subtitle="Thi đua điểm XP với các bạn" onClick={() => onNavigate("leaderboard")} />
-        <NavRow icon={BookMarked} iconClass="bg-secondary text-secondary-foreground" title="My Words" subtitle="Từ con đã lưu khi tra" onClick={() => onNavigate("mywords")} />
-        <NavRow icon={BarChart3} iconClass="bg-secondary text-secondary-foreground" title="Bảng theo dõi" subtitle="Tiến độ của các bé (phụ huynh)" onClick={() => onNavigate("dashboard")} />
+      {/* Thêm */}
+      <section className="mt-4 mb-4">
+        <h2 className="mb-2 text-lg font-extrabold">Thêm</h2>
+        <div className="grid grid-cols-3 gap-2">
+          <NavTile icon={BookOpen} iconClass="bg-primary/15 text-primary" title="Ngữ pháp" onClick={() => onNavigate("grammar")} />
+          <NavTile icon={GraduationCap} iconClass="bg-success/15 text-success" title="Làm đề" onClick={() => onNavigate("exam")} />
+          <NavTile icon={MessageCircle} iconClass="bg-accent/15 text-accent" title="Hội thoại" onClick={() => onNavigate("conversation")} />
+          <NavTile icon={Trophy} iconClass="bg-accent/15 text-accent" title="Xếp hạng" onClick={() => onNavigate("leaderboard")} />
+          <NavTile icon={BookMarked} iconClass="bg-secondary text-secondary-foreground" title="My Words" onClick={() => onNavigate("mywords")} />
+          <NavTile icon={BarChart3} iconClass="bg-secondary text-secondary-foreground" title="Theo dõi" onClick={() => onNavigate("dashboard")} />
+        </div>
       </section>
     </main>
   );
