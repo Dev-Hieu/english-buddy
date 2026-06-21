@@ -43,12 +43,12 @@ export function SpeakingPage({ topicId, onBackHome }: SpeakingPageProps) {
   const detailed = CAN_MIC && !!word?.phonetic;
 
   if (!word) {
-    return (<><SessionHeader title="Luyện nói" onClose={onBackHome} /><Card><CardContent className="p-8 text-center font-bold text-muted-foreground">Chủ đề này chưa có từ để luyện.</CardContent></Card></>);
+    return (<main className="mx-auto w-full max-w-xl px-4"><SessionHeader title="Luyện nói" onClose={onBackHome} /><Card><CardContent className="p-8 text-center font-bold text-muted-foreground">Chủ đề này chưa có từ để luyện.</CardContent></Card></main>);
   }
 
   if (done) {
     return (
-      <>
+      <main className="mx-auto w-full max-w-xl px-4">
         <SessionHeader title="Luyện nói" onClose={onBackHome} />
         <Card className="animate-pop">
           <CardContent className="flex flex-col items-center gap-4 p-8 text-center">
@@ -57,7 +57,7 @@ export function SpeakingPage({ topicId, onBackHome }: SpeakingPageProps) {
             <Button type="button" size="lg" className="w-full" onClick={onBackHome}>Xong</Button>
           </CardContent>
         </Card>
-      </>
+      </main>
     );
   }
 
@@ -92,13 +92,19 @@ export function SpeakingPage({ topicId, onBackHome }: SpeakingPageProps) {
   };
 
   return (
-    <>
+    <main className="mx-auto w-full max-w-xl px-4">
       <SessionHeader title={`Luyện nói${topic ? " · " + topic.name : ""}`} onClose={onBackHome} progress={Math.round((n / words.length) * 100)} />
       <p className="mb-3 text-center text-sm font-extrabold text-muted-foreground">Từ {n + 1} / {words.length}</p>
 
       <Card>
         <CardContent className="flex flex-col items-center gap-4 p-6 text-center">
-          {word.imageUrl ? <img src={word.imageUrl} alt="" className="h-56 w-full rounded-2xl bg-secondary object-contain" /> : null}
+          <div className="h-44 w-full overflow-hidden rounded-2xl bg-secondary">
+            {word.imageUrl ? (
+              <img src={word.imageUrl} alt="" className="h-full w-full object-cover" />
+            ) : (
+              <div className="flex h-full w-full items-center justify-center text-6xl font-black text-secondary-foreground">{word.word[0]?.toUpperCase()}</div>
+            )}
+          </div>
           <h2 className="text-4xl font-black capitalize">{word.word}</h2>
           {word.phonetic ? <p className="font-bold text-muted-foreground">{word.phonetic}</p> : null}
           <Button type="button" variant="outline" onClick={() => speakText(word.word, word.audioUrl)}>
@@ -171,6 +177,6 @@ export function SpeakingPage({ topicId, onBackHome }: SpeakingPageProps) {
           Để chấm phát âm chi tiết: mở trên <b>máy tính (Chrome, localhost)</b> hoặc bản <b>HTTPS</b>, và chạy dịch vụ <code>speech-eval</code>.
         </p>
       ) : null}
-    </>
+    </main>
   );
 }
