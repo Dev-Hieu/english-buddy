@@ -7,6 +7,7 @@
     "start": "tsx src/index.ts",
     "seed": "tsx src/seed.ts",
     "seed:content": "SEED_CONTENT_ONLY=1 tsx src/seed.ts",
+    "warm:tts": "tsx src/warmTts.ts",
     "reset": "tsx src/reset.ts"
   },
   "dependencies": {
