@@ -103,4 +103,4 @@ def tts(text: str, voice: str = DEFAULT_VOICE, ls: float = 1.0):
 
     with open(mp3_path, "rb") as f:
         data = f.read()
-    return Response(data, media_type="audio/mpeg", headers={"Cache-Control": "public, max-age=31536000"})
+    return Response(data, media_type="audio/mpeg", headers={"Cache-Control": "public, max-age=86400"})

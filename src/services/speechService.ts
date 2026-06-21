@@ -54,7 +54,7 @@ function speakWithWebSpeech(text: string): void {
 async function speakWithPiper(text: string): Promise<boolean> {
   if (ttsFailCount >= TTS_MAX_FAILS && Date.now() < ttsBackoffUntil) return false;
   const p = getVoicePrefs();
-  const url = `${TTS_BASE}/tts?text=${encodeURIComponent(text)}&voice=${voiceKey(p)}&ls=${LENGTH_SCALE[p.rate]}`;
+  const url = `${TTS_BASE}/tts?text=${encodeURIComponent(text)}&voice=${voiceKey(p)}&ls=${LENGTH_SCALE[p.rate]}&v=4`;
   try {
     // Dùng URL trực tiếp thay vì fetch+blob — tránh lỗi decode trên mobile
     await playUrl(url);
