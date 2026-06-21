@@ -106,25 +106,37 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
 
       {/* Hero */}
       <section className="mt-3 overflow-hidden rounded-3xl bg-gradient-to-br from-primary to-success p-4 text-primary-foreground shadow-soft">
-        {/* Hàng 1: avatar + tên + số từ đã thuộc */}
-        <div className="flex items-center gap-3">
-          <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-white/20 text-lg">
-            {avatarEmoji(student.avatar)}
+        {/* Hàng 1: thành tích (trái) — tài khoản (phải) */}
+        <div className="flex items-center justify-between">
+          <div className="flex items-center gap-1.5">
+            <span className="flex items-center gap-0.5 rounded-full bg-white/20 px-1.5 py-0.5 text-[11px] font-extrabold" title="XP"><Star className="h-3 w-3" />{xp}</span>
+            <span className="flex items-center gap-0.5 rounded-full bg-white/20 px-1.5 py-0.5 text-[11px] font-extrabold" title="Streak"><Flame className="h-3 w-3" />{streak}</span>
+            <button type="button" onClick={() => onNavigate("leaderboard")} title="Xếp hạng" className="flex items-center gap-0.5 rounded-full bg-white/25 px-1.5 py-0.5 text-[11px] font-extrabold hover:bg-white/40">
+              <Trophy className="h-3 w-3" />{weekRank ? `#${weekRank}` : "—"}
+            </button>
           </div>
-          <div className="flex-1 min-w-0">
-            <p className="text-sm font-black leading-tight truncate">{student.name} <span className="font-bold opacity-70">· Lv {level}</span></p>
+          <div className="flex items-center gap-2">
+            <div className="text-right">
+              <p className="text-xs font-black leading-tight">{student.name}</p>
+              <p className="text-[10px] font-bold opacity-75">Lv {level}{levelLabel ? ` · ${levelLabel}` : ""}</p>
+            </div>
+            <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-white/20 text-base">
+              {avatarEmoji(student.avatar)}
+            </div>
           </div>
-          <span className="shrink-0 rounded-full bg-white/20 px-2 py-0.5 text-[11px] font-extrabold">📚 {learnedTotal} từ</span>
         </div>
-        {/* Hàng 2: mục tiêu + nút học */}
-        <div className="mt-3 flex items-center gap-3">
-          <ProgressRing value={learnedToday} max={goal} size={56} stroke={7}>
-            <span className="text-lg font-black leading-none">{learnedToday}</span>
+        {/* Hàng 2: mục tiêu hôm nay + tổng vốn từ + nút học */}
+        <div className="mt-2.5 flex items-center gap-3">
+          <ProgressRing value={learnedToday} max={goal} size={52} stroke={6}>
+            <span className="text-base font-black leading-none">{learnedToday}</span>
             <span className="text-[9px] font-bold opacity-80">/{goal}</span>
           </ProgressRing>
-          <p className="flex-1 min-w-0 text-sm font-black leading-tight">
-            {goalReached ? "Hoàn thành rồi! 🎉" : `Học ${goal - learnedToday} từ nữa nào`}
-          </p>
+          <div className="flex-1 min-w-0">
+            <p className="text-[13px] font-black leading-tight">
+              {goalReached ? "Hoàn thành rồi! 🎉" : `Học ${goal - learnedToday} từ nữa nào`}
+            </p>
+            <p className="text-[11px] font-bold opacity-75">Vốn từ: {learnedTotal} từ đã thuộc</p>
+          </div>
           <Button type="button" variant="accent" className="shrink-0" onClick={startLearning}>
             <Play className="h-4 w-4" /> {resumeStarted ? "Học tiếp" : "Bắt đầu"}
           </Button>
