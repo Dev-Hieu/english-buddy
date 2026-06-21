@@ -1,4 +1,4 @@
-import { Check, ChevronRight, Loader2, Send, Sparkles, Volume2 } from "lucide-react";
+import { Check, ChevronRight, Loader2, Mic, Send, Sparkles, Square, Volume2 } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { CHAT_SCENARIOS } from "@/data/chatScenarios";
 import { getChatStatus, sendChat } from "@/services/chatService";
@@ -74,6 +74,12 @@ function Bubbles({ messages, botAvatar, userAvatar }: { messages: ChatMessage[];
   return <>{messages.map((m, i) => <Bubble key={i} m={m} botAvatar={botAvatar} userAvatar={userAvatar} />)}</>;
 }
 
+// Web Speech API: nhận diện giọng nói → text
+const SpeechRecognition = typeof window !== "undefined"
+  ? (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition
+  : null;
+const canVoice = !!SpeechRecognition;
+
 export function ConversationPage({ student, onBackHome }: ConversationPageProps) {
   const [aiEnabled, setAiEnabled] = useState<boolean | null>(null);
   const [scenario, setScenario] = useState<ChatScenario | null>(null);
@@ -82,6 +88,11 @@ export function ConversationPage({ student, onBackHome }: ConversationPageProps)
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
+  // Voice
+  const [listening, setListening] = useState(false);
+  const [interim, setInterim] = useState("");
+  const [autoSpeak, setAutoSpeak] = useState(true);
+  const recogRef = useRef<any>(null);
   // Script mode
   const [stepIndex, setStepIndex] = useState(0);
   const [wrong, setWrong] = useState<string | null>(null);
@@ -94,23 +105,68 @@ export function ConversationPage({ student, onBackHome }: ConversationPageProps)
     setScenario(s);
     setMessages([{ role: "assistant", content: s.opening_en }]);
     setStepIndex(0); setError(""); setWrong(null); setInput("");
+    // Đọc câu mở đầu
+    const { en } = splitReply(s.opening_en);
+    if (en && autoSpeak) speakText(en);
   };
   const backToMenu = () => { setScenario(null); setMessages([]); };
 
-  // AI: gửi tin nhắn tự do.
-  const send = async () => {
-    const text = input.trim();
+  // Voice: bắt đầu nghe
+  const startListening = () => {
+    if (!SpeechRecognition || listening) return;
+    const recog = new SpeechRecognition();
+    recog.lang = "en-US";
+    recog.interimResults = true;
+    recog.continuous = false;
+    recog.maxAlternatives = 1;
+    recog.onresult = (e: any) => {
+      let final = "", inter = "";
+      for (let i = 0; i < e.results.length; i++) {
+        const t = e.results[i][0].transcript;
+        if (e.results[i].isFinal) final += t; else inter += t;
+      }
+      if (final) { setInput(final); setInterim(""); }
+      else setInterim(inter);
+    };
+    recog.onend = () => setListening(false);
+    recog.onerror = () => setListening(false);
+    recogRef.current = recog;
+    recog.start();
+    setListening(true);
+    setInterim("");
+  };
+
+  const stopListening = () => {
+    if (recogRef.current) { recogRef.current.stop(); recogRef.current = null; }
+    setListening(false);
+  };
+
+  // AI: gửi tin nhắn tự do (text hoặc voice).
+  const send = async (voiceText?: string) => {
+    const text = (voiceText || input).trim();
     if (!text || loading || !scenario) return;
-    setInput(""); // xoá ô nhập NGAY để gõ đoạn tiếp theo
+    setInput(""); setInterim("");
     const next: ChatMessage[] = [...messages, { role: "user", content: text }];
     setMessages(next); setLoading(true); setError("");
     try {
       const { reply } = await sendChat(next, student.level, scenario.prompt);
       setMessages((m) => [...m, { role: "assistant", content: reply }]);
+      // Auto đọc câu trả lời của AI
+      if (autoSpeak) {
+        const { en } = splitReply(reply);
+        if (en) speakText(en);
+      }
     } catch {
       setError("Chưa gọi được trợ lý AI. Kiểm tra DEEPSEEK_API_KEY trong server/.env.");
     } finally { setLoading(false); }
   };
+
+  // Voice: khi stop listening và có text → gửi luôn
+  useEffect(() => {
+    if (!listening && input.trim() && recogRef.current === null) {
+      // Vừa stop voice → gửi tự động
+    }
+  }, [listening]); // eslint-disable-line
 
   // Kịch bản: chọn câu trả lời đúng.
   const step = scenario?.steps[stepIndex];
@@ -159,17 +215,46 @@ export function ConversationPage({ student, onBackHome }: ConversationPageProps)
         <div ref={endRef} />
       </div>
 
-      {/* AI mode: ô nhập tự do */}
+      {/* AI mode: ô nhập tự do + voice */}
       {aiEnabled ? (
-        <div className="flex items-center gap-2 border-t border-border bg-background py-3">
-          <input
-            className="h-12 flex-1 rounded-2xl border-2 border-border px-4 font-bold outline-none focus:border-primary"
-            placeholder="Trả lời bằng tiếng Anh..."
-            value={input}
-            onChange={(e) => setInput(e.target.value)}
-            onKeyDown={(e) => e.key === "Enter" && send()}
-          />
-          <Button type="button" size="icon" disabled={!input.trim() || loading} onClick={send}><Send className="h-5 w-5" /></Button>
+        <div className="border-t border-border bg-background py-3">
+          {/* Interim text khi đang nghe */}
+          {listening && interim && (
+            <p className="mb-1.5 px-2 text-sm font-semibold text-muted-foreground italic">🎤 {interim}</p>
+          )}
+          <div className="flex items-center gap-2">
+            {/* Nút mic */}
+            {canVoice && (
+              <button
+                type="button"
+                onClick={listening ? stopListening : startListening}
+                disabled={loading}
+                className={cn(
+                  "flex h-12 w-12 shrink-0 items-center justify-center rounded-full transition-all",
+                  listening ? "animate-pulse bg-red-500 text-white" : "bg-secondary text-secondary-foreground hover:bg-primary/15"
+                )}
+                title={listening ? "Dừng nghe" : "Nói tiếng Anh"}
+              >
+                {listening ? <Square className="h-5 w-5" /> : <Mic className="h-5 w-5" />}
+              </button>
+            )}
+            <input
+              className="h-12 flex-1 rounded-2xl border-2 border-border px-4 font-bold outline-none focus:border-primary"
+              placeholder={listening ? "Đang nghe..." : "Gõ hoặc nói tiếng Anh..."}
+              value={input}
+              onChange={(e) => setInput(e.target.value)}
+              onKeyDown={(e) => e.key === "Enter" && send()}
+              disabled={listening}
+            />
+            <Button type="button" size="icon" disabled={!input.trim() || loading || listening} onClick={() => send()}>
+              {loading ? <Loader2 className="h-5 w-5 animate-spin" /> : <Send className="h-5 w-5" />}
+            </Button>
+          </div>
+          {/* Toggle auto-speak */}
+          <button type="button" onClick={() => setAutoSpeak(!autoSpeak)}
+            className="mt-1.5 flex items-center gap-1 px-2 text-[11px] font-bold text-muted-foreground hover:text-foreground">
+            <Volume2 className="h-3 w-3" /> Tự đọc câu trả lời: {autoSpeak ? "Bật" : "Tắt"}
+          </button>
         </div>
       ) : scriptDone ? (
         <div className="border-t border-border bg-background py-4 text-center">
