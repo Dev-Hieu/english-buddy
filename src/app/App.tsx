@@ -244,7 +244,7 @@ export function App() {
           studiedWordIds={studiedWordIds}
           streak={streak}
           xp={xp}
-          learnedTotal={studiedWordIds.length}
+          learnedTotal={progress.filter((p) => (p as any).status === "scored").length}
           learnedToday={learnedToday}
           reviewDue={reviewDue}
           pendingCount={pendingCount}
