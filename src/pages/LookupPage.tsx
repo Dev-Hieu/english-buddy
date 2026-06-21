@@ -151,106 +151,157 @@ function WordLookup({ student }: { student: Student }) {
 
       {/* Kết quả từ điển */}
       {result ? (
-        <Card className="animate-pop overflow-hidden">
-          {/* Ảnh minh hoạ */}
-          {result.images[0] && (
-            <div className="relative h-44 w-full bg-muted">
-              <img src={result.images[0].url} alt={result.query} className="h-full w-full object-cover" />
+        <div className="animate-pop space-y-3">
+          {/* Header card: ảnh + từ + phiên âm + nghe */}
+          <Card className="overflow-hidden">
+            {result.images[0] && (
+              <div className="relative h-40 w-full bg-muted">
+                <img src={result.images[0].url} alt={result.query} className="h-full w-full object-cover" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 p-4 flex items-end justify-between">
+                  <div>
+                    <h2 className="text-3xl font-black capitalize text-white drop-shadow">{result.query}</h2>
+                    {result.dict?.phonetic && <p className="text-sm font-bold text-white/80">{result.dict.phonetic}</p>}
+                  </div>
+                  <button type="button" onClick={() => speakText(result.query)}
+                    className="flex h-11 w-11 items-center justify-center rounded-full bg-white/90 text-primary shadow-lg transition-transform active:scale-90">
+                    <Volume2 className="h-5 w-5" />
+                  </button>
+                </div>
+              </div>
+            )}
+            {!result.images[0] && (
+              <CardContent className="flex items-center justify-between gap-3 p-4">
+                <div>
+                  <h2 className="text-3xl font-black capitalize leading-tight">{result.query}</h2>
+                  {result.dict?.phonetic && <p className="text-sm font-bold text-muted-foreground">{result.dict.phonetic}</p>}
+                </div>
+                <button type="button" onClick={() => speakText(result.query)}
+                  className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary transition-transform active:scale-90">
+                  <Volume2 className="h-5 w-5" />
+                </button>
+              </CardContent>
+            )}
+          </Card>
+
+          {/* Nghĩa tiếng Việt + từ loại */}
+          <Card>
+            <CardContent className="p-4">
+              <div className="flex items-start gap-3">
+                <span className="mt-0.5 text-xl">🇻🇳</span>
+                <div className="flex-1 space-y-1.5">
+                  {result.detail?.vi?.length ? (
+                    result.detail.vi.map((v, i) => (
+                      <p key={i} className="text-base font-extrabold text-primary leading-snug">
+                        <span className="mr-1.5 inline-flex h-5 w-5 items-center justify-center rounded-full bg-primary/15 text-[11px] font-black text-primary">{i + 1}</span>
+                        {v}
+                      </p>
+                    ))
+                  ) : result.vi ? (
+                    <p className="text-lg font-extrabold text-primary">{result.vi}</p>
+                  ) : null}
+                </div>
+              </div>
+              {result.detail?.pos?.length ? (
+                <div className="mt-2.5 flex flex-wrap gap-1.5">
+                  {result.detail.pos.map((p) => (
+                    <span key={p} className="rounded-md border border-border px-2 py-0.5 text-[11px] font-extrabold text-muted-foreground uppercase tracking-wide">{p}</span>
+                  ))}
+                </div>
+              ) : null}
+            </CardContent>
+          </Card>
+
+          {/* Ví dụ song ngữ */}
+          {result.detail?.examples?.length ? (
+            <Card>
+              <CardContent className="p-4 space-y-0 divide-y divide-border/50">
+                <p className="pb-2 text-xs font-extrabold text-muted-foreground uppercase tracking-wider">Ví dụ</p>
+                {result.detail.examples.map((ex, i) => (
+                  <div key={i} className="py-2.5 flex gap-3">
+                    <span className="mt-0.5 text-base opacity-40">❝</span>
+                    <div className="flex-1 min-w-0">
+                      <p className="text-sm font-bold leading-relaxed">
+                        {ex.en}
+                        <button type="button" className="ml-1.5 align-middle opacity-40 hover:opacity-100 transition-opacity" onClick={() => speakText(ex.en)}>
+                          <Volume2 className="inline h-3.5 w-3.5" />
+                        </button>
+                      </p>
+                      <p className="mt-0.5 text-sm font-semibold text-muted-foreground">{ex.vi}</p>
+                    </div>
+                  </div>
+                ))}
+              </CardContent>
+            </Card>
+          ) : result.dict?.meanings.length ? (
+            <Card>
+              <CardContent className="p-4 space-y-3">
+                {result.dict.meanings.slice(0, 3).map((m, i) => (
+                  <div key={i}>
+                    <span className="inline-block rounded-md border border-border px-2 py-0.5 text-[11px] font-extrabold text-muted-foreground uppercase tracking-wide mb-1.5">{m.partOfSpeech}</span>
+                    {m.definitions.slice(0, 2).map((def, j) => (
+                      <p key={j} className="pl-3 border-l-2 border-primary/30 text-sm font-bold mb-1">{j + 1}. {def}</p>
+                    ))}
+                    {m.examples.slice(0, 1).map((ex, j) => (
+                      <p key={j} className="pl-3 mt-1 text-sm font-semibold italic text-muted-foreground">
+                        ❝ {ex}
+                        <button type="button" className="ml-1 opacity-40 hover:opacity-100" onClick={() => speakText(ex)}><Volume2 className="inline h-3.5 w-3.5" /></button>
+                      </p>
+                    ))}
+                  </div>
+                ))}
+              </CardContent>
+            </Card>
+          ) : null}
+
+          {/* Đồng nghĩa / Trái nghĩa */}
+          {(result.detail?.synonyms?.length || result.detail?.antonyms?.length) ? (
+            <Card>
+              <CardContent className="p-4 space-y-2.5">
+                {result.detail?.synonyms?.length ? (
+                  <div>
+                    <p className="text-[11px] font-extrabold text-muted-foreground uppercase tracking-wider mb-1">Đồng nghĩa</p>
+                    <div className="flex flex-wrap gap-1.5">
+                      {result.detail.synonyms.map((s) => (
+                        <button key={s} type="button" onClick={() => search(s)}
+                          className="rounded-full border border-primary/30 bg-primary/5 px-2.5 py-0.5 text-xs font-extrabold text-primary hover:bg-primary/15 transition-colors">
+                          {s}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                ) : null}
+                {result.detail?.antonyms?.length ? (
+                  <div>
+                    <p className="text-[11px] font-extrabold text-muted-foreground uppercase tracking-wider mb-1">Trái nghĩa</p>
+                    <div className="flex flex-wrap gap-1.5">
+                      {result.detail.antonyms.map((a) => (
+                        <button key={a} type="button" onClick={() => search(a)}
+                          className="rounded-full border border-accent/30 bg-accent/5 px-2.5 py-0.5 text-xs font-extrabold text-accent hover:bg-accent/15 transition-colors">
+                          {a}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                ) : null}
+              </CardContent>
+            </Card>
+          ) : null}
+
+          {/* Mẹo */}
+          {result.detail?.note && (
+            <div className="flex gap-2.5 rounded-2xl bg-accent/8 border border-accent/20 px-4 py-3">
+              <span className="text-lg">💡</span>
+              <p className="text-sm font-bold text-accent leading-relaxed">{result.detail.note}</p>
             </div>
           )}
 
-          <CardContent className="space-y-3 p-4">
-            {/* Từ + phiên âm + nút nghe */}
-            <div className="flex items-start justify-between gap-3">
-              <div>
-                <h2 className="text-2xl font-black capitalize leading-tight">{result.query}</h2>
-                {result.dict?.phonetic && (
-                  <p className="text-sm font-bold text-muted-foreground">{result.dict.phonetic}</p>
-                )}
-              </div>
-              <Button type="button" size="icon" variant="outline" className="shrink-0 h-10 w-10 rounded-xl" onClick={() => speakText(result.query)}>
-                <Volume2 className="h-5 w-5" />
-              </Button>
-            </div>
-
-            {/* Nghĩa tiếng Việt (từ AI — đa nghĩa) */}
-            {result.vi && (
-              <div className="rounded-xl bg-primary/10 px-3 py-2.5">
-                <p className="text-lg font-extrabold text-primary">{result.vi}</p>
-              </div>
-            )}
-
-            {/* Từ loại (từ AI — lọc nghĩa hiếm) */}
-            {result.detail?.pos?.length ? (
-              <div className="flex flex-wrap gap-1.5">
-                {result.detail.pos.map((p) => (
-                  <span key={p} className="rounded-lg bg-muted px-2 py-0.5 text-xs font-extrabold text-muted-foreground uppercase">{p}</span>
-                ))}
-              </div>
-            ) : null}
-
-            {/* Ví dụ từ AI (song ngữ EN-VI) */}
-            {result.detail?.examples?.length ? (
-              <div className="space-y-2">
-                <p className="text-xs font-extrabold text-muted-foreground uppercase">Ví dụ</p>
-                {result.detail.examples.map((ex, i) => (
-                  <div key={i} className="rounded-xl bg-muted/50 px-3 py-2">
-                    <p className="text-sm font-bold flex items-center gap-1">
-                      {ex.en}
-                      <button type="button" className="opacity-50 hover:opacity-100 shrink-0" onClick={() => speakText(ex.en)}>
-                        <Volume2 className="inline h-3.5 w-3.5" />
-                      </button>
-                    </p>
-                    <p className="text-sm font-semibold text-muted-foreground">{ex.vi}</p>
-                  </div>
-                ))}
-              </div>
-            ) : result.dict?.meanings.map((m, i) => (
-              /* Fallback: dùng Free Dictionary nếu AI không trả */
-              <div key={i} className="space-y-1.5">
-                <span className="inline-block rounded-lg bg-muted px-2 py-0.5 text-xs font-extrabold text-muted-foreground uppercase">{m.partOfSpeech}</span>
-                {m.definitions.slice(0, 2).map((def, j) => (
-                  <div key={j} className="pl-3 border-l-2 border-border">
-                    <p className="text-sm font-bold">{j + 1}. {def}</p>
-                  </div>
-                ))}
-                {m.examples.slice(0, 1).map((ex, j) => (
-                  <p key={j} className="pl-3 text-sm font-semibold italic text-muted-foreground">
-                    💬 "{ex}"
-                    <button type="button" className="ml-1 opacity-60 hover:opacity-100" onClick={() => speakText(ex)}><Volume2 className="inline h-3.5 w-3.5" /></button>
-                  </p>
-                ))}
-              </div>
-            ))}
-
-            {/* Từ đồng nghĩa / trái nghĩa */}
-            {(result.detail?.synonyms?.length || result.detail?.antonyms?.length) ? (
-              <div className="flex flex-wrap gap-x-4 gap-y-1 text-sm">
-                {result.detail?.synonyms?.length ? (
-                  <p><span className="font-extrabold text-muted-foreground">≈</span> {result.detail.synonyms.map((s, i) => (
-                    <button key={s} type="button" onClick={() => search(s)} className="font-bold text-primary hover:underline">{s}{i < result.detail!.synonyms!.length - 1 ? ", " : ""}</button>
-                  ))}</p>
-                ) : null}
-                {result.detail?.antonyms?.length ? (
-                  <p><span className="font-extrabold text-muted-foreground">≠</span> {result.detail.antonyms.map((a, i) => (
-                    <button key={a} type="button" onClick={() => search(a)} className="font-bold text-accent hover:underline">{a}{i < result.detail!.antonyms!.length - 1 ? ", " : ""}</button>
-                  ))}</p>
-                ) : null}
-              </div>
-            ) : null}
-
-            {/* Mẹo cho người Việt */}
-            {result.detail?.note && (
-              <p className="rounded-xl bg-accent/10 px-3 py-2 text-sm font-bold text-accent">💡 {result.detail.note}</p>
-            )}
-
-            {/* Nút lưu */}
-            <Button type="button" className="w-full" variant={saved ? "outline" : "default"} onClick={save} disabled={saved}>
-              {saved ? <Check className="h-5 w-5" /> : <BookmarkPlus className="h-5 w-5" />}
-              {saved ? "Đã lưu vào My Words" : "Lưu vào My Words"}
-            </Button>
-          </CardContent>
-        </Card>
+          {/* Nút lưu */}
+          <Button type="button" className="w-full" size="lg" variant={saved ? "outline" : "default"} onClick={save} disabled={saved}>
+            {saved ? <Check className="h-5 w-5" /> : <BookmarkPlus className="h-5 w-5" />}
+            {saved ? "Đã lưu vào My Words" : "Lưu vào My Words"}
+          </Button>
+        </div>
       ) : null}
     </div>
   );
