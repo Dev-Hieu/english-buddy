@@ -1,4 +1,3 @@
-// Ngữ pháp cấp B1 — giải thích bằng tiếng Việt cho app học.
 import type { GrammarTopic } from "../../types";
 
 export const B1_GRAMMAR: GrammarTopic[] = [
@@ -7,7 +6,37 @@ export const B1_GRAMMAR: GrammarTopic[] = [
     level: "b1",
     title: "Present Perfect",
     title_vi: "Thì hiện tại hoàn thành",
-    summary_vi: "Cấu trúc have/has + V3 (quá khứ phân từ). Diễn tả kinh nghiệm, việc vừa xảy ra hoặc việc đã hoàn thành nhưng còn liên quan đến hiện tại.",
+    summary_vi:
+      "Cấu trúc have/has + V3 (quá khứ phân từ). Diễn tả kinh nghiệm, việc vừa xảy ra hoặc việc đã hoàn thành nhưng còn liên quan đến hiện tại.",
+    sections: [
+      {
+        heading: "Cấu trúc cơ bản",
+        points: [
+          "Khẳng định: S + have/has + V3 — I have finished my homework.",
+          "Chủ ngữ he/she/it dùng has, còn lại dùng have.",
+          "Phủ định: S + have/has + not + V3 — She has not (hasn't) eaten yet.",
+          "Nghi vấn: Have/Has + S + V3? — Have you ever been to Japan?",
+        ],
+      },
+      {
+        heading: "Cách dùng & dấu hiệu nhận biết",
+        points: [
+          "Diễn tả kinh nghiệm: I have visited Paris twice.",
+          "Việc vừa xảy ra: She has just arrived.",
+          "Việc bắt đầu trong quá khứ, kéo dài đến hiện tại: They have lived here for 10 years.",
+          "Đi kèm: ever, never, just, already, yet, since, for.",
+          "for + khoảng thời gian, since + mốc thời gian: for two years / since 2020.",
+        ],
+      },
+      {
+        heading: "💡 Mẹo ghi nhớ",
+        points: [
+          "💡 Phân biệt for/since: for + khoảng (for 3 days), since + mốc (since Monday).",
+          "💡 already dùng trong câu khẳng định, yet dùng trong phủ định/nghi vấn.",
+          "💡 Không dùng thì này với các mốc thời gian cụ thể trong quá khứ (yesterday, last year) — dùng Past Simple.",
+        ],
+      },
+    ],
     points: [
       "I have finished my homework. — Tôi đã làm xong bài tập (và giờ rảnh).",
       "Chủ ngữ he/she/it dùng has, còn lại dùng have: She has lived here for 5 years.",
@@ -20,6 +49,11 @@ export const B1_GRAMMAR: GrammarTopic[] = [
       { id: "e3", type: "fill", question: "She has ___ (eat) lunch already.", answer: "eaten", explain_vi: "eat -> eaten (V3)." },
       { id: "e4", type: "fill", question: "They have ___ (not finish) the project yet.", answer: "not finished", explain_vi: "Phủ định: have + not + V3 (finish -> finished)." },
       { id: "e5", type: "reorder", question: "Sắp xếp các từ thành câu đúng:", options: ["have", "just", "arrived", "They"], answer: "They have just arrived", explain_vi: "Trật tự: S + have + just + V3." },
+      { id: "e6", type: "choice", question: "We ___ already ___ dinner.", options: ["have / eaten", "has / eaten", "have / ate"], answer: "have / eaten", explain_vi: "Chủ ngữ we dùng have; eat -> eaten (V3)." },
+      { id: "e7", type: "fill", question: "He has ___ (write) three letters today.", answer: "written", explain_vi: "write -> written (V3)." },
+      { id: "e8", type: "choice", question: "Have you ___ seen a whale?", options: ["ever", "never", "yet"], answer: "ever", explain_vi: "Trong câu nghi vấn, dùng ever (= bao giờ)." },
+      { id: "e9", type: "fill", question: "I have known her ___ 2015. (mốc thời gian)", answer: "since", explain_vi: "2015 là mốc thời gian -> dùng since." },
+      { id: "e10", type: "reorder", question: "Sắp xếp các từ thành câu đúng:", options: ["has", "She", "not", "finished", "homework", "her", "yet"], answer: "She has not finished her homework yet", explain_vi: "Trật tự: S + has + not + V3 + O + yet." },
     ],
   },
   {
@@ -27,7 +61,35 @@ export const B1_GRAMMAR: GrammarTopic[] = [
     level: "b1",
     title: "Past Continuous",
     title_vi: "Thì quá khứ tiếp diễn",
-    summary_vi: "Cấu trúc was/were + V-ing. Diễn tả hành động đang diễn ra tại một thời điểm trong quá khứ, hoặc bị một hành động khác xen vào.",
+    summary_vi:
+      "Cấu trúc was/were + V-ing. Diễn tả hành động đang diễn ra tại một thời điểm trong quá khứ, hoặc bị một hành động khác xen vào.",
+    sections: [
+      {
+        heading: "Cấu trúc cơ bản",
+        points: [
+          "Khẳng định: S + was/were + V-ing — I was watching TV.",
+          "Chủ ngữ I/he/she/it dùng was; you/we/they dùng were.",
+          "Phủ định: S + was/were + not + V-ing — They weren't sleeping.",
+          "Nghi vấn: Was/Were + S + V-ing? — Were you studying?",
+        ],
+      },
+      {
+        heading: "Cách dùng chính",
+        points: [
+          "Hành động đang xảy ra tại một thời điểm cụ thể: At 9 p.m., I was reading a book.",
+          "Hai hành động diễn ra song song: While I was cooking, she was cleaning.",
+          "Hành động đang diễn ra (past continuous) bị hành động ngắn (past simple) xen vào: While I was cooking, the phone rang.",
+          "Liên từ thường gặp: when, while, as.",
+        ],
+      },
+      {
+        heading: "💡 Mẹo ghi nhớ",
+        points: [
+          "💡 when + past simple (hành động ngắn), while + past continuous (hành động dài).",
+          "💡 Không dùng past continuous với các động từ trạng thái (stative verbs): know, believe, love, belong...",
+        ],
+      },
+    ],
     points: [
       "I was watching TV at 8 p.m. — Lúc 8 giờ tối tôi đang xem TV.",
       "Chủ ngữ I/he/she/it dùng was; you/we/they dùng were.",
@@ -39,6 +101,11 @@ export const B1_GRAMMAR: GrammarTopic[] = [
       { id: "e3", type: "fill", question: "I ___ (study) when you called me.", answer: "was studying", explain_vi: "I + was + V-ing: was studying." },
       { id: "e4", type: "fill", question: "What ___ you ___ (do) at midnight?", answer: "were doing", explain_vi: "you + were + V-ing: were doing." },
       { id: "e5", type: "reorder", question: "Sắp xếp các từ thành câu đúng:", options: ["was", "raining", "It", "heavily"], answer: "It was raining heavily", explain_vi: "Trật tự: S + was + V-ing + trạng từ." },
+      { id: "e6", type: "choice", question: "He ___ not listening to the teacher.", options: ["was", "were", "did"], answer: "was", explain_vi: "He dùng was; phủ định: was + not + V-ing." },
+      { id: "e7", type: "fill", question: "While we ___ (walk) home, it started to snow.", answer: "were walking", explain_vi: "we + were + V-ing: were walking." },
+      { id: "e8", type: "choice", question: "___ she sleeping when you arrived?", options: ["Was", "Were", "Did"], answer: "Was", explain_vi: "she dùng Was; nghi vấn: Was + S + V-ing?" },
+      { id: "e9", type: "reorder", question: "Sắp xếp các từ thành câu đúng:", options: ["were", "dancing", "They", "the", "at", "party"], answer: "They were dancing at the party", explain_vi: "Trật tự: S + were + V-ing + giới từ + danh từ." },
+      { id: "e10", type: "fill", question: "At 7 a.m., the children ___ (sleep).", answer: "were sleeping", explain_vi: "the children (số nhiều) + were + V-ing." },
     ],
   },
   {
@@ -46,7 +113,34 @@ export const B1_GRAMMAR: GrammarTopic[] = [
     level: "b1",
     title: "First Conditional",
     title_vi: "Câu điều kiện loại 1",
-    summary_vi: "Cấu trúc: If + hiện tại đơn, will + V (nguyên thể). Diễn tả điều kiện có thật, có khả năng xảy ra ở hiện tại hoặc tương lai.",
+    summary_vi:
+      "Cấu trúc: If + hiện tại đơn, will + V (nguyên thể). Diễn tả điều kiện có thật, có khả năng xảy ra ở hiện tại hoặc tương lai.",
+    sections: [
+      {
+        heading: "Cấu trúc",
+        points: [
+          "If + S + V (hiện tại đơn), S + will + V nguyên thể.",
+          "Mệnh đề If dùng thì hiện tại đơn, KHÔNG dùng will.",
+          "Mệnh đề chính dùng will + V nguyên thể.",
+          "Có thể thay will bằng can/may/might tùy mức chắc chắn.",
+        ],
+      },
+      {
+        heading: "Cách dùng & lưu ý",
+        points: [
+          "Diễn tả điều kiện có thể xảy ra ở tương lai: If it rains, I will stay at home.",
+          "Có thể đảo mệnh đề: I will stay at home if it rains. (không cần dấu phẩy khi If đứng sau).",
+          "Dùng unless = if ... not: Unless you hurry, you will be late.",
+        ],
+      },
+      {
+        heading: "💡 Mẹo ghi nhớ",
+        points: [
+          "💡 Nhớ quy tắc: mệnh đề If KHÔNG BAO GIỜ dùng will.",
+          "💡 Phân biệt với điều kiện loại 0 (sự thật chung): If you heat water, it boils. (cả hai mệnh đề dùng hiện tại đơn).",
+        ],
+      },
+    ],
     points: [
       "If it rains, I will stay at home. — Nếu trời mưa, tôi sẽ ở nhà.",
       "Mệnh đề If dùng thì hiện tại đơn, KHÔNG dùng will.",
@@ -59,6 +153,11 @@ export const B1_GRAMMAR: GrammarTopic[] = [
       { id: "e3", type: "fill", question: "If she ___ (call) me, I will help her.", answer: "calls", explain_vi: "Mệnh đề If + hiện tại đơn; she -> calls." },
       { id: "e4", type: "fill", question: "We ___ (be) late if we don't hurry.", answer: "will be", explain_vi: "Mệnh đề chính dùng will + V: will be." },
       { id: "e5", type: "reorder", question: "Sắp xếp các từ thành câu đúng:", options: ["If", "you", "tired,", "are", "rest", "will", "you"], answer: "If you are tired, you will rest", explain_vi: "Trật tự: If + S + hiện tại đơn, S + will + V." },
+      { id: "e6", type: "choice", question: "If he ___ the bus, he will be late.", options: ["misses", "will miss", "missed"], answer: "misses", explain_vi: "Mệnh đề If dùng hiện tại đơn: misses." },
+      { id: "e7", type: "fill", question: "If I ___ (have) time, I will visit you.", answer: "have", explain_vi: "Mệnh đề If + hiện tại đơn; I -> have (không chia)." },
+      { id: "e8", type: "choice", question: "She will buy a car if she ___ enough money.", options: ["saves", "will save", "saved"], answer: "saves", explain_vi: "Mệnh đề If đứng sau cũng dùng hiện tại đơn." },
+      { id: "e9", type: "reorder", question: "Sắp xếp các từ thành câu đúng:", options: ["will", "you", "If", "come,", "I", "happy", "be"], answer: "If you come, I will be happy", explain_vi: "Trật tự: If + S + V, S + will + be + adj." },
+      { id: "e10", type: "fill", question: "Unless you ___ (leave) now, you will miss the train.", answer: "leave", explain_vi: "Unless = If ... not; mệnh đề điều kiện dùng hiện tại đơn: leave." },
     ],
   },
   {
@@ -66,7 +165,35 @@ export const B1_GRAMMAR: GrammarTopic[] = [
     level: "b1",
     title: "Relative Clauses (who / which / that)",
     title_vi: "Mệnh đề quan hệ (who / which / that)",
-    summary_vi: "Dùng đại từ quan hệ để nối câu và bổ nghĩa cho danh từ: who cho người, which cho vật, that cho cả người và vật.",
+    summary_vi:
+      "Dùng đại từ quan hệ để nối câu và bổ nghĩa cho danh từ: who cho người, which cho vật, that cho cả người và vật.",
+    sections: [
+      {
+        heading: "Các đại từ quan hệ chính",
+        points: [
+          "who — chỉ người: The man who lives next door is a doctor.",
+          "which — chỉ vật/sự vật: The book which I bought is interesting.",
+          "that — dùng cho cả người và vật: The car that he drives is new.",
+          "whose — chỉ sở hữu: The girl whose bag is red is my sister.",
+          "where — chỉ nơi chốn: The restaurant where we ate was nice.",
+        ],
+      },
+      {
+        heading: "Mệnh đề quan hệ xác định & không xác định",
+        points: [
+          "Mệnh đề xác định (defining): cần thiết để hiểu nghĩa, không có dấu phẩy. The man who called you is my boss.",
+          "Mệnh đề không xác định (non-defining): bổ sung thông tin, có dấu phẩy. My sister, who lives in Hanoi, is a teacher.",
+          "Trong mệnh đề không xác định, KHÔNG dùng that.",
+        ],
+      },
+      {
+        heading: "💡 Mẹo ghi nhớ",
+        points: [
+          "💡 Đại từ quan hệ đứng ngay sau danh từ mà nó bổ nghĩa.",
+          "💡 Có thể lược bỏ who/which/that khi nó làm tân ngữ: The book (which) I bought = The book I bought.",
+        ],
+      },
+    ],
     points: [
       "who — chỉ người: The man who lives next door is a doctor.",
       "which — chỉ vật/sự vật: The book which I bought is interesting.",
@@ -79,6 +206,11 @@ export const B1_GRAMMAR: GrammarTopic[] = [
       { id: "e3", type: "fill", question: "The boy ___ won the prize is my friend. (chỉ người)", answer: "who", explain_vi: "Chỉ người dùng who (cũng có thể dùng that)." },
       { id: "e4", type: "fill", question: "I like the song ___ you played. (chỉ vật)", answer: "which", explain_vi: "Chỉ vật dùng which (cũng có thể dùng that)." },
       { id: "e5", type: "reorder", question: "Sắp xếp các từ thành câu đúng:", options: ["the", "dog", "that", "barks", "I", "saw"], answer: "I saw the dog that barks", explain_vi: "Trật tự: S + V + danh từ + that + mệnh đề quan hệ." },
+      { id: "e6", type: "choice", question: "That is the house ___ I grew up.", options: ["which", "who", "where"], answer: "where", explain_vi: "Chỉ nơi chốn (house) dùng where." },
+      { id: "e7", type: "fill", question: "The girl ___ father is a pilot studies in my class. (sở hữu)", answer: "whose", explain_vi: "Chỉ sở hữu dùng whose (= mà cha của cô ấy)." },
+      { id: "e8", type: "choice", question: "The movie ___ we watched last night was great.", options: ["who", "that", "whose"], answer: "that", explain_vi: "Chỉ vật (movie) dùng that hoặc which." },
+      { id: "e9", type: "reorder", question: "Sắp xếp các từ thành câu đúng:", options: ["who", "The", "teacher", "speaks", "French", "is", "Mrs.", "Lan"], answer: "The teacher who speaks French is Mrs. Lan", explain_vi: "Trật tự: Danh từ + who + mệnh đề quan hệ + be + bổ ngữ." },
+      { id: "e10", type: "fill", question: "The café ___ we met is closed now. (chỉ nơi chốn)", answer: "where", explain_vi: "Chỉ nơi chốn dùng where." },
     ],
   },
   {
@@ -86,7 +218,40 @@ export const B1_GRAMMAR: GrammarTopic[] = [
     level: "b1",
     title: "Modal Verbs (should / might / must)",
     title_vi: "Động từ khuyết thiếu (should / might / must)",
-    summary_vi: "Động từ khuyết thiếu + V nguyên thể. should: lời khuyên; might: khả năng có thể; must: bắt buộc hoặc suy đoán chắc chắn.",
+    summary_vi:
+      "Động từ khuyết thiếu + V nguyên thể. should: lời khuyên; might: khả năng có thể; must: bắt buộc hoặc suy đoán chắc chắn.",
+    sections: [
+      {
+        heading: "should — lời khuyên",
+        points: [
+          "should + V: đưa lời khuyên — You should see a doctor. — Bạn nên đi khám bác sĩ.",
+          "shouldn't + V: khuyên không nên — You shouldn't stay up late.",
+        ],
+      },
+      {
+        heading: "might — khả năng có thể",
+        points: [
+          "might + V: diễn tả điều có thể xảy ra — It might rain later. — Trời có thể mưa lúc sau.",
+          "might not + V: có thể không — She might not come to the party.",
+        ],
+      },
+      {
+        heading: "must — bắt buộc / suy đoán chắc chắn",
+        points: [
+          "must + V: bắt buộc — You must wear a helmet. — Bạn phải đội mũ bảo hiểm.",
+          "must + V: suy đoán — He must be tired. (Chắc hẳn anh ấy mệt.)",
+          "mustn't + V: cấm — You mustn't smoke here.",
+        ],
+      },
+      {
+        heading: "💡 Mẹo ghi nhớ",
+        points: [
+          "💡 Sau modal luôn là động từ nguyên thể, không chia, không thêm to.",
+          "💡 Phân biệt mustn't (cấm) với don't have to (không cần thiết).",
+          "💡 must không có dạng quá khứ — dùng had to thay thế.",
+        ],
+      },
+    ],
     points: [
       "should + V: lời khuyên — You should see a doctor. — Bạn nên đi khám bác sĩ.",
       "might + V: khả năng (có thể) — It might rain later. — Trời có thể mưa lúc sau.",
@@ -99,6 +264,11 @@ export const B1_GRAMMAR: GrammarTopic[] = [
       { id: "e3", type: "choice", question: "Drivers ___ stop at a red light.", options: ["might", "must", "should"], answer: "must", explain_vi: "Quy định bắt buộc dùng must." },
       { id: "e4", type: "fill", question: "You should ___ (be) careful on the road.", answer: "be", explain_vi: "Sau modal dùng động từ nguyên thể: be." },
       { id: "e5", type: "reorder", question: "Sắp xếp các từ thành câu đúng:", options: ["might", "She", "late", "be", "today"], answer: "She might be late today", explain_vi: "Trật tự: S + modal + V nguyên thể + phần còn lại." },
+      { id: "e6", type: "choice", question: "You ___ smoke in the hospital.", options: ["mustn't", "don't must", "shouldn't must"], answer: "mustn't", explain_vi: "Cấm dùng mustn't (must not)." },
+      { id: "e7", type: "fill", question: "He looks pale. He must ___ (feel) sick.", answer: "feel", explain_vi: "Suy đoán chắc chắn: must + V nguyên thể: feel." },
+      { id: "e8", type: "choice", question: "You ___ eat so much sugar. It's bad for you.", options: ["shouldn't", "mustn't", "might not"], answer: "shouldn't", explain_vi: "Lời khuyên không nên làm dùng shouldn't." },
+      { id: "e9", type: "reorder", question: "Sắp xếp các từ thành câu đúng:", options: ["must", "You", "your", "wear", "seatbelt"], answer: "You must wear your seatbelt", explain_vi: "Trật tự: S + must + V + O." },
+      { id: "e10", type: "fill", question: "She ___ not come to the party. She's busy. (có thể)", answer: "might", explain_vi: "Diễn tả khả năng có thể không xảy ra: might not." },
     ],
   },
   {
@@ -106,7 +276,34 @@ export const B1_GRAMMAR: GrammarTopic[] = [
     level: "b1",
     title: "Too / Enough",
     title_vi: "Cấu trúc too và enough",
-    summary_vi: "too = quá (mang nghĩa tiêu cực, đứng trước tính từ/trạng từ). enough = đủ (đứng SAU tính từ/trạng từ nhưng TRƯỚC danh từ).",
+    summary_vi:
+      "too = quá (mang nghĩa tiêu cực, đứng trước tính từ/trạng từ). enough = đủ (đứng SAU tính từ/trạng từ nhưng TRƯỚC danh từ).",
+    sections: [
+      {
+        heading: "Cấu trúc với too",
+        points: [
+          "too + adj/adv: This coffee is too hot. — Cà phê này quá nóng.",
+          "too + adj/adv + to V: He is too young to drive. — Anh ấy quá trẻ để lái xe.",
+          "too + adj/adv + for sb + to V: The box is too heavy for me to carry.",
+        ],
+      },
+      {
+        heading: "Cấu trúc với enough",
+        points: [
+          "adj/adv + enough: He is tall enough to reach the shelf. — Anh ấy đủ cao để với tới kệ.",
+          "enough + danh từ: I have enough money. — Tôi có đủ tiền.",
+          "adj + enough + to V: She is old enough to vote.",
+          "enough + danh từ + to V: We have enough time to finish.",
+        ],
+      },
+      {
+        heading: "💡 Mẹo ghi nhớ",
+        points: [
+          "💡 too mang nghĩa tiêu cực (quá ... nên không thể), khác very (rất — trung tính).",
+          "💡 Vị trí: too đứng TRƯỚC adj; enough đứng SAU adj nhưng TRƯỚC noun.",
+        ],
+      },
+    ],
     points: [
       "too + adj/adv: This coffee is too hot. — Cà phê này quá nóng.",
       "adj/adv + enough: He is tall enough to reach the shelf. — Anh ấy đủ cao để với tới kệ.",
@@ -119,6 +316,11 @@ export const B1_GRAMMAR: GrammarTopic[] = [
       { id: "e3", type: "choice", question: "We don't have ___ chairs for everyone.", options: ["enough", "too", "too much"], answer: "enough", explain_vi: "enough + danh từ (chairs): đủ ghế." },
       { id: "e4", type: "fill", question: "It's ___ cold to go swimming. (quá lạnh)", answer: "too", explain_vi: "Diễn tả 'quá' (nghĩa tiêu cực) dùng too." },
       { id: "e5", type: "reorder", question: "Sắp xếp các từ thành câu đúng:", options: ["is", "strong", "He", "enough", "to", "lift", "it"], answer: "He is strong enough to lift it", explain_vi: "Trật tự: S + be + adj + enough + to + V." },
+      { id: "e6", type: "fill", question: "The music is ___ loud. I can't concentrate. (quá)", answer: "too", explain_vi: "Diễn tả quá mức (tiêu cực) dùng too." },
+      { id: "e7", type: "choice", question: "This room is not big ___ for 30 students.", options: ["enough", "too", "very"], answer: "enough", explain_vi: "not + adj + enough: không đủ lớn." },
+      { id: "e8", type: "fill", question: "He runs fast ___ to win the race. (đủ)", answer: "enough", explain_vi: "Trạng từ + enough: fast enough." },
+      { id: "e9", type: "reorder", question: "Sắp xếp các từ thành câu đúng:", options: ["too", "The", "is", "soup", "hot", "to", "eat"], answer: "The soup is too hot to eat", explain_vi: "Trật tự: S + be + too + adj + to + V." },
+      { id: "e10", type: "choice", question: "Do we have ___ food for the party?", options: ["enough", "too", "too much enough"], answer: "enough", explain_vi: "enough + danh từ (food): đủ thức ăn." },
     ],
   },
 ];
