@@ -5,7 +5,6 @@ Giọng: tải model .onnx (+ .onnx.json) vào tts/voices/ — xem README.
 API:   GET /tts?text=...  -> audio/wav (có cache theo nội dung). GET /health.
 """
 import hashlib
-import io
 import os
 import struct
 import subprocess
@@ -36,10 +35,42 @@ def pick_model(voice: str) -> str:
     m = VOICES.get(voice) or VOICES[DEFAULT_VOICE]
     if os.path.exists(m):
         return m
-    # giọng chọn chưa tải -> ưu tiên cùng vùng, rồi giọng nào có sẵn
     region = (voice or "").split("-")[0]
     same = [v for k, v in VOICES.items() if k.startswith(region) and os.path.exists(v)]
     return same[0] if same else next((v for v in VOICES.values() if os.path.exists(v)), m)
+
+
+def _auto_ls(text: str, base_ls: float) -> float:
+    """Từ ngắn Piper đọc quá nhanh → tự kéo dài để rõ hơn."""
+    words = text.split()
+    if len(words) == 1 and len(text) <= 4:
+        return max(base_ls, 1.5)   # 3-4 ký tự: cat, dog, pen, bus
+    if len(words) == 1 and len(text) <= 6:
+        return max(base_ls, 1.35)  # 5-6 ký tự: apple, water, bread
+    if len(words) == 1 and len(text) <= 8:
+        return max(base_ls, 1.15)  # 7-8 ký tự: chicken, teacher
+    return base_ls
+
+
+def _add_silence_padding(wav_path: str, ms: int = 150):
+    """Thêm khoảng lặng đầu và cuối WAV để tránh bị cắt/rè khi phát."""
+    with open(wav_path, "rb") as f:
+        data = f.read()
+    if len(data) < 44:
+        return
+    # Đọc sample rate từ header (byte 24-27)
+    sr = struct.unpack_from("<I", data, 24)[0]
+    pad_samples = int(sr * ms / 1000)
+    silence = b"\x00\x00" * pad_samples  # 16-bit silence
+    audio = data[44:]
+    new_audio = silence + audio + silence
+    # Cập nhật header
+    header = bytearray(data[:44])
+    struct.pack_into("<I", header, 4, 36 + len(new_audio))
+    struct.pack_into("<I", header, 40, len(new_audio))
+    with open(wav_path, "wb") as f:
+        f.write(bytes(header))
+        f.write(new_audio)
 
 
 app = FastAPI(title="English Buddy — TTS (Piper)")
@@ -51,62 +82,6 @@ def health():
     return {"ok": True, "voices": {k: os.path.exists(v) for k, v in VOICES.items()}}
 
 
-def _is_short_word(text: str) -> bool:
-    """Từ đơn ngắn (1 từ, ≤6 ký tự) cần wrap trong câu để Piper phát âm chuẩn."""
-    words = text.split()
-    return len(words) == 1 and len(text) <= 6
-
-
-def _piper_synth(text: str, model: str, ls: float, out_path: str):
-    """Gọi Piper CLI tạo WAV."""
-    subprocess.run(
-        [PIPER, "-m", model, "-f", out_path, "--length-scale", str(ls)],
-        input=text.encode("utf-8"), check=True,
-        stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
-    )
-
-
-def _trim_prefix_wav(full_path: str, word: str, model: str, ls: float, out_path: str):
-    """Cắt WAV: tạo audio prefix ("Say, ") rồi bỏ phần đầu, giữ lại phần từ."""
-    import tempfile
-    with tempfile.NamedTemporaryFile(suffix=".wav", delete=False) as tmp:
-        prefix_path = tmp.name
-    try:
-        _piper_synth("Say,", model, ls, prefix_path)
-        with open(prefix_path, "rb") as f:
-            prefix_data = f.read()
-        with open(full_path, "rb") as f:
-            full_data = f.read()
-        # Cả 2 file cùng format PCM 16-bit mono → data bắt đầu từ byte 44
-        prefix_samples = len(prefix_data) - 44
-        full_samples = len(full_data) - 44
-        if prefix_samples > 0 and full_samples > prefix_samples:
-            # Cắt bớt 70% prefix (giữ lại khoảng lặng tự nhiên trước từ)
-            cut = int(prefix_samples * 0.70)
-            word_data = full_data[44 + cut:]
-            # Viết lại WAV header
-            data_len = len(word_data)
-            header = full_data[:44]
-            # Cập nhật data chunk size (byte 40-43) và RIFF size (byte 4-7)
-            header = bytearray(header)
-            struct.pack_into("<I", header, 4, 36 + data_len)
-            struct.pack_into("<I", header, 40, data_len)
-            with open(out_path, "wb") as f:
-                f.write(bytes(header))
-                f.write(word_data)
-            return
-    except Exception:
-        pass
-    finally:
-        try:
-            os.unlink(prefix_path)
-        except OSError:
-            pass
-    # Fallback: dùng file gốc
-    if full_path != out_path:
-        os.rename(full_path, out_path)
-
-
 @app.get("/tts")
 def tts(text: str, voice: str = DEFAULT_VOICE, ls: float = 1.0):
     t = (text or "").strip()[:400]
@@ -114,26 +89,20 @@ def tts(text: str, voice: str = DEFAULT_VOICE, ls: float = 1.0):
         return Response(status_code=400)
     model = pick_model(voice)
     ls = max(0.6, min(1.6, float(ls)))
+    ls = _auto_ls(t, ls)
 
-    # Cache key dựa trên nội dung gốc (v2 = bản có trim)
-    key = hashlib.sha1(f"v2|{os.path.basename(model)}|{ls}|{t}".encode("utf-8")).hexdigest()
+    key = hashlib.sha1(f"v3|{os.path.basename(model)}|{ls}|{t}".encode("utf-8")).hexdigest()
     path = os.path.join(CACHE, key + ".wav")
 
     if not os.path.exists(path):
         try:
-            if _is_short_word(t):
-                # Từ ngắn: wrap trong "Say, {word}." để Piper phát âm chuẩn, rồi cắt prefix
-                import tempfile
-                with tempfile.NamedTemporaryFile(suffix=".wav", delete=False) as tmp:
-                    full_path = tmp.name
-                _piper_synth(f"Say, {t}.", model, ls, full_path)
-                _trim_prefix_wav(full_path, t, model, ls, path)
-                try:
-                    os.unlink(full_path)
-                except OSError:
-                    pass
-            else:
-                _piper_synth(t, model, ls, path)
+            subprocess.run(
+                [PIPER, "-m", model, "-f", path, "--length-scale", str(ls)],
+                input=t.encode("utf-8"), check=True,
+                stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
+            )
+            # Thêm silence padding để tránh rè/cắt đầu cuối trên mobile
+            _add_silence_padding(path, ms=120)
         except Exception:
             return Response(status_code=500)
 
