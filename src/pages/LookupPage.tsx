@@ -18,7 +18,7 @@ interface LookupPageProps {
 }
 
 type Mode = "word" | "sentence";
-interface WordDetail { vi?: string[]; pos?: string[]; examples?: { en: string; vi: string }[]; synonyms?: string[]; antonyms?: string[]; note?: string; }
+interface WordDetail { vi?: string[]; pos?: string[]; examples?: { en: string; vi: string; pos?: string }[]; synonyms?: string[]; antonyms?: string[]; note?: string; }
 interface WordResult { query: string; dict: DictionaryResult | null; detail: WordDetail | null; vi: string; images: ImageResult[]; }
 
 export function LookupPage({ student }: LookupPageProps) {
@@ -226,6 +226,7 @@ function WordLookup({ student }: { student: Student }) {
                         <button type="button" className="ml-1.5 align-middle opacity-40 hover:opacity-100 transition-opacity" onClick={() => speakText(ex.en)}>
                           <Volume2 className="inline h-3.5 w-3.5" />
                         </button>
+                        {ex.pos && <span className="ml-1.5 rounded border border-border px-1.5 py-px text-[10px] font-extrabold text-muted-foreground uppercase">{ex.pos}</span>}
                       </p>
                       <p className="mt-0.5 text-sm font-semibold text-muted-foreground">{ex.vi}</p>
                     </div>

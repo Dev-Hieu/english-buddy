@@ -535,14 +535,14 @@ export function createApp() {
         body: JSON.stringify({
           model: process.env.DEEPSEEK_MODEL || "deepseek-chat",
           messages: [
-            { role: "system", content: `You are an English-Vietnamese dictionary. Given an English word, return a JSON object with:
-- "vi": array of Vietnamese meanings (all common meanings, e.g. ["tốt bụng, tử tế", "dễ chịu", "ngon", "đẹp, hay"])
-- "pos": array of main parts of speech used in modern English (e.g. ["adjective", "adverb"]), skip very rare usages
-- "examples": array of 2-3 natural example sentences with Vietnamese translations, format: {"en":"...","vi":"..."}
+            { role: "system", content: `You are an English-Vietnamese dictionary for Vietnamese learners. Given an English word, return a JSON object with:
+- "vi": array of Vietnamese meanings covering ALL common senses (e.g. for "nice": ["tốt bụng, tử tế", "dễ chịu", "ngon", "đẹp, hay"]). Each meaning should note which context it applies to.
+- "pos": array of parts of speech commonly used in modern English. Skip very rare usages (e.g. "nice" as a noun is extremely rare — omit it).
+- "examples": array of example sentences. IMPORTANT: include at least one example for EACH part of speech listed in "pos". Format: {"en":"...","vi":"...","pos":"adjective"}. For words with 2+ POS, provide 3-4 examples total to cover all POS.
 - "synonyms": array of 3-5 common synonyms
-- "antonyms": array of 1-3 common antonyms (empty if none)
-- "note": a short tip in Vietnamese for Vietnamese learners about common mistakes or usage (1-2 sentences, optional)
-Return ONLY valid JSON, no markdown.` },
+- "antonyms": array of 1-3 common antonyms (empty array if none)
+- "note": a short tip in Vietnamese for Vietnamese learners about common mistakes, usage differences, or collocations (1-2 sentences)
+Return ONLY valid JSON, no markdown, no code fences.` },
             { role: "user", content: word },
           ],
           temperature: 0.3,
