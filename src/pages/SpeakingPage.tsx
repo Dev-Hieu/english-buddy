@@ -107,6 +107,7 @@ export function SpeakingPage({ topicId, onBackHome }: SpeakingPageProps) {
             )}
           </div>
           <h2 className="text-4xl font-black capitalize">{word.word}</h2>
+          {word.meaning_vi ? <p className="text-lg font-extrabold text-primary">{word.meaning_vi}</p> : null}
           {word.phonetic ? <p className="font-bold text-muted-foreground">{word.phonetic}</p> : null}
           <Button type="button" variant="outline" onClick={() => speakText(word.word, word.audioUrl)}>
             <Volume2 className="h-5 w-5" /> Nghe mẫu
