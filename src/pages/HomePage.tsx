@@ -105,46 +105,46 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
       </header>
 
       {/* Hero */}
-      <section className="mt-3 overflow-hidden rounded-3xl bg-gradient-to-br from-primary to-success p-4 text-primary-foreground shadow-soft">
-        {/* Hàng 1: avatar + tên + stats */}
-        <div className="flex items-center gap-3">
-          <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-white/20 text-lg">
+      <section className="mt-3 overflow-hidden rounded-3xl bg-gradient-to-br from-primary to-success p-3.5 text-primary-foreground shadow-soft">
+        {/* Hàng 1: avatar + tên/lv */}
+        <div className="flex items-center gap-2.5">
+          <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-white/20 text-base">
             {avatarEmoji(student.avatar)}
           </div>
-          <div className="flex-1 min-w-0">
-            <p className="text-sm font-black leading-tight truncate">{student.name} <span className="font-bold opacity-70">· Lv {level} · Lớp {student.grade}</span></p>
-          </div>
-          <div className="flex items-center gap-1.5 shrink-0">
-            <span className="flex items-center gap-0.5 rounded-full bg-white/20 px-1.5 py-0.5 text-[11px] font-extrabold" title="Streak"><Flame className="h-3 w-3" />{streak}</span>
-            <span className="flex items-center gap-0.5 rounded-full bg-white/20 px-1.5 py-0.5 text-[11px] font-extrabold" title="XP"><Star className="h-3 w-3" />{xp}</span>
-            <button type="button" onClick={() => onNavigate("leaderboard")} className="flex items-center gap-0.5 rounded-full bg-white/25 px-1.5 py-0.5 text-[11px] font-extrabold hover:bg-white/40" title="Rank">
-              <Trophy className="h-3 w-3" />{weekRank ? `#${weekRank}` : "—"}
-            </button>
-          </div>
+          <p className="flex-1 min-w-0 text-sm font-black leading-tight truncate">
+            {student.name}
+          </p>
+          <span className="shrink-0 rounded-full bg-white/20 px-2 py-0.5 text-[10px] font-extrabold">Lv {level} · Lớp {student.grade}</span>
         </div>
-        {/* Hàng 2: mục tiêu + nút học */}
-        <div className="mt-3 flex items-center gap-3">
-          <ProgressRing value={learnedToday} max={goal} size={56} stroke={7}>
-            <span className="text-lg font-black leading-none">{learnedToday}</span>
+
+        {/* Hàng 2: ring + mục tiêu */}
+        <div className="mt-2.5 flex items-center gap-3">
+          <ProgressRing value={learnedToday} max={goal} size={52} stroke={6}>
+            <span className="text-base font-black leading-none">{learnedToday}</span>
             <span className="text-[9px] font-bold opacity-80">/{goal}</span>
           </ProgressRing>
-          <div className="flex-1 min-w-0">
-            <p className="text-sm font-black leading-tight">
-              {goalReached ? "Hoàn thành rồi! 🎉" : `Học ${goal - learnedToday} từ nữa nào`}
-            </p>
-            {earnedBadges.length > 0 && (
-              <div className="mt-1 flex flex-wrap gap-1">
-                {earnedBadges.slice(0, 3).map((b) => (
-                  <span key={b.id} title={b.label} className="rounded-full bg-white/15 px-1.5 py-px text-[10px] font-extrabold">{b.emoji}{b.label}</span>
-                ))}
-                {earnedBadges.length > 3 && <span className="text-[10px] font-bold opacity-70">+{earnedBadges.length - 3}</span>}
-              </div>
-            )}
-          </div>
-          <Button type="button" variant="accent" className="shrink-0" onClick={startLearning}>
-            <Play className="h-4 w-4" /> {resumeStarted ? "Học tiếp" : "Bắt đầu"}
-          </Button>
+          <p className="flex-1 min-w-0 text-[13px] font-black leading-snug">
+            {goalReached ? "Hoàn thành rồi! 🎉" : `Học ${goal - learnedToday} từ nữa nào`}
+          </p>
         </div>
+
+        {/* Hàng 3: stats + badges — wrap tự nhiên */}
+        <div className="mt-2 flex flex-wrap items-center gap-1">
+          <span className="flex items-center gap-0.5 rounded-full bg-white/20 px-1.5 py-0.5 text-[10px] font-extrabold"><Flame className="h-3 w-3" />{streak}</span>
+          <span className="flex items-center gap-0.5 rounded-full bg-white/20 px-1.5 py-0.5 text-[10px] font-extrabold"><Star className="h-3 w-3" />{xp}</span>
+          <button type="button" onClick={() => onNavigate("leaderboard")} className="flex items-center gap-0.5 rounded-full bg-white/25 px-1.5 py-0.5 text-[10px] font-extrabold hover:bg-white/40">
+            <Trophy className="h-3 w-3" />{weekRank ? `#${weekRank}` : "—"}
+          </button>
+          {earnedBadges.slice(0, 3).map((b) => (
+            <span key={b.id} title={b.label} className="rounded-full bg-white/15 px-1.5 py-0.5 text-[10px] font-extrabold">{b.emoji} {b.label}</span>
+          ))}
+          {earnedBadges.length > 3 && <span className="text-[10px] font-bold opacity-60">+{earnedBadges.length - 3}</span>}
+        </div>
+
+        {/* Hàng 4: nút học */}
+        <Button type="button" variant="accent" className="mt-2.5 w-full" onClick={startLearning}>
+          <Play className="h-4 w-4" /> {resumeStarted ? "Học tiếp" : "Bắt đầu học"}
+        </Button>
       </section>
 
       {/* Action cards gọn — chỉ hiện khi cần */}
