@@ -109,29 +109,16 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
         </div>
       </header>
 
-      {/* Hero: tên bé + mục tiêu hôm nay + streak/XP */}
-      <section className="mt-4 overflow-hidden rounded-3xl bg-gradient-to-br from-primary to-success p-5 text-primary-foreground shadow-soft">
-        <div className="mb-3 flex items-center gap-3">
-          <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-white/20 text-2xl">
-            {avatarEmoji(student.avatar)}
-          </div>
-          <div className="flex-1">
-            <p className="flex items-center gap-2 text-lg font-black leading-tight">
-              {student.name}
-              <span className="rounded-full bg-white/25 px-2 py-0.5 text-xs font-extrabold">Lv {level}</span>
-            </p>
-            <p className="text-sm font-bold opacity-80">
-              Lớp {student.grade}{levelLabel ? <> · {levelLabel}</> : null}
-            </p>
-          </div>
-        </div>
-        <div className="flex items-center gap-5">
-          <ProgressRing value={learnedToday} max={goal} size={82} stroke={9}>
-            <span className="text-2xl font-black leading-none">{learnedToday}</span>
-            <span className="text-[11px] font-bold opacity-90">/{goal}</span>
+      {/* Hero: mục tiêu (trái) + tài khoản (phải) — cùng 1 hàng */}
+      <section className="mt-4 overflow-hidden rounded-3xl bg-gradient-to-br from-primary to-success p-4 text-primary-foreground shadow-soft">
+        <div className="flex items-center gap-4">
+          {/* Mục tiêu bên trái */}
+          <ProgressRing value={learnedToday} max={goal} size={72} stroke={8}>
+            <span className="text-xl font-black leading-none">{learnedToday}</span>
+            <span className="text-[10px] font-bold opacity-90">/{goal}</span>
           </ProgressRing>
-          <div className="flex-1">
-            <h1 className="text-xl font-black leading-tight">
+          <div className="flex-1 min-w-0">
+            <h1 className="text-lg font-black leading-tight">
               {goalReached ? "Hoàn thành rồi! 🎉" : `Học ${goal - learnedToday} từ nữa nào`}
             </h1>
             <div className="mt-2 flex flex-wrap items-center gap-2">
@@ -151,8 +138,16 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
               </button>
             </div>
           </div>
+          {/* Tài khoản bên phải */}
+          <div className="flex flex-col items-center gap-1 text-center shrink-0">
+            <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-white/20 text-xl">
+              {avatarEmoji(student.avatar)}
+            </div>
+            <p className="text-sm font-black leading-tight">{student.name}</p>
+            <p className="text-[11px] font-bold opacity-80">Lv {level} · Lớp {student.grade}</p>
+          </div>
         </div>
-        <Button type="button" variant="accent" size="lg" className="mt-4 w-full" onClick={startLearning}>
+        <Button type="button" variant="accent" size="lg" className="mt-3 w-full" onClick={startLearning}>
           <Play className="h-5 w-5" /> {resumeStarted ? "Học tiếp" : "Bắt đầu học"}
         </Button>
       </section>
