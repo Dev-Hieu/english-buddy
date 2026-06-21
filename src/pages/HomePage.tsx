@@ -142,6 +142,15 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
             <p className="text-[11px] font-bold opacity-80">Lv {level} · Lớp {student.grade}</p>
           </div>
         </div>
+        {earnedBadges.length > 0 && (
+          <div className="mt-2 flex flex-wrap gap-1">
+            {earnedBadges.map((b) => (
+              <span key={b.id} title={b.label} className="rounded-full bg-white/20 px-2 py-0.5 text-[11px] font-extrabold">
+                {b.emoji} {b.label}
+              </span>
+            ))}
+          </div>
+        )}
         <Button type="button" variant="accent" size="lg" className="mt-3 w-full" onClick={startLearning}>
           <Play className="h-5 w-5" /> {resumeStarted ? "Học tiếp" : "Bắt đầu học"}
         </Button>
@@ -213,20 +222,6 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
           })}
         </div>
       </section>
-
-      {/* Huy hiệu */}
-      {earnedBadges.length ? (
-        <section className="mt-4">
-          <h2 className="mb-1.5 text-lg font-extrabold">Huy hiệu ({earnedBadges.length})</h2>
-          <div className="flex flex-wrap gap-1.5">
-            {earnedBadges.map((b) => (
-              <span key={b.id} title={b.label} className="flex items-center gap-1 rounded-full bg-accent/15 px-2.5 py-1 text-xs font-extrabold text-accent">
-                {b.emoji} {b.label}
-              </span>
-            ))}
-          </div>
-        </section>
-      ) : null}
 
       {/* Thêm */}
       <section className="mt-4 mb-4">
