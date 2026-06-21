@@ -4,7 +4,9 @@
 import { getVoicePrefs, LENGTH_SCALE, WEB_RATE, voiceKey, langOf, type Gender } from "./voicePrefs";
 
 const TTS_BASE: string = import.meta.env.VITE_TTS_URL ?? ""; // same-origin /tts (Caddy/vite proxy)
-let ttsOk: boolean | null = null; // null = chưa dò; true/false = đã biết dịch vụ có chạy không
+let ttsFailCount = 0; // đếm lỗi liên tiếp, reset khi thành công
+const TTS_MAX_FAILS = 3; // sau 3 lỗi liên tiếp mới tạm dừng thử Piper
+let ttsBackoffUntil = 0; // timestamp cho phép thử lại sau khi tạm dừng
 let current: HTMLAudioElement | null = null; // để dừng câu đang phát
 
 function stopAudio() {
@@ -48,19 +50,20 @@ function speakWithWebSpeech(text: string): void {
   window.speechSynthesis.speak(u);
 }
 
-// ── (D) Piper TTS tự host. Trả true nếu phát được; nhớ trạng thái để khỏi gọi lại khi dịch vụ tắt ──
+// ── (D) Piper TTS tự host. Retry thông minh: cho phép lỗi vài lần, backoff 30s rồi thử lại ──
 async function speakWithPiper(text: string): Promise<boolean> {
-  if (ttsOk === false) return false;
+  if (ttsFailCount >= TTS_MAX_FAILS && Date.now() < ttsBackoffUntil) return false;
   const p = getVoicePrefs();
   const url = `${TTS_BASE}/tts?text=${encodeURIComponent(text)}&voice=${voiceKey(p)}&ls=${LENGTH_SCALE[p.rate]}`;
   try {
     const res = await fetch(url);
-    if (!res.ok) { ttsOk = false; return false; }
-    ttsOk = true;
+    if (!res.ok) { ttsFailCount++; ttsBackoffUntil = Date.now() + 30_000; return false; }
+    ttsFailCount = 0; // reset khi thành công
     await playUrl(URL.createObjectURL(await res.blob()), true);
     return true;
   } catch {
-    ttsOk = false;
+    ttsFailCount++;
+    ttsBackoffUntil = Date.now() + 30_000; // thử lại sau 30s
     return false;
   }
 }
