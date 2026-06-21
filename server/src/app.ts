@@ -517,25 +517,54 @@ export function createApp() {
     res.json({ ok: true, wordId, url: url ?? "" });
   });
 
-  // ── Proxy dịch (MyMemory) 2 chiều + cache trong DB ──
+  // ── Dịch câu 2 chiều: DeepSeek AI (chính xác) → fallback MyMemory (miễn phí) ──
   app.get("/api/translate", async (req, res) => {
     const text = String(req.query.text || "").trim();
     const from = String(req.query.from || "en") === "vi" ? "vi" : "en";
     const to = from === "vi" ? "en" : (String(req.query.to || "vi") === "en" ? "en" : "vi");
     if (!text) return res.status(400).json({ error: "thiếu text" });
-    const cacheKey = `${from}|${to}|${text}`; // cache theo cả hướng dịch
+    const cacheKey = `ds|${from}|${to}|${text}`;
     const cached = db.prepare("SELECT translation FROM translation_cache WHERE text = ?").get(cacheKey) as any;
     if (cached) return res.json({ translation: cached.translation });
-    try {
-      const url = `https://api.mymemory.translated.net/get?q=${encodeURIComponent(text)}&langpair=${from}|${to}`;
-      const r = await fetch(url);
-      const data: any = await r.json();
-      const translation = data?.responseData?.translatedText || "";
-      db.prepare("INSERT OR REPLACE INTO translation_cache (text, translation) VALUES (?, ?)").run(cacheKey, translation);
-      res.json({ translation });
-    } catch {
-      res.status(502).json({ error: "translate proxy lỗi" });
+
+    const dsKey = process.env.DEEPSEEK_API_KEY || "";
+    let translation = "";
+
+    // DeepSeek AI — dịch chính xác
+    if (dsKey) {
+      try {
+        const langName = { en: "English", vi: "Vietnamese" };
+        const r = await fetch("https://api.deepseek.com/chat/completions", {
+          method: "POST",
+          headers: { "Content-Type": "application/json", Authorization: `Bearer ${dsKey}` },
+          body: JSON.stringify({
+            model: process.env.DEEPSEEK_MODEL || "deepseek-chat",
+            messages: [
+              { role: "system", content: `You are a translator. Translate from ${langName[from]} to ${langName[to]}. Return ONLY the translation, nothing else. Be accurate and natural.` },
+              { role: "user", content: text },
+            ],
+            temperature: 0.3,
+            max_tokens: 500,
+          }),
+        });
+        const data: any = await r.json();
+        translation = (data?.choices?.[0]?.message?.content || "").trim();
+      } catch { /* fallback below */ }
     }
+
+    // Fallback: MyMemory (miễn phí, kém chính xác hơn)
+    if (!translation) {
+      try {
+        const url = `https://api.mymemory.translated.net/get?q=${encodeURIComponent(text)}&langpair=${from}|${to}`;
+        const r = await fetch(url);
+        const data: any = await r.json();
+        translation = data?.responseData?.translatedText || "";
+      } catch { /* bỏ qua */ }
+    }
+
+    if (!translation) return res.status(502).json({ error: "translate proxy lỗi" });
+    db.prepare("INSERT OR REPLACE INTO translation_cache (text, translation) VALUES (?, ?)").run(cacheKey, translation);
+    res.json({ translation });
   });
 
   // Chế độ chat: AI bật khi server có key VÀ user trả phí (premium). Còn lại -> kịch bản.
