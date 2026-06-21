@@ -116,21 +116,26 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
             <h1 className="text-lg font-black leading-tight">
               {goalReached ? "Hoàn thành rồi! 🎉" : `Học ${goal - learnedToday} từ nữa nào`}
             </h1>
-            <div className="mt-2 flex flex-wrap items-center gap-2">
-              <span className="flex items-center gap-1 rounded-full bg-white/20 px-2.5 py-1 text-sm font-extrabold" title="Chuỗi ngày học">
-                <Flame className="h-4 w-4" /> {streak}
+            <div className="mt-1.5 flex flex-wrap items-center gap-1.5">
+              <span className="flex items-center gap-1 rounded-full bg-white/20 px-2 py-0.5 text-xs font-extrabold" title="Chuỗi ngày học">
+                <Flame className="h-3.5 w-3.5" /> {streak}
               </span>
-              <span className="flex items-center gap-1 rounded-full bg-white/20 px-2.5 py-1 text-sm font-extrabold" title="Điểm XP">
-                <Star className="h-4 w-4" /> {xp}
+              <span className="flex items-center gap-1 rounded-full bg-white/20 px-2 py-0.5 text-xs font-extrabold" title="Điểm XP">
+                <Star className="h-3.5 w-3.5" /> {xp}
               </span>
               <button
                 type="button"
                 onClick={() => onNavigate("leaderboard")}
-                title="Hạng tuần này — xem bảng xếp hạng"
-                className="flex items-center gap-1 rounded-full bg-white/25 px-2.5 py-1 text-sm font-extrabold transition-colors hover:bg-white/40"
+                title="Hạng tuần này"
+                className="flex items-center gap-1 rounded-full bg-white/25 px-2 py-0.5 text-xs font-extrabold transition-colors hover:bg-white/40"
               >
-                <Trophy className="h-4 w-4" /> {weekRank ? `#${weekRank}` : "—"}
+                <Trophy className="h-3.5 w-3.5" /> {weekRank ? `#${weekRank}` : "—"}
               </button>
+              {earnedBadges.map((b) => (
+                <span key={b.id} title={b.label} className="rounded-full bg-white/15 px-2 py-0.5 text-[11px] font-extrabold">
+                  {b.emoji} {b.label}
+                </span>
+              ))}
             </div>
           </div>
           {/* Tài khoản bên phải */}
@@ -142,15 +147,6 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
             <p className="text-[11px] font-bold opacity-80">Lv {level} · Lớp {student.grade}</p>
           </div>
         </div>
-        {earnedBadges.length > 0 && (
-          <div className="mt-2 flex flex-wrap gap-1">
-            {earnedBadges.map((b) => (
-              <span key={b.id} title={b.label} className="rounded-full bg-white/20 px-2 py-0.5 text-[11px] font-extrabold">
-                {b.emoji} {b.label}
-              </span>
-            ))}
-          </div>
-        )}
         <Button type="button" variant="accent" size="lg" className="mt-3 w-full" onClick={startLearning}>
           <Play className="h-5 w-5" /> {resumeStarted ? "Học tiếp" : "Bắt đầu học"}
         </Button>
