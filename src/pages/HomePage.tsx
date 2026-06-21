@@ -96,21 +96,7 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
     <main className="mx-auto w-full max-w-2xl px-4 pt-5">
       {/* App bar */}
       <header className="flex items-center justify-between">
-        <div className="flex items-center gap-3">
-          <ParrotLogo size={44} />
-          <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-secondary text-2xl shadow-card">
-            {avatarEmoji(student.avatar)}
-          </div>
-          <div>
-            <p className="flex items-center gap-2 text-lg font-extrabold leading-tight">
-              {student.name}
-              <span className="rounded-full bg-primary px-2 py-0.5 text-xs font-extrabold text-primary-foreground">Lv {level}</span>
-            </p>
-            <p className="text-sm font-semibold text-muted-foreground">
-              Lớp {student.grade}{levelLabel ? <> · <span className="font-extrabold text-primary">{levelLabel}</span></> : null}
-            </p>
-          </div>
-        </div>
+        <ParrotLogo size={38} />
         <div className="flex items-center gap-2">
           <VoicePicker />
           <ThemePicker />
@@ -123,16 +109,29 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
         </div>
       </header>
 
-      {/* Hero: mục tiêu hôm nay + streak/XP */}
-      <section className="mt-5 overflow-hidden rounded-3xl bg-gradient-to-br from-primary to-success p-5 text-primary-foreground shadow-soft">
+      {/* Hero: tên bé + mục tiêu hôm nay + streak/XP */}
+      <section className="mt-4 overflow-hidden rounded-3xl bg-gradient-to-br from-primary to-success p-5 text-primary-foreground shadow-soft">
+        <div className="mb-3 flex items-center gap-3">
+          <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-white/20 text-2xl">
+            {avatarEmoji(student.avatar)}
+          </div>
+          <div className="flex-1">
+            <p className="flex items-center gap-2 text-lg font-black leading-tight">
+              {student.name}
+              <span className="rounded-full bg-white/25 px-2 py-0.5 text-xs font-extrabold">Lv {level}</span>
+            </p>
+            <p className="text-sm font-bold opacity-80">
+              Lớp {student.grade}{levelLabel ? <> · {levelLabel}</> : null}
+            </p>
+          </div>
+        </div>
         <div className="flex items-center gap-5">
-          <ProgressRing value={learnedToday} max={goal} size={92} stroke={10}>
+          <ProgressRing value={learnedToday} max={goal} size={82} stroke={9}>
             <span className="text-2xl font-black leading-none">{learnedToday}</span>
             <span className="text-[11px] font-bold opacity-90">/{goal}</span>
           </ProgressRing>
           <div className="flex-1">
-            <p className="text-sm font-bold opacity-90">Mục tiêu hôm nay</p>
-            <h1 className="text-2xl font-black leading-tight">
+            <h1 className="text-xl font-black leading-tight">
               {goalReached ? "Hoàn thành rồi! 🎉" : `Học ${goal - learnedToday} từ nữa nào`}
             </h1>
             <div className="mt-2 flex flex-wrap items-center gap-2">
