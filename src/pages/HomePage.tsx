@@ -133,9 +133,9 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
           </ProgressRing>
           <div className="flex-1 min-w-0">
             <p className="text-base font-black leading-tight">
-              {goalReached ? "Hoàn thành rồi! 🎉" : `Học ${goal - learnedToday} từ nữa nào`}
+              {goalReached ? "Đạt mục tiêu 🎉" : `Cần học ${goal - learnedToday} từ`}
             </p>
-            <p className="text-sm font-bold opacity-75">Vốn từ: {learnedTotal} từ đã thuộc</p>
+            <p className="text-sm font-bold opacity-75">Vốn từ: {learnedTotal}</p>
           </div>
           <Button type="button" variant="accent" className="shrink-0" onClick={startLearning}>
             <Play className="h-5 w-5" /> {resumeStarted ? "Học tiếp" : "Bắt đầu"}
