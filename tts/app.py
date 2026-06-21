@@ -2,11 +2,10 @@
 
 Chạy:  cd tts && .venv/bin/uvicorn app:app --host 0.0.0.0 --port 8789
 Giọng: tải model .onnx (+ .onnx.json) vào tts/voices/ — xem README.
-API:   GET /tts?text=...  -> audio/wav (có cache theo nội dung). GET /health.
+API:   GET /tts?text=...  -> audio/mp3 (có cache theo nội dung). GET /health.
 """
 import hashlib
 import os
-import struct
 import subprocess
 import sys
 
@@ -16,11 +15,13 @@ from fastapi.middleware.cors import CORSMiddleware
 HERE = os.path.dirname(os.path.abspath(__file__))
 CACHE = os.environ.get("TTS_CACHE", os.path.join(HERE, "cache"))
 PIPER = os.environ.get("PIPER_BIN", os.path.join(os.path.dirname(sys.executable), "piper"))
+FFMPEG = os.environ.get("FFMPEG_BIN", "ffmpeg")
 os.makedirs(CACHE, exist_ok=True)
 
-# Giọng theo Vùng (Anh-Mỹ us / Anh-Anh gb) × Giới (nữ female / nam male). Đổi qua env nếu muốn.
+
 def _v(name):
     return os.path.join(HERE, "voices", name)
+
 
 VOICES = {
     "us-female": os.environ.get("PIPER_VOICE_US_F", _v("en_US-amy-medium.onnx")),
@@ -44,33 +45,12 @@ def _auto_ls(text: str, base_ls: float) -> float:
     """Từ ngắn Piper đọc quá nhanh → tự kéo dài để rõ hơn."""
     words = text.split()
     if len(words) == 1 and len(text) <= 4:
-        return max(base_ls, 1.5)   # 3-4 ký tự: cat, dog, pen, bus
+        return max(base_ls, 1.5)
     if len(words) == 1 and len(text) <= 6:
-        return max(base_ls, 1.35)  # 5-6 ký tự: apple, water, bread
+        return max(base_ls, 1.35)
     if len(words) == 1 and len(text) <= 8:
-        return max(base_ls, 1.15)  # 7-8 ký tự: chicken, teacher
+        return max(base_ls, 1.15)
     return base_ls
-
-
-def _add_silence_padding(wav_path: str, ms: int = 150):
-    """Thêm khoảng lặng đầu và cuối WAV để tránh bị cắt/rè khi phát."""
-    with open(wav_path, "rb") as f:
-        data = f.read()
-    if len(data) < 44:
-        return
-    # Đọc sample rate từ header (byte 24-27)
-    sr = struct.unpack_from("<I", data, 24)[0]
-    pad_samples = int(sr * ms / 1000)
-    silence = b"\x00\x00" * pad_samples  # 16-bit silence
-    audio = data[44:]
-    new_audio = silence + audio + silence
-    # Cập nhật header
-    header = bytearray(data[:44])
-    struct.pack_into("<I", header, 4, 36 + len(new_audio))
-    struct.pack_into("<I", header, 40, len(new_audio))
-    with open(wav_path, "wb") as f:
-        f.write(bytes(header))
-        f.write(new_audio)
 
 
 app = FastAPI(title="English Buddy — TTS (Piper)")
@@ -91,21 +71,36 @@ def tts(text: str, voice: str = DEFAULT_VOICE, ls: float = 1.0):
     ls = max(0.6, min(1.6, float(ls)))
     ls = _auto_ls(t, ls)
 
-    key = hashlib.sha1(f"v3|{os.path.basename(model)}|{ls}|{t}".encode("utf-8")).hexdigest()
-    path = os.path.join(CACHE, key + ".wav")
+    key = hashlib.sha1(f"v4|{os.path.basename(model)}|{ls}|{t}".encode("utf-8")).hexdigest()
+    mp3_path = os.path.join(CACHE, key + ".mp3")
 
-    if not os.path.exists(path):
+    if not os.path.exists(mp3_path):
+        wav_path = mp3_path.replace(".mp3", ".wav")
         try:
+            # Piper → WAV 22050Hz
             subprocess.run(
-                [PIPER, "-m", model, "-f", path, "--length-scale", str(ls)],
+                [PIPER, "-m", model, "-f", wav_path, "--length-scale", str(ls)],
                 input=t.encode("utf-8"), check=True,
                 stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
             )
-            # Thêm silence padding để tránh rè/cắt đầu cuối trên mobile
-            _add_silence_padding(path, ms=120)
+            # WAV → MP3 44100Hz (tương thích mobile, nhẹ hơn, không rè)
+            subprocess.run(
+                [FFMPEG, "-y", "-i", wav_path,
+                 "-ar", "44100",       # resample lên 44.1kHz
+                 "-af", "adelay=100|100,apad=pad_dur=0.1",  # pad 100ms đầu + cuối
+                 "-b:a", "128k",       # bitrate đủ rõ
+                 mp3_path],
+                check=True,
+                stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
+            )
         except Exception:
             return Response(status_code=500)
+        finally:
+            try:
+                os.unlink(wav_path)
+            except OSError:
+                pass
 
-    with open(path, "rb") as f:
+    with open(mp3_path, "rb") as f:
         data = f.read()
-    return Response(data, media_type="audio/wav", headers={"Cache-Control": "public, max-age=31536000"})
+    return Response(data, media_type="audio/mpeg", headers={"Cache-Control": "public, max-age=31536000"})
