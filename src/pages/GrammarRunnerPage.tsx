@@ -63,24 +63,61 @@ export function GrammarRunnerPage({ topicId, studentId, onBackHome }: GrammarRun
 
   // ── Màn học ──
   if (phase === "learn") {
+    const hasSections = topic.sections && topic.sections.length > 0;
     return (
       <main className="mx-auto w-full max-w-xl px-4">
         <SessionHeader title={topic.title_vi} onClose={onBackHome} />
         <Card>
-          <CardContent className="space-y-4 p-5">
+          <CardContent className="space-y-3 p-5">
             <div>
               <h2 className="text-2xl font-black">{topic.title}</h2>
-              <p className="mt-1 font-semibold text-muted-foreground">{topic.summary_vi}</p>
+              <p className="mt-1 text-base font-semibold text-muted-foreground">{topic.summary_vi}</p>
             </div>
-            <ul className="space-y-2">
-              {topic.points.map((p, i) => (
-                <li key={i} className="flex gap-2 rounded-2xl bg-muted p-3 font-semibold">
-                  <Sparkles className="mt-0.5 h-4 w-4 shrink-0 text-primary" /> <span>{p}</span>
-                </li>
-              ))}
-            </ul>
           </CardContent>
         </Card>
+
+        {hasSections ? (
+          <div className="mt-3 space-y-3">
+            {topic.sections!.map((sec, si) => (
+              <Card key={si}>
+                <CardContent className="p-4">
+                  <h3 className="mb-2 text-lg font-black text-primary">{sec.heading}</h3>
+                  <ul className="space-y-1.5">
+                    {sec.points.map((p, pi) => {
+                      const isTip = p.startsWith("💡");
+                      return (
+                        <li key={pi} className={cn(
+                          "rounded-xl px-3 py-2 text-sm font-semibold",
+                          isTip ? "bg-accent/10 text-accent" : "bg-muted"
+                        )}>
+                          {p}
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        ) : (
+          <Card className="mt-3">
+            <CardContent className="space-y-2 p-4">
+              {topic.points.map((p, i) => {
+                const isTip = p.startsWith("💡");
+                return (
+                  <div key={i} className={cn(
+                    "flex gap-2 rounded-xl px-3 py-2 text-sm font-semibold",
+                    isTip ? "bg-accent/10 text-accent" : "bg-muted"
+                  )}>
+                    {!isTip && <Sparkles className="mt-0.5 h-4 w-4 shrink-0 text-primary" />}
+                    <span>{p}</span>
+                  </div>
+                );
+              })}
+            </CardContent>
+          </Card>
+        )}
+
         <Button type="button" size="lg" className="mt-4 w-full" onClick={() => setPhase("quiz")}>
           Làm {topic.exercises.length} bài tập <ArrowRight className="h-5 w-5" />
         </Button>

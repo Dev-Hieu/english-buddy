@@ -11,12 +11,18 @@ export interface GrammarExercise {
   explain_vi?: string; // giải thích ngắn vì sao đúng
 }
 
+export interface GrammarSection {
+  heading: string;
+  points: string[];
+}
+
 export interface GrammarTopic {
   id: string;
   level: Level;
   title: string; // tiêu đề tiếng Anh, vd "Present Simple"
   title_vi: string; // "Thì hiện tại đơn"
   summary_vi: string; // giải thích ngắn gọn bằng tiếng Việt
-  points: string[]; // các ý/quy tắc + ví dụ (en kèm vi)
+  sections?: GrammarSection[]; // khối lý thuyết tách riêng (ưu tiên hiện nếu có)
+  points: string[]; // các ý/quy tắc + ví dụ (fallback nếu không có sections)
   exercises: GrammarExercise[];
 }
