@@ -7,6 +7,7 @@ import { translate, translateToVi, type Lang } from "@/services/translateService
 import { saveLookup, getLookupHistory } from "@/services/progressService";
 import { speakText } from "@/services/speechService";
 import { normalizeWord } from "@/utils/normalizeWord";
+import { apiRequest } from "@/services/api";
 import { cn } from "@/components/ui/cn";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -17,7 +18,8 @@ interface LookupPageProps {
 }
 
 type Mode = "word" | "sentence";
-interface WordResult { query: string; dict: DictionaryResult | null; vi: string; images: ImageResult[]; }
+interface WordDetail { vi?: string[]; pos?: string[]; examples?: { en: string; vi: string }[]; synonyms?: string[]; antonyms?: string[]; note?: string; }
+interface WordResult { query: string; dict: DictionaryResult | null; detail: WordDetail | null; vi: string; images: ImageResult[]; }
 
 export function LookupPage({ student }: LookupPageProps) {
   const [mode, setMode] = useState<Mode>("word");
@@ -87,12 +89,14 @@ function WordLookup({ student }: { student: Student }) {
       viMeaning = raw;
     }
     if (!englishWord) { setLoading(false); setError(`Không tìm thấy "${raw}".`); return; }
-    const [dict, images] = await Promise.all([
+    const [dict, images, detail] = await Promise.all([
       getWordDefinition(englishWord).catch(() => null),
       getWordImages(englishWord).catch(() => [] as ImageResult[]),
+      apiRequest<WordDetail>(`/api/word-detail?word=${encodeURIComponent(englishWord)}`, { auth: false }).catch(() => null),
     ]);
     setLoading(false);
-    setResult({ query: englishWord, dict, vi: viMeaning, images });
+    const richVi = detail?.vi?.length ? detail.vi.join("; ") : viMeaning;
+    setResult({ query: englishWord, dict, detail, vi: richVi, images });
   };
 
   const save = async () => {
@@ -169,32 +173,76 @@ function WordLookup({ student }: { student: Student }) {
               </Button>
             </div>
 
-            {/* Nghĩa tiếng Việt */}
+            {/* Nghĩa tiếng Việt (từ AI — đa nghĩa) */}
             {result.vi && (
-              <div className="rounded-xl bg-primary/10 px-3 py-2">
+              <div className="rounded-xl bg-primary/10 px-3 py-2.5">
                 <p className="text-lg font-extrabold text-primary">{result.vi}</p>
               </div>
             )}
 
-            {/* Từ loại + định nghĩa + ví dụ */}
-            {result.dict?.meanings.map((m, i) => (
+            {/* Từ loại (từ AI — lọc nghĩa hiếm) */}
+            {result.detail?.pos?.length ? (
+              <div className="flex flex-wrap gap-1.5">
+                {result.detail.pos.map((p) => (
+                  <span key={p} className="rounded-lg bg-muted px-2 py-0.5 text-xs font-extrabold text-muted-foreground uppercase">{p}</span>
+                ))}
+              </div>
+            ) : null}
+
+            {/* Ví dụ từ AI (song ngữ EN-VI) */}
+            {result.detail?.examples?.length ? (
+              <div className="space-y-2">
+                <p className="text-xs font-extrabold text-muted-foreground uppercase">Ví dụ</p>
+                {result.detail.examples.map((ex, i) => (
+                  <div key={i} className="rounded-xl bg-muted/50 px-3 py-2">
+                    <p className="text-sm font-bold flex items-center gap-1">
+                      {ex.en}
+                      <button type="button" className="opacity-50 hover:opacity-100 shrink-0" onClick={() => speakText(ex.en)}>
+                        <Volume2 className="inline h-3.5 w-3.5" />
+                      </button>
+                    </p>
+                    <p className="text-sm font-semibold text-muted-foreground">{ex.vi}</p>
+                  </div>
+                ))}
+              </div>
+            ) : result.dict?.meanings.map((m, i) => (
+              /* Fallback: dùng Free Dictionary nếu AI không trả */
               <div key={i} className="space-y-1.5">
                 <span className="inline-block rounded-lg bg-muted px-2 py-0.5 text-xs font-extrabold text-muted-foreground uppercase">{m.partOfSpeech}</span>
-                {m.definitions.slice(0, 3).map((def, j) => (
+                {m.definitions.slice(0, 2).map((def, j) => (
                   <div key={j} className="pl-3 border-l-2 border-border">
                     <p className="text-sm font-bold">{j + 1}. {def}</p>
                   </div>
                 ))}
-                {m.examples.slice(0, 2).map((ex, j) => (
+                {m.examples.slice(0, 1).map((ex, j) => (
                   <p key={j} className="pl-3 text-sm font-semibold italic text-muted-foreground">
                     💬 "{ex}"
-                    <button type="button" className="ml-1 opacity-60 hover:opacity-100" onClick={() => speakText(ex)}>
-                      <Volume2 className="inline h-3.5 w-3.5" />
-                    </button>
+                    <button type="button" className="ml-1 opacity-60 hover:opacity-100" onClick={() => speakText(ex)}><Volume2 className="inline h-3.5 w-3.5" /></button>
                   </p>
                 ))}
               </div>
             ))}
+
+            {/* Từ đồng nghĩa / trái nghĩa */}
+            {(result.detail?.synonyms?.length || result.detail?.antonyms?.length) ? (
+              <div className="flex flex-wrap gap-x-4 gap-y-1 text-sm">
+                {result.detail?.synonyms?.length ? (
+                  <p><span className="font-extrabold text-muted-foreground">≈</span> {result.detail.synonyms.map((s, i) => (
+                    <button key={s} type="button" onClick={() => search(s)} className="font-bold text-primary hover:underline">{s}{i < result.detail!.synonyms!.length - 1 ? ", " : ""}</button>
+                  ))}</p>
+                ) : null}
+                {result.detail?.antonyms?.length ? (
+                  <p><span className="font-extrabold text-muted-foreground">≠</span> {result.detail.antonyms.map((a, i) => (
+                    <button key={a} type="button" onClick={() => search(a)} className="font-bold text-accent hover:underline">{a}{i < result.detail!.antonyms!.length - 1 ? ", " : ""}</button>
+                  ))}</p>
+                ) : null}
+              </div>
+            ) : null}
+
+            {/* Mẹo cho người Việt */}
+            {result.detail?.note && (
+              <p className="rounded-xl bg-accent/10 px-3 py-2 text-sm font-bold text-accent">💡 {result.detail.note}</p>
+            )}
 
             {/* Nút lưu */}
             <Button type="button" className="w-full" variant={saved ? "outline" : "default"} onClick={save} disabled={saved}>

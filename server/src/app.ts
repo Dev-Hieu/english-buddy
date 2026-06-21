@@ -517,7 +517,49 @@ export function createApp() {
     res.json({ ok: true, wordId, url: url ?? "" });
   });
 
-  // ── Dịch câu 2 chiều: premium → DeepSeek AI (chính xác), free → MyMemory ──
+  // ── Tra từ chi tiết (DeepSeek AI) — nghĩa VN phong phú, ví dụ, từ đồng/trái nghĩa ──
+  app.get("/api/word-detail", async (req, res) => {
+    const word = String(req.query.word || "").trim().toLowerCase();
+    if (!word) return res.status(400).json({ error: "thiếu word" });
+    const cacheKey = `wd|${word}`;
+    const cached = db.prepare("SELECT translation FROM translation_cache WHERE text = ?").get(cacheKey) as any;
+    if (cached) { try { return res.json(JSON.parse(cached.translation)); } catch { /* regenerate */ } }
+
+    const dsKey = process.env.DEEPSEEK_API_KEY || "";
+    if (!dsKey) return res.status(503).json({ error: "chưa cấu hình AI" });
+
+    try {
+      const r = await fetch("https://api.deepseek.com/chat/completions", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Authorization: `Bearer ${dsKey}` },
+        body: JSON.stringify({
+          model: process.env.DEEPSEEK_MODEL || "deepseek-chat",
+          messages: [
+            { role: "system", content: `You are an English-Vietnamese dictionary. Given an English word, return a JSON object with:
+- "vi": array of Vietnamese meanings (all common meanings, e.g. ["tốt bụng, tử tế", "dễ chịu", "ngon", "đẹp, hay"])
+- "pos": array of main parts of speech used in modern English (e.g. ["adjective", "adverb"]), skip very rare usages
+- "examples": array of 2-3 natural example sentences with Vietnamese translations, format: {"en":"...","vi":"..."}
+- "synonyms": array of 3-5 common synonyms
+- "antonyms": array of 1-3 common antonyms (empty if none)
+- "note": a short tip in Vietnamese for Vietnamese learners about common mistakes or usage (1-2 sentences, optional)
+Return ONLY valid JSON, no markdown.` },
+            { role: "user", content: word },
+          ],
+          temperature: 0.3,
+          max_tokens: 800,
+        }),
+      });
+      const data: any = await r.json();
+      const raw = (data?.choices?.[0]?.message?.content || "").trim();
+      const detail = JSON.parse(raw);
+      db.prepare("INSERT OR REPLACE INTO translation_cache (text, translation) VALUES (?, ?)").run(cacheKey, JSON.stringify(detail));
+      res.json(detail);
+    } catch {
+      res.status(502).json({ error: "AI lỗi" });
+    }
+  });
+
+  // ── Dịch câu 2 chiều: premium → DeepSeek AI (chính xác), free → Google Translate ──
   // Hỗ trợ cả có auth (biết premium) lẫn không auth (mặc định free).
   app.get("/api/translate", async (req, res) => {
     const text = String(req.query.text || "").trim();
