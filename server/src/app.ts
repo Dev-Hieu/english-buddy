@@ -534,7 +534,7 @@ export function createApp() {
       if (u?.isPremium) isPremium = true;
     }
 
-    const engine = isPremium ? "ds" : "mm";
+    const engine = isPremium ? "ds" : "gt";
     const cacheKey = `${engine}|${from}|${to}|${text}`;
     const cached = db.prepare("SELECT translation FROM translation_cache WHERE text = ?").get(cacheKey) as any;
     if (cached) return res.json({ translation: cached.translation, engine });
@@ -566,13 +566,12 @@ export function createApp() {
       }
     }
 
-    // MyMemory (miễn phí) — dùng cho free hoặc fallback khi DeepSeek lỗi
+    // Google Translate (miễn phí, chất lượng cao) — dùng cho free hoặc fallback khi DeepSeek lỗi
     if (!translation) {
       try {
-        const url = `https://api.mymemory.translated.net/get?q=${encodeURIComponent(text)}&langpair=${from}|${to}`;
-        const r = await fetch(url);
-        const data: any = await r.json();
-        translation = data?.responseData?.translatedText || "";
+        const { default: translate } = await import("google-translate-api-x") as any;
+        const r = await translate(text, { from, to });
+        translation = r?.text || "";
       } catch { /* bỏ qua */ }
     }
 
