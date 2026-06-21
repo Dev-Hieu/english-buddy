@@ -50,20 +50,19 @@ function speakWithWebSpeech(text: string): void {
   window.speechSynthesis.speak(u);
 }
 
-// ── (D) Piper TTS tự host. Retry thông minh: cho phép lỗi vài lần, backoff 30s rồi thử lại ──
+// ── (D) Piper TTS tự host. Dùng URL trực tiếp (không blob) để tương thích mobile tốt hơn ──
 async function speakWithPiper(text: string): Promise<boolean> {
   if (ttsFailCount >= TTS_MAX_FAILS && Date.now() < ttsBackoffUntil) return false;
   const p = getVoicePrefs();
   const url = `${TTS_BASE}/tts?text=${encodeURIComponent(text)}&voice=${voiceKey(p)}&ls=${LENGTH_SCALE[p.rate]}`;
   try {
-    const res = await fetch(url);
-    if (!res.ok) { ttsFailCount++; ttsBackoffUntil = Date.now() + 30_000; return false; }
-    ttsFailCount = 0; // reset khi thành công
-    await playUrl(URL.createObjectURL(await res.blob()), true);
+    // Dùng URL trực tiếp thay vì fetch+blob — tránh lỗi decode trên mobile
+    await playUrl(url);
+    ttsFailCount = 0;
     return true;
   } catch {
     ttsFailCount++;
-    ttsBackoffUntil = Date.now() + 30_000; // thử lại sau 30s
+    ttsBackoffUntil = Date.now() + 30_000;
     return false;
   }
 }
