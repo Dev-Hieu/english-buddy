@@ -49,6 +49,16 @@ def health():
     return {"ok": True, "voices": {k: os.path.exists(v) for k, v in VOICES.items()}}
 
 
+def _auto_ls(text: str, base_ls: float) -> float:
+    """Từ ngắn (1-2 âm tiết) Piper đọc quá nhanh → tự kéo dài để rõ hơn."""
+    words = text.split()
+    if len(words) == 1 and len(text) <= 5:
+        return max(base_ls, 1.35)  # từ 1 âm tiết: cat, dog, pen
+    if len(words) == 1 and len(text) <= 8:
+        return max(base_ls, 1.2)   # từ 2 âm tiết: apple, water
+    return base_ls
+
+
 @app.get("/tts")
 def tts(text: str, voice: str = DEFAULT_VOICE, ls: float = 1.0):
     t = (text or "").strip()[:400]  # giới hạn để tránh lạm dụng
@@ -56,6 +66,7 @@ def tts(text: str, voice: str = DEFAULT_VOICE, ls: float = 1.0):
         return Response(status_code=400)
     model = pick_model(voice)
     ls = max(0.6, min(1.6, float(ls)))  # >1 chậm hơn, <1 nhanh hơn
+    ls = _auto_ls(t, ls)  # kéo dài từ ngắn cho rõ
     # Cache theo (giọng + tốc độ + nội dung): lần sau phát ngay, gần như miễn phí.
     key = hashlib.sha1(f"{os.path.basename(model)}|{ls}|{t}".encode("utf-8")).hexdigest()
     path = os.path.join(CACHE, key + ".wav")
