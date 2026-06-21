@@ -98,7 +98,7 @@ export function SpeakingPage({ topicId, onBackHome }: SpeakingPageProps) {
 
       <Card>
         <CardContent className="flex flex-col items-center gap-4 p-6 text-center">
-          {word.imageUrl ? <img src={word.imageUrl} alt="" className="h-36 w-full rounded-2xl object-cover" /> : null}
+          {word.imageUrl ? <img src={word.imageUrl} alt="" className="h-56 w-full rounded-2xl bg-secondary object-contain" /> : null}
           <h2 className="text-4xl font-black capitalize">{word.word}</h2>
           {word.phonetic ? <p className="font-bold text-muted-foreground">{word.phonetic}</p> : null}
           <Button type="button" variant="outline" onClick={() => speakText(word.word, word.audioUrl)}>
