@@ -67,13 +67,10 @@ async function speakWithPiper(text: string): Promise<boolean> {
   }
 }
 
-export function speakText(text: string, audioUrl?: string): void {
+export function speakText(text: string, _audioUrl?: string): void {
   const clean = (text || "").trim();
-  if (!clean && !audioUrl) return;
-  if (audioUrl) {
-    playUrl(audioUrl).catch(() => fallbackSpeak(clean));
-    return;
-  }
+  if (!clean) return;
+  // Luôn dùng Edge TTS (chất lượng cao, đồng nhất) — bỏ qua dictionary audioUrl (chất lượng thấp).
   fallbackSpeak(clean);
 }
 
