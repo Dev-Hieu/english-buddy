@@ -3,9 +3,11 @@ import { useEffect, useRef, useState } from "react";
 import { CHAT_SCENARIOS } from "@/data/chatScenarios";
 import { getChatStatus, sendChat } from "@/services/chatService";
 import { speakText } from "@/services/speechService";
+import { translateToVi } from "@/services/translateService";
 import type { ChatMessage, ChatScenario, Student } from "@/types";
 import { Button } from "@/components/ui/button";
 import { SessionHeader } from "@/components/layout/SessionHeader";
+import { avatarEmoji } from "@/components/ui/emoji";
 import { cn } from "@/components/ui/cn";
 
 interface ConversationPageProps {
@@ -20,32 +22,56 @@ function splitReply(text: string): { en: string; hint: string } {
   return { en: text.slice(0, idx).trim(), hint: text.slice(idx).trim() };
 }
 
-function Bubbles({ messages }: { messages: ChatMessage[] }) {
+// Avatar tròn cho nhân vật trò chuyện (bot) và người học.
+function Avatar({ emoji }: { emoji: string }) {
+  return <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-secondary text-xl shadow-card">{emoji}</span>;
+}
+
+// 1 bong bóng chat: bấm vào câu -> dịch tiếng Việt để tra cứu.
+function Bubble({ m, botAvatar, userAvatar }: { m: ChatMessage; botAvatar: string; userAvatar: string }) {
+  const [vi, setVi] = useState<string | null>(null);
+  const [loading, setLoading] = useState(false);
+  const isUser = m.role === "user";
+  const { en, hint } = isUser ? { en: m.content, hint: "" } : splitReply(m.content);
+
+  const toggle = async () => {
+    if (vi !== null) { setVi(null); return; } // bấm lần nữa -> ẩn
+    setLoading(true);
+    try { setVi(await translateToVi(en)); }
+    catch { setVi("Chưa dịch được, thử lại sau."); }
+    finally { setLoading(false); }
+  };
+
+  if (isUser) {
+    return (
+      <div className="flex items-end justify-end gap-2">
+        <div className="max-w-[78%]">
+          <button type="button" onClick={toggle} className="block w-full rounded-2xl rounded-br-md bg-primary px-4 py-2 text-left font-bold text-primary-foreground transition active:scale-[0.99]">{en}</button>
+          {loading ? <p className="px-2 pt-1 text-right text-xs font-semibold text-muted-foreground">Đang dịch…</p> : null}
+          {vi ? <p className="px-2 pt-1 text-right text-sm font-semibold text-accent">🇻🇳 {vi}</p> : null}
+        </div>
+        <Avatar emoji={userAvatar} />
+      </div>
+    );
+  }
   return (
-    <>
-      {messages.map((m, i) => {
-        if (m.role === "user") {
-          return (
-            <div key={i} className="flex justify-end">
-              <div className="max-w-[80%] rounded-2xl rounded-br-md bg-primary px-4 py-2 font-bold text-primary-foreground">{m.content}</div>
-            </div>
-          );
-        }
-        const { en, hint } = splitReply(m.content);
-        return (
-          <div key={i} className="flex justify-start">
-            <div className="max-w-[85%] space-y-1">
-              <div className="flex items-start gap-2 rounded-2xl rounded-bl-md bg-card px-4 py-2 font-bold shadow-card">
-                <span className="flex-1">{en}</span>
-                <button type="button" aria-label="Nghe" onClick={() => speakText(en)} className="mt-0.5 shrink-0 text-muted-foreground"><Volume2 className="h-4 w-4" /></button>
-              </div>
-              {hint ? <p className="px-2 text-sm font-semibold text-accent">{hint}</p> : null}
-            </div>
-          </div>
-        );
-      })}
-    </>
+    <div className="flex items-end justify-start gap-2">
+      <Avatar emoji={botAvatar} />
+      <div className="max-w-[80%]">
+        <div className="flex items-start gap-2 rounded-2xl rounded-bl-md bg-card px-4 py-2 font-bold shadow-card">
+          <button type="button" onClick={toggle} className="flex-1 text-left transition active:scale-[0.99]">{en}</button>
+          <button type="button" aria-label="Nghe" onClick={() => speakText(en)} className="mt-0.5 shrink-0 text-muted-foreground"><Volume2 className="h-4 w-4" /></button>
+        </div>
+        {hint ? <p className="px-2 pt-0.5 text-sm font-semibold text-accent">{hint}</p> : null}
+        {loading ? <p className="px-2 pt-1 text-xs font-semibold text-muted-foreground">Đang dịch…</p> : null}
+        {vi ? <p className="px-2 pt-1 text-sm font-semibold text-accent">🇻🇳 {vi}</p> : null}
+      </div>
+    </div>
   );
+}
+
+function Bubbles({ messages, botAvatar, userAvatar }: { messages: ChatMessage[]; botAvatar: string; userAvatar: string }) {
+  return <>{messages.map((m, i) => <Bubble key={i} m={m} botAvatar={botAvatar} userAvatar={userAvatar} />)}</>;
 }
 
 export function ConversationPage({ student, onBackHome }: ConversationPageProps) {
@@ -125,8 +151,9 @@ export function ConversationPage({ student, onBackHome }: ConversationPageProps)
     <main className="mx-auto flex h-[100dvh] w-full max-w-2xl flex-col px-4">
       <SessionHeader title={`${scenario.emoji} ${scenario.title_vi}`} onClose={backToMenu} />
 
+      <p className="pb-1 text-center text-xs font-semibold text-muted-foreground">💬 Mẹo: bấm vào câu để xem nghĩa tiếng Việt</p>
       <div className="flex-1 space-y-3 overflow-y-auto pb-3">
-        <Bubbles messages={messages} />
+        <Bubbles messages={messages} botAvatar={scenario.emoji} userAvatar={avatarEmoji(student.avatar)} />
         {loading ? <div className="flex justify-start"><div className="rounded-2xl bg-card px-4 py-2 shadow-card"><Loader2 className="h-5 w-5 animate-spin text-primary" /></div></div> : null}
         {error ? <p className="text-center text-sm font-bold text-red-600">{error}</p> : null}
         <div ref={endRef} />
