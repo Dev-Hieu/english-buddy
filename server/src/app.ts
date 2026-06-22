@@ -4,7 +4,7 @@ import { writeFileSync } from "node:fs";
 import { randomUUID } from "node:crypto";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import type { Request, Response } from "express";
+import type { NextFunction, Request, Response } from "express";
 import { db, initSchema } from "./db.js";
 import { hashPassword, loginUser, registerUser, requireAdmin, requireAuth } from "./auth.js";
 import { nextReview } from "../../src/utils/spacedRepetition";
@@ -325,6 +325,136 @@ export function createApp() {
     if (!["active", "pending", "rejected"].includes(status)) return res.status(400).json({ error: "status không hợp lệ" });
     db.prepare("UPDATE users SET status = ? WHERE id = ?").run(status, req.params.id);
     res.json({ ok: true, status });
+  });
+
+  // ── Classes (admin CRUD) ──
+  app.get("/api/admin/classes", requireAdmin, (_req, res) => {
+    const rows = db.prepare(`
+      SELECT c.*, u.name AS teacherName, u.email AS teacherEmail,
+             (SELECT COUNT(*) FROM class_students cs WHERE cs.classId = c.id) AS studentCount
+      FROM classes c LEFT JOIN users u ON u.id = c.teacherId
+      ORDER BY c.createdAt DESC
+    `).all();
+    res.json(rows);
+  });
+  app.post("/api/admin/classes", requireAdmin, (req, res) => {
+    const { name, teacherId, grade, level } = req.body || {};
+    if (!name) return res.status(400).json({ error: "thiếu tên lớp" });
+    const id = randomUUID();
+    const code = Math.random().toString(36).slice(2, 8).toUpperCase();
+    db.prepare("INSERT INTO classes (id, name, teacherId, code, grade, level, createdAt) VALUES (?, ?, ?, ?, ?, ?, ?)")
+      .run(id, name, teacherId || null, code, grade || null, level || null, Date.now());
+    res.json({ ok: true, id, code });
+  });
+  app.put("/api/admin/classes/:id", requireAdmin, (req, res) => {
+    const { name, teacherId, grade, level } = req.body || {};
+    const sets: string[] = []; const params: any = { id: req.params.id };
+    if (name !== undefined) { sets.push("name = @name"); params.name = name; }
+    if (teacherId !== undefined) { sets.push("teacherId = @teacherId"); params.teacherId = teacherId || null; }
+    if (grade !== undefined) { sets.push("grade = @grade"); params.grade = grade; }
+    if (level !== undefined) { sets.push("level = @level"); params.level = level; }
+    if (!sets.length) return res.status(400).json({ error: "không có gì cập nhật" });
+    db.prepare(`UPDATE classes SET ${sets.join(", ")} WHERE id = @id`).run(params);
+    res.json({ ok: true });
+  });
+  app.delete("/api/admin/classes/:id", requireAdmin, (req, res) => {
+    db.prepare("DELETE FROM class_students WHERE classId = ?").run(req.params.id);
+    db.prepare("DELETE FROM classes WHERE id = ?").run(req.params.id);
+    res.json({ ok: true });
+  });
+  // Add/remove students from class
+  app.post("/api/admin/classes/:id/students", requireAdmin, (req, res) => {
+    const { studentId } = req.body || {};
+    if (!studentId) return res.status(400).json({ error: "thiếu studentId" });
+    db.prepare("INSERT OR IGNORE INTO class_students (classId, studentId, joinedAt) VALUES (?, ?, ?)").run(req.params.id, studentId, Date.now());
+    res.json({ ok: true });
+  });
+  app.delete("/api/admin/classes/:id/students/:studentId", requireAdmin, (req, res) => {
+    db.prepare("DELETE FROM class_students WHERE classId = ? AND studentId = ?").run(req.params.id, req.params.studentId);
+    res.json({ ok: true });
+  });
+  // Students in a class
+  app.get("/api/admin/classes/:id/students", requireAdmin, (req, res) => {
+    const rows = db.prepare(`
+      SELECT s.*, u.name AS parentName, u.email AS parentEmail
+      FROM class_students cs
+      JOIN students s ON s.id = cs.studentId
+      LEFT JOIN users u ON u.id = s.parentId
+      WHERE cs.classId = ?
+      ORDER BY s.name
+    `).all(req.params.id);
+    res.json(rows);
+  });
+
+  // ── Teacher endpoints (xem lớp mình, quản lý bé trong lớp) ──
+  const requireTeacher = (req: Request, res: Response, next: NextFunction) => {
+    requireAuth(req, res, () => {
+      const role = (req as any).user?.role;
+      if (role !== "teacher" && role !== "admin") { res.status(403).json({ error: "forbidden" }); return; }
+      next();
+    });
+  };
+
+  // Teacher: danh sách lớp của mình
+  app.get("/api/teacher/classes", requireTeacher, (req, res) => {
+    const uid = (req as any).user.id;
+    const role = (req as any).user.role;
+    const rows = role === "admin"
+      ? db.prepare("SELECT c.*, (SELECT COUNT(*) FROM class_students cs WHERE cs.classId = c.id) AS studentCount FROM classes c ORDER BY c.name").all()
+      : db.prepare("SELECT c.*, (SELECT COUNT(*) FROM class_students cs WHERE cs.classId = c.id) AS studentCount FROM classes c WHERE c.teacherId = ? ORDER BY c.name").all(uid);
+    res.json(rows);
+  });
+
+  // Teacher: HS trong lớp
+  app.get("/api/teacher/classes/:id/students", requireTeacher, (req, res) => {
+    const uid = (req as any).user.id;
+    const role = (req as any).user.role;
+    // Check teacher owns this class (or is admin)
+    if (role !== "admin") {
+      const cls = db.prepare("SELECT id FROM classes WHERE id = ? AND teacherId = ?").get(req.params.id, uid);
+      if (!cls) return res.status(403).json({ error: "không phải lớp của bạn" });
+    }
+    const rows = db.prepare(`
+      SELECT s.id, s.name, s.grade, s.level, s.avatar, s.xp, s.streak, s.dailyGoal,
+             (SELECT COUNT(*) FROM progress p WHERE p.studentId = s.id AND p.status = 'scored') AS vocabCount
+      FROM class_students cs JOIN students s ON s.id = cs.studentId
+      WHERE cs.classId = ? ORDER BY s.name
+    `).all(req.params.id);
+    res.json(rows);
+  });
+
+  // Teacher: thêm bé vào lớp
+  app.post("/api/teacher/classes/:id/students", requireTeacher, (req, res) => {
+    const uid = (req as any).user.id;
+    const role = (req as any).user.role;
+    if (role !== "admin") {
+      const cls = db.prepare("SELECT id FROM classes WHERE id = ? AND teacherId = ?").get(req.params.id, uid);
+      if (!cls) return res.status(403).json({ error: "không phải lớp của bạn" });
+    }
+    const { studentId } = req.body || {};
+    if (!studentId) return res.status(400).json({ error: "thiếu studentId" });
+    db.prepare("INSERT OR IGNORE INTO class_students (classId, studentId, joinedAt) VALUES (?, ?, ?)").run(req.params.id, studentId, Date.now());
+    res.json({ ok: true });
+  });
+
+  // Teacher: xoá bé khỏi lớp
+  app.delete("/api/teacher/classes/:id/students/:studentId", requireTeacher, (req, res) => {
+    const uid = (req as any).user.id;
+    const role = (req as any).user.role;
+    if (role !== "admin") {
+      const cls = db.prepare("SELECT id FROM classes WHERE id = ? AND teacherId = ?").get(req.params.id, uid);
+      if (!cls) return res.status(403).json({ error: "không phải lớp của bạn" });
+    }
+    db.prepare("DELETE FROM class_students WHERE classId = ? AND studentId = ?").run(req.params.id, req.params.studentId);
+    res.json({ ok: true });
+  });
+
+  // Teacher: đặt mục tiêu cho bé
+  app.put("/api/teacher/students/:id/goal", requireTeacher, (req, res) => {
+    const { dailyGoal } = req.body || {};
+    if (!dailyGoal) return res.status(400).json({ error: "thiếu dailyGoal" });
+    db.prepare("UPDATE students SET dailyGoal = ? WHERE id = ?").run(Number(dailyGoal), req.params.id);
+    res.json({ ok: true });
   });
 
   // ── Bảng xếp hạng: điểm TUẦN (mặc định) hoặc mọi thời gian, lọc theo cấp ──
