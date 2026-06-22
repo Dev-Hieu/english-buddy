@@ -101,6 +101,7 @@ export function initSchema(): void {
   try { db.exec("ALTER TABLE lookup_history ADD COLUMN meaning TEXT"); } catch { /* đã có */ }
   try { db.exec("ALTER TABLE lookup_history ADD COLUMN phonetic TEXT"); } catch { /* đã có */ }
   try { db.exec("ALTER TABLE lookup_history ADD COLUMN imageUrl TEXT"); } catch { /* đã có */ }
+  try { db.exec("ALTER TABLE lookup_history ADD COLUMN examples TEXT"); } catch { /* đã có */ }
   // Thi kỹ năng: cột kỹ năng đang qua của mỗi từ (JSON mảng). Điểm từ = độ dài mảng.
   try { db.exec("ALTER TABLE progress ADD COLUMN skillsPassed TEXT"); } catch { /* đã có */ }
   try { db.exec("ALTER TABLE users ADD COLUMN status TEXT DEFAULT 'active'"); } catch { /* đã có */ }

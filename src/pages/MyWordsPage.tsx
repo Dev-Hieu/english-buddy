@@ -15,11 +15,24 @@ interface MyWordsPageProps {
 
 // Saved word -> VocabularyWord để học bằng flashcard.
 function toVocab(w: SavedWord, level: Level): VocabularyWord {
+  let example: string | undefined;
+  let example_vi: string | undefined;
+  if (w.examples) {
+    try {
+      const exs = typeof w.examples === "string" ? JSON.parse(w.examples) : w.examples;
+      if (Array.isArray(exs) && exs.length > 0) {
+        example = exs[0].en;
+        example_vi = exs[0].vi;
+      }
+    } catch { /* ignore */ }
+  }
   return {
     id: `lookup_${w.query}`,
     word: w.query,
     phonetic: w.phonetic,
     meaning_vi: w.meaning ?? "",
+    example,
+    example_vi,
     topicIds: [],
     level,
     imageUrl: w.imageUrl ?? "",

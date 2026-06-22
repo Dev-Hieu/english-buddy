@@ -25,4 +25,5 @@ export interface LookupHistory {
   meaning?: string;
   phonetic?: string;
   imageUrl?: string;
+  examples?: { en: string; vi: string; pos?: string }[];
 }

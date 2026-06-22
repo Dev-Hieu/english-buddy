@@ -908,7 +908,7 @@ export function createApp() {
   app.get("/api/students/:id/lookups", requireAuth, (req, res) => {
     if (!canAccessStudent(req, res, req.params.id)) return;
     const rows = db.prepare(
-      "SELECT query, type, meaning, phonetic, imageUrl, MAX(createdAt) AS createdAt FROM lookup_history WHERE studentId = ? AND saved = 1 GROUP BY query ORDER BY createdAt DESC LIMIT 100"
+      "SELECT query, type, meaning, phonetic, imageUrl, examples, MAX(createdAt) AS createdAt FROM lookup_history WHERE studentId = ? AND saved = 1 GROUP BY query ORDER BY createdAt DESC LIMIT 100"
     ).all(req.params.id);
     res.json(rows);
   });
@@ -921,11 +921,11 @@ export function createApp() {
   });
 
   app.post("/api/lookup", requireAuth, (req, res) => {
-    const { studentId, query, type, saved, createdAt, meaning, phonetic, imageUrl } = req.body || {};
+    const { studentId, query, type, saved, createdAt, meaning, phonetic, imageUrl, examples } = req.body || {};
     if (!canAccessStudent(req, res, studentId)) return;
     db.prepare(
-      `INSERT INTO lookup_history (studentId, query, type, saved, createdAt, meaning, phonetic, imageUrl) VALUES (?, ?, ?, ?, ?, ?, ?, ?)`
-    ).run(studentId, query, type, saved ? 1 : 0, createdAt ?? Date.now(), meaning ?? null, phonetic ?? null, imageUrl ?? null);
+      `INSERT INTO lookup_history (studentId, query, type, saved, createdAt, meaning, phonetic, imageUrl, examples) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`
+    ).run(studentId, query, type, saved ? 1 : 0, createdAt ?? Date.now(), meaning ?? null, phonetic ?? null, imageUrl ?? null, examples ? JSON.stringify(examples) : null);
     res.json({ ok: true });
   });
 

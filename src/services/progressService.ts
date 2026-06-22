@@ -34,6 +34,7 @@ export interface SavedWord {
   meaning?: string;
   phonetic?: string;
   imageUrl?: string;
+  examples?: string; // JSON string of [{en, vi, pos}]
 }
 export function getMyWords(studentId: string): Promise<SavedWord[]> {
   return apiRequest(`/api/students/${studentId}/lookups`);

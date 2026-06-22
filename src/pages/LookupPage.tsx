@@ -104,6 +104,7 @@ function WordLookup({ student }: { student: Student }) {
     await saveLookup({
       studentId: student.id, query: result.query, type: "word", saved: true, createdAt: Date.now(),
       meaning: result.vi || undefined, phonetic: result.dict?.phonetic || undefined, imageUrl: result.images[0]?.url || undefined,
+      examples: result.detail?.examples?.slice(0, 3) || undefined,
     }).catch(() => {});
     setSaved(true);
     if (!history.includes(result.query)) setHistory((h) => [result.query, ...h].slice(0, 8));
