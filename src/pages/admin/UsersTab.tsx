@@ -1,4 +1,4 @@
-import { Check, Copy, Crown, Image, Plus, Shield, Trash2, X } from "lucide-react";
+import { Check, Copy, Crown, Image, Pencil, Plus, Search, Shield, Trash2, X } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -15,6 +15,14 @@ interface UsersTabProps {
 
 type SubTab = "all" | "pending" | "premium" | "admin";
 
+interface EditState {
+  id: string;
+  name: string;
+  studentLimit: number;
+  isPremium: boolean;
+  canEditImages: boolean;
+}
+
 export function UsersTab({ onRefresh }: UsersTabProps) {
   const [users, setUsers] = useState<AdminUser[]>([]);
   const [codes, setCodes] = useState<InviteCode[]>([]);
@@ -22,12 +30,15 @@ export function UsersTab({ onRefresh }: UsersTabProps) {
   const [search, setSearch] = useState("");
   const [showAdd, setShowAdd] = useState(false);
   const [saved, setSaved] = useState<string | null>(null);
+  const [editState, setEditState] = useState<EditState | null>(null);
+  const [saving, setSaving] = useState(false);
 
   // Add user form
   const [newName, setNewName] = useState("");
   const [newEmail, setNewEmail] = useState("");
   const [newPassword, setNewPassword] = useState("123456");
   const [newPremium, setNewPremium] = useState(false);
+  const [newRole, setNewRole] = useState("parent");
   const [adding, setAdding] = useState(false);
 
   // Invite code form
@@ -44,19 +55,26 @@ export function UsersTab({ onRefresh }: UsersTabProps) {
 
   const filtered = useMemo(() => {
     let list = users;
-    if (subTab === "pending") list = list.filter((u) => (u as any).status === "pending");
+    if (subTab === "pending") list = list.filter((u) => u.status === "pending");
     else if (subTab === "premium") list = list.filter((u) => u.isPremium);
     else if (subTab === "admin") list = list.filter((u) => u.role === "admin");
     if (search.trim()) {
       const q = search.toLowerCase();
-      list = list.filter((u) => u.name.toLowerCase().includes(q) || u.email.toLowerCase().includes(q));
+      list = list.filter((u) =>
+        u.name.toLowerCase().includes(q) ||
+        u.email.toLowerCase().includes(q) ||
+        (u.username ?? "").toLowerCase().includes(q)
+      );
     }
     return list;
   }, [users, subTab, search]);
 
-  const pendingCount = useMemo(() => users.filter((u) => (u as any).status === "pending").length, [users]);
+  const pendingCount = useMemo(() => users.filter((u) => u.status === "pending").length, [users]);
 
-  const markSaved = (id: string) => { setSaved(id); setTimeout(() => setSaved((s) => (s === id ? null : s)), 1500); };
+  const markSaved = (id: string) => {
+    setSaved(id);
+    setTimeout(() => setSaved((s) => (s === id ? null : s)), 1500);
+  };
 
   const handleLimit = (id: string, val: number) =>
     setUsers((prev) => prev.map((u) => u.id === id ? { ...u, studentLimit: val } : u));
@@ -91,20 +109,66 @@ export function UsersTab({ onRefresh }: UsersTabProps) {
   };
 
   const handleDelete = async (u: AdminUser) => {
-    if (!confirm(`Xoa "${u.name}" (${u.email})?\nTat ca hoc sinh + du lieu bi xoa.`)) return;
+    if (!confirm(`Xoá "${u.name}" (${u.email})?\nTất cả học sinh và dữ liệu sẽ bị xoá.`)) return;
     await deleteUser(u.id).catch(() => {});
     load(); onRefresh();
+  };
+
+  const openEdit = (u: AdminUser) => {
+    setEditState({
+      id: u.id,
+      name: u.name,
+      studentLimit: u.studentLimit,
+      isPremium: !!u.isPremium,
+      canEditImages: !!u.canEditImages,
+    });
+  };
+
+  const cancelEdit = () => setEditState(null);
+
+  const saveEdit = async () => {
+    if (!editState) return;
+    setSaving(true);
+    try {
+      await setStudentLimit(editState.id, editState.studentLimit).catch(() => {});
+      await setPremium(editState.id, editState.isPremium).catch(() => {});
+      await setImageEditor(editState.id, editState.canEditImages).catch(() => {});
+      setUsers((prev) =>
+        prev.map((u) =>
+          u.id === editState.id
+            ? {
+                ...u,
+                name: editState.name,
+                studentLimit: editState.studentLimit,
+                isPremium: editState.isPremium ? 1 : 0,
+                canEditImages: editState.canEditImages ? 1 : 0,
+              }
+            : u
+        )
+      );
+      markSaved(editState.id);
+      setEditState(null);
+      onRefresh();
+    } finally {
+      setSaving(false);
+    }
   };
 
   const handleAddUser = async () => {
     if (!newEmail.trim() || !newName.trim()) return;
     setAdding(true);
     try {
-      await createUser({ email: newEmail.trim(), password: newPassword || "123456", name: newName.trim(), isPremium: newPremium });
-      setNewName(""); setNewEmail(""); setNewPassword("123456"); setNewPremium(false);
+      await createUser({
+        email: newEmail.trim(),
+        password: newPassword || "123456",
+        name: newName.trim(),
+        isPremium: newPremium,
+        role: newRole,
+      });
+      setNewName(""); setNewEmail(""); setNewPassword("123456"); setNewPremium(false); setNewRole("parent");
       setShowAdd(false);
       load(); onRefresh();
-    } catch { /* ignore */ } finally { setAdding(false); }
+    } catch { /* bỏ qua */ } finally { setAdding(false); }
   };
 
   const handleCreateCode = async () => {
@@ -112,11 +176,11 @@ export function UsersTab({ onRefresh }: UsersTabProps) {
     try {
       await createInviteCode({ type: codeType, maxUses: codeMaxUses });
       listInviteCodes().then(setCodes).catch(() => {});
-    } catch { /* ignore */ } finally { setCreatingCode(false); }
+    } catch { /* bỏ qua */ } finally { setCreatingCode(false); }
   };
 
   const handleDeleteCode = async (code: string) => {
-    if (!confirm(`Xoa ma "${code}"?`)) return;
+    if (!confirm(`Xoá mã "${code}"?`)) return;
     await deleteInviteCode(code).catch(() => {});
     listInviteCodes().then(setCodes).catch(() => {});
   };
@@ -125,45 +189,85 @@ export function UsersTab({ onRefresh }: UsersTabProps) {
 
   const SUB_TABS: { key: SubTab; label: string }[] = [
     { key: "all", label: "Tất cả" },
-    { key: "pending", label: `Cho duyet${pendingCount > 0 ? ` (${pendingCount})` : ""}` },
+    { key: "pending", label: `Chờ duyệt${pendingCount > 0 ? ` (${pendingCount})` : ""}` },
     { key: "premium", label: "Premium" },
     { key: "admin", label: "Admin" },
   ];
 
   const statusBadge = (u: AdminUser) => {
-    const status = (u as any).status as string | undefined;
-    if (status === "pending") return <span className="rounded-full bg-amber-100 px-2 py-0.5 text-xs font-extrabold text-amber-700">CHO DUYET</span>;
-    if (status === "rejected") return <span className="rounded-full bg-red-100 px-2 py-0.5 text-xs font-extrabold text-red-700">TU CHOI</span>;
-    return null;
+    if (u.status === "pending") return (
+      <span className="rounded-full bg-amber-100 px-2 py-0.5 text-xs font-extrabold text-amber-700">CHỜ DUYỆT</span>
+    );
+    if (u.status === "rejected") return (
+      <span className="rounded-full bg-red-100 px-2 py-0.5 text-xs font-extrabold text-red-700">TỪ CHỐI</span>
+    );
+    return (
+      <span className="rounded-full bg-green-100 px-2 py-0.5 text-xs font-extrabold text-green-700">HOẠT ĐỘNG</span>
+    );
   };
 
   return (
     <div className="space-y-4">
-      {/* Header */}
+      {/* Tiêu đề */}
       <div className="flex items-center justify-between">
-        <h2 className="text-lg font-black">Tai khoan</h2>
+        <h2 className="text-lg font-black">Tài khoản</h2>
         <Button type="button" size="sm" onClick={() => setShowAdd((v) => !v)}>
-          <Plus className="h-4 w-4" /> Them
+          <Plus className="h-4 w-4" /> Thêm
         </Button>
       </div>
 
-      {/* Add user form */}
+      {/* Form thêm tài khoản */}
       {showAdd && (
         <Card>
           <CardContent className="space-y-2 p-4">
-            <p className="font-extrabold text-sm">Them tai khoan moi</p>
-            <input className="w-full rounded-xl border border-border px-3 py-2 text-sm font-bold outline-none focus:border-primary" placeholder="Ho ten" value={newName} onChange={(e) => setNewName(e.target.value)} />
-            <input className="w-full rounded-xl border border-border px-3 py-2 text-sm font-bold outline-none focus:border-primary" placeholder="Email" type="email" value={newEmail} onChange={(e) => setNewEmail(e.target.value)} />
-            <input className="w-full rounded-xl border border-border px-3 py-2 text-sm font-bold outline-none focus:border-primary" placeholder="Mật khẩu" value={newPassword} onChange={(e) => setNewPassword(e.target.value)} />
+            <p className="font-extrabold text-sm">Thêm tài khoản mới</p>
+            <input
+              className="w-full rounded-xl border border-border px-3 py-2 text-sm font-bold outline-none focus:border-primary"
+              placeholder="Họ tên"
+              value={newName}
+              onChange={(e) => setNewName(e.target.value)}
+            />
+            <input
+              className="w-full rounded-xl border border-border px-3 py-2 text-sm font-bold outline-none focus:border-primary"
+              placeholder="Email"
+              type="email"
+              value={newEmail}
+              onChange={(e) => setNewEmail(e.target.value)}
+            />
+            <input
+              className="w-full rounded-xl border border-border px-3 py-2 text-sm font-bold outline-none focus:border-primary"
+              placeholder="Mật khẩu"
+              value={newPassword}
+              onChange={(e) => setNewPassword(e.target.value)}
+            />
+            <select
+              className="w-full rounded-xl border border-border px-3 py-2 text-sm font-bold outline-none focus:border-primary bg-card"
+              value={newRole}
+              onChange={(e) => setNewRole(e.target.value)}
+            >
+              <option value="parent">Phụ huynh</option>
+              <option value="teacher">Giáo viên</option>
+              <option value="admin">Quản trị viên</option>
+            </select>
             <label className="flex items-center gap-2 text-sm font-bold cursor-pointer">
-              <input type="checkbox" className="h-4 w-4 accent-primary" checked={newPremium} onChange={(e) => setNewPremium(e.target.checked)} />
+              <input
+                type="checkbox"
+                className="h-4 w-4 accent-primary"
+                checked={newPremium}
+                onChange={(e) => setNewPremium(e.target.checked)}
+              />
               Premium
             </label>
             <div className="flex gap-2 pt-1">
-              <Button type="button" size="sm" onClick={handleAddUser} disabled={adding || !newName.trim() || !newEmail.trim()}>
+              <Button
+                type="button"
+                size="sm"
+                onClick={handleAddUser}
+                disabled={adding || !newName.trim() || !newEmail.trim()}
+              >
                 {adding ? "Đang lưu..." : "Lưu"}
               </Button>
-              <Button type="button" size="sm" variant="ghost" onClick={() => setShowAdd(false)}>Huy</Button>
+              <Button type="button" size="sm" variant="ghost" onClick={() => setShowAdd(false)}>Huỷ</Button>
             </div>
           </CardContent>
         </Card>
@@ -172,94 +276,200 @@ export function UsersTab({ onRefresh }: UsersTabProps) {
       {/* Sub-tabs */}
       <div className="flex gap-1 rounded-2xl bg-muted p-1">
         {SUB_TABS.map((t) => (
-          <button key={t.key} type="button" onClick={() => setSubTab(t.key)}
-            className={cn("flex-1 rounded-xl py-2 text-xs font-extrabold transition-colors",
-              subTab === t.key ? "bg-card text-primary shadow-card" : "text-muted-foreground")}>
+          <button
+            key={t.key}
+            type="button"
+            onClick={() => setSubTab(t.key)}
+            className={cn(
+              "flex-1 rounded-xl py-2 text-xs font-extrabold transition-colors",
+              subTab === t.key ? "bg-card text-primary shadow-card" : "text-muted-foreground"
+            )}
+          >
             {t.label}
           </button>
         ))}
       </div>
 
-      {/* Search */}
-      <input
-        className="w-full rounded-2xl border border-border bg-card px-4 py-2.5 text-sm font-bold outline-none focus:border-primary"
-        placeholder="Tìm theo tên, email..."
-        value={search}
-        onChange={(e) => setSearch(e.target.value)}
-      />
+      {/* Tìm kiếm */}
+      <div className="relative">
+        <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+        <input
+          className="w-full rounded-2xl border border-border bg-card pl-9 pr-4 py-2.5 text-sm font-bold outline-none focus:border-primary"
+          placeholder="Tìm theo tên, email, tên đăng nhập..."
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+        />
+      </div>
 
-      {/* User cards */}
+      {/* Danh sách tài khoản */}
       <div className="space-y-3">
         {filtered.map((u) => {
           const isAdmin = u.role === "admin";
-          const isPending = (u as any).status === "pending";
+          const isPending = u.status === "pending";
+          const isEditing = editState?.id === u.id;
+
           return (
             <Card key={u.id}>
               <CardContent className="p-4 space-y-3">
-                {/* Avatar + info */}
-                <div className="flex items-center gap-3">
-                  <span className={cn("flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-2xl text-white font-extrabold text-sm",
-                    isAdmin ? "bg-red-500" : "bg-primary")}>
+                {/* Avatar + thông tin */}
+                <div className="flex items-start gap-3">
+                  <span
+                    className={cn(
+                      "flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-2xl text-white font-extrabold text-sm mt-0.5",
+                      isAdmin ? "bg-red-500" : "bg-primary"
+                    )}
+                  >
                     {isAdmin ? <Shield className="h-5 w-5" /> : u.name.charAt(0).toUpperCase()}
                   </span>
                   <div className="min-w-0 flex-1">
                     <p className="font-extrabold truncate">{u.name}</p>
                     <p className="text-xs text-muted-foreground truncate">{u.email}</p>
+                    {u.username && (
+                      <p className="text-xs text-muted-foreground truncate">
+                        Tên đăng nhập: <span className="font-bold text-foreground">{u.username}</span>
+                      </p>
+                    )}
                   </div>
-                  <div className="flex flex-wrap gap-1 justify-end">
-                    {isAdmin && <span className="rounded-full bg-red-100 px-2 py-0.5 text-xs font-extrabold text-red-700">ADMIN</span>}
-                    {u.isPremium ? <span className="rounded-full bg-yellow-100 px-2 py-0.5 text-xs font-extrabold text-yellow-700">PREMIUM</span> : null}
-                    {statusBadge(u)}
+                  <div className="flex flex-col items-end gap-1">
+                    <div className="flex flex-wrap gap-1 justify-end">
+                      {isAdmin && (
+                        <span className="rounded-full bg-red-100 px-2 py-0.5 text-xs font-extrabold text-red-700">ADMIN</span>
+                      )}
+                      {u.isPremium ? (
+                        <span className="rounded-full bg-yellow-100 px-2 py-0.5 text-xs font-extrabold text-yellow-700">PREMIUM</span>
+                      ) : null}
+                      {statusBadge(u)}
+                    </div>
+                    {!isAdmin && (
+                      <button
+                        type="button"
+                        onClick={() => isEditing ? cancelEdit() : openEdit(u)}
+                        className="flex items-center gap-1 rounded-xl px-2 py-1 text-xs font-extrabold bg-muted text-muted-foreground hover:text-primary hover:bg-primary/10 transition-colors"
+                        title="Sửa"
+                      >
+                        {isEditing ? <X className="h-3.5 w-3.5" /> : <Pencil className="h-3.5 w-3.5" />}
+                        {isEditing ? "Huỷ" : "Sửa"}
+                      </button>
+                    )}
                   </div>
                 </div>
 
-                {/* Student count */}
+                {/* Số học sinh */}
                 <p className="text-xs font-bold text-muted-foreground">
-                  Hoc sinh: {u.studentCount} / {u.studentLimit}
+                  Học sinh: {u.studentCount} / {u.studentLimit}
                 </p>
 
-                {/* Actions (not for admin) */}
-                {!isAdmin && (
+                {/* Form sửa inline */}
+                {isEditing && editState && (
+                  <div className="space-y-2 rounded-xl bg-muted/50 p-3 border border-border">
+                    <p className="text-xs font-extrabold text-muted-foreground uppercase tracking-wide">Chỉnh sửa</p>
+                    <div>
+                      <label className="text-xs font-bold text-muted-foreground">Họ tên</label>
+                      <input
+                        className="mt-1 w-full rounded-xl border border-border px-3 py-1.5 text-sm font-bold outline-none focus:border-primary bg-card"
+                        value={editState.name}
+                        onChange={(e) => setEditState({ ...editState, name: e.target.value })}
+                      />
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <label className="text-xs font-bold text-muted-foreground w-28 flex-shrink-0">Giới hạn HS:</label>
+                      <input
+                        type="number"
+                        min={0}
+                        max={200}
+                        className="w-20 rounded-xl border border-border px-2 py-1.5 text-sm font-bold text-center outline-none focus:border-primary bg-card"
+                        value={editState.studentLimit}
+                        onChange={(e) => setEditState({ ...editState, studentLimit: Number(e.target.value) })}
+                      />
+                    </div>
+                    <div className="flex flex-wrap gap-3">
+                      <label className="flex items-center gap-1.5 text-xs font-bold cursor-pointer">
+                        <input
+                          type="checkbox"
+                          className="h-3.5 w-3.5 accent-primary"
+                          checked={editState.isPremium}
+                          onChange={(e) => setEditState({ ...editState, isPremium: e.target.checked })}
+                        />
+                        <Crown className="h-3.5 w-3.5 text-yellow-600" /> Premium
+                      </label>
+                      <label className="flex items-center gap-1.5 text-xs font-bold cursor-pointer">
+                        <input
+                          type="checkbox"
+                          className="h-3.5 w-3.5 accent-primary"
+                          checked={editState.canEditImages}
+                          onChange={(e) => setEditState({ ...editState, canEditImages: e.target.checked })}
+                        />
+                        <Image className="h-3.5 w-3.5 text-blue-600" /> Sửa ảnh
+                      </label>
+                    </div>
+                    <div className="flex gap-2 pt-1">
+                      <Button type="button" size="sm" onClick={saveEdit} disabled={saving}>
+                        {saving ? "Đang lưu..." : <><Check className="h-4 w-4" /> Lưu</>}
+                      </Button>
+                      <Button type="button" size="sm" variant="ghost" onClick={cancelEdit}>Huỷ</Button>
+                    </div>
+                  </div>
+                )}
+
+                {/* Thao tác (không dành cho admin) */}
+                {!isAdmin && !isEditing && (
                   <div className="space-y-2">
-                    {/* Approve/Reject for pending */}
+                    {/* Duyệt / Từ chối cho tài khoản chờ duyệt */}
                     {isPending && (
                       <div className="flex gap-2">
                         <Button type="button" size="sm" onClick={() => handleApprove(u)} className="flex-1">
-                          <Check className="h-4 w-4" /> Duyet
+                          <Check className="h-4 w-4" /> Duyệt
                         </Button>
                         <Button type="button" size="sm" variant="destructive" onClick={() => handleReject(u)} className="flex-1">
-                          <X className="h-4 w-4" /> Tu choi
+                          <X className="h-4 w-4" /> Từ chối
                         </Button>
                       </div>
                     )}
 
-                    {/* Student limit */}
+                    {/* Giới hạn học sinh */}
                     <div className="flex items-center gap-2">
-                      <label className="text-xs font-bold text-muted-foreground w-24 flex-shrink-0">Gioi han HS:</label>
-                      <input type="number" min={0} max={200}
+                      <label className="text-xs font-bold text-muted-foreground w-28 flex-shrink-0">Giới hạn HS:</label>
+                      <input
+                        type="number"
+                        min={0}
+                        max={200}
                         className="w-16 rounded-xl border border-border px-2 py-1 text-sm font-bold text-center outline-none focus:border-primary"
                         value={u.studentLimit}
-                        onChange={(e) => handleLimit(u.id, Number(e.target.value))} />
+                        onChange={(e) => handleLimit(u.id, Number(e.target.value))}
+                      />
                       <Button type="button" size="sm" variant="outline" onClick={() => saveLimit(u)}>
                         {saved === u.id ? <Check className="h-4 w-4 text-green-500" /> : "Lưu"}
                       </Button>
                     </div>
 
-                    {/* Toggles + delete */}
+                    {/* Nút bật/tắt + xoá */}
                     <div className="flex flex-wrap gap-2">
-                      <button type="button" onClick={() => togglePremium(u)}
-                        className={cn("flex items-center gap-1 rounded-xl px-3 py-1.5 text-xs font-extrabold transition-colors",
-                          u.isPremium ? "bg-yellow-100 text-yellow-700" : "bg-muted text-muted-foreground")}>
+                      <button
+                        type="button"
+                        onClick={() => togglePremium(u)}
+                        className={cn(
+                          "flex items-center gap-1 rounded-xl px-3 py-1.5 text-xs font-extrabold transition-colors",
+                          u.isPremium ? "bg-yellow-100 text-yellow-700" : "bg-muted text-muted-foreground"
+                        )}
+                      >
                         <Crown className="h-3.5 w-3.5" /> Premium
                       </button>
-                      <button type="button" onClick={() => toggleEditor(u)}
-                        className={cn("flex items-center gap-1 rounded-xl px-3 py-1.5 text-xs font-extrabold transition-colors",
-                          u.canEditImages ? "bg-blue-100 text-blue-700" : "bg-muted text-muted-foreground")}>
-                        <Image className="h-3.5 w-3.5" /> Sua anh
+                      <button
+                        type="button"
+                        onClick={() => toggleEditor(u)}
+                        className={cn(
+                          "flex items-center gap-1 rounded-xl px-3 py-1.5 text-xs font-extrabold transition-colors",
+                          u.canEditImages ? "bg-blue-100 text-blue-700" : "bg-muted text-muted-foreground"
+                        )}
+                      >
+                        <Image className="h-3.5 w-3.5" /> Sửa ảnh
                       </button>
-                      <button type="button" onClick={() => handleDelete(u)}
-                        className="flex items-center gap-1 rounded-xl px-3 py-1.5 text-xs font-extrabold bg-red-50 text-red-600 hover:bg-red-100 transition-colors ml-auto">
-                        <Trash2 className="h-3.5 w-3.5" /> Xoa
+                      <button
+                        type="button"
+                        onClick={() => handleDelete(u)}
+                        className="flex items-center gap-1 rounded-xl px-3 py-1.5 text-xs font-extrabold bg-red-50 text-red-600 hover:bg-red-100 transition-colors ml-auto"
+                      >
+                        <Trash2 className="h-3.5 w-3.5" /> Xoá
                       </button>
                     </div>
                   </div>
@@ -269,34 +479,43 @@ export function UsersTab({ onRefresh }: UsersTabProps) {
           );
         })}
         {filtered.length === 0 && (
-          <p className="text-center text-sm font-bold text-muted-foreground py-6">Khong co tai khoan nao.</p>
+          <p className="text-center text-sm font-bold text-muted-foreground py-6">Không có tài khoản nào.</p>
         )}
       </div>
 
-      {/* Invite codes section */}
+      {/* Mục mã mời & mã lớp */}
       <div className="space-y-3 pt-2">
-        <h3 className="font-extrabold">Ma moi &amp; Ma lop</h3>
+        <h3 className="font-extrabold">Mã mời &amp; Mã lớp</h3>
 
-        {/* Create form */}
+        {/* Form tạo mã */}
         <Card>
           <CardContent className="p-4 space-y-2">
             <div className="flex gap-2">
-              <select className="flex-1 rounded-xl border border-border px-3 py-2 text-sm font-bold outline-none focus:border-primary bg-card"
-                value={codeType} onChange={(e) => setCodeType(e.target.value)}>
-                <option value="invite">Invite (dang ky)</option>
-                <option value="class">Class (lop hoc)</option>
+              <select
+                className="flex-1 rounded-xl border border-border px-3 py-2 text-sm font-bold outline-none focus:border-primary bg-card"
+                value={codeType}
+                onChange={(e) => setCodeType(e.target.value)}
+              >
+                <option value="invite">Mời (đăng ký)</option>
+                <option value="class">Lớp học</option>
               </select>
-              <input type="number" min={1} max={1000} placeholder="So luot" value={codeMaxUses}
+              <input
+                type="number"
+                min={1}
+                max={1000}
+                placeholder="Số lượt"
+                value={codeMaxUses}
                 onChange={(e) => setCodeMaxUses(Number(e.target.value))}
-                className="w-24 rounded-xl border border-border px-3 py-2 text-sm font-bold text-center outline-none focus:border-primary" />
+                className="w-24 rounded-xl border border-border px-3 py-2 text-sm font-bold text-center outline-none focus:border-primary"
+              />
               <Button type="button" size="sm" onClick={handleCreateCode} disabled={creatingCode}>
-                <Plus className="h-4 w-4" /> Tao
+                <Plus className="h-4 w-4" /> Tạo
               </Button>
             </div>
           </CardContent>
         </Card>
 
-        {/* Code list */}
+        {/* Danh sách mã */}
         <div className="space-y-2">
           {codes.map((c) => (
             <Card key={c.code}>
@@ -304,28 +523,41 @@ export function UsersTab({ onRefresh }: UsersTabProps) {
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center gap-2">
                     <span className="font-mono text-sm font-extrabold truncate">{c.code}</span>
-                    <button type="button" onClick={() => copyCode(c.code)} className="flex-shrink-0 text-muted-foreground hover:text-primary">
+                    <button
+                      type="button"
+                      onClick={() => copyCode(c.code)}
+                      className="flex-shrink-0 text-muted-foreground hover:text-primary"
+                      title="Sao chép"
+                    >
                       <Copy className="h-3.5 w-3.5" />
                     </button>
-                    <span className={cn("rounded-full px-2 py-0.5 text-xs font-extrabold flex-shrink-0",
-                      c.type === "class" ? "bg-blue-100 text-blue-700" : "bg-green-100 text-green-700")}>
-                      {c.type}
+                    <span
+                      className={cn(
+                        "rounded-full px-2 py-0.5 text-xs font-extrabold flex-shrink-0",
+                        c.type === "class" ? "bg-blue-100 text-blue-700" : "bg-green-100 text-green-700"
+                      )}
+                    >
+                      {c.type === "class" ? "Lớp học" : "Mời"}
                     </span>
                   </div>
                   <p className="text-xs text-muted-foreground mt-0.5">
-                    {c.usedCount}/{c.maxUses} luot
-                    {c.expiresAt ? ` · Het han ${new Date(c.expiresAt).toLocaleDateString("vi-VN")}` : ""}
+                    {c.usedCount}/{c.maxUses} lượt
+                    {c.expiresAt ? ` · Hết hạn ${new Date(c.expiresAt).toLocaleDateString("vi-VN")}` : ""}
                   </p>
                 </div>
-                <button type="button" onClick={() => handleDeleteCode(c.code)}
-                  className="flex-shrink-0 rounded-xl p-1.5 text-red-500 hover:bg-red-50 transition-colors">
+                <button
+                  type="button"
+                  onClick={() => handleDeleteCode(c.code)}
+                  className="flex-shrink-0 rounded-xl p-1.5 text-red-500 hover:bg-red-50 transition-colors"
+                  title="Xoá"
+                >
                   <Trash2 className="h-4 w-4" />
                 </button>
               </CardContent>
             </Card>
           ))}
           {codes.length === 0 && (
-            <p className="text-center text-sm font-bold text-muted-foreground py-4">Chua co ma nao.</p>
+            <p className="text-center text-sm font-bold text-muted-foreground py-4">Chưa có mã nào.</p>
           )}
         </div>
       </div>
