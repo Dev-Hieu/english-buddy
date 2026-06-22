@@ -108,12 +108,17 @@ function startOfWeek(): number {
 function canAccessStudent(req: Request, res: Response, studentId: string): boolean {
   const user = (req as any).user;
   if (user?.role === "admin") return true;
-  const s = db.prepare("SELECT parentId FROM students WHERE id = ?").get(studentId) as any;
-  if (!s || s.parentId !== user?.id) {
-    res.status(403).json({ error: "forbidden" });
-    return false;
+  const s = db.prepare("SELECT parentId, userId FROM students WHERE id = ?").get(studentId) as any;
+  if (!s) { res.status(403).json({ error: "forbidden" }); return false; }
+  // Parent hoặc student chính mình
+  if (s.parentId === user?.id || s.userId === user?.id) return true;
+  // Teacher có bé trong lớp mình
+  if (user?.role === "teacher") {
+    const inClass = db.prepare("SELECT 1 FROM class_students cs JOIN classes c ON c.id = cs.classId WHERE cs.studentId = ? AND c.teacherId = ?").get(studentId, user.id);
+    if (inClass) return true;
   }
-  return true;
+  res.status(403).json({ error: "forbidden" });
+  return false;
 }
 
 // Ghi lại src/data/seedImages.ts từ imageUrl hiện tại trong DB -> app tự cập nhật (Vite HMR).

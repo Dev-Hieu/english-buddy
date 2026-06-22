@@ -141,6 +141,17 @@ export function App() {
     setRoute({ view: "student-select", topicId: "topic_food", level: "all" });
   };
 
+  // Học thử: teacher/admin vào trang học của 1 bé
+  const enterStudentMode = async (sid: string) => {
+    try {
+      const s = await getStudent(sid);
+      setStudents((prev) => prev.some((x) => x.id === sid) ? prev : [...prev, s]);
+    } catch { /* student có thể đã có trong list */ }
+    setSelectedStudentId(sid);
+    localStorage.setItem(SELECTED_STUDENT_KEY, sid);
+    navigate("home");
+  };
+
   // Thoát chế độ Học thử (teacher/admin quay lại trang quản lý)
   const exitStudentMode = () => {
     setSelectedStudentId(null);
@@ -179,12 +190,12 @@ export function App() {
 
   // ── Admin → dashboard (trừ khi đang Học thử với student đã chọn) ──
   if (user.role === "admin" && (!selectedStudentId || route.view === "student-select" || route.view === "admin")) {
-    return <AdminPage onBack={doLogout} onOpenPicker={() => navigate("imagepicker")} onLoginAsStudent={(sid) => { setSelectedStudentId(sid); localStorage.setItem(SELECTED_STUDENT_KEY, sid); navigate("home"); }} adminName={user.name} />;
+    return <AdminPage onBack={doLogout} onOpenPicker={() => navigate("imagepicker")} onLoginAsStudent={enterStudentMode} adminName={user.name} />;
   }
 
   // ── Teacher → trang giáo viên (trừ khi đang "Học thử" với student đã chọn) ──
   if (user.role === "teacher" && (!selectedStudentId || route.view === "student-select")) {
-    return <TeacherPage teacherName={user.name} onLogout={doLogout} onLoginAsStudent={(sid) => { setSelectedStudentId(sid); localStorage.setItem(SELECTED_STUDENT_KEY, sid); navigate("home"); }} />;
+    return <TeacherPage teacherName={user.name} onLogout={doLogout} onLoginAsStudent={enterStudentMode} />;
   }
 
   // ── Student → tự chọn bé duy nhất của mình, vào thẳng học ──
