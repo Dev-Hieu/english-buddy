@@ -903,4 +903,378 @@ export const B2_GRAMMAR: GrammarTopic[] = [
       },
     ],
   },
+  {
+    id: "gr_b2_linking_words",
+    level: "b2",
+    title: "Linking Words",
+    title_vi: "Từ nối (although/however/despite/in spite of/whereas/nevertheless)",
+    summary_vi:
+      "Các từ/cụm từ nối dùng để diễn tả sự tương phản, nhượng bộ hoặc đối lập giữa hai ý trong câu. Nắm vững cấu trúc ngữ pháp đi sau mỗi từ nối là chìa khóa.",
+    sections: [
+      {
+        heading: "Although / Even though + mệnh đề",
+        points: [
+          "Although / Even though + S + V, S + V. — Dùng để nối hai mệnh đề tương phản.",
+          "Although it was raining, we went out. — Mặc dù trời mưa, chúng tôi vẫn ra ngoài.",
+          "💡 Sau 'although' luôn là một mệnh đề đầy đủ (có chủ ngữ + động từ).",
+        ],
+      },
+      {
+        heading: "Despite / In spite of + danh từ / V-ing",
+        points: [
+          "Despite / In spite of + N / V-ing, S + V.",
+          "Despite the rain, we went out. — Bất chấp mưa, chúng tôi vẫn ra ngoài.",
+          "In spite of being tired, she kept working. — Mặc dù mệt, cô ấy vẫn tiếp tục làm việc.",
+          "💡 Không dùng mệnh đề sau despite/in spite of. Muốn dùng mệnh đề thì thêm 'the fact that': Despite the fact that it rained, ...",
+        ],
+      },
+      {
+        heading: "However / Nevertheless",
+        points: [
+          "However / Nevertheless đứng đầu câu thứ hai, theo sau bởi dấu phẩy.",
+          "It was raining. However, we went out. — Trời mưa. Tuy nhiên, chúng tôi vẫn ra ngoài.",
+          "The exam was hard. Nevertheless, she passed. — Bài thi khó. Tuy vậy, cô ấy vẫn đậu.",
+          "💡 'However' và 'nevertheless' nối hai câu riêng biệt, không nối hai mệnh đề trong cùng một câu bằng dấu phẩy.",
+        ],
+      },
+      {
+        heading: "Whereas / While (đối lập)",
+        points: [
+          "Whereas / While + S + V, S + V. — Dùng để đối lập hai sự việc.",
+          "She loves coffee, whereas her husband prefers tea. — Cô ấy thích cà phê, trong khi chồng cô ấy thích trà.",
+          "While Tom is outgoing, his brother is very shy. — Trong khi Tom hướng ngoại thì anh trai anh ấy rất nhút nhát.",
+        ],
+      },
+    ],
+    points: [
+      "Although it was cold, she wore a dress. — Mặc dù trời lạnh, cô ấy vẫn mặc váy.",
+      "Despite the traffic, we arrived on time. — Bất chấp kẹt xe, chúng tôi đến đúng giờ.",
+      "The food was expensive. However, it was delicious. — Đồ ăn đắt. Tuy nhiên, nó rất ngon.",
+      "She is very kind, whereas her sister is quite rude. — Cô ấy rất tốt bụng, trong khi chị cô ấy khá thô lỗ.",
+    ],
+    exercises: [
+      {
+        id: "e1",
+        type: "choice",
+        question: "___ the bad weather, the match continued.",
+        options: ["Despite", "Although", "However"],
+        answer: "Despite",
+        explain_vi:
+          "Sau chỗ trống là danh từ 'the bad weather' -> dùng 'Despite'. 'Although' cần mệnh đề đầy đủ.",
+      },
+      {
+        id: "e2",
+        type: "fill",
+        question: "___ she was tired, she finished the report.",
+        answer: "Although",
+        explain_vi:
+          "Sau chỗ trống là mệnh đề 'she was tired' -> dùng 'Although' (không dùng 'Despite').",
+      },
+      {
+        id: "e3",
+        type: "choice",
+        question:
+          "The hotel was expensive. ___, the service was terrible.",
+        options: ["However", "Although", "Despite"],
+        answer: "However",
+        explain_vi:
+          "Nối hai câu riêng biệt với nghĩa tương phản -> dùng 'However' + dấu phẩy.",
+      },
+      {
+        id: "e4",
+        type: "reorder",
+        question: "Sắp xếp: Mặc dù mệt, anh ấy vẫn đi làm.",
+        options: ["In spite of", "being tired", "he", "went to work"],
+        answer: "In spite of being tired he went to work",
+        explain_vi:
+          "In spite of + V-ing (being tired), S + V.",
+      },
+      {
+        id: "e5",
+        type: "fill",
+        question:
+          "He is very rich. ___, he lives a simple life.",
+        answer: "Nevertheless",
+        explain_vi:
+          "Nối hai câu riêng biệt mang nghĩa nhượng bộ -> 'Nevertheless' (Tuy vậy).",
+      },
+      {
+        id: "e6",
+        type: "choice",
+        question:
+          "___ being very young, she speaks three languages fluently.",
+        options: ["Despite", "Although", "However"],
+        answer: "Despite",
+        explain_vi:
+          "Sau chỗ trống là V-ing (being) -> dùng 'Despite' hoặc 'In spite of'.",
+      },
+      {
+        id: "e7",
+        type: "fill",
+        question:
+          "Tom loves sports, ___ his brother prefers reading.",
+        answer: "whereas",
+        explain_vi:
+          "Đối lập hai sự việc trong cùng một câu -> dùng 'whereas' (trong khi đó).",
+      },
+      {
+        id: "e8",
+        type: "choice",
+        question:
+          "___ the fact that he studied hard, he failed the exam.",
+        options: ["Despite", "However", "Whereas"],
+        answer: "Despite",
+        explain_vi:
+          "💡 'Despite the fact that + mệnh đề' là cách kết hợp despite với mệnh đề đầy đủ.",
+      },
+      {
+        id: "e9",
+        type: "reorder",
+        question: "Sắp xếp: Trời mưa. Tuy nhiên, chúng tôi vẫn vui.",
+        options: ["It rained.", "However,", "we", "still had fun"],
+        answer: "It rained. However, we still had fun",
+        explain_vi:
+          "However đứng đầu câu thứ hai, sau dấu chấm của câu trước.",
+      },
+      {
+        id: "e10",
+        type: "fill",
+        question:
+          "___ it was a public holiday, some shops were open.",
+        answer: "Although",
+        explain_vi:
+          "Sau chỗ trống là mệnh đề đầy đủ (it was...) -> dùng 'Although'.",
+      },
+      {
+        id: "e11",
+        type: "choice",
+        question:
+          "She didn't get the job ___ having a lot of experience.",
+        options: ["despite", "although", "however"],
+        answer: "despite",
+        explain_vi:
+          "Sau chỗ trống là V-ing (having) -> dùng 'despite' hoặc 'in spite of'.",
+      },
+      {
+        id: "e12",
+        type: "reorder",
+        question:
+          "Sắp xếp: Trong khi cô ấy giỏi toán thì anh ấy giỏi văn.",
+        options: [
+          "While",
+          "she is good at maths,",
+          "he",
+          "is good at",
+          "literature",
+        ],
+        answer: "While she is good at maths, he is good at literature",
+        explain_vi:
+          "While + S + V, S + V. Dùng để đối lập hai sự việc.",
+      },
+    ],
+  },
+  {
+    id: "gr_b2_future_perfect_continuous",
+    level: "b2",
+    title: "Future Perfect & Future Continuous",
+    title_vi: "Tương lai hoàn thành và Tương lai tiếp diễn",
+    summary_vi:
+      "Future Perfect (will have + V3) diễn tả hành động sẽ hoàn thành trước một mốc thời gian trong tương lai. Future Continuous (will be + V-ing) diễn tả hành động đang diễn ra tại một thời điểm trong tương lai.",
+    sections: [
+      {
+        heading: "Future Perfect: will have + V3",
+        points: [
+          "Cấu trúc: S + will have + V3 (past participle).",
+          "Phủ định: S + will not (won't) have + V3.",
+          "Câu hỏi: Will + S + have + V3?",
+          "Diễn tả hành động sẽ hoàn thành trước một mốc thời gian: By 2030, I will have graduated.",
+          "💡 Thường đi với 'by + thời gian': by tomorrow, by next week, by the time...",
+        ],
+      },
+      {
+        heading: "Future Continuous: will be + V-ing",
+        points: [
+          "Cấu trúc: S + will be + V-ing.",
+          "Phủ định: S + won't be + V-ing.",
+          "Câu hỏi: Will + S + be + V-ing?",
+          "Diễn tả hành động đang xảy ra tại một thời điểm cụ thể trong tương lai: At 8 PM tonight, I will be studying.",
+          "💡 Thường đi với 'at + thời điểm cụ thể' hoặc 'this time tomorrow/next week'.",
+        ],
+      },
+      {
+        heading: "So sánh hai thì",
+        points: [
+          "Future Perfect nhấn mạnh sự hoàn thành: By 6 PM, I will have finished dinner. (xong trước 6 giờ).",
+          "Future Continuous nhấn mạnh đang diễn ra: At 6 PM, I will be eating dinner. (đang ăn lúc 6 giờ).",
+          "💡 Future Perfect = xong trước mốc. Future Continuous = đang làm tại mốc.",
+        ],
+      },
+      {
+        heading: "Dấu hiệu nhận biết",
+        points: [
+          "Future Perfect: by + thời gian, by the time + mệnh đề, before + thời gian.",
+          "Future Continuous: at this time tomorrow, at + giờ cụ thể, this time next week.",
+        ],
+      },
+    ],
+    points: [
+      "By next year, I will have finished my degree. — Trước năm sau, tôi sẽ hoàn thành bằng cấp.",
+      "At 10 PM tonight, she will be sleeping. — Lúc 10 giờ tối nay, cô ấy sẽ đang ngủ.",
+      "Will you have completed the project by Friday? — Bạn sẽ hoàn thành dự án trước thứ Sáu chứ?",
+      "This time next week, we will be lying on the beach. — Giờ này tuần sau, chúng tôi sẽ đang nằm trên bãi biển.",
+    ],
+    exercises: [
+      {
+        id: "e1",
+        type: "choice",
+        question: "By the end of this month, she ___ here for ten years.",
+        options: [
+          "will have worked",
+          "will be working",
+          "will work",
+        ],
+        answer: "will have worked",
+        explain_vi:
+          "'By the end of this month' = trước cuối tháng -> nhấn mạnh hoàn thành -> Future Perfect: will have + V3.",
+      },
+      {
+        id: "e2",
+        type: "fill",
+        question:
+          "At 9 AM tomorrow, I ___ (fly) to London.",
+        answer: "will be flying",
+        explain_vi:
+          "'At 9 AM tomorrow' = thời điểm cụ thể -> hành động đang diễn ra -> Future Continuous: will be + V-ing.",
+      },
+      {
+        id: "e3",
+        type: "choice",
+        question:
+          "This time next week, we ___ on the beach in Bali.",
+        options: [
+          "will be relaxing",
+          "will have relaxed",
+          "will relax",
+        ],
+        answer: "will be relaxing",
+        explain_vi:
+          "'This time next week' = giờ này tuần sau -> đang diễn ra tại mốc -> Future Continuous.",
+      },
+      {
+        id: "e4",
+        type: "fill",
+        question:
+          "By the time you arrive, we ___ (leave) already.",
+        answer: "will have left",
+        explain_vi:
+          "'By the time + mệnh đề' -> hành động hoàn thành trước mốc -> Future Perfect: will have + V3.",
+      },
+      {
+        id: "e5",
+        type: "reorder",
+        question:
+          "Sắp xếp: Trước năm 2030, họ sẽ xây xong cây cầu mới.",
+        options: [
+          "By 2030,",
+          "they",
+          "will have built",
+          "the new bridge",
+        ],
+        answer: "By 2030, they will have built the new bridge",
+        explain_vi:
+          "By + mốc thời gian -> Future Perfect: will have + V3 (build -> built).",
+      },
+      {
+        id: "e6",
+        type: "choice",
+        question:
+          "Don't call me at 7 PM. I ___ dinner with my family.",
+        options: [
+          "will be having",
+          "will have had",
+          "will have",
+        ],
+        answer: "will be having",
+        explain_vi:
+          "At 7 PM = thời điểm cụ thể, hành động đang diễn ra -> Future Continuous: will be + V-ing.",
+      },
+      {
+        id: "e7",
+        type: "fill",
+        question:
+          "By next Friday, he ___ (read) the whole book.",
+        answer: "will have read",
+        explain_vi:
+          "'By next Friday' = trước thứ Sáu tới -> hoàn thành -> Future Perfect: will have + V3 (read -> read).",
+      },
+      {
+        id: "e8",
+        type: "choice",
+        question:
+          "At this time tomorrow, the students ___ their final exam.",
+        options: [
+          "will be taking",
+          "will have taken",
+          "will take",
+        ],
+        answer: "will be taking",
+        explain_vi:
+          "💡 'At this time tomorrow' = giờ này ngày mai -> hành động đang diễn ra -> Future Continuous.",
+      },
+      {
+        id: "e9",
+        type: "reorder",
+        question:
+          "Sắp xếp: Lúc 3 giờ chiều, cô ấy sẽ đang họp.",
+        options: [
+          "At 3 PM,",
+          "she",
+          "will be having",
+          "a meeting",
+        ],
+        answer: "At 3 PM, she will be having a meeting",
+        explain_vi:
+          "At + giờ cụ thể -> Future Continuous: will be + V-ing.",
+      },
+      {
+        id: "e10",
+        type: "fill",
+        question:
+          "By the time the movie starts, we ___ (eat) dinner.",
+        answer: "will have eaten",
+        explain_vi:
+          "'By the time + mệnh đề' -> hoàn thành trước mốc -> Future Perfect: will have + V3 (eat -> eaten).",
+      },
+      {
+        id: "e11",
+        type: "choice",
+        question:
+          "I ___ you the money back by the end of the week. I promise.",
+        options: [
+          "will have paid",
+          "will be paying",
+          "will pay",
+        ],
+        answer: "will have paid",
+        explain_vi:
+          "'By the end of the week' -> hoàn thành trước mốc -> Future Perfect: will have + V3.",
+      },
+      {
+        id: "e12",
+        type: "reorder",
+        question:
+          "Sắp xếp: Trước khi bạn tỉnh dậy, tôi sẽ đã chạy xong 10 km.",
+        options: [
+          "Before",
+          "you wake up,",
+          "I",
+          "will have run",
+          "10 kilometres",
+        ],
+        answer: "Before you wake up, I will have run 10 kilometres",
+        explain_vi:
+          "💡 'Before + mệnh đề' cũng là dấu hiệu của Future Perfect: will have + V3 (run -> run).",
+      },
+    ],
+  },
 ];

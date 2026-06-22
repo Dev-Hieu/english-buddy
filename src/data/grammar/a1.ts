@@ -341,4 +341,273 @@ export const A1_GRAMMAR: GrammarTopic[] = [
       { id: "e11", type: "choice", question: "My sister lives ___ Hanoi.", options: ["in", "on", "at"], answer: "in", explain_vi: "in + tên thành phố: in Hanoi." },
     ],
   },
+
+  /* ───────────────────── 7. POSSESSIVE ADJECTIVES & 'S ────────────────────── */
+  {
+    id: "gr_a1_possessives",
+    level: "a1",
+    title: "Possessive adjectives & possessive 's",
+    title_vi: "Tính từ sở hữu (my/your/his/her...) & sở hữu cách 's",
+    summary_vi:
+      "Tính từ sở hữu đứng trước danh từ để chỉ ai sở hữu. Thêm 's sau tên riêng/danh từ để chỉ sở hữu.",
+    sections: [
+      {
+        heading: "Cách dùng",
+        points: [
+          "Tính từ sở hữu (possessive adjectives) thay cho đại từ để nói vật thuộc về ai.",
+          "I → my, you → your, he → his, she → her, it → its, we → our, they → their.",
+          "Possessive 's: thêm 's sau danh từ chỉ người để diễn tả sở hữu.",
+        ],
+      },
+      {
+        heading: "Cấu trúc",
+        points: [
+          "Tính từ sở hữu + danh từ: my book, your name, his car, her phone.",
+          "Danh từ số ít + 's: Tom's bag, my mother's house.",
+          "Danh từ số nhiều đã có -s + ': the students' books, my parents' car.",
+        ],
+      },
+      {
+        heading: "Ví dụ",
+        points: [
+          "This is my book. — Đây là sách của tôi.",
+          "Her name is Lan. — Tên cô ấy là Lan.",
+          "Their house is big. — Nhà của họ to.",
+          "Tom's bag is blue. — Cái túi của Tom màu xanh.",
+          "The cat likes its toy. — Con mèo thích đồ chơi của nó.",
+        ],
+      },
+      {
+        heading: "Lưu ý",
+        points: [
+          "💡 'its' (sở hữu) KHÔNG có dấu nháy. 'it's' = it is.",
+          "💡 'your' (sở hữu) khác 'you're' (you are).",
+          "💡 'their' (sở hữu) khác 'they're' (they are) và 'there' (ở đó).",
+        ],
+      },
+    ],
+    points: [
+      "I → my, you → your, he → his, she → her, it → its, we → our, they → their.",
+      "This is my book. — Đây là sách của tôi.",
+      "Her name is Lan. — Tên cô ấy là Lan.",
+      "Tom's bag is blue. — Cái túi của Tom màu xanh. (possessive 's)",
+      "💡 'its' (sở hữu) khác 'it's' (it is).",
+      "💡 'your' khác 'you're'; 'their' khác 'they're'.",
+    ],
+    exercises: [
+      { id: "e1", type: "choice", question: "This is ___ pen. (I)", options: ["my", "I", "me"], answer: "my", explain_vi: "'I' → tính từ sở hữu 'my'." },
+      { id: "e2", type: "choice", question: "___ name is Anna. (she)", options: ["She", "Her", "His"], answer: "Her", explain_vi: "'she' → tính từ sở hữu 'Her'." },
+      { id: "e3", type: "fill", question: "They love ___ children. (they → ?)", answer: "their", explain_vi: "'they' → tính từ sở hữu 'their'." },
+      { id: "e4", type: "choice", question: "The dog is eating ___ food.", options: ["it's", "its", "his"], answer: "its", explain_vi: "'its' là sở hữu (không có dấu nháy). 'it's' = it is." },
+      { id: "e5", type: "fill", question: "Is this ___ car? (you → ?)", answer: "your", explain_vi: "'you' → tính từ sở hữu 'your'." },
+      { id: "e6", type: "reorder", question: "Sắp xếp:", options: ["is", "His", "Tom", "name"], answer: "His name is Tom", explain_vi: "Tính từ sở hữu + danh từ: His name." },
+      { id: "e7", type: "choice", question: "This is ___'s house.", options: ["Anna", "anna", "Annas"], answer: "Anna", explain_vi: "Thêm 's sau tên riêng: Anna's house." },
+      { id: "e8", type: "fill", question: "We like ___ school. (we → ?)", answer: "our", explain_vi: "'we' → tính từ sở hữu 'our'." },
+      { id: "e9", type: "reorder", question: "Sắp xếp:", options: ["my", "is", "This", "book"], answer: "This is my book", explain_vi: "This is + tính từ sở hữu + danh từ." },
+      { id: "e10", type: "choice", question: "___ bag is heavy. (Tom)", options: ["Tom's", "Toms", "Tom"], answer: "Tom's", explain_vi: "Sở hữu cách: Tom's = của Tom." },
+      { id: "e11", type: "fill", question: "He likes ___ new phone. (he → ?)", answer: "his", explain_vi: "'he' → tính từ sở hữu 'his'." },
+      { id: "e12", type: "reorder", question: "Sắp xếp:", options: ["mother's", "My", "is", "kind", "friend"], answer: "My mother's friend is kind", explain_vi: "My mother's friend = bạn của mẹ tôi (possessive 's)." },
+    ],
+  },
+
+  /* ─────────────────────────── 8. SOME / ANY ──────────────────────────────── */
+  {
+    id: "gr_a1_some_any",
+    level: "a1",
+    title: "Some / Any",
+    title_vi: "Some / Any (một vài, một ít)",
+    summary_vi:
+      "Dùng 'some' trong câu khẳng định (+), 'any' trong câu phủ định (-) và câu hỏi (?).",
+    sections: [
+      {
+        heading: "Cách dùng",
+        points: [
+          "'some' = một vài / một ít — dùng trong câu khẳng định.",
+          "'any' = bất kỳ / nào — dùng trong câu phủ định và câu hỏi.",
+          "Cả hai dùng được với danh từ số nhiều đếm được và danh từ không đếm được.",
+        ],
+      },
+      {
+        heading: "Cấu trúc",
+        points: [
+          "(+) S + V + some + N: I have some books. / There is some milk.",
+          "(-) S + don't/doesn't/isn't/aren't + any + N: I don't have any books.",
+          "(?) Do/Does/Is/Are... + any + N? → Do you have any money?",
+        ],
+      },
+      {
+        heading: "Ví dụ",
+        points: [
+          "I have some friends here. — Tôi có một vài người bạn ở đây.",
+          "There is some water in the glass. — Có một ít nước trong ly.",
+          "I don't have any brothers. — Tôi không có anh em trai nào.",
+          "Are there any shops near here? — Có cửa hàng nào gần đây không?",
+        ],
+      },
+      {
+        heading: "Lưu ý",
+        points: [
+          "💡 Dùng 'some' trong câu hỏi mời/xin lịch sự: Would you like some tea? / Can I have some water?",
+          "💡 'not any' = 'no': I don't have any money. = I have no money.",
+        ],
+      },
+    ],
+    points: [
+      "some = một vài/một ít — câu khẳng định: I have some books.",
+      "any — câu phủ định & câu hỏi: I don't have any books. / Do you have any money?",
+      "Dùng với danh từ số nhiều hoặc không đếm được: some water, any chairs.",
+      "💡 'some' trong câu hỏi lịch sự: Would you like some tea?",
+      "💡 'not any' = 'no': I don't have any money = I have no money.",
+    ],
+    exercises: [
+      { id: "e1", type: "choice", question: "I have ___ apples.", options: ["some", "any"], answer: "some", explain_vi: "Câu khẳng định → dùng 'some'." },
+      { id: "e2", type: "choice", question: "She doesn't have ___ money.", options: ["some", "any"], answer: "any", explain_vi: "Câu phủ định → dùng 'any'." },
+      { id: "e3", type: "fill", question: "Are there ___ eggs in the fridge? (some/any)", answer: "any", explain_vi: "Câu hỏi → dùng 'any'." },
+      { id: "e4", type: "fill", question: "There is ___ milk on the table. (some/any)", answer: "some", explain_vi: "Câu khẳng định → dùng 'some'." },
+      { id: "e5", type: "reorder", question: "Sắp xếp:", options: ["have", "I", "some", "books"], answer: "I have some books", explain_vi: "S + V + some + N (câu khẳng định)." },
+      { id: "e6", type: "choice", question: "Do you have ___ brothers?", options: ["some", "any"], answer: "any", explain_vi: "Câu hỏi → dùng 'any'." },
+      { id: "e7", type: "choice", question: "Would you like ___ coffee?", options: ["some", "any"], answer: "some", explain_vi: "Câu mời lịch sự → dùng 'some'." },
+      { id: "e8", type: "fill", question: "We don't have ___ homework today. (some/any)", answer: "any", explain_vi: "Câu phủ định (don't have) → 'any'." },
+      { id: "e9", type: "reorder", question: "Sắp xếp:", options: ["any", "don't", "I", "have", "pets"], answer: "I don't have any pets", explain_vi: "Phủ định: S + don't + V + any + N." },
+      { id: "e10", type: "choice", question: "There are ___ chairs in the room.", options: ["some", "any"], answer: "some", explain_vi: "Câu khẳng định → 'some'." },
+      { id: "e11", type: "fill", question: "Can I have ___ water, please? (some/any)", answer: "some", explain_vi: "Câu xin lịch sự → dùng 'some'." },
+      { id: "e12", type: "reorder", question: "Sắp xếp:", options: ["any", "there", "Are", "near", "shops", "here", "?"], answer: "Are there any shops near here ?", explain_vi: "Câu hỏi: Are there + any + N + ...?" },
+    ],
+  },
+
+  /* ──────────────────── 9. HOW MUCH / HOW MANY ────────────────────────────── */
+  {
+    id: "gr_a1_how_much_many",
+    level: "a1",
+    title: "How much / How many",
+    title_vi: "Bao nhiêu (đếm được / không đếm được)",
+    summary_vi:
+      "'How many' + danh từ đếm được số nhiều; 'How much' + danh từ không đếm được.",
+    sections: [
+      {
+        heading: "Cách dùng",
+        points: [
+          "'How many' hỏi số lượng danh từ đếm được (countable): chairs, books, people.",
+          "'How much' hỏi số lượng danh từ không đếm được (uncountable): water, money, time.",
+          "'How much' cũng dùng để hỏi giá: How much is this? — Cái này giá bao nhiêu?",
+        ],
+      },
+      {
+        heading: "Cấu trúc",
+        points: [
+          "How many + N (số nhiều) + are there? → How many students are there?",
+          "How many + N (số nhiều) + do/does + S + have? → How many books do you have?",
+          "How much + N (không đếm được) + is there? → How much water is there?",
+          "How much + is/are + N? → How much is this shirt? (hỏi giá)",
+        ],
+      },
+      {
+        heading: "Ví dụ",
+        points: [
+          "How many chairs are there? — Có bao nhiêu cái ghế?",
+          "How many brothers do you have? — Bạn có bao nhiêu anh em trai?",
+          "How much milk is there? — Có bao nhiêu sữa?",
+          "How much is this bag? — Cái túi này giá bao nhiêu?",
+        ],
+      },
+      {
+        heading: "Lưu ý",
+        points: [
+          "💡 Danh từ không đếm được phổ biến: water, milk, rice, bread, money, time, sugar, coffee.",
+          "💡 Không dùng 'How many' với danh từ không đếm được: ✗ How many water → ✓ How much water.",
+          "💡 'How much' + không đếm được dùng 'is' (số ít): How much sugar is there?",
+        ],
+      },
+    ],
+    points: [
+      "How many + đếm được (số nhiều): How many chairs are there?",
+      "How much + không đếm được: How much water is there?",
+      "How much = hỏi giá: How much is this? — Cái này bao nhiêu tiền?",
+      "💡 Không đếm được thường gặp: water, milk, rice, bread, money, time.",
+      "💡 Không dùng 'How many' với danh từ không đếm được.",
+    ],
+    exercises: [
+      { id: "e1", type: "choice", question: "How ___ apples do you have?", options: ["much", "many"], answer: "many", explain_vi: "'apples' đếm được số nhiều → How many." },
+      { id: "e2", type: "choice", question: "How ___ water do you need?", options: ["much", "many"], answer: "much", explain_vi: "'water' không đếm được → How much." },
+      { id: "e3", type: "fill", question: "How ___ is this shirt? (much/many)", answer: "much", explain_vi: "Hỏi giá → How much." },
+      { id: "e4", type: "choice", question: "How ___ students are in the class?", options: ["much", "many"], answer: "many", explain_vi: "'students' đếm được → How many." },
+      { id: "e5", type: "fill", question: "How ___ sugar do you want? (much/many)", answer: "much", explain_vi: "'sugar' không đếm được → How much." },
+      { id: "e6", type: "reorder", question: "Sắp xếp:", options: ["many", "How", "do", "books", "have", "you", "?"], answer: "How many books do you have ?", explain_vi: "How many + N + do + S + V?" },
+      { id: "e7", type: "choice", question: "How ___ money do you have?", options: ["much", "many"], answer: "much", explain_vi: "'money' không đếm được → How much." },
+      { id: "e8", type: "fill", question: "How ___ children does she have? (much/many)", answer: "many", explain_vi: "'children' đếm được → How many." },
+      { id: "e9", type: "reorder", question: "Sắp xếp:", options: ["much", "How", "is", "this", "?"], answer: "How much is this ?", explain_vi: "Hỏi giá: How much + is + N?" },
+      { id: "e10", type: "choice", question: "How ___ rice is there?", options: ["much", "many"], answer: "much", explain_vi: "'rice' không đếm được → How much." },
+      { id: "e11", type: "fill", question: "How ___ eggs do we need? (much/many)", answer: "many", explain_vi: "'eggs' đếm được số nhiều → How many." },
+      { id: "e12", type: "reorder", question: "Sắp xếp:", options: ["milk", "How", "is", "much", "there", "?"], answer: "How much milk is there ?", explain_vi: "How much + N (không đếm được) + is there?" },
+    ],
+  },
+
+  /* ─────────────────────────── 10. IMPERATIVES ────────────────────────────── */
+  {
+    id: "gr_a1_imperatives",
+    level: "a1",
+    title: "Imperatives",
+    title_vi: "Câu mệnh lệnh (Go! Don't run! Please sit down.)",
+    summary_vi:
+      "Dùng động từ nguyên thể (không chủ ngữ) để ra lệnh, yêu cầu, chỉ dẫn. Thêm 'Don't' để cấm.",
+    sections: [
+      {
+        heading: "Cách dùng",
+        points: [
+          "Ra lệnh, yêu cầu: Open the door. / Sit down.",
+          "Chỉ dẫn, hướng dẫn: Turn left. / Go straight.",
+          "Lời mời, đề nghị: Come in. / Have a seat.",
+          "Cấm, ngăn: Don't touch! / Don't be late.",
+        ],
+      },
+      {
+        heading: "Cấu trúc",
+        points: [
+          "(+) V (nguyên thể) + ... : Open the window. / Listen!",
+          "(-) Don't + V (nguyên thể) + ... : Don't run! / Don't be noisy.",
+          "Thêm 'Please' để lịch sự: Please sit down. / Close the door, please.",
+        ],
+      },
+      {
+        heading: "Ví dụ",
+        points: [
+          "Go! — Đi đi!",
+          "Don't run! — Đừng chạy!",
+          "Please sit down. — Xin hãy ngồi xuống.",
+          "Be quiet! — Im lặng!",
+          "Don't be late. — Đừng đến trễ.",
+          "Turn off your phone. — Tắt điện thoại đi.",
+        ],
+      },
+      {
+        heading: "Lưu ý",
+        points: [
+          "💡 Câu mệnh lệnh KHÔNG có chủ ngữ (ngầm hiểu là 'you').",
+          "💡 Dùng 'Be' cho tính từ: Be careful! / Be quiet! (KHÔNG phải *Careful! trong ngữ pháp chuẩn).",
+          "💡 Phủ định 'be': Don't be + adj: Don't be sad. (KHÔNG phải *Be not sad).",
+        ],
+      },
+    ],
+    points: [
+      "Khẳng định: V nguyên thể → Open the door! / Sit down!",
+      "Phủ định: Don't + V nguyên thể → Don't run! / Don't be late.",
+      "Lịch sự: thêm 'Please' → Please sit down. / Close the door, please.",
+      "💡 Không có chủ ngữ (ngầm hiểu là 'you').",
+      "💡 Dùng 'Be' cho tính từ: Be careful! / Don't be sad.",
+    ],
+    exercises: [
+      { id: "e1", type: "choice", question: "___ the door, please.", options: ["Open", "Opens", "Opening"], answer: "Open", explain_vi: "Câu mệnh lệnh dùng V nguyên thể: Open." },
+      { id: "e2", type: "choice", question: "___ run in the hall!", options: ["Don't", "Doesn't", "Not"], answer: "Don't", explain_vi: "Phủ định mệnh lệnh: Don't + V." },
+      { id: "e3", type: "fill", question: "___ quiet, please! (be/do)", answer: "Be", explain_vi: "Câu mệnh lệnh với tính từ: Be + adj." },
+      { id: "e4", type: "fill", question: "Don't ___ late for class. (be/is)", answer: "be", explain_vi: "Don't + be + adj: Don't be late." },
+      { id: "e5", type: "reorder", question: "Sắp xếp:", options: ["down", "Please", "sit"], answer: "Please sit down", explain_vi: "Please + V + trạng từ: Please sit down." },
+      { id: "e6", type: "choice", question: "___ careful! The road is wet.", options: ["Be", "Is", "Are"], answer: "Be", explain_vi: "Mệnh lệnh + tính từ: Be careful!" },
+      { id: "e7", type: "fill", question: "___ touch that! It's hot. (Do/Don't)", answer: "Don't", explain_vi: "Cấm → Don't + V: Don't touch." },
+      { id: "e8", type: "reorder", question: "Sắp xếp:", options: ["Don't", "noisy", "be"], answer: "Don't be noisy", explain_vi: "Phủ định: Don't + be + adj." },
+      { id: "e9", type: "choice", question: "___ left at the traffic light.", options: ["Turn", "Turns", "Turning"], answer: "Turn", explain_vi: "Chỉ dẫn: V nguyên thể → Turn." },
+      { id: "e10", type: "fill", question: "___ your homework now. (do/does)", answer: "Do", explain_vi: "Mệnh lệnh: V nguyên thể → Do (your homework)." },
+      { id: "e11", type: "reorder", question: "Sắp xếp:", options: ["the", "off", "Turn", "light"], answer: "Turn off the light", explain_vi: "V + trạng từ + tân ngữ: Turn off the light." },
+      { id: "e12", type: "choice", question: "___ a seat, please.", options: ["Have", "Has", "Having"], answer: "Have", explain_vi: "Lời mời: V nguyên thể → Have a seat." },
+    ],
+  },
 ];

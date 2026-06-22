@@ -328,4 +328,159 @@ export const A2_GRAMMAR: GrammarTopic[] = [
       { id: "e12", type: "choice", question: "She ___ be at work by 8 a.m. every day.", options: ["has to", "have to", "must to"], answer: "has to", explain_vi: "She (số ít) + has to. Không tồn tại 'must to'." },
     ],
   },
+  {
+    id: "gr_a2_future_will",
+    level: "a2",
+    title: "Future Simple (will / won't)",
+    title_vi: "Thì tương lai đơn (will / won't)",
+    summary_vi:
+      "Dùng 'will' để nói về dự đoán chung (không có bằng chứng rõ), lời hứa, quyết định tức thời. Phủ định: won't (will not). Sau will luôn là động từ nguyên thể.",
+    sections: [
+      {
+        heading: "Cách dùng & Dấu hiệu",
+        points: [
+          "Dùng cho: dự đoán chung (I think it will rain), lời hứa (I will help you), quyết định ngay lúc nói (I'll have the chicken).",
+          "Dấu hiệu: I think, I believe, probably, maybe, tomorrow, next year, in the future, I promise.",
+          "💡 So sánh: 'be going to' = dự định từ trước / dấu hiệu rõ; 'will' = dự đoán chung / quyết định tức thời.",
+        ],
+      },
+      {
+        heading: "Cấu trúc (+) (-) (?)",
+        points: [
+          "(+) S + will + V (nguyên thể) → She will come tomorrow. / I'll help you.",
+          "💡 Viết tắt: I will = I'll, he will = he'll, they will = they'll.",
+          "(-) S + will not (won't) + V → He won't be late. / They won't agree.",
+          "(?) Will + S + V? → Will you marry me? — Yes, I will. / No, I won't.",
+        ],
+      },
+      {
+        heading: "Lưu ý",
+        points: [
+          "💡 Sau will luôn là V nguyên thể, không chia: She will go (KHÔNG nói will goes).",
+          "💡 will giống nhau cho mọi chủ ngữ, không chia theo ngôi: I will, he will, they will.",
+        ],
+      },
+    ],
+    points: [
+      "Khẳng định: S + will + V: She will come tomorrow. — Ngày mai cô ấy sẽ đến.",
+      "Viết tắt: I'll, he'll, she'll, we'll, they'll.",
+      "Phủ định: S + won't + V: He won't be late. — Anh ấy sẽ không trễ.",
+      "Nghi vấn: Will + S + V? — Will you help me? — Bạn sẽ giúp tôi chứ?",
+      "Dùng cho dự đoán, lời hứa, quyết định tức thời.",
+    ],
+    exercises: [
+      { id: "e1", type: "choice", question: "I think it ___ rain tomorrow.", options: ["will", "is going to", "does"], answer: "will", explain_vi: "Dự đoán chung (I think...) dùng 'will'." },
+      { id: "e2", type: "fill", question: "She ___ (not / come) to the party tonight.", answer: "won't come", explain_vi: "Phủ định: will not = won't + V nguyên thể." },
+      { id: "e3", type: "choice", question: "___ you help me with this box?", options: ["Will", "Do", "Are"], answer: "Will", explain_vi: "Yêu cầu/đề nghị dùng 'Will + S + V?'." },
+      { id: "e4", type: "choice", question: "Don't worry. I ___ be there on time. I promise.", options: ["will", "am going to", "going to"], answer: "will", explain_vi: "Lời hứa dùng 'will': I will be there." },
+      { id: "e5", type: "reorder", question: "Sắp xếp thành câu đúng:", options: ["will", "They", "arrive", "at", "6", "o'clock"], answer: "They will arrive at 6 o'clock", explain_vi: "Trật tự: S + will + V + trạng ngữ thời gian." },
+      { id: "e6", type: "fill", question: "He ___ (be) 20 years old next month.", answer: "will be", explain_vi: "Sự thật trong tương lai: S + will + be + tuổi." },
+      { id: "e7", type: "choice", question: "I'm hungry. I think I ___ have a sandwich.", options: ["will", "am having", "have"], answer: "will", explain_vi: "Quyết định tức thời (ngay lúc nói) dùng 'will'." },
+      { id: "e8", type: "fill", question: "We ___ (not / forget) your birthday.", answer: "won't forget", explain_vi: "Phủ định: won't + V nguyên thể -> won't forget." },
+      { id: "e9", type: "reorder", question: "Sắp xếp thành câu đúng:", options: ["Will", "she", "call", "us", "later", "?"], answer: "Will she call us later ?", explain_vi: "Câu hỏi: Will + S + V + O + trạng ngữ?" },
+      { id: "e10", type: "choice", question: "I ___ probably travel to Japan next year.", options: ["will", "am", "do"], answer: "will", explain_vi: "Dự đoán với 'probably' dùng 'will': will probably + V." },
+      { id: "e11", type: "fill", question: "___ you ___ (be) at home tonight?", answer: "Will ... be", explain_vi: "Câu hỏi: Will + S + be...? -> Will you be at home tonight?" },
+      { id: "e12", type: "reorder", question: "Sắp xếp thành câu đúng:", options: ["won't", "I", "tell", "anyone", "your", "secret"], answer: "I won't tell anyone your secret", explain_vi: "Lời hứa phủ định: S + won't + V + O." },
+    ],
+  },
+  {
+    id: "gr_a2_should",
+    level: "a2",
+    title: "Should / Shouldn't",
+    title_vi: "Should / Shouldn't (lời khuyên)",
+    summary_vi:
+      "Dùng 'should' để đưa ra lời khuyên, gợi ý, hoặc nói điều nên làm. 'shouldn't' dùng khi khuyên không nên làm gì. Sau should luôn là động từ nguyên thể.",
+    sections: [
+      {
+        heading: "Cách dùng & Dấu hiệu",
+        points: [
+          "Dùng cho: lời khuyên (You should see a doctor), gợi ý (We should try that restaurant), ý kiến về điều đúng/nên làm.",
+          "Dấu hiệu: I think you should..., You should/shouldn't..., What should I...?",
+        ],
+      },
+      {
+        heading: "Cấu trúc (+) (-) (?)",
+        points: [
+          "(+) S + should + V (nguyên thể) → You should drink more water.",
+          "(-) S + shouldn't + V → You shouldn't eat too much sugar.",
+          "(?) Should + S + V? → Should I call him? — Tôi có nên gọi cho anh ấy không?",
+          "💡 should giống nhau cho mọi chủ ngữ, không chia theo ngôi: I should, he should, they should.",
+        ],
+      },
+      {
+        heading: "Lưu ý",
+        points: [
+          "💡 should nhẹ hơn must/have to: should = nên (lời khuyên), must = phải (bắt buộc).",
+          "💡 Sau should luôn là V nguyên thể: You should go (KHÔNG nói should goes / should to go).",
+        ],
+      },
+    ],
+    points: [
+      "Khẳng định: S + should + V: You should see a doctor. — Bạn nên đi khám bác sĩ.",
+      "Phủ định: S + shouldn't + V: You shouldn't stay up late. — Bạn không nên thức khuya.",
+      "Nghi vấn: Should + S + V? — Should I bring an umbrella? — Tôi có nên mang ô không?",
+      "should nhẹ hơn must: should = nên, must = phải.",
+    ],
+    exercises: [
+      { id: "e1", type: "choice", question: "You look tired. You ___ go to bed early.", options: ["should", "must to", "shouldn't"], answer: "should", explain_vi: "Lời khuyên 'nên' dùng 'should'. Không tồn tại 'must to'." },
+      { id: "e2", type: "choice", question: "You ___ eat so much junk food. It's bad for you.", options: ["should", "shouldn't", "don't should"], answer: "shouldn't", explain_vi: "Khuyên không nên dùng 'shouldn't'. Không tồn tại 'don't should'." },
+      { id: "e3", type: "fill", question: "She has a toothache. She ___ (see) a dentist.", answer: "should see", explain_vi: "Lời khuyên: should + V nguyên thể -> should see." },
+      { id: "e4", type: "choice", question: "___ I take a jacket? It might be cold.", options: ["Should", "Do", "Am"], answer: "Should", explain_vi: "Hỏi lời khuyên: Should + S + V?" },
+      { id: "e5", type: "reorder", question: "Sắp xếp thành câu đúng:", options: ["should", "You", "drink", "more", "water"], answer: "You should drink more water", explain_vi: "Trật tự: S + should + V + O." },
+      { id: "e6", type: "fill", question: "It's raining. You ___ (not / go) out without an umbrella.", answer: "shouldn't go", explain_vi: "Khuyên không nên: shouldn't + V nguyên thể." },
+      { id: "e7", type: "choice", question: "He ___ study harder if he wants to pass the exam.", options: ["should", "shouldn't", "should to"], answer: "should", explain_vi: "Lời khuyên 'nên' dùng 'should'. Không có 'should to'." },
+      { id: "e8", type: "reorder", question: "Sắp xếp thành câu đúng:", options: ["shouldn't", "We", "waste", "food"], answer: "We shouldn't waste food", explain_vi: "Trật tự: S + shouldn't + V + O." },
+      { id: "e9", type: "choice", question: "What ___ I do? I lost my wallet!", options: ["should", "do", "am"], answer: "should", explain_vi: "Hỏi lời khuyên: What should I do?" },
+      { id: "e10", type: "fill", question: "You ___ (be) more careful when you drive.", answer: "should be", explain_vi: "Lời khuyên: should + be -> should be more careful." },
+      { id: "e11", type: "reorder", question: "Sắp xếp thành câu đúng:", options: ["Should", "we", "invite", "Tom", "to", "the", "party", "?"], answer: "Should we invite Tom to the party ?", explain_vi: "Câu hỏi: Should + S + V + O?" },
+      { id: "e12", type: "choice", question: "Children ___ play near the road. It's dangerous.", options: ["should", "shouldn't", "don't should"], answer: "shouldn't", explain_vi: "Khuyên không nên (nguy hiểm) dùng 'shouldn't'." },
+    ],
+  },
+  {
+    id: "gr_a2_prepositions_time",
+    level: "a2",
+    title: "Prepositions of Time (in / on / at)",
+    title_vi: "Giới từ chỉ thời gian (in / on / at)",
+    summary_vi:
+      "Dùng 'at' cho giờ và thời điểm cụ thể, 'on' cho ngày và ngày trong tuần, 'in' cho tháng, năm, mùa, buổi trong ngày. Cách nhớ: AT cho điểm nhỏ nhất, IN cho khoảng lớn nhất.",
+    sections: [
+      {
+        heading: "Quy tắc chung",
+        points: [
+          "AT + giờ / thời điểm cụ thể: at 3 o'clock, at noon, at midnight, at night, at the weekend.",
+          "ON + ngày / ngày trong tuần / ngày tháng: on Monday, on 5th June, on Christmas Day, on my birthday.",
+          "IN + tháng / năm / mùa / buổi: in March, in 2024, in summer, in the morning, in the afternoon, in the evening.",
+          "💡 Cách nhớ: AT = điểm nhỏ (giờ) → ON = vừa (ngày) → IN = lớn (tháng, năm, mùa).",
+        ],
+      },
+      {
+        heading: "Ngoại lệ quan trọng",
+        points: [
+          "💡 'at night' (KHÔNG nói 'in the night' trong tiếng Anh phổ thông).",
+          "💡 'at the weekend' (Anh-Anh) hoặc 'on the weekend' (Anh-Mỹ) — cả hai đều đúng.",
+          "💡 Không dùng giới từ trước: this, last, next, every → I'll go next Monday (KHÔNG nói on next Monday).",
+        ],
+      },
+    ],
+    points: [
+      "AT + giờ: at 3 o'clock, at noon, at midnight, at night.",
+      "ON + ngày: on Monday, on 5th June, on Christmas Day.",
+      "IN + tháng/năm/mùa/buổi: in March, in 2024, in summer, in the morning.",
+      "Không dùng giới từ với this/last/next/every: See you next Friday (không có on).",
+    ],
+    exercises: [
+      { id: "e1", type: "choice", question: "The meeting is ___ 9 o'clock.", options: ["at", "on", "in"], answer: "at", explain_vi: "Giờ cụ thể dùng 'at': at 9 o'clock." },
+      { id: "e2", type: "choice", question: "My birthday is ___ July.", options: ["in", "on", "at"], answer: "in", explain_vi: "Tháng dùng 'in': in July." },
+      { id: "e3", type: "choice", question: "We have English class ___ Monday.", options: ["on", "in", "at"], answer: "on", explain_vi: "Ngày trong tuần dùng 'on': on Monday." },
+      { id: "e4", type: "fill", question: "She was born ___ 1995.", answer: "in", explain_vi: "Năm dùng 'in': in 1995." },
+      { id: "e5", type: "choice", question: "I usually exercise ___ the morning.", options: ["in", "on", "at"], answer: "in", explain_vi: "Buổi trong ngày dùng 'in': in the morning." },
+      { id: "e6", type: "fill", question: "The concert is ___ Saturday evening.", answer: "on", explain_vi: "Ngày cụ thể + buổi dùng 'on': on Saturday evening." },
+      { id: "e7", type: "choice", question: "He always reads ___ night.", options: ["at", "in", "on"], answer: "at", explain_vi: "Ngoại lệ: luôn dùng 'at night' (không dùng in the night)." },
+      { id: "e8", type: "reorder", question: "Sắp xếp thành câu đúng:", options: ["starts", "School", "in", "September"], answer: "School starts in September", explain_vi: "Tháng dùng 'in': in September." },
+      { id: "e9", type: "fill", question: "The shop opens ___ 8:30 a.m.", answer: "at", explain_vi: "Giờ cụ thể dùng 'at': at 8:30 a.m." },
+      { id: "e10", type: "choice", question: "We go on holiday ___ summer.", options: ["in", "on", "at"], answer: "in", explain_vi: "Mùa dùng 'in': in summer." },
+      { id: "e11", type: "reorder", question: "Sắp xếp thành câu đúng:", options: ["meet", "Let's", "on", "Friday", "at", "noon"], answer: "Let's meet on Friday at noon", explain_vi: "Ngày dùng 'on', giờ dùng 'at': on Friday at noon." },
+      { id: "e12", type: "choice", question: "The exam is ___ 15th March.", options: ["on", "in", "at"], answer: "on", explain_vi: "Ngày tháng cụ thể dùng 'on': on 15th March." },
+    ],
+  },
 ];

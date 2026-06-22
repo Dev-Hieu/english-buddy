@@ -951,4 +951,344 @@ export const C1_GRAMMAR: GrammarTopic[] = [
       },
     ],
   },
+  {
+    id: "gr_c1_emphasis",
+    level: "c1",
+    title: "Emphasis with do/did",
+    title_vi: "Nhấn mạnh với do/did",
+    summary_vi:
+      "Dùng trợ động từ 'do/does/did' trước động từ chính (thể khẳng định) để nhấn mạnh hành động là thật, trái với mong đợi hoặc phản bác lại lời phủ nhận. Thường gặp trong giao tiếp hàng ngày và văn viết bán trang trọng.",
+    sections: [
+      {
+        heading: "Nhấn mạnh ở thì hiện tại",
+        points: [
+          "do/does + V nguyên thể: I DO like it. — Tôi thích nó thật mà. (nhấn mạnh, phản bác lại ai đó nghĩ mình không thích)",
+          "She DOES work hard. — Cô ấy CÓ làm việc chăm chỉ. (nhấn mạnh sự thật)",
+          "💡 Khi nói, 'do/does' được nhấn trọng âm mạnh. Khi viết, thường in HOA hoặc in nghiêng để thể hiện.",
+        ],
+      },
+      {
+        heading: "Nhấn mạnh ở thì quá khứ",
+        points: [
+          "did + V nguyên thể: She DID tell me. — Cô ấy CÓ nói cho tôi. (phản bác lại lời phủ nhận)",
+          "I DID lock the door. — Tôi CÓ khóa cửa. (khẳng định chắc chắn)",
+          "They DID arrive on time, but nobody noticed. — Họ CÓ đến đúng giờ, nhưng không ai để ý.",
+        ],
+      },
+      {
+        heading: "Nhấn mạnh với câu mệnh lệnh và các trường hợp đặc biệt",
+        points: [
+          "Do + V (mệnh lệnh nhấn mạnh / lịch sự): Do sit down! — Mời ngồi! Do be careful! — Hãy cẩn thận nhé!",
+          "Dùng trong mệnh đề nhượng bộ: Although he DOES try, he never succeeds. — Dù anh ấy CÓ cố gắng, anh ấy không bao giờ thành công.",
+          "💡 Không dùng do/did để nhấn mạnh với 'be', 'have (got)', hoặc modal verbs (can, will...). Chỉ dùng với động từ thường.",
+        ],
+      },
+    ],
+    points: [
+      "do/does + V nguyên thể (hiện tại): I DO like it. — Tôi thích nó thật mà.",
+      "did + V nguyên thể (quá khứ): She DID tell me. — Cô ấy CÓ nói cho tôi.",
+      "Do + V (mệnh lệnh nhấn mạnh): Do sit down! — Mời ngồi!",
+      "Chỉ dùng với động từ thường, không dùng với be/have got/modal verbs.",
+    ],
+    exercises: [
+      {
+        id: "e1",
+        type: "choice",
+        question: "I know you think I forgot, but I ___ remember your birthday.",
+        options: ["do", "am", "have"],
+        answer: "do",
+        explain_vi:
+          "Dùng 'do' trước động từ chính 'remember' để nhấn mạnh ở thì hiện tại: I DO remember.",
+      },
+      {
+        id: "e2",
+        type: "fill",
+        question:
+          "She ___ (do) enjoy classical music, even though she rarely talks about it.",
+        answer: "does",
+        explain_vi:
+          "Chủ ngữ ngôi 3 số ít 'She' dùng 'does' để nhấn mạnh trước động từ nguyên thể 'enjoy'.",
+      },
+      {
+        id: "e3",
+        type: "choice",
+        question: "He ___ apologize yesterday, but she didn't accept it.",
+        options: ["did", "does", "was"],
+        answer: "did",
+        explain_vi:
+          "Nhấn mạnh hành động đã xảy ra ở quá khứ dùng 'did' + V nguyên thể: did apologize.",
+      },
+      {
+        id: "e4",
+        type: "reorder",
+        question: "Sắp xếp thành câu nhấn mạnh:",
+        options: ["I", "do", "want", "to help", "you"],
+        answer: "I do want to help you",
+        explain_vi:
+          "Nhấn mạnh với 'do' + V nguyên thể: I do want to help you — Tôi thật sự muốn giúp bạn.",
+      },
+      {
+        id: "e5",
+        type: "choice",
+        question: "___ be careful on the road!",
+        options: ["Do", "Did", "Does"],
+        answer: "Do",
+        explain_vi:
+          "Dùng 'Do' đầu câu mệnh lệnh để nhấn mạnh lời nhắc nhở/lịch sự: Do be careful!",
+      },
+      {
+        id: "e6",
+        type: "fill",
+        question:
+          "They ___ (do) finish the project on time, despite all the problems.",
+        answer: "did",
+        explain_vi:
+          "Nhấn mạnh hành động quá khứ: 'did' + V nguyên thể 'finish'. Họ CÓ hoàn thành đúng hạn.",
+      },
+      {
+        id: "e7",
+        type: "choice",
+        question:
+          "Although the exam was hard, she ___ pass it in the end.",
+        options: ["did", "does", "has"],
+        answer: "did",
+        explain_vi:
+          "Nhấn mạnh trong mệnh đề nhượng bộ, hành động quá khứ: did + V nguyên thể.",
+      },
+      {
+        id: "e8",
+        type: "reorder",
+        question: "Sắp xếp thành câu nhấn mạnh ở quá khứ:",
+        options: ["She", "did", "tell", "me", "the truth"],
+        answer: "She did tell me the truth",
+        explain_vi:
+          "Nhấn mạnh quá khứ: S + did + V nguyên thể. Cô ấy CÓ nói sự thật cho tôi.",
+      },
+      {
+        id: "e9",
+        type: "fill",
+        question:
+          "We ___ (do) appreciate your support. Thank you so much!",
+        answer: "do",
+        explain_vi:
+          "Chủ ngữ 'We' (ngôi 1 số nhiều) dùng 'do' để nhấn mạnh: We DO appreciate.",
+      },
+      {
+        id: "e10",
+        type: "choice",
+        question:
+          "Which sentence correctly uses emphatic 'do'?",
+        options: [
+          "I do am happy.",
+          "I do feel happy.",
+          "I do be happy.",
+        ],
+        answer: "I do feel happy.",
+        explain_vi:
+          "Chỉ dùng do/did với động từ thường (feel), không dùng với 'be' hay 'am'. 'I do feel happy' là đúng.",
+      },
+      {
+        id: "e11",
+        type: "reorder",
+        question: "Sắp xếp thành câu mệnh lệnh nhấn mạnh:",
+        options: ["Do", "come", "and", "visit", "us sometime"],
+        answer: "Do come and visit us sometime",
+        explain_vi:
+          "Câu mệnh lệnh nhấn mạnh lịch sự: Do + V nguyên thể. Do come and visit us sometime — Nhất định hãy đến thăm chúng tôi nhé.",
+      },
+      {
+        id: "e12",
+        type: "fill",
+        question:
+          "He ___ (do) look tired today. Maybe he didn't sleep well.",
+        answer: "does",
+        explain_vi:
+          "Chủ ngữ ngôi 3 số ít 'He' dùng 'does' + V nguyên thể 'look' để nhấn mạnh: He DOES look tired.",
+      },
+    ],
+  },
+  {
+    id: "gr_c1_discourse_markers",
+    level: "c1",
+    title: "Discourse Markers",
+    title_vi: "Từ nối liên kết văn bản",
+    summary_vi:
+      "Các từ/cụm từ dùng để tổ chức, liên kết ý trong văn nói và văn viết. Bao gồm: bổ sung (moreover, furthermore), tương phản (on the other hand, nevertheless), nguyên nhân-kết quả (consequently, therefore), ví dụ (for instance), và tổng kết (in conclusion, to sum up).",
+    sections: [
+      {
+        heading: "Bổ sung ý (Addition)",
+        points: [
+          "moreover / furthermore / in addition / besides: thêm thông tin, trang trọng hơn 'and'.",
+          "Moreover, the study revealed a significant improvement. — Hơn nữa, nghiên cứu cho thấy sự cải thiện đáng kể.",
+          "Furthermore, the cost was lower than expected. — Thêm vào đó, chi phí thấp hơn dự kiến.",
+          "💡 'Moreover' và 'furthermore' thường đứng đầu câu, theo sau bởi dấu phẩy. Mang tính học thuật, trang trọng.",
+        ],
+      },
+      {
+        heading: "Tương phản (Contrast)",
+        points: [
+          "on the other hand / however / nevertheless / nonetheless / conversely: diễn tả ý trái ngược.",
+          "On the other hand, some experts disagree. — Mặt khác, một số chuyên gia không đồng ý.",
+          "Nevertheless, she decided to continue. — Tuy nhiên, cô ấy quyết định tiếp tục.",
+          "💡 'On the other hand' dùng khi so sánh hai mặt. 'However/Nevertheless' dùng khi ý sau trái ngược/bất ngờ so với ý trước.",
+        ],
+      },
+      {
+        heading: "Nguyên nhân – Kết quả (Cause & Effect)",
+        points: [
+          "consequently / therefore / as a result / hence / thus: chỉ kết quả/hệ quả.",
+          "The roads were icy. Consequently, several accidents occurred. — Đường trơn. Do đó, nhiều tai nạn xảy ra.",
+          "She didn't study; therefore, she failed. — Cô ấy không học; vì vậy, cô ấy trượt.",
+        ],
+      },
+      {
+        heading: "Ví dụ và tổng kết (Example & Summary)",
+        points: [
+          "for instance / for example / such as: đưa ví dụ. For instance, many countries have adopted this policy. — Ví dụ, nhiều nước đã áp dụng chính sách này.",
+          "in conclusion / to sum up / in short / all in all: tổng kết. In conclusion, the project was a success. — Tóm lại, dự án đã thành công.",
+          "💡 Hầu hết discourse markers đứng đầu câu + dấu phẩy, hoặc giữa hai mệnh đề với dấu chấm phẩy phía trước và dấu phẩy phía sau.",
+        ],
+      },
+    ],
+    points: [
+      "Bổ sung: moreover, furthermore, in addition, besides — thêm ý, trang trọng.",
+      "Tương phản: on the other hand, however, nevertheless, nonetheless — ý trái ngược.",
+      "Kết quả: consequently, therefore, as a result, hence, thus — chỉ hệ quả.",
+      "Ví dụ: for instance, for example, such as — minh họa ý.",
+      "Tổng kết: in conclusion, to sum up, in short, all in all — kết luận.",
+    ],
+    exercises: [
+      {
+        id: "e1",
+        type: "choice",
+        question:
+          "The hotel was expensive. ___, the service was excellent.",
+        options: ["Nevertheless", "Consequently", "Furthermore"],
+        answer: "Nevertheless",
+        explain_vi:
+          "Ý sau trái ngược với ý trước (đắt nhưng dịch vụ tốt) → dùng 'Nevertheless' (tuy nhiên).",
+      },
+      {
+        id: "e2",
+        type: "fill",
+        question:
+          "The experiment failed. ___, the team decided to start over. (điền từ chỉ kết quả)",
+        answer: "Consequently",
+        explain_vi:
+          "Thí nghiệm thất bại → hệ quả là đội quyết định làm lại. 'Consequently' = do đó.",
+      },
+      {
+        id: "e3",
+        type: "choice",
+        question:
+          "The product is affordable. ___, it is also eco-friendly.",
+        options: ["Moreover", "However", "Therefore"],
+        answer: "Moreover",
+        explain_vi:
+          "Bổ sung thêm ưu điểm (vừa rẻ vừa thân thiện môi trường) → 'Moreover' (hơn nữa).",
+      },
+      {
+        id: "e4",
+        type: "reorder",
+        question: "Sắp xếp thành câu có discourse marker:",
+        options: [
+          "On the other hand,",
+          "some people",
+          "prefer",
+          "working",
+          "from home",
+        ],
+        answer: "On the other hand, some people prefer working from home",
+        explain_vi:
+          "'On the other hand' đứng đầu câu + dấu phẩy để đưa ra quan điểm đối lập.",
+      },
+      {
+        id: "e5",
+        type: "choice",
+        question:
+          "She worked very hard; ___, she got promoted quickly.",
+        options: ["nevertheless", "therefore", "on the other hand"],
+        answer: "therefore",
+        explain_vi:
+          "Làm việc chăm chỉ → kết quả là được thăng chức nhanh. 'Therefore' = vì vậy.",
+      },
+      {
+        id: "e6",
+        type: "fill",
+        question:
+          "Many cities face pollution. ___, air quality in Beijing has worsened. (điền từ đưa ví dụ)",
+        answer: "For instance",
+        explain_vi:
+          "Đưa ví dụ cụ thể (Bắc Kinh) cho nhận định chung → 'For instance' = ví dụ.",
+      },
+      {
+        id: "e7",
+        type: "choice",
+        question:
+          "___, the evidence strongly supports the new theory.",
+        options: ["In conclusion", "For instance", "On the other hand"],
+        answer: "In conclusion",
+        explain_vi:
+          "Đây là câu tổng kết cuối cùng → dùng 'In conclusion' (tóm lại).",
+      },
+      {
+        id: "e8",
+        type: "reorder",
+        question: "Sắp xếp thành câu có discourse marker chỉ bổ sung:",
+        options: [
+          "Furthermore,",
+          "the research",
+          "confirms",
+          "previous",
+          "findings",
+        ],
+        answer: "Furthermore, the research confirms previous findings",
+        explain_vi:
+          "'Furthermore' đứng đầu câu + dấu phẩy để bổ sung thêm thông tin.",
+      },
+      {
+        id: "e9",
+        type: "fill",
+        question:
+          "The weather was terrible. ___, we decided to cancel the trip. (điền từ chỉ kết quả)",
+        answer: "As a result",
+        explain_vi:
+          "Thời tiết xấu → hệ quả là hủy chuyến đi. 'As a result' = kết quả là.",
+      },
+      {
+        id: "e10",
+        type: "choice",
+        question:
+          "He is very talented. ___, he lacks experience.",
+        options: ["However", "Moreover", "Therefore"],
+        answer: "However",
+        explain_vi:
+          "Ý sau trái ngược với ý trước (tài năng nhưng thiếu kinh nghiệm) → 'However' (tuy nhiên).",
+      },
+      {
+        id: "e11",
+        type: "reorder",
+        question: "Sắp xếp thành câu có discourse marker chỉ tổng kết:",
+        options: [
+          "To sum up,",
+          "the project",
+          "was",
+          "a great",
+          "success",
+        ],
+        answer: "To sum up, the project was a great success",
+        explain_vi:
+          "'To sum up' đứng đầu câu + dấu phẩy để tổng kết nội dung.",
+      },
+      {
+        id: "e12",
+        type: "fill",
+        question:
+          "The plan has many advantages. ___, it reduces costs significantly. (điền từ bổ sung ý)",
+        answer: "In addition",
+        explain_vi:
+          "Bổ sung thêm một ưu điểm nữa → 'In addition' = ngoài ra, thêm vào đó.",
+      },
+    ],
+  },
 ];

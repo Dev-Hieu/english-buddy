@@ -323,4 +323,196 @@ export const B1_GRAMMAR: GrammarTopic[] = [
       { id: "e10", type: "choice", question: "Do we have ___ food for the party?", options: ["enough", "too", "too much enough"], answer: "enough", explain_vi: "enough + danh từ (food): đủ thức ăn." },
     ],
   },
+  {
+    id: "gr_b1_present_perfect_continuous",
+    level: "b1",
+    title: "Present Perfect Continuous",
+    title_vi: "Thì hiện tại hoàn thành tiếp diễn",
+    summary_vi:
+      "Cấu trúc have/has been + V-ing. Nhấn mạnh quá trình hoặc thời gian kéo dài của hành động bắt đầu trong quá khứ và còn tiếp diễn hoặc vừa mới dừng.",
+    sections: [
+      {
+        heading: "Cách dùng & Dấu hiệu",
+        points: [
+          "Nhấn mạnh quá trình/thời gian: I have been studying for 3 hours. — Tôi đã học suốt 3 giờ rồi.",
+          "Hành động vừa dừng nhưng còn kết quả: She has been crying. (Mắt cô ấy còn đỏ.)",
+          "Dấu hiệu: for, since, all day, all morning, recently, lately, how long.",
+          "for + khoảng thời gian, since + mốc thời gian (giống Present Perfect).",
+        ],
+      },
+      {
+        heading: "Cấu trúc (+)(-)(?) ",
+        points: [
+          "Khẳng định: S + have/has + been + V-ing — They have been waiting for an hour.",
+          "Chủ ngữ he/she/it dùng has been, còn lại dùng have been.",
+          "Phủ định: S + have/has + not + been + V-ing — I haven't been sleeping well lately.",
+          "Nghi vấn: Have/Has + S + been + V-ing? — Has he been working all day?",
+        ],
+      },
+      {
+        heading: "So sánh với Present Perfect",
+        points: [
+          "Present Perfect nhấn mạnh kết quả: I have read 3 books. (đã đọc xong 3 cuốn)",
+          "Present Perfect Continuous nhấn mạnh quá trình: I have been reading all morning. (suốt buổi sáng)",
+          "Không dùng thì này với stative verbs (know, believe, love...) — dùng Present Perfect thay thế.",
+        ],
+      },
+      {
+        heading: "💡 Mẹo ghi nhớ",
+        points: [
+          "💡 Khi muốn nhấn mạnh 'bao lâu' (how long) thì ưu tiên dùng thì này.",
+          "💡 Nếu thấy kết quả rõ ràng của hành động vừa dừng (mặt đỏ, đường ướt...) → Present Perfect Continuous.",
+          "💡 Công thức nhớ: have/has + BEEN + V-ING = đã đang làm gì đó (kéo dài).",
+        ],
+      },
+    ],
+    points: [
+      "have/has + been + V-ing: nhấn mạnh quá trình kéo dài — I have been studying for 3 hours.",
+      "Hành động vừa dừng nhưng còn kết quả: She has been crying. (mắt còn đỏ).",
+      "Dấu hiệu: for, since, all day, all morning, recently, lately, how long.",
+      "Không dùng với stative verbs (know, love, believe) — dùng Present Perfect.",
+    ],
+    exercises: [
+      { id: "e1", type: "choice", question: "She ___ been working here since 2020.", options: ["has", "have", "had"], answer: "has", explain_vi: "Chủ ngữ she dùng has." },
+      { id: "e2", type: "choice", question: "They ___ been waiting for the bus for 30 minutes.", options: ["have", "has", "are"], answer: "have", explain_vi: "Chủ ngữ they dùng have." },
+      { id: "e3", type: "fill", question: "I have been ___ (learn) English for five years.", answer: "learning", explain_vi: "have been + V-ing: learn → learning." },
+      { id: "e4", type: "fill", question: "He has been ___ (run) since 6 a.m.", answer: "running", explain_vi: "has been + V-ing: run → running (nhân đôi n)." },
+      { id: "e5", type: "reorder", question: "Sắp xếp các từ thành câu đúng:", options: ["been", "has", "She", "all", "cooking", "morning"], answer: "She has been cooking all morning", explain_vi: "Trật tự: S + has + been + V-ing + thời gian." },
+      { id: "e6", type: "choice", question: "How long ___ you been living in this city?", options: ["have", "has", "do"], answer: "have", explain_vi: "Chủ ngữ you dùng have; câu hỏi How long + have + S + been + V-ing." },
+      { id: "e7", type: "fill", question: "We have been ___ (wait) for you since 3 o'clock.", answer: "waiting", explain_vi: "have been + V-ing: wait → waiting." },
+      { id: "e8", type: "choice", question: "It ___ been raining all day.", options: ["has", "have", "is"], answer: "has", explain_vi: "Chủ ngữ it dùng has." },
+      { id: "e9", type: "reorder", question: "Sắp xếp các từ thành câu đúng:", options: ["have", "not", "I", "well", "sleeping", "been", "lately"], answer: "I have not been sleeping well lately", explain_vi: "Trật tự: S + have + not + been + V-ing + trạng từ." },
+      { id: "e10", type: "fill", question: "___ she been ___ (study) all night? (nghi vấn)", answer: "Has / studying", explain_vi: "Nghi vấn: Has + S + been + V-ing: Has she been studying." },
+      { id: "e11", type: "choice", question: "My eyes are red because I ___ been reading for hours.", options: ["have", "has", "am"], answer: "have", explain_vi: "Chủ ngữ I dùng have; kết quả còn thấy được (mắt đỏ)." },
+    ],
+  },
+  {
+    id: "gr_b1_past_perfect",
+    level: "b1",
+    title: "Past Perfect",
+    title_vi: "Thì quá khứ hoàn thành",
+    summary_vi:
+      "Cấu trúc had + V3 (quá khứ phân từ). Diễn tả hành động xảy ra trước một hành động khác trong quá khứ (quá khứ của quá khứ).",
+    sections: [
+      {
+        heading: "Cách dùng & Dấu hiệu",
+        points: [
+          "Hành động xảy ra TRƯỚC một hành động khác trong quá khứ: When I arrived, the train had already left.",
+          "Dấu hiệu: before, after, by the time, already, just, never ... before, until.",
+          "Thường đi kèm Past Simple: had + V3 (hành động trước) + Past Simple (hành động sau).",
+          "after + Past Perfect, Past Simple: After she had eaten, she went to bed.",
+          "before + Past Simple, Past Perfect: Before I went out, I had finished my homework.",
+        ],
+      },
+      {
+        heading: "Cấu trúc (+)(-)(?) ",
+        points: [
+          "Khẳng định: S + had + V3 — They had finished dinner before 8 p.m.",
+          "had dùng cho TẤT CẢ các ngôi (I/you/he/she/it/we/they).",
+          "Phủ định: S + had + not + V3 — She had not (hadn't) seen that movie before.",
+          "Nghi vấn: Had + S + V3? — Had you ever visited London before 2020?",
+        ],
+      },
+      {
+        heading: "So sánh với Past Simple",
+        points: [
+          "Past Simple: hành động xảy ra tại thời điểm trong quá khứ — I arrived at 9.",
+          "Past Perfect: hành động xảy ra TRƯỚC thời điểm đó — The train had left before I arrived.",
+          "Nếu kể đúng trình tự thời gian, có thể chỉ dùng Past Simple: I ate dinner and then went to bed.",
+        ],
+      },
+      {
+        heading: "💡 Mẹo ghi nhớ",
+        points: [
+          "💡 Past Perfect = quá khứ của quá khứ. Hành động nào xảy ra TRƯỚC → dùng had + V3.",
+          "💡 Nhớ: after + hành động TRƯỚC (had V3), before + hành động SAU (Past Simple).",
+          "💡 had dùng cho mọi ngôi, không cần phân biệt như has/have.",
+        ],
+      },
+    ],
+    points: [
+      "had + V3: hành động xảy ra trước một hành động khác trong quá khứ — The train had left before I arrived.",
+      "had dùng cho TẤT CẢ các ngôi (không phân biệt).",
+      "Dấu hiệu: before, after, by the time, already, just, never ... before.",
+      "Nếu kể đúng trình tự, có thể chỉ dùng Past Simple: I ate and went to bed.",
+    ],
+    exercises: [
+      { id: "e1", type: "choice", question: "By the time we arrived, the movie ___.", options: ["had started", "started", "has started"], answer: "had started", explain_vi: "Hành động xảy ra trước (phim bắt đầu) dùng had + V3." },
+      { id: "e2", type: "choice", question: "She ___ never seen snow before she moved to Canada.", options: ["had", "has", "was"], answer: "had", explain_vi: "Hành động trước 'moved' → dùng had + V3." },
+      { id: "e3", type: "fill", question: "After he had ___ (finish) his homework, he went out.", answer: "finished", explain_vi: "had + V3: finish → finished." },
+      { id: "e4", type: "fill", question: "I ___ (not eat) anything before the meeting.", answer: "had not eaten", explain_vi: "Phủ định: had + not + V3: had not eaten." },
+      { id: "e5", type: "reorder", question: "Sắp xếp các từ thành câu đúng:", options: ["had", "left", "already", "They", "I", "when", "arrived"], answer: "They had already left when I arrived", explain_vi: "Trật tự: S + had + already + V3 + when + S + V (Past Simple)." },
+      { id: "e6", type: "choice", question: "Before I ___ the email, she had called me.", options: ["read", "had read", "reading"], answer: "read", explain_vi: "before + Past Simple (hành động sau); hành động trước đã dùng had called." },
+      { id: "e7", type: "fill", question: "By the time she arrived, we had ___ (eat) all the cake.", answer: "eaten", explain_vi: "had + V3: eat → eaten." },
+      { id: "e8", type: "choice", question: "He told me that he ___ the book.", options: ["had lost", "lost", "has lost"], answer: "had lost", explain_vi: "Tường thuật lại sự kiện trước 'told' → had + V3." },
+      { id: "e9", type: "reorder", question: "Sắp xếp các từ thành câu đúng:", options: ["had", "not", "She", "the", "before", "seen", "movie"], answer: "She had not seen the movie before", explain_vi: "Trật tự: S + had + not + V3 + O + before." },
+      { id: "e10", type: "fill", question: "___ you ___ (visit) Paris before your trip last year?", answer: "Had / visited", explain_vi: "Nghi vấn: Had + S + V3: Had you visited." },
+      { id: "e11", type: "choice", question: "After they ___ dinner, they watched a film.", options: ["had had", "had", "have had"], answer: "had had", explain_vi: "After + Past Perfect: had had (had + V3 của have = had)." },
+    ],
+  },
+  {
+    id: "gr_b1_future_forms",
+    level: "b1",
+    title: "Future Forms (will vs be going to vs present continuous)",
+    title_vi: "Các dạng tương lai (will / be going to / hiện tại tiếp diễn)",
+    summary_vi:
+      "So sánh ba cách diễn đạt tương lai: will (quyết định tức thì, dự đoán), be going to (kế hoạch, dự đoán có căn cứ), present continuous (lịch trình đã sắp xếp).",
+    sections: [
+      {
+        heading: "Cách dùng & Dấu hiệu",
+        points: [
+          "will + V: quyết định tức thì tại lúc nói — I'll help you. / dự đoán không có căn cứ — I think it will rain.",
+          "be going to + V: kế hoạch đã có từ trước — I'm going to visit my grandma this weekend. / dự đoán có căn cứ — Look at those clouds! It's going to rain.",
+          "Present Continuous (am/is/are + V-ing): lịch trình cá nhân đã sắp xếp — I'm meeting John at 5 p.m. tomorrow.",
+          "Dấu hiệu will: I think, I believe, probably, perhaps, tomorrow, next week.",
+          "Dấu hiệu be going to: plan, intend, look!, listen! (có bằng chứng).",
+        ],
+      },
+      {
+        heading: "Cấu trúc (+)(-)(?) ",
+        points: [
+          "will: S + will + V / S + will not (won't) + V / Will + S + V?",
+          "be going to: S + am/is/are + going to + V / S + am/is/are + not + going to + V / Am/Is/Are + S + going to + V?",
+          "Present Continuous: S + am/is/are + V-ing / S + am/is/are + not + V-ing / Am/Is/Are + S + V-ing?",
+        ],
+      },
+      {
+        heading: "So sánh ba dạng",
+        points: [
+          "will: quyết định tức thì, lời hứa, dự đoán chung — I'll call you later.",
+          "be going to: kế hoạch có trước, dự đoán có bằng chứng — She's going to have a baby. (đang mang thai)",
+          "Present Continuous: kế hoạch cụ thể đã sắp xếp (thường có thời gian, địa điểm) — We're flying to London on Friday.",
+          "Cả ba đều nói về tương lai nhưng sắc thái khác nhau.",
+        ],
+      },
+      {
+        heading: "💡 Mẹo ghi nhớ",
+        points: [
+          "💡 Quyết định ngay lúc nói → will. Kế hoạch đã nghĩ trước → be going to.",
+          "💡 Thấy bằng chứng rõ ràng (mây đen, bụng bầu...) → be going to.",
+          "💡 Đã đặt vé, đã hẹn lịch → Present Continuous for future.",
+          "💡 I think / I believe / probably → will (dự đoán mang tính cá nhân).",
+        ],
+      },
+    ],
+    points: [
+      "will + V: quyết định tức thì, lời hứa, dự đoán — I'll help you. / I think it will rain.",
+      "be going to + V: kế hoạch đã có, dự đoán có căn cứ — I'm going to study abroad. / It's going to rain (mây đen).",
+      "Present Continuous: lịch trình đã sắp xếp — I'm meeting John at 5 p.m. tomorrow.",
+      "Phân biệt: quyết định ngay → will, kế hoạch trước → going to, đã đặt lịch → present continuous.",
+    ],
+    exercises: [
+      { id: "e1", type: "choice", question: "I forgot my wallet. — Don't worry, I ___ pay for you.", options: ["will", "am going to", "am paying"], answer: "will", explain_vi: "Quyết định tức thì tại lúc nói → dùng will." },
+      { id: "e2", type: "choice", question: "Look at those dark clouds! It ___.", options: ["is going to rain", "will rain", "is raining"], answer: "is going to rain", explain_vi: "Có bằng chứng (mây đen) → dùng be going to." },
+      { id: "e3", type: "choice", question: "We ___ dinner with the Smiths on Saturday. It's all arranged.", options: ["are having", "will have", "going to have"], answer: "are having", explain_vi: "Lịch trình đã sắp xếp → dùng Present Continuous." },
+      { id: "e4", type: "fill", question: "I think she ___ (win) the competition. (dự đoán cá nhân)", answer: "will win", explain_vi: "I think + will + V: dự đoán mang tính cá nhân." },
+      { id: "e5", type: "fill", question: "He ___ (travel) to Japan next month. He already bought the tickets. (kế hoạch đã sắp xếp)", answer: "is traveling", explain_vi: "Đã mua vé rồi = lịch trình cụ thể → Present Continuous: is traveling." },
+      { id: "e6", type: "reorder", question: "Sắp xếp các từ thành câu đúng:", options: ["going", "I'm", "to", "study", "abroad", "year", "next"], answer: "I'm going to study abroad next year", explain_vi: "Kế hoạch đã có từ trước: S + am/is/are + going to + V." },
+      { id: "e7", type: "choice", question: "The phone is ringing. — I ___ get it!", options: ["will", "am going to", "am getting"], answer: "will", explain_vi: "Quyết định tức thì → will." },
+      { id: "e8", type: "fill", question: "She ___ (not / come) to the party. She told me yesterday. (kế hoạch trước)", answer: "is not going to come", explain_vi: "Kế hoạch đã có từ trước → be going to: is not going to come." },
+      { id: "e9", type: "reorder", question: "Sắp xếp các từ thành câu đúng:", options: ["will", "I", "you", "promise", "help"], answer: "I promise I will help you", explain_vi: "Lời hứa dùng will: I promise I will help you." },
+      { id: "e10", type: "choice", question: "We ___ the 7 o'clock train. I've already booked the seats.", options: ["are taking", "will take", "are going to take"], answer: "are taking", explain_vi: "Đã đặt chỗ rồi = lịch trình cụ thể → Present Continuous." },
+      { id: "e11", type: "fill", question: "Be careful! You ___ (fall)! (dự đoán có bằng chứng)", answer: "are going to fall", explain_vi: "Có bằng chứng ngay trước mắt → be going to: are going to fall." },
+    ],
+  },
 ];
