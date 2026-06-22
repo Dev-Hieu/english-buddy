@@ -106,14 +106,15 @@ export function initSchema(): void {
   try { db.exec("ALTER TABLE users ADD COLUMN status TEXT DEFAULT 'active'"); } catch { /* đã có */ }
   try { db.exec("ALTER TABLE users ADD COLUMN username TEXT"); } catch { /* đã có */ }
   try { db.exec("CREATE UNIQUE INDEX IF NOT EXISTS idx_users_username ON users(username) WHERE username IS NOT NULL"); } catch { /* đã có */ }
-  // Backfill username cho user chưa có
+  // Backfill username theo role: AD01, GV001, PH000001, HS000001
   try {
-    const rows = db.prepare("SELECT id FROM users WHERE username IS NULL AND role != 'system'").all() as { id: string }[];
-    const nextNum = (db.prepare("SELECT COUNT(*) AS c FROM users WHERE username IS NOT NULL").get() as any)?.c || 0;
-    let n = nextNum;
+    const prefixes: Record<string, { prefix: string; pad: number }> = { admin: { prefix: "AD", pad: 2 }, teacher: { prefix: "GV", pad: 3 }, parent: { prefix: "PH", pad: 6 } };
+    const rows = db.prepare("SELECT id, role FROM users WHERE (username IS NULL OR username LIKE 'hs%') AND role != 'system'").all() as { id: string; role: string }[];
     for (const r of rows) {
-      n++;
-      db.prepare("UPDATE users SET username = ? WHERE id = ?").run(`hs${String(n).padStart(3, "0")}`, r.id);
+      const cfg = prefixes[r.role] || prefixes.parent;
+      const max = ((db.prepare(`SELECT MAX(CAST(SUBSTR(username, ${cfg.prefix.length + 1}) AS INTEGER)) AS n FROM users WHERE UPPER(username) LIKE '${cfg.prefix}%'`).get() as any)?.n || 0) + 1;
+      const uname = `${cfg.prefix}${String(max).padStart(cfg.pad, "0")}`;
+      db.prepare("UPDATE users SET username = ? WHERE id = ?").run(uname, r.id);
     }
   } catch { /* bỏ qua */ }
   // Chuẩn hoá level cũ ("beginner"... ) về tập CEFR hợp lệ để bộ lọc theo cấp hoạt động.

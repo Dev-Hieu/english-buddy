@@ -6,7 +6,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import type { NextFunction, Request, Response } from "express";
 import { db, initSchema } from "./db.js";
-import { generateUsername, hashPassword, loginUser, registerUser, requireAdmin, requireAuth } from "./auth.js";
+import { generateStudentUsername, generateUsername, hashPassword, loginUser, registerUser, requireAdmin, requireAuth } from "./auth.js";
 import { nextReview } from "../../src/utils/spacedRepetition";
 import { buildQuiz } from "../../src/utils/quizGenerator";
 import type { VocabularyWord } from "../../src/types";
@@ -221,7 +221,7 @@ export function createApp() {
     if (existing) return res.status(409).json({ error: "email đã tồn tại" });
     const id = randomUUID();
     const r = ["admin", "parent", "teacher"].includes(role) ? role : "parent";
-    const uname = generateUsername();
+    const uname = generateUsername(r);
     const user = {
       id, email: String(email).trim(), username: uname, passwordHash: hashPassword(String(password)),
       name: String(name || "").trim() || null, role: r,
@@ -261,7 +261,7 @@ export function createApp() {
       const existing = db.prepare("SELECT id FROM users WHERE email = ?").get(String(email));
       if (existing) return res.status(409).json({ error: "email đã tồn tại" });
       const uid = randomUUID();
-      const uname = generateUsername();
+      const uname = generateStudentUsername();
       db.prepare(`INSERT INTO users (id, email, username, passwordHash, name, role, createdAt, studentLimit, isPremium, status)
         VALUES (?, ?, ?, ?, ?, 'parent', ?, 1, 0, 'active')`).run(uid, String(email).trim(), uname, hashPassword(String(password)), String(name).trim(), Date.now());
       parentId = uid;

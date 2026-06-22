@@ -27,9 +27,22 @@ const publicUser = (r: any): User => ({
   canEditImages: !!r.canEditImages || r.role === "admin",
 });
 
-export function generateUsername(): string {
-  const count = ((db.prepare("SELECT MAX(CAST(SUBSTR(username,3) AS INTEGER)) AS n FROM users WHERE username LIKE 'hs%'").get() as any)?.n || 0) + 1;
-  return `hs${String(count).padStart(3, "0")}`;
+const USERNAME_PREFIX: Record<string, { prefix: string; pad: number }> = {
+  parent: { prefix: "PH", pad: 6 },
+  teacher: { prefix: "GV", pad: 3 },
+  admin: { prefix: "AD", pad: 2 },
+};
+
+export function generateUsername(role: string = "parent"): string {
+  const cfg = USERNAME_PREFIX[role] || USERNAME_PREFIX.parent;
+  const max = ((db.prepare(`SELECT MAX(CAST(SUBSTR(username, ${cfg.prefix.length + 1}) AS INTEGER)) AS n FROM users WHERE UPPER(username) LIKE '${cfg.prefix}%'`).get() as any)?.n || 0) + 1;
+  return `${cfg.prefix}${String(max).padStart(cfg.pad, "0")}`;
+}
+
+// Sinh username cho học sinh (dùng khi tạo tài khoản riêng cho bé)
+export function generateStudentUsername(): string {
+  const max = ((db.prepare("SELECT MAX(CAST(SUBSTR(username, 3) AS INTEGER)) AS n FROM users WHERE UPPER(username) LIKE 'HS%'").get() as any)?.n || 0) + 1;
+  return `HS${String(max).padStart(6, "0")}`;
 }
 
 // ── Mật khẩu (scrypt) ──
@@ -75,7 +88,7 @@ export function registerUser(email: string, password: string, name: string, invi
   }
 
   const id = randomUUID();
-  const username = generateUsername();
+  const username = generateUsername("parent");
   db.prepare("INSERT INTO users (id, email, username, passwordHash, name, role, createdAt, studentLimit, status) VALUES (?, ?, ?, ?, ?, 'parent', ?, 1, ?)")
     .run(id, email, username, hashPassword(password), (name || "").trim() || email.split("@")[0], Date.now(), status);
   return { token: sign(id), user: publicUser(db.prepare("SELECT * FROM users WHERE id = ?").get(id)) };
@@ -83,8 +96,8 @@ export function registerUser(email: string, password: string, name: string, invi
 
 export function loginUser(login: string, password: string): { token: string; user: User } | null {
   login = String(login || "").trim().toLowerCase();
-  // Tìm theo email hoặc username
-  const row = (db.prepare("SELECT * FROM users WHERE email = ? OR username = ?").get(login, login)) as any;
+  // Tìm theo email hoặc username (không phân biệt hoa/thường)
+  const row = (db.prepare("SELECT * FROM users WHERE LOWER(email) = ? OR LOWER(username) = ?").get(login, login)) as any;
   if (!row || !verifyPassword(password, row.passwordHash)) return null;
   if (row.status === "rejected") return null;
   return { token: sign(row.id), user: publicUser(row) };
