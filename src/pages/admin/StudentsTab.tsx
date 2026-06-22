@@ -32,7 +32,7 @@ export function StudentsTab({ onRefresh, onLoginAsStudent }: StudentsTabProps) {
 
   // Edit form
   const [editId, setEditId] = useState<string | null>(null);
-  const [editForm, setEditForm] = useState({ name: "", grade: "1", level: "kids", avatar: "boy" });
+  const [editForm, setEditForm] = useState({ name: "", grade: "1", level: "kids", avatar: "boy", dailyGoal: "10" });
   const [editSaving, setEditSaving] = useState(false);
 
   const load = () => { setLoading(true); listAllStudents().then(setStudents).catch(() => {}).finally(() => setLoading(false)); };
@@ -67,7 +67,7 @@ export function StudentsTab({ onRefresh, onLoginAsStudent }: StudentsTabProps) {
 
   const startEdit = (s: AdminStudent) => {
     setEditId(s.id);
-    setEditForm({ name: s.name, grade: String(s.grade), level: s.level || "a1", avatar: s.avatar || "boy" });
+    setEditForm({ name: s.name, grade: String(s.grade), level: s.level || "a1", avatar: s.avatar || "boy", dailyGoal: String(s.dailyGoal ?? 10) });
     setShowAdd(false);
   };
 
@@ -75,7 +75,7 @@ export function StudentsTab({ onRefresh, onLoginAsStudent }: StudentsTabProps) {
     if (!editId || !editForm.name.trim()) return;
     setEditSaving(true);
     try {
-      await updateStudentAdmin(editId, { name: editForm.name.trim(), grade: Number(editForm.grade), level: editForm.level, avatar: editForm.avatar });
+      await updateStudentAdmin(editId, { name: editForm.name.trim(), grade: Number(editForm.grade), level: editForm.level, avatar: editForm.avatar, dailyGoal: Number(editForm.dailyGoal) });
       setEditId(null); load(); onRefresh();
     } finally { setEditSaving(false); }
   };
@@ -210,6 +210,28 @@ export function StudentsTab({ onRefresh, onLoginAsStudent }: StudentsTabProps) {
                         <option value="boy">👦 Nam</option>
                         <option value="girl">👧 Nữ</option>
                       </select>
+                    </div>
+                    <div>
+                      <label className="text-xs font-bold text-muted-foreground">Mục tiêu hàng ngày</label>
+                      <input
+                        type="number"
+                        min={1}
+                        max={200}
+                        className={inp + " mt-1"}
+                        placeholder="Mục tiêu hàng ngày"
+                        value={editForm.dailyGoal}
+                        onChange={(e) => setEditForm({ ...editForm, dailyGoal: e.target.value })}
+                      />
+                    </div>
+                    <div>
+                      <label className="text-xs font-bold text-muted-foreground">Tên đăng nhập</label>
+                      <p className="mt-1 rounded-xl border border-border/50 bg-muted px-3 py-2 text-sm font-bold text-muted-foreground">
+                        {s.parentEmail === "classroom@system"
+                          ? "Học sinh lớp học (không có tài khoản riêng)"
+                          : s.parentUsername
+                            ? s.parentUsername
+                            : s.parentEmail || "—"}
+                      </p>
                     </div>
                     <div className="flex gap-2">
                       <Button type="button" onClick={handleEditSave} disabled={editSaving || !editForm.name.trim()}>

@@ -54,6 +54,9 @@ export function setPremium(userId: string, isPremium: boolean): Promise<{ ok: bo
 export function setImageEditor(userId: string, canEditImages: boolean): Promise<{ ok: boolean; canEditImages: boolean }> {
   return apiRequest(`/api/admin/users/${userId}`, { method: "PUT", body: { canEditImages } });
 }
+export function updateUser(userId: string, data: Partial<{ name: string; email: string; role: string; password: string; studentLimit: number; isPremium: boolean; canEditImages: boolean }>): Promise<{ ok: boolean }> {
+  return apiRequest(`/api/admin/users/${userId}`, { method: "PUT", body: data });
+}
 export interface ResetOptions { xp?: boolean; streak?: boolean; progress?: boolean; quiz?: boolean; lookups?: boolean }
 export function resetScores(opts: ResetOptions): Promise<{ ok: boolean; done: string[] }> {
   return apiRequest(`/api/admin/reset-scores`, { method: "POST", body: opts });
@@ -80,7 +83,7 @@ export function createStudentDirect(payload: CreateStudentDirectPayload): Promis
 }
 
 // Admin: list tất cả students
-export interface AdminStudent { id: string; name: string; grade: number; level: string; avatar: string; xp: number; streak: number; parentId: string; parentName: string; parentEmail: string; createdAt: number; }
+export interface AdminStudent { id: string; name: string; grade: number; level: string; avatar: string; xp: number; streak: number; dailyGoal?: number; parentId: string; parentName: string; parentEmail: string; parentUsername?: string; createdAt: number; }
 export function listAllStudents(): Promise<AdminStudent[]> {
   return apiRequest(`/api/admin/students`);
 }

@@ -197,20 +197,28 @@ export function createApp() {
   // Admin đặt hạn mức số bé và/hoặc cấp premium (chat AI) cho 1 phụ huynh.
   app.put("/api/admin/users/:id", requireAdmin, (req, res) => {
     const body = req.body || {};
+    const uid = req.params.id;
+    if (body.name !== undefined) db.prepare("UPDATE users SET name = ? WHERE id = ?").run(String(body.name).trim(), uid);
+    if (body.email !== undefined) {
+      const em = String(body.email).trim().toLowerCase();
+      const dup = db.prepare("SELECT id FROM users WHERE email = ? AND id != ?").get(em, uid);
+      if (dup) return res.status(409).json({ error: "Email đã được dùng" });
+      db.prepare("UPDATE users SET email = ? WHERE id = ?").run(em, uid);
+    }
+    if (body.role !== undefined && ["parent", "teacher", "admin"].includes(body.role)) {
+      db.prepare("UPDATE users SET role = ? WHERE id = ?").run(body.role, uid);
+    }
+    if (body.password !== undefined && String(body.password).length >= 4) {
+      db.prepare("UPDATE users SET passwordHash = ? WHERE id = ?").run(hashPassword(String(body.password)), uid);
+    }
     if (body.studentLimit !== undefined) {
-      const limit = Math.max(0, Math.min(50, Number(body.studentLimit)));
-      if (Number.isNaN(limit)) return res.status(400).json({ error: "studentLimit không hợp lệ" });
-      db.prepare("UPDATE users SET studentLimit = ? WHERE id = ?").run(limit, req.params.id);
+      db.prepare("UPDATE users SET studentLimit = ? WHERE id = ?").run(Math.max(0, Math.min(200, Number(body.studentLimit) || 0)), uid);
     }
-    if (body.isPremium !== undefined) {
-      db.prepare("UPDATE users SET isPremium = ? WHERE id = ?").run(body.isPremium ? 1 : 0, req.params.id);
-    }
-    if (body.canEditImages !== undefined) {
-      db.prepare("UPDATE users SET canEditImages = ? WHERE id = ?").run(body.canEditImages ? 1 : 0, req.params.id);
-    }
-    const row = db.prepare("SELECT id, studentLimit, isPremium, canEditImages FROM users WHERE id = ?").get(req.params.id) as any;
+    if (body.isPremium !== undefined) db.prepare("UPDATE users SET isPremium = ? WHERE id = ?").run(body.isPremium ? 1 : 0, uid);
+    if (body.canEditImages !== undefined) db.prepare("UPDATE users SET canEditImages = ? WHERE id = ?").run(body.canEditImages ? 1 : 0, uid);
+    const row = db.prepare("SELECT * FROM users WHERE id = ?").get(uid) as any;
     if (!row) return res.status(404).json({ error: "không có user" });
-    res.json({ ok: true, studentLimit: row.studentLimit, isPremium: !!row.isPremium, canEditImages: !!row.canEditImages });
+    res.json({ ok: true });
   });
 
   // Admin tạo user mới

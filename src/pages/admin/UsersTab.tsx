@@ -5,7 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { cn } from "@/components/ui/cn";
 import {
   AdminUser, InviteCode,
-  listUsers, createUser, deleteUser, setStudentLimit, setPremium, setImageEditor, setUserStatus,
+  listUsers, createUser, deleteUser, updateUser, setStudentLimit, setPremium, setImageEditor, setUserStatus,
   listInviteCodes, createInviteCode, deleteInviteCode,
 } from "@/services/studentService";
 
@@ -18,6 +18,9 @@ type SubTab = "all" | "pending" | "premium" | "admin";
 interface EditState {
   id: string;
   name: string;
+  email: string;
+  role: string;
+  password: string;
   studentLimit: number;
   isPremium: boolean;
   canEditImages: boolean;
@@ -118,6 +121,9 @@ export function UsersTab({ onRefresh }: UsersTabProps) {
     setEditState({
       id: u.id,
       name: u.name,
+      email: u.email,
+      role: u.role || "parent",
+      password: "",
       studentLimit: u.studentLimit,
       isPremium: !!u.isPremium,
       canEditImages: !!u.canEditImages,
@@ -130,15 +136,24 @@ export function UsersTab({ onRefresh }: UsersTabProps) {
     if (!editState) return;
     setSaving(true);
     try {
-      await setStudentLimit(editState.id, editState.studentLimit).catch(() => {});
-      await setPremium(editState.id, editState.isPremium).catch(() => {});
-      await setImageEditor(editState.id, editState.canEditImages).catch(() => {});
+      const payload: Parameters<typeof updateUser>[1] = {
+        name: editState.name,
+        email: editState.email,
+        role: editState.role,
+        studentLimit: editState.studentLimit,
+        isPremium: editState.isPremium,
+        canEditImages: editState.canEditImages,
+      };
+      if (editState.password.trim()) payload.password = editState.password.trim();
+      await updateUser(editState.id, payload).catch(() => {});
       setUsers((prev) =>
         prev.map((u) =>
           u.id === editState.id
             ? {
                 ...u,
                 name: editState.name,
+                email: editState.email,
+                role: editState.role,
                 studentLimit: editState.studentLimit,
                 isPremium: editState.isPremium ? 1 : 0,
                 canEditImages: editState.canEditImages ? 1 : 0,
@@ -369,6 +384,43 @@ export function UsersTab({ onRefresh }: UsersTabProps) {
                         className="mt-1 w-full rounded-xl border border-border px-3 py-1.5 text-sm font-bold outline-none focus:border-primary bg-card"
                         value={editState.name}
                         onChange={(e) => setEditState({ ...editState, name: e.target.value })}
+                      />
+                    </div>
+                    <div>
+                      <label className="text-xs font-bold text-muted-foreground">Email</label>
+                      <input
+                        type="email"
+                        className="mt-1 w-full rounded-xl border border-border px-3 py-1.5 text-sm font-bold outline-none focus:border-primary bg-card"
+                        value={editState.email}
+                        onChange={(e) => setEditState({ ...editState, email: e.target.value })}
+                      />
+                    </div>
+                    <div>
+                      <label className="text-xs font-bold text-muted-foreground">Tên đăng nhập</label>
+                      <p className="mt-1 rounded-xl border border-border/50 bg-muted px-3 py-1.5 text-sm font-bold text-muted-foreground">
+                        {u.username || "—"}
+                      </p>
+                    </div>
+                    <div>
+                      <label className="text-xs font-bold text-muted-foreground">Vai trò</label>
+                      <select
+                        className="mt-1 w-full rounded-xl border border-border px-3 py-1.5 text-sm font-bold outline-none focus:border-primary bg-card"
+                        value={editState.role}
+                        onChange={(e) => setEditState({ ...editState, role: e.target.value })}
+                      >
+                        <option value="parent">Phụ huynh</option>
+                        <option value="teacher">Giáo viên</option>
+                        <option value="admin">Quản trị viên</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label className="text-xs font-bold text-muted-foreground">Đổi mật khẩu</label>
+                      <input
+                        type="password"
+                        className="mt-1 w-full rounded-xl border border-border px-3 py-1.5 text-sm font-bold outline-none focus:border-primary bg-card"
+                        placeholder="Để trống nếu không đổi"
+                        value={editState.password}
+                        onChange={(e) => setEditState({ ...editState, password: e.target.value })}
                       />
                     </div>
                     <div className="flex items-center gap-2">
