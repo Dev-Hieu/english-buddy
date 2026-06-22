@@ -44,9 +44,11 @@ export function Flashcard({ word, onKnow, onReview }: FlashcardProps) {
           </div>
         ) : (
           <div className="flex min-h-[22rem] flex-col items-center justify-center gap-4 p-6 text-center">
-            {/* Nghĩa chính */}
-            <div className="rounded-2xl bg-primary/10 px-5 py-2.5">
-              <p className="text-3xl font-black text-primary">{word.meaning_vi}</p>
+            {/* Nghĩa — mỗi nghĩa 1 dòng */}
+            <div className="space-y-1">
+              {word.meaning_vi.split(/[,;，；]\s*/).map((m, i) => (
+                <p key={i} className="rounded-xl bg-primary/10 px-4 py-1.5 text-lg font-black text-primary">{m.trim()}</p>
+              ))}
             </div>
 
             {/* Từ + phiên âm */}
@@ -56,10 +58,11 @@ export function Flashcard({ word, onKnow, onReview }: FlashcardProps) {
             </div>
 
             {/* Ví dụ */}
-            {word.example ? (
+            {(word.example || word.meaning_en) ? (
               <div className="w-full rounded-2xl bg-muted/70 p-3 text-left">
-                <p className="text-sm font-bold italic">"{word.example}"</p>
+                {word.example ? <p className="text-sm font-bold italic">"{word.example}"</p> : null}
                 {word.example_vi ? <p className="mt-1 text-xs font-semibold text-muted-foreground">→ {word.example_vi}</p> : null}
+                {!word.example && word.meaning_en ? <p className="text-sm font-semibold text-muted-foreground">{word.meaning_en}</p> : null}
               </div>
             ) : null}
 
