@@ -22,4 +22,7 @@ export interface Student {
   xp: number;
   streak: number;
   createdAt: number;
+  studentUsername?: string;
+  studentEmail?: string;
+  studentPhone?: string;
 }

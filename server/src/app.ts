@@ -657,9 +657,11 @@ export function createApp() {
   // ── Học sinh (theo tài khoản) ──
   app.get("/api/students", requireAuth, (req, res) => {
     const user = (req as any).user;
+    const q = `SELECT s.*, su.username AS studentUsername, su.email AS studentEmail, su.phone AS studentPhone
+      FROM students s LEFT JOIN users su ON su.id = s.userId`;
     const rows = user.role === "admin"
-      ? db.prepare("SELECT * FROM students ORDER BY createdAt").all()
-      : db.prepare("SELECT * FROM students WHERE parentId = ? OR userId = ? ORDER BY createdAt").all(user.id, user.id);
+      ? db.prepare(`${q} ORDER BY s.createdAt`).all()
+      : db.prepare(`${q} WHERE s.parentId = ? OR s.userId = ? ORDER BY s.createdAt`).all(user.id, user.id);
     res.json(rows);
   });
 
@@ -702,6 +704,50 @@ export function createApp() {
     db.prepare("UPDATE students SET name=COALESCE(?,name), grade=COALESCE(?,grade), avatar=COALESCE(?,avatar), dailyGoal=COALESCE(?,dailyGoal), level=COALESCE(?,level), birthday=COALESCE(?,birthday) WHERE id=?")
       .run(name ?? null, grade ?? null, avatar ?? null, dailyGoal ?? null, lv, birthday !== undefined ? (String(birthday).trim() || null) : null, req.params.id);
     res.json(db.prepare("SELECT * FROM students WHERE id=?").get(req.params.id));
+  });
+
+  // Parent/teacher: quản lý TK đăng nhập của bé (tương tự admin endpoint)
+  app.post("/api/students/:id/account", requireAuth, (req, res) => {
+    if (!canAccessStudent(req, res, req.params.id)) return;
+    const { username, password, email, phone } = req.body || {};
+    const student = db.prepare("SELECT * FROM students WHERE id = ?").get(req.params.id) as any;
+    if (!student) return res.status(404).json({ error: "Không tìm thấy học sinh" });
+
+    const userId = student.userId || (student.parentId !== "classroom" ? student.parentId : null);
+    if (!userId || userId === "classroom") {
+      // Chưa có TK → tạo mới
+      if (!password || String(password).length < 4) return res.status(400).json({ error: "Mật khẩu tối thiểu 4 ký tự" });
+      const uid = randomUUID();
+      const uname = username?.trim() || generateStudentUsername();
+      const dup = db.prepare("SELECT id FROM users WHERE LOWER(username) = ?").get(uname.toLowerCase());
+      if (dup) return res.status(409).json({ error: "Tên đăng nhập đã được dùng" });
+      const em = email?.trim() || `${uname.toLowerCase()}@student.local`;
+      db.prepare("INSERT INTO users (id, email, username, passwordHash, name, role, createdAt, studentLimit, status, phone) VALUES (?, ?, ?, ?, ?, 'student', ?, 1, 'active', ?)")
+        .run(uid, em, uname, hashPassword(String(password)), student.name, Date.now(), phone?.trim() || null);
+      db.prepare("UPDATE students SET userId = ? WHERE id = ?").run(uid, student.id);
+      res.json({ ok: true, username: uname, email: em, created: true });
+    } else {
+      // Đã có TK → cập nhật
+      if (username?.trim()) {
+        const un = String(username).trim();
+        const dup = db.prepare("SELECT id FROM users WHERE LOWER(username) = ? AND id != ?").get(un.toLowerCase(), userId);
+        if (dup) return res.status(409).json({ error: "Tên đăng nhập đã được dùng" });
+        db.prepare("UPDATE users SET username = ? WHERE id = ?").run(un, userId);
+      }
+      if (email !== undefined) {
+        const em = String(email).trim().toLowerCase();
+        if (em) {
+          const dup = db.prepare("SELECT id FROM users WHERE email = ? AND id != ?").get(em, userId);
+          if (dup) return res.status(409).json({ error: "Email đã được dùng" });
+          db.prepare("UPDATE users SET email = ? WHERE id = ?").run(em, userId);
+        }
+      }
+      if (phone !== undefined) db.prepare("UPDATE users SET phone = ? WHERE id = ?").run(String(phone).trim() || null, userId);
+      if (password && String(password).length >= 4) db.prepare("UPDATE users SET passwordHash = ? WHERE id = ?").run(hashPassword(String(password)), userId);
+      // Trả thông tin TK hiện tại
+      const u = db.prepare("SELECT username, email, phone FROM users WHERE id = ?").get(userId) as any;
+      res.json({ ok: true, updated: true, username: u?.username, email: u?.email, phone: u?.phone });
+    }
   });
 
   app.delete("/api/students/:id", requireAuth, (req, res) => {

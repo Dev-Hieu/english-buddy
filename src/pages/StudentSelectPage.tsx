@@ -2,7 +2,7 @@ import { Image as ImageIcon, LogOut, Pencil, Plus, Settings, Shield, Trash2, X }
 import { useState } from "react";
 import { LEVEL_LABELS, LEVEL_ORDER, type Student } from "@/types";
 import type { AuthUser } from "@/services/authService";
-import type { NewStudent } from "@/services/studentService";
+import { updateStudentAccount, type NewStudent } from "@/services/studentService";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/components/ui/cn";
 import { avatarEmoji } from "@/components/ui/emoji";
@@ -112,16 +112,37 @@ function StudentForm({ initial, onClose, onSubmit }: { initial?: Student; onClos
   const [level, setLevel] = useState<string>(initial?.level ?? "a1");
   const [dailyGoal, setDailyGoal] = useState(initial?.dailyGoal ?? 10);
   const [birthday, setBirthday] = useState(initial?.birthday ?? "");
+  // TK đăng nhập (chỉ hiện khi sửa)
+  const [accUsername, setAccUsername] = useState(initial?.studentUsername ?? "");
+  const [accEmail, setAccEmail] = useState(initial?.studentEmail ?? "");
+  const [accPhone, setAccPhone] = useState(initial?.studentPhone ?? "");
+  const [accPassword, setAccPassword] = useState("");
+  const [accMsg, setAccMsg] = useState("");
   const [busy, setBusy] = useState(false);
 
+  const inp = "mt-1 h-11 w-full rounded-2xl border-2 border-border px-3 font-bold outline-none focus:border-primary";
   const sel = "h-11 flex-1 rounded-2xl border-2 border-border px-2 font-bold outline-none focus:border-primary";
+  const hasAccount = !!(initial?.userId || initial?.studentUsername);
 
   const submit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!name.trim()) return;
     setBusy(true);
-    try { await onSubmit({ name: name.trim(), grade, avatar, dailyGoal, level, birthday: birthday || undefined }); }
-    finally { setBusy(false); }
+    setAccMsg("");
+    try {
+      await onSubmit({ name: name.trim(), grade, avatar, dailyGoal, level, birthday: birthday || undefined });
+      // Cập nhật TK đăng nhập nếu có thay đổi
+      if (initial && (accUsername.trim() || accEmail.trim() || accPhone.trim() || accPassword.trim())) {
+        const accData: { username?: string; password?: string; email?: string; phone?: string } = {};
+        if (accUsername.trim()) accData.username = accUsername.trim();
+        if (accEmail.trim()) accData.email = accEmail.trim();
+        if (accPhone.trim()) accData.phone = accPhone.trim();
+        if (accPassword.trim()) accData.password = accPassword.trim();
+        const res = await updateStudentAccount(initial.id, accData).catch((e: any) => ({ ok: false, error: e?.message || "Lỗi" }));
+        if ("error" in res) { setAccMsg(`Lỗi TK: ${(res as any).error}`); setBusy(false); return; }
+        if ((res as any).created) setAccMsg(`Đã tạo TK: ${(res as any).username}`);
+      }
+    } finally { setBusy(false); }
   };
 
   return (
@@ -130,7 +151,7 @@ function StudentForm({ initial, onClose, onSubmit }: { initial?: Student; onClos
         <span className="font-extrabold">{initial ? "Sửa hồ sơ bé" : "Thêm bé"}</span>
         <button type="button" onClick={onClose} aria-label="Đóng"><X className="h-5 w-5 text-muted-foreground" /></button>
       </div>
-      <input className="h-11 rounded-2xl border-2 border-border px-3 font-bold outline-none focus:border-primary" placeholder="Tên bé" value={name} onChange={(e) => setName(e.target.value)} autoFocus />
+      <input className={inp.replace("mt-1 ", "")} placeholder="Tên bé" value={name} onChange={(e) => setName(e.target.value)} autoFocus />
       <div className="flex gap-2">
         <select className={sel} value={grade} onChange={(e) => setGrade(Number(e.target.value))}>
           {Array.from({ length: 12 }, (_, i) => i + 1).map((g) => <option key={g} value={g}>Lớp {g}</option>)}
@@ -145,12 +166,39 @@ function StudentForm({ initial, onClose, onSubmit }: { initial?: Student; onClos
       </select>
       <div>
         <label className="text-xs font-bold text-muted-foreground">Ngày sinh</label>
-        <input type="date" className="mt-1 h-11 w-full rounded-2xl border-2 border-border px-3 font-bold outline-none focus:border-primary" value={birthday} onChange={(e) => setBirthday(e.target.value)} />
+        <input type="date" className={inp} value={birthday} onChange={(e) => setBirthday(e.target.value)} />
       </div>
       <div>
         <label className="text-xs font-bold text-muted-foreground">Mục tiêu hàng ngày (từ)</label>
-        <input type="number" min={1} max={200} className="mt-1 h-11 w-full rounded-2xl border-2 border-border px-3 font-bold outline-none focus:border-primary" value={dailyGoal} onChange={(e) => setDailyGoal(Number(e.target.value) || 10)} />
+        <input type="number" min={1} max={200} className={inp} value={dailyGoal} onChange={(e) => setDailyGoal(Number(e.target.value) || 10)} />
       </div>
+
+      {/* TK đăng nhập (chỉ hiện khi sửa) */}
+      {initial && (
+        <div className="space-y-2 rounded-2xl border border-border bg-muted/50 p-3">
+          <p className="text-xs font-extrabold text-muted-foreground uppercase tracking-wide">
+            {hasAccount ? "🎓 Tài khoản đăng nhập" : "Tạo tài khoản đăng nhập cho bé"}
+          </p>
+          <div>
+            <label className="text-xs font-bold text-muted-foreground">Tên đăng nhập</label>
+            <input className={inp} value={accUsername} onChange={(e) => setAccUsername(e.target.value)} placeholder={hasAccount ? "VD: HS000001" : "Tự sinh nếu để trống"} />
+          </div>
+          <div>
+            <label className="text-xs font-bold text-muted-foreground">Email</label>
+            <input type="email" className={inp} value={accEmail} onChange={(e) => setAccEmail(e.target.value)} placeholder="Email đăng nhập" />
+          </div>
+          <div>
+            <label className="text-xs font-bold text-muted-foreground">Số điện thoại</label>
+            <input type="tel" className={inp} value={accPhone} onChange={(e) => setAccPhone(e.target.value)} placeholder="VD: 0901234567" />
+          </div>
+          <div>
+            <label className="text-xs font-bold text-muted-foreground">{hasAccount ? "Đổi mật khẩu" : "Mật khẩu"}</label>
+            <input type="password" className={inp} value={accPassword} onChange={(e) => setAccPassword(e.target.value)} placeholder={hasAccount ? "Để trống nếu không đổi" : "Nhập mật khẩu cho bé"} />
+          </div>
+          {accMsg && <p className={cn("text-xs font-bold", accMsg.includes("Lỗi") ? "text-red-600" : "text-emerald-600")}>{accMsg}</p>}
+        </div>
+      )}
+
       <Button type="submit" disabled={busy || !name.trim()}>{initial ? "Lưu" : <><Plus className="h-4 w-4" /> Tạo hồ sơ</>}</Button>
     </form>
   );

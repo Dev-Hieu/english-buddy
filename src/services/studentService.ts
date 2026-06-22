@@ -104,6 +104,9 @@ export function updateStudentAdmin(studentId: string, data: Partial<{ name: stri
 export function setStudentAccount(studentId: string, data: { username?: string; password?: string; email?: string; phone?: string }): Promise<{ ok: boolean; username?: string; created?: boolean }> {
   return apiRequest(`/api/admin/students/${studentId}/account`, { method: "POST", body: data });
 }
+export function updateStudentAccount(studentId: string, data: { username?: string; password?: string; email?: string; phone?: string }): Promise<{ ok: boolean; username?: string; created?: boolean }> {
+  return apiRequest(`/api/students/${studentId}/account`, { method: "POST", body: data });
+}
 
 export interface LeaderEntry {
   id: string;
