@@ -1,7 +1,7 @@
 import { BarChart3, Bell, BookOpen, Crown, GraduationCap, Image, LayoutDashboard, LogOut, Settings, Users, Wifi } from "lucide-react";
 import { cn } from "@/components/ui/cn";
 
-export type AdminTab = "overview" | "users" | "students" | "content" | "images" | "reports" | "notifications" | "online" | "settings";
+export type AdminTab = "overview" | "users" | "students" | "classes" | "content" | "images" | "reports" | "notifications" | "online" | "settings";
 
 interface MenuItem { key: AdminTab; label: string; icon: React.ReactNode; disabled?: boolean; }
 
@@ -9,6 +9,7 @@ const MENU: MenuItem[] = [
   { key: "overview", label: "Tổng quan", icon: <LayoutDashboard className="h-5 w-5" /> },
   { key: "users", label: "Tài khoản", icon: <Users className="h-5 w-5" /> },
   { key: "students", label: "Học sinh", icon: <GraduationCap className="h-5 w-5" /> },
+  { key: "classes", label: "Lớp học", icon: <BookOpen className="h-5 w-5" /> },
   { key: "content", label: "Nội dung", icon: <BookOpen className="h-5 w-5" />, disabled: true },
   { key: "images", label: "Ảnh từ vựng", icon: <Image className="h-5 w-5" />, disabled: true },
   { key: "reports", label: "Báo cáo", icon: <BarChart3 className="h-5 w-5" />, disabled: true },

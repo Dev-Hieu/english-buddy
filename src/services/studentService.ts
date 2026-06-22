@@ -116,3 +116,40 @@ export function deleteInviteCode(code: string): Promise<{ ok: boolean }> {
 export function setUserStatus(userId: string, status: "active" | "pending" | "rejected"): Promise<{ ok: boolean }> {
   return apiRequest(`/api/admin/users/${userId}/status`, { method: "PUT", body: { status } });
 }
+
+// Teacher
+export interface ClassInfo { id: string; name: string; code: string; teacherId: string; grade?: number; level?: string; studentCount: number; createdAt: number; }
+export interface ClassStudent { id: string; name: string; grade: number; level: string; avatar: string; xp: number; streak: number; dailyGoal: number; vocabCount: number; }
+export function getTeacherClasses(): Promise<ClassInfo[]> { return apiRequest("/api/teacher/classes"); }
+export function getClassStudents(classId: string): Promise<ClassStudent[]> { return apiRequest(`/api/teacher/classes/${classId}/students`); }
+export function addStudentToClass(classId: string, studentId: string): Promise<{ ok: boolean }> {
+  return apiRequest(`/api/teacher/classes/${classId}/students`, { method: "POST", body: { studentId } });
+}
+export function removeStudentFromClass(classId: string, studentId: string): Promise<{ ok: boolean }> {
+  return apiRequest(`/api/teacher/classes/${classId}/students/${studentId}`, { method: "DELETE" });
+}
+export function setStudentGoal(studentId: string, dailyGoal: number): Promise<{ ok: boolean }> {
+  return apiRequest(`/api/teacher/students/${studentId}/goal`, { method: "PUT", body: { dailyGoal } });
+}
+
+// Admin: classes
+export interface AdminClass { id: string; name: string; teacherId?: string; teacherName?: string; teacherEmail?: string; code: string; grade?: number; level?: string; studentCount: number; createdAt: number; }
+export function listClasses(): Promise<AdminClass[]> { return apiRequest("/api/admin/classes"); }
+export function createClass(data: { name: string; teacherId?: string; grade?: number; level?: string }): Promise<{ ok: boolean; id: string; code: string }> {
+  return apiRequest("/api/admin/classes", { method: "POST", body: data });
+}
+export function updateClass(classId: string, data: { name?: string; teacherId?: string; grade?: number; level?: string }): Promise<{ ok: boolean }> {
+  return apiRequest(`/api/admin/classes/${classId}`, { method: "PUT", body: data });
+}
+export function deleteClass(classId: string): Promise<{ ok: boolean }> {
+  return apiRequest(`/api/admin/classes/${classId}`, { method: "DELETE" });
+}
+export function addStudentToClassAdmin(classId: string, studentId: string): Promise<{ ok: boolean }> {
+  return apiRequest(`/api/admin/classes/${classId}/students`, { method: "POST", body: { studentId } });
+}
+export function removeStudentFromClassAdmin(classId: string, studentId: string): Promise<{ ok: boolean }> {
+  return apiRequest(`/api/admin/classes/${classId}/students/${studentId}`, { method: "DELETE" });
+}
+export function getClassStudentsAdmin(classId: string): Promise<any[]> {
+  return apiRequest(`/api/admin/classes/${classId}/students`);
+}

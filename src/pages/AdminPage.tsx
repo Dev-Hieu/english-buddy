@@ -5,6 +5,7 @@ import type { AdminTab } from "@/components/admin/AdminSidebar";
 import { OverviewTab } from "./admin/OverviewTab";
 import { UsersTab } from "./admin/UsersTab";
 import { StudentsTab } from "./admin/StudentsTab";
+import { ClassesTab } from "./admin/ClassesTab";
 
 interface AdminPageProps {
   onBack: () => void;
@@ -44,6 +45,9 @@ export function AdminPage({ onBack, onOpenPicker, onLoginAsStudent, adminName = 
       break;
     case "students":
       content = <StudentsTab onRefresh={loadData} onLoginAsStudent={onLoginAsStudent} />;
+      break;
+    case "classes":
+      content = <ClassesTab onRefresh={loadData} />;
       break;
     default:
       content = (
