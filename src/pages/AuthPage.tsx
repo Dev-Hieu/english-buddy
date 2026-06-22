@@ -63,7 +63,7 @@ export function AuthPage({ onAuthed }: AuthPageProps) {
         ) : null}
         <div className={field}>
           <Mail className="h-5 w-5 text-muted-foreground" />
-          <input className={input} type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} autoFocus />
+          <input className={input} placeholder={mode === "login" ? "Email hoặc tên đăng nhập" : "Email"} type={mode === "register" ? "email" : "text"} value={email} onChange={(e) => setEmail(e.target.value)} autoFocus />
         </div>
         <div className={field}>
           <KeyRound className="h-5 w-5 text-muted-foreground" />

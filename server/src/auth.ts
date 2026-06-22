@@ -8,8 +8,9 @@ const SECRET = process.env.AUTH_SECRET || "english-buddy-dev-secret-change-me";
 export interface User {
   id: string;
   email: string;
+  username: string;
   name: string;
-  role: string; // "parent" | "admin"
+  role: string; // "parent" | "admin" | "teacher"
   status: string; // "active" | "pending" | "rejected"
   createdAt: number;
   studentLimit: number;
@@ -18,13 +19,18 @@ export interface User {
 }
 
 const publicUser = (r: any): User => ({
-  id: r.id, email: r.email, name: r.name, role: r.role,
+  id: r.id, email: r.email, username: r.username || "", name: r.name, role: r.role,
   status: r.status || "active",
   createdAt: r.createdAt,
   studentLimit: r.studentLimit ?? 1,
   isPremium: !!r.isPremium || r.role === "admin",
   canEditImages: !!r.canEditImages || r.role === "admin",
 });
+
+export function generateUsername(): string {
+  const count = ((db.prepare("SELECT MAX(CAST(SUBSTR(username,3) AS INTEGER)) AS n FROM users WHERE username LIKE 'hs%'").get() as any)?.n || 0) + 1;
+  return `hs${String(count).padStart(3, "0")}`;
+}
 
 // ── Mật khẩu (scrypt) ──
 export function hashPassword(pw: string): string {
@@ -69,14 +75,16 @@ export function registerUser(email: string, password: string, name: string, invi
   }
 
   const id = randomUUID();
-  db.prepare("INSERT INTO users (id, email, passwordHash, name, role, createdAt, studentLimit, status) VALUES (?, ?, ?, ?, 'parent', ?, 1, ?)")
-    .run(id, email, hashPassword(password), (name || "").trim() || email.split("@")[0], Date.now(), status);
+  const username = generateUsername();
+  db.prepare("INSERT INTO users (id, email, username, passwordHash, name, role, createdAt, studentLimit, status) VALUES (?, ?, ?, ?, ?, 'parent', ?, 1, ?)")
+    .run(id, email, username, hashPassword(password), (name || "").trim() || email.split("@")[0], Date.now(), status);
   return { token: sign(id), user: publicUser(db.prepare("SELECT * FROM users WHERE id = ?").get(id)) };
 }
 
-export function loginUser(email: string, password: string): { token: string; user: User } | null {
-  email = String(email || "").trim().toLowerCase();
-  const row = db.prepare("SELECT * FROM users WHERE email = ?").get(email) as any;
+export function loginUser(login: string, password: string): { token: string; user: User } | null {
+  login = String(login || "").trim().toLowerCase();
+  // Tìm theo email hoặc username
+  const row = (db.prepare("SELECT * FROM users WHERE email = ? OR username = ?").get(login, login)) as any;
   if (!row || !verifyPassword(password, row.passwordHash)) return null;
   if (row.status === "rejected") return null;
   return { token: sign(row.id), user: publicUser(row) };

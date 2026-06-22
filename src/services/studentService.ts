@@ -32,6 +32,7 @@ export function deleteStudent(id: string): Promise<{ ok: boolean }> {
 export interface AdminUser {
   id: string;
   email: string;
+  username?: string;
   name: string;
   role: string;
   status?: string;

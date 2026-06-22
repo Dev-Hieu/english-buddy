@@ -6,7 +6,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import type { NextFunction, Request, Response } from "express";
 import { db, initSchema } from "./db.js";
-import { hashPassword, loginUser, registerUser, requireAdmin, requireAuth } from "./auth.js";
+import { generateUsername, hashPassword, loginUser, registerUser, requireAdmin, requireAuth } from "./auth.js";
 import { nextReview } from "../../src/utils/spacedRepetition";
 import { buildQuiz } from "../../src/utils/quizGenerator";
 import type { VocabularyWord } from "../../src/types";
@@ -159,10 +159,23 @@ export function createApp() {
 
   app.get("/api/me", requireAuth, (req, res) => res.json((req as any).user));
 
+  // Đổi tên đăng nhập (chỉ premium hoặc admin)
+  app.put("/api/me/username", requireAuth, (req, res) => {
+    const u = (req as any).user;
+    if (!u.isPremium && u.role !== "admin") return res.status(403).json({ error: "Chỉ tài khoản Premium được đổi tên đăng nhập" });
+    const { username } = req.body || {};
+    const un = String(username || "").trim().toLowerCase().replace(/[^a-z0-9._-]/g, "");
+    if (un.length < 3) return res.status(400).json({ error: "Tên đăng nhập tối thiểu 3 ký tự (a-z, 0-9, dấu chấm)" });
+    const exists = db.prepare("SELECT id FROM users WHERE username = ? AND id != ?").get(un, u.id);
+    if (exists) return res.status(400).json({ error: "Tên đăng nhập đã được dùng" });
+    db.prepare("UPDATE users SET username = ? WHERE id = ?").run(un, u.id);
+    res.json({ ok: true, username: un });
+  });
+
   // ── Admin: quản lý người dùng ──
   app.get("/api/admin/users", requireAdmin, (_req, res) => {
     const rows = db.prepare(`
-      SELECT u.id, u.email, u.name, u.role, u.createdAt, u.studentLimit, u.isPremium, u.canEditImages,
+      SELECT u.id, u.email, u.username, u.name, u.role, u.status, u.createdAt, u.studentLimit, u.isPremium, u.canEditImages,
              (SELECT COUNT(*) FROM students s WHERE s.parentId = u.id) AS studentCount
       FROM users u ORDER BY u.createdAt DESC
     `).all();
@@ -207,14 +220,15 @@ export function createApp() {
     const existing = db.prepare("SELECT id FROM users WHERE email = ?").get(String(email));
     if (existing) return res.status(409).json({ error: "email đã tồn tại" });
     const id = randomUUID();
-    const r = ["admin", "parent"].includes(role) ? role : "parent";
+    const r = ["admin", "parent", "teacher"].includes(role) ? role : "parent";
+    const uname = generateUsername();
     const user = {
-      id, email: String(email).trim(), passwordHash: hashPassword(String(password)),
+      id, email: String(email).trim(), username: uname, passwordHash: hashPassword(String(password)),
       name: String(name || "").trim() || null, role: r,
-      createdAt: Date.now(), studentLimit: Number(studentLimit) || 1, isPremium: isPremium ? 1 : 0,
+      createdAt: Date.now(), studentLimit: Number(studentLimit) || 1, isPremium: isPremium ? 1 : 0, status: "active",
     };
-    db.prepare(`INSERT INTO users (id, email, passwordHash, name, role, createdAt, studentLimit, isPremium)
-      VALUES (@id, @email, @passwordHash, @name, @role, @createdAt, @studentLimit, @isPremium)`).run(user);
+    db.prepare(`INSERT INTO users (id, email, username, passwordHash, name, role, createdAt, studentLimit, isPremium, status)
+      VALUES (@id, @email, @username, @passwordHash, @name, @role, @createdAt, @studentLimit, @isPremium, @status)`).run(user);
     res.json({ ...user, passwordHash: undefined });
   });
 
@@ -247,10 +261,11 @@ export function createApp() {
       const existing = db.prepare("SELECT id FROM users WHERE email = ?").get(String(email));
       if (existing) return res.status(409).json({ error: "email đã tồn tại" });
       const uid = randomUUID();
-      db.prepare(`INSERT INTO users (id, email, passwordHash, name, role, createdAt, studentLimit, isPremium)
-        VALUES (?, ?, ?, ?, 'parent', ?, 1, 0)`).run(uid, String(email).trim(), hashPassword(String(password)), String(name).trim(), Date.now());
+      const uname = generateUsername();
+      db.prepare(`INSERT INTO users (id, email, username, passwordHash, name, role, createdAt, studentLimit, isPremium, status)
+        VALUES (?, ?, ?, ?, ?, 'parent', ?, 1, 0, 'active')`).run(uid, String(email).trim(), uname, hashPassword(String(password)), String(name).trim(), Date.now());
       parentId = uid;
-      loginInfo = { email: String(email).trim(), userId: uid };
+      loginInfo = { email: String(email).trim(), username: uname, userId: uid };
     }
     const student = {
       id: "student_" + randomUUID().slice(0, 8), parentId, name: String(name).trim(),

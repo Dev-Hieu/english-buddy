@@ -104,6 +104,18 @@ export function initSchema(): void {
   // Thi kỹ năng: cột kỹ năng đang qua của mỗi từ (JSON mảng). Điểm từ = độ dài mảng.
   try { db.exec("ALTER TABLE progress ADD COLUMN skillsPassed TEXT"); } catch { /* đã có */ }
   try { db.exec("ALTER TABLE users ADD COLUMN status TEXT DEFAULT 'active'"); } catch { /* đã có */ }
+  try { db.exec("ALTER TABLE users ADD COLUMN username TEXT"); } catch { /* đã có */ }
+  try { db.exec("CREATE UNIQUE INDEX IF NOT EXISTS idx_users_username ON users(username) WHERE username IS NOT NULL"); } catch { /* đã có */ }
+  // Backfill username cho user chưa có
+  try {
+    const rows = db.prepare("SELECT id FROM users WHERE username IS NULL AND role != 'system'").all() as { id: string }[];
+    const nextNum = (db.prepare("SELECT COUNT(*) AS c FROM users WHERE username IS NOT NULL").get() as any)?.c || 0;
+    let n = nextNum;
+    for (const r of rows) {
+      n++;
+      db.prepare("UPDATE users SET username = ? WHERE id = ?").run(`hs${String(n).padStart(3, "0")}`, r.id);
+    }
+  } catch { /* bỏ qua */ }
   // Chuẩn hoá level cũ ("beginner"... ) về tập CEFR hợp lệ để bộ lọc theo cấp hoạt động.
   try { db.exec("UPDATE students SET level='a1' WHERE level IS NULL OR level NOT IN ('kids','a1','a2','b1','b2','c1')"); } catch { /* bỏ qua */ }
   // Backfill sổ cái: giữ nguyên XP cũ của bé (1 dòng 'legacy') để không mất quyền lợi.
