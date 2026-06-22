@@ -75,4 +75,5 @@ export function initSchema(): void {
              SELECT id, 'legacy', xp, NULL, COALESCE(createdAt, 0) FROM students
              WHERE COALESCE(xp,0) > 0 AND id NOT IN (SELECT DISTINCT studentId FROM xp_events)`);
   } catch { /* bỏ qua */ }
+  try { db.exec("INSERT OR IGNORE INTO users (id, email, passwordHash, name, role, createdAt, studentLimit) VALUES ('classroom', 'classroom@system', '', 'Lớp học', 'system', 0, 999)"); } catch {}
 }

@@ -6,7 +6,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import type { Request, Response } from "express";
 import { db, initSchema } from "./db.js";
-import { loginUser, registerUser, requireAdmin, requireAuth } from "./auth.js";
+import { hashPassword, loginUser, registerUser, requireAdmin, requireAuth } from "./auth.js";
 import { nextReview } from "../../src/utils/spacedRepetition";
 import { buildQuiz } from "../../src/utils/quizGenerator";
 import type { VocabularyWord } from "../../src/types";
@@ -198,6 +198,108 @@ export function createApp() {
     const row = db.prepare("SELECT id, studentLimit, isPremium, canEditImages FROM users WHERE id = ?").get(req.params.id) as any;
     if (!row) return res.status(404).json({ error: "không có user" });
     res.json({ ok: true, studentLimit: row.studentLimit, isPremium: !!row.isPremium, canEditImages: !!row.canEditImages });
+  });
+
+  // Admin tạo user mới
+  app.post("/api/admin/users", requireAdmin, (req, res) => {
+    const { email, password, name, role, studentLimit, isPremium } = req.body || {};
+    if (!email || !password) return res.status(400).json({ error: "thiếu email hoặc password" });
+    const existing = db.prepare("SELECT id FROM users WHERE email = ?").get(String(email));
+    if (existing) return res.status(409).json({ error: "email đã tồn tại" });
+    const id = randomUUID();
+    const r = ["admin", "parent"].includes(role) ? role : "parent";
+    const user = {
+      id, email: String(email).trim(), passwordHash: hashPassword(String(password)),
+      name: String(name || "").trim() || null, role: r,
+      createdAt: Date.now(), studentLimit: Number(studentLimit) || 1, isPremium: isPremium ? 1 : 0,
+    };
+    db.prepare(`INSERT INTO users (id, email, passwordHash, name, role, createdAt, studentLimit, isPremium)
+      VALUES (@id, @email, @passwordHash, @name, @role, @createdAt, @studentLimit, @isPremium)`).run(user);
+    res.json({ ...user, passwordHash: undefined });
+  });
+
+  // Admin xoá user + dữ liệu liên quan
+  app.delete("/api/admin/users/:id", requireAdmin, (req, res) => {
+    const uid = req.params.id;
+    if (uid === (req as any).user.id) return res.status(400).json({ error: "không thể xoá chính mình" });
+    const studentIds = (db.prepare("SELECT id FROM students WHERE parentId = ?").all(uid) as any[]).map(r => r.id);
+    for (const sid of studentIds) {
+      db.prepare("DELETE FROM progress WHERE studentId = ?").run(sid);
+      db.prepare("DELETE FROM xp_events WHERE studentId = ?").run(sid);
+      db.prepare("DELETE FROM quiz_results WHERE studentId = ?").run(sid);
+      db.prepare("DELETE FROM lookup_history WHERE studentId = ?").run(sid);
+      db.prepare("DELETE FROM skill_test_sessions WHERE studentId = ?").run(sid);
+    }
+    db.prepare("DELETE FROM students WHERE parentId = ?").run(uid);
+    db.prepare("DELETE FROM users WHERE id = ?").run(uid);
+    res.json({ ok: true });
+  });
+
+  // Admin tạo student trực tiếp (không cần parent)
+  app.post("/api/admin/create-student", requireAdmin, (req, res) => {
+    const { name, grade, level, avatar, dailyGoal, email, password } = req.body || {};
+    if (!name || !String(name).trim()) return res.status(400).json({ error: "thiếu tên bé" });
+    const LEVELS = ["kids", "a1", "a2", "b1", "b2", "c1"];
+    const lv = LEVELS.includes(level) ? level : "a1";
+    let parentId = "classroom";
+    let loginInfo: any = null;
+    if (email && password) {
+      const existing = db.prepare("SELECT id FROM users WHERE email = ?").get(String(email));
+      if (existing) return res.status(409).json({ error: "email đã tồn tại" });
+      const uid = randomUUID();
+      db.prepare(`INSERT INTO users (id, email, passwordHash, name, role, createdAt, studentLimit, isPremium)
+        VALUES (?, ?, ?, ?, 'parent', ?, 1, 0)`).run(uid, String(email).trim(), hashPassword(String(password)), String(name).trim(), Date.now());
+      parentId = uid;
+      loginInfo = { email: String(email).trim(), userId: uid };
+    }
+    const student = {
+      id: "student_" + randomUUID().slice(0, 8), parentId, name: String(name).trim(),
+      grade: Number(grade) || 1, level: lv, avatar: avatar || "girl_avatar_01",
+      dailyGoal: Number(dailyGoal) || 10, xp: 0, streak: 0, createdAt: Date.now(), lastActiveDate: null,
+    };
+    db.prepare(`INSERT INTO students (id,parentId,name,grade,level,avatar,dailyGoal,xp,streak,createdAt,lastActiveDate)
+      VALUES (@id,@parentId,@name,@grade,@level,@avatar,@dailyGoal,@xp,@streak,@createdAt,@lastActiveDate)`).run(student);
+    res.json({ student, loginInfo });
+  });
+
+  // Admin: list ALL students with parent info
+  app.get("/api/admin/students", requireAdmin, (_req, res) => {
+    const rows = db.prepare(`
+      SELECT s.*, u.name AS parentName, u.email AS parentEmail
+      FROM students s LEFT JOIN users u ON u.id = s.parentId
+      ORDER BY s.createdAt DESC
+    `).all();
+    res.json(rows);
+  });
+
+  // Admin xoá student + dữ liệu liên quan
+  app.delete("/api/admin/students/:id", requireAdmin, (req, res) => {
+    const sid = req.params.id;
+    db.prepare("DELETE FROM progress WHERE studentId = ?").run(sid);
+    db.prepare("DELETE FROM xp_events WHERE studentId = ?").run(sid);
+    db.prepare("DELETE FROM quiz_results WHERE studentId = ?").run(sid);
+    db.prepare("DELETE FROM lookup_history WHERE studentId = ?").run(sid);
+    db.prepare("DELETE FROM skill_test_sessions WHERE studentId = ?").run(sid);
+    db.prepare("DELETE FROM students WHERE id = ?").run(sid);
+    res.json({ ok: true });
+  });
+
+  // Admin cập nhật student
+  app.put("/api/admin/students/:id", requireAdmin, (req, res) => {
+    const { name, grade, level, avatar, dailyGoal } = req.body || {};
+    const LEVELS = ["kids", "a1", "a2", "b1", "b2", "c1"];
+    const sets: string[] = [];
+    const params: any = { id: req.params.id };
+    if (name !== undefined) { sets.push("name = @name"); params.name = String(name).trim(); }
+    if (grade !== undefined) { sets.push("grade = @grade"); params.grade = Number(grade) || 1; }
+    if (level !== undefined && LEVELS.includes(level)) { sets.push("level = @level"); params.level = level; }
+    if (avatar !== undefined) { sets.push("avatar = @avatar"); params.avatar = avatar; }
+    if (dailyGoal !== undefined) { sets.push("dailyGoal = @dailyGoal"); params.dailyGoal = Number(dailyGoal) || 10; }
+    if (sets.length === 0) return res.status(400).json({ error: "không có gì để cập nhật" });
+    db.prepare(`UPDATE students SET ${sets.join(", ")} WHERE id = @id`).run(params);
+    const row = db.prepare("SELECT * FROM students WHERE id = ?").get(req.params.id);
+    if (!row) return res.status(404).json({ error: "không có student" });
+    res.json(row);
   });
 
   // ── Bảng xếp hạng: điểm TUẦN (mặc định) hoặc mọi thời gian, lọc theo cấp ──

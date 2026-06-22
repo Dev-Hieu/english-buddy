@@ -57,6 +57,40 @@ export function resetScores(opts: ResetOptions): Promise<{ ok: boolean; done: st
   return apiRequest(`/api/admin/reset-scores`, { method: "POST", body: opts });
 }
 
+// Admin: tạo user mới
+export interface CreateUserPayload { email: string; password: string; name: string; role?: string; studentLimit?: number; isPremium?: boolean; }
+export function createUser(payload: CreateUserPayload): Promise<AdminUser> {
+  return apiRequest(`/api/admin/users`, { method: "POST", body: payload });
+}
+
+// Admin: xoá user
+export function deleteUser(userId: string): Promise<{ ok: boolean }> {
+  return apiRequest(`/api/admin/users/${userId}`, { method: "DELETE" });
+}
+
+// Admin: tạo student trực tiếp (cho lớp học)
+export interface CreateStudentDirectPayload { name: string; grade: number; level: string; avatar?: string; dailyGoal?: number; email?: string; password?: string; }
+export interface CreateStudentDirectResult { student: any; user?: { email: string; password: string }; }
+export function createStudentDirect(payload: CreateStudentDirectPayload): Promise<CreateStudentDirectResult> {
+  return apiRequest(`/api/admin/create-student`, { method: "POST", body: payload });
+}
+
+// Admin: list tất cả students
+export interface AdminStudent { id: string; name: string; grade: number; level: string; avatar: string; xp: number; streak: number; parentId: string; parentName: string; parentEmail: string; createdAt: number; }
+export function listAllStudents(): Promise<AdminStudent[]> {
+  return apiRequest(`/api/admin/students`);
+}
+
+// Admin: xoá student
+export function deleteStudentAdmin(studentId: string): Promise<{ ok: boolean }> {
+  return apiRequest(`/api/admin/students/${studentId}`, { method: "DELETE" });
+}
+
+// Admin: cập nhật student
+export function updateStudentAdmin(studentId: string, data: Partial<{ name: string; grade: number; level: string; avatar: string; dailyGoal: number }>): Promise<{ ok: boolean }> {
+  return apiRequest(`/api/admin/students/${studentId}`, { method: "PUT", body: data });
+}
+
 export interface LeaderEntry {
   id: string;
   name: string;
