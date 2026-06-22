@@ -151,6 +151,22 @@ export function App() {
     return <AuthPage onAuthed={(u) => { setUser(u); }} />;
   }
 
+  // ── Tài khoản chờ duyệt ──
+  if (user.status === "pending") {
+    return (
+      <main className="mx-auto flex min-h-screen w-full max-w-md flex-col items-center justify-center gap-6 px-5 py-10 text-center">
+        <p className="text-lg font-bold">Tài khoản đang chờ duyệt. Vui lòng liên hệ quản trị viên.</p>
+        <button
+          type="button"
+          onClick={doLogout}
+          className="rounded-xl bg-primary px-6 py-2.5 text-sm font-extrabold text-white"
+        >
+          Đăng xuất
+        </button>
+      </main>
+    );
+  }
+
   if (route.view === "admin") {
     return <AdminPage onBack={() => navigate("student-select")} onOpenPicker={() => navigate("imagepicker")} onLoginAsStudent={(sid) => { setSelectedStudentId(sid); localStorage.setItem(SELECTED_STUDENT_KEY, sid); navigate("home"); }} />;
   }

@@ -5,6 +5,7 @@ export interface AuthUser {
   email: string;
   name: string;
   role: "parent" | "admin";
+  status?: "active" | "pending" | "rejected";
   createdAt: number;
   studentLimit: number;
   isPremium?: boolean;
@@ -19,9 +20,9 @@ function store(token: string, user: AuthUser): AuthUser {
   return user;
 }
 
-export async function register(name: string, email: string, password: string): Promise<AuthUser> {
+export async function register(name: string, email: string, password: string, inviteCode?: string): Promise<AuthUser> {
   const r = await apiRequest<{ token: string; user: AuthUser }>("/api/register", {
-    method: "POST", body: { name, email, password }, auth: false,
+    method: "POST", body: { name, email, password, ...(inviteCode ? { inviteCode } : {}) }, auth: false,
   });
   return store(r.token, r.user);
 }

@@ -14,6 +14,7 @@ export function AuthPage({ onAuthed }: AuthPageProps) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [inviteCode, setInviteCode] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
@@ -22,7 +23,7 @@ export function AuthPage({ onAuthed }: AuthPageProps) {
     setLoading(true);
     setError("");
     try {
-      const user = mode === "login" ? await login(email, password) : await register(name, email, password);
+      const user = mode === "login" ? await login(email, password) : await register(name, email, password, inviteCode || undefined);
       onAuthed(user);
     } catch (err) {
       setError((err as Error).message?.includes("email") ? "Email đã dùng hoặc sai thông tin." : "Sai email/mật khẩu, hoặc server chưa chạy.");
@@ -68,6 +69,12 @@ export function AuthPage({ onAuthed }: AuthPageProps) {
           <KeyRound className="h-5 w-5 text-muted-foreground" />
           <input className={input} type="password" placeholder="Mật khẩu" value={password} onChange={(e) => setPassword(e.target.value)} />
         </div>
+        {mode === "register" ? (
+          <div className={field}>
+            <UserRound className="h-5 w-5 text-muted-foreground" />
+            <input className={input} placeholder="Mã mời (nếu có)" value={inviteCode} onChange={(e) => setInviteCode(e.target.value)} />
+          </div>
+        ) : null}
         {error ? <p className="text-sm font-bold text-red-600">{error}</p> : null}
         <Button type="submit" size="lg" className="w-full" disabled={loading || !email || !password}>
           {loading ? <Loader2 className="h-5 w-5 animate-spin" /> : <KeyRound className="h-5 w-5" />}

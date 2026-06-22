@@ -103,3 +103,15 @@ export function getLeaderboard(period: "week" | "all" = "week", level = ""): Pro
   const lv = level ? `&level=${encodeURIComponent(level)}` : "";
   return apiRequest(`/api/leaderboard?period=${period}${lv}`);
 }
+
+export interface InviteCode { code: string; type: string; classId?: string; maxUses: number; usedCount: number; createdBy: string; createdAt: number; expiresAt?: number; }
+export function listInviteCodes(): Promise<InviteCode[]> { return apiRequest("/api/admin/invite-codes"); }
+export function createInviteCode(data: { type: string; classId?: string; maxUses?: number; expiresAt?: number }): Promise<{ ok: boolean; code: string }> {
+  return apiRequest("/api/admin/invite-codes", { method: "POST", body: data });
+}
+export function deleteInviteCode(code: string): Promise<{ ok: boolean }> {
+  return apiRequest(`/api/admin/invite-codes/${code}`, { method: "DELETE" });
+}
+export function setUserStatus(userId: string, status: "active" | "pending" | "rejected"): Promise<{ ok: boolean }> {
+  return apiRequest(`/api/admin/users/${userId}/status`, { method: "PUT", body: { status } });
+}
