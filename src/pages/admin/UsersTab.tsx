@@ -19,6 +19,7 @@ interface EditState {
   id: string;
   name: string;
   email: string;
+  username: string;
   role: string;
   password: string;
   studentLimit: number;
@@ -122,6 +123,7 @@ export function UsersTab({ onRefresh }: UsersTabProps) {
       id: u.id,
       name: u.name,
       email: u.email,
+      username: u.username || "",
       role: u.role || "parent",
       password: "",
       studentLimit: u.studentLimit,
@@ -139,6 +141,7 @@ export function UsersTab({ onRefresh }: UsersTabProps) {
       const payload: Parameters<typeof updateUser>[1] = {
         name: editState.name,
         email: editState.email,
+        username: editState.username,
         role: editState.role,
         studentLimit: editState.studentLimit,
         isPremium: editState.isPremium,
@@ -377,9 +380,12 @@ export function UsersTab({ onRefresh }: UsersTabProps) {
                     </div>
                     <div>
                       <label className="text-xs font-bold text-muted-foreground">Tên đăng nhập</label>
-                      <p className="mt-1 rounded-xl border border-border/50 bg-muted px-3 py-1.5 text-sm font-bold text-muted-foreground">
-                        {u.username || "—"}
-                      </p>
+                      <input
+                        className="mt-1 w-full rounded-xl border border-border px-3 py-1.5 text-sm font-bold outline-none focus:border-primary bg-card"
+                        value={editState.username}
+                        onChange={(e) => setEditState({ ...editState, username: e.target.value })}
+                        placeholder="VD: PH000001"
+                      />
                     </div>
                     <div>
                       <label className="text-xs font-bold text-muted-foreground">Vai trò</label>

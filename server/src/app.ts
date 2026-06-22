@@ -205,6 +205,14 @@ export function createApp() {
       if (dup) return res.status(409).json({ error: "Email đã được dùng" });
       db.prepare("UPDATE users SET email = ? WHERE id = ?").run(em, uid);
     }
+    if (body.username !== undefined) {
+      const un = String(body.username).trim();
+      if (un.length >= 2) {
+        const dup = db.prepare("SELECT id FROM users WHERE LOWER(username) = ? AND id != ?").get(un.toLowerCase(), uid);
+        if (dup) return res.status(409).json({ error: "Tên đăng nhập đã được dùng" });
+        db.prepare("UPDATE users SET username = ? WHERE id = ?").run(un, uid);
+      }
+    }
     if (body.role !== undefined && ["parent", "teacher", "admin"].includes(body.role)) {
       db.prepare("UPDATE users SET role = ? WHERE id = ?").run(body.role, uid);
     }

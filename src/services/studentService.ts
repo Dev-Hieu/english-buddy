@@ -54,7 +54,7 @@ export function setPremium(userId: string, isPremium: boolean): Promise<{ ok: bo
 export function setImageEditor(userId: string, canEditImages: boolean): Promise<{ ok: boolean; canEditImages: boolean }> {
   return apiRequest(`/api/admin/users/${userId}`, { method: "PUT", body: { canEditImages } });
 }
-export function updateUser(userId: string, data: Partial<{ name: string; email: string; role: string; password: string; studentLimit: number; isPremium: boolean; canEditImages: boolean }>): Promise<{ ok: boolean }> {
+export function updateUser(userId: string, data: Partial<{ name: string; email: string; username: string; role: string; password: string; studentLimit: number; isPremium: boolean; canEditImages: boolean }>): Promise<{ ok: boolean }> {
   return apiRequest(`/api/admin/users/${userId}`, { method: "PUT", body: data });
 }
 export interface ResetOptions { xp?: boolean; streak?: boolean; progress?: boolean; quiz?: boolean; lookups?: boolean }
