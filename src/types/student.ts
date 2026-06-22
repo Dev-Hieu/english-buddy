@@ -12,6 +12,7 @@ export const LEVEL_ORDER: Level[] = ["kids", "a1", "a2", "b1", "b2", "c1"];
 export interface Student {
   id: string; // "student_001" | "student_002"
   parentId: string;
+  userId?: string;
   name: string; // "Bảo Ngọc" | "Bảo Nam"
   grade: number;
   level: Level;

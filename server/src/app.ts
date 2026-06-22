@@ -624,7 +624,7 @@ export function createApp() {
     const user = (req as any).user;
     const rows = user.role === "admin"
       ? db.prepare("SELECT * FROM students ORDER BY createdAt").all()
-      : db.prepare("SELECT * FROM students WHERE parentId = ? ORDER BY createdAt").all(user.id);
+      : db.prepare("SELECT * FROM students WHERE parentId = ? OR userId = ? ORDER BY createdAt").all(user.id, user.id);
     res.json(rows);
   });
 
