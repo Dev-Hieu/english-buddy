@@ -12,7 +12,7 @@ interface UsersTabProps {
   onRefresh: () => void;
 }
 
-type SubTab = "all" | "admin" | "teacher" | "parent" | "student" | "class" | "pending";
+type SubTab = "stats" | "all" | "admin" | "teacher" | "parent" | "student" | "class" | "pending";
 
 interface EditState {
   id: string;
@@ -30,7 +30,7 @@ interface EditState {
 
 export function UsersTab({ onRefresh }: UsersTabProps) {
   const [users, setUsers] = useState<AdminUser[]>([]);
-  const [subTab, setSubTab] = useState<SubTab>("all");
+  const [subTab, setSubTab] = useState<SubTab>("stats");
   const [search, setSearch] = useState("");
   const [showAdd, setShowAdd] = useState(false);
   const [saved, setSaved] = useState<string | null>(null);
@@ -73,6 +73,17 @@ export function UsersTab({ onRefresh }: UsersTabProps) {
   }, [users, subTab, search]);
 
   const pendingCount = useMemo(() => users.filter((u) => u.status === "pending").length, [users]);
+  const roleCounts = useMemo(() => {
+    const c = { total: users.length, admin: 0, teacher: 0, parent: 0, student: 0, class: 0 };
+    for (const u of users) {
+      if (u.role === "admin") c.admin++;
+      else if (u.role === "teacher") c.teacher++;
+      else if (u.role === "parent") c.parent++;
+      else if (u.role === "student") c.student++;
+      else if (u.role === "class") c.class++;
+    }
+    return c;
+  }, [users]);
 
   const markSaved = (id: string) => {
     setSaved(id);
@@ -195,6 +206,7 @@ export function UsersTab({ onRefresh }: UsersTabProps) {
   };
 
   const SUB_TABS: { key: SubTab; label: string }[] = [
+    { key: "stats", label: "Thống kê" },
     { key: "all", label: "Tất cả" },
     { key: "admin", label: "Admin" },
     { key: "teacher", label: "Giáo viên" },
@@ -317,7 +329,40 @@ export function UsersTab({ onRefresh }: UsersTabProps) {
         ))}
       </div>
 
-      {/* Tìm kiếm */}
+      {/* Tab thống kê */}
+      {subTab === "stats" && (
+        <div className="space-y-3">
+          <Card>
+            <CardContent className="p-4">
+              <p className="text-sm font-bold text-muted-foreground mb-3">Tổng quan tài khoản</p>
+              <div className="grid grid-cols-2 gap-2">
+                {([
+                  { label: "Tổng cộng", count: roleCounts.total, tab: "all" as SubTab, color: "bg-slate-100 text-slate-700" },
+                  { label: "Admin", count: roleCounts.admin, tab: "admin" as SubTab, color: "bg-red-100 text-red-700" },
+                  { label: "Giáo viên", count: roleCounts.teacher, tab: "teacher" as SubTab, color: "bg-blue-100 text-blue-700" },
+                  { label: "Phụ huynh", count: roleCounts.parent, tab: "parent" as SubTab, color: "bg-green-100 text-green-700" },
+                  { label: "Học sinh", count: roleCounts.student, tab: "student" as SubTab, color: "bg-purple-100 text-purple-700" },
+                  { label: "Lớp học", count: roleCounts.class, tab: "class" as SubTab, color: "bg-amber-100 text-amber-700" },
+                  { label: "Chờ duyệt", count: pendingCount, tab: "pending" as SubTab, color: pendingCount > 0 ? "bg-orange-100 text-orange-700" : "bg-muted text-muted-foreground" },
+                ]).map((item) => (
+                  <button
+                    key={item.tab}
+                    type="button"
+                    onClick={() => setSubTab(item.tab)}
+                    className={cn("flex items-center justify-between rounded-xl p-3 text-left transition-colors hover:ring-2 hover:ring-primary/30", item.color)}
+                  >
+                    <span className="text-sm font-bold">{item.label}</span>
+                    <span className="text-xl font-black">{item.count}</span>
+                  </button>
+                ))}
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      )}
+
+      {/* Tìm kiếm + Danh sách (ẩn khi tab thống kê) */}
+      {subTab !== "stats" && <>
       <div className="relative">
         <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
         <input
@@ -328,7 +373,6 @@ export function UsersTab({ onRefresh }: UsersTabProps) {
         />
       </div>
 
-      {/* Danh sách tài khoản */}
       <div className="space-y-2">
         {filtered.map((u) => {
           const isAdmin = u.role === "admin";
@@ -497,7 +541,7 @@ export function UsersTab({ onRefresh }: UsersTabProps) {
           <p className="text-center text-sm font-bold text-muted-foreground py-6">Không có tài khoản nào.</p>
         )}
       </div>
-
+      </>}
     </div>
   );
 }
