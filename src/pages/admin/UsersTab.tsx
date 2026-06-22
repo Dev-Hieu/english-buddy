@@ -411,67 +411,25 @@ export function UsersTab({ onRefresh }: UsersTabProps) {
                   </div>
                 )}
 
-                {/* Thao tác (không dành cho admin) */}
+                {/* Thao tác nhanh (không editing, không admin) */}
                 {!isAdmin && !isEditing && (
-                  <div className="space-y-2">
-                    {/* Duyệt / Từ chối cho tài khoản chờ duyệt */}
-                    {isPending && (
-                      <div className="flex gap-2">
-                        <Button type="button" size="sm" onClick={() => handleApprove(u)} className="flex-1">
-                          <Check className="h-4 w-4" /> Duyệt
+                  <div className="flex items-center gap-2 border-t border-border/50 pt-2">
+                    {/* Duyệt / Từ chối */}
+                    {isPending ? (
+                      <>
+                        <Button type="button" size="sm" onClick={() => handleApprove(u)}>
+                          <Check className="h-3.5 w-3.5" /> Duyệt
                         </Button>
-                        <Button type="button" size="sm" variant="destructive" onClick={() => handleReject(u)} className="flex-1">
-                          <X className="h-4 w-4" /> Từ chối
+                        <Button type="button" size="sm" variant="destructive" onClick={() => handleReject(u)}>
+                          <X className="h-3.5 w-3.5" /> Từ chối
                         </Button>
-                      </div>
-                    )}
-
-                    {/* Giới hạn học sinh */}
-                    <div className="flex items-center gap-2">
-                      <label className="text-xs font-bold text-muted-foreground w-28 flex-shrink-0">Giới hạn HS:</label>
-                      <input
-                        type="number"
-                        min={0}
-                        max={200}
-                        className="w-16 rounded-xl border border-border px-2 py-1 text-sm font-bold text-center outline-none focus:border-primary"
-                        value={u.studentLimit}
-                        onChange={(e) => handleLimit(u.id, Number(e.target.value))}
-                      />
-                      <Button type="button" size="sm" variant="outline" onClick={() => saveLimit(u)}>
-                        {saved === u.id ? <Check className="h-4 w-4 text-green-500" /> : "Lưu"}
-                      </Button>
-                    </div>
-
-                    {/* Nút bật/tắt + xoá */}
-                    <div className="flex flex-wrap gap-2">
-                      <button
-                        type="button"
-                        onClick={() => togglePremium(u)}
-                        className={cn(
-                          "flex items-center gap-1 rounded-xl px-3 py-1.5 text-xs font-extrabold transition-colors",
-                          u.isPremium ? "bg-yellow-100 text-yellow-700" : "bg-muted text-muted-foreground"
-                        )}
-                      >
-                        <Crown className="h-3.5 w-3.5" /> Premium
-                      </button>
-                      <button
-                        type="button"
-                        onClick={() => toggleEditor(u)}
-                        className={cn(
-                          "flex items-center gap-1 rounded-xl px-3 py-1.5 text-xs font-extrabold transition-colors",
-                          u.canEditImages ? "bg-blue-100 text-blue-700" : "bg-muted text-muted-foreground"
-                        )}
-                      >
-                        <Image className="h-3.5 w-3.5" /> Sửa ảnh
-                      </button>
-                      <button
-                        type="button"
-                        onClick={() => handleDelete(u)}
-                        className="flex items-center gap-1 rounded-xl px-3 py-1.5 text-xs font-extrabold bg-red-50 text-red-600 hover:bg-red-100 transition-colors ml-auto"
-                      >
-                        <Trash2 className="h-3.5 w-3.5" /> Xoá
-                      </button>
-                    </div>
+                      </>
+                    ) : null}
+                    <div className="flex-1" />
+                    <button type="button" onClick={() => handleDelete(u)} title="Xoá tài khoản"
+                      className="rounded-lg p-1.5 text-muted-foreground hover:bg-red-50 hover:text-red-500 transition-colors">
+                      <Trash2 className="h-4 w-4" />
+                    </button>
                   </div>
                 )}
               </CardContent>
