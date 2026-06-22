@@ -277,7 +277,7 @@ export function App() {
       content = <ReviewPage student={student} onBackHome={() => navigate("home")} />;
       break;
     case "lookup":
-      content = <LookupPage student={student} onBackHome={() => navigate("home")} />;
+      content = <LookupPage student={student} onBackHome={() => navigate("home")} isPremium={!!user.isPremium} />;
       break;
     case "test":
       content = <TestPage student={student} topicId={route.topicId} level={route.level} onBackHome={() => navigate("home")} />;

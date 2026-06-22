@@ -15,13 +15,14 @@ import { Card, CardContent } from "@/components/ui/card";
 interface LookupPageProps {
   student: Student;
   onBackHome: () => void;
+  isPremium?: boolean;
 }
 
 type Mode = "word" | "sentence";
 interface WordDetail { vi?: string[]; pos?: string[]; examples?: { en: string; vi: string; pos?: string }[]; synonyms?: string[]; antonyms?: string[]; note?: string; }
 interface WordResult { query: string; dict: DictionaryResult | null; detail: WordDetail | null; vi: string; images: ImageResult[]; }
 
-export function LookupPage({ student }: LookupPageProps) {
+export function LookupPage({ student, isPremium }: LookupPageProps) {
   const [mode, setMode] = useState<Mode>("word");
   return (
     <main className="mx-auto w-full max-w-2xl px-4 pt-5">
@@ -39,7 +40,7 @@ export function LookupPage({ student }: LookupPageProps) {
         ))}
       </div>
 
-      {mode === "word" ? <WordLookup student={student} /> : <SentenceTranslate student={student} />}
+      {mode === "word" ? <WordLookup student={student} isPremium={isPremium} /> : <SentenceTranslate student={student} />}
     </main>
   );
 }
@@ -56,7 +57,7 @@ function DirToggle({ from, to, onFlip }: { from: Lang; to: Lang; onFlip: () => v
 }
 
 // ── TỪ ĐIỂN ──
-function WordLookup({ student }: { student: Student }) {
+function WordLookup({ student, isPremium }: { student: Student; isPremium?: boolean }) {
   const [from, setFrom] = useState<Lang>("en");
   const [query, setQuery] = useState("");
   const [loading, setLoading] = useState(false);
@@ -92,7 +93,7 @@ function WordLookup({ student }: { student: Student }) {
     const [dict, images, detail] = await Promise.all([
       getWordDefinition(englishWord).catch(() => null),
       getWordImages(englishWord).catch(() => [] as ImageResult[]),
-      apiRequest<WordDetail>(`/api/word-detail?word=${encodeURIComponent(englishWord)}`, { auth: false }).catch(() => null),
+      isPremium ? apiRequest<WordDetail>(`/api/word-detail?word=${encodeURIComponent(englishWord)}`, { auth: false }).catch(() => null) : Promise.resolve(null),
     ]);
     setLoading(false);
     const richVi = detail?.vi?.length ? detail.vi.join("; ") : viMeaning;
@@ -101,10 +102,22 @@ function WordLookup({ student }: { student: Student }) {
 
   const save = async () => {
     if (!result) return;
+    // Ví dụ: ưu tiên DeepSeek, fallback Free Dictionary
+    let examples = result.detail?.examples?.slice(0, 3);
+    if (!examples?.length && result.dict?.meanings.length) {
+      const freeExamples: { en: string; vi: string; pos?: string }[] = [];
+      for (const m of result.dict.meanings) {
+        for (const ex of m.examples.slice(0, 1)) {
+          freeExamples.push({ en: ex, vi: "", pos: m.partOfSpeech });
+        }
+        if (freeExamples.length >= 2) break;
+      }
+      if (freeExamples.length) examples = freeExamples;
+    }
     await saveLookup({
       studentId: student.id, query: result.query, type: "word", saved: true, createdAt: Date.now(),
       meaning: result.vi || undefined, phonetic: result.dict?.phonetic || undefined, imageUrl: result.images[0]?.url || undefined,
-      examples: result.detail?.examples?.slice(0, 3) || undefined,
+      examples: examples || undefined,
     }).catch(() => {});
     setSaved(true);
     if (!history.includes(result.query)) setHistory((h) => [result.query, ...h].slice(0, 8));
