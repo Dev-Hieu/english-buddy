@@ -3,6 +3,7 @@ import { apiRequest, clearToken, getToken, setToken } from "./api";
 export interface AuthUser {
   id: string;
   email: string;
+  username?: string;
   name: string;
   role: "parent" | "admin" | "teacher" | "student";
   status?: "active" | "pending" | "rejected";
@@ -10,6 +11,8 @@ export interface AuthUser {
   studentLimit: number;
   isPremium?: boolean;
   canEditImages?: boolean;
+  phone?: string;
+  birthday?: string;
 }
 
 const USER_KEY = "eb_user";

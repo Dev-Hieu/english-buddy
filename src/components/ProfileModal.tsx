@@ -55,6 +55,7 @@ export function ProfileModal({ user, onClose, onUpdated }: ProfileModalProps) {
           <span className="font-bold text-muted-foreground">Vai trò:</span>{" "}
           <span className="font-extrabold">{roleLabel[user.role] || user.role}</span>
           {user.email && <p className="text-muted-foreground font-semibold">Email: {user.email}</p>}
+          {user.username && <p className="text-muted-foreground font-semibold">Tên đăng nhập: {user.username}</p>}
         </div>
 
         <div className="space-y-3">

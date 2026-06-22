@@ -21,6 +21,7 @@ export interface User {
 const publicUser = (r: any): User => ({
   id: r.id, email: r.email, username: r.username || "", name: r.name, role: r.role,
   status: r.status || "active",
+  phone: r.phone || "", birthday: r.birthday || "",
   createdAt: r.createdAt,
   studentLimit: r.studentLimit ?? 1,
   isPremium: !!r.isPremium || r.role === "admin",
