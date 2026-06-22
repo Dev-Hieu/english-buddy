@@ -32,7 +32,7 @@ export function StudentsTab({ onRefresh, onLoginAsStudent }: StudentsTabProps) {
 
   // Edit form
   const [editId, setEditId] = useState<string | null>(null);
-  const [editForm, setEditForm] = useState({ name: "", grade: "1", level: "kids", avatar: "boy", dailyGoal: "10", username: "", password: "", birthday: "" });
+  const [editForm, setEditForm] = useState({ name: "", grade: "1", level: "kids", avatar: "boy", dailyGoal: "10", username: "", password: "", birthday: "", email: "", phone: "" });
   const [editSaving, setEditSaving] = useState(false);
 
   const load = () => { setLoading(true); listAllStudents().then(setStudents).catch(() => {}).finally(() => setLoading(false)); };
@@ -67,7 +67,7 @@ export function StudentsTab({ onRefresh, onLoginAsStudent }: StudentsTabProps) {
 
   const startEdit = (s: AdminStudent) => {
     setEditId(s.id);
-    setEditForm({ name: s.name, grade: String(s.grade), level: s.level || "a1", avatar: s.avatar || "boy", dailyGoal: String(s.dailyGoal ?? 10), username: s.studentUsername || "", password: "", birthday: s.birthday || "" });
+    setEditForm({ name: s.name, grade: String(s.grade), level: s.level || "a1", avatar: s.avatar || "boy", dailyGoal: String(s.dailyGoal ?? 10), username: s.studentUsername || "", password: "", birthday: s.birthday || "", email: s.studentEmail || "", phone: s.studentPhone || "" });
     setShowAdd(false);
   };
 
@@ -79,10 +79,12 @@ export function StudentsTab({ onRefresh, onLoginAsStudent }: StudentsTabProps) {
     try {
       await updateStudentAdmin(editId, { name: editForm.name.trim(), grade: Number(editForm.grade), level: editForm.level, avatar: editForm.avatar, dailyGoal: Number(editForm.dailyGoal), birthday: editForm.birthday || undefined });
       // Tạo hoặc cập nhật tài khoản đăng nhập
-      if (editForm.username.trim() || editForm.password.trim()) {
-        const accData: { username?: string; password?: string } = {};
+      if (editForm.username.trim() || editForm.password.trim() || editForm.email.trim() || editForm.phone.trim()) {
+        const accData: { username?: string; password?: string; email?: string; phone?: string } = {};
         if (editForm.username.trim()) accData.username = editForm.username.trim();
         if (editForm.password.trim()) accData.password = editForm.password.trim();
+        if (editForm.email.trim()) accData.email = editForm.email.trim();
+        if (editForm.phone.trim()) accData.phone = editForm.phone.trim();
         const res = await setStudentAccount(editId, accData).catch((e: any) => ({ ok: false, error: e?.message || "Lỗi" }));
         if ("error" in res) { setAccountMsg(`✗ ${(res as any).error}`); setEditSaving(false); return; }
         if ((res as any).created) setAccountMsg(`✓ Đã tạo TK: ${(res as any).username}`);
@@ -259,6 +261,14 @@ export function StudentsTab({ onRefresh, onLoginAsStudent }: StudentsTabProps) {
                                 <input className={inp + " mt-1"} value={editForm.username} onChange={(e) => setEditForm({ ...editForm, username: e.target.value })} placeholder="VD: HS000001" />
                               </div>
                               <div>
+                                <label className="text-xs font-bold text-muted-foreground">Email</label>
+                                <input type="email" className={inp + " mt-1"} value={editForm.email} onChange={(e) => setEditForm({ ...editForm, email: e.target.value })} placeholder="Email đăng nhập" />
+                              </div>
+                              <div>
+                                <label className="text-xs font-bold text-muted-foreground">Số điện thoại</label>
+                                <input type="tel" className={inp + " mt-1"} value={editForm.phone} onChange={(e) => setEditForm({ ...editForm, phone: e.target.value })} placeholder="VD: 0901234567" />
+                              </div>
+                              <div>
                                 <label className="text-xs font-bold text-muted-foreground">Đổi mật khẩu</label>
                                 <input type="password" className={inp + " mt-1"} value={editForm.password} onChange={(e) => setEditForm({ ...editForm, password: e.target.value })} placeholder="Để trống nếu không đổi" />
                               </div>
@@ -278,6 +288,14 @@ export function StudentsTab({ onRefresh, onLoginAsStudent }: StudentsTabProps) {
                                 <input className={inp + " mt-1"} value={editForm.username} onChange={(e) => setEditForm({ ...editForm, username: e.target.value })} placeholder="Tự sinh nếu để trống" />
                               </div>
                               <div>
+                                <label className="text-xs font-bold text-muted-foreground">Email</label>
+                                <input type="email" className={inp + " mt-1"} value={editForm.email} onChange={(e) => setEditForm({ ...editForm, email: e.target.value })} placeholder="Email đăng nhập" />
+                              </div>
+                              <div>
+                                <label className="text-xs font-bold text-muted-foreground">Số điện thoại</label>
+                                <input type="tel" className={inp + " mt-1"} value={editForm.phone} onChange={(e) => setEditForm({ ...editForm, phone: e.target.value })} placeholder="VD: 0901234567" />
+                              </div>
+                              <div>
                                 <label className="text-xs font-bold text-muted-foreground">Mật khẩu</label>
                                 <input type="password" className={inp + " mt-1"} value={editForm.password} onChange={(e) => setEditForm({ ...editForm, password: e.target.value })} placeholder="Nhập mật khẩu cho bé" />
                               </div>
@@ -292,6 +310,14 @@ export function StudentsTab({ onRefresh, onLoginAsStudent }: StudentsTabProps) {
                               <div>
                                 <label className="text-xs font-bold text-muted-foreground">Tên đăng nhập</label>
                                 <input className={inp + " mt-1"} value={editForm.username} onChange={(e) => setEditForm({ ...editForm, username: e.target.value })} placeholder="Tự sinh nếu để trống" />
+                              </div>
+                              <div>
+                                <label className="text-xs font-bold text-muted-foreground">Email</label>
+                                <input type="email" className={inp + " mt-1"} value={editForm.email} onChange={(e) => setEditForm({ ...editForm, email: e.target.value })} placeholder="Email đăng nhập" />
+                              </div>
+                              <div>
+                                <label className="text-xs font-bold text-muted-foreground">Số điện thoại</label>
+                                <input type="tel" className={inp + " mt-1"} value={editForm.phone} onChange={(e) => setEditForm({ ...editForm, phone: e.target.value })} placeholder="VD: 0901234567" />
                               </div>
                               <div>
                                 <label className="text-xs font-bold text-muted-foreground">Mật khẩu</label>

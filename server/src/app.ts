@@ -301,7 +301,7 @@ export function createApp() {
   app.get("/api/admin/students", requireAdmin, (_req, res) => {
     const rows = db.prepare(`
       SELECT s.*, u.name AS parentName, u.email AS parentEmail, u.username AS parentUsername, u.role AS parentRole,
-             su.username AS studentUsername, su.email AS studentEmail
+             su.username AS studentUsername, su.email AS studentEmail, su.phone AS studentPhone
       FROM students s
       LEFT JOIN users u ON u.id = s.parentId
       LEFT JOIN users su ON su.id = s.userId
@@ -343,7 +343,7 @@ export function createApp() {
 
   // Admin: tạo/cập nhật tài khoản đăng nhập cho học sinh đã có
   app.post("/api/admin/students/:id/account", requireAdmin, (req, res) => {
-    const { username, password } = req.body || {};
+    const { username, password, email, phone } = req.body || {};
     const student = db.prepare("SELECT * FROM students WHERE id = ?").get(req.params.id) as any;
     if (!student) return res.status(404).json({ error: "không tìm thấy học sinh" });
 
@@ -354,21 +354,33 @@ export function createApp() {
       const uname = username?.trim() || generateStudentUsername();
       const dupUn = db.prepare("SELECT id FROM users WHERE LOWER(username) = ?").get(uname.toLowerCase());
       if (dupUn) return res.status(409).json({ error: "Tên đăng nhập đã được dùng" });
-      const email = `${uname.toLowerCase()}@student.local`;
+      const em = email?.trim() || `${uname.toLowerCase()}@student.local`;
       db.prepare("INSERT INTO users (id, email, username, passwordHash, name, role, createdAt, studentLimit, status) VALUES (?, ?, ?, ?, ?, 'student', ?, 1, 'active')")
-        .run(uid, email, uname, hashPassword(String(password)), student.name, Date.now());
+        .run(uid, em, uname, hashPassword(String(password)), student.name, Date.now());
       db.prepare("UPDATE students SET parentId = ? WHERE id = ?").run(uid, student.id);
-      res.json({ ok: true, username: uname, email, created: true });
+      res.json({ ok: true, username: uname, email: em, created: true });
     } else {
-      // Đã có TK → cập nhật username/password
+      // Đã có TK → cập nhật username/password/email
+      const userId = student.userId || student.parentId;
       if (username?.trim()) {
         const un = String(username).trim();
-        const dup = db.prepare("SELECT id FROM users WHERE LOWER(username) = ? AND id != ?").get(un.toLowerCase(), student.parentId);
+        const dup = db.prepare("SELECT id FROM users WHERE LOWER(username) = ? AND id != ?").get(un.toLowerCase(), userId);
         if (dup) return res.status(409).json({ error: "Tên đăng nhập đã được dùng" });
-        db.prepare("UPDATE users SET username = ? WHERE id = ?").run(un, student.parentId);
+        db.prepare("UPDATE users SET username = ? WHERE id = ?").run(un, userId);
+      }
+      if (email !== undefined) {
+        const em = String(email).trim().toLowerCase();
+        if (em) {
+          const dup = db.prepare("SELECT id FROM users WHERE email = ? AND id != ?").get(em, userId);
+          if (dup) return res.status(409).json({ error: "Email đã được dùng" });
+          db.prepare("UPDATE users SET email = ? WHERE id = ?").run(em, userId);
+        }
+      }
+      if (phone !== undefined) {
+        db.prepare("UPDATE users SET phone = ? WHERE id = ?").run(String(phone).trim() || null, userId);
       }
       if (password && String(password).length >= 4) {
-        db.prepare("UPDATE users SET passwordHash = ? WHERE id = ?").run(hashPassword(String(password)), student.parentId);
+        db.prepare("UPDATE users SET passwordHash = ? WHERE id = ?").run(hashPassword(String(password)), userId);
       }
       res.json({ ok: true, updated: true });
     }

@@ -85,7 +85,7 @@ export function createStudentDirect(payload: CreateStudentDirectPayload): Promis
 }
 
 // Admin: list tất cả students
-export interface AdminStudent { id: string; name: string; grade: number; level: string; avatar: string; xp: number; streak: number; dailyGoal?: number; parentId: string; parentName: string; parentEmail: string; parentUsername?: string; parentRole?: string; userId?: string; studentUsername?: string; studentEmail?: string; createdAt: number; birthday?: string; }
+export interface AdminStudent { id: string; name: string; grade: number; level: string; avatar: string; xp: number; streak: number; dailyGoal?: number; parentId: string; parentName: string; parentEmail: string; parentUsername?: string; parentRole?: string; userId?: string; studentUsername?: string; studentEmail?: string; studentPhone?: string; createdAt: number; birthday?: string; }
 export function listAllStudents(): Promise<AdminStudent[]> {
   return apiRequest(`/api/admin/students`);
 }
@@ -100,7 +100,7 @@ export function updateStudentAdmin(studentId: string, data: Partial<{ name: stri
   return apiRequest(`/api/admin/students/${studentId}`, { method: "PUT", body: data });
 }
 // Admin: tạo/cập nhật tài khoản đăng nhập cho học sinh
-export function setStudentAccount(studentId: string, data: { username?: string; password?: string }): Promise<{ ok: boolean; username?: string; created?: boolean }> {
+export function setStudentAccount(studentId: string, data: { username?: string; password?: string; email?: string; phone?: string }): Promise<{ ok: boolean; username?: string; created?: boolean }> {
   return apiRequest(`/api/admin/students/${studentId}/account`, { method: "POST", body: data });
 }
 
