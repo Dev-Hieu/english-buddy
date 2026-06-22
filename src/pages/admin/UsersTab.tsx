@@ -13,7 +13,7 @@ interface UsersTabProps {
   onRefresh: () => void;
 }
 
-type SubTab = "all" | "pending" | "premium" | "admin";
+type SubTab = "all" | "admin" | "teacher" | "parent" | "student" | "class" | "pending";
 
 interface EditState {
   id: string;
@@ -64,8 +64,11 @@ export function UsersTab({ onRefresh }: UsersTabProps) {
   const filtered = useMemo(() => {
     let list = users;
     if (subTab === "pending") list = list.filter((u) => u.status === "pending");
-    else if (subTab === "premium") list = list.filter((u) => u.isPremium);
     else if (subTab === "admin") list = list.filter((u) => u.role === "admin");
+    else if (subTab === "teacher") list = list.filter((u) => u.role === "teacher");
+    else if (subTab === "parent") list = list.filter((u) => u.role === "parent");
+    else if (subTab === "student") list = list.filter((u) => u.role === "student");
+    else if (subTab === "class") list = list.filter((u) => u.role === "class");
     if (search.trim()) {
       const q = search.toLowerCase();
       list = list.filter((u) =>
@@ -217,9 +220,12 @@ export function UsersTab({ onRefresh }: UsersTabProps) {
 
   const SUB_TABS: { key: SubTab; label: string }[] = [
     { key: "all", label: "Tất cả" },
-    { key: "pending", label: `Chờ duyệt${pendingCount > 0 ? ` (${pendingCount})` : ""}` },
-    { key: "premium", label: "Premium" },
     { key: "admin", label: "Admin" },
+    { key: "teacher", label: "Giáo viên" },
+    { key: "parent", label: "Phụ huynh" },
+    { key: "student", label: "Học sinh" },
+    { key: "class", label: "Lớp học" },
+    { key: "pending", label: `Chờ duyệt${pendingCount > 0 ? ` (${pendingCount})` : ""}` },
   ];
 
   const statusBadge = (u: AdminUser) => {
@@ -319,14 +325,14 @@ export function UsersTab({ onRefresh }: UsersTabProps) {
       )}
 
       {/* Sub-tabs */}
-      <div className="flex gap-1 rounded-2xl bg-muted p-1">
+      <div className="flex gap-1 rounded-2xl bg-muted p-1 overflow-x-auto">
         {SUB_TABS.map((t) => (
           <button
             key={t.key}
             type="button"
             onClick={() => setSubTab(t.key)}
             className={cn(
-              "flex-1 rounded-xl py-2 text-xs font-extrabold transition-colors",
+              "shrink-0 rounded-xl px-3 py-2 text-xs font-extrabold transition-colors whitespace-nowrap",
               subTab === t.key ? "bg-card text-primary shadow-card" : "text-muted-foreground"
             )}
           >
