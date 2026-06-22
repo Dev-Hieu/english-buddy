@@ -9,6 +9,7 @@ import { ClassesTab } from "./admin/ClassesTab";
 import { ContentTab } from "./admin/ContentTab";
 import { ImagesTab } from "./admin/ImagesTab";
 import { ReportsTab } from "./admin/ReportsTab";
+import { NotificationsTab } from "./admin/NotificationsTab";
 
 interface AdminPageProps {
   onBack: () => void;
@@ -60,6 +61,9 @@ export function AdminPage({ onBack, onOpenPicker, onLoginAsStudent, adminName = 
       break;
     case "reports":
       content = <ReportsTab />;
+      break;
+    case "notifications":
+      content = <NotificationsTab />;
       break;
     default:
       content = (

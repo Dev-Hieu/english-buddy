@@ -83,6 +83,14 @@ export function initSchema(): void {
       joinedAt INTEGER,
       PRIMARY KEY (classId, studentId)
     );
+    CREATE TABLE IF NOT EXISTS notifications (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      title TEXT NOT NULL,
+      message TEXT NOT NULL,
+      createdBy TEXT,
+      createdAt INTEGER,
+      expiresAt INTEGER
+    );
   `);
   // Migration cho DB cũ: thêm cột nếu chưa có.
   try { db.exec("ALTER TABLE students ADD COLUMN lastActiveDate TEXT"); } catch { /* đã có */ }
