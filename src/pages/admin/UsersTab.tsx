@@ -25,6 +25,8 @@ interface EditState {
   studentLimit: number;
   isPremium: boolean;
   canEditImages: boolean;
+  phone: string;
+  birthday: string;
 }
 
 export function UsersTab({ onRefresh }: UsersTabProps) {
@@ -43,6 +45,8 @@ export function UsersTab({ onRefresh }: UsersTabProps) {
   const [newPassword, setNewPassword] = useState("123456");
   const [newPremium, setNewPremium] = useState(false);
   const [newRole, setNewRole] = useState("parent");
+  const [newPhone, setNewPhone] = useState("");
+  const [newBirthday, setNewBirthday] = useState("");
   const [adding, setAdding] = useState(false);
 
   // Invite code form
@@ -129,6 +133,8 @@ export function UsersTab({ onRefresh }: UsersTabProps) {
       studentLimit: u.studentLimit,
       isPremium: !!u.isPremium,
       canEditImages: !!u.canEditImages,
+      phone: u.phone || "",
+      birthday: u.birthday || "",
     });
   };
 
@@ -146,6 +152,8 @@ export function UsersTab({ onRefresh }: UsersTabProps) {
         studentLimit: editState.studentLimit,
         isPremium: editState.isPremium,
         canEditImages: editState.canEditImages,
+        phone: editState.phone,
+        birthday: editState.birthday,
       };
       if (editState.password.trim()) payload.password = editState.password.trim();
       await updateUser(editState.id, payload).catch(() => {});
@@ -182,8 +190,10 @@ export function UsersTab({ onRefresh }: UsersTabProps) {
         name: newName.trim(),
         isPremium: newPremium,
         role: newRole,
+        phone: newPhone.trim() || undefined,
+        birthday: newBirthday || undefined,
       });
-      setNewName(""); setNewEmail(""); setNewPassword("123456"); setNewPremium(false); setNewRole("parent");
+      setNewName(""); setNewEmail(""); setNewPassword("123456"); setNewPremium(false); setNewRole("parent"); setNewPhone(""); setNewBirthday("");
       setShowAdd(false);
       load(); onRefresh();
     } catch { /* bỏ qua */ } finally { setAdding(false); }
@@ -252,6 +262,22 @@ export function UsersTab({ onRefresh }: UsersTabProps) {
               value={newEmail}
               onChange={(e) => setNewEmail(e.target.value)}
             />
+            <input
+              className="w-full rounded-xl border border-border px-3 py-2 text-sm font-bold outline-none focus:border-primary"
+              placeholder="Số điện thoại"
+              type="tel"
+              value={newPhone}
+              onChange={(e) => setNewPhone(e.target.value)}
+            />
+            <div>
+              <label className="text-xs font-bold text-muted-foreground">Ngày sinh</label>
+              <input
+                className="mt-1 w-full rounded-xl border border-border px-3 py-2 text-sm font-bold outline-none focus:border-primary"
+                type="date"
+                value={newBirthday}
+                onChange={(e) => setNewBirthday(e.target.value)}
+              />
+            </div>
             <input
               className="w-full rounded-xl border border-border px-3 py-2 text-sm font-bold outline-none focus:border-primary"
               placeholder="Mật khẩu"
@@ -377,6 +403,25 @@ export function UsersTab({ onRefresh }: UsersTabProps) {
                         className="mt-1 w-full rounded-xl border border-border px-3 py-1.5 text-sm font-bold outline-none focus:border-primary bg-card"
                         value={editState.email}
                         onChange={(e) => setEditState({ ...editState, email: e.target.value })}
+                      />
+                    </div>
+                    <div>
+                      <label className="text-xs font-bold text-muted-foreground">Số điện thoại</label>
+                      <input
+                        type="tel"
+                        className="mt-1 w-full rounded-xl border border-border px-3 py-1.5 text-sm font-bold outline-none focus:border-primary bg-card"
+                        placeholder="VD: 0901234567"
+                        value={editState.phone}
+                        onChange={(e) => setEditState({ ...editState, phone: e.target.value })}
+                      />
+                    </div>
+                    <div>
+                      <label className="text-xs font-bold text-muted-foreground">Ngày sinh</label>
+                      <input
+                        type="date"
+                        className="mt-1 w-full rounded-xl border border-border px-3 py-1.5 text-sm font-bold outline-none focus:border-primary bg-card"
+                        value={editState.birthday}
+                        onChange={(e) => setEditState({ ...editState, birthday: e.target.value })}
                       />
                     </div>
                     <div>

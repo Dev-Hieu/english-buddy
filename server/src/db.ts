@@ -108,6 +108,10 @@ export function initSchema(): void {
   try { db.exec("ALTER TABLE students ADD COLUMN userId TEXT"); } catch { /* đã có */ }
   try { db.exec("ALTER TABLE users ADD COLUMN username TEXT"); } catch { /* đã có */ }
   try { db.exec("CREATE UNIQUE INDEX IF NOT EXISTS idx_users_username ON users(username) WHERE username IS NOT NULL"); } catch { /* đã có */ }
+  // Thêm phone, birthday cho users + birthday cho students
+  try { db.exec("ALTER TABLE users ADD COLUMN phone TEXT"); } catch { /* đã có */ }
+  try { db.exec("ALTER TABLE users ADD COLUMN birthday TEXT"); } catch { /* đã có */ }
+  try { db.exec("ALTER TABLE students ADD COLUMN birthday TEXT"); } catch { /* đã có */ }
   // Backfill username theo role: AD01, GV001, PH000001, HS000001
   try {
     const prefixes: Record<string, { prefix: string; pad: number }> = { admin: { prefix: "AD", pad: 2 }, teacher: { prefix: "GV", pad: 3 }, parent: { prefix: "PH", pad: 6 } };

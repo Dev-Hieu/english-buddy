@@ -26,13 +26,13 @@ export function StudentsTab({ onRefresh, onLoginAsStudent }: StudentsTabProps) {
 
   // Add form
   const [showAdd, setShowAdd] = useState(false);
-  const [addForm, setAddForm] = useState({ name: "", grade: "1", level: "kids", avatar: "boy", withLogin: false, email: "", password: "123456" });
+  const [addForm, setAddForm] = useState({ name: "", grade: "1", level: "kids", avatar: "boy", withLogin: false, email: "", password: "123456", birthday: "" });
   const [addMsg, setAddMsg] = useState("");
   const [addSaving, setAddSaving] = useState(false);
 
   // Edit form
   const [editId, setEditId] = useState<string | null>(null);
-  const [editForm, setEditForm] = useState({ name: "", grade: "1", level: "kids", avatar: "boy", dailyGoal: "10", username: "", password: "" });
+  const [editForm, setEditForm] = useState({ name: "", grade: "1", level: "kids", avatar: "boy", dailyGoal: "10", username: "", password: "", birthday: "" });
   const [editSaving, setEditSaving] = useState(false);
 
   const load = () => { setLoading(true); listAllStudents().then(setStudents).catch(() => {}).finally(() => setLoading(false)); };
@@ -49,12 +49,12 @@ export function StudentsTab({ onRefresh, onLoginAsStudent }: StudentsTabProps) {
     if (!addForm.name.trim()) return;
     setAddSaving(true); setAddMsg("");
     try {
-      const payload: CreateStudentDirectPayload = { name: addForm.name.trim(), grade: Number(addForm.grade), level: addForm.level, avatar: addForm.avatar };
+      const payload: CreateStudentDirectPayload = { name: addForm.name.trim(), grade: Number(addForm.grade), level: addForm.level, avatar: addForm.avatar, birthday: addForm.birthday || undefined };
       if (addForm.withLogin && addForm.email.trim()) { payload.email = addForm.email.trim(); payload.password = addForm.password || "123456"; }
       const res = await createStudentDirect(payload);
       const cred = res.user ? ` — Đăng nhập: ${res.user.email} / ${addForm.password || "123456"}` : "";
       setAddMsg(`✓ Đã tạo: ${res.student?.name ?? addForm.name}${cred}`);
-      setAddForm({ name: "", grade: "1", level: "kids", avatar: "boy", withLogin: false, email: "", password: "123456" });
+      setAddForm({ name: "", grade: "1", level: "kids", avatar: "boy", withLogin: false, email: "", password: "123456", birthday: "" });
       load(); onRefresh();
     } catch { setAddMsg("✗ Lỗi — email có thể đã tồn tại."); }
     finally { setAddSaving(false); }
@@ -67,7 +67,7 @@ export function StudentsTab({ onRefresh, onLoginAsStudent }: StudentsTabProps) {
 
   const startEdit = (s: AdminStudent) => {
     setEditId(s.id);
-    setEditForm({ name: s.name, grade: String(s.grade), level: s.level || "a1", avatar: s.avatar || "boy", dailyGoal: String(s.dailyGoal ?? 10), username: s.studentUsername || "", password: "" });
+    setEditForm({ name: s.name, grade: String(s.grade), level: s.level || "a1", avatar: s.avatar || "boy", dailyGoal: String(s.dailyGoal ?? 10), username: s.studentUsername || "", password: "", birthday: s.birthday || "" });
     setShowAdd(false);
   };
 
@@ -77,7 +77,7 @@ export function StudentsTab({ onRefresh, onLoginAsStudent }: StudentsTabProps) {
     if (!editId || !editForm.name.trim()) return;
     setEditSaving(true); setAccountMsg("");
     try {
-      await updateStudentAdmin(editId, { name: editForm.name.trim(), grade: Number(editForm.grade), level: editForm.level, avatar: editForm.avatar, dailyGoal: Number(editForm.dailyGoal) });
+      await updateStudentAdmin(editId, { name: editForm.name.trim(), grade: Number(editForm.grade), level: editForm.level, avatar: editForm.avatar, dailyGoal: Number(editForm.dailyGoal), birthday: editForm.birthday || undefined });
       // Tạo hoặc cập nhật tài khoản đăng nhập
       if (editForm.username.trim() || editForm.password.trim()) {
         const accData: { username?: string; password?: string } = {};
@@ -124,6 +124,10 @@ export function StudentsTab({ onRefresh, onLoginAsStudent }: StudentsTabProps) {
                 <option value="boy">👦 Nam</option>
                 <option value="girl">👧 Nữ</option>
               </select>
+            </div>
+            <div>
+              <label className="text-xs font-bold text-muted-foreground">Ngày sinh</label>
+              <input type="date" className={inp + " mt-1"} value={addForm.birthday} onChange={(e) => setAddForm({ ...addForm, birthday: e.target.value })} />
             </div>
             <label className="flex items-center gap-2 text-sm font-bold">
               <input type="checkbox" className="h-4 w-4 accent-primary" checked={addForm.withLogin} onChange={(e) => setAddForm({ ...addForm, withLogin: e.target.checked })} />
@@ -233,6 +237,10 @@ export function StudentsTab({ onRefresh, onLoginAsStudent }: StudentsTabProps) {
                         value={editForm.dailyGoal}
                         onChange={(e) => setEditForm({ ...editForm, dailyGoal: e.target.value })}
                       />
+                    </div>
+                    <div>
+                      <label className="text-xs font-bold text-muted-foreground">Ngày sinh</label>
+                      <input type="date" className={inp + " mt-1"} value={editForm.birthday} onChange={(e) => setEditForm({ ...editForm, birthday: e.target.value })} />
                     </div>
                     {/* Tài khoản đăng nhập */}
                     {(() => {

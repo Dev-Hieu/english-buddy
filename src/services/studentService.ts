@@ -41,6 +41,8 @@ export interface AdminUser {
   studentLimit: number;
   isPremium?: number;
   canEditImages?: number;
+  phone?: string;
+  birthday?: string;
 }
 export function listUsers(): Promise<AdminUser[]> {
   return apiRequest(`/api/admin/users`);
@@ -54,7 +56,7 @@ export function setPremium(userId: string, isPremium: boolean): Promise<{ ok: bo
 export function setImageEditor(userId: string, canEditImages: boolean): Promise<{ ok: boolean; canEditImages: boolean }> {
   return apiRequest(`/api/admin/users/${userId}`, { method: "PUT", body: { canEditImages } });
 }
-export function updateUser(userId: string, data: Partial<{ name: string; email: string; username: string; role: string; password: string; studentLimit: number; isPremium: boolean; canEditImages: boolean }>): Promise<{ ok: boolean }> {
+export function updateUser(userId: string, data: Partial<{ name: string; email: string; username: string; role: string; password: string; studentLimit: number; isPremium: boolean; canEditImages: boolean; phone: string; birthday: string }>): Promise<{ ok: boolean }> {
   return apiRequest(`/api/admin/users/${userId}`, { method: "PUT", body: data });
 }
 export interface ResetOptions { xp?: boolean; streak?: boolean; progress?: boolean; quiz?: boolean; lookups?: boolean }
@@ -65,7 +67,7 @@ export function resetScores(opts: ResetOptions): Promise<{ ok: boolean; done: st
 export function getOnlineStudents(): Promise<{ count: number; students: any[] }> { return apiRequest("/api/admin/online"); }
 
 // Admin: tạo user mới
-export interface CreateUserPayload { email: string; password: string; name: string; role?: string; studentLimit?: number; isPremium?: boolean; }
+export interface CreateUserPayload { email: string; password: string; name: string; role?: string; studentLimit?: number; isPremium?: boolean; phone?: string; birthday?: string; }
 export function createUser(payload: CreateUserPayload): Promise<AdminUser> {
   return apiRequest(`/api/admin/users`, { method: "POST", body: payload });
 }
@@ -76,14 +78,14 @@ export function deleteUser(userId: string): Promise<{ ok: boolean }> {
 }
 
 // Admin: tạo student trực tiếp (cho lớp học)
-export interface CreateStudentDirectPayload { name: string; grade: number; level: string; avatar?: string; dailyGoal?: number; email?: string; password?: string; }
+export interface CreateStudentDirectPayload { name: string; grade: number; level: string; avatar?: string; dailyGoal?: number; email?: string; password?: string; birthday?: string; }
 export interface CreateStudentDirectResult { student: any; user?: { email: string; password: string }; }
 export function createStudentDirect(payload: CreateStudentDirectPayload): Promise<CreateStudentDirectResult> {
   return apiRequest(`/api/admin/create-student`, { method: "POST", body: payload });
 }
 
 // Admin: list tất cả students
-export interface AdminStudent { id: string; name: string; grade: number; level: string; avatar: string; xp: number; streak: number; dailyGoal?: number; parentId: string; parentName: string; parentEmail: string; parentUsername?: string; parentRole?: string; userId?: string; studentUsername?: string; studentEmail?: string; createdAt: number; }
+export interface AdminStudent { id: string; name: string; grade: number; level: string; avatar: string; xp: number; streak: number; dailyGoal?: number; parentId: string; parentName: string; parentEmail: string; parentUsername?: string; parentRole?: string; userId?: string; studentUsername?: string; studentEmail?: string; createdAt: number; birthday?: string; }
 export function listAllStudents(): Promise<AdminStudent[]> {
   return apiRequest(`/api/admin/students`);
 }
@@ -94,7 +96,7 @@ export function deleteStudentAdmin(studentId: string): Promise<{ ok: boolean }> 
 }
 
 // Admin: cập nhật student
-export function updateStudentAdmin(studentId: string, data: Partial<{ name: string; grade: number; level: string; avatar: string; dailyGoal: number }>): Promise<{ ok: boolean }> {
+export function updateStudentAdmin(studentId: string, data: Partial<{ name: string; grade: number; level: string; avatar: string; dailyGoal: number; birthday: string }>): Promise<{ ok: boolean }> {
   return apiRequest(`/api/admin/students/${studentId}`, { method: "PUT", body: data });
 }
 // Admin: tạo/cập nhật tài khoản đăng nhập cho học sinh

@@ -175,7 +175,7 @@ export function createApp() {
   // ── Admin: quản lý người dùng ──
   app.get("/api/admin/users", requireAdmin, (_req, res) => {
     const rows = db.prepare(`
-      SELECT u.id, u.email, u.username, u.name, u.role, u.status, u.createdAt, u.studentLimit, u.isPremium, u.canEditImages,
+      SELECT u.id, u.email, u.username, u.name, u.role, u.status, u.phone, u.birthday, u.createdAt, u.studentLimit, u.isPremium, u.canEditImages,
              (SELECT COUNT(*) FROM students s WHERE s.parentId = u.id) AS studentCount
       FROM users u ORDER BY u.createdAt DESC
     `).all();
@@ -224,6 +224,8 @@ export function createApp() {
     }
     if (body.isPremium !== undefined) db.prepare("UPDATE users SET isPremium = ? WHERE id = ?").run(body.isPremium ? 1 : 0, uid);
     if (body.canEditImages !== undefined) db.prepare("UPDATE users SET canEditImages = ? WHERE id = ?").run(body.canEditImages ? 1 : 0, uid);
+    if (body.phone !== undefined) db.prepare("UPDATE users SET phone = ? WHERE id = ?").run(String(body.phone).trim() || null, uid);
+    if (body.birthday !== undefined) db.prepare("UPDATE users SET birthday = ? WHERE id = ?").run(String(body.birthday).trim() || null, uid);
     const row = db.prepare("SELECT * FROM users WHERE id = ?").get(uid) as any;
     if (!row) return res.status(404).json({ error: "không có user" });
     res.json({ ok: true });
@@ -231,7 +233,7 @@ export function createApp() {
 
   // Admin tạo user mới
   app.post("/api/admin/users", requireAdmin, (req, res) => {
-    const { email, password, name, role, studentLimit, isPremium } = req.body || {};
+    const { email, password, name, role, studentLimit, isPremium, phone, birthday } = req.body || {};
     if (!email || !password) return res.status(400).json({ error: "thiếu email hoặc password" });
     const existing = db.prepare("SELECT id FROM users WHERE email = ?").get(String(email));
     if (existing) return res.status(409).json({ error: "email đã tồn tại" });
@@ -242,9 +244,10 @@ export function createApp() {
       id, email: String(email).trim(), username: uname, passwordHash: hashPassword(String(password)),
       name: String(name || "").trim() || null, role: r,
       createdAt: Date.now(), studentLimit: Number(studentLimit) || 1, isPremium: isPremium ? 1 : 0, status: "active",
+      phone: String(phone || "").trim() || null, birthday: String(birthday || "").trim() || null,
     };
-    db.prepare(`INSERT INTO users (id, email, username, passwordHash, name, role, createdAt, studentLimit, isPremium, status)
-      VALUES (@id, @email, @username, @passwordHash, @name, @role, @createdAt, @studentLimit, @isPremium, @status)`).run(user);
+    db.prepare(`INSERT INTO users (id, email, username, passwordHash, name, role, createdAt, studentLimit, isPremium, status, phone, birthday)
+      VALUES (@id, @email, @username, @passwordHash, @name, @role, @createdAt, @studentLimit, @isPremium, @status, @phone, @birthday)`).run(user);
     res.json({ ...user, passwordHash: undefined });
   });
 
@@ -267,7 +270,7 @@ export function createApp() {
 
   // Admin tạo student trực tiếp (không cần parent)
   app.post("/api/admin/create-student", requireAdmin, (req, res) => {
-    const { name, grade, level, avatar, dailyGoal, email, password } = req.body || {};
+    const { name, grade, level, avatar, dailyGoal, email, password, birthday } = req.body || {};
     if (!name || !String(name).trim()) return res.status(400).json({ error: "thiếu tên bé" });
     const LEVELS = ["kids", "a1", "a2", "b1", "b2", "c1"];
     const lv = LEVELS.includes(level) ? level : "a1";
@@ -287,9 +290,10 @@ export function createApp() {
       id: "student_" + randomUUID().slice(0, 8), parentId, name: String(name).trim(),
       grade: Number(grade) || 1, level: lv, avatar: avatar || "girl_avatar_01",
       dailyGoal: Number(dailyGoal) || 10, xp: 0, streak: 0, createdAt: Date.now(), lastActiveDate: null,
+      birthday: String(birthday || "").trim() || null,
     };
-    db.prepare(`INSERT INTO students (id,parentId,name,grade,level,avatar,dailyGoal,xp,streak,createdAt,lastActiveDate)
-      VALUES (@id,@parentId,@name,@grade,@level,@avatar,@dailyGoal,@xp,@streak,@createdAt,@lastActiveDate)`).run(student);
+    db.prepare(`INSERT INTO students (id,parentId,name,grade,level,avatar,dailyGoal,xp,streak,createdAt,lastActiveDate,birthday)
+      VALUES (@id,@parentId,@name,@grade,@level,@avatar,@dailyGoal,@xp,@streak,@createdAt,@lastActiveDate,@birthday)`).run(student);
     res.json({ student, loginInfo });
   });
 
@@ -329,6 +333,7 @@ export function createApp() {
     if (level !== undefined && LEVELS.includes(level)) { sets.push("level = @level"); params.level = level; }
     if (avatar !== undefined) { sets.push("avatar = @avatar"); params.avatar = avatar; }
     if (dailyGoal !== undefined) { sets.push("dailyGoal = @dailyGoal"); params.dailyGoal = Number(dailyGoal) || 10; }
+    if (req.body.birthday !== undefined) { sets.push("birthday = @birthday"); params.birthday = String(req.body.birthday).trim() || null; }
     if (sets.length === 0) return res.status(400).json({ error: "không có gì để cập nhật" });
     db.prepare(`UPDATE students SET ${sets.join(", ")} WHERE id = @id`).run(params);
     const row = db.prepare("SELECT * FROM students WHERE id = ?").get(req.params.id);
