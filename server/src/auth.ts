@@ -10,14 +10,17 @@ export interface User {
   email: string;
   name: string;
   role: string; // "parent" | "admin"
+  status: string; // "active" | "pending" | "rejected"
   createdAt: number;
-  studentLimit: number; // hạn mức số bé (admin cấp)
-  isPremium: boolean; // trả phí -> mở chat AI nâng cao (DeepSeek)
-  canEditImages: boolean; // được phép sửa ảnh từ vựng (admin cấp)
+  studentLimit: number;
+  isPremium: boolean;
+  canEditImages: boolean;
 }
 
 const publicUser = (r: any): User => ({
-  id: r.id, email: r.email, name: r.name, role: r.role, createdAt: r.createdAt,
+  id: r.id, email: r.email, name: r.name, role: r.role,
+  status: r.status || "active",
+  createdAt: r.createdAt,
   studentLimit: r.studentLimit ?? 1,
   isPremium: !!r.isPremium || r.role === "admin",
   canEditImages: !!r.canEditImages || r.role === "admin",
@@ -51,14 +54,23 @@ function verifyToken(token: string): string | null {
 }
 
 // ── Tài khoản ──
-export function registerUser(email: string, password: string, name: string): { token: string; user: User } | { error: string } {
+export function registerUser(email: string, password: string, name: string, inviteCode?: string): { token: string; user: User } | { error: string } {
   email = String(email || "").trim().toLowerCase();
   if (!email.includes("@")) return { error: "email không hợp lệ" };
   if (!password || password.length < 4) return { error: "mật khẩu tối thiểu 4 ký tự" };
   if (db.prepare("SELECT id FROM users WHERE email = ?").get(email)) return { error: "email đã được dùng" };
+
+  let status = "pending";
+  if (inviteCode) {
+    const ic = db.prepare("SELECT * FROM invite_codes WHERE code = ? AND usedCount < maxUses AND (expiresAt IS NULL OR expiresAt > ?)").get(inviteCode, Date.now()) as any;
+    if (!ic) return { error: "Mã không hợp lệ hoặc hết lượt" };
+    status = "active";
+    db.prepare("UPDATE invite_codes SET usedCount = usedCount + 1 WHERE code = ?").run(inviteCode);
+  }
+
   const id = randomUUID();
-  db.prepare("INSERT INTO users (id, email, passwordHash, name, role, createdAt, studentLimit) VALUES (?, ?, ?, ?, 'parent', ?, 1)")
-    .run(id, email, hashPassword(password), (name || "").trim() || email.split("@")[0], Date.now());
+  db.prepare("INSERT INTO users (id, email, passwordHash, name, role, createdAt, studentLimit, status) VALUES (?, ?, ?, ?, 'parent', ?, 1, ?)")
+    .run(id, email, hashPassword(password), (name || "").trim() || email.split("@")[0], Date.now(), status);
   return { token: sign(id), user: publicUser(db.prepare("SELECT * FROM users WHERE id = ?").get(id)) };
 }
 
@@ -66,6 +78,7 @@ export function loginUser(email: string, password: string): { token: string; use
   email = String(email || "").trim().toLowerCase();
   const row = db.prepare("SELECT * FROM users WHERE email = ?").get(email) as any;
   if (!row || !verifyPassword(password, row.passwordHash)) return null;
+  if (row.status === "rejected") return null;
   return { token: sign(row.id), user: publicUser(row) };
 }
 

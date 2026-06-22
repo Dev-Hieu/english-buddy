@@ -144,8 +144,8 @@ export function createApp() {
 
   // ── Auth (đa người dùng: email + mật khẩu) ──
   app.post("/api/register", (req, res) => {
-    const { email, password, name } = req.body || {};
-    const result = registerUser(email, password, name);
+    const { email, password, name, inviteCode } = req.body || {};
+    const result = registerUser(email, password, name, inviteCode);
     if ("error" in result) return res.status(400).json(result);
     res.json(result);
   });
@@ -300,6 +300,31 @@ export function createApp() {
     const row = db.prepare("SELECT * FROM students WHERE id = ?").get(req.params.id);
     if (!row) return res.status(404).json({ error: "không có student" });
     res.json(row);
+  });
+
+  // ── Invite codes ──
+  app.get("/api/admin/invite-codes", requireAdmin, (_req, res) => {
+    res.json(db.prepare("SELECT * FROM invite_codes ORDER BY createdAt DESC").all());
+  });
+  app.post("/api/admin/invite-codes", requireAdmin, (req, res) => {
+    const { type, classId, maxUses, expiresAt } = req.body || {};
+    if (!type || !["invite", "class"].includes(type)) return res.status(400).json({ error: "type phải là invite hoặc class" });
+    const code = Math.random().toString(36).slice(2, 8).toUpperCase();
+    db.prepare("INSERT INTO invite_codes (code, type, classId, maxUses, createdBy, createdAt, expiresAt) VALUES (?, ?, ?, ?, ?, ?, ?)")
+      .run(code, type, classId || null, maxUses || (type === "class" ? 50 : 1), (req as any).user.id, Date.now(), expiresAt || null);
+    res.json({ ok: true, code });
+  });
+  app.delete("/api/admin/invite-codes/:code", requireAdmin, (req, res) => {
+    db.prepare("DELETE FROM invite_codes WHERE code = ?").run(req.params.code);
+    res.json({ ok: true });
+  });
+
+  // Admin: approve/reject user
+  app.put("/api/admin/users/:id/status", requireAdmin, (req, res) => {
+    const { status } = req.body || {};
+    if (!["active", "pending", "rejected"].includes(status)) return res.status(400).json({ error: "status không hợp lệ" });
+    db.prepare("UPDATE users SET status = ? WHERE id = ?").run(status, req.params.id);
+    res.json({ ok: true, status });
   });
 
   // ── Bảng xếp hạng: điểm TUẦN (mặc định) hoặc mọi thời gian, lọc theo cấp ──
