@@ -167,6 +167,10 @@ export function App() {
     );
   }
 
+  // ── Admin → thẳng vào dashboard ──
+  if (user.role === "admin" && (route.view === "student-select" || route.view === "admin")) {
+    return <AdminPage onBack={doLogout} onOpenPicker={() => navigate("imagepicker")} onLoginAsStudent={(sid) => { setSelectedStudentId(sid); localStorage.setItem(SELECTED_STUDENT_KEY, sid); navigate("home"); }} adminName={user.name} />;
+  }
   if (route.view === "admin") {
     return <AdminPage onBack={() => navigate("student-select")} onOpenPicker={() => navigate("imagepicker")} onLoginAsStudent={(sid) => { setSelectedStudentId(sid); localStorage.setItem(SELECTED_STUDENT_KEY, sid); navigate("home"); }} adminName={user.name} />;
   }
