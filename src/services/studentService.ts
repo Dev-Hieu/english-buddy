@@ -97,6 +97,10 @@ export function deleteStudentAdmin(studentId: string): Promise<{ ok: boolean }> 
 export function updateStudentAdmin(studentId: string, data: Partial<{ name: string; grade: number; level: string; avatar: string; dailyGoal: number }>): Promise<{ ok: boolean }> {
   return apiRequest(`/api/admin/students/${studentId}`, { method: "PUT", body: data });
 }
+// Admin: tạo/cập nhật tài khoản đăng nhập cho học sinh
+export function setStudentAccount(studentId: string, data: { username?: string; password?: string }): Promise<{ ok: boolean; username?: string; created?: boolean }> {
+  return apiRequest(`/api/admin/students/${studentId}/account`, { method: "POST", body: data });
+}
 
 export interface LeaderEntry {
   id: string;

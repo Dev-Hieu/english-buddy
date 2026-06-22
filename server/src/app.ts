@@ -333,6 +333,39 @@ export function createApp() {
     res.json(row);
   });
 
+  // Admin: tạo/cập nhật tài khoản đăng nhập cho học sinh đã có
+  app.post("/api/admin/students/:id/account", requireAdmin, (req, res) => {
+    const { username, password } = req.body || {};
+    const student = db.prepare("SELECT * FROM students WHERE id = ?").get(req.params.id) as any;
+    if (!student) return res.status(404).json({ error: "không tìm thấy học sinh" });
+
+    if (student.parentId === "classroom" || !student.parentId) {
+      // Chưa có TK → tạo mới
+      if (!password || String(password).length < 4) return res.status(400).json({ error: "Mật khẩu tối thiểu 4 ký tự" });
+      const uid = randomUUID();
+      const uname = username?.trim() || generateStudentUsername();
+      const dupUn = db.prepare("SELECT id FROM users WHERE LOWER(username) = ?").get(uname.toLowerCase());
+      if (dupUn) return res.status(409).json({ error: "Tên đăng nhập đã được dùng" });
+      const email = `${uname.toLowerCase()}@student.local`;
+      db.prepare("INSERT INTO users (id, email, username, passwordHash, name, role, createdAt, studentLimit, status) VALUES (?, ?, ?, ?, ?, 'student', ?, 1, 'active')")
+        .run(uid, email, uname, hashPassword(String(password)), student.name, Date.now());
+      db.prepare("UPDATE students SET parentId = ? WHERE id = ?").run(uid, student.id);
+      res.json({ ok: true, username: uname, email, created: true });
+    } else {
+      // Đã có TK → cập nhật username/password
+      if (username?.trim()) {
+        const un = String(username).trim();
+        const dup = db.prepare("SELECT id FROM users WHERE LOWER(username) = ? AND id != ?").get(un.toLowerCase(), student.parentId);
+        if (dup) return res.status(409).json({ error: "Tên đăng nhập đã được dùng" });
+        db.prepare("UPDATE users SET username = ? WHERE id = ?").run(un, student.parentId);
+      }
+      if (password && String(password).length >= 4) {
+        db.prepare("UPDATE users SET passwordHash = ? WHERE id = ?").run(hashPassword(String(password)), student.parentId);
+      }
+      res.json({ ok: true, updated: true });
+    }
+  });
+
   // ── Invite codes ──
   app.get("/api/admin/invite-codes", requireAdmin, (_req, res) => {
     res.json(db.prepare("SELECT * FROM invite_codes ORDER BY createdAt DESC").all());
