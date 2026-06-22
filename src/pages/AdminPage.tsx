@@ -6,6 +6,7 @@ import { OverviewTab } from "./admin/OverviewTab";
 import { UsersTab } from "./admin/UsersTab";
 import { StudentsTab } from "./admin/StudentsTab";
 import { ClassesTab } from "./admin/ClassesTab";
+import { ImagesTab } from "./admin/ImagesTab";
 
 interface AdminPageProps {
   onBack: () => void;
@@ -48,6 +49,9 @@ export function AdminPage({ onBack, onOpenPicker, onLoginAsStudent, adminName = 
       break;
     case "classes":
       content = <ClassesTab onRefresh={loadData} />;
+      break;
+    case "images":
+      content = <ImagesTab onOpenPicker={onOpenPicker} />;
       break;
     default:
       content = (
