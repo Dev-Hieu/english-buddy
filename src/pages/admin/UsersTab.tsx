@@ -317,7 +317,7 @@ export function UsersTab({ onRefresh }: UsersTabProps) {
       </div>
 
       {/* Danh sách tài khoản */}
-      <div className="space-y-3">
+      <div className="space-y-2">
         {filtered.map((u) => {
           const isAdmin = u.role === "admin";
           const isPending = u.status === "pending";
@@ -325,54 +325,34 @@ export function UsersTab({ onRefresh }: UsersTabProps) {
 
           return (
             <Card key={u.id}>
-              <CardContent className="p-4 space-y-3">
-                {/* Avatar + thông tin */}
-                <div className="flex items-start gap-3">
-                  <span
-                    className={cn(
-                      "flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-2xl text-white font-extrabold text-sm mt-0.5",
-                      isAdmin ? "bg-red-500" : "bg-primary"
-                    )}
-                  >
+              <CardContent className="p-3">
+                <div className="flex items-center gap-3">
+                  <span className={cn("flex h-9 w-9 shrink-0 items-center justify-center rounded-xl text-white font-extrabold text-sm", isAdmin ? "bg-red-500" : "bg-primary")}>
                     {isAdmin ? <Shield className="h-5 w-5" /> : u.name.charAt(0).toUpperCase()}
                   </span>
                   <div className="min-w-0 flex-1">
                     <p className="font-extrabold truncate">{u.name}</p>
-                    <p className="text-xs text-muted-foreground truncate">{u.email}</p>
-                    {u.username && (
-                      <p className="text-xs text-muted-foreground truncate">
-                        Tên đăng nhập: <span className="font-bold text-foreground">{u.username}</span>
-                      </p>
-                    )}
+                    <p className="text-xs text-muted-foreground truncate">{u.email} {u.username ? `· ${u.username}` : ""} · HS: {u.studentCount}/{u.studentLimit}</p>
                   </div>
-                  <div className="flex flex-col items-end gap-1">
-                    <div className="flex flex-wrap gap-1 justify-end">
-                      {isAdmin && (
-                        <span className="rounded-full bg-red-100 px-2 py-0.5 text-xs font-extrabold text-red-700">ADMIN</span>
-                      )}
-                      {u.isPremium ? (
-                        <span className="rounded-full bg-yellow-100 px-2 py-0.5 text-xs font-extrabold text-yellow-700">PREMIUM</span>
-                      ) : null}
-                      {statusBadge(u)}
-                    </div>
+                  {/* Badges + actions cùng hàng */}
+                  <div className="flex items-center gap-1.5 shrink-0">
+                    {isAdmin && <span className="rounded-full bg-red-100 px-1.5 py-0.5 text-[10px] font-extrabold text-red-700">ADMIN</span>}
+                    {u.isPremium ? <span className="rounded-full bg-yellow-100 px-1.5 py-0.5 text-[10px] font-extrabold text-yellow-700">PREMIUM</span> : null}
+                    {statusBadge(u)}
                     {!isAdmin && (
-                      <button
-                        type="button"
-                        onClick={() => isEditing ? cancelEdit() : openEdit(u)}
-                        className="flex items-center gap-1 rounded-xl px-2 py-1 text-xs font-extrabold bg-muted text-muted-foreground hover:text-primary hover:bg-primary/10 transition-colors"
-                        title="Sửa"
-                      >
-                        {isEditing ? <X className="h-3.5 w-3.5" /> : <Pencil className="h-3.5 w-3.5" />}
-                        {isEditing ? "Huỷ" : "Sửa"}
-                      </button>
+                      <>
+                        <button type="button" onClick={() => isEditing ? cancelEdit() : openEdit(u)} title={isEditing ? "Huỷ" : "Sửa"}
+                          className="rounded-lg p-1.5 text-muted-foreground hover:bg-primary/10 hover:text-primary transition-colors">
+                          {isEditing ? <X className="h-4 w-4" /> : <Pencil className="h-4 w-4" />}
+                        </button>
+                        <button type="button" onClick={() => handleDelete(u)} title="Xoá"
+                          className="rounded-lg p-1.5 text-muted-foreground hover:bg-red-50 hover:text-red-500 transition-colors">
+                          <Trash2 className="h-4 w-4" />
+                        </button>
+                      </>
                     )}
                   </div>
                 </div>
-
-                {/* Số học sinh */}
-                <p className="text-xs font-bold text-muted-foreground">
-                  Học sinh: {u.studentCount} / {u.studentLimit}
-                </p>
 
                 {/* Form sửa inline */}
                 {isEditing && editState && (
@@ -463,25 +443,15 @@ export function UsersTab({ onRefresh }: UsersTabProps) {
                   </div>
                 )}
 
-                {/* Thao tác nhanh (không editing, không admin) */}
-                {!isAdmin && !isEditing && (
-                  <div className="flex items-center gap-2 border-t border-border/50 pt-2">
-                    {/* Duyệt / Từ chối */}
-                    {isPending ? (
-                      <>
-                        <Button type="button" size="sm" onClick={() => handleApprove(u)}>
-                          <Check className="h-3.5 w-3.5" /> Duyệt
-                        </Button>
-                        <Button type="button" size="sm" variant="destructive" onClick={() => handleReject(u)}>
-                          <X className="h-3.5 w-3.5" /> Từ chối
-                        </Button>
-                      </>
-                    ) : null}
-                    <div className="flex-1" />
-                    <button type="button" onClick={() => handleDelete(u)} title="Xoá tài khoản"
-                      className="rounded-lg p-1.5 text-muted-foreground hover:bg-red-50 hover:text-red-500 transition-colors">
-                      <Trash2 className="h-4 w-4" />
-                    </button>
+                {/* Duyệt / Từ chối (chỉ hiện cho pending) */}
+                {!isAdmin && !isEditing && isPending && (
+                  <div className="flex gap-2">
+                    <Button type="button" size="sm" onClick={() => handleApprove(u)} className="flex-1">
+                      <Check className="h-3.5 w-3.5" /> Duyệt
+                    </Button>
+                    <Button type="button" size="sm" variant="destructive" onClick={() => handleReject(u)} className="flex-1">
+                      <X className="h-3.5 w-3.5" /> Từ chối
+                    </Button>
                   </div>
                 )}
               </CardContent>
