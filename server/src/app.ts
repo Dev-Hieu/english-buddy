@@ -213,7 +213,7 @@ export function createApp() {
         db.prepare("UPDATE users SET username = ? WHERE id = ?").run(un, uid);
       }
     }
-    if (body.role !== undefined && ["parent", "teacher", "admin"].includes(body.role)) {
+    if (body.role !== undefined && ["parent", "teacher", "admin", "student"].includes(body.role)) {
       db.prepare("UPDATE users SET role = ? WHERE id = ?").run(body.role, uid);
     }
     if (body.password !== undefined && String(body.password).length >= 4) {
@@ -236,7 +236,7 @@ export function createApp() {
     const existing = db.prepare("SELECT id FROM users WHERE email = ?").get(String(email));
     if (existing) return res.status(409).json({ error: "email đã tồn tại" });
     const id = randomUUID();
-    const r = ["admin", "parent", "teacher"].includes(role) ? role : "parent";
+    const r = ["admin", "parent", "teacher", "student"].includes(role) ? role : "parent";
     const uname = generateUsername(r);
     const user = {
       id, email: String(email).trim(), username: uname, passwordHash: hashPassword(String(password)),
@@ -279,7 +279,7 @@ export function createApp() {
       const uid = randomUUID();
       const uname = generateStudentUsername();
       db.prepare(`INSERT INTO users (id, email, username, passwordHash, name, role, createdAt, studentLimit, isPremium, status)
-        VALUES (?, ?, ?, ?, ?, 'parent', ?, 1, 0, 'active')`).run(uid, String(email).trim(), uname, hashPassword(String(password)), String(name).trim(), Date.now());
+        VALUES (?, ?, ?, ?, ?, 'student', ?, 1, 0, 'active')`).run(uid, String(email).trim(), uname, hashPassword(String(password)), String(name).trim(), Date.now());
       parentId = uid;
       loginInfo = { email: String(email).trim(), username: uname, userId: uid };
     }

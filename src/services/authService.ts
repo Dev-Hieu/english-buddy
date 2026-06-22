@@ -4,7 +4,7 @@ export interface AuthUser {
   id: string;
   email: string;
   name: string;
-  role: "parent" | "admin" | "teacher";
+  role: "parent" | "admin" | "teacher" | "student";
   status?: "active" | "pending" | "rejected";
   createdAt: number;
   studentLimit: number;

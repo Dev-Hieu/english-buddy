@@ -180,6 +180,24 @@ export function App() {
   if (user.role === "teacher") {
     return <TeacherPage teacherName={user.name} onLogout={doLogout} onLoginAsStudent={(sid) => { setSelectedStudentId(sid); localStorage.setItem(SELECTED_STUDENT_KEY, sid); navigate("home"); }} />;
   }
+
+  // ── Student → tự chọn bé duy nhất của mình, vào thẳng học ──
+  if (user.role === "student" && !student) {
+    const myStudent = students.find((s) => s.parentId === user.id);
+    if (myStudent) {
+      setSelectedStudentId(myStudent.id);
+      localStorage.setItem(SELECTED_STUDENT_KEY, myStudent.id);
+    } else if (students.length > 0) {
+      // Fallback: chọn bé đầu tiên
+      setSelectedStudentId(students[0].id);
+      localStorage.setItem(SELECTED_STUDENT_KEY, students[0].id);
+    }
+  }
+  // Student đã chọn bé → bỏ qua màn chọn bé, vào thẳng home
+  if (user.role === "student" && student && route.view === "student-select") {
+    navigate("home");
+  }
+
   if (route.view === "imagepicker") {
     return <ImagePickerPage onBackHome={() => navigate("student-select")} />;
   }
