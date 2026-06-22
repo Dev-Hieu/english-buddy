@@ -66,6 +66,23 @@ export function initSchema(): void {
       createdAt INTEGER,
       expiresAt INTEGER
     );
+    -- Lớp học: GV quản lý nhiều lớp, mỗi lớp có mã riêng.
+    CREATE TABLE IF NOT EXISTS classes (
+      id TEXT PRIMARY KEY,
+      name TEXT NOT NULL,
+      teacherId TEXT,
+      code TEXT UNIQUE,
+      grade INTEGER,
+      level TEXT,
+      createdAt INTEGER
+    );
+    -- Bé thuộc lớp nào (many-to-many: 1 bé có thể ở nhiều lớp).
+    CREATE TABLE IF NOT EXISTS class_students (
+      classId TEXT NOT NULL,
+      studentId TEXT NOT NULL,
+      joinedAt INTEGER,
+      PRIMARY KEY (classId, studentId)
+    );
   `);
   // Migration cho DB cũ: thêm cột nếu chưa có.
   try { db.exec("ALTER TABLE students ADD COLUMN lastActiveDate TEXT"); } catch { /* đã có */ }
