@@ -11,7 +11,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { SessionHeader } from "@/components/layout/SessionHeader";
 
-type Tab = "overview" | "users" | "students" | "tools" | "data";
+type Tab = "users" | "students" | "tools";
 
 interface AdminPageProps {
   onBack: () => void;
@@ -20,7 +20,7 @@ interface AdminPageProps {
 }
 
 export function AdminPage({ onBack, onOpenPicker, onLoginAsStudent }: AdminPageProps) {
-  const [tab, setTab] = useState<Tab>("overview");
+  const [tab, setTab] = useState<Tab | null>(null);
   const [users, setUsers] = useState<AdminUser[] | null>(null);
   const [students, setStudents] = useState<AdminStudent[] | null>(null);
   const [saved, setSaved] = useState<string | null>(null);
@@ -103,7 +103,6 @@ export function AdminPage({ onBack, onOpenPicker, onLoginAsStudent }: AdminPageP
   };
 
   const tabList: { key: Tab; label: string; icon: React.ReactNode }[] = [
-    { key: "overview", label: "Tổng quan", icon: <BarChart3 className="h-4 w-4" /> },
     { key: "users", label: "Tài khoản", icon: <Users className="h-4 w-4" /> },
     { key: "students", label: "Học sinh", icon: <GraduationCap className="h-4 w-4" /> },
     { key: "tools", label: "Công cụ", icon: <Zap className="h-4 w-4" /> },
@@ -113,49 +112,31 @@ export function AdminPage({ onBack, onOpenPicker, onLoginAsStudent }: AdminPageP
     <main className="mx-auto w-full max-w-2xl px-4 pb-6">
       <SessionHeader title="Quản trị" onClose={onBack} />
 
+      {/* Dashboard chào */}
+      <div className="mb-4 rounded-2xl bg-gradient-to-br from-primary to-primary/80 p-4 text-primary-foreground">
+        <p className="text-lg font-black">Xin chào, Quản trị viên 👋</p>
+        <div className="mt-2 flex flex-wrap gap-2">
+          <span className="rounded-full bg-white/20 px-2.5 py-0.5 text-sm font-extrabold"><Users className="mr-1 inline h-3.5 w-3.5" />{stats.users} tài khoản</span>
+          <span className="rounded-full bg-white/20 px-2.5 py-0.5 text-sm font-extrabold">👦 {stats.students} học sinh</span>
+          <span className="rounded-full bg-white/20 px-2.5 py-0.5 text-sm font-extrabold"><Crown className="mr-1 inline h-3.5 w-3.5" />{stats.premium} premium</span>
+        </div>
+      </div>
+
       {/* Tabs */}
-      <div className="mb-4 flex gap-1 overflow-x-auto rounded-2xl bg-muted p-1">
+      <div className="mb-4 grid grid-cols-3 gap-1 rounded-2xl bg-muted p-1">
         {tabList.map((t) => (
           <button key={t.key} type="button" onClick={() => { setTab(t.key); setSearch(""); }}
-            className={cn("flex shrink-0 items-center gap-1 rounded-xl px-3 py-2 text-xs font-extrabold transition-colors",
+            className={cn("flex items-center justify-center gap-1 rounded-xl py-2.5 text-xs font-extrabold transition-colors",
               tab === t.key ? "bg-card text-primary shadow-card" : "text-muted-foreground")}>
             {t.icon} {t.label}
           </button>
         ))}
       </div>
 
-      {/* ── Tổng quan ── */}
-      {tab === "overview" && (
+      {/* Chưa chọn tab → quick actions + reset */}
+      {tab === null && (
         <div className="space-y-3">
-          <div className="grid grid-cols-2 gap-3">
-            <Card className="cursor-pointer" onClick={() => setTab("users")}>
-              <CardContent className="flex items-center gap-3 p-4">
-                <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-secondary text-2xl"><Users className="h-6 w-6 text-secondary-foreground" /></span>
-                <div><p className="text-2xl font-black">{stats.users}</p><p className="text-sm font-bold text-muted-foreground">Tài khoản</p></div>
-              </CardContent>
-            </Card>
-            <Card className="cursor-pointer" onClick={() => setTab("students")}>
-              <CardContent className="flex items-center gap-3 p-4">
-                <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/15 text-2xl">👦</span>
-                <div><p className="text-2xl font-black">{stats.students}</p><p className="text-sm font-bold text-muted-foreground">Học sinh</p></div>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardContent className="flex items-center gap-3 p-4">
-                <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-accent/15"><Crown className="h-6 w-6 text-accent" /></span>
-                <div><p className="text-2xl font-black">{stats.premium}</p><p className="text-sm font-bold text-muted-foreground">Premium</p></div>
-              </CardContent>
-            </Card>
-            <Card>
-              <CardContent className="flex items-center gap-3 p-4">
-                <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/15"><Shield className="h-6 w-6 text-primary" /></span>
-                <div><p className="text-2xl font-black">{stats.admins}</p><p className="text-sm font-bold text-muted-foreground">Admin</p></div>
-              </CardContent>
-            </Card>
-          </div>
-
-          {/* Quick actions */}
-          <h3 className="mt-2 font-extrabold">Thao tác nhanh</h3>
+          <h3 className="font-extrabold">Thao tác nhanh</h3>
           <div className="grid grid-cols-2 gap-2">
             <Button type="button" variant="outline" onClick={() => { setTab("users"); setShowAddUser(true); }}><UserPlus className="h-4 w-4" /> Thêm tài khoản</Button>
             <Button type="button" variant="outline" onClick={() => { setTab("students"); setShowAddStudent(true); }}><Plus className="h-4 w-4" /> Tạo học sinh</Button>
@@ -163,8 +144,7 @@ export function AdminPage({ onBack, onOpenPicker, onLoginAsStudent }: AdminPageP
             <Button type="button" variant="outline" onClick={() => window.open("/picker", "_blank")}>🖼️ Picker nâng cao</Button>
           </div>
 
-          {/* Reset section */}
-          <Card className="mt-2">
+          <Card>
             <CardContent className="p-4">
               <h3 className="flex items-center gap-2 font-extrabold mb-2"><RotateCcw className="h-4 w-4 text-red-500" /> Reset dữ liệu</h3>
               <div className="space-y-1.5">
