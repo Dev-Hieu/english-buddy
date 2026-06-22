@@ -296,8 +296,11 @@ export function createApp() {
   // Admin: list ALL students with parent info
   app.get("/api/admin/students", requireAdmin, (_req, res) => {
     const rows = db.prepare(`
-      SELECT s.*, u.name AS parentName, u.email AS parentEmail, u.username AS parentUsername, u.role AS parentRole
-      FROM students s LEFT JOIN users u ON u.id = s.parentId
+      SELECT s.*, u.name AS parentName, u.email AS parentEmail, u.username AS parentUsername, u.role AS parentRole,
+             su.username AS studentUsername, su.email AS studentEmail
+      FROM students s
+      LEFT JOIN users u ON u.id = s.parentId
+      LEFT JOIN users su ON su.id = s.userId
       ORDER BY s.createdAt DESC
     `).all();
     res.json(rows);
@@ -620,14 +623,23 @@ export function createApp() {
         return res.status(403).json({ error: `Đã đạt giới hạn ${user.studentLimit ?? 1} bé. Liên hệ admin để tăng hạn mức.` });
       }
     }
+    // Tự tạo TK đăng nhập riêng cho bé (role=student, HS username)
+    const studentUid = randomUUID();
+    const studentUsername = generateStudentUsername();
+    const studentPassword = "123456";
+    const studentEmail = `${studentUsername.toLowerCase()}@student.local`;
+    db.prepare("INSERT INTO users (id, email, username, passwordHash, name, role, createdAt, studentLimit, status) VALUES (?, ?, ?, ?, ?, 'student', ?, 1, 'active')")
+      .run(studentUid, studentEmail, studentUsername, hashPassword(studentPassword), String(name).trim(), Date.now());
+
     const row = {
       id: "student_" + randomUUID().slice(0, 8), parentId: user.id, name: String(name).trim(),
       grade: Number(grade) || 1, level: lv, avatar: avatar || "girl_avatar_01",
       dailyGoal: Number(dailyGoal) || 10, xp: 0, streak: 0, createdAt: Date.now(), lastActiveDate: null,
+      userId: studentUid,
     };
-    db.prepare(`INSERT INTO students (id,parentId,name,grade,level,avatar,dailyGoal,xp,streak,createdAt,lastActiveDate)
-      VALUES (@id,@parentId,@name,@grade,@level,@avatar,@dailyGoal,@xp,@streak,@createdAt,@lastActiveDate)`).run(row);
-    res.json(row);
+    db.prepare(`INSERT INTO students (id,parentId,name,grade,level,avatar,dailyGoal,xp,streak,createdAt,lastActiveDate,userId)
+      VALUES (@id,@parentId,@name,@grade,@level,@avatar,@dailyGoal,@xp,@streak,@createdAt,@lastActiveDate,@userId)`).run(row);
+    res.json({ ...row, studentUsername, studentPassword });
   });
 
   app.put("/api/students/:id", requireAuth, (req, res) => {

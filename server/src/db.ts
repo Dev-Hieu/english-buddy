@@ -104,6 +104,8 @@ export function initSchema(): void {
   // Thi kỹ năng: cột kỹ năng đang qua của mỗi từ (JSON mảng). Điểm từ = độ dài mảng.
   try { db.exec("ALTER TABLE progress ADD COLUMN skillsPassed TEXT"); } catch { /* đã có */ }
   try { db.exec("ALTER TABLE users ADD COLUMN status TEXT DEFAULT 'active'"); } catch { /* đã có */ }
+  // userId = TK đăng nhập riêng của bé (role=student), tách biệt parentId (PH quản lý)
+  try { db.exec("ALTER TABLE students ADD COLUMN userId TEXT"); } catch { /* đã có */ }
   try { db.exec("ALTER TABLE users ADD COLUMN username TEXT"); } catch { /* đã có */ }
   try { db.exec("CREATE UNIQUE INDEX IF NOT EXISTS idx_users_username ON users(username) WHERE username IS NOT NULL"); } catch { /* đã có */ }
   // Backfill username theo role: AD01, GV001, PH000001, HS000001
