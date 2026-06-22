@@ -44,10 +44,10 @@ export function Flashcard({ word, onKnow, onReview }: FlashcardProps) {
           </div>
         ) : (
           <div className="flex min-h-[22rem] flex-col items-center justify-center gap-4 p-6 text-center">
-            {/* Nghĩa — mỗi nghĩa 1 dòng */}
-            <div className="space-y-1">
-              {word.meaning_vi.split(/[,;，；]\s*/).map((m, i) => (
-                <p key={i} className="rounded-xl bg-primary/10 px-4 py-1.5 text-lg font-black text-primary">{m.trim()}</p>
+            {/* Nghĩa — tách theo dấu ; mỗi nghĩa 1 dòng */}
+            <div className="space-y-1.5">
+              {word.meaning_vi.split(/[;；]\s*/).filter(Boolean).map((m, i) => (
+                <p key={i} className="rounded-xl bg-primary/10 px-4 py-1.5 text-base font-extrabold text-primary">{m.trim()}</p>
               ))}
             </div>
 
