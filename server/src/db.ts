@@ -124,7 +124,7 @@ export function initSchema(): void {
   // Backfill username theo role: AD01, GV001, PH000001, HS000001
   try {
     const prefixes: Record<string, { prefix: string; pad: number }> = { admin: { prefix: "AD", pad: 2 }, teacher: { prefix: "GV", pad: 3 }, parent: { prefix: "PH", pad: 6 }, student: { prefix: "HS", pad: 6 } };
-    const rows = db.prepare("SELECT id, role FROM users WHERE (username IS NULL OR username LIKE 'hs%') AND role != 'system'").all() as { id: string; role: string }[];
+    const rows = db.prepare("SELECT id, role FROM users WHERE username IS NULL AND role != 'system'").all() as { id: string; role: string }[];
     for (const r of rows) {
       const cfg = prefixes[r.role] || prefixes.parent;
       const max = ((db.prepare(`SELECT MAX(CAST(SUBSTR(username, ${cfg.prefix.length + 1}) AS INTEGER)) AS n FROM users WHERE UPPER(username) LIKE '${cfg.prefix}%'`).get() as any)?.n || 0) + 1;
