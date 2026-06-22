@@ -1,7 +1,12 @@
+import { Copy, Plus, Trash2 } from "lucide-react";
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { resetScores, type ResetOptions } from "@/services/studentService";
+import { cn } from "@/components/ui/cn";
+import {
+  resetScores, type ResetOptions, type InviteCode,
+  listInviteCodes, createInviteCode, deleteInviteCode,
+} from "@/services/studentService";
 import { apiRequest } from "@/services/api";
 
 function ConfigRow({ label, value }: { label: string; value: string }) {
@@ -27,10 +32,30 @@ export function SettingsTab() {
 
   const [defaultGoal, setDefaultGoal] = useState("5");
 
+  // Invite codes
+  const [codes, setCodes] = useState<InviteCode[]>([]);
+  const [codeType, setCodeType] = useState("invite");
+  const [codeMaxUses, setCodeMaxUses] = useState(10);
+  const [creatingCode, setCreatingCode] = useState(false);
+
+  const loadCodes = () => listInviteCodes().then(setCodes).catch(() => setCodes([]));
+
+  const handleCreateCode = async () => {
+    setCreatingCode(true);
+    try { await createInviteCode({ type: codeType, maxUses: codeMaxUses }); loadCodes(); }
+    catch { /* bỏ qua */ } finally { setCreatingCode(false); }
+  };
+  const handleDeleteCode = async (code: string) => {
+    if (!confirm(`Xoá mã "${code}"?`)) return;
+    await deleteInviteCode(code).catch(() => {}); loadCodes();
+  };
+  const copyCode = (code: string) => navigator.clipboard.writeText(code).catch(() => {});
+
   useEffect(() => {
     apiRequest<{ configured: boolean }>("/api/chat/status")
       .then((d) => setDeepseekConfigured(d.configured))
       .catch(() => setDeepseekConfigured(false));
+    loadCodes();
   }, []);
 
   async function handleReset() {
@@ -97,6 +122,66 @@ export function SettingsTab() {
             <p className="text-xs font-bold text-muted-foreground">Lưu cấu hình sẽ có trong phiên bản tiếp theo.</p>
           </CardContent>
         </Card>
+      </section>
+
+      {/* Mã mời & Mã lớp */}
+      <section>
+        <h3 className="mb-2 font-extrabold text-base">Mã mời &amp; Mã lớp</h3>
+        <Card>
+          <CardContent className="p-4 space-y-3">
+            <div className="flex gap-2">
+              <select
+                className="flex-1 rounded-xl border border-border px-3 py-2 text-sm font-bold outline-none focus:border-primary bg-card"
+                value={codeType}
+                onChange={(e) => setCodeType(e.target.value)}
+              >
+                <option value="invite">Mời (đăng ký)</option>
+                <option value="class">Lớp học</option>
+              </select>
+              <input
+                type="number"
+                min={1}
+                max={1000}
+                placeholder="Số lượt"
+                value={codeMaxUses}
+                onChange={(e) => setCodeMaxUses(Number(e.target.value))}
+                className="w-24 rounded-xl border border-border px-3 py-2 text-sm font-bold text-center outline-none focus:border-primary"
+              />
+              <Button type="button" size="sm" onClick={handleCreateCode} disabled={creatingCode}>
+                <Plus className="h-4 w-4" /> Tạo
+              </Button>
+            </div>
+          </CardContent>
+        </Card>
+        <div className="space-y-2 mt-2">
+          {codes.map((c) => (
+            <Card key={c.code}>
+              <CardContent className="flex items-center gap-3 p-3">
+                <div className="flex-1 min-w-0">
+                  <div className="flex items-center gap-2">
+                    <span className="font-mono text-sm font-extrabold truncate">{c.code}</span>
+                    <button type="button" onClick={() => copyCode(c.code)} className="flex-shrink-0 text-muted-foreground hover:text-primary" title="Sao chép">
+                      <Copy className="h-3.5 w-3.5" />
+                    </button>
+                    <span className={cn("rounded-full px-2 py-0.5 text-xs font-extrabold flex-shrink-0", c.type === "class" ? "bg-blue-100 text-blue-700" : "bg-green-100 text-green-700")}>
+                      {c.type === "class" ? "Lớp học" : "Mời"}
+                    </span>
+                  </div>
+                  <p className="text-xs text-muted-foreground mt-0.5">
+                    {c.usedCount}/{c.maxUses} lượt
+                    {c.expiresAt ? ` · Hết hạn ${new Date(c.expiresAt).toLocaleDateString("vi-VN")}` : ""}
+                  </p>
+                </div>
+                <button type="button" onClick={() => handleDeleteCode(c.code)} className="flex-shrink-0 rounded-xl p-1.5 text-red-500 hover:bg-red-50 transition-colors" title="Xoá">
+                  <Trash2 className="h-4 w-4" />
+                </button>
+              </CardContent>
+            </Card>
+          ))}
+          {codes.length === 0 && (
+            <p className="text-center text-sm font-bold text-muted-foreground py-4">Chưa có mã nào.</p>
+          )}
+        </div>
       </section>
 
       {/* Reset dữ liệu */}
