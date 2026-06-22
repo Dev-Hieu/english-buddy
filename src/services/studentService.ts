@@ -83,7 +83,7 @@ export function createStudentDirect(payload: CreateStudentDirectPayload): Promis
 }
 
 // Admin: list tất cả students
-export interface AdminStudent { id: string; name: string; grade: number; level: string; avatar: string; xp: number; streak: number; dailyGoal?: number; parentId: string; parentName: string; parentEmail: string; parentUsername?: string; createdAt: number; }
+export interface AdminStudent { id: string; name: string; grade: number; level: string; avatar: string; xp: number; streak: number; dailyGoal?: number; parentId: string; parentName: string; parentEmail: string; parentUsername?: string; parentRole?: string; createdAt: number; }
 export function listAllStudents(): Promise<AdminStudent[]> {
   return apiRequest(`/api/admin/students`);
 }

@@ -235,27 +235,67 @@ export function StudentsTab({ onRefresh, onLoginAsStudent }: StudentsTabProps) {
                       />
                     </div>
                     {/* Tài khoản đăng nhập */}
-                    <div className="space-y-2 rounded-xl bg-muted/50 border border-border p-3">
-                      <p className="text-xs font-extrabold text-muted-foreground uppercase tracking-wide">
-                        {s.parentEmail === "classroom@system" ? "Tạo tài khoản đăng nhập" : "Tài khoản đăng nhập"}
-                      </p>
-                      {s.parentEmail === "classroom@system" && (
-                        <p className="text-xs font-semibold text-muted-foreground">Bé chưa có TK riêng. Nhập tên đăng nhập + mật khẩu để tạo.</p>
-                      )}
-                      <div>
-                        <label className="text-xs font-bold text-muted-foreground">Tên đăng nhập</label>
-                        <input className={inp + " mt-1"} value={editForm.username} onChange={(e) => setEditForm({ ...editForm, username: e.target.value })}
-                          placeholder={s.parentEmail === "classroom@system" ? "Nhập tên đăng nhập (tự sinh nếu để trống)" : "VD: HS000001"} />
-                      </div>
-                      <div>
-                        <label className="text-xs font-bold text-muted-foreground">
-                          {s.parentEmail === "classroom@system" ? "Mật khẩu" : "Đổi mật khẩu"}
-                        </label>
-                        <input type="password" className={inp + " mt-1"} value={editForm.password} onChange={(e) => setEditForm({ ...editForm, password: e.target.value })}
-                          placeholder={s.parentEmail === "classroom@system" ? "Nhập mật khẩu (bắt buộc)" : "Để trống nếu không đổi"} />
-                      </div>
-                      {accountMsg && <p className={cn("text-xs font-bold", accountMsg.startsWith("✗") ? "text-red-600" : "text-emerald-600")}>{accountMsg}</p>}
-                    </div>
+                    {(() => {
+                      const hasStudentAccount = s.parentRole === "student";
+                      const hasParentAccount = s.parentEmail && s.parentEmail !== "classroom@system" && s.parentRole === "parent";
+                      const noAccount = s.parentEmail === "classroom@system" || !s.parentId;
+
+                      return (
+                        <div className="space-y-2 rounded-xl bg-muted/50 border border-border p-3">
+                          {/* Bé có TK riêng (role=student) → sửa được */}
+                          {hasStudentAccount && (
+                            <>
+                              <p className="text-xs font-extrabold text-emerald-600 uppercase tracking-wide">🎓 Tài khoản học sinh</p>
+                              <div>
+                                <label className="text-xs font-bold text-muted-foreground">Tên đăng nhập</label>
+                                <input className={inp + " mt-1"} value={editForm.username} onChange={(e) => setEditForm({ ...editForm, username: e.target.value })} placeholder="VD: HS000001" />
+                              </div>
+                              <div>
+                                <label className="text-xs font-bold text-muted-foreground">Đổi mật khẩu</label>
+                                <input type="password" className={inp + " mt-1"} value={editForm.password} onChange={(e) => setEditForm({ ...editForm, password: e.target.value })} placeholder="Để trống nếu không đổi" />
+                              </div>
+                            </>
+                          )}
+
+                          {/* Bé thuộc TK phụ huynh → hiện info + nút tạo TK riêng */}
+                          {hasParentAccount && (
+                            <>
+                              <p className="text-xs font-extrabold text-blue-600 uppercase tracking-wide">👤 Thuộc tài khoản phụ huynh</p>
+                              <p className="text-xs font-semibold text-muted-foreground">
+                                {s.parentName} ({s.parentUsername || s.parentEmail})
+                              </p>
+                              <p className="text-xs font-extrabold text-muted-foreground uppercase tracking-wide mt-2">🎓 Tạo tài khoản riêng cho bé</p>
+                              <div>
+                                <label className="text-xs font-bold text-muted-foreground">Tên đăng nhập</label>
+                                <input className={inp + " mt-1"} value={editForm.username} onChange={(e) => setEditForm({ ...editForm, username: e.target.value })} placeholder="Tự sinh nếu để trống" />
+                              </div>
+                              <div>
+                                <label className="text-xs font-bold text-muted-foreground">Mật khẩu</label>
+                                <input type="password" className={inp + " mt-1"} value={editForm.password} onChange={(e) => setEditForm({ ...editForm, password: e.target.value })} placeholder="Nhập mật khẩu cho bé" />
+                              </div>
+                            </>
+                          )}
+
+                          {/* Bé lớp học chưa có TK → tạo mới */}
+                          {noAccount && (
+                            <>
+                              <p className="text-xs font-extrabold text-muted-foreground uppercase tracking-wide">Tạo tài khoản đăng nhập</p>
+                              <p className="text-xs font-semibold text-muted-foreground">Bé chưa có TK. Nhập để tạo.</p>
+                              <div>
+                                <label className="text-xs font-bold text-muted-foreground">Tên đăng nhập</label>
+                                <input className={inp + " mt-1"} value={editForm.username} onChange={(e) => setEditForm({ ...editForm, username: e.target.value })} placeholder="Tự sinh nếu để trống" />
+                              </div>
+                              <div>
+                                <label className="text-xs font-bold text-muted-foreground">Mật khẩu</label>
+                                <input type="password" className={inp + " mt-1"} value={editForm.password} onChange={(e) => setEditForm({ ...editForm, password: e.target.value })} placeholder="Nhập mật khẩu (bắt buộc)" />
+                              </div>
+                            </>
+                          )}
+
+                          {accountMsg && <p className={cn("text-xs font-bold", accountMsg.startsWith("✗") ? "text-red-600" : "text-emerald-600")}>{accountMsg}</p>}
+                        </div>
+                      );
+                    })()}
                     <div className="flex gap-2">
                       <Button type="button" onClick={handleEditSave} disabled={editSaving || !editForm.name.trim()}>
                         {editSaving ? "Đang lưu..." : "Lưu thay đổi"}

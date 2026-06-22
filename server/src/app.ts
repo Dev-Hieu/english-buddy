@@ -296,7 +296,7 @@ export function createApp() {
   // Admin: list ALL students with parent info
   app.get("/api/admin/students", requireAdmin, (_req, res) => {
     const rows = db.prepare(`
-      SELECT s.*, u.name AS parentName, u.email AS parentEmail, u.username AS parentUsername
+      SELECT s.*, u.name AS parentName, u.email AS parentEmail, u.username AS parentUsername, u.role AS parentRole
       FROM students s LEFT JOIN users u ON u.id = s.parentId
       ORDER BY s.createdAt DESC
     `).all();
