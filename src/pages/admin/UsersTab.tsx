@@ -124,7 +124,7 @@ export function UsersTab({ onRefresh }: UsersTabProps) {
   const copyCode = (code: string) => navigator.clipboard.writeText(code).catch(() => {});
 
   const SUB_TABS: { key: SubTab; label: string }[] = [
-    { key: "all", label: "Tat ca" },
+    { key: "all", label: "Tất cả" },
     { key: "pending", label: `Cho duyet${pendingCount > 0 ? ` (${pendingCount})` : ""}` },
     { key: "premium", label: "Premium" },
     { key: "admin", label: "Admin" },
@@ -154,14 +154,14 @@ export function UsersTab({ onRefresh }: UsersTabProps) {
             <p className="font-extrabold text-sm">Them tai khoan moi</p>
             <input className="w-full rounded-xl border border-border px-3 py-2 text-sm font-bold outline-none focus:border-primary" placeholder="Ho ten" value={newName} onChange={(e) => setNewName(e.target.value)} />
             <input className="w-full rounded-xl border border-border px-3 py-2 text-sm font-bold outline-none focus:border-primary" placeholder="Email" type="email" value={newEmail} onChange={(e) => setNewEmail(e.target.value)} />
-            <input className="w-full rounded-xl border border-border px-3 py-2 text-sm font-bold outline-none focus:border-primary" placeholder="Mat khau" value={newPassword} onChange={(e) => setNewPassword(e.target.value)} />
+            <input className="w-full rounded-xl border border-border px-3 py-2 text-sm font-bold outline-none focus:border-primary" placeholder="Mật khẩu" value={newPassword} onChange={(e) => setNewPassword(e.target.value)} />
             <label className="flex items-center gap-2 text-sm font-bold cursor-pointer">
               <input type="checkbox" className="h-4 w-4 accent-primary" checked={newPremium} onChange={(e) => setNewPremium(e.target.checked)} />
               Premium
             </label>
             <div className="flex gap-2 pt-1">
               <Button type="button" size="sm" onClick={handleAddUser} disabled={adding || !newName.trim() || !newEmail.trim()}>
-                {adding ? "Dang luu..." : "Luu"}
+                {adding ? "Đang lưu..." : "Lưu"}
               </Button>
               <Button type="button" size="sm" variant="ghost" onClick={() => setShowAdd(false)}>Huy</Button>
             </div>
@@ -183,7 +183,7 @@ export function UsersTab({ onRefresh }: UsersTabProps) {
       {/* Search */}
       <input
         className="w-full rounded-2xl border border-border bg-card px-4 py-2.5 text-sm font-bold outline-none focus:border-primary"
-        placeholder="Tim theo ten, email..."
+        placeholder="Tìm theo tên, email..."
         value={search}
         onChange={(e) => setSearch(e.target.value)}
       />
@@ -241,7 +241,7 @@ export function UsersTab({ onRefresh }: UsersTabProps) {
                         value={u.studentLimit}
                         onChange={(e) => handleLimit(u.id, Number(e.target.value))} />
                       <Button type="button" size="sm" variant="outline" onClick={() => saveLimit(u)}>
-                        {saved === u.id ? <Check className="h-4 w-4 text-green-500" /> : "Luu"}
+                        {saved === u.id ? <Check className="h-4 w-4 text-green-500" /> : "Lưu"}
                       </Button>
                     </div>
 

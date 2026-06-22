@@ -1,16 +1,12 @@
-import { useEffect, useState } from "react";
-import { Pencil, Trash2 } from "lucide-react";
+import { LogIn, Pencil, Plus, Search, Trash2, X } from "lucide-react";
+import { useEffect, useMemo, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { cn } from "@/components/ui/cn";
 import { avatarEmoji } from "@/components/ui/emoji";
 import {
-  type AdminStudent,
-  type CreateStudentDirectPayload,
-  listAllStudents,
-  createStudentDirect,
-  deleteStudentAdmin,
-  updateStudentAdmin,
+  type AdminStudent, type CreateStudentDirectPayload,
+  listAllStudents, createStudentDirect, deleteStudentAdmin, updateStudentAdmin,
 } from "@/services/studentService";
 
 interface StudentsTabProps {
@@ -21,205 +17,119 @@ interface StudentsTabProps {
 const GRADES = Array.from({ length: 12 }, (_, i) => i + 1);
 const LEVELS = ["kids", "a1", "a2", "b1", "b2", "c1"];
 
-const CLASSROOM_EMAIL = "classroom@system";
-
 export function StudentsTab({ onRefresh, onLoginAsStudent }: StudentsTabProps) {
   const [students, setStudents] = useState<AdminStudent[]>([]);
   const [loading, setLoading] = useState(true);
-
-  // Filters
   const [search, setSearch] = useState("");
   const [filterGrade, setFilterGrade] = useState("");
   const [filterLevel, setFilterLevel] = useState("");
 
   // Add form
   const [showAdd, setShowAdd] = useState(false);
-  const [addName, setAddName] = useState("");
-  const [addGrade, setAddGrade] = useState("1");
-  const [addLevel, setAddLevel] = useState("kids");
-  const [addAvatar, setAddAvatar] = useState("boy");
-  const [addWithLogin, setAddWithLogin] = useState(false);
-  const [addEmail, setAddEmail] = useState("");
-  const [addPassword, setAddPassword] = useState("");
+  const [addForm, setAddForm] = useState({ name: "", grade: "1", level: "kids", avatar: "boy", withLogin: false, email: "", password: "123456" });
   const [addMsg, setAddMsg] = useState("");
   const [addSaving, setAddSaving] = useState(false);
 
   // Edit form
   const [editId, setEditId] = useState<string | null>(null);
-  const [editName, setEditName] = useState("");
-  const [editGrade, setEditGrade] = useState("1");
-  const [editLevel, setEditLevel] = useState("kids");
-  const [editAvatar, setEditAvatar] = useState("boy");
+  const [editForm, setEditForm] = useState({ name: "", grade: "1", level: "kids", avatar: "boy" });
   const [editSaving, setEditSaving] = useState(false);
 
-  async function load() {
-    setLoading(true);
-    try {
-      const data = await listAllStudents();
-      setStudents(data);
-    } finally {
-      setLoading(false);
-    }
-  }
-
+  const load = () => { setLoading(true); listAllStudents().then(setStudents).catch(() => {}).finally(() => setLoading(false)); };
   useEffect(() => { load(); }, []);
 
-  const filtered = students.filter((s) => {
-    const matchName = s.name.toLowerCase().includes(search.toLowerCase());
-    const matchGrade = filterGrade ? String(s.grade) === filterGrade : true;
-    const matchLevel = filterLevel ? s.level === filterLevel : true;
-    return matchName && matchGrade && matchLevel;
-  });
+  const filtered = useMemo(() => students.filter((s) => {
+    if (search && !s.name.toLowerCase().includes(search.toLowerCase())) return false;
+    if (filterGrade && String(s.grade) !== filterGrade) return false;
+    if (filterLevel && s.level !== filterLevel) return false;
+    return true;
+  }), [students, search, filterGrade, filterLevel]);
 
-  async function handleAdd() {
-    if (!addName.trim()) return;
-    setAddSaving(true);
-    setAddMsg("");
+  const handleAdd = async () => {
+    if (!addForm.name.trim()) return;
+    setAddSaving(true); setAddMsg("");
     try {
-      const payload: CreateStudentDirectPayload = {
-        name: addName.trim(),
-        grade: Number(addGrade),
-        level: addLevel,
-        avatar: addAvatar,
-      };
-      if (addWithLogin && addEmail) {
-        payload.email = addEmail;
-        payload.password = addPassword;
-      }
+      const payload: CreateStudentDirectPayload = { name: addForm.name.trim(), grade: Number(addForm.grade), level: addForm.level, avatar: addForm.avatar };
+      if (addForm.withLogin && addForm.email.trim()) { payload.email = addForm.email.trim(); payload.password = addForm.password || "123456"; }
       const res = await createStudentDirect(payload);
-      const cred = res.user ? ` — Email: ${res.user.email} / Mật khẩu: ${res.user.password}` : "";
-      setAddMsg(`Tao thanh cong: ${res.student?.name ?? addName}${cred}`);
-      setAddName(""); setAddEmail(""); setAddPassword(""); setAddWithLogin(false);
-      await load();
-      onRefresh();
-    } catch (e: unknown) {
-      setAddMsg(`Loi: ${e instanceof Error ? e.message : "Unknown error"}`);
-    } finally {
-      setAddSaving(false);
-    }
-  }
+      const cred = res.user ? ` — Đăng nhập: ${res.user.email} / ${addForm.password || "123456"}` : "";
+      setAddMsg(`✓ Đã tạo: ${res.student?.name ?? addForm.name}${cred}`);
+      setAddForm({ name: "", grade: "1", level: "kids", avatar: "boy", withLogin: false, email: "", password: "123456" });
+      load(); onRefresh();
+    } catch { setAddMsg("✗ Lỗi — email có thể đã tồn tại."); }
+    finally { setAddSaving(false); }
+  };
 
-  async function handleDelete(id: string, name: string) {
-    if (!confirm(`Xoa hoc sinh "${name}"?`)) return;
-    await deleteStudentAdmin(id);
-    await load();
-    onRefresh();
-  }
+  const handleDelete = async (s: AdminStudent) => {
+    if (!confirm(`Xoá học sinh "${s.name}"? Dữ liệu học sẽ bị xoá.`)) return;
+    await deleteStudentAdmin(s.id).catch(() => {}); load(); onRefresh();
+  };
 
-  function startEdit(s: AdminStudent) {
+  const startEdit = (s: AdminStudent) => {
     setEditId(s.id);
-    setEditName(s.name);
-    setEditGrade(String(s.grade));
-    setEditLevel(s.level);
-    setEditAvatar(s.avatar || "boy");
+    setEditForm({ name: s.name, grade: String(s.grade), level: s.level || "a1", avatar: s.avatar || "boy" });
     setShowAdd(false);
-  }
+  };
 
-  async function handleEditSave() {
-    if (!editId || !editName.trim()) return;
+  const handleEditSave = async () => {
+    if (!editId || !editForm.name.trim()) return;
     setEditSaving(true);
     try {
-      await updateStudentAdmin(editId, {
-        name: editName.trim(),
-        grade: Number(editGrade),
-        level: editLevel,
-        avatar: editAvatar,
-      });
-      setEditId(null);
-      await load();
-      onRefresh();
-    } finally {
-      setEditSaving(false);
-    }
-  }
+      await updateStudentAdmin(editId, { name: editForm.name.trim(), grade: Number(editForm.grade), level: editForm.level, avatar: editForm.avatar });
+      setEditId(null); load(); onRefresh();
+    } finally { setEditSaving(false); }
+  };
+
+  const sel = "rounded-xl border-2 border-border bg-card px-3 py-2 text-sm font-bold outline-none focus:border-primary";
+  const inp = "w-full rounded-xl border-2 border-border bg-card px-3 py-2.5 text-sm font-bold outline-none focus:border-primary";
 
   return (
     <div className="space-y-4">
       {/* Header */}
       <div className="flex items-center justify-between">
-        <h2 className="text-xl font-black">Hoc sinh</h2>
-        <Button
-          type="button"
-          size="sm"
-          onClick={() => { setShowAdd((v) => !v); setEditId(null); }}
-        >
-          + Tao
+        <h2 className="text-xl font-black">Học sinh</h2>
+        <Button type="button" onClick={() => { setShowAdd(!showAdd); setEditId(null); }}>
+          <Plus className="h-4 w-4" /> Thêm mới
         </Button>
       </div>
 
       {/* Add form */}
       {showAdd && (
-        <Card>
-          <CardContent className="space-y-3 pt-5">
-            <p className="font-extrabold">Them hoc sinh moi</p>
-            <input
-              className="w-full rounded-xl border border-border px-3 py-2 text-sm font-bold focus:outline-none focus:ring-2 focus:ring-primary/40"
-              placeholder="Ten hoc sinh"
-              value={addName}
-              onChange={(e) => setAddName(e.target.value)}
-            />
+        <Card className="border-primary/30">
+          <CardContent className="space-y-3 p-4">
+            <div className="flex items-center justify-between">
+              <p className="font-extrabold text-primary">Thêm học sinh mới</p>
+              <button type="button" onClick={() => setShowAdd(false)}><X className="h-4 w-4 text-muted-foreground" /></button>
+            </div>
+            <input className={inp} placeholder="Tên học sinh" value={addForm.name} onChange={(e) => setAddForm({ ...addForm, name: e.target.value })} />
             <div className="grid grid-cols-3 gap-2">
-              <select
-                className="rounded-xl border border-border px-2 py-2 text-sm font-bold focus:outline-none"
-                value={addGrade}
-                onChange={(e) => setAddGrade(e.target.value)}
-              >
-                {GRADES.map((g) => <option key={g} value={g}>Lop {g}</option>)}
+              <select className={sel} value={addForm.grade} onChange={(e) => setAddForm({ ...addForm, grade: e.target.value })}>
+                {GRADES.map((g) => <option key={g} value={g}>Lớp {g}</option>)}
               </select>
-              <select
-                className="rounded-xl border border-border px-2 py-2 text-sm font-bold focus:outline-none"
-                value={addLevel}
-                onChange={(e) => setAddLevel(e.target.value)}
-              >
+              <select className={sel} value={addForm.level} onChange={(e) => setAddForm({ ...addForm, level: e.target.value })}>
                 {LEVELS.map((l) => <option key={l} value={l}>{l.toUpperCase()}</option>)}
               </select>
-              <select
-                className="rounded-xl border border-border px-2 py-2 text-sm font-bold focus:outline-none"
-                value={addAvatar}
-                onChange={(e) => setAddAvatar(e.target.value)}
-              >
-                <option value="boy">boy</option>
-                <option value="girl">girl</option>
+              <select className={sel} value={addForm.avatar} onChange={(e) => setAddForm({ ...addForm, avatar: e.target.value })}>
+                <option value="boy">👦 Nam</option>
+                <option value="girl">👧 Nữ</option>
               </select>
             </div>
             <label className="flex items-center gap-2 text-sm font-bold">
-              <input
-                type="checkbox"
-                checked={addWithLogin}
-                onChange={(e) => setAddWithLogin(e.target.checked)}
-              />
-              Tao tai khoan dang nhap rieng
+              <input type="checkbox" className="h-4 w-4 accent-primary" checked={addForm.withLogin} onChange={(e) => setAddForm({ ...addForm, withLogin: e.target.checked })} />
+              Tạo tài khoản đăng nhập riêng
             </label>
-            {addWithLogin && (
-              <div className="space-y-2">
-                <input
-                  className="w-full rounded-xl border border-border px-3 py-2 text-sm font-bold focus:outline-none focus:ring-2 focus:ring-primary/40"
-                  placeholder="Email"
-                  type="email"
-                  value={addEmail}
-                  onChange={(e) => setAddEmail(e.target.value)}
-                />
-                <input
-                  className="w-full rounded-xl border border-border px-3 py-2 text-sm font-bold focus:outline-none focus:ring-2 focus:ring-primary/40"
-                  placeholder="Mat khau"
-                  type="password"
-                  value={addPassword}
-                  onChange={(e) => setAddPassword(e.target.value)}
-                />
+            {addForm.withLogin && (
+              <div className="space-y-2 rounded-xl bg-muted p-3">
+                <input className={inp} placeholder="Email đăng nhập" type="email" value={addForm.email} onChange={(e) => setAddForm({ ...addForm, email: e.target.value })} />
+                <input className={inp} placeholder="Mật khẩu (mặc định 123456)" value={addForm.password} onChange={(e) => setAddForm({ ...addForm, password: e.target.value })} />
               </div>
             )}
-            {addMsg && (
-              <p className={cn("text-sm font-bold", addMsg.startsWith("Loi") ? "text-red-500" : "text-green-600")}>
-                {addMsg}
-              </p>
-            )}
+            {addMsg && <p className={cn("text-sm font-bold", addMsg.startsWith("✗") ? "text-red-600" : "text-emerald-600")}>{addMsg}</p>}
             <div className="flex gap-2">
-              <Button type="button" size="sm" onClick={handleAdd} disabled={addSaving}>
-                {addSaving ? "Dang luu..." : "Luu"}
+              <Button type="button" onClick={handleAdd} disabled={addSaving || !addForm.name.trim()}>
+                {addSaving ? "Đang tạo..." : "Tạo học sinh"}
               </Button>
-              <Button type="button" size="sm" variant="outline" onClick={() => setShowAdd(false)}>
-                Huy
-              </Button>
+              <Button type="button" variant="outline" onClick={() => setShowAdd(false)}>Huỷ</Button>
             </div>
           </CardContent>
         </Card>
@@ -227,145 +137,90 @@ export function StudentsTab({ onRefresh, onLoginAsStudent }: StudentsTabProps) {
 
       {/* Filters */}
       <div className="flex flex-col gap-2 sm:flex-row">
-        <input
-          className="flex-1 rounded-xl border border-border px-3 py-2 text-sm font-bold focus:outline-none focus:ring-2 focus:ring-primary/40"
-          placeholder="Tim theo ten..."
-          value={search}
-          onChange={(e) => setSearch(e.target.value)}
-        />
-        <select
-          className="rounded-xl border border-border px-3 py-2 text-sm font-bold focus:outline-none"
-          value={filterGrade}
-          onChange={(e) => setFilterGrade(e.target.value)}
-        >
-          <option value="">Tat ca lop</option>
-          {GRADES.map((g) => <option key={g} value={g}>Lop {g}</option>)}
+        <div className="flex flex-1 items-center gap-2 rounded-xl border-2 border-border bg-card px-3 focus-within:border-primary">
+          <Search className="h-4 w-4 text-muted-foreground" />
+          <input className="h-9 flex-1 bg-transparent text-sm font-bold outline-none" placeholder="Tìm theo tên..." value={search} onChange={(e) => setSearch(e.target.value)} />
+          {search && <button type="button" onClick={() => setSearch("")}><X className="h-4 w-4 text-muted-foreground" /></button>}
+        </div>
+        <select className={sel} value={filterGrade} onChange={(e) => setFilterGrade(e.target.value)}>
+          <option value="">Tất cả lớp</option>
+          {GRADES.map((g) => <option key={g} value={g}>Lớp {g}</option>)}
         </select>
-        <select
-          className="rounded-xl border border-border px-3 py-2 text-sm font-bold focus:outline-none"
-          value={filterLevel}
-          onChange={(e) => setFilterLevel(e.target.value)}
-        >
-          <option value="">Tat ca cap do</option>
+        <select className={sel} value={filterLevel} onChange={(e) => setFilterLevel(e.target.value)}>
+          <option value="">Tất cả cấp độ</option>
           {LEVELS.map((l) => <option key={l} value={l}>{l.toUpperCase()}</option>)}
         </select>
       </div>
 
       {/* Student list */}
       {loading ? (
-        <p className="text-center text-sm font-bold text-muted-foreground">Dang tai...</p>
+        <p className="py-12 text-center text-sm font-bold text-muted-foreground">Đang tải...</p>
       ) : filtered.length === 0 ? (
-        <p className="text-center text-sm font-bold text-muted-foreground">Khong co hoc sinh nao.</p>
+        <p className="py-12 text-center text-sm font-bold text-muted-foreground">Không có học sinh nào.</p>
       ) : (
-        <div className="space-y-3">
+        <div className="space-y-2">
+          <p className="text-sm font-bold text-muted-foreground">{filtered.length} học sinh</p>
           {filtered.map((s) => (
-            <div key={s.id}>
-              <Card>
-                <CardContent className="p-4">
-                  {/* Student info */}
-                  <div className="flex items-start gap-3">
-                    <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-primary/15 text-2xl">
-                      {avatarEmoji(s.avatar || "boy")}
-                    </span>
-                    <div className="min-w-0 flex-1">
-                      <div className="flex flex-wrap items-center gap-2">
-                        <p className="font-extrabold">{s.name}</p>
-                        <span className="rounded-lg bg-muted px-2 py-0.5 text-xs font-extrabold">
-                          Lop {s.grade}
-                        </span>
-                        <span className="rounded-lg bg-primary/15 px-2 py-0.5 text-xs font-extrabold text-primary">
-                          {s.level.toUpperCase()}
-                        </span>
-                      </div>
-                      <p className="mt-0.5 text-xs font-bold text-muted-foreground">
-                        ⭐ {s.xp} XP &nbsp;🔥 {s.streak} ngay
-                      </p>
-                      <p className="mt-0.5 text-xs font-bold text-muted-foreground">
-                        {s.parentEmail === CLASSROOM_EMAIL
-                          ? "Lop hoc"
-                          : `${s.parentName} (${s.parentEmail})`}
-                      </p>
+            <Card key={s.id}>
+              <CardContent className="p-4">
+                <div className="flex items-center gap-3">
+                  <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl bg-secondary text-xl">
+                    {avatarEmoji(s.avatar || "boy")}
+                  </span>
+                  <div className="flex-1 min-w-0">
+                    <div className="flex flex-wrap items-center gap-1.5">
+                      <p className="font-extrabold">{s.name}</p>
+                      <span className="rounded-md bg-muted px-1.5 py-0.5 text-[11px] font-extrabold">Lớp {s.grade}</span>
+                      <span className="rounded-md bg-primary/15 px-1.5 py-0.5 text-[11px] font-extrabold text-primary">{(s.level || "a1").toUpperCase()}</span>
                     </div>
-                    {/* Actions */}
-                    <div className="flex shrink-0 gap-1">
-                      {onLoginAsStudent && (
-                        <Button
-                          type="button"
-                          size="sm"
-                          className="bg-primary/15 text-primary shadow-none hover:bg-primary/25"
-                          onClick={() => onLoginAsStudent(s.id)}
-                        >
-                          Hoc thu
-                        </Button>
-                      )}
-                      <Button
-                        type="button"
-                        size="icon"
-                        variant="ghost"
-                        onClick={() => startEdit(s)}
-                        aria-label="Sua"
-                      >
-                        <Pencil className="h-4 w-4" />
+                    <p className="text-xs font-bold text-muted-foreground">⭐{s.xp || 0} · 🔥{s.streak || 0} ngày</p>
+                    <p className="text-xs font-semibold text-muted-foreground truncate">
+                      {s.parentEmail === "classroom@system" ? "📚 Lớp học" : `👤 ${s.parentName || ""} (${s.parentEmail || ""})`}
+                    </p>
+                  </div>
+                  <div className="flex shrink-0 items-center gap-1">
+                    {onLoginAsStudent && (
+                      <button type="button" onClick={() => onLoginAsStudent(s.id)} title="Học thử"
+                        className="flex items-center gap-1 rounded-lg bg-primary/10 px-2 py-1.5 text-xs font-extrabold text-primary hover:bg-primary/20">
+                        <LogIn className="h-3.5 w-3.5" /> Học thử
+                      </button>
+                    )}
+                    <button type="button" onClick={() => startEdit(s)} title="Sửa" className="rounded-lg p-1.5 text-muted-foreground hover:bg-muted hover:text-primary">
+                      <Pencil className="h-4 w-4" />
+                    </button>
+                    <button type="button" onClick={() => handleDelete(s)} title="Xoá" className="rounded-lg p-1.5 text-muted-foreground hover:bg-red-50 hover:text-red-500">
+                      <Trash2 className="h-4 w-4" />
+                    </button>
+                  </div>
+                </div>
+
+                {/* Edit form inline */}
+                {editId === s.id && (
+                  <div className="mt-3 space-y-3 border-t border-border pt-3">
+                    <p className="font-extrabold text-accent">Sửa thông tin: {s.name}</p>
+                    <input className={inp} placeholder="Tên học sinh" value={editForm.name} onChange={(e) => setEditForm({ ...editForm, name: e.target.value })} />
+                    <div className="grid grid-cols-3 gap-2">
+                      <select className={sel} value={editForm.grade} onChange={(e) => setEditForm({ ...editForm, grade: e.target.value })}>
+                        {GRADES.map((g) => <option key={g} value={g}>Lớp {g}</option>)}
+                      </select>
+                      <select className={sel} value={editForm.level} onChange={(e) => setEditForm({ ...editForm, level: e.target.value })}>
+                        {LEVELS.map((l) => <option key={l} value={l}>{l.toUpperCase()}</option>)}
+                      </select>
+                      <select className={sel} value={editForm.avatar} onChange={(e) => setEditForm({ ...editForm, avatar: e.target.value })}>
+                        <option value="boy">👦 Nam</option>
+                        <option value="girl">👧 Nữ</option>
+                      </select>
+                    </div>
+                    <div className="flex gap-2">
+                      <Button type="button" onClick={handleEditSave} disabled={editSaving || !editForm.name.trim()}>
+                        {editSaving ? "Đang lưu..." : "Lưu thay đổi"}
                       </Button>
-                      <Button
-                        type="button"
-                        size="icon"
-                        variant="ghost"
-                        className="text-red-500 hover:bg-red-50"
-                        onClick={() => handleDelete(s.id, s.name)}
-                        aria-label="Xoa"
-                      >
-                        <Trash2 className="h-4 w-4" />
-                      </Button>
+                      <Button type="button" variant="outline" onClick={() => setEditId(null)}>Huỷ</Button>
                     </div>
                   </div>
-
-                  {/* Inline edit form */}
-                  {editId === s.id && (
-                    <div className="mt-4 space-y-3 border-t border-border pt-4">
-                      <p className="font-extrabold">Sua thong tin</p>
-                      <input
-                        className="w-full rounded-xl border border-border px-3 py-2 text-sm font-bold focus:outline-none focus:ring-2 focus:ring-primary/40"
-                        value={editName}
-                        onChange={(e) => setEditName(e.target.value)}
-                      />
-                      <div className="grid grid-cols-3 gap-2">
-                        <select
-                          className="rounded-xl border border-border px-2 py-2 text-sm font-bold focus:outline-none"
-                          value={editGrade}
-                          onChange={(e) => setEditGrade(e.target.value)}
-                        >
-                          {GRADES.map((g) => <option key={g} value={g}>Lop {g}</option>)}
-                        </select>
-                        <select
-                          className="rounded-xl border border-border px-2 py-2 text-sm font-bold focus:outline-none"
-                          value={editLevel}
-                          onChange={(e) => setEditLevel(e.target.value)}
-                        >
-                          {LEVELS.map((l) => <option key={l} value={l}>{l.toUpperCase()}</option>)}
-                        </select>
-                        <select
-                          className="rounded-xl border border-border px-2 py-2 text-sm font-bold focus:outline-none"
-                          value={editAvatar}
-                          onChange={(e) => setEditAvatar(e.target.value)}
-                        >
-                          <option value="boy">boy</option>
-                          <option value="girl">girl</option>
-                        </select>
-                      </div>
-                      <div className="flex gap-2">
-                        <Button type="button" size="sm" onClick={handleEditSave} disabled={editSaving}>
-                          {editSaving ? "Dang luu..." : "Luu"}
-                        </Button>
-                        <Button type="button" size="sm" variant="outline" onClick={() => setEditId(null)}>
-                          Huy
-                        </Button>
-                      </div>
-                    </div>
-                  )}
-                </CardContent>
-              </Card>
-            </div>
+                )}
+              </CardContent>
+            </Card>
           ))}
         </div>
       )}

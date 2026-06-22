@@ -26,7 +26,7 @@ function TopicsSubTab() {
   useEffect(() => {
     getTopics()
       .then(setTopics)
-      .catch(() => setError("Khong tai duoc danh sach chu de."))
+      .catch(() => setError("Không tải được danh sách chủ đề."))
       .finally(() => setLoading(false));
   }, []);
 
@@ -74,7 +74,7 @@ function VocabularySubTab() {
   useEffect(() => {
     Promise.all([getVocabulary(), getTopics()])
       .then(([w, t]) => { setWords(w); setTopics(t); })
-      .catch(() => setError("Khong tai duoc du lieu."))
+      .catch(() => setError("Không tải được dữ liệu."))
       .finally(() => setLoading(false));
   }, []);
 
@@ -130,7 +130,7 @@ function VocabularySubTab() {
       <div className="flex flex-col gap-2 sm:flex-row">
         <input
           className="flex-1 rounded-xl border border-border px-3 py-2 text-sm font-bold focus:outline-none focus:ring-2 focus:ring-primary/40"
-          placeholder="Tim theo tu..."
+          placeholder="Tìm theo từ..."
           value={search}
           onChange={handleFilterChange(setSearch)}
         />

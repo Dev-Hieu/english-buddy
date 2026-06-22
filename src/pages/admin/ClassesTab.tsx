@@ -86,7 +86,7 @@ export function ClassesTab({ onRefresh }: ClassesTabProps) {
       await load();
       onRefresh();
     } catch (e: unknown) {
-      setCreateMsg(`Loi: ${e instanceof Error ? e.message : "Unknown error"}`);
+      setCreateMsg(`Lỗi: ${e instanceof Error ? e.message : "Unknown error"}`);
     } finally {
       setCreateSaving(false);
     }
@@ -213,7 +213,7 @@ export function ClassesTab({ onRefresh }: ClassesTabProps) {
                     variant="ghost"
                     className="text-red-500 hover:bg-red-50"
                     onClick={() => handleRemoveStudent(s.id)}
-                    aria-label="Xoa khoi lop"
+                    aria-label="Xoá khỏi lớp"
                   >
                     <Trash2 className="h-4 w-4" />
                   </Button>
@@ -243,7 +243,7 @@ export function ClassesTab({ onRefresh }: ClassesTabProps) {
             <p className="font-extrabold">Tao lop moi</p>
             <input
               className="w-full rounded-xl border border-border px-3 py-2 text-sm font-bold focus:outline-none focus:ring-2 focus:ring-primary/40"
-              placeholder="Ten lop"
+              placeholder="Tên lớp"
               value={createName}
               onChange={(e) => setCreateName(e.target.value)}
             />
@@ -278,7 +278,7 @@ export function ClassesTab({ onRefresh }: ClassesTabProps) {
             )}
             <div className="flex gap-2">
               <Button type="button" size="sm" onClick={handleCreate} disabled={createSaving || !createName.trim()}>
-                {createSaving ? "Dang luu..." : "Luu"}
+                {createSaving ? "Đang lưu..." : "Lưu"}
               </Button>
               <Button type="button" size="sm" variant="outline" onClick={() => setShowCreate(false)}>
                 Huy
@@ -349,7 +349,7 @@ export function ClassesTab({ onRefresh }: ClassesTabProps) {
                         size="icon"
                         variant="ghost"
                         onClick={() => startEdit(c)}
-                        aria-label="Sua"
+                        aria-label="Sửa"
                       >
                         <Pencil className="h-4 w-4" />
                       </Button>
@@ -359,7 +359,7 @@ export function ClassesTab({ onRefresh }: ClassesTabProps) {
                         variant="ghost"
                         className="text-red-500 hover:bg-red-50"
                         onClick={() => handleDelete(c.id, c.name)}
-                        aria-label="Xoa"
+                        aria-label="Xoá"
                       >
                         <Trash2 className="h-4 w-4" />
                       </Button>
@@ -403,7 +403,7 @@ export function ClassesTab({ onRefresh }: ClassesTabProps) {
                       </div>
                       <div className="flex gap-2">
                         <Button type="button" size="sm" onClick={handleEditSave} disabled={editSaving}>
-                          {editSaving ? "Dang luu..." : "Luu"}
+                          {editSaving ? "Đang lưu..." : "Lưu"}
                         </Button>
                         <Button type="button" size="sm" variant="outline" onClick={() => setEditId(null)}>
                           Huy
