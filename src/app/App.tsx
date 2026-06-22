@@ -29,6 +29,7 @@ import { LeaderboardPage } from "@/pages/LeaderboardPage";
 import { StudentSelectPage } from "@/pages/StudentSelectPage";
 import { TopicListPage } from "@/pages/TopicListPage";
 import { SkillTestPage } from "@/pages/SkillTestPage";
+import { TeacherPage } from "@/pages/TeacherPage";
 
 type View =
   | "student-select" | "admin" | "home" | "topics" | "lesson"
@@ -173,6 +174,11 @@ export function App() {
   }
   if (route.view === "admin") {
     return <AdminPage onBack={() => navigate("student-select")} onOpenPicker={() => navigate("imagepicker")} onLoginAsStudent={(sid) => { setSelectedStudentId(sid); localStorage.setItem(SELECTED_STUDENT_KEY, sid); navigate("home"); }} adminName={user.name} />;
+  }
+
+  // ── Teacher → trang giáo viên ──
+  if (user.role === "teacher") {
+    return <TeacherPage teacherName={user.name} onLogout={doLogout} onLoginAsStudent={(sid) => { setSelectedStudentId(sid); localStorage.setItem(SELECTED_STUDENT_KEY, sid); navigate("home"); }} />;
   }
   if (route.view === "imagepicker") {
     return <ImagePickerPage onBackHome={() => navigate("student-select")} />;
