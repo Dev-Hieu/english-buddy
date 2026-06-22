@@ -58,6 +58,8 @@ export function resetScores(opts: ResetOptions): Promise<{ ok: boolean; done: st
   return apiRequest(`/api/admin/reset-scores`, { method: "POST", body: opts });
 }
 
+export function getOnlineStudents(): Promise<{ count: number; students: any[] }> { return apiRequest("/api/admin/online"); }
+
 // Admin: tạo user mới
 export interface CreateUserPayload { email: string; password: string; name: string; role?: string; studentLimit?: number; isPremium?: boolean; }
 export function createUser(payload: CreateUserPayload): Promise<AdminUser> {
@@ -153,3 +155,15 @@ export function removeStudentFromClassAdmin(classId: string, studentId: string):
 export function getClassStudentsAdmin(classId: string): Promise<any[]> {
   return apiRequest(`/api/admin/classes/${classId}/students`);
 }
+
+export interface Notification { id: number; title: string; message: string; createdBy?: string; createdAt: number; expiresAt?: number; }
+export function listNotifications(): Promise<Notification[]> { return apiRequest("/api/admin/notifications"); }
+export function createNotification(data: { title: string; message: string; expiresAt?: number }): Promise<{ ok: boolean }> {
+  return apiRequest("/api/admin/notifications", { method: "POST", body: data });
+}
+export function deleteNotification(id: number): Promise<{ ok: boolean }> {
+  return apiRequest(`/api/admin/notifications/${id}`, { method: "DELETE" });
+}
+
+export interface ReportData { totalStudents: number; activeToday: number; totalWords: number; avgXp: number; topStudents: any[]; levelDist: any[]; recentQuizzes: any[]; }
+export function getReports(): Promise<ReportData> { return apiRequest("/api/admin/reports"); }

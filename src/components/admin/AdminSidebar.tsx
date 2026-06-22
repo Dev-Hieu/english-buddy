@@ -12,8 +12,8 @@ const MENU: MenuItem[] = [
   { key: "classes", label: "Lớp học", icon: <BookOpen className="h-5 w-5" /> },
   { key: "content", label: "Nội dung", icon: <BookOpen className="h-5 w-5" /> },
   { key: "images", label: "Ảnh từ vựng", icon: <Image className="h-5 w-5" /> },
-  { key: "reports", label: "Báo cáo", icon: <BarChart3 className="h-5 w-5" />, disabled: true },
-  { key: "notifications", label: "Thông báo", icon: <Bell className="h-5 w-5" />, disabled: true },
+  { key: "reports", label: "Báo cáo", icon: <BarChart3 className="h-5 w-5" /> },
+  { key: "notifications", label: "Thông báo", icon: <Bell className="h-5 w-5" /> },
   { key: "online", label: "Online", icon: <Wifi className="h-5 w-5" />, disabled: true },
   { key: "settings", label: "Cài đặt", icon: <Settings className="h-5 w-5" />, disabled: true },
 ];

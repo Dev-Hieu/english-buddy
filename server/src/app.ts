@@ -386,6 +386,26 @@ export function createApp() {
     res.json(rows);
   });
 
+  // Notifications
+  app.get("/api/admin/notifications", requireAdmin, (_req, res) => {
+    res.json(db.prepare("SELECT * FROM notifications ORDER BY createdAt DESC").all());
+  });
+  app.post("/api/admin/notifications", requireAdmin, (req, res) => {
+    const { title, message, expiresAt } = req.body || {};
+    if (!title || !message) return res.status(400).json({ error: "thiếu title hoặc message" });
+    db.prepare("INSERT INTO notifications (title, message, createdBy, createdAt, expiresAt) VALUES (?, ?, ?, ?, ?)")
+      .run(title, message, (req as any).user.id, Date.now(), expiresAt || null);
+    res.json({ ok: true });
+  });
+  app.delete("/api/admin/notifications/:id", requireAdmin, (req, res) => {
+    db.prepare("DELETE FROM notifications WHERE id = ?").run(req.params.id);
+    res.json({ ok: true });
+  });
+  // Public: active notifications for students
+  app.get("/api/notifications", (_req, res) => {
+    res.json(db.prepare("SELECT id, title, message, createdAt FROM notifications WHERE expiresAt IS NULL OR expiresAt > ? ORDER BY createdAt DESC LIMIT 5").all(Date.now()));
+  });
+
   // ── Teacher endpoints (xem lớp mình, quản lý bé trong lớp) ──
   const requireTeacher = (req: Request, res: Response, next: NextFunction) => {
     requireAuth(req, res, () => {
@@ -455,6 +475,32 @@ export function createApp() {
     if (!dailyGoal) return res.status(400).json({ error: "thiếu dailyGoal" });
     db.prepare("UPDATE students SET dailyGoal = ? WHERE id = ?").run(Number(dailyGoal), req.params.id);
     res.json({ ok: true });
+  });
+
+  // Online: students active in last 5 minutes (based on lastActiveDate + progress updates)
+  app.get("/api/admin/online", requireAdmin, (_req, res) => {
+    const fiveMinAgo = Date.now() - 5 * 60 * 1000;
+    const rows = db.prepare(`
+      SELECT DISTINCT s.id, s.name, s.avatar, s.level, s.grade,
+             MAX(p.lastReviewedAt) AS lastSeen
+      FROM students s
+      JOIN progress p ON p.studentId = s.id
+      WHERE p.lastReviewedAt > ?
+      ORDER BY lastSeen DESC
+    `).all(fiveMinAgo);
+    res.json({ count: rows.length, students: rows });
+  });
+
+  // Admin: reports
+  app.get("/api/admin/reports", requireAdmin, (_req, res) => {
+    const totalStudents = (db.prepare("SELECT COUNT(*) AS c FROM students").get() as any).c;
+    const activeToday = (db.prepare("SELECT COUNT(DISTINCT studentId) AS c FROM progress WHERE lastReviewedAt > ?").get(Date.now() - 86400000) as any).c;
+    const totalWords = (db.prepare("SELECT COUNT(*) AS c FROM vocabulary").get() as any).c;
+    const avgXp = (db.prepare("SELECT AVG(COALESCE(xp,0)) AS a FROM students").get() as any).a || 0;
+    const topStudents = db.prepare("SELECT s.name, s.xp, s.streak, s.level, s.avatar, (SELECT COUNT(*) FROM progress p WHERE p.studentId = s.id AND p.status = 'scored') AS vocabCount FROM students s ORDER BY s.xp DESC LIMIT 10").all();
+    const levelDist = db.prepare("SELECT level, COUNT(*) AS count FROM students GROUP BY level ORDER BY level").all();
+    const recentQuizzes = db.prepare("SELECT q.score, q.createdAt, s.name AS studentName FROM quiz_results q JOIN students s ON s.id = q.studentId ORDER BY q.createdAt DESC LIMIT 10").all();
+    res.json({ totalStudents, activeToday, totalWords, avgXp: Math.round(avgXp), topStudents, levelDist, recentQuizzes });
   });
 
   // ── Bảng xếp hạng: điểm TUẦN (mặc định) hoặc mọi thời gian, lọc theo cấp ──
