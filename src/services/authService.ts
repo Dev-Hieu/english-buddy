@@ -51,6 +51,13 @@ export function getUser(): AuthUser | null {
   }
 }
 
+// Cập nhật thông tin cá nhân
+export async function updateMe(data: { name?: string; phone?: string; birthday?: string; password?: string }): Promise<AuthUser> {
+  const u = await apiRequest<AuthUser>("/api/me", { method: "PUT", body: data });
+  localStorage.setItem(USER_KEY, JSON.stringify(u));
+  return u;
+}
+
 // Làm tươi thông tin tài khoản (vd hạn mức admin vừa đổi).
 export async function refreshMe(): Promise<AuthUser | null> {
   try {

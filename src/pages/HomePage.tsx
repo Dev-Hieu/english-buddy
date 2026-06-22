@@ -1,4 +1,4 @@
-import { BarChart3, BookMarked, BookOpen, ChevronRight, Flame, GraduationCap, LogOut, MessageCircle, Play, RotateCcw, Star, Trophy, UserRound } from "lucide-react";
+import { BarChart3, BookMarked, BookOpen, ChevronRight, Flame, GraduationCap, LogOut, MessageCircle, Play, RotateCcw, Settings, Star, Trophy, UserRound } from "lucide-react";
 import { useEffect, useState, type ComponentType } from "react";
 import { getLeaderboard } from "@/services/studentService";
 import { SEED_TOPICS } from "@/data/seedTopics";
@@ -29,6 +29,7 @@ interface HomePageProps {
   onStartSkillTest: (mode: "new" | "review") => void;
   onChangeStudent: () => void;
   onLogout: () => void;
+  onOpenProfile?: () => void;
   onNavigate: Nav;
 }
 
@@ -53,7 +54,7 @@ function NavTile({ icon: Icon, iconClass, title, onClick }: {
   );
 }
 
-export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, learnedToday, reviewDue, pendingCount, dueTestCount, onStartSkillTest, onChangeStudent, onLogout, onNavigate }: HomePageProps) {
+export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, learnedToday, reviewDue, pendingCount, dueTestCount, onStartSkillTest, onChangeStudent, onLogout, onOpenProfile, onNavigate }: HomePageProps) {
   const learned = new Set(studiedWordIds);
   const goal = student.dailyGoal || 10;
   const goalReached = learnedToday >= goal;
@@ -95,6 +96,11 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
         <div className="flex items-center gap-2">
           <VoicePicker />
           <ThemePicker />
+          {onOpenProfile && (
+            <Button type="button" size="icon" variant="outline" aria-label="Thông tin cá nhân" onClick={onOpenProfile}>
+              <Settings className="h-5 w-5" />
+            </Button>
+          )}
           <Button type="button" size="icon" variant="outline" aria-label="Đổi bé" onClick={onChangeStudent}>
             <UserRound className="h-5 w-5" />
           </Button>

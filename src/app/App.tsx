@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useState } from "react";
 import type { Level, Student, StudentVocabularyProgress } from "@/types";
-import { getUser, isLoggedIn, logout, refreshMe, type AuthUser } from "@/services/authService";
+import { getUser, isLoggedIn, logout, refreshMe, updateMe, type AuthUser } from "@/services/authService";
+import { ProfileModal } from "@/components/ProfileModal";
 import { createStudent, deleteStudent, listStudents, updateStudent, type NewStudent } from "@/services/studentService";
 import { getStudentProgress, recordAnswer } from "@/services/progressService";
 import { getStudent } from "@/services/studentService";
@@ -54,6 +55,7 @@ export function App() {
   const [progress, setProgress] = useState<StudentVocabularyProgress[]>([]);
   const [streak, setStreak] = useState(0);
   const [xp, setXp] = useState(0);
+  const [showProfile, setShowProfile] = useState(false);
 
   const student = students.find((s) => s.id === selectedStudentId) ?? null;
 
@@ -218,18 +220,22 @@ export function App() {
   // ── Chưa chọn bé ──
   if (!student || route.view === "student-select") {
     return (
-      <StudentSelectPage
-        students={students}
-        user={user}
-        selectedStudentId={selectedStudentId}
-        onSelectStudent={selectStudent}
-        onAddStudent={addStudent}
-        onUpdateStudent={editStudent}
-        onDeleteStudent={removeStudent}
-        onLogout={doLogout}
-        onOpenAdmin={() => setRoute({ view: "admin", topicId: "topic_food", level: "all" })}
-        onOpenPicker={() => setRoute({ view: "imagepicker", topicId: "topic_food", level: "all" })}
-      />
+      <>
+        <StudentSelectPage
+          students={students}
+          user={user}
+          selectedStudentId={selectedStudentId}
+          onSelectStudent={selectStudent}
+          onAddStudent={addStudent}
+          onUpdateStudent={editStudent}
+          onDeleteStudent={removeStudent}
+          onLogout={doLogout}
+          onOpenProfile={() => setShowProfile(true)}
+          onOpenAdmin={() => setRoute({ view: "admin", topicId: "topic_food", level: "all" })}
+          onOpenPicker={() => setRoute({ view: "imagepicker", topicId: "topic_food", level: "all" })}
+        />
+        {showProfile && user && <ProfileModal user={user as any} onClose={() => setShowProfile(false)} onUpdated={(u) => setUser(u)} />}
+      </>
     );
   }
 
@@ -309,6 +315,7 @@ export function App() {
           onStartSkillTest={openSkillTest}
           onChangeStudent={(user.role === "teacher" || user.role === "admin") ? exitStudentMode : () => navigate("student-select")}
           onLogout={(user.role === "teacher" || user.role === "admin") ? exitStudentMode : doLogout}
+          onOpenProfile={() => setShowProfile(true)}
           onNavigate={(view, topicId, level) => navigate(view as View, topicId, level as Level | "all" | undefined)}
         />
       );
@@ -319,6 +326,13 @@ export function App() {
     <>
       <div className={showTab ? "pb-24" : ""}>{content}</div>
       {showTab ? <TabBar active={ACTIVE_TAB[route.view]} onSelect={onTab} /> : null}
+      {showProfile && user && (
+        <ProfileModal
+          user={user as any}
+          onClose={() => setShowProfile(false)}
+          onUpdated={(u) => setUser(u)}
+        />
+      )}
     </>
   );
 }

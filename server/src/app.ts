@@ -176,6 +176,18 @@ export function createApp() {
 
   app.get("/api/me", requireAuth, (req, res) => res.json((req as any).user));
 
+  // Cập nhật thông tin cá nhân
+  app.put("/api/me", requireAuth, (req, res) => {
+    const u = (req as any).user;
+    const { name, phone, birthday, password } = req.body || {};
+    if (name !== undefined) db.prepare("UPDATE users SET name = ? WHERE id = ?").run(String(name).trim(), u.id);
+    if (phone !== undefined) db.prepare("UPDATE users SET phone = ? WHERE id = ?").run(String(phone).trim() || null, u.id);
+    if (birthday !== undefined) db.prepare("UPDATE users SET birthday = ? WHERE id = ?").run(String(birthday).trim() || null, u.id);
+    if (password && String(password).length >= 4) db.prepare("UPDATE users SET passwordHash = ? WHERE id = ?").run(hashPassword(String(password)), u.id);
+    const updated = db.prepare("SELECT id, email, username, name, role, status, phone, birthday, isPremium, canEditImages, studentLimit FROM users WHERE id = ?").get(u.id);
+    res.json(updated);
+  });
+
   // Đổi tên đăng nhập (chỉ premium hoặc admin)
   app.put("/api/me/username", requireAuth, (req, res) => {
     const u = (req as any).user;
