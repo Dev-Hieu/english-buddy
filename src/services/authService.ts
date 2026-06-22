@@ -20,9 +20,9 @@ function store(token: string, user: AuthUser): AuthUser {
   return user;
 }
 
-export async function register(name: string, email: string, password: string, inviteCode?: string): Promise<AuthUser> {
+export async function register(name: string, email: string, password: string, inviteCode?: string, role?: string): Promise<AuthUser> {
   const r = await apiRequest<{ token: string; user: AuthUser }>("/api/register", {
-    method: "POST", body: { name, email, password, ...(inviteCode ? { inviteCode } : {}) }, auth: false,
+    method: "POST", body: { name, email, password, ...(inviteCode ? { inviteCode } : {}), ...(role ? { role } : {}) }, auth: false,
   });
   return store(r.token, r.user);
 }

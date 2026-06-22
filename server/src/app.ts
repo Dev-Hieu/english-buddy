@@ -144,8 +144,8 @@ export function createApp() {
 
   // ── Auth (đa người dùng: email + mật khẩu) ──
   app.post("/api/register", (req, res) => {
-    const { email, password, name, inviteCode } = req.body || {};
-    const result = registerUser(email, password, name, inviteCode);
+    const { email, password, name, inviteCode, role } = req.body || {};
+    const result = registerUser(email, password, name, inviteCode, role);
     if ("error" in result) return res.status(400).json(result);
     res.json(result);
   });

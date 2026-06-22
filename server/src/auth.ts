@@ -74,11 +74,14 @@ function verifyToken(token: string): string | null {
 }
 
 // ── Tài khoản ──
-export function registerUser(email: string, password: string, name: string, inviteCode?: string): { token: string; user: User } | { error: string } {
+export function registerUser(email: string, password: string, name: string, inviteCode?: string, role?: string): { token: string; user: User } | { error: string } {
   email = String(email || "").trim().toLowerCase();
   if (!email.includes("@")) return { error: "email không hợp lệ" };
   if (!password || password.length < 4) return { error: "mật khẩu tối thiểu 4 ký tự" };
   if (db.prepare("SELECT id FROM users WHERE email = ?").get(email)) return { error: "email đã được dùng" };
+
+  const allowedRoles = ["parent", "teacher", "student"];
+  const r = allowedRoles.includes(role || "") ? role! : "parent";
 
   let status = "pending";
   if (inviteCode) {
@@ -89,9 +92,18 @@ export function registerUser(email: string, password: string, name: string, invi
   }
 
   const id = randomUUID();
-  const username = generateUsername("parent");
-  db.prepare("INSERT INTO users (id, email, username, passwordHash, name, role, createdAt, studentLimit, status) VALUES (?, ?, ?, ?, ?, 'parent', ?, 1, ?)")
-    .run(id, email, username, hashPassword(password), (name || "").trim() || email.split("@")[0], Date.now(), status);
+  const displayName = (name || "").trim() || email.split("@")[0];
+  const username = generateUsername(r);
+  db.prepare("INSERT INTO users (id, email, username, passwordHash, name, role, createdAt, studentLimit, status) VALUES (?, ?, ?, ?, ?, ?, ?, 1, ?)")
+    .run(id, email, username, hashPassword(password), displayName, r, Date.now(), status);
+
+  // Student tự đăng ký → tạo student record luôn
+  if (r === "student") {
+    const sid = "student_" + randomUUID().slice(0, 8);
+    db.prepare("INSERT INTO students (id, parentId, userId, name, grade, level, avatar, dailyGoal, xp, streak, createdAt) VALUES (?, ?, ?, ?, 1, 'a1', 'boy_avatar_01', 10, 0, 0, ?)")
+      .run(sid, id, id, displayName, Date.now());
+  }
+
   return { token: sign(id), user: publicUser(db.prepare("SELECT * FROM users WHERE id = ?").get(id)) };
 }
 

@@ -15,6 +15,7 @@ export function AuthPage({ onAuthed }: AuthPageProps) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [inviteCode, setInviteCode] = useState("");
+  const [role, setRole] = useState("parent");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
@@ -23,7 +24,7 @@ export function AuthPage({ onAuthed }: AuthPageProps) {
     setLoading(true);
     setError("");
     try {
-      const user = mode === "login" ? await login(email, password) : await register(name, email, password, inviteCode || undefined);
+      const user = mode === "login" ? await login(email, password) : await register(name, email, password, inviteCode || undefined, role);
       onAuthed(user);
     } catch (err) {
       setError((err as Error).message?.includes("email") ? "Email đã dùng hoặc sai thông tin." : "Sai email/mật khẩu, hoặc server chưa chạy.");
@@ -56,10 +57,21 @@ export function AuthPage({ onAuthed }: AuthPageProps) {
 
       <form className="space-y-3 rounded-3xl border border-border/70 bg-card p-6 shadow-card" onSubmit={submit}>
         {mode === "register" ? (
-          <div className={field}>
-            <UserRound className="h-5 w-5 text-muted-foreground" />
-            <input className={input} placeholder="Tên phụ huynh" value={name} onChange={(e) => setName(e.target.value)} />
-          </div>
+          <>
+            <select
+              className="w-full h-12 rounded-2xl border-2 border-border bg-white px-3 font-bold outline-none focus:border-primary"
+              value={role}
+              onChange={(e) => setRole(e.target.value)}
+            >
+              <option value="parent">Phụ huynh</option>
+              <option value="teacher">Giáo viên</option>
+              <option value="student">Học sinh</option>
+            </select>
+            <div className={field}>
+              <UserRound className="h-5 w-5 text-muted-foreground" />
+              <input className={input} placeholder={role === "parent" ? "Tên phụ huynh" : role === "teacher" ? "Tên giáo viên" : "Tên học sinh"} value={name} onChange={(e) => setName(e.target.value)} />
+            </div>
+          </>
         ) : null}
         <div className={field}>
           <Mail className="h-5 w-5 text-muted-foreground" />
