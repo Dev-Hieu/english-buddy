@@ -6,7 +6,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import type { NextFunction, Request, Response } from "express";
 import { db, initSchema } from "./db.js";
-import { generateStudentUsername, generateUsername, hashPassword, loginUser, registerUser, requireAdmin, requireAuth } from "./auth.js";
+import { generateStudentUsername, generateUsername, hashPassword, loginUser, registerUser, requireAdmin, requireAuth, verifyToken } from "./auth.js";
 import { nextReview } from "../../src/utils/spacedRepetition";
 import { buildQuiz } from "../../src/utils/quizGenerator";
 import type { VocabularyWord } from "../../src/types";
@@ -131,7 +131,7 @@ export const IMAGE_URLS: Record<string, string> = ${JSON.stringify(map, null, 2)
 export function createApp() {
   initSchema();
   const app = express();
-  app.use(cors());
+  app.use(cors({ origin: process.env.CORS_ORIGIN || "https://en.vev.vn", credentials: true }));
   app.use(express.json());
   // Không cache phản hồi API -> client luôn nhận dữ liệu mới sau khi sửa hồ sơ/tiến độ.
   app.use("/api", (_req, res, next) => { res.set("Cache-Control", "no-store"); next(); });
@@ -142,6 +142,16 @@ export function createApp() {
   // Trang chọn ảnh cho phụ huynh.
   app.get("/picker", (_req, res) => res.sendFile(path.join(PUBLIC_DIR, "picker.html")));
 
+  // ── Rate limit login (5 lần / phút / IP) ──
+  const loginAttempts = new Map<string, { count: number; resetAt: number }>();
+  function checkLoginRate(ip: string): boolean {
+    const now = Date.now();
+    const entry = loginAttempts.get(ip);
+    if (!entry || now > entry.resetAt) { loginAttempts.set(ip, { count: 1, resetAt: now + 60000 }); return true; }
+    entry.count++;
+    return entry.count <= 5;
+  }
+
   // ── Auth (đa người dùng: email + mật khẩu) ──
   app.post("/api/register", (req, res) => {
     const { email, password, name, inviteCode, role } = req.body || {};
@@ -151,6 +161,8 @@ export function createApp() {
   });
 
   app.post("/api/login", (req, res) => {
+    const ip = req.ip || req.socket.remoteAddress || "unknown";
+    if (!checkLoginRate(ip)) return res.status(429).json({ error: "Quá nhiều lần thử. Vui lòng đợi 1 phút." });
     const { email, password } = req.body || {};
     const result = loginUser(String(email || ""), String(password || ""));
     if (!result) return res.status(401).json({ error: "sai email hoặc mật khẩu" });
@@ -553,10 +565,16 @@ export function createApp() {
     res.json({ ok: true });
   });
 
-  // Teacher: đặt mục tiêu cho bé
+  // Teacher: đặt mục tiêu cho bé (chỉ bé trong lớp mình)
   app.put("/api/teacher/students/:id/goal", requireTeacher, (req, res) => {
     const { dailyGoal } = req.body || {};
+    const teacher = (req as any).user;
     if (!dailyGoal) return res.status(400).json({ error: "thiếu dailyGoal" });
+    // Admin bypass, teacher phải check class ownership
+    if (teacher.role !== "admin") {
+      const inClass = db.prepare("SELECT 1 FROM class_students cs JOIN classes c ON c.id = cs.classId WHERE cs.studentId = ? AND c.teacherId = ?").get(req.params.id, teacher.id);
+      if (!inClass) return res.status(403).json({ error: "Không có quyền" });
+    }
     db.prepare("UPDATE students SET dailyGoal = ? WHERE id = ?").run(Number(dailyGoal), req.params.id);
     res.json({ ok: true });
   });
@@ -963,13 +981,15 @@ Return ONLY valid JSON, no markdown, no code fences.` },
     const to = from === "vi" ? "en" : (String(req.query.to || "vi") === "en" ? "en" : "vi");
     if (!text) return res.status(400).json({ error: "thiếu text" });
 
-    // Xác định premium: parse token nếu có (không bắt buộc đăng nhập)
+    // Xác định premium: verify token HMAC trước khi tin userId
     let isPremium = false;
     const auth = req.headers.authorization?.replace("Bearer ", "") || "";
     if (auth) {
-      const uid = auth.split(".")[0];
-      const u = db.prepare("SELECT isPremium FROM users WHERE id = ?").get(uid) as any;
-      if (u?.isPremium) isPremium = true;
+      const uid = verifyToken(auth);
+      if (uid) {
+        const u = db.prepare("SELECT isPremium FROM users WHERE id = ?").get(uid) as any;
+        if (u?.isPremium) isPremium = true;
+      }
     }
 
     const engine = isPremium ? "ds" : "gt";

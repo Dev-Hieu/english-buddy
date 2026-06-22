@@ -134,9 +134,11 @@ export function App() {
 
   const doLogout = () => {
     logout();
+    localStorage.removeItem(SELECTED_STUDENT_KEY);
     setUser(null);
     setStudents([]);
     setSelectedStudentId(null);
+    setRoute({ view: "student-select", topicId: "topic_food", level: "all" });
   };
 
   const onTab = (key: TabKey) => {
@@ -172,7 +174,7 @@ export function App() {
   if (user.role === "admin" && (route.view === "student-select" || route.view === "admin")) {
     return <AdminPage onBack={doLogout} onOpenPicker={() => navigate("imagepicker")} onLoginAsStudent={(sid) => { setSelectedStudentId(sid); localStorage.setItem(SELECTED_STUDENT_KEY, sid); navigate("home"); }} adminName={user.name} />;
   }
-  if (route.view === "admin") {
+  if (user.role === "admin" && route.view === "admin") {
     return <AdminPage onBack={() => navigate("student-select")} onOpenPicker={() => navigate("imagepicker")} onLoginAsStudent={(sid) => { setSelectedStudentId(sid); localStorage.setItem(SELECTED_STUDENT_KEY, sid); navigate("home"); }} adminName={user.name} />;
   }
 

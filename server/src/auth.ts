@@ -60,17 +60,31 @@ export function verifyPassword(pw: string, stored: string): boolean {
   return keyBuf.length === calc.length && timingSafeEqual(keyBuf, calc);
 }
 
-// ── Token stateless (HMAC) — sống qua restart ──
+// ── Token stateless (HMAC) — sống qua restart, hết hạn 7 ngày ──
+const TOKEN_MAX_AGE = 7 * 24 * 60 * 60 * 1000; // 7 ngày
+
 function sign(userId: string): string {
-  return `${userId}.${createHmac("sha256", SECRET).update(userId).digest("hex")}`;
+  const payload = `${userId}:${Date.now()}`;
+  return `${payload}.${createHmac("sha256", SECRET).update(payload).digest("hex")}`;
 }
-function verifyToken(token: string): string | null {
+export function verifyToken(token: string): string | null {
   const i = token.lastIndexOf(".");
   if (i < 0) return null;
-  const userId = token.slice(0, i);
+  const payload = token.slice(0, i);
   const sig = Buffer.from(token.slice(i + 1));
-  const expected = Buffer.from(createHmac("sha256", SECRET).update(userId).digest("hex"));
-  return sig.length === expected.length && timingSafeEqual(sig, expected) ? userId : null;
+  const expected = Buffer.from(createHmac("sha256", SECRET).update(payload).digest("hex"));
+  if (sig.length !== expected.length || !timingSafeEqual(sig, expected)) return null;
+  // Token mới: "userId:timestamp.hmac" — check expiry
+  const colonIdx = payload.lastIndexOf(":");
+  if (colonIdx >= 0) {
+    const ts = Number(payload.slice(colonIdx + 1));
+    if (!isNaN(ts) && ts > 1700000000000) { // timestamp hợp lệ (sau 2023)
+      if (Date.now() - ts > TOKEN_MAX_AGE) return null;
+      return payload.slice(0, colonIdx);
+    }
+  }
+  // Token cũ: "userId.hmac" (không có timestamp) — chấp nhận tạm
+  return payload;
 }
 
 // ── Tài khoản ──
