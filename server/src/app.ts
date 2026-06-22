@@ -913,6 +913,13 @@ export function createApp() {
     res.json(rows);
   });
 
+  // Xoá từ khỏi My Words (unsave)
+  app.delete("/api/students/:id/lookups/:query", requireAuth, (req, res) => {
+    if (!canAccessStudent(req, res, req.params.id)) return;
+    db.prepare("UPDATE lookup_history SET saved = 0 WHERE studentId = ? AND query = ?").run(req.params.id, req.params.query);
+    res.json({ ok: true });
+  });
+
   app.post("/api/lookup", requireAuth, (req, res) => {
     const { studentId, query, type, saved, createdAt, meaning, phonetic, imageUrl } = req.body || {};
     if (!canAccessStudent(req, res, studentId)) return;

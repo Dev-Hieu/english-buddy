@@ -38,3 +38,6 @@ export interface SavedWord {
 export function getMyWords(studentId: string): Promise<SavedWord[]> {
   return apiRequest(`/api/students/${studentId}/lookups`);
 }
+export function removeMyWord(studentId: string, query: string): Promise<{ ok: boolean }> {
+  return apiRequest(`/api/students/${studentId}/lookups/${encodeURIComponent(query)}`, { method: "DELETE" });
+}

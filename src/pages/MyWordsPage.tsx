@@ -1,7 +1,7 @@
-import { BookMarked, GraduationCap, Loader2, Volume2 } from "lucide-react";
+import { BookMarked, GraduationCap, Loader2, Trash2, Volume2 } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
 import type { Level, Student, VocabularyWord } from "@/types";
-import { getMyWords, type SavedWord } from "@/services/progressService";
+import { getMyWords, removeMyWord, type SavedWord } from "@/services/progressService";
 import { speakText } from "@/services/speechService";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -37,6 +37,12 @@ export function MyWordsPage({ student, onBackHome }: MyWordsPageProps) {
     getMyWords(student.id).then((w) => alive && setWords(w)).catch(() => alive && setWords([]));
     return () => { alive = false; };
   }, [student.id]);
+
+  const handleRemove = async (query: string) => {
+    if (!confirm(`Xoá "${query}" khỏi My Words?`)) return;
+    await removeMyWord(student.id, query).catch(() => {});
+    setWords((prev) => prev?.filter((w) => w.query !== query) ?? null);
+  };
 
   const level = (student.level as Level) ?? "a1";
   // Chỉ từ đơn (không phải câu) mới đưa vào bộ học flashcard.
@@ -97,14 +103,24 @@ export function MyWordsPage({ student, onBackHome }: MyWordsPageProps) {
                   {w.meaning ? <span className="block truncate text-sm font-semibold text-primary">{w.meaning}</span> : null}
                 </span>
 
-                <button
-                  type="button"
-                  aria-label={`Nghe ${w.query}`}
-                  onClick={() => speakText(w.query)}
-                  className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border-2 border-border text-muted-foreground transition-colors active:bg-muted"
-                >
-                  <Volume2 className="h-5 w-5" />
-                </button>
+                <div className="flex shrink-0 gap-1">
+                  <button
+                    type="button"
+                    aria-label={`Nghe ${w.query}`}
+                    onClick={() => speakText(w.query)}
+                    className="flex h-10 w-10 items-center justify-center rounded-xl border-2 border-border text-muted-foreground transition-colors active:bg-muted"
+                  >
+                    <Volume2 className="h-5 w-5" />
+                  </button>
+                  <button
+                    type="button"
+                    aria-label={`Xoá ${w.query}`}
+                    onClick={() => handleRemove(w.query)}
+                    className="flex h-10 w-10 items-center justify-center rounded-xl border-2 border-border text-muted-foreground transition-colors hover:border-red-300 hover:text-red-500 active:bg-red-50"
+                  >
+                    <Trash2 className="h-4 w-4" />
+                  </button>
+                </div>
               </li>
             ))}
           </ul>
