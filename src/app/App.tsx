@@ -152,7 +152,7 @@ export function App() {
   }
 
   if (route.view === "admin") {
-    return <AdminPage onBack={() => navigate("student-select")} onOpenPicker={() => navigate("imagepicker")} />;
+    return <AdminPage onBack={() => navigate("student-select")} onOpenPicker={() => navigate("imagepicker")} onLoginAsStudent={(sid) => { setSelectedStudentId(sid); localStorage.setItem(SELECTED_STUDENT_KEY, sid); navigate("home"); }} />;
   }
   if (route.view === "imagepicker") {
     return <ImagePickerPage onBackHome={() => navigate("student-select")} />;
