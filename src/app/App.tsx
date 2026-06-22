@@ -141,6 +141,13 @@ export function App() {
     setRoute({ view: "student-select", topicId: "topic_food", level: "all" });
   };
 
+  // Thoát chế độ Học thử (teacher/admin quay lại trang quản lý)
+  const exitStudentMode = () => {
+    setSelectedStudentId(null);
+    localStorage.removeItem(SELECTED_STUDENT_KEY);
+    setRoute({ view: "student-select", topicId: "topic_food", level: "all" });
+  };
+
   const onTab = (key: TabKey) => {
     if (key === "home") navigate("home");
     else if (key === "games") navigate("games", route.topicId || "topic_food");
@@ -170,16 +177,13 @@ export function App() {
     );
   }
 
-  // ── Admin → thẳng vào dashboard ──
-  if (user.role === "admin" && (route.view === "student-select" || route.view === "admin")) {
+  // ── Admin → dashboard (trừ khi đang Học thử với student đã chọn) ──
+  if (user.role === "admin" && (!selectedStudentId || route.view === "student-select" || route.view === "admin")) {
     return <AdminPage onBack={doLogout} onOpenPicker={() => navigate("imagepicker")} onLoginAsStudent={(sid) => { setSelectedStudentId(sid); localStorage.setItem(SELECTED_STUDENT_KEY, sid); navigate("home"); }} adminName={user.name} />;
   }
-  if (user.role === "admin" && route.view === "admin") {
-    return <AdminPage onBack={() => navigate("student-select")} onOpenPicker={() => navigate("imagepicker")} onLoginAsStudent={(sid) => { setSelectedStudentId(sid); localStorage.setItem(SELECTED_STUDENT_KEY, sid); navigate("home"); }} adminName={user.name} />;
-  }
 
-  // ── Teacher → trang giáo viên ──
-  if (user.role === "teacher") {
+  // ── Teacher → trang giáo viên (trừ khi đang "Học thử" với student đã chọn) ──
+  if (user.role === "teacher" && (!selectedStudentId || route.view === "student-select")) {
     return <TeacherPage teacherName={user.name} onLogout={doLogout} onLoginAsStudent={(sid) => { setSelectedStudentId(sid); localStorage.setItem(SELECTED_STUDENT_KEY, sid); navigate("home"); }} />;
   }
 
@@ -292,8 +296,8 @@ export function App() {
           pendingCount={pendingCount}
           dueTestCount={dueTestCount}
           onStartSkillTest={openSkillTest}
-          onChangeStudent={() => navigate("student-select")}
-          onLogout={doLogout}
+          onChangeStudent={(user.role === "teacher" || user.role === "admin") ? exitStudentMode : () => navigate("student-select")}
+          onLogout={(user.role === "teacher" || user.role === "admin") ? exitStudentMode : doLogout}
           onNavigate={(view, topicId, level) => navigate(view as View, topicId, level as Level | "all" | undefined)}
         />
       );
