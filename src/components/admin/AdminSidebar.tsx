@@ -14,8 +14,8 @@ const MENU: MenuItem[] = [
   { key: "images", label: "Ảnh từ vựng", icon: <Image className="h-5 w-5" /> },
   { key: "reports", label: "Báo cáo", icon: <BarChart3 className="h-5 w-5" /> },
   { key: "notifications", label: "Thông báo", icon: <Bell className="h-5 w-5" /> },
-  { key: "online", label: "Online", icon: <Wifi className="h-5 w-5" />, disabled: true },
-  { key: "settings", label: "Cài đặt", icon: <Settings className="h-5 w-5" />, disabled: true },
+  { key: "online", label: "Online", icon: <Wifi className="h-5 w-5" /> },
+  { key: "settings", label: "Cài đặt", icon: <Settings className="h-5 w-5" /> },
 ];
 
 interface Props {
