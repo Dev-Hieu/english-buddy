@@ -67,7 +67,7 @@ export function StudentsTab({ onRefresh, onLoginAsStudent }: StudentsTabProps) {
 
   const startEdit = (s: AdminStudent) => {
     setEditId(s.id);
-    setEditForm({ name: s.name, grade: String(s.grade), level: s.level || "a1", avatar: s.avatar || "boy", dailyGoal: String(s.dailyGoal ?? 10), username: s.parentUsername || "", password: "" });
+    setEditForm({ name: s.name, grade: String(s.grade), level: s.level || "a1", avatar: s.avatar || "boy", dailyGoal: String(s.dailyGoal ?? 10), username: s.studentUsername || "", password: "" });
     setShowAdd(false);
   };
 
@@ -186,7 +186,7 @@ export function StudentsTab({ onRefresh, onLoginAsStudent }: StudentsTabProps) {
                     </div>
                     <p className="text-xs font-bold text-muted-foreground">⭐{s.xp || 0} · 🔥{s.streak || 0} ngày</p>
                     <p className="text-xs font-semibold text-muted-foreground truncate">
-                      {s.parentEmail === "classroom@system" ? "📚 Lớp học" : `👤 ${s.parentName || ""} (${s.parentEmail || ""})`}
+                      {s.studentUsername ? `🎓 ${s.studentUsername}` : ""}{s.parentEmail && s.parentEmail !== "classroom@system" ? ` · 👤 ${s.parentName || ""} (${s.parentUsername || s.parentEmail})` : !s.studentUsername ? "📚 Lớp học" : ""}
                     </p>
                   </div>
                   <div className="flex shrink-0 items-center gap-1">
@@ -236,9 +236,9 @@ export function StudentsTab({ onRefresh, onLoginAsStudent }: StudentsTabProps) {
                     </div>
                     {/* Tài khoản đăng nhập */}
                     {(() => {
-                      const hasStudentAccount = s.parentRole === "student";
-                      const hasParentAccount = s.parentEmail && s.parentEmail !== "classroom@system" && s.parentRole === "parent";
-                      const noAccount = s.parentEmail === "classroom@system" || !s.parentId;
+                      const hasStudentAccount = !!s.userId && !!s.studentUsername;
+                      const hasParentAccount = !hasStudentAccount && s.parentEmail && s.parentEmail !== "classroom@system";
+                      const noAccount = !hasStudentAccount && (!s.parentEmail || s.parentEmail === "classroom@system");
 
                       return (
                         <div className="space-y-2 rounded-xl bg-muted/50 border border-border p-3">
