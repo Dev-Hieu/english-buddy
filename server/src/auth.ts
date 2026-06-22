@@ -31,6 +31,7 @@ const USERNAME_PREFIX: Record<string, { prefix: string; pad: number }> = {
   parent: { prefix: "PH", pad: 6 },
   teacher: { prefix: "GV", pad: 3 },
   admin: { prefix: "AD", pad: 2 },
+  student: { prefix: "HS", pad: 6 },
 };
 
 export function generateUsername(role: string = "parent"): string {

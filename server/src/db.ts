@@ -112,9 +112,18 @@ export function initSchema(): void {
   try { db.exec("ALTER TABLE users ADD COLUMN phone TEXT"); } catch { /* đã có */ }
   try { db.exec("ALTER TABLE users ADD COLUMN birthday TEXT"); } catch { /* đã có */ }
   try { db.exec("ALTER TABLE students ADD COLUMN birthday TEXT"); } catch { /* đã có */ }
+  // Fix: student-role users có username PH (backfill cũ) → đổi sang HS
+  {
+    const wrongRows = db.prepare("SELECT id FROM users WHERE role = 'student' AND UPPER(username) LIKE 'PH%'").all() as { id: string }[];
+    for (const r of wrongRows) {
+      const max = ((db.prepare("SELECT MAX(CAST(SUBSTR(username, 3) AS INTEGER)) AS n FROM users WHERE UPPER(username) LIKE 'HS%'").get() as any)?.n || 0) + 1;
+      const uname = `HS${String(max).padStart(6, "0")}`;
+      db.prepare("UPDATE users SET username = ? WHERE id = ?").run(uname, r.id);
+    }
+  }
   // Backfill username theo role: AD01, GV001, PH000001, HS000001
   try {
-    const prefixes: Record<string, { prefix: string; pad: number }> = { admin: { prefix: "AD", pad: 2 }, teacher: { prefix: "GV", pad: 3 }, parent: { prefix: "PH", pad: 6 } };
+    const prefixes: Record<string, { prefix: string; pad: number }> = { admin: { prefix: "AD", pad: 2 }, teacher: { prefix: "GV", pad: 3 }, parent: { prefix: "PH", pad: 6 }, student: { prefix: "HS", pad: 6 } };
     const rows = db.prepare("SELECT id, role FROM users WHERE (username IS NULL OR username LIKE 'hs%') AND role != 'system'").all() as { id: string; role: string }[];
     for (const r of rows) {
       const cfg = prefixes[r.role] || prefixes.parent;
