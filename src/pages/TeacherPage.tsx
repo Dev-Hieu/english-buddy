@@ -171,8 +171,9 @@ export function TeacherPage({ teacherName, onLogout, onLoginAsStudent }: Teacher
                             size="sm"
                             variant="outline"
                             onClick={() => onLoginAsStudent(s.id)}
+                            className="text-primary border-primary/30"
                           >
-                            Xem
+                            Học thử
                           </Button>
                         )}
                         <button
