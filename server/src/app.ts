@@ -696,11 +696,11 @@ export function createApp() {
 
   app.put("/api/students/:id", requireAuth, (req, res) => {
     if (!canAccessStudent(req, res, req.params.id)) return;
-    const { name, grade, avatar, dailyGoal, level } = req.body || {};
+    const { name, grade, avatar, dailyGoal, level, birthday } = req.body || {};
     const LEVELS = ["kids", "a1", "a2", "b1", "b2", "c1"];
     const lv = LEVELS.includes(level) ? level : null;
-    db.prepare("UPDATE students SET name=COALESCE(?,name), grade=COALESCE(?,grade), avatar=COALESCE(?,avatar), dailyGoal=COALESCE(?,dailyGoal), level=COALESCE(?,level) WHERE id=?")
-      .run(name ?? null, grade ?? null, avatar ?? null, dailyGoal ?? null, lv, req.params.id);
+    db.prepare("UPDATE students SET name=COALESCE(?,name), grade=COALESCE(?,grade), avatar=COALESCE(?,avatar), dailyGoal=COALESCE(?,dailyGoal), level=COALESCE(?,level), birthday=COALESCE(?,birthday) WHERE id=?")
+      .run(name ?? null, grade ?? null, avatar ?? null, dailyGoal ?? null, lv, birthday !== undefined ? (String(birthday).trim() || null) : null, req.params.id);
     res.json(db.prepare("SELECT * FROM students WHERE id=?").get(req.params.id));
   });
 

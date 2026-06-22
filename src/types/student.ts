@@ -18,6 +18,7 @@ export interface Student {
   level: Level;
   avatar: string; // asset key, vd "girl_avatar_01"
   dailyGoal: number; // số từ/ngày
+  birthday?: string;
   xp: number;
   streak: number;
   createdAt: number;

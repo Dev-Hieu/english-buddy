@@ -15,6 +15,7 @@ export interface NewStudent {
   avatar: string;
   dailyGoal: number;
   level: string;
+  birthday?: string;
 }
 export function createStudent(data: NewStudent): Promise<Student> {
   return apiRequest(`/api/students`, { method: "POST", body: data });

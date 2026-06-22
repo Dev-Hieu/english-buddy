@@ -110,13 +110,17 @@ function StudentForm({ initial, onClose, onSubmit }: { initial?: Student; onClos
   const [grade, setGrade] = useState(initial?.grade ?? 5);
   const [avatar, setAvatar] = useState(initial?.avatar ?? "girl_avatar_01");
   const [level, setLevel] = useState<string>(initial?.level ?? "a1");
+  const [dailyGoal, setDailyGoal] = useState(initial?.dailyGoal ?? 10);
+  const [birthday, setBirthday] = useState(initial?.birthday ?? "");
   const [busy, setBusy] = useState(false);
+
+  const sel = "h-11 flex-1 rounded-2xl border-2 border-border px-2 font-bold outline-none focus:border-primary";
 
   const submit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!name.trim()) return;
     setBusy(true);
-    try { await onSubmit({ name: name.trim(), grade, avatar, dailyGoal: initial?.dailyGoal ?? 10, level }); }
+    try { await onSubmit({ name: name.trim(), grade, avatar, dailyGoal, level, birthday: birthday || undefined }); }
     finally { setBusy(false); }
   };
 
@@ -128,17 +132,25 @@ function StudentForm({ initial, onClose, onSubmit }: { initial?: Student; onClos
       </div>
       <input className="h-11 rounded-2xl border-2 border-border px-3 font-bold outline-none focus:border-primary" placeholder="Tên bé" value={name} onChange={(e) => setName(e.target.value)} autoFocus />
       <div className="flex gap-2">
-        <select className="h-11 flex-1 rounded-2xl border-2 border-border px-2 font-bold" value={grade} onChange={(e) => setGrade(Number(e.target.value))}>
-          {[1,2,3,4,5,6,7,8,9].map((g) => <option key={g} value={g}>Lớp {g}</option>)}
+        <select className={sel} value={grade} onChange={(e) => setGrade(Number(e.target.value))}>
+          {Array.from({ length: 12 }, (_, i) => i + 1).map((g) => <option key={g} value={g}>Lớp {g}</option>)}
         </select>
-        <select className="h-11 flex-1 rounded-2xl border-2 border-border px-2 font-bold" value={avatar} onChange={(e) => setAvatar(e.target.value)}>
+        <select className={sel} value={avatar} onChange={(e) => setAvatar(e.target.value)}>
           <option value="girl_avatar_01">👧 Bạn gái</option>
           <option value="boy_avatar_01">👦 Bạn trai</option>
         </select>
       </div>
-      <select className="h-11 rounded-2xl border-2 border-border px-2 font-bold" value={level} onChange={(e) => setLevel(e.target.value)}>
+      <select className={sel + " w-full"} value={level} onChange={(e) => setLevel(e.target.value)}>
         {LEVEL_ORDER.map((lv) => <option key={lv} value={lv}>Trình độ: {LEVEL_LABELS[lv]}</option>)}
       </select>
+      <div>
+        <label className="text-xs font-bold text-muted-foreground">Ngày sinh</label>
+        <input type="date" className="mt-1 h-11 w-full rounded-2xl border-2 border-border px-3 font-bold outline-none focus:border-primary" value={birthday} onChange={(e) => setBirthday(e.target.value)} />
+      </div>
+      <div>
+        <label className="text-xs font-bold text-muted-foreground">Mục tiêu hàng ngày (từ)</label>
+        <input type="number" min={1} max={200} className="mt-1 h-11 w-full rounded-2xl border-2 border-border px-3 font-bold outline-none focus:border-primary" value={dailyGoal} onChange={(e) => setDailyGoal(Number(e.target.value) || 10)} />
+      </div>
       <Button type="submit" disabled={busy || !name.trim()}>{initial ? "Lưu" : <><Plus className="h-4 w-4" /> Tạo hồ sơ</>}</Button>
     </form>
   );
