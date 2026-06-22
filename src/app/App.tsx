@@ -168,7 +168,7 @@ export function App() {
   }
 
   if (route.view === "admin") {
-    return <AdminPage onBack={() => navigate("student-select")} onOpenPicker={() => navigate("imagepicker")} onLoginAsStudent={(sid) => { setSelectedStudentId(sid); localStorage.setItem(SELECTED_STUDENT_KEY, sid); navigate("home"); }} />;
+    return <AdminPage onBack={() => navigate("student-select")} onOpenPicker={() => navigate("imagepicker")} onLoginAsStudent={(sid) => { setSelectedStudentId(sid); localStorage.setItem(SELECTED_STUDENT_KEY, sid); navigate("home"); }} adminName={user.name} />;
   }
   if (route.view === "imagepicker") {
     return <ImagePickerPage onBackHome={() => navigate("student-select")} />;

@@ -34,6 +34,7 @@ export interface AdminUser {
   email: string;
   name: string;
   role: string;
+  status?: string;
   createdAt: number;
   studentCount: number;
   studentLimit: number;
