@@ -15,14 +15,13 @@ import { Card, CardContent } from "@/components/ui/card";
 interface LookupPageProps {
   student: Student;
   onBackHome: () => void;
-  isPremium?: boolean;
 }
 
 type Mode = "word" | "sentence";
 interface WordDetail { vi?: string[]; pos?: string[]; examples?: { en: string; vi: string; pos?: string }[]; synonyms?: string[]; antonyms?: string[]; note?: string; }
 interface WordResult { query: string; dict: DictionaryResult | null; detail: WordDetail | null; vi: string; images: ImageResult[]; }
 
-export function LookupPage({ student, isPremium }: LookupPageProps) {
+export function LookupPage({ student }: LookupPageProps) {
   const [mode, setMode] = useState<Mode>("word");
   return (
     <main className="mx-auto w-full max-w-2xl px-4 pt-5">
@@ -40,7 +39,7 @@ export function LookupPage({ student, isPremium }: LookupPageProps) {
         ))}
       </div>
 
-      {mode === "word" ? <WordLookup student={student} isPremium={isPremium} /> : <SentenceTranslate student={student} />}
+      {mode === "word" ? <WordLookup student={student} /> : <SentenceTranslate student={student} />}
     </main>
   );
 }
@@ -57,7 +56,7 @@ function DirToggle({ from, to, onFlip }: { from: Lang; to: Lang; onFlip: () => v
 }
 
 // ── TỪ ĐIỂN ──
-function WordLookup({ student, isPremium }: { student: Student; isPremium?: boolean }) {
+function WordLookup({ student }: { student: Student }) {
   const [from, setFrom] = useState<Lang>("en");
   const [query, setQuery] = useState("");
   const [loading, setLoading] = useState(false);
@@ -93,7 +92,7 @@ function WordLookup({ student, isPremium }: { student: Student; isPremium?: bool
     const [dict, images, detail] = await Promise.all([
       getWordDefinition(englishWord).catch(() => null),
       getWordImages(englishWord).catch(() => [] as ImageResult[]),
-      isPremium ? apiRequest<WordDetail>(`/api/word-detail?word=${encodeURIComponent(englishWord)}`, { auth: false }).catch(() => null) : Promise.resolve(null),
+      apiRequest<WordDetail>(`/api/word-detail?word=${encodeURIComponent(englishWord)}`).catch(() => null),
     ]);
     setLoading(false);
     const richVi = detail?.vi?.length ? detail.vi.join("; ") : viMeaning;

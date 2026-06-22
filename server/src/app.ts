@@ -1006,8 +1006,21 @@ export function createApp() {
     const word = String(req.query.word || "").trim().toLowerCase();
     if (!word) return res.status(400).json({ error: "thiếu word" });
     const cacheKey = `wd|${word}`;
+    // Cache có → trả cho mọi user (free cũng được hưởng kết quả premium)
     const cached = db.prepare("SELECT translation FROM translation_cache WHERE text = ?").get(cacheKey) as any;
     if (cached) { try { return res.json(JSON.parse(cached.translation)); } catch { /* regenerate */ } }
+
+    // Chưa có cache → chỉ gọi DeepSeek nếu user premium
+    let isPremium = false;
+    const auth = req.headers.authorization?.replace("Bearer ", "") || "";
+    if (auth) {
+      const uid = verifyToken(auth);
+      if (uid) {
+        const u = db.prepare("SELECT isPremium, role FROM users WHERE id = ?").get(uid) as any;
+        if (u?.isPremium || u?.role === "admin") isPremium = true;
+      }
+    }
+    if (!isPremium) return res.status(204).end(); // Free + chưa cache → không có data
 
     const dsKey = process.env.DEEPSEEK_API_KEY || "";
     if (!dsKey) return res.status(503).json({ error: "chưa cấu hình AI" });
