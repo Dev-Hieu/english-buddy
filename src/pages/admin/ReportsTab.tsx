@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
+import { avatarEmoji } from "@/components/ui/emoji";
 import { getReports, type ReportData } from "@/services/studentService";
 
 export interface ReportsTabProps {}
@@ -119,7 +120,7 @@ export function ReportsTab(_props: ReportsTabProps) {
                       </td>
                       <td className="py-2">
                         <div className="flex items-center gap-2">
-                          <span className="text-lg">{s.avatar || "👤"}</span>
+                          <span className="text-lg">{avatarEmoji(s.avatar || "boy")}</span>
                           <div>
                             <p className="font-bold leading-tight">{s.name}</p>
                             <p className="text-xs font-bold text-muted-foreground uppercase">{LEVEL_LABELS[s.level] ?? s.level}</p>

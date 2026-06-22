@@ -52,7 +52,7 @@ export function OnlineTab() {
           </span>
           <div>
             <p className="text-3xl font-black">{loading ? "—" : count}</p>
-            <p className="text-sm font-bold text-muted-foreground">học sinh đang online</p>
+            <p className="text-sm font-bold text-muted-foreground">học sinh hoạt động hôm nay</p>
           </div>
         </CardContent>
       </Card>
@@ -60,8 +60,8 @@ export function OnlineTab() {
       {/* Student list */}
       {!loading && count === 0 && (
         <div className="py-16 text-center">
-          <p className="text-lg font-extrabold text-muted-foreground">Không có học sinh nào đang học</p>
-          <p className="text-sm font-bold text-muted-foreground">Danh sách tự động cập nhật mỗi 30 giây</p>
+          <p className="text-lg font-extrabold text-muted-foreground">Chưa có học sinh nào hoạt động hôm nay</p>
+          <p className="text-sm font-bold text-muted-foreground">Tự động cập nhật mỗi 30 giây</p>
         </div>
       )}
 

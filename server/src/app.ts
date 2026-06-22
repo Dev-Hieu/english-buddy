@@ -477,17 +477,17 @@ export function createApp() {
     res.json({ ok: true });
   });
 
-  // Online: students active in last 5 minutes (based on lastActiveDate + progress updates)
+  // Online: students active today (lastActiveDate = today's date string)
   app.get("/api/admin/online", requireAdmin, (_req, res) => {
-    const fiveMinAgo = Date.now() - 5 * 60 * 1000;
+    const now = new Date();
+    const todayStr = `${now.getFullYear()}-${now.getMonth() + 1}-${now.getDate()}`;
     const rows = db.prepare(`
-      SELECT DISTINCT s.id, s.name, s.avatar, s.level, s.grade,
-             MAX(p.lastReviewedAt) AS lastSeen
+      SELECT s.id, s.name, s.avatar, s.level, s.grade,
+             (SELECT MAX(p.lastReviewedAt) FROM progress p WHERE p.studentId = s.id) AS lastSeen
       FROM students s
-      JOIN progress p ON p.studentId = s.id
-      WHERE p.lastReviewedAt > ?
+      WHERE s.lastActiveDate = ?
       ORDER BY lastSeen DESC
-    `).all(fiveMinAgo);
+    `).all(todayStr);
     res.json({ count: rows.length, students: rows });
   });
 
