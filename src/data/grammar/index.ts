@@ -15,14 +15,48 @@ const SEED_GRAMMAR: GrammarTopic[] = [
     title: "This / That",
     title_vi: "This và That",
     summary_vi: "Dùng 'this' cho vật ở GẦN, 'that' cho vật ở XA.",
+    sections: [
+      {
+        heading: "Cách dùng",
+        points: [
+          "this = cái này → vật ở GẦN mình.",
+          "that = cái kia → vật ở XA mình.",
+        ],
+      },
+      {
+        heading: "Cấu trúc",
+        points: [
+          "This is + danh từ số ít: This is a cat. — Đây là con mèo.",
+          "That is + danh từ số ít: That is a dog. — Kia là con chó.",
+          "Câu hỏi: Is this/that...? → Is this your pen? — Đây có phải bút của bạn không?",
+        ],
+      },
+      {
+        heading: "Số nhiều: These / Those",
+        points: [
+          "these = những cái này (gần): These are my books. — Đây là sách của tôi.",
+          "those = những cái kia (xa): Those are birds. — Kia là những con chim.",
+          "💡 this → these (gần, số nhiều) | that → those (xa, số nhiều).",
+        ],
+      },
+    ],
     points: [
       "this = cái này (ở gần): This is a cat. — Đây là con mèo.",
       "that = cái kia (ở xa): That is a dog. — Kia là con chó.",
+      "these = những cái này (gần): These are my books.",
+      "those = những cái kia (xa): Those are birds.",
     ],
     exercises: [
       { id: "e1", type: "choice", question: "___ is my book. (ở gần)", options: ["This", "That"], answer: "This", explain_vi: "Vật ở gần dùng This." },
       { id: "e2", type: "choice", question: "Look! ___ is a bird in the sky. (ở xa)", options: ["This", "That"], answer: "That", explain_vi: "Vật ở xa dùng That." },
-      { id: "e3", type: "fill", question: "___ is an apple. (ở gần)", answer: "This", explain_vi: "Điền This cho vật ở gần." },
+      { id: "e3", type: "choice", question: "___ are my shoes. (ở gần, số nhiều)", options: ["This", "These", "Those"], answer: "These", explain_vi: "Gần + số nhiều → These." },
+      { id: "e4", type: "choice", question: "___ are clouds in the sky. (ở xa, số nhiều)", options: ["These", "Those", "That"], answer: "Those", explain_vi: "Xa + số nhiều → Those." },
+      { id: "e5", type: "fill", question: "___ is an apple. (ở gần)", answer: "This", explain_vi: "Vật ở gần, số ít → This." },
+      { id: "e6", type: "fill", question: "___ is a mountain. (ở xa)", answer: "That", explain_vi: "Vật ở xa, số ít → That." },
+      { id: "e7", type: "fill", question: "___ are pencils on my desk. (ở gần, nhiều)", answer: "These", explain_vi: "Gần + số nhiều → These." },
+      { id: "e8", type: "choice", question: "Is ___ your bag? (ở gần)", options: ["this", "that", "those"], answer: "this", explain_vi: "Hỏi vật ở gần → this." },
+      { id: "e9", type: "reorder", question: "Sắp xếp:", options: ["is", "This", "cat", "a"], answer: "This is a cat", explain_vi: "This is + a + danh từ." },
+      { id: "e10", type: "reorder", question: "Sắp xếp:", options: ["are", "Those", "dogs"], answer: "Those are dogs", explain_vi: "Those are + danh từ số nhiều." },
     ],
   },
   {
