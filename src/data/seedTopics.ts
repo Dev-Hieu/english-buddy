@@ -22,4 +22,12 @@ export const SEED_TOPICS: Topic[] = [
   { id: "topic_society", name: "Society", name_vi: "Xã hội", level: "b2", order: 16 },
   { id: "topic_science", name: "Science", name_vi: "Khoa học", level: "c1", order: 17 },
   { id: "topic_culture", name: "Culture & Media", name_vi: "Văn hóa & truyền thông", level: "c1", order: 18 },
+  // Chủ đề mới (Oxford 3000)
+  { id: "topic_greetings", name: "Greetings", name_vi: "Chào hỏi", level: "kids", order: 19 },
+  { id: "topic_weather", name: "Weather & Seasons", name_vi: "Thời tiết & Mùa", level: "kids", order: 20 },
+  { id: "topic_numbers", name: "Numbers & Time", name_vi: "Số & Thời gian", level: "kids", order: 21 },
+  { id: "topic_colors", name: "Colors & Shapes", name_vi: "Màu sắc & Hình dạng", level: "kids", order: 22 },
+  { id: "topic_body", name: "Body Parts", name_vi: "Cơ thể", level: "kids", order: 23 },
+  { id: "topic_hobbies", name: "Hobbies", name_vi: "Sở thích", level: "a1", order: 24 },
+  { id: "topic_shopping", name: "Shopping", name_vi: "Mua sắm", level: "a1", order: 25 },
 ];
