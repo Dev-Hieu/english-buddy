@@ -84,8 +84,8 @@ export function verifyToken(token: string): string | null {
       return payload.slice(0, colonIdx);
     }
   }
-  // Token cũ: "userId.hmac" (không có timestamp) — chấp nhận tạm
-  return payload;
+  // Token cũ (không có timestamp) → hết hạn, buộc đăng nhập lại
+  return null;
 }
 
 // ── Tài khoản ──
