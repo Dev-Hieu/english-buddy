@@ -6,6 +6,7 @@ import { createStudent, deleteStudent, listStudents, updateStudent, type NewStud
 import { getStudentProgress, recordAnswer } from "@/services/progressService";
 import { getStudent } from "@/services/studentService";
 import { getImageMap } from "@/services/imageService";
+import { getVocabulary } from "@/services/contentService";
 import { SEED_VOCABULARY } from "@/data/seedVocabulary";
 import { TabBar, type TabKey } from "@/components/layout/TabBar";
 import { HomePage } from "@/pages/HomePage";
@@ -68,6 +69,19 @@ export function App() {
 
   // Làm tươi tài khoản 1 lần (vd hạn mức admin vừa đổi).
   useEffect(() => { if (isLoggedIn()) refreshMe().then((u) => u && setUser(u)); }, []);
+
+  // Load từ vựng từ DB (Oxford 3000, phrases...) merge vào SEED_VOCABULARY
+  const [, setVocabVer] = useState(0);
+  useEffect(() => {
+    getVocabulary().then((dbWords) => {
+      const existingIds = new Set(SEED_VOCABULARY.map((w) => w.id));
+      let added = 0;
+      for (const w of dbWords) {
+        if (!existingIds.has(w.id)) { SEED_VOCABULARY.push(w); existingIds.add(w.id); added++; }
+      }
+      if (added > 0) setVocabVer((v) => v + 1);
+    }).catch(() => {});
+  }, []);
 
   // Áp ảnh mới nhất từ DB lên dữ liệu build sẵn -> ảnh ai đó đã đổi hiện cho MỌI người.
   // Tải lúc mở app + mỗi khi quay lại tab (đồng bộ gần tức thời giữa người dùng).
