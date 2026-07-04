@@ -11,8 +11,8 @@ import { micAvailable, startRecording, type Recorder } from "@/services/audioRec
 import { assessPronunciation, type PronResult } from "@/services/pronunciationService";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ProgressRing } from "@/components/ui/progress";
 import { SessionHeader } from "@/components/layout/SessionHeader";
+import { SpeakResult } from "@/components/speak/SpeakResult";
 
 const SKILL_LABEL: Record<Skill, string> = {
   listen_word: "Nghe chọn chữ",
@@ -145,7 +145,6 @@ function WriteWord({ item, onAnswer }: { item: SkillTestItem; onAnswer: (v: stri
   );
 }
 
-const SPEAK_PASS = 60;
 function SpeakWord({ item, onAnswer }: { item: SkillTestItem; onAnswer: (v: string | number) => void }) {
   const [phase, setPhase] = useState<"idle" | "recording" | "scoring" | "result">("idle");
   const [result, setResult] = useState<PronResult | null>(null);
@@ -174,29 +173,15 @@ function SpeakWord({ item, onAnswer }: { item: SkillTestItem; onAnswer: (v: stri
 
   // Hiện kết quả chấm (điểm + từng âm đúng/sai) TRƯỚC khi sang kỹ năng tiếp theo.
   if (phase === "result" && result) {
-    const pass = result.score >= SPEAK_PASS;
     return (
       <Card><CardContent className="flex flex-col items-center gap-4 p-6 text-center">
         <p className="text-2xl font-black">{item.word}</p>
-        <ProgressRing value={result.score} max={100} size={92} stroke={10}>
-          <span className={`text-2xl font-black ${pass ? "text-success" : "text-red-600"}`}>{result.score}%</span>
-        </ProgressRing>
-        {result.phones.length ? (
-          <div className="flex flex-wrap justify-center gap-1.5">
-            {result.phones.map((p, i) => (
-              <span key={i} className={`rounded-lg px-2 py-1 text-sm font-extrabold ${p.ok ? "bg-success/15 text-success" : "bg-red-100 text-red-600"}`}>{p.ipa}</span>
-            ))}
-          </div>
-        ) : null}
-        <p className={`font-extrabold ${pass ? "text-success" : "text-red-600"}`}>
-          {pass ? "Đạt! Phát âm tốt 👏" : "Chưa đạt — đọc lại cho rõ hơn nhé"}
-        </p>
-        <div className="flex w-full gap-2">
-          <Button type="button" variant="outline" className="flex-1" onClick={() => { setResult(null); setPhase("idle"); }}>
-            <Mic className="h-5 w-5" /> Đọc lại
-          </Button>
-          <Button type="button" className="flex-1" onClick={() => onAnswer(result.score)}>Tiếp tục</Button>
-        </div>
+        <SpeakResult
+          result={result}
+          onRetry={() => { setResult(null); setPhase("idle"); }}
+          onContinue={() => onAnswer(result.score)}
+          onSkip={() => onAnswer("skip")}
+        />
       </CardContent></Card>
     );
   }

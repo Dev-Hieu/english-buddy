@@ -9,10 +9,10 @@ import { assessPronunciation, type PronResult } from "@/services/pronunciationSe
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { cn } from "@/components/ui/cn";
-import { ProgressRing } from "@/components/ui/progress";
 import { VoicePicker } from "@/components/ui/VoicePicker";
 import { SessionHeader } from "@/components/layout/SessionHeader";
 import { pickWords } from "@/components/games/wordRotation";
+import { SpeakResult, SPEAK_PASS } from "@/components/speak/SpeakResult";
 
 interface SpeakingPageProps {
   student: Student;
@@ -84,7 +84,7 @@ export function SpeakingPage({ topicId, onBackHome }: SpeakingPageProps) {
       const wav = await recRef.current.stop();
       const r = await assessPronunciation(wav, word.phonetic || "");
       setResult(r);
-      if (r.score >= 80) setGood((g) => g + 1);
+      if (r.score >= SPEAK_PASS) setGood((g) => g + 1);
       setPhase("result");
     } catch {
       setErr("Chưa chấm được — dịch vụ chấm phát âm (speech-eval) chưa chạy?");
@@ -134,28 +134,16 @@ export function SpeakingPage({ topicId, onBackHome }: SpeakingPageProps) {
               </p>
 
               {phase === "result" && result ? (
-                <div className="w-full space-y-3 rounded-2xl bg-muted p-4">
-                  <div className="flex items-center justify-center gap-4">
-                    <ProgressRing value={result.score} max={100} size={72} stroke={9}>
-                      <span className="text-lg font-black text-primary">{result.score}%</span>
-                    </ProgressRing>
-                    <p className={cn("text-lg font-black", result.score >= 80 ? "text-success" : result.score >= 50 ? "text-warning" : "text-red-500")}>
-                      {result.score >= 80 ? "Phát âm tốt!" : result.score >= 50 ? "Khá rồi, luyện thêm nhé" : "Đọc lại nhé"}
-                    </p>
-                  </div>
-                  {/* IPA từng âm: xanh = đúng, đỏ = cần sửa */}
-                  <div className="flex flex-wrap justify-center gap-1.5">
-                    {result.phones.map((p, i) => (
-                      <span key={i} className={cn("rounded-lg px-2 py-1 text-lg font-black", p.ok ? "bg-success/15 text-success" : "bg-red-100 text-red-600")}>
-                        {p.ipa}
-                      </span>
-                    ))}
-                  </div>
-                  {result.heard ? <p className="text-xs font-semibold text-muted-foreground">Âm nghe được: {result.heard}</p> : null}
-                  <div className="flex gap-2">
-                    <Button type="button" variant="outline" className="flex-1" onClick={start}><Mic className="h-5 w-5" /> Đọc lại</Button>
-                    <Button type="button" className="flex-1" onClick={next}>{n + 1 >= words.length ? "Xong" : (<>Từ tiếp <ArrowRight className="h-5 w-5" /></>)}</Button>
-                  </div>
+                <div className="flex w-full flex-col items-center gap-3 rounded-2xl bg-muted p-4">
+                  <SpeakResult
+                    result={result}
+                    ringSize={72}
+                    showHeard
+                    continueLabel={n + 1 >= words.length ? "Xong" : (<>Từ tiếp <ArrowRight className="h-5 w-5" /></>)}
+                    onRetry={start}
+                    onContinue={next}
+                    onSkip={next}
+                  />
                 </div>
               ) : null}
 
