@@ -1,6 +1,7 @@
-import { BarChart3, BookMarked, BookOpen, ChevronRight, Flame, GraduationCap, LogOut, MessageCircle, Play, RotateCcw, Settings, Star, Trophy, UserRound } from "lucide-react";
+import { BarChart3, BookMarked, BookOpen, ChevronRight, ClipboardCheck, Flame, GraduationCap, LogOut, MessageCircle, Play, RotateCcw, Settings, Star, Trophy, UserRound } from "lucide-react";
 import { useEffect, useState, type ComponentType } from "react";
 import { getLeaderboard } from "@/services/studentService";
+import { getSkillTestResults, type SkillTestResult } from "@/services/progressService";
 import { SEED_TOPICS } from "@/data/seedTopics";
 import { SEED_VOCABULARY } from "@/data/seedVocabulary";
 import { LEVEL_LABELS, LEVEL_ORDER, type Level, type Student } from "@/types";
@@ -56,6 +57,8 @@ function NavTile({ icon: Icon, iconClass, title, onClick }: {
 
 export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, learnedToday, reviewDue, pendingCount, dueTestCount, onStartSkillTest, onChangeStudent, onLogout, onOpenProfile, onNavigate }: HomePageProps) {
   const learned = new Set(studiedWordIds);
+  const [testResults, setTestResults] = useState<SkillTestResult[]>([]);
+  useEffect(() => { getSkillTestResults(student.id).then(r => setTestResults(r.slice(0, 5))).catch(() => {}); }, [student.id]);
   const goal = student.dailyGoal || 10;
   const goalReached = learnedToday >= goal;
   const level = levelOf(xp);
@@ -228,6 +231,36 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
           <NavTile icon={BarChart3} iconClass="bg-secondary text-secondary-foreground" title="Theo dõi" onClick={() => onNavigate("dashboard")} />
         </div>
       </section>
+
+      {/* Kết quả thi gần đây */}
+      {testResults.length > 0 && (
+        <section className="mt-5">
+          <h3 className="mb-2 flex items-center gap-2 font-extrabold">
+            <ClipboardCheck className="h-5 w-5 text-primary" /> Kết quả thi gần đây
+          </h3>
+          <div className="space-y-2">
+            {testResults.map((r) => {
+              const grade = r.score >= 90 ? "A+" : r.score >= 80 ? "A" : r.score >= 70 ? "B" : r.score >= 60 ? "C" : r.score >= 50 ? "D" : "F";
+              const color = r.score >= 80 ? "text-success" : r.score >= 60 ? "text-yellow-600" : "text-red-600";
+              const bg = r.score >= 80 ? "bg-success/10" : r.score >= 60 ? "bg-yellow-50" : "bg-red-50";
+              return (
+                <div key={r.id} className={cn("flex items-center gap-3 rounded-2xl border border-border/60 p-3", bg)}>
+                  <span className={cn("text-2xl font-black", color)}>{grade}</span>
+                  <div className="flex-1 min-w-0">
+                    <p className="text-sm font-extrabold">{r.score}% · {r.passedSkills}/{r.totalSkills} kỹ năng</p>
+                    <p className="text-xs font-semibold text-muted-foreground">
+                      {r.totalWords} từ · {r.mode === "review" ? "Ôn thi" : "Thi mới"} · {new Date(r.createdAt).toLocaleDateString("vi-VN")}
+                    </p>
+                  </div>
+                  <span className={cn("text-sm font-extrabold", r.xpDelta >= 0 ? "text-success" : "text-red-600")}>
+                    {r.xpDelta >= 0 ? "+" : ""}{r.xpDelta} XP
+                  </span>
+                </div>
+              );
+            })}
+          </div>
+        </section>
+      )}
     </main>
   );
 }

@@ -42,3 +42,18 @@ export function getMyWords(studentId: string): Promise<SavedWord[]> {
 export function removeMyWord(studentId: string, query: string): Promise<{ ok: boolean }> {
   return apiRequest(`/api/students/${studentId}/lookups/${encodeURIComponent(query)}`, { method: "DELETE" });
 }
+
+export interface SkillTestResult {
+  id: string;
+  mode: string;
+  level: string;
+  totalWords: number;
+  totalSkills: number;
+  passedSkills: number;
+  score: number;
+  xpDelta: number;
+  createdAt: number;
+}
+export function getSkillTestResults(studentId: string): Promise<SkillTestResult[]> {
+  return apiRequest(`/api/students/${studentId}/skill-test-results`);
+}

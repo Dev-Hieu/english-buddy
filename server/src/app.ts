@@ -910,9 +910,24 @@ export function createApp() {
         .run(full ? "scored" : "relearn", nr.mastery, nr.nextReviewAt, now, JSON.stringify(newPassed), studentId, wordId);
       results.push({ wordId, passed, lost, points: newPassed.length });
     }
+    // Lưu kết quả thi vĩnh viễn
+    const totalSkills = results.reduce((s, r) => s + skills.length, 0);
+    const passedSkills = results.reduce((s, r) => s + r.points, 0);
+    const score = totalSkills > 0 ? Math.round((passedSkills / totalSkills) * 100) : 0;
+    const resultId = "str_" + randomUUID().slice(0, 8);
+    db.prepare("INSERT INTO skill_test_results (id, studentId, mode, level, totalWords, totalSkills, passedSkills, score, xpDelta, details, createdAt) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)")
+      .run(resultId, studentId, sess.mode, sess.level, Object.keys(key).length, totalSkills, passedSkills, score, totalDelta, JSON.stringify(results), now);
+
     db.prepare("DELETE FROM skill_test_sessions WHERE id=?").run(sessionId);
     bumpStreak(studentId);
-    res.json({ results, totalDelta });
+    res.json({ results, totalDelta, score, resultId });
+  });
+
+  // Lịch sử thi kỹ năng
+  app.get("/api/students/:id/skill-test-results", requireAuth, (req, res) => {
+    if (!canAccessStudent(req, res, req.params.id)) return;
+    const rows = db.prepare("SELECT * FROM skill_test_results WHERE studentId = ? ORDER BY createdAt DESC LIMIT 20").all(req.params.id);
+    res.json(rows);
   });
 
   app.get("/api/students/:id", requireAuth, (req, res) => {

@@ -83,6 +83,19 @@ export function initSchema(): void {
       joinedAt INTEGER,
       PRIMARY KEY (classId, studentId)
     );
+    CREATE TABLE IF NOT EXISTS skill_test_results (
+      id TEXT PRIMARY KEY,
+      studentId TEXT NOT NULL,
+      mode TEXT,
+      level TEXT,
+      totalWords INTEGER,
+      totalSkills INTEGER,
+      passedSkills INTEGER,
+      score INTEGER,
+      xpDelta INTEGER,
+      details TEXT,
+      createdAt INTEGER
+    );
     CREATE TABLE IF NOT EXISTS notifications (
       id INTEGER PRIMARY KEY AUTOINCREMENT,
       title TEXT NOT NULL,

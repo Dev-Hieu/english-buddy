@@ -205,29 +205,65 @@ function SpeakWord({ item, onAnswer }: { item: SkillTestItem; onAnswer: (v: stri
   );
 }
 
-function ResultView({ data, onDone }: { data: { results: SkillResult[]; totalDelta: number }; onDone: () => void }) {
+function ResultView({ data, onDone }: { data: { results: SkillResult[]; totalDelta: number; score?: number }; onDone: () => void }) {
   const wordText = (id: string) => SEED_VOCABULARY.find((w) => w.id === id)?.word ?? id;
-  const gained = data.results.reduce((s, r) => s + r.passed.length, 0);
+  const totalSkills = data.results.length * 3; // approximate
+  const passedSkills = data.results.reduce((s, r) => s + r.points, 0);
+  const score = data.score ?? (totalSkills > 0 ? Math.round((passedSkills / totalSkills) * 100) : 0);
+  const grade = score >= 90 ? "A+" : score >= 80 ? "A" : score >= 70 ? "B" : score >= 60 ? "C" : score >= 50 ? "D" : "F";
+  const gradeColor = score >= 80 ? "text-success" : score >= 60 ? "text-yellow-600" : "text-red-600";
+
   return (
-    <Card><CardContent className="flex flex-col items-center gap-4 p-6 text-center">
-      <PartyPopper className="h-12 w-12 text-accent" />
-      <h2 className="text-2xl font-black">Hoàn thành bài thi!</h2>
-      <p className={`text-lg font-black ${data.totalDelta >= 0 ? "text-success" : "text-red-600"}`}>
-        {data.totalDelta >= 0 ? "+" : ""}{data.totalDelta} điểm
-      </p>
-      <div className="w-full space-y-2">
+    <Card className="overflow-hidden"><CardContent className="flex flex-col items-center gap-4 p-0">
+      {/* Header gradient */}
+      <div className="w-full bg-gradient-to-br from-primary to-success px-6 py-6 text-center text-white">
+        <PartyPopper className="mx-auto h-10 w-10 mb-2" />
+        <h2 className="text-2xl font-black">Hoàn thành bài thi!</h2>
+      </div>
+
+      <div className="flex items-center gap-6 px-6">
+        {/* Score ring */}
+        <div className="relative flex h-24 w-24 shrink-0 items-center justify-center">
+          <svg className="h-full w-full -rotate-90" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="42" fill="none" stroke="currentColor" strokeWidth="8" className="text-muted/30" />
+            <circle cx="50" cy="50" r="42" fill="none" stroke="currentColor" strokeWidth="8" className={gradeColor}
+              strokeDasharray={`${score * 2.64} 264`} strokeLinecap="round" />
+          </svg>
+          <div className="absolute text-center">
+            <span className="text-2xl font-black">{score}</span>
+            <span className="text-xs font-bold text-muted-foreground">%</span>
+          </div>
+        </div>
+        <div className="text-left">
+          <p className={`text-4xl font-black ${gradeColor}`}>{grade}</p>
+          <p className={`text-sm font-extrabold ${data.totalDelta >= 0 ? "text-success" : "text-red-600"}`}>
+            {data.totalDelta >= 0 ? "+" : ""}{data.totalDelta} XP
+          </p>
+          <p className="text-sm font-bold text-muted-foreground">{passedSkills} kỹ năng đạt</p>
+        </div>
+      </div>
+
+      {/* Per-word results */}
+      <div className="w-full space-y-1.5 px-6">
         {data.results.map((r) => (
-          <div key={r.wordId} className="flex items-center justify-between rounded-2xl border-2 border-border/60 bg-card px-4 py-2 text-left">
+          <div key={r.wordId} className="flex items-center justify-between rounded-xl border border-border/60 bg-card px-3 py-2 text-left">
             <span className="font-extrabold">{wordText(r.wordId)}</span>
-            <span className="flex items-center gap-1 text-sm font-bold">
-              {r.points > 0 ? <CheckCircle2 className="h-4 w-4 text-success" /> : <XCircle className="h-4 w-4 text-red-500" />}
-              {r.points} kỹ năng{r.lost.length ? ` · quên ${r.lost.length}` : ""}
+            <span className="flex items-center gap-1.5 text-sm font-bold">
+              {r.passed.map((s) => (
+                <span key={s} className="rounded-md bg-success/15 px-1.5 py-0.5 text-[10px] font-extrabold text-success">{s === "listen_word" ? "Nghe" : s === "speak" ? "Nói" : s === "write" ? "Viết" : s === "image_word" ? "Ảnh" : s}</span>
+              ))}
+              {r.lost.map((s) => (
+                <span key={s} className="rounded-md bg-red-100 px-1.5 py-0.5 text-[10px] font-extrabold text-red-600">{s === "listen_word" ? "Nghe" : s === "speak" ? "Nói" : s === "write" ? "Viết" : s === "image_word" ? "Ảnh" : s}</span>
+              ))}
             </span>
           </div>
         ))}
       </div>
-      <p className="text-sm font-bold text-muted-foreground">Từ chưa đủ kỹ năng sẽ vào "Cần ôn" để học lại.</p>
-      <Button type="button" size="lg" className="w-full" onClick={onDone}>Xong</Button>
+
+      <div className="w-full px-6 pb-6 space-y-2">
+        <p className="text-xs font-bold text-muted-foreground text-center">Từ chưa đủ kỹ năng sẽ vào "Cần ôn" để học lại.</p>
+        <Button type="button" size="lg" className="w-full" onClick={onDone}>Xong</Button>
+      </div>
     </CardContent></Card>
   );
 }
