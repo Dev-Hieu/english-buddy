@@ -233,15 +233,15 @@ export function ShadowingPage({ student, onBackHome }: Props) {
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const listRef = useRef<HTMLDivElement>(null);
 
-  // Load IPA map khi bật toggle (1 lần)
+  // Load IPA map khi vào practice (cần cho cả chấm điểm lẫn hiển thị IPA)
   useEffect(() => {
-    if (!showIpa || Object.keys(ipaMap).length > 0) return;
+    if (!videoId || Object.keys(ipaMap).length > 0) return;
     apiRequest<any[]>("/api/vocabulary", { auth: false }).then((words) => {
       const map: Record<string, string> = {};
       for (const w of words) if (w.phonetic && w.word) map[w.word.toLowerCase()] = w.phonetic;
       setIpaMap(map);
     }).catch(() => {});
-  }, [showIpa]);
+  }, [videoId]);
 
   // Load My Videos
   useEffect(() => {
@@ -271,6 +271,15 @@ export function ShadowingPage({ student, onBackHome }: Props) {
     apiRequest(`/api/students/${student.id}/my-videos/${vid}`, { method: "DELETE" }).then(() => {
       setMyVideos((prev) => prev.filter((v) => v.videoId !== vid));
     }).catch(() => {});
+  };
+
+  // Tạo IPA cho câu (dùng cho chấm phát âm)
+  const sentenceToIpa = (text: string): string => {
+    return text.split(/\s+/).map((w) => {
+      const clean = w.toLowerCase().replace(/[^a-z'-]/g, "");
+      if (!clean) return "";
+      return ipaMap[clean] || COMMON_IPA[clean] || clean;
+    }).filter(Boolean).join(" ");
   };
 
   const extractVideoId = (url: string) => url.match(/(?:v=|youtu\.be\/|\/embed\/)([a-zA-Z0-9_-]{11})/)?.[1] || "";
@@ -441,7 +450,9 @@ export function ShadowingPage({ student, onBackHome }: Props) {
     setPracticePhase("scoring");
     try {
       const wav = await recRef.current.stop();
-      const r = await assessPronunciation(wav, sentences[currentIdx]?.text || "");
+      const sent = sentences[currentIdx];
+      const ipa = sentenceToIpa(sent?.text || "");
+      const r = await assessPronunciation(wav, ipa || sent?.text || "");
       setResult(r);
       setScores((s) => ({ ...s, [currentIdx]: { score: r.score, mode: "shadow" } }));
       if (autoFlow) {
@@ -513,8 +524,8 @@ export function ShadowingPage({ student, onBackHome }: Props) {
     try {
       const wav = await fullRecRef.current.stop();
       fullRecRef.current = null;
-      const fullText = sentences.map((s) => s.text).join(". ");
-      const r = await assessPronunciation(wav, fullText);
+      const fullIpa = sentences.map((s) => sentenceToIpa(s.text)).join(" ");
+      const r = await assessPronunciation(wav, fullIpa || sentences.map((s) => s.text).join(". "));
       setFullLessonScore(r.score);
       setResult(r);
       setPracticePhase("done");
