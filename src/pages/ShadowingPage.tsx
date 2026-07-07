@@ -22,26 +22,75 @@ const CAN_MIC = typeof window !== "undefined" && window.isSecureContext && micAv
 const WAIT_LABELS: Record<WaitMode, string> = { off: "Tắt", "3s": "+3s", "5s": "+5s", manual: "Bấm" };
 const SPEEDS = [0.5, 0.75, 1, 1.25, 1.5];
 
-const SUGGESTED_VIDEOS = [
-  { id: "u0zqXffuN5Y", title: "Hello", level: "A1" },
-  { id: "WgYcNtL7f7c", title: "What do you want?", level: "A1" },
-  { id: "2iiuvBnW9kQ", title: "English Reading — Shopping", level: "A1" },
-  { id: "fCEbDDfzaQg", title: "I am a tiger", level: "A1" },
-  { id: "V7P83_fcE1A", title: "Who Likes Cake", level: "A1" },
-  { id: "89s6rXPHowI", title: "Tim Helps a Sheep", level: "A1" },
-  { id: "XWq58Abc7zk", title: "Supermarket Listening", level: "A1" },
-  { id: "XmoMKKlSZ1Y", title: "Improve English with Music", level: "A2" },
-  { id: "aJ5iL8AVkBg", title: "Improve by Talking to Yourself", level: "A2" },
-  { id: "GoNQmdjAV9k", title: "Happy Christmas — Harry Potter", level: "A2" },
-  { id: "l4Lk0JTD938", title: "Talking About Cooking", level: "A2" },
-  { id: "nXait2wHOQc", title: "Kung Fu Panda 2 — Baby Po", level: "A2" },
-  { id: "NAcG64bOx8k", title: "Asking for Directions", level: "A2" },
-  { id: "bngvFaB_qx0", title: "English Reading — Traveling", level: "A1" },
-  { id: "bABomTRzZzc", title: "Master English Shadowing", level: "B1" },
-  { id: "cZ3V4O4j4OE", title: "Zootopia — Gondola", level: "B1" },
-  { id: "z4K2F_OALPQ", title: "Sorting Ceremony — Harry Potter", level: "B1" },
-  { id: "JRKyEfBcXFQ", title: "Harry Visits The Weasleys", level: "B1" },
+type VideoLevel = "A1" | "A2" | "B1" | "B2" | "C1" | "C2";
+type VideoTopic = "General" | "Education" | "Film" | "Music" | "Entertainment" | "Science" | "News" | "People";
+interface SuggestedVideo { id: string; title: string; level: VideoLevel; topic: VideoTopic; }
+
+const SUGGESTED_VIDEOS: SuggestedVideo[] = [
+  // A1
+  { id: "u0zqXffuN5Y", title: "Hello", level: "A1", topic: "General" },
+  { id: "WgYcNtL7f7c", title: "What do you want?", level: "A1", topic: "General" },
+  { id: "2iiuvBnW9kQ", title: "English Reading — Shopping", level: "A1", topic: "General" },
+  { id: "fCEbDDfzaQg", title: "I am a tiger", level: "A1", topic: "General" },
+  { id: "V7P83_fcE1A", title: "Who Likes Cake", level: "A1", topic: "General" },
+  { id: "89s6rXPHowI", title: "Tim Helps a Sheep", level: "A1", topic: "People" },
+  { id: "XWq58Abc7zk", title: "Supermarket Listening", level: "A1", topic: "Education" },
+  { id: "bngvFaB_qx0", title: "English Reading — Traveling", level: "A1", topic: "General" },
+  { id: "cVMtYAbE8pQ", title: "Grade 4 - Unit 1 - Lesson 3", level: "A1", topic: "Education" },
+  { id: "AB7-J-JVLTc", title: "I'm in a hurry", level: "A1", topic: "General" },
+  { id: "jp67tX4i54c", title: "Dance Monkey (Karaoke)", level: "A1", topic: "Music" },
+  { id: "NtDd-jPvQM8", title: "Peppa Pig — Mummy at Work", level: "A1", topic: "Film" },
+  { id: "6VVEIH81jCo", title: "100 Sight Word Poems", level: "A1", topic: "Entertainment" },
+  { id: "MDQFir7hU5Y", title: "What Do You Like", level: "A1", topic: "Entertainment" },
+  // A2
+  { id: "XmoMKKlSZ1Y", title: "Improve English with Music", level: "A2", topic: "General" },
+  { id: "aJ5iL8AVkBg", title: "Improve by Talking to Yourself", level: "A2", topic: "General" },
+  { id: "GoNQmdjAV9k", title: "Happy Christmas — Harry Potter", level: "A2", topic: "Film" },
+  { id: "nXait2wHOQc", title: "Kung Fu Panda 2 — Baby Po", level: "A2", topic: "Film" },
+  { id: "NAcG64bOx8k", title: "Asking for Directions", level: "A2", topic: "Education" },
+  { id: "l4Lk0JTD938", title: "Talking About Cooking", level: "A2", topic: "General" },
+  { id: "Zt5ch6AzpAQ", title: "I Don't Want To Work Today", level: "A2", topic: "General" },
+  { id: "lPIuAgZ3I2I", title: "Weekend With Friends", level: "A2", topic: "General" },
+  { id: "3MSsTK2bHVo", title: "My Weekend", level: "A2", topic: "General" },
+  { id: "7PP-4eFXaqo", title: "My Favorite Hobby", level: "A2", topic: "Education" },
+  { id: "6se1U6HwuCI", title: "Traveling Speaking Practice", level: "A2", topic: "Education" },
+  { id: "ubgFZnja_HE", title: "Fly Away (Lyrics)", level: "A2", topic: "Music" },
+  // B1
+  { id: "bABomTRzZzc", title: "Master English Shadowing", level: "B1", topic: "Education" },
+  { id: "erf3dnG3AG8", title: "Daily English Practice", level: "B1", topic: "General" },
+  { id: "jYiGXxGb_nc", title: "Hermione vs Draco — Harry Potter", level: "B1", topic: "Film" },
+  { id: "cZ3V4O4j4OE", title: "Zootopia — Gondola", level: "B1", topic: "Film" },
+  { id: "z4K2F_OALPQ", title: "Sorting Ceremony — Harry Potter", level: "B1", topic: "Film" },
+  { id: "JRKyEfBcXFQ", title: "Harry Visits The Weasleys", level: "B1", topic: "Film" },
+  { id: "re5veV2F7eY", title: "Mean Girls — Meeting the Plastics", level: "B1", topic: "Film" },
+  { id: "dDaBjcM8z8s", title: "Relationships", level: "B1", topic: "General" },
+  { id: "1gRIqFqjiBQ", title: "Listen to Your Heart — Muniba", level: "B1", topic: "General" },
+  { id: "z0PJnc8BFTk", title: "Friends: Ross Music Skills", level: "B1", topic: "Entertainment" },
+  { id: "1gbppiPa_c0", title: "What's in My Bag — Kendall Jenner", level: "B1", topic: "Entertainment" },
+  { id: "rHvQakk1zMA", title: "From The Start (Lyrics)", level: "B1", topic: "Music" },
+  { id: "NZGHXy1IAHM", title: "A Thousand Years (Lyrics)", level: "B1", topic: "Music" },
+  // B2
+  { id: "2hOp408Ib5w", title: "Obama on Education", level: "B2", topic: "News" },
+  { id: "W1qtu-pF99o", title: "Region Famous For — IELTS", level: "B2", topic: "Education" },
+  { id: "GSvyRVw366k", title: "Taylor Swift on 60 Minutes", level: "B2", topic: "Entertainment" },
+  { id: "okxZDUOSAfU", title: "Legally Blonde — Graduation", level: "B2", topic: "Film" },
+  { id: "xpyrefzvTpI", title: "DiCaprio Best Actor — Oscars", level: "B2", topic: "Entertainment" },
+  { id: "AoUCuBdDNNw", title: "Biodiversity", level: "B2", topic: "Science" },
+  { id: "E20Ljm5D7yU", title: "Why Mangosteen Is So Expensive", level: "B2", topic: "News" },
+  // C1
+  { id: "jKYa-5s3fow", title: "Taylor Swift's Inspirational Speech", level: "C1", topic: "Entertainment" },
+  { id: "N2FOxjtv5ns", title: "What is El Niño?", level: "C1", topic: "Science" },
+  { id: "HffWFd_6bJ0", title: "Social Media Changes Your Brain", level: "C1", topic: "Science" },
+  { id: "oTe4f-bBEKg", title: "BTS Speech at United Nations", level: "C1", topic: "People" },
+  { id: "20p5o6QaQfg", title: "How to Build Self Confidence", level: "C1", topic: "Education" },
+  // C2
+  { id: "gkjW9PZBRfk", title: "Emma Watson — HeForShe", level: "C2", topic: "People" },
+  { id: "c_wOnJJEfxE", title: "What is Cultural Humility?", level: "C2", topic: "Science" },
+  { id: "4h7pcrSg0k8", title: "What Happens After a Stroke", level: "C2", topic: "Science" },
 ];
+
+const LEVELS: VideoLevel[] = ["A1", "A2", "B1", "B2", "C1", "C2"];
+const TOPICS: VideoTopic[] = ["General", "Education", "Film", "Music", "Entertainment", "Science", "News", "People"];
 
 let ytApiLoaded = false;
 function loadYtApi(): Promise<void> {
@@ -59,6 +108,11 @@ export function ShadowingPage({ onBackHome }: Props) {
   const [ytUrl, setYtUrl] = useState("");
   const [videoId, setVideoId] = useState("");
   const [sentences, setSentences] = useState<Sentence[]>([]);
+  const [filterLevel, setFilterLevel] = useState<VideoLevel | "">("");
+  const [filterTopic, setFilterTopic] = useState<VideoTopic | "">("");
+  const [lookupWord, setLookupWord] = useState<string | null>(null);
+  const [lookupResult, setLookupResult] = useState<any>(null);
+  const [lookupLoading, setLookupLoading] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const [pasteMode, setPasteMode] = useState(false);
@@ -94,6 +148,23 @@ export function ShadowingPage({ onBackHome }: Props) {
   const listRef = useRef<HTMLDivElement>(null);
 
   const extractVideoId = (url: string) => url.match(/(?:v=|youtu\.be\/|\/embed\/)([a-zA-Z0-9_-]{11})/)?.[1] || "";
+
+  const lookupWordFn = async (word: string) => {
+    const clean = word.toLowerCase().replace(/[^a-z'-]/g, "");
+    if (!clean || clean.length < 2) return;
+    setLookupWord(clean);
+    setLookupResult(null);
+    setLookupLoading(true);
+    try {
+      const data = await apiRequest<any>(`/api/word-detail?word=${encodeURIComponent(clean)}`);
+      setLookupResult(data);
+    } catch { setLookupResult(null); }
+    finally { setLookupLoading(false); }
+  };
+
+  const filteredVideos = SUGGESTED_VIDEOS.filter((v) =>
+    (!filterLevel || v.level === filterLevel) && (!filterTopic || v.topic === filterTopic)
+  );
 
   const loadCaptions = async (vid: string) => {
     setLoading(true); setError("");
@@ -285,16 +356,29 @@ export function ShadowingPage({ onBackHome }: Props) {
             </div>)}
             {!loading && !pasteMode && <button type="button" onClick={() => setPasteMode(true)} className="w-full text-center text-xs font-bold text-primary underline">Dán subtitle thủ công</button>}
           </>)}
-          {!ytUrl && (<div className="space-y-1 max-h-[45vh] overflow-y-auto">
-            <p className="text-xs font-extrabold text-muted-foreground mb-1">Video gợi ý:</p>
-            {SUGGESTED_VIDEOS.map((v) => (
-              <button key={v.id} type="button" onClick={() => setYtUrl(`https://youtube.com/watch?v=${v.id}`)}
-                className="flex w-full items-center gap-2 rounded-lg px-2 py-1.5 text-left hover:bg-muted transition-colors">
-                <span className={cn("shrink-0 rounded px-1.5 py-0.5 text-[10px] font-extrabold",
-                  v.level === "A1" ? "bg-green-100 text-green-700" : v.level === "A2" ? "bg-blue-100 text-blue-700" : "bg-purple-100 text-purple-700")}>{v.level}</span>
-                <span className="text-xs font-bold truncate">{v.title}</span>
-              </button>
-            ))}
+          {!ytUrl && (<div className="space-y-2">
+            <div className="flex flex-wrap gap-1">
+              <button type="button" onClick={() => setFilterLevel("")} className={cn("rounded-full px-2 py-0.5 text-[10px] font-extrabold", !filterLevel ? "bg-primary text-white" : "bg-muted text-muted-foreground")}>Tất cả</button>
+              {LEVELS.map((l) => <button key={l} type="button" onClick={() => setFilterLevel(l)} className={cn("rounded-full px-2 py-0.5 text-[10px] font-extrabold", filterLevel === l ? "bg-primary text-white" : "bg-muted text-muted-foreground")}>{l}</button>)}
+            </div>
+            <div className="flex flex-wrap gap-1">
+              <button type="button" onClick={() => setFilterTopic("")} className={cn("rounded-full px-2 py-0.5 text-[10px] font-extrabold", !filterTopic ? "bg-primary text-white" : "bg-muted text-muted-foreground")}>Tất cả</button>
+              {TOPICS.map((t) => <button key={t} type="button" onClick={() => setFilterTopic(t)} className={cn("rounded-full px-2 py-0.5 text-[10px] font-extrabold", filterTopic === t ? "bg-primary text-white" : "bg-muted text-muted-foreground")}>{t}</button>)}
+            </div>
+            <div className="space-y-1 max-h-[40vh] overflow-y-auto">
+              <p className="text-[10px] font-bold text-muted-foreground">{filteredVideos.length} video</p>
+              {filteredVideos.map((v) => (
+                <button key={v.id} type="button" onClick={() => setYtUrl(`https://youtube.com/watch?v=${v.id}`)}
+                  className="flex w-full items-center gap-2 rounded-lg px-2 py-1.5 text-left hover:bg-muted transition-colors">
+                  <span className={cn("shrink-0 rounded px-1.5 py-0.5 text-[10px] font-extrabold",
+                    v.level === "A1" ? "bg-green-100 text-green-700" : v.level === "A2" ? "bg-blue-100 text-blue-700" :
+                    v.level === "B1" ? "bg-purple-100 text-purple-700" : v.level === "B2" ? "bg-orange-100 text-orange-700" :
+                    v.level === "C1" ? "bg-red-100 text-red-700" : "bg-gray-100 text-gray-700")}>{v.level}</span>
+                  <span className="shrink-0 rounded bg-muted px-1 py-0.5 text-[9px] font-bold text-muted-foreground">{v.topic}</span>
+                  <span className="text-xs font-bold truncate">{v.title}</span>
+                </button>
+              ))}
+            </div>
           </div>)}
         </CardContent></Card>
       </Wrapper>
@@ -396,12 +480,42 @@ export function ShadowingPage({ onBackHome }: Props) {
         </div>
       </div>
 
-      {/* Current sentence */}
+      {/* Current sentence — click word to lookup */}
       {activeSent && (
         <div className={cn("mb-2 rounded-xl px-4 py-2.5 text-center transition-all", practicePhase !== "idle" ? "bg-primary/10 border border-primary/30" : "bg-muted")}>
-          <p className="text-lg font-black">{activeSent.text}</p>
+          <p className="text-lg font-black leading-relaxed">
+            {activeSent.text.split(/(\s+)/).map((w, i) => {
+              const isWord = /[a-zA-Z]/.test(w);
+              return isWord ? (
+                <button key={i} type="button" onClick={() => lookupWordFn(w)}
+                  className="hover:text-primary hover:underline transition-colors">{w}</button>
+              ) : <span key={i}>{w}</span>;
+            })}
+          </p>
           {repeatTarget > 1 && <p className="text-[10px] font-bold text-muted-foreground">Lần {repeatDone + 1}/{repeatTarget}</p>}
         </div>
+      )}
+
+      {/* Word lookup popup */}
+      {lookupWord && (
+        <Card className="mb-2 border-primary/30">
+          <CardContent className="p-3">
+            <div className="flex items-center justify-between mb-1">
+              <span className="text-base font-black">{lookupWord}</span>
+              <button type="button" onClick={() => { setLookupWord(null); setLookupResult(null); }} className="text-muted-foreground text-xs">✕</button>
+            </div>
+            {lookupLoading && <Loader2 className="h-4 w-4 animate-spin text-primary" />}
+            {lookupResult && lookupResult.vi && (
+              <div className="space-y-1">
+                {lookupResult.vi.map((v: string, i: number) => <p key={i} className="text-sm font-bold text-primary">{v}</p>)}
+                {lookupResult.examples?.slice(0, 1).map((ex: any, i: number) => (
+                  <p key={i} className="text-xs font-semibold text-muted-foreground italic">"{ex.en}" — {ex.vi}</p>
+                ))}
+              </div>
+            )}
+            {lookupResult && !lookupResult.vi && <p className="text-xs text-muted-foreground">Không tìm thấy</p>}
+          </CardContent>
+        </Card>
       )}
 
       {/* Practice area */}
