@@ -94,9 +94,9 @@ export function AuthPage({ onAuthed }: AuthPageProps) {
         </Button>
       </form>
 
-      <p className="mt-4 text-center text-xs font-semibold text-muted-foreground">
-        Tài khoản demo: phuhuynh@buddy.vn · mật khẩu 123456
-      </p>
+      {import.meta.env.DEV && <p className="mt-4 text-center text-xs font-semibold text-muted-foreground">
+        Dev: phuhuynh@buddy.vn · 123456
+      </p>}
     </main>
   );
 }

@@ -142,7 +142,15 @@ export const IMAGE_URLS: Record<string, string> = ${JSON.stringify(map, null, 2)
 export function createApp() {
   initSchema();
   const app = express();
-  app.use(compression()); // Gzip — giảm 70-80% bandwidth
+  app.use(compression());
+  // Security headers
+  app.use((_req, res, next) => {
+    res.set("X-Content-Type-Options", "nosniff");
+    res.set("X-Frame-Options", "DENY");
+    res.set("X-XSS-Protection", "1; mode=block");
+    res.set("Strict-Transport-Security", "max-age=31536000; includeSubDomains");
+    next();
+  });
   app.use(cors({ origin: process.env.CORS_ORIGIN || "https://en.vev.vn", credentials: true }));
   app.use(express.json());
   // Cache headers cho API — mutable data: no-store, immutable data: cache
@@ -154,15 +162,18 @@ export function createApp() {
   // Trang chọn ảnh cho phụ huynh.
   app.get("/picker", (_req, res) => res.sendFile(path.join(PUBLIC_DIR, "picker.html")));
 
-  // ── Rate limit login (5 lần / phút / IP) ──
-  const loginAttempts = new Map<string, { count: number; resetAt: number }>();
-  function checkLoginRate(ip: string): boolean {
+  // ── Rate limiters ──
+  const rateLimits = new Map<string, { count: number; resetAt: number }>();
+  function checkRate(key: string, max: number, windowMs: number): boolean {
     const now = Date.now();
-    const entry = loginAttempts.get(ip);
-    if (!entry || now > entry.resetAt) { loginAttempts.set(ip, { count: 1, resetAt: now + 60000 }); return true; }
+    const entry = rateLimits.get(key);
+    if (!entry || now > entry.resetAt) { rateLimits.set(key, { count: 1, resetAt: now + windowMs }); return true; }
     entry.count++;
-    return entry.count <= 5;
+    return entry.count <= max;
   }
+  function checkLoginRate(ip: string): boolean { return checkRate(`login:${ip}`, 5, 60000); }
+  // Dọn dẹp rate limit map mỗi 10 phút
+  setInterval(() => { const now = Date.now(); for (const [k, v] of rateLimits) if (now > v.resetAt) rateLimits.delete(k); }, 600000);
 
   // ── Auth (đa người dùng: email + mật khẩu) ──
   app.post("/api/register", (req, res) => {
@@ -429,7 +440,7 @@ export function createApp() {
   app.post("/api/admin/invite-codes", requireAdmin, (req, res) => {
     const { type, classId, maxUses, expiresAt } = req.body || {};
     if (!type || !["invite", "class"].includes(type)) return res.status(400).json({ error: "type phải là invite hoặc class" });
-    const code = Math.random().toString(36).slice(2, 8).toUpperCase();
+    const code = randomUUID().slice(0, 8).toUpperCase();
     db.prepare("INSERT INTO invite_codes (code, type, classId, maxUses, createdBy, createdAt, expiresAt) VALUES (?, ?, ?, ?, ?, ?, ?)")
       .run(code, type, classId || null, maxUses || (type === "class" ? 50 : 1), (req as any).user.id, Date.now(), expiresAt || null);
     res.json({ ok: true, code });
@@ -461,7 +472,7 @@ export function createApp() {
     const { name, teacherId, grade, level } = req.body || {};
     if (!name) return res.status(400).json({ error: "thiếu tên lớp" });
     const id = randomUUID();
-    const code = Math.random().toString(36).slice(2, 8).toUpperCase();
+    const code = randomUUID().slice(0, 8).toUpperCase();
     db.prepare("INSERT INTO classes (id, name, teacherId, code, grade, level, createdAt) VALUES (?, ?, ?, ?, ?, ?, ?)")
       .run(id, name, teacherId || null, code, grade || null, level || null, Date.now());
     res.json({ ok: true, id, code });
@@ -781,8 +792,13 @@ export function createApp() {
     if (!canAccessStudent(req, res, req.params.id)) return;
     const id = req.params.id;
     db.prepare("DELETE FROM progress WHERE studentId=?").run(id);
+    db.prepare("DELETE FROM xp_events WHERE studentId=?").run(id);
     db.prepare("DELETE FROM quiz_results WHERE studentId=?").run(id);
     db.prepare("DELETE FROM lookup_history WHERE studentId=?").run(id);
+    db.prepare("DELETE FROM skill_test_sessions WHERE studentId=?").run(id);
+    db.prepare("DELETE FROM skill_test_results WHERE studentId=?").run(id);
+    db.prepare("DELETE FROM my_videos WHERE studentId=?").run(id);
+    db.prepare("DELETE FROM class_students WHERE studentId=?").run(id);
     db.prepare("DELETE FROM students WHERE id=?").run(id);
     res.json({ ok: true });
   });
@@ -1008,12 +1024,13 @@ export function createApp() {
     res.json({ ok: true });
   });
 
-  // ── YouTube captions (cho Shadowing) — nhận subtitle text từ frontend ──
-  app.post("/api/youtube-captions", (req, res) => {
+  // ── YouTube captions (cho Shadowing) ──
+  app.post("/api/youtube-captions", requireAuth, (req, res) => {
     const { videoId, sentences } = req.body || {};
-    if (!videoId || !Array.isArray(sentences) || !sentences.length) return res.status(400).json({ error: "thiếu videoId hoặc sentences" });
+    if (!videoId || !/^[a-zA-Z0-9_-]{11}$/.test(videoId)) return res.status(400).json({ error: "videoId không hợp lệ" });
+    if (!Array.isArray(sentences) || !sentences.length || sentences.length > 500) return res.status(400).json({ error: "sentences không hợp lệ" });
     const cacheKey = `ytcap|${videoId}`;
-    const result = { videoId, sentences, count: sentences.length };
+    const result = { videoId, sentences: sentences.slice(0, 500), count: Math.min(sentences.length, 500) };
     db.prepare("INSERT OR REPLACE INTO translation_cache (text, translation) VALUES (?, ?)").run(cacheKey, JSON.stringify(result));
     res.json({ ok: true });
   });
@@ -1190,7 +1207,9 @@ Return ONLY valid JSON, no markdown, no code fences.` },
   // ── Dịch câu 2 chiều: premium → DeepSeek AI (chính xác), free → Google Translate ──
   // Hỗ trợ cả có auth (biết premium) lẫn không auth (mặc định free).
   app.get("/api/translate", async (req, res) => {
-    const text = String(req.query.text || "").trim();
+    const ip = req.ip || req.socket.remoteAddress || "unknown";
+    if (!checkRate(`translate:${ip}`, 30, 60000)) return res.status(429).json({ error: "Quá nhiều yêu cầu dịch" });
+    const text = String(req.query.text || "").trim().slice(0, 500); // max 500 ký tự
     const from = String(req.query.from || "en") === "vi" ? "vi" : "en";
     const to = from === "vi" ? "en" : (String(req.query.to || "vi") === "en" ? "en" : "vi");
     if (!text) return res.status(400).json({ error: "thiếu text" });
