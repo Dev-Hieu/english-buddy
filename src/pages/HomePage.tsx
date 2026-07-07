@@ -1,4 +1,4 @@
-import { BarChart3, BookMarked, BookOpen, ChevronRight, ClipboardCheck, Flame, GraduationCap, LogOut, MessageCircle, Play, RotateCcw, Settings, Star, Trophy, UserRound } from "lucide-react";
+import { BarChart3, BookMarked, BookOpen, ChevronRight, ClipboardCheck, Flame, GraduationCap, Headphones, LogOut, MessageCircle, Play, RotateCcw, Settings, Star, Trophy, UserRound } from "lucide-react";
 import { useEffect, useState, type ComponentType } from "react";
 import { getLeaderboard } from "@/services/studentService";
 import { getSkillTestResults, type SkillTestResult } from "@/services/progressService";
@@ -225,6 +225,7 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
         <div className="grid grid-cols-3 gap-2">
           <NavTile icon={BookOpen} iconClass="bg-primary/15 text-primary" title="Ngữ pháp" onClick={() => onNavigate("grammar")} />
           <NavTile icon={GraduationCap} iconClass="bg-success/15 text-success" title="Làm đề" onClick={() => onNavigate("exam")} />
+          <NavTile icon={Headphones} iconClass="bg-primary/15 text-primary" title="Shadowing" onClick={() => onNavigate("shadowing")} />
           <NavTile icon={MessageCircle} iconClass="bg-accent/15 text-accent" title="Hội thoại" onClick={() => onNavigate("conversation")} />
           <NavTile icon={Trophy} iconClass="bg-accent/15 text-accent" title="Xếp hạng" onClick={() => onNavigate("leaderboard")} />
           <NavTile icon={BookMarked} iconClass="bg-secondary text-secondary-foreground" title="My Words" onClick={() => onNavigate("mywords")} />

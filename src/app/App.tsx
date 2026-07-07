@@ -20,6 +20,7 @@ import { LookupPage } from "@/pages/LookupPage";
 import { TestPage } from "@/pages/TestPage";
 import { GamesPage } from "@/pages/GamesPage";
 import { SpeakingPage } from "@/pages/SpeakingPage";
+import { ShadowingPage } from "@/pages/ShadowingPage";
 import { DashboardPage } from "@/pages/DashboardPage";
 import { MyWordsPage } from "@/pages/MyWordsPage";
 import { TopicWordsPage } from "@/pages/TopicWordsPage";
@@ -35,7 +36,7 @@ import { TeacherPage } from "@/pages/TeacherPage";
 
 type View =
   | "student-select" | "admin" | "home" | "topics" | "lesson"
-  | "flashcard" | "review" | "lookup" | "test" | "games" | "speak" | "dashboard" | "mywords" | "leaderboard" | "topicwords" | "grammar" | "grammar-lesson" | "exam" | "conversation" | "imagepicker" | "skilltest";
+  | "flashcard" | "review" | "lookup" | "test" | "games" | "speak" | "shadowing" | "dashboard" | "mywords" | "leaderboard" | "topicwords" | "grammar" | "grammar-lesson" | "exam" | "conversation" | "imagepicker" | "skilltest";
 
 interface Route { view: View; topicId: string; level: Level | "all"; mode?: "new" | "review"; }
 
@@ -44,7 +45,7 @@ const readSelected = () => (typeof window === "undefined" ? null : localStorage.
 
 const ACTIVE_TAB: Record<View, TabKey | null> = {
   "student-select": null, admin: null, home: "home", topics: "home", lesson: "home", flashcard: "home",
-  review: "review", lookup: "lookup", test: "test", games: "games", speak: "speak", dashboard: null, mywords: null, leaderboard: null, topicwords: null,
+  review: "review", lookup: "lookup", test: "test", games: "games", speak: "speak", shadowing: null, dashboard: null, mywords: null, leaderboard: null, topicwords: null,
   grammar: null, "grammar-lesson": null, exam: null, conversation: null, imagepicker: null, skilltest: null,
 };
 
@@ -301,6 +302,9 @@ export function App() {
       break;
     case "speak":
       content = <SpeakingPage student={student} topicId={route.topicId} onBackHome={() => navigate("home")} />;
+      break;
+    case "shadowing":
+      content = <ShadowingPage student={student} topicId={route.topicId} onBackHome={() => navigate("home")} />;
       break;
     case "dashboard":
       content = <DashboardPage students={students} onBackHome={() => navigate("home")} />;
