@@ -83,6 +83,63 @@ export function ShadowingPage({ student, topicId, onBackHome }: Props) {
   const [ytLoading, setYtLoading] = useState(false);
   const [ytError, setYtError] = useState("");
 
+  const loadCaptions = async (vid: string) => {
+    setYtLoading(true); setYtError("");
+    try {
+      // 1. Check server cache first
+      const cached = await apiRequest<{ sentences: { start: number; end: number; text: string }[]; count: number }>(`/api/youtube-captions?v=${vid}`, { auth: false }).catch(() => null);
+      if (cached && cached.sentences.length > 0) {
+        setYtSentences(cached.sentences);
+        applyYtSentences(cached.sentences, vid);
+        return;
+      }
+      // 2. Fetch from browser (not blocked by YouTube)
+      const resp = await fetch(`https://www.youtube.com/watch?v=${vid}`);
+      const html = await resp.text();
+      const m = html.match(/"captionTracks":\[(.*?)\]/);
+      if (!m) { setYtError("Video không có subtitle"); return; }
+      const tracks = JSON.parse(`[${m[1]}]`);
+      const enTrack = tracks.find((t: any) => (t.languageCode || "").startsWith("en"));
+      if (!enTrack) { setYtError("Không có subtitle tiếng Anh"); return; }
+      const subUrl = enTrack.baseUrl.replace(/\\u0026/g, "&");
+      const subResp = await fetch(subUrl);
+      const xml = await subResp.text();
+      // Parse
+      const sentences: { start: number; end: number; text: string }[] = [];
+      const regex = /<text start="([^"]+)" dur="([^"]+)"[^>]*>([^<]*)<\/text>/g;
+      let match;
+      while ((match = regex.exec(xml)) !== null) {
+        const start = parseFloat(match[1]);
+        const dur = parseFloat(match[2]);
+        let text = match[3].replace(/&amp;/g, "&").replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&#39;/g, "'").replace(/\n/g, " ").trim();
+        if (text) sentences.push({ start: Math.round(start * 10) / 10, end: Math.round((start + dur) * 10) / 10, text });
+      }
+      // Merge short segments
+      const merged: typeof sentences = [];
+      for (const s of sentences) {
+        const last = merged[merged.length - 1];
+        if (last && s.start - last.end < 0.5 && last.text.length + s.text.length < 100) {
+          last.end = s.end; last.text += " " + s.text;
+        } else { merged.push({ ...s }); }
+      }
+      if (!merged.length) { setYtError("Subtitle trống"); return; }
+      setYtSentences(merged);
+      applyYtSentences(merged, vid);
+      // Cache on server
+      apiRequest("/api/youtube-captions", { method: "POST", body: { videoId: vid, sentences: merged }, auth: false }).catch(() => {});
+    } catch { setYtError("Không lấy được subtitle (CORS). Thử dán subtitle thủ công."); }
+    finally { setYtLoading(false); }
+  };
+
+  const applyYtSentences = (sents: { start: number; end: number; text: string }[], vid: string) => {
+    const ytItems: VocabularyWord[] = sents.map((s, i) => ({
+      id: `yt_${vid}_${i}`, word: s.text, phonetic: "", meaning_vi: "",
+      topicIds: [], level: "a1" as any, imageUrl: "", source: "youtube" as any, createdAt: Date.now(),
+    }));
+    setSelectedIds(new Set(ytItems.map((w) => w.id)));
+    setItems(ytItems);
+  };
+
   const recRef = useRef<Recorder | null>(null);
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
@@ -150,31 +207,13 @@ export function ShadowingPage({ student, topicId, onBackHome }: Props) {
                   if (!ytUrl) return null;
                   if (!m) return <p className="text-xs font-bold text-red-600">Link không hợp lệ</p>;
                   const vid = m[1];
-                  const loadCaptions = async () => {
-                    setYtLoading(true); setYtError("");
-                    try {
-                      const data = await apiRequest<{ sentences: { start: number; end: number; text: string }[]; count: number; error?: string }>(`/api/youtube-captions?v=${vid}`, { auth: false });
-                      if (data.error || !data.sentences.length) { setYtError(data.error || "Video không có subtitle tiếng Anh"); return; }
-                      setYtSentences(data.sentences);
-                      // Auto-select all YouTube sentences
-                      const ytItems: VocabularyWord[] = data.sentences.map((s, i) => ({
-                        id: `yt_${vid}_${i}`, word: s.text, phonetic: "", meaning_vi: "",
-                        topicIds: [], level: "a1" as any, imageUrl: "", source: "youtube" as any, createdAt: Date.now(),
-                      }));
-                      // Replace allPhrases with YouTube sentences temporarily
-                      setSelectedIds(new Set(ytItems.map((w) => w.id)));
-                      // Store in a ref-like way — push to allPhrases won't work, use items directly
-                      setItems(ytItems);
-                    } catch { setYtError("Không lấy được subtitle"); }
-                    finally { setYtLoading(false); }
-                  };
                   return (
                     <>
                       <div className="aspect-video w-full overflow-hidden rounded-xl">
                         <iframe src={`https://www.youtube.com/embed/${vid}`} className="h-full w-full" allowFullScreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" />
                       </div>
                       {!ytSentences && !ytLoading && (
-                        <Button type="button" onClick={loadCaptions} className="w-full">
+                        <Button type="button" onClick={() => loadCaptions(vid)} className="w-full">
                           <Play className="h-4 w-4" /> Lấy subtitle từ video
                         </Button>
                       )}
