@@ -628,10 +628,10 @@ export function ShadowingPage({ student, onBackHome }: Props) {
                   <button type="button" onClick={() => setYtUrl(`https://youtube.com/watch?v=${v.videoId}`)} className="flex-1 text-left min-w-0">
                     <p className="text-sm font-extrabold truncate">{v.title || v.videoId}</p>
                     <div className="flex items-center gap-1.5 mt-0.5">
-                      {v.level && <span className="rounded px-1 py-0.5 text-[9px] font-extrabold bg-muted text-muted-foreground">{v.level}</span>}
-                      {v.topic && <span className="rounded px-1 py-0.5 text-[9px] font-bold text-muted-foreground">{v.topic}</span>}
-                      {v.bestScore > 0 && <span className={cn("text-[10px] font-black", v.bestScore >= SPEAK_PASS ? "text-success" : "text-red-600")}>{v.bestScore}%</span>}
-                      <span className="text-[9px] text-muted-foreground">{new Date(v.lastPlayedAt).toLocaleDateString("vi-VN")}</span>
+                      {v.level && <span className="rounded-md px-1.5 py-0.5 text-xs font-extrabold bg-muted text-muted-foreground">{v.level}</span>}
+                      {v.topic && <span className="rounded-md px-1.5 py-0.5 text-xs font-bold text-muted-foreground">{v.topic}</span>}
+                      {v.bestScore > 0 && <span className={cn("text-xs font-black", v.bestScore >= SPEAK_PASS ? "text-success" : "text-red-600")}>{v.bestScore}%</span>}
+                      <span className="text-xs text-muted-foreground">{new Date(v.lastPlayedAt).toLocaleDateString("vi-VN")}</span>
                     </div>
                   </button>
                   <button type="button" onClick={() => removeMyVideo(v.videoId)} className="shrink-0 rounded-lg p-1 text-muted-foreground hover:text-red-500" title="Xoá">✕</button>
@@ -643,25 +643,25 @@ export function ShadowingPage({ student, onBackHome }: Props) {
           {/* Browse tab — danh sách video */}
           {browseTab === "browse" && <div className="space-y-2">
             <div className="flex flex-wrap gap-1">
-              <button type="button" onClick={() => setFilterLevel("")} className={cn("rounded-full px-2 py-0.5 text-[10px] font-extrabold", !filterLevel ? "bg-primary text-white" : "bg-muted text-muted-foreground")}>Tất cả</button>
-              {LEVELS.map((l) => <button key={l} type="button" onClick={() => setFilterLevel(l)} className={cn("rounded-full px-2 py-0.5 text-[10px] font-extrabold", filterLevel === l ? "bg-primary text-white" : "bg-muted text-muted-foreground")}>{l}</button>)}
+              <button type="button" onClick={() => setFilterLevel("")} className={cn("rounded-full px-2.5 py-1 text-xs font-extrabold", !filterLevel ? "bg-primary text-white" : "bg-muted text-muted-foreground")}>Tất cả</button>
+              {LEVELS.map((l) => <button key={l} type="button" onClick={() => setFilterLevel(l)} className={cn("rounded-full px-2.5 py-1 text-xs font-extrabold", filterLevel === l ? "bg-primary text-white" : "bg-muted text-muted-foreground")}>{l}</button>)}
             </div>
             <div className="flex flex-wrap gap-1">
-              <button type="button" onClick={() => setFilterTopic("")} className={cn("rounded-full px-2 py-0.5 text-[10px] font-extrabold", !filterTopic ? "bg-primary text-white" : "bg-muted text-muted-foreground")}>Tất cả</button>
-              {TOPICS.map((t) => <button key={t} type="button" onClick={() => setFilterTopic(t)} className={cn("rounded-full px-2 py-0.5 text-[10px] font-extrabold", filterTopic === t ? "bg-primary text-white" : "bg-muted text-muted-foreground")}>{t}</button>)}
+              <button type="button" onClick={() => setFilterTopic("")} className={cn("rounded-full px-2.5 py-1 text-xs font-extrabold", !filterTopic ? "bg-primary text-white" : "bg-muted text-muted-foreground")}>Tất cả</button>
+              {TOPICS.map((t) => <button key={t} type="button" onClick={() => setFilterTopic(t)} className={cn("rounded-full px-2.5 py-1 text-xs font-extrabold", filterTopic === t ? "bg-primary text-white" : "bg-muted text-muted-foreground")}>{t}</button>)}
             </div>
             <div className="space-y-1 max-h-[40vh] overflow-y-auto">
-              <p className="text-[10px] font-bold text-muted-foreground">{filteredVideos.length} video</p>
+              <p className="text-xs font-bold text-muted-foreground">{filteredVideos.length} video</p>
               {filteredVideos.map((v) => (
                 <button key={v.id} type="button" onClick={() => setYtUrl(`https://youtube.com/watch?v=${v.id}`)}
                   className={cn("flex w-full items-center gap-2 rounded-lg px-2 py-1.5 text-left transition-colors",
                     extractVideoId(ytUrl) === v.id ? "bg-primary/10 border border-primary/30" : "hover:bg-muted")}>
-                  <span className={cn("shrink-0 rounded px-1.5 py-0.5 text-[10px] font-extrabold",
+                  <span className={cn("shrink-0 rounded-md px-2 py-0.5 text-xs font-extrabold",
                     v.level === "A1" ? "bg-green-100 text-green-700" : v.level === "A2" ? "bg-blue-100 text-blue-700" :
                     v.level === "B1" ? "bg-purple-100 text-purple-700" : v.level === "B2" ? "bg-orange-100 text-orange-700" :
                     v.level === "C1" ? "bg-red-100 text-red-700" : "bg-gray-100 text-gray-700")}>{v.level}</span>
-                  <span className="shrink-0 rounded bg-muted px-1 py-0.5 text-[9px] font-bold text-muted-foreground">{v.topic}</span>
-                  <span className="text-xs font-bold truncate">{v.title}</span>
+                  <span className="shrink-0 rounded-md bg-muted px-1.5 py-0.5 text-xs font-bold text-muted-foreground">{v.topic}</span>
+                  <span className="text-sm font-bold truncate">{v.title}</span>
                 </button>
               ))}
             </div>
@@ -741,7 +741,7 @@ export function ShadowingPage({ student, onBackHome }: Props) {
           </button>
           <button type="button" onClick={() => currentIdx < sentences.length - 1 && seekToSentence(currentIdx + 1)}
             className="rounded-xl p-2 text-muted-foreground hover:bg-muted active:scale-95 transition-all"><ChevronRight className="h-5 w-5" /></button>
-          <span className="text-xs font-black text-muted-foreground tabular-nums ml-0.5">{Math.max(0, currentIdx + 1)}<span className="text-muted-foreground/50">/{sentences.length}</span></span>
+          <span className="text-sm font-black text-muted-foreground tabular-nums ml-0.5">{Math.max(0, currentIdx + 1)}<span className="text-muted-foreground/50">/{sentences.length}</span></span>
         </div>
 
         {/* 4 Mode buttons */}
@@ -750,25 +750,25 @@ export function ShadowingPage({ student, onBackHome }: Props) {
             className={cn("flex flex-col items-center gap-0.5 rounded-xl px-2.5 py-1.5 transition-all active:scale-95",
               practiceMode === "shadow" ? "bg-primary/10 text-primary" : "text-muted-foreground hover:bg-muted")}>
             <Mic className={cn("h-4 w-4", practiceMode === "shadow" && "drop-shadow-sm")} />
-            <span className="text-[9px] font-extrabold leading-none">Shadow</span>
+            <span className="text-xs font-extrabold leading-none">Shadow</span>
           </button>
           <button type="button" title="Nghe & gõ lại" onClick={() => setPracticeMode("dictation")}
             className={cn("flex flex-col items-center gap-0.5 rounded-xl px-2.5 py-1.5 transition-all active:scale-95",
               practiceMode === "dictation" ? "bg-primary/10 text-primary" : "text-muted-foreground hover:bg-muted")}>
             <Keyboard className={cn("h-4 w-4", practiceMode === "dictation" && "drop-shadow-sm")} />
-            <span className="text-[9px] font-extrabold leading-none">Dict</span>
+            <span className="text-xs font-extrabold leading-none">Dict</span>
           </button>
           <button type="button" title="Dubbing" onClick={() => { setPracticeMode("dubbing"); setWaitMode("off"); }}
             className={cn("flex flex-col items-center gap-0.5 rounded-xl px-2.5 py-1.5 transition-all active:scale-95",
               practiceMode === "dubbing" ? "bg-primary/10 text-primary" : "text-muted-foreground hover:bg-muted")}>
             <VolumeX className={cn("h-4 w-4", practiceMode === "dubbing" && "drop-shadow-sm")} />
-            <span className="text-[9px] font-extrabold leading-none">Dub</span>
+            <span className="text-xs font-extrabold leading-none">Dub</span>
           </button>
           <button type="button" title="Thi cả bài" onClick={startFullLesson}
             className={cn("flex flex-col items-center gap-0.5 rounded-xl px-2.5 py-1.5 transition-all active:scale-95",
               practicePhase === "full-recording" ? "bg-red-100 text-red-600 animate-pulse" : "text-muted-foreground hover:bg-muted")}>
             <PlayCircle className="h-4 w-4" />
-            <span className="text-[9px] font-extrabold leading-none">Full</span>
+            <span className="text-xs font-extrabold leading-none">Full</span>
           </button>
         </div>
 
@@ -809,7 +809,7 @@ export function ShadowingPage({ student, onBackHome }: Props) {
             <div className="flex items-center gap-2"><Volume2 className="h-4 w-4 text-muted-foreground" /><span className="text-sm font-bold">Tốc độ</span></div>
             <div className="flex gap-1">
               {SPEEDS.map((s) => (<button key={s} type="button" onClick={() => changeSpeed(s)}
-                className={cn("rounded-xl px-3 py-1.5 text-xs font-extrabold transition-all active:scale-95",
+                className={cn("rounded-xl px-3 py-1.5 text-sm font-extrabold transition-all active:scale-95",
                   speed === s ? "bg-primary text-white shadow-sm" : "bg-muted text-muted-foreground hover:bg-muted/80")}>{s}×</button>))}
             </div>
           </div>
@@ -820,7 +820,7 @@ export function ShadowingPage({ student, onBackHome }: Props) {
               <div className="flex gap-1">
                 {(["off", "3s", "5s", "manual"] as WaitMode[]).map((w) => (
                   <button key={w} type="button" onClick={() => setWaitMode(w)}
-                    className={cn("rounded-xl px-3 py-1.5 text-xs font-extrabold transition-all active:scale-95",
+                    className={cn("rounded-xl px-3 py-1.5 text-sm font-extrabold transition-all active:scale-95",
                       waitMode === w ? "bg-primary text-white shadow-sm" : "bg-muted text-muted-foreground hover:bg-muted/80")}>{WAIT_LABELS[w]}</button>
                 ))}
               </div>
@@ -832,7 +832,7 @@ export function ShadowingPage({ student, onBackHome }: Props) {
             <div className="flex gap-1">
               {[1, 2, 3, 5].map((r) => (
                 <button key={r} type="button" onClick={() => setRepeatTarget(r)}
-                  className={cn("rounded-xl px-3 py-1.5 text-xs font-extrabold transition-all active:scale-95",
+                  className={cn("rounded-xl px-3 py-1.5 text-sm font-extrabold transition-all active:scale-95",
                     repeatTarget === r ? "bg-primary text-white shadow-sm" : "bg-muted text-muted-foreground hover:bg-muted/80")}>{r}×</button>
               ))}
             </div>
@@ -840,12 +840,12 @@ export function ShadowingPage({ student, onBackHome }: Props) {
           {/* Toggles row */}
           <div className="flex items-center gap-2 px-4 py-2.5">
             <button type="button" onClick={() => setShowIpa(!showIpa)}
-              className={cn("flex items-center gap-1.5 rounded-xl px-3 py-1.5 text-xs font-extrabold transition-all active:scale-95",
+              className={cn("flex items-center gap-1.5 rounded-xl px-3 py-1.5 text-sm font-extrabold transition-all active:scale-95",
                 showIpa ? "bg-primary text-white shadow-sm" : "bg-muted text-muted-foreground")}>
               <Volume2 className="h-3.5 w-3.5" /> IPA
             </button>
             <button type="button" onClick={() => setAutoFlow(!autoFlow)}
-              className={cn("flex items-center gap-1.5 rounded-xl px-3 py-1.5 text-xs font-extrabold transition-all active:scale-95",
+              className={cn("flex items-center gap-1.5 rounded-xl px-3 py-1.5 text-sm font-extrabold transition-all active:scale-95",
                 autoFlow ? "bg-success text-white shadow-sm" : "bg-muted text-muted-foreground")}>
               <Zap className="h-3.5 w-3.5" /> Auto
             </button>
@@ -873,8 +873,8 @@ export function ShadowingPage({ student, onBackHome }: Props) {
                   className={cn("transition-colors", practicePhase === "recording" ? "hover:text-yellow-200 hover:underline" : practicePhase === "full-recording" ? "hover:text-yellow-700 hover:underline" : "hover:text-primary hover:underline")}>{w}</button>
               ) : <span key={i}>{w}</span>)}
             </p>
-            {showIpa && ipaLine && <p className="text-xs font-semibold text-muted-foreground mt-1">{ipaLine}</p>}
-            {repeatTarget > 1 && <p className="text-[10px] font-bold text-muted-foreground">Lần {repeatDone + 1}/{repeatTarget}</p>}
+            {showIpa && ipaLine && <p className="text-sm font-semibold text-muted-foreground mt-1">{ipaLine}</p>}
+            {repeatTarget > 1 && <p className="text-xs font-bold text-muted-foreground">Lần {repeatDone + 1}/{repeatTarget}</p>}
           </div>
         );
       })()}
@@ -966,7 +966,7 @@ export function ShadowingPage({ student, onBackHome }: Props) {
                 </button>
               )}
               <button type="button" onClick={() => seekToSentence(i)} className="flex-1 text-left min-w-0">
-                <span className="text-[10px] font-bold text-muted-foreground mr-1">{Math.floor(s.start / 60)}:{String(Math.floor(s.start % 60)).padStart(2, "0")}</span>
+                <span className="text-xs font-bold text-muted-foreground mr-1">{Math.floor(s.start / 60)}:{String(Math.floor(s.start % 60)).padStart(2, "0")}</span>
                 <span className={cn("text-sm", isActive ? "font-black text-primary" : "font-bold", isMuted ? "text-red-400" : "")}>{s.text}</span>
               </button>
               {sc && <span className={cn("shrink-0 text-xs font-black", sc.score >= SPEAK_PASS ? "text-success" : "text-red-600")}>
@@ -993,7 +993,7 @@ function ScoreRing({ score, size = 72 }: { score: number; size?: number }) {
 }
 
 function ModeBtn({ active, onClick, children }: { active: boolean; onClick: () => void; children: React.ReactNode }) {
-  return <button type="button" onClick={onClick} className={cn("flex items-center gap-1 rounded-lg px-2 py-1 text-[10px] font-extrabold transition-colors", active ? "bg-card text-primary shadow-sm" : "text-muted-foreground")}>{children}</button>;
+  return <button type="button" onClick={onClick} className={cn("flex items-center gap-1 rounded-lg px-2 py-1 text-xs font-extrabold transition-colors", active ? "bg-card text-primary shadow-sm" : "text-muted-foreground")}>{children}</button>;
 }
 
 function Wrapper({ children, onBack }: { children: React.ReactNode; onBack: () => void }) {
