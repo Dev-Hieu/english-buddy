@@ -38,7 +38,6 @@ const SUGGESTED_VIDEOS: SuggestedVideo[] = [
   { id: "bngvFaB_qx0", title: "English Reading — Traveling", level: "A1", topic: "General" },
   { id: "cVMtYAbE8pQ", title: "Grade 4 - Unit 1 - Lesson 3", level: "A1", topic: "Education" },
   { id: "AB7-J-JVLTc", title: "I'm in a hurry", level: "A1", topic: "General" },
-  { id: "jp67tX4i54c", title: "Dance Monkey (Karaoke)", level: "A1", topic: "Music" },
   { id: "NtDd-jPvQM8", title: "Peppa Pig — Mummy at Work", level: "A1", topic: "Film" },
   { id: "6VVEIH81jCo", title: "100 Sight Word Poems", level: "A1", topic: "Entertainment" },
   { id: "MDQFir7hU5Y", title: "What Do You Like", level: "A1", topic: "Entertainment" },
@@ -54,11 +53,9 @@ const SUGGESTED_VIDEOS: SuggestedVideo[] = [
   { id: "3MSsTK2bHVo", title: "My Weekend", level: "A2", topic: "General" },
   { id: "7PP-4eFXaqo", title: "My Favorite Hobby", level: "A2", topic: "Education" },
   { id: "6se1U6HwuCI", title: "Traveling Speaking Practice", level: "A2", topic: "Education" },
-  { id: "ubgFZnja_HE", title: "Fly Away (Lyrics)", level: "A2", topic: "Music" },
   // B1
   { id: "bABomTRzZzc", title: "Master English Shadowing", level: "B1", topic: "Education" },
   { id: "erf3dnG3AG8", title: "Daily English Practice", level: "B1", topic: "General" },
-  { id: "jYiGXxGb_nc", title: "Hermione vs Draco — Harry Potter", level: "B1", topic: "Film" },
   { id: "cZ3V4O4j4OE", title: "Zootopia — Gondola", level: "B1", topic: "Film" },
   { id: "z4K2F_OALPQ", title: "Sorting Ceremony — Harry Potter", level: "B1", topic: "Film" },
   { id: "JRKyEfBcXFQ", title: "Harry Visits The Weasleys", level: "B1", topic: "Film" },
@@ -68,7 +65,6 @@ const SUGGESTED_VIDEOS: SuggestedVideo[] = [
   { id: "z0PJnc8BFTk", title: "Friends: Ross Music Skills", level: "B1", topic: "Entertainment" },
   { id: "1gbppiPa_c0", title: "What's in My Bag — Kendall Jenner", level: "B1", topic: "Entertainment" },
   { id: "rHvQakk1zMA", title: "From The Start (Lyrics)", level: "B1", topic: "Music" },
-  { id: "NZGHXy1IAHM", title: "A Thousand Years (Lyrics)", level: "B1", topic: "Music" },
   // B2
   { id: "2hOp408Ib5w", title: "Obama on Education", level: "B2", topic: "News" },
   { id: "W1qtu-pF99o", title: "Region Famous For — IELTS", level: "B2", topic: "Education" },
@@ -78,10 +74,8 @@ const SUGGESTED_VIDEOS: SuggestedVideo[] = [
   { id: "AoUCuBdDNNw", title: "Biodiversity", level: "B2", topic: "Science" },
   { id: "E20Ljm5D7yU", title: "Why Mangosteen Is So Expensive", level: "B2", topic: "News" },
   // C1
-  { id: "jKYa-5s3fow", title: "Taylor Swift's Inspirational Speech", level: "C1", topic: "Entertainment" },
   { id: "N2FOxjtv5ns", title: "What is El Niño?", level: "C1", topic: "Science" },
   { id: "HffWFd_6bJ0", title: "Social Media Changes Your Brain", level: "C1", topic: "Science" },
-  { id: "oTe4f-bBEKg", title: "BTS Speech at United Nations", level: "C1", topic: "People" },
   { id: "20p5o6QaQfg", title: "How to Build Self Confidence", level: "C1", topic: "Education" },
   // C2
   { id: "gkjW9PZBRfk", title: "Emma Watson — HeForShe", level: "C2", topic: "People" },
