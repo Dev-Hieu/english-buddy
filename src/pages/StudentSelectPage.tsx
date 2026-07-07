@@ -30,6 +30,7 @@ export function StudentSelectPage(p: StudentSelectPageProps) {
   const [error, setError] = useState("");
 
   const isAdmin = user.role === "admin";
+  const isClass = user.role === "class";
   const limit = user.studentLimit ?? 1;
   const atLimit = !isAdmin && students.length >= limit;
 
@@ -39,7 +40,7 @@ export function StudentSelectPage(p: StudentSelectPageProps) {
         <div className="mx-auto mb-3 flex h-16 w-16 items-center justify-center rounded-3xl bg-secondary text-4xl shadow-card">🦉</div>
         <h1 className="text-3xl font-black tracking-tight">Chào {user.name}!</h1>
         <p className="mt-2 font-semibold text-muted-foreground">
-          {isAdmin ? "Tài khoản quản trị." : `Chọn bé để học · ${students.length}/${limit} hồ sơ`}
+          {isAdmin ? "Tài khoản quản trị." : isClass ? `Chọn bé để học · ${students.length} học sinh` : `Chọn bé để học · ${students.length}/${limit} hồ sơ`}
         </p>
       </header>
 
@@ -82,7 +83,7 @@ export function StudentSelectPage(p: StudentSelectPageProps) {
               }
             }}
           />
-        ) : isAdmin ? null : atLimit ? (
+        ) : isAdmin || isClass ? null : atLimit ? (
           <div className="flex min-h-[12rem] flex-col items-center justify-center gap-2 rounded-3xl border-2 border-dashed border-border bg-card/50 p-6 text-center text-muted-foreground">
             <p className="font-bold">Đã đạt giới hạn {limit} bé.</p>
             <p className="text-sm">Liên hệ admin để tăng hạn mức.</p>
@@ -95,7 +96,7 @@ export function StudentSelectPage(p: StudentSelectPageProps) {
       </section>
 
       <div className="flex flex-wrap items-center justify-center gap-3">
-        {students.length > 0 ? <Button type="button" variant="outline" onClick={() => setManage((m) => !m)}>{manage ? "Xong" : "Quản lý hồ sơ"}</Button> : null}
+        {students.length > 0 && !isClass ? <Button type="button" variant="outline" onClick={() => setManage((m) => !m)}>{manage ? "Xong" : "Quản lý hồ sơ"}</Button> : null}
         {onOpenProfile && <Button type="button" variant="outline" onClick={onOpenProfile}><Settings className="h-4 w-4" /> Thông tin</Button>}
         {isAdmin ? <Button type="button" variant="secondary" onClick={onOpenAdmin}><Shield className="h-4 w-4" /> Quản trị</Button> : null}
         {isAdmin || user.canEditImages ? <Button type="button" variant="secondary" onClick={onOpenPicker}><ImageIcon className="h-4 w-4" /> Chỉnh ảnh</Button> : null}

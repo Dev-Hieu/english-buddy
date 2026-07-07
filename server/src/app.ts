@@ -117,6 +117,11 @@ function canAccessStudent(req: Request, res: Response, studentId: string): boole
     const inClass = db.prepare("SELECT 1 FROM class_students cs JOIN classes c ON c.id = cs.classId WHERE cs.studentId = ? AND c.teacherId = ?").get(studentId, user.id);
     if (inClass) return true;
   }
+  // TK lớp học → bé trong lớp có tên trùng TK
+  if (user?.role === "class") {
+    const inClass = db.prepare("SELECT 1 FROM class_students cs JOIN classes c ON c.id = cs.classId JOIN users u ON u.name = c.name WHERE cs.studentId = ? AND u.id = ?").get(studentId, user.id);
+    if (inClass) return true;
+  }
   res.status(403).json({ error: "forbidden" });
   return false;
 }
@@ -647,11 +652,25 @@ export function createApp() {
   app.get("/api/topics", (_req, res) => {
     res.json(db.prepare(`SELECT * FROM topics ORDER BY "order"`).all());
   });
+  // Cache vocabulary in memory (data thay đổi hiếm, invalidate khi seed/import)
+  let vocabCache: { json: string; etag: string } | null = null;
   app.get("/api/vocabulary", (req, res) => {
     const topicId = req.query.topicId ? String(req.query.topicId) : null;
-    const rows = db.prepare("SELECT * FROM vocabulary").all() as any[];
-    const words = rows.map(rowToWord);
-    res.json(topicId ? words.filter((w) => w.topicIds.includes(topicId)) : words);
+    if (topicId) {
+      const rows = db.prepare("SELECT * FROM vocabulary").all() as any[];
+      return res.json(rows.map(rowToWord).filter((w) => w.topicIds.includes(topicId)));
+    }
+    // Full vocabulary — cache + ETag
+    if (!vocabCache) {
+      const rows = db.prepare("SELECT * FROM vocabulary").all() as any[];
+      const json = JSON.stringify(rows.map(rowToWord));
+      vocabCache = { json, etag: `"v-${rows.length}-${Date.now()}"` };
+    }
+    res.set("ETag", vocabCache.etag);
+    res.set("Cache-Control", "public, max-age=300"); // 5 phút
+    if (req.headers["if-none-match"] === vocabCache.etag) return res.status(304).end();
+    res.set("Content-Type", "application/json");
+    res.send(vocabCache.json);
   });
 
   // ── Học sinh (theo tài khoản) ──
@@ -659,9 +678,15 @@ export function createApp() {
     const user = (req as any).user;
     const q = `SELECT s.*, su.username AS studentUsername, su.email AS studentEmail, su.phone AS studentPhone
       FROM students s LEFT JOIN users su ON su.id = s.userId`;
-    const rows = user.role === "admin"
-      ? db.prepare(`${q} ORDER BY s.createdAt`).all()
-      : db.prepare(`${q} WHERE s.parentId = ? OR s.userId = ? ORDER BY s.createdAt`).all(user.id, user.id);
+    let rows;
+    if (user.role === "admin") {
+      rows = db.prepare(`${q} ORDER BY s.createdAt`).all();
+    } else if (user.role === "class") {
+      // TK lớp học → lấy students trong lớp có tên trùng với TK
+      rows = db.prepare(`${q} WHERE s.id IN (SELECT cs.studentId FROM class_students cs JOIN classes c ON c.id = cs.classId JOIN users u ON u.name = c.name WHERE u.id = ?) ORDER BY s.name`).all(user.id);
+    } else {
+      rows = db.prepare(`${q} WHERE s.parentId = ? OR s.userId = ? ORDER BY s.createdAt`).all(user.id, user.id);
+    }
     res.json(rows);
   });
 
