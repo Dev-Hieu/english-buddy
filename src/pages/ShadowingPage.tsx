@@ -83,52 +83,32 @@ export function ShadowingPage({ student, topicId, onBackHome }: Props) {
   const [ytLoading, setYtLoading] = useState(false);
   const [ytError, setYtError] = useState("");
 
+  const [pasteMode, setPasteMode] = useState(false);
+  const [pasteText, setPasteText] = useState("");
+
   const loadCaptions = async (vid: string) => {
     setYtLoading(true); setYtError("");
     try {
-      // 1. Check server cache first
-      const cached = await apiRequest<{ sentences: { start: number; end: number; text: string }[]; count: number }>(`/api/youtube-captions?v=${vid}`, { auth: false }).catch(() => null);
-      if (cached && cached.sentences.length > 0) {
-        setYtSentences(cached.sentences);
-        applyYtSentences(cached.sentences, vid);
-        return;
+      const data = await apiRequest<{ sentences: { start: number; end: number; text: string }[]; count: number }>(`/api/youtube-captions?v=${vid}`, { auth: false });
+      if (data.sentences.length > 0) {
+        setYtSentences(data.sentences);
+        applyYtSentences(data.sentences, vid);
+      } else {
+        setYtError("Chưa có subtitle. Bấm 'Dán subtitle' để nhập thủ công.");
+        setPasteMode(true);
       }
-      // 2. Fetch from browser (not blocked by YouTube)
-      const resp = await fetch(`https://www.youtube.com/watch?v=${vid}`);
-      const html = await resp.text();
-      const m = html.match(/"captionTracks":\[(.*?)\]/);
-      if (!m) { setYtError("Video không có subtitle"); return; }
-      const tracks = JSON.parse(`[${m[1]}]`);
-      const enTrack = tracks.find((t: any) => (t.languageCode || "").startsWith("en"));
-      if (!enTrack) { setYtError("Không có subtitle tiếng Anh"); return; }
-      const subUrl = enTrack.baseUrl.replace(/\\u0026/g, "&");
-      const subResp = await fetch(subUrl);
-      const xml = await subResp.text();
-      // Parse
-      const sentences: { start: number; end: number; text: string }[] = [];
-      const regex = /<text start="([^"]+)" dur="([^"]+)"[^>]*>([^<]*)<\/text>/g;
-      let match;
-      while ((match = regex.exec(xml)) !== null) {
-        const start = parseFloat(match[1]);
-        const dur = parseFloat(match[2]);
-        let text = match[3].replace(/&amp;/g, "&").replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&#39;/g, "'").replace(/\n/g, " ").trim();
-        if (text) sentences.push({ start: Math.round(start * 10) / 10, end: Math.round((start + dur) * 10) / 10, text });
-      }
-      // Merge short segments
-      const merged: typeof sentences = [];
-      for (const s of sentences) {
-        const last = merged[merged.length - 1];
-        if (last && s.start - last.end < 0.5 && last.text.length + s.text.length < 100) {
-          last.end = s.end; last.text += " " + s.text;
-        } else { merged.push({ ...s }); }
-      }
-      if (!merged.length) { setYtError("Subtitle trống"); return; }
-      setYtSentences(merged);
-      applyYtSentences(merged, vid);
-      // Cache on server
-      apiRequest("/api/youtube-captions", { method: "POST", body: { videoId: vid, sentences: merged }, auth: false }).catch(() => {});
-    } catch { setYtError("Không lấy được subtitle (CORS). Thử dán subtitle thủ công."); }
+    } catch { setYtError("Lỗi. Bấm 'Dán subtitle' để nhập thủ công."); setPasteMode(true); }
     finally { setYtLoading(false); }
+  };
+
+  const applyPastedText = (vid: string) => {
+    const lines = pasteText.split("\n").map((l) => l.trim()).filter((l) => l && !l.match(/^\d+$/) && !l.match(/^\d{2}:\d{2}/));
+    if (!lines.length) { setYtError("Không có câu nào"); return; }
+    const sentences = lines.map((text, i) => ({ start: i * 5, end: (i + 1) * 5, text }));
+    setYtSentences(sentences);
+    applyYtSentences(sentences, vid);
+    // Cache on server
+    apiRequest("/api/youtube-captions", { method: "POST", body: { videoId: vid, sentences }, auth: false }).catch(() => {});
   };
 
   const applyYtSentences = (sents: { start: number; end: number; text: string }[], vid: string) => {
@@ -212,10 +192,28 @@ export function ShadowingPage({ student, topicId, onBackHome }: Props) {
                       <div className="aspect-video w-full overflow-hidden rounded-xl">
                         <iframe src={`https://www.youtube.com/embed/${vid}`} className="h-full w-full" allowFullScreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" />
                       </div>
-                      {!ytSentences && !ytLoading && (
+                      {!ytSentences && !ytLoading && !pasteMode && (
                         <Button type="button" onClick={() => loadCaptions(vid)} className="w-full">
                           <Play className="h-4 w-4" /> Lấy subtitle từ video
                         </Button>
+                      )}
+                      {!ytSentences && !ytLoading && (
+                        <button type="button" onClick={() => setPasteMode(!pasteMode)} className="w-full text-center text-xs font-bold text-primary underline mt-1">
+                          {pasteMode ? "Ẩn" : "Dán subtitle thủ công"}
+                        </button>
+                      )}
+                      {pasteMode && !ytSentences && (
+                        <div className="space-y-2">
+                          <textarea
+                            className="w-full rounded-xl border-2 border-border px-3 py-2 text-sm font-bold outline-none focus:border-primary h-32 resize-none"
+                            placeholder={"Mở video trên YouTube → bấm ⋮ → Open transcript → copy paste vào đây\n\nHoặc gõ từng câu, mỗi câu 1 dòng:\nHello, my name is Dee Dee.\nWhat is your name?"}
+                            value={pasteText}
+                            onChange={(e) => setPasteText(e.target.value)}
+                          />
+                          <Button type="button" onClick={() => applyPastedText(vid)} disabled={!pasteText.trim()} className="w-full">
+                            <CheckCircle2 className="h-4 w-4" /> Dùng subtitle này
+                          </Button>
+                        </div>
                       )}
                       {ytLoading && <p className="text-center text-sm font-bold text-muted-foreground"><Loader2 className="inline h-4 w-4 animate-spin" /> Đang lấy subtitle...</p>}
                       {ytError && <p className="text-xs font-bold text-red-600">{ytError}</p>}
