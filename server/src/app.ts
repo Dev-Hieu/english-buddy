@@ -1,3 +1,4 @@
+import compression from "compression";
 import cors from "cors";
 import express from "express";
 import { writeFileSync } from "node:fs";
@@ -141,11 +142,12 @@ export const IMAGE_URLS: Record<string, string> = ${JSON.stringify(map, null, 2)
 export function createApp() {
   initSchema();
   const app = express();
+  app.use(compression()); // Gzip — giảm 70-80% bandwidth
   app.use(cors({ origin: process.env.CORS_ORIGIN || "https://en.vev.vn", credentials: true }));
   app.use(express.json());
-  // Không cache phản hồi API -> client luôn nhận dữ liệu mới sau khi sửa hồ sơ/tiến độ.
+  // Cache headers cho API — mutable data: no-store, immutable data: cache
   app.use("/api", (_req, res, next) => { res.set("Cache-Control", "no-store"); next(); });
-  app.use(express.static(PUBLIC_DIR));
+  app.use(express.static(PUBLIC_DIR, { maxAge: "1d", etag: true })); // Static files cache 1 ngày
 
   app.get("/api/health", (_req, res) => res.json({ ok: true }));
 

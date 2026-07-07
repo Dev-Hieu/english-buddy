@@ -16,6 +16,8 @@ export interface User {
   studentLimit: number;
   isPremium: boolean;
   canEditImages: boolean;
+  phone: string;
+  birthday: string;
 }
 
 const publicUser = (r: any): User => ({

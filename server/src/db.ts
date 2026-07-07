@@ -7,6 +7,10 @@ const DB_PATH = process.env.DB_PATH || path.join(dir, "..", "data.db");
 
 export const db = new Database(DB_PATH);
 db.pragma("journal_mode = WAL");
+db.pragma("synchronous = NORMAL");   // Nhanh hơn, vẫn an toàn với WAL
+db.pragma("cache_size = -64000");    // 64MB cache (mặc định 2MB)
+db.pragma("busy_timeout = 5000");    // Đợi 5s khi bị lock thay vì fail ngay
+db.pragma("temp_store = MEMORY");    // Temp tables trong RAM
 
 export function initSchema(): void {
   db.exec(`
