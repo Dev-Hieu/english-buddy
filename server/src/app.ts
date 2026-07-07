@@ -1006,6 +1006,65 @@ export function createApp() {
     res.json({ ok: true });
   });
 
+  // ── YouTube captions proxy (cho Shadowing) ──
+  app.get("/api/youtube-captions", async (req, res) => {
+    const videoId = String(req.query.v || "").trim();
+    if (!videoId || videoId.length !== 11) return res.status(400).json({ error: "thiếu video ID" });
+
+    // Check cache
+    const cacheKey = `ytcap|${videoId}`;
+    const cached = db.prepare("SELECT translation FROM translation_cache WHERE text = ?").get(cacheKey) as any;
+    if (cached) { try { return res.json(JSON.parse(cached.translation)); } catch { /* regenerate */ } }
+
+    try {
+      // Fetch YouTube page to get caption tracks
+      const pageResp = await fetch(`https://www.youtube.com/watch?v=${videoId}`, {
+        headers: { "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" }
+      });
+      const html = await pageResp.text();
+      const m = html.match(/"captionTracks":\[(.*?)\]/);
+      if (!m) return res.json({ sentences: [], error: "no captions" });
+
+      const tracks = JSON.parse(`[${m[1]}]`);
+      const enTrack = tracks.find((t: any) => (t.languageCode || "").startsWith("en"));
+      if (!enTrack) return res.json({ sentences: [], error: "no english captions" });
+
+      // Fetch subtitle XML
+      const subUrl = enTrack.baseUrl.replace(/\\u0026/g, "&");
+      const subResp = await fetch(subUrl, { headers: { "User-Agent": "Mozilla/5.0" } });
+      const xml = await subResp.text();
+
+      // Parse XML to sentences
+      const sentences: { start: number; end: number; text: string }[] = [];
+      const regex = /<text start="([^"]+)" dur="([^"]+)"[^>]*>([^<]*)<\/text>/g;
+      let match;
+      while ((match = regex.exec(xml)) !== null) {
+        const start = parseFloat(match[1]);
+        const dur = parseFloat(match[2]);
+        const text = match[3].replace(/&amp;/g, "&").replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/\n/g, " ").trim();
+        if (text) sentences.push({ start: Math.round(start * 10) / 10, end: Math.round((start + dur) * 10) / 10, text });
+      }
+
+      // Merge short segments into sentences (combine segments < 3s gap)
+      const merged: typeof sentences = [];
+      for (const s of sentences) {
+        const last = merged[merged.length - 1];
+        if (last && s.start - last.end < 0.5 && last.text.length + s.text.length < 100) {
+          last.end = s.end;
+          last.text += " " + s.text;
+        } else {
+          merged.push({ ...s });
+        }
+      }
+
+      const result = { videoId, sentences: merged, count: merged.length };
+      db.prepare("INSERT OR REPLACE INTO translation_cache (text, translation) VALUES (?, ?)").run(cacheKey, JSON.stringify(result));
+      res.json(result);
+    } catch (e: any) {
+      res.status(502).json({ error: "Không lấy được subtitle: " + (e.message || "") });
+    }
+  });
+
   // ── Proxy ảnh (Pexels + fallback Unsplash) ──
   app.get("/api/image", async (req, res) => {
     const query = String(req.query.query || "").trim();

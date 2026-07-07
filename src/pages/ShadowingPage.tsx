@@ -3,6 +3,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { SEED_VOCABULARY } from "@/data/seedVocabulary";
 import type { Student, VocabularyWord } from "@/types";
 import { speakTextWithSpeed } from "@/services/speechService";
+import { apiRequest } from "@/services/api";
 import { micAvailable, startRecording, type Recorder } from "@/services/audioRecorder";
 import { assessPronunciation, type PronResult } from "@/services/pronunciationService";
 import { Button } from "@/components/ui/button";
@@ -78,6 +79,9 @@ export function ShadowingPage({ student, topicId, onBackHome }: Props) {
   // YouTube
   const [ytUrl, setYtUrl] = useState("");
   const [showYt, setShowYt] = useState(false);
+  const [ytSentences, setYtSentences] = useState<{ start: number; end: number; text: string }[] | null>(null);
+  const [ytLoading, setYtLoading] = useState(false);
+  const [ytError, setYtError] = useState("");
 
   const recRef = useRef<Recorder | null>(null);
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -139,23 +143,68 @@ export function ShadowingPage({ student, topicId, onBackHome }: Props) {
                   className="w-full rounded-xl border-2 border-border px-3 py-2 text-sm font-bold outline-none focus:border-primary"
                   placeholder="Dán link YouTube..."
                   value={ytUrl}
-                  onChange={(e) => setYtUrl(e.target.value)}
+                  onChange={(e) => { setYtUrl(e.target.value); setYtSentences(null); setYtError(""); }}
                 />
-                {ytUrl && (() => {
+                {(() => {
                   const m = ytUrl.match(/(?:v=|youtu\.be\/|\/embed\/)([a-zA-Z0-9_-]{11})/);
-                  return m ? (
-                    <div className="aspect-video w-full overflow-hidden rounded-xl">
-                      <iframe src={`https://www.youtube.com/embed/${m[1]}`} className="h-full w-full" allowFullScreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" />
-                    </div>
-                  ) : <p className="text-xs font-bold text-red-600">Link không hợp lệ</p>;
+                  if (!ytUrl) return null;
+                  if (!m) return <p className="text-xs font-bold text-red-600">Link không hợp lệ</p>;
+                  const vid = m[1];
+                  const loadCaptions = async () => {
+                    setYtLoading(true); setYtError("");
+                    try {
+                      const data = await apiRequest<{ sentences: { start: number; end: number; text: string }[]; count: number; error?: string }>(`/api/youtube-captions?v=${vid}`, { auth: false });
+                      if (data.error || !data.sentences.length) { setYtError(data.error || "Video không có subtitle tiếng Anh"); return; }
+                      setYtSentences(data.sentences);
+                      // Auto-select all YouTube sentences
+                      const ytItems: VocabularyWord[] = data.sentences.map((s, i) => ({
+                        id: `yt_${vid}_${i}`, word: s.text, phonetic: "", meaning_vi: "",
+                        topicIds: [], level: "a1" as any, imageUrl: "", source: "youtube" as any, createdAt: Date.now(),
+                      }));
+                      // Replace allPhrases with YouTube sentences temporarily
+                      setSelectedIds(new Set(ytItems.map((w) => w.id)));
+                      // Store in a ref-like way — push to allPhrases won't work, use items directly
+                      setItems(ytItems);
+                    } catch { setYtError("Không lấy được subtitle"); }
+                    finally { setYtLoading(false); }
+                  };
+                  return (
+                    <>
+                      <div className="aspect-video w-full overflow-hidden rounded-xl">
+                        <iframe src={`https://www.youtube.com/embed/${vid}`} className="h-full w-full" allowFullScreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" />
+                      </div>
+                      {!ytSentences && !ytLoading && (
+                        <Button type="button" onClick={loadCaptions} className="w-full">
+                          <Play className="h-4 w-4" /> Lấy subtitle từ video
+                        </Button>
+                      )}
+                      {ytLoading && <p className="text-center text-sm font-bold text-muted-foreground"><Loader2 className="inline h-4 w-4 animate-spin" /> Đang lấy subtitle...</p>}
+                      {ytError && <p className="text-xs font-bold text-red-600">{ytError}</p>}
+                      {ytSentences && (
+                        <div>
+                          <p className="text-xs font-extrabold text-success mb-1">✓ {ytSentences.length} câu từ video</p>
+                          <div className="max-h-40 space-y-0.5 overflow-y-auto rounded-xl border border-border p-2">
+                            {ytSentences.map((s, i) => (
+                              <div key={i} className="flex items-center gap-2 rounded-lg px-2 py-1 text-left hover:bg-muted">
+                                <span className="text-[10px] font-bold text-muted-foreground shrink-0 w-10">{Math.floor(s.start / 60)}:{String(Math.floor(s.start % 60)).padStart(2, "0")}</span>
+                                <span className="text-xs font-bold truncate">{s.text}</span>
+                              </div>
+                            ))}
+                          </div>
+                          <Button type="button" className="mt-2 w-full" onClick={() => { setN(0); setPhase("listen"); }}>
+                            <Play className="h-4 w-4" /> Luyện {ytSentences.length} câu từ video
+                          </Button>
+                        </div>
+                      )}
+                    </>
+                  );
                 })()}
-                <p className="text-xs font-semibold text-muted-foreground">Mở video để nghe → chọn câu bên dưới → luyện Shadowing/Dictation</p>
                 {!ytUrl && (
                   <div className="mt-2">
                     <p className="text-xs font-extrabold text-muted-foreground mb-1.5">Video gợi ý:</p>
                     <div className="space-y-1 max-h-40 overflow-y-auto">
                       {SUGGESTED_VIDEOS.map((v) => (
-                        <button key={v.id} type="button" onClick={() => setYtUrl(`https://youtube.com/watch?v=${v.id}`)}
+                        <button key={v.id} type="button" onClick={() => { setYtUrl(`https://youtube.com/watch?v=${v.id}`); setYtSentences(null); }}
                           className="flex w-full items-center gap-2 rounded-lg px-2 py-1.5 text-left hover:bg-muted transition-colors">
                           <span className={cn("shrink-0 rounded px-1.5 py-0.5 text-[10px] font-extrabold",
                             v.level === "A1" ? "bg-green-100 text-green-700" : v.level === "A2" ? "bg-blue-100 text-blue-700" : "bg-purple-100 text-purple-700")}>
@@ -167,6 +216,7 @@ export function ShadowingPage({ student, topicId, onBackHome }: Props) {
                     </div>
                   </div>
                 )}
+                <p className="text-xs font-semibold text-muted-foreground">Dán link → lấy subtitle → luyện Shadowing/Dictation theo từng câu</p>
               </div>
             )}
           </CardContent>
