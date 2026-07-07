@@ -46,7 +46,11 @@ export function SkillTestPage({ student, mode, onBackHome }: Props) {
   const tasks = useMemo(() => {
     if (!session) return [];
     const out: { item: SkillTestItem; skill: Skill }[] = [];
-    for (const item of session.items) for (const skill of session.skills) out.push({ item, skill });
+    for (const item of session.items) for (const skill of session.skills) {
+      // Bỏ qua skill "speak" nếu từ không có phonetic (từ Oxford/phrases chưa có)
+      if (skill === "speak" && !item.phonetic) continue;
+      out.push({ item, skill });
+    }
     return out;
   }, [session]);
 
