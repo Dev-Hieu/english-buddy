@@ -505,7 +505,12 @@ export function ShadowingPage({ student, onBackHome }: Props) {
   };
 
   const handleVideoEnded = () => {
-    // Video kết thúc — nếu câu cuối chưa chấm → record nó
+    if (practiceMode === "dubbing") {
+      // Dubbing: video hết → dừng, không record
+      playerRef.current?.setVolume?.(100);
+      return;
+    }
+    // Shadow/Dictation: câu cuối chưa chấm → record
     const lastIdx = sentences.length - 1;
     if (lastIdx >= 0 && practicePhase === "idle" && !scores[lastIdx]) {
       lastPausedIdxRef.current = -1;
