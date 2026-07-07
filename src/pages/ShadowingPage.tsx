@@ -514,25 +514,25 @@ export function ShadowingPage({ onBackHome }: Props) {
       </div>
 
       {/* Current sentence — click word to lookup */}
-      {activeSent && (
-        <div className={cn("mb-2 rounded-xl px-4 py-2.5 text-center transition-all", practicePhase !== "idle" ? "bg-primary/10 border border-primary/30" : "bg-muted")}>
-          <p className="text-lg font-black leading-relaxed">
-            {activeSent.text.split(/(\s+)/).map((w, i) => {
-              const isWord = /[a-zA-Z]/.test(w);
-              if (!isWord) return <span key={i}>{w}</span>;
-              const ipa = showIpa ? ipaMap[w.toLowerCase().replace(/[^a-z'-]/g, "")] : null;
-              return (
-                <span key={i} className="inline-block text-center">
-                  <button type="button" onClick={() => lookupWordFn(w)}
-                    className="hover:text-primary hover:underline transition-colors">{w}</button>
-                  {ipa && <span className="block text-[9px] font-semibold text-muted-foreground leading-tight">{ipa}</span>}
-                </span>
-              );
-            })}
-          </p>
-          {repeatTarget > 1 && <p className="text-[10px] font-bold text-muted-foreground">Lần {repeatDone + 1}/{repeatTarget}</p>}
-        </div>
-      )}
+      {activeSent && (() => {
+        const words = activeSent.text.split(/(\s+)/);
+        const ipaLine = showIpa ? words.map((w) => {
+          const clean = w.toLowerCase().replace(/[^a-z'-]/g, "");
+          return ipaMap[clean] || (/[a-zA-Z]/.test(w) ? w.toLowerCase() : w);
+        }).join("") : "";
+        return (
+          <div className={cn("mb-2 rounded-xl px-4 py-2.5 text-center transition-all", practicePhase !== "idle" ? "bg-primary/10 border border-primary/30" : "bg-muted")}>
+            <p className="text-lg font-black leading-relaxed">
+              {words.map((w, i) => /[a-zA-Z]/.test(w) ? (
+                <button key={i} type="button" onClick={() => lookupWordFn(w)}
+                  className="hover:text-primary hover:underline transition-colors">{w}</button>
+              ) : <span key={i}>{w}</span>)}
+            </p>
+            {showIpa && ipaLine && <p className="text-xs font-semibold text-muted-foreground mt-1">{ipaLine}</p>}
+            {repeatTarget > 1 && <p className="text-[10px] font-bold text-muted-foreground">Lần {repeatDone + 1}/{repeatTarget}</p>}
+          </div>
+        );
+      })()}
 
       {/* Word lookup popup */}
       {lookupWord && (
