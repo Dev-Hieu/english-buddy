@@ -499,12 +499,14 @@ export function ShadowingPage({ student, onBackHome }: Props) {
     try {
       fullRecRef.current = await startRecording();
       playerRef.current?.seekTo?.(sentences[0]?.start || 0, true);
+      playerRef.current?.setVolume?.(0); // Tắt âm video — người học tự đọc
       playerRef.current?.playVideo?.();
     } catch { setPracticePhase("idle"); }
   };
 
   const stopFullLesson = async () => {
     playerRef.current?.pauseVideo?.();
+    playerRef.current?.setVolume?.(100); // Bật lại âm
     setIsPlaying(false);
     if (!fullRecRef.current) { setPracticePhase("idle"); return; }
     setPracticePhase("full-scoring");
