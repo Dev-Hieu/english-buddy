@@ -23,68 +23,115 @@ const WAIT_LABELS: Record<WaitMode, string> = { off: "Tắt", "3s": "+3s", "5s":
 const SPEEDS = [0.5, 0.75, 1, 1.25, 1.5];
 
 type VideoLevel = "A1" | "A2" | "B1" | "B2" | "C1" | "C2";
-type VideoTopic = "General" | "Education" | "Film" | "Music" | "Entertainment" | "Science" | "News" | "People";
+type VideoTopic = "Kids" | "Daily" | "IELTS" | "Film" | "Music" | "News" | "Science" | "Culture" | "Business" | "Academic";
 interface SuggestedVideo { id: string; title: string; level: VideoLevel; topic: VideoTopic; }
 
 const SUGGESTED_VIDEOS: SuggestedVideo[] = [
-  // A1
-  { id: "u0zqXffuN5Y", title: "Hello", level: "A1", topic: "General" },
-  { id: "WgYcNtL7f7c", title: "What do you want?", level: "A1", topic: "General" },
-  { id: "2iiuvBnW9kQ", title: "English Reading — Shopping", level: "A1", topic: "General" },
-  { id: "fCEbDDfzaQg", title: "I am a tiger", level: "A1", topic: "General" },
-  { id: "V7P83_fcE1A", title: "Who Likes Cake", level: "A1", topic: "General" },
-  { id: "89s6rXPHowI", title: "Tim Helps a Sheep", level: "A1", topic: "People" },
-  { id: "XWq58Abc7zk", title: "Supermarket Listening", level: "A1", topic: "Education" },
-  { id: "bngvFaB_qx0", title: "English Reading — Traveling", level: "A1", topic: "General" },
-  { id: "cVMtYAbE8pQ", title: "Grade 4 - Unit 1 - Lesson 3", level: "A1", topic: "Education" },
-  { id: "AB7-J-JVLTc", title: "I'm in a hurry", level: "A1", topic: "General" },
-  { id: "NtDd-jPvQM8", title: "Peppa Pig — Mummy at Work", level: "A1", topic: "Film" },
-  { id: "6VVEIH81jCo", title: "100 Sight Word Poems", level: "A1", topic: "Entertainment" },
-  { id: "MDQFir7hU5Y", title: "What Do You Like", level: "A1", topic: "Entertainment" },
-  // A2
-  { id: "XmoMKKlSZ1Y", title: "Improve English with Music", level: "A2", topic: "General" },
-  { id: "aJ5iL8AVkBg", title: "Improve by Talking to Yourself", level: "A2", topic: "General" },
+  // ── Kids (A1) ──
+  { id: "u0zqXffuN5Y", title: "Hello", level: "A1", topic: "Kids" },
+  { id: "WgYcNtL7f7c", title: "What do you want?", level: "A1", topic: "Kids" },
+  { id: "fCEbDDfzaQg", title: "I am a tiger", level: "A1", topic: "Kids" },
+  { id: "V7P83_fcE1A", title: "Who Likes Cake", level: "A1", topic: "Kids" },
+  { id: "89s6rXPHowI", title: "Tim Helps a Sheep", level: "A1", topic: "Kids" },
+  { id: "NtDd-jPvQM8", title: "Peppa Pig — Mummy at Work", level: "A1", topic: "Kids" },
+  { id: "MDQFir7hU5Y", title: "What Do You Like", level: "A1", topic: "Kids" },
+  { id: "6VVEIH81jCo", title: "100 Sight Word Poems", level: "A1", topic: "Kids" },
+  { id: "wbKtYgJfV4I", title: "My Little Red Wagon", level: "A1", topic: "Kids" },
+  { id: "ZeRq4dNWu68", title: "Hello (Story)", level: "A1", topic: "Kids" },
+  { id: "ZXTmyBKV0AI", title: "GS1 Monkey", level: "A1", topic: "Kids" },
+  // ── Daily (A1-A2) ──
+  { id: "2iiuvBnW9kQ", title: "English Reading — Shopping", level: "A1", topic: "Daily" },
+  { id: "bngvFaB_qx0", title: "English Reading — Traveling", level: "A1", topic: "Daily" },
+  { id: "XWq58Abc7zk", title: "Supermarket Listening", level: "A1", topic: "Daily" },
+  { id: "AB7-J-JVLTc", title: "I'm in a hurry", level: "A1", topic: "Daily" },
+  { id: "cVMtYAbE8pQ", title: "Grade 4 - Unit 1 - Lesson 3", level: "A1", topic: "Daily" },
+  { id: "XmoMKKlSZ1Y", title: "Improve English with Music", level: "A2", topic: "Daily" },
+  { id: "aJ5iL8AVkBg", title: "Improve by Talking to Yourself", level: "A2", topic: "Daily" },
+  { id: "l4Lk0JTD938", title: "Talking About Cooking", level: "A2", topic: "Daily" },
+  { id: "Zt5ch6AzpAQ", title: "I Don't Want To Work Today", level: "A2", topic: "Daily" },
+  { id: "lPIuAgZ3I2I", title: "Weekend With Friends", level: "A2", topic: "Daily" },
+  { id: "3MSsTK2bHVo", title: "My Weekend", level: "A2", topic: "Daily" },
+  { id: "NAcG64bOx8k", title: "Asking for Directions", level: "A2", topic: "Daily" },
+  { id: "HrRVjWdeqdE", title: "My Favorite Place — Easy Story", level: "A2", topic: "Daily" },
+  { id: "rXaF79N0jQw", title: "Never Blame Anyone", level: "A2", topic: "Daily" },
+  { id: "cuni7GpQMvM", title: "Read English Books Every Day", level: "A2", topic: "Daily" },
+  { id: "ajHg2CeQMvo", title: "It's Finally The Weekend", level: "A2", topic: "Daily" },
+  // ── IELTS (A2-C1) ──
+  { id: "7PP-4eFXaqo", title: "My Favorite Hobby", level: "A2", topic: "IELTS" },
+  { id: "6se1U6HwuCI", title: "Traveling Speaking Practice", level: "A2", topic: "IELTS" },
+  { id: "X2z_nsNtUYM", title: "Speaking Practice Beginners", level: "A2", topic: "IELTS" },
+  { id: "ax5i0ZrbhvY", title: "Speaking Practice — Smartphone", level: "A2", topic: "IELTS" },
+  { id: "U63tSTeepVc", title: "Speaking & Listening Practice", level: "A2", topic: "IELTS" },
+  { id: "bABomTRzZzc", title: "Master English Shadowing", level: "B1", topic: "IELTS" },
+  { id: "erf3dnG3AG8", title: "Daily English Practice", level: "B1", topic: "IELTS" },
+  { id: "Gw4nLZWA6bE", title: "IELTS Speaking Part 1 Day 13", level: "B1", topic: "IELTS" },
+  { id: "tnssk75wtec", title: "Reading Can Change Your English", level: "B1", topic: "IELTS" },
+  { id: "W1qtu-pF99o", title: "Region Famous For — Band 6.5-7", level: "B2", topic: "IELTS" },
+  { id: "2NofDy9zXBA", title: "Describe a Building — Louvre", level: "B2", topic: "IELTS" },
+  { id: "uv1wCz1x2hc", title: "IELTS Structure for Band 7", level: "B2", topic: "IELTS" },
+  { id: "_Vyg1jxEsiY", title: "IELTS Speaking — Introduce Yourself", level: "C1", topic: "IELTS" },
+  // ── Film & Animation ──
   { id: "GoNQmdjAV9k", title: "Happy Christmas — Harry Potter", level: "A2", topic: "Film" },
   { id: "nXait2wHOQc", title: "Kung Fu Panda 2 — Baby Po", level: "A2", topic: "Film" },
-  { id: "NAcG64bOx8k", title: "Asking for Directions", level: "A2", topic: "Education" },
-  { id: "l4Lk0JTD938", title: "Talking About Cooking", level: "A2", topic: "General" },
-  { id: "Zt5ch6AzpAQ", title: "I Don't Want To Work Today", level: "A2", topic: "General" },
-  { id: "lPIuAgZ3I2I", title: "Weekend With Friends", level: "A2", topic: "General" },
-  { id: "3MSsTK2bHVo", title: "My Weekend", level: "A2", topic: "General" },
-  { id: "7PP-4eFXaqo", title: "My Favorite Hobby", level: "A2", topic: "Education" },
-  { id: "6se1U6HwuCI", title: "Traveling Speaking Practice", level: "A2", topic: "Education" },
-  // B1
-  { id: "bABomTRzZzc", title: "Master English Shadowing", level: "B1", topic: "Education" },
-  { id: "erf3dnG3AG8", title: "Daily English Practice", level: "B1", topic: "General" },
+  { id: "7shcacVeNjs", title: "Minions & Monsters Trailer", level: "A2", topic: "Film" },
   { id: "cZ3V4O4j4OE", title: "Zootopia — Gondola", level: "B1", topic: "Film" },
   { id: "z4K2F_OALPQ", title: "Sorting Ceremony — Harry Potter", level: "B1", topic: "Film" },
   { id: "JRKyEfBcXFQ", title: "Harry Visits The Weasleys", level: "B1", topic: "Film" },
   { id: "re5veV2F7eY", title: "Mean Girls — Meeting the Plastics", level: "B1", topic: "Film" },
-  { id: "dDaBjcM8z8s", title: "Relationships", level: "B1", topic: "General" },
-  { id: "1gRIqFqjiBQ", title: "Listen to Your Heart — Muniba", level: "B1", topic: "General" },
-  { id: "z0PJnc8BFTk", title: "Friends: Ross Music Skills", level: "B1", topic: "Entertainment" },
-  { id: "1gbppiPa_c0", title: "What's in My Bag — Kendall Jenner", level: "B1", topic: "Entertainment" },
-  { id: "rHvQakk1zMA", title: "From The Start (Lyrics)", level: "B1", topic: "Music" },
-  // B2
-  { id: "2hOp408Ib5w", title: "Obama on Education", level: "B2", topic: "News" },
-  { id: "W1qtu-pF99o", title: "Region Famous For — IELTS", level: "B2", topic: "Education" },
-  { id: "GSvyRVw366k", title: "Taylor Swift on 60 Minutes", level: "B2", topic: "Entertainment" },
+  { id: "J9MKjQ6-UBU", title: "Zootopia — Judy's Hustle", level: "B1", topic: "Film" },
+  { id: "t6-fT0hjTvc", title: "Kiki's Delivery Service Trailer", level: "B1", topic: "Film" },
+  { id: "6gwZf58EpQQ", title: "It's Not You, It's Her", level: "B1", topic: "Film" },
   { id: "okxZDUOSAfU", title: "Legally Blonde — Graduation", level: "B2", topic: "Film" },
-  { id: "xpyrefzvTpI", title: "DiCaprio Best Actor — Oscars", level: "B2", topic: "Entertainment" },
-  { id: "AoUCuBdDNNw", title: "Biodiversity", level: "B2", topic: "Science" },
+  // ── Music ──
+  { id: "rHvQakk1zMA", title: "From The Start — Laufey", level: "B1", topic: "Music" },
+  { id: "-J2rSm8K9_Y", title: "Babydoll — Dominic Fike", level: "B1", topic: "Music" },
+  { id: "gte3BoXKwP0", title: "Pocketful of Sunshine", level: "B1", topic: "Music" },
+  { id: "-IptS26d36Y", title: "Cry On My Shoulder", level: "B1", topic: "Music" },
+  { id: "KNtJGQkC-WI", title: "We Can't Be Friends — Ariana", level: "B1", topic: "Music" },
+  { id: "GkG60kISnfc", title: "ILLIT — Jellyous", level: "B1", topic: "Music" },
+  { id: "Quojq5H5XVo", title: "I Come to Thee, Dear Lord", level: "B1", topic: "Music" },
+  // ── News ──
+  { id: "2hOp408Ib5w", title: "Obama on Education", level: "B2", topic: "News" },
   { id: "E20Ljm5D7yU", title: "Why Mangosteen Is So Expensive", level: "B2", topic: "News" },
-  // C1
+  { id: "3SfLBD0t2c4", title: "U.S. and Iran Ceasefire", level: "B2", topic: "News" },
+  { id: "mgfSmxcNJ2E", title: "UN: Sustainable Tourism", level: "B2", topic: "News" },
+  { id: "qaHLd8de6nM", title: "Obama on 'Woke' Culture", level: "B2", topic: "News" },
+  { id: "gNfq6D0klIw", title: "Trump Storms Out of Interview", level: "B2", topic: "News" },
+  { id: "VYJtb2YXae8", title: "Why We All Need Subtitles", level: "C1", topic: "News" },
+  // ── Science ──
+  { id: "AoUCuBdDNNw", title: "Biodiversity", level: "B2", topic: "Science" },
   { id: "N2FOxjtv5ns", title: "What is El Niño?", level: "C1", topic: "Science" },
   { id: "HffWFd_6bJ0", title: "Social Media Changes Your Brain", level: "C1", topic: "Science" },
-  { id: "20p5o6QaQfg", title: "How to Build Self Confidence", level: "C1", topic: "Education" },
-  // C2
-  { id: "gkjW9PZBRfk", title: "Emma Watson — HeForShe", level: "C2", topic: "People" },
+  { id: "cDlHHCGbMc4", title: "How Do Bees Make Honey?", level: "C1", topic: "Science" },
   { id: "c_wOnJJEfxE", title: "What is Cultural Humility?", level: "C2", topic: "Science" },
   { id: "4h7pcrSg0k8", title: "What Happens After a Stroke", level: "C2", topic: "Science" },
+  // ── Culture ──
+  { id: "dDaBjcM8z8s", title: "Relationships", level: "B1", topic: "Culture" },
+  { id: "1gRIqFqjiBQ", title: "Listen to Your Heart — Muniba", level: "B1", topic: "Culture" },
+  { id: "z0PJnc8BFTk", title: "Friends: Ross Music Skills", level: "B1", topic: "Culture" },
+  { id: "1gbppiPa_c0", title: "What's in My Bag — Kendall Jenner", level: "B1", topic: "Culture" },
+  { id: "zkczDkbaE68", title: "Selena Gomez: Believe in Yourself", level: "B1", topic: "Culture" },
+  { id: "Rjo8NWIemJs", title: "KATSEYE Spill Secrets", level: "B1", topic: "Culture" },
+  { id: "GSvyRVw366k", title: "Taylor Swift on 60 Minutes", level: "B2", topic: "Culture" },
+  { id: "xpyrefzvTpI", title: "DiCaprio Best Actor — Oscars", level: "B2", topic: "Culture" },
+  { id: "Ha2SpAwMZbQ", title: "Hailey Bieber Obsessions", level: "B2", topic: "Culture" },
+  { id: "chyRpj-971o", title: "Fight Club — Tyler Durden", level: "B2", topic: "Culture" },
+  { id: "aaExiKsvt9A", title: "The Point of Travel", level: "C1", topic: "Culture" },
+  // ── Business ──
+  { id: "GMbIwPVvIvc", title: "Good Habits — Small Daily Habits", level: "B2", topic: "Business" },
+  { id: "RKnWqfDk39Y", title: "Importance of Project One-Pagers", level: "B2", topic: "Business" },
+  { id: "20p5o6QaQfg", title: "How to Build Self Confidence", level: "C1", topic: "Business" },
+  // ── Academic ──
+  { id: "FUuIn7uGKYw", title: "Emma Watson's Speech Icon", level: "B2", topic: "Academic" },
+  { id: "_2XdNQ6DD3Y", title: "Control Your Happiness — Joel Osteen", level: "C1", topic: "Academic" },
+  { id: "_Rbl_tZeRyo", title: "JK Rowling Harvard Speech", level: "C1", topic: "Academic" },
+  { id: "6Ycf9lkrU_g", title: "Taking Care of Mental Health", level: "C1", topic: "Academic" },
+  { id: "gkjW9PZBRfk", title: "Emma Watson — HeForShe", level: "C2", topic: "Academic" },
+  { id: "T8KDFrF3SdM", title: "Benefit of Emotional Education", level: "C2", topic: "Academic" },
 ];
 
 const LEVELS: VideoLevel[] = ["A1", "A2", "B1", "B2", "C1", "C2"];
-const TOPICS: VideoTopic[] = ["General", "Education", "Film", "Music", "Entertainment", "Science", "News", "People"];
+const TOPICS: VideoTopic[] = ["Kids", "Daily", "IELTS", "Film", "Music", "News", "Science", "Culture", "Business", "Academic"];
 
 // IPA cho function words phổ biến (không có trong vocabulary DB)
 const COMMON_IPA: Record<string, string> = {
