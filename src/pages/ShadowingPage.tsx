@@ -22,6 +22,29 @@ const SPEEDS = [1.0, 1.15, 1.3];
 const SPEED_LABELS = ["1×", "1.15×", "1.3×"];
 const WAIT_LABELS: Record<WaitMode, string> = { off: "Tắt", "3s": "+3s", "5s": "+5s", manual: "Bấm" };
 
+const SUGGESTED_VIDEOS = [
+  { id: "WgYcNtL7f7c", title: "What do you want?", level: "A1" },
+  { id: "u0zqXffuN5Y", title: "Hello", level: "A1" },
+  { id: "2iiuvBnW9kQ", title: "English Reading — Shopping", level: "A1" },
+  { id: "fCEbDDfzaQg", title: "I am a tiger", level: "A1" },
+  { id: "V7P83_fcE1A", title: "Who Likes Cake", level: "A1" },
+  { id: "89s6rXPHowI", title: "Tim Helps a Sheep", level: "A1" },
+  { id: "XWq58Abc7zk", title: "Supermarket Listening", level: "A1" },
+  { id: "jp67tX4i54c", title: "Dance Monkey (Karaoke)", level: "A1" },
+  { id: "XmoMKKlSZ1Y", title: "Improve English with Music", level: "A2" },
+  { id: "aJ5iL8AVkBg", title: "Improve English by Talking to Yourself", level: "A2" },
+  { id: "GoNQmdjAV9k", title: "Happy Christmas — Harry Potter", level: "A2" },
+  { id: "l4Lk0JTD938", title: "Talking About Cooking Breakfast", level: "A2" },
+  { id: "nXait2wHOQc", title: "Kung Fu Panda 2 — Baby Po", level: "A2" },
+  { id: "NAcG64bOx8k", title: "Asking for Directions", level: "A2" },
+  { id: "bngvFaB_qx0", title: "English Reading — Traveling", level: "A1" },
+  { id: "bABomTRzZzc", title: "Master English Shadowing", level: "B1" },
+  { id: "jYiGXxGb_nc", title: "Hermione vs Draco — Harry Potter", level: "B1" },
+  { id: "cZ3V4O4j4OE", title: "Zootopia — Gondola", level: "B1" },
+  { id: "z4K2F_OALPQ", title: "Harry Potter — Sorting Ceremony", level: "B1" },
+  { id: "JRKyEfBcXFQ", title: "Harry Visits The Weasleys", level: "B1" },
+];
+
 function getPhrases(vocab: VocabularyWord[]): VocabularyWord[] {
   return vocab.filter((w) => w.phonetic).sort((a, b) => {
     const aPhrase = a.word.includes(" ") ? 0 : 1;
@@ -127,6 +150,23 @@ export function ShadowingPage({ student, topicId, onBackHome }: Props) {
                   ) : <p className="text-xs font-bold text-red-600">Link không hợp lệ</p>;
                 })()}
                 <p className="text-xs font-semibold text-muted-foreground">Mở video để nghe → chọn câu bên dưới → luyện Shadowing/Dictation</p>
+                {!ytUrl && (
+                  <div className="mt-2">
+                    <p className="text-xs font-extrabold text-muted-foreground mb-1.5">Video gợi ý:</p>
+                    <div className="space-y-1 max-h-40 overflow-y-auto">
+                      {SUGGESTED_VIDEOS.map((v) => (
+                        <button key={v.id} type="button" onClick={() => setYtUrl(`https://youtube.com/watch?v=${v.id}`)}
+                          className="flex w-full items-center gap-2 rounded-lg px-2 py-1.5 text-left hover:bg-muted transition-colors">
+                          <span className={cn("shrink-0 rounded px-1.5 py-0.5 text-[10px] font-extrabold",
+                            v.level === "A1" ? "bg-green-100 text-green-700" : v.level === "A2" ? "bg-blue-100 text-blue-700" : "bg-purple-100 text-purple-700")}>
+                            {v.level}
+                          </span>
+                          <span className="text-xs font-bold truncate">{v.title}</span>
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                )}
               </div>
             )}
           </CardContent>
