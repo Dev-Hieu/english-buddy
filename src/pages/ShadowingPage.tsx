@@ -770,11 +770,15 @@ export function ShadowingPage({ student, onBackHome }: Props) {
           return ipaMap[clean] || COMMON_IPA[clean] || clean;
         }).join("") : "";
         return (
-          <div className={cn("mb-2 rounded-xl px-4 py-2.5 text-center transition-all", practicePhase !== "idle" ? "bg-primary/10 border border-primary/30" : "bg-muted")}>
-            <p className="text-lg font-black leading-relaxed">
+          <div className={cn("mb-2 rounded-2xl px-5 py-3 text-center transition-all shadow-sm",
+            practicePhase === "full-recording" ? "bg-yellow-400 border-2 border-yellow-500" :
+            practicePhase === "recording" ? "bg-primary text-white border-2 border-primary" :
+            practicePhase !== "idle" ? "bg-primary/10 border border-primary/30" :
+            isPlaying ? "bg-gradient-to-r from-primary/20 to-success/20 border-2 border-primary/50" : "bg-muted")}>
+            <p className={cn("text-xl font-black leading-relaxed", practicePhase === "recording" ? "text-white" : practicePhase === "full-recording" ? "text-yellow-900" : "")}>
               {words.map((w, i) => /[a-zA-Z]/.test(w) ? (
                 <button key={i} type="button" onClick={() => lookupWordFn(w)}
-                  className="hover:text-primary hover:underline transition-colors">{w}</button>
+                  className={cn("transition-colors", practicePhase === "recording" ? "hover:text-yellow-200 hover:underline" : practicePhase === "full-recording" ? "hover:text-yellow-700 hover:underline" : "hover:text-primary hover:underline")}>{w}</button>
               ) : <span key={i}>{w}</span>)}
             </p>
             {showIpa && ipaLine && <p className="text-xs font-semibold text-muted-foreground mt-1">{ipaLine}</p>}
