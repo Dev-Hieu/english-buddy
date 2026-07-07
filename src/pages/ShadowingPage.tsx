@@ -126,6 +126,8 @@ export function ShadowingPage({ onBackHome }: Props) {
   const [dictInput, setDictInput] = useState("");
   const [dictCorrect, setDictCorrect] = useState<boolean | null>(null);
   const [scores, setScores] = useState<Record<number, { score: number; mode: string }>>({});
+  const [showIpa, setShowIpa] = useState(false);
+  const [ipaMap, setIpaMap] = useState<Record<string, string>>({});
 
   // Repeat count
   const [repeatTarget, setRepeatTarget] = useState(1);
@@ -140,6 +142,16 @@ export function ShadowingPage({ onBackHome }: Props) {
   const recRef = useRef<Recorder | null>(null);
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const listRef = useRef<HTMLDivElement>(null);
+
+  // Load IPA map khi bật toggle (1 lần)
+  useEffect(() => {
+    if (!showIpa || Object.keys(ipaMap).length > 0) return;
+    apiRequest<any[]>("/api/vocabulary", { auth: false }).then((words) => {
+      const map: Record<string, string> = {};
+      for (const w of words) if (w.phonetic && w.word) map[w.word.toLowerCase()] = w.phonetic;
+      setIpaMap(map);
+    }).catch(() => {});
+  }, [showIpa]);
 
   const extractVideoId = (url: string) => url.match(/(?:v=|youtu\.be\/|\/embed\/)([a-zA-Z0-9_-]{11})/)?.[1] || "";
 
@@ -466,7 +478,7 @@ export function ShadowingPage({ onBackHome }: Props) {
           <button type="button" onClick={() => currentIdx < sentences.length - 1 && seekToSentence(currentIdx + 1)} className="rounded-lg p-1 text-muted-foreground hover:bg-muted"><ChevronRight className="h-4 w-4" /></button>
           <span className="text-[10px] font-extrabold text-muted-foreground ml-1">{Math.max(0, currentIdx + 1)}/{sentences.length}</span>
           <button type="button" onClick={() => { setVideoId(""); setSentences([]); setCurrentIdx(-1); setPracticePhase("idle"); setScores({}); setMutedSentences(new Set()); playerRef.current?.destroy?.(); playerRef.current = null; }}
-            className="ml-1 rounded-md bg-muted px-1.5 py-0.5 text-[9px] font-extrabold text-muted-foreground hover:text-primary"><Video className="inline h-3 w-3" /> Đổi</button>
+            className="ml-1 rounded-md bg-muted px-1.5 py-0.5 text-[9px] font-extrabold text-muted-foreground hover:text-primary"><Video className="inline h-3 w-3" /> Chọn video</button>
         </div>
         <div className="flex gap-0.5 rounded-lg bg-muted p-0.5">
           {SPEEDS.map((s) => (<button key={s} type="button" onClick={() => changeSpeed(s)}
@@ -496,6 +508,8 @@ export function ShadowingPage({ onBackHome }: Props) {
                 className={cn("rounded-md px-1 py-0.5 text-[9px] font-extrabold", repeatTarget === r ? "bg-primary text-white" : "bg-muted text-muted-foreground")}>{r}×</button>
             ))}
           </div>
+          <button type="button" onClick={() => setShowIpa(!showIpa)}
+            className={cn("rounded-md px-1.5 py-0.5 text-[9px] font-extrabold ml-0.5", showIpa ? "bg-primary text-white" : "bg-muted text-muted-foreground")}>IPA</button>
         </div>
       </div>
 
@@ -505,10 +519,15 @@ export function ShadowingPage({ onBackHome }: Props) {
           <p className="text-lg font-black leading-relaxed">
             {activeSent.text.split(/(\s+)/).map((w, i) => {
               const isWord = /[a-zA-Z]/.test(w);
-              return isWord ? (
-                <button key={i} type="button" onClick={() => lookupWordFn(w)}
-                  className="hover:text-primary hover:underline transition-colors">{w}</button>
-              ) : <span key={i}>{w}</span>;
+              if (!isWord) return <span key={i}>{w}</span>;
+              const ipa = showIpa ? ipaMap[w.toLowerCase().replace(/[^a-z'-]/g, "")] : null;
+              return (
+                <span key={i} className="inline-block text-center">
+                  <button type="button" onClick={() => lookupWordFn(w)}
+                    className="hover:text-primary hover:underline transition-colors">{w}</button>
+                  {ipa && <span className="block text-[9px] font-semibold text-muted-foreground leading-tight">{ipa}</span>}
+                </span>
+              );
             })}
           </p>
           {repeatTarget > 1 && <p className="text-[10px] font-bold text-muted-foreground">Lần {repeatDone + 1}/{repeatTarget}</p>}
