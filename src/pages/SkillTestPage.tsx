@@ -69,6 +69,8 @@ export function SkillTestPage({ student, mode, onBackHome }: Props) {
   if (error) return <Shell onBack={onBackHome}><Info text={error} /></Shell>;
   if (!session || submitting) return <Shell onBack={onBackHome}><Center><Loader2 className="h-8 w-8 animate-spin text-primary" /></Center></Shell>;
   if (results) return <Shell onBack={onBackHome}><ResultView data={results} onDone={onBackHome} /></Shell>;
+  // Không có từ hợp lệ để thi (vd từ đã bị gỡ khỏi từ điển) -> báo nhẹ, KHÔNG để trắng trang.
+  if (!tasks.length) return <Shell onBack={onBackHome}><Info text="Chưa có từ để thi lúc này. Hãy học thêm và bấm 'Thuộc' cho đủ từ nhé." /></Shell>;
 
   const task = tasks[idx];
   return (

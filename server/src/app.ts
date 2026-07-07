@@ -798,14 +798,14 @@ export function createApp() {
   // Kho CHỜ THI (đã báo thuộc, chưa thi). Đủ 10 -> client nhắc thi.
   app.get("/api/students/:id/pending", requireAuth, (req, res) => {
     if (!canAccessStudent(req, res, req.params.id)) return;
-    const rows = db.prepare("SELECT wordId FROM progress WHERE studentId=? AND status='pending_test' ORDER BY lastReviewedAt").all(req.params.id) as any[];
+    const rows = db.prepare("SELECT wordId FROM progress WHERE studentId=? AND status='pending_test' AND wordId IN (SELECT id FROM vocabulary) ORDER BY lastReviewedAt").all(req.params.id) as any[];
     res.json({ words: rows.map((r) => r.wordId), count: rows.length });
   });
 
   // Kho CẦN ÔN (bấm cần ôn / sai / rớt thi lại) — lặp học đến khi báo thuộc.
   app.get("/api/students/:id/relearn", requireAuth, (req, res) => {
     if (!canAccessStudent(req, res, req.params.id)) return;
-    const rows = db.prepare("SELECT wordId FROM progress WHERE studentId=? AND status='relearn' ORDER BY lastReviewedAt").all(req.params.id) as any[];
+    const rows = db.prepare("SELECT wordId FROM progress WHERE studentId=? AND status='relearn' AND wordId IN (SELECT id FROM vocabulary) ORDER BY lastReviewedAt").all(req.params.id) as any[];
     res.json({ words: rows.map((r) => r.wordId), count: rows.length });
   });
 
@@ -813,7 +813,7 @@ export function createApp() {
   app.get("/api/students/:id/due-tests", requireAuth, (req, res) => {
     if (!canAccessStudent(req, res, req.params.id)) return;
     const now = req.query.now ? Number(req.query.now) : Date.now();
-    const rows = db.prepare("SELECT wordId FROM progress WHERE studentId=? AND status='scored' AND nextReviewAt<=? ORDER BY nextReviewAt").all(req.params.id, now) as any[];
+    const rows = db.prepare("SELECT wordId FROM progress WHERE studentId=? AND status='scored' AND nextReviewAt<=? AND wordId IN (SELECT id FROM vocabulary) ORDER BY nextReviewAt").all(req.params.id, now) as any[];
     res.json({ words: rows.map((r) => r.wordId), count: rows.length });
   });
 
@@ -826,8 +826,8 @@ export function createApp() {
     const mode = req.body?.mode === "review" ? "review" : "new";
     const now = Date.now();
     const picked = mode === "review"
-      ? db.prepare("SELECT wordId FROM progress WHERE studentId=? AND status='scored' AND nextReviewAt<=? ORDER BY nextReviewAt LIMIT 10").all(studentId, now) as any[]
-      : db.prepare("SELECT wordId FROM progress WHERE studentId=? AND status='pending_test' ORDER BY lastReviewedAt LIMIT 10").all(studentId) as any[];
+      ? db.prepare("SELECT wordId FROM progress WHERE studentId=? AND status='scored' AND nextReviewAt<=? AND wordId IN (SELECT id FROM vocabulary) ORDER BY nextReviewAt LIMIT 10").all(studentId, now) as any[]
+      : db.prepare("SELECT wordId FROM progress WHERE studentId=? AND status='pending_test' AND wordId IN (SELECT id FROM vocabulary) ORDER BY lastReviewedAt LIMIT 10").all(studentId) as any[];
     if (!picked.length) return res.status(400).json({ error: "chưa có từ để thi" });
     const ids = picked.map((r) => r.wordId);
     const rows = db.prepare(`SELECT * FROM vocabulary WHERE id IN (${ids.map(() => "?").join(",")})`).all(...ids) as any[];
