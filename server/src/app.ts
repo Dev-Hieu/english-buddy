@@ -1059,6 +1059,53 @@ export function createApp() {
     res.json({ ok: true, wordId, url: url ?? "" });
   });
 
+  // ── My Videos (Shadowing) ──
+  app.get("/api/students/:id/my-videos", requireAuth, (req, res) => {
+    if (!canAccessStudent(req, res, req.params.id)) return;
+    res.json(db.prepare("SELECT * FROM my_videos WHERE studentId = ? ORDER BY lastPlayedAt DESC").all(req.params.id));
+  });
+
+  app.post("/api/students/:id/my-videos", requireAuth, (req, res) => {
+    if (!canAccessStudent(req, res, req.params.id)) return;
+    const { videoId, title, level, topic } = req.body || {};
+    if (!videoId) return res.status(400).json({ error: "thiếu videoId" });
+    const existing = db.prepare("SELECT id FROM my_videos WHERE studentId = ? AND videoId = ?").get(req.params.id, videoId);
+    if (existing) {
+      // Update lastPlayedAt
+      db.prepare("UPDATE my_videos SET lastPlayedAt = ? WHERE studentId = ? AND videoId = ?").run(Date.now(), req.params.id, videoId);
+      return res.json({ ok: true, updated: true });
+    }
+    // Check subtitle availability
+    const hasSub = db.prepare("SELECT 1 FROM translation_cache WHERE text = ?").get(`ytcap|${videoId}`);
+    db.prepare("INSERT INTO my_videos (studentId, videoId, title, level, topic, totalSentences, createdAt, lastPlayedAt) VALUES (?, ?, ?, ?, ?, ?, ?, ?)")
+      .run(req.params.id, videoId, title || "", level || "", topic || "", hasSub ? 1 : 0, Date.now(), Date.now());
+    // Queue subtitle fetch nếu chưa có
+    if (!hasSub) {
+      db.prepare("INSERT OR IGNORE INTO translation_cache (text, translation) VALUES (?, ?)").run(`ytcap_queue|${videoId}`, JSON.stringify({ videoId, queued: Date.now() }));
+    }
+    res.json({ ok: true, created: true, hasSub: !!hasSub });
+  });
+
+  app.put("/api/students/:id/my-videos/:videoId", requireAuth, (req, res) => {
+    if (!canAccessStudent(req, res, req.params.id)) return;
+    const { progress, bestScore, totalSentences } = req.body || {};
+    const sets: string[] = [];
+    const params: any = {};
+    if (progress !== undefined) { sets.push("progress = @progress"); params.progress = progress; }
+    if (bestScore !== undefined) { sets.push("bestScore = @bestScore"); params.bestScore = bestScore; }
+    if (totalSentences !== undefined) { sets.push("totalSentences = @totalSentences"); params.totalSentences = totalSentences; }
+    sets.push("lastPlayedAt = @now"); params.now = Date.now();
+    params.sid = req.params.id; params.vid = req.params.videoId;
+    db.prepare(`UPDATE my_videos SET ${sets.join(", ")} WHERE studentId = @sid AND videoId = @vid`).run(params);
+    res.json({ ok: true });
+  });
+
+  app.delete("/api/students/:id/my-videos/:videoId", requireAuth, (req, res) => {
+    if (!canAccessStudent(req, res, req.params.id)) return;
+    db.prepare("DELETE FROM my_videos WHERE studentId = ? AND videoId = ?").run(req.params.id, req.params.videoId);
+    res.json({ ok: true });
+  });
+
   // ── Tra nghĩa nhanh (từ vocabulary DB, miễn phí) ──
   app.get("/api/word-meaning", (req, res) => {
     const word = String(req.query.word || "").trim().toLowerCase();

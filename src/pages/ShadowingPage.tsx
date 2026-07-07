@@ -180,9 +180,14 @@ function loadYtApi(): Promise<void> {
   });
 }
 
-export function ShadowingPage({ onBackHome }: Props) {
+interface MyVideo { videoId: string; title: string; level: string; topic: string; progress: number; totalSentences: number; bestScore: number; lastPlayedAt: number; }
+type BrowseTab = "browse" | "my";
+
+export function ShadowingPage({ student, onBackHome }: Props) {
   const [ytUrl, setYtUrl] = useState("");
   const [videoId, setVideoId] = useState("");
+  const [browseTab, setBrowseTab] = useState<BrowseTab>("browse");
+  const [myVideos, setMyVideos] = useState<MyVideo[]>([]);
   const [sentences, setSentences] = useState<Sentence[]>([]);
   const [filterLevel, setFilterLevel] = useState<VideoLevel | "">("");
   const [filterTopic, setFilterTopic] = useState<VideoTopic | "">("");
@@ -235,6 +240,36 @@ export function ShadowingPage({ onBackHome }: Props) {
     }).catch(() => {});
   }, [showIpa]);
 
+  // Load My Videos
+  useEffect(() => {
+    if (!student?.id) return;
+    apiRequest<MyVideo[]>(`/api/students/${student.id}/my-videos`).then(setMyVideos).catch(() => {});
+  }, [student?.id]);
+
+  const saveToMyVideos = (vid: string, title?: string) => {
+    if (!student?.id) return;
+    const sv = SUGGESTED_VIDEOS.find((v) => v.id === vid);
+    apiRequest(`/api/students/${student.id}/my-videos`, {
+      method: "POST", body: { videoId: vid, title: title || sv?.title || "", level: sv?.level || "", topic: sv?.topic || "" }
+    }).then(() => {
+      apiRequest<MyVideo[]>(`/api/students/${student.id}/my-videos`).then(setMyVideos).catch(() => {});
+    }).catch(() => {});
+  };
+
+  const updateMyVideoProgress = (vid: string, progress: number, bestScore: number, total: number) => {
+    if (!student?.id) return;
+    apiRequest(`/api/students/${student.id}/my-videos/${vid}`, {
+      method: "PUT", body: { progress, bestScore, totalSentences: total }
+    }).catch(() => {});
+  };
+
+  const removeMyVideo = (vid: string) => {
+    if (!student?.id) return;
+    apiRequest(`/api/students/${student.id}/my-videos/${vid}`, { method: "DELETE" }).then(() => {
+      setMyVideos((prev) => prev.filter((v) => v.videoId !== vid));
+    }).catch(() => {});
+  };
+
   const extractVideoId = (url: string) => url.match(/(?:v=|youtu\.be\/|\/embed\/)([a-zA-Z0-9_-]{11})/)?.[1] || "";
 
   const lookupWordFn = async (word: string) => {
@@ -283,7 +318,7 @@ export function ShadowingPage({ onBackHome }: Props) {
     setLoading(true); setError("");
     try {
       const data = await apiRequest<{ sentences: Sentence[]; count: number }>(`/api/youtube-captions?v=${vid}`, { auth: false });
-      if (data.sentences.length > 0) { setSentences(data.sentences); setVideoId(vid); }
+      if (data.sentences.length > 0) { setSentences(data.sentences); setVideoId(vid); saveToMyVideos(vid); }
       else { setError("Chưa có subtitle."); setPasteMode(true); }
     } catch { setError("Lỗi."); setPasteMode(true); }
     finally { setLoading(false); }
@@ -453,7 +488,17 @@ export function ShadowingPage({ onBackHome }: Props) {
       <Wrapper onBack={onBackHome}>
         <Card><CardContent className="p-4 space-y-3">
           <h2 className="text-lg font-black flex items-center gap-2"><Video className="h-5 w-5 text-primary" /> Shadowing</h2>
-          <p className="text-sm font-semibold text-muted-foreground">Chọn video để luyện nghe & đọc theo</p>
+
+          {/* Tab Browse / My Videos */}
+          <div className="flex gap-1 rounded-xl bg-muted p-0.5">
+            <button type="button" onClick={() => setBrowseTab("browse")} className={cn("flex-1 rounded-lg py-2 text-xs font-extrabold transition-colors", browseTab === "browse" ? "bg-card text-primary shadow-sm" : "text-muted-foreground")}>
+              Khám phá
+            </button>
+            <button type="button" onClick={() => setBrowseTab("my")} className={cn("flex-1 rounded-lg py-2 text-xs font-extrabold transition-colors", browseTab === "my" ? "bg-card text-primary shadow-sm" : "text-muted-foreground")}>
+              Video của tôi {myVideos.length > 0 && `(${myVideos.length})`}
+            </button>
+          </div>
+
           <input className="w-full rounded-xl border-2 border-border px-3 py-2.5 text-sm font-bold outline-none focus:border-primary"
             placeholder="Dán link YouTube..." value={ytUrl} onChange={(e) => { setYtUrl(e.target.value); setError(""); setPasteMode(false); }} />
           {vid && (<>
@@ -469,8 +514,30 @@ export function ShadowingPage({ onBackHome }: Props) {
             </div>)}
             {!loading && !pasteMode && <button type="button" onClick={() => setPasteMode(true)} className="w-full text-center text-xs font-bold text-primary underline">Dán subtitle thủ công</button>}
           </>)}
-          {/* Danh sách video — luôn hiện */}
-          <div className="space-y-2">
+          {/* My Videos tab */}
+          {browseTab === "my" && (
+            <div className="space-y-1.5 max-h-[50vh] overflow-y-auto">
+              {myVideos.length === 0 ? (
+                <p className="text-center text-sm font-bold text-muted-foreground py-6">Chưa có video nào. Chọn video từ tab "Khám phá" để bắt đầu!</p>
+              ) : myVideos.map((v) => (
+                <div key={v.videoId} className="flex items-center gap-2 rounded-xl border border-border p-2 hover:bg-muted transition-colors">
+                  <button type="button" onClick={() => setYtUrl(`https://youtube.com/watch?v=${v.videoId}`)} className="flex-1 text-left min-w-0">
+                    <p className="text-sm font-extrabold truncate">{v.title || v.videoId}</p>
+                    <div className="flex items-center gap-1.5 mt-0.5">
+                      {v.level && <span className="rounded px-1 py-0.5 text-[9px] font-extrabold bg-muted text-muted-foreground">{v.level}</span>}
+                      {v.topic && <span className="rounded px-1 py-0.5 text-[9px] font-bold text-muted-foreground">{v.topic}</span>}
+                      {v.bestScore > 0 && <span className={cn("text-[10px] font-black", v.bestScore >= SPEAK_PASS ? "text-success" : "text-red-600")}>{v.bestScore}%</span>}
+                      <span className="text-[9px] text-muted-foreground">{new Date(v.lastPlayedAt).toLocaleDateString("vi-VN")}</span>
+                    </div>
+                  </button>
+                  <button type="button" onClick={() => removeMyVideo(v.videoId)} className="shrink-0 rounded-lg p-1 text-muted-foreground hover:text-red-500" title="Xoá">✕</button>
+                </div>
+              ))}
+            </div>
+          )}
+
+          {/* Browse tab — danh sách video */}
+          {browseTab === "browse" && <div className="space-y-2">
             <div className="flex flex-wrap gap-1">
               <button type="button" onClick={() => setFilterLevel("")} className={cn("rounded-full px-2 py-0.5 text-[10px] font-extrabold", !filterLevel ? "bg-primary text-white" : "bg-muted text-muted-foreground")}>Tất cả</button>
               {LEVELS.map((l) => <button key={l} type="button" onClick={() => setFilterLevel(l)} className={cn("rounded-full px-2 py-0.5 text-[10px] font-extrabold", filterLevel === l ? "bg-primary text-white" : "bg-muted text-muted-foreground")}>{l}</button>)}
@@ -494,7 +561,7 @@ export function ShadowingPage({ onBackHome }: Props) {
                 </button>
               ))}
             </div>
-          </div>
+          </div>}
         </CardContent></Card>
       </Wrapper>
     );

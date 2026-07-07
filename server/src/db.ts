@@ -83,6 +83,20 @@ export function initSchema(): void {
       joinedAt INTEGER,
       PRIMARY KEY (classId, studentId)
     );
+    CREATE TABLE IF NOT EXISTS my_videos (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      studentId TEXT NOT NULL,
+      videoId TEXT NOT NULL,
+      title TEXT,
+      level TEXT,
+      topic TEXT,
+      progress INTEGER DEFAULT 0,
+      totalSentences INTEGER DEFAULT 0,
+      bestScore INTEGER DEFAULT 0,
+      lastPlayedAt INTEGER,
+      createdAt INTEGER,
+      UNIQUE(studentId, videoId)
+    );
     CREATE TABLE IF NOT EXISTS skill_test_results (
       id TEXT PRIMARY KEY,
       studentId TEXT NOT NULL,
