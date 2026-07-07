@@ -1,4 +1,4 @@
-import { ArrowRight, CheckCircle2, ChevronLeft, ChevronRight, Clock, Keyboard, Loader2, Mic, PartyPopper, Pause, Play, Repeat, RotateCcw, Square, Trophy, Video, Volume2, VolumeX } from "lucide-react";
+import { ArrowRight, CheckCircle2, ChevronLeft, ChevronRight, Clock, Keyboard, Loader2, Mic, PartyPopper, Pause, Play, PlayCircle, Repeat, RotateCcw, Square, Trophy, Video, Volume2, VolumeX, Zap } from "lucide-react";
 import { useCallback, useEffect, useRef, useState } from "react";
 import type { Student } from "@/types";
 import { apiRequest } from "@/services/api";
@@ -14,7 +14,7 @@ interface Props { student: Student; topicId: string; onBackHome: () => void; }
 
 type PracticeMode = "shadow" | "dictation" | "dubbing";
 type WaitMode = "off" | "3s" | "5s" | "manual";
-type PracticePhase = "idle" | "wait" | "recording" | "scoring" | "result" | "dictation" | "dict-result" | "done";
+type PracticePhase = "idle" | "wait" | "recording" | "scoring" | "result" | "dictation" | "dict-result" | "done" | "full-recording" | "full-scoring";
 
 interface Sentence { start: number; end: number; text: string; }
 
@@ -225,6 +225,9 @@ export function ShadowingPage({ student, onBackHome }: Props) {
 
   // Full lesson tracking
   const [completedCount, setCompletedCount] = useState(0);
+  const [autoFlow, setAutoFlow] = useState(true); // tự chấm + tự chuyển câu
+  const [fullLessonScore, setFullLessonScore] = useState<number | null>(null);
+  const fullRecRef = useRef<Recorder | null>(null);
 
   const recRef = useRef<Recorder | null>(null);
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -431,7 +434,12 @@ export function ShadowingPage({ student, onBackHome }: Props) {
       const r = await assessPronunciation(wav, sentences[currentIdx]?.text || "");
       setResult(r);
       setScores((s) => ({ ...s, [currentIdx]: { score: r.score, mode: "shadow" } }));
-      setPracticePhase("result");
+      if (autoFlow) {
+        // Tự chuyển câu tiếp — không hiện popup
+        finishSentence();
+      } else {
+        setPracticePhase("result");
+      }
     } catch { setPracticePhase("idle"); }
   };
 
@@ -470,6 +478,48 @@ export function ShadowingPage({ student, onBackHome }: Props) {
     const scored = Object.keys(scores).length;
     if (scored >= sentences.length && scored > 0) setPracticePhase("done");
   };
+
+  // ── Full Lesson: ghi âm toàn bài ──
+  const startFullLesson = async () => {
+    if (!CAN_MIC) return;
+    setFullLessonScore(null);
+    setPracticePhase("full-recording");
+    setCurrentIdx(0);
+    try {
+      fullRecRef.current = await startRecording();
+      playerRef.current?.seekTo?.(sentences[0]?.start || 0, true);
+      playerRef.current?.playVideo?.();
+    } catch { setPracticePhase("idle"); }
+  };
+
+  const stopFullLesson = async () => {
+    playerRef.current?.pauseVideo?.();
+    setIsPlaying(false);
+    if (!fullRecRef.current) { setPracticePhase("idle"); return; }
+    setPracticePhase("full-scoring");
+    try {
+      const wav = await fullRecRef.current.stop();
+      fullRecRef.current = null;
+      const fullText = sentences.map((s) => s.text).join(". ");
+      const r = await assessPronunciation(wav, fullText);
+      setFullLessonScore(r.score);
+      setResult(r);
+      setPracticePhase("done");
+    } catch { setPracticePhase("idle"); }
+  };
+
+  // Auto-stop full lesson khi video hết
+  useEffect(() => {
+    if (practicePhase !== "full-recording") return;
+    const check = setInterval(() => {
+      const state = playerRef.current?.getPlayerState?.();
+      if (state === 0) { // ended
+        clearInterval(check);
+        stopFullLesson();
+      }
+    }, 500);
+    return () => clearInterval(check);
+  }, [practicePhase]);
 
   const seekToSentence = (idx: number) => {
     setCurrentIdx(idx); setPracticePhase("idle"); setRepeatDone(0);
@@ -583,10 +633,16 @@ export function ShadowingPage({ student, onBackHome }: Props) {
             <p className="text-lg font-extrabold">+{xp} XP</p>
           </div>
           <CardContent className="p-5 space-y-3">
+            {fullLessonScore !== null && (
+              <div className="flex items-center gap-4 justify-center">
+                <ScoreRing score={fullLessonScore} size={80} />
+                <div><p className="text-lg font-black">Toàn bài: {fullLessonScore}%</p><p className="text-sm text-muted-foreground">{fullLessonScore >= 80 ? "Xuất sắc!" : fullLessonScore >= 60 ? "Tốt!" : "Cần luyện thêm"}</p></div>
+              </div>
+            )}
             {shadowScores.length > 0 && (
               <div className="flex items-center gap-4 justify-center">
-                <ScoreRing score={avg} size={72} />
-                <div><p className="font-extrabold">Phát âm: {avg}%</p><p className="text-sm text-muted-foreground">{shadowScores.filter((s) => s.score >= SPEAK_PASS).length}/{shadowScores.length} đạt</p></div>
+                <ScoreRing score={avg} size={64} />
+                <div><p className="font-extrabold">Từng câu: {avg}%</p><p className="text-sm text-muted-foreground">{shadowScores.filter((s) => s.score >= SPEAK_PASS).length}/{shadowScores.length} đạt</p></div>
               </div>
             )}
             {dictScores.length > 0 && <p className="text-center font-extrabold">Dictation: {dictScores.filter((s) => s.score === 100).length}/{dictScores.length} đúng</p>}
@@ -637,6 +693,30 @@ export function ShadowingPage({ student, onBackHome }: Props) {
         </div>
       </div>
 
+      {/* Full Lesson button */}
+      {practicePhase === "idle" && practiceMode === "shadow" && CAN_MIC && (
+        <button type="button" onClick={startFullLesson}
+          className="mb-2 flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-primary to-success py-2.5 text-sm font-extrabold text-white shadow-sm transition-transform active:scale-[0.98]">
+          <PlayCircle className="h-5 w-5" /> Luyện cả bài (ghi âm + chấm điểm toàn bài)
+        </button>
+      )}
+
+      {/* Full lesson recording indicator */}
+      {practicePhase === "full-recording" && (
+        <Card className="mb-2 border-red-300">
+          <CardContent className="flex items-center justify-between p-3">
+            <div className="flex items-center gap-2">
+              <span className="h-3 w-3 rounded-full bg-red-500 animate-pulse" />
+              <span className="text-sm font-extrabold text-red-600">Đang ghi âm toàn bài...</span>
+            </div>
+            <Button type="button" size="sm" variant="destructive" onClick={stopFullLesson}><Square className="h-4 w-4" /> Dừng & chấm</Button>
+          </CardContent>
+        </Card>
+      )}
+      {practicePhase === "full-scoring" && (
+        <Card className="mb-2"><CardContent className="flex justify-center p-4"><Loader2 className="h-6 w-6 animate-spin text-primary" /><span className="ml-2 text-sm font-bold">Đang chấm toàn bài...</span></CardContent></Card>
+      )}
+
       {/* Controls row 2: mode + wait + repeat + IPA */}
       <div className="mb-2 flex items-center justify-between flex-wrap gap-1">
         <div className="flex gap-0.5 rounded-xl bg-muted p-0.5">
@@ -661,6 +741,10 @@ export function ShadowingPage({ student, onBackHome }: Props) {
           </div>
           <button type="button" onClick={() => setShowIpa(!showIpa)}
             className={cn("rounded-md px-1.5 py-0.5 text-[9px] font-extrabold ml-0.5", showIpa ? "bg-primary text-white" : "bg-muted text-muted-foreground")}>IPA</button>
+          <button type="button" onClick={() => setAutoFlow(!autoFlow)} title={autoFlow ? "Auto: đọc xong tự chuyển câu" : "Manual: hiện kết quả mỗi câu"}
+            className={cn("rounded-md px-1.5 py-0.5 text-[9px] font-extrabold ml-0.5", autoFlow ? "bg-success text-white" : "bg-muted text-muted-foreground")}>
+            <Zap className="inline h-2.5 w-2.5" /> Auto
+          </button>
         </div>
       </div>
 
