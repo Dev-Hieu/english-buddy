@@ -1015,12 +1015,27 @@ export function createApp() {
     db.prepare("INSERT OR REPLACE INTO translation_cache (text, translation) VALUES (?, ?)").run(cacheKey, JSON.stringify(result));
     res.json({ ok: true });
   });
-  app.get("/api/youtube-captions", (req, res) => {
+  app.get("/api/youtube-captions", async (req, res) => {
     const videoId = String(req.query.v || "").trim();
     if (!videoId) return res.status(400).json({ error: "thiếu video ID" });
     const cacheKey = `ytcap|${videoId}`;
     const cached = db.prepare("SELECT translation FROM translation_cache WHERE text = ?").get(cacheKey) as any;
     if (cached) { try { return res.json(JSON.parse(cached.translation)); } catch { /* */ } }
+
+    // Auto-fetch qua Cloudflare Worker proxy (nếu có)
+    const workerUrl = process.env.SUBTITLE_WORKER_URL;
+    if (workerUrl) {
+      try {
+        const r = await fetch(`${workerUrl}?v=${videoId}`);
+        if (r.ok) {
+          const data = await r.json() as any;
+          if (data.sentences?.length) {
+            db.prepare("INSERT OR REPLACE INTO translation_cache (text, translation) VALUES (?, ?)").run(cacheKey, JSON.stringify(data));
+            return res.json(data);
+          }
+        }
+      } catch { /* fallback to empty */ }
+    }
     res.json({ sentences: [], count: 0 });
   });
 
