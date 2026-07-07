@@ -406,7 +406,7 @@ export function ShadowingPage({ onBackHome }: Props) {
       )}
 
       {/* Practice area */}
-      {practicePhase !== "idle" && practicePhase !== "done" && (
+      {practicePhase !== "idle" && (
         <Card className="mb-2"><CardContent className="p-3 space-y-2">
           {practicePhase === "wait" && (
             <div className="flex items-center justify-center gap-3">
