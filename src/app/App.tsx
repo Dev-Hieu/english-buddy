@@ -301,7 +301,7 @@ export function App() {
       content = <GamesPage student={student} topicId={route.topicId} level={route.level} studiedWordIds={studiedWordIds} onBackHome={() => navigate("home")} />;
       break;
     case "speak":
-      content = <SpeakingPage student={student} topicId={route.topicId} onBackHome={() => navigate("home")} />;
+      content = <SpeakingPage student={student} topicId={route.topicId} onBackHome={() => navigate("home")} onShadowing={() => navigate("shadowing", route.topicId)} />;
       break;
     case "shadowing":
       content = <ShadowingPage student={student} topicId={route.topicId} onBackHome={() => navigate("home")} />;

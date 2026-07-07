@@ -1,4 +1,4 @@
-import { ArrowRight, Loader2, Mic, PartyPopper, Square, ThumbsUp, Volume2 } from "lucide-react";
+import { ArrowRight, Headphones, Loader2, Mic, PartyPopper, Square, ThumbsUp, Volume2 } from "lucide-react";
 import { useMemo, useRef, useState } from "react";
 import { SEED_TOPICS } from "@/data/seedTopics";
 import { SEED_VOCABULARY } from "@/data/seedVocabulary";
@@ -18,6 +18,7 @@ interface SpeakingPageProps {
   student: Student;
   topicId: string;
   onBackHome: () => void;
+  onShadowing?: () => void;
 }
 
 type Phase = "idle" | "recording" | "scoring" | "result";
@@ -25,7 +26,7 @@ type Phase = "idle" | "recording" | "scoring" | "result";
 // Chấm chi tiết cần: micro + ngữ cảnh bảo mật (HTTPS/localhost).
 const CAN_MIC = typeof window !== "undefined" && window.isSecureContext && micAvailable();
 
-export function SpeakingPage({ topicId, onBackHome }: SpeakingPageProps) {
+export function SpeakingPage({ topicId, onBackHome, onShadowing }: SpeakingPageProps) {
   const topic = SEED_TOPICS.find((t) => t.id === topicId);
   const words = useMemo(() => {
     const t = SEED_VOCABULARY.filter((w) => w.topicIds.includes(topicId) && !w.word.includes(" "));
@@ -95,6 +96,11 @@ export function SpeakingPage({ topicId, onBackHome }: SpeakingPageProps) {
   return (
     <main className="mx-auto w-full max-w-xl px-4">
       <SessionHeader title={`Luyện nói${topic ? " · " + topic.name : ""}`} onClose={onBackHome} progress={Math.round((n / words.length) * 100)} right={<VoicePicker />} />
+      {onShadowing && n === 0 && phase === "idle" && (
+        <button type="button" onClick={onShadowing} className="mb-2 flex w-full items-center justify-center gap-2 rounded-2xl border-2 border-primary/30 bg-primary/5 py-2.5 text-sm font-extrabold text-primary transition-colors hover:bg-primary/10">
+          <Headphones className="h-4 w-4" /> Chuyển sang Shadowing (nghe → đọc theo)
+        </button>
+      )}
       <p className="mb-3 text-center text-sm font-extrabold text-muted-foreground">Từ {n + 1} / {words.length}</p>
 
       <Card>
