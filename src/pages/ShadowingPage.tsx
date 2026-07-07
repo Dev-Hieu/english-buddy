@@ -78,7 +78,6 @@ export function ShadowingPage({ onBackHome }: Props) {
   const [dictInput, setDictInput] = useState("");
   const [dictCorrect, setDictCorrect] = useState<boolean | null>(null);
   const [scores, setScores] = useState<Record<number, { score: number; mode: string }>>({});
-  const [showIpa, setShowIpa] = useState(false);
 
   // Repeat count
   const [repeatTarget, setRepeatTarget] = useState(1);
@@ -338,6 +337,7 @@ export function ShadowingPage({ onBackHome }: Props) {
             </div>
             <div className="flex gap-2">
               <Button type="button" variant="outline" className="flex-1" onClick={() => { setScores({}); setCompletedCount(0); setPracticePhase("idle"); seekToSentence(0); }}><RotateCcw className="h-4 w-4" /> Luyện lại</Button>
+              <Button type="button" variant="outline" className="flex-1" onClick={() => { setVideoId(""); setSentences([]); setCurrentIdx(-1); setPracticePhase("idle"); setScores({}); setMutedSentences(new Set()); playerRef.current?.destroy?.(); playerRef.current = null; }}><Video className="h-4 w-4" /> Đổi video</Button>
               <Button type="button" className="flex-1" onClick={onBackHome}><Trophy className="h-4 w-4" /> Xong</Button>
             </div>
           </CardContent>
@@ -362,6 +362,8 @@ export function ShadowingPage({ onBackHome }: Props) {
           </button>
           <button type="button" onClick={() => currentIdx < sentences.length - 1 && seekToSentence(currentIdx + 1)} className="rounded-lg p-1 text-muted-foreground hover:bg-muted"><ChevronRight className="h-4 w-4" /></button>
           <span className="text-[10px] font-extrabold text-muted-foreground ml-1">{Math.max(0, currentIdx + 1)}/{sentences.length}</span>
+          <button type="button" onClick={() => { setVideoId(""); setSentences([]); setCurrentIdx(-1); setPracticePhase("idle"); setScores({}); setMutedSentences(new Set()); playerRef.current?.destroy?.(); playerRef.current = null; }}
+            className="ml-1 rounded-md bg-muted px-1.5 py-0.5 text-[9px] font-extrabold text-muted-foreground hover:text-primary"><Video className="inline h-3 w-3" /> Đổi</button>
         </div>
         <div className="flex gap-0.5 rounded-lg bg-muted p-0.5">
           {SPEEDS.map((s) => (<button key={s} type="button" onClick={() => changeSpeed(s)}
@@ -391,8 +393,6 @@ export function ShadowingPage({ onBackHome }: Props) {
                 className={cn("rounded-md px-1 py-0.5 text-[9px] font-extrabold", repeatTarget === r ? "bg-primary text-white" : "bg-muted text-muted-foreground")}>{r}×</button>
             ))}
           </div>
-          <button type="button" onClick={() => setShowIpa(!showIpa)}
-            className={cn("rounded-md px-1.5 py-0.5 text-[9px] font-extrabold ml-0.5", showIpa ? "bg-primary text-white" : "bg-muted text-muted-foreground")}>IPA</button>
         </div>
       </div>
 
@@ -400,7 +400,6 @@ export function ShadowingPage({ onBackHome }: Props) {
       {activeSent && (
         <div className={cn("mb-2 rounded-xl px-4 py-2.5 text-center transition-all", practicePhase !== "idle" ? "bg-primary/10 border border-primary/30" : "bg-muted")}>
           <p className="text-lg font-black">{activeSent.text}</p>
-          {showIpa && <p className="text-xs font-semibold text-muted-foreground mt-0.5">/{activeSent.text.toLowerCase().replace(/[^a-z ]/g, "")}/</p>}
           {repeatTarget > 1 && <p className="text-[10px] font-bold text-muted-foreground">Lần {repeatDone + 1}/{repeatTarget}</p>}
         </div>
       )}
