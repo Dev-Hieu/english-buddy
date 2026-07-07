@@ -1,4 +1,4 @@
-import { ArrowRight, CheckCircle2, ChevronLeft, ChevronRight, Clock, Keyboard, Loader2, Mic, Pause, Play, RotateCcw, Square, Video, Volume2 } from "lucide-react";
+import { ArrowRight, CheckCircle2, ChevronLeft, ChevronRight, Clock, Keyboard, Loader2, Mic, PartyPopper, Pause, Play, Repeat, RotateCcw, Square, Trophy, Video, Volume2, VolumeX } from "lucide-react";
 import { useCallback, useEffect, useRef, useState } from "react";
 import type { Student } from "@/types";
 import { apiRequest } from "@/services/api";
@@ -12,9 +12,9 @@ import { SpeakResult, SPEAK_PASS } from "@/components/speak/SpeakResult";
 
 interface Props { student: Student; topicId: string; onBackHome: () => void; }
 
-type PracticeMode = "shadow" | "dictation";
+type PracticeMode = "shadow" | "dictation" | "dubbing";
 type WaitMode = "off" | "3s" | "5s" | "manual";
-type PracticePhase = "idle" | "wait" | "recording" | "scoring" | "result" | "dictation" | "dict-result";
+type PracticePhase = "idle" | "wait" | "recording" | "scoring" | "result" | "dictation" | "dict-result" | "done";
 
 interface Sentence { start: number; end: number; text: string; }
 
@@ -43,7 +43,6 @@ const SUGGESTED_VIDEOS = [
   { id: "JRKyEfBcXFQ", title: "Harry Visits The Weasleys", level: "B1" },
 ];
 
-// ── YouTube iframe API helper ──
 let ytApiLoaded = false;
 function loadYtApi(): Promise<void> {
   if (ytApiLoaded) return Promise.resolve();
@@ -57,7 +56,6 @@ function loadYtApi(): Promise<void> {
 }
 
 export function ShadowingPage({ onBackHome }: Props) {
-  // Video select
   const [ytUrl, setYtUrl] = useState("");
   const [videoId, setVideoId] = useState("");
   const [sentences, setSentences] = useState<Sentence[]>([]);
@@ -66,7 +64,6 @@ export function ShadowingPage({ onBackHome }: Props) {
   const [pasteMode, setPasteMode] = useState(false);
   const [pasteText, setPasteText] = useState("");
 
-  // Player
   const playerRef = useRef<any>(null);
   const playerDivRef = useRef<HTMLDivElement>(null);
   const pollRef = useRef<ReturnType<typeof setInterval> | null>(null);
@@ -74,7 +71,6 @@ export function ShadowingPage({ onBackHome }: Props) {
   const [currentIdx, setCurrentIdx] = useState(-1);
   const [speed, setSpeed] = useState(1);
 
-  // Practice
   const [practiceMode, setPracticeMode] = useState<PracticeMode>("shadow");
   const [waitMode, setWaitMode] = useState<WaitMode>("3s");
   const [practicePhase, setPracticePhase] = useState<PracticePhase>("idle");
@@ -82,15 +78,23 @@ export function ShadowingPage({ onBackHome }: Props) {
   const [dictInput, setDictInput] = useState("");
   const [dictCorrect, setDictCorrect] = useState<boolean | null>(null);
   const [scores, setScores] = useState<Record<number, { score: number; mode: string }>>({});
+  const [showIpa, setShowIpa] = useState(false);
+
+  // Repeat count
+  const [repeatTarget, setRepeatTarget] = useState(1);
+  const [repeatDone, setRepeatDone] = useState(0);
+
+  // Dubbing: muted sentences
+  const [mutedSentences, setMutedSentences] = useState<Set<number>>(new Set());
+
+  // Full lesson tracking
+  const [completedCount, setCompletedCount] = useState(0);
 
   const recRef = useRef<Recorder | null>(null);
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const listRef = useRef<HTMLDivElement>(null);
 
-  const extractVideoId = (url: string) => {
-    const m = url.match(/(?:v=|youtu\.be\/|\/embed\/)([a-zA-Z0-9_-]{11})/);
-    return m ? m[1] : "";
-  };
+  const extractVideoId = (url: string) => url.match(/(?:v=|youtu\.be\/|\/embed\/)([a-zA-Z0-9_-]{11})/)?.[1] || "";
 
   const loadCaptions = async (vid: string) => {
     setLoading(true); setError("");
@@ -110,19 +114,19 @@ export function ShadowingPage({ onBackHome }: Props) {
     apiRequest("/api/youtube-captions", { method: "POST", body: { videoId: vid, sentences: sents }, auth: false }).catch(() => {});
   };
 
-  // ── Init YouTube Player ──
+  // Init player
   useEffect(() => {
     if (!videoId || !playerDivRef.current) return;
     let destroyed = false;
     loadYtApi().then(() => {
       if (destroyed) return;
       playerRef.current = new (window as any).YT.Player(playerDivRef.current, {
-        videoId,
-        playerVars: { autoplay: 0, controls: 1, modestbranding: 1, rel: 0 },
+        videoId, playerVars: { autoplay: 0, controls: 1, modestbranding: 1, rel: 0 },
         events: {
-          onReady: () => { playerRef.current?.setPlaybackRate?.(speed); },
+          onReady: () => playerRef.current?.setPlaybackRate?.(speed),
           onStateChange: (e: any) => {
-            setIsPlaying(e.data === 1); // 1 = playing
+            setIsPlaying(e.data === 1);
+            if (e.data === 0) checkCompletion(); // video ended
           },
         },
       });
@@ -130,70 +134,63 @@ export function ShadowingPage({ onBackHome }: Props) {
     return () => { destroyed = true; playerRef.current?.destroy?.(); playerRef.current = null; };
   }, [videoId]);
 
-  // ── Poll current time → highlight sentence + auto-pause ──
+  // Poll time → highlight + auto-pause
   const findSentenceIdx = useCallback((time: number) => {
-    for (let i = 0; i < sentences.length; i++) {
-      if (time >= sentences[i].start && time < sentences[i].end) return i;
-    }
-    // Between sentences — find next
-    for (let i = 0; i < sentences.length; i++) {
-      if (time < sentences[i].start) return i - 1;
-    }
+    for (let i = 0; i < sentences.length; i++) if (time >= sentences[i].start && time < sentences[i].end) return i;
+    for (let i = 0; i < sentences.length; i++) if (time < sentences[i].start) return i - 1;
     return sentences.length - 1;
   }, [sentences]);
 
   useEffect(() => {
-    if (!isPlaying || !sentences.length) {
-      if (pollRef.current) { clearInterval(pollRef.current); pollRef.current = null; }
-      return;
-    }
+    if (!isPlaying || !sentences.length) { if (pollRef.current) clearInterval(pollRef.current); return; }
     pollRef.current = setInterval(() => {
       const t = playerRef.current?.getCurrentTime?.() || 0;
       const idx = findSentenceIdx(t);
       setCurrentIdx(idx);
 
-      // Auto-pause at end of sentence (if wait mode != off and practice phase is idle)
-      if (idx >= 0 && practicePhase === "idle" && waitMode !== "off") {
+      if (idx >= 0 && practicePhase === "idle") {
         const sent = sentences[idx];
-        if (t >= sent.end - 0.1) {
+
+        // Dubbing: mute/unmute
+        if (practiceMode === "dubbing") {
+          const shouldMute = mutedSentences.has(idx);
+          const vol = playerRef.current?.getVolume?.() || 100;
+          if (shouldMute && vol > 0) playerRef.current?.setVolume?.(0);
+          else if (!shouldMute && vol === 0) playerRef.current?.setVolume?.(100);
+        }
+
+        // Auto-pause at sentence end (shadow/dictation modes, wait != off)
+        if (practiceMode !== "dubbing" && waitMode !== "off" && t >= sent.end - 0.15) {
           playerRef.current?.pauseVideo?.();
           setIsPlaying(false);
           startPractice(idx);
         }
       }
-    }, 200);
-    return () => { if (pollRef.current) { clearInterval(pollRef.current); pollRef.current = null; } };
-  }, [isPlaying, sentences, practicePhase, waitMode, findSentenceIdx]);
+    }, 150);
+    return () => { if (pollRef.current) clearInterval(pollRef.current); };
+  }, [isPlaying, sentences, practicePhase, waitMode, practiceMode, mutedSentences, findSentenceIdx]);
 
-  // Auto-scroll transcript
+  // Auto-scroll
   useEffect(() => {
     if (currentIdx >= 0 && listRef.current) {
-      const el = listRef.current.children[currentIdx] as HTMLElement;
-      el?.scrollIntoView({ behavior: "smooth", block: "nearest" });
+      (listRef.current.children[currentIdx] as HTMLElement)?.scrollIntoView({ behavior: "smooth", block: "nearest" });
     }
   }, [currentIdx]);
 
-  // ── Practice flow ──
+  // Practice
   const startPractice = (idx: number) => {
-    setCurrentIdx(idx);
-    setResult(null); setDictInput(""); setDictCorrect(null);
-    if (waitMode === "manual") { setPracticePhase("wait"); }
-    else if (waitMode === "off") { setPracticePhase("idle"); return; }
-    else {
-      setPracticePhase("wait");
-      const ms = waitMode === "3s" ? 3000 : 5000;
-      timerRef.current = setTimeout(() => goRecord(idx), ms);
-    }
+    setCurrentIdx(idx); setResult(null); setDictInput(""); setDictCorrect(null); setRepeatDone(0);
+    if (waitMode === "manual") setPracticePhase("wait");
+    else { setPracticePhase("wait"); timerRef.current = setTimeout(() => goRecord(idx), waitMode === "3s" ? 3000 : 5000); }
   };
 
   const goRecord = (idx: number) => {
-    if (timerRef.current) { clearTimeout(timerRef.current); timerRef.current = null; }
+    if (timerRef.current) clearTimeout(timerRef.current);
     if (practiceMode === "dictation") { setPracticePhase("dictation"); return; }
-    if (!CAN_MIC) { resumePlay(idx); return; }
+    if (!CAN_MIC) { finishSentence(idx); return; }
     setPracticePhase("recording");
   };
 
-  // Auto-start mic
   useEffect(() => {
     if (practicePhase !== "recording" || currentIdx < 0) return;
     let cancelled = false;
@@ -208,7 +205,7 @@ export function ShadowingPage({ onBackHome }: Props) {
   }, [practicePhase, currentIdx]);
 
   const stopAndScore = async () => {
-    if (timerRef.current) { clearTimeout(timerRef.current); timerRef.current = null; }
+    if (timerRef.current) clearTimeout(timerRef.current);
     if (!recRef.current) return;
     setPracticePhase("scoring");
     try {
@@ -228,200 +225,255 @@ export function ShadowingPage({ onBackHome }: Props) {
     setPracticePhase("dict-result");
   };
 
-  const resumePlay = (fromIdx?: number) => {
-    setPracticePhase("idle");
+  const finishSentence = (fromIdx?: number) => {
     const idx = fromIdx ?? currentIdx;
-    if (idx + 1 < sentences.length) {
-      playerRef.current?.seekTo?.(sentences[idx + 1].start, true);
+    const newRepeat = repeatDone + 1;
+    if (newRepeat < repeatTarget) {
+      // Repeat: play same sentence again
+      setRepeatDone(newRepeat);
+      setPracticePhase("idle");
+      playerRef.current?.seekTo?.(sentences[idx].start, true);
       playerRef.current?.playVideo?.();
+    } else {
+      // Move to next
+      setRepeatDone(0);
+      setCompletedCount((c) => c + 1);
+      setPracticePhase("idle");
+      if (idx + 1 < sentences.length) {
+        playerRef.current?.seekTo?.(sentences[idx + 1].start, true);
+        playerRef.current?.playVideo?.();
+      } else {
+        checkCompletion();
+      }
     }
   };
 
+  const checkCompletion = () => {
+    const scored = Object.keys(scores).length;
+    if (scored >= sentences.length && scored > 0) setPracticePhase("done");
+  };
+
   const seekToSentence = (idx: number) => {
-    setCurrentIdx(idx);
-    setPracticePhase("idle");
+    setCurrentIdx(idx); setPracticePhase("idle"); setRepeatDone(0);
     playerRef.current?.seekTo?.(sentences[idx].start, true);
     playerRef.current?.playVideo?.();
   };
 
-  const togglePlay = () => {
-    if (isPlaying) playerRef.current?.pauseVideo?.();
-    else playerRef.current?.playVideo?.();
-  };
+  const togglePlay = () => { isPlaying ? playerRef.current?.pauseVideo?.() : playerRef.current?.playVideo?.(); };
+  const changeSpeed = (s: number) => { setSpeed(s); playerRef.current?.setPlaybackRate?.(s); };
+  const toggleMute = (idx: number) => setMutedSentences((s) => { const n = new Set(s); n.has(idx) ? n.delete(idx) : n.add(idx); return n; });
 
-  const changeSpeed = (s: number) => {
-    setSpeed(s);
-    playerRef.current?.setPlaybackRate?.(s);
-  };
-
-  // ── RENDER: Video select ──
+  // ── Video select screen ──
   if (!videoId) {
     const vid = extractVideoId(ytUrl);
     return (
       <Wrapper onBack={onBackHome}>
-        <Card>
-          <CardContent className="p-4 space-y-3">
-            <h2 className="text-lg font-black flex items-center gap-2"><Video className="h-5 w-5 text-primary" /> Shadowing</h2>
-            <p className="text-sm font-semibold text-muted-foreground">Chọn video YouTube để luyện nghe & đọc theo</p>
-            <input className="w-full rounded-xl border-2 border-border px-3 py-2.5 text-sm font-bold outline-none focus:border-primary"
-              placeholder="Dán link YouTube..." value={ytUrl}
-              onChange={(e) => { setYtUrl(e.target.value); setError(""); setPasteMode(false); }} />
-            {vid && (
-              <>
-                <div className="aspect-video w-full overflow-hidden rounded-xl">
-                  <iframe src={`https://www.youtube.com/embed/${vid}`} className="h-full w-full" allowFullScreen />
-                </div>
-                {!loading && !pasteMode && <Button type="button" onClick={() => loadCaptions(vid)} className="w-full"><Play className="h-4 w-4" /> Lấy subtitle</Button>}
-                {loading && <p className="text-center text-sm font-bold text-muted-foreground"><Loader2 className="inline h-4 w-4 animate-spin" /> Đang tải...</p>}
-                {error && <p className="text-xs font-bold text-red-600">{error}</p>}
-                {pasteMode && (
-                  <div className="space-y-2">
-                    <p className="text-xs font-semibold text-muted-foreground">YouTube → ⋮ → Open transcript → copy paste:</p>
-                    <textarea className="w-full rounded-xl border-2 border-border px-3 py-2 text-sm font-bold outline-none focus:border-primary h-28 resize-none"
-                      placeholder={"Hello, my name is Dee Dee.\nWhat is your name?"} value={pasteText} onChange={(e) => setPasteText(e.target.value)} />
-                    <Button type="button" onClick={() => applyPaste(vid)} disabled={!pasteText.trim()} className="w-full"><CheckCircle2 className="h-4 w-4" /> Dùng subtitle này</Button>
-                  </div>
-                )}
-                {!loading && !pasteMode && <button type="button" onClick={() => setPasteMode(true)} className="w-full text-center text-xs font-bold text-primary underline">Dán subtitle thủ công</button>}
-              </>
-            )}
-            {!ytUrl && (
-              <div className="space-y-1 max-h-[45vh] overflow-y-auto">
-                <p className="text-xs font-extrabold text-muted-foreground mb-1">Video gợi ý:</p>
-                {SUGGESTED_VIDEOS.map((v) => (
-                  <button key={v.id} type="button" onClick={() => setYtUrl(`https://youtube.com/watch?v=${v.id}`)}
-                    className="flex w-full items-center gap-2 rounded-lg px-2 py-1.5 text-left hover:bg-muted transition-colors">
-                    <span className={cn("shrink-0 rounded px-1.5 py-0.5 text-[10px] font-extrabold",
-                      v.level === "A1" ? "bg-green-100 text-green-700" : v.level === "A2" ? "bg-blue-100 text-blue-700" : "bg-purple-100 text-purple-700")}>{v.level}</span>
-                    <span className="text-xs font-bold truncate">{v.title}</span>
-                  </button>
-                ))}
+        <Card><CardContent className="p-4 space-y-3">
+          <h2 className="text-lg font-black flex items-center gap-2"><Video className="h-5 w-5 text-primary" /> Shadowing</h2>
+          <p className="text-sm font-semibold text-muted-foreground">Chọn video để luyện nghe & đọc theo</p>
+          <input className="w-full rounded-xl border-2 border-border px-3 py-2.5 text-sm font-bold outline-none focus:border-primary"
+            placeholder="Dán link YouTube..." value={ytUrl} onChange={(e) => { setYtUrl(e.target.value); setError(""); setPasteMode(false); }} />
+          {vid && (<>
+            <div className="aspect-video w-full overflow-hidden rounded-xl"><iframe src={`https://www.youtube.com/embed/${vid}`} className="h-full w-full" allowFullScreen /></div>
+            {!loading && !pasteMode && <Button type="button" onClick={() => loadCaptions(vid)} className="w-full"><Play className="h-4 w-4" /> Lấy subtitle</Button>}
+            {loading && <p className="text-center text-sm font-bold text-muted-foreground"><Loader2 className="inline h-4 w-4 animate-spin" /> Đang tải...</p>}
+            {error && <p className="text-xs font-bold text-red-600">{error}</p>}
+            {pasteMode && (<div className="space-y-2">
+              <p className="text-xs font-semibold text-muted-foreground">YouTube → ⋮ → Open transcript → copy paste:</p>
+              <textarea className="w-full rounded-xl border-2 border-border px-3 py-2 text-sm font-bold outline-none focus:border-primary h-28 resize-none"
+                placeholder={"Hello, my name is Dee Dee.\nWhat is your name?"} value={pasteText} onChange={(e) => setPasteText(e.target.value)} />
+              <Button type="button" onClick={() => applyPaste(vid)} disabled={!pasteText.trim()} className="w-full"><CheckCircle2 className="h-4 w-4" /> Dùng subtitle</Button>
+            </div>)}
+            {!loading && !pasteMode && <button type="button" onClick={() => setPasteMode(true)} className="w-full text-center text-xs font-bold text-primary underline">Dán subtitle thủ công</button>}
+          </>)}
+          {!ytUrl && (<div className="space-y-1 max-h-[45vh] overflow-y-auto">
+            <p className="text-xs font-extrabold text-muted-foreground mb-1">Video gợi ý:</p>
+            {SUGGESTED_VIDEOS.map((v) => (
+              <button key={v.id} type="button" onClick={() => setYtUrl(`https://youtube.com/watch?v=${v.id}`)}
+                className="flex w-full items-center gap-2 rounded-lg px-2 py-1.5 text-left hover:bg-muted transition-colors">
+                <span className={cn("shrink-0 rounded px-1.5 py-0.5 text-[10px] font-extrabold",
+                  v.level === "A1" ? "bg-green-100 text-green-700" : v.level === "A2" ? "bg-blue-100 text-blue-700" : "bg-purple-100 text-purple-700")}>{v.level}</span>
+                <span className="text-xs font-bold truncate">{v.title}</span>
+              </button>
+            ))}
+          </div>)}
+        </CardContent></Card>
+      </Wrapper>
+    );
+  }
+
+  // ── Completion screen ──
+  if (practicePhase === "done") {
+    const allScores = Object.values(scores);
+    const shadowScores = allScores.filter((s) => s.mode === "shadow");
+    const dictScores = allScores.filter((s) => s.mode === "dictation");
+    const avg = shadowScores.length > 0 ? Math.round(shadowScores.reduce((a, b) => a + b.score, 0) / shadowScores.length) : 0;
+    const xp = allScores.length * 2;
+    return (
+      <Wrapper onBack={onBackHome}>
+        <Card className="overflow-hidden">
+          <div className="bg-gradient-to-br from-primary to-success px-6 py-6 text-center text-white">
+            <PartyPopper className="mx-auto h-10 w-10 mb-2" />
+            <h2 className="text-2xl font-black">Hoàn thành bài!</h2>
+            <p className="text-lg font-extrabold">+{xp} XP</p>
+          </div>
+          <CardContent className="p-5 space-y-3">
+            {shadowScores.length > 0 && (
+              <div className="flex items-center gap-4 justify-center">
+                <ScoreRing score={avg} size={72} />
+                <div><p className="font-extrabold">Phát âm: {avg}%</p><p className="text-sm text-muted-foreground">{shadowScores.filter((s) => s.score >= SPEAK_PASS).length}/{shadowScores.length} đạt</p></div>
               </div>
             )}
+            {dictScores.length > 0 && <p className="text-center font-extrabold">Dictation: {dictScores.filter((s) => s.score === 100).length}/{dictScores.length} đúng</p>}
+            <div className="max-h-40 overflow-y-auto space-y-1">
+              {sentences.map((s, i) => {
+                const sc = scores[i];
+                return (<div key={i} className="flex items-center justify-between rounded-lg px-2 py-1 text-sm">
+                  <span className="font-bold truncate flex-1">{s.text}</span>
+                  {sc && <span className={cn("shrink-0 font-black ml-2", sc.score >= SPEAK_PASS ? "text-success" : "text-red-600")}>
+                    {sc.mode === "dictation" ? (sc.score === 100 ? "✓" : "✗") : `${sc.score}%`}
+                  </span>}
+                </div>);
+              })}
+            </div>
+            <div className="flex gap-2">
+              <Button type="button" variant="outline" className="flex-1" onClick={() => { setScores({}); setCompletedCount(0); setPracticePhase("idle"); seekToSentence(0); }}><RotateCcw className="h-4 w-4" /> Luyện lại</Button>
+              <Button type="button" className="flex-1" onClick={onBackHome}><Trophy className="h-4 w-4" /> Xong</Button>
+            </div>
           </CardContent>
         </Card>
       </Wrapper>
     );
   }
 
-  // ── RENDER: Practice screen ──
+  // ── Practice screen ──
   const activeSent = currentIdx >= 0 ? sentences[currentIdx] : null;
 
   return (
-    <Wrapper onBack={() => { setVideoId(""); setSentences([]); setCurrentIdx(-1); setPracticePhase("idle"); setScores({}); playerRef.current?.destroy?.(); playerRef.current = null; }}>
-      {/* YouTube Player (iframe API) */}
-      <div className="aspect-video w-full overflow-hidden rounded-xl mb-2">
-        <div ref={playerDivRef} className="h-full w-full" />
-      </div>
+    <Wrapper onBack={() => { setVideoId(""); setSentences([]); setCurrentIdx(-1); setPracticePhase("idle"); setScores({}); setMutedSentences(new Set()); playerRef.current?.destroy?.(); playerRef.current = null; }}>
+      <div className="aspect-video w-full overflow-hidden rounded-xl mb-2"><div ref={playerDivRef} className="h-full w-full" /></div>
 
-      {/* Player controls */}
-      <div className="mb-2 flex items-center justify-between">
+      {/* Controls row 1: play/nav + speed */}
+      <div className="mb-1.5 flex items-center justify-between">
         <div className="flex items-center gap-1">
-          <button type="button" onClick={() => currentIdx > 0 && seekToSentence(currentIdx - 1)} className="rounded-lg p-1.5 text-muted-foreground hover:bg-muted"><ChevronLeft className="h-4 w-4" /></button>
-          <button type="button" onClick={togglePlay} className="rounded-full bg-primary p-2 text-white shadow-sm">
+          <button type="button" onClick={() => currentIdx > 0 && seekToSentence(currentIdx - 1)} className="rounded-lg p-1 text-muted-foreground hover:bg-muted"><ChevronLeft className="h-4 w-4" /></button>
+          <button type="button" onClick={togglePlay} className="rounded-full bg-primary p-1.5 text-white shadow-sm">
             {isPlaying ? <Pause className="h-4 w-4" /> : <Play className="h-4 w-4" />}
           </button>
-          <button type="button" onClick={() => currentIdx < sentences.length - 1 && seekToSentence(currentIdx + 1)} className="rounded-lg p-1.5 text-muted-foreground hover:bg-muted"><ChevronRight className="h-4 w-4" /></button>
-          <span className="text-xs font-extrabold text-muted-foreground ml-1">{currentIdx + 1}/{sentences.length}</span>
+          <button type="button" onClick={() => currentIdx < sentences.length - 1 && seekToSentence(currentIdx + 1)} className="rounded-lg p-1 text-muted-foreground hover:bg-muted"><ChevronRight className="h-4 w-4" /></button>
+          <span className="text-[10px] font-extrabold text-muted-foreground ml-1">{Math.max(0, currentIdx + 1)}/{sentences.length}</span>
         </div>
-
-        {/* Speed */}
         <div className="flex gap-0.5 rounded-lg bg-muted p-0.5">
-          {SPEEDS.map((s) => (
-            <button key={s} type="button" onClick={() => changeSpeed(s)}
-              className={cn("rounded-md px-1.5 py-0.5 text-[10px] font-extrabold", speed === s ? "bg-primary text-white" : "text-muted-foreground")}>{s}×</button>
-          ))}
+          {SPEEDS.map((s) => (<button key={s} type="button" onClick={() => changeSpeed(s)}
+            className={cn("rounded-md px-1.5 py-0.5 text-[10px] font-extrabold", speed === s ? "bg-primary text-white" : "text-muted-foreground")}>{s}×</button>))}
         </div>
       </div>
 
-      {/* Mode + Wait */}
-      <div className="mb-2 flex items-center justify-between">
-        <div className="flex gap-1 rounded-xl bg-muted p-0.5">
+      {/* Controls row 2: mode + wait + repeat + IPA */}
+      <div className="mb-2 flex items-center justify-between flex-wrap gap-1">
+        <div className="flex gap-0.5 rounded-xl bg-muted p-0.5">
           <ModeBtn active={practiceMode === "shadow"} onClick={() => setPracticeMode("shadow")}><Mic className="h-3 w-3" /> Shadow</ModeBtn>
-          <ModeBtn active={practiceMode === "dictation"} onClick={() => setPracticeMode("dictation")}><Keyboard className="h-3 w-3" /> Dictation</ModeBtn>
+          <ModeBtn active={practiceMode === "dictation"} onClick={() => setPracticeMode("dictation")}><Keyboard className="h-3 w-3" /> Dict</ModeBtn>
+          <ModeBtn active={practiceMode === "dubbing"} onClick={() => { setPracticeMode("dubbing"); setWaitMode("off"); }}><VolumeX className="h-3 w-3" /> Dub</ModeBtn>
         </div>
-        <div className="flex items-center gap-0.5">
-          <Clock className="h-3 w-3 text-muted-foreground mr-0.5" />
-          {(["off", "3s", "5s", "manual"] as WaitMode[]).map((w) => (
-            <button key={w} type="button" onClick={() => setWaitMode(w)}
-              className={cn("rounded-md px-1.5 py-0.5 text-[10px] font-extrabold", waitMode === w ? "bg-primary text-white" : "bg-muted text-muted-foreground")}>{WAIT_LABELS[w]}</button>
-          ))}
+        <div className="flex items-center gap-1">
+          {practiceMode !== "dubbing" && <>
+            <Clock className="h-3 w-3 text-muted-foreground" />
+            {(["off", "3s", "5s", "manual"] as WaitMode[]).map((w) => (
+              <button key={w} type="button" onClick={() => setWaitMode(w)}
+                className={cn("rounded-md px-1 py-0.5 text-[9px] font-extrabold", waitMode === w ? "bg-primary text-white" : "bg-muted text-muted-foreground")}>{WAIT_LABELS[w]}</button>
+            ))}
+          </>}
+          <div className="flex items-center gap-0.5 ml-1">
+            <Repeat className="h-3 w-3 text-muted-foreground" />
+            {[1, 2, 3, 5].map((r) => (
+              <button key={r} type="button" onClick={() => setRepeatTarget(r)}
+                className={cn("rounded-md px-1 py-0.5 text-[9px] font-extrabold", repeatTarget === r ? "bg-primary text-white" : "bg-muted text-muted-foreground")}>{r}×</button>
+            ))}
+          </div>
+          <button type="button" onClick={() => setShowIpa(!showIpa)}
+            className={cn("rounded-md px-1.5 py-0.5 text-[9px] font-extrabold ml-0.5", showIpa ? "bg-primary text-white" : "bg-muted text-muted-foreground")}>IPA</button>
         </div>
       </div>
 
-      {/* Current sentence display */}
+      {/* Current sentence */}
       {activeSent && (
-        <div className={cn("mb-2 rounded-xl px-4 py-3 text-center transition-all", practicePhase !== "idle" ? "bg-primary/10 border border-primary/30" : "bg-muted")}>
+        <div className={cn("mb-2 rounded-xl px-4 py-2.5 text-center transition-all", practicePhase !== "idle" ? "bg-primary/10 border border-primary/30" : "bg-muted")}>
           <p className="text-lg font-black">{activeSent.text}</p>
+          {showIpa && <p className="text-xs font-semibold text-muted-foreground mt-0.5">/{activeSent.text.toLowerCase().replace(/[^a-z ]/g, "")}/</p>}
+          {repeatTarget > 1 && <p className="text-[10px] font-bold text-muted-foreground">Lần {repeatDone + 1}/{repeatTarget}</p>}
         </div>
       )}
 
-      {/* Practice area (inline) */}
-      {practicePhase !== "idle" && (
-        <Card className="mb-2">
-          <CardContent className="p-3 space-y-2">
-            {practicePhase === "wait" && (
-              <div className="flex items-center justify-center gap-3">
-                <Pause className="h-5 w-5 text-muted-foreground animate-pulse" />
-                <span className="text-sm font-bold text-muted-foreground">{waitMode === "manual" ? "Bấm để bắt đầu" : `Đợi ${waitMode}...`}</span>
-                {waitMode === "manual" && <Button type="button" size="sm" onClick={() => goRecord(currentIdx)}><Play className="h-3 w-3" /> Bắt đầu</Button>}
+      {/* Practice area */}
+      {practicePhase !== "idle" && practicePhase !== "done" && (
+        <Card className="mb-2"><CardContent className="p-3 space-y-2">
+          {practicePhase === "wait" && (
+            <div className="flex items-center justify-center gap-3">
+              <Pause className="h-5 w-5 text-muted-foreground animate-pulse" />
+              <span className="text-sm font-bold text-muted-foreground">{waitMode === "manual" ? "Bấm để bắt đầu" : `Đợi ${waitMode}...`}</span>
+              {waitMode === "manual" && <Button type="button" size="sm" onClick={() => goRecord(currentIdx)}><Play className="h-3 w-3" /> Bắt đầu</Button>}
+            </div>
+          )}
+          {practicePhase === "recording" && (
+            <div className="flex items-center justify-center gap-3">
+              <button type="button" onClick={stopAndScore} className="flex h-12 w-12 animate-pulse items-center justify-center rounded-full bg-red-500 text-white"><Square className="h-5 w-5" /></button>
+              <span className="text-sm font-bold text-red-600">Đọc theo...</span>
+            </div>
+          )}
+          {practicePhase === "scoring" && <div className="flex justify-center"><Loader2 className="h-6 w-6 animate-spin text-primary" /></div>}
+          {practicePhase === "result" && result && (
+            <SpeakResult result={result} ringSize={56}
+              continueLabel={<>Tiếp <ArrowRight className="h-3 w-3" /></>}
+              onRetry={() => { setPracticePhase("idle"); seekToSentence(currentIdx); }}
+              onContinue={() => finishSentence()}
+              onSkip={() => finishSentence()} />
+          )}
+          {practicePhase === "dictation" && (
+            <div className="flex gap-2">
+              <input className="flex-1 rounded-lg border-2 border-border px-3 py-2 text-sm font-bold outline-none focus:border-primary"
+                value={dictInput} onChange={(e) => setDictInput(e.target.value)}
+                onKeyDown={(e) => e.key === "Enter" && dictInput.trim() && checkDictation()}
+                placeholder="Gõ câu vừa nghe..." autoFocus />
+              <Button type="button" size="sm" onClick={checkDictation} disabled={!dictInput.trim()}><CheckCircle2 className="h-4 w-4" /></Button>
+            </div>
+          )}
+          {practicePhase === "dict-result" && (
+            <div className="flex items-center justify-between">
+              <span className={cn("text-sm font-black", dictCorrect ? "text-success" : "text-red-600")}>{dictCorrect ? "Đúng ✓" : "Sai ✗"}</span>
+              {!dictCorrect && <span className="text-xs font-bold text-red-600 line-through">{dictInput}</span>}
+              <div className="flex gap-1">
+                {!dictCorrect && <Button type="button" variant="outline" size="sm" onClick={() => { setPracticePhase("idle"); seekToSentence(currentIdx); }}><RotateCcw className="h-3 w-3" /></Button>}
+                <Button type="button" size="sm" onClick={() => finishSentence()}>Tiếp</Button>
               </div>
-            )}
-            {practicePhase === "recording" && (
-              <div className="flex items-center justify-center gap-3">
-                <button type="button" onClick={stopAndScore} className="flex h-12 w-12 animate-pulse items-center justify-center rounded-full bg-red-500 text-white"><Square className="h-5 w-5" /></button>
-                <span className="text-sm font-bold text-red-600">Đọc theo...</span>
-              </div>
-            )}
-            {practicePhase === "scoring" && <div className="flex justify-center"><Loader2 className="h-6 w-6 animate-spin text-primary" /></div>}
-            {practicePhase === "result" && result && (
-              <SpeakResult result={result} ringSize={56}
-                continueLabel={<>Tiếp <ArrowRight className="h-3 w-3" /></>}
-                onRetry={() => { setPracticePhase("idle"); seekToSentence(currentIdx); }}
-                onContinue={() => resumePlay()}
-                onSkip={() => resumePlay()} />
-            )}
-            {practicePhase === "dictation" && (
-              <div className="flex gap-2">
-                <input className="flex-1 rounded-lg border-2 border-border px-3 py-2 text-sm font-bold outline-none focus:border-primary"
-                  value={dictInput} onChange={(e) => setDictInput(e.target.value)}
-                  onKeyDown={(e) => e.key === "Enter" && dictInput.trim() && checkDictation()}
-                  placeholder="Gõ câu vừa nghe..." autoFocus />
-                <Button type="button" size="sm" onClick={checkDictation} disabled={!dictInput.trim()}><CheckCircle2 className="h-4 w-4" /></Button>
-              </div>
-            )}
-            {practicePhase === "dict-result" && (
-              <div className="flex items-center justify-between">
-                <span className={cn("text-sm font-black", dictCorrect ? "text-success" : "text-red-600")}>{dictCorrect ? "Đúng ✓" : "Sai ✗"}</span>
-                {!dictCorrect && <span className="text-xs font-bold text-red-600 line-through">{dictInput}</span>}
-                <div className="flex gap-1">
-                  {!dictCorrect && <Button type="button" variant="outline" size="sm" onClick={() => { setPracticePhase("idle"); seekToSentence(currentIdx); }}><RotateCcw className="h-3 w-3" /></Button>}
-                  <Button type="button" size="sm" onClick={() => resumePlay()}>Tiếp</Button>
-                </div>
-              </div>
-            )}
-          </CardContent>
-        </Card>
+            </div>
+          )}
+        </CardContent></Card>
       )}
 
       {/* Transcript */}
-      <div ref={listRef} className="space-y-0.5 rounded-2xl border border-border p-1 max-h-[35vh] overflow-y-auto">
+      <div ref={listRef} className="space-y-0.5 rounded-2xl border border-border p-1 max-h-[30vh] overflow-y-auto">
         {sentences.map((s, i) => {
           const isActive = i === currentIdx;
           const sc = scores[i];
+          const isMuted = mutedSentences.has(i);
           return (
-            <button key={i} type="button" onClick={() => seekToSentence(i)}
-              className={cn("flex w-full items-center gap-2 rounded-lg px-2.5 py-1.5 text-left transition-all",
-                isActive ? "bg-primary/15 border border-primary/30" : "hover:bg-muted")}>
-              <span className="text-[10px] font-bold text-muted-foreground shrink-0 w-8">
-                {Math.floor(s.start / 60)}:{String(Math.floor(s.start % 60)).padStart(2, "0")}
-              </span>
-              <span className={cn("flex-1 text-sm", isActive ? "font-black text-primary" : "font-bold")}>{s.text}</span>
+            <div key={i} className={cn("flex w-full items-center gap-1.5 rounded-lg px-2 py-1.5 transition-all",
+              isActive ? "bg-primary/15 border border-primary/30" : "hover:bg-muted")}>
+              {practiceMode === "dubbing" && (
+                <button type="button" onClick={() => toggleMute(i)} className={cn("shrink-0 rounded p-0.5", isMuted ? "text-red-500" : "text-muted-foreground")}>
+                  {isMuted ? <VolumeX className="h-3 w-3" /> : <Volume2 className="h-3 w-3" />}
+                </button>
+              )}
+              <button type="button" onClick={() => seekToSentence(i)} className="flex-1 text-left min-w-0">
+                <span className="text-[10px] font-bold text-muted-foreground mr-1">{Math.floor(s.start / 60)}:{String(Math.floor(s.start % 60)).padStart(2, "0")}</span>
+                <span className={cn("text-sm", isActive ? "font-black text-primary" : "font-bold", isMuted ? "text-red-400" : "")}>{s.text}</span>
+              </button>
               {sc && <span className={cn("shrink-0 text-xs font-black", sc.score >= SPEAK_PASS ? "text-success" : "text-red-600")}>
                 {sc.mode === "dictation" ? (sc.score === 100 ? "✓" : "✗") : `${sc.score}%`}
               </span>}
               {isActive && isPlaying && <Volume2 className="h-3 w-3 text-primary animate-pulse shrink-0" />}
-            </button>
+            </div>
           );
         })}
       </div>
@@ -429,8 +481,19 @@ export function ShadowingPage({ onBackHome }: Props) {
   );
 }
 
+function ScoreRing({ score, size = 72 }: { score: number; size?: number }) {
+  const color = score >= SPEAK_PASS ? "text-success" : "text-red-600";
+  return (<div className="relative flex items-center justify-center" style={{ width: size, height: size }}>
+    <svg className="h-full w-full -rotate-90" viewBox="0 0 100 100">
+      <circle cx="50" cy="50" r="42" fill="none" stroke="currentColor" strokeWidth="8" className="text-muted/30" />
+      <circle cx="50" cy="50" r="42" fill="none" stroke="currentColor" strokeWidth="8" className={color} strokeDasharray={`${score * 2.64} 264`} strokeLinecap="round" />
+    </svg>
+    <span className={cn("absolute text-lg font-black", color)}>{score}%</span>
+  </div>);
+}
+
 function ModeBtn({ active, onClick, children }: { active: boolean; onClick: () => void; children: React.ReactNode }) {
-  return <button type="button" onClick={onClick} className={cn("flex items-center gap-1 rounded-lg px-2 py-1 text-xs font-extrabold transition-colors", active ? "bg-card text-primary shadow-sm" : "text-muted-foreground")}>{children}</button>;
+  return <button type="button" onClick={onClick} className={cn("flex items-center gap-1 rounded-lg px-2 py-1 text-[10px] font-extrabold transition-colors", active ? "bg-card text-primary shadow-sm" : "text-muted-foreground")}>{children}</button>;
 }
 
 function Wrapper({ children, onBack }: { children: React.ReactNode; onBack: () => void }) {
