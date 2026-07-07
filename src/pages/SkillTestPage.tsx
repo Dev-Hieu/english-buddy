@@ -68,7 +68,7 @@ export function SkillTestPage({ student, mode, onBackHome }: Props) {
 
   if (error) return <Shell onBack={onBackHome}><Info text={error} /></Shell>;
   if (!session || submitting) return <Shell onBack={onBackHome}><Center><Loader2 className="h-8 w-8 animate-spin text-primary" /></Center></Shell>;
-  if (results) return <Shell onBack={onBackHome}><ResultView data={results} onDone={onBackHome} /></Shell>;
+  if (results) return <Shell onBack={onBackHome}><ResultView data={results} answers={answers} onDone={onBackHome} /></Shell>;
   // Không có từ hợp lệ để thi (vd từ đã bị gỡ khỏi từ điển) -> báo nhẹ, KHÔNG để trắng trang.
   if (!tasks.length) return <Shell onBack={onBackHome}><Info text="Chưa có từ để thi lúc này. Hãy học thêm và bấm 'Thuộc' cho đủ từ nhé." /></Shell>;
 
@@ -205,7 +205,7 @@ function SpeakWord({ item, onAnswer }: { item: SkillTestItem; onAnswer: (v: stri
   );
 }
 
-function ResultView({ data, onDone }: { data: { results: SkillResult[]; totalDelta: number; score?: number }; onDone: () => void }) {
+function ResultView({ data, answers, onDone }: { data: { results: SkillResult[]; totalDelta: number; score?: number }; answers?: SkillAnswer[]; onDone: () => void }) {
   const wordText = (id: string) => SEED_VOCABULARY.find((w) => w.id === id)?.word ?? id;
   const totalSkills = data.results.length * 3; // approximate
   const passedSkills = data.results.reduce((s, r) => s + r.points, 0);
@@ -245,19 +245,28 @@ function ResultView({ data, onDone }: { data: { results: SkillResult[]; totalDel
 
       {/* Per-word results */}
       <div className="w-full space-y-1.5 px-6">
-        {data.results.map((r) => (
-          <div key={r.wordId} className="flex items-center justify-between rounded-xl border border-border/60 bg-card px-3 py-2 text-left">
-            <span className="font-extrabold">{wordText(r.wordId)}</span>
-            <span className="flex items-center gap-1.5 text-sm font-bold">
-              {r.passed.map((s) => (
-                <span key={s} className="rounded-md bg-success/15 px-1.5 py-0.5 text-[10px] font-extrabold text-success">{s === "listen_word" ? "Nghe" : s === "speak" ? "Nói" : s === "write" ? "Viết" : s === "image_word" ? "Ảnh" : s}</span>
-              ))}
-              {r.lost.map((s) => (
-                <span key={s} className="rounded-md bg-red-100 px-1.5 py-0.5 text-[10px] font-extrabold text-red-600">{s === "listen_word" ? "Nghe" : s === "speak" ? "Nói" : s === "write" ? "Viết" : s === "image_word" ? "Ảnh" : s}</span>
-              ))}
-            </span>
-          </div>
-        ))}
+        {data.results.map((r) => {
+          const speakAns = answers?.find((a) => a.wordId === r.wordId && a.skill === "speak");
+          const speakScore = typeof speakAns?.value === "number" ? speakAns.value : null;
+          const skillLabel = (s: string) => s === "listen_word" ? "Nghe" : s === "speak" ? "Nói" : s === "write" ? "Viết" : s === "image_word" ? "Ảnh" : s;
+          return (
+            <div key={r.wordId} className="flex items-center justify-between rounded-xl border border-border/60 bg-card px-3 py-2 text-left">
+              <span className="font-extrabold">{wordText(r.wordId)}</span>
+              <span className="flex items-center gap-1.5 text-sm font-bold">
+                {r.passed.map((s) => (
+                  <span key={s} className="rounded-md bg-success/15 px-1.5 py-0.5 text-[10px] font-extrabold text-success">
+                    {skillLabel(s)}{s === "speak" && speakScore !== null ? ` ${speakScore}%` : ""}
+                  </span>
+                ))}
+                {r.lost.map((s) => (
+                  <span key={s} className="rounded-md bg-red-100 px-1.5 py-0.5 text-[10px] font-extrabold text-red-600">
+                    {skillLabel(s)}{s === "speak" && speakScore !== null ? ` ${speakScore}%` : ""}
+                  </span>
+                ))}
+              </span>
+            </div>
+          );
+        })}
       </div>
 
       <div className="w-full px-6 pb-6 space-y-2">
