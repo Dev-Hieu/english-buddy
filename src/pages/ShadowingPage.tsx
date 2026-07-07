@@ -357,7 +357,7 @@ export function ShadowingPage({ student, onBackHome }: Props) {
           onReady: () => playerRef.current?.setPlaybackRate?.(speed),
           onStateChange: (e: any) => {
             setIsPlaying(e.data === 1);
-            if (e.data === 0) checkCompletion(); // video ended
+            if (e.data === 0) handleVideoEnded();
           },
         },
       });
@@ -501,6 +501,17 @@ export function ShadowingPage({ student, onBackHome }: Props) {
       } else {
         setPracticePhase("done");
       }
+    }
+  };
+
+  const handleVideoEnded = () => {
+    // Video kết thúc — nếu câu cuối chưa chấm → record nó
+    const lastIdx = sentences.length - 1;
+    if (lastIdx >= 0 && practicePhase === "idle" && !scores[lastIdx]) {
+      lastPausedIdxRef.current = -1;
+      startPractice(lastIdx);
+    } else {
+      checkCompletion();
     }
   };
 
