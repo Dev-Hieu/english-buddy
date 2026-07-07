@@ -1059,6 +1059,15 @@ export function createApp() {
     res.json({ ok: true, wordId, url: url ?? "" });
   });
 
+  // ── Tra nghĩa nhanh (từ vocabulary DB, miễn phí) ──
+  app.get("/api/word-meaning", (req, res) => {
+    const word = String(req.query.word || "").trim().toLowerCase();
+    if (!word) return res.status(400).json({ error: "thiếu word" });
+    const row = db.prepare("SELECT word, phonetic, meaning_vi, meaning_en, example, example_vi FROM vocabulary WHERE LOWER(word) = ? LIMIT 1").get(word) as any;
+    if (row) return res.json(row);
+    res.status(404).json({ error: "not found" });
+  });
+
   // ── Tra từ chi tiết (DeepSeek AI) — nghĩa VN phong phú, ví dụ, từ đồng/trái nghĩa ──
   app.get("/api/word-detail", async (req, res) => {
     const word = String(req.query.word || "").trim().toLowerCase();

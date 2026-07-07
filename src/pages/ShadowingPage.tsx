@@ -150,8 +150,33 @@ export function ShadowingPage({ onBackHome }: Props) {
     setLookupResult(null);
     setLookupLoading(true);
     try {
-      const data = await apiRequest<any>(`/api/word-detail?word=${encodeURIComponent(clean)}`);
-      setLookupResult(data);
+      // 1. Tra nhanh từ vocabulary DB (4220 từ, miễn phí)
+      const vocabResp = await fetch(`/api/word-meaning?word=${encodeURIComponent(clean)}`);
+      if (vocabResp.ok) {
+        const v = await vocabResp.json();
+        setLookupResult({
+          vi: (v.meaning_vi || "").split(/[;；]/).map((s: string) => s.trim()).filter(Boolean),
+          phonetic: v.phonetic,
+          example: v.example,
+          example_vi: v.example_vi,
+          meaning_en: v.meaning_en,
+        });
+        return;
+      }
+      // 2. Try word-detail API (DeepSeek cache)
+      const detailResp = await fetch(`/api/word-detail?word=${encodeURIComponent(clean)}`, {
+        headers: { Authorization: `Bearer ${localStorage.getItem("eb_token") || ""}` }
+      });
+      if (detailResp.ok) { setLookupResult(await detailResp.json()); return; }
+      // 3. Fallback: Free Dictionary API (tiếng Anh)
+      const dictResp = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${clean}`).catch(() => null);
+      if (dictResp?.ok) {
+        const entries = await dictResp.json();
+        const meanings = entries?.[0]?.meanings?.map((m: any) => `(${m.partOfSpeech}) ${m.definitions?.[0]?.definition || ""}`).filter(Boolean);
+        const phonetic = entries?.[0]?.phonetic || "";
+        if (meanings?.length) { setLookupResult({ vi: meanings, phonetic }); return; }
+      }
+      setLookupResult(null);
     } catch { setLookupResult(null); }
     finally { setLookupLoading(false); }
   };
@@ -501,7 +526,11 @@ export function ShadowingPage({ onBackHome }: Props) {
             {lookupLoading && <Loader2 className="h-4 w-4 animate-spin text-primary" />}
             {lookupResult && lookupResult.vi && (
               <div className="space-y-1">
+                {lookupResult.phonetic && <p className="text-xs font-semibold text-muted-foreground">{lookupResult.phonetic}</p>}
                 {lookupResult.vi.map((v: string, i: number) => <p key={i} className="text-sm font-bold text-primary">{v}</p>)}
+                {lookupResult.example && <p className="text-xs font-semibold text-muted-foreground italic">"{lookupResult.example}"</p>}
+                {lookupResult.example_vi && <p className="text-xs font-semibold text-muted-foreground">→ {lookupResult.example_vi}</p>}
+                {lookupResult.meaning_en && !lookupResult.example && <p className="text-xs text-muted-foreground">{lookupResult.meaning_en}</p>}
                 {lookupResult.examples?.slice(0, 1).map((ex: any, i: number) => (
                   <p key={i} className="text-xs font-semibold text-muted-foreground italic">"{ex.en}" — {ex.vi}</p>
                 ))}
