@@ -401,8 +401,15 @@ export function ShadowingPage({ student, onBackHome }: Props) {
   // Practice
   const startPractice = (idx: number) => {
     setCurrentIdx(idx); setResult(null); setDictInput(""); setDictCorrect(null); setRepeatDone(0);
-    if (waitMode === "manual") setPracticePhase("wait");
-    else { setPracticePhase("wait"); timerRef.current = setTimeout(() => goRecord(idx), waitMode === "3s" ? 3000 : 5000); }
+    if (autoFlow) {
+      // Auto-flow: đi thẳng record, không đợi
+      goRecord(idx);
+    } else if (waitMode === "manual") {
+      setPracticePhase("wait");
+    } else {
+      setPracticePhase("wait");
+      timerRef.current = setTimeout(() => goRecord(idx), waitMode === "3s" ? 3000 : 5000);
+    }
   };
 
   const goRecord = (idx: number) => {
@@ -418,7 +425,10 @@ export function ShadowingPage({ student, onBackHome }: Props) {
     (async () => {
       try {
         recRef.current = await startRecording();
-        const dur = Math.max(2000, (sentences[currentIdx]?.text.length || 10) * 150);
+        // Ghi âm đúng bằng thời lượng câu trong video
+        const sent = sentences[currentIdx];
+        const videoDur = sent ? (sent.end - sent.start) * 1000 : 3000;
+        const dur = Math.max(1500, Math.min(videoDur, 15000));
         timerRef.current = setTimeout(() => { if (!cancelled) stopAndScore(); }, dur);
       } catch { setPracticePhase("idle"); }
     })();
@@ -455,21 +465,22 @@ export function ShadowingPage({ student, onBackHome }: Props) {
     const idx = fromIdx ?? currentIdx;
     const newRepeat = repeatDone + 1;
     if (newRepeat < repeatTarget) {
-      // Repeat: play same sentence again
       setRepeatDone(newRepeat);
       setPracticePhase("idle");
       playerRef.current?.seekTo?.(sentences[idx].start, true);
       playerRef.current?.playVideo?.();
     } else {
-      // Move to next
       setRepeatDone(0);
       setCompletedCount((c) => c + 1);
-      setPracticePhase("idle");
       if (idx + 1 < sentences.length) {
+        // Tự chuyển câu tiếp: play video → auto-pause cuối câu → record → chấm → lặp
+        setPracticePhase("idle");
+        setCurrentIdx(idx + 1);
         playerRef.current?.seekTo?.(sentences[idx + 1].start, true);
         playerRef.current?.playVideo?.();
       } else {
-        checkCompletion();
+        // Hết bài → hiện kết quả
+        setPracticePhase("done");
       }
     }
   };
