@@ -1,4 +1,4 @@
-import { ArrowRight, CheckCircle2, Headphones, Keyboard, Loader2, Mic, PartyPopper, Play, RotateCcw, Square, Volume2 } from "lucide-react";
+import { ArrowRight, CheckCircle2, Clock, Headphones, Keyboard, List, Loader2, Mic, PartyPopper, Pause, Play, RotateCcw, Square, Video, Volume2, X } from "lucide-react";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { SEED_VOCABULARY } from "@/data/seedVocabulary";
 import type { Student, VocabularyWord } from "@/types";
@@ -13,41 +13,48 @@ import { SpeakResult, SPEAK_PASS } from "@/components/speak/SpeakResult";
 
 interface Props { student: Student; topicId: string; onBackHome: () => void; }
 
-type Mode = "shadow" | "dictation";
-type Phase = "listen" | "ready" | "recording" | "scoring" | "result" | "dictation" | "dict-result";
+type PracticeMode = "shadow" | "dictation";
+type Phase = "pick" | "listen" | "wait" | "ready" | "recording" | "scoring" | "result" | "dictation" | "dict-result";
+type WaitMode = "off" | "3s" | "5s" | "manual";
 
 const CAN_MIC = typeof window !== "undefined" && window.isSecureContext && micAvailable();
 const SPEEDS = [1.0, 1.15, 1.3];
 const SPEED_LABELS = ["1×", "1.15×", "1.3×"];
-const ITEMS_PER_ROUND = 6;
+const WAIT_LABELS: Record<WaitMode, string> = { off: "Tắt", "3s": "+3s", "5s": "+5s", manual: "Bấm" };
 
-function pickPhrases(vocab: VocabularyWord[], count: number): VocabularyWord[] {
-  // Ưu tiên phrases (multi-word), có phonetic
-  const phrases = vocab.filter((w) => w.word.includes(" ") && w.phonetic);
-  const pool = phrases.length >= count ? phrases : vocab.filter((w) => w.phonetic);
-  const shuffled = [...pool].sort(() => Math.random() - 0.5);
-  return shuffled.slice(0, count);
+function getPhrases(vocab: VocabularyWord[]): VocabularyWord[] {
+  return vocab.filter((w) => w.phonetic).sort((a, b) => {
+    const aPhrase = a.word.includes(" ") ? 0 : 1;
+    const bPhrase = b.word.includes(" ") ? 0 : 1;
+    return aPhrase - bPhrase || a.word.localeCompare(b.word);
+  });
 }
 
 export function ShadowingPage({ student, topicId, onBackHome }: Props) {
-  const items = useMemo(() => {
+  const allPhrases = useMemo(() => {
     const byTopic = SEED_VOCABULARY.filter((w) => w.topicIds.includes(topicId));
-    return pickPhrases(byTopic.length >= 3 ? byTopic : SEED_VOCABULARY, ITEMS_PER_ROUND);
+    return getPhrases(byTopic.length >= 3 ? byTopic : SEED_VOCABULARY);
   }, [topicId]);
 
-  const [mode, setMode] = useState<Mode>("shadow");
+  // State
+  const [practiceMode, setPracticeMode] = useState<PracticeMode>("shadow");
+  const [waitMode, setWaitMode] = useState<WaitMode>("3s");
+  const [selectedIds, setSelectedIds] = useState<Set<string>>(new Set());
+  const [items, setItems] = useState<VocabularyWord[]>([]);
   const [n, setN] = useState(0);
-  const [round, setRound] = useState(0); // 0=1x, 1=1.15x, 2=1.3x
-  const [phase, setPhase] = useState<Phase>("listen");
+  const [round, setRound] = useState(0);
+  const [phase, setPhase] = useState<Phase>("pick");
   const [result, setResult] = useState<PronResult | null>(null);
   const [err, setErr] = useState("");
   const [scores, setScores] = useState<{ word: string; score: number; mode: string }[]>([]);
   const [done, setDone] = useState(false);
-  const [repeatCount, setRepeatCount] = useState(0); // bao nhiêu lần đọc lại từ này
-
-  // Dictation
+  const [repeatCount, setRepeatCount] = useState(0);
   const [dictInput, setDictInput] = useState("");
   const [dictCorrect, setDictCorrect] = useState<boolean | null>(null);
+
+  // YouTube
+  const [ytUrl, setYtUrl] = useState("");
+  const [showYt, setShowYt] = useState(false);
 
   const recRef = useRef<Recorder | null>(null);
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -55,57 +62,157 @@ export function ShadowingPage({ student, topicId, onBackHome }: Props) {
   const word = items[n];
   const speed = SPEEDS[round] || 1.0;
 
-  // Auto-play TTS khi phase = listen
+  // Auto-play TTS + wait mode
   useEffect(() => {
     if (!word || phase !== "listen") return;
     let cancelled = false;
     speakTextWithSpeed(word.word, speed).then(() => {
       if (cancelled) return;
-      // Đợi 0.8s sau khi TTS xong
-      timerRef.current = setTimeout(() => {
-        if (mode === "shadow") setPhase("ready");
-        else { setPhase("dictation"); setDictInput(""); setDictCorrect(null); }
-      }, 800);
+      if (waitMode === "off") {
+        goAfterListen();
+      } else if (waitMode === "manual") {
+        setPhase("wait");
+      } else {
+        const ms = waitMode === "3s" ? 3000 : 5000;
+        setPhase("wait");
+        timerRef.current = setTimeout(() => { if (!cancelled) goAfterListen(); }, ms);
+      }
     });
     return () => { cancelled = true; if (timerRef.current) clearTimeout(timerRef.current); };
-  }, [n, round, phase, word, speed, mode]);
+  }, [n, round, phase, word, speed, waitMode]);
 
-  if (!word) return <Wrapper onBack={onBackHome}><Info text="Chưa có câu để luyện." /></Wrapper>;
-  if (!CAN_MIC && mode === "shadow") return <Wrapper onBack={onBackHome}><Info text="Cần micro để Shadowing. Mở trên Chrome HTTPS." /></Wrapper>;
+  function goAfterListen() {
+    if (practiceMode === "shadow") setPhase("ready");
+    else { setPhase("dictation"); setDictInput(""); setDictCorrect(null); }
+  }
 
-  // ── Done screen ──
+  // ── Phase: Pick sentences ──
+  if (phase === "pick") {
+    const toggle = (id: string) => setSelectedIds((s) => { const next = new Set(s); next.has(id) ? next.delete(id) : next.add(id); return next; });
+    const selectAll = () => setSelectedIds(new Set(allPhrases.map((p) => p.id)));
+    const selectRandom = (count: number) => {
+      const shuffled = [...allPhrases].sort(() => Math.random() - 0.5);
+      setSelectedIds(new Set(shuffled.slice(0, count).map((p) => p.id)));
+    };
+    const startPractice = () => {
+      const sel = allPhrases.filter((p) => selectedIds.has(p.id));
+      if (!sel.length) return;
+      setItems(sel);
+      setN(0);
+      setPhase("listen");
+    };
+
+    return (
+      <Wrapper onBack={onBackHome}>
+        {/* YouTube input */}
+        <Card className="mb-3">
+          <CardContent className="p-3">
+            <button type="button" onClick={() => setShowYt(!showYt)} className="flex w-full items-center gap-2 text-sm font-extrabold text-primary">
+              <Video className="h-4 w-4" /> {showYt ? "Ẩn video" : "Dùng video YouTube"}
+            </button>
+            {showYt && (
+              <div className="mt-2 space-y-2">
+                <input
+                  className="w-full rounded-xl border-2 border-border px-3 py-2 text-sm font-bold outline-none focus:border-primary"
+                  placeholder="Dán link YouTube..."
+                  value={ytUrl}
+                  onChange={(e) => setYtUrl(e.target.value)}
+                />
+                {ytUrl && (() => {
+                  const m = ytUrl.match(/(?:v=|youtu\.be\/|\/embed\/)([a-zA-Z0-9_-]{11})/);
+                  return m ? (
+                    <div className="aspect-video w-full overflow-hidden rounded-xl">
+                      <iframe src={`https://www.youtube.com/embed/${m[1]}`} className="h-full w-full" allowFullScreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" />
+                    </div>
+                  ) : <p className="text-xs font-bold text-red-600">Link không hợp lệ</p>;
+                })()}
+                <p className="text-xs font-semibold text-muted-foreground">Mở video để nghe → chọn câu bên dưới → luyện Shadowing/Dictation</p>
+              </div>
+            )}
+          </CardContent>
+        </Card>
+
+        {/* Settings */}
+        <div className="mb-3 flex items-center justify-between">
+          <div className="flex gap-1 rounded-xl bg-muted p-0.5">
+            <ModeBtn active={practiceMode === "shadow"} onClick={() => setPracticeMode("shadow")}><Mic className="h-3.5 w-3.5" /> Shadowing</ModeBtn>
+            <ModeBtn active={practiceMode === "dictation"} onClick={() => setPracticeMode("dictation")}><Keyboard className="h-3.5 w-3.5" /> Dictation</ModeBtn>
+          </div>
+          <div className="flex items-center gap-1">
+            <Clock className="h-3.5 w-3.5 text-muted-foreground" />
+            <div className="flex gap-0.5 rounded-lg bg-muted p-0.5">
+              {(["off", "3s", "5s", "manual"] as WaitMode[]).map((w) => (
+                <button key={w} type="button" onClick={() => setWaitMode(w)}
+                  className={cn("rounded-md px-2 py-1 text-[10px] font-extrabold transition-colors", waitMode === w ? "bg-card text-primary shadow-sm" : "text-muted-foreground")}>
+                  {WAIT_LABELS[w]}
+                </button>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* Quick select */}
+        <div className="mb-2 flex flex-wrap gap-1.5">
+          <button type="button" onClick={() => selectRandom(6)} className="rounded-full bg-primary/10 px-2.5 py-1 text-xs font-extrabold text-primary">Random 6</button>
+          <button type="button" onClick={() => selectRandom(10)} className="rounded-full bg-primary/10 px-2.5 py-1 text-xs font-extrabold text-primary">Random 10</button>
+          <button type="button" onClick={selectAll} className="rounded-full bg-muted px-2.5 py-1 text-xs font-extrabold text-muted-foreground">Chọn tất cả</button>
+          <button type="button" onClick={() => setSelectedIds(new Set())} className="rounded-full bg-muted px-2.5 py-1 text-xs font-extrabold text-muted-foreground">Bỏ chọn</button>
+          <span className="ml-auto text-xs font-extrabold text-primary">{selectedIds.size} câu</span>
+        </div>
+
+        {/* Sentence list */}
+        <div className="max-h-[50vh] space-y-1 overflow-y-auto rounded-2xl border border-border p-2">
+          {allPhrases.map((p) => (
+            <button key={p.id} type="button" onClick={() => toggle(p.id)}
+              className={cn("flex w-full items-center gap-2 rounded-xl px-3 py-2 text-left transition-colors",
+                selectedIds.has(p.id) ? "bg-primary/10 border border-primary/30" : "hover:bg-muted")}>
+              <span className={cn("flex h-5 w-5 shrink-0 items-center justify-center rounded-md border-2 text-[10px]",
+                selectedIds.has(p.id) ? "border-primary bg-primary text-white" : "border-border")}>
+                {selectedIds.has(p.id) ? "✓" : ""}
+              </span>
+              <span className="flex-1 min-w-0">
+                <span className="block text-sm font-extrabold truncate">{p.word}</span>
+                {p.meaning_vi && <span className="block text-xs font-semibold text-muted-foreground truncate">{p.meaning_vi}</span>}
+              </span>
+            </button>
+          ))}
+        </div>
+
+        <Button type="button" size="lg" className="mt-3 w-full" disabled={selectedIds.size === 0} onClick={startPractice}>
+          <Play className="h-5 w-5" /> Bắt đầu ({selectedIds.size} câu)
+        </Button>
+      </Wrapper>
+    );
+  }
+
+  if (!word) return <Wrapper onBack={onBackHome}><Info text="Chưa có câu." /></Wrapper>;
+  if (!CAN_MIC && practiceMode === "shadow") return <Wrapper onBack={onBackHome}><Info text="Cần micro. Mở Chrome HTTPS." /></Wrapper>;
+
+  // ── Done ──
   if (done) {
     const shadowScores = scores.filter((s) => s.mode === "shadow");
     const dictScores = scores.filter((s) => s.mode === "dictation");
     const avg = shadowScores.length > 0 ? Math.round(shadowScores.reduce((a, b) => a + b.score, 0) / shadowScores.length) : 0;
-    const dictCorrectCount = dictScores.filter((s) => s.score === 100).length;
     return (
       <Wrapper onBack={onBackHome}>
         <Card className="overflow-hidden">
-          <div className="bg-gradient-to-br from-primary to-success px-6 py-6 text-center text-white">
+          <div className="bg-gradient-to-br from-primary to-success px-6 py-5 text-center text-white">
             <PartyPopper className="mx-auto h-10 w-10 mb-2" />
             <h2 className="text-2xl font-black">Hoàn thành!</h2>
-            <p className="text-sm font-semibold opacity-90">
-              {round > 0 ? `${SPEED_LABELS[round]} speed` : ""} · {items.length} câu
-            </p>
+            {round > 0 && <p className="text-sm opacity-90">{SPEED_LABELS[round]}</p>}
           </div>
-          <CardContent className="flex flex-col items-center gap-4 p-6">
+          <CardContent className="flex flex-col items-center gap-4 p-5">
             {shadowScores.length > 0 && (
               <div className="flex items-center gap-4">
                 <ScoreRing score={avg} size={80} />
                 <div>
-                  <p className="text-lg font-extrabold">Phát âm: {avg}%</p>
-                  <p className="text-sm font-bold text-muted-foreground">
-                    {shadowScores.filter((s) => s.score >= SPEAK_PASS).length}/{shadowScores.length} câu đạt
-                  </p>
+                  <p className="font-extrabold">Phát âm: {avg}%</p>
+                  <p className="text-sm font-bold text-muted-foreground">{shadowScores.filter((s) => s.score >= SPEAK_PASS).length}/{shadowScores.length} đạt</p>
                 </div>
               </div>
             )}
-            {dictScores.length > 0 && (
-              <p className="font-extrabold">Dictation: {dictCorrectCount}/{dictScores.length} câu đúng</p>
-            )}
-            {/* Per-item scores */}
-            <div className="w-full space-y-1.5">
+            {dictScores.length > 0 && <p className="font-extrabold">Dictation: {dictScores.filter((s) => s.score === 100).length}/{dictScores.length} đúng</p>}
+            <div className="w-full space-y-1">
               {scores.map((s, i) => (
                 <div key={i} className="flex items-center justify-between rounded-xl border border-border/60 px-3 py-1.5">
                   <span className="font-bold text-sm truncate flex-1">{s.word}</span>
@@ -116,11 +223,14 @@ export function ShadowingPage({ student, topicId, onBackHome }: Props) {
               ))}
             </div>
             <div className="flex w-full gap-2">
-              {round < SPEEDS.length - 1 && mode === "shadow" && (
-                <Button type="button" variant="outline" className="flex-1" onClick={() => { setRound((r) => r + 1); setN(0); setDone(false); setPhase("listen"); }}>
-                  <Play className="h-4 w-4" /> Tăng tốc {SPEED_LABELS[round + 1]}
+              {round < SPEEDS.length - 1 && practiceMode === "shadow" && (
+                <Button type="button" variant="outline" className="flex-1" onClick={() => { setRound((r) => r + 1); setN(0); setDone(false); setScores([]); setPhase("listen"); }}>
+                  Tăng tốc {SPEED_LABELS[round + 1]}
                 </Button>
               )}
+              <Button type="button" variant="outline" className="flex-1" onClick={() => { setPhase("pick"); setDone(false); setScores([]); setRound(0); setN(0); }}>
+                <List className="h-4 w-4" /> Chọn lại
+              </Button>
               <Button type="button" className="flex-1" onClick={onBackHome}>Xong</Button>
             </div>
           </CardContent>
@@ -130,7 +240,7 @@ export function ShadowingPage({ student, topicId, onBackHome }: Props) {
   }
 
   const next = (score?: number, m?: string) => {
-    if (score !== undefined) setScores((s) => [...s, { word: word.word, score, mode: m || mode }]);
+    if (score !== undefined) setScores((s) => [...s, { word: word.word, score, mode: m || practiceMode }]);
     if (timerRef.current) { clearTimeout(timerRef.current); timerRef.current = null; }
     setRepeatCount(0);
     if (n + 1 >= items.length) setDone(true);
@@ -139,13 +249,12 @@ export function ShadowingPage({ student, topicId, onBackHome }: Props) {
 
   const replay = () => speakTextWithSpeed(word.word, speed);
 
-  // ── Shadow: recording ──
   const startRec = async () => {
     setErr("");
     try {
       recRef.current = await startRecording();
       setPhase("recording");
-      const dur = Math.max(2000, word.word.length * 200); // thời gian ghi tỷ lệ độ dài câu
+      const dur = Math.max(2000, word.word.length * 200);
       timerRef.current = setTimeout(() => stopAndScore(), dur);
     } catch { setErr("Không mở được micro."); }
   };
@@ -159,142 +268,139 @@ export function ShadowingPage({ student, topicId, onBackHome }: Props) {
       const r = await assessPronunciation(wav, word.phonetic || "");
       setResult(r);
       setPhase("result");
-    } catch { setErr("Lỗi chấm phát âm."); setPhase("ready"); }
+    } catch { setErr("Lỗi chấm."); setPhase("ready"); }
   };
 
-  // ── Dictation: check ──
   const checkDictation = () => {
     const correct = dictInput.trim().toLowerCase().replace(/[?.!,]/g, "") === word.word.toLowerCase().replace(/[?.!,]/g, "");
     setDictCorrect(correct);
     setPhase("dict-result");
   };
 
+  // ── Sentence list (sidebar) ──
+  const sentenceBar = (
+    <div className="mb-2 flex gap-1 overflow-x-auto pb-1">
+      {items.map((item, i) => {
+        const sc = scores.find((s) => s.word === item.word);
+        return (
+          <button key={item.id} type="button" onClick={() => { setN(i); setPhase("listen"); setResult(null); setErr(""); setRepeatCount(0); }}
+            className={cn("shrink-0 rounded-lg px-2 py-1 text-[10px] font-extrabold transition-colors whitespace-nowrap",
+              i === n ? "bg-primary text-white" : sc ? (sc.score >= SPEAK_PASS ? "bg-success/15 text-success" : "bg-red-100 text-red-600") : "bg-muted text-muted-foreground")}>
+            {i + 1}
+          </button>
+        );
+      })}
+    </div>
+  );
+
   return (
-    <Wrapper onBack={onBackHome} progress={Math.round((n / items.length) * 100)}>
-      {/* Mode toggle + Speed */}
-      <div className="mb-3 flex items-center justify-between">
+    <Wrapper onBack={() => { setPhase("pick"); setDone(false); setScores([]); setRound(0); setN(0); }} progress={Math.round((n / items.length) * 100)}>
+      {/* Settings bar */}
+      <div className="mb-2 flex items-center justify-between">
         <div className="flex gap-1 rounded-xl bg-muted p-0.5">
-          <button type="button" onClick={() => setMode("shadow")} className={cn("rounded-lg px-3 py-1.5 text-xs font-extrabold transition-colors", mode === "shadow" ? "bg-card text-primary shadow-sm" : "text-muted-foreground")}>
-            <Mic className="inline h-3.5 w-3.5 mr-1" />Shadowing
-          </button>
-          <button type="button" onClick={() => { setMode("dictation"); setPhase("listen"); }} className={cn("rounded-lg px-3 py-1.5 text-xs font-extrabold transition-colors", mode === "dictation" ? "bg-card text-primary shadow-sm" : "text-muted-foreground")}>
-            <Keyboard className="inline h-3.5 w-3.5 mr-1" />Dictation
-          </button>
+          <ModeBtn active={practiceMode === "shadow"} onClick={() => setPracticeMode("shadow")}><Mic className="h-3 w-3" /> Shadow</ModeBtn>
+          <ModeBtn active={practiceMode === "dictation"} onClick={() => { setPracticeMode("dictation"); if (phase === "ready") setPhase("listen"); }}><Keyboard className="h-3 w-3" /> Dictation</ModeBtn>
         </div>
-        {mode === "shadow" && (
-          <span className="rounded-full bg-primary/10 px-2.5 py-1 text-xs font-extrabold text-primary">{SPEED_LABELS[round]}</span>
-        )}
+        <div className="flex items-center gap-1.5">
+          <div className="flex gap-0.5 rounded-lg bg-muted p-0.5">
+            {(["off", "3s", "5s", "manual"] as WaitMode[]).map((w) => (
+              <button key={w} type="button" onClick={() => setWaitMode(w)}
+                className={cn("rounded-md px-1.5 py-0.5 text-[10px] font-extrabold", waitMode === w ? "bg-card text-primary shadow-sm" : "text-muted-foreground")}>
+                {WAIT_LABELS[w]}
+              </button>
+            ))}
+          </div>
+          {practiceMode === "shadow" && <span className="rounded-full bg-primary/10 px-2 py-0.5 text-[10px] font-extrabold text-primary">{SPEED_LABELS[round]}</span>}
+        </div>
       </div>
 
-      <p className="mb-2 text-center text-sm font-extrabold text-muted-foreground">
-        Câu {n + 1} / {items.length}{repeatCount > 0 ? ` · lần ${repeatCount + 1}` : ""}
-      </p>
+      {/* Sentence navigation */}
+      {sentenceBar}
 
       <Card>
-        <CardContent className="flex flex-col items-center gap-4 p-5 text-center">
-          {/* Meaning VN */}
-          {word.meaning_vi && <p className="text-base font-extrabold text-primary">{word.meaning_vi}</p>}
+        <CardContent className="flex flex-col items-center gap-3 p-5 text-center">
+          {word.meaning_vi && <p className="text-sm font-extrabold text-primary">{word.meaning_vi}</p>}
 
-          {/* Phase: Listen */}
+          {/* Listen */}
           {phase === "listen" && (
-            <div className="flex flex-col items-center gap-2 py-4">
-              <Headphones className="h-12 w-12 animate-pulse text-primary" />
-              <p className="text-sm font-bold text-muted-foreground">Đang nghe...</p>
+            <div className="py-4"><Headphones className="mx-auto h-12 w-12 animate-pulse text-primary" /><p className="mt-2 text-sm font-bold text-muted-foreground">Đang nghe...</p></div>
+          )}
+
+          {/* Wait */}
+          {phase === "wait" && (
+            <div className="flex flex-col items-center gap-3 py-2">
+              <p className="text-2xl font-black">{word.word}</p>
+              {word.phonetic && <p className="text-sm font-semibold text-muted-foreground">{word.phonetic}</p>}
+              <Pause className="h-8 w-8 text-muted-foreground animate-pulse" />
+              <p className="text-sm font-bold text-muted-foreground">{waitMode === "manual" ? "Bấm để tiếp tục" : `Đợi ${waitMode}...`}</p>
+              {waitMode === "manual" && (
+                <Button type="button" onClick={goAfterListen}><Play className="h-4 w-4" /> Tiếp tục</Button>
+              )}
+              <button type="button" onClick={replay} className="text-xs font-bold text-primary underline"><Volume2 className="inline h-3 w-3" /> Nghe lại</button>
             </div>
           )}
 
-          {/* Phase: Ready (shadow mode) */}
+          {/* Ready (shadow) */}
           {phase === "ready" && (
             <>
               <p className="text-2xl font-black">{word.word}</p>
               {word.phonetic && <p className="text-sm font-semibold text-muted-foreground">{word.phonetic}</p>}
-              <div className="flex gap-2">
-                <button type="button" onClick={replay} className="text-sm font-bold text-primary underline">
-                  <Volume2 className="inline h-4 w-4" /> Nghe lại
-                </button>
-              </div>
-              <button type="button" onClick={startRec}
-                className="flex h-20 w-20 items-center justify-center rounded-full bg-primary text-white shadow-card transition-all active:translate-y-[2px]">
+              <button type="button" onClick={replay} className="text-sm font-bold text-primary underline"><Volume2 className="inline h-4 w-4" /> Nghe lại</button>
+              <button type="button" onClick={startRec} className="flex h-20 w-20 items-center justify-center rounded-full bg-primary text-white shadow-card transition-all active:translate-y-[2px]">
                 <Mic className="h-9 w-9" strokeWidth={2.5} />
               </button>
-              <p className="text-sm font-bold text-muted-foreground">Bấm mic rồi đọc theo!</p>
+              <p className="text-sm font-bold text-muted-foreground">Đọc theo!</p>
             </>
           )}
 
-          {/* Phase: Recording */}
+          {/* Recording */}
           {phase === "recording" && (
             <>
               <p className="text-2xl font-black">{word.word}</p>
-              <button type="button" onClick={stopAndScore}
-                className="flex h-20 w-20 animate-pulse items-center justify-center rounded-full bg-red-500 text-white shadow-card">
+              <button type="button" onClick={stopAndScore} className="flex h-20 w-20 animate-pulse items-center justify-center rounded-full bg-red-500 text-white shadow-card">
                 <Square className="h-8 w-8" />
               </button>
-              <p className="text-sm font-bold text-red-600">Đang ghi... đọc to theo mẫu!</p>
+              <p className="text-sm font-bold text-red-600">Đang ghi...</p>
             </>
           )}
 
-          {/* Phase: Scoring */}
           {phase === "scoring" && <Loader2 className="h-10 w-10 animate-spin text-primary" />}
 
-          {/* Phase: Result (shadow) */}
+          {/* Result */}
           {phase === "result" && result && (
             <div className="flex w-full flex-col items-center gap-3 rounded-2xl bg-muted p-4">
               <p className="text-lg font-black">{word.word}</p>
-              <SpeakResult
-                result={result}
-                ringSize={72}
-                showHeard
+              <SpeakResult result={result} ringSize={72} showHeard
                 continueLabel={n + 1 >= items.length ? "Xong" : (<>Tiếp <ArrowRight className="h-4 w-4" /></>)}
                 onRetry={() => { setResult(null); setPhase("listen"); setRepeatCount((c) => c + 1); }}
                 onContinue={() => next(result.score, "shadow")}
-                onSkip={() => next(result.score, "shadow")}
-              />
+                onSkip={() => next(result.score, "shadow")} />
             </div>
           )}
 
-          {/* Phase: Dictation input */}
+          {/* Dictation */}
           {phase === "dictation" && (
             <>
-              <p className="text-sm font-bold text-muted-foreground">Nghe xong → gõ lại câu vừa nghe</p>
-              <button type="button" onClick={replay} className="text-sm font-bold text-primary underline">
-                <Volume2 className="inline h-4 w-4" /> Nghe lại
-              </button>
-              <input
-                className="w-full rounded-xl border-2 border-border bg-card px-4 py-3 text-center text-lg font-bold outline-none focus:border-primary"
-                value={dictInput}
-                onChange={(e) => setDictInput(e.target.value)}
+              <button type="button" onClick={replay} className="text-sm font-bold text-primary underline"><Volume2 className="inline h-4 w-4" /> Nghe lại</button>
+              <input className="w-full rounded-xl border-2 border-border bg-card px-4 py-3 text-center text-lg font-bold outline-none focus:border-primary"
+                value={dictInput} onChange={(e) => setDictInput(e.target.value)}
                 onKeyDown={(e) => e.key === "Enter" && dictInput.trim() && checkDictation()}
-                placeholder="Gõ câu bạn nghe được..."
-                autoFocus
-              />
-              <Button type="button" onClick={checkDictation} disabled={!dictInput.trim()} className="w-full">
-                <CheckCircle2 className="h-5 w-5" /> Kiểm tra
-              </Button>
+                placeholder="Gõ câu bạn nghe..." autoFocus />
+              <Button type="button" onClick={checkDictation} disabled={!dictInput.trim()} className="w-full"><CheckCircle2 className="h-5 w-5" /> Kiểm tra</Button>
             </>
           )}
 
-          {/* Phase: Dictation result */}
+          {/* Dict result */}
           {phase === "dict-result" && (
             <div className="flex w-full flex-col items-center gap-3">
-              <p className={cn("text-xl font-black", dictCorrect ? "text-success" : "text-red-600")}>
-                {dictCorrect ? "Chính xác! ✓" : "Chưa đúng ✗"}
-              </p>
-              <div className="w-full rounded-xl bg-muted p-3 text-left space-y-1">
+              <p className={cn("text-xl font-black", dictCorrect ? "text-success" : "text-red-600")}>{dictCorrect ? "Chính xác! ✓" : "Chưa đúng ✗"}</p>
+              <div className="w-full rounded-xl bg-muted p-3 text-left">
                 <p className="text-sm font-bold text-muted-foreground">Đáp án:</p>
                 <p className="text-lg font-extrabold">{word.word}</p>
-                {!dictCorrect && (
-                  <>
-                    <p className="text-sm font-bold text-muted-foreground mt-2">Bạn gõ:</p>
-                    <p className="text-lg font-bold text-red-600">{dictInput}</p>
-                  </>
-                )}
+                {!dictCorrect && (<><p className="text-sm font-bold text-muted-foreground mt-2">Bạn gõ:</p><p className="text-lg font-bold text-red-600">{dictInput}</p></>)}
               </div>
               <div className="flex w-full gap-2">
-                {!dictCorrect && (
-                  <Button type="button" variant="outline" className="flex-1" onClick={() => { setPhase("listen"); setDictInput(""); setDictCorrect(null); setRepeatCount((c) => c + 1); }}>
-                    <RotateCcw className="h-4 w-4" /> Thử lại
-                  </Button>
-                )}
+                {!dictCorrect && <Button type="button" variant="outline" className="flex-1" onClick={() => { setPhase("listen"); setDictInput(""); setDictCorrect(null); setRepeatCount((c) => c + 1); }}><RotateCcw className="h-4 w-4" /> Thử lại</Button>}
                 <Button type="button" className="flex-1" onClick={() => next(dictCorrect ? 100 : 0, "dictation")}>
                   {n + 1 >= items.length ? "Xong" : (<>Tiếp <ArrowRight className="h-4 w-4" /></>)}
                 </Button>
@@ -309,29 +415,25 @@ export function ShadowingPage({ student, topicId, onBackHome }: Props) {
   );
 }
 
+function ModeBtn({ active, onClick, children }: { active: boolean; onClick: () => void; children: React.ReactNode }) {
+  return <button type="button" onClick={onClick} className={cn("flex items-center gap-1 rounded-lg px-2.5 py-1.5 text-xs font-extrabold transition-colors", active ? "bg-card text-primary shadow-sm" : "text-muted-foreground")}>{children}</button>;
+}
+
 function ScoreRing({ score, size = 80 }: { score: number; size?: number }) {
   const color = score >= SPEAK_PASS ? "text-success" : "text-red-600";
   return (
     <div className="relative flex items-center justify-center" style={{ width: size, height: size }}>
       <svg className="h-full w-full -rotate-90" viewBox="0 0 100 100">
         <circle cx="50" cy="50" r="42" fill="none" stroke="currentColor" strokeWidth="8" className="text-muted/30" />
-        <circle cx="50" cy="50" r="42" fill="none" stroke="currentColor" strokeWidth="8" className={color}
-          strokeDasharray={`${score * 2.64} 264`} strokeLinecap="round" />
+        <circle cx="50" cy="50" r="42" fill="none" stroke="currentColor" strokeWidth="8" className={color} strokeDasharray={`${score * 2.64} 264`} strokeLinecap="round" />
       </svg>
-      <div className="absolute text-center">
-        <span className={cn("text-xl font-black", color)}>{score}%</span>
-      </div>
+      <div className="absolute"><span className={cn("text-xl font-black", color)}>{score}%</span></div>
     </div>
   );
 }
 
 function Wrapper({ children, onBack, progress }: { children: React.ReactNode; onBack: () => void; progress?: number }) {
-  return (
-    <main className="mx-auto w-full max-w-xl px-4">
-      <SessionHeader title="Shadowing" onClose={onBack} progress={progress} />
-      {children}
-    </main>
-  );
+  return <main className="mx-auto w-full max-w-xl px-4"><SessionHeader title="Shadowing" onClose={onBack} progress={progress} />{children}</main>;
 }
 
 function Info({ text }: { text: string }) {
