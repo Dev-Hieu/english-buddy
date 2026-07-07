@@ -625,7 +625,7 @@ export function ShadowingPage({ student, onBackHome }: Props) {
                 <p className="text-center text-sm font-bold text-muted-foreground py-6">Chưa có video nào. Chọn video từ tab "Khám phá" để bắt đầu!</p>
               ) : myVideos.map((v) => (
                 <div key={v.videoId} className="flex items-center gap-2 rounded-xl border border-border p-2 hover:bg-muted transition-colors">
-                  <button type="button" onClick={() => setYtUrl(`https://youtube.com/watch?v=${v.videoId}`)} className="flex-1 text-left min-w-0">
+                  <button type="button" onClick={() => { setYtUrl(`https://youtube.com/watch?v=${v.videoId}`); setError(""); setPasteMode(false); }} className="flex-1 text-left min-w-0">
                     <p className="text-sm font-extrabold truncate">{v.title || v.videoId}</p>
                     <div className="flex items-center gap-1.5 mt-0.5">
                       {v.level && <span className="rounded-md px-1.5 py-0.5 text-xs font-extrabold bg-muted text-muted-foreground">{v.level}</span>}
@@ -653,7 +653,7 @@ export function ShadowingPage({ student, onBackHome }: Props) {
             <div className="space-y-1 max-h-[40vh] overflow-y-auto">
               <p className="text-xs font-bold text-muted-foreground">{filteredVideos.length} video</p>
               {filteredVideos.map((v) => (
-                <button key={v.id} type="button" onClick={() => setYtUrl(`https://youtube.com/watch?v=${v.id}`)}
+                <button key={v.id} type="button" onClick={() => { setYtUrl(`https://youtube.com/watch?v=${v.id}`); setError(""); setPasteMode(false); }}
                   className={cn("flex w-full items-center gap-2 rounded-lg px-2 py-1.5 text-left transition-colors",
                     extractVideoId(ytUrl) === v.id ? "bg-primary/10 border border-primary/30" : "hover:bg-muted")}>
                   <span className={cn("shrink-0 rounded-md px-2 py-0.5 text-xs font-extrabold",
