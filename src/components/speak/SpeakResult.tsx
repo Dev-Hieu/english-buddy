@@ -1,74 +1,81 @@
-import { Mic } from "lucide-react";
+import { ArrowRight, Mic, SkipForward } from "lucide-react";
 import type { PronResult } from "@/services/pronunciationService";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/components/ui/cn";
-import { ProgressRing } from "@/components/ui/progress";
 
-// Nguồn duy nhất cho mốc "đạt" khi chấm phát âm (dùng chung cho bài thi lẫn luyện nói).
 export const SPEAK_PASS = 60;
 
 interface SpeakResultProps {
   result: PronResult;
-  /** Bấm "Đọc lại" — thu âm lại từ đầu. */
   onRetry: () => void;
-  /** Đạt: bấm nút tiếp tục (label tuỳ nơi gọi). */
   onContinue: () => void;
-  /** Chưa đạt: bấm "Bỏ qua" — không tính đạt, để ôn lại sau. */
   onSkip: () => void;
-  /** Nhãn nút tiếp tục khi đạt (mặc định "Tiếp tục"). */
   continueLabel?: React.ReactNode;
-  /** Kích thước vòng tròn điểm. */
   ringSize?: number;
-  /** Có hiện dòng "Âm nghe được" không. */
   showHeard?: boolean;
 }
 
-/**
- * Khối kết quả chấm phát âm dùng chung: vòng %, chip âm vị, verdict đạt/chưa đạt,
- * và nút hành động theo trạng thái:
- *  - Đạt (>= SPEAK_PASS): [Đọc lại] + [tiếp tục]
- *  - Chưa đạt (< SPEAK_PASS): [Đọc lại] + [Bỏ qua]
- * Nơi gọi tự bọc container (Card / hộp muted) và hiển thị từ đang đọc.
- */
 export function SpeakResult({
   result, onRetry, onContinue, onSkip,
-  continueLabel = "Tiếp tục", ringSize = 92, showHeard = false,
+  continueLabel = "Tiếp tục", ringSize = 80, showHeard = false,
 }: SpeakResultProps) {
   const pass = result.score >= SPEAK_PASS;
-  return (
-    <>
-      <ProgressRing value={result.score} max={100} size={ringSize} stroke={10}>
-        <span className={cn("text-2xl font-black", pass ? "text-success" : "text-red-600")}>{result.score}%</span>
-      </ProgressRing>
+  const score = result.score;
+  const color = pass ? "text-success" : "text-red-600";
+  const bgColor = pass ? "bg-success/10" : "bg-red-50";
 
-      {result.phones.length ? (
-        <div className="flex flex-wrap justify-center gap-1.5">
+  return (
+    <div className={cn("flex flex-col items-center gap-3 rounded-2xl p-4 w-full", bgColor)}>
+      {/* Score + verdict */}
+      <div className="flex items-center gap-4">
+        {/* Score ring */}
+        <div className="relative flex items-center justify-center" style={{ width: ringSize, height: ringSize }}>
+          <svg className="h-full w-full -rotate-90" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="42" fill="none" stroke="currentColor" strokeWidth="7" className="text-muted/20" />
+            <circle cx="50" cy="50" r="42" fill="none" stroke="currentColor" strokeWidth="7" className={color}
+              strokeDasharray={`${score * 2.64} 264`} strokeLinecap="round" />
+          </svg>
+          <span className={cn("absolute text-xl font-black", color)}>{score}%</span>
+        </div>
+        <div>
+          <p className={cn("text-lg font-black", color)}>
+            {pass ? "Đạt! 👏" : "Chưa đạt"}
+          </p>
+          <p className="text-xs font-semibold text-muted-foreground">
+            {score >= 90 ? "Xuất sắc!" : score >= 80 ? "Rất tốt!" : pass ? "Khá tốt" : "Đọc lại nhé"}
+          </p>
+        </div>
+      </div>
+
+      {/* Phoneme chips — compact */}
+      {result.phones.length > 0 && (
+        <div className="flex flex-wrap justify-center gap-1">
           {result.phones.map((p, i) => (
-            <span key={i} className={cn("rounded-lg px-2 py-1 text-sm font-extrabold", p.ok ? "bg-success/15 text-success" : "bg-red-100 text-red-600")}>
+            <span key={i} className={cn("rounded-md px-1.5 py-0.5 text-xs font-extrabold", p.ok ? "bg-success/20 text-success" : "bg-red-200 text-red-700")}>
               {p.ipa}
             </span>
           ))}
         </div>
-      ) : null}
+      )}
 
-      {showHeard && result.heard ? (
-        <p className="text-xs font-semibold text-muted-foreground">Âm nghe được: {result.heard}</p>
-      ) : null}
+      {/* Heard */}
+      {showHeard && result.heard && (
+        <p className="text-[10px] font-semibold text-muted-foreground">Nghe được: /{result.heard}/</p>
+      )}
 
-      <p className={cn("font-extrabold", pass ? "text-success" : "text-red-600")}>
-        {pass ? "Đạt! Phát âm tốt 👏" : "Chưa đạt — đọc lại cho rõ hơn nhé"}
-      </p>
-
+      {/* Buttons — compact */}
       <div className="flex w-full gap-2">
-        <Button type="button" variant="outline" className="flex-1" onClick={onRetry}>
-          <Mic className="h-5 w-5" /> Đọc lại
+        <Button type="button" variant="outline" size="sm" className="flex-1" onClick={onRetry}>
+          <Mic className="h-4 w-4" /> Đọc lại
         </Button>
         {pass ? (
-          <Button type="button" className="flex-1" onClick={onContinue}>{continueLabel}</Button>
+          <Button type="button" size="sm" className="flex-1" onClick={onContinue}>{continueLabel}</Button>
         ) : (
-          <Button type="button" variant="secondary" className="flex-1" onClick={onSkip}>Bỏ qua</Button>
+          <Button type="button" variant="ghost" size="sm" className="flex-1" onClick={onSkip}>
+            <SkipForward className="h-4 w-4" /> Bỏ qua
+          </Button>
         )}
       </div>
-    </>
+    </div>
   );
 }
