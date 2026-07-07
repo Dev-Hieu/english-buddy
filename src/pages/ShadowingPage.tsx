@@ -422,7 +422,8 @@ export function ShadowingPage({ onBackHome }: Props) {
             </div>)}
             {!loading && !pasteMode && <button type="button" onClick={() => setPasteMode(true)} className="w-full text-center text-xs font-bold text-primary underline">Dán subtitle thủ công</button>}
           </>)}
-          {!ytUrl && (<div className="space-y-2">
+          {/* Danh sách video — luôn hiện */}
+          <div className="space-y-2">
             <div className="flex flex-wrap gap-1">
               <button type="button" onClick={() => setFilterLevel("")} className={cn("rounded-full px-2 py-0.5 text-[10px] font-extrabold", !filterLevel ? "bg-primary text-white" : "bg-muted text-muted-foreground")}>Tất cả</button>
               {LEVELS.map((l) => <button key={l} type="button" onClick={() => setFilterLevel(l)} className={cn("rounded-full px-2 py-0.5 text-[10px] font-extrabold", filterLevel === l ? "bg-primary text-white" : "bg-muted text-muted-foreground")}>{l}</button>)}
@@ -435,7 +436,8 @@ export function ShadowingPage({ onBackHome }: Props) {
               <p className="text-[10px] font-bold text-muted-foreground">{filteredVideos.length} video</p>
               {filteredVideos.map((v) => (
                 <button key={v.id} type="button" onClick={() => setYtUrl(`https://youtube.com/watch?v=${v.id}`)}
-                  className="flex w-full items-center gap-2 rounded-lg px-2 py-1.5 text-left hover:bg-muted transition-colors">
+                  className={cn("flex w-full items-center gap-2 rounded-lg px-2 py-1.5 text-left transition-colors",
+                    extractVideoId(ytUrl) === v.id ? "bg-primary/10 border border-primary/30" : "hover:bg-muted")}>
                   <span className={cn("shrink-0 rounded px-1.5 py-0.5 text-[10px] font-extrabold",
                     v.level === "A1" ? "bg-green-100 text-green-700" : v.level === "A2" ? "bg-blue-100 text-blue-700" :
                     v.level === "B1" ? "bg-purple-100 text-purple-700" : v.level === "B2" ? "bg-orange-100 text-orange-700" :
@@ -445,7 +447,7 @@ export function ShadowingPage({ onBackHome }: Props) {
                 </button>
               ))}
             </div>
-          </div>)}
+          </div>
         </CardContent></Card>
       </Wrapper>
     );
@@ -487,7 +489,7 @@ export function ShadowingPage({ onBackHome }: Props) {
             </div>
             <div className="flex gap-2">
               <Button type="button" variant="outline" className="flex-1" onClick={() => { setScores({}); setCompletedCount(0); setPracticePhase("idle"); seekToSentence(0); }}><RotateCcw className="h-4 w-4" /> Luyện lại</Button>
-              <Button type="button" variant="outline" className="flex-1" onClick={() => { setVideoId(""); setSentences([]); setCurrentIdx(-1); setPracticePhase("idle"); setScores({}); setMutedSentences(new Set()); playerRef.current?.destroy?.(); playerRef.current = null; }}><Video className="h-4 w-4" /> Đổi video</Button>
+              <Button type="button" variant="outline" className="flex-1" onClick={() => { setVideoId(""); setYtUrl(""); setSentences([]); setCurrentIdx(-1); setPracticePhase("idle"); setScores({}); setMutedSentences(new Set()); playerRef.current?.destroy?.(); playerRef.current = null; }}><Video className="h-4 w-4" /> Đổi video</Button>
               <Button type="button" className="flex-1" onClick={onBackHome}><Trophy className="h-4 w-4" /> Xong</Button>
             </div>
           </CardContent>
@@ -500,7 +502,7 @@ export function ShadowingPage({ onBackHome }: Props) {
   const activeSent = currentIdx >= 0 ? sentences[currentIdx] : null;
 
   return (
-    <Wrapper onBack={() => { setVideoId(""); setSentences([]); setCurrentIdx(-1); setPracticePhase("idle"); setScores({}); setMutedSentences(new Set()); playerRef.current?.destroy?.(); playerRef.current = null; }}>
+    <Wrapper onBack={() => { setVideoId(""); setYtUrl(""); setSentences([]); setCurrentIdx(-1); setPracticePhase("idle"); setScores({}); setMutedSentences(new Set()); playerRef.current?.destroy?.(); playerRef.current = null; }}>
       <div className="aspect-video w-full overflow-hidden rounded-xl mb-2"><div ref={playerDivRef} className="h-full w-full" /></div>
 
       {/* Controls row 1: play/nav + speed */}
@@ -512,7 +514,7 @@ export function ShadowingPage({ onBackHome }: Props) {
           </button>
           <button type="button" onClick={() => currentIdx < sentences.length - 1 && seekToSentence(currentIdx + 1)} className="rounded-lg p-1 text-muted-foreground hover:bg-muted"><ChevronRight className="h-4 w-4" /></button>
           <span className="text-[10px] font-extrabold text-muted-foreground ml-1">{Math.max(0, currentIdx + 1)}/{sentences.length}</span>
-          <button type="button" onClick={() => { setVideoId(""); setSentences([]); setCurrentIdx(-1); setPracticePhase("idle"); setScores({}); setMutedSentences(new Set()); playerRef.current?.destroy?.(); playerRef.current = null; }}
+          <button type="button" onClick={() => { setVideoId(""); setYtUrl(""); setSentences([]); setCurrentIdx(-1); setPracticePhase("idle"); setScores({}); setMutedSentences(new Set()); playerRef.current?.destroy?.(); playerRef.current = null; }}
             className="ml-1 rounded-md bg-muted px-1.5 py-0.5 text-[9px] font-extrabold text-muted-foreground hover:text-primary"><Video className="inline h-3 w-3" /> Chọn video</button>
         </div>
         <div className="flex gap-0.5 rounded-lg bg-muted p-0.5">
