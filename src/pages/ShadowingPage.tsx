@@ -729,109 +729,126 @@ export function ShadowingPage({ student, onBackHome }: Props) {
     <Wrapper onBack={() => { setVideoId(""); setYtUrl(""); setSentences([]); setCurrentIdx(-1); setPracticePhase("idle"); setScores({}); setMutedSentences(new Set()); playerRef.current?.destroy?.(); playerRef.current = null; }}>
       <div className="aspect-video w-full overflow-hidden rounded-xl mb-2"><div ref={playerDivRef} className="h-full w-full" /></div>
 
-      {/* Toolbar: play controls + 4 modes + settings */}
-      <div className="mb-2 flex items-center gap-1.5 rounded-2xl bg-muted/80 p-1.5">
+      {/* ── Toolbar ── */}
+      <div className="mb-2 flex items-center rounded-2xl bg-card border border-border shadow-sm overflow-hidden">
         {/* Play controls */}
-        <button type="button" onClick={() => currentIdx > 0 && seekToSentence(currentIdx - 1)} className="rounded-lg p-1.5 text-muted-foreground hover:bg-card"><ChevronLeft className="h-4 w-4" /></button>
-        <button type="button" onClick={togglePlay} className="rounded-full bg-primary p-2 text-white shadow-sm">
-          {isPlaying ? <Pause className="h-4 w-4" /> : <Play className="h-4 w-4" />}
-        </button>
-        <button type="button" onClick={() => currentIdx < sentences.length - 1 && seekToSentence(currentIdx + 1)} className="rounded-lg p-1.5 text-muted-foreground hover:bg-card"><ChevronRight className="h-4 w-4" /></button>
-        <span className="text-[10px] font-extrabold text-muted-foreground">{Math.max(0, currentIdx + 1)}/{sentences.length}</span>
-
-        {/* Separator */}
-        <div className="w-px h-6 bg-border mx-0.5" />
+        <div className="flex items-center gap-0.5 px-2 py-1.5 border-r border-border">
+          <button type="button" onClick={() => currentIdx > 0 && seekToSentence(currentIdx - 1)}
+            className="rounded-xl p-2 text-muted-foreground hover:bg-muted active:scale-95 transition-all"><ChevronLeft className="h-5 w-5" /></button>
+          <button type="button" onClick={togglePlay}
+            className={cn("rounded-full p-2.5 text-white shadow-md transition-all active:scale-90", isPlaying ? "bg-red-500" : "bg-primary")}>
+            {isPlaying ? <Pause className="h-5 w-5" /> : <Play className="h-5 w-5 ml-0.5" />}
+          </button>
+          <button type="button" onClick={() => currentIdx < sentences.length - 1 && seekToSentence(currentIdx + 1)}
+            className="rounded-xl p-2 text-muted-foreground hover:bg-muted active:scale-95 transition-all"><ChevronRight className="h-5 w-5" /></button>
+          <span className="text-xs font-black text-muted-foreground tabular-nums ml-0.5">{Math.max(0, currentIdx + 1)}<span className="text-muted-foreground/50">/{sentences.length}</span></span>
+        </div>
 
         {/* 4 Mode buttons */}
-        <div className="flex gap-0.5 flex-1 justify-center">
-          {([
-            { mode: "shadow" as PracticeMode, icon: <Mic className="h-3.5 w-3.5" />, label: "🎤", title: "Shadow từng câu" },
-            { mode: "dictation" as PracticeMode, icon: <Keyboard className="h-3.5 w-3.5" />, label: "📝", title: "Dictation" },
-            { mode: "dubbing" as PracticeMode, icon: <VolumeX className="h-3.5 w-3.5" />, label: "🔇", title: "Dubbing" },
-          ]).map((m) => (
-            <button key={m.mode} type="button" title={m.title}
-              onClick={() => { setPracticeMode(m.mode); if (m.mode === "dubbing") setWaitMode("off"); }}
-              className={cn("rounded-lg p-2 text-base transition-colors", practiceMode === m.mode ? "bg-primary text-white shadow-sm" : "text-muted-foreground hover:bg-card")}>
-              {m.label}
-            </button>
-          ))}
+        <div className="flex flex-1 justify-center gap-1 px-2">
+          <button type="button" title="Shadow từng câu" onClick={() => setPracticeMode("shadow")}
+            className={cn("flex flex-col items-center gap-0.5 rounded-xl px-2.5 py-1.5 transition-all active:scale-95",
+              practiceMode === "shadow" ? "bg-primary/10 text-primary" : "text-muted-foreground hover:bg-muted")}>
+            <Mic className={cn("h-4 w-4", practiceMode === "shadow" && "drop-shadow-sm")} />
+            <span className="text-[9px] font-extrabold leading-none">Shadow</span>
+          </button>
+          <button type="button" title="Nghe & gõ lại" onClick={() => setPracticeMode("dictation")}
+            className={cn("flex flex-col items-center gap-0.5 rounded-xl px-2.5 py-1.5 transition-all active:scale-95",
+              practiceMode === "dictation" ? "bg-primary/10 text-primary" : "text-muted-foreground hover:bg-muted")}>
+            <Keyboard className={cn("h-4 w-4", practiceMode === "dictation" && "drop-shadow-sm")} />
+            <span className="text-[9px] font-extrabold leading-none">Dict</span>
+          </button>
+          <button type="button" title="Dubbing" onClick={() => { setPracticeMode("dubbing"); setWaitMode("off"); }}
+            className={cn("flex flex-col items-center gap-0.5 rounded-xl px-2.5 py-1.5 transition-all active:scale-95",
+              practiceMode === "dubbing" ? "bg-primary/10 text-primary" : "text-muted-foreground hover:bg-muted")}>
+            <VolumeX className={cn("h-4 w-4", practiceMode === "dubbing" && "drop-shadow-sm")} />
+            <span className="text-[9px] font-extrabold leading-none">Dub</span>
+          </button>
           <button type="button" title="Thi cả bài" onClick={startFullLesson}
-            className={cn("rounded-lg p-2 text-base transition-colors", practicePhase === "full-recording" ? "bg-red-500 text-white animate-pulse" : "text-muted-foreground hover:bg-card")}>
-            🎯
+            className={cn("flex flex-col items-center gap-0.5 rounded-xl px-2.5 py-1.5 transition-all active:scale-95",
+              practicePhase === "full-recording" ? "bg-red-100 text-red-600 animate-pulse" : "text-muted-foreground hover:bg-muted")}>
+            <PlayCircle className="h-4 w-4" />
+            <span className="text-[9px] font-extrabold leading-none">Full</span>
           </button>
         </div>
 
         {/* Settings toggle */}
         <button type="button" onClick={() => setShowSettings(!showSettings)}
-          className={cn("rounded-lg p-2 transition-colors", showSettings ? "bg-card text-primary shadow-sm" : "text-muted-foreground hover:bg-card")}>
-          <Settings className="h-4 w-4" />
+          className={cn("p-3 border-l border-border transition-all", showSettings ? "bg-primary/10 text-primary" : "text-muted-foreground hover:bg-muted")}>
+          <Settings className="h-5 w-5" />
         </button>
       </div>
 
-      {/* Full lesson indicators */}
+      {/* ── Full lesson indicator ── */}
       {practicePhase === "full-recording" && (
-        <div className="mb-2 flex items-center justify-between rounded-xl bg-red-50 border border-red-200 px-3 py-2">
+        <div className="mb-2 flex items-center justify-between rounded-2xl bg-red-50 border border-red-200 px-4 py-2.5">
           <div className="flex items-center gap-2">
-            <span className="h-2.5 w-2.5 rounded-full bg-red-500 animate-pulse" />
-            <span className="text-xs font-extrabold text-red-600">Đang ghi âm toàn bài...</span>
+            <span className="relative flex h-3 w-3"><span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-red-400 opacity-75" /><span className="relative inline-flex h-3 w-3 rounded-full bg-red-500" /></span>
+            <span className="text-sm font-extrabold text-red-700">Đang ghi âm toàn bài</span>
           </div>
-          <Button type="button" size="sm" variant="destructive" onClick={stopFullLesson}><Square className="h-3 w-3" /> Dừng</Button>
+          <Button type="button" size="sm" variant="destructive" className="rounded-xl" onClick={stopFullLesson}><Square className="h-3.5 w-3.5" /> Dừng & chấm</Button>
         </div>
       )}
       {practicePhase === "full-scoring" && (
-        <div className="mb-2 flex items-center justify-center gap-2 rounded-xl bg-muted px-3 py-2">
-          <Loader2 className="h-4 w-4 animate-spin text-primary" /><span className="text-xs font-bold">Đang chấm...</span>
+        <div className="mb-2 flex items-center justify-center gap-2 rounded-2xl bg-primary/5 border border-primary/20 px-4 py-3">
+          <Loader2 className="h-5 w-5 animate-spin text-primary" /><span className="text-sm font-extrabold text-primary">Đang chấm điểm...</span>
         </div>
       )}
 
-      {/* Settings panel (ẩn/hiện) */}
+      {/* ── Settings panel ── */}
       {showSettings && (
-        <div className="mb-2 rounded-xl border border-border bg-card p-3 space-y-2.5 animate-pop">
+        <div className="mb-2 rounded-2xl border border-border bg-card shadow-sm overflow-hidden">
           {/* Speed */}
-          <div className="flex items-center justify-between">
-            <span className="text-xs font-bold text-muted-foreground">Tốc độ</span>
+          <div className="flex items-center justify-between px-4 py-2.5 border-b border-border/50">
+            <div className="flex items-center gap-2"><Volume2 className="h-4 w-4 text-muted-foreground" /><span className="text-sm font-bold">Tốc độ</span></div>
             <div className="flex gap-1">
               {SPEEDS.map((s) => (<button key={s} type="button" onClick={() => changeSpeed(s)}
-                className={cn("rounded-lg px-2.5 py-1 text-xs font-extrabold transition-colors", speed === s ? "bg-primary text-white" : "bg-muted text-muted-foreground")}>{s}×</button>))}
+                className={cn("rounded-xl px-3 py-1.5 text-xs font-extrabold transition-all active:scale-95",
+                  speed === s ? "bg-primary text-white shadow-sm" : "bg-muted text-muted-foreground hover:bg-muted/80")}>{s}×</button>))}
             </div>
           </div>
           {/* Wait */}
-          {practiceMode !== "dubbing" && (
-            <div className="flex items-center justify-between">
-              <span className="text-xs font-bold text-muted-foreground">Chờ sau câu</span>
+          {practiceModeRef.current !== "dubbing" && (
+            <div className="flex items-center justify-between px-4 py-2.5 border-b border-border/50">
+              <div className="flex items-center gap-2"><Clock className="h-4 w-4 text-muted-foreground" /><span className="text-sm font-bold">Chờ</span></div>
               <div className="flex gap-1">
                 {(["off", "3s", "5s", "manual"] as WaitMode[]).map((w) => (
                   <button key={w} type="button" onClick={() => setWaitMode(w)}
-                    className={cn("rounded-lg px-2.5 py-1 text-xs font-extrabold transition-colors", waitMode === w ? "bg-primary text-white" : "bg-muted text-muted-foreground")}>{WAIT_LABELS[w]}</button>
+                    className={cn("rounded-xl px-3 py-1.5 text-xs font-extrabold transition-all active:scale-95",
+                      waitMode === w ? "bg-primary text-white shadow-sm" : "bg-muted text-muted-foreground hover:bg-muted/80")}>{WAIT_LABELS[w]}</button>
                 ))}
               </div>
             </div>
           )}
           {/* Repeat */}
-          <div className="flex items-center justify-between">
-            <span className="text-xs font-bold text-muted-foreground">Lặp lại</span>
+          <div className="flex items-center justify-between px-4 py-2.5 border-b border-border/50">
+            <div className="flex items-center gap-2"><Repeat className="h-4 w-4 text-muted-foreground" /><span className="text-sm font-bold">Lặp</span></div>
             <div className="flex gap-1">
               {[1, 2, 3, 5].map((r) => (
                 <button key={r} type="button" onClick={() => setRepeatTarget(r)}
-                  className={cn("rounded-lg px-2.5 py-1 text-xs font-extrabold transition-colors", repeatTarget === r ? "bg-primary text-white" : "bg-muted text-muted-foreground")}>{r}×</button>
+                  className={cn("rounded-xl px-3 py-1.5 text-xs font-extrabold transition-all active:scale-95",
+                    repeatTarget === r ? "bg-primary text-white shadow-sm" : "bg-muted text-muted-foreground hover:bg-muted/80")}>{r}×</button>
               ))}
             </div>
           </div>
-          {/* Toggles */}
-          <div className="flex items-center justify-between">
-            <span className="text-xs font-bold text-muted-foreground">Tuỳ chọn</span>
-            <div className="flex gap-1.5">
+          {/* Toggles row */}
+          <div className="flex items-center justify-between px-4 py-2.5">
+            <div className="flex gap-2">
               <button type="button" onClick={() => setShowIpa(!showIpa)}
-                className={cn("rounded-lg px-2.5 py-1 text-xs font-extrabold transition-colors", showIpa ? "bg-primary text-white" : "bg-muted text-muted-foreground")}>IPA</button>
-              <button type="button" onClick={() => setAutoFlow(!autoFlow)}
-                className={cn("rounded-lg px-2.5 py-1 text-xs font-extrabold transition-colors", autoFlow ? "bg-success text-white" : "bg-muted text-muted-foreground")}>
-                <Zap className="inline h-3 w-3" /> Auto
+                className={cn("flex items-center gap-1.5 rounded-xl px-3 py-1.5 text-xs font-extrabold transition-all active:scale-95",
+                  showIpa ? "bg-primary text-white shadow-sm" : "bg-muted text-muted-foreground")}>
+                <Volume2 className="h-3.5 w-3.5" /> IPA
               </button>
-              <button type="button" onClick={() => { setVideoId(""); setYtUrl(""); setSentences([]); setCurrentIdx(-1); setPracticePhase("idle"); setScores({}); setMutedSentences(new Set()); playerRef.current?.destroy?.(); playerRef.current = null; }}
-                className="rounded-lg px-2.5 py-1 text-xs font-extrabold bg-muted text-muted-foreground hover:text-primary">
-                <Video className="inline h-3 w-3" /> Đổi video
+              <button type="button" onClick={() => setAutoFlow(!autoFlow)}
+                className={cn("flex items-center gap-1.5 rounded-xl px-3 py-1.5 text-xs font-extrabold transition-all active:scale-95",
+                  autoFlow ? "bg-success text-white shadow-sm" : "bg-muted text-muted-foreground")}>
+                <Zap className="h-3.5 w-3.5" /> Auto
               </button>
             </div>
+            <button type="button" onClick={() => { setVideoId(""); setYtUrl(""); setSentences([]); setCurrentIdx(-1); setPracticePhase("idle"); setScores({}); setMutedSentences(new Set()); playerRef.current?.destroy?.(); playerRef.current = null; }}
+              className="flex items-center gap-1.5 rounded-xl px-3 py-1.5 text-xs font-extrabold bg-muted text-muted-foreground hover:text-primary transition-all active:scale-95">
+              <Video className="h-3.5 w-3.5" /> Đổi video
+            </button>
           </div>
         </div>
       )}
