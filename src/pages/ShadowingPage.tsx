@@ -772,11 +772,17 @@ export function ShadowingPage({ student, onBackHome }: Props) {
           </button>
         </div>
 
-        {/* Settings toggle */}
-        <button type="button" onClick={() => setShowSettings(!showSettings)}
-          className={cn("p-3 border-l border-border transition-all", showSettings ? "bg-primary/10 text-primary" : "text-muted-foreground hover:bg-muted")}>
-          <Settings className="h-5 w-5" />
-        </button>
+        {/* Đổi video + Settings */}
+        <div className="flex border-l border-border">
+          <button type="button" title="Đổi video" onClick={() => { setVideoId(""); setYtUrl(""); setSentences([]); setCurrentIdx(-1); setPracticePhase("idle"); setScores({}); setMutedSentences(new Set()); playerRef.current?.destroy?.(); playerRef.current = null; }}
+            className="p-3 text-muted-foreground hover:bg-muted hover:text-primary transition-all">
+            <Video className="h-5 w-5" />
+          </button>
+          <button type="button" title="Cài đặt" onClick={() => setShowSettings(!showSettings)}
+            className={cn("p-3 transition-all", showSettings ? "bg-primary/10 text-primary" : "text-muted-foreground hover:bg-muted")}>
+            <Settings className="h-5 w-5" />
+          </button>
+        </div>
       </div>
 
       {/* ── Full lesson indicator ── */}
@@ -832,22 +838,16 @@ export function ShadowingPage({ student, onBackHome }: Props) {
             </div>
           </div>
           {/* Toggles row */}
-          <div className="flex items-center justify-between px-4 py-2.5">
-            <div className="flex gap-2">
-              <button type="button" onClick={() => setShowIpa(!showIpa)}
-                className={cn("flex items-center gap-1.5 rounded-xl px-3 py-1.5 text-xs font-extrabold transition-all active:scale-95",
-                  showIpa ? "bg-primary text-white shadow-sm" : "bg-muted text-muted-foreground")}>
-                <Volume2 className="h-3.5 w-3.5" /> IPA
-              </button>
-              <button type="button" onClick={() => setAutoFlow(!autoFlow)}
-                className={cn("flex items-center gap-1.5 rounded-xl px-3 py-1.5 text-xs font-extrabold transition-all active:scale-95",
-                  autoFlow ? "bg-success text-white shadow-sm" : "bg-muted text-muted-foreground")}>
-                <Zap className="h-3.5 w-3.5" /> Auto
-              </button>
-            </div>
-            <button type="button" onClick={() => { setVideoId(""); setYtUrl(""); setSentences([]); setCurrentIdx(-1); setPracticePhase("idle"); setScores({}); setMutedSentences(new Set()); playerRef.current?.destroy?.(); playerRef.current = null; }}
-              className="flex items-center gap-1.5 rounded-xl px-3 py-1.5 text-xs font-extrabold bg-muted text-muted-foreground hover:text-primary transition-all active:scale-95">
-              <Video className="h-3.5 w-3.5" /> Đổi video
+          <div className="flex items-center gap-2 px-4 py-2.5">
+            <button type="button" onClick={() => setShowIpa(!showIpa)}
+              className={cn("flex items-center gap-1.5 rounded-xl px-3 py-1.5 text-xs font-extrabold transition-all active:scale-95",
+                showIpa ? "bg-primary text-white shadow-sm" : "bg-muted text-muted-foreground")}>
+              <Volume2 className="h-3.5 w-3.5" /> IPA
+            </button>
+            <button type="button" onClick={() => setAutoFlow(!autoFlow)}
+              className={cn("flex items-center gap-1.5 rounded-xl px-3 py-1.5 text-xs font-extrabold transition-all active:scale-95",
+                autoFlow ? "bg-success text-white shadow-sm" : "bg-muted text-muted-foreground")}>
+              <Zap className="h-3.5 w-3.5" /> Auto
             </button>
           </div>
         </div>
