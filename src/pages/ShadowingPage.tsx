@@ -232,7 +232,11 @@ export function ShadowingPage({ student, onBackHome }: Props) {
   const recRef = useRef<Recorder | null>(null);
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const listRef = useRef<HTMLDivElement>(null);
-  const lastPausedIdxRef = useRef(-1); // tránh pause cùng câu 2 lần
+  const lastPausedIdxRef = useRef(-1);
+  const practiceModeRef = useRef(practiceMode);
+  practiceModeRef.current = practiceMode;
+  const autoFlowRef = useRef(autoFlow);
+  autoFlowRef.current = autoFlow;
 
   // Load IPA map khi vào practice (cần cho cả chấm điểm lẫn hiển thị IPA)
   useEffect(() => {
@@ -505,7 +509,7 @@ export function ShadowingPage({ student, onBackHome }: Props) {
   };
 
   const handleVideoEnded = () => {
-    if (practiceMode === "dubbing") {
+    if (practiceModeRef.current === "dubbing") {
       // Dubbing: video hết → dừng, không record
       playerRef.current?.setVolume?.(100);
       return;
