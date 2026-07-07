@@ -86,6 +86,41 @@ const SUGGESTED_VIDEOS: SuggestedVideo[] = [
 const LEVELS: VideoLevel[] = ["A1", "A2", "B1", "B2", "C1", "C2"];
 const TOPICS: VideoTopic[] = ["General", "Education", "Film", "Music", "Entertainment", "Science", "News", "People"];
 
+// IPA cho function words phổ biến (không có trong vocabulary DB)
+const COMMON_IPA: Record<string, string> = {
+  "i": "aɪ", "i'm": "aɪm", "i'll": "aɪl", "i've": "aɪv", "i'd": "aɪd",
+  "you": "juː", "you're": "jʊr", "you'll": "juːl", "you've": "juːv", "your": "jʊr", "yours": "jʊrz", "yourself": "jʊrˈself",
+  "he": "hiː", "he's": "hiːz", "him": "hɪm", "his": "hɪz", "himself": "hɪmˈself",
+  "she": "ʃiː", "she's": "ʃiːz", "her": "hɜːr", "hers": "hɜːrz", "herself": "hɜːrˈself",
+  "it": "ɪt", "it's": "ɪts", "its": "ɪts", "itself": "ɪtˈself",
+  "we": "wiː", "we're": "wɪr", "we'll": "wiːl", "we've": "wiːv", "us": "ʌs", "our": "aʊr", "ours": "aʊrz", "ourselves": "aʊrˈselvz",
+  "they": "ðeɪ", "they're": "ðer", "they'll": "ðeɪl", "they've": "ðeɪv", "them": "ðem", "their": "ðer", "theirs": "ðerz", "themselves": "ðemˈselvz",
+  "me": "miː", "my": "maɪ", "mine": "maɪn", "myself": "maɪˈself",
+  "the": "ðə", "a": "ə", "an": "ən",
+  "is": "ɪz", "are": "ɑːr", "am": "æm", "was": "wɒz", "were": "wɜːr", "be": "biː", "been": "biːn", "being": "ˈbiːɪŋ",
+  "do": "duː", "does": "dʌz", "did": "dɪd", "don't": "doʊnt", "doesn't": "ˈdʌz.ənt", "didn't": "ˈdɪd.ənt", "doing": "ˈduːɪŋ", "done": "dʌn",
+  "have": "hæv", "has": "hæz", "had": "hæd", "haven't": "ˈhæv.ənt", "hasn't": "ˈhæz.ənt", "having": "ˈhæv.ɪŋ",
+  "will": "wɪl", "won't": "woʊnt", "would": "wʊd", "wouldn't": "ˈwʊd.ənt",
+  "can": "kæn", "can't": "kænt", "cannot": "ˈkæn.ɒt", "could": "kʊd", "couldn't": "ˈkʊd.ənt",
+  "shall": "ʃæl", "should": "ʃʊd", "shouldn't": "ˈʃʊd.ənt",
+  "may": "meɪ", "might": "maɪt", "must": "mʌst", "mustn't": "ˈmʌs.ənt",
+  "not": "nɒt", "no": "noʊ", "yes": "jes", "yeah": "jeə",
+  "this": "ðɪs", "that": "ðæt", "that's": "ðæts", "these": "ðiːz", "those": "ðoʊz",
+  "here": "hɪr", "there": "ðer", "there's": "ðerz", "where": "wer", "where's": "werz",
+  "what": "wɒt", "what's": "wɒts", "when": "wen", "how": "haʊ", "why": "waɪ", "who": "huː", "who's": "huːz", "which": "wɪtʃ",
+  "and": "ænd", "or": "ɔːr", "but": "bʌt", "so": "soʊ", "if": "ɪf", "because": "bɪˈkɒz",
+  "in": "ɪn", "on": "ɒn", "at": "æt", "to": "tuː", "for": "fɔːr", "of": "ɒv", "with": "wɪð", "from": "frɒm",
+  "by": "baɪ", "up": "ʌp", "out": "aʊt", "about": "əˈbaʊt", "into": "ˈɪn.tuː", "over": "ˈoʊ.vər", "after": "ˈæf.tər", "before": "bɪˈfɔːr",
+  "then": "ðen", "than": "ðæn", "just": "dʒʌst", "also": "ˈɔːl.soʊ", "very": "ˈver.i", "too": "tuː",
+  "all": "ɔːl", "some": "sʌm", "any": "ˈen.i", "every": "ˈev.ri", "each": "iːtʃ",
+  "more": "mɔːr", "most": "moʊst", "much": "mʌtʃ", "many": "ˈmen.i",
+  "other": "ˈʌð.ər", "another": "əˈnʌð.ər", "same": "seɪm",
+  "now": "naʊ", "still": "stɪl", "already": "ɔːlˈred.i", "again": "əˈɡen",
+  "let": "let", "let's": "lets", "please": "pliːz", "thank": "θæŋk", "thanks": "θæŋks",
+  "hello": "həˈloʊ", "hi": "haɪ", "hey": "heɪ", "bye": "baɪ", "goodbye": "ɡʊdˈbaɪ",
+  "ok": "ˌoʊˈkeɪ", "okay": "ˌoʊˈkeɪ", "well": "wel", "oh": "oʊ", "wow": "waʊ",
+};
+
 let ytApiLoaded = false;
 function loadYtApi(): Promise<void> {
   if (ytApiLoaded) return Promise.resolve();
@@ -518,7 +553,8 @@ export function ShadowingPage({ onBackHome }: Props) {
         const words = activeSent.text.split(/(\s+)/);
         const ipaLine = showIpa ? words.map((w) => {
           const clean = w.toLowerCase().replace(/[^a-z'-]/g, "");
-          return ipaMap[clean] || (/[a-zA-Z]/.test(w) ? w.toLowerCase() : w);
+          if (!clean) return w; // punctuation/space
+          return ipaMap[clean] || COMMON_IPA[clean] || clean;
         }).join("") : "";
         return (
           <div className={cn("mb-2 rounded-xl px-4 py-2.5 text-center transition-all", practicePhase !== "idle" ? "bg-primary/10 border border-primary/30" : "bg-muted")}>
