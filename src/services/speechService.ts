@@ -67,6 +67,29 @@ async function speakWithPiper(text: string): Promise<boolean> {
   }
 }
 
+// Phát với tốc độ tuỳ chỉnh (1.0 = bình thường). Trả Promise resolve khi phát xong.
+export function speakTextWithSpeed(text: string, speed: number = 1.0): Promise<void> {
+  const clean = (text || "").trim();
+  if (!clean) return Promise.resolve();
+  const p = getVoicePrefs();
+  const ls = Math.max(0.5, Math.min(2.0, (LENGTH_SCALE[p.rate] || 1.0) / speed));
+  const url = `${TTS_BASE}/tts?text=${encodeURIComponent(clean)}&voice=${voiceKey(p)}&ls=${ls}&v=5`;
+  return playUrl(url).catch(() => {
+    // Fallback Web Speech
+    return new Promise<void>((resolve) => {
+      const u = new SpeechSynthesisUtterance(clean);
+      const lang = langOf(p.accent);
+      const v = pickWebVoice(lang, p.gender);
+      if (v) { u.voice = v; u.lang = v.lang; } else { u.lang = lang; }
+      u.rate = (WEB_RATE[p.rate] || 1) * speed;
+      u.onend = () => resolve();
+      u.onerror = () => resolve();
+      window.speechSynthesis.cancel();
+      window.speechSynthesis.speak(u);
+    });
+  });
+}
+
 export function speakText(text: string, _audioUrl?: string): void {
   const clean = (text || "").trim();
   if (!clean) return;
