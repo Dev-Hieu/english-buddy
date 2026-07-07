@@ -232,6 +232,7 @@ export function ShadowingPage({ student, onBackHome }: Props) {
   const recRef = useRef<Recorder | null>(null);
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const listRef = useRef<HTMLDivElement>(null);
+  const lastPausedIdxRef = useRef(-1); // tránh pause cùng câu 2 lần
 
   // Load IPA map khi vào practice (cần cho cả chấm điểm lẫn hiển thị IPA)
   useEffect(() => {
@@ -390,7 +391,8 @@ export function ShadowingPage({ student, onBackHome }: Props) {
         }
 
         // Auto-pause at sentence end (shadow/dictation modes, wait != off)
-        if (practiceMode !== "dubbing" && waitMode !== "off" && t >= sent.end - 0.15) {
+        if (practiceMode !== "dubbing" && (waitMode !== "off" || autoFlow) && t >= sent.end - 0.15 && idx !== lastPausedIdxRef.current) {
+          lastPausedIdxRef.current = idx;
           playerRef.current?.pauseVideo?.();
           setIsPlaying(false);
           startPractice(idx);
@@ -456,12 +458,15 @@ export function ShadowingPage({ student, onBackHome }: Props) {
       setResult(r);
       setScores((s) => ({ ...s, [currentIdx]: { score: r.score, mode: "shadow" } }));
       if (autoFlow) {
-        // Tự chuyển câu tiếp — không hiện popup
         finishSentence();
       } else {
         setPracticePhase("result");
       }
-    } catch { setPracticePhase("idle"); }
+    } catch {
+      // Chấm lỗi → ghi score 0, auto-flow vẫn chuyển câu tiếp (không dừng)
+      setScores((s) => ({ ...s, [currentIdx]: { score: 0, mode: "shadow" } }));
+      if (autoFlow) { finishSentence(); } else { setPracticePhase("idle"); }
+    }
   };
 
   const checkDictation = () => {
@@ -484,13 +489,16 @@ export function ShadowingPage({ student, onBackHome }: Props) {
       setRepeatDone(0);
       setCompletedCount((c) => c + 1);
       if (idx + 1 < sentences.length) {
-        // Tự chuyển câu tiếp: play video → auto-pause cuối câu → record → chấm → lặp
-        setPracticePhase("idle");
-        setCurrentIdx(idx + 1);
-        playerRef.current?.seekTo?.(sentences[idx + 1].start, true);
-        playerRef.current?.playVideo?.();
+        const nextIdx = idx + 1;
+        setCurrentIdx(nextIdx);
+        lastPausedIdxRef.current = -1; // reset cho câu mới
+        // Delay nhỏ trước khi set idle + play
+        setTimeout(() => {
+          setPracticePhase("idle");
+          playerRef.current?.seekTo?.(sentences[nextIdx].start, true);
+          playerRef.current?.playVideo?.();
+        }, 300);
       } else {
-        // Hết bài → hiện kết quả
         setPracticePhase("done");
       }
     }
@@ -547,6 +555,7 @@ export function ShadowingPage({ student, onBackHome }: Props) {
 
   const seekToSentence = (idx: number) => {
     setCurrentIdx(idx); setPracticePhase("idle"); setRepeatDone(0);
+    lastPausedIdxRef.current = -1; // reset để cho phép pause câu mới
     playerRef.current?.seekTo?.(sentences[idx].start, true);
     playerRef.current?.playVideo?.();
   };
