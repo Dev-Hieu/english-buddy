@@ -1,9 +1,12 @@
-import { PenLine, Keyboard, MessageSquareText, FileText } from "lucide-react";
-import { useState } from "react";
+import { PenLine, Keyboard, MessageSquareText, FileText, Volume2, CheckCircle2, XCircle, RotateCcw } from "lucide-react";
+import { useState, useCallback, useMemo } from "react";
 import type { Student } from "@/types";
 import { Card, CardContent } from "@/components/ui/card";
 import { SessionHeader } from "@/components/layout/SessionHeader";
+import { Button } from "@/components/ui/button";
 import { cn } from "@/components/ui/cn";
+import { SEED_VOCABULARY } from "@/data/seedVocabulary";
+import { speakText } from "@/services/speechService";
 
 interface Props { student: Student; onBackHome: () => void; }
 
@@ -18,6 +21,390 @@ const MODES: { key: Mode; icon: typeof PenLine; label: string; desc: string; col
 
 const LEVELS: CEFRLevel[] = ["A1", "A2", "B1", "B2", "C1", "C2"];
 
+/* Map UI CEFRLevel to vocabulary Level type */
+const CEFR_TO_LEVEL: Record<CEFRLevel, string> = {
+  A1: "a1", A2: "a2", B1: "b1", B2: "b2", C1: "c1", C2: "c1",
+};
+
+/* Shuffle helper */
+function shuffle<T>(arr: T[]): T[] {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+/* Normalize text for comparison */
+function normalize(s: string): string {
+  return s.toLowerCase().replace(/[^a-z0-9\s]/g, "").replace(/\s+/g, " ").trim();
+}
+
+/* Sentence templates per level */
+const SENTENCE_TEMPLATES: Record<CEFRLevel, ((w: string) => string)[]> = {
+  A1: [
+    (w) => `I like ${w}.`,
+    (w) => `This is a ${w}.`,
+    (w) => `I have a ${w}.`,
+    (w) => `The ${w} is big.`,
+    (w) => `I see a ${w}.`,
+  ],
+  A2: [
+    (w) => `She likes the ${w} very much.`,
+    (w) => `We need a new ${w} today.`,
+    (w) => `He can see the ${w} from here.`,
+    (w) => `They want to buy a ${w}.`,
+    (w) => `The ${w} is on the table.`,
+  ],
+  B1: [
+    (w) => `I have been thinking about the ${w} all day.`,
+    (w) => `She decided to learn more about ${w}.`,
+    (w) => `The ${w} was more interesting than I expected.`,
+    (w) => `We should talk about the ${w} later.`,
+    (w) => `He always finds the ${w} fascinating.`,
+  ],
+  B2: [
+    (w) => `The concept of ${w} has changed over the years.`,
+    (w) => `Understanding ${w} requires careful attention.`,
+    (w) => `Many people underestimate the importance of ${w}.`,
+    (w) => `She gave a presentation about ${w} yesterday.`,
+    (w) => `The research on ${w} has been quite promising.`,
+  ],
+  C1: [
+    (w) => `The implications of ${w} are far-reaching and complex.`,
+    (w) => `A thorough understanding of ${w} is essential for progress.`,
+    (w) => `The significance of ${w} cannot be overstated.`,
+    (w) => `Recent developments regarding ${w} have sparked debate.`,
+    (w) => `The relationship between ${w} and society deserves attention.`,
+  ],
+  C2: [
+    (w) => `The nuanced understanding of ${w} distinguishes experts from novices.`,
+    (w) => `Scholarly discourse on ${w} has evolved considerably.`,
+    (w) => `The multifaceted nature of ${w} warrants further investigation.`,
+    (w) => `Contemporary perspectives on ${w} challenge traditional assumptions.`,
+    (w) => `The interplay between ${w} and cultural norms remains contentious.`,
+  ],
+};
+
+/* Essay prompts per level */
+const ESSAY_PROMPTS: Record<CEFRLevel, string[]> = {
+  A1: [
+    "Describe your family. Who are they? What do they look like?",
+    "Write about your favorite food. Why do you like it?",
+    "Describe your house or apartment. What rooms does it have?",
+    "Write about your best friend. What do you like about them?",
+    "What do you do every day? Describe your daily routine.",
+  ],
+  A2: [
+    "Write about your last holiday. Where did you go?",
+    "Describe your school or workplace. What is it like?",
+    "What are your hobbies? Why do you enjoy them?",
+    "Write about your favorite season and what you do during it.",
+    "Describe a typical weekend for you.",
+  ],
+  B1: [
+    "Write about your favorite holiday and why it is special to you.",
+    "Do you think technology makes life better or worse? Explain your view.",
+    "Describe a memorable trip you have taken. What made it special?",
+    "Write about the advantages and disadvantages of living in a big city.",
+    "What would you do if you had a whole day with no responsibilities?",
+  ],
+  B2: [
+    "Some people believe that social media has more negative effects than positive. Do you agree?",
+    "Write about a book or movie that changed your perspective on something.",
+    "Discuss the importance of learning a foreign language in today's world.",
+    "Should students be required to wear school uniforms? Give your opinion.",
+    "How has technology changed the way people communicate?",
+  ],
+  C1: [
+    "To what extent should governments regulate artificial intelligence? Discuss.",
+    "Analyze the impact of globalization on local cultures and traditions.",
+    "Is it more important to focus on space exploration or solving problems on Earth?",
+    "Discuss the ethical implications of genetic engineering in humans.",
+    "How does the media influence public opinion? Provide examples.",
+  ],
+  C2: [
+    "Critically evaluate the notion that economic growth is always beneficial for society.",
+    "To what extent is the concept of free will compatible with modern neuroscience?",
+    "Analyze the role of education in perpetuating or reducing social inequality.",
+    "Discuss whether democracy is truly the best form of governance for all nations.",
+    "Examine the philosophical implications of artificial consciousness.",
+  ],
+};
+
+/* ─── Word Dictation Component ─── */
+function WordDictation({ level, onBack }: { level: CEFRLevel; onBack: () => void }) {
+  const words = useMemo(() => {
+    const vocabLevel = CEFR_TO_LEVEL[level];
+    const filtered = SEED_VOCABULARY.filter((v) => v.level === vocabLevel);
+    return shuffle(filtered).slice(0, 10);
+  }, [level]);
+
+  const [index, setIndex] = useState(0);
+  const [input, setInput] = useState("");
+  const [checked, setChecked] = useState(false);
+  const [correct, setCorrect] = useState(false);
+  const [score, setScore] = useState(0);
+  const [finished, setFinished] = useState(false);
+
+  const currentWord = words[index];
+
+  const handlePlay = useCallback(() => {
+    if (currentWord) speakText(currentWord.word);
+  }, [currentWord]);
+
+  const handleCheck = () => {
+    if (!currentWord || checked) return;
+    const isCorrect = normalize(input) === normalize(currentWord.word);
+    setCorrect(isCorrect);
+    setChecked(true);
+    if (isCorrect) setScore((s) => s + 1);
+  };
+
+  const handleNext = () => {
+    if (index + 1 >= words.length) {
+      setFinished(true);
+      return;
+    }
+    setIndex((i) => i + 1);
+    setInput("");
+    setChecked(false);
+    setCorrect(false);
+  };
+
+  if (words.length === 0) {
+    return (
+      <>
+        <SessionHeader title="Nghe từ viết lại" onClose={onBack} />
+        <Card><CardContent className="p-6 text-center">
+          <p className="text-sm text-muted-foreground">Không có từ vựng cho trình độ {level}</p>
+        </CardContent></Card>
+      </>
+    );
+  }
+
+  if (finished) {
+    return (
+      <>
+        <SessionHeader title="Nghe từ viết lại" onClose={onBack} />
+        <Card><CardContent className="p-6 text-center space-y-4">
+          <CheckCircle2 className="mx-auto h-12 w-12 text-green-500" />
+          <h2 className="text-lg font-black">Hoàn thành!</h2>
+          <p className="text-2xl font-extrabold text-primary">{score}/{words.length}</p>
+          <p className="text-sm text-muted-foreground">
+            {score === words.length ? "Xuất sắc! Bạn đúng hết!" : `Bạn đúng ${score} trên ${words.length} từ.`}
+          </p>
+          <Button onClick={onBack} className="mt-2"><RotateCcw className="mr-2 h-4 w-4" />Quay lại</Button>
+        </CardContent></Card>
+      </>
+    );
+  }
+
+  return (
+    <>
+      <SessionHeader title="Nghe từ viết lại" onClose={onBack} />
+      <p className="mb-2 text-xs font-bold text-muted-foreground text-center">
+        Từ {index + 1}/{words.length} · Điểm: {score}
+      </p>
+      <Card>
+        <CardContent className="p-6 space-y-4">
+          <div className="flex flex-col items-center gap-3">
+            <button type="button" onClick={handlePlay}
+              className="flex h-16 w-16 items-center justify-center rounded-full bg-purple-100 text-purple-600 transition-all active:scale-95 hover:bg-purple-200">
+              <Volume2 className="h-8 w-8" />
+            </button>
+            <p className="text-xs text-muted-foreground">Nhấn để nghe từ</p>
+          </div>
+
+          <input type="text" value={input} onChange={(e) => setInput(e.target.value)}
+            onKeyDown={(e) => { if (e.key === "Enter") checked ? handleNext() : handleCheck(); }}
+            disabled={checked} placeholder="Gõ từ bạn nghe được..."
+            className="w-full rounded-xl border border-border bg-background px-4 py-3 text-center text-lg font-bold outline-none focus:ring-2 focus:ring-primary/50 disabled:opacity-60" />
+
+          {checked && (
+            <div className={cn("flex items-center justify-center gap-2 rounded-xl p-3 text-sm font-bold",
+              correct ? "bg-green-50 text-green-700" : "bg-red-50 text-red-700")}>
+              {correct ? <CheckCircle2 className="h-5 w-5" /> : <XCircle className="h-5 w-5" />}
+              {correct ? "Chính xác!" : <>Sai. Đáp án: <span className="font-extrabold ml-1">{currentWord.word}</span></>}
+            </div>
+          )}
+
+          <div className="flex justify-center gap-2">
+            {!checked ? (
+              <Button onClick={handleCheck} disabled={!input.trim()}>Kiểm tra</Button>
+            ) : (
+              <Button onClick={handleNext}>{index + 1 >= words.length ? "Xem kết quả" : "Từ tiếp theo"}</Button>
+            )}
+            <Button variant="outline" onClick={handlePlay}><Volume2 className="h-4 w-4" /></Button>
+          </div>
+        </CardContent>
+      </Card>
+    </>
+  );
+}
+
+/* ─── Sentence Dictation Component ─── */
+function SentenceDictation({ level, onBack }: { level: CEFRLevel; onBack: () => void }) {
+  const sentences = useMemo(() => {
+    const vocabLevel = CEFR_TO_LEVEL[level];
+    const filtered = SEED_VOCABULARY.filter((v) => v.level === vocabLevel);
+    const picked = shuffle(filtered).slice(0, 5);
+    const templates = SENTENCE_TEMPLATES[level];
+    return picked.map((v, i) => templates[i % templates.length](v.word));
+  }, [level]);
+
+  const [index, setIndex] = useState(0);
+  const [input, setInput] = useState("");
+  const [checked, setChecked] = useState(false);
+  const [correct, setCorrect] = useState(false);
+  const [score, setScore] = useState(0);
+  const [finished, setFinished] = useState(false);
+
+  const currentSentence = sentences[index];
+
+  const handlePlay = useCallback(() => {
+    if (currentSentence) speakText(currentSentence);
+  }, [currentSentence]);
+
+  const handleCheck = () => {
+    if (!currentSentence || checked) return;
+    const isCorrect = normalize(input) === normalize(currentSentence);
+    setCorrect(isCorrect);
+    setChecked(true);
+    if (isCorrect) setScore((s) => s + 1);
+  };
+
+  const handleNext = () => {
+    if (index + 1 >= sentences.length) {
+      setFinished(true);
+      return;
+    }
+    setIndex((i) => i + 1);
+    setInput("");
+    setChecked(false);
+    setCorrect(false);
+  };
+
+  if (sentences.length === 0) {
+    return (
+      <>
+        <SessionHeader title="Nghe câu viết lại" onClose={onBack} />
+        <Card><CardContent className="p-6 text-center">
+          <p className="text-sm text-muted-foreground">Không có từ vựng cho trình độ {level}</p>
+        </CardContent></Card>
+      </>
+    );
+  }
+
+  if (finished) {
+    return (
+      <>
+        <SessionHeader title="Nghe câu viết lại" onClose={onBack} />
+        <Card><CardContent className="p-6 text-center space-y-4">
+          <CheckCircle2 className="mx-auto h-12 w-12 text-green-500" />
+          <h2 className="text-lg font-black">Hoàn thành!</h2>
+          <p className="text-2xl font-extrabold text-primary">{score}/{sentences.length}</p>
+          <p className="text-sm text-muted-foreground">
+            {score === sentences.length ? "Tuyệt vời! Bạn nghe rất tốt!" : `Bạn đúng ${score} trên ${sentences.length} câu.`}
+          </p>
+          <Button onClick={onBack} className="mt-2"><RotateCcw className="mr-2 h-4 w-4" />Quay lại</Button>
+        </CardContent></Card>
+      </>
+    );
+  }
+
+  return (
+    <>
+      <SessionHeader title="Nghe câu viết lại" onClose={onBack} />
+      <p className="mb-2 text-xs font-bold text-muted-foreground text-center">
+        Câu {index + 1}/{sentences.length} · Điểm: {score}
+      </p>
+      <Card>
+        <CardContent className="p-6 space-y-4">
+          <div className="flex flex-col items-center gap-3">
+            <button type="button" onClick={handlePlay}
+              className="flex h-16 w-16 items-center justify-center rounded-full bg-blue-100 text-blue-600 transition-all active:scale-95 hover:bg-blue-200">
+              <Volume2 className="h-8 w-8" />
+            </button>
+            <p className="text-xs text-muted-foreground">Nhấn để nghe câu</p>
+          </div>
+
+          <textarea value={input} onChange={(e) => setInput(e.target.value)}
+            disabled={checked} placeholder="Gõ câu bạn nghe được..."
+            rows={3}
+            className="w-full rounded-xl border border-border bg-background px-4 py-3 text-sm font-bold outline-none focus:ring-2 focus:ring-primary/50 disabled:opacity-60 resize-none" />
+
+          {checked && (
+            <div className={cn("rounded-xl p-3 text-sm font-bold space-y-1",
+              correct ? "bg-green-50 text-green-700" : "bg-red-50 text-red-700")}>
+              <div className="flex items-center gap-2">
+                {correct ? <CheckCircle2 className="h-5 w-5 shrink-0" /> : <XCircle className="h-5 w-5 shrink-0" />}
+                {correct ? "Chính xác!" : "Chưa đúng!"}
+              </div>
+              {!correct && (
+                <p className="text-xs mt-1">Đáp án: <span className="font-extrabold">{currentSentence}</span></p>
+              )}
+            </div>
+          )}
+
+          <div className="flex justify-center gap-2">
+            {!checked ? (
+              <Button onClick={handleCheck} disabled={!input.trim()}>Kiểm tra</Button>
+            ) : (
+              <Button onClick={handleNext}>{index + 1 >= sentences.length ? "Xem kết quả" : "Câu tiếp theo"}</Button>
+            )}
+            <Button variant="outline" onClick={handlePlay}><Volume2 className="h-4 w-4" /></Button>
+          </div>
+        </CardContent>
+      </Card>
+    </>
+  );
+}
+
+/* ─── Essay Component ─── */
+function EssayWriting({ level, onBack }: { level: CEFRLevel; onBack: () => void }) {
+  const prompts = ESSAY_PROMPTS[level];
+  const [promptIndex, setPromptIndex] = useState(() => Math.floor(Math.random() * prompts.length));
+  const [essay, setEssay] = useState("");
+
+  const handleSubmit = () => {
+    alert("Coming soon – Tính năng chấm bài bằng AI sẽ sớm được hoàn thiện!");
+  };
+
+  const handleNewPrompt = () => {
+    setPromptIndex((i) => (i + 1) % prompts.length);
+    setEssay("");
+  };
+
+  return (
+    <>
+      <SessionHeader title="Viết đoạn văn" onClose={onBack} />
+      <Card>
+        <CardContent className="p-6 space-y-4">
+          <div className="rounded-xl bg-amber-50 p-4 text-center space-y-2">
+            <p className="text-xs font-bold text-amber-600 uppercase">Trình độ {level} · Chủ đề</p>
+            <p className="text-sm font-extrabold text-amber-900">{prompts[promptIndex]}</p>
+          </div>
+
+          <textarea value={essay} onChange={(e) => setEssay(e.target.value)}
+            placeholder="Viết đoạn văn của bạn ở đây..."
+            rows={8}
+            className="w-full rounded-xl border border-border bg-background px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-primary/50 resize-none" />
+
+          <p className="text-xs text-muted-foreground text-right">{essay.trim().split(/\s+/).filter(Boolean).length} từ</p>
+
+          <div className="flex justify-center gap-2">
+            <Button onClick={handleSubmit} disabled={!essay.trim()}>Gửi bài chấm AI</Button>
+            <Button variant="outline" onClick={handleNewPrompt}><RotateCcw className="mr-2 h-4 w-4" />Đề khác</Button>
+          </div>
+        </CardContent>
+      </Card>
+    </>
+  );
+}
+
+/* ─── Main WritingPage ─── */
 export function WritingPage({ student, onBackHome }: Props) {
   const [mode, setMode] = useState<Mode | null>(null);
   const [level, setLevel] = useState<CEFRLevel>("A1");
@@ -60,23 +447,11 @@ export function WritingPage({ student, onBackHome }: Props) {
     );
   }
 
-  const modeInfo = MODES.find((m) => m.key === mode)!;
-
   return (
     <main className="mx-auto w-full max-w-xl px-4">
-      <SessionHeader title={modeInfo.label} onClose={() => setMode(null)} />
-
-      <Card>
-        <CardContent className="p-6 text-center space-y-4">
-          <span className={cn("mx-auto flex h-16 w-16 items-center justify-center rounded-2xl", modeInfo.color)}>
-            <modeInfo.icon className="h-8 w-8" />
-          </span>
-          <h2 className="text-lg font-black">{modeInfo.label}</h2>
-          <p className="text-sm text-muted-foreground">Trình độ {level}</p>
-          <p className="text-sm font-bold text-primary">Đang phát triển...</p>
-          <p className="text-xs text-muted-foreground">Tính năng này sẽ sớm được hoàn thiện</p>
-        </CardContent>
-      </Card>
+      {mode === "word-dictation" && <WordDictation level={level} onBack={() => setMode(null)} />}
+      {mode === "sentence-dictation" && <SentenceDictation level={level} onBack={() => setMode(null)} />}
+      {mode === "essay" && <EssayWriting level={level} onBack={() => setMode(null)} />}
     </main>
   );
 }
