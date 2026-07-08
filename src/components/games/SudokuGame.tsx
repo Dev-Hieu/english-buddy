@@ -1,4 +1,4 @@
-import { Eraser, PartyPopper, RotateCcw } from "lucide-react";
+import { Eraser, Eye, PartyPopper, RotateCcw } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -43,6 +43,7 @@ export function SudokuGame({ onClose }: { onClose: () => void }) {
   const [{ solution, puzzle }, setGame] = useState(() => makePuzzle("easy"));
   const [board, setBoard] = useState<Grid>(() => puzzle.map((r) => r.slice()));
   const [sel, setSel] = useState<[number, number] | null>(null);
+  const [showSolution, setShowSolution] = useState(false);
 
   const newGame = (d: Diff) => {
     const g = makePuzzle(d);
@@ -50,6 +51,7 @@ export function SudokuGame({ onClose }: { onClose: () => void }) {
     setGame(g);
     setBoard(g.puzzle.map((r) => r.slice()));
     setSel(null);
+    setShowSolution(false);
   };
 
   const given = (r: number, c: number) => puzzle[r][c] !== 0;
@@ -71,9 +73,16 @@ export function SudokuGame({ onClose }: { onClose: () => void }) {
         title="Sudoku"
         onClose={onClose}
         right={
-          <Button type="button" size="sm" variant="outline" onClick={() => newGame(diff)}>
-            <RotateCcw className="h-4 w-4" /> Ván mới
-          </Button>
+          <div className="flex gap-1.5">
+            {!showSolution && !won && (
+              <Button type="button" size="sm" variant="outline" onClick={() => { setShowSolution(true); setBoard(solution.map((r) => r.slice())); }}>
+                <Eye className="h-4 w-4" /> Lời giải
+              </Button>
+            )}
+            <Button type="button" size="sm" variant="outline" onClick={() => newGame(diff)}>
+              <RotateCcw className="h-4 w-4" /> Ván mới
+            </Button>
+          </div>
         }
       />
 
@@ -90,7 +99,18 @@ export function SudokuGame({ onClose }: { onClose: () => void }) {
         ))}
       </div>
 
-      {won ? (
+      {showSolution ? (
+        <Card className="animate-pop mb-4">
+          <CardContent className="flex flex-col items-center gap-3 p-6 text-center">
+            <Eye className="h-10 w-10 text-primary" />
+            <p className="text-lg font-black text-primary">Đây là lời giải</p>
+            <p className="text-xs text-muted-foreground">Xem đáp án để học cách giải, rồi thử ván mới nhé!</p>
+            <Button type="button" size="lg" className="w-full" onClick={() => newGame(diff)}>Chơi ván mới</Button>
+          </CardContent>
+        </Card>
+      ) : null}
+
+      {won && !showSolution ? (
         <Card className="animate-pop">
           <CardContent className="flex flex-col items-center gap-4 p-8 text-center">
             <PartyPopper className="h-14 w-14 text-accent" />
@@ -115,7 +135,7 @@ export function SudokuGame({ onClose }: { onClose: () => void }) {
                       "flex items-center justify-center border border-border/60 text-lg font-extrabold sm:text-xl",
                       c % 3 === 2 && c !== 8 && "border-r-[3px] border-r-foreground/40",
                       r % 3 === 2 && r !== 8 && "border-b-[3px] border-b-foreground/40",
-                      given(r, c) ? "text-foreground" : "text-primary",
+                      given(r, c) ? "text-foreground" : showSolution && !given(r, c) ? "text-success font-black" : "text-primary",
                       isWrong && "bg-red-100 text-red-600",
                       sameVal && !isWrong && "bg-secondary",
                       isSel && "bg-primary/20 ring-2 ring-primary",
