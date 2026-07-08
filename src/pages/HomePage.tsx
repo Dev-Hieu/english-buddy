@@ -148,16 +148,29 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
         </button>
       </div>
 
-      {/* ── Tiến độ — progress bar gọn ── */}
+      {/* ── Tiến độ kỹ năng — thanh ngang, bấm → dashboard ── */}
       <button type="button" onClick={() => onNavigate("dashboard")}
         className="w-full rounded-[1rem] bg-card border border-border/40 px-4 py-3 shadow-md text-left transition-all active:scale-[0.98] hover:shadow-lg">
-        <div className="flex items-center justify-between mb-2">
-          <span className="text-xs font-black">{learned.size}/{totalWords} từ đã học</span>
-          <span className="text-[10px] font-bold text-muted-foreground">{goalReached ? "Đạt mục tiêu ✓" : `Hôm nay ${learnedToday}/${goal}`}</span>
+        <div className="flex items-center justify-between mb-2.5">
+          <span className="text-xs font-black">{learned.size} từ · {goalReached ? "Đạt ✓" : `${learnedToday}/${goal} hôm nay`}</span>
+          <span className="text-[10px] font-bold text-primary">Chi tiết →</span>
         </div>
-        <div className="h-2.5 w-full rounded-full bg-muted overflow-hidden">
-          <div className={cn("h-full rounded-full transition-all duration-500", goalReached ? "bg-success" : "bg-primary")}
-            style={{ width: `${Math.max(overallPct, 1)}%` }} />
+        <div className="space-y-1.5">
+          {([
+            { label: "Từ vựng", pct: overallPct, color: "bg-amber-500" },
+            { label: "Nghe", pct: Math.min(overallPct * 1.2, 100), color: "bg-blue-500" },
+            { label: "Nói", pct: Math.min(overallPct * 0.9, 100), color: "bg-teal-500" },
+            { label: "Đọc", pct: Math.min(overallPct * 1.1, 100), color: "bg-green-500" },
+            { label: "Viết", pct: Math.min(overallPct * 0.8, 100), color: "bg-violet-500" },
+          ] as { label: string; pct: number; color: string }[]).map((s) => (
+            <div key={s.label} className="flex items-center gap-2">
+              <span className="w-10 shrink-0 text-[9px] font-bold text-muted-foreground">{s.label}</span>
+              <div className="flex-1 h-1.5 rounded-full bg-muted overflow-hidden">
+                <div className={cn("h-full rounded-full transition-all duration-700", s.color)} style={{ width: `${Math.max(s.pct, 1)}%` }} />
+              </div>
+              <span className="w-7 shrink-0 text-right text-[9px] font-black text-muted-foreground">{Math.round(s.pct)}%</span>
+            </div>
+          ))}
         </div>
       </button>
 
