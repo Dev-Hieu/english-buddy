@@ -314,7 +314,7 @@ export function App() {
       content = <ShadowingPage student={student} topicId={route.topicId} onBackHome={() => navigate("home")} />;
       break;
     case "dashboard":
-      content = <DashboardPage students={students} onBackHome={() => navigate("home")} />;
+      content = <DashboardPage students={[student]} onBackHome={() => navigate("home")} />;
       break;
     case "mywords":
       content = <MyWordsPage student={student} onBackHome={() => navigate("home")} />;
