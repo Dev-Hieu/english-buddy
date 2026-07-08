@@ -35,17 +35,17 @@ interface HomePageProps {
   onNavigate: Nav;
 }
 
-// ── Skill tiles — emoji icons for visual appeal ──
-const SKILL_TILES: { emoji: string; title: string; view: string }[] = [
-  { emoji: "🎧", title: "Nghe", view: "listening" },
-  { emoji: "🗣️", title: "Nói", view: "speak" },
-  { emoji: "📖", title: "Đọc", view: "reading" },
-  { emoji: "✍️", title: "Viết", view: "writing" },
-  { emoji: "🌟", title: "Từ mới", view: "topics" },
-  { emoji: "📐", title: "Ngữ pháp", view: "grammar" },
-  { emoji: "🎮", title: "Game", view: "games" },
-  { emoji: "💬", title: "Cụm từ", view: "flashcard" },
-  { emoji: "📝", title: "Mẫu câu", view: "conversation" },
+// ── Skill tiles — emoji + pastel background ──
+const SKILL_TILES: { emoji: string; title: string; view: string; bg: string }[] = [
+  { emoji: "🎧", title: "Nghe", view: "listening", bg: "bg-blue-50" },
+  { emoji: "🗣️", title: "Nói", view: "speak", bg: "bg-teal-50" },
+  { emoji: "📖", title: "Đọc", view: "reading", bg: "bg-green-50" },
+  { emoji: "✍️", title: "Viết", view: "writing", bg: "bg-violet-50" },
+  { emoji: "🌟", title: "Từ mới", view: "topics", bg: "bg-amber-50" },
+  { emoji: "📐", title: "Ngữ pháp", view: "grammar", bg: "bg-rose-50" },
+  { emoji: "🎮", title: "Game", view: "games", bg: "bg-pink-50" },
+  { emoji: "💬", title: "Cụm từ", view: "flashcard", bg: "bg-sky-50" },
+  { emoji: "📝", title: "Mẫu câu", view: "conversation", bg: "bg-orange-50" },
 ];
 
 export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, learnedToday, reviewDue, pendingCount, dueTestCount, onStartSkillTest, onChangeStudent, onLogout, onOpenProfile, onNavigate }: HomePageProps) {
@@ -68,10 +68,11 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
   const wordsOf = (topicId: string) => topicWords(SEED_VOCABULARY, topicId, learnLevel);
 
   // Topic progress for mini chart (top 6 active topics)
-  const topicProgress = allTopics.slice(0, 6).map((t) => {
+  const barColors = ["bg-blue-400", "bg-teal-400", "bg-green-400", "bg-amber-400", "bg-purple-400", "bg-pink-400"];
+  const topicProgress = allTopics.slice(0, 6).map((t, i) => {
     const ws = wordsOf(t.id);
     const done = ws.filter((w) => learned.has(w.id)).length;
-    return { id: t.id, name: t.name_vi, total: ws.length, done, pct: ws.length ? Math.round((done / ws.length) * 100) : 0 };
+    return { id: t.id, name: t.name_vi, total: ws.length, done, pct: ws.length ? Math.round((done / ws.length) * 100) : 0, color: barColors[i] };
   });
   const totalWords = SEED_VOCABULARY.length;
   const overallPct = totalWords ? Math.round((learned.size / totalWords) * 100) : 0;
@@ -123,15 +124,15 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
 
       {/* ── Thành tích ── */}
       <div className="flex gap-2">
-        <div className="flex flex-1 items-center justify-center gap-1.5 rounded-2xl bg-card border border-border/50 py-2.5 shadow-sm">
-          <span className="text-base">⭐</span><span className="text-sm font-extrabold">{xp}</span>
+        <div className="flex flex-1 items-center justify-center gap-1.5 rounded-2xl bg-amber-50 py-2.5 shadow-sm">
+          <span className="text-base">⭐</span><span className="text-sm font-extrabold text-amber-700">{xp}</span>
         </div>
-        <div className="flex flex-1 items-center justify-center gap-1.5 rounded-2xl bg-card border border-border/50 py-2.5 shadow-sm">
-          <span className="text-base">🔥</span><span className="text-sm font-extrabold">{streak} ngày</span>
+        <div className="flex flex-1 items-center justify-center gap-1.5 rounded-2xl bg-red-50 py-2.5 shadow-sm">
+          <span className="text-base">🔥</span><span className="text-sm font-extrabold text-red-600">{streak} ngày</span>
         </div>
         <button type="button" onClick={() => onNavigate("leaderboard")}
-          className="flex flex-1 items-center justify-center gap-1.5 rounded-2xl bg-card border border-border/50 py-2.5 shadow-sm hover:border-primary/30 transition-colors">
-          <span className="text-base">🏆</span><span className="text-sm font-extrabold">{weekRank ? `#${weekRank}` : "—"}</span>
+          className="flex flex-1 items-center justify-center gap-1.5 rounded-2xl bg-primary/10 py-2.5 shadow-sm hover:bg-primary/15 transition-colors">
+          <span className="text-base">🏆</span><span className="text-sm font-extrabold text-primary">{weekRank ? `#${weekRank}` : "—"}</span>
         </button>
       </div>
 
@@ -141,7 +142,7 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
         <div className="flex items-end gap-1 h-10">
           {topicProgress.map((t) => (
             <div key={t.id} className="flex-1 rounded-t bg-muted overflow-hidden" style={{ height: 40 }}>
-              <div className={cn("w-full rounded-t transition-all duration-500", t.pct >= 100 ? "bg-success" : t.pct > 0 ? "bg-primary" : "bg-transparent")}
+              <div className={cn("w-full rounded-t transition-all duration-500", t.pct > 0 ? t.color : "bg-transparent")}
                 style={{ height: `${Math.max(t.pct, 3)}%`, marginTop: `${100 - Math.max(t.pct, 3)}%` }} />
             </div>
           ))}
@@ -158,16 +159,16 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
       {(pendingCount >= 10 || dueTestCount > 0 || reviewDue > 0 || (pendingCount > 0 && pendingCount < 10)) && (
         <section>
           {(pendingCount >= 10 || dueTestCount > 0 || reviewDue > 0) && (() => {
-            const items: { label: string; sub: string; onClick: () => void }[] = [];
-            if (pendingCount >= 10) items.push({ label: "Thi mới", sub: `${pendingCount} từ`, onClick: () => onStartSkillTest("new") });
-            if (dueTestCount > 0) items.push({ label: "Thi lại", sub: `${dueTestCount} từ`, onClick: () => onStartSkillTest("review") });
-            if (reviewDue > 0) items.push({ label: "Cần ôn", sub: `${reviewDue} từ`, onClick: () => onNavigate("review") });
+            const items: { label: string; sub: string; bg: string; text: string; onClick: () => void }[] = [];
+            if (pendingCount >= 10) items.push({ label: "🆕 Thi mới", sub: `${pendingCount} từ`, bg: "bg-emerald-50", text: "text-emerald-700", onClick: () => onStartSkillTest("new") });
+            if (dueTestCount > 0) items.push({ label: "🔄 Thi lại", sub: `${dueTestCount} từ`, bg: "bg-blue-50", text: "text-blue-700", onClick: () => onStartSkillTest("review") });
+            if (reviewDue > 0) items.push({ label: "📋 Cần ôn", sub: `${reviewDue} từ`, bg: "bg-orange-50", text: "text-orange-700", onClick: () => onNavigate("review") });
             return (
               <div className={cn("grid gap-2 mx-auto max-w-sm", items.length === 1 ? "grid-cols-1" : items.length === 2 ? "grid-cols-2" : "grid-cols-3")}>
                 {items.map((it) => (
                   <button key={it.label} type="button" onClick={it.onClick}
-                    className="flex flex-col items-center gap-0.5 rounded-2xl bg-card border border-border/50 py-3 shadow-sm transition-all active:scale-95 hover:border-primary/30">
-                    <span className="text-xs font-extrabold">{it.label}</span>
+                    className={cn("flex flex-col items-center gap-0.5 rounded-2xl py-3 shadow-sm transition-all active:scale-95", it.bg)}>
+                    <span className={cn("text-xs font-extrabold", it.text)}>{it.label}</span>
                     <span className="text-[10px] font-bold text-muted-foreground">{it.sub}</span>
                   </button>
                 ))}
@@ -188,7 +189,7 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
         <div className="grid grid-cols-3 gap-2.5">
           {SKILL_TILES.map((t) => (
             <button key={t.view} type="button" onClick={() => onNavigate(t.view)}
-              className="flex flex-col items-center gap-1.5 rounded-2xl bg-card border border-border/40 p-3.5 shadow-sm transition-all duration-150 active:scale-[0.95] hover:shadow-md hover:border-primary/30">
+              className={cn("flex flex-col items-center gap-1.5 rounded-2xl p-3.5 shadow-sm transition-all duration-150 active:scale-[0.95] hover:shadow-md", t.bg)}>
               <span className="text-2xl leading-none">{t.emoji}</span>
               <span className="text-xs font-extrabold">{t.title}</span>
             </button>
@@ -205,8 +206,9 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
             {testResults.map((r) => {
               const grade = r.score >= 90 ? "A+" : r.score >= 80 ? "A" : r.score >= 70 ? "B" : r.score >= 60 ? "C" : r.score >= 50 ? "D" : "F";
               const color = r.score >= 80 ? "text-success" : r.score >= 60 ? "text-amber-600" : "text-red-500";
+              const bg = r.score >= 80 ? "bg-emerald-50" : r.score >= 60 ? "bg-amber-50" : "bg-red-50";
               return (
-                <div key={r.id} className="rounded-xl bg-card border border-border/40 py-2 text-center shadow-sm">
+                <div key={r.id} className={cn("rounded-xl py-2 text-center shadow-sm", bg)}>
                   <p className={cn("text-lg font-black leading-none", color)}>{grade}</p>
                   <p className="text-[10px] font-bold text-muted-foreground mt-0.5">{r.score}%</p>
                 </div>
