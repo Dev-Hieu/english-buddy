@@ -1,4 +1,5 @@
-import { ClipboardCheck, LogOut, RotateCcw, Settings, UserRound } from "lucide-react";
+import { BookOpen, ClipboardCheck, Ear, Flame, Gamepad2, GraduationCap, LogOut, MessageSquareText, Mic, PenLine, RotateCcw, Settings, Sparkles, Star, Trophy, Type, UserRound } from "lucide-react";
+import type { ComponentType } from "react";
 import { useEffect, useState } from "react";
 import { getLeaderboard } from "@/services/studentService";
 import { getSkillTestResults, type SkillTestResult } from "@/services/progressService";
@@ -35,17 +36,17 @@ interface HomePageProps {
   onNavigate: Nav;
 }
 
-// ── Skill tiles — emoji, uses theme primary color ──
-const SKILL_TILES: { emoji: string; title: string; view: string }[] = [
-  { emoji: "🎧", title: "Nghe", view: "listening" },
-  { emoji: "🗣️", title: "Nói", view: "speak" },
-  { emoji: "📖", title: "Đọc", view: "reading" },
-  { emoji: "✍️", title: "Viết", view: "writing" },
-  { emoji: "🌟", title: "Từ mới", view: "topics" },
-  { emoji: "📐", title: "Ngữ pháp", view: "grammar" },
-  { emoji: "🎮", title: "Game", view: "games" },
-  { emoji: "💬", title: "Cụm từ", view: "phrases" },
-  { emoji: "📝", title: "Mẫu câu", view: "conversation" },
+// ── Skill tiles — lucide icons, themed by CSS ──
+const SKILL_TILES: { icon: ComponentType<{ className?: string }>; title: string; view: string }[] = [
+  { icon: Ear, title: "Nghe", view: "listening" },
+  { icon: Mic, title: "Nói", view: "speak" },
+  { icon: BookOpen, title: "Đọc", view: "reading" },
+  { icon: PenLine, title: "Viết", view: "writing" },
+  { icon: Sparkles, title: "Từ mới", view: "topics" },
+  { icon: GraduationCap, title: "Ngữ pháp", view: "grammar" },
+  { icon: Gamepad2, title: "Game", view: "games" },
+  { icon: MessageSquareText, title: "Cụm từ", view: "phrases" },
+  { icon: Type, title: "Mẫu câu", view: "conversation" },
 ];
 
 export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, learnedToday, reviewDue, pendingCount, dueTestCount, onStartSkillTest, onChangeStudent, onLogout, onOpenProfile, onNavigate }: HomePageProps) {
@@ -128,14 +129,14 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
       {/* ── Thành tích ── */}
       <div className="flex gap-2">
         <div className="flex flex-1 items-center justify-center gap-1.5 rounded-2xl bg-secondary py-2.5 shadow-sm">
-          <span className="text-base">⭐</span><span className="text-sm font-extrabold text-secondary-foreground">{xp}</span>
+          <Star className="h-4 w-4 text-primary" /><span className="text-sm font-extrabold text-secondary-foreground">{xp}</span>
         </div>
         <div className="flex flex-1 items-center justify-center gap-1.5 rounded-2xl bg-secondary py-2.5 shadow-sm">
-          <span className="text-base">🔥</span><span className="text-sm font-extrabold text-secondary-foreground">{streak} ngày</span>
+          <Flame className="h-4 w-4 text-primary" /><span className="text-sm font-extrabold text-secondary-foreground">{streak} ngày</span>
         </div>
         <button type="button" onClick={() => onNavigate("leaderboard")}
           className="flex flex-1 items-center justify-center gap-1.5 rounded-2xl bg-secondary py-2.5 shadow-sm hover:bg-primary/15 transition-colors">
-          <span className="text-base">🏆</span><span className="text-sm font-extrabold text-secondary-foreground">{weekRank ? `#${weekRank}` : "—"}</span>
+          <Trophy className="h-4 w-4 text-primary" /><span className="text-sm font-extrabold text-secondary-foreground">{weekRank ? `#${weekRank}` : "—"}</span>
         </button>
       </div>
 
@@ -163,9 +164,9 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
         <section>
           {(pendingCount >= 10 || dueTestCount > 0 || reviewDue > 0) && (() => {
             const items: { label: string; sub: string; onClick: () => void }[] = [];
-            if (pendingCount >= 10) items.push({ label: "🆕 Thi mới", sub: `${pendingCount} từ`, onClick: () => onStartSkillTest("new") });
-            if (dueTestCount > 0) items.push({ label: "🔄 Thi lại", sub: `${dueTestCount} từ`, onClick: () => onStartSkillTest("review") });
-            if (reviewDue > 0) items.push({ label: "📋 Cần ôn", sub: `${reviewDue} từ`, onClick: () => onNavigate("review") });
+            if (pendingCount >= 10) items.push({ label: "Thi mới", sub: `${pendingCount} từ`, onClick: () => onStartSkillTest("new") });
+            if (dueTestCount > 0) items.push({ label: "Thi lại", sub: `${dueTestCount} từ`, onClick: () => onStartSkillTest("review") });
+            if (reviewDue > 0) items.push({ label: "Cần ôn", sub: `${reviewDue} từ`, onClick: () => onNavigate("review") });
             return (
               <div className={cn("grid gap-2 mx-auto max-w-sm", items.length === 1 ? "grid-cols-1" : items.length === 2 ? "grid-cols-2" : "grid-cols-3")}>
                 {items.map((it) => (
@@ -193,7 +194,9 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
           {SKILL_TILES.map((t) => (
             <button key={t.view} type="button" onClick={() => onNavigate(t.view)}
               className="flex flex-col items-center gap-2 rounded-2xl bg-secondary p-4 shadow-sm transition-all duration-150 active:scale-[0.95] hover:shadow-md hover:brightness-[0.97]">
-              <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-card shadow-card text-3xl leading-none">{t.emoji}</span>
+              <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/15 text-primary">
+                <t.icon className="h-7 w-7" />
+              </span>
               <span className="text-xs font-extrabold text-secondary-foreground">{t.title}</span>
             </button>
           ))}
