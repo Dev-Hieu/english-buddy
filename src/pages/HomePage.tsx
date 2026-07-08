@@ -42,7 +42,7 @@ const SKILL_TILES: { icon: ComponentType<{ className?: string }>; title: string;
   { icon: Mic, title: "Nói", view: "speak", bg: "bg-teal-500" },
   { icon: BookOpen, title: "Đọc", view: "reading", bg: "bg-green-500" },
   { icon: PenLine, title: "Viết", view: "writing", bg: "bg-violet-500" },
-  { icon: Sparkles, title: "Từ vựng", view: "topics", bg: "bg-amber-500" },
+  { icon: Sparkles, title: "Từ mới", view: "topics", bg: "bg-amber-500" },
   { icon: MessageSquareText, title: "Câu", view: "phrases", bg: "bg-sky-500" },
   { icon: GraduationCap, title: "Ngữ pháp", view: "grammar", bg: "bg-rose-500" },
   { icon: Gamepad2, title: "Game", view: "games", bg: "bg-pink-500" },
