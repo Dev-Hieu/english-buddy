@@ -1,4 +1,4 @@
-import { PenLine, Keyboard, MessageSquareText, FileText, Volume2, CheckCircle2, XCircle, RotateCcw } from "lucide-react";
+import { PenLine, Keyboard, MessageSquareText, FileText, Volume2, CheckCircle2, XCircle, RotateCcw, Loader2, AlertTriangle } from "lucide-react";
 import { useState, useCallback, useMemo } from "react";
 import type { Student } from "@/types";
 import { Card, CardContent } from "@/components/ui/card";
@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/components/ui/cn";
 import { SEED_VOCABULARY } from "@/data/seedVocabulary";
 import { speakText } from "@/services/speechService";
+import { apiRequest } from "@/services/api";
 
 interface Props { student: Student; onBackHome: () => void; }
 
@@ -362,44 +363,210 @@ function SentenceDictation({ level, onBack }: { level: CEFRLevel; onBack: () => 
   );
 }
 
+/* ─── Essay Grading Result Type ─── */
+interface GradeResult {
+  score: number;
+  grade: string;
+  grammar: string[];
+  vocabulary: string;
+  feedback: string;
+  corrected: string;
+}
+
+function scoreColor(score: number): string {
+  if (score >= 80) return "text-success";
+  if (score >= 60) return "text-amber-500";
+  return "text-red-600";
+}
+
+function scoreBg(score: number): string {
+  if (score >= 80) return "bg-success/10";
+  if (score >= 60) return "bg-amber-50";
+  return "bg-red-50";
+}
+
 /* ─── Essay Component ─── */
 function EssayWriting({ level, onBack }: { level: CEFRLevel; onBack: () => void }) {
   const prompts = ESSAY_PROMPTS[level];
   const [promptIndex, setPromptIndex] = useState(() => Math.floor(Math.random() * prompts.length));
   const [essay, setEssay] = useState("");
+  const [grading, setGrading] = useState(false);
+  const [gradeResult, setGradeResult] = useState<GradeResult | null>(null);
+  const [error, setError] = useState("");
 
-  const handleSubmit = () => {
-    alert("Coming soon – Tính năng chấm bài bằng AI sẽ sớm được hoàn thiện!");
+  const handleSubmit = async () => {
+    const prompt = prompts[promptIndex];
+    const gradingPrompt = `You are an English writing teacher. Grade this essay written by a ${level} CEFR level student.
+
+Writing prompt: "${prompt}"
+
+Student's essay:
+"""
+${essay}
+"""
+
+Grade the essay and respond ONLY with valid JSON (no markdown, no extra text):
+{
+  "score": <number 0-100>,
+  "grade": "<A+/A/B/C/D/F>",
+  "grammar": ["<list each grammar error with explanation in Vietnamese>"],
+  "vocabulary": "<vocabulary usage feedback in Vietnamese>",
+  "feedback": "<overall feedback and suggestions in Vietnamese>",
+  "corrected": "<the corrected version of the essay in English>"
+}`;
+
+    setGrading(true);
+    setError("");
+    setGradeResult(null);
+
+    try {
+      const data = await apiRequest<{ translation: string }>("/api/translate", {
+        method: "POST",
+        body: { text: gradingPrompt, targetLang: "vi" },
+      });
+
+      const raw = data.translation || "";
+      // Extract JSON from response (handle possible markdown wrapping)
+      const jsonMatch = raw.match(/\{[\s\S]*\}/);
+      if (!jsonMatch) throw new Error("Invalid AI response");
+
+      const parsed = JSON.parse(jsonMatch[0]) as GradeResult;
+      // Ensure grammar is array
+      if (!Array.isArray(parsed.grammar)) parsed.grammar = [];
+      setGradeResult(parsed);
+    } catch {
+      setError("Không thể chấm bài lúc này. Vui lòng thử lại sau.");
+    } finally {
+      setGrading(false);
+    }
   };
 
   const handleNewPrompt = () => {
     setPromptIndex((i) => (i + 1) % prompts.length);
     setEssay("");
+    setGradeResult(null);
+    setError("");
+  };
+
+  const handleRewrite = () => {
+    setGradeResult(null);
+    setError("");
   };
 
   return (
     <>
       <SessionHeader title="Viết đoạn văn" onClose={onBack} />
-      <Card>
-        <CardContent className="p-6 space-y-4">
-          <div className="rounded-xl bg-amber-50 p-4 text-center space-y-2">
-            <p className="text-xs font-bold text-amber-600 uppercase">Trình độ {level} · Chủ đề</p>
-            <p className="text-sm font-extrabold text-amber-900">{prompts[promptIndex]}</p>
-          </div>
 
-          <textarea value={essay} onChange={(e) => setEssay(e.target.value)}
-            placeholder="Viết đoạn văn của bạn ở đây..."
-            rows={8}
-            className="w-full rounded-xl border border-border bg-background px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-primary/50 resize-none" />
+      {/* Grading result view */}
+      {gradeResult ? (
+        <div className="space-y-3">
+          {/* Score circle */}
+          <Card>
+            <CardContent className={cn("flex flex-col items-center gap-3 p-6", scoreBg(gradeResult.score))}>
+              <div className="flex items-center gap-4">
+                <div className="relative flex items-center justify-center" style={{ width: 80, height: 80 }}>
+                  <svg className="h-full w-full -rotate-90" viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="42" fill="none" stroke="currentColor" strokeWidth="7" className="text-muted/20" />
+                    <circle cx="50" cy="50" r="42" fill="none" stroke="currentColor" strokeWidth="7" className={scoreColor(gradeResult.score)}
+                      strokeDasharray={`${gradeResult.score * 2.64} 264`} strokeLinecap="round" />
+                  </svg>
+                  <span className={cn("absolute text-xl font-black", scoreColor(gradeResult.score))}>{gradeResult.score}</span>
+                </div>
+                <div>
+                  <p className={cn("text-2xl font-black", scoreColor(gradeResult.score))}>{gradeResult.grade}</p>
+                  <p className="text-xs font-semibold text-muted-foreground">
+                    {gradeResult.score >= 90 ? "Xuất sắc!" : gradeResult.score >= 80 ? "Rất tốt!" : gradeResult.score >= 60 ? "Khá tốt" : "Cần cải thiện"}
+                  </p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
 
-          <p className="text-xs text-muted-foreground text-right">{essay.trim().split(/\s+/).filter(Boolean).length} từ</p>
+          {/* Grammar errors */}
+          {gradeResult.grammar.length > 0 && (
+            <Card>
+              <CardContent className="p-4 space-y-2">
+                <p className="text-xs font-extrabold text-red-600 uppercase">Lỗi ngữ pháp</p>
+                <ul className="space-y-1">
+                  {gradeResult.grammar.map((g, i) => (
+                    <li key={i} className="flex items-start gap-2 text-sm">
+                      <XCircle className="h-4 w-4 shrink-0 text-red-400 mt-0.5" />
+                      <span>{g}</span>
+                    </li>
+                  ))}
+                </ul>
+              </CardContent>
+            </Card>
+          )}
 
+          {/* Vocabulary */}
+          {gradeResult.vocabulary && (
+            <Card>
+              <CardContent className="p-4 space-y-2">
+                <p className="text-xs font-extrabold text-blue-600 uppercase">Từ vựng</p>
+                <p className="text-sm">{gradeResult.vocabulary}</p>
+              </CardContent>
+            </Card>
+          )}
+
+          {/* Feedback */}
+          {gradeResult.feedback && (
+            <Card>
+              <CardContent className="p-4 space-y-2">
+                <p className="text-xs font-extrabold text-amber-600 uppercase">Nhận xét chung</p>
+                <p className="text-sm">{gradeResult.feedback}</p>
+              </CardContent>
+            </Card>
+          )}
+
+          {/* Corrected essay */}
+          {gradeResult.corrected && (
+            <Card>
+              <CardContent className="p-4 space-y-2">
+                <p className="text-xs font-extrabold text-green-600 uppercase">Bài viết đã sửa</p>
+                <p className="text-sm whitespace-pre-wrap bg-green-50 rounded-lg p-3">{gradeResult.corrected}</p>
+              </CardContent>
+            </Card>
+          )}
+
+          {/* Actions */}
           <div className="flex justify-center gap-2">
-            <Button onClick={handleSubmit} disabled={!essay.trim()}>Gửi bài chấm AI</Button>
-            <Button variant="outline" onClick={handleNewPrompt}><RotateCcw className="mr-2 h-4 w-4" />Đề khác</Button>
+            <Button onClick={handleRewrite}><RotateCcw className="mr-2 h-4 w-4" />Viết lại</Button>
+            <Button variant="outline" onClick={handleNewPrompt}>Đề khác</Button>
           </div>
-        </CardContent>
-      </Card>
+        </div>
+      ) : (
+        /* Writing form */
+        <Card>
+          <CardContent className="p-6 space-y-4">
+            <div className="rounded-xl bg-amber-50 p-4 text-center space-y-2">
+              <p className="text-xs font-bold text-amber-600 uppercase">Trình độ {level} · Chủ đề</p>
+              <p className="text-sm font-extrabold text-amber-900">{prompts[promptIndex]}</p>
+            </div>
+
+            <textarea value={essay} onChange={(e) => setEssay(e.target.value)}
+              placeholder="Viết đoạn văn của bạn ở đây..."
+              rows={8} disabled={grading}
+              className="w-full rounded-xl border border-border bg-background px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-primary/50 resize-none disabled:opacity-60" />
+
+            <p className="text-xs text-muted-foreground text-right">{essay.trim().split(/\s+/).filter(Boolean).length} từ</p>
+
+            {error && (
+              <div className="flex items-center gap-2 rounded-xl bg-red-50 p-3 text-sm font-bold text-red-700">
+                <AlertTriangle className="h-5 w-5 shrink-0" />
+                {error}
+              </div>
+            )}
+
+            <div className="flex justify-center gap-2">
+              <Button onClick={handleSubmit} disabled={!essay.trim() || grading}>
+                {grading ? <><Loader2 className="mr-2 h-4 w-4 animate-spin" />Đang chấm...</> : "Gửi bài chấm AI"}
+              </Button>
+              <Button variant="outline" onClick={handleNewPrompt} disabled={grading}><RotateCcw className="mr-2 h-4 w-4" />Đề khác</Button>
+            </div>
+          </CardContent>
+        </Card>
+      )}
     </>
   );
 }

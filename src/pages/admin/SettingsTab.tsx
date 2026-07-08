@@ -30,7 +30,8 @@ export function SettingsTab() {
   const [resetting, setResetting] = useState(false);
   const [resetMsg, setResetMsg] = useState("");
 
-  const [defaultGoal, setDefaultGoal] = useState("5");
+  const [defaultGoal, setDefaultGoal] = useState(() => localStorage.getItem("eb_default_goal") || "5");
+  const [goalSaved, setGoalSaved] = useState(false);
 
   // Invite codes
   const [codes, setCodes] = useState<InviteCode[]>([]);
@@ -119,7 +120,12 @@ export function SettingsTab() {
                 className="w-20 rounded-lg border border-border bg-background px-2 py-1 text-center text-sm font-bold"
               />
             </div>
-            <p className="text-xs font-bold text-muted-foreground">Lưu cấu hình sẽ có trong phiên bản tiếp theo.</p>
+            <div className="flex items-center gap-2">
+              <Button type="button" size="sm" onClick={() => { localStorage.setItem("eb_default_goal", defaultGoal); setGoalSaved(true); setTimeout(() => setGoalSaved(false), 2000); }}>
+                Lưu
+              </Button>
+              {goalSaved && <span className="text-xs font-bold text-success">Đã lưu!</span>}
+            </div>
           </CardContent>
         </Card>
       </section>

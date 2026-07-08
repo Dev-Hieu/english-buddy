@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 import { avatarEmoji } from "@/components/ui/emoji";
 import { getReports, type ReportData } from "@/services/studentService";
 
@@ -194,12 +195,24 @@ export function ReportsTab(_props: ReportsTabProps) {
         </CardContent>
       </Card>
 
-      {/* Export placeholder */}
-      <Card>
-        <CardContent className="p-4 text-center text-sm font-bold text-muted-foreground">
-          Xuất Excel/PDF — Sắp có
-        </CardContent>
-      </Card>
+      {/* Export CSV */}
+      {data && (
+        <Card>
+          <CardContent className="p-4 flex items-center justify-between">
+            <span className="text-sm font-bold">Xuất báo cáo</span>
+            <Button type="button" size="sm" onClick={() => {
+              const rows = [["Hạng", "Tên", "XP", "Streak", "Level"].join(",")];
+              data.topStudents.forEach((s: any, i: number) => rows.push([i + 1, `"${s.name}"`, s.xp, s.streak, s.level].join(",")));
+              const blob = new Blob(["\uFEFF" + rows.join("\n")], { type: "text/csv;charset=utf-8" });
+              const url = URL.createObjectURL(blob);
+              const a = document.createElement("a"); a.href = url; a.download = `report-${new Date().toISOString().slice(0, 10)}.csv`; a.click();
+              URL.revokeObjectURL(url);
+            }}>
+              Xuất CSV
+            </Button>
+          </CardContent>
+        </Card>
+      )}
     </div>
   );
 }

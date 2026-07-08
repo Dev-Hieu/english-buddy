@@ -1,4 +1,4 @@
-import { BookOpen, CheckCircle2, Clock, Ear, Headphones, Image, MessageSquare, RotateCcw, Volume2, XCircle } from "lucide-react";
+import { CheckCircle2, Ear, Headphones, Image, MessageSquare, Play, RotateCcw, Volume2, XCircle } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
 import type { Student, VocabularyWord } from "@/types";
 import type { Level } from "@/types/student";
@@ -36,27 +36,99 @@ function pickN(pool: VocabularyWord[], n: number): VocabularyWord[] {
   return shuffle(pool).slice(0, n);
 }
 
-// ── Stories placeholder data ──
+// ── Listening stories data ──
+interface StoryQuestion { question: string; options: string[]; answer: number; }
+
 interface StoryItem {
   id: string;
   title: string;
   titleVi: string;
   level: Level;
-  description: string;
-  duration: string;
+  text: string;
+  questions: StoryQuestion[];
 }
 
-const STORIES: StoryItem[] = [
-  { id: "s1", title: "The Red Ball", titleVi: "Quả bóng đỏ", level: "kids", description: "A little boy finds a red ball in the park.", duration: "2 min" },
-  { id: "s2", title: "My Family", titleVi: "Gia đình của con", level: "a1", description: "A girl talks about her family members.", duration: "3 min" },
-  { id: "s3", title: "A Day at School", titleVi: "Một ngày ở trường", level: "a1", description: "Tom tells us about his school day.", duration: "3 min" },
-  { id: "s4", title: "The Pet Shop", titleVi: "Cửa hàng thú cưng", level: "a2", description: "Anna visits a pet shop and sees many animals.", duration: "4 min" },
-  { id: "s5", title: "A Trip to the Beach", titleVi: "Chuyến đi biển", level: "a2", description: "A family goes on a trip to the beach.", duration: "4 min" },
-  { id: "s6", title: "The Lost Key", titleVi: "Chiếc chìa khóa bị mất", level: "b1", description: "A mystery story about a lost key in an old house.", duration: "5 min" },
-  { id: "s7", title: "The Science Fair", titleVi: "Hội chợ khoa học", level: "b1", description: "Students prepare their projects for the science fair.", duration: "5 min" },
-  { id: "s8", title: "The Exchange Student", titleVi: "Học sinh trao đổi", level: "b2", description: "An exchange student adapts to life in a new country.", duration: "6 min" },
-  { id: "s9", title: "The Debate", titleVi: "Cuộc tranh luận", level: "b2", description: "Two teams debate about technology in education.", duration: "7 min" },
-  { id: "s10", title: "The Startup", titleVi: "Công ty khởi nghiệp", level: "c1", description: "A young entrepreneur shares the story of building a tech company.", duration: "8 min" },
+const LISTENING_STORIES: StoryItem[] = [
+  // ─── A1 ───
+  {
+    id: "ls1", title: "My Morning", titleVi: "Buổi sáng của tôi", level: "a1",
+    text: "I wake up at seven o'clock. I eat bread and drink milk for breakfast. Then I go to school. I like my morning.",
+    questions: [
+      { question: "What time does the speaker wake up?", options: ["Six o'clock", "Seven o'clock", "Eight o'clock", "Nine o'clock"], answer: 1 },
+      { question: "What does the speaker eat for breakfast?", options: ["Rice", "Bread", "Eggs", "Fruit"], answer: 1 },
+      { question: "Where does the speaker go after breakfast?", options: ["To the park", "To school", "To work", "To the shop"], answer: 1 },
+    ],
+  },
+  {
+    id: "ls2", title: "My Dog", titleVi: "Con chó của tôi", level: "a1",
+    text: "I have a dog. His name is Max. Max is brown and small. He likes to run in the park. I play with Max every day.",
+    questions: [
+      { question: "What is the dog's name?", options: ["Buddy", "Rex", "Max", "Sam"], answer: 2 },
+      { question: "What color is the dog?", options: ["White", "Black", "Brown", "Gray"], answer: 2 },
+      { question: "Where does the dog like to run?", options: ["In the house", "In the park", "At school", "In the garden"], answer: 1 },
+    ],
+  },
+  // ─── A2 ───
+  {
+    id: "ls3", title: "The Weather Today", titleVi: "Thời tiết hôm nay", level: "a2",
+    text: "Today the weather is very nice. The sun is shining and the sky is blue. It is warm outside. My friends and I go to the park after school. We play football and eat ice cream. It is a perfect day.",
+    questions: [
+      { question: "How is the weather today?", options: ["Rainy", "Cold", "Nice and warm", "Windy"], answer: 2 },
+      { question: "What do they do after school?", options: ["Go home", "Go to the park", "Go shopping", "Study"], answer: 1 },
+      { question: "What do they eat?", options: ["Cake", "Candy", "Ice cream", "Pizza"], answer: 2 },
+    ],
+  },
+  {
+    id: "ls4", title: "Shopping with Mom", titleVi: "Đi mua sắm với mẹ", level: "a2",
+    text: "On Saturday, I go shopping with my mom. We go to the supermarket. We buy vegetables, fruit, and chicken. Mom also buys a new book for me. I am very happy. We carry the bags to the car and drive home.",
+    questions: [
+      { question: "When do they go shopping?", options: ["Monday", "Friday", "Saturday", "Sunday"], answer: 2 },
+      { question: "What does Mom buy for the child?", options: ["A toy", "A book", "Clothes", "A phone"], answer: 1 },
+      { question: "How do they go home?", options: ["By bus", "By car", "On foot", "By bike"], answer: 1 },
+    ],
+  },
+  // ─── B1 ───
+  {
+    id: "ls5", title: "The New Neighbor", titleVi: "Người hàng xóm mới", level: "b1",
+    text: "Last week, a new family moved into the house next to ours. They have two children, a boy and a girl. The boy is about my age, so we started talking. His name is David and he comes from Canada. He told me about his old school and his friends there. I invited him to play football with my friends. He was very happy and said yes. Now we are becoming good friends.",
+    questions: [
+      { question: "Where did the new family move to?", options: ["Across the street", "Next door", "Another city", "A nearby apartment"], answer: 1 },
+      { question: "Where is David from?", options: ["Australia", "England", "Canada", "America"], answer: 2 },
+      { question: "What did the speaker invite David to do?", options: ["Watch a movie", "Play football", "Go to school", "Have dinner"], answer: 1 },
+      { question: "How many children does the new family have?", options: ["One", "Two", "Three", "Four"], answer: 1 },
+    ],
+  },
+  {
+    id: "ls6", title: "A Cooking Lesson", titleVi: "Bài học nấu ăn", level: "b1",
+    text: "Yesterday, my grandmother taught me how to cook chicken soup. First, we washed the vegetables and cut them into small pieces. Then we boiled water in a big pot and added the chicken. After thirty minutes, we put in the vegetables and some salt. The soup smelled wonderful. When it was ready, the whole family sat down together to eat. Everyone said the soup was delicious. I felt very proud.",
+    questions: [
+      { question: "Who taught the speaker to cook?", options: ["Mother", "Father", "Grandmother", "A teacher"], answer: 2 },
+      { question: "What did they cook?", options: ["Fried rice", "Chicken soup", "Pasta", "Fish"], answer: 1 },
+      { question: "How long did they boil the chicken?", options: ["Ten minutes", "Twenty minutes", "Thirty minutes", "One hour"], answer: 2 },
+      { question: "How did the speaker feel?", options: ["Tired", "Sad", "Proud", "Bored"], answer: 2 },
+    ],
+  },
+  // ─── B2 ───
+  {
+    id: "ls7", title: "Working from Home", titleVi: "Làm việc tại nhà", level: "b2",
+    text: "Since the pandemic, many companies have allowed their employees to work from home. This has changed the way people think about their daily routines. Some workers enjoy the flexibility of working from home because they save time on commuting and can spend more time with family. However, others find it difficult to separate work from personal life. They often end up working longer hours because there is no clear boundary. Experts suggest creating a dedicated workspace and setting strict working hours to maintain a healthy balance.",
+    questions: [
+      { question: "What caused many companies to allow working from home?", options: ["A new law", "The pandemic", "Employee requests", "Cost reduction"], answer: 1 },
+      { question: "What do some workers enjoy about working from home?", options: ["Higher salary", "Flexibility and less commuting", "More meetings", "Better equipment"], answer: 1 },
+      { question: "What problem do some workers face?", options: ["No internet", "Difficulty separating work and personal life", "Too many breaks", "Boredom"], answer: 1 },
+      { question: "What do experts suggest?", options: ["Work at a cafe", "Create a dedicated workspace and set strict hours", "Work only part-time", "Change jobs"], answer: 1 },
+    ],
+  },
+  {
+    id: "ls8", title: "Protecting the Ocean", titleVi: "Bảo vệ đại dương", level: "b2",
+    text: "The ocean covers more than seventy percent of the Earth's surface and is home to millions of species. Unfortunately, human activities such as plastic pollution, overfishing, and oil spills are causing serious damage to marine ecosystems. Scientists estimate that eight million tons of plastic enter the ocean every year. This plastic harms sea animals who mistake it for food. Many countries are now taking action by banning single-use plastics and creating marine protected areas. Individuals can also help by reducing plastic use, recycling properly, and supporting organizations that work to keep our oceans clean.",
+    questions: [
+      { question: "How much of the Earth's surface does the ocean cover?", options: ["Fifty percent", "Sixty percent", "Seventy percent", "Eighty percent"], answer: 2 },
+      { question: "How much plastic enters the ocean each year?", options: ["One million tons", "Five million tons", "Eight million tons", "Ten million tons"], answer: 2 },
+      { question: "Why does plastic harm sea animals?", options: ["It is too heavy", "They mistake it for food", "It is too hot", "It blocks sunlight"], answer: 1 },
+      { question: "What are some countries doing to help?", options: ["Building more ships", "Banning single-use plastics", "Closing beaches", "Stopping fishing completely"], answer: 1 },
+    ],
+  },
 ];
 
 export function ListeningPage({ student, onBackHome }: Props) {
@@ -297,51 +369,201 @@ function SentenceGame({ level, onClose }: { level: Level; onClose: () => void })
 }
 
 // ════════════════════════════════════════════
-// Mode 3: Audio stories (placeholder)
+// Mode 3: Nghe hiểu câu chuyện
 // ════════════════════════════════════════════
 
+type StoryScreen = "list" | "listening" | "quiz" | "result";
+
 function StoriesView({ level, onClose }: { level: Level; onClose: () => void }) {
+  const [screen, setScreen] = useState<StoryScreen>("list");
+  const [activeStory, setActiveStory] = useState<StoryItem | null>(null);
+  const [answers, setAnswers] = useState<(number | null)[]>([]);
+  const [submitted, setSubmitted] = useState(false);
+
   const filtered = useMemo(() => {
-    const result = STORIES.filter((s) => matchesLevel(s.level, level));
-    return result.length > 0 ? result : STORIES;
+    const result = LISTENING_STORIES.filter((s) => matchesLevel(s.level, level));
+    return result.length > 0 ? result : LISTENING_STORIES;
   }, [level]);
 
-  return (
-    <>
-      <SessionHeader title="Nghe hiểu câu chuyện" onClose={onClose} />
+  const score = useMemo(() => {
+    if (!activeStory) return 0;
+    return answers.reduce<number>((acc, a, i) => acc + (a === activeStory.questions[i].answer ? 1 : 0), 0);
+  }, [answers, activeStory]);
 
-      <p className="mb-4 text-center text-sm font-bold text-muted-foreground">
-        {LEVEL_LABELS[level] ?? level.toUpperCase()} · {filtered.length} câu chuyện
-      </p>
+  function openStory(s: StoryItem) {
+    setActiveStory(s);
+    setScreen("listening");
+    setAnswers(s.questions.map(() => null));
+    setSubmitted(false);
+  }
 
-      <div className="space-y-3">
-        {filtered.map((s) => (
-          <Card key={s.id} className="overflow-hidden">
-            <CardContent className="flex items-start gap-4 p-4">
-              <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-purple-100 text-purple-600">
-                <BookOpen className="h-6 w-6" />
-              </span>
-              <div className="flex-1 min-w-0">
-                <div className="flex items-center gap-2">
-                  <p className="text-sm font-extrabold truncate">{s.title}</p>
-                  <span className="shrink-0 rounded-full bg-muted px-2 py-0.5 text-[10px] font-extrabold text-muted-foreground">
-                    {s.level === "kids" ? "Kids" : s.level.toUpperCase()}
-                  </span>
+  function selectAnswer(qi: number, oi: number) {
+    if (submitted) return;
+    setAnswers((prev) => prev.map((a, i) => (i === qi ? oi : a)));
+  }
+
+  function submitQuiz() { setSubmitted(true); setScreen("result"); }
+
+  function backToList() { setScreen("list"); setActiveStory(null); }
+
+  // ─── Story List ───
+  if (screen === "list") {
+    return (
+      <>
+        <SessionHeader title="Nghe hiểu câu chuyện" onClose={onClose} />
+
+        <p className="mb-4 text-center text-sm font-bold text-muted-foreground">
+          {LEVEL_LABELS[level] ?? level.toUpperCase()} · {filtered.length} câu chuyện
+        </p>
+
+        <div className="space-y-3">
+          {filtered.map((s) => (
+            <Card key={s.id} className="overflow-hidden">
+              <CardContent className="flex items-start gap-4 p-4">
+                <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-purple-100 text-purple-600">
+                  <Headphones className="h-6 w-6" />
+                </span>
+                <div className="flex-1 min-w-0">
+                  <div className="flex items-center gap-2">
+                    <p className="text-sm font-extrabold truncate">{s.title}</p>
+                    <span className="shrink-0 rounded-full bg-muted px-2 py-0.5 text-[10px] font-extrabold text-muted-foreground">
+                      {s.level === "kids" ? "Kids" : s.level.toUpperCase()}
+                    </span>
+                  </div>
+                  <p className="text-xs font-bold text-muted-foreground">{s.titleVi}</p>
+                  <div className="mt-2">
+                    <Button type="button" size="sm" onClick={() => openStory(s)}>
+                      <Headphones className="h-4 w-4" /> Nghe
+                    </Button>
+                  </div>
                 </div>
-                <p className="text-xs font-bold text-muted-foreground">{s.titleVi}</p>
-                <p className="mt-1 text-xs text-muted-foreground">{s.description}</p>
-                <div className="mt-2 flex items-center gap-3">
-                  <span className="flex items-center gap-1 text-[10px] font-bold text-muted-foreground">
-                    <Clock className="h-3 w-3" /> {s.duration}
-                  </span>
-                  <span className="rounded-full bg-accent/20 px-2 py-0.5 text-[10px] font-extrabold text-accent-foreground">
-                    Sắp ra mắt
-                  </span>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </>
+    );
+  }
+
+  if (!activeStory) return null;
+
+  // ─── Listening Screen ───
+  if (screen === "listening") {
+    return (
+      <>
+        <SessionHeader title={activeStory.title} onClose={backToList} />
+        <Card>
+          <CardContent className="flex flex-col items-center gap-5 p-6">
+            <span className="shrink-0 rounded-full bg-muted px-3 py-1 text-xs font-extrabold text-muted-foreground">
+              {activeStory.level === "kids" ? "Kids" : activeStory.level.toUpperCase()}
+            </span>
+            <p className="text-center text-sm font-bold text-muted-foreground">{activeStory.titleVi}</p>
+
+            <Button type="button" size="xl" className="w-full" onClick={() => speakText(activeStory.text)}>
+              <Play className="h-7 w-7" /> Nghe câu chuyện
+            </Button>
+
+            <Button type="button" variant="outline" size="lg" className="w-full" onClick={() => speakText(activeStory.text)}>
+              <RotateCcw className="h-4 w-4" /> Nghe lại
+            </Button>
+
+            <Button type="button" size="lg" className="w-full" onClick={() => setScreen("quiz")}>
+              Trả lời câu hỏi
+            </Button>
+          </CardContent>
+        </Card>
+      </>
+    );
+  }
+
+  // ─── Quiz Screen ───
+  if (screen === "quiz") {
+    return (
+      <>
+        <SessionHeader title={activeStory.title} onClose={backToList} />
+        <Card>
+          <CardContent className="space-y-5 p-5">
+            <div className="flex items-center justify-between">
+              <p className="text-sm font-extrabold">{activeStory.questions.length} câu hỏi</p>
+              <Button type="button" variant="ghost" size="sm" onClick={() => speakText(activeStory.text)}>
+                <Volume2 className="h-4 w-4" /> Nghe lại
+              </Button>
+            </div>
+
+            {activeStory.questions.map((q, qi) => (
+              <div key={qi} className="space-y-2">
+                <p className="text-sm font-bold">Câu {qi + 1}. {q.question}</p>
+                <div className="space-y-1.5">
+                  {q.options.map((opt, oi) => (
+                    <button key={oi} type="button" onClick={() => selectAnswer(qi, oi)}
+                      className={cn(
+                        "flex w-full items-center gap-3 rounded-2xl border-2 px-4 py-2.5 text-left text-sm font-bold transition-all active:translate-y-[1px]",
+                        answers[qi] === oi ? "border-primary bg-primary/10 text-primary" : "border-border hover:border-primary/50"
+                      )}>
+                      <span className="flex-1">{opt}</span>
+                    </button>
+                  ))}
                 </div>
               </div>
-            </CardContent>
-          </Card>
-        ))}
+            ))}
+
+            <Button type="button" size="lg" className="w-full" onClick={submitQuiz}
+              disabled={answers.some((a) => a === null)}>
+              Nộp bài
+            </Button>
+          </CardContent>
+        </Card>
+      </>
+    );
+  }
+
+  // ─── Result Screen ───
+  return (
+    <>
+      <SessionHeader title={activeStory.title} onClose={backToList} />
+      <Card className="animate-pop">
+        <CardContent className="flex flex-col items-center gap-4 p-8 text-center">
+          <span className={cn("flex h-16 w-16 items-center justify-center rounded-full", score >= activeStory.questions.length * 0.8 ? "bg-success/20" : "bg-orange-100")}>
+            {score >= activeStory.questions.length * 0.8
+              ? <CheckCircle2 className="h-8 w-8 text-success" />
+              : <RotateCcw className="h-8 w-8 text-orange-500" />}
+          </span>
+          <p className="text-3xl font-black text-primary">{score}/{activeStory.questions.length}</p>
+          <p className={cn("text-sm font-extrabold", score >= activeStory.questions.length * 0.8 ? "text-success" : "text-orange-500")}>
+            {score >= activeStory.questions.length * 0.8 ? "Xuất sắc!" : "Cố gắng hơn nhé!"}
+          </p>
+          <p className="text-xs text-muted-foreground">Đúng {Math.round((score / activeStory.questions.length) * 100)}% câu hỏi</p>
+        </CardContent>
+      </Card>
+
+      {/* Answer review */}
+      <div className="mt-4 space-y-3">
+        {activeStory.questions.map((q, qi) => {
+          const isCorrect = answers[qi] === q.answer;
+          return (
+            <Card key={qi}>
+              <CardContent className="space-y-2 p-4">
+                <div className="flex items-start gap-2">
+                  {isCorrect ? <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-success" /> : <XCircle className="mt-0.5 h-4 w-4 shrink-0 text-red-400" />}
+                  <p className="text-sm font-bold">{q.question}</p>
+                </div>
+                {!isCorrect && answers[qi] !== null && (
+                  <p className="ml-6 text-xs text-red-500">Bạn chọn: {q.options[answers[qi]!]}</p>
+                )}
+                <p className="ml-6 text-xs font-bold text-success">Đáp án: {q.options[q.answer]}</p>
+              </CardContent>
+            </Card>
+          );
+        })}
+      </div>
+
+      <div className="mt-4 space-y-2">
+        <Button type="button" size="lg" className="w-full" onClick={() => openStory(activeStory)}>
+          <RotateCcw className="h-4 w-4" /> Nghe lại
+        </Button>
+        <Button type="button" variant="outline" size="lg" className="w-full" onClick={backToList}>
+          Danh sách
+        </Button>
       </div>
     </>
   );
