@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { SessionHeader } from "@/components/layout/SessionHeader";
 import { DeckRunner } from "@/components/vocabulary/DeckRunner";
+import { cn } from "@/components/ui/cn";
 
 interface MyWordsPageProps {
   student: Student;
@@ -44,6 +45,7 @@ function toVocab(w: SavedWord, level: Level): VocabularyWord {
 export function MyWordsPage({ student, onBackHome }: MyWordsPageProps) {
   const [words, setWords] = useState<SavedWord[] | null>(null);
   const [studying, setStudying] = useState(false);
+  const [tab, setTab] = useState<"word" | "sentence">("word");
 
   useEffect(() => {
     let alive = true;
@@ -78,7 +80,23 @@ export function MyWordsPage({ student, onBackHome }: MyWordsPageProps) {
 
   return (
     <main className="mx-auto w-full max-w-xl px-4">
-      <SessionHeader title="My Words — từ đã lưu" onClose={onBackHome} />
+      <SessionHeader title="Từ vựng của tôi" onClose={onBackHome} />
+
+      {/* Tab toggle */}
+      {words !== null && words.length > 0 && (
+        <div className="mb-3 flex gap-1 rounded-xl bg-muted p-1">
+          {([
+            { key: "word" as const, label: "Từ mới", count: words.filter((w) => w.type !== "sentence").length },
+            { key: "sentence" as const, label: "Câu", count: words.filter((w) => w.type === "sentence").length },
+          ]).map((t) => (
+            <button key={t.key} type="button" onClick={() => setTab(t.key)}
+              className={cn("flex-1 rounded-lg py-2 text-xs font-extrabold transition-colors",
+                tab === t.key ? "bg-card text-primary shadow-sm" : "text-muted-foreground")}>
+              {t.label} {t.count > 0 && <span className="ml-1 text-[10px]">({t.count})</span>}
+            </button>
+          ))}
+        </div>
+      )}
 
       {words === null ? (
         <div className="flex justify-center py-12"><Loader2 className="h-8 w-8 animate-spin text-primary" /></div>
@@ -88,16 +106,22 @@ export function MyWordsPage({ student, onBackHome }: MyWordsPageProps) {
           <p className="font-bold">Chưa có từ nào được lưu.</p>
           <p className="text-sm">Vào <b>Tra từ</b>, tra một từ rồi bấm <b>Lưu vào My Words</b> nhé.</p>
         </CardContent></Card>
-      ) : (
-        <>
-          {deck.length > 0 ? (
-            <Button type="button" className="mb-4 w-full" onClick={() => setStudying(true)}>
+      ) : (() => {
+        const filtered = tab === "sentence" ? words.filter((w) => w.type === "sentence") : words.filter((w) => w.type !== "sentence");
+        if (filtered.length === 0) return (
+          <Card><CardContent className="p-6 text-center text-sm font-bold text-muted-foreground">
+            {tab === "sentence" ? "Chưa có câu nào được lưu." : "Chưa có từ nào được lưu."}
+          </CardContent></Card>
+        );
+        return <>
+          {tab === "word" && deck.length > 0 && (
+            <Button type="button" className="mb-3 w-full" onClick={() => setStudying(true)}>
               <GraduationCap className="h-5 w-5" /> Học các từ này ({deck.length})
             </Button>
-          ) : null}
+          )}
 
           <ul className="space-y-2">
-            {words.map((w) => (
+            {filtered.map((w) => (
               <li key={w.query} className="flex items-center gap-3 rounded-2xl border border-border/70 bg-card p-3 shadow-card">
                 <span className="flex h-12 w-12 shrink-0 items-center justify-center overflow-hidden rounded-xl bg-secondary">
                   {w.imageUrl ? (
@@ -137,8 +161,8 @@ export function MyWordsPage({ student, onBackHome }: MyWordsPageProps) {
               </li>
             ))}
           </ul>
-        </>
-      )}
+        </>;
+      })()}
     </main>
   );
 }
