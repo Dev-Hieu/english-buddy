@@ -606,8 +606,11 @@ export function ShadowingPage({ student, onBackHome }: Props) {
           <input className="w-full rounded-xl border-2 border-border px-3 py-2.5 text-sm font-bold outline-none focus:border-primary"
             placeholder="Dán link YouTube..." value={ytUrl} onChange={(e) => { setYtUrl(e.target.value); setError(""); setPasteMode(false); }} />
           {vid && (<>
-            <div className="aspect-video w-full overflow-hidden rounded-xl"><iframe src={`https://www.youtube.com/embed/${vid}`} className="h-full w-full" allowFullScreen /></div>
-            {!loading && !pasteMode && <Button type="button" onClick={() => loadCaptions(vid)} className="w-full"><Play className="h-4 w-4" /> Lấy subtitle</Button>}
+            <div className="aspect-video w-full overflow-hidden rounded-xl bg-black"><iframe src={`https://www.youtube.com/embed/${vid}`} className="h-full w-full" allowFullScreen /></div>
+            <div className="flex gap-2">
+              {!loading && !pasteMode && <Button type="button" onClick={() => loadCaptions(vid)} className="flex-1"><Play className="h-4 w-4" /> Bắt đầu luyện</Button>}
+              {!loading && !pasteMode && <Button type="button" variant="outline" onClick={() => setPasteMode(true)} className="shrink-0 text-xs">Dán sub</Button>}
+            </div>
             {loading && <p className="text-center text-sm font-bold text-muted-foreground"><Loader2 className="inline h-4 w-4 animate-spin" /> Đang tải...</p>}
             {error && <p className="text-xs font-bold text-red-600">{error}</p>}
             {pasteMode && (<div className="space-y-2">
@@ -616,7 +619,6 @@ export function ShadowingPage({ student, onBackHome }: Props) {
                 placeholder={"Hello, my name is Dee Dee.\nWhat is your name?"} value={pasteText} onChange={(e) => setPasteText(e.target.value)} />
               <Button type="button" onClick={() => applyPaste(vid)} disabled={!pasteText.trim()} className="w-full"><CheckCircle2 className="h-4 w-4" /> Dùng subtitle</Button>
             </div>)}
-            {!loading && !pasteMode && <button type="button" onClick={() => setPasteMode(true)} className="w-full text-center text-xs font-bold text-primary underline">Dán subtitle thủ công</button>}
           </>)}
           {/* My Videos tab */}
           {browseTab === "my" && (
@@ -711,10 +713,10 @@ export function ShadowingPage({ student, onBackHome }: Props) {
                 </div>);
               })}
             </div>
-            <div className="flex gap-2">
-              <Button type="button" variant="outline" className="flex-1" onClick={() => { setScores({}); setCompletedCount(0); setPracticePhase("idle"); seekToSentence(0); }}><RotateCcw className="h-4 w-4" /> Luyện lại</Button>
-              <Button type="button" variant="outline" className="flex-1" onClick={() => { setVideoId(""); setYtUrl(""); setSentences([]); setCurrentIdx(-1); setPracticePhase("idle"); setScores({}); setMutedSentences(new Set()); playerRef.current?.destroy?.(); playerRef.current = null; }}><Video className="h-4 w-4" /> Đổi video</Button>
-              <Button type="button" className="flex-1" onClick={onBackHome}><Trophy className="h-4 w-4" /> Xong</Button>
+            <div className="grid grid-cols-1 gap-2 sm:grid-cols-3">
+              <Button type="button" variant="outline" className="w-full" onClick={() => { setScores({}); setCompletedCount(0); setPracticePhase("idle"); seekToSentence(0); }}><RotateCcw className="h-4 w-4" /> Luyện lại</Button>
+              <Button type="button" variant="outline" className="w-full" onClick={() => { setVideoId(""); setYtUrl(""); setSentences([]); setCurrentIdx(-1); setPracticePhase("idle"); setScores({}); setMutedSentences(new Set()); playerRef.current?.destroy?.(); playerRef.current = null; }}><Video className="h-4 w-4" /> Đổi video</Button>
+              <Button type="button" className="w-full" onClick={onBackHome}><Trophy className="h-4 w-4" /> Xong</Button>
             </div>
           </CardContent>
         </Card>
@@ -730,53 +732,55 @@ export function ShadowingPage({ student, onBackHome }: Props) {
       <div className="aspect-video w-full overflow-hidden rounded-xl mb-2"><div ref={playerDivRef} className="h-full w-full" /></div>
 
       {/* ── Toolbar Row 1: Play + Modes ── */}
-      <div className="mb-1 flex items-center justify-between rounded-2xl bg-card border border-border shadow-sm px-1.5 py-1">
+      <div className="mb-1 flex items-center justify-between rounded-2xl bg-card border border-border shadow-sm px-2 py-1.5">
         {/* Play controls */}
-        <div className="flex items-center gap-0.5">
+        <div className="flex items-center gap-1">
           <button type="button" onClick={() => currentIdx > 0 && seekToSentence(currentIdx - 1)}
-            className="rounded-lg p-1.5 text-muted-foreground hover:bg-muted active:scale-95 transition-all"><ChevronLeft className="h-5 w-5" /></button>
+            className="rounded-xl p-2 text-muted-foreground hover:bg-muted active:scale-95 transition-all"><ChevronLeft className="h-5 w-5" /></button>
           <button type="button" onClick={togglePlay}
-            className={cn("rounded-full p-2 text-white shadow-md transition-all active:scale-90", isPlaying ? "bg-red-500" : "bg-primary")}>
+            className={cn("rounded-full p-2.5 text-white shadow-md transition-all active:scale-90", isPlaying ? "bg-red-500" : "bg-primary")}>
             {isPlaying ? <Pause className="h-5 w-5" /> : <Play className="h-5 w-5 ml-0.5" />}
           </button>
           <button type="button" onClick={() => currentIdx < sentences.length - 1 && seekToSentence(currentIdx + 1)}
-            className="rounded-lg p-1.5 text-muted-foreground hover:bg-muted active:scale-95 transition-all"><ChevronRight className="h-5 w-5" /></button>
-          <span className="text-sm font-black text-muted-foreground tabular-nums">{Math.max(0, currentIdx + 1)}<span className="text-muted-foreground/50">/{sentences.length}</span></span>
+            className="rounded-xl p-2 text-muted-foreground hover:bg-muted active:scale-95 transition-all"><ChevronRight className="h-5 w-5" /></button>
+          <span className="text-sm font-black text-muted-foreground tabular-nums ml-0.5">{Math.max(0, currentIdx + 1)}<span className="text-muted-foreground/50">/{sentences.length}</span></span>
         </div>
 
         {/* Right: đổi video + settings */}
-        <div className="flex items-center gap-0.5">
+        <div className="flex items-center gap-1">
           <button type="button" title="Đổi video" onClick={() => { setVideoId(""); setYtUrl(""); setSentences([]); setCurrentIdx(-1); setPracticePhase("idle"); setScores({}); setMutedSentences(new Set()); playerRef.current?.destroy?.(); playerRef.current = null; }}
-            className="rounded-lg p-2 text-muted-foreground hover:bg-muted hover:text-primary transition-all active:scale-95">
+            className="rounded-xl p-2 text-muted-foreground hover:bg-muted hover:text-primary transition-all active:scale-95">
             <Video className="h-5 w-5" />
           </button>
           <button type="button" title="Cài đặt" onClick={() => setShowSettings(!showSettings)}
-            className={cn("rounded-lg p-2 transition-all active:scale-95", showSettings ? "bg-primary/10 text-primary" : "text-muted-foreground hover:bg-muted")}>
+            className={cn("rounded-xl p-2 transition-all active:scale-95", showSettings ? "bg-primary/10 text-primary" : "text-muted-foreground hover:bg-muted")}>
             <Settings className="h-5 w-5" />
           </button>
         </div>
       </div>
 
       {/* ── Toolbar Row 2: Mode selector ── */}
-      <div className="mb-2 grid grid-cols-4 gap-1 rounded-2xl bg-card border border-border shadow-sm p-1">
+      <div className="mb-2 grid grid-cols-4 gap-1.5 rounded-2xl bg-card border border-border shadow-sm p-1.5">
         {([
-          { mode: "shadow" as PracticeMode, icon: Mic, label: "Shadow", title: "Nghe → đọc theo" },
-          { mode: "dictation" as PracticeMode, icon: Keyboard, label: "Dict", title: "Nghe → gõ lại" },
-          { mode: "dubbing" as PracticeMode, icon: VolumeX, label: "Dub", title: "Tự nói thay video" },
+          { mode: "shadow" as PracticeMode, icon: Mic, label: "Shadow", sub: "Đọc theo" },
+          { mode: "dictation" as PracticeMode, icon: Keyboard, label: "Dict", sub: "Viết lại" },
+          { mode: "dubbing" as PracticeMode, icon: VolumeX, label: "Dub", sub: "Lồng tiếng" },
         ]).map((m) => (
-          <button key={m.mode} type="button" title={m.title}
+          <button key={m.mode} type="button"
             onClick={() => { setPracticeMode(m.mode); if (m.mode === "dubbing") setWaitMode("off"); }}
-            className={cn("flex flex-col items-center gap-1 rounded-xl py-2 transition-all active:scale-95",
-              practiceMode === m.mode ? "bg-primary text-white shadow-sm" : "text-muted-foreground hover:bg-muted")}>
+            className={cn("flex flex-col items-center gap-0.5 rounded-xl py-2.5 transition-all active:scale-95",
+              practiceMode === m.mode ? "bg-primary text-white shadow-md" : "text-muted-foreground hover:bg-muted")}>
             <m.icon className="h-5 w-5" />
-            <span className="text-xs font-extrabold">{m.label}</span>
+            <span className="text-xs font-extrabold leading-none">{m.label}</span>
+            <span className={cn("text-[10px] leading-none", practiceMode === m.mode ? "text-white/70" : "text-muted-foreground/60")}>{m.sub}</span>
           </button>
         ))}
-        <button type="button" title="Thi cả bài" onClick={startFullLesson}
-          className={cn("flex flex-col items-center gap-1 rounded-xl py-2 transition-all active:scale-95",
-            practicePhase === "full-recording" ? "bg-red-500 text-white animate-pulse" : "text-muted-foreground hover:bg-muted")}>
+        <button type="button" onClick={startFullLesson}
+          className={cn("flex flex-col items-center gap-0.5 rounded-xl py-2.5 transition-all active:scale-95",
+            practicePhase === "full-recording" ? "bg-red-500 text-white animate-pulse shadow-md" : "text-muted-foreground hover:bg-muted")}>
           <PlayCircle className="h-5 w-5" />
-          <span className="text-xs font-extrabold">Full</span>
+          <span className="text-xs font-extrabold leading-none">Full</span>
+          <span className={cn("text-[10px] leading-none", practicePhase === "full-recording" ? "text-white/70" : "text-muted-foreground/60")}>Cả bài</span>
         </button>
       </div>
 
@@ -912,8 +916,14 @@ export function ShadowingPage({ student, onBackHome }: Props) {
           )}
           {practicePhase === "recording" && (
             <div className="flex items-center justify-center gap-3">
-              <button type="button" onClick={stopAndScore} className="flex h-12 w-12 animate-pulse items-center justify-center rounded-full bg-red-500 text-white"><Square className="h-5 w-5" /></button>
-              <span className="text-sm font-bold text-red-600">Đọc theo...</span>
+              <button type="button" onClick={stopAndScore} className="flex h-14 w-14 animate-pulse items-center justify-center rounded-full bg-red-500 text-white shadow-lg shadow-red-200"><Square className="h-5 w-5" /></button>
+              <div>
+                <span className="text-sm font-extrabold text-red-600 flex items-center gap-1.5">
+                  <span className="relative flex h-2.5 w-2.5"><span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-red-400 opacity-75" /><span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-red-500" /></span>
+                  Đọc theo...
+                </span>
+                <span className="text-xs text-muted-foreground">Bấm để dừng sớm</span>
+              </div>
             </div>
           )}
           {practicePhase === "scoring" && <div className="flex justify-center"><Loader2 className="h-6 w-6 animate-spin text-primary" /></div>}
@@ -947,27 +957,27 @@ export function ShadowingPage({ student, onBackHome }: Props) {
       )}
 
       {/* Transcript */}
-      <div ref={listRef} className="space-y-0.5 rounded-2xl border border-border p-1 max-h-[30vh] overflow-y-auto">
+      <div ref={listRef} className="space-y-0.5 rounded-2xl border border-border bg-card p-1.5 max-h-[35vh] overflow-y-auto shadow-sm">
         {sentences.map((s, i) => {
           const isActive = i === currentIdx;
           const sc = scores[i];
           const isMuted = mutedSentences.has(i);
           return (
-            <div key={i} className={cn("flex w-full items-center gap-1.5 rounded-lg px-2 py-1.5 transition-all",
-              isActive ? "bg-primary/15 border border-primary/30" : "hover:bg-muted")}>
+            <div key={i} className={cn("flex w-full items-center gap-2 rounded-xl px-2.5 py-2 transition-all",
+              isActive ? "bg-primary/15 border border-primary/40 shadow-sm" : "hover:bg-muted/60")}>
               {practiceMode === "dubbing" && (
-                <button type="button" onClick={() => toggleMute(i)} className={cn("shrink-0 rounded p-0.5", isMuted ? "text-red-500" : "text-muted-foreground")}>
-                  {isMuted ? <VolumeX className="h-3 w-3" /> : <Volume2 className="h-3 w-3" />}
+                <button type="button" onClick={() => toggleMute(i)} className={cn("shrink-0 rounded-lg p-1", isMuted ? "text-red-500 bg-red-50" : "text-muted-foreground hover:bg-muted")}>
+                  {isMuted ? <VolumeX className="h-3.5 w-3.5" /> : <Volume2 className="h-3.5 w-3.5" />}
                 </button>
               )}
               <button type="button" onClick={() => seekToSentence(i)} className="flex-1 text-left min-w-0">
-                <span className="text-xs font-bold text-muted-foreground mr-1">{Math.floor(s.start / 60)}:{String(Math.floor(s.start % 60)).padStart(2, "0")}</span>
-                <span className={cn("text-sm", isActive ? "font-black text-primary" : "font-bold", isMuted ? "text-red-400" : "")}>{s.text}</span>
+                <span className="text-xs font-bold text-muted-foreground/70 mr-1.5 tabular-nums">{Math.floor(s.start / 60)}:{String(Math.floor(s.start % 60)).padStart(2, "0")}</span>
+                <span className={cn("text-sm leading-snug", isActive ? "font-black text-primary" : "font-semibold", isMuted ? "text-red-400 line-through" : "")}>{s.text}</span>
               </button>
-              {sc && <span className={cn("shrink-0 text-xs font-black", sc.score >= SPEAK_PASS ? "text-success" : "text-red-600")}>
+              {sc && <span className={cn("shrink-0 rounded-md px-1.5 py-0.5 text-xs font-black", sc.score >= SPEAK_PASS ? "text-success bg-success/10" : "text-red-600 bg-red-50")}>
                 {sc.mode === "dictation" ? (sc.score === 100 ? "✓" : "✗") : `${sc.score}%`}
               </span>}
-              {isActive && isPlaying && <Volume2 className="h-3 w-3 text-primary animate-pulse shrink-0" />}
+              {isActive && isPlaying && <Volume2 className="h-3.5 w-3.5 text-primary animate-pulse shrink-0" />}
             </div>
           );
         })}
@@ -985,10 +995,6 @@ function ScoreRing({ score, size = 72 }: { score: number; size?: number }) {
     </svg>
     <span className={cn("absolute text-lg font-black", color)}>{score}%</span>
   </div>);
-}
-
-function ModeBtn({ active, onClick, children }: { active: boolean; onClick: () => void; children: React.ReactNode }) {
-  return <button type="button" onClick={onClick} className={cn("flex items-center gap-1 rounded-lg px-2 py-1 text-xs font-extrabold transition-colors", active ? "bg-card text-primary shadow-sm" : "text-muted-foreground")}>{children}</button>;
 }
 
 function Wrapper({ children, onBack }: { children: React.ReactNode; onBack: () => void }) {
