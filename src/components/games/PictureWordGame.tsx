@@ -1,5 +1,6 @@
 import { Delete, PartyPopper, Volume2 } from "lucide-react";
 import { useMemo, useState } from "react";
+import { playCorrect, playWrong, playTap, playWin } from "@/services/soundService";
 import type { VocabularyWord } from "@/types";
 import { speakText } from "@/services/speechService";
 import { Button } from "@/components/ui/button";
@@ -65,7 +66,7 @@ export function PictureWordGame({ pool, onRecord, onClose, hard }: Props) {
 
   const advance = () => {
     const m = n + 1;
-    if (m >= words.length) { setDone(true); return; }
+    if (m >= words.length) { setDone(true); playWin(); return; }
     setN(m); setPlaced([]); setStatus("playing"); setTray(makeTray(words[m].word, hard));
   };
 
@@ -73,13 +74,16 @@ export function PictureWordGame({ pool, onRecord, onClose, hard }: Props) {
     if (status !== "playing" || placed.includes(i)) return;
     const next = [...placed, i];
     setPlaced(next);
+    playTap();
     if (next.length === target.word.length) {
       const guess = next.map((k) => tray[k]).join("").toLowerCase();
       if (guess === target.word.toLowerCase()) {
         setStatus("right"); setSolved((s) => s + 1); onRecord(target.id, true);
+        playCorrect();
         setTimeout(advance, 900);
       } else {
         setStatus("wrong"); onRecord(target.id, false);
+        playWrong();
         setTimeout(() => { setPlaced([]); setStatus("playing"); }, 700);
       }
     }

@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { cn } from "@/components/ui/cn";
 import { SessionHeader } from "@/components/layout/SessionHeader";
+import { playCorrect, playWrong, playWin } from "@/services/soundService";
 
 interface Props {
   words: { word: string; meaning_vi: string }[];
@@ -266,10 +267,14 @@ export function WordSearchGame({ words, onComplete, onBack }: Props) {
         if (next.size === placed.length) {
           if (timerRef.current) clearInterval(timerRef.current);
           setPhase("done");
+          playWin();
           const score = Math.max(1000 - elapsed * 2, 100) + placed.length * 50;
           onComplete(score);
+        } else {
+          playCorrect();
         }
       } else {
+        playWrong();
         setMessage("Không đúng, thử lại!");
       }
     },

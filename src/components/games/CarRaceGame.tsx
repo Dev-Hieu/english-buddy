@@ -1,5 +1,6 @@
 import { Flame } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
+import { playCorrect, playWrong, playWin, playStreak, playLose } from "@/services/soundService";
 import type { VocabularyWord } from "@/types";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -78,9 +79,17 @@ export function CarRaceGame({ pool, onRecord, onClose, hard }: Props) {
       nr = rival + 1;
     }
     setStreak(ns); setTurbo(boost); setPlayer(np); setRival(nr);
+    if (ok) {
+      if (boost) playStreak(); else playCorrect();
+    } else {
+      playWrong();
+    }
     setTimeout(() => {
       setTurbo(false);
-      if (np >= goal || nr >= goal) setOver(true);
+      if (np >= goal || nr >= goal) {
+        setOver(true);
+        if (np >= goal) playWin(); else playLose();
+      }
       else { setPicked(null); setQi((x) => x + 1); }
     }, 800);
   }

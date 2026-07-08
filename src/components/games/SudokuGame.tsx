@@ -1,5 +1,6 @@
 import { Eraser, Eye, PartyPopper, RotateCcw } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { playWin, playTap, playWrong } from "@/services/soundService";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { cn } from "@/components/ui/cn";
@@ -58,11 +59,18 @@ export function SudokuGame({ onClose }: { onClose: () => void }) {
   const wrong = (r: number, c: number) => board[r][c] !== 0 && board[r][c] !== solution[r][c];
   const won = board.every((row, r) => row.every((v, c) => v === solution[r][c]));
 
+  useEffect(() => {
+    if (won && !showSolution) playWin();
+  }, [won, showSolution]);
+
   const setCell = (n: number) => {
     if (!sel) return;
     const [r, c] = sel;
     if (given(r, c)) return;
     setBoard((b) => b.map((row, ri) => row.map((v, ci) => (ri === r && ci === c ? n : v))));
+    if (n !== 0) {
+      if (n !== solution[r][c]) playWrong(); else playTap();
+    }
   };
 
   const selVal = sel ? board[sel[0]][sel[1]] : 0;

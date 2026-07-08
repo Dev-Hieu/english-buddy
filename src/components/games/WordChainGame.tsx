@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { cn } from "@/components/ui/cn";
 import { SessionHeader } from "@/components/layout/SessionHeader";
+import { playCorrect, playWrong, playWin, playLose, playTick } from "@/services/soundService";
 
 interface Props {
   words: { word: string }[];
@@ -98,6 +99,11 @@ export function WordChainGame({ words, onComplete, onBack }: Props) {
 
   const eliminatePlayer = useCallback(
     (index: number, reason: string) => {
+      if (players[index].isHuman) {
+        playLose();
+      } else {
+        playWrong();
+      }
       setPlayers((prev) => {
         const updated = prev.map((p, i) => (i === index ? { ...p, eliminated: true } : p));
         const alive = updated.filter((p) => !p.eliminated);
@@ -139,6 +145,7 @@ export function WordChainGame({ words, onComplete, onBack }: Props) {
         return;
       }
 
+      if (players[playerIndex].isHuman) playCorrect();
       setChain((prev) => [...prev, lower]);
       setUsedWords((prev) => new Set(prev).add(lower));
       setPlayers((prev) => prev.map((p, i) => (i === playerIndex ? { ...p, wordsPlayed: p.wordsPlayed + 1 } : p)));
@@ -154,6 +161,10 @@ export function WordChainGame({ words, onComplete, onBack }: Props) {
     timerRef.current = setInterval(() => {
       setTimeLeft((t) => {
         const next = Math.max(0, +(t - 0.1).toFixed(1));
+        // Play tick when crossing integer seconds below 3
+        if (next <= 3 && next > 0 && Math.floor(next) !== Math.floor(t)) {
+          playTick();
+        }
         return next;
       });
     }, 100);
@@ -204,6 +215,14 @@ export function WordChainGame({ words, onComplete, onBack }: Props) {
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currentIndex, gameOver, chain.length]);
+
+  // Play win sound when human wins
+  useEffect(() => {
+    if (gameOver) {
+      const humanAlive = players.find((p) => p.isHuman && !p.eliminated);
+      if (humanAlive) playWin();
+    }
+  }, [gameOver, players]);
 
   // Auto-focus input on human turn
   useEffect(() => {

@@ -4,6 +4,7 @@ import { SEED_VOCABULARY } from "@/data/seedVocabulary";
 import type { Student, VocabularyWord } from "@/types";
 import { recordAnswer } from "@/services/progressService";
 import { speakText } from "@/services/speechService";
+import { playCorrect, playWrong, playWin, playStreak } from "@/services/soundService";
 import { cn } from "@/components/ui/cn";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -154,11 +155,13 @@ interface GameProps {
 }
 
 function Finished({ onClose, score }: { onClose: () => void; score?: string }) {
+  useEffect(() => { playWin(); }, []);
   return (
     <Card className="animate-pop">
       <CardContent className="flex flex-col items-center gap-4 p-8 text-center">
         <PartyPopper className="h-12 w-12 text-accent" />
-        <p className="text-2xl font-black text-primary">{score ? score : "Hoàn thành! 🎉"}</p>
+        {score && <p className="text-4xl font-black text-primary">{score}</p>}
+        <p className="text-2xl font-black text-primary">{score ? "Hoàn thành!" : "Hoàn thành! 🎉"}</p>
         <Button type="button" size="lg" className="w-full" onClick={onClose}>Chơi tiếp</Button>
       </CardContent>
     </Card>
@@ -171,6 +174,7 @@ function MatchGame({ pool, onRecord, onClose, hard }: GameProps) {
   const [left, setLeft] = useState<string | null>(null);
   const [matched, setMatched] = useState<Set<string>>(new Set());
   const [wrong, setWrong] = useState<string | null>(null);
+  const [streak, setStreak] = useState(0);
 
   const pickRight = (w: VocabularyWord) => {
     if (!left || matched.has(w.id)) return;
@@ -178,9 +182,14 @@ function MatchGame({ pool, onRecord, onClose, hard }: GameProps) {
       onRecord(w.id, true);
       setMatched((m) => new Set(m).add(w.id));
       setLeft(null);
+      const newStreak = streak + 1;
+      setStreak(newStreak);
+      if (newStreak >= 3) { playStreak(); } else { playCorrect(); }
     } else {
       onRecord(left, false);
       setWrong(w.id);
+      setStreak(0);
+      playWrong();
       setTimeout(() => setWrong(null), 500);
       setLeft(null);
     }
@@ -191,22 +200,31 @@ function MatchGame({ pool, onRecord, onClose, hard }: GameProps) {
     <>
       <SessionHeader title="Ghép từ" onClose={onClose} />
       {done ? <Finished onClose={onClose} /> : (
-        <div className="grid grid-cols-2 gap-3">
-          <div className="space-y-2">
-            {round.map((w) => (
-              <Button key={w.id} type="button" variant={left === w.id ? "default" : "outline"} size="lg"
-                className={cn("w-full justify-start capitalize", matched.has(w.id) && "opacity-40")}
-                disabled={matched.has(w.id)} onClick={() => setLeft(w.id)}>{w.word}</Button>
-            ))}
+        <>
+          {streak >= 2 && (
+            <div className="mb-3 flex justify-center">
+              <span className="animate-pop inline-block rounded-full bg-orange-500 px-3 py-1 text-sm font-black text-white shadow-lg">
+                🔥×{streak}
+              </span>
+            </div>
+          )}
+          <div className="grid grid-cols-2 gap-3">
+            <div className="space-y-2">
+              {round.map((w) => (
+                <Button key={w.id} type="button" variant={left === w.id ? "default" : "outline"} size="lg"
+                  className={cn("w-full justify-start capitalize", matched.has(w.id) && "opacity-40")}
+                  disabled={matched.has(w.id)} onClick={() => setLeft(w.id)}>{w.word}</Button>
+              ))}
+            </div>
+            <div className="space-y-2">
+              {vis.map((w) => (
+                <Button key={w.id} type="button" variant="secondary" size="lg"
+                  className={cn("w-full justify-start", matched.has(w.id) && "opacity-40", wrong === w.id && "ring-4 ring-red-400")}
+                  disabled={matched.has(w.id)} onClick={() => pickRight(w)}>{w.meaning_vi}</Button>
+              ))}
+            </div>
           </div>
-          <div className="space-y-2">
-            {vis.map((w) => (
-              <Button key={w.id} type="button" variant="secondary" size="lg"
-                className={cn("w-full justify-start", matched.has(w.id) && "opacity-40", wrong === w.id && "ring-4 ring-red-400")}
-                disabled={matched.has(w.id)} onClick={() => pickRight(w)}>{w.meaning_vi}</Button>
-            ))}
-          </div>
-        </div>
+        </>
       )}
     </>
   );
@@ -217,6 +235,7 @@ function PickGame({ pool, onRecord, onClose, hard }: GameProps) {
   const [targets] = useState(() => pickWords(imgPool, hard ? 8 : 5));
   const [n, setN] = useState(0);
   const [picked, setPicked] = useState<string | null>(null);
+  const [correct, setCorrect] = useState(0);
   const target = targets[Math.min(n, Math.max(0, targets.length - 1))];
   const opts = useMemo(() => {
     if (!target) return [];
@@ -224,12 +243,14 @@ function PickGame({ pool, onRecord, onClose, hard }: GameProps) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [n, targets]);
 
-  if (n >= targets.length || !target) return (<><SessionHeader title="Chọn ảnh" onClose={onClose} /><Finished onClose={onClose} /></>);
+  if (n >= targets.length || !target) return (<><SessionHeader title="Chọn ảnh" onClose={onClose} /><Finished onClose={onClose} score={`${correct}/${targets.length}`} /></>);
 
   const choose = (w: VocabularyWord) => {
     if (picked) return;
     setPicked(w.id);
-    onRecord(target.id, w.id === target.id);
+    const isCorrect = w.id === target.id;
+    onRecord(target.id, isCorrect);
+    if (isCorrect) { setCorrect((c) => c + 1); playCorrect(); } else { playWrong(); }
     setTimeout(() => { setPicked(null); setN((x) => x + 1); }, 800);
   };
 
@@ -257,6 +278,7 @@ function ListenGame({ pool, onRecord, onClose, hard }: GameProps) {
   const [targets] = useState(() => pickWords(pool, hard ? 8 : 5));
   const [n, setN] = useState(0);
   const [picked, setPicked] = useState<string | null>(null);
+  const [correct, setCorrect] = useState(0);
   const target = targets[Math.min(n, Math.max(0, targets.length - 1))];
   const opts = useMemo(() => {
     if (!target) return [];
@@ -264,12 +286,14 @@ function ListenGame({ pool, onRecord, onClose, hard }: GameProps) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [n, targets]);
 
-  if (n >= targets.length || !target) return (<><SessionHeader title="Nghe & chọn" onClose={onClose} /><Finished onClose={onClose} /></>);
+  if (n >= targets.length || !target) return (<><SessionHeader title="Nghe & chọn" onClose={onClose} /><Finished onClose={onClose} score={`${correct}/${targets.length}`} /></>);
 
   const choose = (w: VocabularyWord) => {
     if (picked) return;
     setPicked(w.id);
-    onRecord(target.id, w.id === target.id);
+    const isCorrect = w.id === target.id;
+    onRecord(target.id, isCorrect);
+    if (isCorrect) { setCorrect((c) => c + 1); playCorrect(); } else { playWrong(); }
     setTimeout(() => { setPicked(null); setN((x) => x + 1); }, 800);
   };
 
@@ -302,6 +326,7 @@ function DictationGame({ pool, onRecord, onClose, hard }: GameProps) {
   const [n, setN] = useState(0);
   const [input, setInput] = useState("");
   const [checked, setChecked] = useState<null | boolean>(null);
+  const [correct, setCorrect] = useState(0);
   const target = targets[Math.min(n, Math.max(0, targets.length - 1))];
 
   // Tự đọc từ khi sang câu mới (gợi ý nghe).
@@ -310,13 +335,14 @@ function DictationGame({ pool, onRecord, onClose, hard }: GameProps) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [n]);
 
-  if (n >= targets.length || !target) return (<><SessionHeader title="Nghe & gõ" onClose={onClose} /><Finished onClose={onClose} /></>);
+  if (n >= targets.length || !target) return (<><SessionHeader title="Nghe & gõ" onClose={onClose} /><Finished onClose={onClose} score={`${correct}/${targets.length}`} /></>);
 
   const submit = () => {
     if (checked !== null || !input.trim()) return;
     const ok = input.trim().toLowerCase() === target.word.toLowerCase();
     setChecked(ok);
     onRecord(target.id, ok);
+    if (ok) { setCorrect((c) => c + 1); playCorrect(); } else { playWrong(); }
   };
   const next = () => { setInput(""); setChecked(null); setN((x) => x + 1); };
 

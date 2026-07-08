@@ -2,6 +2,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { cn } from "@/components/ui/cn";
+import { playCorrect, playWrong, playWin, playStreak, playTick } from "@/services/soundService";
 
 interface Props {
   words: { word: string; meaning_vi: string }[];
@@ -55,6 +56,7 @@ export function SpeedTypeGame({ words, onComplete, onBack }: Props) {
   const endGame = useCallback(() => {
     if (timerRef.current) clearInterval(timerRef.current);
     setOver(true);
+    playWin();
   }, []);
 
   // Timer
@@ -66,7 +68,9 @@ export function SpeedTypeGame({ words, onComplete, onBack }: Props) {
           endGame();
           return 0;
         }
-        return t - 1;
+        const next = t - 1;
+        if (next >= 1 && next <= 5) playTick();
+        return next;
       });
     }, 1000);
     return () => {
@@ -87,7 +91,13 @@ export function SpeedTypeGame({ words, onComplete, onBack }: Props) {
     setAttempts((a) => a + 1);
 
     if (trimmed.toLowerCase() === currentWord.word.toLowerCase()) {
-      setCorrect((c) => c + 1);
+      const nextCorrect = correct + 1;
+      setCorrect(nextCorrect);
+      if (nextCorrect % 5 === 0) {
+        playStreak();
+      } else {
+        playCorrect();
+      }
       setFlash("green");
       setInput("");
       // Reshuffle when we exhaust the queue
@@ -99,6 +109,7 @@ export function SpeedTypeGame({ words, onComplete, onBack }: Props) {
       }
       setTimeout(() => setFlash(null), 300);
     } else {
+      playWrong();
       setFlash("red");
       setShake(true);
       setTimeout(() => {
