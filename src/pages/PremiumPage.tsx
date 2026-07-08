@@ -199,7 +199,7 @@ export function PremiumPage({ user, onBack }: PremiumPageProps) {
               </p>
               <div className="mt-2 space-y-1 text-xs font-bold text-amber-700">
                 <p>Zalo: 0856.322.323</p>
-                <p>Email: hieult@nasoft.vn</p>
+                <p>Email: support@buddy.vn</p>
               </div>
             </div>
           </CardContent>
@@ -216,7 +216,7 @@ export function PremiumPage({ user, onBack }: PremiumPageProps) {
       {/* Contact */}
       <div className="text-center text-xs text-muted-foreground space-y-1 pb-4">
         <p className="font-bold">Liên hệ hỗ trợ</p>
-        <p>Zalo: 0856.322.323 | Email: hieult@nasoft.vn</p>
+        <p>Zalo: 0856.322.323 | Email: support@buddy.vn</p>
       </div>
     </main>
   );
