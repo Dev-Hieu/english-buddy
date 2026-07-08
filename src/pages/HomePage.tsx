@@ -1,4 +1,4 @@
-import { BarChart3, BookMarked, BookOpen, ChevronRight, ClipboardCheck, Flame, GraduationCap, Headphones, LogOut, MessageCircle, Mic, Play, RotateCcw, Settings, Star, Trophy, UserRound } from "lucide-react";
+import { BookOpen, ChevronRight, ClipboardCheck, Ear, Flame, GraduationCap, LogOut, Mic, PenLine, Play, RotateCcw, Settings, Sparkles, Star, Trophy, UserRound } from "lucide-react";
 import { useEffect, useState, type ComponentType } from "react";
 import { getLeaderboard } from "@/services/studentService";
 import { getSkillTestResults, type SkillTestResult } from "@/services/progressService";
@@ -215,25 +215,16 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
         </section>
       )}
 
-      {/* ── Học: Quick actions row 1 ── */}
+      {/* ── Kỹ năng ── */}
       <section className="mt-4">
-        <h2 className="mb-2 text-base font-extrabold">Luyện tập</h2>
-        <div className="grid grid-cols-4 gap-2">
-          <NavTile icon={BookOpen} iconClass="bg-primary/10 text-primary" title="Flashcard" onClick={() => onNavigate("flashcard")} />
-          <NavTile icon={GraduationCap} iconClass="bg-success/10 text-success" title="Làm đề" onClick={() => onNavigate("exam")} />
-          <NavTile icon={Mic} iconClass="bg-primary/10 text-primary" title="Luyện nói" onClick={() => onNavigate("speak")} />
-          <NavTile icon={BookMarked} iconClass="bg-accent/10 text-accent" title="My Words" onClick={() => onNavigate("mywords")} badge={learnedTotal > 0 ? undefined : undefined} />
-        </div>
-      </section>
-
-      {/* ── Khám phá: Quick actions row 2 ── */}
-      <section className="mt-3">
-        <h2 className="mb-2 text-base font-extrabold">Khám phá</h2>
-        <div className="grid grid-cols-4 gap-2">
-          <NavTile icon={Headphones} iconClass="bg-primary/10 text-primary" title="Shadowing" onClick={() => onNavigate("shadowing")} />
-          <NavTile icon={MessageCircle} iconClass="bg-accent/10 text-accent" title="Hội thoại" onClick={() => onNavigate("conversation")} />
-          <NavTile icon={Trophy} iconClass="bg-yellow-100 text-yellow-700" title="Xếp hạng" onClick={() => onNavigate("leaderboard")} />
-          <NavTile icon={BarChart3} iconClass="bg-secondary text-secondary-foreground" title="Theo dõi" onClick={() => onNavigate("dashboard")} />
+        <h2 className="mb-2 text-base font-extrabold">Kỹ năng</h2>
+        <div className="grid grid-cols-3 gap-2">
+          <NavTile icon={Ear} iconClass="bg-blue-100 text-blue-600" title="Nghe" onClick={() => onNavigate("shadowing")} />
+          <NavTile icon={Mic} iconClass="bg-primary/10 text-primary" title="Nói" onClick={() => onNavigate("speak")} />
+          <NavTile icon={BookOpen} iconClass="bg-green-100 text-green-600" title="Đọc" onClick={() => onNavigate("flashcard")} />
+          <NavTile icon={PenLine} iconClass="bg-purple-100 text-purple-600" title="Viết" onClick={() => onNavigate("exam")} />
+          <NavTile icon={Sparkles} iconClass="bg-amber-100 text-amber-600" title="Từ mới" onClick={() => onNavigate("mywords")} />
+          <NavTile icon={GraduationCap} iconClass="bg-accent/10 text-accent" title="Ngữ pháp" onClick={() => onNavigate("grammar")} />
         </div>
       </section>
 
@@ -268,18 +259,7 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
         </div>
       </section>
 
-      {/* ── Ngữ pháp shortcut ── */}
-      <section className="mt-4 mb-4">
-        <button type="button" onClick={() => onNavigate("grammar")}
-          className="flex w-full items-center gap-3 rounded-2xl border border-border/50 bg-card p-4 shadow-sm transition-all active:scale-[0.98] hover:shadow-md">
-          <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-2xl">📖</span>
-          <div className="flex-1">
-            <p className="text-sm font-extrabold">Ngữ pháp</p>
-            <p className="text-xs text-muted-foreground">52 chủ đề × 6 cấp độ</p>
-          </div>
-          <ChevronRight className="h-5 w-5 text-muted-foreground" />
-        </button>
-      </section>
+      <div className="mb-4" />
     </main>
   );
 }

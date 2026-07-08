@@ -45,7 +45,7 @@ const readSelected = () => (typeof window === "undefined" ? null : localStorage.
 
 const ACTIVE_TAB: Record<View, TabKey | null> = {
   "student-select": null, admin: null, home: "home", topics: "home", lesson: "home", flashcard: "home",
-  review: "review", lookup: "lookup", test: "test", games: "games", speak: "speak", shadowing: null, dashboard: null, mywords: null, leaderboard: null, topicwords: null,
+  review: "review", lookup: "lookup", test: "test", games: null, speak: "speak", shadowing: null, dashboard: null, mywords: "mywords", leaderboard: null, topicwords: null,
   grammar: null, "grammar-lesson": null, exam: null, conversation: null, imagepicker: null, skilltest: null,
 };
 
@@ -178,7 +178,7 @@ export function App() {
 
   const onTab = (key: TabKey) => {
     if (key === "home") navigate("home");
-    else if (key === "games") navigate("games", route.topicId || "topic_food");
+    else if (key === "mywords") navigate("mywords");
     else if (key === "test") navigate("test", route.topicId || "topic_food");
     else if (key === "speak") navigate("speak", route.topicId || "topic_food");
     else navigate(key);
@@ -339,7 +339,7 @@ export function App() {
       );
   }
 
-  const showTab = route.view === "home" || route.view === "topics" || route.view === "lookup";
+  const showTab = route.view === "home" || route.view === "topics" || route.view === "lookup" || route.view === "mywords";
   return (
     <>
       <div className={showTab ? "pb-24" : ""}>{content}</div>

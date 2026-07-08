@@ -1,14 +1,14 @@
-import { Dumbbell, Gamepad2, GraduationCap, Home, Mic, Search } from "lucide-react";
+import { BookMarked, Dumbbell, GraduationCap, Home, Mic, Search } from "lucide-react";
 import { cn } from "@/components/ui/cn";
 
-export type TabKey = "home" | "lookup" | "review" | "games" | "test" | "speak";
+export type TabKey = "home" | "lookup" | "review" | "mywords" | "test" | "speak";
 
 const TABS: { key: TabKey; label: string; icon: typeof Home }[] = [
   { key: "home", label: "Học", icon: Home },
   { key: "lookup", label: "Tra từ", icon: Search },
   { key: "speak", label: "Nói", icon: Mic },
   { key: "review", label: "Ôn", icon: Dumbbell },
-  { key: "games", label: "Chơi", icon: Gamepad2 },
+  { key: "mywords", label: "Từ vựng", icon: BookMarked },
   { key: "test", label: "Test", icon: GraduationCap },
 ];
 
