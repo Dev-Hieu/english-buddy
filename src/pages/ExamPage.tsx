@@ -34,6 +34,7 @@ export function ExamPage({ student, level = "all", onBackHome }: ExamPageProps) 
   const [correct, setCorrect] = useState(0);
   const [wrongIds, setWrongIds] = useState<string[]>([]);
   const [finished, setFinished] = useState(false);
+  const [showFeedback, setShowFeedback] = useState(false);
   const startedAt = useRef(Date.now());
 
   const levelName = LEVEL_LABELS[lv as Level] ?? "Tất cả";
@@ -54,22 +55,32 @@ export function ExamPage({ student, level = "all", onBackHome }: ExamPageProps) 
     if (ok) setCorrect((c) => c + 1);
     else setWrongIds((w) => [...w, q.wordId]);
     recordAnswer(student.id, q.wordId, ok).catch(() => {});
-    setTimeout(() => {
-      if (index + 1 >= questions.length) {
-        setFinished(true);
-        const score = Math.round(((ok ? correct + 1 : correct) / questions.length) * 100);
-        submitQuiz({
-          studentId: student.id, topicId: "exam", score,
-          totalQuestions: questions.length, correctAnswers: ok ? correct + 1 : correct,
-          wrongAnswers: questions.length - (ok ? correct + 1 : correct),
-          wrongWordIds: ok ? wrongIds : [...wrongIds, q.wordId],
-          durationSeconds: Math.round((Date.now() - startedAt.current) / 1000), createdAt: Date.now(),
-        }).catch(() => {});
-      } else {
-        setIndex((i) => i + 1);
-        setPicked(null);
-      }
-    }, 700);
+
+    if (ok) {
+      // Đúng: tự chuyển sau 800ms
+      setTimeout(() => advance(), 800);
+    } else {
+      // Sai: hiện feedback, chờ người dùng bấm tiếp
+      setShowFeedback(true);
+    }
+  };
+
+  const advance = () => {
+    if (index + 1 >= questions.length) {
+      setFinished(true);
+      const score = Math.round((correct / questions.length) * 100);
+      submitQuiz({
+        studentId: student.id, topicId: "exam", score,
+        totalQuestions: questions.length, correctAnswers: correct,
+        wrongAnswers: questions.length - correct,
+        wrongWordIds: wrongIds,
+        durationSeconds: Math.round((Date.now() - startedAt.current) / 1000), createdAt: Date.now(),
+      }).catch(() => {});
+    } else {
+      setIndex((i) => i + 1);
+      setPicked(null);
+      setShowFeedback(false);
+    }
   };
 
   if (questions.length === 0) {
@@ -92,7 +103,7 @@ export function ExamPage({ student, level = "all", onBackHome }: ExamPageProps) 
             <span className="text-2xl font-black">{score}%</span>
           </ProgressRing>
           <p className="text-xl font-black">{correct}/{questions.length} câu đúng</p>
-          <p className="font-semibold text-muted-foreground">{score >= 80 ? "Xuất sắc! 🏆" : score >= 50 ? "Khá rồi, ôn thêm nhé 👍" : "Cần ôn lại nhiều hơn 💪"}</p>
+          <p className="font-semibold text-muted-foreground">{score >= 80 ? "Xuất sắc!" : score >= 50 ? "Khá rồi, ôn thêm nhé" : "Cần ôn lại nhiều hơn"}</p>
         </CardContent></Card>
 
         {wrongWords.length ? (
@@ -116,7 +127,7 @@ export function ExamPage({ student, level = "all", onBackHome }: ExamPageProps) 
             </ul>
           </section>
         ) : (
-          <p className="mt-5 text-center font-bold text-success">Không sai câu nào — tuyệt vời! 🎉</p>
+          <p className="mt-5 text-center font-bold text-success">Không sai câu nào — tuyệt vời!</p>
         )}
 
         <Button type="button" size="lg" className="mt-5 w-full" onClick={onBackHome}>Xong</Button>
@@ -130,7 +141,7 @@ export function ExamPage({ student, level = "all", onBackHome }: ExamPageProps) 
       <p className="mb-3 text-center text-sm font-extrabold text-muted-foreground">Câu {index + 1}/{questions.length}</p>
       <Card><CardContent className="space-y-5 p-6">
         <div className="flex items-center justify-center gap-3">
-          <p className="text-center text-xl font-extrabold">{q.question}</p>
+          <p className="text-center text-xl font-extrabold whitespace-pre-line">{q.question}</p>
           {q.type === "listen_choose" ? (
             <Button type="button" size="icon" variant="outline" aria-label="Nghe" onClick={() => speakText(q.answer)}>
               <Volume2 className="h-5 w-5" />
@@ -161,6 +172,29 @@ export function ExamPage({ student, level = "all", onBackHome }: ExamPageProps) 
                 </button>
               );
             })}
+          </div>
+        )}
+
+        {/* Feedback khi trả lời sai */}
+        {showFeedback && picked && picked !== q.answer && (
+          <div className="rounded-2xl border-2 border-red-200 bg-red-50 p-4 dark:border-red-800 dark:bg-red-950/30">
+            <p className="mb-1 text-sm font-extrabold text-red-600 dark:text-red-400">Sai rồi!</p>
+            <p className="text-sm font-bold">
+              Đáp án đúng: <span className="text-success font-extrabold">{q.answer}</span>
+            </p>
+            {q.explanation && (
+              <p className="mt-1 text-sm font-semibold text-muted-foreground">{q.explanation}</p>
+            )}
+            <Button type="button" size="sm" variant="outline" className="mt-3" onClick={() => advance()}>
+              Câu tiếp theo
+            </Button>
+          </div>
+        )}
+
+        {/* Feedback khi trả lời đúng */}
+        {picked && picked === q.answer && (
+          <div className="rounded-2xl border-2 border-green-200 bg-green-50 p-3 dark:border-green-800 dark:bg-green-950/30">
+            <p className="text-sm font-extrabold text-success">Đúng rồi!</p>
           </div>
         )}
       </CardContent></Card>

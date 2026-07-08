@@ -109,6 +109,57 @@ export const B1_GRAMMAR: GrammarTopic[] = [
     ],
   },
   {
+    id: "gr_b1_zero_conditional",
+    level: "b1",
+    title: "Zero Conditional",
+    title_vi: "Câu điều kiện loại 0",
+    summary_vi:
+      "Diễn tả sự thật chung, quy luật tự nhiên hoặc kết quả luôn đúng khi điều kiện xảy ra. Cấu trúc: If + hiện tại đơn, hiện tại đơn.",
+    sections: [
+      {
+        heading: "Cấu trúc",
+        points: [
+          "If + S + V (hiện tại đơn), S + V (hiện tại đơn).",
+          "Cả hai mệnh đề đều dùng thì hiện tại đơn.",
+          "Có thể thay 'if' bằng 'when' mà nghĩa không đổi: When you heat water to 100°C, it boils.",
+        ],
+      },
+      {
+        heading: "Cách dùng",
+        points: [
+          "Sự thật khoa học/quy luật tự nhiên: If you heat ice, it melts. — Nếu bạn đun nóng đá, nó tan.",
+          "Sự thật chung luôn đúng: If you mix red and blue, you get purple. — Nếu bạn pha đỏ và xanh, bạn được màu tím.",
+          "Quy tắc/hướng dẫn: If the alarm rings, leave the building. — Nếu chuông báo reo, hãy rời tòa nhà.",
+        ],
+      },
+      {
+        heading: "💡 Mẹo ghi nhớ",
+        points: [
+          "💡 Phân biệt với loại 1: Loại 0 = sự thật luôn đúng (100%); Loại 1 = khả năng có thể xảy ra ở tương lai.",
+          "💡 Loại 0 dùng hiện tại đơn ở CẢ HAI mệnh đề; Loại 1 dùng hiện tại đơn ở mệnh đề if, will ở mệnh đề chính.",
+        ],
+      },
+    ],
+    points: [
+      "If you heat water, it boils. — Nếu bạn đun nước, nó sôi. (sự thật khoa học)",
+      "If you mix red and blue, you get purple. — Nếu pha đỏ và xanh, được màu tím.",
+      "Cả hai mệnh đề dùng thì hiện tại đơn.",
+      "Có thể thay 'if' bằng 'when' mà nghĩa không đổi.",
+    ],
+    exercises: [
+      { id: "e1", type: "choice", question: "If you heat ice, it ___.", options: ["melts", "will melt", "melted"], answer: "melts", explain_vi: "Sự thật khoa học → cả hai mệnh đề dùng hiện tại đơn: melts." },
+      { id: "e2", type: "choice", question: "If you ___ water to 100°C, it boils.", options: ["heat", "will heat", "heated"], answer: "heat", explain_vi: "Mệnh đề if trong điều kiện loại 0 dùng hiện tại đơn: heat." },
+      { id: "e3", type: "fill", question: "If you mix yellow and blue, you ___ (get) green.", answer: "get", explain_vi: "Sự thật chung → hiện tại đơn: get." },
+      { id: "e4", type: "fill", question: "If it ___ (rain), the grass gets wet.", answer: "rains", explain_vi: "Mệnh đề if dùng hiện tại đơn; it → rains (thêm -s)." },
+      { id: "e5", type: "reorder", question: "Sắp xếp các từ thành câu đúng:", options: ["If", "you", "press", "this button,", "the door opens"], answer: "If you press this button, the door opens", explain_vi: "Cả hai mệnh đề dùng hiện tại đơn (sự thật/hướng dẫn)." },
+      { id: "e6", type: "choice", question: "If plants don't get water, they ___.", options: ["die", "will die", "died"], answer: "die", explain_vi: "Sự thật chung → hiện tại đơn ở cả hai mệnh đề." },
+      { id: "e7", type: "fill", question: "When you ___ (touch) fire, you get burned.", answer: "touch", explain_vi: "When = If trong điều kiện loại 0; hiện tại đơn: touch." },
+      { id: "e8", type: "choice", question: "If iron gets wet, it ___.", options: ["rusts", "will rust", "rusted"], answer: "rusts", explain_vi: "Quy luật tự nhiên → hiện tại đơn: rusts." },
+      { id: "e9", type: "reorder", question: "Sắp xếp các từ thành câu đúng:", options: ["If", "you", "freeze", "water,", "it", "becomes", "ice"], answer: "If you freeze water, it becomes ice", explain_vi: "Sự thật khoa học: nước đóng băng khi bị đông lạnh." },
+      { id: "e10", type: "fill", question: "If the sun ___ (set), it gets dark.", answer: "sets", explain_vi: "Sự thật tự nhiên → hiện tại đơn; the sun → sets (ngôi 3 số ít)." },
+    ],
+  },
+  {
     id: "gr_b1_first_conditional",
     level: "b1",
     title: "First Conditional",

@@ -169,6 +169,158 @@ const LISTENING_STORIES: StoryItem[] = [
       { question: "What does the speaker say about the future?", options: ["Nothing will change", "Education will keep evolving", "Schools will close", "Online learning will disappear"], answer: 1 },
     ],
   },
+  // ─── A1 (more) ───
+  {
+    id: "ls13", title: "At the Zoo", titleVi: "Ở sở thú", level: "a1",
+    text: "Today I'm at the zoo with my class. I can see elephants, lions, and monkeys. The monkeys are very funny. They're jumping and eating bananas. My favorite animal's the giraffe. It's so tall! I'm taking photos with my phone. I'm having a great time.",
+    questions: [
+      { question: "Who's at the zoo with the speaker?", options: ["Family", "Friends", "Class", "Teacher only"], answer: 2 },
+      { question: "What are the monkeys doing?", options: ["Sleeping", "Jumping and eating bananas", "Swimming", "Fighting"], answer: 1 },
+      { question: "What's the speaker's favorite animal?", options: ["Elephant", "Lion", "Monkey", "Giraffe"], answer: 3 },
+    ],
+  },
+  {
+    id: "ls14", title: "My Toys", titleVi: "Đồ chơi của tôi", level: "a1",
+    text: "I've got many toys in my room. I've got a red car, a teddy bear, and some blocks. My teddy bear's name is Coco. He's soft and brown. I play with my blocks every day. I build houses and towers. My favorite toy's the red car.",
+    questions: [
+      { question: "What's the teddy bear's name?", options: ["Teddy", "Coco", "Bear", "Max"], answer: 1 },
+      { question: "What does the speaker build with blocks?", options: ["Animals", "Houses and towers", "Cars", "Robots"], answer: 1 },
+      { question: "What's the speaker's favorite toy?", options: ["Teddy bear", "Blocks", "Red car", "Ball"], answer: 2 },
+    ],
+  },
+  {
+    id: "ls15", title: "Lunchtime", titleVi: "Giờ ăn trưa", level: "a1",
+    text: "It's twelve o'clock. It's lunchtime! I'm hungry. Today I'm eating rice and chicken. I'm also having some soup. My friend Tom's eating noodles. We sit together at a big table. After lunch we play in the yard.",
+    questions: [
+      { question: "What time is it?", options: ["Eleven", "Twelve", "One", "Two"], answer: 1 },
+      { question: "What's the speaker eating?", options: ["Noodles", "Pizza", "Rice and chicken", "Sandwiches"], answer: 2 },
+      { question: "What does Tom eat?", options: ["Rice", "Soup", "Bread", "Noodles"], answer: 3 },
+    ],
+  },
+  // ─── A2 (more) ───
+  {
+    id: "ls16", title: "Visiting Grandparents", titleVi: "Thăm ông bà", level: "a2",
+    text: "Last weekend my family drove to my grandparents' house in the countryside. It took about two hours to get there. Grandma made us a big lunch with lots of dishes. After eating we went for a walk near the river. Grandpa showed me how to catch fish but I didn't catch any. In the evening we sat around the fire and grandma told us old stories. I always love visiting them.",
+    questions: [
+      { question: "Where do the grandparents live?", options: ["In the city", "In the countryside", "Near the beach", "In another country"], answer: 1 },
+      { question: "How long did the drive take?", options: ["One hour", "About two hours", "Three hours", "Thirty minutes"], answer: 1 },
+      { question: "Did the speaker catch any fish?", options: ["Yes, many", "Yes, one", "No", "The story doesn't say"], answer: 2 },
+      { question: "What did grandma do in the evening?", options: ["Cooked dinner", "Told old stories", "Watched TV", "Went to bed early"], answer: 1 },
+    ],
+  },
+  {
+    id: "ls17", title: "School Sports Day", titleVi: "Ngày hội thể thao", level: "a2",
+    text: "Yesterday was sports day at our school. All the students were really excited. I entered the running race and the long jump. I came second in the running race and got a silver medal. My best friend Lily won the long jump. She was so happy she cried. After the competitions we had ice cream and took photos together. It was the best day of the year.",
+    questions: [
+      { question: "What events did the speaker enter?", options: ["Swimming and running", "Running and long jump", "Football and running", "Long jump and swimming"], answer: 1 },
+      { question: "What medal did the speaker get?", options: ["Gold", "Silver", "Bronze", "No medal"], answer: 1 },
+      { question: "Who won the long jump?", options: ["The speaker", "The teacher", "Lily", "Tom"], answer: 2 },
+      { question: "What did they eat after the competitions?", options: ["Cake", "Pizza", "Ice cream", "Candy"], answer: 2 },
+    ],
+  },
+  {
+    id: "ls18", title: "My Birthday Party", titleVi: "Tiệc sinh nhật", level: "a2",
+    text: "Last Saturday was my tenth birthday. My parents organized a party at home. They decorated the living room with balloons and ribbons. Eight friends came to my party. We played games, danced, and sang karaoke. Mom made a chocolate cake with ten candles. I blew out all the candles and made a wish. My friends gave me great presents. I got books, a puzzle, and a new backpack. It was the happiest day of my life.",
+    questions: [
+      { question: "How old did the speaker turn?", options: ["Eight", "Nine", "Ten", "Eleven"], answer: 2 },
+      { question: "Where was the party?", options: ["At school", "At a restaurant", "At a park", "At home"], answer: 3 },
+      { question: "What kind of cake did Mom make?", options: ["Vanilla", "Strawberry", "Chocolate", "Lemon"], answer: 2 },
+      { question: "How many friends came?", options: ["Six", "Seven", "Eight", "Ten"], answer: 2 },
+    ],
+  },
+  // ─── B1 (more) ───
+  {
+    id: "ls19", title: "The Job Interview", titleVi: "Buổi phỏng vấn việc làm", level: "b1",
+    text: "I had my first job interview yesterday and I was incredibly nervous. I'd applied for a position at a marketing company downtown. I spent the whole morning picking the right outfit and practicing answers in front of the mirror. When I got there the interviewer was a friendly woman named Sarah. She asked me about my experience and why I wanted to work there. I told her I'd done some freelance projects in college and that I'm passionate about creative work. The interview lasted about forty minutes. At the end Sarah smiled and said they'd let me know by Friday. I'm keeping my fingers crossed.",
+    questions: [
+      { question: "What kind of company was the interview at?", options: ["A tech company", "A marketing company", "A bank", "A hospital"], answer: 1 },
+      { question: "How did the speaker prepare?", options: ["Read a book", "Practiced answers in the mirror", "Called a friend", "Did nothing"], answer: 1 },
+      { question: "How long did the interview last?", options: ["Twenty minutes", "Thirty minutes", "About forty minutes", "One hour"], answer: 2 },
+      { question: "When will they hear back?", options: ["Tomorrow", "Next week", "By Friday", "In a month"], answer: 2 },
+    ],
+  },
+  {
+    id: "ls20", title: "Travel Plans", titleVi: "Kế hoạch du lịch", level: "b1",
+    text: "My friend and I are planning a trip to Japan next spring. We've been saving money for about six months now. We want to visit Tokyo, Kyoto, and Osaka. I've heard that spring is the best time to go because of the cherry blossoms. We're going to stay in hostels to save money and try as much local food as possible. My friend's really into history, so she wants to visit old temples and castles. I'm more interested in trying street food and shopping. We'll be there for ten days, which should be enough to see a lot. I can't wait to go.",
+    questions: [
+      { question: "When are they planning to go?", options: ["This summer", "Next winter", "Next spring", "This autumn"], answer: 2 },
+      { question: "How long have they been saving money?", options: ["Three months", "About six months", "A year", "Two months"], answer: 1 },
+      { question: "What's the friend most interested in?", options: ["Shopping", "Street food", "History", "Nature"], answer: 2 },
+      { question: "How long will they stay in Japan?", options: ["One week", "Ten days", "Two weeks", "Three weeks"], answer: 1 },
+    ],
+  },
+  {
+    id: "ls21", title: "Environmental Problems", titleVi: "Vấn đề môi trường", level: "b1",
+    text: "Our teacher gave us a talk about environmental problems today and it really made me think. She said that air pollution's getting worse in many cities because of cars and factories. She also mentioned that forests are being cut down at an alarming rate, which affects animals and the climate. One thing that surprised me was that even small actions like using reusable bags and turning off lights can help. After the talk our class decided to start a recycling project at school. We're going to put recycling bins in every classroom. I think if everyone does a little bit we can make a big difference.",
+    questions: [
+      { question: "What causes air pollution according to the teacher?", options: ["Animals", "Cars and factories", "Recycling", "Farming"], answer: 1 },
+      { question: "What surprised the speaker?", options: ["How bad things are", "That small actions can help", "That forests are growing", "That pollution is decreasing"], answer: 1 },
+      { question: "What did the class decide to do?", options: ["Plant trees", "Start a recycling project", "Write letters", "Stop using electricity"], answer: 1 },
+      { question: "Where will they put recycling bins?", options: ["In the cafeteria", "Outside the school", "In every classroom", "In the hallway"], answer: 2 },
+    ],
+  },
+  // ─── B2 (more) ───
+  {
+    id: "ls22", title: "Artificial Intelligence", titleVi: "Trí tuệ nhân tạo", level: "b2",
+    text: "Artificial intelligence has been making headlines everywhere lately, and it's something that affects all of us whether we realize it or not. AI's already being used in things like voice assistants, recommendation algorithms, and even medical diagnosis. Some people are excited about the possibilities because AI could solve problems that humans can't handle on their own, like predicting natural disasters or developing new medicines. But others are worried about job losses. If machines can do tasks faster and cheaper, what happens to the people who used to do those jobs? There's also the question of privacy since AI systems often need massive amounts of personal data to function properly. I think the key is finding a balance. We should embrace the technology but also put regulations in place to make sure it's used responsibly and ethically.",
+    questions: [
+      { question: "Which of these is NOT mentioned as a current use of AI?", options: ["Voice assistants", "Medical diagnosis", "Self-driving planes", "Recommendation algorithms"], answer: 2 },
+      { question: "What worry do some people have about AI?", options: ["It's too expensive", "It could cause job losses", "It's too slow", "It uses too much electricity"], answer: 1 },
+      { question: "What does AI need to function properly?", options: ["More computers", "Massive amounts of personal data", "Better internet", "More programmers"], answer: 1 },
+      { question: "What does the speaker think we should do?", options: ["Ban AI completely", "Use AI without limits", "Embrace it with proper regulations", "Wait and see what happens"], answer: 2 },
+    ],
+  },
+  {
+    id: "ls23", title: "Culture Shock", titleVi: "Sốc văn hóa", level: "b2",
+    text: "When I first moved abroad for university I experienced what people call culture shock. Everything felt strange and overwhelming. The food was different, people's sense of humor was different, and even simple things like greeting someone felt awkward. Back home we'd always greet people with a hug, but here everyone just shook hands or waved. I remember feeling really lonely during the first few weeks. I couldn't understand local slang and I'd often misread social situations. But gradually things started to change. I joined a student club and met people from all over the world. They were going through the same thing, which made me feel less alone. After about three months I finally started feeling comfortable. Now I can look back and say that the experience actually made me a much more open minded and adaptable person.",
+    questions: [
+      { question: "Why did the speaker move abroad?", options: ["For work", "For university", "For family", "For travel"], answer: 1 },
+      { question: "What was different about greetings?", options: ["People didn't greet at all", "People hugged instead of waving", "People shook hands instead of hugging", "People bowed"], answer: 2 },
+      { question: "How did the speaker start feeling better?", options: ["Called home every day", "Joined a student club", "Changed universities", "Moved to a different city"], answer: 1 },
+      { question: "How long did it take to feel comfortable?", options: ["One week", "One month", "About three months", "A full year"], answer: 2 },
+    ],
+  },
+  {
+    id: "ls24", title: "Work-Life Balance", titleVi: "Cân bằng công việc và cuộc sống", level: "b2",
+    text: "A lot of people talk about work life balance, but honestly it's one of the hardest things to achieve in modern life. When I first started my career I was working twelve hour days and checking emails even on weekends. I thought that's what it took to be successful. But after about two years I was completely burned out. I couldn't sleep properly, I'd lost touch with most of my friends, and I felt exhausted all the time. That's when I decided to make some changes. I started setting strict boundaries. No work emails after seven PM, no laptops on Sundays, and at least thirty minutes of exercise every day. It wasn't easy at first because I felt guilty about not working. But over time I realized that taking breaks actually made me more productive. My boss even noticed that my work improved. The lesson I've learned is that taking care of yourself isn't selfish. It's necessary.",
+    questions: [
+      { question: "How long did the speaker work each day at first?", options: ["Eight hours", "Ten hours", "Twelve hours", "Fourteen hours"], answer: 2 },
+      { question: "What happened after two years?", options: ["Got promoted", "Got burned out", "Changed jobs", "Started a business"], answer: 1 },
+      { question: "What's one boundary the speaker set?", options: ["No phone calls", "No work emails after 7 PM", "No meetings", "No overtime pay"], answer: 1 },
+      { question: "What was the result of taking breaks?", options: ["Got fired", "Nothing changed", "Became more productive", "Lost clients"], answer: 2 },
+    ],
+  },
+  // ─── C1 ───
+  {
+    id: "ls25", title: "The Globalization Debate", titleVi: "Tranh luận về toàn cầu hóa", level: "c1",
+    text: "Globalization's one of the most fiercely debated topics in economics and politics today. Proponents argue that it's lifted millions of people out of poverty by opening up markets and creating jobs in developing countries. They point to nations like South Korea and Vietnam, which have experienced remarkable economic growth largely thanks to international trade. However, critics contend that globalization has widened the gap between rich and poor within countries. While multinational corporations and their shareholders have prospered enormously, many workers in both developed and developing nations have seen their wages stagnate or their jobs disappear altogether. There's also a cultural dimension that's often overlooked. As global brands and Western media dominate, local traditions and languages are being eroded. Some scholars refer to this as cultural homogenization. The reality is that globalization isn't inherently good or bad. Its impact depends entirely on the policies governments put in place to manage it. Without proper regulation and social safety nets the benefits will continue to be unevenly distributed.",
+    questions: [
+      { question: "What do proponents say globalization has done?", options: ["Increased poverty", "Lifted millions out of poverty", "Destroyed all local businesses", "Had no real impact"], answer: 1 },
+      { question: "What's the cultural concern about globalization?", options: ["Too many languages", "Local traditions being eroded", "People traveling too much", "Music becoming too diverse"], answer: 1 },
+      { question: "What does the speaker say determines globalization's impact?", options: ["The size of the economy", "Government policies", "The number of corporations", "International agreements alone"], answer: 1 },
+      { question: "What term do scholars use for the cultural effect?", options: ["Cultural revolution", "Cultural homogenization", "Cultural exchange", "Cultural diversity"], answer: 1 },
+    ],
+  },
+  {
+    id: "ls26", title: "A Scientific Discovery", titleVi: "Một khám phá khoa học", level: "c1",
+    text: "Last year a team of researchers at a university in Switzerland made what many consider a groundbreaking discovery in the field of neuroscience. They identified a previously unknown mechanism by which the brain consolidates memories during sleep. It'd long been established that sleep plays a crucial role in memory formation, but the precise biological processes involved remained largely a mystery. What the team found was that during deep sleep specific neurons fire in synchronized patterns that essentially replay the day's experiences at an accelerated rate. This replay strengthens the neural connections associated with important memories while allowing less significant ones to fade. The implications of this research are far reaching. It could lead to new treatments for conditions like Alzheimer's disease and PTSD, where memory processing is severely disrupted. It also raises fascinating questions about the nature of consciousness itself. If our brains are essentially editing and curating our experiences while we sleep, to what extent are our memories truly accurate representations of what actually happened?",
+    questions: [
+      { question: "Where was the research conducted?", options: ["In the United States", "In Japan", "In Switzerland", "In the United Kingdom"], answer: 2 },
+      { question: "What happens during deep sleep according to the discovery?", options: ["The brain shuts down completely", "Neurons replay experiences in synchronized patterns", "New memories are deleted", "The brain stops forming connections"], answer: 1 },
+      { question: "Which conditions could benefit from this research?", options: ["Heart disease and diabetes", "Alzheimer's and PTSD", "Asthma and allergies", "Depression and anxiety only"], answer: 1 },
+      { question: "What philosophical question does the research raise?", options: ["Why we dream", "Whether memories are truly accurate", "How long we should sleep", "Whether sleep is necessary"], answer: 1 },
+    ],
+  },
+  {
+    id: "ls27", title: "Political Systems", titleVi: "Hệ thống chính trị", level: "c1",
+    text: "When we compare political systems around the world it becomes clear that there's no one size fits all model for governance. Democracies, for instance, are often held up as the gold standard because they give citizens a voice through elections and protect individual rights. But even within democracies there's enormous variation. The presidential system used in the United States operates very differently from the parliamentary systems found in countries like the UK or Germany. Each has its own strengths and weaknesses. Presidential systems provide a clear separation of powers but can lead to gridlock when the executive and legislature disagree. Parliamentary systems tend to be more flexible but can sometimes result in unstable coalition governments. Then there are hybrid systems that try to combine elements of both. Beyond these democratic models there are also authoritarian regimes that prioritize stability and economic development over individual freedoms. Proponents of such systems argue they can make faster decisions without the inefficiencies of democratic debate. Critics counter that without accountability and transparency these systems inevitably become corrupt and oppressive. Ultimately the effectiveness of any political system depends not just on its structure but on the institutions, culture, and civic engagement that support it.",
+    questions: [
+      { question: "What's a weakness of presidential systems according to the speaker?", options: ["Too many elections", "Can lead to gridlock", "Too much power for parliament", "Lack of a constitution"], answer: 1 },
+      { question: "What can be a problem with parliamentary systems?", options: ["No elections", "Too much military power", "Unstable coalition governments", "No separation of powers at all"], answer: 2 },
+      { question: "What do proponents of authoritarian systems claim?", options: ["They're more democratic", "They can make faster decisions", "They have better elections", "They protect individual rights better"], answer: 1 },
+      { question: "What does the speaker say determines a system's effectiveness?", options: ["Only its structure", "Only its leaders", "Structure, institutions, culture, and civic engagement", "Economic power alone"], answer: 2 },
+    ],
+  },
 ];
 
 export function ListeningPage({ student, onBackHome }: Props) {

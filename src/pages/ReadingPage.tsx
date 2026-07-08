@@ -8,9 +8,9 @@ import { cn } from "@/components/ui/cn";
 
 interface Props { student: Student; onBackHome: () => void; }
 
-type CEFRLevel = "A1" | "A2" | "B1" | "B2" | "C1";
+type CEFRLevel = "A1" | "A2" | "B1" | "B2" | "C1" | "C2";
 
-const LEVELS: CEFRLevel[] = ["A1", "A2", "B1", "B2", "C1"];
+const LEVELS: CEFRLevel[] = ["A1", "A2", "B1", "B2", "C1", "C2"];
 
 /* ------------------------------------------------------------------ */
 /*  Mini dictionary for word tap                                      */
@@ -87,6 +87,81 @@ const MINI_DICT: Record<string, string> = {
   ultimately: "cuối cùng", decade: "thập kỷ", professional: "chuyên nghiệp",
   teeth: "răng",
   brush: "đánh (răng)/chải", uniform: "đồng phục", wear: "mặc",
+  // pets, playground, birthday
+  pet: "thú cưng", pets: "thú cưng", tail: "đuôi", wag: "vẫy", bark: "sủa",
+  bone: "xương", toy: "đồ chơi", toys: "đồ chơi", slide: "cầu trượt", swing: "xích đu",
+  swings: "xích đu", climb: "trèo", ladder: "thang", fast: "nhanh", turn: "lượt/quay",
+  birthday: "sinh nhật", party: "bữa tiệc", cake: "bánh kem", candle: "nến",
+  candles: "nến", balloon: "bong bóng", balloons: "bong bóng", present: "quà tặng",
+  presents: "quà tặng", gift: "quà", gifts: "quà", blow: "thổi", wish: "ước",
+  sang: "đã hát",
+  // sports, cooking, library
+  race: "cuộc đua", team: "đội", win: "thắng", won: "đã thắng", prize: "giải thưởng",
+  proud: "tự hào", cheer: "cổ vũ", cheered: "đã cổ vũ", medal: "huy chương",
+  sport: "thể thao", sports: "thể thao", score: "điểm số", competition: "cuộc thi",
+  cook: "nấu ăn", cooking: "nấu ăn", recipe: "công thức", ingredient: "nguyên liệu",
+  ingredients: "nguyên liệu", mix: "trộn", stir: "khuấy", oven: "lò nướng",
+  flour: "bột mì", sugar: "đường", butter: "bơ", bowl: "tô/bát", pour: "đổ",
+  smell: "mùi/ngửi", taste: "vị/nếm", bake: "nướng",
+  library: "thư viện", borrow: "mượn", shelf: "kệ sách", shelves: "kệ sách",
+  librarian: "thủ thư", silence: "sự im lặng",
+  adventure: "phiêu lưu", imagine: "tưởng tượng",
+  // first job, social media, healthy eating, volunteering
+  job: "công việc", interview: "phỏng vấn", nervous: "lo lắng", manager: "quản lý",
+  customer: "khách hàng", customers: "khách hàng", wage: "lương", earn: "kiếm được",
+  responsibility: "trách nhiệm", confidence: "sự tự tin", shift: "ca làm việc",
+  experience: "kinh nghiệm", colleagues: "đồng nghiệp",
+  followers: "người theo dõi", profile: "hồ sơ", post: "bài đăng", posts: "bài đăng",
+  notification: "thông báo", notifications: "thông báo", comparison: "sự so sánh",
+  pressure: "áp lực", reality: "thực tế", mindful: "chánh niệm",
+  diet: "chế độ ăn", nutrition: "dinh dưỡng", protein: "chất đạm",
+  vitamin: "vitamin", vitamins: "vitamin", mineral: "khoáng chất", minerals: "khoáng chất",
+  processed: "chế biến sẵn", organic: "hữu cơ", portion: "phần ăn",
+  habit: "thói quen", habits: "thói quen", lifestyle: "lối sống",
+  volunteer: "tình nguyện", volunteering: "tình nguyện", community: "cộng đồng",
+  donate: "quyên góp", donation: "sự quyên góp", shelter: "nơi trú ẩn",
+  elderly: "người cao tuổi", impact: "tác động", grateful: "biết ơn",
+  purpose: "mục đích", meaningful: "có ý nghĩa",
+  // B2 topics
+  artificial: "nhân tạo", intelligence: "trí tuệ", algorithm: "thuật toán",
+  algorithms: "thuật toán", automation: "tự động hóa", bias: "thiên kiến",
+  ethical: "đạo đức", ethics: "đạo đức học", dataset: "tập dữ liệu",
+  prediction: "dự đoán", efficiency: "hiệu quả", displacement: "sự thay thế",
+  climate: "khí hậu", emission: "khí thải", emissions: "khí thải",
+  carbon: "carbon", renewable: "tái tạo", fossil: "hóa thạch", fuel: "nhiên liệu",
+  drought: "hạn hán", flood: "lũ lụt", glacier: "sông băng",
+  sustainable: "bền vững", sustainability: "sự bền vững",
+  exploration: "sự khám phá", orbit: "quỹ đạo", satellite: "vệ tinh",
+  spacecraft: "tàu vũ trụ", astronaut: "phi hành gia", colony: "thuộc địa/khu định cư",
+  colonize: "khai hoang", radiation: "bức xạ", gravity: "trọng lực",
+  mars: "sao Hỏa", frontier: "biên giới",
+  cultural: "văn hóa", customs: "phong tục", norm: "chuẩn mực", norms: "chuẩn mực",
+  diversity: "sự đa dạng", stereotype: "khuôn mẫu", stereotypes: "khuôn mẫu",
+  tolerance: "sự khoan dung", perspective: "góc nhìn", perspectives: "góc nhìn",
+  assimilation: "sự đồng hóa", identity: "bản sắc",
+  // C1 topics
+  philosophy: "triết học", happiness: "hạnh phúc", fulfillment: "sự viên mãn",
+  hedonic: "khoái lạc", eudaimonic: "hạnh phúc thực sự", pursuit: "sự theo đuổi",
+  paradox: "nghịch lý", gratitude: "lòng biết ơn", materialism: "chủ nghĩa vật chất",
+  contentment: "sự mãn nguyện", wellbeing: "sự an lạc",
+  privacy: "quyền riêng tư", surveillance: "giám sát", encryption: "mã hóa",
+  data: "dữ liệu", consent: "sự đồng ý", breach: "vi phạm",
+  transparency: "sự minh bạch", anonymous: "ẩn danh", tracking: "theo dõi",
+  regulation: "quy định", regulations: "quy định",
+  inequality: "bất bình đẳng", wealth: "sự giàu có", poverty: "nghèo đói",
+  redistribution: "tái phân phối", mobility: "sự dịch chuyển",
+  taxation: "thuế", progressive: "lũy tiến", disparity: "sự chênh lệch",
+  systemic: "mang tính hệ thống", meritocracy: "chế độ nhân tài",
+  // C2 topics
+  consciousness: "ý thức", qualia: "cảm thụ chủ quan", sentience: "tri giác",
+  dualism: "nhị nguyên luận", materialism_phil: "chủ nghĩa duy vật",
+  phenomenal: "hiện tượng", neural: "thần kinh", correlate: "tương quan",
+  subjective: "chủ quan", emergent: "nổi lên/nảy sinh", introspection: "nội quan",
+  linguistic: "ngôn ngữ học", relativity: "thuyết tương đối",
+  cognition: "nhận thức", perception: "tri giác", conceptual: "khái niệm",
+  morphology: "hình thái học", syntax: "cú pháp", semantics: "ngữ nghĩa học",
+  determinism: "thuyết tất định", hypothesis: "giả thuyết",
+  sapir: "Sapir", whorf: "Whorf", lexicon: "từ vựng",
 };
 
 /* ------------------------------------------------------------------ */
@@ -237,6 +312,235 @@ const STORIES: Story[] = [
       { question: "What does the word 'drawbacks' most likely mean in context?", options: ["Benefits", "Features", "Disadvantages", "Requirements"], answer: 2 },
       { question: "Why are many companies adopting hybrid arrangements?", options: ["To reduce employee salaries", "To balance productivity with collaboration", "To eliminate remote work entirely", "To comply with government regulations"], answer: 1 },
       { question: "What is the author's conclusion about the traditional office week?", options: ["It will return soon", "It is the most productive model", "It is unlikely to be the default again", "It should be legally required"], answer: 2 },
+    ],
+  },
+  // ─── A1 (pets, playground, birthday party) ───
+  {
+    id: "a1-5", title: "My Dog Max", level: "A1", wordCount: 45,
+    description: "A child talks about their pet dog.",
+    text: "I have a dog. His name is Max. He is brown and white. Max has a long tail. He likes to run in the park. He eats bones and drinks water. When I come home, Max is very happy. He wags his tail fast. I love Max very much.",
+    questions: [
+      { question: "What color is Max?", options: ["Black and white", "Brown and white", "All brown", "All white"], answer: 1 },
+      { question: "What does Max like to do in the park?", options: ["Sleep", "Swim", "Run", "Eat"], answer: 2 },
+      { question: "What does Max do when the child comes home?", options: ["He barks", "He sleeps", "He wags his tail", "He runs away"], answer: 2 },
+    ],
+  },
+  {
+    id: "a1-6", title: "The Playground", level: "A1", wordCount: 46,
+    description: "A child describes playing at the playground.",
+    text: "I go to the playground after school. There is a big slide and two swings. I like the slide the most. I climb the ladder and go down fast. My friend likes the swings. We take turns and play together. The playground is fun. We play there every day.",
+    questions: [
+      { question: "When does the child go to the playground?", options: ["Before school", "After school", "At night", "In the morning"], answer: 1 },
+      { question: "What does the child like the most?", options: ["The swings", "The slide", "The ladder", "The sandbox"], answer: 1 },
+      { question: "How often do they play there?", options: ["Once a week", "Sometimes", "Every day", "Never"], answer: 2 },
+    ],
+  },
+  {
+    id: "a1-7", title: "My Birthday Party", level: "A1", wordCount: 48,
+    description: "A child describes their birthday party.",
+    text: "Today is my birthday. I am seven years old. My mother makes a big cake. It has seven candles. My friends come to my house. We have balloons and presents. I blow the candles and make a wish. We eat cake and play games. It is the best day!",
+    questions: [
+      { question: "How old is the child?", options: ["Five", "Six", "Seven", "Eight"], answer: 2 },
+      { question: "Who makes the cake?", options: ["The father", "The grandmother", "A friend", "The mother"], answer: 3 },
+      { question: "What does the child do with the candles?", options: ["Lights them", "Counts them", "Blows them", "Buys them"], answer: 2 },
+    ],
+  },
+  // ─── A2 (sports day, cooking, birthday gift, library) ───
+  {
+    id: "a2-4", title: "Sports Day", level: "A2", wordCount: 72,
+    description: "A student talks about their school sports day.",
+    text: "Last Friday was sports day at our school. All the students were very excited. There were many competitions like running, jumping, and swimming. I was on the blue team. My best friend Tom was on the red team. I ran in the short race and came in second place. Tom won the long race and got a gold medal. Our teacher was very proud of everyone. At the end of the day, the red team won, but we all had a great time. My mother cheered for me from the side.",
+    questions: [
+      { question: "When was sports day?", options: ["Last Monday", "Last Wednesday", "Last Friday", "Last Sunday"], answer: 2 },
+      { question: "What team was the child on?", options: ["Red team", "Blue team", "Green team", "Yellow team"], answer: 1 },
+      { question: "What place did the child get in the short race?", options: ["First", "Second", "Third", "Fourth"], answer: 1 },
+      { question: "Who won the long race?", options: ["The child", "Tom", "The teacher", "Nobody"], answer: 1 },
+    ],
+  },
+  {
+    id: "a2-5", title: "Cooking with Mom", level: "A2", wordCount: 75,
+    description: "A child helps their mother bake a cake.",
+    text: "Yesterday, I helped my mother make a chocolate cake. First, we put flour, sugar, and butter in a big bowl. Then I mixed everything together. My mother added eggs and milk. I stirred the mixture until it was smooth. We poured it into a round pan and put it in the oven. We waited for thirty minutes. When the cake was ready, it smelled delicious. We put chocolate on top. I tasted a small piece. It was the best cake I have ever eaten! I want to cook with my mother again.",
+    questions: [
+      { question: "What kind of cake did they make?", options: ["Vanilla", "Strawberry", "Chocolate", "Banana"], answer: 2 },
+      { question: "What did the child do with the ingredients?", options: ["Ate them", "Mixed them", "Threw them away", "Bought them"], answer: 1 },
+      { question: "How long did they wait?", options: ["Ten minutes", "Twenty minutes", "Thirty minutes", "One hour"], answer: 2 },
+      { question: "How did the cake taste?", options: ["Bad", "Strange", "Okay", "The best ever"], answer: 3 },
+    ],
+  },
+  {
+    id: "a2-6", title: "The Birthday Gift", level: "A2", wordCount: 71,
+    description: "A child picks a birthday gift for a friend.",
+    text: "Next week is my friend Lisa's birthday. I want to buy her a nice present. Lisa loves reading books and drawing pictures. On Saturday, my father took me to the shopping center. I looked at many things in the shops. I found a beautiful set of colored pencils and a book about animals. I think Lisa will love these gifts. I also bought a card and wrote a message inside. I cannot wait to see Lisa open her presents. I hope she has a wonderful birthday.",
+    questions: [
+      { question: "What does Lisa like doing?", options: ["Cooking and singing", "Reading and drawing", "Swimming and running", "Dancing and playing"], answer: 1 },
+      { question: "Who took the child to the shopping center?", options: ["The mother", "A friend", "The father", "The teacher"], answer: 2 },
+      { question: "What did the child buy for Lisa?", options: ["A toy and a game", "A dress and shoes", "Colored pencils and a book", "A cake and balloons"], answer: 2 },
+    ],
+  },
+  {
+    id: "a2-7", title: "At the Library", level: "A2", wordCount: 73,
+    description: "A child visits the local library.",
+    text: "Every Saturday morning, I go to the library with my older sister. The library is a big, quiet building near our school. Inside, there are many shelves full of books. I like to sit in the children's corner and read adventure stories. My sister prefers books about science. The librarian is a kind woman who always helps us find good books. We can borrow three books each time. I usually finish my books in one week. Reading takes me to different worlds. I love the library because it is a special place full of imagination.",
+    questions: [
+      { question: "When does the child go to the library?", options: ["Every Sunday", "Every Saturday morning", "After school", "Once a month"], answer: 1 },
+      { question: "What kind of books does the child like?", options: ["Science books", "Adventure stories", "Cooking books", "History books"], answer: 1 },
+      { question: "How many books can they borrow each time?", options: ["One", "Two", "Three", "Five"], answer: 2 },
+      { question: "What kind of books does the sister prefer?", options: ["Adventure", "Art", "Science", "Music"], answer: 2 },
+    ],
+  },
+  // ─── B1 (first job, social media, healthy eating, volunteering) ───
+  {
+    id: "b1-3", title: "My First Job", level: "B1", wordCount: 138,
+    description: "A teenager describes the experience of their first part-time job.",
+    text: "When I turned sixteen, I decided to look for a part-time job. After applying to several places, I got an interview at a small coffee shop near my house. I was very nervous, but the manager was friendly and asked simple questions about why I wanted to work there. A few days later, I received a phone call saying I got the job. My first day was exciting but also stressful. I had to learn how to make different drinks, take orders, and talk to customers politely. In the beginning, I made some mistakes, but my colleagues were patient and helped me improve. After a few weeks, I started to feel more confident. The best part of the job was earning my own money for the first time. I saved most of my wages to buy a new bicycle. Having a job also taught me important skills like time management, responsibility, and how to work as part of a team.",
+    questions: [
+      { question: "How old was the writer when they started looking for a job?", options: ["Fourteen", "Fifteen", "Sixteen", "Seventeen"], answer: 2 },
+      { question: "Where did they get a job?", options: ["A restaurant", "A bookshop", "A coffee shop", "A supermarket"], answer: 2 },
+      { question: "What was difficult in the beginning?", options: ["The pay was low", "They made some mistakes", "The hours were long", "The manager was strict"], answer: 1 },
+      { question: "What did the writer save money for?", options: ["A phone", "A computer", "A bicycle", "Clothes"], answer: 2 },
+    ],
+  },
+  {
+    id: "b1-4", title: "Social Media and Teenagers", level: "B1", wordCount: 135,
+    description: "An essay about the effects of social media on young people.",
+    text: "Social media has become a big part of teenage life. Most young people spend several hours each day checking their phones, looking at posts, and talking to friends online. There are many positive sides to social media. It helps people stay connected with friends who live far away, and it can be a good way to learn new things through videos and articles. However, there are also serious concerns. Many teenagers feel pressure to look perfect in their photos and get many likes on their posts. This constant comparison with others can lead to low self-esteem and anxiety. Some young people also find it difficult to stop checking their notifications, which affects their sleep and schoolwork. Experts suggest that teenagers should try to be more mindful about how they use social media. Setting time limits, following accounts that make them feel good, and remembering that what people post online is not always reality are all helpful strategies.",
+    questions: [
+      { question: "What is one positive aspect of social media mentioned?", options: ["It makes money", "It helps stay connected with distant friends", "It replaces school", "It is always free"], answer: 1 },
+      { question: "What can constant comparison on social media cause?", options: ["Better grades", "Low self-esteem and anxiety", "More friends", "Better sleep"], answer: 1 },
+      { question: "What do experts suggest teenagers should do?", options: ["Delete all accounts", "Be more mindful about usage", "Use social media more", "Only use one platform"], answer: 1 },
+      { question: "What problem can checking notifications too often cause?", options: ["Eye problems", "Hearing loss", "Affects sleep and schoolwork", "Losing friends"], answer: 2 },
+    ],
+  },
+  {
+    id: "b1-5", title: "Healthy Eating Habits", level: "B1", wordCount: 131,
+    description: "The importance of maintaining a balanced diet.",
+    text: "Eating well is one of the most important things we can do for our health. A balanced diet includes a variety of foods such as fruits, vegetables, whole grains, and protein from sources like fish, eggs, and beans. Many people today eat too much processed food, which often contains a lot of sugar, salt, and fat. This can lead to health problems like heart disease and diabetes. Experts recommend eating at least five portions of fruit and vegetables every day. Drinking enough water is also essential, as our bodies need it to function properly. Another important habit is eating regular meals and not skipping breakfast, which gives us energy for the day ahead. It is also a good idea to control portion sizes and eat slowly so that our body has time to feel full. Making small changes to our daily diet can have a big positive impact on our long-term health and wellbeing.",
+    questions: [
+      { question: "What does a balanced diet include?", options: ["Only meat", "A variety of foods", "Only fruits", "Fast food"], answer: 1 },
+      { question: "How many portions of fruit and vegetables are recommended daily?", options: ["Two", "Three", "Five", "Ten"], answer: 2 },
+      { question: "Why should we not skip breakfast?", options: ["It is expensive", "It gives us energy", "It tastes good", "Everyone does it"], answer: 1 },
+      { question: "What can too much processed food lead to?", options: ["Better sleep", "More energy", "Heart disease and diabetes", "Stronger bones"], answer: 2 },
+    ],
+  },
+  {
+    id: "b1-6", title: "Volunteering in the Community", level: "B1", wordCount: 134,
+    description: "A student shares their experience volunteering.",
+    text: "Last year, I started volunteering at a local community center every Saturday. At first, I joined because my teacher said it would look good on my university application. However, after a few weeks, I realized that volunteering was much more meaningful than I had expected. My main job was helping elderly people with their shopping and cooking simple meals for them. Many of them lived alone and did not have family nearby, so they were always happy to see me and have someone to talk to. I also helped organize a small library at the center where people could borrow books for free. Through volunteering, I learned that even small actions can make a big difference in someone's life. I became more grateful for the things I have and developed a stronger sense of purpose. I would encourage everyone to try volunteering because it does not just help others, it also changes you as a person.",
+    questions: [
+      { question: "Why did the writer first start volunteering?", options: ["To earn money", "For university application", "Because of friends", "For fun"], answer: 1 },
+      { question: "What was the writer's main job?", options: ["Teaching children", "Cleaning the center", "Helping elderly people", "Organizing events"], answer: 2 },
+      { question: "What did the writer help organize at the center?", options: ["A garden", "A small library", "A music group", "A sports club"], answer: 1 },
+      { question: "How did volunteering change the writer?", options: ["They earned more money", "They became more grateful and purposeful", "They became famous", "They found a new job"], answer: 1 },
+    ],
+  },
+  // ─── B2 (AI, climate change, space exploration, cultural differences) ───
+  {
+    id: "b2-3", title: "Artificial Intelligence in Daily Life", level: "B2", wordCount: 168,
+    description: "How AI is transforming everyday activities and the questions it raises.",
+    text: "Artificial intelligence has moved beyond the realm of science fiction and is now embedded in many aspects of our daily lives. From voice assistants on our phones to personalized recommendations on streaming platforms, AI algorithms are constantly working behind the scenes to shape our experiences. In healthcare, AI systems can analyze medical images with remarkable accuracy, sometimes detecting diseases earlier than human doctors. In transportation, self-driving vehicles are being tested in cities around the world, promising to reduce accidents caused by human error. However, the rapid advancement of AI technology raises important ethical questions. One major concern is the potential displacement of workers as machines become capable of performing tasks that were previously done by humans. Another issue is algorithmic bias, where AI systems may make unfair decisions because they were trained on biased datasets. Furthermore, questions about privacy arise when AI systems collect and analyze vast amounts of personal data. As AI continues to evolve, society must engage in thoughtful discussions about how to harness its benefits while addressing its risks and ensuring that its development serves the common good.",
+    questions: [
+      { question: "What is one example of AI in healthcare?", options: ["Performing surgery alone", "Analyzing medical images accurately", "Replacing all doctors", "Making medicine"], answer: 1 },
+      { question: "What is algorithmic bias?", options: ["AI being too slow", "AI making unfair decisions from biased data", "AI using too much energy", "AI being too expensive"], answer: 1 },
+      { question: "What concern exists about self-driving vehicles?", options: ["They are too slow", "They are too expensive", "They promise to reduce human-error accidents", "They use too much fuel"], answer: 2 },
+      { question: "What does the author suggest society should do?", options: ["Ban all AI", "Ignore the risks", "Have thoughtful discussions about benefits and risks", "Let companies decide everything"], answer: 2 },
+      { question: "What privacy concern does AI raise?", options: ["AI cannot store data", "AI collects and analyzes personal data", "AI shares data openly", "AI deletes all data"], answer: 1 },
+    ],
+  },
+  {
+    id: "b2-4", title: "Understanding Climate Change", level: "B2", wordCount: 172,
+    description: "The causes and consequences of global climate change.",
+    text: "Climate change is widely regarded as one of the most pressing challenges facing humanity in the twenty-first century. The overwhelming majority of climate scientists agree that human activities, particularly the burning of fossil fuels such as coal, oil, and natural gas, are the primary cause of rising global temperatures. These activities release large quantities of carbon dioxide and other greenhouse gases into the atmosphere, trapping heat and causing the planet to warm. The consequences of this warming are already visible across the globe. Arctic glaciers are melting at an unprecedented rate, sea levels are rising, and extreme weather events such as hurricanes, droughts, and floods are becoming more frequent and severe. These changes threaten ecosystems, agriculture, and the livelihoods of millions of people, particularly in developing countries that are least equipped to adapt. Addressing climate change requires a coordinated global effort. Transitioning to renewable energy sources such as solar and wind power, improving energy efficiency, and protecting forests are all essential steps. Individual actions, such as reducing meat consumption and using public transportation, also contribute to the solution. The challenge is enormous, but scientists emphasize that meaningful action taken now can still prevent the worst outcomes.",
+    questions: [
+      { question: "What is identified as the primary cause of rising temperatures?", options: ["Natural cycles", "Volcanic eruptions", "Burning fossil fuels", "Solar activity"], answer: 2 },
+      { question: "What is happening to Arctic glaciers?", options: ["They are growing", "They are melting at an unprecedented rate", "They remain unchanged", "They are moving south"], answer: 1 },
+      { question: "Who is most affected by climate change according to the text?", options: ["Wealthy nations", "Developing countries", "Scientists", "Politicians"], answer: 1 },
+      { question: "What individual action is mentioned?", options: ["Buying more products", "Driving more", "Reducing meat consumption", "Using more electricity"], answer: 2 },
+      { question: "What do scientists say about taking action now?", options: ["It is too late", "It can prevent the worst outcomes", "It will make no difference", "It is unnecessary"], answer: 1 },
+    ],
+  },
+  {
+    id: "b2-5", title: "The New Space Race", level: "B2", wordCount: 165,
+    description: "Modern space exploration and its implications for the future.",
+    text: "Space exploration has entered a new and exciting era. While the original space race of the 1960s was driven by competition between the United States and the Soviet Union, today's efforts involve both government agencies and private companies. Organizations like SpaceX and Blue Origin have dramatically reduced the cost of launching spacecraft, making space more accessible than ever before. One of the most ambitious goals is the colonization of Mars. Several agencies and companies have announced plans to send humans to the red planet within the next two decades. However, the challenges are enormous. Astronauts would face extreme radiation, limited resources, and the psychological effects of being isolated millions of kilometers from Earth. Beyond Mars, scientists are exploring the possibility of mining asteroids for valuable minerals and establishing permanent bases on the Moon. These ventures could provide resources that are becoming scarce on Earth. Critics argue that the vast amounts of money spent on space exploration would be better used to solve problems here on Earth, such as poverty and climate change. Supporters counter that space exploration drives technological innovation that ultimately benefits everyone and that humanity must become a multi-planetary species to ensure its long-term survival.",
+    questions: [
+      { question: "How does today's space race differ from the 1960s?", options: ["Only governments are involved", "Private companies are now involved", "It is less ambitious", "Fewer countries participate"], answer: 1 },
+      { question: "What challenge would Mars astronauts face?", options: ["Too much gravity", "Extreme radiation and isolation", "Too many resources", "Short travel time"], answer: 1 },
+      { question: "What do critics of space exploration argue?", options: ["Space is boring", "Money should solve Earth's problems first", "Technology is not advanced enough", "Nobody wants to go to space"], answer: 1 },
+      { question: "What is one benefit of asteroid mining?", options: ["Creating new planets", "Providing scarce resources", "Reducing space debris", "Improving weather on Earth"], answer: 1 },
+    ],
+  },
+  {
+    id: "b2-6", title: "Navigating Cultural Differences", level: "B2", wordCount: 166,
+    description: "How cultural differences affect communication and understanding.",
+    text: "In an increasingly interconnected world, the ability to understand and navigate cultural differences has become an essential skill. Culture shapes the way people think, communicate, and behave, often in ways that are invisible to those within it. What is considered polite in one culture may be seen as rude in another. For example, direct eye contact is valued as a sign of confidence in many Western countries, while in some Asian cultures it can be perceived as disrespectful. Similarly, attitudes toward time vary significantly. In some cultures, arriving exactly on time is expected, while in others a more relaxed approach is perfectly acceptable. These differences can lead to misunderstandings in both personal and professional contexts. Stereotypes and generalizations about other cultures often make things worse, as they reduce complex societies to simple, often inaccurate descriptions. Developing cultural competence requires genuine curiosity, active listening, and a willingness to question one's own assumptions. Travel, language learning, and building friendships with people from different backgrounds are all valuable ways to broaden one's perspective. Rather than viewing cultural differences as obstacles, we can see them as opportunities to learn and grow, enriching our own understanding of what it means to be human.",
+    questions: [
+      { question: "Why can direct eye contact cause misunderstandings?", options: ["It is always rude", "Different cultures interpret it differently", "It is a sign of weakness", "Nobody likes it"], answer: 1 },
+      { question: "What makes stereotypes harmful according to the text?", options: ["They are always true", "They reduce complex societies to simple descriptions", "They help understanding", "They are based on research"], answer: 1 },
+      { question: "What does developing cultural competence require?", options: ["Speaking many languages", "Genuine curiosity and active listening", "Avoiding other cultures", "Reading textbooks only"], answer: 1 },
+      { question: "How does the author suggest we view cultural differences?", options: ["As obstacles to avoid", "As problems to solve", "As opportunities to learn and grow", "As unimportant details"], answer: 2 },
+    ],
+  },
+  // ─── C1 (philosophy of happiness, digital privacy, economic inequality) ───
+  {
+    id: "c1-2", title: "The Philosophy of Happiness", level: "C1", wordCount: 224,
+    description: "Exploring different philosophical perspectives on what constitutes genuine happiness.",
+    text: "The pursuit of happiness is a fundamental human drive, yet philosophers have debated its nature for millennia. Ancient Greek philosophers distinguished between hedonic happiness, which derives from pleasure and the avoidance of pain, and eudaimonic happiness, which arises from living a virtuous and meaningful life. Aristotle argued that true happiness, or eudaimonia, could only be achieved through the cultivation of virtue and the realization of one's full potential. This perspective suggests that happiness is not merely a feeling but a way of living. In the modern era, positive psychology has attempted to study happiness scientifically. Researchers have identified several factors that consistently correlate with higher levels of reported wellbeing, including strong social relationships, a sense of purpose, and regular engagement in activities that produce a state of flow. Interestingly, beyond a certain threshold, increases in income contribute relatively little to overall life satisfaction, challenging the widespread assumption that material wealth is the key to happiness. The so-called paradox of choice suggests that having too many options can actually decrease satisfaction, as individuals become overwhelmed by possibilities and plagued by doubt about whether they made the right decision. Contemporary philosophers have also explored the relationship between gratitude and contentment, arguing that the deliberate practice of appreciating what one already has may be more conducive to lasting happiness than the relentless pursuit of more. This notion stands in stark contrast to the consumerist values that dominate much of modern society.",
+    questions: [
+      { question: "What did Aristotle believe about true happiness?", options: ["It comes from wealth", "It is achieved through virtue and realizing potential", "It is impossible to achieve", "It depends on luck"], answer: 1 },
+      { question: "What has positive psychology found about income and happiness?", options: ["More money always means more happiness", "Money has no effect on happiness", "Beyond a threshold, more income adds little to satisfaction", "Poor people are happier"], answer: 2 },
+      { question: "What is the 'paradox of choice'?", options: ["Having no choices makes people happy", "Too many options can decrease satisfaction", "People always choose correctly", "Choice is an illusion"], answer: 1 },
+      { question: "What does the word 'eudaimonic' refer to in context?", options: ["Pleasure-based happiness", "Happiness from virtue and meaning", "Financial success", "Physical health"], answer: 1 },
+      { question: "What do contemporary philosophers say about gratitude?", options: ["It is irrelevant to happiness", "Practicing gratitude may be more effective than pursuing more", "Gratitude is outdated", "Only wealthy people can be grateful"], answer: 1 },
+    ],
+  },
+  {
+    id: "c1-3", title: "Digital Privacy in the Modern Age", level: "C1", wordCount: 231,
+    description: "An examination of privacy challenges in the era of digital technology.",
+    text: "The digital revolution has brought unprecedented convenience to our lives, but it has also created profound challenges to personal privacy. Every time we browse the internet, use a smartphone application, or make an online purchase, we generate data that is collected, stored, and often sold to third parties. This vast accumulation of personal information has given rise to what scholars call surveillance capitalism, a system in which human experience is treated as raw material for commercial extraction and prediction. The implications are far-reaching. Targeted advertising, while seemingly harmless, relies on intimate knowledge of individuals' habits, preferences, and even emotional states. More concerning are cases in which personal data has been used to manipulate public opinion, as demonstrated by several high-profile election interference scandals. Governments, too, have expanded their surveillance capabilities in the name of national security, raising questions about the appropriate balance between safety and individual freedom. Proponents of stronger privacy protections argue that privacy is not merely a preference but a fundamental human right, essential for autonomy, dignity, and the free expression of ideas. They advocate for comprehensive data protection regulations that require informed consent, limit data collection to what is strictly necessary, and impose severe penalties for breaches. Critics counter that excessive regulation stifles innovation and that most people willingly trade privacy for convenience. The debate over digital privacy ultimately reflects deeper tensions between individual rights and collective interests, between technological progress and human values, that societies will continue to grapple with for decades to come.",
+    questions: [
+      { question: "What is 'surveillance capitalism' as described in the text?", options: ["Government spying on citizens", "A system treating human experience as raw material for commercial extraction", "Companies protecting user data", "A type of cybersecurity"], answer: 1 },
+      { question: "What does targeted advertising rely on?", options: ["Random selection", "Intimate knowledge of individuals' habits and preferences", "Government databases", "Public information only"], answer: 1 },
+      { question: "What do privacy proponents argue privacy is?", options: ["A luxury", "A preference", "A fundamental human right", "An outdated concept"], answer: 2 },
+      { question: "What do critics of strong privacy regulation claim?", options: ["Privacy is not important", "Excessive regulation stifles innovation", "Data collection should increase", "Governments should have all data"], answer: 1 },
+      { question: "What deeper tension does the privacy debate reflect?", options: ["Between rich and poor", "Between individual rights and collective interests", "Between old and young", "Between science and religion"], answer: 1 },
+    ],
+  },
+  {
+    id: "c1-4", title: "The Roots of Economic Inequality", level: "C1", wordCount: 228,
+    description: "An analysis of the causes and consequences of growing economic inequality.",
+    text: "Economic inequality has been widening in most developed nations for the past four decades, reversing the trend toward greater equality that characterized much of the twentieth century. The causes of this shift are multifaceted. Globalization and technological change have disproportionately benefited highly skilled workers while reducing opportunities for those in manufacturing and routine service jobs. Tax policies in many countries have become less progressive, reducing the redistributive mechanisms that once helped narrow the gap between rich and poor. Corporate governance structures increasingly prioritize shareholder returns over worker compensation, contributing to the stagnation of wages even as corporate profits reach record levels. The consequences of extreme inequality extend far beyond economics. Research consistently demonstrates that highly unequal societies suffer from higher rates of crime, poorer public health outcomes, lower social mobility, and diminished trust in institutions. The meritocratic narrative, which holds that success is primarily a result of individual talent and effort, becomes increasingly difficult to sustain when access to quality education, healthcare, and professional networks is so heavily determined by the circumstances of one's birth. Proposed solutions range across the political spectrum. Some advocate for higher taxes on wealth and capital gains, stronger labor unions, and universal basic income programs. Others argue that reducing barriers to entrepreneurship and improving educational access will enable more people to participate in economic growth. What is increasingly clear is that the status quo is unsustainable and that failure to address inequality risks undermining the social cohesion and democratic institutions upon which stable societies depend.",
+    questions: [
+      { question: "For how long has inequality been widening in most developed nations?", options: ["One decade", "Two decades", "Four decades", "A century"], answer: 2 },
+      { question: "What has happened to wages according to the text?", options: ["They have risen sharply", "They have stagnated while profits rose", "They have disappeared", "They have matched inflation perfectly"], answer: 1 },
+      { question: "What does the text say about the meritocratic narrative?", options: ["It is completely true", "It is easy to sustain", "It becomes harder to sustain when birth circumstances determine access", "It has been officially disproven"], answer: 2 },
+      { question: "What is one proposed solution mentioned?", options: ["Eliminating all taxes", "Higher taxes on wealth and capital gains", "Reducing education spending", "Closing all borders"], answer: 1 },
+      { question: "What risk does the author identify if inequality is not addressed?", options: ["Overpopulation", "Undermining social cohesion and democracy", "Technological regression", "Environmental collapse"], answer: 1 },
+    ],
+  },
+  // ─── C2 (consciousness, linguistic relativity) ───
+  {
+    id: "c2-1", title: "The Hard Problem of Consciousness", level: "C2", wordCount: 261,
+    description: "An exploration of the philosophical puzzle of subjective conscious experience.",
+    text: "Among the most intractable problems in philosophy and cognitive science is what David Chalmers famously termed the 'hard problem of consciousness': the question of why and how physical processes in the brain give rise to subjective experience. While neuroscience has made remarkable progress in identifying neural correlates of consciousness — the specific brain activities associated with particular mental states — this empirical success has done little to resolve the deeper conceptual puzzle. We can map which neurons fire when a person sees the color red, but this tells us nothing about why there is something it is like to experience redness, the ineffable qualitative character that philosophers call qualia. The hard problem exposes a fundamental explanatory gap between objective, third-person descriptions of brain processes and the first-person reality of lived experience. Materialist philosophers contend that consciousness will ultimately be explained in purely physical terms, perhaps through a more sophisticated understanding of information processing or emergent properties of complex systems. They argue that the apparent mysteriousness of consciousness is an artifact of our current ignorance rather than evidence of a genuinely non-physical phenomenon. Dualists, by contrast, maintain that subjective experience possesses properties that cannot in principle be reduced to physical descriptions, suggesting that the mental and the physical constitute fundamentally distinct categories of existence. More recently, integrated information theory has proposed that consciousness is a fundamental property of any system that integrates information in a sufficiently complex manner, a view that carries the provocative implication that consciousness may be far more widespread in nature than commonly assumed. Whether the hard problem is genuinely insoluble, as some mysterian philosophers suggest, or merely awaits a conceptual breakthrough analogous to the discovery of DNA's role in heredity, remains one of the deepest open questions in human intellectual inquiry.",
+    questions: [
+      { question: "What is the 'hard problem of consciousness'?", options: ["How the brain processes language", "Why physical processes give rise to subjective experience", "How to measure intelligence", "Why people dream"], answer: 1 },
+      { question: "What are 'qualia' as used in the text?", options: ["Types of neurons", "Scientific measurements", "The qualitative character of subjective experience", "A type of brain scan"], answer: 2 },
+      { question: "What do materialist philosophers argue about consciousness?", options: ["It is supernatural", "It will ultimately be explained in physical terms", "It cannot be studied", "It does not exist"], answer: 1 },
+      { question: "What does integrated information theory propose?", options: ["Consciousness exists only in humans", "Consciousness is a fundamental property of sufficiently complex information-integrating systems", "Consciousness is an illusion", "Only brains can be conscious"], answer: 1 },
+      { question: "What analogy does the text draw for a potential future breakthrough?", options: ["The invention of the telescope", "Einstein's theory of relativity", "The discovery of DNA's role in heredity", "The development of computers"], answer: 2 },
+    ],
+  },
+  {
+    id: "c2-2", title: "Linguistic Relativity and Thought", level: "C2", wordCount: 254,
+    description: "An examination of the Sapir-Whorf hypothesis and the relationship between language and cognition.",
+    text: "The Sapir-Whorf hypothesis, in its strongest formulation, posits that the language one speaks fundamentally determines the way one thinks and perceives the world — a claim known as linguistic determinism. While this radical version has been largely abandoned by contemporary linguists, a more nuanced interpretation, termed linguistic relativity, continues to generate productive research and lively debate. Linguistic relativity holds that language influences, without strictly determining, certain cognitive processes such as categorization, memory, and spatial reasoning. Compelling evidence for this position comes from cross-linguistic studies of color perception. Languages differ dramatically in how they partition the color spectrum: Russian, for instance, distinguishes lexically between light blue and dark blue in a way that English does not. Experimental research has demonstrated that Russian speakers are measurably faster at distinguishing between shades that fall on different sides of this linguistic boundary, suggesting that lexical categories genuinely shape perceptual discrimination. Similar findings have emerged in the domain of spatial cognition. Some Aboriginal Australian languages lack egocentric spatial terms such as 'left' and 'right,' instead employing absolute cardinal directions for all spatial descriptions. Speakers of these languages maintain an extraordinary awareness of their orientation relative to compass points, a cognitive feat that speakers of egocentric languages struggle to replicate. Critics of linguistic relativity note that such effects, while statistically significant, tend to be modest in magnitude and may reflect differences in habitual attention rather than fundamental cognitive architecture. They argue that the universal aspects of human cognition far outweigh the linguistic variations, pointing to the fact that concepts can be expressed across languages even when convenient single-word translations do not exist. The debate illuminates a broader philosophical question about the relationship between symbolic systems and the minds that create and inhabit them.",
+    questions: [
+      { question: "What does linguistic determinism claim?", options: ["Language has no effect on thought", "Language fundamentally determines how one thinks", "All languages are identical", "Grammar is more important than vocabulary"], answer: 1 },
+      { question: "What evidence from Russian supports linguistic relativity?", options: ["Russian has no color words", "Russian speakers distinguish light and dark blue faster due to lexical categories", "Russian speakers cannot see blue", "Russian has more vowels than English"], answer: 1 },
+      { question: "What is notable about spatial terms in some Aboriginal Australian languages?", options: ["They have many words for 'left'", "They use absolute cardinal directions instead of 'left' and 'right'", "They have no spatial terms at all", "They use only body-based references"], answer: 1 },
+      { question: "What do critics of linguistic relativity argue?", options: ["Language completely determines thought", "The effects are modest and may reflect habitual attention differences", "Color perception is universal", "No research supports the hypothesis"], answer: 1 },
+      { question: "What broader question does the linguistic relativity debate illuminate?", options: ["Whether animals have language", "The relationship between symbolic systems and the minds that create them", "Whether translation is possible", "How children learn grammar"], answer: 1 },
     ],
   },
 ];
