@@ -77,7 +77,7 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
   const overallPct = totalWords ? Math.round((learned.size / totalWords) * 100) : 0;
 
   return (
-    <main className="mx-auto w-full max-w-2xl px-4 pt-4 pb-6 space-y-4">
+    <main className="mx-auto w-full max-w-2xl overflow-x-hidden px-4 pt-4 pb-6 space-y-4">
 
       {/* ── Header ── */}
       <header className="flex items-center justify-between">
@@ -202,12 +202,13 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
       {testResults.length > 0 && (
         <section>
           <h3 className="mb-2 text-center text-sm font-black text-muted-foreground">Kết quả gần đây</h3>
-          <div className="flex justify-center gap-2 flex-wrap">
+          <div className={cn("grid gap-2 mx-auto max-w-xs",
+            testResults.length <= 3 ? "grid-cols-3" : testResults.length <= 4 ? "grid-cols-4" : "grid-cols-5")}>
             {testResults.map((r) => {
               const grade = r.score >= 90 ? "A+" : r.score >= 80 ? "A" : r.score >= 70 ? "B" : r.score >= 60 ? "C" : r.score >= 50 ? "D" : "F";
               const color = r.score >= 80 ? "text-success" : r.score >= 60 ? "text-amber-600" : "text-red-500";
               return (
-                <div key={r.id} className="w-16 rounded-xl bg-card border border-border/40 py-2 text-center shadow-sm">
+                <div key={r.id} className="rounded-xl bg-card border border-border/40 py-2 text-center shadow-sm">
                   <p className={cn("text-lg font-black leading-none", color)}>{grade}</p>
                   <p className="text-[10px] font-bold text-muted-foreground mt-0.5">{r.score}%</p>
                 </div>
