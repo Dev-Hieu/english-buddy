@@ -44,7 +44,7 @@ const SKILL_TILES: { emoji: string; title: string; view: string; bg: string }[] 
   { emoji: "🌟", title: "Từ mới", view: "topics", bg: "bg-amber-50" },
   { emoji: "📐", title: "Ngữ pháp", view: "grammar", bg: "bg-rose-50" },
   { emoji: "🎮", title: "Game", view: "games", bg: "bg-pink-50" },
-  { emoji: "💬", title: "Cụm từ", view: "flashcard", bg: "bg-sky-50" },
+  { emoji: "💬", title: "Cụm từ", view: "phrases", bg: "bg-sky-50" },
   { emoji: "📝", title: "Mẫu câu", view: "conversation", bg: "bg-orange-50" },
 ];
 
