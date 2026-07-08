@@ -1,4 +1,4 @@
-import { ArrowRight, CheckCircle2, ChevronLeft, ChevronRight, Clock, Keyboard, Loader2, Mic, PartyPopper, Pause, Play, PlayCircle, Repeat, RotateCcw, Settings, Square, Trophy, Video, Volume2, VolumeX, Zap } from "lucide-react";
+import { ArrowRight, CheckCircle2, ChevronLeft, ChevronRight, Clock, Headphones, Keyboard, Loader2, Mic, PartyPopper, Pause, Play, PlayCircle, Repeat, RotateCcw, Settings, Square, Trophy, Video, Volume2, VolumeX, Zap } from "lucide-react";
 import { useCallback, useEffect, useRef, useState } from "react";
 import type { Student } from "@/types";
 import { apiRequest } from "@/services/api";
@@ -998,5 +998,5 @@ function ScoreRing({ score, size = 72 }: { score: number; size?: number }) {
 }
 
 function Wrapper({ children, onBack }: { children: React.ReactNode; onBack: () => void }) {
-  return <main className="mx-auto w-full max-w-md overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6"><SessionHeader title="Shadowing" onClose={onBack} />{children}</main>;
+  return <main className="mx-auto w-full max-w-md overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6"><SessionHeader title="Shadowing" onClose={onBack} icon={<Headphones className="h-4 w-4" />} iconBg="bg-primary" />{children}</main>;
 }

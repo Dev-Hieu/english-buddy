@@ -1,4 +1,4 @@
-import { Check, ChevronRight, Loader2, Mic, Send, Sparkles, Square, Volume2 } from "lucide-react";
+import { Check, ChevronRight, Loader2, MessageCircle, Mic, Send, Sparkles, Square, Volume2 } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { CHAT_SCENARIOS } from "@/data/chatScenarios";
 import { getChatStatus, sendChat } from "@/services/chatService";
@@ -182,7 +182,7 @@ export function ConversationPage({ student, onBackHome }: ConversationPageProps)
   if (!scenario) {
     return (
       <main className="mx-auto w-full max-w-md overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
-        <SessionHeader title="Luyện hội thoại" onClose={onBackHome} />
+        <SessionHeader title="Luyện hội thoại" onClose={onBackHome} icon={<MessageCircle className="h-4 w-4" />} iconBg="bg-orange-500" />
         <p className="mb-4 text-sm font-semibold text-muted-foreground">
           {aiEnabled
             ? "Trò chuyện tự do bằng tiếng Anh với trợ lý AI — sẽ nhẹ nhàng sửa lỗi câu cho con."

@@ -590,7 +590,7 @@ export function WritingPage({ student, onBackHome }: Props) {
   if (!mode) {
     return (
       <main className="mx-auto w-full max-w-md overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
-        <SessionHeader title="Viết" onClose={onBackHome} />
+        <SessionHeader title="Viết" onClose={onBackHome} icon={<PenLine className="h-4 w-4" />} iconBg="bg-violet-500" />
 
         {/* Level filter */}
         <div className="mb-3 flex flex-wrap gap-1.5">

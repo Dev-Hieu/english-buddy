@@ -32,7 +32,7 @@ export function LeaderboardPage({ currentStudentId, level = "", onBackHome }: Le
 
   return (
     <main className="mx-auto w-full max-w-md overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
-      <SessionHeader title={`Bảng xếp hạng${levelLabel ? ` · ${levelLabel}` : ""}`} onClose={onBackHome} />
+      <SessionHeader title={`Bảng xếp hạng${levelLabel ? ` · ${levelLabel}` : ""}`} onClose={onBackHome} icon={<Trophy className="h-4 w-4" />} iconBg="bg-amber-500" />
 
       {/* Tab: Tuần này / Mọi thời gian */}
       <div className="mb-4 grid grid-cols-2 gap-1 rounded-2xl bg-muted p-1">

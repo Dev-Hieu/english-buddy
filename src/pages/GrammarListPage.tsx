@@ -1,4 +1,4 @@
-import { BookOpen, ChevronRight } from "lucide-react";
+import { BookOpen, ChevronRight, GraduationCap } from "lucide-react";
 import { useState } from "react";
 import { GRAMMAR_TOPICS } from "@/data/grammar";
 import { LEVEL_LABELS, LEVEL_ORDER, type Level, type Student } from "@/types";
@@ -18,7 +18,7 @@ export function GrammarListPage({ student, onBackHome, onPick }: GrammarListPage
 
   return (
     <main className="mx-auto w-full max-w-md overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-6 pb-6">
-      <SessionHeader title="Ngữ pháp" onClose={onBackHome} />
+      <SessionHeader title="Ngữ pháp" onClose={onBackHome} icon={<GraduationCap className="h-4 w-4" />} iconBg="bg-rose-500" />
 
       <div className="mb-5 flex gap-2 overflow-x-auto pb-1">
         {(["all", ...LEVEL_ORDER] as const).map((lv) => (

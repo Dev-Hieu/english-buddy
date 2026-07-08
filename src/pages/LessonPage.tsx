@@ -1,4 +1,4 @@
-import { ArrowLeft, ArrowRight, CheckCircle2, GraduationCap, Layers, List } from "lucide-react";
+import { ArrowLeft, ArrowRight, CheckCircle2, GraduationCap, Layers, List, Sparkles } from "lucide-react";
 import { useMemo, useState } from "react";
 import { SEED_TOPICS } from "@/data/seedTopics";
 import { SEED_VOCABULARY } from "@/data/seedVocabulary";
@@ -67,7 +67,7 @@ export function LessonPage({
 
   return (
     <main className="mx-auto w-full max-w-md overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
-      <SessionHeader title={`${topicEmoji(topic.id)} ${topic.name} · ${topic.name_vi}`} onClose={onBackHome} progress={progress} />
+      <SessionHeader title={`${topicEmoji(topic.id)} ${topic.name} · ${topic.name_vi}`} onClose={onBackHome} progress={progress} icon={<Sparkles className="h-4 w-4" />} iconBg="bg-amber-500" />
 
       <p className="mb-3 text-center text-sm font-extrabold text-muted-foreground">Từ {currentIndex + 1} / {words.length}</p>
 

@@ -1,4 +1,4 @@
-import { Loader2, Volume2 } from "lucide-react";
+import { ClipboardCheck, Loader2, Volume2 } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { SEED_TOPICS } from "@/data/seedTopics";
 import { SEED_VOCABULARY } from "@/data/seedVocabulary";
@@ -45,7 +45,7 @@ export function TestPage({ student, topicId, level = "all", onBackHome }: TestPa
   if (questions.length === 0) {
     return (
       <main className="mx-auto w-full max-w-md overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
-        <SessionHeader title={title} onClose={onBackHome} />
+        <SessionHeader title={title} onClose={onBackHome} icon={<ClipboardCheck className="h-4 w-4" />} iconBg="bg-blue-500" />
         <Card><CardContent className="p-8 text-center font-bold text-muted-foreground">Chủ đề này chưa đủ từ để tạo bài test.</CardContent></Card>
       </main>
     );
@@ -56,7 +56,7 @@ export function TestPage({ student, topicId, level = "all", onBackHome }: TestPa
     const score = Math.round((correctCount / total) * 100);
     return (
       <main className="mx-auto w-full max-w-md overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
-        <SessionHeader title={title} onClose={onBackHome} />
+        <SessionHeader title={title} onClose={onBackHome} icon={<ClipboardCheck className="h-4 w-4" />} iconBg="bg-blue-500" />
         <Card>
           <CardContent className="flex flex-col items-center gap-4 p-8 text-center">
             <ProgressRing value={correctCount} max={total} size={120} stroke={13}>
@@ -111,7 +111,7 @@ export function TestPage({ student, topicId, level = "all", onBackHome }: TestPa
 
   return (
     <main className="mx-auto w-full max-w-md overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
-      <SessionHeader title={title} onClose={onBackHome} progress={Math.round((index / questions.length) * 100)} />
+      <SessionHeader title={title} onClose={onBackHome} progress={Math.round((index / questions.length) * 100)} icon={<ClipboardCheck className="h-4 w-4" />} iconBg="bg-blue-500" />
       <p className="mb-3 text-center text-sm font-extrabold text-muted-foreground">Câu {index + 1} / {questions.length}</p>
 
       <Card>

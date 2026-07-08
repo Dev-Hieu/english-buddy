@@ -1,4 +1,4 @@
-import { Car, Ear, Grid3x3, Images, Link2, PartyPopper, Puzzle, Volume2 } from "lucide-react";
+import { Car, Ear, Gamepad2, Grid3x3, Images, Link2, PartyPopper, Puzzle, Volume2 } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
 import { SEED_VOCABULARY } from "@/data/seedVocabulary";
 import type { Student, VocabularyWord } from "@/types";
@@ -72,7 +72,7 @@ export function GamesPage({ student, topicId, level = "all", studiedWordIds, onB
     ];
     return (
       <main className="mx-auto w-full max-w-md overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
-        <SessionHeader title="Trò chơi" onClose={onBackHome} />
+        <SessionHeader title="Trò chơi" onClose={onBackHome} icon={<Gamepad2 className="h-4 w-4" />} iconBg="bg-pink-500" />
 
         {/* Độ khó (áp dụng cho game từ vựng; Sudoku có độ khó riêng) */}
         <div className="mb-4 grid grid-cols-2 gap-1 rounded-2xl bg-muted p-1">

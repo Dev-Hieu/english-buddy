@@ -1,4 +1,4 @@
-import { Loader2, Mic, PartyPopper, Volume2 } from "lucide-react";
+import { GraduationCap, Loader2, Mic, PartyPopper, Volume2 } from "lucide-react";
 import { useEffect, useMemo, useRef, useState } from "react";
 import type { Student } from "@/types";
 import { SEED_VOCABULARY } from "@/data/seedVocabulary";
@@ -284,7 +284,7 @@ function ResultView({ data, answers, onDone }: { data: { results: SkillResult[];
 function Shell({ children, onBack, progress }: { children: React.ReactNode; onBack: () => void; progress?: number }) {
   return (
     <main className="mx-auto w-full max-w-md overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
-      <SessionHeader title="Thi từ vựng" onClose={onBack} progress={progress} />
+      <SessionHeader title="Thi từ vựng" onClose={onBack} progress={progress} icon={<GraduationCap className="h-4 w-4" />} iconBg="bg-primary" />
       {children}
     </main>
   );
