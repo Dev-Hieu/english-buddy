@@ -1,4 +1,4 @@
-import { BookOpen, ClipboardCheck, Ear, Flame, Gamepad2, GraduationCap, LogOut, MessageSquareText, Mic, PenLine, Play, RotateCcw, Settings, Sparkles, Star, Trophy, Type, UserRound } from "lucide-react";
+import { BookOpen, ChevronRight, ClipboardCheck, Ear, Flame, Gamepad2, GraduationCap, LogOut, MessageSquareText, Mic, PenLine, Play, RotateCcw, Settings, Sparkles, Star, Trophy, Type, UserRound } from "lucide-react";
 import { useEffect, useState, type ComponentType } from "react";
 import { getLeaderboard } from "@/services/studentService";
 import { getSkillTestResults, type SkillTestResult } from "@/services/progressService";
@@ -63,7 +63,8 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
   const level = levelOf(xp);
   const validLevel = LEVEL_ORDER.includes(student.level as Level);
   const learnLevel = validLevel ? (student.level as string) : "all";
-  const topicsAtLevel = topicsWithLevel(SEED_TOPICS, SEED_VOCABULARY, learnLevel).slice(0, 4);
+  const allTopics = topicsWithLevel(SEED_TOPICS, SEED_VOCABULARY, learnLevel);
+  const topicsAtLevel = allTopics.slice(0, 4);
   const wordsOf = (topicId: string) => topicWords(SEED_VOCABULARY, topicId, learnLevel);
   const resumeTopic = topicsAtLevel.find((t) => {
     const ws = wordsOf(t.id);
@@ -71,6 +72,15 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
   }) ?? topicsAtLevel[0];
   const resumeStarted = resumeTopic ? wordsOf(resumeTopic.id).some((w) => learned.has(w.id)) : false;
   const startLearning = () => resumeTopic ? onNavigate("lesson", resumeTopic.id, learnLevel) : onNavigate("topics");
+
+  // Topic progress for mini chart (top 6 active topics)
+  const topicProgress = allTopics.slice(0, 6).map((t) => {
+    const ws = wordsOf(t.id);
+    const done = ws.filter((w) => learned.has(w.id)).length;
+    return { id: t.id, name: t.name_vi, total: ws.length, done, pct: ws.length ? Math.round((done / ws.length) * 100) : 0 };
+  });
+  const totalWords = SEED_VOCABULARY.length;
+  const overallPct = totalWords ? Math.round((learned.size / totalWords) * 100) : 0;
 
   return (
     <main className="mx-auto w-full max-w-2xl px-4 pt-4 pb-6 space-y-4">
@@ -117,45 +127,66 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
         </div>
       </header>
 
-      {/* ── Stats — bấm vào xem tiến độ chi tiết ── */}
-      <button type="button" onClick={() => onNavigate("dashboard")}
-        className="w-full rounded-3xl bg-card border border-border/50 p-5 shadow-card space-y-3 text-left transition-all active:scale-[0.99] hover:shadow-lg hover:border-primary/30">
-        {/* Stats row */}
-        <div className="grid grid-cols-3 gap-2">
-          <div className="flex items-center justify-center gap-1.5 rounded-xl bg-muted py-2.5 text-sm font-extrabold">
-            <Star className="h-4 w-4 text-primary" /> {xp}
-          </div>
-          <div className="flex items-center justify-center gap-1.5 rounded-xl bg-muted py-2.5 text-sm font-extrabold">
-            <Flame className="h-4 w-4 text-primary" /> {streak} ngày
-          </div>
-          <div className="flex items-center justify-center gap-1.5 rounded-xl bg-muted py-2.5 text-sm font-extrabold">
-            <Trophy className="h-4 w-4 text-primary" /> {weekRank ? `#${weekRank}` : "—"}
+      {/* ── Tiến độ học tập ── */}
+      <section className="rounded-3xl bg-card border border-border/50 p-5 shadow-card space-y-4">
+        {/* Header + stats inline */}
+        <div className="flex items-center justify-between">
+          <h2 className="text-base font-black">Tiến độ của tôi</h2>
+          <div className="flex items-center gap-3 text-xs font-extrabold text-muted-foreground">
+            <span className="flex items-center gap-1"><Star className="h-3.5 w-3.5 text-primary" />{xp}</span>
+            <span className="flex items-center gap-1"><Flame className="h-3.5 w-3.5 text-primary" />{streak}</span>
+            <button type="button" onClick={() => onNavigate("leaderboard")} className="flex items-center gap-1 hover:text-primary transition-colors">
+              <Trophy className="h-3.5 w-3.5 text-primary" />{weekRank ? `#${weekRank}` : "—"}
+            </button>
           </div>
         </div>
 
-        {/* Progress bar */}
-        <div>
-          <div className="flex items-center justify-between mb-1.5">
-            <p className="text-sm font-extrabold">
-              {goalReached ? "Đạt mục tiêu hôm nay! 🎉" : `Hôm nay: ${learnedToday}/${goal} từ`}
+        {/* Overall progress */}
+        <div className="flex items-center gap-3">
+          <div className="relative flex h-14 w-14 shrink-0 items-center justify-center">
+            <svg className="h-full w-full -rotate-90" viewBox="0 0 48 48">
+              <circle cx="24" cy="24" r="20" fill="none" stroke="currentColor" strokeWidth="4" className="text-muted" />
+              <circle cx="24" cy="24" r="20" fill="none" stroke="currentColor" strokeWidth="4" className="text-primary"
+                strokeDasharray={`${overallPct * 1.257} 126`} strokeLinecap="round" />
+            </svg>
+            <span className="absolute text-xs font-black text-primary">{overallPct}%</span>
+          </div>
+          <div className="flex-1 min-w-0">
+            <p className="text-sm font-extrabold">{learned.size}/{totalWords} từ đã học</p>
+            <p className="text-xs text-muted-foreground">
+              {goalReached ? `Hôm nay: ${learnedToday} từ ✓` : `Hôm nay: ${learnedToday}/${goal} từ`}
+              {" · "}{student.level?.toUpperCase?.() || "A1"}
             </p>
-            <span className="text-xs font-bold text-muted-foreground">{goalPct}%</span>
           </div>
-          <div className="h-3 w-full rounded-full bg-muted overflow-hidden">
-            <div
-              className={cn("h-full rounded-full transition-all duration-500",
-                goalReached ? "bg-success" : "bg-primary")}
-              style={{ width: `${goalPct}%` }}
-            />
-          </div>
-          <div className="mt-1.5 flex items-center justify-between">
-            <p className="text-xs font-semibold text-muted-foreground">
-              Vốn từ: {learnedTotal} đã thuộc · {student.level?.toUpperCase?.() || "A1"}
-            </p>
-            <span className="text-[10px] font-bold text-primary">Xem tiến độ →</span>
-          </div>
+          <button type="button" onClick={() => onNavigate("dashboard")}
+            className="shrink-0 rounded-xl bg-muted px-3 py-1.5 text-[10px] font-bold text-muted-foreground hover:bg-primary/10 hover:text-primary transition-colors">
+            Chi tiết →
+          </button>
         </div>
-      </button>
+
+        {/* Topic progress bars — bấm vào từng topic để học tiếp */}
+        <div className="space-y-2">
+          {topicProgress.map((t) => (
+            <button key={t.id} type="button" onClick={() => onNavigate("lesson", t.id, learnLevel)}
+              className="flex w-full items-center gap-2.5 rounded-xl px-1 py-1 text-left transition-colors hover:bg-muted/50 active:scale-[0.99]">
+              <span className="w-16 shrink-0 text-xs font-bold text-muted-foreground truncate">{t.name}</span>
+              <div className="flex-1 h-2 rounded-full bg-muted overflow-hidden">
+                <div className={cn("h-full rounded-full transition-all duration-500", t.pct >= 100 ? "bg-success" : "bg-primary")}
+                  style={{ width: `${t.pct}%` }} />
+              </div>
+              <span className={cn("w-10 shrink-0 text-right text-[10px] font-extrabold", t.pct >= 100 ? "text-success" : "text-muted-foreground")}>
+                {t.done}/{t.total}
+              </span>
+            </button>
+          ))}
+        </div>
+
+        {/* Xem tất cả chủ đề */}
+        <button type="button" onClick={() => onNavigate("topics")}
+          className="flex w-full items-center justify-center gap-1 text-xs font-bold text-primary hover:underline">
+          Tất cả {allTopics.length} chủ đề <ChevronRight className="h-3.5 w-3.5" />
+        </button>
+      </section>
 
       {/* ── CTA ── */}
       <button type="button" onClick={startLearning}
