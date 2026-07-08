@@ -31,7 +31,7 @@ export function LeaderboardPage({ currentStudentId, level = "", onBackHome }: Le
   const myRank = rows?.findIndex((r) => r.id === currentStudentId) ?? -1;
 
   return (
-    <main className="mx-auto w-full max-w-xl px-4">
+    <main className="mx-auto w-full max-w-md overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
       <SessionHeader title={`Bảng xếp hạng${levelLabel ? ` · ${levelLabel}` : ""}`} onClose={onBackHome} />
 
       {/* Tab: Tuần này / Mọi thời gian */}

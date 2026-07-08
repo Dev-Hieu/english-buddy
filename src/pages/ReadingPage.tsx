@@ -288,7 +288,7 @@ export function ReadingPage({ student, onBackHome }: Props) {
   /* ─── Story List ─── */
   if (screen === "list") {
     return (
-      <main className="mx-auto w-full max-w-xl px-4">
+      <main className="mx-auto w-full max-w-md overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
         <SessionHeader title="Đọc hiểu" onClose={onBackHome} />
 
         {/* Level filter */}
@@ -346,7 +346,7 @@ export function ReadingPage({ student, onBackHome }: Props) {
     const words = activeStory.text.split(/(\s+|(?=[.,!?;:])|(?<=[.,!?;:]))/);
 
     return (
-      <main className="mx-auto w-full max-w-xl px-4">
+      <main className="mx-auto w-full max-w-md overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
         <SessionHeader title={activeStory.title} onClose={backToList}
           right={<span className="rounded-full bg-primary/10 px-2.5 py-1 text-xs font-extrabold text-primary">{activeStory.level}</span>} />
 
@@ -396,7 +396,7 @@ export function ReadingPage({ student, onBackHome }: Props) {
     const allAnswered = answers.every((a) => a !== null);
 
     return (
-      <main className="mx-auto w-full max-w-xl px-4">
+      <main className="mx-auto w-full max-w-md overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
         <SessionHeader title={`${activeStory.title} — Câu hỏi`} onClose={backToList}
           progress={Math.round((answers.filter((a) => a !== null).length / answers.length) * 100)} />
 
@@ -447,7 +447,7 @@ export function ReadingPage({ student, onBackHome }: Props) {
   const pct = Math.round((score / total) * 100);
 
   return (
-    <main className="mx-auto w-full max-w-xl px-4">
+    <main className="mx-auto w-full max-w-md overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
       <SessionHeader title="Kết quả" onClose={backToList} />
 
       <Card>

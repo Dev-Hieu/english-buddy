@@ -79,7 +79,7 @@ export function SpeakingPage({ student, topicId, onBackHome, onShadowing }: Spea
   // Mode selector screen
   if (!mode) {
     return (
-      <main className="mx-auto w-full max-w-xl px-4">
+      <main className="mx-auto w-full max-w-md overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
         <SessionHeader title="Luyện nói" onClose={onBackHome} />
 
         {/* Level filter */}
@@ -145,12 +145,12 @@ function WordMode({ topicId, level, onBack, onShadowing }: { topicId: string; le
   const detailed = CAN_MIC && !!word?.phonetic;
 
   if (!word) {
-    return (<main className="mx-auto w-full max-w-xl px-4"><SessionHeader title="Phát âm từ" onClose={onBack} /><Card><CardContent className="p-8 text-center font-bold text-muted-foreground">Chủ đề này chưa có từ để luyện.</CardContent></Card></main>);
+    return (<main className="mx-auto w-full max-w-md overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6"><SessionHeader title="Phát âm từ" onClose={onBack} /><Card><CardContent className="p-8 text-center font-bold text-muted-foreground">Chủ đề này chưa có từ để luyện.</CardContent></Card></main>);
   }
 
   if (done) {
     return (
-      <main className="mx-auto w-full max-w-xl px-4">
+      <main className="mx-auto w-full max-w-md overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
         <SessionHeader title="Phát âm từ" onClose={onBack} />
         <Card className="animate-pop">
           <CardContent className="flex flex-col items-center gap-4 p-8 text-center">
@@ -194,7 +194,7 @@ function WordMode({ topicId, level, onBack, onShadowing }: { topicId: string; le
   };
 
   return (
-    <main className="mx-auto w-full max-w-xl px-4">
+    <main className="mx-auto w-full max-w-md overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
       <SessionHeader title={`Phát âm từ${topic ? " · " + topic.name : ""}`} onClose={onBack} progress={Math.round((n / words.length) * 100)} right={<VoicePicker />} />
       <p className="mb-3 text-center text-sm font-extrabold text-muted-foreground">Từ {n + 1} / {words.length}</p>
 
@@ -306,7 +306,7 @@ function PhraseMode({ level, onBack }: { level: Level; onBack: () => void }) {
 
   if (!phrase || phrases.length === 0) {
     return (
-      <main className="mx-auto w-full max-w-xl px-4">
+      <main className="mx-auto w-full max-w-md overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
         <SessionHeader title="Phát âm cụm từ" onClose={onBack} />
         <Card><CardContent className="p-8 text-center font-bold text-muted-foreground">Chưa có cụm từ cho trình độ này.</CardContent></Card>
       </main>
@@ -315,7 +315,7 @@ function PhraseMode({ level, onBack }: { level: Level; onBack: () => void }) {
 
   if (done) {
     return (
-      <main className="mx-auto w-full max-w-xl px-4">
+      <main className="mx-auto w-full max-w-md overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
         <SessionHeader title="Phát âm cụm từ" onClose={onBack} />
         <Card className="animate-pop">
           <CardContent className="flex flex-col items-center gap-4 p-8 text-center">
@@ -334,7 +334,7 @@ function PhraseMode({ level, onBack }: { level: Level; onBack: () => void }) {
   };
 
   return (
-    <main className="mx-auto w-full max-w-xl px-4">
+    <main className="mx-auto w-full max-w-md overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
       <SessionHeader title="Phát âm cụm từ" onClose={onBack} progress={Math.round((n / phrases.length) * 100)} right={<VoicePicker />} />
       <p className="mb-3 text-center text-sm font-extrabold text-muted-foreground">Cụm từ {n + 1} / {phrases.length}</p>
 

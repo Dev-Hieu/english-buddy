@@ -17,7 +17,7 @@ export function GrammarListPage({ student, onBackHome, onPick }: GrammarListPage
   const topics = GRAMMAR_TOPICS.filter((t) => level === "all" || t.level === level);
 
   return (
-    <main className="mx-auto w-full max-w-2xl px-4 pt-6">
+    <main className="mx-auto w-full max-w-md overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-6 pb-6">
       <SessionHeader title="Ngữ pháp" onClose={onBackHome} />
 
       <div className="mb-5 flex gap-2 overflow-x-auto pb-1">

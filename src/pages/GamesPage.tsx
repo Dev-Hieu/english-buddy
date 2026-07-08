@@ -71,7 +71,7 @@ export function GamesPage({ student, topicId, level = "all", studiedWordIds, onB
       { id: "wordchain" as const, name: "Nối từ", desc: "Nối từ vs 3 bot, 10s/lượt", emoji: "🔗" },
     ];
     return (
-      <main className="mx-auto w-full max-w-xl px-4">
+      <main className="mx-auto w-full max-w-md overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
         <SessionHeader title="Trò chơi" onClose={onBackHome} />
 
         {/* Độ khó (áp dụng cho game từ vựng; Sudoku có độ khó riêng) */}
@@ -107,7 +107,7 @@ export function GamesPage({ student, topicId, level = "all", studiedWordIds, onB
   }
 
   return (
-    <main className="mx-auto w-full max-w-xl px-4">
+    <main className="mx-auto w-full max-w-md overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
       {game === "match" && <MatchGame pool={reviewPool} onRecord={record} onClose={back} hard={hard} />}
       {game === "pick" && <PickGame pool={reviewPool} onRecord={record} onClose={back} hard={hard} />}
       {game === "listen" && <ListenGame pool={reviewPool} onRecord={record} onClose={back} hard={hard} />}

@@ -589,7 +589,7 @@ export function WritingPage({ student, onBackHome }: Props) {
 
   if (!mode) {
     return (
-      <main className="mx-auto w-full max-w-xl px-4">
+      <main className="mx-auto w-full max-w-md overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
         <SessionHeader title="Viết" onClose={onBackHome} />
 
         {/* Level filter */}
@@ -626,7 +626,7 @@ export function WritingPage({ student, onBackHome }: Props) {
   }
 
   return (
-    <main className="mx-auto w-full max-w-xl px-4">
+    <main className="mx-auto w-full max-w-md overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
       {mode === "word-dictation" && <WordDictation level={level} onBack={() => setMode(null)} />}
       {mode === "sentence-dictation" && <SentenceDictation level={level} onBack={() => setMode(null)} />}
       {mode === "essay" && <EssayWriting level={level} onBack={() => setMode(null)} />}

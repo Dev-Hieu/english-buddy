@@ -74,7 +74,7 @@ export function ExamPage({ student, level = "all", onBackHome }: ExamPageProps) 
 
   if (questions.length === 0) {
     return (
-      <main className="mx-auto w-full max-w-xl px-4">
+      <main className="mx-auto w-full max-w-md overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
         <SessionHeader title={title} onClose={onBackHome} />
         <Card><CardContent className="p-8 text-center font-bold text-muted-foreground">Chưa đủ từ ở cấp này để tạo đề.</CardContent></Card>
       </main>
@@ -85,7 +85,7 @@ export function ExamPage({ student, level = "all", onBackHome }: ExamPageProps) 
     const score = Math.round((correct / questions.length) * 100);
     const wrongWords = wrongIds.map((id) => wordById.get(id)).filter(Boolean);
     return (
-      <main className="mx-auto w-full max-w-xl px-4 pb-10">
+      <main className="mx-auto w-full max-w-md overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
         <SessionHeader title={title} onClose={onBackHome} />
         <Card><CardContent className="flex flex-col items-center gap-3 p-6 text-center">
           <ProgressRing value={correct} max={questions.length} size={100} stroke={11}>
@@ -125,7 +125,7 @@ export function ExamPage({ student, level = "all", onBackHome }: ExamPageProps) 
   }
 
   return (
-    <main className="mx-auto w-full max-w-xl px-4">
+    <main className="mx-auto w-full max-w-md overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
       <SessionHeader title={title} onClose={onBackHome} progress={Math.round((index / questions.length) * 100)} />
       <p className="mb-3 text-center text-sm font-extrabold text-muted-foreground">Câu {index + 1}/{questions.length}</p>
       <Card><CardContent className="space-y-5 p-6">

@@ -998,5 +998,5 @@ function ScoreRing({ score, size = 72 }: { score: number; size?: number }) {
 }
 
 function Wrapper({ children, onBack }: { children: React.ReactNode; onBack: () => void }) {
-  return <main className="mx-auto w-full max-w-xl px-4"><SessionHeader title="Shadowing" onClose={onBack} />{children}</main>;
+  return <main className="mx-auto w-full max-w-md overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6"><SessionHeader title="Shadowing" onClose={onBack} />{children}</main>;
 }

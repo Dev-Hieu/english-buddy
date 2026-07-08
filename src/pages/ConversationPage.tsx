@@ -181,7 +181,7 @@ export function ConversationPage({ student, onBackHome }: ConversationPageProps)
   // ── Menu ──
   if (!scenario) {
     return (
-      <main className="mx-auto w-full max-w-2xl px-4 pt-6">
+      <main className="mx-auto w-full max-w-md overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
         <SessionHeader title="Luyện hội thoại" onClose={onBackHome} />
         <p className="mb-4 text-sm font-semibold text-muted-foreground">
           {aiEnabled
@@ -204,7 +204,7 @@ export function ConversationPage({ student, onBackHome }: ConversationPageProps)
   }
 
   return (
-    <main className="mx-auto flex h-[100dvh] w-full max-w-2xl flex-col px-4">
+    <main className="mx-auto w-full max-w-md overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6 flex flex-col">
       <SessionHeader title={`${scenario.emoji} ${scenario.title_vi}`} onClose={backToMenu} />
 
       <p className="pb-1 text-center text-xs font-semibold text-muted-foreground">💬 Mẹo: bấm vào câu để xem nghĩa tiếng Việt</p>
