@@ -145,12 +145,12 @@ export function GamesPage({ student, topicId, level = "all", studiedWordIds, onB
       {game === "pick" && <PickGame pool={reviewPool} onRecord={record} onClose={back} hard={hard} studentId={student.id} />}
       {game === "listen" && <ListenGame pool={reviewPool} onRecord={record} onClose={back} hard={hard} studentId={student.id} />}
       {game === "dictation" && <DictationGame pool={reviewPool} onRecord={record} onClose={back} hard={hard} studentId={student.id} />}
-      {game === "build" && <PictureWordGame pool={base} onRecord={record} onClose={back} hard={hard} />}
-      {game === "race" && <CarRaceGame pool={reviewPool} onRecord={record} onClose={back} hard={hard} />}
+      {game === "build" && <PictureWordGame pool={base} onRecord={record} onClose={back} hard={hard} studentId={student.id} />}
+      {game === "race" && <CarRaceGame pool={reviewPool} onRecord={record} onClose={back} hard={hard} studentId={student.id} />}
       {game === "sudoku" && <SudokuGame onClose={back} />}
-      {game === "wordsearch" && <WordSearchGame words={reviewPool.map((w) => ({ word: w.word, meaning_vi: w.meaning_vi }))} onComplete={() => {}} onBack={back} />}
-      {game === "speedtype" && <SpeedTypeGame words={reviewPool.map((w) => ({ word: w.word, meaning_vi: w.meaning_vi }))} onComplete={() => {}} onBack={back} />}
-      {game === "wordchain" && <WordChainGame words={SEED_VOCABULARY.map((w) => ({ word: w.word }))} onComplete={() => {}} onBack={back} />}
+      {game === "wordsearch" && <WordSearchGame words={reviewPool.map((w) => ({ word: w.word, meaning_vi: w.meaning_vi }))} onComplete={(s) => submitGameScore(student.id, "wordsearch", s).catch(() => {})} onBack={back} />}
+      {game === "speedtype" && <SpeedTypeGame words={reviewPool.map((w) => ({ word: w.word, meaning_vi: w.meaning_vi }))} onComplete={(s) => submitGameScore(student.id, "speedtype", s).catch(() => {})} onBack={back} />}
+      {game === "wordchain" && <WordChainGame words={SEED_VOCABULARY.map((w) => ({ word: w.word }))} onComplete={(s) => submitGameScore(student.id, "wordchain", s).catch(() => {})} onBack={back} />}
     </main>
   );
 }

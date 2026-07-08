@@ -1,6 +1,7 @@
 import { Flame } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
 import { playCorrect, playWrong, playWin, playStreak, playLose } from "@/services/soundService";
+import { submitGameScore } from "@/services/gameService";
 import type { VocabularyWord } from "@/types";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -13,6 +14,7 @@ interface Props {
   onRecord: (wordId: string, correct: boolean) => void;
   onClose: () => void;
   hard: boolean;
+  studentId?: string;
 }
 
 const shuffle = <T,>(s: T[]): T[] => s.slice().sort(() => Math.random() - 0.5);
@@ -32,7 +34,7 @@ function Lane({ emoji, pos, goal, label, lead }: { emoji: string; pos: number; g
   );
 }
 
-export function CarRaceGame({ pool, onRecord, onClose, hard }: Props) {
+export function CarRaceGame({ pool, onRecord, onClose, hard, studentId }: Props) {
   const goal = hard ? 10 : 6;
   const limit = hard ? 6 : 9;
 
@@ -102,6 +104,11 @@ export function CarRaceGame({ pool, onRecord, onClose, hard }: Props) {
       </>
     );
   }
+
+  // Auto-submit score khi kết thúc
+  useEffect(() => {
+    if (over && studentId) submitGameScore(studentId, "race", player).catch(() => {});
+  }, [over]);
 
   if (over) {
     const won = player >= goal;

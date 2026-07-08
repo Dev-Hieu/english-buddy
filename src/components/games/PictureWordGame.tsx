@@ -1,6 +1,7 @@
 import { Delete, PartyPopper, Volume2 } from "lucide-react";
 import { useMemo, useState } from "react";
 import { playCorrect, playWrong, playTap, playWin } from "@/services/soundService";
+import { submitGameScore } from "@/services/gameService";
 import type { VocabularyWord } from "@/types";
 import { speakText } from "@/services/speechService";
 import { Button } from "@/components/ui/button";
@@ -14,6 +15,7 @@ interface Props {
   onRecord: (wordId: string, correct: boolean) => void;
   onClose: () => void;
   hard: boolean;
+  studentId?: string;
 }
 
 const shuffle = <T,>(s: T[]): T[] => s.slice().sort(() => Math.random() - 0.5);
@@ -27,7 +29,7 @@ function makeTray(word: string, hard: boolean): string[] {
   return shuffle(letters);
 }
 
-export function PictureWordGame({ pool, onRecord, onClose, hard }: Props) {
+export function PictureWordGame({ pool, onRecord, onClose, hard, studentId }: Props) {
   const eligible = useMemo(() => pool.filter((w) => w.imageUrl && !w.word.includes(" ")), [pool]);
   const [words] = useState(() => pickWords(eligible, hard ? 8 : 5));
   const [n, setN] = useState(0);
@@ -66,7 +68,7 @@ export function PictureWordGame({ pool, onRecord, onClose, hard }: Props) {
 
   const advance = () => {
     const m = n + 1;
-    if (m >= words.length) { setDone(true); playWin(); return; }
+    if (m >= words.length) { setDone(true); playWin(); if (studentId) submitGameScore(studentId, "build", solved + 1).catch(() => {}); return; }
     setN(m); setPlaced([]); setStatus("playing"); setTray(makeTray(words[m].word, hard));
   };
 
