@@ -111,6 +111,10 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
                   className="flex w-full items-center gap-2 rounded-xl px-3 py-2 text-sm font-bold hover:bg-muted transition-colors">
                   <UserRound className="h-4 w-4 text-muted-foreground" /> Đổi hồ sơ
                 </button>
+                <button type="button" onClick={() => { setShowMenu(false); onNavigate("premium"); }}
+                  className="flex w-full items-center gap-2 rounded-xl px-3 py-2 text-sm font-bold text-amber-600 hover:bg-amber-50 transition-colors">
+                  ⭐ Nâng cấp Premium
+                </button>
                 <div className="border-t border-border my-1" />
                 <button type="button" onClick={onLogout}
                   className="flex w-full items-center gap-2 rounded-xl px-3 py-2 text-sm font-bold text-red-600 hover:bg-red-50 transition-colors">

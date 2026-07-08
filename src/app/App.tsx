@@ -37,11 +37,12 @@ import { ListeningPage } from "@/pages/ListeningPage";
 import { WritingPage } from "@/pages/WritingPage";
 import { ReadingPage } from "@/pages/ReadingPage";
 import { PhrasesPage } from "@/pages/PhrasesPage";
+import { PremiumPage } from "@/pages/PremiumPage";
 
 type View =
   | "student-select" | "admin" | "home" | "topics" | "lesson"
   | "flashcard" | "review" | "lookup" | "test" | "games" | "speak" | "shadowing" | "dashboard" | "mywords" | "leaderboard" | "topicwords" | "grammar" | "grammar-lesson" | "exam" | "conversation" | "imagepicker" | "skilltest"
-  | "listening" | "writing" | "reading" | "phrases";
+  | "listening" | "writing" | "reading" | "phrases" | "premium";
 
 interface Route { view: View; topicId: string; level: Level | "all"; mode?: "new" | "review"; }
 
@@ -52,7 +53,7 @@ const ACTIVE_TAB: Record<View, TabKey | null> = {
   "student-select": null, admin: null, home: "home", topics: "home", lesson: "home", flashcard: "home",
   review: "review", lookup: "lookup", test: "test", games: null, speak: "speak", shadowing: null, dashboard: null, mywords: "mywords", leaderboard: null, topicwords: null,
   grammar: null, "grammar-lesson": null, exam: null, conversation: null, imagepicker: null, skilltest: null,
-  listening: null, writing: null, reading: null, phrases: null,
+  listening: null, writing: null, reading: null, phrases: null, premium: null,
 };
 
 export function App() {
@@ -323,6 +324,9 @@ export function App() {
       break;
     case "phrases":
       content = <PhrasesPage student={student} onBackHome={() => navigate("home")} />;
+      break;
+    case "premium":
+      content = <PremiumPage user={{ name: user.name, email: user.email, isPremium: !!user.isPremium }} onBack={() => navigate("home")} />;
       break;
     case "listening":
       content = <ListeningPage student={student} onBackHome={() => navigate("home")} />;

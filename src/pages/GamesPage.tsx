@@ -11,6 +11,9 @@ import { SessionHeader } from "@/components/layout/SessionHeader";
 import { SudokuGame } from "@/components/games/SudokuGame";
 import { PictureWordGame } from "@/components/games/PictureWordGame";
 import { CarRaceGame } from "@/components/games/CarRaceGame";
+import { WordSearchGame } from "@/components/games/WordSearchGame";
+import { SpeedTypeGame } from "@/components/games/SpeedTypeGame";
+import { WordChainGame } from "@/components/games/WordChainGame";
 import { pickWords } from "@/components/games/wordRotation";
 import { topicWords } from "@/utils/levelFilter";
 
@@ -22,7 +25,7 @@ interface GamesPageProps {
   onBackHome: () => void;
 }
 
-type Game = "menu" | "match" | "pick" | "listen" | "dictation" | "build" | "race" | "sudoku";
+type Game = "menu" | "match" | "pick" | "listen" | "dictation" | "build" | "race" | "sudoku" | "wordsearch" | "speedtype" | "wordchain";
 
 function shuffle<T>(a: T[]): T[] {
   const r = [...a];
@@ -63,6 +66,9 @@ export function GamesPage({ student, topicId, level = "all", studiedWordIds, onB
       { id: "build" as const, name: "Đuổi hình bắt chữ", desc: "Nhìn hình, ghép chữ", emoji: "🧩" },
       { id: "race" as const, name: "Đua xe học từ", desc: "Đáp đúng để về đích", emoji: "🏎️" },
       { id: "sudoku" as const, name: "Sudoku", desc: "Điền số 1-9 rèn tư duy", emoji: "🔢" },
+      { id: "wordsearch" as const, name: "Tìm từ", desc: "Tìm từ ẩn trong lưới chữ", emoji: "🔍" },
+      { id: "speedtype" as const, name: "Gõ nhanh", desc: "Gõ từ nhanh nhất có thể", emoji: "⚡" },
+      { id: "wordchain" as const, name: "Nối từ", desc: "Nối từ vs 3 bot, 10s/lượt", emoji: "🔗" },
     ];
     return (
       <main className="mx-auto w-full max-w-xl px-4">
@@ -109,6 +115,9 @@ export function GamesPage({ student, topicId, level = "all", studiedWordIds, onB
       {game === "build" && <PictureWordGame pool={base} onRecord={record} onClose={back} hard={hard} />}
       {game === "race" && <CarRaceGame pool={reviewPool} onRecord={record} onClose={back} hard={hard} />}
       {game === "sudoku" && <SudokuGame onClose={back} />}
+      {game === "wordsearch" && <WordSearchGame words={reviewPool.map((w) => ({ word: w.word, meaning_vi: w.meaning_vi }))} onComplete={() => {}} onBack={back} />}
+      {game === "speedtype" && <SpeedTypeGame words={reviewPool.map((w) => ({ word: w.word, meaning_vi: w.meaning_vi }))} onComplete={() => {}} onBack={back} />}
+      {game === "wordchain" && <WordChainGame words={SEED_VOCABULARY.map((w) => ({ word: w.word }))} onComplete={() => {}} onBack={back} />}
     </main>
   );
 }
