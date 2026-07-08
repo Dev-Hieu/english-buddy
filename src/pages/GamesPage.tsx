@@ -57,18 +57,30 @@ export function GamesPage({ student, topicId, level = "all", studiedWordIds, onB
   const record = (wordId: string, correct: boolean) => recordAnswer(student.id, wordId, correct).catch(() => {});
   const back = () => setGame("menu");
 
+  const [helpGame, setHelpGame] = useState<string | null>(null);
+
   if (game === "menu") {
     const games = [
-      { id: "match" as const, name: "Ghép từ", desc: "Nối từ với nghĩa", emoji: "🔗" },
-      { id: "pick" as const, name: "Chọn ảnh", desc: "Nhìn từ, chọn ảnh", emoji: "🖼️" },
-      { id: "listen" as const, name: "Nghe & chọn", desc: "Nghe rồi chọn từ", emoji: "👂" },
-      { id: "dictation" as const, name: "Nghe & gõ", desc: "Nghe rồi gõ lại từ (chính tả)", emoji: "⌨️" },
-      { id: "build" as const, name: "Đuổi hình bắt chữ", desc: "Nhìn hình, ghép chữ", emoji: "🧩" },
-      { id: "race" as const, name: "Đua xe học từ", desc: "Đáp đúng để về đích", emoji: "🏎️" },
-      { id: "sudoku" as const, name: "Sudoku", desc: "Điền số 1-9 rèn tư duy", emoji: "🔢" },
-      { id: "wordsearch" as const, name: "Tìm từ", desc: "Tìm từ ẩn trong lưới chữ", emoji: "🔍" },
-      { id: "speedtype" as const, name: "Gõ nhanh", desc: "Gõ từ nhanh nhất có thể", emoji: "⚡" },
-      { id: "wordchain" as const, name: "Nối từ", desc: "Nối từ vs 3 bot, 10s/lượt", emoji: "🔗" },
+      { id: "match" as const, name: "Ghép từ", desc: "Nối từ với nghĩa", emoji: "🔗",
+        guide: "Trên màn hình có các thẻ từ tiếng Anh và thẻ nghĩa tiếng Việt. Bấm vào 1 thẻ tiếng Anh rồi bấm thẻ nghĩa tương ứng để ghép đôi. Ghép đúng → thẻ biến mất. Ghép hết tất cả để hoàn thành!" },
+      { id: "pick" as const, name: "Chọn ảnh", desc: "Nhìn từ, chọn ảnh", emoji: "🖼️",
+        guide: "Một từ tiếng Anh hiện ra, bạn chọn đúng hình ảnh minh hoạ cho từ đó trong 4 lựa chọn. Chọn đúng → xanh, sai → đỏ. Hoàn thành 10 câu để xem điểm." },
+      { id: "listen" as const, name: "Nghe & chọn", desc: "Nghe rồi chọn từ", emoji: "👂",
+        guide: "Nghe phát âm một từ tiếng Anh, sau đó chọn đúng từ đó trong 4 lựa chọn. Rèn kỹ năng nghe và nhận biết từ vựng. Bấm loa để nghe lại." },
+      { id: "dictation" as const, name: "Nghe & gõ", desc: "Nghe rồi gõ lại từ (chính tả)", emoji: "⌨️",
+        guide: "Nghe phát âm một từ, sau đó gõ chính xác từ đó vào ô trống. Rèn chính tả và kỹ năng nghe. Không phân biệt hoa/thường." },
+      { id: "build" as const, name: "Đuổi hình bắt chữ", desc: "Nhìn hình, ghép chữ", emoji: "🧩",
+        guide: "Nhìn hình ảnh, sau đó ghép các chữ cái rời rạc thành từ tiếng Anh đúng. Bấm từng chữ cái theo thứ tự. Bấm 'Xoá' để sửa lại." },
+      { id: "race" as const, name: "Đua xe học từ", desc: "Đáp đúng để về đích", emoji: "🏎️",
+        guide: "Xe bạn chạy đua với đối thủ! Trả lời đúng nghĩa của từ → xe tăng tốc. Sai → xe chậm lại. Trả lời liên tiếp đúng → TURBO! Về đích trước để thắng." },
+      { id: "sudoku" as const, name: "Sudoku", desc: "Điền số 1-9 rèn tư duy", emoji: "🔢",
+        guide: "Điền số 1-9 vào lưới sao cho mỗi hàng, mỗi cột và mỗi ô 3×3 đều có đủ các số từ 1 đến 9 (không trùng). Bấm ô trống → chọn số. Chọn độ khó Dễ/Trung bình/Khó." },
+      { id: "wordsearch" as const, name: "Tìm từ", desc: "Tìm từ ẩn trong lưới chữ", emoji: "🔍",
+        guide: "Các từ tiếng Anh ẩn trong lưới chữ cái. Tìm và chọn bằng cách bấm chữ đầu rồi bấm chữ cuối của từ. Từ có thể nằm ngang, dọc hoặc chéo. Chọn 3 độ khó: Dễ (8×8), Trung bình (10×10), Khó (12×12)." },
+      { id: "speedtype" as const, name: "Gõ nhanh", desc: "Gõ từ nhanh nhất có thể", emoji: "⚡",
+        guide: "Một từ tiếng Anh hiện ra, gõ chính xác rồi bấm Enter. Bạn có 30 giây! Gõ càng nhiều từ đúng càng tốt. Xếp hạng: S (≥40 từ/phút), A (≥30), B (≥20), C (≥10), D (<10)." },
+      { id: "wordchain" as const, name: "Nối từ", desc: "Nối từ vs 3 bot, 10s/lượt", emoji: "🔗",
+        guide: "Bạn đấu với 3 bot! Mỗi lượt có 10 giây để gõ một từ tiếng Anh bắt đầu bằng chữ cái cuối của từ trước. Ví dụ: cat → tiger → rose. Từ không được lặp lại. Hết giờ hoặc sai → bị loại. Người cuối cùng thắng!" },
     ];
     return (
       <main className="mx-auto w-full max-w-md overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
@@ -92,14 +104,26 @@ export function GamesPage({ student, topicId, level = "all", studiedWordIds, onB
 
         <div className="space-y-3">
           {games.map((g) => (
-            <button key={g.id} type="button" onClick={() => setGame(g.id)}
-              className="flex w-full items-center gap-4 rounded-3xl border border-border/70 bg-card p-4 text-left shadow-card transition-transform active:scale-[0.99]">
-              <span className="flex h-14 w-14 items-center justify-center rounded-2xl bg-secondary text-3xl">{g.emoji}</span>
-              <span className="flex-1">
-                <span className="block text-lg font-extrabold">{g.name}</span>
-                <span className="block text-sm font-semibold text-muted-foreground">{g.desc}</span>
-              </span>
-            </button>
+            <div key={g.id} className="relative">
+              <button type="button" onClick={() => setGame(g.id)}
+                className="flex w-full items-center gap-4 rounded-3xl border border-border/70 bg-card p-4 text-left shadow-card transition-transform active:scale-[0.99]">
+                <span className="flex h-14 w-14 items-center justify-center rounded-2xl bg-secondary text-3xl">{g.emoji}</span>
+                <span className="flex-1">
+                  <span className="block text-lg font-extrabold">{g.name}</span>
+                  <span className="block text-sm font-semibold text-muted-foreground">{g.desc}</span>
+                </span>
+              </button>
+              <button type="button" onClick={(e) => { e.stopPropagation(); setHelpGame(helpGame === g.id ? null : g.id); }}
+                className="absolute right-3 top-3 flex h-7 w-7 items-center justify-center rounded-full bg-muted text-muted-foreground text-xs font-black hover:bg-primary/10 hover:text-primary transition-colors">
+                ?
+              </button>
+              {helpGame === g.id && (
+                <div className="mx-2 mt-1 rounded-2xl bg-primary/5 border border-primary/20 px-4 py-3 text-sm font-semibold text-foreground animate-pop">
+                  <p className="text-xs font-black text-primary mb-1">Cách chơi {g.name}</p>
+                  <p className="text-xs leading-relaxed">{g.guide}</p>
+                </div>
+              )}
+            </div>
           ))}
         </div>
       </main>
