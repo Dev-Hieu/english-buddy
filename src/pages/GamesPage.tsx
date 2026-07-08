@@ -1,10 +1,11 @@
-import { Car, Ear, Gamepad2, Grid3x3, Images, Link2, PartyPopper, Puzzle, Volume2 } from "lucide-react";
-import { useEffect, useMemo, useState } from "react";
+import { Car, Ear, Gamepad2, Grid3x3, Images, Link2, PartyPopper, Puzzle, Trophy, Volume2, X } from "lucide-react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { SEED_VOCABULARY } from "@/data/seedVocabulary";
 import type { Student, VocabularyWord } from "@/types";
 import { recordAnswer } from "@/services/progressService";
 import { speakText } from "@/services/speechService";
 import { playCorrect, playWrong, playWin, playStreak } from "@/services/soundService";
+import { submitGameScore, getGameLeaderboard, type GameScore } from "@/services/gameService";
 import { cn } from "@/components/ui/cn";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -40,6 +41,7 @@ function shuffle<T>(a: T[]): T[] {
 export function GamesPage({ student, topicId, level = "all", studiedWordIds, onBackHome }: GamesPageProps) {
   const [game, setGame] = useState<Game>("menu");
   const [hard, setHard] = useState(false);
+  const [lbGameId, setLbGameId] = useState<string | null>(null);
 
   const base = useMemo(() => {
     const t = topicWords(SEED_VOCABULARY, topicId, level);
@@ -114,6 +116,11 @@ export function GamesPage({ student, topicId, level = "all", studiedWordIds, onB
                   <span className="block text-sm font-semibold text-muted-foreground">{g.desc}</span>
                 </span>
               </button>
+              <button type="button" onClick={(e) => { e.stopPropagation(); setLbGameId(g.id); }}
+                className="absolute right-12 top-3 flex h-7 w-7 items-center justify-center rounded-full bg-amber-100 text-amber-600 text-xs font-black hover:bg-amber-200 transition-colors"
+                title="Bảng xếp hạng">
+                <Trophy className="h-3.5 w-3.5" />
+              </button>
               <button type="button" onClick={(e) => { e.stopPropagation(); setHelpGame(helpGame === g.id ? null : g.id); }}
                 className="absolute right-3 top-3 flex h-7 w-7 items-center justify-center rounded-full bg-muted text-muted-foreground text-xs font-black hover:bg-primary/10 hover:text-primary transition-colors">
                 ?
@@ -127,16 +134,17 @@ export function GamesPage({ student, topicId, level = "all", studiedWordIds, onB
             </div>
           ))}
         </div>
+        {lbGameId && <LeaderboardModal gameId={lbGameId} studentId={student.id} onClose={() => setLbGameId(null)} />}
       </main>
     );
   }
 
   return (
     <main className="mx-auto w-full max-w-md overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
-      {game === "match" && <MatchGame pool={reviewPool} onRecord={record} onClose={back} hard={hard} />}
-      {game === "pick" && <PickGame pool={reviewPool} onRecord={record} onClose={back} hard={hard} />}
-      {game === "listen" && <ListenGame pool={reviewPool} onRecord={record} onClose={back} hard={hard} />}
-      {game === "dictation" && <DictationGame pool={reviewPool} onRecord={record} onClose={back} hard={hard} />}
+      {game === "match" && <MatchGame pool={reviewPool} onRecord={record} onClose={back} hard={hard} studentId={student.id} />}
+      {game === "pick" && <PickGame pool={reviewPool} onRecord={record} onClose={back} hard={hard} studentId={student.id} />}
+      {game === "listen" && <ListenGame pool={reviewPool} onRecord={record} onClose={back} hard={hard} studentId={student.id} />}
+      {game === "dictation" && <DictationGame pool={reviewPool} onRecord={record} onClose={back} hard={hard} studentId={student.id} />}
       {game === "build" && <PictureWordGame pool={base} onRecord={record} onClose={back} hard={hard} />}
       {game === "race" && <CarRaceGame pool={reviewPool} onRecord={record} onClose={back} hard={hard} />}
       {game === "sudoku" && <SudokuGame onClose={back} />}
@@ -152,23 +160,87 @@ interface GameProps {
   onRecord: (wordId: string, correct: boolean) => void;
   onClose: () => void;
   hard: boolean;
+  studentId: string;
 }
 
-function Finished({ onClose, score }: { onClose: () => void; score?: string }) {
+function Finished({ onClose, score, gameId, studentId }: { onClose: () => void; score?: string; gameId?: string; studentId?: string }) {
+  const [leaderboard, setLeaderboard] = useState<GameScore[]>([]);
+  const submitted = useRef(false);
+
+  const numericScore = score ? parseInt(score.split("/")[0], 10) : 0;
+
   useEffect(() => { playWin(); }, []);
+
+  useEffect(() => {
+    if (!gameId || !studentId || submitted.current) return;
+    submitted.current = true;
+    submitGameScore(studentId, gameId, numericScore, score).catch(() => {});
+    getGameLeaderboard(gameId, 5).then(setLeaderboard).catch(() => {});
+  }, [gameId, studentId, numericScore, score]);
+
   return (
     <Card className="animate-pop">
       <CardContent className="flex flex-col items-center gap-4 p-8 text-center">
         <PartyPopper className="h-12 w-12 text-accent" />
         {score && <p className="text-4xl font-black text-primary">{score}</p>}
-        <p className="text-2xl font-black text-primary">{score ? "Hoàn thành!" : "Hoàn thành! 🎉"}</p>
+        <p className="text-2xl font-black text-primary">{score ? "Hoàn thành!" : "Hoàn thành!"}</p>
+        {leaderboard.length > 0 && (
+          <div className="w-full rounded-2xl bg-muted/60 p-3 text-left">
+            <p className="mb-2 flex items-center gap-1.5 text-sm font-black text-amber-600"><Trophy className="h-4 w-4" /> Top 5</p>
+            {leaderboard.map((e, i) => (
+              <div key={e.id} className={cn("flex items-center justify-between rounded-xl px-3 py-1.5 text-sm font-bold", e.studentId === studentId ? "bg-primary/10 text-primary" : "text-foreground")}>
+                <span>{i + 1}. {e.studentName}</span>
+                <span className="font-black">{e.score}</span>
+              </div>
+            ))}
+          </div>
+        )}
         <Button type="button" size="lg" className="w-full" onClick={onClose}>Chơi tiếp</Button>
       </CardContent>
     </Card>
   );
 }
 
-function MatchGame({ pool, onRecord, onClose, hard }: GameProps) {
+function LeaderboardModal({ gameId, studentId, onClose }: { gameId: string; studentId: string; onClose: () => void }) {
+  const [data, setData] = useState<GameScore[]>([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    getGameLeaderboard(gameId, 10).then(setData).catch(() => {}).finally(() => setLoading(false));
+  }, [gameId]);
+
+  const gameNames: Record<string, string> = { match: "Ghép từ", pick: "Chọn ảnh", listen: "Nghe & chọn", dictation: "Nghe & gõ", build: "Đuổi hình bắt chữ", race: "Đua xe", sudoku: "Sudoku", wordsearch: "Tìm từ", speedtype: "Gõ nhanh", wordchain: "Nối từ" };
+
+  return (
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 p-4" onClick={onClose}>
+      <div className="w-full max-w-sm rounded-3xl bg-card p-5 shadow-xl" onClick={(e) => e.stopPropagation()}>
+        <div className="mb-4 flex items-center justify-between">
+          <h3 className="flex items-center gap-2 text-lg font-black"><Trophy className="h-5 w-5 text-amber-500" /> {gameNames[gameId] ?? gameId}</h3>
+          <button type="button" onClick={onClose} className="rounded-full p-1 hover:bg-muted"><X className="h-5 w-5" /></button>
+        </div>
+        {loading ? (
+          <p className="py-8 text-center text-sm font-bold text-muted-foreground">Đang tải...</p>
+        ) : data.length === 0 ? (
+          <p className="py-8 text-center text-sm font-bold text-muted-foreground">Chưa có ai chơi game này</p>
+        ) : (
+          <div className="space-y-1">
+            {data.map((e, i) => (
+              <div key={e.id} className={cn("flex items-center justify-between rounded-xl px-3 py-2 text-sm font-bold", e.studentId === studentId ? "bg-primary/10 text-primary" : "text-foreground")}>
+                <span className="flex items-center gap-2">
+                  <span className="flex h-6 w-6 items-center justify-center rounded-full bg-muted text-xs font-black">{i + 1}</span>
+                  {e.studentName}
+                </span>
+                <span className="font-black">{e.score}</span>
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
+
+function MatchGame({ pool, onRecord, onClose, hard, studentId }: GameProps) {
   const [round] = useState(() => pickWords(pool, hard ? 6 : 4));
   const [vis] = useState(() => shuffle(round));
   const [left, setLeft] = useState<string | null>(null);
@@ -199,7 +271,7 @@ function MatchGame({ pool, onRecord, onClose, hard }: GameProps) {
   return (
     <>
       <SessionHeader title="Ghép từ" onClose={onClose} />
-      {done ? <Finished onClose={onClose} /> : (
+      {done ? <Finished onClose={onClose} score={`${round.length}/${round.length}`} gameId="match" studentId={studentId} /> : (
         <>
           {streak >= 2 && (
             <div className="mb-3 flex justify-center">
@@ -230,7 +302,7 @@ function MatchGame({ pool, onRecord, onClose, hard }: GameProps) {
   );
 }
 
-function PickGame({ pool, onRecord, onClose, hard }: GameProps) {
+function PickGame({ pool, onRecord, onClose, hard, studentId }: GameProps) {
   const imgPool = useMemo(() => { const w = pool.filter((x) => x.imageUrl); return w.length >= 4 ? w : pool; }, [pool]);
   const [targets] = useState(() => pickWords(imgPool, hard ? 8 : 5));
   const [n, setN] = useState(0);
@@ -243,7 +315,7 @@ function PickGame({ pool, onRecord, onClose, hard }: GameProps) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [n, targets]);
 
-  if (n >= targets.length || !target) return (<><SessionHeader title="Chọn ảnh" onClose={onClose} /><Finished onClose={onClose} score={`${correct}/${targets.length}`} /></>);
+  if (n >= targets.length || !target) return (<><SessionHeader title="Chọn ảnh" onClose={onClose} /><Finished onClose={onClose} score={`${correct}/${targets.length}`} gameId="pick" studentId={studentId} /></>);
 
   const choose = (w: VocabularyWord) => {
     if (picked) return;
@@ -274,7 +346,7 @@ function PickGame({ pool, onRecord, onClose, hard }: GameProps) {
   );
 }
 
-function ListenGame({ pool, onRecord, onClose, hard }: GameProps) {
+function ListenGame({ pool, onRecord, onClose, hard, studentId }: GameProps) {
   const [targets] = useState(() => pickWords(pool, hard ? 8 : 5));
   const [n, setN] = useState(0);
   const [picked, setPicked] = useState<string | null>(null);
@@ -286,7 +358,7 @@ function ListenGame({ pool, onRecord, onClose, hard }: GameProps) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [n, targets]);
 
-  if (n >= targets.length || !target) return (<><SessionHeader title="Nghe & chọn" onClose={onClose} /><Finished onClose={onClose} score={`${correct}/${targets.length}`} /></>);
+  if (n >= targets.length || !target) return (<><SessionHeader title="Nghe & chọn" onClose={onClose} /><Finished onClose={onClose} score={`${correct}/${targets.length}`} gameId="listen" studentId={studentId} /></>);
 
   const choose = (w: VocabularyWord) => {
     if (picked) return;
@@ -321,7 +393,7 @@ function ListenGame({ pool, onRecord, onClose, hard }: GameProps) {
 }
 
 // Nghe & gõ chính tả: nghe từ rồi gõ lại đúng chính tả.
-function DictationGame({ pool, onRecord, onClose, hard }: GameProps) {
+function DictationGame({ pool, onRecord, onClose, hard, studentId }: GameProps) {
   const [targets] = useState(() => pickWords(pool, hard ? 8 : 5));
   const [n, setN] = useState(0);
   const [input, setInput] = useState("");
@@ -335,7 +407,7 @@ function DictationGame({ pool, onRecord, onClose, hard }: GameProps) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [n]);
 
-  if (n >= targets.length || !target) return (<><SessionHeader title="Nghe & gõ" onClose={onClose} /><Finished onClose={onClose} score={`${correct}/${targets.length}`} /></>);
+  if (n >= targets.length || !target) return (<><SessionHeader title="Nghe & gõ" onClose={onClose} /><Finished onClose={onClose} score={`${correct}/${targets.length}`} gameId="dictation" studentId={studentId} /></>);
 
   const submit = () => {
     if (checked !== null || !input.trim()) return;

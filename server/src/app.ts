@@ -1319,6 +1319,51 @@ Return ONLY valid JSON, no markdown, no code fences.` },
     }
   });
 
+  // ── Game scores leaderboard ──
+  const VALID_GAME_IDS = new Set(["match", "pick", "listen", "dictation", "build", "race", "sudoku", "wordsearch", "speedtype", "wordchain"]);
+
+  app.post("/api/game-scores", requireAuth, (req, res) => {
+    const { studentId, gameId, score, detail } = req.body || {};
+    if (!studentId || !gameId || score == null) return res.status(400).json({ error: "thiếu studentId, gameId hoặc score" });
+    if (!VALID_GAME_IDS.has(gameId)) return res.status(400).json({ error: "gameId không hợp lệ" });
+    if (!canAccessStudent(req, res, studentId)) return;
+    const r = db.prepare(
+      "INSERT INTO game_scores (studentId, gameId, score, detail, createdAt) VALUES (?, ?, ?, ?, ?)"
+    ).run(studentId, gameId, score, detail ?? null, Date.now());
+    res.json({ id: r.lastInsertRowid });
+  });
+
+  app.get("/api/game-scores/:gameId", (req, res) => {
+    const { gameId } = req.params;
+    if (!VALID_GAME_IDS.has(gameId)) return res.status(400).json({ error: "gameId không hợp lệ" });
+    const limit = Math.min(Math.max(Number(req.query.limit) || 10, 1), 100);
+    const rows = db.prepare(
+      `SELECT gs.id, gs.studentId, s.name AS studentName, gs.score, gs.detail, gs.createdAt
+       FROM game_scores gs JOIN students s ON s.id = gs.studentId
+       WHERE gs.gameId = ? ORDER BY gs.score DESC LIMIT ?`
+    ).all(gameId, limit);
+    res.json(rows);
+  });
+
+  app.get("/api/game-scores/:gameId/my", requireAuth, (req, res) => {
+    const { gameId } = req.params;
+    const studentId = String(req.query.studentId || "");
+    if (!VALID_GAME_IDS.has(gameId)) return res.status(400).json({ error: "gameId không hợp lệ" });
+    if (!studentId) return res.status(400).json({ error: "thiếu studentId" });
+    if (!canAccessStudent(req, res, studentId)) return;
+    const best = db.prepare(
+      "SELECT MAX(score) AS bestScore FROM game_scores WHERE studentId = ? AND gameId = ?"
+    ).get(studentId, gameId) as any;
+    const bestScore = best?.bestScore ?? 0;
+    const rankRow = db.prepare(
+      "SELECT COUNT(DISTINCT studentId) + 1 AS rank FROM game_scores WHERE gameId = ? AND studentId != ? AND studentId IN (SELECT studentId FROM game_scores WHERE gameId = ? GROUP BY studentId HAVING MAX(score) > ?)"
+    ).get(gameId, studentId, gameId, bestScore) as any;
+    const totalPlayers = (db.prepare(
+      "SELECT COUNT(DISTINCT studentId) AS c FROM game_scores WHERE gameId = ?"
+    ).get(gameId) as any).c;
+    res.json({ bestScore, rank: rankRow?.rank ?? 1, totalPlayers });
+  });
+
   return app;
 }
 
