@@ -155,8 +155,11 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
 
         {/* CTA */}
         <button type="button" onClick={startLearning}
-          className="flex w-full items-center justify-center gap-2 rounded-2xl bg-primary py-3.5 text-base font-black text-white shadow-[0_4px_0_0_hsl(var(--primary-shadow))] transition-all active:translate-y-[3px] active:shadow-[0_1px_0_0_hsl(var(--primary-shadow))] hover:brightness-105">
-          <Play className="h-5 w-5" /> {resumeStarted ? "Tiếp tục học" : "Bắt đầu học"}
+          className="group flex w-full items-center justify-center gap-3 rounded-[1.25rem] bg-primary py-4 text-lg font-black text-white shadow-[0_6px_0_0_hsl(var(--primary-shadow))] transition-all active:translate-y-[3px] active:shadow-[0_2px_0_0_hsl(var(--primary-shadow))] hover:brightness-105">
+          <span className="flex h-9 w-9 items-center justify-center rounded-full bg-white/20 transition-transform group-hover:scale-110">
+            <Play className="h-5 w-5 ml-0.5" />
+          </span>
+          {resumeStarted ? "Tiếp tục học" : "Bắt đầu học"}
         </button>
       </section>
 
