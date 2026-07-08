@@ -35,17 +35,17 @@ interface HomePageProps {
   onNavigate: Nav;
 }
 
-// ── Skill tile with gradient background ──
-const SKILL_TILES: { icon: ComponentType<{ className?: string }>; title: string; view: string; gradient: string; iconColor: string }[] = [
-  { icon: Ear, title: "Nghe", view: "listening", gradient: "from-blue-50 to-cyan-50", iconColor: "text-blue-600" },
-  { icon: Mic, title: "Nói", view: "speak", gradient: "from-teal-50 to-emerald-50", iconColor: "text-teal-600" },
-  { icon: BookOpen, title: "Đọc", view: "reading", gradient: "from-green-50 to-lime-50", iconColor: "text-green-600" },
-  { icon: PenLine, title: "Viết", view: "writing", gradient: "from-purple-50 to-violet-50", iconColor: "text-purple-600" },
-  { icon: Sparkles, title: "Từ mới", view: "topics", gradient: "from-amber-50 to-yellow-50", iconColor: "text-amber-600" },
-  { icon: GraduationCap, title: "Ngữ pháp", view: "grammar", gradient: "from-rose-50 to-pink-50", iconColor: "text-rose-600" },
-  { icon: Gamepad2, title: "Game", view: "games", gradient: "from-pink-50 to-fuchsia-50", iconColor: "text-pink-600" },
-  { icon: MessageSquareText, title: "Cụm từ", view: "flashcard", gradient: "from-sky-50 to-blue-50", iconColor: "text-sky-600" },
-  { icon: Type, title: "Mẫu câu", view: "conversation", gradient: "from-orange-50 to-amber-50", iconColor: "text-orange-600" },
+// ── Skill tiles — professional palette: primary teal + neutral ──
+const SKILL_TILES: { icon: ComponentType<{ className?: string }>; title: string; view: string }[] = [
+  { icon: Ear, title: "Nghe", view: "listening" },
+  { icon: Mic, title: "Nói", view: "speak" },
+  { icon: BookOpen, title: "Đọc", view: "reading" },
+  { icon: PenLine, title: "Viết", view: "writing" },
+  { icon: Sparkles, title: "Từ mới", view: "topics" },
+  { icon: GraduationCap, title: "Ngữ pháp", view: "grammar" },
+  { icon: Gamepad2, title: "Game", view: "games" },
+  { icon: MessageSquareText, title: "Cụm từ", view: "flashcard" },
+  { icon: Type, title: "Mẫu câu", view: "conversation" },
 ];
 
 export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, learnedToday, reviewDue, pendingCount, dueTestCount, onStartSkillTest, onChangeStudent, onLogout, onOpenProfile, onNavigate }: HomePageProps) {
@@ -118,18 +118,18 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
       </header>
 
       {/* ── Stats + Progress Card ── */}
-      <section className="rounded-3xl bg-gradient-to-br from-primary/5 via-card to-success/5 border border-border/40 p-5 shadow-card space-y-4">
-        {/* Stats row — 3 badges equal width */}
+      <section className="rounded-3xl bg-card border border-border/50 p-5 shadow-card space-y-4">
+        {/* Stats row */}
         <div className="grid grid-cols-3 gap-2">
-          <div className="flex items-center justify-center gap-1.5 rounded-2xl bg-amber-50 py-2.5 text-sm font-extrabold text-amber-700">
-            <Star className="h-4 w-4" /> {xp} XP
+          <div className="flex items-center justify-center gap-1.5 rounded-xl bg-muted py-2.5 text-sm font-extrabold">
+            <Star className="h-4 w-4 text-primary" /> {xp}
           </div>
-          <div className="flex items-center justify-center gap-1.5 rounded-2xl bg-red-50 py-2.5 text-sm font-extrabold text-red-600">
-            <Flame className="h-4 w-4" /> {streak} ngày
+          <div className="flex items-center justify-center gap-1.5 rounded-xl bg-muted py-2.5 text-sm font-extrabold">
+            <Flame className="h-4 w-4 text-primary" /> {streak} ngày
           </div>
           <button type="button" onClick={() => onNavigate("leaderboard")}
-            className="flex items-center justify-center gap-1.5 rounded-2xl bg-primary/10 py-2.5 text-sm font-extrabold text-primary hover:bg-primary/15 transition-colors">
-            <Trophy className="h-4 w-4" /> {weekRank ? `#${weekRank}` : "Hạng"}
+            className="flex items-center justify-center gap-1.5 rounded-xl bg-muted py-2.5 text-sm font-extrabold hover:bg-primary/10 transition-colors">
+            <Trophy className="h-4 w-4 text-primary" /> {weekRank ? `#${weekRank}` : "—"}
           </button>
         </div>
 
@@ -144,7 +144,7 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
           <div className="h-3 w-full rounded-full bg-muted overflow-hidden">
             <div
               className={cn("h-full rounded-full transition-all duration-500",
-                goalReached ? "bg-gradient-to-r from-success to-emerald-400" : "bg-gradient-to-r from-primary to-success")}
+                goalReached ? "bg-success" : "bg-primary")}
               style={{ width: `${goalPct}%` }}
             />
           </div>
@@ -155,7 +155,7 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
 
         {/* CTA */}
         <button type="button" onClick={startLearning}
-          className="flex w-full items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-primary to-success py-3.5 text-base font-black text-white shadow-lg shadow-primary/20 transition-all active:scale-[0.98] active:shadow-md hover:brightness-105">
+          className="flex w-full items-center justify-center gap-2 rounded-2xl bg-primary py-3.5 text-base font-black text-white shadow-[0_4px_0_0_hsl(var(--primary-shadow))] transition-all active:translate-y-[3px] active:shadow-[0_1px_0_0_hsl(var(--primary-shadow))] hover:brightness-105">
           <Play className="h-5 w-5" /> {resumeStarted ? "Tiếp tục học" : "Bắt đầu học"}
         </button>
       </section>
@@ -165,31 +165,31 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
         <div className="flex gap-2 overflow-x-auto">
           {pendingCount >= 10 && (
             <button type="button" onClick={() => onStartSkillTest("new")}
-              className="flex items-center gap-2 shrink-0 rounded-2xl bg-success/10 border border-success/30 px-4 py-2.5 transition-all active:scale-95">
-              <GraduationCap className="h-5 w-5 text-success" />
+              className="flex items-center gap-2 shrink-0 rounded-2xl bg-card border border-border/50 px-4 py-2.5 shadow-sm transition-all active:scale-95 hover:border-primary/30">
+              <GraduationCap className="h-5 w-5 text-primary" />
               <div className="text-left">
-                <span className="text-xs font-extrabold text-success block">Thi mới</span>
+                <span className="text-xs font-extrabold block">Thi mới</span>
                 <span className="text-[10px] font-bold text-muted-foreground">{pendingCount} từ sẵn sàng</span>
               </div>
             </button>
           )}
           {dueTestCount > 0 && (
             <button type="button" onClick={() => onStartSkillTest("review")}
-              className="flex items-center gap-2 shrink-0 rounded-2xl bg-primary/10 border border-primary/30 px-4 py-2.5 transition-all active:scale-95">
+              className="flex items-center gap-2 shrink-0 rounded-2xl bg-card border border-border/50 px-4 py-2.5 shadow-sm transition-all active:scale-95 hover:border-primary/30">
               <RotateCcw className="h-5 w-5 text-primary" />
               <div className="text-left">
-                <span className="text-xs font-extrabold text-primary block">Thi lại</span>
+                <span className="text-xs font-extrabold block">Thi lại</span>
                 <span className="text-[10px] font-bold text-muted-foreground">{dueTestCount} từ đến hạn</span>
               </div>
             </button>
           )}
           {reviewDue > 0 && (
             <button type="button" onClick={() => onNavigate("review")}
-              className={cn("flex items-center gap-2 shrink-0 rounded-2xl bg-accent/10 border border-accent/30 px-4 py-2.5 transition-all active:scale-95",
+              className={cn("flex items-center gap-2 shrink-0 rounded-2xl bg-card border border-border/50 px-4 py-2.5 shadow-sm transition-all active:scale-95 hover:border-primary/30",
                 reviewDue > 5 && "animate-pulse")}>
-              <RotateCcw className="h-5 w-5 text-accent" />
+              <RotateCcw className="h-5 w-5 text-primary" />
               <div className="text-left">
-                <span className="text-xs font-extrabold text-accent block">Cần ôn</span>
+                <span className="text-xs font-extrabold block">Cần ôn</span>
                 <span className="text-[10px] font-bold text-muted-foreground">{reviewDue} từ</span>
               </div>
             </button>
@@ -205,17 +205,14 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
       {/* ── Kỹ năng 3×3 ── */}
       <section>
         <h2 className="mb-3 text-base font-black">Kỹ năng</h2>
-        <div className="grid grid-cols-3 gap-3">
+        <div className="grid grid-cols-3 gap-2.5">
           {SKILL_TILES.map((t) => (
             <button key={t.view} type="button" onClick={() => onNavigate(t.view)}
-              className={cn(
-                "flex flex-col items-center gap-2 rounded-2xl bg-gradient-to-br p-4 shadow-sm transition-all duration-150 active:scale-[0.95] hover:shadow-md",
-                t.gradient,
-              )}>
-              <span className={cn("flex h-12 w-12 items-center justify-center rounded-xl bg-white/70 shadow-sm", t.iconColor)}>
-                <t.icon className="h-6 w-6" />
+              className="flex flex-col items-center gap-2 rounded-2xl bg-card border border-border/40 p-4 shadow-sm transition-all duration-150 active:scale-[0.95] hover:shadow-md hover:border-primary/30">
+              <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-primary/10 text-primary">
+                <t.icon className="h-5.5 w-5.5" />
               </span>
-              <span className="text-sm font-extrabold">{t.title}</span>
+              <span className="text-xs font-extrabold">{t.title}</span>
             </button>
           ))}
         </div>
@@ -227,16 +224,15 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
           <h3 className="mb-2 flex items-center gap-2 text-base font-black">
             <ClipboardCheck className="h-5 w-5 text-primary" /> Kết quả gần đây
           </h3>
-          <div className="flex gap-2.5 overflow-x-auto pb-1 -mx-1 px-1">
+          <div className="flex gap-2 overflow-x-auto pb-1 -mx-1 px-1">
             {testResults.map((r) => {
               const grade = r.score >= 90 ? "A+" : r.score >= 80 ? "A" : r.score >= 70 ? "B" : r.score >= 60 ? "C" : r.score >= 50 ? "D" : "F";
-              const bg = r.score >= 80 ? "from-success/10 to-emerald-50" : r.score >= 60 ? "from-yellow-50 to-amber-50" : "from-red-50 to-pink-50";
-              const color = r.score >= 80 ? "text-success" : r.score >= 60 ? "text-yellow-600" : "text-red-600";
+              const color = r.score >= 80 ? "text-success" : r.score >= 60 ? "text-amber-600" : "text-red-500";
               return (
-                <div key={r.id} className={cn("shrink-0 w-32 rounded-2xl bg-gradient-to-br p-3.5 text-center shadow-sm", bg)}>
+                <div key={r.id} className="shrink-0 w-24 rounded-2xl bg-card border border-border/40 p-3 text-center shadow-sm">
                   <p className={cn("text-2xl font-black", color)}>{grade}</p>
-                  <p className="text-sm font-extrabold">{r.score}%</p>
-                  <p className="text-[10px] font-bold text-muted-foreground mt-0.5">{new Date(r.createdAt).toLocaleDateString("vi-VN")}</p>
+                  <p className="text-xs font-extrabold text-muted-foreground">{r.score}%</p>
+                  <p className="text-[10px] text-muted-foreground mt-0.5">{new Date(r.createdAt).toLocaleDateString("vi-VN")}</p>
                 </div>
               );
             })}
