@@ -1,4 +1,4 @@
-import { BookOpen, ChevronRight, ClipboardCheck, Ear, Flame, Gamepad2, GraduationCap, LogOut, MessageSquareText, Mic, PenLine, RotateCcw, Settings, Sparkles, Star, Trophy, Type, UserRound } from "lucide-react";
+import { BookOpen, ClipboardCheck, Ear, Flame, Gamepad2, GraduationCap, LogOut, MessageSquareText, Mic, PenLine, RotateCcw, Settings, Sparkles, Star, Trophy, Type, UserRound } from "lucide-react";
 import { useEffect, useState, type ComponentType } from "react";
 import { getLeaderboard } from "@/services/studentService";
 import { getSkillTestResults, type SkillTestResult } from "@/services/progressService";
@@ -121,66 +121,37 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
         </div>
       </header>
 
-      {/* ── Tiến độ học tập ── */}
-      <section className="rounded-3xl bg-card border border-border/50 p-5 shadow-card space-y-4">
-        {/* Header + stats inline */}
-        <div className="flex items-center justify-between">
-          <h2 className="text-base font-black">Tiến độ của tôi</h2>
-          <div className="flex items-center gap-3 text-xs font-extrabold text-muted-foreground">
-            <span className="flex items-center gap-1"><Star className="h-3.5 w-3.5 text-primary" />{xp}</span>
-            <span className="flex items-center gap-1"><Flame className="h-3.5 w-3.5 text-primary" />{streak}</span>
-            <button type="button" onClick={() => onNavigate("leaderboard")} className="flex items-center gap-1 hover:text-primary transition-colors">
-              <Trophy className="h-3.5 w-3.5 text-primary" />{weekRank ? `#${weekRank}` : "—"}
-            </button>
+      {/* ── Biểu đồ tiến độ — bấm vào xem chi tiết ── */}
+      <button type="button" onClick={() => onNavigate("dashboard")}
+        className="w-full rounded-2xl bg-card border border-border/50 px-4 py-3 shadow-sm text-left transition-all active:scale-[0.99] hover:shadow-md hover:border-primary/30">
+        {/* Header row */}
+        <div className="flex items-center justify-between mb-2">
+          <div className="flex items-center gap-2">
+            <span className="text-xs font-black">{learned.size} từ</span>
+            <span className="text-[10px] text-muted-foreground">·</span>
+            <span className="flex items-center gap-0.5 text-[10px] font-bold text-muted-foreground"><Star className="h-3 w-3 text-primary" />{xp}</span>
+            <span className="flex items-center gap-0.5 text-[10px] font-bold text-muted-foreground"><Flame className="h-3 w-3 text-primary" />{streak}</span>
           </div>
+          <span className="text-[10px] font-bold text-primary">Xem chi tiết →</span>
         </div>
-
-        {/* Overall progress */}
-        <div className="flex items-center gap-3">
-          <div className="relative flex h-14 w-14 shrink-0 items-center justify-center">
-            <svg className="h-full w-full -rotate-90" viewBox="0 0 48 48">
-              <circle cx="24" cy="24" r="20" fill="none" stroke="currentColor" strokeWidth="4" className="text-muted" />
-              <circle cx="24" cy="24" r="20" fill="none" stroke="currentColor" strokeWidth="4" className="text-primary"
-                strokeDasharray={`${overallPct * 1.257} 126`} strokeLinecap="round" />
-            </svg>
-            <span className="absolute text-xs font-black text-primary">{overallPct}%</span>
-          </div>
-          <div className="flex-1 min-w-0">
-            <p className="text-sm font-extrabold">{learned.size}/{totalWords} từ đã học</p>
-            <p className="text-xs text-muted-foreground">
-              {goalReached ? `Hôm nay: ${learnedToday} từ ✓` : `Hôm nay: ${learnedToday}/${goal} từ`}
-              {" · "}{student.level?.toUpperCase?.() || "A1"}
-            </p>
-          </div>
-          <button type="button" onClick={() => onNavigate("dashboard")}
-            className="shrink-0 rounded-xl bg-muted px-3 py-1.5 text-[10px] font-bold text-muted-foreground hover:bg-primary/10 hover:text-primary transition-colors">
-            Chi tiết →
-          </button>
-        </div>
-
-        {/* Topic progress bars — bấm vào từng topic để học tiếp */}
-        <div className="space-y-2">
+        {/* Bar chart — cột dọc, chiều cao giới hạn 48px */}
+        <div className="flex items-end gap-1 h-12">
           {topicProgress.map((t) => (
-            <button key={t.id} type="button" onClick={() => onNavigate("lesson", t.id, learnLevel)}
-              className="flex w-full items-center gap-2.5 rounded-xl px-1 py-1 text-left transition-colors hover:bg-muted/50 active:scale-[0.99]">
-              <span className="w-16 shrink-0 text-xs font-bold text-muted-foreground truncate">{t.name}</span>
-              <div className="flex-1 h-2 rounded-full bg-muted overflow-hidden">
-                <div className={cn("h-full rounded-full transition-all duration-500", t.pct >= 100 ? "bg-success" : "bg-primary")}
-                  style={{ width: `${t.pct}%` }} />
+            <div key={t.id} className="flex-1 flex flex-col items-center gap-0.5">
+              <div className="w-full rounded-t-sm bg-muted overflow-hidden" style={{ height: 48 }}>
+                <div className={cn("w-full rounded-t-sm transition-all duration-500", t.pct >= 100 ? "bg-success" : t.pct > 0 ? "bg-primary" : "bg-muted")}
+                  style={{ height: `${Math.max(t.pct, 2)}%`, marginTop: `${100 - Math.max(t.pct, 2)}%` }} />
               </div>
-              <span className={cn("w-10 shrink-0 text-right text-[10px] font-extrabold", t.pct >= 100 ? "text-success" : "text-muted-foreground")}>
-                {t.done}/{t.total}
-              </span>
-            </button>
+            </div>
           ))}
         </div>
-
-        {/* Xem tất cả chủ đề */}
-        <button type="button" onClick={() => onNavigate("topics")}
-          className="flex w-full items-center justify-center gap-1 text-xs font-bold text-primary hover:underline">
-          Tất cả {allTopics.length} chủ đề <ChevronRight className="h-3.5 w-3.5" />
-        </button>
-      </section>
+        {/* Labels dưới cột */}
+        <div className="flex gap-1 mt-1">
+          {topicProgress.map((t) => (
+            <span key={t.id} className="flex-1 text-center text-[8px] font-bold text-muted-foreground truncate">{t.name.split(" ")[0]}</span>
+          ))}
+        </div>
+      </button>
 
 
       {/* ── Action badges: Thi + Ôn ── */}
