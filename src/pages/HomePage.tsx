@@ -36,17 +36,17 @@ interface HomePageProps {
   onNavigate: Nav;
 }
 
-// ── Skill tiles — lucide icons, themed by CSS ──
-const SKILL_TILES: { icon: ComponentType<{ className?: string }>; title: string; view: string }[] = [
-  { icon: Ear, title: "Nghe", view: "listening" },
-  { icon: Mic, title: "Nói", view: "speak" },
-  { icon: BookOpen, title: "Đọc", view: "reading" },
-  { icon: PenLine, title: "Viết", view: "writing" },
-  { icon: Sparkles, title: "Từ mới", view: "topics" },
-  { icon: GraduationCap, title: "Ngữ pháp", view: "grammar" },
-  { icon: Gamepad2, title: "Game", view: "games" },
-  { icon: MessageSquareText, title: "Cụm từ", view: "phrases" },
-  { icon: Type, title: "Mẫu câu", view: "conversation" },
+// ── Skill tiles — iOS app icon style: bold bg + white icon ──
+const SKILL_TILES: { icon: ComponentType<{ className?: string }>; title: string; view: string; bg: string }[] = [
+  { icon: Ear, title: "Nghe", view: "listening", bg: "bg-blue-500" },
+  { icon: Mic, title: "Nói", view: "speak", bg: "bg-teal-500" },
+  { icon: BookOpen, title: "Đọc", view: "reading", bg: "bg-green-500" },
+  { icon: PenLine, title: "Viết", view: "writing", bg: "bg-violet-500" },
+  { icon: Sparkles, title: "Từ mới", view: "topics", bg: "bg-amber-500" },
+  { icon: GraduationCap, title: "Ngữ pháp", view: "grammar", bg: "bg-rose-500" },
+  { icon: Gamepad2, title: "Game", view: "games", bg: "bg-pink-500" },
+  { icon: MessageSquareText, title: "Cụm từ", view: "phrases", bg: "bg-sky-500" },
+  { icon: Type, title: "Mẫu câu", view: "conversation", bg: "bg-orange-500" },
 ];
 
 export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, learnedToday, reviewDue, pendingCount, dueTestCount, onStartSkillTest, onChangeStudent, onLogout, onOpenProfile, onNavigate }: HomePageProps) {
@@ -190,14 +190,14 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
       {/* ── Kỹ năng 3×3 ── */}
       <section>
         <h2 className="mb-3 text-base font-black">Kỹ năng</h2>
-        <div className="grid grid-cols-3 gap-2.5">
+        <div className="grid grid-cols-3 gap-4">
           {SKILL_TILES.map((t) => (
             <button key={t.view} type="button" onClick={() => onNavigate(t.view)}
-              className="flex flex-col items-center gap-2 rounded-2xl bg-secondary p-4 shadow-sm transition-all duration-150 active:scale-[0.95] hover:shadow-md hover:brightness-[0.97]">
-              <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/15 text-primary">
+              className="flex flex-col items-center gap-2 transition-all duration-150 active:scale-[0.90] hover:scale-[1.05]">
+              <span className={cn("flex h-14 w-14 items-center justify-center rounded-[1rem] text-white shadow-lg", t.bg)}>
                 <t.icon className="h-7 w-7" />
               </span>
-              <span className="text-xs font-extrabold text-secondary-foreground">{t.title}</span>
+              <span className="text-[11px] font-bold text-foreground">{t.title}</span>
             </button>
           ))}
         </div>
