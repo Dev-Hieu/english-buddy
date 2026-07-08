@@ -219,11 +219,11 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
       <section className="mt-4">
         <h2 className="mb-2 text-base font-extrabold">Kỹ năng</h2>
         <div className="grid grid-cols-3 gap-2">
-          <NavTile icon={Ear} iconClass="bg-blue-100 text-blue-600" title="Nghe" onClick={() => onNavigate("shadowing")} />
+          <NavTile icon={Ear} iconClass="bg-blue-100 text-blue-600" title="Nghe" onClick={() => onNavigate("listening")} />
           <NavTile icon={Mic} iconClass="bg-primary/10 text-primary" title="Nói" onClick={() => onNavigate("speak")} />
-          <NavTile icon={BookOpen} iconClass="bg-green-100 text-green-600" title="Đọc" onClick={() => onNavigate("flashcard")} />
-          <NavTile icon={PenLine} iconClass="bg-purple-100 text-purple-600" title="Viết" onClick={() => onNavigate("exam")} />
-          <NavTile icon={Sparkles} iconClass="bg-amber-100 text-amber-600" title="Từ mới" onClick={() => onNavigate("mywords")} />
+          <NavTile icon={BookOpen} iconClass="bg-green-100 text-green-600" title="Đọc" onClick={() => onNavigate("reading")} />
+          <NavTile icon={PenLine} iconClass="bg-purple-100 text-purple-600" title="Viết" onClick={() => onNavigate("writing")} />
+          <NavTile icon={Sparkles} iconClass="bg-amber-100 text-amber-600" title="Từ mới" onClick={() => onNavigate("topics")} />
           <NavTile icon={GraduationCap} iconClass="bg-accent/10 text-accent" title="Ngữ pháp" onClick={() => onNavigate("grammar")} />
         </div>
       </section>
