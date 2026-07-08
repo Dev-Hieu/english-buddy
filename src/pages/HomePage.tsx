@@ -4,17 +4,14 @@ import { getLeaderboard } from "@/services/studentService";
 import { getSkillTestResults, type SkillTestResult } from "@/services/progressService";
 import { SEED_TOPICS } from "@/data/seedTopics";
 import { SEED_VOCABULARY } from "@/data/seedVocabulary";
-import type { Level, Student, VocabularyWord } from "@/types";
+import type { Level, Student } from "@/types";
 import { topicWords, topicsWithLevel } from "@/utils/levelFilter";
 import { avatarEmoji } from "@/components/ui/emoji";
-import { Button } from "@/components/ui/button";
-import { ProgressRing } from "@/components/ui/progress";
 import { ParrotLogo } from "@/components/ParrotLogo";
 import { VoicePicker } from "@/components/ui/VoicePicker";
 import { ThemePicker } from "@/components/ui/ThemePicker";
 import { cn } from "@/components/ui/cn";
 import { LEVEL_ORDER } from "@/types";
-import { SPEAK_PASS } from "@/components/speak/SpeakResult";
 
 function levelOf(xp: number) { const thresholds = [0, 50, 150, 400, 800, 1500, 3000]; const lvl = thresholds.findIndex((t) => xp < t); return lvl < 0 ? thresholds.length : lvl; }
 function levelLabel(xp: number) { return ["Mới bắt đầu", "Sơ cấp", "Tiền trung cấp", "Trung cấp", "Trung cao cấp", "Cao cấp", "Thành thạo"][levelOf(xp) - 1] || ""; }
@@ -38,24 +35,18 @@ interface HomePageProps {
   onNavigate: Nav;
 }
 
-function NavTile({ icon: Icon, iconClass, title, badge, onClick }: {
-  icon: ComponentType<{ className?: string }>;
-  iconClass: string;
-  title: string;
-  badge?: string;
-  onClick: () => void;
-}) {
-  return (
-    <button type="button" onClick={onClick}
-      className="flex flex-col items-center gap-1.5 rounded-2xl border border-border/50 bg-card p-3 shadow-sm transition-all active:scale-[0.96] hover:shadow-md relative">
-      <span className={cn("flex h-10 w-10 items-center justify-center rounded-xl", iconClass)}>
-        <Icon className="h-5 w-5" />
-      </span>
-      <span className="text-xs font-extrabold text-center leading-tight">{title}</span>
-      {badge && <span className="absolute -top-1 -right-1 flex h-5 min-w-5 items-center justify-center rounded-full bg-red-500 px-1 text-[10px] font-black text-white">{badge}</span>}
-    </button>
-  );
-}
+// ── Skill tile with gradient background ──
+const SKILL_TILES: { icon: ComponentType<{ className?: string }>; title: string; view: string; gradient: string; iconColor: string }[] = [
+  { icon: Ear, title: "Nghe", view: "listening", gradient: "from-blue-50 to-cyan-50", iconColor: "text-blue-600" },
+  { icon: Mic, title: "Nói", view: "speak", gradient: "from-teal-50 to-emerald-50", iconColor: "text-teal-600" },
+  { icon: BookOpen, title: "Đọc", view: "reading", gradient: "from-green-50 to-lime-50", iconColor: "text-green-600" },
+  { icon: PenLine, title: "Viết", view: "writing", gradient: "from-purple-50 to-violet-50", iconColor: "text-purple-600" },
+  { icon: Sparkles, title: "Từ mới", view: "topics", gradient: "from-amber-50 to-yellow-50", iconColor: "text-amber-600" },
+  { icon: GraduationCap, title: "Ngữ pháp", view: "grammar", gradient: "from-rose-50 to-pink-50", iconColor: "text-rose-600" },
+  { icon: Gamepad2, title: "Game", view: "games", gradient: "from-pink-50 to-fuchsia-50", iconColor: "text-pink-600" },
+  { icon: MessageSquareText, title: "Cụm từ", view: "flashcard", gradient: "from-sky-50 to-blue-50", iconColor: "text-sky-600" },
+  { icon: Type, title: "Mẫu câu", view: "conversation", gradient: "from-orange-50 to-amber-50", iconColor: "text-orange-600" },
+];
 
 export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, learnedToday, reviewDue, pendingCount, dueTestCount, onStartSkillTest, onChangeStudent, onLogout, onOpenProfile, onNavigate }: HomePageProps) {
   const learned = new Set(studiedWordIds);
@@ -63,11 +54,12 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
   const [showMenu, setShowMenu] = useState(false);
   const [weekRank, setWeekRank] = useState<number | null>(null);
 
-  useEffect(() => { getSkillTestResults(student.id).then(r => setTestResults(r.slice(0, 3))).catch(() => {}); }, [student.id]);
+  useEffect(() => { getSkillTestResults(student.id).then(r => setTestResults(r.slice(0, 5))).catch(() => {}); }, [student.id]);
   useEffect(() => { getLeaderboard("week").then((lb) => { const idx = lb.findIndex((e: any) => e.id === student.id); setWeekRank(idx >= 0 ? idx + 1 : null); }).catch(() => {}); }, [student.id]);
 
   const goal = student.dailyGoal || 10;
   const goalReached = learnedToday >= goal;
+  const goalPct = Math.min(100, Math.round((learnedToday / goal) * 100));
   const level = levelOf(xp);
   const validLevel = LEVEL_ORDER.includes(student.level as Level);
   const learnLevel = validLevel ? (student.level as string) : "all";
@@ -81,20 +73,21 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
   const startLearning = () => resumeTopic ? onNavigate("lesson", resumeTopic.id, learnLevel) : onNavigate("topics");
 
   return (
-    <main className="mx-auto w-full max-w-2xl px-4 pt-4 pb-6">
-      {/* ── Header: Logo + Avatar dropdown ── */}
-      <header className="flex items-center justify-between mb-3">
-        <div className="flex items-center gap-2">
-          <ParrotLogo size={32} />
-          <span className="text-lg font-black tracking-tight">English Buddy</span>
+    <main className="mx-auto w-full max-w-2xl px-4 pt-4 pb-6 space-y-4">
+
+      {/* ── Header ── */}
+      <header className="flex items-center justify-between">
+        <div className="flex items-center gap-2.5">
+          <ParrotLogo size={36} />
+          <span className="text-xl font-black tracking-tight">English Buddy</span>
         </div>
         <div className="relative">
           <button type="button" onClick={() => setShowMenu(!showMenu)}
-            className="flex items-center gap-2 rounded-2xl bg-card border border-border px-3 py-1.5 shadow-sm transition-all active:scale-95">
+            className="flex items-center gap-2 rounded-2xl bg-card border border-border/60 px-3 py-1.5 shadow-sm transition-all active:scale-95 hover:shadow-md">
             <span className="text-xl">{avatarEmoji(student.avatar)}</span>
             <div className="text-right">
               <p className="text-sm font-black leading-tight">{student.name}</p>
-              <p className="text-[10px] font-bold text-muted-foreground">Lv {level}</p>
+              <p className="text-[10px] font-bold text-muted-foreground">Lv {level} · {levelLabel(xp)}</p>
             </div>
           </button>
           {showMenu && (
@@ -124,88 +117,126 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
         </div>
       </header>
 
-      {/* ── Hero: Stats + Goal + CTA ── */}
-      <section className="overflow-hidden rounded-3xl bg-gradient-to-br from-primary via-primary to-success p-5 text-white shadow-lg">
-        {/* Stats row */}
-        <div className="flex items-center justify-between mb-4">
-          <div className="flex items-center gap-2">
-            <span className="flex items-center gap-1 rounded-full bg-white/20 backdrop-blur-sm px-2.5 py-1 text-sm font-extrabold"><Star className="h-4 w-4" />{xp}</span>
-            <span className="flex items-center gap-1 rounded-full bg-white/20 backdrop-blur-sm px-2.5 py-1 text-sm font-extrabold"><Flame className="h-4 w-4" />{streak}</span>
-            <button type="button" onClick={() => onNavigate("leaderboard")} className="flex items-center gap-1 rounded-full bg-white/25 backdrop-blur-sm px-2.5 py-1 text-sm font-extrabold hover:bg-white/40 transition-colors">
-              <Trophy className="h-4 w-4" />{weekRank ? `#${weekRank}` : "—"}
-            </button>
+      {/* ── Stats + Progress Card ── */}
+      <section className="rounded-3xl bg-gradient-to-br from-primary/5 via-card to-success/5 border border-border/40 p-5 shadow-card space-y-4">
+        {/* Stats row — 3 badges equal width */}
+        <div className="grid grid-cols-3 gap-2">
+          <div className="flex items-center justify-center gap-1.5 rounded-2xl bg-amber-50 py-2.5 text-sm font-extrabold text-amber-700">
+            <Star className="h-4 w-4" /> {xp} XP
           </div>
-          <p className="text-xs font-bold opacity-75">{levelLabel(xp)}</p>
+          <div className="flex items-center justify-center gap-1.5 rounded-2xl bg-red-50 py-2.5 text-sm font-extrabold text-red-600">
+            <Flame className="h-4 w-4" /> {streak} ngày
+          </div>
+          <button type="button" onClick={() => onNavigate("leaderboard")}
+            className="flex items-center justify-center gap-1.5 rounded-2xl bg-primary/10 py-2.5 text-sm font-extrabold text-primary hover:bg-primary/15 transition-colors">
+            <Trophy className="h-4 w-4" /> {weekRank ? `#${weekRank}` : "Hạng"}
+          </button>
         </div>
 
-        {/* Goal + CTA */}
-        <div className="flex items-center gap-4">
-          <ProgressRing value={learnedToday} max={goal} size={72} stroke={8}>
-            <span className="text-2xl font-black leading-none">{learnedToday}</span>
-            <span className="text-[10px] font-bold opacity-70">/{goal}</span>
-          </ProgressRing>
-          <div className="flex-1 min-w-0">
-            <p className="text-lg font-black leading-tight">
-              {goalReached ? "Đạt mục tiêu! 🎉" : `Cần ${goal - learnedToday} từ nữa`}
+        {/* Progress bar */}
+        <div>
+          <div className="flex items-center justify-between mb-1.5">
+            <p className="text-sm font-extrabold">
+              {goalReached ? "Đạt mục tiêu hôm nay! 🎉" : `Hôm nay: ${learnedToday}/${goal} từ`}
             </p>
-            <p className="text-sm font-semibold opacity-80">Vốn từ đã thuộc: {learnedTotal}</p>
+            <span className="text-xs font-bold text-muted-foreground">{goalPct}%</span>
           </div>
-          <Button type="button" variant="accent" size="lg" className="shrink-0 rounded-2xl shadow-md" onClick={startLearning}>
-            <Play className="h-5 w-5" /> {resumeStarted ? "Tiếp" : "Học"}
-          </Button>
+          <div className="h-3 w-full rounded-full bg-muted overflow-hidden">
+            <div
+              className={cn("h-full rounded-full transition-all duration-500",
+                goalReached ? "bg-gradient-to-r from-success to-emerald-400" : "bg-gradient-to-r from-primary to-success")}
+              style={{ width: `${goalPct}%` }}
+            />
+          </div>
+          <p className="mt-1.5 text-xs font-semibold text-muted-foreground">
+            Vốn từ: {learnedTotal} đã thuộc · {student.level?.toUpperCase?.() || "A1"}
+          </p>
         </div>
+
+        {/* CTA */}
+        <button type="button" onClick={startLearning}
+          className="flex w-full items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-primary to-success py-3.5 text-base font-black text-white shadow-lg shadow-primary/20 transition-all active:scale-[0.98] active:shadow-md hover:brightness-105">
+          <Play className="h-5 w-5" /> {resumeStarted ? "Tiếp tục học" : "Bắt đầu học"}
+        </button>
       </section>
 
-      {/* ── Action cards: Thi + Ôn ── */}
+      {/* ── Action badges: Thi + Ôn ── */}
       {(pendingCount >= 10 || dueTestCount > 0 || reviewDue > 0) && (
-        <div className="mt-3 grid grid-cols-3 gap-2">
+        <div className="flex gap-2 overflow-x-auto">
           {pendingCount >= 10 && (
             <button type="button" onClick={() => onStartSkillTest("new")}
-              className="flex flex-col items-center gap-1 rounded-2xl border-2 border-success/40 bg-success/5 p-3 transition-all active:scale-95">
-              <GraduationCap className="h-6 w-6 text-success" />
-              <span className="text-xs font-extrabold text-success">Thi mới</span>
-              <span className="text-[10px] font-bold text-muted-foreground">{pendingCount} từ</span>
+              className="flex items-center gap-2 shrink-0 rounded-2xl bg-success/10 border border-success/30 px-4 py-2.5 transition-all active:scale-95">
+              <GraduationCap className="h-5 w-5 text-success" />
+              <div className="text-left">
+                <span className="text-xs font-extrabold text-success block">Thi mới</span>
+                <span className="text-[10px] font-bold text-muted-foreground">{pendingCount} từ sẵn sàng</span>
+              </div>
             </button>
           )}
           {dueTestCount > 0 && (
             <button type="button" onClick={() => onStartSkillTest("review")}
-              className="flex flex-col items-center gap-1 rounded-2xl border-2 border-primary/40 bg-primary/5 p-3 transition-all active:scale-95">
-              <RotateCcw className="h-6 w-6 text-primary" />
-              <span className="text-xs font-extrabold text-primary">Thi lại</span>
-              <span className="text-[10px] font-bold text-muted-foreground">{dueTestCount} từ</span>
+              className="flex items-center gap-2 shrink-0 rounded-2xl bg-primary/10 border border-primary/30 px-4 py-2.5 transition-all active:scale-95">
+              <RotateCcw className="h-5 w-5 text-primary" />
+              <div className="text-left">
+                <span className="text-xs font-extrabold text-primary block">Thi lại</span>
+                <span className="text-[10px] font-bold text-muted-foreground">{dueTestCount} từ đến hạn</span>
+              </div>
             </button>
           )}
           {reviewDue > 0 && (
             <button type="button" onClick={() => onNavigate("review")}
-              className="flex flex-col items-center gap-1 rounded-2xl border-2 border-accent/40 bg-accent/5 p-3 transition-all active:scale-95">
-              <RotateCcw className="h-6 w-6 text-accent" />
-              <span className="text-xs font-extrabold text-accent">Cần ôn</span>
-              <span className="text-[10px] font-bold text-muted-foreground">{reviewDue} từ</span>
+              className={cn("flex items-center gap-2 shrink-0 rounded-2xl bg-accent/10 border border-accent/30 px-4 py-2.5 transition-all active:scale-95",
+                reviewDue > 5 && "animate-pulse")}>
+              <RotateCcw className="h-5 w-5 text-accent" />
+              <div className="text-left">
+                <span className="text-xs font-extrabold text-accent block">Cần ôn</span>
+                <span className="text-[10px] font-bold text-muted-foreground">{reviewDue} từ</span>
+              </div>
             </button>
           )}
         </div>
       )}
       {pendingCount > 0 && pendingCount < 10 && (
-        <p className="mt-2 text-center text-xs font-bold text-muted-foreground">
+        <p className="text-center text-xs font-bold text-muted-foreground">
           Còn {10 - pendingCount} từ nữa để mở bài thi
         </p>
       )}
 
-      {/* ── Kết quả thi gần đây (chuyển lên trên) ── */}
+      {/* ── Kỹ năng 3×3 ── */}
+      <section>
+        <h2 className="mb-3 text-base font-black">Kỹ năng</h2>
+        <div className="grid grid-cols-3 gap-3">
+          {SKILL_TILES.map((t) => (
+            <button key={t.view} type="button" onClick={() => onNavigate(t.view)}
+              className={cn(
+                "flex flex-col items-center gap-2 rounded-2xl bg-gradient-to-br p-4 shadow-sm transition-all duration-150 active:scale-[0.95] hover:shadow-md",
+                t.gradient,
+              )}>
+              <span className={cn("flex h-12 w-12 items-center justify-center rounded-xl bg-white/70 shadow-sm", t.iconColor)}>
+                <t.icon className="h-6 w-6" />
+              </span>
+              <span className="text-sm font-extrabold">{t.title}</span>
+            </button>
+          ))}
+        </div>
+      </section>
+
+      {/* ── Kết quả thi gần đây ── */}
       {testResults.length > 0 && (
-        <section className="mt-4">
-          <h3 className="mb-2 flex items-center gap-2 text-base font-extrabold">
+        <section>
+          <h3 className="mb-2 flex items-center gap-2 text-base font-black">
             <ClipboardCheck className="h-5 w-5 text-primary" /> Kết quả gần đây
           </h3>
-          <div className="flex gap-2 overflow-x-auto pb-1">
+          <div className="flex gap-2.5 overflow-x-auto pb-1 -mx-1 px-1">
             {testResults.map((r) => {
               const grade = r.score >= 90 ? "A+" : r.score >= 80 ? "A" : r.score >= 70 ? "B" : r.score >= 60 ? "C" : r.score >= 50 ? "D" : "F";
+              const bg = r.score >= 80 ? "from-success/10 to-emerald-50" : r.score >= 60 ? "from-yellow-50 to-amber-50" : "from-red-50 to-pink-50";
               const color = r.score >= 80 ? "text-success" : r.score >= 60 ? "text-yellow-600" : "text-red-600";
               return (
-                <div key={r.id} className="shrink-0 w-28 rounded-2xl border border-border bg-card p-3 text-center shadow-sm">
+                <div key={r.id} className={cn("shrink-0 w-32 rounded-2xl bg-gradient-to-br p-3.5 text-center shadow-sm", bg)}>
                   <p className={cn("text-2xl font-black", color)}>{grade}</p>
                   <p className="text-sm font-extrabold">{r.score}%</p>
-                  <p className="text-[10px] text-muted-foreground">{new Date(r.createdAt).toLocaleDateString("vi-VN")}</p>
+                  <p className="text-[10px] font-bold text-muted-foreground mt-0.5">{new Date(r.createdAt).toLocaleDateString("vi-VN")}</p>
                 </div>
               );
             })}
@@ -213,23 +244,7 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
         </section>
       )}
 
-      {/* ── Kỹ năng ── */}
-      <section className="mt-4">
-        <h2 className="mb-2 text-base font-extrabold">Kỹ năng</h2>
-        <div className="grid grid-cols-3 gap-2">
-          <NavTile icon={Ear} iconClass="bg-blue-100 text-blue-600" title="Nghe" onClick={() => onNavigate("listening")} />
-          <NavTile icon={Mic} iconClass="bg-primary/10 text-primary" title="Nói" onClick={() => onNavigate("speak")} />
-          <NavTile icon={BookOpen} iconClass="bg-green-100 text-green-600" title="Đọc" onClick={() => onNavigate("reading")} />
-          <NavTile icon={PenLine} iconClass="bg-purple-100 text-purple-600" title="Viết" onClick={() => onNavigate("writing")} />
-          <NavTile icon={Sparkles} iconClass="bg-amber-100 text-amber-600" title="Từ mới" onClick={() => onNavigate("topics")} />
-          <NavTile icon={GraduationCap} iconClass="bg-accent/10 text-accent" title="Ngữ pháp" onClick={() => onNavigate("grammar")} />
-          <NavTile icon={Gamepad2} iconClass="bg-pink-100 text-pink-600" title="Game" onClick={() => onNavigate("games")} />
-          <NavTile icon={MessageSquareText} iconClass="bg-teal-100 text-teal-600" title="Cụm từ" onClick={() => onNavigate("flashcard")} />
-          <NavTile icon={Type} iconClass="bg-orange-100 text-orange-600" title="Mẫu câu" onClick={() => onNavigate("conversation")} />
-        </div>
-      </section>
-
-      <div className="mb-4" />
+      <div className="pb-2" />
     </main>
   );
 }
