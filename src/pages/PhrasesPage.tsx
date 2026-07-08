@@ -56,7 +56,7 @@ export function PhrasesPage({ student, onBackHome }: Props) {
   if (screen === "categories") {
     return (
       <main className="mx-auto w-full max-w-xl px-4">
-        <SessionHeader title="Cau noi thong dung" onClose={onBackHome} />
+        <SessionHeader title="Cụm từ thông dụng" onClose={onBackHome} />
 
         {/* Level filter */}
         <div className="mb-3 flex flex-wrap gap-1.5">
@@ -98,7 +98,7 @@ export function PhrasesPage({ student, onBackHome }: Props) {
           right={
             filteredPhrases.length > 0 ? (
               <Button type="button" size="sm" variant="accent" onClick={() => setScreen("practice")}>
-                Luyen tap
+                Luyện tập
               </Button>
             ) : undefined
           }
@@ -106,7 +106,7 @@ export function PhrasesPage({ student, onBackHome }: Props) {
 
         {filteredPhrases.length === 0 ? (
           <p className="mt-8 text-center text-sm font-bold text-muted-foreground">
-            Khong co cau nao o cap do nay.
+            Không có câu nào ở cấp độ này.
           </p>
         ) : (
           <div className="space-y-2.5">
@@ -203,20 +203,20 @@ function PracticeView({ phrases, categoryName, onClose }: { phrases: Phrase[]; c
   if (!card) {
     return (
       <>
-        <SessionHeader title="Luyen tap" onClose={onClose} />
+        <SessionHeader title="Luyện tập" onClose={onClose} />
         <Card className="animate-pop">
           <CardContent className="flex flex-col items-center gap-4 p-8 text-center">
             <span className="flex h-16 w-16 items-center justify-center rounded-full bg-success/20">
               <Eye className="h-8 w-8 text-success" />
             </span>
             <p className="text-3xl font-black text-primary">{reviewed}/{total}</p>
-            <p className="text-sm font-extrabold text-success">Hoan thanh!</p>
+            <p className="text-sm font-extrabold text-success">Hoàn thành!</p>
             <p className="text-xs text-muted-foreground">Ban da xem het {total} cau trong "{categoryName}"</p>
             <Button type="button" size="lg" className="w-full" onClick={reshuffle}>
-              <Shuffle className="h-4 w-4" /> Luyen lai
+              <Shuffle className="h-4 w-4" /> Luyện lại
             </Button>
             <Button type="button" variant="outline" size="lg" className="w-full" onClick={onClose}>
-              <ArrowLeft className="h-4 w-4" /> Quay lai
+              <ArrowLeft className="h-4 w-4" /> Quay lại
             </Button>
           </CardContent>
         </Card>
@@ -226,7 +226,7 @@ function PracticeView({ phrases, categoryName, onClose }: { phrases: Phrase[]; c
 
   return (
     <>
-      <SessionHeader title="Luyen tap" onClose={onClose} progress={Math.round((index / total) * 100)} />
+      <SessionHeader title="Luyện tập" onClose={onClose} progress={Math.round((index / total) * 100)} />
 
       {/* Direction toggle */}
       <div className="mb-3 flex justify-center gap-1.5">
@@ -243,7 +243,7 @@ function PracticeView({ phrases, categoryName, onClose }: { phrases: Phrase[]; c
       </div>
 
       <p className="mb-2 text-center text-xs font-bold text-muted-foreground">
-        {index + 1}/{total} · Da xem: {reviewed}
+        {index + 1}/{total} · Đã xem: {reviewed}
       </p>
 
       <Card>
@@ -263,7 +263,7 @@ function PracticeView({ phrases, categoryName, onClose }: { phrases: Phrase[]; c
           {/* Reveal area */}
           {!revealed ? (
             <Button type="button" size="lg" className="w-full" onClick={reveal}>
-              <Eye className="h-5 w-5" /> Xem dap an
+              <Eye className="h-5 w-5" /> Xem đáp án
             </Button>
           ) : (
             <div className="w-full space-y-4">
@@ -281,7 +281,7 @@ function PracticeView({ phrases, categoryName, onClose }: { phrases: Phrase[]; c
               )}
 
               <Button type="button" size="lg" className="w-full" onClick={next}>
-                Tiep theo
+                Tiếp theo
               </Button>
             </div>
           )}
