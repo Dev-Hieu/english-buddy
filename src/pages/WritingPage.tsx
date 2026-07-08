@@ -88,6 +88,16 @@ const SENTENCE_TEMPLATES: Record<CEFRLevel, ((w: string) => string)[]> = {
   ],
 };
 
+/* Word count hints per level */
+const WORD_COUNT_HINT: Record<CEFRLevel, string> = {
+  A1: "30\u201350 words",
+  A2: "50\u201380 words",
+  B1: "80\u2013120 words",
+  B2: "120\u2013180 words",
+  C1: "180\u2013250 words",
+  C2: "250\u2013350 words",
+};
+
 /* Essay prompts per level */
 const ESSAY_PROMPTS: Record<CEFRLevel, string[]> = {
   A1: [
@@ -105,7 +115,7 @@ const ESSAY_PROMPTS: Record<CEFRLevel, string[]> = {
     "Describe a typical weekend for you.",
   ],
   B1: [
-    "Write about your favorite holiday and why it is special to you.",
+    "Do you think it is better to learn online or in a classroom? Compare the two and give your opinion.",
     "Do you think technology makes life better or worse? Explain your view.",
     "Describe a memorable trip you have taken. What made it special?",
     "Write about the advantages and disadvantages of living in a big city.",
@@ -542,6 +552,7 @@ Grade the essay and respond ONLY with valid JSON (no markdown, no extra text):
             <div className="rounded-xl bg-amber-50 p-4 text-center space-y-2">
               <p className="text-xs font-bold text-amber-600 uppercase">Trình độ {level} · Chủ đề</p>
               <p className="text-sm font-extrabold text-amber-900">{prompts[promptIndex]}</p>
+              <p className="text-xs text-amber-700">Gợi ý độ dài: {WORD_COUNT_HINT[level]}</p>
             </div>
 
             <textarea value={essay} onChange={(e) => setEssay(e.target.value)}
@@ -549,7 +560,7 @@ Grade the essay and respond ONLY with valid JSON (no markdown, no extra text):
               rows={8} disabled={grading}
               className="w-full rounded-xl border border-border bg-background px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-primary/50 resize-none disabled:opacity-60" />
 
-            <p className="text-xs text-muted-foreground text-right">{essay.trim().split(/\s+/).filter(Boolean).length} từ</p>
+            <p className="text-xs text-muted-foreground text-right">{essay.trim().split(/\s+/).filter(Boolean).length} từ · Mục tiêu: {WORD_COUNT_HINT[level]}</p>
 
             {error && (
               <div className="flex items-center gap-2 rounded-xl bg-red-50 p-3 text-sm font-bold text-red-700">

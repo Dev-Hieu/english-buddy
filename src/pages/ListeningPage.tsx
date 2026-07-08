@@ -49,84 +49,124 @@ interface StoryItem {
 }
 
 const LISTENING_STORIES: StoryItem[] = [
-  // ─── A1 ───
+  // ─── A1 ─── (20-40 words, very simple sentences, common nouns/verbs)
   {
     id: "ls1", title: "My Morning", titleVi: "Buổi sáng của tôi", level: "a1",
-    text: "I wake up at seven o'clock. I eat bread and drink milk for breakfast. Then I go to school. I like my morning.",
+    text: "I wake up at seven. I brush my teeth and wash my face. Then I eat bread and drink milk. After breakfast I walk to school. I like my morning.",
     questions: [
-      { question: "What time does the speaker wake up?", options: ["Six o'clock", "Seven o'clock", "Eight o'clock", "Nine o'clock"], answer: 1 },
-      { question: "What does the speaker eat for breakfast?", options: ["Rice", "Bread", "Eggs", "Fruit"], answer: 1 },
-      { question: "Where does the speaker go after breakfast?", options: ["To the park", "To school", "To work", "To the shop"], answer: 1 },
+      { question: "What time does the speaker wake up?", options: ["Six", "Seven", "Eight", "Nine"], answer: 1 },
+      { question: "What does the speaker eat?", options: ["Rice", "Bread", "Eggs", "Fruit"], answer: 1 },
+      { question: "How does the speaker go to school?", options: ["By bus", "By car", "Walking", "By bike"], answer: 2 },
     ],
   },
   {
-    id: "ls2", title: "My Dog", titleVi: "Con chó của tôi", level: "a1",
-    text: "I have a dog. His name is Max. Max is brown and small. He likes to run in the park. I play with Max every day.",
+    id: "ls2", title: "My Dog Max", titleVi: "Con chó Max", level: "a1",
+    text: "I've got a dog. His name's Max. He's small and brown. He likes to run in the park. I play with him every day. Max is my best friend.",
     questions: [
-      { question: "What is the dog's name?", options: ["Buddy", "Rex", "Max", "Sam"], answer: 2 },
+      { question: "What's the dog's name?", options: ["Buddy", "Rex", "Max", "Sam"], answer: 2 },
       { question: "What color is the dog?", options: ["White", "Black", "Brown", "Gray"], answer: 2 },
       { question: "Where does the dog like to run?", options: ["In the house", "In the park", "At school", "In the garden"], answer: 1 },
     ],
   },
-  // ─── A2 ───
   {
-    id: "ls3", title: "The Weather Today", titleVi: "Thời tiết hôm nay", level: "a2",
-    text: "Today the weather is very nice. The sun is shining and the sky is blue. It is warm outside. My friends and I go to the park after school. We play football and eat ice cream. It is a perfect day.",
+    id: "ls3", title: "My Family", titleVi: "Gia đình tôi", level: "a1",
+    text: "There are four people in my family. My dad's a teacher. My mom works at a hospital. I've got one sister. She's five years old. We live in a small house. I love my family.",
     questions: [
-      { question: "How is the weather today?", options: ["Rainy", "Cold", "Nice and warm", "Windy"], answer: 2 },
-      { question: "What do they do after school?", options: ["Go home", "Go to the park", "Go shopping", "Study"], answer: 1 },
-      { question: "What do they eat?", options: ["Cake", "Candy", "Ice cream", "Pizza"], answer: 2 },
+      { question: "How many people are in the family?", options: ["Three", "Four", "Five", "Six"], answer: 1 },
+      { question: "What does the dad do?", options: ["He's a doctor", "He's a teacher", "He's a cook", "He's a driver"], answer: 1 },
+      { question: "How old is the sister?", options: ["Three", "Four", "Five", "Six"], answer: 2 },
+    ],
+  },
+  // ─── A2 ─── (40-70 words, simple past/present, daily life, short dialogues)
+  {
+    id: "ls4", title: "A Day at the Beach", titleVi: "Một ngày ở biển", level: "a2",
+    text: "Last Sunday my family went to the beach. It was sunny and warm. We swam in the sea and built a sandcastle. My sister found some pretty shells. At lunchtime we ate sandwiches and drank juice. In the afternoon we played volleyball. We didn't want to go home. It was a wonderful day.",
+    questions: [
+      { question: "When did they go to the beach?", options: ["Saturday", "Sunday", "Monday", "Friday"], answer: 1 },
+      { question: "What did the sister find?", options: ["Stones", "Fish", "Shells", "Flowers"], answer: 2 },
+      { question: "What did they eat for lunch?", options: ["Pizza", "Rice", "Sandwiches", "Burgers"], answer: 2 },
+      { question: "What sport did they play?", options: ["Football", "Tennis", "Basketball", "Volleyball"], answer: 3 },
     ],
   },
   {
-    id: "ls4", title: "Shopping with Mom", titleVi: "Đi mua sắm với mẹ", level: "a2",
-    text: "On Saturday, I go shopping with my mom. We go to the supermarket. We buy vegetables, fruit, and chicken. Mom also buys a new book for me. I am very happy. We carry the bags to the car and drive home.",
+    id: "ls5", title: "Shopping with Mom", titleVi: "Đi mua sắm với mẹ", level: "a2",
+    text: "On Saturday I went shopping with my mom. We drove to the supermarket. We bought vegetables, fruit, and some chicken. Mom also got a new book for me. I was really happy. Then we stopped at a cafe and had hot chocolate. It was a nice afternoon.",
     questions: [
-      { question: "When do they go shopping?", options: ["Monday", "Friday", "Saturday", "Sunday"], answer: 2 },
-      { question: "What does Mom buy for the child?", options: ["A toy", "A book", "Clothes", "A phone"], answer: 1 },
-      { question: "How do they go home?", options: ["By bus", "By car", "On foot", "By bike"], answer: 1 },
+      { question: "When did they go shopping?", options: ["Monday", "Friday", "Saturday", "Sunday"], answer: 2 },
+      { question: "What did Mom buy for the child?", options: ["A toy", "A book", "Clothes", "A phone"], answer: 1 },
+      { question: "Where did they stop after shopping?", options: ["A park", "A restaurant", "A cafe", "A library"], answer: 2 },
     ],
   },
-  // ─── B1 ───
   {
-    id: "ls5", title: "The New Neighbor", titleVi: "Người hàng xóm mới", level: "b1",
-    text: "Last week, a new family moved into the house next to ours. They have two children, a boy and a girl. The boy is about my age, so we started talking. His name is David and he comes from Canada. He told me about his old school and his friends there. I invited him to play football with my friends. He was very happy and said yes. Now we are becoming good friends.",
+    id: "ls6", title: "My Hobby", titleVi: "Sở thích của tôi", level: "a2",
+    text: "I really like drawing. Every evening after homework I sit at my desk and draw. I mostly draw animals and flowers. My favorite thing to draw is cats. Last month I won a drawing competition at school. My teacher said I'm very talented. I want to be an artist when I grow up.",
+    questions: [
+      { question: "What's the speaker's hobby?", options: ["Singing", "Drawing", "Dancing", "Reading"], answer: 1 },
+      { question: "What does the speaker like to draw most?", options: ["Dogs", "Trees", "Cats", "Houses"], answer: 2 },
+      { question: "What happened last month?", options: ["Started a new class", "Won a competition", "Got a new pet", "Had a birthday"], answer: 1 },
+      { question: "What does the speaker want to be?", options: ["A teacher", "A doctor", "An artist", "A singer"], answer: 2 },
+    ],
+  },
+  // ─── B1 ─── (70-120 words, varied tenses, social/work topics, opinions)
+  {
+    id: "ls7", title: "The New Neighbor", titleVi: "Người hàng xóm mới", level: "b1",
+    text: "Last week a new family moved into the house next to ours. They've got two kids, a boy and a girl. The boy's about my age, so we started talking right away. His name's David and he's from Canada. He told me about his old school and how much he misses his friends there. I felt bad for him, so I invited him to play football with my group. He was so happy he said yes immediately. We've been hanging out every day since then. I think we're going to be really good friends.",
     questions: [
       { question: "Where did the new family move to?", options: ["Across the street", "Next door", "Another city", "A nearby apartment"], answer: 1 },
-      { question: "Where is David from?", options: ["Australia", "England", "Canada", "America"], answer: 2 },
-      { question: "What did the speaker invite David to do?", options: ["Watch a movie", "Play football", "Go to school", "Have dinner"], answer: 1 },
+      { question: "Where's David from?", options: ["Australia", "England", "Canada", "America"], answer: 2 },
+      { question: "Why did the speaker invite David to play?", options: ["David asked him", "He felt bad for David", "Their parents told them to", "They were in the same class"], answer: 1 },
       { question: "How many children does the new family have?", options: ["One", "Two", "Three", "Four"], answer: 1 },
     ],
   },
   {
-    id: "ls6", title: "A Cooking Lesson", titleVi: "Bài học nấu ăn", level: "b1",
-    text: "Yesterday, my grandmother taught me how to cook chicken soup. First, we washed the vegetables and cut them into small pieces. Then we boiled water in a big pot and added the chicken. After thirty minutes, we put in the vegetables and some salt. The soup smelled wonderful. When it was ready, the whole family sat down together to eat. Everyone said the soup was delicious. I felt very proud.",
+    id: "ls8", title: "A Cooking Lesson", titleVi: "Bài học nấu ăn", level: "b1",
+    text: "Yesterday my grandmother taught me how to make chicken soup. First we washed the vegetables and cut them into small pieces. Then we boiled water in a big pot and put the chicken in. After about thirty minutes we added the vegetables and a bit of salt. The kitchen smelled amazing. When it was ready the whole family sat down to eat together. Everyone said the soup was delicious, and my grandmother smiled at me. I felt really proud of myself. I can't wait to cook again next weekend.",
     questions: [
       { question: "Who taught the speaker to cook?", options: ["Mother", "Father", "Grandmother", "A teacher"], answer: 2 },
       { question: "What did they cook?", options: ["Fried rice", "Chicken soup", "Pasta", "Fish"], answer: 1 },
-      { question: "How long did they boil the chicken?", options: ["Ten minutes", "Twenty minutes", "Thirty minutes", "One hour"], answer: 2 },
-      { question: "How did the speaker feel?", options: ["Tired", "Sad", "Proud", "Bored"], answer: 2 },
-    ],
-  },
-  // ─── B2 ───
-  {
-    id: "ls7", title: "Working from Home", titleVi: "Làm việc tại nhà", level: "b2",
-    text: "Since the pandemic, many companies have allowed their employees to work from home. This has changed the way people think about their daily routines. Some workers enjoy the flexibility of working from home because they save time on commuting and can spend more time with family. However, others find it difficult to separate work from personal life. They often end up working longer hours because there is no clear boundary. Experts suggest creating a dedicated workspace and setting strict working hours to maintain a healthy balance.",
-    questions: [
-      { question: "What caused many companies to allow working from home?", options: ["A new law", "The pandemic", "Employee requests", "Cost reduction"], answer: 1 },
-      { question: "What do some workers enjoy about working from home?", options: ["Higher salary", "Flexibility and less commuting", "More meetings", "Better equipment"], answer: 1 },
-      { question: "What problem do some workers face?", options: ["No internet", "Difficulty separating work and personal life", "Too many breaks", "Boredom"], answer: 1 },
-      { question: "What do experts suggest?", options: ["Work at a cafe", "Create a dedicated workspace and set strict hours", "Work only part-time", "Change jobs"], answer: 1 },
+      { question: "How long did they cook the chicken?", options: ["Ten minutes", "Twenty minutes", "Thirty minutes", "One hour"], answer: 2 },
+      { question: "How did the speaker feel at the end?", options: ["Tired", "Sad", "Proud", "Bored"], answer: 2 },
     ],
   },
   {
-    id: "ls8", title: "Protecting the Ocean", titleVi: "Bảo vệ đại dương", level: "b2",
-    text: "The ocean covers more than seventy percent of the Earth's surface and is home to millions of species. Unfortunately, human activities such as plastic pollution, overfishing, and oil spills are causing serious damage to marine ecosystems. Scientists estimate that eight million tons of plastic enter the ocean every year. This plastic harms sea animals who mistake it for food. Many countries are now taking action by banning single-use plastics and creating marine protected areas. Individuals can also help by reducing plastic use, recycling properly, and supporting organizations that work to keep our oceans clean.",
+    id: "ls9", title: "A Trip to the Mountains", titleVi: "Chuyến đi lên núi", level: "b1",
+    text: "During the summer holiday my family took a trip to the mountains. We stayed at a small hotel near a lake. Every morning we'd go hiking on different trails. The views were incredible. One day we saw some wild deer near the river. My dad took lots of photos. In the evenings we'd sit around a campfire and tell stories. I've never felt so relaxed in my life. The trip only lasted five days, but it gave me memories I'll never forget. I really hope we can go back next year.",
     questions: [
-      { question: "How much of the Earth's surface does the ocean cover?", options: ["Fifty percent", "Sixty percent", "Seventy percent", "Eighty percent"], answer: 2 },
-      { question: "How much plastic enters the ocean each year?", options: ["One million tons", "Five million tons", "Eight million tons", "Ten million tons"], answer: 2 },
-      { question: "Why does plastic harm sea animals?", options: ["It is too heavy", "They mistake it for food", "It is too hot", "It blocks sunlight"], answer: 1 },
-      { question: "What are some countries doing to help?", options: ["Building more ships", "Banning single-use plastics", "Closing beaches", "Stopping fishing completely"], answer: 1 },
+      { question: "Where did the family stay?", options: ["A tent", "A friend's house", "A small hotel", "A cabin"], answer: 2 },
+      { question: "What did they do every morning?", options: ["Swimming", "Hiking", "Fishing", "Cycling"], answer: 1 },
+      { question: "What animals did they see?", options: ["Bears", "Rabbits", "Deer", "Eagles"], answer: 2 },
+      { question: "How long was the trip?", options: ["Three days", "Five days", "One week", "Two weeks"], answer: 1 },
+    ],
+  },
+  // ─── B2 ─── (120-180 words, complex ideas, abstract topics, natural speech)
+  {
+    id: "ls10", title: "Working from Home", titleVi: "Làm việc tại nhà", level: "b2",
+    text: "Since the pandemic a lot of companies have let their employees work from home, and honestly it's changed the way people think about their daily lives. Some workers love the flexibility because they don't have to commute anymore. They can spend that extra time with their families or on hobbies. But it's not all positive. Many people find it really hard to switch off when their office is also their living room. They end up working longer hours without even realizing it. There's also the social side. Working alone all day can feel pretty isolating, and some people really miss chatting with colleagues over coffee. Experts say the key is to set up a proper workspace at home and stick to a fixed schedule. That way you've got a clear line between work time and personal time. It takes discipline, but most people say it's worth it.",
+    questions: [
+      { question: "What's one benefit of working from home?", options: ["Higher salary", "No commuting", "More meetings", "Better equipment"], answer: 1 },
+      { question: "What problem do some workers have?", options: ["No internet", "Difficulty stopping work", "Too many breaks", "Not enough work"], answer: 1 },
+      { question: "Why do some people feel isolated?", options: ["They don't have phones", "They work alone all day", "They live far away", "They don't like their job"], answer: 1 },
+      { question: "What do experts recommend?", options: ["Work at a cafe", "Set up a proper workspace and fixed schedule", "Work only part-time", "Change jobs"], answer: 1 },
+    ],
+  },
+  {
+    id: "ls11", title: "Protecting the Ocean", titleVi: "Bảo vệ đại dương", level: "b2",
+    text: "The ocean covers more than seventy percent of our planet and it's home to millions of species. But unfortunately we're doing a lot of damage to it. Plastic pollution is probably the biggest problem right now. Scientists think about eight million tons of plastic end up in the ocean every single year. Sea animals like turtles and fish often mistake this plastic for food, which can kill them. Overfishing is another serious issue because it's disrupting the natural balance of marine life. The good news is that people are starting to pay attention. Many countries have banned single use plastics and they're creating protected areas in the ocean where fishing isn't allowed. But governments can't do it alone. We all need to do our part by using less plastic, recycling properly, and supporting organizations that protect marine life. Even small changes in our daily habits can make a real difference.",
+    questions: [
+      { question: "How much of the Earth's surface does the ocean cover?", options: ["Fifty percent", "Sixty percent", "More than seventy percent", "Eighty percent"], answer: 2 },
+      { question: "How much plastic enters the ocean each year?", options: ["One million tons", "Five million tons", "About eight million tons", "Ten million tons"], answer: 2 },
+      { question: "Why does plastic harm sea animals?", options: ["It's too heavy", "They mistake it for food", "It's too hot", "It blocks sunlight"], answer: 1 },
+      { question: "What's the speaker's main message?", options: ["Stop eating fish", "Only governments can help", "Everyone needs to do their part", "The ocean is too damaged to save"], answer: 2 },
+    ],
+  },
+  {
+    id: "ls12", title: "The Future of Education", titleVi: "Tương lai của giáo dục", level: "b2",
+    text: "Over the past few years technology has completely transformed the way we learn. Online courses and video lessons have made education accessible to people who couldn't attend traditional schools. You can now learn almost anything from coding to cooking just by watching videos on your phone. But there's an ongoing debate about whether this is actually better than classroom learning. Some educators argue that students need face to face interaction to develop social skills and stay motivated. Others believe that online learning gives students more freedom to study at their own pace. Personally I think the best approach is a mix of both. Students can watch lectures online and then come to class for discussions and group projects. This way they get the convenience of technology without losing the human connection. Whatever happens it's clear that education will keep evolving, and we need to be ready to adapt.",
+    questions: [
+      { question: "What has technology done to education?", options: ["Made it more expensive", "Transformed how we learn", "Replaced all teachers", "Made it less popular"], answer: 1 },
+      { question: "What do some educators worry about?", options: ["Too many students", "Students losing social skills", "Technology being too expensive", "Not enough online courses"], answer: 1 },
+      { question: "What approach does the speaker prefer?", options: ["Only online learning", "Only classroom learning", "A mix of both", "No technology at all"], answer: 2 },
+      { question: "What does the speaker say about the future?", options: ["Nothing will change", "Education will keep evolving", "Schools will close", "Online learning will disappear"], answer: 1 },
     ],
   },
 ];

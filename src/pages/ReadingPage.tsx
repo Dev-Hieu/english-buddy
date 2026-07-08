@@ -8,9 +8,9 @@ import { cn } from "@/components/ui/cn";
 
 interface Props { student: Student; onBackHome: () => void; }
 
-type CEFRLevel = "A1" | "A2" | "B1" | "B2";
+type CEFRLevel = "A1" | "A2" | "B1" | "B2" | "C1";
 
-const LEVELS: CEFRLevel[] = ["A1", "A2", "B1", "B2"];
+const LEVELS: CEFRLevel[] = ["A1", "A2", "B1", "B2", "C1"];
 
 /* ------------------------------------------------------------------ */
 /*  Mini dictionary for word tap                                      */
@@ -66,6 +66,27 @@ const MINI_DICT: Record<string, string> = {
   color: "màu sắc", red: "đỏ", blue: "xanh dương", yellow: "vàng",
   white: "trắng", black: "đen", purple: "tím",
   number: "số", one: "một", two: "hai", three: "ba", four: "bốn", five: "năm",
+  breakfast: "bữa sáng", dinner: "bữa tối", delicious: "ngon", soup: "súp",
+  restaurant: "nhà hàng", order: "gọi món", pizza: "pizza", milk: "sữa",
+  bread: "bánh mì", rice: "cơm", chicken: "gà/thịt gà", banana: "chuối",
+  bananas: "chuối", especially: "đặc biệt", favorite: "yêu thích",
+  cute: "dễ thương", name: "tên", lucky: "may mắn",
+  evening: "buổi tối", night: "buổi tối/đêm",
+  market: "chợ", buy: "mua", sell: "bán", shop: "cửa hàng",
+  workplace: "nơi làm việc", employee: "nhân viên", employer: "người sử dụng lao động",
+  productivity: "năng suất", research: "nghiên cứu", significant: "đáng kể",
+  flexibility: "sự linh hoạt", remote: "từ xa", commute: "đi lại",
+  autonomy: "sự tự chủ", isolation: "sự cô lập", boundaries: "ranh giới",
+  struggle: "đấu tranh", discipline: "kỷ luật", distractions: "sự xao nhãng",
+  hybrid: "kết hợp", arrangement: "sự sắp xếp", collaborate: "hợp tác",
+  monitor: "giám sát", performance: "hiệu suất", culture: "văn hóa",
+  career: "sự nghiệp", opportunity: "cơ hội", advantage: "lợi thế",
+  disadvantage: "bất lợi", debate: "tranh luận", evolve: "phát triển",
+  shape: "định hình", future: "tương lai", experiment: "thí nghiệm",
+  traditional: "truyền thống", modern: "hiện đại", society: "xã hội",
+  ultimately: "cuối cùng", decade: "thập kỷ", professional: "chuyên nghiệp",
+  teeth: "răng",
+  brush: "đánh (răng)/chải", uniform: "đồng phục", wear: "mặc",
 };
 
 /* ------------------------------------------------------------------ */
@@ -86,7 +107,7 @@ interface Story {
 const STORIES: Story[] = [
   // ─── A1 ───
   {
-    id: "a1-1", title: "My Family", level: "A1", wordCount: 45,
+    id: "a1-1", title: "My Family", level: "A1", wordCount: 40,
     description: "A child talks about their family members.",
     text: "I have a big family. My father is a teacher. My mother is a nurse. I have one brother and one sister. My brother is ten years old. My sister is five. We love each other. We are happy together.",
     questions: [
@@ -96,17 +117,17 @@ const STORIES: Story[] = [
     ],
   },
   {
-    id: "a1-2", title: "At School", level: "A1", wordCount: 42,
+    id: "a1-2", title: "At School", level: "A1", wordCount: 38,
     description: "A student describes their school day.",
     text: "I go to school every day. My school is big. I have many friends. We learn to read and write. We play in the park after class. My teacher is very kind. I like my school very much.",
     questions: [
-      { question: "How often does the child go to school?", options: ["Sometimes", "Every day", "Once a week", "Never"], answer: 1 },
+      { question: "How often does the child go to school?", options: ["Sometimes", "Every day", "Once a week", "Twice a week"], answer: 1 },
       { question: "What do they do after class?", options: ["Study more", "Go home", "Play in the park", "Sleep"], answer: 2 },
       { question: "What is the teacher like?", options: ["Strict", "Funny", "Kind", "Quiet"], answer: 2 },
     ],
   },
   {
-    id: "a1-3", title: "My Pet Cat", level: "A1", wordCount: 38,
+    id: "a1-3", title: "My Pet Cat", level: "A1", wordCount: 37,
     description: "A child describes their pet cat.",
     text: "I have a small cat. Her name is Mimi. She is white and very cute. She likes to sleep on my bed. She eats fish every day. I play with Mimi after school. I love my cat.",
     questions: [
@@ -117,7 +138,7 @@ const STORIES: Story[] = [
   },
   // ─── A2 ───
   {
-    id: "a2-1", title: "My Best Friend", level: "A2", wordCount: 68,
+    id: "a2-1", title: "My Best Friend", level: "A2", wordCount: 64,
     description: "A child describes their best friend and what they do together.",
     text: "My best friend is Anna. She lives next to my house. Anna is tall and has long brown hair. She likes swimming and drawing. Every weekend, we go to the park together. We play, run, and laugh a lot. Sometimes we read stories under the big tree. Anna is very kind and always helps me. I am lucky to have her as my friend.",
     questions: [
@@ -128,7 +149,7 @@ const STORIES: Story[] = [
     ],
   },
   {
-    id: "a2-2", title: "A Rainy Day", level: "A2", wordCount: 72,
+    id: "a2-2", title: "A Rainy Day", level: "A2", wordCount: 64,
     description: "A child talks about what happens on a rainy day.",
     text: "Today it is raining. I cannot go outside to play. I stay at home with my family. In the morning, I read a book about animals. It is very interesting. After lunch, I draw pictures with my sister. She draws a big sun because she wants the rain to stop. In the evening, we watch a movie together. Rainy days can be fun too!",
     questions: [
@@ -139,9 +160,9 @@ const STORIES: Story[] = [
     ],
   },
   {
-    id: "a2-3", title: "The Food I Like", level: "A2", wordCount: 65,
+    id: "a2-3", title: "The Food I Like", level: "A2", wordCount: 64,
     description: "A child talks about their favorite foods.",
-    text: "I love eating different kinds of food. For breakfast, I usually eat bread and drink milk. My favorite lunch is rice with chicken. I also like fruit very much, especially oranges and bananas. My mother makes delicious soup every evening. On weekends, my family sometimes goes to a restaurant. I always order pizza there. Food makes me happy!",
+    text: "I love eating different kinds of food. For breakfast, I usually eat bread and drink warm milk. My favorite lunch is rice with chicken. I also like fruit very much, especially oranges and bananas. My mother makes delicious soup every evening. On weekends, my family sometimes goes to a restaurant together. I always order pizza there because it is delicious. Food makes me happy!",
     questions: [
       { question: "What does the child eat for breakfast?", options: ["Rice", "Bread and milk", "Pizza", "Soup"], answer: 1 },
       { question: "What is the child's favorite fruit?", options: ["Apples and grapes", "Oranges and bananas", "Mangoes", "Strawberries"], answer: 1 },
@@ -150,7 +171,7 @@ const STORIES: Story[] = [
   },
   // ─── B1 ───
   {
-    id: "b1-1", title: "A Trip to the Beach", level: "B1", wordCount: 120,
+    id: "b1-1", title: "A Trip to the Beach", level: "B1", wordCount: 129,
     description: "A family takes a memorable trip to the beach.",
     text: "Last summer, my family went on a trip to the beach. We woke up very early in the morning because we were so excited. My father drove the car for two hours until we could see the ocean. When we arrived, the sand was warm and the waves were beautiful. My brother and I built a big sandcastle near the water. For lunch, we ate sandwiches and fresh fruit under a large umbrella. In the afternoon, we swam in the ocean and collected colorful shells. Before going home, we watched the sunset together. The sky turned orange and pink, and it was the most beautiful thing I have ever seen. We were very tired when we got home, but it was a wonderful day that I will remember forever.",
     questions: [
@@ -161,7 +182,7 @@ const STORIES: Story[] = [
     ],
   },
   {
-    id: "b1-2", title: "City and Village", level: "B1", wordCount: 115,
+    id: "b1-2", title: "City and Village", level: "B1", wordCount: 128,
     description: "A child compares life in the city and the village.",
     text: "I live in a big city, but every summer holiday I spend two weeks at my grandmother's village. Life in the village is very different from the city. The air is fresh and clean, and there is a beautiful river near her house. In the city, there are many cars and a lot of noise, but in the village it is quiet and peaceful. My grandmother has a lovely garden with flowers and vegetables. She also keeps chickens, so we have fresh eggs every morning. I love taking walks along the river and listening to the birds singing in the trees. Although I enjoy the city because it has many shops and cinemas, I think the village is more relaxing. I always feel sad when the holiday ends.",
     questions: [
@@ -173,7 +194,7 @@ const STORIES: Story[] = [
   },
   // ─── B2 ───
   {
-    id: "b2-1", title: "Technology and Communication", level: "B2", wordCount: 155,
+    id: "b2-1", title: "Technology and Communication", level: "B2", wordCount: 159,
     description: "How technology has changed the way we communicate.",
     text: "Over the past two decades, technology has dramatically changed the way people communicate with one another. Before smartphones and the internet, people relied on letters, landline phones, and face-to-face meetings to stay in touch. Today, we can send a message to someone on the other side of the world in just a few seconds. Social media platforms have made it possible to connect with hundreds of people at once, sharing photos, videos, and thoughts instantly. While these changes have brought many benefits, such as easier access to information and faster communication, they have also created new challenges. Many experts worry that people, especially young people, spend too much time looking at screens instead of having real conversations. Some studies suggest that heavy social media use can lead to feelings of loneliness and anxiety. It is important to find a balance between using technology for its many advantages and making time for meaningful, face-to-face interactions with the people around us.",
     questions: [
@@ -184,7 +205,7 @@ const STORIES: Story[] = [
     ],
   },
   {
-    id: "b2-2", title: "The Importance of Reading", level: "B2", wordCount: 148,
+    id: "b2-2", title: "The Importance of Reading", level: "B2", wordCount: 161,
     description: "Why reading books is important for personal development.",
     text: "Reading is one of the most valuable habits a person can develop. Unlike watching television or scrolling through social media, reading requires active engagement from the mind. When we read a book, we must imagine the scenes, understand the characters, and follow complex storylines. This mental exercise strengthens our ability to think critically and creatively. Research has shown that regular readers tend to have larger vocabularies, better writing skills, and stronger analytical thinking. Moreover, reading fiction can increase empathy, as it allows us to experience the world through different perspectives. Despite these well-documented benefits, the number of people who read books regularly has been declining in many countries. Busy lifestyles and the constant availability of digital entertainment are often blamed for this trend. However, even reading for just twenty minutes a day can make a significant difference. Whether it is a novel, a biography, or a science article, every page we read adds to our knowledge and understanding of the world.",
     questions: [
@@ -192,6 +213,30 @@ const STORIES: Story[] = [
       { question: "What can reading fiction increase?", options: ["Physical strength", "Empathy", "Wealth", "Popularity"], answer: 1 },
       { question: "Why is the number of regular readers declining?", options: ["Books are too expensive", "Busy lifestyles and digital entertainment", "People cannot read anymore", "Libraries are closing"], answer: 1 },
       { question: "How much daily reading can make a difference?", options: ["Five minutes", "Ten minutes", "Twenty minutes", "One hour"], answer: 2 },
+    ],
+  },
+  // ─── A1 (additional) ───
+  {
+    id: "a1-4", title: "My Morning", level: "A1", wordCount: 48,
+    description: "A child describes their morning routine.",
+    text: "I wake up at seven every morning. I brush my teeth and wash my face. Then I eat breakfast with my family. I drink milk and eat bread. I put on my school uniform. My mother walks me to school. I say goodbye and go to my classroom.",
+    questions: [
+      { question: "What time does the child wake up?", options: ["Six", "Seven", "Eight", "Nine"], answer: 1 },
+      { question: "What does the child drink for breakfast?", options: ["Water", "Juice", "Milk", "Tea"], answer: 2 },
+      { question: "Who walks the child to school?", options: ["The father", "The brother", "The mother", "A friend"], answer: 2 },
+    ],
+  },
+  // ─── C1 ───
+  {
+    id: "c1-1", title: "Remote Work: A Lasting Shift?", level: "C1", wordCount: 237,
+    description: "An analysis of remote work trends and their impact on the modern workplace.",
+    text: "The widespread adoption of remote work during the pandemic has fundamentally altered expectations in the modern workplace. What began as a temporary necessity has evolved into a permanent feature of professional life for millions of workers worldwide. Research conducted by Stanford University found that employees who work from home are, on average, thirteen percent more productive than their office-based counterparts. This increase is attributed to fewer distractions, reduced commute time, and greater autonomy over daily schedules. However, remote work is not without its drawbacks. Many employees report feelings of isolation and difficulty maintaining boundaries between their professional and personal lives. Younger workers, in particular, struggle to develop mentoring relationships and build the informal networks that are often essential for career advancement. Companies, too, face challenges: monitoring performance, maintaining corporate culture, and fostering collaboration become significantly more complex when teams are distributed across different locations and time zones. As a result, a growing number of organizations have adopted hybrid arrangements, requiring employees to work in the office two or three days per week while allowing flexibility on the remaining days. This compromise attempts to capture the productivity benefits of remote work while preserving the social and collaborative advantages of a shared physical workspace. Whether this hybrid model will prove sustainable in the long term remains an open question, but it is clear that the traditional five-day office week is unlikely to return as the default for knowledge workers.",
+    questions: [
+      { question: "According to Stanford research, how much more productive are remote workers?", options: ["Eight percent", "Thirteen percent", "Twenty percent", "Thirty percent"], answer: 1 },
+      { question: "What challenge do younger remote workers face?", options: ["Lower salaries", "Difficulty building mentoring relationships", "Lack of technology", "Too many meetings"], answer: 1 },
+      { question: "What does the word 'drawbacks' most likely mean in context?", options: ["Benefits", "Features", "Disadvantages", "Requirements"], answer: 2 },
+      { question: "Why are many companies adopting hybrid arrangements?", options: ["To reduce employee salaries", "To balance productivity with collaboration", "To eliminate remote work entirely", "To comply with government regulations"], answer: 1 },
+      { question: "What is the author's conclusion about the traditional office week?", options: ["It will return soon", "It is the most productive model", "It is unlikely to be the default again", "It should be legally required"], answer: 2 },
     ],
   },
 ];
@@ -204,7 +249,7 @@ type Screen = "list" | "reading" | "quiz" | "result";
 
 export function ReadingPage({ student, onBackHome }: Props) {
   const [level, setLevel] = useState<CEFRLevel>(() => {
-    const map: Record<string, CEFRLevel> = { a1: "A1", a2: "A2", b1: "B1", b2: "B2" };
+    const map: Record<string, CEFRLevel> = { a1: "A1", a2: "A2", b1: "B1", b2: "B2", c1: "C1" };
     return map[student.level] ?? "A1";
   });
   const [screen, setScreen] = useState<Screen>("list");

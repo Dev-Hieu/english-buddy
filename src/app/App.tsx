@@ -361,8 +361,7 @@ export function App() {
       );
   }
 
-  const hideTab = route.view === "student-select" || route.view === "admin" || route.view === "imagepicker";
-  const showTab = !hideTab;
+  const showTab = true;
   return (
     <>
       <div className={showTab ? "pb-24" : ""}>{content}</div>
