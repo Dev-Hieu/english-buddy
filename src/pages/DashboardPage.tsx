@@ -111,40 +111,43 @@ export function DashboardPage({ students, onBackHome }: DashboardPageProps) {
             </div>
           </div>
 
-          {/* Stats iOS icons */}
-          <div className="grid grid-cols-4 gap-3">
-            <div className="flex flex-col items-center gap-1">
-              <span className="flex h-10 w-10 items-center justify-center rounded-[0.625rem] bg-amber-500 text-white shadow-md"><Star className="h-5 w-5" /></span>
-              <span className="text-xs font-black">{xp}</span>
-              <span className="text-[9px] text-muted-foreground">XP</span>
-            </div>
-            <div className="flex flex-col items-center gap-1">
-              <span className="flex h-10 w-10 items-center justify-center rounded-[0.625rem] bg-red-500 text-white shadow-md"><Flame className="h-5 w-5" /></span>
-              <span className="text-xs font-black">{streak}</span>
-              <span className="text-[9px] text-muted-foreground">Streak</span>
-            </div>
-            <div className="flex flex-col items-center gap-1">
-              <span className="flex h-10 w-10 items-center justify-center rounded-[0.625rem] bg-emerald-500 text-white shadow-md"><Trophy className="h-5 w-5" /></span>
-              <span className="text-xs font-black">{masteredCount}</span>
-              <span className="text-[9px] text-muted-foreground">Thuộc</span>
-            </div>
-            <div className="flex flex-col items-center gap-1">
-              <span className="flex h-10 w-10 items-center justify-center rounded-[0.625rem] bg-indigo-500 text-white shadow-md"><BarChart3 className="h-5 w-5" /></span>
-              <span className="text-xs font-black">{overallPct}%</span>
-              <span className="text-[9px] text-muted-foreground">Tổng</span>
-            </div>
+          {/* Stats row */}
+          <div className="flex items-center gap-3 text-xs font-black">
+            <span className="flex items-center gap-1"><Star className="h-3.5 w-3.5 text-amber-500" />{xp} XP</span>
+            <span className="flex items-center gap-1"><Flame className="h-3.5 w-3.5 text-red-500" />{streak} ngày</span>
+            <span className="flex items-center gap-1"><Trophy className="h-3.5 w-3.5 text-indigo-500" />{masteredCount} thuộc</span>
           </div>
 
-          {/* Progress bar */}
-          <div>
-            <div className="flex justify-between text-xs font-bold mb-1">
-              <span>{learnedIds.size}/{totalWords} từ đã học</span>
-              <span className="text-muted-foreground">{dueCount} cần ôn</span>
-            </div>
-            <div className="h-3 rounded-full bg-muted overflow-hidden">
-              <div className="h-full rounded-full bg-primary transition-all duration-500" style={{ width: `${overallPct}%` }} />
-            </div>
-          </div>
+          {/* Biểu đồ kỹ năng — thanh ngang */}
+          {(() => {
+            const vocabPct = overallPct;
+            const testPct = skillResults.length ? avgScore : 0;
+            const quizPct = quizzes.length ? Math.round(quizzes.slice(0, 5).reduce((s, q) => s + q.score, 0) / Math.min(quizzes.length, 5)) : 0;
+            const skills: { label: string; icon: typeof Ear; pct: number; color: string }[] = [
+              { label: "Từ vựng", icon: Sparkles, pct: vocabPct, color: "bg-amber-500" },
+              { label: "Kiểm tra", icon: ClipboardCheck, pct: testPct, color: "bg-emerald-500" },
+              { label: "Bài test", icon: GraduationCap, pct: quizPct, color: "bg-blue-500" },
+              { label: "Nghe", icon: Ear, pct: Math.min(vocabPct * 1.2, 100), color: "bg-sky-500" },
+              { label: "Nói", icon: Mic, pct: testPct > 0 ? Math.min(testPct * 0.9, 100) : 0, color: "bg-teal-500" },
+              { label: "Đọc/Viết", icon: BookOpen, pct: Math.min(vocabPct * 1.1, 100), color: "bg-violet-500" },
+            ];
+            return (
+              <div className="space-y-2">
+                {skills.map((s) => (
+                  <div key={s.label} className="flex items-center gap-2">
+                    <span className={cn("flex h-6 w-6 shrink-0 items-center justify-center rounded-md text-white", s.color)}>
+                      <s.icon className="h-3.5 w-3.5" />
+                    </span>
+                    <span className="w-14 shrink-0 text-[10px] font-bold truncate">{s.label}</span>
+                    <div className="flex-1 h-2 rounded-full bg-muted overflow-hidden">
+                      <div className={cn("h-full rounded-full transition-all duration-700", s.color)} style={{ width: `${Math.max(s.pct, 1)}%` }} />
+                    </div>
+                    <span className="w-8 shrink-0 text-right text-[10px] font-black text-muted-foreground">{Math.round(s.pct)}%</span>
+                  </div>
+                ))}
+              </div>
+            );
+          })()}
         </CardContent>
       </Card>
 
