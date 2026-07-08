@@ -361,7 +361,8 @@ export function App() {
       );
   }
 
-  const showTab = route.view === "home" || route.view === "topics" || route.view === "lookup" || route.view === "mywords";
+  const hideTab = route.view === "student-select" || route.view === "admin" || route.view === "imagepicker";
+  const showTab = !hideTab;
   return (
     <>
       <div className={showTab ? "pb-24" : ""}>{content}</div>
