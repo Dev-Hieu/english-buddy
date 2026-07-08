@@ -98,28 +98,44 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
           {showMenu && (
             <>
               <div className="fixed inset-0 z-40" onClick={() => setShowMenu(false)} />
-              <div className="absolute right-0 top-full mt-1 z-50 w-48 rounded-2xl bg-card border border-border shadow-xl p-1.5 space-y-0.5">
-                <VoicePicker />
-                <ThemePicker />
-                {onOpenProfile && (
-                  <button type="button" onClick={() => { setShowMenu(false); onOpenProfile(); }}
-                    className="flex w-full items-center gap-2 rounded-xl px-3 py-2 text-sm font-bold hover:bg-muted transition-colors">
-                    <Settings className="h-4 w-4 text-muted-foreground" /> Thông tin cá nhân
+              <div className="absolute right-0 top-full mt-2 z-50 w-56 rounded-2xl bg-card border border-border/60 shadow-soft overflow-hidden">
+                {/* Profile header */}
+                <div className="flex items-center gap-3 bg-secondary/50 px-4 py-3">
+                  <span className="text-2xl">{avatarEmoji(student.avatar)}</span>
+                  <div className="min-w-0">
+                    <p className="text-sm font-black truncate">{student.name}</p>
+                    <p className="text-[10px] font-bold text-muted-foreground">Lv {level} · {student.level?.toUpperCase?.() || "A1"}</p>
+                  </div>
+                </div>
+
+                <div className="p-1.5">
+                  {/* Settings */}
+                  <ThemePicker />
+                  <div className="border-t border-border/40 my-1" />
+                  <VoicePicker />
+                  <div className="border-t border-border/40 my-1" />
+
+                  {/* Actions */}
+                  {onOpenProfile && (
+                    <button type="button" onClick={() => { setShowMenu(false); onOpenProfile(); }}
+                      className="flex w-full items-center gap-2.5 rounded-xl px-3 py-2.5 text-sm font-bold hover:bg-muted transition-colors">
+                      <Settings className="h-4 w-4 text-muted-foreground" /> Thông tin cá nhân
+                    </button>
+                  )}
+                  <button type="button" onClick={() => { setShowMenu(false); onChangeStudent(); }}
+                    className="flex w-full items-center gap-2.5 rounded-xl px-3 py-2.5 text-sm font-bold hover:bg-muted transition-colors">
+                    <UserRound className="h-4 w-4 text-muted-foreground" /> Đổi hồ sơ
                   </button>
-                )}
-                <button type="button" onClick={() => { setShowMenu(false); onChangeStudent(); }}
-                  className="flex w-full items-center gap-2 rounded-xl px-3 py-2 text-sm font-bold hover:bg-muted transition-colors">
-                  <UserRound className="h-4 w-4 text-muted-foreground" /> Đổi hồ sơ
-                </button>
-                <button type="button" onClick={() => { setShowMenu(false); onNavigate("premium"); }}
-                  className="flex w-full items-center gap-2 rounded-xl px-3 py-2 text-sm font-bold text-amber-600 hover:bg-amber-50 transition-colors">
-                  ⭐ Nâng cấp Premium
-                </button>
-                <div className="border-t border-border my-1" />
-                <button type="button" onClick={onLogout}
-                  className="flex w-full items-center gap-2 rounded-xl px-3 py-2 text-sm font-bold text-red-600 hover:bg-red-50 transition-colors">
-                  <LogOut className="h-4 w-4" /> Đăng xuất
-                </button>
+                  <button type="button" onClick={() => { setShowMenu(false); onNavigate("premium"); }}
+                    className="flex w-full items-center gap-2.5 rounded-xl px-3 py-2.5 text-sm font-extrabold text-amber-600 hover:bg-amber-50 transition-colors">
+                    <Star className="h-4 w-4" /> Nâng cấp Premium
+                  </button>
+                  <div className="border-t border-border/40 my-1" />
+                  <button type="button" onClick={onLogout}
+                    className="flex w-full items-center gap-2.5 rounded-xl px-3 py-2.5 text-sm font-bold text-red-500 hover:bg-red-50 transition-colors">
+                    <LogOut className="h-4 w-4" /> Đăng xuất
+                  </button>
+                </div>
               </div>
             </>
           )}
