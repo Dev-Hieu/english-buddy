@@ -154,46 +154,32 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
       </button>
 
 
-      {/* ── Action badges: Thi + Ôn ── */}
-      {(pendingCount >= 10 || dueTestCount > 0 || reviewDue > 0) && (
-        <div className="flex gap-2 overflow-x-auto">
-          {pendingCount >= 10 && (
-            <button type="button" onClick={() => onStartSkillTest("new")}
-              className="flex items-center gap-2 shrink-0 rounded-2xl bg-card border border-border/50 px-4 py-2.5 shadow-sm transition-all active:scale-95 hover:border-primary/30">
-              <GraduationCap className="h-5 w-5 text-primary" />
-              <div className="text-left">
-                <span className="text-xs font-extrabold block">Thi mới</span>
-                <span className="text-[10px] font-bold text-muted-foreground">{pendingCount} từ sẵn sàng</span>
+      {/* ── Kiểm tra & Ôn tập ── */}
+      {(pendingCount >= 10 || dueTestCount > 0 || reviewDue > 0 || (pendingCount > 0 && pendingCount < 10)) && (
+        <section>
+          {(pendingCount >= 10 || dueTestCount > 0 || reviewDue > 0) && (() => {
+            const items: { label: string; sub: string; onClick: () => void }[] = [];
+            if (pendingCount >= 10) items.push({ label: "Thi mới", sub: `${pendingCount} từ`, onClick: () => onStartSkillTest("new") });
+            if (dueTestCount > 0) items.push({ label: "Thi lại", sub: `${dueTestCount} từ`, onClick: () => onStartSkillTest("review") });
+            if (reviewDue > 0) items.push({ label: "Cần ôn", sub: `${reviewDue} từ`, onClick: () => onNavigate("review") });
+            return (
+              <div className={cn("grid gap-2 mx-auto max-w-sm", items.length === 1 ? "grid-cols-1" : items.length === 2 ? "grid-cols-2" : "grid-cols-3")}>
+                {items.map((it) => (
+                  <button key={it.label} type="button" onClick={it.onClick}
+                    className="flex flex-col items-center gap-0.5 rounded-2xl bg-card border border-border/50 py-3 shadow-sm transition-all active:scale-95 hover:border-primary/30">
+                    <span className="text-xs font-extrabold">{it.label}</span>
+                    <span className="text-[10px] font-bold text-muted-foreground">{it.sub}</span>
+                  </button>
+                ))}
               </div>
-            </button>
+            );
+          })()}
+          {pendingCount > 0 && pendingCount < 10 && (
+            <p className="mt-1.5 text-center text-[10px] font-bold text-muted-foreground">
+              Còn {10 - pendingCount} từ nữa để mở bài thi
+            </p>
           )}
-          {dueTestCount > 0 && (
-            <button type="button" onClick={() => onStartSkillTest("review")}
-              className="flex items-center gap-2 shrink-0 rounded-2xl bg-card border border-border/50 px-4 py-2.5 shadow-sm transition-all active:scale-95 hover:border-primary/30">
-              <RotateCcw className="h-5 w-5 text-primary" />
-              <div className="text-left">
-                <span className="text-xs font-extrabold block">Thi lại</span>
-                <span className="text-[10px] font-bold text-muted-foreground">{dueTestCount} từ đến hạn</span>
-              </div>
-            </button>
-          )}
-          {reviewDue > 0 && (
-            <button type="button" onClick={() => onNavigate("review")}
-              className={cn("flex items-center gap-2 shrink-0 rounded-2xl bg-card border border-border/50 px-4 py-2.5 shadow-sm transition-all active:scale-95 hover:border-primary/30",
-                reviewDue > 5 && "animate-pulse")}>
-              <RotateCcw className="h-5 w-5 text-primary" />
-              <div className="text-left">
-                <span className="text-xs font-extrabold block">Cần ôn</span>
-                <span className="text-[10px] font-bold text-muted-foreground">{reviewDue} từ</span>
-              </div>
-            </button>
-          )}
-        </div>
-      )}
-      {pendingCount > 0 && pendingCount < 10 && (
-        <p className="text-center text-xs font-bold text-muted-foreground">
-          Còn {10 - pendingCount} từ nữa để mở bài thi
-        </p>
+        </section>
       )}
 
       {/* ── Kỹ năng 3×3 ── */}
@@ -215,18 +201,15 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
       {/* ── Kết quả thi gần đây ── */}
       {testResults.length > 0 && (
         <section>
-          <h3 className="mb-2 flex items-center gap-2 text-base font-black">
-            <ClipboardCheck className="h-5 w-5 text-primary" /> Kết quả gần đây
-          </h3>
-          <div className="flex gap-2 overflow-x-auto pb-1 -mx-1 px-1">
+          <h3 className="mb-2 text-center text-sm font-black text-muted-foreground">Kết quả gần đây</h3>
+          <div className="flex justify-center gap-2 flex-wrap">
             {testResults.map((r) => {
               const grade = r.score >= 90 ? "A+" : r.score >= 80 ? "A" : r.score >= 70 ? "B" : r.score >= 60 ? "C" : r.score >= 50 ? "D" : "F";
               const color = r.score >= 80 ? "text-success" : r.score >= 60 ? "text-amber-600" : "text-red-500";
               return (
-                <div key={r.id} className="shrink-0 w-24 rounded-2xl bg-card border border-border/40 p-3 text-center shadow-sm">
-                  <p className={cn("text-2xl font-black", color)}>{grade}</p>
-                  <p className="text-xs font-extrabold text-muted-foreground">{r.score}%</p>
-                  <p className="text-[10px] text-muted-foreground mt-0.5">{new Date(r.createdAt).toLocaleDateString("vi-VN")}</p>
+                <div key={r.id} className="w-16 rounded-xl bg-card border border-border/40 py-2 text-center shadow-sm">
+                  <p className={cn("text-lg font-black leading-none", color)}>{grade}</p>
+                  <p className="text-[10px] font-bold text-muted-foreground mt-0.5">{r.score}%</p>
                 </div>
               );
             })}
