@@ -181,12 +181,11 @@ export function PremiumPage({ user, onBack }: PremiumPageProps) {
 
             {/* MoMo */}
             <div className="rounded-xl bg-pink-50 p-3 mb-3">
-              <p className="text-sm font-black text-pink-800 mb-2">MoMo</p>
+              <p className="text-sm font-black text-pink-800 mb-2">MoMo / VietQR</p>
               <div className="flex items-center justify-center rounded-xl bg-white p-4 border border-pink-200">
                 <div className="text-center">
-                  <div className="h-32 w-32 mx-auto rounded-xl bg-pink-100 flex items-center justify-center mb-2">
-                    <span className="text-xs font-bold text-pink-400">QR Code MoMo</span>
-                  </div>
+                  <img src="/momo-qr.jpg" alt="MoMo QR" className="h-48 w-48 mx-auto rounded-xl object-contain mb-2" />
+                  <p className="text-xs font-bold">LÊ TIẾN HIẾU</p>
                   <p className="text-xs text-muted-foreground">Quét mã để thanh toán</p>
                 </div>
               </div>
