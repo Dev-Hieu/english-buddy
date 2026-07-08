@@ -99,6 +99,12 @@ export function GamesPage({ student, topicId, level = "all", studiedWordIds, onB
           ))}
         </div>
 
+        {/* Nút BXH tổng hợp */}
+        <button type="button" onClick={() => setLbGameId("all")}
+          className="mb-3 flex w-full items-center justify-center gap-2 rounded-2xl bg-amber-500 py-3 text-sm font-black text-white shadow-lg transition-all active:scale-[0.97] hover:brightness-105">
+          <Trophy className="h-5 w-5" /> Bảng xếp hạng
+        </button>
+
         {learnedCount < 4 ? (
           <div className="mb-3 rounded-2xl bg-secondary p-3 text-sm font-bold text-secondary-foreground">
             💡 Học thêm từ ở mục Học để game ôn đúng từ của con nhé. (Đuổi hình bắt chữ vẫn chơi được với từ mới.)
@@ -201,40 +207,67 @@ function Finished({ onClose, score, gameId, studentId }: { onClose: () => void; 
   );
 }
 
+const GAME_NAMES: Record<string, string> = { match: "Ghép từ", pick: "Chọn ảnh", listen: "Nghe & chọn", dictation: "Nghe & gõ", build: "Đuổi hình", race: "Đua xe", wordsearch: "Tìm từ", speedtype: "Gõ nhanh", wordchain: "Nối từ" };
+const GAME_IDS = Object.keys(GAME_NAMES);
+
 function LeaderboardModal({ gameId, studentId, onClose }: { gameId: string; studentId: string; onClose: () => void }) {
+  const [tab, setTab] = useState(gameId === "all" ? GAME_IDS[0] : gameId);
   const [data, setData] = useState<GameScore[]>([]);
   const [loading, setLoading] = useState(true);
+  const isAll = gameId === "all";
 
   useEffect(() => {
-    getGameLeaderboard(gameId, 10).then(setData).catch(() => {}).finally(() => setLoading(false));
-  }, [gameId]);
+    setLoading(true);
+    getGameLeaderboard(tab, 10).then(setData).catch(() => {}).finally(() => setLoading(false));
+  }, [tab]);
 
-  const gameNames: Record<string, string> = { match: "Ghép từ", pick: "Chọn ảnh", listen: "Nghe & chọn", dictation: "Nghe & gõ", build: "Đuổi hình bắt chữ", race: "Đua xe", sudoku: "Sudoku", wordsearch: "Tìm từ", speedtype: "Gõ nhanh", wordchain: "Nối từ" };
+  const medals = ["🥇", "🥈", "🥉"];
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 p-4" onClick={onClose}>
-      <div className="w-full max-w-sm rounded-3xl bg-card p-5 shadow-xl" onClick={(e) => e.stopPropagation()}>
-        <div className="mb-4 flex items-center justify-between">
-          <h3 className="flex items-center gap-2 text-lg font-black"><Trophy className="h-5 w-5 text-amber-500" /> {gameNames[gameId] ?? gameId}</h3>
+      <div className="w-full max-w-sm max-h-[80vh] flex flex-col rounded-3xl bg-card shadow-xl overflow-hidden" onClick={(e) => e.stopPropagation()}>
+        <div className="flex items-center justify-between px-5 pt-4 pb-2">
+          <h3 className="flex items-center gap-2 text-lg font-black"><Trophy className="h-5 w-5 text-amber-500" /> Bảng xếp hạng</h3>
           <button type="button" onClick={onClose} className="rounded-full p-1 hover:bg-muted"><X className="h-5 w-5" /></button>
         </div>
-        {loading ? (
-          <p className="py-8 text-center text-sm font-bold text-muted-foreground">Đang tải...</p>
-        ) : data.length === 0 ? (
-          <p className="py-8 text-center text-sm font-bold text-muted-foreground">Chưa có ai chơi game này</p>
-        ) : (
-          <div className="space-y-1">
-            {data.map((e, i) => (
-              <div key={e.id} className={cn("flex items-center justify-between rounded-xl px-3 py-2 text-sm font-bold", e.studentId === studentId ? "bg-primary/10 text-primary" : "text-foreground")}>
-                <span className="flex items-center gap-2">
-                  <span className="flex h-6 w-6 items-center justify-center rounded-full bg-muted text-xs font-black">{i + 1}</span>
-                  {e.studentName}
-                </span>
-                <span className="font-black">{e.score}</span>
-              </div>
+
+        {/* Game tabs */}
+        {isAll && (
+          <div className="flex gap-1 overflow-x-auto px-4 pb-2">
+            {GAME_IDS.map((g) => (
+              <button key={g} type="button" onClick={() => setTab(g)}
+                className={cn("shrink-0 rounded-full px-3 py-1 text-[10px] font-extrabold transition-colors",
+                  tab === g ? "bg-primary text-white" : "bg-muted text-muted-foreground")}>
+                {GAME_NAMES[g]}
+              </button>
             ))}
           </div>
         )}
+        {!isAll && <p className="px-5 pb-2 text-sm font-bold text-muted-foreground">{GAME_NAMES[tab] ?? tab}</p>}
+
+        {/* Leaderboard list */}
+        <div className="flex-1 overflow-y-auto px-5 pb-4">
+          {loading ? (
+            <p className="py-8 text-center text-sm font-bold text-muted-foreground">Đang tải...</p>
+          ) : data.length === 0 ? (
+            <p className="py-8 text-center text-sm font-bold text-muted-foreground">Chưa có ai chơi game này</p>
+          ) : (
+            <div className="space-y-1">
+              {data.map((e, i) => (
+                <div key={e.id} className={cn("flex items-center justify-between rounded-xl px-3 py-2.5 text-sm font-bold",
+                  e.studentId === studentId ? "bg-primary/10 text-primary" : "")}>
+                  <span className="flex items-center gap-2.5">
+                    <span className="flex h-7 w-7 items-center justify-center rounded-full bg-muted text-xs font-black">
+                      {i < 3 ? medals[i] : i + 1}
+                    </span>
+                    <span className="truncate">{e.studentName}</span>
+                  </span>
+                  <span className="font-black">{e.score}</span>
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );
