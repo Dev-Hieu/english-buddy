@@ -1,4 +1,4 @@
-import { BookOpen, ChevronRight, ClipboardCheck, Ear, Flame, GraduationCap, LogOut, Mic, PenLine, Play, RotateCcw, Settings, Sparkles, Star, Trophy, UserRound } from "lucide-react";
+import { BookOpen, ClipboardCheck, Ear, Flame, Gamepad2, GraduationCap, LogOut, MessageSquareText, Mic, PenLine, Play, RotateCcw, Settings, Sparkles, Star, Trophy, Type, UserRound } from "lucide-react";
 import { useEffect, useState, type ComponentType } from "react";
 import { getLeaderboard } from "@/services/studentService";
 import { getSkillTestResults, type SkillTestResult } from "@/services/progressService";
@@ -8,15 +8,13 @@ import type { Level, Student, VocabularyWord } from "@/types";
 import { topicWords, topicsWithLevel } from "@/utils/levelFilter";
 import { avatarEmoji } from "@/components/ui/emoji";
 import { Button } from "@/components/ui/button";
-import { ProgressRing, ProgressBar } from "@/components/ui/progress";
+import { ProgressRing } from "@/components/ui/progress";
 import { ParrotLogo } from "@/components/ParrotLogo";
 import { VoicePicker } from "@/components/ui/VoicePicker";
 import { ThemePicker } from "@/components/ui/ThemePicker";
 import { cn } from "@/components/ui/cn";
 import { LEVEL_ORDER } from "@/types";
 import { SPEAK_PASS } from "@/components/speak/SpeakResult";
-
-const topicEmoji = (id: string) => ({ topic_food: "🍎", topic_school: "📚", topic_family: "👨‍👩‍👧", topic_animals: "🐾", topic_sports: "⚽", topic_daily: "☀️", topic_feelings: "😊", topic_house: "🏠", topic_clothes: "👕", topic_travel: "✈️", topic_environment: "🌍", topic_technology: "💻", topic_health: "🏥", topic_education: "🎓", topic_work: "💼", topic_society: "🏛️", topic_science: "🔬", topic_culture: "🎭", topic_greetings: "👋", topic_weather: "🌤️", topic_numbers: "🔢", topic_colors: "🎨", topic_body: "🦴", topic_hobbies: "🎸", topic_shopping: "🛒" }[id] || "📖");
 
 function levelOf(xp: number) { const thresholds = [0, 50, 150, 400, 800, 1500, 3000]; const lvl = thresholds.findIndex((t) => xp < t); return lvl < 0 ? thresholds.length : lvl; }
 function levelLabel(xp: number) { return ["Mới bắt đầu", "Sơ cấp", "Tiền trung cấp", "Trung cấp", "Trung cao cấp", "Cao cấp", "Thành thạo"][levelOf(xp) - 1] || ""; }
@@ -225,37 +223,9 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
           <NavTile icon={PenLine} iconClass="bg-purple-100 text-purple-600" title="Viết" onClick={() => onNavigate("writing")} />
           <NavTile icon={Sparkles} iconClass="bg-amber-100 text-amber-600" title="Từ mới" onClick={() => onNavigate("topics")} />
           <NavTile icon={GraduationCap} iconClass="bg-accent/10 text-accent" title="Ngữ pháp" onClick={() => onNavigate("grammar")} />
-        </div>
-      </section>
-
-      {/* ── Chủ đề ── */}
-      <section className="mt-4">
-        <div className="mb-2 flex items-center justify-between">
-          <h2 className="text-base font-extrabold">Chủ đề</h2>
-          <button type="button" className="flex items-center text-sm font-bold text-primary" onClick={() => onNavigate("topics")}>
-            Tất cả <ChevronRight className="h-4 w-4" />
-          </button>
-        </div>
-        <div className="grid grid-cols-2 gap-2">
-          {topicsAtLevel.map((topic) => {
-            const words = wordsOf(topic.id);
-            const done = words.filter((w) => learned.has(w.id)).length;
-            const pct = words.length ? Math.round((done / words.length) * 100) : 0;
-            return (
-              <button key={topic.id} type="button" onClick={() => onNavigate("lesson", topic.id, learnLevel)}
-                className="rounded-2xl border border-border/50 bg-card p-3 text-left shadow-sm transition-all active:scale-[0.97] hover:shadow-md">
-                <div className="flex items-center gap-2">
-                  <span className="text-2xl">{topicEmoji(topic.id)}</span>
-                  <div className="flex-1 min-w-0">
-                    <p className="text-sm font-extrabold leading-tight truncate">{topic.name}</p>
-                    <p className="text-xs font-semibold text-muted-foreground truncate">{topic.name_vi}</p>
-                  </div>
-                  <span className="text-xs font-extrabold text-muted-foreground">{done}/{words.length}</span>
-                </div>
-                <ProgressBar value={pct} className="mt-2 h-1.5" />
-              </button>
-            );
-          })}
+          <NavTile icon={Gamepad2} iconClass="bg-pink-100 text-pink-600" title="Game" onClick={() => onNavigate("games")} />
+          <NavTile icon={MessageSquareText} iconClass="bg-teal-100 text-teal-600" title="Cụm từ" onClick={() => onNavigate("flashcard")} />
+          <NavTile icon={Type} iconClass="bg-orange-100 text-orange-600" title="Mẫu câu" onClick={() => onNavigate("conversation")} />
         </div>
       </section>
 
