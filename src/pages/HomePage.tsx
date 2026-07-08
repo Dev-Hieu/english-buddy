@@ -1,4 +1,4 @@
-import { BookOpen, ChevronRight, ClipboardCheck, Ear, Flame, Gamepad2, GraduationCap, LogOut, MessageSquareText, Mic, PenLine, Play, RotateCcw, Settings, Sparkles, Star, Trophy, Type, UserRound } from "lucide-react";
+import { BookOpen, ChevronRight, ClipboardCheck, Ear, Flame, Gamepad2, GraduationCap, LogOut, MessageSquareText, Mic, PenLine, RotateCcw, Settings, Sparkles, Star, Trophy, Type, UserRound } from "lucide-react";
 import { useEffect, useState, type ComponentType } from "react";
 import { getLeaderboard } from "@/services/studentService";
 import { getSkillTestResults, type SkillTestResult } from "@/services/progressService";
@@ -66,12 +66,6 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
   const allTopics = topicsWithLevel(SEED_TOPICS, SEED_VOCABULARY, learnLevel);
   const topicsAtLevel = allTopics.slice(0, 4);
   const wordsOf = (topicId: string) => topicWords(SEED_VOCABULARY, topicId, learnLevel);
-  const resumeTopic = topicsAtLevel.find((t) => {
-    const ws = wordsOf(t.id);
-    return ws.some((w) => !learned.has(w.id));
-  }) ?? topicsAtLevel[0];
-  const resumeStarted = resumeTopic ? wordsOf(resumeTopic.id).some((w) => learned.has(w.id)) : false;
-  const startLearning = () => resumeTopic ? onNavigate("lesson", resumeTopic.id, learnLevel) : onNavigate("topics");
 
   // Topic progress for mini chart (top 6 active topics)
   const topicProgress = allTopics.slice(0, 6).map((t) => {
@@ -188,11 +182,6 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
         </button>
       </section>
 
-      {/* ── CTA ── */}
-      <button type="button" onClick={startLearning}
-        className="flex w-full items-center justify-center gap-2 rounded-2xl bg-primary py-4 text-lg font-black text-white shadow-[0_5px_0_0_hsl(var(--primary-shadow))] transition-all active:translate-y-[3px] active:shadow-[0_2px_0_0_hsl(var(--primary-shadow))] hover:brightness-105">
-        <Play className="h-5 w-5" /> {resumeStarted ? "Tiếp tục học" : "Bắt đầu học"}
-      </button>
 
       {/* ── Action badges: Thi + Ôn ── */}
       {(pendingCount >= 10 || dueTestCount > 0 || reviewDue > 0) && (
