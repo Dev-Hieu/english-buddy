@@ -77,7 +77,7 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
   const overallPct = totalWords ? Math.round((learned.size / totalWords) * 100) : 0;
 
   return (
-    <main className="mx-auto w-full max-w-2xl overflow-x-hidden px-4 pt-4 pb-6 space-y-4">
+    <main className="mx-auto w-full max-w-md overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6 space-y-4">
 
       {/* ── Header ── */}
       <header className="flex items-center justify-between">
