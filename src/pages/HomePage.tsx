@@ -121,34 +121,34 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
         </div>
       </header>
 
+      {/* ── Thành tích ── */}
+      <div className="flex gap-2">
+        <div className="flex flex-1 items-center justify-center gap-1.5 rounded-2xl bg-card border border-border/50 py-2.5 shadow-sm">
+          <Star className="h-4 w-4 text-primary" /><span className="text-sm font-extrabold">{xp}</span>
+        </div>
+        <div className="flex flex-1 items-center justify-center gap-1.5 rounded-2xl bg-card border border-border/50 py-2.5 shadow-sm">
+          <Flame className="h-4 w-4 text-primary" /><span className="text-sm font-extrabold">{streak} ngày</span>
+        </div>
+        <button type="button" onClick={() => onNavigate("leaderboard")}
+          className="flex flex-1 items-center justify-center gap-1.5 rounded-2xl bg-card border border-border/50 py-2.5 shadow-sm hover:border-primary/30 transition-colors">
+          <Trophy className="h-4 w-4 text-primary" /><span className="text-sm font-extrabold">{weekRank ? `#${weekRank}` : "—"}</span>
+        </button>
+      </div>
+
       {/* ── Biểu đồ tiến độ — bấm vào xem chi tiết ── */}
       <button type="button" onClick={() => onNavigate("dashboard")}
-        className="w-full rounded-2xl bg-card border border-border/50 px-4 py-3 shadow-sm text-left transition-all active:scale-[0.99] hover:shadow-md hover:border-primary/30">
-        {/* Header row */}
-        <div className="flex items-center justify-between mb-2">
-          <div className="flex items-center gap-2">
-            <span className="text-xs font-black">{learned.size} từ</span>
-            <span className="text-[10px] text-muted-foreground">·</span>
-            <span className="flex items-center gap-0.5 text-[10px] font-bold text-muted-foreground"><Star className="h-3 w-3 text-primary" />{xp}</span>
-            <span className="flex items-center gap-0.5 text-[10px] font-bold text-muted-foreground"><Flame className="h-3 w-3 text-primary" />{streak}</span>
-          </div>
-          <span className="text-[10px] font-bold text-primary">Xem chi tiết →</span>
-        </div>
-        {/* Bar chart — cột dọc, chiều cao giới hạn 48px */}
-        <div className="flex items-end gap-1 h-12">
+        className="w-full rounded-2xl bg-card border border-border/50 px-3 py-2.5 shadow-sm text-left transition-all active:scale-[0.99] hover:shadow-md hover:border-primary/30">
+        <div className="flex items-end gap-1 h-10">
           {topicProgress.map((t) => (
-            <div key={t.id} className="flex-1 flex flex-col items-center gap-0.5">
-              <div className="w-full rounded-t-sm bg-muted overflow-hidden" style={{ height: 48 }}>
-                <div className={cn("w-full rounded-t-sm transition-all duration-500", t.pct >= 100 ? "bg-success" : t.pct > 0 ? "bg-primary" : "bg-muted")}
-                  style={{ height: `${Math.max(t.pct, 2)}%`, marginTop: `${100 - Math.max(t.pct, 2)}%` }} />
-              </div>
+            <div key={t.id} className="flex-1 rounded-t bg-muted overflow-hidden" style={{ height: 40 }}>
+              <div className={cn("w-full rounded-t transition-all duration-500", t.pct >= 100 ? "bg-success" : t.pct > 0 ? "bg-primary" : "bg-transparent")}
+                style={{ height: `${Math.max(t.pct, 3)}%`, marginTop: `${100 - Math.max(t.pct, 3)}%` }} />
             </div>
           ))}
         </div>
-        {/* Labels dưới cột */}
-        <div className="flex gap-1 mt-1">
+        <div className="flex gap-1 mt-1 items-center">
           {topicProgress.map((t) => (
-            <span key={t.id} className="flex-1 text-center text-[8px] font-bold text-muted-foreground truncate">{t.name.split(" ")[0]}</span>
+            <span key={t.id} className="flex-1 text-center text-[7px] font-bold text-muted-foreground truncate leading-none">{t.name.split(" ")[0]}</span>
           ))}
         </div>
       </button>
