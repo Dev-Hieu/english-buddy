@@ -1,5 +1,5 @@
-import { BookOpen, ClipboardCheck, Ear, Flame, Gamepad2, GraduationCap, LogOut, MessageSquareText, Mic, PenLine, RotateCcw, Settings, Sparkles, Star, Trophy, Type, UserRound } from "lucide-react";
-import { useEffect, useState, type ComponentType } from "react";
+import { ClipboardCheck, LogOut, RotateCcw, Settings, UserRound } from "lucide-react";
+import { useEffect, useState } from "react";
 import { getLeaderboard } from "@/services/studentService";
 import { getSkillTestResults, type SkillTestResult } from "@/services/progressService";
 import { SEED_TOPICS } from "@/data/seedTopics";
@@ -35,17 +35,17 @@ interface HomePageProps {
   onNavigate: Nav;
 }
 
-// ── Skill tiles — professional palette: primary teal + neutral ──
-const SKILL_TILES: { icon: ComponentType<{ className?: string }>; title: string; view: string }[] = [
-  { icon: Ear, title: "Nghe", view: "listening" },
-  { icon: Mic, title: "Nói", view: "speak" },
-  { icon: BookOpen, title: "Đọc", view: "reading" },
-  { icon: PenLine, title: "Viết", view: "writing" },
-  { icon: Sparkles, title: "Từ mới", view: "topics" },
-  { icon: GraduationCap, title: "Ngữ pháp", view: "grammar" },
-  { icon: Gamepad2, title: "Game", view: "games" },
-  { icon: MessageSquareText, title: "Cụm từ", view: "flashcard" },
-  { icon: Type, title: "Mẫu câu", view: "conversation" },
+// ── Skill tiles — emoji icons for visual appeal ──
+const SKILL_TILES: { emoji: string; title: string; view: string }[] = [
+  { emoji: "🎧", title: "Nghe", view: "listening" },
+  { emoji: "🗣️", title: "Nói", view: "speak" },
+  { emoji: "📖", title: "Đọc", view: "reading" },
+  { emoji: "✍️", title: "Viết", view: "writing" },
+  { emoji: "🌟", title: "Từ mới", view: "topics" },
+  { emoji: "📐", title: "Ngữ pháp", view: "grammar" },
+  { emoji: "🎮", title: "Game", view: "games" },
+  { emoji: "💬", title: "Cụm từ", view: "flashcard" },
+  { emoji: "📝", title: "Mẫu câu", view: "conversation" },
 ];
 
 export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, learnedToday, reviewDue, pendingCount, dueTestCount, onStartSkillTest, onChangeStudent, onLogout, onOpenProfile, onNavigate }: HomePageProps) {
@@ -124,14 +124,14 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
       {/* ── Thành tích ── */}
       <div className="flex gap-2">
         <div className="flex flex-1 items-center justify-center gap-1.5 rounded-2xl bg-card border border-border/50 py-2.5 shadow-sm">
-          <Star className="h-4 w-4 text-primary" /><span className="text-sm font-extrabold">{xp}</span>
+          <span className="text-base">⭐</span><span className="text-sm font-extrabold">{xp}</span>
         </div>
         <div className="flex flex-1 items-center justify-center gap-1.5 rounded-2xl bg-card border border-border/50 py-2.5 shadow-sm">
-          <Flame className="h-4 w-4 text-primary" /><span className="text-sm font-extrabold">{streak} ngày</span>
+          <span className="text-base">🔥</span><span className="text-sm font-extrabold">{streak} ngày</span>
         </div>
         <button type="button" onClick={() => onNavigate("leaderboard")}
           className="flex flex-1 items-center justify-center gap-1.5 rounded-2xl bg-card border border-border/50 py-2.5 shadow-sm hover:border-primary/30 transition-colors">
-          <Trophy className="h-4 w-4 text-primary" /><span className="text-sm font-extrabold">{weekRank ? `#${weekRank}` : "—"}</span>
+          <span className="text-base">🏆</span><span className="text-sm font-extrabold">{weekRank ? `#${weekRank}` : "—"}</span>
         </button>
       </div>
 
@@ -188,10 +188,8 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
         <div className="grid grid-cols-3 gap-2.5">
           {SKILL_TILES.map((t) => (
             <button key={t.view} type="button" onClick={() => onNavigate(t.view)}
-              className="flex flex-col items-center gap-2 rounded-2xl bg-card border border-border/40 p-4 shadow-sm transition-all duration-150 active:scale-[0.95] hover:shadow-md hover:border-primary/30">
-              <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-primary/10 text-primary">
-                <t.icon className="h-5.5 w-5.5" />
-              </span>
+              className="flex flex-col items-center gap-1.5 rounded-2xl bg-card border border-border/40 p-3.5 shadow-sm transition-all duration-150 active:scale-[0.95] hover:shadow-md hover:border-primary/30">
+              <span className="text-2xl leading-none">{t.emoji}</span>
               <span className="text-xs font-extrabold">{t.title}</span>
             </button>
           ))}
