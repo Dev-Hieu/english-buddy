@@ -126,65 +126,74 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
         </div>
       </header>
 
-      {/* ── Thành tích ── */}
-      <div className="flex gap-2">
-        <div className="flex flex-1 items-center justify-center gap-1.5 rounded-2xl bg-secondary py-2.5 shadow-sm">
-          <Star className="h-4 w-4 text-primary" /><span className="text-sm font-extrabold text-secondary-foreground">{xp}</span>
-        </div>
-        <div className="flex flex-1 items-center justify-center gap-1.5 rounded-2xl bg-secondary py-2.5 shadow-sm">
-          <Flame className="h-4 w-4 text-primary" /><span className="text-sm font-extrabold text-secondary-foreground">{streak} ngày</span>
-        </div>
-        <button type="button" onClick={() => onNavigate("leaderboard")}
-          className="flex flex-1 items-center justify-center gap-1.5 rounded-2xl bg-secondary py-2.5 shadow-sm hover:bg-primary/15 transition-colors">
-          <Trophy className="h-4 w-4 text-primary" /><span className="text-sm font-extrabold text-secondary-foreground">{weekRank ? `#${weekRank}` : "—"}</span>
+      {/* ── Thành tích — iOS icon row ── */}
+      <div className="grid grid-cols-3 gap-4">
+        <button type="button" onClick={() => onNavigate("dashboard")} className="flex flex-col items-center gap-1.5 transition-all active:scale-[0.90] hover:scale-[1.05]">
+          <span className="flex h-12 w-12 items-center justify-center rounded-[0.875rem] bg-amber-500 text-white shadow-lg">
+            <Star className="h-6 w-6" />
+          </span>
+          <span className="text-xs font-black">{xp} XP</span>
+        </button>
+        <button type="button" onClick={() => onNavigate("dashboard")} className="flex flex-col items-center gap-1.5 transition-all active:scale-[0.90] hover:scale-[1.05]">
+          <span className="flex h-12 w-12 items-center justify-center rounded-[0.875rem] bg-red-500 text-white shadow-lg">
+            <Flame className="h-6 w-6" />
+          </span>
+          <span className="text-xs font-black">{streak} ngày</span>
+        </button>
+        <button type="button" onClick={() => onNavigate("leaderboard")} className="flex flex-col items-center gap-1.5 transition-all active:scale-[0.90] hover:scale-[1.05]">
+          <span className="flex h-12 w-12 items-center justify-center rounded-[0.875rem] bg-indigo-500 text-white shadow-lg">
+            <Trophy className="h-6 w-6" />
+          </span>
+          <span className="text-xs font-black">{weekRank ? `#${weekRank}` : "—"}</span>
         </button>
       </div>
 
-      {/* ── Biểu đồ tiến độ — bấm vào xem chi tiết ── */}
+      {/* ── Tiến độ — progress bar gọn ── */}
       <button type="button" onClick={() => onNavigate("dashboard")}
-        className="w-full rounded-2xl bg-card border border-border/50 px-3 py-2.5 shadow-sm text-left transition-all active:scale-[0.99] hover:shadow-md hover:border-primary/30">
-        <div className="flex items-end gap-1 h-10">
-          {topicProgress.map((t) => (
-            <div key={t.id} className="flex-1 rounded-t bg-muted overflow-hidden" style={{ height: 40 }}>
-              <div className={cn("w-full rounded-t transition-all duration-500", t.pct > 0 ? "bg-primary" : "bg-transparent")}
-                style={{ height: `${Math.max(t.pct, 3)}%`, marginTop: `${100 - Math.max(t.pct, 3)}%`, opacity: t.pct > 0 ? 0.5 + (t.pct / 200) : 0 }} />
-            </div>
-          ))}
+        className="w-full rounded-[1rem] bg-card border border-border/40 px-4 py-3 shadow-md text-left transition-all active:scale-[0.98] hover:shadow-lg">
+        <div className="flex items-center justify-between mb-2">
+          <span className="text-xs font-black">{learned.size}/{totalWords} từ đã học</span>
+          <span className="text-[10px] font-bold text-muted-foreground">{goalReached ? "Đạt mục tiêu ✓" : `Hôm nay ${learnedToday}/${goal}`}</span>
         </div>
-        <div className="flex gap-1 mt-1 items-center">
-          {topicProgress.map((t) => (
-            <span key={t.id} className="flex-1 text-center text-[7px] font-bold text-muted-foreground truncate leading-none">{t.name.split(" ")[0]}</span>
-          ))}
+        <div className="h-2.5 w-full rounded-full bg-muted overflow-hidden">
+          <div className={cn("h-full rounded-full transition-all duration-500", goalReached ? "bg-success" : "bg-primary")}
+            style={{ width: `${Math.max(overallPct, 1)}%` }} />
         </div>
       </button>
 
-
-      {/* ── Kiểm tra & Ôn tập ── */}
-      {(pendingCount >= 10 || dueTestCount > 0 || reviewDue > 0 || (pendingCount > 0 && pendingCount < 10)) && (
-        <section>
-          {(pendingCount >= 10 || dueTestCount > 0 || reviewDue > 0) && (() => {
-            const items: { label: string; sub: string; onClick: () => void }[] = [];
-            if (pendingCount >= 10) items.push({ label: "Thi mới", sub: `${pendingCount} từ`, onClick: () => onStartSkillTest("new") });
-            if (dueTestCount > 0) items.push({ label: "Thi lại", sub: `${dueTestCount} từ`, onClick: () => onStartSkillTest("review") });
-            if (reviewDue > 0) items.push({ label: "Cần ôn", sub: `${reviewDue} từ`, onClick: () => onNavigate("review") });
-            return (
-              <div className={cn("grid gap-2 mx-auto max-w-sm", items.length === 1 ? "grid-cols-1" : items.length === 2 ? "grid-cols-2" : "grid-cols-3")}>
-                {items.map((it) => (
-                  <button key={it.label} type="button" onClick={it.onClick}
-                    className="flex flex-col items-center gap-0.5 rounded-2xl bg-secondary py-3 shadow-sm transition-all active:scale-95 hover:brightness-[0.97]">
-                    <span className="text-xs font-extrabold text-secondary-foreground">{it.label}</span>
-                    <span className="text-[10px] font-bold text-muted-foreground">{it.sub}</span>
-                  </button>
-                ))}
-              </div>
-            );
-          })()}
-          {pendingCount > 0 && pendingCount < 10 && (
-            <p className="mt-1.5 text-center text-[10px] font-bold text-muted-foreground">
-              Còn {10 - pendingCount} từ nữa để mở bài thi
-            </p>
+      {/* ── Kiểm tra & Ôn tập — iOS icon row ── */}
+      {(pendingCount >= 10 || dueTestCount > 0 || reviewDue > 0) && (
+        <div className="flex justify-center gap-5">
+          {pendingCount >= 10 && (
+            <button type="button" onClick={() => onStartSkillTest("new")} className="flex flex-col items-center gap-1.5 transition-all active:scale-[0.90] hover:scale-[1.05]">
+              <span className="flex h-11 w-11 items-center justify-center rounded-[0.75rem] bg-emerald-500 text-white shadow-lg">
+                <GraduationCap className="h-5 w-5" />
+              </span>
+              <span className="text-[10px] font-bold">Thi mới</span>
+            </button>
           )}
-        </section>
+          {dueTestCount > 0 && (
+            <button type="button" onClick={() => onStartSkillTest("review")} className="flex flex-col items-center gap-1.5 transition-all active:scale-[0.90] hover:scale-[1.05]">
+              <span className="flex h-11 w-11 items-center justify-center rounded-[0.75rem] bg-blue-500 text-white shadow-lg">
+                <RotateCcw className="h-5 w-5" />
+              </span>
+              <span className="text-[10px] font-bold">Thi lại</span>
+            </button>
+          )}
+          {reviewDue > 0 && (
+            <button type="button" onClick={() => onNavigate("review")} className="flex flex-col items-center gap-1.5 transition-all active:scale-[0.90] hover:scale-[1.05]">
+              <span className="flex h-11 w-11 items-center justify-center rounded-[0.75rem] bg-orange-500 text-white shadow-lg">
+                <ClipboardCheck className="h-5 w-5" />
+              </span>
+              <span className="text-[10px] font-bold">Cần ôn</span>
+            </button>
+          )}
+        </div>
+      )}
+      {pendingCount > 0 && pendingCount < 10 && (
+        <p className="text-center text-[10px] font-bold text-muted-foreground">
+          Còn {10 - pendingCount} từ nữa để mở bài thi
+        </p>
       )}
 
       {/* ── Kỹ năng 3×3 ── */}
@@ -203,19 +212,20 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
         </div>
       </section>
 
-      {/* ── Kết quả thi gần đây ── */}
+      {/* ── Kết quả thi gần đây — iOS icon row ── */}
       {testResults.length > 0 && (
         <section>
-          <h3 className="mb-2 text-center text-sm font-black text-muted-foreground">Kết quả gần đây</h3>
-          <div className={cn("grid gap-2 mx-auto max-w-xs",
-            testResults.length <= 3 ? "grid-cols-3" : testResults.length <= 4 ? "grid-cols-4" : "grid-cols-5")}>
+          <h3 className="mb-3 text-center text-xs font-black text-muted-foreground">Kết quả gần đây</h3>
+          <div className="flex justify-center gap-4">
             {testResults.map((r) => {
               const grade = r.score >= 90 ? "A+" : r.score >= 80 ? "A" : r.score >= 70 ? "B" : r.score >= 60 ? "C" : r.score >= 50 ? "D" : "F";
-              const color = r.score >= 80 ? "text-success" : r.score >= 60 ? "text-warning" : "text-red-500";
+              const bg = r.score >= 80 ? "bg-emerald-500" : r.score >= 60 ? "bg-amber-500" : "bg-red-500";
               return (
-                <div key={r.id} className="rounded-xl bg-secondary py-2 text-center shadow-sm">
-                  <p className={cn("text-lg font-black leading-none", color)}>{grade}</p>
-                  <p className="text-[10px] font-bold text-muted-foreground mt-0.5">{r.score}%</p>
+                <div key={r.id} className="flex flex-col items-center gap-1">
+                  <span className={cn("flex h-10 w-10 items-center justify-center rounded-[0.625rem] text-white shadow-md text-sm font-black", bg)}>
+                    {grade}
+                  </span>
+                  <span className="text-[9px] font-bold text-muted-foreground">{r.score}%</span>
                 </div>
               );
             })}
