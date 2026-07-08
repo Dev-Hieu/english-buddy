@@ -117,8 +117,9 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
         </div>
       </header>
 
-      {/* ── Stats + Progress Card ── */}
-      <section className="rounded-3xl bg-card border border-border/50 p-5 shadow-card space-y-4">
+      {/* ── Stats — bấm vào xem tiến độ chi tiết ── */}
+      <button type="button" onClick={() => onNavigate("dashboard")}
+        className="w-full rounded-3xl bg-card border border-border/50 p-5 shadow-card space-y-3 text-left transition-all active:scale-[0.99] hover:shadow-lg hover:border-primary/30">
         {/* Stats row */}
         <div className="grid grid-cols-3 gap-2">
           <div className="flex items-center justify-center gap-1.5 rounded-xl bg-muted py-2.5 text-sm font-extrabold">
@@ -127,10 +128,9 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
           <div className="flex items-center justify-center gap-1.5 rounded-xl bg-muted py-2.5 text-sm font-extrabold">
             <Flame className="h-4 w-4 text-primary" /> {streak} ngày
           </div>
-          <button type="button" onClick={() => onNavigate("leaderboard")}
-            className="flex items-center justify-center gap-1.5 rounded-xl bg-muted py-2.5 text-sm font-extrabold hover:bg-primary/10 transition-colors">
+          <div className="flex items-center justify-center gap-1.5 rounded-xl bg-muted py-2.5 text-sm font-extrabold">
             <Trophy className="h-4 w-4 text-primary" /> {weekRank ? `#${weekRank}` : "—"}
-          </button>
+          </div>
         </div>
 
         {/* Progress bar */}
@@ -148,17 +148,20 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
               style={{ width: `${goalPct}%` }}
             />
           </div>
-          <p className="mt-1.5 text-xs font-semibold text-muted-foreground">
-            Vốn từ: {learnedTotal} đã thuộc · {student.level?.toUpperCase?.() || "A1"}
-          </p>
+          <div className="mt-1.5 flex items-center justify-between">
+            <p className="text-xs font-semibold text-muted-foreground">
+              Vốn từ: {learnedTotal} đã thuộc · {student.level?.toUpperCase?.() || "A1"}
+            </p>
+            <span className="text-[10px] font-bold text-primary">Xem tiến độ →</span>
+          </div>
         </div>
+      </button>
 
-        {/* CTA */}
-        <button type="button" onClick={startLearning}
-          className="flex w-full items-center justify-center gap-2 rounded-2xl bg-primary py-4 text-lg font-black text-white shadow-[0_5px_0_0_hsl(var(--primary-shadow))] transition-all active:translate-y-[3px] active:shadow-[0_2px_0_0_hsl(var(--primary-shadow))] hover:brightness-105">
-          <Play className="h-5 w-5" /> {resumeStarted ? "Tiếp tục học" : "Bắt đầu học"}
-        </button>
-      </section>
+      {/* ── CTA ── */}
+      <button type="button" onClick={startLearning}
+        className="flex w-full items-center justify-center gap-2 rounded-2xl bg-primary py-4 text-lg font-black text-white shadow-[0_5px_0_0_hsl(var(--primary-shadow))] transition-all active:translate-y-[3px] active:shadow-[0_2px_0_0_hsl(var(--primary-shadow))] hover:brightness-105">
+        <Play className="h-5 w-5" /> {resumeStarted ? "Tiếp tục học" : "Bắt đầu học"}
+      </button>
 
       {/* ── Action badges: Thi + Ôn ── */}
       {(pendingCount >= 10 || dueTestCount > 0 || reviewDue > 0) && (
