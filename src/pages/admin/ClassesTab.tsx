@@ -121,7 +121,7 @@ export function ClassesTab({ onRefresh }: ClassesTabProps) {
   }
 
   async function handleDelete(id: string, name: string) {
-    if (!confirm(`Xoa lop "${name}"?`)) return;
+    if (!confirm(`Xoá lớp "${name}"?`)) return;
     await deleteClass(id);
     await load();
     onRefresh();
@@ -166,36 +166,36 @@ export function ClassesTab({ onRefresh }: ClassesTabProps) {
       <div className="space-y-4">
         <div className="flex items-center gap-3">
           <Button type="button" size="sm" variant="outline" onClick={() => setDetailClass(null)}>
-            <ChevronLeft className="h-4 w-4 mr-1" /> Quay lai
+            <ChevronLeft className="h-4 w-4 mr-1" /> Quay lại
           </Button>
-          <h2 className="text-xl font-black">{detailClass.name} — Hoc sinh</h2>
+          <h2 className="text-xl font-black">{detailClass.name} — Học sinh</h2>
         </div>
 
         <Card>
           <CardContent className="pt-4 space-y-3">
-            <p className="font-extrabold text-sm">Them hoc sinh vao lop</p>
+            <p className="font-extrabold text-sm">Thêm học sinh vào lớp</p>
             <div className="flex gap-2">
               <select
                 className="flex-1 rounded-xl border border-border px-3 py-2 text-sm font-bold focus:outline-none"
                 value={addStudentId}
                 onChange={(e) => setAddStudentId(e.target.value)}
               >
-                <option value="">-- Chon hoc sinh --</option>
+                <option value="">-- Chọn học sinh --</option>
                 {available.map((s) => (
-                  <option key={s.id} value={s.id}>{s.name} (Lop {s.grade}, {s.level.toUpperCase()})</option>
+                  <option key={s.id} value={s.id}>{s.name} (Lớp {s.grade}, {s.level.toUpperCase()})</option>
                 ))}
               </select>
               <Button type="button" size="sm" onClick={handleAddStudent} disabled={!addStudentId}>
-                Them
+                Thêm
               </Button>
             </div>
           </CardContent>
         </Card>
 
         {detailLoading ? (
-          <p className="text-center text-sm font-bold text-muted-foreground">Dang tai...</p>
+          <p className="text-center text-sm font-bold text-muted-foreground">Đang tải...</p>
         ) : classStudents.length === 0 ? (
-          <p className="text-center text-sm font-bold text-muted-foreground">Chua co hoc sinh nao trong lop.</p>
+          <p className="text-center text-sm font-bold text-muted-foreground">Chưa có học sinh nào trong lớp.</p>
         ) : (
           <div className="space-y-2">
             {classStudents.map((s) => (
@@ -204,7 +204,7 @@ export function ClassesTab({ onRefresh }: ClassesTabProps) {
                   <div>
                     <p className="font-extrabold text-sm">{s.name}</p>
                     <p className="text-xs font-bold text-muted-foreground">
-                      Lop {s.grade} &nbsp;{s.level?.toUpperCase()}
+                      Lớp {s.grade} &nbsp;{s.level?.toUpperCase()}
                     </p>
                   </div>
                   <Button
@@ -230,9 +230,9 @@ export function ClassesTab({ onRefresh }: ClassesTabProps) {
     <div className="space-y-4">
       {/* Header */}
       <div className="flex items-center justify-between">
-        <h2 className="text-xl font-black">Lop hoc</h2>
+        <h2 className="text-xl font-black">Lớp học</h2>
         <Button type="button" size="sm" onClick={() => { setShowCreate((v) => !v); setEditId(null); }}>
-          + Tao lop
+          + Tạo lớp
         </Button>
       </div>
 
@@ -240,7 +240,7 @@ export function ClassesTab({ onRefresh }: ClassesTabProps) {
       {showCreate && (
         <Card>
           <CardContent className="space-y-3 pt-5">
-            <p className="font-extrabold">Tao lop moi</p>
+            <p className="font-extrabold">Tạo lớp mới</p>
             <input
               className="w-full rounded-xl border border-border px-3 py-2 text-sm font-bold focus:outline-none focus:ring-2 focus:ring-primary/40"
               placeholder="Tên lớp"
@@ -253,15 +253,15 @@ export function ClassesTab({ onRefresh }: ClassesTabProps) {
                 value={createGrade}
                 onChange={(e) => setCreateGrade(e.target.value)}
               >
-                <option value="">Khoi (tuy chon)</option>
-                {GRADES.map((g) => <option key={g} value={g}>Lop {g}</option>)}
+                <option value="">Khối (tuỳ chọn)</option>
+                {GRADES.map((g) => <option key={g} value={g}>Lớp {g}</option>)}
               </select>
               <select
                 className="rounded-xl border border-border px-2 py-2 text-sm font-bold focus:outline-none"
                 value={createLevel}
                 onChange={(e) => setCreateLevel(e.target.value)}
               >
-                <option value="">Cap do (tuy chon)</option>
+                <option value="">Cấp độ (tuỳ chọn)</option>
                 {LEVELS.map((l) => <option key={l} value={l}>{l.toUpperCase()}</option>)}
               </select>
               <select
@@ -269,7 +269,7 @@ export function ClassesTab({ onRefresh }: ClassesTabProps) {
                 value={createTeacher}
                 onChange={(e) => setCreateTeacher(e.target.value)}
               >
-                <option value="">Giao vien (tuy chon)</option>
+                <option value="">Giáo viên (tuỳ chọn)</option>
                 {teachers.map((t) => <option key={t.id} value={t.id}>{t.name}</option>)}
               </select>
             </div>
@@ -281,7 +281,7 @@ export function ClassesTab({ onRefresh }: ClassesTabProps) {
                 {createSaving ? "Đang lưu..." : "Lưu"}
               </Button>
               <Button type="button" size="sm" variant="outline" onClick={() => setShowCreate(false)}>
-                Huy
+                Huỷ
               </Button>
             </div>
           </CardContent>
@@ -290,9 +290,9 @@ export function ClassesTab({ onRefresh }: ClassesTabProps) {
 
       {/* Class list */}
       {loading ? (
-        <p className="text-center text-sm font-bold text-muted-foreground">Dang tai...</p>
+        <p className="text-center text-sm font-bold text-muted-foreground">Đang tải...</p>
       ) : classes.length === 0 ? (
-        <p className="text-center text-sm font-bold text-muted-foreground">Chua co lop nao.</p>
+        <p className="text-center text-sm font-bold text-muted-foreground">Chưa có lớp nào.</p>
       ) : (
         <div className="space-y-3">
           {classes.map((c) => (
@@ -305,7 +305,7 @@ export function ClassesTab({ onRefresh }: ClassesTabProps) {
                         <p className="font-extrabold">{c.name}</p>
                         {c.grade && (
                           <span className="rounded-lg bg-muted px-2 py-0.5 text-xs font-extrabold">
-                            Lop {c.grade}
+                            Lớp {c.grade}
                           </span>
                         )}
                         {c.level && (
@@ -315,12 +315,12 @@ export function ClassesTab({ onRefresh }: ClassesTabProps) {
                         )}
                       </div>
                       <div className="mt-1 flex items-center gap-2">
-                        <span className="text-xs font-bold text-muted-foreground">Ma lop: <span className="font-extrabold text-foreground">{c.code}</span></span>
+                        <span className="text-xs font-bold text-muted-foreground">Mã lớp: <span className="font-extrabold text-foreground">{c.code}</span></span>
                         <button
                           type="button"
                           className="rounded p-0.5 hover:bg-muted"
                           onClick={() => copyCode(c.code)}
-                          title="Sao chep ma lop"
+                          title="Sao chép mã lớp"
                         >
                           <Copy className="h-3 w-3 text-muted-foreground" />
                         </button>
@@ -331,7 +331,7 @@ export function ClassesTab({ onRefresh }: ClassesTabProps) {
                         </p>
                       )}
                       <p className="mt-0.5 text-xs font-bold text-muted-foreground">
-                        {c.studentCount} hoc sinh
+                        {c.studentCount} học sinh
                       </p>
                     </div>
                     <div className="flex shrink-0 gap-1">
@@ -342,7 +342,7 @@ export function ClassesTab({ onRefresh }: ClassesTabProps) {
                         className="gap-1"
                         onClick={() => openDetail(c)}
                       >
-                        <Users className="h-3.5 w-3.5" /> Hoc sinh
+                        <Users className="h-3.5 w-3.5" /> Học sinh
                       </Button>
                       <Button
                         type="button"
@@ -369,7 +369,7 @@ export function ClassesTab({ onRefresh }: ClassesTabProps) {
                   {/* Inline edit form */}
                   {editId === c.id && (
                     <div className="mt-4 space-y-3 border-t border-border pt-4">
-                      <p className="font-extrabold">Sua thong tin lop</p>
+                      <p className="font-extrabold">Sửa thông tin lớp</p>
                       <input
                         className="w-full rounded-xl border border-border px-3 py-2 text-sm font-bold focus:outline-none focus:ring-2 focus:ring-primary/40"
                         value={editName}
@@ -381,15 +381,15 @@ export function ClassesTab({ onRefresh }: ClassesTabProps) {
                           value={editGrade}
                           onChange={(e) => setEditGrade(e.target.value)}
                         >
-                          <option value="">Khoi (tuy chon)</option>
-                          {GRADES.map((g) => <option key={g} value={g}>Lop {g}</option>)}
+                          <option value="">Khối (tuỳ chọn)</option>
+                          {GRADES.map((g) => <option key={g} value={g}>Lớp {g}</option>)}
                         </select>
                         <select
                           className="rounded-xl border border-border px-2 py-2 text-sm font-bold focus:outline-none"
                           value={editLevel}
                           onChange={(e) => setEditLevel(e.target.value)}
                         >
-                          <option value="">Cap do (tuy chon)</option>
+                          <option value="">Cấp độ (tuỳ chọn)</option>
                           {LEVELS.map((l) => <option key={l} value={l}>{l.toUpperCase()}</option>)}
                         </select>
                         <select
@@ -397,7 +397,7 @@ export function ClassesTab({ onRefresh }: ClassesTabProps) {
                           value={editTeacher}
                           onChange={(e) => setEditTeacher(e.target.value)}
                         >
-                          <option value="">Giao vien (tuy chon)</option>
+                          <option value="">Giáo viên (tuỳ chọn)</option>
                           {teachers.map((t) => <option key={t.id} value={t.id}>{t.name}</option>)}
                         </select>
                       </div>
@@ -406,7 +406,7 @@ export function ClassesTab({ onRefresh }: ClassesTabProps) {
                           {editSaving ? "Đang lưu..." : "Lưu"}
                         </Button>
                         <Button type="button" size="sm" variant="outline" onClick={() => setEditId(null)}>
-                          Huy
+                          Huỷ
                         </Button>
                       </div>
                     </div>

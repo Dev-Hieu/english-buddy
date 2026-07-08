@@ -82,7 +82,7 @@ export function LessonPage({
         <Button type="button" variant="outline" onClick={goPrevious} disabled={currentIndex === 0}>
           <ArrowLeft className="h-4 w-4" /> Trước
         </Button>
-        <Button type="button" variant="outline" onClick={isLast ? onBackHome : goNext}>
+        <Button type="button" variant="outline" onClick={isLast ? () => { if (currentWord && !studiedIds.has(currentWord.id)) onAnswerWord(currentWord.id, true); onBackHome(); } : goNext}>
           {isLast ? (<><CheckCircle2 className="h-4 w-4" /> Hoàn thành</>) : (<>Tiếp <ArrowRight className="h-4 w-4" /></>)}
         </Button>
       </div>

@@ -337,8 +337,8 @@ export function ShadowingPage({ student, onBackHome }: Props) {
     try {
       const data = await apiRequest<{ sentences: Sentence[]; count: number }>(`/api/youtube-captions?v=${vid}`, { auth: false });
       if (data.sentences.length > 0) { setSentences(data.sentences); setVideoId(vid); saveToMyVideos(vid); }
-      else { setError("Chưa có subtitle."); setPasteMode(true); }
-    } catch { setError("Lỗi."); setPasteMode(true); }
+      else { setError("Video này chưa có phụ đề. Thử dán thủ công bên dưới."); setPasteMode(true); }
+    } catch { setError("Không tải được phụ đề. Thử dán thủ công bên dưới."); setPasteMode(true); }
     finally { setLoading(false); }
   };
 
@@ -614,7 +614,7 @@ export function ShadowingPage({ student, onBackHome }: Props) {
             {loading && <p className="text-center text-sm font-bold text-muted-foreground"><Loader2 className="inline h-4 w-4 animate-spin" /> Đang tải...</p>}
             {error && <p className="text-xs font-bold text-red-600">{error}</p>}
             {pasteMode && (<div className="space-y-2">
-              <p className="text-xs font-semibold text-muted-foreground">YouTube → ⋮ → Open transcript → copy paste:</p>
+              <p className="text-xs font-semibold text-muted-foreground">YouTube → ⋮ → Mở bản chép lời → sao chép & dán vào đây:</p>
               <textarea className="w-full rounded-xl border-2 border-border px-3 py-2 text-sm font-bold outline-none focus:border-primary h-28 resize-none"
                 placeholder={"Hello, my name is Dee Dee.\nWhat is your name?"} value={pasteText} onChange={(e) => setPasteText(e.target.value)} />
               <Button type="button" onClick={() => applyPaste(vid)} disabled={!pasteText.trim()} className="w-full"><CheckCircle2 className="h-4 w-4" /> Dùng subtitle</Button>

@@ -33,7 +33,7 @@ const FEATURES: { name: string; free: boolean | string; premium: boolean | strin
 const BANK_INFO = {
   bank: "OCB (Ngân hàng Phương Đông)",
   account: "800 999 9999",
-  holder: "LE TIEN HIEU",
+  holder: "LÊ TIẾN HIẾU",
   format: "PREMIUM [email] [gói]",
 };
 

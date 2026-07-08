@@ -157,7 +157,7 @@ export function ConversationPage({ student, onBackHome }: ConversationPageProps)
         if (en) speakText(en);
       }
     } catch {
-      setError("Chưa gọi được trợ lý AI. Kiểm tra DEEPSEEK_API_KEY trong server/.env.");
+      setError("Chưa gọi được trợ lý AI. Vui lòng thử lại sau.");
     } finally { setLoading(false); }
   };
 

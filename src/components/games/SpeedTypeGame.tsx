@@ -137,27 +137,27 @@ export function SpeedTypeGame({ words, onComplete, onBack }: Props) {
       <Card className="animate-pop">
         <CardContent className="flex flex-col items-center gap-4 p-8 text-center">
           <span className={cn("text-8xl font-black", rankColor[rank])}>{rank}</span>
-          <p className="text-2xl font-black text-primary">Rank {rank}</p>
+          <p className="text-2xl font-black text-primary">Hạng {rank}</p>
           <div className="grid w-full grid-cols-3 gap-4 text-center">
             <div>
               <p className="text-3xl font-black text-primary">{wpm}</p>
-              <p className="text-sm font-bold text-muted-foreground">WPM</p>
+              <p className="text-sm font-bold text-muted-foreground">từ/phút</p>
             </div>
             <div>
               <p className="text-3xl font-black text-primary">{accuracy}%</p>
-              <p className="text-sm font-bold text-muted-foreground">Accuracy</p>
+              <p className="text-sm font-bold text-muted-foreground">Độ chính xác</p>
             </div>
             <div>
               <p className="text-3xl font-black text-primary">{correct}</p>
-              <p className="text-sm font-bold text-muted-foreground">Words</p>
+              <p className="text-sm font-bold text-muted-foreground">Số từ</p>
             </div>
           </div>
           <div className="flex w-full gap-3">
             <Button type="button" size="lg" className="flex-1" onClick={handlePlayAgain}>
-              Play Again
+              Chơi lại
             </Button>
             <Button type="button" size="lg" variant="outline" className="flex-1" onClick={onBack}>
-              Back
+              Quay lại
             </Button>
           </div>
         </CardContent>
@@ -171,10 +171,10 @@ export function SpeedTypeGame({ words, onComplete, onBack }: Props) {
     <div className="space-y-4">
       <div className="flex items-center justify-between">
         <Button type="button" variant="ghost" size="sm" onClick={onBack}>
-          Back
+          Quay lại
         </Button>
         <p className="text-sm font-bold text-muted-foreground">
-          {correct} words
+          {correct} từ
         </p>
       </div>
 
@@ -226,7 +226,7 @@ export function SpeedTypeGame({ words, onComplete, onBack }: Props) {
           {/* Input */}
           {!started ? (
             <Button type="button" size="lg" className="w-full text-lg" onClick={handleStart}>
-              Start
+              Bắt đầu
             </Button>
           ) : (
             <form onSubmit={handleSubmit}>
@@ -239,7 +239,7 @@ export function SpeedTypeGame({ words, onComplete, onBack }: Props) {
                 autoCorrect="off"
                 autoCapitalize="off"
                 spellCheck={false}
-                placeholder="Type the word..."
+                placeholder="Gõ từ..."
                 className={cn(
                   "w-full rounded-xl border-2 bg-background px-4 py-3 text-center text-xl font-bold outline-none transition-colors",
                   flash === "green" && "border-green-500",

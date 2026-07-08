@@ -246,7 +246,7 @@ export function WordSearchGame({ words, onComplete, onBack }: Props) {
 
       const cells = getCellsOnLine(r1, c1, r, c);
       if (!cells) {
-        setMessage("Chon theo duong thang!");
+        setMessage("Chọn theo đường thẳng!");
         return;
       }
 
@@ -270,7 +270,7 @@ export function WordSearchGame({ words, onComplete, onBack }: Props) {
           onComplete(score);
         }
       } else {
-        setMessage("Khong dung, thu lai!");
+        setMessage("Không đúng, thử lại!");
       }
     },
     [phase, firstCell, grid, placed, foundWords, elapsed, onComplete],
@@ -280,14 +280,14 @@ export function WordSearchGame({ words, onComplete, onBack }: Props) {
   if (phase === "pick") {
     return (
       <>
-        <SessionHeader title="Tim tu" onClose={onBack} />
+        <SessionHeader title="Tìm từ" onClose={onBack} />
 
         <Card>
           <CardContent className="flex flex-col gap-4 p-6">
-            <p className="text-center text-lg font-bold">Chon do kho</p>
+            <p className="text-center text-lg font-bold">Chọn độ khó</p>
             {(["easy", "medium", "hard"] as Difficulty[]).map((d) => {
               const cfg = DIFFICULTY_CONFIG[d];
-              const label = d === "easy" ? "De" : d === "medium" ? "Trung binh" : "Kho";
+              const label = d === "easy" ? "Dễ" : d === "medium" ? "Trung bình" : "Khó";
               return (
                 <Button
                   key={d}
@@ -297,7 +297,7 @@ export function WordSearchGame({ words, onComplete, onBack }: Props) {
                   className="w-full text-base"
                   onClick={() => startGame(d)}
                 >
-                  {label} ({cfg.size}x{cfg.size}, {cfg.count} tu)
+                  {label} ({cfg.size}x{cfg.size}, {cfg.count} từ)
                 </Button>
               );
             })}
@@ -312,21 +312,21 @@ export function WordSearchGame({ words, onComplete, onBack }: Props) {
     const score = Math.max(1000 - elapsed * 2, 100) + placed.length * 50;
     return (
       <>
-        <SessionHeader title="Tim tu" onClose={onBack} />
+        <SessionHeader title="Tìm từ" onClose={onBack} />
 
         <Card className="animate-pop">
           <CardContent className="flex flex-col items-center gap-4 p-8 text-center">
             <PartyPopper className="h-14 w-14 text-accent" />
-            <p className="text-2xl font-black text-primary">Hoan thanh!</p>
+            <p className="text-2xl font-black text-primary">Hoàn thành!</p>
             <p className="text-muted-foreground">
-              Thoi gian: {formatTime(elapsed)} &middot; Diem: {score}
+              Thời gian: {formatTime(elapsed)} &middot; Điểm: {score}
             </p>
             <div className="flex w-full gap-2">
               <Button type="button" size="lg" variant="outline" className="flex-1" onClick={onBack}>
-                Quay lai
+                Quay lại
               </Button>
               <Button type="button" size="lg" className="flex-1" onClick={() => startGame(difficulty)}>
-                Choi lai
+                Chơi lại
               </Button>
             </div>
           </CardContent>
@@ -339,7 +339,7 @@ export function WordSearchGame({ words, onComplete, onBack }: Props) {
   return (
     <>
       <SessionHeader
-        title="Tim tu"
+        title="Tìm từ"
         onClose={onBack}
         right={
           <div className="flex items-center gap-2">
@@ -358,7 +358,7 @@ export function WordSearchGame({ words, onComplete, onBack }: Props) {
       )}
 
       <p className="mb-2 text-center text-xs text-muted-foreground">
-        Cham o dau &rarr; cham o cuoi de chon tu
+        Chạm ô đầu &rarr; chạm ô cuối để chọn từ
       </p>
 
       {/* Grid */}
@@ -398,7 +398,7 @@ export function WordSearchGame({ words, onComplete, onBack }: Props) {
       {/* Word list */}
       <div className="mt-4">
         <p className="mb-2 text-sm font-bold">
-          Tu can tim ({foundWords.size}/{placed.length})
+          Từ cần tìm ({foundWords.size}/{placed.length})
         </p>
         <div className="grid grid-cols-2 gap-1.5">
           {placed.map((pw) => {

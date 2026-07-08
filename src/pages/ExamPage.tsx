@@ -1,4 +1,4 @@
-import { RotateCcw, Volume2 } from "lucide-react";
+import { Volume2 } from "lucide-react";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { SEED_VOCABULARY } from "@/data/seedVocabulary";
 import { buildQuiz } from "@/utils/quizGenerator";

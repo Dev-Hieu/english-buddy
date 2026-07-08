@@ -1,4 +1,4 @@
-import { CheckCircle2, Loader2, Mic, PartyPopper, Volume2, XCircle } from "lucide-react";
+import { Loader2, Mic, PartyPopper, Volume2 } from "lucide-react";
 import { useEffect, useMemo, useRef, useState } from "react";
 import type { Student } from "@/types";
 import { SEED_VOCABULARY } from "@/data/seedVocabulary";
@@ -211,8 +211,8 @@ function SpeakWord({ item, onAnswer }: { item: SkillTestItem; onAnswer: (v: stri
 
 function ResultView({ data, answers, onDone }: { data: { results: SkillResult[]; totalDelta: number; score?: number }; answers?: SkillAnswer[]; onDone: () => void }) {
   const wordText = (id: string) => SEED_VOCABULARY.find((w) => w.id === id)?.word ?? id;
-  const totalSkills = data.results.length * 3; // approximate
-  const passedSkills = data.results.reduce((s, r) => s + r.points, 0);
+  const totalSkills = data.results.reduce((s, r) => s + r.passed.length + r.lost.length, 0);
+  const passedSkills = data.results.reduce((s, r) => s + r.passed.length, 0);
   const score = data.score ?? (totalSkills > 0 ? Math.round((passedSkills / totalSkills) * 100) : 0);
   const grade = score >= 90 ? "A+" : score >= 80 ? "A" : score >= 70 ? "B" : score >= 60 ? "C" : score >= 50 ? "D" : "F";
   const gradeColor = score >= 80 ? "text-success" : score >= 60 ? "text-yellow-600" : "text-red-600";

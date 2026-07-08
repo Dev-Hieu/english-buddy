@@ -22,7 +22,7 @@ const TURN_TIME = 10;
 const BOT_FAIL_CHANCE = 0.15;
 
 const INITIAL_PLAYERS: Player[] = [
-  { name: "You", emoji: "😊", isHuman: true, eliminated: false, wordsPlayed: 0 },
+  { name: "Bạn", emoji: "😊", isHuman: true, eliminated: false, wordsPlayed: 0 },
   { name: "Bot 1", emoji: "🦊", isHuman: false, eliminated: false, wordsPlayed: 0 },
   { name: "Bot 2", emoji: "🐱", isHuman: false, eliminated: false, wordsPlayed: 0 },
   { name: "Bot 3", emoji: "🐶", isHuman: false, eliminated: false, wordsPlayed: 0 },
@@ -57,7 +57,7 @@ export function WordChainGame({ words, onComplete, onBack }: Props) {
       const start = wordList[Math.floor(Math.random() * wordList.length)];
       setChain([start]);
       setUsedWords(new Set([start]));
-      setMessage(`Starting word: "${start}" — next word must start with "${start.slice(-1)}"`);
+      setMessage(`Từ bắt đầu: "${start}" — từ tiếp phải bắt đầu bằng "${start.slice(-1)}"`);
     }
   }, [chain.length, wordList]);
 
@@ -106,7 +106,7 @@ export function WordChainGame({ words, onComplete, onBack }: Props) {
         }
         return updated;
       });
-      setElimination(`${players[index].emoji} ${players[index].name} eliminated! ${reason}`);
+      setElimination(`${players[index].emoji} ${players[index].name} bị loại! ${reason}`);
       setTimeout(() => {
         setElimination(null);
         // Check if game should end
@@ -127,22 +127,22 @@ export function WordChainGame({ words, onComplete, onBack }: Props) {
       const lastLetter = chain[chain.length - 1].slice(-1);
 
       if (lower[0] !== lastLetter) {
-        eliminatePlayer(playerIndex, `"${lower}" doesn't start with "${lastLetter}"`);
+        eliminatePlayer(playerIndex, `"${lower}" không bắt đầu bằng "${lastLetter}"`);
         return;
       }
       if (!wordSet.has(lower)) {
-        eliminatePlayer(playerIndex, `"${lower}" is not a valid word`);
+        eliminatePlayer(playerIndex, `"${lower}" không phải từ hợp lệ`);
         return;
       }
       if (usedWords.has(lower)) {
-        eliminatePlayer(playerIndex, `"${lower}" was already used`);
+        eliminatePlayer(playerIndex, `"${lower}" đã được dùng rồi`);
         return;
       }
 
       setChain((prev) => [...prev, lower]);
       setUsedWords((prev) => new Set(prev).add(lower));
       setPlayers((prev) => prev.map((p, i) => (i === playerIndex ? { ...p, wordsPlayed: p.wordsPlayed + 1 } : p)));
-      setMessage(`${players[playerIndex].emoji} played "${lower}"`);
+      setMessage(`${players[playerIndex].emoji} đã chơi "${lower}"`);
       advanceTurn();
     },
     [chain, wordSet, usedWords, players, eliminatePlayer, advanceTurn],
@@ -167,7 +167,7 @@ export function WordChainGame({ words, onComplete, onBack }: Props) {
     if (timeLeft <= 0 && !processingRef.current && !gameOver && chain.length > 0) {
       processingRef.current = true;
       if (timerRef.current) clearInterval(timerRef.current);
-      eliminatePlayer(currentIndex, "Time's up!");
+      eliminatePlayer(currentIndex, "Hết giờ!");
     }
   }, [timeLeft, currentIndex, gameOver, chain.length, eliminatePlayer]);
 
@@ -185,13 +185,13 @@ export function WordChainGame({ words, onComplete, onBack }: Props) {
       if (timerRef.current) clearInterval(timerRef.current);
 
       if (shouldFail) {
-        eliminatePlayer(currentIndex, "Couldn't think of a word!");
+        eliminatePlayer(currentIndex, "Không nghĩ ra từ nào!");
         return;
       }
 
       const candidates = wordList.filter((w) => w[0] === lastLetter && !usedWords.has(w));
       if (candidates.length === 0) {
-        eliminatePlayer(currentIndex, "No valid words left!");
+        eliminatePlayer(currentIndex, "Không còn từ hợp lệ!");
         return;
       }
 
@@ -237,10 +237,10 @@ export function WordChainGame({ words, onComplete, onBack }: Props) {
   if (wordList.length < 10) {
     return (
       <>
-        <SessionHeader title="Word Chain" onClose={onBack} />
+        <SessionHeader title="Nối từ" onClose={onBack} />
         <Card>
           <CardContent className="p-8 text-center font-bold text-muted-foreground">
-            Not enough words to play Word Chain. Need at least 10 words.
+            Chưa đủ từ để chơi Nối từ. Cần ít nhất 10 từ.
           </CardContent>
         </Card>
       </>
@@ -254,42 +254,42 @@ export function WordChainGame({ words, onComplete, onBack }: Props) {
     const humanAlive = players.find((p) => p.isHuman && !p.eliminated);
     const placement = humanAlive ? 1 : 4 - players.filter((p) => !p.isHuman && p.eliminated).length;
     const humanWords = players.find((p) => p.isHuman)!.wordsPlayed;
-    const placementLabel = placement === 1 ? "1st" : placement === 2 ? "2nd" : placement === 3 ? "3rd" : "4th";
+    const placementLabel = placement === 1 ? "nhất" : placement === 2 ? "nhì" : placement === 3 ? "ba" : "tư";
 
     return (
       <>
-        <SessionHeader title="Word Chain" onClose={onBack} />
+        <SessionHeader title="Nối từ" onClose={onBack} />
         <Card className="animate-pop">
           <CardContent className="flex flex-col items-center gap-4 p-8 text-center">
             <span className="text-6xl">{placement === 1 ? "🏆" : "💪"}</span>
             <p className="text-2xl font-black text-primary">
-              {placement === 1 ? "You won!" : `You placed ${placementLabel}!`}
+              {placement === 1 ? "Bạn thắng rồi!" : `Bạn xếp hạng ${placementLabel}!`}
             </p>
             {winner && (
               <p className="text-lg font-bold text-muted-foreground">
-                Winner: {winner.emoji} {winner.name}
+                Người thắng: {winner.emoji} {winner.name}
               </p>
             )}
             <div className="w-full space-y-2 rounded-xl bg-muted p-4">
-              <p className="text-sm font-bold text-muted-foreground">Results</p>
+              <p className="text-sm font-bold text-muted-foreground">Kết quả</p>
               {players.map((p) => (
                 <div key={p.name} className="flex items-center justify-between text-sm font-semibold">
                   <span>
                     {p.emoji} {p.name}
                   </span>
                   <span className={cn(p.eliminated ? "text-red-400" : "text-green-500")}>
-                    {p.eliminated ? `Out (${p.wordsPlayed} words)` : `Winner! (${p.wordsPlayed} words)`}
+                    {p.eliminated ? `Loại (${p.wordsPlayed} từ)` : `Thắng! (${p.wordsPlayed} từ)`}
                   </span>
                 </div>
               ))}
             </div>
-            <p className="text-sm font-bold text-muted-foreground">Chain length: {chain.length} words</p>
+            <p className="text-sm font-bold text-muted-foreground">Chuỗi từ: {chain.length} từ</p>
             <div className="flex w-full gap-2">
               <Button type="button" size="lg" className="flex-1" onClick={handlePlayAgain}>
-                Play again
+                Chơi lại
               </Button>
               <Button type="button" size="lg" variant="outline" className="flex-1" onClick={() => onComplete(humanWords)}>
-                Done
+                Xong
               </Button>
             </div>
           </CardContent>
@@ -303,7 +303,7 @@ export function WordChainGame({ words, onComplete, onBack }: Props) {
 
   return (
     <>
-      <SessionHeader title="Word Chain" onClose={onBack} />
+      <SessionHeader title="Nối từ" onClose={onBack} />
 
       {/* Players */}
       <div className="mb-4 grid grid-cols-4 gap-2">
@@ -319,7 +319,7 @@ export function WordChainGame({ words, onComplete, onBack }: Props) {
             <span className={cn("text-xs font-extrabold", i === currentIndex && !p.eliminated ? "text-primary" : "text-muted-foreground")}>
               {p.name}
             </span>
-            {p.eliminated && <span className="text-[10px] font-bold text-red-400">OUT</span>}
+            {p.eliminated && <span className="text-[10px] font-bold text-red-400">LOẠI</span>}
           </div>
         ))}
       </div>
@@ -364,13 +364,13 @@ export function WordChainGame({ words, onComplete, onBack }: Props) {
           {/* Required letter hint */}
           {requiredLetter && (
             <p className="text-center text-lg font-black">
-              Next word must start with: <span className="text-primary uppercase">"{requiredLetter}"</span>
+              Từ tiếp phải bắt đầu bằng: <span className="text-primary uppercase">"{requiredLetter}"</span>
             </p>
           )}
 
           {/* Turn indicator */}
           <p className="text-center text-sm font-bold text-muted-foreground">
-            {currentPlayer.isHuman ? "Your turn! Type a word:" : `${currentPlayer.emoji} ${currentPlayer.name} is thinking...`}
+            {currentPlayer.isHuman ? "Lượt của bạn! Gõ một từ:" : `${currentPlayer.emoji} ${currentPlayer.name} đang suy nghĩ...`}
           </p>
 
           {/* Input (only interactive on human turn) */}
@@ -381,12 +381,12 @@ export function WordChainGame({ words, onComplete, onBack }: Props) {
               value={input}
               onChange={(e) => setInput(e.target.value)}
               disabled={!currentPlayer.isHuman || currentPlayer.eliminated}
-              placeholder={currentPlayer.isHuman ? `Word starting with "${requiredLetter}"...` : "Waiting for bot..."}
+              placeholder={currentPlayer.isHuman ? `Từ bắt đầu bằng "${requiredLetter}"...` : "Đang chờ bot..."}
               className="flex-1 rounded-xl border-2 border-border bg-card px-4 py-3 text-lg font-bold outline-none transition-colors focus:border-primary disabled:opacity-50"
               autoComplete="off"
             />
             <Button type="submit" size="lg" disabled={!currentPlayer.isHuman || currentPlayer.eliminated || !input.trim()}>
-              Go
+              Gửi
             </Button>
           </form>
         </CardContent>

@@ -64,7 +64,13 @@ function buildQuestion(
     }
     case "fill_blank": {
       const word = target.word;
-      const pos = Math.max(1, Math.floor(word.length / 2));
+      if (word.length < 2) {
+        // Quá ngắn để tạo fill_blank → fallback sang choose_meaning
+        const fallbackAnswer = target.meaning_vi;
+        const fallbackOptions = makeOptions(fallbackAnswer, pickDistractors(others.map((w) => w.meaning_vi), fallbackAnswer, 3));
+        return { ...base, type: "choose_meaning", question: `"${target.word}" nghĩa là gì?`, options: fallbackOptions, answer: fallbackAnswer };
+      }
+      const pos = Math.floor(word.length / 2);
       const answer = word[pos];
       const masked = word.slice(0, pos) + "_" + word.slice(pos + 1);
       const letterPool = "abcdefghijklmnopqrstuvwxyz".split("");

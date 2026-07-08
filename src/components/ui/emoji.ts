@@ -18,6 +18,13 @@ export const TOPIC_EMOJI: Record<string, string> = {
   topic_society: "🏙️",
   topic_science: "🔬",
   topic_culture: "🎭",
+  topic_greetings: "👋",
+  topic_weather: "🌤️",
+  topic_numbers: "🔢",
+  topic_colors: "🎨",
+  topic_body: "🦴",
+  topic_hobbies: "🎯",
+  topic_shopping: "🛒",
 };
 
 export const topicEmoji = (id: string) => TOPIC_EMOJI[id] ?? "📚";

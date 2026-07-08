@@ -65,7 +65,7 @@ export function TopicListPage({ student, studiedWordIds, onStartTopic }: TopicLi
               <span className="min-w-0 flex-1">
                 <span className="flex items-center gap-2">
                   <span className="truncate text-lg font-extrabold">{topic.name}</span>
-                  <span className="shrink-0 rounded-full bg-muted px-2 py-0.5 text-[11px] font-extrabold uppercase text-muted-foreground">{topic.level}</span>
+                  <span className="shrink-0 rounded-full bg-muted px-2 py-0.5 text-[11px] font-extrabold uppercase text-muted-foreground">{LEVEL_LABELS[topic.level]}</span>
                   {complete ? <CheckCircle2 className="h-5 w-5 shrink-0 text-success" /> : null}
                 </span>
                 <span className="block text-sm font-semibold text-muted-foreground">{topic.name_vi}</span>
