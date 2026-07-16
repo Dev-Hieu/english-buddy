@@ -621,10 +621,9 @@ export function ReadingPage({ student, onBackHome }: Props) {
   const tapWord = useCallback((word: string, e: React.MouseEvent) => {
     if (tappedWord === word) { setTappedWord(null); setPopupPos(null); return; }
     const rect = (e.target as HTMLElement).getBoundingClientRect();
-    // Luôn hiện ngay dưới từ, căn giữa, clamp trong màn hình
-    const x = Math.min(Math.max(rect.left + rect.width / 2, 132), window.innerWidth - 132);
+    // Hiện ngay dòng dưới từ, căn giữa màn hình theo chiều ngang
     const y = rect.bottom + 8;
-    setPopupPos({ x, y });
+    setPopupPos({ x: window.innerWidth / 2, y });
     setTappedWord(word);
   }, [tappedWord]);
 
