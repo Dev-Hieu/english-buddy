@@ -1,5 +1,5 @@
 import { BookOpen, ArrowLeft, CheckCircle, Loader2, Volume2, XCircle } from "lucide-react";
-import { useEffect, useState, useMemo } from "react";
+import { useCallback, useEffect, useRef, useState, useMemo } from "react";
 import type { Student } from "@/types";
 import { Card, CardContent } from "@/components/ui/card";
 import { SessionHeader } from "@/components/layout/SessionHeader";
@@ -613,8 +613,22 @@ export function ReadingPage({ student, onBackHome }: Props) {
   const [screen, setScreen] = useState<Screen>("list");
   const [activeStory, setActiveStory] = useState<Story | null>(null);
   const [tappedWord, setTappedWord] = useState<string | null>(null);
+  const [popupPos, setPopupPos] = useState<{ x: number; y: number } | null>(null);
+  const popupRef = useRef<HTMLDivElement>(null);
   const [apiMeaning, setApiMeaning] = useState<{ vi: string; phonetic?: string } | null>(null);
   const [apiLoading, setApiLoading] = useState(false);
+
+  const tapWord = useCallback((word: string, e: React.MouseEvent) => {
+    if (tappedWord === word) { setTappedWord(null); setPopupPos(null); return; }
+    const rect = (e.target as HTMLElement).getBoundingClientRect();
+    // Popup hiện ngay dưới từ, căn giữa theo từ
+    const x = Math.min(Math.max(rect.left + rect.width / 2, 140), window.innerWidth - 140);
+    const spaceBelow = window.innerHeight - rect.bottom;
+    // Nếu không đủ chỗ bên dưới → hiện bên trên
+    const y = spaceBelow > 120 ? rect.bottom + 6 : rect.top - 6;
+    setPopupPos({ x, y: spaceBelow > 120 ? y : y });
+    setTappedWord(word);
+  }, [tappedWord]);
 
   // Auto-lookup từ API khi bấm từ không có trong MINI_DICT
   useEffect(() => {
@@ -733,7 +747,7 @@ export function ReadingPage({ student, onBackHome }: Props) {
                 const isActive = tappedWord === clean;
                 return (
                   <span key={i}
-                    onClick={() => setTappedWord(tappedWord === clean ? null : clean)}
+                    onClick={(e) => tapWord(clean, e)}
                     className={cn(
                       "cursor-pointer rounded-sm px-0.5 transition-all",
                       meaning ? "underline decoration-dotted decoration-1 underline-offset-4" : "",
@@ -756,32 +770,37 @@ export function ReadingPage({ student, onBackHome }: Props) {
           ))}
         </div>
 
-        {/* Floating word popup — cố định giữa màn hình */}
-        {tappedWord && (
+        {/* Tooltip popup — hiện ngay cạnh từ */}
+        {tappedWord && popupPos && (
           <>
-            <div className="fixed inset-0 z-40" onClick={() => setTappedWord(null)} />
-            <div className="fixed left-1/2 top-1/2 z-50 w-72 -translate-x-1/2 -translate-y-1/2 rounded-2xl border border-border bg-card px-5 py-4 shadow-xl animate-pop">
-              <button type="button" onClick={() => setTappedWord(null)} className="absolute right-3 top-3 text-muted-foreground hover:text-foreground text-xs">✕</button>
-              <div className="flex items-center justify-center gap-2 mb-1">
-                <span className={cn("text-xl font-black", WORD_POS[tappedWord] ? POS_COLOR[WORD_POS[tappedWord]] : "text-primary")}>{tappedWord}</span>
+            <div className="fixed inset-0 z-40" onClick={() => { setTappedWord(null); setPopupPos(null); }} />
+            <div ref={popupRef}
+              className="fixed z-50 w-64 -translate-x-1/2 rounded-2xl border border-border bg-card px-4 py-3 shadow-xl animate-pop"
+              style={{
+                left: popupPos.x,
+                top: popupPos.y,
+                transform: `translateX(-50%)${popupPos.y < window.innerHeight / 2 ? "" : " translateY(-100%)"}`,
+              }}>
+              {/* Arrow */}
+              <div className="absolute left-1/2 -translate-x-1/2 h-2.5 w-2.5 rotate-45 border border-border bg-card"
+                style={popupPos.y < window.innerHeight / 2 ? { top: -5, borderBottom: "none", borderRight: "none" } : { bottom: -5, borderTop: "none", borderLeft: "none" }} />
+
+              <div className="flex items-center gap-2 mb-1">
+                <span className={cn("text-base font-black", WORD_POS[tappedWord] ? POS_COLOR[WORD_POS[tappedWord]] : "text-primary")}>{tappedWord}</span>
                 <button type="button" onClick={() => speakText(tappedWord)} className="rounded-full bg-muted p-1 hover:bg-primary/10 transition-colors">
-                  <Volume2 className="h-3.5 w-3.5 text-muted-foreground" />
+                  <Volume2 className="h-3 w-3 text-muted-foreground" />
                 </button>
+                {WORD_POS[tappedWord] && <span className="rounded-full bg-muted px-1.5 py-0.5 text-[8px] font-bold text-muted-foreground">{POS_LABEL[WORD_POS[tappedWord]]}</span>}
+                {apiMeaning?.phonetic && <span className="text-[9px] text-muted-foreground">{apiMeaning.phonetic}</span>}
               </div>
-              {(WORD_POS[tappedWord] || apiMeaning?.phonetic) && (
-                <div className="flex items-center justify-center gap-2 mb-1">
-                  {WORD_POS[tappedWord] && <span className="rounded-full bg-muted px-2 py-0.5 text-[9px] font-bold text-muted-foreground">{POS_LABEL[WORD_POS[tappedWord]]}</span>}
-                  {apiMeaning?.phonetic && <span className="text-[10px] font-bold text-muted-foreground">{apiMeaning.phonetic}</span>}
-                </div>
-              )}
               {MINI_DICT[tappedWord] ? (
-                <p className="text-center text-sm font-bold text-primary mt-1">{MINI_DICT[tappedWord]}</p>
+                <p className="text-sm font-bold text-primary">{MINI_DICT[tappedWord]}</p>
               ) : apiLoading ? (
-                <div className="flex justify-center mt-2"><Loader2 className="h-4 w-4 animate-spin text-primary" /></div>
+                <Loader2 className="h-4 w-4 animate-spin text-primary" />
               ) : apiMeaning?.vi ? (
-                <p className="text-center text-sm font-bold text-primary mt-1">{apiMeaning.vi}</p>
+                <p className="text-sm font-bold text-primary">{apiMeaning.vi}</p>
               ) : (
-                <p className="text-center text-xs text-muted-foreground mt-1">Không tìm thấy nghĩa</p>
+                <p className="text-[11px] text-muted-foreground">Không tìm thấy nghĩa</p>
               )}
             </div>
           </>
