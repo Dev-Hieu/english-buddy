@@ -630,15 +630,52 @@ export function ReadingPage({ student, onBackHome }: Props) {
     setTappedWord(word);
   }, [tappedWord]);
 
-  // Auto-lookup từ API khi bấm từ không có trong MINI_DICT
+  // Auto-lookup — 4 fallback chains, KHÔNG BAO GIỜ trả "không tìm thấy"
   useEffect(() => {
-    if (!tappedWord || MINI_DICT[tappedWord]) { setApiMeaning(null); return; }
+    if (!tappedWord || MINI_DICT[tappedWord]) { setApiMeaning(null); setApiLoading(false); return; }
+    let cancelled = false;
     setApiLoading(true); setApiMeaning(null);
-    fetch(`/api/word-meaning?word=${encodeURIComponent(tappedWord)}`)
-      .then((r) => r.ok ? r.json() : null)
-      .then((d) => d ? setApiMeaning({ vi: d.meaning_vi, phonetic: d.phonetic }) : setApiMeaning(null))
-      .catch(() => setApiMeaning(null))
-      .finally(() => setApiLoading(false));
+
+    (async () => {
+      // 1. Vocab DB (4220 từ, nhanh nhất)
+      try {
+        const r = await fetch(`/api/word-meaning?word=${encodeURIComponent(tappedWord)}`);
+        if (r.ok) { const d = await r.json(); if (!cancelled && d.meaning_vi) { setApiMeaning({ vi: d.meaning_vi, phonetic: d.phonetic }); setApiLoading(false); return; } }
+      } catch { /* tiếp */ }
+
+      // 2. Word-detail cache (DeepSeek đã tra trước đó)
+      try {
+        const r = await fetch(`/api/word-detail?word=${encodeURIComponent(tappedWord)}`, {
+          headers: { Authorization: `Bearer ${localStorage.getItem("eb_token") || ""}` }
+        });
+        if (r.ok) { const d = await r.json(); if (!cancelled && d.vi?.length) { setApiMeaning({ vi: d.vi.join("; ") }); setApiLoading(false); return; } }
+      } catch { /* tiếp */ }
+
+      // 3. Free Dictionary API (tiếng Anh → dịch định nghĩa)
+      try {
+        const r = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${encodeURIComponent(tappedWord)}`);
+        if (r.ok) {
+          const entries = await r.json();
+          const def = entries?.[0]?.meanings?.[0]?.definitions?.[0]?.definition;
+          const phonetic = entries?.[0]?.phonetic;
+          if (!cancelled && def) { setApiMeaning({ vi: def, phonetic: phonetic || undefined }); setApiLoading(false); return; }
+        }
+      } catch { /* tiếp */ }
+
+      // 4. Google Translate fallback
+      try {
+        const r = await fetch(`/api/translate`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json", Authorization: `Bearer ${localStorage.getItem("eb_token") || ""}` },
+          body: JSON.stringify({ text: tappedWord, targetLang: "vi" }),
+        });
+        if (r.ok) { const d = await r.json(); if (!cancelled && d.translation) { setApiMeaning({ vi: d.translation }); setApiLoading(false); return; } }
+      } catch { /* cuối */ }
+
+      if (!cancelled) { setApiMeaning({ vi: tappedWord }); setApiLoading(false); }
+    })();
+
+    return () => { cancelled = true; };
   }, [tappedWord]);
 
   const [answers, setAnswers] = useState<(number | null)[]>([]);
@@ -796,12 +833,10 @@ export function ReadingPage({ student, onBackHome }: Props) {
               {MINI_DICT[tappedWord] ? (
                 <p className="text-sm font-bold text-primary">{MINI_DICT[tappedWord]}</p>
               ) : apiLoading ? (
-                <Loader2 className="h-4 w-4 animate-spin text-primary" />
+                <div className="flex items-center gap-1.5"><Loader2 className="h-3.5 w-3.5 animate-spin text-primary" /><span className="text-[11px] text-muted-foreground">Đang tra...</span></div>
               ) : apiMeaning?.vi ? (
                 <p className="text-sm font-bold text-primary">{apiMeaning.vi}</p>
-              ) : (
-                <p className="text-[11px] text-muted-foreground">Không tìm thấy nghĩa</p>
-              )}
+              ) : null}
             </div>
           </>
         )}
