@@ -1,5 +1,5 @@
 import { BookOpen, ArrowLeft, CheckCircle, Loader2, Volume2, XCircle } from "lucide-react";
-import { useEffect, useState, useMemo } from "react";
+import { useEffect, useRef, useState, useMemo } from "react";
 import type { Student } from "@/types";
 import { Card, CardContent } from "@/components/ui/card";
 import { SessionHeader } from "@/components/layout/SessionHeader";
@@ -614,6 +614,8 @@ export function ReadingPage({ student, onBackHome }: Props) {
   const [activeStory, setActiveStory] = useState<Story | null>(null);
   const [tappedWord, setTappedWord] = useState<string | null>(null);
   const [tappedIdx, setTappedIdx] = useState<number>(-1);
+  const [popupShift, setPopupShift] = useState(0); // px shift left/right to stay in view
+  const cardRef = useRef<HTMLDivElement>(null);
   const [apiMeaning, setApiMeaning] = useState<{ vi: string; phonetic?: string } | null>(null);
   const [apiLoading, setApiLoading] = useState(false);
 
@@ -761,7 +763,7 @@ export function ReadingPage({ student, onBackHome }: Props) {
           right={<span className="rounded-full bg-primary/10 px-2.5 py-1 text-xs font-extrabold text-primary">{activeStory.level}</span>} />
 
         <Card>
-          <CardContent className="px-5 py-6">
+          <CardContent className="px-5 py-6"><div ref={cardRef}>
             <div className="font-reading text-[15px] leading-[2] text-justify tracking-wide">
               {words.map((w, i) => {
                 const clean = w.toLowerCase().replace(/[^a-z]/g, "");
@@ -772,7 +774,25 @@ export function ReadingPage({ student, onBackHome }: Props) {
                 return (
                   <span key={i} className="relative inline">
                     <span
-                      onClick={() => { if (isActive) { setTappedWord(null); setTappedIdx(-1); } else { setTappedWord(clean); setTappedIdx(i); } }}
+                      onClick={(e) => {
+                        if (isActive) { setTappedWord(null); setTappedIdx(-1); return; }
+                        // Tính shift để popup không tràn trái/phải
+                        const el = e.currentTarget;
+                        const card = cardRef.current;
+                        if (card) {
+                          const elRect = el.getBoundingClientRect();
+                          const cardRect = card.getBoundingClientRect();
+                          const elCenter = elRect.left + elRect.width / 2;
+                          const popW = 224; // w-56 = 14rem = 224px
+                          const popLeft = elCenter - popW / 2;
+                          const popRight = elCenter + popW / 2;
+                          let shift = 0;
+                          if (popLeft < cardRect.left + 8) shift = cardRect.left + 8 - popLeft;
+                          else if (popRight > cardRect.right - 8) shift = cardRect.right - 8 - popRight;
+                          setPopupShift(shift);
+                        } else { setPopupShift(0); }
+                        setTappedWord(clean); setTappedIdx(i);
+                      }}
                       className={cn(
                         "cursor-pointer rounded-sm px-0.5 transition-all",
                         meaning ? "underline decoration-dotted decoration-1 underline-offset-4" : "",
@@ -784,9 +804,9 @@ export function ReadingPage({ student, onBackHome }: Props) {
                     </span>
                     {/* Inline popup ngay dưới từ */}
                     {isActive && (
-                      <span className="absolute left-1/2 top-full z-50 mt-1 -translate-x-1/2 w-56 animate-pop" onClick={(e) => e.stopPropagation()}>
+                      <span className="absolute left-1/2 top-full z-50 mt-1 w-56 animate-pop" style={{ transform: `translateX(calc(-50% + ${popupShift}px))` }} onClick={(e) => e.stopPropagation()}>
                         <span className="block rounded-xl border border-border bg-card px-3 py-2 shadow-xl text-left">
-                          <span className="absolute left-1/2 -top-[5px] -translate-x-1/2 h-2.5 w-2.5 rotate-45 border-l border-t border-border bg-card" />
+                          <span className="absolute -top-[5px] h-2.5 w-2.5 rotate-45 border-l border-t border-border bg-card" style={{ left: `calc(50% - ${popupShift}px)`, transform: "translateX(-50%)" }} />
                           <span className="flex items-center gap-1.5 mb-0.5 not-italic">
                             <span className={cn("text-sm font-black", pos ? POS_COLOR[pos] : "text-primary")}>{clean}</span>
                             <button type="button" onClick={() => speakText(clean)} className="rounded-full bg-muted p-0.5 hover:bg-primary/10"><Volume2 className="h-3 w-3 text-muted-foreground" /></button>
@@ -807,7 +827,7 @@ export function ReadingPage({ student, onBackHome }: Props) {
                 );
               })}
             </div>
-          </CardContent>
+          </div></CardContent>
         </Card>
 
         {/* Bấm ngoài để đóng popup */}
