@@ -1,5 +1,5 @@
 import { BookOpen, ArrowLeft, CheckCircle, Loader2, Volume2, XCircle } from "lucide-react";
-import { useCallback, useEffect, useRef, useState, useMemo } from "react";
+import { useEffect, useState, useMemo } from "react";
 import type { Student } from "@/types";
 import { Card, CardContent } from "@/components/ui/card";
 import { SessionHeader } from "@/components/layout/SessionHeader";
@@ -613,22 +613,9 @@ export function ReadingPage({ student, onBackHome }: Props) {
   const [screen, setScreen] = useState<Screen>("list");
   const [activeStory, setActiveStory] = useState<Story | null>(null);
   const [tappedWord, setTappedWord] = useState<string | null>(null);
-  const [popupPos, setPopupPos] = useState<{ x: number; y: number } | null>(null);
-  const popupRef = useRef<HTMLDivElement>(null);
+  const [tappedIdx, setTappedIdx] = useState<number>(-1);
   const [apiMeaning, setApiMeaning] = useState<{ vi: string; phonetic?: string } | null>(null);
   const [apiLoading, setApiLoading] = useState(false);
-
-  const mainRef = useRef<HTMLElement>(null);
-  const tapWord = useCallback((word: string, e: React.MouseEvent) => {
-    if (tappedWord === word) { setTappedWord(null); setPopupPos(null); return; }
-    const rect = (e.target as HTMLElement).getBoundingClientRect();
-    // Căn giữa trong container (không phải giữa window)
-    const main = mainRef.current;
-    const mainRect = main?.getBoundingClientRect();
-    const cx = mainRect ? mainRect.left + mainRect.width / 2 : window.innerWidth / 2;
-    setPopupPos({ x: cx, y: rect.bottom + 8 });
-    setTappedWord(word);
-  }, [tappedWord]);
 
   // Auto-lookup — 4 fallback chains, KHÔNG BAO GIỜ trả "không tìm thấy"
   useEffect(() => {
@@ -769,36 +756,62 @@ export function ReadingPage({ student, onBackHome }: Props) {
     const words = activeStory.text.split(/(\s+|(?=[.,!?;:])|(?<=[.,!?;:]))/);
 
     return (
-      <main ref={mainRef} className="mx-auto w-full max-w-md sm:max-w-lg lg:max-w-2xl overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
+      <main className="mx-auto w-full max-w-md sm:max-w-lg lg:max-w-2xl overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
         <SessionHeader title={activeStory.title} onClose={backToList}
           right={<span className="rounded-full bg-primary/10 px-2.5 py-1 text-xs font-extrabold text-primary">{activeStory.level}</span>} />
 
         <Card>
           <CardContent className="px-5 py-6">
-            <p className="font-reading text-[15px] leading-[2] text-justify tracking-wide">
+            <div className="font-reading text-[15px] leading-[2] text-justify tracking-wide">
               {words.map((w, i) => {
                 const clean = w.toLowerCase().replace(/[^a-z]/g, "");
                 const meaning = clean ? MINI_DICT[clean] : undefined;
                 const pos = clean ? WORD_POS[clean] : undefined;
                 if (!clean) return <span key={i}>{w}</span>;
-                const isActive = tappedWord === clean;
+                const isActive = tappedWord === clean && tappedIdx === i;
                 return (
-                  <span key={i}
-                    onClick={(e) => tapWord(clean, e)}
-                    className={cn(
-                      "cursor-pointer rounded-sm px-0.5 transition-all",
-                      meaning ? "underline decoration-dotted decoration-1 underline-offset-4" : "",
-                      "hover:bg-primary/10",
-                      isActive ? "bg-primary/20 font-bold rounded-md px-1 py-0.5" : "",
-                      isActive && pos ? POS_COLOR[pos] : pos ? cn(POS_COLOR[pos], "decoration-current") : "",
-                    )}>
-                    {w}
+                  <span key={i} className="relative inline">
+                    <span
+                      onClick={() => { if (isActive) { setTappedWord(null); setTappedIdx(-1); } else { setTappedWord(clean); setTappedIdx(i); } }}
+                      className={cn(
+                        "cursor-pointer rounded-sm px-0.5 transition-all",
+                        meaning ? "underline decoration-dotted decoration-1 underline-offset-4" : "",
+                        "hover:bg-primary/10",
+                        isActive ? "bg-primary/20 font-bold rounded-md px-1 py-0.5" : "",
+                        isActive && pos ? POS_COLOR[pos] : pos ? cn(POS_COLOR[pos], "decoration-current") : "",
+                      )}>
+                      {w}
+                    </span>
+                    {/* Inline popup ngay dưới từ */}
+                    {isActive && (
+                      <span className="absolute left-1/2 top-full z-50 mt-1 -translate-x-1/2 w-56 animate-pop" onClick={(e) => e.stopPropagation()}>
+                        <span className="block rounded-xl border border-border bg-card px-3 py-2 shadow-xl text-left">
+                          <span className="absolute left-1/2 -top-[5px] -translate-x-1/2 h-2.5 w-2.5 rotate-45 border-l border-t border-border bg-card" />
+                          <span className="flex items-center gap-1.5 mb-0.5 not-italic">
+                            <span className={cn("text-sm font-black", pos ? POS_COLOR[pos] : "text-primary")}>{clean}</span>
+                            <button type="button" onClick={() => speakText(clean)} className="rounded-full bg-muted p-0.5 hover:bg-primary/10"><Volume2 className="h-3 w-3 text-muted-foreground" /></button>
+                            {pos && <span className="rounded-full bg-muted px-1.5 py-0.5 text-[7px] font-bold text-muted-foreground">{POS_LABEL[pos]}</span>}
+                            {apiMeaning?.phonetic && <span className="text-[8px] text-muted-foreground">{apiMeaning.phonetic}</span>}
+                          </span>
+                          {meaning ? (
+                            <span className="block text-xs font-bold text-primary not-italic">{meaning}</span>
+                          ) : apiLoading ? (
+                            <span className="flex items-center gap-1 not-italic"><Loader2 className="h-3 w-3 animate-spin text-primary" /><span className="text-[10px] text-muted-foreground">Đang tra...</span></span>
+                          ) : apiMeaning?.vi ? (
+                            <span className="block text-xs font-bold text-primary not-italic">{apiMeaning.vi}</span>
+                          ) : null}
+                        </span>
+                      </span>
+                    )}
                   </span>
                 );
               })}
-            </p>
+            </div>
           </CardContent>
         </Card>
+
+        {/* Bấm ngoài để đóng popup */}
+        {tappedWord && <div className="fixed inset-0 z-40" onClick={() => { setTappedWord(null); setTappedIdx(-1); }} />}
 
         {/* POS legend */}
         <div className="mt-2 flex flex-wrap justify-center gap-2">
@@ -806,35 +819,6 @@ export function ReadingPage({ student, onBackHome }: Props) {
             <span key={p} className={cn("text-[9px] font-bold", POS_COLOR[p])}>● {POS_LABEL[p]}</span>
           ))}
         </div>
-
-        {/* Tooltip popup — hiện ngay cạnh từ */}
-        {tappedWord && popupPos && (
-          <>
-            <div className="fixed inset-0 z-40" onClick={() => { setTappedWord(null); setPopupPos(null); }} />
-            <div ref={popupRef}
-              className="fixed z-50 w-[min(16rem,calc(100vw-2rem))] rounded-2xl border border-border bg-card px-4 py-3 shadow-xl animate-pop"
-              style={{ left: popupPos.x, top: popupPos.y, transform: "translateX(-50%)" }}>
-              {/* Arrow trên */}
-              <div className="absolute left-1/2 -top-[5px] -translate-x-1/2 h-2.5 w-2.5 rotate-45 border-l border-t border-border bg-card" />
-
-              <div className="flex items-center gap-2 mb-1">
-                <span className={cn("text-base font-black", WORD_POS[tappedWord] ? POS_COLOR[WORD_POS[tappedWord]] : "text-primary")}>{tappedWord}</span>
-                <button type="button" onClick={() => speakText(tappedWord)} className="rounded-full bg-muted p-1 hover:bg-primary/10 transition-colors">
-                  <Volume2 className="h-3 w-3 text-muted-foreground" />
-                </button>
-                {WORD_POS[tappedWord] && <span className="rounded-full bg-muted px-1.5 py-0.5 text-[8px] font-bold text-muted-foreground">{POS_LABEL[WORD_POS[tappedWord]]}</span>}
-                {apiMeaning?.phonetic && <span className="text-[9px] text-muted-foreground">{apiMeaning.phonetic}</span>}
-              </div>
-              {MINI_DICT[tappedWord] ? (
-                <p className="text-sm font-bold text-primary">{MINI_DICT[tappedWord]}</p>
-              ) : apiLoading ? (
-                <div className="flex items-center gap-1.5"><Loader2 className="h-3.5 w-3.5 animate-spin text-primary" /><span className="text-[11px] text-muted-foreground">Đang tra...</span></div>
-              ) : apiMeaning?.vi ? (
-                <p className="text-sm font-bold text-primary">{apiMeaning.vi}</p>
-              ) : null}
-            </div>
-          </>
-        )}
 
         <div className="mt-4 flex justify-center">
           <Button onClick={goToQuiz} size="lg" className="w-full">
