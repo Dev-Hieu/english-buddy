@@ -15,6 +15,59 @@ const LEVELS: CEFRLevel[] = ["A1", "A2", "B1", "B2", "C1", "C2"];
 /* ------------------------------------------------------------------ */
 /*  Mini dictionary for word tap                                      */
 /* ------------------------------------------------------------------ */
+// Part of speech → color: n=noun, v=verb, adj=adjective, adv=adverb, prep=preposition
+type POS = "n" | "v" | "adj" | "adv" | "prep" | "conj" | "pron";
+const POS_COLOR: Record<POS, string> = {
+  n: "text-blue-600", v: "text-red-500", adj: "text-green-600",
+  adv: "text-purple-600", prep: "text-amber-600", conj: "text-gray-500", pron: "text-teal-600",
+};
+const POS_LABEL: Record<POS, string> = {
+  n: "danh từ", v: "động từ", adj: "tính từ",
+  adv: "trạng từ", prep: "giới từ", conj: "liên từ", pron: "đại từ",
+};
+const WORD_POS: Record<string, POS> = {
+  // nouns
+  family: "n", father: "n", mother: "n", brother: "n", sister: "n", teacher: "n", nurse: "n",
+  school: "n", classroom: "n", friend: "n", friends: "n", day: "n", park: "n", weekend: "n",
+  story: "n", stories: "n", trip: "n", beach: "n", morning: "n", car: "n", ocean: "n",
+  sand: "n", waves: "n", sandcastle: "n", lunch: "n", sandwiches: "n", fruit: "n", afternoon: "n",
+  shells: "n", sunset: "n", sky: "n", home: "n", city: "n", village: "n", grandmother: "n",
+  summer: "n", holiday: "n", air: "n", river: "n", field: "n", mountain: "n", nature: "n",
+  noise: "n", traffic: "n", garden: "n", flowers: "n", vegetables: "n", chickens: "n", eggs: "n",
+  bird: "n", birds: "n", tree: "n", trees: "n", environment: "n", technology: "n",
+  communication: "n", smartphone: "n", internet: "n", information: "n", education: "n",
+  media: "n", world: "n", challenge: "n", screen: "n", health: "n", balance: "n", benefit: "n",
+  house: "n", hair: "n", name: "n", water: "n", food: "n", book: "n", library: "n",
+  dog: "n", cat: "n", pet: "n", birthday: "n", present: "n", presents: "n", gift: "n",
+  candles: "n", balloon: "n", balloons: "n", race: "n", team: "n", prize: "n", medal: "n",
+  score: "n", competition: "n", recipe: "n", ingredient: "n", ingredients: "n",
+  oven: "n", flour: "n", sugar: "n", butter: "n", bowl: "n", shelf: "n", shelves: "n",
+  librarian: "n", adventure: "n", job: "n", interview: "n", manager: "n", customer: "n",
+  experience: "n", salary: "n", colleague: "n", opportunity: "n",
+  // verbs
+  love: "v", learn: "v", read: "v", write: "v", play: "v", lives: "v", likes: "v", like: "v",
+  swim: "v", run: "v", draw: "v", laugh: "v", drove: "v", arrived: "v", built: "v",
+  ate: "v", swam: "v", collected: "v", watched: "v", remember: "v", spent: "v",
+  miss: "v", grow: "v", walk: "v", sing: "v", protect: "v", changed: "v", connect: "v",
+  eat: "v", drink: "v", sleep: "v", go: "v", come: "v", see: "v", look: "v", help: "v",
+  make: "v", take: "v", give: "v", tell: "v", say: "v", think: "v", know: "v", want: "v",
+  need: "v", cook: "v", mix: "v", stir: "v", pour: "v", bake: "v", borrow: "v",
+  imagine: "v", win: "v", won: "v", cheer: "v", cheered: "v", blow: "v", wish: "v",
+  // adjectives
+  big: "adj", tall: "adj", long: "adj", brown: "adj", beautiful: "adj", early: "adj",
+  excited: "adj", orange: "adj", pink: "adj", tired: "adj", wonderful: "adj",
+  fresh: "adj", clean: "adj", green: "adj", peaceful: "adj", quiet: "adj", busy: "adj",
+  important: "adj", online: "adj", social: "adj", happy: "adj", good: "adj", bad: "adj",
+  nice: "adj", kind: "adj", old: "adj", new: "adj", young: "adj", small: "adj",
+  hot: "adj", cold: "adj", warm: "adj", proud: "adj", dangerous: "adj", cute: "adj", lucky: "adj",
+  // adverbs
+  together: "adv", forever: "adv", every: "adv", very: "adv", always: "adv", never: "adv",
+  // prepositions
+  next: "prep", near: "prep",
+  // pronouns
+  we: "pron", they: "pron", she: "pron", he: "pron",
+};
+
 const MINI_DICT: Record<string, string> = {
   family: "gia đình", big: "lớn", father: "bố", mother: "mẹ", teacher: "giáo viên",
   nurse: "y tá", brother: "anh/em trai", sister: "chị/em gái", love: "yêu thương",
@@ -655,19 +708,22 @@ export function ReadingPage({ student, onBackHome }: Props) {
           right={<span className="rounded-full bg-primary/10 px-2.5 py-1 text-xs font-extrabold text-primary">{activeStory.level}</span>} />
 
         <Card>
-          <CardContent className="p-5">
-            <p className="text-base leading-relaxed">
+          <CardContent className="px-5 py-6">
+            <p className="text-base leading-[1.9] text-justify">
               {words.map((w, i) => {
                 const clean = w.toLowerCase().replace(/[^a-z]/g, "");
                 const meaning = clean ? MINI_DICT[clean] : undefined;
+                const pos = clean ? WORD_POS[clean] : undefined;
                 if (!clean) return <span key={i}>{w}</span>;
+                const isActive = tappedWord === clean;
                 return (
                   <span key={i}
                     onClick={() => setTappedWord(meaning ? clean : null)}
                     className={cn(
-                      "cursor-pointer rounded px-0.5 transition-colors",
-                      meaning ? "hover:bg-primary/10" : "",
-                      tappedWord === clean ? "bg-primary/20 text-primary font-bold" : "",
+                      "cursor-pointer rounded-sm px-0.5 transition-all",
+                      meaning ? "hover:bg-primary/10 underline decoration-dotted decoration-1 underline-offset-4" : "",
+                      isActive ? "bg-primary/20 font-bold rounded-md px-1 py-0.5" : "",
+                      isActive && pos ? POS_COLOR[pos] : pos ? cn(POS_COLOR[pos], "decoration-current") : "",
                     )}>
                     {w}
                   </span>
@@ -677,12 +733,21 @@ export function ReadingPage({ student, onBackHome }: Props) {
           </CardContent>
         </Card>
 
+        {/* POS legend */}
+        <div className="mt-2 flex flex-wrap justify-center gap-2">
+          {(["n", "v", "adj", "adv"] as POS[]).map((p) => (
+            <span key={p} className={cn("text-[9px] font-bold", POS_COLOR[p])}>● {POS_LABEL[p]}</span>
+          ))}
+        </div>
+
         {/* Word meaning popup */}
         {tappedWord && MINI_DICT[tappedWord] && (
-          <div className="mt-3 rounded-2xl border border-primary/20 bg-primary/5 px-4 py-3 text-center">
-            <span className="text-sm font-extrabold text-primary">{tappedWord}</span>
-            <span className="mx-2 text-muted-foreground">→</span>
-            <span className="text-sm font-bold">{MINI_DICT[tappedWord]}</span>
+          <div className="mt-2 rounded-2xl border border-primary/20 bg-card px-4 py-3 shadow-md">
+            <div className="flex items-center justify-center gap-2">
+              <span className={cn("text-base font-black", WORD_POS[tappedWord] ? POS_COLOR[WORD_POS[tappedWord]] : "text-primary")}>{tappedWord}</span>
+              {WORD_POS[tappedWord] && <span className="rounded-full bg-muted px-2 py-0.5 text-[9px] font-bold text-muted-foreground">{POS_LABEL[WORD_POS[tappedWord]]}</span>}
+            </div>
+            <p className="text-center text-sm font-bold mt-1">{MINI_DICT[tappedWord]}</p>
           </div>
         )}
 
