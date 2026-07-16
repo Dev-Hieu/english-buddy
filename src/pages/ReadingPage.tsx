@@ -718,10 +718,11 @@ export function ReadingPage({ student, onBackHome }: Props) {
                 const isActive = tappedWord === clean;
                 return (
                   <span key={i}
-                    onClick={() => setTappedWord(meaning ? clean : null)}
+                    onClick={() => setTappedWord(tappedWord === clean ? null : clean)}
                     className={cn(
                       "cursor-pointer rounded-sm px-0.5 transition-all",
-                      meaning ? "hover:bg-primary/10 underline decoration-dotted decoration-1 underline-offset-4" : "",
+                      meaning ? "underline decoration-dotted decoration-1 underline-offset-4" : "",
+                      "hover:bg-primary/10",
                       isActive ? "bg-primary/20 font-bold rounded-md px-1 py-0.5" : "",
                       isActive && pos ? POS_COLOR[pos] : pos ? cn(POS_COLOR[pos], "decoration-current") : "",
                     )}>
@@ -740,15 +741,23 @@ export function ReadingPage({ student, onBackHome }: Props) {
           ))}
         </div>
 
-        {/* Word meaning popup */}
-        {tappedWord && MINI_DICT[tappedWord] && (
-          <div className="mt-2 rounded-2xl border border-primary/20 bg-card px-4 py-3 shadow-md">
-            <div className="flex items-center justify-center gap-2">
-              <span className={cn("text-base font-black", WORD_POS[tappedWord] ? POS_COLOR[WORD_POS[tappedWord]] : "text-primary")}>{tappedWord}</span>
-              {WORD_POS[tappedWord] && <span className="rounded-full bg-muted px-2 py-0.5 text-[9px] font-bold text-muted-foreground">{POS_LABEL[WORD_POS[tappedWord]]}</span>}
+        {/* Floating word popup — cố định giữa màn hình */}
+        {tappedWord && (
+          <>
+            <div className="fixed inset-0 z-40" onClick={() => setTappedWord(null)} />
+            <div className="fixed left-1/2 top-1/2 z-50 w-72 -translate-x-1/2 -translate-y-1/2 rounded-2xl border border-border bg-card px-5 py-4 shadow-xl animate-pop">
+              <button type="button" onClick={() => setTappedWord(null)} className="absolute right-3 top-3 text-muted-foreground hover:text-foreground text-xs">✕</button>
+              <div className="flex items-center justify-center gap-2 mb-2">
+                <span className={cn("text-xl font-black", WORD_POS[tappedWord] ? POS_COLOR[WORD_POS[tappedWord]] : "text-primary")}>{tappedWord}</span>
+                {WORD_POS[tappedWord] && <span className="rounded-full bg-muted px-2 py-0.5 text-[9px] font-bold text-muted-foreground">{POS_LABEL[WORD_POS[tappedWord]]}</span>}
+              </div>
+              {MINI_DICT[tappedWord] ? (
+                <p className="text-center text-sm font-bold text-primary">{MINI_DICT[tappedWord]}</p>
+              ) : (
+                <p className="text-center text-xs font-bold text-muted-foreground">Bấm giữ từ để tra từ điển</p>
+              )}
             </div>
-            <p className="text-center text-sm font-bold mt-1">{MINI_DICT[tappedWord]}</p>
-          </div>
+          </>
         )}
 
         <div className="mt-4 flex justify-center">
