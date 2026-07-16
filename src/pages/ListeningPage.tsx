@@ -52,7 +52,7 @@ const LISTENING_STORIES: StoryItem[] = [
   // ─── A1 ─── (20-40 words, very simple sentences, common nouns/verbs)
   {
     id: "ls1", title: "My Morning", titleVi: "Buổi sáng của tôi", level: "a1",
-    text: "I wake up at seven. I brush my teeth and wash my face. Then I eat bread and drink milk. After breakfast I walk to school. I like my morning.",
+    text: "I wake up at seven. I brush my teeth. Then I eat bread and drink milk. I walk to school. I like my morning.",
     questions: [
       { question: "What time does the speaker wake up?", options: ["Six", "Seven", "Eight", "Nine"], answer: 1 },
       { question: "What does the speaker eat?", options: ["Rice", "Bread", "Eggs", "Fruit"], answer: 1 },
@@ -61,7 +61,7 @@ const LISTENING_STORIES: StoryItem[] = [
   },
   {
     id: "ls2", title: "My Dog Max", titleVi: "Con chó Max", level: "a1",
-    text: "I've got a dog. His name's Max. He's small and brown. He likes to run in the park. I play with him every day. Max is my best friend.",
+    text: "I have a dog. His name's Max. He's small and brown. He likes to run in the park. I play with him every day. Max is my best friend.",
     questions: [
       { question: "What's the dog's name?", options: ["Buddy", "Rex", "Max", "Sam"], answer: 2 },
       { question: "What color is the dog?", options: ["White", "Black", "Brown", "Gray"], answer: 2 },
@@ -70,7 +70,7 @@ const LISTENING_STORIES: StoryItem[] = [
   },
   {
     id: "ls3", title: "My Family", titleVi: "Gia đình tôi", level: "a1",
-    text: "There are four people in my family. My dad's a teacher. My mom works at a hospital. I've got one sister. She's five years old. We live in a small house. I love my family.",
+    text: "There are four people in my family. My dad's a teacher. My mom works at a hospital. I have one sister. She's five years old. I love my family.",
     questions: [
       { question: "How many people are in the family?", options: ["Three", "Four", "Five", "Six"], answer: 1 },
       { question: "What does the dad do?", options: ["He's a doctor", "He's a teacher", "He's a cook", "He's a driver"], answer: 1 },
@@ -80,7 +80,7 @@ const LISTENING_STORIES: StoryItem[] = [
   // ─── A2 ─── (40-70 words, simple past/present, daily life, short dialogues)
   {
     id: "ls4", title: "A Day at the Beach", titleVi: "Một ngày ở biển", level: "a2",
-    text: "Last Sunday my family went to the beach. It was sunny and warm. We swam in the sea and built a sandcastle. My sister found some pretty shells. At lunchtime we ate sandwiches and drank juice. In the afternoon we played volleyball. We didn't want to go home. It was a wonderful day.",
+    text: "Last Sunday my family went to the beach. It was sunny and warm. We swam in the sea and built a sandcastle. My sister found some pretty shells. We ate sandwiches and drank juice for lunch. Then we played volleyball. It was a wonderful day.",
     questions: [
       { question: "When did they go to the beach?", options: ["Saturday", "Sunday", "Monday", "Friday"], answer: 1 },
       { question: "What did the sister find?", options: ["Stones", "Fish", "Shells", "Flowers"], answer: 2 },
@@ -99,7 +99,7 @@ const LISTENING_STORIES: StoryItem[] = [
   },
   {
     id: "ls6", title: "My Hobby", titleVi: "Sở thích của tôi", level: "a2",
-    text: "I really like drawing. Every evening after homework I sit at my desk and draw. I mostly draw animals and flowers. My favorite thing to draw is cats. Last month I won a drawing competition at school. My teacher said I'm very talented. I want to be an artist when I grow up.",
+    text: "I really like drawing. Every evening after homework I sit at my desk and draw. I mostly draw animals and flowers. My favorite thing to draw is cats. Last month I won a drawing competition at school. I want to be an artist when I grow up.",
     questions: [
       { question: "What's the speaker's hobby?", options: ["Singing", "Drawing", "Dancing", "Reading"], answer: 1 },
       { question: "What does the speaker like to draw most?", options: ["Dogs", "Trees", "Cats", "Houses"], answer: 2 },
@@ -110,7 +110,7 @@ const LISTENING_STORIES: StoryItem[] = [
   // ─── B1 ─── (70-120 words, varied tenses, social/work topics, opinions)
   {
     id: "ls7", title: "The New Neighbor", titleVi: "Người hàng xóm mới", level: "b1",
-    text: "Last week a new family moved into the house next to ours. They've got two kids, a boy and a girl. The boy's about my age, so we started talking right away. His name's David and he's from Canada. He told me about his old school and how much he misses his friends there. I felt bad for him, so I invited him to play football with my group. He was so happy he said yes immediately. We've been hanging out every day since then. I think we're going to be really good friends.",
+    text: "Last week a new family moved into the house next to ours. They've got two kids, a boy and a girl. The boy's about my age, so we started talking. His name's David and he's from Canada. He told me he misses his old friends. I felt bad for him, so I invited him to play football with my group. He said yes right away. We've been hanging out every day since then. I think we'll be good friends.",
     questions: [
       { question: "Where did the new family move to?", options: ["Across the street", "Next door", "Another city", "A nearby apartment"], answer: 1 },
       { question: "Where's David from?", options: ["Australia", "England", "Canada", "America"], answer: 2 },
@@ -130,7 +130,7 @@ const LISTENING_STORIES: StoryItem[] = [
   },
   {
     id: "ls9", title: "A Trip to the Mountains", titleVi: "Chuyến đi lên núi", level: "b1",
-    text: "During the summer holiday my family took a trip to the mountains. We stayed at a small hotel near a lake. Every morning we'd go hiking on different trails. The views were incredible. One day we saw some wild deer near the river. My dad took lots of photos. In the evenings we'd sit around a campfire and tell stories. I've never felt so relaxed in my life. The trip only lasted five days, but it gave me memories I'll never forget. I really hope we can go back next year.",
+    text: "During the summer holiday my family took a trip to the mountains. We stayed at a small hotel near a lake. Every morning we'd go hiking on different trails. The views were incredible. One day we saw wild deer near the river. My dad took lots of photos. In the evenings we'd sit around a campfire and tell stories. The trip lasted five days, but it gave me memories I'll never forget.",
     questions: [
       { question: "Where did the family stay?", options: ["A tent", "A friend's house", "A small hotel", "A cabin"], answer: 2 },
       { question: "What did they do every morning?", options: ["Swimming", "Hiking", "Fishing", "Cycling"], answer: 1 },
@@ -141,7 +141,7 @@ const LISTENING_STORIES: StoryItem[] = [
   // ─── B2 ─── (120-180 words, complex ideas, abstract topics, natural speech)
   {
     id: "ls10", title: "Working from Home", titleVi: "Làm việc tại nhà", level: "b2",
-    text: "Since the pandemic a lot of companies have let their employees work from home, and honestly it's changed the way people think about their daily lives. Some workers love the flexibility because they don't have to commute anymore. They can spend that extra time with their families or on hobbies. But it's not all positive. Many people find it really hard to switch off when their office is also their living room. They end up working longer hours without even realizing it. There's also the social side. Working alone all day can feel pretty isolating, and some people really miss chatting with colleagues over coffee. Experts say the key is to set up a proper workspace at home and stick to a fixed schedule. That way you've got a clear line between work time and personal time. It takes discipline, but most people say it's worth it.",
+    text: "Since the pandemic many companies have let their employees work from home, and it's changed how people think about daily life. Some workers love the flexibility because they don't have to commute anymore. They can spend that extra time with their families or on hobbies. But it's not all positive. Many people find it hard to switch off when their office is also their living room. They end up working longer hours without realizing it. There's also the social side. Working alone all day can feel isolating, and some people miss chatting with colleagues. Experts say the key is to set up a proper workspace and stick to a fixed schedule. That way you've got a clear line between work and personal time.",
     questions: [
       { question: "What's one benefit of working from home?", options: ["Higher salary", "No commuting", "More meetings", "Better equipment"], answer: 1 },
       { question: "What problem do some workers have?", options: ["No internet", "Difficulty stopping work", "Too many breaks", "Not enough work"], answer: 1 },
@@ -151,7 +151,7 @@ const LISTENING_STORIES: StoryItem[] = [
   },
   {
     id: "ls11", title: "Protecting the Ocean", titleVi: "Bảo vệ đại dương", level: "b2",
-    text: "The ocean covers more than seventy percent of our planet and it's home to millions of species. But unfortunately we're doing a lot of damage to it. Plastic pollution is probably the biggest problem right now. Scientists think about eight million tons of plastic end up in the ocean every single year. Sea animals like turtles and fish often mistake this plastic for food, which can kill them. Overfishing is another serious issue because it's disrupting the natural balance of marine life. The good news is that people are starting to pay attention. Many countries have banned single use plastics and they're creating protected areas in the ocean where fishing isn't allowed. But governments can't do it alone. We all need to do our part by using less plastic, recycling properly, and supporting organizations that protect marine life. Even small changes in our daily habits can make a real difference.",
+    text: "The ocean covers more than seventy percent of our planet and it's home to millions of species. But we're doing a lot of damage to it. Plastic pollution is the biggest problem right now. Scientists think about eight million tons of plastic end up in the ocean every year. Sea animals like turtles often mistake plastic for food, which can kill them. Overfishing is another serious issue because it's disrupting the balance of marine life. The good news is that many countries have banned single use plastics and created protected ocean areas. But governments can't do it alone. We all need to do our part by using less plastic and recycling properly. Small changes in our daily habits can make a real difference.",
     questions: [
       { question: "How much of the Earth's surface does the ocean cover?", options: ["Fifty percent", "Sixty percent", "More than seventy percent", "Eighty percent"], answer: 2 },
       { question: "How much plastic enters the ocean each year?", options: ["One million tons", "Five million tons", "About eight million tons", "Ten million tons"], answer: 2 },
@@ -161,7 +161,7 @@ const LISTENING_STORIES: StoryItem[] = [
   },
   {
     id: "ls12", title: "The Future of Education", titleVi: "Tương lai của giáo dục", level: "b2",
-    text: "Over the past few years technology has completely transformed the way we learn. Online courses and video lessons have made education accessible to people who couldn't attend traditional schools. You can now learn almost anything from coding to cooking just by watching videos on your phone. But there's an ongoing debate about whether this is actually better than classroom learning. Some educators argue that students need face to face interaction to develop social skills and stay motivated. Others believe that online learning gives students more freedom to study at their own pace. Personally I think the best approach is a mix of both. Students can watch lectures online and then come to class for discussions and group projects. This way they get the convenience of technology without losing the human connection. Whatever happens it's clear that education will keep evolving, and we need to be ready to adapt.",
+    text: "Over the past few years technology has transformed how we learn. Online courses and video lessons have made education accessible to people who couldn't attend traditional schools. You can now learn almost anything from coding to cooking just by watching videos on your phone. But there's a debate about whether this is better than classroom learning. Some educators argue that students need face to face interaction to develop social skills. Others believe online learning gives students more freedom to study at their own pace. Personally I think the best approach is a mix of both. Students can watch lectures online and come to class for discussions. This way they get the convenience of technology without losing the human connection. Education will keep evolving, and we need to be ready to adapt.",
     questions: [
       { question: "What has technology done to education?", options: ["Made it more expensive", "Transformed how we learn", "Replaced all teachers", "Made it less popular"], answer: 1 },
       { question: "What do some educators worry about?", options: ["Too many students", "Students losing social skills", "Technology being too expensive", "Not enough online courses"], answer: 1 },
@@ -172,25 +172,25 @@ const LISTENING_STORIES: StoryItem[] = [
   // ─── A1 (more) ───
   {
     id: "ls13", title: "At the Zoo", titleVi: "Ở sở thú", level: "a1",
-    text: "Today I'm at the zoo with my class. I can see elephants, lions, and monkeys. The monkeys are very funny. They're jumping and eating bananas. My favorite animal's the giraffe. It's so tall! I'm taking photos with my phone. I'm having a great time.",
+    text: "Today I'm at the zoo with my class. I can see elephants, lions, and monkeys. The monkeys are funny. They jump and eat bananas. My favorite animal's the giraffe. It's so tall!",
     questions: [
       { question: "Who's at the zoo with the speaker?", options: ["Family", "Friends", "Class", "Teacher only"], answer: 2 },
-      { question: "What are the monkeys doing?", options: ["Sleeping", "Jumping and eating bananas", "Swimming", "Fighting"], answer: 1 },
+      { question: "What do the monkeys do?", options: ["Sleep", "Jump and eat bananas", "Swim", "Fight"], answer: 1 },
       { question: "What's the speaker's favorite animal?", options: ["Elephant", "Lion", "Monkey", "Giraffe"], answer: 3 },
     ],
   },
   {
     id: "ls14", title: "My Toys", titleVi: "Đồ chơi của tôi", level: "a1",
-    text: "I've got many toys in my room. I've got a red car, a teddy bear, and some blocks. My teddy bear's name is Coco. He's soft and brown. I play with my blocks every day. I build houses and towers. My favorite toy's the red car.",
+    text: "I have many toys in my room. I have a red car, a teddy bear, and some blocks. My teddy bear's name is Coco. I play with my blocks every day. I build houses and towers.",
     questions: [
       { question: "What's the teddy bear's name?", options: ["Teddy", "Coco", "Bear", "Max"], answer: 1 },
       { question: "What does the speaker build with blocks?", options: ["Animals", "Houses and towers", "Cars", "Robots"], answer: 1 },
-      { question: "What's the speaker's favorite toy?", options: ["Teddy bear", "Blocks", "Red car", "Ball"], answer: 2 },
+      { question: "What toys does the speaker have?", options: ["A ball and a doll", "A car, a teddy bear, and blocks", "A bike and a kite", "A puzzle and a train"], answer: 1 },
     ],
   },
   {
     id: "ls15", title: "Lunchtime", titleVi: "Giờ ăn trưa", level: "a1",
-    text: "It's twelve o'clock. It's lunchtime! I'm hungry. Today I'm eating rice and chicken. I'm also having some soup. My friend Tom's eating noodles. We sit together at a big table. After lunch we play in the yard.",
+    text: "It's twelve o'clock. It's lunchtime! I eat rice and chicken today. I also have some soup. My friend Tom eats noodles. We sit together. After lunch we play in the yard.",
     questions: [
       { question: "What time is it?", options: ["Eleven", "Twelve", "One", "Two"], answer: 1 },
       { question: "What's the speaker eating?", options: ["Noodles", "Pizza", "Rice and chicken", "Sandwiches"], answer: 2 },
@@ -200,7 +200,7 @@ const LISTENING_STORIES: StoryItem[] = [
   // ─── A2 (more) ───
   {
     id: "ls16", title: "Visiting Grandparents", titleVi: "Thăm ông bà", level: "a2",
-    text: "Last weekend my family drove to my grandparents' house in the countryside. It took about two hours to get there. Grandma made us a big lunch with lots of dishes. After eating we went for a walk near the river. Grandpa showed me how to catch fish but I didn't catch any. In the evening we sat around the fire and grandma told us old stories. I always love visiting them.",
+    text: "Last weekend my family drove to my grandparents' house in the countryside. It took about two hours. Grandma made us a big lunch. After eating we walked near the river. Grandpa showed me how to catch fish but I didn't catch any. In the evening grandma told us old stories.",
     questions: [
       { question: "Where do the grandparents live?", options: ["In the city", "In the countryside", "Near the beach", "In another country"], answer: 1 },
       { question: "How long did the drive take?", options: ["One hour", "About two hours", "Three hours", "Thirty minutes"], answer: 1 },
@@ -210,7 +210,7 @@ const LISTENING_STORIES: StoryItem[] = [
   },
   {
     id: "ls17", title: "School Sports Day", titleVi: "Ngày hội thể thao", level: "a2",
-    text: "Yesterday was sports day at our school. All the students were really excited. I entered the running race and the long jump. I came second in the running race and got a silver medal. My best friend Lily won the long jump. She was so happy she cried. After the competitions we had ice cream and took photos together. It was the best day of the year.",
+    text: "Yesterday was sports day at our school. I entered the running race and the long jump. I came second in the running race and got a silver medal. My best friend Lily won the long jump. After the competitions we had ice cream together. It was the best day of the year.",
     questions: [
       { question: "What events did the speaker enter?", options: ["Swimming and running", "Running and long jump", "Football and running", "Long jump and swimming"], answer: 1 },
       { question: "What medal did the speaker get?", options: ["Gold", "Silver", "Bronze", "No medal"], answer: 1 },
@@ -220,7 +220,7 @@ const LISTENING_STORIES: StoryItem[] = [
   },
   {
     id: "ls18", title: "My Birthday Party", titleVi: "Tiệc sinh nhật", level: "a2",
-    text: "Last Saturday was my tenth birthday. My parents organized a party at home. They decorated the living room with balloons and ribbons. Eight friends came to my party. We played games, danced, and sang karaoke. Mom made a chocolate cake with ten candles. I blew out all the candles and made a wish. My friends gave me great presents. I got books, a puzzle, and a new backpack. It was the happiest day of my life.",
+    text: "Last Saturday was my tenth birthday. My parents organized a party at home. Eight friends came to my party. We played games and sang karaoke. Mom made a chocolate cake with ten candles. I blew out all the candles and made a wish. My friends gave me great presents. It was the happiest day.",
     questions: [
       { question: "How old did the speaker turn?", options: ["Eight", "Nine", "Ten", "Eleven"], answer: 2 },
       { question: "Where was the party?", options: ["At school", "At a restaurant", "At a park", "At home"], answer: 3 },
@@ -251,7 +251,7 @@ const LISTENING_STORIES: StoryItem[] = [
   },
   {
     id: "ls21", title: "Environmental Problems", titleVi: "Vấn đề môi trường", level: "b1",
-    text: "Our teacher gave us a talk about environmental problems today and it really made me think. She said that air pollution's getting worse in many cities because of cars and factories. She also mentioned that forests are being cut down at an alarming rate, which affects animals and the climate. One thing that surprised me was that even small actions like using reusable bags and turning off lights can help. After the talk our class decided to start a recycling project at school. We're going to put recycling bins in every classroom. I think if everyone does a little bit we can make a big difference.",
+    text: "Our teacher gave us a talk about environmental problems today and it really made me think. She said that air pollution's getting worse in many cities because of cars and factories. She also said that people cut down too many forests, which affects animals and the climate. One thing that surprised me was that small actions like using reusable bags can help. After the talk our class decided to start a recycling project. We're going to put recycling bins in every classroom. I think if everyone does a little bit we can make a big difference.",
     questions: [
       { question: "What causes air pollution according to the teacher?", options: ["Animals", "Cars and factories", "Recycling", "Farming"], answer: 1 },
       { question: "What surprised the speaker?", options: ["How bad things are", "That small actions can help", "That forests are growing", "That pollution is decreasing"], answer: 1 },
@@ -262,7 +262,7 @@ const LISTENING_STORIES: StoryItem[] = [
   // ─── B2 (more) ───
   {
     id: "ls22", title: "Artificial Intelligence", titleVi: "Trí tuệ nhân tạo", level: "b2",
-    text: "Artificial intelligence has been making headlines everywhere lately, and it's something that affects all of us whether we realize it or not. AI's already being used in things like voice assistants, recommendation algorithms, and even medical diagnosis. Some people are excited about the possibilities because AI could solve problems that humans can't handle on their own, like predicting natural disasters or developing new medicines. But others are worried about job losses. If machines can do tasks faster and cheaper, what happens to the people who used to do those jobs? There's also the question of privacy since AI systems often need massive amounts of personal data to function properly. I think the key is finding a balance. We should embrace the technology but also put regulations in place to make sure it's used responsibly and ethically.",
+    text: "Artificial intelligence has been making headlines lately, and it affects all of us whether we realize it or not. AI's already used in voice assistants, recommendation algorithms, and medical diagnosis. Some people are excited because AI could solve problems humans can't handle alone, like predicting natural disasters or developing new medicines. But others are worried about job losses. If machines can do tasks faster and cheaper, what happens to the people who used to do those jobs? There's also the question of privacy since AI systems often need massive amounts of personal data to function. I think the key is finding a balance. We should embrace the technology but also put regulations in place to make sure it's used responsibly.",
     questions: [
       { question: "Which of these is NOT mentioned as a current use of AI?", options: ["Voice assistants", "Medical diagnosis", "Self-driving planes", "Recommendation algorithms"], answer: 2 },
       { question: "What worry do some people have about AI?", options: ["It's too expensive", "It could cause job losses", "It's too slow", "It uses too much electricity"], answer: 1 },
@@ -272,7 +272,7 @@ const LISTENING_STORIES: StoryItem[] = [
   },
   {
     id: "ls23", title: "Culture Shock", titleVi: "Sốc văn hóa", level: "b2",
-    text: "When I first moved abroad for university I experienced what people call culture shock. Everything felt strange and overwhelming. The food was different, people's sense of humor was different, and even simple things like greeting someone felt awkward. Back home we'd always greet people with a hug, but here everyone just shook hands or waved. I remember feeling really lonely during the first few weeks. I couldn't understand local slang and I'd often misread social situations. But gradually things started to change. I joined a student club and met people from all over the world. They were going through the same thing, which made me feel less alone. After about three months I finally started feeling comfortable. Now I can look back and say that the experience actually made me a much more open minded and adaptable person.",
+    text: "When I first moved abroad for university I experienced what people call culture shock. Everything felt strange. The food was different, and even simple things like greeting someone felt awkward. Back home we'd greet people with a hug, but here everyone just shook hands. I felt really lonely during the first few weeks. I couldn't understand local slang and I'd often misread social situations. But gradually things changed. I joined a student club and met people from all over the world. They were going through the same thing, which made me feel less alone. After about three months I finally started feeling comfortable. Now I can say the experience made me a more open minded and adaptable person.",
     questions: [
       { question: "Why did the speaker move abroad?", options: ["For work", "For university", "For family", "For travel"], answer: 1 },
       { question: "What was different about greetings?", options: ["People didn't greet at all", "People hugged instead of waving", "People shook hands instead of hugging", "People bowed"], answer: 2 },
@@ -282,7 +282,7 @@ const LISTENING_STORIES: StoryItem[] = [
   },
   {
     id: "ls24", title: "Work-Life Balance", titleVi: "Cân bằng công việc và cuộc sống", level: "b2",
-    text: "A lot of people talk about work life balance, but honestly it's one of the hardest things to achieve in modern life. When I first started my career I was working twelve hour days and checking emails even on weekends. I thought that's what it took to be successful. But after about two years I was completely burned out. I couldn't sleep properly, I'd lost touch with most of my friends, and I felt exhausted all the time. That's when I decided to make some changes. I started setting strict boundaries. No work emails after seven PM, no laptops on Sundays, and at least thirty minutes of exercise every day. It wasn't easy at first because I felt guilty about not working. But over time I realized that taking breaks actually made me more productive. My boss even noticed that my work improved. The lesson I've learned is that taking care of yourself isn't selfish. It's necessary.",
+    text: "A lot of people talk about work life balance, but it's one of the hardest things to achieve. When I first started my career I was working twelve hour days and checking emails on weekends. I thought that's what it took to be successful. But after two years I was completely burned out. I couldn't sleep properly and I felt exhausted all the time. That's when I decided to make changes. I started setting strict boundaries. No work emails after seven PM, no laptops on Sundays, and thirty minutes of exercise every day. It wasn't easy at first because I felt guilty about not working. But over time I realized that taking breaks actually made me more productive. My boss even noticed my work improved. The lesson is that taking care of yourself isn't selfish. It's necessary.",
     questions: [
       { question: "How long did the speaker work each day at first?", options: ["Eight hours", "Ten hours", "Twelve hours", "Fourteen hours"], answer: 2 },
       { question: "What happened after two years?", options: ["Got promoted", "Got burned out", "Changed jobs", "Started a business"], answer: 1 },
