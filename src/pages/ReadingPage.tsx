@@ -621,12 +621,10 @@ export function ReadingPage({ student, onBackHome }: Props) {
   const tapWord = useCallback((word: string, e: React.MouseEvent) => {
     if (tappedWord === word) { setTappedWord(null); setPopupPos(null); return; }
     const rect = (e.target as HTMLElement).getBoundingClientRect();
-    // Popup hiện ngay dưới từ, căn giữa theo từ
-    const x = Math.min(Math.max(rect.left + rect.width / 2, 140), window.innerWidth - 140);
-    const spaceBelow = window.innerHeight - rect.bottom;
-    // Nếu không đủ chỗ bên dưới → hiện bên trên
-    const y = spaceBelow > 120 ? rect.bottom + 6 : rect.top - 6;
-    setPopupPos({ x, y: spaceBelow > 120 ? y : y });
+    // Luôn hiện ngay dưới từ, căn giữa, clamp trong màn hình
+    const x = Math.min(Math.max(rect.left + rect.width / 2, 132), window.innerWidth - 132);
+    const y = rect.bottom + 8;
+    setPopupPos({ x, y });
     setTappedWord(word);
   }, [tappedWord]);
 
@@ -812,15 +810,10 @@ export function ReadingPage({ student, onBackHome }: Props) {
           <>
             <div className="fixed inset-0 z-40" onClick={() => { setTappedWord(null); setPopupPos(null); }} />
             <div ref={popupRef}
-              className="fixed z-50 w-64 -translate-x-1/2 rounded-2xl border border-border bg-card px-4 py-3 shadow-xl animate-pop"
-              style={{
-                left: popupPos.x,
-                top: popupPos.y,
-                transform: `translateX(-50%)${popupPos.y < window.innerHeight / 2 ? "" : " translateY(-100%)"}`,
-              }}>
-              {/* Arrow */}
-              <div className="absolute left-1/2 -translate-x-1/2 h-2.5 w-2.5 rotate-45 border border-border bg-card"
-                style={popupPos.y < window.innerHeight / 2 ? { top: -5, borderBottom: "none", borderRight: "none" } : { bottom: -5, borderTop: "none", borderLeft: "none" }} />
+              className="fixed z-50 w-64 rounded-2xl border border-border bg-card px-4 py-3 shadow-xl animate-pop"
+              style={{ left: popupPos.x, top: popupPos.y, transform: "translateX(-50%)" }}>
+              {/* Arrow trên */}
+              <div className="absolute left-1/2 -top-[5px] -translate-x-1/2 h-2.5 w-2.5 rotate-45 border-l border-t border-border bg-card" />
 
               <div className="flex items-center gap-2 mb-1">
                 <span className={cn("text-base font-black", WORD_POS[tappedWord] ? POS_COLOR[WORD_POS[tappedWord]] : "text-primary")}>{tappedWord}</span>
