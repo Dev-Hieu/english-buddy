@@ -144,7 +144,12 @@ export function MyWordsPage({ student, onBackHome }: MyWordsPageProps) {
                   <button
                     type="button"
                     aria-label={`Nghe ${w.query}`}
-                    onClick={() => speakText(w.query)}
+                    onClick={() => {
+                      // Từ: query là tiếng Anh → đọc query
+                      // Câu: query có thể là tiếng Việt → đọc meaning (bản dịch EN)
+                      const textToSpeak = w.type === "sentence" && w.meaning ? w.meaning : w.query;
+                      speakText(textToSpeak);
+                    }}
                     className="flex h-10 w-10 items-center justify-center rounded-xl border-2 border-border text-muted-foreground transition-colors active:bg-muted"
                   >
                     <Volume2 className="h-5 w-5" />
