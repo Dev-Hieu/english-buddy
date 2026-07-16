@@ -709,7 +709,7 @@ export function ReadingPage({ student, onBackHome }: Props) {
 
         <Card>
           <CardContent className="px-5 py-6">
-            <p className="text-base leading-[1.9] text-justify">
+            <p className="font-reading text-[15px] leading-[2] text-justify tracking-wide">
               {words.map((w, i) => {
                 const clean = w.toLowerCase().replace(/[^a-z]/g, "");
                 const meaning = clean ? MINI_DICT[clean] : undefined;

@@ -6,6 +6,7 @@ export default {
     extend: {
       fontFamily: {
         sans: ["Nunito", "ui-rounded", "system-ui", "sans-serif"],
+        reading: ["Merriweather", "Georgia", "Cambria", "serif"],
       },
       colors: {
         background: "hsl(var(--background))",
