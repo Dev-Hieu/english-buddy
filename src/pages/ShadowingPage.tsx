@@ -234,6 +234,8 @@ export function ShadowingPage({ student, onBackHome }: Props) {
   const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const listRef = useRef<HTMLDivElement>(null);
   const lastPausedIdxRef = useRef(-1);
+  const currentIdxRef = useRef(currentIdx);
+  currentIdxRef.current = currentIdx;
   const practiceModeRef = useRef(practiceMode);
   practiceModeRef.current = practiceMode;
   const autoFlowRef = useRef(autoFlow);
@@ -454,23 +456,23 @@ export function ShadowingPage({ student, onBackHome }: Props) {
   const stopAndScore = async () => {
     if (timerRef.current) clearTimeout(timerRef.current);
     if (!recRef.current) return;
+    const idx = currentIdxRef.current; // capture index trước khi async
     setPracticePhase("scoring");
     try {
       const wav = await recRef.current.stop();
-      const sent = sentences[currentIdx];
+      const sent = sentences[idx];
       const ipa = sentenceToIpa(sent?.text || "");
       const r = await assessPronunciation(wav, ipa || sent?.text || "");
       setResult(r);
-      setScores((s) => ({ ...s, [currentIdx]: { score: r.score, mode: "shadow" } }));
-      if (autoFlow) {
-        finishSentence();
+      setScores((s) => ({ ...s, [idx]: { score: r.score, mode: "shadow" } }));
+      if (autoFlowRef.current) {
+        finishSentence(idx);
       } else {
         setPracticePhase("result");
       }
     } catch {
-      // Chấm lỗi → ghi score 0, auto-flow vẫn chuyển câu tiếp (không dừng)
-      setScores((s) => ({ ...s, [currentIdx]: { score: 0, mode: "shadow" } }));
-      if (autoFlow) { finishSentence(); } else { setPracticePhase("idle"); }
+      setScores((s) => ({ ...s, [idx]: { score: 0, mode: "shadow" } }));
+      if (autoFlowRef.current) { finishSentence(idx); } else { setPracticePhase("idle"); }
     }
   };
 
