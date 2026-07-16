@@ -1,10 +1,11 @@
-import { BookOpen, ArrowLeft, CheckCircle, XCircle } from "lucide-react";
-import { useState, useMemo } from "react";
+import { BookOpen, ArrowLeft, CheckCircle, Loader2, Volume2, XCircle } from "lucide-react";
+import { useEffect, useState, useMemo } from "react";
 import type { Student } from "@/types";
 import { Card, CardContent } from "@/components/ui/card";
 import { SessionHeader } from "@/components/layout/SessionHeader";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/components/ui/cn";
+import { speakText } from "@/services/speechService";
 
 interface Props { student: Student; onBackHome: () => void; }
 
@@ -612,6 +613,20 @@ export function ReadingPage({ student, onBackHome }: Props) {
   const [screen, setScreen] = useState<Screen>("list");
   const [activeStory, setActiveStory] = useState<Story | null>(null);
   const [tappedWord, setTappedWord] = useState<string | null>(null);
+  const [apiMeaning, setApiMeaning] = useState<{ vi: string; phonetic?: string } | null>(null);
+  const [apiLoading, setApiLoading] = useState(false);
+
+  // Auto-lookup từ API khi bấm từ không có trong MINI_DICT
+  useEffect(() => {
+    if (!tappedWord || MINI_DICT[tappedWord]) { setApiMeaning(null); return; }
+    setApiLoading(true); setApiMeaning(null);
+    fetch(`/api/word-meaning?word=${encodeURIComponent(tappedWord)}`)
+      .then((r) => r.ok ? r.json() : null)
+      .then((d) => d ? setApiMeaning({ vi: d.meaning_vi, phonetic: d.phonetic }) : setApiMeaning(null))
+      .catch(() => setApiMeaning(null))
+      .finally(() => setApiLoading(false));
+  }, [tappedWord]);
+
   const [answers, setAnswers] = useState<(number | null)[]>([]);
   const [submitted, setSubmitted] = useState(false);
 
@@ -747,14 +762,26 @@ export function ReadingPage({ student, onBackHome }: Props) {
             <div className="fixed inset-0 z-40" onClick={() => setTappedWord(null)} />
             <div className="fixed left-1/2 top-1/2 z-50 w-72 -translate-x-1/2 -translate-y-1/2 rounded-2xl border border-border bg-card px-5 py-4 shadow-xl animate-pop">
               <button type="button" onClick={() => setTappedWord(null)} className="absolute right-3 top-3 text-muted-foreground hover:text-foreground text-xs">✕</button>
-              <div className="flex items-center justify-center gap-2 mb-2">
+              <div className="flex items-center justify-center gap-2 mb-1">
                 <span className={cn("text-xl font-black", WORD_POS[tappedWord] ? POS_COLOR[WORD_POS[tappedWord]] : "text-primary")}>{tappedWord}</span>
-                {WORD_POS[tappedWord] && <span className="rounded-full bg-muted px-2 py-0.5 text-[9px] font-bold text-muted-foreground">{POS_LABEL[WORD_POS[tappedWord]]}</span>}
+                <button type="button" onClick={() => speakText(tappedWord)} className="rounded-full bg-muted p-1 hover:bg-primary/10 transition-colors">
+                  <Volume2 className="h-3.5 w-3.5 text-muted-foreground" />
+                </button>
               </div>
+              {(WORD_POS[tappedWord] || apiMeaning?.phonetic) && (
+                <div className="flex items-center justify-center gap-2 mb-1">
+                  {WORD_POS[tappedWord] && <span className="rounded-full bg-muted px-2 py-0.5 text-[9px] font-bold text-muted-foreground">{POS_LABEL[WORD_POS[tappedWord]]}</span>}
+                  {apiMeaning?.phonetic && <span className="text-[10px] font-bold text-muted-foreground">{apiMeaning.phonetic}</span>}
+                </div>
+              )}
               {MINI_DICT[tappedWord] ? (
-                <p className="text-center text-sm font-bold text-primary">{MINI_DICT[tappedWord]}</p>
+                <p className="text-center text-sm font-bold text-primary mt-1">{MINI_DICT[tappedWord]}</p>
+              ) : apiLoading ? (
+                <div className="flex justify-center mt-2"><Loader2 className="h-4 w-4 animate-spin text-primary" /></div>
+              ) : apiMeaning?.vi ? (
+                <p className="text-center text-sm font-bold text-primary mt-1">{apiMeaning.vi}</p>
               ) : (
-                <p className="text-center text-xs font-bold text-muted-foreground">Bấm giữ từ để tra từ điển</p>
+                <p className="text-center text-xs text-muted-foreground mt-1">Không tìm thấy nghĩa</p>
               )}
             </div>
           </>
