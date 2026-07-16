@@ -1,5 +1,5 @@
-import { ArrowRight, Headphones, Loader2, MessageCircle, Mic, PartyPopper, Square, ThumbsUp, Volume2 } from "lucide-react";
-import { useMemo, useRef, useState } from "react";
+import { ArrowRight, Ear, Headphones, Loader2, MessageCircle, Mic, PartyPopper, Square, ThumbsUp, Volume2 } from "lucide-react";
+import { useCallback, useMemo, useRef, useState } from "react";
 import { SEED_TOPICS } from "@/data/seedTopics";
 import { SEED_VOCABULARY } from "@/data/seedVocabulary";
 import { LEVEL_LABELS, LEVEL_ORDER, type Level, type Student } from "@/types";
@@ -22,13 +22,14 @@ interface SpeakingPageProps {
   onShadowing?: () => void;
 }
 
-type SpeakingMode = "word" | "phrase" | "shadowing";
+type SpeakingMode = "word" | "phrase" | "shadowing" | "minimal-pairs";
 type Phase = "idle" | "recording" | "scoring" | "result";
 
 const MODES: { key: SpeakingMode; icon: typeof Mic; label: string; desc: string; color: string }[] = [
   { key: "word", icon: Mic, label: "Phát âm từ", desc: "Luyện phát âm từng từ riêng lẻ", color: "bg-blue-100 text-blue-600" },
   { key: "phrase", icon: MessageCircle, label: "Phát âm cụm từ", desc: "Luyện phát âm cụm từ & câu thông dụng", color: "bg-green-100 text-green-600" },
   { key: "shadowing", icon: Headphones, label: "Shadowing", desc: "Nghe rồi đọc theo (nghe → nhắc lại)", color: "bg-purple-100 text-purple-600" },
+  { key: "minimal-pairs", icon: Ear, label: "Minimal Pairs", desc: "Phân biệt cặp âm dễ nhầm cho người Việt", color: "bg-orange-100 text-orange-600" },
 ];
 
 // Common phrases grouped by level for "Phát âm cụm từ" mode
@@ -58,6 +59,82 @@ const COMMON_PHRASES: { phrase: string; meaning_vi: string; level: Level }[] = [
   { phrase: "From my perspective", meaning_vi: "Theo quan điểm của tôi", level: "b2" },
   { phrase: "That's beside the point", meaning_vi: "Đó không phải vấn đề chính", level: "c1" },
   { phrase: "For what it's worth", meaning_vi: "Nếu có ích thì...", level: "c1" },
+];
+
+// ── Minimal Pairs data (important for Vietnamese learners) ──
+interface MinimalPair {
+  word1: string;
+  word2: string;
+  ipa1: string;
+  ipa2: string;
+  soundFocus: string;
+  level: string;
+}
+
+const MINIMAL_PAIRS: MinimalPair[] = [
+  // /ɪ/ vs /iː/
+  { word1: "ship", word2: "sheep", ipa1: "/ʃɪp/", ipa2: "/ʃiːp/", soundFocus: "/ɪ/ vs /iː/", level: "beginner" },
+  { word1: "bit", word2: "beat", ipa1: "/bɪt/", ipa2: "/biːt/", soundFocus: "/ɪ/ vs /iː/", level: "beginner" },
+  { word1: "sit", word2: "seat", ipa1: "/sɪt/", ipa2: "/siːt/", soundFocus: "/ɪ/ vs /iː/", level: "beginner" },
+  { word1: "hit", word2: "heat", ipa1: "/hɪt/", ipa2: "/hiːt/", soundFocus: "/ɪ/ vs /iː/", level: "beginner" },
+  { word1: "fill", word2: "feel", ipa1: "/fɪl/", ipa2: "/fiːl/", soundFocus: "/ɪ/ vs /iː/", level: "beginner" },
+  { word1: "lip", word2: "leap", ipa1: "/lɪp/", ipa2: "/liːp/", soundFocus: "/ɪ/ vs /iː/", level: "intermediate" },
+  // /e/ vs /æ/
+  { word1: "bed", word2: "bad", ipa1: "/bed/", ipa2: "/bæd/", soundFocus: "/e/ vs /æ/", level: "beginner" },
+  { word1: "pen", word2: "pan", ipa1: "/pen/", ipa2: "/pæn/", soundFocus: "/e/ vs /æ/", level: "beginner" },
+  { word1: "set", word2: "sat", ipa1: "/set/", ipa2: "/sæt/", soundFocus: "/e/ vs /æ/", level: "beginner" },
+  { word1: "men", word2: "man", ipa1: "/men/", ipa2: "/mæn/", soundFocus: "/e/ vs /æ/", level: "beginner" },
+  { word1: "head", word2: "had", ipa1: "/hed/", ipa2: "/hæd/", soundFocus: "/e/ vs /æ/", level: "intermediate" },
+  // /ɪ/ vs /e/
+  { word1: "sit", word2: "set", ipa1: "/sɪt/", ipa2: "/set/", soundFocus: "/ɪ/ vs /e/", level: "intermediate" },
+  { word1: "pin", word2: "pen", ipa1: "/pɪn/", ipa2: "/pen/", soundFocus: "/ɪ/ vs /e/", level: "intermediate" },
+  { word1: "tin", word2: "ten", ipa1: "/tɪn/", ipa2: "/ten/", soundFocus: "/ɪ/ vs /e/", level: "intermediate" },
+  { word1: "bill", word2: "bell", ipa1: "/bɪl/", ipa2: "/bel/", soundFocus: "/ɪ/ vs /e/", level: "intermediate" },
+  // /ʌ/ vs /æ/
+  { word1: "cut", word2: "cat", ipa1: "/kʌt/", ipa2: "/kæt/", soundFocus: "/ʌ/ vs /æ/", level: "beginner" },
+  { word1: "but", word2: "bat", ipa1: "/bʌt/", ipa2: "/bæt/", soundFocus: "/ʌ/ vs /æ/", level: "beginner" },
+  { word1: "hut", word2: "hat", ipa1: "/hʌt/", ipa2: "/hæt/", soundFocus: "/ʌ/ vs /æ/", level: "beginner" },
+  { word1: "run", word2: "ran", ipa1: "/rʌn/", ipa2: "/ræn/", soundFocus: "/ʌ/ vs /æ/", level: "intermediate" },
+  // /ʊ/ vs /uː/
+  { word1: "pull", word2: "pool", ipa1: "/pʊl/", ipa2: "/puːl/", soundFocus: "/ʊ/ vs /uː/", level: "intermediate" },
+  { word1: "full", word2: "fool", ipa1: "/fʊl/", ipa2: "/fuːl/", soundFocus: "/ʊ/ vs /uː/", level: "intermediate" },
+  { word1: "look", word2: "Luke", ipa1: "/lʊk/", ipa2: "/luːk/", soundFocus: "/ʊ/ vs /uː/", level: "intermediate" },
+  // /r/ vs /l/
+  { word1: "rice", word2: "lice", ipa1: "/raɪs/", ipa2: "/laɪs/", soundFocus: "/r/ vs /l/", level: "beginner" },
+  { word1: "right", word2: "light", ipa1: "/raɪt/", ipa2: "/laɪt/", soundFocus: "/r/ vs /l/", level: "beginner" },
+  { word1: "red", word2: "led", ipa1: "/red/", ipa2: "/led/", soundFocus: "/r/ vs /l/", level: "beginner" },
+  { word1: "rock", word2: "lock", ipa1: "/rɒk/", ipa2: "/lɒk/", soundFocus: "/r/ vs /l/", level: "beginner" },
+  { word1: "pray", word2: "play", ipa1: "/preɪ/", ipa2: "/pleɪ/", soundFocus: "/r/ vs /l/", level: "intermediate" },
+  { word1: "road", word2: "load", ipa1: "/roʊd/", ipa2: "/loʊd/", soundFocus: "/r/ vs /l/", level: "intermediate" },
+  // /θ/ vs /t/
+  { word1: "thin", word2: "tin", ipa1: "/θɪn/", ipa2: "/tɪn/", soundFocus: "/θ/ vs /t/", level: "beginner" },
+  { word1: "three", word2: "tree", ipa1: "/θriː/", ipa2: "/triː/", soundFocus: "/θ/ vs /t/", level: "beginner" },
+  { word1: "thank", word2: "tank", ipa1: "/θæŋk/", ipa2: "/tæŋk/", soundFocus: "/θ/ vs /t/", level: "intermediate" },
+  { word1: "thought", word2: "taught", ipa1: "/θɔːt/", ipa2: "/tɔːt/", soundFocus: "/θ/ vs /t/", level: "intermediate" },
+  { word1: "thick", word2: "tick", ipa1: "/θɪk/", ipa2: "/tɪk/", soundFocus: "/θ/ vs /t/", level: "beginner" },
+  // /f/ vs /v/
+  { word1: "fan", word2: "van", ipa1: "/fæn/", ipa2: "/væn/", soundFocus: "/f/ vs /v/", level: "beginner" },
+  { word1: "fine", word2: "vine", ipa1: "/faɪn/", ipa2: "/vaɪn/", soundFocus: "/f/ vs /v/", level: "beginner" },
+  { word1: "ferry", word2: "very", ipa1: "/ˈferi/", ipa2: "/ˈveri/", soundFocus: "/f/ vs /v/", level: "beginner" },
+  { word1: "fast", word2: "vast", ipa1: "/fæst/", ipa2: "/væst/", soundFocus: "/f/ vs /v/", level: "intermediate" },
+  // /n/ vs /ŋ/
+  { word1: "sin", word2: "sing", ipa1: "/sɪn/", ipa2: "/sɪŋ/", soundFocus: "/n/ vs /ŋ/", level: "intermediate" },
+  { word1: "win", word2: "wing", ipa1: "/wɪn/", ipa2: "/wɪŋ/", soundFocus: "/n/ vs /ŋ/", level: "intermediate" },
+  { word1: "ran", word2: "rang", ipa1: "/ræn/", ipa2: "/ræŋ/", soundFocus: "/n/ vs /ŋ/", level: "intermediate" },
+  { word1: "ban", word2: "bang", ipa1: "/bæn/", ipa2: "/bæŋ/", soundFocus: "/n/ vs /ŋ/", level: "intermediate" },
+  // /s/ vs /ʃ/
+  { word1: "see", word2: "she", ipa1: "/siː/", ipa2: "/ʃiː/", soundFocus: "/s/ vs /ʃ/", level: "beginner" },
+  { word1: "so", word2: "show", ipa1: "/soʊ/", ipa2: "/ʃoʊ/", soundFocus: "/s/ vs /ʃ/", level: "beginner" },
+  { word1: "suit", word2: "shoot", ipa1: "/suːt/", ipa2: "/ʃuːt/", soundFocus: "/s/ vs /ʃ/", level: "intermediate" },
+  // /b/ vs /p/
+  { word1: "bat", word2: "pat", ipa1: "/bæt/", ipa2: "/pæt/", soundFocus: "/b/ vs /p/", level: "beginner" },
+  { word1: "buy", word2: "pie", ipa1: "/baɪ/", ipa2: "/paɪ/", soundFocus: "/b/ vs /p/", level: "beginner" },
+  // /ð/ vs /d/
+  { word1: "they", word2: "day", ipa1: "/ðeɪ/", ipa2: "/deɪ/", soundFocus: "/ð/ vs /d/", level: "intermediate" },
+  { word1: "then", word2: "den", ipa1: "/ðen/", ipa2: "/den/", soundFocus: "/ð/ vs /d/", level: "intermediate" },
+  // /ɒ/ vs /ʌ/
+  { word1: "cot", word2: "cut", ipa1: "/kɒt/", ipa2: "/kʌt/", soundFocus: "/ɒ/ vs /ʌ/", level: "advanced" },
+  { word1: "hot", word2: "hut", ipa1: "/hɒt/", ipa2: "/hʌt/", soundFocus: "/ɒ/ vs /ʌ/", level: "advanced" },
 ];
 
 // Chấm chi tiết cần: micro + ngữ cảnh bảo mật (HTTPS/localhost).
@@ -117,6 +194,10 @@ export function SpeakingPage({ student, topicId, onBackHome, onShadowing }: Spea
 
   if (mode === "phrase") {
     return <PhraseMode level={level} onBack={() => setMode(null)} />;
+  }
+
+  if (mode === "minimal-pairs") {
+    return <MinimalPairsMode onBack={() => setMode(null)} />;
   }
 
   // mode === "word" — original word pronunciation
@@ -356,6 +437,159 @@ function PhraseMode({ level, onBack }: { level: Level; onBack: () => void }) {
               <Button type="button" className="flex-1" onClick={next}><ThumbsUp className="h-5 w-5" /> {n + 1 >= phrases.length ? "Xong" : "Đọc được rồi"}</Button>
             </div>
           </div>
+        </CardContent>
+      </Card>
+    </main>
+  );
+}
+
+/* ───────────────────────── Minimal Pairs Mode ───────────────────────── */
+
+const PAIRS_PER_ROUND = 10;
+
+function MinimalPairsMode({ onBack }: { onBack: () => void }) {
+  const pairs = useMemo(() => {
+    const shuffled = [...MINIMAL_PAIRS].sort(() => Math.random() - 0.5);
+    return shuffled.slice(0, PAIRS_PER_ROUND);
+  }, []);
+
+  const [n, setN] = useState(0);
+  const [score, setScore] = useState(0);
+  const [picked, setPicked] = useState<1 | 2 | null>(null);
+  const [correctChoice, setCorrectChoice] = useState<1 | 2>(() => (Math.random() < 0.5 ? 1 : 2));
+  const [done, setDone] = useState(false);
+
+  const pair = pairs[n];
+
+  const playTarget = useCallback(() => {
+    if (!pair) return;
+    const word = correctChoice === 1 ? pair.word1 : pair.word2;
+    speakText(word);
+  }, [pair, correctChoice]);
+
+  const handlePick = (choice: 1 | 2) => {
+    if (picked !== null) return; // already answered
+    setPicked(choice);
+    if (choice === correctChoice) setScore((s) => s + 1);
+    // Play both words for comparison after a short delay
+    const w1 = pair.word1;
+    const w2 = pair.word2;
+    setTimeout(() => speakText(w1), 400);
+    setTimeout(() => speakText(w2), 1200);
+  };
+
+  const next = () => {
+    if (n + 1 >= pairs.length) {
+      setDone(true);
+    } else {
+      setN((x) => x + 1);
+      setPicked(null);
+      setCorrectChoice(Math.random() < 0.5 ? 1 : 2);
+    }
+  };
+
+  if (done) {
+    return (
+      <main className="mx-auto w-full max-w-md sm:max-w-lg lg:max-w-2xl overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
+        <SessionHeader title="Minimal Pairs" onClose={onBack} />
+        <Card className="animate-pop">
+          <CardContent className="flex flex-col items-center gap-4 p-8 text-center">
+            <PartyPopper className="h-14 w-14 text-accent" />
+            <p className="text-2xl font-black text-primary">
+              {score}/{pairs.length} {score >= pairs.length * 0.8 ? "Xuất sắc!" : score >= pairs.length * 0.5 ? "Khá tốt!" : "Cần luyện thêm!"}
+            </p>
+            <p className="text-sm font-bold text-muted-foreground">
+              Bạn nghe đúng {score} trên {pairs.length} cặp âm
+            </p>
+            <Button type="button" size="lg" className="w-full" onClick={onBack}>Xong</Button>
+          </CardContent>
+        </Card>
+      </main>
+    );
+  }
+
+  if (!pair) return null;
+
+  const isCorrect = picked !== null && picked === correctChoice;
+
+  return (
+    <main className="mx-auto w-full max-w-md sm:max-w-lg lg:max-w-2xl overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
+      <SessionHeader title="Minimal Pairs" onClose={onBack} progress={Math.round((n / pairs.length) * 100)} />
+      <p className="mb-1 text-center text-sm font-extrabold text-muted-foreground">
+        Câu {n + 1} / {pairs.length} · Điểm: {score}
+      </p>
+
+      {/* Sound focus label */}
+      <p className="mb-3 text-center">
+        <span className="inline-block rounded-full bg-orange-100 px-3 py-1 text-xs font-black text-orange-700">
+          {pair.soundFocus}
+        </span>
+      </p>
+
+      <Card>
+        <CardContent className="flex flex-col items-center gap-5 p-6">
+          {/* Speaker button */}
+          <button
+            type="button"
+            onClick={playTarget}
+            className="flex h-20 w-20 items-center justify-center rounded-full bg-primary text-white shadow-card transition-all active:translate-y-[2px] hover:brightness-105"
+            aria-label="Nghe"
+          >
+            <Volume2 className="h-9 w-9" />
+          </button>
+          <p className="text-sm font-bold text-muted-foreground">
+            {picked === null ? "Nghe rồi chọn từ bạn nghe được" : "Nghe so sánh 2 từ"}
+          </p>
+
+          {/* Two word cards */}
+          <div className="flex w-full gap-3">
+            {([1, 2] as const).map((choice) => {
+              const word = choice === 1 ? pair.word1 : pair.word2;
+              const ipa = choice === 1 ? pair.ipa1 : pair.ipa2;
+              const isThis = picked === choice;
+              const isAnswer = correctChoice === choice;
+
+              let borderClass = "border-border/50";
+              if (picked !== null) {
+                if (isAnswer) borderClass = "border-green-500 bg-green-50";
+                else if (isThis && !isAnswer) borderClass = "border-red-500 bg-red-50";
+              }
+
+              return (
+                <button
+                  key={choice}
+                  type="button"
+                  onClick={() => handlePick(choice)}
+                  disabled={picked !== null}
+                  className={cn(
+                    "flex flex-1 flex-col items-center gap-2 rounded-2xl border-2 p-5 transition-all",
+                    picked === null && "hover:border-primary/50 hover:shadow-md active:scale-[0.97]",
+                    borderClass,
+                  )}
+                >
+                  <span className="text-2xl font-black">{word}</span>
+                  <span className="text-sm font-bold text-muted-foreground">{ipa}</span>
+                </button>
+              );
+            })}
+          </div>
+
+          {/* Feedback */}
+          {picked !== null && (
+            <div className="flex w-full flex-col items-center gap-3">
+              <p className={cn("text-lg font-black", isCorrect ? "text-green-600" : "text-red-600")}>
+                {isCorrect ? "Chính xác!" : `Sai rồi! Đáp án: ${correctChoice === 1 ? pair.word1 : pair.word2}`}
+              </p>
+              <div className="flex gap-2">
+                <Button type="button" variant="outline" size="sm" onClick={playTarget}>
+                  <Volume2 className="h-4 w-4" /> Nghe lại
+                </Button>
+                <Button type="button" size="sm" onClick={next}>
+                  {n + 1 >= pairs.length ? "Xem kết quả" : "Tiếp"} <ArrowRight className="h-4 w-4" />
+                </Button>
+              </div>
+            </div>
+          )}
         </CardContent>
       </Card>
     </main>

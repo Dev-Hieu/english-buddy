@@ -1,4 +1,5 @@
-import { BookOpen, ClipboardCheck, Ear, Flame, Gamepad2, GraduationCap, LogOut, MessageSquareText, Mic, PenLine, RotateCcw, Settings, Sparkles, Star, Trophy, Type, UserRound } from "lucide-react";
+import { Award, BookOpen, ClipboardCheck, Ear, Flame, Gamepad2, GraduationCap, LogOut, MessageSquareText, Mic, PenLine, RotateCcw, Settings, Sparkles, Star, Trophy, Type, UserRound } from "lucide-react";
+import { SmartReview } from "@/components/SmartReview";
 import type { ComponentType } from "react";
 import { useEffect, useState } from "react";
 import { getLeaderboard } from "@/services/studentService";
@@ -14,6 +15,7 @@ import { ThemePicker } from "@/components/ui/ThemePicker";
 import { cn } from "@/components/ui/cn";
 import { Footer } from "@/components/layout/Footer";
 import { LEVEL_ORDER } from "@/types";
+import { countEarnedBadges } from "@/pages/BadgesPage";
 
 function levelOf(xp: number) { const thresholds = [0, 50, 150, 400, 800, 1500, 3000]; const lvl = thresholds.findIndex((t) => xp < t); return lvl < 0 ? thresholds.length : lvl; }
 function levelLabel(xp: number) { return ["Mới bắt đầu", "Sơ cấp", "Tiền trung cấp", "Trung cấp", "Trung cao cấp", "Cao cấp", "Thành thạo"][levelOf(xp) - 1] || ""; }
@@ -144,7 +146,7 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
       </header>
 
       {/* ── Thành tích — iOS icon row ── */}
-      <div className="grid grid-cols-3 lg:grid-cols-6 gap-4">
+      <div className="grid grid-cols-4 lg:grid-cols-6 gap-4">
         <button type="button" onClick={() => onNavigate("dashboard")} className="flex flex-col items-center gap-1.5 transition-all active:scale-[0.90] hover:scale-[1.05]">
           <span className="flex h-12 w-12 items-center justify-center rounded-[0.875rem] bg-amber-500 text-white shadow-lg">
             <Star className="h-6 w-6" />
@@ -162,6 +164,12 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
             <Trophy className="h-6 w-6" />
           </span>
           <span className="text-xs font-black">{weekRank ? `#${weekRank}` : "—"}</span>
+        </button>
+        <button type="button" onClick={() => onNavigate("badges")} className="flex flex-col items-center gap-1.5 transition-all active:scale-[0.90] hover:scale-[1.05]">
+          <span className="flex h-12 w-12 items-center justify-center rounded-[0.875rem] bg-emerald-500 text-white shadow-lg">
+            <Award className="h-6 w-6" />
+          </span>
+          <span className="text-xs font-black">{countEarnedBadges(student, learned.size)} huy hiệu</span>
         </button>
       </div>
 
@@ -241,6 +249,9 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
           ))}
         </div>
       </section>
+
+      {/* ── Từ yếu tuần này ── */}
+      <SmartReview studentId={student.id} onNavigate={onNavigate} />
 
       {/* ── Kết quả thi gần đây — iOS icon row ── */}
       {testResults.length > 0 && (

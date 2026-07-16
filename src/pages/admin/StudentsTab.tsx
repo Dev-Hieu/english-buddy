@@ -1,4 +1,4 @@
-import { LogIn, Pencil, Plus, Search, Trash2, X } from "lucide-react";
+import { BarChart3, LogIn, Pencil, Plus, Search, Trash2, X } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -8,6 +8,7 @@ import {
   type AdminStudent, type CreateStudentDirectPayload,
   listAllStudents, createStudentDirect, deleteStudentAdmin, updateStudentAdmin, setStudentAccount,
 } from "@/services/studentService";
+import { StudentProgressReport } from "@/components/StudentProgressReport";
 
 interface StudentsTabProps {
   onRefresh: () => void;
@@ -72,6 +73,7 @@ export function StudentsTab({ onRefresh, onLoginAsStudent }: StudentsTabProps) {
   };
 
   const [accountMsg, setAccountMsg] = useState("");
+  const [reportStudent, setReportStudent] = useState<AdminStudent | null>(null);
 
   const handleEditSave = async () => {
     if (!editId || !editForm.name.trim()) return;
@@ -196,6 +198,10 @@ export function StudentsTab({ onRefresh, onLoginAsStudent }: StudentsTabProps) {
                     </p>
                   </div>
                   <div className="flex shrink-0 items-center gap-1">
+                    <button type="button" onClick={() => setReportStudent(s)} title="Xem tiến độ"
+                      className="flex items-center gap-1 rounded-lg bg-purple-100 px-2 py-1.5 text-xs font-extrabold text-purple-700 hover:bg-purple-200">
+                      <BarChart3 className="h-3.5 w-3.5" /> Tiến độ
+                    </button>
                     {onLoginAsStudent && (
                       <button type="button" onClick={() => onLoginAsStudent(s.id)} title="Học thử"
                         className="flex items-center gap-1 rounded-lg bg-primary/10 px-2 py-1.5 text-xs font-extrabold text-primary hover:bg-primary/20">
@@ -342,6 +348,17 @@ export function StudentsTab({ onRefresh, onLoginAsStudent }: StudentsTabProps) {
             </Card>
           ))}
         </div>
+      )}
+
+      {reportStudent && (
+        <StudentProgressReport
+          studentId={reportStudent.id}
+          studentName={reportStudent.name}
+          studentXp={reportStudent.xp}
+          studentStreak={reportStudent.streak}
+          studentLevel={reportStudent.level}
+          onClose={() => setReportStudent(null)}
+        />
       )}
     </div>
   );

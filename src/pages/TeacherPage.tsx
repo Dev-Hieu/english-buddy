@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from "react";
-import { LogOut, ArrowLeft, Users, Target, Trash2 } from "lucide-react";
+import { LogOut, ArrowLeft, Users, Target, Trash2, BarChart3 } from "lucide-react";
 import {
   getTeacherClasses,
   getClassStudents,
@@ -12,6 +12,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { cn } from "@/components/ui/cn";
 import { avatarEmoji } from "@/components/ui/emoji";
+import { StudentProgressReport } from "@/components/StudentProgressReport";
 
 interface TeacherPageProps {
   teacherName: string;
@@ -45,6 +46,7 @@ export function TeacherPage({ teacherName, onLogout, onLoginAsStudent }: Teacher
   const [goalEdit, setGoalEdit] = useState<Record<string, number>>({});
   const [savingGoal, setSavingGoal] = useState<string | null>(null);
   const [error, setError] = useState("");
+  const [reportStudent, setReportStudent] = useState<ClassStudent | null>(null);
 
   const loadClasses = useCallback(() => {
     setLoadingClasses(true);
@@ -166,6 +168,15 @@ export function TeacherPage({ teacherName, onLogout, onLoginAsStudent }: Teacher
                           <Target className="h-3.5 w-3.5" />
                           {savingGoal === s.id ? "..." : "Lưu"}
                         </Button>
+                        <Button
+                          size="sm"
+                          variant="outline"
+                          onClick={() => setReportStudent(s)}
+                          className="text-purple-600 border-purple-300"
+                        >
+                          <BarChart3 className="h-3.5 w-3.5" />
+                          Xem báo cáo
+                        </Button>
                         {onLoginAsStudent && (
                           <Button
                             size="sm"
@@ -191,6 +202,17 @@ export function TeacherPage({ teacherName, onLogout, onLoginAsStudent }: Teacher
               </Card>
             ))}
           </section>
+        )}
+
+        {reportStudent && (
+          <StudentProgressReport
+            studentId={reportStudent.id}
+            studentName={reportStudent.name}
+            studentXp={reportStudent.xp}
+            studentStreak={reportStudent.streak}
+            studentLevel={reportStudent.level}
+            onClose={() => setReportStudent(null)}
+          />
         )}
       </main>
     );
