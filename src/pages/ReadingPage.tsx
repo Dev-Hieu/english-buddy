@@ -618,12 +618,15 @@ export function ReadingPage({ student, onBackHome }: Props) {
   const [apiMeaning, setApiMeaning] = useState<{ vi: string; phonetic?: string } | null>(null);
   const [apiLoading, setApiLoading] = useState(false);
 
+  const mainRef = useRef<HTMLElement>(null);
   const tapWord = useCallback((word: string, e: React.MouseEvent) => {
     if (tappedWord === word) { setTappedWord(null); setPopupPos(null); return; }
     const rect = (e.target as HTMLElement).getBoundingClientRect();
-    // Hiện ngay dòng dưới từ, căn giữa màn hình theo chiều ngang
-    const y = rect.bottom + 8;
-    setPopupPos({ x: window.innerWidth / 2, y });
+    // Căn giữa trong container (không phải giữa window)
+    const main = mainRef.current;
+    const mainRect = main?.getBoundingClientRect();
+    const cx = mainRect ? mainRect.left + mainRect.width / 2 : window.innerWidth / 2;
+    setPopupPos({ x: cx, y: rect.bottom + 8 });
     setTappedWord(word);
   }, [tappedWord]);
 
@@ -766,7 +769,7 @@ export function ReadingPage({ student, onBackHome }: Props) {
     const words = activeStory.text.split(/(\s+|(?=[.,!?;:])|(?<=[.,!?;:]))/);
 
     return (
-      <main className="mx-auto w-full max-w-md sm:max-w-lg lg:max-w-2xl overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
+      <main ref={mainRef} className="mx-auto w-full max-w-md sm:max-w-lg lg:max-w-2xl overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
         <SessionHeader title={activeStory.title} onClose={backToList}
           right={<span className="rounded-full bg-primary/10 px-2.5 py-1 text-xs font-extrabold text-primary">{activeStory.level}</span>} />
 
@@ -809,7 +812,7 @@ export function ReadingPage({ student, onBackHome }: Props) {
           <>
             <div className="fixed inset-0 z-40" onClick={() => { setTappedWord(null); setPopupPos(null); }} />
             <div ref={popupRef}
-              className="fixed z-50 w-64 rounded-2xl border border-border bg-card px-4 py-3 shadow-xl animate-pop"
+              className="fixed z-50 w-[min(16rem,calc(100vw-2rem))] rounded-2xl border border-border bg-card px-4 py-3 shadow-xl animate-pop"
               style={{ left: popupPos.x, top: popupPos.y, transform: "translateX(-50%)" }}>
               {/* Arrow trên */}
               <div className="absolute left-1/2 -top-[5px] -translate-x-1/2 h-2.5 w-2.5 rotate-45 border-l border-t border-border bg-card" />
