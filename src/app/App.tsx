@@ -1,7 +1,8 @@
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import type { Level, Student, StudentVocabularyProgress } from "@/types";
 import { getUser, isLoggedIn, logout, refreshMe, updateMe, type AuthUser } from "@/services/authService";
 import { ProfileModal } from "@/components/ProfileModal";
+import { ParrotLogo } from "@/components/ParrotLogo";
 import { createStudent, deleteStudent, listStudents, updateStudent, type NewStudent } from "@/services/studentService";
 import { getStudentProgress, recordAnswer } from "@/services/progressService";
 import { getStudent } from "@/services/studentService";
@@ -65,13 +66,19 @@ export function App() {
   const [streak, setStreak] = useState(0);
   const [xp, setXp] = useState(0);
   const [showProfile, setShowProfile] = useState(false);
+  const [loading, setLoading] = useState(() => isLoggedIn());
+  const studentsReady = useRef(false);
+  const vocabReady = useRef(false);
+  const checkReady = useCallback(() => {
+    if (studentsReady.current && vocabReady.current) setLoading(false);
+  }, []);
 
   const student = students.find((s) => s.id === selectedStudentId) ?? null;
 
   const loadStudents = useCallback(() => {
     if (!user) return;
-    listStudents().then(setStudents).catch(() => {});
-  }, [user]);
+    listStudents().then((s) => { setStudents(s); studentsReady.current = true; checkReady(); }).catch(() => { studentsReady.current = true; checkReady(); });
+  }, [user, checkReady]);
 
   useEffect(() => { loadStudents(); }, [loadStudents]);
 
@@ -88,8 +95,9 @@ export function App() {
         if (!existingIds.has(w.id)) { SEED_VOCABULARY.push(w); existingIds.add(w.id); added++; }
       }
       if (added > 0) setVocabVer((v) => v + 1);
-    }).catch(() => {});
-  }, []);
+      vocabReady.current = true; checkReady();
+    }).catch(() => { vocabReady.current = true; checkReady(); });
+  }, [checkReady]);
 
   // Áp ảnh mới nhất từ DB lên dữ liệu build sẵn -> ảnh ai đó đã đổi hiện cho MỌI người.
   // Tải lúc mở app + mỗi khi quay lại tab (đồng bộ gần tức thời giữa người dùng).
@@ -194,6 +202,27 @@ export function App() {
   // ── Chưa đăng nhập ──
   if (!user) {
     return <AuthPage onAuthed={(u) => { setUser(u); }} />;
+  }
+
+  // ── Splash screen khi đang tải dữ liệu ──
+  if (loading) {
+    return (
+      <main className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-gradient-to-br from-sky-100 via-white to-emerald-100">
+        <div className="flex flex-col items-center gap-5 rounded-3xl bg-card/80 px-12 py-10 shadow-2xl backdrop-blur">
+          <div className="animate-bounce">
+            <ParrotLogo size={80} />
+          </div>
+          <h1 className="text-2xl font-extrabold tracking-tight text-primary">English Buddy</h1>
+          <div className="flex items-center gap-2 text-sm text-muted-foreground">
+            <svg className="h-5 w-5 animate-spin text-primary" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+              <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
+              <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z" />
+            </svg>
+            <span>Loading...</span>
+          </div>
+        </div>
+      </main>
+    );
   }
 
   // ── Tài khoản chờ duyệt ──
@@ -364,7 +393,7 @@ export function App() {
   const showTab = true;
   return (
     <>
-      <div className={showTab ? "pb-24 lg:pb-0 lg:pl-20" : "lg:pl-0"}>{content}</div>
+      <div key={route.view} className={`animate-slide-in ${showTab ? "pb-24 lg:pb-0 lg:pl-20" : "lg:pl-0"}`}>{content}</div>
       {showTab ? <TabBar active={ACTIVE_TAB[route.view]} onSelect={onTab} /> : null}
       {showProfile && user && (
         <ProfileModal

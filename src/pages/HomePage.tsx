@@ -12,6 +12,7 @@ import { ParrotLogo } from "@/components/ParrotLogo";
 import { VoicePicker } from "@/components/ui/VoicePicker";
 import { ThemePicker } from "@/components/ui/ThemePicker";
 import { cn } from "@/components/ui/cn";
+import { Footer } from "@/components/layout/Footer";
 import { LEVEL_ORDER } from "@/types";
 
 function levelOf(xp: number) { const thresholds = [0, 50, 150, 400, 800, 1500, 3000]; const lvl = thresholds.findIndex((t) => xp < t); return lvl < 0 ? thresholds.length : lvl; }
@@ -262,7 +263,7 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
         </section>
       )}
 
-      <div className="pb-2" />
+      <Footer onNavigate={onNavigate} />
     </main>
   );
 }
