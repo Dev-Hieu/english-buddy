@@ -24,7 +24,7 @@ const LEVELS: CEFRLevel[] = ["A1", "A2", "B1", "B2", "C1", "C2"];
 
 /* Map UI CEFRLevel to vocabulary Level type */
 const CEFR_TO_LEVEL: Record<CEFRLevel, string> = {
-  A1: "a1", A2: "a2", B1: "b1", B2: "b2", C1: "c1", C2: "c1",
+  A1: "a1", A2: "a2", B1: "b1", B2: "b2", C1: "c1", C2: "c1", // c2 chưa có trong vocab DB, fallback c1
 };
 
 /* Shuffle helper */
@@ -194,7 +194,7 @@ const ESSAY_PROMPTS: Record<CEFRLevel, string[]> = {
     "Critically evaluate the notion that economic growth is always beneficial for society.",
     "To what extent is the concept of free will compatible with modern neuroscience?",
     "Analyze the role of education in perpetuating or reducing social inequality.",
-    "Discuss whether democracy is truly the best form of governance for all nations.",
+    "Evaluate the strengths and limitations of different forms of governance in various cultural contexts.",
     "Examine the philosophical implications of artificial consciousness.",
     "To what extent can language shape thought, and what are the implications for multilingual societies?",
     "Critically assess the claim that technological progress is inherently value-neutral.",
