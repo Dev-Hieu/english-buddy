@@ -55,7 +55,7 @@ export function PhrasesPage({ student, onBackHome }: Props) {
   // ── Category list ──
   if (screen === "categories") {
     return (
-      <main className="mx-auto w-full max-w-md overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
+      <main className="mx-auto w-full max-w-md sm:max-w-lg lg:max-w-2xl overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
         <SessionHeader title="Cụm từ thông dụng" onClose={onBackHome} icon={<MessageSquareText className="h-4 w-4" />} iconBg="bg-sky-500" />
 
         {/* Level filter */}
@@ -91,7 +91,7 @@ export function PhrasesPage({ student, onBackHome }: Props) {
   // ── Phrase list ──
   if (screen === "phrases" && activeCategory) {
     return (
-      <main className="mx-auto w-full max-w-md overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
+      <main className="mx-auto w-full max-w-md sm:max-w-lg lg:max-w-2xl overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
         <SessionHeader
           title={activeCategory.name_vi}
           onClose={backToCategories}
@@ -122,7 +122,7 @@ export function PhrasesPage({ student, onBackHome }: Props) {
   // ── Practice mode ──
   if (screen === "practice" && activeCategory) {
     return (
-      <main className="mx-auto w-full max-w-md overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
+      <main className="mx-auto w-full max-w-md sm:max-w-lg lg:max-w-2xl overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
         <PracticeView
           phrases={filteredPhrases}
           categoryName={activeCategory.name_vi}

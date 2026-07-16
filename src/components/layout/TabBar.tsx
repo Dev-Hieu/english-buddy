@@ -14,8 +14,34 @@ const TABS: { key: TabKey; label: string; icon: typeof Home }[] = [
 
 export function TabBar({ active, onSelect }: { active: TabKey | null; onSelect: (key: TabKey) => void }) {
   return (
-    <nav className="fixed inset-x-0 bottom-0 z-40 border-t border-border/70 bg-card/95 backdrop-blur">
-      <div className="mx-auto flex max-w-2xl items-stretch justify-around px-1 pb-[env(safe-area-inset-bottom)]">
+    <>
+      {/* ── Mobile + Tablet: bottom bar ── */}
+      <nav className="fixed inset-x-0 bottom-0 z-40 border-t border-border/70 bg-card/95 backdrop-blur lg:hidden">
+        <div className="mx-auto flex max-w-2xl items-stretch justify-around px-1 pb-[env(safe-area-inset-bottom)]">
+          {TABS.map((t) => {
+            const on = active === t.key;
+            return (
+              <button
+                key={t.key}
+                type="button"
+                onClick={() => onSelect(t.key)}
+                className={cn(
+                  "flex flex-1 flex-col items-center gap-1 py-2.5 text-[11px] font-bold transition-colors",
+                  on ? "text-primary" : "text-muted-foreground hover:text-foreground",
+                )}
+              >
+                <span className={cn("flex h-8 w-11 items-center justify-center rounded-2xl transition-colors", on && "bg-secondary")}>
+                  <t.icon className="h-5 w-5" strokeWidth={2.6} />
+                </span>
+                {t.label}
+              </button>
+            );
+          })}
+        </div>
+      </nav>
+
+      {/* ── Desktop: sidebar ── */}
+      <nav className="fixed left-0 top-0 z-40 hidden h-full w-20 flex-col items-center gap-1 border-r border-border/50 bg-card/95 px-2 pt-6 pb-4 backdrop-blur lg:flex">
         {TABS.map((t) => {
           const on = active === t.key;
           return (
@@ -24,18 +50,16 @@ export function TabBar({ active, onSelect }: { active: TabKey | null; onSelect: 
               type="button"
               onClick={() => onSelect(t.key)}
               className={cn(
-                "flex flex-1 flex-col items-center gap-1 py-2.5 text-[11px] font-bold transition-colors",
-                on ? "text-primary" : "text-muted-foreground hover:text-foreground",
+                "flex w-full flex-col items-center gap-1 rounded-2xl py-2.5 text-[10px] font-bold transition-colors",
+                on ? "bg-secondary text-primary" : "text-muted-foreground hover:text-foreground hover:bg-muted",
               )}
             >
-              <span className={cn("flex h-8 w-11 items-center justify-center rounded-2xl transition-colors", on && "bg-secondary")}>
-                <t.icon className="h-5 w-5" strokeWidth={2.6} />
-              </span>
+              <t.icon className="h-5 w-5" strokeWidth={2.4} />
               {t.label}
             </button>
           );
         })}
-      </div>
-    </nav>
+      </nav>
+    </>
   );
 }

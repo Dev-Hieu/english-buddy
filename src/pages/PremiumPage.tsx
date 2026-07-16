@@ -54,7 +54,7 @@ export function PremiumPage({ user, onBack }: PremiumPageProps) {
 
   if (user.isPremium) {
     return (
-      <main className="mx-auto w-full max-w-md overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-0 pb-6">
+      <main className="mx-auto w-full max-w-md sm:max-w-lg lg:max-w-2xl overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-0 pb-6">
         <SessionHeader title="Premium" onClose={onBack} icon={<Crown className="h-4 w-4" />} iconBg="bg-amber-500" />
         <div className="flex flex-col items-center gap-4 py-12 text-center">
           <div className="flex h-20 w-20 items-center justify-center rounded-full bg-amber-100">
@@ -71,7 +71,7 @@ export function PremiumPage({ user, onBack }: PremiumPageProps) {
   }
 
   return (
-    <main className="mx-auto w-full max-w-md overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-0 pb-6">
+    <main className="mx-auto w-full max-w-md sm:max-w-lg lg:max-w-2xl overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-0 pb-6">
       <SessionHeader title="Nâng cấp Premium" onClose={onBack} icon={<Crown className="h-4 w-4" />} iconBg="bg-amber-500" />
 
       {/* Hero */}

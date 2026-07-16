@@ -364,7 +364,7 @@ export function App() {
   const showTab = true;
   return (
     <>
-      <div className={showTab ? "pb-24" : ""}>{content}</div>
+      <div className={showTab ? "pb-24 lg:pb-0 lg:pl-20" : "lg:pl-0"}>{content}</div>
       {showTab ? <TabBar active={ACTIVE_TAB[route.view]} onSelect={onTab} /> : null}
       {showProfile && user && (
         <ProfileModal

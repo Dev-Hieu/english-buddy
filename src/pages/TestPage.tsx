@@ -44,7 +44,7 @@ export function TestPage({ student, topicId, level = "all", onBackHome }: TestPa
 
   if (questions.length === 0) {
     return (
-      <main className="mx-auto w-full max-w-md overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
+      <main className="mx-auto w-full max-w-md sm:max-w-lg lg:max-w-2xl overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
         <SessionHeader title={title} onClose={onBackHome} icon={<ClipboardCheck className="h-4 w-4" />} iconBg="bg-blue-500" />
         <Card><CardContent className="p-8 text-center font-bold text-muted-foreground">Chủ đề này chưa đủ từ để tạo bài test.</CardContent></Card>
       </main>
@@ -55,7 +55,7 @@ export function TestPage({ student, topicId, level = "all", onBackHome }: TestPa
     const total = questions.length;
     const score = Math.round((correctCount / total) * 100);
     return (
-      <main className="mx-auto w-full max-w-md overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
+      <main className="mx-auto w-full max-w-md sm:max-w-lg lg:max-w-2xl overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
         <SessionHeader title={title} onClose={onBackHome} icon={<ClipboardCheck className="h-4 w-4" />} iconBg="bg-blue-500" />
         <Card>
           <CardContent className="flex flex-col items-center gap-4 p-8 text-center">
@@ -110,7 +110,7 @@ export function TestPage({ student, topicId, level = "all", onBackHome }: TestPa
     picked === null ? "" : opt === q.answer ? "ring-4 ring-success" : opt === picked ? "ring-4 ring-red-400" : "opacity-50";
 
   return (
-    <main className="mx-auto w-full max-w-md overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
+    <main className="mx-auto w-full max-w-md sm:max-w-lg lg:max-w-2xl overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
       <SessionHeader title={title} onClose={onBackHome} progress={Math.round((index / questions.length) * 100)} icon={<ClipboardCheck className="h-4 w-4" />} iconBg="bg-blue-500" />
       <p className="mb-3 text-center text-sm font-extrabold text-muted-foreground">Câu {index + 1} / {questions.length}</p>
 

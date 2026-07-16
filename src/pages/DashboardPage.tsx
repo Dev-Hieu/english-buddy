@@ -68,9 +68,9 @@ export function DashboardPage({ students, onBackHome }: DashboardPageProps) {
     return () => { alive = false; };
   }, [student?.id]);
 
-  if (!student) return <main className="mx-auto w-full max-w-md overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6"><SessionHeader title="Tiến độ" onClose={onBackHome} /><p className="text-center text-sm text-muted-foreground py-8">Chưa có dữ liệu</p></main>;
+  if (!student) return <main className="mx-auto w-full max-w-md sm:max-w-lg lg:max-w-2xl overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6"><SessionHeader title="Tiến độ" onClose={onBackHome} /><p className="text-center text-sm text-muted-foreground py-8">Chưa có dữ liệu</p></main>;
 
-  if (loading) return <main className="mx-auto w-full max-w-md overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6"><SessionHeader title="Tiến độ" onClose={onBackHome} /><div className="flex justify-center py-12"><Loader2 className="h-8 w-8 animate-spin text-primary" /></div></main>;
+  if (loading) return <main className="mx-auto w-full max-w-md sm:max-w-lg lg:max-w-2xl overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6"><SessionHeader title="Tiến độ" onClose={onBackHome} /><div className="flex justify-center py-12"><Loader2 className="h-8 w-8 animate-spin text-primary" /></div></main>;
 
   const now = Date.now();
   const learnedIds = new Set(progress.filter((p) => p.mastery > 0).map((p) => p.wordId));
@@ -97,7 +97,7 @@ export function DashboardPage({ students, onBackHome }: DashboardPageProps) {
   const toggle = (key: string) => setExpandedSection(expandedSection === key ? null : key);
 
   return (
-    <main className="mx-auto w-full max-w-md overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
+    <main className="mx-auto w-full max-w-md sm:max-w-lg lg:max-w-2xl overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
       <SessionHeader title="Tiến độ học tập" onClose={onBackHome} icon={<BarChart3 className="h-4 w-4" />} iconBg="bg-indigo-500" />
 
       {/* ── Tổng quan ── */}

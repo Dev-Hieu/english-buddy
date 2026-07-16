@@ -329,7 +329,7 @@ export function ListeningPage({ student, onBackHome }: Props) {
 
   if (!mode) {
     return (
-      <main className="mx-auto w-full max-w-md overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
+      <main className="mx-auto w-full max-w-md sm:max-w-lg lg:max-w-2xl overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
         <SessionHeader title="Nghe" onClose={onBackHome} icon={<Ear className="h-4 w-4" />} iconBg="bg-blue-500" />
 
         {/* Level filter */}
@@ -366,7 +366,7 @@ export function ListeningPage({ student, onBackHome }: Props) {
   }
 
   return (
-    <main className="mx-auto w-full max-w-md overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
+    <main className="mx-auto w-full max-w-md sm:max-w-lg lg:max-w-2xl overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
       {mode === "word-image" && <WordImageGame level={level} onClose={() => setMode(null)} />}
       {mode === "sentence" && <SentenceGame level={level} onClose={() => setMode(null)} />}
       {mode === "stories" && <StoriesView level={level} onClose={() => setMode(null)} />}

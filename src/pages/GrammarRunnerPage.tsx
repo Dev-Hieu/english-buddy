@@ -71,7 +71,7 @@ export function GrammarRunnerPage({ topicId, studentId, onBackHome }: GrammarRun
 
   if (!topic) {
     return (
-      <main className="mx-auto w-full max-w-md overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
+      <main className="mx-auto w-full max-w-md sm:max-w-lg lg:max-w-2xl overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
         <SessionHeader title="Ngữ pháp" onClose={onBackHome} />
         <Card><CardContent className="p-8 text-center font-bold text-muted-foreground">Không tìm thấy bài.</CardContent></Card>
       </main>
@@ -110,7 +110,7 @@ export function GrammarRunnerPage({ topicId, studentId, onBackHome }: GrammarRun
   // ── Màn học (Grammar in Use style) ──
   if (phase === "learn") {
     return (
-      <main className="mx-auto w-full max-w-md overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
+      <main className="mx-auto w-full max-w-md sm:max-w-lg lg:max-w-2xl overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
         <SessionHeader title={topic.title_vi} onClose={onBackHome} icon={<GraduationCap className="h-4 w-4" />} iconBg="bg-rose-500" />
 
         {/* Header: tiêu đề + mô tả */}
@@ -161,7 +161,7 @@ export function GrammarRunnerPage({ topicId, studentId, onBackHome }: GrammarRun
     const total = topic.exercises.length;
     const pct = total ? Math.round((score / total) * 100) : 0;
     return (
-      <main className="mx-auto w-full max-w-md overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
+      <main className="mx-auto w-full max-w-md sm:max-w-lg lg:max-w-2xl overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
         <SessionHeader title={topic.title_vi} onClose={onBackHome} />
         <Card><CardContent className="flex flex-col items-center gap-4 p-8 text-center">
           <span className="text-6xl">{pct >= 80 ? "🏆" : pct >= 50 ? "👍" : "💪"}</span>
@@ -185,7 +185,7 @@ export function GrammarRunnerPage({ topicId, studentId, onBackHome }: GrammarRun
 
   // ── Màn bài tập ──
   return (
-    <main className="mx-auto w-full max-w-md overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
+    <main className="mx-auto w-full max-w-md sm:max-w-lg lg:max-w-2xl overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
       <SessionHeader title={topic.title_vi} onClose={onBackHome} progress={Math.round(((index + 1) / topic.exercises.length) * 100)} />
       <p className="mb-3 text-center text-sm font-extrabold text-muted-foreground">Câu {index + 1} / {topic.exercises.length}</p>
 

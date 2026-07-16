@@ -86,7 +86,7 @@ export function GamesPage({ student, topicId, level = "all", studiedWordIds, onB
         guide: "Bạn đấu với 3 bot! Mỗi lượt có 10 giây để gõ một từ tiếng Anh bắt đầu bằng chữ cái cuối của từ trước. Ví dụ: cat → tiger → rose. Từ không được lặp lại. Hết giờ hoặc sai → bị loại. Người cuối cùng thắng!" },
     ];
     return (
-      <main className="mx-auto w-full max-w-md overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
+      <main className="mx-auto w-full max-w-md sm:max-w-lg lg:max-w-2xl overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
         <SessionHeader title="Trò chơi" onClose={onBackHome} icon={<Gamepad2 className="h-4 w-4" />} iconBg="bg-pink-500" />
 
         {/* Độ khó (áp dụng cho game từ vựng; Sudoku có độ khó riêng) */}
@@ -146,7 +146,7 @@ export function GamesPage({ student, topicId, level = "all", studiedWordIds, onB
   }
 
   return (
-    <main className="mx-auto w-full max-w-md overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
+    <main className="mx-auto w-full max-w-md sm:max-w-lg lg:max-w-2xl overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
       {game === "match" && <MatchGame pool={reviewPool} onRecord={record} onClose={back} hard={hard} studentId={student.id} />}
       {game === "pick" && <PickGame pool={reviewPool} onRecord={record} onClose={back} hard={hard} studentId={student.id} />}
       {game === "listen" && <ListenGame pool={reviewPool} onRecord={record} onClose={back} hard={hard} studentId={student.id} />}

@@ -78,7 +78,7 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
   const overallPct = totalWords ? Math.round((learned.size / totalWords) * 100) : 0;
 
   return (
-    <main className="mx-auto w-full max-w-md overflow-x-hidden h-[100dvh] overflow-y-auto bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:h-[calc(100dvh-2rem)] sm:border sm:border-border/40 px-4 pt-4 pb-6 space-y-4">
+    <main className="mx-auto w-full max-w-md sm:max-w-lg lg:max-w-2xl overflow-x-hidden h-[100dvh] overflow-y-auto bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:h-[calc(100dvh-2rem)] sm:border sm:border-border/40 px-4 pt-4 pb-6 space-y-4">
 
       {/* ── Header ── */}
       <header className="flex items-center justify-between">
@@ -143,7 +143,7 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
       </header>
 
       {/* ── Thành tích — iOS icon row ── */}
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid grid-cols-3 lg:grid-cols-6 gap-4">
         <button type="button" onClick={() => onNavigate("dashboard")} className="flex flex-col items-center gap-1.5 transition-all active:scale-[0.90] hover:scale-[1.05]">
           <span className="flex h-12 w-12 items-center justify-center rounded-[0.875rem] bg-amber-500 text-white shadow-lg">
             <Star className="h-6 w-6" />
@@ -228,11 +228,11 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
       {/* ── Kỹ năng 3×3 ── */}
       <section>
         <h2 className="mb-3 text-base font-black">Kỹ năng</h2>
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid grid-cols-3 sm:grid-cols-3 lg:grid-cols-5 gap-4 lg:gap-5">
           {SKILL_TILES.map((t) => (
             <button key={t.view} type="button" onClick={() => onNavigate(t.view)}
               className="flex flex-col items-center gap-2 transition-all duration-150 active:scale-[0.90] hover:scale-[1.05]">
-              <span className={cn("flex h-14 w-14 items-center justify-center rounded-[1rem] text-white shadow-lg", t.bg)}>
+              <span className={cn("flex h-14 w-14 lg:h-16 lg:w-16 items-center justify-center rounded-[1rem] text-white shadow-lg", t.bg)}>
                 <t.icon className="h-7 w-7" />
               </span>
               <span className="text-[11px] font-bold text-foreground">{t.title}</span>
