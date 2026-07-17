@@ -665,7 +665,7 @@ export function CertificationPage({ student, onBackHome, onLevelUp }: { student:
   // ── Select exam ──
   if (phase === "select") {
     return (
-      <main className="ios-container">
+      <main className="mx-auto w-full max-w-md sm:max-w-lg lg:max-w-2xl overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
         <SessionHeader title="Chứng chỉ CEFR" icon={<Award className="h-4 w-4" />} iconBg="bg-red-500" onClose={onBackHome} />
 
         <p className="mb-4 text-sm text-muted-foreground">Chọn cấp độ để thi lấy chứng chỉ. Hoàn thành bài thi để nhận chứng chỉ CEFR.</p>
@@ -725,7 +725,7 @@ export function CertificationPage({ student, onBackHome, onLevelUp }: { student:
   if (phase === "preExam" && selectedExam) {
     const totalQ = selectedExam.sections.reduce((s, sec) => s + sec.questions.length, 0);
     return (
-      <main className="ios-container">
+      <main className="mx-auto w-full max-w-md sm:max-w-lg lg:max-w-2xl overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
         <SessionHeader title={`Thi ${selectedExam.level}`} icon={<Award className="h-4 w-4" />} iconBg="bg-red-500" onClose={() => setPhase("select")} />
 
         <div className="mx-auto max-w-md space-y-5">
@@ -775,7 +775,7 @@ export function CertificationPage({ student, onBackHome, onLevelUp }: { student:
     const progressPct = ((answeredCount) / allQuestions.length) * 100;
 
     return (
-      <main className="ios-container">
+      <main className="mx-auto w-full max-w-md sm:max-w-lg lg:max-w-2xl overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
         {/* Timer + Progress */}
         <div className="sticky top-0 z-30 -mx-4 mb-4 border-b border-border/60 bg-background/85 px-4 pb-2.5 pt-3 backdrop-blur">
           <div className="flex items-center justify-between mb-2">
@@ -933,7 +933,7 @@ export function CertificationPage({ student, onBackHome, onLevelUp }: { student:
   if (phase === "result" && selectedExam) {
     const pct = Math.round((totalCorrect / totalQuestions) * 100);
     return (
-      <main className="ios-container">
+      <main className="mx-auto w-full max-w-md sm:max-w-lg lg:max-w-2xl overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
         <SessionHeader title="Kết quả thi" icon={<Award className="h-4 w-4" />} iconBg="bg-red-500" onClose={onBackHome} />
 
         <div className="mx-auto max-w-md space-y-5">
@@ -1016,7 +1016,7 @@ export function CertificationPage({ student, onBackHome, onLevelUp }: { student:
     const pct = Math.round((totalCorrect / totalQuestions) * 100);
     const dateStr = new Date().toLocaleDateString("vi-VN", { year: "numeric", month: "long", day: "numeric" });
     return (
-      <main className="ios-container">
+      <main className="mx-auto w-full max-w-md sm:max-w-lg lg:max-w-2xl overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
         <SessionHeader title="Chứng chỉ" icon={<Award className="h-4 w-4" />} iconBg="bg-red-500" onClose={() => setPhase("result")} />
 
         {/* Print button */}

@@ -786,7 +786,7 @@ export function PlacementTestPage({ student, onComplete, onBack }: Props) {
   // ── Intro screen ──
   if (phase === "intro") {
     return (
-      <main className="mx-auto min-h-screen w-full max-w-md px-4 py-6">
+      <main className="mx-auto w-full max-w-md sm:max-w-lg lg:max-w-2xl overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
         <SessionHeader title="Kiểm tra xếp lớp" icon={<GraduationCap className="h-4 w-4" />} iconBg="bg-indigo-500" onClose={onBack} />
         <div className="mt-8 flex flex-col items-center gap-6 text-center">
           <div className="flex h-20 w-20 items-center justify-center rounded-full bg-indigo-100">
@@ -818,7 +818,7 @@ export function PlacementTestPage({ student, onComplete, onBack }: Props) {
   if (phase === "result") {
     const correctCount = answers.filter((a) => a.correct).length;
     return (
-      <main className="mx-auto min-h-screen w-full max-w-md px-4 py-6">
+      <main className="mx-auto w-full max-w-md sm:max-w-lg lg:max-w-2xl overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
         <SessionHeader title="Kết quả xếp lớp" icon={<Trophy className="h-4 w-4" />} iconBg="bg-amber-500" onClose={onBack} />
         <div className="mt-8 flex flex-col items-center gap-6 text-center">
           <div className="flex h-24 w-24 items-center justify-center rounded-full bg-gradient-to-br from-indigo-400 to-purple-500 shadow-lg">
@@ -856,7 +856,7 @@ export function PlacementTestPage({ student, onComplete, onBack }: Props) {
     const pct = Math.round((correctCount / answers.length) * 100);
     const dateStr = new Date().toLocaleDateString("vi-VN", { year: "numeric", month: "long", day: "numeric" });
     return (
-      <main className="mx-auto min-h-screen w-full max-w-md px-4 py-6">
+      <main className="mx-auto w-full max-w-md sm:max-w-lg lg:max-w-2xl overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
         <SessionHeader title="Chứng chỉ xếp lớp" icon={<Award className="h-4 w-4" />} iconBg="bg-amber-500" onClose={() => setPhase("result")} />
 
         {/* Print button */}
@@ -946,7 +946,7 @@ export function PlacementTestPage({ student, onComplete, onBack }: Props) {
   };
 
   return (
-    <main className="mx-auto min-h-screen w-full max-w-md px-4 py-6">
+    <main className="mx-auto w-full max-w-md sm:max-w-lg lg:max-w-2xl overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
       <SessionHeader
         title={`Câu ${questionNum}/${MAX_ANSWERS}`}
         icon={<GraduationCap className="h-4 w-4" />}
