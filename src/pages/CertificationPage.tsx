@@ -33,7 +33,10 @@ interface CertExam {
 /* ────────────────────────── Exam Data ────────────────────────── */
 
 const EXAMS: CertExam[] = [
-  // ──────── A1 ────────
+  // ──────── A1 (Cambridge Starters/Movers) ────────
+  // Grammar: ONLY present simple, "to be", "have/has", articles, basic prepositions
+  // NO past tense, NO modals except "can"
+  // 5 questions × 4 sections = 20 questions
   {
     level: "A1", title: "A1 Beginner", titleVi: "A1 Sơ cấp", timeMinutes: 30, passingScore: 60,
     sections: [
@@ -41,29 +44,29 @@ const EXAMS: CertExam[] = [
         type: "listening", title: "Nghe hiểu",
         questions: [
           { question: "Listen and choose the correct word.", listenText: "Apple", options: ["Apple", "Banana", "Orange", "Grape"], answer: 0 },
-          { question: "Listen and choose what you hear.", listenText: "Good morning", options: ["Good night", "Good morning", "Good evening", "Goodbye"], answer: 1 },
-          { question: "Listen. What is the color?", listenText: "The sky is blue.", options: ["Red", "Green", "Blue", "Yellow"], answer: 2 },
+          { question: "Listen. What is it?", listenText: "Good morning.", options: ["Good night", "Good morning", "Good evening", "Goodbye"], answer: 1 },
+          { question: "Listen. What color is it?", listenText: "The sky is blue.", options: ["Red", "Green", "Blue", "Yellow"], answer: 2 },
           { question: "Listen. What does he want?", listenText: "I want some water, please.", options: ["Milk", "Juice", "Tea", "Water"], answer: 3 },
-          { question: "Listen. Where is she going?", listenText: "I am going to school.", options: ["School", "Hospital", "Market", "Park"], answer: 0 },
+          { question: "Listen. Where is she?", listenText: "I am at school.", options: ["At school", "At home", "In the park", "At the shop"], answer: 0 },
         ],
       },
       {
         type: "reading", title: "Đọc hiểu",
         questions: [
           { question: "Read: 'My name is Tom. I am 8 years old.' How old is Tom?", options: ["6", "7", "8", "9"], answer: 2 },
-          { question: "Read: 'The cat is on the table.' Where is the cat?", options: ["Under the table", "On the table", "Next to the table", "Behind the table"], answer: 1 },
+          { question: "Read: 'The cat is on the table.' Where is the cat?", options: ["Under the table", "On the table", "Next to the table", "In the box"], answer: 1 },
           { question: "Read: 'She has two brothers and one sister.' How many brothers does she have?", options: ["One", "Two", "Three", "Four"], answer: 1 },
-          { question: "Read: 'It is raining today. I need an umbrella.' What does he need?", options: ["A hat", "A coat", "An umbrella", "Sunglasses"], answer: 2 },
+          { question: "Read: 'It is a sunny day. The children are in the park.' Where are the children?", options: ["At school", "At home", "In the park", "In the kitchen"], answer: 2 },
           { question: "Read: 'We eat breakfast in the morning.' When do we eat breakfast?", options: ["At night", "In the afternoon", "In the evening", "In the morning"], answer: 3 },
         ],
       },
       {
         type: "grammar", title: "Ngữ pháp",
         questions: [
-          { question: "She ___ a student.", options: ["am", "is", "are", "be"], answer: 1, explanation: "She + is" },
-          { question: "I ___ from Vietnam.", options: ["is", "are", "am", "be"], answer: 2, explanation: "I + am" },
+          { question: "She ___ a student.", options: ["am", "is", "are", "be"], answer: 1, explanation: "She + is (present simple of 'to be')" },
+          { question: "I ___ from Vietnam.", options: ["is", "are", "am", "be"], answer: 2, explanation: "I + am (present simple of 'to be')" },
           { question: "There ___ three books on the desk.", options: ["is", "am", "are", "be"], answer: 2, explanation: "Three books (plural) → are" },
-          { question: "___ you like ice cream?", options: ["Does", "Do", "Is", "Are"], answer: 1, explanation: "Do + you" },
+          { question: "___ you like ice cream?", options: ["Does", "Do", "Is", "Are"], answer: 1, explanation: "Do + you (present simple question)" },
           { question: "He ___ to school every day.", options: ["go", "goes", "going", "gone"], answer: 1, explanation: "He/She/It + verb-s/es (present simple)" },
         ],
       },
@@ -79,20 +82,24 @@ const EXAMS: CertExam[] = [
       },
     ],
   },
-  // ──────── A2 ────────
+  // ──────── A2 (Cambridge Flyers/KET) ────────
+  // Grammar: present simple + past simple + "going to" future + comparatives/superlatives + can/could + must/should
+  // NO present perfect, NO past continuous, NO conditionals
+  // 7-8 questions per section = 30 questions
   {
     level: "A2", title: "A2 Elementary", titleVi: "A2 Cơ bản", timeMinutes: 40, passingScore: 60,
     sections: [
       {
         type: "listening", title: "Nghe hiểu",
         questions: [
-          { question: "Listen to the dialogue. Where are they?", listenText: "Can I have a coffee, please? Sure, here you are. That will be three dollars.", options: ["At school", "At a café", "At home", "At a hospital"], answer: 1 },
+          { question: "Listen to the dialogue. Where are they?", listenText: "Can I have a coffee, please? Sure, here you are. That will be three dollars.", options: ["At school", "At a cafe", "At home", "At a hospital"], answer: 1 },
           { question: "Listen. What time is the meeting?", listenText: "The meeting is at half past two in the afternoon.", options: ["2:00", "2:15", "2:30", "2:45"], answer: 2 },
-          { question: "Listen. What is the weather like?", listenText: "It is very cloudy today and I think it will rain later.", options: ["Sunny", "Cloudy", "Snowy", "Windy"], answer: 1 },
+          { question: "Listen. What is the weather like?", listenText: "It is very cloudy today and I think it is going to rain later.", options: ["Sunny", "Cloudy", "Snowy", "Windy"], answer: 1 },
           { question: "Listen. What did she buy?", listenText: "I went to the supermarket and bought some milk, eggs, and bread.", options: ["Milk, eggs, bread", "Cheese, butter, jam", "Rice, fish, chicken", "Apples, oranges, bananas"], answer: 0 },
           { question: "Listen. How does he go to work?", listenText: "I usually take the bus to work, but sometimes I ride my bicycle.", options: ["By car", "By bus", "By train", "On foot"], answer: 1 },
           { question: "Listen. What is his hobby?", listenText: "In my free time, I like playing football with my friends.", options: ["Swimming", "Reading", "Playing football", "Cooking"], answer: 2 },
           { question: "Listen. When is her birthday?", listenText: "My birthday is on the fifteenth of March.", options: ["March 5th", "March 15th", "March 25th", "May 3rd"], answer: 1 },
+          { question: "Listen. What are they going to do tomorrow?", listenText: "We are going to visit our grandparents tomorrow. We always have a nice time with them.", options: ["Go to school", "Visit grandparents", "Go shopping", "Play football"], answer: 1 },
         ],
       },
       {
@@ -102,8 +109,8 @@ const EXAMS: CertExam[] = [
           { question: "From the text above, what time does Tom come home?", options: ["12:00", "2:00", "3:00", "4:00"], answer: 2 },
           { question: "Read: 'Lisa likes animals. She has a dog named Max and a cat named Bella. She feeds them every morning.' What is the cat's name?", options: ["Max", "Bella", "Lisa", "Tom"], answer: 1 },
           { question: "From the text above, when does Lisa feed her pets?", options: ["Every evening", "Every afternoon", "Every morning", "Every night"], answer: 2 },
-          { question: "Read: 'Dear Mom, I am having a great time at summer camp. The weather is nice and I made new friends. See you next week! Love, Sarah.' Where is Sarah?", options: ["At school", "At home", "At summer camp", "At the park"], answer: 2 },
-          { question: "From the text above, when will Sarah come home?", options: ["Tomorrow", "Next week", "Next month", "Today"], answer: 1 },
+          { question: "Read: 'Dear Mom, I am at summer camp. The weather is nice and I made new friends. See you next week! Love, Sarah.' Where is Sarah?", options: ["At school", "At home", "At summer camp", "At the park"], answer: 2 },
+          { question: "From the text above, when is Sarah going to come home?", options: ["Tomorrow", "Next week", "Next month", "Today"], answer: 1 },
           { question: "Read: 'The museum is open from 9 AM to 5 PM, Tuesday to Sunday. It is closed on Monday.' When is the museum closed?", options: ["Sunday", "Saturday", "Tuesday", "Monday"], answer: 3 },
           { question: "From the text above, what time does the museum close?", options: ["4 PM", "5 PM", "6 PM", "9 PM"], answer: 1 },
         ],
@@ -113,12 +120,12 @@ const EXAMS: CertExam[] = [
         questions: [
           { question: "She ___ to the cinema yesterday.", options: ["go", "goes", "went", "going"], answer: 2, explanation: "Yesterday → past simple: went" },
           { question: "This book is ___ than that one.", options: ["interesting", "more interesting", "most interesting", "interestinger"], answer: 1, explanation: "Comparative: more + long adjective" },
-          { question: "You ___ wear a seatbelt in the car.", options: ["can", "must", "might", "would"], answer: 1, explanation: "Must = obligation" },
-          { question: "I ___ already ___ lunch.", options: ["have / eaten", "has / eaten", "had / eat", "have / ate"], answer: 0, explanation: "Present perfect: have + past participle" },
+          { question: "You ___ wear a seatbelt in the car.", options: ["can", "must", "could", "going to"], answer: 1, explanation: "Must = obligation/rule" },
           { question: "She is the ___ girl in the class.", options: ["tall", "taller", "tallest", "more tall"], answer: 2, explanation: "Superlative: the + -est" },
-          { question: "We ___ TV when the phone rang.", options: ["watch", "watched", "were watching", "are watching"], answer: 2, explanation: "Past continuous: were + V-ing" },
-          { question: "If it rains, I ___ stay at home.", options: ["will", "would", "am", "was"], answer: 0, explanation: "First conditional: if + present, will + base verb" },
-          { question: "He ___ play the guitar very well.", options: ["can", "must", "should", "shall"], answer: 0, explanation: "Can = ability" },
+          { question: "He ___ play the guitar very well.", options: ["can", "must", "should", "goes"], answer: 0, explanation: "Can = ability" },
+          { question: "They ___ visit their grandparents next Sunday.", options: ["are going to", "went", "can", "did"], answer: 0, explanation: "Going to + base verb = future plan" },
+          { question: "You ___ eat more vegetables. They are good for you.", options: ["can", "could", "should", "went"], answer: 2, explanation: "Should = advice" },
+          { question: "When I was young, I ___ not swim.", options: ["can", "could", "should", "must"], answer: 1, explanation: "Could not = past ability (negative)" },
         ],
       },
       {
@@ -130,58 +137,60 @@ const EXAMS: CertExam[] = [
           { question: "'Borrow' means ___.", options: ["Mượn", "Cho mượn", "Mua", "Bán"], answer: 0 },
           { question: "Which word describes the weather? ___", options: ["Hungry", "Foggy", "Angry", "Funny"], answer: 1 },
           { question: "'Headache' means ___.", options: ["Đau bụng", "Đau đầu", "Đau chân", "Đau lưng"], answer: 1 },
-          { question: "You use a ___ to cut paper.", options: ["Ruler", "Pen", "Scissors", "Eraser"], answer: 2 },
         ],
       },
     ],
   },
-  // ──────── B1 ────────
+  // ──────── B1 (Cambridge PET) ────────
+  // Grammar: + present perfect + past continuous + first conditional + relative clauses (who/which/that)
+  // NO second/third conditional, NO passive voice, NO reported speech
+  // 10 questions per section = 40 questions
   {
     level: "B1", title: "B1 Intermediate", titleVi: "B1 Trung cấp", timeMinutes: 50, passingScore: 65,
     sections: [
       {
         type: "listening", title: "Nghe hiểu",
         questions: [
-          { question: "Listen. What is the speaker's opinion about the city?", listenText: "I think this city is wonderful. The public transport is excellent and the people are very friendly.", options: ["It's boring", "It's wonderful", "It's expensive", "It's dangerous"], answer: 1 },
-          { question: "Listen. Why is she late?", listenText: "Sorry I'm late. There was a terrible traffic jam on the highway and my bus was delayed for thirty minutes.", options: ["She overslept", "Traffic jam", "Her car broke down", "She forgot"], answer: 1 },
+          { question: "Listen. What is the speaker's opinion about the city?", listenText: "I think this city is wonderful. The public transport is excellent and the people are very friendly.", options: ["It is boring", "It is wonderful", "It is expensive", "It is dangerous"], answer: 1 },
+          { question: "Listen. Why is she late?", listenText: "Sorry I am late. There was a terrible traffic jam on the highway and my bus was delayed for thirty minutes.", options: ["She overslept", "Traffic jam", "Her car broke down", "She forgot"], answer: 1 },
           { question: "Listen. What does the man recommend?", listenText: "If you visit Paris, you should definitely try the local bakeries. The croissants are absolutely amazing.", options: ["Visit museums", "Try local bakeries", "Take a boat tour", "Go shopping"], answer: 1 },
-          { question: "Listen. How long has she been studying English?", listenText: "I have been studying English for about five years now. I started when I was in secondary school.", options: ["3 years", "4 years", "5 years", "6 years"], answer: 2 },
-          { question: "Listen. What will the weather be like tomorrow?", listenText: "Tomorrow we expect temperatures to reach thirty-two degrees with clear skies throughout the day.", options: ["Rainy and cold", "Hot and clear", "Windy and cloudy", "Snowy"], answer: 1 },
-          { question: "Listen. What is the main problem?", listenText: "The main issue with our project is that we don't have enough time to complete all the research before the deadline.", options: ["Not enough money", "Not enough time", "Not enough people", "Not enough data"], answer: 1 },
-          { question: "Listen. What does the woman want to do after university?", listenText: "After I graduate, I'd like to travel around Southeast Asia for a few months before I start looking for a job.", options: ["Start working immediately", "Travel around Southeast Asia", "Study more", "Stay at home"], answer: 1 },
-          { question: "Listen. What is the relationship between the two speakers?", listenText: "Doctor, I have had this cough for about a week now and it's getting worse. Can you prescribe something for me?", options: ["Teacher and student", "Doctor and patient", "Boss and employee", "Friends"], answer: 1 },
-          { question: "Listen. What happened to the man's phone?", listenText: "I accidentally dropped my phone in the swimming pool yesterday. I tried putting it in rice but it still won't turn on.", options: ["It was stolen", "He lost it", "It fell in water", "The battery died"], answer: 2 },
-          { question: "Listen. Where is the concert taking place?", listenText: "The concert will be held at the National Stadium this Saturday evening at seven thirty. Tickets are still available online.", options: ["City Hall", "National Stadium", "Central Park", "Opera House"], answer: 1 },
+          { question: "Listen. How long has she studied English?", listenText: "I have studied English for about five years now. I started when I was in secondary school.", options: ["3 years", "4 years", "5 years", "6 years"], answer: 2 },
+          { question: "Listen. What was he doing when the phone rang?", listenText: "I was watching a film when the phone rang. It was my mother. She wanted to tell me about her holiday.", options: ["He was cooking", "He was watching a film", "He was sleeping", "He was reading"], answer: 1 },
+          { question: "Listen. What is the main problem?", listenText: "The main issue with our project is that we do not have enough time to complete all the research before the deadline.", options: ["Not enough money", "Not enough time", "Not enough people", "Not enough data"], answer: 1 },
+          { question: "Listen. What will happen if it rains?", listenText: "If it rains tomorrow, the outdoor concert will move to the indoor hall. The organisers have already made a backup plan.", options: ["The concert will be cancelled", "It will move indoors", "It will be delayed", "Nothing will change"], answer: 1 },
+          { question: "Listen. What has the speaker done recently?", listenText: "I have just finished reading an amazing book about the history of space exploration. I really recommend it to anyone who likes science.", options: ["Finished a book", "Watched a documentary", "Visited a museum", "Started a course"], answer: 0 },
+          { question: "Listen. What happened while they were walking?", listenText: "We were walking through the park when it suddenly started to rain. We ran to the nearest cafe and waited there for an hour.", options: ["They got lost", "It started to rain", "They met a friend", "They found a dog"], answer: 1 },
+          { question: "Listen. Where is the concert taking place?", listenText: "The concert will take place at the National Stadium this Saturday evening at seven thirty. Tickets are still available online.", options: ["City Hall", "National Stadium", "Central Park", "Opera House"], answer: 1 },
         ],
       },
       {
         type: "reading", title: "Đọc hiểu",
         questions: [
-          { question: "Read: 'Working from home has become increasingly popular since 2020. Many employees report higher productivity and better work-life balance. However, some struggle with loneliness and difficulty separating work from personal time.' What is one advantage of working from home?", options: ["More meetings", "Higher productivity", "Less technology", "More travel"], answer: 1 },
+          { question: "Read: 'Working from home has become increasingly popular since 2020. Many employees report higher productivity and better work-life balance. However, some people struggle with loneliness.' What is one advantage of working from home?", options: ["More meetings", "Higher productivity", "Less technology", "More travel"], answer: 1 },
           { question: "From the text above, what is one disadvantage?", options: ["Too much free time", "Too many colleagues", "Loneliness", "Too much exercise"], answer: 2 },
-          { question: "Read: 'Dear Mr. Johnson, I am writing to apply for the position of Marketing Assistant advertised on your website. I have two years of experience in digital marketing and I hold a degree in Business Administration. I am available for an interview at your convenience.' What position is the person applying for?", options: ["Sales Manager", "Marketing Assistant", "Business Director", "Web Developer"], answer: 1 },
+          { question: "Read: 'Dear Mr. Johnson, I am writing to apply for the position of Marketing Assistant which you advertised on your website. I have two years of experience in digital marketing.' What position is the person applying for?", options: ["Sales Manager", "Marketing Assistant", "Business Director", "Web Developer"], answer: 1 },
           { question: "From the letter above, how much experience does the applicant have?", options: ["One year", "Two years", "Three years", "Five years"], answer: 1 },
-          { question: "Read: 'The Great Wall of China is one of the most impressive structures ever built. Construction began over 2,000 years ago. It stretches approximately 21,000 kilometers.' How long is the Great Wall approximately?", options: ["2,000 km", "5,000 km", "10,000 km", "21,000 km"], answer: 3 },
-          { question: "Read: 'Recycling is important for the environment. When we recycle paper, we save trees. When we recycle plastic, we reduce pollution in the oceans. Everyone can make a difference by separating their waste.' According to the text, recycling paper helps ___.", options: ["Reduce noise", "Save trees", "Save water", "Clean the air"], answer: 1 },
+          { question: "Read: 'The Great Wall of China is one of the most impressive structures that people have ever built. Construction started over 2,000 years ago. It stretches approximately 21,000 kilometres.' How long is the Great Wall approximately?", options: ["2,000 km", "5,000 km", "10,000 km", "21,000 km"], answer: 3 },
+          { question: "Read: 'Recycling is important for the environment. If we recycle paper, we will save trees. If we recycle plastic, we will reduce pollution in the oceans.' According to the text, recycling paper helps ___.", options: ["Reduce noise", "Save trees", "Save water", "Clean the air"], answer: 1 },
           { question: "From the text above, recycling plastic helps ___.", options: ["Save energy", "Grow food", "Reduce ocean pollution", "Build houses"], answer: 2 },
           { question: "Read: 'A new study shows that people who sleep less than six hours a night are more likely to gain weight. Researchers recommend seven to eight hours of sleep for adults.' How many hours of sleep do researchers recommend?", options: ["5-6 hours", "6-7 hours", "7-8 hours", "8-9 hours"], answer: 2 },
-          { question: "Read: 'The local library will be closed for renovations from July 1st to August 15th. During this time, members can use the online library service to borrow e-books.' When does the library reopen?", options: ["July 15th", "August 1st", "August 15th", "September 1st"], answer: 2 },
+          { question: "Read: 'The local library will close for renovations from July 1st to August 15th. During this time, members can use the online library to borrow e-books.' When does the library reopen?", options: ["July 15th", "August 1st", "August 15th", "September 1st"], answer: 2 },
           { question: "From the text above, what can members do during the closure?", options: ["Visit another library", "Buy books at a discount", "Borrow e-books online", "Nothing"], answer: 2 },
         ],
       },
       {
         type: "grammar", title: "Ngữ pháp",
         questions: [
-          { question: "I have lived here ___ 2015.", options: ["for", "since", "during", "while"], answer: 1, explanation: "Since + specific point in time" },
-          { question: "If I ___ rich, I would travel the world.", options: ["am", "was", "were", "be"], answer: 2, explanation: "Second conditional: If + were (subjunctive)" },
+          { question: "I have lived here ___ 2015.", options: ["for", "since", "during", "while"], answer: 1, explanation: "Since + specific point in time (present perfect)" },
+          { question: "She ___ already ___ her homework.", options: ["has / finished", "is / finishing", "was / finished", "did / finish"], answer: 0, explanation: "Present perfect: has + already + past participle" },
           { question: "The book ___ I read last week was excellent.", options: ["who", "which", "where", "when"], answer: 1, explanation: "Which = relative pronoun for things" },
-          { question: "She ___ working here for three years.", options: ["is", "has been", "was", "had"], answer: 1, explanation: "Present perfect continuous: has been + V-ing" },
-          { question: "The cake was ___ by my grandmother.", options: ["make", "making", "made", "makes"], answer: 2, explanation: "Passive voice: was + past participle" },
-          { question: "I wish I ___ speak French fluently.", options: ["can", "could", "will", "would"], answer: 1, explanation: "Wish + could (unreal present)" },
-          { question: "He asked me where I ___.", options: ["live", "lived", "am living", "will live"], answer: 1, explanation: "Reported speech: present → past" },
-          { question: "You ___ to study harder if you want to pass.", options: ["must", "need", "should", "would"], answer: 1, explanation: "Need to = necessity" },
-          { question: "Despite ___ tired, she continued working.", options: ["be", "being", "was", "been"], answer: 1, explanation: "Despite + V-ing" },
-          { question: "Neither Tom ___ Jerry was at the party.", options: ["or", "and", "nor", "but"], answer: 2, explanation: "Neither...nor" },
+          { question: "We ___ TV when the phone rang.", options: ["watch", "watched", "were watching", "are watching"], answer: 2, explanation: "Past continuous: were + V-ing (interrupted action)" },
+          { question: "If it rains tomorrow, I ___ stay at home.", options: ["will", "would", "am", "was"], answer: 0, explanation: "First conditional: if + present simple, will + base verb" },
+          { question: "The woman ___ lives next door is a doctor.", options: ["which", "who", "where", "when"], answer: 1, explanation: "Who = relative pronoun for people" },
+          { question: "I ___ never ___ sushi before.", options: ["have / tried", "has / tried", "was / trying", "did / try"], answer: 0, explanation: "Present perfect: have + never + past participle (experience)" },
+          { question: "She was cooking dinner while he ___ the table.", options: ["sets", "set", "was setting", "is setting"], answer: 2, explanation: "Past continuous: was setting (two actions happening at the same time)" },
+          { question: "If you study hard, you ___ pass the exam.", options: ["will", "would", "can", "could"], answer: 0, explanation: "First conditional: if + present, will + base verb" },
+          { question: "The restaurant ___ we ate last night is very popular.", options: ["who", "which", "where", "what"], answer: 2, explanation: "Where = relative pronoun for places" },
         ],
       },
       {
@@ -201,7 +210,10 @@ const EXAMS: CertExam[] = [
       },
     ],
   },
-  // ──────── B2 ────────
+  // ──────── B2 (Cambridge FCE) ────────
+  // Grammar: + second conditional + passive voice + reported speech + present perfect continuous
+  // NO third conditional, NO inversion, NO subjunctive
+  // 12-13 questions per section ≈ 50 questions
   {
     level: "B2", title: "B2 Upper-Intermediate", titleVi: "B2 Trung cấp cao", timeMinutes: 60, passingScore: 65,
     sections: [
@@ -209,17 +221,18 @@ const EXAMS: CertExam[] = [
         type: "listening", title: "Nghe hiểu",
         questions: [
           { question: "Listen. What is the speaker's main argument?", listenText: "While social media has connected people globally, research increasingly shows that excessive use leads to higher rates of anxiety and depression, particularly among teenagers.", options: ["Social media is beneficial", "Excessive social media harms mental health", "Teenagers should use more social media", "Social media improves education"], answer: 1 },
-          { question: "Listen. What solution does the speaker propose?",  listenText: "To address the housing crisis, the government should invest in affordable housing projects and provide subsidies for first-time home buyers rather than simply raising interest rates.", options: ["Raise interest rates", "Build luxury apartments", "Invest in affordable housing", "Reduce population"], answer: 2 },
+          { question: "Listen. What solution does the speaker propose?", listenText: "To address the housing crisis, the government should invest in affordable housing projects and provide subsidies for first-time home buyers rather than simply raising interest rates.", options: ["Raise interest rates", "Build luxury apartments", "Invest in affordable housing", "Reduce population"], answer: 2 },
           { question: "Listen. What surprised the researcher?", listenText: "What surprised us most was that participants who exercised just twenty minutes a day showed the same cognitive improvements as those who exercised for an hour.", options: ["Exercise had no effect", "20 minutes was as effective as an hour", "Nobody wanted to exercise", "The study was cancelled"], answer: 1 },
-          { question: "Listen. What is the speaker's profession?", listenText: "In my twenty years of practicing law, I've seen countless cases where people could have avoided litigation simply by having a proper contract in place from the beginning.", options: ["Doctor", "Teacher", "Lawyer", "Engineer"], answer: 2 },
+          { question: "Listen. What is the speaker's profession?", listenText: "In my twenty years of practicing law, I have seen countless cases where people could have avoided going to court simply by having a proper contract in place from the beginning.", options: ["Doctor", "Teacher", "Lawyer", "Engineer"], answer: 2 },
           { question: "Listen. What trend does the speaker describe?", listenText: "More and more companies are adopting a four-day work week. Early results from pilot programs show that productivity actually increases while employee burnout decreases significantly.", options: ["Longer work hours", "Four-day work week", "Remote work only", "More overtime"], answer: 1 },
           { question: "Listen. Why did the project fail?", listenText: "The project ultimately failed not because of a lack of funding, but because there was poor communication between the design team and the engineering department.", options: ["Lack of funding", "Poor communication", "Bad weather", "Technical problems"], answer: 1 },
           { question: "Listen. What does the speaker recommend for language learning?", listenText: "The most effective approach to language learning combines regular immersion through media consumption with structured grammar study and consistent conversational practice with native speakers.", options: ["Only grammar study", "Only watching movies", "A combined approach", "Only reading books"], answer: 2 },
           { question: "Listen. What is the environmental concern?", listenText: "Scientists warn that if current deforestation rates continue in the Amazon rainforest, we could lose up to forty percent of the remaining forest within the next thirty years.", options: ["Air pollution in cities", "Amazon deforestation", "Ocean acidification", "Ozone depletion"], answer: 1 },
           { question: "Listen. What was the outcome of the experiment?", listenText: "Contrary to our initial hypothesis, the group that received no special treatment actually performed better on the final assessment than the group that received intensive coaching.", options: ["Both groups performed equally", "The coached group did better", "The uncoached group did better", "Neither group improved"], answer: 2 },
           { question: "Listen. What does the speaker say about artificial intelligence?", listenText: "While artificial intelligence will undoubtedly transform many industries, I believe it will create more jobs than it eliminates, particularly in fields requiring creativity and emotional intelligence.", options: ["AI will destroy all jobs", "AI will create more jobs than it eliminates", "AI is not important", "AI should be banned"], answer: 1 },
-          { question: "Listen. What is the historical significance?", listenText: "The discovery of penicillin by Alexander Fleming in nineteen twenty-eight is considered one of the most important breakthroughs in medical history, saving millions of lives from bacterial infections.", options: ["Discovery of DNA", "Discovery of penicillin", "Invention of the X-ray", "Development of vaccines"], answer: 1 },
+          { question: "Listen. What has the speaker been researching?", listenText: "I have been studying the effects of sleep deprivation on memory for the past decade. Our findings suggest that even one night of poor sleep can significantly impair short-term recall.", options: ["Effects of diet on memory", "Effects of sleep deprivation on memory", "Effects of exercise on mood", "Effects of stress on appetite"], answer: 1 },
           { question: "Listen. What challenge does the speaker mention?", listenText: "One of the biggest challenges facing renewable energy adoption is the intermittent nature of solar and wind power, which requires significant investment in energy storage solutions.", options: ["High cost of solar panels", "Lack of sunlight", "Energy storage for intermittent sources", "Public opposition"], answer: 2 },
+          { question: "Listen. What did the manager say about the deadline?", listenText: "The manager told us that the deadline had been extended by two weeks because the client had requested additional features that were not in the original brief.", options: ["The deadline was moved earlier", "The deadline was extended by two weeks", "The project was cancelled", "The client was satisfied"], answer: 1 },
         ],
       },
       {
@@ -227,34 +240,34 @@ const EXAMS: CertExam[] = [
         questions: [
           { question: "Read: 'The gig economy has transformed the nature of work. Freelancers now make up approximately 35% of the global workforce. While this offers flexibility, it also raises concerns about job security, benefits, and workers' rights.' What percentage of the global workforce are freelancers?", options: ["15%", "25%", "35%", "45%"], answer: 2 },
           { question: "From the passage above, what concern is raised about the gig economy?", options: ["Too much vacation time", "Job security and benefits", "Too many regulations", "High salaries"], answer: 1 },
-          { question: "Read: 'Cognitive behavioral therapy (CBT) has proven to be one of the most effective treatments for depression and anxiety. Unlike medication, which treats symptoms, CBT addresses the underlying thought patterns that contribute to mental health issues.' How does CBT differ from medication?", options: ["It's cheaper", "It addresses thought patterns, not just symptoms", "It works faster", "It has more side effects"], answer: 1 },
-          { question: "Read: 'The concept of emotional intelligence, popularized by Daniel Goleman in the 1990s, suggests that success depends not only on IQ but also on one's ability to understand and manage emotions.' Who popularized emotional intelligence?", options: ["Albert Einstein", "Daniel Goleman", "Stephen Hawking", "Sigmund Freud"], answer: 1 },
+          { question: "Read: 'Cognitive behavioural therapy (CBT) has been proven to be one of the most effective treatments for depression and anxiety. Unlike medication, which treats symptoms, CBT addresses the underlying thought patterns that contribute to mental health issues.' How does CBT differ from medication?", options: ["It is cheaper", "It addresses thought patterns, not just symptoms", "It works faster", "It has more side effects"], answer: 1 },
+          { question: "Read: 'The concept of emotional intelligence, popularised by Daniel Goleman in the 1990s, suggests that success depends not only on IQ but also on the ability to understand and manage emotions.' Who popularised emotional intelligence?", options: ["Albert Einstein", "Daniel Goleman", "Stephen Hawking", "Sigmund Freud"], answer: 1 },
           { question: "From the passage above, emotional intelligence involves ___.", options: ["Having a high IQ", "Understanding and managing emotions", "Being physically strong", "Having many friends"], answer: 1 },
           { question: "Read: 'Urban vertical farming is emerging as a sustainable solution to food production. By growing crops in stacked layers within controlled environments, vertical farms use 95% less water than traditional agriculture and can produce food year-round.' How much less water does vertical farming use?", options: ["50%", "75%", "85%", "95%"], answer: 3 },
-          { question: "Read: 'The placebo effect demonstrates the powerful connection between mind and body. In clinical trials, patients who receive sugar pills but believe they are receiving real medication often show measurable improvement in their symptoms.' What is the placebo effect?", options: ["A type of medication", "Improvement from believing you're treated", "A side effect of drugs", "A medical procedure"], answer: 1 },
-          { question: "Read: 'Microplastics — tiny plastic particles less than 5mm in size — have been found in the deepest ocean trenches, the highest mountain peaks, and even in human blood. Their long-term health effects remain largely unknown.' Where have microplastics NOT been mentioned as found?", options: ["Ocean trenches", "Mountain peaks", "Human blood", "Outer space"], answer: 3 },
-          { question: "Read: 'The Finnish education system, consistently ranked among the best in the world, emphasizes play-based learning, minimal homework, and no standardized testing until age 16. Teachers are required to hold a master's degree.' What qualification must Finnish teachers have?", options: ["Bachelor's degree", "Master's degree", "PhD", "Teaching certificate only"], answer: 1 },
-          { question: "From the passage above, when do Finnish students first take standardized tests?", options: ["Age 10", "Age 12", "Age 14", "Age 16"], answer: 3 },
-          { question: "Read: 'Blockchain technology, originally developed for cryptocurrency, is now being applied in supply chain management, healthcare records, and voting systems. Its decentralized nature makes it resistant to tampering and fraud.' What makes blockchain resistant to fraud?", options: ["Its speed", "Its decentralized nature", "Its low cost", "Its simplicity"], answer: 1 },
+          { question: "Read: 'The placebo effect demonstrates the powerful connection between mind and body. In clinical trials, patients who are given sugar pills but believe they are receiving real medication often show measurable improvement in their symptoms.' What is the placebo effect?", options: ["A type of medication", "Improvement from believing you are being treated", "A side effect of drugs", "A medical procedure"], answer: 1 },
+          { question: "Read: 'Microplastics have been found in the deepest ocean trenches, the highest mountain peaks, and even in human blood. Their long-term health effects remain largely unknown.' Where have microplastics NOT been mentioned as found?", options: ["Ocean trenches", "Mountain peaks", "Human blood", "Outer space"], answer: 3 },
+          { question: "Read: 'The Finnish education system, consistently ranked among the best in the world, emphasises play-based learning, minimal homework, and no standardised testing until age 16. Teachers are required to hold a master's degree.' What qualification must Finnish teachers have?", options: ["Bachelor's degree", "Master's degree", "PhD", "Teaching certificate only"], answer: 1 },
+          { question: "From the passage above, when do Finnish students first take standardised tests?", options: ["Age 10", "Age 12", "Age 14", "Age 16"], answer: 3 },
+          { question: "Read: 'Blockchain technology, originally developed for cryptocurrency, is now being applied in supply chain management, healthcare records, and voting systems. Its decentralised nature makes it resistant to tampering and fraud.' What makes blockchain resistant to fraud?", options: ["Its speed", "Its decentralised nature", "Its low cost", "Its simplicity"], answer: 1 },
           { question: "Read: 'The Mediterranean diet, rich in olive oil, fish, vegetables, and whole grains, has been linked to a 30% reduction in cardiovascular disease risk. Researchers attribute this to the anti-inflammatory properties of its key components.' By how much does the Mediterranean diet reduce heart disease risk?", options: ["10%", "20%", "30%", "40%"], answer: 2 },
         ],
       },
       {
         type: "grammar", title: "Ngữ pháp",
         questions: [
-          { question: "Had I known about the traffic, I ___ an earlier train.", options: ["will take", "would take", "would have taken", "took"], answer: 2, explanation: "Third conditional (inverted): Had + subject + known → would have + past participle" },
-          { question: "The report ___ by the time the meeting starts.", options: ["will finish", "will be finished", "will have been finished", "is finishing"], answer: 2, explanation: "Future perfect passive: will have been + past participle" },
-          { question: "She suggested that he ___ a doctor immediately.", options: ["sees", "saw", "see", "seeing"], answer: 2, explanation: "Subjunctive after suggest: base form" },
-          { question: "Not only ___ the exam, but she also got the highest score.", options: ["she passed", "did she pass", "she did pass", "passed she"], answer: 1, explanation: "Inversion after 'Not only': did + subject + base verb" },
-          { question: "___ the weather been better, we would have gone hiking.", options: ["If", "Had", "Should", "Were"], answer: 1, explanation: "Inverted conditional: Had + past participle" },
-          { question: "The artist, ___ paintings sell for millions, lives a modest life.", options: ["who", "whom", "whose", "which"], answer: 2, explanation: "Whose = possessive relative pronoun" },
-          { question: "By next year, they ___ married for twenty-five years.", options: ["will be", "will have been", "are", "have been"], answer: 1, explanation: "Future perfect: will have been" },
-          { question: "He acted as though he ___ everything about the subject.", options: ["knows", "knew", "has known", "knowing"], answer: 1, explanation: "As though + past simple (unreal)" },
-          { question: "It's high time we ___ a decision.", options: ["make", "made", "making", "have made"], answer: 1, explanation: "It's high time + past simple" },
-          { question: "The more you practice, the ___ you will become.", options: ["good", "better", "best", "well"], answer: 1, explanation: "The more..., the + comparative" },
-          { question: "She denied ___ the confidential documents.", options: ["to leak", "leaking", "leak", "leaked"], answer: 1, explanation: "Deny + V-ing" },
-          { question: "Under no circumstances ___ leave the building during the drill.", options: ["you should", "should you", "you must", "must you"], answer: 1, explanation: "Inversion after negative adverbials" },
-          { question: "I'd rather you ___ smoking.", options: ["stop", "stopped", "stopping", "to stop"], answer: 1, explanation: "I'd rather + subject + past simple" },
+          { question: "If I ___ more money, I would travel around the world.", options: ["have", "had", "has", "having"], answer: 1, explanation: "Second conditional: If + past simple, would + base verb" },
+          { question: "The new hospital ___ built last year.", options: ["is", "was", "were", "has"], answer: 1, explanation: "Passive voice (past simple): was + past participle" },
+          { question: "He said that he ___ tired and wanted to go home.", options: ["is", "was", "has been", "will be"], answer: 1, explanation: "Reported speech: present → past (he is → he was)" },
+          { question: "She ___ working on this project for three months now.", options: ["is", "has been", "was", "had"], answer: 1, explanation: "Present perfect continuous: has been + V-ing (duration up to now)" },
+          { question: "If I ___ you, I would accept the job offer.", options: ["am", "was", "were", "be"], answer: 2, explanation: "Second conditional: If I were you (subjunctive 'were' for advice)" },
+          { question: "The report ___ by the manager yesterday.", options: ["is reviewed", "was reviewed", "reviewed", "reviewing"], answer: 1, explanation: "Passive voice (past): was + past participle" },
+          { question: "She told me that she ___ to Paris the previous summer.", options: ["goes", "went", "had gone", "is going"], answer: 2, explanation: "Reported speech: past simple → past perfect (went → had gone)" },
+          { question: "How long ___ you ___ for this company?", options: ["have / been working", "are / working", "did / work", "do / work"], answer: 0, explanation: "Present perfect continuous: have been + V-ing (duration question)" },
+          { question: "This letter ___ in French. I cannot read it.", options: ["is written", "was written", "writes", "wrote"], answer: 0, explanation: "Passive voice (present): is + past participle (state)" },
+          { question: "The teacher asked us where we ___ the previous weekend.", options: ["go", "went", "had gone", "are going"], answer: 2, explanation: "Reported speech: past → past perfect" },
+          { question: "If she ___ harder, she would get better grades.", options: ["study", "studies", "studied", "has studied"], answer: 2, explanation: "Second conditional: If + past simple, would + base verb" },
+          { question: "A new shopping centre ___ in the city centre right now.", options: ["is being built", "is building", "was built", "builds"], answer: 0, explanation: "Passive voice (present continuous): is being + past participle" },
+          { question: "I ___ on this essay for two hours and I still have not finished.", options: ["worked", "work", "have been working", "am working"], answer: 2, explanation: "Present perfect continuous: have been + V-ing (unfinished action)" },
         ],
       },
       {
@@ -272,47 +285,49 @@ const EXAMS: CertExam[] = [
           { question: "'The CEO was pragmatic in her approach.' 'Pragmatic' means ___.", options: ["Idealistic", "Practical", "Emotional", "Theoretical"], answer: 1 },
           { question: "'The two events are correlated.' 'Correlated' means ___.", options: ["Unrelated", "Connected", "Identical", "Opposite"], answer: 1 },
           { question: "'His remarks were ambiguous.' 'Ambiguous' means ___.", options: ["Clear", "Funny", "Open to interpretation", "Offensive"], answer: 2 },
-          { question: "'The project requires meticulous attention to detail.' 'Meticulous' means ___.", options: ["Careless", "Very careful and precise", "Quick", "Lazy"], answer: 1 },
         ],
       },
     ],
   },
-  // ──────── C1 ────────
+  // ──────── C1 (Cambridge CAE) ────────
+  // Grammar: + third conditional + mixed conditionals + inversion + subjunctive + advanced passive
+  // 12-13 questions per section ≈ 50 questions
   {
     level: "C1", title: "C1 Advanced", titleVi: "C1 Nâng cao", timeMinutes: 60, passingScore: 70,
     sections: [
       {
         type: "listening", title: "Nghe hiểu",
         questions: [
-          { question: "Listen. What is the speaker's stance on genetic engineering?", listenText: "While genetic engineering holds tremendous promise for eradicating hereditary diseases, the ethical implications of modifying the human genome are profound and warrant extensive public discourse before any widespread implementation.", options: ["Fully supportive without reservations", "Cautiously optimistic, emphasizing ethics", "Completely against it", "Indifferent"], answer: 1 },
+          { question: "Listen. What is the speaker's stance on genetic engineering?", listenText: "While genetic engineering holds tremendous promise for eradicating hereditary diseases, the ethical implications of modifying the human genome are profound and warrant extensive public discourse before any widespread implementation.", options: ["Fully supportive without reservations", "Cautiously optimistic, emphasising ethics", "Completely against it", "Indifferent"], answer: 1 },
           { question: "Listen. What paradox does the speaker identify?", listenText: "The paradox of the information age is that despite having unprecedented access to knowledge, misinformation spreads faster than ever, and critical thinking skills appear to be declining rather than improving.", options: ["More information but less understanding", "More technology but less connectivity", "More money but less happiness", "More freedom but less security"], answer: 0 },
-          { question: "Listen. What does the speaker argue about economic growth?", listenText: "The conventional model of perpetual economic growth is fundamentally incompatible with finite planetary resources. We need to transition toward a circular economy that decouples prosperity from resource consumption.", options: ["Growth should be maximized", "Growth is sustainable indefinitely", "Growth must be decoupled from resources", "Growth is irrelevant"], answer: 2 },
-          { question: "Listen. What nuance does the speaker make about bilingualism?", listenText: "Recent neurological studies reveal that bilingualism doesn't merely add a second language to the brain; it fundamentally restructures cognitive architecture, enhancing executive function and potentially delaying the onset of dementia by several years.", options: ["Bilingualism only helps with languages", "Bilingualism restructures cognitive architecture", "Bilingualism has no proven benefits", "Bilingualism is harmful"], answer: 1 },
-          { question: "Listen. What critique does the speaker offer?", listenText: "The prevailing narrative that technology is inherently democratizing ignores the digital divide and the concentration of technological power in the hands of a few multinational corporations that effectively function as unregulated monopolies.", options: ["Technology needs more funding", "Technology is perfectly democratic", "Technology's democratizing narrative is flawed", "Technology should be abolished"], answer: 2 },
+          { question: "Listen. What does the speaker argue about economic growth?", listenText: "The conventional model of perpetual economic growth is fundamentally incompatible with finite planetary resources. We need to transition toward a circular economy that decouples prosperity from resource consumption.", options: ["Growth should be maximised", "Growth is sustainable indefinitely", "Growth must be decoupled from resources", "Growth is irrelevant"], answer: 2 },
+          { question: "Listen. What nuance does the speaker make about bilingualism?", listenText: "Recent neurological studies reveal that bilingualism does not merely add a second language to the brain; it fundamentally restructures cognitive architecture, enhancing executive function and potentially delaying the onset of dementia by several years.", options: ["Bilingualism only helps with languages", "Bilingualism restructures cognitive architecture", "Bilingualism has no proven benefits", "Bilingualism is harmful"], answer: 1 },
+          { question: "Listen. What critique does the speaker offer?", listenText: "The prevailing narrative that technology is inherently democratising ignores the digital divide and the concentration of technological power in the hands of a few multinational corporations that effectively function as unregulated monopolies.", options: ["Technology needs more funding", "Technology is perfectly democratic", "Technology's democratising narrative is flawed", "Technology should be abolished"], answer: 2 },
           { question: "Listen. What distinction does the speaker draw?", listenText: "There is a crucial distinction between correlation and causation that is frequently overlooked in media reporting of scientific studies. The fact that two variables co-occur does not establish that one causes the other.", options: ["Between theory and practice", "Between correlation and causation", "Between qualitative and quantitative", "Between old and new research"], answer: 1 },
-          { question: "Listen. What does the speaker say about artificial intelligence in education?", listenText: "Artificial intelligence in education should augment rather than replace human teachers. The irreplaceable qualities of mentorship — empathy, inspiration, and the ability to recognize individual potential — cannot be algorithmically replicated.", options: ["AI should replace teachers entirely", "AI should augment, not replace teachers", "AI has no role in education", "AI is better than human teachers"], answer: 1 },
-          { question: "Listen. What philosophical point does the speaker make?", listenText: "The pursuit of happiness as a goal in itself is paradoxically self-defeating. Research consistently shows that meaning, purpose, and contribution to others' wellbeing are far more reliable predictors of life satisfaction.", options: ["Happiness should be the primary goal", "Pursuing happiness directly is self-defeating", "Money leads to happiness", "Happiness is impossible"], answer: 1 },
-          { question: "Listen. What does the speaker conclude about urbanization?", listenText: "Urbanization, when managed thoughtfully, can actually reduce humanity's environmental footprint per capita through shared infrastructure, efficient public transport, and concentrated resource distribution networks.", options: ["Urbanization always harms the environment", "Urbanization can reduce environmental footprint", "People should move to rural areas", "Urbanization has no environmental impact"], answer: 1 },
-          { question: "Listen. What methodological concern does the speaker raise?", listenText: "The reproducibility crisis in social sciences — where a significant proportion of published studies fail to produce consistent results when replicated — fundamentally undermines public confidence in scientific research.", options: ["Studies cost too much", "Results often can't be reproduced", "Scientists don't collaborate enough", "Funding is distributed unfairly"], answer: 1 },
-          { question: "Listen. What does the speaker suggest about cultural identity?", listenText: "Globalization has created a complex tension between cultural homogenization and the preservation of indigenous traditions. The challenge lies in fostering intercultural exchange without eroding the distinctive heritage that defines communities.", options: ["All cultures should merge", "Cultural preservation is unnecessary", "Balance exchange and preservation", "Globalization should be stopped"], answer: 2 },
+          { question: "Listen. What does the speaker say about AI in education?", listenText: "Artificial intelligence in education should augment rather than replace human teachers. The irreplaceable qualities of mentorship, such as empathy, inspiration, and the ability to recognise individual potential, cannot be algorithmically replicated.", options: ["AI should replace teachers entirely", "AI should augment, not replace teachers", "AI has no role in education", "AI is better than human teachers"], answer: 1 },
+          { question: "Listen. What philosophical point does the speaker make?", listenText: "The pursuit of happiness as a goal in itself is paradoxically self-defeating. Research consistently shows that meaning, purpose, and contribution to the wellbeing of others are far more reliable predictors of life satisfaction.", options: ["Happiness should be the primary goal", "Pursuing happiness directly is self-defeating", "Money leads to happiness", "Happiness is impossible"], answer: 1 },
+          { question: "Listen. What does the speaker conclude about urbanisation?", listenText: "Urbanisation, when managed thoughtfully, can actually reduce the environmental footprint per capita through shared infrastructure, efficient public transport, and concentrated resource distribution networks.", options: ["Urbanisation always harms the environment", "Urbanisation can reduce environmental footprint", "People should move to rural areas", "Urbanisation has no environmental impact"], answer: 1 },
+          { question: "Listen. What methodological concern does the speaker raise?", listenText: "The reproducibility crisis in social sciences, where a significant proportion of published studies fail to produce consistent results when replicated, fundamentally undermines public confidence in scientific research.", options: ["Studies cost too much", "Results often cannot be reproduced", "Scientists do not collaborate enough", "Funding is distributed unfairly"], answer: 1 },
+          { question: "Listen. What does the speaker suggest about cultural identity?", listenText: "Globalisation has created a complex tension between cultural homogenisation and the preservation of indigenous traditions. The challenge lies in fostering intercultural exchange without eroding the distinctive heritage that defines communities.", options: ["All cultures should merge", "Cultural preservation is unnecessary", "Balance exchange and preservation", "Globalisation should be stopped"], answer: 2 },
           { question: "Listen. What economic principle does the speaker explain?", listenText: "The concept of diminishing marginal returns suggests that beyond a certain threshold, additional investment yields progressively smaller benefits, which has profound implications for resource allocation in public policy.", options: ["More investment always means more returns", "Returns diminish beyond a threshold", "Investment is unnecessary", "Returns are always constant"], answer: 1 },
+          { question: "Listen. What would have happened according to the speaker?", listenText: "Had the government intervened earlier in the financial crisis, the subsequent recession would not have been nearly as severe. The delay in policy response compounded the damage to an already fragile economy.", options: ["The recession would have been worse", "Early intervention would have reduced severity", "Government intervention had no effect", "The economy was already recovering"], answer: 1 },
         ],
       },
       {
         type: "reading", title: "Đọc hiểu",
         questions: [
-          { question: "Read: 'The Dunning-Kruger effect posits that individuals with limited competence in a domain tend to overestimate their abilities, while experts often underestimate theirs. This cognitive bias has significant implications for decision-making in organizations where the least qualified may be the most confident.' What do less competent individuals tend to do?", options: ["Underestimate their abilities", "Overestimate their abilities", "Accurately assess themselves", "Seek more training"], answer: 1 },
-          { question: "From the passage above, what do experts tend to do?", options: ["Overestimate their abilities", "Refuse to participate", "Underestimate their abilities", "Leave the organization"], answer: 2 },
-          { question: "Read: 'Epigenetics — the study of heritable changes in gene expression that do not involve alterations to the DNA sequence — has revolutionized our understanding of nature versus nurture. Environmental factors such as diet, stress, and exposure to toxins can activate or silence genes, and these modifications can potentially be passed down through generations.' Epigenetic changes ___.", options: ["Alter the DNA sequence", "Cannot be inherited", "Affect gene expression without changing DNA", "Only occur in plants"], answer: 2 },
+          { question: "Read: 'The Dunning-Kruger effect posits that individuals with limited competence in a domain tend to overestimate their abilities, while experts often underestimate theirs. This cognitive bias has significant implications for decision-making in organisations where the least qualified may be the most confident.' What do less competent individuals tend to do?", options: ["Underestimate their abilities", "Overestimate their abilities", "Accurately assess themselves", "Seek more training"], answer: 1 },
+          { question: "From the passage above, what do experts tend to do?", options: ["Overestimate their abilities", "Refuse to participate", "Underestimate their abilities", "Leave the organisation"], answer: 2 },
+          { question: "Read: 'Epigenetics is the study of heritable changes in gene expression that do not involve alterations to the DNA sequence. Environmental factors such as diet, stress, and exposure to toxins can activate or silence genes, and these modifications can potentially be passed down through generations.' Epigenetic changes ___.", options: ["Alter the DNA sequence", "Cannot be inherited", "Affect gene expression without changing DNA", "Only occur in plants"], answer: 2 },
           { question: "From the passage above, which is NOT mentioned as an environmental factor?", options: ["Diet", "Stress", "Toxins", "Exercise"], answer: 3 },
-          { question: "Read: 'The tragedy of the commons, articulated by Garrett Hardin in 1968, describes how individuals acting in rational self-interest can deplete shared resources, even when it is clearly not in anyone's long-term interest. This concept remains central to contemporary debates about climate change and ocean conservation.' The tragedy of the commons involves ___.", options: ["Government regulation of resources", "Individual self-interest depleting shared resources", "Community cooperation", "Private property rights"], answer: 1 },
-          { question: "Read: 'Quantum computing leverages the principles of superposition and entanglement to perform calculations exponentially faster than classical computers for certain types of problems. However, quantum decoherence — the tendency of quantum states to lose their properties when interacting with the environment — remains a formidable engineering challenge.' What is quantum decoherence?", options: ["A type of calculation", "Loss of quantum properties from environmental interaction", "A programming language", "A cooling system"], answer: 1 },
+          { question: "Read: 'The tragedy of the commons, articulated by Garrett Hardin in 1968, describes how individuals acting in rational self-interest can deplete shared resources, even when it is clearly not in anyone's long-term interest.' The tragedy of the commons involves ___.", options: ["Government regulation of resources", "Individual self-interest depleting shared resources", "Community cooperation", "Private property rights"], answer: 1 },
+          { question: "Read: 'Quantum computing leverages the principles of superposition and entanglement to perform calculations exponentially faster than classical computers for certain types of problems. However, quantum decoherence, the tendency of quantum states to lose their properties when interacting with the environment, remains a formidable engineering challenge.' What is quantum decoherence?", options: ["A type of calculation", "Loss of quantum properties from environmental interaction", "A programming language", "A cooling system"], answer: 1 },
           { question: "Read: 'The hedonic treadmill theory suggests that people rapidly return to a baseline level of happiness despite major positive or negative life events. Lottery winners, for instance, report similar happiness levels to their pre-winning state within months.' The hedonic treadmill suggests that ___.", options: ["Money guarantees happiness", "People adapt back to baseline happiness", "Negative events are permanent", "Happiness always increases over time"], answer: 1 },
-          { question: "Read: 'In sociolinguistics, code-switching refers to the practice of alternating between two or more languages or dialects within a single conversation. Far from indicating linguistic deficiency, code-switching demonstrates sophisticated metalinguistic awareness and serves important social functions.' Code-switching indicates ___.", options: ["Poor language ability", "Confusion", "Sophisticated linguistic awareness", "A learning disability"], answer: 2 },
-          { question: "Read: 'The Sapir-Whorf hypothesis, in its strong form, posits that language determines thought — that speakers of different languages literally perceive reality differently. While the strong version has been largely discredited, the weak version — that language influences thought — continues to find empirical support.' The strong form of the Sapir-Whorf hypothesis states that ___.", options: ["Language influences thought somewhat", "Language determines thought entirely", "Thought determines language", "Language and thought are unrelated"], answer: 1 },
+          { question: "Read: 'In sociolinguistics, code-switching refers to the practice of alternating between two or more languages or dialects within a single conversation. Far from indicating linguistic deficiency, code-switching demonstrates sophisticated metalinguistic awareness.' Code-switching indicates ___.", options: ["Poor language ability", "Confusion", "Sophisticated linguistic awareness", "A learning disability"], answer: 2 },
+          { question: "Read: 'The Sapir-Whorf hypothesis, in its strong form, posits that language determines thought. While the strong version has been largely discredited, the weak version, that language influences thought, continues to find empirical support.' The strong form states that ___.", options: ["Language influences thought somewhat", "Language determines thought entirely", "Thought determines language", "Language and thought are unrelated"], answer: 1 },
           { question: "From the passage above, which version of the hypothesis still has support?", options: ["The strong version", "The weak version", "Both versions equally", "Neither version"], answer: 1 },
-          { question: "Read: 'Confirmation bias — the tendency to seek, interpret, and remember information that confirms pre-existing beliefs — is perhaps the most pervasive cognitive bias in human reasoning. It operates unconsciously and affects experts and laypersons alike.' Confirmation bias involves ___.", options: ["Seeking new perspectives", "Favoring information confirming existing beliefs", "Changing beliefs frequently", "Ignoring all information"], answer: 1 },
-          { question: "Read: 'The concept of neuroplasticity has overturned the long-held belief that the adult brain is essentially fixed. Research now demonstrates that the brain continues to form new neural connections throughout life in response to learning, experience, and even injury recovery.' Neuroplasticity means the brain ___.", options: ["Stops developing after childhood", "Can form new connections throughout life", "Only changes during sleep", "Cannot recover from injury"], answer: 1 },
+          { question: "Read: 'Confirmation bias is the tendency to seek, interpret, and remember information that confirms pre-existing beliefs. It is perhaps the most pervasive cognitive bias in human reasoning and it operates unconsciously.' Confirmation bias involves ___.", options: ["Seeking new perspectives", "Favouring information confirming existing beliefs", "Changing beliefs frequently", "Ignoring all information"], answer: 1 },
+          { question: "Read: 'The concept of neuroplasticity has overturned the long-held belief that the adult brain is essentially fixed. Research now demonstrates that the brain continues to form new neural connections throughout life in response to learning and experience.' Neuroplasticity means the brain ___.", options: ["Stops developing after childhood", "Can form new connections throughout life", "Only changes during sleep", "Cannot recover from injury"], answer: 1 },
         ],
       },
       {
@@ -320,17 +335,17 @@ const EXAMS: CertExam[] = [
         questions: [
           { question: "Seldom ___ such a compelling argument in academic discourse.", options: ["I have encountered", "have I encountered", "I encountered", "did I encountered"], answer: 1, explanation: "Inversion after negative adverbial: Seldom + auxiliary + subject" },
           { question: "The manuscript, ___ authenticity had been questioned for decades, was finally verified.", options: ["which", "whose", "that", "whom"], answer: 1, explanation: "Whose = possessive relative pronoun" },
-          { question: "Were it not for her intervention, the project ___ have collapsed.", options: ["will", "would", "should", "could"], answer: 1, explanation: "Inverted third conditional: Were it not for → would have + past participle" },
-          { question: "The data ___ to suggest a correlation between the two variables.", options: ["seem", "seems", "is seeming", "are seeming"], answer: 1, explanation: "Data (treated as singular in modern usage) + seems" },
-          { question: "No sooner had he finished speaking ___ the audience erupted in applause.", options: ["when", "than", "that", "as"], answer: 1, explanation: "No sooner...than" },
+          { question: "Had she studied harder, she ___ the exam.", options: ["will pass", "would pass", "would have passed", "passed"], answer: 2, explanation: "Third conditional: Had + subject + past participle, would have + past participle" },
+          { question: "No sooner had he finished speaking ___ the audience erupted in applause.", options: ["when", "than", "that", "as"], answer: 1, explanation: "No sooner...than (inversion pattern)" },
           { question: "It is imperative that every participant ___ the form before the deadline.", options: ["submits", "submit", "submitted", "will submit"], answer: 1, explanation: "Subjunctive after 'imperative that': base form" },
-          { question: "The theory, ___ controversial at first, eventually gained widespread acceptance.", options: ["however", "albeit", "despite", "nevertheless"], answer: 1, explanation: "Albeit = although it was" },
+          { question: "Not only ___ the exam, but she also got the highest score.", options: ["she passed", "did she pass", "she did pass", "passed she"], answer: 1, explanation: "Inversion after 'Not only': did + subject + base verb" },
+          { question: "Were it not for her intervention, the project ___ have collapsed.", options: ["will", "would", "should", "could"], answer: 1, explanation: "Inverted third conditional: Were it not for → would have + past participle" },
           { question: "So profound ___ the impact that the entire industry had to adapt.", options: ["is", "was", "were", "been"], answer: 1, explanation: "Inversion: So + adjective + auxiliary + subject" },
-          { question: "___ he to have accepted the offer, his career trajectory would have been entirely different.", options: ["Were", "Had", "Should", "If"], answer: 0, explanation: "Were + subject + to have + past participle (formal third conditional)" },
-          { question: "The phenomenon ___ to which the author refers remains poorly understood.", options: ["—", "that", "who", "when"], answer: 0, explanation: "Reduced relative clause / zero relative pronoun is acceptable" },
-          { question: "Little ___ they realize the magnitude of the consequences.", options: ["do", "did", "are", "have"], answer: 1, explanation: "Inversion: Little did + subject + base verb" },
+          { question: "___ he accepted the offer earlier, he would be in a much better position now.", options: ["If", "Had", "Should", "Were"], answer: 1, explanation: "Mixed conditional (inverted): Had + past participle → would + base verb (past condition, present result)" },
           { question: "The report recommends that the committee ___ its findings immediately.", options: ["publishes", "publish", "published", "will publish"], answer: 1, explanation: "Subjunctive: recommend that + base form" },
+          { question: "Little ___ they realise the magnitude of the consequences.", options: ["do", "did", "are", "have"], answer: 1, explanation: "Inversion: Little did + subject + base verb" },
           { question: "Hardly ___ the lecture begun when the fire alarm went off.", options: ["has", "had", "did", "was"], answer: 1, explanation: "Hardly had + subject + past participle...when" },
+          { question: "Under no circumstances ___ leave the building during the drill.", options: ["you should", "should you", "you must", "must you"], answer: 1, explanation: "Inversion after negative adverbials: should you" },
         ],
       },
       {
@@ -339,7 +354,7 @@ const EXAMS: CertExam[] = [
           { question: "'The speaker's argument was specious.' 'Specious' means ___.", options: ["Brilliant", "Seemingly correct but actually wrong", "Boring", "Complex"], answer: 1 },
           { question: "'She was known for her perspicacity.' 'Perspicacity' means ___.", options: ["Stubbornness", "Sharp mental perception", "Physical strength", "Generosity"], answer: 1 },
           { question: "'The changes were implemented surreptitiously.' 'Surreptitiously' means ___.", options: ["Openly", "Quickly", "Secretly", "Carelessly"], answer: 2 },
-          { question: "'His obsequious behavior annoyed everyone.' 'Obsequious' means ___.", options: ["Brave", "Honest", "Excessively flattering", "Quiet"], answer: 2 },
+          { question: "'His obsequious behaviour annoyed everyone.' 'Obsequious' means ___.", options: ["Brave", "Honest", "Excessively flattering", "Quiet"], answer: 2 },
           { question: "'The two concepts are antithetical.' 'Antithetical' means ___.", options: ["Similar", "Directly opposite", "Related", "Complex"], answer: 1 },
           { question: "'She demonstrated remarkable sangfroid under pressure.' 'Sangfroid' means ___.", options: ["Panic", "Composure under stress", "Aggression", "Confusion"], answer: 1 },
           { question: "'The decision was met with equanimity.' 'Equanimity' means ___.", options: ["Anger", "Calm acceptance", "Excitement", "Fear"], answer: 1 },
@@ -348,7 +363,6 @@ const EXAMS: CertExam[] = [
           { question: "'The evidence was circumstantial at best.' 'Circumstantial' means ___.", options: ["Direct and conclusive", "Indirect and not conclusive", "Fabricated", "Overwhelming"], answer: 1 },
           { question: "'She is known for her laconic style.' 'Laconic' means ___.", options: ["Using few words", "Very detailed", "Emotional", "Poetic"], answer: 0 },
           { question: "'The committee reached a consensus after protracted deliberations.' 'Protracted' means ___.", options: ["Brief", "Extended and lengthy", "Secret", "Productive"], answer: 1 },
-          { question: "'The author's prose is characteristically pellucid.' 'Pellucid' means ___.", options: ["Complex", "Clear and easy to understand", "Mysterious", "Poetic"], answer: 1 },
         ],
       },
     ],
