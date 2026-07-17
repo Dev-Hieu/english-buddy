@@ -13,7 +13,8 @@ interface Question {
   level: CEFRLevel;
   type: "vocabulary" | "grammar" | "listening" | "reading";
   question: string;
-  instruction?: string; // Vietnamese instruction for the question
+  instruction?: string;
+  context?: string; // Reading passage or situational context
   options: [string, string, string, string];
   answer: number; // 0-based index
 }
@@ -24,244 +25,587 @@ interface Props {
   onBack: () => void;
 }
 
-// ── Question bank: 7 levels x 6 questions = 42 total ──
+// ── Question bank: 7 levels x 8 questions = 56 total ──
+// Designed per CEFR can-do descriptors (Cambridge, EF SET, DIALANG standards)
+// Each level tests ability in context, not isolated knowledge
 
 const QUESTION_BANK: Question[] = [
-  // ── Pre-A1 (Mam non — Kindergarten, 3-5 tuoi) ──
-  // Picture/audio based, no reading required, Vietnamese instructions
+  // ══════════════════════════════════════════════════════════════
+  // Pre-A1 — Can recognize isolated familiar words with visual support
+  // ══════════════════════════════════════════════════════════════
+
+  // 1. Picture vocab
+  {
+    level: "pre-A1", type: "vocabulary",
+    instruction: "Nh\u00ECn h\u00ECnh v\u00E0 ch\u1ECDn \u0111\u00E1p \u00E1n \u0111\u00FAng",
+    question: "\uD83C\uDF4E What is this?",
+    options: ["Apple", "Car", "Hat", "Cup"],
+    answer: 0,
+  },
+  // 2. Picture vocab
+  {
+    level: "pre-A1", type: "vocabulary",
+    instruction: "Nh\u00ECn h\u00ECnh v\u00E0 ch\u1ECDn \u0111\u00E1p \u00E1n \u0111\u00FAng",
+    question: "\uD83D\uDC36 What is this?",
+    options: ["\uD83D\uDC31 Cat", "\uD83D\uDC20 Fish", "\uD83D\uDC36 Dog", "\uD83D\uDC26 Bird"],
+    answer: 2,
+  },
+  // 3. Counting
+  {
+    level: "pre-A1", type: "vocabulary",
+    instruction: "\u0110\u1EBFm v\u00E0 ch\u1ECDn s\u1ED1 \u0111\u00FAng",
+    question: "How many? \u2B50\u2B50\u2B50",
+    options: ["Two", "Three", "Four", "Five"],
+    answer: 1,
+  },
+  // 4. Color/number
+  {
+    level: "pre-A1", type: "vocabulary",
+    instruction: "\u0110\u1EBFm v\u00E0 ch\u1ECDn s\u1ED1 \u0111\u00FAng",
+    question: "How many hearts? \u2764\uFE0F\u2764\uFE0F\u2764\uFE0F\u2764\uFE0F",
+    options: ["Three", "Five", "Four", "Two"],
+    answer: 2,
+  },
+  // 5. Basic action
+  {
+    level: "pre-A1", type: "reading",
+    instruction: "Nh\u00ECn h\u00ECnh v\u00E0 ch\u1ECDn t\u1EEB \u0111\u00FAng",
+    question: "The boy is \uD83D\uDE34. He is ___.",
+    options: ["eating", "sleeping", "running", "reading"],
+    answer: 1,
+  },
+  // 6. Basic action
+  {
+    level: "pre-A1", type: "reading",
+    instruction: "Nh\u00ECn h\u00ECnh v\u00E0 ch\u1ECDn t\u1EEB \u0111\u00FAng",
+    question: "The girl is \uD83C\uDFC3\u200D\u2640\uFE0F. She is ___.",
+    options: ["sleeping", "eating", "sitting", "running"],
+    answer: 3,
+  },
+  // 7. Listening - single word recognition
   {
     level: "pre-A1", type: "listening",
-    instruction: "Nghe va chon dap an dung",
+    instruction: "Nghe v\u00E0 ch\u1ECDn \u0111\u00E1p \u00E1n \u0111\u00FAng",
+    question: "Listen: 'Blue'. Which color is blue?",
+    options: ["\uD83D\uDD34 Red", "\uD83D\uDD35 Blue", "\uD83D\uDFE2 Green", "\uD83D\uDFE1 Yellow"],
+    answer: 1,
+  },
+  // 8. Listening - single word recognition
+  {
+    level: "pre-A1", type: "listening",
+    instruction: "Nghe v\u00E0 ch\u1ECDn con v\u1EADt \u0111\u00FAng",
     question: "Listen: 'Cat'. Which one is a cat?",
-    options: ["\uD83D\uDC31 Cat", "\uD83D\uDC36 Dog", "\uD83D\uDC1F Fish", "\uD83D\uDC26 Bird"], answer: 0,
-  },
-  {
-    level: "pre-A1", type: "listening",
-    instruction: "Nghe va chon mau sac dung",
-    question: "Listen: 'Red'. Which color is red?",
-    options: ["\uD83D\uDFE2 Green", "\uD83D\uDD35 Blue", "\uD83D\uDD34 Red", "\uD83D\uDFE1 Yellow"], answer: 2,
-  },
-  {
-    level: "pre-A1", type: "vocabulary",
-    instruction: "Dem va chon so dung",
-    question: "How many apples? \uD83C\uDF4E\uD83C\uDF4E\uD83C\uDF4E",
-    options: ["1", "2", "3", "4"], answer: 2,
-  },
-  {
-    level: "pre-A1", type: "listening",
-    instruction: "Nghe va chon con vat dung",
-    question: "Listen: 'Dog'. Which one is a dog?",
-    options: ["\uD83D\uDC31 Cat", "\uD83D\uDC36 Dog", "\uD83D\uDC18 Elephant", "\uD83D\uDC20 Fish"], answer: 1,
-  },
-  {
-    level: "pre-A1", type: "vocabulary",
-    instruction: "Chon bo phan co the dung",
-    question: "Where is your nose? Point to the right picture.",
-    options: ["\uD83D\uDC42 Ear", "\uD83D\uDC41\uFE0F Eye", "\uD83D\uDC43 Nose", "\uD83D\uDC44 Mouth"], answer: 2,
-  },
-  {
-    level: "pre-A1", type: "listening",
-    instruction: "Nghe va chon so dung",
-    question: "Listen: 'Five'. Which number is five?",
-    options: ["2", "3", "4", "5"], answer: 3,
+    options: ["\uD83D\uDC36 Dog", "\uD83D\uDC31 Cat", "\uD83D\uDC1F Fish", "\uD83D\uDC18 Elephant"],
+    answer: 1,
   },
 
-  // ── A1 (Tieu hoc — Primary, 6-11 tuoi) ──
-  // Basic words, simple sentences
-  {
-    level: "A1", type: "vocabulary",
-    question: "What is this? (picture of an apple)",
-    options: ["Apple", "Car", "Book", "Pen"], answer: 0,
-  },
+  // ══════════════════════════════════════════════════════════════
+  // A1 — Can understand simple sentences about familiar topics
+  // ══════════════════════════════════════════════════════════════
+
+  // 1. Situational
   {
     level: "A1", type: "grammar",
-    question: "I ___ a student.",
-    options: ["am", "is", "are", "be"], answer: 0,
+    question: "At a shop: 'How much is this?' \u2014 'It ___ five dollars.'",
+    options: ["is", "are", "am", "be"],
+    answer: 0,
   },
+  // 2. Situational
+  {
+    level: "A1", type: "grammar",
+    question: "At school: 'Where ___ you from?' \u2014 'I'm from Vietnam.'",
+    options: ["is", "am", "are", "do"],
+    answer: 2,
+  },
+  // 3. Short reading passage
   {
     level: "A1", type: "reading",
-    question: "\"My name is Tom. I am 7.\" How old is Tom?",
-    options: ["5", "6", "7", "8"], answer: 2,
+    context: "My name is Lan. I am 8 years old. I have a cat. Her name is Mimi.",
+    question: "What pet does Lan have?",
+    options: ["A dog", "A cat", "A fish", "A bird"],
+    answer: 1,
   },
+  // 4. Short reading passage
   {
-    level: "A1", type: "vocabulary",
-    question: "What color is the sky?",
-    options: ["Blue", "Red", "Green", "Yellow"], answer: 0,
+    level: "A1", type: "reading",
+    context: "Tom likes football. He plays every Saturday. His friend Ben likes swimming.",
+    question: "What does Tom like?",
+    options: ["Swimming", "Reading", "Football", "Running"],
+    answer: 2,
   },
+  // 5. Grammar in natural dialogue
   {
     level: "A1", type: "grammar",
-    question: "She ___ a teacher.",
-    options: ["am", "is", "are", "be"], answer: 1,
+    question: "'Do you like ice cream?' \u2014 'Yes, I ___.'",
+    options: ["am", "do", "is", "like"],
+    answer: 1,
   },
+  // 6. Grammar in natural dialogue
   {
-    level: "A1", type: "listening",
-    question: "Someone says: \"Hello, how are you?\" What do you say?",
-    options: ["I am fine, thank you.", "I am a book.", "Goodbye.", "My name is cat."], answer: 0,
+    level: "A1", type: "grammar",
+    question: "'___ is your teacher?' \u2014 'Miss Hoa.'",
+    options: ["What", "Where", "Who", "When"],
+    answer: 2,
+  },
+  // 7. Vocabulary in context
+  {
+    level: "A1", type: "vocabulary",
+    question: "I'm thirsty. I want some ___.",
+    options: ["water", "chair", "book", "pencil"],
+    answer: 0,
+  },
+  // 8. Vocabulary in context
+  {
+    level: "A1", type: "vocabulary",
+    question: "It's raining outside. I need my ___.",
+    options: ["sunglasses", "umbrella", "swimsuit", "sandals"],
+    answer: 1,
   },
 
-  // ── A2 (Trung hoc — Secondary, 12-15 tuoi) ──
-  // Daily life, past tense, comparatives
-  {
-    level: "A2", type: "grammar",
-    question: "She ___ to school yesterday.",
-    options: ["go", "goes", "went", "going"], answer: 2,
-  },
-  {
-    level: "A2", type: "grammar",
-    question: "This house is ___ than that one.",
-    options: ["big", "bigger", "biggest", "more big"], answer: 1,
-  },
-  {
-    level: "A2", type: "vocabulary",
-    question: "A place where you buy medicine is a ___.",
-    options: ["library", "pharmacy", "bakery", "market"], answer: 1,
-  },
+  // ══════════════════════════════════════════════════════════════
+  // A2 — Can understand sentences about areas of immediate relevance
+  // ══════════════════════════════════════════════════════════════
+
+  // 1. Narrative comprehension
   {
     level: "A2", type: "reading",
-    question: "\"Dear Tom, The meeting is at 3pm on Friday in Room 12.\" When is the meeting?",
-    options: ["Monday at 12pm", "Friday at 3pm", "Wednesday at 3pm", "Friday at 12pm"], answer: 1,
+    context: "Last weekend, Mai went to the beach with her family. They swam in the sea and ate seafood for lunch. Mai was very happy.",
+    question: "What did Mai do last weekend?",
+    options: [
+      "She went to school.",
+      "She went to the beach.",
+      "She stayed at home.",
+      "She went to the mountains.",
+    ],
+    answer: 1,
   },
+  // 2. Narrative comprehension
   {
-    level: "A2", type: "grammar",
-    question: "They ___ watching TV right now.",
-    options: ["is", "am", "are", "was"], answer: 2,
+    level: "A2", type: "reading",
+    context: "Yesterday, Minh woke up late. He missed the bus and had to walk to school. He arrived 20 minutes late.",
+    question: "Why was Minh late for school?",
+    options: [
+      "He was sick.",
+      "The bus was late.",
+      "He woke up late and missed the bus.",
+      "His mother drove him.",
+    ],
+    answer: 2,
   },
+  // 3. Functional language
   {
     level: "A2", type: "vocabulary",
-    question: "The opposite of \"hot\" is ___.",
-    options: ["warm", "cool", "cold", "wet"], answer: 2,
+    question: "You want to buy a train ticket. You say:",
+    options: [
+      "'Can I have a ticket to Hanoi, please?'",
+      "'Where is the hospital?'",
+      "'What time is lunch?'",
+      "'How old are you?'",
+    ],
+    answer: 0,
+  },
+  // 4. Functional language
+  {
+    level: "A2", type: "vocabulary",
+    question: "You are at a restaurant. You want to pay. You say:",
+    options: [
+      "'Can I see the menu?'",
+      "'The food was delicious.'",
+      "'Can I have the bill, please?'",
+      "'I'd like a table for two.'",
+    ],
+    answer: 2,
+  },
+  // 5. Grammar in context - past simple
+  {
+    level: "A2", type: "grammar",
+    question: "'What did you do yesterday?' \u2014 'I ___ to the cinema with my friends.'",
+    options: ["go", "goes", "went", "going"],
+    answer: 2,
+  },
+  // 6. Grammar in context - comparatives
+  {
+    level: "A2", type: "grammar",
+    question: "This test is ___ than I expected. I can do it!",
+    options: ["easy", "easier", "more easy", "easiest"],
+    answer: 1,
+  },
+  // 7. Sign/notice reading
+  {
+    level: "A2", type: "reading",
+    context: "NOTICE: This door is for staff only. Please use the main entrance.",
+    question: "What does this notice mean?",
+    options: [
+      "Everyone can use this door.",
+      "Only workers can use this door.",
+      "This door is broken.",
+      "The main entrance is closed.",
+    ],
+    answer: 1,
+  },
+  // 8. Sign/notice reading
+  {
+    level: "A2", type: "reading",
+    context: "SALE! All shoes 50% off this weekend only.",
+    question: "When can you buy cheap shoes?",
+    options: [
+      "Any day",
+      "Only on Monday",
+      "This weekend",
+      "Next month",
+    ],
+    answer: 2,
   },
 
-  // ── B1 (Pho thong — High school, 15-18 tuoi) ──
-  // Present perfect, first conditional, opinions
-  {
-    level: "B1", type: "grammar",
-    question: "I have already ___ this book.",
-    options: ["read", "reading", "reads", "readed"], answer: 0,
-  },
-  {
-    level: "B1", type: "grammar",
-    question: "If it rains tomorrow, I ___ stay home.",
-    options: ["would", "will", "can", "might have"], answer: 1,
-  },
-  {
-    level: "B1", type: "vocabulary",
-    question: "To \"postpone\" means to ___.",
-    options: ["cancel", "delay", "forget", "repeat"], answer: 1,
-  },
+  // ══════════════════════════════════════════════════════════════
+  // B1 — Can deal with most situations; can describe experiences and opinions
+  // ══════════════════════════════════════════════════════════════
+
+  // 1. Opinion/attitude
   {
     level: "B1", type: "reading",
-    question: "\"Despite the rain, they continued the match.\" What happened?",
-    options: ["They stopped playing", "They kept playing", "They went home", "They waited for sun"], answer: 1,
+    context: "Many people think that learning a foreign language is only useful for travelling. However, research shows that bilingual people are better at solving problems and multitasking. Learning a language exercises the brain, just like sport exercises the body.",
+    question: "The writer thinks that learning a foreign language ___.",
+    options: [
+      "is only useful for travelling",
+      "is a waste of time",
+      "has benefits beyond travelling",
+      "is the same as doing sport",
+    ],
+    answer: 2,
   },
+  // 2. Opinion/attitude
   {
-    level: "B1", type: "grammar",
-    question: "She asked me where I ___.",
-    options: ["live", "lived", "living", "lives"], answer: 1,
+    level: "B1", type: "reading",
+    context: "Working from home has become more common since 2020. Some workers enjoy the flexibility, but others miss the social interaction of an office. Companies are still trying to find the best balance.",
+    question: "According to the text, what is true about working from home?",
+    options: [
+      "Everyone prefers it to office work.",
+      "It has both advantages and disadvantages.",
+      "Companies have found the perfect solution.",
+      "It was common before 2020.",
+    ],
+    answer: 1,
   },
+  // 3. Functional - giving advice
   {
     level: "B1", type: "vocabulary",
-    question: "\"In my opinion, this plan is not practical.\" The speaker is expressing ___.",
-    options: ["agreement", "a personal view", "happiness", "a question"], answer: 1,
+    question: "Your friend is stressed about exams. You say:",
+    options: [
+      "'You should take a break and study in short sessions.'",
+      "'Exams are not important at all.'",
+      "'I don't care about your exams.'",
+      "'You must study 24 hours a day.'",
+    ],
+    answer: 0,
+  },
+  // 4. Functional - making suggestions
+  {
+    level: "B1", type: "vocabulary",
+    question: "You want to suggest going to a new restaurant. You say:",
+    options: [
+      "'You must eat there.'",
+      "'I order you to go.'",
+      "'Why don't we try that new restaurant?'",
+      "'Restaurants are expensive.'",
+    ],
+    answer: 2,
+  },
+  // 5. Grammar - present perfect vs past simple
+  {
+    level: "B1", type: "grammar",
+    question: "'Have you ever been to Japan?' \u2014 'Yes, I ___ there last summer.'",
+    options: ["have gone", "went", "have been", "go"],
+    answer: 1,
+  },
+  // 6. Grammar - present perfect vs past simple
+  {
+    level: "B1", type: "grammar",
+    question: "I ___ in this city since I was born, so I know it very well.",
+    options: ["lived", "am living", "have lived", "was living"],
+    answer: 2,
+  },
+  // 7. Inference
+  {
+    level: "B1", type: "reading",
+    context: "The shop closed at 5pm. We arrived at 5:15pm and the lights were off. A sign on the door said 'See you tomorrow!'",
+    question: "From the text, we can understand that ___.",
+    options: [
+      "the shop was still open",
+      "they could not go shopping that day",
+      "the shop had moved to a new location",
+      "they arrived before closing time",
+    ],
+    answer: 1,
+  },
+  // 8. Inference
+  {
+    level: "B1", type: "reading",
+    context: "Maria applied for the job on Monday. On Wednesday, she received an email asking her to come for an interview on Friday.",
+    question: "From the text, we can understand that ___.",
+    options: [
+      "Maria did not get the job",
+      "the company was not interested in Maria",
+      "Maria's application was successful enough for the next step",
+      "Maria will start working on Friday",
+    ],
+    answer: 2,
   },
 
-  // ── B2 (Dai hoc — University) ──
-  // Passive voice, second conditional, complex grammar
-  {
-    level: "B2", type: "grammar",
-    question: "The report was ___ by the entire team.",
-    options: ["written", "wrote", "write", "writing"], answer: 0,
-  },
-  {
-    level: "B2", type: "grammar",
-    question: "If I were rich, I ___ travel the world.",
-    options: ["will", "would", "can", "shall"], answer: 1,
-  },
-  {
-    level: "B2", type: "vocabulary",
-    question: "\"Ubiquitous\" means ___.",
-    options: ["rare", "found everywhere", "expensive", "ancient"], answer: 1,
-  },
+  // ══════════════════════════════════════════════════════════════
+  // B2 — Can understand main ideas of complex text on concrete and abstract topics
+  // ══════════════════════════════════════════════════════════════
+
+  // 1. Argument analysis
   {
     level: "B2", type: "reading",
-    question: "\"The findings corroborate previous research.\" \"Corroborate\" means ___.",
-    options: ["contradict", "ignore", "support", "replace"], answer: 2,
+    context: "While social media has undoubtedly transformed how we communicate, critics argue that it has created echo chambers where people only encounter opinions that reinforce their existing beliefs. This polarisation, they claim, is undermining democratic discourse.",
+    question: "What is the main argument presented in this passage?",
+    options: [
+      "Social media has improved communication.",
+      "Social media may harm democratic discussion by creating echo chambers.",
+      "Everyone should stop using social media.",
+      "Democratic discourse has always been polarised.",
+    ],
+    answer: 1,
   },
+  // 2. Argument analysis
   {
-    level: "B2", type: "grammar",
-    question: "The project was completed ahead ___ schedule.",
-    options: ["of", "in", "on", "by"], answer: 0,
+    level: "B2", type: "reading",
+    context: "Renewable energy sources are becoming cheaper, but transitioning entirely away from fossil fuels remains challenging. The infrastructure required is enormous, and many developing nations lack the capital for such investments. A gradual, well-funded transition is more realistic than an immediate switch.",
+    question: "The writer's main point is that ___.",
+    options: [
+      "fossil fuels are better than renewable energy",
+      "developing nations should not use renewable energy",
+      "a complete switch to renewables needs to be gradual and supported financially",
+      "renewable energy is too expensive to be practical",
+    ],
+    answer: 2,
   },
+  // 3. Register - formal/informal
   {
     level: "B2", type: "vocabulary",
-    question: "A \"dilemma\" is a situation involving ___.",
-    options: ["a difficult choice", "a celebration", "a discovery", "an agreement"], answer: 0,
+    question: "You need to email your professor about missing a deadline. Which is most appropriate?",
+    options: [
+      "'Hey, I didn't finish the assignment. Can I have more time?'",
+      "'I am writing to request an extension for the assignment due to unforeseen circumstances.'",
+      "'Give me more time for the homework.'",
+      "'Sorry!!! I need more time please please please!'",
+    ],
+    answer: 1,
+  },
+  // 4. Register - formal/informal
+  {
+    level: "B2", type: "vocabulary",
+    question: "In a formal business report, which phrase best replaces 'We found out that...'?",
+    options: [
+      "'We discovered that...'",
+      "'Our investigation revealed that...'",
+      "'We figured out that...'",
+      "'We just realized that...'",
+    ],
+    answer: 1,
+  },
+  // 5. Grammar - passive in context
+  {
+    level: "B2", type: "grammar",
+    question: "The new policy ___ by the board last month, but it hasn't been implemented yet.",
+    options: ["approved", "was approved", "has approved", "is approving"],
+    answer: 1,
+  },
+  // 6. Grammar - reported speech
+  {
+    level: "B2", type: "grammar",
+    question: "She told me that she ___ the report by Friday, but she still hasn't finished it.",
+    options: ["will complete", "would complete", "completes", "is completing"],
+    answer: 1,
+  },
+  // 7. Collocations
+  {
+    level: "B2", type: "vocabulary",
+    question: "After careful consideration, the company decided to ___ the project due to budget cuts.",
+    options: ["abandon", "desert", "leave", "quit"],
+    answer: 0,
+  },
+  // 8. Collocations
+  {
+    level: "B2", type: "vocabulary",
+    question: "The research team ___ an experiment to test their hypothesis.",
+    options: ["made", "did", "conducted", "performed"],
+    answer: 2,
   },
 
-  // ── C1 (Cao hoc — Masters) ──
-  // Mixed conditionals, inversion, academic vocabulary
-  {
-    level: "C1", type: "grammar",
-    question: "Had I known about the delay, I ___ have come earlier.",
-    options: ["would", "will", "should", "might"], answer: 0,
-  },
-  {
-    level: "C1", type: "grammar",
-    question: "Scarcely ___ the door when the phone rang.",
-    options: ["I had closed", "had I closed", "I closed", "did I close"], answer: 1,
-  },
-  {
-    level: "C1", type: "vocabulary",
-    question: "\"Pragmatic\" most nearly means ___.",
-    options: ["idealistic", "practical", "theoretical", "pessimistic"], answer: 1,
-  },
+  // ══════════════════════════════════════════════════════════════
+  // C1 — Can understand demanding texts and recognize implicit meaning
+  // ══════════════════════════════════════════════════════════════
+
+  // 1. Academic reading - inference
   {
     level: "C1", type: "reading",
-    question: "\"The policy was met with ambivalence.\" This means people felt ___.",
-    options: ["enthusiastic", "angry", "mixed feelings", "indifferent"], answer: 2,
+    context: "The notion that language merely reflects thought has been increasingly challenged by researchers who argue that the structure of a language can fundamentally shape how its speakers perceive and categorise reality. This linguistic relativity, while not deterministic, suggests that translation between languages involves more than word substitution.",
+    question: "The passage implies that ___.",
+    options: [
+      "all languages express ideas in the same way",
+      "translation is simply a matter of replacing words",
+      "language can influence how people think and perceive the world",
+      "linguistic relativity has been disproven",
+    ],
+    answer: 2,
   },
+  // 2. Academic reading - inference
+  {
+    level: "C1", type: "reading",
+    context: "Despite decades of investment in artificial intelligence, machines still struggle with tasks that humans find trivial, such as understanding sarcasm or navigating a cluttered room. This paradox, known as Moravec's paradox, suggests that high-level reasoning requires less computation than low-level sensorimotor skills.",
+    question: "According to the text, Moravec's paradox suggests that ___.",
+    options: [
+      "AI is more intelligent than humans",
+      "simple human skills are computationally more complex than abstract reasoning",
+      "machines will never be able to think",
+      "sarcasm is the hardest problem in AI",
+    ],
+    answer: 1,
+  },
+  // 3. Idiomatic meaning
   {
     level: "C1", type: "vocabulary",
-    question: "To \"exacerbate\" a problem means to ___.",
-    options: ["solve it", "make it worse", "ignore it", "study it"], answer: 1,
+    question: "'When she got the promotion, she was over the moon.' This means she was ___.",
+    options: ["confused", "extremely happy", "frightened", "suspicious"],
+    answer: 1,
   },
+  // 4. Idiomatic meaning
+  {
+    level: "C1", type: "vocabulary",
+    question: "'The new regulations are a double-edged sword for small businesses.' This means the regulations ___.",
+    options: [
+      "are completely harmful",
+      "are completely beneficial",
+      "have both advantages and disadvantages",
+      "are irrelevant to small businesses",
+    ],
+    answer: 2,
+  },
+  // 5. Grammar - advanced structures
   {
     level: "C1", type: "grammar",
-    question: "Not until the results ___ published did we realize the magnitude of the error.",
-    options: ["were", "was", "had been", "being"], answer: 0,
+    question: "Had the government acted sooner, the crisis ___ averted.",
+    options: ["would be", "will have been", "could have been", "must be"],
+    answer: 2,
+  },
+  // 6. Grammar - advanced structures (inversion)
+  {
+    level: "C1", type: "grammar",
+    question: "Not only ___ the deadline, but she also exceeded all quality expectations.",
+    options: ["she met", "did she meet", "she did meet", "has she met"],
+    answer: 1,
+  },
+  // 7. Nuance - precise word choice
+  {
+    level: "C1", type: "vocabulary",
+    question: "The diplomat's response was carefully ___, avoiding any direct commitment.",
+    options: ["said", "worded", "talked", "spoken"],
+    answer: 1,
+  },
+  // 8. Nuance - precise word choice
+  {
+    level: "C1", type: "vocabulary",
+    question: "The evidence is ___ at best \u2014 it neither proves nor disproves the theory.",
+    options: ["inconclusive", "inclusive", "conclusive", "exclusive"],
+    answer: 0,
   },
 
-  // ── C2 (Tien si — PhD level) ──
-  // Subjunctive, nuanced grammar, near-native idioms
-  {
-    level: "C2", type: "grammar",
-    question: "The committee insists that he ___ present at the hearing.",
-    options: ["be", "is", "was", "being"], answer: 0,
-  },
-  {
-    level: "C2", type: "vocabulary",
-    question: "\"Verisimilitude\" refers to the appearance of ___.",
-    options: ["beauty", "truth or reality", "complexity", "simplicity"], answer: 1,
-  },
-  {
-    level: "C2", type: "grammar",
-    question: "So ___ was his argument that even the harshest critics conceded the point.",
-    options: ["compelling", "compelled", "compellingly", "to compel"], answer: 0,
-  },
+  // ══════════════════════════════════════════════════════════════
+  // C2 — Can understand virtually everything heard or read with ease
+  // ══════════════════════════════════════════════════════════════
+
+  // 1. Rhetorical analysis
   {
     level: "C2", type: "reading",
-    question: "\"The author's prose oscillates between lucidity and opacity.\" This means the writing is ___.",
-    options: ["consistently clear", "always confusing", "sometimes clear, sometimes not", "very poetic"], answer: 2,
+    context: "One might be forgiven for thinking that in an age of unprecedented connectivity, loneliness would be a relic of the past. Yet the opposite appears to be true: the more connected we become digitally, the more disconnected we feel personally. The irony is as bitter as it is pervasive.",
+    question: "The writer's primary rhetorical strategy is to ___.",
+    options: [
+      "present statistical evidence",
+      "highlight a paradox between expectation and reality",
+      "argue for reducing technology use",
+      "compare past and present objectively",
+    ],
+    answer: 1,
   },
+  // 2. Rhetorical analysis
   {
-    level: "C2", type: "vocabulary",
-    question: "\"Epiphenomenal\" describes something that is ___.",
-    options: ["fundamental", "a secondary byproduct", "universal", "permanent"], answer: 1,
+    level: "C2", type: "reading",
+    context: "The committee's report, lauded by its authors as 'comprehensive and forward-thinking,' conspicuously omits any mention of the environmental costs. One cannot help but wonder whether this oversight was genuinely accidental or strategically convenient.",
+    question: "The writer's tone in this passage is best described as ___.",
+    options: [
+      "neutral and objective",
+      "enthusiastic and supportive",
+      "skeptical and subtly critical",
+      "indifferent and detached",
+    ],
+    answer: 2,
   },
+  // 3. Ambiguity
+  {
+    level: "C2", type: "reading",
+    question: "'Visiting relatives can be tiresome.' This sentence is ambiguous because it could mean ___.",
+    options: [
+      "either 'going to visit relatives is tiresome' or 'relatives who visit are tiresome'",
+      "either 'relatives are tired' or 'visiting is impossible'",
+      "either 'the visit was long' or 'the relatives were old'",
+      "either 'tiresome means boring' or 'tiresome means exciting'",
+    ],
+    answer: 0,
+  },
+  // 4. Ambiguity
   {
     level: "C2", type: "grammar",
-    question: "It is imperative that the data ___ verified before publication.",
-    options: ["be", "is", "are", "was"], answer: 0,
+    question: "Which sentence has a genuinely ambiguous meaning?",
+    options: [
+      "'She saw the man with the telescope.'",
+      "'The cat sat on the mat.'",
+      "'It is raining outside.'",
+      "'He went to the shop.'",
+    ],
+    answer: 0,
+  },
+  // 5. Precise collocations
+  {
+    level: "C2", type: "vocabulary",
+    question: "The prosecutor sought to ___ the defendant's credibility by revealing inconsistencies in her testimony.",
+    options: ["undermine", "demolish", "damage", "ruin"],
+    answer: 0,
+  },
+  // 6. Precise collocations
+  {
+    level: "C2", type: "vocabulary",
+    question: "The artist's later works represent a radical ___ from the style that first brought her acclaim.",
+    options: ["departure", "exit", "leave", "withdrawal"],
+    answer: 0,
+  },
+  // 7. Academic - implicit conclusion
+  {
+    level: "C2", type: "reading",
+    context: "Epigenetic research has demonstrated that environmental factors can modify gene expression without altering the underlying DNA sequence. More provocatively, some of these modifications appear to be heritable, suggesting that the experiences of one generation may leave biological imprints on the next.",
+    question: "The passage most strongly implies that ___.",
+    options: [
+      "DNA determines everything about a person",
+      "environmental influences may have biological effects across generations",
+      "epigenetics has disproven traditional genetics",
+      "gene modifications are always permanent",
+    ],
+    answer: 1,
+  },
+  // 8. Academic - implicit conclusion
+  {
+    level: "C2", type: "reading",
+    context: "The philosopher's argument rests on the premise that consciousness is an emergent property of sufficiently complex systems. If this is accepted, the distinction between biological and artificial intelligence becomes one of degree rather than kind \u2014 a conclusion that many find philosophically disquieting.",
+    question: "The word 'disquieting' suggests that this conclusion ___.",
+    options: [
+      "is universally accepted",
+      "is scientifically proven",
+      "challenges comfortable assumptions about human uniqueness",
+      "has no practical implications",
+    ],
+    answer: 2,
   },
 ];
 
@@ -290,20 +634,21 @@ function pickNextQuestion(level: CEFRLevel, usedIndices: Set<number>): number | 
 
 /**
  * Adaptive algorithm:
- * - Correct → jump up 2 levels
- * - Wrong → go down 1 level (or stay at pre-A1)
+ * - Correct → move up 1 level
+ * - Wrong → stay at same level
+ * - 3 wrong at same level → stop
  */
 function adaptLevel(current: CEFRLevel, correct: boolean): CEFRLevel {
   const idx = LEVELS.indexOf(current);
   if (correct) {
-    return LEVELS[Math.min(idx + 2, LEVELS.length - 1)];
+    return LEVELS[Math.min(idx + 1, LEVELS.length - 1)];
   }
-  return LEVELS[Math.max(idx - 1, 0)];
+  return current;
 }
 
 /**
  * Determine if the test should stop early.
- * Stops if the learner has answered 3 consecutive wrong answers at the same level.
+ * Stops if the learner has answered 3 wrong answers at the same level.
  */
 function shouldStopEarly(answers: { level: CEFRLevel; correct: boolean }[]): boolean {
   if (answers.length < 3) return false;
@@ -356,13 +701,13 @@ const LEVEL_LABEL: Record<CEFRLevel, string> = {
 };
 
 const LEVEL_DESC_VI: Record<CEFRLevel, string> = {
-  "pre-A1": "M\u1EA7m non \u2014 B\u1EA1n \u0111ang b\u1EAFt \u0111\u1EA7u h\u00E0nh tr\u00ECnh h\u1ECDc ti\u1EBFng Anh!",
-  A1: "Ti\u1EC3u h\u1ECDc \u2014 B\u1EA1n bi\u1EBFt c\u00E1c t\u1EEB v\u00E0 c\u00E2u c\u01A1 b\u1EA3n.",
-  A2: "Trung h\u1ECDc \u2014 B\u1EA1n giao ti\u1EBFp \u0111\u01B0\u1EE3c trong t\u00ECnh hu\u1ED1ng \u0111\u01A1n gi\u1EA3n.",
-  B1: "Ph\u1ED5 th\u00F4ng \u2014 B\u1EA1n di\u1EC5n \u0111\u1EA1t \u0111\u01B0\u1EE3c \u00FD ki\u1EBFn v\u00E0 kinh nghi\u1EC7m.",
-  B2: "\u0110\u1EA1i h\u1ECDc \u2014 B\u1EA1n s\u1EED d\u1EE5ng ti\u1EBFng Anh th\u00E0nh th\u1EA1o trong nhi\u1EC1u t\u00ECnh hu\u1ED1ng.",
-  C1: "Cao h\u1ECDc \u2014 B\u1EA1n s\u1EED d\u1EE5ng ti\u1EBFng Anh \u1EDF tr\u00ECnh \u0111\u1ED9 h\u1ECDc thu\u1EADt.",
-  C2: "Ti\u1EBFn s\u0129 \u2014 Tr\u00ECnh \u0111\u1ED9 g\u1EA7n nh\u01B0 ng\u01B0\u1EDDi b\u1EA3n x\u1EE9.",
+  "pre-A1": "Kh\u1EDFi \u0111\u1EA7u \u2014 B\u1EA1n c\u00F3 th\u1EC3 nh\u1EADn bi\u1EBFt c\u00E1c t\u1EEB \u0111\u01A1n l\u1EBB quen thu\u1ED9c v\u00E0 h\u00ECnh \u1EA3nh c\u01A1 b\u1EA3n.",
+  A1: "C\u01A1 b\u1EA3n \u2014 B\u1EA1n hi\u1EC3u \u0111\u01B0\u1EE3c c\u00E2u \u0111\u01A1n gi\u1EA3n v\u1EC1 c\u00E1c ch\u1EE7 \u0111\u1EC1 quen thu\u1ED9c h\u00E0ng ng\u00E0y.",
+  A2: "S\u01A1 c\u1EA5p \u2014 B\u1EA1n giao ti\u1EBFp \u0111\u01B0\u1EE3c trong c\u00E1c t\u00ECnh hu\u1ED1ng \u0111\u01A1n gi\u1EA3n, th\u01B0\u1EDDng ng\u00E0y.",
+  B1: "Trung c\u1EA5p \u2014 B\u1EA1n x\u1EED l\u00FD \u0111\u01B0\u1EE3c h\u1EA7u h\u1EBFt c\u00E1c t\u00ECnh hu\u1ED1ng khi du l\u1ECBch v\u00E0 di\u1EC5n \u0111\u1EA1t \u0111\u01B0\u1EE3c \u00FD ki\u1EBFn c\u00E1 nh\u00E2n.",
+  B2: "Trung c\u1EA5p cao \u2014 B\u1EA1n hi\u1EC3u \u0111\u01B0\u1EE3c n\u1ED9i dung ph\u1EE9c t\u1EA1p v\u00E0 s\u1EED d\u1EE5ng ti\u1EBFng Anh th\u00E0nh th\u1EA1o trong nhi\u1EC1u ng\u1EEF c\u1EA3nh.",
+  C1: "Cao c\u1EA5p \u2014 B\u1EA1n hi\u1EC3u v\u0103n b\u1EA3n d\u00E0i, ph\u1EE9c t\u1EA1p v\u00E0 nh\u1EADn ra \u00FD ngh\u0129a \u1EA9n.",
+  C2: "Th\u00E0nh th\u1EA1o \u2014 B\u1EA1n hi\u1EC3u m\u1ECDi th\u1EE9 d\u1EC5 d\u00E0ng, g\u1EA7n nh\u01B0 ng\u01B0\u1EDDi b\u1EA3n ng\u1EEF.",
 };
 
 // ── Component ──
@@ -543,7 +888,7 @@ export function PlacementTestPage({ student, onComplete, onBack }: Props) {
 
             <p className="text-xs text-gray-500 mb-4">\u0111\u00E3 ho\u00E0n th\u00E0nh b\u00E0i ki\u1EC3m tra x\u1EBFp l\u1EDBp \u0111\u1EA7u v\u00E0o</p>
 
-            <div className="mx-auto mb-4 inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-amber-400 to-amber-500 px-6 py-3 shadow-md">
+            <div className="mx-auto mb-4 inline-flex flex-col items-center gap-1 rounded-xl bg-gradient-to-r from-amber-400 to-amber-500 px-6 py-3 shadow-md">
               <span className="text-2xl font-black text-white">{LEVEL_LABEL[resultLevel]}</span>
               <span className="text-xs font-bold text-white/90">{LEVEL_DESC_VI[resultLevel]}</span>
             </div>
@@ -618,6 +963,11 @@ export function PlacementTestPage({ student, onComplete, onBack }: Props) {
           <CardContent className="p-5">
             {q.instruction && (
               <p className="mb-2 text-xs font-medium text-muted-foreground italic">{q.instruction}</p>
+            )}
+            {q.context && (
+              <div className="mb-3 rounded-lg bg-muted/50 p-3 text-sm leading-relaxed text-muted-foreground">
+                {q.context}
+              </div>
             )}
             <p className="text-base font-bold leading-relaxed">{q.question}</p>
           </CardContent>
