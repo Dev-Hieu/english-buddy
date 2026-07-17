@@ -199,6 +199,23 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
         </div>
       </button>
 
+      {/* ── Banner nâng cấp trình độ ── */}
+      {learnedTotal >= 30 && (
+        <button type="button" onClick={() => onNavigate("certification")}
+          className="w-full rounded-2xl bg-gradient-to-r from-amber-500 to-orange-500 px-4 py-3 text-left text-white shadow-lg transition-all active:scale-[0.98] hover:brightness-105">
+          <div className="flex items-center gap-3">
+            <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-white/20">
+              <Award className="h-5 w-5" />
+            </span>
+            <div className="flex-1 min-w-0">
+              <p className="text-sm font-black">Sẵn sàng thi nâng cấp!</p>
+              <p className="text-[10px] font-bold text-white/80">Thi chứng chỉ {(student.level || "a1").toUpperCase()} để lên level tiếp theo</p>
+            </div>
+            <span className="text-lg font-black">→</span>
+          </div>
+        </button>
+      )}
+
       {/* ── Kiểm tra & Ôn tập — iOS icon row ── */}
       {(pendingCount >= 10 || dueTestCount > 0 || reviewDue > 0) && (
         <div className="flex justify-center gap-5">
