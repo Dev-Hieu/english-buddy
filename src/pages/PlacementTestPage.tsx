@@ -37,65 +37,65 @@ const QUESTION_BANK: Question[] = [
   // 1. Picture vocab
   {
     level: "pre-A1", type: "vocabulary",
-    instruction: "Nh\u00ECn h\u00ECnh v\u00E0 ch\u1ECDn \u0111\u00E1p \u00E1n \u0111\u00FAng",
-    question: "\uD83C\uDF4E What is this?",
+    instruction: "Nhìn hình và chọn đáp án đúng",
+    question: "🍎 What is this?",
     options: ["Apple", "Car", "Hat", "Cup"],
     answer: 0,
   },
   // 2. Picture vocab
   {
     level: "pre-A1", type: "vocabulary",
-    instruction: "Nh\u00ECn h\u00ECnh v\u00E0 ch\u1ECDn \u0111\u00E1p \u00E1n \u0111\u00FAng",
-    question: "\uD83D\uDC36 What is this?",
-    options: ["\uD83D\uDC31 Cat", "\uD83D\uDC20 Fish", "\uD83D\uDC36 Dog", "\uD83D\uDC26 Bird"],
+    instruction: "Nhìn hình và chọn đáp án đúng",
+    question: "🐶 What is this?",
+    options: ["🐱 Cat", "🐠 Fish", "🐶 Dog", "🐦 Bird"],
     answer: 2,
   },
   // 3. Counting
   {
     level: "pre-A1", type: "vocabulary",
-    instruction: "\u0110\u1EBFm v\u00E0 ch\u1ECDn s\u1ED1 \u0111\u00FAng",
-    question: "How many? \u2B50\u2B50\u2B50",
+    instruction: "Đếm và chọn số đúng",
+    question: "How many? ⭐⭐⭐",
     options: ["Two", "Three", "Four", "Five"],
     answer: 1,
   },
   // 4. Color/number
   {
     level: "pre-A1", type: "vocabulary",
-    instruction: "\u0110\u1EBFm v\u00E0 ch\u1ECDn s\u1ED1 \u0111\u00FAng",
-    question: "How many hearts? \u2764\uFE0F\u2764\uFE0F\u2764\uFE0F\u2764\uFE0F",
+    instruction: "Đếm và chọn số đúng",
+    question: "How many hearts? ❤️❤️❤️❤️",
     options: ["Three", "Five", "Four", "Two"],
     answer: 2,
   },
   // 5. Basic action
   {
     level: "pre-A1", type: "reading",
-    instruction: "Nh\u00ECn h\u00ECnh v\u00E0 ch\u1ECDn t\u1EEB \u0111\u00FAng",
-    question: "The boy is \uD83D\uDE34. He is ___.",
+    instruction: "Nhìn hình và chọn từ đúng",
+    question: "The boy is 😴. He is ___.",
     options: ["eating", "sleeping", "running", "reading"],
     answer: 1,
   },
   // 6. Basic action
   {
     level: "pre-A1", type: "reading",
-    instruction: "Nh\u00ECn h\u00ECnh v\u00E0 ch\u1ECDn t\u1EEB \u0111\u00FAng",
-    question: "The girl is \uD83C\uDFC3\u200D\u2640\uFE0F. She is ___.",
+    instruction: "Nhìn hình và chọn từ đúng",
+    question: "The girl is 🏃‍♀️. She is ___.",
     options: ["sleeping", "eating", "sitting", "running"],
     answer: 3,
   },
   // 7. Listening - single word recognition
   {
     level: "pre-A1", type: "listening",
-    instruction: "Nghe v\u00E0 ch\u1ECDn \u0111\u00E1p \u00E1n \u0111\u00FAng",
+    instruction: "Nghe và chọn đáp án đúng",
     question: "Listen: 'Blue'. Which color is blue?",
-    options: ["\uD83D\uDD34 Red", "\uD83D\uDD35 Blue", "\uD83D\uDFE2 Green", "\uD83D\uDFE1 Yellow"],
+    options: ["🔴 Red", "🔵 Blue", "🟢 Green", "🟡 Yellow"],
     answer: 1,
   },
   // 8. Listening - single word recognition
   {
     level: "pre-A1", type: "listening",
-    instruction: "Nghe v\u00E0 ch\u1ECDn con v\u1EADt \u0111\u00FAng",
+    instruction: "Nghe và chọn con vật đúng",
     question: "Listen: 'Cat'. Which one is a cat?",
-    options: ["\uD83D\uDC36 Dog", "\uD83D\uDC31 Cat", "\uD83D\uDC1F Fish", "\uD83D\uDC18 Elephant"],
+    options: ["🐶 Dog", "🐱 Cat", "🐟 Fish", "🐘 Elephant"],
     answer: 1,
   },
 
@@ -106,14 +106,14 @@ const QUESTION_BANK: Question[] = [
   // 1. Situational
   {
     level: "A1", type: "grammar",
-    question: "At a shop: 'How much is this?' \u2014 'It ___ five dollars.'",
+    question: "At a shop: 'How much is this?' — 'It ___ five dollars.'",
     options: ["is", "are", "am", "be"],
     answer: 0,
   },
   // 2. Situational
   {
     level: "A1", type: "grammar",
-    question: "At school: 'Where ___ you from?' \u2014 'I'm from Vietnam.'",
+    question: "At school: 'Where ___ you from?' — 'I'm from Vietnam.'",
     options: ["is", "am", "are", "do"],
     answer: 2,
   },
@@ -136,14 +136,14 @@ const QUESTION_BANK: Question[] = [
   // 5. Grammar in natural dialogue
   {
     level: "A1", type: "grammar",
-    question: "'Do you like ice cream?' \u2014 'Yes, I ___.'",
+    question: "'Do you like ice cream?' — 'Yes, I ___.'",
     options: ["am", "do", "is", "like"],
     answer: 1,
   },
   // 6. Grammar in natural dialogue
   {
     level: "A1", type: "grammar",
-    question: "'___ is your teacher?' \u2014 'Miss Hoa.'",
+    question: "'___ is your teacher?' — 'Miss Hoa.'",
     options: ["What", "Where", "Who", "When"],
     answer: 2,
   },
@@ -219,7 +219,7 @@ const QUESTION_BANK: Question[] = [
   // 5. Grammar in context - past simple
   {
     level: "A2", type: "grammar",
-    question: "'What did you do yesterday?' \u2014 'I ___ to the cinema with my friends.'",
+    question: "'What did you do yesterday?' — 'I ___ to the cinema with my friends.'",
     options: ["go", "goes", "went", "going"],
     answer: 2,
   },
@@ -314,7 +314,7 @@ const QUESTION_BANK: Question[] = [
   // 5. Grammar - present perfect vs past simple
   {
     level: "B1", type: "grammar",
-    question: "'Have you ever been to Japan?' \u2014 'Yes, I ___ there last summer.'",
+    question: "'Have you ever been to Japan?' — 'Yes, I ___ there last summer.'",
     options: ["have gone", "went", "have been", "go"],
     answer: 1,
   },
@@ -508,7 +508,7 @@ const QUESTION_BANK: Question[] = [
   // 8. Nuance - precise word choice
   {
     level: "C1", type: "vocabulary",
-    question: "The evidence is ___ at best \u2014 it neither proves nor disproves the theory.",
+    question: "The evidence is ___ at best — it neither proves nor disproves the theory.",
     options: ["inconclusive", "inclusive", "conclusive", "exclusive"],
     answer: 0,
   },
@@ -597,7 +597,7 @@ const QUESTION_BANK: Question[] = [
   // 8. Academic - implicit conclusion
   {
     level: "C2", type: "reading",
-    context: "The philosopher's argument rests on the premise that consciousness is an emergent property of sufficiently complex systems. If this is accepted, the distinction between biological and artificial intelligence becomes one of degree rather than kind \u2014 a conclusion that many find philosophically disquieting.",
+    context: "The philosopher's argument rests on the premise that consciousness is an emergent property of sufficiently complex systems. If this is accepted, the distinction between biological and artificial intelligence becomes one of degree rather than kind — a conclusion that many find philosophically disquieting.",
     question: "The word 'disquieting' suggests that this conclusion ___.",
     options: [
       "is universally accepted",
@@ -701,13 +701,13 @@ const LEVEL_LABEL: Record<CEFRLevel, string> = {
 };
 
 const LEVEL_DESC_VI: Record<CEFRLevel, string> = {
-  "pre-A1": "Kh\u1EDFi \u0111\u1EA7u \u2014 B\u1EA1n c\u00F3 th\u1EC3 nh\u1EADn bi\u1EBFt c\u00E1c t\u1EEB \u0111\u01A1n l\u1EBB quen thu\u1ED9c v\u00E0 h\u00ECnh \u1EA3nh c\u01A1 b\u1EA3n.",
-  A1: "C\u01A1 b\u1EA3n \u2014 B\u1EA1n hi\u1EC3u \u0111\u01B0\u1EE3c c\u00E2u \u0111\u01A1n gi\u1EA3n v\u1EC1 c\u00E1c ch\u1EE7 \u0111\u1EC1 quen thu\u1ED9c h\u00E0ng ng\u00E0y.",
-  A2: "S\u01A1 c\u1EA5p \u2014 B\u1EA1n giao ti\u1EBFp \u0111\u01B0\u1EE3c trong c\u00E1c t\u00ECnh hu\u1ED1ng \u0111\u01A1n gi\u1EA3n, th\u01B0\u1EDDng ng\u00E0y.",
-  B1: "Trung c\u1EA5p \u2014 B\u1EA1n x\u1EED l\u00FD \u0111\u01B0\u1EE3c h\u1EA7u h\u1EBFt c\u00E1c t\u00ECnh hu\u1ED1ng khi du l\u1ECBch v\u00E0 di\u1EC5n \u0111\u1EA1t \u0111\u01B0\u1EE3c \u00FD ki\u1EBFn c\u00E1 nh\u00E2n.",
-  B2: "Trung c\u1EA5p cao \u2014 B\u1EA1n hi\u1EC3u \u0111\u01B0\u1EE3c n\u1ED9i dung ph\u1EE9c t\u1EA1p v\u00E0 s\u1EED d\u1EE5ng ti\u1EBFng Anh th\u00E0nh th\u1EA1o trong nhi\u1EC1u ng\u1EEF c\u1EA3nh.",
-  C1: "Cao c\u1EA5p \u2014 B\u1EA1n hi\u1EC3u v\u0103n b\u1EA3n d\u00E0i, ph\u1EE9c t\u1EA1p v\u00E0 nh\u1EADn ra \u00FD ngh\u0129a \u1EA9n.",
-  C2: "Th\u00E0nh th\u1EA1o \u2014 B\u1EA1n hi\u1EC3u m\u1ECDi th\u1EE9 d\u1EC5 d\u00E0ng, g\u1EA7n nh\u01B0 ng\u01B0\u1EDDi b\u1EA3n ng\u1EEF.",
+  "pre-A1": "Khởi đầu — Bạn có thể nhận biết các từ đơn lẻ quen thuộc và hình ảnh cơ bản.",
+  A1: "Cơ bản — Bạn hiểu được câu đơn giản về các chủ đề quen thuộc hàng ngày.",
+  A2: "Sơ cấp — Bạn giao tiếp được trong các tình huống đơn giản, thường ngày.",
+  B1: "Trung cấp — Bạn xử lý được hầu hết các tình huống khi du lịch và diễn đạt được ý kiến cá nhân.",
+  B2: "Trung cấp cao — Bạn hiểu được nội dung phức tạp và sử dụng tiếng Anh thành thạo trong nhiều ngữ cảnh.",
+  C1: "Cao cấp — Bạn hiểu văn bản dài, phức tạp và nhận ra ý nghĩa ẩn.",
+  C2: "Thành thạo — Bạn hiểu mọi thứ dễ dàng, gần như người bản ngữ.",
 };
 
 // ── Component ──
@@ -787,27 +787,27 @@ export function PlacementTestPage({ student, onComplete, onBack }: Props) {
   if (phase === "intro") {
     return (
       <main className="mx-auto min-h-screen w-full max-w-md px-4 py-6">
-        <SessionHeader title="Ki\u1EC3m tra x\u1EBFp l\u1EDBp" icon={<GraduationCap className="h-4 w-4" />} iconBg="bg-indigo-500" onClose={onBack} />
+        <SessionHeader title="Kiểm tra xếp lớp" icon={<GraduationCap className="h-4 w-4" />} iconBg="bg-indigo-500" onClose={onBack} />
         <div className="mt-8 flex flex-col items-center gap-6 text-center">
           <div className="flex h-20 w-20 items-center justify-center rounded-full bg-indigo-100">
             <GraduationCap className="h-10 w-10 text-indigo-600" />
           </div>
-          <h2 className="text-2xl font-extrabold tracking-tight">B\u00E0i ki\u1EC3m tra x\u1EBFp l\u1EDBp</h2>
+          <h2 className="text-2xl font-extrabold tracking-tight">Bài kiểm tra xếp lớp</h2>
           <Card className="w-full">
             <CardContent className="space-y-3 p-5 text-left text-sm text-muted-foreground">
-              <p>B\u00E0i ki\u1EC3m tra n\u00E0y s\u1EBD \u0111\u00E1nh gi\u00E1 tr\u00ECnh \u0111\u1ED9 ti\u1EBFng Anh c\u1EE7a b\u1EA1n theo khung CEFR (Pre-A1 \u2013 C2).</p>
+              <p>Bài kiểm tra này sẽ đánh giá trình độ tiếng Anh của bạn theo khung CEFR (Pre-A1 – C2).</p>
               <ul className="list-disc space-y-1 pl-5">
-                <li>T\u1EEB 10 \u0111\u1EBFn 30 c\u00E2u h\u1ECFi tr\u1EAFc nghi\u1EC7m</li>
-                <li>Kho\u1EA3ng 2 \u2013 5 ph\u00FAt</li>
-                <li>\u0110\u1ED9 kh\u00F3 t\u1EF1 \u0111\u1ED9ng \u0111i\u1EC1u ch\u1EC9nh</li>
-                <li>Ph\u00F9 h\u1EE3p m\u1ECDi l\u1EE9a tu\u1ED5i: t\u1EEB m\u1EA7m non \u0111\u1EBFn ti\u1EBFn s\u0129</li>
-                <li>K\u1EBFt qu\u1EA3: x\u1EBFp l\u1EDBp theo tr\u00ECnh \u0111\u1ED9 CEFR</li>
+                <li>Từ 10 đến 30 câu hỏi trắc nghiệm</li>
+                <li>Khoảng 2 – 5 phút</li>
+                <li>Độ khó tự động điều chỉnh</li>
+                <li>Phù hợp mọi lứa tuổi: từ mầm non đến tiến sĩ</li>
+                <li>Kết quả: xếp lớp theo trình độ CEFR</li>
               </ul>
-              <p className="font-medium text-foreground">H\u00E3y tr\u1EA3 l\u1EDDi th\u1EADt t\u1ED1t nh\u00E9, {student.name}!</p>
+              <p className="font-medium text-foreground">Hãy trả lời thật tốt nhé, {student.name}!</p>
             </CardContent>
           </Card>
           <Button className="w-full text-base font-extrabold" size="lg" onClick={startTest}>
-            B\u1EAFt \u0111\u1EA7u l\u00E0m b\u00E0i
+            Bắt đầu làm bài
           </Button>
         </div>
       </main>
@@ -819,31 +819,31 @@ export function PlacementTestPage({ student, onComplete, onBack }: Props) {
     const correctCount = answers.filter((a) => a.correct).length;
     return (
       <main className="mx-auto min-h-screen w-full max-w-md px-4 py-6">
-        <SessionHeader title="K\u1EBFt qu\u1EA3 x\u1EBFp l\u1EDBp" icon={<Trophy className="h-4 w-4" />} iconBg="bg-amber-500" onClose={onBack} />
+        <SessionHeader title="Kết quả xếp lớp" icon={<Trophy className="h-4 w-4" />} iconBg="bg-amber-500" onClose={onBack} />
         <div className="mt-8 flex flex-col items-center gap-6 text-center">
           <div className="flex h-24 w-24 items-center justify-center rounded-full bg-gradient-to-br from-indigo-400 to-purple-500 shadow-lg">
             <span className="text-3xl font-black text-white">{LEVEL_LABEL[resultLevel]}</span>
           </div>
-          <h2 className="text-2xl font-extrabold tracking-tight">Tr\u00ECnh \u0111\u1ED9 c\u1EE7a b\u1EA1n: {LEVEL_LABEL[resultLevel]}</h2>
+          <h2 className="text-2xl font-extrabold tracking-tight">Trình độ của bạn: {LEVEL_LABEL[resultLevel]}</h2>
           <p className="text-sm text-muted-foreground">{LEVEL_DESC_VI[resultLevel]}</p>
           <Card className="w-full">
             <CardContent className="space-y-2 p-5 text-sm">
               <div className="flex justify-between">
-                <span className="text-muted-foreground">\u0110\u00FAng</span>
+                <span className="text-muted-foreground">Đúng</span>
                 <span className="font-bold text-green-600">{correctCount}/{answers.length}</span>
               </div>
               <div className="flex justify-between">
-                <span className="text-muted-foreground">\u0110\u1ED9 ch\u00EDnh x\u00E1c</span>
+                <span className="text-muted-foreground">Độ chính xác</span>
                 <span className="font-bold">{Math.round((correctCount / answers.length) * 100)}%</span>
               </div>
               <div className="flex justify-between">
-                <span className="text-muted-foreground">X\u1EBFp l\u1EDBp</span>
+                <span className="text-muted-foreground">Xếp lớp</span>
                 <span className="font-bold text-indigo-600">{LEVEL_LABEL[resultLevel]}</span>
               </div>
             </CardContent>
           </Card>
           <Button className="w-full text-base font-extrabold" size="lg" onClick={() => setPhase("certificate")}>
-            Xem ch\u1EE9ng ch\u1EC9 \u0111\u1EA7u v\u00E0o
+            Xem chứng chỉ đầu vào
           </Button>
         </div>
       </main>
@@ -857,7 +857,7 @@ export function PlacementTestPage({ student, onComplete, onBack }: Props) {
     const dateStr = new Date().toLocaleDateString("vi-VN", { year: "numeric", month: "long", day: "numeric" });
     return (
       <main className="mx-auto min-h-screen w-full max-w-md px-4 py-6">
-        <SessionHeader title="Ch\u1EE9ng ch\u1EC9 x\u1EBFp l\u1EDBp" icon={<Award className="h-4 w-4" />} iconBg="bg-amber-500" onClose={() => setPhase("result")} />
+        <SessionHeader title="Chứng chỉ xếp lớp" icon={<Award className="h-4 w-4" />} iconBg="bg-amber-500" onClose={() => setPhase("result")} />
 
         {/* Print button */}
         <div className="mb-4 flex justify-end print:hidden">
@@ -866,7 +866,7 @@ export function PlacementTestPage({ student, onComplete, onBack }: Props) {
             onClick={() => window.print()}
             className="flex items-center gap-1.5 rounded-xl bg-primary px-4 py-2 text-xs font-bold text-white shadow-md transition-all active:scale-[0.97]"
           >
-            <Printer className="h-4 w-4" /> In ch\u1EE9ng ch\u1EC9
+            <Printer className="h-4 w-4" /> In chứng chỉ
           </button>
         </div>
 
@@ -877,34 +877,34 @@ export function PlacementTestPage({ student, onComplete, onBack }: Props) {
               <div className="mx-auto mb-2 flex h-14 w-14 items-center justify-center rounded-full bg-amber-100">
                 <Award className="h-8 w-8 text-amber-600" />
               </div>
-              <h1 className="text-2xl font-black tracking-wider text-gray-800 uppercase">CH\u1EE8NG CH\u1EC8 X\u1EBEP L\u1EDBP</h1>
+              <h1 className="text-2xl font-black tracking-wider text-gray-800 uppercase">CHỨNG CHỈ XẾP LớP</h1>
               <p className="text-xs text-gray-500 tracking-widest uppercase mt-1">Placement Test Certificate</p>
             </div>
 
             <div className="mx-auto mb-5 h-px w-32 bg-amber-300" />
 
-            <p className="text-xs text-gray-500 mb-2">Ch\u1EE9ng nh\u1EADn h\u1ECDc sinh</p>
+            <p className="text-xs text-gray-500 mb-2">Chứng nhận học sinh</p>
             <h2 className="text-2xl font-black text-gray-800 mb-2">{student.name}</h2>
 
-            <p className="text-xs text-gray-500 mb-4">\u0111\u00E3 ho\u00E0n th\u00E0nh b\u00E0i ki\u1EC3m tra x\u1EBFp l\u1EDBp \u0111\u1EA7u v\u00E0o</p>
+            <p className="text-xs text-gray-500 mb-4">đã hoàn thành bài kiểm tra xếp lớp đầu vào</p>
 
             <div className="mx-auto mb-4 inline-flex flex-col items-center gap-1 rounded-xl bg-gradient-to-r from-amber-400 to-amber-500 px-6 py-3 shadow-md">
               <span className="text-2xl font-black text-white">{LEVEL_LABEL[resultLevel]}</span>
               <span className="text-xs font-bold text-white/90">{LEVEL_DESC_VI[resultLevel]}</span>
             </div>
 
-            <p className="text-xs text-gray-500 mb-1">Tr\u00ECnh \u0111\u1ED9 CEFR</p>
-            <p className="text-sm font-bold text-gray-700 mb-4">\u0110i\u1EC3m: {correctCount}/{answers.length} ({pct}%)</p>
+            <p className="text-xs text-gray-500 mb-1">Trình độ CEFR</p>
+            <p className="text-sm font-bold text-gray-700 mb-4">Điểm: {correctCount}/{answers.length} ({pct}%)</p>
 
             <div className="mx-auto mb-4 h-px w-32 bg-amber-300" />
 
             <div className="flex items-center justify-between text-[10px] text-gray-400">
               <div className="text-left">
-                <p>Ng\u00E0y c\u1EA5p: {dateStr}</p>
+                <p>Ngày cấp: {dateStr}</p>
               </div>
               <div className="text-right">
                 <p className="text-sm font-black text-amber-600">English Buddy</p>
-                <p>N\u1EC1n t\u1EA3ng h\u1ECDc ti\u1EBFng Anh</p>
+                <p>Nền tảng học tiếng Anh</p>
               </div>
             </div>
           </div>
@@ -912,7 +912,7 @@ export function PlacementTestPage({ student, onComplete, onBack }: Props) {
 
         <div className="mt-6">
           <Button className="w-full text-base font-extrabold" size="lg" onClick={handleComplete}>
-            B\u1EAFt \u0111\u1EA7u h\u1ECDc
+            Bắt đầu học
           </Button>
         </div>
 
@@ -939,16 +939,16 @@ export function PlacementTestPage({ student, onComplete, onBack }: Props) {
   if (!q) return null;
 
   const typeLabel: Record<Question["type"], string> = {
-    vocabulary: "T\u1EEB v\u1EF1ng",
-    grammar: "Ng\u1EEF ph\u00E1p",
+    vocabulary: "Từ vựng",
+    grammar: "Ngữ pháp",
     listening: "Nghe",
-    reading: "\u0110\u1ECDc hi\u1EC3u",
+    reading: "Đọc hiểu",
   };
 
   return (
     <main className="mx-auto min-h-screen w-full max-w-md px-4 py-6">
       <SessionHeader
-        title={`C\u00E2u ${questionNum}/${MAX_ANSWERS}`}
+        title={`Câu ${questionNum}/${MAX_ANSWERS}`}
         icon={<GraduationCap className="h-4 w-4" />}
         iconBg="bg-indigo-500"
         onClose={onBack}
