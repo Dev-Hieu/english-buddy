@@ -318,6 +318,16 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
               <p className="text-[9px] text-muted-foreground">4 kỹ năng</p>
             </div>
           </button>
+          <button type="button" onClick={() => onNavigate("certification")}
+            className="flex items-center gap-3 rounded-2xl bg-card border border-border/40 p-3 shadow-sm transition-all active:scale-[0.97] hover:shadow-md text-left">
+            <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-[0.625rem] bg-red-500 text-white shadow-md">
+              <Award className="h-5 w-5" />
+            </span>
+            <div className="min-w-0">
+              <p className="text-xs font-extrabold">Chứng chỉ</p>
+              <p className="text-[9px] text-muted-foreground">Thi lấy bằng</p>
+            </div>
+          </button>
         </div>
       </section>
 

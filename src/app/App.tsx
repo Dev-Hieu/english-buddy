@@ -43,11 +43,12 @@ import { PlacementTestPage } from "@/pages/PlacementTestPage";
 import { BadgesPage } from "@/pages/BadgesPage";
 import { LearningPathPage } from "@/pages/LearningPathPage";
 import { IntegratedLessonPage } from "@/pages/IntegratedLessonPage";
+import { CertificationPage } from "@/pages/CertificationPage";
 
 type View =
   | "student-select" | "admin" | "home" | "topics" | "lesson"
   | "flashcard" | "review" | "lookup" | "test" | "games" | "speak" | "shadowing" | "dashboard" | "mywords" | "leaderboard" | "topicwords" | "grammar" | "grammar-lesson" | "exam" | "conversation" | "imagepicker" | "skilltest"
-  | "listening" | "writing" | "reading" | "phrases" | "premium" | "placement" | "badges" | "learning-path" | "integrated-lesson";
+  | "listening" | "writing" | "reading" | "phrases" | "premium" | "placement" | "badges" | "learning-path" | "integrated-lesson" | "certification";
 
 interface Route { view: View; topicId: string; level: Level | "all"; mode?: "new" | "review"; }
 
@@ -58,7 +59,7 @@ const ACTIVE_TAB: Record<View, TabKey | null> = {
   "student-select": null, admin: null, home: "home", topics: "home", lesson: "home", flashcard: "home",
   review: "review", lookup: "lookup", test: "test", games: null, speak: "speak", shadowing: null, dashboard: null, mywords: "mywords", leaderboard: null, topicwords: null,
   grammar: null, "grammar-lesson": null, exam: null, conversation: null, imagepicker: null, skilltest: null,
-  listening: null, writing: null, reading: null, phrases: null, premium: null, placement: null, badges: null, "learning-path": null, "integrated-lesson": null,
+  listening: null, writing: null, reading: null, phrases: null, premium: null, placement: null, badges: null, "learning-path": null, "integrated-lesson": null, certification: null,
 };
 
 export function App() {
@@ -384,6 +385,9 @@ export function App() {
       break;
     case "integrated-lesson":
       content = <IntegratedLessonPage student={student} onBackHome={() => navigate("home")} />;
+      break;
+    case "certification":
+      content = <CertificationPage student={student} onBackHome={() => navigate("home")} />;
       break;
     default:
       content = (
