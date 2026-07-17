@@ -96,7 +96,7 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
             <span className="text-xl">{avatarEmoji(student.avatar)}</span>
             <div className="text-right">
               <p className="text-sm font-black leading-tight">{student.name}</p>
-              <p className="text-[10px] font-bold text-muted-foreground">Lv {level} · {levelLabel(xp)}</p>
+              <p className="text-[10px] font-bold text-muted-foreground">{CEFR_LABEL[student.level] || "A1"} · ⭐{xp}</p>
             </div>
           </button>
           {showMenu && (
@@ -108,7 +108,7 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
                   <span className="text-2xl">{avatarEmoji(student.avatar)}</span>
                   <div className="min-w-0">
                     <p className="text-sm font-black truncate">{student.name}</p>
-                    <p className="text-[10px] font-bold text-muted-foreground">Lv {level} · {CEFR_LABEL[student.level] || "A1"}</p>
+                    <p className="text-[10px] font-bold text-muted-foreground">{CEFR_LABEL[student.level] || "A1"} · ⭐{xp} XP</p>
                   </div>
                 </div>
 
