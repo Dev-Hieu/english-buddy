@@ -762,9 +762,9 @@ export function ReadingPage({ student, onBackHome }: Props) {
         <SessionHeader title={activeStory.title} onClose={backToList}
           right={<span className="rounded-full bg-primary/10 px-2.5 py-1 text-xs font-extrabold text-primary">{activeStory.level}</span>} />
 
-        <Card>
-          <CardContent className="px-5 py-6"><div ref={cardRef}>
-            <div className="font-reading text-[15px] leading-[2] text-justify tracking-wide">
+        <Card className="bg-amber-50/30 dark:bg-amber-950/10">
+          <CardContent className="px-5 py-6 sm:px-7 sm:py-8"><div ref={cardRef}>
+            <div className="font-reading text-base lg:text-lg leading-[2] text-justify tracking-wide first-letter:text-2xl first-letter:font-black first-letter:text-primary first-letter:float-left first-letter:mr-1">
               {words.map((w, i) => {
                 const clean = w.toLowerCase().replace(/[^a-z]/g, "");
                 const meaning = clean ? MINI_DICT[clean] : undefined;

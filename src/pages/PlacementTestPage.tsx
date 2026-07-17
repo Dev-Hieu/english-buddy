@@ -965,11 +965,11 @@ export function PlacementTestPage({ student, onComplete, onBack }: Props) {
               <p className="mb-2 text-xs font-medium text-muted-foreground italic">{q.instruction}</p>
             )}
             {q.context && (
-              <div className="mb-3 rounded-lg bg-muted/50 p-3 text-sm leading-relaxed text-muted-foreground">
+              <div className="mb-3 rounded-lg bg-muted/50 p-3.5 sm:p-4 font-reading text-sm lg:text-base leading-relaxed text-muted-foreground">
                 {q.context}
               </div>
             )}
-            <p className="text-base font-bold leading-relaxed">{q.question}</p>
+            <p className="text-base lg:text-lg font-bold leading-relaxed">{q.question}</p>
           </CardContent>
         </Card>
         <div className="flex flex-col gap-3">
@@ -988,7 +988,7 @@ export function PlacementTestPage({ student, onComplete, onBack }: Props) {
                 type="button"
                 disabled={showFeedback}
                 onClick={() => handleSelect(i)}
-                className={`flex items-center gap-3 rounded-xl px-4 py-3.5 ${cls}`}
+                className={`flex items-center gap-3 rounded-xl px-4 py-3.5 min-h-[44px] ${cls}`}
               >
                 <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-muted text-xs font-bold">
                   {String.fromCharCode(65 + i)}

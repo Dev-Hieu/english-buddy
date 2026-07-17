@@ -556,7 +556,7 @@ export function LearningPathPage({ student, onNavigate, onBackHome }: LearningPa
       </div>
 
       {/* Week tabs */}
-      <div className="mb-5 flex gap-2 overflow-x-auto pb-1">
+      <div className="mb-5 flex gap-2 overflow-x-auto pb-1 scrollbar-none -mx-1 px-1">
         {[1, 2, 3, 4].map((w) => {
           const weekDone = curriculum.filter((l) => l.week === w && completed.has(l.id)).length;
           const weekTotal = curriculum.filter((l) => l.week === w).length;
@@ -567,7 +567,7 @@ export function LearningPathPage({ student, onNavigate, onBackHome }: LearningPa
               type="button"
               onClick={() => setActiveWeek(w)}
               className={cn(
-                "flex-1 min-w-0 rounded-xl px-3 py-2.5 text-center transition-all active:scale-95",
+                "flex-1 min-w-[72px] shrink-0 rounded-xl px-3 py-2.5 text-center transition-all active:scale-95",
                 activeWeek === w
                   ? "bg-primary text-white shadow-lg"
                   : "bg-card border border-border/60 hover:bg-muted",
@@ -598,7 +598,7 @@ export function LearningPathPage({ student, onNavigate, onBackHome }: LearningPa
             <div
               key={lesson.id}
               className={cn(
-                "rounded-2xl border px-4 py-3.5 transition-all",
+                "rounded-2xl border px-4 py-4 sm:px-5 sm:py-5 transition-all",
                 isToday && !isDone
                   ? "border-primary/50 bg-primary/5 shadow-lg ring-2 ring-primary/20"
                   : isDone

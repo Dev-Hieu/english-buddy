@@ -831,16 +831,16 @@ export function CertificationPage({ student, onBackHome, onLevelUp }: { student:
             </button>
           )}
 
-          <p className="text-sm font-bold leading-relaxed">{question.question}</p>
+          <p className="font-reading text-base lg:text-lg font-bold leading-relaxed">{question.question}</p>
 
-          <div className="space-y-2">
+          <div className="space-y-2.5">
             {question.options.map((opt, oIdx) => (
               <button
                 key={oIdx}
                 type="button"
                 onClick={() => selectAnswer(gIdx, oIdx)}
                 className={cn(
-                  "w-full rounded-xl border p-3 text-left text-sm transition-all active:scale-[0.98]",
+                  "w-full rounded-xl border p-3.5 min-h-[44px] text-left text-sm lg:text-base transition-all active:scale-[0.98]",
                   answers[gIdx] === oIdx
                     ? "border-primary bg-primary/10 font-bold text-primary"
                     : "border-border/40 bg-card hover:border-primary/30",

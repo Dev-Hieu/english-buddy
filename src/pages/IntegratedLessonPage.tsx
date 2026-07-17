@@ -602,8 +602,8 @@ function VocabStep({ step, onNext }: { step: LessonStep; onNext: () => void }) {
       <p className="text-sm text-muted-foreground">{step.content}</p>
 
       <button type="button" onClick={flip} className="w-full">
-        <Card className="min-h-[160px] flex items-center justify-center transition-all hover:shadow-lg active:scale-[0.98]">
-          <CardContent className="flex flex-col items-center gap-3 p-8 text-center">
+        <Card className="min-h-[180px] flex items-center justify-center transition-all hover:shadow-lg active:scale-[0.98]">
+          <CardContent className="flex flex-col items-center gap-4 p-8 sm:p-10 text-center">
             {!flipped ? (
               <>
                 <span className="text-3xl font-black">{currentWord.en}</span>
@@ -673,7 +673,7 @@ function ListenStep({ step, onNext }: { step: LessonStep; onNext: () => void }) 
             <Play className="h-4 w-4" /> Nghe bài đọc
           </Button>
           {step.passage && (
-            <p className="text-sm leading-relaxed border-l-2 border-primary/30 pl-3 text-muted-foreground">{step.passage}</p>
+            <p className="font-reading text-sm lg:text-base leading-relaxed border-l-2 border-primary/30 pl-3 text-muted-foreground">{step.passage}</p>
           )}
         </CardContent>
       </Card>
@@ -740,9 +740,9 @@ function ReadStep({ step, onNext }: { step: LessonStep; onNext: () => void }) {
       <h2 className="text-lg font-extrabold">{step.title}</h2>
       <p className="text-sm text-muted-foreground">{step.content}</p>
 
-      <Card>
-        <CardContent className="p-4">
-          <p className="text-sm leading-relaxed whitespace-pre-line">{step.passage}</p>
+      <Card className="bg-amber-50/30 dark:bg-amber-950/10">
+        <CardContent className="p-4 sm:p-5">
+          <p className="font-reading text-sm lg:text-base leading-relaxed whitespace-pre-line">{step.passage}</p>
         </CardContent>
       </Card>
 
@@ -946,9 +946,9 @@ function WriteStep({ step, onNext }: { step: LessonStep; onNext: () => void }) {
       <p className="text-sm text-muted-foreground">{step.content}</p>
 
       {step.prompt && (
-        <Card className="border-violet-200 bg-violet-50/50">
-          <CardContent className="p-4">
-            <p className="text-sm font-semibold">{step.prompt}</p>
+        <Card className="border-violet-200 bg-violet-50/50 dark:border-violet-800 dark:bg-violet-950/30">
+          <CardContent className="p-4 sm:p-5">
+            <p className="text-sm lg:text-base font-semibold leading-relaxed">{step.prompt}</p>
           </CardContent>
         </Card>
       )}
