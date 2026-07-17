@@ -19,6 +19,7 @@ import { countEarnedBadges } from "@/pages/BadgesPage";
 
 function levelOf(xp: number) { const thresholds = [0, 50, 150, 400, 800, 1500, 3000]; const lvl = thresholds.findIndex((t) => xp < t); return lvl < 0 ? thresholds.length : lvl; }
 function levelLabel(xp: number) { return ["Mới bắt đầu", "Sơ cấp", "Tiền trung cấp", "Trung cấp", "Trung cao cấp", "Cao cấp", "Thành thạo"][levelOf(xp) - 1] || ""; }
+const CEFR_LABEL: Record<string, string> = { kids: "Mầm non", a1: "A1", a2: "A2", b1: "B1", b2: "B2", c1: "C1" };
 
 type Nav = (view: string, topicId?: string, level?: string) => void;
 
@@ -107,7 +108,7 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
                   <span className="text-2xl">{avatarEmoji(student.avatar)}</span>
                   <div className="min-w-0">
                     <p className="text-sm font-black truncate">{student.name}</p>
-                    <p className="text-[10px] font-bold text-muted-foreground">Lv {level} · {student.level?.toUpperCase?.() || "A1"}</p>
+                    <p className="text-[10px] font-bold text-muted-foreground">Lv {level} · {CEFR_LABEL[student.level] || "A1"}</p>
                   </div>
                 </div>
 
@@ -209,7 +210,7 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
             </span>
             <div className="flex-1 min-w-0">
               <p className="text-sm font-black">Sẵn sàng thi nâng cấp!</p>
-              <p className="text-[10px] font-bold text-white/80">Thi chứng chỉ {(student.level || "a1").toUpperCase()} để lên level tiếp theo</p>
+              <p className="text-[10px] font-bold text-white/80">Thi chứng chỉ {CEFR_LABEL[student.level] || "A1"} để lên level tiếp theo</p>
             </div>
             <span className="text-lg font-black">→</span>
           </div>
