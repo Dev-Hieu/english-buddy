@@ -1014,8 +1014,12 @@ export function CertificationPage({ student, onBackHome, onLevelUp }: { student:
               Thử lại
             </button>
             {!passed && (
-              <div className="rounded-xl bg-blue-50 border border-blue-200 p-3 text-xs text-blue-800 dark:bg-blue-950/30 dark:border-blue-800 dark:text-blue-200">
-                <strong>Gợi ý:</strong> Hãy ôn tập thêm các phần yếu nhất và thử lại. Bạn có thể luyện tập với các bài học và kiểm tra trong ứng dụng.
+              <div className="rounded-xl bg-orange-50 border border-orange-200 p-4 text-xs text-orange-800 dark:bg-orange-950/30 dark:border-orange-800 dark:text-orange-200 space-y-2">
+                <p className="font-black text-sm">Bạn cần học thêm ở trình độ {selectedExam.level}</p>
+                <p>Điểm của bạn: <strong>{pct}%</strong> (cần đạt {selectedExam.passingScore}%). Hãy tiếp tục luyện tập các kỹ năng Nghe, Đọc, Ngữ pháp và Từ vựng ở trình độ hiện tại rồi thi lại.</p>
+                <button type="button" onClick={onBackHome} className="w-full rounded-xl bg-orange-500 py-2 text-xs font-extrabold text-white shadow-sm transition-all active:scale-[0.97]">
+                  Về trang chủ học tiếp
+                </button>
               </div>
             )}
           </div>
