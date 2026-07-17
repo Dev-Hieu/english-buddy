@@ -11,8 +11,21 @@ export function Footer({ onNavigate }: FooterProps) {
         onClick={() => onNavigate("premium")}
         className="font-bold text-amber-600 hover:underline"
       >
-        ⭐ Nâng cấp Premium
+        Nang cap Premium
       </button>
+      <div className="flex items-center justify-center gap-2 mt-1">
+        <button type="button" onClick={() => onNavigate("legal")} className="hover:underline">
+          Chinh sach
+        </button>
+        <span>·</span>
+        <button type="button" onClick={() => onNavigate("legal")} className="hover:underline">
+          Dieu khoan
+        </button>
+        <span>·</span>
+        <a href="mailto:support@buddy.vn" className="hover:underline">
+          Gop y
+        </a>
+      </div>
     </footer>
   );
 }

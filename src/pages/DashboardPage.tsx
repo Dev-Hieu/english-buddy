@@ -1,4 +1,4 @@
-import { BarChart3, BookOpen, ClipboardCheck, Ear, Flame, Gamepad2, GraduationCap, Loader2, MessageSquareText, Mic, PenLine, Sparkles, Star, Trophy, Type } from "lucide-react";
+import { BarChart3, BookOpen, Check, ClipboardCheck, Copy, Ear, Flame, Gamepad2, GraduationCap, Loader2, MessageSquareText, Mic, PenLine, Share2, Sparkles, Star, Trophy, Type } from "lucide-react";
 import { useEffect, useState } from "react";
 import { SEED_TOPICS } from "@/data/seedTopics";
 import { SEED_VOCABULARY } from "@/data/seedVocabulary";
@@ -10,6 +10,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { SessionHeader } from "@/components/layout/SessionHeader";
 import { avatarEmoji } from "@/components/ui/emoji";
 import { cn } from "@/components/ui/cn";
+import { countEarnedBadges } from "@/pages/BadgesPage";
 
 interface DashboardPageProps {
   students: Student[];
@@ -96,6 +97,29 @@ export function DashboardPage({ students, onBackHome }: DashboardPageProps) {
 
   const toggle = (key: string) => setExpandedSection(expandedSection === key ? null : key);
 
+  // Share progress
+  const [copied, setCopied] = useState(false);
+  const badgeCount = countEarnedBadges(student, learnedIds.size);
+  const shareText = `English Buddy\n${student.name}: ${levelLabel(xp)} · ${xp} XP · ${streak} ngay\n${learnedIds.size} tu da hoc\n${badgeCount} huy hieu\nen.vev.vn`;
+
+  const copyProgress = async () => {
+    try {
+      await navigator.clipboard.writeText(shareText);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch { /* clipboard not available */ }
+  };
+
+  const shareProgress = async () => {
+    if (navigator.share) {
+      try {
+        await navigator.share({ title: "English Buddy", text: shareText });
+      } catch { /* user cancelled or not supported */ }
+    } else {
+      await copyProgress();
+    }
+  };
+
   return (
     <main className="mx-auto w-full max-w-md sm:max-w-lg lg:max-w-2xl overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
       <SessionHeader title="Tiến độ học tập" onClose={onBackHome} icon={<BarChart3 className="h-4 w-4" />} iconBg="bg-indigo-500" />
@@ -112,10 +136,23 @@ export function DashboardPage({ students, onBackHome }: DashboardPageProps) {
           </div>
 
           {/* Stats row */}
-          <div className="flex items-center gap-3 text-xs font-black">
-            <span className="flex items-center gap-1"><Star className="h-3.5 w-3.5 text-amber-500" />{xp} XP</span>
-            <span className="flex items-center gap-1"><Flame className="h-3.5 w-3.5 text-red-500" />{streak} ngày</span>
-            <span className="flex items-center gap-1"><Trophy className="h-3.5 w-3.5 text-indigo-500" />{masteredCount} thuộc</span>
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-3 text-xs font-black">
+              <span className="flex items-center gap-1"><Star className="h-3.5 w-3.5 text-amber-500" />{xp} XP</span>
+              <span className="flex items-center gap-1"><Flame className="h-3.5 w-3.5 text-red-500" />{streak} ngày</span>
+              <span className="flex items-center gap-1"><Trophy className="h-3.5 w-3.5 text-indigo-500" />{masteredCount} thuộc</span>
+            </div>
+            <div className="flex items-center gap-1.5">
+              <button type="button" onClick={copyProgress}
+                className={cn("flex items-center gap-1 rounded-lg px-2 py-1 text-[10px] font-bold transition-all active:scale-95",
+                  copied ? "bg-emerald-100 text-emerald-700" : "bg-muted hover:bg-muted/80 text-muted-foreground")}>
+                {copied ? <><Check className="h-3 w-3" /> Đã sao chép!</> : <><Copy className="h-3 w-3" /> Sao chép</>}
+              </button>
+              <button type="button" onClick={shareProgress}
+                className="flex items-center gap-1 rounded-lg bg-primary/10 hover:bg-primary/20 px-2 py-1 text-[10px] font-bold text-primary transition-all active:scale-95">
+                <Share2 className="h-3 w-3" /> Chia sẻ
+              </button>
+            </div>
           </div>
 
           {/* Biểu đồ kỹ năng — thanh ngang */}

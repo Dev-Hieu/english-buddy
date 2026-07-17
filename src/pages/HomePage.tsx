@@ -1,7 +1,7 @@
-import { Award, BookOpen, ClipboardCheck, Compass, Ear, Flame, Gamepad2, GraduationCap, Layers, LogOut, Medal, MessageSquareText, Mic, PenLine, RotateCcw, Settings, Sparkles, Star, Target, Trophy, Type, UserRound } from "lucide-react";
+import { Award, BookOpen, CheckCircle, ClipboardCheck, Compass, Ear, Flame, Gamepad2, GraduationCap, BookMarked, Layers, LogOut, Medal, MessageSquareText, Mic, PenLine, RotateCcw, Settings, Shield, Sparkles, Star, Target, Trophy, Type, UserRound, Volume2 } from "lucide-react";
 import { SmartReview } from "@/components/SmartReview";
 import type { ComponentType } from "react";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { getLeaderboard } from "@/services/studentService";
 import { getSkillTestResults, type SkillTestResult } from "@/services/progressService";
 import { SEED_TOPICS } from "@/data/seedTopics";
@@ -16,6 +16,7 @@ import { cn } from "@/components/ui/cn";
 import { Footer } from "@/components/layout/Footer";
 import { LEVEL_ORDER } from "@/types";
 import { countEarnedBadges } from "@/pages/BadgesPage";
+import { speakText } from "@/services/speechService";
 
 function levelOf(xp: number) { const thresholds = [0, 50, 150, 400, 800, 1500, 3000]; const lvl = thresholds.findIndex((t) => xp < t); return lvl < 0 ? thresholds.length : lvl; }
 function levelLabel(xp: number) { return ["Mới bắt đầu", "Sơ cấp", "Tiền trung cấp", "Trung cấp", "Trung cao cấp", "Cao cấp", "Thành thạo"][levelOf(xp) - 1] || ""; }
@@ -58,6 +59,21 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
   const [testResults, setTestResults] = useState<SkillTestResult[]>([]);
   const [showMenu, setShowMenu] = useState(false);
   const [weekRank, setWeekRank] = useState<number | null>(null);
+  const [showFreezeConfirm, setShowFreezeConfirm] = useState(false);
+
+  // Streak freeze: check localStorage for active freeze (visual feature only)
+  const freezeKey = `eb_streak_freeze_${student.id}`;
+  const freezeTimestamp = (() => { try { return Number(localStorage.getItem(freezeKey) || 0); } catch { return 0; } })();
+  const todayStart = new Date(); todayStart.setHours(0, 0, 0, 0);
+  const isFrozenToday = freezeTimestamp >= todayStart.getTime();
+
+  const activateFreeze = () => {
+    if (xp < 50) return;
+    localStorage.setItem(freezeKey, String(Date.now()));
+    setShowFreezeConfirm(false);
+    // Force re-render
+    window.dispatchEvent(new Event("storage"));
+  };
 
   useEffect(() => { getSkillTestResults(student.id).then(r => setTestResults(r.slice(0, 5))).catch(() => {}); }, [student.id]);
   useEffect(() => { getLeaderboard("week").then((lb) => { const idx = lb.findIndex((e: any) => e.id === student.id); setWeekRank(idx >= 0 ? idx + 1 : null); }).catch(() => {}); }, [student.id]);
@@ -80,6 +96,15 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
   });
   const totalWords = SEED_VOCABULARY.length;
   const overallPct = totalWords ? Math.round((learned.size / totalWords) * 100) : 0;
+
+  // Word of the Day — deterministic pick based on day of year
+  const wotd = useMemo(() => {
+    if (SEED_VOCABULARY.length === 0) return null;
+    const now = new Date();
+    const start = new Date(now.getFullYear(), 0, 0);
+    const dayOfYear = Math.floor((now.getTime() - start.getTime()) / 86400000);
+    return SEED_VOCABULARY[dayOfYear % SEED_VOCABULARY.length];
+  }, []);
 
   return (
     <main className="mx-auto w-full max-w-md sm:max-w-lg lg:max-w-2xl overflow-x-hidden h-[100dvh] overflow-y-auto bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:h-[calc(100dvh-2rem)] sm:border sm:border-border/40 px-4 pt-4 pb-6 space-y-4">
@@ -154,12 +179,21 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
           </span>
           <span className="text-xs font-black">{xp} XP</span>
         </button>
-        <button type="button" onClick={() => onNavigate("dashboard")} className="flex flex-col items-center gap-1.5 transition-all active:scale-[0.90] hover:scale-[1.05]">
-          <span className="flex h-12 w-12 items-center justify-center rounded-[0.875rem] bg-red-500 text-white shadow-lg">
-            <Flame className="h-6 w-6" />
-          </span>
+        <div className="flex flex-col items-center gap-1.5">
+          <button type="button" onClick={() => onNavigate("dashboard")} className="transition-all active:scale-[0.90] hover:scale-[1.05]">
+            <span className="flex h-12 w-12 items-center justify-center rounded-[0.875rem] bg-red-500 text-white shadow-lg relative">
+              <Flame className="h-6 w-6" />
+              {isFrozenToday && <Shield className="absolute -top-1 -right-1 h-4 w-4 text-cyan-300 drop-shadow" />}
+            </span>
+          </button>
           <span className="text-xs font-black">{streak} ngày</span>
-        </button>
+          {isFrozenToday ? (
+            <span className="text-[9px] font-bold text-cyan-600">Đã đóng băng</span>
+          ) : streak > 0 ? (
+            <button type="button" onClick={() => setShowFreezeConfirm(true)}
+              className="text-[9px] font-bold text-cyan-600 hover:underline">Đóng băng</button>
+          ) : null}
+        </div>
         <button type="button" onClick={() => onNavigate("leaderboard")} className="flex flex-col items-center gap-1.5 transition-all active:scale-[0.90] hover:scale-[1.05]">
           <span className="flex h-12 w-12 items-center justify-center rounded-[0.875rem] bg-indigo-500 text-white shadow-lg">
             <Trophy className="h-6 w-6" />
@@ -173,6 +207,35 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
           <span className="text-xs font-black">{countEarnedBadges(student, learned.size)} huy hiệu</span>
         </button>
       </div>
+
+      {/* Streak freeze confirm dialog */}
+      {showFreezeConfirm && (
+        <>
+          <div className="fixed inset-0 z-50 bg-black/30" onClick={() => setShowFreezeConfirm(false)} />
+          <div className="fixed inset-0 z-50 flex items-center justify-center p-4" onClick={() => setShowFreezeConfirm(false)}>
+            <div className="bg-card rounded-2xl border border-border/60 shadow-xl p-5 max-w-xs w-full space-y-3" onClick={(e) => e.stopPropagation()}>
+              <div className="flex items-center gap-2">
+                <Shield className="h-5 w-5 text-cyan-500" />
+                <h3 className="text-sm font-black">Đóng băng chuỗi ngày?</h3>
+              </div>
+              <p className="text-xs text-muted-foreground">
+                Sử dụng 50 XP để bảo vệ chuỗi {streak} ngày. Nếu bạn nghỉ học 1 ngày, chuỗi sẽ không bị mất.
+              </p>
+              <p className="text-xs font-bold">XP hiện tại: {xp}</p>
+              {xp < 50 && (
+                <p className="text-xs font-bold text-red-500">Không đủ XP! Cần ít nhất 50 XP.</p>
+              )}
+              <div className="flex gap-2">
+                <button type="button" onClick={() => setShowFreezeConfirm(false)}
+                  className="flex-1 rounded-xl border border-border/60 px-3 py-2 text-xs font-bold hover:bg-muted transition-colors">Huỷ</button>
+                <button type="button" onClick={activateFreeze} disabled={xp < 50}
+                  className="flex-1 rounded-xl bg-cyan-500 text-white px-3 py-2 text-xs font-bold hover:bg-cyan-600 transition-colors disabled:opacity-50 disabled:cursor-not-allowed">Đóng băng (-50 XP)</button>
+              </div>
+              <p className="text-[9px] text-muted-foreground text-center">* Đóng băng thực sự cần xử lý phía server.</p>
+            </div>
+          </div>
+        </>
+      )}
 
       {/* ── Tiến độ kỹ năng — thanh ngang, bấm → dashboard ── */}
       <button type="button" onClick={() => onNavigate("dashboard")}
@@ -199,6 +262,42 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
           ))}
         </div>
       </button>
+
+      {/* ── Từ vựng hôm nay ── */}
+      {wotd && (
+        <div className="rounded-2xl bg-gradient-to-br from-sky-50 to-indigo-50 dark:from-sky-950/40 dark:to-indigo-950/40 border border-sky-200/60 dark:border-sky-800/40 p-4 shadow-sm">
+          <div className="flex items-center gap-2 mb-2">
+            <BookMarked className="h-4 w-4 text-sky-600 dark:text-sky-400" />
+            <span className="text-xs font-black text-sky-700 dark:text-sky-300">Từ vựng hôm nay</span>
+          </div>
+          <div className="flex items-start justify-between gap-3">
+            <div className="min-w-0 flex-1">
+              <div className="flex items-center gap-2">
+                <span className="text-lg font-black">{wotd.word}</span>
+                <button type="button" onClick={() => speakText(wotd.word)}
+                  className="flex h-7 w-7 items-center justify-center rounded-full bg-sky-500 text-white shadow-sm transition-all active:scale-90 hover:bg-sky-600">
+                  <Volume2 className="h-3.5 w-3.5" />
+                </button>
+              </div>
+              {wotd.phonetic && <p className="text-[11px] text-muted-foreground font-mono">{wotd.phonetic}</p>}
+              <p className="text-sm font-bold mt-1">{wotd.meaning_vi}</p>
+              {wotd.example && <p className="text-xs text-muted-foreground mt-1 italic">"{wotd.example}"</p>}
+            </div>
+          </div>
+          <div className="flex gap-2 mt-3">
+            {learned.has(wotd.id) ? (
+              <span className="flex items-center gap-1.5 rounded-xl bg-emerald-100 dark:bg-emerald-900/40 px-3 py-1.5 text-xs font-bold text-emerald-700 dark:text-emerald-300">
+                <CheckCircle className="h-3.5 w-3.5" /> Đã biết
+              </span>
+            ) : (
+              <button type="button" onClick={() => onNavigate("topics")}
+                className="rounded-xl bg-sky-500 px-4 py-1.5 text-xs font-bold text-white shadow-sm transition-all active:scale-95 hover:bg-sky-600">
+                Học từ này
+              </button>
+            )}
+          </div>
+        </div>
+      )}
 
       {/* ── Banner nâng cấp trình độ ── */}
       {learnedTotal >= 30 && (

@@ -44,11 +44,95 @@ import { BadgesPage } from "@/pages/BadgesPage";
 import { LearningPathPage } from "@/pages/LearningPathPage";
 import { IntegratedLessonPage } from "@/pages/IntegratedLessonPage";
 import { CertificationPage } from "@/pages/CertificationPage";
+import { LegalPage } from "@/pages/LegalPage";
+import { Ear, Mic, BookOpen, PenLine, Sparkles, MessageSquareText, GraduationCap, Gamepad2, Type, ChevronRight } from "lucide-react";
+
+// ── Onboarding overlay for new students ──
+function OnboardingOverlay({ onComplete, onPlacement }: { onComplete: () => void; onPlacement: () => void }) {
+  const [slide, setSlide] = useState(0);
+  const SLIDES = 3;
+
+  const next = () => {
+    if (slide < SLIDES - 1) setSlide(slide + 1);
+  };
+
+  return (
+    <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/60 backdrop-blur-sm px-4">
+      <div className="w-full max-w-sm rounded-3xl bg-card shadow-2xl overflow-hidden">
+        <div className="px-6 pt-8 pb-6 flex flex-col items-center text-center min-h-[340px] justify-center">
+          {slide === 0 && (
+            <>
+              <ParrotLogo size={72} />
+              <h2 className="text-xl font-black mt-4">Chao mung den English Buddy!</h2>
+              <p className="text-sm text-muted-foreground mt-2">Hoc tieng Anh vui ve va hieu qua moi ngay</p>
+            </>
+          )}
+          {slide === 1 && (
+            <>
+              <h2 className="text-lg font-black mb-4">9 ky nang hoc tap</h2>
+              <div className="grid grid-cols-3 gap-3">
+                {[
+                  { icon: Ear, label: "Nghe", bg: "bg-blue-500" },
+                  { icon: Mic, label: "Noi", bg: "bg-teal-500" },
+                  { icon: BookOpen, label: "Doc", bg: "bg-green-500" },
+                  { icon: PenLine, label: "Viet", bg: "bg-violet-500" },
+                  { icon: Sparkles, label: "Tu moi", bg: "bg-amber-500" },
+                  { icon: MessageSquareText, label: "Cau", bg: "bg-sky-500" },
+                  { icon: GraduationCap, label: "Ngu phap", bg: "bg-rose-500" },
+                  { icon: Gamepad2, label: "Game", bg: "bg-pink-500" },
+                  { icon: Type, label: "Mau cau", bg: "bg-orange-500" },
+                ].map((s) => (
+                  <div key={s.label} className="flex flex-col items-center gap-1">
+                    <span className={`flex h-10 w-10 items-center justify-center rounded-xl text-white shadow ${s.bg}`}>
+                      <s.icon className="h-5 w-5" />
+                    </span>
+                    <span className="text-[10px] font-bold">{s.label}</span>
+                  </div>
+                ))}
+              </div>
+            </>
+          )}
+          {slide === 2 && (
+            <>
+              <h2 className="text-lg font-black mb-2">Bat dau hoc thoi!</h2>
+              <p className="text-sm text-muted-foreground mb-6">Lam bai kiem tra xep lop de bat dau voi trinh do phu hop</p>
+              <button type="button" onClick={() => { onComplete(); onPlacement(); }}
+                className="flex items-center gap-2 rounded-2xl bg-primary px-6 py-3 text-sm font-extrabold text-white shadow-lg transition-all active:scale-95 hover:brightness-110">
+                Bai kiem tra xep lop <ChevronRight className="h-4 w-4" />
+              </button>
+            </>
+          )}
+        </div>
+
+        {/* Dots + navigation */}
+        <div className="flex items-center justify-between px-6 pb-6">
+          <button type="button" onClick={onComplete}
+            className="text-xs font-bold text-muted-foreground hover:text-foreground transition-colors">
+            Bo qua
+          </button>
+          <div className="flex gap-1.5">
+            {Array.from({ length: SLIDES }).map((_, i) => (
+              <span key={i} className={`h-2 w-2 rounded-full transition-all ${i === slide ? "bg-primary w-5" : "bg-muted-foreground/30"}`} />
+            ))}
+          </div>
+          {slide < SLIDES - 1 ? (
+            <button type="button" onClick={next}
+              className="text-xs font-bold text-primary hover:underline">
+              Tiep theo
+            </button>
+          ) : (
+            <div className="w-14" /> // spacer
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
 
 type View =
   | "student-select" | "admin" | "home" | "topics" | "lesson"
   | "flashcard" | "review" | "lookup" | "test" | "games" | "speak" | "shadowing" | "dashboard" | "mywords" | "leaderboard" | "topicwords" | "grammar" | "grammar-lesson" | "exam" | "conversation" | "imagepicker" | "skilltest"
-  | "listening" | "writing" | "reading" | "phrases" | "premium" | "placement" | "badges" | "learning-path" | "integrated-lesson" | "certification";
+  | "listening" | "writing" | "reading" | "phrases" | "premium" | "placement" | "badges" | "learning-path" | "integrated-lesson" | "certification" | "legal";
 
 interface Route { view: View; topicId: string; level: Level | "all"; mode?: "new" | "review"; }
 
@@ -59,7 +143,7 @@ const ACTIVE_TAB: Record<View, TabKey | null> = {
   "student-select": null, admin: null, home: "home", topics: "home", lesson: "home", flashcard: "home",
   review: "review", lookup: "lookup", test: "test", games: null, speak: "speak", shadowing: null, dashboard: null, mywords: "mywords", leaderboard: null, topicwords: null,
   grammar: null, "grammar-lesson": null, exam: null, conversation: null, imagepicker: null, skilltest: null,
-  listening: null, writing: null, reading: null, phrases: null, premium: null, placement: null, badges: null, "learning-path": null, "integrated-lesson": null, certification: null,
+  listening: null, writing: null, reading: null, phrases: null, premium: null, placement: null, badges: null, "learning-path": null, "integrated-lesson": null, certification: null, legal: null,
 };
 
 export function App() {
@@ -71,6 +155,7 @@ export function App() {
   const [streak, setStreak] = useState(0);
   const [xp, setXp] = useState(0);
   const [showProfile, setShowProfile] = useState(false);
+  const [showOnboarding, setShowOnboarding] = useState(false);
   const [loading, setLoading] = useState(() => isLoggedIn());
   const studentsReady = useRef(false);
   const vocabReady = useRef(false);
@@ -122,7 +207,14 @@ export function App() {
 
   const loadProgress = useCallback(() => {
     if (!user || !selectedStudentId) return;
-    getStudentProgress(selectedStudentId).then(setProgress).catch(() => {});
+    getStudentProgress(selectedStudentId).then((p) => {
+      setProgress(p);
+      // Show onboarding for new students (0 progress entries, not yet onboarded)
+      const onboardedKey = `eb_onboarded_${selectedStudentId}`;
+      if (p.length === 0 && !localStorage.getItem(onboardedKey)) {
+        setShowOnboarding(true);
+      }
+    }).catch(() => {});
     getStudent(selectedStudentId).then((s) => { setStreak(s.streak ?? 0); setXp(s.xp ?? 0); }).catch(() => {});
   }, [user, selectedStudentId]);
 
@@ -389,6 +481,9 @@ export function App() {
     case "certification":
       content = <CertificationPage student={student} onBackHome={() => navigate("home")} onLevelUp={async (level) => { await updateStudent(student.id, { level: level as any }); loadStudents(); }} />;
       break;
+    case "legal":
+      content = <LegalPage onBack={() => navigate("home")} />;
+      break;
     default:
       content = (
         <HomePage
@@ -420,6 +515,15 @@ export function App() {
           user={user as any}
           onClose={() => setShowProfile(false)}
           onUpdated={(u) => setUser(u)}
+        />
+      )}
+      {showOnboarding && student && (
+        <OnboardingOverlay
+          onComplete={() => {
+            localStorage.setItem(`eb_onboarded_${student.id}`, "1");
+            setShowOnboarding(false);
+          }}
+          onPlacement={() => navigate("placement")}
         />
       )}
     </>
