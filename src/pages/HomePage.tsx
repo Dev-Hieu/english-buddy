@@ -1,4 +1,4 @@
-import { Award, BookOpen, ClipboardCheck, Ear, Flame, Gamepad2, GraduationCap, LogOut, MessageSquareText, Mic, PenLine, RotateCcw, Settings, Sparkles, Star, Trophy, Type, UserRound } from "lucide-react";
+import { Award, BookOpen, ClipboardCheck, Compass, Ear, Flame, Gamepad2, GraduationCap, Layers, LogOut, Medal, MessageSquareText, Mic, PenLine, RotateCcw, Settings, Sparkles, Star, Target, Trophy, Type, UserRound } from "lucide-react";
 import { SmartReview } from "@/components/SmartReview";
 import type { ComponentType } from "react";
 import { useEffect, useState } from "react";
@@ -273,6 +273,53 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
           </div>
         </section>
       )}
+
+      {/* ── Khám phá thêm ── */}
+      <section>
+        <h2 className="mb-3 text-base font-black">Khám phá thêm</h2>
+        <div className="grid grid-cols-2 gap-2">
+          <button type="button" onClick={() => onNavigate("placement")}
+            className="flex items-center gap-3 rounded-2xl bg-card border border-border/40 p-3 shadow-sm transition-all active:scale-[0.97] hover:shadow-md text-left">
+            <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-[0.625rem] bg-indigo-500 text-white shadow-md">
+              <Target className="h-5 w-5" />
+            </span>
+            <div className="min-w-0">
+              <p className="text-xs font-extrabold">Xếp lớp</p>
+              <p className="text-[9px] text-muted-foreground">Kiểm tra trình độ</p>
+            </div>
+          </button>
+          <button type="button" onClick={() => onNavigate("learning-path")}
+            className="flex items-center gap-3 rounded-2xl bg-card border border-border/40 p-3 shadow-sm transition-all active:scale-[0.97] hover:shadow-md text-left">
+            <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-[0.625rem] bg-cyan-500 text-white shadow-md">
+              <Compass className="h-5 w-5" />
+            </span>
+            <div className="min-w-0">
+              <p className="text-xs font-extrabold">Lộ trình</p>
+              <p className="text-[9px] text-muted-foreground">Học theo tuần</p>
+            </div>
+          </button>
+          <button type="button" onClick={() => onNavigate("badges")}
+            className="flex items-center gap-3 rounded-2xl bg-card border border-border/40 p-3 shadow-sm transition-all active:scale-[0.97] hover:shadow-md text-left">
+            <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-[0.625rem] bg-yellow-500 text-white shadow-md">
+              <Medal className="h-5 w-5" />
+            </span>
+            <div className="min-w-0">
+              <p className="text-xs font-extrabold">Huy hiệu</p>
+              <p className="text-[9px] text-muted-foreground">Thành tích</p>
+            </div>
+          </button>
+          <button type="button" onClick={() => onNavigate("integrated-lesson")}
+            className="flex items-center gap-3 rounded-2xl bg-card border border-border/40 p-3 shadow-sm transition-all active:scale-[0.97] hover:shadow-md text-left">
+            <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-[0.625rem] bg-emerald-500 text-white shadow-md">
+              <Layers className="h-5 w-5" />
+            </span>
+            <div className="min-w-0">
+              <p className="text-xs font-extrabold">Bài tích hợp</p>
+              <p className="text-[9px] text-muted-foreground">4 kỹ năng</p>
+            </div>
+          </button>
+        </div>
+      </section>
 
       <Footer onNavigate={onNavigate} />
     </main>
