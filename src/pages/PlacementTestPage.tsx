@@ -870,48 +870,100 @@ export function PlacementTestPage({ student, onComplete, onBack }: Props) {
           </button>
         </div>
 
-        {/* Certificate */}
-        <div className="cert-print mx-auto max-w-lg rounded-2xl border-4 border-double border-amber-400 bg-white p-8 shadow-xl dark:bg-white">
-          <div className="rounded-xl border-2 border-amber-200 p-6 text-center">
-            <div className="mb-6">
-              <div className="mx-auto mb-2 flex h-14 w-14 items-center justify-center rounded-full bg-amber-100">
-                <Award className="h-8 w-8 text-amber-600" />
+        {/* Certificate — Placement Test */}
+        <div className="cert-print mx-auto max-w-lg bg-white shadow-xl dark:bg-white overflow-hidden" style={{ aspectRatio: "1/1.414" }}>
+          <div className="h-full border-[6px] border-indigo-500 p-1">
+            <div className="relative h-full border-2 border-indigo-300 px-6 py-5 sm:px-8 sm:py-7 flex flex-col">
+              {/* Watermark */}
+              <div className="absolute inset-0 flex items-center justify-center opacity-[0.03] pointer-events-none">
+                <GraduationCap className="h-64 w-64 text-indigo-800" />
               </div>
-              <h1 className="text-2xl font-black tracking-wider text-gray-800 uppercase">CHỨNG CHỈ XẾP LớP</h1>
-              <p className="text-xs text-gray-500 tracking-widest uppercase mt-1">Placement Test Certificate</p>
-            </div>
+              {/* Corner ornaments */}
+              <div className="absolute top-2 left-2 h-6 w-6 border-t-2 border-l-2 border-indigo-400" />
+              <div className="absolute top-2 right-2 h-6 w-6 border-t-2 border-r-2 border-indigo-400" />
+              <div className="absolute bottom-2 left-2 h-6 w-6 border-b-2 border-l-2 border-indigo-400" />
+              <div className="absolute bottom-2 right-2 h-6 w-6 border-b-2 border-r-2 border-indigo-400" />
 
-            <div className="mx-auto mb-5 h-px w-32 bg-amber-300" />
-
-            <p className="text-xs text-gray-500 mb-2">Chứng nhận học sinh</p>
-            <h2 className="text-2xl font-black text-gray-800 mb-2">{student.name}</h2>
-
-            <p className="text-xs text-gray-500 mb-4">đã hoàn thành bài kiểm tra xếp lớp đầu vào</p>
-
-            <div className="mx-auto mb-4 inline-flex flex-col items-center gap-1 rounded-xl bg-gradient-to-r from-amber-400 to-amber-500 px-6 py-3 shadow-md">
-              <span className="text-2xl font-black text-white">{LEVEL_LABEL[resultLevel]}</span>
-              <span className="text-xs font-bold text-white/90">{LEVEL_DESC_VI[resultLevel]}</span>
-            </div>
-
-            <p className="text-xs text-gray-500 mb-1">Trình độ CEFR</p>
-            <p className="text-sm font-bold text-gray-700 mb-4">Điểm: {correctCount}/{answers.length} ({pct}%)</p>
-
-            <div className="mx-auto mb-4 h-px w-32 bg-amber-300" />
-
-            <div className="flex items-center justify-between text-[10px] text-gray-400">
-              <div className="text-left">
-                <p>Ngày cấp: {dateStr}</p>
+              {/* Header */}
+              <div className="text-center mb-3 relative z-10">
+                <div className="mx-auto mb-1 flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-indigo-400 to-indigo-600 shadow-md">
+                  <GraduationCap className="h-7 w-7 text-white" />
+                </div>
+                <h1 className="text-xl sm:text-2xl font-black tracking-[0.2em] text-gray-800 uppercase">Placement Certificate</h1>
+                <p className="text-[9px] tracking-wider text-indigo-600 mt-0.5">Chứng chỉ xếp lớp đầu vào</p>
               </div>
-              <div className="text-right">
-                <p className="text-sm font-black text-amber-600">English Buddy</p>
-                <p>Nền tảng học tiếng Anh</p>
+
+              <div className="mx-auto mb-3 flex items-center gap-2">
+                <div className="h-px flex-1 bg-gradient-to-r from-transparent to-indigo-400" />
+                <div className="h-2 w-2 rotate-45 bg-indigo-400" />
+                <div className="h-px flex-1 bg-gradient-to-l from-transparent to-indigo-400" />
+              </div>
+
+              <div className="text-center flex-1 relative z-10">
+                <p className="text-[10px] text-gray-500 mb-1 italic">This is to certify that / Chứng nhận rằng</p>
+                <h2 className="text-xl sm:text-2xl font-black text-gray-800 mb-1 border-b-2 border-indigo-200 inline-block px-4 pb-1">{student.name}</h2>
+                <p className="text-[10px] text-gray-500 mt-2 mb-2 italic">has been assessed at the following level</p>
+
+                <div className="mx-auto mb-2 inline-block">
+                  <div className="rounded-lg border-2 border-indigo-400 bg-gradient-to-br from-indigo-50 to-indigo-100 px-6 py-2 shadow-sm">
+                    <p className="text-3xl font-black text-indigo-700 tracking-wider">{LEVEL_LABEL[resultLevel]}</p>
+                    <p className="text-[9px] font-bold text-indigo-600 tracking-wider">{LEVEL_DESC_VI[resultLevel]}</p>
+                  </div>
+                </div>
+
+                <p className="text-[9px] text-gray-500 mb-1">Common European Framework of Reference for Languages</p>
+
+                <div className="inline-flex items-center gap-3 rounded-lg bg-gray-50 px-4 py-1.5 mb-2">
+                  <div className="text-center">
+                    <p className="text-lg font-black text-gray-800">{pct}%</p>
+                    <p className="text-[8px] text-gray-500 uppercase">Score</p>
+                  </div>
+                  <div className="h-6 w-px bg-gray-300" />
+                  <div className="text-center">
+                    <p className="text-lg font-black text-gray-800">{correctCount}/{answers.length}</p>
+                    <p className="text-[8px] text-gray-500 uppercase">Correct</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="mx-auto mb-3 flex items-center gap-2">
+                <div className="h-px flex-1 bg-gradient-to-r from-transparent to-indigo-400" />
+                <div className="h-2 w-2 rotate-45 bg-indigo-400" />
+                <div className="h-px flex-1 bg-gradient-to-l from-transparent to-indigo-400" />
+              </div>
+
+              <div className="grid grid-cols-3 gap-2 text-center mb-3 relative z-10">
+                <div>
+                  <div className="mx-auto mb-1 h-px w-16 bg-gray-400" />
+                  <p className="text-[8px] text-gray-500">Ngày / Date</p>
+                  <p className="text-[9px] font-bold text-gray-700">{dateStr}</p>
+                </div>
+                <div>
+                  <div className="mx-auto mb-1 flex h-10 w-10 items-center justify-center rounded-full border-2 border-indigo-400">
+                    <GraduationCap className="h-5 w-5 text-indigo-500" />
+                  </div>
+                  <p className="text-[8px] text-gray-500">Official Seal</p>
+                </div>
+                <div>
+                  <div className="mx-auto mb-1 h-px w-16 bg-gray-400" />
+                  <p className="text-[8px] text-gray-500">Examiner</p>
+                  <p className="text-[9px] font-bold text-gray-700">English Buddy</p>
+                </div>
+              </div>
+
+              <div className="flex items-center justify-between text-[8px] text-gray-400 border-t border-indigo-200 pt-2 relative z-10">
+                <p>Verify at: en.vev.vn</p>
+                <p className="text-[9px] font-black text-indigo-600">English Buddy™</p>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="mt-6">
-          <Button className="w-full text-base font-extrabold" size="lg" onClick={handleComplete}>
+        <div className="mt-4 flex gap-2 print:hidden">
+          <button type="button" onClick={() => window.print()} className="flex-1 flex items-center justify-center gap-1.5 rounded-xl bg-muted py-3 text-xs font-bold hover:bg-primary/10 transition-colors">
+            <Printer className="h-4 w-4" /> In chứng chỉ
+          </button>
+          <Button className="flex-1 text-base font-extrabold" size="lg" onClick={handleComplete}>
             Bắt đầu học
           </Button>
         </div>
@@ -925,8 +977,9 @@ export function PlacementTestPage({ student, onComplete, onBack }: Props) {
               left: 50% !important;
               top: 50% !important;
               transform: translate(-50%, -50%) !important;
-              width: 700px !important;
+              width: 600px !important;
               box-shadow: none !important;
+              border-radius: 0 !important;
             }
           }
         `}</style>

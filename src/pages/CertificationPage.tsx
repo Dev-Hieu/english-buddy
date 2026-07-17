@@ -1030,48 +1030,110 @@ export function CertificationPage({ student, onBackHome, onLevelUp }: { student:
           </button>
         </div>
 
-        {/* Certificate */}
-        <div className="cert-print mx-auto max-w-lg rounded-2xl border-4 border-double border-amber-400 bg-white p-8 shadow-xl dark:bg-white">
-          {/* Inner border */}
-          <div className="rounded-xl border-2 border-amber-200 p-6 text-center">
-            {/* Header */}
-            <div className="mb-6">
-              <div className="mx-auto mb-2 flex h-14 w-14 items-center justify-center rounded-full bg-amber-100">
-                <Award className="h-8 w-8 text-amber-600" />
+        {/* Certificate — International standard design */}
+        <div className="cert-print mx-auto max-w-lg bg-white shadow-xl dark:bg-white overflow-hidden" style={{ aspectRatio: "1/1.414" }}>
+          {/* Outer gold border */}
+          <div className="h-full border-[6px] border-amber-500 p-1">
+            {/* Inner ornamental border */}
+            <div className="relative h-full border-2 border-amber-300 px-6 py-5 sm:px-8 sm:py-7 flex flex-col">
+
+              {/* Watermark background */}
+              <div className="absolute inset-0 flex items-center justify-center opacity-[0.03] pointer-events-none">
+                <Award className="h-64 w-64 text-amber-800" />
               </div>
-              <h1 className="text-2xl font-black tracking-wider text-gray-800 uppercase">Certificate of Achievement</h1>
-              <p className="text-xs text-gray-500 tracking-widest uppercase mt-1">Chứng chỉ năng lực Tiếng Anh</p>
-            </div>
 
-            {/* Divider */}
-            <div className="mx-auto mb-5 h-px w-32 bg-amber-300" />
+              {/* Corner ornaments */}
+              <div className="absolute top-2 left-2 h-6 w-6 border-t-2 border-l-2 border-amber-400" />
+              <div className="absolute top-2 right-2 h-6 w-6 border-t-2 border-r-2 border-amber-400" />
+              <div className="absolute bottom-2 left-2 h-6 w-6 border-b-2 border-l-2 border-amber-400" />
+              <div className="absolute bottom-2 right-2 h-6 w-6 border-b-2 border-r-2 border-amber-400" />
 
-            {/* Body */}
-            <p className="text-xs text-gray-500 mb-2">This is to certify that</p>
-            <h2 className="text-2xl font-black text-gray-800 mb-2">{student.name}</h2>
-
-            <p className="text-xs text-gray-500 mb-4">has successfully passed the</p>
-
-            <div className="mx-auto mb-4 inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-amber-400 to-amber-500 px-6 py-3 shadow-md">
-              <span className="text-2xl font-black text-white">{selectedExam.level}</span>
-              <span className="text-xs font-bold text-white/90">{selectedExam.titleVi}</span>
-            </div>
-
-            <p className="text-xs text-gray-500 mb-1">CEFR Level Examination</p>
-            <p className="text-sm font-bold text-gray-700 mb-4">Điểm: {totalCorrect}/{totalQuestions} ({pct}%)</p>
-
-            {/* Divider */}
-            <div className="mx-auto mb-4 h-px w-32 bg-amber-300" />
-
-            {/* Footer */}
-            <div className="flex items-center justify-between text-[10px] text-gray-400">
-              <div className="text-left">
-                <p>Ngày cấp: {dateStr}</p>
-                <p>Mã chứng chỉ: {certId}</p>
+              {/* Header */}
+              <div className="text-center mb-3 relative z-10">
+                <div className="mx-auto mb-1 flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-amber-400 to-amber-600 shadow-md">
+                  <Award className="h-7 w-7 text-white" />
+                </div>
+                <h1 className="text-xl sm:text-2xl font-black tracking-[0.2em] text-gray-800 uppercase">Certificate</h1>
+                <p className="text-[10px] sm:text-xs tracking-[0.15em] text-gray-500 uppercase">of English Language Proficiency</p>
+                <p className="text-[9px] tracking-wider text-amber-600 mt-0.5">Chứng chỉ năng lực Tiếng Anh theo khung CEFR</p>
               </div>
-              <div className="text-right">
-                <p className="text-sm font-black text-amber-600">English Buddy</p>
-                <p>Nền tảng học tiếng Anh</p>
+
+              {/* Gold divider */}
+              <div className="mx-auto mb-3 flex items-center gap-2">
+                <div className="h-px flex-1 bg-gradient-to-r from-transparent to-amber-400" />
+                <div className="h-2 w-2 rotate-45 bg-amber-400" />
+                <div className="h-px flex-1 bg-gradient-to-l from-transparent to-amber-400" />
+              </div>
+
+              {/* Body */}
+              <div className="text-center flex-1 relative z-10">
+                <p className="text-[10px] text-gray-500 mb-1 italic">This is to certify that / Chứng nhận rằng</p>
+                <h2 className="text-xl sm:text-2xl font-black text-gray-800 mb-1 border-b-2 border-amber-200 inline-block px-4 pb-1">{student.name}</h2>
+
+                <p className="text-[10px] text-gray-500 mt-2 mb-2 italic">has successfully demonstrated proficiency at</p>
+
+                {/* Level badge */}
+                <div className="mx-auto mb-2 inline-block">
+                  <div className="rounded-lg border-2 border-amber-400 bg-gradient-to-br from-amber-50 to-amber-100 px-6 py-2 shadow-sm">
+                    <p className="text-3xl font-black text-amber-700 tracking-wider">{selectedExam.level}</p>
+                    <p className="text-[9px] font-bold text-amber-600 tracking-wider uppercase">{selectedExam.title}</p>
+                  </div>
+                </div>
+
+                <p className="text-[9px] text-gray-500 mb-1">Common European Framework of Reference for Languages</p>
+                <p className="text-[9px] text-gray-500 mb-2">Khung tham chiếu Ngôn ngữ chung Châu Âu</p>
+
+                {/* Score */}
+                <div className="inline-flex items-center gap-3 rounded-lg bg-gray-50 px-4 py-1.5 mb-2">
+                  <div className="text-center">
+                    <p className="text-lg font-black text-gray-800">{pct}%</p>
+                    <p className="text-[8px] text-gray-500 uppercase">Score</p>
+                  </div>
+                  <div className="h-6 w-px bg-gray-300" />
+                  <div className="text-center">
+                    <p className="text-lg font-black text-gray-800">{totalCorrect}/{totalQuestions}</p>
+                    <p className="text-[8px] text-gray-500 uppercase">Correct</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Gold divider */}
+              <div className="mx-auto mb-3 flex items-center gap-2">
+                <div className="h-px flex-1 bg-gradient-to-r from-transparent to-amber-400" />
+                <div className="h-2 w-2 rotate-45 bg-amber-400" />
+                <div className="h-px flex-1 bg-gradient-to-l from-transparent to-amber-400" />
+              </div>
+
+              {/* Signature area */}
+              <div className="grid grid-cols-3 gap-2 text-center mb-3 relative z-10">
+                <div>
+                  <div className="mx-auto mb-1 h-px w-16 bg-gray-400" />
+                  <p className="text-[8px] text-gray-500">Ngày cấp / Date</p>
+                  <p className="text-[9px] font-bold text-gray-700">{dateStr}</p>
+                </div>
+                <div>
+                  <div className="mx-auto mb-1 flex h-10 w-10 items-center justify-center rounded-full border-2 border-amber-400">
+                    <Award className="h-5 w-5 text-amber-500" />
+                  </div>
+                  <p className="text-[8px] text-gray-500">Official Seal</p>
+                </div>
+                <div>
+                  <div className="mx-auto mb-1 h-px w-16 bg-gray-400" />
+                  <p className="text-[8px] text-gray-500">Examiner</p>
+                  <p className="text-[9px] font-bold text-gray-700">English Buddy</p>
+                </div>
+              </div>
+
+              {/* Footer */}
+              <div className="flex items-center justify-between text-[8px] text-gray-400 border-t border-amber-200 pt-2 relative z-10">
+                <div>
+                  <p>Certificate ID: {certId}</p>
+                  <p>Verify at: en.vev.vn</p>
+                </div>
+                <div className="text-right">
+                  <p className="text-[9px] font-black text-amber-600">English Buddy™</p>
+                  <p>CEFR Assessment Platform</p>
+                </div>
               </div>
             </div>
           </div>
@@ -1087,8 +1149,9 @@ export function CertificationPage({ student, onBackHome, onLevelUp }: { student:
               left: 50% !important;
               top: 50% !important;
               transform: translate(-50%, -50%) !important;
-              width: 700px !important;
+              width: 600px !important;
               box-shadow: none !important;
+              border-radius: 0 !important;
             }
           }
         `}</style>
