@@ -1,4 +1,4 @@
-import { Award, Lock } from "lucide-react";
+import { Award, Lock, GraduationCap, ShieldCheck } from "lucide-react";
 import { useEffect, useState } from "react";
 import type { Student } from "@/types";
 import { SessionHeader } from "@/components/layout/SessionHeader";
@@ -6,6 +6,7 @@ import { cn } from "@/components/ui/cn";
 import { getStudentProgress } from "@/services/progressService";
 import { getSkillTestResults, type SkillTestResult } from "@/services/progressService";
 import { getMyGameRank } from "@/services/gameService";
+import { getCertificates, type Certificate } from "@/services/certificateService";
 
 // ── Stats collected from APIs ──
 interface StudentStats {
@@ -101,18 +102,21 @@ interface BadgesPageProps {
 export function BadgesPage({ student, onBackHome }: BadgesPageProps) {
   const [stats, setStats] = useState<StudentStats | null>(null);
   const [selected, setSelected] = useState<Badge | null>(null);
+  const [certificates, setCertificates] = useState<Certificate[]>([]);
 
   useEffect(() => {
     let alive = true;
 
     async function load() {
-      const [progress, testResults, speedRank] = await Promise.all([
+      const [progress, testResults, speedRank, certs] = await Promise.all([
         getStudentProgress(student.id).catch(() => []),
         getSkillTestResults(student.id).catch(() => [] as SkillTestResult[]),
         getMyGameRank("speed-type", student.id).catch(() => null),
+        getCertificates(student.id).catch(() => [] as Certificate[]),
       ]);
 
       if (!alive) return;
+      setCertificates(certs);
 
       const wordsLearned = progress.filter((p) => p.mastery > 0).length;
       const hasAPlus = testResults.some((r) => r.score >= 90);
@@ -182,6 +186,49 @@ export function BadgesPage({ student, onBackHome }: BadgesPageProps) {
               />
             </div>
           </div>
+
+          {/* Certificates section */}
+          {certificates.length > 0 && (
+            <div className="mb-5">
+              <h3 className="mb-3 flex items-center gap-2 text-sm font-extrabold">
+                <Award className="h-4 w-4 text-amber-500" />
+                Ch\u1EE9ng ch\u1EC9 \u0111\u00E3 \u0111\u1EA1t
+              </h3>
+              <div className="space-y-2">
+                {certificates.map((cert) => (
+                  <div
+                    key={cert.id}
+                    className="flex items-center gap-3 rounded-2xl border border-amber-200/60 dark:border-amber-800/40 bg-gradient-to-r from-amber-50 to-yellow-50 dark:from-amber-950/20 dark:to-yellow-950/10 p-3"
+                  >
+                    <div className={cn(
+                      "flex h-10 w-10 shrink-0 items-center justify-center rounded-xl shadow-sm",
+                      cert.type === "placement"
+                        ? "bg-indigo-100 dark:bg-indigo-900/40"
+                        : "bg-red-100 dark:bg-red-900/40"
+                    )}>
+                      {cert.type === "placement"
+                        ? <GraduationCap className="h-5 w-5 text-indigo-600 dark:text-indigo-400" />
+                        : <ShieldCheck className="h-5 w-5 text-red-600 dark:text-red-400" />}
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-center gap-2">
+                        <span className="rounded-full bg-primary/10 px-2 py-0.5 text-[10px] font-black text-primary">
+                          {cert.level}
+                        </span>
+                        <span className="text-xs font-bold text-foreground">
+                          {cert.type === "placement" ? "X\u1EBFp l\u1EDBp" : "Ch\u1EE9ng ch\u1EC9"}
+                        </span>
+                      </div>
+                      <p className="mt-0.5 text-[10px] text-muted-foreground">
+                        {cert.score}% \u2022 {cert.totalQuestions} c\u00E2u \u2022 {new Date(cert.createdAt).toLocaleDateString("vi-VN")}
+                      </p>
+                    </div>
+                    <p className="text-[9px] font-mono text-muted-foreground">{cert.certId}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
 
           {/* Badge grid */}
           <div className="grid grid-cols-3 gap-3">

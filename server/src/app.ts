@@ -1354,6 +1354,28 @@ Return ONLY valid JSON, no markdown, no code fences.` },
     res.json(rows);
   });
 
+  // ── Certificates ──
+  app.post("/api/certificates", requireAuth, (req, res) => {
+    const { studentId, type, level, score, totalQuestions, certId } = req.body;
+    if (!studentId || !type || !level || score == null || !totalQuestions || !certId) {
+      return res.status(400).json({ error: "Thiếu thông tin chứng chỉ" });
+    }
+    if (!canAccessStudent(req, res, studentId)) return;
+    const id = randomUUID();
+    db.prepare(
+      "INSERT INTO certificates (id, studentId, type, level, score, totalQuestions, certId, createdAt) VALUES (?, ?, ?, ?, ?, ?, ?, ?)"
+    ).run(id, studentId, type, level, score, totalQuestions, certId, Date.now());
+    res.json({ id });
+  });
+
+  app.get("/api/students/:id/certificates", requireAuth, (req, res) => {
+    if (!canAccessStudent(req, res, req.params.id)) return;
+    const rows = db.prepare(
+      "SELECT id, type, level, score, totalQuestions, certId, createdAt FROM certificates WHERE studentId = ? ORDER BY createdAt DESC"
+    ).all(req.params.id);
+    res.json(rows);
+  });
+
   app.get("/api/game-scores/:gameId/my", requireAuth, (req, res) => {
     const { gameId } = req.params;
     const studentId = String(req.query.studentId || "");

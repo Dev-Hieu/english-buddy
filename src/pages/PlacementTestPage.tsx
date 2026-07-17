@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { SessionHeader } from "@/components/layout/SessionHeader";
 import { GraduationCap, CheckCircle, XCircle, Trophy, Award, Printer } from "lucide-react";
+import { saveCertificate } from "@/services/certificateService";
 
 // ── Types ──
 
@@ -740,6 +741,19 @@ export function PlacementTestPage({ student, onComplete, onBack }: Props) {
   const finishTest = (finalAnswers: { level: CEFRLevel; correct: boolean }[]) => {
     const finalLevel = calculateCEFR(finalAnswers);
     setResultLevel(finalLevel);
+
+    // Save placement certificate
+    const correctCount = finalAnswers.filter((a) => a.correct).length;
+    const pct = Math.round((correctCount / finalAnswers.length) * 100);
+    const certId = `PT-${Date.now().toString(36).toUpperCase()}`;
+    saveCertificate(student.id, {
+      type: "placement",
+      level: LEVEL_LABEL[finalLevel],
+      score: pct,
+      totalQuestions: finalAnswers.length,
+      certId,
+    }).catch(() => {});
+
     setPhase("result");
   };
 

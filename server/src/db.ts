@@ -132,6 +132,17 @@ export function initSchema(): void {
     );
     CREATE INDEX IF NOT EXISTS idx_gs_game ON game_scores(gameId, score DESC);
     CREATE INDEX IF NOT EXISTS idx_gs_student ON game_scores(studentId);
+    CREATE TABLE IF NOT EXISTS certificates (
+      id TEXT PRIMARY KEY,
+      studentId TEXT NOT NULL,
+      type TEXT NOT NULL,
+      level TEXT NOT NULL,
+      score INTEGER NOT NULL,
+      totalQuestions INTEGER NOT NULL,
+      certId TEXT NOT NULL,
+      createdAt INTEGER NOT NULL
+    );
+    CREATE INDEX IF NOT EXISTS idx_cert_student ON certificates(studentId);
   `);
   // Migration cho DB cũ: thêm cột nếu chưa có.
   try { db.exec("ALTER TABLE students ADD COLUMN lastActiveDate TEXT"); } catch { /* đã có */ }
