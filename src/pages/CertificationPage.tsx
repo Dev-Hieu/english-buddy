@@ -3,6 +3,7 @@ import { Award, CheckCircle, XCircle, Clock, Lock, ChevronRight, Printer, Volume
 import type { Student } from "@/types";
 import { SessionHeader } from "@/components/layout/SessionHeader";
 import { speakText } from "@/services/speechService";
+import { saveCertificate } from "@/services/certificateService";
 import { cn } from "@/components/ui/cn";
 
 /* ────────────────────────── Types ────────────────────────── */
@@ -502,7 +503,8 @@ const NEXT_LEVEL_MAP: Record<string, string> = { A1: "a2", A2: "b1", B1: "b2", B
 function canTakeExam(studentLevel: string, examLevel: string): boolean {
   const sIdx = LEVEL_ORDER_MAP[studentLevel] ?? 0;
   const eIdx = EXAM_LEVEL_MAP[examLevel] ?? 99;
-  return eIdx <= sIdx + 1;
+  // Cho thi đúng level hiện tại: kids→A1, a1→A1, a2→A2, b1→B1...
+  return eIdx <= Math.max(sIdx, 1);
 }
 
 function generateCertId(): string {
@@ -628,8 +630,19 @@ export function CertificationPage({ student, onBackHome, onLevelUp }: { student:
       setLevelAdvanced(false);
     }
 
+    // Save certificate to server on pass
+    if (didPass) {
+      saveCertificate(student.id, {
+        type: "certification",
+        level: selectedExam.level,
+        score: Math.round(pct),
+        totalQuestions: total,
+        certId,
+      }).catch(() => {});
+    }
+
     setPhase("result");
-  }, [selectedExam, answers, onLevelUp]);
+  }, [selectedExam, answers, onLevelUp, certId, student.id]);
 
   // Navigate questions
   const goToQuestion = (sectionIdx: number, qIdx: number) => {
