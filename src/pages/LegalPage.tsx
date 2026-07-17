@@ -128,9 +128,9 @@ function TermsContent() {
       <section>
         <SectionTitle>2. Nội dung học tập</SectionTitle>
         <ul className="list-disc pl-5 space-y-1">
-          <li>Toan bo noi dung bai hoc, hinh anh, am thanh la tai san cua English Buddy</li>
-          <li>Khong sao chep, phan phoi lai noi dung khi chua co su dong y</li>
-          <li>Noi dung do nguoi dung tao (ghi chu, bai viet) thuoc quyen nguoi dung</li>
+          <li>Toàn bộ nội dung bài học, hình ảnh, âm thanh là tài sản của English Buddy</li>
+          <li>Không sao chép, phân phối lại nội dung khi chưa có sự đồng ý</li>
+          <li>Nội dung do người dùng tạo (ghi chú, bài viết) thuộc quyền người dùng</li>
         </ul>
       </section>
 
@@ -138,17 +138,17 @@ function TermsContent() {
         <SectionTitle>3. Tài khoản Premium</SectionTitle>
         <ul className="list-disc pl-5 space-y-1">
           <li>Thanh toán được xử lý qua cổng thanh toán bảo mật</li>
-          <li>Ban co the huy dang ky bat ky luc nao</li>
-          <li>Hoan tien trong 7 ngay dau neu chua hai long</li>
-          <li>Sau khi huy, tai khoan van hoat dong den het chu ky thanh toan</li>
+          <li>Bạn có thể huỷ đăng ký bất kỳ lúc nào</li>
+          <li>Hoàn tiền trong 7 ngày đầu nếu chưa hài lòng</li>
+          <li>Sau khi huỷ, tài khoản vẫn hoạt động đến hết chu kỳ thanh toán</li>
         </ul>
       </section>
 
       <section>
         <SectionTitle>4. Giới hạn trách nhiệm</SectionTitle>
         <ul className="list-disc pl-5 space-y-1">
-          <li>English Buddy cung cap dich vu "nguyen trang" (as-is)</li>
-          <li>Chung toi no luc dam bao dich vu hoat dong on dinh nhung khong cam ket 100% uptime</li>
+          <li>English Buddy cung cấp dịch vụ "nguyên trạng" (as-is)</li>
+          <li>Chúng tôi nỗ lực đảm bảo dịch vụ hoạt động ổn định nhưng không cam kết 100% uptime</li>
           <li>Không chịu trách nhiệm về thiệt hại gián tiếp từ việc sử dụng dịch vụ</li>
         </ul>
       </section>
@@ -156,16 +156,16 @@ function TermsContent() {
       <section>
         <SectionTitle>5. Thay đổi điều khoản</SectionTitle>
         <p>
-          Chung toi co quyen cap nhat dieu khoan bat ky luc nao. Thay doi quan trong se duoc
+          Chúng tôi có quyền cập nhật điều khoản bất kỳ lúc nào. Thay đổi quan trọng sẽ được
           thông báo qua email hoặc thông báo trong ứng dụng. Việc tiếp tục sử dụng dịch vụ
-          dong nghia voi viec ban dong y voi dieu khoan moi.
+          đồng nghĩa với việc bạn đồng ý với điều khoản mới.
         </p>
       </section>
 
       <section>
-        <SectionTitle>Lien he</SectionTitle>
+        <SectionTitle>Liên hệ</SectionTitle>
         <p>
-          Moi thac mac, vui long lien he:{" "}
+          Mọi thắc mắc, vui lòng liên hệ:{" "}
           <a href="mailto:support@buddy.vn" className="text-primary underline">
             support@buddy.vn
           </a>
