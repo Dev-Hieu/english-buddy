@@ -133,21 +133,21 @@ function cefrToAppLevel(cefr: CEFRLevel): string {
 }
 
 const LEVEL_DESC: Record<CEFRLevel, string> = {
-  A1: "Ban co the hieu va su dung cac cau don gian hang ngay.",
-  A2: "Ban co the giao tiep trong cac tinh huong quen thuoc.",
-  B1: "Ban co the xu ly hau het cac tinh huong khi di du lich.",
-  B2: "Ban co the tuong tac voi nguoi ban ngu mot cach tu nhien.",
-  C1: "Ban co the su dung tieng Anh linh hoat va hieu qua.",
-  C2: "Ban co the hieu hau het moi thu nghe hoac doc duoc.",
+  A1: "Bạn có thể hiểu và sử dụng các câu đơn giản hàng ngày.",
+  A2: "Bạn có thể giao tiếp trong các tình huống quen thuộc.",
+  B1: "Bạn có thể xử lý hầu hết các tình huống khi đi du lịch.",
+  B2: "Bạn có thể tương tác với người bản ngữ một cách tự nhiên.",
+  C1: "Bạn có thể sử dụng tiếng Anh linh hoạt và hiệu quả.",
+  C2: "Bạn có thể hiểu hầu hết mọi thứ nghe hoặc đọc được.",
 };
 
 const LEVEL_DESC_VI: Record<CEFRLevel, string> = {
-  A1: "Co ban - Hieu va dung cac cau don gian, gioi thieu ban than.",
-  A2: "So cap - Giao tiep trong tinh huong quen thuoc hang ngay.",
-  B1: "Trung cap - Tu tin xu ly cac tinh huong khi di du lich.",
-  B2: "Trung cao - Tuong tac tu nhien voi nguoi ban ngu.",
-  C1: "Nang cao - Su dung tieng Anh linh hoat va hieu qua.",
-  C2: "Thanh thao - Hieu moi thu nghe va doc duoc.",
+  A1: "Cơ bản - Hiểu và dùng các câu đơn giản, giới thiệu bản thân.",
+  A2: "Sơ cấp - Giao tiếp trong tình huống quen thuộc hàng ngày.",
+  B1: "Trung cấp - Tự tin xử lý các tình huống khi đi du lịch.",
+  B2: "Trung cao - Tương tác tự nhiên với người bản ngữ.",
+  C1: "Nâng cao - Sử dụng tiếng Anh linh hoạt và hiệu quả.",
+  C2: "Thành thạo - Hiểu mọi thứ nghe và đọc được.",
 };
 
 const TOTAL_QUESTIONS = 30;
@@ -226,26 +226,26 @@ export function PlacementTestPage({ student, onComplete, onBack }: Props) {
   if (phase === "intro") {
     return (
       <main className="mx-auto min-h-screen w-full max-w-md px-4 py-6">
-        <SessionHeader title="Kiem tra xep lop" icon={<GraduationCap className="h-4 w-4" />} iconBg="bg-indigo-500" onClose={onBack} />
+        <SessionHeader title="Kiểm tra xếp lớp" icon={<GraduationCap className="h-4 w-4" />} iconBg="bg-indigo-500" onClose={onBack} />
         <div className="mt-8 flex flex-col items-center gap-6 text-center">
           <div className="flex h-20 w-20 items-center justify-center rounded-full bg-indigo-100">
             <GraduationCap className="h-10 w-10 text-indigo-600" />
           </div>
-          <h2 className="text-2xl font-extrabold tracking-tight">Bai kiem tra xep lop</h2>
+          <h2 className="text-2xl font-extrabold tracking-tight">Bài kiểm tra xếp lớp</h2>
           <Card className="w-full">
             <CardContent className="space-y-3 p-5 text-left text-sm text-muted-foreground">
-              <p>Bai kiem tra nay se danh gia trinh do tieng Anh cua ban theo khung CEFR (A1 - C2).</p>
+              <p>Bài kiểm tra này sẽ đánh giá trình độ tiếng Anh của bạn theo khung CEFR (A1 - C2).</p>
               <ul className="list-disc space-y-1 pl-5">
-                <li>30 cau hoi trac nghiem</li>
-                <li>Khoang 2 - 5 phut</li>
-                <li>Do kho tu dong dieu chinh</li>
-                <li>Ket qua: xep lop theo trinh do CEFR</li>
+                <li>30 câu hỏi trắc nghiệm</li>
+                <li>Khoảng 2 - 5 phút</li>
+                <li>Độ khó tự động điều chỉnh</li>
+                <li>Kết quả: xếp lớp theo trình độ CEFR</li>
               </ul>
-              <p className="font-medium text-foreground">Hay tra loi that tot nhe, {student.name}!</p>
+              <p className="font-medium text-foreground">Hãy trả lời thật tốt nhé, {student.name}!</p>
             </CardContent>
           </Card>
           <Button className="w-full text-base font-extrabold" size="lg" onClick={startTest}>
-            Bat dau lam bai
+            Bắt đầu làm bài
           </Button>
         </div>
       </main>
@@ -257,31 +257,31 @@ export function PlacementTestPage({ student, onComplete, onBack }: Props) {
     const correctCount = answers.filter((a) => a.correct).length;
     return (
       <main className="mx-auto min-h-screen w-full max-w-md px-4 py-6">
-        <SessionHeader title="Ket qua xep lop" icon={<Trophy className="h-4 w-4" />} iconBg="bg-amber-500" onClose={onBack} />
+        <SessionHeader title="Kết quả xếp lớp" icon={<Trophy className="h-4 w-4" />} iconBg="bg-amber-500" onClose={onBack} />
         <div className="mt-8 flex flex-col items-center gap-6 text-center">
           <div className="flex h-24 w-24 items-center justify-center rounded-full bg-gradient-to-br from-indigo-400 to-purple-500 shadow-lg">
             <span className="text-3xl font-black text-white">{resultLevel}</span>
           </div>
-          <h2 className="text-2xl font-extrabold tracking-tight">Trinh do cua ban: {resultLevel}</h2>
+          <h2 className="text-2xl font-extrabold tracking-tight">Trình độ của bạn: {resultLevel}</h2>
           <p className="text-sm text-muted-foreground">{LEVEL_DESC_VI[resultLevel]}</p>
           <Card className="w-full">
             <CardContent className="space-y-2 p-5 text-sm">
               <div className="flex justify-between">
-                <span className="text-muted-foreground">Dung</span>
+                <span className="text-muted-foreground">Đúng</span>
                 <span className="font-bold text-green-600">{correctCount}/{answers.length}</span>
               </div>
               <div className="flex justify-between">
-                <span className="text-muted-foreground">Do chinh xac</span>
+                <span className="text-muted-foreground">Độ chính xác</span>
                 <span className="font-bold">{Math.round((correctCount / answers.length) * 100)}%</span>
               </div>
               <div className="flex justify-between">
-                <span className="text-muted-foreground">Xep lop</span>
+                <span className="text-muted-foreground">Xếp lớp</span>
                 <span className="font-bold text-indigo-600">{resultLevel}</span>
               </div>
             </CardContent>
           </Card>
           <Button className="w-full text-base font-extrabold" size="lg" onClick={handleComplete}>
-            Bat dau hoc
+            Bắt đầu học
           </Button>
         </div>
       </main>
@@ -293,16 +293,16 @@ export function PlacementTestPage({ student, onComplete, onBack }: Props) {
   if (!q) return null;
 
   const typeLabel: Record<Question["type"], string> = {
-    vocabulary: "Tu vung",
-    grammar: "Ngu phap",
+    vocabulary: "Từ vựng",
+    grammar: "Ngữ pháp",
     listening: "Nghe",
-    reading: "Doc hieu",
+    reading: "Đọc hiểu",
   };
 
   return (
     <main className="mx-auto min-h-screen w-full max-w-md px-4 py-6">
       <SessionHeader
-        title={`Cau ${questionNum}/${TOTAL_QUESTIONS}`}
+        title={`Câu ${questionNum}/${TOTAL_QUESTIONS}`}
         icon={<GraduationCap className="h-4 w-4" />}
         iconBg="bg-indigo-500"
         onClose={onBack}

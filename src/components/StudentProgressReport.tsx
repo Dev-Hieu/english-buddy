@@ -80,17 +80,17 @@ function SkillBar({ label, value, max }: { label: string; value: number; max: nu
 }
 
 function getRecommendation(report: ReportData): string {
-  if (report.totalWords === 0) return "Chua co du lieu hoc tap. Hay bat dau hoc ngay!";
+  if (report.totalWords === 0) return "Chưa có dữ liệu học tập. Hãy bắt đầu học ngay!";
   const areas: string[] = [];
-  if (report.masteryPercent < 30) areas.push("on tap tu vung de tang mastery");
-  if (report.weakWords.length > 5) areas.push(`tap trung vao ${report.weakWords.length} tu hay sai`);
-  if (report.activeDays < 10) areas.push("hoc deu dan hon (it nhat 15 ngay/thang)");
+  if (report.masteryPercent < 30) areas.push("ôn tập từ vựng để tăng mastery");
+  if (report.weakWords.length > 5) areas.push(`tập trung vào ${report.weakWords.length} từ hay sai`);
+  if (report.activeDays < 10) areas.push("học đều đặn hơn (ít nhất 15 ngày/tháng)");
   if (report.recentQuizzes.length > 0) {
     const avgScore = report.recentQuizzes.reduce((s, q) => s + q.score, 0) / report.recentQuizzes.length;
-    if (avgScore < 70) areas.push("lam lai bai kiem tra de cai thien diem");
+    if (avgScore < 70) areas.push("làm lại bài kiểm tra để cải thiện điểm");
   }
-  if (areas.length === 0) return "Ket qua hoc tap tot! Tiep tuc phat huy.";
-  return "Nen " + areas.join(", ") + ".";
+  if (areas.length === 0) return "Kết quả học tập tốt! Tiếp tục phát huy.";
+  return "Nên " + areas.join(", ") + ".";
 }
 
 export function StudentProgressReport({ studentId, studentName, studentXp, studentStreak, studentLevel, onClose }: StudentProgressReportProps) {
@@ -109,7 +109,7 @@ export function StudentProgressReport({ studentId, studentName, studentXp, stude
       .then(([progress, quizResults, skillTests]) => {
         setReport(computeReport(progress, quizResults, skillTests));
       })
-      .catch(() => setError("Khong tai duoc du lieu bao cao."))
+      .catch(() => setError("Không tải được dữ liệu báo cáo."))
       .finally(() => setLoading(false));
   }, [studentId]);
 
@@ -131,12 +131,12 @@ export function StudentProgressReport({ studentId, studentName, studentXp, stude
           {/* Header */}
           <div className="mb-4 flex items-center justify-between print:mb-6">
             <div>
-              <h2 className="text-xl font-black">Bao cao tien do</h2>
+              <h2 className="text-xl font-black">Báo cáo tiến độ</h2>
               <p className="text-sm font-semibold text-muted-foreground">
                 {studentName} {studentLevel ? `· ${studentLevel.toUpperCase()}` : ""}
               </p>
               <p className="text-xs text-muted-foreground print:block hidden">
-                Ngay xuat: {new Date().toLocaleDateString("vi-VN")}
+                Ngày xuất: {new Date().toLocaleDateString("vi-VN")}
               </p>
             </div>
             <div className="flex gap-2 print:hidden">
@@ -145,20 +145,20 @@ export function StudentProgressReport({ studentId, studentName, studentXp, stude
                 onClick={handlePrint}
                 className="rounded-xl bg-primary px-4 py-2 text-sm font-bold text-primary-foreground hover:bg-primary/90"
               >
-                Xuat PDF
+                Xuất PDF
               </button>
               <button
                 type="button"
                 onClick={onClose}
                 className="rounded-xl bg-muted px-4 py-2 text-sm font-bold text-muted-foreground hover:bg-secondary"
               >
-                Dong
+                Đóng
               </button>
             </div>
           </div>
 
           {loading ? (
-            <p className="py-12 text-center text-sm font-bold text-muted-foreground">Dang tai...</p>
+            <p className="py-12 text-center text-sm font-bold text-muted-foreground">Đang tải...</p>
           ) : error ? (
             <p className="rounded-xl bg-red-50 px-4 py-3 text-sm font-bold text-red-600">{error}</p>
           ) : report ? (
@@ -175,7 +175,7 @@ export function StudentProgressReport({ studentId, studentName, studentXp, stude
                 </div>
                 <div className={statCls}>
                   <span className="text-2xl font-black text-emerald-600">{report.totalWords}</span>
-                  <span className="text-xs font-bold text-muted-foreground">Tu da hoc</span>
+                  <span className="text-xs font-bold text-muted-foreground">Từ đã học</span>
                 </div>
                 <div className={statCls}>
                   <span className="text-2xl font-black text-purple-600">{report.masteryPercent}%</span>
@@ -185,16 +185,16 @@ export function StudentProgressReport({ studentId, studentName, studentXp, stude
 
               {/* Word Status Breakdown */}
               <div className={sectionCls}>
-                <h3 className="font-extrabold">Tien do tu vung</h3>
-                <SkillBar label="Da thao (Mastered)" value={report.masteredWords} max={report.totalWords} />
-                <SkillBar label="Dang hoc (Learning/Review)" value={report.learningWords} max={report.totalWords} />
-                <SkillBar label="Chua hoc (New)" value={report.totalWords - report.masteredWords - report.learningWords} max={report.totalWords} />
+                <h3 className="font-extrabold">Tiến độ từ vựng</h3>
+                <SkillBar label="Đã thạo (Mastered)" value={report.masteredWords} max={report.totalWords} />
+                <SkillBar label="Đang học (Learning/Review)" value={report.learningWords} max={report.totalWords} />
+                <SkillBar label="Chưa học (New)" value={report.totalWords - report.masteredWords - report.learningWords} max={report.totalWords} />
               </div>
 
               {/* Skill Test Results */}
               {report.skillTests.length > 0 && (
                 <div className={sectionCls}>
-                  <h3 className="font-extrabold">Kiem tra ky nang</h3>
+                  <h3 className="font-extrabold">Kiểm tra kỹ năng</h3>
                   <div className="space-y-2">
                     {report.skillTests.slice(0, 5).map((t) => (
                       <div key={t.id} className="flex items-center justify-between rounded-lg bg-muted px-3 py-2 text-sm">
@@ -217,7 +217,7 @@ export function StudentProgressReport({ studentId, studentName, studentXp, stude
               {/* Recent Quiz Scores */}
               {report.recentQuizzes.length > 0 && (
                 <div className={sectionCls}>
-                  <h3 className="font-extrabold">Bai kiem tra gan day</h3>
+                  <h3 className="font-extrabold">Bài kiểm tra gần đây</h3>
                   <div className="space-y-2">
                     {report.recentQuizzes.map((q, i) => (
                       <div key={i} className="flex items-center justify-between rounded-lg bg-muted px-3 py-2 text-sm">
@@ -244,7 +244,7 @@ export function StudentProgressReport({ studentId, studentName, studentXp, stude
               {/* Weak Areas */}
               {report.weakWords.length > 0 && (
                 <div className={sectionCls}>
-                  <h3 className="font-extrabold">Tu hay sai nhat</h3>
+                  <h3 className="font-extrabold">Từ hay sai nhất</h3>
                   <div className="flex flex-wrap gap-2">
                     {report.weakWords.map((w) => (
                       <span key={w.wordId} className="rounded-lg bg-red-50 px-2.5 py-1 text-xs font-bold text-red-600">
@@ -257,15 +257,15 @@ export function StudentProgressReport({ studentId, studentName, studentXp, stude
 
               {/* Activity */}
               <div className={sectionCls}>
-                <h3 className="font-extrabold">Hoat dong hoc tap</h3>
+                <h3 className="font-extrabold">Hoạt động học tập</h3>
                 <p className="text-sm font-semibold text-muted-foreground">
-                  Hoat dong <span className="font-extrabold text-primary">{report.activeDays}</span> ngay trong 30 ngay qua
+                  Hoạt động <span className="font-extrabold text-primary">{report.activeDays}</span> ngày trong 30 ngày qua
                 </p>
               </div>
 
               {/* Recommendation */}
               <div className="rounded-xl border-2 border-primary/20 bg-primary/5 p-4">
-                <h3 className="font-extrabold text-primary">Khuyen nghi</h3>
+                <h3 className="font-extrabold text-primary">Khuyến nghị</h3>
                 <p className="mt-1 text-sm font-semibold">{getRecommendation(report)}</p>
               </div>
             </div>

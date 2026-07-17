@@ -29,16 +29,16 @@ export class ErrorBoundary extends Component<Props, State> {
             !
           </div>
           <h1 className="mb-2 text-xl font-bold text-gray-800">
-            Da xay ra loi
+            Đã xảy ra lỗi
           </h1>
           <p className="mb-6 text-sm text-gray-500">
-            Ung dung gap su co. Vui long thu tai lai trang.
+            Ứng dụng gặp sự cố. Vui lòng thử tải lại trang.
           </p>
           <button
             onClick={() => window.location.reload()}
             className="w-full rounded-xl bg-blue-600 px-4 py-3 font-medium text-white transition hover:bg-blue-700"
           >
-            Thu tai lai trang
+            Thử tải lại trang
           </button>
           <button
             onClick={() => {
@@ -46,7 +46,7 @@ export class ErrorBoundary extends Component<Props, State> {
             }}
             className="mt-3 w-full rounded-xl border border-gray-200 px-4 py-3 font-medium text-gray-700 transition hover:bg-gray-50"
           >
-            Quay ve trang chinh
+            Quay về trang chính
           </button>
         </div>
       </div>

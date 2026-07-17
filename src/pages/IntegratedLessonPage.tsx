@@ -40,7 +40,7 @@ const LESSONS: IntegratedLesson[] = [
   {
     id: "il_01",
     title: "My Family",
-    titleVi: "Gia dinh cua toi",
+    titleVi: "Gia đình của tôi",
     level: "a1",
     topic: "family",
     steps: [
@@ -49,12 +49,12 @@ const LESSONS: IntegratedLesson[] = [
         title: "Family Words",
         content: "Learn these family words.",
         words: [
-          { en: "mother", vi: "me" },
-          { en: "father", vi: "bo" },
-          { en: "sister", vi: "chi/em gai" },
+          { en: "mother", vi: "mẹ" },
+          { en: "father", vi: "bố" },
+          { en: "sister", vi: "chị/em gái" },
           { en: "brother", vi: "anh/em trai" },
-          { en: "grandmother", vi: "ba" },
-          { en: "grandfather", vi: "ong" },
+          { en: "grandmother", vi: "bà" },
+          { en: "grandfather", vi: "ông" },
         ],
       },
       {
@@ -94,7 +94,7 @@ const LESSONS: IntegratedLesson[] = [
   {
     id: "il_02",
     title: "At School",
-    titleVi: "O truong hoc",
+    titleVi: "Ở trường học",
     level: "a1",
     topic: "school",
     steps: [
@@ -103,12 +103,12 @@ const LESSONS: IntegratedLesson[] = [
         title: "School Vocabulary",
         content: "Learn these school words.",
         words: [
-          { en: "teacher", vi: "giao vien" },
-          { en: "student", vi: "hoc sinh" },
-          { en: "classroom", vi: "lop hoc" },
-          { en: "book", vi: "sach" },
-          { en: "pencil", vi: "but chi" },
-          { en: "desk", vi: "ban hoc" },
+          { en: "teacher", vi: "giáo viên" },
+          { en: "student", vi: "học sinh" },
+          { en: "classroom", vi: "lớp học" },
+          { en: "book", vi: "sách" },
+          { en: "pencil", vi: "bút chì" },
+          { en: "desk", vi: "bàn học" },
         ],
       },
       {
@@ -152,7 +152,7 @@ const LESSONS: IntegratedLesson[] = [
   {
     id: "il_03",
     title: "Going Shopping",
-    titleVi: "Di mua sam",
+    titleVi: "Đi mua sắm",
     level: "a2",
     topic: "shopping",
     steps: [
@@ -161,12 +161,12 @@ const LESSONS: IntegratedLesson[] = [
         title: "Shopping Phrases",
         content: "Learn these shopping phrases.",
         words: [
-          { en: "How much is this?", vi: "Cai nay bao nhieu?" },
-          { en: "I'd like to buy...", vi: "Toi muon mua..." },
-          { en: "Do you have...?", vi: "Ban co...?" },
-          { en: "receipt", vi: "hoa don" },
-          { en: "discount", vi: "giam gia" },
-          { en: "change", vi: "tien thua" },
+          { en: "How much is this?", vi: "Cái này bao nhiêu?" },
+          { en: "I'd like to buy...", vi: "Tôi muốn mua..." },
+          { en: "Do you have...?", vi: "Bạn có...?" },
+          { en: "receipt", vi: "hóa đơn" },
+          { en: "discount", vi: "giảm giá" },
+          { en: "change", vi: "tiền thừa" },
         ],
       },
       {
@@ -210,7 +210,7 @@ const LESSONS: IntegratedLesson[] = [
   {
     id: "il_04",
     title: "My Holiday",
-    titleVi: "Ky nghi cua toi",
+    titleVi: "Kỳ nghỉ của tôi",
     level: "a2",
     topic: "travel",
     steps: [
@@ -219,12 +219,12 @@ const LESSONS: IntegratedLesson[] = [
         title: "Travel Vocabulary",
         content: "Learn these travel words.",
         words: [
-          { en: "airport", vi: "san bay" },
-          { en: "hotel", vi: "khach san" },
+          { en: "airport", vi: "sân bay" },
+          { en: "hotel", vi: "khách sạn" },
           { en: "suitcase", vi: "vali" },
-          { en: "passport", vi: "ho chieu" },
-          { en: "souvenir", vi: "qua luu niem" },
-          { en: "beach", vi: "bai bien" },
+          { en: "passport", vi: "hộ chiếu" },
+          { en: "souvenir", vi: "quà lưu niệm" },
+          { en: "beach", vi: "bãi biển" },
         ],
       },
       {
@@ -268,7 +268,7 @@ const LESSONS: IntegratedLesson[] = [
   {
     id: "il_05",
     title: "Health & Fitness",
-    titleVi: "Suc khoe va the duc",
+    titleVi: "Sức khỏe và thể dục",
     level: "b1",
     topic: "health",
     steps: [
@@ -277,12 +277,12 @@ const LESSONS: IntegratedLesson[] = [
         title: "Health Vocabulary",
         content: "Learn these health words.",
         words: [
-          { en: "symptom", vi: "trieu chung" },
-          { en: "prescription", vi: "don thuoc" },
-          { en: "exercise", vi: "tap the duc" },
-          { en: "balanced diet", vi: "che do an can bang" },
-          { en: "headache", vi: "dau dau" },
-          { en: "fever", vi: "sot" },
+          { en: "symptom", vi: "triệu chứng" },
+          { en: "prescription", vi: "đơn thuốc" },
+          { en: "exercise", vi: "tập thể dục" },
+          { en: "balanced diet", vi: "chế độ ăn cân bằng" },
+          { en: "headache", vi: "đau đầu" },
+          { en: "fever", vi: "sốt" },
         ],
       },
       {
@@ -326,7 +326,7 @@ const LESSONS: IntegratedLesson[] = [
   {
     id: "il_06",
     title: "Technology",
-    titleVi: "Cong nghe",
+    titleVi: "Công nghệ",
     level: "b1",
     topic: "technology",
     steps: [
@@ -335,12 +335,12 @@ const LESSONS: IntegratedLesson[] = [
         title: "Tech Vocabulary",
         content: "Learn these technology words.",
         words: [
-          { en: "smartphone", vi: "dien thoai thong minh" },
-          { en: "artificial intelligence", vi: "tri tue nhan tao" },
-          { en: "software", vi: "phan mem" },
-          { en: "cybersecurity", vi: "an ninh mang" },
-          { en: "social media", vi: "mang xa hoi" },
-          { en: "innovation", vi: "doi moi/sang tao" },
+          { en: "smartphone", vi: "điện thoại thông minh" },
+          { en: "artificial intelligence", vi: "trí tuệ nhân tạo" },
+          { en: "software", vi: "phần mềm" },
+          { en: "cybersecurity", vi: "an ninh mạng" },
+          { en: "social media", vi: "mạng xã hội" },
+          { en: "innovation", vi: "đổi mới/sáng tạo" },
         ],
       },
       {
@@ -461,10 +461,10 @@ export function IntegratedLessonPage({ student, onBackHome }: Props) {
     return (
       <main className="mx-auto w-full max-w-md sm:max-w-lg lg:max-w-2xl overflow-x-hidden h-[100dvh] overflow-y-auto bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:h-[calc(100dvh-2rem)] sm:border sm:border-border/40">
         <div className="px-4 pt-4 pb-6 space-y-4">
-          <SessionHeader title="Bai hoc tich hop" icon={<GraduationCap className="h-4 w-4" />} iconBg="bg-indigo-500" onClose={onBackHome} />
+          <SessionHeader title="Bài học tích hợp" icon={<GraduationCap className="h-4 w-4" />} iconBg="bg-indigo-500" onClose={onBackHome} />
 
           <p className="text-sm text-muted-foreground">
-            Moi bai ket hop nhieu ky nang: Tu vung, Nghe, Doc, Ngu phap, Noi, Viet quanh 1 chu de.
+            Mỗi bài kết hợp nhiều kỹ năng: Từ vựng, Nghe, Đọc, Ngữ pháp, Nói, Viết quanh 1 chủ đề.
           </p>
 
           <div className="space-y-3">
@@ -498,7 +498,7 @@ export function IntegratedLessonPage({ student, onBackHome }: Props) {
                           })}
                         </div>
                       </div>
-                      <span className="shrink-0 text-xs font-bold text-muted-foreground">{lesson.steps.length} buoc</span>
+                      <span className="shrink-0 text-xs font-bold text-muted-foreground">{lesson.steps.length} bước</span>
                     </div>
                   </CardContent>
                 </Card>
@@ -518,10 +518,10 @@ export function IntegratedLessonPage({ student, onBackHome }: Props) {
           <div className="flex h-20 w-20 items-center justify-center rounded-full bg-green-100">
             <CheckCircle2 className="h-10 w-10 text-green-600" />
           </div>
-          <h2 className="text-2xl font-black">Hoan thanh!</h2>
-          <p className="text-muted-foreground">Ban da hoan thanh bai hoc <span className="font-bold text-foreground">{selectedLesson.title}</span></p>
+          <h2 className="text-2xl font-black">Hoàn thành!</h2>
+          <p className="text-muted-foreground">Bạn đã hoàn thành bài học <span className="font-bold text-foreground">{selectedLesson.title}</span></p>
           <div className="rounded-2xl border border-border/60 bg-muted/50 p-4 w-full max-w-xs">
-            <p className="text-sm font-bold mb-2">Tom tat:</p>
+            <p className="text-sm font-bold mb-2">Tóm tắt:</p>
             <ul className="space-y-1 text-sm text-left">
               {selectedLesson.steps.map((step, i) => (
                 <li key={i} className="flex items-center gap-2">
@@ -532,8 +532,8 @@ export function IntegratedLessonPage({ student, onBackHome }: Props) {
             </ul>
           </div>
           <div className="flex gap-3">
-            <Button variant="outline" onClick={exitLesson}>Danh sach bai</Button>
-            <Button onClick={onBackHome}>Ve trang chu</Button>
+            <Button variant="outline" onClick={exitLesson}>Danh sách bài</Button>
+            <Button onClick={onBackHome}>Về trang chủ</Button>
           </div>
         </div>
       </main>
@@ -614,7 +614,7 @@ function VocabStep({ step, onNext }: { step: LessonStep; onNext: () => void }) {
                 >
                   <Volume2 className="h-4 w-4" /> Nghe
                 </button>
-                <span className="text-xs text-muted-foreground">Nhan de xem nghia</span>
+                <span className="text-xs text-muted-foreground">Nhấn để xem nghĩa</span>
               </>
             ) : (
               <>
@@ -630,11 +630,11 @@ function VocabStep({ step, onNext }: { step: LessonStep; onNext: () => void }) {
         <span className="text-xs font-bold text-muted-foreground">{cardIndex + 1} / {words.length}</span>
         {!allSeen ? (
           <Button size="sm" onClick={flipped ? nextCard : flip} disabled={!flipped && cardIndex >= words.length - 1}>
-            {flipped ? "Tu tiep" : "Lat"} <ArrowRight className="h-4 w-4" />
+            {flipped ? "Từ tiếp" : "Lật"} <ArrowRight className="h-4 w-4" />
           </Button>
         ) : (
           <Button onClick={onNext}>
-            Tiep theo <ArrowRight className="h-4 w-4" />
+            Tiếp theo <ArrowRight className="h-4 w-4" />
           </Button>
         )}
       </div>
@@ -670,7 +670,7 @@ function ListenStep({ step, onNext }: { step: LessonStep; onNext: () => void }) 
       <Card>
         <CardContent className="p-4 space-y-3">
           <Button variant="outline" size="sm" onClick={playPassage} className="w-full">
-            <Play className="h-4 w-4" /> Nghe bai doc
+            <Play className="h-4 w-4" /> Nghe bài đọc
           </Button>
           {step.passage && (
             <p className="text-sm leading-relaxed border-l-2 border-primary/30 pl-3 text-muted-foreground">{step.passage}</p>
@@ -707,11 +707,11 @@ function ListenStep({ step, onNext }: { step: LessonStep; onNext: () => void }) 
 
       <div className="flex justify-end gap-2">
         {!checked ? (
-          <Button onClick={check} disabled={!allAnswered}>Kiem tra</Button>
+          <Button onClick={check} disabled={!allAnswered}>Kiểm tra</Button>
         ) : (
           <div className="flex items-center gap-3 w-full justify-between">
-            <span className="text-sm font-bold">{score}/{questions.length} dung</span>
-            <Button onClick={onNext}>Tiep theo <ArrowRight className="h-4 w-4" /></Button>
+            <span className="text-sm font-bold">{score}/{questions.length} đúng</span>
+            <Button onClick={onNext}>Tiếp theo <ArrowRight className="h-4 w-4" /></Button>
           </div>
         )}
       </div>
@@ -775,11 +775,11 @@ function ReadStep({ step, onNext }: { step: LessonStep; onNext: () => void }) {
 
       <div className="flex justify-end gap-2">
         {!checked ? (
-          <Button onClick={check} disabled={!allAnswered}>Kiem tra</Button>
+          <Button onClick={check} disabled={!allAnswered}>Kiểm tra</Button>
         ) : (
           <div className="flex items-center gap-3 w-full justify-between">
-            <span className="text-sm font-bold">{score}/{questions.length} dung</span>
-            <Button onClick={onNext}>Tiep theo <ArrowRight className="h-4 w-4" /></Button>
+            <span className="text-sm font-bold">{score}/{questions.length} đúng</span>
+            <Button onClick={onNext}>Tiếp theo <ArrowRight className="h-4 w-4" /></Button>
           </div>
         )}
       </div>
@@ -845,11 +845,11 @@ function GrammarStep({ step, onNext }: { step: LessonStep; onNext: () => void })
 
       <div className="flex justify-end gap-2">
         {!checked ? (
-          <Button onClick={check} disabled={!allAnswered}>Kiem tra</Button>
+          <Button onClick={check} disabled={!allAnswered}>Kiểm tra</Button>
         ) : (
           <div className="flex items-center gap-3 w-full justify-between">
-            <span className="text-sm font-bold">{score}/{exercises.length} dung</span>
-            <Button onClick={onNext}>Tiep theo <ArrowRight className="h-4 w-4" /></Button>
+            <span className="text-sm font-bold">{score}/{exercises.length} đúng</span>
+            <Button onClick={onNext}>Tiếp theo <ArrowRight className="h-4 w-4" /></Button>
           </div>
         )}
       </div>
@@ -881,7 +881,7 @@ function SpeakStep({ step, onNext }: { step: LessonStep; onNext: () => void }) {
       const match = heard.includes(target) || target.includes(heard) || similarity(heard, target) > 0.6;
       setMatched(match);
     } catch {
-      setResult("(Khong nghe duoc, thu lai)");
+      setResult("(Không nghe được, thử lại)");
       setMatched(false);
     } finally {
       setListening(false);
@@ -897,7 +897,7 @@ function SpeakStep({ step, onNext }: { step: LessonStep; onNext: () => void }) {
         <CardContent className="p-5 text-center space-y-4">
           <p className="text-xl font-bold">{phrase}</p>
           <Button variant="outline" size="sm" onClick={playPhrase}>
-            <Volume2 className="h-4 w-4" /> Nghe mau
+            <Volume2 className="h-4 w-4" /> Nghe mẫu
           </Button>
         </CardContent>
       </Card>
@@ -915,21 +915,21 @@ function SpeakStep({ step, onNext }: { step: LessonStep; onNext: () => void }) {
           >
             <Mic className="h-7 w-7 text-white" />
           </button>
-          <span className="text-xs text-muted-foreground">{listening ? "Dang nghe..." : "Nhan de noi"}</span>
+          <span className="text-xs text-muted-foreground">{listening ? "Đang nghe..." : "Nhấn để nói"}</span>
 
           {result !== null && (
             <div className={cn("w-full rounded-xl border-2 p-4 text-center", matched ? "border-green-500 bg-green-50" : "border-red-400 bg-red-50")}>
-              <p className="text-sm font-bold">{matched ? "Rat tot!" : "Thu lai nhe!"}</p>
-              <p className="text-xs text-muted-foreground mt-1">Ban noi: "{result}"</p>
+              <p className="text-sm font-bold">{matched ? "Rất tốt!" : "Thử lại nhé!"}</p>
+              <p className="text-xs text-muted-foreground mt-1">Bạn nói: "{result}"</p>
             </div>
           )}
         </div>
       ) : (
-        <p className="text-sm text-muted-foreground text-center">Trinh duyet khong ho tro nhan dang giong noi.</p>
+        <p className="text-sm text-muted-foreground text-center">Trình duyệt không hỗ trợ nhận dạng giọng nói.</p>
       )}
 
       <div className="flex justify-end">
-        <Button onClick={onNext}>Tiep theo <ArrowRight className="h-4 w-4" /></Button>
+        <Button onClick={onNext}>Tiếp theo <ArrowRight className="h-4 w-4" /></Button>
       </div>
     </div>
   );
@@ -956,15 +956,15 @@ function WriteStep({ step, onNext }: { step: LessonStep; onNext: () => void }) {
       <textarea
         value={text}
         onChange={(e) => setText(e.target.value)}
-        placeholder="Viet cau tra loi cua ban o day..."
+        placeholder="Viết câu trả lời của bạn ở đây..."
         rows={5}
         className="w-full rounded-xl border-2 border-border bg-background p-4 text-sm focus:border-primary focus:outline-none resize-none"
       />
 
       <div className="flex items-center justify-between">
-        <span className="text-xs text-muted-foreground">{text.trim().split(/\s+/).filter(Boolean).length} tu</span>
+        <span className="text-xs text-muted-foreground">{text.trim().split(/\s+/).filter(Boolean).length} từ</span>
         <Button onClick={onNext} disabled={text.trim().length < 3}>
-          Tiep theo <ArrowRight className="h-4 w-4" />
+          Tiếp theo <ArrowRight className="h-4 w-4" />
         </Button>
       </div>
     </div>
