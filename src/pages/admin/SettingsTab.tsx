@@ -21,6 +21,10 @@ function ConfigRow({ label, value }: { label: string; value: string }) {
 export function SettingsTab() {
   const [deepseekConfigured, setDeepseekConfigured] = useState<boolean | null>(null);
 
+  // Reset levels state
+  const [resettingLevels, setResettingLevels] = useState(false);
+  const [resetLevelsMsg, setResetLevelsMsg] = useState("");
+
   // Reset state
   const [resetXp, setResetXp] = useState(false);
   const [resetStreak, setResetStreak] = useState(false);
@@ -188,6 +192,42 @@ export function SettingsTab() {
             <p className="text-center text-sm font-bold text-muted-foreground py-4">Chưa có mã nào.</p>
           )}
         </div>
+      </section>
+
+      {/* Reset trình độ */}
+      <section>
+        <h3 className="mb-2 font-extrabold text-base text-destructive">Reset trình độ</h3>
+        <Card className="border-destructive/30">
+          <CardContent className="p-4 space-y-3">
+            <p className="text-xs font-bold text-muted-foreground">
+              Reset trình độ tất cả học sinh về A1 và gửi thông báo yêu cầu thi xếp lớp đầu vào. Không thể hoàn tác.
+            </p>
+            {resetLevelsMsg && (
+              <p className="rounded-lg bg-muted px-3 py-2 text-sm font-bold">{resetLevelsMsg}</p>
+            )}
+            <Button
+              type="button"
+              variant="destructive"
+              disabled={resettingLevels}
+              onClick={async () => {
+                if (!confirm("Bạn chắc chắn muốn reset trình độ TẤT CẢ học sinh về A1? Hành động này không thể hoàn tác.")) return;
+                setResettingLevels(true);
+                setResetLevelsMsg("");
+                try {
+                  const result = await apiRequest<{ ok: boolean; count: number }>("/api/admin/reset-levels", { method: "POST", body: { message: "Yêu cầu thi xếp lớp đầu vào" } });
+                  setResetLevelsMsg(`Đã reset trình độ ${result.count} học sinh về A1.`);
+                } catch {
+                  setResetLevelsMsg("Lỗi kết nối.");
+                } finally {
+                  setResettingLevels(false);
+                }
+              }}
+              className="w-full"
+            >
+              {resettingLevels ? "Đang reset…" : "Reset trình độ tất cả học sinh"}
+            </Button>
+          </CardContent>
+        </Card>
       </section>
 
       {/* Reset dữ liệu */}

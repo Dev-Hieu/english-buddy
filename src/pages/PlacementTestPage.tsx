@@ -3,7 +3,7 @@ import type { Student } from "@/types";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { SessionHeader } from "@/components/layout/SessionHeader";
-import { GraduationCap, CheckCircle, XCircle, Trophy } from "lucide-react";
+import { GraduationCap, CheckCircle, XCircle, Trophy, Award, Printer } from "lucide-react";
 
 // ── Types ──
 
@@ -154,7 +154,7 @@ const TOTAL_QUESTIONS = 30;
 
 // ── Component ──
 
-type Phase = "intro" | "testing" | "result";
+type Phase = "intro" | "testing" | "result" | "certificate";
 
 export function PlacementTestPage({ student, onComplete, onBack }: Props) {
   const [phase, setPhase] = useState<Phase>("intro");
@@ -280,10 +280,94 @@ export function PlacementTestPage({ student, onComplete, onBack }: Props) {
               </div>
             </CardContent>
           </Card>
+          <Button className="w-full text-base font-extrabold" size="lg" onClick={() => setPhase("certificate")}>
+            Xem chứng chỉ đầu vào
+          </Button>
+        </div>
+      </main>
+    );
+  }
+
+  // ── Certificate screen ──
+  if (phase === "certificate") {
+    const correctCount = answers.filter((a) => a.correct).length;
+    const pct = Math.round((correctCount / answers.length) * 100);
+    const dateStr = new Date().toLocaleDateString("vi-VN", { year: "numeric", month: "long", day: "numeric" });
+    return (
+      <main className="mx-auto min-h-screen w-full max-w-md px-4 py-6">
+        <SessionHeader title="Chứng chỉ xếp lớp" icon={<Award className="h-4 w-4" />} iconBg="bg-amber-500" onClose={() => setPhase("result")} />
+
+        {/* Print button */}
+        <div className="mb-4 flex justify-end print:hidden">
+          <button
+            type="button"
+            onClick={() => window.print()}
+            className="flex items-center gap-1.5 rounded-xl bg-primary px-4 py-2 text-xs font-bold text-white shadow-md transition-all active:scale-[0.97]"
+          >
+            <Printer className="h-4 w-4" /> In chứng chỉ
+          </button>
+        </div>
+
+        {/* Certificate */}
+        <div className="cert-print mx-auto max-w-lg rounded-2xl border-4 border-double border-amber-400 bg-white p-8 shadow-xl dark:bg-white">
+          <div className="rounded-xl border-2 border-amber-200 p-6 text-center">
+            <div className="mb-6">
+              <div className="mx-auto mb-2 flex h-14 w-14 items-center justify-center rounded-full bg-amber-100">
+                <Award className="h-8 w-8 text-amber-600" />
+              </div>
+              <h1 className="text-2xl font-black tracking-wider text-gray-800 uppercase">CHỨNG CHỈ XẾP LỚP</h1>
+              <p className="text-xs text-gray-500 tracking-widest uppercase mt-1">Placement Test Certificate</p>
+            </div>
+
+            <div className="mx-auto mb-5 h-px w-32 bg-amber-300" />
+
+            <p className="text-xs text-gray-500 mb-2">Chứng nhận học sinh</p>
+            <h2 className="text-2xl font-black text-gray-800 mb-2">{student.name}</h2>
+
+            <p className="text-xs text-gray-500 mb-4">đã hoàn thành bài kiểm tra xếp lớp đầu vào</p>
+
+            <div className="mx-auto mb-4 inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-amber-400 to-amber-500 px-6 py-3 shadow-md">
+              <span className="text-2xl font-black text-white">{resultLevel}</span>
+              <span className="text-xs font-bold text-white/90">{LEVEL_DESC_VI[resultLevel]}</span>
+            </div>
+
+            <p className="text-xs text-gray-500 mb-1">Trình độ CEFR</p>
+            <p className="text-sm font-bold text-gray-700 mb-4">Điểm: {correctCount}/{answers.length} ({pct}%)</p>
+
+            <div className="mx-auto mb-4 h-px w-32 bg-amber-300" />
+
+            <div className="flex items-center justify-between text-[10px] text-gray-400">
+              <div className="text-left">
+                <p>Ngày cấp: {dateStr}</p>
+              </div>
+              <div className="text-right">
+                <p className="text-sm font-black text-amber-600">English Buddy</p>
+                <p>Nền tảng học tiếng Anh</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-6">
           <Button className="w-full text-base font-extrabold" size="lg" onClick={handleComplete}>
             Bắt đầu học
           </Button>
         </div>
+
+        <style>{`
+          @media print {
+            body * { visibility: hidden !important; }
+            .cert-print, .cert-print * { visibility: visible !important; }
+            .cert-print {
+              position: fixed !important;
+              left: 50% !important;
+              top: 50% !important;
+              transform: translate(-50%, -50%) !important;
+              width: 700px !important;
+              box-shadow: none !important;
+            }
+          }
+        `}</style>
       </main>
     );
   }

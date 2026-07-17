@@ -537,6 +537,15 @@ export function createApp() {
     res.json(db.prepare("SELECT id, title, message, createdAt FROM notifications WHERE expiresAt IS NULL OR expiresAt > ? ORDER BY createdAt DESC LIMIT 5").all(Date.now()));
   });
 
+  // Admin: reset all student levels to A1 + create notification
+  app.post("/api/admin/reset-levels", requireAdmin, (req, res) => {
+    const message = req.body?.message || "Yêu cầu thi xếp lớp đầu vào";
+    const result = db.prepare("UPDATE students SET level = 'a1'").run();
+    db.prepare("INSERT INTO notifications (title, message, createdBy, createdAt, expiresAt) VALUES (?, ?, ?, ?, ?)")
+      .run("Thông báo xếp lớp", message, (req as any).user.id, Date.now(), null);
+    res.json({ ok: true, count: result.changes });
+  });
+
   // ── Teacher endpoints (xem lớp mình, quản lý bé trong lớp) ──
   const requireTeacher = (req: Request, res: Response, next: NextFunction) => {
     requireAuth(req, res, () => {

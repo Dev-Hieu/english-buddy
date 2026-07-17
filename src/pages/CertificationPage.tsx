@@ -359,6 +359,7 @@ const EXAMS: CertExam[] = [
 
 const LEVEL_ORDER_MAP: Record<string, number> = { kids: 0, a1: 1, a2: 2, b1: 3, b2: 4, c1: 5 };
 const EXAM_LEVEL_MAP: Record<string, number> = { A1: 1, A2: 2, B1: 3, B2: 4, C1: 5 };
+const NEXT_LEVEL_MAP: Record<string, string> = { A1: "a2", A2: "b1", B1: "b2", B2: "c1" };
 
 function canTakeExam(studentLevel: string, examLevel: string): boolean {
   const sIdx = LEVEL_ORDER_MAP[studentLevel] ?? 0;
@@ -393,7 +394,7 @@ type Phase = "select" | "preExam" | "exam" | "result" | "certificate";
 
 interface SectionScore { type: string; correct: number; total: number }
 
-export function CertificationPage({ student, onBackHome }: { student: Student; onBackHome: () => void }) {
+export function CertificationPage({ student, onBackHome, onLevelUp }: { student: Student; onBackHome: () => void; onLevelUp?: (newLevel: string) => void }) {
   const [phase, setPhase] = useState<Phase>("select");
   const [selectedExam, setSelectedExam] = useState<CertExam | null>(null);
   const [answers, setAnswers] = useState<Record<number, number>>({});
@@ -405,6 +406,7 @@ export function CertificationPage({ student, onBackHome }: { student: Student; o
   const [totalQuestions, setTotalQuestions] = useState(0);
   const [passed, setPassed] = useState(false);
   const [certId] = useState(generateCertId);
+  const [levelAdvanced, setLevelAdvanced] = useState(false);
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
   // Flatten questions for indexing
@@ -476,9 +478,20 @@ export function CertificationPage({ student, onBackHome }: { student: Student; o
     setTotalQuestions(total);
     setSectionScores(scores);
     const pct = (correct / total) * 100;
-    setPassed(pct >= selectedExam.passingScore);
+    const didPass = pct >= selectedExam.passingScore;
+    setPassed(didPass);
+
+    // Auto advance level on pass
+    const nextLevel = NEXT_LEVEL_MAP[selectedExam.level];
+    if (didPass && nextLevel && onLevelUp) {
+      onLevelUp(nextLevel);
+      setLevelAdvanced(true);
+    } else {
+      setLevelAdvanced(false);
+    }
+
     setPhase("result");
-  }, [selectedExam, answers]);
+  }, [selectedExam, answers, onLevelUp]);
 
   // Navigate questions
   const goToQuestion = (sectionIdx: number, qIdx: number) => {
@@ -799,6 +812,11 @@ export function CertificationPage({ student, onBackHome }: { student: Student; o
               {passed ? "ĐẠT - Chúc mừng bạn!" : "CHƯA ĐẠT - Cố gắng lần sau nhé!"}
             </p>
             <p className="text-xs text-muted-foreground mt-1">Điểm đạt: {selectedExam.passingScore}%</p>
+            {passed && levelAdvanced && NEXT_LEVEL_MAP[selectedExam.level] && (
+              <div className="mt-3 rounded-xl bg-green-50 border border-green-200 p-3 text-xs text-green-800 dark:bg-green-950/30 dark:border-green-800 dark:text-green-200">
+                <strong>Chúc mừng!</strong> Bạn đã đạt {selectedExam.level}. Hệ thống tự động nâng cấp lên {NEXT_LEVEL_MAP[selectedExam.level].toUpperCase()}.
+              </div>
+            )}
           </div>
 
           {/* Section breakdown */}

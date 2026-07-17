@@ -387,7 +387,7 @@ export function App() {
       content = <IntegratedLessonPage student={student} onBackHome={() => navigate("home")} />;
       break;
     case "certification":
-      content = <CertificationPage student={student} onBackHome={() => navigate("home")} />;
+      content = <CertificationPage student={student} onBackHome={() => navigate("home")} onLevelUp={async (level) => { await updateStudent(student.id, { level: level as any }); loadStudents(); }} />;
       break;
     default:
       content = (
