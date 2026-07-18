@@ -713,6 +713,30 @@ export function createApp() {
     res.send(vocabCache.json);
   });
 
+  // ── Word Bank API (Phase 1) ──
+  app.get("/api/categories", (_req, res) => {
+    const rows = db.prepare('SELECT * FROM categories ORDER BY "order"').all();
+    rows.forEach((r: any) => { r.sub_topics = JSON.parse(r.sub_topics || "[]"); });
+    res.json(rows);
+  });
+
+  app.get("/api/word-bank", (req, res) => {
+    const { level, category } = req.query;
+    let sql = "SELECT * FROM word_bank WHERE 1=1";
+    const params: any[] = [];
+    if (level && typeof level === "string") { sql += " AND level = ?"; params.push(level); }
+    if (category && typeof category === "string") { sql += " AND categories LIKE ?"; params.push(`%${category}%`); }
+    sql += " ORDER BY frequency ASC";
+    const rows = db.prepare(sql).all(...params);
+    const JSON_FIELDS = ["categories", "examples", "word_family", "collocations", "synonyms", "antonyms", "common_mistakes", "grammar_patterns"];
+    rows.forEach((r: any) => {
+      for (const f of JSON_FIELDS) {
+        try { r[f] = JSON.parse(r[f] || "[]"); } catch { r[f] = []; }
+      }
+    });
+    res.json(rows);
+  });
+
   // ── Học sinh (theo tài khoản) ──
   app.get("/api/students", requireAuth, (req, res) => {
     const user = (req as any).user;
