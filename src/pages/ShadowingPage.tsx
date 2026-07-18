@@ -102,7 +102,7 @@ const SUGGESTED_VIDEOS: SuggestedVideo[] = [
   { id: "AoUCuBdDNNw", title: "Biodiversity", level: "B2", topic: "Science" },
   { id: "N2FOxjtv5ns", title: "What is El Niño?", level: "C1", topic: "Science" },
   { id: "HffWFd_6bJ0", title: "Social Media Changes Your Brain", level: "C1", topic: "Science" },
-  { id: "cDlHHCGbMc4", title: "How Do Bees Make Honey?", level: "C1", topic: "Science" },
+  { id: "dVGINIsLnqU", title: "Why Do We Itch?", level: "C1", topic: "Science" },
   { id: "c_wOnJJEfxE", title: "What is Cultural Humility?", level: "C2", topic: "Science" },
   { id: "4h7pcrSg0k8", title: "What Happens After a Stroke", level: "C2", topic: "Science" },
   // ── Culture ──
