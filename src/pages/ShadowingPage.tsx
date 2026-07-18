@@ -27,6 +27,17 @@ type VideoTopic = "Kids" | "Daily" | "IELTS" | "Film" | "Music" | "News" | "Scie
 interface SuggestedVideo { id: string; title: string; level: VideoLevel; topic: VideoTopic; }
 
 const SUGGESTED_VIDEOS: SuggestedVideo[] = [
+  // ── Easy English — A1 Conversations ──
+  { id: "ZtKCy5YnFsA", title: "Meeting Someone New (Greetings)", level: "A1", topic: "Daily" },
+  { id: "tqTJAXfzD0E", title: "Introducing Yourself", level: "A1", topic: "Daily" },
+  { id: "J1f47XwvQYA", title: "Family Life", level: "A1", topic: "Daily" },
+  { id: "QlGPeLYMfso", title: "At Home", level: "A1", topic: "Daily" },
+  { id: "IVhXP9ZG1N8", title: "Everyday Life", level: "A1", topic: "Daily" },
+  { id: "InwUQgGhwRU", title: "School Life", level: "A1", topic: "Daily" },
+  { id: "h_KUklZdq5w", title: "Daily Conversations (Food)", level: "A1", topic: "Daily" },
+  { id: "NFhfE_HfOwY", title: "Can I Help You? (Shopping)", level: "A1", topic: "Daily" },
+  { id: "kUZiIwcvy58", title: "A One-Way Ticket (Transport)", level: "A1", topic: "Daily" },
+  { id: "kj5MBxBO14U", title: "On the Street (City)", level: "A1", topic: "Daily" },
   // ── Kids (A1) ──
   { id: "u0zqXffuN5Y", title: "Hello", level: "A1", topic: "Kids" },
   { id: "WgYcNtL7f7c", title: "What do you want?", level: "A1", topic: "Kids" },
