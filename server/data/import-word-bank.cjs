@@ -1,6 +1,7 @@
 const Database = require("better-sqlite3");
 const fs = require("fs");
 const path = require("path");
+const { randomUUID } = require("crypto");
 
 const db = new Database(path.join(__dirname, "..", "data.db"));
 db.pragma("journal_mode = WAL");
@@ -22,8 +23,8 @@ const tx = db.transaction(() => {
     for (const w of words) {
       const stringify = (v) => JSON.stringify(v || []);
       insert.run(
-        w.id, w.word, w.phonetic || "", w.meaning_vi || "", w.meaning_en || "",
-        w.pos || "", w.level, stringify(w.categories),
+        w.id || randomUUID(), w.word, w.phonetic || "", w.meaning_vi || "", w.meaning_en || "",
+        w.pos || "", w.level || level, stringify(w.categories),
         w.frequency || 0, stringify(w.examples),
         stringify(w.word_family), stringify(w.collocations),
         stringify(w.synonyms), stringify(w.antonyms),
