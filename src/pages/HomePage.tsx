@@ -253,15 +253,17 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
       <button type="button" onClick={() => onNavigate("dashboard")}
         className="w-full rounded-[1rem] bg-card border border-border/40 px-4 py-3 shadow-md text-left transition-all active:scale-[0.98] hover:shadow-lg">
         <div className="flex items-center justify-between mb-2.5">
-          <span className="text-xs font-black">{learned.size} từ · {goalReached ? "Đạt ✓" : <button type="button" onClick={(e) => { e.stopPropagation(); setEditGoal(true); setGoalVal(goal); }} className="text-primary underline">{learnedToday}/{goal} hôm nay</button>}</span>
+          <span className="text-xs font-black">
+            {learned.size} từ · {goalReached ? `Đạt ✓ (${learnedToday}/${goal})` : `${learnedToday}/${goal} hôm nay`}
+            {!editGoal && <button type="button" onClick={(e) => { e.stopPropagation(); setEditGoal(true); setGoalVal(goal); }} className="ml-1 text-primary underline">đổi</button>}
+          </span>
           {editGoal && (
-            <div className="flex items-center gap-2 mt-1" onClick={(e) => e.stopPropagation()}>
-              <span className="text-xs font-bold text-muted-foreground">Mục tiêu:</span>
+            <div className="flex items-center gap-2" onClick={(e) => e.stopPropagation()}>
               <input type="number" min={1} max={200} value={goalVal} onChange={(e) => setGoalVal(Number(e.target.value) || 10)}
-                className="w-16 rounded-lg border px-2 py-1 text-xs font-bold text-center" />
-              <span className="text-xs text-muted-foreground">từ/ngày</span>
-              <button type="button" onClick={saveGoal} className="rounded-lg bg-primary px-2 py-1 text-xs font-bold text-white">Lưu</button>
-              <button type="button" onClick={() => setEditGoal(false)} className="text-xs text-muted-foreground">Huỷ</button>
+                className="w-14 rounded-lg border px-2 py-1 text-xs font-bold text-center" />
+              <span className="text-[10px] text-muted-foreground">từ/ngày</span>
+              <button type="button" onClick={saveGoal} className="rounded-lg bg-primary px-1.5 py-0.5 text-[10px] font-bold text-white">Lưu</button>
+              <button type="button" onClick={() => setEditGoal(false)} className="text-[10px] text-muted-foreground">✕</button>
             </div>
           )}
           <span className="text-[10px] font-bold text-primary">Chi tiết →</span>
