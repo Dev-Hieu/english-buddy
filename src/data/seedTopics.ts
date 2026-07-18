@@ -1,5 +1,44 @@
 import type { Topic } from "../types";
 
+// Old topic ID → new category ID mapping (for backward compatibility)
+export const TOPIC_TO_CATEGORY: Record<string, string> = {
+  topic_greetings: "daily_life",
+  topic_people: "family_and_friends",
+  topic_numbers: "measurements_and_numbers",
+  topic_family: "family_and_friends",
+  topic_colors: "colours_and_shapes",
+  topic_house: "house_and_home",
+  topic_daily: "daily_life",
+  topic_body: "health_and_body",
+  topic_animals: "animals_and_nature",
+  topic_food: "food_and_drink",
+  topic_shopping: "shopping",
+  topic_hobbies: "hobbies_and_leisure",
+  topic_school: "education",
+  topic_transport: "travel_and_transport",
+  topic_city: "places",
+  topic_weather: "weather_and_seasons",
+  topic_sports: "sport",
+  topic_feelings: "feelings_and_opinions",
+  topic_clothes: "clothes_and_accessories",
+  topic_travel: "travel_and_transport",
+  topic_jobs: "work_and_jobs",
+  topic_entertainment: "entertainment_and_media",
+  topic_environment: "environment",
+  topic_technology: "communication_and_technology",
+  topic_health: "health_and_body",
+  topic_communication: "communication_and_technology",
+  topic_community: "society_and_community",
+  topic_education: "education",
+  topic_work: "work_and_jobs",
+  topic_society: "society_and_community",
+  topic_politics: "society_and_community",
+  topic_science: "science_and_research",
+  topic_culture: "entertainment_and_media",
+  topic_academic: "science_and_research",
+  topic_global: "society_and_community",
+};
+
 // Thứ tự khớp với lộ trình LearningPathPage (CURRICULUM).
 // Level = cấp độ chính của topic trong lộ trình.
 export const SEED_TOPICS: Topic[] = [
