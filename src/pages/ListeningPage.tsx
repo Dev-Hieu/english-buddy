@@ -501,7 +501,7 @@ function SentenceGame({ topicId, level, onClose }: { topicId?: string; level: Le
     const vl = topicId ? getVideoLesson(topicId) : undefined;
     if (vl) {
       const vw = vl.vocabulary.filter((w) => !w.word.includes(" ") && w.word.length > 1)
-        .map((w, i) => ({ id: `vl_${topicId}_${i}`, word: w.word, phonetic: "", meaning_vi: w.meaning_vi, meaning_en: "", example: w.example || "", example_vi: w.example_vi || "", topicIds: [topicId], level: "a1" as const, imageUrl: "", source: "seed" as const, createdAt: 0 } as any));
+        .map((w, i) => ({ id: `vl_${topicId}_${i}`, word: w.word, phonetic: "", meaning_vi: w.meaning_vi, meaning_en: "", example: w.example || "", example_vi: "", topicIds: [topicId], level: "a1" as const, imageUrl: "", source: "seed" as const, createdAt: 0 } as any));
       if (vw.length >= 4) return vw;
     }
     const byTopic = topicId ? SEED_VOCABULARY.filter((w) => w.topicIds.includes(topicId) && matchesLevel(w.level, level)) : [];
