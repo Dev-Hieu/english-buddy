@@ -3,11 +3,11 @@ import { mk } from "./_mk";
 
 // mk(level, id, word, phonetic, meaning_vi, meaning_en, example, example_vi, topicIds)
 export const KIDS_WORDS: VocabularyWord[] = [
-  // Colors
-  mk("kids", "word_kids_red", "red", "/red/", "màu đỏ", "the color of a tomato", "The ball is red.", "Quả bóng màu đỏ.", ["topic_daily"]),
-  mk("kids", "word_kids_blue", "blue", "/bluː/", "màu xanh dương", "the color of the sky", "The sky is blue.", "Bầu trời màu xanh.", ["topic_daily"]),
-  mk("kids", "word_kids_green", "green", "/ɡriːn/", "màu xanh lá", "the color of grass", "The leaf is green.", "Chiếc lá màu xanh lá.", ["topic_daily"]),
-  mk("kids", "word_kids_yellow", "yellow", "/ˈjeləʊ/", "màu vàng", "the color of the sun", "The sun is yellow.", "Mặt trời màu vàng.", ["topic_daily"]),
+  // Colors → topic_colors
+  mk("kids", "word_kids_red", "red", "/red/", "màu đỏ", "the color of a tomato", "The ball is red.", "Quả bóng màu đỏ.", ["topic_colors"]),
+  mk("kids", "word_kids_blue", "blue", "/bluː/", "màu xanh dương", "the color of the sky", "The sky is blue.", "Bầu trời màu xanh.", ["topic_colors"]),
+  mk("kids", "word_kids_green", "green", "/ɡriːn/", "màu xanh lá", "the color of grass", "The leaf is green.", "Chiếc lá màu xanh lá.", ["topic_colors"]),
+  mk("kids", "word_kids_yellow", "yellow", "/ˈjeləʊ/", "màu vàng", "the color of the sun", "The sun is yellow.", "Mặt trời màu vàng.", ["topic_colors"]),
 
   // Numbers
   mk("kids", "word_kids_one", "one", "/wʌn/", "số một", "the number 1", "I have one nose.", "Con có một cái mũi.", ["topic_school"]),
@@ -20,12 +20,12 @@ export const KIDS_WORDS: VocabularyWord[] = [
   mk("kids", "word_kids_kite", "kite", "/kaɪt/", "con diều", "a toy that flies in the wind", "We fly a kite.", "Chúng con thả diều.", ["topic_daily"]),
   mk("kids", "word_kids_teddy", "teddy", "/ˈtedi/", "gấu bông", "a soft toy bear", "I hug my teddy.", "Con ôm gấu bông.", ["topic_daily"]),
 
-  // Body parts
-  mk("kids", "word_kids_hand", "hand", "/hænd/", "bàn tay", "the part at the end of your arm", "Wash your hand.", "Rửa tay của con đi.", ["topic_daily"]),
-  mk("kids", "word_kids_foot", "foot", "/fʊt/", "bàn chân", "the part you stand on", "My foot is small.", "Bàn chân con nhỏ.", ["topic_daily"]),
-  mk("kids", "word_kids_eye", "eye", "/aɪ/", "mắt", "you see with it", "Close your eye.", "Nhắm mắt lại đi.", ["topic_daily"]),
-  mk("kids", "word_kids_nose", "nose", "/nəʊz/", "mũi", "you smell with it", "My nose is small.", "Mũi con nhỏ.", ["topic_daily"]),
-  mk("kids", "word_kids_ear", "ear", "/ɪə/", "tai", "you hear with it", "I have two ears.", "Con có hai tai.", ["topic_daily"]),
+  // Body parts → topic_body
+  mk("kids", "word_kids_hand", "hand", "/hænd/", "bàn tay", "the part at the end of your arm", "Wash your hand.", "Rửa tay của con đi.", ["topic_body"]),
+  mk("kids", "word_kids_foot", "foot", "/fʊt/", "bàn chân", "the part you stand on", "My foot is small.", "Bàn chân con nhỏ.", ["topic_body"]),
+  mk("kids", "word_kids_eye", "eye", "/aɪ/", "mắt", "you see with it", "Close your eye.", "Nhắm mắt lại đi.", ["topic_body"]),
+  mk("kids", "word_kids_nose", "nose", "/nəʊz/", "mũi", "you smell with it", "My nose is small.", "Mũi con nhỏ.", ["topic_body"]),
+  mk("kids", "word_kids_ear", "ear", "/ɪə/", "tai", "you hear with it", "I have two ears.", "Con có hai tai.", ["topic_body"]),
 
   // Animals
   mk("kids", "word_kids_fish", "fish", "/fɪʃ/", "con cá", "an animal that lives in water", "The fish can swim.", "Con cá biết bơi.", ["topic_animals"]),
