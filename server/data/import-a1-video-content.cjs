@@ -67,8 +67,8 @@ console.log(`Vocabulary: ${newWords} new, ${updatedWords} updated, ${skippedWord
 
 // ── 2. Cache video subtitles for shadowing ──
 const insertCache = db.prepare(`
-  INSERT OR REPLACE INTO translation_cache (cache_key, result, created_at)
-  VALUES (?, ?, datetime('now'))
+  INSERT OR REPLACE INTO translation_cache (text, translation)
+  VALUES (?, ?)
 `);
 
 let cached = 0;
