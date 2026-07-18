@@ -6,6 +6,7 @@ import { SessionHeader } from "@/components/layout/SessionHeader";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/components/ui/cn";
 import { SEED_VOCABULARY } from "@/data/seedVocabulary";
+import { getVideoLesson } from "@/data/videoLessons";
 import { speakText } from "@/services/speechService";
 import { apiRequest } from "@/services/api";
 
@@ -208,6 +209,13 @@ const ESSAY_PROMPTS: Record<CEFRLevel, string[]> = {
 function WordDictation({ topicId, level, onBack }: { topicId?: string; level: CEFRLevel; onBack: () => void }) {
   const words = useMemo(() => {
     const vocabLevel = CEFR_TO_LEVEL[level];
+    // Video lesson words first
+    const vl = topicId ? getVideoLesson(topicId) : undefined;
+    if (vl) {
+      const vw = vl.vocabulary.filter((w) => !w.word.includes(" ") && w.word.length > 2)
+        .map((w, i) => ({ id: `vl_wd_${i}`, word: w.word, phonetic: "", meaning_vi: w.meaning_vi, meaning_en: "", topicIds: [topicId], level: vocabLevel, imageUrl: "", source: "seed" as const, createdAt: 0 } as any));
+      if (vw.length >= 5) return shuffle(vw).slice(0, 10);
+    }
     const byTopic = topicId ? SEED_VOCABULARY.filter((v) => v.level === vocabLevel && v.topicIds.includes(topicId)) : [];
     const filtered = byTopic.length >= 5 ? byTopic : SEED_VOCABULARY.filter((v) => v.level === vocabLevel);
     return shuffle(filtered).slice(0, 10);
@@ -320,6 +328,17 @@ function WordDictation({ topicId, level, onBack }: { topicId?: string; level: CE
 function SentenceDictation({ topicId, level, onBack }: { topicId?: string; level: CEFRLevel; onBack: () => void }) {
   const sentences = useMemo(() => {
     const vocabLevel = CEFR_TO_LEVEL[level];
+    // Video lesson words first
+    const vl = topicId ? getVideoLesson(topicId) : undefined;
+    if (vl) {
+      const vw = vl.vocabulary.filter((w) => !w.word.includes(" ") && w.word.length > 2)
+        .map((w, i) => ({ id: `vl_sd_${i}`, word: w.word, phonetic: "", meaning_vi: w.meaning_vi, meaning_en: "", topicIds: [topicId], level: vocabLevel, imageUrl: "", source: "seed" as const, createdAt: 0 } as any));
+      if (vw.length >= 5) {
+        const picked = shuffle(vw).slice(0, 5);
+        const templates = SENTENCE_TEMPLATES[level];
+        return picked.map((v: any, i: number) => templates[i % templates.length](v.word));
+      }
+    }
     const byTopic = topicId ? SEED_VOCABULARY.filter((v) => v.level === vocabLevel && v.topicIds.includes(topicId)) : [];
     const filtered = byTopic.length >= 5 ? byTopic : SEED_VOCABULARY.filter((v) => v.level === vocabLevel);
     const picked = shuffle(filtered).slice(0, 5);

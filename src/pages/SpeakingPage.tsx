@@ -2,6 +2,7 @@ import { ArrowRight, Ear, Headphones, Loader2, MessageCircle, Mic, PartyPopper, 
 import { useCallback, useMemo, useRef, useState } from "react";
 import { SEED_TOPICS } from "@/data/seedTopics";
 import { SEED_VOCABULARY } from "@/data/seedVocabulary";
+import { getVideoLesson } from "@/data/videoLessons";
 import { LEVEL_LABELS, LEVEL_ORDER, type Level, type Student } from "@/types";
 import { speakText } from "@/services/speechService";
 import { micAvailable, startRecording, type Recorder } from "@/services/audioRecorder";
@@ -208,11 +209,19 @@ export function SpeakingPage({ student, topicId, onBackHome, onShadowing }: Spea
 
 function WordMode({ topicId, level, onBack, onShadowing }: { topicId: string; level: Level; onBack: () => void; onShadowing?: () => void }) {
   const topic = SEED_TOPICS.find((t) => t.id === topicId);
+  const videoLesson = useMemo(() => getVideoLesson(topicId), [topicId]);
   const words = useMemo(() => {
+    // Ưu tiên từ video lesson — chỉ lấy từ đơn (không phrase)
+    if (videoLesson) {
+      const vw = videoLesson.vocabulary
+        .filter((w) => !w.word.includes(" ") && w.word.length > 1)
+        .map((w, i) => ({ id: `vl_${topicId}_${i}`, word: w.word, phonetic: "", meaning_vi: w.meaning_vi, meaning_en: "", pos: w.pos, example: w.example, example_vi: "", topicIds: [topicId], level: "a1" as const, imageUrl: "", source: "seed" as const, createdAt: 0 }));
+      return pickWords(vw.length >= 1 ? vw : SEED_VOCABULARY, 8);
+    }
     const t = SEED_VOCABULARY.filter((w) => w.topicIds.includes(topicId) && !w.word.includes(" ") && matchesLevel(w.level, level));
     const fallback = SEED_VOCABULARY.filter((w) => !w.word.includes(" ") && matchesLevel(w.level, level));
     return pickWords(t.length >= 1 ? t : fallback.length >= 1 ? fallback : SEED_VOCABULARY, 8);
-  }, [topicId, level]);
+  }, [topicId, level, videoLesson]);
 
   const [n, setN] = useState(0);
   const [phase, setPhase] = useState<Phase>("idle");
@@ -356,8 +365,15 @@ function WordMode({ topicId, level, onBack, onShadowing }: { topicId: string; le
 /* ───────────────────────── Phrase Mode ───────────────────────── */
 
 function PhraseMode({ topicId, level, onBack }: { topicId: string; level: Level; onBack: () => void }) {
+  const videoLesson = useMemo(() => getVideoLesson(topicId), [topicId]);
   const phrases = useMemo(() => {
-    // Combine multi-word vocabulary entries + common phrases for the selected level
+    // Ưu tiên video phrases
+    if (videoLesson && videoLesson.phrases.length > 0) {
+      const vp = videoLesson.phrases.map((p) => ({ phrase: p.en, meaning_vi: p.vi }));
+      const shuffled = vp.sort(() => Math.random() - 0.5);
+      return shuffled.slice(0, 8);
+    }
+    // Fallback: combine multi-word vocabulary entries + common phrases
     const vocabPhrases: { phrase: string; meaning_vi: string }[] = SEED_VOCABULARY
       .filter((w) => w.word.includes(" ") && matchesLevel(w.level, level) && (!topicId || w.topicIds.includes(topicId)))
       .map((w) => ({ phrase: w.word, meaning_vi: w.meaning_vi }));

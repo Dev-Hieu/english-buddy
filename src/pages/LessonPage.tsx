@@ -2,7 +2,8 @@ import { ArrowLeft, ArrowRight, CheckCircle2, GraduationCap, Layers, List, Spark
 import { useMemo, useState } from "react";
 import { SEED_TOPICS } from "@/data/seedTopics";
 import { SEED_VOCABULARY } from "@/data/seedVocabulary";
-import type { Student } from "@/types";
+import { getVideoLesson } from "@/data/videoLessons";
+import type { Student, VocabularyWord } from "@/types";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { SessionHeader } from "@/components/layout/SessionHeader";
@@ -34,7 +35,28 @@ export function LessonPage({
   onViewWordList,
 }: LessonPageProps) {
   const topic = SEED_TOPICS.find((item) => item.id === topicId);
-  const words = useMemo(() => topicWords(SEED_VOCABULARY, topicId, level), [topicId, level]);
+  const videoLesson = useMemo(() => getVideoLesson(topicId), [topicId]);
+  const words = useMemo(() => {
+    // Ưu tiên từ video lesson nếu có
+    if (videoLesson) {
+      return videoLesson.vocabulary.map((vw, i): VocabularyWord => ({
+        id: `vl_${topicId}_${i}`,
+        word: vw.word,
+        meaning_vi: vw.meaning_vi,
+        meaning_en: "",
+        pos: vw.pos,
+        example: vw.example,
+        example_vi: "",
+        phonetic: "",
+        topicIds: [topicId],
+        level: "a1",
+        imageUrl: "",
+        source: "seed",
+        createdAt: 0,
+      }));
+    }
+    return topicWords(SEED_VOCABULARY, topicId, level);
+  }, [topicId, level, videoLesson]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const studiedIds = useMemo(() => new Set(studiedWordIds), [studiedWordIds]);
 
