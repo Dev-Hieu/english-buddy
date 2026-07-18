@@ -654,6 +654,9 @@ export function LearningPathPage({ student, onNavigate, onBackHome }: LearningPa
   const handleSkillClick = (skill: Skill) => {
     if (skill.view === "review") {
       onNavigate("review");
+    } else if (skill.type === "vocab" && skill.topicId) {
+      // Bấm "Từ vựng X" → vào thẳng bài học topic đó
+      onNavigate("lesson", skill.topicId, student.level);
     } else {
       onNavigate(skill.view, skill.topicId, student.level);
     }
