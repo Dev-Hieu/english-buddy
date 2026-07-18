@@ -42,6 +42,27 @@ import { B2G_WORDS } from "./b2g";
 import { C1H_WORDS } from "./c1h";
 import { C1I_WORDS } from "./c1i";
 import { C1J_WORDS } from "./c1j";
+// Bổ sung 1048 từ mới (10 topics mới + mở rộng 10 topics cũ)
+import { PEOPLE_NEW } from "./people_new";
+import { TRANSPORT_NEW } from "./transport_new";
+import { CITY_NEW } from "./city_new";
+import { FOOD_NEW } from "./food_new";
+import { HOUSE_NEW } from "./house_new";
+import { ANIMALS_NEW } from "./animals_new";
+import { DAILY_NEW } from "./daily_new";
+import { JOBS_NEW } from "./jobs_new";
+import { ENTERTAINMENT_NEW } from "./entertainment_new";
+import { FEELINGS_NEW } from "./feelings_new";
+import { SPORTS_NEW } from "./sports_new";
+import { COMMUNICATION_NEW } from "./communication_new";
+import { COMMUNITY_NEW } from "./community_new";
+import { ENVIRONMENT_NEW } from "./environment_new";
+import { TECHNOLOGY_NEW } from "./technology_new";
+import { POLITICS_NEW } from "./politics_new";
+import { EDUCATION_NEW } from "./education_new";
+import { ACADEMIC_NEW } from "./academic_new";
+import { GLOBAL_NEW } from "./global_new";
+import { SCIENCE_NEW } from "./science_new";
 
 export const ALL_LEVEL_WORDS: VocabularyWord[] = [
   ...KIDS_WORDS, ...KIDS2_WORDS, ...KIDS3_WORDS, ...KIDS4_WORDS, ...KIDS5_WORDS, ...KIDS6_WORDS,
@@ -51,4 +72,10 @@ export const ALL_LEVEL_WORDS: VocabularyWord[] = [
   ...B2_WORDS, ...B2B_WORDS, ...B2C_WORDS, ...B2D_WORDS, ...B2E_WORDS, ...B2F_WORDS, ...B2G_WORDS,
   ...C1_WORDS, ...C1B_WORDS, ...C1C_WORDS, ...C1D_WORDS, ...C1E_WORDS, ...C1F_WORDS, ...C1G_WORDS,
   ...C1H_WORDS, ...C1I_WORDS, ...C1J_WORDS,
+  // 1048 từ mới
+  ...PEOPLE_NEW, ...TRANSPORT_NEW, ...CITY_NEW, ...FOOD_NEW, ...HOUSE_NEW,
+  ...ANIMALS_NEW, ...DAILY_NEW, ...JOBS_NEW, ...ENTERTAINMENT_NEW, ...FEELINGS_NEW,
+  ...SPORTS_NEW, ...COMMUNICATION_NEW, ...COMMUNITY_NEW, ...ENVIRONMENT_NEW,
+  ...TECHNOLOGY_NEW, ...POLITICS_NEW, ...EDUCATION_NEW, ...ACADEMIC_NEW,
+  ...GLOBAL_NEW, ...SCIENCE_NEW,
 ];
