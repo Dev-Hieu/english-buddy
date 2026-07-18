@@ -156,9 +156,9 @@ const CURRICULUM: Record<string, Lesson[]> = {
   // A2 — 6 topics mới: sports, feelings, clothes, travel, jobs, entertainment
   // ═══════════════════════════════════════════════════════════════════
   a2: [
-    // Week 1: Du lịch — travel
+    // Week 1: Giao thông & Du lịch — transport, travel
     { id: "a2-w1d1", week: 1, day: 1, title: "Means of Transport", titleVi: "Phương tiện giao thông", skills: [
-      { type: "vocab", label: "Từ vựng giao thông", view: "topics", topicId: "topic_travel" },
+      { type: "vocab", label: "Từ vựng giao thông", view: "topics", topicId: "topic_transport" },
       { type: "listen", label: "Nghe hướng dẫn đi lại", view: "listening" },
       { type: "grammar", label: "Can / Could", view: "grammar" },
     ]},
