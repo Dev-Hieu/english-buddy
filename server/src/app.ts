@@ -41,13 +41,22 @@ function awardXp(studentId: string, type: string, points: number, refId: string 
 }
 
 // Cập nhật chuỗi ngày học liên tiếp (chỉ để hiển thị 🔥 khích lệ — KHÔNG cộng điểm).
+/** Tính streak thực tế: nếu lastActiveDate không phải hôm nay hoặc hôm qua → streak = 0 */
+function realStreak(streak: number, lastActiveDate: string | null): number {
+  if (!lastActiveDate) return 0;
+  const today = dayStr(new Date());
+  if (lastActiveDate === today) return streak || 0;
+  const y = new Date(); y.setDate(y.getDate() - 1);
+  if (lastActiveDate === dayStr(y)) return streak || 0;
+  return 0; // quá 1 ngày không hoạt động → mất streak
+}
+
 function bumpStreak(studentId: string): void {
   const s = db.prepare("SELECT streak, lastActiveDate FROM students WHERE id = ?").get(studentId) as any;
   if (!s) return;
   const today = dayStr(new Date());
   if (s.lastActiveDate === today) return; // hôm nay đã tính
-  const y = new Date();
-  y.setDate(y.getDate() - 1);
+  const y = new Date(); y.setDate(y.getDate() - 1);
   const yesterday = dayStr(y);
   const streak = s.lastActiveDate === yesterday ? (s.streak || 0) + 1 : 1;
   db.prepare("UPDATE students SET streak = ?, lastActiveDate = ? WHERE id = ?").run(streak, today, studentId);
@@ -575,12 +584,12 @@ export function createApp() {
       if (!cls) return res.status(403).json({ error: "không phải lớp của bạn" });
     }
     const rows = db.prepare(`
-      SELECT s.id, s.name, s.grade, s.level, s.avatar, s.xp, s.streak, s.dailyGoal,
+      SELECT s.id, s.name, s.grade, s.level, s.avatar, s.xp, s.streak, s.lastActiveDate, s.dailyGoal,
              (SELECT COUNT(*) FROM progress p WHERE p.studentId = s.id AND p.status = 'scored') AS vocabCount
       FROM class_students cs JOIN students s ON s.id = cs.studentId
       WHERE cs.classId = ? ORDER BY s.name
     `).all(req.params.id);
-    res.json(rows);
+    res.json((rows as any[]).map((s: any) => ({ ...s, streak: realStreak(s.streak, s.lastActiveDate) })));
   });
 
   // Teacher: thêm bé vào lớp
@@ -709,7 +718,9 @@ export function createApp() {
     } else {
       rows = db.prepare(`${q} WHERE s.parentId = ? OR s.userId = ? ORDER BY s.createdAt`).all(user.id, user.id);
     }
-    res.json(rows);
+    // Tính streak thực tế (nếu không hoạt động > 1 ngày → streak = 0)
+    const fixed = (rows as any[]).map((s: any) => ({ ...s, streak: realStreak(s.streak, s.lastActiveDate) }));
+    res.json(fixed);
   });
 
   app.post("/api/students", requireAuth, (req, res) => {
