@@ -186,6 +186,7 @@ type BrowseTab = "browse" | "my";
 export function ShadowingPage({ student, onBackHome }: Props) {
   const [ytUrl, setYtUrl] = useState("");
   const [videoId, setVideoId] = useState("");
+  const [videoLevel, setVideoLevel] = useState<string>("");
   const [browseTab, setBrowseTab] = useState<BrowseTab>("browse");
   const [myVideos, setMyVideos] = useState<MyVideo[]>([]);
   const [sentences, setSentences] = useState<Sentence[]>([]);
@@ -257,11 +258,11 @@ export function ShadowingPage({ student, onBackHome }: Props) {
     apiRequest<MyVideo[]>(`/api/students/${student.id}/my-videos`).then(setMyVideos).catch(() => {});
   }, [student?.id]);
 
-  const saveToMyVideos = (vid: string, title?: string) => {
+  const saveToMyVideos = (vid: string, title?: string, level?: string, topic?: string) => {
     if (!student?.id) return;
     const sv = SUGGESTED_VIDEOS.find((v) => v.id === vid);
     apiRequest(`/api/students/${student.id}/my-videos`, {
-      method: "POST", body: { videoId: vid, title: title || sv?.title || "", level: sv?.level || "", topic: sv?.topic || "" }
+      method: "POST", body: { videoId: vid, title: title || sv?.title || "", level: level || sv?.level || "", topic: topic || sv?.topic || "" }
     }).then(() => {
       apiRequest<MyVideo[]>(`/api/students/${student.id}/my-videos`).then(setMyVideos).catch(() => {});
     }).catch(() => {});
@@ -337,9 +338,15 @@ export function ShadowingPage({ student, onBackHome }: Props) {
   const loadCaptions = async (vid: string) => {
     setLoading(true); setError("");
     try {
-      const data = await apiRequest<{ sentences: Sentence[]; count: number }>(`/api/youtube-captions?v=${vid}`, { auth: false });
-      if (data.sentences.length > 0) { setSentences(data.sentences); setVideoId(vid); saveToMyVideos(vid); }
-      else { setError("Video này chưa có phụ đề. Thử dán thủ công bên dưới."); setPasteMode(true); }
+      const data = await apiRequest<{ sentences: Sentence[]; count: number; level?: string; topic?: string }>(`/api/youtube-captions?v=${vid}`, { auth: false });
+      if (data.sentences.length > 0) {
+        setSentences(data.sentences);
+        const sv = SUGGESTED_VIDEOS.find((v) => v.id === vid);
+        const lvl = sv?.level || data.level || "";
+        setVideoLevel(lvl);
+        setVideoId(vid);
+        saveToMyVideos(vid, undefined, lvl, sv?.topic || data.topic || "");
+      } else { setError("Video này chưa có phụ đề. Thử dán thủ công bên dưới."); setPasteMode(true); }
     } catch { setError("Không tải được phụ đề. Thử dán thủ công bên dưới."); setPasteMode(true); }
     finally { setLoading(false); }
   };
@@ -717,7 +724,7 @@ export function ShadowingPage({ student, onBackHome }: Props) {
             </div>
             <div className="grid grid-cols-1 gap-2 sm:grid-cols-3">
               <Button type="button" variant="outline" className="w-full" onClick={() => { setScores({}); setCompletedCount(0); setPracticePhase("idle"); seekToSentence(0); }}><RotateCcw className="h-4 w-4" /> Luyện lại</Button>
-              <Button type="button" variant="outline" className="w-full" onClick={() => { setVideoId(""); setYtUrl(""); setSentences([]); setCurrentIdx(-1); setPracticePhase("idle"); setScores({}); setMutedSentences(new Set()); playerRef.current?.destroy?.(); playerRef.current = null; }}><Video className="h-4 w-4" /> Đổi video</Button>
+              <Button type="button" variant="outline" className="w-full" onClick={() => { setVideoId(""); setVideoLevel(""); setYtUrl(""); setSentences([]); setCurrentIdx(-1); setPracticePhase("idle"); setScores({}); setMutedSentences(new Set()); playerRef.current?.destroy?.(); playerRef.current = null; }}><Video className="h-4 w-4" /> Đổi video</Button>
               <Button type="button" className="w-full" onClick={onBackHome}><Trophy className="h-4 w-4" /> Xong</Button>
             </div>
           </CardContent>
@@ -730,7 +737,7 @@ export function ShadowingPage({ student, onBackHome }: Props) {
   const activeSent = currentIdx >= 0 ? sentences[currentIdx] : null;
 
   return (
-    <Wrapper onBack={() => { setVideoId(""); setYtUrl(""); setSentences([]); setCurrentIdx(-1); setPracticePhase("idle"); setScores({}); setMutedSentences(new Set()); playerRef.current?.destroy?.(); playerRef.current = null; }}>
+    <Wrapper onBack={() => { setVideoId(""); setVideoLevel(""); setYtUrl(""); setSentences([]); setCurrentIdx(-1); setPracticePhase("idle"); setScores({}); setMutedSentences(new Set()); playerRef.current?.destroy?.(); playerRef.current = null; }}>
       <div className="aspect-video w-full overflow-hidden rounded-xl mb-2"><div ref={playerDivRef} className="h-full w-full" /></div>
 
       {/* ── Toolbar Row 1: Play + Modes ── */}
@@ -746,11 +753,15 @@ export function ShadowingPage({ student, onBackHome }: Props) {
           <button type="button" onClick={() => currentIdx < sentences.length - 1 && seekToSentence(currentIdx + 1)}
             className="rounded-xl p-2 text-muted-foreground hover:bg-muted active:scale-95 transition-all"><ChevronRight className="h-5 w-5" /></button>
           <span className="text-sm font-black text-muted-foreground tabular-nums ml-0.5">{Math.max(0, currentIdx + 1)}<span className="text-muted-foreground/50">/{sentences.length}</span></span>
+          {videoLevel && <span className={cn("rounded-md px-1.5 py-0.5 text-xs font-extrabold ml-1",
+            videoLevel === "A1" ? "bg-green-100 text-green-700" : videoLevel === "A2" ? "bg-blue-100 text-blue-700" :
+            videoLevel === "B1" ? "bg-purple-100 text-purple-700" : videoLevel === "B2" ? "bg-orange-100 text-orange-700" :
+            videoLevel === "C1" ? "bg-red-100 text-red-700" : "bg-gray-100 text-gray-700")}>{videoLevel}</span>}
         </div>
 
         {/* Right: đổi video + settings */}
         <div className="flex items-center gap-1">
-          <button type="button" title="Đổi video" onClick={() => { setVideoId(""); setYtUrl(""); setSentences([]); setCurrentIdx(-1); setPracticePhase("idle"); setScores({}); setMutedSentences(new Set()); playerRef.current?.destroy?.(); playerRef.current = null; }}
+          <button type="button" title="Đổi video" onClick={() => { setVideoId(""); setVideoLevel(""); setYtUrl(""); setSentences([]); setCurrentIdx(-1); setPracticePhase("idle"); setScores({}); setMutedSentences(new Set()); playerRef.current?.destroy?.(); playerRef.current = null; }}
             className="rounded-xl p-2 text-muted-foreground hover:bg-muted hover:text-primary transition-all active:scale-95">
             <Video className="h-5 w-5" />
           </button>
