@@ -27,17 +27,23 @@ type VideoTopic = "Kids" | "Daily" | "IELTS" | "Film" | "Music" | "News" | "Scie
 interface SuggestedVideo { id: string; title: string; level: VideoLevel; topic: VideoTopic; }
 
 const SUGGESTED_VIDEOS: SuggestedVideo[] = [
-  // ── Easy English — A1 Conversations ──
-  { id: "ZtKCy5YnFsA", title: "Meeting Someone New (Greetings)", level: "A1", topic: "Daily" },
-  { id: "tqTJAXfzD0E", title: "Introducing Yourself", level: "A1", topic: "Daily" },
-  { id: "J1f47XwvQYA", title: "Family Life", level: "A1", topic: "Daily" },
-  { id: "QlGPeLYMfso", title: "At Home", level: "A1", topic: "Daily" },
-  { id: "IVhXP9ZG1N8", title: "Everyday Life", level: "A1", topic: "Daily" },
+  // ── BBC Learning English — A1 Easy Conversations ──
+  { id: "I_tRSrPru94", title: "Introduce Yourself (BBC)", level: "A1", topic: "Daily" },
+  { id: "9OzIMC6XCiE", title: "Describe People (BBC)", level: "A1", topic: "Daily" },
+  { id: "81MmK177K_c", title: "Talk About Time (BBC)", level: "A1", topic: "Daily" },
+  { id: "v9EU41cuhHY", title: "Describe Your Family (BBC)", level: "A1", topic: "Daily" },
+  { id: "ceOhxZjDt-g", title: "Describe Things (BBC)", level: "A1", topic: "Daily" },
+  { id: "Te-UyphkKRk", title: "Your Home (BBC)", level: "A1", topic: "Daily" },
+  { id: "bq6GBbh3uhU", title: "Daily Routine (BBC)", level: "A1", topic: "Daily" },
+  { id: "wUF33157hYI", title: "Likes & Dislikes (BBC)", level: "A1", topic: "Daily" },
+  { id: "2mnL9jPVzsk", title: "Clothes Shopping (BBC)", level: "A1", topic: "Daily" },
+  { id: "aiUGN3TDvw4", title: "Activities & Hobbies (BBC)", level: "A1", topic: "Daily" },
+  { id: "on_1sS6Ii8M", title: "Your Home Town (BBC)", level: "A1", topic: "Daily" },
+  { id: "sMg4vj6ugSs", title: "The Weather (BBC)", level: "A1", topic: "Daily" },
+  // ── Easy English — A1 (topics without BBC match) ──
+  { id: "h_KUklZdq5w", title: "Daily Conversations — Food", level: "A1", topic: "Daily" },
   { id: "InwUQgGhwRU", title: "School Life", level: "A1", topic: "Daily" },
-  { id: "h_KUklZdq5w", title: "Daily Conversations (Food)", level: "A1", topic: "Daily" },
-  { id: "NFhfE_HfOwY", title: "Can I Help You? (Shopping)", level: "A1", topic: "Daily" },
-  { id: "kUZiIwcvy58", title: "A One-Way Ticket (Transport)", level: "A1", topic: "Daily" },
-  { id: "kj5MBxBO14U", title: "On the Street (City)", level: "A1", topic: "Daily" },
+  { id: "kUZiIwcvy58", title: "A One-Way Ticket — Transport", level: "A1", topic: "Daily" },
   // ── Kids (A1) ──
   { id: "u0zqXffuN5Y", title: "Hello", level: "A1", topic: "Kids" },
   { id: "WgYcNtL7f7c", title: "What do you want?", level: "A1", topic: "Kids" },
