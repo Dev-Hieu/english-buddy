@@ -619,6 +619,15 @@ export function createApp() {
   });
 
   // Teacher: đặt mục tiêu cho bé (chỉ bé trong lớp mình)
+  // Student/Parent tự đặt mục tiêu
+  app.put("/api/students/:id/goal", requireAuth, (req, res) => {
+    const { dailyGoal } = req.body || {};
+    if (!dailyGoal || Number(dailyGoal) < 1 || Number(dailyGoal) > 200) return res.status(400).json({ error: "Mục tiêu từ 1-200" });
+    if (!canAccessStudent(req, res, req.params.id)) return;
+    db.prepare("UPDATE students SET dailyGoal = ? WHERE id = ?").run(Number(dailyGoal), req.params.id);
+    res.json({ ok: true });
+  });
+
   app.put("/api/teacher/students/:id/goal", requireTeacher, (req, res) => {
     const { dailyGoal } = req.body || {};
     const teacher = (req as any).user;

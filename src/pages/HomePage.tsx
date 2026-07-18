@@ -3,6 +3,7 @@ import { SmartReview } from "@/components/SmartReview";
 import type { ComponentType } from "react";
 import { useEffect, useMemo, useState } from "react";
 import { getLeaderboard } from "@/services/studentService";
+import { apiRequest } from "@/services/api";
 import { getSkillTestResults, type SkillTestResult } from "@/services/progressService";
 import { SEED_TOPICS } from "@/data/seedTopics";
 import { SEED_VOCABULARY } from "@/data/seedVocabulary";
@@ -78,9 +79,20 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
   useEffect(() => { getSkillTestResults(student.id).then(r => setTestResults(r.slice(0, 5))).catch(() => {}); }, [student.id]);
   useEffect(() => { getLeaderboard("week").then((lb) => { const idx = lb.findIndex((e: any) => e.id === student.id); setWeekRank(idx >= 0 ? idx + 1 : null); }).catch(() => {}); }, [student.id]);
 
+  const [editGoal, setEditGoal] = useState(false);
+  const [goalVal, setGoalVal] = useState(student.dailyGoal || 10);
   const goal = student.dailyGoal || 10;
   const goalReached = learnedToday >= goal;
   const goalPct = Math.min(100, Math.round((learnedToday / goal) * 100));
+
+  const saveGoal = async () => {
+    if (goalVal < 1 || goalVal > 200) return;
+    try {
+      await apiRequest(`/api/students/${student.id}/goal`, { method: "PUT", body: { dailyGoal: goalVal } });
+      student.dailyGoal = goalVal;
+      setEditGoal(false);
+    } catch { /* ignore */ }
+  };
   const level = levelOf(xp);
   const validLevel = LEVEL_ORDER.includes(student.level as Level);
   const learnLevel = validLevel ? (student.level as string) : "all";
@@ -241,7 +253,17 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
       <button type="button" onClick={() => onNavigate("dashboard")}
         className="w-full rounded-[1rem] bg-card border border-border/40 px-4 py-3 shadow-md text-left transition-all active:scale-[0.98] hover:shadow-lg">
         <div className="flex items-center justify-between mb-2.5">
-          <span className="text-xs font-black">{learned.size} từ · {goalReached ? "Đạt ✓" : `${learnedToday}/${goal} hôm nay`}</span>
+          <span className="text-xs font-black">{learned.size} từ · {goalReached ? "Đạt ✓" : <button type="button" onClick={(e) => { e.stopPropagation(); setEditGoal(true); setGoalVal(goal); }} className="text-primary underline">{learnedToday}/{goal} hôm nay</button>}</span>
+          {editGoal && (
+            <div className="flex items-center gap-2 mt-1" onClick={(e) => e.stopPropagation()}>
+              <span className="text-xs font-bold text-muted-foreground">Mục tiêu:</span>
+              <input type="number" min={1} max={200} value={goalVal} onChange={(e) => setGoalVal(Number(e.target.value) || 10)}
+                className="w-16 rounded-lg border px-2 py-1 text-xs font-bold text-center" />
+              <span className="text-xs text-muted-foreground">từ/ngày</span>
+              <button type="button" onClick={saveGoal} className="rounded-lg bg-primary px-2 py-1 text-xs font-bold text-white">Lưu</button>
+              <button type="button" onClick={() => setEditGoal(false)} className="text-xs text-muted-foreground">Huỷ</button>
+            </div>
+          )}
           <span className="text-[10px] font-bold text-primary">Chi tiết →</span>
         </div>
         <div className="space-y-1.5">
