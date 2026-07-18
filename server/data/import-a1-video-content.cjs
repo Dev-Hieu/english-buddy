@@ -9,7 +9,7 @@ const fs = require("fs");
 const path = require("path");
 
 const SCRIPT_DIR = __dirname;
-const DB_PATH = path.join(SCRIPT_DIR, "..", "english_buddy.db");
+const DB_PATH = path.join(SCRIPT_DIR, "..", "data.db");
 const DATA_PATH = path.join(SCRIPT_DIR, "a1_video_content.json");
 
 if (!fs.existsSync(DB_PATH)) {
