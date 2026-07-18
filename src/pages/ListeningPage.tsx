@@ -11,7 +11,7 @@ import { Button } from "@/components/ui/button";
 import { SessionHeader } from "@/components/layout/SessionHeader";
 import { cn } from "@/components/ui/cn";
 
-interface Props { student: Student; onBackHome: () => void; }
+interface Props { student: Student; topicId?: string; onBackHome: () => void; }
 
 type Mode = "word-image" | "sentence" | "stories";
 
@@ -323,7 +323,7 @@ const LISTENING_STORIES: StoryItem[] = [
   },
 ];
 
-export function ListeningPage({ student, onBackHome }: Props) {
+export function ListeningPage({ student, topicId, onBackHome }: Props) {
   const [mode, setMode] = useState<Mode | null>(null);
   const [level, setLevel] = useState<Level>(student.level);
 
@@ -367,8 +367,8 @@ export function ListeningPage({ student, onBackHome }: Props) {
 
   return (
     <main className="mx-auto w-full max-w-md sm:max-w-lg lg:max-w-2xl overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
-      {mode === "word-image" && <WordImageGame level={level} onClose={() => setMode(null)} />}
-      {mode === "sentence" && <SentenceGame level={level} onClose={() => setMode(null)} />}
+      {mode === "word-image" && <WordImageGame topicId={topicId} level={level} onClose={() => setMode(null)} />}
+      {mode === "sentence" && <SentenceGame topicId={topicId} level={level} onClose={() => setMode(null)} />}
       {mode === "stories" && <StoriesView level={level} onClose={() => setMode(null)} />}
     </main>
   );
@@ -378,11 +378,13 @@ export function ListeningPage({ student, onBackHome }: Props) {
 // Mode 1: Nghe từ chọn ảnh
 // ════════════════════════════════════════════
 
-function WordImageGame({ level, onClose }: { level: Level; onClose: () => void }) {
+function WordImageGame({ topicId, level, onClose }: { topicId?: string; level: Level; onClose: () => void }) {
   const pool = useMemo(() => {
+    const byTopic = topicId ? SEED_VOCABULARY.filter((w) => w.imageUrl && w.topicIds.includes(topicId) && matchesLevel(w.level, level)) : [];
+    if (byTopic.length >= 4) return byTopic;
     const filtered = SEED_VOCABULARY.filter((w) => w.imageUrl && matchesLevel(w.level, level));
     return filtered.length >= 4 ? filtered : SEED_VOCABULARY.filter((w) => w.imageUrl);
-  }, [level]);
+  }, [topicId, level]);
 
   const [targets] = useState(() => pickN(pool, ROUND_SIZE));
   const [n, setN] = useState(0);
@@ -485,11 +487,13 @@ function buildSentenceQuestion(target: VocabularyWord, pool: VocabularyWord[]): 
   };
 }
 
-function SentenceGame({ level, onClose }: { level: Level; onClose: () => void }) {
+function SentenceGame({ topicId, level, onClose }: { topicId?: string; level: Level; onClose: () => void }) {
   const pool = useMemo(() => {
+    const byTopic = topicId ? SEED_VOCABULARY.filter((w) => w.topicIds.includes(topicId) && matchesLevel(w.level, level)) : [];
+    if (byTopic.length >= 4) return byTopic;
     const filtered = SEED_VOCABULARY.filter((w) => matchesLevel(w.level, level));
     return filtered.length >= 4 ? filtered : SEED_VOCABULARY;
-  }, [level]);
+  }, [topicId, level]);
 
   const [questions] = useState(() => {
     const targets = pickN(pool, ROUND_SIZE);

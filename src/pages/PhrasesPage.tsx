@@ -12,7 +12,7 @@ import { Button } from "@/components/ui/button";
 import { SessionHeader } from "@/components/layout/SessionHeader";
 import { cn } from "@/components/ui/cn";
 
-interface Props { student: Student; onBackHome: () => void; }
+interface Props { student: Student; topicId?: string; onBackHome: () => void; }
 
 type Screen = "categories" | "phrases" | "practice";
 
@@ -28,10 +28,30 @@ function shuffle<T>(a: T[]): T[] {
   return r;
 }
 
-export function PhrasesPage({ student, onBackHome }: Props) {
-  const [screen, setScreen] = useState<Screen>("categories");
+const TOPIC_TO_CATEGORY: Record<string, string> = {
+  topic_greetings: "greetings",
+  topic_travel: "travel",
+  topic_food: "restaurant",
+  topic_shopping: "shopping",
+  topic_family: "family",
+  topic_health: "health",
+  topic_sports: "sports",
+  topic_weather: "weather",
+  topic_feelings: "feelings",
+  topic_school: "school",
+  topic_entertainment: "entertainment",
+  topic_work: "work",
+  topic_transport: "transport",
+  topic_city: "directions",
+  topic_hobbies: "social",
+  topic_house: "hotel",
+};
+
+export function PhrasesPage({ student, topicId, onBackHome }: Props) {
+  const initialCategory = topicId ? TOPIC_TO_CATEGORY[topicId] ?? null : null;
+  const [screen, setScreen] = useState<Screen>(initialCategory ? "phrases" : "categories");
   const [level, setLevel] = useState<LevelFilter>(student.level);
-  const [activeCategoryId, setActiveCategoryId] = useState<string | null>(null);
+  const [activeCategoryId, setActiveCategoryId] = useState<string | null>(initialCategory);
 
   const activeCategory = PHRASE_CATEGORIES.find((c) => c.id === activeCategoryId) ?? null;
 

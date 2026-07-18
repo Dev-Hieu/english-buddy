@@ -651,14 +651,16 @@ export function LearningPathPage({ student, onNavigate, onBackHome }: LearningPa
   const todayLesson = weekLessons.find((l) => !completed.has(l.id))
     || curriculum.find((l) => !completed.has(l.id));
 
-  const handleSkillClick = (skill: Skill) => {
+  const handleSkillClick = (skill: Skill, lesson: Lesson) => {
+    // Derive topicId: use skill's own topicId, or fall back to the lesson's first vocab topicId
+    const topicId = skill.topicId || lesson.skills.find((s) => s.topicId)?.topicId;
     if (skill.view === "review") {
       onNavigate("review");
-    } else if (skill.type === "vocab" && skill.topicId) {
+    } else if (skill.type === "vocab" && topicId) {
       // Bấm "Từ vựng X" → vào thẳng bài học topic đó
-      onNavigate("lesson", skill.topicId, student.level);
+      onNavigate("lesson", topicId, student.level);
     } else {
-      onNavigate(skill.view, skill.topicId, student.level);
+      onNavigate(skill.view, topicId, student.level);
     }
   };
 
@@ -769,7 +771,7 @@ export function LearningPathPage({ student, onNavigate, onBackHome }: LearningPa
                     <button
                       key={i}
                       type="button"
-                      onClick={() => handleSkillClick(skill)}
+                      onClick={() => handleSkillClick(skill, lesson)}
                       className={cn(
                         "flex items-center gap-1.5 rounded-xl px-3 py-1.5 text-[11px] font-bold transition-all active:scale-95 hover:shadow-md",
                         isDone

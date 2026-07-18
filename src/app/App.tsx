@@ -407,7 +407,7 @@ export function App() {
       content = <TopicWordsPage topicId={route.topicId} level={route.level} studiedWordIds={studiedWordIds} onBack={() => navigate("lesson")} />;
       break;
     case "grammar":
-      content = <GrammarListPage student={student} onBackHome={() => navigate("home")} onPick={(id) => navigate("grammar-lesson", id)} />;
+      content = <GrammarListPage student={student} initialLevel={route.level} onBackHome={() => navigate("home")} onPick={(id) => navigate("grammar-lesson", id)} />;
       break;
     case "grammar-lesson":
       content = <GrammarRunnerPage topicId={route.topicId} studentId={student.id} onBackHome={() => navigate("grammar")} />;
@@ -449,19 +449,19 @@ export function App() {
       content = <LeaderboardPage currentStudentId={student.id} level={student.level} onBackHome={() => navigate("home")} />;
       break;
     case "phrases":
-      content = <PhrasesPage student={student} onBackHome={() => navigate("home")} />;
+      content = <PhrasesPage student={student} topicId={route.topicId} onBackHome={() => navigate("home")} />;
       break;
     case "premium":
       content = <PremiumPage user={{ name: user.name, email: user.email, isPremium: !!user.isPremium }} onBack={() => navigate("home")} />;
       break;
     case "listening":
-      content = <ListeningPage student={student} onBackHome={() => navigate("home")} />;
+      content = <ListeningPage student={student} topicId={route.topicId} onBackHome={() => navigate("home")} />;
       break;
     case "writing":
-      content = <WritingPage student={student} onBackHome={() => navigate("home")} />;
+      content = <WritingPage student={student} topicId={route.topicId} onBackHome={() => navigate("home")} />;
       break;
     case "reading":
-      content = <ReadingPage student={student} onBackHome={() => navigate("home")} />;
+      content = <ReadingPage student={student} topicId={route.topicId} onBackHome={() => navigate("home")} />;
       break;
     case "skilltest":
       content = <SkillTestPage student={student} mode={route.mode ?? "new"} onBackHome={() => { loadProgress(); navigate("home"); }} />;

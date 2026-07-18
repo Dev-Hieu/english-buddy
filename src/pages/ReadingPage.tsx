@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/components/ui/cn";
 import { speakText } from "@/services/speechService";
 
-interface Props { student: Student; onBackHome: () => void; }
+interface Props { student: Student; topicId?: string; onBackHome: () => void; }
 
 type CEFRLevel = "A1" | "A2" | "B1" | "B2" | "C1" | "C2";
 
@@ -230,13 +230,14 @@ interface Story {
   wordCount: number;
   description: string;
   text: string;
+  topic?: string;
   questions: Question[];
 }
 
 const STORIES: Story[] = [
   // ─── A1 ───
   {
-    id: "a1-1", title: "My Family", level: "A1", wordCount: 40,
+    id: "a1-1", title: "My Family", level: "A1", wordCount: 40, topic: "family",
     description: "A child talks about their family members.",
     text: "I have a big family. My father is a teacher. My mother is a nurse. I have one brother and one sister. My brother is ten years old. My sister is five. We love each other. We are happy together.",
     questions: [
@@ -246,7 +247,7 @@ const STORIES: Story[] = [
     ],
   },
   {
-    id: "a1-2", title: "At School", level: "A1", wordCount: 38,
+    id: "a1-2", title: "At School", level: "A1", wordCount: 38, topic: "school",
     description: "A student describes their school day.",
     text: "I go to school every day. My school is big. I have many friends. We learn to read and write. We play in the park after class. My teacher is very kind. I like my school very much.",
     questions: [
@@ -256,7 +257,7 @@ const STORIES: Story[] = [
     ],
   },
   {
-    id: "a1-3", title: "My Pet Cat", level: "A1", wordCount: 37,
+    id: "a1-3", title: "My Pet Cat", level: "A1", wordCount: 37, topic: "animals",
     description: "A child describes their pet cat.",
     text: "I have a small cat. Her name is Mimi. She is white and very cute. She likes to sleep on my bed. She eats fish every day. I play with Mimi after school. I love my cat.",
     questions: [
@@ -267,7 +268,7 @@ const STORIES: Story[] = [
   },
   // ─── A2 ───
   {
-    id: "a2-1", title: "My Best Friend", level: "A2", wordCount: 64,
+    id: "a2-1", title: "My Best Friend", level: "A2", wordCount: 64, topic: "family",
     description: "A child describes their best friend and what they do together.",
     text: "My best friend is Anna. She lives next to my house. Anna is tall and has long brown hair. She likes swimming and drawing. Every weekend, we go to the park together. We play, run, and laugh a lot. Sometimes we read stories under the big tree. Anna is very kind and always helps me. I am lucky to have her as my friend.",
     questions: [
@@ -278,7 +279,7 @@ const STORIES: Story[] = [
     ],
   },
   {
-    id: "a2-2", title: "A Rainy Day", level: "A2", wordCount: 64,
+    id: "a2-2", title: "A Rainy Day", level: "A2", wordCount: 64, topic: "weather",
     description: "A child talks about what happens on a rainy day.",
     text: "Today it is raining. I cannot go outside to play. I stay at home with my family. In the morning, I read a book about animals. It is very interesting. After lunch, I draw pictures with my sister. She draws a big sun because she wants the rain to stop. In the evening, we watch a movie together. Rainy days can be fun too!",
     questions: [
@@ -289,7 +290,7 @@ const STORIES: Story[] = [
     ],
   },
   {
-    id: "a2-3", title: "The Food I Like", level: "A2", wordCount: 64,
+    id: "a2-3", title: "The Food I Like", level: "A2", wordCount: 64, topic: "food",
     description: "A child talks about their favorite foods.",
     text: "I love eating different kinds of food. For breakfast, I usually eat bread and drink warm milk. My favorite lunch is rice with chicken. I also like fruit very much, especially oranges and bananas. My mother makes delicious soup every evening. On weekends, my family sometimes goes to a restaurant together. I always order pizza there because it is delicious. Food makes me happy!",
     questions: [
@@ -300,7 +301,7 @@ const STORIES: Story[] = [
   },
   // ─── B1 ───
   {
-    id: "b1-1", title: "A Trip to the Beach", level: "B1", wordCount: 129,
+    id: "b1-1", title: "A Trip to the Beach", level: "B1", wordCount: 129, topic: "travel",
     description: "A family takes a memorable trip to the beach.",
     text: "Last summer, my family went on a trip to the beach. We woke up very early in the morning because we were so excited. My father drove the car for two hours until we could see the ocean. When we arrived, the sand was warm and the waves were beautiful. My brother and I built a big sandcastle near the water. For lunch, we ate sandwiches and fresh fruit under a large umbrella. In the afternoon, we swam in the ocean and collected colorful shells. Before going home, we watched the sunset together. The sky turned orange and pink, and it was the most beautiful thing I have ever seen. We were very tired when we got home, but it was a wonderful day that I will remember forever.",
     questions: [
@@ -311,7 +312,7 @@ const STORIES: Story[] = [
     ],
   },
   {
-    id: "b1-2", title: "City and Village", level: "B1", wordCount: 128,
+    id: "b1-2", title: "City and Village", level: "B1", wordCount: 128, topic: "travel",
     description: "A child compares life in the city and the village.",
     text: "I live in a big city, but every summer holiday I spend two weeks at my grandmother's village. Life in the village is very different from the city. The air is fresh and clean, and there is a beautiful river near her house. In the city, there are many cars and a lot of noise, but in the village it is quiet and peaceful. My grandmother has a lovely garden with flowers and vegetables. She also keeps chickens, so we have fresh eggs every morning. I love taking walks along the river and listening to the birds singing in the trees. Although I enjoy the city because it has many shops and cinemas, I think the village is more relaxing. I always feel sad when the holiday ends.",
     questions: [
@@ -323,7 +324,7 @@ const STORIES: Story[] = [
   },
   // ─── B2 ───
   {
-    id: "b2-1", title: "Technology and Communication", level: "B2", wordCount: 159,
+    id: "b2-1", title: "Technology and Communication", level: "B2", wordCount: 159, topic: "technology",
     description: "How technology has changed the way we communicate.",
     text: "Over the past two decades, technology has dramatically changed the way people communicate with one another. Before smartphones and the internet, people relied on letters, landline phones, and face-to-face meetings to stay in touch. Today, we can send a message to someone on the other side of the world in just a few seconds. Social media platforms have made it possible to connect with hundreds of people at once, sharing photos, videos, and thoughts instantly. While these changes have brought many benefits, such as easier access to information and faster communication, they have also created new challenges. Many experts worry that people, especially young people, spend too much time looking at screens instead of having real conversations. Some studies suggest that heavy social media use can lead to feelings of loneliness and anxiety. It is important to find a balance between using technology for its many advantages and making time for meaningful, face-to-face interactions with the people around us.",
     questions: [
@@ -334,7 +335,7 @@ const STORIES: Story[] = [
     ],
   },
   {
-    id: "b2-2", title: "The Importance of Reading", level: "B2", wordCount: 161,
+    id: "b2-2", title: "The Importance of Reading", level: "B2", wordCount: 161, topic: "education",
     description: "Why reading books is important for personal development.",
     text: "Reading is one of the most valuable habits a person can develop. Unlike watching television or scrolling through social media, reading requires active engagement from the mind. When we read a book, we must imagine the scenes, understand the characters, and follow complex storylines. This mental exercise strengthens our ability to think critically and creatively. Research has shown that regular readers tend to have larger vocabularies, better writing skills, and stronger analytical thinking. Moreover, reading fiction can increase empathy, as it allows us to experience the world through different perspectives. Despite these well-documented benefits, the number of people who read books regularly has been declining in many countries. Busy lifestyles and the constant availability of digital entertainment are often blamed for this trend. However, even reading for just twenty minutes a day can make a significant difference. Whether it is a novel, a biography, or a science article, every page we read adds to our knowledge and understanding of the world.",
     questions: [
@@ -346,7 +347,7 @@ const STORIES: Story[] = [
   },
   // ─── A1 (additional) ───
   {
-    id: "a1-4", title: "My Morning", level: "A1", wordCount: 48,
+    id: "a1-4", title: "My Morning", level: "A1", wordCount: 48, topic: "daily",
     description: "A child describes their morning routine.",
     text: "I wake up at seven every morning. I brush my teeth and wash my face. Then I eat breakfast with my family. I drink milk and eat bread. I put on my school uniform. My mother walks me to school. I say goodbye and go to my classroom.",
     questions: [
@@ -357,7 +358,7 @@ const STORIES: Story[] = [
   },
   // ─── C1 ───
   {
-    id: "c1-1", title: "Remote Work: A Lasting Shift?", level: "C1", wordCount: 237,
+    id: "c1-1", title: "Remote Work: A Lasting Shift?", level: "C1", wordCount: 237, topic: "work",
     description: "An analysis of remote work trends and their impact on the modern workplace.",
     text: "The widespread adoption of remote work during the pandemic has fundamentally altered expectations in the modern workplace. What began as a temporary necessity has evolved into a permanent feature of professional life for millions of workers worldwide. Research conducted by Stanford University found that employees who work from home are, on average, thirteen percent more productive than their office-based counterparts. This increase is attributed to fewer distractions, reduced commute time, and greater autonomy over daily schedules. However, remote work is not without its drawbacks. Many employees report feelings of isolation and difficulty maintaining boundaries between their professional and personal lives. Younger workers, in particular, struggle to develop mentoring relationships and build the informal networks that are often essential for career advancement. Companies, too, face challenges: monitoring performance, maintaining corporate culture, and fostering collaboration become significantly more complex when teams are distributed across different locations and time zones. As a result, a growing number of organizations have adopted hybrid arrangements, requiring employees to work in the office two or three days per week while allowing flexibility on the remaining days. This compromise attempts to capture the productivity benefits of remote work while preserving the social and collaborative advantages of a shared physical workspace. Whether this hybrid model will prove sustainable in the long term remains an open question, but it is clear that the traditional five-day office week is unlikely to return as the default for knowledge workers.",
     questions: [
@@ -370,7 +371,7 @@ const STORIES: Story[] = [
   },
   // ─── A1 (pets, playground, birthday party) ───
   {
-    id: "a1-5", title: "My Dog Max", level: "A1", wordCount: 45,
+    id: "a1-5", title: "My Dog Max", level: "A1", wordCount: 45, topic: "animals",
     description: "A child talks about their pet dog.",
     text: "I have a dog. His name is Max. He is brown and white. Max has a long tail. He likes to run in the park. He eats bones and drinks water. When I come home, Max is very happy. He wags his tail fast. I love Max very much.",
     questions: [
@@ -380,7 +381,7 @@ const STORIES: Story[] = [
     ],
   },
   {
-    id: "a1-6", title: "The Playground", level: "A1", wordCount: 46,
+    id: "a1-6", title: "The Playground", level: "A1", wordCount: 46, topic: "school",
     description: "A child describes playing at the playground.",
     text: "I go to the playground after school. There is a big slide and two swings. I like the slide the most. I climb the ladder and go down fast. My friend likes the swings. We take turns and play together. The playground is fun. We play there every day.",
     questions: [
@@ -390,7 +391,7 @@ const STORIES: Story[] = [
     ],
   },
   {
-    id: "a1-7", title: "My Birthday Party", level: "A1", wordCount: 48,
+    id: "a1-7", title: "My Birthday Party", level: "A1", wordCount: 48, topic: "family",
     description: "A child describes their birthday party.",
     text: "Today is my birthday. I am seven years old. My mother makes a big cake. It has seven candles. My friends come to my house. We have balloons and presents. I blow the candles and make a wish. We eat cake and play games. It is the best day!",
     questions: [
@@ -401,7 +402,7 @@ const STORIES: Story[] = [
   },
   // ─── A2 (sports day, cooking, birthday gift, library) ───
   {
-    id: "a2-4", title: "Sports Day", level: "A2", wordCount: 72,
+    id: "a2-4", title: "Sports Day", level: "A2", wordCount: 72, topic: "sports",
     description: "A student talks about their school sports day.",
     text: "Last Friday was sports day at our school. All the students were very excited. There were many competitions like running, jumping, and swimming. I was on the blue team. My best friend Tom was on the red team. I ran in the short race and came in second place. Tom won the long race and got a gold medal. Our teacher was very proud of everyone. At the end of the day, the red team won, but we all had a great time. My mother cheered for me from the side.",
     questions: [
@@ -412,7 +413,7 @@ const STORIES: Story[] = [
     ],
   },
   {
-    id: "a2-5", title: "Cooking with Mom", level: "A2", wordCount: 75,
+    id: "a2-5", title: "Cooking with Mom", level: "A2", wordCount: 75, topic: "food",
     description: "A child helps their mother bake a cake.",
     text: "Yesterday, I helped my mother make a chocolate cake. First, we put flour, sugar, and butter in a big bowl. Then I mixed everything together. My mother added eggs and milk. I stirred the mixture until it was smooth. We poured it into a round pan and put it in the oven. We waited for thirty minutes. When the cake was ready, it smelled delicious. We put chocolate on top. I tasted a small piece. It was the best cake I have ever eaten! I want to cook with my mother again.",
     questions: [
@@ -423,7 +424,7 @@ const STORIES: Story[] = [
     ],
   },
   {
-    id: "a2-6", title: "The Birthday Gift", level: "A2", wordCount: 71,
+    id: "a2-6", title: "The Birthday Gift", level: "A2", wordCount: 71, topic: "family",
     description: "A child picks a birthday gift for a friend.",
     text: "Next week is my friend Lisa's birthday. I want to buy her a nice present. Lisa loves reading books and drawing pictures. On Saturday, my father took me to the shopping center. I looked at many things in the shops. I found a beautiful set of colored pencils and a book about animals. I think Lisa will love these gifts. I also bought a card and wrote a message inside. I cannot wait to see Lisa open her presents. I hope she has a wonderful birthday.",
     questions: [
@@ -433,7 +434,7 @@ const STORIES: Story[] = [
     ],
   },
   {
-    id: "a2-7", title: "At the Library", level: "A2", wordCount: 73,
+    id: "a2-7", title: "At the Library", level: "A2", wordCount: 73, topic: "education",
     description: "A child visits the local library.",
     text: "Every Saturday morning, I go to the library with my older sister. The library is a big, quiet building near our school. Inside, there are many shelves full of books. I like to sit in the children's corner and read adventure stories. My sister prefers books about science. The librarian is a kind woman who always helps us find good books. We can borrow three books each time. I usually finish my books in one week. Reading takes me to different worlds. I love the library because it is a special place full of imagination.",
     questions: [
@@ -445,7 +446,7 @@ const STORIES: Story[] = [
   },
   // ─── B1 (first job, social media, healthy eating, volunteering) ───
   {
-    id: "b1-3", title: "My First Job", level: "B1", wordCount: 138,
+    id: "b1-3", title: "My First Job", level: "B1", wordCount: 138, topic: "work",
     description: "A teenager describes the experience of their first part-time job.",
     text: "When I turned sixteen, I decided to look for a part-time job. After applying to several places, I got an interview at a small coffee shop near my house. I was very nervous, but the manager was friendly and asked simple questions about why I wanted to work there. A few days later, I received a phone call saying I got the job. My first day was exciting but also stressful. I had to learn how to make different drinks, take orders, and talk to customers politely. In the beginning, I made some mistakes, but my colleagues were patient and helped me improve. After a few weeks, I started to feel more confident. The best part of the job was earning my own money for the first time. I saved most of my wages to buy a new bicycle. Having a job also taught me important skills like time management, responsibility, and how to work as part of a team.",
     questions: [
@@ -456,7 +457,7 @@ const STORIES: Story[] = [
     ],
   },
   {
-    id: "b1-4", title: "Social Media and Teenagers", level: "B1", wordCount: 135,
+    id: "b1-4", title: "Social Media and Teenagers", level: "B1", wordCount: 135, topic: "technology",
     description: "An essay about the effects of social media on young people.",
     text: "Social media has become a big part of teenage life. Most young people spend several hours each day checking their phones, looking at posts, and talking to friends online. There are many positive sides to social media. It helps people stay connected with friends who live far away, and it can be a good way to learn new things through videos and articles. However, there are also serious concerns. Many teenagers feel pressure to look perfect in their photos and get many likes on their posts. This constant comparison with others can lead to low self-esteem and anxiety. Some young people also find it difficult to stop checking their notifications, which affects their sleep and schoolwork. Experts suggest that teenagers should try to be more mindful about how they use social media. Setting time limits, following accounts that make them feel good, and remembering that what people post online is not always reality are all helpful strategies.",
     questions: [
@@ -467,7 +468,7 @@ const STORIES: Story[] = [
     ],
   },
   {
-    id: "b1-5", title: "Healthy Eating Habits", level: "B1", wordCount: 131,
+    id: "b1-5", title: "Healthy Eating Habits", level: "B1", wordCount: 131, topic: "health",
     description: "The importance of maintaining a balanced diet.",
     text: "Eating well is one of the most important things we can do for our health. A balanced diet includes a variety of foods such as fruits, vegetables, whole grains, and protein from sources like fish, eggs, and beans. Many people today eat too much processed food, which often contains a lot of sugar, salt, and fat. This can lead to health problems like heart disease and diabetes. Experts recommend eating at least five portions of fruit and vegetables every day. Drinking enough water is also essential, as our bodies need it to function properly. Another important habit is eating regular meals and not skipping breakfast, which gives us energy for the day ahead. It is also a good idea to control portion sizes and eat slowly so that our body has time to feel full. Making small changes to our daily diet can have a big positive impact on our long-term health and wellbeing.",
     questions: [
@@ -478,7 +479,7 @@ const STORIES: Story[] = [
     ],
   },
   {
-    id: "b1-6", title: "Volunteering in the Community", level: "B1", wordCount: 134,
+    id: "b1-6", title: "Volunteering in the Community", level: "B1", wordCount: 134, topic: "society",
     description: "A student shares their experience volunteering.",
     text: "Last year, I started volunteering at a local community center every Saturday. At first, I joined because my teacher said it would look good on my university application. However, after a few weeks, I realized that volunteering was much more meaningful than I had expected. My main job was helping elderly people with their shopping and cooking simple meals for them. Many of them lived alone and did not have family nearby, so they were always happy to see me and have someone to talk to. I also helped organize a small library at the center where people could borrow books for free. Through volunteering, I learned that even small actions can make a big difference in someone's life. I became more grateful for the things I have and developed a stronger sense of purpose. I would encourage everyone to try volunteering because it does not just help others, it also changes you as a person.",
     questions: [
@@ -490,7 +491,7 @@ const STORIES: Story[] = [
   },
   // ─── B2 (AI, climate change, space exploration, cultural differences) ───
   {
-    id: "b2-3", title: "Artificial Intelligence in Daily Life", level: "B2", wordCount: 168,
+    id: "b2-3", title: "Artificial Intelligence in Daily Life", level: "B2", wordCount: 168, topic: "technology",
     description: "How AI is transforming everyday activities and the questions it raises.",
     text: "Artificial intelligence has moved beyond the realm of science fiction and is now embedded in many aspects of our daily lives. From voice assistants on our phones to personalized recommendations on streaming platforms, AI algorithms are constantly working behind the scenes to shape our experiences. In healthcare, AI systems can analyze medical images with remarkable accuracy, sometimes detecting diseases earlier than human doctors. In transportation, self-driving vehicles are being tested in cities around the world, promising to reduce accidents caused by human error. However, the rapid advancement of AI technology raises important ethical questions. One major concern is the potential displacement of workers as machines become capable of performing tasks that were previously done by humans. Another issue is algorithmic bias, where AI systems may make unfair decisions because they were trained on biased datasets. Furthermore, questions about privacy arise when AI systems collect and analyze vast amounts of personal data. As AI continues to evolve, society must engage in thoughtful discussions about how to harness its benefits while addressing its risks and ensuring that its development serves the common good.",
     questions: [
@@ -502,7 +503,7 @@ const STORIES: Story[] = [
     ],
   },
   {
-    id: "b2-4", title: "Understanding Climate Change", level: "B2", wordCount: 172,
+    id: "b2-4", title: "Understanding Climate Change", level: "B2", wordCount: 172, topic: "environment",
     description: "The causes and consequences of global climate change.",
     text: "Climate change is widely regarded as one of the most pressing challenges facing humanity in the twenty-first century. The overwhelming majority of climate scientists agree that human activities, particularly the burning of fossil fuels such as coal, oil, and natural gas, are the primary cause of rising global temperatures. These activities release large quantities of carbon dioxide and other greenhouse gases into the atmosphere, trapping heat and causing the planet to warm. The consequences of this warming are already visible across the globe. Arctic glaciers are melting at an unprecedented rate, sea levels are rising, and extreme weather events such as hurricanes, droughts, and floods are becoming more frequent and severe. These changes threaten ecosystems, agriculture, and the livelihoods of millions of people, particularly in developing countries that are least equipped to adapt. Addressing climate change requires a coordinated global effort. Transitioning to renewable energy sources such as solar and wind power, improving energy efficiency, and protecting forests are all essential steps. Individual actions, such as reducing meat consumption and using public transportation, also contribute to the solution. The challenge is enormous, but scientists emphasize that meaningful action taken now can still prevent the worst outcomes.",
     questions: [
@@ -514,7 +515,7 @@ const STORIES: Story[] = [
     ],
   },
   {
-    id: "b2-5", title: "The New Space Race", level: "B2", wordCount: 165,
+    id: "b2-5", title: "The New Space Race", level: "B2", wordCount: 165, topic: "science",
     description: "Modern space exploration and its implications for the future.",
     text: "Space exploration has entered a new and exciting era. While the original space race of the 1960s was driven by competition between the United States and the Soviet Union, today's efforts involve both government agencies and private companies. Organizations like SpaceX and Blue Origin have dramatically reduced the cost of launching spacecraft, making space more accessible than ever before. One of the most ambitious goals is the colonization of Mars. Several agencies and companies have announced plans to send humans to the red planet within the next two decades. However, the challenges are enormous. Astronauts would face extreme radiation, limited resources, and the psychological effects of being isolated millions of kilometers from Earth. Beyond Mars, scientists are exploring the possibility of mining asteroids for valuable minerals and establishing permanent bases on the Moon. These ventures could provide resources that are becoming scarce on Earth. Critics argue that the vast amounts of money spent on space exploration would be better used to solve problems here on Earth, such as poverty and climate change. Supporters counter that space exploration drives technological innovation that ultimately benefits everyone and that humanity must become a multi-planetary species to ensure its long-term survival.",
     questions: [
@@ -525,7 +526,7 @@ const STORIES: Story[] = [
     ],
   },
   {
-    id: "b2-6", title: "Navigating Cultural Differences", level: "B2", wordCount: 166,
+    id: "b2-6", title: "Navigating Cultural Differences", level: "B2", wordCount: 166, topic: "culture",
     description: "How cultural differences affect communication and understanding.",
     text: "In an increasingly interconnected world, the ability to understand and navigate cultural differences has become an essential skill. Culture shapes the way people think, communicate, and behave, often in ways that are invisible to those within it. What is considered polite in one culture may be seen as rude in another. For example, direct eye contact is valued as a sign of confidence in many Western countries, while in some Asian cultures it can be perceived as disrespectful. Similarly, attitudes toward time vary significantly. In some cultures, arriving exactly on time is expected, while in others a more relaxed approach is perfectly acceptable. These differences can lead to misunderstandings in both personal and professional contexts. Stereotypes and generalizations about other cultures often make things worse, as they reduce complex societies to simple, often inaccurate descriptions. Developing cultural competence requires genuine curiosity, active listening, and a willingness to question one's own assumptions. Travel, language learning, and building friendships with people from different backgrounds are all valuable ways to broaden one's perspective. Rather than viewing cultural differences as obstacles, we can see them as opportunities to learn and grow, enriching our own understanding of what it means to be human.",
     questions: [
@@ -537,7 +538,7 @@ const STORIES: Story[] = [
   },
   // ─── C1 (philosophy of happiness, digital privacy, economic inequality) ───
   {
-    id: "c1-2", title: "The Philosophy of Happiness", level: "C1", wordCount: 224,
+    id: "c1-2", title: "The Philosophy of Happiness", level: "C1", wordCount: 224, topic: "society",
     description: "Exploring different philosophical perspectives on what constitutes genuine happiness.",
     text: "The pursuit of happiness is a fundamental human drive, yet philosophers have debated its nature for millennia. Ancient Greek philosophers distinguished between hedonic happiness, which derives from pleasure and the avoidance of pain, and eudaimonic happiness, which arises from living a virtuous and meaningful life. Aristotle argued that true happiness, or eudaimonia, could only be achieved through the cultivation of virtue and the realization of one's full potential. This perspective suggests that happiness is not merely a feeling but a way of living. In the modern era, positive psychology has attempted to study happiness scientifically. Researchers have identified several factors that consistently correlate with higher levels of reported wellbeing, including strong social relationships, a sense of purpose, and regular engagement in activities that produce a state of flow. Interestingly, beyond a certain threshold, increases in income contribute relatively little to overall life satisfaction, challenging the widespread assumption that material wealth is the key to happiness. The so-called paradox of choice suggests that having too many options can actually decrease satisfaction, as individuals become overwhelmed by possibilities and plagued by doubt about whether they made the right decision. Contemporary philosophers have also explored the relationship between gratitude and contentment, arguing that the deliberate practice of appreciating what one already has may be more conducive to lasting happiness than the relentless pursuit of more. This notion stands in stark contrast to the consumerist values that dominate much of modern society.",
     questions: [
@@ -549,7 +550,7 @@ const STORIES: Story[] = [
     ],
   },
   {
-    id: "c1-3", title: "Digital Privacy in the Modern Age", level: "C1", wordCount: 231,
+    id: "c1-3", title: "Digital Privacy in the Modern Age", level: "C1", wordCount: 231, topic: "technology",
     description: "An examination of privacy challenges in the era of digital technology.",
     text: "The digital revolution has brought unprecedented convenience to our lives, but it has also created profound challenges to personal privacy. Every time we browse the internet, use a smartphone application, or make an online purchase, we generate data that is collected, stored, and often sold to third parties. This vast accumulation of personal information has given rise to what scholars call surveillance capitalism, a system in which human experience is treated as raw material for commercial extraction and prediction. The implications are far-reaching. Targeted advertising, while seemingly harmless, relies on intimate knowledge of individuals' habits, preferences, and even emotional states. More concerning are cases in which personal data has been used to manipulate public opinion, as demonstrated by several high-profile election interference scandals. Governments, too, have expanded their surveillance capabilities in the name of national security, raising questions about the appropriate balance between safety and individual freedom. Proponents of stronger privacy protections argue that privacy is not merely a preference but a fundamental human right, essential for autonomy, dignity, and the free expression of ideas. They advocate for comprehensive data protection regulations that require informed consent, limit data collection to what is strictly necessary, and impose severe penalties for breaches. Critics counter that excessive regulation stifles innovation and that most people willingly trade privacy for convenience. The debate over digital privacy ultimately reflects deeper tensions between individual rights and collective interests, between technological progress and human values, that societies will continue to grapple with for decades to come.",
     questions: [
@@ -561,7 +562,7 @@ const STORIES: Story[] = [
     ],
   },
   {
-    id: "c1-4", title: "The Roots of Economic Inequality", level: "C1", wordCount: 228,
+    id: "c1-4", title: "The Roots of Economic Inequality", level: "C1", wordCount: 228, topic: "society",
     description: "An analysis of the causes and consequences of growing economic inequality.",
     text: "Economic inequality has been widening in most developed nations for the past four decades, reversing the trend toward greater equality that characterized much of the twentieth century. The causes of this shift are multifaceted. Globalization and technological change have disproportionately benefited highly skilled workers while reducing opportunities for those in manufacturing and routine service jobs. Tax policies in many countries have become less progressive, reducing the redistributive mechanisms that once helped narrow the gap between rich and poor. Corporate governance structures increasingly prioritize shareholder returns over worker compensation, contributing to the stagnation of wages even as corporate profits reach record levels. The consequences of extreme inequality extend far beyond economics. Research consistently demonstrates that highly unequal societies suffer from higher rates of crime, poorer public health outcomes, lower social mobility, and diminished trust in institutions. The meritocratic narrative, which holds that success is primarily a result of individual talent and effort, becomes increasingly difficult to sustain when access to quality education, healthcare, and professional networks is so heavily determined by the circumstances of one's birth. Proposed solutions range across the political spectrum. Some advocate for higher taxes on wealth and capital gains, stronger labor unions, and universal basic income programs. Others argue that reducing barriers to entrepreneurship and improving educational access will enable more people to participate in economic growth. What is increasingly clear is that the status quo is unsustainable and that failure to address inequality risks undermining the social cohesion and democratic institutions upon which stable societies depend.",
     questions: [
@@ -574,7 +575,7 @@ const STORIES: Story[] = [
   },
   // ─── C2 (consciousness, linguistic relativity) ───
   {
-    id: "c2-1", title: "The Hard Problem of Consciousness", level: "C2", wordCount: 261,
+    id: "c2-1", title: "The Hard Problem of Consciousness", level: "C2", wordCount: 261, topic: "science",
     description: "An exploration of the philosophical puzzle of subjective conscious experience.",
     text: "Among the most intractable problems in philosophy and cognitive science is what David Chalmers famously termed the 'hard problem of consciousness': the question of why and how physical processes in the brain give rise to subjective experience. While neuroscience has made remarkable progress in identifying neural correlates of consciousness — the specific brain activities associated with particular mental states — this empirical success has done little to resolve the deeper conceptual puzzle. We can map which neurons fire when a person sees the color red, but this tells us nothing about why there is something it is like to experience redness, the ineffable qualitative character that philosophers call qualia. The hard problem exposes a fundamental explanatory gap between objective, third-person descriptions of brain processes and the first-person reality of lived experience. Materialist philosophers contend that consciousness will ultimately be explained in purely physical terms, perhaps through a more sophisticated understanding of information processing or emergent properties of complex systems. They argue that the apparent mysteriousness of consciousness is an artifact of our current ignorance rather than evidence of a genuinely non-physical phenomenon. Dualists, by contrast, maintain that subjective experience possesses properties that cannot in principle be reduced to physical descriptions, suggesting that the mental and the physical constitute fundamentally distinct categories of existence. More recently, integrated information theory has proposed that consciousness is a fundamental property of any system that integrates information in a sufficiently complex manner, a view that carries the provocative implication that consciousness may be far more widespread in nature than commonly assumed. Whether the hard problem is genuinely insoluble, as some mysterian philosophers suggest, or merely awaits a conceptual breakthrough analogous to the discovery of DNA's role in heredity, remains one of the deepest open questions in human intellectual inquiry.",
     questions: [
@@ -586,7 +587,7 @@ const STORIES: Story[] = [
     ],
   },
   {
-    id: "c2-2", title: "Linguistic Relativity and Thought", level: "C2", wordCount: 254,
+    id: "c2-2", title: "Linguistic Relativity and Thought", level: "C2", wordCount: 254, topic: "science",
     description: "An examination of the Sapir-Whorf hypothesis and the relationship between language and cognition.",
     text: "The Sapir-Whorf hypothesis, in its strongest formulation, posits that the language one speaks fundamentally determines the way one thinks and perceives the world — a claim known as linguistic determinism. While this radical version has been largely abandoned by contemporary linguists, a more nuanced interpretation, termed linguistic relativity, continues to generate productive research and lively debate. Linguistic relativity holds that language influences, without strictly determining, certain cognitive processes such as categorization, memory, and spatial reasoning. Compelling evidence for this position comes from cross-linguistic studies of color perception. Languages differ dramatically in how they partition the color spectrum: Russian, for instance, distinguishes lexically between light blue and dark blue in a way that English does not. Experimental research has demonstrated that Russian speakers are measurably faster at distinguishing between shades that fall on different sides of this linguistic boundary, suggesting that lexical categories genuinely shape perceptual discrimination. Similar findings have emerged in the domain of spatial cognition. Some Aboriginal Australian languages lack egocentric spatial terms such as 'left' and 'right,' instead employing absolute cardinal directions for all spatial descriptions. Speakers of these languages maintain an extraordinary awareness of their orientation relative to compass points, a cognitive feat that speakers of egocentric languages struggle to replicate. Critics of linguistic relativity note that such effects, while statistically significant, tend to be modest in magnitude and may reflect differences in habitual attention rather than fundamental cognitive architecture. They argue that the universal aspects of human cognition far outweigh the linguistic variations, pointing to the fact that concepts can be expressed across languages even when convenient single-word translations do not exist. The debate illuminates a broader philosophical question about the relationship between symbolic systems and the minds that create and inhabit them.",
     questions: [
@@ -605,7 +606,7 @@ const STORIES: Story[] = [
 
 type Screen = "list" | "reading" | "quiz" | "result";
 
-export function ReadingPage({ student, onBackHome }: Props) {
+export function ReadingPage({ student, topicId, onBackHome }: Props) {
   const [level, setLevel] = useState<CEFRLevel>(() => {
     const map: Record<string, CEFRLevel> = { a1: "A1", a2: "A2", b1: "B1", b2: "B2", c1: "C1" };
     return map[student.level] ?? "A1";
@@ -670,7 +671,15 @@ export function ReadingPage({ student, onBackHome }: Props) {
   const [answers, setAnswers] = useState<(number | null)[]>([]);
   const [submitted, setSubmitted] = useState(false);
 
-  const filtered = useMemo(() => STORIES.filter((s) => s.level === level), [level]);
+  const filtered = useMemo(() => {
+    let result = STORIES.filter((s) => s.level === level);
+    if (topicId) {
+      const topicKey = topicId.replace("topic_", "");
+      const byTopic = result.filter((s) => s.topic === topicKey);
+      if (byTopic.length > 0) result = byTopic;
+    }
+    return result;
+  }, [level, topicId]);
 
   const score = useMemo(() => {
     if (!activeStory) return 0;

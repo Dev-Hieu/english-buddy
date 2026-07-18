@@ -7,12 +7,13 @@ import { cn } from "@/components/ui/cn";
 
 interface GrammarListPageProps {
   student: Student;
+  initialLevel?: Level | "all";
   onBackHome: () => void;
   onPick: (topicId: string) => void;
 }
 
-export function GrammarListPage({ student, onBackHome, onPick }: GrammarListPageProps) {
-  const start = LEVEL_ORDER.includes(student.level as Level) ? (student.level as Level) : "all";
+export function GrammarListPage({ student, initialLevel, onBackHome, onPick }: GrammarListPageProps) {
+  const start = initialLevel && initialLevel !== "all" ? initialLevel : (LEVEL_ORDER.includes(student.level as Level) ? (student.level as Level) : "all");
   const [level, setLevel] = useState<Level | "all">(start);
   const topics = GRAMMAR_TOPICS.filter((t) => level === "all" || t.level === level);
 

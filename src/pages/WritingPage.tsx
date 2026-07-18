@@ -9,7 +9,7 @@ import { SEED_VOCABULARY } from "@/data/seedVocabulary";
 import { speakText } from "@/services/speechService";
 import { apiRequest } from "@/services/api";
 
-interface Props { student: Student; onBackHome: () => void; }
+interface Props { student: Student; topicId?: string; onBackHome: () => void; }
 
 type Mode = "word-dictation" | "sentence-dictation" | "essay";
 type CEFRLevel = "A1" | "A2" | "B1" | "B2" | "C1" | "C2";
@@ -205,12 +205,13 @@ const ESSAY_PROMPTS: Record<CEFRLevel, string[]> = {
 };
 
 /* ─── Word Dictation Component ─── */
-function WordDictation({ level, onBack }: { level: CEFRLevel; onBack: () => void }) {
+function WordDictation({ topicId, level, onBack }: { topicId?: string; level: CEFRLevel; onBack: () => void }) {
   const words = useMemo(() => {
     const vocabLevel = CEFR_TO_LEVEL[level];
-    const filtered = SEED_VOCABULARY.filter((v) => v.level === vocabLevel);
+    const byTopic = topicId ? SEED_VOCABULARY.filter((v) => v.level === vocabLevel && v.topicIds.includes(topicId)) : [];
+    const filtered = byTopic.length >= 5 ? byTopic : SEED_VOCABULARY.filter((v) => v.level === vocabLevel);
     return shuffle(filtered).slice(0, 10);
-  }, [level]);
+  }, [level, topicId]);
 
   const [index, setIndex] = useState(0);
   const [input, setInput] = useState("");
@@ -316,14 +317,15 @@ function WordDictation({ level, onBack }: { level: CEFRLevel; onBack: () => void
 }
 
 /* ─── Sentence Dictation Component ─── */
-function SentenceDictation({ level, onBack }: { level: CEFRLevel; onBack: () => void }) {
+function SentenceDictation({ topicId, level, onBack }: { topicId?: string; level: CEFRLevel; onBack: () => void }) {
   const sentences = useMemo(() => {
     const vocabLevel = CEFR_TO_LEVEL[level];
-    const filtered = SEED_VOCABULARY.filter((v) => v.level === vocabLevel);
+    const byTopic = topicId ? SEED_VOCABULARY.filter((v) => v.level === vocabLevel && v.topicIds.includes(topicId)) : [];
+    const filtered = byTopic.length >= 5 ? byTopic : SEED_VOCABULARY.filter((v) => v.level === vocabLevel);
     const picked = shuffle(filtered).slice(0, 5);
     const templates = SENTENCE_TEMPLATES[level];
     return picked.map((v, i) => templates[i % templates.length](v.word));
-  }, [level]);
+  }, [level, topicId]);
 
   const [index, setIndex] = useState(0);
   const [input, setInput] = useState("");
@@ -643,7 +645,7 @@ Grade the essay and respond ONLY with valid JSON (no markdown, no extra text):
 }
 
 /* ─── Main WritingPage ─── */
-export function WritingPage({ student, onBackHome }: Props) {
+export function WritingPage({ student, topicId, onBackHome }: Props) {
   const [mode, setMode] = useState<Mode | null>(null);
   const [level, setLevel] = useState<CEFRLevel>("A1");
 
@@ -687,8 +689,8 @@ export function WritingPage({ student, onBackHome }: Props) {
 
   return (
     <main className="mx-auto w-full max-w-md sm:max-w-lg lg:max-w-2xl overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
-      {mode === "word-dictation" && <WordDictation level={level} onBack={() => setMode(null)} />}
-      {mode === "sentence-dictation" && <SentenceDictation level={level} onBack={() => setMode(null)} />}
+      {mode === "word-dictation" && <WordDictation topicId={topicId} level={level} onBack={() => setMode(null)} />}
+      {mode === "sentence-dictation" && <SentenceDictation topicId={topicId} level={level} onBack={() => setMode(null)} />}
       {mode === "essay" && <EssayWriting level={level} onBack={() => setMode(null)} />}
     </main>
   );

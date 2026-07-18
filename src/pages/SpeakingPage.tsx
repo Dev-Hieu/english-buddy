@@ -193,7 +193,7 @@ export function SpeakingPage({ student, topicId, onBackHome, onShadowing }: Spea
   }
 
   if (mode === "phrase") {
-    return <PhraseMode level={level} onBack={() => setMode(null)} />;
+    return <PhraseMode topicId={topicId} level={level} onBack={() => setMode(null)} />;
   }
 
   if (mode === "minimal-pairs") {
@@ -355,11 +355,11 @@ function WordMode({ topicId, level, onBack, onShadowing }: { topicId: string; le
 
 /* ───────────────────────── Phrase Mode ───────────────────────── */
 
-function PhraseMode({ level, onBack }: { level: Level; onBack: () => void }) {
+function PhraseMode({ topicId, level, onBack }: { topicId: string; level: Level; onBack: () => void }) {
   const phrases = useMemo(() => {
     // Combine multi-word vocabulary entries + common phrases for the selected level
     const vocabPhrases: { phrase: string; meaning_vi: string }[] = SEED_VOCABULARY
-      .filter((w) => w.word.includes(" ") && matchesLevel(w.level, level))
+      .filter((w) => w.word.includes(" ") && matchesLevel(w.level, level) && (!topicId || w.topicIds.includes(topicId)))
       .map((w) => ({ phrase: w.word, meaning_vi: w.meaning_vi }));
 
     const commonForLevel = COMMON_PHRASES
@@ -378,7 +378,7 @@ function PhraseMode({ level, onBack }: { level: Level; onBack: () => void }) {
     // Shuffle and take up to 8
     const shuffled = unique.sort(() => Math.random() - 0.5);
     return shuffled.slice(0, 8);
-  }, [level]);
+  }, [topicId, level]);
 
   const [n, setN] = useState(0);
   const [done, setDone] = useState(false);
