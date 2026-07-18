@@ -1,0 +1,2089 @@
+[
+  {
+    "word": "number",
+    "phonetic": "/ˈnʌm.bər/",
+    "meaning_vi": "số",
+    "meaning_en": "a word or symbol used to count or measure",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "What is your phone number?",
+        "vi": "Số điện thoại của bạn là gì?"
+      }
+    ],
+    "word_family": [
+      "numerical (adj)",
+      "numerous (adj)"
+    ],
+    "collocations": [
+      "phone number",
+      "number one",
+      "large number"
+    ],
+    "synonyms": [
+      "digit",
+      "figure"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "number of people",
+        "correct": "the number of people",
+        "explain_vi": "Cần mạo từ 'the' trước 'number of'"
+      }
+    ],
+    "grammar_patterns": [
+      "the number of + plural noun"
+    ]
+  },
+  {
+    "word": "how many",
+    "phonetic": "/haʊ ˈmen.i/",
+    "meaning_vi": "bao nhiêu (dùng với danh từ đếm được)",
+    "meaning_en": "used to ask about the number of countable things",
+    "pos": "phrase",
+    "examples": [
+      {
+        "en": "How many apples do you have?",
+        "vi": "Bạn có bao nhiêu quả táo?"
+      }
+    ],
+    "word_family": [
+      "how much (phrase)"
+    ],
+    "collocations": [
+      "how many people",
+      "how many times"
+    ],
+    "synonyms": [
+      "what number"
+    ],
+    "antonyms": [
+      "how much"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "How many money?",
+        "correct": "How much money?",
+        "explain_vi": "'Money' là danh từ không đếm được, dùng 'how much'"
+      }
+    ],
+    "grammar_patterns": [
+      "how many + plural countable noun"
+    ]
+  },
+  {
+    "word": "how much",
+    "phonetic": "/haʊ mʌtʃ/",
+    "meaning_vi": "bao nhiêu (dùng với danh từ không đếm được)",
+    "meaning_en": "used to ask about quantity or price",
+    "pos": "phrase",
+    "examples": [
+      {
+        "en": "How much is this shirt?",
+        "vi": "Cái áo này bao nhiêu tiền?"
+      }
+    ],
+    "word_family": [
+      "how many (phrase)"
+    ],
+    "collocations": [
+      "how much time",
+      "how much water"
+    ],
+    "synonyms": [
+      "what price"
+    ],
+    "antonyms": [
+      "how many"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "How much apples?",
+        "correct": "How many apples?",
+        "explain_vi": "'Apples' đếm được, dùng 'how many'"
+      }
+    ],
+    "grammar_patterns": [
+      "how much + uncountable noun"
+    ]
+  },
+  {
+    "word": "centimeter",
+    "phonetic": "/ˈsen.tɪ.miː.tər/",
+    "meaning_vi": "xăng-ti-mét",
+    "meaning_en": "a unit of length equal to 1/100 of a meter",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The pencil is 15 centimeters long.",
+        "vi": "Cây bút chì dài 15 xăng-ti-mét."
+      }
+    ],
+    "word_family": [
+      "centimeter (n)",
+      "millimeter (n)"
+    ],
+    "collocations": [
+      "centimeters long",
+      "centimeters wide"
+    ],
+    "synonyms": [
+      "cm"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "centimeter",
+        "correct": "centimeters",
+        "explain_vi": "Số nhiều thêm 's'"
+      }
+    ],
+    "grammar_patterns": [
+      "number + centimeters + adjective"
+    ]
+  },
+  {
+    "word": "meter",
+    "phonetic": "/ˈmiː.tər/",
+    "meaning_vi": "mét",
+    "meaning_en": "the basic unit of length in the metric system",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The room is 5 meters wide.",
+        "vi": "Căn phòng rộng 5 mét."
+      }
+    ],
+    "word_family": [
+      "kilometer (n)",
+      "millimeter (n)"
+    ],
+    "collocations": [
+      "meters tall",
+      "meters away"
+    ],
+    "synonyms": [
+      "m"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "5 meter",
+        "correct": "5 meters",
+        "explain_vi": "Số nhiều thêm 's'"
+      }
+    ],
+    "grammar_patterns": [
+      "number + meters + adjective"
+    ]
+  },
+  {
+    "word": "kilogram",
+    "phonetic": "/ˈkɪl.ə.ɡræm/",
+    "meaning_vi": "ki-lô-gam",
+    "meaning_en": "a unit of mass equal to 1000 grams",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I bought 2 kilograms of rice.",
+        "vi": "Tôi mua 2 ki-lô-gam gạo."
+      }
+    ],
+    "word_family": [
+      "gram (n)",
+      "milligram (n)"
+    ],
+    "collocations": [
+      "kilogram of",
+      "per kilogram"
+    ],
+    "synonyms": [
+      "kg"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "2 kilogram",
+        "correct": "2 kilograms",
+        "explain_vi": "Số nhiều thêm 's'"
+      }
+    ],
+    "grammar_patterns": [
+      "number + kilograms + of + noun"
+    ]
+  },
+  {
+    "word": "liter",
+    "phonetic": "/ˈliː.tər/",
+    "meaning_vi": "lít",
+    "meaning_en": "a unit of volume in the metric system",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The bottle contains 1 liter of water.",
+        "vi": "Chai chứa 1 lít nước."
+      }
+    ],
+    "word_family": [
+      "milliliter (n)"
+    ],
+    "collocations": [
+      "liter of",
+      "per liter"
+    ],
+    "synonyms": [
+      "L"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "2 liter",
+        "correct": "2 liters",
+        "explain_vi": "Số nhiều thêm 's'"
+      }
+    ],
+    "grammar_patterns": [
+      "number + liters + of + noun"
+    ]
+  },
+  {
+    "word": "time",
+    "phonetic": "/taɪm/",
+    "meaning_vi": "thời gian; lần",
+    "meaning_en": "a period or occasion",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I go to the gym three times a week.",
+        "vi": "Tôi đi tập gym ba lần một tuần."
+      }
+    ],
+    "word_family": [
+      "timely (adj)",
+      "timer (n)"
+    ],
+    "collocations": [
+      "how many times",
+      "time and again"
+    ],
+    "synonyms": [
+      "occasion",
+      "duration"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have time for breakfast",
+        "correct": "I have time for breakfast",
+        "explain_vi": "Không có lỗi phổ biến"
+      }
+    ],
+    "grammar_patterns": [
+      "number + times + per + time period"
+    ]
+  },
+  {
+    "word": "once",
+    "phonetic": "/wʌns/",
+    "meaning_vi": "một lần",
+    "meaning_en": "one time",
+    "pos": "adverb",
+    "examples": [
+      {
+        "en": "I visit my grandma once a week.",
+        "vi": "Tôi thăm bà một lần một tuần."
+      }
+    ],
+    "word_family": [
+      "twice (adv)",
+      "thrice (adv)"
+    ],
+    "collocations": [
+      "once a day",
+      "once in a while"
+    ],
+    "synonyms": [
+      "one time"
+    ],
+    "antonyms": [
+      "never"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "once time",
+        "correct": "once",
+        "explain_vi": "Không cần 'time' sau 'once'"
+      }
+    ],
+    "grammar_patterns": [
+      "once + per + time period"
+    ]
+  },
+  {
+    "word": "twice",
+    "phonetic": "/twaɪs/",
+    "meaning_vi": "hai lần",
+    "meaning_en": "two times",
+    "pos": "adverb",
+    "examples": [
+      {
+        "en": "She calls me twice a day.",
+        "vi": "Cô ấy gọi tôi hai lần một ngày."
+      }
+    ],
+    "word_family": [
+      "once (adv)",
+      "thrice (adv)"
+    ],
+    "collocations": [
+      "twice as much",
+      "twice a week"
+    ],
+    "synonyms": [
+      "two times"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "two times",
+        "correct": "twice",
+        "explain_vi": "'Twice' tự nhiên hơn 'two times'"
+      }
+    ],
+    "grammar_patterns": [
+      "twice + per + time period"
+    ]
+  },
+  {
+    "word": "half",
+    "phonetic": "/hæf/",
+    "meaning_vi": "một nửa",
+    "meaning_en": "one of two equal parts",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Half of the students are girls.",
+        "vi": "Một nửa số học sinh là nữ."
+      }
+    ],
+    "word_family": [
+      "halve (v)",
+      "halfway (adv)"
+    ],
+    "collocations": [
+      "half of",
+      "half past"
+    ],
+    "synonyms": [
+      "50%"
+    ],
+    "antonyms": [
+      "whole"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "half of the apple",
+        "correct": "half the apple",
+        "explain_vi": "Có thể bỏ 'of' trước danh từ số ít"
+      }
+    ],
+    "grammar_patterns": [
+      "half of + noun",
+      "half + noun"
+    ]
+  },
+  {
+    "word": "quarter",
+    "phonetic": "/ˈkwɔːr.tər/",
+    "meaning_vi": "một phần tư",
+    "meaning_en": "one of four equal parts",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "A quarter of the cake is left.",
+        "vi": "Một phần tư cái bánh còn lại."
+      }
+    ],
+    "word_family": [
+      "quarterly (adj/adv)"
+    ],
+    "collocations": [
+      "quarter of",
+      "quarter past"
+    ],
+    "synonyms": [
+      "25%"
+    ],
+    "antonyms": [
+      "three-quarters"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "a quarter of hour",
+        "correct": "a quarter of an hour",
+        "explain_vi": "Cần mạo từ 'an' trước 'hour'"
+      }
+    ],
+    "grammar_patterns": [
+      "a quarter of + noun"
+    ]
+  },
+  {
+    "word": "pair",
+    "phonetic": "/per/",
+    "meaning_vi": "cặp, đôi",
+    "meaning_en": "two things of the same type used together",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I need a new pair of shoes.",
+        "vi": "Tôi cần một đôi giày mới."
+      }
+    ],
+    "word_family": [
+      "paired (adj)",
+      "pairing (n)"
+    ],
+    "collocations": [
+      "a pair of",
+      "in pairs"
+    ],
+    "synonyms": [
+      "couple",
+      "duo"
+    ],
+    "antonyms": [
+      "single"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "a pair of shoe",
+        "correct": "a pair of shoes",
+        "explain_vi": "Sau 'a pair of' dùng danh từ số nhiều"
+      }
+    ],
+    "grammar_patterns": [
+      "a pair of + plural noun"
+    ]
+  },
+  {
+    "word": "dozen",
+    "phonetic": "/ˈdʌz.ən/",
+    "meaning_vi": "tá (mười hai)",
+    "meaning_en": "a group of twelve",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Please buy a dozen eggs.",
+        "vi": "Làm ơn mua một tá trứng."
+      }
+    ],
+    "word_family": [
+      "dozens (n)"
+    ],
+    "collocations": [
+      "a dozen of",
+      "half a dozen"
+    ],
+    "synonyms": [
+      "twelve"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "a dozen of eggs",
+        "correct": "a dozen eggs",
+        "explain_vi": "Thường bỏ 'of' trước danh từ"
+      }
+    ],
+    "grammar_patterns": [
+      "a dozen + noun (no of)"
+    ]
+  },
+  {
+    "word": "score",
+    "phonetic": "/skɔːr/",
+    "meaning_vi": "hai mươi; điểm số",
+    "meaning_en": "twenty; the number of points in a game",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The score is 3 to 1.",
+        "vi": "Tỉ số là 3-1."
+      }
+    ],
+    "word_family": [
+      "scoring (n)"
+    ],
+    "collocations": [
+      "keep score",
+      "score a goal"
+    ],
+    "synonyms": [
+      "twenty",
+      "points"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "score of people",
+        "correct": "scores of people",
+        "explain_vi": "Số nhiều 'scores' nghĩa là nhiều"
+      }
+    ],
+    "grammar_patterns": [
+      "a score of + noun (archaic)"
+    ]
+  },
+  {
+    "word": "zero",
+    "phonetic": "/ˈzɪr.oʊ/",
+    "meaning_vi": "số không",
+    "meaning_en": "the number 0",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The temperature is zero degrees.",
+        "vi": "Nhiệt độ là không độ."
+      }
+    ],
+    "word_family": [
+      "zero (adj)"
+    ],
+    "collocations": [
+      "below zero",
+      "zero tolerance"
+    ],
+    "synonyms": [
+      "nil",
+      "nought"
+    ],
+    "antonyms": [
+      "one"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "zero degree",
+        "correct": "zero degrees",
+        "explain_vi": "Số nhiều cho nhiệt độ"
+      }
+    ],
+    "grammar_patterns": [
+      "zero + plural noun"
+    ]
+  },
+  {
+    "word": "first",
+    "phonetic": "/fɜːrst/",
+    "meaning_vi": "thứ nhất, đầu tiên",
+    "meaning_en": "coming before all others in time or order",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "He is my first friend.",
+        "vi": "Anh ấy là người bạn đầu tiên của tôi."
+      }
+    ],
+    "word_family": [
+      "firstly (adv)",
+      "first (n)"
+    ],
+    "collocations": [
+      "first time",
+      "first place"
+    ],
+    "synonyms": [
+      "primary",
+      "initial"
+    ],
+    "antonyms": [
+      "last"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "first of all",
+        "correct": "first of all",
+        "explain_vi": "Không có lỗi phổ biến"
+      }
+    ],
+    "grammar_patterns": [
+      "the first + noun"
+    ]
+  },
+  {
+    "word": "last",
+    "phonetic": "/læst/",
+    "meaning_vi": "cuối cùng",
+    "meaning_en": "coming after all others in time or order",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "This is the last bus.",
+        "vi": "Đây là chuyến xe buýt cuối cùng."
+      }
+    ],
+    "word_family": [
+      "lastly (adv)",
+      "last (v)"
+    ],
+    "collocations": [
+      "last chance",
+      "last week"
+    ],
+    "synonyms": [
+      "final",
+      "ultimate"
+    ],
+    "antonyms": [
+      "first"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "the last year",
+        "correct": "last year",
+        "explain_vi": "Không dùng 'the' trước 'last year'"
+      }
+    ],
+    "grammar_patterns": [
+      "last + noun (no article for time)"
+    ]
+  },
+  {
+    "word": "next",
+    "phonetic": "/nekst/",
+    "meaning_vi": "tiếp theo",
+    "meaning_en": "coming immediately after the present one",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "See you next week.",
+        "vi": "Hẹn gặp bạn tuần sau."
+      }
+    ],
+    "word_family": [
+      "next (adv)",
+      "next (n)"
+    ],
+    "collocations": [
+      "next time",
+      "next to"
+    ],
+    "synonyms": [
+      "following"
+    ],
+    "antonyms": [
+      "previous"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "the next day",
+        "correct": "the next day",
+        "explain_vi": "Có thể dùng 'the' khi nói về tương lai"
+      }
+    ],
+    "grammar_patterns": [
+      "next + noun (no article for time)"
+    ]
+  },
+  {
+    "word": "every",
+    "phonetic": "/ˈev.ri/",
+    "meaning_vi": "mỗi, mọi",
+    "meaning_en": "each one of a group, without exception",
+    "pos": "determiner",
+    "examples": [
+      {
+        "en": "I brush my teeth every day.",
+        "vi": "Tôi đánh răng mỗi ngày."
+      }
+    ],
+    "word_family": [
+      "everyone (pron)",
+      "everything (pron)"
+    ],
+    "collocations": [
+      "every day",
+      "every time"
+    ],
+    "synonyms": [
+      "each"
+    ],
+    "antonyms": [
+      "none"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "every days",
+        "correct": "every day",
+        "explain_vi": "'Every' luôn đi với danh từ số ít"
+      }
+    ],
+    "grammar_patterns": [
+      "every + singular noun"
+    ]
+  },
+  {
+    "word": "length",
+    "phonetic": "/leŋkθ/",
+    "meaning_vi": "chiều dài",
+    "meaning_en": "the measurement of something from one end to the other",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The length of the table is two meters.",
+        "vi": "Chiều dài của cái bàn là hai mét."
+      }
+    ],
+    "word_family": [
+      "long (adj)",
+      "lengthen (v)"
+    ],
+    "collocations": [
+      "length of",
+      "measure the length",
+      "full length"
+    ],
+    "synonyms": [
+      "distance",
+      "extent"
+    ],
+    "antonyms": [
+      "width",
+      "shortness"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "The length of the table is long.",
+        "correct": "The table is long.",
+        "explain_vi": "Không dùng 'length' và 'long' cùng nhau; 'length' là danh từ, 'long' là tính từ."
+      }
+    ],
+    "grammar_patterns": [
+      "the length of + noun"
+    ]
+  },
+  {
+    "word": "width",
+    "phonetic": "/wɪdθ/",
+    "meaning_vi": "chiều rộng",
+    "meaning_en": "the measurement of something from one side to the other",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The width of the door is 80 centimeters.",
+        "vi": "Chiều rộng của cánh cửa là 80 cm."
+      }
+    ],
+    "word_family": [
+      "wide (adj)",
+      "widen (v)"
+    ],
+    "collocations": [
+      "width of",
+      "measure the width"
+    ],
+    "synonyms": [
+      "breadth"
+    ],
+    "antonyms": [
+      "length",
+      "height"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "The width is wide.",
+        "correct": "It is wide.",
+        "explain_vi": "Không dùng 'width' và 'wide' cùng nhau."
+      }
+    ],
+    "grammar_patterns": [
+      "the width of + noun"
+    ]
+  },
+  {
+    "word": "height",
+    "phonetic": "/haɪt/",
+    "meaning_vi": "chiều cao",
+    "meaning_en": "the measurement of how tall someone or something is",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "What is your height?",
+        "vi": "Chiều cao của bạn là bao nhiêu?"
+      }
+    ],
+    "word_family": [
+      "high (adj)",
+      "heighten (v)"
+    ],
+    "collocations": [
+      "height of",
+      "average height",
+      "full height"
+    ],
+    "synonyms": [
+      "tallness"
+    ],
+    "antonyms": [
+      "depth"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I am 1.7 meters height.",
+        "correct": "I am 1.7 meters tall.",
+        "explain_vi": "Dùng 'tall' với người, không dùng 'height'."
+      }
+    ],
+    "grammar_patterns": [
+      "the height of + noun"
+    ]
+  },
+  {
+    "word": "depth",
+    "phonetic": "/depθ/",
+    "meaning_vi": "chiều sâu",
+    "meaning_en": "the measurement of how deep something is",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The depth of the pool is two meters.",
+        "vi": "Độ sâu của hồ bơi là hai mét."
+      }
+    ],
+    "word_family": [
+      "deep (adj)",
+      "deepen (v)"
+    ],
+    "collocations": [
+      "depth of",
+      "in depth"
+    ],
+    "synonyms": [
+      "deepness"
+    ],
+    "antonyms": [
+      "height"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "The depth is deep.",
+        "correct": "It is deep.",
+        "explain_vi": "Không dùng 'depth' và 'deep' cùng nhau."
+      }
+    ],
+    "grammar_patterns": [
+      "the depth of + noun"
+    ]
+  },
+  {
+    "word": "weight",
+    "phonetic": "/weɪt/",
+    "meaning_vi": "trọng lượng, cân nặng",
+    "meaning_en": "how heavy something is",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "My weight is 60 kilograms.",
+        "vi": "Cân nặng của tôi là 60 kg."
+      }
+    ],
+    "word_family": [
+      "weigh (v)",
+      "weighty (adj)"
+    ],
+    "collocations": [
+      "lose weight",
+      "gain weight",
+      "weight loss"
+    ],
+    "synonyms": [
+      "heaviness",
+      "mass"
+    ],
+    "antonyms": [
+      "lightness"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I weight 60 kg.",
+        "correct": "I weigh 60 kg.",
+        "explain_vi": "'Weight' là danh từ, 'weigh' là động từ."
+      }
+    ],
+    "grammar_patterns": [
+      "the weight of + noun"
+    ]
+  },
+  {
+    "word": "measure",
+    "phonetic": "/ˈmeʒ.ər/",
+    "meaning_vi": "đo lường",
+    "meaning_en": "to find the size, weight, or amount of something",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "Can you measure the table?",
+        "vi": "Bạn có thể đo cái bàn không?"
+      }
+    ],
+    "word_family": [
+      "measurement (n)",
+      "measurable (adj)"
+    ],
+    "collocations": [
+      "measure something",
+      "measure accurately"
+    ],
+    "synonyms": [
+      "calculate",
+      "determine"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Measure the weight of it.",
+        "correct": "Weigh it.",
+        "explain_vi": "Dùng 'weigh' cho cân nặng, 'measure' thường dùng cho kích thước."
+      }
+    ],
+    "grammar_patterns": [
+      "measure + noun"
+    ]
+  },
+  {
+    "word": "size",
+    "phonetic": "/saɪz/",
+    "meaning_vi": "kích cỡ",
+    "meaning_en": "how big or small something is",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "What size do you wear?",
+        "vi": "Bạn mặc size nào?"
+      }
+    ],
+    "word_family": [
+      "sizable (adj)"
+    ],
+    "collocations": [
+      "size of",
+      "in size",
+      "size small/medium/large"
+    ],
+    "synonyms": [
+      "dimensions",
+      "magnitude"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I need a size bigger.",
+        "correct": "I need a bigger size.",
+        "explain_vi": "Tính từ đứng trước danh từ."
+      }
+    ],
+    "grammar_patterns": [
+      "size + number/letter"
+    ]
+  },
+  {
+    "word": "scale",
+    "phonetic": "/skeɪl/",
+    "meaning_vi": "cân (bàn cân), thang đo",
+    "meaning_en": "a device for weighing; a system of measurement",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Step on the scale to check your weight.",
+        "vi": "Bước lên cân để kiểm tra cân nặng."
+      }
+    ],
+    "word_family": [
+      "scales (pl)"
+    ],
+    "collocations": [
+      "bathroom scale",
+      "on a scale of 1 to 10"
+    ],
+    "synonyms": [
+      "weighing machine"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Scale is used to measure length.",
+        "correct": "A ruler is used to measure length.",
+        "explain_vi": "'Scale' là cân đo trọng lượng, không phải đo chiều dài."
+      }
+    ],
+    "grammar_patterns": [
+      "on the scale",
+      "a scale of"
+    ]
+  },
+  {
+    "word": "ruler",
+    "phonetic": "/ˈruː.lər/",
+    "meaning_vi": "thước kẻ",
+    "meaning_en": "a tool for measuring length or drawing straight lines",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Use a ruler to draw a straight line.",
+        "vi": "Dùng thước kẻ để vẽ đường thẳng."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "use a ruler",
+      "measure with a ruler"
+    ],
+    "synonyms": [
+      "measuring stick"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I need a ruler to weigh this.",
+        "correct": "I need a scale to weigh this.",
+        "explain_vi": "Nhầm lẫn giữa thước và cân."
+      }
+    ],
+    "grammar_patterns": [
+      "a ruler + verb"
+    ]
+  },
+  {
+    "word": "tape measure",
+    "phonetic": "/ˈteɪp ˌmeʒ.ər/",
+    "meaning_vi": "thước dây",
+    "meaning_en": "a flexible ruler used to measure length or distance",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I need a tape measure to measure the room.",
+        "vi": "Tôi cần thước dây để đo căn phòng."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "use a tape measure",
+      "tape measure in meters"
+    ],
+    "synonyms": [
+      "measuring tape"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Tape measure is for measuring weight.",
+        "correct": "Tape measure is for measuring length.",
+        "explain_vi": "Thước dây đo chiều dài, không đo trọng lượng."
+      }
+    ],
+    "grammar_patterns": [
+      "a tape measure"
+    ]
+  },
+  {
+    "word": "thermometer",
+    "phonetic": "/θərˈmɑː.mə.t̬ɚ/",
+    "meaning_vi": "nhiệt kế",
+    "meaning_en": "a device for measuring temperature",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The thermometer says it's 30 degrees.",
+        "vi": "Nhiệt kế chỉ 30 độ."
+      }
+    ],
+    "word_family": [
+      "temperature (n)"
+    ],
+    "collocations": [
+      "read a thermometer",
+      "thermometer shows"
+    ],
+    "synonyms": [
+      "temperature gauge"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Thermometer measures weight.",
+        "correct": "Thermometer measures temperature.",
+        "explain_vi": "Nhiệt kế đo nhiệt độ, không đo cân nặng."
+      }
+    ],
+    "grammar_patterns": [
+      "the thermometer + verb"
+    ]
+  },
+  {
+    "word": "speed",
+    "phonetic": "/spiːd/",
+    "meaning_vi": "tốc độ",
+    "meaning_en": "how fast something moves",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The car is going at high speed.",
+        "vi": "Xe đang chạy với tốc độ cao."
+      }
+    ],
+    "word_family": [
+      "speedy (adj)",
+      "speed up (v)"
+    ],
+    "collocations": [
+      "speed limit",
+      "at a speed of",
+      "high speed"
+    ],
+    "synonyms": [
+      "velocity",
+      "pace"
+    ],
+    "antonyms": [
+      "slowness"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Speed of the car is fast.",
+        "correct": "The car is fast.",
+        "explain_vi": "Không dùng 'speed' và 'fast' cùng nhau."
+      }
+    ],
+    "grammar_patterns": [
+      "at a speed of + number"
+    ]
+  },
+  {
+    "word": "distance",
+    "phonetic": "/ˈdɪs.təns/",
+    "meaning_vi": "khoảng cách",
+    "meaning_en": "the amount of space between two places",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The distance from here to the station is 2 km.",
+        "vi": "Khoảng cách từ đây đến nhà ga là 2 km."
+      }
+    ],
+    "word_family": [
+      "distant (adj)"
+    ],
+    "collocations": [
+      "distance between",
+      "long distance",
+      "short distance"
+    ],
+    "synonyms": [
+      "length",
+      "gap"
+    ],
+    "antonyms": [
+      "proximity"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Distance is far.",
+        "correct": "It is a long distance.",
+        "explain_vi": "Không dùng 'distance' và 'far' cùng nhau."
+      }
+    ],
+    "grammar_patterns": [
+      "the distance from ... to ..."
+    ]
+  },
+  {
+    "word": "area",
+    "phonetic": "/ˈɛr.i.ə/",
+    "meaning_vi": "diện tích",
+    "meaning_en": "the size of a surface measured in square units",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The area of the room is 20 square meters.",
+        "vi": "Diện tích căn phòng là 20 mét vuông."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "area of",
+      "surface area",
+      "living area"
+    ],
+    "synonyms": [
+      "space",
+      "size"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Area is long.",
+        "correct": "The area is large.",
+        "explain_vi": "Diện tích thường dùng 'large' hoặc 'small', không dùng 'long'."
+      }
+    ],
+    "grammar_patterns": [
+      "the area of + noun"
+    ]
+  },
+  {
+    "word": "volume",
+    "phonetic": "/ˈvɑːl.juːm/",
+    "meaning_vi": "thể tích",
+    "meaning_en": "the amount of space that something contains or fills",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The volume of the box is one cubic meter.",
+        "vi": "Thể tích của cái hộp là một mét khối."
+      }
+    ],
+    "word_family": [
+      "voluminous (adj)"
+    ],
+    "collocations": [
+      "volume of",
+      "high volume",
+      "low volume"
+    ],
+    "synonyms": [
+      "capacity",
+      "size"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Volume is used for weight.",
+        "correct": "Volume is used for space.",
+        "explain_vi": "Thể tích khác với trọng lượng."
+      }
+    ],
+    "grammar_patterns": [
+      "the volume of + noun"
+    ]
+  },
+  {
+    "word": "capacity",
+    "phonetic": "/kəˈpæs.ə.ti/",
+    "meaning_vi": "sức chứa, dung tích",
+    "meaning_en": "the maximum amount that something can contain",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The bottle has a capacity of one liter.",
+        "vi": "Chai có dung tích một lít."
+      }
+    ],
+    "word_family": [
+      "capable (adj)"
+    ],
+    "collocations": [
+      "capacity of",
+      "full capacity",
+      "seating capacity"
+    ],
+    "synonyms": [
+      "volume",
+      "size"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Capacity is how heavy something is.",
+        "correct": "Capacity is how much something can hold.",
+        "explain_vi": "Dung tích là sức chứa, không phải trọng lượng."
+      }
+    ],
+    "grammar_patterns": [
+      "a capacity of + number"
+    ]
+  },
+  {
+    "word": "temperature",
+    "phonetic": "/ˈtem.pər.ə.tʃər/",
+    "meaning_vi": "nhiệt độ",
+    "meaning_en": "a measure of how hot or cold something is",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The temperature today is 25 degrees.",
+        "vi": "Nhiệt độ hôm nay là 25 độ."
+      }
+    ],
+    "word_family": [
+      "temperate (adj)"
+    ],
+    "collocations": [
+      "temperature of",
+      "high temperature",
+      "low temperature",
+      "body temperature"
+    ],
+    "synonyms": [
+      "heat",
+      "warmth"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Temperature is hot.",
+        "correct": "The temperature is high.",
+        "explain_vi": "Không dùng 'temperature' và 'hot' cùng nhau."
+      }
+    ],
+    "grammar_patterns": [
+      "the temperature + verb"
+    ]
+  },
+  {
+    "word": "degree",
+    "phonetic": "/dɪˈɡriː/",
+    "meaning_vi": "độ (nhiệt độ, góc)",
+    "meaning_en": "a unit for measuring temperature or angles",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Water boils at 100 degrees Celsius.",
+        "vi": "Nước sôi ở 100 độ C."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "degree Celsius",
+      "degree Fahrenheit",
+      "90-degree angle"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Degree is used only for temperature.",
+        "correct": "Degree is also used for angles.",
+        "explain_vi": "Độ còn dùng cho góc, không chỉ nhiệt độ."
+      }
+    ],
+    "grammar_patterns": [
+      "number + degree(s) + unit"
+    ]
+  },
+  {
+    "word": "percent",
+    "phonetic": "/pərˈsent/",
+    "meaning_vi": "phần trăm",
+    "meaning_en": "one part in every hundred",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "50 percent of the students are girls.",
+        "vi": "50 phần trăm học sinh là nữ."
+      }
+    ],
+    "word_family": [
+      "percentage (n)"
+    ],
+    "collocations": [
+      "percent of",
+      "100 percent",
+      "percent increase"
+    ],
+    "synonyms": [
+      "percentage"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Percent is a number.",
+        "correct": "Percent is a ratio.",
+        "explain_vi": "Phần trăm là tỉ lệ, không phải số cụ thể."
+      }
+    ],
+    "grammar_patterns": [
+      "number + percent + of + noun"
+    ]
+  },
+  {
+    "word": "total",
+    "phonetic": "/ˈtoʊ.t̬əl/",
+    "meaning_vi": "tổng số",
+    "meaning_en": "the whole amount or number of something",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The total is 100 dollars.",
+        "vi": "Tổng số là 100 đô la."
+      }
+    ],
+    "word_family": [
+      "totally (adv)"
+    ],
+    "collocations": [
+      "total of",
+      "in total",
+      "grand total"
+    ],
+    "synonyms": [
+      "sum",
+      "whole"
+    ],
+    "antonyms": [
+      "partial"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Total is 100 dollars.",
+        "correct": "The total is 100 dollars.",
+        "explain_vi": "Cần mạo từ 'the' trước 'total'."
+      }
+    ],
+    "grammar_patterns": [
+      "the total + verb"
+    ]
+  },
+  {
+    "word": "inch",
+    "phonetic": "/ɪntʃ/",
+    "meaning_vi": "inch (đơn vị đo chiều dài)",
+    "meaning_en": "a unit of length equal to 1/12 of a foot",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The screen is 15 inches wide.",
+        "vi": "Màn hình rộng 15 inch."
+      }
+    ],
+    "word_family": [
+      "inches (pl)"
+    ],
+    "collocations": [
+      "inch by inch",
+      "every inch"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I need 5 inchs.",
+        "correct": "I need 5 inches.",
+        "explain_vi": "Số nhiều của inch là inches, không thêm s đơn giản."
+      }
+    ],
+    "grammar_patterns": [
+      "number + inches"
+    ]
+  },
+  {
+    "word": "foot",
+    "phonetic": "/fʊt/",
+    "meaning_vi": "foot (đơn vị đo chiều dài, ~30.48 cm)",
+    "meaning_en": "a unit of length equal to 12 inches",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The table is 3 feet long.",
+        "vi": "Cái bàn dài 3 feet."
+      }
+    ],
+    "word_family": [
+      "feet (pl)"
+    ],
+    "collocations": [
+      "square foot",
+      "foot tall"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "It is 5 foots.",
+        "correct": "It is 5 feet.",
+        "explain_vi": "Số nhiều của foot là feet, không phải foots."
+      }
+    ],
+    "grammar_patterns": [
+      "number + feet"
+    ]
+  },
+  {
+    "word": "yard",
+    "phonetic": "/jɑːrd/",
+    "meaning_vi": "yard (đơn vị đo chiều dài, ~0.91 m)",
+    "meaning_en": "a unit of length equal to 3 feet",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The garden is 10 yards wide.",
+        "vi": "Khu vườn rộng 10 yard."
+      }
+    ],
+    "word_family": [
+      "yards (pl)"
+    ],
+    "collocations": [
+      "square yard",
+      "yard sale"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "It is 10 yard.",
+        "correct": "It is 10 yards.",
+        "explain_vi": "Khi có số nhiều, yard thêm s."
+      }
+    ],
+    "grammar_patterns": [
+      "number + yards"
+    ]
+  },
+  {
+    "word": "mile",
+    "phonetic": "/maɪl/",
+    "meaning_vi": "dặm (đơn vị đo khoảng cách, ~1.61 km)",
+    "meaning_en": "a unit of distance equal to 1,760 yards",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "It is 5 miles to the city.",
+        "vi": "Cách thành phố 5 dặm."
+      }
+    ],
+    "word_family": [
+      "miles (pl)"
+    ],
+    "collocations": [
+      "miles away",
+      "square mile"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "It is 5 mile.",
+        "correct": "It is 5 miles.",
+        "explain_vi": "Số nhiều của mile là miles."
+      }
+    ],
+    "grammar_patterns": [
+      "number + miles"
+    ]
+  },
+  {
+    "word": "pound",
+    "phonetic": "/paʊnd/",
+    "meaning_vi": "pound (đơn vị đo khối lượng, ~0.45 kg)",
+    "meaning_en": "a unit of weight equal to 16 ounces",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I bought 2 pounds of apples.",
+        "vi": "Tôi mua 2 pound táo."
+      }
+    ],
+    "word_family": [
+      "pounds (pl)"
+    ],
+    "collocations": [
+      "pound cake",
+      "pound of flesh"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I need 2 pound of sugar.",
+        "correct": "I need 2 pounds of sugar.",
+        "explain_vi": "Khi có số nhiều, pound thêm s."
+      }
+    ],
+    "grammar_patterns": [
+      "number + pounds of + noun"
+    ]
+  },
+  {
+    "word": "ounce",
+    "phonetic": "/aʊns/",
+    "meaning_vi": "ounce (đơn vị đo khối lượng, ~28.35 g)",
+    "meaning_en": "a unit of weight equal to 1/16 of a pound",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Add 8 ounces of milk.",
+        "vi": "Thêm 8 ounce sữa."
+      }
+    ],
+    "word_family": [
+      "ounces (pl)"
+    ],
+    "collocations": [
+      "fluid ounce",
+      "ounce of gold"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "8 ounce of milk",
+        "correct": "8 ounces of milk",
+        "explain_vi": "Số nhiều dùng ounces."
+      }
+    ],
+    "grammar_patterns": [
+      "number + ounces of + noun"
+    ]
+  },
+  {
+    "word": "gallon",
+    "phonetic": "/ˈɡæl.ən/",
+    "meaning_vi": "gallon (đơn vị đo thể tích, ~3.79 lít)",
+    "meaning_en": "a unit of volume for liquid, equal to 4 quarts",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The car holds 10 gallons of gas.",
+        "vi": "Xe chứa 10 gallon xăng."
+      }
+    ],
+    "word_family": [
+      "gallons (pl)"
+    ],
+    "collocations": [
+      "gallon of water",
+      "gallon jug"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "10 gallon of gas",
+        "correct": "10 gallons of gas",
+        "explain_vi": "Số nhiều dùng gallons."
+      }
+    ],
+    "grammar_patterns": [
+      "number + gallons of + noun"
+    ]
+  },
+  {
+    "word": "quart",
+    "phonetic": "/kwɔːrt/",
+    "meaning_vi": "quart (đơn vị đo thể tích, ~0.95 lít)",
+    "meaning_en": "a unit of volume, equal to 2 pints",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I need a quart of oil.",
+        "vi": "Tôi cần một quart dầu."
+      }
+    ],
+    "word_family": [
+      "quarts (pl)"
+    ],
+    "collocations": [
+      "quart of milk",
+      "quart jar"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "2 quart of milk",
+        "correct": "2 quarts of milk",
+        "explain_vi": "Số nhiều dùng quarts."
+      }
+    ],
+    "grammar_patterns": [
+      "number + quarts of + noun"
+    ]
+  },
+  {
+    "word": "pint",
+    "phonetic": "/paɪnt/",
+    "meaning_vi": "pint (đơn vị đo thể tích, ~0.47 lít)",
+    "meaning_en": "a unit of volume, equal to 2 cups",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She drank a pint of beer.",
+        "vi": "Cô ấy uống một pint bia."
+      }
+    ],
+    "word_family": [
+      "pints (pl)"
+    ],
+    "collocations": [
+      "pint of ice cream",
+      "pint glass"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "He drank 2 pint.",
+        "correct": "He drank 2 pints.",
+        "explain_vi": "Số nhiều dùng pints."
+      }
+    ],
+    "grammar_patterns": [
+      "number + pints of + noun"
+    ]
+  },
+  {
+    "word": "cup",
+    "phonetic": "/kʌp/",
+    "meaning_vi": "cốc (đơn vị đo thể tích, ~240 ml)",
+    "meaning_en": "a unit of volume used in cooking",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Add 2 cups of flour.",
+        "vi": "Thêm 2 cốc bột mì."
+      }
+    ],
+    "word_family": [
+      "cups (pl)"
+    ],
+    "collocations": [
+      "cup of tea",
+      "measuring cup"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "2 cup of flour",
+        "correct": "2 cups of flour",
+        "explain_vi": "Số nhiều dùng cups."
+      }
+    ],
+    "grammar_patterns": [
+      "number + cups of + noun"
+    ]
+  },
+  {
+    "word": "ton",
+    "phonetic": "/tʌn/",
+    "meaning_vi": "tấn (đơn vị đo khối lượng, ~907 kg hoặc 1000 kg)",
+    "meaning_en": "a unit of weight, equal to 2,000 pounds (US) or 1,000 kilograms (metric)",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The truck carries 5 tons of sand.",
+        "vi": "Xe tải chở 5 tấn cát."
+      }
+    ],
+    "word_family": [
+      "tons (pl)"
+    ],
+    "collocations": [
+      "ton of bricks",
+      "metric ton"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "5 ton of sand",
+        "correct": "5 tons of sand",
+        "explain_vi": "Số nhiều dùng tons."
+      }
+    ],
+    "grammar_patterns": [
+      "number + tons of + noun"
+    ]
+  },
+  {
+    "word": "gram",
+    "phonetic": "/ɡræm/",
+    "meaning_vi": "gam",
+    "meaning_en": "a unit of mass in the metric system",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "This letter weighs 20 grams.",
+        "vi": "Bức thư này nặng 20 gam."
+      }
+    ],
+    "word_family": [
+      "grams (pl)"
+    ],
+    "collocations": [
+      "gram of salt",
+      "kilogram"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "20 gram",
+        "correct": "20 grams",
+        "explain_vi": "Số nhiều dùng grams."
+      }
+    ],
+    "grammar_patterns": [
+      "number + grams"
+    ]
+  },
+  {
+    "word": "millimeter",
+    "phonetic": "/ˈmɪl.ɪ.miː.tər/",
+    "meaning_vi": "milimét",
+    "meaning_en": "a unit of length equal to one thousandth of a meter",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The paper is 0.1 millimeters thick.",
+        "vi": "Tờ giấy dày 0,1 milimét."
+      }
+    ],
+    "word_family": [
+      "millimeters (pl)"
+    ],
+    "collocations": [
+      "square millimeter",
+      "millimeter wave"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "0.1 millimeter",
+        "correct": "0.1 millimeters",
+        "explain_vi": "Số nhiều dùng millimeters."
+      }
+    ],
+    "grammar_patterns": [
+      "number + millimeters"
+    ]
+  },
+  {
+    "word": "kilometer",
+    "phonetic": "/kɪˈlɒm.ɪ.tər/",
+    "meaning_vi": "kilômét",
+    "meaning_en": "a unit of length equal to 1,000 meters",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The town is 10 kilometers away.",
+        "vi": "Thị trấn cách 10 kilômét."
+      }
+    ],
+    "word_family": [
+      "kilometers (pl)"
+    ],
+    "collocations": [
+      "kilometer per hour",
+      "square kilometer"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "10 kilometer",
+        "correct": "10 kilometers",
+        "explain_vi": "Số nhiều dùng kilometers."
+      }
+    ],
+    "grammar_patterns": [
+      "number + kilometers"
+    ]
+  },
+  {
+    "word": "milliliter",
+    "phonetic": "/ˈmɪl.ɪ.liː.tər/",
+    "meaning_vi": "mililít",
+    "meaning_en": "a unit of volume equal to one thousandth of a liter",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Add 5 milliliters of medicine.",
+        "vi": "Thêm 5 mililít thuốc."
+      }
+    ],
+    "word_family": [
+      "milliliters (pl)"
+    ],
+    "collocations": [
+      "milliliter of water",
+      "milliliter syringe"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "5 milliliter",
+        "correct": "5 milliliters",
+        "explain_vi": "Số nhiều dùng milliliters."
+      }
+    ],
+    "grammar_patterns": [
+      "number + milliliters"
+    ]
+  },
+  {
+    "word": "dozen",
+    "phonetic": "/ˈdʌz.ən/",
+    "meaning_vi": "tá (12 cái)",
+    "meaning_en": "a group of twelve things",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I bought a dozen eggs.",
+        "vi": "Tôi mua một tá trứng."
+      }
+    ],
+    "word_family": [
+      "dozens (pl)"
+    ],
+    "collocations": [
+      "half a dozen",
+      "dozens of"
+    ],
+    "synonyms": [
+      "twelve"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I bought 12 dozens eggs.",
+        "correct": "I bought a dozen eggs.",
+        "explain_vi": "Dozen là một tá, không thêm s khi có số đếm."
+      }
+    ],
+    "grammar_patterns": [
+      "a dozen + noun (plural)"
+    ]
+  },
+  {
+    "word": "hundred",
+    "phonetic": "/ˈhʌn.drəd/",
+    "meaning_vi": "trăm",
+    "meaning_en": "the number 100",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "There are a hundred people.",
+        "vi": "Có một trăm người."
+      }
+    ],
+    "word_family": [
+      "hundreds (pl)"
+    ],
+    "collocations": [
+      "hundreds of",
+      "one hundred"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "two hundreds",
+        "correct": "two hundred",
+        "explain_vi": "Khi có số đếm, hundred không thêm s."
+      }
+    ],
+    "grammar_patterns": [
+      "number + hundred"
+    ]
+  },
+  {
+    "word": "thousand",
+    "phonetic": "/ˈθaʊ.zənd/",
+    "meaning_vi": "nghìn",
+    "meaning_en": "the number 1,000",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The car cost ten thousand dollars.",
+        "vi": "Chiếc xe có giá mười nghìn đô la."
+      }
+    ],
+    "word_family": [
+      "thousands (pl)"
+    ],
+    "collocations": [
+      "thousands of",
+      "one thousand"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "two thousands",
+        "correct": "two thousand",
+        "explain_vi": "Khi có số đếm, thousand không thêm s."
+      }
+    ],
+    "grammar_patterns": [
+      "number + thousand"
+    ]
+  },
+  {
+    "word": "million",
+    "phonetic": "/ˈmɪl.jən/",
+    "meaning_vi": "triệu",
+    "meaning_en": "the number 1,000,000",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The city has a million people.",
+        "vi": "Thành phố có một triệu dân."
+      }
+    ],
+    "word_family": [
+      "millions (pl)"
+    ],
+    "collocations": [
+      "millions of",
+      "one million"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "two millions",
+        "correct": "two million",
+        "explain_vi": "Khi có số đếm, million không thêm s."
+      }
+    ],
+    "grammar_patterns": [
+      "number + million"
+    ]
+  },
+  {
+    "word": "billion",
+    "phonetic": "/ˈbɪl.jən/",
+    "meaning_vi": "tỷ",
+    "meaning_en": "the number 1,000,000,000",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The company is worth billions.",
+        "vi": "Công ty trị giá hàng tỷ đô la."
+      }
+    ],
+    "word_family": [
+      "billions (pl)"
+    ],
+    "collocations": [
+      "billions of",
+      "one billion"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "two billions",
+        "correct": "two billion",
+        "explain_vi": "Khi có số đếm, billion không thêm s."
+      }
+    ],
+    "grammar_patterns": [
+      "number + billion"
+    ]
+  }
+]

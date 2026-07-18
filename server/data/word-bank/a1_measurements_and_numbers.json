@@ -1,0 +1,1431 @@
+[
+  {
+    "word": "one",
+    "phonetic": "/wʌn/",
+    "meaning_vi": "một",
+    "meaning_en": "the number 1",
+    "pos": "number",
+    "examples": [
+      {
+        "en": "I have one book.",
+        "vi": "Tôi có một quyển sách."
+      }
+    ],
+    "word_family": [
+      "first (adj)",
+      "once (adv)"
+    ],
+    "collocations": [
+      "one apple",
+      "one hour",
+      "one more"
+    ],
+    "synonyms": [
+      "single"
+    ],
+    "antonyms": [
+      "many"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "a one",
+        "correct": "one",
+        "explain_vi": "Không dùng 'a' trước 'one' khi đếm"
+      }
+    ],
+    "grammar_patterns": [
+      "one + noun (singular)"
+    ]
+  },
+  {
+    "word": "two",
+    "phonetic": "/tuː/",
+    "meaning_vi": "hai",
+    "meaning_en": "the number 2",
+    "pos": "number",
+    "examples": [
+      {
+        "en": "I have two cats.",
+        "vi": "Tôi có hai con mèo."
+      }
+    ],
+    "word_family": [
+      "second (adj)",
+      "twice (adv)"
+    ],
+    "collocations": [
+      "two days",
+      "two people",
+      "two times"
+    ],
+    "synonyms": [
+      "double"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "second",
+        "correct": "two",
+        "explain_vi": "Không nhầm 'two' (số 2) với 'second' (thứ hai)"
+      }
+    ],
+    "grammar_patterns": [
+      "two + noun (plural)"
+    ]
+  },
+  {
+    "word": "three",
+    "phonetic": "/θriː/",
+    "meaning_vi": "ba",
+    "meaning_en": "the number 3",
+    "pos": "number",
+    "examples": [
+      {
+        "en": "There are three chairs.",
+        "vi": "Có ba cái ghế."
+      }
+    ],
+    "word_family": [
+      "third (adj)",
+      "threefold (adj)"
+    ],
+    "collocations": [
+      "three times",
+      "three years",
+      "three friends"
+    ],
+    "synonyms": [
+      "triple"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "tree",
+        "correct": "three",
+        "explain_vi": "Phát âm /θ/ khác /t/; 'three' không phải 'tree'"
+      }
+    ],
+    "grammar_patterns": [
+      "three + noun (plural)"
+    ]
+  },
+  {
+    "word": "four",
+    "phonetic": "/fɔːr/",
+    "meaning_vi": "bốn",
+    "meaning_en": "the number 4",
+    "pos": "number",
+    "examples": [
+      {
+        "en": "I have four apples.",
+        "vi": "Tôi có bốn quả táo."
+      }
+    ],
+    "word_family": [
+      "fourth (adj)",
+      "fourteen (num)"
+    ],
+    "collocations": [
+      "four seasons",
+      "four legs",
+      "four times"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "for",
+        "correct": "four",
+        "explain_vi": "Không nhầm 'four' (số 4) với 'for' (cho)"
+      }
+    ],
+    "grammar_patterns": [
+      "four + noun (plural)"
+    ]
+  },
+  {
+    "word": "five",
+    "phonetic": "/faɪv/",
+    "meaning_vi": "năm",
+    "meaning_en": "the number 5",
+    "pos": "number",
+    "examples": [
+      {
+        "en": "I have five fingers.",
+        "vi": "Tôi có năm ngón tay."
+      }
+    ],
+    "word_family": [
+      "fifth (adj)",
+      "fifteen (num)"
+    ],
+    "collocations": [
+      "five dollars",
+      "five minutes",
+      "five people"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "fife",
+        "correct": "five",
+        "explain_vi": "Phát âm /v/ cuối từ, không phải /f/"
+      }
+    ],
+    "grammar_patterns": [
+      "five + noun (plural)"
+    ]
+  },
+  {
+    "word": "ten",
+    "phonetic": "/ten/",
+    "meaning_vi": "mười",
+    "meaning_en": "the number 10",
+    "pos": "number",
+    "examples": [
+      {
+        "en": "There are ten students.",
+        "vi": "Có mười học sinh."
+      }
+    ],
+    "word_family": [
+      "tenth (adj)",
+      "tenfold (adj)"
+    ],
+    "collocations": [
+      "ten o'clock",
+      "ten dollars",
+      "ten times"
+    ],
+    "synonyms": [
+      "decade"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "ten of",
+        "correct": "ten",
+        "explain_vi": "Không thêm 'of' sau số đếm trực tiếp"
+      }
+    ],
+    "grammar_patterns": [
+      "ten + noun (plural)"
+    ]
+  },
+  {
+    "word": "hundred",
+    "phonetic": "/ˈhʌn.drəd/",
+    "meaning_vi": "trăm",
+    "meaning_en": "the number 100",
+    "pos": "number",
+    "examples": [
+      {
+        "en": "One hundred people came.",
+        "vi": "Một trăm người đã đến."
+      }
+    ],
+    "word_family": [
+      "hundredth (adj)",
+      "hundreds (n)"
+    ],
+    "collocations": [
+      "a hundred",
+      "two hundred",
+      "hundreds of"
+    ],
+    "synonyms": [
+      "century"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "hundreds books",
+        "correct": "hundreds of books",
+        "explain_vi": "Dùng 'hundreds of' khi không có số cụ thể"
+      }
+    ],
+    "grammar_patterns": [
+      "number + hundred + noun (plural)"
+    ]
+  },
+  {
+    "word": "number",
+    "phonetic": "/ˈnʌm.bər/",
+    "meaning_vi": "số",
+    "meaning_en": "a word or symbol for a quantity",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "What is your phone number?",
+        "vi": "Số điện thoại của bạn là gì?"
+      }
+    ],
+    "word_family": [
+      "numerical (adj)",
+      "numberless (adj)"
+    ],
+    "collocations": [
+      "phone number",
+      "room number",
+      "number one"
+    ],
+    "synonyms": [
+      "digit",
+      "numeral"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "number of people is",
+        "correct": "number of people are",
+        "explain_vi": "Số nhiều: 'a number of' + danh từ số nhiều + động từ số nhiều"
+      }
+    ],
+    "grammar_patterns": [
+      "a number of + noun (plural) + verb (plural)"
+    ]
+  },
+  {
+    "word": "zero",
+    "phonetic": "/ˈzɪə.roʊ/",
+    "meaning_vi": "số không",
+    "meaning_en": "the number 0",
+    "pos": "number",
+    "examples": [
+      {
+        "en": "The temperature is zero degrees.",
+        "vi": "Nhiệt độ là không độ."
+      }
+    ],
+    "word_family": [
+      "zeroth (adj)",
+      "zeroing (v)"
+    ],
+    "collocations": [
+      "zero degrees",
+      "zero tolerance",
+      "zero hour"
+    ],
+    "synonyms": [
+      "nought",
+      "nil"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "zero point",
+        "correct": "zero",
+        "explain_vi": "Không thêm 'point' khi chỉ số 0"
+      }
+    ],
+    "grammar_patterns": [
+      "zero + noun (plural or uncountable)"
+    ]
+  },
+  {
+    "word": "first",
+    "phonetic": "/fɜːrst/",
+    "meaning_vi": "thứ nhất",
+    "meaning_en": "coming before all others in time or order",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "This is my first time.",
+        "vi": "Đây là lần đầu tiên của tôi."
+      }
+    ],
+    "word_family": [
+      "firstly (adv)",
+      "firstborn (n)"
+    ],
+    "collocations": [
+      "first time",
+      "first day",
+      "first place"
+    ],
+    "synonyms": [
+      "initial",
+      "primary"
+    ],
+    "antonyms": [
+      "last"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "the one",
+        "correct": "the first",
+        "explain_vi": "Dùng 'first' thay vì 'one' cho thứ tự"
+      }
+    ],
+    "grammar_patterns": [
+      "the + first + noun"
+    ]
+  },
+  {
+    "word": "second",
+    "phonetic": "/ˈsek.ənd/",
+    "meaning_vi": "thứ hai",
+    "meaning_en": "coming after the first in time or order",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "He is my second son.",
+        "vi": "Anh ấy là con trai thứ hai của tôi."
+      }
+    ],
+    "word_family": [
+      "secondly (adv)",
+      "secondhand (adj)"
+    ],
+    "collocations": [
+      "second time",
+      "second place",
+      "second chance"
+    ],
+    "synonyms": [
+      "next",
+      "following"
+    ],
+    "antonyms": [
+      "first"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "the two",
+        "correct": "the second",
+        "explain_vi": "Dùng 'second' thay vì 'two' cho thứ tự"
+      }
+    ],
+    "grammar_patterns": [
+      "the + second + noun"
+    ]
+  },
+  {
+    "word": "half",
+    "phonetic": "/hæf/",
+    "meaning_vi": "một nửa",
+    "meaning_en": "either of two equal or corresponding parts",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Half of the cake is gone.",
+        "vi": "Một nửa cái bánh đã hết."
+      }
+    ],
+    "word_family": [
+      "halve (v)",
+      "halfway (adv)"
+    ],
+    "collocations": [
+      "half an hour",
+      "half price",
+      "half of them"
+    ],
+    "synonyms": [
+      "semi-",
+      "partial"
+    ],
+    "antonyms": [
+      "whole"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "a half of",
+        "correct": "half of",
+        "explain_vi": "Không dùng 'a' trước 'half of'"
+      }
+    ],
+    "grammar_patterns": [
+      "half of + noun (singular/plural) + verb (singular/plural)"
+    ]
+  },
+  {
+    "word": "more",
+    "phonetic": "/mɔːr/",
+    "meaning_vi": "nhiều hơn",
+    "meaning_en": "a greater amount or number",
+    "pos": "determiner",
+    "examples": [
+      {
+        "en": "I need more water.",
+        "vi": "Tôi cần thêm nước."
+      }
+    ],
+    "word_family": [
+      "most (adj)",
+      "moreover (adv)"
+    ],
+    "collocations": [
+      "more than",
+      "more time",
+      "more money"
+    ],
+    "synonyms": [
+      "additional",
+      "extra"
+    ],
+    "antonyms": [
+      "less"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "more better",
+        "correct": "better",
+        "explain_vi": "Không dùng 'more' với so sánh hơn bất quy tắc"
+      }
+    ],
+    "grammar_patterns": [
+      "more + noun (uncountable/plural)"
+    ]
+  },
+  {
+    "word": "less",
+    "phonetic": "/les/",
+    "meaning_vi": "ít hơn",
+    "meaning_en": "a smaller amount or number",
+    "pos": "determiner",
+    "examples": [
+      {
+        "en": "I have less money than you.",
+        "vi": "Tôi có ít tiền hơn bạn."
+      }
+    ],
+    "word_family": [
+      "least (adj)",
+      "lessen (v)"
+    ],
+    "collocations": [
+      "less than",
+      "less time",
+      "less expensive"
+    ],
+    "synonyms": [
+      "fewer",
+      "smaller"
+    ],
+    "antonyms": [
+      "more"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "less people",
+        "correct": "fewer people",
+        "explain_vi": "Dùng 'fewer' cho danh từ đếm được"
+      }
+    ],
+    "grammar_patterns": [
+      "less + noun (uncountable)"
+    ]
+  },
+  {
+    "word": "many",
+    "phonetic": "/ˈmen.i/",
+    "meaning_vi": "nhiều",
+    "meaning_en": "a large number of",
+    "pos": "determiner",
+    "examples": [
+      {
+        "en": "How many books do you have?",
+        "vi": "Bạn có bao nhiêu quyển sách?"
+      }
+    ],
+    "word_family": [
+      "manyfold (adj)",
+      "manyness (n)"
+    ],
+    "collocations": [
+      "many people",
+      "many times",
+      "many years"
+    ],
+    "synonyms": [
+      "numerous",
+      "countless"
+    ],
+    "antonyms": [
+      "few"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "many water",
+        "correct": "much water",
+        "explain_vi": "Dùng 'much' cho danh từ không đếm được"
+      }
+    ],
+    "grammar_patterns": [
+      "many + noun (plural)"
+    ]
+  },
+  {
+    "word": "much",
+    "phonetic": "/mʌtʃ/",
+    "meaning_vi": "nhiều",
+    "meaning_en": "a large amount of",
+    "pos": "determiner",
+    "examples": [
+      {
+        "en": "I don't have much time.",
+        "vi": "Tôi không có nhiều thời gian."
+      }
+    ],
+    "word_family": [
+      "muchness (n)",
+      "overmuch (adj)"
+    ],
+    "collocations": [
+      "too much",
+      "so much",
+      "how much"
+    ],
+    "synonyms": [
+      "a lot of",
+      "plenty of"
+    ],
+    "antonyms": [
+      "little"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "much books",
+        "correct": "many books",
+        "explain_vi": "Dùng 'many' cho danh từ đếm được"
+      }
+    ],
+    "grammar_patterns": [
+      "much + noun (uncountable)"
+    ]
+  },
+  {
+    "word": "some",
+    "phonetic": "/sʌm/",
+    "meaning_vi": "một vài, một ít",
+    "meaning_en": "an unspecified amount or number",
+    "pos": "determiner",
+    "examples": [
+      {
+        "en": "I have some friends.",
+        "vi": "Tôi có một vài người bạn."
+      }
+    ],
+    "word_family": [
+      "somebody (pron)",
+      "something (pron)"
+    ],
+    "collocations": [
+      "some people",
+      "some water",
+      "some time"
+    ],
+    "synonyms": [
+      "a few",
+      "a little"
+    ],
+    "antonyms": [
+      "no",
+      "none"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "some of water",
+        "correct": "some water",
+        "explain_vi": "Không dùng 'of' sau 'some' trực tiếp trước danh từ"
+      }
+    ],
+    "grammar_patterns": [
+      "some + noun (plural/uncountable)"
+    ]
+  },
+  {
+    "word": "any",
+    "phonetic": "/ˈen.i/",
+    "meaning_vi": "bất kỳ, một chút nào",
+    "meaning_en": "one or some of a thing, no matter which",
+    "pos": "determiner",
+    "examples": [
+      {
+        "en": "Do you have any questions?",
+        "vi": "Bạn có câu hỏi nào không?"
+      }
+    ],
+    "word_family": [
+      "anybody (pron)",
+      "anything (pron)"
+    ],
+    "collocations": [
+      "any more",
+      "any time",
+      "anyone else"
+    ],
+    "synonyms": [
+      "some (in questions)"
+    ],
+    "antonyms": [
+      "none"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I have any money",
+        "correct": "I have some money",
+        "explain_vi": "Dùng 'some' trong câu khẳng định, 'any' trong phủ định và nghi vấn"
+      }
+    ],
+    "grammar_patterns": [
+      "any + noun (plural/uncountable) in questions/negatives"
+    ]
+  },
+  {
+    "word": "few",
+    "phonetic": "/fjuː/",
+    "meaning_vi": "ít, vài",
+    "meaning_en": "a small number of",
+    "pos": "determiner",
+    "examples": [
+      {
+        "en": "I have a few friends.",
+        "vi": "Tôi có một vài người bạn."
+      }
+    ],
+    "word_family": [
+      "fewer (adj)",
+      "fewness (n)"
+    ],
+    "collocations": [
+      "a few",
+      "very few",
+      "few people"
+    ],
+    "synonyms": [
+      "a small number of",
+      "not many"
+    ],
+    "antonyms": [
+      "many"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "a few water",
+        "correct": "a little water",
+        "explain_vi": "Dùng 'a few' cho danh từ đếm được, 'a little' cho không đếm được"
+      }
+    ],
+    "grammar_patterns": [
+      "(a) few + noun (plural)"
+    ]
+  },
+  {
+    "word": "little",
+    "phonetic": "/ˈlɪt.əl/",
+    "meaning_vi": "ít, một chút",
+    "meaning_en": "a small amount of",
+    "pos": "determiner",
+    "examples": [
+      {
+        "en": "I have a little money.",
+        "vi": "Tôi có một chút tiền."
+      }
+    ],
+    "word_family": [
+      "less (adj)",
+      "littleness (n)"
+    ],
+    "collocations": [
+      "a little",
+      "very little",
+      "little time"
+    ],
+    "synonyms": [
+      "a small amount of",
+      "not much"
+    ],
+    "antonyms": [
+      "much"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "a little books",
+        "correct": "a few books",
+        "explain_vi": "Dùng 'little' cho danh từ không đếm được"
+      }
+    ],
+    "grammar_patterns": [
+      "(a) little + noun (uncountable)"
+    ]
+  },
+  {
+    "word": "six",
+    "phonetic": "/sɪks/",
+    "meaning_vi": "sáu",
+    "meaning_en": "the number 6",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "There are six apples.",
+        "vi": "Có sáu quả táo."
+      }
+    ],
+    "word_family": [
+      "sixth (adj)",
+      "sixteen (num)",
+      "sixty (num)"
+    ],
+    "collocations": [
+      "six people",
+      "six o'clock",
+      "six days"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "six apple",
+        "correct": "six apples",
+        "explain_vi": "Nhớ thêm 's' cho danh từ số nhiều"
+      }
+    ],
+    "grammar_patterns": [
+      "six + plural noun"
+    ]
+  },
+  {
+    "word": "seven",
+    "phonetic": "/ˈsev.ən/",
+    "meaning_vi": "bảy",
+    "meaning_en": "the number 7",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "There are seven days in a week.",
+        "vi": "Có bảy ngày trong một tuần."
+      }
+    ],
+    "word_family": [
+      "seventh (adj)",
+      "seventeen (num)",
+      "seventy (num)"
+    ],
+    "collocations": [
+      "seven days",
+      "seven people",
+      "seven o'clock"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "seven day",
+        "correct": "seven days",
+        "explain_vi": "Nhớ thêm 's' cho danh từ số nhiều"
+      }
+    ],
+    "grammar_patterns": [
+      "seven + plural noun"
+    ]
+  },
+  {
+    "word": "eight",
+    "phonetic": "/eɪt/",
+    "meaning_vi": "tám",
+    "meaning_en": "the number 8",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I have eight books.",
+        "vi": "Tôi có tám cuốn sách."
+      }
+    ],
+    "word_family": [
+      "eighth (adj)",
+      "eighteen (num)",
+      "eighty (num)"
+    ],
+    "collocations": [
+      "eight hours",
+      "eight students",
+      "eight dollars"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "eight book",
+        "correct": "eight books",
+        "explain_vi": "Nhớ thêm 's' cho danh từ số nhiều"
+      }
+    ],
+    "grammar_patterns": [
+      "eight + plural noun"
+    ]
+  },
+  {
+    "word": "nine",
+    "phonetic": "/naɪn/",
+    "meaning_vi": "chín",
+    "meaning_en": "the number 9",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She has nine cats.",
+        "vi": "Cô ấy có chín con mèo."
+      }
+    ],
+    "word_family": [
+      "ninth (adj)",
+      "nineteen (num)",
+      "ninety (num)"
+    ],
+    "collocations": [
+      "nine o'clock",
+      "nine people",
+      "nine months"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "nine cat",
+        "correct": "nine cats",
+        "explain_vi": "Nhớ thêm 's' cho danh từ số nhiều"
+      }
+    ],
+    "grammar_patterns": [
+      "nine + plural noun"
+    ]
+  },
+  {
+    "word": "twenty",
+    "phonetic": "/ˈtwen.ti/",
+    "meaning_vi": "hai mươi",
+    "meaning_en": "the number 20",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "There are twenty students.",
+        "vi": "Có hai mươi học sinh."
+      }
+    ],
+    "word_family": [
+      "twentieth (adj)"
+    ],
+    "collocations": [
+      "twenty dollars",
+      "twenty minutes",
+      "twenty years"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "twenty student",
+        "correct": "twenty students",
+        "explain_vi": "Nhớ thêm 's' cho danh từ số nhiều"
+      }
+    ],
+    "grammar_patterns": [
+      "twenty + plural noun"
+    ]
+  },
+  {
+    "word": "thirty",
+    "phonetic": "/ˈθɜː.ti/",
+    "meaning_vi": "ba mươi",
+    "meaning_en": "the number 30",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "He is thirty years old.",
+        "vi": "Anh ấy ba mươi tuổi."
+      }
+    ],
+    "word_family": [
+      "thirtieth (adj)"
+    ],
+    "collocations": [
+      "thirty days",
+      "thirty people",
+      "thirty dollars"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "thirty year old",
+        "correct": "thirty years old",
+        "explain_vi": "Nhớ dùng 'years' số nhiều"
+      }
+    ],
+    "grammar_patterns": [
+      "thirty + plural noun"
+    ]
+  },
+  {
+    "word": "forty",
+    "phonetic": "/ˈfɔː.ti/",
+    "meaning_vi": "bốn mươi",
+    "meaning_en": "the number 40",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "There are forty chairs.",
+        "vi": "Có bốn mươi cái ghế."
+      }
+    ],
+    "word_family": [
+      "fortieth (adj)"
+    ],
+    "collocations": [
+      "forty hours",
+      "forty students",
+      "forty dollars"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "forty chair",
+        "correct": "forty chairs",
+        "explain_vi": "Nhớ thêm 's' cho danh từ số nhiều"
+      }
+    ],
+    "grammar_patterns": [
+      "forty + plural noun"
+    ]
+  },
+  {
+    "word": "fifty",
+    "phonetic": "/ˈfɪf.ti/",
+    "meaning_vi": "năm mươi",
+    "meaning_en": "the number 50",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I have fifty dollars.",
+        "vi": "Tôi có năm mươi đô la."
+      }
+    ],
+    "word_family": [
+      "fiftieth (adj)"
+    ],
+    "collocations": [
+      "fifty cents",
+      "fifty people",
+      "fifty years"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "fifty dollar",
+        "correct": "fifty dollars",
+        "explain_vi": "Nhớ thêm 's' cho danh từ số nhiều"
+      }
+    ],
+    "grammar_patterns": [
+      "fifty + plural noun"
+    ]
+  },
+  {
+    "word": "sixty",
+    "phonetic": "/ˈsɪks.ti/",
+    "meaning_vi": "sáu mươi",
+    "meaning_en": "the number 60",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "There are sixty minutes in an hour.",
+        "vi": "Có sáu mươi phút trong một giờ."
+      }
+    ],
+    "word_family": [
+      "sixtieth (adj)"
+    ],
+    "collocations": [
+      "sixty seconds",
+      "sixty people",
+      "sixty dollars"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "sixty minute",
+        "correct": "sixty minutes",
+        "explain_vi": "Nhớ thêm 's' cho danh từ số nhiều"
+      }
+    ],
+    "grammar_patterns": [
+      "sixty + plural noun"
+    ]
+  },
+  {
+    "word": "seventy",
+    "phonetic": "/ˈsev.ən.ti/",
+    "meaning_vi": "bảy mươi",
+    "meaning_en": "the number 70",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "He is seventy years old.",
+        "vi": "Ông ấy bảy mươi tuổi."
+      }
+    ],
+    "word_family": [
+      "seventieth (adj)"
+    ],
+    "collocations": [
+      "seventy years",
+      "seventy people",
+      "seventy dollars"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "seventy year old",
+        "correct": "seventy years old",
+        "explain_vi": "Nhớ dùng 'years' số nhiều"
+      }
+    ],
+    "grammar_patterns": [
+      "seventy + plural noun"
+    ]
+  },
+  {
+    "word": "eighty",
+    "phonetic": "/ˈeɪ.ti/",
+    "meaning_vi": "tám mươi",
+    "meaning_en": "the number 80",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "There are eighty pages.",
+        "vi": "Có tám mươi trang."
+      }
+    ],
+    "word_family": [
+      "eightieth (adj)"
+    ],
+    "collocations": [
+      "eighty dollars",
+      "eighty people",
+      "eighty years"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "eighty page",
+        "correct": "eighty pages",
+        "explain_vi": "Nhớ thêm 's' cho danh từ số nhiều"
+      }
+    ],
+    "grammar_patterns": [
+      "eighty + plural noun"
+    ]
+  },
+  {
+    "word": "ninety",
+    "phonetic": "/ˈnaɪn.ti/",
+    "meaning_vi": "chín mươi",
+    "meaning_en": "the number 90",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She is ninety years old.",
+        "vi": "Bà ấy chín mươi tuổi."
+      }
+    ],
+    "word_family": [
+      "ninetieth (adj)"
+    ],
+    "collocations": [
+      "ninety dollars",
+      "ninety people",
+      "ninety minutes"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "ninety year old",
+        "correct": "ninety years old",
+        "explain_vi": "Nhớ dùng 'years' số nhiều"
+      }
+    ],
+    "grammar_patterns": [
+      "ninety + plural noun"
+    ]
+  },
+  {
+    "word": "thousand",
+    "phonetic": "/ˈθaʊ.zənd/",
+    "meaning_vi": "nghìn",
+    "meaning_en": "the number 1,000",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "There are a thousand people.",
+        "vi": "Có một nghìn người."
+      }
+    ],
+    "word_family": [
+      "thousands (pl)"
+    ],
+    "collocations": [
+      "a thousand",
+      "thousands of",
+      "one thousand"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "two thousands",
+        "correct": "two thousand",
+        "explain_vi": "Không thêm 's' khi có số đếm"
+      }
+    ],
+    "grammar_patterns": [
+      "number + thousand (+ noun)"
+    ]
+  },
+  {
+    "word": "million",
+    "phonetic": "/ˈmɪl.jən/",
+    "meaning_vi": "triệu",
+    "meaning_en": "the number 1,000,000",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "It costs a million dollars.",
+        "vi": "Nó có giá một triệu đô la."
+      }
+    ],
+    "word_family": [
+      "millions (pl)"
+    ],
+    "collocations": [
+      "a million",
+      "millions of",
+      "one million"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "two millions",
+        "correct": "two million",
+        "explain_vi": "Không thêm 's' khi có số đếm"
+      }
+    ],
+    "grammar_patterns": [
+      "number + million (+ noun)"
+    ]
+  },
+  {
+    "word": "all",
+    "phonetic": "/ɔːl/",
+    "meaning_vi": "tất cả",
+    "meaning_en": "the whole number or amount",
+    "pos": "determiner",
+    "examples": [
+      {
+        "en": "All students are here.",
+        "vi": "Tất cả học sinh đều có mặt."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "all of",
+      "all the",
+      "all day"
+    ],
+    "synonyms": [
+      "every"
+    ],
+    "antonyms": [
+      "none"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "All student is here",
+        "correct": "All students are here",
+        "explain_vi": "Sau 'all' dùng danh từ số nhiều và động từ số nhiều"
+      }
+    ],
+    "grammar_patterns": [
+      "all + plural noun + plural verb"
+    ]
+  },
+  {
+    "word": "every",
+    "phonetic": "/ˈev.ri/",
+    "meaning_vi": "mỗi",
+    "meaning_en": "each one of a group",
+    "pos": "determiner",
+    "examples": [
+      {
+        "en": "Every student has a book.",
+        "vi": "Mỗi học sinh có một cuốn sách."
+      }
+    ],
+    "word_family": [
+      "everyone (pron)",
+      "everything (pron)"
+    ],
+    "collocations": [
+      "every day",
+      "every week",
+      "every person"
+    ],
+    "synonyms": [
+      "each"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Every students have a book",
+        "correct": "Every student has a book",
+        "explain_vi": "Sau 'every' dùng danh từ số ít và động từ số ít"
+      }
+    ],
+    "grammar_patterns": [
+      "every + singular noun + singular verb"
+    ]
+  },
+  {
+    "word": "both",
+    "phonetic": "/boʊθ/",
+    "meaning_vi": "cả hai",
+    "meaning_en": "the two; the one as well as the other",
+    "pos": "determiner",
+    "examples": [
+      {
+        "en": "Both books are interesting.",
+        "vi": "Cả hai cuốn sách đều thú vị."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "both of",
+      "both the",
+      "both ... and ..."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "neither"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Both of book is interesting",
+        "correct": "Both books are interesting",
+        "explain_vi": "Sau 'both' dùng danh từ số nhiều và động từ số nhiều"
+      }
+    ],
+    "grammar_patterns": [
+      "both + plural noun + plural verb"
+    ]
+  },
+  {
+    "word": "each",
+    "phonetic": "/iːtʃ/",
+    "meaning_vi": "mỗi",
+    "meaning_en": "every one of two or more people or things",
+    "pos": "determiner",
+    "examples": [
+      {
+        "en": "Each student has a pencil.",
+        "vi": "Mỗi học sinh có một cây bút chì."
+      }
+    ],
+    "word_family": [
+      "each other (phrase)"
+    ],
+    "collocations": [
+      "each of",
+      "each one",
+      "each day"
+    ],
+    "synonyms": [
+      "every"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Each students have a pencil",
+        "correct": "Each student has a pencil",
+        "explain_vi": "Sau 'each' dùng danh từ số ít và động từ số ít"
+      }
+    ],
+    "grammar_patterns": [
+      "each + singular noun + singular verb"
+    ]
+  },
+  {
+    "word": "enough",
+    "phonetic": "/ɪˈnʌf/",
+    "meaning_vi": "đủ",
+    "meaning_en": "as much or as many as needed",
+    "pos": "determiner",
+    "examples": [
+      {
+        "en": "We have enough chairs.",
+        "vi": "Chúng tôi có đủ ghế."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "enough + noun",
+      "adjective + enough",
+      "enough to"
+    ],
+    "synonyms": [
+      "sufficient"
+    ],
+    "antonyms": [
+      "insufficient"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "We have chairs enough",
+        "correct": "We have enough chairs",
+        "explain_vi": "Đặt 'enough' trước danh từ"
+      }
+    ],
+    "grammar_patterns": [
+      "enough + noun"
+    ]
+  },
+  {
+    "word": "how many",
+    "phonetic": "/haʊ ˈmen.i/",
+    "meaning_vi": "bao nhiêu (số lượng)",
+    "meaning_en": "used to ask about the number of something",
+    "pos": "phrase",
+    "examples": [
+      {
+        "en": "How many apples do you have?",
+        "vi": "Bạn có bao nhiêu quả táo?"
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "how many + noun",
+      "how many times"
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "how much"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "How many apple you have?",
+        "correct": "How many apples do you have?",
+        "explain_vi": "Nhớ dùng danh từ số nhiều và trợ động từ 'do'"
+      }
+    ],
+    "grammar_patterns": [
+      "How many + plural noun + do/does + subject + have?"
+    ]
+  }
+]

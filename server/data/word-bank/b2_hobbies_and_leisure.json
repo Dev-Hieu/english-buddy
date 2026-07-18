@@ -1,0 +1,3064 @@
+[
+  {
+    "word": "hobby",
+    "phonetic": "/ˈhɒb.i/",
+    "meaning_vi": "sở thích",
+    "meaning_en": "an activity done regularly in one's leisure time for pleasure",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "My main hobby is photography.",
+        "vi": "Sở thích chính của tôi là nhiếp ảnh."
+      }
+    ],
+    "word_family": [
+      "hobbyist (n)"
+    ],
+    "collocations": [
+      "pursue a hobby",
+      "take up a hobby",
+      "indulge in a hobby"
+    ],
+    "synonyms": [
+      "pastime",
+      "leisure activity"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have a hobby is reading.",
+        "correct": "My hobby is reading.",
+        "explain_vi": "Không dùng 'have' và 'is' cùng nhau; dùng 'My hobby is...'"
+      }
+    ],
+    "grammar_patterns": [
+      "possessive + hobby + be + noun/gerund"
+    ]
+  },
+  {
+    "word": "leisure",
+    "phonetic": "/ˈleʒ.ər/",
+    "meaning_vi": "thời gian rảnh rỗi",
+    "meaning_en": "time when one is not working or occupied; free time",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I enjoy reading in my leisure time.",
+        "vi": "Tôi thích đọc s��ch vào thời gian rảnh."
+      }
+    ],
+    "word_family": [
+      "leisurely (adj/adv)"
+    ],
+    "collocations": [
+      "leisure time",
+      "leisure activities",
+      "at leisure"
+    ],
+    "synonyms": [
+      "free time",
+      "spare time"
+    ],
+    "antonyms": [
+      "work"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I have leisure.",
+        "correct": "I have free time.",
+        "explain_vi": "'Leisure' thường dùng trong cụm 'leisure time' hoặc 'at leisure', không dùng một mình để chỉ thời gian rảnh."
+      }
+    ],
+    "grammar_patterns": [
+      "in one's leisure time",
+      "at leisure"
+    ]
+  },
+  {
+    "word": "pastime",
+    "phonetic": "/ˈpɑːs.taɪm/",
+    "meaning_vi": "trò tiêu khiển",
+    "meaning_en": "an activity that someone does regularly for enjoyment rather than work",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Gardening is a popular pastime among the elderly.",
+        "vi": "Làm vườn là trò tiêu khiển phổ biến ở người cao tuổi."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "favorite pastime",
+      "popular pastime",
+      "leisure pastime"
+    ],
+    "synonyms": [
+      "hobby",
+      "recreation"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I do pastime.",
+        "correct": "I have a pastime.",
+        "explain_vi": "Cần dùng mạo từ 'a' trước 'pastime'."
+      }
+    ],
+    "grammar_patterns": [
+      "a + pastime",
+      "pastime + of + noun"
+    ]
+  },
+  {
+    "word": "recreation",
+    "phonetic": "/ˌrek.riˈeɪ.ʃən/",
+    "meaning_vi": "sự giải trí",
+    "meaning_en": "activity done for enjoyment when one is not working",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The park offers various recreational facilities.",
+        "vi": "Công viên cung cấp nhiều tiện ích giải trí."
+      }
+    ],
+    "word_family": [
+      "recreational (adj)",
+      "recreate (v)"
+    ],
+    "collocations": [
+      "recreation area",
+      "recreation center",
+      "outdoor recreation"
+    ],
+    "synonyms": [
+      "entertainment",
+      "leisure"
+    ],
+    "antonyms": [
+      "work"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Recreation is important.",
+        "correct": "Recreation is important.",
+        "explain_vi": "Không có lỗi phổ biến, nhưng cần phân biệt 'recreation' và 're-creation'."
+      }
+    ],
+    "grammar_patterns": [
+      "recreation + noun",
+      "for recreation"
+    ]
+  },
+  {
+    "word": "enthusiast",
+    "phonetic": "/ɪnˈθjuː.zi.æst/",
+    "meaning_vi": "người đam mê",
+    "meaning_en": "a person who is very interested in a particular activity or subject",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "He is a photography enthusiast.",
+        "vi": "Anh ấy là một người đam mê nhiếp ảnh."
+      }
+    ],
+    "word_family": [
+      "enthusiasm (n)",
+      "enthusiastic (adj)"
+    ],
+    "collocations": [
+      "sports enthusiast",
+      "art enthusiast",
+      "enthusiast of"
+    ],
+    "synonyms": [
+      "fan",
+      "devotee"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "He is enthusiast.",
+        "correct": "He is an enthusiast.",
+        "explain_vi": "Cần mạo từ 'an' trước 'enthusiast'."
+      }
+    ],
+    "grammar_patterns": [
+      "a/an + enthusiast + of/for + noun"
+    ]
+  },
+  {
+    "word": "collectible",
+    "phonetic": "/kəˈlek.tə.bəl/",
+    "meaning_vi": "vật phẩm sưu tầm",
+    "meaning_en": "an item that is worth collecting because of its rarity or value",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "He has a room full of collectibles.",
+        "vi": "Anh ấy có cả phòng đầy vật phẩm sưu tầm."
+      }
+    ],
+    "word_family": [
+      "collect (v)",
+      "collection (n)",
+      "collector (n)"
+    ],
+    "collocations": [
+      "rare collectible",
+      "valuable collectible",
+      "collectible item"
+    ],
+    "synonyms": [
+      "collectable"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I collect collectibles.",
+        "correct": "I collect collectibles.",
+        "explain_vi": "Từ này đúng, nhưng cần phát âm đúng trọng âm."
+      }
+    ],
+    "grammar_patterns": [
+      "a + collectible",
+      "collectible + noun"
+    ]
+  },
+  {
+    "word": "knitting",
+    "phonetic": "/ˈnɪt.ɪŋ/",
+    "meaning_vi": "đan len",
+    "meaning_en": "the activity of making clothes or other items from wool or yarn using needles",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She enjoys knitting scarves for her friends.",
+        "vi": "Cô ấy thích đan khăn cho bạn bè."
+      }
+    ],
+    "word_family": [
+      "knit (v)",
+      "knitter (n)"
+    ],
+    "collocations": [
+      "knitting needles",
+      "knitting pattern",
+      "knitting wool"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I am knitting a sweater.",
+        "correct": "I am knitting a sweater.",
+        "explain_vi": "Không có lỗi phổ biến, nhưng cần phân biệt 'knit' và 'nit'."
+      }
+    ],
+    "grammar_patterns": [
+      "knit + object",
+      "go knitting"
+    ]
+  },
+  {
+    "word": "gardening",
+    "phonetic": "/ˈɡɑːr.dən.ɪŋ/",
+    "meaning_vi": "làm vườn",
+    "meaning_en": "the activity of tending and cultivating a garden",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Gardening is a relaxing hobby.",
+        "vi": "Làm vườn là một sở thích thư giãn."
+      }
+    ],
+    "word_family": [
+      "garden (n/v)",
+      "gardener (n)"
+    ],
+    "collocations": [
+      "gardening tools",
+      "gardening gloves",
+      "gardening tips"
+    ],
+    "synonyms": [
+      "horticulture"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I do gardening.",
+        "correct": "I do gardening.",
+        "explain_vi": "Cụm từ 'do gardening' phổ biến, nhưng 'go gardening' cũng dùng được."
+      }
+    ],
+    "grammar_patterns": [
+      "go gardening",
+      "do gardening",
+      "be into gardening"
+    ]
+  },
+  {
+    "word": "photography",
+    "phonetic": "/fəˈtɒɡ.rə.fi/",
+    "meaning_vi": "nhiếp ảnh",
+    "meaning_en": "the art or practice of taking and processing photographs",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I am interested in black and white photography.",
+        "vi": "Tôi quan tâm đến nhiếp ảnh đen trắng."
+      }
+    ],
+    "word_family": [
+      "photograph (n)",
+      "photographer (n)",
+      "photographic (adj)"
+    ],
+    "collocations": [
+      "digital photography",
+      "photography studio",
+      "photography equipment"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I like photography.",
+        "correct": "I like photography.",
+        "explain_vi": "Không có lỗi phổ biến, nhưng cần phát âm đúng trọng âm."
+      }
+    ],
+    "grammar_patterns": [
+      "photography + noun",
+      "be into photography"
+    ]
+  },
+  {
+    "word": "cooking",
+    "phonetic": "/ˈkʊk.ɪŋ/",
+    "meaning_vi": "nấu ăn",
+    "meaning_en": "the practice or skill of preparing food",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I took a cooking class to improve my skills.",
+        "vi": "Tôi đã tham gia lớp học nấu ăn để cải thiện kỹ năng."
+      }
+    ],
+    "word_family": [
+      "cook (v/n)",
+      "cooker (n)"
+    ],
+    "collocations": [
+      "cooking oil",
+      "cooking recipe",
+      "cooking show"
+    ],
+    "synonyms": [
+      "cuisine"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I cook cooking.",
+        "correct": "I cook.",
+        "explain_vi": "Không dùng 'cooking' sau 'cook'; 'cooking' là danh từ."
+      }
+    ],
+    "grammar_patterns": [
+      "do cooking",
+      "enjoy cooking",
+      "cooking + noun"
+    ]
+  },
+  {
+    "word": "painting",
+    "phonetic": "/ˈpeɪn.tɪŋ/",
+    "meaning_vi": "hội họa",
+    "meaning_en": "the activity or skill of using paint to produce pictures",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She spends her weekends painting landscapes.",
+        "vi": "Cô ấy dành cuối tuần vẽ phong cảnh."
+      }
+    ],
+    "word_family": [
+      "paint (v/n)",
+      "painter (n)"
+    ],
+    "collocations": [
+      "oil painting",
+      "watercolor painting",
+      "painting brush"
+    ],
+    "synonyms": [
+      "art"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I do painting.",
+        "correct": "I paint.",
+        "explain_vi": "Có thể dùng 'do painting' nhưng 'paint' là động từ chính xác."
+      }
+    ],
+    "grammar_patterns": [
+      "do painting",
+      "be into painting",
+      "painting + noun"
+    ]
+  },
+  {
+    "word": "reading",
+    "phonetic": "/ˈriː.dɪŋ/",
+    "meaning_vi": "đọc sách",
+    "meaning_en": "the activity of reading books or other written materials",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Reading broadens your horizons.",
+        "vi": "Đọc sách mở rộng tầm nhìn của bạn."
+      }
+    ],
+    "word_family": [
+      "read (v)",
+      "reader (n)"
+    ],
+    "collocations": [
+      "reading habit",
+      "reading material",
+      "reading comprehension"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I like reading books.",
+        "correct": "I like reading.",
+        "explain_vi": "Có thể nói 'reading books' nhưng 'reading' đã bao hàm."
+      }
+    ],
+    "grammar_patterns": [
+      "enjoy reading",
+      "be into reading",
+      "reading + noun"
+    ]
+  },
+  {
+    "word": "writing",
+    "phonetic": "/ˈraɪ.tɪŋ/",
+    "meaning_vi": "viết lách",
+    "meaning_en": "the activity of composing text",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Creative writing is a rewarding hobby.",
+        "vi": "Viết sáng tạo là một sở thích bổ ích."
+      }
+    ],
+    "word_family": [
+      "write (v)",
+      "writer (n)"
+    ],
+    "collocations": [
+      "writing skills",
+      "writing style",
+      "writing prompt"
+    ],
+    "synonyms": [
+      "composition"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I do writing.",
+        "correct": "I write.",
+        "explain_vi": "Tương tự 'painting', 'do writing' ít phổ biến hơn."
+      }
+    ],
+    "grammar_patterns": [
+      "do writing",
+      "be into writing",
+      "writing + noun"
+    ]
+  },
+  {
+    "word": "dancing",
+    "phonetic": "/ˈdæn.sɪŋ/",
+    "meaning_vi": "khiêu vũ",
+    "meaning_en": "the activity of moving rhythmically to music",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She takes dancing lessons every week.",
+        "vi": "Cô ấy học khiêu vũ hàng tuần."
+      }
+    ],
+    "word_family": [
+      "dance (v/n)",
+      "dancer (n)"
+    ],
+    "collocations": [
+      "dancing shoes",
+      "dancing partner",
+      "dancing class"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go to dance.",
+        "correct": "I go dancing.",
+        "explain_vi": "Dùng 'go dancing' để chỉ hoạt động."
+      }
+    ],
+    "grammar_patterns": [
+      "go dancing",
+      "take dancing lessons",
+      "be into dancing"
+    ]
+  },
+  {
+    "word": "singing",
+    "phonetic": "/ˈsɪŋ.ɪŋ/",
+    "meaning_vi": "ca hát",
+    "meaning_en": "the activity of performing songs with the voice",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Singing in the shower is fun.",
+        "vi": "Hát trong phòng tắm rất vui."
+      }
+    ],
+    "word_family": [
+      "sing (v)",
+      "singer (n)"
+    ],
+    "collocations": [
+      "singing voice",
+      "singing competition",
+      "singing practice"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I like sing.",
+        "correct": "I like singing.",
+        "explain_vi": "Sau 'like' dùng gerund (V-ing)."
+      }
+    ],
+    "grammar_patterns": [
+      "enjoy singing",
+      "be into singing",
+      "singing + noun"
+    ]
+  },
+  {
+    "word": "playing an instrument",
+    "phonetic": "/ˈpleɪ.ɪŋ æn ˈɪn.strə.mənt/",
+    "meaning_vi": "chơi nhạc cụ",
+    "meaning_en": "the activity of producing music with a musical instrument",
+    "pos": "phrase",
+    "examples": [
+      {
+        "en": "Playing the guitar is a great hobby.",
+        "vi": "Chơi guitar là một sở thích tuyệt vời."
+      }
+    ],
+    "word_family": [
+      "play (v)",
+      "instrument (n)",
+      "instrumental (adj)"
+    ],
+    "collocations": [
+      "play the piano",
+      "play the violin",
+      "learn to play an instrument"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I play guitar.",
+        "correct": "I play the guitar.",
+        "explain_vi": "Cần mạo từ 'the' trước tên nhạc cụ."
+      }
+    ],
+    "grammar_patterns": [
+      "play the + instrument",
+      "be good at playing + instrument"
+    ]
+  },
+  {
+    "word": "traveling",
+    "phonetic": "/ˈtræv.əl.ɪŋ/",
+    "meaning_vi": "du lịch",
+    "meaning_en": "the activity of going on trips or journeys",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Traveling broadens the mind.",
+        "vi": "Du lịch mở mang đầu óc."
+      }
+    ],
+    "word_family": [
+      "travel (v/n)",
+      "traveler (n)"
+    ],
+    "collocations": [
+      "traveling abroad",
+      "traveling expenses",
+      "traveling companion"
+    ],
+    "synonyms": [
+      "touring"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I like travel.",
+        "correct": "I like traveling.",
+        "explain_vi": "Sau 'like' dùng gerund."
+      }
+    ],
+    "grammar_patterns": [
+      "enjoy traveling",
+      "go traveling",
+      "be into traveling"
+    ]
+  },
+  {
+    "word": "hiking",
+    "phonetic": "/ˈhaɪ.kɪŋ/",
+    "meaning_vi": "đi bộ đường dài",
+    "meaning_en": "the activity of going for long walks in the countryside",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We went hiking in the mountains last weekend.",
+        "vi": "Chúng tôi đã đi bộ đường dài trên núi cuối tuần trước."
+      }
+    ],
+    "word_family": [
+      "hike (v/n)",
+      "hiker (n)"
+    ],
+    "collocations": [
+      "hiking trail",
+      "hiking boots",
+      "hiking gear"
+    ],
+    "synonyms": [
+      "trekking"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go to hike.",
+        "correct": "I go hiking.",
+        "explain_vi": "Dùng 'go hiking'."
+      }
+    ],
+    "grammar_patterns": [
+      "go hiking",
+      "be into hiking",
+      "hiking + noun"
+    ]
+  },
+  {
+    "word": "fishing",
+    "phonetic": "/ˈfɪʃ.ɪŋ/",
+    "meaning_vi": "câu cá",
+    "meaning_en": "the activity of catching fish for sport or food",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "My father loves fishing on weekends.",
+        "vi": "Bố tôi thích câu cá vào cuối tuần."
+      }
+    ],
+    "word_family": [
+      "fish (v/n)",
+      "fisherman (n)"
+    ],
+    "collocations": [
+      "fishing rod",
+      "fishing boat",
+      "fishing trip"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go to fish.",
+        "correct": "I go fishing.",
+        "explain_vi": "Dùng 'go fishing'."
+      }
+    ],
+    "grammar_patterns": [
+      "go fishing",
+      "be into fishing",
+      "fishing + noun"
+    ]
+  },
+  {
+    "word": "birdwatching",
+    "phonetic": "/ˈbɜːrdˌwɒtʃ.ɪŋ/",
+    "meaning_vi": "ngắm chim",
+    "meaning_en": "the practice of observing birds in their natural habitat as a hobby",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Birdwatching requires patience and binoculars.",
+        "vi": "Ngắm chim đòi hỏi kiên nhẫn và ống nhòm."
+      }
+    ],
+    "word_family": [
+      "birdwatcher (n)"
+    ],
+    "collocations": [
+      "birdwatching tour",
+      "birdwatching guide",
+      "birdwatching spot"
+    ],
+    "synonyms": [
+      "birding"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I watch bird.",
+        "correct": "I go birdwatching.",
+        "explain_vi": "Dùng 'go birdwatching'."
+      }
+    ],
+    "grammar_patterns": [
+      "go birdwatching",
+      "be into birdwatching"
+    ]
+  },
+  {
+    "word": "baking",
+    "phonetic": "/ˈbeɪ.kɪŋ/",
+    "meaning_vi": "làm bánh",
+    "meaning_en": "the activity of cooking food using dry heat in an oven",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She enjoys baking bread on weekends.",
+        "vi": "Cô ấy thích làm bánh mì vào cuối tuần."
+      },
+      {
+        "en": "Baking requires precise measurements.",
+        "vi": "Làm bánh đòi hỏi đo lường chính xác."
+      }
+    ],
+    "word_family": [
+      "bake (v)",
+      "baker (n)"
+    ],
+    "collocations": [
+      "baking bread",
+      "baking cookies",
+      "baking a cake"
+    ],
+    "synonyms": [
+      "cooking",
+      "pastry making"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I like bake.",
+        "correct": "I like baking.",
+        "explain_vi": "Dùng danh động từ sau 'like'."
+      }
+    ],
+    "grammar_patterns": [
+      "like + V-ing",
+      "enjoy + V-ing"
+    ]
+  },
+  {
+    "word": "pottery",
+    "phonetic": "/ˈpɒt.ər.i/",
+    "meaning_vi": "gốm, đồ gốm",
+    "meaning_en": "the art of making objects from clay",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She took a pottery class to learn how to make vases.",
+        "vi": "Cô ấy tham gia lớp học gốm để học cách làm bình hoa."
+      },
+      {
+        "en": "His pottery is displayed in the gallery.",
+        "vi": "Đồ gốm của anh ấy được trưng bày trong phòng triển lãm."
+      }
+    ],
+    "word_family": [
+      "potter (n)",
+      "pottery (n)"
+    ],
+    "collocations": [
+      "pottery class",
+      "pottery wheel",
+      "pottery studio"
+    ],
+    "synonyms": [
+      "ceramics"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I like pottery making.",
+        "correct": "I like making pottery.",
+        "explain_vi": "Thứ tự từ: 'making pottery' tự nhiên hơn."
+      }
+    ],
+    "grammar_patterns": [
+      "make pottery",
+      "do pottery"
+    ]
+  },
+  {
+    "word": "sculpting",
+    "phonetic": "/ˈskʌlp.tɪŋ/",
+    "meaning_vi": "điêu khắc",
+    "meaning_en": "the act of creating figures or designs by carving or modeling",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "He spends his free time sculpting in his studio.",
+        "vi": "Anh ấy dành thời gian rảnh để điêu khắc trong xưởng."
+      },
+      {
+        "en": "Sculpting requires patience and skill.",
+        "vi": "Điêu khắc đòi hỏi sự kiên nhẫn và kỹ năng."
+      }
+    ],
+    "word_family": [
+      "sculpt (v)",
+      "sculptor (n)",
+      "sculpture (n)"
+    ],
+    "collocations": [
+      "sculpting clay",
+      "sculpting marble",
+      "sculpting a figure"
+    ],
+    "synonyms": [
+      "carving",
+      "modeling"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "He is sculpting a sculpture.",
+        "correct": "He is sculpting a statue.",
+        "explain_vi": "'Sculpture' là tác phẩm điêu khắc, 'statue' là tượng cụ thể."
+      }
+    ],
+    "grammar_patterns": [
+      "spend time + V-ing",
+      "be into + V-ing"
+    ]
+  },
+  {
+    "word": "calligraphy",
+    "phonetic": "/kəˈlɪɡ.rə.fi/",
+    "meaning_vi": "thư pháp",
+    "meaning_en": "the art of beautiful handwriting",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She practices calligraphy every morning.",
+        "vi": "Cô ấy luyện thư pháp mỗi sáng."
+      },
+      {
+        "en": "Calligraphy is popular in East Asian cultures.",
+        "vi": "Thư pháp phổ biến trong các nền văn hóa Đông Á."
+      }
+    ],
+    "word_family": [
+      "calligrapher (n)",
+      "calligraphic (adj)"
+    ],
+    "collocations": [
+      "calligraphy pen",
+      "calligraphy set",
+      "calligraphy workshop"
+    ],
+    "synonyms": [
+      "hand lettering",
+      "penmanship"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I am studying calligraphy.",
+        "correct": "I am practicing calligraphy.",
+        "explain_vi": "Dùng 'practice' vì đây là kỹ năng."
+      }
+    ],
+    "grammar_patterns": [
+      "practice + V-ing",
+      "study + noun"
+    ]
+  },
+  {
+    "word": "embroidery",
+    "phonetic": "/ɪmˈbrɔɪ.dər.i/",
+    "meaning_vi": "thêu",
+    "meaning_en": "the art of decorating fabric with needle and thread",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She learned embroidery from her grandmother.",
+        "vi": "Cô ấy học thêu từ bà của mình."
+      },
+      {
+        "en": "Embroidery adds beauty to clothing.",
+        "vi": "Thêu thùa thêm vẻ đẹp cho quần áo."
+      }
+    ],
+    "word_family": [
+      "embroider (v)",
+      "embroiderer (n)"
+    ],
+    "collocations": [
+      "embroidery hoop",
+      "embroidery thread",
+      "embroidery design"
+    ],
+    "synonyms": [
+      "needlework",
+      "stitching"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I like embroidery clothes.",
+        "correct": "I like embroidering clothes.",
+        "explain_vi": "Dùng động từ 'embroider' thay vì danh từ."
+      }
+    ],
+    "grammar_patterns": [
+      "do embroidery",
+      "like + V-ing"
+    ]
+  },
+  {
+    "word": "woodworking",
+    "phonetic": "/ˈwʊd.wɜːr.kɪŋ/",
+    "meaning_vi": "làm đồ gỗ",
+    "meaning_en": "the activity of making objects from wood",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Woodworking is a relaxing hobby for many people.",
+        "vi": "Làm đồ gỗ là một sở thích thư giãn cho nhiều người."
+      },
+      {
+        "en": "He built a bookshelf through woodworking.",
+        "vi": "Anh ấy đóng một kệ sách qua việc làm đồ gỗ."
+      }
+    ],
+    "word_family": [
+      "woodworker (n)",
+      "woodwork (n)"
+    ],
+    "collocations": [
+      "woodworking tools",
+      "woodworking project",
+      "woodworking shop"
+    ],
+    "synonyms": [
+      "carpentry"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I am doing woodwork.",
+        "correct": "I am doing woodworking.",
+        "explain_vi": "'Woodworking' là hoạt động, 'woodwork' là sản phẩm."
+      }
+    ],
+    "grammar_patterns": [
+      "do woodworking",
+      "take up woodworking"
+    ]
+  },
+  {
+    "word": "metalworking",
+    "phonetic": "/ˈmet.əl.wɜːr.kɪŋ/",
+    "meaning_vi": "gia công kim loại",
+    "meaning_en": "the art of shaping metal into objects",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Metalworking requires specialized equipment.",
+        "vi": "Gia công kim loại đòi hỏi thiết bị chuyên dụng."
+      },
+      {
+        "en": "He creates jewelry through metalworking.",
+        "vi": "Anh ấy tạo đồ trang sức qua gia công kim loại."
+      }
+    ],
+    "word_family": [
+      "metalworker (n)",
+      "metalwork (n)"
+    ],
+    "collocations": [
+      "metalworking tools",
+      "metalworking techniques",
+      "metalworking hobby"
+    ],
+    "synonyms": [
+      "smithing",
+      "forging"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I like metal work.",
+        "correct": "I like metalworking.",
+        "explain_vi": "Viết liền thành một từ."
+      }
+    ],
+    "grammar_patterns": [
+      "be into metalworking",
+      "learn metalworking"
+    ]
+  },
+  {
+    "word": "soapmaking",
+    "phonetic": "/ˈsoʊp.meɪ.kɪŋ/",
+    "meaning_vi": "làm xà phòng",
+    "meaning_en": "the process of making soap from fats and lye",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Soapmaking has become a popular hobby.",
+        "vi": "Làm xà phòng đã trở thành một sở thích phổ biến."
+      },
+      {
+        "en": "She sells her soapmaking creations online.",
+        "vi": "Cô ấy bán các sản phẩm làm xà phòng của mình trực tuyến."
+      }
+    ],
+    "word_family": [
+      "soapmaker (n)",
+      "soap (n)"
+    ],
+    "collocations": [
+      "soapmaking kit",
+      "soapmaking recipe",
+      "soapmaking supplies"
+    ],
+    "synonyms": [
+      "soap crafting"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I make soap as hobby.",
+        "correct": "I make soap as a hobby.",
+        "explain_vi": "Thiếu mạo từ 'a'."
+      }
+    ],
+    "grammar_patterns": [
+      "take up soapmaking",
+      "do soapmaking"
+    ]
+  },
+  {
+    "word": "candle making",
+    "phonetic": "/ˈkæn.dəl ˌmeɪ.kɪŋ/",
+    "meaning_vi": "làm nến",
+    "meaning_en": "the craft of making candles from wax",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Candle making is a creative and relaxing hobby.",
+        "vi": "Làm nến là một sở thích sáng tạo và thư giãn."
+      },
+      {
+        "en": "She started candle making during the pandemic.",
+        "vi": "Cô ấy bắt đầu làm nến trong thời kỳ đại dịch."
+      }
+    ],
+    "word_family": [
+      "candle maker (n)",
+      "candle (n)"
+    ],
+    "collocations": [
+      "candle making supplies",
+      "candle making workshop",
+      "candle making kit"
+    ],
+    "synonyms": [
+      "chandlery"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I like making candle.",
+        "correct": "I like making candles.",
+        "explain_vi": "Dùng số nhiều khi nói chung."
+      }
+    ],
+    "grammar_patterns": [
+      "take up candle making",
+      "do candle making"
+    ]
+  },
+  {
+    "word": "jewelry making",
+    "phonetic": "/ˈdʒuː.əl.ri ˌmeɪ.kɪŋ/",
+    "meaning_vi": "làm đồ trang sức",
+    "meaning_en": "the craft of creating decorative items to wear",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Jewelry making requires fine motor skills.",
+        "vi": "Làm đồ trang sức đòi hỏi kỹ năng vận động tinh."
+      },
+      {
+        "en": "She sells her jewelry making on Etsy.",
+        "vi": "Cô ấy bán đồ trang sức tự làm trên Etsy."
+      }
+    ],
+    "word_family": [
+      "jewelry maker (n)",
+      "jewelry (n)"
+    ],
+    "collocations": [
+      "jewelry making tools",
+      "jewelry making beads",
+      "jewelry making class"
+    ],
+    "synonyms": [
+      "beadwork",
+      "metal clay"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I make jewelries.",
+        "correct": "I make jewelry.",
+        "explain_vi": "'Jewelry' là danh từ không đếm được."
+      }
+    ],
+    "grammar_patterns": [
+      "do jewelry making",
+      "take up jewelry making"
+    ]
+  },
+  {
+    "word": "leatherworking",
+    "phonetic": "/ˈleð.ər.wɜːr.kɪŋ/",
+    "meaning_vi": "làm đồ da",
+    "meaning_en": "the craft of working with leather to create items",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Leatherworking is a traditional craft.",
+        "vi": "Làm đồ da là một nghề thủ công truyền thống."
+      },
+      {
+        "en": "He makes wallets through leatherworking.",
+        "vi": "Anh ấy làm ví qua việc làm đồ da."
+      }
+    ],
+    "word_family": [
+      "leatherworker (n)",
+      "leatherwork (n)"
+    ],
+    "collocations": [
+      "leatherworking tools",
+      "leatherworking project",
+      "leatherworking kit"
+    ],
+    "synonyms": [
+      "cordwaining",
+      "saddlery"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I am interesting in leatherworking.",
+        "correct": "I am interested in leatherworking.",
+        "explain_vi": "Nhầm lẫn 'interesting' và 'interested'."
+      }
+    ],
+    "grammar_patterns": [
+      "be interested in + V-ing",
+      "take up leatherworking"
+    ]
+  },
+  {
+    "word": "glassblowing",
+    "phonetic": "/ˈɡlæs.bloʊ.ɪŋ/",
+    "meaning_vi": "thổi thủy tinh",
+    "meaning_en": "the art of shaping molten glass by blowing air into it",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Glassblowing requires high temperatures and skill.",
+        "vi": "Thổi thủy tinh đòi hỏi nhiệt độ cao và kỹ năng."
+      },
+      {
+        "en": "She took a glassblowing class to make vases.",
+        "vi": "Cô ấy tham gia lớp thổi thủy tinh để làm bình hoa."
+      }
+    ],
+    "word_family": [
+      "glassblower (n)",
+      "glassblown (adj)"
+    ],
+    "collocations": [
+      "glassblowing studio",
+      "glassblowing torch",
+      "glassblowing technique"
+    ],
+    "synonyms": [
+      "lampworking",
+      "glass art"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "He is blowing glass.",
+        "correct": "He is doing glassblowing.",
+        "explain_vi": "Dùng 'do glassblowing' như một hoạt động."
+      }
+    ],
+    "grammar_patterns": [
+      "do glassblowing",
+      "learn glassblowing"
+    ]
+  },
+  {
+    "word": "stamp collecting",
+    "phonetic": "/stæmp kəˈlek.tɪŋ/",
+    "meaning_vi": "sưu tập tem",
+    "meaning_en": "the hobby of collecting postage stamps",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Stamp collecting is a classic hobby.",
+        "vi": "Sưu tập tem là một sở thích cổ điển."
+      },
+      {
+        "en": "He has a large stamp collection.",
+        "vi": "Anh ấy có một bộ sưu tập tem lớn."
+      }
+    ],
+    "word_family": [
+      "stamp collector (n)",
+      "stamp collection (n)"
+    ],
+    "collocations": [
+      "stamp collecting album",
+      "stamp collecting club",
+      "stamp collecting supplies"
+    ],
+    "synonyms": [
+      "philately"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I collect stamp.",
+        "correct": "I collect stamps.",
+        "explain_vi": "Dùng số nhiều."
+      }
+    ],
+    "grammar_patterns": [
+      "collect stamps",
+      "be into stamp collecting"
+    ]
+  },
+  {
+    "word": "coin collecting",
+    "phonetic": "/kɔɪn kəˈlek.tɪŋ/",
+    "meaning_vi": "sưu tập tiền xu",
+    "meaning_en": "the hobby of collecting coins",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Coin collecting can be educational.",
+        "vi": "Sưu tập tiền xu có thể mang tính giáo dục."
+      },
+      {
+        "en": "She inherited a coin collection from her grandfather.",
+        "vi": "Cô ấy thừa kế một bộ sưu tập tiền xu từ ông nội."
+      }
+    ],
+    "word_family": [
+      "coin collector (n)",
+      "coin collection (n)"
+    ],
+    "collocations": [
+      "coin collecting book",
+      "coin collecting show",
+      "coin collecting value"
+    ],
+    "synonyms": [
+      "numismatics"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I collect coin.",
+        "correct": "I collect coins.",
+        "explain_vi": "Dùng số nhiều."
+      }
+    ],
+    "grammar_patterns": [
+      "collect coins",
+      "be into coin collecting"
+    ]
+  },
+  {
+    "word": "antiquing",
+    "phonetic": "/ænˈtiː.kɪŋ/",
+    "meaning_vi": "săn đồ cổ",
+    "meaning_en": "the activity of shopping for antiques",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "They go antiquing every Saturday.",
+        "vi": "Họ đi săn đồ cổ mỗi thứ Bảy."
+      },
+      {
+        "en": "Antiquing is a fun way to spend the weekend.",
+        "vi": "Săn đồ cổ là một cách thú vị để trải qua cuối tuần."
+      }
+    ],
+    "word_family": [
+      "antique (n/adj)",
+      "antiquer (n)"
+    ],
+    "collocations": [
+      "go antiquing",
+      "antiquing trip",
+      "antiquing store"
+    ],
+    "synonyms": [
+      "vintage shopping"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I like antique.",
+        "correct": "I like antiquing.",
+        "explain_vi": "Dùng danh động từ cho hoạt động."
+      }
+    ],
+    "grammar_patterns": [
+      "go + V-ing",
+      "like + V-ing"
+    ]
+  },
+  {
+    "word": "beekeeping",
+    "phonetic": "/ˈbiː.kiː.pɪŋ/",
+    "meaning_vi": "nuôi ong",
+    "meaning_en": "the practice of maintaining bee colonies",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Beekeeping is important for pollination.",
+        "vi": "Nuôi ong quan trọng cho việc thụ phấn."
+      },
+      {
+        "en": "He started beekeeping as a hobby.",
+        "vi": "Anh ấy bắt đầu nuôi ong như một sở thích."
+      }
+    ],
+    "word_family": [
+      "beekeeper (n)",
+      "beehive (n)"
+    ],
+    "collocations": [
+      "beekeeping suit",
+      "beekeeping equipment",
+      "beekeeping class"
+    ],
+    "synonyms": [
+      "apiculture"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I keep bee.",
+        "correct": "I keep bees.",
+        "explain_vi": "Dùng số nhiều."
+      }
+    ],
+    "grammar_patterns": [
+      "keep bees",
+      "take up beekeeping"
+    ]
+  },
+  {
+    "word": "birdwatching",
+    "phonetic": "/ˈbɜːrd.wɒtʃ.ɪŋ/",
+    "meaning_vi": "ngắm chim",
+    "meaning_en": "the hobby of observing wild birds",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Birdwatching requires patience and binoculars.",
+        "vi": "Ngắm chim đòi hỏi sự kiên nhẫn và ống nhòm."
+      },
+      {
+        "en": "She goes birdwatching in the park every weekend.",
+        "vi": "Cô ấy đi ngắm chim trong công viên mỗi cuối tuần."
+      }
+    ],
+    "word_family": [
+      "birdwatcher (n)",
+      "bird watch (n)"
+    ],
+    "collocations": [
+      "birdwatching tour",
+      "birdwatching guide",
+      "birdwatching binoculars"
+    ],
+    "synonyms": [
+      "birding"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I like watch bird.",
+        "correct": "I like watching birds.",
+        "explain_vi": "Dùng danh động từ và số nhiều."
+      }
+    ],
+    "grammar_patterns": [
+      "go birdwatching",
+      "like + V-ing"
+    ]
+  },
+  {
+    "word": "astronomy",
+    "phonetic": "/əˈstrɒn.ə.mi/",
+    "meaning_vi": "thiên văn học",
+    "meaning_en": "the study of celestial objects and space",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "He enjoys astronomy and stargazing.",
+        "vi": "Anh ấy thích thiên văn học và ngắm sao."
+      },
+      {
+        "en": "Astronomy is a fascinating hobby.",
+        "vi": "Thiên văn học là một sở thích hấp dẫn."
+      }
+    ],
+    "word_family": [
+      "astronomer (n)",
+      "astronomical (adj)"
+    ],
+    "collocations": [
+      "astronomy club",
+      "astronomy telescope",
+      "astronomy book"
+    ],
+    "synonyms": [
+      "stargazing",
+      "astrophysics"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I study astronomy as hobby.",
+        "correct": "I study astronomy as a hobby.",
+        "explain_vi": "Thiếu mạo từ 'a'."
+      }
+    ],
+    "grammar_patterns": [
+      "study astronomy",
+      "be interested in astronomy"
+    ]
+  },
+  {
+    "word": "model building",
+    "phonetic": "/ˈmɒd.əl ˈbɪl.dɪŋ/",
+    "meaning_vi": "lắp ráp mô hình",
+    "meaning_en": "the hobby of constructing scale models",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Model building requires patience and precision.",
+        "vi": "Lắp ráp mô hình đòi hỏi sự kiên nhẫn và chính xác."
+      },
+      {
+        "en": "He builds model airplanes as a hobby.",
+        "vi": "Anh ấy lắp ráp máy bay mô hình như một sở thích."
+      }
+    ],
+    "word_family": [
+      "model builder (n)",
+      "model kit (n)"
+    ],
+    "collocations": [
+      "model building kit",
+      "model building glue",
+      "model building hobby"
+    ],
+    "synonyms": [
+      "scale modeling"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I like build model.",
+        "correct": "I like building models.",
+        "explain_vi": "Dùng danh động từ và số nhiều."
+      }
+    ],
+    "grammar_patterns": [
+      "build models",
+      "take up model building"
+    ]
+  },
+  {
+    "word": "origami",
+    "phonetic": "/ˌɒr.ɪˈɡɑː.mi/",
+    "meaning_vi": "gấp giấy origami",
+    "meaning_en": "the Japanese art of paper folding",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Origami is a relaxing and creative hobby.",
+        "vi": "Gấp giấy origami là một sở thích thư giãn và sáng tạo."
+      },
+      {
+        "en": "She folded an origami crane.",
+        "vi": "Cô ấy gấp một con hạc giấy origami."
+      }
+    ],
+    "word_family": [
+      "origamist (n)",
+      "origami paper (n)"
+    ],
+    "collocations": [
+      "origami paper",
+      "origami instructions",
+      "origami art"
+    ],
+    "synonyms": [
+      "paper folding"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I make origami crane.",
+        "correct": "I make an origami crane.",
+        "explain_vi": "Thiếu mạo từ."
+      }
+    ],
+    "grammar_patterns": [
+      "do origami",
+      "fold origami"
+    ]
+  },
+  {
+    "word": "scuba diving",
+    "phonetic": "/ˈskuːbə ˌdaɪvɪŋ/",
+    "meaning_vi": "lặn biển có bình dưỡng khí",
+    "meaning_en": "the sport of swimming underwater using special breathing equipment",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She took up scuba diving on her vacation.",
+        "vi": "Cô ấy bắt đầu lặn biển trong kỳ nghỉ."
+      },
+      {
+        "en": "Scuba diving requires a certification.",
+        "vi": "Lặn biển yêu cầu chứng chỉ."
+      }
+    ],
+    "word_family": [
+      "scuba dive (v)",
+      "scuba diver (n)"
+    ],
+    "collocations": [
+      "go scuba diving",
+      "scuba diving gear",
+      "scuba diving certification"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I like scuba diving.",
+        "correct": "I like scuba diving.",
+        "explain_vi": "Cụm từ này đúng, không có lỗi phổ biến."
+      }
+    ],
+    "grammar_patterns": [
+      "go + scuba diving (gerund)"
+    ]
+  },
+  {
+    "word": "surfing",
+    "phonetic": "/ˈsɜːrfɪŋ/",
+    "meaning_vi": "lướt sóng",
+    "meaning_en": "the sport of riding on waves on a special board",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "He spends every weekend surfing.",
+        "vi": "Anh ấy dành mỗi cuối tuần để lướt sóng."
+      },
+      {
+        "en": "Surfing is popular in coastal areas.",
+        "vi": "Lướt sóng phổ biến ở các vùng ven biển."
+      }
+    ],
+    "word_family": [
+      "surf (v)",
+      "surfer (n)"
+    ],
+    "collocations": [
+      "go surfing",
+      "surfing board",
+      "surfing lessons"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I like surfing.",
+        "correct": "I like surfing.",
+        "explain_vi": "Không có lỗi phổ biến."
+      }
+    ],
+    "grammar_patterns": [
+      "go + surfing (gerund)"
+    ]
+  },
+  {
+    "word": "kayaking",
+    "phonetic": "/ˈkaɪækɪŋ/",
+    "meaning_vi": "chèo thuyền kayak",
+    "meaning_en": "the activity of travelling in a kayak",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We went kayaking on the lake.",
+        "vi": "Chúng tôi đã đi chèo thuyền kayak trên hồ."
+      },
+      {
+        "en": "Kayaking is great exercise.",
+        "vi": "Chèo thuyền kayak là bài tập tuyệt vời."
+      }
+    ],
+    "word_family": [
+      "kayak (n/v)",
+      "kayaker (n)"
+    ],
+    "collocations": [
+      "go kayaking",
+      "kayaking trip",
+      "kayaking equipment"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I like kayaking.",
+        "correct": "I like kayaking.",
+        "explain_vi": "Không có lỗi phổ biến."
+      }
+    ],
+    "grammar_patterns": [
+      "go + kayaking (gerund)"
+    ]
+  },
+  {
+    "word": "snorkeling",
+    "phonetic": "/ˈsnɔːrkəlɪŋ/",
+    "meaning_vi": "lặn với ống thở",
+    "meaning_en": "the activity of swimming underwater using a snorkel",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Snorkeling allows you to see marine life.",
+        "vi": "Lặn với ống thở cho phép bạn nhìn thấy sinh vật biển."
+      },
+      {
+        "en": "They went snorkeling in the coral reef.",
+        "vi": "Họ đã đi lặn với ống thở ở rạn san hô."
+      }
+    ],
+    "word_family": [
+      "snorkel (n/v)",
+      "snorkeler (n)"
+    ],
+    "collocations": [
+      "go snorkeling",
+      "snorkeling gear",
+      "snorkeling spot"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I like snorkeling.",
+        "correct": "I like snorkeling.",
+        "explain_vi": "Không có lỗi phổ biến."
+      }
+    ],
+    "grammar_patterns": [
+      "go + snorkeling (gerund)"
+    ]
+  },
+  {
+    "word": "rock climbing",
+    "phonetic": "/ˈrɒk ˌklaɪmɪŋ/",
+    "meaning_vi": "leo núi đá",
+    "meaning_en": "the sport of climbing steep rock faces",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Rock climbing requires strength and skill.",
+        "vi": "Leo núi đá đòi hỏi sức mạnh và kỹ năng."
+      },
+      {
+        "en": "He is passionate about rock climbing.",
+        "vi": "Anh ấy đam mê leo núi đá."
+      }
+    ],
+    "word_family": [
+      "rock climb (v)",
+      "rock climber (n)"
+    ],
+    "collocations": [
+      "go rock climbing",
+      "rock climbing wall",
+      "rock climbing equipment"
+    ],
+    "synonyms": [
+      "climbing"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I like rock climbing.",
+        "correct": "I like rock climbing.",
+        "explain_vi": "Không có lỗi phổ biến."
+      }
+    ],
+    "grammar_patterns": [
+      "go + rock climbing (gerund)"
+    ]
+  },
+  {
+    "word": "skydiving",
+    "phonetic": "/ˈskaɪdaɪvɪŋ/",
+    "meaning_vi": "nhảy dù",
+    "meaning_en": "the sport of jumping from an aircraft and falling through the air before opening a parachute",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She tried skydiving for the first time.",
+        "vi": "Cô ấy đã thử nhảy dù lần đầu tiên."
+      },
+      {
+        "en": "Skydiving is an adrenaline rush.",
+        "vi": "Nhảy dù mang lại cảm giác hồi hộp."
+      }
+    ],
+    "word_family": [
+      "skydive (v)",
+      "skydiver (n)"
+    ],
+    "collocations": [
+      "go skydiving",
+      "skydiving experience",
+      "skydiving jump"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I like skydiving.",
+        "correct": "I like skydiving.",
+        "explain_vi": "Không có lỗi phổ biến."
+      }
+    ],
+    "grammar_patterns": [
+      "go + skydiving (gerund)"
+    ]
+  },
+  {
+    "word": "bungee jumping",
+    "phonetic": "/ˈbʌndʒi ˌdʒʌmpɪŋ/",
+    "meaning_vi": "nhảy bungee",
+    "meaning_en": "the activity of jumping from a high place with a bungee cord tied to your ankles",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Bungee jumping is an extreme sport.",
+        "vi": "Nhảy bungee là một môn thể thao mạo hiểm."
+      },
+      {
+        "en": "They went bungee jumping off a bridge.",
+        "vi": "Họ đã nhảy bungee từ một cây cầu."
+      }
+    ],
+    "word_family": [
+      "bungee jump (v)",
+      "bungee jumper (n)"
+    ],
+    "collocations": [
+      "go bungee jumping",
+      "bungee jumping experience",
+      "bungee cord"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I like bungee jumping.",
+        "correct": "I like bungee jumping.",
+        "explain_vi": "Không có lỗi phổ biến."
+      }
+    ],
+    "grammar_patterns": [
+      "go + bungee jumping (gerund)"
+    ]
+  },
+  {
+    "word": "paragliding",
+    "phonetic": "/ˈpærəɡlaɪdɪŋ/",
+    "meaning_vi": "dù lượn",
+    "meaning_en": "the sport of flying using a parachute-like canopy",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Paragliding offers a bird's-eye view.",
+        "vi": "Dù lượn mang lại tầm nhìn từ trên cao."
+      },
+      {
+        "en": "He took up paragliding last year.",
+        "vi": "Anh ấy bắt đầu chơi dù lượn năm ngoái."
+      }
+    ],
+    "word_family": [
+      "paraglide (v)",
+      "paraglider (n)"
+    ],
+    "collocations": [
+      "go paragliding",
+      "paragliding flight",
+      "paragliding equipment"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I like paragliding.",
+        "correct": "I like paragliding.",
+        "explain_vi": "Không có lỗi phổ biến."
+      }
+    ],
+    "grammar_patterns": [
+      "go + paragliding (gerund)"
+    ]
+  },
+  {
+    "word": "hang gliding",
+    "phonetic": "/ˈhæŋ ˌɡlaɪdɪŋ/",
+    "meaning_vi": "lượn bằng tàu lượn",
+    "meaning_en": "the sport of flying using a hang glider",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Hang gliding requires good weather conditions.",
+        "vi": "Lượn bằng tàu lượn đòi hỏi điều kiện thời tiết tốt."
+      },
+      {
+        "en": "She loves the freedom of hang gliding.",
+        "vi": "Cô ấy yêu sự tự do khi lượn bằng tàu lượn."
+      }
+    ],
+    "word_family": [
+      "hang glide (v)",
+      "hang glider (n)"
+    ],
+    "collocations": [
+      "go hang gliding",
+      "hang gliding experience",
+      "hang glider"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I like hang gliding.",
+        "correct": "I like hang gliding.",
+        "explain_vi": "Không có lỗi phổ biến."
+      }
+    ],
+    "grammar_patterns": [
+      "go + hang gliding (gerund)"
+    ]
+  },
+  {
+    "word": "mountain biking",
+    "phonetic": "/ˈmaʊntən ˌbaɪkɪŋ/",
+    "meaning_vi": "đạp xe địa hình",
+    "meaning_en": "the sport of riding a bicycle off-road, often on rough terrain",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Mountain biking is a challenging hobby.",
+        "vi": "Đạp xe địa hình là một sở thích đầy thử thách."
+      },
+      {
+        "en": "They went mountain biking in the forest.",
+        "vi": "Họ đã đi đạp xe địa hình trong rừng."
+      }
+    ],
+    "word_family": [
+      "mountain bike (n/v)",
+      "mountain biker (n)"
+    ],
+    "collocations": [
+      "go mountain biking",
+      "mountain biking trail",
+      "mountain bike"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I like mountain biking.",
+        "correct": "I like mountain biking.",
+        "explain_vi": "Không có lỗi phổ biến."
+      }
+    ],
+    "grammar_patterns": [
+      "go + mountain biking (gerund)"
+    ]
+  },
+  {
+    "word": "horseback riding",
+    "phonetic": "/ˈhɔːrsbæk ˌraɪdɪŋ/",
+    "meaning_vi": "cưỡi ngựa",
+    "meaning_en": "the activity of riding a horse for pleasure or sport",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She enjoys horseback riding on weekends.",
+        "vi": "Cô ấy thích cưỡi ngựa vào cuối tuần."
+      },
+      {
+        "en": "Horseback riding is good exercise.",
+        "vi": "Cưỡi ngựa là bài tập tốt."
+      }
+    ],
+    "word_family": [
+      "horseback ride (v)",
+      "horseback rider (n)"
+    ],
+    "collocations": [
+      "go horseback riding",
+      "horseback riding lessons",
+      "horseback riding trail"
+    ],
+    "synonyms": [
+      "riding"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I like horseback riding.",
+        "correct": "I like horseback riding.",
+        "explain_vi": "Không có lỗi phổ biến."
+      }
+    ],
+    "grammar_patterns": [
+      "go + horseback riding (gerund)"
+    ]
+  },
+  {
+    "word": "archery",
+    "phonetic": "/ˈɑːrtʃəri/",
+    "meaning_vi": "bắn cung",
+    "meaning_en": "the sport of shooting arrows with a bow",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Archery requires concentration.",
+        "vi": "Bắn cung đòi hỏi sự tập trung."
+      },
+      {
+        "en": "He took up archery as a hobby.",
+        "vi": "Anh ấy bắt đầu bắn cung như một sở thích."
+      }
+    ],
+    "word_family": [
+      "archer (n)",
+      "bow (n)"
+    ],
+    "collocations": [
+      "do archery",
+      "archery range",
+      "archery equipment"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I like archery.",
+        "correct": "I like archery.",
+        "explain_vi": "Không có lỗi phổ biến."
+      }
+    ],
+    "grammar_patterns": [
+      "do + archery (noun)"
+    ]
+  },
+  {
+    "word": "fencing",
+    "phonetic": "/ˈfensɪŋ/",
+    "meaning_vi": "đấu kiếm",
+    "meaning_en": "the sport of fighting with a sword",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Fencing is a fast-paced sport.",
+        "vi": "Đấu kiếm là môn thể thao nhanh."
+      },
+      {
+        "en": "She practices fencing twice a week.",
+        "vi": "Cô ấy tập đấu kiếm hai lần một tuần."
+      }
+    ],
+    "word_family": [
+      "fence (v)",
+      "fencer (n)"
+    ],
+    "collocations": [
+      "do fencing",
+      "fencing match",
+      "fencing equipment"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I like fencing.",
+        "correct": "I like fencing.",
+        "explain_vi": "Không có lỗi phổ biến."
+      }
+    ],
+    "grammar_patterns": [
+      "do + fencing (noun)"
+    ]
+  },
+  {
+    "word": "yoga",
+    "phonetic": "/ˈjoʊɡə/",
+    "meaning_vi": "yoga",
+    "meaning_en": "a set of physical and mental exercises originating in India",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Yoga helps with flexibility and relaxation.",
+        "vi": "Yoga giúp tăng cường sự dẻo dai và thư giãn."
+      },
+      {
+        "en": "She attends yoga classes every morning.",
+        "vi": "Cô ấy tham gia lớp yoga mỗi sáng."
+      }
+    ],
+    "word_family": [
+      "yogic (adj)",
+      "yogi (n)"
+    ],
+    "collocations": [
+      "do yoga",
+      "yoga class",
+      "yoga pose"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I like yoga.",
+        "correct": "I like yoga.",
+        "explain_vi": "Không có lỗi phổ biến."
+      }
+    ],
+    "grammar_patterns": [
+      "do + yoga (noun)"
+    ]
+  },
+  {
+    "word": "meditation",
+    "phonetic": "/ˌmedɪˈteɪʃn/",
+    "meaning_vi": "thiền",
+    "meaning_en": "the practice of focusing the mind to achieve a state of calm and clarity",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Meditation reduces stress.",
+        "vi": "Thiền giúp giảm căng thẳng."
+      },
+      {
+        "en": "He practices meditation daily.",
+        "vi": "Anh ấy thực hành thiền hàng ngày."
+      }
+    ],
+    "word_family": [
+      "meditate (v)",
+      "meditative (adj)"
+    ],
+    "collocations": [
+      "do meditation",
+      "meditation session",
+      "meditation technique"
+    ],
+    "synonyms": [
+      "mindfulness"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I like meditation.",
+        "correct": "I like meditation.",
+        "explain_vi": "Không có lỗi phổ biến."
+      }
+    ],
+    "grammar_patterns": [
+      "do + meditation (noun)"
+    ]
+  },
+  {
+    "word": "photography",
+    "phonetic": "/fəˈtɒɡrəfi/",
+    "meaning_vi": "nhiếp ảnh",
+    "meaning_en": "the art or practice of taking and processing photographs",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Photography is her favorite hobby.",
+        "vi": "Nhiếp ảnh là sở thích yêu thích của cô ấy."
+      },
+      {
+        "en": "He is interested in landscape photography.",
+        "vi": "Anh ấy quan tâm đến nhiếp ảnh phong cảnh."
+      }
+    ],
+    "word_family": [
+      "photograph (n/v)",
+      "photographer (n)"
+    ],
+    "collocations": [
+      "do photography",
+      "photography equipment",
+      "photography exhibition"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I like photography.",
+        "correct": "I like photography.",
+        "explain_vi": "Không có lỗi phổ biến."
+      }
+    ],
+    "grammar_patterns": [
+      "do + photography (noun)"
+    ]
+  },
+  {
+    "word": "gardening",
+    "phonetic": "/ˈɡɑːrdnɪŋ/",
+    "meaning_vi": "làm vườn",
+    "meaning_en": "the activity of tending a garden",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Gardening is a relaxing hobby.",
+        "vi": "Làm vườn là một sở thích thư giãn."
+      },
+      {
+        "en": "She spends her free time gardening.",
+        "vi": "Cô ấy dành thời gian rảnh để làm vườn."
+      }
+    ],
+    "word_family": [
+      "garden (n/v)",
+      "gardener (n)"
+    ],
+    "collocations": [
+      "do gardening",
+      "gardening tools",
+      "gardening tips"
+    ],
+    "synonyms": [
+      "horticulture"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I like gardening.",
+        "correct": "I like gardening.",
+        "explain_vi": "Không có lỗi phổ biến."
+      }
+    ],
+    "grammar_patterns": [
+      "do + gardening (noun)"
+    ]
+  },
+  {
+    "word": "cooking",
+    "phonetic": "/ˈkʊkɪŋ/",
+    "meaning_vi": "nấu ăn",
+    "meaning_en": "the activity of preparing food by heating it",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Cooking is a useful skill.",
+        "vi": "Nấu ăn là một kỹ năng hữu ích."
+      },
+      {
+        "en": "He enjoys cooking Italian dishes.",
+        "vi": "Anh ấy thích nấu các món Ý."
+      }
+    ],
+    "word_family": [
+      "cook (v/n)",
+      "cookbook (n)"
+    ],
+    "collocations": [
+      "do cooking",
+      "cooking class",
+      "cooking recipe"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I like cooking.",
+        "correct": "I like cooking.",
+        "explain_vi": "Không có lỗi phổ biến."
+      }
+    ],
+    "grammar_patterns": [
+      "do + cooking (noun)"
+    ]
+  },
+  {
+    "word": "painting",
+    "phonetic": "/ˈpeɪntɪŋ/",
+    "meaning_vi": "vẽ tranh",
+    "meaning_en": "the activity of applying paint to a surface to create a picture",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Painting allows you to express creativity.",
+        "vi": "Vẽ tranh cho phép bạn thể hiện sự sáng tạo."
+      },
+      {
+        "en": "She took up painting as a hobby.",
+        "vi": "Cô ấy bắt đầu vẽ tranh như một sở thích."
+      }
+    ],
+    "word_family": [
+      "paint (v/n)",
+      "painter (n)"
+    ],
+    "collocations": [
+      "do painting",
+      "painting brush",
+      "painting canvas"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I like painting.",
+        "correct": "I like painting.",
+        "explain_vi": "Không có lỗi phổ biến."
+      }
+    ],
+    "grammar_patterns": [
+      "do + painting (noun)"
+    ]
+  },
+  {
+    "word": "reading",
+    "phonetic": "/ˈriːdɪŋ/",
+    "meaning_vi": "đọc sách",
+    "meaning_en": "the activity of looking at and understanding written words",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Reading expands your knowledge.",
+        "vi": "Đọc sách mở rộng kiến thức của bạn."
+      },
+      {
+        "en": "He enjoys reading novels.",
+        "vi": "Anh ấy thích đọc tiểu thuyết."
+      }
+    ],
+    "word_family": [
+      "read (v)",
+      "reader (n)"
+    ],
+    "collocations": [
+      "do reading",
+      "reading habit",
+      "reading material"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I like reading.",
+        "correct": "I like reading.",
+        "explain_vi": "Không có lỗi phổ biến."
+      }
+    ],
+    "grammar_patterns": [
+      "do + reading (noun)"
+    ]
+  },
+  {
+    "word": "immersive",
+    "phonetic": "/ɪˈmɜː.sɪv/",
+    "meaning_vi": "đắm chìm, nhập tâm",
+    "meaning_en": "providing a completely engaging experience",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "Virtual reality offers an immersive gaming experience.",
+        "vi": "Thực tế ảo mang lại trải nghiệm chơi game đắm chìm."
+      }
+    ],
+    "word_family": [
+      "immerse (v)",
+      "immersion (n)"
+    ],
+    "collocations": [
+      "immersive experience",
+      "immersive game",
+      "immersive environment"
+    ],
+    "synonyms": [
+      "engrossing",
+      "absorbing"
+    ],
+    "antonyms": [
+      "distracting"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I like immersive myself in reading.",
+        "correct": "I like to immerse myself in reading.",
+        "explain_vi": "'Immersive' là tính từ, không phải động từ."
+      }
+    ],
+    "grammar_patterns": [
+      "immersive + noun"
+    ]
+  },
+  {
+    "word": "curate",
+    "phonetic": "/ˈkjʊə.reɪt/",
+    "meaning_vi": "tuyển chọn, quản lý (bộ sưu tập)",
+    "meaning_en": "to select, organize, and look after items in a collection",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "She curates a collection of vintage vinyl records.",
+        "vi": "Cô ấy quản lý bộ sưu tập đĩa than cổ điển."
+      }
+    ],
+    "word_family": [
+      "curation (n)",
+      "curator (n)"
+    ],
+    "collocations": [
+      "curate a collection",
+      "curate an exhibition",
+      "curate content"
+    ],
+    "synonyms": [
+      "select",
+      "organize"
+    ],
+    "antonyms": [
+      "neglect"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "He is a curator for stamps.",
+        "correct": "He curates stamps.",
+        "explain_vi": "Nhầm lẫn giữa danh từ 'curator' và động từ 'curate'."
+      }
+    ],
+    "grammar_patterns": [
+      "curate + noun"
+    ]
+  },
+  {
+    "word": "dabble",
+    "phonetic": "/ˈdæb.əl/",
+    "meaning_vi": "làm thử, học đòi (một sở thích)",
+    "meaning_en": "to take part in an activity in a casual way",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "I dabble in watercolor painting on weekends.",
+        "vi": "Tôi thử vẽ màu nước vào cuối tuần."
+      }
+    ],
+    "word_family": [
+      "dabbler (n)"
+    ],
+    "collocations": [
+      "dabble in",
+      "dabble with"
+    ],
+    "synonyms": [
+      "try",
+      "experiment with"
+    ],
+    "antonyms": [
+      "specialize"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I dabble painting.",
+        "correct": "I dabble in painting.",
+        "explain_vi": "Thiếu giới từ 'in' sau 'dabble'."
+      }
+    ],
+    "grammar_patterns": [
+      "dabble in + noun/gerund"
+    ]
+  },
+  {
+    "word": "pastime",
+    "phonetic": "/ˈpɑːs.taɪm/",
+    "meaning_vi": "trò tiêu khiển, thú vui",
+    "meaning_en": "an activity that someone does regularly for enjoyment",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Reading is my favorite pastime.",
+        "vi": "Đọc sách là thú vui yêu thích của tôi."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "favorite pastime",
+      "popular pastime",
+      "leisure pastime"
+    ],
+    "synonyms": [
+      "hobby",
+      "leisure activity"
+    ],
+    "antonyms": [
+      "work",
+      "chore"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I have many pastime.",
+        "correct": "I have many pastimes.",
+        "explain_vi": "Quên thêm 's' ở số nhiều."
+      }
+    ],
+    "grammar_patterns": [
+      "pastime + to-infinitive (rare)",
+      "pastime + of + gerund"
+    ]
+  },
+  {
+    "word": "rejuvenate",
+    "phonetic": "/rɪˈdʒuː.və.neɪt/",
+    "meaning_vi": "làm trẻ lại, hồi phục năng lượng",
+    "meaning_en": "to make someone feel or look younger or more energetic",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "A weekend hiking trip rejuvenated me.",
+        "vi": "Một chuyến đi bộ đường dài cuối tuần đã làm tôi tràn đầy năng lượng."
+      }
+    ],
+    "word_family": [
+      "rejuvenation (n)",
+      "rejuvenating (adj)"
+    ],
+    "collocations": [
+      "rejuvenate the mind",
+      "rejuvenate the body",
+      "feel rejuvenated"
+    ],
+    "synonyms": [
+      "revitalize",
+      "refresh"
+    ],
+    "antonyms": [
+      "exhaust",
+      "drain"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I want to rejuvenate my hobby.",
+        "correct": "I want to rejuvenate my interest in my hobby.",
+        "explain_vi": "Dùng sai tân ngữ; 'rejuvenate' thường dùng với người hoặc cơ thể."
+      }
+    ],
+    "grammar_patterns": [
+      "rejuvenate + noun (person/body/mind)"
+    ]
+  },
+  {
+    "word": "whittle",
+    "phonetic": "/ˈwɪt.əl/",
+    "meaning_vi": "gọt, chuốt (gỗ)",
+    "meaning_en": "to carve wood into a shape by cutting small pieces off",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "He whittled a small bird from a piece of pine.",
+        "vi": "Anh ấy gọt một con chim nhỏ từ một mảnh gỗ thông."
+      }
+    ],
+    "word_family": [
+      "whittler (n)",
+      "whittling (n)"
+    ],
+    "collocations": [
+      "whittle away",
+      "whittle down",
+      "whittle a figure"
+    ],
+    "synonyms": [
+      "carve",
+      "shape"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "He whittles wood carving.",
+        "correct": "He whittles wood into carvings.",
+        "explain_vi": "Cấu trúc sai; cần 'into' để chỉ kết quả."
+      }
+    ],
+    "grammar_patterns": [
+      "whittle + noun (material) + into + noun (result)"
+    ]
+  },
+  {
+    "word": "crochet",
+    "phonetic": "/ˈkrəʊ.ʃeɪ/",
+    "meaning_vi": "móc len",
+    "meaning_en": "to make clothes or fabric using a hooked needle and thread",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "My grandmother taught me to crochet.",
+        "vi": "Bà tôi đã dạy tôi móc len."
+      }
+    ],
+    "word_family": [
+      "crocheter (n)",
+      "crocheting (n)"
+    ],
+    "collocations": [
+      "crochet a scarf",
+      "crochet a blanket",
+      "learn to crochet"
+    ],
+    "synonyms": [
+      "knit (similar but different technique)"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I crochet a hat by knitting.",
+        "correct": "I crochet a hat.",
+        "explain_vi": "Nhầm lẫn giữa crochet và knitting."
+      }
+    ],
+    "grammar_patterns": [
+      "crochet + noun (product)"
+    ]
+  },
+  {
+    "word": "decoupage",
+    "phonetic": "/ˌdeɪ.kuːˈpɑːʒ/",
+    "meaning_vi": "kỹ thuật cắt dán giấy trang trí",
+    "meaning_en": "the art of decorating objects by gluing cut-out paper designs onto them",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She made a beautiful decoupage box.",
+        "vi": "Cô ấy làm một chiếc hộp trang trí bằng kỹ thuật cắt dán giấy."
+      }
+    ],
+    "word_family": [
+      "decoupage (v)",
+      "decoupager (n)"
+    ],
+    "collocations": [
+      "decoupage project",
+      "decoupage technique",
+      "do decoupage"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I like decoupage pictures on boxes.",
+        "correct": "I like to decoupage boxes with pictures.",
+        "explain_vi": "Dùng sai từ loại; 'decoupage' là danh từ, 'decoupage' cũng có thể dùng như động từ."
+      }
+    ],
+    "grammar_patterns": [
+      "decoupage + noun (object)",
+      "do decoupage"
+    ]
+  },
+  {
+    "word": "calligraphy",
+    "phonetic": "/kəˈlɪɡ.rə.fi/",
+    "meaning_vi": "thư pháp",
+    "meaning_en": "the art of beautiful handwriting",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "He practices calligraphy every morning.",
+        "vi": "Anh ấy luyện thư pháp mỗi sáng."
+      }
+    ],
+    "word_family": [
+      "calligrapher (n)",
+      "calligraphic (adj)"
+    ],
+    "collocations": [
+      "practice calligraphy",
+      "calligraphy pen",
+      "calligraphy class"
+    ],
+    "synonyms": [
+      "handwriting",
+      "penmanship"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I like calligraphy writing.",
+        "correct": "I like calligraphy.",
+        "explain_vi": "Thừa từ 'writing'; calligraphy đã bao hàm nghĩa."
+      }
+    ],
+    "grammar_patterns": [
+      "calligraphy + noun (tool/class)"
+    ]
+  },
+  {
+    "word": "embroidery",
+    "phonetic": "/ɪmˈbrɔɪ.dər.i/",
+    "meaning_vi": "thêu",
+    "meaning_en": "the art of decorating fabric with needle and thread",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She learned embroidery from her mother.",
+        "vi": "Cô ấy học thêu từ mẹ."
+      }
+    ],
+    "word_family": [
+      "embroider (v)",
+      "embroiderer (n)"
+    ],
+    "collocations": [
+      "embroidery hoop",
+      "embroidery thread",
+      "embroidery design"
+    ],
+    "synonyms": [
+      "needlework",
+      "stitchery"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I embroider a picture on cloth.",
+        "correct": "I embroider a picture onto cloth.",
+        "explain_vi": "Thiếu giới từ 'onto'."
+      }
+    ],
+    "grammar_patterns": [
+      "embroidery + noun (type)",
+      "embroider + noun (design) + onto + noun (fabric)"
+    ]
+  },
+  {
+    "word": "woodworking",
+    "phonetic": "/ˈwʊd.wɜː.kɪŋ/",
+    "meaning_vi": "làm đồ gỗ",
+    "meaning_en": "the activity of making objects from wood",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Woodworking requires patience and precision.",
+        "vi": "Làm đồ gỗ đòi hỏi sự kiên nhẫn và chính xác."
+      }
+    ],
+    "word_family": [
+      "woodworker (n)",
+      "woodwork (n)"
+    ],
+    "collocations": [
+      "woodworking tools",
+      "woodworking project",
+      "woodworking class"
+    ],
+    "synonyms": [
+      "carpentry"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I like woodworking wood.",
+        "correct": "I like woodworking.",
+        "explain_vi": "Thừa từ 'wood'; woodworking đã liên quan đến gỗ."
+      }
+    ],
+    "grammar_patterns": [
+      "woodworking + noun (tool/class)"
+    ]
+  },
+  {
+    "word": "metalworking",
+    "phonetic": "/ˈmet.əl.wɜː.kɪŋ/",
+    "meaning_vi": "gia công kim loại",
+    "meaning_en": "the activity of making objects from metal",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "He took up metalworking as a hobby.",
+        "vi": "Anh ấy bắt đầu học gia công kim loại như một sở thích."
+      }
+    ],
+    "word_family": [
+      "metalworker (n)",
+      "metalwork (n)"
+    ],
+    "collocations": [
+      "metalworking tools",
+      "metalworking techniques",
+      "metalworking shop"
+    ],
+    "synonyms": [
+      "metalsmithing"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I work metal as a hobby.",
+        "correct": "I do metalworking as a hobby.",
+        "explain_vi": "Dùng sai động từ; nên dùng 'do metalworking'."
+      }
+    ],
+    "grammar_patterns": [
+      "metalworking + noun (tool/technique)"
+    ]
+  },
+  {
+    "word": "soapmaking",
+    "phonetic": "/ˈsəʊp.meɪ.kɪŋ/",
+    "meaning_vi": "làm xà phòng",
+    "meaning_en": "the activity of making soap from fats and lye",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Soapmaking has become a popular hobby.",
+        "vi": "Làm xà phòng đã trở thành một sở thích phổ biến."
+      }
+    ],
+    "word_family": [
+      "soapmaker (n)",
+      "soap (n)"
+    ],
+    "collocations": [
+      "soapmaking kit",
+      "soapmaking supplies",
+      "soapmaking recipe"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I make soap making.",
+        "correct": "I make soap.",
+        "explain_vi": "Trùng lặp; có thể nói 'I do soapmaking' hoặc 'I make soap'."
+      }
+    ],
+    "grammar_patterns": [
+      "soapmaking + noun (supplies)"
+    ]
+  },
+  {
+    "word": "candle making",
+    "phonetic": "/ˈkæn.dəl ˌmeɪ.kɪŋ/",
+    "meaning_vi": "làm nến",
+    "meaning_en": "the activity of making candles from wax and wicks",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Candle making is a relaxing craft.",
+        "vi": "Làm nến là một nghề thủ công thư giãn."
+      }
+    ],
+    "word_family": [
+      "candle maker (n)",
+      "candle (n)"
+    ],
+    "collocations": [
+      "candle making supplies",
+      "candle making workshop",
+      "candle making kit"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I like making candle.",
+        "correct": "I like making candles.",
+        "explain_vi": "Thiếu 's' ở số nhiều."
+      }
+    ],
+    "grammar_patterns": [
+      "candle making + noun (supplies/class)"
+    ]
+  },
+  {
+    "word": "jewelry making",
+    "phonetic": "/ˈdʒuː.əl.ri ˌmeɪ.kɪŋ/",
+    "meaning_vi": "làm đồ trang sức",
+    "meaning_en": "the activity of making jewelry from beads, metals, etc.",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She sells her jewelry making creations online.",
+        "vi": "Cô ấy bán các sản phẩm làm đồ trang sức của mình trực tuyến."
+      }
+    ],
+    "word_family": [
+      "jewelry maker (n)",
+      "jewelry (n)"
+    ],
+    "collocations": [
+      "jewelry making tools",
+      "jewelry making class",
+      "jewelry making kit"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I make jewelry making.",
+        "correct": "I make jewelry.",
+        "explain_vi": "Trùng lặp; có thể nói 'I do jewelry making' hoặc 'I make jewelry'."
+      }
+    ],
+    "grammar_patterns": [
+      "jewelry making + noun (supplies/class)"
+    ]
+  },
+  {
+    "word": "leatherworking",
+    "phonetic": "/ˈleð.ə.wɜː.kɪŋ/",
+    "meaning_vi": "làm đồ da",
+    "meaning_en": "the activity of making items from leather",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Leatherworking requires special stitching tools.",
+        "vi": "Làm đồ da đòi hỏi dụng cụ khâu đặc biệt."
+      }
+    ],
+    "word_family": [
+      "leatherworker (n)",
+      "leather (n)"
+    ],
+    "collocations": [
+      "leatherworking tools",
+      "leatherworking project",
+      "leatherworking class"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I work leather.",
+        "correct": "I do leatherworking.",
+        "explain_vi": "Dùng sai động từ; nên dùng 'do leatherworking'."
+      }
+    ],
+    "grammar_patterns": [
+      "leatherworking + noun (tool/class)"
+    ]
+  },
+  {
+    "word": "glassblowing",
+    "phonetic": "/ˈɡlɑːs.bləʊ.ɪŋ/",
+    "meaning_vi": "thổi thủy tinh",
+    "meaning_en": "the art of shaping molten glass by blowing air into it",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Glassblowing is a mesmerizing craft to watch.",
+        "vi": "Thổi thủy tinh là một nghề thủ công mê hoặc để xem."
+      }
+    ],
+    "word_family": [
+      "glassblower (n)",
+      "glass (n)"
+    ],
+    "collocations": [
+      "glassblowing studio",
+      "glassblowing class",
+      "glassblowing technique"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I blow glass.",
+        "correct": "I do glassblowing.",
+        "explain_vi": "Có thể nói 'I blow glass' nhưng 'do glassblowing' phổ biến hơn."
+      }
+    ],
+    "grammar_patterns": [
+      "glassblowing + noun (studio/class)"
+    ]
+  },
+  {
+    "word": "antiquing",
+    "phonetic": "/ænˈtiː.kɪŋ/",
+    "meaning_vi": "săn đồ cổ",
+    "meaning_en": "the activity of shopping for antiques",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "They go antiquing every weekend.",
+        "vi": "Họ đi săn đồ cổ mỗi cuối tuần."
+      }
+    ],
+    "word_family": [
+      "antique (n/adj)",
+      "antiquer (n)"
+    ],
+    "collocations": [
+      "go antiquing",
+      "antiquing trip",
+      "antiquing store"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I like antique.",
+        "correct": "I like antiquing.",
+        "explain_vi": "Nhầm lẫn giữa 'antique' (đồ cổ) và 'antiquing' (hoạt động)."
+      }
+    ],
+    "grammar_patterns": [
+      "go antiquing"
+    ]
+  },
+  {
+    "word": "beekeeping",
+    "phonetic": "/ˈbiː.kiː.pɪŋ/",
+    "meaning_vi": "nuôi ong",
+    "meaning_en": "the activity of keeping bees for honey or pollination",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Beekeeping requires protective gear.",
+        "vi": "Nuôi ong đòi hỏi đồ bảo hộ."
+      }
+    ],
+    "word_family": [
+      "beekeeper (n)",
+      "bee (n)"
+    ],
+    "collocations": [
+      "beekeeping suit",
+      "beekeeping equipment",
+      "beekeeping hobby"
+    ],
+    "synonyms": [
+      "apiculture"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I keep bee.",
+        "correct": "I keep bees.",
+        "explain_vi": "Thiếu 's' ở số nhiều."
+      }
+    ],
+    "grammar_patterns": [
+      "beekeeping + noun (suit/equipment)"
+    ]
+  },
+  {
+    "word": "model building",
+    "phonetic": "/ˈmɒd.əl ˌbɪl.dɪŋ/",
+    "meaning_vi": "lắp ráp mô hình",
+    "meaning_en": "the activity of constructing scale models of objects",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Model building is a detailed hobby.",
+        "vi": "Lắp ráp mô hình là một sở thích tỉ mỉ."
+      }
+    ],
+    "word_family": [
+      "model builder (n)",
+      "model (n)"
+    ],
+    "collocations": [
+      "model building kit",
+      "model building glue",
+      "model building hobby"
+    ],
+    "synonyms": [
+      "model making"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I build model.",
+        "correct": "I build models.",
+        "explain_vi": "Thiếu 's' ở số nhiều."
+      }
+    ],
+    "grammar_patterns": [
+      "model building + noun (kit/glue)"
+    ]
+  }
+]

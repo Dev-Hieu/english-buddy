@@ -1,0 +1,1567 @@
+[
+  {
+    "word": "house",
+    "phonetic": "/haʊs/",
+    "meaning_vi": "ngôi nhà",
+    "meaning_en": "a building for people to live in",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "This is my house.",
+        "vi": "Đây là nhà của tôi."
+      }
+    ],
+    "word_family": [
+      "housing (n)"
+    ],
+    "collocations": [
+      "big house",
+      "small house",
+      "my house"
+    ],
+    "synonyms": [
+      "home"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go to home",
+        "correct": "I go home",
+        "explain_vi": "Không dùng 'to' trước 'home' khi nói về việc về nhà"
+      }
+    ],
+    "grammar_patterns": [
+      "my/his/her + house",
+      "in a house"
+    ]
+  },
+  {
+    "word": "home",
+    "phonetic": "/hoʊm/",
+    "meaning_vi": "nhà (nơi ở)",
+    "meaning_en": "the place where you live",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I stay at home.",
+        "vi": "Tôi ở nhà."
+      }
+    ],
+    "word_family": [
+      "homeless (adj)"
+    ],
+    "collocations": [
+      "at home",
+      "go home",
+      "stay home"
+    ],
+    "synonyms": [
+      "house"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go to home",
+        "correct": "I go home",
+        "explain_vi": "Không dùng 'to' với 'home' khi chỉ hướng"
+      }
+    ],
+    "grammar_patterns": [
+      "at home",
+      "go home (no preposition)"
+    ]
+  },
+  {
+    "word": "school",
+    "phonetic": "/skuːl/",
+    "meaning_vi": "trường học",
+    "meaning_en": "a place where children go to learn",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "My son goes to school.",
+        "vi": "Con trai tôi đi học."
+      }
+    ],
+    "word_family": [
+      "student (n)",
+      "teacher (n)"
+    ],
+    "collocations": [
+      "go to school",
+      "at school",
+      "primary school"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go to the school",
+        "correct": "I go to school",
+        "explain_vi": "Không dùng mạo từ 'the' khi nói về mục đích học tập"
+      }
+    ],
+    "grammar_patterns": [
+      "go to school (no article)",
+      "at school"
+    ]
+  },
+  {
+    "word": "park",
+    "phonetic": "/pɑːrk/",
+    "meaning_vi": "công viên",
+    "meaning_en": "a public area with grass and trees",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Let's go to the park.",
+        "vi": "Chúng ta hãy đi công viên."
+      }
+    ],
+    "word_family": [
+      "parking (n)"
+    ],
+    "collocations": [
+      "in the park",
+      "play in the park",
+      "central park"
+    ],
+    "synonyms": [
+      "garden"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go park",
+        "correct": "I go to the park",
+        "explain_vi": "Cần giới từ 'to' và mạo từ 'the'"
+      }
+    ],
+    "grammar_patterns": [
+      "the park",
+      "in the park"
+    ]
+  },
+  {
+    "word": "hospital",
+    "phonetic": "/ˈhɑːspɪtl/",
+    "meaning_vi": "bệnh viện",
+    "meaning_en": "a place where sick people go for treatment",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "He is in the hospital.",
+        "vi": "Anh ấy đang ở bệnh viện."
+      }
+    ],
+    "word_family": [
+      "hospitalize (v)"
+    ],
+    "collocations": [
+      "go to hospital",
+      "in hospital",
+      "at the hospital"
+    ],
+    "synonyms": [
+      "clinic"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go to the hospital (British English)",
+        "correct": "I go to hospital",
+        "explain_vi": "Trong tiếng Anh Anh, không dùng 'the' khi nói về mục đích"
+      }
+    ],
+    "grammar_patterns": [
+      "go to hospital (BrE)",
+      "in hospital"
+    ]
+  },
+  {
+    "word": "shop",
+    "phonetic": "/ʃɒp/",
+    "meaning_vi": "cửa hàng",
+    "meaning_en": "a place where you buy things",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I buy milk at the shop.",
+        "vi": "Tôi mua sữa ở cửa hàng."
+      }
+    ],
+    "word_family": [
+      "shopping (n)"
+    ],
+    "collocations": [
+      "go to the shop",
+      "at the shop",
+      "shop assistant"
+    ],
+    "synonyms": [
+      "store"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go shop",
+        "correct": "I go to the shop",
+        "explain_vi": "Cần giới từ 'to' và mạo từ 'the'"
+      }
+    ],
+    "grammar_patterns": [
+      "the shop",
+      "at the shop"
+    ]
+  },
+  {
+    "word": "restaurant",
+    "phonetic": "/ˈrestərɒnt/",
+    "meaning_vi": "nhà hàng",
+    "meaning_en": "a place where you pay to eat meals",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We eat dinner at a restaurant.",
+        "vi": "Chúng tôi ăn tối ở nhà hàng."
+      }
+    ],
+    "word_family": [
+      "restaurateur (n)"
+    ],
+    "collocations": [
+      "go to a restaurant",
+      "in a restaurant",
+      "fast food restaurant"
+    ],
+    "synonyms": [
+      "cafe"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go to restaurant",
+        "correct": "I go to a restaurant",
+        "explain_vi": "Cần mạo từ 'a' hoặc 'the'"
+      }
+    ],
+    "grammar_patterns": [
+      "a restaurant",
+      "at the restaurant"
+    ]
+  },
+  {
+    "word": "library",
+    "phonetic": "/ˈlaɪbreri/",
+    "meaning_vi": "thư viện",
+    "meaning_en": "a place where you can borrow books",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She reads books in the library.",
+        "vi": "Cô ấy đọc sách trong thư viện."
+      }
+    ],
+    "word_family": [
+      "librarian (n)"
+    ],
+    "collocations": [
+      "at the library",
+      "go to the library",
+      "public library"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go library",
+        "correct": "I go to the library",
+        "explain_vi": "Cần giới từ 'to' và mạo từ 'the'"
+      }
+    ],
+    "grammar_patterns": [
+      "the library",
+      "in the library"
+    ]
+  },
+  {
+    "word": "bank",
+    "phonetic": "/bæŋk/",
+    "meaning_vi": "ngân hàng",
+    "meaning_en": "a place where you keep money",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I go to the bank.",
+        "vi": "Tôi đi ngân hàng."
+      }
+    ],
+    "word_family": [
+      "banking (n)"
+    ],
+    "collocations": [
+      "at the bank",
+      "go to the bank",
+      "bank account"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go bank",
+        "correct": "I go to the bank",
+        "explain_vi": "Cần giới từ 'to' và mạo từ 'the'"
+      }
+    ],
+    "grammar_patterns": [
+      "the bank",
+      "at the bank"
+    ]
+  },
+  {
+    "word": "airport",
+    "phonetic": "/ˈerpɔːrt/",
+    "meaning_vi": "sân bay",
+    "meaning_en": "a place where planes take off and land",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We arrive at the airport.",
+        "vi": "Chúng tôi đến sân bay."
+      }
+    ],
+    "word_family": [
+      "airplane (n)"
+    ],
+    "collocations": [
+      "at the airport",
+      "go to the airport",
+      "airport terminal"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go airport",
+        "correct": "I go to the airport",
+        "explain_vi": "Cần giới từ 'to' và mạo từ 'the'"
+      }
+    ],
+    "grammar_patterns": [
+      "the airport",
+      "at the airport"
+    ]
+  },
+  {
+    "word": "station",
+    "phonetic": "/ˈsteɪʃn/",
+    "meaning_vi": "ga (tàu, xe buýt)",
+    "meaning_en": "a place where trains or buses stop",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The train leaves from the station.",
+        "vi": "Tàu rời khỏi ga."
+      }
+    ],
+    "word_family": [
+      "stationary (adj)"
+    ],
+    "collocations": [
+      "at the station",
+      "train station",
+      "bus station"
+    ],
+    "synonyms": [
+      "depot"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go station",
+        "correct": "I go to the station",
+        "explain_vi": "Cần giới từ 'to' và mạo từ 'the'"
+      }
+    ],
+    "grammar_patterns": [
+      "the station",
+      "at the station"
+    ]
+  },
+  {
+    "word": "museum",
+    "phonetic": "/mjuːˈziːəm/",
+    "meaning_vi": "bảo tàng",
+    "meaning_en": "a place where you see historical objects",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We visit the museum.",
+        "vi": "Chúng tôi tham quan bảo tàng."
+      }
+    ],
+    "word_family": [
+      "museumgoer (n)"
+    ],
+    "collocations": [
+      "go to the museum",
+      "at the museum",
+      "art museum"
+    ],
+    "synonyms": [
+      "gallery"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go museum",
+        "correct": "I go to the museum",
+        "explain_vi": "Cần giới từ 'to' và mạo từ 'the'"
+      }
+    ],
+    "grammar_patterns": [
+      "the museum",
+      "at the museum"
+    ]
+  },
+  {
+    "word": "cinema",
+    "phonetic": "/ˈsɪnəmə/",
+    "meaning_vi": "rạp chiếu phim",
+    "meaning_en": "a place where you watch movies",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Let's go to the cinema.",
+        "vi": "Chúng ta hãy đi rạp chiếu phim."
+      }
+    ],
+    "word_family": [
+      "cinematic (adj)"
+    ],
+    "collocations": [
+      "go to the cinema",
+      "at the cinema",
+      "cinema hall"
+    ],
+    "synonyms": [
+      "movie theater"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go cinema",
+        "correct": "I go to the cinema",
+        "explain_vi": "Cần giới từ 'to' và mạo từ 'the'"
+      }
+    ],
+    "grammar_patterns": [
+      "the cinema",
+      "at the cinema"
+    ]
+  },
+  {
+    "word": "hotel",
+    "phonetic": "/hoʊˈtel/",
+    "meaning_vi": "khách sạn",
+    "meaning_en": "a place where you stay when traveling",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We stay at a hotel.",
+        "vi": "Chúng tôi ở khách sạn."
+      }
+    ],
+    "word_family": [
+      "hotelier (n)"
+    ],
+    "collocations": [
+      "stay in a hotel",
+      "at the hotel",
+      "hotel room"
+    ],
+    "synonyms": [
+      "inn"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go to hotel",
+        "correct": "I go to a hotel",
+        "explain_vi": "Cần mạo từ 'a' hoặc 'the'"
+      }
+    ],
+    "grammar_patterns": [
+      "a hotel",
+      "at the hotel"
+    ]
+  },
+  {
+    "word": "office",
+    "phonetic": "/ˈɔːfɪs/",
+    "meaning_vi": "văn phòng",
+    "meaning_en": "a room where people work",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She works in an office.",
+        "vi": "Cô ấy làm việc ở văn phòng."
+      }
+    ],
+    "word_family": [
+      "officer (n)"
+    ],
+    "collocations": [
+      "in the office",
+      "go to the office",
+      "office building"
+    ],
+    "synonyms": [
+      "workplace"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go office",
+        "correct": "I go to the office",
+        "explain_vi": "Cần giới từ 'to' và mạo từ 'the'"
+      }
+    ],
+    "grammar_patterns": [
+      "the office",
+      "in an office"
+    ]
+  },
+  {
+    "word": "church",
+    "phonetic": "/tʃɜːrtʃ/",
+    "meaning_vi": "nhà thờ",
+    "meaning_en": "a building for Christian worship",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "They go to church on Sunday.",
+        "vi": "Họ đi nhà thờ vào Chủ nhật."
+      }
+    ],
+    "word_family": [
+      "churchgoer (n)"
+    ],
+    "collocations": [
+      "go to church",
+      "at church",
+      "in church"
+    ],
+    "synonyms": [
+      "chapel"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go to the church",
+        "correct": "I go to church",
+        "explain_vi": "Không dùng mạo từ 'the' khi nói về mục đích tôn giáo"
+      }
+    ],
+    "grammar_patterns": [
+      "go to church (no article)",
+      "at church"
+    ]
+  },
+  {
+    "word": "market",
+    "phonetic": "/ˈmɑːrkɪt/",
+    "meaning_vi": "chợ",
+    "meaning_en": "a place where people buy and sell goods",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We buy fruit at the market.",
+        "vi": "Chúng tôi mua trái cây ở chợ."
+      }
+    ],
+    "word_family": [
+      "marketing (n)"
+    ],
+    "collocations": [
+      "at the market",
+      "go to the market",
+      "street market"
+    ],
+    "synonyms": [
+      "bazaar"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go market",
+        "correct": "I go to the market",
+        "explain_vi": "Cần giới từ 'to' và mạo từ 'the'"
+      }
+    ],
+    "grammar_patterns": [
+      "the market",
+      "at the market"
+    ]
+  },
+  {
+    "word": "beach",
+    "phonetic": "/biːtʃ/",
+    "meaning_vi": "bãi biển",
+    "meaning_en": "a sandy area by the sea",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We play on the beach.",
+        "vi": "Chúng tôi chơi trên bãi biển."
+      }
+    ],
+    "word_family": [
+      "beachy (adj)"
+    ],
+    "collocations": [
+      "at the beach",
+      "go to the beach",
+      "on the beach"
+    ],
+    "synonyms": [
+      "shore"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go beach",
+        "correct": "I go to the beach",
+        "explain_vi": "Cần giới từ 'to' và mạo từ 'the'"
+      }
+    ],
+    "grammar_patterns": [
+      "the beach",
+      "on the beach"
+    ]
+  },
+  {
+    "word": "garden",
+    "phonetic": "/ˈɡɑːrdn/",
+    "meaning_vi": "vườn",
+    "meaning_en": "a piece of land with flowers and plants",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Flowers grow in the garden.",
+        "vi": "Hoa mọc trong vườn."
+      }
+    ],
+    "word_family": [
+      "gardener (n)",
+      "gardening (n)"
+    ],
+    "collocations": [
+      "in the garden",
+      "garden center",
+      "flower garden"
+    ],
+    "synonyms": [
+      "yard"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go garden",
+        "correct": "I go to the garden",
+        "explain_vi": "Cần giới từ 'to' và mạo từ 'the'"
+      }
+    ],
+    "grammar_patterns": [
+      "the garden",
+      "in the garden"
+    ]
+  },
+  {
+    "word": "zoo",
+    "phonetic": "/zuː/",
+    "meaning_vi": "sở thú",
+    "meaning_en": "a place where animals are kept for display",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Children like to go to the zoo.",
+        "vi": "Trẻ em thích đi sở thú."
+      }
+    ],
+    "word_family": [
+      "zoology (n)"
+    ],
+    "collocations": [
+      "at the zoo",
+      "go to the zoo",
+      "zoo keeper"
+    ],
+    "synonyms": [
+      "wildlife park"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go zoo",
+        "correct": "I go to the zoo",
+        "explain_vi": "Cần giới từ 'to' và mạo từ 'the'"
+      }
+    ],
+    "grammar_patterns": [
+      "the zoo",
+      "at the zoo"
+    ]
+  },
+  {
+    "word": "street",
+    "phonetic": "/striːt/",
+    "meaning_vi": "đường phố",
+    "meaning_en": "a public road in a city or town",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The street is busy.",
+        "vi": "Đường phố đông đúc."
+      },
+      {
+        "en": "I live on this street.",
+        "vi": "Tôi sống trên con đường này."
+      }
+    ],
+    "word_family": [
+      "streetcar (n)",
+      "streetlight (n)"
+    ],
+    "collocations": [
+      "main street",
+      "cross the street",
+      "on the street"
+    ],
+    "synonyms": [
+      "road",
+      "avenue"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I live in street.",
+        "correct": "I live on the street.",
+        "explain_vi": "Dùng 'on' thay vì 'in' khi nói về đường phố."
+      }
+    ],
+    "grammar_patterns": [
+      "on + the + street",
+      "street + is + adjective"
+    ]
+  },
+  {
+    "word": "city",
+    "phonetic": "/ˈsɪti/",
+    "meaning_vi": "thành phố",
+    "meaning_en": "a large and important town",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I live in a big city.",
+        "vi": "Tôi sống ở một thành phố lớn."
+      },
+      {
+        "en": "The city is noisy.",
+        "vi": "Thành phố ồn ào."
+      }
+    ],
+    "word_family": [
+      "citizen (n)",
+      "city center (n)"
+    ],
+    "collocations": [
+      "big city",
+      "city center",
+      "in the city"
+    ],
+    "synonyms": [
+      "town",
+      "metropolis"
+    ],
+    "antonyms": [
+      "village"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I go to city.",
+        "correct": "I go to the city.",
+        "explain_vi": "Cần mạo từ 'the' trước 'city'."
+      }
+    ],
+    "grammar_patterns": [
+      "in + the + city",
+      "city + is + adjective"
+    ]
+  },
+  {
+    "word": "village",
+    "phonetic": "/ˈvɪlɪdʒ/",
+    "meaning_vi": "làng, ngôi làng",
+    "meaning_en": "a small group of houses in the countryside",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "My village is small.",
+        "vi": "Làng của tôi nhỏ."
+      },
+      {
+        "en": "They live in a village.",
+        "vi": "Họ sống trong một ngôi làng."
+      }
+    ],
+    "word_family": [
+      "villager (n)",
+      "village life (n)"
+    ],
+    "collocations": [
+      "small village",
+      "in a village",
+      "village market"
+    ],
+    "synonyms": [
+      "hamlet",
+      "settlement"
+    ],
+    "antonyms": [
+      "city"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I live in village.",
+        "correct": "I live in a village.",
+        "explain_vi": "Cần mạo từ 'a' trước 'village'."
+      }
+    ],
+    "grammar_patterns": [
+      "in + a + village",
+      "village + is + adjective"
+    ]
+  },
+  {
+    "word": "countryside",
+    "phonetic": "/ˈkʌntri.saɪd/",
+    "meaning_vi": "vùng nông thôn",
+    "meaning_en": "land outside cities and towns",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The countryside is beautiful.",
+        "vi": "Vùng nông thôn rất đẹp."
+      },
+      {
+        "en": "I like the countryside.",
+        "vi": "Tôi thích vùng nông thôn."
+      }
+    ],
+    "word_family": [
+      "country (n)",
+      "countryside (n)"
+    ],
+    "collocations": [
+      "in the countryside",
+      "beautiful countryside",
+      "live in the countryside"
+    ],
+    "synonyms": [
+      "rural area",
+      "country"
+    ],
+    "antonyms": [
+      "city",
+      "urban area"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I go to countryside.",
+        "correct": "I go to the countryside.",
+        "explain_vi": "Cần mạo từ 'the' trước 'countryside'."
+      }
+    ],
+    "grammar_patterns": [
+      "in + the + countryside",
+      "the + countryside + is + adjective"
+    ]
+  },
+  {
+    "word": "bridge",
+    "phonetic": "/brɪdʒ/",
+    "meaning_vi": "cây cầu",
+    "meaning_en": "a structure built over a river or road",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "There is a bridge over the river.",
+        "vi": "Có một cây cầu bắc qua sông."
+      },
+      {
+        "en": "We walk across the bridge.",
+        "vi": "Chúng tôi đi bộ qua cầu."
+      }
+    ],
+    "word_family": [
+      "bridge (v)",
+      "bridge builder (n)"
+    ],
+    "collocations": [
+      "cross the bridge",
+      "over the bridge",
+      "under the bridge"
+    ],
+    "synonyms": [
+      "viaduct",
+      "overpass"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go on bridge.",
+        "correct": "I go over the bridge.",
+        "explain_vi": "Dùng 'over' thay vì 'on' khi chỉ đi qua cầu."
+      }
+    ],
+    "grammar_patterns": [
+      "cross + the + bridge",
+      "over + the + bridge"
+    ]
+  },
+  {
+    "word": "river",
+    "phonetic": "/ˈrɪvər/",
+    "meaning_vi": "sông",
+    "meaning_en": "a large natural stream of water",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The river is long.",
+        "vi": "Con sông dài."
+      },
+      {
+        "en": "We swim in the river.",
+        "vi": "Chúng tôi bơi ở sông."
+      }
+    ],
+    "word_family": [
+      "riverside (n)",
+      "riverbank (n)"
+    ],
+    "collocations": [
+      "along the river",
+      "across the river",
+      "in the river"
+    ],
+    "synonyms": [
+      "stream",
+      "creek"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go to river.",
+        "correct": "I go to the river.",
+        "explain_vi": "Cần mạo từ 'the' trước 'river'."
+      }
+    ],
+    "grammar_patterns": [
+      "in + the + river",
+      "the + river + is + adjective"
+    ]
+  },
+  {
+    "word": "sea",
+    "phonetic": "/siː/",
+    "meaning_vi": "biển",
+    "meaning_en": "a large body of salt water",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The sea is blue.",
+        "vi": "Biển xanh."
+      },
+      {
+        "en": "I like the sea.",
+        "vi": "Tôi thích biển."
+      }
+    ],
+    "word_family": [
+      "seaside (n)",
+      "seawater (n)"
+    ],
+    "collocations": [
+      "by the sea",
+      "at sea",
+      "in the sea"
+    ],
+    "synonyms": [
+      "ocean",
+      "deep"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go to sea.",
+        "correct": "I go to the sea.",
+        "explain_vi": "Cần mạo từ 'the' trước 'sea'."
+      }
+    ],
+    "grammar_patterns": [
+      "by + the + sea",
+      "the + sea + is + adjective"
+    ]
+  },
+  {
+    "word": "mountain",
+    "phonetic": "/ˈmaʊntɪn/",
+    "meaning_vi": "núi",
+    "meaning_en": "a very high hill",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The mountain is high.",
+        "vi": "Ngọn núi cao."
+      },
+      {
+        "en": "They climb the mountain.",
+        "vi": "Họ leo núi."
+      }
+    ],
+    "word_family": [
+      "mountainous (adj)",
+      "mountaineer (n)"
+    ],
+    "collocations": [
+      "climb a mountain",
+      "high mountain",
+      "in the mountains"
+    ],
+    "synonyms": [
+      "peak",
+      "summit"
+    ],
+    "antonyms": [
+      "valley"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I go to mountain.",
+        "correct": "I go to the mountain.",
+        "explain_vi": "Cần mạo từ 'the' trước 'mountain'."
+      }
+    ],
+    "grammar_patterns": [
+      "in + the + mountains",
+      "climb + a + mountain"
+    ]
+  },
+  {
+    "word": "forest",
+    "phonetic": "/ˈfɒrɪst/",
+    "meaning_vi": "rừng",
+    "meaning_en": "a large area with many trees",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The forest is dark.",
+        "vi": "Khu rừng tối."
+      },
+      {
+        "en": "We walk in the forest.",
+        "vi": "Chúng tôi đi bộ trong rừng."
+      }
+    ],
+    "word_family": [
+      "forested (adj)",
+      "forestry (n)"
+    ],
+    "collocations": [
+      "in the forest",
+      "forest fire",
+      "dense forest"
+    ],
+    "synonyms": [
+      "woods",
+      "jungle"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go to forest.",
+        "correct": "I go to the forest.",
+        "explain_vi": "Cần mạo từ 'the' trước 'forest'."
+      }
+    ],
+    "grammar_patterns": [
+      "in + the + forest",
+      "the + forest + is + adjective"
+    ]
+  },
+  {
+    "word": "lake",
+    "phonetic": "/leɪk/",
+    "meaning_vi": "hồ",
+    "meaning_en": "a large area of water surrounded by land",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The lake is beautiful.",
+        "vi": "Hồ đẹp."
+      },
+      {
+        "en": "They fish in the lake.",
+        "vi": "Họ câu cá ở hồ."
+      }
+    ],
+    "word_family": [
+      "lakeside (n)",
+      "lakefront (n)"
+    ],
+    "collocations": [
+      "by the lake",
+      "in the lake",
+      "lake view"
+    ],
+    "synonyms": [
+      "pond",
+      "reservoir"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go to lake.",
+        "correct": "I go to the lake.",
+        "explain_vi": "Cần mạo từ 'the' trước 'lake'."
+      }
+    ],
+    "grammar_patterns": [
+      "by + the + lake",
+      "in + the + lake"
+    ]
+  },
+  {
+    "word": "farm",
+    "phonetic": "/fɑːrm/",
+    "meaning_vi": "trang trại",
+    "meaning_en": "a place where crops or animals are raised",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The farm has cows.",
+        "vi": "Trang trại có bò."
+      },
+      {
+        "en": "They work on a farm.",
+        "vi": "Họ làm việc ở trang trại."
+      }
+    ],
+    "word_family": [
+      "farmer (n)",
+      "farmhouse (n)"
+    ],
+    "collocations": [
+      "on a farm",
+      "farm animal",
+      "farm work"
+    ],
+    "synonyms": [
+      "ranch",
+      "plantation"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I live in farm.",
+        "correct": "I live on a farm.",
+        "explain_vi": "Dùng 'on' thay vì 'in' với 'farm'."
+      }
+    ],
+    "grammar_patterns": [
+      "on + a + farm",
+      "farm + has + animals"
+    ]
+  },
+  {
+    "word": "playground",
+    "phonetic": "/ˈpleɪɡraʊnd/",
+    "meaning_vi": "sân chơi",
+    "meaning_en": "an outdoor area for children to play",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Children play in the playground.",
+        "vi": "Trẻ em chơi ở sân chơi."
+      },
+      {
+        "en": "The playground has swings.",
+        "vi": "Sân chơi có xích đu."
+      }
+    ],
+    "word_family": [
+      "play (v)",
+      "ground (n)"
+    ],
+    "collocations": [
+      "in the playground",
+      "playground equipment",
+      "school playground"
+    ],
+    "synonyms": [
+      "play area",
+      "recreation ground"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go to playground.",
+        "correct": "I go to the playground.",
+        "explain_vi": "Cần mạo từ 'the' trước 'playground'."
+      }
+    ],
+    "grammar_patterns": [
+      "in + the + playground",
+      "playground + has + noun"
+    ]
+  },
+  {
+    "word": "square",
+    "phonetic": "/skweər/",
+    "meaning_vi": "quảng trường",
+    "meaning_en": "an open public area in a town",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The square is big.",
+        "vi": "Quảng trường rộng."
+      },
+      {
+        "en": "We meet in the square.",
+        "vi": "Chúng tôi gặp nhau ở quảng trường."
+      }
+    ],
+    "word_family": [
+      "square (adj)",
+      "town square (n)"
+    ],
+    "collocations": [
+      "main square",
+      "in the square",
+      "town square"
+    ],
+    "synonyms": [
+      "plaza",
+      "piazza"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go to square.",
+        "correct": "I go to the square.",
+        "explain_vi": "Cần mạo từ 'the' trước 'square'."
+      }
+    ],
+    "grammar_patterns": [
+      "in + the + square",
+      "square + is + adjective"
+    ]
+  },
+  {
+    "word": "hill",
+    "phonetic": "/hɪl/",
+    "meaning_vi": "đồi",
+    "meaning_en": "a raised area of land, lower than a mountain",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The hill is green.",
+        "vi": "Đồi xanh."
+      },
+      {
+        "en": "We walk up the hill.",
+        "vi": "Chúng tôi đi bộ lên đồi."
+      }
+    ],
+    "word_family": [
+      "hilly (adj)",
+      "hillside (n)"
+    ],
+    "collocations": [
+      "up the hill",
+      "down the hill",
+      "on the hill"
+    ],
+    "synonyms": [
+      "mound",
+      "slope"
+    ],
+    "antonyms": [
+      "valley"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I go to hill.",
+        "correct": "I go to the hill.",
+        "explain_vi": "Cần mạo từ 'the' trước 'hill'."
+      }
+    ],
+    "grammar_patterns": [
+      "up + the + hill",
+      "on + the + hill"
+    ]
+  },
+  {
+    "word": "island",
+    "phonetic": "/ˈaɪlənd/",
+    "meaning_vi": "đảo",
+    "meaning_en": "a piece of land surrounded by water",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The island is small.",
+        "vi": "Hòn đảo nhỏ."
+      },
+      {
+        "en": "They live on an island.",
+        "vi": "Họ sống trên một hòn đảo."
+      }
+    ],
+    "word_family": [
+      "islander (n)",
+      "island nation (n)"
+    ],
+    "collocations": [
+      "on an island",
+      "desert island",
+      "island life"
+    ],
+    "synonyms": [
+      "isle",
+      "atoll"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go to island.",
+        "correct": "I go to an island.",
+        "explain_vi": "Cần mạo từ 'an' trước 'island'."
+      }
+    ],
+    "grammar_patterns": [
+      "on + an + island",
+      "island + is + adjective"
+    ]
+  },
+  {
+    "word": "parking lot",
+    "phonetic": "/ˈpɑːrkɪŋ lɒt/",
+    "meaning_vi": "bãi đỗ xe",
+    "meaning_en": "an area where cars can be parked",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The parking lot is full.",
+        "vi": "Bãi đỗ xe đầy."
+      },
+      {
+        "en": "I park in the parking lot.",
+        "vi": "Tôi đỗ xe ở bãi đỗ xe."
+      }
+    ],
+    "word_family": [
+      "park (v)",
+      "parking (n)"
+    ],
+    "collocations": [
+      "in the parking lot",
+      "parking lot attendant",
+      "parking lot fee"
+    ],
+    "synonyms": [
+      "car park",
+      "garage"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go to parking lot.",
+        "correct": "I go to the parking lot.",
+        "explain_vi": "Cần mạo từ 'the' trước 'parking lot'."
+      }
+    ],
+    "grammar_patterns": [
+      "in + the + parking lot",
+      "parking lot + is + adjective"
+    ]
+  },
+  {
+    "word": "bus stop",
+    "phonetic": "/ˈbʌs stɒp/",
+    "meaning_vi": "trạm xe buýt",
+    "meaning_en": "a place where buses stop for passengers",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I wait at the bus stop.",
+        "vi": "Tôi đợi ở trạm xe buýt."
+      },
+      {
+        "en": "The bus stop is near my house.",
+        "vi": "Trạm xe buýt gần nhà tôi."
+      }
+    ],
+    "word_family": [
+      "bus (n)",
+      "stop (v/n)"
+    ],
+    "collocations": [
+      "at the bus stop",
+      "wait at the bus stop",
+      "next bus stop"
+    ],
+    "synonyms": [
+      "bus station",
+      "bus shelter"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go to bus stop.",
+        "correct": "I go to the bus stop.",
+        "explain_vi": "Cần mạo từ 'the' trước 'bus stop'."
+      }
+    ],
+    "grammar_patterns": [
+      "at + the + bus stop",
+      "bus stop + is + preposition + place"
+    ]
+  },
+  {
+    "word": "corner",
+    "phonetic": "/ˈkɔːrnər/",
+    "meaning_vi": "góc phố",
+    "meaning_en": "a place where two streets meet",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The shop is on the corner.",
+        "vi": "Cửa hàng ở góc phố."
+      },
+      {
+        "en": "Turn left at the corner.",
+        "vi": "Rẽ trái ở góc phố."
+      }
+    ],
+    "word_family": [
+      "corner (v)",
+      "corner shop (n)"
+    ],
+    "collocations": [
+      "on the corner",
+      "at the corner",
+      "corner of the street"
+    ],
+    "synonyms": [
+      "intersection",
+      "junction"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I meet at corner.",
+        "correct": "I meet at the corner.",
+        "explain_vi": "Cần mạo từ 'the' trước 'corner'."
+      }
+    ],
+    "grammar_patterns": [
+      "on + the + corner",
+      "at + the + corner"
+    ]
+  },
+  {
+    "word": "stadium",
+    "phonetic": "/ˈsteɪdiəm/",
+    "meaning_vi": "sân vận động",
+    "meaning_en": "a large place for sports events",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The stadium is big.",
+        "vi": "Sân vận động lớn."
+      },
+      {
+        "en": "They play football in the stadium.",
+        "vi": "Họ chơi bóng đá ở sân vận động."
+      }
+    ],
+    "word_family": [
+      "stadiums (pl)",
+      "stadium seating (n)"
+    ],
+    "collocations": [
+      "in the stadium",
+      "football stadium",
+      "stadium event"
+    ],
+    "synonyms": [
+      "arena",
+      "field"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go to stadium.",
+        "correct": "I go to the stadium.",
+        "explain_vi": "Cần mạo từ 'the' trước 'stadium'."
+      }
+    ],
+    "grammar_patterns": [
+      "in + the + stadium",
+      "stadium + is + adjective"
+    ]
+  },
+  {
+    "word": "theatre",
+    "phonetic": "/ˈθɪətər/",
+    "meaning_vi": "nhà hát, rạp hát",
+    "meaning_en": "a building where plays or shows are performed",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The theatre is old.",
+        "vi": "Nhà hát cũ."
+      },
+      {
+        "en": "We watch a play at the theatre.",
+        "vi": "Chúng tôi xem kịch ở nhà hát."
+      }
+    ],
+    "word_family": [
+      "theatrical (adj)",
+      "theatregoer (n)"
+    ],
+    "collocations": [
+      "at the theatre",
+      "go to the theatre",
+      "theatre performance"
+    ],
+    "synonyms": [
+      "playhouse",
+      "auditorium"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go to theatre.",
+        "correct": "I go to the theatre.",
+        "explain_vi": "Cần mạo từ 'the' trước 'theatre'."
+      }
+    ],
+    "grammar_patterns": [
+      "at + the + theatre",
+      "go + to + the + theatre"
+    ]
+  }
+]

@@ -1,0 +1,2227 @@
+[
+  {
+    "word": "shirt",
+    "phonetic": "/ʃɜːrt/",
+    "meaning_vi": "áo sơ mi",
+    "meaning_en": "a piece of clothing for the upper body with sleeves and a collar",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "He is wearing a white shirt.",
+        "vi": "Anh ấy đang mặc một chiếc áo sơ mi trắng."
+      }
+    ],
+    "word_family": [
+      "shirtless (adj)"
+    ],
+    "collocations": [
+      "wear a shirt",
+      "button up a shirt",
+      "iron a shirt"
+    ],
+    "synonyms": [
+      "blouse (for women)"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I wear a shirt red.",
+        "correct": "I wear a red shirt.",
+        "explain_vi": "Tính từ đứng trước danh từ."
+      }
+    ],
+    "grammar_patterns": [
+      "a/an + (adjective) + shirt"
+    ]
+  },
+  {
+    "word": "jeans",
+    "phonetic": "/dʒiːnz/",
+    "meaning_vi": "quần jean",
+    "meaning_en": "pants made of denim",
+    "pos": "noun (plural)",
+    "examples": [
+      {
+        "en": "I like wearing blue jeans.",
+        "vi": "Tôi thích mặc quần jean xanh."
+      }
+    ],
+    "word_family": [
+      "jean (adj) - jean jacket"
+    ],
+    "collocations": [
+      "a pair of jeans",
+      "wear jeans",
+      "blue jeans"
+    ],
+    "synonyms": [
+      "denims"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have a jeans.",
+        "correct": "I have a pair of jeans.",
+        "explain_vi": "Jeans là danh từ số nhiều, cần 'a pair of'."
+      }
+    ],
+    "grammar_patterns": [
+      "a pair of + jeans"
+    ]
+  },
+  {
+    "word": "dress",
+    "phonetic": "/dres/",
+    "meaning_vi": "váy",
+    "meaning_en": "a one-piece garment for women covering the body and often reaching to the legs",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She bought a new dress.",
+        "vi": "Cô ấy đã mua một chiếc váy mới."
+      }
+    ],
+    "word_family": [
+      "dressy (adj)",
+      "dressed (adj)"
+    ],
+    "collocations": [
+      "wear a dress",
+      "a summer dress",
+      "a wedding dress"
+    ],
+    "synonyms": [
+      "gown (formal)"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "She is dressing a dress.",
+        "correct": "She is wearing a dress.",
+        "explain_vi": "'Dress' là mặc quần áo, không phải mặc váy."
+      }
+    ],
+    "grammar_patterns": [
+      "a/an + (adjective) + dress"
+    ]
+  },
+  {
+    "word": "jacket",
+    "phonetic": "/ˈdʒæk.ɪt/",
+    "meaning_vi": "áo khoác",
+    "meaning_en": "a short coat that covers the upper body",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Put on your jacket; it's cold.",
+        "vi": "Mặc áo khoác vào; trời lạnh."
+      }
+    ],
+    "word_family": [
+      "jacketed (adj)"
+    ],
+    "collocations": [
+      "wear a jacket",
+      "leather jacket",
+      "zip up a jacket"
+    ],
+    "synonyms": [
+      "coat (longer)"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have jacket black.",
+        "correct": "I have a black jacket.",
+        "explain_vi": "Thiếu mạo từ và sai trật tự tính từ."
+      }
+    ],
+    "grammar_patterns": [
+      "a/an + (adjective) + jacket"
+    ]
+  },
+  {
+    "word": "shoes",
+    "phonetic": "/ʃuːz/",
+    "meaning_vi": "giày",
+    "meaning_en": "footwear covering the foot",
+    "pos": "noun (plural)",
+    "examples": [
+      {
+        "en": "I need new shoes.",
+        "vi": "Tôi cần đôi giày mới."
+      }
+    ],
+    "word_family": [
+      "shoe (singular)",
+      "shoeless (adj)"
+    ],
+    "collocations": [
+      "a pair of shoes",
+      "wear shoes",
+      "take off shoes"
+    ],
+    "synonyms": [
+      "footwear"
+    ],
+    "antonyms": [
+      "socks"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I have a shoes.",
+        "correct": "I have a pair of shoes.",
+        "explain_vi": "Shoes là số nhiều, cần 'a pair of'."
+      }
+    ],
+    "grammar_patterns": [
+      "a pair of + shoes"
+    ]
+  },
+  {
+    "word": "hat",
+    "phonetic": "/hæt/",
+    "meaning_vi": "mũ",
+    "meaning_en": "a covering for the head",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She wears a hat to protect from the sun.",
+        "vi": "Cô ấy đội mũ để bảo vệ khỏi nắng."
+      }
+    ],
+    "word_family": [
+      "hatted (adj)",
+      "hatless (adj)"
+    ],
+    "collocations": [
+      "wear a hat",
+      "put on a hat",
+      "take off a hat"
+    ],
+    "synonyms": [
+      "cap (baseball cap)"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have hat.",
+        "correct": "I have a hat.",
+        "explain_vi": "Thiếu mạo từ."
+      }
+    ],
+    "grammar_patterns": [
+      "a/an + hat"
+    ]
+  },
+  {
+    "word": "socks",
+    "phonetic": "/sɒks/",
+    "meaning_vi": "tất, vớ",
+    "meaning_en": "garments worn on the feet",
+    "pos": "noun (plural)",
+    "examples": [
+      {
+        "en": "I always wear socks with shoes.",
+        "vi": "Tôi luôn đi tất với giày."
+      }
+    ],
+    "word_family": [
+      "sock (singular)",
+      "socked (adj)"
+    ],
+    "collocations": [
+      "a pair of socks",
+      "wear socks",
+      "change socks"
+    ],
+    "synonyms": [
+      "stockings (longer)"
+    ],
+    "antonyms": [
+      "shoes"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I have a socks.",
+        "correct": "I have a pair of socks.",
+        "explain_vi": "Socks là số nhiều."
+      }
+    ],
+    "grammar_patterns": [
+      "a pair of + socks"
+    ]
+  },
+  {
+    "word": "belt",
+    "phonetic": "/belt/",
+    "meaning_vi": "thắt lưng",
+    "meaning_en": "a strip of material worn around the waist",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "He needs a belt to hold his pants up.",
+        "vi": "Anh ấy cần một cái thắt lưng để giữ quần."
+      }
+    ],
+    "word_family": [
+      "belted (adj)",
+      "beltless (adj)"
+    ],
+    "collocations": [
+      "wear a belt",
+      "tighten a belt",
+      "leather belt"
+    ],
+    "synonyms": [
+      "waistband"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I put belt.",
+        "correct": "I put on a belt.",
+        "explain_vi": "Cần 'put on' và mạo từ."
+      }
+    ],
+    "grammar_patterns": [
+      "a/an + belt"
+    ]
+  },
+  {
+    "word": "scarf",
+    "phonetic": "/skɑːrf/",
+    "meaning_vi": "khăn quàng cổ",
+    "meaning_en": "a piece of cloth worn around the neck",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She wears a scarf in winter.",
+        "vi": "Cô ấy quàng khăn vào mùa đông."
+      }
+    ],
+    "word_family": [
+      "scarves (plural)"
+    ],
+    "collocations": [
+      "wear a scarf",
+      "knit a scarf",
+      "wool scarf"
+    ],
+    "synonyms": [
+      "muffler"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have scarf red.",
+        "correct": "I have a red scarf.",
+        "explain_vi": "Sai trật tự tính từ và thiếu mạo từ."
+      }
+    ],
+    "grammar_patterns": [
+      "a/an + (adjective) + scarf"
+    ]
+  },
+  {
+    "word": "gloves",
+    "phonetic": "/ɡlʌvz/",
+    "meaning_vi": "găng tay",
+    "meaning_en": "coverings for the hands",
+    "pos": "noun (plural)",
+    "examples": [
+      {
+        "en": "Wear gloves when it's cold.",
+        "vi": "Đeo găng tay khi trời lạnh."
+      }
+    ],
+    "word_family": [
+      "glove (singular)",
+      "gloved (adj)"
+    ],
+    "collocations": [
+      "a pair of gloves",
+      "wear gloves",
+      "take off gloves"
+    ],
+    "synonyms": [
+      "mittens (without fingers)"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have a gloves.",
+        "correct": "I have a pair of gloves.",
+        "explain_vi": "Gloves là số nhiều."
+      }
+    ],
+    "grammar_patterns": [
+      "a pair of + gloves"
+    ]
+  },
+  {
+    "word": "umbrella",
+    "phonetic": "/ʌmˈbrel.ə/",
+    "meaning_vi": "ô, dù",
+    "meaning_en": "a device used for protection against rain",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Don't forget your umbrella; it's raining.",
+        "vi": "Đừng quên ô; trời đang mưa."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "carry an umbrella",
+      "open an umbrella",
+      "close an umbrella"
+    ],
+    "synonyms": [
+      "parasol (sun)"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have umbrella.",
+        "correct": "I have an umbrella.",
+        "explain_vi": "Cần mạo từ 'an' vì âm bắt đầu nguyên âm."
+      }
+    ],
+    "grammar_patterns": [
+      "a/an + umbrella"
+    ]
+  },
+  {
+    "word": "watch",
+    "phonetic": "/wɒtʃ/",
+    "meaning_vi": "đồng hồ đeo tay",
+    "meaning_en": "a small timepiece worn on the wrist",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "My watch is five minutes fast.",
+        "vi": "Đồng hồ của tôi nhanh năm phút."
+      }
+    ],
+    "word_family": [
+      "watchmaker (n)"
+    ],
+    "collocations": [
+      "wear a watch",
+      "check your watch",
+      "a wrist watch"
+    ],
+    "synonyms": [
+      "timepiece"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have watch new.",
+        "correct": "I have a new watch.",
+        "explain_vi": "Sai trật tự tính từ và thiếu mạo từ."
+      }
+    ],
+    "grammar_patterns": [
+      "a/an + (adjective) + watch"
+    ]
+  },
+  {
+    "word": "earrings",
+    "phonetic": "/ˈɪr.ɪŋz/",
+    "meaning_vi": "bông tai, khuyên tai",
+    "meaning_en": "jewelry worn on the ears",
+    "pos": "noun (plural)",
+    "examples": [
+      {
+        "en": "She is wearing gold earrings.",
+        "vi": "Cô ấy đang đeo bông tai vàng."
+      }
+    ],
+    "word_family": [
+      "earring (singular)"
+    ],
+    "collocations": [
+      "wear earrings",
+      "a pair of earrings",
+      "gold earrings"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have a earrings.",
+        "correct": "I have a pair of earrings.",
+        "explain_vi": "Earrings là số nhiều."
+      }
+    ],
+    "grammar_patterns": [
+      "a pair of + earrings"
+    ]
+  },
+  {
+    "word": "necklace",
+    "phonetic": "/ˈnek.lɪs/",
+    "meaning_vi": "dây chuyền, vòng cổ",
+    "meaning_en": "a piece of jewelry worn around the neck",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She received a pearl necklace.",
+        "vi": "Cô ấy nhận được một sợi dây chuyền ngọc trai."
+      }
+    ],
+    "word_family": [
+      "necklaced (adj)"
+    ],
+    "collocations": [
+      "wear a necklace",
+      "a gold necklace",
+      "a pearl necklace"
+    ],
+    "synonyms": [
+      "chain"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have necklace.",
+        "correct": "I have a necklace.",
+        "explain_vi": "Thiếu mạo từ."
+      }
+    ],
+    "grammar_patterns": [
+      "a/an + (adjective) + necklace"
+    ]
+  },
+  {
+    "word": "ring",
+    "phonetic": "/rɪŋ/",
+    "meaning_vi": "nhẫn",
+    "meaning_en": "a small circular band worn on a finger",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "He put a ring on her finger.",
+        "vi": "Anh ấy đeo nhẫn vào ngón tay cô ấy."
+      }
+    ],
+    "word_family": [
+      "ringed (adj)"
+    ],
+    "collocations": [
+      "wear a ring",
+      "engagement ring",
+      "wedding ring"
+    ],
+    "synonyms": [
+      "band"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have ring gold.",
+        "correct": "I have a gold ring.",
+        "explain_vi": "Sai trật tự tính từ."
+      }
+    ],
+    "grammar_patterns": [
+      "a/an + (adjective) + ring"
+    ]
+  },
+  {
+    "word": "purse",
+    "phonetic": "/pɜːrs/",
+    "meaning_vi": "ví, túi xách nhỏ",
+    "meaning_en": "a small bag for money and personal items",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She carries a purse.",
+        "vi": "Cô ấy mang một cái ví."
+      }
+    ],
+    "word_family": [
+      "pursed (adj)"
+    ],
+    "collocations": [
+      "carry a purse",
+      "open a purse",
+      "leather purse"
+    ],
+    "synonyms": [
+      "handbag",
+      "wallet (for men)"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have purse red.",
+        "correct": "I have a red purse.",
+        "explain_vi": "Sai trật tự tính từ."
+      }
+    ],
+    "grammar_patterns": [
+      "a/an + (adjective) + purse"
+    ]
+  },
+  {
+    "word": "backpack",
+    "phonetic": "/ˈbæk.pæk/",
+    "meaning_vi": "ba lô",
+    "meaning_en": "a bag carried on the back",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I put my books in my backpack.",
+        "vi": "Tôi để sách vào ba lô."
+      }
+    ],
+    "word_family": [
+      "backpacker (n)",
+      "backpacking (n)"
+    ],
+    "collocations": [
+      "carry a backpack",
+      "pack a backpack",
+      "school backpack"
+    ],
+    "synonyms": [
+      "rucksack",
+      "knapsack"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have backpack.",
+        "correct": "I have a backpack.",
+        "explain_vi": "Thiếu mạo từ."
+      }
+    ],
+    "grammar_patterns": [
+      "a/an + backpack"
+    ]
+  },
+  {
+    "word": "suit",
+    "phonetic": "/suːt/",
+    "meaning_vi": "bộ com-lê",
+    "meaning_en": "a set of clothes consisting of a jacket and trousers (or skirt)",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "He wears a suit to work.",
+        "vi": "Anh ấy mặc com-lê đi làm."
+      }
+    ],
+    "word_family": [
+      "suit (v)",
+      "suitable (adj)"
+    ],
+    "collocations": [
+      "wear a suit",
+      "a business suit",
+      "a suit and tie"
+    ],
+    "synonyms": [
+      "outfit"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have suit black.",
+        "correct": "I have a black suit.",
+        "explain_vi": "Sai trật tự tính từ."
+      }
+    ],
+    "grammar_patterns": [
+      "a/an + (adjective) + suit"
+    ]
+  },
+  {
+    "word": "tie",
+    "phonetic": "/taɪ/",
+    "meaning_vi": "cà vạt",
+    "meaning_en": "a long piece of cloth worn around the neck under a collar",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "He tied his tie before the meeting.",
+        "vi": "Anh ấy thắt cà vạt trước cuộc họp."
+      }
+    ],
+    "word_family": [
+      "tie (v)",
+      "tied (adj)"
+    ],
+    "collocations": [
+      "wear a tie",
+      "knot a tie",
+      "silk tie"
+    ],
+    "synonyms": [
+      "necktie"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have tie red.",
+        "correct": "I have a red tie.",
+        "explain_vi": "Sai trật tự tính từ."
+      }
+    ],
+    "grammar_patterns": [
+      "a/an + (adjective) + tie"
+    ]
+  },
+  {
+    "word": "swimsuit",
+    "phonetic": "/ˈswɪm.suːt/",
+    "meaning_vi": "đồ bơi",
+    "meaning_en": "clothing worn for swimming",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Don't forget your swimsuit at the beach.",
+        "vi": "Đừng quên đồ bơi ở bãi biển."
+      }
+    ],
+    "word_family": [
+      "swim (v)",
+      "swimming (n)"
+    ],
+    "collocations": [
+      "wear a swimsuit",
+      "put on a swimsuit",
+      "bikini (type)"
+    ],
+    "synonyms": [
+      "bathing suit",
+      "swim trunks (men)"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have swimsuit new.",
+        "correct": "I have a new swimsuit.",
+        "explain_vi": "Sai trật tự tính từ."
+      }
+    ],
+    "grammar_patterns": [
+      "a/an + (adjective) + swimsuit"
+    ]
+  },
+  {
+    "word": "boots",
+    "phonetic": "/buːts/",
+    "meaning_vi": "ủng, giày cao cổ",
+    "meaning_en": "strong shoes that cover the ankle and sometimes the leg",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She wears boots in winter.",
+        "vi": "Cô ấy đi ủng vào mùa đông."
+      },
+      {
+        "en": "My boots are black.",
+        "vi": "Đôi ủng của tôi màu đen."
+      }
+    ],
+    "word_family": [
+      "boot (n)"
+    ],
+    "collocations": [
+      "winter boots",
+      "leather boots",
+      "wear boots"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have a boots.",
+        "correct": "I have boots.",
+        "explain_vi": "Boots là danh từ số nhiều, không dùng mạo từ 'a'."
+      }
+    ],
+    "grammar_patterns": [
+      "plural noun: boots"
+    ]
+  },
+  {
+    "word": "sandals",
+    "phonetic": "/ˈsændlz/",
+    "meaning_vi": "xăng-đan, dép quai hậu",
+    "meaning_en": "light open shoes worn in warm weather",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "He wears sandals at the beach.",
+        "vi": "Anh ấy đi dép xăng-đan ở bãi biển."
+      },
+      {
+        "en": "These sandals are comfortable.",
+        "vi": "Đôi xăng-đan này thoải mái."
+      }
+    ],
+    "word_family": [
+      "sandal (n)"
+    ],
+    "collocations": [
+      "wear sandals",
+      "leather sandals",
+      "summer sandals"
+    ],
+    "synonyms": [
+      "flip-flops (different type)"
+    ],
+    "antonyms": [
+      "boots"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I need a sandal.",
+        "correct": "I need sandals.",
+        "explain_vi": "Thường dùng số nhiều 'sandals'."
+      }
+    ],
+    "grammar_patterns": [
+      "plural noun: sandals"
+    ]
+  },
+  {
+    "word": "sneakers",
+    "phonetic": "/ˈsniːkərz/",
+    "meaning_vi": "giày thể thao",
+    "meaning_en": "light soft shoes for sports or casual wear",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I wear sneakers to school.",
+        "vi": "Tôi đi giày thể thao đến trường."
+      },
+      {
+        "en": "My sneakers are white.",
+        "vi": "Giày thể thao của tôi màu trắng."
+      }
+    ],
+    "word_family": [
+      "sneaker (n)"
+    ],
+    "collocations": [
+      "wear sneakers",
+      "white sneakers",
+      "new sneakers"
+    ],
+    "synonyms": [
+      "trainers (UK)",
+      "running shoes"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have a sneaker.",
+        "correct": "I have sneakers.",
+        "explain_vi": "Sneakers thường dùng số nhiều."
+      }
+    ],
+    "grammar_patterns": [
+      "plural noun: sneakers"
+    ]
+  },
+  {
+    "word": "slippers",
+    "phonetic": "/ˈslɪpərz/",
+    "meaning_vi": "dép đi trong nhà",
+    "meaning_en": "soft comfortable shoes for wearing indoors",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I wear slippers at home.",
+        "vi": "Tôi đi dép trong nhà."
+      },
+      {
+        "en": "These slippers are warm.",
+        "vi": "Đôi dép này ấm."
+      }
+    ],
+    "word_family": [
+      "slipper (n)"
+    ],
+    "collocations": [
+      "wear slippers",
+      "house slippers",
+      "warm slippers"
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "boots"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I have a slipper.",
+        "correct": "I have slippers.",
+        "explain_vi": "Thường dùng số nhiều 'slippers'."
+      }
+    ],
+    "grammar_patterns": [
+      "plural noun: slippers"
+    ]
+  },
+  {
+    "word": "coat",
+    "phonetic": "/koʊt/",
+    "meaning_vi": "áo khoác dài",
+    "meaning_en": "an outer garment with sleeves, worn outdoors",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She wears a coat in winter.",
+        "vi": "Cô ấy mặc áo khoác vào mùa đông."
+      },
+      {
+        "en": "Hang your coat on the hook.",
+        "vi": "Treo áo khoác của bạn lên móc."
+      }
+    ],
+    "word_family": [
+      "coat (v)"
+    ],
+    "collocations": [
+      "winter coat",
+      "wear a coat",
+      "put on a coat"
+    ],
+    "synonyms": [
+      "overcoat",
+      "jacket (shorter)"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I wear coat.",
+        "correct": "I wear a coat.",
+        "explain_vi": "Cần mạo từ 'a' trước danh từ số ít."
+      }
+    ],
+    "grammar_patterns": [
+      "a/an + coat"
+    ]
+  },
+  {
+    "word": "sweater",
+    "phonetic": "/ˈswetər/",
+    "meaning_vi": "áo len",
+    "meaning_en": "a knitted piece of clothing for the upper body",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "He wears a sweater in cold weather.",
+        "vi": "Anh ấy mặc áo len khi trời lạnh."
+      },
+      {
+        "en": "This sweater is made of wool.",
+        "vi": "Chiếc áo len này làm bằng len."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "wear a sweater",
+      "wool sweater",
+      "pullover sweater"
+    ],
+    "synonyms": [
+      "jumper (UK)",
+      "pullover"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I wear sweater.",
+        "correct": "I wear a sweater.",
+        "explain_vi": "Cần mạo từ 'a'."
+      }
+    ],
+    "grammar_patterns": [
+      "a/an + sweater"
+    ]
+  },
+  {
+    "word": "cardigan",
+    "phonetic": "/ˈkɑːrdɪɡən/",
+    "meaning_vi": "áo len cài cúc",
+    "meaning_en": "a knitted jacket with buttons down the front",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She wears a cardigan over her shirt.",
+        "vi": "Cô ấy mặc áo len khoác ngoài áo sơ mi."
+      },
+      {
+        "en": "This cardigan is blue.",
+        "vi": "Chiếc áo len cài cúc này màu xanh."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "wear a cardigan",
+      "button-up cardigan",
+      "wool cardigan"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have cardigan.",
+        "correct": "I have a cardigan.",
+        "explain_vi": "Cần mạo từ 'a'."
+      }
+    ],
+    "grammar_patterns": [
+      "a/an + cardigan"
+    ]
+  },
+  {
+    "word": "blouse",
+    "phonetic": "/blaʊs/",
+    "meaning_vi": "áo cánh, áo blouse",
+    "meaning_en": "a woman's shirt, typically with buttons and a collar",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She wears a white blouse to work.",
+        "vi": "Cô ấy mặc áo blouse trắng đi làm."
+      },
+      {
+        "en": "This blouse is silk.",
+        "vi": "Chiếc áo blouse này là lụa."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "wear a blouse",
+      "white blouse",
+      "silk blouse"
+    ],
+    "synonyms": [
+      "shirt (for men)"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have blouse.",
+        "correct": "I have a blouse.",
+        "explain_vi": "Cần mạo từ 'a'."
+      },
+      {
+        "wrong": "He wears a blouse.",
+        "correct": "She wears a blouse.",
+        "explain_vi": "Blouse thường dùng cho nữ."
+      }
+    ],
+    "grammar_patterns": [
+      "a/an + blouse"
+    ]
+  },
+  {
+    "word": "skirt",
+    "phonetic": "/skɜːrt/",
+    "meaning_vi": "váy (chân váy)",
+    "meaning_en": "a piece of clothing that hangs from the waist",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She wears a skirt to school.",
+        "vi": "Cô ấy mặc váy đến trường."
+      },
+      {
+        "en": "This skirt is long.",
+        "vi": "Chiếc váy này dài."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "wear a skirt",
+      "long skirt",
+      "short skirt",
+      "pleated skirt"
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "trousers",
+      "pants"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I wear skirt.",
+        "correct": "I wear a skirt.",
+        "explain_vi": "Cần mạo từ 'a'."
+      }
+    ],
+    "grammar_patterns": [
+      "a/an + skirt"
+    ]
+  },
+  {
+    "word": "shorts",
+    "phonetic": "/ʃɔːrts/",
+    "meaning_vi": "quần short",
+    "meaning_en": "short trousers that reach above the knee",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "He wears shorts in summer.",
+        "vi": "Anh ấy mặc quần short vào mùa hè."
+      },
+      {
+        "en": "These shorts are comfortable.",
+        "vi": "Chiếc quần short này thoải mái."
+      }
+    ],
+    "word_family": [
+      "short (adj)"
+    ],
+    "collocations": [
+      "wear shorts",
+      "summer shorts",
+      "jean shorts"
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "trousers",
+      "pants"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I have a short.",
+        "correct": "I have shorts.",
+        "explain_vi": "Shorts là danh từ số nhiều."
+      }
+    ],
+    "grammar_patterns": [
+      "plural noun: shorts"
+    ]
+  },
+  {
+    "word": "trousers",
+    "phonetic": "/ˈtraʊzərz/",
+    "meaning_vi": "quần dài",
+    "meaning_en": "a piece of clothing that covers the legs and waist",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "He wears trousers to the office.",
+        "vi": "Anh ấy mặc quần dài đến văn phòng."
+      },
+      {
+        "en": "These trousers are black.",
+        "vi": "Chiếc quần dài này màu đen."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "wear trousers",
+      "black trousers",
+      "formal trousers"
+    ],
+    "synonyms": [
+      "pants (US)"
+    ],
+    "antonyms": [
+      "skirt",
+      "shorts"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I have a trouser.",
+        "correct": "I have trousers.",
+        "explain_vi": "Trousers là danh từ số nhiều."
+      }
+    ],
+    "grammar_patterns": [
+      "plural noun: trousers"
+    ]
+  },
+  {
+    "word": "pajamas",
+    "phonetic": "/pəˈdʒɑːməz/",
+    "meaning_vi": "đồ ngủ",
+    "meaning_en": "loose clothing worn for sleeping",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I wear pajamas at night.",
+        "vi": "Tôi mặc đồ ngủ vào ban đêm."
+      },
+      {
+        "en": "My pajamas are blue.",
+        "vi": "Bộ đồ ngủ của tôi màu xanh."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "wear pajamas",
+      "cotton pajamas",
+      "warm pajamas"
+    ],
+    "synonyms": [
+      "pyjamas (UK)"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have a pajama.",
+        "correct": "I have pajamas.",
+        "explain_vi": "Pajamas là danh từ số nhiều."
+      }
+    ],
+    "grammar_patterns": [
+      "plural noun: pajamas"
+    ]
+  },
+  {
+    "word": "vest",
+    "phonetic": "/vest/",
+    "meaning_vi": "áo vest, áo gile",
+    "meaning_en": "a sleeveless piece of clothing worn over a shirt",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "He wears a vest with his suit.",
+        "vi": "Anh ấy mặc áo vest với bộ com-lê."
+      },
+      {
+        "en": "This vest is wool.",
+        "vi": "Chiếc áo vest này bằng len."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "wear a vest",
+      "suit vest",
+      "knitted vest"
+    ],
+    "synonyms": [
+      "waistcoat (UK)"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I wear vest.",
+        "correct": "I wear a vest.",
+        "explain_vi": "Cần mạo từ 'a'."
+      }
+    ],
+    "grammar_patterns": [
+      "a/an + vest"
+    ]
+  },
+  {
+    "word": "tank top",
+    "phonetic": "/ˈtæŋk tɒp/",
+    "meaning_vi": "áo ba lỗ, áo may ô",
+    "meaning_en": "a sleeveless top with wide straps over the shoulders",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She wears a tank top in summer.",
+        "vi": "Cô ấy mặc áo ba lỗ vào mùa hè."
+      },
+      {
+        "en": "This tank top is white.",
+        "vi": "Chiếc áo ba lỗ này màu trắng."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "wear a tank top",
+      "cotton tank top",
+      "summer tank top"
+    ],
+    "synonyms": [
+      "vest top (UK)"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have tank top.",
+        "correct": "I have a tank top.",
+        "explain_vi": "Cần mạo từ 'a'."
+      }
+    ],
+    "grammar_patterns": [
+      "a/an + tank top"
+    ]
+  },
+  {
+    "word": "hoodie",
+    "phonetic": "/ˈhʊdi/",
+    "meaning_vi": "áo hoodie, áo nỉ có mũ",
+    "meaning_en": "a sweatshirt with a hood",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "He wears a hoodie to the gym.",
+        "vi": "Anh ấy mặc áo hoodie đến phòng tập."
+      },
+      {
+        "en": "This hoodie is warm.",
+        "vi": "Chiếc áo hoodie này ấm."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "wear a hoodie",
+      "zip-up hoodie",
+      "pullover hoodie"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I wear hoodie.",
+        "correct": "I wear a hoodie.",
+        "explain_vi": "Cần mạo từ 'a'."
+      }
+    ],
+    "grammar_patterns": [
+      "a/an + hoodie"
+    ]
+  },
+  {
+    "word": "leggings",
+    "phonetic": "/ˈleɡɪŋz/",
+    "meaning_vi": "quần legging",
+    "meaning_en": "tight-fitting stretch trousers worn by women and girls",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She wears leggings for yoga.",
+        "vi": "Cô ấy mặc quần legging để tập yoga."
+      },
+      {
+        "en": "These leggings are black.",
+        "vi": "Chiếc quần legging này màu đen."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "wear leggings",
+      "black leggings",
+      "cotton leggings"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have a legging.",
+        "correct": "I have leggings.",
+        "explain_vi": "Leggings là danh từ số nhiều."
+      }
+    ],
+    "grammar_patterns": [
+      "plural noun: leggings"
+    ]
+  },
+  {
+    "word": "belt",
+    "phonetic": "/belt/",
+    "meaning_vi": "thắt lưng",
+    "meaning_en": "a strip of leather or cloth worn around the waist",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "He wears a belt with his trousers.",
+        "vi": "Anh ấy thắt lưng với quần dài."
+      },
+      {
+        "en": "This belt is brown.",
+        "vi": "Chiếc thắt lưng này màu nâu."
+      }
+    ],
+    "word_family": [
+      "belt (v)"
+    ],
+    "collocations": [
+      "wear a belt",
+      "leather belt",
+      "tighten a belt"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have belt.",
+        "correct": "I have a belt.",
+        "explain_vi": "Cần mạo từ 'a'."
+      }
+    ],
+    "grammar_patterns": [
+      "a/an + belt"
+    ]
+  },
+  {
+    "word": "scarf",
+    "phonetic": "/skɑːrf/",
+    "meaning_vi": "khăn quàng cổ",
+    "meaning_en": "a piece of cloth worn around the neck for warmth or fashion",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She wears a scarf in winter.",
+        "vi": "Cô ấy quàng khăn vào mùa đông."
+      },
+      {
+        "en": "This scarf is red.",
+        "vi": "Chiếc khăn này màu đỏ."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "wear a scarf",
+      "wool scarf",
+      "wrap a scarf"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have scarf.",
+        "correct": "I have a scarf.",
+        "explain_vi": "Cần mạo từ 'a'."
+      }
+    ],
+    "grammar_patterns": [
+      "a/an + scarf"
+    ]
+  },
+  {
+    "word": "gloves",
+    "phonetic": "/ɡlʌvz/",
+    "meaning_vi": "găng tay",
+    "meaning_en": "coverings for the hands, usually with separate fingers",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "He wears gloves in cold weather.",
+        "vi": "Anh ấy đeo găng tay khi trời lạnh."
+      },
+      {
+        "en": "These gloves are leather.",
+        "vi": "Đôi găng tay này bằng da."
+      }
+    ],
+    "word_family": [
+      "glove (n)"
+    ],
+    "collocations": [
+      "wear gloves",
+      "leather gloves",
+      "winter gloves"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have a glove.",
+        "correct": "I have gloves.",
+        "explain_vi": "Thường dùng số nhiều 'gloves'."
+      }
+    ],
+    "grammar_patterns": [
+      "plural noun: gloves"
+    ]
+  },
+  {
+    "word": "umbrella",
+    "phonetic": "/ʌmˈbrelə/",
+    "meaning_vi": "ô, dù",
+    "meaning_en": "a device used for protection against rain or sun",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She takes an umbrella when it rains.",
+        "vi": "Cô ấy mang ô khi trời mưa."
+      },
+      {
+        "en": "This umbrella is broken.",
+        "vi": "Chiếc ô này bị hỏng."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "take an umbrella",
+      "open an umbrella",
+      "fold an umbrella"
+    ],
+    "synonyms": [
+      "parasol (for sun)"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have umbrella.",
+        "correct": "I have an umbrella.",
+        "explain_vi": "Cần mạo từ 'an' vì 'umbrella' bắt đầu bằng nguyên âm."
+      }
+    ],
+    "grammar_patterns": [
+      "an + umbrella"
+    ]
+  },
+  {
+    "word": "cap",
+    "phonetic": "/kæp/",
+    "meaning_vi": "mũ lưỡi trai",
+    "meaning_en": "a type of soft hat with a peak",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "He wears a baseball cap.",
+        "vi": "Anh ấy đội mũ bóng chày."
+      }
+    ],
+    "word_family": [
+      "capped (adj)"
+    ],
+    "collocations": [
+      "wear a cap",
+      "baseball cap",
+      "put on a cap"
+    ],
+    "synonyms": [
+      "hat"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have a cap on head.",
+        "correct": "I have a cap on my head.",
+        "explain_vi": "Cần có tính từ sở hữu 'my' trước 'head'."
+      }
+    ],
+    "grammar_patterns": [
+      "a cap",
+      "cap + noun (e.g., cap sleeve)"
+    ]
+  },
+  {
+    "word": "wallet",
+    "phonetic": "/ˈwɒl.ɪt/",
+    "meaning_vi": "ví da",
+    "meaning_en": "a small folding case for money and cards",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I keep my money in my wallet.",
+        "vi": "Tôi giữ tiền trong ví của mình."
+      }
+    ],
+    "word_family": [
+      "wallet-sized (adj)"
+    ],
+    "collocations": [
+      "leather wallet",
+      "put in wallet",
+      "take out wallet"
+    ],
+    "synonyms": [
+      "billfold",
+      "purse (US)"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have a wallet of leather.",
+        "correct": "I have a leather wallet.",
+        "explain_vi": "Tính từ đứng trước danh từ, không dùng 'of'."
+      }
+    ],
+    "grammar_patterns": [
+      "a wallet",
+      "wallet + noun (e.g., wallet chain)"
+    ]
+  },
+  {
+    "word": "bracelet",
+    "phonetic": "/ˈbreɪ.slɪt/",
+    "meaning_vi": "vòng tay",
+    "meaning_en": "a piece of jewelry worn around the wrist",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She wears a gold bracelet.",
+        "vi": "Cô ấy đeo một chiếc vòng tay vàng."
+      }
+    ],
+    "word_family": [
+      "braceleted (adj)"
+    ],
+    "collocations": [
+      "gold bracelet",
+      "silver bracelet",
+      "wear a bracelet"
+    ],
+    "synonyms": [
+      "bangle",
+      "wristband"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "She has a bracelet on hand.",
+        "correct": "She has a bracelet on her wrist.",
+        "explain_vi": "'Hand' là bàn tay, 'wrist' là cổ tay."
+      }
+    ],
+    "grammar_patterns": [
+      "a bracelet",
+      "bracelet + noun (e.g., bracelet charm)"
+    ]
+  },
+  {
+    "word": "button",
+    "phonetic": "/ˈbʌt.ən/",
+    "meaning_vi": "cúc áo",
+    "meaning_en": "a small round object used to fasten clothing",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Please button your shirt.",
+        "vi": "Làm ơn cài cúc áo sơ mi của bạn."
+      }
+    ],
+    "word_family": [
+      "button (v)",
+      "buttoned (adj)"
+    ],
+    "collocations": [
+      "button up",
+      "button down",
+      "loose button"
+    ],
+    "synonyms": [
+      "fastener"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I button my shirt with button.",
+        "correct": "I button my shirt with a button.",
+        "explain_vi": "Cần mạo từ 'a' trước 'button'."
+      }
+    ],
+    "grammar_patterns": [
+      "a button",
+      "button + noun (e.g., button hole)"
+    ]
+  },
+  {
+    "word": "zip",
+    "phonetic": "/zɪp/",
+    "meaning_vi": "khóa kéo",
+    "meaning_en": "a device for fastening clothes with interlocking teeth",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Zip up your jacket.",
+        "vi": "Kéo khóa áo khoác của bạn lên."
+      }
+    ],
+    "word_family": [
+      "zip (v)",
+      "zipper (n)"
+    ],
+    "collocations": [
+      "zip up",
+      "zip down",
+      "broken zip"
+    ],
+    "synonyms": [
+      "zipper"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Close your zip.",
+        "correct": "Zip up your jacket.",
+        "explain_vi": "Dùng 'zip up' thay vì 'close'."
+      }
+    ],
+    "grammar_patterns": [
+      "a zip",
+      "zip + noun (e.g., zip code)"
+    ]
+  },
+  {
+    "word": "pocket",
+    "phonetic": "/ˈpɒk.ɪt/",
+    "meaning_vi": "túi (quần áo)",
+    "meaning_en": "a small bag sewn into clothing for carrying things",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "He put his phone in his pocket.",
+        "vi": "Anh ấy bỏ điện thoại vào túi."
+      }
+    ],
+    "word_family": [
+      "pocket (v)",
+      "pocket-sized (adj)"
+    ],
+    "collocations": [
+      "pocket money",
+      "pocket knife",
+      "in/out of pocket"
+    ],
+    "synonyms": [
+      "pouch"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have a pocket in my shirt.",
+        "correct": "My shirt has a pocket.",
+        "explain_vi": "Dùng cấu trúc 'My shirt has' thay vì 'I have a pocket in'."
+      }
+    ],
+    "grammar_patterns": [
+      "a pocket",
+      "pocket + noun (e.g., pocket watch)"
+    ]
+  },
+  {
+    "word": "shorts",
+    "phonetic": "/ʃɔːrts/",
+    "meaning_vi": "quần đùi",
+    "meaning_en": "short trousers that reach above the knee",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "He wears shorts in summer.",
+        "vi": "Anh ấy mặc quần đùi vào mùa hè."
+      }
+    ],
+    "word_family": [
+      "short (adj)"
+    ],
+    "collocations": [
+      "pair of shorts",
+      "wear shorts",
+      "short shorts"
+    ],
+    "synonyms": [
+      "bermuda shorts",
+      "cut-offs"
+    ],
+    "antonyms": [
+      "trousers"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I have a shorts.",
+        "correct": "I have a pair of shorts.",
+        "explain_vi": "'Shorts' là danh từ số nhiều, dùng 'a pair of'."
+      }
+    ],
+    "grammar_patterns": [
+      "shorts (plural)",
+      "pair of shorts"
+    ]
+  },
+  {
+    "word": "trousers",
+    "phonetic": "/ˈtraʊ.zərz/",
+    "meaning_vi": "quần dài",
+    "meaning_en": "an outer garment covering the body from waist to ankles",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "He wears black trousers.",
+        "vi": "Anh ấy mặc quần dài màu đen."
+      }
+    ],
+    "word_family": [
+      "trouser (adj)"
+    ],
+    "collocations": [
+      "pair of trousers",
+      "wear trousers",
+      "trouser leg"
+    ],
+    "synonyms": [
+      "pants",
+      "slacks"
+    ],
+    "antonyms": [
+      "shorts"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I have a trousers.",
+        "correct": "I have a pair of trousers.",
+        "explain_vi": "'Trousers' là danh từ số nhiều, dùng 'a pair of'."
+      }
+    ],
+    "grammar_patterns": [
+      "trousers (plural)",
+      "pair of trousers"
+    ]
+  },
+  {
+    "word": "suit",
+    "phonetic": "/suːt/",
+    "meaning_vi": "bộ com-lê",
+    "meaning_en": "a set of clothes consisting of a jacket and trousers",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "He wears a suit to work.",
+        "vi": "Anh ấy mặc com-lê đi làm."
+      }
+    ],
+    "word_family": [
+      "suit (v)",
+      "suitable (adj)"
+    ],
+    "collocations": [
+      "business suit",
+      "wear a suit",
+      "suit jacket"
+    ],
+    "synonyms": [
+      "business attire"
+    ],
+    "antonyms": [
+      "casual wear"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "He wears suit.",
+        "correct": "He wears a suit.",
+        "explain_vi": "Cần mạo từ 'a' trước 'suit'."
+      }
+    ],
+    "grammar_patterns": [
+      "a suit",
+      "suit + noun (e.g., suit pants)"
+    ]
+  },
+  {
+    "word": "tie",
+    "phonetic": "/taɪ/",
+    "meaning_vi": "cà vạt",
+    "meaning_en": "a long piece of cloth worn around the neck under a collar",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "He wears a red tie.",
+        "vi": "Anh ấy đeo cà vạt đỏ."
+      }
+    ],
+    "word_family": [
+      "tie (v)",
+      "tied (adj)"
+    ],
+    "collocations": [
+      "wear a tie",
+      "tie knot",
+      "neck tie"
+    ],
+    "synonyms": [
+      "necktie"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "He wears tie.",
+        "correct": "He wears a tie.",
+        "explain_vi": "Cần mạo từ 'a' trước 'tie'."
+      }
+    ],
+    "grammar_patterns": [
+      "a tie",
+      "tie + noun (e.g., tie clip)"
+    ]
+  },
+  {
+    "word": "swimsuit",
+    "phonetic": "/ˈswɪm.suːt/",
+    "meaning_vi": "đồ bơi",
+    "meaning_en": "a garment worn for swimming",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She wears a swimsuit at the beach.",
+        "vi": "Cô ấy mặc đồ bơi ở bãi biển."
+      }
+    ],
+    "word_family": [
+      "swim (v)"
+    ],
+    "collocations": [
+      "wear a swimsuit",
+      "swimsuit season",
+      "bikini swimsuit"
+    ],
+    "synonyms": [
+      "bathing suit",
+      "swimwear"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "She wears swimsuit.",
+        "correct": "She wears a swimsuit.",
+        "explain_vi": "Cần mạo từ 'a' trước 'swimsuit'."
+      }
+    ],
+    "grammar_patterns": [
+      "a swimsuit",
+      "swimsuit + noun (e.g., swimsuit cover-up)"
+    ]
+  },
+  {
+    "word": "boots",
+    "phonetic": "/buːts/",
+    "meaning_vi": "ủng, giày cao cổ",
+    "meaning_en": "strong shoes that cover the ankle and sometimes the leg",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "He wears boots in winter.",
+        "vi": "Anh ấy đi ủng vào mùa đông."
+      }
+    ],
+    "word_family": [
+      "boot (n)"
+    ],
+    "collocations": [
+      "pair of boots",
+      "wear boots",
+      "boots and shoes"
+    ],
+    "synonyms": [
+      "wellies",
+      "work boots"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have a boots.",
+        "correct": "I have a pair of boots.",
+        "explain_vi": "'Boots' là danh từ số nhiều, dùng 'a pair of'."
+      }
+    ],
+    "grammar_patterns": [
+      "boots (plural)",
+      "pair of boots"
+    ]
+  },
+  {
+    "word": "sandals",
+    "phonetic": "/ˈsæn.dəlz/",
+    "meaning_vi": "dép xăng-đan",
+    "meaning_en": "light open shoes worn in warm weather",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She wears sandals in summer.",
+        "vi": "Cô ấy đi dép xăng-đan vào mùa hè."
+      }
+    ],
+    "word_family": [
+      "sandal (n)"
+    ],
+    "collocations": [
+      "pair of sandals",
+      "wear sandals",
+      "leather sandals"
+    ],
+    "synonyms": [
+      "flip-flops",
+      "slides"
+    ],
+    "antonyms": [
+      "boots"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I have a sandals.",
+        "correct": "I have a pair of sandals.",
+        "explain_vi": "'Sandals' là danh từ số nhiều, dùng 'a pair of'."
+      }
+    ],
+    "grammar_patterns": [
+      "sandals (plural)",
+      "pair of sandals"
+    ]
+  },
+  {
+    "word": "sneakers",
+    "phonetic": "/ˈsniː.kərz/",
+    "meaning_vi": "giày thể thao",
+    "meaning_en": "comfortable shoes for sports or casual wear",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "He wears sneakers to school.",
+        "vi": "Anh ấy đi giày thể thao đến trường."
+      }
+    ],
+    "word_family": [
+      "sneaker (n)"
+    ],
+    "collocations": [
+      "pair of sneakers",
+      "wear sneakers",
+      "white sneakers"
+    ],
+    "synonyms": [
+      "trainers",
+      "running shoes"
+    ],
+    "antonyms": [
+      "dress shoes"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I have a sneakers.",
+        "correct": "I have a pair of sneakers.",
+        "explain_vi": "'Sneakers' là danh từ số nhiều, dùng 'a pair of'."
+      }
+    ],
+    "grammar_patterns": [
+      "sneakers (plural)",
+      "pair of sneakers"
+    ]
+  },
+  {
+    "word": "slippers",
+    "phonetic": "/ˈslɪp.ərz/",
+    "meaning_vi": "dép đi trong nhà",
+    "meaning_en": "soft shoes worn indoors",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She wears slippers at home.",
+        "vi": "Cô ấy đi dép trong nhà."
+      }
+    ],
+    "word_family": [
+      "slipper (n)"
+    ],
+    "collocations": [
+      "pair of slippers",
+      "wear slippers",
+      "bedroom slippers"
+    ],
+    "synonyms": [
+      "house shoes",
+      "flip-flops"
+    ],
+    "antonyms": [
+      "outdoor shoes"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I have a slippers.",
+        "correct": "I have a pair of slippers.",
+        "explain_vi": "'Slippers' là danh từ số nhiều, dùng 'a pair of'."
+      }
+    ],
+    "grammar_patterns": [
+      "slippers (plural)",
+      "pair of slippers"
+    ]
+  },
+  {
+    "word": "coat",
+    "phonetic": "/koʊt/",
+    "meaning_vi": "áo khoác ngoài (dài)",
+    "meaning_en": "an outer garment with sleeves, worn outdoors",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She wears a coat in winter.",
+        "vi": "Cô ấy mặc áo khoác vào mùa đông."
+      }
+    ],
+    "word_family": [
+      "coat (v)",
+      "coated (adj)"
+    ],
+    "collocations": [
+      "winter coat",
+      "wear a coat",
+      "coat hanger"
+    ],
+    "synonyms": [
+      "overcoat",
+      "jacket"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "She wears coat.",
+        "correct": "She wears a coat.",
+        "explain_vi": "Cần mạo từ 'a' trước 'coat'."
+      }
+    ],
+    "grammar_patterns": [
+      "a coat",
+      "coat + noun (e.g., coat pocket)"
+    ]
+  },
+  {
+    "word": "sweater",
+    "phonetic": "/ˈswɛt.ər/",
+    "meaning_vi": "áo len",
+    "meaning_en": "a knitted garment worn on the upper part of the body",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "He wears a sweater in cold weather.",
+        "vi": "Anh ấy mặc áo len khi trời lạnh."
+      }
+    ],
+    "word_family": [
+      "sweater (n)"
+    ],
+    "collocations": [
+      "wool sweater",
+      "wear a sweater",
+      "sweater weather"
+    ],
+    "synonyms": [
+      "jumper",
+      "pullover"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "He wears sweater.",
+        "correct": "He wears a sweater.",
+        "explain_vi": "Cần mạo từ 'a' trước 'sweater'."
+      }
+    ],
+    "grammar_patterns": [
+      "a sweater",
+      "sweater + noun (e.g., sweater dress)"
+    ]
+  },
+  {
+    "word": "cardigan",
+    "phonetic": "/ˈkɑːr.dɪ.ɡən/",
+    "meaning_vi": "áo len cài cúc",
+    "meaning_en": "a knitted jacket fastened with buttons",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She wears a cardigan over her shirt.",
+        "vi": "Cô ấy mặc áo len cài cúc bên ngoài áo sơ mi."
+      }
+    ],
+    "word_family": [
+      "cardigan (n)"
+    ],
+    "collocations": [
+      "wear a cardigan",
+      "button-up cardigan",
+      "wool cardigan"
+    ],
+    "synonyms": [
+      "sweater",
+      "jacket"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "She wears cardigan.",
+        "correct": "She wears a cardigan.",
+        "explain_vi": "Cần mạo từ 'a' trước 'cardigan'."
+      }
+    ],
+    "grammar_patterns": [
+      "a cardigan",
+      "cardigan + noun (e.g., cardigan sweater)"
+    ]
+  },
+  {
+    "word": "blouse",
+    "phonetic": "/blaʊs/",
+    "meaning_vi": "áo sơ mi nữ",
+    "meaning_en": "a woman's shirt, usually with buttons and a collar",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She wears a white blouse.",
+        "vi": "Cô ấy mặc áo sơ mi trắng."
+      }
+    ],
+    "word_family": [
+      "blouse (n)"
+    ],
+    "collocations": [
+      "silk blouse",
+      "wear a blouse",
+      "blouse and skirt"
+    ],
+    "synonyms": [
+      "shirt",
+      "top"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "She wears blouse.",
+        "correct": "She wears a blouse.",
+        "explain_vi": "Cần mạo từ 'a' trước 'blouse'."
+      }
+    ],
+    "grammar_patterns": [
+      "a blouse",
+      "blouse + noun (e.g., blouse sleeve)"
+    ]
+  },
+  {
+    "word": "skirt",
+    "phonetic": "/skɜːrt/",
+    "meaning_vi": "váy, chân váy",
+    "meaning_en": "a garment worn by women that hangs from the waist",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She wears a long skirt.",
+        "vi": "Cô ấy mặc váy dài."
+      }
+    ],
+    "word_family": [
+      "skirt (v)"
+    ],
+    "collocations": [
+      "wear a skirt",
+      "skirt length",
+      "pleated skirt"
+    ],
+    "synonyms": [
+      "kilt",
+      "sarong"
+    ],
+    "antonyms": [
+      "trousers"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "She wears skirt.",
+        "correct": "She wears a skirt.",
+        "explain_vi": "Cần mạo từ 'a' trước 'skirt'."
+      }
+    ],
+    "grammar_patterns": [
+      "a skirt",
+      "skirt + noun (e.g., skirt suit)"
+    ]
+  }
+]

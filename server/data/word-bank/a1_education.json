@@ -1,0 +1,1535 @@
+[
+  {
+    "word": "class",
+    "phonetic": "/klɑːs/",
+    "meaning_vi": "lớp học",
+    "meaning_en": "a group of students who are taught together",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We have English class today.",
+        "vi": "Hôm nay chúng tôi có lớp tiếng Anh."
+      }
+    ],
+    "word_family": [
+      "classroom (n)"
+    ],
+    "collocations": [
+      "in class",
+      "go to class",
+      "English class"
+    ],
+    "synonyms": [
+      "lesson",
+      "course"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go to the class.",
+        "correct": "I go to class.",
+        "explain_vi": "Không dùng mạo từ 'the' trước 'class' khi nói về việc đi học."
+      }
+    ],
+    "grammar_patterns": [
+      "go to + class (no article)",
+      "have + subject + class"
+    ]
+  },
+  {
+    "word": "teacher",
+    "phonetic": "/ˈtiː.tʃər/",
+    "meaning_vi": "giáo viên",
+    "meaning_en": "a person who teaches in a school",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "My teacher is nice.",
+        "vi": "Cô giáo của tôi rất tốt."
+      }
+    ],
+    "word_family": [
+      "teach (v)",
+      "teaching (n)"
+    ],
+    "collocations": [
+      "English teacher",
+      "math teacher",
+      "teacher's desk"
+    ],
+    "synonyms": [
+      "instructor",
+      "educator"
+    ],
+    "antonyms": [
+      "student"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I am teacher.",
+        "correct": "I am a teacher.",
+        "explain_vi": "Cần dùng mạo từ 'a' trước danh từ chỉ nghề nghiệp."
+      }
+    ],
+    "grammar_patterns": [
+      "be + a/an + teacher",
+      "teacher of + subject"
+    ]
+  },
+  {
+    "word": "student",
+    "phonetic": "/ˈstjuː.dənt/",
+    "meaning_vi": "học sinh, sinh viên",
+    "meaning_en": "a person who is studying at a school or college",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She is a good student.",
+        "vi": "Cô ấy là một học sinh giỏi."
+      }
+    ],
+    "word_family": [
+      "study (v)",
+      "studious (adj)"
+    ],
+    "collocations": [
+      "college student",
+      "student life",
+      "fellow student"
+    ],
+    "synonyms": [
+      "pupil",
+      "learner"
+    ],
+    "antonyms": [
+      "teacher"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I am student.",
+        "correct": "I am a student.",
+        "explain_vi": "Cần dùng mạo từ 'a' trước 'student'."
+      }
+    ],
+    "grammar_patterns": [
+      "be + a/an + student",
+      "student at + school"
+    ]
+  },
+  {
+    "word": "book",
+    "phonetic": "/bʊk/",
+    "meaning_vi": "sách",
+    "meaning_en": "a set of printed pages that are fastened together inside a cover",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I read a book.",
+        "vi": "Tôi đọc một cuốn sách."
+      }
+    ],
+    "word_family": [
+      "bookstore (n)",
+      "notebook (n)"
+    ],
+    "collocations": [
+      "read a book",
+      "textbook",
+      "library book"
+    ],
+    "synonyms": [
+      "volume",
+      "textbook"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have many books.",
+        "correct": "I have a lot of books.",
+        "explain_vi": "Trong văn nói, 'a lot of' thường dùng hơn 'many'."
+      }
+    ],
+    "grammar_patterns": [
+      "read + a book",
+      "book about + topic"
+    ]
+  },
+  {
+    "word": "pen",
+    "phonetic": "/pen/",
+    "meaning_vi": "bút mực",
+    "meaning_en": "a long, thin object used for writing or drawing in ink",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I write with a pen.",
+        "vi": "Tôi viết bằng bút mực."
+      }
+    ],
+    "word_family": [
+      "penholder (n)"
+    ],
+    "collocations": [
+      "blue pen",
+      "ink pen",
+      "pen and paper"
+    ],
+    "synonyms": [
+      "ballpoint",
+      "fountain pen"
+    ],
+    "antonyms": [
+      "pencil"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I need pen.",
+        "correct": "I need a pen.",
+        "explain_vi": "Cần dùng mạo từ 'a' trước danh từ đếm được số ít."
+      }
+    ],
+    "grammar_patterns": [
+      "write with + a pen",
+      "a pen + color"
+    ]
+  },
+  {
+    "word": "pencil",
+    "phonetic": "/ˈpen.sɪl/",
+    "meaning_vi": "bút chì",
+    "meaning_en": "a long, thin object used for writing or drawing, made of wood with a black or colored core",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Please sharpen your pencil.",
+        "vi": "Làm ơn gọt bút chì của bạn."
+      }
+    ],
+    "word_family": [
+      "pencil case (n)",
+      "pencil sharpener (n)"
+    ],
+    "collocations": [
+      "sharp pencil",
+      "color pencil",
+      "mechanical pencil"
+    ],
+    "synonyms": [
+      "lead pencil"
+    ],
+    "antonyms": [
+      "pen"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I have two pencil.",
+        "correct": "I have two pencils.",
+        "explain_vi": "Nhớ thêm 's' khi danh từ số nhiều."
+      }
+    ],
+    "grammar_patterns": [
+      "a pencil + color",
+      "write with a pencil"
+    ]
+  },
+  {
+    "word": "homework",
+    "phonetic": "/ˈhoʊm.wɜːrk/",
+    "meaning_vi": "bài tập về nhà",
+    "meaning_en": "work that teachers give students to do at home",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I do homework every evening.",
+        "vi": "Tôi làm bài tập về nhà mỗi tối."
+      }
+    ],
+    "word_family": [
+      "homeworker (n)"
+    ],
+    "collocations": [
+      "do homework",
+      "finish homework",
+      "homework assignment"
+    ],
+    "synonyms": [
+      "assignment",
+      "schoolwork"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have a homework.",
+        "correct": "I have homework.",
+        "explain_vi": "Homework là danh từ không đếm được, không dùng 'a'."
+      }
+    ],
+    "grammar_patterns": [
+      "do + homework",
+      "have + homework"
+    ]
+  },
+  {
+    "word": "lesson",
+    "phonetic": "/ˈles.ən/",
+    "meaning_vi": "bài học",
+    "meaning_en": "a period of time in which a teacher teaches a particular subject",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We have a lesson on Monday.",
+        "vi": "Chúng tôi có một bài học vào thứ Hai."
+      }
+    ],
+    "word_family": [
+      "lesson plan (n)"
+    ],
+    "collocations": [
+      "English lesson",
+      "take a lesson",
+      "lesson number"
+    ],
+    "synonyms": [
+      "class",
+      "session"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have lesson.",
+        "correct": "I have a lesson.",
+        "explain_vi": "Cần dùng mạo từ 'a' trước danh từ đếm được số ít."
+      }
+    ],
+    "grammar_patterns": [
+      "have + a lesson",
+      "lesson on + subject"
+    ]
+  },
+  {
+    "word": "school",
+    "phonetic": "/skuːl/",
+    "meaning_vi": "trường học",
+    "meaning_en": "a place where children go to learn",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I go to school by bus.",
+        "vi": "Tôi đi học bằng xe buýt."
+      }
+    ],
+    "word_family": [
+      "schoolbag (n)",
+      "schoolyard (n)"
+    ],
+    "collocations": [
+      "go to school",
+      "at school",
+      "primary school"
+    ],
+    "synonyms": [
+      "academy",
+      "institution"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go to the school.",
+        "correct": "I go to school.",
+        "explain_vi": "Khi nói về việc đi học nói chung, không dùng 'the'."
+      }
+    ],
+    "grammar_patterns": [
+      "go to + school (no article)",
+      "at + school"
+    ]
+  },
+  {
+    "word": "exam",
+    "phonetic": "/ɪɡˈzæm/",
+    "meaning_vi": "kỳ thi",
+    "meaning_en": "a formal test of knowledge or ability",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We have an exam next week.",
+        "vi": "Tuần sau chúng tôi có một kỳ thi."
+      }
+    ],
+    "word_family": [
+      "examination (n)",
+      "examine (v)"
+    ],
+    "collocations": [
+      "take an exam",
+      "final exam",
+      "exam results"
+    ],
+    "synonyms": [
+      "test",
+      "assessment"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have exam.",
+        "correct": "I have an exam.",
+        "explain_vi": "Cần dùng mạo từ 'an' trước 'exam'."
+      }
+    ],
+    "grammar_patterns": [
+      "have + an exam",
+      "take + an exam"
+    ]
+  },
+  {
+    "word": "test",
+    "phonetic": "/test/",
+    "meaning_vi": "bài kiểm tra",
+    "meaning_en": "a short assessment of a student's knowledge",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The test is easy.",
+        "vi": "Bài kiểm tra dễ."
+      }
+    ],
+    "word_family": [
+      "test (v)",
+      "testing (n)"
+    ],
+    "collocations": [
+      "pass a test",
+      "fail a test",
+      "math test"
+    ],
+    "synonyms": [
+      "quiz",
+      "exam"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have test.",
+        "correct": "I have a test.",
+        "explain_vi": "Cần dùng mạo từ 'a' trước 'test'."
+      }
+    ],
+    "grammar_patterns": [
+      "have + a test",
+      "test on + subject"
+    ]
+  },
+  {
+    "word": "question",
+    "phonetic": "/ˈkwes.tʃən/",
+    "meaning_vi": "câu hỏi",
+    "meaning_en": "a sentence or phrase used to ask for information",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I have a question.",
+        "vi": "Tôi có một câu hỏi."
+      }
+    ],
+    "word_family": [
+      "question (v)",
+      "questionnaire (n)"
+    ],
+    "collocations": [
+      "ask a question",
+      "answer a question",
+      "good question"
+    ],
+    "synonyms": [
+      "query",
+      "inquiry"
+    ],
+    "antonyms": [
+      "answer"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I have question.",
+        "correct": "I have a question.",
+        "explain_vi": "Cần dùng mạo từ 'a' trước 'question'."
+      }
+    ],
+    "grammar_patterns": [
+      "ask + a question",
+      "question about + topic"
+    ]
+  },
+  {
+    "word": "answer",
+    "phonetic": "/ˈæn.sər/",
+    "meaning_vi": "câu trả lời",
+    "meaning_en": "a reply to a question",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The answer is correct.",
+        "vi": "Câu trả lời đúng."
+      }
+    ],
+    "word_family": [
+      "answer (v)",
+      "answering (n)"
+    ],
+    "collocations": [
+      "correct answer",
+      "wrong answer",
+      "give an answer"
+    ],
+    "synonyms": [
+      "reply",
+      "response"
+    ],
+    "antonyms": [
+      "question"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I have answer.",
+        "correct": "I have an answer.",
+        "explain_vi": "Cần dùng mạo từ 'an' trước 'answer'."
+      }
+    ],
+    "grammar_patterns": [
+      "give + an answer",
+      "answer to + question"
+    ]
+  },
+  {
+    "word": "read",
+    "phonetic": "/riːd/",
+    "meaning_vi": "đọc",
+    "meaning_en": "to look at and understand written words",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "I read a book every day.",
+        "vi": "Tôi đọc sách mỗi ngày."
+      }
+    ],
+    "word_family": [
+      "reader (n)",
+      "reading (n)"
+    ],
+    "collocations": [
+      "read a book",
+      "read aloud",
+      "read carefully"
+    ],
+    "synonyms": [
+      "scan",
+      "peruse"
+    ],
+    "antonyms": [
+      "write"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I read book.",
+        "correct": "I read a book.",
+        "explain_vi": "Cần dùng mạo từ 'a' trước danh từ đếm được."
+      }
+    ],
+    "grammar_patterns": [
+      "read + object",
+      "read about + topic"
+    ]
+  },
+  {
+    "word": "write",
+    "phonetic": "/raɪt/",
+    "meaning_vi": "viết",
+    "meaning_en": "to mark letters, words, or symbols on a surface",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "Please write your name.",
+        "vi": "Làm ơn viết tên của bạn."
+      }
+    ],
+    "word_family": [
+      "writer (n)",
+      "writing (n)"
+    ],
+    "collocations": [
+      "write a letter",
+      "write in English",
+      "write down"
+    ],
+    "synonyms": [
+      "note",
+      "record"
+    ],
+    "antonyms": [
+      "read"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I write with pen.",
+        "correct": "I write with a pen.",
+        "explain_vi": "Cần dùng mạo từ 'a' trước 'pen'."
+      }
+    ],
+    "grammar_patterns": [
+      "write + object",
+      "write with + tool"
+    ]
+  },
+  {
+    "word": "study",
+    "phonetic": "/ˈstʌd.i/",
+    "meaning_vi": "học tập",
+    "meaning_en": "to spend time learning about a subject",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "I study English at school.",
+        "vi": "Tôi học tiếng Anh ở trường."
+      }
+    ],
+    "word_family": [
+      "student (n)",
+      "studious (adj)"
+    ],
+    "collocations": [
+      "study hard",
+      "study for a test",
+      "study group"
+    ],
+    "synonyms": [
+      "learn",
+      "review"
+    ],
+    "antonyms": [
+      "play"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I study English in Monday.",
+        "correct": "I study English on Monday.",
+        "explain_vi": "Dùng giới từ 'on' với thứ trong tuần."
+      }
+    ],
+    "grammar_patterns": [
+      "study + subject",
+      "study for + purpose"
+    ]
+  },
+  {
+    "word": "learn",
+    "phonetic": "/lɜːrn/",
+    "meaning_vi": "học (thu nhận kiến thức)",
+    "meaning_en": "to gain knowledge or skill by studying or experience",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "I want to learn Vietnamese.",
+        "vi": "Tôi muốn học tiếng Việt."
+      }
+    ],
+    "word_family": [
+      "learner (n)",
+      "learning (n)"
+    ],
+    "collocations": [
+      "learn new words",
+      "learn how to",
+      "learn from mistakes"
+    ],
+    "synonyms": [
+      "study",
+      "acquire"
+    ],
+    "antonyms": [
+      "teach"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I learn English with teacher.",
+        "correct": "I learn English with a teacher.",
+        "explain_vi": "Cần dùng mạo từ 'a' trước 'teacher'."
+      }
+    ],
+    "grammar_patterns": [
+      "learn + subject",
+      "learn to + verb"
+    ]
+  },
+  {
+    "word": "teach",
+    "phonetic": "/tiːtʃ/",
+    "meaning_vi": "dạy",
+    "meaning_en": "to give lessons to students",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "She teaches math.",
+        "vi": "Cô ấy dạy toán."
+      }
+    ],
+    "word_family": [
+      "teacher (n)",
+      "teaching (n)"
+    ],
+    "collocations": [
+      "teach English",
+      "teach students",
+      "teach a lesson"
+    ],
+    "synonyms": [
+      "instruct",
+      "educate"
+    ],
+    "antonyms": [
+      "learn"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "She teach math.",
+        "correct": "She teaches math.",
+        "explain_vi": "Chủ ngữ số ít (she) cần động từ thêm 's'."
+      }
+    ],
+    "grammar_patterns": [
+      "teach + subject",
+      "teach + object + subject"
+    ]
+  },
+  {
+    "word": "board",
+    "phonetic": "/bɔːrd/",
+    "meaning_vi": "bảng",
+    "meaning_en": "a flat surface used for writing on in a classroom",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The teacher writes on the board.",
+        "vi": "Giáo viên viết lên bảng."
+      }
+    ],
+    "word_family": [
+      "whiteboard (n)",
+      "blackboard (n)"
+    ],
+    "collocations": [
+      "on the board",
+      "write on the board",
+      "clean the board"
+    ],
+    "synonyms": [
+      "whiteboard",
+      "blackboard"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Teacher writes on board.",
+        "correct": "The teacher writes on the board.",
+        "explain_vi": "Cần dùng mạo từ 'the' trước 'board' và 'teacher'."
+      }
+    ],
+    "grammar_patterns": [
+      "on + the board",
+      "write + on the board"
+    ]
+  },
+  {
+    "word": "desk",
+    "phonetic": "/desk/",
+    "meaning_vi": "bàn học",
+    "meaning_en": "a piece of furniture with a flat surface for writing or reading",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "My book is on the desk.",
+        "vi": "Sách của t��i ở trên bàn."
+      }
+    ],
+    "word_family": [
+      "desktop (n)"
+    ],
+    "collocations": [
+      "at the desk",
+      "teacher's desk",
+      "desk chair"
+    ],
+    "synonyms": [
+      "table",
+      "workstation"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Book is on desk.",
+        "correct": "The book is on the desk.",
+        "explain_vi": "Cần dùng mạo từ 'the' trước 'book' và 'desk'."
+      }
+    ],
+    "grammar_patterns": [
+      "on + the desk",
+      "at + the desk"
+    ]
+  },
+  {
+    "word": "classroom",
+    "phonetic": "/ˈklɑːs.ruːm/",
+    "meaning_vi": "phòng học",
+    "meaning_en": "a room where lessons happen",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The classroom is big.",
+        "vi": "Phòng học rộng."
+      }
+    ],
+    "word_family": [
+      "class (n)"
+    ],
+    "collocations": [
+      "in the classroom",
+      "classroom door",
+      "classroom window"
+    ],
+    "synonyms": [
+      "schoolroom"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go to classroom.",
+        "correct": "I go to the classroom.",
+        "explain_vi": "Cần mạo từ 'the' trước 'classroom'."
+      }
+    ],
+    "grammar_patterns": [
+      "the + classroom",
+      "in + the + classroom"
+    ]
+  },
+  {
+    "word": "homework",
+    "phonetic": "/ˈhoʊm.wɜːrk/",
+    "meaning_vi": "bài tập về nhà",
+    "meaning_en": "schoolwork done at home",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I do my homework every day.",
+        "vi": "Tôi làm bài tập về nhà mỗi ngày."
+      }
+    ],
+    "word_family": [
+      "home (n)",
+      "work (n/v)"
+    ],
+    "collocations": [
+      "do homework",
+      "homework assignment",
+      "finish homework"
+    ],
+    "synonyms": [
+      "assignment"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I do homework at night.",
+        "correct": "I do my homework at night.",
+        "explain_vi": "Cần thêm 'my' trước 'homework'."
+      }
+    ],
+    "grammar_patterns": [
+      "do + possessive + homework"
+    ]
+  },
+  {
+    "word": "lesson",
+    "phonetic": "/ˈles.ən/",
+    "meaning_vi": "bài học",
+    "meaning_en": "a period of learning or teaching",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We have a lesson now.",
+        "vi": "Chúng tôi có một bài học bây giờ."
+      }
+    ],
+    "word_family": [
+      "less (adj)"
+    ],
+    "collocations": [
+      "have a lesson",
+      "lesson plan",
+      "learn a lesson"
+    ],
+    "synonyms": [
+      "class",
+      "session"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have lesson at 8.",
+        "correct": "I have a lesson at 8.",
+        "explain_vi": "Cần mạo từ 'a' trước 'lesson'."
+      }
+    ],
+    "grammar_patterns": [
+      "have + a + lesson",
+      "lesson + about + topic"
+    ]
+  },
+  {
+    "word": "school",
+    "phonetic": "/skuːl/",
+    "meaning_vi": "trường học",
+    "meaning_en": "a place where children learn",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I go to school by bus.",
+        "vi": "Tôi đi học bằng xe buýt."
+      }
+    ],
+    "word_family": [
+      "schooling (n)"
+    ],
+    "collocations": [
+      "go to school",
+      "at school",
+      "school bus"
+    ],
+    "synonyms": [
+      "academy",
+      "institution"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go to the school.",
+        "correct": "I go to school.",
+        "explain_vi": "Không dùng 'the' khi nói về mục đích đi học."
+      }
+    ],
+    "grammar_patterns": [
+      "go to + school (no article)",
+      "at + school"
+    ]
+  },
+  {
+    "word": "exam",
+    "phonetic": "/ɪɡˈzæm/",
+    "meaning_vi": "kỳ thi",
+    "meaning_en": "a formal test of knowledge",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The exam is difficult.",
+        "vi": "Kỳ thi khó."
+      }
+    ],
+    "word_family": [
+      "examine (v)",
+      "examination (n)"
+    ],
+    "collocations": [
+      "take an exam",
+      "pass an exam",
+      "fail an exam"
+    ],
+    "synonyms": [
+      "test",
+      "quiz"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have exam tomorrow.",
+        "correct": "I have an exam tomorrow.",
+        "explain_vi": "Cần mạo từ 'an' trước 'exam'."
+      }
+    ],
+    "grammar_patterns": [
+      "have + an + exam",
+      "exam + in + subject"
+    ]
+  },
+  {
+    "word": "test",
+    "phonetic": "/test/",
+    "meaning_vi": "bài kiểm tra",
+    "meaning_en": "a short exam",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We have a test on Friday.",
+        "vi": "Chúng tôi có bài kiểm tra vào thứ Sáu."
+      }
+    ],
+    "word_family": [
+      "testing (n)",
+      "test (v)"
+    ],
+    "collocations": [
+      "take a test",
+      "pass a test",
+      "test score"
+    ],
+    "synonyms": [
+      "exam",
+      "quiz"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have test today.",
+        "correct": "I have a test today.",
+        "explain_vi": "Cần mạo từ 'a' trước 'test'."
+      }
+    ],
+    "grammar_patterns": [
+      "have + a + test",
+      "test + on + day"
+    ]
+  },
+  {
+    "word": "question",
+    "phonetic": "/ˈkwes.tʃən/",
+    "meaning_vi": "câu hỏi",
+    "meaning_en": "a sentence asking for information",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I have a question.",
+        "vi": "Tôi có một câu hỏi."
+      }
+    ],
+    "word_family": [
+      "question (v)",
+      "questionnaire (n)"
+    ],
+    "collocations": [
+      "ask a question",
+      "answer a question",
+      "question mark"
+    ],
+    "synonyms": [
+      "query",
+      "inquiry"
+    ],
+    "antonyms": [
+      "answer"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I have question.",
+        "correct": "I have a question.",
+        "explain_vi": "Cần mạo từ 'a' trước 'question'."
+      }
+    ],
+    "grammar_patterns": [
+      "have + a + question",
+      "question + about + topic"
+    ]
+  },
+  {
+    "word": "answer",
+    "phonetic": "/ˈæn.sər/",
+    "meaning_vi": "câu trả lời",
+    "meaning_en": "a reply to a question",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The answer is correct.",
+        "vi": "Câu trả lời đúng."
+      }
+    ],
+    "word_family": [
+      "answer (v)",
+      "answering (adj)"
+    ],
+    "collocations": [
+      "give an answer",
+      "right answer",
+      "wrong answer"
+    ],
+    "synonyms": [
+      "reply",
+      "response"
+    ],
+    "antonyms": [
+      "question"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I don't have answer.",
+        "correct": "I don't have an answer.",
+        "explain_vi": "Cần mạo từ 'an' trước 'answer'."
+      }
+    ],
+    "grammar_patterns": [
+      "have + an + answer",
+      "answer + to + question"
+    ]
+  },
+  {
+    "word": "read",
+    "phonetic": "/riːd/",
+    "meaning_vi": "đọc",
+    "meaning_en": "to look at and understand written words",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "I read a book.",
+        "vi": "Tôi đọc một cuốn sách."
+      }
+    ],
+    "word_family": [
+      "reading (n)",
+      "reader (n)"
+    ],
+    "collocations": [
+      "read a book",
+      "read aloud",
+      "read carefully"
+    ],
+    "synonyms": [
+      "peruse",
+      "scan"
+    ],
+    "antonyms": [
+      "write"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I read book.",
+        "correct": "I read a book.",
+        "explain_vi": "Cần mạo từ 'a' trước 'book'."
+      }
+    ],
+    "grammar_patterns": [
+      "read + object",
+      "read + adverb"
+    ]
+  },
+  {
+    "word": "write",
+    "phonetic": "/raɪt/",
+    "meaning_vi": "viết",
+    "meaning_en": "to make letters or words on paper",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "I write a sentence.",
+        "vi": "Tôi viết một câu."
+      }
+    ],
+    "word_family": [
+      "writing (n)",
+      "writer (n)"
+    ],
+    "collocations": [
+      "write a word",
+      "write a letter",
+      "write down"
+    ],
+    "synonyms": [
+      "scribble",
+      "jot"
+    ],
+    "antonyms": [
+      "read"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I write with pen.",
+        "correct": "I write with a pen.",
+        "explain_vi": "Cần mạo từ 'a' trước 'pen'."
+      }
+    ],
+    "grammar_patterns": [
+      "write + object",
+      "write + with + tool"
+    ]
+  },
+  {
+    "word": "study",
+    "phonetic": "/ˈstʌd.i/",
+    "meaning_vi": "học tập",
+    "meaning_en": "to learn a subject",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "I study English.",
+        "vi": "Tôi học tiếng Anh."
+      }
+    ],
+    "word_family": [
+      "study (n)",
+      "student (n)"
+    ],
+    "collocations": [
+      "study hard",
+      "study for a test",
+      "study room"
+    ],
+    "synonyms": [
+      "learn",
+      "review"
+    ],
+    "antonyms": [
+      "play"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I study English in school.",
+        "correct": "I study English at school.",
+        "explain_vi": "Dùng 'at school' thay vì 'in school'."
+      }
+    ],
+    "grammar_patterns": [
+      "study + subject",
+      "study + for + purpose"
+    ]
+  },
+  {
+    "word": "learn",
+    "phonetic": "/lɜːrn/",
+    "meaning_vi": "học (tiếp thu)",
+    "meaning_en": "to gain knowledge or skill",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "I learn new words.",
+        "vi": "Tôi học từ mới."
+      }
+    ],
+    "word_family": [
+      "learning (n)",
+      "learner (n)"
+    ],
+    "collocations": [
+      "learn from",
+      "learn by heart",
+      "learn a language"
+    ],
+    "synonyms": [
+      "study",
+      "master"
+    ],
+    "antonyms": [
+      "teach"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I learn English from teacher.",
+        "correct": "I learn English from my teacher.",
+        "explain_vi": "Cần thêm 'my' trước 'teacher'."
+      }
+    ],
+    "grammar_patterns": [
+      "learn + object",
+      "learn + from + source"
+    ]
+  },
+  {
+    "word": "teach",
+    "phonetic": "/tiːtʃ/",
+    "meaning_vi": "dạy",
+    "meaning_en": "to give knowledge to someone",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "She teaches math.",
+        "vi": "Cô ấy dạy toán."
+      }
+    ],
+    "word_family": [
+      "teacher (n)",
+      "teaching (n)"
+    ],
+    "collocations": [
+      "teach a subject",
+      "teach students",
+      "teach a lesson"
+    ],
+    "synonyms": [
+      "instruct",
+      "educate"
+    ],
+    "antonyms": [
+      "learn"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "She teach math.",
+        "correct": "She teaches math.",
+        "explain_vi": "Chủ ngữ số ít cần động từ thêm -s."
+      }
+    ],
+    "grammar_patterns": [
+      "teach + subject",
+      "teach + someone + something"
+    ]
+  },
+  {
+    "word": "board",
+    "phonetic": "/bɔːrd/",
+    "meaning_vi": "bảng (trong lớp)",
+    "meaning_en": "a flat surface for writing on in class",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The teacher writes on the board.",
+        "vi": "Giáo viên viết trên bảng."
+      }
+    ],
+    "word_family": [
+      "board (v)"
+    ],
+    "collocations": [
+      "on the board",
+      "whiteboard",
+      "blackboard"
+    ],
+    "synonyms": [
+      "chalkboard",
+      "whiteboard"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Teacher writes on board.",
+        "correct": "The teacher writes on the board.",
+        "explain_vi": "Cần mạo từ 'the' trước 'teacher' và 'board'."
+      }
+    ],
+    "grammar_patterns": [
+      "on + the + board",
+      "write + on + the + board"
+    ]
+  },
+  {
+    "word": "desk",
+    "phonetic": "/desk/",
+    "meaning_vi": "bàn học",
+    "meaning_en": "a table for writing in class",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "My desk is clean.",
+        "vi": "Bàn học của tôi sạch."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "at the desk",
+      "desk lamp",
+      "desk chair"
+    ],
+    "synonyms": [
+      "table",
+      "workstation"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I sit on desk.",
+        "correct": "I sit at the desk.",
+        "explain_vi": "Dùng 'at' thay vì 'on' với desk."
+      }
+    ],
+    "grammar_patterns": [
+      "at + the + desk",
+      "possessive + desk"
+    ]
+  },
+  {
+    "word": "notebook",
+    "phonetic": "/ˈnoʊt.bʊk/",
+    "meaning_vi": "vở ghi chép",
+    "meaning_en": "a book for writing notes",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I write in my notebook.",
+        "vi": "Tôi viết vào vở của tôi."
+      }
+    ],
+    "word_family": [
+      "note (n/v)",
+      "book (n)"
+    ],
+    "collocations": [
+      "notebook paper",
+      "spiral notebook",
+      "notebook computer"
+    ],
+    "synonyms": [
+      "exercise book",
+      "journal"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I write in notebook.",
+        "correct": "I write in my notebook.",
+        "explain_vi": "Cần thêm 'my' trước 'notebook'."
+      }
+    ],
+    "grammar_patterns": [
+      "possessive + notebook",
+      "in + possessive + notebook"
+    ]
+  },
+  {
+    "word": "paper",
+    "phonetic": "/ˈpeɪ.pər/",
+    "meaning_vi": "giấy",
+    "meaning_en": "material for writing on",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I need a piece of paper.",
+        "vi": "Tôi cần một tờ giấy."
+      }
+    ],
+    "word_family": [
+      "paper (adj)"
+    ],
+    "collocations": [
+      "piece of paper",
+      "paper sheet",
+      "write on paper"
+    ],
+    "synonyms": [
+      "sheet",
+      "page"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I need paper.",
+        "correct": "I need a piece of paper.",
+        "explain_vi": "Dùng 'a piece of' để chỉ một tờ giấy."
+      }
+    ],
+    "grammar_patterns": [
+      "a piece of + paper",
+      "on + paper"
+    ]
+  },
+  {
+    "word": "pencil case",
+    "phonetic": "/ˈpen.səl ˌkeɪs/",
+    "meaning_vi": "hộp bút",
+    "meaning_en": "a container for pens and pencils",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "My pencil case is blue.",
+        "vi": "Hộp bút của tôi màu xanh."
+      }
+    ],
+    "word_family": [
+      "pencil (n)",
+      "case (n)"
+    ],
+    "collocations": [
+      "pencil case with zipper",
+      "open pencil case"
+    ],
+    "synonyms": [
+      "pencil box",
+      "pen case"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have pencil case.",
+        "correct": "I have a pencil case.",
+        "explain_vi": "Cần mạo từ 'a' trước 'pencil case'."
+      }
+    ],
+    "grammar_patterns": [
+      "possessive + pencil case",
+      "a + pencil case"
+    ]
+  },
+  {
+    "word": "ruler",
+    "phonetic": "/ˈruː.lər/",
+    "meaning_vi": "thước kẻ",
+    "meaning_en": "a tool for measuring or drawing straight lines",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Use a ruler to draw a line.",
+        "vi": "Dùng thước kẻ để vẽ một đường thẳng."
+      }
+    ],
+    "word_family": [
+      "rule (n/v)"
+    ],
+    "collocations": [
+      "ruler in cm",
+      "ruler on desk"
+    ],
+    "synonyms": [
+      "measuring stick",
+      "straightedge"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have ruler.",
+        "correct": "I have a ruler.",
+        "explain_vi": "Cần mạo từ 'a' trước 'ruler'."
+      }
+    ],
+    "grammar_patterns": [
+      "a + ruler",
+      "use + a + ruler"
+    ]
+  },
+  {
+    "word": "eraser",
+    "phonetic": "/ɪˈreɪ.zər/",
+    "meaning_vi": "cục tẩy",
+    "meaning_en": "a tool to remove pencil marks",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I use an eraser.",
+        "vi": "Tôi dùng cục tẩy."
+      }
+    ],
+    "word_family": [
+      "erase (v)"
+    ],
+    "collocations": [
+      "eraser on pencil",
+      "rubber eraser"
+    ],
+    "synonyms": [
+      "rubber"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I use eraser.",
+        "correct": "I use an eraser.",
+        "explain_vi": "Cần mạo từ 'an' trước 'eraser' vì bắt đầu bằng nguyên âm."
+      }
+    ],
+    "grammar_patterns": [
+      "an + eraser",
+      "use + an + eraser"
+    ]
+  }
+]

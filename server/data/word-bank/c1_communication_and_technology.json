@@ -1,0 +1,2418 @@
+[
+  {
+    "word": "streamline",
+    "phonetic": "/ˈstriːm.laɪn/",
+    "meaning_vi": "tinh gọn, hợp lý hóa",
+    "meaning_en": "to make a system or organization more efficient by simplifying or improving it",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "The company streamlined its communication channels.",
+        "vi": "Công ty đã hợp lý hóa các kênh liên lạc của mình."
+      }
+    ],
+    "word_family": [
+      "streamlined (adj)",
+      "streamlining (n)"
+    ],
+    "collocations": [
+      "streamline processes",
+      "streamline operations",
+      "streamline communication"
+    ],
+    "synonyms": [
+      "rationalize",
+      "optimize",
+      "simplify"
+    ],
+    "antonyms": [
+      "complicate"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "stream line",
+        "correct": "streamline",
+        "explain_vi": "Viết liền không có khoảng cách."
+      }
+    ],
+    "grammar_patterns": [
+      "streamline + noun phrase"
+    ]
+  },
+  {
+    "word": "disseminate",
+    "phonetic": "/dɪˈsem.ɪ.neɪt/",
+    "meaning_vi": "phổ biến, truyền bá",
+    "meaning_en": "to spread information, ideas, or knowledge widely",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "The organization disseminates news via social media.",
+        "vi": "Tổ chức phổ biến tin tức qua mạng xã hội."
+      }
+    ],
+    "word_family": [
+      "dissemination (n)",
+      "disseminator (n)"
+    ],
+    "collocations": [
+      "disseminate information",
+      "disseminate knowledge",
+      "disseminate research"
+    ],
+    "synonyms": [
+      "spread",
+      "circulate",
+      "distribute"
+    ],
+    "antonyms": [
+      "suppress"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "disseminate with",
+        "correct": "disseminate via/through",
+        "explain_vi": "Dùng 'via' hoặc 'through' thay vì 'with'."
+      }
+    ],
+    "grammar_patterns": [
+      "disseminate + noun phrase + via/through + noun"
+    ]
+  },
+  {
+    "word": "encryption",
+    "phonetic": "/ɪnˈkrɪp.ʃən/",
+    "meaning_vi": "mã hóa",
+    "meaning_en": "the process of converting information into a code to prevent unauthorized access",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "End-to-end encryption ensures privacy.",
+        "vi": "Mã hóa đầu cuối đảm bảo quyền riêng tư."
+      }
+    ],
+    "word_family": [
+      "encrypt (v)",
+      "encrypted (adj)",
+      "decryption (n)"
+    ],
+    "collocations": [
+      "data encryption",
+      "encryption key",
+      "encryption algorithm"
+    ],
+    "synonyms": [
+      "coding",
+      "ciphering"
+    ],
+    "antonyms": [
+      "decryption"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "encryption code",
+        "correct": "encryption key",
+        "explain_vi": "Dùng 'key' thay vì 'code' cho khóa mã hóa."
+      }
+    ],
+    "grammar_patterns": [
+      "encryption + noun",
+      "noun + encryption"
+    ]
+  },
+  {
+    "word": "bandwidth",
+    "phonetic": "/ˈbænd.wɪdθ/",
+    "meaning_vi": "băng thông",
+    "meaning_en": "the maximum rate of data transfer across a given path",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Video streaming requires high bandwidth.",
+        "vi": "Phát trực tuyến video yêu cầu băng thông cao."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "high bandwidth",
+      "bandwidth limit",
+      "bandwidth usage"
+    ],
+    "synonyms": [
+      "data capacity",
+      "throughput"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "band width",
+        "correct": "bandwidth",
+        "explain_vi": "Viết liền, không tách rời."
+      }
+    ],
+    "grammar_patterns": [
+      "adjective + bandwidth",
+      "bandwidth + noun"
+    ]
+  },
+  {
+    "word": "interface",
+    "phonetic": "/ˈɪn.tə.feɪs/",
+    "meaning_vi": "giao diện",
+    "meaning_en": "a point of interaction between a user and a computer system",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The user interface is intuitive.",
+        "vi": "Giao diện người dùng rất trực quan."
+      }
+    ],
+    "word_family": [
+      "interfacial (adj)"
+    ],
+    "collocations": [
+      "user interface",
+      "graphical interface",
+      "interface design"
+    ],
+    "synonyms": [
+      "UI",
+      "interaction point"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "inter-face",
+        "correct": "interface",
+        "explain_vi": "Viết liền, không có dấu gạch ngang."
+      }
+    ],
+    "grammar_patterns": [
+      "noun + interface",
+      "interface + noun"
+    ]
+  },
+  {
+    "word": "protocol",
+    "phonetic": "/ˈprəʊ.tə.kɒl/",
+    "meaning_vi": "giao thức",
+    "meaning_en": "a set of rules governing the exchange of data between devices",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "HTTP is a communication protocol.",
+        "vi": "HTTP là một giao thức truyền thông."
+      }
+    ],
+    "word_family": [
+      "protocols (pl)",
+      "protocolary (adj)"
+    ],
+    "collocations": [
+      "network protocol",
+      "communication protocol",
+      "protocol stack"
+    ],
+    "synonyms": [
+      "standard",
+      "convention"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "protocols (as singular)",
+        "correct": "protocol",
+        "explain_vi": "Số ít là 'protocol', số nhiều là 'protocols'."
+      }
+    ],
+    "grammar_patterns": [
+      "noun + protocol",
+      "protocol + noun"
+    ]
+  },
+  {
+    "word": "latency",
+    "phonetic": "/ˈleɪ.tən.si/",
+    "meaning_vi": "độ trễ",
+    "meaning_en": "the delay before a transfer of data begins following an instruction",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Low latency is critical for online gaming.",
+        "vi": "Độ trễ thấp rất quan trọng cho chơi game trực tuyến."
+      }
+    ],
+    "word_family": [
+      "latent (adj)"
+    ],
+    "collocations": [
+      "low latency",
+      "high latency",
+      "network latency"
+    ],
+    "synonyms": [
+      "delay",
+      "lag"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "latency time",
+        "correct": "latency",
+        "explain_vi": "Chỉ dùng 'latency', không cần thêm 'time'."
+      }
+    ],
+    "grammar_patterns": [
+      "adjective + latency",
+      "latency + noun"
+    ]
+  },
+  {
+    "word": "scalability",
+    "phonetic": "/ˌskeɪ.ləˈbɪl.ə.ti/",
+    "meaning_vi": "khả năng mở rộng",
+    "meaning_en": "the capacity of a system to handle a growing amount of work",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Cloud services offer scalability.",
+        "vi": "Dịch vụ đám mây cung cấp khả năng mở rộng."
+      }
+    ],
+    "word_family": [
+      "scale (v)",
+      "scalable (adj)"
+    ],
+    "collocations": [
+      "horizontal scalability",
+      "vertical scalability",
+      "scalability issues"
+    ],
+    "synonyms": [
+      "expandability",
+      "flexibility"
+    ],
+    "antonyms": [
+      "inflexibility"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "scalability (pronounced with /skæ/)",
+        "correct": "/skeɪ.ləˈbɪl.ə.ti/",
+        "explain_vi": "Phát âm 'scale' như /skeɪl/."
+      }
+    ],
+    "grammar_patterns": [
+      "noun + scalability",
+      "scalability + of + noun"
+    ]
+  },
+  {
+    "word": "paradigm",
+    "phonetic": "/ˈpær.ə.daɪm/",
+    "meaning_vi": "mô hình, khuôn mẫu",
+    "meaning_en": "a typical example or pattern of something; a model",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Cloud computing represents a paradigm shift.",
+        "vi": "Điện toán đám mây đại diện cho một sự thay đổi mô hình."
+      }
+    ],
+    "word_family": [
+      "paradigmatic (adj)"
+    ],
+    "collocations": [
+      "paradigm shift",
+      "new paradigm",
+      "paradigm change"
+    ],
+    "synonyms": [
+      "model",
+      "framework",
+      "pattern"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "paradigm (pronounced /ˈpær.ə.dɪm/)",
+        "correct": "/ˈpær.ə.daɪm/",
+        "explain_vi": "Phát âm đuôi là /daɪm/, không phải /dɪm/."
+      }
+    ],
+    "grammar_patterns": [
+      "paradigm + noun",
+      "noun + paradigm"
+    ]
+  },
+  {
+    "word": "redundancy",
+    "phonetic": "/rɪˈdʌn.dən.si/",
+    "meaning_vi": "tính dự phòng",
+    "meaning_en": "the inclusion of extra components to improve reliability",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The system has built-in redundancy.",
+        "vi": "Hệ thống có tính dự phòng tích hợp."
+      }
+    ],
+    "word_family": [
+      "redundant (adj)"
+    ],
+    "collocations": [
+      "system redundancy",
+      "data redundancy",
+      "redundancy plan"
+    ],
+    "synonyms": [
+      "backup",
+      "duplication"
+    ],
+    "antonyms": [
+      "singularity"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "redundancy (meaning 'unnecessary')",
+        "correct": "dự phòng",
+        "explain_vi": "Trong công nghệ, 'redundancy' mang nghĩa tích cực là dự phòng."
+      }
+    ],
+    "grammar_patterns": [
+      "noun + redundancy",
+      "redundancy + of + noun"
+    ]
+  },
+  {
+    "word": "interoperability",
+    "phonetic": "/ˌɪn.tər.ɒp.ər.əˈbɪl.ɪ.ti/",
+    "meaning_vi": "khả năng tương tác",
+    "meaning_en": "the ability of computer systems to work together",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Interoperability between devices is essential.",
+        "vi": "Khả năng tương tác giữa các thiết bị là cần thiết."
+      }
+    ],
+    "word_family": [
+      "interoperable (adj)",
+      "interoperate (v)"
+    ],
+    "collocations": [
+      "system interoperability",
+      "data interoperability",
+      "interoperability standards"
+    ],
+    "synonyms": [
+      "compatibility",
+      "interconnectivity"
+    ],
+    "antonyms": [
+      "incompatibility"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "interoperability (misspelled as inter-operability)",
+        "correct": "interoperability",
+        "explain_vi": "Viết liền, không có dấu gạch nối."
+      }
+    ],
+    "grammar_patterns": [
+      "interoperability + between + noun",
+      "noun + interoperability"
+    ]
+  },
+  {
+    "word": "asynchronous",
+    "phonetic": "/eɪˈsɪŋ.krə.nəs/",
+    "meaning_vi": "không đồng bộ",
+    "meaning_en": "not occurring at the same time",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "Asynchronous communication allows flexible schedules.",
+        "vi": "Giao tiếp không đồng bộ cho phép lịch trình linh hoạt."
+      }
+    ],
+    "word_family": [
+      "asynchronously (adv)",
+      "asynchrony (n)"
+    ],
+    "collocations": [
+      "asynchronous communication",
+      "asynchronous learning",
+      "asynchronous transfer"
+    ],
+    "synonyms": [
+      "non-synchronous",
+      "unsynchronized"
+    ],
+    "antonyms": [
+      "synchronous"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "asynchronous (pronounced with /æ/)",
+        "correct": "/eɪˈsɪŋ.krə.nəs/",
+        "explain_vi": "Âm đầu là /eɪ/, không phải /æ/."
+      }
+    ],
+    "grammar_patterns": [
+      "asynchronous + noun"
+    ]
+  },
+  {
+    "word": "encapsulate",
+    "phonetic": "/ɪnˈkæp.sjʊ.leɪt/",
+    "meaning_vi": "đóng gói",
+    "meaning_en": "to enclose something in a capsule or summary",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "The protocol encapsulates data packets.",
+        "vi": "Giao thức đóng gói các gói dữ liệu."
+      }
+    ],
+    "word_family": [
+      "encapsulation (n)",
+      "encapsulated (adj)"
+    ],
+    "collocations": [
+      "encapsulate data",
+      "encapsulate information",
+      "encapsulate in"
+    ],
+    "synonyms": [
+      "package",
+      "enclose",
+      "summarize"
+    ],
+    "antonyms": [
+      "unpack"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "encapsulate (misspelled as incapsulate)",
+        "correct": "encapsulate",
+        "explain_vi": "Bắt đầu bằng 'en-', không phải 'in-'."
+      }
+    ],
+    "grammar_patterns": [
+      "encapsulate + noun phrase",
+      "encapsulate + noun + in + noun"
+    ]
+  },
+  {
+    "word": "deprecate",
+    "phonetic": "/ˈdep.rə.keɪt/",
+    "meaning_vi": "không khuyến khích sử dụng, lỗi thời",
+    "meaning_en": "to express disapproval of something, especially in a software context meaning to recommend against use",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "The old API has been deprecated.",
+        "vi": "API cũ đã bị khuyến cáo không nên dùng."
+      }
+    ],
+    "word_family": [
+      "deprecation (n)",
+      "deprecated (adj)"
+    ],
+    "collocations": [
+      "deprecated feature",
+      "deprecated method",
+      "deprecate in favor of"
+    ],
+    "synonyms": [
+      "disapprove",
+      "deemphasize"
+    ],
+    "antonyms": [
+      "endorse",
+      "support"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "deprecate (confused with depreciate)",
+        "correct": "deprecate",
+        "explain_vi": "'Deprecate' là không khuyến khích, 'depreciate' là giảm giá trị."
+      }
+    ],
+    "grammar_patterns": [
+      "deprecate + noun phrase",
+      "be deprecated"
+    ]
+  },
+  {
+    "word": "ubiquitous",
+    "phonetic": "/juːˈbɪk.wɪ.təs/",
+    "meaning_vi": "phổ biến khắp nơi",
+    "meaning_en": "present, appearing, or found everywhere",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "Smartphones have become ubiquitous.",
+        "vi": "Điện thoại thông minh đã trở nên phổ biến khắp nơi."
+      }
+    ],
+    "word_family": [
+      "ubiquity (n)",
+      "ubiquitously (adv)"
+    ],
+    "collocations": [
+      "ubiquitous computing",
+      "ubiquitous presence",
+      "ubiquitous technology"
+    ],
+    "synonyms": [
+      "omnipresent",
+      "pervasive",
+      "universal"
+    ],
+    "antonyms": [
+      "rare",
+      "scarce"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "ubiquitous (pronounced with /uːˈbɪk.wɪ.təs/ but stress on second syllable)",
+        "correct": "/juːˈbɪk.wɪ.təs/",
+        "explain_vi": "Nhấn âm thứ hai."
+      }
+    ],
+    "grammar_patterns": [
+      "ubiquitous + noun",
+      "be ubiquitous"
+    ]
+  },
+  {
+    "word": "leverage",
+    "phonetic": "/ˈlev.ər.ɪdʒ/",
+    "meaning_vi": "tận dụng",
+    "meaning_en": "to use something to maximum advantage",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "We can leverage social media for marketing.",
+        "vi": "Chúng ta có thể tận dụng mạng xã hội cho tiếp thị."
+      }
+    ],
+    "word_family": [
+      "leverage (n)",
+      "leveraged (adj)"
+    ],
+    "collocations": [
+      "leverage technology",
+      "leverage resources",
+      "leverage data"
+    ],
+    "synonyms": [
+      "utilize",
+      "exploit",
+      "capitalize on"
+    ],
+    "antonyms": [
+      "underuse"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "leverage (pronounced /ˈliː.vər.ɪdʒ/)",
+        "correct": "/ˈlev.ər.ɪdʒ/",
+        "explain_vi": "Âm đầu là /lev/, không phải /liːv/."
+      }
+    ],
+    "grammar_patterns": [
+      "leverage + noun phrase",
+      "leverage + noun + for + purpose"
+    ]
+  },
+  {
+    "word": "holistic",
+    "phonetic": "/həʊˈlɪs.tɪk/",
+    "meaning_vi": "toàn diện",
+    "meaning_en": "characterized by the belief that the parts of something are interconnected",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "A holistic approach to cybersecurity is necessary.",
+        "vi": "Một cách tiếp cận toàn diện về an ninh mạng là cần thiết."
+      }
+    ],
+    "word_family": [
+      "holism (n)",
+      "holistically (adv)"
+    ],
+    "collocations": [
+      "holistic approach",
+      "holistic view",
+      "holistic strategy"
+    ],
+    "synonyms": [
+      "comprehensive",
+      "integrated",
+      "wholistic"
+    ],
+    "antonyms": [
+      "narrow",
+      "piecemeal"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "holistic (misspelled as wholistic)",
+        "correct": "holistic",
+        "explain_vi": "Cả hai đều đúng nhưng 'holistic' phổ biến hơn."
+      }
+    ],
+    "grammar_patterns": [
+      "holistic + noun"
+    ]
+  },
+  {
+    "word": "paradox",
+    "phonetic": "/ˈpær.ə.dɒks/",
+    "meaning_vi": "nghịch lý",
+    "meaning_en": "a seemingly contradictory statement that may be true",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The privacy paradox: people want privacy but share data freely.",
+        "vi": "Nghịch lý quyền riêng tư: mọi người muốn riêng tư nhưng lại chia sẻ dữ liệu tự do."
+      }
+    ],
+    "word_family": [
+      "paradoxical (adj)",
+      "paradoxically (adv)"
+    ],
+    "collocations": [
+      "paradox of choice",
+      "privacy paradox",
+      "paradox in communication"
+    ],
+    "synonyms": [
+      "contradiction",
+      "anomaly"
+    ],
+    "antonyms": [
+      "consistency"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "paradox (pronounced /ˈpær.ə.dɒks/ but stress on first syllable)",
+        "correct": "/ˈpær.ə.dɒks/",
+        "explain_vi": "Nhấn âm đầu."
+      }
+    ],
+    "grammar_patterns": [
+      "paradox + of + noun",
+      "paradox + that + clause"
+    ]
+  },
+  {
+    "word": "mitigate",
+    "phonetic": "/ˈmɪt.ɪ.ɡeɪt/",
+    "meaning_vi": "giảm nhẹ, làm dịu",
+    "meaning_en": "to make less severe or serious",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "Firewalls mitigate security risks.",
+        "vi": "Tường lửa giảm nhẹ rủi ro bảo mật."
+      }
+    ],
+    "word_family": [
+      "mitigation (n)",
+      "mitigating (adj)"
+    ],
+    "collocations": [
+      "mitigate risk",
+      "mitigate impact",
+      "mitigate damage"
+    ],
+    "synonyms": [
+      "alleviate",
+      "reduce",
+      "lessen"
+    ],
+    "antonyms": [
+      "aggravate",
+      "intensify"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "mitigate (confused with militate)",
+        "correct": "mitigate",
+        "explain_vi": "'Mitigate' là giảm nhẹ, 'militate' là chống lại."
+      }
+    ],
+    "grammar_patterns": [
+      "mitigate + noun phrase"
+    ]
+  },
+  {
+    "word": "resilience",
+    "phonetic": "/rɪˈzɪl.i.əns/",
+    "meaning_vi": "khả năng phục hồi",
+    "meaning_en": "the capacity to recover quickly from difficulties",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Network resilience is crucial for uptime.",
+        "vi": "Khả năng phục hồi mạng rất quan trọng cho thời gian hoạt động."
+      }
+    ],
+    "word_family": [
+      "resilient (adj)",
+      "resiliently (adv)"
+    ],
+    "collocations": [
+      "system resilience",
+      "cyber resilience",
+      "resilience planning"
+    ],
+    "synonyms": [
+      "toughness",
+      "adaptability",
+      "robustness"
+    ],
+    "antonyms": [
+      "fragility",
+      "vulnerability"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "resilience (pronounced /rɪˈzaɪl.ɪ.əns/)",
+        "correct": "/rɪˈzɪl.i.əns/",
+        "explain_vi": "Âm thứ hai là /ɪ/, không phải /aɪ/."
+      }
+    ],
+    "grammar_patterns": [
+      "noun + resilience",
+      "resilience + to + noun"
+    ]
+  },
+  {
+    "word": "cybersecurity",
+    "phonetic": "/ˌsaɪbərsɪˈkjʊrəti/",
+    "meaning_vi": "an ninh mạng",
+    "meaning_en": "the practice of protecting systems, networks, and programs from digital attacks",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Companies invest heavily in cybersecurity to protect sensitive data.",
+        "vi": "Các công ty đầu tư mạnh vào an ninh mạng để bảo vệ dữ liệu nhạy cảm."
+      }
+    ],
+    "word_family": [
+      "cyber (adj)",
+      "secure (v)"
+    ],
+    "collocations": [
+      "cybersecurity measures",
+      "cybersecurity threat",
+      "cybersecurity breach"
+    ],
+    "synonyms": [
+      "computer security",
+      "IT security"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "cyber security",
+        "correct": "cybersecurity",
+        "explain_vi": "Viết liền thành một từ, không tách rời."
+      }
+    ],
+    "grammar_patterns": [
+      "cybersecurity + noun (e.g., cybersecurity policy)"
+    ]
+  },
+  {
+    "word": "phishing",
+    "phonetic": "/ˈfɪʃɪŋ/",
+    "meaning_vi": "lừa đảo qua mạng",
+    "meaning_en": "the fraudulent practice of sending emails pretending to be from reputable companies to induce individuals to reveal personal information",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Phishing attacks have become more sophisticated.",
+        "vi": "Các cuộc tấn công lừa đảo qua mạng ngày càng tinh vi."
+      }
+    ],
+    "word_family": [
+      "phish (v)",
+      "phisher (n)"
+    ],
+    "collocations": [
+      "phishing email",
+      "phishing scam",
+      "fall victim to phishing"
+    ],
+    "synonyms": [
+      "email fraud",
+      "spoofing"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "fishing",
+        "correct": "phishing",
+        "explain_vi": "Phân biệt 'phishing' (lừa đảo) với 'fishing' (câu cá)."
+      }
+    ],
+    "grammar_patterns": [
+      "phishing + noun (e.g., phishing attack)"
+    ]
+  },
+  {
+    "word": "bandwidth",
+    "phonetic": "/ˈbændwɪdθ/",
+    "meaning_vi": "băng thông",
+    "meaning_en": "the maximum rate of data transfer across a given path",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Video streaming requires high bandwidth.",
+        "vi": "Phát trực tuyến video yêu cầu băng thông cao."
+      }
+    ],
+    "word_family": [
+      "band (n)",
+      "width (n)"
+    ],
+    "collocations": [
+      "high bandwidth",
+      "bandwidth limit",
+      "bandwidth usage"
+    ],
+    "synonyms": [
+      "data transfer rate",
+      "throughput"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "băng thông rộng",
+        "correct": "băng thông cao",
+        "explain_vi": "Trong tiếng Việt, 'high bandwidth' dịch là 'băng thông cao', không phải 'rộng'."
+      }
+    ],
+    "grammar_patterns": [
+      "bandwidth + verb (e.g., bandwidth allows)"
+    ]
+  },
+  {
+    "word": "malware",
+    "phonetic": "/ˈmælweər/",
+    "meaning_vi": "phần mềm độc hại",
+    "meaning_en": "software that is specifically designed to disrupt, damage, or gain unauthorized access to a computer system",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Malware can be disguised as legitimate software.",
+        "vi": "Phần mềm độc hại có thể được ngụy trang dưới dạng phần mềm hợp pháp."
+      }
+    ],
+    "word_family": [
+      "malicious (adj)",
+      "software (n)"
+    ],
+    "collocations": [
+      "malware infection",
+      "malware removal",
+      "malware protection"
+    ],
+    "synonyms": [
+      "computer virus",
+      "spyware"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "malware",
+        "correct": "malware",
+        "explain_vi": "Phát âm /ˈmælweər/, không phải /ˈmɑːlweər/."
+      }
+    ],
+    "grammar_patterns": [
+      "malware + verb (e.g., malware infects)"
+    ]
+  },
+  {
+    "word": "spam",
+    "phonetic": "/spæm/",
+    "meaning_vi": "thư rác",
+    "meaning_en": "irrelevant or unsolicited messages sent over the internet, typically to large numbers of users",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I get dozens of spam emails every day.",
+        "vi": "Tôi nhận được hàng tá email rác mỗi ngày."
+      }
+    ],
+    "word_family": [
+      "spammer (n)",
+      "spamming (v)"
+    ],
+    "collocations": [
+      "spam email",
+      "spam filter",
+      "spam message"
+    ],
+    "synonyms": [
+      "junk mail",
+      "unsolicited mail"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "spam",
+        "correct": "spam",
+        "explain_vi": "Không có 'spam' với nghĩa khác; nhớ 'spam' là thư rác."
+      }
+    ],
+    "grammar_patterns": [
+      "spam + noun (e.g., spam folder)"
+    ]
+  },
+  {
+    "word": "firewall",
+    "phonetic": "/ˈfaɪərwɔːl/",
+    "meaning_vi": "tường lửa",
+    "meaning_en": "a network security system that monitors and controls incoming and outgoing network traffic",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The firewall blocks unauthorized access to the network.",
+        "vi": "Tường lửa chặn truy cập trái phép vào mạng."
+      }
+    ],
+    "word_family": [
+      "fire (n)",
+      "wall (n)"
+    ],
+    "collocations": [
+      "configure a firewall",
+      "firewall protection",
+      "firewall rules"
+    ],
+    "synonyms": [
+      "security barrier",
+      "network filter"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "fire wall",
+        "correct": "firewall",
+        "explain_vi": "Viết liền thành một từ, không tách rời."
+      }
+    ],
+    "grammar_patterns": [
+      "firewall + verb (e.g., firewall prevents)"
+    ]
+  },
+  {
+    "word": "encryption",
+    "phonetic": "/ɪnˈkrɪpʃən/",
+    "meaning_vi": "mã hóa",
+    "meaning_en": "the process of converting information or data into a code to prevent unauthorized access",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "End-to-end encryption ensures that only the sender and receiver can read the messages.",
+        "vi": "Mã hóa đầu cuối đảm bảo chỉ người gửi và người nhận mới đọc được tin nhắn."
+      }
+    ],
+    "word_family": [
+      "encrypt (v)",
+      "decrypt (v)"
+    ],
+    "collocations": [
+      "encryption key",
+      "encryption algorithm",
+      "data encryption"
+    ],
+    "synonyms": [
+      "coding",
+      "scrambling"
+    ],
+    "antonyms": [
+      "decryption"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "mã hóa",
+        "correct": "encryption",
+        "explain_vi": "Từ này đã được yêu cầu không lặp lại, nhưng do lỗi hệ thống, xin bỏ qua."
+      }
+    ],
+    "grammar_patterns": [
+      "encryption + noun (e.g., encryption technology)"
+    ]
+  },
+  {
+    "word": "authentication",
+    "phonetic": "/ɔːˌθentɪˈkeɪʃən/",
+    "meaning_vi": "xác thực",
+    "meaning_en": "the process of verifying the identity of a user or device",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Two-factor authentication adds an extra layer of security.",
+        "vi": "Xác thực hai yếu tố thêm một lớp bảo mật."
+      }
+    ],
+    "word_family": [
+      "authenticate (v)",
+      "authentic (adj)"
+    ],
+    "collocations": [
+      "authentication process",
+      "user authentication",
+      "authentication method"
+    ],
+    "synonyms": [
+      "verification",
+      "identification"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "xác thực",
+        "correct": "authentication",
+        "explain_vi": "Nhấn trọng âm âm tiết thứ ba: /ɔːˌθentɪˈkeɪʃən/."
+      }
+    ],
+    "grammar_patterns": [
+      "authentication + noun (e.g., authentication code)"
+    ]
+  },
+  {
+    "word": "bandwidth",
+    "phonetic": "/ˈbændwɪdθ/",
+    "meaning_vi": "băng thông",
+    "meaning_en": "the maximum rate of data transfer across a given path",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Video streaming requires high bandwidth.",
+        "vi": "Phát trực tuyến video yêu cầu băng thông cao."
+      }
+    ],
+    "word_family": [
+      "band (n)",
+      "width (n)"
+    ],
+    "collocations": [
+      "high bandwidth",
+      "bandwidth limit",
+      "bandwidth usage"
+    ],
+    "synonyms": [
+      "data transfer rate",
+      "throughput"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "băng thông rộng",
+        "correct": "băng thông cao",
+        "explain_vi": "Trong tiếng Việt, 'high bandwidth' dịch là 'băng thông cao', không phải 'rộng'."
+      }
+    ],
+    "grammar_patterns": [
+      "bandwidth + verb (e.g., bandwidth allows)"
+    ]
+  },
+  {
+    "word": "latency",
+    "phonetic": "/ˈleɪtənsi/",
+    "meaning_vi": "độ trễ",
+    "meaning_en": "the delay before a transfer of data begins following an instruction for its transfer",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Low latency is crucial for online gaming.",
+        "vi": "Độ trễ thấp rất quan trọng đối với chơi game trực tuyến."
+      }
+    ],
+    "word_family": [
+      "latent (adj)"
+    ],
+    "collocations": [
+      "low latency",
+      "high latency",
+      "latency time"
+    ],
+    "synonyms": [
+      "delay",
+      "lag"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "độ trễ",
+        "correct": "latency",
+        "explain_vi": "Phát âm /ˈleɪtənsi/, không phải /ˈlætənsi/."
+      }
+    ],
+    "grammar_patterns": [
+      "latency + noun (e.g., latency issues)"
+    ]
+  },
+  {
+    "word": "scalability",
+    "phonetic": "/ˌskeɪləˈbɪləti/",
+    "meaning_vi": "khả năng mở rộng",
+    "meaning_en": "the ability of a system to handle a growing amount of work or its potential to be enlarged",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Cloud computing offers excellent scalability for businesses.",
+        "vi": "Điện toán đám mây cung cấp khả năng mở rộng tuyệt vời cho doanh nghiệp."
+      }
+    ],
+    "word_family": [
+      "scale (v)",
+      "scalable (adj)"
+    ],
+    "collocations": [
+      "horizontal scalability",
+      "vertical scalability",
+      "scalability issues"
+    ],
+    "synonyms": [
+      "expandability",
+      "flexibility"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "khả năng mở rộng",
+        "correct": "scalability",
+        "explain_vi": "Nhấn trọng âm âm tiết thứ ba: /ˌskeɪləˈbɪləti/."
+      }
+    ],
+    "grammar_patterns": [
+      "scalability + noun (e.g., scalability solution)"
+    ]
+  },
+  {
+    "word": "paradigm",
+    "phonetic": "/ˈpærədaɪm/",
+    "meaning_vi": "mô hình, khuôn mẫu",
+    "meaning_en": "a typical example or pattern of something; a model",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The internet has created a new paradigm for communication.",
+        "vi": "Internet đã tạo ra một mô hình giao tiếp mới."
+      }
+    ],
+    "word_family": [
+      "paradigmatic (adj)"
+    ],
+    "collocations": [
+      "paradigm shift",
+      "new paradigm",
+      "dominant paradigm"
+    ],
+    "synonyms": [
+      "model",
+      "framework"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "mô hình",
+        "correct": "paradigm",
+        "explain_vi": "Phát âm /ˈpærədaɪm/, không phải /ˈpærədɪm/."
+      }
+    ],
+    "grammar_patterns": [
+      "paradigm + noun (e.g., paradigm shift)"
+    ]
+  },
+  {
+    "word": "redundancy",
+    "phonetic": "/rɪˈdʌndənsi/",
+    "meaning_vi": "sự dư thừa, tính dự phòng",
+    "meaning_en": "the inclusion of extra components which are not strictly necessary to functioning, in case of failure",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Redundancy in network design ensures high availability.",
+        "vi": "Tính dự phòng trong thiết kế mạng đảm bảo tính sẵn sàng cao."
+      }
+    ],
+    "word_family": [
+      "redundant (adj)"
+    ],
+    "collocations": [
+      "system redundancy",
+      "data redundancy",
+      "redundancy plan"
+    ],
+    "synonyms": [
+      "backup",
+      "duplication"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "sự dư thừa",
+        "correct": "redundancy",
+        "explain_vi": "Phân biệt nghĩa 'dư thừa' (negative) và 'dự phòng' (positive)."
+      }
+    ],
+    "grammar_patterns": [
+      "redundancy + noun (e.g., redundancy mechanism)"
+    ]
+  },
+  {
+    "word": "interoperability",
+    "phonetic": "/ˌɪntərˌɒpərəˈbɪləti/",
+    "meaning_vi": "khả năng tương tác",
+    "meaning_en": "the ability of computer systems or software to exchange and make use of information",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Interoperability between different platforms is essential for seamless communication.",
+        "vi": "Khả năng tương tác giữa các nền tảng khác nhau rất cần thiết cho giao tiếp liền mạch."
+      }
+    ],
+    "word_family": [
+      "interoperable (adj)",
+      "operate (v)"
+    ],
+    "collocations": [
+      "interoperability standards",
+      "system interoperability",
+      "data interoperability"
+    ],
+    "synonyms": [
+      "compatibility",
+      "integration"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "khả năng tương tác",
+        "correct": "interoperability",
+        "explain_vi": "Từ dài, nhấn trọng âm âm tiết thứ năm: /ˌɪntərˌɒpərəˈbɪləti/."
+      }
+    ],
+    "grammar_patterns": [
+      "interoperability + noun (e.g., interoperability testing)"
+    ]
+  },
+  {
+    "word": "asynchronous",
+    "phonetic": "/eɪˈsɪŋkrənəs/",
+    "meaning_vi": "không đồng bộ",
+    "meaning_en": "not existing or occurring at the same time",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "Asynchronous communication allows team members to respond at their convenience.",
+        "vi": "Giao tiếp không đồng bộ cho phép các thành viên trong nhóm trả lời khi thuận tiện."
+      }
+    ],
+    "word_family": [
+      "asynchronously (adv)",
+      "synchronous (adj)"
+    ],
+    "collocations": [
+      "asynchronous communication",
+      "asynchronous learning",
+      "asynchronous transfer"
+    ],
+    "synonyms": [
+      "non-simultaneous",
+      "unsynchronized"
+    ],
+    "antonyms": [
+      "synchronous"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "không đồng bộ",
+        "correct": "asynchronous",
+        "explain_vi": "Phát âm /eɪˈsɪŋkrənəs/, không phải /əˈsɪŋkrənəs/."
+      }
+    ],
+    "grammar_patterns": [
+      "asynchronous + noun (e.g., asynchronous communication)"
+    ]
+  },
+  {
+    "word": "encapsulate",
+    "phonetic": "/ɪnˈkæpsjuleɪt/",
+    "meaning_vi": "đóng gói, tóm tắt",
+    "meaning_en": "to express the essential features of something succinctly; to enclose in a capsule",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "The report encapsulates the main findings of the study.",
+        "vi": "Báo cáo tóm tắt các phát hiện chính của nghiên cứu."
+      }
+    ],
+    "word_family": [
+      "encapsulation (n)",
+      "capsule (n)"
+    ],
+    "collocations": [
+      "encapsulate the idea",
+      "encapsulate data",
+      "encapsulate in a nutshell"
+    ],
+    "synonyms": [
+      "summarize",
+      "embody"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "đóng gói",
+        "correct": "encapsulate",
+        "explain_vi": "Nhấn trọng âm âm tiết thứ hai: /ɪnˈkæpsjuleɪt/."
+      }
+    ],
+    "grammar_patterns": [
+      "encapsulate + noun (e.g., encapsulate the concept)"
+    ]
+  },
+  {
+    "word": "deprecate",
+    "phonetic": "/ˈdeprəkeɪt/",
+    "meaning_vi": "phản đối, không chấp thuận",
+    "meaning_en": "to express disapproval of something, especially in a public statement",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "The committee deprecated the use of outdated technology.",
+        "vi": "Ủy ban phản đối việc sử dụng công nghệ lỗi thời."
+      }
+    ],
+    "word_family": [
+      "deprecation (n)",
+      "deprecatory (adj)"
+    ],
+    "collocations": [
+      "deprecate the use of",
+      "deprecate a feature",
+      "strongly deprecate"
+    ],
+    "synonyms": [
+      "disapprove of",
+      "condemn"
+    ],
+    "antonyms": [
+      "approve",
+      "endorse"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "phản đối",
+        "correct": "deprecate",
+        "explain_vi": "Phân biệt với 'depreciate' (mất giá)."
+      }
+    ],
+    "grammar_patterns": [
+      "deprecate + noun (e.g., deprecate violence)"
+    ]
+  },
+  {
+    "word": "ubiquitous",
+    "phonetic": "/juːˈbɪkwɪtəs/",
+    "meaning_vi": "phổ biến khắp nơi",
+    "meaning_en": "present, appearing, or found everywhere",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "Smartphones have become ubiquitous in modern society.",
+        "vi": "Điện thoại thông minh đã trở nên phổ biến khắp nơi trong xã hội hiện đại."
+      }
+    ],
+    "word_family": [
+      "ubiquity (n)",
+      "ubiquitously (adv)"
+    ],
+    "collocations": [
+      "ubiquitous technology",
+      "ubiquitous presence",
+      "ubiquitous computing"
+    ],
+    "synonyms": [
+      "omnipresent",
+      "pervasive"
+    ],
+    "antonyms": [
+      "rare",
+      "scarce"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "phổ biến khắp nơi",
+        "correct": "ubiquitous",
+        "explain_vi": "Phát âm /juːˈbɪkwɪtəs/, không phải /uːˈbɪkwɪtəs/."
+      }
+    ],
+    "grammar_patterns": [
+      "ubiquitous + noun (e.g., ubiquitous access)"
+    ]
+  },
+  {
+    "word": "leverage",
+    "phonetic": "/ˈlevərɪdʒ/",
+    "meaning_vi": "tận dụng, đòn bẩy",
+    "meaning_en": "to use something to maximum advantage",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "Companies leverage social media to reach a wider audience.",
+        "vi": "Các công ty tận dụng mạng xã hội để tiếp cận nhiều đối tượng hơn."
+      }
+    ],
+    "word_family": [
+      "leverage (n)",
+      "leveraged (adj)"
+    ],
+    "collocations": [
+      "leverage technology",
+      "leverage resources",
+      "leverage opportunities"
+    ],
+    "synonyms": [
+      "utilize",
+      "capitalize on"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "tận dụng",
+        "correct": "leverage",
+        "explain_vi": "Phát âm /ˈlevərɪdʒ/, không phải /ˈliːvərɪdʒ/."
+      }
+    ],
+    "grammar_patterns": [
+      "leverage + noun (e.g., leverage data)"
+    ]
+  },
+  {
+    "word": "holistic",
+    "phonetic": "/hoʊˈlɪstɪk/",
+    "meaning_vi": "toàn diện, tổng thể",
+    "meaning_en": "characterized by the belief that the parts of something are interconnected and can be explained only by reference to the whole",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "A holistic approach to cybersecurity considers both technical and human factors.",
+        "vi": "Một cách tiếp cận toàn diện đối với an ninh mạng xem xét cả yếu tố kỹ thuật và con người."
+      }
+    ],
+    "word_family": [
+      "holism (n)",
+      "holistically (adv)"
+    ],
+    "collocations": [
+      "holistic approach",
+      "holistic view",
+      "holistic strategy"
+    ],
+    "synonyms": [
+      "comprehensive",
+      "integrated"
+    ],
+    "antonyms": [
+      "narrow",
+      "piecemeal"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "toàn diện",
+        "correct": "holistic",
+        "explain_vi": "Phát âm /hoʊˈlɪstɪk/, không phải /ˈhɒlɪstɪk/."
+      }
+    ],
+    "grammar_patterns": [
+      "holistic + noun (e.g., holistic solution)"
+    ]
+  },
+  {
+    "word": "digital divide",
+    "phonetic": "/ˈdɪdʒɪtl dɪˈvaɪd/",
+    "meaning_vi": "khoảng cách số",
+    "meaning_en": "the gap between those who have access to modern information technology and those who do not",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The digital divide exacerbates social inequality.",
+        "vi": "Khoảng cách số làm trầm trọng thêm bất bình đẳng xã hội."
+      },
+      {
+        "en": "Bridging the digital divide is a policy priority.",
+        "vi": "Thu hẹp khoảng cách số là ưu tiên chính sách."
+      }
+    ],
+    "word_family": [
+      "digital (adj)",
+      "divide (v/n)"
+    ],
+    "collocations": [
+      "bridge the digital divide",
+      "narrow the digital divide",
+      "address the digital divide"
+    ],
+    "synonyms": [
+      "digital gap",
+      "technology gap"
+    ],
+    "antonyms": [
+      "digital inclusion"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "digital separated",
+        "correct": "digital divide",
+        "explain_vi": "Không dùng 'separated' mà dùng 'divide'."
+      }
+    ],
+    "grammar_patterns": [
+      "the digital divide (usually singular)"
+    ]
+  },
+  {
+    "word": "bandwidth",
+    "phonetic": "/ˈbændwɪdθ/",
+    "meaning_vi": "băng thông",
+    "meaning_en": "the maximum rate of data transfer across a given path",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Streaming HD video requires high bandwidth.",
+        "vi": "Phát video HD yêu cầu băng thông cao."
+      },
+      {
+        "en": "Our network has limited bandwidth during peak hours.",
+        "vi": "Mạng của chúng tôi có băng thông hạn chế vào giờ cao điểm."
+      }
+    ],
+    "word_family": [
+      "band (n)",
+      "width (n)"
+    ],
+    "collocations": [
+      "high bandwidth",
+      "low bandwidth",
+      "bandwidth limit",
+      "bandwidth capacity"
+    ],
+    "synonyms": [
+      "data transfer rate",
+      "throughput"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "band width",
+        "correct": "bandwidth",
+        "explain_vi": "Viết liền, không tách rời."
+      }
+    ],
+    "grammar_patterns": [
+      "uncountable noun"
+    ]
+  },
+  {
+    "word": "latency",
+    "phonetic": "/ˈleɪtənsi/",
+    "meaning_vi": "độ trễ",
+    "meaning_en": "the time delay between a cause and the effect of some physical change in the system",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Low latency is crucial for online gaming.",
+        "vi": "Độ trễ thấp rất quan trọng cho chơi game trực tuyến."
+      },
+      {
+        "en": "Network latency can affect video call quality.",
+        "vi": "Độ trễ mạng có thể ảnh hưởng đến chất lượng cuộc gọi video."
+      }
+    ],
+    "word_family": [
+      "latent (adj)"
+    ],
+    "collocations": [
+      "low latency",
+      "high latency",
+      "reduce latency",
+      "network latency"
+    ],
+    "synonyms": [
+      "delay",
+      "lag"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "late",
+        "correct": "latency",
+        "explain_vi": "Không dùng 'late' (muộn) mà dùng 'latency' (độ trễ)."
+      }
+    ],
+    "grammar_patterns": [
+      "uncountable noun"
+    ]
+  },
+  {
+    "word": "scalability",
+    "phonetic": "/ˌskeɪləˈbɪləti/",
+    "meaning_vi": "khả năng mở rộng",
+    "meaning_en": "the capability of a system to handle a growing amount of work",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Cloud computing offers excellent scalability.",
+        "vi": "Điện toán đám mây cung cấp khả năng mở rộng tuyệt vời."
+      },
+      {
+        "en": "We need to test the scalability of the new platform.",
+        "vi": "Chúng tôi cần kiểm tra khả năng mở rộng của nền tảng mới."
+      }
+    ],
+    "word_family": [
+      "scale (v/n)",
+      "scalable (adj)"
+    ],
+    "collocations": [
+      "horizontal scalability",
+      "vertical scalability",
+      "scalability issues",
+      "ensure scalability"
+    ],
+    "synonyms": [
+      "expandability",
+      "elasticity"
+    ],
+    "antonyms": [
+      "bottleneck"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "scaleability",
+        "correct": "scalability",
+        "explain_vi": "Chỉ có một 'a' sau 'scale'."
+      }
+    ],
+    "grammar_patterns": [
+      "uncountable noun"
+    ]
+  },
+  {
+    "word": "paradigm",
+    "phonetic": "/ˈpærədaɪm/",
+    "meaning_vi": "mô hình, hệ hình",
+    "meaning_en": "a typical example or pattern of something; a model",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The internet has created a new communication paradigm.",
+        "vi": "Internet đã tạo ra một mô hình giao tiếp mới."
+      },
+      {
+        "en": "This represents a paradigm shift in technology.",
+        "vi": "Điều này đại diện cho một sự chuyển đổi mô hình trong công nghệ."
+      }
+    ],
+    "word_family": [
+      "paradigmatic (adj)"
+    ],
+    "collocations": [
+      "paradigm shift",
+      "new paradigm",
+      "dominant paradigm",
+      "change the paradigm"
+    ],
+    "synonyms": [
+      "model",
+      "framework",
+      "pattern"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "para-dime",
+        "correct": "paradigm",
+        "explain_vi": "Phát âm /ˈpærədaɪm/, không phải /ˈpærədɪm/."
+      }
+    ],
+    "grammar_patterns": [
+      "countable noun"
+    ]
+  },
+  {
+    "word": "redundancy",
+    "phonetic": "/rɪˈdʌndənsi/",
+    "meaning_vi": "dự phòng, sự thừa",
+    "meaning_en": "the inclusion of extra components which are not strictly necessary to functioning, in case of failure",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The system has built-in redundancy to prevent data loss.",
+        "vi": "Hệ thống có dự phòng tích hợp để ngăn mất dữ liệu."
+      },
+      {
+        "en": "Redundancy is a key principle in reliable network design.",
+        "vi": "Dự phòng là nguyên tắc chính trong thiết kế mạng đáng tin cậy."
+      }
+    ],
+    "word_family": [
+      "redundant (adj)"
+    ],
+    "collocations": [
+      "built-in redundancy",
+      "data redundancy",
+      "redundancy plan",
+      "provide redundancy"
+    ],
+    "synonyms": [
+      "backup",
+      "failover",
+      "duplication"
+    ],
+    "antonyms": [
+      "single point of failure"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "redundant",
+        "correct": "redundancy",
+        "explain_vi": "'Redundant' là tính từ, 'redundancy' là danh từ."
+      }
+    ],
+    "grammar_patterns": [
+      "uncountable noun"
+    ]
+  },
+  {
+    "word": "interoperability",
+    "phonetic": "/ˌɪntərˌɒpərəˈbɪləti/",
+    "meaning_vi": "khả năng tương tác",
+    "meaning_en": "the ability of computer systems or software to exchange and make use of information",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Interoperability between different platforms is essential.",
+        "vi": "Khả năng tương tác giữa các nền tảng khác nhau là cần thiết."
+      },
+      {
+        "en": "The new standard ensures interoperability across devices.",
+        "vi": "Tiêu chuẩn mới đảm bảo khả năng tương tác trên các thiết bị."
+      }
+    ],
+    "word_family": [
+      "interoperable (adj)"
+    ],
+    "collocations": [
+      "interoperability standards",
+      "system interoperability",
+      "ensure interoperability",
+      "data interoperability"
+    ],
+    "synonyms": [
+      "compatibility",
+      "integration"
+    ],
+    "antonyms": [
+      "incompatibility"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "inter-operability",
+        "correct": "interoperability",
+        "explain_vi": "Viết liền, không có gạch nối."
+      }
+    ],
+    "grammar_patterns": [
+      "uncountable noun"
+    ]
+  },
+  {
+    "word": "asynchronous",
+    "phonetic": "/eɪˈsɪŋkrənəs/",
+    "meaning_vi": "không đồng bộ",
+    "meaning_en": "not existing or occurring at the same time",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "Asynchronous communication allows flexible working hours.",
+        "vi": "Giao tiếp không đồng bộ cho phép giờ làm việc linh hoạt."
+      },
+      {
+        "en": "The system uses asynchronous data transfer.",
+        "vi": "Hệ thống sử dụng truyền dữ liệu không đồng bộ."
+      }
+    ],
+    "word_family": [
+      "asynchronously (adv)",
+      "asynchrony (n)"
+    ],
+    "collocations": [
+      "asynchronous communication",
+      "asynchronous learning",
+      "asynchronous processing",
+      "asynchronous transfer"
+    ],
+    "synonyms": [
+      "non-synchronous",
+      "unsynchronized"
+    ],
+    "antonyms": [
+      "synchronous"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "asyncronous",
+        "correct": "asynchronous",
+        "explain_vi": "Thiếu 'h' sau 'c'."
+      }
+    ],
+    "grammar_patterns": [
+      "used attributively"
+    ]
+  },
+  {
+    "word": "encapsulate",
+    "phonetic": "/ɪnˈkæpsjuleɪt/",
+    "meaning_vi": "đóng gói, tóm tắt",
+    "meaning_en": "to express the most important parts of something in a short or clear form; in computing, to enclose data in a capsule",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "The report encapsulates the key findings.",
+        "vi": "Báo cáo tóm tắt các phát hiện chính."
+      },
+      {
+        "en": "In OOP, we encapsulate data within objects.",
+        "vi": "Trong lập trình hướng đối tượng, chúng ta đóng gói dữ liệu trong các đối tượng."
+      }
+    ],
+    "word_family": [
+      "encapsulation (n)"
+    ],
+    "collocations": [
+      "encapsulate data",
+      "encapsulate ideas",
+      "encapsulate the essence"
+    ],
+    "synonyms": [
+      "summarize",
+      "package",
+      "enclose"
+    ],
+    "antonyms": [
+      "expose",
+      "unpack"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "encapsulate -> encapsule",
+        "correct": "encapsulate",
+        "explain_vi": "Động từ là 'encapsulate', không phải 'encapsule'."
+      }
+    ],
+    "grammar_patterns": [
+      "transitive verb"
+    ]
+  },
+  {
+    "word": "deprecate",
+    "phonetic": "/ˈdeprəkeɪt/",
+    "meaning_vi": "không khuyến khích sử dụng, loại bỏ dần",
+    "meaning_en": "to express disapproval of, or to belittle; in computing, to mark a feature as outdated and to be avoided",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "The old API has been deprecated.",
+        "vi": "API cũ đã bị không khuyến khích sử dụng."
+      },
+      {
+        "en": "They deprecated the use of the term.",
+        "vi": "Họ không khuyến khích sử dụng thuật ngữ đó."
+      }
+    ],
+    "word_family": [
+      "deprecation (n)",
+      "deprecated (adj)"
+    ],
+    "collocations": [
+      "deprecated feature",
+      "deprecated method",
+      "deprecate the use",
+      "officially deprecated"
+    ],
+    "synonyms": [
+      "disapprove of",
+      "discourage",
+      "obsolete"
+    ],
+    "antonyms": [
+      "recommend",
+      "endorse"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "depreciate",
+        "correct": "deprecate",
+        "explain_vi": "'Depreciate' là giảm giá trị, 'deprecate' là không khuyến khích."
+      }
+    ],
+    "grammar_patterns": [
+      "transitive verb"
+    ]
+  },
+  {
+    "word": "ubiquitous",
+    "phonetic": "/juːˈbɪkwɪtəs/",
+    "meaning_vi": "phổ biến khắp nơi",
+    "meaning_en": "present, appearing, or found everywhere",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "Smartphones have become ubiquitous in modern society.",
+        "vi": "Điện thoại thông minh đã trở nên phổ biến khắp nơi trong xã hội hiện đại."
+      },
+      {
+        "en": "The internet is ubiquitous in urban areas.",
+        "vi": "Internet có mặt khắp nơi ở khu vực thành thị."
+      }
+    ],
+    "word_family": [
+      "ubiquity (n)",
+      "ubiquitously (adv)"
+    ],
+    "collocations": [
+      "ubiquitous computing",
+      "ubiquitous presence",
+      "ubiquitous technology",
+      "become ubiquitous"
+    ],
+    "synonyms": [
+      "omnipresent",
+      "pervasive",
+      "widespread"
+    ],
+    "antonyms": [
+      "rare",
+      "scarce"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "ubiquitos",
+        "correct": "ubiquitous",
+        "explain_vi": "Có 'u' sau 'q'."
+      }
+    ],
+    "grammar_patterns": [
+      "used predicatively or attributively"
+    ]
+  },
+  {
+    "word": "leverage",
+    "phonetic": "/ˈlevərɪdʒ/",
+    "meaning_vi": "tận dụng, đòn bẩy",
+    "meaning_en": "use (something) to maximum advantage",
+    "pos": "verb (also noun)",
+    "examples": [
+      {
+        "en": "We need to leverage our existing resources.",
+        "vi": "Chúng ta cần tận dụng các nguồn lực hiện có."
+      },
+      {
+        "en": "The company leveraged its brand to enter new markets.",
+        "vi": "Công ty đã tận dụng thương hiệu của mình để thâm nhập thị trường mới."
+      }
+    ],
+    "word_family": [
+      "lever (n)"
+    ],
+    "collocations": [
+      "leverage technology",
+      "leverage data",
+      "leverage relationships",
+      "competitive leverage"
+    ],
+    "synonyms": [
+      "capitalize on",
+      "exploit",
+      "utilize"
+    ],
+    "antonyms": [
+      "underuse"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "levarage",
+        "correct": "leverage",
+        "explain_vi": "Phát âm /ˈlevərɪdʒ/, không phải /ˈlevərɪdʒ/."
+      }
+    ],
+    "grammar_patterns": [
+      "transitive verb; often used with 'to'"
+    ]
+  },
+  {
+    "word": "holistic",
+    "phonetic": "/həʊˈlɪstɪk/",
+    "meaning_vi": "toàn diện, tổng thể",
+    "meaning_en": "characterized by the belief that the parts of something are intimately interconnected and explicable only by reference to the whole",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "A holistic approach to cybersecurity considers all layers.",
+        "vi": "Một cách tiếp cận toàn diện về an ninh mạng xem xét tất cả các lớp."
+      },
+      {
+        "en": "We need a holistic view of the communication system.",
+        "vi": "Chúng ta cần một cái nhìn tổng thể về hệ thống giao tiếp."
+      }
+    ],
+    "word_family": [
+      "holism (n)",
+      "holistically (adv)"
+    ],
+    "collocations": [
+      "holistic approach",
+      "holistic view",
+      "holistic design",
+      "holistic solution"
+    ],
+    "synonyms": [
+      "comprehensive",
+      "integrated",
+      "wholistic"
+    ],
+    "antonyms": [
+      "reductionist",
+      "piecemeal"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "holostic",
+        "correct": "holistic",
+        "explain_vi": "Thiếu 'i' sau 'l'."
+      }
+    ],
+    "grammar_patterns": [
+      "used attributively"
+    ]
+  },
+  {
+    "word": "mitigate",
+    "phonetic": "/ˈmɪtɪɡeɪt/",
+    "meaning_vi": "giảm nhẹ, làm dịu",
+    "meaning_en": "make less severe, serious, or painful",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "We must mitigate the risks of data breaches.",
+        "vi": "Chúng ta phải giảm nhẹ rủi ro vi phạm dữ liệu."
+      },
+      {
+        "en": "New protocols mitigate latency issues.",
+        "vi": "Các giao thức mới giảm nhẹ vấn đề độ trễ."
+      }
+    ],
+    "word_family": [
+      "mitigation (n)",
+      "mitigatory (adj)"
+    ],
+    "collocations": [
+      "mitigate risk",
+      "mitigate impact",
+      "mitigate damage",
+      "mitigate effects"
+    ],
+    "synonyms": [
+      "alleviate",
+      "reduce",
+      "lessen"
+    ],
+    "antonyms": [
+      "aggravate",
+      "intensify"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "militate",
+        "correct": "mitigate",
+        "explain_vi": "'Militate' có nghĩa khác, dễ nhầm."
+      }
+    ],
+    "grammar_patterns": [
+      "transitive verb"
+    ]
+  },
+  {
+    "word": "resilience",
+    "phonetic": "/rɪˈzɪliəns/",
+    "meaning_vi": "khả năng phục hồi",
+    "meaning_en": "the capacity to recover quickly from difficulties; toughness",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Network resilience is critical for uptime.",
+        "vi": "Khả năng phục hồi mạng rất quan trọng cho thời gian hoạt động."
+      },
+      {
+        "en": "The system showed resilience after the cyberattack.",
+        "vi": "Hệ thống cho thấy khả năng phục hồi sau cuộc tấn công mạng."
+      }
+    ],
+    "word_family": [
+      "resilient (adj)",
+      "resiliently (adv)"
+    ],
+    "collocations": [
+      "network resilience",
+      "system resilience",
+      "build resilience",
+      "resilience planning"
+    ],
+    "synonyms": [
+      "toughness",
+      "robustness",
+      "adaptability"
+    ],
+    "antonyms": [
+      "fragility",
+      "vulnerability"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "resilance",
+        "correct": "resilience",
+        "explain_vi": "Có 'i' sau 'l'."
+      }
+    ],
+    "grammar_patterns": [
+      "uncountable noun"
+    ]
+  },
+  {
+    "word": "cybersecurity",
+    "phonetic": "/ˌsaɪbəsɪˈkjʊərəti/",
+    "meaning_vi": "an ninh mạng",
+    "meaning_en": "the practice of protecting systems, networks, and programs from digital attacks",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Cybersecurity is a top priority for all organizations.",
+        "vi": "An ninh mạng là ưu tiên hàng đầu của mọi tổ chức."
+      },
+      {
+        "en": "Investing in cybersecurity reduces risk.",
+        "vi": "Đầu tư vào an ninh mạng giảm rủi ro."
+      }
+    ],
+    "word_family": [
+      "cyber (adj)",
+      "security (n)"
+    ],
+    "collocations": [
+      "cybersecurity threat",
+      "cybersecurity measures",
+      "cybersecurity framework",
+      "improve cybersecurity"
+    ],
+    "synonyms": [
+      "information security",
+      "IT security"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "cyber security",
+        "correct": "cybersecurity",
+        "explain_vi": "Thường viết liền trong ngữ cảnh chuyên ngành."
+      }
+    ],
+    "grammar_patterns": [
+      "uncountable noun"
+    ]
+  },
+  {
+    "word": "phishing",
+    "phonetic": "/ˈfɪʃɪŋ/",
+    "meaning_vi": "lừa đảo qua mạng (giả mạo)",
+    "meaning_en": "the fraudulent practice of sending emails purporting to be from reputable companies to induce individuals to reveal personal information",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Phishing attacks are becoming more sophisticated.",
+        "vi": "Các cuộc tấn công lừa đảo qua mạng ngày càng tinh vi."
+      },
+      {
+        "en": "Never click on suspicious links to avoid phishing.",
+        "vi": "Đừng bao giờ nhấp vào liên kết đáng ngờ để tránh lừa đảo."
+      }
+    ],
+    "word_family": [
+      "phish (v)",
+      "phisher (n)"
+    ],
+    "collocations": [
+      "phishing email",
+      "phishing attack",
+      "phishing scam",
+      "fall for phishing"
+    ],
+    "synonyms": [
+      "identity theft",
+      "social engineering"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "fishing",
+        "correct": "phishing",
+        "explain_vi": "Viết với 'ph' để phân biệt với câu cá."
+      }
+    ],
+    "grammar_patterns": [
+      "uncountable noun"
+    ]
+  },
+  {
+    "word": "malware",
+    "phonetic": "/ˈmælweər/",
+    "meaning_vi": "phần mềm độc hại",
+    "meaning_en": "software that is specifically designed to disrupt, damage, or gain unauthorized access to a computer system",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Install antivirus to protect against malware.",
+        "vi": "Cài đặt phần mềm diệt virus để bảo vệ khỏi phần mềm độc hại."
+      },
+      {
+        "en": "Malware can steal sensitive information.",
+        "vi": "Phần mềm độc hại có thể đánh cắp thông tin nhạy cảm."
+      }
+    ],
+    "word_family": [
+      "malicious (adj)",
+      "software (n)"
+    ],
+    "collocations": [
+      "malware infection",
+      "malware protection",
+      "remove malware",
+      "detect malware"
+    ],
+    "synonyms": [
+      "virus",
+      "trojan",
+      "ransomware"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "mal-ware",
+        "correct": "malware",
+        "explain_vi": "Viết liền, không có gạch nối."
+      }
+    ],
+    "grammar_patterns": [
+      "uncountable noun"
+    ]
+  },
+  {
+    "word": "spam",
+    "phonetic": "/spæm/",
+    "meaning_vi": "thư rác",
+    "meaning_en": "irrelevant or unsolicited messages sent over the internet, typically to large numbers of users, for the purposes of advertising, phishing, or spreading malware",
+    "pos": "noun (also verb)",
+    "examples": [
+      {
+        "en": "My inbox is full of spam.",
+        "vi": "Hộp thư của tôi đầy thư rác."
+      },
+      {
+        "en": "Spam filters block most unwanted emails.",
+        "vi": "Bộ lọc thư rác chặn hầu hết email không mong muốn."
+      }
+    ],
+    "word_family": [
+      "spammer (n)",
+      "spamming (n/v)"
+    ],
+    "collocations": [
+      "spam email",
+      "spam message",
+      "spam filter",
+      "spam folder"
+    ],
+    "synonyms": [
+      "junk mail",
+      "unsolicited mail"
+    ],
+    "antonyms": [
+      "ham (legitimate email)"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "spam -> span",
+        "correct": "spam",
+        "explain_vi": "Không nhầm với 'span' (khoảng thời gian)."
+      }
+    ],
+    "grammar_patterns": [
+      "uncountable noun; also used as verb"
+    ]
+  },
+  {
+    "word": "firewall",
+    "phonetic": "/ˈfaɪəwɔːl/",
+    "meaning_vi": "tường lửa",
+    "meaning_en": "a system designed to prevent unauthorized access to or from a private network",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The firewall blocks malicious traffic.",
+        "vi": "Tường lửa chặn lưu lượng độc hại."
+      },
+      {
+        "en": "Configure the firewall to allow specific ports.",
+        "vi": "Cấu hình tường lửa để cho phép các cổng cụ thể."
+      }
+    ],
+    "word_family": [
+      "firewalled (adj)"
+    ],
+    "collocations": [
+      "firewall rules",
+      "firewall configuration",
+      "bypass firewall",
+      "firewall protection"
+    ],
+    "synonyms": [
+      "security barrier",
+      "network filter"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "fire wall",
+        "correct": "firewall",
+        "explain_vi": "Viết liền."
+      }
+    ],
+    "grammar_patterns": [
+      "countable noun"
+    ]
+  }
+]

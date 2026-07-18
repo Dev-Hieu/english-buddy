@@ -1,0 +1,1513 @@
+[
+  {
+    "word": "science",
+    "phonetic": "/ˈsaɪəns/",
+    "meaning_vi": "khoa học",
+    "meaning_en": "the study of the natural world",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I like science.",
+        "vi": "Tôi thích khoa học."
+      }
+    ],
+    "word_family": [
+      "scientific (adj)",
+      "scientist (n)"
+    ],
+    "collocations": [
+      "science class",
+      "science experiment",
+      "science book"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I study science.",
+        "correct": "I study science.",
+        "explain_vi": "Cách dùng này đúng, không có lỗi phổ biến."
+      }
+    ],
+    "grammar_patterns": [
+      "science + noun (e.g. science teacher)"
+    ]
+  },
+  {
+    "word": "experiment",
+    "phonetic": "/ɪkˈsperɪmənt/",
+    "meaning_vi": "thí nghiệm",
+    "meaning_en": "a test to learn something",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We did an experiment.",
+        "vi": "Chúng tôi đã làm một thí nghiệm."
+      }
+    ],
+    "word_family": [
+      "experimental (adj)",
+      "experiment (v)"
+    ],
+    "collocations": [
+      "do an experiment",
+      "science experiment",
+      "lab experiment"
+    ],
+    "synonyms": [
+      "test",
+      "trial"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I made an experiment.",
+        "correct": "I did an experiment.",
+        "explain_vi": "Dùng 'do' thay vì 'make' với experiment."
+      }
+    ],
+    "grammar_patterns": [
+      "do + an/the experiment"
+    ]
+  },
+  {
+    "word": "laboratory",
+    "phonetic": "/ləˈbɒrətri/",
+    "meaning_vi": "phòng thí nghiệm",
+    "meaning_en": "a room for science work",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The laboratory is big.",
+        "vi": "Phòng thí nghiệm rộng."
+      }
+    ],
+    "word_family": [
+      "lab (abbreviation)"
+    ],
+    "collocations": [
+      "go to the laboratory",
+      "laboratory equipment",
+      "laboratory coat"
+    ],
+    "synonyms": [
+      "lab"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go to laboratory.",
+        "correct": "I go to the laboratory.",
+        "explain_vi": "Nhớ dùng mạo từ 'the'."
+      }
+    ],
+    "grammar_patterns": [
+      "the laboratory",
+      "in a laboratory"
+    ]
+  },
+  {
+    "word": "research",
+    "phonetic": "/rɪˈsɜːtʃ/",
+    "meaning_vi": "nghiên cứu",
+    "meaning_en": "careful study to find new facts",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She does research.",
+        "vi": "Cô ấy làm nghiên cứu."
+      }
+    ],
+    "word_family": [
+      "researcher (n)",
+      "research (v)"
+    ],
+    "collocations": [
+      "do research",
+      "research project",
+      "scientific research"
+    ],
+    "synonyms": [
+      "study",
+      "investigation"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I make research.",
+        "correct": "I do research.",
+        "explain_vi": "Dùng 'do' thay vì 'make' với research."
+      }
+    ],
+    "grammar_patterns": [
+      "do research",
+      "research on"
+    ]
+  },
+  {
+    "word": "data",
+    "phonetic": "/ˈdeɪtə/",
+    "meaning_vi": "dữ liệu",
+    "meaning_en": "facts and information",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The data is important.",
+        "vi": "Dữ liệu rất quan trọng."
+      }
+    ],
+    "word_family": [
+      "database (n)"
+    ],
+    "collocations": [
+      "collect data",
+      "analyze data",
+      "data set"
+    ],
+    "synonyms": [
+      "information",
+      "facts"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "The data are important.",
+        "correct": "The data is important.",
+        "explain_vi": "Trong tiếng Anh thông thường, 'data' thường dùng số ít."
+      }
+    ],
+    "grammar_patterns": [
+      "data + singular verb (usually)"
+    ]
+  },
+  {
+    "word": "theory",
+    "phonetic": "/ˈθɪəri/",
+    "meaning_vi": "lý thuyết",
+    "meaning_en": "an idea that explains something",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We learned a theory.",
+        "vi": "Chúng tôi đã học một lý thuyết."
+      }
+    ],
+    "word_family": [
+      "theoretical (adj)",
+      "theorize (v)"
+    ],
+    "collocations": [
+      "scientific theory",
+      "theory of evolution",
+      "test a theory"
+    ],
+    "synonyms": [
+      "hypothesis",
+      "principle"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have a theory.",
+        "correct": "I have a theory.",
+        "explain_vi": "Cách dùng này đúng."
+      }
+    ],
+    "grammar_patterns": [
+      "a theory",
+      "theory of"
+    ]
+  },
+  {
+    "word": "result",
+    "phonetic": "/rɪˈzʌlt/",
+    "meaning_vi": "kết quả",
+    "meaning_en": "what happens because of something",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The result is good.",
+        "vi": "Kết quả tốt."
+      }
+    ],
+    "word_family": [
+      "result (v)",
+      "resulting (adj)"
+    ],
+    "collocations": [
+      "get a result",
+      "test result",
+      "result of an experiment"
+    ],
+    "synonyms": [
+      "outcome",
+      "conclusion"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "The result are good.",
+        "correct": "The result is good.",
+        "explain_vi": "Chủ ngữ số ít đi với động từ số ít."
+      }
+    ],
+    "grammar_patterns": [
+      "the result of",
+      "as a result"
+    ]
+  },
+  {
+    "word": "discover",
+    "phonetic": "/dɪˈskʌvər/",
+    "meaning_vi": "khám phá",
+    "meaning_en": "to find something new",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "They discovered a new planet.",
+        "vi": "Họ đã khám phá ra một hành tinh mới."
+      }
+    ],
+    "word_family": [
+      "discovery (n)",
+      "discoverer (n)"
+    ],
+    "collocations": [
+      "discover something",
+      "discover a cure",
+      "discover a secret"
+    ],
+    "synonyms": [
+      "find",
+      "uncover"
+    ],
+    "antonyms": [
+      "hide",
+      "lose"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I discovered a new thing.",
+        "correct": "I discovered a new thing.",
+        "explain_vi": "Cách dùng đúng."
+      }
+    ],
+    "grammar_patterns": [
+      "discover + noun"
+    ]
+  },
+  {
+    "word": "invent",
+    "phonetic": "/ɪnˈvent/",
+    "meaning_vi": "phát minh",
+    "meaning_en": "to make something new",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "He invented the light bulb.",
+        "vi": "Ông ấy đã phát minh ra bóng đèn."
+      }
+    ],
+    "word_family": [
+      "invention (n)",
+      "inventor (n)"
+    ],
+    "collocations": [
+      "invent a machine",
+      "invent a story",
+      "invent something new"
+    ],
+    "synonyms": [
+      "create",
+      "devise"
+    ],
+    "antonyms": [
+      "copy",
+      "imitate"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I invented a new recipe.",
+        "correct": "I invented a new recipe.",
+        "explain_vi": "Cách dùng đúng."
+      }
+    ],
+    "grammar_patterns": [
+      "invent + noun"
+    ]
+  },
+  {
+    "word": "observe",
+    "phonetic": "/əbˈzɜːv/",
+    "meaning_vi": "quan sát",
+    "meaning_en": "to watch carefully",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "We observe the stars.",
+        "vi": "Chúng tôi quan sát các ngôi sao."
+      }
+    ],
+    "word_family": [
+      "observation (n)",
+      "observer (n)"
+    ],
+    "collocations": [
+      "observe something",
+      "observe a change",
+      "observe behavior"
+    ],
+    "synonyms": [
+      "watch",
+      "monitor"
+    ],
+    "antonyms": [
+      "ignore"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I observe to the stars.",
+        "correct": "I observe the stars.",
+        "explain_vi": "Không dùng giới từ 'to' sau observe."
+      }
+    ],
+    "grammar_patterns": [
+      "observe + noun"
+    ]
+  },
+  {
+    "word": "measure",
+    "phonetic": "/ˈmeʒər/",
+    "meaning_vi": "đo lường",
+    "meaning_en": "to find the size or amount",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "She measures the temperature.",
+        "vi": "Cô ấy đo nhiệt độ."
+      }
+    ],
+    "word_family": [
+      "measurement (n)",
+      "measurable (adj)"
+    ],
+    "collocations": [
+      "measure something",
+      "measure length",
+      "measure time"
+    ],
+    "synonyms": [
+      "gauge",
+      "quantify"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I measure the weight.",
+        "correct": "I measure the weight.",
+        "explain_vi": "Cách dùng đúng."
+      }
+    ],
+    "grammar_patterns": [
+      "measure + noun"
+    ]
+  },
+  {
+    "word": "prove",
+    "phonetic": "/pruːv/",
+    "meaning_vi": "chứng minh",
+    "meaning_en": "to show that something is true",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "The experiment proves the theory.",
+        "vi": "Thí nghiệm chứng minh lý thuyết."
+      }
+    ],
+    "word_family": [
+      "proof (n)",
+      "proven (adj)"
+    ],
+    "collocations": [
+      "prove something",
+      "prove a point",
+      "prove correct"
+    ],
+    "synonyms": [
+      "demonstrate",
+      "confirm"
+    ],
+    "antonyms": [
+      "disprove"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I proved that is true.",
+        "correct": "I proved that it is true.",
+        "explain_vi": "Nhớ thêm chủ ngữ 'it'."
+      }
+    ],
+    "grammar_patterns": [
+      "prove + that clause"
+    ]
+  },
+  {
+    "word": "analyze",
+    "phonetic": "/ˈænəlaɪz/",
+    "meaning_vi": "phân tích",
+    "meaning_en": "to examine something in detail",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "We analyze the data.",
+        "vi": "Chúng tôi phân tích dữ liệu."
+      }
+    ],
+    "word_family": [
+      "analysis (n)",
+      "analyst (n)"
+    ],
+    "collocations": [
+      "analyze data",
+      "analyze results",
+      "analyze a problem"
+    ],
+    "synonyms": [
+      "examine",
+      "study"
+    ],
+    "antonyms": [
+      "synthesize"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I analysis the data.",
+        "correct": "I analyze the data.",
+        "explain_vi": "Nhầm lẫn giữa danh từ 'analysis' và động từ 'analyze'."
+      }
+    ],
+    "grammar_patterns": [
+      "analyze + noun"
+    ]
+  },
+  {
+    "word": "conclusion",
+    "phonetic": "/kənˈkluːʒn/",
+    "meaning_vi": "kết luận",
+    "meaning_en": "a final decision or opinion",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The conclusion is clear.",
+        "vi": "Kết luận rất rõ ràng."
+      }
+    ],
+    "word_family": [
+      "conclude (v)",
+      "conclusive (adj)"
+    ],
+    "collocations": [
+      "draw a conclusion",
+      "reach a conclusion",
+      "in conclusion"
+    ],
+    "synonyms": [
+      "inference",
+      "deduction"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I conclusion that...",
+        "correct": "I conclude that...",
+        "explain_vi": "Nhầm lẫn giữa danh từ 'conclusion' và động từ 'conclude'."
+      }
+    ],
+    "grammar_patterns": [
+      "come to a conclusion",
+      "in conclusion"
+    ]
+  },
+  {
+    "word": "hypothesis",
+    "phonetic": "/haɪˈpɒθəsɪs/",
+    "meaning_vi": "giả thuyết",
+    "meaning_en": "an idea that is tested",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We have a hypothesis.",
+        "vi": "Chúng tôi có một giả thuyết."
+      }
+    ],
+    "word_family": [
+      "hypothesize (v)",
+      "hypothetical (adj)"
+    ],
+    "collocations": [
+      "form a hypothesis",
+      "test a hypothesis",
+      "propose a hypothesis"
+    ],
+    "synonyms": [
+      "theory",
+      "assumption"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I hypothesis that...",
+        "correct": "I hypothesize that...",
+        "explain_vi": "Nhầm lẫn giữa danh từ và động từ."
+      }
+    ],
+    "grammar_patterns": [
+      "the hypothesis that"
+    ]
+  },
+  {
+    "word": "sample",
+    "phonetic": "/ˈsɑːmpl/",
+    "meaning_vi": "mẫu",
+    "meaning_en": "a small part of something",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We take a sample.",
+        "vi": "Chúng tôi lấy một mẫu."
+      }
+    ],
+    "word_family": [
+      "sample (v)"
+    ],
+    "collocations": [
+      "take a sample",
+      "blood sample",
+      "sample size"
+    ],
+    "synonyms": [
+      "specimen",
+      "example"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I sample the water.",
+        "correct": "I take a sample of water.",
+        "explain_vi": "Dùng 'take a sample of' thay vì động từ 'sample'."
+      }
+    ],
+    "grammar_patterns": [
+      "a sample of"
+    ]
+  },
+  {
+    "word": "microscope",
+    "phonetic": "/ˈmaɪkrəskəʊp/",
+    "meaning_vi": "kính hiển vi",
+    "meaning_en": "a tool to see small things",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I use a microscope.",
+        "vi": "Tôi sử dụng kính hiển vi."
+      }
+    ],
+    "word_family": [
+      "microscopic (adj)"
+    ],
+    "collocations": [
+      "look through a microscope",
+      "under a microscope",
+      "electron microscope"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I look microscope.",
+        "correct": "I look through a microscope.",
+        "explain_vi": "Thiếu giới từ 'through'."
+      }
+    ],
+    "grammar_patterns": [
+      "with a microscope",
+      "under a microscope"
+    ]
+  },
+  {
+    "word": "telescope",
+    "phonetic": "/ˈtelɪskəʊp/",
+    "meaning_vi": "kính thiên văn",
+    "meaning_en": "a tool to see far objects",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "He looks at the stars with a telescope.",
+        "vi": "Anh ấy nhìn các ngôi sao bằng kính thiên văn."
+      }
+    ],
+    "word_family": [
+      "telescopic (adj)"
+    ],
+    "collocations": [
+      "look through a telescope",
+      "astronomical telescope",
+      "space telescope"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I see telescope stars.",
+        "correct": "I see stars through a telescope.",
+        "explain_vi": "Sai trật tự từ và thiếu giới từ."
+      }
+    ],
+    "grammar_patterns": [
+      "with a telescope",
+      "through a telescope"
+    ]
+  },
+  {
+    "word": "chemical",
+    "phonetic": "/ˈkemɪkl/",
+    "meaning_vi": "hóa chất",
+    "meaning_en": "a substance used in chemistry",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The chemical is dangerous.",
+        "vi": "Hóa chất rất nguy hiểm."
+      }
+    ],
+    "word_family": [
+      "chemistry (n)",
+      "chemist (n)"
+    ],
+    "collocations": [
+      "chemical reaction",
+      "chemical compound",
+      "toxic chemical"
+    ],
+    "synonyms": [
+      "substance",
+      "compound"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I study chemical.",
+        "correct": "I study chemistry.",
+        "explain_vi": "Nhầm lẫn 'chemical' (hóa chất) với 'chemistry' (hóa học)."
+      }
+    ],
+    "grammar_patterns": [
+      "a chemical",
+      "chemical + noun"
+    ]
+  },
+  {
+    "word": "organism",
+    "phonetic": "/ˈɔːɡənɪzəm/",
+    "meaning_vi": "sinh vật",
+    "meaning_en": "a living thing",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "A plant is an organism.",
+        "vi": "Cây là một sinh vật."
+      }
+    ],
+    "word_family": [
+      "organic (adj)"
+    ],
+    "collocations": [
+      "living organism",
+      "microorganism",
+      "marine organism"
+    ],
+    "synonyms": [
+      "creature",
+      "life form"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "An organism is a animal.",
+        "correct": "An organism is an animal.",
+        "explain_vi": "Dùng 'an' trước nguyên âm."
+      }
+    ],
+    "grammar_patterns": [
+      "an organism",
+      "organism + verb"
+    ]
+  },
+  {
+    "word": "test",
+    "phonetic": "/test/",
+    "meaning_vi": "bài kiểm tra, thử nghiệm",
+    "meaning_en": "a set of questions or practical activities to measure knowledge or ability",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We have a science test tomorrow.",
+        "vi": "Chúng tôi có bài kiểm tra khoa học vào ngày mai."
+      }
+    ],
+    "word_family": [
+      "test (v)",
+      "testing (n)"
+    ],
+    "collocations": [
+      "take a test",
+      "pass a test",
+      "fail a test"
+    ],
+    "synonyms": [
+      "exam",
+      "quiz"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I test my friend.",
+        "correct": "I test my friend's knowledge.",
+        "explain_vi": "Test là danh từ, cần dùng động từ 'test' khi muốn nói kiểm tra ai đó."
+      }
+    ],
+    "grammar_patterns": [
+      "take + a/an + test"
+    ]
+  },
+  {
+    "word": "question",
+    "phonetic": "/ˈkwes.tʃən/",
+    "meaning_vi": "câu hỏi",
+    "meaning_en": "a sentence asking for information",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Do you have any questions?",
+        "vi": "Bạn có câu hỏi nào không?"
+      }
+    ],
+    "word_family": [
+      "question (v)",
+      "questionnaire (n)"
+    ],
+    "collocations": [
+      "ask a question",
+      "answer a question",
+      "have a question"
+    ],
+    "synonyms": [
+      "inquiry",
+      "query"
+    ],
+    "antonyms": [
+      "answer"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I have question.",
+        "correct": "I have a question.",
+        "explain_vi": "Quên mạo từ 'a' trước danh từ đếm được số ít."
+      }
+    ],
+    "grammar_patterns": [
+      "ask + a + question",
+      "have + a + question"
+    ]
+  },
+  {
+    "word": "answer",
+    "phonetic": "/ˈæn.sɚ/",
+    "meaning_vi": "câu trả lời",
+    "meaning_en": "a reply to a question",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The answer is correct.",
+        "vi": "Câu trả lời đúng."
+      }
+    ],
+    "word_family": [
+      "answer (v)",
+      "answerable (adj)"
+    ],
+    "collocations": [
+      "give an answer",
+      "get an answer",
+      "correct answer"
+    ],
+    "synonyms": [
+      "reply",
+      "response"
+    ],
+    "antonyms": [
+      "question"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Answer of the question",
+        "correct": "Answer to the question",
+        "explain_vi": "Dùng giới từ 'to' thay vì 'of'."
+      }
+    ],
+    "grammar_patterns": [
+      "answer + to + noun"
+    ]
+  },
+  {
+    "word": "fact",
+    "phonetic": "/fækt/",
+    "meaning_vi": "sự thật, dữ kiện",
+    "meaning_en": "something that is known to be true",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "It is a fact that water boils at 100 degrees.",
+        "vi": "Sự thật là nước sôi ở 100 độ."
+      }
+    ],
+    "word_family": [
+      "factual (adj)",
+      "factually (adv)"
+    ],
+    "collocations": [
+      "known fact",
+      "scientific fact",
+      "face the facts"
+    ],
+    "synonyms": [
+      "truth",
+      "reality"
+    ],
+    "antonyms": [
+      "fiction",
+      "lie"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "It is fact.",
+        "correct": "It is a fact.",
+        "explain_vi": "Quên mạo từ 'a' trước danh từ đếm được số ít."
+      }
+    ],
+    "grammar_patterns": [
+      "it is + a + fact + that clause"
+    ]
+  },
+  {
+    "word": "idea",
+    "phonetic": "/aɪˈdiː.ə/",
+    "meaning_vi": "ý tưởng",
+    "meaning_en": "a thought or suggestion about a possible course of action",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I have a good idea.",
+        "vi": "Tôi có một ý tưởng hay."
+      }
+    ],
+    "word_family": [
+      "ideal (adj)",
+      "ideate (v)"
+    ],
+    "collocations": [
+      "have an idea",
+      "good idea",
+      "idea about"
+    ],
+    "synonyms": [
+      "concept",
+      "notion"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have idea.",
+        "correct": "I have an idea.",
+        "explain_vi": "Quên mạo từ 'an' trước nguyên âm."
+      }
+    ],
+    "grammar_patterns": [
+      "have + an + idea",
+      "idea + about + noun"
+    ]
+  },
+  {
+    "word": "problem",
+    "phonetic": "/ˈprɑː.bləm/",
+    "meaning_vi": "vấn đề, bài toán",
+    "meaning_en": "a situation that causes difficulty",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "This is a math problem.",
+        "vi": "Đây là một bài toán."
+      }
+    ],
+    "word_family": [
+      "problematic (adj)",
+      "problematize (v)"
+    ],
+    "collocations": [
+      "solve a problem",
+      "have a problem",
+      "big problem"
+    ],
+    "synonyms": [
+      "issue",
+      "difficulty"
+    ],
+    "antonyms": [
+      "solution"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Problem of pollution",
+        "correct": "Problem of pollution",
+        "explain_vi": "Cụm từ này đúng, không có lỗi."
+      }
+    ],
+    "grammar_patterns": [
+      "have + a + problem",
+      "problem + with + noun"
+    ]
+  },
+  {
+    "word": "solution",
+    "phonetic": "/səˈluː.ʃən/",
+    "meaning_vi": "giải pháp, dung dịch",
+    "meaning_en": "a way to solve a problem; a liquid mixture",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We found a solution to the problem.",
+        "vi": "Chúng tôi tìm ra giải pháp cho vấn đề."
+      }
+    ],
+    "word_family": [
+      "solve (v)",
+      "soluble (adj)"
+    ],
+    "collocations": [
+      "find a solution",
+      "solution to",
+      "chemical solution"
+    ],
+    "synonyms": [
+      "answer",
+      "remedy"
+    ],
+    "antonyms": [
+      "problem"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Solution of the problem",
+        "correct": "Solution to the problem",
+        "explain_vi": "Dùng 'to' thay vì 'of'."
+      }
+    ],
+    "grammar_patterns": [
+      "solution + to + noun"
+    ]
+  },
+  {
+    "word": "method",
+    "phonetic": "/ˈmeθ.əd/",
+    "meaning_vi": "phương pháp",
+    "meaning_en": "a particular way of doing something",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "This is a good method.",
+        "vi": "Đây là một phương pháp tốt."
+      }
+    ],
+    "word_family": [
+      "methodical (adj)",
+      "methodology (n)"
+    ],
+    "collocations": [
+      "scientific method",
+      "method of",
+      "use a method"
+    ],
+    "synonyms": [
+      "way",
+      "technique"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Method for do something",
+        "correct": "Method for doing something",
+        "explain_vi": "Sau giới từ 'for' dùng V-ing."
+      }
+    ],
+    "grammar_patterns": [
+      "method + of + noun/gerund",
+      "method + for + gerund"
+    ]
+  },
+  {
+    "word": "process",
+    "phonetic": "/ˈprɑː.ses/",
+    "meaning_vi": "quy trình, quá trình",
+    "meaning_en": "a series of actions or steps",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Learning is a long process.",
+        "vi": "Học tập là một quá trình dài."
+      }
+    ],
+    "word_family": [
+      "process (v)",
+      "processing (n)"
+    ],
+    "collocations": [
+      "in the process",
+      "process of",
+      "manufacturing process"
+    ],
+    "synonyms": [
+      "procedure",
+      "course"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Process of make",
+        "correct": "Process of making",
+        "explain_vi": "Sau 'of' dùng V-ing."
+      }
+    ],
+    "grammar_patterns": [
+      "process + of + gerund"
+    ]
+  },
+  {
+    "word": "tool",
+    "phonetic": "/tuːl/",
+    "meaning_vi": "công cụ, dụng cụ",
+    "meaning_en": "a device used to carry out a particular function",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "A hammer is a tool.",
+        "vi": "Cái búa là một công cụ."
+      }
+    ],
+    "word_family": [
+      "toolbox (n)",
+      "tooling (n)"
+    ],
+    "collocations": [
+      "use a tool",
+      "tool for",
+      "power tool"
+    ],
+    "synonyms": [
+      "instrument",
+      "implement"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Tool to cut",
+        "correct": "Tool for cutting",
+        "explain_vi": "Dùng 'for' + V-ing để chỉ mục đích."
+      }
+    ],
+    "grammar_patterns": [
+      "tool + for + gerund"
+    ]
+  },
+  {
+    "word": "machine",
+    "phonetic": "/məˈʃiːn/",
+    "meaning_vi": "máy móc",
+    "meaning_en": "a piece of equipment with moving parts that does work",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The machine is broken.",
+        "vi": "Cái máy bị hỏng."
+      }
+    ],
+    "word_family": [
+      "machinery (n)",
+      "machine (v)"
+    ],
+    "collocations": [
+      "operate a machine",
+      "machine part",
+      "washing machine"
+    ],
+    "synonyms": [
+      "appliance",
+      "device"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Machine of coffee",
+        "correct": "Coffee machine",
+        "explain_vi": "Đặt danh từ bổ nghĩa trước."
+      }
+    ],
+    "grammar_patterns": [
+      "noun + machine (compound noun)"
+    ]
+  },
+  {
+    "word": "computer",
+    "phonetic": "/kəmˈpjuː.tɚ/",
+    "meaning_vi": "máy tính",
+    "meaning_en": "an electronic device for storing and processing data",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I use a computer for research.",
+        "vi": "Tôi dùng máy tính để nghiên cứu."
+      }
+    ],
+    "word_family": [
+      "computerize (v)",
+      "computerization (n)"
+    ],
+    "collocations": [
+      "use a computer",
+      "computer program",
+      "computer science"
+    ],
+    "synonyms": [
+      "PC",
+      "laptop"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have computer.",
+        "correct": "I have a computer.",
+        "explain_vi": "Quên mạo từ 'a'."
+      }
+    ],
+    "grammar_patterns": [
+      "use + a + computer"
+    ]
+  },
+  {
+    "word": "number",
+    "phonetic": "/ˈnʌm.bɚ/",
+    "meaning_vi": "số",
+    "meaning_en": "a word or symbol used in counting",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "What is your phone number?",
+        "vi": "Số điện thoại của bạn là gì?"
+      }
+    ],
+    "word_family": [
+      "numeral (adj)",
+      "numerical (adj)"
+    ],
+    "collocations": [
+      "phone number",
+      "number of",
+      "large number"
+    ],
+    "synonyms": [
+      "digit",
+      "figure"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Number of student",
+        "correct": "Number of students",
+        "explain_vi": "Sau 'number of' dùng danh từ số nhiều."
+      }
+    ],
+    "grammar_patterns": [
+      "number + of + plural noun"
+    ]
+  },
+  {
+    "word": "change",
+    "phonetic": "/tʃeɪndʒ/",
+    "meaning_vi": "sự thay đổi, thay đổi",
+    "meaning_en": "to become different; the act of becoming different",
+    "pos": "noun/verb",
+    "examples": [
+      {
+        "en": "There is a change in temperature.",
+        "vi": "Có sự thay đổi về nhiệt độ."
+      }
+    ],
+    "word_family": [
+      "changeable (adj)",
+      "unchanged (adj)"
+    ],
+    "collocations": [
+      "make a change",
+      "change in",
+      "climate change"
+    ],
+    "synonyms": [
+      "alteration",
+      "modification"
+    ],
+    "antonyms": [
+      "stability",
+      "sameness"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Change of plan",
+        "correct": "Change of plan",
+        "explain_vi": "Cụm từ này đúng."
+      }
+    ],
+    "grammar_patterns": [
+      "change + in + noun",
+      "make + a + change"
+    ]
+  },
+  {
+    "word": "difference",
+    "phonetic": "/ˈdɪf.ɚ.əns/",
+    "meaning_vi": "sự khác biệt",
+    "meaning_en": "the way in which two things are not the same",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "What is the difference?",
+        "vi": "Sự khác biệt là gì?"
+      }
+    ],
+    "word_family": [
+      "different (adj)",
+      "differ (v)"
+    ],
+    "collocations": [
+      "difference between",
+      "make a difference",
+      "big difference"
+    ],
+    "synonyms": [
+      "distinction",
+      "discrepancy"
+    ],
+    "antonyms": [
+      "similarity"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Difference of A and B",
+        "correct": "Difference between A and B",
+        "explain_vi": "Dùng 'between' với hai đối tượng."
+      }
+    ],
+    "grammar_patterns": [
+      "difference + between + noun and noun"
+    ]
+  },
+  {
+    "word": "reason",
+    "phonetic": "/ˈriː.zən/",
+    "meaning_vi": "lý do",
+    "meaning_en": "a cause or explanation",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Give me a reason.",
+        "vi": "Hãy cho tôi một lý do."
+      }
+    ],
+    "word_family": [
+      "reasonable (adj)",
+      "reasoning (n)"
+    ],
+    "collocations": [
+      "reason for",
+      "for this reason",
+      "main reason"
+    ],
+    "synonyms": [
+      "cause",
+      "motive"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Reason of",
+        "correct": "Reason for",
+        "explain_vi": "Dùng 'for' thay vì 'of'."
+      }
+    ],
+    "grammar_patterns": [
+      "reason + for + noun/gerund"
+    ]
+  },
+  {
+    "word": "example",
+    "phonetic": "/ɪɡˈzæm.pəl/",
+    "meaning_vi": "ví dụ",
+    "meaning_en": "a thing illustrating a general rule",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Can you give an example?",
+        "vi": "Bạn có thể cho một ví dụ không?"
+      }
+    ],
+    "word_family": [
+      "exemplify (v)",
+      "exemplary (adj)"
+    ],
+    "collocations": [
+      "for example",
+      "give an example",
+      "example of"
+    ],
+    "synonyms": [
+      "instance",
+      "illustration"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Example for",
+        "correct": "Example of",
+        "explain_vi": "Dùng 'of' thay vì 'for'."
+      }
+    ],
+    "grammar_patterns": [
+      "example + of + noun",
+      "for example (phrase)"
+    ]
+  },
+  {
+    "word": "group",
+    "phonetic": "/ɡruːp/",
+    "meaning_vi": "nhóm",
+    "meaning_en": "a number of people or things together",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We work in groups.",
+        "vi": "Chúng tôi làm việc theo nhóm."
+      }
+    ],
+    "word_family": [
+      "group (v)",
+      "grouping (n)"
+    ],
+    "collocations": [
+      "group of",
+      "in a group",
+      "age group"
+    ],
+    "synonyms": [
+      "set",
+      "cluster"
+    ],
+    "antonyms": [
+      "individual"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Group of student",
+        "correct": "Group of students",
+        "explain_vi": "Sau 'group of' dùng danh từ số nhiều."
+      }
+    ],
+    "grammar_patterns": [
+      "group + of + plural noun"
+    ]
+  },
+  {
+    "word": "part",
+    "phonetic": "/pɑːrt/",
+    "meaning_vi": "phần, bộ phận",
+    "meaning_en": "a piece or segment of something",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "This is part of the experiment.",
+        "vi": "Đây là một phần của thí nghiệm."
+      }
+    ],
+    "word_family": [
+      "partial (adj)",
+      "partly (adv)"
+    ],
+    "collocations": [
+      "part of",
+      "play a part",
+      "take part"
+    ],
+    "synonyms": [
+      "piece",
+      "component"
+    ],
+    "antonyms": [
+      "whole"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Part of the students",
+        "correct": "Part of the students",
+        "explain_vi": "Cụm từ này đúng."
+      }
+    ],
+    "grammar_patterns": [
+      "part + of + noun"
+    ]
+  },
+  {
+    "word": "type",
+    "phonetic": "/taɪp/",
+    "meaning_vi": "loại, kiểu",
+    "meaning_en": "a category of things having common characteristics",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "What type of research is this?",
+        "vi": "Đây là loại nghiên cứu gì?"
+      }
+    ],
+    "word_family": [
+      "typical (adj)",
+      "typify (v)"
+    ],
+    "collocations": [
+      "type of",
+      "different types",
+      "blood type"
+    ],
+    "synonyms": [
+      "kind",
+      "sort"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Type of a research",
+        "correct": "Type of research",
+        "explain_vi": "Không dùng mạo từ sau 'type of'."
+      }
+    ],
+    "grammar_patterns": [
+      "type + of + noun (no article)"
+    ]
+  }
+]

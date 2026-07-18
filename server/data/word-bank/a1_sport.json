@@ -1,0 +1,1458 @@
+[
+  {
+    "word": "football",
+    "phonetic": "/ˈfʊtbɔːl/",
+    "meaning_vi": "bóng đá",
+    "meaning_en": "a game played by two teams of 11 players, who try to kick a ball into the other team's goal",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I play football on Saturday.",
+        "vi": "Tôi chơi bóng đá vào thứ Bảy."
+      }
+    ],
+    "word_family": [
+      "footballer (n)"
+    ],
+    "collocations": [
+      "play football",
+      "watch football",
+      "football match"
+    ],
+    "synonyms": [
+      "soccer"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I play football with my foot.",
+        "correct": "I play football.",
+        "explain_vi": "Không cần thêm 'with my foot' vì đã hiểu."
+      }
+    ],
+    "grammar_patterns": [
+      "play + football (no article)"
+    ]
+  },
+  {
+    "word": "swimming",
+    "phonetic": "/ˈswɪmɪŋ/",
+    "meaning_vi": "bơi lội",
+    "meaning_en": "the activity of moving through water using your arms and legs",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Swimming is fun.",
+        "vi": "Bơi lội rất vui."
+      }
+    ],
+    "word_family": [
+      "swim (v)",
+      "swimmer (n)"
+    ],
+    "collocations": [
+      "go swimming",
+      "like swimming",
+      "swimming pool"
+    ],
+    "synonyms": [
+      "bathing"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I swim swimming.",
+        "correct": "I go swimming.",
+        "explain_vi": "Dùng 'go swimming' thay vì 'swim swimming'."
+      }
+    ],
+    "grammar_patterns": [
+      "go + swimming (gerund)"
+    ]
+  },
+  {
+    "word": "tennis",
+    "phonetic": "/ˈtenɪs/",
+    "meaning_vi": "quần vợt",
+    "meaning_en": "a game for two or four players who hit a ball over a net",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She plays tennis well.",
+        "vi": "Cô ấy chơi quần vợt giỏi."
+      }
+    ],
+    "word_family": [
+      "tennis player (n)"
+    ],
+    "collocations": [
+      "play tennis",
+      "tennis match",
+      "tennis court"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I play tennis ball.",
+        "correct": "I play tennis.",
+        "explain_vi": "Không cần thêm 'ball'."
+      }
+    ],
+    "grammar_patterns": [
+      "play + tennis (no article)"
+    ]
+  },
+  {
+    "word": "basketball",
+    "phonetic": "/ˈbɑːskɪtbɔːl/",
+    "meaning_vi": "bóng rổ",
+    "meaning_en": "a game in which two teams try to throw a ball through a high net",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "He likes basketball.",
+        "vi": "Anh ấy thích bóng rổ."
+      }
+    ],
+    "word_family": [
+      "basketball player (n)"
+    ],
+    "collocations": [
+      "play basketball",
+      "basketball game",
+      "basketball court"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I play basketball ball.",
+        "correct": "I play basketball.",
+        "explain_vi": "Không cần thêm 'ball'."
+      }
+    ],
+    "grammar_patterns": [
+      "play + basketball (no article)"
+    ]
+  },
+  {
+    "word": "running",
+    "phonetic": "/ˈrʌnɪŋ/",
+    "meaning_vi": "chạy bộ",
+    "meaning_en": "the activity of moving your legs faster than walking",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Running is good for health.",
+        "vi": "Chạy bộ tốt cho sức khỏe."
+      }
+    ],
+    "word_family": [
+      "run (v)",
+      "runner (n)"
+    ],
+    "collocations": [
+      "go running",
+      "like running",
+      "running shoes"
+    ],
+    "synonyms": [
+      "jogging"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I run running.",
+        "correct": "I go running.",
+        "explain_vi": "Dùng 'go running' thay vì 'run running'."
+      }
+    ],
+    "grammar_patterns": [
+      "go + running (gerund)"
+    ]
+  },
+  {
+    "word": "cycling",
+    "phonetic": "/ˈsaɪklɪŋ/",
+    "meaning_vi": "đạp xe",
+    "meaning_en": "the activity of riding a bicycle",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I go cycling on weekends.",
+        "vi": "Tôi đi đạp xe vào cuối tuần."
+      }
+    ],
+    "word_family": [
+      "cycle (v)",
+      "cyclist (n)"
+    ],
+    "collocations": [
+      "go cycling",
+      "cycling race",
+      "cycling helmet"
+    ],
+    "synonyms": [
+      "biking"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I ride cycling.",
+        "correct": "I go cycling.",
+        "explain_vi": "Dùng 'go cycling' thay vì 'ride cycling'."
+      }
+    ],
+    "grammar_patterns": [
+      "go + cycling (gerund)"
+    ]
+  },
+  {
+    "word": "badminton",
+    "phonetic": "/ˈbædmɪntən/",
+    "meaning_vi": "cầu lông",
+    "meaning_en": "a game like tennis but with a shuttlecock",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "They play badminton in the park.",
+        "vi": "Họ chơi cầu lông trong công viên."
+      }
+    ],
+    "word_family": [
+      "badminton player (n)"
+    ],
+    "collocations": [
+      "play badminton",
+      "badminton racket",
+      "badminton court"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I play badminton shuttlecock.",
+        "correct": "I play badminton.",
+        "explain_vi": "Không cần thêm 'shuttlecock'."
+      }
+    ],
+    "grammar_patterns": [
+      "play + badminton (no article)"
+    ]
+  },
+  {
+    "word": "volleyball",
+    "phonetic": "/ˈvɒlibɔːl/",
+    "meaning_vi": "bóng chuyền",
+    "meaning_en": "a game in which two teams hit a ball over a net with their hands",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We play volleyball at school.",
+        "vi": "Chúng tôi chơi bóng chuyền ở trường."
+      }
+    ],
+    "word_family": [
+      "volleyball player (n)"
+    ],
+    "collocations": [
+      "play volleyball",
+      "volleyball game",
+      "volleyball net"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I play volleyball ball.",
+        "correct": "I play volleyball.",
+        "explain_vi": "Không cần thêm 'ball'."
+      }
+    ],
+    "grammar_patterns": [
+      "play + volleyball (no article)"
+    ]
+  },
+  {
+    "word": "golf",
+    "phonetic": "/ɡɒlf/",
+    "meaning_vi": "gôn",
+    "meaning_en": "a game in which you hit a small ball into holes with a club",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "He plays golf every Sunday.",
+        "vi": "Anh ấy chơi gôn mỗi Chủ nhật."
+      }
+    ],
+    "word_family": [
+      "golfer (n)"
+    ],
+    "collocations": [
+      "play golf",
+      "golf club",
+      "golf course"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I play golf ball.",
+        "correct": "I play golf.",
+        "explain_vi": "Không cần thêm 'ball'."
+      }
+    ],
+    "grammar_patterns": [
+      "play + golf (no article)"
+    ]
+  },
+  {
+    "word": "baseball",
+    "phonetic": "/ˈbeɪsbɔːl/",
+    "meaning_vi": "bóng chày",
+    "meaning_en": "a game with a bat and ball, popular in the US",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Baseball is popular in America.",
+        "vi": "Bóng chày phổ biến ở Mỹ."
+      }
+    ],
+    "word_family": [
+      "baseball player (n)"
+    ],
+    "collocations": [
+      "play baseball",
+      "baseball bat",
+      "baseball game"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I play baseball ball.",
+        "correct": "I play baseball.",
+        "explain_vi": "Không cần thêm 'ball'."
+      }
+    ],
+    "grammar_patterns": [
+      "play + baseball (no article)"
+    ]
+  },
+  {
+    "word": "rugby",
+    "phonetic": "/ˈrʌɡbi/",
+    "meaning_vi": "bóng bầu dục",
+    "meaning_en": "a game like football where you can carry the ball",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Rugby is a tough sport.",
+        "vi": "Bóng bầu dục là môn thể thao khó."
+      }
+    ],
+    "word_family": [
+      "rugby player (n)"
+    ],
+    "collocations": [
+      "play rugby",
+      "rugby match",
+      "rugby ball"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I play rugby ball.",
+        "correct": "I play rugby.",
+        "explain_vi": "Không cần thêm 'ball'."
+      }
+    ],
+    "grammar_patterns": [
+      "play + rugby (no article)"
+    ]
+  },
+  {
+    "word": "hockey",
+    "phonetic": "/ˈhɒki/",
+    "meaning_vi": "khúc côn cầu",
+    "meaning_en": "a game played on ice or field with sticks and a ball or puck",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "They play hockey in winter.",
+        "vi": "Họ chơi khúc côn cầu vào mùa đông."
+      }
+    ],
+    "word_family": [
+      "hockey player (n)"
+    ],
+    "collocations": [
+      "play hockey",
+      "hockey stick",
+      "hockey game"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I play hockey stick.",
+        "correct": "I play hockey.",
+        "explain_vi": "Không cần thêm 'stick'."
+      }
+    ],
+    "grammar_patterns": [
+      "play + hockey (no article)"
+    ]
+  },
+  {
+    "word": "skiing",
+    "phonetic": "/ˈskiːɪŋ/",
+    "meaning_vi": "trượt tuyết",
+    "meaning_en": "the activity of moving on snow with skis",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Skiing is exciting.",
+        "vi": "Trượt tuyết rất thú vị."
+      }
+    ],
+    "word_family": [
+      "ski (v)",
+      "skier (n)"
+    ],
+    "collocations": [
+      "go skiing",
+      "skiing trip",
+      "skiing equipment"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I ski skiing.",
+        "correct": "I go skiing.",
+        "explain_vi": "Dùng 'go skiing' thay vì 'ski skiing'."
+      }
+    ],
+    "grammar_patterns": [
+      "go + skiing (gerund)"
+    ]
+  },
+  {
+    "word": "boxing",
+    "phonetic": "/ˈbɒksɪŋ/",
+    "meaning_vi": "quyền anh",
+    "meaning_en": "a sport in which two people fight with their fists",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Boxing is a hard sport.",
+        "vi": "Quyền anh là môn thể thao khó."
+      }
+    ],
+    "word_family": [
+      "box (v)",
+      "boxer (n)"
+    ],
+    "collocations": [
+      "do boxing",
+      "boxing match",
+      "boxing gloves"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I play boxing.",
+        "correct": "I do boxing.",
+        "explain_vi": "Dùng 'do boxing' thay vì 'play boxing'."
+      }
+    ],
+    "grammar_patterns": [
+      "do + boxing (gerund)"
+    ]
+  },
+  {
+    "word": "gym",
+    "phonetic": "/dʒɪm/",
+    "meaning_vi": "phòng tập thể dục",
+    "meaning_en": "a place where you go to exercise",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I go to the gym every day.",
+        "vi": "Tôi đi đến phòng tập thể dục mỗi ngày."
+      }
+    ],
+    "word_family": [
+      "gymnastics (n)"
+    ],
+    "collocations": [
+      "go to the gym",
+      "gym workout",
+      "gym equipment"
+    ],
+    "synonyms": [
+      "fitness center"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go to gym.",
+        "correct": "I go to the gym.",
+        "explain_vi": "Cần thêm 'the' trước 'gym'."
+      }
+    ],
+    "grammar_patterns": [
+      "go to the + gym"
+    ]
+  },
+  {
+    "word": "yoga",
+    "phonetic": "/ˈjəʊɡə/",
+    "meaning_vi": "yoga",
+    "meaning_en": "a system of exercises for body and mind",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She does yoga in the morning.",
+        "vi": "Cô ấy tập yoga vào buổi sáng."
+      }
+    ],
+    "word_family": [
+      "yogi (n)"
+    ],
+    "collocations": [
+      "do yoga",
+      "yoga class",
+      "yoga mat"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I play yoga.",
+        "correct": "I do yoga.",
+        "explain_vi": "Dùng 'do yoga' thay vì 'play yoga'."
+      }
+    ],
+    "grammar_patterns": [
+      "do + yoga (no article)"
+    ]
+  },
+  {
+    "word": "dance",
+    "phonetic": "/dɑːns/",
+    "meaning_vi": "khiêu vũ",
+    "meaning_en": "to move your body to music",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I like dance.",
+        "vi": "Tôi thích khiêu vũ."
+      }
+    ],
+    "word_family": [
+      "dancer (n)",
+      "dancing (n)"
+    ],
+    "collocations": [
+      "dance class",
+      "dance music",
+      "go dancing"
+    ],
+    "synonyms": [
+      "dancing"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I play dance.",
+        "correct": "I do dance.",
+        "explain_vi": "Dùng 'do dance' hoặc 'go dancing'."
+      }
+    ],
+    "grammar_patterns": [
+      "do + dance (noun) / go + dancing (gerund)"
+    ]
+  },
+  {
+    "word": "sport",
+    "phonetic": "/spɔːt/",
+    "meaning_vi": "thể thao",
+    "meaning_en": "a game or activity that you do for exercise or fun",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Football is my favourite sport.",
+        "vi": "Bóng đá là môn thể thao yêu thích của tôi."
+      }
+    ],
+    "word_family": [
+      "sports (n)",
+      "sporty (adj)"
+    ],
+    "collocations": [
+      "do sport",
+      "play sport",
+      "sport event"
+    ],
+    "synonyms": [
+      "game",
+      "athletics"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I play sport.",
+        "correct": "I do sport.",
+        "explain_vi": "Dùng 'do sport' thay vì 'play sport'."
+      }
+    ],
+    "grammar_patterns": [
+      "do + sport (no article)"
+    ]
+  },
+  {
+    "word": "match",
+    "phonetic": "/mætʃ/",
+    "meaning_vi": "trận đấu",
+    "meaning_en": "a game between two teams or players",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The match starts at 3 pm.",
+        "vi": "Trận đấu bắt đầu lúc 3 giờ chiều."
+      }
+    ],
+    "word_family": [
+      "match (v)"
+    ],
+    "collocations": [
+      "football match",
+      "tennis match",
+      "watch a match"
+    ],
+    "synonyms": [
+      "game",
+      "competition"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I play a match.",
+        "correct": "I have a match.",
+        "explain_vi": "Dùng 'have a match' thay vì 'play a match'."
+      }
+    ],
+    "grammar_patterns": [
+      "have a + match"
+    ]
+  },
+  {
+    "word": "team",
+    "phonetic": "/tiːm/",
+    "meaning_vi": "đội",
+    "meaning_en": "a group of people who play together",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Our team won the game.",
+        "vi": "Đội của chúng tôi đã thắng trận đấu."
+      }
+    ],
+    "word_family": [
+      "teammate (n)"
+    ],
+    "collocations": [
+      "team sport",
+      "team member",
+      "team captain"
+    ],
+    "synonyms": [
+      "group",
+      "squad"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I am on team.",
+        "correct": "I am on a team.",
+        "explain_vi": "Cần thêm 'a' trước 'team'."
+      }
+    ],
+    "grammar_patterns": [
+      "be on a + team"
+    ]
+  },
+  {
+    "word": "ball",
+    "phonetic": "/bɔːl/",
+    "meaning_vi": "quả bóng",
+    "meaning_en": "a round object used in games",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I kick the ball.",
+        "vi": "Tôi đá quả bóng."
+      }
+    ],
+    "word_family": [
+      "ball (n)"
+    ],
+    "collocations": [
+      "kick the ball",
+      "throw the ball",
+      "catch the ball"
+    ],
+    "synonyms": [
+      "sphere"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I play ball.",
+        "correct": "I play with the ball.",
+        "explain_vi": "Cần giới từ 'with' khi nói chơi với bóng."
+      }
+    ],
+    "grammar_patterns": [
+      "the ball",
+      "a ball"
+    ]
+  },
+  {
+    "word": "game",
+    "phonetic": "/ɡeɪm/",
+    "meaning_vi": "trò chơi, trận đấu",
+    "meaning_en": "an activity or sport",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We play a game.",
+        "vi": "Chúng tôi chơi một trò chơi."
+      }
+    ],
+    "word_family": [
+      "games (n pl)"
+    ],
+    "collocations": [
+      "play a game",
+      "win a game",
+      "lose a game"
+    ],
+    "synonyms": [
+      "match",
+      "sport"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I play game.",
+        "correct": "I play a game.",
+        "explain_vi": "Cần mạo từ 'a' trước 'game'."
+      }
+    ],
+    "grammar_patterns": [
+      "play + game",
+      "a game"
+    ]
+  },
+  {
+    "word": "player",
+    "phonetic": "/ˈpleɪ.ər/",
+    "meaning_vi": "cầu thủ, người chơi",
+    "meaning_en": "a person who plays a sport",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "He is a good player.",
+        "vi": "Anh ấy là một cầu thủ giỏi."
+      }
+    ],
+    "word_family": [
+      "play (v)"
+    ],
+    "collocations": [
+      "football player",
+      "good player",
+      "team player"
+    ],
+    "synonyms": [
+      "athlete",
+      "sportsman"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "He is player.",
+        "correct": "He is a player.",
+        "explain_vi": "Cần mạo từ 'a' trước danh từ."
+      }
+    ],
+    "grammar_patterns": [
+      "a player",
+      "the player"
+    ]
+  },
+  {
+    "word": "goal",
+    "phonetic": "/ɡoʊl/",
+    "meaning_vi": "bàn thắng, khung thành",
+    "meaning_en": "a point scored or the area where you score",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "He scores a goal.",
+        "vi": "Anh ấy ghi một bàn thắng."
+      }
+    ],
+    "word_family": [
+      "goalkeeper (n)"
+    ],
+    "collocations": [
+      "score a goal",
+      "shoot at goal",
+      "defend the goal"
+    ],
+    "synonyms": [
+      "point",
+      "score"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "He makes a goal.",
+        "correct": "He scores a goal.",
+        "explain_vi": "Dùng 'score' thay vì 'make' cho bàn thắng."
+      }
+    ],
+    "grammar_patterns": [
+      "a goal",
+      "the goal"
+    ]
+  },
+  {
+    "word": "score",
+    "phonetic": "/skɔːr/",
+    "meaning_vi": "điểm số, ghi điểm",
+    "meaning_en": "the number of points or to get points",
+    "pos": "verb/noun",
+    "examples": [
+      {
+        "en": "The score is 2-1.",
+        "vi": "Tỉ số là 2-1."
+      }
+    ],
+    "word_family": [
+      "scorer (n)"
+    ],
+    "collocations": [
+      "score a goal",
+      "score points",
+      "final score"
+    ],
+    "synonyms": [
+      "point",
+      "result"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Score is 2-1.",
+        "correct": "The score is 2-1.",
+        "explain_vi": "Cần mạo từ 'The' trước 'score'."
+      }
+    ],
+    "grammar_patterns": [
+      "the score",
+      "score + noun"
+    ]
+  },
+  {
+    "word": "win",
+    "phonetic": "/wɪn/",
+    "meaning_vi": "chiến thắng",
+    "meaning_en": "to be the best in a game",
+    "pos": "verb/noun",
+    "examples": [
+      {
+        "en": "We win the match.",
+        "vi": "Chúng tôi thắng trận đấu."
+      }
+    ],
+    "word_family": [
+      "winner (n)",
+      "winning (adj)"
+    ],
+    "collocations": [
+      "win a game",
+      "win a match",
+      "win a prize"
+    ],
+    "synonyms": [
+      "beat",
+      "defeat"
+    ],
+    "antonyms": [
+      "lose"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I win to him.",
+        "correct": "I beat him.",
+        "explain_vi": "Dùng 'beat' với đối thủ, không dùng 'win to'."
+      }
+    ],
+    "grammar_patterns": [
+      "win + game",
+      "win against"
+    ]
+  },
+  {
+    "word": "lose",
+    "phonetic": "/luːz/",
+    "meaning_vi": "thua, mất",
+    "meaning_en": "to not win a game",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "We lose the game.",
+        "vi": "Chúng tôi thua trận đấu."
+      }
+    ],
+    "word_family": [
+      "loser (n)",
+      "loss (n)"
+    ],
+    "collocations": [
+      "lose a match",
+      "lose to someone",
+      "lose by points"
+    ],
+    "synonyms": [
+      "be defeated"
+    ],
+    "antonyms": [
+      "win"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I lose from him.",
+        "correct": "I lose to him.",
+        "explain_vi": "Dùng 'to' thay vì 'from'."
+      }
+    ],
+    "grammar_patterns": [
+      "lose + game",
+      "lose to"
+    ]
+  },
+  {
+    "word": "coach",
+    "phonetic": "/koʊtʃ/",
+    "meaning_vi": "huấn luyện viên",
+    "meaning_en": "a person who trains a team",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The coach is strict.",
+        "vi": "Huấn luyện viên rất nghiêm."
+      }
+    ],
+    "word_family": [
+      "coaching (n)"
+    ],
+    "collocations": [
+      "football coach",
+      "head coach",
+      "coach the team"
+    ],
+    "synonyms": [
+      "trainer",
+      "instructor"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "He is coach.",
+        "correct": "He is a coach.",
+        "explain_vi": "Cần mạo từ 'a' trước 'coach'."
+      }
+    ],
+    "grammar_patterns": [
+      "a coach",
+      "the coach"
+    ]
+  },
+  {
+    "word": "team",
+    "phonetic": "/tiːm/",
+    "meaning_vi": "đội",
+    "meaning_en": "a group of players",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Our team is strong.",
+        "vi": "Đội của chúng tôi rất mạnh."
+      }
+    ],
+    "word_family": [
+      "teammate (n)"
+    ],
+    "collocations": [
+      "team member",
+      "team sport",
+      "team captain"
+    ],
+    "synonyms": [
+      "squad",
+      "group"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Team are playing.",
+        "correct": "The team is playing.",
+        "explain_vi": "Ở Anh-Mỹ, 'team' thường dùng số ít."
+      }
+    ],
+    "grammar_patterns": [
+      "a team",
+      "the team"
+    ]
+  },
+  {
+    "word": "race",
+    "phonetic": "/reɪs/",
+    "meaning_vi": "cuộc đua",
+    "meaning_en": "a competition to be fastest",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "He wins the race.",
+        "vi": "Anh ấy thắng cuộc đua."
+      }
+    ],
+    "word_family": [
+      "racer (n)",
+      "racing (n)"
+    ],
+    "collocations": [
+      "win a race",
+      "run a race",
+      "car race"
+    ],
+    "synonyms": [
+      "competition",
+      "contest"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "He runs race.",
+        "correct": "He runs a race.",
+        "explain_vi": "Cần mạo từ 'a' trước 'race'."
+      }
+    ],
+    "grammar_patterns": [
+      "a race",
+      "the race"
+    ]
+  },
+  {
+    "word": "jump",
+    "phonetic": "/dʒʌmp/",
+    "meaning_vi": "nhảy",
+    "meaning_en": "to push your body off the ground",
+    "pos": "verb/noun",
+    "examples": [
+      {
+        "en": "She jumps high.",
+        "vi": "Cô ấy nhảy cao."
+      }
+    ],
+    "word_family": [
+      "jumper (n)",
+      "jumping (adj)"
+    ],
+    "collocations": [
+      "jump over",
+      "jump rope",
+      "high jump"
+    ],
+    "synonyms": [
+      "leap",
+      "spring"
+    ],
+    "antonyms": [
+      "land"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "She jump high.",
+        "correct": "She jumps high.",
+        "explain_vi": "Thêm 's' cho chủ ngữ ngôi thứ ba."
+      }
+    ],
+    "grammar_patterns": [
+      "jump + adverb",
+      "jump over"
+    ]
+  },
+  {
+    "word": "kick",
+    "phonetic": "/kɪk/",
+    "meaning_vi": "đá",
+    "meaning_en": "to hit with your foot",
+    "pos": "verb/noun",
+    "examples": [
+      {
+        "en": "He kicks the ball.",
+        "vi": "Anh ấy đá quả bóng."
+      }
+    ],
+    "word_family": [
+      "kicker (n)",
+      "kicking (n)"
+    ],
+    "collocations": [
+      "kick the ball",
+      "kick hard",
+      "free kick"
+    ],
+    "synonyms": [
+      "strike",
+      "boot"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "He kick the ball.",
+        "correct": "He kicks the ball.",
+        "explain_vi": "Thêm 's' cho chủ ngữ ngôi thứ ba."
+      }
+    ],
+    "grammar_patterns": [
+      "kick + noun",
+      "kick + adverb"
+    ]
+  },
+  {
+    "word": "throw",
+    "phonetic": "/θroʊ/",
+    "meaning_vi": "ném",
+    "meaning_en": "to send something through the air with your hand",
+    "pos": "verb/noun",
+    "examples": [
+      {
+        "en": "I throw the ball.",
+        "vi": "Tôi ném quả bóng."
+      }
+    ],
+    "word_family": [
+      "thrower (n)",
+      "throwing (n)"
+    ],
+    "collocations": [
+      "throw the ball",
+      "throw far",
+      "throw away"
+    ],
+    "synonyms": [
+      "toss",
+      "hurl"
+    ],
+    "antonyms": [
+      "catch"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I throw the ball to him.",
+        "correct": "I throw the ball to him.",
+        "explain_vi": "Cấu trúc này đúng."
+      }
+    ],
+    "grammar_patterns": [
+      "throw + noun",
+      "throw + to + person"
+    ]
+  },
+  {
+    "word": "catch",
+    "phonetic": "/kætʃ/",
+    "meaning_vi": "bắt, chụp",
+    "meaning_en": "to stop and hold a moving object",
+    "pos": "verb/noun",
+    "examples": [
+      {
+        "en": "She catches the ball.",
+        "vi": "Cô ấy bắt quả bóng."
+      }
+    ],
+    "word_family": [
+      "catcher (n)",
+      "catching (n)"
+    ],
+    "collocations": [
+      "catch the ball",
+      "catch a fish",
+      "catch cold"
+    ],
+    "synonyms": [
+      "grab",
+      "seize"
+    ],
+    "antonyms": [
+      "drop",
+      "throw"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "She catch the ball.",
+        "correct": "She catches the ball.",
+        "explain_vi": "Thêm 'es' cho chủ ngữ ngôi thứ ba."
+      }
+    ],
+    "grammar_patterns": [
+      "catch + noun"
+    ]
+  },
+  {
+    "word": "hit",
+    "phonetic": "/hɪt/",
+    "meaning_vi": "đánh, đập",
+    "meaning_en": "to touch something with force",
+    "pos": "verb/noun",
+    "examples": [
+      {
+        "en": "He hits the ball.",
+        "vi": "Anh ấy đánh quả bóng."
+      }
+    ],
+    "word_family": [
+      "hitter (n)",
+      "hitting (n)"
+    ],
+    "collocations": [
+      "hit the ball",
+      "hit hard",
+      "hit a target"
+    ],
+    "synonyms": [
+      "strike",
+      "knock"
+    ],
+    "antonyms": [
+      "miss"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "He hit the ball yesterday.",
+        "correct": "He hit the ball yesterday.",
+        "explain_vi": "Quá khứ của 'hit' là 'hit'."
+      }
+    ],
+    "grammar_patterns": [
+      "hit + noun"
+    ]
+  },
+  {
+    "word": "run",
+    "phonetic": "/rʌn/",
+    "meaning_vi": "chạy",
+    "meaning_en": "to move fast on foot",
+    "pos": "verb/noun",
+    "examples": [
+      {
+        "en": "I run fast.",
+        "vi": "Tôi chạy nhanh."
+      }
+    ],
+    "word_family": [
+      "runner (n)",
+      "running (n)"
+    ],
+    "collocations": [
+      "run fast",
+      "run a race",
+      "run every day"
+    ],
+    "synonyms": [
+      "jog",
+      "sprint"
+    ],
+    "antonyms": [
+      "walk"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I runned.",
+        "correct": "I ran.",
+        "explain_vi": "Quá khứ của 'run' là 'ran'."
+      }
+    ],
+    "grammar_patterns": [
+      "run + adverb",
+      "run + distance"
+    ]
+  },
+  {
+    "word": "swim",
+    "phonetic": "/swɪm/",
+    "meaning_vi": "bơi",
+    "meaning_en": "to move in water",
+    "pos": "verb/noun",
+    "examples": [
+      {
+        "en": "She swims well.",
+        "vi": "Cô ấy bơi giỏi."
+      }
+    ],
+    "word_family": [
+      "swimmer (n)",
+      "swimming (n)"
+    ],
+    "collocations": [
+      "swim in the pool",
+      "swim fast",
+      "go swimming"
+    ],
+    "synonyms": [
+      "bathe"
+    ],
+    "antonyms": [
+      "drown"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "She swim good.",
+        "correct": "She swims well.",
+        "explain_vi": "Dùng trạng từ 'well' thay vì tính từ 'good'."
+      }
+    ],
+    "grammar_patterns": [
+      "swim + adverb"
+    ]
+  },
+  {
+    "word": "play",
+    "phonetic": "/pleɪ/",
+    "meaning_vi": "chơi",
+    "meaning_en": "to take part in a game",
+    "pos": "verb/noun",
+    "examples": [
+      {
+        "en": "They play football.",
+        "vi": "Họ chơi bóng đá."
+      }
+    ],
+    "word_family": [
+      "player (n)",
+      "playful (adj)"
+    ],
+    "collocations": [
+      "play a game",
+      "play sports",
+      "play with"
+    ],
+    "synonyms": [
+      "participate",
+      "compete"
+    ],
+    "antonyms": [
+      "work"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I play the football.",
+        "correct": "I play football.",
+        "explain_vi": "Không dùng mạo từ trước tên môn thể thao."
+      }
+    ],
+    "grammar_patterns": [
+      "play + sport (no article)"
+    ]
+  },
+  {
+    "word": "practice",
+    "phonetic": "/ˈpræk.tɪs/",
+    "meaning_vi": "luyện tập",
+    "meaning_en": "to do something repeatedly to improve",
+    "pos": "verb/noun",
+    "examples": [
+      {
+        "en": "I practice every day.",
+        "vi": "Tôi luyện tập mỗi ngày."
+      }
+    ],
+    "word_family": [
+      "practise (v BrE)",
+      "practical (adj)"
+    ],
+    "collocations": [
+      "practice hard",
+      "practice a skill",
+      "football practice"
+    ],
+    "synonyms": [
+      "train",
+      "drill"
+    ],
+    "antonyms": [
+      "neglect"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I practice to play.",
+        "correct": "I practice playing.",
+        "explain_vi": "Sau 'practice' dùng V-ing."
+      }
+    ],
+    "grammar_patterns": [
+      "practice + V-ing",
+      "practice + noun"
+    ]
+  },
+  {
+    "word": "exercise",
+    "phonetic": "/ˈek.sər.saɪz/",
+    "meaning_vi": "bài tập, tập thể dục",
+    "meaning_en": "physical activity to keep fit",
+    "pos": "noun/verb",
+    "examples": [
+      {
+        "en": "I do exercise every morning.",
+        "vi": "Tôi tập thể dục mỗi sáng."
+      }
+    ],
+    "word_family": [
+      "exercising (n)"
+    ],
+    "collocations": [
+      "do exercise",
+      "take exercise",
+      "exercise regularly"
+    ],
+    "synonyms": [
+      "workout",
+      "training"
+    ],
+    "antonyms": [
+      "rest"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I do exercise every morning.",
+        "correct": "I do exercise every morning.",
+        "explain_vi": "Cấu trúc đúng."
+      }
+    ],
+    "grammar_patterns": [
+      "do + exercise",
+      "exercise + adverb"
+    ]
+  }
+]

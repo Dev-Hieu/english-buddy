@@ -1,0 +1,3351 @@
+[
+  {
+    "word": "appreciate",
+    "phonetic": "/əˈpriː.ʃi.eɪt/",
+    "meaning_vi": "đánh giá cao, cảm kích",
+    "meaning_en": "to recognize the value or significance of something; to be grateful for something",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "I really appreciate your help.",
+        "vi": "Tôi thực sự đánh giá cao sự giúp đỡ của bạn."
+      }
+    ],
+    "word_family": [
+      "appreciation (n)",
+      "appreciative (adj)"
+    ],
+    "collocations": [
+      "appreciate something",
+      "appreciate someone's help",
+      "appreciate the opportunity"
+    ],
+    "synonyms": [
+      "value",
+      "cherish"
+    ],
+    "antonyms": [
+      "disregard",
+      "undervalue"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I appreciate you help.",
+        "correct": "I appreciate your help.",
+        "explain_vi": "Cần dùng tính từ sở hữu 'your' thay vì đại từ 'you'."
+      }
+    ],
+    "grammar_patterns": [
+      "appreciate + noun/gerund"
+    ]
+  },
+  {
+    "word": "annoyed",
+    "phonetic": "/əˈnɔɪd/",
+    "meaning_vi": "bực mình, khó chịu",
+    "meaning_en": "slightly angry or irritated",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "She was annoyed by the constant noise.",
+        "vi": "Cô ấy bực mình vì tiếng ồn liên tục."
+      }
+    ],
+    "word_family": [
+      "annoy (v)",
+      "annoying (adj)",
+      "annoyance (n)"
+    ],
+    "collocations": [
+      "annoyed with someone",
+      "annoyed at something",
+      "get annoyed"
+    ],
+    "synonyms": [
+      "irritated",
+      "vexed"
+    ],
+    "antonyms": [
+      "pleased",
+      "content"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I am annoying with him.",
+        "correct": "I am annoyed with him.",
+        "explain_vi": "Dùng 'annoyed' để chỉ cảm xúc của bản thân, 'annoying' để chỉ thứ gây khó chịu."
+      }
+    ],
+    "grammar_patterns": [
+      "be annoyed + with/by/at"
+    ]
+  },
+  {
+    "word": "anxious",
+    "phonetic": "/ˈæŋk.ʃəs/",
+    "meaning_vi": "lo lắng, bồn chồn",
+    "meaning_en": "feeling worried or nervous about something",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "He felt anxious before the exam.",
+        "vi": "Anh ấy cảm thấy lo lắng trước kỳ thi."
+      }
+    ],
+    "word_family": [
+      "anxiety (n)",
+      "anxiously (adv)"
+    ],
+    "collocations": [
+      "anxious about",
+      "anxious to do something",
+      "feel anxious"
+    ],
+    "synonyms": [
+      "worried",
+      "uneasy"
+    ],
+    "antonyms": [
+      "calm",
+      "relaxed"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I am anxious for the result.",
+        "correct": "I am anxious about the result.",
+        "explain_vi": "Dùng 'about' thay vì 'for' khi nói về điều gì đó."
+      }
+    ],
+    "grammar_patterns": [
+      "be anxious + about + noun/gerund"
+    ]
+  },
+  {
+    "word": "ashamed",
+    "phonetic": "/əˈʃeɪmd/",
+    "meaning_vi": "xấu hổ, hổ thẹn",
+    "meaning_en": "feeling shame or embarrassment about something",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "She was ashamed of her mistake.",
+        "vi": "Cô ấy xấu hổ vì lỗi lầm của mình."
+      }
+    ],
+    "word_family": [
+      "shame (n)",
+      "shameful (adj)",
+      "shameless (adj)"
+    ],
+    "collocations": [
+      "ashamed of",
+      "ashamed to do something",
+      "feel ashamed"
+    ],
+    "synonyms": [
+      "embarrassed",
+      "mortified"
+    ],
+    "antonyms": [
+      "proud",
+      "unashamed"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I am ashamed from my behavior.",
+        "correct": "I am ashamed of my behavior.",
+        "explain_vi": "Dùng 'of' thay vì 'from'."
+      }
+    ],
+    "grammar_patterns": [
+      "be ashamed + of + noun/gerund"
+    ]
+  },
+  {
+    "word": "confident",
+    "phonetic": "/ˈkɒn.fɪ.dənt/",
+    "meaning_vi": "tự tin",
+    "meaning_en": "feeling sure about your own abilities or qualities",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "She is confident about passing the test.",
+        "vi": "Cô ấy tự tin về việc vượt qua bài kiểm tra."
+      }
+    ],
+    "word_family": [
+      "confidence (n)",
+      "confidently (adv)"
+    ],
+    "collocations": [
+      "confident about",
+      "confident of",
+      "feel confident"
+    ],
+    "synonyms": [
+      "assured",
+      "self-assured"
+    ],
+    "antonyms": [
+      "insecure",
+      "doubtful"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I am confident to pass.",
+        "correct": "I am confident of passing.",
+        "explain_vi": "Dùng 'of + gerund' thay vì 'to + infinitive'."
+      }
+    ],
+    "grammar_patterns": [
+      "be confident + of/about + noun/gerund"
+    ]
+  },
+  {
+    "word": "confused",
+    "phonetic": "/kənˈfjuːzd/",
+    "meaning_vi": "bối rối, lúng túng",
+    "meaning_en": "unable to understand or think clearly",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "I'm confused about the instructions.",
+        "vi": "Tôi bối rối về hướng dẫn."
+      }
+    ],
+    "word_family": [
+      "confuse (v)",
+      "confusion (n)",
+      "confusing (adj)"
+    ],
+    "collocations": [
+      "confused about",
+      "get confused",
+      "confused look"
+    ],
+    "synonyms": [
+      "bewildered",
+      "perplexed"
+    ],
+    "antonyms": [
+      "clear",
+      "certain"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I am confusing about this.",
+        "correct": "I am confused about this.",
+        "explain_vi": "Dùng 'confused' để chỉ cảm xúc, 'confusing' để chỉ thứ gây nhầm lẫn."
+      }
+    ],
+    "grammar_patterns": [
+      "be confused + about + noun/gerund"
+    ]
+  },
+  {
+    "word": "delighted",
+    "phonetic": "/dɪˈlaɪ.tɪd/",
+    "meaning_vi": "vui mừng, hân hoan",
+    "meaning_en": "feeling or showing great pleasure",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "We were delighted with the news.",
+        "vi": "Chúng tôi vui mừng với tin tức đó."
+      }
+    ],
+    "word_family": [
+      "delight (n/v)",
+      "delightful (adj)",
+      "delightfully (adv)"
+    ],
+    "collocations": [
+      "delighted with",
+      "delighted to do something",
+      "absolutely delighted"
+    ],
+    "synonyms": [
+      "thrilled",
+      "overjoyed"
+    ],
+    "antonyms": [
+      "displeased",
+      "disappointed"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I am delight to meet you.",
+        "correct": "I am delighted to meet you.",
+        "explain_vi": "Cần dùng tính từ 'delighted' chứ không phải danh từ 'delight'."
+      }
+    ],
+    "grammar_patterns": [
+      "be delighted + with + noun / to + infinitive"
+    ]
+  },
+  {
+    "word": "depressed",
+    "phonetic": "/dɪˈprest/",
+    "meaning_vi": "chán nản, trầm cảm",
+    "meaning_en": "feeling very sad and without hope",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "He has been feeling depressed lately.",
+        "vi": "Gần đây anh ấy cảm thấy chán nản."
+      }
+    ],
+    "word_family": [
+      "depress (v)",
+      "depression (n)",
+      "depressing (adj)"
+    ],
+    "collocations": [
+      "feel depressed",
+      "depressed about",
+      "clinically depressed"
+    ],
+    "synonyms": [
+      "down",
+      "melancholy"
+    ],
+    "antonyms": [
+      "cheerful",
+      "elated"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I am depressing.",
+        "correct": "I am depressed.",
+        "explain_vi": "Dùng 'depressed' cho cảm xúc, 'depressing' cho thứ gây chán nản."
+      }
+    ],
+    "grammar_patterns": [
+      "be depressed + about/over"
+    ]
+  },
+  {
+    "word": "disappointed",
+    "phonetic": "/ˌdɪs.əˈpɔɪn.tɪd/",
+    "meaning_vi": "thất vọng",
+    "meaning_en": "sad or displeased because something did not happen as expected",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "She was disappointed with the results.",
+        "vi": "Cô ấy thất vọng với kết quả."
+      }
+    ],
+    "word_family": [
+      "disappoint (v)",
+      "disappointment (n)",
+      "disappointing (adj)"
+    ],
+    "collocations": [
+      "disappointed with",
+      "disappointed in",
+      "bitterly disappointed"
+    ],
+    "synonyms": [
+      "let down",
+      "dissatisfied"
+    ],
+    "antonyms": [
+      "satisfied",
+      "pleased"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I am disappointing with you.",
+        "correct": "I am disappointed with you.",
+        "explain_vi": "Dùng 'disappointed' cho cảm xúc, 'disappointing' cho thứ gây thất vọng."
+      }
+    ],
+    "grammar_patterns": [
+      "be disappointed + with/in + noun/gerund"
+    ]
+  },
+  {
+    "word": "disgusted",
+    "phonetic": "/dɪsˈɡʌs.tɪd/",
+    "meaning_vi": "kinh tởm, ghê tởm",
+    "meaning_en": "feeling strong dislike or disapproval",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "I was disgusted by the sight.",
+        "vi": "Tôi kinh tởm trước cảnh đó."
+      }
+    ],
+    "word_family": [
+      "disgust (n/v)",
+      "disgusting (adj)",
+      "disgustedly (adv)"
+    ],
+    "collocations": [
+      "disgusted with",
+      "disgusted by",
+      "feel disgusted"
+    ],
+    "synonyms": [
+      "revolted",
+      "appalled"
+    ],
+    "antonyms": [
+      "attracted",
+      "pleased"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I am disgusting with the food.",
+        "correct": "I am disgusted with the food.",
+        "explain_vi": "Dùng 'disgusted' cho cảm xúc, 'disgusting' cho thứ gây ghê tởm."
+      }
+    ],
+    "grammar_patterns": [
+      "be disgusted + with/by + noun/gerund"
+    ]
+  },
+  {
+    "word": "embarrassed",
+    "phonetic": "/ɪmˈbær.əst/",
+    "meaning_vi": "xấu hổ, ngượng ngùng",
+    "meaning_en": "feeling awkward or ashamed because of something",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "He felt embarrassed when he forgot her name.",
+        "vi": "Anh ấy cảm thấy xấu hổ khi quên tên cô ấy."
+      }
+    ],
+    "word_family": [
+      "embarrass (v)",
+      "embarrassment (n)",
+      "embarrassing (adj)"
+    ],
+    "collocations": [
+      "embarrassed about",
+      "feel embarrassed",
+      "embarrassed silence"
+    ],
+    "synonyms": [
+      "mortified",
+      "humiliated"
+    ],
+    "antonyms": [
+      "proud",
+      "confident"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I am embarrassing.",
+        "correct": "I am embarrassed.",
+        "explain_vi": "Dùng 'embarrassed' cho cảm xúc, 'embarrassing' cho thứ gây xấu hổ."
+      }
+    ],
+    "grammar_patterns": [
+      "be embarrassed + about + noun/gerund"
+    ]
+  },
+  {
+    "word": "enthusiastic",
+    "phonetic": "/ɪnˌθjuː.ziˈæs.tɪk/",
+    "meaning_vi": "nhiệt tình, hăng hái",
+    "meaning_en": "having or showing intense excitement or interest",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "She is enthusiastic about the project.",
+        "vi": "Cô ấy nhiệt tình về dự án."
+      }
+    ],
+    "word_family": [
+      "enthusiasm (n)",
+      "enthusiast (n)",
+      "enthusiastically (adv)"
+    ],
+    "collocations": [
+      "enthusiastic about",
+      "be enthusiastic",
+      "enthusiastic support"
+    ],
+    "synonyms": [
+      "eager",
+      "passionate"
+    ],
+    "antonyms": [
+      "apathetic",
+      "indifferent"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I am enthusiastic for the trip.",
+        "correct": "I am enthusiastic about the trip.",
+        "explain_vi": "Dùng 'about' thay vì 'for'."
+      }
+    ],
+    "grammar_patterns": [
+      "be enthusiastic + about + noun/gerund"
+    ]
+  },
+  {
+    "word": "envious",
+    "phonetic": "/ˈen.vi.əs/",
+    "meaning_vi": "ghen tị, đố kỵ",
+    "meaning_en": "feeling jealousy or resentment towards someone's advantages",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "He was envious of her success.",
+        "vi": "Anh ấy ghen tị với thành công của cô ấy."
+      }
+    ],
+    "word_family": [
+      "envy (n/v)",
+      "enviously (adv)"
+    ],
+    "collocations": [
+      "envious of",
+      "feel envious",
+      "green with envy"
+    ],
+    "synonyms": [
+      "jealous",
+      "resentful"
+    ],
+    "antonyms": [
+      "content",
+      "generous"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I am envious with her.",
+        "correct": "I am envious of her.",
+        "explain_vi": "Dùng 'of' thay vì 'with'."
+      }
+    ],
+    "grammar_patterns": [
+      "be envious + of + noun"
+    ]
+  },
+  {
+    "word": "frustrated",
+    "phonetic": "/frʌsˈtreɪ.tɪd/",
+    "meaning_vi": "bực bội, thất vọng vì không đạt được điều gì",
+    "meaning_en": "feeling annoyed or upset because you cannot achieve something",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "I'm frustrated with the slow progress.",
+        "vi": "Tôi bực bội với tiến độ chậm."
+      }
+    ],
+    "word_family": [
+      "frustrate (v)",
+      "frustration (n)",
+      "frustrating (adj)"
+    ],
+    "collocations": [
+      "frustrated with",
+      "frustrated by",
+      "get frustrated"
+    ],
+    "synonyms": [
+      "exasperated",
+      "irritated"
+    ],
+    "antonyms": [
+      "satisfied",
+      "fulfilled"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I am frustrating with this.",
+        "correct": "I am frustrated with this.",
+        "explain_vi": "Dùng 'frustrated' cho cảm xúc, 'frustrating' cho thứ gây bực bội."
+      }
+    ],
+    "grammar_patterns": [
+      "be frustrated + with/by + noun/gerund"
+    ]
+  },
+  {
+    "word": "grateful",
+    "phonetic": "/ˈɡreɪt.fəl/",
+    "meaning_vi": "biết ơn",
+    "meaning_en": "feeling or showing thanks for something",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "I am grateful for your support.",
+        "vi": "Tôi biết ơn sự hỗ trợ của bạn."
+      }
+    ],
+    "word_family": [
+      "gratefulness (n)",
+      "gratefully (adv)"
+    ],
+    "collocations": [
+      "grateful for",
+      "grateful to someone",
+      "deeply grateful"
+    ],
+    "synonyms": [
+      "thankful",
+      "appreciative"
+    ],
+    "antonyms": [
+      "ungrateful",
+      "thankless"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I am grateful you.",
+        "correct": "I am grateful to you.",
+        "explain_vi": "Cần thêm giới từ 'to' trước người."
+      }
+    ],
+    "grammar_patterns": [
+      "be grateful + for + noun / to + person"
+    ]
+  },
+  {
+    "word": "jealous",
+    "phonetic": "/ˈdʒel.əs/",
+    "meaning_vi": "ghen tị, ghen tuông",
+    "meaning_en": "feeling resentment against someone because of their success or advantages",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "She is jealous of her sister's popularity.",
+        "vi": "Cô ấy ghen tị với sự nổi tiếng của em gái."
+      }
+    ],
+    "word_family": [
+      "jealousy (n)",
+      "jealously (adv)"
+    ],
+    "collocations": [
+      "jealous of",
+      "make someone jealous",
+      "feel jealous"
+    ],
+    "synonyms": [
+      "envious",
+      "possessive"
+    ],
+    "antonyms": [
+      "trusting",
+      "secure"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I am jealous with him.",
+        "correct": "I am jealous of him.",
+        "explain_vi": "Dùng 'of' thay vì 'with'."
+      }
+    ],
+    "grammar_patterns": [
+      "be jealous + of + noun"
+    ]
+  },
+  {
+    "word": "offended",
+    "phonetic": "/əˈfendɪd/",
+    "meaning_vi": "bị xúc phạm, phật ý",
+    "meaning_en": "feeling upset or resentful because of something said or done",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "He was offended by her remark.",
+        "vi": "Anh ấy bị xúc phạm bởi nhận xét của cô ấy."
+      }
+    ],
+    "word_family": [
+      "offend (v)",
+      "offence (n)",
+      "offensive (adj)"
+    ],
+    "collocations": [
+      "offended by",
+      "take offense",
+      "feel offended"
+    ],
+    "synonyms": [
+      "insulted",
+      "hurt"
+    ],
+    "antonyms": [
+      "pleased",
+      "flattered"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I am offensive by his words.",
+        "correct": "I am offended by his words.",
+        "explain_vi": "Dùng 'offended' cho cảm xúc, 'offensive' cho thứ gây xúc phạm."
+      }
+    ],
+    "grammar_patterns": [
+      "be offended + by + noun/gerund"
+    ]
+  },
+  {
+    "word": "optimistic",
+    "phonetic": "/ˌɒp.tɪˈmɪs.tɪk/",
+    "meaning_vi": "lạc quan",
+    "meaning_en": "hopeful and confident about the future",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "She is optimistic about the outcome.",
+        "vi": "Cô ấy lạc quan về kết quả."
+      }
+    ],
+    "word_family": [
+      "optimism (n)",
+      "optimist (n)",
+      "optimistically (adv)"
+    ],
+    "collocations": [
+      "optimistic about",
+      "remain optimistic",
+      "cautiously optimistic"
+    ],
+    "synonyms": [
+      "positive",
+      "hopeful"
+    ],
+    "antonyms": [
+      "pessimistic",
+      "cynical"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I am optimistic for the future.",
+        "correct": "I am optimistic about the future.",
+        "explain_vi": "Dùng 'about' thay vì 'for'."
+      }
+    ],
+    "grammar_patterns": [
+      "be optimistic + about + noun/gerund"
+    ]
+  },
+  {
+    "word": "proud",
+    "phonetic": "/praʊd/",
+    "meaning_vi": "tự hào",
+    "meaning_en": "feeling pleased about your own or someone's achievements",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "They were proud of their son's success.",
+        "vi": "Họ tự hào về thành công của con trai."
+      }
+    ],
+    "word_family": [
+      "pride (n)",
+      "proudly (adv)"
+    ],
+    "collocations": [
+      "proud of",
+      "be proud",
+      "feel proud"
+    ],
+    "synonyms": [
+      "pleased",
+      "satisfied"
+    ],
+    "antonyms": [
+      "ashamed",
+      "humble"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I am proud for you.",
+        "correct": "I am proud of you.",
+        "explain_vi": "Dùng 'of' thay vì 'for'."
+      }
+    ],
+    "grammar_patterns": [
+      "be proud + of + noun/gerund"
+    ]
+  },
+  {
+    "word": "relieved",
+    "phonetic": "/rɪˈliːvd/",
+    "meaning_vi": "nhẹ nhõm, thoải mái",
+    "meaning_en": "feeling happy because something unpleasant has stopped or not happened",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "I was relieved to hear the good news.",
+        "vi": "Tôi nhẹ nhõm khi nghe tin tốt."
+      }
+    ],
+    "word_family": [
+      "relieve (v)",
+      "relief (n)",
+      "relieving (adj)"
+    ],
+    "collocations": [
+      "relieved to",
+      "feel relieved",
+      "relieved that"
+    ],
+    "synonyms": [
+      "comforted",
+      "soothed"
+    ],
+    "antonyms": [
+      "worried",
+      "anxious"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I am relief.",
+        "correct": "I am relieved.",
+        "explain_vi": "Dùng tính từ 'relieved' chứ không phải danh từ 'relief'."
+      }
+    ],
+    "grammar_patterns": [
+      "be relieved + to + infinitive / that + clause"
+    ]
+  },
+  {
+    "word": "furious",
+    "phonetic": "/ˈfjʊə.ri.əs/",
+    "meaning_vi": "tức giận dữ dội",
+    "meaning_en": "extremely angry",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "She was furious with him for lying.",
+        "vi": "Cô ấy vô cùng tức giận với anh ta vì đã nói dối."
+      }
+    ],
+    "word_family": [
+      "fury (n)",
+      "furiously (adv)"
+    ],
+    "collocations": [
+      "furious with",
+      "furious about",
+      "absolutely furious"
+    ],
+    "synonyms": [
+      "livid",
+      "enraged",
+      "infuriated"
+    ],
+    "antonyms": [
+      "calm",
+      "pleased"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I furious",
+        "correct": "I am furious",
+        "explain_vi": "Cần có động từ 'to be' trước tính từ"
+      }
+    ],
+    "grammar_patterns": [
+      "be furious (with someone) (about something)"
+    ]
+  },
+  {
+    "word": "thrilled",
+    "phonetic": "/θrɪld/",
+    "meaning_vi": "vô cùng phấn khích",
+    "meaning_en": "very excited and pleased",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "I'm thrilled to hear you got the job.",
+        "vi": "Tôi vô cùng phấn khích khi biết bạn nhận được việc."
+      }
+    ],
+    "word_family": [
+      "thrill (n/v)",
+      "thrilling (adj)"
+    ],
+    "collocations": [
+      "thrilled with",
+      "thrilled to bits",
+      "absolutely thrilled"
+    ],
+    "synonyms": [
+      "delighted",
+      "elated",
+      "overjoyed"
+    ],
+    "antonyms": [
+      "disappointed",
+      "dismayed"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I thrilled",
+        "correct": "I am thrilled",
+        "explain_vi": "Cần có động từ 'to be' trước tính từ"
+      }
+    ],
+    "grammar_patterns": [
+      "be thrilled (with something)",
+      "be thrilled to do something"
+    ]
+  },
+  {
+    "word": "devastated",
+    "phonetic": "/ˈdev.ə.steɪ.tɪd/",
+    "meaning_vi": "suy sụp, đau buồn tột độ",
+    "meaning_en": "extremely upset and shocked",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "They were devastated by the news.",
+        "vi": "Họ suy sụp vì tin đó."
+      }
+    ],
+    "word_family": [
+      "devastate (v)",
+      "devastating (adj)",
+      "devastation (n)"
+    ],
+    "collocations": [
+      "devastated by",
+      "absolutely devastated",
+      "emotionally devastated"
+    ],
+    "synonyms": [
+      "heartbroken",
+      "shattered",
+      "crushed"
+    ],
+    "antonyms": [
+      "overjoyed",
+      "thrilled"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I devastated",
+        "correct": "I am devastated",
+        "explain_vi": "Cần có động từ 'to be' trước tính từ"
+      }
+    ],
+    "grammar_patterns": [
+      "be devastated (by something)"
+    ]
+  },
+  {
+    "word": "indifferent",
+    "phonetic": "/ɪnˈdɪf.ər.ənt/",
+    "meaning_vi": "thờ ơ, lãnh đạm",
+    "meaning_en": "having no particular interest or sympathy",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "He was indifferent to her feelings.",
+        "vi": "Anh ta thờ ơ với cảm xúc của cô ấy."
+      }
+    ],
+    "word_family": [
+      "indifference (n)",
+      "indifferently (adv)"
+    ],
+    "collocations": [
+      "indifferent to",
+      "remain indifferent",
+      "completely indifferent"
+    ],
+    "synonyms": [
+      "apathetic",
+      "unconcerned",
+      "detached"
+    ],
+    "antonyms": [
+      "interested",
+      "concerned",
+      "passionate"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "indifferent with",
+        "correct": "indifferent to",
+        "explain_vi": "Dùng giới từ 'to' chứ không phải 'with'"
+      }
+    ],
+    "grammar_patterns": [
+      "be indifferent to something"
+    ]
+  },
+  {
+    "word": "resentful",
+    "phonetic": "/rɪˈzent.fəl/",
+    "meaning_vi": "oán giận, bực bội",
+    "meaning_en": "feeling anger or bitterness because of unfair treatment",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "She felt resentful towards her boss.",
+        "vi": "Cô ấy cảm thấy oán giận sếp của mình."
+      }
+    ],
+    "word_family": [
+      "resent (v)",
+      "resentment (n)",
+      "resentfully (adv)"
+    ],
+    "collocations": [
+      "resentful of",
+      "feel resentful",
+      "bitterly resentful"
+    ],
+    "synonyms": [
+      "bitter",
+      "aggrieved",
+      "indignant"
+    ],
+    "antonyms": [
+      "grateful",
+      "content"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "resentful with",
+        "correct": "resentful of/towards",
+        "explain_vi": "Dùng giới từ 'of' hoặc 'towards'"
+      }
+    ],
+    "grammar_patterns": [
+      "be resentful of/towards someone"
+    ]
+  },
+  {
+    "word": "appalled",
+    "phonetic": "/əˈpɔːld/",
+    "meaning_vi": "kinh hoàng, sốc",
+    "meaning_en": "greatly dismayed or horrified",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "I was appalled by the conditions.",
+        "vi": "Tôi kinh hoàng trước những điều kiện đó."
+      }
+    ],
+    "word_family": [
+      "appal (v)",
+      "appalling (adj)",
+      "appallingly (adv)"
+    ],
+    "collocations": [
+      "appalled at",
+      "appalled by",
+      "absolutely appalled"
+    ],
+    "synonyms": [
+      "horrified",
+      "shocked",
+      "dismayed"
+    ],
+    "antonyms": [
+      "pleased",
+      "impressed"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "appalled with",
+        "correct": "appalled at/by",
+        "explain_vi": "Dùng giới từ 'at' hoặc 'by'"
+      }
+    ],
+    "grammar_patterns": [
+      "be appalled at/by something"
+    ]
+  },
+  {
+    "word": "indignant",
+    "phonetic": "/ɪnˈdɪɡ.nənt/",
+    "meaning_vi": "phẫn nộ, bất bình",
+    "meaning_en": "feeling anger because of unfair treatment",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "He was indignant at the accusation.",
+        "vi": "Anh ta phẫn nộ trước lời buộc tội."
+      }
+    ],
+    "word_family": [
+      "indignation (n)",
+      "indignantly (adv)"
+    ],
+    "collocations": [
+      "indignant at",
+      "indignant about",
+      "rightly indignant"
+    ],
+    "synonyms": [
+      "outraged",
+      "resentful",
+      "incensed"
+    ],
+    "antonyms": [
+      "pleased",
+      "approving"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "indignant with",
+        "correct": "indignant at/about",
+        "explain_vi": "Dùng giới từ 'at' hoặc 'about'"
+      }
+    ],
+    "grammar_patterns": [
+      "be indignant at/about something"
+    ]
+  },
+  {
+    "word": "cynical",
+    "phonetic": "/ˈsɪn.ɪ.kəl/",
+    "meaning_vi": "hoài nghi, bi quan",
+    "meaning_en": "believing that people are motivated by self-interest; distrustful",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "She has a cynical view of politics.",
+        "vi": "Cô ấy có cái nhìn hoài nghi về chính trị."
+      }
+    ],
+    "word_family": [
+      "cynic (n)",
+      "cynicism (n)",
+      "cynically (adv)"
+    ],
+    "collocations": [
+      "cynical about",
+      "deeply cynical",
+      "become cynical"
+    ],
+    "synonyms": [
+      "skeptical",
+      "distrustful",
+      "pessimistic"
+    ],
+    "antonyms": [
+      "trusting",
+      "optimistic",
+      "idealistic"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "cynical with",
+        "correct": "cynical about",
+        "explain_vi": "Dùng giới từ 'about'"
+      }
+    ],
+    "grammar_patterns": [
+      "be cynical about something"
+    ]
+  },
+  {
+    "word": "bewildered",
+    "phonetic": "/bɪˈwɪl.dəd/",
+    "meaning_vi": "bối rối, hoang mang",
+    "meaning_en": "confused and uncertain",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "He looked bewildered by the instructions.",
+        "vi": "Anh ấy trông bối rối trước các hướng dẫn."
+      }
+    ],
+    "word_family": [
+      "bewilder (v)",
+      "bewilderment (n)",
+      "bewildering (adj)"
+    ],
+    "collocations": [
+      "bewildered by",
+      "look bewildered",
+      "completely bewildered"
+    ],
+    "synonyms": [
+      "perplexed",
+      "baffled",
+      "puzzled"
+    ],
+    "antonyms": [
+      "clear",
+      "comprehending"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "bewildered with",
+        "correct": "bewildered by",
+        "explain_vi": "Dùng giới từ 'by'"
+      }
+    ],
+    "grammar_patterns": [
+      "be bewildered by something"
+    ]
+  },
+  {
+    "word": "content",
+    "phonetic": "/kənˈtent/",
+    "meaning_vi": "hài lòng, mãn nguyện",
+    "meaning_en": "satisfied and happy",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "She felt content with her life.",
+        "vi": "Cô ấy cảm thấy hài lòng với cuộc sống của mình."
+      }
+    ],
+    "word_family": [
+      "contentment (n)",
+      "contentedly (adv)",
+      "discontent (n)"
+    ],
+    "collocations": [
+      "content with",
+      "perfectly content",
+      "feel content"
+    ],
+    "synonyms": [
+      "satisfied",
+      "fulfilled",
+      "pleased"
+    ],
+    "antonyms": [
+      "discontented",
+      "dissatisfied"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "content of",
+        "correct": "content with",
+        "explain_vi": "Dùng giới từ 'with'"
+      }
+    ],
+    "grammar_patterns": [
+      "be content with something"
+    ]
+  },
+  {
+    "word": "smug",
+    "phonetic": "/smʌɡ/",
+    "meaning_vi": "tự mãn",
+    "meaning_en": "excessively self-satisfied",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "He had a smug look on his face.",
+        "vi": "Anh ta có vẻ mặt tự mãn."
+      }
+    ],
+    "word_family": [
+      "smugness (n)",
+      "smugly (adv)"
+    ],
+    "collocations": [
+      "smug look",
+      "smug smile",
+      "feel smug"
+    ],
+    "synonyms": [
+      "complacent",
+      "self-satisfied",
+      "conceited"
+    ],
+    "antonyms": [
+      "humble",
+      "modest"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "smug with",
+        "correct": "smug about",
+        "explain_vi": "Dùng giới từ 'about'"
+      }
+    ],
+    "grammar_patterns": [
+      "be smug about something"
+    ]
+  },
+  {
+    "word": "ambivalent",
+    "phonetic": "/æmˈbɪv.ə.lənt/",
+    "meaning_vi": "mâu thuẫn, lưỡng lự",
+    "meaning_en": "having mixed feelings about something",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "I feel ambivalent about the move.",
+        "vi": "Tôi cảm thấy mâu thuẫn về việc chuyển đi."
+      }
+    ],
+    "word_family": [
+      "ambivalence (n)",
+      "ambivalently (adv)"
+    ],
+    "collocations": [
+      "ambivalent about",
+      "feel ambivalent",
+      "remain ambivalent"
+    ],
+    "synonyms": [
+      "conflicted",
+      "uncertain",
+      "undecided"
+    ],
+    "antonyms": [
+      "certain",
+      "committed",
+      "decided"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "ambivalent with",
+        "correct": "ambivalent about",
+        "explain_vi": "Dùng giới từ 'about'"
+      }
+    ],
+    "grammar_patterns": [
+      "be ambivalent about something"
+    ]
+  },
+  {
+    "word": "contemptuous",
+    "phonetic": "/kənˈtemp.tʃu.əs/",
+    "meaning_vi": "khinh miệt, coi thường",
+    "meaning_en": "showing contempt; scornful",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "He was contemptuous of her efforts.",
+        "vi": "Anh ta khinh miệt những nỗ lực của cô ấy."
+      }
+    ],
+    "word_family": [
+      "contempt (n)",
+      "contemptuously (adv)"
+    ],
+    "collocations": [
+      "contemptuous of",
+      "be contemptuous",
+      "openly contemptuous"
+    ],
+    "synonyms": [
+      "scornful",
+      "disdainful",
+      "dismissive"
+    ],
+    "antonyms": [
+      "respectful",
+      "admiring"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "contemptuous with",
+        "correct": "contemptuous of",
+        "explain_vi": "Dùng giới từ 'of'"
+      }
+    ],
+    "grammar_patterns": [
+      "be contemptuous of someone/something"
+    ]
+  },
+  {
+    "word": "apprehensive",
+    "phonetic": "/ˌæp.rɪˈhen.sɪv/",
+    "meaning_vi": "lo lắng, e ngại",
+    "meaning_en": "anxious or fearful about the future",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "She was apprehensive about the exam.",
+        "vi": "Cô ấy lo lắng về kỳ thi."
+      }
+    ],
+    "word_family": [
+      "apprehension (n)",
+      "apprehensively (adv)"
+    ],
+    "collocations": [
+      "apprehensive about",
+      "feel apprehensive",
+      "slightly apprehensive"
+    ],
+    "synonyms": [
+      "worried",
+      "uneasy",
+      "nervous"
+    ],
+    "antonyms": [
+      "confident",
+      "calm",
+      "assured"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "apprehensive for",
+        "correct": "apprehensive about",
+        "explain_vi": "Dùng giới từ 'about'"
+      }
+    ],
+    "grammar_patterns": [
+      "be apprehensive about something"
+    ]
+  },
+  {
+    "word": "elated",
+    "phonetic": "/ɪˈleɪ.tɪd/",
+    "meaning_vi": "hân hoan, phấn khởi",
+    "meaning_en": "extremely happy and excited",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "They were elated by the victory.",
+        "vi": "Họ hân hoan vì chiến thắng."
+      }
+    ],
+    "word_family": [
+      "elation (n)",
+      "elatedly (adv)"
+    ],
+    "collocations": [
+      "elated by",
+      "elated at",
+      "feel elated"
+    ],
+    "synonyms": [
+      "overjoyed",
+      "ecstatic",
+      "euphoric"
+    ],
+    "antonyms": [
+      "depressed",
+      "disheartened"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "elated with",
+        "correct": "elated by/at",
+        "explain_vi": "Dùng giới từ 'by' hoặc 'at'"
+      }
+    ],
+    "grammar_patterns": [
+      "be elated by/at something"
+    ]
+  },
+  {
+    "word": "distressed",
+    "phonetic": "/dɪˈstrest/",
+    "meaning_vi": "đau khổ, lo lắng",
+    "meaning_en": "suffering from anxiety, sorrow, or pain",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "She was deeply distressed by the news.",
+        "vi": "Cô ấy vô cùng đau khổ trước tin đó."
+      }
+    ],
+    "word_family": [
+      "distress (n/v)",
+      "distressing (adj)",
+      "distressingly (adv)"
+    ],
+    "collocations": [
+      "distressed by",
+      "distressed about",
+      "visibly distressed"
+    ],
+    "synonyms": [
+      "upset",
+      "anguished",
+      "troubled"
+    ],
+    "antonyms": [
+      "calm",
+      "composed"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "distressed with",
+        "correct": "distressed by/about",
+        "explain_vi": "Dùng giới từ 'by' hoặc 'about'"
+      }
+    ],
+    "grammar_patterns": [
+      "be distressed by/about something"
+    ]
+  },
+  {
+    "word": "complacent",
+    "phonetic": "/kəmˈpleɪ.sənt/",
+    "meaning_vi": "tự mãn, chủ quan",
+    "meaning_en": "uncritically satisfied with oneself",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "We cannot afford to be complacent.",
+        "vi": "Chúng ta không thể tự mãn được."
+      }
+    ],
+    "word_family": [
+      "complacency (n)",
+      "complacently (adv)"
+    ],
+    "collocations": [
+      "complacent about",
+      "become complacent",
+      "smug and complacent"
+    ],
+    "synonyms": [
+      "self-satisfied",
+      "smug",
+      "unconcerned"
+    ],
+    "antonyms": [
+      "vigilant",
+      "concerned",
+      "humble"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "complacent with",
+        "correct": "complacent about",
+        "explain_vi": "Dùng giới từ 'about'"
+      }
+    ],
+    "grammar_patterns": [
+      "be complacent about something"
+    ]
+  },
+  {
+    "word": "mortified",
+    "phonetic": "/ˈmɔːr.tɪ.faɪd/",
+    "meaning_vi": "xấu hổ, ngượng ngùng",
+    "meaning_en": "extremely embarrassed or ashamed",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "I was mortified when I realized my mistake.",
+        "vi": "Tôi xấu hổ khi nhận ra lỗi của mình."
+      }
+    ],
+    "word_family": [
+      "mortify (v)",
+      "mortification (n)",
+      "mortifying (adj)"
+    ],
+    "collocations": [
+      "mortified by",
+      "mortified at",
+      "absolutely mortified"
+    ],
+    "synonyms": [
+      "humiliated",
+      "embarrassed",
+      "ashamed"
+    ],
+    "antonyms": [
+      "proud",
+      "unashamed"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "mortified with",
+        "correct": "mortified by/at",
+        "explain_vi": "Dùng giới từ 'by' hoặc 'at'"
+      }
+    ],
+    "grammar_patterns": [
+      "be mortified by/at something"
+    ]
+  },
+  {
+    "word": "nostalgic",
+    "phonetic": "/nɒˈstæl.dʒɪk/",
+    "meaning_vi": "hoài niệm, nhớ về quá khứ",
+    "meaning_en": "feeling a sentimental longing for the past",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "She felt nostalgic for her childhood.",
+        "vi": "Cô ấy cảm thấy hoài niệm về tuổi thơ."
+      }
+    ],
+    "word_family": [
+      "nostalgia (n)",
+      "nostalgically (adv)"
+    ],
+    "collocations": [
+      "nostalgic for",
+      "feel nostalgic",
+      "wax nostalgic"
+    ],
+    "synonyms": [
+      "sentimental",
+      "homesick",
+      "yearning"
+    ],
+    "antonyms": [
+      "forward-looking",
+      "unemotional"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "nostalgic about",
+        "correct": "nostalgic for",
+        "explain_vi": "Dùng giới từ 'for'"
+      }
+    ],
+    "grammar_patterns": [
+      "be nostalgic for something"
+    ]
+  },
+  {
+    "word": "indebted",
+    "phonetic": "/ɪnˈdet.ɪd/",
+    "meaning_vi": "mang ơn, biết ơn",
+    "meaning_en": "grateful for help or favors",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "I am deeply indebted to you.",
+        "vi": "Tôi vô cùng mang ơn bạn."
+      }
+    ],
+    "word_family": [
+      "indebtedness (n)"
+    ],
+    "collocations": [
+      "indebted to",
+      "deeply indebted",
+      "feel indebted"
+    ],
+    "synonyms": [
+      "grateful",
+      "thankful",
+      "obliged"
+    ],
+    "antonyms": [
+      "ungrateful",
+      "unappreciative"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "indebted for",
+        "correct": "indebted to",
+        "explain_vi": "Dùng giới từ 'to' chỉ người"
+      }
+    ],
+    "grammar_patterns": [
+      "be indebted to someone (for something)"
+    ]
+  },
+  {
+    "word": "distraught",
+    "phonetic": "/dɪˈstrɔːt/",
+    "meaning_vi": "quẫn trí, đau khổ tột độ",
+    "meaning_en": "extremely upset and anxious",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "She was distraught over the loss of her dog.",
+        "vi": "Cô ấy quẫn trí vì mất con chó."
+      },
+      {
+        "en": "He looked distraught after the accident.",
+        "vi": "Anh ấy trông đau khổ tột độ sau tai nạn."
+      }
+    ],
+    "word_family": [
+      "distraughtly (adv)"
+    ],
+    "collocations": [
+      "be distraught",
+      "become distraught",
+      "distraught with grief"
+    ],
+    "synonyms": [
+      "frantic",
+      "hysterical",
+      "inconsolable"
+    ],
+    "antonyms": [
+      "calm",
+      "composed"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "She was distraughted.",
+        "correct": "She was distraught.",
+        "explain_vi": "Distraught là tính từ, không thêm -ed."
+      }
+    ],
+    "grammar_patterns": [
+      "be distraught + about/over/at"
+    ]
+  },
+  {
+    "word": "exasperated",
+    "phonetic": "/ɪɡˈzæs.pə.reɪ.tɪd/",
+    "meaning_vi": "bực tức, phát cáu",
+    "meaning_en": "intensely irritated and frustrated",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "I was exasperated by his constant excuses.",
+        "vi": "Tôi bực tức vì những lời bào chữa liên tục của anh ta."
+      },
+      {
+        "en": "She let out an exasperated sigh.",
+        "vi": "Cô ấy thở dài bực tức."
+      }
+    ],
+    "word_family": [
+      "exasperate (v)",
+      "exasperation (n)"
+    ],
+    "collocations": [
+      "be exasperated at/with",
+      "exasperated sigh",
+      "exasperated look"
+    ],
+    "synonyms": [
+      "irritated",
+      "annoyed",
+      "frustrated"
+    ],
+    "antonyms": [
+      "patient",
+      "pleased"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "He was exasperated about the delay.",
+        "correct": "He was exasperated at the delay.",
+        "explain_vi": "Dùng 'at' hoặc 'with', không dùng 'about'."
+      }
+    ],
+    "grammar_patterns": [
+      "be exasperated + at/with + noun/pronoun"
+    ]
+  },
+  {
+    "word": "smug",
+    "phonetic": "/smʌɡ/",
+    "meaning_vi": "tự mãn, đắc ý",
+    "meaning_en": "excessively self-satisfied or complacent",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "He had a smug look on his face.",
+        "vi": "Anh ta có vẻ mặt tự mãn."
+      },
+      {
+        "en": "She felt smug about her promotion.",
+        "vi": "Cô ấy cảm thấy đắc ý về việc thăng chức."
+      }
+    ],
+    "word_family": [
+      "smugly (adv)",
+      "smugness (n)"
+    ],
+    "collocations": [
+      "smug smile",
+      "smug expression",
+      "feel smug"
+    ],
+    "synonyms": [
+      "self-satisfied",
+      "complacent",
+      "conceited"
+    ],
+    "antonyms": [
+      "humble",
+      "modest"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "He is very smug with his success.",
+        "correct": "He is very smug about his success.",
+        "explain_vi": "Dùng 'about' thay vì 'with'."
+      }
+    ],
+    "grammar_patterns": [
+      "be smug + about + noun/gerund"
+    ]
+  },
+  {
+    "word": "ambivalent",
+    "phonetic": "/æmˈbɪv.ə.lənt/",
+    "meaning_vi": "mâu thuẫn, lưỡng lự",
+    "meaning_en": "having mixed feelings about something",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "I feel ambivalent about moving abroad.",
+        "vi": "Tôi cảm thấy lưỡng lự về việc ra nước ngoài."
+      },
+      {
+        "en": "She had an ambivalent attitude towards the plan.",
+        "vi": "Cô ấy có thái độ mâu thuẫn với kế hoạch."
+      }
+    ],
+    "word_family": [
+      "ambivalence (n)",
+      "ambivalently (adv)"
+    ],
+    "collocations": [
+      "feel ambivalent",
+      "ambivalent about",
+      "ambivalent attitude"
+    ],
+    "synonyms": [
+      "conflicted",
+      "uncertain",
+      "divided"
+    ],
+    "antonyms": [
+      "certain",
+      "resolute"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I am ambivalent for the idea.",
+        "correct": "I am ambivalent about the idea.",
+        "explain_vi": "Dùng 'about' thay vì 'for'."
+      }
+    ],
+    "grammar_patterns": [
+      "be ambivalent + about + noun/gerund"
+    ]
+  },
+  {
+    "word": "contemptuous",
+    "phonetic": "/kənˈtemp.tʃu.əs/",
+    "meaning_vi": "khinh thường, miệt thị",
+    "meaning_en": "showing a lack of respect; scornful",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "He was contemptuous of her efforts.",
+        "vi": "Anh ta khinh thường những nỗ lực của cô ấy."
+      },
+      {
+        "en": "She gave a contemptuous laugh.",
+        "vi": "Cô ấy cười khinh miệt."
+      }
+    ],
+    "word_family": [
+      "contempt (n)",
+      "contemptuously (adv)"
+    ],
+    "collocations": [
+      "be contemptuous of",
+      "contemptuous look",
+      "contemptuous remark"
+    ],
+    "synonyms": [
+      "scornful",
+      "disdainful",
+      "dismissive"
+    ],
+    "antonyms": [
+      "respectful",
+      "admiring"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "He is contemptuous with her.",
+        "correct": "He is contemptuous of her.",
+        "explain_vi": "Dùng 'of' thay vì 'with'."
+      }
+    ],
+    "grammar_patterns": [
+      "be contemptuous + of + noun/pronoun"
+    ]
+  },
+  {
+    "word": "apprehensive",
+    "phonetic": "/ˌæp.rɪˈhen.sɪv/",
+    "meaning_vi": "lo lắng, e ngại",
+    "meaning_en": "anxious or fearful about the future",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "She was apprehensive about the exam.",
+        "vi": "Cô ấy lo lắng về kỳ thi."
+      },
+      {
+        "en": "He felt apprehensive before the interview.",
+        "vi": "Anh ấy cảm thấy e ngại trước buổi phỏng vấn."
+      }
+    ],
+    "word_family": [
+      "apprehension (n)",
+      "apprehensively (adv)"
+    ],
+    "collocations": [
+      "be apprehensive about",
+      "feel apprehensive",
+      "apprehensive look"
+    ],
+    "synonyms": [
+      "anxious",
+      "worried",
+      "fearful"
+    ],
+    "antonyms": [
+      "confident",
+      "fearless"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I am apprehensive for the future.",
+        "correct": "I am apprehensive about the future.",
+        "explain_vi": "Dùng 'about' thay vì 'for'."
+      }
+    ],
+    "grammar_patterns": [
+      "be apprehensive + about/of + noun/gerund"
+    ]
+  },
+  {
+    "word": "elated",
+    "phonetic": "/ɪˈleɪ.tɪd/",
+    "meaning_vi": "phấn khởi, hân hoan",
+    "meaning_en": "extremely happy and excited",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "He was elated at the news.",
+        "vi": "Anh ấy phấn khởi trước tin đó."
+      },
+      {
+        "en": "She felt elated after winning the prize.",
+        "vi": "Cô ấy cảm thấy hân hoan sau khi giành giải."
+      }
+    ],
+    "word_family": [
+      "elation (n)",
+      "elatedly (adv)"
+    ],
+    "collocations": [
+      "be elated at/by",
+      "feel elated",
+      "elated mood"
+    ],
+    "synonyms": [
+      "ecstatic",
+      "overjoyed",
+      "thrilled"
+    ],
+    "antonyms": [
+      "depressed",
+      "miserable"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "She was elated for the result.",
+        "correct": "She was elated at the result.",
+        "explain_vi": "Dùng 'at' hoặc 'by' thay vì 'for'."
+      }
+    ],
+    "grammar_patterns": [
+      "be elated + at/by + noun/gerund"
+    ]
+  },
+  {
+    "word": "distressed",
+    "phonetic": "/dɪˈstrest/",
+    "meaning_vi": "đau buồn, khổ sở",
+    "meaning_en": "experiencing anxiety, sorrow, or pain",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "She was distressed by the bad news.",
+        "vi": "Cô ấy đau buồn vì tin xấu."
+      },
+      {
+        "en": "He looked distressed and pale.",
+        "vi": "Anh ấy trông khổ sở và xanh xao."
+      }
+    ],
+    "word_family": [
+      "distress (n/v)",
+      "distressing (adj)"
+    ],
+    "collocations": [
+      "be distressed about/over",
+      "feel distressed",
+      "distressed look"
+    ],
+    "synonyms": [
+      "upset",
+      "anguished",
+      "troubled"
+    ],
+    "antonyms": [
+      "calm",
+      "content"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "He is distressed with his job loss.",
+        "correct": "He is distressed about his job loss.",
+        "explain_vi": "Dùng 'about' hoặc 'over' thay vì 'with'."
+      }
+    ],
+    "grammar_patterns": [
+      "be distressed + about/over/at + noun/gerund"
+    ]
+  },
+  {
+    "word": "complacent",
+    "phonetic": "/kəmˈpleɪ.sənt/",
+    "meaning_vi": "tự mãn, hài lòng một cách thụ động",
+    "meaning_en": "smugly self-satisfied; uncritical",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "We cannot afford to be complacent about safety.",
+        "vi": "Chúng ta không thể tự mãn về an toàn."
+      },
+      {
+        "en": "He has a complacent attitude towards his work.",
+        "vi": "Anh ấy có thái độ tự mãn với công việc."
+      }
+    ],
+    "word_family": [
+      "complacency (n)",
+      "complacently (adv)"
+    ],
+    "collocations": [
+      "be complacent about",
+      "become complacent",
+      "complacent smile"
+    ],
+    "synonyms": [
+      "smug",
+      "self-satisfied",
+      "uncritical"
+    ],
+    "antonyms": [
+      "concerned",
+      "vigilant"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "She is complacent with her grades.",
+        "correct": "She is complacent about her grades.",
+        "explain_vi": "Dùng 'about' thay vì 'with'."
+      }
+    ],
+    "grammar_patterns": [
+      "be complacent + about + noun/gerund"
+    ]
+  },
+  {
+    "word": "mortified",
+    "phonetic": "/ˈmɔːr.tɪ.faɪd/",
+    "meaning_vi": "xấu hổ, mất mặt",
+    "meaning_en": "extremely embarrassed or humiliated",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "I was mortified when I tripped on stage.",
+        "vi": "Tôi xấu hổ khi vấp ngã trên sân khấu."
+      },
+      {
+        "en": "She felt mortified by her mistake.",
+        "vi": "Cô ấy cảm thấy mất mặt vì sai lầm của mình."
+      }
+    ],
+    "word_family": [
+      "mortify (v)",
+      "mortifying (adj)",
+      "mortification (n)"
+    ],
+    "collocations": [
+      "be mortified at/by",
+      "feel mortified",
+      "mortified expression"
+    ],
+    "synonyms": [
+      "humiliated",
+      "embarrassed",
+      "shamed"
+    ],
+    "antonyms": [
+      "proud",
+      "unashamed"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I was mortified with his comment.",
+        "correct": "I was mortified by his comment.",
+        "explain_vi": "Dùng 'by' hoặc 'at' thay vì 'with'."
+      }
+    ],
+    "grammar_patterns": [
+      "be mortified + at/by + noun/gerund"
+    ]
+  },
+  {
+    "word": "nostalgic",
+    "phonetic": "/nɒˈstæl.dʒɪk/",
+    "meaning_vi": "hoài niệm, nhớ về quá khứ",
+    "meaning_en": "longing for the past",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "She felt nostalgic looking at old photos.",
+        "vi": "Cô ấy cảm thấy hoài niệm khi nhìn ảnh cũ."
+      },
+      {
+        "en": "The song made me nostalgic for my childhood.",
+        "vi": "Bài hát khiến tôi nhớ về tuổi thơ."
+      }
+    ],
+    "word_family": [
+      "nostalgia (n)",
+      "nostalgically (adv)"
+    ],
+    "collocations": [
+      "feel nostalgic",
+      "nostalgic for",
+      "nostalgic memories"
+    ],
+    "synonyms": [
+      "wistful",
+      "reminiscent",
+      "sentimental"
+    ],
+    "antonyms": [
+      "forward-looking",
+      "modern"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I am nostalgic about my school days.",
+        "correct": "I am nostalgic for my school days.",
+        "explain_vi": "Dùng 'for' thay vì 'about'."
+      }
+    ],
+    "grammar_patterns": [
+      "be nostalgic + for + noun"
+    ]
+  },
+  {
+    "word": "indebted",
+    "phonetic": "/ɪnˈdet.ɪd/",
+    "meaning_vi": "mang ơn, biết ơn",
+    "meaning_en": "feeling grateful because of help given",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "I am deeply indebted to my parents.",
+        "vi": "Tôi vô cùng mang ơn cha mẹ."
+      },
+      {
+        "en": "She felt indebted to her mentor.",
+        "vi": "Cô ấy cảm thấy biết ơn người hướng dẫn."
+      }
+    ],
+    "word_family": [
+      "indebtedness (n)"
+    ],
+    "collocations": [
+      "be indebted to",
+      "feel indebted",
+      "deeply indebted"
+    ],
+    "synonyms": [
+      "grateful",
+      "obliged",
+      "thankful"
+    ],
+    "antonyms": [
+      "ungrateful",
+      "unappreciative"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I am indebted for you.",
+        "correct": "I am indebted to you.",
+        "explain_vi": "Dùng 'to' thay vì 'for'."
+      }
+    ],
+    "grammar_patterns": [
+      "be indebted + to + person + for + noun"
+    ]
+  },
+  {
+    "word": "exhilarated",
+    "phonetic": "/ɪɡˈzɪl.ə.reɪ.tɪd/",
+    "meaning_vi": "hứng khởi, phấn chấn",
+    "meaning_en": "feeling very happy, animated, or elated",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "She felt exhilarated after the roller coaster ride.",
+        "vi": "Cô ấy cảm thấy hứng khởi sau chuyến tàu lượn."
+      },
+      {
+        "en": "He was exhilarated by the success.",
+        "vi": "Anh ấy phấn chấn vì thành công."
+      }
+    ],
+    "word_family": [
+      "exhilarate (v)",
+      "exhilaration (n)",
+      "exhilarating (adj)"
+    ],
+    "collocations": [
+      "feel exhilarated",
+      "exhilarated by",
+      "exhilarated mood"
+    ],
+    "synonyms": [
+      "thrilled",
+      "elated",
+      "excited"
+    ],
+    "antonyms": [
+      "tired",
+      "depressed"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I am exhilarated for the news.",
+        "correct": "I am exhilarated by the news.",
+        "explain_vi": "Dùng 'by' thay vì 'for'."
+      }
+    ],
+    "grammar_patterns": [
+      "be exhilarated + by/at + noun/gerund"
+    ]
+  },
+  {
+    "word": "disheartened",
+    "phonetic": "/dɪsˈhɑːr.tənd/",
+    "meaning_vi": "nản lòng, thất vọng",
+    "meaning_en": "having lost determination or confidence",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "She was disheartened by the rejection.",
+        "vi": "Cô ấy nản lòng vì bị từ chối."
+      },
+      {
+        "en": "He felt disheartened after the loss.",
+        "vi": "Anh ấy cảm thấy thất vọng sau trận thua."
+      }
+    ],
+    "word_family": [
+      "dishearten (v)",
+      "disheartening (adj)"
+    ],
+    "collocations": [
+      "be disheartened by",
+      "feel disheartened",
+      "become disheartened"
+    ],
+    "synonyms": [
+      "discouraged",
+      "demoralized",
+      "crestfallen"
+    ],
+    "antonyms": [
+      "encouraged",
+      "heartened"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "He is disheartened from the result.",
+        "correct": "He is disheartened by the result.",
+        "explain_vi": "Dùng 'by' thay vì 'from'."
+      }
+    ],
+    "grammar_patterns": [
+      "be disheartened + by/at + noun/gerund"
+    ]
+  },
+  {
+    "word": "repulsed",
+    "phonetic": "/rɪˈpʌlst/",
+    "meaning_vi": "kinh tởm, ghê sợ",
+    "meaning_en": "filled with disgust or aversion",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "I was repulsed by the smell.",
+        "vi": "Tôi kinh tởm mùi đó."
+      },
+      {
+        "en": "She felt repulsed by his behavior.",
+        "vi": "Cô ấy cảm thấy ghê sợ hành vi của anh ta."
+      }
+    ],
+    "word_family": [
+      "repulse (v)",
+      "repulsion (n)",
+      "repulsive (adj)"
+    ],
+    "collocations": [
+      "be repulsed by",
+      "feel repulsed",
+      "repulsed reaction"
+    ],
+    "synonyms": [
+      "disgusted",
+      "revolted",
+      "nauseated"
+    ],
+    "antonyms": [
+      "attracted",
+      "charmed"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I am repulsed with the food.",
+        "correct": "I am repulsed by the food.",
+        "explain_vi": "Dùng 'by' thay vì 'with'."
+      }
+    ],
+    "grammar_patterns": [
+      "be repulsed + by + noun/pronoun"
+    ]
+  },
+  {
+    "word": "yearning",
+    "phonetic": "/ˈjɜːr.nɪŋ/",
+    "meaning_vi": "khao khát, khắc khoải",
+    "meaning_en": "a feeling of intense longing for something",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She felt a yearning for her homeland.",
+        "vi": "Cô ấy cảm thấy khao khát quê hương."
+      },
+      {
+        "en": "He had a yearning to travel.",
+        "vi": "Anh ấy có khao khát được đi du lịch."
+      }
+    ],
+    "word_family": [
+      "yearn (v)",
+      "yearningly (adv)"
+    ],
+    "collocations": [
+      "yearning for",
+      "deep yearning",
+      "feel a yearning"
+    ],
+    "synonyms": [
+      "longing",
+      "desire",
+      "craving"
+    ],
+    "antonyms": [
+      "apathy",
+      "indifference"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I have a yearning of peace.",
+        "correct": "I have a yearning for peace.",
+        "explain_vi": "Dùng 'for' thay vì 'of'."
+      }
+    ],
+    "grammar_patterns": [
+      "yearning + for + noun",
+      "yearning + to + infinitive"
+    ]
+  },
+  {
+    "word": "enamored",
+    "phonetic": "/ɪˈnæm.ərd/",
+    "meaning_vi": "say mê, mê mẩn",
+    "meaning_en": "filled with love or admiration",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "He is enamored with the new city.",
+        "vi": "Anh ấy say mê thành phố mới."
+      },
+      {
+        "en": "She became enamored of the idea.",
+        "vi": "Cô ấy mê mẩn ý tưởng đó."
+      }
+    ],
+    "word_family": [
+      "enamor (v)",
+      "enamoredness (n)"
+    ],
+    "collocations": [
+      "be enamored of/with",
+      "become enamored",
+      "enamored look"
+    ],
+    "synonyms": [
+      "infatuated",
+      "captivated",
+      "charmed"
+    ],
+    "antonyms": [
+      "disenchanted",
+      "repulsed"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I am enamored for her.",
+        "correct": "I am enamored of her.",
+        "explain_vi": "Dùng 'of' hoặc 'with' thay vì 'for'."
+      }
+    ],
+    "grammar_patterns": [
+      "be enamored + of/with + noun/pronoun"
+    ]
+  },
+  {
+    "word": "disillusioned",
+    "phonetic": "/ˌdɪs.ɪˈluː.ʒənd/",
+    "meaning_vi": "vỡ mộng, thất vọng",
+    "meaning_en": "disappointed because of discovering the truth",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "He became disillusioned with politics.",
+        "vi": "Anh ấy vỡ mộng với chính trị."
+      },
+      {
+        "en": "She felt disillusioned by the company's ethics.",
+        "vi": "Cô ấy thất vọng vì đạo đức của công ty."
+      }
+    ],
+    "word_family": [
+      "disillusion (v/n)",
+      "disillusionment (n)"
+    ],
+    "collocations": [
+      "be disillusioned with/by",
+      "become disillusioned",
+      "feel disillusioned"
+    ],
+    "synonyms": [
+      "disenchanted",
+      "cynical",
+      "sour"
+    ],
+    "antonyms": [
+      "idealistic",
+      "naive"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I am disillusioned about the project.",
+        "correct": "I am disillusioned with the project.",
+        "explain_vi": "Dùng 'with' hoặc 'by' thay vì 'about'."
+      }
+    ],
+    "grammar_patterns": [
+      "be disillusioned + with/by + noun"
+    ]
+  },
+  {
+    "word": "vexed",
+    "phonetic": "/vekst/",
+    "meaning_vi": "bực mình, khó chịu",
+    "meaning_en": "annoyed, frustrated, or worried",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "He was vexed by the constant delays.",
+        "vi": "Anh ấy bực mình vì những sự chậm trễ liên tục."
+      },
+      {
+        "en": "She had a vexed expression.",
+        "vi": "Cô ấy có vẻ mặt khó chịu."
+      }
+    ],
+    "word_family": [
+      "vex (v)",
+      "vexation (n)",
+      "vexing (adj)"
+    ],
+    "collocations": [
+      "be vexed at/by",
+      "feel vexed",
+      "vexed question"
+    ],
+    "synonyms": [
+      "irritated",
+      "annoyed",
+      "peeved"
+    ],
+    "antonyms": [
+      "pleased",
+      "content"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I am vexed with the noise.",
+        "correct": "I am vexed by the noise.",
+        "explain_vi": "Dùng 'by' hoặc 'at' thay vì 'with'."
+      }
+    ],
+    "grammar_patterns": [
+      "be vexed + at/by + noun/gerund"
+    ]
+  },
+  {
+    "word": "wistful",
+    "phonetic": "/ˈwɪst.fəl/",
+    "meaning_vi": "buồn nhớ, đầy tâm trạng",
+    "meaning_en": "having a feeling of vague or regretful longing",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "She had a wistful look in her eyes.",
+        "vi": "Cô ấy có ánh mắt buồn nhớ."
+      },
+      {
+        "en": "He felt wistful about his childhood.",
+        "vi": "Anh ấy cảm thấy đầy tâm trạng về tuổi thơ."
+      }
+    ],
+    "word_family": [
+      "wistfully (adv)",
+      "wistfulness (n)"
+    ],
+    "collocations": [
+      "wistful look",
+      "wistful smile",
+      "feel wistful"
+    ],
+    "synonyms": [
+      "longing",
+      "yearning",
+      "melancholy"
+    ],
+    "antonyms": [
+      "cheerful",
+      "content"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "She is wistful for the past.",
+        "correct": "She is wistful about the past.",
+        "explain_vi": "Dùng 'about' thay vì 'for'."
+      }
+    ],
+    "grammar_patterns": [
+      "be wistful + about + noun/gerund"
+    ]
+  },
+  {
+    "word": "overwhelmed",
+    "phonetic": "/ˌəʊ.vəˈwelmd/",
+    "meaning_vi": "choáng ngợp",
+    "meaning_en": "feeling that you have too much to deal with",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "She was overwhelmed by the amount of work.",
+        "vi": "Cô ấy bị choáng ngợp bởi khối lượng công việc."
+      }
+    ],
+    "word_family": [
+      "overwhelm (v)",
+      "overwhelming (adj)"
+    ],
+    "collocations": [
+      "feel overwhelmed",
+      "overwhelmed by",
+      "overwhelmed with"
+    ],
+    "synonyms": [
+      "overpowered",
+      "stunned"
+    ],
+    "antonyms": [
+      "calm",
+      "composed"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I am overwhelm",
+        "correct": "I am overwhelmed",
+        "explain_vi": "Cần dùng tính từ 'overwhelmed' thay vì động từ 'overwhelm'"
+      }
+    ],
+    "grammar_patterns": [
+      "be overwhelmed by/with + noun"
+    ]
+  },
+  {
+    "word": "compassionate",
+    "phonetic": "/kəmˈpæʃ.ən.ət/",
+    "meaning_vi": "đầy lòng trắc ẩn",
+    "meaning_en": "feeling or showing sympathy and concern for others",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "She is a compassionate nurse.",
+        "vi": "Cô ấy là một y tá đầy lòng trắc ẩn."
+      }
+    ],
+    "word_family": [
+      "compassion (n)",
+      "compassionately (adv)"
+    ],
+    "collocations": [
+      "compassionate care",
+      "compassionate person",
+      "compassionate leave"
+    ],
+    "synonyms": [
+      "sympathetic",
+      "caring"
+    ],
+    "antonyms": [
+      "cruel",
+      "heartless"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "He is compassion",
+        "correct": "He is compassionate",
+        "explain_vi": "Cần dùng tính từ 'compassionate' thay vì danh từ 'compassion'"
+      }
+    ],
+    "grammar_patterns": [
+      "be compassionate towards + noun"
+    ]
+  },
+  {
+    "word": "detached",
+    "phonetic": "/dɪˈtætʃt/",
+    "meaning_vi": "tách biệt, không quan tâm",
+    "meaning_en": "not feeling emotionally involved",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "He felt detached from the group.",
+        "vi": "Anh ấy cảm thấy tách biệt khỏi nhóm."
+      }
+    ],
+    "word_family": [
+      "detach (v)",
+      "detachment (n)"
+    ],
+    "collocations": [
+      "feel detached",
+      "detached from",
+      "remain detached"
+    ],
+    "synonyms": [
+      "aloof",
+      "unemotional"
+    ],
+    "antonyms": [
+      "involved",
+      "attached"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "He is detach",
+        "correct": "He is detached",
+        "explain_vi": "Cần dùng tính từ 'detached' thay vì động từ 'detach'"
+      }
+    ],
+    "grammar_patterns": [
+      "be detached from + noun"
+    ]
+  },
+  {
+    "word": "appalled",
+    "phonetic": "/əˈpɔːld/",
+    "meaning_vi": "kinh hoàng, sốc",
+    "meaning_en": "greatly shocked or horrified",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "I was appalled by the news.",
+        "vi": "Tôi kinh hoàng trước tin tức đó."
+      }
+    ],
+    "word_family": [
+      "appal (v)",
+      "appalling (adj)"
+    ],
+    "collocations": [
+      "appalled at",
+      "appalled by",
+      "absolutely appalled"
+    ],
+    "synonyms": [
+      "shocked",
+      "horrified"
+    ],
+    "antonyms": [
+      "pleased",
+      "delighted"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I am appall",
+        "correct": "I am appalled",
+        "explain_vi": "Cần dùng tính từ 'appalled' thay vì động từ 'appal'"
+      }
+    ],
+    "grammar_patterns": [
+      "be appalled at/by + noun"
+    ]
+  },
+  {
+    "word": "indifferent",
+    "phonetic": "/ɪnˈdɪf.ər.ənt/",
+    "meaning_vi": "thờ ơ, lãnh đạm",
+    "meaning_en": "having no particular interest or sympathy",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "She was indifferent to his complaints.",
+        "vi": "Cô ấy thờ ơ với những lời phàn nàn của anh ta."
+      }
+    ],
+    "word_family": [
+      "indifference (n)",
+      "indifferently (adv)"
+    ],
+    "collocations": [
+      "remain indifferent",
+      "indifferent to",
+      "completely indifferent"
+    ],
+    "synonyms": [
+      "unconcerned",
+      "apathetic"
+    ],
+    "antonyms": [
+      "interested",
+      "concerned"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "He is indifferent with",
+        "correct": "He is indifferent to",
+        "explain_vi": "Dùng giới từ 'to' thay vì 'with'"
+      }
+    ],
+    "grammar_patterns": [
+      "be indifferent to + noun"
+    ]
+  },
+  {
+    "word": "sarcastic",
+    "phonetic": "/sɑːˈkæs.tɪk/",
+    "meaning_vi": "mỉa mai, châm biếm",
+    "meaning_en": "using irony to mock or convey contempt",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "He made a sarcastic remark.",
+        "vi": "Anh ấy có một nhận xét mỉa mai."
+      }
+    ],
+    "word_family": [
+      "sarcasm (n)",
+      "sarcastically (adv)"
+    ],
+    "collocations": [
+      "sarcastic comment",
+      "sarcastic tone",
+      "sarcastic remark"
+    ],
+    "synonyms": [
+      "ironic",
+      "mocking"
+    ],
+    "antonyms": [
+      "sincere",
+      "straightforward"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "He is sarcast",
+        "correct": "He is sarcastic",
+        "explain_vi": "Cần dùng tính từ 'sarcastic' thay vì 'sarcast'"
+      }
+    ],
+    "grammar_patterns": [
+      "be sarcastic about + noun"
+    ]
+  },
+  {
+    "word": "sympathetic",
+    "phonetic": "/ˌsɪm.pəˈθet.ɪk/",
+    "meaning_vi": "thông cảm, đồng cảm",
+    "meaning_en": "feeling or showing understanding and compassion",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "She was sympathetic to his situation.",
+        "vi": "Cô ấy thông cảm với hoàn cảnh của anh ấy."
+      }
+    ],
+    "word_family": [
+      "sympathy (n)",
+      "sympathize (v)"
+    ],
+    "collocations": [
+      "sympathetic ear",
+      "sympathetic to",
+      "deeply sympathetic"
+    ],
+    "synonyms": [
+      "compassionate",
+      "understanding"
+    ],
+    "antonyms": [
+      "unsympathetic",
+      "callous"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I am sympathy",
+        "correct": "I am sympathetic",
+        "explain_vi": "Cần dùng tính từ 'sympathetic' thay vì danh từ 'sympathy'"
+      }
+    ],
+    "grammar_patterns": [
+      "be sympathetic to/towards + noun"
+    ]
+  },
+  {
+    "word": "ecstatic",
+    "phonetic": "/ɪkˈstæt.ɪk/",
+    "meaning_vi": "vô cùng hạnh phúc, ngây ngất",
+    "meaning_en": "feeling overwhelming happiness or excitement",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "They were ecstatic about the news.",
+        "vi": "Họ vô cùng hạnh phúc về tin đó."
+      }
+    ],
+    "word_family": [
+      "ecstasy (n)",
+      "ecstatically (adv)"
+    ],
+    "collocations": [
+      "ecstatic about",
+      "ecstatic over",
+      "absolutely ecstatic"
+    ],
+    "synonyms": [
+      "overjoyed",
+      "euphoric"
+    ],
+    "antonyms": [
+      "miserable",
+      "depressed"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I am ecstasy",
+        "correct": "I am ecstatic",
+        "explain_vi": "Cần dùng tính từ 'ecstatic' thay vì danh từ 'ecstasy'"
+      }
+    ],
+    "grammar_patterns": [
+      "be ecstatic about/over + noun"
+    ]
+  },
+  {
+    "word": "skeptical",
+    "phonetic": "/ˈskep.tɪ.kəl/",
+    "meaning_vi": "hoài nghi",
+    "meaning_en": "not easily convinced; having doubts",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "I am skeptical about his promises.",
+        "vi": "Tôi hoài nghi về những lời hứa của anh ấy."
+      }
+    ],
+    "word_family": [
+      "skeptic (n)",
+      "skepticism (n)"
+    ],
+    "collocations": [
+      "skeptical about",
+      "skeptical of",
+      "remain skeptical"
+    ],
+    "synonyms": [
+      "doubtful",
+      "unconvinced"
+    ],
+    "antonyms": [
+      "trusting",
+      "gullible"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I am skeptic",
+        "correct": "I am skeptical",
+        "explain_vi": "Cần dùng tính từ 'skeptical' thay vì danh từ 'skeptic'"
+      }
+    ],
+    "grammar_patterns": [
+      "be skeptical about/of + noun"
+    ]
+  },
+  {
+    "word": "nostalgic",
+    "phonetic": "/nɒˈstæl.dʒɪk/",
+    "meaning_vi": "hoài niệm, nhớ về quá khứ",
+    "meaning_en": "feeling a sentimental longing for the past",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "She felt nostalgic looking at old photos.",
+        "vi": "Cô ấy cảm thấy hoài niệm khi nhìn những bức ảnh cũ."
+      }
+    ],
+    "word_family": [
+      "nostalgia (n)",
+      "nostalgically (adv)"
+    ],
+    "collocations": [
+      "feel nostalgic",
+      "nostalgic for",
+      "nostalgic about"
+    ],
+    "synonyms": [
+      "wistful",
+      "homesick"
+    ],
+    "antonyms": [
+      "present-focused",
+      "forward-looking"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I am nostalgia",
+        "correct": "I am nostalgic",
+        "explain_vi": "Cần dùng tính từ 'nostalgic' thay vì danh từ 'nostalgia'"
+      }
+    ],
+    "grammar_patterns": [
+      "be nostalgic for/about + noun"
+    ]
+  },
+  {
+    "word": "impartial",
+    "phonetic": "/ɪmˈpɑː.ʃəl/",
+    "meaning_vi": "vô tư, công bằng",
+    "meaning_en": "treating all sides equally; not biased",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "A judge must be impartial.",
+        "vi": "Thẩm phán phải vô tư."
+      }
+    ],
+    "word_family": [
+      "impartiality (n)",
+      "impartially (adv)"
+    ],
+    "collocations": [
+      "impartial judge",
+      "remain impartial",
+      "completely impartial"
+    ],
+    "synonyms": [
+      "unbiased",
+      "fair"
+    ],
+    "antonyms": [
+      "biased",
+      "partial"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "He is impartial with",
+        "correct": "He is impartial towards",
+        "explain_vi": "Dùng giới từ 'towards' thay vì 'with'"
+      }
+    ],
+    "grammar_patterns": [
+      "be impartial towards + noun"
+    ]
+  },
+  {
+    "word": "outraged",
+    "phonetic": "/ˈaʊt.reɪdʒd/",
+    "meaning_vi": "phẫn nộ",
+    "meaning_en": "feeling or expressing strong anger at something unjust",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "They were outraged by the decision.",
+        "vi": "Họ phẫn nộ trước quyết định đó."
+      }
+    ],
+    "word_family": [
+      "outrage (n)",
+      "outrageous (adj)"
+    ],
+    "collocations": [
+      "outraged at",
+      "outraged by",
+      "deeply outraged"
+    ],
+    "synonyms": [
+      "furious",
+      "incensed"
+    ],
+    "antonyms": [
+      "pleased",
+      "calm"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I am outrage",
+        "correct": "I am outraged",
+        "explain_vi": "Cần dùng tính từ 'outraged' thay vì danh từ 'outrage'"
+      }
+    ],
+    "grammar_patterns": [
+      "be outraged at/by + noun"
+    ]
+  },
+  {
+    "word": "bashful",
+    "phonetic": "/ˈbæʃ.fəl/",
+    "meaning_vi": "ngượng ngùng, e thẹn",
+    "meaning_en": "shy and easily embarrassed",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "He gave a bashful smile.",
+        "vi": "Anh ấy cười ngượng ngùng."
+      }
+    ],
+    "word_family": [
+      "bashfulness (n)",
+      "bashfully (adv)"
+    ],
+    "collocations": [
+      "bashful smile",
+      "feel bashful",
+      "bashful about"
+    ],
+    "synonyms": [
+      "shy",
+      "timid"
+    ],
+    "antonyms": [
+      "confident",
+      "outgoing"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "He is bash",
+        "correct": "He is bashful",
+        "explain_vi": "Cần dùng tính từ 'bashful' thay vì 'bash'"
+      }
+    ],
+    "grammar_patterns": [
+      "be bashful about + noun"
+    ]
+  },
+  {
+    "word": "disillusioned",
+    "phonetic": "/ˌdɪs.ɪˈluː.ʒənd/",
+    "meaning_vi": "thất vọng, vỡ mộng",
+    "meaning_en": "disappointed because the truth is different from what was believed",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "She became disillusioned with politics.",
+        "vi": "Cô ấy trở nên thất vọng với chính trị."
+      }
+    ],
+    "word_family": [
+      "disillusion (v)",
+      "disillusionment (n)"
+    ],
+    "collocations": [
+      "disillusioned with",
+      "become disillusioned",
+      "deeply disillusioned"
+    ],
+    "synonyms": [
+      "disenchanted",
+      "cynical"
+    ],
+    "antonyms": [
+      "idealistic",
+      "naive"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I am disillusion",
+        "correct": "I am disillusioned",
+        "explain_vi": "Cần dùng tính từ 'disillusioned' thay vì động từ 'disillusion'"
+      }
+    ],
+    "grammar_patterns": [
+      "be disillusioned with + noun"
+    ]
+  },
+  {
+    "word": "smug",
+    "phonetic": "/smʌɡ/",
+    "meaning_vi": "tự mãn, đắc ý",
+    "meaning_en": "excessively proud of oneself; self-satisfied",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "He had a smug expression after winning.",
+        "vi": "Anh ấy có vẻ mặt tự mãn sau khi thắng."
+      }
+    ],
+    "word_family": [
+      "smugness (n)",
+      "smugly (adv)"
+    ],
+    "collocations": [
+      "smug smile",
+      "smug attitude",
+      "feel smug"
+    ],
+    "synonyms": [
+      "complacent",
+      "conceited"
+    ],
+    "antonyms": [
+      "humble",
+      "modest"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "He is smuggy",
+        "correct": "He is smug",
+        "explain_vi": "'Smuggy' không phải là từ đúng; dùng 'smug'"
+      }
+    ],
+    "grammar_patterns": [
+      "be smug about + noun"
+    ]
+  },
+  {
+    "word": "ambivalent",
+    "phonetic": "/æmˈbɪv.ə.lənt/",
+    "meaning_vi": "mâu thuẫn, phân vân",
+    "meaning_en": "having mixed feelings about something",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "She felt ambivalent about the move.",
+        "vi": "Cô ấy cảm thấy phân vân về việc chuyển đi."
+      }
+    ],
+    "word_family": [
+      "ambivalence (n)",
+      "ambivalently (adv)"
+    ],
+    "collocations": [
+      "ambivalent about",
+      "feel ambivalent",
+      "remain ambivalent"
+    ],
+    "synonyms": [
+      "conflicted",
+      "undecided"
+    ],
+    "antonyms": [
+      "certain",
+      "resolute"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I am ambivalence",
+        "correct": "I am ambivalent",
+        "explain_vi": "Cần dùng tính từ 'ambivalent' thay vì danh từ 'ambivalence'"
+      }
+    ],
+    "grammar_patterns": [
+      "be ambivalent about + noun"
+    ]
+  },
+  {
+    "word": "contemptuous",
+    "phonetic": "/kənˈtemp.tʃu.əs/",
+    "meaning_vi": "khinh thường",
+    "meaning_en": "feeling or showing that someone is worthless",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "He was contemptuous of their efforts.",
+        "vi": "Anh ấy khinh thường nỗ lực của họ."
+      }
+    ],
+    "word_family": [
+      "contempt (n)",
+      "contemptuously (adv)"
+    ],
+    "collocations": [
+      "contemptuous of",
+      "contemptuous look",
+      "contemptuous attitude"
+    ],
+    "synonyms": [
+      "scornful",
+      "disdainful"
+    ],
+    "antonyms": [
+      "respectful",
+      "admiring"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "He is contempt",
+        "correct": "He is contemptuous",
+        "explain_vi": "Cần dùng tính từ 'contemptuous' thay vì danh từ 'contempt'"
+      }
+    ],
+    "grammar_patterns": [
+      "be contemptuous of + noun"
+    ]
+  },
+  {
+    "word": "apprehensive",
+    "phonetic": "/ˌæp.rɪˈhen.sɪv/",
+    "meaning_vi": "lo lắng, e ngại",
+    "meaning_en": "anxious or fearful that something bad will happen",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "She was apprehensive about the exam.",
+        "vi": "Cô ấy lo lắng về kỳ thi."
+      }
+    ],
+    "word_family": [
+      "apprehension (n)",
+      "apprehensively (adv)"
+    ],
+    "collocations": [
+      "apprehensive about",
+      "feel apprehensive",
+      "apprehensive look"
+    ],
+    "synonyms": [
+      "anxious",
+      "worried"
+    ],
+    "antonyms": [
+      "confident",
+      "calm"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I am apprehension",
+        "correct": "I am apprehensive",
+        "explain_vi": "Cần dùng tính từ 'apprehensive' thay vì danh từ 'apprehension'"
+      }
+    ],
+    "grammar_patterns": [
+      "be apprehensive about/of + noun"
+    ]
+  },
+  {
+    "word": "elated",
+    "phonetic": "/ɪˈleɪ.tɪd/",
+    "meaning_vi": "hân hoan, phấn khởi",
+    "meaning_en": "extremely happy and excited",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "They were elated by the victory.",
+        "vi": "Họ hân hoan vì chiến thắng."
+      }
+    ],
+    "word_family": [
+      "elation (n)",
+      "elatedly (adv)"
+    ],
+    "collocations": [
+      "elated by",
+      "elated at",
+      "feel elated"
+    ],
+    "synonyms": [
+      "overjoyed",
+      "thrilled"
+    ],
+    "antonyms": [
+      "miserable",
+      "dejected"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I am elation",
+        "correct": "I am elated",
+        "explain_vi": "Cần dùng tính từ 'elated' thay vì danh từ 'elation'"
+      }
+    ],
+    "grammar_patterns": [
+      "be elated at/by + noun"
+    ]
+  },
+  {
+    "word": "distressed",
+    "phonetic": "/dɪˈstrest/",
+    "meaning_vi": "đau khổ, lo lắng",
+    "meaning_en": "feeling extreme worry or unhappiness",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "She was distressed by the bad news.",
+        "vi": "Cô ấy đau khổ vì tin xấu."
+      }
+    ],
+    "word_family": [
+      "distress (n)",
+      "distressing (adj)"
+    ],
+    "collocations": [
+      "distressed about",
+      "distressed by",
+      "emotionally distressed"
+    ],
+    "synonyms": [
+      "upset",
+      "anguished"
+    ],
+    "antonyms": [
+      "calm",
+      "content"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I am distress",
+        "correct": "I am distressed",
+        "explain_vi": "Cần dùng tính từ 'distressed' thay vì danh từ 'distress'"
+      }
+    ],
+    "grammar_patterns": [
+      "be distressed about/by + noun"
+    ]
+  }
+]

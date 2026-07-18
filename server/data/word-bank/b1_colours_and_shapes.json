@@ -1,0 +1,3244 @@
+[
+  {
+    "word": "red",
+    "phonetic": "/red/",
+    "meaning_vi": "màu đỏ",
+    "meaning_en": "a colour like that of blood or a ruby",
+    "pos": "noun, adjective",
+    "examples": [
+      {
+        "en": "She painted the wall red.",
+        "vi": "Cô ấy sơn tường màu đỏ."
+      },
+      {
+        "en": "He has a red car.",
+        "vi": "Anh ấy có một chiếc xe màu đỏ."
+      }
+    ],
+    "word_family": [
+      "redness (n)",
+      "reddish (adj)"
+    ],
+    "collocations": [
+      "bright red",
+      "dark red",
+      "turn red"
+    ],
+    "synonyms": [
+      "crimson",
+      "scarlet"
+    ],
+    "antonyms": [
+      "green"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I like red colour.",
+        "correct": "I like the colour red.",
+        "explain_vi": "Trong tiếng Anh, nói 'colour red' thay vì 'red colour'."
+      }
+    ],
+    "grammar_patterns": [
+      "be + red",
+      "turn + red"
+    ]
+  },
+  {
+    "word": "blue",
+    "phonetic": "/bluː/",
+    "meaning_vi": "màu xanh dương",
+    "meaning_en": "a colour like that of a clear sky",
+    "pos": "noun, adjective",
+    "examples": [
+      {
+        "en": "The sky is blue.",
+        "vi": "Bầu trời màu xanh dương."
+      },
+      {
+        "en": "He wore a blue shirt.",
+        "vi": "Anh ấy mặc áo sơ mi xanh dương."
+      }
+    ],
+    "word_family": [
+      "blueness (n)",
+      "bluish (adj)"
+    ],
+    "collocations": [
+      "deep blue",
+      "light blue",
+      "feel blue"
+    ],
+    "synonyms": [
+      "azure",
+      "navy"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have a blue colour pen.",
+        "correct": "I have a blue pen.",
+        "explain_vi": "Không cần 'colour' sau màu sắc."
+      }
+    ],
+    "grammar_patterns": [
+      "be + blue",
+      "turn + blue"
+    ]
+  },
+  {
+    "word": "green",
+    "phonetic": "/ɡriːn/",
+    "meaning_vi": "màu xanh lá cây",
+    "meaning_en": "a colour like that of grass or leaves",
+    "pos": "noun, adjective",
+    "examples": [
+      {
+        "en": "The leaves are green.",
+        "vi": "Lá cây màu xanh lá cây."
+      },
+      {
+        "en": "She has green eyes.",
+        "vi": "Cô ấy có mắt màu xanh lá cây."
+      }
+    ],
+    "word_family": [
+      "greenness (n)",
+      "greenish (adj)"
+    ],
+    "collocations": [
+      "dark green",
+      "light green",
+      "go green"
+    ],
+    "synonyms": [
+      "emerald",
+      "lime"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I like green colour.",
+        "correct": "I like green.",
+        "explain_vi": "Bỏ 'colour' khi nói về màu sắc."
+      }
+    ],
+    "grammar_patterns": [
+      "be + green",
+      "turn + green"
+    ]
+  },
+  {
+    "word": "yellow",
+    "phonetic": "/ˈjel.əʊ/",
+    "meaning_vi": "màu vàng",
+    "meaning_en": "a colour like that of the sun or a lemon",
+    "pos": "noun, adjective",
+    "examples": [
+      {
+        "en": "The sun is yellow.",
+        "vi": "Mặt trời màu vàng."
+      },
+      {
+        "en": "She bought a yellow dress.",
+        "vi": "Cô ấy mua một chiếc váy màu vàng."
+      }
+    ],
+    "word_family": [
+      "yellowness (n)",
+      "yellowish (adj)"
+    ],
+    "collocations": [
+      "bright yellow",
+      "pale yellow",
+      "turn yellow"
+    ],
+    "synonyms": [
+      "golden",
+      "amber"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "This is yellow colour.",
+        "correct": "This is yellow.",
+        "explain_vi": "Không cần 'colour'."
+      }
+    ],
+    "grammar_patterns": [
+      "be + yellow",
+      "turn + yellow"
+    ]
+  },
+  {
+    "word": "black",
+    "phonetic": "/blæk/",
+    "meaning_vi": "màu đen",
+    "meaning_en": "the darkest colour, like the colour of coal or night",
+    "pos": "noun, adjective",
+    "examples": [
+      {
+        "en": "He drives a black car.",
+        "vi": "Anh ấy lái một chiếc xe màu đen."
+      },
+      {
+        "en": "The night is black.",
+        "vi": "Màn đêm tối đen."
+      }
+    ],
+    "word_family": [
+      "blackness (n)",
+      "blacken (v)"
+    ],
+    "collocations": [
+      "jet black",
+      "black and white",
+      "black out"
+    ],
+    "synonyms": [
+      "dark",
+      "ebony"
+    ],
+    "antonyms": [
+      "white"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I have black colour shoes.",
+        "correct": "I have black shoes.",
+        "explain_vi": "Bỏ 'colour'."
+      }
+    ],
+    "grammar_patterns": [
+      "be + black",
+      "turn + black"
+    ]
+  },
+  {
+    "word": "white",
+    "phonetic": "/waɪt/",
+    "meaning_vi": "màu trắng",
+    "meaning_en": "a colour like that of snow or milk",
+    "pos": "noun, adjective",
+    "examples": [
+      {
+        "en": "She wore a white dress.",
+        "vi": "Cô ấy mặc một chiếc váy trắng."
+      },
+      {
+        "en": "Snow is white.",
+        "vi": "Tuyết màu trắng."
+      }
+    ],
+    "word_family": [
+      "whiteness (n)",
+      "whiten (v)"
+    ],
+    "collocations": [
+      "pure white",
+      "white as snow",
+      "white out"
+    ],
+    "synonyms": [
+      "ivory",
+      "cream"
+    ],
+    "antonyms": [
+      "black"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I like white colour.",
+        "correct": "I like white.",
+        "explain_vi": "Bỏ 'colour'."
+      }
+    ],
+    "grammar_patterns": [
+      "be + white",
+      "turn + white"
+    ]
+  },
+  {
+    "word": "gray",
+    "phonetic": "/ɡreɪ/",
+    "meaning_vi": "màu xám",
+    "meaning_en": "a colour between black and white, like the colour of ash",
+    "pos": "noun, adjective",
+    "examples": [
+      {
+        "en": "The sky is gray today.",
+        "vi": "Bầu trời hôm nay màu xám."
+      },
+      {
+        "en": "He has a gray suit.",
+        "vi": "Anh ấy có một bộ vest màu xám."
+      }
+    ],
+    "word_family": [
+      "grayness (n)",
+      "grayish (adj)"
+    ],
+    "collocations": [
+      "dark gray",
+      "light gray",
+      "gray area"
+    ],
+    "synonyms": [
+      "silver",
+      "charcoal"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I prefer gray colour.",
+        "correct": "I prefer gray.",
+        "explain_vi": "Bỏ 'colour'."
+      }
+    ],
+    "grammar_patterns": [
+      "be + gray",
+      "turn + gray"
+    ]
+  },
+  {
+    "word": "brown",
+    "phonetic": "/braʊn/",
+    "meaning_vi": "màu nâu",
+    "meaning_en": "a colour like that of chocolate or wood",
+    "pos": "noun, adjective",
+    "examples": [
+      {
+        "en": "He has brown hair.",
+        "vi": "Anh ấy có tóc màu nâu."
+      },
+      {
+        "en": "The table is brown.",
+        "vi": "Cái bàn màu nâu."
+      }
+    ],
+    "word_family": [
+      "brownness (n)",
+      "brownish (adj)"
+    ],
+    "collocations": [
+      "dark brown",
+      "light brown",
+      "brown sugar"
+    ],
+    "synonyms": [
+      "tan",
+      "coffee"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I like brown colour.",
+        "correct": "I like brown.",
+        "explain_vi": "Bỏ 'colour'."
+      }
+    ],
+    "grammar_patterns": [
+      "be + brown",
+      "turn + brown"
+    ]
+  },
+  {
+    "word": "orange",
+    "phonetic": "/ˈɒr.ɪndʒ/",
+    "meaning_vi": "màu cam",
+    "meaning_en": "a colour between red and yellow, like the fruit",
+    "pos": "noun, adjective",
+    "examples": [
+      {
+        "en": "She painted the room orange.",
+        "vi": "Cô ấy sơn phòng màu cam."
+      },
+      {
+        "en": "He has an orange shirt.",
+        "vi": "Anh ấy có một chiếc áo màu cam."
+      }
+    ],
+    "word_family": [
+      "orangeness (n)",
+      "orangish (adj)"
+    ],
+    "collocations": [
+      "bright orange",
+      "dark orange",
+      "orange juice"
+    ],
+    "synonyms": [
+      "tangerine",
+      "coral"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I like orange colour.",
+        "correct": "I like orange.",
+        "explain_vi": "Bỏ 'colour'."
+      }
+    ],
+    "grammar_patterns": [
+      "be + orange",
+      "turn + orange"
+    ]
+  },
+  {
+    "word": "purple",
+    "phonetic": "/ˈpɜː.pəl/",
+    "meaning_vi": "màu tím",
+    "meaning_en": "a colour between red and blue, like the colour of lavender",
+    "pos": "noun, adjective",
+    "examples": [
+      {
+        "en": "She loves purple flowers.",
+        "vi": "Cô ấy yêu hoa màu tím."
+      },
+      {
+        "en": "The sunset is purple.",
+        "vi": "Hoàng hôn màu tím."
+      }
+    ],
+    "word_family": [
+      "purpleness (n)",
+      "purplish (adj)"
+    ],
+    "collocations": [
+      "deep purple",
+      "light purple",
+      "purple haze"
+    ],
+    "synonyms": [
+      "violet",
+      "lavender"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I like purple colour.",
+        "correct": "I like purple.",
+        "explain_vi": "Bỏ 'colour'."
+      }
+    ],
+    "grammar_patterns": [
+      "be + purple",
+      "turn + purple"
+    ]
+  },
+  {
+    "word": "pink",
+    "phonetic": "/pɪŋk/",
+    "meaning_vi": "màu hồng",
+    "meaning_en": "a pale red colour, like the colour of cotton candy",
+    "pos": "noun, adjective",
+    "examples": [
+      {
+        "en": "She has a pink dress.",
+        "vi": "Cô ấy có một chiếc váy màu hồng."
+      },
+      {
+        "en": "The flowers are pink.",
+        "vi": "Những bông hoa màu hồng."
+      }
+    ],
+    "word_family": [
+      "pinkness (n)",
+      "pinkish (adj)"
+    ],
+    "collocations": [
+      "hot pink",
+      "pale pink",
+      "in the pink"
+    ],
+    "synonyms": [
+      "rose",
+      "magenta"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I like pink colour.",
+        "correct": "I like pink.",
+        "explain_vi": "Bỏ 'colour'."
+      }
+    ],
+    "grammar_patterns": [
+      "be + pink",
+      "turn + pink"
+    ]
+  },
+  {
+    "word": "circle",
+    "phonetic": "/ˈsɜː.kəl/",
+    "meaning_vi": "hình tròn",
+    "meaning_en": "a round shape with no corners, every point on the edge is the same distance from the centre",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Draw a circle on the paper.",
+        "vi": "Vẽ một hình tròn trên giấy."
+      },
+      {
+        "en": "The children sat in a circle.",
+        "vi": "Những đứa trẻ ngồi thành vòng tròn."
+      }
+    ],
+    "word_family": [
+      "circular (adj)",
+      "circulate (v)"
+    ],
+    "collocations": [
+      "draw a circle",
+      "in a circle",
+      "circle of friends"
+    ],
+    "synonyms": [
+      "ring",
+      "round"
+    ],
+    "antonyms": [
+      "square"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I drew a round circle.",
+        "correct": "I drew a circle.",
+        "explain_vi": "Không cần 'round' vì circle đã là tròn."
+      }
+    ],
+    "grammar_patterns": [
+      "a + circle",
+      "in a + circle"
+    ]
+  },
+  {
+    "word": "square",
+    "phonetic": "/skweər/",
+    "meaning_vi": "hình vuông",
+    "meaning_en": "a shape with four equal sides and four right angles",
+    "pos": "noun, adjective",
+    "examples": [
+      {
+        "en": "The table is a square.",
+        "vi": "Cái bàn là hình vuông."
+      },
+      {
+        "en": "She has a square face.",
+        "vi": "Cô ấy có khuôn mặt vuông."
+      }
+    ],
+    "word_family": [
+      "squarely (adv)",
+      "squareness (n)"
+    ],
+    "collocations": [
+      "square shape",
+      "square meter",
+      "square root"
+    ],
+    "synonyms": [
+      "quadrilateral",
+      "box"
+    ],
+    "antonyms": [
+      "circle"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "The box is square shape.",
+        "correct": "The box is square.",
+        "explain_vi": "Không cần 'shape'."
+      }
+    ],
+    "grammar_patterns": [
+      "be + square",
+      "a + square"
+    ]
+  },
+  {
+    "word": "triangle",
+    "phonetic": "/ˈtraɪ.æŋ.ɡəl/",
+    "meaning_vi": "hình tam giác",
+    "meaning_en": "a shape with three sides and three angles",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "A triangle has three sides.",
+        "vi": "Hình tam giác có ba cạnh."
+      },
+      {
+        "en": "She drew a triangle.",
+        "vi": "Cô ấy vẽ một hình tam giác."
+      }
+    ],
+    "word_family": [
+      "triangular (adj)"
+    ],
+    "collocations": [
+      "right triangle",
+      "equilateral triangle",
+      "triangle shape"
+    ],
+    "synonyms": [
+      "trigon"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I drew a triangle shape.",
+        "correct": "I drew a triangle.",
+        "explain_vi": "Bỏ 'shape'."
+      }
+    ],
+    "grammar_patterns": [
+      "a + triangle",
+      "triangle + of"
+    ]
+  },
+  {
+    "word": "rectangle",
+    "phonetic": "/ˈrek.tæŋ.ɡəl/",
+    "meaning_vi": "hình chữ nhật",
+    "meaning_en": "a shape with four sides, two long and two short, and four right angles",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The door is a rectangle.",
+        "vi": "Cánh cửa là hình chữ nhật."
+      },
+      {
+        "en": "Draw a rectangle on the board.",
+        "vi": "Vẽ một hình chữ nhật lên bảng."
+      }
+    ],
+    "word_family": [
+      "rectangular (adj)"
+    ],
+    "collocations": [
+      "rectangle shape",
+      "rectangle area",
+      "rectangle box"
+    ],
+    "synonyms": [
+      "oblong"
+    ],
+    "antonyms": [
+      "square"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I have a rectangle shape box.",
+        "correct": "I have a rectangular box.",
+        "explain_vi": "Dùng 'rectangular' thay vì 'rectangle shape'."
+      }
+    ],
+    "grammar_patterns": [
+      "a + rectangle",
+      "rectangle + of"
+    ]
+  },
+  {
+    "word": "oval",
+    "phonetic": "/ˈəʊ.vəl/",
+    "meaning_vi": "hình bầu dục",
+    "meaning_en": "a shape like an egg or ellipse",
+    "pos": "noun, adjective",
+    "examples": [
+      {
+        "en": "She has an oval face.",
+        "vi": "Cô ấy có khuôn mặt hình bầu dục."
+      },
+      {
+        "en": "The mirror is oval.",
+        "vi": "Cái gương hình bầu dục."
+      }
+    ],
+    "word_family": [
+      "ovalness (n)",
+      "ovoid (adj)"
+    ],
+    "collocations": [
+      "oval shape",
+      "oval table",
+      "oval office"
+    ],
+    "synonyms": [
+      "elliptical",
+      "egg-shaped"
+    ],
+    "antonyms": [
+      "round"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "The shape is oval shape.",
+        "correct": "The shape is oval.",
+        "explain_vi": "Bỏ 'shape' thừa."
+      }
+    ],
+    "grammar_patterns": [
+      "be + oval",
+      "an + oval"
+    ]
+  },
+  {
+    "word": "star",
+    "phonetic": "/stɑːr/",
+    "meaning_vi": "hình ngôi sao",
+    "meaning_en": "a shape with five or more points, like a star in the sky",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She cut the paper into a star.",
+        "vi": "Cô ấy cắt giấy thành hình ngôi sao."
+      },
+      {
+        "en": "The flag has a star.",
+        "vi": "Lá cờ có một ngôi sao."
+      }
+    ],
+    "word_family": [
+      "starry (adj)",
+      "star-shaped (adj)"
+    ],
+    "collocations": [
+      "five-pointed star",
+      "shooting star",
+      "star shape"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I drew a star shape.",
+        "correct": "I drew a star.",
+        "explain_vi": "Bỏ 'shape'."
+      }
+    ],
+    "grammar_patterns": [
+      "a + star",
+      "star + of"
+    ]
+  },
+  {
+    "word": "diamond",
+    "phonetic": "/ˈdaɪ.ə.mənd/",
+    "meaning_vi": "hình thoi",
+    "meaning_en": "a shape with four equal sides, like a square but turned, or a precious stone",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The pattern has diamonds.",
+        "vi": "Họa tiết có hình thoi."
+      },
+      {
+        "en": "She wore a diamond ring.",
+        "vi": "Cô ấy đeo một chiếc nhẫn kim cương."
+      }
+    ],
+    "word_family": [
+      "diamond-shaped (adj)"
+    ],
+    "collocations": [
+      "diamond shape",
+      "diamond ring",
+      "diamond in the rough"
+    ],
+    "synonyms": [
+      "rhombus",
+      "lozenge"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I like diamond shape.",
+        "correct": "I like the diamond shape.",
+        "explain_vi": "Thêm 'the' khi nói về hình dạng cụ thể."
+      }
+    ],
+    "grammar_patterns": [
+      "a + diamond",
+      "diamond + of"
+    ]
+  },
+  {
+    "word": "heart",
+    "phonetic": "/hɑːrt/",
+    "meaning_vi": "hình trái tim",
+    "meaning_en": "a shape like a heart, often used to symbolize love",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She drew a heart on the card.",
+        "vi": "Cô ấy vẽ một trái tim trên tấm thiệp."
+      },
+      {
+        "en": "The cookie is heart-shaped.",
+        "vi": "Cái bánh quy có hình trái tim."
+      }
+    ],
+    "word_family": [
+      "heart-shaped (adj)",
+      "hearty (adj)"
+    ],
+    "collocations": [
+      "heart shape",
+      "heart symbol",
+      "heart of gold"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I love heart shape.",
+        "correct": "I love the heart shape.",
+        "explain_vi": "Thêm 'the'."
+      }
+    ],
+    "grammar_patterns": [
+      "a + heart",
+      "heart + of"
+    ]
+  },
+  {
+    "word": "shape",
+    "phonetic": "/ʃeɪp/",
+    "meaning_vi": "hình dạng",
+    "meaning_en": "the form or outline of an object",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "What shape is it?",
+        "vi": "Nó có hình dạng gì?"
+      },
+      {
+        "en": "The shape of the table is round.",
+        "vi": "Hình dạng của cái bàn là tròn."
+      }
+    ],
+    "word_family": [
+      "shaped (adj)",
+      "shapeless (adj)"
+    ],
+    "collocations": [
+      "in shape",
+      "out of shape",
+      "take shape"
+    ],
+    "synonyms": [
+      "form",
+      "figure"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "The shape of the box is square shape.",
+        "correct": "The shape of the box is square.",
+        "explain_vi": "Không lặp 'shape'."
+      }
+    ],
+    "grammar_patterns": [
+      "the shape of",
+      "in the shape of"
+    ]
+  },
+  {
+    "word": "light",
+    "phonetic": "/laɪt/",
+    "meaning_vi": "nhạt, sáng",
+    "meaning_en": "pale in colour; not dark",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "She wore a light blue dress.",
+        "vi": "Cô ấy mặc một chiếc váy xanh nhạt."
+      }
+    ],
+    "word_family": [
+      "lighten (v)",
+      "lightness (n)"
+    ],
+    "collocations": [
+      "light colour",
+      "light shade",
+      "light blue"
+    ],
+    "synonyms": [
+      "pale",
+      "pastel"
+    ],
+    "antonyms": [
+      "dark"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "She wore a light blue dress.",
+        "correct": "She wore a light blue dress.",
+        "explain_vi": "Không có lỗi phổ biến; lưu ý 'light' đứng trước màu sắc."
+      }
+    ],
+    "grammar_patterns": [
+      "light + colour"
+    ]
+  },
+  {
+    "word": "dark",
+    "phonetic": "/dɑːrk/",
+    "meaning_vi": "tối, đậm",
+    "meaning_en": "deep in colour; not light",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "He painted the wall dark green.",
+        "vi": "Anh ấy sơn tường màu xanh lá đậm."
+      }
+    ],
+    "word_family": [
+      "darken (v)",
+      "darkness (n)"
+    ],
+    "collocations": [
+      "dark colour",
+      "dark shade",
+      "dark blue"
+    ],
+    "synonyms": [
+      "deep",
+      "rich"
+    ],
+    "antonyms": [
+      "light"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "He painted the wall dark green colour.",
+        "correct": "He painted the wall dark green.",
+        "explain_vi": "Không cần thêm 'colour' sau màu sắc."
+      }
+    ],
+    "grammar_patterns": [
+      "dark + colour"
+    ]
+  },
+  {
+    "word": "bright",
+    "phonetic": "/braɪt/",
+    "meaning_vi": "sáng, rực rỡ",
+    "meaning_en": "strongly coloured; vivid",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The flowers are bright yellow.",
+        "vi": "Những bông hoa có màu vàng rực rỡ."
+      }
+    ],
+    "word_family": [
+      "brighten (v)",
+      "brightness (n)",
+      "brightly (adv)"
+    ],
+    "collocations": [
+      "bright colour",
+      "bright red",
+      "bright light"
+    ],
+    "synonyms": [
+      "vivid",
+      "vibrant"
+    ],
+    "antonyms": [
+      "dull",
+      "muted"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "The flowers are bright colour yellow.",
+        "correct": "The flowers are bright yellow.",
+        "explain_vi": "Không dùng 'colour' giữa 'bright' và màu sắc."
+      }
+    ],
+    "grammar_patterns": [
+      "bright + colour"
+    ]
+  },
+  {
+    "word": "pale",
+    "phonetic": "/peɪl/",
+    "meaning_vi": "nhợt nhạt, nhạt",
+    "meaning_en": "light in colour; lacking intensity",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The sky was a pale blue.",
+        "vi": "Bầu trời có màu xanh nhạt."
+      }
+    ],
+    "word_family": [
+      "paleness (n)",
+      "pale (v)"
+    ],
+    "collocations": [
+      "pale colour",
+      "pale skin",
+      "pale yellow"
+    ],
+    "synonyms": [
+      "light",
+      "faint"
+    ],
+    "antonyms": [
+      "dark",
+      "deep"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "The sky was pale colour blue.",
+        "correct": "The sky was pale blue.",
+        "explain_vi": "Không thêm 'colour' giữa 'pale' và màu."
+      }
+    ],
+    "grammar_patterns": [
+      "pale + colour"
+    ]
+  },
+  {
+    "word": "shade",
+    "phonetic": "/ʃeɪd/",
+    "meaning_vi": "sắc thái",
+    "meaning_en": "a particular variety of a colour",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I like this shade of green.",
+        "vi": "Tôi thích sắc xanh lá này."
+      }
+    ],
+    "word_family": [
+      "shady (adj)",
+      "shade (v)"
+    ],
+    "collocations": [
+      "shade of colour",
+      "different shades",
+      "light shade"
+    ],
+    "synonyms": [
+      "hue",
+      "tone"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I like this green shade.",
+        "correct": "I like this shade of green.",
+        "explain_vi": "Thường dùng 'shade of + colour'."
+      }
+    ],
+    "grammar_patterns": [
+      "shade of + colour"
+    ]
+  },
+  {
+    "word": "tone",
+    "phonetic": "/toʊn/",
+    "meaning_vi": "tông màu",
+    "meaning_en": "a particular quality or shade of a colour",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The room is decorated in warm tones.",
+        "vi": "Căn phòng được trang trí với tông màu ấm."
+      }
+    ],
+    "word_family": [
+      "tonal (adj)",
+      "tone (v)"
+    ],
+    "collocations": [
+      "warm tones",
+      "cool tones",
+      "skin tone"
+    ],
+    "synonyms": [
+      "shade",
+      "hue"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "The room is decorated in warm tone colours.",
+        "correct": "The room is decorated in warm tones.",
+        "explain_vi": "Không cần 'colours' sau 'tones'."
+      }
+    ],
+    "grammar_patterns": [
+      "adjective + tones"
+    ]
+  },
+  {
+    "word": "hue",
+    "phonetic": "/hjuː/",
+    "meaning_vi": "màu sắc, sắc thái",
+    "meaning_en": "a colour or a shade of a colour",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The painting has a reddish hue.",
+        "vi": "Bức tranh có sắc đỏ."
+      }
+    ],
+    "word_family": [
+      "hued (adj)"
+    ],
+    "collocations": [
+      "reddish hue",
+      "warm hue",
+      "cool hue"
+    ],
+    "synonyms": [
+      "colour",
+      "shade",
+      "tone"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "The painting has a red hue colour.",
+        "correct": "The painting has a reddish hue.",
+        "explain_vi": "Dùng 'reddish' thay vì 'red' trước 'hue'."
+      }
+    ],
+    "grammar_patterns": [
+      "adjective + hue"
+    ]
+  },
+  {
+    "word": "pattern",
+    "phonetic": "/ˈpæt.ərn/",
+    "meaning_vi": "hoa văn, họa tiết",
+    "meaning_en": "a repeated design or arrangement",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The fabric has a floral pattern.",
+        "vi": "Vải có họa tiết hoa."
+      }
+    ],
+    "word_family": [
+      "patterned (adj)",
+      "pattern (v)"
+    ],
+    "collocations": [
+      "floral pattern",
+      "geometric pattern",
+      "striped pattern"
+    ],
+    "synonyms": [
+      "design",
+      "motif"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "The fabric has a pattern flower.",
+        "correct": "The fabric has a floral pattern.",
+        "explain_vi": "Dùng tính từ 'floral' thay vì danh từ 'flower'."
+      }
+    ],
+    "grammar_patterns": [
+      "adjective + pattern"
+    ]
+  },
+  {
+    "word": "stripe",
+    "phonetic": "/straɪp/",
+    "meaning_vi": "sọc",
+    "meaning_en": "a long narrow band of colour",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "He wore a shirt with blue stripes.",
+        "vi": "Anh ấy mặc áo sơ mi có sọc xanh."
+      }
+    ],
+    "word_family": [
+      "striped (adj)",
+      "stripy (adj)"
+    ],
+    "collocations": [
+      "vertical stripe",
+      "horizontal stripe",
+      "blue stripe"
+    ],
+    "synonyms": [
+      "band",
+      "line"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "He wore a shirt with blue stripe.",
+        "correct": "He wore a shirt with blue stripes.",
+        "explain_vi": "Dùng số nhiều 'stripes' khi có nhiều sọc."
+      }
+    ],
+    "grammar_patterns": [
+      "colour + stripe(s)"
+    ]
+  },
+  {
+    "word": "spot",
+    "phonetic": "/spɒt/",
+    "meaning_vi": "chấm, đốm",
+    "meaning_en": "a small round mark of colour",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The dog has black spots.",
+        "vi": "Con chó có những đốm đen."
+      }
+    ],
+    "word_family": [
+      "spotted (adj)",
+      "spotty (adj)"
+    ],
+    "collocations": [
+      "black spot",
+      "white spot",
+      "polka dot"
+    ],
+    "synonyms": [
+      "dot",
+      "mark"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "The dog has black spot.",
+        "correct": "The dog has black spots.",
+        "explain_vi": "Dùng số nhiều 'spots' khi có nhiều đốm."
+      }
+    ],
+    "grammar_patterns": [
+      "colour + spot(s)"
+    ]
+  },
+  {
+    "word": "check",
+    "phonetic": "/tʃek/",
+    "meaning_vi": "kẻ ô vuông",
+    "meaning_en": "a pattern of squares, often of two colours",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She wore a dress with a check pattern.",
+        "vi": "Cô ấy mặc một chiếc váy có họa tiết kẻ ô."
+      }
+    ],
+    "word_family": [
+      "checked (adj)"
+    ],
+    "collocations": [
+      "check pattern",
+      "check shirt",
+      "gingham check"
+    ],
+    "synonyms": [
+      "plaid",
+      "tartan"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "She wore a checkered dress.",
+        "correct": "She wore a checked dress.",
+        "explain_vi": "'Checkered' là tính từ, nhưng 'checked' phổ biến hơn cho vải."
+      }
+    ],
+    "grammar_patterns": [
+      "check + pattern"
+    ]
+  },
+  {
+    "word": "plain",
+    "phonetic": "/pleɪn/",
+    "meaning_vi": "trơn, không hoa văn",
+    "meaning_en": "without a pattern; simple in colour",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "I prefer plain colours to patterns.",
+        "vi": "Tôi thích màu trơn hơn họa tiết."
+      }
+    ],
+    "word_family": [
+      "plainness (n)"
+    ],
+    "collocations": [
+      "plain colour",
+      "plain shirt",
+      "plain background"
+    ],
+    "synonyms": [
+      "solid",
+      "simple"
+    ],
+    "antonyms": [
+      "patterned",
+      "decorated"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I prefer plain colour.",
+        "correct": "I prefer plain colours.",
+        "explain_vi": "Dùng số nhiều 'colours' khi nói chung."
+      }
+    ],
+    "grammar_patterns": [
+      "plain + noun"
+    ]
+  },
+  {
+    "word": "solid",
+    "phonetic": "/ˈsɒl.ɪd/",
+    "meaning_vi": "đồng màu",
+    "meaning_en": "of a single colour without any pattern",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "She wore a solid red dress.",
+        "vi": "Cô ấy mặc một chiếc váy đỏ đồng màu."
+      }
+    ],
+    "word_family": [
+      "solidly (adv)",
+      "solidity (n)"
+    ],
+    "collocations": [
+      "solid colour",
+      "solid background",
+      "solid blue"
+    ],
+    "synonyms": [
+      "plain",
+      "unpatterned"
+    ],
+    "antonyms": [
+      "patterned",
+      "multicoloured"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "She wore a solid red colour dress.",
+        "correct": "She wore a solid red dress.",
+        "explain_vi": "Không cần 'colour' giữa 'solid' và màu."
+      }
+    ],
+    "grammar_patterns": [
+      "solid + colour + noun"
+    ]
+  },
+  {
+    "word": "multicoloured",
+    "phonetic": "/ˌmʌl.tiˈkʌl.əd/",
+    "meaning_vi": "nhiều màu",
+    "meaning_en": "having many colours",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The parrot is multicoloured.",
+        "vi": "Con vẹt có nhiều màu."
+      }
+    ],
+    "word_family": [
+      "multicolour (n)"
+    ],
+    "collocations": [
+      "multicoloured fabric",
+      "multicoloured design"
+    ],
+    "synonyms": [
+      "colourful",
+      "rainbow"
+    ],
+    "antonyms": [
+      "monochrome",
+      "plain"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "The parrot is multi-colour.",
+        "correct": "The parrot is multicoloured.",
+        "explain_vi": "Dùng 'multicoloured' (tính từ) thay vì 'multi-colour'."
+      }
+    ],
+    "grammar_patterns": [
+      "multicoloured + noun"
+    ]
+  },
+  {
+    "word": "rainbow",
+    "phonetic": "/ˈreɪn.boʊ/",
+    "meaning_vi": "cầu vồng",
+    "meaning_en": "an arc of colours in the sky; also used to describe many colours",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The children drew a rainbow.",
+        "vi": "Những đứa trẻ vẽ một cầu vồng."
+      }
+    ],
+    "word_family": [
+      "rainbow (adj)"
+    ],
+    "collocations": [
+      "rainbow colours",
+      "rainbow pattern"
+    ],
+    "synonyms": [
+      "spectrum"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "The children drew a rainbow colour.",
+        "correct": "The children drew a rainbow.",
+        "explain_vi": "'Rainbow' tự nó đã là danh từ, kh��ng cần 'colour'."
+      }
+    ],
+    "grammar_patterns": [
+      "a rainbow"
+    ]
+  },
+  {
+    "word": "matching",
+    "phonetic": "/ˈmætʃ.ɪŋ/",
+    "meaning_vi": "phù hợp, đồng bộ",
+    "meaning_en": "having the same colour or design as something else",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "She wore a matching hat and scarf.",
+        "vi": "Cô ấy đội mũ và quàng khăn đồng bộ."
+      }
+    ],
+    "word_family": [
+      "match (v)",
+      "match (n)"
+    ],
+    "collocations": [
+      "matching set",
+      "matching colours",
+      "matching outfit"
+    ],
+    "synonyms": [
+      "coordinating",
+      "complementary"
+    ],
+    "antonyms": [
+      "clashing",
+      "mismatched"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "She wore a hat and scarf match.",
+        "correct": "She wore a matching hat and scarf.",
+        "explain_vi": "Dùng 'matching' (tính từ) thay vì 'match' (động từ)."
+      }
+    ],
+    "grammar_patterns": [
+      "matching + noun"
+    ]
+  },
+  {
+    "word": "clash",
+    "phonetic": "/klæʃ/",
+    "meaning_vi": "xung đột (về màu sắc)",
+    "meaning_en": "to look ugly together; not match",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "These two colours clash.",
+        "vi": "Hai màu này xung đột với nhau."
+      }
+    ],
+    "word_family": [
+      "clash (n)",
+      "clashing (adj)"
+    ],
+    "collocations": [
+      "colours clash",
+      "clash with"
+    ],
+    "synonyms": [
+      "conflict",
+      "mismatch"
+    ],
+    "antonyms": [
+      "match",
+      "harmonize"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "These two colours are clash.",
+        "correct": "These two colours clash.",
+        "explain_vi": "'Clash' là động từ, không dùng 'are'."
+      }
+    ],
+    "grammar_patterns": [
+      "colours + clash"
+    ]
+  },
+  {
+    "word": "complement",
+    "phonetic": "/ˈkɒm.plɪ.ment/",
+    "meaning_vi": "bổ trợ, tôn nhau",
+    "meaning_en": "to combine well with something to make it more attractive",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "The blue curtains complement the yellow walls.",
+        "vi": "Rèm xanh tôn lên bức tường vàng."
+      }
+    ],
+    "word_family": [
+      "complementary (adj)",
+      "complement (n)"
+    ],
+    "collocations": [
+      "complement each other",
+      "complement colours"
+    ],
+    "synonyms": [
+      "enhance",
+      "harmonize"
+    ],
+    "antonyms": [
+      "clash"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "The blue curtains compliment the yellow walls.",
+        "correct": "The blue curtains complement the yellow walls.",
+        "explain_vi": "'Complement' (bổ trợ) khác 'compliment' (khen ngợi)."
+      }
+    ],
+    "grammar_patterns": [
+      "noun + complement + noun"
+    ]
+  },
+  {
+    "word": "vibrant",
+    "phonetic": "/ˈvaɪ.brənt/",
+    "meaning_vi": "sống động, rực rỡ",
+    "meaning_en": "full of energy and bright colour",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The market is full of vibrant colours.",
+        "vi": "Chợ đầy màu sắc rực rỡ."
+      }
+    ],
+    "word_family": [
+      "vibrancy (n)",
+      "vibrantly (adv)"
+    ],
+    "collocations": [
+      "vibrant colour",
+      "vibrant city",
+      "vibrant atmosphere"
+    ],
+    "synonyms": [
+      "vivid",
+      "bright",
+      "lively"
+    ],
+    "antonyms": [
+      "dull",
+      "muted"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "The market is full of vibrant colour.",
+        "correct": "The market is full of vibrant colours.",
+        "explain_vi": "Dùng số nhiều 'colours' khi nói nhiều màu."
+      }
+    ],
+    "grammar_patterns": [
+      "vibrant + noun"
+    ]
+  },
+  {
+    "word": "muted",
+    "phonetic": "/ˈmjuː.tɪd/",
+    "meaning_vi": "nhẹ, dịu (màu sắc)",
+    "meaning_en": "not bright; soft and subtle in colour",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "She prefers muted colours like beige and grey.",
+        "vi": "Cô ấy thích những màu dịu như be và xám."
+      }
+    ],
+    "word_family": [
+      "mute (v)",
+      "mutedly (adv)"
+    ],
+    "collocations": [
+      "muted colour",
+      "muted tone",
+      "muted palette"
+    ],
+    "synonyms": [
+      "subdued",
+      "soft",
+      "pale"
+    ],
+    "antonyms": [
+      "bright",
+      "vibrant"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "She prefers mute colours.",
+        "correct": "She prefers muted colours.",
+        "explain_vi": "Dùng 'muted' (tính từ) thay vì 'mute' (động từ)."
+      }
+    ],
+    "grammar_patterns": [
+      "muted + noun"
+    ]
+  },
+  {
+    "word": "beige",
+    "phonetic": "/beɪʒ/",
+    "meaning_vi": "màu be",
+    "meaning_en": "a pale brownish-grey colour",
+    "pos": "noun/adj",
+    "examples": [
+      {
+        "en": "She painted the walls beige.",
+        "vi": "Cô ấy sơn tường màu be."
+      }
+    ],
+    "word_family": [
+      "beige (adj)"
+    ],
+    "collocations": [
+      "beige walls",
+      "beige carpet",
+      "beige clothing"
+    ],
+    "synonyms": [
+      "cream",
+      "tan"
+    ],
+    "antonyms": [
+      "bright",
+      "vivid"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "màu beige",
+        "correct": "màu be",
+        "explain_vi": "Trong tiếng Việt, 'be' là từ mượn, không thêm 'ige'"
+      }
+    ],
+    "grammar_patterns": [
+      "be + beige",
+      "a beige + noun"
+    ]
+  },
+  {
+    "word": "ivory",
+    "phonetic": "/ˈaɪ.vər.i/",
+    "meaning_vi": "màu ngà",
+    "meaning_en": "a creamy white colour",
+    "pos": "noun/adj",
+    "examples": [
+      {
+        "en": "She wore an ivory dress.",
+        "vi": "Cô ấy mặc một chiếc váy màu ngà."
+      }
+    ],
+    "word_family": [
+      "ivory (adj)"
+    ],
+    "collocations": [
+      "ivory white",
+      "ivory silk",
+      "ivory wedding dress"
+    ],
+    "synonyms": [
+      "cream",
+      "off-white"
+    ],
+    "antonyms": [
+      "pure white",
+      "bright white"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "màu ngà voi",
+        "correct": "màu ngà",
+        "explain_vi": "'Ngà' đã bao hàm nghĩa 'ngà voi', không cần thêm 'voi'"
+      }
+    ],
+    "grammar_patterns": [
+      "be + ivory",
+      "ivory + noun"
+    ]
+  },
+  {
+    "word": "lime",
+    "phonetic": "/laɪm/",
+    "meaning_vi": "màu xanh chanh",
+    "meaning_en": "a bright greenish-yellow colour",
+    "pos": "noun/adj",
+    "examples": [
+      {
+        "en": "The walls are painted lime green.",
+        "vi": "Các bức tường được sơn màu xanh chanh."
+      }
+    ],
+    "word_family": [
+      "lime (n)"
+    ],
+    "collocations": [
+      "lime green",
+      "lime colour",
+      "lime shirt"
+    ],
+    "synonyms": [
+      "chartreuse",
+      "yellow-green"
+    ],
+    "antonyms": [
+      "dark green",
+      "forest green"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "màu chanh",
+        "correct": "màu xanh chanh",
+        "explain_vi": "Cần phân biệt với 'chanh' (lemon) là màu vàng"
+      }
+    ],
+    "grammar_patterns": [
+      "lime + colour",
+      "lime green + noun"
+    ]
+  },
+  {
+    "word": "teal",
+    "phonetic": "/tiːl/",
+    "meaning_vi": "màu xanh mòng két",
+    "meaning_en": "a dark greenish-blue colour",
+    "pos": "noun/adj",
+    "examples": [
+      {
+        "en": "She chose a teal dress for the party.",
+        "vi": "Cô ấy chọn một chiếc váy màu xanh mòng két cho bữa tiệc."
+      }
+    ],
+    "word_family": [
+      "teal (adj)"
+    ],
+    "collocations": [
+      "teal blue",
+      "teal colour",
+      "teal fabric"
+    ],
+    "synonyms": [
+      "turquoise",
+      "cyan"
+    ],
+    "antonyms": [
+      "orange",
+      "coral"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "màu xanh teal",
+        "correct": "màu xanh mòng két",
+        "explain_vi": "Dùng từ Việt thay vì giữ nguyên tiếng Anh"
+      }
+    ],
+    "grammar_patterns": [
+      "be + teal",
+      "teal + noun"
+    ]
+  },
+  {
+    "word": "coral",
+    "phonetic": "/ˈkɔːr.əl/",
+    "meaning_vi": "màu san hô",
+    "meaning_en": "a pinkish-orange colour",
+    "pos": "noun/adj",
+    "examples": [
+      {
+        "en": "The sunset was a beautiful coral colour.",
+        "vi": "Hoàng hôn có màu san hô đẹp."
+      }
+    ],
+    "word_family": [
+      "coral (adj)"
+    ],
+    "collocations": [
+      "coral pink",
+      "coral reef",
+      "coral lipstick"
+    ],
+    "synonyms": [
+      "salmon",
+      "peach"
+    ],
+    "antonyms": [
+      "blue",
+      "teal"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "màu coral",
+        "correct": "màu san hô",
+        "explain_vi": "Dùng từ Việt thay vì tiếng Anh"
+      }
+    ],
+    "grammar_patterns": [
+      "be + coral",
+      "coral + noun"
+    ]
+  },
+  {
+    "word": "maroon",
+    "phonetic": "/məˈruːn/",
+    "meaning_vi": "màu hạt dẻ",
+    "meaning_en": "a dark brownish-red colour",
+    "pos": "noun/adj",
+    "examples": [
+      {
+        "en": "He wore a maroon sweater.",
+        "vi": "Anh ấy mặc một chiếc áo len màu hạt dẻ."
+      }
+    ],
+    "word_family": [
+      "maroon (adj)"
+    ],
+    "collocations": [
+      "maroon colour",
+      "maroon shirt",
+      "maroon car"
+    ],
+    "synonyms": [
+      "burgundy",
+      "chestnut"
+    ],
+    "antonyms": [
+      "light blue",
+      "sky blue"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "màu maroon",
+        "correct": "màu hạt dẻ",
+        "explain_vi": "Dùng từ Việt thay vì tiếng Anh"
+      }
+    ],
+    "grammar_patterns": [
+      "be + maroon",
+      "maroon + noun"
+    ]
+  },
+  {
+    "word": "navy",
+    "phonetic": "/ˈneɪ.vi/",
+    "meaning_vi": "màu xanh nước biển đậm",
+    "meaning_en": "a dark blue colour",
+    "pos": "noun/adj",
+    "examples": [
+      {
+        "en": "He prefers navy suits.",
+        "vi": "Anh ấy thích những bộ vest màu xanh nước biển đậm."
+      }
+    ],
+    "word_family": [
+      "navy (adj)"
+    ],
+    "collocations": [
+      "navy blue",
+      "navy uniform",
+      "navy jacket"
+    ],
+    "synonyms": [
+      "dark blue",
+      "midnight blue"
+    ],
+    "antonyms": [
+      "light blue",
+      "sky blue"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "màu navy",
+        "correct": "màu xanh nước biển đậm",
+        "explain_vi": "Dùng từ Việt thay vì tiếng Anh"
+      }
+    ],
+    "grammar_patterns": [
+      "be + navy",
+      "navy + noun"
+    ]
+  },
+  {
+    "word": "olive",
+    "phonetic": "/ˈɒl.ɪv/",
+    "meaning_vi": "màu ô liu",
+    "meaning_en": "a yellowish-green colour",
+    "pos": "noun/adj",
+    "examples": [
+      {
+        "en": "She painted the kitchen olive green.",
+        "vi": "Cô ấy sơn bếp màu xanh ô liu."
+      }
+    ],
+    "word_family": [
+      "olive (adj)"
+    ],
+    "collocations": [
+      "olive green",
+      "olive colour",
+      "olive skin"
+    ],
+    "synonyms": [
+      "khaki",
+      "moss green"
+    ],
+    "antonyms": [
+      "pink",
+      "magenta"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "màu olive",
+        "correct": "màu ô liu",
+        "explain_vi": "Dùng từ Việt thay vì tiếng Anh"
+      }
+    ],
+    "grammar_patterns": [
+      "olive + noun",
+      "be + olive"
+    ]
+  },
+  {
+    "word": "turquoise",
+    "phonetic": "/ˈtɜːr.kwɔɪz/",
+    "meaning_vi": "màu xanh ngọc",
+    "meaning_en": "a greenish-blue colour",
+    "pos": "noun/adj",
+    "examples": [
+      {
+        "en": "The sea was a brilliant turquoise.",
+        "vi": "Biển có màu xanh ngọc rực rỡ."
+      }
+    ],
+    "word_family": [
+      "turquoise (adj)"
+    ],
+    "collocations": [
+      "turquoise blue",
+      "turquoise jewellery",
+      "turquoise water"
+    ],
+    "synonyms": [
+      "cyan",
+      "teal"
+    ],
+    "antonyms": [
+      "orange",
+      "coral"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "màu turquoise",
+        "correct": "màu xanh ngọc",
+        "explain_vi": "Dùng từ Việt thay vì tiếng Anh"
+      }
+    ],
+    "grammar_patterns": [
+      "be + turquoise",
+      "turquoise + noun"
+    ]
+  },
+  {
+    "word": "burgundy",
+    "phonetic": "/ˈbɜːr.ɡən.di/",
+    "meaning_vi": "màu đỏ rượu vang",
+    "meaning_en": "a dark red colour",
+    "pos": "noun/adj",
+    "examples": [
+      {
+        "en": "She wore a burgundy scarf.",
+        "vi": "Cô ấy đeo một chiếc khăn màu đỏ rượu vang."
+      }
+    ],
+    "word_family": [
+      "burgundy (adj)"
+    ],
+    "collocations": [
+      "burgundy wine",
+      "burgundy colour",
+      "burgundy dress"
+    ],
+    "synonyms": [
+      "maroon",
+      "wine"
+    ],
+    "antonyms": [
+      "pink",
+      "light red"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "màu burgundy",
+        "correct": "màu đỏ rượu vang",
+        "explain_vi": "Dùng từ Việt thay vì tiếng Anh"
+      }
+    ],
+    "grammar_patterns": [
+      "be + burgundy",
+      "burgundy + noun"
+    ]
+  },
+  {
+    "word": "gold",
+    "phonetic": "/ɡoʊld/",
+    "meaning_vi": "màu vàng kim",
+    "meaning_en": "a yellow colour like gold",
+    "pos": "noun/adj",
+    "examples": [
+      {
+        "en": "The ring is gold.",
+        "vi": "Chiếc nhẫn màu vàng kim."
+      }
+    ],
+    "word_family": [
+      "golden (adj)"
+    ],
+    "collocations": [
+      "gold colour",
+      "gold jewellery",
+      "gold medal"
+    ],
+    "synonyms": [
+      "golden",
+      "yellow"
+    ],
+    "antonyms": [
+      "silver",
+      "gray"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "màu gold",
+        "correct": "màu vàng kim",
+        "explain_vi": "Dùng từ Việt thay vì tiếng Anh"
+      }
+    ],
+    "grammar_patterns": [
+      "be + gold",
+      "gold + noun"
+    ]
+  },
+  {
+    "word": "silver",
+    "phonetic": "/ˈsɪl.vər/",
+    "meaning_vi": "màu bạc",
+    "meaning_en": "a shiny gray colour",
+    "pos": "noun/adj",
+    "examples": [
+      {
+        "en": "She drove a silver car.",
+        "vi": "Cô ấy lái một chiếc xe màu bạc."
+      }
+    ],
+    "word_family": [
+      "silvery (adj)"
+    ],
+    "collocations": [
+      "silver colour",
+      "silver hair",
+      "silver lining"
+    ],
+    "synonyms": [
+      "gray",
+      "metallic"
+    ],
+    "antonyms": [
+      "gold",
+      "bronze"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "màu silver",
+        "correct": "màu bạc",
+        "explain_vi": "Dùng từ Việt thay vì tiếng Anh"
+      }
+    ],
+    "grammar_patterns": [
+      "be + silver",
+      "silver + noun"
+    ]
+  },
+  {
+    "word": "bronze",
+    "phonetic": "/brɑːnz/",
+    "meaning_vi": "màu đồng",
+    "meaning_en": "a brownish-red colour",
+    "pos": "noun/adj",
+    "examples": [
+      {
+        "en": "He has a bronze tan.",
+        "vi": "Anh ấy có làn da rám nắng màu đồng."
+      }
+    ],
+    "word_family": [
+      "bronze (adj)"
+    ],
+    "collocations": [
+      "bronze colour",
+      "bronze medal",
+      "bronze statue"
+    ],
+    "synonyms": [
+      "copper",
+      "brown"
+    ],
+    "antonyms": [
+      "silver",
+      "gold"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "màu bronze",
+        "correct": "màu đồng",
+        "explain_vi": "Dùng từ Việt thay vì tiếng Anh"
+      }
+    ],
+    "grammar_patterns": [
+      "be + bronze",
+      "bronze + noun"
+    ]
+  },
+  {
+    "word": "copper",
+    "phonetic": "/ˈkɒp.ər/",
+    "meaning_vi": "màu đỏ đồng",
+    "meaning_en": "a reddish-brown colour",
+    "pos": "noun/adj",
+    "examples": [
+      {
+        "en": "The leaves turned copper in autumn.",
+        "vi": "Lá chuyển sang màu đỏ đồng vào mùa thu."
+      }
+    ],
+    "word_family": [
+      "copper (adj)"
+    ],
+    "collocations": [
+      "copper colour",
+      "copper hair",
+      "copper wire"
+    ],
+    "synonyms": [
+      "bronze",
+      "auburn"
+    ],
+    "antonyms": [
+      "silver",
+      "gray"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "màu copper",
+        "correct": "màu đỏ đồng",
+        "explain_vi": "Dùng từ Việt thay vì tiếng Anh"
+      }
+    ],
+    "grammar_patterns": [
+      "be + copper",
+      "copper + noun"
+    ]
+  },
+  {
+    "word": "crimson",
+    "phonetic": "/ˈkrɪm.zən/",
+    "meaning_vi": "màu đỏ thẫm",
+    "meaning_en": "a deep red colour",
+    "pos": "noun/adj",
+    "examples": [
+      {
+        "en": "She wore a crimson dress.",
+        "vi": "Cô ấy mặc một chiếc váy màu đỏ thẫm."
+      }
+    ],
+    "word_family": [
+      "crimson (adj)"
+    ],
+    "collocations": [
+      "crimson red",
+      "crimson colour",
+      "crimson sky"
+    ],
+    "synonyms": [
+      "scarlet",
+      "dark red"
+    ],
+    "antonyms": [
+      "pink",
+      "light red"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "màu crimson",
+        "correct": "màu đỏ thẫm",
+        "explain_vi": "Dùng từ Việt thay vì tiếng Anh"
+      }
+    ],
+    "grammar_patterns": [
+      "be + crimson",
+      "crimson + noun"
+    ]
+  },
+  {
+    "word": "scarlet",
+    "phonetic": "/ˈskɑːr.lət/",
+    "meaning_vi": "màu đỏ tươi",
+    "meaning_en": "a bright red colour",
+    "pos": "noun/adj",
+    "examples": [
+      {
+        "en": "The cardinal is a scarlet bird.",
+        "vi": "Chim hồng y là loài chim màu đỏ tươi."
+      }
+    ],
+    "word_family": [
+      "scarlet (adj)"
+    ],
+    "collocations": [
+      "scarlet red",
+      "scarlet colour",
+      "scarlet letter"
+    ],
+    "synonyms": [
+      "bright red",
+      "crimson"
+    ],
+    "antonyms": [
+      "dark red",
+      "burgundy"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "màu scarlet",
+        "correct": "màu đỏ tươi",
+        "explain_vi": "Dùng từ Việt thay vì tiếng Anh"
+      }
+    ],
+    "grammar_patterns": [
+      "be + scarlet",
+      "scarlet + noun"
+    ]
+  },
+  {
+    "word": "magenta",
+    "phonetic": "/məˈdʒen.tə/",
+    "meaning_vi": "màu đỏ tía",
+    "meaning_en": "a purplish-red colour",
+    "pos": "noun/adj",
+    "examples": [
+      {
+        "en": "The flowers are magenta.",
+        "vi": "Những bông hoa màu đỏ tía."
+      }
+    ],
+    "word_family": [
+      "magenta (adj)"
+    ],
+    "collocations": [
+      "magenta colour",
+      "magenta ink",
+      "magenta dress"
+    ],
+    "synonyms": [
+      "fuchsia",
+      "purple-red"
+    ],
+    "antonyms": [
+      "green",
+      "lime"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "màu magenta",
+        "correct": "màu đỏ tía",
+        "explain_vi": "Dùng từ Việt thay vì tiếng Anh"
+      }
+    ],
+    "grammar_patterns": [
+      "be + magenta",
+      "magenta + noun"
+    ]
+  },
+  {
+    "word": "fuchsia",
+    "phonetic": "/ˈfjuː.ʃə/",
+    "meaning_vi": "màu hồng đậm",
+    "meaning_en": "a bright pinkish-purple colour",
+    "pos": "noun/adj",
+    "examples": [
+      {
+        "en": "She loves fuchsia lipstick.",
+        "vi": "Cô ấy thích son môi màu hồng đậm."
+      }
+    ],
+    "word_family": [
+      "fuchsia (adj)"
+    ],
+    "collocations": [
+      "fuchsia colour",
+      "fuchsia pink",
+      "fuchsia flowers"
+    ],
+    "synonyms": [
+      "magenta",
+      "hot pink"
+    ],
+    "antonyms": [
+      "pale pink",
+      "light pink"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "màu fuchsia",
+        "correct": "màu hồng đậm",
+        "explain_vi": "Dùng từ Việt thay vì tiếng Anh"
+      }
+    ],
+    "grammar_patterns": [
+      "be + fuchsia",
+      "fuchsia + noun"
+    ]
+  },
+  {
+    "word": "indigo",
+    "phonetic": "/ˈɪn.dɪ.ɡoʊ/",
+    "meaning_vi": "màu chàm",
+    "meaning_en": "a deep purplish-blue colour",
+    "pos": "noun/adj",
+    "examples": [
+      {
+        "en": "Indigo is between blue and violet.",
+        "vi": "Màu chàm nằm giữa xanh lam và tím."
+      }
+    ],
+    "word_family": [
+      "indigo (adj)"
+    ],
+    "collocations": [
+      "indigo colour",
+      "indigo blue",
+      "indigo dye"
+    ],
+    "synonyms": [
+      "violet",
+      "deep blue"
+    ],
+    "antonyms": [
+      "orange",
+      "yellow"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "màu indigo",
+        "correct": "màu chàm",
+        "explain_vi": "Dùng từ Việt thay vì tiếng Anh"
+      }
+    ],
+    "grammar_patterns": [
+      "be + indigo",
+      "indigo + noun"
+    ]
+  },
+  {
+    "word": "violet",
+    "phonetic": "/ˈvaɪ.ə.lət/",
+    "meaning_vi": "màu tím hoa cà",
+    "meaning_en": "a bluish-purple colour",
+    "pos": "noun/adj",
+    "examples": [
+      {
+        "en": "She picked violet flowers.",
+        "vi": "Cô ấy hái những bông hoa màu tím hoa cà."
+      }
+    ],
+    "word_family": [
+      "violet (adj)"
+    ],
+    "collocations": [
+      "violet colour",
+      "violet eyes",
+      "violet dress"
+    ],
+    "synonyms": [
+      "purple",
+      "lavender"
+    ],
+    "antonyms": [
+      "yellow",
+      "lime"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "màu violet",
+        "correct": "màu tím hoa cà",
+        "explain_vi": "Dùng từ Việt thay vì tiếng Anh"
+      }
+    ],
+    "grammar_patterns": [
+      "be + violet",
+      "violet + noun"
+    ]
+  },
+  {
+    "word": "amber",
+    "phonetic": "/ˈæm.bər/",
+    "meaning_vi": "màu hổ phách",
+    "meaning_en": "a yellowish-orange colour",
+    "pos": "noun, adjective",
+    "examples": [
+      {
+        "en": "The traffic light turned amber.",
+        "vi": "Đèn giao thông chuyển sang màu hổ phách."
+      },
+      {
+        "en": "She wore an amber necklace.",
+        "vi": "Cô ấy đeo một chiếc vòng cổ màu hổ phách."
+      }
+    ],
+    "word_family": [
+      "amber (adj)"
+    ],
+    "collocations": [
+      "amber light",
+      "amber colour",
+      "amber eyes"
+    ],
+    "synonyms": [
+      "yellowish-orange",
+      "golden"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I saw an amber color light.",
+        "correct": "I saw an amber light.",
+        "explain_vi": "Không cần 'color' vì 'amber' đã là tính từ chỉ màu."
+      }
+    ],
+    "grammar_patterns": [
+      "amber + noun",
+      "be + amber"
+    ]
+  },
+  {
+    "word": "charcoal",
+    "phonetic": "/ˈtʃɑːr.koʊl/",
+    "meaning_vi": "màu than, xám đen",
+    "meaning_en": "a dark grey colour",
+    "pos": "noun, adjective",
+    "examples": [
+      {
+        "en": "He wore a charcoal suit.",
+        "vi": "Anh ấy mặc một bộ vest màu than."
+      },
+      {
+        "en": "The sky was charcoal grey.",
+        "vi": "Bầu trời có màu xám đen."
+      }
+    ],
+    "word_family": [
+      "charcoal (n)"
+    ],
+    "collocations": [
+      "charcoal grey",
+      "charcoal drawing",
+      "charcoal colour"
+    ],
+    "synonyms": [
+      "dark grey",
+      "slate"
+    ],
+    "antonyms": [
+      "white"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "That is a charcoal color shirt.",
+        "correct": "That is a charcoal shirt.",
+        "explain_vi": "'Charcoal' đã là màu, không cần 'color'."
+      }
+    ],
+    "grammar_patterns": [
+      "charcoal + noun",
+      "be + charcoal"
+    ]
+  },
+  {
+    "word": "lilac",
+    "phonetic": "/ˈlaɪ.lək/",
+    "meaning_vi": "màu hoa cà, màu oải hương nhạt",
+    "meaning_en": "a pale purple colour",
+    "pos": "noun, adjective",
+    "examples": [
+      {
+        "en": "She painted her room lilac.",
+        "vi": "Cô ấy sơn phòng mình màu hoa cà."
+      },
+      {
+        "en": "Lilac flowers smell wonderful.",
+        "vi": "Hoa tử đinh hương có mùi thơm tuyệt vời."
+      }
+    ],
+    "word_family": [
+      "lilac (n)"
+    ],
+    "collocations": [
+      "lilac colour",
+      "lilac dress",
+      "lilac bush"
+    ],
+    "synonyms": [
+      "pale purple",
+      "lavender"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I like lilac color.",
+        "correct": "I like lilac.",
+        "explain_vi": "Không cần 'color' vì 'lilac' đã là màu."
+      }
+    ],
+    "grammar_patterns": [
+      "lilac + noun",
+      "be + lilac"
+    ]
+  },
+  {
+    "word": "mustard",
+    "phonetic": "/ˈmʌs.tərd/",
+    "meaning_vi": "màu mù tạt, vàng nâu",
+    "meaning_en": "a brownish-yellow colour",
+    "pos": "noun, adjective",
+    "examples": [
+      {
+        "en": "She bought a mustard sweater.",
+        "vi": "Cô ấy mua một chiếc áo len màu mù tạt."
+      },
+      {
+        "en": "Mustard is a popular colour in autumn.",
+        "vi": "Màu mù tạt là màu phổ biến vào mùa thu."
+      }
+    ],
+    "word_family": [
+      "mustard (n)"
+    ],
+    "collocations": [
+      "mustard yellow",
+      "mustard colour",
+      "mustard seed"
+    ],
+    "synonyms": [
+      "yellow-brown",
+      "ochre"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I don't like mustard color.",
+        "correct": "I don't like mustard.",
+        "explain_vi": "Không cần 'color' vì 'mustard' đã là màu."
+      }
+    ],
+    "grammar_patterns": [
+      "mustard + noun",
+      "be + mustard"
+    ]
+  },
+  {
+    "word": "peach",
+    "phonetic": "/piːtʃ/",
+    "meaning_vi": "màu đào, hồng cam",
+    "meaning_en": "a soft pinkish-orange colour",
+    "pos": "noun, adjective",
+    "examples": [
+      {
+        "en": "The walls are painted peach.",
+        "vi": "Các bức tường được sơn màu đào."
+      },
+      {
+        "en": "She wore a peach blouse.",
+        "vi": "Cô ấy mặc một chiếc áo cánh màu đào."
+      }
+    ],
+    "word_family": [
+      "peach (n)"
+    ],
+    "collocations": [
+      "peach colour",
+      "peach skin",
+      "peach blossom"
+    ],
+    "synonyms": [
+      "salmon",
+      "coral"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I like peach color.",
+        "correct": "I like peach.",
+        "explain_vi": "Không cần 'color'."
+      }
+    ],
+    "grammar_patterns": [
+      "peach + noun",
+      "be + peach"
+    ]
+  },
+  {
+    "word": "khaki",
+    "phonetic": "/ˈkæk.i/",
+    "meaning_vi": "màu kaki, xanh rêu",
+    "meaning_en": "a light brownish-green colour, often used in military uniforms",
+    "pos": "noun, adjective",
+    "examples": [
+      {
+        "en": "He wore khaki trousers.",
+        "vi": "Anh ấy mặc quần kaki."
+      },
+      {
+        "en": "The soldiers were in khaki.",
+        "vi": "Những người lính mặc quân phục màu kaki."
+      }
+    ],
+    "word_family": [
+      "khaki (n)"
+    ],
+    "collocations": [
+      "khaki pants",
+      "khaki colour",
+      "khaki uniform"
+    ],
+    "synonyms": [
+      "olive drab",
+      "tan"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I bought a khaki color shirt.",
+        "correct": "I bought a khaki shirt.",
+        "explain_vi": "Không cần 'color'."
+      }
+    ],
+    "grammar_patterns": [
+      "khaki + noun",
+      "be + khaki"
+    ]
+  },
+  {
+    "word": "chocolate",
+    "phonetic": "/ˈtʃɒk.lət/",
+    "meaning_vi": "màu nâu sô-cô-la",
+    "meaning_en": "a dark brown colour",
+    "pos": "noun, adjective",
+    "examples": [
+      {
+        "en": "She has chocolate eyes.",
+        "vi": "Cô ấy có đôi mắt màu nâu sô-cô-la."
+      },
+      {
+        "en": "The cake was chocolate brown.",
+        "vi": "Chiếc bánh có màu nâu sô-cô-la."
+      }
+    ],
+    "word_family": [
+      "chocolate (n)"
+    ],
+    "collocations": [
+      "chocolate brown",
+      "chocolate colour",
+      "chocolate cake"
+    ],
+    "synonyms": [
+      "brown",
+      "coffee"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I want a chocolate color dress.",
+        "correct": "I want a chocolate dress.",
+        "explain_vi": "Không cần 'color'."
+      }
+    ],
+    "grammar_patterns": [
+      "chocolate + noun",
+      "be + chocolate"
+    ]
+  },
+  {
+    "word": "cream",
+    "phonetic": "/kriːm/",
+    "meaning_vi": "màu kem",
+    "meaning_en": "a pale yellowish-white colour",
+    "pos": "noun, adjective",
+    "examples": [
+      {
+        "en": "She wore a cream dress.",
+        "vi": "Cô ấy mặc một chiếc váy màu kem."
+      },
+      {
+        "en": "The walls are cream coloured.",
+        "vi": "Các bức tường có màu kem."
+      }
+    ],
+    "word_family": [
+      "cream (n)"
+    ],
+    "collocations": [
+      "cream colour",
+      "cream white",
+      "cream shirt"
+    ],
+    "synonyms": [
+      "off-white",
+      "ivory"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I like cream color.",
+        "correct": "I like cream.",
+        "explain_vi": "Không cần 'color'."
+      }
+    ],
+    "grammar_patterns": [
+      "cream + noun",
+      "be + cream"
+    ]
+  },
+  {
+    "word": "mint",
+    "phonetic": "/mɪnt/",
+    "meaning_vi": "màu bạc hà",
+    "meaning_en": "a pale green colour",
+    "pos": "noun, adjective",
+    "examples": [
+      {
+        "en": "She painted her nails mint green.",
+        "vi": "Cô ấy sơn móng tay màu xanh bạc hà."
+      },
+      {
+        "en": "Mint is a refreshing colour.",
+        "vi": "Màu bạc hà là một màu sắc tươi mát."
+      }
+    ],
+    "word_family": [
+      "mint (n)"
+    ],
+    "collocations": [
+      "mint green",
+      "mint colour",
+      "mint tea"
+    ],
+    "synonyms": [
+      "pale green",
+      "seafoam"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I like mint color.",
+        "correct": "I like mint.",
+        "explain_vi": "Không cần 'color'."
+      }
+    ],
+    "grammar_patterns": [
+      "mint + noun",
+      "be + mint"
+    ]
+  },
+  {
+    "word": "burgundy",
+    "phonetic": "/ˈbɜːr.ɡən.di/",
+    "meaning_vi": "màu đỏ rượu vang",
+    "meaning_en": "a dark red colour",
+    "pos": "noun, adjective",
+    "examples": [
+      {
+        "en": "She wore a burgundy lipstick.",
+        "vi": "Cô ấy thoa son màu đỏ rượu vang."
+      },
+      {
+        "en": "The car is burgundy.",
+        "vi": "Chiếc xe có màu đỏ rượu vang."
+      }
+    ],
+    "word_family": [
+      "burgundy (n)"
+    ],
+    "collocations": [
+      "burgundy colour",
+      "burgundy dress",
+      "burgundy wine"
+    ],
+    "synonyms": [
+      "maroon",
+      "wine"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I like burgundy color.",
+        "correct": "I like burgundy.",
+        "explain_vi": "Không cần 'color'."
+      }
+    ],
+    "grammar_patterns": [
+      "burgundy + noun",
+      "be + burgundy"
+    ]
+  },
+  {
+    "word": "blob",
+    "phonetic": "/blɒb/",
+    "meaning_vi": "giọt, chấm tròn không đều",
+    "meaning_en": "an irregularly shaped round mass",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "There was a blob of paint on the floor.",
+        "vi": "Có một vệt sơn trên sàn nhà."
+      },
+      {
+        "en": "He drew a blob on the paper.",
+        "vi": "Anh ấy vẽ một chấm tròn trên giấy."
+      }
+    ],
+    "word_family": [
+      "blobby (adj)"
+    ],
+    "collocations": [
+      "blob of paint",
+      "blob of ink",
+      "blob shape"
+    ],
+    "synonyms": [
+      "drop",
+      "spot",
+      "splotch"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I see a blob color.",
+        "correct": "I see a blob of color.",
+        "explain_vi": "Cần dùng 'of' khi nói về một chấm màu."
+      }
+    ],
+    "grammar_patterns": [
+      "blob of + noun",
+      "a blob"
+    ]
+  },
+  {
+    "word": "cone",
+    "phonetic": "/koʊn/",
+    "meaning_vi": "hình nón",
+    "meaning_en": "a solid or hollow object with a round base and pointed top",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The party hat is a cone shape.",
+        "vi": "Mũ dự tiệc có hình nón."
+      },
+      {
+        "en": "We ate ice cream in a cone.",
+        "vi": "Chúng tôi ăn kem trong ốc quế."
+      }
+    ],
+    "word_family": [
+      "conical (adj)"
+    ],
+    "collocations": [
+      "cone shape",
+      "traffic cone",
+      "ice cream cone"
+    ],
+    "synonyms": [
+      "pyramid",
+      "taper"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "The shape is cone.",
+        "correct": "The shape is a cone.",
+        "explain_vi": "Cần mạo từ 'a' trước 'cone'."
+      }
+    ],
+    "grammar_patterns": [
+      "a cone",
+      "cone + noun",
+      "in the shape of a cone"
+    ]
+  },
+  {
+    "word": "cube",
+    "phonetic": "/kjuːb/",
+    "meaning_vi": "hình lập phương",
+    "meaning_en": "a solid object with six equal square sides",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "A dice is a cube.",
+        "vi": "Con xúc xắc là hình lập phương."
+      },
+      {
+        "en": "He cut the cheese into cubes.",
+        "vi": "Anh ấy cắt phô mai thành hình khối."
+      }
+    ],
+    "word_family": [
+      "cubic (adj)",
+      "cubical (adj)"
+    ],
+    "collocations": [
+      "cube shape",
+      "sugar cube",
+      "cube of butter"
+    ],
+    "synonyms": [
+      "block",
+      "square"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "The box is cube.",
+        "correct": "The box is a cube.",
+        "explain_vi": "Cần mạo từ 'a'."
+      }
+    ],
+    "grammar_patterns": [
+      "a cube",
+      "cube + noun",
+      "in the shape of a cube"
+    ]
+  },
+  {
+    "word": "cylinder",
+    "phonetic": "/ˈsɪl.ɪn.dər/",
+    "meaning_vi": "hình trụ",
+    "meaning_en": "a solid object with two parallel circular ends and straight sides",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "A can of soda is a cylinder.",
+        "vi": "Một lon nước ngọt có hình trụ."
+      },
+      {
+        "en": "The pillar is a cylinder.",
+        "vi": "Cây cột có hình trụ."
+      }
+    ],
+    "word_family": [
+      "cylindrical (adj)"
+    ],
+    "collocations": [
+      "cylinder shape",
+      "gas cylinder",
+      "cylinder of metal"
+    ],
+    "synonyms": [
+      "tube",
+      "pipe"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "The glass is cylinder.",
+        "correct": "The glass is a cylinder.",
+        "explain_vi": "Cần mạo từ 'a'."
+      }
+    ],
+    "grammar_patterns": [
+      "a cylinder",
+      "cylinder + noun",
+      "in the shape of a cylinder"
+    ]
+  },
+  {
+    "word": "sphere",
+    "phonetic": "/sfɪər/",
+    "meaning_vi": "hình cầu",
+    "meaning_en": "a round solid object like a ball",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The Earth is a sphere.",
+        "vi": "Trái Đất là một hình cầu."
+      },
+      {
+        "en": "He drew a sphere on the board.",
+        "vi": "Anh ấy vẽ một hình cầu trên bảng."
+      }
+    ],
+    "word_family": [
+      "spherical (adj)"
+    ],
+    "collocations": [
+      "sphere shape",
+      "glass sphere",
+      "sphere of influence"
+    ],
+    "synonyms": [
+      "ball",
+      "globe"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "The ball is sphere.",
+        "correct": "The ball is a sphere.",
+        "explain_vi": "Cần mạo từ 'a'."
+      }
+    ],
+    "grammar_patterns": [
+      "a sphere",
+      "sphere + noun",
+      "in the shape of a sphere"
+    ]
+  },
+  {
+    "word": "pyramid",
+    "phonetic": "/ˈpɪr.ə.mɪd/",
+    "meaning_vi": "hình chóp, kim tự tháp",
+    "meaning_en": "a solid object with a square base and triangular sides that meet at a point",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The pyramids of Egypt are famous.",
+        "vi": "Các kim tự tháp Ai Cập rất nổi tiếng."
+      },
+      {
+        "en": "They built a pyramid of stones.",
+        "vi": "Họ xây một hình chóp bằng đá."
+      }
+    ],
+    "word_family": [
+      "pyramidal (adj)"
+    ],
+    "collocations": [
+      "pyramid shape",
+      "pyramid scheme",
+      "pyramid of blocks"
+    ],
+    "synonyms": [
+      "cone",
+      "triangle"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "The shape is pyramid.",
+        "correct": "The shape is a pyramid.",
+        "explain_vi": "Cần mạo từ 'a'."
+      }
+    ],
+    "grammar_patterns": [
+      "a pyramid",
+      "pyramid + noun",
+      "in the shape of a pyramid"
+    ]
+  },
+  {
+    "word": "hexagon",
+    "phonetic": "/ˈhek.sə.ɡɒn/",
+    "meaning_vi": "hình lục giác",
+    "meaning_en": "a flat shape with six straight sides",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "A stop sign is not a hexagon.",
+        "vi": "Biển báo dừng không phải hình lục giác."
+      },
+      {
+        "en": "The tile is a hexagon.",
+        "vi": "Viên gạch có hình lục giác."
+      }
+    ],
+    "word_family": [
+      "hexagonal (adj)"
+    ],
+    "collocations": [
+      "hexagon shape",
+      "hexagon pattern",
+      "regular hexagon"
+    ],
+    "synonyms": [
+      "six-sided figure"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "The shape is hexagon.",
+        "correct": "The shape is a hexagon.",
+        "explain_vi": "Cần mạo từ 'a'."
+      }
+    ],
+    "grammar_patterns": [
+      "a hexagon",
+      "hexagon + noun",
+      "in the shape of a hexagon"
+    ]
+  },
+  {
+    "word": "octagon",
+    "phonetic": "/ˈɒk.tə.ɡɒn/",
+    "meaning_vi": "hình bát giác",
+    "meaning_en": "a flat shape with eight straight sides",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "A stop sign is an octagon.",
+        "vi": "Biển báo dừng có hình bát giác."
+      },
+      {
+        "en": "The table is an octagon.",
+        "vi": "Chiếc bàn có hình bát giác."
+      }
+    ],
+    "word_family": [
+      "octagonal (adj)"
+    ],
+    "collocations": [
+      "octagon shape",
+      "octagon table",
+      "regular octagon"
+    ],
+    "synonyms": [
+      "eight-sided figure"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "The sign is octagon.",
+        "correct": "The sign is an octagon.",
+        "explain_vi": "Cần mạo từ 'an'."
+      }
+    ],
+    "grammar_patterns": [
+      "an octagon",
+      "octagon + noun",
+      "in the shape of an octagon"
+    ]
+  },
+  {
+    "word": "cross",
+    "phonetic": "/krɒs/",
+    "meaning_vi": "hình chữ thập",
+    "meaning_en": "a shape consisting of two lines crossing at right angles",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She wore a gold cross necklace.",
+        "vi": "Cô ấy đeo một chiếc vòng cổ hình chữ thập bằng vàng."
+      },
+      {
+        "en": "Draw a cross on the paper.",
+        "vi": "Vẽ một hình chữ thập trên giấy."
+      }
+    ],
+    "word_family": [
+      "cross (v)",
+      "cross-shaped (adj)"
+    ],
+    "collocations": [
+      "cross shape",
+      "cross sign",
+      "red cross"
+    ],
+    "synonyms": [
+      "X",
+      "plus sign"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "The shape is cross.",
+        "correct": "The shape is a cross.",
+        "explain_vi": "Cần mạo từ 'a'."
+      }
+    ],
+    "grammar_patterns": [
+      "a cross",
+      "cross + noun",
+      "in the shape of a cross"
+    ]
+  },
+  {
+    "word": "crescent",
+    "phonetic": "/ˈkres.ənt/",
+    "meaning_vi": "hình lưỡi liềm",
+    "meaning_en": "a curved shape like a new moon",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The moon is a crescent tonight.",
+        "vi": "Trăng hôm nay hình lưỡi liềm."
+      },
+      {
+        "en": "She ate a crescent roll.",
+        "vi": "Cô ấy ăn một cái bánh sừng bò."
+      }
+    ],
+    "word_family": [
+      "crescent-shaped (adj)"
+    ],
+    "collocations": [
+      "crescent moon",
+      "crescent shape",
+      "crescent roll"
+    ],
+    "synonyms": [
+      "half-moon",
+      "sickle"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "The moon is crescent.",
+        "correct": "The moon is a crescent.",
+        "explain_vi": "Cần mạo từ 'a'."
+      }
+    ],
+    "grammar_patterns": [
+      "a crescent",
+      "crescent + noun",
+      "in the shape of a crescent"
+    ]
+  }
+]

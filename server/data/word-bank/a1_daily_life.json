@@ -1,0 +1,1470 @@
+[
+  {
+    "word": "water",
+    "phonetic": "/ˈwɔː.tər/",
+    "meaning_vi": "nước",
+    "meaning_en": "a clear liquid you drink",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I drink water every day.",
+        "vi": "Tôi uống nước mỗi ngày."
+      }
+    ],
+    "word_family": [
+      "watery (adj)"
+    ],
+    "collocations": [
+      "drink water",
+      "bottle of water",
+      "cold water"
+    ],
+    "synonyms": [
+      "H2O"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I water",
+        "correct": "I drink water",
+        "explain_vi": "Thiếu động từ 'drink'"
+      }
+    ],
+    "grammar_patterns": [
+      "uncountable noun, no article"
+    ]
+  },
+  {
+    "word": "eat",
+    "phonetic": "/iːt/",
+    "meaning_vi": "ăn",
+    "meaning_en": "to put food in your mouth and swallow it",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "I eat rice for lunch.",
+        "vi": "Tôi ăn cơm vào bữa trưa."
+      }
+    ],
+    "word_family": [
+      "eats (v 3rd person)",
+      "eating (v ing)",
+      "ate (past)"
+    ],
+    "collocations": [
+      "eat breakfast",
+      "eat lunch",
+      "eat dinner",
+      "eat out"
+    ],
+    "synonyms": [
+      "have",
+      "consume"
+    ],
+    "antonyms": [
+      "fast"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I eat breakfast at morning",
+        "correct": "I eat breakfast in the morning",
+        "explain_vi": "Dùng 'in the morning' thay vì 'at morning'"
+      }
+    ],
+    "grammar_patterns": [
+      "eat + food"
+    ]
+  },
+  {
+    "word": "drink",
+    "phonetic": "/drɪŋk/",
+    "meaning_vi": "uống",
+    "meaning_en": "to take liquid into your mouth and swallow it",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "I drink coffee in the morning.",
+        "vi": "Tôi uống cà phê vào buổi sáng."
+      }
+    ],
+    "word_family": [
+      "drinks (v 3rd person)",
+      "drinking (v ing)",
+      "drank (past)"
+    ],
+    "collocations": [
+      "drink water",
+      "drink tea",
+      "drink juice"
+    ],
+    "synonyms": [
+      "sip",
+      "gulp"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I drink a water",
+        "correct": "I drink water",
+        "explain_vi": "Water là danh từ không đếm được, không dùng 'a'"
+      }
+    ],
+    "grammar_patterns": [
+      "drink + liquid"
+    ]
+  },
+  {
+    "word": "sleep",
+    "phonetic": "/sliːp/",
+    "meaning_vi": "ngủ",
+    "meaning_en": "to rest with your eyes closed and your mind unconscious",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "I sleep at night.",
+        "vi": "Tôi ngủ vào ban đêm."
+      }
+    ],
+    "word_family": [
+      "sleeps (v 3rd person)",
+      "sleeping (v ing)",
+      "slept (past)"
+    ],
+    "collocations": [
+      "go to sleep",
+      "sleep well",
+      "sleep late"
+    ],
+    "synonyms": [
+      "slumber",
+      "doze"
+    ],
+    "antonyms": [
+      "wake"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I sleep in night",
+        "correct": "I sleep at night",
+        "explain_vi": "Dùng 'at night' thay vì 'in night'"
+      }
+    ],
+    "grammar_patterns": [
+      "sleep + time"
+    ]
+  },
+  {
+    "word": "wake up",
+    "phonetic": "/weɪk ʌp/",
+    "meaning_vi": "thức dậy",
+    "meaning_en": "to stop sleeping",
+    "pos": "phrasal verb",
+    "examples": [
+      {
+        "en": "I wake up at six.",
+        "vi": "Tôi thức dậy lúc 6 giờ."
+      }
+    ],
+    "word_family": [
+      "wakes up (v 3rd person)",
+      "waking up (v ing)",
+      "woke up (past)"
+    ],
+    "collocations": [
+      "wake up early",
+      "wake up late",
+      "wake up to an alarm"
+    ],
+    "synonyms": [
+      "get up",
+      "rise"
+    ],
+    "antonyms": [
+      "fall asleep"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I wake up at morning",
+        "correct": "I wake up in the morning",
+        "explain_vi": "Dùng 'in the morning' thay vì 'at morning'"
+      }
+    ],
+    "grammar_patterns": [
+      "wake up + time"
+    ]
+  },
+  {
+    "word": "go",
+    "phonetic": "/ɡoʊ/",
+    "meaning_vi": "đi",
+    "meaning_en": "to move or travel to a place",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "I go to school.",
+        "vi": "Tôi đi học."
+      }
+    ],
+    "word_family": [
+      "goes (v 3rd person)",
+      "going (v ing)",
+      "went (past)",
+      "gone (past participle)"
+    ],
+    "collocations": [
+      "go home",
+      "go to work",
+      "go shopping",
+      "go out"
+    ],
+    "synonyms": [
+      "travel",
+      "move"
+    ],
+    "antonyms": [
+      "stay",
+      "stop"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I go to home",
+        "correct": "I go home",
+        "explain_vi": "Không dùng 'to' trước 'home'"
+      }
+    ],
+    "grammar_patterns": [
+      "go + to + place",
+      "go + home"
+    ]
+  },
+  {
+    "word": "come",
+    "phonetic": "/kʌm/",
+    "meaning_vi": "đến",
+    "meaning_en": "to move towards the speaker or a place",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "Come here, please.",
+        "vi": "Lại đây, làm ơn."
+      }
+    ],
+    "word_family": [
+      "comes (v 3rd person)",
+      "coming (v ing)",
+      "came (past)",
+      "come (past participle)"
+    ],
+    "collocations": [
+      "come home",
+      "come back",
+      "come in",
+      "come to school"
+    ],
+    "synonyms": [
+      "arrive",
+      "approach"
+    ],
+    "antonyms": [
+      "go",
+      "leave"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Come to here",
+        "correct": "Come here",
+        "explain_vi": "Không dùng 'to' trước 'here'"
+      }
+    ],
+    "grammar_patterns": [
+      "come + here/there/home",
+      "come + to + place"
+    ]
+  },
+  {
+    "word": "home",
+    "phonetic": "/hoʊm/",
+    "meaning_vi": "nhà",
+    "meaning_en": "the place where you live",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I stay at home.",
+        "vi": "Tôi ở nhà."
+      }
+    ],
+    "word_family": [
+      "homeless (adj)"
+    ],
+    "collocations": [
+      "at home",
+      "go home",
+      "stay home",
+      "come home"
+    ],
+    "synonyms": [
+      "house",
+      "residence"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go to home",
+        "correct": "I go home",
+        "explain_vi": "Không dùng 'to' trước 'home'"
+      }
+    ],
+    "grammar_patterns": [
+      "at home",
+      "go home",
+      "come home"
+    ]
+  },
+  {
+    "word": "school",
+    "phonetic": "/skuːl/",
+    "meaning_vi": "trường học",
+    "meaning_en": "a place where children learn",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I go to school every day.",
+        "vi": "Tôi đi học mỗi ngày."
+      }
+    ],
+    "word_family": [
+      "schooling (n)"
+    ],
+    "collocations": [
+      "go to school",
+      "at school",
+      "after school",
+      "school bus"
+    ],
+    "synonyms": [
+      "academy",
+      "institution"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go to the school",
+        "correct": "I go to school",
+        "explain_vi": "Không dùng mạo từ 'the' khi nói về mục đích chính"
+      }
+    ],
+    "grammar_patterns": [
+      "go to school",
+      "at school"
+    ]
+  },
+  {
+    "word": "work",
+    "phonetic": "/wɜːrk/",
+    "meaning_vi": "làm việc",
+    "meaning_en": "to do a job for money",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "I work in an office.",
+        "vi": "Tôi làm việc ở văn phòng."
+      }
+    ],
+    "word_family": [
+      "works (v 3rd person)",
+      "working (v ing)",
+      "worked (past)"
+    ],
+    "collocations": [
+      "go to work",
+      "work hard",
+      "work from home",
+      "work hours"
+    ],
+    "synonyms": [
+      "labor",
+      "toil"
+    ],
+    "antonyms": [
+      "rest",
+      "play"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I work at office",
+        "correct": "I work in an office",
+        "explain_vi": "Dùng 'in an office' thay vì 'at office'"
+      }
+    ],
+    "grammar_patterns": [
+      "work + place"
+    ]
+  },
+  {
+    "word": "breakfast",
+    "phonetic": "/ˈbrek.fəst/",
+    "meaning_vi": "bữa sáng",
+    "meaning_en": "the first meal of the day",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I have breakfast at seven.",
+        "vi": "Tôi ăn sáng lúc 7 giờ."
+      }
+    ],
+    "word_family": [
+      "break (v)"
+    ],
+    "collocations": [
+      "have breakfast",
+      "eat breakfast",
+      "skip breakfast"
+    ],
+    "synonyms": [
+      "morning meal"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I eat breakfast",
+        "correct": "I have breakfast",
+        "explain_vi": "Dùng 'have' thay vì 'eat' với breakfast"
+      }
+    ],
+    "grammar_patterns": [
+      "have + breakfast (no article)"
+    ]
+  },
+  {
+    "word": "lunch",
+    "phonetic": "/lʌntʃ/",
+    "meaning_vi": "bữa trưa",
+    "meaning_en": "a meal eaten in the middle of the day",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I have lunch at noon.",
+        "vi": "Tôi ăn trưa vào buổi trưa."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "have lunch",
+      "eat lunch",
+      "lunch break",
+      "packed lunch"
+    ],
+    "synonyms": [
+      "midday meal"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I eat lunch at 12 o'clock",
+        "correct": "I have lunch at 12 o'clock",
+        "explain_vi": "Dùng 'have lunch' thay vì 'eat lunch' (cả hai đều được, nhưng 'have' phổ biến hơn)"
+      }
+    ],
+    "grammar_patterns": [
+      "have + lunch (no article)"
+    ]
+  },
+  {
+    "word": "dinner",
+    "phonetic": "/ˈdɪn.ər/",
+    "meaning_vi": "bữa tối",
+    "meaning_en": "the main meal of the day, usually in the evening",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We have dinner at seven.",
+        "vi": "Chúng tôi ăn tối lúc 7 giờ."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "have dinner",
+      "eat dinner",
+      "cook dinner",
+      "dinner time"
+    ],
+    "synonyms": [
+      "supper",
+      "evening meal"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I eat dinner at evening",
+        "correct": "I have dinner in the evening",
+        "explain_vi": "Dùng 'in the evening' thay vì 'at evening'"
+      }
+    ],
+    "grammar_patterns": [
+      "have + dinner (no article)"
+    ]
+  },
+  {
+    "word": "bathroom",
+    "phonetic": "/ˈbæθ.ruːm/",
+    "meaning_vi": "phòng tắm",
+    "meaning_en": "a room with a toilet and sink, and often a bath or shower",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I brush my teeth in the bathroom.",
+        "vi": "Tôi đánh răng trong phòng tắm."
+      }
+    ],
+    "word_family": [
+      "bath (n)"
+    ],
+    "collocations": [
+      "go to the bathroom",
+      "use the bathroom",
+      "bathroom mirror"
+    ],
+    "synonyms": [
+      "restroom",
+      "washroom"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go to bathroom",
+        "correct": "I go to the bathroom",
+        "explain_vi": "Cần mạo từ 'the'"
+      }
+    ],
+    "grammar_patterns": [
+      "the bathroom"
+    ]
+  },
+  {
+    "word": "bed",
+    "phonetic": "/bed/",
+    "meaning_vi": "giường",
+    "meaning_en": "a piece of furniture for sleeping on",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I go to bed at ten.",
+        "vi": "Tôi đi ngủ lúc 10 giờ."
+      }
+    ],
+    "word_family": [
+      "bedroom (n)"
+    ],
+    "collocations": [
+      "go to bed",
+      "make the bed",
+      "in bed",
+      "get out of bed"
+    ],
+    "synonyms": [
+      "cot",
+      "bunk"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go to bed at 10 o'clock at night",
+        "correct": "I go to bed at 10 o'clock at night",
+        "explain_vi": "Cụm từ đúng, nhưng có thể nói 'at 10 pm'"
+      }
+    ],
+    "grammar_patterns": [
+      "go to bed",
+      "in bed"
+    ]
+  },
+  {
+    "word": "clothes",
+    "phonetic": "/kloʊðz/",
+    "meaning_vi": "quần áo",
+    "meaning_en": "items you wear on your body",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I put on my clothes.",
+        "vi": "Tôi mặc quần áo."
+      }
+    ],
+    "word_family": [
+      "cloth (n)"
+    ],
+    "collocations": [
+      "put on clothes",
+      "take off clothes",
+      "wear clothes",
+      "change clothes"
+    ],
+    "synonyms": [
+      "garments",
+      "attire"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I wear a clothes",
+        "correct": "I wear clothes",
+        "explain_vi": "Clothes là danh từ số nhiều, không dùng 'a'"
+      }
+    ],
+    "grammar_patterns": [
+      "plural noun"
+    ]
+  },
+  {
+    "word": "shower",
+    "phonetic": "/ˈʃaʊ.ər/",
+    "meaning_vi": "vòi hoa sen",
+    "meaning_en": "a device that sprays water for washing; the act of washing under it",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I take a shower in the morning.",
+        "vi": "Tôi tắm vòi hoa sen vào buổi sáng."
+      }
+    ],
+    "word_family": [
+      "shower (v)"
+    ],
+    "collocations": [
+      "take a shower",
+      "have a shower",
+      "shower time",
+      "shower gel"
+    ],
+    "synonyms": [
+      "bath"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I take shower",
+        "correct": "I take a shower",
+        "explain_vi": "Cần mạo từ 'a'"
+      }
+    ],
+    "grammar_patterns": [
+      "take a shower",
+      "have a shower"
+    ]
+  },
+  {
+    "word": "toothbrush",
+    "phonetic": "/ˈtuːθ.brʌʃ/",
+    "meaning_vi": "bàn chải đánh răng",
+    "meaning_en": "a brush for cleaning teeth",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I use a toothbrush.",
+        "vi": "Tôi dùng bàn chải đánh răng."
+      }
+    ],
+    "word_family": [
+      "tooth (n)",
+      "brush (n/v)"
+    ],
+    "collocations": [
+      "brush with a toothbrush",
+      "electric toothbrush",
+      "toothbrush holder"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I brush my tooth",
+        "correct": "I brush my teeth",
+        "explain_vi": "Teeth là số nhiều của tooth"
+      }
+    ],
+    "grammar_patterns": [
+      "a toothbrush"
+    ]
+  },
+  {
+    "word": "book",
+    "phonetic": "/bʊk/",
+    "meaning_vi": "sách",
+    "meaning_en": "a set of pages with words for reading",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I read a book.",
+        "vi": "Tôi đọc một quyển sách."
+      }
+    ],
+    "word_family": [
+      "book (v)",
+      "bookstore (n)",
+      "notebook (n)"
+    ],
+    "collocations": [
+      "read a book",
+      "write a book",
+      "book cover",
+      "library book"
+    ],
+    "synonyms": [
+      "volume",
+      "text"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I read book",
+        "correct": "I read a book",
+        "explain_vi": "Cần mạo từ 'a'"
+      }
+    ],
+    "grammar_patterns": [
+      "a book",
+      "the book"
+    ]
+  },
+  {
+    "word": "watch",
+    "phonetic": "/wɑːtʃ/",
+    "meaning_vi": "xem",
+    "meaning_en": "to look at something for a period of time",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "I watch TV in the evening.",
+        "vi": "Tôi xem TV vào buổi tối."
+      }
+    ],
+    "word_family": [
+      "watches (v 3rd person)",
+      "watching (v ing)",
+      "watched (past)"
+    ],
+    "collocations": [
+      "watch TV",
+      "watch a movie",
+      "watch a show",
+      "watch the news"
+    ],
+    "synonyms": [
+      "view",
+      "observe"
+    ],
+    "antonyms": [
+      "ignore"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I see TV",
+        "correct": "I watch TV",
+        "explain_vi": "Dùng 'watch' cho TV, 'see' cho mắt nhìn thấy"
+      }
+    ],
+    "grammar_patterns": [
+      "watch + object"
+    ]
+  },
+  {
+    "word": "house",
+    "phonetic": "/haʊs/",
+    "meaning_vi": "ngôi nhà",
+    "meaning_en": "a building for people to live in",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "This is my house.",
+        "vi": "Đây là nhà của tôi."
+      }
+    ],
+    "word_family": [
+      "housing (n)"
+    ],
+    "collocations": [
+      "big house",
+      "small house",
+      "at home"
+    ],
+    "synonyms": [
+      "home"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go to house.",
+        "correct": "I go home.",
+        "explain_vi": "Dùng 'home' thay vì 'house' khi nói về việc về nhà."
+      }
+    ],
+    "grammar_patterns": [
+      "possessive + house",
+      "at + the + house"
+    ]
+  },
+  {
+    "word": "car",
+    "phonetic": "/kɑːr/",
+    "meaning_vi": "xe hơi",
+    "meaning_en": "a road vehicle with an engine",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "He drives a car.",
+        "vi": "Anh ấy lái xe hơi."
+      }
+    ],
+    "word_family": [
+      "car (n)"
+    ],
+    "collocations": [
+      "drive a car",
+      "wash the car",
+      "by car"
+    ],
+    "synonyms": [
+      "automobile"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go by car.",
+        "correct": "I go by car.",
+        "explain_vi": "Cụm từ 'by car' là đúng, không cần mạo từ."
+      }
+    ],
+    "grammar_patterns": [
+      "by + car (no article)",
+      "drive + a + car"
+    ]
+  },
+  {
+    "word": "bus",
+    "phonetic": "/bʌs/",
+    "meaning_vi": "xe buýt",
+    "meaning_en": "a large vehicle that carries passengers",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I take the bus to school.",
+        "vi": "Tôi đi xe buýt đến trường."
+      }
+    ],
+    "word_family": [
+      "bus (n)"
+    ],
+    "collocations": [
+      "take the bus",
+      "wait for the bus",
+      "by bus"
+    ],
+    "synonyms": [
+      "coach"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go by bus.",
+        "correct": "I go by bus.",
+        "explain_vi": "Cụm từ 'by bus' là đúng, không cần mạo từ."
+      }
+    ],
+    "grammar_patterns": [
+      "by + bus (no article)",
+      "take + the + bus"
+    ]
+  },
+  {
+    "word": "train",
+    "phonetic": "/treɪn/",
+    "meaning_vi": "tàu hỏa",
+    "meaning_en": "a series of connected vehicles on tracks",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The train is fast.",
+        "vi": "Tàu hỏa chạy nhanh."
+      }
+    ],
+    "word_family": [
+      "train (n)"
+    ],
+    "collocations": [
+      "take the train",
+      "catch the train",
+      "by train"
+    ],
+    "synonyms": [
+      "railway"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go by train.",
+        "correct": "I go by train.",
+        "explain_vi": "Cụm từ 'by train' là đúng, không cần mạo từ."
+      }
+    ],
+    "grammar_patterns": [
+      "by + train (no article)",
+      "take + the + train"
+    ]
+  },
+  {
+    "word": "bicycle",
+    "phonetic": "/ˈbaɪ.sɪ.kəl/",
+    "meaning_vi": "xe đạp",
+    "meaning_en": "a vehicle with two wheels that you ride by pedaling",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She rides a bicycle to work.",
+        "vi": "Cô ấy đạp xe đạp đi làm."
+      }
+    ],
+    "word_family": [
+      "bike (n)"
+    ],
+    "collocations": [
+      "ride a bicycle",
+      "by bicycle",
+      "bicycle lane"
+    ],
+    "synonyms": [
+      "bike"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go by bicycle.",
+        "correct": "I go by bicycle.",
+        "explain_vi": "Cụm từ 'by bicycle' là đúng, không cần mạo từ."
+      }
+    ],
+    "grammar_patterns": [
+      "by + bicycle (no article)",
+      "ride + a + bicycle"
+    ]
+  },
+  {
+    "word": "phone",
+    "phonetic": "/foʊn/",
+    "meaning_vi": "điện thoại",
+    "meaning_en": "a device for speaking to someone far away",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I use my phone every day.",
+        "vi": "Tôi dùng điện thoại mỗi ngày."
+      }
+    ],
+    "word_family": [
+      "phone (n), call (v)"
+    ],
+    "collocations": [
+      "on the phone",
+      "answer the phone",
+      "mobile phone"
+    ],
+    "synonyms": [
+      "telephone",
+      "cell phone"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I play phone.",
+        "correct": "I use my phone.",
+        "explain_vi": "Không dùng 'play' với 'phone', dùng 'use'."
+      }
+    ],
+    "grammar_patterns": [
+      "possessive + phone",
+      "on + the + phone"
+    ]
+  },
+  {
+    "word": "computer",
+    "phonetic": "/kəmˈpjuː.tər/",
+    "meaning_vi": "máy tính",
+    "meaning_en": "an electronic device for storing and processing data",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I work on a computer.",
+        "vi": "Tôi làm việc trên máy tính."
+      }
+    ],
+    "word_family": [
+      "computer (n), compute (v)"
+    ],
+    "collocations": [
+      "use a computer",
+      "turn on the computer",
+      "computer screen"
+    ],
+    "synonyms": [
+      "PC",
+      "laptop"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I play computer.",
+        "correct": "I use the computer.",
+        "explain_vi": "Dùng 'use' thay vì 'play'."
+      }
+    ],
+    "grammar_patterns": [
+      "use + a + computer",
+      "on + the + computer"
+    ]
+  },
+  {
+    "word": "television",
+    "phonetic": "/ˈtel.ɪ.vɪʒ.ən/",
+    "meaning_vi": "tivi",
+    "meaning_en": "a device for watching programs",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We watch television in the evening.",
+        "vi": "Chúng tôi xem tivi vào buổi tối."
+      }
+    ],
+    "word_family": [
+      "TV (n)"
+    ],
+    "collocations": [
+      "watch television",
+      "turn on the TV",
+      "on television"
+    ],
+    "synonyms": [
+      "TV"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I see television.",
+        "correct": "I watch television.",
+        "explain_vi": "Dùng 'watch' thay vì 'see'."
+      }
+    ],
+    "grammar_patterns": [
+      "watch + television (no article)"
+    ]
+  },
+  {
+    "word": "radio",
+    "phonetic": "/ˈreɪ.di.oʊ/",
+    "meaning_vi": "đài phát thanh",
+    "meaning_en": "a device for listening to broadcasts",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I listen to the radio.",
+        "vi": "Tôi nghe đài."
+      }
+    ],
+    "word_family": [
+      "radio (n)"
+    ],
+    "collocations": [
+      "listen to the radio",
+      "turn on the radio",
+      "on the radio"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I hear radio.",
+        "correct": "I listen to the radio.",
+        "explain_vi": "Dùng 'listen to' thay vì 'hear'."
+      }
+    ],
+    "grammar_patterns": [
+      "listen to + the + radio"
+    ]
+  },
+  {
+    "word": "newspaper",
+    "phonetic": "/ˈnjuːz.peɪ.pər/",
+    "meaning_vi": "báo",
+    "meaning_en": "a printed publication with news",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I read the newspaper every morning.",
+        "vi": "Tôi đọc báo mỗi sáng."
+      }
+    ],
+    "word_family": [
+      "news (n), paper (n)"
+    ],
+    "collocations": [
+      "read a newspaper",
+      "daily newspaper",
+      "in the newspaper"
+    ],
+    "synonyms": [
+      "paper"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I see newspaper.",
+        "correct": "I read the newspaper.",
+        "explain_vi": "Dùng 'read' thay vì 'see'."
+      }
+    ],
+    "grammar_patterns": [
+      "read + a + newspaper"
+    ]
+  },
+  {
+    "word": "kitchen",
+    "phonetic": "/ˈkɪtʃ.ɪn/",
+    "meaning_vi": "nhà bếp",
+    "meaning_en": "a room where food is prepared",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She is cooking in the kitchen.",
+        "vi": "Cô ấy đang nấu ăn trong bếp."
+      }
+    ],
+    "word_family": [
+      "kitchen (n)"
+    ],
+    "collocations": [
+      "in the kitchen",
+      "kitchen table",
+      "kitchen sink"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go to kitchen.",
+        "correct": "I go to the kitchen.",
+        "explain_vi": "Cần mạo từ 'the'."
+      }
+    ],
+    "grammar_patterns": [
+      "in + the + kitchen"
+    ]
+  },
+  {
+    "word": "garden",
+    "phonetic": "/ˈɡɑːr.dən/",
+    "meaning_vi": "vườn",
+    "meaning_en": "an area of land with plants and flowers",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The garden is beautiful.",
+        "vi": "Khu vườn thật đẹp."
+      }
+    ],
+    "word_family": [
+      "gardening (n), gardener (n)"
+    ],
+    "collocations": [
+      "in the garden",
+      "water the garden",
+      "garden flowers"
+    ],
+    "synonyms": [
+      "yard"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go to garden.",
+        "correct": "I go to the garden.",
+        "explain_vi": "Cần mạo từ 'the'."
+      }
+    ],
+    "grammar_patterns": [
+      "in + the + garden"
+    ]
+  },
+  {
+    "word": "park",
+    "phonetic": "/pɑːrk/",
+    "meaning_vi": "công viên",
+    "meaning_en": "a public area with grass and trees",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Children play in the park.",
+        "vi": "Trẻ em chơi trong công viên."
+      }
+    ],
+    "word_family": [
+      "park (n), parking (n)"
+    ],
+    "collocations": [
+      "go to the park",
+      "play in the park",
+      "park bench"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go to park.",
+        "correct": "I go to the park.",
+        "explain_vi": "Cần mạo từ 'the'."
+      }
+    ],
+    "grammar_patterns": [
+      "in + the + park"
+    ]
+  },
+  {
+    "word": "shop",
+    "phonetic": "/ʃɒp/",
+    "meaning_vi": "cửa hàng",
+    "meaning_en": "a place where goods are sold",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I go to the shop to buy milk.",
+        "vi": "Tôi đến cửa hàng để mua sữa."
+      }
+    ],
+    "word_family": [
+      "shop (n), shopping (n)"
+    ],
+    "collocations": [
+      "go to the shop",
+      "shop assistant",
+      "book shop"
+    ],
+    "synonyms": [
+      "store"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go to shop.",
+        "correct": "I go to the shop.",
+        "explain_vi": "Cần mạo từ 'the'."
+      }
+    ],
+    "grammar_patterns": [
+      "at + the + shop"
+    ]
+  },
+  {
+    "word": "market",
+    "phonetic": "/ˈmɑːr.kɪt/",
+    "meaning_vi": "chợ",
+    "meaning_en": "a place where people buy and sell goods",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She buys vegetables at the market.",
+        "vi": "Cô ấy mua rau ở chợ."
+      }
+    ],
+    "word_family": [
+      "market (n), marketing (n)"
+    ],
+    "collocations": [
+      "go to the market",
+      "at the market",
+      "market day"
+    ],
+    "synonyms": [
+      "bazaar"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go to market.",
+        "correct": "I go to the market.",
+        "explain_vi": "Cần mạo từ 'the'."
+      }
+    ],
+    "grammar_patterns": [
+      "at + the + market"
+    ]
+  },
+  {
+    "word": "hospital",
+    "phonetic": "/ˈhɒs.pɪ.təl/",
+    "meaning_vi": "bệnh viện",
+    "meaning_en": "a place where sick people receive medical treatment",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She is in the hospital.",
+        "vi": "Cô ấy đang ở bệnh viện."
+      }
+    ],
+    "word_family": [
+      "hospital (n), hospitalize (v)"
+    ],
+    "collocations": [
+      "go to the hospital",
+      "in the hospital",
+      "hospital bed"
+    ],
+    "synonyms": [
+      "clinic"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go to hospital.",
+        "correct": "I go to the hospital.",
+        "explain_vi": "Cần mạo từ 'the' (trong tiếng Anh Mỹ)."
+      }
+    ],
+    "grammar_patterns": [
+      "in + the + hospital"
+    ]
+  },
+  {
+    "word": "bank",
+    "phonetic": "/bæŋk/",
+    "meaning_vi": "ngân hàng",
+    "meaning_en": "a place where money is kept and exchanged",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I go to the bank to get money.",
+        "vi": "Tôi đến ngân hàng để lấy tiền."
+      }
+    ],
+    "word_family": [
+      "bank (n), banking (n)"
+    ],
+    "collocations": [
+      "go to the bank",
+      "bank account",
+      "bank teller"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go to bank.",
+        "correct": "I go to the bank.",
+        "explain_vi": "Cần mạo từ 'the'."
+      }
+    ],
+    "grammar_patterns": [
+      "at + the + bank"
+    ]
+  },
+  {
+    "word": "post office",
+    "phonetic": "/ˈpoʊst ˌɒf.ɪs/",
+    "meaning_vi": "bưu điện",
+    "meaning_en": "a place where mail is sent and received",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I send a letter at the post office.",
+        "vi": "Tôi gửi thư ở bưu điện."
+      }
+    ],
+    "word_family": [
+      "post (n), office (n)"
+    ],
+    "collocations": [
+      "go to the post office",
+      "post office box",
+      "at the post office"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go to post office.",
+        "correct": "I go to the post office.",
+        "explain_vi": "Cần mạo từ 'the'."
+      }
+    ],
+    "grammar_patterns": [
+      "at + the + post office"
+    ]
+  },
+  {
+    "word": "restaurant",
+    "phonetic": "/ˈres.tər.ɒnt/",
+    "meaning_vi": "nhà hàng",
+    "meaning_en": "a place where meals are served to customers",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We eat dinner at a restaurant.",
+        "vi": "Chúng tôi ăn tối ở nhà hàng."
+      }
+    ],
+    "word_family": [
+      "restaurant (n)"
+    ],
+    "collocations": [
+      "go to a restaurant",
+      "eat at a restaurant",
+      "restaurant menu"
+    ],
+    "synonyms": [
+      "café",
+      "diner"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go to restaurant.",
+        "correct": "I go to a restaurant.",
+        "explain_vi": "Cần mạo từ 'a'."
+      }
+    ],
+    "grammar_patterns": [
+      "at + a + restaurant"
+    ]
+  },
+  {
+    "word": "office",
+    "phonetic": "/ˈɒf.ɪs/",
+    "meaning_vi": "văn phòng",
+    "meaning_en": "a room or building where people work at desks",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "He works in an office.",
+        "vi": "Anh ấy làm việc ở văn phòng."
+      }
+    ],
+    "word_family": [
+      "office (n), officer (n)"
+    ],
+    "collocations": [
+      "go to the office",
+      "office building",
+      "office worker"
+    ],
+    "synonyms": [
+      "workplace"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go to office.",
+        "correct": "I go to the office.",
+        "explain_vi": "Cần mạo từ 'the'."
+      }
+    ],
+    "grammar_patterns": [
+      "in + an + office"
+    ]
+  }
+]

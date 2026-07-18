@@ -1,0 +1,3112 @@
+[
+  {
+    "word": "vibrant",
+    "phonetic": "/ˈvaɪbrənt/",
+    "meaning_vi": "rực rỡ, sống động",
+    "meaning_en": "bright and striking in color",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The artist used vibrant colors in her painting.",
+        "vi": "Họa sĩ đã sử dụng những màu sắc rực rỡ trong bức tranh của cô ấy."
+      }
+    ],
+    "word_family": [
+      "vibrancy (n)",
+      "vibrantly (adv)"
+    ],
+    "collocations": [
+      "vibrant colors",
+      "vibrant hues",
+      "vibrant palette"
+    ],
+    "synonyms": [
+      "bright",
+      "vivid",
+      "intense"
+    ],
+    "antonyms": [
+      "dull",
+      "pale"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "vibrant màu",
+        "correct": "màu sắc rực rỡ",
+        "explain_vi": "Trong tiếng Việt, 'vibrant' thường đi với 'màu sắc' chứ không đứng một mình."
+      }
+    ],
+    "grammar_patterns": [
+      "vibrant + noun"
+    ]
+  },
+  {
+    "word": "muted",
+    "phonetic": "/ˈmjuːtɪd/",
+    "meaning_vi": "nhẹ nhàng, dịu (màu sắc)",
+    "meaning_en": "not bright; subdued in color",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "She prefers muted tones for her bedroom.",
+        "vi": "Cô ấy thích những tông màu dịu nhẹ cho phòng ngủ của mình."
+      }
+    ],
+    "word_family": [
+      "mute (v)",
+      "mutedly (adv)"
+    ],
+    "collocations": [
+      "muted colors",
+      "muted palette",
+      "muted tones"
+    ],
+    "synonyms": [
+      "subdued",
+      "soft",
+      "pale"
+    ],
+    "antonyms": [
+      "bright",
+      "vivid"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "muted màu",
+        "correct": "màu sắc dịu nhẹ",
+        "explain_vi": "Cần dịch 'muted' thành 'dịu nhẹ' hoặc 'nhạt' tùy ngữ cảnh."
+      }
+    ],
+    "grammar_patterns": [
+      "muted + noun"
+    ]
+  },
+  {
+    "word": "geometric",
+    "phonetic": "/ˌdʒiːəˈmetrɪk/",
+    "meaning_vi": "thuộc hình học, có dạng hình học",
+    "meaning_en": "relating to geometry or shapes like squares, circles, etc.",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The rug has a geometric pattern.",
+        "vi": "Tấm thảm có họa tiết hình học."
+      }
+    ],
+    "word_family": [
+      "geometry (n)",
+      "geometrically (adv)"
+    ],
+    "collocations": [
+      "geometric pattern",
+      "geometric shape",
+      "geometric design"
+    ],
+    "synonyms": [
+      "angular",
+      "linear"
+    ],
+    "antonyms": [
+      "organic",
+      "curvilinear"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "hình học geometric",
+        "correct": "họa tiết hình học",
+        "explain_vi": "Geometric là tính từ, cần đặt trước danh từ."
+      }
+    ],
+    "grammar_patterns": [
+      "geometric + noun"
+    ]
+  },
+  {
+    "word": "symmetry",
+    "phonetic": "/ˈsɪmətri/",
+    "meaning_vi": "sự đối xứng",
+    "meaning_en": "the quality of being made up of exactly similar parts facing each other",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The building's symmetry is pleasing to the eye.",
+        "vi": "Sự đối xứng của tòa nhà rất đẹp mắt."
+      }
+    ],
+    "word_family": [
+      "symmetric (adj)",
+      "symmetrically (adv)"
+    ],
+    "collocations": [
+      "perfect symmetry",
+      "bilateral symmetry",
+      "symmetry in design"
+    ],
+    "synonyms": [
+      "balance",
+      "proportion",
+      "regularity"
+    ],
+    "antonyms": [
+      "asymmetry",
+      "irregularity"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "symmetry đối xứng",
+        "correct": "sự đối xứng",
+        "explain_vi": "Trong tiếng Việt, 'symmetry' là danh từ, cần thêm 'sự'."
+      }
+    ],
+    "grammar_patterns": [
+      "symmetry of + noun",
+      "in symmetry"
+    ]
+  },
+  {
+    "word": "asymmetry",
+    "phonetic": "/eɪˈsɪmətri/",
+    "meaning_vi": "sự bất đối xứng",
+    "meaning_en": "lack of symmetry or equality between parts",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The asymmetry of the sculpture makes it unique.",
+        "vi": "Sự bất đối xứng của tác phẩm điêu khắc làm nó trở nên độc đáo."
+      }
+    ],
+    "word_family": [
+      "asymmetric (adj)",
+      "asymmetrically (adv)"
+    ],
+    "collocations": [
+      "deliberate asymmetry",
+      "asymmetry in nature",
+      "visual asymmetry"
+    ],
+    "synonyms": [
+      "imbalance",
+      "irregularity"
+    ],
+    "antonyms": [
+      "symmetry",
+      "balance"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "asymmetry bất đối xứng",
+        "correct": "sự bất đối xứng",
+        "explain_vi": "Cần thêm 'sự' khi dịch sang tiếng Việt."
+      }
+    ],
+    "grammar_patterns": [
+      "asymmetry of + noun",
+      "in asymmetry"
+    ]
+  },
+  {
+    "word": "hue",
+    "phonetic": "/hjuː/",
+    "meaning_vi": "màu sắc, sắc thái",
+    "meaning_en": "a color or shade of a color",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The sky was painted in hues of orange and pink.",
+        "vi": "Bầu trời được tô bằng những sắc thái cam và hồng."
+      }
+    ],
+    "word_family": [
+      "hued (adj)"
+    ],
+    "collocations": [
+      "different hues",
+      "warm hues",
+      "cool hues",
+      "a hue of"
+    ],
+    "synonyms": [
+      "shade",
+      "tint",
+      "color"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "hue màu",
+        "correct": "sắc thái màu",
+        "explain_vi": "'Hue' thường được dịch là 'sắc thái' hơn là 'màu'."
+      }
+    ],
+    "grammar_patterns": [
+      "hue of + noun",
+      "in + adjective + hues"
+    ]
+  },
+  {
+    "word": "shade",
+    "phonetic": "/ʃeɪd/",
+    "meaning_vi": "sắc thái, bóng (màu)",
+    "meaning_en": "a particular variety of a color, especially when described in terms of its lightness or darkness",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She painted the wall a lighter shade of blue.",
+        "vi": "Cô ấy sơn tường một sắc thái xanh nhạt hơn."
+      }
+    ],
+    "word_family": [
+      "shady (adj)",
+      "shaded (adj)"
+    ],
+    "collocations": [
+      "shade of",
+      "light shade",
+      "dark shade",
+      "different shades"
+    ],
+    "synonyms": [
+      "tint",
+      "hue",
+      "tone"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "shade màu",
+        "correct": "sắc thái màu",
+        "explain_vi": "Tương tự 'hue', 'shade' cũng là sắc thái."
+      }
+    ],
+    "grammar_patterns": [
+      "shade of + color",
+      "a + adjective + shade"
+    ]
+  },
+  {
+    "word": "tint",
+    "phonetic": "/tɪnt/",
+    "meaning_vi": "màu pha, sắc thái nhạt",
+    "meaning_en": "a small amount of a color; a shade of a color, especially a pale one",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The windows have a blue tint.",
+        "vi": "Cửa sổ có một màu xanh pha nhẹ."
+      }
+    ],
+    "word_family": [
+      "tinted (adj)"
+    ],
+    "collocations": [
+      "blue tint",
+      "slight tint",
+      "tinted glass"
+    ],
+    "synonyms": [
+      "hue",
+      "shade",
+      "tinge"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "tint màu",
+        "correct": "màu pha",
+        "explain_vi": "'Tint' thường là màu pha loãng, nhạt."
+      }
+    ],
+    "grammar_patterns": [
+      "tint of + color",
+      "a + adjective + tint"
+    ]
+  },
+  {
+    "word": "pigment",
+    "phonetic": "/ˈpɪɡmənt/",
+    "meaning_vi": "chất màu, sắc tố",
+    "meaning_en": "a substance that gives color to something",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Chlorophyll is the pigment that makes plants green.",
+        "vi": "Diệp lục là chất màu làm cho cây xanh."
+      }
+    ],
+    "word_family": [
+      "pigmented (adj)",
+      "pigmentation (n)"
+    ],
+    "collocations": [
+      "natural pigment",
+      "synthetic pigment",
+      "skin pigment"
+    ],
+    "synonyms": [
+      "coloring",
+      "dye",
+      "colorant"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "pigment chất màu",
+        "correct": "chất màu",
+        "explain_vi": "Trong tiếng Việt, 'pigment' là 'chất màu' hoặc 'sắc tố'."
+      }
+    ],
+    "grammar_patterns": [
+      "pigment in + noun",
+      "a + adjective + pigment"
+    ]
+  },
+  {
+    "word": "spectrum",
+    "phonetic": "/ˈspektrəm/",
+    "meaning_vi": "quang phổ, dải màu",
+    "meaning_en": "a range of colors produced when light is dispersed",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "A rainbow shows the full spectrum of visible light.",
+        "vi": "Cầu vồng cho thấy toàn bộ quang phổ của ánh sáng nhìn thấy."
+      }
+    ],
+    "word_family": [
+      "spectral (adj)"
+    ],
+    "collocations": [
+      "color spectrum",
+      "visible spectrum",
+      "broad spectrum"
+    ],
+    "synonyms": [
+      "range",
+      "gamut",
+      "array"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "spectrum quang phổ",
+        "correct": "quang phổ",
+        "explain_vi": "Cần dịch là 'quang phổ' hoặc 'dải màu'."
+      }
+    ],
+    "grammar_patterns": [
+      "spectrum of + noun",
+      "on the spectrum"
+    ]
+  },
+  {
+    "word": "prism",
+    "phonetic": "/ˈprɪzəm/",
+    "meaning_vi": "lăng kính",
+    "meaning_en": "a transparent object that separates white light into colors",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Light passing through a prism creates a rainbow.",
+        "vi": "Ánh sáng đi qua lăng kính tạo ra cầu vồng."
+      }
+    ],
+    "word_family": [
+      "prismatic (adj)"
+    ],
+    "collocations": [
+      "glass prism",
+      "triangular prism",
+      "prism effect"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "prism lăng kính",
+        "correct": "lăng kính",
+        "explain_vi": "Đây là từ mượn, dịch trực tiếp."
+      }
+    ],
+    "grammar_patterns": [
+      "through a prism",
+      "prism of + noun"
+    ]
+  },
+  {
+    "word": "contour",
+    "phonetic": "/ˈkɒntʊər/",
+    "meaning_vi": "đường viền, đường nét",
+    "meaning_en": "the outline of a shape or figure",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The contour of the mountain was clear against the sky.",
+        "vi": "Đường viền của ngọn núi hiện rõ trên nền trời."
+      }
+    ],
+    "word_family": [
+      "contoured (adj)"
+    ],
+    "collocations": [
+      "contour line",
+      "body contour",
+      "contour map"
+    ],
+    "synonyms": [
+      "outline",
+      "silhouette",
+      "profile"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "contour đường viền",
+        "correct": "đường viền",
+        "explain_vi": "Cần dịch là 'đường viền' hoặc 'đường nét'."
+      }
+    ],
+    "grammar_patterns": [
+      "contour of + noun",
+      "along the contour"
+    ]
+  },
+  {
+    "word": "silhouette",
+    "phonetic": "/ˌsɪlʊˈet/",
+    "meaning_vi": "hình bóng, bóng dáng",
+    "meaning_en": "the dark shape and outline of someone or something visible against a lighter background",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I saw the silhouette of a bird on the roof.",
+        "vi": "Tôi thấy hình bóng của một con chim trên mái nhà."
+      }
+    ],
+    "word_family": [
+      "silhouetted (adj)"
+    ],
+    "collocations": [
+      "silhouette against",
+      "in silhouette",
+      "dark silhouette"
+    ],
+    "synonyms": [
+      "outline",
+      "shadow",
+      "profile"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "silhouette hình bóng",
+        "correct": "hình bóng",
+        "explain_vi": "Dịch là 'hình bóng' hoặc 'bóng dáng'."
+      }
+    ],
+    "grammar_patterns": [
+      "silhouette of + noun",
+      "in silhouette"
+    ]
+  },
+  {
+    "word": "translucent",
+    "phonetic": "/trænsˈluːsənt/",
+    "meaning_vi": "trong mờ, bán trong suốt",
+    "meaning_en": "allowing light to pass through but not clearly visible",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "Frosted glass is translucent.",
+        "vi": "Kính mờ là trong mờ."
+      }
+    ],
+    "word_family": [
+      "translucence (n)",
+      "translucently (adv)"
+    ],
+    "collocations": [
+      "translucent material",
+      "translucent skin",
+      "translucent light"
+    ],
+    "synonyms": [
+      "semi-transparent",
+      "opalescent"
+    ],
+    "antonyms": [
+      "opaque",
+      "transparent"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "translucent trong mờ",
+        "correct": "trong mờ",
+        "explain_vi": "Đây là tính từ, dịch là 'trong mờ'."
+      }
+    ],
+    "grammar_patterns": [
+      "translucent + noun"
+    ]
+  },
+  {
+    "word": "opaque",
+    "phonetic": "/əʊˈpeɪk/",
+    "meaning_vi": "đục, không trong suốt",
+    "meaning_en": "not able to be seen through; not transparent",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The paint is opaque, covering the wood completely.",
+        "vi": "Lớp sơn này đục, che phủ hoàn toàn gỗ."
+      }
+    ],
+    "word_family": [
+      "opacity (n)",
+      "opaquely (adv)"
+    ],
+    "collocations": [
+      "opaque glass",
+      "opaque color",
+      "opaque object"
+    ],
+    "synonyms": [
+      "non-transparent",
+      "cloudy"
+    ],
+    "antonyms": [
+      "transparent",
+      "translucent"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "opaque đục",
+        "correct": "đục",
+        "explain_vi": "Dịch là 'đục' hoặc 'không trong suốt'."
+      }
+    ],
+    "grammar_patterns": [
+      "opaque + noun"
+    ]
+  },
+  {
+    "word": "iridescent",
+    "phonetic": "/ˌɪrɪˈdesənt/",
+    "meaning_vi": "ánh kim, óng ánh nhiều màu",
+    "meaning_en": "showing colors that seem to change in different lights",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "Soap bubbles are iridescent.",
+        "vi": "Bong bóng xà phòng có ánh kim."
+      }
+    ],
+    "word_family": [
+      "iridescence (n)",
+      "iridescently (adv)"
+    ],
+    "collocations": [
+      "iridescent colors",
+      "iridescent sheen",
+      "iridescent fabric"
+    ],
+    "synonyms": [
+      "opalescent",
+      "shimmering",
+      "pearlescent"
+    ],
+    "antonyms": [
+      "dull",
+      "flat"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "iridescent óng ánh",
+        "correct": "óng ánh nhiều màu",
+        "explain_vi": "Cần nhấn mạnh sự thay đổi màu sắc."
+      }
+    ],
+    "grammar_patterns": [
+      "iridescent + noun"
+    ]
+  },
+  {
+    "word": "monochrome",
+    "phonetic": "/ˈmɒnəkrəʊm/",
+    "meaning_vi": "đơn sắc",
+    "meaning_en": "using only one color or different shades of one color",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The photograph is in monochrome.",
+        "vi": "Bức ảnh là đơn s��c."
+      }
+    ],
+    "word_family": [
+      "monochromatic (adj)"
+    ],
+    "collocations": [
+      "monochrome image",
+      "monochrome palette",
+      "monochrome scheme"
+    ],
+    "synonyms": [
+      "black-and-white",
+      "single-color"
+    ],
+    "antonyms": [
+      "multicolored",
+      "polychrome"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "monochrome đơn sắc",
+        "correct": "đơn sắc",
+        "explain_vi": "Đây là từ ghép, dịch là 'đơn sắc'."
+      }
+    ],
+    "grammar_patterns": [
+      "monochrome + noun",
+      "in monochrome"
+    ]
+  },
+  {
+    "word": "polychrome",
+    "phonetic": "/ˈpɒlikrəʊm/",
+    "meaning_vi": "đa sắc, nhiều màu",
+    "meaning_en": "having several colors",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The polychrome statue was beautifully painted.",
+        "vi": "Bức tượng đa sắc được sơn rất đẹp."
+      }
+    ],
+    "word_family": [
+      "polychromatic (adj)"
+    ],
+    "collocations": [
+      "polychrome painting",
+      "polychrome decoration"
+    ],
+    "synonyms": [
+      "multicolored",
+      "colorful"
+    ],
+    "antonyms": [
+      "monochrome"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "polychrome nhiều màu",
+        "correct": "đa sắc",
+        "explain_vi": "Dịch là 'đa sắc' hoặc 'nhiều màu'."
+      }
+    ],
+    "grammar_patterns": [
+      "polychrome + noun"
+    ]
+  },
+  {
+    "word": "sphere",
+    "phonetic": "/sfɪər/",
+    "meaning_vi": "hình cầu, quả cầu",
+    "meaning_en": "a round solid figure with every point on its surface equidistant from its center",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The earth is a sphere.",
+        "vi": "Trái đất là một hình cầu."
+      }
+    ],
+    "word_family": [
+      "spherical (adj)",
+      "spherically (adv)"
+    ],
+    "collocations": [
+      "perfect sphere",
+      "sphere of influence",
+      "glass sphere"
+    ],
+    "synonyms": [
+      "globe",
+      "ball",
+      "orb"
+    ],
+    "antonyms": [
+      "cube"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "sphere hình cầu",
+        "correct": "hình cầu",
+        "explain_vi": "Dịch là 'hình cầu' hoặc 'quả cầu'."
+      }
+    ],
+    "grammar_patterns": [
+      "sphere of + noun",
+      "in the shape of a sphere"
+    ]
+  },
+  {
+    "word": "cube",
+    "phonetic": "/kjuːb/",
+    "meaning_vi": "hình lập phương, khối lập phương",
+    "meaning_en": "a solid figure with six equal square faces",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "A dice is a cube.",
+        "vi": "Con xúc xắc là hình lập phương."
+      }
+    ],
+    "word_family": [
+      "cubic (adj)",
+      "cubical (adj)"
+    ],
+    "collocations": [
+      "cube shape",
+      "cube of sugar",
+      "cube root"
+    ],
+    "synonyms": [
+      "hexahedron"
+    ],
+    "antonyms": [
+      "sphere"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "cube hình lập phương",
+        "correct": "hình lập phương",
+        "explain_vi": "Dịch là 'hình lập phương'."
+      }
+    ],
+    "grammar_patterns": [
+      "cube of + noun",
+      "in the shape of a cube"
+    ]
+  },
+  {
+    "word": "pattern",
+    "phonetic": "/ˈpæt.ərn/",
+    "meaning_vi": "hoa văn, họa tiết",
+    "meaning_en": "a repeated decorative design",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The fabric has a floral pattern.",
+        "vi": "Vải có hoa văn hình hoa."
+      },
+      {
+        "en": "I like geometric patterns.",
+        "vi": "Tôi thích các họa tiết hình học."
+      }
+    ],
+    "word_family": [
+      "patterned (adj)",
+      "patterning (n)"
+    ],
+    "collocations": [
+      "geometric pattern",
+      "floral pattern",
+      "repeat pattern"
+    ],
+    "synonyms": [
+      "design",
+      "motif"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I like pattern of this shirt.",
+        "correct": "I like the pattern of this shirt.",
+        "explain_vi": "Cần dùng mạo từ 'the' khi nói về một pattern cụ thể."
+      }
+    ],
+    "grammar_patterns": [
+      "pattern + of + noun"
+    ]
+  },
+  {
+    "word": "contrast",
+    "phonetic": "/ˈkɒn.træst/",
+    "meaning_vi": "sự tương phản",
+    "meaning_en": "the difference between two things, especially in color or brightness",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "There is a strong contrast between black and white.",
+        "vi": "Có sự tương phản mạnh giữa đen và trắng."
+      },
+      {
+        "en": "The contrast in colors makes the painting stand out.",
+        "vi": "Sự tương phản màu sắc làm bức tranh nổi bật."
+      }
+    ],
+    "word_family": [
+      "contrast (v)",
+      "contrasting (adj)"
+    ],
+    "collocations": [
+      "strong contrast",
+      "in contrast",
+      "contrast with"
+    ],
+    "synonyms": [
+      "difference",
+      "opposition"
+    ],
+    "antonyms": [
+      "similarity"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Contrast between two colors is big.",
+        "correct": "The contrast between the two colors is big.",
+        "explain_vi": "Cần mạo từ 'the' trước 'contrast'."
+      }
+    ],
+    "grammar_patterns": [
+      "contrast + between + noun + and + noun"
+    ]
+  },
+  {
+    "word": "vivid",
+    "phonetic": "/ˈvɪv.ɪd/",
+    "meaning_vi": "rực rỡ, sống động",
+    "meaning_en": "very bright and clear in color",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "She wore a vivid red dress.",
+        "vi": "Cô ấy mặc một chiếc váy đỏ rực rỡ."
+      },
+      {
+        "en": "The sunset was vivid with shades of orange and pink.",
+        "vi": "Hoàng hôn rực rỡ với các sắc cam và hồng."
+      }
+    ],
+    "word_family": [
+      "vividly (adv)",
+      "vividness (n)"
+    ],
+    "collocations": [
+      "vivid color",
+      "vivid memory",
+      "vivid description"
+    ],
+    "synonyms": [
+      "bright",
+      "brilliant",
+      "intense"
+    ],
+    "antonyms": [
+      "dull",
+      "pale"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "She has a vivid hair.",
+        "correct": "She has vivid hair.",
+        "explain_vi": "Không dùng mạo từ 'a' với tính từ khi danh từ không đếm được."
+      }
+    ],
+    "grammar_patterns": [
+      "vivid + noun"
+    ]
+  },
+  {
+    "word": "blend",
+    "phonetic": "/blend/",
+    "meaning_vi": "pha trộn, hòa trộn",
+    "meaning_en": "to mix two or more things together, especially colors or substances",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "Blend the blue and yellow to make green.",
+        "vi": "Pha trộn màu xanh lam và vàng để tạo ra màu xanh lục."
+      },
+      {
+        "en": "The colors blend together smoothly.",
+        "vi": "Các màu sắc hòa trộn vào nhau một cách mượt mà."
+      }
+    ],
+    "word_family": [
+      "blend (n)",
+      "blender (n)"
+    ],
+    "collocations": [
+      "blend in",
+      "blend with",
+      "smooth blend"
+    ],
+    "synonyms": [
+      "mix",
+      "combine",
+      "merge"
+    ],
+    "antonyms": [
+      "separate"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Blend the colors together.",
+        "correct": "Blend the colors together.",
+        "explain_vi": "Cách dùng đúng, nhưng lưu ý 'blend' thường đi với giới từ 'with' hoặc 'into'."
+      }
+    ],
+    "grammar_patterns": [
+      "blend + noun + with + noun"
+    ]
+  },
+  {
+    "word": "fade",
+    "phonetic": "/feɪd/",
+    "meaning_vi": "phai màu, nhạt dần",
+    "meaning_en": "to lose color or brightness gradually",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "The curtains faded in the sun.",
+        "vi": "Rèm cửa bị phai màu dưới ánh nắng."
+      },
+      {
+        "en": "The color of the T-shirt faded after many washes.",
+        "vi": "Màu của chiếc áo phông bị phai sau nhiều lần giặt."
+      }
+    ],
+    "word_family": [
+      "faded (adj)",
+      "fade-out (n)"
+    ],
+    "collocations": [
+      "fade away",
+      "fade out",
+      "fade into"
+    ],
+    "synonyms": [
+      "pale",
+      "dim",
+      "bleach"
+    ],
+    "antonyms": [
+      "brighten",
+      "intensify"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "The color fades away slowly.",
+        "correct": "The color fades slowly.",
+        "explain_vi": "Không cần 'away' khi nói về sự phai màu."
+      }
+    ],
+    "grammar_patterns": [
+      "fade + adverb"
+    ]
+  },
+  {
+    "word": "shade",
+    "phonetic": "/ʃeɪd/",
+    "meaning_vi": "sắc thái (màu sắc), bóng râm",
+    "meaning_en": "a particular variety of a color; darkness caused by something blocking the light",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She painted the room in a light shade of blue.",
+        "vi": "Cô ấy sơn căn phòng với một sắc xanh lam nhạt."
+      },
+      {
+        "en": "We sat in the shade of a tree.",
+        "vi": "Chúng tôi ngồi trong bóng râm của một cái cây."
+      }
+    ],
+    "word_family": [
+      "shady (adj)",
+      "shadiness (n)"
+    ],
+    "collocations": [
+      "shade of color",
+      "lamp shade",
+      "shade tree"
+    ],
+    "synonyms": [
+      "hue",
+      "tint",
+      "shadow"
+    ],
+    "antonyms": [
+      "light"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I like this shade of color.",
+        "correct": "I like this shade of color.",
+        "explain_vi": "Cách dùng đúng."
+      }
+    ],
+    "grammar_patterns": [
+      "shade + of + noun"
+    ]
+  },
+  {
+    "word": "tone",
+    "phonetic": "/toʊn/",
+    "meaning_vi": "tông màu, sắc điệu",
+    "meaning_en": "the general quality or character of a color, or a particular shade of a color",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The room is decorated in warm tones.",
+        "vi": "Căn phòng được trang trí với các tông màu ấm."
+      },
+      {
+        "en": "She used a tone of green for the walls.",
+        "vi": "Cô ấy dùng một tông màu xanh lục cho các bức tường."
+      }
+    ],
+    "word_family": [
+      "tonal (adj)",
+      "tonality (n)"
+    ],
+    "collocations": [
+      "warm tone",
+      "cool tone",
+      "skin tone"
+    ],
+    "synonyms": [
+      "shade",
+      "hue",
+      "color"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I like the tone of this color.",
+        "correct": "I like the tone of this color.",
+        "explain_vi": "Cách dùng đúng."
+      }
+    ],
+    "grammar_patterns": [
+      "tone + of + noun"
+    ]
+  },
+  {
+    "word": "gradient",
+    "phonetic": "/ˈɡreɪ.di.ənt/",
+    "meaning_vi": "sự chuyển màu, dải màu",
+    "meaning_en": "a gradual change from one color to another",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The logo uses a gradient from blue to green.",
+        "vi": "Logo sử dụng sự chuyển màu từ xanh lam sang xanh lục."
+      },
+      {
+        "en": "A gradient effect makes the design look modern.",
+        "vi": "Hiệu ứng chuyển màu làm thiết kế trông hiện đại."
+      }
+    ],
+    "word_family": [
+      "gradational (adj)"
+    ],
+    "collocations": [
+      "color gradient",
+      "gradient background",
+      "linear gradient"
+    ],
+    "synonyms": [
+      "transition",
+      "graduation"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "The gradient is from blue to red.",
+        "correct": "The gradient goes from blue to red.",
+        "explain_vi": "Thường dùng động từ 'go' hoặc 'run' với gradient."
+      }
+    ],
+    "grammar_patterns": [
+      "gradient + from + noun + to + noun"
+    ]
+  },
+  {
+    "word": "ellipse",
+    "phonetic": "/ɪˈlɪps/",
+    "meaning_vi": "hình elip",
+    "meaning_en": "a regular oval shape",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The planets orbit the sun in an ellipse.",
+        "vi": "Các hành tinh quay quanh mặt trời theo hình elip."
+      },
+      {
+        "en": "She drew an ellipse on the paper.",
+        "vi": "Cô ấy vẽ một hình elip trên giấy."
+      }
+    ],
+    "word_family": [
+      "elliptical (adj)"
+    ],
+    "collocations": [
+      "elliptical shape",
+      "elliptical orbit"
+    ],
+    "synonyms": [
+      "oval"
+    ],
+    "antonyms": [
+      "circle"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "An ellipse is like a circle.",
+        "correct": "An ellipse is like an oval.",
+        "explain_vi": "Elip giống hình bầu dục hơn là hình tròn."
+      }
+    ],
+    "grammar_patterns": [
+      "an + ellipse"
+    ]
+  },
+  {
+    "word": "rectangle",
+    "phonetic": "/ˈrek.tæŋ.ɡəl/",
+    "meaning_vi": "hình chữ nhật",
+    "meaning_en": "a shape with four straight sides and four right angles, with opposite sides of equal length",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The table is a rectangle.",
+        "vi": "Cái bàn có hình chữ nhật."
+      },
+      {
+        "en": "Draw a rectangle on the board.",
+        "vi": "Vẽ một hình chữ nhật lên bảng."
+      }
+    ],
+    "word_family": [
+      "rectangular (adj)"
+    ],
+    "collocations": [
+      "rectangle shape",
+      "rectangle area"
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "square"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "A rectangle has four equal sides.",
+        "correct": "A rectangle has opposite sides equal.",
+        "explain_vi": "Hình chữ nhật có các cạnh đối bằng nhau, không phải tất cả các cạnh đều bằng nhau."
+      }
+    ],
+    "grammar_patterns": [
+      "a + rectangle"
+    ]
+  },
+  {
+    "word": "triangle",
+    "phonetic": "/ˈtraɪ.æŋ.ɡəl/",
+    "meaning_vi": "hình tam giác",
+    "meaning_en": "a shape with three straight sides and three angles",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "A triangle has three sides.",
+        "vi": "Một hình tam giác có ba cạnh."
+      },
+      {
+        "en": "The roof is shaped like a triangle.",
+        "vi": "Mái nhà có hình tam giác."
+      }
+    ],
+    "word_family": [
+      "triangular (adj)"
+    ],
+    "collocations": [
+      "right triangle",
+      "equilateral triangle",
+      "triangle shape"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "A triangle has four sides.",
+        "correct": "A triangle has three sides.",
+        "explain_vi": "Tam giác có ba cạnh."
+      }
+    ],
+    "grammar_patterns": [
+      "a + triangle"
+    ]
+  },
+  {
+    "word": "circle",
+    "phonetic": "/ˈsɜːr.kəl/",
+    "meaning_vi": "hình tròn",
+    "meaning_en": "a round shape consisting of a curved line that is completely round and has no straight parts",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She drew a circle on the paper.",
+        "vi": "Cô ấy vẽ một hình tròn trên giấy."
+      },
+      {
+        "en": "The children sat in a circle.",
+        "vi": "Bọn trẻ ngồi thành một vòng tròn."
+      }
+    ],
+    "word_family": [
+      "circular (adj)",
+      "encircle (v)"
+    ],
+    "collocations": [
+      "circle shape",
+      "full circle",
+      "circle game"
+    ],
+    "synonyms": [
+      "round",
+      "ring"
+    ],
+    "antonyms": [
+      "square"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "A circle is a shape with four sides.",
+        "correct": "A circle is a round shape with no sides.",
+        "explain_vi": "Hình tròn không có cạnh."
+      }
+    ],
+    "grammar_patterns": [
+      "a + circle"
+    ]
+  },
+  {
+    "word": "square",
+    "phonetic": "/skwer/",
+    "meaning_vi": "hình vuông",
+    "meaning_en": "a shape with four straight sides of equal length and four right angles",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The window is a square.",
+        "vi": "Cửa sổ có hình vuông."
+      },
+      {
+        "en": "Fold the paper into a square.",
+        "vi": "Gấp tờ giấy thành hình vuông."
+      }
+    ],
+    "word_family": [
+      "square (adj)",
+      "squarely (adv)"
+    ],
+    "collocations": [
+      "square shape",
+      "square meter",
+      "square root"
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "circle"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "A square has four sides of different lengths.",
+        "correct": "A square has four equal sides.",
+        "explain_vi": "Hình vuông có bốn cạnh bằng nhau."
+      }
+    ],
+    "grammar_patterns": [
+      "a + square"
+    ]
+  },
+  {
+    "word": "hexagon",
+    "phonetic": "/ˈhek.sə.ɡɑːn/",
+    "meaning_vi": "hình lục giác",
+    "meaning_en": "a shape with six straight sides",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "A honeycomb is made of hexagons.",
+        "vi": "Tổ ong được tạo thành từ các hình lục giác."
+      },
+      {
+        "en": "The tile is shaped like a hexagon.",
+        "vi": "Viên gạch có hình lục giác."
+      }
+    ],
+    "word_family": [
+      "hexagonal (adj)"
+    ],
+    "collocations": [
+      "hexagon shape",
+      "regular hexagon"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "A hexagon has eight sides.",
+        "correct": "A hexagon has six sides.",
+        "explain_vi": "Lục giác có sáu cạnh."
+      }
+    ],
+    "grammar_patterns": [
+      "a + hexagon"
+    ]
+  },
+  {
+    "word": "oval",
+    "phonetic": "/ˈoʊ.vəl/",
+    "meaning_vi": "hình bầu dục",
+    "meaning_en": "a shape like a circle but longer than it is wide",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The mirror is an oval.",
+        "vi": "Cái gương có hình bầu dục."
+      },
+      {
+        "en": "She has an oval face.",
+        "vi": "Cô ấy có khuôn mặt hình bầu dục."
+      }
+    ],
+    "word_family": [
+      "oval (adj)"
+    ],
+    "collocations": [
+      "oval shape",
+      "oval table"
+    ],
+    "synonyms": [
+      "ellipse"
+    ],
+    "antonyms": [
+      "circle"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "An oval is a perfect circle.",
+        "correct": "An oval is an elongated circle.",
+        "explain_vi": "Oval là hình tròn kéo dài, không phải hình tròn hoàn hảo."
+      }
+    ],
+    "grammar_patterns": [
+      "an + oval"
+    ]
+  },
+  {
+    "word": "diamond",
+    "phonetic": "/ˈdaɪ.ə.mənd/",
+    "meaning_vi": "hình thoi",
+    "meaning_en": "a shape with four straight sides of equal length that form two opposite acute angles and two opposite obtuse angles",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The kite is shaped like a diamond.",
+        "vi": "Con diều có hình thoi."
+      },
+      {
+        "en": "She wore a diamond-shaped necklace.",
+        "vi": "Cô ấy đeo một chiếc vòng cổ hình thoi."
+      }
+    ],
+    "word_family": [
+      "diamond (adj)"
+    ],
+    "collocations": [
+      "diamond shape",
+      "diamond pattern"
+    ],
+    "synonyms": [
+      "rhombus"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "A diamond has five sides.",
+        "correct": "A diamond has four sides.",
+        "explain_vi": "Hình thoi có bốn cạnh."
+      }
+    ],
+    "grammar_patterns": [
+      "a + diamond"
+    ]
+  },
+  {
+    "word": "star",
+    "phonetic": "/stɑːr/",
+    "meaning_vi": "hình ngôi sao",
+    "meaning_en": "a shape with five or more points",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The child drew a star on the paper.",
+        "vi": "Đứa trẻ vẽ một ngôi sao trên giấy."
+      },
+      {
+        "en": "The flag has a star shape.",
+        "vi": "Lá cờ có hình ngôi sao."
+      }
+    ],
+    "word_family": [
+      "star (adj)",
+      "starry (adj)"
+    ],
+    "collocations": [
+      "star shape",
+      "five-pointed star"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "A star has four points.",
+        "correct": "A star has five points (usually).",
+        "explain_vi": "Ngôi sao thường có năm cánh."
+      }
+    ],
+    "grammar_patterns": [
+      "a + star"
+    ]
+  },
+  {
+    "word": "crescent",
+    "phonetic": "/ˈkres.ənt/",
+    "meaning_vi": "hình lưỡi liềm",
+    "meaning_en": "a curved shape that is wide in the middle and pointed at the ends, like the moon in its first or last quarter",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The moon is a crescent tonight.",
+        "vi": "Trăng hôm nay là trăng lưỡi liềm."
+      },
+      {
+        "en": "She has a crescent-shaped scar.",
+        "vi": "Cô ấy có một vết sẹo hình lưỡi liềm."
+      }
+    ],
+    "word_family": [
+      "crescent (adj)"
+    ],
+    "collocations": [
+      "crescent moon",
+      "crescent shape"
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "full moon"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "A crescent is a full circle.",
+        "correct": "A crescent is a curved shape.",
+        "explain_vi": "Hình lưỡi liềm không phải hình tròn đầy."
+      }
+    ],
+    "grammar_patterns": [
+      "a + crescent"
+    ]
+  },
+  {
+    "word": "arch",
+    "phonetic": "/ɑːrtʃ/",
+    "meaning_vi": "hình vòm, đường cong",
+    "meaning_en": "a curved shape that is higher in the middle than at the ends",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The bridge has a beautiful arch.",
+        "vi": "Cây cầu có một vòm đẹp."
+      },
+      {
+        "en": "She raised her eyebrows in an arch.",
+        "vi": "Cô ấy nhướng lông mày thành hình vòm."
+      }
+    ],
+    "word_family": [
+      "arched (adj)",
+      "archway (n)"
+    ],
+    "collocations": [
+      "arch shape",
+      "arch bridge"
+    ],
+    "synonyms": [
+      "curve",
+      "vault"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "An arch is a straight line.",
+        "correct": "An arch is a curved line.",
+        "explain_vi": "Hình vòm là đường cong."
+      }
+    ],
+    "grammar_patterns": [
+      "an + arch"
+    ]
+  },
+  {
+    "word": "cone",
+    "phonetic": "/koʊn/",
+    "meaning_vi": "hình nón",
+    "meaning_en": "a solid shape with a round base and a point at the top",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "An ice cream cone is shaped like a cone.",
+        "vi": "Ốc quế kem có hình nón."
+      },
+      {
+        "en": "The party hat is a cone.",
+        "vi": "Mũ tiệc có hình nón."
+      }
+    ],
+    "word_family": [
+      "conical (adj)"
+    ],
+    "collocations": [
+      "cone shape",
+      "traffic cone",
+      "cone of light"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "A cone has two flat ends.",
+        "correct": "A cone has one round base and one point.",
+        "explain_vi": "Hình nón có một đáy tròn và một đỉnh nhọn."
+      }
+    ],
+    "grammar_patterns": [
+      "a + cone"
+    ]
+  },
+  {
+    "word": "spectrum",
+    "phonetic": "/ˈspek.trəm/",
+    "meaning_vi": "quang phổ",
+    "meaning_en": "a range of different colors produced when light passes through a prism",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The rainbow shows the full spectrum of colors.",
+        "vi": "Cầu vồng cho thấy toàn bộ quang phổ màu sắc."
+      }
+    ],
+    "word_family": [
+      "spectral (adj)"
+    ],
+    "collocations": [
+      "full spectrum",
+      "visible spectrum",
+      "color spectrum"
+    ],
+    "synonyms": [
+      "range",
+      "array"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "spectrum of colours",
+        "correct": "spectrum of colors",
+        "explain_vi": "Trong tiếng Anh Mỹ, 'colors' thường dùng hơn 'colours'."
+      }
+    ],
+    "grammar_patterns": [
+      "the + spectrum + of + noun"
+    ]
+  },
+  {
+    "word": "prism",
+    "phonetic": "/ˈprɪz.əm/",
+    "meaning_vi": "lăng kính",
+    "meaning_en": "a transparent object that separates white light into different colors",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Light passing through a prism creates a rainbow.",
+        "vi": "Ánh sáng đi qua lăng kính tạo ra cầu vồng."
+      }
+    ],
+    "word_family": [
+      "prismatic (adj)"
+    ],
+    "collocations": [
+      "through a prism",
+      "glass prism",
+      "prismatic effect"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "prism of light",
+        "correct": "prism splits light",
+        "explain_vi": "'Prism of light' không tự nhiên; dùng 'prism splits light'."
+      }
+    ],
+    "grammar_patterns": [
+      "a + prism",
+      "through + a + prism"
+    ]
+  },
+  {
+    "word": "hue",
+    "phonetic": "/hjuː/",
+    "meaning_vi": "sắc thái",
+    "meaning_en": "a particular shade or variety of a color",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The painting uses warm hues like red and orange.",
+        "vi": "Bức tranh sử dụng các sắc thái ấm như đỏ và cam."
+      }
+    ],
+    "word_family": [
+      "hued (adj)"
+    ],
+    "collocations": [
+      "warm hues",
+      "cool hues",
+      "similar hues"
+    ],
+    "synonyms": [
+      "shade",
+      "tint",
+      "tone"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "hue of color",
+        "correct": "hue of a color",
+        "explain_vi": "Thường dùng 'hue of a color' với mạo từ."
+      }
+    ],
+    "grammar_patterns": [
+      "hue + of",
+      "adjective + hue"
+    ]
+  },
+  {
+    "word": "shade",
+    "phonetic": "/ʃeɪd/",
+    "meaning_vi": "bóng đổ; sắc thái (màu)",
+    "meaning_en": "a particular variety of a color; also, an area of darkness",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She prefers lighter shades of blue.",
+        "vi": "Cô ấy thích các sắc thái xanh dương nhạt hơn."
+      }
+    ],
+    "word_family": [
+      "shady (adj)",
+      "shading (n)"
+    ],
+    "collocations": [
+      "lighter shade",
+      "darker shade",
+      "shade of color"
+    ],
+    "synonyms": [
+      "hue",
+      "tint",
+      "tone"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "shade of colour",
+        "correct": "shade of color",
+        "explain_vi": "Tương tự 'spectrum', dùng 'color' trong tiếng Anh Mỹ."
+      }
+    ],
+    "grammar_patterns": [
+      "shade + of",
+      "adjective + shade"
+    ]
+  },
+  {
+    "word": "tint",
+    "phonetic": "/tɪnt/",
+    "meaning_vi": "màu nhạt; pha màu",
+    "meaning_en": "a small amount of a color; a variety of a color made by adding white",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Add a tint of green to the mixture.",
+        "vi": "Thêm một chút màu xanh lá vào hỗn hợp."
+      }
+    ],
+    "word_family": [
+      "tinted (adj)",
+      "tinting (n)"
+    ],
+    "collocations": [
+      "tint of color",
+      "slight tint",
+      "green tint"
+    ],
+    "synonyms": [
+      "hue",
+      "shade",
+      "tinge"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "tint of colour",
+        "correct": "tint of color",
+        "explain_vi": "Dùng 'color' thay 'colour' cho nhất quán."
+      }
+    ],
+    "grammar_patterns": [
+      "a + tint + of + noun"
+    ]
+  },
+  {
+    "word": "pigment",
+    "phonetic": "/ˈpɪɡ.mənt/",
+    "meaning_vi": "chất màu",
+    "meaning_en": "a natural substance that gives color to things, such as plants, animals, or paints",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Chlorophyll is the pigment that makes leaves green.",
+        "vi": "Diệp lục là chất màu làm cho lá cây xanh."
+      }
+    ],
+    "word_family": [
+      "pigmented (adj)",
+      "pigmentation (n)"
+    ],
+    "collocations": [
+      "natural pigment",
+      "synthetic pigment",
+      "pigment molecules"
+    ],
+    "synonyms": [
+      "coloring",
+      "dye"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "pigment color",
+        "correct": "color pigment",
+        "explain_vi": "Thứ tự từ: 'color pigment' là cụm danh từ đúng."
+      }
+    ],
+    "grammar_patterns": [
+      "pigment + of",
+      "adjective + pigment"
+    ]
+  },
+  {
+    "word": "contour",
+    "phonetic": "/ˈkɒn.tɔːr/",
+    "meaning_vi": "đường viền; đường nét",
+    "meaning_en": "the outline or shape of something",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The contour of the mountain was clear against the sky.",
+        "vi": "Đường viền của ngọn núi hiện rõ trên nền trời."
+      }
+    ],
+    "word_family": [
+      "contoured (adj)",
+      "contouring (n)"
+    ],
+    "collocations": [
+      "contour line",
+      "body contour",
+      "contour map"
+    ],
+    "synonyms": [
+      "outline",
+      "silhouette",
+      "profile"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "contour of shape",
+        "correct": "contour of a shape",
+        "explain_vi": "Thêm mạo từ 'a' trước 'shape'."
+      }
+    ],
+    "grammar_patterns": [
+      "the + contour + of + noun"
+    ]
+  },
+  {
+    "word": "silhouette",
+    "phonetic": "/ˌsɪl.uˈet/",
+    "meaning_vi": "bóng dáng; hình bóng",
+    "meaning_en": "the dark shape and outline of someone or something visible against a lighter background",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I saw the silhouette of a man in the doorway.",
+        "vi": "Tôi thấy bóng dáng một người đàn ông ở cửa."
+      }
+    ],
+    "word_family": [
+      "silhouetted (adj)"
+    ],
+    "collocations": [
+      "in silhouette",
+      "silhouette of",
+      "dark silhouette"
+    ],
+    "synonyms": [
+      "outline",
+      "contour",
+      "shadow"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "silhouette of man",
+        "correct": "silhouette of a man",
+        "explain_vi": "Thiếu mạo từ 'a'."
+      }
+    ],
+    "grammar_patterns": [
+      "in + silhouette",
+      "silhouette + of"
+    ]
+  },
+  {
+    "word": "translucent",
+    "phonetic": "/trænsˈluː.sənt/",
+    "meaning_vi": "mờ; trong mờ",
+    "meaning_en": "allowing light to pass through but not completely transparent",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "Frosted glass is translucent.",
+        "vi": "Kính mờ là trong mờ."
+      }
+    ],
+    "word_family": [
+      "translucency (n)"
+    ],
+    "collocations": [
+      "translucent material",
+      "translucent glass",
+      "translucent skin"
+    ],
+    "synonyms": [
+      "semi-transparent",
+      "opalescent"
+    ],
+    "antonyms": [
+      "opaque",
+      "transparent"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "translucent window",
+        "correct": "translucent glass",
+        "explain_vi": "Thường dùng với 'glass' hơn là 'window'."
+      }
+    ],
+    "grammar_patterns": [
+      "translucent + noun"
+    ]
+  },
+  {
+    "word": "opaque",
+    "phonetic": "/oʊˈpeɪk/",
+    "meaning_vi": "đục; không trong suốt",
+    "meaning_en": "not allowing light to pass through",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The paint is opaque, so it covers the old color completely.",
+        "vi": "Sơn này đục, vì vậy nó phủ hoàn toàn màu cũ."
+      }
+    ],
+    "word_family": [
+      "opacity (n)"
+    ],
+    "collocations": [
+      "opaque color",
+      "opaque object",
+      "opaque material"
+    ],
+    "synonyms": [
+      "non-transparent",
+      "cloudy"
+    ],
+    "antonyms": [
+      "transparent",
+      "translucent"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "opaque glass",
+        "correct": "opaque material",
+        "explain_vi": "Kính thường trong, nên dùng 'material' chung chung."
+      }
+    ],
+    "grammar_patterns": [
+      "opaque + noun"
+    ]
+  },
+  {
+    "word": "iridescent",
+    "phonetic": "/ˌɪr.ɪˈdes.ənt/",
+    "meaning_vi": "ánh kim; óng ánh nhiều màu",
+    "meaning_en": "showing colors that seem to change when seen from different angles",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The butterfly's wings are iridescent.",
+        "vi": "Cánh bướm óng ánh nhiều màu."
+      }
+    ],
+    "word_family": [
+      "iridescence (n)"
+    ],
+    "collocations": [
+      "iridescent colors",
+      "iridescent effect",
+      "iridescent sheen"
+    ],
+    "synonyms": [
+      "opalescent",
+      "shimmering"
+    ],
+    "antonyms": [
+      "dull",
+      "matte"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "iridescent color",
+        "correct": "iridescent colors",
+        "explain_vi": "Thường dùng số nhiều vì có nhiều màu."
+      }
+    ],
+    "grammar_patterns": [
+      "iridescent + noun"
+    ]
+  },
+  {
+    "word": "monochrome",
+    "phonetic": "/ˈmɒn.ə.krəʊm/",
+    "meaning_vi": "đơn sắc",
+    "meaning_en": "using only one color or shades of one color",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The photograph is monochrome.",
+        "vi": "Bức ảnh là đơn sắc."
+      }
+    ],
+    "word_family": [
+      "monochromatic (adj)"
+    ],
+    "collocations": [
+      "monochrome image",
+      "monochrome palette",
+      "monochrome design"
+    ],
+    "synonyms": [
+      "black-and-white",
+      "single-color"
+    ],
+    "antonyms": [
+      "polychrome",
+      "multicolored"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "monochrome color",
+        "correct": "monochrome image",
+        "explain_vi": "'Monochrome' thường dùng với 'image' hơn là 'color'."
+      }
+    ],
+    "grammar_patterns": [
+      "monochrome + noun"
+    ]
+  },
+  {
+    "word": "polychrome",
+    "phonetic": "/ˈpɒl.ɪ.krəʊm/",
+    "meaning_vi": "nhiều màu; đa sắc",
+    "meaning_en": "having several colors",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The polychrome sculpture was very detailed.",
+        "vi": "Tác phẩm điêu khắc đa sắc rất chi tiết."
+      }
+    ],
+    "word_family": [
+      "polychromatic (adj)"
+    ],
+    "collocations": [
+      "polychrome decoration",
+      "polychrome pottery",
+      "polychrome effect"
+    ],
+    "synonyms": [
+      "multicolored",
+      "variegated"
+    ],
+    "antonyms": [
+      "monochrome",
+      "plain"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "polychrome colors",
+        "correct": "polychrome object",
+        "explain_vi": "Không dùng 'colors' vì 'polychrome' đã bao hàm nhiều màu."
+      }
+    ],
+    "grammar_patterns": [
+      "polychrome + noun"
+    ]
+  },
+  {
+    "word": "sphere",
+    "phonetic": "/sfɪər/",
+    "meaning_vi": "hình cầu",
+    "meaning_en": "a round solid figure with every point on its surface equidistant from its center",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "A ball is a sphere.",
+        "vi": "Quả bóng là hình cầu."
+      }
+    ],
+    "word_family": [
+      "spherical (adj)",
+      "spherically (adv)"
+    ],
+    "collocations": [
+      "perfect sphere",
+      "sphere of influence",
+      "sphere shape"
+    ],
+    "synonyms": [
+      "globe",
+      "ball"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "sphere shape",
+        "correct": "spherical shape",
+        "explain_vi": "Dùng tính từ 'spherical' thay vì danh từ 'sphere'."
+      }
+    ],
+    "grammar_patterns": [
+      "a + sphere",
+      "sphere + of"
+    ]
+  },
+  {
+    "word": "cube",
+    "phonetic": "/kjuːb/",
+    "meaning_vi": "hình lập phương",
+    "meaning_en": "a solid shape with six equal square sides",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "A dice is a cube.",
+        "vi": "Con xúc xắc là hình lập phương."
+      }
+    ],
+    "word_family": [
+      "cubic (adj)",
+      "cubical (adj)"
+    ],
+    "collocations": [
+      "cube shape",
+      "cube of sugar",
+      "ice cube"
+    ],
+    "synonyms": [
+      "hexahedron"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "cube shape",
+        "correct": "cubic shape",
+        "explain_vi": "Dùng tính từ 'cubic'."
+      }
+    ],
+    "grammar_patterns": [
+      "a + cube",
+      "cube + of"
+    ]
+  },
+  {
+    "word": "pattern",
+    "phonetic": "/ˈpæt.ən/",
+    "meaning_vi": "hoa văn; mẫu hình",
+    "meaning_en": "a repeated decorative design or arrangement",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The fabric has a floral pattern.",
+        "vi": "Vải có hoa văn hình hoa."
+      }
+    ],
+    "word_family": [
+      "patterned (adj)",
+      "patterning (n)"
+    ],
+    "collocations": [
+      "geometric pattern",
+      "floral pattern",
+      "pattern design"
+    ],
+    "synonyms": [
+      "design",
+      "motif",
+      "decoration"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "pattern of colors",
+        "correct": "color pattern",
+        "explain_vi": "Thường nói 'color pattern' hơn."
+      }
+    ],
+    "grammar_patterns": [
+      "pattern + of",
+      "adjective + pattern"
+    ]
+  },
+  {
+    "word": "contrast",
+    "phonetic": "/ˈkɒn.træst/",
+    "meaning_vi": "sự tương phản",
+    "meaning_en": "the difference in color or brightness between parts of an image",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The contrast between black and white is striking.",
+        "vi": "Sự tương phản giữa đen và trắng rất nổi bật."
+      }
+    ],
+    "word_family": [
+      "contrasting (adj)",
+      "contrastive (adj)"
+    ],
+    "collocations": [
+      "high contrast",
+      "low contrast",
+      "color contrast"
+    ],
+    "synonyms": [
+      "difference",
+      "disparity"
+    ],
+    "antonyms": [
+      "similarity",
+      "uniformity"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "contrast color",
+        "correct": "contrasting color",
+        "explain_vi": "Dùng tính từ 'contrasting'."
+      }
+    ],
+    "grammar_patterns": [
+      "contrast + between",
+      "in contrast to"
+    ]
+  },
+  {
+    "word": "vivid",
+    "phonetic": "/ˈvɪv.ɪd/",
+    "meaning_vi": "rực rỡ; sống động",
+    "meaning_en": "bright and strong in color",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "She wore a vivid red dress.",
+        "vi": "Cô ấy mặc một chiếc váy đỏ rực rỡ."
+      }
+    ],
+    "word_family": [
+      "vividly (adv)",
+      "vividness (n)"
+    ],
+    "collocations": [
+      "vivid color",
+      "vivid memory",
+      "vivid description"
+    ],
+    "synonyms": [
+      "bright",
+      "intense",
+      "lively"
+    ],
+    "antonyms": [
+      "dull",
+      "pale",
+      "muted"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "vivid colour",
+        "correct": "vivid color",
+        "explain_vi": "Dùng 'color' cho nhất quán."
+      }
+    ],
+    "grammar_patterns": [
+      "vivid + noun"
+    ]
+  },
+  {
+    "word": "blend",
+    "phonetic": "/blend/",
+    "meaning_vi": "pha trộn; hòa trộn",
+    "meaning_en": "to mix two or more colors together smoothly",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "Blend the blue and yellow to make green.",
+        "vi": "Pha trộn xanh dương và vàng để tạo ra xanh lá."
+      }
+    ],
+    "word_family": [
+      "blender (n)",
+      "blending (n)"
+    ],
+    "collocations": [
+      "blend colors",
+      "blend together",
+      "blend in"
+    ],
+    "synonyms": [
+      "mix",
+      "combine",
+      "merge"
+    ],
+    "antonyms": [
+      "separate",
+      "divide"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "blend of colors",
+        "correct": "blend colors",
+        "explain_vi": "Khi là động từ, không dùng 'of'."
+      }
+    ],
+    "grammar_patterns": [
+      "blend + noun",
+      "blend + with"
+    ]
+  },
+  {
+    "word": "fade",
+    "phonetic": "/feɪd/",
+    "meaning_vi": "phai màu; nhạt dần",
+    "meaning_en": "to lose color gradually",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "The curtains have faded in the sun.",
+        "vi": "Rèm cửa đã phai màu dưới ánh nắng."
+      }
+    ],
+    "word_family": [
+      "faded (adj)",
+      "fading (n)"
+    ],
+    "collocations": [
+      "fade away",
+      "fade out",
+      "fade in"
+    ],
+    "synonyms": [
+      "pale",
+      "bleach",
+      "wash out"
+    ],
+    "antonyms": [
+      "brighten",
+      "intensify"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "fade color",
+        "correct": "color fades",
+        "explain_vi": "Dùng 'color fades' thay vì 'fade color'."
+      }
+    ],
+    "grammar_patterns": [
+      "fade + adverb",
+      "fade + from"
+    ]
+  },
+  {
+    "word": "swatch",
+    "phonetic": "/swɒtʃ/",
+    "meaning_vi": "mẫu màu",
+    "meaning_en": "a small sample of fabric or color",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She chose a paint swatch for the living room.",
+        "vi": "Cô ấy chọn một mẫu màu sơn cho phòng khách."
+      }
+    ],
+    "word_family": [
+      "swatch (v)"
+    ],
+    "collocations": [
+      "paint swatch",
+      "color swatch",
+      "fabric swatch"
+    ],
+    "synonyms": [
+      "sample",
+      "specimen"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "She chose a swatch color.",
+        "correct": "She chose a color swatch.",
+        "explain_vi": "Thứ tự từ: 'color swatch' mới đúng."
+      }
+    ],
+    "grammar_patterns": [
+      "a swatch of + noun"
+    ]
+  },
+  {
+    "word": "pastel",
+    "phonetic": "/pæˈstel/",
+    "meaning_vi": "màu phấn (nhạt, dịu)",
+    "meaning_en": "a soft, pale color",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The nursery was painted in pastel colors.",
+        "vi": "Phòng trẻ em được sơn màu phấn nhẹ nhàng."
+      }
+    ],
+    "word_family": [
+      "pastel (n)"
+    ],
+    "collocations": [
+      "pastel shade",
+      "pastel palette",
+      "pastel tones"
+    ],
+    "synonyms": [
+      "soft",
+      "pale",
+      "light"
+    ],
+    "antonyms": [
+      "bright",
+      "vibrant"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "pastel color is very beautiful.",
+        "correct": "Pastel colors are very beautiful.",
+        "explain_vi": "Dùng số nhiều 'colors' vì nói chung."
+      }
+    ],
+    "grammar_patterns": [
+      "pastel + noun"
+    ]
+  },
+  {
+    "word": "neon",
+    "phonetic": "/ˈniː.ɒn/",
+    "meaning_vi": "màu neon (sáng chói)",
+    "meaning_en": "a very bright, fluorescent color",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "She wore a neon pink dress to the party.",
+        "vi": "Cô ấy mặc một chiếc váy màu hồng neon đến bữa tiệc."
+      }
+    ],
+    "word_family": [
+      "neon (n)"
+    ],
+    "collocations": [
+      "neon light",
+      "neon color",
+      "neon sign"
+    ],
+    "synonyms": [
+      "fluorescent",
+      "bright"
+    ],
+    "antonyms": [
+      "dull",
+      "muted"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "neon color is very bright.",
+        "correct": "Neon colors are very bright.",
+        "explain_vi": "Dùng số nhiều 'colors'."
+      }
+    ],
+    "grammar_patterns": [
+      "neon + noun"
+    ]
+  },
+  {
+    "word": "matte",
+    "phonetic": "/mæt/",
+    "meaning_vi": "mờ, không bóng",
+    "meaning_en": "having a flat, non-shiny surface",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "I prefer matte lipstick over glossy.",
+        "vi": "Tôi thích son môi lì hơn son bóng."
+      }
+    ],
+    "word_family": [
+      "matteness (n)"
+    ],
+    "collocations": [
+      "matte finish",
+      "matte paint",
+      "matte surface"
+    ],
+    "synonyms": [
+      "flat",
+      "dull"
+    ],
+    "antonyms": [
+      "glossy",
+      "shiny"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "matte color is not shiny.",
+        "correct": "Matte colors are not shiny.",
+        "explain_vi": "Dùng số nhiều 'colors'."
+      }
+    ],
+    "grammar_patterns": [
+      "matte + noun"
+    ]
+  },
+  {
+    "word": "glossy",
+    "phonetic": "/ˈɡlɒs.i/",
+    "meaning_vi": "bóng, láng",
+    "meaning_en": "shiny and smooth",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The magazine has a glossy cover.",
+        "vi": "Tạp chí có bìa bóng."
+      }
+    ],
+    "word_family": [
+      "gloss (n)",
+      "glossiness (n)"
+    ],
+    "collocations": [
+      "glossy finish",
+      "glossy paper",
+      "glossy surface"
+    ],
+    "synonyms": [
+      "shiny",
+      "lustrous"
+    ],
+    "antonyms": [
+      "matte",
+      "dull"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "glossy color is attractive.",
+        "correct": "Glossy colors are attractive.",
+        "explain_vi": "Dùng số nhiều 'colors'."
+      }
+    ],
+    "grammar_patterns": [
+      "glossy + noun"
+    ]
+  },
+  {
+    "word": "spectrum",
+    "phonetic": "/ˈspek.trəm/",
+    "meaning_vi": "quang phổ, dải màu",
+    "meaning_en": "the range of colors produced when light is dispersed",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "A rainbow shows the full spectrum of visible light.",
+        "vi": "Cầu vồng hiển thị đầy đủ quang phổ ánh sáng nhìn thấy."
+      }
+    ],
+    "word_family": [
+      "spectral (adj)"
+    ],
+    "collocations": [
+      "color spectrum",
+      "visible spectrum",
+      "broad spectrum"
+    ],
+    "synonyms": [
+      "range",
+      "array"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "spectrum of color",
+        "correct": "spectrum of colors",
+        "explain_vi": "Dùng số nhiều 'colors'."
+      }
+    ],
+    "grammar_patterns": [
+      "the spectrum of + noun"
+    ]
+  },
+  {
+    "word": "pigment",
+    "phonetic": "/ˈpɪɡ.mənt/",
+    "meaning_vi": "chất màu, sắc tố",
+    "meaning_en": "a natural substance that gives color to something",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The artist mixed pigments to create the perfect shade.",
+        "vi": "Họa sĩ trộn các chất màu để tạo ra sắc thái hoàn hảo."
+      }
+    ],
+    "word_family": [
+      "pigmentation (n)",
+      "pigmented (adj)"
+    ],
+    "collocations": [
+      "natural pigment",
+      "synthetic pigment",
+      "pigment in skin"
+    ],
+    "synonyms": [
+      "colorant",
+      "dye"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "pigment is used in painting.",
+        "correct": "Pigments are used in painting.",
+        "explain_vi": "Dùng số nhiều 'pigments' vì nói chung."
+      }
+    ],
+    "grammar_patterns": [
+      "pigment + verb"
+    ]
+  },
+  {
+    "word": "hue",
+    "phonetic": "/hjuː/",
+    "meaning_vi": "màu sắc, sắc thái",
+    "meaning_en": "a color or shade",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The painting has a blue hue.",
+        "vi": "Bức tranh có sắc thái xanh lam."
+      }
+    ],
+    "word_family": [
+      "hued (adj)"
+    ],
+    "collocations": [
+      "warm hue",
+      "cool hue",
+      "different hues"
+    ],
+    "synonyms": [
+      "color",
+      "shade",
+      "tone"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "hue color",
+        "correct": "hue",
+        "explain_vi": "Không cần thêm 'color' vì 'hue' đã là màu sắc."
+      }
+    ],
+    "grammar_patterns": [
+      "a + adjective + hue"
+    ]
+  },
+  {
+    "word": "tint",
+    "phonetic": "/tɪnt/",
+    "meaning_vi": "màu nhạt, pha màu trắng",
+    "meaning_en": "a shade of a color mixed with white",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She added white to create a tint of blue.",
+        "vi": "Cô ấy thêm màu trắng để tạo ra màu xanh nhạt."
+      }
+    ],
+    "word_family": [
+      "tinted (adj)",
+      "tinting (n)"
+    ],
+    "collocations": [
+      "tint of + color",
+      "add a tint",
+      "pastel tint"
+    ],
+    "synonyms": [
+      "pastel",
+      "light shade"
+    ],
+    "antonyms": [
+      "shade"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "tint color",
+        "correct": "tint",
+        "explain_vi": "Không cần thêm 'color'."
+      }
+    ],
+    "grammar_patterns": [
+      "a tint of + color"
+    ]
+  },
+  {
+    "word": "shade",
+    "phonetic": "/ʃeɪd/",
+    "meaning_vi": "sắc thái (màu tối hơn)",
+    "meaning_en": "a darker version of a color mixed with black",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She painted the wall a darker shade of green.",
+        "vi": "Cô ấy sơn tường một sắc thái xanh lá đậm hơn."
+      }
+    ],
+    "word_family": [
+      "shaded (adj)",
+      "shading (n)"
+    ],
+    "collocations": [
+      "shade of + color",
+      "dark shade",
+      "light shade"
+    ],
+    "synonyms": [
+      "tone",
+      "hue"
+    ],
+    "antonyms": [
+      "tint"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "shade color",
+        "correct": "shade",
+        "explain_vi": "Không cần thêm 'color'."
+      }
+    ],
+    "grammar_patterns": [
+      "a shade of + color"
+    ]
+  },
+  {
+    "word": "tone",
+    "phonetic": "/təʊn/",
+    "meaning_vi": "tông màu, sắc độ",
+    "meaning_en": "the quality of a color regarding lightness or darkness",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "This room has a warm tone.",
+        "vi": "Căn phòng này có tông màu ấm."
+      }
+    ],
+    "word_family": [
+      "tonal (adj)",
+      "toned (adj)"
+    ],
+    "collocations": [
+      "warm tone",
+      "cool tone",
+      "skin tone"
+    ],
+    "synonyms": [
+      "shade",
+      "hue"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "tone color",
+        "correct": "tone",
+        "explain_vi": "Không cần thêm 'color'."
+      }
+    ],
+    "grammar_patterns": [
+      "adjective + tone"
+    ]
+  },
+  {
+    "word": "gradient",
+    "phonetic": "/ˈɡreɪ.di.ənt/",
+    "meaning_vi": "sự chuyển màu, dải màu chuyển tiếp",
+    "meaning_en": "a gradual change from one color to another",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The logo uses a gradient from blue to green.",
+        "vi": "Logo sử dụng sự chuyển màu từ xanh lam sang xanh lá."
+      }
+    ],
+    "word_family": [
+      "gradational (adj)"
+    ],
+    "collocations": [
+      "color gradient",
+      "gradient effect",
+      "gradient background"
+    ],
+    "synonyms": [
+      "fade",
+      "transition"
+    ],
+    "antonyms": [
+      "solid color"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "gradient color",
+        "correct": "gradient",
+        "explain_vi": "Không cần thêm 'color'."
+      }
+    ],
+    "grammar_patterns": [
+      "gradient from + color + to + color"
+    ]
+  },
+  {
+    "word": "ellipse",
+    "phonetic": "/ɪˈlɪps/",
+    "meaning_vi": "hình elip",
+    "meaning_en": "an oval shape",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The Earth's orbit is an ellipse.",
+        "vi": "Quỹ đạo của Trái Đất là hình elip."
+      }
+    ],
+    "word_family": [
+      "elliptical (adj)"
+    ],
+    "collocations": [
+      "draw an ellipse",
+      "elliptical shape"
+    ],
+    "synonyms": [
+      "oval"
+    ],
+    "antonyms": [
+      "circle"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "ellipse shape",
+        "correct": "ellipse",
+        "explain_vi": "Không cần thêm 'shape' vì 'ellipse' đã là hình dạng."
+      }
+    ],
+    "grammar_patterns": [
+      "an ellipse"
+    ]
+  },
+  {
+    "word": "rectangle",
+    "phonetic": "/ˈrek.tæŋ.ɡəl/",
+    "meaning_vi": "hình chữ nhật",
+    "meaning_en": "a four-sided shape with right angles",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The table is a rectangle.",
+        "vi": "Cái bàn có hình chữ nhật."
+      }
+    ],
+    "word_family": [
+      "rectangular (adj)"
+    ],
+    "collocations": [
+      "rectangle shape",
+      "area of a rectangle"
+    ],
+    "synonyms": [
+      "oblong"
+    ],
+    "antonyms": [
+      "square"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "rectangle shape",
+        "correct": "rectangle",
+        "explain_vi": "Không cần thêm 'shape'."
+      }
+    ],
+    "grammar_patterns": [
+      "a rectangle"
+    ]
+  },
+  {
+    "word": "triangle",
+    "phonetic": "/ˈtraɪ.æŋ.ɡəl/",
+    "meaning_vi": "hình tam giác",
+    "meaning_en": "a three-sided shape",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "A triangle has three angles.",
+        "vi": "Hình tam giác có ba góc."
+      }
+    ],
+    "word_family": [
+      "triangular (adj)"
+    ],
+    "collocations": [
+      "triangle shape",
+      "right triangle",
+      "equilateral triangle"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "triangle shape",
+        "correct": "triangle",
+        "explain_vi": "Không cần thêm 'shape'."
+      }
+    ],
+    "grammar_patterns": [
+      "a triangle"
+    ]
+  },
+  {
+    "word": "circle",
+    "phonetic": "/ˈsɜː.kəl/",
+    "meaning_vi": "hình tròn",
+    "meaning_en": "a round shape",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She drew a circle on the paper.",
+        "vi": "Cô ấy vẽ một hình tròn trên giấy."
+      }
+    ],
+    "word_family": [
+      "circular (adj)"
+    ],
+    "collocations": [
+      "circle shape",
+      "draw a circle",
+      "in a circle"
+    ],
+    "synonyms": [
+      "ring",
+      "round"
+    ],
+    "antonyms": [
+      "square"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "circle shape",
+        "correct": "circle",
+        "explain_vi": "Không cần thêm 'shape'."
+      }
+    ],
+    "grammar_patterns": [
+      "a circle"
+    ]
+  },
+  {
+    "word": "square",
+    "phonetic": "/skweər/",
+    "meaning_vi": "hình vuông",
+    "meaning_en": "a four-sided shape with equal sides and right angles",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The window is a square.",
+        "vi": "Cửa sổ có hình vuông."
+      }
+    ],
+    "word_family": [
+      "square (adj)",
+      "squarely (adv)"
+    ],
+    "collocations": [
+      "square shape",
+      "square meter",
+      "square root"
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "circle",
+      "rectangle"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "square shape",
+        "correct": "square",
+        "explain_vi": "Không cần thêm 'shape'."
+      }
+    ],
+    "grammar_patterns": [
+      "a square"
+    ]
+  },
+  {
+    "word": "hexagon",
+    "phonetic": "/ˈhek.sə.ɡɒn/",
+    "meaning_vi": "hình lục giác",
+    "meaning_en": "a six-sided shape",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "A hexagon has six sides.",
+        "vi": "Hình lục giác có sáu cạnh."
+      }
+    ],
+    "word_family": [
+      "hexagonal (adj)"
+    ],
+    "collocations": [
+      "hexagon shape",
+      "regular hexagon"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "hexagon shape",
+        "correct": "hexagon",
+        "explain_vi": "Không cần thêm 'shape'."
+      }
+    ],
+    "grammar_patterns": [
+      "a hexagon"
+    ]
+  },
+  {
+    "word": "oval",
+    "phonetic": "/ˈəʊ.vəl/",
+    "meaning_vi": "hình bầu dục",
+    "meaning_en": "an egg-shaped or elliptical shape",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The mirror is an oval.",
+        "vi": "Cái gương có hình bầu dục."
+      }
+    ],
+    "word_family": [
+      "oval (adj)"
+    ],
+    "collocations": [
+      "oval shape",
+      "oval table"
+    ],
+    "synonyms": [
+      "ellipse"
+    ],
+    "antonyms": [
+      "circle"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "oval shape",
+        "correct": "oval",
+        "explain_vi": "Không cần thêm 'shape'."
+      }
+    ],
+    "grammar_patterns": [
+      "an oval"
+    ]
+  },
+  {
+    "word": "diamond",
+    "phonetic": "/ˈdaɪ.ə.mənd/",
+    "meaning_vi": "hình thoi, hình kim cương",
+    "meaning_en": "a shape with four equal sides forming two acute and two obtuse angles",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The kite is shaped like a diamond.",
+        "vi": "Con diều có hình thoi."
+      }
+    ],
+    "word_family": [
+      "diamond (adj)",
+      "diamond-shaped (adj)"
+    ],
+    "collocations": [
+      "diamond shape",
+      "diamond pattern"
+    ],
+    "synonyms": [
+      "rhombus"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "diamond shape",
+        "correct": "diamond",
+        "explain_vi": "Không cần thêm 'shape'."
+      }
+    ],
+    "grammar_patterns": [
+      "a diamond"
+    ]
+  }
+]

@@ -1,0 +1,1592 @@
+[
+  {
+    "word": "family",
+    "phonetic": "/ˈfæm.əl.i/",
+    "meaning_vi": "gia đình",
+    "meaning_en": "a group of people related to each other",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "My family is big.",
+        "vi": "Gia đình tôi lớn."
+      },
+      {
+        "en": "She loves her family.",
+        "vi": "Cô ấy yêu gia đình mình."
+      }
+    ],
+    "word_family": [
+      "familiar (adj)",
+      "familiarize (v)"
+    ],
+    "collocations": [
+      "big family",
+      "family member",
+      "family dinner"
+    ],
+    "synonyms": [
+      "relatives"
+    ],
+    "antonyms": [
+      "stranger"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "My family are big.",
+        "correct": "My family is big.",
+        "explain_vi": "Family là danh từ số ít, dùng 'is' thay vì 'are'."
+      }
+    ],
+    "grammar_patterns": [
+      "possessive + family",
+      "family + is/are"
+    ]
+  },
+  {
+    "word": "friend",
+    "phonetic": "/frend/",
+    "meaning_vi": "bạn bè",
+    "meaning_en": "a person you like and know well",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "He is my friend.",
+        "vi": "Anh ấy là bạn của tôi."
+      },
+      {
+        "en": "I have many friends.",
+        "vi": "Tôi có nhiều bạn."
+      }
+    ],
+    "word_family": [
+      "friendly (adj)",
+      "friendship (n)"
+    ],
+    "collocations": [
+      "best friend",
+      "make friends",
+      "close friend"
+    ],
+    "synonyms": [
+      "buddy",
+      "pal"
+    ],
+    "antonyms": [
+      "enemy"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I have a friend name Lan.",
+        "correct": "I have a friend named Lan.",
+        "explain_vi": "Dùng 'named' thay vì 'name'."
+      }
+    ],
+    "grammar_patterns": [
+      "possessive + friend",
+      "friend + of + possessive"
+    ]
+  },
+  {
+    "word": "neighbor",
+    "phonetic": "/ˈneɪ.bɚ/",
+    "meaning_vi": "hàng xóm",
+    "meaning_en": "someone who lives near you",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "My neighbor is kind.",
+        "vi": "Hàng xóm của tôi tốt bụng."
+      },
+      {
+        "en": "We are neighbors.",
+        "vi": "Chúng tôi là hàng xóm."
+      }
+    ],
+    "word_family": [
+      "neighborhood (n)",
+      "neighboring (adj)"
+    ],
+    "collocations": [
+      "next-door neighbor",
+      "good neighbor",
+      "neighbor's house"
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "stranger"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "My neighbor are friendly.",
+        "correct": "My neighbor is friendly.",
+        "explain_vi": "Neighbor là số ít, dùng 'is'."
+      }
+    ],
+    "grammar_patterns": [
+      "possessive + neighbor",
+      "neighbor + verb (singular/plural)"
+    ]
+  },
+  {
+    "word": "community",
+    "phonetic": "/kəˈmjuː.nə.t̬i/",
+    "meaning_vi": "cộng đồng",
+    "meaning_en": "a group of people living in the same place or having something in common",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Our community is small.",
+        "vi": "Cộng đồng của chúng tôi nhỏ."
+      },
+      {
+        "en": "She works for the community.",
+        "vi": "Cô ấy làm việc cho cộng đồng."
+      }
+    ],
+    "word_family": [
+      "communal (adj)"
+    ],
+    "collocations": [
+      "local community",
+      "community center",
+      "community service"
+    ],
+    "synonyms": [
+      "society"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "The community are happy.",
+        "correct": "The community is happy.",
+        "explain_vi": "Community là danh từ tập hợp, thường dùng số ít."
+      }
+    ],
+    "grammar_patterns": [
+      "the + community",
+      "community + singular verb"
+    ]
+  },
+  {
+    "word": "home",
+    "phonetic": "/hoʊm/",
+    "meaning_vi": "nhà",
+    "meaning_en": "the place where you live",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I stay at home.",
+        "vi": "Tôi ở nhà."
+      },
+      {
+        "en": "My home is near the park.",
+        "vi": "Nhà tôi gần công viên."
+      }
+    ],
+    "word_family": [
+      "homeless (adj)",
+      "homely (adj)"
+    ],
+    "collocations": [
+      "at home",
+      "go home",
+      "stay home"
+    ],
+    "synonyms": [
+      "house",
+      "residence"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go to home.",
+        "correct": "I go home.",
+        "explain_vi": "Không dùng 'to' trước 'home'."
+      }
+    ],
+    "grammar_patterns": [
+      "preposition + home",
+      "go/come/arrive home"
+    ]
+  },
+  {
+    "word": "school",
+    "phonetic": "/skuːl/",
+    "meaning_vi": "trường học",
+    "meaning_en": "a place where children go to learn",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I go to school every day.",
+        "vi": "Tôi đi học mỗi ngày."
+      },
+      {
+        "en": "The school is big.",
+        "vi": "Trường học lớn."
+      }
+    ],
+    "word_family": [
+      "schooling (n)",
+      "schoolchild (n)"
+    ],
+    "collocations": [
+      "go to school",
+      "primary school",
+      "school bus"
+    ],
+    "synonyms": [
+      "academy",
+      "institution"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go to the school.",
+        "correct": "I go to school.",
+        "explain_vi": "Không dùng mạo từ 'the' khi nói về mục đích đi học."
+      }
+    ],
+    "grammar_patterns": [
+      "go to + school",
+      "at school"
+    ]
+  },
+  {
+    "word": "work",
+    "phonetic": "/wɜːrk/",
+    "meaning_vi": "công việc; làm việc",
+    "meaning_en": "a job or the place where you do a job; to do a job",
+    "pos": "noun/verb",
+    "examples": [
+      {
+        "en": "I go to work at eight.",
+        "vi": "Tôi đi làm lúc 8 giờ."
+      },
+      {
+        "en": "She works in a hospital.",
+        "vi": "Cô ấy làm việc ở bệnh viện."
+      }
+    ],
+    "word_family": [
+      "worker (n)",
+      "workplace (n)"
+    ],
+    "collocations": [
+      "go to work",
+      "at work",
+      "hard work"
+    ],
+    "synonyms": [
+      "job",
+      "employment"
+    ],
+    "antonyms": [
+      "leisure",
+      "rest"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I work at office.",
+        "correct": "I work at an office.",
+        "explain_vi": "Cần mạo từ 'an' trước 'office'."
+      }
+    ],
+    "grammar_patterns": [
+      "work as + job",
+      "work + adverb"
+    ]
+  },
+  {
+    "word": "park",
+    "phonetic": "/pɑːrk/",
+    "meaning_vi": "công viên",
+    "meaning_en": "a public area with grass, trees, etc.",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We play in the park.",
+        "vi": "Chúng tôi chơi trong công viên."
+      },
+      {
+        "en": "The park is beautiful.",
+        "vi": "Công viên đẹp."
+      }
+    ],
+    "word_family": [
+      "parking (n)"
+    ],
+    "collocations": [
+      "in the park",
+      "go to the park",
+      "park bench"
+    ],
+    "synonyms": [
+      "garden",
+      "green space"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go to park.",
+        "correct": "I go to the park.",
+        "explain_vi": "Cần mạo từ 'the' trước 'park'."
+      }
+    ],
+    "grammar_patterns": [
+      "the + park",
+      "in/at the park"
+    ]
+  },
+  {
+    "word": "shop",
+    "phonetic": "/ʃɑːp/",
+    "meaning_vi": "cửa hàng",
+    "meaning_en": "a place where you buy things",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I buy food at the shop.",
+        "vi": "Tôi mua thực phẩm ở cửa hàng."
+      },
+      {
+        "en": "The shop is open.",
+        "vi": "Cửa hàng đang mở cửa."
+      }
+    ],
+    "word_family": [
+      "shopping (n)",
+      "shopkeeper (n)"
+    ],
+    "collocations": [
+      "go to the shop",
+      "shop assistant",
+      "shop window"
+    ],
+    "synonyms": [
+      "store",
+      "market"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go shop.",
+        "correct": "I go to the shop.",
+        "explain_vi": "Cần giới từ 'to' và mạo từ 'the'."
+      }
+    ],
+    "grammar_patterns": [
+      "at the shop",
+      "go to the shop"
+    ]
+  },
+  {
+    "word": "market",
+    "phonetic": "/ˈmɑːr.kɪt/",
+    "meaning_vi": "chợ",
+    "meaning_en": "a place where people buy and sell goods",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She goes to the market every Saturday.",
+        "vi": "Cô ấy đi chợ mỗi thứ Bảy."
+      },
+      {
+        "en": "The market is crowded.",
+        "vi": "Chợ đông đúc."
+      }
+    ],
+    "word_family": [
+      "marketing (n)",
+      "marketplace (n)"
+    ],
+    "collocations": [
+      "go to the market",
+      "market day",
+      "market stall"
+    ],
+    "synonyms": [
+      "bazaar",
+      "fair"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go market.",
+        "correct": "I go to the market.",
+        "explain_vi": "Cần 'to the'."
+      }
+    ],
+    "grammar_patterns": [
+      "the + market",
+      "at the market"
+    ]
+  },
+  {
+    "word": "hospital",
+    "phonetic": "/ˈhɑː.spɪ.t̬əl/",
+    "meaning_vi": "bệnh viện",
+    "meaning_en": "a place where sick people get medical care",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "He is in hospital.",
+        "vi": "Anh ấy đang ở bệnh viện."
+      },
+      {
+        "en": "The hospital is new.",
+        "vi": "Bệnh viện mới."
+      }
+    ],
+    "word_family": [
+      "hospitalize (v)",
+      "hospitality (n)"
+    ],
+    "collocations": [
+      "in hospital",
+      "go to hospital",
+      "hospital staff"
+    ],
+    "synonyms": [
+      "clinic",
+      "medical center"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "He is in the hospital.",
+        "correct": "He is in hospital.",
+        "explain_vi": "Không dùng 'the' khi nói về bệnh nhân."
+      }
+    ],
+    "grammar_patterns": [
+      "in hospital",
+      "go to hospital"
+    ]
+  },
+  {
+    "word": "church",
+    "phonetic": "/tʃɜːrtʃ/",
+    "meaning_vi": "nhà thờ",
+    "meaning_en": "a building for Christian religious activities",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "They go to church on Sunday.",
+        "vi": "Họ đi nhà thờ vào Chủ nhật."
+      },
+      {
+        "en": "The church is old.",
+        "vi": "Nhà thờ cổ."
+      }
+    ],
+    "word_family": [
+      "churchgoer (n)",
+      "churchyard (n)"
+    ],
+    "collocations": [
+      "go to church",
+      "at church",
+      "church service"
+    ],
+    "synonyms": [
+      "chapel",
+      "cathedral"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go to the church.",
+        "correct": "I go to church.",
+        "explain_vi": "Không dùng 'the' khi nói về mục đích tôn giáo."
+      }
+    ],
+    "grammar_patterns": [
+      "go to church",
+      "at church"
+    ]
+  },
+  {
+    "word": "police",
+    "phonetic": "/pəˈliːs/",
+    "meaning_vi": "cảnh sát",
+    "meaning_en": "an official organization that protects people and enforces laws",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The police are here.",
+        "vi": "Cảnh sát ở đây."
+      },
+      {
+        "en": "Call the police!",
+        "vi": "Gọi cảnh sát!"
+      }
+    ],
+    "word_family": [
+      "policeman (n)",
+      "policewoman (n)"
+    ],
+    "collocations": [
+      "police officer",
+      "police station",
+      "call the police"
+    ],
+    "synonyms": [
+      "law enforcement"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "The police is here.",
+        "correct": "The police are here.",
+        "explain_vi": "Police là danh từ số nhiều, dùng 'are'."
+      }
+    ],
+    "grammar_patterns": [
+      "the police + plural verb",
+      "police + noun"
+    ]
+  },
+  {
+    "word": "fire station",
+    "phonetic": "/ˈfaɪər ˌsteɪ.ʃən/",
+    "meaning_vi": "trạm cứu hỏa",
+    "meaning_en": "a building where fire engines are kept and firefighters work",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The fire station is on Main Street.",
+        "vi": "Trạm cứu hỏa ở trên đường Main."
+      },
+      {
+        "en": "He works at the fire station.",
+        "vi": "Anh ấy làm việc tại trạm cứu hỏa."
+      }
+    ],
+    "word_family": [
+      "firefighter (n)",
+      "fire engine (n)"
+    ],
+    "collocations": [
+      "at the fire station",
+      "fire station building"
+    ],
+    "synonyms": [
+      "firehouse"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Fire station is near.",
+        "correct": "The fire station is near.",
+        "explain_vi": "Cần mạo từ 'the'."
+      }
+    ],
+    "grammar_patterns": [
+      "the + fire station",
+      "at the fire station"
+    ]
+  },
+  {
+    "word": "library",
+    "phonetic": "/ˈlaɪ.brer.i/",
+    "meaning_vi": "thư viện",
+    "meaning_en": "a place where you can borrow books",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I read books at the library.",
+        "vi": "Tôi đọc sách ở thư viện."
+      },
+      {
+        "en": "The library is quiet.",
+        "vi": "Thư viện yên tĩnh."
+      }
+    ],
+    "word_family": [
+      "librarian (n)",
+      "library card (n)"
+    ],
+    "collocations": [
+      "go to the library",
+      "public library",
+      "library book"
+    ],
+    "synonyms": [
+      "bookstore (different)"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go library.",
+        "correct": "I go to the library.",
+        "explain_vi": "Cần 'to the'."
+      }
+    ],
+    "grammar_patterns": [
+      "the + library",
+      "at the library"
+    ]
+  },
+  {
+    "word": "bus stop",
+    "phonetic": "/ˈbʌs ˌstɑːp/",
+    "meaning_vi": "trạm xe buýt",
+    "meaning_en": "a place where buses stop to let passengers on or off",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I wait at the bus stop.",
+        "vi": "Tôi đợi ở trạm xe buýt."
+      },
+      {
+        "en": "The bus stop is near my house.",
+        "vi": "Trạm xe buýt gần nhà tôi."
+      }
+    ],
+    "word_family": [
+      "bus (n)"
+    ],
+    "collocations": [
+      "at the bus stop",
+      "bus stop sign"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go bus stop.",
+        "correct": "I go to the bus stop.",
+        "explain_vi": "Cần 'to the'."
+      }
+    ],
+    "grammar_patterns": [
+      "the + bus stop",
+      "at the bus stop"
+    ]
+  },
+  {
+    "word": "city",
+    "phonetic": "/ˈsɪt̬.i/",
+    "meaning_vi": "thành phố",
+    "meaning_en": "a large and important town",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I live in a big city.",
+        "vi": "Tôi sống ở một thành phố lớn."
+      },
+      {
+        "en": "The city is busy.",
+        "vi": "Thành phố nhộn nhịp."
+      }
+    ],
+    "word_family": [
+      "citizen (n)",
+      "city hall (n)"
+    ],
+    "collocations": [
+      "in the city",
+      "city center",
+      "city life"
+    ],
+    "synonyms": [
+      "town",
+      "metropolis"
+    ],
+    "antonyms": [
+      "village",
+      "countryside"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I live in city.",
+        "correct": "I live in a city.",
+        "explain_vi": "Cần mạo từ 'a'."
+      }
+    ],
+    "grammar_patterns": [
+      "in the city",
+      "a big city"
+    ]
+  },
+  {
+    "word": "village",
+    "phonetic": "/ˈvɪl.ɪdʒ/",
+    "meaning_vi": "làng",
+    "meaning_en": "a small group of houses in the countryside",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "My grandparents live in a village.",
+        "vi": "Ông bà tôi sống ở một ngôi làng."
+      },
+      {
+        "en": "The village is quiet.",
+        "vi": "Làng yên tĩnh."
+      }
+    ],
+    "word_family": [
+      "villager (n)",
+      "village life (n)"
+    ],
+    "collocations": [
+      "in a village",
+      "small village",
+      "village market"
+    ],
+    "synonyms": [
+      "hamlet",
+      "settlement"
+    ],
+    "antonyms": [
+      "city"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I live in village.",
+        "correct": "I live in a village.",
+        "explain_vi": "Cần mạo từ 'a'."
+      }
+    ],
+    "grammar_patterns": [
+      "in a village",
+      "the village"
+    ]
+  },
+  {
+    "word": "country",
+    "phonetic": "/ˈkʌn.tri/",
+    "meaning_vi": "đất nước; nông thôn",
+    "meaning_en": "a nation; land outside cities",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Vietnam is a beautiful country.",
+        "vi": "Việt Nam là một đất nước xinh đẹp."
+      },
+      {
+        "en": "I like the country.",
+        "vi": "Tôi thích nông thôn."
+      }
+    ],
+    "word_family": [
+      "countryside (n)",
+      "countryman (n)"
+    ],
+    "collocations": [
+      "in the country",
+      "home country",
+      "country life"
+    ],
+    "synonyms": [
+      "nation",
+      "rural area"
+    ],
+    "antonyms": [
+      "city"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I live in country.",
+        "correct": "I live in the country.",
+        "explain_vi": "Cần mạo từ 'the'."
+      }
+    ],
+    "grammar_patterns": [
+      "the + country",
+      "a + country"
+    ]
+  },
+  {
+    "word": "group",
+    "phonetic": "/ɡruːp/",
+    "meaning_vi": "nhóm",
+    "meaning_en": "a number of people or things together",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We are a group of friends.",
+        "vi": "Chúng tôi là một nhóm bạn."
+      },
+      {
+        "en": "The group is big.",
+        "vi": "Nhóm lớn."
+      }
+    ],
+    "word_family": [
+      "grouping (n)",
+      "grouped (adj)"
+    ],
+    "collocations": [
+      "a group of",
+      "group activity",
+      "group work"
+    ],
+    "synonyms": [
+      "team",
+      "crowd"
+    ],
+    "antonyms": [
+      "individual"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "The group are happy.",
+        "correct": "The group is happy.",
+        "explain_vi": "Group thường dùng số ít."
+      }
+    ],
+    "grammar_patterns": [
+      "a group of + plural noun",
+      "the group + singular verb"
+    ]
+  },
+  {
+    "word": "people",
+    "phonetic": "/ˈpiː.pəl/",
+    "meaning_vi": "mọi người, người dân",
+    "meaning_en": "human beings in general or considered collectively",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Many people live in the city.",
+        "vi": "Nhiều người sống ở thành phố."
+      }
+    ],
+    "word_family": [
+      "person (n)"
+    ],
+    "collocations": [
+      "many people",
+      "young people",
+      "old people"
+    ],
+    "synonyms": [
+      "persons",
+      "individuals"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Peoples",
+        "correct": "People",
+        "explain_vi": "'People' là số nhiều, không thêm 's'."
+      }
+    ],
+    "grammar_patterns": [
+      "people + plural verb"
+    ]
+  },
+  {
+    "word": "neighbor",
+    "phonetic": "/ˈneɪ.bər/",
+    "meaning_vi": "hàng xóm",
+    "meaning_en": "a person living near or next door",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "My neighbor is very kind.",
+        "vi": "Hàng xóm của tôi rất tốt bụng."
+      }
+    ],
+    "word_family": [
+      "neighborhood (n)"
+    ],
+    "collocations": [
+      "good neighbor",
+      "next-door neighbor",
+      "neighbor's house"
+    ],
+    "synonyms": [
+      "neighbour (UK)"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Neibor",
+        "correct": "Neighbor",
+        "explain_vi": "Nhớ chữ 'gh' và 'ou'."
+      }
+    ],
+    "grammar_patterns": [
+      "my/your/his neighbor",
+      "the neighbor"
+    ]
+  },
+  {
+    "word": "street",
+    "phonetic": "/striːt/",
+    "meaning_vi": "đường phố",
+    "meaning_en": "a public road in a city or town",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The street is busy.",
+        "vi": "Đường phố đông đúc."
+      }
+    ],
+    "word_family": [
+      "streetcar (n)"
+    ],
+    "collocations": [
+      "main street",
+      "cross the street",
+      "street corner"
+    ],
+    "synonyms": [
+      "road",
+      "avenue"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Streets",
+        "correct": "Street",
+        "explain_vi": "Dùng 'street' không 's' khi nói chung."
+      }
+    ],
+    "grammar_patterns": [
+      "on the street",
+      "in the street"
+    ]
+  },
+  {
+    "word": "help",
+    "phonetic": "/help/",
+    "meaning_vi": "giúp đỡ",
+    "meaning_en": "to make it easier for someone to do something",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "Can you help me?",
+        "vi": "Bạn có thể giúp tôi không?"
+      }
+    ],
+    "word_family": [
+      "helpful (adj)",
+      "helper (n)"
+    ],
+    "collocations": [
+      "help someone",
+      "help with",
+      "need help"
+    ],
+    "synonyms": [
+      "assist",
+      "aid"
+    ],
+    "antonyms": [
+      "hinder"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Help to me",
+        "correct": "Help me",
+        "explain_vi": "Không cần 'to' sau 'help'."
+      }
+    ],
+    "grammar_patterns": [
+      "help + object",
+      "help + object + (to) verb"
+    ]
+  },
+  {
+    "word": "thank",
+    "phonetic": "/θæŋk/",
+    "meaning_vi": "cảm ơn",
+    "meaning_en": "to express gratitude to someone",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "I thank you for your help.",
+        "vi": "Tôi cảm ơn bạn vì sự giúp đỡ."
+      }
+    ],
+    "word_family": [
+      "thanks (n)",
+      "thankful (adj)"
+    ],
+    "collocations": [
+      "thank you",
+      "thank someone for",
+      "thanks a lot"
+    ],
+    "synonyms": [
+      "appreciate"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Thank you you",
+        "correct": "Thank you",
+        "explain_vi": "Chỉ nói 'Thank you' không lặp."
+      }
+    ],
+    "grammar_patterns": [
+      "thank + object",
+      "thank you for + noun/verb-ing"
+    ]
+  },
+  {
+    "word": "meeting",
+    "phonetic": "/ˈmiː.tɪŋ/",
+    "meaning_vi": "cuộc họp",
+    "meaning_en": "an event where people come together to discuss things",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We have a meeting at 10.",
+        "vi": "Chúng tôi có cuộc họp lúc 10 giờ."
+      }
+    ],
+    "word_family": [
+      "meet (v)"
+    ],
+    "collocations": [
+      "have a meeting",
+      "go to a meeting",
+      "business meeting"
+    ],
+    "synonyms": [
+      "gathering",
+      "assembly"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Meeting is at 10",
+        "correct": "The meeting is at 10",
+        "explain_vi": "Cần mạo từ 'the'."
+      }
+    ],
+    "grammar_patterns": [
+      "a/the meeting",
+      "meeting about/on"
+    ]
+  },
+  {
+    "word": "party",
+    "phonetic": "/ˈpɑːr.ti/",
+    "meaning_vi": "bữa tiệc",
+    "meaning_en": "a social event where people celebrate",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She invited me to her party.",
+        "vi": "Cô ấy mời tôi đến bữa tiệc của cô ấy."
+      }
+    ],
+    "word_family": [
+      "partying (v)"
+    ],
+    "collocations": [
+      "birthday party",
+      "throw a party",
+      "party guest"
+    ],
+    "synonyms": [
+      "celebration",
+      "festivity"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Party at my house",
+        "correct": "The party is at my house",
+        "explain_vi": "Thiếu động từ 'is'."
+      }
+    ],
+    "grammar_patterns": [
+      "a party",
+      "party for someone"
+    ]
+  },
+  {
+    "word": "community",
+    "phonetic": "/kəˈmjuː.nə.ti/",
+    "meaning_vi": "cộng đồng",
+    "meaning_en": "a group of people living in the same place or having something in common",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Our community is very friendly.",
+        "vi": "Cộng đồng của chúng tôi rất thân thiện."
+      }
+    ],
+    "word_family": [
+      "communal (adj)"
+    ],
+    "collocations": [
+      "local community",
+      "community center",
+      "community event"
+    ],
+    "synonyms": [
+      "society",
+      "neighborhood"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Communities is",
+        "correct": "Communities are",
+        "explain_vi": "Số nhiều đi với 'are'."
+      }
+    ],
+    "grammar_patterns": [
+      "the community",
+      "a community of"
+    ]
+  },
+  {
+    "word": "society",
+    "phonetic": "/səˈsaɪ.ə.ti/",
+    "meaning_vi": "xã hội",
+    "meaning_en": "people living together in an organized way",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Society needs laws.",
+        "vi": "Xã hội cần luật pháp."
+      }
+    ],
+    "word_family": [
+      "social (adj)"
+    ],
+    "collocations": [
+      "modern society",
+      "society as a whole",
+      "human society"
+    ],
+    "synonyms": [
+      "community"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Society are",
+        "correct": "Society is",
+        "explain_vi": "'Society' là danh từ số ít."
+      }
+    ],
+    "grammar_patterns": [
+      "society + singular verb"
+    ]
+  },
+  {
+    "word": "volunteer",
+    "phonetic": "/ˌvɑː.lənˈtɪr/",
+    "meaning_vi": "tình nguyện viên",
+    "meaning_en": "a person who offers to do something without being paid",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She works as a volunteer at the hospital.",
+        "vi": "Cô ấy làm tình nguyện viên ở bệnh viện."
+      }
+    ],
+    "word_family": [
+      "volunteer (v)",
+      "voluntary (adj)"
+    ],
+    "collocations": [
+      "volunteer work",
+      "volunteer program",
+      "become a volunteer"
+    ],
+    "synonyms": [
+      "helper"
+    ],
+    "antonyms": [
+      "paid worker"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Volunteer is",
+        "correct": "A volunteer is",
+        "explain_vi": "Cần mạo từ 'a'."
+      }
+    ],
+    "grammar_patterns": [
+      "a volunteer",
+      "volunteer for"
+    ]
+  },
+  {
+    "word": "donate",
+    "phonetic": "/ˈdoʊ.neɪt/",
+    "meaning_vi": "quyên góp",
+    "meaning_en": "to give something, especially money, to help others",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "They donate money to charity.",
+        "vi": "Họ quyên góp tiền cho từ thiện."
+      }
+    ],
+    "word_family": [
+      "donation (n)",
+      "donor (n)"
+    ],
+    "collocations": [
+      "donate money",
+      "donate clothes",
+      "donate to"
+    ],
+    "synonyms": [
+      "give",
+      "contribute"
+    ],
+    "antonyms": [
+      "take"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Donate for charity",
+        "correct": "Donate to charity",
+        "explain_vi": "Dùng 'to' chứ không 'for'."
+      }
+    ],
+    "grammar_patterns": [
+      "donate + object + to"
+    ]
+  },
+  {
+    "word": "charity",
+    "phonetic": "/ˈtʃær.ə.ti/",
+    "meaning_vi": "từ thiện",
+    "meaning_en": "an organization that helps people in need",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She works for a charity.",
+        "vi": "Cô ấy làm việc cho một tổ chức từ thiện."
+      }
+    ],
+    "word_family": [
+      "charitable (adj)"
+    ],
+    "collocations": [
+      "charity organization",
+      "give to charity",
+      "charity event"
+    ],
+    "synonyms": [
+      "nonprofit",
+      "foundation"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Charities is",
+        "correct": "Charities are",
+        "explain_vi": "Số nhiều đi với 'are'."
+      }
+    ],
+    "grammar_patterns": [
+      "a charity",
+      "charity + singular/plural verb"
+    ]
+  },
+  {
+    "word": "neighborhood",
+    "phonetic": "/ˈneɪ.bər.hʊd/",
+    "meaning_vi": "khu phố, hàng xóm",
+    "meaning_en": "the area where you live and the people around you",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I like my neighborhood.",
+        "vi": "Tôi thích khu phố của tôi."
+      }
+    ],
+    "word_family": [
+      "neighbor (n)"
+    ],
+    "collocations": [
+      "nice neighborhood",
+      "neighborhood watch",
+      "in the neighborhood"
+    ],
+    "synonyms": [
+      "area",
+      "district"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Neighbor hood",
+        "correct": "Neighborhood",
+        "explain_vi": "Viết liền."
+      }
+    ],
+    "grammar_patterns": [
+      "a neighborhood",
+      "the neighborhood"
+    ]
+  },
+  {
+    "word": "elderly",
+    "phonetic": "/ˈel.dər.li/",
+    "meaning_vi": "người cao tuổi",
+    "meaning_en": "old people",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The elderly need our help.",
+        "vi": "Người cao tuổi cần sự giúp đỡ của chúng ta."
+      }
+    ],
+    "word_family": [
+      "elder (adj)"
+    ],
+    "collocations": [
+      "elderly people",
+      "elderly care",
+      "elderly home"
+    ],
+    "synonyms": [
+      "older",
+      "aged"
+    ],
+    "antonyms": [
+      "young"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Elderlies",
+        "correct": "The elderly",
+        "explain_vi": "Dùng 'the elderly' để chỉ nhóm."
+      }
+    ],
+    "grammar_patterns": [
+      "the elderly (plural)"
+    ]
+  },
+  {
+    "word": "disabled",
+    "phonetic": "/dɪˈseɪ.bəld/",
+    "meaning_vi": "người khuyết tật",
+    "meaning_en": "people with physical or mental conditions that limit activities",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The disabled have rights.",
+        "vi": "Người khuyết tật có quyền lợi."
+      }
+    ],
+    "word_family": [
+      "disability (n)"
+    ],
+    "collocations": [
+      "disabled people",
+      "disabled access",
+      "disabled parking"
+    ],
+    "synonyms": [
+      "handicapped"
+    ],
+    "antonyms": [
+      "able-bodied"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Disableds",
+        "correct": "The disabled",
+        "explain_vi": "Dùng 'the disabled' để chỉ nhóm."
+      }
+    ],
+    "grammar_patterns": [
+      "the disabled (plural)"
+    ]
+  },
+  {
+    "word": "government",
+    "phonetic": "/ˈɡʌv.ərn.mənt/",
+    "meaning_vi": "chính phủ",
+    "meaning_en": "the group of people who rule a country",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The government makes laws.",
+        "vi": "Chính phủ làm luật."
+      }
+    ],
+    "word_family": [
+      "govern (v)"
+    ],
+    "collocations": [
+      "local government",
+      "government office",
+      "government policy"
+    ],
+    "synonyms": [
+      "administration",
+      "authorities"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Government are",
+        "correct": "Government is",
+        "explain_vi": "Ở Anh-Mỹ, thường dùng số ít."
+      }
+    ],
+    "grammar_patterns": [
+      "the government + singular/plural verb"
+    ]
+  },
+  {
+    "word": "law",
+    "phonetic": "/lɔː/",
+    "meaning_vi": "luật pháp",
+    "meaning_en": "a rule made by the government",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "You must follow the law.",
+        "vi": "Bạn phải tuân theo luật."
+      }
+    ],
+    "word_family": [
+      "legal (adj)",
+      "lawyer (n)"
+    ],
+    "collocations": [
+      "by law",
+      "break the law",
+      "law and order"
+    ],
+    "synonyms": [
+      "rule",
+      "regulation"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Laws is",
+        "correct": "Laws are",
+        "explain_vi": "Số nhiều đi với 'are'."
+      }
+    ],
+    "grammar_patterns": [
+      "the law",
+      "a law"
+    ]
+  },
+  {
+    "word": "rule",
+    "phonetic": "/ruːl/",
+    "meaning_vi": "quy tắc",
+    "meaning_en": "a statement that tells you what you can or cannot do",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "There are rules in school.",
+        "vi": "Có những quy tắc ở trường."
+      }
+    ],
+    "word_family": [
+      "ruler (n)"
+    ],
+    "collocations": [
+      "follow the rules",
+      "break the rules",
+      "rules and regulations"
+    ],
+    "synonyms": [
+      "regulation",
+      "guideline"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Rule are",
+        "correct": "Rules are",
+        "explain_vi": "Số nhiều phải thêm 's'."
+      }
+    ],
+    "grammar_patterns": [
+      "a rule",
+      "the rules"
+    ]
+  },
+  {
+    "word": "right",
+    "phonetic": "/raɪt/",
+    "meaning_vi": "quyền lợi",
+    "meaning_en": "something that you are allowed to do by law",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Everyone has the right to education.",
+        "vi": "Mọi người đều có quyền được giáo dục."
+      }
+    ],
+    "word_family": [
+      "rightful (adj)"
+    ],
+    "collocations": [
+      "human rights",
+      "civil rights",
+      "right to vote"
+    ],
+    "synonyms": [
+      "entitlement",
+      "privilege"
+    ],
+    "antonyms": [
+      "wrong"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Right is",
+        "correct": "Rights are",
+        "explain_vi": "Khi nói về quyền lợi, thường dùng số nhiều."
+      }
+    ],
+    "grammar_patterns": [
+      "the right to + verb",
+      "rights + plural verb"
+    ]
+  },
+  {
+    "word": "duty",
+    "phonetic": "/ˈduː.ti/",
+    "meaning_vi": "nghĩa vụ",
+    "meaning_en": "something you must do because it is right or required",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "It is your duty to vote.",
+        "vi": "Đó là nghĩa vụ của bạn để bỏ phiếu."
+      }
+    ],
+    "word_family": [
+      "dutiful (adj)"
+    ],
+    "collocations": [
+      "civic duty",
+      "sense of duty",
+      "do one's duty"
+    ],
+    "synonyms": [
+      "obligation",
+      "responsibility"
+    ],
+    "antonyms": [
+      "right"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Duty is",
+        "correct": "Duties are",
+        "explain_vi": "Số nhiều thường dùng khi nói chung."
+      }
+    ],
+    "grammar_patterns": [
+      "it is someone's duty to + verb",
+      "duties + plural verb"
+    ]
+  }
+]

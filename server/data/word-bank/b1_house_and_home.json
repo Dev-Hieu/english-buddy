@@ -1,0 +1,2905 @@
+[
+  {
+    "word": "house",
+    "phonetic": "/haʊs/",
+    "meaning_vi": "ngôi nhà",
+    "meaning_en": "a building for people to live in",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We live in a big house.",
+        "vi": "Chúng tôi sống trong một ngôi nhà lớn."
+      }
+    ],
+    "word_family": [
+      "household (n)",
+      "housing (n)"
+    ],
+    "collocations": [
+      "buy a house",
+      "rent a house",
+      "move house"
+    ],
+    "synonyms": [
+      "home",
+      "dwelling"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I am at house.",
+        "correct": "I am at home.",
+        "explain_vi": "Dùng 'home' thay vì 'house' khi nói về nơi ở nói chung."
+      }
+    ],
+    "grammar_patterns": [
+      "a/an + house",
+      "the house"
+    ]
+  },
+  {
+    "word": "home",
+    "phonetic": "/hoʊm/",
+    "meaning_vi": "nhà (nơi ở)",
+    "meaning_en": "the place where one lives permanently",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I feel comfortable at home.",
+        "vi": "Tôi cảm thấy thoải mái ở nhà."
+      }
+    ],
+    "word_family": [
+      "homeless (adj)",
+      "homeland (n)"
+    ],
+    "collocations": [
+      "at home",
+      "go home",
+      "stay home"
+    ],
+    "synonyms": [
+      "house",
+      "residence"
+    ],
+    "antonyms": [
+      "workplace"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I go to home.",
+        "correct": "I go home.",
+        "explain_vi": "Không dùng 'to' trước 'home' khi nói về hướng đi."
+      }
+    ],
+    "grammar_patterns": [
+      "at home",
+      "go home",
+      "stay home"
+    ]
+  },
+  {
+    "word": "room",
+    "phonetic": "/ruːm/",
+    "meaning_vi": "phòng",
+    "meaning_en": "a part of a building enclosed by walls",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "This room is very bright.",
+        "vi": "Căn phòng này rất sáng."
+      }
+    ],
+    "word_family": [
+      "bedroom (n)",
+      "bathroom (n)"
+    ],
+    "collocations": [
+      "living room",
+      "dining room",
+      "spare room"
+    ],
+    "synonyms": [
+      "chamber"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have a room small.",
+        "correct": "I have a small room.",
+        "explain_vi": "Tính từ đứng trước danh từ."
+      }
+    ],
+    "grammar_patterns": [
+      "a/an + room",
+      "room + number"
+    ]
+  },
+  {
+    "word": "kitchen",
+    "phonetic": "/ˈkɪtʃ.ɪn/",
+    "meaning_vi": "phòng bếp",
+    "meaning_en": "a room where food is prepared and cooked",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She is cooking in the kitchen.",
+        "vi": "Cô ấy đang nấu ăn trong bếp."
+      }
+    ],
+    "word_family": [
+      "kitchenette (n)"
+    ],
+    "collocations": [
+      "kitchen counter",
+      "kitchen knife",
+      "kitchen table"
+    ],
+    "synonyms": [
+      "galley"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I am in kitchen.",
+        "correct": "I am in the kitchen.",
+        "explain_vi": "Cần mạo từ 'the'."
+      }
+    ],
+    "grammar_patterns": [
+      "in the kitchen",
+      "kitchen + noun"
+    ]
+  },
+  {
+    "word": "bedroom",
+    "phonetic": "/ˈbed.ruːm/",
+    "meaning_vi": "phòng ngủ",
+    "meaning_en": "a room for sleeping in",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "My bedroom is upstairs.",
+        "vi": "Phòng ngủ của tôi ở trên lầu."
+      }
+    ],
+    "word_family": [
+      "bed (n)",
+      "bedsit (n)"
+    ],
+    "collocations": [
+      "master bedroom",
+      "spare bedroom",
+      "bedroom furniture"
+    ],
+    "synonyms": [
+      "chamber"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have two bedrooms house.",
+        "correct": "I have a two-bedroom house.",
+        "explain_vi": "Dùng dạng ghép với dấu gạch ngang."
+      }
+    ],
+    "grammar_patterns": [
+      "a/an + bedroom",
+      "two-bedroom (adj)"
+    ]
+  },
+  {
+    "word": "bathroom",
+    "phonetic": "/ˈbæθ.ruːm/",
+    "meaning_vi": "phòng tắm",
+    "meaning_en": "a room containing a bath or shower",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The bathroom is down the hall.",
+        "vi": "Phòng tắm ở cuối hành lang."
+      }
+    ],
+    "word_family": [
+      "bath (n)",
+      "bathtub (n)"
+    ],
+    "collocations": [
+      "bathroom mirror",
+      "bathroom sink",
+      "go to the bathroom"
+    ],
+    "synonyms": [
+      "washroom",
+      "restroom"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I need to go to bathroom.",
+        "correct": "I need to go to the bathroom.",
+        "explain_vi": "Cần mạo từ 'the'."
+      }
+    ],
+    "grammar_patterns": [
+      "in the bathroom",
+      "bathroom + noun"
+    ]
+  },
+  {
+    "word": "living room",
+    "phonetic": "/ˈlɪv.ɪŋ ˌruːm/",
+    "meaning_vi": "phòng khách",
+    "meaning_en": "a room in a house for general everyday use",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We watch TV in the living room.",
+        "vi": "Chúng tôi xem TV ở phòng khách."
+      }
+    ],
+    "word_family": [
+      "living (adj)"
+    ],
+    "collocations": [
+      "living room sofa",
+      "living room set"
+    ],
+    "synonyms": [
+      "sitting room",
+      "lounge"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I am in living room.",
+        "correct": "I am in the living room.",
+        "explain_vi": "Cần mạo từ 'the'."
+      }
+    ],
+    "grammar_patterns": [
+      "in the living room",
+      "living room + noun"
+    ]
+  },
+  {
+    "word": "dining room",
+    "phonetic": "/ˈdaɪ.nɪŋ ˌruːm/",
+    "meaning_vi": "phòng ăn",
+    "meaning_en": "a room where meals are eaten",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The dining room has a large table.",
+        "vi": "Phòng ăn có một cái bàn lớn."
+      }
+    ],
+    "word_family": [
+      "dine (v)",
+      "dinner (n)"
+    ],
+    "collocations": [
+      "dining room table",
+      "dining room chair"
+    ],
+    "synonyms": [
+      "diner"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "We eat in dining room.",
+        "correct": "We eat in the dining room.",
+        "explain_vi": "Cần mạo từ 'the'."
+      }
+    ],
+    "grammar_patterns": [
+      "in the dining room",
+      "dining room + noun"
+    ]
+  },
+  {
+    "word": "garden",
+    "phonetic": "/ˈɡɑːr.dən/",
+    "meaning_vi": "khu vườn",
+    "meaning_en": "a piece of ground used for growing flowers, vegetables, etc.",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I love spending time in the garden.",
+        "vi": "Tôi thích dành thời gian trong vườn."
+      }
+    ],
+    "word_family": [
+      "gardening (n)",
+      "gardener (n)"
+    ],
+    "collocations": [
+      "garden shed",
+      "garden path",
+      "garden party"
+    ],
+    "synonyms": [
+      "yard",
+      "lawn"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have a garden small.",
+        "correct": "I have a small garden.",
+        "explain_vi": "Tính từ đứng trước danh từ."
+      }
+    ],
+    "grammar_patterns": [
+      "in the garden",
+      "a/an + garden"
+    ]
+  },
+  {
+    "word": "garage",
+    "phonetic": "/ɡəˈrɑːʒ/",
+    "meaning_vi": "nhà để xe",
+    "meaning_en": "a building for keeping a car in",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "He parked the car in the garage.",
+        "vi": "Anh ấy đỗ xe trong nhà để xe."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "garage door",
+      "garage sale",
+      "garage apartment"
+    ],
+    "synonyms": [
+      "carport"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "The car is in garage.",
+        "correct": "The car is in the garage.",
+        "explain_vi": "Cần mạo từ 'the'."
+      }
+    ],
+    "grammar_patterns": [
+      "in the garage",
+      "garage + noun"
+    ]
+  },
+  {
+    "word": "floor",
+    "phonetic": "/flɔːr/",
+    "meaning_vi": "sàn nhà; tầng",
+    "meaning_en": "the lower surface of a room; a level of a building",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The floor is made of wood.",
+        "vi": "Sàn nhà làm bằng gỗ."
+      }
+    ],
+    "word_family": [
+      "flooring (n)"
+    ],
+    "collocations": [
+      "wooden floor",
+      "first floor",
+      "floor plan"
+    ],
+    "synonyms": [
+      "storey",
+      "level"
+    ],
+    "antonyms": [
+      "ceiling"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I live on first floor.",
+        "correct": "I live on the first floor.",
+        "explain_vi": "Cần mạo từ 'the'."
+      }
+    ],
+    "grammar_patterns": [
+      "on the + ordinal + floor",
+      "floor + noun"
+    ]
+  },
+  {
+    "word": "wall",
+    "phonetic": "/wɔːl/",
+    "meaning_vi": "bức tường",
+    "meaning_en": "a solid vertical structure that divides or encloses an area",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The walls are painted white.",
+        "vi": "Những bức tường được sơn trắng."
+      }
+    ],
+    "word_family": [
+      "wallpaper (n)"
+    ],
+    "collocations": [
+      "wall clock",
+      "wall socket",
+      "wall painting"
+    ],
+    "synonyms": [
+      "partition"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "There is a picture on wall.",
+        "correct": "There is a picture on the wall.",
+        "explain_vi": "Cần mạo từ 'the'."
+      }
+    ],
+    "grammar_patterns": [
+      "on the wall",
+      "wall + noun"
+    ]
+  },
+  {
+    "word": "window",
+    "phonetic": "/ˈwɪn.doʊ/",
+    "meaning_vi": "cửa sổ",
+    "meaning_en": "an opening in a wall fitted with glass",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Please open the window.",
+        "vi": "Làm ơn mở cửa sổ."
+      }
+    ],
+    "word_family": [
+      "windowsill (n)"
+    ],
+    "collocations": [
+      "window pane",
+      "window frame",
+      "window seat"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I look out window.",
+        "correct": "I look out the window.",
+        "explain_vi": "Cần mạo từ 'the'."
+      }
+    ],
+    "grammar_patterns": [
+      "through the window",
+      "window + noun"
+    ]
+  },
+  {
+    "word": "door",
+    "phonetic": "/dɔːr/",
+    "meaning_vi": "cửa ra vào",
+    "meaning_en": "a movable barrier at the entrance to a building or room",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Please close the door.",
+        "vi": "Làm ơn đóng cửa."
+      }
+    ],
+    "word_family": [
+      "doorway (n)",
+      "doorknob (n)"
+    ],
+    "collocations": [
+      "front door",
+      "back door",
+      "door handle"
+    ],
+    "synonyms": [
+      "gate"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Knock the door.",
+        "correct": "Knock on the door.",
+        "explain_vi": "Dùng giới từ 'on'."
+      }
+    ],
+    "grammar_patterns": [
+      "the door",
+      "door + noun"
+    ]
+  },
+  {
+    "word": "roof",
+    "phonetic": "/ruːf/",
+    "meaning_vi": "mái nhà",
+    "meaning_en": "the top covering of a building",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The roof needs repairing.",
+        "vi": "Mái nhà cần được sửa."
+      }
+    ],
+    "word_family": [
+      "roofing (n)"
+    ],
+    "collocations": [
+      "roof tile",
+      "roof garden",
+      "under one roof"
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "floor"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "The roof of house is red.",
+        "correct": "The roof of the house is red.",
+        "explain_vi": "Cần mạo từ 'the'."
+      }
+    ],
+    "grammar_patterns": [
+      "on the roof",
+      "roof + noun"
+    ]
+  },
+  {
+    "word": "stairs",
+    "phonetic": "/sterz/",
+    "meaning_vi": "cầu thang",
+    "meaning_en": "a set of steps leading from one floor to another",
+    "pos": "noun (plural)",
+    "examples": [
+      {
+        "en": "Be careful on the stairs.",
+        "vi": "Cẩn thận trên cầu thang."
+      }
+    ],
+    "word_family": [
+      "staircase (n)",
+      "stairway (n)"
+    ],
+    "collocations": [
+      "stairs up",
+      "stairs down",
+      "flight of stairs"
+    ],
+    "synonyms": [
+      "steps"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go up stair.",
+        "correct": "I go up the stairs.",
+        "explain_vi": "Dùng số nhiều và mạo từ."
+      }
+    ],
+    "grammar_patterns": [
+      "the stairs",
+      "stairs + verb"
+    ]
+  },
+  {
+    "word": "furniture",
+    "phonetic": "/ˈfɜːr.nɪ.tʃər/",
+    "meaning_vi": "đồ nội thất",
+    "meaning_en": "objects such as chairs, tables, beds, etc.",
+    "pos": "noun (uncountable)",
+    "examples": [
+      {
+        "en": "We need new furniture.",
+        "vi": "Chúng tôi cần đồ nội thất mới."
+      }
+    ],
+    "word_family": [
+      "furnish (v)",
+      "furnished (adj)"
+    ],
+    "collocations": [
+      "piece of furniture",
+      "furniture store",
+      "furniture assembly"
+    ],
+    "synonyms": [
+      "fittings"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I bought a furniture.",
+        "correct": "I bought a piece of furniture.",
+        "explain_vi": "Furniture là danh từ không đếm được."
+      }
+    ],
+    "grammar_patterns": [
+      "some furniture",
+      "a piece of furniture"
+    ]
+  },
+  {
+    "word": "curtain",
+    "phonetic": "/ˈkɜːr.tən/",
+    "meaning_vi": "rèm cửa",
+    "meaning_en": "a piece of cloth hung to cover a window",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Please draw the curtains.",
+        "vi": "Làm ơn kéo rèm."
+      }
+    ],
+    "word_family": [
+      "curtains (pl)"
+    ],
+    "collocations": [
+      "curtain rod",
+      "curtain fabric",
+      "shower curtain"
+    ],
+    "synonyms": [
+      "drape",
+      "blind"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Close the curtain.",
+        "correct": "Draw the curtain.",
+        "explain_vi": "Dùng 'draw' thay vì 'close'."
+      }
+    ],
+    "grammar_patterns": [
+      "the curtain(s)",
+      "curtain + noun"
+    ]
+  },
+  {
+    "word": "carpet",
+    "phonetic": "/ˈkɑːr.pɪt/",
+    "meaning_vi": "thảm trải sàn",
+    "meaning_en": "a floor covering made of thick woven fabric",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The carpet is very soft.",
+        "vi": "Tấm thảm rất mềm."
+      }
+    ],
+    "word_family": [
+      "carpeting (n)"
+    ],
+    "collocations": [
+      "carpet cleaner",
+      "carpet floor",
+      "wall-to-wall carpet"
+    ],
+    "synonyms": [
+      "rug"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have a carpet in living room.",
+        "correct": "I have a carpet in the living room.",
+        "explain_vi": "Cần mạo từ 'the'."
+      }
+    ],
+    "grammar_patterns": [
+      "a/an + carpet",
+      "carpet + noun"
+    ]
+  },
+  {
+    "word": "balcony",
+    "phonetic": "/ˈbæl.kə.ni/",
+    "meaning_vi": "ban công",
+    "meaning_en": "a platform projecting from the wall of a building",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I have breakfast on the balcony.",
+        "vi": "Tôi ăn sáng trên ban công."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "balcony door",
+      "balcony garden",
+      "balcony view"
+    ],
+    "synonyms": [
+      "terrace",
+      "veranda"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I stand on balcony.",
+        "correct": "I stand on the balcony.",
+        "explain_vi": "Cần mạo từ 'the'."
+      }
+    ],
+    "grammar_patterns": [
+      "on the balcony",
+      "balcony + noun"
+    ]
+  },
+  {
+    "word": "fence",
+    "phonetic": "/fens/",
+    "meaning_vi": "hàng rào",
+    "meaning_en": "a structure that encloses an area",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We built a wooden fence around the garden.",
+        "vi": "Chúng tôi xây hàng rào gỗ quanh vườn."
+      }
+    ],
+    "word_family": [
+      "fencing (n)"
+    ],
+    "collocations": [
+      "wooden fence",
+      "build a fence",
+      "over the fence"
+    ],
+    "synonyms": [
+      "barrier",
+      "boundary"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "We made a fence.",
+        "correct": "We built a fence.",
+        "explain_vi": "Dùng 'build' thay vì 'make' với fence."
+      }
+    ],
+    "grammar_patterns": [
+      "a + fence",
+      "the + fence"
+    ]
+  },
+  {
+    "word": "gate",
+    "phonetic": "/ɡeɪt/",
+    "meaning_vi": "cổng",
+    "meaning_en": "a movable barrier at an entrance",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Please close the gate when you leave.",
+        "vi": "Làm ơn đóng cổng khi bạn ra ngoài."
+      }
+    ],
+    "word_family": [
+      "gateway (n)"
+    ],
+    "collocations": [
+      "front gate",
+      "open the gate",
+      "gate key"
+    ],
+    "synonyms": [
+      "door",
+      "entrance"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I opened the door of the garden.",
+        "correct": "I opened the garden gate.",
+        "explain_vi": "Gate là cổng vườn, không phải door."
+      }
+    ],
+    "grammar_patterns": [
+      "the + gate",
+      "a + gate"
+    ]
+  },
+  {
+    "word": "path",
+    "phonetic": "/pɑːθ/",
+    "meaning_vi": "lối đi",
+    "meaning_en": "a way or track laid down for walking",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "There is a stone path from the gate to the house.",
+        "vi": "Có một lối đi bằng đá từ cổng vào nhà."
+      }
+    ],
+    "word_family": [
+      "pathway (n)"
+    ],
+    "collocations": [
+      "garden path",
+      "walk along the path",
+      "paved path"
+    ],
+    "synonyms": [
+      "walkway",
+      "trail"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I walked on the road to the house.",
+        "correct": "I walked on the path to the house.",
+        "explain_vi": "Path là lối đi nhỏ, road là đường lớn."
+      }
+    ],
+    "grammar_patterns": [
+      "a + path",
+      "the + path"
+    ]
+  },
+  {
+    "word": "driveway",
+    "phonetic": "/ˈdraɪv.weɪ/",
+    "meaning_vi": "đường lái xe vào nhà",
+    "meaning_en": "a short road leading from a public road to a house or garage",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "He parked his car in the driveway.",
+        "vi": "Anh ấy đỗ xe ở đường lái xe vào nhà."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "long driveway",
+      "park in the driveway",
+      "driveway gate"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I parked on the street in front of my house.",
+        "correct": "I parked in the driveway.",
+        "explain_vi": "Driveway là lối đi riêng vào nhà, không phải đường phố."
+      }
+    ],
+    "grammar_patterns": [
+      "the + driveway",
+      "a + driveway"
+    ]
+  },
+  {
+    "word": "patio",
+    "phonetic": "/ˈpæt.i.oʊ/",
+    "meaning_vi": "sân hiên",
+    "meaning_en": "a paved outdoor area adjoining a house",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We have breakfast on the patio in summer.",
+        "vi": "Chúng tôi ăn sáng trên sân hiên vào mùa hè."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "patio furniture",
+      "patio door",
+      "sitting on the patio"
+    ],
+    "synonyms": [
+      "terrace",
+      "deck"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "We sat on the balcony.",
+        "correct": "We sat on the patio.",
+        "explain_vi": "Patio là sân hiên ở tầng trệt, balcony là ban công trên cao."
+      }
+    ],
+    "grammar_patterns": [
+      "the + patio",
+      "on the + patio"
+    ]
+  },
+  {
+    "word": "chimney",
+    "phonetic": "/ˈtʃɪm.ni/",
+    "meaning_vi": "ống khói",
+    "meaning_en": "a vertical channel for smoke from a fire",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Smoke rises from the chimney.",
+        "vi": "Khói bốc lên từ ống khói."
+      }
+    ],
+    "word_family": [
+      "chimney sweep (n)"
+    ],
+    "collocations": [
+      "chimney pot",
+      "clean the chimney",
+      "chimney smoke"
+    ],
+    "synonyms": [
+      "flue"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "The chimney is on top of the roof.",
+        "correct": "The chimney is on the roof.",
+        "explain_vi": "Chimney nằm trên mái nhà, không phải 'on top of the roof'."
+      }
+    ],
+    "grammar_patterns": [
+      "the + chimney",
+      "a + chimney"
+    ]
+  },
+  {
+    "word": "attic",
+    "phonetic": "/ˈæt.ɪk/",
+    "meaning_vi": "gác xép",
+    "meaning_en": "a space or room just below the roof",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We store old furniture in the attic.",
+        "vi": "Chúng tôi cất đồ đạc cũ trên gác xép."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "attic room",
+      "attic stairs",
+      "attic window"
+    ],
+    "synonyms": [
+      "loft"
+    ],
+    "antonyms": [
+      "basement",
+      "cellar"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I put the boxes in the basement.",
+        "correct": "I put the boxes in the attic.",
+        "explain_vi": "Attic là trên cùng, basement là dưới tầng hầm."
+      }
+    ],
+    "grammar_patterns": [
+      "the + attic",
+      "in the + attic"
+    ]
+  },
+  {
+    "word": "basement",
+    "phonetic": "/ˈbeɪs.mənt/",
+    "meaning_vi": "tầng hầm",
+    "meaning_en": "a floor of a building partly or entirely below ground level",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The laundry room is in the basement.",
+        "vi": "Phòng giặt ở tầng hầm."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "basement apartment",
+      "basement window",
+      "finished basement"
+    ],
+    "synonyms": [
+      "cellar"
+    ],
+    "antonyms": [
+      "attic",
+      "loft"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "The basement is under the ground.",
+        "correct": "The basement is below ground level.",
+        "explain_vi": "Basement có thể một phần trên mặt đất, không hoàn toàn dưới lòng đất."
+      }
+    ],
+    "grammar_patterns": [
+      "the + basement",
+      "in the + basement"
+    ]
+  },
+  {
+    "word": "cellar",
+    "phonetic": "/ˈsel.ər/",
+    "meaning_vi": "hầm chứa",
+    "meaning_en": "a room below ground level, used for storage",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "They keep wine in the cellar.",
+        "vi": "Họ cất rượu trong hầm."
+      }
+    ],
+    "word_family": [
+      "cellarer (n)"
+    ],
+    "collocations": [
+      "wine cellar",
+      "root cellar",
+      "cellar door"
+    ],
+    "synonyms": [
+      "basement"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I went to the basement to get wine.",
+        "correct": "I went to the cellar to get wine.",
+        "explain_vi": "Cellar thường dùng cho hầm rượu, basement là tầng hầm nói chung."
+      }
+    ],
+    "grammar_patterns": [
+      "the + cellar",
+      "a + cellar"
+    ]
+  },
+  {
+    "word": "hallway",
+    "phonetic": "/ˈhɔːl.weɪ/",
+    "meaning_vi": "hành lang",
+    "meaning_en": "a corridor in a building",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The bedrooms are at the end of the hallway.",
+        "vi": "Các phòng ngủ ở cuối hành lang."
+      }
+    ],
+    "word_family": [
+      "hall (n)"
+    ],
+    "collocations": [
+      "long hallway",
+      "hallway mirror",
+      "hallway light"
+    ],
+    "synonyms": [
+      "corridor",
+      "passage"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I walked along the hall.",
+        "correct": "I walked along the hallway.",
+        "explain_vi": "Hallway là hành lang trong nhà, hall thường là sảnh lớn."
+      }
+    ],
+    "grammar_patterns": [
+      "the + hallway",
+      "a + hallway"
+    ]
+  },
+  {
+    "word": "landing",
+    "phonetic": "/ˈlæn.dɪŋ/",
+    "meaning_vi": "chiếu nghỉ cầu thang",
+    "meaning_en": "a level area at the top of a staircase or between flights of stairs",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "There is a window on the landing.",
+        "vi": "Có một cửa sổ ở chiếu nghỉ cầu thang."
+      }
+    ],
+    "word_family": [
+      "land (v)"
+    ],
+    "collocations": [
+      "top landing",
+      "bottom landing",
+      "landing light"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I stood on the stair.",
+        "correct": "I stood on the landing.",
+        "explain_vi": "Landing là nơi bằng phẳng, không phải bậc thang."
+      }
+    ],
+    "grammar_patterns": [
+      "the + landing",
+      "on the + landing"
+    ]
+  },
+  {
+    "word": "railing",
+    "phonetic": "/ˈreɪ.lɪŋ/",
+    "meaning_vi": "lan can",
+    "meaning_en": "a fence-like barrier made of rails",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Hold the railing when you go down the stairs.",
+        "vi": "Nắm lan can khi bạn đi xuống cầu thang."
+      }
+    ],
+    "word_family": [
+      "rail (n)"
+    ],
+    "collocations": [
+      "stair railing",
+      "wooden railing",
+      "hold the railing"
+    ],
+    "synonyms": [
+      "banister",
+      "handrail"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I grabbed the handrail.",
+        "correct": "I grabbed the railing.",
+        "explain_vi": "Railing thường là lan can có thanh dọc, handrail là tay vịn."
+      }
+    ],
+    "grammar_patterns": [
+      "the + railing",
+      "a + railing"
+    ]
+  },
+  {
+    "word": "porch",
+    "phonetic": "/pɔːrtʃ/",
+    "meaning_vi": "hiên nhà",
+    "meaning_en": "a covered entrance to a building",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She is sitting on the porch reading a book.",
+        "vi": "Cô ấy đang ngồi ở hiên nhà đọc sách."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "front porch",
+      "porch swing",
+      "porch light"
+    ],
+    "synonyms": [
+      "veranda",
+      "stoop"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I sat on the balcony.",
+        "correct": "I sat on the porch.",
+        "explain_vi": "Porch là hiên ở tầng trệt, balcony là ban công trên cao."
+      }
+    ],
+    "grammar_patterns": [
+      "the + porch",
+      "on the + porch"
+    ]
+  },
+  {
+    "word": "deck",
+    "phonetic": "/dek/",
+    "meaning_vi": "boong tàu, sàn gỗ ngoài trời",
+    "meaning_en": "a wooden platform attached to a house",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We have a barbecue on the deck.",
+        "vi": "Chúng tôi tổ chức tiệc nướng trên sàn gỗ ngoài trời."
+      }
+    ],
+    "word_family": [
+      "decking (n)"
+    ],
+    "collocations": [
+      "wooden deck",
+      "deck furniture",
+      "back deck"
+    ],
+    "synonyms": [
+      "patio",
+      "terrace"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "We sat on the patio.",
+        "correct": "We sat on the deck.",
+        "explain_vi": "Deck thường làm bằng gỗ và cao hơn mặt đất, patio là lát đá hoặc gạch."
+      }
+    ],
+    "grammar_patterns": [
+      "the + deck",
+      "on the + deck"
+    ]
+  },
+  {
+    "word": "shed",
+    "phonetic": "/ʃed/",
+    "meaning_vi": "nhà kho",
+    "meaning_en": "a small building used for storage",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The garden tools are in the shed.",
+        "vi": "Dụng cụ làm vườn ở trong nhà kho."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "garden shed",
+      "tool shed",
+      "storage shed"
+    ],
+    "synonyms": [
+      "hut",
+      "storehouse"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I put the tools in the garage.",
+        "correct": "I put the tools in the shed.",
+        "explain_vi": "Shed là nhà kho nhỏ trong vườn, garage là để xe."
+      }
+    ],
+    "grammar_patterns": [
+      "the + shed",
+      "a + shed"
+    ]
+  },
+  {
+    "word": "utility room",
+    "phonetic": "/juːˈtɪl.ə.ti ruːm/",
+    "meaning_vi": "phòng tiện ích",
+    "meaning_en": "a room where household equipment is kept",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The washing machine is in the utility room.",
+        "vi": "Máy giặt ở trong phòng tiện ích."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "utility room sink",
+      "utility room cabinet",
+      "in the utility room"
+    ],
+    "synonyms": [
+      "laundry room",
+      "mudroom"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I put the washer in the bathroom.",
+        "correct": "I put the washer in the utility room.",
+        "explain_vi": "Utility room là phòng riêng cho máy giặt, không phải phòng tắm."
+      }
+    ],
+    "grammar_patterns": [
+      "the + utility room",
+      "a + utility room"
+    ]
+  },
+  {
+    "word": "study",
+    "phonetic": "/ˈstʌd.i/",
+    "meaning_vi": "phòng học / phòng làm việc",
+    "meaning_en": "a room used for reading, writing, or academic work",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "He spends most of his time in his study.",
+        "vi": "Anh ấy dành hầu hết thời gian trong phòng làm việc."
+      }
+    ],
+    "word_family": [
+      "student (n)",
+      "study (v)"
+    ],
+    "collocations": [
+      "home study",
+      "study desk",
+      "study room"
+    ],
+    "synonyms": [
+      "office",
+      "library"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I work in my office at home.",
+        "correct": "I work in my study at home.",
+        "explain_vi": "Study là phòng dành cho học tập và làm việc, office thường dùng cho công ty."
+      }
+    ],
+    "grammar_patterns": [
+      "the + study",
+      "a + study",
+      "in one's + study"
+    ]
+  },
+  {
+    "word": "laundry room",
+    "phonetic": "/ˈlɔːn.dri ruːm/",
+    "meaning_vi": "phòng giặt",
+    "meaning_en": "a room where clothes are washed and ironed",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The laundry room is next to the kitchen.",
+        "vi": "Phòng giặt ở cạnh bếp."
+      }
+    ],
+    "word_family": [
+      "laundry (n)"
+    ],
+    "collocations": [
+      "laundry room sink",
+      "laundry basket",
+      "laundry detergent"
+    ],
+    "synonyms": [
+      "utility room"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I wash clothes in the bathroom.",
+        "correct": "I wash clothes in the laundry room.",
+        "explain_vi": "Laundry room là phòng riêng cho giặt giũ."
+      }
+    ],
+    "grammar_patterns": [
+      "the + laundry room",
+      "a + laundry room"
+    ]
+  },
+  {
+    "word": "pantry",
+    "phonetic": "/ˈpæn.tri/",
+    "meaning_vi": "phòng đựng thức ăn",
+    "meaning_en": "a small room where food is stored",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We keep canned goods in the pantry.",
+        "vi": "Chúng tôi để đồ hộp trong phòng đựng thức ăn."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "pantry shelf",
+      "pantry door",
+      "stock the pantry"
+    ],
+    "synonyms": [
+      "larder",
+      "store room"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I put the food in the cupboard.",
+        "correct": "I put the food in the pantry.",
+        "explain_vi": "Pantry là phòng nhỏ, cupboard là tủ."
+      }
+    ],
+    "grammar_patterns": [
+      "the + pantry",
+      "a + pantry"
+    ]
+  },
+  {
+    "word": "conservatory",
+    "phonetic": "/kənˈsɜːr.və.tɔːr.i/",
+    "meaning_vi": "nhà kính / phòng kính",
+    "meaning_en": "a room with glass walls and roof, attached to a house",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She grows plants in the conservatory.",
+        "vi": "Cô ấy trồng cây trong nhà kính."
+      }
+    ],
+    "word_family": [
+      "conservation (n)"
+    ],
+    "collocations": [
+      "conservatory furniture",
+      "conservatory roof",
+      "sunroom conservatory"
+    ],
+    "synonyms": [
+      "sunroom",
+      "greenhouse"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have a greenhouse in the garden.",
+        "correct": "I have a conservatory attached to the house.",
+        "explain_vi": "Conservatory là phòng kính gắn liền nhà, greenhouse là nhà kính riêng trong vườn."
+      }
+    ],
+    "grammar_patterns": [
+      "the + conservatory",
+      "a + conservatory"
+    ]
+  },
+  {
+    "word": "cushion",
+    "phonetic": "/ˈkʊʃ.ən/",
+    "meaning_vi": "đệm, gối tựa",
+    "meaning_en": "a soft object that you sit or lean on",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The sofa has three cushions.",
+        "vi": "Ghế sofa có ba cái đệm."
+      }
+    ],
+    "word_family": [
+      "cushion (v)"
+    ],
+    "collocations": [
+      "sofa cushion",
+      "floor cushion",
+      "cushion cover"
+    ],
+    "synonyms": [
+      "pillow",
+      "pad"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I bought a cushion for my chair.",
+        "correct": "I bought a cushion for my chair.",
+        "explain_vi": "Không có lỗi phổ biến."
+      }
+    ],
+    "grammar_patterns": [
+      "plural: cushions"
+    ]
+  },
+  {
+    "word": "rug",
+    "phonetic": "/rʌɡ/",
+    "meaning_vi": "thảm (nhỏ)",
+    "meaning_en": "a small carpet used to cover part of a floor",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "There is a rug in front of the fireplace.",
+        "vi": "Có một tấm thảm trước lò sưởi."
+      }
+    ],
+    "word_family": [
+      "rugs (pl)"
+    ],
+    "collocations": [
+      "woolen rug",
+      "Persian rug",
+      "rug pad"
+    ],
+    "synonyms": [
+      "mat",
+      "carpet"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I put a rug on the wall.",
+        "correct": "I put a rug on the floor.",
+        "explain_vi": "Rug là thảm trải sàn, không phải treo tường."
+      }
+    ],
+    "grammar_patterns": [
+      "a rug",
+      "the rug"
+    ]
+  },
+  {
+    "word": "wardrobe",
+    "phonetic": "/ˈwɔːr.droʊb/",
+    "meaning_vi": "tủ quần áo",
+    "meaning_en": "a large cupboard for storing clothes",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She hung her dress in the wardrobe.",
+        "vi": "Cô ấy treo váy trong tủ quần áo."
+      }
+    ],
+    "word_family": [
+      "wardrobes (pl)"
+    ],
+    "collocations": [
+      "built-in wardrobe",
+      "walk-in wardrobe",
+      "wardrobe door"
+    ],
+    "synonyms": [
+      "closet",
+      "armoire"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I put my shoes in the wardrobe.",
+        "correct": "I put my shoes in the wardrobe.",
+        "explain_vi": "Có thể dùng wardrobe để đựng giày, không sai."
+      }
+    ],
+    "grammar_patterns": [
+      "the wardrobe",
+      "a wardrobe"
+    ]
+  },
+  {
+    "word": "drawer",
+    "phonetic": "/drɔːr/",
+    "meaning_vi": "ngăn kéo",
+    "meaning_en": "a sliding compartment in a piece of furniture",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The keys are in the top drawer.",
+        "vi": "Chìa khóa ở ngăn kéo trên cùng."
+      }
+    ],
+    "word_family": [
+      "drawers (pl)"
+    ],
+    "collocations": [
+      "chest of drawers",
+      "kitchen drawer",
+      "drawer handle"
+    ],
+    "synonyms": [
+      "compartment"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I open the drawer.",
+        "correct": "I open the drawer.",
+        "explain_vi": "Không có lỗi phổ biến."
+      }
+    ],
+    "grammar_patterns": [
+      "a drawer",
+      "the drawer"
+    ]
+  },
+  {
+    "word": "shelf",
+    "phonetic": "/ʃelf/",
+    "meaning_vi": "kệ, giá",
+    "meaning_en": "a flat board used to hold items",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Put the books on the shelf.",
+        "vi": "Đặt sách lên kệ."
+      }
+    ],
+    "word_family": [
+      "shelves (pl)"
+    ],
+    "collocations": [
+      "book shelf",
+      "wall shelf",
+      "shelf space"
+    ],
+    "synonyms": [
+      "ledge",
+      "rack"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "There are many shelf in the room.",
+        "correct": "There are many shelves in the room.",
+        "explain_vi": "Shelf số nhiều là shelves."
+      }
+    ],
+    "grammar_patterns": [
+      "on the shelf",
+      "a shelf"
+    ]
+  },
+  {
+    "word": "lamp",
+    "phonetic": "/læmp/",
+    "meaning_vi": "đèn bàn, đèn",
+    "meaning_en": "a device that produces light",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She turned on the lamp.",
+        "vi": "Cô ấy bật đèn."
+      }
+    ],
+    "word_family": [
+      "lamps (pl)"
+    ],
+    "collocations": [
+      "table lamp",
+      "floor lamp",
+      "lamp shade"
+    ],
+    "synonyms": [
+      "light",
+      "lantern"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I need a lamp for reading.",
+        "correct": "I need a lamp for reading.",
+        "explain_vi": "Không có lỗi phổ biến."
+      }
+    ],
+    "grammar_patterns": [
+      "a lamp",
+      "the lamp"
+    ]
+  },
+  {
+    "word": "mirror",
+    "phonetic": "/ˈmɪr.ər/",
+    "meaning_vi": "gương",
+    "meaning_en": "a reflective surface used to see oneself",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "He looked at himself in the mirror.",
+        "vi": "Anh ấy nhìn mình trong gương."
+      }
+    ],
+    "word_family": [
+      "mirrors (pl)"
+    ],
+    "collocations": [
+      "wall mirror",
+      "full-length mirror",
+      "rearview mirror"
+    ],
+    "synonyms": [
+      "glass",
+      "reflecting surface"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I look at mirror.",
+        "correct": "I look at the mirror.",
+        "explain_vi": "Cần mạo từ 'the'."
+      }
+    ],
+    "grammar_patterns": [
+      "in the mirror",
+      "a mirror"
+    ]
+  },
+  {
+    "word": "vase",
+    "phonetic": "/veɪs/",
+    "meaning_vi": "bình hoa, lọ hoa",
+    "meaning_en": "a container for holding flowers",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She put flowers in the vase.",
+        "vi": "Cô ấy cắm hoa vào bình."
+      }
+    ],
+    "word_family": [
+      "vases (pl)"
+    ],
+    "collocations": [
+      "flower vase",
+      "glass vase",
+      "vase of flowers"
+    ],
+    "synonyms": [
+      "urn",
+      "pitcher"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I bought a vase for flowers.",
+        "correct": "I bought a vase for flowers.",
+        "explain_vi": "Không có lỗi phổ biến."
+      }
+    ],
+    "grammar_patterns": [
+      "a vase",
+      "the vase"
+    ]
+  },
+  {
+    "word": "clock",
+    "phonetic": "/klɑːk/",
+    "meaning_vi": "đồng hồ (treo tường, để bàn)",
+    "meaning_en": "an instrument that shows the time",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The clock on the wall is slow.",
+        "vi": "Đồng hồ trên tường chạy chậm."
+      }
+    ],
+    "word_family": [
+      "clocks (pl)"
+    ],
+    "collocations": [
+      "wall clock",
+      "alarm clock",
+      "clock face"
+    ],
+    "synonyms": [
+      "timepiece",
+      "timer"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I look at clock.",
+        "correct": "I look at the clock.",
+        "explain_vi": "Cần mạo từ."
+      }
+    ],
+    "grammar_patterns": [
+      "a clock",
+      "the clock"
+    ]
+  },
+  {
+    "word": "frame",
+    "phonetic": "/freɪm/",
+    "meaning_vi": "khung (ảnh, tranh)",
+    "meaning_en": "a border that encloses a picture",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The photo is in a silver frame.",
+        "vi": "Bức ảnh ở trong khung bạc."
+      }
+    ],
+    "word_family": [
+      "frames (pl)",
+      "frame (v)"
+    ],
+    "collocations": [
+      "picture frame",
+      "photo frame",
+      "wooden frame"
+    ],
+    "synonyms": [
+      "border",
+      "mount"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I put the picture in frame.",
+        "correct": "I put the picture in a frame.",
+        "explain_vi": "Cần mạo từ 'a'."
+      }
+    ],
+    "grammar_patterns": [
+      "a frame",
+      "the frame"
+    ]
+  },
+  {
+    "word": "ornament",
+    "phonetic": "/ˈɔːr.nə.mənt/",
+    "meaning_vi": "đồ trang trí",
+    "meaning_en": "a decorative object",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The shelf is full of ornaments.",
+        "vi": "Kệ đầy đồ trang trí."
+      }
+    ],
+    "word_family": [
+      "ornaments (pl)",
+      "ornamental (adj)"
+    ],
+    "collocations": [
+      "Christmas ornament",
+      "glass ornament",
+      "ornament collection"
+    ],
+    "synonyms": [
+      "decoration",
+      "trinket"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I bought an ornament for the tree.",
+        "correct": "I bought an ornament for the tree.",
+        "explain_vi": "Không có lỗi phổ biến."
+      }
+    ],
+    "grammar_patterns": [
+      "an ornament",
+      "the ornament"
+    ]
+  },
+  {
+    "word": "plant",
+    "phonetic": "/plænt/",
+    "meaning_vi": "cây cảnh",
+    "meaning_en": "a living thing that grows in soil, often kept indoors",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I water the plants every morning.",
+        "vi": "Tôi tưới cây mỗi sáng."
+      }
+    ],
+    "word_family": [
+      "plants (pl)",
+      "plant (v)"
+    ],
+    "collocations": [
+      "house plant",
+      "pot plant",
+      "plant pot"
+    ],
+    "synonyms": [
+      "flower",
+      "shrub"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have many plant.",
+        "correct": "I have many plants.",
+        "explain_vi": "Cần thêm 's' số nhiều."
+      }
+    ],
+    "grammar_patterns": [
+      "a plant",
+      "the plant"
+    ]
+  },
+  {
+    "word": "bin",
+    "phonetic": "/bɪn/",
+    "meaning_vi": "thùng rác",
+    "meaning_en": "a container for waste",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Throw the paper in the bin.",
+        "vi": "Bỏ giấy vào thùng rác."
+      }
+    ],
+    "word_family": [
+      "bins (pl)"
+    ],
+    "collocations": [
+      "waste bin",
+      "kitchen bin",
+      "bin bag"
+    ],
+    "synonyms": [
+      "trash can",
+      "dustbin"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I put rubbish in bin.",
+        "correct": "I put rubbish in the bin.",
+        "explain_vi": "Cần mạo từ 'the'."
+      }
+    ],
+    "grammar_patterns": [
+      "the bin",
+      "a bin"
+    ]
+  },
+  {
+    "word": "tap",
+    "phonetic": "/tæp/",
+    "meaning_vi": "vòi nước",
+    "meaning_en": "a device that controls the flow of water",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Please turn off the tap.",
+        "vi": "Làm ơn tắt vòi nước."
+      }
+    ],
+    "word_family": [
+      "taps (pl)"
+    ],
+    "collocations": [
+      "water tap",
+      "kitchen tap",
+      "tap water"
+    ],
+    "synonyms": [
+      "faucet",
+      "valve"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I open the tap.",
+        "correct": "I turn on the tap.",
+        "explain_vi": "Dùng 'turn on' thay vì 'open'."
+      }
+    ],
+    "grammar_patterns": [
+      "the tap",
+      "a tap"
+    ]
+  },
+  {
+    "word": "sink",
+    "phonetic": "/sɪŋk/",
+    "meaning_vi": "bồn rửa",
+    "meaning_en": "a basin for washing dishes or hands",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She washed the dishes in the sink.",
+        "vi": "Cô ấy rửa bát trong bồn."
+      }
+    ],
+    "word_family": [
+      "sinks (pl)"
+    ],
+    "collocations": [
+      "kitchen sink",
+      "bathroom sink",
+      "sink basin"
+    ],
+    "synonyms": [
+      "washbasin",
+      "basin"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I put the glass in sink.",
+        "correct": "I put the glass in the sink.",
+        "explain_vi": "Cần mạo từ."
+      }
+    ],
+    "grammar_patterns": [
+      "the sink",
+      "a sink"
+    ]
+  },
+  {
+    "word": "shower",
+    "phonetic": "/ˈʃaʊ.ər/",
+    "meaning_vi": "vòi hoa sen",
+    "meaning_en": "a device that sprays water for bathing",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I take a shower every morning.",
+        "vi": "Tôi tắm vòi hoa sen mỗi sáng."
+      }
+    ],
+    "word_family": [
+      "showers (pl)",
+      "shower (v)"
+    ],
+    "collocations": [
+      "take a shower",
+      "shower head",
+      "shower curtain"
+    ],
+    "synonyms": [
+      "bath"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have shower.",
+        "correct": "I have a shower.",
+        "explain_vi": "Cần mạo từ 'a'."
+      }
+    ],
+    "grammar_patterns": [
+      "a shower",
+      "the shower"
+    ]
+  },
+  {
+    "word": "toilet",
+    "phonetic": "/ˈtɔɪ.lət/",
+    "meaning_vi": "bồn cầu, nhà vệ sinh",
+    "meaning_en": "a bowl-shaped fixture for using as a lavatory",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The toilet is in the bathroom.",
+        "vi": "Bồn cầu ở trong phòng tắm."
+      }
+    ],
+    "word_family": [
+      "toilets (pl)"
+    ],
+    "collocations": [
+      "flush the toilet",
+      "toilet seat",
+      "toilet paper"
+    ],
+    "synonyms": [
+      "lavatory",
+      "restroom"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I need to go to toilet.",
+        "correct": "I need to go to the toilet.",
+        "explain_vi": "Cần mạo từ 'the'."
+      }
+    ],
+    "grammar_patterns": [
+      "the toilet",
+      "a toilet"
+    ]
+  },
+  {
+    "word": "bath",
+    "phonetic": "/bɑːθ/",
+    "meaning_vi": "bồn tắm, tắm bồn",
+    "meaning_en": "a large container for bathing in water",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She is taking a bath.",
+        "vi": "Cô ấy đang tắm bồn."
+      }
+    ],
+    "word_family": [
+      "baths (pl)",
+      "bathe (v)"
+    ],
+    "collocations": [
+      "take a bath",
+      "bath tub",
+      "bath water"
+    ],
+    "synonyms": [
+      "bathtub",
+      "soak"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I bath every day.",
+        "correct": "I take a bath every day.",
+        "explain_vi": "Dùng 'take a bath' thay vì 'bath' như động từ."
+      }
+    ],
+    "grammar_patterns": [
+      "a bath",
+      "the bath"
+    ]
+  },
+  {
+    "word": "radiator",
+    "phonetic": "/ˈreɪ.di.eɪ.tər/",
+    "meaning_vi": "bộ tản nhiệt, lò sưởi",
+    "meaning_en": "a device that heats a room",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The radiator keeps the room warm.",
+        "vi": "Bộ tản nhiệt giữ ấm phòng."
+      }
+    ],
+    "word_family": [
+      "radiators (pl)"
+    ],
+    "collocations": [
+      "turn on the radiator",
+      "radiator valve",
+      "central heating radiator"
+    ],
+    "synonyms": [
+      "heater",
+      "convector"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I put the clothes on radiator.",
+        "correct": "I put the clothes on the radiator.",
+        "explain_vi": "Cần mạo từ 'the'."
+      }
+    ],
+    "grammar_patterns": [
+      "the radiator",
+      "a radiator"
+    ]
+  },
+  {
+    "word": "outlet",
+    "phonetic": "/ˈaʊt.let/",
+    "meaning_vi": "ổ điện",
+    "meaning_en": "a point on a wall where electrical appliances are plugged in",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Plug the charger into the outlet.",
+        "vi": "Cắm sạc vào ổ điện."
+      }
+    ],
+    "word_family": [
+      "outlets (pl)"
+    ],
+    "collocations": [
+      "power outlet",
+      "wall outlet",
+      "electrical outlet"
+    ],
+    "synonyms": [
+      "socket",
+      "receptacle"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I need an outlet for my phone.",
+        "correct": "I need an outlet for my phone.",
+        "explain_vi": "Không có lỗi phổ biến."
+      }
+    ],
+    "grammar_patterns": [
+      "an outlet",
+      "the outlet"
+    ]
+  },
+  {
+    "word": "mirror",
+    "phonetic": "/ˈmɪr.ər/",
+    "meaning_vi": "gương",
+    "meaning_en": "a piece of glass that reflects images",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She checked her hair in the mirror.",
+        "vi": "Cô ấy kiểm tra tóc trước gương."
+      }
+    ],
+    "word_family": [
+      "mirror (v)"
+    ],
+    "collocations": [
+      "look in the mirror",
+      "full-length mirror",
+      "rearview mirror"
+    ],
+    "synonyms": [
+      "looking glass"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I saw in mirror",
+        "correct": "I saw in the mirror",
+        "explain_vi": "Cần mạo từ 'the' trước 'mirror'"
+      }
+    ],
+    "grammar_patterns": [
+      "the mirror (definite article)"
+    ]
+  },
+  {
+    "word": "vase",
+    "phonetic": "/veɪs/",
+    "meaning_vi": "bình hoa, lọ hoa",
+    "meaning_en": "a container used to hold cut flowers",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She put the roses in a vase.",
+        "vi": "Cô ấy đặt những bông hồng vào bình hoa."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "flower vase",
+      "put flowers in a vase",
+      "vase on the table"
+    ],
+    "synonyms": [
+      "flowerpot",
+      "urn"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "vase of flower",
+        "correct": "vase of flowers",
+        "explain_vi": "Dùng số nhiều 'flowers' khi nói về hoa trong bình"
+      }
+    ],
+    "grammar_patterns": [
+      "a vase of + plural noun"
+    ]
+  },
+  {
+    "word": "clock",
+    "phonetic": "/klɒk/",
+    "meaning_vi": "đồng hồ (treo tường, để bàn)",
+    "meaning_en": "an instrument that shows the time",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The clock on the wall is ticking.",
+        "vi": "Đồng hồ trên tường đang tích tắc."
+      }
+    ],
+    "word_family": [
+      "clockwise (adj/adv)",
+      "clockwork (n)"
+    ],
+    "collocations": [
+      "wall clock",
+      "alarm clock",
+      "set the clock"
+    ],
+    "synonyms": [
+      "timepiece",
+      "timer"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "watch",
+        "correct": "clock",
+        "explain_vi": "'Watch' là đồng hồ đeo tay, 'clock' là đồng hồ treo/để bàn"
+      }
+    ],
+    "grammar_patterns": [
+      "the clock (definite article)"
+    ]
+  },
+  {
+    "word": "frame",
+    "phonetic": "/freɪm/",
+    "meaning_vi": "khung (ảnh, cửa, tranh)",
+    "meaning_en": "a structure that holds a picture, window, or door",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "He put the photo in a silver frame.",
+        "vi": "Anh ấy đặt ảnh vào khung bạc."
+      }
+    ],
+    "word_family": [
+      "frame (v)",
+      "framework (n)"
+    ],
+    "collocations": [
+      "picture frame",
+      "window frame",
+      "door frame"
+    ],
+    "synonyms": [
+      "border",
+      "mount"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I need a frame for my picture.",
+        "correct": "I need a frame for my picture.",
+        "explain_vi": "Không có lỗi phổ biến đặc biệt"
+      }
+    ],
+    "grammar_patterns": [
+      "a frame for + noun"
+    ]
+  },
+  {
+    "word": "ornament",
+    "phonetic": "/ˈɔːr.nə.mənt/",
+    "meaning_vi": "đồ trang trí",
+    "meaning_en": "a decorative object",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The tree was covered with Christmas ornaments.",
+        "vi": "Cây được phủ đầy đồ trang trí Giáng sinh."
+      }
+    ],
+    "word_family": [
+      "ornamental (adj)",
+      "ornamentation (n)"
+    ],
+    "collocations": [
+      "Christmas ornament",
+      "decorative ornament",
+      "glass ornament"
+    ],
+    "synonyms": [
+      "decoration",
+      "adornment"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I don't have any ornament.",
+        "correct": "I don't have any ornaments.",
+        "explain_vi": "Dùng số nhiều 'ornaments' khi nói chung"
+      }
+    ],
+    "grammar_patterns": [
+      "ornament (countable noun)"
+    ]
+  },
+  {
+    "word": "plant",
+    "phonetic": "/plɑːnt/",
+    "meaning_vi": "cây (cảnh)",
+    "meaning_en": "a living organism that grows in soil",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I water my plants every morning.",
+        "vi": "Tôi tưới cây mỗi sáng."
+      }
+    ],
+    "word_family": [
+      "plant (v)",
+      "plantation (n)"
+    ],
+    "collocations": [
+      "house plant",
+      "water the plants",
+      "potted plant"
+    ],
+    "synonyms": [
+      "flower",
+      "shrub"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I need to water the plant.",
+        "correct": "I need to water the plants.",
+        "explain_vi": "Thường dùng số nhiều khi có nhiều cây"
+      }
+    ],
+    "grammar_patterns": [
+      "plant (countable noun)"
+    ]
+  },
+  {
+    "word": "bin",
+    "phonetic": "/bɪn/",
+    "meaning_vi": "thùng rác",
+    "meaning_en": "a container for waste",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Throw the paper in the bin.",
+        "vi": "Bỏ giấy vào thùng rác."
+      }
+    ],
+    "word_family": [
+      "dustbin (n)",
+      "wastebin (n)"
+    ],
+    "collocations": [
+      "rubbish bin",
+      "kitchen bin",
+      "bin bag"
+    ],
+    "synonyms": [
+      "trash can",
+      "garbage can"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I put it in bin.",
+        "correct": "I put it in the bin.",
+        "explain_vi": "Cần mạo từ 'the' trước 'bin'"
+      }
+    ],
+    "grammar_patterns": [
+      "the bin (definite article)"
+    ]
+  },
+  {
+    "word": "tap",
+    "phonetic": "/tæp/",
+    "meaning_vi": "vòi nước",
+    "meaning_en": "a device that controls the flow of liquid from a pipe",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Turn off the tap after washing your hands.",
+        "vi": "Tắt vòi nước sau khi rửa tay."
+      }
+    ],
+    "word_family": [
+      "tap (v)"
+    ],
+    "collocations": [
+      "turn on the tap",
+      "turn off the tap",
+      "leaky tap"
+    ],
+    "synonyms": [
+      "faucet",
+      "spigot"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I open the tap.",
+        "correct": "I turn on the tap.",
+        "explain_vi": "Dùng 'turn on' thay vì 'open' cho vòi nước"
+      }
+    ],
+    "grammar_patterns": [
+      "the tap (definite article)"
+    ]
+  },
+  {
+    "word": "sink",
+    "phonetic": "/sɪŋk/",
+    "meaning_vi": "bồn rửa (bát, tay)",
+    "meaning_en": "a basin for washing dishes or hands",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "He washed the dishes in the sink.",
+        "vi": "Anh ấy rửa bát trong bồn rửa."
+      }
+    ],
+    "word_family": [
+      "sink (v)"
+    ],
+    "collocations": [
+      "kitchen sink",
+      "bathroom sink",
+      "blocked sink"
+    ],
+    "synonyms": [
+      "basin",
+      "washbasin"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I put the glass in sink.",
+        "correct": "I put the glass in the sink.",
+        "explain_vi": "Cần mạo từ 'the'"
+      }
+    ],
+    "grammar_patterns": [
+      "the sink (definite article)"
+    ]
+  },
+  {
+    "word": "shower",
+    "phonetic": "/ˈʃaʊ.ər/",
+    "meaning_vi": "vòi hoa sen",
+    "meaning_en": "a device that sprays water for bathing",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I take a shower every morning.",
+        "vi": "Tôi tắm vòi hoa sen mỗi sáng."
+      }
+    ],
+    "word_family": [
+      "shower (v)"
+    ],
+    "collocations": [
+      "take a shower",
+      "have a shower",
+      "shower head"
+    ],
+    "synonyms": [
+      "bath"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I take shower.",
+        "correct": "I take a shower.",
+        "explain_vi": "Cần mạo từ 'a' trước 'shower'"
+      }
+    ],
+    "grammar_patterns": [
+      "take/have a shower (idiom)"
+    ]
+  },
+  {
+    "word": "toilet",
+    "phonetic": "/ˈtɔɪ.lɪt/",
+    "meaning_vi": "bồn cầu, nhà vệ sinh",
+    "meaning_en": "a bowl-shaped fixture for urination and defecation",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The toilet is in the bathroom.",
+        "vi": "Bồn cầu ở trong phòng tắm."
+      }
+    ],
+    "word_family": [
+      "toiletries (n)"
+    ],
+    "collocations": [
+      "flush the toilet",
+      "toilet seat",
+      "toilet paper"
+    ],
+    "synonyms": [
+      "lavatory",
+      "loo"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I need to go to toilet.",
+        "correct": "I need to go to the toilet.",
+        "explain_vi": "Cần mạo từ 'the'"
+      }
+    ],
+    "grammar_patterns": [
+      "the toilet (definite article)"
+    ]
+  },
+  {
+    "word": "bath",
+    "phonetic": "/bɑːθ/",
+    "meaning_vi": "bồn tắm, tắm bồn",
+    "meaning_en": "a large tub for soaking the body",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She had a relaxing bath.",
+        "vi": "Cô ấy đã tắm bồn thư giãn."
+      }
+    ],
+    "word_family": [
+      "bathe (v)",
+      "bathroom (n)"
+    ],
+    "collocations": [
+      "take a bath",
+      "have a bath",
+      "bath tub"
+    ],
+    "synonyms": [
+      "bathtub"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I take bath.",
+        "correct": "I take a bath.",
+        "explain_vi": "Cần mạo từ 'a'"
+      }
+    ],
+    "grammar_patterns": [
+      "take/have a bath (idiom)"
+    ]
+  },
+  {
+    "word": "radiator",
+    "phonetic": "/ˈreɪ.di.eɪ.tər/",
+    "meaning_vi": "lò sưởi (kiểu tản nhiệt)",
+    "meaning_en": "a device that heats a room",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The radiator is making a noise.",
+        "vi": "Lò sưởi đang kêu."
+      }
+    ],
+    "word_family": [
+      "radiate (v)",
+      "radiation (n)"
+    ],
+    "collocations": [
+      "turn on the radiator",
+      "radiator valve",
+      "bleed the radiator"
+    ],
+    "synonyms": [
+      "heater",
+      "convector"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I turned off radiator.",
+        "correct": "I turned off the radiator.",
+        "explain_vi": "Cần mạo từ 'the'"
+      }
+    ],
+    "grammar_patterns": [
+      "the radiator (definite article)"
+    ]
+  },
+  {
+    "word": "outlet",
+    "phonetic": "/ˈaʊt.let/",
+    "meaning_vi": "ổ cắm điện",
+    "meaning_en": "a socket in a wall for connecting electrical devices",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Plug the charger into the outlet.",
+        "vi": "Cắm sạc vào ổ điện."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "wall outlet",
+      "electrical outlet",
+      "power outlet"
+    ],
+    "synonyms": [
+      "socket",
+      "power point"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I need an outlet to charge my phone.",
+        "correct": "I need an outlet to charge my phone.",
+        "explain_vi": "Không có lỗi phổ biến đặc biệt"
+      }
+    ],
+    "grammar_patterns": [
+      "an outlet (indefinite article)"
+    ]
+  },
+  {
+    "word": "broom",
+    "phonetic": "/bruːm/",
+    "meaning_vi": "chổi",
+    "meaning_en": "a cleaning tool with bristles and a long handle",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She swept the floor with a broom.",
+        "vi": "Cô ấy quét sàn bằng chổi."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "broom closet",
+      "sweep with a broom",
+      "broom handle"
+    ],
+    "synonyms": [
+      "brush",
+      "besom"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I need a broom to clean.",
+        "correct": "I need a broom to clean.",
+        "explain_vi": "Không có lỗi phổ biến đặc biệt"
+      }
+    ],
+    "grammar_patterns": [
+      "a broom (countable noun)"
+    ]
+  },
+  {
+    "word": "mop",
+    "phonetic": "/mɒp/",
+    "meaning_vi": "cây lau nhà",
+    "meaning_en": "a tool for cleaning floors with water",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "He used a mop to clean the kitchen floor.",
+        "vi": "Anh ấy dùng cây lau nhà để lau sàn bếp."
+      }
+    ],
+    "word_family": [
+      "mop (v)"
+    ],
+    "collocations": [
+      "mop the floor",
+      "mop bucket",
+      "sponge mop"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I mopped the floor with mop.",
+        "correct": "I mopped the floor with a mop.",
+        "explain_vi": "Cần mạo từ 'a'"
+      }
+    ],
+    "grammar_patterns": [
+      "a mop (countable noun)"
+    ]
+  },
+  {
+    "word": "bucket",
+    "phonetic": "/ˈbʌk.ɪt/",
+    "meaning_vi": "xô, thùng",
+    "meaning_en": "a cylindrical container with a handle",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Fill the bucket with water.",
+        "vi": "Đổ đầy nước vào xô."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "bucket of water",
+      "mop bucket",
+      "bucket list"
+    ],
+    "synonyms": [
+      "pail",
+      "bin"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I need a bucket to carry water.",
+        "correct": "I need a bucket to carry water.",
+        "explain_vi": "Không có lỗi phổ biến đặc biệt"
+      }
+    ],
+    "grammar_patterns": [
+      "a bucket (countable noun)"
+    ]
+  },
+  {
+    "word": "kettle",
+    "phonetic": "/ˈket.əl/",
+    "meaning_vi": "ấm đun nước",
+    "meaning_en": "a pot for boiling water",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I boiled water in the kettle for tea.",
+        "vi": "Tôi đun nước trong ấm để pha trà."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "electric kettle",
+      "kettle of water",
+      "put the kettle on"
+    ],
+    "synonyms": [
+      "teapot",
+      "boiler"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I put the kettle on for tea.",
+        "correct": "I put the kettle on for tea.",
+        "explain_vi": "Không có lỗi phổ biến đặc biệt"
+      }
+    ],
+    "grammar_patterns": [
+      "the kettle (definite article)"
+    ]
+  },
+  {
+    "word": "toaster",
+    "phonetic": "/ˈtoʊ.stər/",
+    "meaning_vi": "máy nướng bánh mì",
+    "meaning_en": "an appliance for browning bread",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I put two slices of bread in the toaster.",
+        "vi": "Tôi cho hai lát bánh mì vào máy nướng."
+      }
+    ],
+    "word_family": [
+      "toast (n/v)"
+    ],
+    "collocations": [
+      "pop-up toaster",
+      "toaster oven",
+      "toast in the toaster"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I toasted bread with toaster.",
+        "correct": "I toasted bread with a toaster.",
+        "explain_vi": "Cần mạo từ 'a'"
+      }
+    ],
+    "grammar_patterns": [
+      "a toaster (countable noun)"
+    ]
+  },
+  {
+    "word": "microwave",
+    "phonetic": "/ˈmaɪ.krə.weɪv/",
+    "meaning_vi": "lò vi sóng",
+    "meaning_en": "an oven that cooks food quickly using electromagnetic waves",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Heat the soup in the microwave.",
+        "vi": "Hâm nóng súp trong lò vi sóng."
+      }
+    ],
+    "word_family": [
+      "microwave (v)"
+    ],
+    "collocations": [
+      "microwave oven",
+      "microwave-safe",
+      "microwave popcorn"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I put it in microwave.",
+        "correct": "I put it in the microwave.",
+        "explain_vi": "Cần mạo từ 'the'"
+      }
+    ],
+    "grammar_patterns": [
+      "the microwave (definite article)"
+    ]
+  }
+]

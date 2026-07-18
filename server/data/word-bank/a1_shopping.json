@@ -1,0 +1,1589 @@
+[
+  {
+    "word": "price",
+    "phonetic": "/praɪs/",
+    "meaning_vi": "giá cả",
+    "meaning_en": "the amount of money you pay for something",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "What is the price?",
+        "vi": "Giá bao nhiêu?"
+      }
+    ],
+    "word_family": [
+      "priceless (adj)",
+      "overpriced (adj)"
+    ],
+    "collocations": [
+      "low price",
+      "high price",
+      "good price"
+    ],
+    "synonyms": [
+      "cost"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "How much is the price?",
+        "correct": "What is the price?",
+        "explain_vi": "Không dùng 'How much' với 'price' vì thừa"
+      }
+    ],
+    "grammar_patterns": [
+      "What is the price of + noun?"
+    ]
+  },
+  {
+    "word": "buy",
+    "phonetic": "/baɪ/",
+    "meaning_vi": "mua",
+    "meaning_en": "to get something by paying money",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "I want to buy a shirt.",
+        "vi": "Tôi muốn mua một cái áo sơ mi."
+      }
+    ],
+    "word_family": [
+      "buyer (n)",
+      "buying (n)"
+    ],
+    "collocations": [
+      "buy something",
+      "buy from",
+      "buy for"
+    ],
+    "synonyms": [
+      "purchase"
+    ],
+    "antonyms": [
+      "sell"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I buy a food.",
+        "correct": "I buy food.",
+        "explain_vi": "Không dùng mạo từ 'a' trước danh từ không đếm được 'food'"
+      }
+    ],
+    "grammar_patterns": [
+      "buy + noun",
+      "buy + noun + for + someone"
+    ]
+  },
+  {
+    "word": "sell",
+    "phonetic": "/sel/",
+    "meaning_vi": "bán",
+    "meaning_en": "to give something to someone for money",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "They sell fruits here.",
+        "vi": "Họ bán trái cây ở đây."
+      }
+    ],
+    "word_family": [
+      "seller (n)",
+      "sale (n)"
+    ],
+    "collocations": [
+      "sell something",
+      "sell to",
+      "sell at"
+    ],
+    "synonyms": [
+      "vend"
+    ],
+    "antonyms": [
+      "buy"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "They sell fruits here cheap.",
+        "correct": "They sell fruits here cheaply.",
+        "explain_vi": "Cần trạng từ 'cheaply' thay vì tính từ 'cheap'"
+      }
+    ],
+    "grammar_patterns": [
+      "sell + noun",
+      "sell + noun + for + price"
+    ]
+  },
+  {
+    "word": "money",
+    "phonetic": "/ˈmʌni/",
+    "meaning_vi": "tiền",
+    "meaning_en": "coins or paper notes used to buy things",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I don't have money.",
+        "vi": "Tôi không có tiền."
+      }
+    ],
+    "word_family": [
+      "monetary (adj)"
+    ],
+    "collocations": [
+      "spend money",
+      "save money",
+      "have money"
+    ],
+    "synonyms": [
+      "cash",
+      "currency"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have many money.",
+        "correct": "I have a lot of money.",
+        "explain_vi": "'Money' là danh từ không đếm được, dùng 'a lot of'"
+      }
+    ],
+    "grammar_patterns": [
+      "have + money",
+      "spend + money + on + noun"
+    ]
+  },
+  {
+    "word": "shop",
+    "phonetic": "/ʃɒp/",
+    "meaning_vi": "cửa hàng",
+    "meaning_en": "a place where you buy things",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The shop is open.",
+        "vi": "Cửa hàng đang mở cửa."
+      }
+    ],
+    "word_family": [
+      "shopping (n)",
+      "shopkeeper (n)"
+    ],
+    "collocations": [
+      "go to the shop",
+      "shop window",
+      "shop assistant"
+    ],
+    "synonyms": [
+      "store"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go to shop.",
+        "correct": "I go to the shop.",
+        "explain_vi": "Cần mạo từ 'the' trước 'shop'"
+      }
+    ],
+    "grammar_patterns": [
+      "go to + the + shop",
+      "at + the + shop"
+    ]
+  },
+  {
+    "word": "store",
+    "phonetic": "/stɔːr/",
+    "meaning_vi": "cửa hàng (thường lớn hơn shop)",
+    "meaning_en": "a large shop where you buy many things",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She works at a store.",
+        "vi": "Cô ấy làm việc ở một cửa hàng."
+      }
+    ],
+    "word_family": [
+      "storage (n)"
+    ],
+    "collocations": [
+      "department store",
+      "grocery store",
+      "clothing store"
+    ],
+    "synonyms": [
+      "shop",
+      "market"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go store.",
+        "correct": "I go to the store.",
+        "explain_vi": "Cần giới từ 'to' và mạo từ 'the'"
+      }
+    ],
+    "grammar_patterns": [
+      "go to + the + store",
+      "at + a + store"
+    ]
+  },
+  {
+    "word": "cost",
+    "phonetic": "/kɒst/",
+    "meaning_vi": "chi phí",
+    "meaning_en": "the amount of money needed to buy something",
+    "pos": "noun/verb",
+    "examples": [
+      {
+        "en": "How much does it cost?",
+        "vi": "Nó giá bao nhiêu?"
+      }
+    ],
+    "word_family": [
+      "costly (adj)"
+    ],
+    "collocations": [
+      "cost of living",
+      "cost price",
+      "low cost"
+    ],
+    "synonyms": [
+      "price",
+      "expense"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "How much cost it?",
+        "correct": "How much does it cost?",
+        "explain_vi": "Cần trợ động từ 'does' và đúng thứ tự từ"
+      }
+    ],
+    "grammar_patterns": [
+      "cost + (someone) + money",
+      "How much does + noun + cost?"
+    ]
+  },
+  {
+    "word": "pay",
+    "phonetic": "/peɪ/",
+    "meaning_vi": "trả tiền",
+    "meaning_en": "to give money for something you buy",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "I pay by card.",
+        "vi": "Tôi trả bằng thẻ."
+      }
+    ],
+    "word_family": [
+      "payment (n)",
+      "payable (adj)"
+    ],
+    "collocations": [
+      "pay for",
+      "pay cash",
+      "pay by card"
+    ],
+    "synonyms": [
+      "spend",
+      "settle"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I pay the bill.",
+        "correct": "I pay the bill.",
+        "explain_vi": "Đúng, nhưng nhớ giới từ 'for': pay for something"
+      }
+    ],
+    "grammar_patterns": [
+      "pay + for + noun",
+      "pay + (someone) + money"
+    ]
+  },
+  {
+    "word": "cheap",
+    "phonetic": "/tʃiːp/",
+    "meaning_vi": "rẻ",
+    "meaning_en": "low in price",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "This shirt is cheap.",
+        "vi": "Cái áo này rẻ."
+      }
+    ],
+    "word_family": [
+      "cheaply (adv)",
+      "cheapness (n)"
+    ],
+    "collocations": [
+      "cheap price",
+      "cheap goods",
+      "very cheap"
+    ],
+    "synonyms": [
+      "inexpensive",
+      "affordable"
+    ],
+    "antonyms": [
+      "expensive"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "It's cheap price.",
+        "correct": "It's cheap.",
+        "explain_vi": "Không cần 'price' vì 'cheap' đã đủ nghĩa"
+      }
+    ],
+    "grammar_patterns": [
+      "be + cheap",
+      "a + cheap + noun"
+    ]
+  },
+  {
+    "word": "expensive",
+    "phonetic": "/ɪkˈspensɪv/",
+    "meaning_vi": "đắt",
+    "meaning_en": "high in price",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "That car is expensive.",
+        "vi": "Chiếc xe đó đắt."
+      }
+    ],
+    "word_family": [
+      "expensively (adv)",
+      "expensiveness (n)"
+    ],
+    "collocations": [
+      "very expensive",
+      "too expensive",
+      "expensive item"
+    ],
+    "synonyms": [
+      "costly",
+      "pricey"
+    ],
+    "antonyms": [
+      "cheap"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "It's expensive price.",
+        "correct": "It's expensive.",
+        "explain_vi": "Không dùng 'price' với 'expensive'"
+      }
+    ],
+    "grammar_patterns": [
+      "be + expensive",
+      "a + expensive + noun"
+    ]
+  },
+  {
+    "word": "cash",
+    "phonetic": "/kæʃ/",
+    "meaning_vi": "tiền mặt",
+    "meaning_en": "money in the form of coins or paper notes",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Do you have cash?",
+        "vi": "Bạn có tiền mặt không?"
+      }
+    ],
+    "word_family": [
+      "cashier (n)"
+    ],
+    "collocations": [
+      "pay cash",
+      "cash only",
+      "cash machine"
+    ],
+    "synonyms": [
+      "money",
+      "currency"
+    ],
+    "antonyms": [
+      "credit"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I have many cash.",
+        "correct": "I have a lot of cash.",
+        "explain_vi": "'Cash' là danh từ không đếm được"
+      }
+    ],
+    "grammar_patterns": [
+      "have + cash",
+      "pay + in + cash"
+    ]
+  },
+  {
+    "word": "card",
+    "phonetic": "/kɑːrd/",
+    "meaning_vi": "thẻ (tín dụng/ghi nợ)",
+    "meaning_en": "a small plastic card used to pay for things",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I pay by card.",
+        "vi": "Tôi trả bằng thẻ."
+      }
+    ],
+    "word_family": [
+      "cardholder (n)"
+    ],
+    "collocations": [
+      "credit card",
+      "debit card",
+      "card payment"
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "cash"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I pay with card.",
+        "correct": "I pay by card.",
+        "explain_vi": "Dùng 'by' thay vì 'with'"
+      }
+    ],
+    "grammar_patterns": [
+      "pay + by + card",
+      "use + a + card"
+    ]
+  },
+  {
+    "word": "receipt",
+    "phonetic": "/rɪˈsiːt/",
+    "meaning_vi": "hóa đơn",
+    "meaning_en": "a piece of paper showing you paid for something",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Can I have a receipt?",
+        "vi": "Cho tôi xin hóa đơn?"
+      }
+    ],
+    "word_family": [
+      "receive (v)"
+    ],
+    "collocations": [
+      "get a receipt",
+      "keep the receipt",
+      "receipt for"
+    ],
+    "synonyms": [
+      "bill",
+      "invoice"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I need receipt.",
+        "correct": "I need a receipt.",
+        "explain_vi": "Cần mạo từ 'a'"
+      }
+    ],
+    "grammar_patterns": [
+      "a + receipt",
+      "receipt + for + noun"
+    ]
+  },
+  {
+    "word": "change",
+    "phonetic": "/tʃeɪndʒ/",
+    "meaning_vi": "tiền lẻ, tiền thừa",
+    "meaning_en": "the money you get back when you pay more than the price",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Here is your change.",
+        "vi": "Đây là tiền thừa của bạn."
+      }
+    ],
+    "word_family": [
+      "changeable (adj)"
+    ],
+    "collocations": [
+      "keep the change",
+      "small change",
+      "change for"
+    ],
+    "synonyms": [
+      "coins",
+      "loose change"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I need change money.",
+        "correct": "I need change.",
+        "explain_vi": "Không cần 'money' vì 'change' đã đủ"
+      }
+    ],
+    "grammar_patterns": [
+      "give + change",
+      "get + change"
+    ]
+  },
+  {
+    "word": "basket",
+    "phonetic": "/ˈbæskɪt/",
+    "meaning_vi": "giỏ (đi chợ)",
+    "meaning_en": "a container for carrying things you buy",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Put it in the basket.",
+        "vi": "Bỏ nó vào giỏ."
+      }
+    ],
+    "word_family": [
+      "basketful (n)"
+    ],
+    "collocations": [
+      "shopping basket",
+      "basket of goods",
+      "basket case"
+    ],
+    "synonyms": [
+      "hamper",
+      "bin"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have basket.",
+        "correct": "I have a basket.",
+        "explain_vi": "Cần mạo từ 'a'"
+      }
+    ],
+    "grammar_patterns": [
+      "a + basket",
+      "in + the + basket"
+    ]
+  },
+  {
+    "word": "bag",
+    "phonetic": "/bæɡ/",
+    "meaning_vi": "túi (đựng đồ)",
+    "meaning_en": "a container made of paper, plastic, etc. for carrying things",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I need a bag.",
+        "vi": "Tôi cần một cái túi."
+      }
+    ],
+    "word_family": [
+      "baggage (n)"
+    ],
+    "collocations": [
+      "paper bag",
+      "plastic bag",
+      "shopping bag"
+    ],
+    "synonyms": [
+      "sack",
+      "pouch"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I need bag.",
+        "correct": "I need a bag.",
+        "explain_vi": "Cần mạo từ 'a'"
+      }
+    ],
+    "grammar_patterns": [
+      "a + bag",
+      "in + a + bag"
+    ]
+  },
+  {
+    "word": "size",
+    "phonetic": "/saɪz/",
+    "meaning_vi": "kích cỡ",
+    "meaning_en": "how big or small something is",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "What size is this?",
+        "vi": "Cái này size bao nhiêu?"
+      }
+    ],
+    "word_family": [
+      "sizable (adj)"
+    ],
+    "collocations": [
+      "size small",
+      "size medium",
+      "size large"
+    ],
+    "synonyms": [
+      "dimension",
+      "measurement"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I need size small.",
+        "correct": "I need a size small.",
+        "explain_vi": "Cần mạo từ 'a' trước 'size'"
+      }
+    ],
+    "grammar_patterns": [
+      "what size",
+      "a + size + noun"
+    ]
+  },
+  {
+    "word": "color",
+    "phonetic": "/ˈkʌlər/",
+    "meaning_vi": "màu sắc",
+    "meaning_en": "the appearance of something, e.g., red, blue",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I like this color.",
+        "vi": "Tôi thích màu này."
+      }
+    ],
+    "word_family": [
+      "colorful (adj)",
+      "colorless (adj)"
+    ],
+    "collocations": [
+      "bright color",
+      "dark color",
+      "color of"
+    ],
+    "synonyms": [
+      "shade",
+      "hue"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "What color it is?",
+        "correct": "What color is it?",
+        "explain_vi": "Đảo ngữ: động từ trước chủ ngữ"
+      }
+    ],
+    "grammar_patterns": [
+      "what color",
+      "a + color + noun"
+    ]
+  },
+  {
+    "word": "try",
+    "phonetic": "/traɪ/",
+    "meaning_vi": "thử (đồ)",
+    "meaning_en": "to test or use something to see if you like it",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "Can I try this on?",
+        "vi": "Tôi có thể thử cái này không?"
+      }
+    ],
+    "word_family": [
+      "trial (n)"
+    ],
+    "collocations": [
+      "try on",
+      "try out",
+      "give it a try"
+    ],
+    "synonyms": [
+      "test",
+      "sample"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I try it.",
+        "correct": "I try it on.",
+        "explain_vi": "Cần 'on' khi thử quần áo"
+      }
+    ],
+    "grammar_patterns": [
+      "try + on + noun",
+      "try + noun + on"
+    ]
+  },
+  {
+    "word": "discount",
+    "phonetic": "/ˈdɪskaʊnt/",
+    "meaning_vi": "giảm giá",
+    "meaning_en": "a reduction in the usual price",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Is there a discount?",
+        "vi": "Có giảm giá không?"
+      }
+    ],
+    "word_family": [
+      "discounted (adj)"
+    ],
+    "collocations": [
+      "get a discount",
+      "discount price",
+      "discount on"
+    ],
+    "synonyms": [
+      "sale",
+      "reduction"
+    ],
+    "antonyms": [
+      "surcharge"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I have discount.",
+        "correct": "I have a discount.",
+        "explain_vi": "Cần mạo từ 'a'"
+      }
+    ],
+    "grammar_patterns": [
+      "a + discount",
+      "discount + on + noun"
+    ]
+  },
+  {
+    "word": "sale",
+    "phonetic": "/seɪl/",
+    "meaning_vi": "giảm giá, bán hàng",
+    "meaning_en": "a period when goods are sold at lower prices",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The store has a big sale.",
+        "vi": "Cửa hàng có đợt giảm giá lớn."
+      },
+      {
+        "en": "I bought this shirt on sale.",
+        "vi": "Tôi mua chiếc áo này trong đợt giảm giá."
+      }
+    ],
+    "word_family": [
+      "sell (v)"
+    ],
+    "collocations": [
+      "on sale",
+      "big sale",
+      "sale price"
+    ],
+    "synonyms": [
+      "discount",
+      "offer"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I buy it with sale.",
+        "correct": "I buy it on sale.",
+        "explain_vi": "Dùng 'on sale' chứ không phải 'with sale'."
+      }
+    ],
+    "grammar_patterns": [
+      "on sale (prepositional phrase)"
+    ]
+  },
+  {
+    "word": "customer",
+    "phonetic": "/ˈkʌs.tə.mər/",
+    "meaning_vi": "khách hàng",
+    "meaning_en": "a person who buys goods or services",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The customer is paying at the counter.",
+        "vi": "Khách hàng đang thanh toán tại quầy."
+      },
+      {
+        "en": "We have many customers today.",
+        "vi": "Hôm nay chúng tôi có nhiều khách hàng."
+      }
+    ],
+    "word_family": [
+      "custom (n)",
+      "customize (v)"
+    ],
+    "collocations": [
+      "regular customer",
+      "customer service",
+      "satisfied customer"
+    ],
+    "synonyms": [
+      "buyer",
+      "shopper"
+    ],
+    "antonyms": [
+      "seller"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I am a custom.",
+        "correct": "I am a customer.",
+        "explain_vi": "'Custom' là phong tục, không phải khách hàng."
+      }
+    ],
+    "grammar_patterns": [
+      "the customer + verb"
+    ]
+  },
+  {
+    "word": "checkout",
+    "phonetic": "/ˈtʃek.aʊt/",
+    "meaning_vi": "quầy thanh toán, thanh toán",
+    "meaning_en": "the place where you pay for goods in a store",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Please go to the checkout.",
+        "vi": "Vui lòng đến quầy thanh toán."
+      },
+      {
+        "en": "There is a long line at the checkout.",
+        "vi": "Có một hàng dài ở quầy thanh toán."
+      }
+    ],
+    "word_family": [
+      "check (v)",
+      "check out (phrasal v)"
+    ],
+    "collocations": [
+      "checkout counter",
+      "checkout line",
+      "go to checkout"
+    ],
+    "synonyms": [
+      "cash register",
+      "till"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go to check out.",
+        "correct": "I go to the checkout.",
+        "explain_vi": "'Check out' là động từ, 'checkout' là danh từ chỉ quầy."
+      }
+    ],
+    "grammar_patterns": [
+      "at the checkout",
+      "the checkout + noun"
+    ]
+  },
+  {
+    "word": "receipt",
+    "phonetic": "/rɪˈsiːt/",
+    "meaning_vi": "hóa đơn, biên lai",
+    "meaning_en": "a piece of paper that shows you have paid for something",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Keep your receipt.",
+        "vi": "Giữ hóa đơn của bạn."
+      },
+      {
+        "en": "I need a receipt, please.",
+        "vi": "Tôi cần một hóa đơn, làm ơn."
+      }
+    ],
+    "word_family": [
+      "receive (v)"
+    ],
+    "collocations": [
+      "get a receipt",
+      "keep the receipt",
+      "receipt number"
+    ],
+    "synonyms": [
+      "bill",
+      "invoice"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I want a recipe.",
+        "correct": "I want a receipt.",
+        "explain_vi": "'Recipe' là công thức nấu ăn, 'receipt' là hóa đơn."
+      }
+    ],
+    "grammar_patterns": [
+      "a receipt",
+      "the receipt"
+    ]
+  },
+  {
+    "word": "change",
+    "phonetic": "/tʃeɪndʒ/",
+    "meaning_vi": "tiền thừa, tiền lẻ",
+    "meaning_en": "the money you get back when you pay more than the cost",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Here is your change.",
+        "vi": "Đây là tiền thừa của bạn."
+      },
+      {
+        "en": "Do you have change for a ten-dollar bill?",
+        "vi": "Bạn có tiền lẻ cho tờ 10 đô không?"
+      }
+    ],
+    "word_family": [
+      "change (v)"
+    ],
+    "collocations": [
+      "get change",
+      "keep the change",
+      "change for"
+    ],
+    "synonyms": [
+      "coins",
+      "small money"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I need change money.",
+        "correct": "I need change.",
+        "explain_vi": "'Change money' thừa từ 'money'."
+      }
+    ],
+    "grammar_patterns": [
+      "change (uncountable noun)"
+    ]
+  },
+  {
+    "word": "basket",
+    "phonetic": "/ˈbæs.kɪt/",
+    "meaning_vi": "giỏ (đi chợ)",
+    "meaning_en": "a container used for carrying things, especially when shopping",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Put the apples in the basket.",
+        "vi": "Bỏ táo vào giỏ."
+      },
+      {
+        "en": "I need a shopping basket.",
+        "vi": "Tôi cần một cái giỏ đi chợ."
+      }
+    ],
+    "word_family": [
+      "basketful (n)"
+    ],
+    "collocations": [
+      "shopping basket",
+      "basket of fruit",
+      "put in basket"
+    ],
+    "synonyms": [
+      "hamper",
+      "tote"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have a basket apple.",
+        "correct": "I have a basket of apples.",
+        "explain_vi": "Cần có 'of' khi nói số lượng."
+      }
+    ],
+    "grammar_patterns": [
+      "a basket of + noun"
+    ]
+  },
+  {
+    "word": "bag",
+    "phonetic": "/bæɡ/",
+    "meaning_vi": "túi, cặp",
+    "meaning_en": "a container made of paper, plastic, or cloth for carrying things",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Can I have a bag, please?",
+        "vi": "Cho tôi một cái túi, làm ơn."
+      },
+      {
+        "en": "She carries a big bag.",
+        "vi": "Cô ấy mang một cái túi lớn."
+      }
+    ],
+    "word_family": [
+      "baggage (n)"
+    ],
+    "collocations": [
+      "paper bag",
+      "plastic bag",
+      "shopping bag"
+    ],
+    "synonyms": [
+      "sack",
+      "carrier"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I need bag.",
+        "correct": "I need a bag.",
+        "explain_vi": "Cần mạo từ 'a' trước danh từ số ít."
+      }
+    ],
+    "grammar_patterns": [
+      "a bag",
+      "bag of + noun"
+    ]
+  },
+  {
+    "word": "size",
+    "phonetic": "/saɪz/",
+    "meaning_vi": "kích cỡ, size",
+    "meaning_en": "how big or small something is",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "What size do you need?",
+        "vi": "Bạn cần size nào?"
+      },
+      {
+        "en": "This shirt is size M.",
+        "vi": "Áo này size M."
+      }
+    ],
+    "word_family": [
+      "size (v)",
+      "sizable (adj)"
+    ],
+    "collocations": [
+      "size chart",
+      "shoe size",
+      "clothing size"
+    ],
+    "synonyms": [
+      "dimension",
+      "measurement"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I wear size M size.",
+        "correct": "I wear size M.",
+        "explain_vi": "Không lặp từ 'size'."
+      }
+    ],
+    "grammar_patterns": [
+      "size + number/letter",
+      "in size"
+    ]
+  },
+  {
+    "word": "color",
+    "phonetic": "/ˈkʌl.ər/",
+    "meaning_vi": "màu sắc",
+    "meaning_en": "the appearance of things as red, blue, green, etc.",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "What color is it?",
+        "vi": "Nó màu gì?"
+      },
+      {
+        "en": "I like the red color.",
+        "vi": "Tôi thích màu đỏ."
+      }
+    ],
+    "word_family": [
+      "colorful (adj)",
+      "color (v)"
+    ],
+    "collocations": [
+      "bright color",
+      "dark color",
+      "color scheme"
+    ],
+    "synonyms": [
+      "hue",
+      "shade"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "It color red.",
+        "correct": "It is red.",
+        "explain_vi": "Không cần 'color' khi miêu tả màu."
+      }
+    ],
+    "grammar_patterns": [
+      "color + noun",
+      "noun + color"
+    ]
+  },
+  {
+    "word": "try",
+    "phonetic": "/traɪ/",
+    "meaning_vi": "thử (quần áo)",
+    "meaning_en": "to put on a piece of clothing to see if it fits",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "Can I try this dress on?",
+        "vi": "Tôi có thể thử chiếc váy này không?"
+      },
+      {
+        "en": "You should try it on.",
+        "vi": "Bạn nên thử nó."
+      }
+    ],
+    "word_family": [
+      "trial (n)",
+      "trying (adj)"
+    ],
+    "collocations": [
+      "try on",
+      "try out",
+      "give it a try"
+    ],
+    "synonyms": [
+      "test",
+      "sample"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I try this shirt.",
+        "correct": "I try on this shirt.",
+        "explain_vi": "Cần thêm 'on' khi nói thử quần áo."
+      }
+    ],
+    "grammar_patterns": [
+      "try on + noun",
+      "try + noun + on"
+    ]
+  },
+  {
+    "word": "discount",
+    "phonetic": "/ˈdɪs.kaʊnt/",
+    "meaning_vi": "giảm giá, chiết khấu",
+    "meaning_en": "a reduction in the usual price",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "There is a 10% discount.",
+        "vi": "Có giảm giá 10%."
+      },
+      {
+        "en": "I got a discount on this item.",
+        "vi": "Tôi được giảm giá cho món này."
+      }
+    ],
+    "word_family": [
+      "discount (v)"
+    ],
+    "collocations": [
+      "get a discount",
+      "discount price",
+      "discount store"
+    ],
+    "synonyms": [
+      "reduction",
+      "markdown"
+    ],
+    "antonyms": [
+      "surcharge"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I buy it with discount.",
+        "correct": "I buy it at a discount.",
+        "explain_vi": "Dùng 'at a discount'."
+      }
+    ],
+    "grammar_patterns": [
+      "at a discount",
+      "discount of + percent"
+    ]
+  },
+  {
+    "word": "return",
+    "phonetic": "/rɪˈtɜːrn/",
+    "meaning_vi": "trả lại (hàng)",
+    "meaning_en": "to give back or exchange an item you bought",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "I want to return this shirt.",
+        "vi": "Tôi muốn trả lại chiếc áo này."
+      },
+      {
+        "en": "Can I return it if it doesn't fit?",
+        "vi": "Tôi có thể trả lại nếu nó không vừa không?"
+      }
+    ],
+    "word_family": [
+      "return (n)",
+      "returnable (adj)"
+    ],
+    "collocations": [
+      "return policy",
+      "return an item",
+      "return for exchange"
+    ],
+    "synonyms": [
+      "give back",
+      "send back"
+    ],
+    "antonyms": [
+      "keep"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I return back the shirt.",
+        "correct": "I return the shirt.",
+        "explain_vi": "'Return' đã có nghĩa trả lại, không cần 'back'."
+      }
+    ],
+    "grammar_patterns": [
+      "return + noun",
+      "return + to + place"
+    ]
+  },
+  {
+    "word": "exchange",
+    "phonetic": "/ɪksˈtʃeɪndʒ/",
+    "meaning_vi": "đổi (hàng)",
+    "meaning_en": "to give something back and get something else instead",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "Can I exchange this for a larger size?",
+        "vi": "Tôi có thể đổi cái này lấy size lớn hơn không?"
+      },
+      {
+        "en": "They allow exchanges within 30 days.",
+        "vi": "Họ cho phép đổi hàng trong vòng 30 ngày."
+      }
+    ],
+    "word_family": [
+      "exchange (n)",
+      "exchangeable (adj)"
+    ],
+    "collocations": [
+      "exchange for",
+      "exchange policy",
+      "exchange rate"
+    ],
+    "synonyms": [
+      "swap",
+      "trade"
+    ],
+    "antonyms": [
+      "keep"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I want to exchange this to a smaller one.",
+        "correct": "I want to exchange this for a smaller one.",
+        "explain_vi": "Dùng 'for' chứ không phải 'to'."
+      }
+    ],
+    "grammar_patterns": [
+      "exchange + noun + for + noun"
+    ]
+  },
+  {
+    "word": "refund",
+    "phonetic": "/ˈriː.fʌnd/",
+    "meaning_vi": "hoàn tiền",
+    "meaning_en": "money given back if you return something",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I want a full refund.",
+        "vi": "Tôi muốn được hoàn lại toàn bộ tiền."
+      },
+      {
+        "en": "They gave me a refund.",
+        "vi": "Họ đã hoàn tiền cho tôi."
+      }
+    ],
+    "word_family": [
+      "refund (v)",
+      "refundable (adj)"
+    ],
+    "collocations": [
+      "get a refund",
+      "full refund",
+      "refund policy"
+    ],
+    "synonyms": [
+      "reimbursement",
+      "repayment"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I need refund money.",
+        "correct": "I need a refund.",
+        "explain_vi": "Không cần 'money'."
+      }
+    ],
+    "grammar_patterns": [
+      "a refund",
+      "refund of + amount"
+    ]
+  },
+  {
+    "word": "counter",
+    "phonetic": "/ˈkaʊn.tər/",
+    "meaning_vi": "quầy, bàn (trong cửa hàng)",
+    "meaning_en": "a long flat surface where customers are served",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Pay at the counter.",
+        "vi": "Thanh toán tại quầy."
+      },
+      {
+        "en": "The counter is busy.",
+        "vi": "Quầy đang đông."
+      }
+    ],
+    "word_family": [
+      "counter (v)",
+      "countertop (n)"
+    ],
+    "collocations": [
+      "checkout counter",
+      "service counter",
+      "at the counter"
+    ],
+    "synonyms": [
+      "desk",
+      "table"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I pay on the counter.",
+        "correct": "I pay at the counter.",
+        "explain_vi": "Dùng 'at' chứ không phải 'on'."
+      }
+    ],
+    "grammar_patterns": [
+      "at the counter",
+      "behind the counter"
+    ]
+  },
+  {
+    "word": "price tag",
+    "phonetic": "/ˈpraɪs ˌtæɡ/",
+    "meaning_vi": "thẻ giá, nhãn giá",
+    "meaning_en": "a small piece of paper or plastic attached to an item showing its price",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The price tag says $20.",
+        "vi": "Thẻ giá ghi 20 đô."
+      },
+      {
+        "en": "Check the price tag before buying.",
+        "vi": "Kiểm tra thẻ giá trước khi mua."
+      }
+    ],
+    "word_family": [
+      "tag (n)"
+    ],
+    "collocations": [
+      "read the price tag",
+      "price tag on",
+      "remove the price tag"
+    ],
+    "synonyms": [
+      "label",
+      "sticker"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I look at the tag price.",
+        "correct": "I look at the price tag.",
+        "explain_vi": "Thứ tự đúng là 'price tag'."
+      }
+    ],
+    "grammar_patterns": [
+      "the price tag + verb"
+    ]
+  },
+  {
+    "word": "shopping cart",
+    "phonetic": "/ˈʃɒp.ɪŋ ˌkɑːrt/",
+    "meaning_vi": "xe đẩy hàng",
+    "meaning_en": "a metal or plastic basket on wheels used in supermarkets",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Take a shopping cart at the entrance.",
+        "vi": "Lấy một xe đẩy hàng ở lối vào."
+      },
+      {
+        "en": "My shopping cart is full.",
+        "vi": "Xe đẩy hàng của tôi đầy."
+      }
+    ],
+    "word_family": [
+      "cart (n)",
+      "shopping (n)"
+    ],
+    "collocations": [
+      "push a shopping cart",
+      "shopping cart full",
+      "leave the cart"
+    ],
+    "synonyms": [
+      "trolley",
+      "buggy"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I need a shop cart.",
+        "correct": "I need a shopping cart.",
+        "explain_vi": "Dùng 'shopping' chứ không phải 'shop'."
+      }
+    ],
+    "grammar_patterns": [
+      "a shopping cart",
+      "the shopping cart"
+    ]
+  },
+  {
+    "word": "aisle",
+    "phonetic": "/aɪl/",
+    "meaning_vi": "lối đi (giữa các kệ hàng)",
+    "meaning_en": "a passage between rows of shelves in a store",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The milk is in aisle 5.",
+        "vi": "Sữa ở lối đi số 5."
+      },
+      {
+        "en": "Walk down the aisle.",
+        "vi": "Đi dọc theo lối đi."
+      }
+    ],
+    "word_family": [
+      "aisle (n)"
+    ],
+    "collocations": [
+      "aisle seat",
+      "down the aisle",
+      "aisle number"
+    ],
+    "synonyms": [
+      "passage",
+      "corridor"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "It is in isle 5.",
+        "correct": "It is in aisle 5.",
+        "explain_vi": "'Isle' là đảo, 'aisle' là lối đi."
+      }
+    ],
+    "grammar_patterns": [
+      "in aisle + number",
+      "down the aisle"
+    ]
+  },
+  {
+    "word": "item",
+    "phonetic": "/ˈaɪ.təm/",
+    "meaning_vi": "món hàng, sản phẩm",
+    "meaning_en": "a single thing you buy",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "How many items do you have?",
+        "vi": "Bạn có bao nhiêu món hàng?"
+      },
+      {
+        "en": "This item is on sale.",
+        "vi": "Món hàng này đang giảm giá."
+      }
+    ],
+    "word_family": [
+      "itemize (v)"
+    ],
+    "collocations": [
+      "item number",
+      "item list",
+      "each item"
+    ],
+    "synonyms": [
+      "product",
+      "article"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have five items things.",
+        "correct": "I have five items.",
+        "explain_vi": "Không lặp từ 'things'."
+      }
+    ],
+    "grammar_patterns": [
+      "an item",
+      "item of + noun"
+    ]
+  },
+  {
+    "word": "receipt",
+    "phonetic": "/rɪˈsiːt/",
+    "meaning_vi": "hóa đơn, biên lai",
+    "meaning_en": "a document showing proof of purchase",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Please give me a receipt.",
+        "vi": "Vui lòng đưa tôi hóa đơn."
+      },
+      {
+        "en": "I lost my receipt.",
+        "vi": "Tôi bị mất hóa đơn."
+      }
+    ],
+    "word_family": [
+      "receive (v)",
+      "reception (n)"
+    ],
+    "collocations": [
+      "ask for a receipt",
+      "receipt number",
+      "without a receipt"
+    ],
+    "synonyms": [
+      "bill",
+      "invoice"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I need a recipe.",
+        "correct": "I need a receipt.",
+        "explain_vi": "'Recipe' là công thức nấu ăn."
+      }
+    ],
+    "grammar_patterns": [
+      "a receipt",
+      "the receipt"
+    ]
+  }
+]

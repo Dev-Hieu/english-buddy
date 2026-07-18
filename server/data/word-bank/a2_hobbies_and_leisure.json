@@ -1,0 +1,2274 @@
+[
+  {
+    "word": "read",
+    "phonetic": "/riːd/",
+    "meaning_vi": "đọc",
+    "meaning_en": "to look at written words and understand them",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "I read a book every night.",
+        "vi": "Tôi đọc sách mỗi tối."
+      }
+    ],
+    "word_family": [
+      "reader (n)",
+      "reading (n)"
+    ],
+    "collocations": [
+      "read a book",
+      "read a magazine",
+      "read the news"
+    ],
+    "synonyms": [
+      "peruse"
+    ],
+    "antonyms": [
+      "write"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I read book.",
+        "correct": "I read a book.",
+        "explain_vi": "Thiếu mạo từ 'a' trước danh từ đếm được số ít."
+      }
+    ],
+    "grammar_patterns": [
+      "read + something"
+    ]
+  },
+  {
+    "word": "listen",
+    "phonetic": "/ˈlɪs.ən/",
+    "meaning_vi": "nghe",
+    "meaning_en": "to pay attention to sound",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "I listen to music.",
+        "vi": "Tôi nghe nhạc."
+      }
+    ],
+    "word_family": [
+      "listener (n)",
+      "listening (n)"
+    ],
+    "collocations": [
+      "listen to music",
+      "listen to a podcast",
+      "listen carefully"
+    ],
+    "synonyms": [
+      "hear",
+      "attend"
+    ],
+    "antonyms": [
+      "ignore"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I listen music.",
+        "correct": "I listen to music.",
+        "explain_vi": "Cần giới từ 'to' sau 'listen'."
+      }
+    ],
+    "grammar_patterns": [
+      "listen + to + something"
+    ]
+  },
+  {
+    "word": "watch",
+    "phonetic": "/wɒtʃ/",
+    "meaning_vi": "xem",
+    "meaning_en": "to look at something for a period of time",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "I watch TV in the evening.",
+        "vi": "Tôi xem TV vào buổi tối."
+      }
+    ],
+    "word_family": [
+      "watcher (n)",
+      "watchful (adj)"
+    ],
+    "collocations": [
+      "watch TV",
+      "watch a movie",
+      "watch a game"
+    ],
+    "synonyms": [
+      "view",
+      "observe"
+    ],
+    "antonyms": [
+      "ignore"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I watch TV every evening.",
+        "correct": "I watch TV every evening.",
+        "explain_vi": "Không có lỗi phổ biến với từ này."
+      }
+    ],
+    "grammar_patterns": [
+      "watch + something"
+    ]
+  },
+  {
+    "word": "play",
+    "phonetic": "/pleɪ/",
+    "meaning_vi": "chơi",
+    "meaning_en": "to engage in an activity for fun",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "Children play in the park.",
+        "vi": "Trẻ em chơi trong công viên."
+      }
+    ],
+    "word_family": [
+      "player (n)",
+      "playful (adj)"
+    ],
+    "collocations": [
+      "play games",
+      "play football",
+      "play the piano"
+    ],
+    "synonyms": [
+      "enjoy",
+      "participate"
+    ],
+    "antonyms": [
+      "work"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I play tennis.",
+        "correct": "I play tennis.",
+        "explain_vi": "Đúng, nhưng lưu ý: 'play' + môn thể thao (không 'the') và 'play' + nhạc cụ (có 'the')."
+      }
+    ],
+    "grammar_patterns": [
+      "play + sport/game",
+      "play + the + musical instrument"
+    ]
+  },
+  {
+    "word": "cook",
+    "phonetic": "/kʊk/",
+    "meaning_vi": "nấu ăn",
+    "meaning_en": "to prepare food by heating it",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "I cook dinner every day.",
+        "vi": "Tôi nấu bữa tối mỗi ngày."
+      }
+    ],
+    "word_family": [
+      "cooker (n)",
+      "cooking (n)"
+    ],
+    "collocations": [
+      "cook a meal",
+      "cook food",
+      "cook for someone"
+    ],
+    "synonyms": [
+      "prepare",
+      "make"
+    ],
+    "antonyms": [
+      "eat"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I cook the dinner.",
+        "correct": "I cook dinner.",
+        "explain_vi": "Không dùng mạo từ với 'dinner' khi nói về bữa ăn nói chung."
+      }
+    ],
+    "grammar_patterns": [
+      "cook + something"
+    ]
+  },
+  {
+    "word": "dance",
+    "phonetic": "/dɑːns/",
+    "meaning_vi": "nhảy múa",
+    "meaning_en": "to move your body to music",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "She dances very well.",
+        "vi": "Cô ấy nhảy rất giỏi."
+      }
+    ],
+    "word_family": [
+      "dancer (n)",
+      "dancing (n)"
+    ],
+    "collocations": [
+      "dance to music",
+      "dance with someone",
+      "go dancing"
+    ],
+    "synonyms": [
+      "boogie",
+      "groove"
+    ],
+    "antonyms": [
+      "sit"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I dance to music.",
+        "correct": "I dance to music.",
+        "explain_vi": "Đúng, nhưng lưu ý: 'dance' + 'to' + music."
+      }
+    ],
+    "grammar_patterns": [
+      "dance + (to something)"
+    ]
+  },
+  {
+    "word": "sing",
+    "phonetic": "/sɪŋ/",
+    "meaning_vi": "hát",
+    "meaning_en": "to make musical sounds with your voice",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "He sings in a choir.",
+        "vi": "Anh ấy hát trong một dàn hợp xướng."
+      }
+    ],
+    "word_family": [
+      "singer (n)",
+      "singing (n)"
+    ],
+    "collocations": [
+      "sing a song",
+      "sing along",
+      "sing karaoke"
+    ],
+    "synonyms": [
+      "chant",
+      "croon"
+    ],
+    "antonyms": [
+      "whisper"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I sing song.",
+        "correct": "I sing a song.",
+        "explain_vi": "Thiếu mạo từ 'a' trước danh từ đếm được số ít."
+      }
+    ],
+    "grammar_patterns": [
+      "sing + something"
+    ]
+  },
+  {
+    "word": "draw",
+    "phonetic": "/drɔː/",
+    "meaning_vi": "vẽ",
+    "meaning_en": "to make a picture with a pen or pencil",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "I like to draw animals.",
+        "vi": "Tôi thích vẽ động vật."
+      }
+    ],
+    "word_family": [
+      "drawing (n)",
+      "drawer (n)"
+    ],
+    "collocations": [
+      "draw a picture",
+      "draw a portrait",
+      "draw with a pencil"
+    ],
+    "synonyms": [
+      "sketch",
+      "illustrate"
+    ],
+    "antonyms": [
+      "erase"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I draw a picture.",
+        "correct": "I draw a picture.",
+        "explain_vi": "Đúng, nhưng lưu ý: 'draw' có thể dùng cả nội động từ và ngoại động từ."
+      }
+    ],
+    "grammar_patterns": [
+      "draw + something"
+    ]
+  },
+  {
+    "word": "garden",
+    "phonetic": "/ˈɡɑːr.dən/",
+    "meaning_vi": "làm vườn",
+    "meaning_en": "to work in a garden, growing plants",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "My grandmother gardens every morning.",
+        "vi": "Bà tôi làm vườn mỗi sáng."
+      }
+    ],
+    "word_family": [
+      "gardener (n)",
+      "gardening (n)"
+    ],
+    "collocations": [
+      "garden in the backyard",
+      "garden for fun",
+      "garden with flowers"
+    ],
+    "synonyms": [
+      "cultivate",
+      "plant"
+    ],
+    "antonyms": [
+      "neglect"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I garden in the garden.",
+        "correct": "I garden in the garden.",
+        "explain_vi": "Câu này đúng nhưng lặp từ. Có thể nói 'I work in the garden'."
+      }
+    ],
+    "grammar_patterns": [
+      "garden (verb) + (location)"
+    ]
+  },
+  {
+    "word": "fish",
+    "phonetic": "/fɪʃ/",
+    "meaning_vi": "câu cá",
+    "meaning_en": "to try to catch fish",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "We fish at the lake.",
+        "vi": "Chúng tôi câu cá ở hồ."
+      }
+    ],
+    "word_family": [
+      "fisher (n)",
+      "fishing (n)"
+    ],
+    "collocations": [
+      "go fishing",
+      "fish for trout",
+      "fish from a boat"
+    ],
+    "synonyms": [
+      "angle"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I fish fish.",
+        "correct": "I fish.",
+        "explain_vi": "Không cần lặp từ 'fish'."
+      }
+    ],
+    "grammar_patterns": [
+      "fish + (for something) / fish + (location)"
+    ]
+  },
+  {
+    "word": "hike",
+    "phonetic": "/haɪk/",
+    "meaning_vi": "đi bộ đường dài",
+    "meaning_en": "to take a long walk in the countryside",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "They hike in the mountains.",
+        "vi": "Họ đi bộ đường dài trên núi."
+      }
+    ],
+    "word_family": [
+      "hiker (n)",
+      "hiking (n)"
+    ],
+    "collocations": [
+      "go hiking",
+      "hike a trail",
+      "hike for miles"
+    ],
+    "synonyms": [
+      "trek",
+      "walk"
+    ],
+    "antonyms": [
+      "ride"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I hike in the mountain.",
+        "correct": "I hike in the mountains.",
+        "explain_vi": "Dùng số nhiều 'mountains' khi nói về vùng núi."
+      }
+    ],
+    "grammar_patterns": [
+      "hike + (location)"
+    ]
+  },
+  {
+    "word": "swim",
+    "phonetic": "/swɪm/",
+    "meaning_vi": "bơi",
+    "meaning_en": "to move through water using your arms and legs",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "I swim in the pool.",
+        "vi": "Tôi bơi trong hồ bơi."
+      }
+    ],
+    "word_family": [
+      "swimmer (n)",
+      "swimming (n)"
+    ],
+    "collocations": [
+      "go swimming",
+      "swim laps",
+      "swim in the sea"
+    ],
+    "synonyms": [
+      "bathe",
+      "dive"
+    ],
+    "antonyms": [
+      "sink"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I swim in pool.",
+        "correct": "I swim in the pool.",
+        "explain_vi": "Thiếu mạo từ 'the'."
+      }
+    ],
+    "grammar_patterns": [
+      "swim + (location)"
+    ]
+  },
+  {
+    "word": "run",
+    "phonetic": "/rʌn/",
+    "meaning_vi": "chạy",
+    "meaning_en": "to move quickly on foot",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "He runs every morning.",
+        "vi": "Anh ấy chạy bộ mỗi sáng."
+      }
+    ],
+    "word_family": [
+      "runner (n)",
+      "running (n)"
+    ],
+    "collocations": [
+      "go for a run",
+      "run a race",
+      "run fast"
+    ],
+    "synonyms": [
+      "jog",
+      "sprint"
+    ],
+    "antonyms": [
+      "walk"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I run every morning.",
+        "correct": "I run every morning.",
+        "explain_vi": "Đúng, nhưng lưu ý: 'run' có thể dùng như 'jog' (chạy bộ)."
+      }
+    ],
+    "grammar_patterns": [
+      "run + (adverb of time/location)"
+    ]
+  },
+  {
+    "word": "cycle",
+    "phonetic": "/ˈsaɪ.kəl/",
+    "meaning_vi": "đạp xe",
+    "meaning_en": "to ride a bicycle",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "I cycle to school.",
+        "vi": "Tôi đạp xe đến trường."
+      }
+    ],
+    "word_family": [
+      "cyclist (n)",
+      "cycling (n)"
+    ],
+    "collocations": [
+      "go cycling",
+      "cycle along a path",
+      "cycle for exercise"
+    ],
+    "synonyms": [
+      "bike",
+      "pedal"
+    ],
+    "antonyms": [
+      "drive"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I cycle with bike.",
+        "correct": "I cycle.",
+        "explain_vi": "Không cần 'with bike' vì 'cycle' đã hàm ý."
+      }
+    ],
+    "grammar_patterns": [
+      "cycle + (to location)"
+    ]
+  },
+  {
+    "word": "collect",
+    "phonetic": "/kəˈlekt/",
+    "meaning_vi": "sưu tầm",
+    "meaning_en": "to get and keep things as a hobby",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "I collect stamps.",
+        "vi": "Tôi sưu tầm tem."
+      }
+    ],
+    "word_family": [
+      "collection (n)",
+      "collector (n)"
+    ],
+    "collocations": [
+      "collect coins",
+      "collect cards",
+      "collect things"
+    ],
+    "synonyms": [
+      "accumulate",
+      "gather"
+    ],
+    "antonyms": [
+      "discard"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I collect stamp.",
+        "correct": "I collect stamps.",
+        "explain_vi": "Dùng số nhiều khi nói về sưu tầm."
+      }
+    ],
+    "grammar_patterns": [
+      "collect + plural noun"
+    ]
+  },
+  {
+    "word": "photography",
+    "phonetic": "/fəˈtɒɡ.rə.fi/",
+    "meaning_vi": "nhiếp ảnh",
+    "meaning_en": "the art or hobby of taking photographs",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Photography is my hobby.",
+        "vi": "Nhiếp ảnh là sở thích của tôi."
+      }
+    ],
+    "word_family": [
+      "photograph (n)",
+      "photographer (n)"
+    ],
+    "collocations": [
+      "do photography",
+      "take up photography",
+      "digital photography"
+    ],
+    "synonyms": [
+      "picture-taking"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I like photography.",
+        "correct": "I like photography.",
+        "explain_vi": "Đúng, nhưng lưu ý: 'photography' là danh từ không đếm được."
+      }
+    ],
+    "grammar_patterns": [
+      "photography + is + hobby"
+    ]
+  },
+  {
+    "word": "camping",
+    "phonetic": "/ˈkæm.pɪŋ/",
+    "meaning_vi": "cắm trại",
+    "meaning_en": "the activity of living in a tent for a short time",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We go camping every summer.",
+        "vi": "Chúng tôi đi cắm trại mỗi mùa hè."
+      }
+    ],
+    "word_family": [
+      "camp (n/v)",
+      "camper (n)"
+    ],
+    "collocations": [
+      "go camping",
+      "camping trip",
+      "camping gear"
+    ],
+    "synonyms": [
+      "glamping"
+    ],
+    "antonyms": [
+      "staying in"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I go to camping.",
+        "correct": "I go camping.",
+        "explain_vi": "Không dùng 'to' trước 'camping'."
+      }
+    ],
+    "grammar_patterns": [
+      "go + camping"
+    ]
+  },
+  {
+    "word": "knit",
+    "phonetic": "/nɪt/",
+    "meaning_vi": "đan len",
+    "meaning_en": "to make clothes from wool using needles",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "My mother knits sweaters.",
+        "vi": "Mẹ tôi đan áo len."
+      }
+    ],
+    "word_family": [
+      "knitter (n)",
+      "knitting (n)"
+    ],
+    "collocations": [
+      "knit a scarf",
+      "knit with wool",
+      "knit in a pattern"
+    ],
+    "synonyms": [
+      "weave"
+    ],
+    "antonyms": [
+      "unravel"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I knit a sweater.",
+        "correct": "I knit a sweater.",
+        "explain_vi": "Đúng, nhưng lưu ý: 'knit' có thể dùng như nội động từ."
+      }
+    ],
+    "grammar_patterns": [
+      "knit + something"
+    ]
+  },
+  {
+    "word": "board game",
+    "phonetic": "/ˈbɔːrd ɡeɪm/",
+    "meaning_vi": "trò chơi bàn",
+    "meaning_en": "a game played on a board with pieces",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We play board games on weekends.",
+        "vi": "Chúng tôi chơi trò chơi bàn vào cuối tuần."
+      }
+    ],
+    "word_family": [
+      "board gaming (n)"
+    ],
+    "collocations": [
+      "play a board game",
+      "board game night",
+      "classic board games"
+    ],
+    "synonyms": [
+      "tabletop game"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I play board game.",
+        "correct": "I play board games.",
+        "explain_vi": "Dùng số nhiều khi nói chung."
+      }
+    ],
+    "grammar_patterns": [
+      "play + board games"
+    ]
+  },
+  {
+    "word": "video game",
+    "phonetic": "/ˈvɪd.i.oʊ ɡeɪm/",
+    "meaning_vi": "trò chơi điện tử",
+    "meaning_en": "a game played on a computer or console",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "He plays video games after school.",
+        "vi": "Cậu ấy chơi trò chơi điện tử sau giờ học."
+      }
+    ],
+    "word_family": [
+      "gamer (n)",
+      "gaming (n)"
+    ],
+    "collocations": [
+      "play video games",
+      "video game console",
+      "video game addiction"
+    ],
+    "synonyms": [
+      "computer game"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I play video game.",
+        "correct": "I play video games.",
+        "explain_vi": "Dùng số nhiều."
+      }
+    ],
+    "grammar_patterns": [
+      "play + video games"
+    ]
+  },
+  {
+    "word": "paint",
+    "phonetic": "/peɪnt/",
+    "meaning_vi": "vẽ (bằng màu)",
+    "meaning_en": "to produce a picture using paint",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "She likes to paint landscapes.",
+        "vi": "Cô ấy thích vẽ phong cảnh."
+      }
+    ],
+    "word_family": [
+      "painting (n)",
+      "painter (n)"
+    ],
+    "collocations": [
+      "paint a picture",
+      "paint with watercolors"
+    ],
+    "synonyms": [
+      "color"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I paint a wall picture.",
+        "correct": "I paint a picture on the wall.",
+        "explain_vi": "Cấu trúc sai: 'paint a wall picture' không tự nhiên."
+      }
+    ],
+    "grammar_patterns": [
+      "paint + object"
+    ]
+  },
+  {
+    "word": "cook",
+    "phonetic": "/kʊk/",
+    "meaning_vi": "nấu ăn",
+    "meaning_en": "to prepare food by heating it",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "He cooks dinner every evening.",
+        "vi": "Anh ấy nấu bữa tối mỗi tối."
+      }
+    ],
+    "word_family": [
+      "cooker (n)",
+      "cooking (n)"
+    ],
+    "collocations": [
+      "cook a meal",
+      "cook for someone"
+    ],
+    "synonyms": [
+      "prepare"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I cook rice in the pot.",
+        "correct": "I cook rice in a pot.",
+        "explain_vi": "Thiếu mạo từ 'a'."
+      }
+    ],
+    "grammar_patterns": [
+      "cook + object"
+    ]
+  },
+  {
+    "word": "dance",
+    "phonetic": "/dæns/",
+    "meaning_vi": "nhảy múa",
+    "meaning_en": "to move your body to music",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "They dance at the party.",
+        "vi": "Họ nhảy múa ở bữa tiệc."
+      }
+    ],
+    "word_family": [
+      "dancer (n)",
+      "dancing (n)"
+    ],
+    "collocations": [
+      "dance to music",
+      "go dancing"
+    ],
+    "synonyms": [
+      "move rhythmically"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I dance with my friend.",
+        "correct": "I dance with my friend.",
+        "explain_vi": "Cấu trúc đúng, không lỗi phổ biến."
+      }
+    ],
+    "grammar_patterns": [
+      "dance + (with someone)"
+    ]
+  },
+  {
+    "word": "sing",
+    "phonetic": "/sɪŋ/",
+    "meaning_vi": "hát",
+    "meaning_en": "to make musical sounds with your voice",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "She sings beautifully.",
+        "vi": "Cô ấy hát hay."
+      }
+    ],
+    "word_family": [
+      "singer (n)",
+      "singing (n)"
+    ],
+    "collocations": [
+      "sing a song",
+      "sing in a choir"
+    ],
+    "synonyms": [
+      "vocalize"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I sing a karaoke.",
+        "correct": "I sing karaoke.",
+        "explain_vi": "Không dùng mạo từ 'a' với 'karaoke'."
+      }
+    ],
+    "grammar_patterns": [
+      "sing + object"
+    ]
+  },
+  {
+    "word": "draw",
+    "phonetic": "/drɔː/",
+    "meaning_vi": "vẽ (bằng bút chì)",
+    "meaning_en": "to make a picture with a pen or pencil",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "He draws cartoons.",
+        "vi": "Anh ấy vẽ hoạt hình."
+      }
+    ],
+    "word_family": [
+      "drawing (n)",
+      "drawer (n)"
+    ],
+    "collocations": [
+      "draw a picture",
+      "draw from memory"
+    ],
+    "synonyms": [
+      "sketch"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I draw a picture with color.",
+        "correct": "I draw a picture in color.",
+        "explain_vi": "Dùng giới từ 'in' thay vì 'with'."
+      }
+    ],
+    "grammar_patterns": [
+      "draw + object"
+    ]
+  },
+  {
+    "word": "garden",
+    "phonetic": "/ˈɡɑːrdn/",
+    "meaning_vi": "làm vườn",
+    "meaning_en": "to work in a garden, growing plants",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "My grandmother gardens every morning.",
+        "vi": "Bà tôi làm vườn mỗi sáng."
+      }
+    ],
+    "word_family": [
+      "gardener (n)",
+      "gardening (n)"
+    ],
+    "collocations": [
+      "garden in the backyard",
+      "garden for relaxation"
+    ],
+    "synonyms": [
+      "cultivate"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I garden the flowers.",
+        "correct": "I garden in the flower bed.",
+        "explain_vi": "Không dùng 'garden' với tân ngữ trực tiếp."
+      }
+    ],
+    "grammar_patterns": [
+      "garden (no object)"
+    ]
+  },
+  {
+    "word": "fish",
+    "phonetic": "/fɪʃ/",
+    "meaning_vi": "câu cá",
+    "meaning_en": "to try to catch fish",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "They fish at the lake.",
+        "vi": "Họ câu cá ở hồ."
+      }
+    ],
+    "word_family": [
+      "fishing (n)",
+      "fisherman (n)"
+    ],
+    "collocations": [
+      "go fishing",
+      "fish for trout"
+    ],
+    "synonyms": [
+      "angle"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I fish fish.",
+        "correct": "I fish for fish.",
+        "explain_vi": "Cần giới từ 'for' khi nói về loại cá."
+      }
+    ],
+    "grammar_patterns": [
+      "fish + (for something)"
+    ]
+  },
+  {
+    "word": "hike",
+    "phonetic": "/haɪk/",
+    "meaning_vi": "đi bộ đường dài",
+    "meaning_en": "to take a long walk in the countryside",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "We hike in the mountains.",
+        "vi": "Chúng tôi đi bộ đường dài trên núi."
+      }
+    ],
+    "word_family": [
+      "hiker (n)",
+      "hiking (n)"
+    ],
+    "collocations": [
+      "go hiking",
+      "hike a trail"
+    ],
+    "synonyms": [
+      "trek"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I hike a mountain.",
+        "correct": "I hike up a mountain.",
+        "explain_vi": "Cần giới từ 'up'."
+      }
+    ],
+    "grammar_patterns": [
+      "hike + (up/down) + location"
+    ]
+  },
+  {
+    "word": "swim",
+    "phonetic": "/swɪm/",
+    "meaning_vi": "bơi",
+    "meaning_en": "to move through water using your arms and legs",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "She swims every weekend.",
+        "vi": "Cô ấy bơi mỗi cuối tuần."
+      }
+    ],
+    "word_family": [
+      "swimmer (n)",
+      "swimming (n)"
+    ],
+    "collocations": [
+      "go swimming",
+      "swim in the pool"
+    ],
+    "synonyms": [
+      "bathe"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I swim in sea.",
+        "correct": "I swim in the sea.",
+        "explain_vi": "Thiếu mạo từ 'the'."
+      }
+    ],
+    "grammar_patterns": [
+      "swim + (in/at) + location"
+    ]
+  },
+  {
+    "word": "run",
+    "phonetic": "/rʌn/",
+    "meaning_vi": "chạy",
+    "meaning_en": "to move quickly on foot",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "He runs in the park.",
+        "vi": "Anh ấy chạy trong công viên."
+      }
+    ],
+    "word_family": [
+      "runner (n)",
+      "running (n)"
+    ],
+    "collocations": [
+      "go running",
+      "run a marathon"
+    ],
+    "synonyms": [
+      "jog"
+    ],
+    "antonyms": [
+      "walk"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I run fastly.",
+        "correct": "I run fast.",
+        "explain_vi": "Không dùng 'fastly'; 'fast' vừa là tính từ vừa là trạng từ."
+      }
+    ],
+    "grammar_patterns": [
+      "run + (adverb)"
+    ]
+  },
+  {
+    "word": "cycle",
+    "phonetic": "/ˈsaɪkl/",
+    "meaning_vi": "đạp xe",
+    "meaning_en": "to ride a bicycle",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "They cycle to school.",
+        "vi": "Họ đạp xe đến trường."
+      }
+    ],
+    "word_family": [
+      "cyclist (n)",
+      "cycling (n)"
+    ],
+    "collocations": [
+      "go cycling",
+      "cycle along the road"
+    ],
+    "synonyms": [
+      "bike"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I cycle by bike.",
+        "correct": "I cycle (no 'by bike').",
+        "explain_vi": "Thừa 'by bike' vì 'cycle' đã bao hàm."
+      }
+    ],
+    "grammar_patterns": [
+      "cycle + (to/from) + location"
+    ]
+  },
+  {
+    "word": "collect",
+    "phonetic": "/kəˈlekt/",
+    "meaning_vi": "sưu tầm",
+    "meaning_en": "to bring things together from different places",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "He collects stamps.",
+        "vi": "Anh ấy sưu tầm tem."
+      }
+    ],
+    "word_family": [
+      "collection (n)",
+      "collector (n)"
+    ],
+    "collocations": [
+      "collect coins",
+      "collect data"
+    ],
+    "synonyms": [
+      "gather"
+    ],
+    "antonyms": [
+      "scatter"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I collect stamp.",
+        "correct": "I collect stamps.",
+        "explain_vi": "Thiếu 's' số nhiều."
+      }
+    ],
+    "grammar_patterns": [
+      "collect + plural noun"
+    ]
+  },
+  {
+    "word": "photography",
+    "phonetic": "/fəˈtɒɡrəfi/",
+    "meaning_vi": "nhiếp ảnh",
+    "meaning_en": "the art or practice of taking photographs",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Photography is his hobby.",
+        "vi": "Nhiếp ảnh là sở thích của anh ấy."
+      }
+    ],
+    "word_family": [
+      "photograph (n)",
+      "photographer (n)"
+    ],
+    "collocations": [
+      "digital photography",
+      "photography class"
+    ],
+    "synonyms": [
+      "photo-taking"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I do photography.",
+        "correct": "I do photography.",
+        "explain_vi": "Cụm từ đúng, không lỗi phổ biến."
+      }
+    ],
+    "grammar_patterns": [
+      "photography (uncountable)"
+    ]
+  },
+  {
+    "word": "camping",
+    "phonetic": "/ˈkæmpɪŋ/",
+    "meaning_vi": "cắm trại",
+    "meaning_en": "the activity of living in a tent",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We go camping in the summer.",
+        "vi": "Chúng tôi đi cắm trại vào mùa hè."
+      }
+    ],
+    "word_family": [
+      "camp (n/v)",
+      "camper (n)"
+    ],
+    "collocations": [
+      "go camping",
+      "camping trip"
+    ],
+    "synonyms": [
+      "tenting"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go to camping.",
+        "correct": "I go camping.",
+        "explain_vi": "Không dùng 'to' sau 'go' với hoạt động."
+      }
+    ],
+    "grammar_patterns": [
+      "go camping (no article)"
+    ]
+  },
+  {
+    "word": "knit",
+    "phonetic": "/nɪt/",
+    "meaning_vi": "đan",
+    "meaning_en": "to make clothes using yarn and needles",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "She knits scarves for her family.",
+        "vi": "Cô ấy đan khăn cho gia đình."
+      }
+    ],
+    "word_family": [
+      "knitting (n)",
+      "knitter (n)"
+    ],
+    "collocations": [
+      "knit a sweater",
+      "knit with wool"
+    ],
+    "synonyms": [
+      "weave"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I knit a scarf from wool.",
+        "correct": "I knit a scarf out of wool.",
+        "explain_vi": "Dùng 'out of' thay vì 'from'."
+      }
+    ],
+    "grammar_patterns": [
+      "knit + object"
+    ]
+  },
+  {
+    "word": "board game",
+    "phonetic": "/ˈbɔːrd ɡeɪm/",
+    "meaning_vi": "trò chơi bàn",
+    "meaning_en": "a game played on a board with pieces",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We play board games on rainy days.",
+        "vi": "Chúng tôi chơi trò chơi bàn vào những ngày mưa."
+      }
+    ],
+    "word_family": [
+      "board (n)",
+      "game (n)"
+    ],
+    "collocations": [
+      "play a board game",
+      "board game night"
+    ],
+    "synonyms": [
+      "tabletop game"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I play board game.",
+        "correct": "I play board games.",
+        "explain_vi": "Thiếu 's' số nhiều."
+      }
+    ],
+    "grammar_patterns": [
+      "play + board game(s)"
+    ]
+  },
+  {
+    "word": "video game",
+    "phonetic": "/ˈvɪdioʊ ɡeɪm/",
+    "meaning_vi": "trò chơi điện tử",
+    "meaning_en": "a game played on a screen",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "He plays video games after school.",
+        "vi": "Anh ấy chơi trò chơi điện tử sau giờ học."
+      }
+    ],
+    "word_family": [
+      "video (n)",
+      "game (n)"
+    ],
+    "collocations": [
+      "play video games",
+      "video game console"
+    ],
+    "synonyms": [
+      "electronic game"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I play video game.",
+        "correct": "I play video games.",
+        "explain_vi": "Thiếu 's' số nhiều."
+      }
+    ],
+    "grammar_patterns": [
+      "play + video game(s)"
+    ]
+  },
+  {
+    "word": "craft",
+    "phonetic": "/kræft/",
+    "meaning_vi": "làm đồ thủ công",
+    "meaning_en": "to make something skillfully with your hands",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "She crafts jewelry from beads.",
+        "vi": "Cô ấy làm đồ trang sức từ hạt cườm."
+      }
+    ],
+    "word_family": [
+      "crafts (n)",
+      "craftsman (n)"
+    ],
+    "collocations": [
+      "craft a model",
+      "craft with paper"
+    ],
+    "synonyms": [
+      "create"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I craft a paper boat.",
+        "correct": "I craft a paper boat.",
+        "explain_vi": "Cấu trúc đúng, không lỗi phổ biến."
+      }
+    ],
+    "grammar_patterns": [
+      "craft + object"
+    ]
+  },
+  {
+    "word": "bake",
+    "phonetic": "/beɪk/",
+    "meaning_vi": "nướng (bánh)",
+    "meaning_en": "to cook food in an oven",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "We bake cookies on weekends.",
+        "vi": "Chúng tôi nướng bánh quy vào cuối tuần."
+      }
+    ],
+    "word_family": [
+      "baker (n)",
+      "bakery (n)"
+    ],
+    "collocations": [
+      "bake a cake",
+      "bake bread"
+    ],
+    "synonyms": [
+      "roast"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I bake a cookie.",
+        "correct": "I bake cookies.",
+        "explain_vi": "Thường dùng số nhiều khi nói chung."
+      }
+    ],
+    "grammar_patterns": [
+      "bake + object"
+    ]
+  },
+  {
+    "word": "sew",
+    "phonetic": "/soʊ/",
+    "meaning_vi": "may",
+    "meaning_en": "to join pieces of cloth with a needle and thread",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "She sews her own clothes.",
+        "vi": "Cô ấy tự may quần áo."
+      }
+    ],
+    "word_family": [
+      "sewing (n)",
+      "sewer (n)"
+    ],
+    "collocations": [
+      "sew a button",
+      "sew a dress"
+    ],
+    "synonyms": [
+      "stitch"
+    ],
+    "antonyms": [
+      "rip"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I sew cloths.",
+        "correct": "I sew clothes.",
+        "explain_vi": "Nhầm 'cloth' (vải) với 'clothes' (quần áo)."
+      }
+    ],
+    "grammar_patterns": [
+      "sew + object"
+    ]
+  },
+  {
+    "word": "relax",
+    "phonetic": "/rɪˈlæks/",
+    "meaning_vi": "thư giãn",
+    "meaning_en": "to rest and become calm",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "I relax by listening to music.",
+        "vi": "Tôi thư giãn bằng cách nghe nhạc."
+      }
+    ],
+    "word_family": [
+      "relaxing (adj)",
+      "relaxation (n)"
+    ],
+    "collocations": [
+      "relax at home",
+      "relax on the beach",
+      "need to relax"
+    ],
+    "synonyms": [
+      "unwind",
+      "rest"
+    ],
+    "antonyms": [
+      "stress",
+      "work"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I relax myself",
+        "correct": "I relax",
+        "explain_vi": "Không cần 'myself' vì relax là nội động từ"
+      }
+    ],
+    "grammar_patterns": [
+      "relax + by + V-ing",
+      "relax + for + time"
+    ]
+  },
+  {
+    "word": "chat",
+    "phonetic": "/tʃæt/",
+    "meaning_vi": "tán gẫu, trò chuyện",
+    "meaning_en": "to talk informally with someone",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "We chat online every evening.",
+        "vi": "Chúng tôi tán gẫu trực tuyến mỗi tối."
+      }
+    ],
+    "word_family": [
+      "chatty (adj)",
+      "chatter (n)"
+    ],
+    "collocations": [
+      "chat with friends",
+      "have a chat",
+      "chat online"
+    ],
+    "synonyms": [
+      "talk",
+      "gossip"
+    ],
+    "antonyms": [
+      "stay silent"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I chat with my friend yesterday.",
+        "correct": "I chatted with my friend yesterday.",
+        "explain_vi": "Quá khứ của 'chat' là 'chatted' (gấp đôi t)"
+      }
+    ],
+    "grammar_patterns": [
+      "chat + with + someone",
+      "chat + about + something"
+    ]
+  },
+  {
+    "word": "walk",
+    "phonetic": "/wɔːk/",
+    "meaning_vi": "đi bộ",
+    "meaning_en": "to move at a regular pace by lifting each foot in turn",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "I walk in the park every morning.",
+        "vi": "Tôi đi bộ trong công viên mỗi sáng."
+      }
+    ],
+    "word_family": [
+      "walker (n)",
+      "walking (n)"
+    ],
+    "collocations": [
+      "go for a walk",
+      "take a walk",
+      "walk the dog"
+    ],
+    "synonyms": [
+      "stroll",
+      "hike"
+    ],
+    "antonyms": [
+      "run",
+      "sit"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I walk to the school.",
+        "correct": "I walk to school.",
+        "explain_vi": "Không dùng mạo từ 'the' trước 'school' khi nói về mục đích"
+      }
+    ],
+    "grammar_patterns": [
+      "walk + to + place",
+      "walk + for + distance/time"
+    ]
+  },
+  {
+    "word": "jog",
+    "phonetic": "/dʒɒɡ/",
+    "meaning_vi": "chạy bộ",
+    "meaning_en": "to run at a slow, steady pace",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "He jogs every day to stay fit.",
+        "vi": "Anh ấy chạy bộ mỗi ngày để giữ dáng."
+      }
+    ],
+    "word_family": [
+      "jogging (n)",
+      "jogger (n)"
+    ],
+    "collocations": [
+      "go jogging",
+      "jog in the morning",
+      "jog around the block"
+    ],
+    "synonyms": [
+      "run slowly"
+    ],
+    "antonyms": [
+      "walk",
+      "sprint"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I go to jog.",
+        "correct": "I go jogging.",
+        "explain_vi": "Dùng 'go jogging' thay vì 'go to jog'"
+      }
+    ],
+    "grammar_patterns": [
+      "go + V-ing (jogging)",
+      "jog + for + time"
+    ]
+  },
+  {
+    "word": "surf",
+    "phonetic": "/sɜːf/",
+    "meaning_vi": "lướt sóng; lướt (mạng)",
+    "meaning_en": "to ride on waves or browse the internet",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "I like to surf the internet in my free time.",
+        "vi": "Tôi thích lướt mạng vào thời gian rảnh."
+      }
+    ],
+    "word_family": [
+      "surfer (n)",
+      "surfing (n)"
+    ],
+    "collocations": [
+      "surf the internet",
+      "surf the web",
+      "go surfing"
+    ],
+    "synonyms": [
+      "browse",
+      "ride waves"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I surf internet.",
+        "correct": "I surf the internet.",
+        "explain_vi": "Cần mạo từ 'the' trước 'internet'"
+      }
+    ],
+    "grammar_patterns": [
+      "surf + the + internet/web",
+      "go + surfing"
+    ]
+  },
+  {
+    "word": "draw",
+    "phonetic": "/drɔː/",
+    "meaning_vi": "vẽ",
+    "meaning_en": "to make a picture with a pen or pencil",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "She draws beautiful flowers.",
+        "vi": "Cô ấy vẽ những bông hoa đẹp."
+      }
+    ],
+    "word_family": [
+      "drawing (n)",
+      "drawer (n)"
+    ],
+    "collocations": [
+      "draw a picture",
+      "draw with crayons",
+      "draw from memory"
+    ],
+    "synonyms": [
+      "sketch",
+      "doodle"
+    ],
+    "antonyms": [
+      "erase"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I draw a picture yesterday.",
+        "correct": "I drew a picture yesterday.",
+        "explain_vi": "Quá khứ của 'draw' là 'drew'"
+      }
+    ],
+    "grammar_patterns": [
+      "draw + object",
+      "draw + for + someone"
+    ]
+  },
+  {
+    "word": "paint",
+    "phonetic": "/peɪnt/",
+    "meaning_vi": "sơn, vẽ (bằng màu)",
+    "meaning_en": "to cover a surface with paint or create a picture using paint",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "I paint landscapes on weekends.",
+        "vi": "Tôi vẽ phong cảnh vào cuối tuần."
+      }
+    ],
+    "word_family": [
+      "painting (n)",
+      "painter (n)"
+    ],
+    "collocations": [
+      "paint a picture",
+      "paint the wall",
+      "paint in oils"
+    ],
+    "synonyms": [
+      "color",
+      "decorate"
+    ],
+    "antonyms": [
+      "erase"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I paint a picture with watercolor.",
+        "correct": "I paint a picture in watercolor.",
+        "explain_vi": "Dùng 'in watercolor' thay vì 'with watercolor'"
+      }
+    ],
+    "grammar_patterns": [
+      "paint + object",
+      "paint + in + medium"
+    ]
+  },
+  {
+    "word": "cook",
+    "phonetic": "/kʊk/",
+    "meaning_vi": "nấu ăn",
+    "meaning_en": "to prepare food by heating it",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "I cook dinner for my family.",
+        "vi": "Tôi nấu bữa tối cho gia đình."
+      }
+    ],
+    "word_family": [
+      "cooker (n)",
+      "cooking (n)",
+      "cook (n)"
+    ],
+    "collocations": [
+      "cook a meal",
+      "cook for someone",
+      "learn to cook"
+    ],
+    "synonyms": [
+      "prepare",
+      "make"
+    ],
+    "antonyms": [
+      "order takeout"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I cook the dinner.",
+        "correct": "I cook dinner.",
+        "explain_vi": "Không cần mạo từ 'the' trước tên bữa ăn"
+      }
+    ],
+    "grammar_patterns": [
+      "cook + meal",
+      "cook + for + person",
+      "cook + food"
+    ]
+  },
+  {
+    "word": "bake",
+    "phonetic": "/beɪk/",
+    "meaning_vi": "nướng (bánh, bánh mì)",
+    "meaning_en": "to cook food in an oven using dry heat",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "I bake cookies every Christmas.",
+        "vi": "Tôi nướng bánh quy mỗi Giáng sinh."
+      }
+    ],
+    "word_family": [
+      "baker (n)",
+      "bakery (n)",
+      "baking (n)"
+    ],
+    "collocations": [
+      "bake a cake",
+      "bake bread",
+      "bake in the oven"
+    ],
+    "synonyms": [
+      "roast",
+      "cook"
+    ],
+    "antonyms": [
+      "fry"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I bake a cake for my mother.",
+        "correct": "I bake a cake for my mother.",
+        "explain_vi": "Cấu trúc đúng: bake something for someone"
+      }
+    ],
+    "grammar_patterns": [
+      "bake + food",
+      "bake + for + time"
+    ]
+  },
+  {
+    "word": "sew",
+    "phonetic": "/səʊ/",
+    "meaning_vi": "may, khâu",
+    "meaning_en": "to join pieces of cloth using a needle and thread",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "She sews her own clothes.",
+        "vi": "Cô ấy tự may quần áo của mình."
+      }
+    ],
+    "word_family": [
+      "sewing (n)",
+      "sewer (n)"
+    ],
+    "collocations": [
+      "sew a button",
+      "sew a dress",
+      "sew by hand"
+    ],
+    "synonyms": [
+      "stitch",
+      "hem"
+    ],
+    "antonyms": [
+      "rip"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I sew a shirt yesterday.",
+        "correct": "I sewed a shirt yesterday.",
+        "explain_vi": "Quá khứ của 'sew' là 'sewed' (hoặc 'sewn')"
+      }
+    ],
+    "grammar_patterns": [
+      "sew + object",
+      "sew + on + machine"
+    ]
+  },
+  {
+    "word": "knit",
+    "phonetic": "/nɪt/",
+    "meaning_vi": "đan",
+    "meaning_en": "to make clothes or fabric using needles and yarn",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "My grandmother knits sweaters for us.",
+        "vi": "Bà tôi đan áo len cho chúng tôi."
+      }
+    ],
+    "word_family": [
+      "knitting (n)",
+      "knitter (n)"
+    ],
+    "collocations": [
+      "knit a scarf",
+      "knit in the round",
+      "knit with wool"
+    ],
+    "synonyms": [
+      "weave",
+      "crochet"
+    ],
+    "antonyms": [
+      "unravel"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I knit a scarf for my friend.",
+        "correct": "I knitted a scarf for my friend.",
+        "explain_vi": "Quá khứ của 'knit' có thể là 'knitted' hoặc 'knit'"
+      }
+    ],
+    "grammar_patterns": [
+      "knit + object",
+      "knit + for + person"
+    ]
+  },
+  {
+    "word": "garden",
+    "phonetic": "/ˈɡɑːrdn/",
+    "meaning_vi": "làm vườn",
+    "meaning_en": "to work in a garden, growing plants",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "He gardens every weekend.",
+        "vi": "Anh ấy làm vườn mỗi cuối tuần."
+      }
+    ],
+    "word_family": [
+      "gardening (n)",
+      "gardener (n)"
+    ],
+    "collocations": [
+      "garden in the backyard",
+      "garden for relaxation",
+      "garden with flowers"
+    ],
+    "synonyms": [
+      "plant",
+      "cultivate"
+    ],
+    "antonyms": [
+      "neglect"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I garden the flowers.",
+        "correct": "I garden (grow flowers).",
+        "explain_vi": "'Garden' là nội động từ, không cần tân ngữ"
+      }
+    ],
+    "grammar_patterns": [
+      "garden + in + place",
+      "garden + for + purpose"
+    ]
+  },
+  {
+    "word": "fish",
+    "phonetic": "/fɪʃ/",
+    "meaning_vi": "câu cá",
+    "meaning_en": "to try to catch fish",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "We fish at the lake on Sundays.",
+        "vi": "Chúng tôi câu cá ở hồ vào Chủ nhật."
+      }
+    ],
+    "word_family": [
+      "fishing (n)",
+      "fisher (n)",
+      "fisherman (n)"
+    ],
+    "collocations": [
+      "go fishing",
+      "fish for trout",
+      "fish from a boat"
+    ],
+    "synonyms": [
+      "angle"
+    ],
+    "antonyms": [
+      "release"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I go to fish.",
+        "correct": "I go fishing.",
+        "explain_vi": "Dùng 'go fishing' thay vì 'go to fish'"
+      }
+    ],
+    "grammar_patterns": [
+      "go + fishing",
+      "fish + for + species"
+    ]
+  },
+  {
+    "word": "hike",
+    "phonetic": "/haɪk/",
+    "meaning_vi": "đi bộ đường dài",
+    "meaning_en": "to go for a long walk in the countryside",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "We hike in the mountains every summer.",
+        "vi": "Chúng tôi đi bộ đường dài trên núi mỗi mùa hè."
+      }
+    ],
+    "word_family": [
+      "hiking (n)",
+      "hiker (n)"
+    ],
+    "collocations": [
+      "go hiking",
+      "hike a trail",
+      "hike for miles"
+    ],
+    "synonyms": [
+      "trek",
+      "walk"
+    ],
+    "antonyms": [
+      "stay home"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I hike to the mountain.",
+        "correct": "I hike in the mountains.",
+        "explain_vi": "Dùng 'in' thay vì 'to' khi nói về địa điểm"
+      }
+    ],
+    "grammar_patterns": [
+      "go + hiking",
+      "hike + in + place"
+    ]
+  },
+  {
+    "word": "swim",
+    "phonetic": "/swɪm/",
+    "meaning_vi": "bơi",
+    "meaning_en": "to move through water using arms and legs",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "I swim in the pool twice a week.",
+        "vi": "Tôi bơi ở hồ bơi hai l���n một tu���n."
+      }
+    ],
+    "word_family": [
+      "swimming (n)",
+      "swimmer (n)"
+    ],
+    "collocations": [
+      "go swimming",
+      "swim laps",
+      "swim in the sea"
+    ],
+    "synonyms": [
+      "bathe"
+    ],
+    "antonyms": [
+      "drown"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I swim every mornings.",
+        "correct": "I swim every morning.",
+        "explain_vi": "Sau 'every' dùng danh từ số ít"
+      }
+    ],
+    "grammar_patterns": [
+      "go + swimming",
+      "swim + in + place"
+    ]
+  },
+  {
+    "word": "run",
+    "phonetic": "/rʌn/",
+    "meaning_vi": "chạy",
+    "meaning_en": "to move quickly on foot",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "She runs five kilometers every day.",
+        "vi": "Cô ấy chạy năm cây số mỗi ngày."
+      }
+    ],
+    "word_family": [
+      "runner (n)",
+      "running (n)"
+    ],
+    "collocations": [
+      "go running",
+      "run a race",
+      "run fast"
+    ],
+    "synonyms": [
+      "jog",
+      "sprint"
+    ],
+    "antonyms": [
+      "walk",
+      "stand"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I run fastly.",
+        "correct": "I run fast.",
+        "explain_vi": "'Fast' vừa là tính từ vừa là trạng từ, không thêm -ly"
+      }
+    ],
+    "grammar_patterns": [
+      "run + distance",
+      "run + for + time"
+    ]
+  },
+  {
+    "word": "cycle",
+    "phonetic": "/ˈsaɪkl/",
+    "meaning_vi": "đạp xe",
+    "meaning_en": "to ride a bicycle",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "I cycle to work every day.",
+        "vi": "Tôi đạp xe đi làm mỗi ngày."
+      }
+    ],
+    "word_family": [
+      "cycling (n)",
+      "cyclist (n)"
+    ],
+    "collocations": [
+      "go cycling",
+      "cycle to school",
+      "cycle along the river"
+    ],
+    "synonyms": [
+      "bike",
+      "ride"
+    ],
+    "antonyms": [
+      "drive"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I go to cycle.",
+        "correct": "I go cycling.",
+        "explain_vi": "Dùng 'go cycling' thay vì 'go to cycle'"
+      }
+    ],
+    "grammar_patterns": [
+      "go + cycling",
+      "cycle + to + place"
+    ]
+  },
+  {
+    "word": "collect",
+    "phonetic": "/kəˈlekt/",
+    "meaning_vi": "sưu tầm",
+    "meaning_en": "to bring together items of the same type",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "I collect stamps from different countries.",
+        "vi": "Tôi sưu tầm tem từ các nước khác nhau."
+      }
+    ],
+    "word_family": [
+      "collection (n)",
+      "collector (n)"
+    ],
+    "collocations": [
+      "collect stamps",
+      "collect coins",
+      "collect as a hobby"
+    ],
+    "synonyms": [
+      "gather",
+      "accumulate"
+    ],
+    "antonyms": [
+      "scatter",
+      "discard"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I collect to stamps.",
+        "correct": "I collect stamps.",
+        "explain_vi": "Không dùng giới từ 'to' trước đồ vật sưu tầm"
+      }
+    ],
+    "grammar_patterns": [
+      "collect + noun",
+      "collect + for + purpose"
+    ]
+  },
+  {
+    "word": "photography",
+    "phonetic": "/fəˈtɒɡrəfi/",
+    "meaning_vi": "nhiếp ảnh",
+    "meaning_en": "the art or practice of taking photographs",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Photography is my favorite hobby.",
+        "vi": "Nhiếp ảnh là sở thích yêu thích của tôi."
+      }
+    ],
+    "word_family": [
+      "photograph (n)",
+      "photographer (n)",
+      "photographic (adj)"
+    ],
+    "collocations": [
+      "digital photography",
+      "nature photography",
+      "take up photography"
+    ],
+    "synonyms": [
+      "picture-taking"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I like photography very much.",
+        "correct": "I like photography very much.",
+        "explain_vi": "Không có lỗi thường gặp đặc biệt"
+      }
+    ],
+    "grammar_patterns": [
+      "photography + is + hobby",
+      "do + photography"
+    ]
+  },
+  {
+    "word": "camping",
+    "phonetic": "/ˈkæmpɪŋ/",
+    "meaning_vi": "cắm trại",
+    "meaning_en": "the activity of living in a tent or camper for a short time",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We go camping every summer.",
+        "vi": "Chúng tôi đi cắm trại mỗi mùa hè."
+      }
+    ],
+    "word_family": [
+      "camp (n/v)",
+      "camper (n)"
+    ],
+    "collocations": [
+      "go camping",
+      "camping trip",
+      "camping gear"
+    ],
+    "synonyms": [
+      "glamping"
+    ],
+    "antonyms": [
+      "hotel stay"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I go to camping.",
+        "correct": "I go camping.",
+        "explain_vi": "Dùng 'go camping' thay vì 'go to camping'"
+      }
+    ],
+    "grammar_patterns": [
+      "go + camping",
+      "camping + in + place"
+    ]
+  }
+]

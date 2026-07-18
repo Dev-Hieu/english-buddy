@@ -1,0 +1,3077 @@
+[
+  {
+    "word": "service",
+    "phonetic": "/ˈsɜː.vɪs/",
+    "meaning_vi": "dịch vụ",
+    "meaning_en": "the act of helping or doing work for someone",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The service at this hotel is excellent.",
+        "vi": "Dịch vụ tại khách sạn này rất tuyệt vời."
+      }
+    ],
+    "word_family": [
+      "serve (v)",
+      "serving (n)"
+    ],
+    "collocations": [
+      "customer service",
+      "provide a service",
+      "service industry"
+    ],
+    "synonyms": [
+      "assistance",
+      "help"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "service is good",
+        "correct": "the service is good",
+        "explain_vi": "Cần mạo từ 'the' khi nói về dịch vụ cụ thể."
+      }
+    ],
+    "grammar_patterns": [
+      "the + service + be + adjective"
+    ]
+  },
+  {
+    "word": "delivery",
+    "phonetic": "/dɪˈlɪv.ər.i/",
+    "meaning_vi": "giao hàng",
+    "meaning_en": "the act of taking goods to a person or place",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The delivery will arrive tomorrow.",
+        "vi": "Việc giao hàng sẽ đến vào ngày mai."
+      }
+    ],
+    "word_family": [
+      "deliver (v)",
+      "deliverer (n)"
+    ],
+    "collocations": [
+      "food delivery",
+      "delivery service",
+      "free delivery"
+    ],
+    "synonyms": [
+      "shipment",
+      "dispatch"
+    ],
+    "antonyms": [
+      "pickup"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "delivery is free",
+        "correct": "delivery is free",
+        "explain_vi": "Cụm này đúng, nhưng lưu ý không dùng 'delivery free'."
+      }
+    ],
+    "grammar_patterns": [
+      "delivery + verb (arrives, takes)"
+    ]
+  },
+  {
+    "word": "appointment",
+    "phonetic": "/əˈpɔɪnt.mənt/",
+    "meaning_vi": "cuộc hẹn",
+    "meaning_en": "a formal arrangement to meet someone",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I have a doctor's appointment at 3 PM.",
+        "vi": "Tôi có cuộc hẹn với bác sĩ lúc 3 giờ chiều."
+      }
+    ],
+    "word_family": [
+      "appoint (v)",
+      "appointed (adj)"
+    ],
+    "collocations": [
+      "make an appointment",
+      "cancel an appointment",
+      "keep an appointment"
+    ],
+    "synonyms": [
+      "meeting",
+      "booking"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have appointment",
+        "correct": "I have an appointment",
+        "explain_vi": "Cần mạo từ 'an' vì 'appointment' là danh từ đếm được số ít."
+      }
+    ],
+    "grammar_patterns": [
+      "have + an + appointment",
+      "make + an + appointment"
+    ]
+  },
+  {
+    "word": "consultation",
+    "phonetic": "/ˌkɒn.sʌlˈteɪ.ʃən/",
+    "meaning_vi": "tư vấn",
+    "meaning_en": "a meeting to discuss something or get advice",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I had a consultation with a lawyer.",
+        "vi": "Tôi đã có buổi tư vấn với luật sư."
+      }
+    ],
+    "word_family": [
+      "consult (v)",
+      "consultant (n)"
+    ],
+    "collocations": [
+      "legal consultation",
+      "medical consultation",
+      "consultation fee"
+    ],
+    "synonyms": [
+      "advice session",
+      "counseling"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "consultation with doctor",
+        "correct": "a consultation with a doctor",
+        "explain_vi": "Cần mạo từ không xác định."
+      }
+    ],
+    "grammar_patterns": [
+      "have a consultation with",
+      "provide consultation"
+    ]
+  },
+  {
+    "word": "maintenance",
+    "phonetic": "/ˈmeɪn.tən.əns/",
+    "meaning_vi": "bảo trì",
+    "meaning_en": "the process of keeping something in good condition",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The building requires regular maintenance.",
+        "vi": "Tòa nhà cần được bảo trì thường xuyên."
+      }
+    ],
+    "word_family": [
+      "maintain (v)",
+      "maintainable (adj)"
+    ],
+    "collocations": [
+      "maintenance work",
+      "maintenance cost",
+      "routine maintenance"
+    ],
+    "synonyms": [
+      "upkeep",
+      "servicing"
+    ],
+    "antonyms": [
+      "neglect"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "maintenance is expensive",
+        "correct": "maintenance is expensive",
+        "explain_vi": "Đúng, nhưng lưu ý không viết 'maintainance'."
+      }
+    ],
+    "grammar_patterns": [
+      "maintenance + noun (work, cost)"
+    ]
+  },
+  {
+    "word": "repair",
+    "phonetic": "/rɪˈpeər/",
+    "meaning_vi": "sửa chữa",
+    "meaning_en": "the act of fixing something that is broken",
+    "pos": "noun/verb",
+    "examples": [
+      {
+        "en": "The car needs a repair.",
+        "vi": "Chiếc xe cần sửa chữa."
+      }
+    ],
+    "word_family": [
+      "repairable (adj)",
+      "repairer (n)"
+    ],
+    "collocations": [
+      "repair service",
+      "repair shop",
+      "in need of repair"
+    ],
+    "synonyms": [
+      "fix",
+      "restoration"
+    ],
+    "antonyms": [
+      "breakage"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "repair the car",
+        "correct": "repair the car",
+        "explain_vi": "Cụm này đúng, nhưng lưu ý 'repair' có thể là danh từ hoặc động từ."
+      }
+    ],
+    "grammar_patterns": [
+      "repair + noun",
+      "do a repair"
+    ]
+  },
+  {
+    "word": "subscription",
+    "phonetic": "/səbˈskrɪp.ʃən/",
+    "meaning_vi": "đăng ký, thuê bao",
+    "meaning_en": "an agreement to receive a service regularly",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I have a subscription to the magazine.",
+        "vi": "Tôi có đăng ký tạp chí này."
+      }
+    ],
+    "word_family": [
+      "subscribe (v)",
+      "subscriber (n)"
+    ],
+    "collocations": [
+      "monthly subscription",
+      "subscription fee",
+      "cancel a subscription"
+    ],
+    "synonyms": [
+      "membership",
+      "sign-up"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "subscribe for",
+        "correct": "subscribe to",
+        "explain_vi": "Dùng 'subscribe to' thay vì 'subscribe for'."
+      }
+    ],
+    "grammar_patterns": [
+      "subscription to + noun",
+      "take out a subscription"
+    ]
+  },
+  {
+    "word": "invoice",
+    "phonetic": "/ˈɪn.vɔɪs/",
+    "meaning_vi": "hóa đơn",
+    "meaning_en": "a list of goods or services provided with the amount owed",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Please send the invoice by email.",
+        "vi": "Vui lòng gửi hóa đơn qua email."
+      }
+    ],
+    "word_family": [
+      "invoice (v)",
+      "invoicing (n)"
+    ],
+    "collocations": [
+      "pay an invoice",
+      "issue an invoice",
+      "invoice number"
+    ],
+    "synonyms": [
+      "bill",
+      "statement"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "invoice is high",
+        "correct": "the invoice is high",
+        "explain_vi": "Cần mạo từ 'the' khi nói về hóa đơn cụ thể."
+      }
+    ],
+    "grammar_patterns": [
+      "invoice + for + noun",
+      "send an invoice"
+    ]
+  },
+  {
+    "word": "warranty",
+    "phonetic": "/ˈwɒr.ən.ti/",
+    "meaning_vi": "bảo hành",
+    "meaning_en": "a written guarantee promising to repair or replace a product",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The laptop comes with a two-year warranty.",
+        "vi": "Máy tính xách tay đi kèm bảo hành hai năm."
+      }
+    ],
+    "word_family": [
+      "warrant (v)",
+      "warrantable (adj)"
+    ],
+    "collocations": [
+      "under warranty",
+      "warranty period",
+      "extend the warranty"
+    ],
+    "synonyms": [
+      "guarantee",
+      "assurance"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "warranty is expired",
+        "correct": "the warranty has expired",
+        "explain_vi": "Dùng 'has expired' thay vì 'is expired'."
+      }
+    ],
+    "grammar_patterns": [
+      "under + warranty",
+      "warranty + period"
+    ]
+  },
+  {
+    "word": "complaint",
+    "phonetic": "/kəmˈpleɪnt/",
+    "meaning_vi": "khiếu nại",
+    "meaning_en": "a statement expressing dissatisfaction",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I made a complaint about the poor service.",
+        "vi": "Tôi đã khiếu nại về dịch vụ kém."
+      }
+    ],
+    "word_family": [
+      "complain (v)",
+      "complaining (adj)"
+    ],
+    "collocations": [
+      "lodge a complaint",
+      "complaint department",
+      "customer complaint"
+    ],
+    "synonyms": [
+      "grievance",
+      "objection"
+    ],
+    "antonyms": [
+      "praise"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "make a complain",
+        "correct": "make a complaint",
+        "explain_vi": "'Complaint' là danh từ, 'complain' là động từ."
+      }
+    ],
+    "grammar_patterns": [
+      "make a complaint about",
+      "file a complaint"
+    ]
+  },
+  {
+    "word": "refund",
+    "phonetic": "/ˈriː.fʌnd/",
+    "meaning_vi": "hoàn tiền",
+    "meaning_en": "money returned to a customer for a returned product or service",
+    "pos": "noun/verb",
+    "examples": [
+      {
+        "en": "I asked for a refund.",
+        "vi": "Tôi yêu cầu hoàn tiền."
+      }
+    ],
+    "word_family": [
+      "refundable (adj)",
+      "refunding (n)"
+    ],
+    "collocations": [
+      "get a refund",
+      "full refund",
+      "refund policy"
+    ],
+    "synonyms": [
+      "reimbursement",
+      "repayment"
+    ],
+    "antonyms": [
+      "charge"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "refund money",
+        "correct": "get a refund",
+        "explain_vi": "Dùng 'get a refund' thay vì 'refund money'."
+      }
+    ],
+    "grammar_patterns": [
+      "ask for a refund",
+      "give a refund"
+    ]
+  },
+  {
+    "word": "guarantee",
+    "phonetic": "/ˌɡær.ənˈtiː/",
+    "meaning_vi": "bảo đảm",
+    "meaning_en": "a formal promise that something will happen or be done",
+    "pos": "noun/verb",
+    "examples": [
+      {
+        "en": "The product comes with a money-back guarantee.",
+        "vi": "Sản phẩm đi kèm với bảo đảm hoàn tiền."
+      }
+    ],
+    "word_family": [
+      "guaranteed (adj)",
+      "guarantor (n)"
+    ],
+    "collocations": [
+      "satisfaction guarantee",
+      "guarantee period",
+      "under guarantee"
+    ],
+    "synonyms": [
+      "warranty",
+      "assurance"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "guarantee to work",
+        "correct": "guarantee that it will work",
+        "explain_vi": "Cấu trúc 'guarantee that + mệnh đề'."
+      }
+    ],
+    "grammar_patterns": [
+      "guarantee + that + clause",
+      "under guarantee"
+    ]
+  },
+  {
+    "word": "deposit",
+    "phonetic": "/dɪˈpɒz.ɪt/",
+    "meaning_vi": "tiền đặt cọc",
+    "meaning_en": "a sum of money paid as a first installment or security",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We paid a deposit on the apartment.",
+        "vi": "Chúng tôi đã trả tiền đặt cọc cho căn hộ."
+      }
+    ],
+    "word_family": [
+      "deposit (v)",
+      "depositor (n)"
+    ],
+    "collocations": [
+      "pay a deposit",
+      "deposit refund",
+      "security deposit"
+    ],
+    "synonyms": [
+      "down payment",
+      "advance"
+    ],
+    "antonyms": [
+      "balance"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "deposit money",
+        "correct": "make a deposit",
+        "explain_vi": "Dùng 'make a deposit' thay vì 'deposit money'."
+      }
+    ],
+    "grammar_patterns": [
+      "pay a deposit on",
+      "deposit + amount"
+    ]
+  },
+  {
+    "word": "installment",
+    "phonetic": "/ɪnˈstɔːl.mənt/",
+    "meaning_vi": "trả góp",
+    "meaning_en": "one of several payments made over time",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "You can pay in monthly installments.",
+        "vi": "Bạn có thể trả góp hàng tháng."
+      }
+    ],
+    "word_family": [
+      "install (v)",
+      "installment plan (n)"
+    ],
+    "collocations": [
+      "monthly installment",
+      "installment plan",
+      "pay in installments"
+    ],
+    "synonyms": [
+      "payment plan",
+      "hire purchase"
+    ],
+    "antonyms": [
+      "lump sum"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "pay by installment",
+        "correct": "pay in installments",
+        "explain_vi": "Dùng 'in installments' thay vì 'by installment'."
+      }
+    ],
+    "grammar_patterns": [
+      "pay in + adjective + installments"
+    ]
+  },
+  {
+    "word": "membership",
+    "phonetic": "/ˈmem.bə.ʃɪp/",
+    "meaning_vi": "tư cách thành viên",
+    "meaning_en": "the state of being a member of a group or organization",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I have a gym membership.",
+        "vi": "Tôi có thẻ thành viên phòng gym."
+      }
+    ],
+    "word_family": [
+      "member (n)",
+      "membered (adj)"
+    ],
+    "collocations": [
+      "membership fee",
+      "annual membership",
+      "cancel membership"
+    ],
+    "synonyms": [
+      "subscription",
+      "affiliation"
+    ],
+    "antonyms": [
+      "non-membership"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "membership card",
+        "correct": "membership card",
+        "explain_vi": "Đúng, nhưng lưu ý 'membership' không có 'ship' trong tiếng Việt."
+      }
+    ],
+    "grammar_patterns": [
+      "membership + noun (card, fee)",
+      "have a membership"
+    ]
+  },
+  {
+    "word": "feedback",
+    "phonetic": "/ˈfiːd.bæk/",
+    "meaning_vi": "phản hồi",
+    "meaning_en": "opinions or information about how good something is",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We value your feedback.",
+        "vi": "Chúng tôi trân trọng phản hồi của bạn."
+      }
+    ],
+    "word_family": [
+      "feed back (v)"
+    ],
+    "collocations": [
+      "customer feedback",
+      "give feedback",
+      "feedback form"
+    ],
+    "synonyms": [
+      "response",
+      "comment"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "feedbacks",
+        "correct": "feedback",
+        "explain_vi": "'Feedback' là danh từ không đếm được, không có 's'."
+      }
+    ],
+    "grammar_patterns": [
+      "feedback on + noun",
+      "provide feedback"
+    ]
+  },
+  {
+    "word": "enquiry",
+    "phonetic": "/ɪnˈkwaɪə.ri/",
+    "meaning_vi": "thắc mắc, yêu cầu thông tin",
+    "meaning_en": "a request for information",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I made an enquiry about the course.",
+        "vi": "Tôi đã gửi thắc mắc về khóa học."
+      }
+    ],
+    "word_family": [
+      "enquire (v)",
+      "enquirer (n)"
+    ],
+    "collocations": [
+      "make an enquiry",
+      "enquiry form",
+      "customer enquiry"
+    ],
+    "synonyms": [
+      "inquiry",
+      "question"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "make a enquiry",
+        "correct": "make an enquiry",
+        "explain_vi": "Dùng 'an' vì 'enquiry' bắt đầu bằng nguyên âm."
+      }
+    ],
+    "grammar_patterns": [
+      "enquiry about + noun",
+      "enquiry regarding"
+    ]
+  },
+  {
+    "word": "quote",
+    "phonetic": "/kwəʊt/",
+    "meaning_vi": "báo giá",
+    "meaning_en": "a statement of the estimated cost for a service",
+    "pos": "noun/verb",
+    "examples": [
+      {
+        "en": "Can you give me a quote for the repairs?",
+        "vi": "Bạn có thể báo giá cho việc sửa chữa không?"
+      }
+    ],
+    "word_family": [
+      "quotation (n)",
+      "quoting (n)"
+    ],
+    "collocations": [
+      "get a quote",
+      "free quote",
+      "quote price"
+    ],
+    "synonyms": [
+      "estimate",
+      "bid"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "quote price",
+        "correct": "quote a price",
+        "explain_vi": "Khi là động từ, cần tân ngữ: 'quote a price'."
+      }
+    ],
+    "grammar_patterns": [
+      "quote + for + noun",
+      "give a quote"
+    ]
+  },
+  {
+    "word": "policy",
+    "phonetic": "/ˈpɒl.ə.si/",
+    "meaning_vi": "chính sách",
+    "meaning_en": "a set of rules or guidelines adopted by an organization",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The return policy is very clear.",
+        "vi": "Chính sách đổi trả rất rõ ràng."
+      }
+    ],
+    "word_family": [
+      "policyholder (n)",
+      "policy-making (n)"
+    ],
+    "collocations": [
+      "privacy policy",
+      "company policy",
+      "insurance policy"
+    ],
+    "synonyms": [
+      "rules",
+      "guidelines"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "policy of company",
+        "correct": "company policy",
+        "explain_vi": "Dùng 'company policy' thay vì 'policy of company'."
+      }
+    ],
+    "grammar_patterns": [
+      "policy on + noun",
+      "according to policy"
+    ]
+  },
+  {
+    "word": "complimentary",
+    "phonetic": "/ˌkɒm.plɪˈmen.tər.i/",
+    "meaning_vi": "miễn phí, tặng kèm",
+    "meaning_en": "given free of charge as a courtesy",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The hotel offers a complimentary breakfast.",
+        "vi": "Khách sạn cung cấp bữa sáng miễn phí."
+      }
+    ],
+    "word_family": [
+      "compliment (n/v)",
+      "complimentarily (adv)"
+    ],
+    "collocations": [
+      "complimentary service",
+      "complimentary ticket",
+      "complimentary drink"
+    ],
+    "synonyms": [
+      "free",
+      "gratis"
+    ],
+    "antonyms": [
+      "paid"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "complimentary breakfast",
+        "correct": "complimentary breakfast",
+        "explain_vi": "Đúng, nhưng lưu ý không nhầm với 'complementary' (bổ sung)."
+      }
+    ],
+    "grammar_patterns": [
+      "complimentary + noun"
+    ]
+  },
+  {
+    "word": "consultancy",
+    "phonetic": "/kənˈsʌltənsi/",
+    "meaning_vi": "dịch vụ tư vấn",
+    "meaning_en": "a professional service providing expert advice in a particular field",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The company offers IT consultancy.",
+        "vi": "Công ty cung cấp dịch vụ tư vấn CNTT."
+      }
+    ],
+    "word_family": [
+      "consult (v)",
+      "consultant (n)"
+    ],
+    "collocations": [
+      "management consultancy",
+      "offer consultancy",
+      "consultancy firm"
+    ],
+    "synonyms": [
+      "advisory service"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "consultancy service",
+        "correct": "consultancy",
+        "explain_vi": "Bản thân 'consultancy' đã là dịch vụ, không cần thêm 'service'"
+      }
+    ],
+    "grammar_patterns": [
+      "noun: a consultancy",
+      "uncountable: consultancy"
+    ]
+  },
+  {
+    "word": "retainer",
+    "phonetic": "/rɪˈteɪnər/",
+    "meaning_vi": "phí giữ chân dịch vụ",
+    "meaning_en": "a fee paid in advance to secure services",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We pay a monthly retainer to our lawyer.",
+        "vi": "Chúng tôi trả phí giữ chân hàng tháng cho luật sư."
+      }
+    ],
+    "word_family": [
+      "retain (v)"
+    ],
+    "collocations": [
+      "pay a retainer",
+      "retainer fee",
+      "on retainer"
+    ],
+    "synonyms": [
+      "advance fee"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "retainer fee",
+        "correct": "retainer",
+        "explain_vi": "'Retainer' đã bao hàm nghĩa phí, nói 'retainer fee' hơi thừa"
+      }
+    ],
+    "grammar_patterns": [
+      "a retainer",
+      "on retainer (idiom)"
+    ]
+  },
+  {
+    "word": "logistics",
+    "phonetic": "/ləˈdʒɪstɪks/",
+    "meaning_vi": "hậu cần, logistics",
+    "meaning_en": "the detailed coordination of complex operations involving people, facilities, or supplies",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The company specializes in logistics.",
+        "vi": "Công ty chuyên về logistics."
+      }
+    ],
+    "word_family": [
+      "logistical (adj)",
+      "logistically (adv)"
+    ],
+    "collocations": [
+      "logistics company",
+      "supply chain logistics",
+      "logistics management"
+    ],
+    "synonyms": [
+      "supply chain management"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "logistic",
+        "correct": "logistics",
+        "explain_vi": "'Logistics' luôn ở dạng số nhiều"
+      }
+    ],
+    "grammar_patterns": [
+      "noun: logistics (plural in form, singular in use)",
+      "verb: handle logistics"
+    ]
+  },
+  {
+    "word": "outsource",
+    "phonetic": "/ˈaʊtsɔːrs/",
+    "meaning_vi": "thuê ngoài, gia công bên ngoài",
+    "meaning_en": "to obtain goods or services from an external supplier",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "Many companies outsource their customer support.",
+        "vi": "Nhiều công ty thuê ngoài dịch vụ hỗ trợ khách hàng."
+      }
+    ],
+    "word_family": [
+      "outsourcing (n)",
+      "outsourced (adj)"
+    ],
+    "collocations": [
+      "outsource to",
+      "outsource production",
+      "outsource services"
+    ],
+    "synonyms": [
+      "contract out"
+    ],
+    "antonyms": [
+      "insource"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "outsource with",
+        "correct": "outsource to",
+        "explain_vi": "Dùng 'to' chứ không phải 'with' khi chỉ đối tác"
+      }
+    ],
+    "grammar_patterns": [
+      "outsource + object + to + entity"
+    ]
+  },
+  {
+    "word": "remittance",
+    "phonetic": "/rɪˈmɪtəns/",
+    "meaning_vi": "chuyển tiền, khoản tiền gửi",
+    "meaning_en": "a sum of money sent in payment or as a gift",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "He sends remittances to his family every month.",
+        "vi": "Anh ấy gửi tiền về cho gia đình hàng tháng."
+      }
+    ],
+    "word_family": [
+      "remit (v)"
+    ],
+    "collocations": [
+      "remittance services",
+      "send a remittance",
+      "remittance advice"
+    ],
+    "synonyms": [
+      "money transfer",
+      "payment"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "remittance money",
+        "correct": "remittance",
+        "explain_vi": "'Remittance' đã có nghĩa là tiền, không cần thêm 'money'"
+      }
+    ],
+    "grammar_patterns": [
+      "a remittance",
+      "remittance of + amount"
+    ]
+  },
+  {
+    "word": "escrow",
+    "phonetic": "/ˈɛskroʊ/",
+    "meaning_vi": "ký quỹ, dịch vụ trung gian bảo lãnh",
+    "meaning_en": "a financial arrangement where a third party holds funds until conditions are met",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The payment is held in escrow until the work is completed.",
+        "vi": "Khoản thanh toán được giữ trong tài khoản ký quỹ cho đến khi công việc hoàn thành."
+      }
+    ],
+    "word_family": [
+      "escrow (v)"
+    ],
+    "collocations": [
+      "in escrow",
+      "escrow account",
+      "escrow service"
+    ],
+    "synonyms": [
+      "trust account"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "escrow money",
+        "correct": "funds in escrow",
+        "explain_vi": "Nói 'tiền trong escrow' chứ không phải 'escrow money'"
+      }
+    ],
+    "grammar_patterns": [
+      "in escrow",
+      "hold in escrow",
+      "escrow + noun"
+    ]
+  },
+  {
+    "word": "dispatch",
+    "phonetic": "/dɪˈspætʃ/",
+    "meaning_vi": "gửi hàng, điều phối",
+    "meaning_en": "the sending of goods or people to a destination",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The dispatch of the package was delayed.",
+        "vi": "Việc gửi hàng bị trì hoãn."
+      }
+    ],
+    "word_family": [
+      "dispatch (v)",
+      "dispatcher (n)"
+    ],
+    "collocations": [
+      "dispatch center",
+      "dispatch note",
+      "ready for dispatch"
+    ],
+    "synonyms": [
+      "shipment",
+      "sending"
+    ],
+    "antonyms": [
+      "receipt"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "dispatchment",
+        "correct": "dispatch",
+        "explain_vi": "'Dispatch' vừa là danh từ vừa là động từ, không có 'dispatchment'"
+      }
+    ],
+    "grammar_patterns": [
+      "dispatch of + noun",
+      "dispatch + noun"
+    ]
+  },
+  {
+    "word": "freight",
+    "phonetic": "/freɪt/",
+    "meaning_vi": "hàng hóa vận chuyển, cước vận chuyển",
+    "meaning_en": "goods transported in bulk by truck, train, ship, or aircraft",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The freight was loaded onto the ship.",
+        "vi": "Hàng hóa được chất lên tàu."
+      }
+    ],
+    "word_family": [
+      "freight (v)",
+      "freighter (n)"
+    ],
+    "collocations": [
+      "freight charges",
+      "freight forwarder",
+      "air freight"
+    ],
+    "synonyms": [
+      "cargo",
+      "shipment"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "freight goods",
+        "correct": "freight",
+        "explain_vi": "'Freight' đã là hàng hóa, không cần 'goods'"
+      }
+    ],
+    "grammar_patterns": [
+      "freight + noun",
+      "by freight"
+    ]
+  },
+  {
+    "word": "turnaround",
+    "phonetic": "/ˈtɜːrnəraʊnd/",
+    "meaning_vi": "thời gian xử lý, sự thay đổi nhanh chóng",
+    "meaning_en": "the time taken to complete a process or service",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The turnaround for repairs is 24 hours.",
+        "vi": "Thời gian sửa chữa là 24 giờ."
+      }
+    ],
+    "word_family": [
+      "turn around (phrasal verb)"
+    ],
+    "collocations": [
+      "quick turnaround",
+      "turnaround time",
+      "turnaround service"
+    ],
+    "synonyms": [
+      "processing time"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "turn around time",
+        "correct": "turnaround time",
+        "explain_vi": "Viết liền 'turnaround' khi là danh từ"
+      }
+    ],
+    "grammar_patterns": [
+      "a + turnaround",
+      "turnaround of + time"
+    ]
+  },
+  {
+    "word": "surcharge",
+    "phonetic": "/ˈsɜːrtʃɑːrdʒ/",
+    "meaning_vi": "phụ phí",
+    "meaning_en": "an additional charge or payment",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "There is a surcharge for late payment.",
+        "vi": "Có phụ phí cho thanh toán trễ."
+      }
+    ],
+    "word_family": [
+      "surcharge (v)"
+    ],
+    "collocations": [
+      "fuel surcharge",
+      "late surcharge",
+      "apply a surcharge"
+    ],
+    "synonyms": [
+      "additional fee",
+      "extra charge"
+    ],
+    "antonyms": [
+      "discount"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "surcharge fee",
+        "correct": "surcharge",
+        "explain_vi": "'Surcharge' đã là phí, không cần 'fee'"
+      }
+    ],
+    "grammar_patterns": [
+      "a surcharge on + noun",
+      "surcharge of + amount"
+    ]
+  },
+  {
+    "word": "brokerage",
+    "phonetic": "/ˈbroʊkərɪdʒ/",
+    "meaning_vi": "dịch vụ môi giới, phí môi giới",
+    "meaning_en": "the business or fee of a broker",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "He works in real estate brokerage.",
+        "vi": "Anh ấy làm trong lĩnh vực môi giới bất động sản."
+      }
+    ],
+    "word_family": [
+      "broker (n)",
+      "broker (v)"
+    ],
+    "collocations": [
+      "stock brokerage",
+      "insurance brokerage",
+      "brokerage firm"
+    ],
+    "synonyms": [
+      "intermediation"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "brokerage fee",
+        "correct": "brokerage",
+        "explain_vi": "'Brokerage' có thể chỉ phí, nếu muốn nhấn mạnh thì nói 'brokerage fee' nhưng thường chỉ cần 'brokerage'"
+      }
+    ],
+    "grammar_patterns": [
+      "brokerage + noun",
+      "a brokerage"
+    ]
+  },
+  {
+    "word": "audit",
+    "phonetic": "/ˈɔːdɪt/",
+    "meaning_vi": "kiểm toán, kiểm tra",
+    "meaning_en": "an official inspection of an organization's accounts or processes",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The company undergoes an annual audit.",
+        "vi": "Công ty trải qua kiểm toán hàng năm."
+      }
+    ],
+    "word_family": [
+      "audit (v)",
+      "auditor (n)"
+    ],
+    "collocations": [
+      "internal audit",
+      "external audit",
+      "audit report"
+    ],
+    "synonyms": [
+      "inspection",
+      "review"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "auditment",
+        "correct": "audit",
+        "explain_vi": "Không có từ 'auditment', dùng 'audit' là đủ"
+      }
+    ],
+    "grammar_patterns": [
+      "an audit of + noun",
+      "conduct an audit"
+    ]
+  },
+  {
+    "word": "endorsement",
+    "phonetic": "/ɪnˈdɔːrsmənt/",
+    "meaning_vi": "sự xác nhận, chứng thực",
+    "meaning_en": "a statement or action showing approval or support",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The product received celebrity endorsements.",
+        "vi": "Sản phẩm nhận được sự chứng thực của người nổi tiếng."
+      }
+    ],
+    "word_family": [
+      "endorse (v)",
+      "endorser (n)"
+    ],
+    "collocations": [
+      "product endorsement",
+      "official endorsement",
+      "endorsement deal"
+    ],
+    "synonyms": [
+      "approval",
+      "backing"
+    ],
+    "antonyms": [
+      "opposition"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "endorsement from",
+        "correct": "endorsement by",
+        "explain_vi": "Dùng 'by' để chỉ người chứng thực"
+      }
+    ],
+    "grammar_patterns": [
+      "endorsement of + noun",
+      "endorsement by + person"
+    ]
+  },
+  {
+    "word": "consignment",
+    "phonetic": "/kənˈsaɪnmənt/",
+    "meaning_vi": "lô hàng gửi bán, hàng ký gửi",
+    "meaning_en": "a batch of goods sent for sale or storage",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The store sells items on consignment.",
+        "vi": "Cửa hàng bán hàng ký gửi."
+      }
+    ],
+    "word_family": [
+      "consign (v)",
+      "consignor (n)",
+      "consignee (n)"
+    ],
+    "collocations": [
+      "on consignment",
+      "consignment shop",
+      "consignment note"
+    ],
+    "synonyms": [
+      "shipment",
+      "batch"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "consignment goods",
+        "correct": "consignment",
+        "explain_vi": "'Consignment' đã là hàng hóa, không cần 'goods'"
+      }
+    ],
+    "grammar_patterns": [
+      "on consignment",
+      "a consignment of + noun"
+    ]
+  },
+  {
+    "word": "redemption",
+    "phonetic": "/rɪˈdɛmpʃən/",
+    "meaning_vi": "sự đổi thưởng, chuộc lại",
+    "meaning_en": "the action of exchanging something for money or goods (e.g., vouchers, points)",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Points can be used for redemption of gifts.",
+        "vi": "Điểm có thể được dùng để đổi quà."
+      }
+    ],
+    "word_family": [
+      "redeem (v)",
+      "redeemable (adj)"
+    ],
+    "collocations": [
+      "redemption center",
+      "point redemption",
+      "redemption value"
+    ],
+    "synonyms": [
+      "exchange",
+      "cashing in"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "redemption of points",
+        "correct": "point redemption",
+        "explain_vi": "Cụm 'point redemption' tự nhiên hơn 'redemption of points'"
+      }
+    ],
+    "grammar_patterns": [
+      "redemption of + noun",
+      "for redemption"
+    ]
+  },
+  {
+    "word": "disbursement",
+    "phonetic": "/dɪsˈbɜːrsmənt/",
+    "meaning_vi": "sự giải ngân, chi trả",
+    "meaning_en": "the payment of money from a fund",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The loan disbursement will be made next week.",
+        "vi": "Việc giải ngân khoản vay sẽ được thực hiện vào tuần tới."
+      }
+    ],
+    "word_family": [
+      "disburse (v)"
+    ],
+    "collocations": [
+      "loan disbursement",
+      "disbursement schedule",
+      "disbursement of funds"
+    ],
+    "synonyms": [
+      "payment",
+      "payout"
+    ],
+    "antonyms": [
+      "collection"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "disbursement of money",
+        "correct": "disbursement of funds",
+        "explain_vi": "'Funds' tự nhiên hơn 'money' trong ngữ cảnh tài chính"
+      }
+    ],
+    "grammar_patterns": [
+      "disbursement of + noun",
+      "make a disbursement"
+    ]
+  },
+  {
+    "word": "lien",
+    "phonetic": "/liːn/",
+    "meaning_vi": "quyền giữ tài sản, cầm giữ",
+    "meaning_en": "a legal right to keep or sell property until a debt is paid",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The bank has a lien on the property.",
+        "vi": "Ngân hàng có quyền cầm giữ tài sản."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "place a lien",
+      "lien holder",
+      "tax lien"
+    ],
+    "synonyms": [
+      "claim",
+      "encumbrance"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "lien on",
+        "correct": "lien on/against",
+        "explain_vi": "Dùng 'on' hoặc 'against' đều được, nhưng 'on' phổ biến hơn"
+      }
+    ],
+    "grammar_patterns": [
+      "a lien on + noun",
+      "have a lien"
+    ]
+  },
+  {
+    "word": "arbitration",
+    "phonetic": "/ˌɑːrbɪˈtreɪʃən/",
+    "meaning_vi": "trọng tài, phân xử",
+    "meaning_en": "the use of an impartial third party to resolve a dispute",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The dispute was settled through arbitration.",
+        "vi": "Tranh chấp được giải quyết thông qua trọng tài."
+      }
+    ],
+    "word_family": [
+      "arbitrate (v)",
+      "arbitrator (n)"
+    ],
+    "collocations": [
+      "binding arbitration",
+      "arbitration clause",
+      "go to arbitration"
+    ],
+    "synonyms": [
+      "mediation",
+      "adjudication"
+    ],
+    "antonyms": [
+      "litigation"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "arbitration in",
+        "correct": "arbitration through",
+        "explain_vi": "Dùng 'through' khi nói phương thức giải quyết"
+      }
+    ],
+    "grammar_patterns": [
+      "arbitration of + noun",
+      "through arbitration"
+    ]
+  },
+  {
+    "word": "depreciation",
+    "phonetic": "/dɪˌpriːʃiˈeɪʃən/",
+    "meaning_vi": "khấu hao, sự giảm giá trị",
+    "meaning_en": "a reduction in the value of an asset over time",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The car's depreciation is high in the first year.",
+        "vi": "Khấu hao của xe rất cao trong năm đầu tiên."
+      }
+    ],
+    "word_family": [
+      "depreciate (v)",
+      "depreciable (adj)"
+    ],
+    "collocations": [
+      "asset depreciation",
+      "depreciation rate",
+      "accumulated depreciation"
+    ],
+    "synonyms": [
+      "devaluation",
+      "write-down"
+    ],
+    "antonyms": [
+      "appreciation"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "depreciation of value",
+        "correct": "depreciation",
+        "explain_vi": "'Depreciation' đã bao hàm giảm giá trị"
+      }
+    ],
+    "grammar_patterns": [
+      "depreciation of + noun",
+      "depreciation + noun"
+    ]
+  },
+  {
+    "word": "amortization",
+    "phonetic": "/əˌmɔːrtɪˈzeɪʃən/",
+    "meaning_vi": "khấu hao (vô hình), trả dần nợ",
+    "meaning_en": "the process of gradually writing off the cost of an intangible asset or paying off a loan",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The loan amortization schedule shows monthly payments.",
+        "vi": "Lịch trả nợ dần cho thấy các khoản thanh toán hàng tháng."
+      }
+    ],
+    "word_family": [
+      "amortize (v)",
+      "amortizable (adj)"
+    ],
+    "collocations": [
+      "amortization schedule",
+      "loan amortization",
+      "amortization period"
+    ],
+    "synonyms": [
+      "depreciation",
+      "repayment"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "amortization of loan",
+        "correct": "loan amortization",
+        "explain_vi": "Cụm 'loan amortization' phổ biến hơn"
+      }
+    ],
+    "grammar_patterns": [
+      "amortization of + noun",
+      "amortization + noun"
+    ]
+  },
+  {
+    "word": "invoice",
+    "phonetic": "/ˈɪn.vɔɪs/",
+    "meaning_vi": "hóa đơn",
+    "meaning_en": "a list of goods or services provided with the amount due for payment",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Please send the invoice by email.",
+        "vi": "Vui lòng gửi hóa đơn qua email."
+      },
+      {
+        "en": "The invoice must be paid within 30 days.",
+        "vi": "Hóa đơn phải được thanh toán trong vòng 30 ngày."
+      }
+    ],
+    "word_family": [
+      "invoicing (n)"
+    ],
+    "collocations": [
+      "issue an invoice",
+      "pay an invoice",
+      "invoice number"
+    ],
+    "synonyms": [
+      "bill"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I need a invoice.",
+        "correct": "I need an invoice.",
+        "explain_vi": "Dùng 'an' trước nguyên âm /ɪ/."
+      }
+    ],
+    "grammar_patterns": [
+      "invoice + for + noun phrase"
+    ]
+  },
+  {
+    "word": "warranty",
+    "phonetic": "/ˈwɒr.ən.ti/",
+    "meaning_vi": "bảo hành",
+    "meaning_en": "a written guarantee promising to repair or replace a product if faulty",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The laptop comes with a two-year warranty.",
+        "vi": "Máy tính xách tay đi kèm bảo hành hai năm."
+      },
+      {
+        "en": "You need to register your warranty online.",
+        "vi": "Bạn cần đăng ký bảo hành trực tuyến."
+      }
+    ],
+    "word_family": [
+      "warrant (v)",
+      "warranted (adj)"
+    ],
+    "collocations": [
+      "under warranty",
+      "extended warranty",
+      "warranty period"
+    ],
+    "synonyms": [
+      "guarantee"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "The warranty is expired.",
+        "correct": "The warranty has expired.",
+        "explain_vi": "Dùng thì hiện tại hoàn thành với 'expire'."
+      }
+    ],
+    "grammar_patterns": [
+      "under + warranty",
+      "warranty + period"
+    ]
+  },
+  {
+    "word": "complaint",
+    "phonetic": "/kəmˈpleɪnt/",
+    "meaning_vi": "khiếu nại",
+    "meaning_en": "a statement that something is unsatisfactory or unacceptable",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We received a complaint about the service.",
+        "vi": "Chúng tôi đã nhận được một khiếu nại về dịch vụ."
+      },
+      {
+        "en": "Please file a complaint with the manager.",
+        "vi": "Vui lòng gửi khiếu nại cho quản lý."
+      }
+    ],
+    "word_family": [
+      "complain (v)",
+      "complaining (adj)"
+    ],
+    "collocations": [
+      "make a complaint",
+      "lodge a complaint",
+      "complaint department"
+    ],
+    "synonyms": [
+      "grievance"
+    ],
+    "antonyms": [
+      "praise"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I complaint about the food.",
+        "correct": "I complained about the food.",
+        "explain_vi": "Nhầm lẫn giữa danh từ 'complaint' và động từ 'complain'."
+      }
+    ],
+    "grammar_patterns": [
+      "complaint + about + noun",
+      "make a complaint"
+    ]
+  },
+  {
+    "word": "refund",
+    "phonetic": "/ˈriː.fʌnd/",
+    "meaning_vi": "hoàn tiền",
+    "meaning_en": "a repayment of money",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "You can get a full refund within 30 days.",
+        "vi": "Bạn có thể được hoàn lại toàn bộ tiền trong vòng 30 ngày."
+      },
+      {
+        "en": "I requested a refund for the defective item.",
+        "vi": "Tôi đã yêu cầu hoàn tiền cho mặt hàng bị lỗi."
+      }
+    ],
+    "word_family": [
+      "refund (v)"
+    ],
+    "collocations": [
+      "full refund",
+      "partial refund",
+      "refund policy"
+    ],
+    "synonyms": [
+      "reimbursement"
+    ],
+    "antonyms": [
+      "payment"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I want a refund money.",
+        "correct": "I want a refund.",
+        "explain_vi": "Không cần thêm 'money' vì 'refund' đã bao hàm ý tiền."
+      }
+    ],
+    "grammar_patterns": [
+      "get a refund",
+      "refund + for + noun"
+    ]
+  },
+  {
+    "word": "guarantee",
+    "phonetic": "/ˌɡær.ənˈtiː/",
+    "meaning_vi": "bảo đảm",
+    "meaning_en": "a formal promise that something will happen or be done",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The product comes with a money-back guarantee.",
+        "vi": "Sản phẩm đi kèm bảo đảm hoàn tiền."
+      },
+      {
+        "en": "There is no guarantee that you will get the job.",
+        "vi": "Không có bảo đảm rằng bạn sẽ nhận được công việc."
+      }
+    ],
+    "word_family": [
+      "guarantee (v)",
+      "guaranteed (adj)"
+    ],
+    "collocations": [
+      "money-back guarantee",
+      "satisfaction guarantee",
+      "guarantee of quality"
+    ],
+    "synonyms": [
+      "warranty",
+      "assurance"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I guarantee you will pass.",
+        "correct": "I guarantee that you will pass.",
+        "explain_vi": "Thêm 'that' khi theo sau là mệnh đề."
+      }
+    ],
+    "grammar_patterns": [
+      "guarantee + that + clause",
+      "under guarantee"
+    ]
+  },
+  {
+    "word": "deposit",
+    "phonetic": "/dɪˈpɒz.ɪt/",
+    "meaning_vi": "tiền đặt cọc",
+    "meaning_en": "a sum of money paid as a first installment or as a pledge",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We require a deposit of 20% to confirm the booking.",
+        "vi": "Chúng tôi yêu cầu đặt cọc 20% để xác nhận đặt chỗ."
+      },
+      {
+        "en": "You will get your deposit back when you return the car.",
+        "vi": "Bạn sẽ được trả lại tiền cọc khi trả xe."
+      }
+    ],
+    "word_family": [
+      "deposit (v)"
+    ],
+    "collocations": [
+      "pay a deposit",
+      "refundable deposit",
+      "deposit amount"
+    ],
+    "synonyms": [
+      "down payment"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I need to pay deposit.",
+        "correct": "I need to pay a deposit.",
+        "explain_vi": "Thiếu mạo từ 'a'."
+      }
+    ],
+    "grammar_patterns": [
+      "deposit + of + amount",
+      "return a deposit"
+    ]
+  },
+  {
+    "word": "installment",
+    "phonetic": "/ɪnˈstɔːl.mənt/",
+    "meaning_vi": "kỳ trả góp",
+    "meaning_en": "one of several payments made over a period of time",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "You can pay in monthly installments.",
+        "vi": "Bạn có thể trả góp hàng tháng."
+      },
+      {
+        "en": "The first installment is due on the 1st of March.",
+        "vi": "Kỳ trả góp đầu tiên đến hạn vào ngày 1 tháng 3."
+      }
+    ],
+    "word_family": [
+      "install (v)",
+      "installment plan (n)"
+    ],
+    "collocations": [
+      "monthly installment",
+      "pay in installments",
+      "installment plan"
+    ],
+    "synonyms": [
+      "payment",
+      "tranche"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I pay by installment.",
+        "correct": "I pay in installments.",
+        "explain_vi": "Dùng 'in installments' và số nhiều."
+      }
+    ],
+    "grammar_patterns": [
+      "in installments",
+      "installment + of + amount"
+    ]
+  },
+  {
+    "word": "membership",
+    "phonetic": "/ˈmem.bə.ʃɪp/",
+    "meaning_vi": "tư cách thành viên",
+    "meaning_en": "the state of being a member of an organization or group",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Gym membership costs $50 per month.",
+        "vi": "Phí thành viên phòng tập là 50 đô la mỗi tháng."
+      },
+      {
+        "en": "You need to renew your membership annually.",
+        "vi": "Bạn cần gia hạn tư cách thành viên hàng năm."
+      }
+    ],
+    "word_family": [
+      "member (n)"
+    ],
+    "collocations": [
+      "gym membership",
+      "membership fee",
+      "apply for membership"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have a membership of the club.",
+        "correct": "I have a membership in the club.",
+        "explain_vi": "Dùng giới từ 'in' thay vì 'of'."
+      }
+    ],
+    "grammar_patterns": [
+      "membership + in + organization",
+      "membership + fee"
+    ]
+  },
+  {
+    "word": "feedback",
+    "phonetic": "/ˈfiːd.bæk/",
+    "meaning_vi": "phản hồi",
+    "meaning_en": "information about reactions to a product or service",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We value your feedback.",
+        "vi": "Chúng tôi trân trọng phản hồi của bạn."
+      },
+      {
+        "en": "Please leave feedback after your purchase.",
+        "vi": "Vui lòng để lại phản hồi sau khi mua hàng."
+      }
+    ],
+    "word_family": [
+      "feed back (phr v)"
+    ],
+    "collocations": [
+      "customer feedback",
+      "provide feedback",
+      "feedback form"
+    ],
+    "synonyms": [
+      "response",
+      "input"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I feedback to you.",
+        "correct": "I give you feedback.",
+        "explain_vi": "Không dùng 'feedback' như động từ; dùng 'give feedback'."
+      }
+    ],
+    "grammar_patterns": [
+      "feedback + on + noun",
+      "give feedback"
+    ]
+  },
+  {
+    "word": "enquiry",
+    "phonetic": "/ɪnˈkwaɪə.ri/",
+    "meaning_vi": "câu hỏi, yêu cầu thông tin",
+    "meaning_en": "a request for information",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We received an enquiry about our services.",
+        "vi": "Chúng tôi đã nhận được một câu hỏi về dịch vụ của mình."
+      },
+      {
+        "en": "Please direct all enquiries to the customer service desk.",
+        "vi": "Vui lòng chuyển tất cả các câu hỏi đến quầy dịch vụ khách hàng."
+      }
+    ],
+    "word_family": [
+      "enquire (v)"
+    ],
+    "collocations": [
+      "make an enquiry",
+      "enquiry form",
+      "general enquiry"
+    ],
+    "synonyms": [
+      "inquiry",
+      "question"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have an enquiry about price.",
+        "correct": "I have an enquiry about the price.",
+        "explain_vi": "Thiếu mạo từ 'the'."
+      }
+    ],
+    "grammar_patterns": [
+      "enquiry + about + noun",
+      "enquiry + regarding + noun"
+    ]
+  },
+  {
+    "word": "quote",
+    "phonetic": "/kwəʊt/",
+    "meaning_vi": "báo giá",
+    "meaning_en": "a statement of the estimated cost for a service or product",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We need a quote for the renovation work.",
+        "vi": "Chúng tôi cần một báo giá cho công việc cải tạo."
+      },
+      {
+        "en": "Please provide a written quote.",
+        "vi": "Vui lòng cung cấp báo giá bằng văn bản."
+      }
+    ],
+    "word_family": [
+      "quote (v)",
+      "quotation (n)"
+    ],
+    "collocations": [
+      "get a quote",
+      "free quote",
+      "quote request"
+    ],
+    "synonyms": [
+      "estimate",
+      "quotation"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Can you quote me a price?",
+        "correct": "Can you give me a quote?",
+        "explain_vi": "Dùng 'give a quote' thay vì 'quote' như động từ với tân ngữ."
+      }
+    ],
+    "grammar_patterns": [
+      "quote + for + noun",
+      "provide a quote"
+    ]
+  },
+  {
+    "word": "policy",
+    "phonetic": "/ˈpɒl.ə.si/",
+    "meaning_vi": "chính sách",
+    "meaning_en": "a set of rules or guidelines adopted by an organization",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Our return policy allows refunds within 30 days.",
+        "vi": "Chính sách đổi trả của chúng tôi cho phép hoàn tiền trong vòng 30 ngày."
+      },
+      {
+        "en": "Please read the privacy policy carefully.",
+        "vi": "Vui lòng đọc kỹ chính sách bảo mật."
+      }
+    ],
+    "word_family": [
+      "policyholder (n)"
+    ],
+    "collocations": [
+      "company policy",
+      "return policy",
+      "insurance policy"
+    ],
+    "synonyms": [
+      "rules",
+      "guidelines"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Follow the policy strict.",
+        "correct": "Follow the policy strictly.",
+        "explain_vi": "Dùng trạng từ 'strictly' thay vì tính từ."
+      }
+    ],
+    "grammar_patterns": [
+      "policy + on + noun",
+      "policy + regarding + noun"
+    ]
+  },
+  {
+    "word": "complimentary",
+    "phonetic": "/ˌkɒm.plɪˈmen.tər.i/",
+    "meaning_vi": "miễn phí, tặng kèm",
+    "meaning_en": "given free of charge",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "Complimentary breakfast is included.",
+        "vi": "Bữa sáng miễn phí được bao gồm."
+      },
+      {
+        "en": "You will receive a complimentary gift with your order.",
+        "vi": "Bạn sẽ nhận được một món quà tặng kèm với đơn hàng."
+      }
+    ],
+    "word_family": [
+      "compliment (n)",
+      "compliment (v)"
+    ],
+    "collocations": [
+      "complimentary breakfast",
+      "complimentary ticket",
+      "complimentary service"
+    ],
+    "synonyms": [
+      "free",
+      "gratis"
+    ],
+    "antonyms": [
+      "paid"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "The breakfast is complimentary free.",
+        "correct": "The breakfast is complimentary.",
+        "explain_vi": "Không cần thêm 'free' vì 'complimentary' đã mang nghĩa miễn phí."
+      }
+    ],
+    "grammar_patterns": [
+      "complimentary + noun",
+      "be complimentary"
+    ]
+  },
+  {
+    "word": "consultancy",
+    "phonetic": "/kənˈsʌl.tən.si/",
+    "meaning_vi": "dịch vụ tư vấn",
+    "meaning_en": "a business that provides expert advice in a particular field",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We hired a consultancy to improve our strategy.",
+        "vi": "Chúng tôi đã thuê một dịch vụ tư vấn để cải thiện chiến lược."
+      },
+      {
+        "en": "She works for a management consultancy.",
+        "vi": "Cô ấy làm việc cho một công ty tư vấn quản lý."
+      }
+    ],
+    "word_family": [
+      "consultant (n)",
+      "consult (v)"
+    ],
+    "collocations": [
+      "management consultancy",
+      "consultancy firm",
+      "consultancy service"
+    ],
+    "synonyms": [
+      "advisory service"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I need a consultancy advice.",
+        "correct": "I need consultancy advice.",
+        "explain_vi": "Không dùng mạo từ 'a' trước 'consultancy' khi nó là tính từ."
+      }
+    ],
+    "grammar_patterns": [
+      "consultancy + in + field",
+      "consultancy + firm"
+    ]
+  },
+  {
+    "word": "retainer",
+    "phonetic": "/rɪˈteɪ.nər/",
+    "meaning_vi": "phí giữ chân",
+    "meaning_en": "a fee paid in advance to secure services",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The lawyer charges a monthly retainer.",
+        "vi": "Luật sư tính phí giữ chân hàng tháng."
+      },
+      {
+        "en": "We pay a retainer to ensure priority service.",
+        "vi": "Chúng tôi trả phí giữ chân để đảm bảo dịch vụ ưu tiên."
+      }
+    ],
+    "word_family": [
+      "retain (v)"
+    ],
+    "collocations": [
+      "pay a retainer",
+      "retainer fee",
+      "retainer agreement"
+    ],
+    "synonyms": [
+      "advance fee"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I paid retainer.",
+        "correct": "I paid a retainer.",
+        "explain_vi": "Thiếu mạo từ 'a'."
+      }
+    ],
+    "grammar_patterns": [
+      "retainer + for + service",
+      "retainer + fee"
+    ]
+  },
+  {
+    "word": "logistics",
+    "phonetic": "/ləˈdʒɪs.tɪks/",
+    "meaning_vi": "hậu cần, logistics",
+    "meaning_en": "the detailed coordination of complex operations involving people, facilities, or supplies",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The company specializes in logistics and transportation.",
+        "vi": "Công ty chuyên về hậu cần và vận tải."
+      },
+      {
+        "en": "We need to improve our logistics to reduce costs.",
+        "vi": "Chúng tôi cần cải thiện hậu cần để giảm chi phí."
+      }
+    ],
+    "word_family": [
+      "logistic (adj)",
+      "logistical (adj)"
+    ],
+    "collocations": [
+      "logistics company",
+      "logistics management",
+      "supply chain logistics"
+    ],
+    "synonyms": [
+      "supply chain",
+      "coordination"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Logistic is important.",
+        "correct": "Logistics is important.",
+        "explain_vi": "Luôn dùng số nhiều 'logistics'."
+      }
+    ],
+    "grammar_patterns": [
+      "logistics + of + noun",
+      "logistics + department"
+    ]
+  },
+  {
+    "word": "outsource",
+    "phonetic": "/ˈaʊt.sɔːrs/",
+    "meaning_vi": "thuê ngoài",
+    "meaning_en": "to obtain goods or services from an external supplier",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "Many companies outsource their customer service.",
+        "vi": "Nhiều công ty thuê ngoài dịch vụ khách hàng."
+      },
+      {
+        "en": "We decided to outsource the IT support.",
+        "vi": "Chúng tôi quyết định thuê ngoài hỗ trợ CNTT."
+      }
+    ],
+    "word_family": [
+      "outsourcing (n)"
+    ],
+    "collocations": [
+      "outsource to",
+      "outsource services",
+      "outsource production"
+    ],
+    "synonyms": [
+      "contract out",
+      "subcontract"
+    ],
+    "antonyms": [
+      "insource"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "We outsource the work to a company.",
+        "correct": "We outsource the work to a company.",
+        "explain_vi": "Cấu trúc đúng: outsource + something + to + someone."
+      }
+    ],
+    "grammar_patterns": [
+      "outsource + noun + to + noun"
+    ]
+  },
+  {
+    "word": "remittance",
+    "phonetic": "/rɪˈmɪt.əns/",
+    "meaning_vi": "chuyển tiền",
+    "meaning_en": "a sum of money sent in payment or as a gift",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Please send your remittance by bank transfer.",
+        "vi": "Vui lòng gửi tiền chuyển khoản ngân hàng."
+      },
+      {
+        "en": "Remittance fees can be high for international transfers.",
+        "vi": "Phí chuyển tiền có thể cao đối với chuyển khoản quốc tế."
+      }
+    ],
+    "word_family": [
+      "remit (v)"
+    ],
+    "collocations": [
+      "remittance advice",
+      "remittance slip",
+      "make a remittance"
+    ],
+    "synonyms": [
+      "payment",
+      "transfer"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I made remittance.",
+        "correct": "I made a remittance.",
+        "explain_vi": "Thiếu mạo từ 'a'."
+      }
+    ],
+    "grammar_patterns": [
+      "remittance + of + amount",
+      "remittance + to + recipient"
+    ]
+  },
+  {
+    "word": "dispatch",
+    "phonetic": "/dɪˈspætʃ/",
+    "meaning_vi": "gửi hàng",
+    "meaning_en": "the action of sending something off to a destination",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Dispatch will occur within 24 hours.",
+        "vi": "Việc gửi hàng sẽ diễn ra trong vòng 24 giờ."
+      },
+      {
+        "en": "The dispatch department handles all outgoing shipments.",
+        "vi": "Bộ phận gửi hàng xử lý tất cả các lô hàng đi."
+      }
+    ],
+    "word_family": [
+      "dispatch (v)"
+    ],
+    "collocations": [
+      "dispatch note",
+      "dispatch date",
+      "ready for dispatch"
+    ],
+    "synonyms": [
+      "shipment",
+      "sending"
+    ],
+    "antonyms": [
+      "receipt"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "The dispatch is on time.",
+        "correct": "The dispatch is on time.",
+        "explain_vi": "Cách dùng đúng."
+      }
+    ],
+    "grammar_patterns": [
+      "dispatch + of + noun",
+      "dispatch + department"
+    ]
+  },
+  {
+    "word": "freight",
+    "phonetic": "/freɪt/",
+    "meaning_vi": "hàng hóa vận chuyển",
+    "meaning_en": "goods transported in bulk by truck, train, ship, or aircraft",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Freight charges are not included in the price.",
+        "vi": "Phí vận chuyển hàng hóa không bao gồm trong giá."
+      },
+      {
+        "en": "The freight was delayed due to bad weather.",
+        "vi": "Hàng hóa vận chuyển bị chậm trễ do thời tiết xấu."
+      }
+    ],
+    "word_family": [
+      "freight (v)",
+      "freighter (n)"
+    ],
+    "collocations": [
+      "freight cost",
+      "freight forwarder",
+      "air freight"
+    ],
+    "synonyms": [
+      "cargo",
+      "shipment"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "The freight is heavy.",
+        "correct": "The freight is heavy.",
+        "explain_vi": "Cách dùng đúng."
+      }
+    ],
+    "grammar_patterns": [
+      "freight + by + mode",
+      "freight + charges"
+    ]
+  },
+  {
+    "word": "after-sales service",
+    "phonetic": "/ˈæftər seɪlz ˈsɜːrvɪs/",
+    "meaning_vi": "dịch vụ sau bán hàng",
+    "meaning_en": "support provided to customers after they have purchased a product",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The company offers excellent after-sales service.",
+        "vi": "Công ty cung cấp dịch vụ sau bán hàng tuyệt vời."
+      }
+    ],
+    "word_family": [
+      "after-sales (adj)"
+    ],
+    "collocations": [
+      "provide after-sales service",
+      "after-sales service team"
+    ],
+    "synonyms": [
+      "customer support",
+      "post-purchase service"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "after-sale service",
+        "correct": "after-sales service",
+        "explain_vi": "Luôn dùng 'after-sales' (có 's')"
+      }
+    ],
+    "grammar_patterns": [
+      "after-sales service (uncountable)"
+    ]
+  },
+  {
+    "word": "customer service",
+    "phonetic": "/ˈkʌstəmər ˈsɜːrvɪs/",
+    "meaning_vi": "dịch vụ khách hàng",
+    "meaning_en": "the assistance and advice provided by a company to its customers",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Their customer service is outstanding.",
+        "vi": "Dịch vụ khách hàng của họ rất xuất sắc."
+      }
+    ],
+    "word_family": [
+      "customer (n)"
+    ],
+    "collocations": [
+      "customer service representative",
+      "customer service department"
+    ],
+    "synonyms": [
+      "client service",
+      "support"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "customer services",
+        "correct": "customer service",
+        "explain_vi": "Thường dùng số ít 'service'"
+      }
+    ],
+    "grammar_patterns": [
+      "customer service (uncountable)"
+    ]
+  },
+  {
+    "word": "helpline",
+    "phonetic": "/ˈhelplaɪn/",
+    "meaning_vi": "đường dây nóng hỗ trợ",
+    "meaning_en": "a telephone service providing help and advice",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Call the helpline if you have any issues.",
+        "vi": "Gọi đường dây nóng nếu bạn gặp vấn đề."
+      }
+    ],
+    "word_family": [
+      "help (v)",
+      "line (n)"
+    ],
+    "collocations": [
+      "call a helpline",
+      "helpline number"
+    ],
+    "synonyms": [
+      "hotline",
+      "support line"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "help line",
+        "correct": "helpline",
+        "explain_vi": "Viết liền 'helpline'"
+      }
+    ],
+    "grammar_patterns": [
+      "helpline (countable)"
+    ]
+  },
+  {
+    "word": "hotline",
+    "phonetic": "/ˈhɒtlaɪn/",
+    "meaning_vi": "đường dây nóng",
+    "meaning_en": "a direct and immediate telephone line for emergencies or inquiries",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The hotline is available 24/7.",
+        "vi": "Đường dây nóng hoạt động 24/7."
+      }
+    ],
+    "word_family": [
+      "hot (adj)",
+      "line (n)"
+    ],
+    "collocations": [
+      "hotline number",
+      "call the hotline"
+    ],
+    "synonyms": [
+      "helpline",
+      "emergency line"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "hot line",
+        "correct": "hotline",
+        "explain_vi": "Viết liền 'hotline'"
+      }
+    ],
+    "grammar_patterns": [
+      "hotline (countable)"
+    ]
+  },
+  {
+    "word": "troubleshooting",
+    "phonetic": "/ˈtrʌblʃuːtɪŋ/",
+    "meaning_vi": "xử lý sự cố",
+    "meaning_en": "the process of identifying and solving problems",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The manual includes troubleshooting tips.",
+        "vi": "Sách hướng dẫn bao gồm các mẹo xử lý sự cố."
+      }
+    ],
+    "word_family": [
+      "troubleshoot (v)",
+      "troubleshooter (n)"
+    ],
+    "collocations": [
+      "troubleshooting guide",
+      "troubleshooting steps"
+    ],
+    "synonyms": [
+      "problem-solving",
+      "fault-finding"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "trouble shooting",
+        "correct": "troubleshooting",
+        "explain_vi": "Viết liền 'troubleshooting'"
+      }
+    ],
+    "grammar_patterns": [
+      "troubleshooting (uncountable)"
+    ]
+  },
+  {
+    "word": "upgrade",
+    "phonetic": "/ʌpˈɡreɪd/",
+    "meaning_vi": "nâng cấp",
+    "meaning_en": "an improved version or an act of improving something",
+    "pos": "noun/verb",
+    "examples": [
+      {
+        "en": "We need to upgrade our software.",
+        "vi": "Chúng tôi cần nâng cấp phần mềm của mình."
+      }
+    ],
+    "word_family": [
+      "upgradable (adj)"
+    ],
+    "collocations": [
+      "software upgrade",
+      "upgrade plan"
+    ],
+    "synonyms": [
+      "enhancement",
+      "update"
+    ],
+    "antonyms": [
+      "downgrade"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "upgrade to higher version",
+        "correct": "upgrade to a higher version",
+        "explain_vi": "Thiếu mạo từ 'a'"
+      }
+    ],
+    "grammar_patterns": [
+      "upgrade (countable)",
+      "upgrade to something"
+    ]
+  },
+  {
+    "word": "downgrade",
+    "phonetic": "/ˈdaʊnɡreɪd/",
+    "meaning_vi": "giảm cấp, hạ cấp",
+    "meaning_en": "a reduction in rank, status, or quality",
+    "pos": "noun/verb",
+    "examples": [
+      {
+        "en": "They downgraded my account.",
+        "vi": "Họ đã hạ cấp tài khoản của tôi."
+      }
+    ],
+    "word_family": [
+      "downgradable (adj)"
+    ],
+    "collocations": [
+      "downgrade a plan",
+      "downgrade version"
+    ],
+    "synonyms": [
+      "degradation",
+      "demotion"
+    ],
+    "antonyms": [
+      "upgrade"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "downgrade to lower plan",
+        "correct": "downgrade to a lower plan",
+        "explain_vi": "Thiếu mạo từ 'a'"
+      }
+    ],
+    "grammar_patterns": [
+      "downgrade (countable)",
+      "downgrade to something"
+    ]
+  },
+  {
+    "word": "subscription fee",
+    "phonetic": "/səbˈskrɪpʃn fiː/",
+    "meaning_vi": "phí đăng ký, phí thuê bao",
+    "meaning_en": "a regular payment for a service",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The subscription fee is due monthly.",
+        "vi": "Phí đăng ký đến hạn hàng tháng."
+      }
+    ],
+    "word_family": [
+      "subscribe (v)",
+      "subscriber (n)"
+    ],
+    "collocations": [
+      "pay a subscription fee",
+      "subscription fee increase"
+    ],
+    "synonyms": [
+      "membership fee",
+      "dues"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "subscription free",
+        "correct": "subscription fee",
+        "explain_vi": "Nhầm 'free' và 'fee'"
+      }
+    ],
+    "grammar_patterns": [
+      "subscription fee (countable)"
+    ]
+  },
+  {
+    "word": "cancellation policy",
+    "phonetic": "/ˌkænsəˈleɪʃn ˈpɒləsi/",
+    "meaning_vi": "chính sách hủy bỏ",
+    "meaning_en": "rules regarding the cancellation of a service",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Please check the cancellation policy before booking.",
+        "vi": "Vui lòng kiểm tra chính sách hủy bỏ trước khi đặt."
+      }
+    ],
+    "word_family": [
+      "cancel (v)",
+      "cancelation (n)"
+    ],
+    "collocations": [
+      "cancellation policy terms",
+      "strict cancellation policy"
+    ],
+    "synonyms": [
+      "cancellation terms"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "cancelation policy",
+        "correct": "cancellation policy",
+        "explain_vi": "Viết đúng 'cancellation' với hai 'l'"
+      }
+    ],
+    "grammar_patterns": [
+      "cancellation policy (countable)"
+    ]
+  },
+  {
+    "word": "complaint handling",
+    "phonetic": "/kəmˈpleɪnt ˈhændlɪŋ/",
+    "meaning_vi": "xử lý khiếu nại",
+    "meaning_en": "the process of dealing with customer complaints",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Effective complaint handling improves customer satisfaction.",
+        "vi": "Xử lý khiếu nại hiệu quả cải thiện sự hài lòng của khách hàng."
+      }
+    ],
+    "word_family": [
+      "complain (v)",
+      "handling (n)"
+    ],
+    "collocations": [
+      "complaint handling process",
+      "complaint handling team"
+    ],
+    "synonyms": [
+      "complaint management"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "complaint handling is good",
+        "correct": "complaint handling is effective",
+        "explain_vi": "Dùng 'effective' thay vì 'good' trong ngữ cảnh này"
+      }
+    ],
+    "grammar_patterns": [
+      "complaint handling (uncountable)"
+    ]
+  },
+  {
+    "word": "service level agreement",
+    "phonetic": "/ˈsɜːrvɪs ˈlevl əˈɡriːmənt/",
+    "meaning_vi": "thỏa thuận cấp độ dịch vụ",
+    "meaning_en": "a contract defining the level of service expected",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The SLA guarantees 99% uptime.",
+        "vi": "SLA đảm bảo thời gian hoạt động 99%."
+      }
+    ],
+    "word_family": [
+      "service (n)",
+      "level (n)",
+      "agreement (n)"
+    ],
+    "collocations": [
+      "SLA terms",
+      "SLA compliance"
+    ],
+    "synonyms": [
+      "service contract"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "service level agreement is signed",
+        "correct": "a service level agreement is signed",
+        "explain_vi": "Thiếu mạo từ 'a'"
+      }
+    ],
+    "grammar_patterns": [
+      "service level agreement (countable)"
+    ]
+  },
+  {
+    "word": "turnaround time",
+    "phonetic": "/ˈtɜːrnəraʊnd taɪm/",
+    "meaning_vi": "thời gian xử lý",
+    "meaning_en": "the time taken to complete a process or task",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The average turnaround time is 24 hours.",
+        "vi": "Thời gian xử lý trung bình là 24 giờ."
+      }
+    ],
+    "word_family": [
+      "turnaround (n)"
+    ],
+    "collocations": [
+      "fast turnaround time",
+      "turnaround time target"
+    ],
+    "synonyms": [
+      "processing time",
+      "lead time"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "turn around time",
+        "correct": "turnaround time",
+        "explain_vi": "Viết liền 'turnaround'"
+      }
+    ],
+    "grammar_patterns": [
+      "turnaround time (countable/uncountable)"
+    ]
+  },
+  {
+    "word": "response time",
+    "phonetic": "/rɪˈspɒns taɪm/",
+    "meaning_vi": "thời gian phản hồi",
+    "meaning_en": "the time taken to respond to a request",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Our response time is under 2 hours.",
+        "vi": "Thời gian phản hồi của chúng tôi dưới 2 giờ."
+      }
+    ],
+    "word_family": [
+      "respond (v)",
+      "responsive (adj)"
+    ],
+    "collocations": [
+      "quick response time",
+      "response time guarantee"
+    ],
+    "synonyms": [
+      "reaction time"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "response time is slow",
+        "correct": "response time is long",
+        "explain_vi": "Dùng 'long' thay vì 'slow' cho thời gian"
+      }
+    ],
+    "grammar_patterns": [
+      "response time (countable/uncountable)"
+    ]
+  },
+  {
+    "word": "uptime",
+    "phonetic": "/ˈʌptaɪm/",
+    "meaning_vi": "thời gian hoạt động",
+    "meaning_en": "the time during which a system is operational",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The server has 99.9% uptime.",
+        "vi": "Máy chủ có thời gian hoạt động 99,9%."
+      }
+    ],
+    "word_family": [
+      "up (adv)",
+      "time (n)"
+    ],
+    "collocations": [
+      "uptime guarantee",
+      "high uptime"
+    ],
+    "synonyms": [
+      "availability"
+    ],
+    "antonyms": [
+      "downtime"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "up-time",
+        "correct": "uptime",
+        "explain_vi": "Viết liền 'uptime'"
+      }
+    ],
+    "grammar_patterns": [
+      "uptime (uncountable)"
+    ]
+  },
+  {
+    "word": "downtime",
+    "phonetic": "/ˈdaʊntaɪm/",
+    "meaning_vi": "thời gian ngừng hoạt động",
+    "meaning_en": "the time when a system is not operational",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Scheduled downtime is announced in advance.",
+        "vi": "Thời gian ngừng hoạt động theo lịch được thông báo trước."
+      }
+    ],
+    "word_family": [
+      "down (adv)",
+      "time (n)"
+    ],
+    "collocations": [
+      "minimize downtime",
+      "unexpected downtime"
+    ],
+    "synonyms": [
+      "outage"
+    ],
+    "antonyms": [
+      "uptime"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "down-time",
+        "correct": "downtime",
+        "explain_vi": "Viết liền 'downtime'"
+      }
+    ],
+    "grammar_patterns": [
+      "downtime (uncountable)"
+    ]
+  },
+  {
+    "word": "service provider",
+    "phonetic": "/ˈsɜːrvɪs prəˈvaɪdər/",
+    "meaning_vi": "nhà cung cấp dịch vụ",
+    "meaning_en": "a company or person that provides a service",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We switched to a new service provider.",
+        "vi": "Chúng tôi đã chuyển sang một nhà cung cấp dịch vụ mới."
+      }
+    ],
+    "word_family": [
+      "provide (v)",
+      "provision (n)"
+    ],
+    "collocations": [
+      "choose a service provider",
+      "service provider agreement"
+    ],
+    "synonyms": [
+      "vendor",
+      "supplier"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "service provider provide",
+        "correct": "service provider provides",
+        "explain_vi": "Chia động từ phù hợp với chủ ngữ số ít"
+      }
+    ],
+    "grammar_patterns": [
+      "service provider (countable)"
+    ]
+  },
+  {
+    "word": "terms of service",
+    "phonetic": "/tɜːrmz əv ˈsɜːrvɪs/",
+    "meaning_vi": "điều khoản dịch vụ",
+    "meaning_en": "the rules and regulations for using a service",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "You must agree to the terms of service.",
+        "vi": "Bạn phải đồng ý với các điều khoản dịch vụ."
+      }
+    ],
+    "word_family": [
+      "term (n)",
+      "service (n)"
+    ],
+    "collocations": [
+      "terms of service agreement",
+      "read the terms of service"
+    ],
+    "synonyms": [
+      "terms and conditions"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "term of service",
+        "correct": "terms of service",
+        "explain_vi": "Luôn dùng số nhiều 'terms'"
+      }
+    ],
+    "grammar_patterns": [
+      "terms of service (plural)"
+    ]
+  },
+  {
+    "word": "privacy policy",
+    "phonetic": "/ˈpraɪvəsi ˈpɒləsi/",
+    "meaning_vi": "chính sách bảo mật",
+    "meaning_en": "a statement about how a company handles personal data",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Please review our privacy policy.",
+        "vi": "Vui lòng xem lại chính sách bảo mật của chúng tôi."
+      }
+    ],
+    "word_family": [
+      "private (adj)",
+      "policy (n)"
+    ],
+    "collocations": [
+      "privacy policy update",
+      "privacy policy compliance"
+    ],
+    "synonyms": [
+      "data protection policy"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "private policy",
+        "correct": "privacy policy",
+        "explain_vi": "Dùng 'privacy' chứ không phải 'private'"
+      }
+    ],
+    "grammar_patterns": [
+      "privacy policy (countable)"
+    ]
+  },
+  {
+    "word": "service charge",
+    "phonetic": "/ˈsɜːrvɪs tʃɑːrdʒ/",
+    "meaning_vi": "phí dịch vụ",
+    "meaning_en": "an additional fee for a service",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "A 10% service charge is added to the bill.",
+        "vi": "Phí dịch vụ 10% được thêm vào hóa đơn."
+      }
+    ],
+    "word_family": [
+      "charge (v/n)"
+    ],
+    "collocations": [
+      "service charge included",
+      "service charge percentage"
+    ],
+    "synonyms": [
+      "service fee",
+      "gratuity"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "service charge is free",
+        "correct": "service charge is added",
+        "explain_vi": "Không dùng 'free' cho service charge"
+      }
+    ],
+    "grammar_patterns": [
+      "service charge (countable/uncountable)"
+    ]
+  },
+  {
+    "word": "value-added service",
+    "phonetic": "/ˈvæljuː ædɪd ˈsɜːrvɪs/",
+    "meaning_vi": "dịch vụ giá trị gia tăng",
+    "meaning_en": "an additional service that enhances the main service",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "They offer value-added services like training.",
+        "vi": "Họ cung cấp các dịch vụ giá trị gia tăng như đào tạo."
+      }
+    ],
+    "word_family": [
+      "value (n)",
+      "add (v)"
+    ],
+    "collocations": [
+      "value-added service package",
+      "value-added service provider"
+    ],
+    "synonyms": [
+      "add-on service",
+      "extra service"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "value added service",
+        "correct": "value-added service",
+        "explain_vi": "Có dấu gạch nối 'value-added'"
+      }
+    ],
+    "grammar_patterns": [
+      "value-added service (countable)"
+    ]
+  }
+]

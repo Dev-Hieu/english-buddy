@@ -1,0 +1,3117 @@
+[
+  {
+    "word": "habitat",
+    "phonetic": "/ˈhæb.ɪ.tæt/",
+    "meaning_vi": "môi trường sống",
+    "meaning_en": "the natural home of a plant or animal",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The forest is the natural habitat of many species.",
+        "vi": "Rừng là môi trường sống tự nhiên của nhiều loài."
+      }
+    ],
+    "word_family": [
+      "inhabit (v)",
+      "inhabitant (n)"
+    ],
+    "collocations": [
+      "natural habitat",
+      "destroy a habitat",
+      "habitat loss"
+    ],
+    "synonyms": [
+      "environment",
+      "home"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "living habitat",
+        "correct": "natural habitat",
+        "explain_vi": "Không dùng 'living' vì habitat đã bao hàm nghĩa nơi sống"
+      }
+    ],
+    "grammar_patterns": [
+      "habitat of + noun",
+      "in a/the habitat"
+    ]
+  },
+  {
+    "word": "predator",
+    "phonetic": "/ˈpred.ə.tər/",
+    "meaning_vi": "động vật săn mồi",
+    "meaning_en": "an animal that hunts other animals for food",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Lions are apex predators in their ecosystem.",
+        "vi": "Sư tử là loài săn mồi đỉnh cao trong hệ sinh thái của chúng."
+      }
+    ],
+    "word_family": [
+      "predatory (adj)",
+      "predation (n)"
+    ],
+    "collocations": [
+      "natural predator",
+      "predator-prey relationship",
+      "top predator"
+    ],
+    "synonyms": [
+      "hunter"
+    ],
+    "antonyms": [
+      "prey"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "predator animal",
+        "correct": "predator",
+        "explain_vi": "Không cần thêm 'animal' vì predator đã là động vật"
+      }
+    ],
+    "grammar_patterns": [
+      "predator of + noun",
+      "be a predator"
+    ]
+  },
+  {
+    "word": "prey",
+    "phonetic": "/preɪ/",
+    "meaning_vi": "con mồi",
+    "meaning_en": "an animal that is hunted by another animal",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Mice are common prey for snakes.",
+        "vi": "Chuột là con mồi phổ biến của rắn."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "hunt prey",
+      "fall prey to",
+      "prey species"
+    ],
+    "synonyms": [
+      "victim"
+    ],
+    "antonyms": [
+      "predator"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "prey animal",
+        "correct": "prey",
+        "explain_vi": "Không cần thêm 'animal' vì prey đã là động vật"
+      }
+    ],
+    "grammar_patterns": [
+      "prey of + noun",
+      "be prey to"
+    ]
+  },
+  {
+    "word": "ecosystem",
+    "phonetic": "/ˈiː.kəʊ.sɪs.təm/",
+    "meaning_vi": "hệ sinh thái",
+    "meaning_en": "a community of living organisms and their environment",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Coral reefs are diverse ecosystems.",
+        "vi": "Rạn san hô là hệ sinh thái đa dạng."
+      }
+    ],
+    "word_family": [
+      "ecological (adj)",
+      "ecologist (n)"
+    ],
+    "collocations": [
+      "marine ecosystem",
+      "ecosystem services",
+      "fragile ecosystem"
+    ],
+    "synonyms": [
+      "biome"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "eco-system",
+        "correct": "ecosystem",
+        "explain_vi": "Viết liền, không gạch nối"
+      }
+    ],
+    "grammar_patterns": [
+      "in an ecosystem",
+      "ecosystem of + noun"
+    ]
+  },
+  {
+    "word": "biodiversity",
+    "phonetic": "/ˌbaɪ.əʊ.daɪˈvɜː.sə.ti/",
+    "meaning_vi": "đa dạng sinh học",
+    "meaning_en": "the variety of life in a particular habitat or ecosystem",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Tropical rainforests have high biodiversity.",
+        "vi": "Rừng mưa nhiệt đới có đa dạng sinh học cao."
+      }
+    ],
+    "word_family": [
+      "biodiverse (adj)"
+    ],
+    "collocations": [
+      "loss of biodiversity",
+      "biodiversity hotspot",
+      "protect biodiversity"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "biodiversity diversity",
+        "correct": "biodiversity",
+        "explain_vi": "Không lặp từ, biodiversity đã có nghĩa đa dạng"
+      }
+    ],
+    "grammar_patterns": [
+      "biodiversity of + noun",
+      "high/low biodiversity"
+    ]
+  },
+  {
+    "word": "conservation",
+    "phonetic": "/ˌkɒn.səˈveɪ.ʃən/",
+    "meaning_vi": "bảo tồn",
+    "meaning_en": "the protection of natural resources and wildlife",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Conservation efforts have saved many species.",
+        "vi": "Các nỗ lực bảo tồn đã cứu nhiều loài."
+      }
+    ],
+    "word_family": [
+      "conserve (v)",
+      "conservationist (n)"
+    ],
+    "collocations": [
+      "wildlife conservation",
+      "conservation area",
+      "conservation program"
+    ],
+    "synonyms": [
+      "preservation"
+    ],
+    "antonyms": [
+      "destruction"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "conservation of animals",
+        "correct": "animal conservation",
+        "explain_vi": "Dùng tính từ trước danh từ: animal conservation"
+      }
+    ],
+    "grammar_patterns": [
+      "conservation of + noun",
+      "for conservation"
+    ]
+  },
+  {
+    "word": "endangered",
+    "phonetic": "/ɪnˈdeɪn.dʒəd/",
+    "meaning_vi": "có nguy cơ tuyệt chủng",
+    "meaning_en": "at risk of extinction",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The giant panda is an endangered species.",
+        "vi": "Gấu trúc lớn là loài có nguy cơ tuyệt chủng."
+      }
+    ],
+    "word_family": [
+      "endanger (v)",
+      "endangerment (n)"
+    ],
+    "collocations": [
+      "endangered species",
+      "endangered list",
+      "critically endangered"
+    ],
+    "synonyms": [
+      "threatened"
+    ],
+    "antonyms": [
+      "abundant"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "endangered animal",
+        "correct": "endangered species",
+        "explain_vi": "Dùng 'species' thay vì 'animal' để trang trọng"
+      }
+    ],
+    "grammar_patterns": [
+      "be endangered",
+      "endangered by + noun"
+    ]
+  },
+  {
+    "word": "extinction",
+    "phonetic": "/ɪkˈstɪŋk.ʃən/",
+    "meaning_vi": "sự tuyệt chủng",
+    "meaning_en": "the state of no longer existing",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Many species face extinction due to habitat loss.",
+        "vi": "Nhiều loài đối mặt với tuyệt chủng do mất môi trường sống."
+      }
+    ],
+    "word_family": [
+      "extinct (adj)",
+      "extinguish (v)"
+    ],
+    "collocations": [
+      "face extinction",
+      "mass extinction",
+      "extinction event"
+    ],
+    "synonyms": [
+      "disappearance"
+    ],
+    "antonyms": [
+      "survival"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "extinction of dinosaurs",
+        "correct": "dinosaur extinction",
+        "explain_vi": "Dùng danh từ ghép: dinosaur extinction"
+      }
+    ],
+    "grammar_patterns": [
+      "extinction of + noun",
+      "on the brink of extinction"
+    ]
+  },
+  {
+    "word": "migration",
+    "phonetic": "/maɪˈɡreɪ.ʃən/",
+    "meaning_vi": "sự di cư",
+    "meaning_en": "the seasonal movement of animals from one region to another",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Bird migration is a fascinating phenomenon.",
+        "vi": "Sự di cư của chim là hiện tượng thú vị."
+      }
+    ],
+    "word_family": [
+      "migrate (v)",
+      "migratory (adj)"
+    ],
+    "collocations": [
+      "annual migration",
+      "migration route",
+      "migration pattern"
+    ],
+    "synonyms": [
+      "movement"
+    ],
+    "antonyms": [
+      "settlement"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "migration of bird",
+        "correct": "bird migration",
+        "explain_vi": "Dùng danh từ ghép: bird migration"
+      }
+    ],
+    "grammar_patterns": [
+      "migration of + noun",
+      "during migration"
+    ]
+  },
+  {
+    "word": "nocturnal",
+    "phonetic": "/nɒkˈtɜː.nəl/",
+    "meaning_vi": "hoạt động về đêm",
+    "meaning_en": "active at night",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "Owls are nocturnal birds of prey.",
+        "vi": "Cú là loài chim săn mồi hoạt động về đêm."
+      }
+    ],
+    "word_family": [
+      "nocturnally (adv)"
+    ],
+    "collocations": [
+      "nocturnal animal",
+      "nocturnal habits",
+      "nocturnal activity"
+    ],
+    "synonyms": [
+      "nighttime"
+    ],
+    "antonyms": [
+      "diurnal"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "nocturnal animal active at night",
+        "correct": "nocturnal animal",
+        "explain_vi": "Nocturnal đã bao hàm nghĩa hoạt động về đêm, không cần giải thích thêm"
+      }
+    ],
+    "grammar_patterns": [
+      "be nocturnal",
+      "nocturnal + noun"
+    ]
+  },
+  {
+    "word": "diurnal",
+    "phonetic": "/daɪˈɜː.nəl/",
+    "meaning_vi": "hoạt động ban ngày",
+    "meaning_en": "active during the day",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "Humans are diurnal creatures.",
+        "vi": "Con người là sinh vật hoạt động ban ngày."
+      }
+    ],
+    "word_family": [
+      "diurnally (adv)"
+    ],
+    "collocations": [
+      "diurnal animal",
+      "diurnal rhythm",
+      "diurnal activity"
+    ],
+    "synonyms": [
+      "daytime"
+    ],
+    "antonyms": [
+      "nocturnal"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "diurnal animal active during day",
+        "correct": "diurnal animal",
+        "explain_vi": "Diurnal đã bao hàm nghĩa hoạt động ban ngày"
+      }
+    ],
+    "grammar_patterns": [
+      "be diurnal",
+      "diurnal + noun"
+    ]
+  },
+  {
+    "word": "camouflage",
+    "phonetic": "/ˈkæm.ə.flɑːʒ/",
+    "meaning_vi": "ngụy trang",
+    "meaning_en": "the ability to blend in with the environment",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Chameleons use camouflage to hide from predators.",
+        "vi": "Tắc kè hoa dùng ngụy trang để trốn kẻ săn mồi."
+      }
+    ],
+    "word_family": [
+      "camouflage (v)"
+    ],
+    "collocations": [
+      "natural camouflage",
+      "camouflage pattern",
+      "use camouflage"
+    ],
+    "synonyms": [
+      "disguise"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "camouflage color",
+        "correct": "camouflage",
+        "explain_vi": "Camouflage đã bao hàm màu sắc ngụy trang"
+      }
+    ],
+    "grammar_patterns": [
+      "camouflage of + noun",
+      "by camouflage"
+    ]
+  },
+  {
+    "word": "symbiosis",
+    "phonetic": "/ˌsɪm.baɪˈəʊ.sɪs/",
+    "meaning_vi": "cộng sinh",
+    "meaning_en": "a close relationship between two species that benefits both",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Clownfish and sea anemones have a symbiosis.",
+        "vi": "Cá hề và hải quỳ có mối quan hệ cộng sinh."
+      }
+    ],
+    "word_family": [
+      "symbiotic (adj)",
+      "symbiotically (adv)"
+    ],
+    "collocations": [
+      "mutual symbiosis",
+      "symbiosis between",
+      "form a symbiosis"
+    ],
+    "synonyms": [
+      "mutualism"
+    ],
+    "antonyms": [
+      "parasitism"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "symbiosis relationship",
+        "correct": "symbiosis",
+        "explain_vi": "Symbiosis đã là mối quan hệ, không cần thêm 'relationship'"
+      }
+    ],
+    "grammar_patterns": [
+      "symbiosis between + noun and noun",
+      "in symbiosis with"
+    ]
+  },
+  {
+    "word": "parasite",
+    "phonetic": "/ˈpær.ə.saɪt/",
+    "meaning_vi": "ký sinh trùng",
+    "meaning_en": "an organism that lives on or in another and benefits at its expense",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Tapeworms are parasites that live in the intestines.",
+        "vi": "Sán dây là ký sinh trùng sống trong ruột."
+      }
+    ],
+    "word_family": [
+      "parasitic (adj)",
+      "parasitism (n)"
+    ],
+    "collocations": [
+      "internal parasite",
+      "parasite infection",
+      "host and parasite"
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "host"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "parasite animal",
+        "correct": "parasite",
+        "explain_vi": "Parasite đã là sinh vật, không cần thêm 'animal'"
+      }
+    ],
+    "grammar_patterns": [
+      "parasite of + noun",
+      "be a parasite on"
+    ]
+  },
+  {
+    "word": "pollination",
+    "phonetic": "/ˌpɒl.ɪˈneɪ.ʃən/",
+    "meaning_vi": "sự thụ phấn",
+    "meaning_en": "the transfer of pollen to fertilize plants",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Bees play a key role in pollination.",
+        "vi": "Ong đóng vai trò quan trọng trong thụ phấn."
+      }
+    ],
+    "word_family": [
+      "pollinate (v)",
+      "pollinator (n)"
+    ],
+    "collocations": [
+      "cross-pollination",
+      "pollination process",
+      "pollination service"
+    ],
+    "synonyms": [
+      "fertilization"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "pollination of flower",
+        "correct": "flower pollination",
+        "explain_vi": "Dùng danh từ ghép: flower pollination"
+      }
+    ],
+    "grammar_patterns": [
+      "pollination of + noun",
+      "by pollination"
+    ]
+  },
+  {
+    "word": "deforestation",
+    "phonetic": "/diːˌfɒr.ɪˈsteɪ.ʃən/",
+    "meaning_vi": "phá rừng",
+    "meaning_en": "the clearing of forests on a large scale",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Deforestation leads to loss of biodiversity.",
+        "vi": "Phá rừng dẫn đến mất đa dạng sinh học."
+      }
+    ],
+    "word_family": [
+      "deforest (v)",
+      "deforested (adj)"
+    ],
+    "collocations": [
+      "deforestation rate",
+      "deforestation impact",
+      "combat deforestation"
+    ],
+    "synonyms": [
+      "clearing"
+    ],
+    "antonyms": [
+      "reforestation"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "deforestation of forest",
+        "correct": "deforestation",
+        "explain_vi": "Deforestation đã là phá rừng, không cần 'of forest'"
+      }
+    ],
+    "grammar_patterns": [
+      "deforestation of + noun",
+      "due to deforestation"
+    ]
+  },
+  {
+    "word": "reforestation",
+    "phonetic": "/riːˌfɒr.ɪˈsteɪ.ʃən/",
+    "meaning_vi": "trồng rừng lại",
+    "meaning_en": "the process of replanting trees in a deforested area",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Reforestation helps restore ecosystems.",
+        "vi": "Trồng rừng lại giúp phục hồi hệ sinh thái."
+      }
+    ],
+    "word_family": [
+      "reforest (v)",
+      "reforested (adj)"
+    ],
+    "collocations": [
+      "reforestation project",
+      "reforestation effort",
+      "reforestation program"
+    ],
+    "synonyms": [
+      "afforestation"
+    ],
+    "antonyms": [
+      "deforestation"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "reforestation of trees",
+        "correct": "reforestation",
+        "explain_vi": "Không cần 'of trees' vì reforestation đã bao hàm trồng cây"
+      }
+    ],
+    "grammar_patterns": [
+      "reforestation of + noun",
+      "through reforestation"
+    ]
+  },
+  {
+    "word": "carbon footprint",
+    "phonetic": "/ˈkɑː.bən ˈfʊt.prɪnt/",
+    "meaning_vi": "dấu chân carbon",
+    "meaning_en": "the amount of carbon dioxide produced by an individual or activity",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Reducing your carbon footprint helps the environment.",
+        "vi": "Giảm dấu chân carbon giúp bảo vệ môi trường."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "reduce carbon footprint",
+      "carbon footprint calculation",
+      "carbon footprint offset"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "carbon footprint of CO2",
+        "correct": "carbon footprint",
+        "explain_vi": "Carbon footprint đã liên quan đến CO2, không cần thêm"
+      }
+    ],
+    "grammar_patterns": [
+      "carbon footprint of + noun",
+      "someone's carbon footprint"
+    ]
+  },
+  {
+    "word": "sustainable",
+    "phonetic": "/səˈsteɪ.nə.bəl/",
+    "meaning_vi": "bền vững",
+    "meaning_en": "able to be maintained without harming the environment",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "Sustainable farming protects natural resources.",
+        "vi": "Canh tác bền vững bảo vệ tài nguyên thiên nhiên."
+      }
+    ],
+    "word_family": [
+      "sustain (v)",
+      "sustainability (n)"
+    ],
+    "collocations": [
+      "sustainable development",
+      "sustainable energy",
+      "sustainable practice"
+    ],
+    "synonyms": [
+      "eco-friendly"
+    ],
+    "antonyms": [
+      "unsustainable"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "sustainable development development",
+        "correct": "sustainable development",
+        "explain_vi": "Không lặp từ"
+      }
+    ],
+    "grammar_patterns": [
+      "sustainable + noun",
+      "be sustainable"
+    ]
+  },
+  {
+    "word": "ecotourism",
+    "phonetic": "/ˈiː.kəʊˌtʊə.rɪ.zəm/",
+    "meaning_vi": "du lịch sinh thái",
+    "meaning_en": "responsible travel to natural areas that conserves the environment",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Ecotourism can benefit local communities and wildlife.",
+        "vi": "Du lịch sinh thái có thể mang lại lợi ích cho cộng đồng địa phương và động vật hoang dã."
+      }
+    ],
+    "word_family": [
+      "ecotourist (n)",
+      "ecotour (n)"
+    ],
+    "collocations": [
+      "ecotourism destination",
+      "ecotourism industry",
+      "promote ecotourism"
+    ],
+    "synonyms": [
+      "sustainable tourism"
+    ],
+    "antonyms": [
+      "mass tourism"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "eco-tourism",
+        "correct": "ecotourism",
+        "explain_vi": "Viết liền, không gạch nối"
+      }
+    ],
+    "grammar_patterns": [
+      "ecotourism in + noun",
+      "focus on ecotourism"
+    ]
+  },
+  {
+    "word": "canopy",
+    "phonetic": "/ˈkæn.ə.pi/",
+    "meaning_vi": "tán rừng",
+    "meaning_en": "the upper layer of branches and leaves in a forest",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Monkeys live in the forest canopy.",
+        "vi": "Khỉ sống trên tán rừng."
+      },
+      {
+        "en": "The canopy blocks most sunlight.",
+        "vi": "Tán rừng chặn hầu hết ánh sáng mặt trời."
+      }
+    ],
+    "word_family": [
+      "canopied (adj)"
+    ],
+    "collocations": [
+      "forest canopy",
+      "canopy layer",
+      "under the canopy"
+    ],
+    "synonyms": [
+      "treetop layer"
+    ],
+    "antonyms": [
+      "forest floor"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "canopy of tree",
+        "correct": "forest canopy",
+        "explain_vi": "Thường dùng 'forest canopy' thay vì 'canopy of tree'."
+      }
+    ],
+    "grammar_patterns": [
+      "the + canopy",
+      "under + the + canopy"
+    ]
+  },
+  {
+    "word": "biodiverse",
+    "phonetic": "/ˌbaɪ.oʊ.daɪˈvɜːrs/",
+    "meaning_vi": "đa dạng sinh học",
+    "meaning_en": "having a wide variety of plants and animals",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The Amazon is one of the most biodiverse regions.",
+        "vi": "Amazon là một trong những khu vực đa dạng sinh học nhất."
+      },
+      {
+        "en": "Coral reefs are highly biodiverse.",
+        "vi": "Rạn san hô có tính đa dạng sinh học cao."
+      }
+    ],
+    "word_family": [
+      "biodiversity (n)"
+    ],
+    "collocations": [
+      "highly biodiverse",
+      "biodiverse ecosystem",
+      "biodiverse area"
+    ],
+    "synonyms": [
+      "species-rich"
+    ],
+    "antonyms": [
+      "species-poor"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "biodiversity area",
+        "correct": "biodiverse area",
+        "explain_vi": "Dùng tính từ 'biodiverse' thay vì danh từ 'biodiversity'."
+      }
+    ],
+    "grammar_patterns": [
+      "be + biodiverse",
+      "biodiverse + noun"
+    ]
+  },
+  {
+    "word": "endemic",
+    "phonetic": "/enˈdem.ɪk/",
+    "meaning_vi": "đặc hữu",
+    "meaning_en": "native to a particular area and found only there",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "This species is endemic to Madagascar.",
+        "vi": "Loài này đặc hữu của Madagascar."
+      },
+      {
+        "en": "Many endemic plants are threatened.",
+        "vi": "Nhiều loài thực vật đặc hữu đang bị đe dọa."
+      }
+    ],
+    "word_family": [
+      "endemism (n)",
+      "endemically (adv)"
+    ],
+    "collocations": [
+      "endemic species",
+      "endemic to",
+      "endemic plant"
+    ],
+    "synonyms": [
+      "native",
+      "indigenous"
+    ],
+    "antonyms": [
+      "introduced",
+      "exotic"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "endemic in",
+        "correct": "endemic to",
+        "explain_vi": "Dùng 'endemic to' thay vì 'endemic in'."
+      }
+    ],
+    "grammar_patterns": [
+      "endemic + to + place"
+    ]
+  },
+  {
+    "word": "arboreal",
+    "phonetic": "/ɑːrˈbɔːr.i.əl/",
+    "meaning_vi": "sống trên cây",
+    "meaning_en": "living in trees",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "Sloths are arboreal mammals.",
+        "vi": "Lười là động vật có vú sống trên cây."
+      },
+      {
+        "en": "Arboreal snakes are excellent climbers.",
+        "vi": "Rắn sống trên cây leo trèo rất giỏi."
+      }
+    ],
+    "word_family": [
+      "arboreally (adv)",
+      "arbor (n)"
+    ],
+    "collocations": [
+      "arboreal species",
+      "arboreal habitat",
+      "arboreal lifestyle"
+    ],
+    "synonyms": [
+      "tree-dwelling"
+    ],
+    "antonyms": [
+      "terrestrial",
+      "aquatic"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "arboreal animal",
+        "correct": "arboreal animal",
+        "explain_vi": "Không có lỗi phổ biến, nhưng nhớ 'arboreal' là tính từ."
+      }
+    ],
+    "grammar_patterns": [
+      "arboreal + noun"
+    ]
+  },
+  {
+    "word": "carnivore",
+    "phonetic": "/ˈkɑːr.nɪ.vɔːr/",
+    "meaning_vi": "động vật ăn thịt",
+    "meaning_en": "an animal that eats meat",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Lions are carnivores.",
+        "vi": "Sư tử là động vật ăn thịt."
+      },
+      {
+        "en": "Carnivores have sharp teeth.",
+        "vi": "Động vật ăn thịt có răng sắc."
+      }
+    ],
+    "word_family": [
+      "carnivorous (adj)",
+      "carnivory (n)"
+    ],
+    "collocations": [
+      "obligate carnivore",
+      "top carnivore",
+      "carnivore diet"
+    ],
+    "synonyms": [
+      "meat-eater"
+    ],
+    "antonyms": [
+      "herbivore",
+      "omnivore"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "carnivore animal",
+        "correct": "carnivore",
+        "explain_vi": "Không cần thêm 'animal' vì 'carnivore' đã là danh từ."
+      }
+    ],
+    "grammar_patterns": [
+      "be a carnivore",
+      "carnivore + verb"
+    ]
+  },
+  {
+    "word": "herbivore",
+    "phonetic": "/ˈhɜːr.bɪ.vɔːr/",
+    "meaning_vi": "động vật ăn cỏ",
+    "meaning_en": "an animal that eats plants",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Cows are herbivores.",
+        "vi": "Bò là động vật ăn cỏ."
+      },
+      {
+        "en": "Herbivores have flat teeth for grinding.",
+        "vi": "Động vật ăn cỏ có răng phẳng để nghiền."
+      }
+    ],
+    "word_family": [
+      "herbivorous (adj)",
+      "herbivory (n)"
+    ],
+    "collocations": [
+      "grazing herbivore",
+      "large herbivore",
+      "herbivore species"
+    ],
+    "synonyms": [
+      "plant-eater"
+    ],
+    "antonyms": [
+      "carnivore",
+      "omnivore"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "herbivore animal",
+        "correct": "herbivore",
+        "explain_vi": "Không cần thêm 'animal'."
+      }
+    ],
+    "grammar_patterns": [
+      "be a herbivore",
+      "herbivore + verb"
+    ]
+  },
+  {
+    "word": "omnivore",
+    "phonetic": "/ˈɒm.nɪ.vɔːr/",
+    "meaning_vi": "động vật ăn tạp",
+    "meaning_en": "an animal that eats both plants and meat",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Bears are omnivores.",
+        "vi": "Gấu là động vật ăn tạp."
+      },
+      {
+        "en": "Humans are omnivores.",
+        "vi": "Con người là động vật ăn tạp."
+      }
+    ],
+    "word_family": [
+      "omnivorous (adj)",
+      "omnivory (n)"
+    ],
+    "collocations": [
+      "opportunistic omnivore",
+      "omnivore diet",
+      "omnivore species"
+    ],
+    "synonyms": [
+      "generalist eater"
+    ],
+    "antonyms": [
+      "carnivore",
+      "herbivore"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "omnivore animal",
+        "correct": "omnivore",
+        "explain_vi": "Không cần thêm 'animal'."
+      }
+    ],
+    "grammar_patterns": [
+      "be an omnivore",
+      "omnivore + verb"
+    ]
+  },
+  {
+    "word": "aquatic",
+    "phonetic": "/əˈkwæt.ɪk/",
+    "meaning_vi": "dưới nước, sống ở nước",
+    "meaning_en": "living or growing in water",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "Dolphins are aquatic mammals.",
+        "vi": "Cá heo là động vật có vú sống dưới nước."
+      },
+      {
+        "en": "Aquatic plants need light to grow.",
+        "vi": "Thực vật thủy sinh cần ánh sáng để phát triển."
+      }
+    ],
+    "word_family": [
+      "aquatically (adv)",
+      "aquatics (n)"
+    ],
+    "collocations": [
+      "aquatic habitat",
+      "aquatic ecosystem",
+      "aquatic species"
+    ],
+    "synonyms": [
+      "marine",
+      "freshwater"
+    ],
+    "antonyms": [
+      "terrestrial",
+      "arboreal"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "aquatic animal",
+        "correct": "aquatic animal",
+        "explain_vi": "Không có lỗi phổ biến, nhưng nhớ 'aquatic' là tính từ."
+      }
+    ],
+    "grammar_patterns": [
+      "aquatic + noun"
+    ]
+  },
+  {
+    "word": "terrestrial",
+    "phonetic": "/təˈres.tri.əl/",
+    "meaning_vi": "trên cạn",
+    "meaning_en": "living on land",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "Elephants are terrestrial animals.",
+        "vi": "Voi là động vật trên cạn."
+      },
+      {
+        "en": "Terrestrial ecosystems include forests and grasslands.",
+        "vi": "Hệ sinh thái trên cạn bao gồm rừng và đồng cỏ."
+      }
+    ],
+    "word_family": [
+      "terrestrially (adv)",
+      "terrestrial (n)"
+    ],
+    "collocations": [
+      "terrestrial habitat",
+      "terrestrial species",
+      "terrestrial planet"
+    ],
+    "synonyms": [
+      "land-dwelling"
+    ],
+    "antonyms": [
+      "aquatic",
+      "arboreal"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "terrestrial animal",
+        "correct": "terrestrial animal",
+        "explain_vi": "Không có lỗi phổ biến."
+      }
+    ],
+    "grammar_patterns": [
+      "terrestrial + noun"
+    ]
+  },
+  {
+    "word": "migrate",
+    "phonetic": "/ˈmaɪ.ɡreɪt/",
+    "meaning_vi": "di cư",
+    "meaning_en": "to move from one region to another, often seasonally",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "Birds migrate south for the winter.",
+        "vi": "Chim di cư về phía nam vào mùa đông."
+      },
+      {
+        "en": "Salmon migrate upstream to spawn.",
+        "vi": "Cá hồi di cư ngược dòng để sinh sản."
+      }
+    ],
+    "word_family": [
+      "migration (n)",
+      "migratory (adj)"
+    ],
+    "collocations": [
+      "migrate to",
+      "migrate from",
+      "migrate seasonally"
+    ],
+    "synonyms": [
+      "move",
+      "relocate"
+    ],
+    "antonyms": [
+      "stay",
+      "remain"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "migrate from ... to ...",
+        "correct": "migrate from ... to ...",
+        "explain_vi": "Cấu trúc đúng: migrate from + place + to + place."
+      }
+    ],
+    "grammar_patterns": [
+      "migrate + preposition + place"
+    ]
+  },
+  {
+    "word": "hibernate",
+    "phonetic": "/ˈhaɪ.bər.neɪt/",
+    "meaning_vi": "ngủ đông",
+    "meaning_en": "to spend the winter in a dormant state",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "Bears hibernate during winter.",
+        "vi": "Gấu ngủ đông trong suốt mùa đông."
+      },
+      {
+        "en": "Some reptiles hibernate in burrows.",
+        "vi": "Một số loài bò sát ngủ đông trong hang."
+      }
+    ],
+    "word_family": [
+      "hibernation (n)",
+      "hibernator (n)"
+    ],
+    "collocations": [
+      "hibernate in",
+      "hibernate during",
+      "go into hibernation"
+    ],
+    "synonyms": [
+      "winter sleep"
+    ],
+    "antonyms": [
+      "estivate"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "hibernate for winter",
+        "correct": "hibernate during winter",
+        "explain_vi": "Dùng 'during' thay vì 'for'."
+      }
+    ],
+    "grammar_patterns": [
+      "hibernate + time phrase"
+    ]
+  },
+  {
+    "word": "estivate",
+    "phonetic": "/ˈes.tɪ.veɪt/",
+    "meaning_vi": "ngủ hè",
+    "meaning_en": "to spend the summer in a dormant state to avoid heat and drought",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "Some snails estivate during dry periods.",
+        "vi": "Một số loài ốc sên ngủ hè trong thời kỳ khô hạn."
+      },
+      {
+        "en": "Lungfish estivate in mud cocoons.",
+        "vi": "Cá phổi ngủ hè trong kén bùn."
+      }
+    ],
+    "word_family": [
+      "estivation (n)",
+      "estivator (n)"
+    ],
+    "collocations": [
+      "estivate in",
+      "estivate during",
+      "go into estivation"
+    ],
+    "synonyms": [
+      "summer sleep"
+    ],
+    "antonyms": [
+      "hibernate"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "estivate for summer",
+        "correct": "estivate during summer",
+        "explain_vi": "Dùng 'during' thay vì 'for'."
+      }
+    ],
+    "grammar_patterns": [
+      "estivate + time phrase"
+    ]
+  },
+  {
+    "word": "nocturnal",
+    "phonetic": "/nɒkˈtɜːr.nəl/",
+    "meaning_vi": "hoạt động về đêm",
+    "meaning_en": "active at night",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "Owls are nocturnal birds.",
+        "vi": "Cú là loài chim hoạt động về đêm."
+      },
+      {
+        "en": "Nocturnal animals have good night vision.",
+        "vi": "Động vật hoạt động về đêm có thị lực ban đêm tốt."
+      }
+    ],
+    "word_family": [
+      "nocturnally (adv)",
+      "nocturnal (n)"
+    ],
+    "collocations": [
+      "nocturnal animal",
+      "nocturnal habit",
+      "nocturnal species"
+    ],
+    "synonyms": [
+      "night-active"
+    ],
+    "antonyms": [
+      "diurnal"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "nocturnal animal",
+        "correct": "nocturnal animal",
+        "explain_vi": "Không có lỗi phổ biến."
+      }
+    ],
+    "grammar_patterns": [
+      "nocturnal + noun"
+    ]
+  },
+  {
+    "word": "diurnal",
+    "phonetic": "/daɪˈɜːr.nəl/",
+    "meaning_vi": "hoạt động ban ngày",
+    "meaning_en": "active during the day",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "Humans are diurnal.",
+        "vi": "Con người hoạt động ban ngày."
+      },
+      {
+        "en": "Diurnal birds sing at dawn.",
+        "vi": "Chim hoạt động ban ngày hót lúc bình minh."
+      }
+    ],
+    "word_family": [
+      "diurnally (adv)",
+      "diurnal (n)"
+    ],
+    "collocations": [
+      "diurnal animal",
+      "diurnal rhythm",
+      "diurnal species"
+    ],
+    "synonyms": [
+      "day-active"
+    ],
+    "antonyms": [
+      "nocturnal"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "diurnal animal",
+        "correct": "diurnal animal",
+        "explain_vi": "Không có lỗi phổ biến."
+      }
+    ],
+    "grammar_patterns": [
+      "diurnal + noun"
+    ]
+  },
+  {
+    "word": "camouflage",
+    "phonetic": "/ˈkæm.ə.flɑːʒ/",
+    "meaning_vi": "ngụy trang",
+    "meaning_en": "the act of hiding by blending with the surroundings",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The chameleon uses camouflage to hide.",
+        "vi": "Tắc kè hoa sử dụng ngụy trang để ẩn mình."
+      },
+      {
+        "en": "Camouflage helps prey avoid predators.",
+        "vi": "Ngụy trang giúp con mồi tránh kẻ săn mồi."
+      }
+    ],
+    "word_family": [
+      "camouflage (v)",
+      "camouflaged (adj)"
+    ],
+    "collocations": [
+      "use camouflage",
+      "camouflage pattern",
+      "camouflage color"
+    ],
+    "synonyms": [
+      "disguise",
+      "concealment"
+    ],
+    "antonyms": [
+      "visibility"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "camouflage color",
+        "correct": "camouflage color",
+        "explain_vi": "Không có lỗi phổ biến."
+      }
+    ],
+    "grammar_patterns": [
+      "camouflage + verb",
+      "in + camouflage"
+    ]
+  },
+  {
+    "word": "symbiosis",
+    "phonetic": "/ˌsɪm.baɪˈoʊ.sɪs/",
+    "meaning_vi": "cộng sinh",
+    "meaning_en": "a close relationship between two species that benefits at least one",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The clownfish and sea anemone have a symbiosis.",
+        "vi": "Cá hề và hải quỳ có mối quan hệ cộng sinh."
+      },
+      {
+        "en": "Symbiosis can be mutualistic or parasitic.",
+        "vi": "Cộng sinh có thể là tương hỗ hoặc ký sinh."
+      }
+    ],
+    "word_family": [
+      "symbiotic (adj)",
+      "symbiotically (adv)"
+    ],
+    "collocations": [
+      "mutualistic symbiosis",
+      "symbiosis between",
+      "form a symbiosis"
+    ],
+    "synonyms": [
+      "mutualism"
+    ],
+    "antonyms": [
+      "competition"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "symbiosis relationship",
+        "correct": "symbiotic relationship",
+        "explain_vi": "Dùng tính từ 'symbiotic' thay vì danh từ."
+      }
+    ],
+    "grammar_patterns": [
+      "symbiosis + between + plural noun"
+    ]
+  },
+  {
+    "word": "parasite",
+    "phonetic": "/ˈpær.ə.saɪt/",
+    "meaning_vi": "ký sinh trùng",
+    "meaning_en": "an organism that lives on or in another organism and benefits at its expense",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Tapeworms are parasites in the intestine.",
+        "vi": "Sán dây là ký sinh trùng trong ruột."
+      },
+      {
+        "en": "The parasite harms its host.",
+        "vi": "Ký sinh trùng gây hại cho vật chủ."
+      }
+    ],
+    "word_family": [
+      "parasitic (adj)",
+      "parasitism (n)"
+    ],
+    "collocations": [
+      "internal parasite",
+      "parasite infection",
+      "host of a parasite"
+    ],
+    "synonyms": [
+      "parasitic organism"
+    ],
+    "antonyms": [
+      "host"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "parasite animal",
+        "correct": "parasite",
+        "explain_vi": "Không cần thêm 'animal'."
+      }
+    ],
+    "grammar_patterns": [
+      "parasite + verb",
+      "host + to + parasite"
+    ]
+  },
+  {
+    "word": "pollination",
+    "phonetic": "/ˌpɒl.ɪˈneɪ.ʃən/",
+    "meaning_vi": "thụ phấn",
+    "meaning_en": "the transfer of pollen to enable fertilization in plants",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Bees are essential for pollination.",
+        "vi": "Ong rất quan trọng cho việc thụ phấn."
+      },
+      {
+        "en": "Wind pollination occurs in many grasses.",
+        "vi": "Thụ phấn nhờ gió xảy ra ở nhiều loài cỏ."
+      }
+    ],
+    "word_family": [
+      "pollinate (v)",
+      "pollinator (n)"
+    ],
+    "collocations": [
+      "cross-pollination",
+      "pollination process",
+      "pollination by insects"
+    ],
+    "synonyms": [
+      "fertilization"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "pollination of flowers",
+        "correct": "pollination of flowers",
+        "explain_vi": "Không có lỗi phổ biến."
+      }
+    ],
+    "grammar_patterns": [
+      "pollination + by + agent",
+      "pollination + of + plant"
+    ]
+  },
+  {
+    "word": "deforestation",
+    "phonetic": "/diːˌfɒr.ɪˈsteɪ.ʃən/",
+    "meaning_vi": "phá rừng",
+    "meaning_en": "the clearing of forests on a large scale",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Deforestation leads to loss of habitat.",
+        "vi": "Phá rừng dẫn đến mất môi trường sống."
+      },
+      {
+        "en": "Deforestation is a major cause of climate change.",
+        "vi": "Phá rừng là một nguyên nhân chính của biến đổi khí hậu."
+      }
+    ],
+    "word_family": [
+      "deforest (v)",
+      "deforested (adj)"
+    ],
+    "collocations": [
+      "deforestation rate",
+      "deforestation impact",
+      "prevent deforestation"
+    ],
+    "synonyms": [
+      "forest clearing"
+    ],
+    "antonyms": [
+      "reforestation",
+      "afforestation"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "deforestation of forest",
+        "correct": "deforestation of forest",
+        "explain_vi": "Không có lỗi phổ biến."
+      }
+    ],
+    "grammar_patterns": [
+      "deforestation + of + area",
+      "deforestation + caused by"
+    ]
+  },
+  {
+    "word": "reforestation",
+    "phonetic": "/riːˌfɒr.ɪˈsteɪ.ʃən/",
+    "meaning_vi": "trồng lại rừng",
+    "meaning_en": "the replanting of trees in an area that was previously forested",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Reforestation helps restore ecosystems.",
+        "vi": "Trồng lại rừng giúp phục hồi hệ sinh thái."
+      },
+      {
+        "en": "The government promoted reforestation projects.",
+        "vi": "Chính phủ thúc đẩy các dự án trồng lại rừng."
+      }
+    ],
+    "word_family": [
+      "reforest (v)",
+      "reforested (adj)"
+    ],
+    "collocations": [
+      "reforestation effort",
+      "reforestation program",
+      "reforestation project"
+    ],
+    "synonyms": [
+      "tree planting"
+    ],
+    "antonyms": [
+      "deforestation"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "reforestation of forest",
+        "correct": "reforestation of forest",
+        "explain_vi": "Không có lỗi phổ biến."
+      }
+    ],
+    "grammar_patterns": [
+      "reforestation + of + area",
+      "reforestation + project"
+    ]
+  },
+  {
+    "word": "adaptation",
+    "phonetic": "/ˌæd.æpˈteɪ.ʃən/",
+    "meaning_vi": "sự thích nghi",
+    "meaning_en": "a change or process by which an organism becomes better suited to its environment",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The polar bear's thick fur is an adaptation to cold climates.",
+        "vi": "Bộ lông dày của gấu Bắc Cực là sự thích nghi với khí hậu lạnh."
+      }
+    ],
+    "word_family": [
+      "adapt (v)",
+      "adaptive (adj)"
+    ],
+    "collocations": [
+      "evolutionary adaptation",
+      "physical adaptation",
+      "behavioral adaptation"
+    ],
+    "synonyms": [
+      "adjustment",
+      "acclimatization"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "adaptation for cold",
+        "correct": "adaptation to cold",
+        "explain_vi": "Dùng giới từ 'to' thay vì 'for'"
+      }
+    ],
+    "grammar_patterns": [
+      "adaptation + to + noun"
+    ]
+  },
+  {
+    "word": "biodiverse",
+    "phonetic": "/ˌbaɪ.oʊ.daɪˈvɜːrs/",
+    "meaning_vi": "đa dạng sinh học",
+    "meaning_en": "having a great variety of plants and animals",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "Tropical rainforests are highly biodiverse.",
+        "vi": "Rừng mưa nhiệt đới có tính đa dạng sinh học cao."
+      }
+    ],
+    "word_family": [
+      "biodiversity (n)"
+    ],
+    "collocations": [
+      "highly biodiverse",
+      "biodiverse ecosystem",
+      "biodiverse region"
+    ],
+    "synonyms": [
+      "species-rich"
+    ],
+    "antonyms": [
+      "depauperate"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "biodiverse environment",
+        "correct": "biodiverse ecosystem",
+        "explain_vi": "Ecosystem là thuật ngữ chính xác hơn environment trong ngữ cảnh này"
+      }
+    ],
+    "grammar_patterns": [
+      "be + biodiverse"
+    ]
+  },
+  {
+    "word": "canopy",
+    "phonetic": "/ˈkæn.ə.pi/",
+    "meaning_vi": "tán rừng",
+    "meaning_en": "the uppermost layer of branches and leaves in a forest",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Many birds live in the forest canopy.",
+        "vi": "Nhiều loài chim sống trên tán rừng."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "forest canopy",
+      "canopy layer",
+      "canopy cover"
+    ],
+    "synonyms": [
+      "tree crown"
+    ],
+    "antonyms": [
+      "forest floor"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "canopy of trees",
+        "correct": "forest canopy",
+        "explain_vi": "Cụm từ forest canopy phổ biến hơn"
+      }
+    ],
+    "grammar_patterns": [
+      "the + canopy"
+    ]
+  },
+  {
+    "word": "carnivore",
+    "phonetic": "/ˈkɑːr.nɪ.vɔːr/",
+    "meaning_vi": "động vật ăn thịt",
+    "meaning_en": "an animal that eats meat",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Lions are carnivores that hunt other animals.",
+        "vi": "Sư tử là động vật ăn thịt săn các loài khác."
+      }
+    ],
+    "word_family": [
+      "carnivorous (adj)"
+    ],
+    "collocations": [
+      "strict carnivore",
+      "obligate carnivore",
+      "top carnivore"
+    ],
+    "synonyms": [
+      "predator"
+    ],
+    "antonyms": [
+      "herbivore"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "carnivore animal",
+        "correct": "carnivore",
+        "explain_vi": "Carnivore đã là danh từ, không cần thêm animal"
+      }
+    ],
+    "grammar_patterns": [
+      "be a carnivore"
+    ]
+  },
+  {
+    "word": "herbivore",
+    "phonetic": "/ˈhɜːr.bɪ.vɔːr/",
+    "meaning_vi": "động vật ăn cỏ",
+    "meaning_en": "an animal that eats plants",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Cows are herbivores that graze on grass.",
+        "vi": "Bò là động vật ăn cỏ gặm cỏ."
+      }
+    ],
+    "word_family": [
+      "herbivorous (adj)"
+    ],
+    "collocations": [
+      "large herbivore",
+      "grazing herbivore",
+      "herbivore population"
+    ],
+    "synonyms": [
+      "plant-eater"
+    ],
+    "antonyms": [
+      "carnivore"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "herbivore animal",
+        "correct": "herbivore",
+        "explain_vi": "Herbivore đã là danh từ"
+      }
+    ],
+    "grammar_patterns": [
+      "be a herbivore"
+    ]
+  },
+  {
+    "word": "omnivore",
+    "phonetic": "/ˈɒm.nɪ.vɔːr/",
+    "meaning_vi": "động vật ăn tạp",
+    "meaning_en": "an animal that eats both plants and meat",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Bears are omnivores that eat berries and fish.",
+        "vi": "Gấu là động vật ăn tạp ăn quả mọng và cá."
+      }
+    ],
+    "word_family": [
+      "omnivorous (adj)"
+    ],
+    "collocations": [
+      "opportunistic omnivore",
+      "omnivore diet"
+    ],
+    "synonyms": [
+      "generalist"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "omnivore animal",
+        "correct": "omnivore",
+        "explain_vi": "Omnivore đã là danh từ"
+      }
+    ],
+    "grammar_patterns": [
+      "be an omnivore"
+    ]
+  },
+  {
+    "word": "aquatic",
+    "phonetic": "/əˈkwæt.ɪk/",
+    "meaning_vi": "dưới nước",
+    "meaning_en": "living or growing in water",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "Aquatic plants are essential for oxygen production.",
+        "vi": "Thực vật dưới nước rất cần thiết cho việc sản xuất oxy."
+      }
+    ],
+    "word_family": [
+      "aquatics (n)"
+    ],
+    "collocations": [
+      "aquatic ecosystem",
+      "aquatic life",
+      "aquatic habitat"
+    ],
+    "synonyms": [
+      "marine",
+      "freshwater"
+    ],
+    "antonyms": [
+      "terrestrial"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "aquatic animal",
+        "correct": "aquatic animal",
+        "explain_vi": "Cụm từ này đúng, nhưng lưu ý phát âm"
+      }
+    ],
+    "grammar_patterns": [
+      "aquatic + noun"
+    ]
+  },
+  {
+    "word": "terrestrial",
+    "phonetic": "/təˈres.tri.əl/",
+    "meaning_vi": "trên cạn",
+    "meaning_en": "living on land",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "Terrestrial animals include mammals, birds, and insects.",
+        "vi": "Động vật trên cạn bao gồm động vật có vú, chim và côn trùng."
+      }
+    ],
+    "word_family": [
+      "terrestrially (adv)"
+    ],
+    "collocations": [
+      "terrestrial ecosystem",
+      "terrestrial habitat",
+      "terrestrial planet"
+    ],
+    "synonyms": [
+      "land-based"
+    ],
+    "antonyms": [
+      "aquatic"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "terrestrial animal",
+        "correct": "terrestrial animal",
+        "explain_vi": "Cụm từ đúng, chú ý phát âm"
+      }
+    ],
+    "grammar_patterns": [
+      "terrestrial + noun"
+    ]
+  },
+  {
+    "word": "hibernate",
+    "phonetic": "/ˈhaɪ.bər.neɪt/",
+    "meaning_vi": "ngủ đông",
+    "meaning_en": "to spend the winter in a state of inactivity",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "Some bears hibernate during the cold months.",
+        "vi": "Một số loài gấu ngủ đông trong những tháng lạnh."
+      }
+    ],
+    "word_family": [
+      "hibernation (n)",
+      "hibernator (n)"
+    ],
+    "collocations": [
+      "hibernate in winter",
+      "hibernate through winter"
+    ],
+    "synonyms": [
+      "winter sleep"
+    ],
+    "antonyms": [
+      "estivate"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "hibernate in the winter",
+        "correct": "hibernate in winter",
+        "explain_vi": "Không dùng mạo từ 'the' trước winter trong ngữ cảnh chung"
+      }
+    ],
+    "grammar_patterns": [
+      "hibernate + during/in + season"
+    ]
+  },
+  {
+    "word": "estivate",
+    "phonetic": "/ˈes.tɪ.veɪt/",
+    "meaning_vi": "ngủ hè",
+    "meaning_en": "to spend the summer in a state of inactivity",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "Some snails estivate to survive dry periods.",
+        "vi": "Một số loài ốc ngủ hè để sống sót qua thời kỳ khô hạn."
+      }
+    ],
+    "word_family": [
+      "estivation (n)"
+    ],
+    "collocations": [
+      "estivate during drought",
+      "estivate in summer"
+    ],
+    "synonyms": [
+      "summer sleep"
+    ],
+    "antonyms": [
+      "hibernate"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "estivate in the summer",
+        "correct": "estivate in summer",
+        "explain_vi": "Tương tự hibernate, không dùng 'the'"
+      }
+    ],
+    "grammar_patterns": [
+      "estivate + during/in + season"
+    ]
+  },
+  {
+    "word": "camouflage",
+    "phonetic": "/ˈkæm.ə.flɑːʒ/",
+    "meaning_vi": "ngụy trang",
+    "meaning_en": "the ability to blend in with the environment",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The chameleon's camouflage helps it avoid predators.",
+        "vi": "Sự ngụy trang của tắc kè hoa giúp nó tránh kẻ săn mồi."
+      }
+    ],
+    "word_family": [
+      "camouflage (v)",
+      "camouflaged (adj)"
+    ],
+    "collocations": [
+      "natural camouflage",
+      "military camouflage",
+      "camouflage pattern"
+    ],
+    "synonyms": [
+      "disguise",
+      "concealment"
+    ],
+    "antonyms": [
+      "visibility"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "camouflage color",
+        "correct": "camouflage pattern",
+        "explain_vi": "Pattern là từ chính xác hơn color"
+      }
+    ],
+    "grammar_patterns": [
+      "camouflage + noun"
+    ]
+  },
+  {
+    "word": "symbiosis",
+    "phonetic": "/ˌsɪm.baɪˈoʊ.sɪs/",
+    "meaning_vi": "cộng sinh",
+    "meaning_en": "a close relationship between two species that benefits at least one",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The clownfish and sea anemone have a symbiosis.",
+        "vi": "Cá hề và hải quỳ có mối quan hệ cộng sinh."
+      }
+    ],
+    "word_family": [
+      "symbiotic (adj)",
+      "symbiotically (adv)"
+    ],
+    "collocations": [
+      "mutualistic symbiosis",
+      "symbiosis between"
+    ],
+    "synonyms": [
+      "mutualism"
+    ],
+    "antonyms": [
+      "parasitism"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "symbiosis relationship",
+        "correct": "symbiotic relationship",
+        "explain_vi": "Dùng tính từ symbiotic trước relationship"
+      }
+    ],
+    "grammar_patterns": [
+      "symbiosis + between + noun and noun"
+    ]
+  },
+  {
+    "word": "parasite",
+    "phonetic": "/ˈpær.ə.saɪt/",
+    "meaning_vi": "ký sinh trùng",
+    "meaning_en": "an organism that lives on or in another and benefits at its expense",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Tapeworms are parasites that live in the intestines.",
+        "vi": "Sán dây là ký sinh trùng sống trong ruột."
+      }
+    ],
+    "word_family": [
+      "parasitic (adj)",
+      "parasitism (n)"
+    ],
+    "collocations": [
+      "intestinal parasite",
+      "parasite infection",
+      "host-parasite"
+    ],
+    "synonyms": [
+      "parasitic organism"
+    ],
+    "antonyms": [
+      "host"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "parasite animal",
+        "correct": "parasite",
+        "explain_vi": "Parasite đã là danh từ"
+      }
+    ],
+    "grammar_patterns": [
+      "parasite + of/on + noun"
+    ]
+  },
+  {
+    "word": "pollination",
+    "phonetic": "/ˌpɒl.ɪˈneɪ.ʃən/",
+    "meaning_vi": "sự thụ phấn",
+    "meaning_en": "the transfer of pollen to a plant to enable fertilization",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Bees play a crucial role in pollination.",
+        "vi": "Ong đóng vai trò quan trọng trong sự thụ phấn."
+      }
+    ],
+    "word_family": [
+      "pollinate (v)",
+      "pollinator (n)"
+    ],
+    "collocations": [
+      "cross-pollination",
+      "pollination process",
+      "pollination service"
+    ],
+    "synonyms": [
+      "fertilization"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "pollination of flowers",
+        "correct": "pollination of flowers",
+        "explain_vi": "Cụm từ đúng, nhưng thường dùng 'pollination in plants'"
+      }
+    ],
+    "grammar_patterns": [
+      "pollination + by + noun"
+    ]
+  },
+  {
+    "word": "deforestation",
+    "phonetic": "/diːˌfɒr.ɪˈsteɪ.ʃən/",
+    "meaning_vi": "phá rừng",
+    "meaning_en": "the removal of trees from a forest",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Deforestation leads to loss of biodiversity.",
+        "vi": "Phá rừng dẫn đến mất đa dạng sinh học."
+      }
+    ],
+    "word_family": [
+      "deforest (v)"
+    ],
+    "collocations": [
+      "deforestation rate",
+      "deforestation impact",
+      "deforestation causes"
+    ],
+    "synonyms": [
+      "clearcutting",
+      "forest clearance"
+    ],
+    "antonyms": [
+      "reforestation"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "deforestation of forest",
+        "correct": "deforestation",
+        "explain_vi": "Deforestation đã bao hàm forest"
+      }
+    ],
+    "grammar_patterns": [
+      "deforestation + of + noun"
+    ]
+  },
+  {
+    "word": "reforestation",
+    "phonetic": "/riːˌfɒr.ɪˈsteɪ.ʃən/",
+    "meaning_vi": "trồng lại rừng",
+    "meaning_en": "the process of replanting trees in a deforested area",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Reforestation helps restore ecosystems.",
+        "vi": "Trồng lại rừng giúp phục hồi hệ sinh thái."
+      }
+    ],
+    "word_family": [
+      "reforest (v)"
+    ],
+    "collocations": [
+      "reforestation project",
+      "reforestation effort",
+      "reforestation program"
+    ],
+    "synonyms": [
+      "afforestation"
+    ],
+    "antonyms": [
+      "deforestation"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "reforestation of trees",
+        "correct": "reforestation",
+        "explain_vi": "Reforestation đã bao hàm trồng cây"
+      }
+    ],
+    "grammar_patterns": [
+      "reforestation + of + noun"
+    ]
+  },
+  {
+    "word": "endemic",
+    "phonetic": "/enˈdem.ɪk/",
+    "meaning_vi": "đặc hữu",
+    "meaning_en": "native to a particular area and not found elsewhere",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The kiwi bird is endemic to New Zealand.",
+        "vi": "Chim kiwi là loài đặc hữu của New Zealand."
+      }
+    ],
+    "word_family": [
+      "endemism (n)"
+    ],
+    "collocations": [
+      "endemic species",
+      "endemic to",
+      "endemic region"
+    ],
+    "synonyms": [
+      "native",
+      "indigenous"
+    ],
+    "antonyms": [
+      "introduced",
+      "exotic"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "endemic animal",
+        "correct": "endemic species",
+        "explain_vi": "Species là từ chính xác hơn animal"
+      }
+    ],
+    "grammar_patterns": [
+      "endemic + to + noun"
+    ]
+  },
+  {
+    "word": "arboreal",
+    "phonetic": "/ɑːrˈbɔː.ri.əl/",
+    "meaning_vi": "sống trên cây",
+    "meaning_en": "living in trees",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "Monkeys are arboreal animals.",
+        "vi": "Khỉ là động vật sống trên cây."
+      }
+    ],
+    "word_family": [
+      "arboreally (adv)"
+    ],
+    "collocations": [
+      "arboreal habitat",
+      "arboreal species",
+      "arboreal lifestyle"
+    ],
+    "synonyms": [
+      "tree-dwelling"
+    ],
+    "antonyms": [
+      "terrestrial"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "arboreal animal",
+        "correct": "arboreal animal",
+        "explain_vi": "Cụm từ đúng, nhưng lưu ý phát âm"
+      }
+    ],
+    "grammar_patterns": [
+      "arboreal + noun"
+    ]
+  },
+  {
+    "word": "migration",
+    "phonetic": "/maɪˈɡreɪ.ʃən/",
+    "meaning_vi": "sự di cư",
+    "meaning_en": "the movement of animals from one place to another",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The migration of wildebeest occurs annually.",
+        "vi": "Sự di cư của linh dương đầu bò diễn ra hàng năm."
+      }
+    ],
+    "word_family": [
+      "migrate (v)",
+      "migratory (adj)"
+    ],
+    "collocations": [
+      "bird migration",
+      "seasonal migration",
+      "migration pattern"
+    ],
+    "synonyms": [
+      "movement",
+      "relocation"
+    ],
+    "antonyms": [
+      "sedentariness"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "migration of birds",
+        "correct": "bird migration",
+        "explain_vi": "Dạng ghép bird migration phổ biến hơn"
+      }
+    ],
+    "grammar_patterns": [
+      "migration + of + noun"
+    ]
+  },
+  {
+    "word": "nocturnal",
+    "phonetic": "/nɒkˈtɜːr.nəl/",
+    "meaning_vi": "hoạt động về đêm",
+    "meaning_en": "active at night",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "Owls are nocturnal birds of prey.",
+        "vi": "Cú là loài chim săn mồi hoạt động về đêm."
+      }
+    ],
+    "word_family": [
+      "nocturnally (adv)",
+      "nocturnal (n)"
+    ],
+    "collocations": [
+      "nocturnal animal",
+      "nocturnal behavior",
+      "nocturnal activity"
+    ],
+    "synonyms": [
+      "night-active"
+    ],
+    "antonyms": [
+      "diurnal"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "nocturnal animal",
+        "correct": "nocturnal animal",
+        "explain_vi": "Cụm từ đúng"
+      }
+    ],
+    "grammar_patterns": [
+      "nocturnal + noun"
+    ]
+  },
+  {
+    "word": "biodiversity",
+    "phonetic": "/ˌbaɪoʊdaɪˈvɜːrsəti/",
+    "meaning_vi": "đa dạng sinh học",
+    "meaning_en": "the variety of plant and animal life in a particular habitat",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Tropical rainforests have high biodiversity.",
+        "vi": "Rừng mưa nhiệt đới có đa dạng sinh học cao."
+      }
+    ],
+    "word_family": [
+      "biodiverse (adj)"
+    ],
+    "collocations": [
+      "high biodiversity",
+      "loss of biodiversity",
+      "maintain biodiversity"
+    ],
+    "synonyms": [
+      "biological diversity"
+    ],
+    "antonyms": [
+      "monoculture"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "biodiversity is important for ecosystem",
+        "correct": "biodiversity is important for ecosystems",
+        "explain_vi": "Cần dùng số nhiều 'ecosystems' hoặc thêm mạo từ"
+      }
+    ],
+    "grammar_patterns": [
+      "uncountable noun"
+    ]
+  },
+  {
+    "word": "conservation",
+    "phonetic": "/ˌkɑːnsərˈveɪʃn/",
+    "meaning_vi": "bảo tồn",
+    "meaning_en": "the protection of plants, animals, and natural areas",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Conservation efforts have saved many species.",
+        "vi": "Những nỗ lực bảo tồn đã cứu nhiều loài."
+      }
+    ],
+    "word_family": [
+      "conserve (v)",
+      "conservationist (n)"
+    ],
+    "collocations": [
+      "wildlife conservation",
+      "conservation area",
+      "conservation project"
+    ],
+    "synonyms": [
+      "preservation",
+      "protection"
+    ],
+    "antonyms": [
+      "destruction"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "conservation of forest",
+        "correct": "forest conservation",
+        "explain_vi": "Thứ tự từ: danh từ đứng trước danh từ bổ nghĩa"
+      }
+    ],
+    "grammar_patterns": [
+      "uncountable noun"
+    ]
+  },
+  {
+    "word": "endangered",
+    "phonetic": "/ɪnˈdeɪndʒərd/",
+    "meaning_vi": "có nguy cơ tuyệt chủng",
+    "meaning_en": "at risk of extinction",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The giant panda is an endangered species.",
+        "vi": "Gấu trúc lớn là loài có nguy cơ tuyệt chủng."
+      }
+    ],
+    "word_family": [
+      "endanger (v)",
+      "endangerment (n)"
+    ],
+    "collocations": [
+      "endangered species",
+      "endangered animal",
+      "critically endangered"
+    ],
+    "synonyms": [
+      "threatened",
+      "at risk"
+    ],
+    "antonyms": [
+      "safe",
+      "abundant"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "endangered animal is rare",
+        "correct": "endangered animals are rare",
+        "explain_vi": "Sai số: 'animal' phải là 'animals' vì chủ ngữ số nhiều"
+      }
+    ],
+    "grammar_patterns": [
+      "used before nouns"
+    ]
+  },
+  {
+    "word": "extinction",
+    "phonetic": "/ɪkˈstɪŋkʃn/",
+    "meaning_vi": "sự tuyệt chủng",
+    "meaning_en": "the state of no longer existing",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Many species are facing extinction.",
+        "vi": "Nhiều loài đang đối mặt với tuyệt chủng."
+      }
+    ],
+    "word_family": [
+      "extinct (adj)",
+      "extinguish (v)"
+    ],
+    "collocations": [
+      "face extinction",
+      "mass extinction",
+      "on the brink of extinction"
+    ],
+    "synonyms": [
+      "dying out",
+      "disappearance"
+    ],
+    "antonyms": [
+      "survival"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "extinction of dinosaur",
+        "correct": "extinction of dinosaurs",
+        "explain_vi": "Dùng số nhiều 'dinosaurs' vì nói chung"
+      }
+    ],
+    "grammar_patterns": [
+      "uncountable noun"
+    ]
+  },
+  {
+    "word": "migration",
+    "phonetic": "/maɪˈɡreɪʃn/",
+    "meaning_vi": "sự di cư",
+    "meaning_en": "the seasonal movement of animals from one region to another",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Bird migration happens twice a year.",
+        "vi": "Sự di cư của chim diễn ra hai lần một năm."
+      }
+    ],
+    "word_family": [
+      "migrate (v)",
+      "migratory (adj)"
+    ],
+    "collocations": [
+      "annual migration",
+      "migration route",
+      "migration pattern"
+    ],
+    "synonyms": [
+      "movement",
+      "travel"
+    ],
+    "antonyms": [
+      "settlement"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "migration of bird",
+        "correct": "bird migration",
+        "explain_vi": "Cấu trúc sở hữu: dùng danh từ ghép"
+      }
+    ],
+    "grammar_patterns": [
+      "uncountable noun"
+    ]
+  },
+  {
+    "word": "nocturnal",
+    "phonetic": "/nɑːkˈtɜːrnl/",
+    "meaning_vi": "hoạt động về đêm",
+    "meaning_en": "active at night",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "Owls are nocturnal birds.",
+        "vi": "Cú là loài chim hoạt động về đêm."
+      }
+    ],
+    "word_family": [
+      "nocturnally (adv)"
+    ],
+    "collocations": [
+      "nocturnal animal",
+      "nocturnal behavior",
+      "nocturnal activity"
+    ],
+    "synonyms": [
+      "nighttime",
+      "night-active"
+    ],
+    "antonyms": [
+      "diurnal"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "nocturnal animals active at night",
+        "correct": "nocturnal animals are active at night",
+        "explain_vi": "Thiếu động từ 'are'"
+      }
+    ],
+    "grammar_patterns": [
+      "used before nouns"
+    ]
+  },
+  {
+    "word": "diurnal",
+    "phonetic": "/daɪˈɜːrnl/",
+    "meaning_vi": "hoạt động ban ngày",
+    "meaning_en": "active during the day",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "Humans are diurnal creatures.",
+        "vi": "Con người là sinh vật hoạt động ban ngày."
+      }
+    ],
+    "word_family": [
+      "diurnally (adv)"
+    ],
+    "collocations": [
+      "diurnal animal",
+      "diurnal rhythm",
+      "diurnal activity"
+    ],
+    "synonyms": [
+      "daytime",
+      "day-active"
+    ],
+    "antonyms": [
+      "nocturnal"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "diurnal animals active during day",
+        "correct": "diurnal animals are active during the day",
+        "explain_vi": "Thiếu 'are' và mạo từ 'the'"
+      }
+    ],
+    "grammar_patterns": [
+      "used before nouns"
+    ]
+  },
+  {
+    "word": "camouflage",
+    "phonetic": "/ˈkæməflɑːʒ/",
+    "meaning_vi": "ngụy trang",
+    "meaning_en": "the use of colors or patterns to blend in with the environment",
+    "pos": "noun/verb",
+    "examples": [
+      {
+        "en": "The chameleon uses camouflage to hide.",
+        "vi": "Tắc kè hoa dùng ngụy trang để ẩn nấp."
+      }
+    ],
+    "word_family": [
+      "camouflaged (adj)"
+    ],
+    "collocations": [
+      "natural camouflage",
+      "camouflage pattern",
+      "use camouflage"
+    ],
+    "synonyms": [
+      "disguise",
+      "concealment"
+    ],
+    "antonyms": [
+      "visibility"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "camouflage color",
+        "correct": "camouflage colors",
+        "explain_vi": "Dùng số nhiều vì có nhiều màu"
+      }
+    ],
+    "grammar_patterns": [
+      "uncountable noun",
+      "transitive verb"
+    ]
+  },
+  {
+    "word": "symbiosis",
+    "phonetic": "/ˌsɪmbaɪˈoʊsɪs/",
+    "meaning_vi": "cộng sinh",
+    "meaning_en": "a close relationship between two different organisms that benefits both",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Clownfish and sea anemones have a symbiosis.",
+        "vi": "Cá hề và hải quỳ có mối quan hệ cộng sinh."
+      }
+    ],
+    "word_family": [
+      "symbiotic (adj)",
+      "symbiotically (adv)"
+    ],
+    "collocations": [
+      "mutual symbiosis",
+      "form a symbiosis",
+      "symbiosis relationship"
+    ],
+    "synonyms": [
+      "mutualism"
+    ],
+    "antonyms": [
+      "parasitism"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "symbiosis between two animal",
+        "correct": "symbiosis between two animals",
+        "explain_vi": "Dùng số nhiều 'animals'"
+      }
+    ],
+    "grammar_patterns": [
+      "uncountable noun"
+    ]
+  },
+  {
+    "word": "parasite",
+    "phonetic": "/ˈpærəsaɪt/",
+    "meaning_vi": "ký sinh trùng",
+    "meaning_en": "an organism that lives on or in another and benefits at the host's expense",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Tapeworms are parasites in the intestine.",
+        "vi": "Sán dây là ký sinh trùng trong ruột."
+      }
+    ],
+    "word_family": [
+      "parasitic (adj)",
+      "parasitism (n)"
+    ],
+    "collocations": [
+      "intestinal parasite",
+      "parasite infection",
+      "host and parasite"
+    ],
+    "synonyms": [
+      "pest",
+      "leech"
+    ],
+    "antonyms": [
+      "host"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "parasite is harmful for host",
+        "correct": "parasites are harmful to the host",
+        "explain_vi": "Sai số và giới từ: 'to' thay vì 'for'"
+      }
+    ],
+    "grammar_patterns": [
+      "countable noun"
+    ]
+  },
+  {
+    "word": "pollination",
+    "phonetic": "/ˌpɑːlɪˈneɪʃn/",
+    "meaning_vi": "sự thụ phấn",
+    "meaning_en": "the transfer of pollen to a plant to enable fertilization",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Bees are important for pollination.",
+        "vi": "Ong rất quan trọng cho sự thụ phấn."
+      }
+    ],
+    "word_family": [
+      "pollinate (v)",
+      "pollinator (n)"
+    ],
+    "collocations": [
+      "cross-pollination",
+      "pollination process",
+      "insect pollination"
+    ],
+    "synonyms": [
+      "fertilization"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "pollination of flower",
+        "correct": "pollination of flowers",
+        "explain_vi": "Dùng số nhiều 'flowers'"
+      }
+    ],
+    "grammar_patterns": [
+      "uncountable noun"
+    ]
+  },
+  {
+    "word": "deforestation",
+    "phonetic": "/ˌdiːˌfɔːrɪˈsteɪʃn/",
+    "meaning_vi": "phá rừng",
+    "meaning_en": "the clearing of forests",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Deforestation leads to loss of habitat.",
+        "vi": "Phá rừng dẫn đến mất môi trường sống."
+      }
+    ],
+    "word_family": [
+      "deforest (v)"
+    ],
+    "collocations": [
+      "massive deforestation",
+      "deforestation rate",
+      "stop deforestation"
+    ],
+    "synonyms": [
+      "clearing",
+      "logging"
+    ],
+    "antonyms": [
+      "reforestation"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "deforestation cause climate change",
+        "correct": "deforestation causes climate change",
+        "explain_vi": "Sai động từ: 'causes' thay vì 'cause'"
+      }
+    ],
+    "grammar_patterns": [
+      "uncountable noun"
+    ]
+  },
+  {
+    "word": "reforestation",
+    "phonetic": "/ˌriːˌfɔːrɪˈsteɪʃn/",
+    "meaning_vi": "trồng rừng lại",
+    "meaning_en": "the process of replanting trees in a deforested area",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Reforestation helps restore ecosystems.",
+        "vi": "Trồng rừng lại giúp phục hồi hệ sinh thái."
+      }
+    ],
+    "word_family": [
+      "reforest (v)"
+    ],
+    "collocations": [
+      "reforestation project",
+      "reforestation effort",
+      "reforestation program"
+    ],
+    "synonyms": [
+      "tree planting"
+    ],
+    "antonyms": [
+      "deforestation"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "reforestation is planting tree",
+        "correct": "reforestation is planting trees",
+        "explain_vi": "Dùng số nhiều 'trees'"
+      }
+    ],
+    "grammar_patterns": [
+      "uncountable noun"
+    ]
+  },
+  {
+    "word": "adaptation",
+    "phonetic": "/ˌædæpˈteɪʃn/",
+    "meaning_vi": "sự thích nghi",
+    "meaning_en": "a change or adjustment to new conditions",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Camouflage is an adaptation for survival.",
+        "vi": "Ngụy trang là sự thích nghi để sinh tồn."
+      }
+    ],
+    "word_family": [
+      "adapt (v)",
+      "adaptive (adj)"
+    ],
+    "collocations": [
+      "evolutionary adaptation",
+      "adaptation to climate",
+      "physical adaptation"
+    ],
+    "synonyms": [
+      "adjustment",
+      "acclimatization"
+    ],
+    "antonyms": [
+      "maladaptation"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "adaptation of animal",
+        "correct": "adaptation of animals",
+        "explain_vi": "Dùng số nhiều 'animals' khi nói chung"
+      }
+    ],
+    "grammar_patterns": [
+      "countable/uncountable noun"
+    ]
+  },
+  {
+    "word": "biodiverse",
+    "phonetic": "/ˌbaɪoʊdaɪˈvɜːrs/",
+    "meaning_vi": "đa dạng sinh học (tính từ)",
+    "meaning_en": "having a variety of plants and animals",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "Coral reefs are biodiverse ecosystems.",
+        "vi": "Rạn san hô là hệ sinh thái đa dạng sinh học."
+      }
+    ],
+    "word_family": [
+      "biodiversity (n)"
+    ],
+    "collocations": [
+      "biodiverse region",
+      "highly biodiverse",
+      "biodiverse habitat"
+    ],
+    "synonyms": [
+      "species-rich"
+    ],
+    "antonyms": [
+      "species-poor"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "biodiverse area has many species",
+        "correct": "a biodiverse area has many species",
+        "explain_vi": "Thiếu mạo từ 'a'"
+      }
+    ],
+    "grammar_patterns": [
+      "used before nouns"
+    ]
+  },
+  {
+    "word": "canopy",
+    "phonetic": "/ˈkænəpi/",
+    "meaning_vi": "tán rừng",
+    "meaning_en": "the upper layer of a forest formed by tree crowns",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Monkeys live in the forest canopy.",
+        "vi": "Khỉ sống trên tán rừng."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "forest canopy",
+      "canopy layer",
+      "canopy cover"
+    ],
+    "synonyms": [
+      "treetop"
+    ],
+    "antonyms": [
+      "forest floor"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "canopy of tree",
+        "correct": "canopy of trees",
+        "explain_vi": "Dùng số nhiều 'trees'"
+      }
+    ],
+    "grammar_patterns": [
+      "countable noun"
+    ]
+  },
+  {
+    "word": "carnivore",
+    "phonetic": "/ˈkɑːrnɪvɔːr/",
+    "meaning_vi": "động vật ăn thịt",
+    "meaning_en": "an animal that eats meat",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Lions are carnivores.",
+        "vi": "Sư tử là động vật ăn thịt."
+      }
+    ],
+    "word_family": [
+      "carnivorous (adj)",
+      "carnivory (n)"
+    ],
+    "collocations": [
+      "obligate carnivore",
+      "top carnivore",
+      "carnivore diet"
+    ],
+    "synonyms": [
+      "predator",
+      "meat-eater"
+    ],
+    "antonyms": [
+      "herbivore"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "carnivore animal",
+        "correct": "carnivorous animal",
+        "explain_vi": "Carnivore là danh từ, cần dùng tính từ 'carnivorous' trước 'animal'"
+      }
+    ],
+    "grammar_patterns": [
+      "countable noun"
+    ]
+  },
+  {
+    "word": "herbivore",
+    "phonetic": "/ˈhɜːrbɪvɔːr/",
+    "meaning_vi": "động vật ăn cỏ",
+    "meaning_en": "an animal that eats plants",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Cows are herbivores.",
+        "vi": "Bò là động vật ăn cỏ."
+      }
+    ],
+    "word_family": [
+      "herbivorous (adj)",
+      "herbivory (n)"
+    ],
+    "collocations": [
+      "large herbivore",
+      "herbivore species",
+      "herbivore diet"
+    ],
+    "synonyms": [
+      "plant-eater"
+    ],
+    "antonyms": [
+      "carnivore"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "herbivore animal",
+        "correct": "herbivorous animal",
+        "explain_vi": "Carnivore là danh từ, cần dùng tính từ 'herbivorous' trước 'animal'"
+      }
+    ],
+    "grammar_patterns": [
+      "countable noun"
+    ]
+  },
+  {
+    "word": "omnivore",
+    "phonetic": "/ˈɑːmnɪvɔːr/",
+    "meaning_vi": "động vật ăn tạp",
+    "meaning_en": "an animal that eats both plants and meat",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Bears are omnivores.",
+        "vi": "Gấu là động vật ăn tạp."
+      }
+    ],
+    "word_family": [
+      "omnivorous (adj)",
+      "omnivory (n)"
+    ],
+    "collocations": [
+      "opportunistic omnivore",
+      "omnivore diet"
+    ],
+    "synonyms": [
+      "generalist"
+    ],
+    "antonyms": [
+      "specialist"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "omnivore animal",
+        "correct": "omnivorous animal",
+        "explain_vi": "Carnivore là danh từ, cần dùng tính từ 'omnivorous' trước 'animal'"
+      }
+    ],
+    "grammar_patterns": [
+      "countable noun"
+    ]
+  },
+  {
+    "word": "aquatic",
+    "phonetic": "/əˈkwɑːtɪk/",
+    "meaning_vi": "dưới nước",
+    "meaning_en": "relating to water",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "Dolphins are aquatic mammals.",
+        "vi": "Cá heo là động vật có vú dưới nước."
+      }
+    ],
+    "word_family": [
+      "aquatically (adv)"
+    ],
+    "collocations": [
+      "aquatic life",
+      "aquatic habitat",
+      "aquatic ecosystem"
+    ],
+    "synonyms": [
+      "marine",
+      "freshwater"
+    ],
+    "antonyms": [
+      "terrestrial"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "aquatic animal live in water",
+        "correct": "aquatic animals live in water",
+        "explain_vi": "Sai số: 'animal' phải là 'animals'"
+      }
+    ],
+    "grammar_patterns": [
+      "used before nouns"
+    ]
+  }
+]

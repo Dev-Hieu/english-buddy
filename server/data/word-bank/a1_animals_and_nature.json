@@ -1,0 +1,1490 @@
+[
+  {
+    "word": "dog",
+    "phonetic": "/dɒɡ/",
+    "meaning_vi": "con chó",
+    "meaning_en": "a common domestic animal",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The dog is running.",
+        "vi": "Con chó đang chạy."
+      }
+    ],
+    "word_family": [
+      "dog (n)"
+    ],
+    "collocations": [
+      "pet dog",
+      "walk the dog",
+      "dog food"
+    ],
+    "synonyms": [
+      "canine"
+    ],
+    "antonyms": [
+      "cat"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I have dog",
+        "correct": "I have a dog",
+        "explain_vi": "Thiếu mạo từ 'a' trước danh từ đếm được số ít"
+      }
+    ],
+    "grammar_patterns": [
+      "a dog",
+      "the dog",
+      "dogs"
+    ]
+  },
+  {
+    "word": "cat",
+    "phonetic": "/kæt/",
+    "meaning_vi": "con mèo",
+    "meaning_en": "a small domestic animal",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The cat is sleeping.",
+        "vi": "Con mèo đang ngủ."
+      }
+    ],
+    "word_family": [
+      "cat (n)",
+      "kitten (n)"
+    ],
+    "collocations": [
+      "pet cat",
+      "black cat",
+      "cat food"
+    ],
+    "synonyms": [
+      "feline"
+    ],
+    "antonyms": [
+      "dog"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I like cat",
+        "correct": "I like cats",
+        "explain_vi": "Dùng số nhiều khi nói chung"
+      }
+    ],
+    "grammar_patterns": [
+      "a cat",
+      "the cat",
+      "cats"
+    ]
+  },
+  {
+    "word": "tree",
+    "phonetic": "/triː/",
+    "meaning_vi": "cây",
+    "meaning_en": "a tall plant with a trunk and branches",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "There is a tree in the garden.",
+        "vi": "Có một cái cây trong vườn."
+      }
+    ],
+    "word_family": [
+      "tree (n)",
+      "treeless (adj)"
+    ],
+    "collocations": [
+      "climb a tree",
+      "plant a tree",
+      "tree branch"
+    ],
+    "synonyms": [
+      "plant"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I am tree",
+        "correct": "I am a tree",
+        "explain_vi": "Thiếu mạo từ 'a'"
+      }
+    ],
+    "grammar_patterns": [
+      "a tree",
+      "the tree",
+      "trees"
+    ]
+  },
+  {
+    "word": "flower",
+    "phonetic": "/ˈflaʊ.ər/",
+    "meaning_vi": "hoa",
+    "meaning_en": "the colorful part of a plant",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The flower is beautiful.",
+        "vi": "Bông hoa thật đẹp."
+      }
+    ],
+    "word_family": [
+      "flower (n)",
+      "flower (v)",
+      "flowery (adj)"
+    ],
+    "collocations": [
+      "pick flowers",
+      "flower garden",
+      "wild flower"
+    ],
+    "synonyms": [
+      "bloom",
+      "blossom"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I like flower",
+        "correct": "I like flowers",
+        "explain_vi": "Dùng số nhiều khi nói chung"
+      }
+    ],
+    "grammar_patterns": [
+      "a flower",
+      "the flower",
+      "flowers"
+    ]
+  },
+  {
+    "word": "bird",
+    "phonetic": "/bɜːrd/",
+    "meaning_vi": "con chim",
+    "meaning_en": "an animal with feathers and wings",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The bird can fly.",
+        "vi": "Con chim có thể bay."
+      }
+    ],
+    "word_family": [
+      "bird (n)",
+      "birdie (n)"
+    ],
+    "collocations": [
+      "bird song",
+      "bird watching",
+      "baby bird"
+    ],
+    "synonyms": [
+      "avian"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Bird is flying",
+        "correct": "The bird is flying",
+        "explain_vi": "Thiếu mạo từ 'the'"
+      }
+    ],
+    "grammar_patterns": [
+      "a bird",
+      "the bird",
+      "birds"
+    ]
+  },
+  {
+    "word": "fish",
+    "phonetic": "/fɪʃ/",
+    "meaning_vi": "con cá",
+    "meaning_en": "an animal that lives in water",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I see a fish.",
+        "vi": "Tôi thấy một con cá."
+      }
+    ],
+    "word_family": [
+      "fish (n)",
+      "fish (v)",
+      "fishing (n)"
+    ],
+    "collocations": [
+      "catch fish",
+      "fish tank",
+      "fresh fish"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Fishes are swimming",
+        "correct": "Fish are swimming",
+        "explain_vi": "Fish là số nhiều không đổi"
+      }
+    ],
+    "grammar_patterns": [
+      "a fish",
+      "the fish",
+      "fish (plural)"
+    ]
+  },
+  {
+    "word": "sun",
+    "phonetic": "/sʌn/",
+    "meaning_vi": "mặt trời",
+    "meaning_en": "the star that gives light and heat",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The sun is hot.",
+        "vi": "Mặt trời nóng."
+      }
+    ],
+    "word_family": [
+      "sun (n)",
+      "sunny (adj)",
+      "sunlight (n)"
+    ],
+    "collocations": [
+      "the sun rises",
+      "the sun sets",
+      "sun rays"
+    ],
+    "synonyms": [
+      "star"
+    ],
+    "antonyms": [
+      "moon"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Sun is bright",
+        "correct": "The sun is bright",
+        "explain_vi": "Thiếu mạo từ 'the'"
+      }
+    ],
+    "grammar_patterns": [
+      "the sun"
+    ]
+  },
+  {
+    "word": "moon",
+    "phonetic": "/muːn/",
+    "meaning_vi": "mặt trăng",
+    "meaning_en": "the natural satellite of Earth",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The moon is full tonight.",
+        "vi": "Trăng tròn tối nay."
+      }
+    ],
+    "word_family": [
+      "moon (n)",
+      "moonlight (n)",
+      "moon (v)"
+    ],
+    "collocations": [
+      "full moon",
+      "new moon",
+      "moon landing"
+    ],
+    "synonyms": [
+      "satellite"
+    ],
+    "antonyms": [
+      "sun"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Moon is beautiful",
+        "correct": "The moon is beautiful",
+        "explain_vi": "Thiếu mạo từ 'the'"
+      }
+    ],
+    "grammar_patterns": [
+      "the moon"
+    ]
+  },
+  {
+    "word": "star",
+    "phonetic": "/stɑːr/",
+    "meaning_vi": "ngôi sao",
+    "meaning_en": "a bright point in the night sky",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I can see a star.",
+        "vi": "Tôi có thể thấy một ngôi sao."
+      }
+    ],
+    "word_family": [
+      "star (n)",
+      "starry (adj)",
+      "starfish (n)"
+    ],
+    "collocations": [
+      "shooting star",
+      "star light",
+      "north star"
+    ],
+    "synonyms": [
+      "celestial body"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I see star",
+        "correct": "I see a star",
+        "explain_vi": "Thiếu mạo từ 'a'"
+      }
+    ],
+    "grammar_patterns": [
+      "a star",
+      "the star",
+      "stars"
+    ]
+  },
+  {
+    "word": "water",
+    "phonetic": "/ˈwɔː.tər/",
+    "meaning_vi": "nước",
+    "meaning_en": "a clear liquid essential for life",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I drink water.",
+        "vi": "Tôi uống nước."
+      }
+    ],
+    "word_family": [
+      "water (n)",
+      "water (v)",
+      "watery (adj)"
+    ],
+    "collocations": [
+      "drink water",
+      "clean water",
+      "water bottle"
+    ],
+    "synonyms": [
+      "H2O"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I want waters",
+        "correct": "I want water",
+        "explain_vi": "Water là danh từ không đếm được"
+      }
+    ],
+    "grammar_patterns": [
+      "water (uncountable)"
+    ]
+  },
+  {
+    "word": "sky",
+    "phonetic": "/skaɪ/",
+    "meaning_vi": "bầu trời",
+    "meaning_en": "the space above the earth",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The sky is blue.",
+        "vi": "Bầu trời xanh."
+      }
+    ],
+    "word_family": [
+      "sky (n)",
+      "sky (v)",
+      "skylight (n)"
+    ],
+    "collocations": [
+      "blue sky",
+      "night sky",
+      "sky dive"
+    ],
+    "synonyms": [
+      "heavens"
+    ],
+    "antonyms": [
+      "ground"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Sky is cloudy",
+        "correct": "The sky is cloudy",
+        "explain_vi": "Thiếu mạo từ 'the'"
+      }
+    ],
+    "grammar_patterns": [
+      "the sky"
+    ]
+  },
+  {
+    "word": "rain",
+    "phonetic": "/reɪn/",
+    "meaning_vi": "mưa",
+    "meaning_en": "water falling from clouds",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "It is raining.",
+        "vi": "Trời đang mưa."
+      }
+    ],
+    "word_family": [
+      "rain (n)",
+      "rain (v)",
+      "rainy (adj)"
+    ],
+    "collocations": [
+      "heavy rain",
+      "rain coat",
+      "rain drop"
+    ],
+    "synonyms": [
+      "precipitation"
+    ],
+    "antonyms": [
+      "sunshine"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "There is rain",
+        "correct": "It is raining",
+        "explain_vi": "Dùng 'it is raining' để diễn tả mưa đang xảy ra"
+      }
+    ],
+    "grammar_patterns": [
+      "rain (uncountable)",
+      "it rains"
+    ]
+  },
+  {
+    "word": "snow",
+    "phonetic": "/snoʊ/",
+    "meaning_vi": "tuyết",
+    "meaning_en": "frozen water falling as white flakes",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "It is snowing.",
+        "vi": "Trời đang có tuyết."
+      }
+    ],
+    "word_family": [
+      "snow (n)",
+      "snow (v)",
+      "snowy (adj)"
+    ],
+    "collocations": [
+      "heavy snow",
+      "snow ball",
+      "snow man"
+    ],
+    "synonyms": [
+      "flurries"
+    ],
+    "antonyms": [
+      "rain"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "There is snow",
+        "correct": "It is snowing",
+        "explain_vi": "Dùng 'it is snowing' để diễn tả tuyết đang rơi"
+      }
+    ],
+    "grammar_patterns": [
+      "snow (uncountable)",
+      "it snows"
+    ]
+  },
+  {
+    "word": "wind",
+    "phonetic": "/wɪnd/",
+    "meaning_vi": "gió",
+    "meaning_en": "moving air",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The wind is strong.",
+        "vi": "Gió mạnh."
+      }
+    ],
+    "word_family": [
+      "wind (n)",
+      "windy (adj)",
+      "wind (v)"
+    ],
+    "collocations": [
+      "strong wind",
+      "wind speed",
+      "wind power"
+    ],
+    "synonyms": [
+      "breeze"
+    ],
+    "antonyms": [
+      "calm"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Wind is blowing",
+        "correct": "The wind is blowing",
+        "explain_vi": "Thiếu mạo từ 'the'"
+      }
+    ],
+    "grammar_patterns": [
+      "the wind",
+      "wind (uncountable)"
+    ]
+  },
+  {
+    "word": "mountain",
+    "phonetic": "/ˈmaʊn.tɪn/",
+    "meaning_vi": "núi",
+    "meaning_en": "a large natural elevation of the earth's surface",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The mountain is high.",
+        "vi": "Ngọn núi cao."
+      }
+    ],
+    "word_family": [
+      "mountain (n)",
+      "mountainous (adj)",
+      "mountaineer (n)"
+    ],
+    "collocations": [
+      "climb a mountain",
+      "mountain top",
+      "mountain range"
+    ],
+    "synonyms": [
+      "peak",
+      "summit"
+    ],
+    "antonyms": [
+      "valley"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I go mountain",
+        "correct": "I go to the mountain",
+        "explain_vi": "Thiếu giới từ và mạo từ"
+      }
+    ],
+    "grammar_patterns": [
+      "a mountain",
+      "the mountain",
+      "mountains"
+    ]
+  },
+  {
+    "word": "river",
+    "phonetic": "/ˈrɪv.ər/",
+    "meaning_vi": "sông",
+    "meaning_en": "a large natural stream of water",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The river is long.",
+        "vi": "Con sông dài."
+      }
+    ],
+    "word_family": [
+      "river (n)",
+      "riverine (adj)",
+      "riverbank (n)"
+    ],
+    "collocations": [
+      "cross a river",
+      "river water",
+      "river side"
+    ],
+    "synonyms": [
+      "stream",
+      "creek"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I swim river",
+        "correct": "I swim in the river",
+        "explain_vi": "Thiếu giới từ và mạo từ"
+      }
+    ],
+    "grammar_patterns": [
+      "a river",
+      "the river",
+      "rivers"
+    ]
+  },
+  {
+    "word": "sea",
+    "phonetic": "/siː/",
+    "meaning_vi": "biển",
+    "meaning_en": "a large body of salt water",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The sea is blue.",
+        "vi": "Biển xanh."
+      }
+    ],
+    "word_family": [
+      "sea (n)",
+      "seaside (n)",
+      "seafood (n)"
+    ],
+    "collocations": [
+      "by the sea",
+      "sea water",
+      "sea level"
+    ],
+    "synonyms": [
+      "ocean"
+    ],
+    "antonyms": [
+      "land"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I go sea",
+        "correct": "I go to the sea",
+        "explain_vi": "Thiếu giới từ và mạo từ"
+      }
+    ],
+    "grammar_patterns": [
+      "the sea",
+      "sea (uncountable)"
+    ]
+  },
+  {
+    "word": "forest",
+    "phonetic": "/ˈfɒr.ɪst/",
+    "meaning_vi": "rừng",
+    "meaning_en": "a large area covered with trees",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The forest is dark.",
+        "vi": "Khu rừng tối."
+      }
+    ],
+    "word_family": [
+      "forest (n)",
+      "forested (adj)",
+      "forestry (n)"
+    ],
+    "collocations": [
+      "dense forest",
+      "forest fire",
+      "forest animal"
+    ],
+    "synonyms": [
+      "woods",
+      "jungle"
+    ],
+    "antonyms": [
+      "desert"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I walk forest",
+        "correct": "I walk in the forest",
+        "explain_vi": "Thiếu giới từ và mạo từ"
+      }
+    ],
+    "grammar_patterns": [
+      "a forest",
+      "the forest",
+      "forests"
+    ]
+  },
+  {
+    "word": "animal",
+    "phonetic": "/ˈæn.ɪ.məl/",
+    "meaning_vi": "động vật",
+    "meaning_en": "a living organism that is not a plant",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "That animal is big.",
+        "vi": "Con vật đó to."
+      }
+    ],
+    "word_family": [
+      "animal (n)",
+      "animalistic (adj)"
+    ],
+    "collocations": [
+      "wild animal",
+      "domestic animal",
+      "animal lover"
+    ],
+    "synonyms": [
+      "creature",
+      "beast"
+    ],
+    "antonyms": [
+      "plant"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Animal is running",
+        "correct": "The animal is running",
+        "explain_vi": "Thiếu mạo từ 'the'"
+      }
+    ],
+    "grammar_patterns": [
+      "an animal",
+      "the animal",
+      "animals"
+    ]
+  },
+  {
+    "word": "plant",
+    "phonetic": "/plænt/",
+    "meaning_vi": "cây cối",
+    "meaning_en": "a living organism that grows in earth",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I water the plant.",
+        "vi": "Tôi tưới cây."
+      }
+    ],
+    "word_family": [
+      "plant (n)",
+      "plant (v)",
+      "plantation (n)"
+    ],
+    "collocations": [
+      "water plants",
+      "plant pot",
+      "plant food"
+    ],
+    "synonyms": [
+      "vegetation"
+    ],
+    "antonyms": [
+      "animal"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I have plant",
+        "correct": "I have a plant",
+        "explain_vi": "Thiếu mạo từ 'a'"
+      }
+    ],
+    "grammar_patterns": [
+      "a plant",
+      "the plant",
+      "plants"
+    ]
+  },
+  {
+    "word": "grass",
+    "phonetic": "/ɡrɑːs/",
+    "meaning_vi": "cỏ",
+    "meaning_en": "plants with narrow green leaves, covering the ground",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The grass is green.",
+        "vi": "Cỏ màu xanh."
+      }
+    ],
+    "word_family": [
+      "grassy (adj)"
+    ],
+    "collocations": [
+      "green grass",
+      "cut the grass",
+      "lie on the grass"
+    ],
+    "synonyms": [
+      "lawn"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I see a grass.",
+        "correct": "I see grass.",
+        "explain_vi": "Grass là danh từ không đếm được, không dùng 'a'."
+      }
+    ],
+    "grammar_patterns": [
+      "uncountable, no article"
+    ]
+  },
+  {
+    "word": "leaf",
+    "phonetic": "/liːf/",
+    "meaning_vi": "lá cây",
+    "meaning_en": "a flat green part of a plant or tree",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The leaf falls in autumn.",
+        "vi": "Lá rụng vào mùa thu."
+      }
+    ],
+    "word_family": [
+      "leaves (plural)",
+      "leafy (adj)"
+    ],
+    "collocations": [
+      "green leaf",
+      "leaf of a tree",
+      "fall leaves"
+    ],
+    "synonyms": [
+      "foliage"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "a leafs",
+        "correct": "a leaf (singular); leaves (plural)",
+        "explain_vi": "Số nhiều của leaf là leaves, không phải leafs."
+      }
+    ],
+    "grammar_patterns": [
+      "countable, plural leaves"
+    ]
+  },
+  {
+    "word": "ground",
+    "phonetic": "/ɡraʊnd/",
+    "meaning_vi": "mặt đất",
+    "meaning_en": "the solid surface of the earth",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The ball fell on the ground.",
+        "vi": "Quả bóng rơi xuống đất."
+      }
+    ],
+    "word_family": [
+      "grounded (adj)"
+    ],
+    "collocations": [
+      "on the ground",
+      "fall to the ground",
+      "above ground"
+    ],
+    "synonyms": [
+      "earth",
+      "soil"
+    ],
+    "antonyms": [
+      "sky"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "The ground is hard.",
+        "correct": "The ground is hard.",
+        "explain_vi": "Không có lỗi phổ biến, nhưng lưu ý ground không có mạo từ khi nói chung."
+      }
+    ],
+    "grammar_patterns": [
+      "the ground (specific), ground (general)"
+    ]
+  },
+  {
+    "word": "hill",
+    "phonetic": "/hɪl/",
+    "meaning_vi": "đồi",
+    "meaning_en": "a raised area of land, smaller than a mountain",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We walked up the hill.",
+        "vi": "Chúng tôi đi bộ lên đồi."
+      }
+    ],
+    "word_family": [
+      "hilly (adj)"
+    ],
+    "collocations": [
+      "climb a hill",
+      "top of the hill",
+      "steep hill"
+    ],
+    "synonyms": [
+      "slope"
+    ],
+    "antonyms": [
+      "valley"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I go to hill.",
+        "correct": "I go to the hill.",
+        "explain_vi": "Cần mạo từ 'the' khi nói về một đồi cụ thể."
+      }
+    ],
+    "grammar_patterns": [
+      "countable, a/the hill"
+    ]
+  },
+  {
+    "word": "lake",
+    "phonetic": "/leɪk/",
+    "meaning_vi": "hồ",
+    "meaning_en": "a large area of water surrounded by land",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The lake is very deep.",
+        "vi": "Cái hồ rất sâu."
+      }
+    ],
+    "word_family": [
+      "lakeside (n)"
+    ],
+    "collocations": [
+      "by the lake",
+      "swim in the lake",
+      "lake water"
+    ],
+    "synonyms": [
+      "pond"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I live near lake.",
+        "correct": "I live near a lake.",
+        "explain_vi": "Cần mạo từ 'a' hoặc 'the'."
+      }
+    ],
+    "grammar_patterns": [
+      "countable, a/the lake"
+    ]
+  },
+  {
+    "word": "ocean",
+    "phonetic": "/ˈəʊ.ʃən/",
+    "meaning_vi": "đại dương",
+    "meaning_en": "a very large area of sea",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The ocean is blue.",
+        "vi": "Đại dương màu xanh."
+      }
+    ],
+    "word_family": [
+      "oceanic (adj)"
+    ],
+    "collocations": [
+      "across the ocean",
+      "ocean water",
+      "Pacific Ocean"
+    ],
+    "synonyms": [
+      "sea"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Ocean is big.",
+        "correct": "The ocean is big.",
+        "explain_vi": "Cần mạo từ 'the' khi nói chung về đại dương."
+      }
+    ],
+    "grammar_patterns": [
+      "the ocean (specific), an ocean (general)"
+    ]
+  },
+  {
+    "word": "desert",
+    "phonetic": "/ˈdez.ət/",
+    "meaning_vi": "sa mạc",
+    "meaning_en": "a very dry, sandy area with little rain",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "It is hot in the desert.",
+        "vi": "Trời nóng ở sa mạc."
+      }
+    ],
+    "word_family": [
+      "deserted (adj)"
+    ],
+    "collocations": [
+      "hot desert",
+      "in the desert",
+      "desert sand"
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "forest"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I go to desert.",
+        "correct": "I go to the desert.",
+        "explain_vi": "Cần mạo từ 'the'."
+      }
+    ],
+    "grammar_patterns": [
+      "countable, a/the desert"
+    ]
+  },
+  {
+    "word": "island",
+    "phonetic": "/ˈaɪ.lənd/",
+    "meaning_vi": "hòn đảo",
+    "meaning_en": "a piece of land surrounded by water",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We live on an island.",
+        "vi": "Chúng tôi sống trên một hòn đảo."
+      }
+    ],
+    "word_family": [
+      "islander (n)"
+    ],
+    "collocations": [
+      "desert island",
+      "on an island",
+      "small island"
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "mainland"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I go to island.",
+        "correct": "I go to an island.",
+        "explain_vi": "Cần mạo từ 'an' vì island bắt đầu bằng nguyên âm."
+      }
+    ],
+    "grammar_patterns": [
+      "countable, an island"
+    ]
+  },
+  {
+    "word": "jungle",
+    "phonetic": "/ˈdʒʌŋ.ɡəl/",
+    "meaning_vi": "rừng rậm",
+    "meaning_en": "a thick forest in a hot region",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Monkeys live in the jungle.",
+        "vi": "Khỉ sống trong rừng rậm."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "in the jungle",
+      "jungle animals",
+      "dense jungle"
+    ],
+    "synonyms": [
+      "rainforest"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Jungle is dangerous.",
+        "correct": "The jungle is dangerous.",
+        "explain_vi": "Cần mạo từ 'the'."
+      }
+    ],
+    "grammar_patterns": [
+      "the jungle (specific), a jungle (general)"
+    ]
+  },
+  {
+    "word": "farm",
+    "phonetic": "/fɑːm/",
+    "meaning_vi": "trang trại",
+    "meaning_en": "an area of land used for growing crops or keeping animals",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The farm has cows.",
+        "vi": "Trang trại có bò."
+      }
+    ],
+    "word_family": [
+      "farmer (n)",
+      "farming (n)"
+    ],
+    "collocations": [
+      "on a farm",
+      "farm animals",
+      "work on a farm"
+    ],
+    "synonyms": [
+      "ranch"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I live in farm.",
+        "correct": "I live on a farm.",
+        "explain_vi": "Dùng giới từ 'on' với farm."
+      }
+    ],
+    "grammar_patterns": [
+      "countable, a/the farm; on a farm"
+    ]
+  },
+  {
+    "word": "field",
+    "phonetic": "/fiːld/",
+    "meaning_vi": "cánh đồng",
+    "meaning_en": "an open area of land used for farming or sports",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The field is full of flowers.",
+        "vi": "Cánh đồng đầy hoa."
+      }
+    ],
+    "word_family": [
+      "fieldwork (n)"
+    ],
+    "collocations": [
+      "in the field",
+      "green field",
+      "field of wheat"
+    ],
+    "synonyms": [
+      "meadow"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I play soccer on field.",
+        "correct": "I play soccer on the field.",
+        "explain_vi": "Cần mạo từ 'the'."
+      }
+    ],
+    "grammar_patterns": [
+      "countable, a/the field"
+    ]
+  },
+  {
+    "word": "garden",
+    "phonetic": "/ˈɡɑːr.dən/",
+    "meaning_vi": "khu vườn",
+    "meaning_en": "a piece of land where flowers or vegetables are grown",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She has a small garden.",
+        "vi": "Cô ấy có một khu vườn nhỏ."
+      }
+    ],
+    "word_family": [
+      "gardener (n)",
+      "gardening (n)"
+    ],
+    "collocations": [
+      "in the garden",
+      "water the garden",
+      "garden flowers"
+    ],
+    "synonyms": [
+      "yard"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I play in garden.",
+        "correct": "I play in the garden.",
+        "explain_vi": "Cần mạo từ 'the'."
+      }
+    ],
+    "grammar_patterns": [
+      "countable, a/the garden"
+    ]
+  },
+  {
+    "word": "stone",
+    "phonetic": "/stəʊn/",
+    "meaning_vi": "đá",
+    "meaning_en": "a small piece of rock",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I throw a stone into the water.",
+        "vi": "Tôi ném một hòn đá xuống nước."
+      }
+    ],
+    "word_family": [
+      "stony (adj)"
+    ],
+    "collocations": [
+      "throw a stone",
+      "big stone",
+      "stone wall"
+    ],
+    "synonyms": [
+      "rock"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I see stone.",
+        "correct": "I see a stone.",
+        "explain_vi": "Stone là danh từ đếm được, cần mạo từ khi số ít."
+      }
+    ],
+    "grammar_patterns": [
+      "countable, a stone"
+    ]
+  },
+  {
+    "word": "cloud",
+    "phonetic": "/klaʊd/",
+    "meaning_vi": "mây",
+    "meaning_en": "a white or grey mass in the sky",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The cloud is white.",
+        "vi": "Đám mây màu trắng."
+      }
+    ],
+    "word_family": [
+      "cloudy (adj)"
+    ],
+    "collocations": [
+      "white cloud",
+      "in the cloud",
+      "cloud cover"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Cloud is in sky.",
+        "correct": "Clouds are in the sky.",
+        "explain_vi": "Thường dùng số nhiều hoặc có mạo từ."
+      }
+    ],
+    "grammar_patterns": [
+      "countable, a cloud"
+    ]
+  },
+  {
+    "word": "rainbow",
+    "phonetic": "/ˈreɪn.bəʊ/",
+    "meaning_vi": "cầu vồng",
+    "meaning_en": "a curve of colours in the sky after rain",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I see a rainbow.",
+        "vi": "Tôi thấy cầu vồng."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "beautiful rainbow",
+      "rainbow colours",
+      "after the rain"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Rainbow appear after rain.",
+        "correct": "A rainbow appears after the rain.",
+        "explain_vi": "Cần mạo từ và chia động từ."
+      }
+    ],
+    "grammar_patterns": [
+      "countable, a rainbow"
+    ]
+  },
+  {
+    "word": "soil",
+    "phonetic": "/sɔɪl/",
+    "meaning_vi": "đất (trồng cây)",
+    "meaning_en": "the top layer of earth in which plants grow",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The soil is rich.",
+        "vi": "Đất màu mỡ."
+      }
+    ],
+    "word_family": [
+      "soily (adj)"
+    ],
+    "collocations": [
+      "fertile soil",
+      "soil erosion",
+      "plant in soil"
+    ],
+    "synonyms": [
+      "earth"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have a soil.",
+        "correct": "I have soil.",
+        "explain_vi": "Soil là danh từ không đếm được."
+      }
+    ],
+    "grammar_patterns": [
+      "uncountable"
+    ]
+  },
+  {
+    "word": "sand",
+    "phonetic": "/sænd/",
+    "meaning_vi": "cát",
+    "meaning_en": "tiny grains of rock found on beaches",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The sand is hot.",
+        "vi": "Cát nóng."
+      }
+    ],
+    "word_family": [
+      "sandy (adj)"
+    ],
+    "collocations": [
+      "white sand",
+      "sand beach",
+      "play in the sand"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have a sand.",
+        "correct": "I have sand.",
+        "explain_vi": "Sand là danh từ không đếm được."
+      }
+    ],
+    "grammar_patterns": [
+      "uncountable"
+    ]
+  },
+  {
+    "word": "wood",
+    "phonetic": "/wʊd/",
+    "meaning_vi": "gỗ; khu rừng",
+    "meaning_en": "the material from trees; a forested area",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "This table is made of wood.",
+        "vi": "Cái bàn này làm bằng gỗ."
+      }
+    ],
+    "word_family": [
+      "wooden (adj)",
+      "woods (plural)"
+    ],
+    "collocations": [
+      "piece of wood",
+      "wood fire",
+      "in the woods"
+    ],
+    "synonyms": [
+      "timber",
+      "forest"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I walk in wood.",
+        "correct": "I walk in the woods.",
+        "explain_vi": "Khi nghĩa là rừng, thường dùng số nhiều và có mạo từ."
+      }
+    ],
+    "grammar_patterns": [
+      "uncountable (material), countable (woods)"
+    ]
+  },
+  {
+    "word": "butterfly",
+    "phonetic": "/ˈbʌt.ə.flaɪ/",
+    "meaning_vi": "con bướm",
+    "meaning_en": "an insect with large colourful wings",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The butterfly is beautiful.",
+        "vi": "Con bướm thật đẹp."
+      }
+    ],
+    "word_family": [
+      "butterfly (plural butterflies)"
+    ],
+    "collocations": [
+      "butterfly wings",
+      "monarch butterfly",
+      "butterfly garden"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I see butterfly.",
+        "correct": "I see a butterfly.",
+        "explain_vi": "Cần mạo từ 'a'."
+      }
+    ],
+    "grammar_patterns": [
+      "countable, a butterfly"
+    ]
+  },
+  {
+    "word": "bee",
+    "phonetic": "/biː/",
+    "meaning_vi": "con ong",
+    "meaning_en": "a flying insect that makes honey",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The bee is on the flower.",
+        "vi": "Con ong ở trên bông hoa."
+      }
+    ],
+    "word_family": [
+      "beehive (n)",
+      "beekeeper (n)"
+    ],
+    "collocations": [
+      "busy bee",
+      "bee sting",
+      "bee hive"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I see bee.",
+        "correct": "I see a bee.",
+        "explain_vi": "Cần mạo từ 'a'."
+      }
+    ],
+    "grammar_patterns": [
+      "countable, a bee"
+    ]
+  }
+]

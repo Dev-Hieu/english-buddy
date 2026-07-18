@@ -1,0 +1,3079 @@
+[
+  {
+    "word": "connectivity",
+    "phonetic": "/ˌkɒn.ekˈtɪv.ɪ.ti/",
+    "meaning_vi": "sự kết nối",
+    "meaning_en": "the state of being connected or interconnected",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The new router improves connectivity in the office.",
+        "vi": "Bộ định tuyến mới cải thiện sự kết nối trong văn phòng."
+      }
+    ],
+    "word_family": [
+      "connect (v)",
+      "connected (adj)",
+      "connection (n)"
+    ],
+    "collocations": [
+      "improve connectivity",
+      "reliable connectivity",
+      "internet connectivity"
+    ],
+    "synonyms": [
+      "connection",
+      "linkage"
+    ],
+    "antonyms": [
+      "disconnection"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "connectivity of internet",
+        "correct": "internet connectivity",
+        "explain_vi": "Không dùng 'of' giữa hai danh từ; đặt danh từ đầu làm tính từ."
+      }
+    ],
+    "grammar_patterns": [
+      "noun: connectivity + preposition + noun"
+    ]
+  },
+  {
+    "word": "bandwidth",
+    "phonetic": "/ˈbænd.wɪdθ/",
+    "meaning_vi": "băng thông",
+    "meaning_en": "the maximum rate of data transfer across a network",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We need more bandwidth to stream video smoothly.",
+        "vi": "Chúng tôi cần thêm băng thông để phát video mượt mà."
+      }
+    ],
+    "word_family": [
+      "band (n)",
+      "width (n)"
+    ],
+    "collocations": [
+      "high bandwidth",
+      "bandwidth limit",
+      "increase bandwidth"
+    ],
+    "synonyms": [
+      "data capacity",
+      "throughput"
+    ],
+    "antonyms": [
+      "narrowband"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "bandwidth is wide",
+        "correct": "bandwidth is high",
+        "explain_vi": "Băng thông đi với 'high' chứ không phải 'wide'."
+      }
+    ],
+    "grammar_patterns": [
+      "adjective + bandwidth",
+      "bandwidth + noun"
+    ]
+  },
+  {
+    "word": "encryption",
+    "phonetic": "/ɪnˈkrɪp.ʃən/",
+    "meaning_vi": "mã hóa",
+    "meaning_en": "the process of converting information into a secret code",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Encryption protects your personal data online.",
+        "vi": "Mã hóa bảo vệ dữ liệu cá nhân của bạn trực tuyến."
+      }
+    ],
+    "word_family": [
+      "encrypt (v)",
+      "encrypted (adj)",
+      "decrypt (v)"
+    ],
+    "collocations": [
+      "data encryption",
+      "end-to-end encryption",
+      "encryption key"
+    ],
+    "synonyms": [
+      "coding",
+      "ciphering"
+    ],
+    "antonyms": [
+      "decryption"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "encryption code",
+        "correct": "encryption key",
+        "explain_vi": "'Key' mới là thuật ngữ chính xác, không phải 'code'."
+      }
+    ],
+    "grammar_patterns": [
+      "noun: encryption + of + noun",
+      "adjective + encryption"
+    ]
+  },
+  {
+    "word": "firewall",
+    "phonetic": "/ˈfaɪər.wɔːl/",
+    "meaning_vi": "tường lửa",
+    "meaning_en": "a security system that monitors and controls network traffic",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The company installed a firewall to block unauthorized access.",
+        "vi": "Công ty đã cài đặt tường lửa để chặn truy cập trái phép."
+      }
+    ],
+    "word_family": [
+      "fire (n)",
+      "wall (n)"
+    ],
+    "collocations": [
+      "configure a firewall",
+      "firewall protection",
+      "bypass the firewall"
+    ],
+    "synonyms": [
+      "security barrier",
+      "network filter"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "fire wall",
+        "correct": "firewall",
+        "explain_vi": "Viết liền, không tách rời."
+      }
+    ],
+    "grammar_patterns": [
+      "article + firewall",
+      "firewall + verb"
+    ]
+  },
+  {
+    "word": "latency",
+    "phonetic": "/ˈleɪ.tən.si/",
+    "meaning_vi": "độ trễ",
+    "meaning_en": "the delay before a transfer of data begins following an instruction",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Low latency is crucial for online gaming.",
+        "vi": "Độ trễ thấp rất quan trọng cho chơi game trực tuyến."
+      }
+    ],
+    "word_family": [
+      "latent (adj)",
+      "latently (adv)"
+    ],
+    "collocations": [
+      "low latency",
+      "high latency",
+      "latency time"
+    ],
+    "synonyms": [
+      "delay",
+      "lag"
+    ],
+    "antonyms": [
+      "speed"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "latency is slow",
+        "correct": "latency is high",
+        "explain_vi": "Độ trễ cao chứ không phải chậm."
+      }
+    ],
+    "grammar_patterns": [
+      "adjective + latency",
+      "latency + of + noun"
+    ]
+  },
+  {
+    "word": "protocol",
+    "phonetic": "/ˈprəʊ.tə.kɒl/",
+    "meaning_vi": "giao thức",
+    "meaning_en": "a set of rules governing the exchange of data between devices",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "HTTP is a protocol used for web communication.",
+        "vi": "HTTP là một giao thức được sử dụng cho giao tiếp web."
+      }
+    ],
+    "word_family": [
+      "protocols (pl)",
+      "procedural (adj)"
+    ],
+    "collocations": [
+      "communication protocol",
+      "network protocol",
+      "protocol stack"
+    ],
+    "synonyms": [
+      "standard",
+      "convention"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "protocol is a software",
+        "correct": "protocol is a set of rules",
+        "explain_vi": "Giao thức là quy tắc, không phải phần mềm."
+      }
+    ],
+    "grammar_patterns": [
+      "noun: protocol + for + noun",
+      "adjective + protocol"
+    ]
+  },
+  {
+    "word": "router",
+    "phonetic": "/ˈruː.tər/",
+    "meaning_vi": "bộ định tuyến",
+    "meaning_en": "a device that forwards data packets between networks",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The router connects our home network to the internet.",
+        "vi": "Bộ định tuyến kết nối mạng gia đình chúng tôi với internet."
+      }
+    ],
+    "word_family": [
+      "route (n/v)",
+      "routing (n)"
+    ],
+    "collocations": [
+      "wireless router",
+      "router configuration",
+      "reset the router"
+    ],
+    "synonyms": [
+      "hub",
+      "switch"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "route-er",
+        "correct": "router",
+        "explain_vi": "Phát âm là /ˈruː.tər/, không phải /raʊ.tər/."
+      }
+    ],
+    "grammar_patterns": [
+      "article + router",
+      "router + verb"
+    ]
+  },
+  {
+    "word": "server",
+    "phonetic": "/ˈsɜː.vər/",
+    "meaning_vi": "máy chủ",
+    "meaning_en": "a computer that provides data or services to other computers",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The website is hosted on a powerful server.",
+        "vi": "Trang web được lưu trữ trên một máy chủ mạnh mẽ."
+      }
+    ],
+    "word_family": [
+      "serve (v)",
+      "service (n)"
+    ],
+    "collocations": [
+      "web server",
+      "server room",
+      "client-server"
+    ],
+    "synonyms": [
+      "host",
+      "mainframe"
+    ],
+    "antonyms": [
+      "client"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "server is a computer program",
+        "correct": "server is a computer",
+        "explain_vi": "Server là máy tính, không phải chương trình."
+      }
+    ],
+    "grammar_patterns": [
+      "article + server",
+      "server + noun"
+    ]
+  },
+  {
+    "word": "malware",
+    "phonetic": "/ˈmæl.weər/",
+    "meaning_vi": "phần mềm độc hại",
+    "meaning_en": "software designed to damage or disrupt a computer system",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Install antivirus software to protect against malware.",
+        "vi": "Cài đặt phần mềm diệt virus để bảo vệ khỏi phần mềm độc hại."
+      }
+    ],
+    "word_family": [
+      "malicious (adj)",
+      "malware (uncountable)"
+    ],
+    "collocations": [
+      "malware attack",
+      "malware infection",
+      "remove malware"
+    ],
+    "synonyms": [
+      "virus",
+      "spyware"
+    ],
+    "antonyms": [
+      "antivirus"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "malwares",
+        "correct": "malware",
+        "explain_vi": "Malware là danh từ không đếm được, không có dạng số nhiều."
+      }
+    ],
+    "grammar_patterns": [
+      "uncountable noun: malware + verb (singular)"
+    ]
+  },
+  {
+    "word": "phishing",
+    "phonetic": "/ˈfɪʃ.ɪŋ/",
+    "meaning_vi": "lừa đảo qua mạng",
+    "meaning_en": "fraudulent attempt to obtain sensitive information by disguising as a trustworthy entity",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Be careful of phishing emails that ask for your password.",
+        "vi": "Hãy cẩn thận với email lừa đảo yêu cầu mật khẩu của bạn."
+      }
+    ],
+    "word_family": [
+      "phish (v)",
+      "phisher (n)"
+    ],
+    "collocations": [
+      "phishing attack",
+      "phishing email",
+      "phishing scam"
+    ],
+    "synonyms": [
+      "cyber fraud",
+      "identity theft"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "fishing",
+        "correct": "phishing",
+        "explain_vi": "Phishing viết với 'ph', không phải 'f'."
+      }
+    ],
+    "grammar_patterns": [
+      "noun: phishing + noun",
+      "phishing + verb"
+    ]
+  },
+  {
+    "word": "spam",
+    "phonetic": "/spæm/",
+    "meaning_vi": "thư rác",
+    "meaning_en": "unwanted or unsolicited electronic messages",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "My email filter automatically moves spam to a separate folder.",
+        "vi": "Bộ lọc email của tôi tự động chuyển thư rác vào một thư mục riêng."
+      }
+    ],
+    "word_family": [
+      "spammer (n)",
+      "spamming (n)"
+    ],
+    "collocations": [
+      "spam email",
+      "spam filter",
+      "spam message"
+    ],
+    "synonyms": [
+      "junk mail",
+      "unsolicited mail"
+    ],
+    "antonyms": [
+      "ham (legitimate email)"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "spam is a verb",
+        "correct": "spam can be a verb or noun",
+        "explain_vi": "Spam vừa là danh từ vừa là động từ."
+      }
+    ],
+    "grammar_patterns": [
+      "uncountable noun: spam + verb (singular)",
+      "verb: spam + object"
+    ]
+  },
+  {
+    "word": "bandwidth",
+    "phonetic": "/ˈbænd.wɪdθ/",
+    "meaning_vi": "băng thông",
+    "meaning_en": "the maximum rate of data transfer across a network",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We need more bandwidth to stream video smoothly.",
+        "vi": "Chúng tôi cần thêm băng thông để phát video mượt mà."
+      }
+    ],
+    "word_family": [
+      "band (n)",
+      "width (n)"
+    ],
+    "collocations": [
+      "high bandwidth",
+      "bandwidth limit",
+      "increase bandwidth"
+    ],
+    "synonyms": [
+      "data capacity",
+      "throughput"
+    ],
+    "antonyms": [
+      "narrowband"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "bandwidth is wide",
+        "correct": "bandwidth is high",
+        "explain_vi": "Băng thông đi với 'high' chứ không phải 'wide'."
+      }
+    ],
+    "grammar_patterns": [
+      "adjective + bandwidth",
+      "bandwidth + noun"
+    ]
+  },
+  {
+    "word": "encryption",
+    "phonetic": "/ɪnˈkrɪp.ʃən/",
+    "meaning_vi": "mã hóa",
+    "meaning_en": "the process of converting information into a secret code",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Encryption protects your personal data online.",
+        "vi": "Mã hóa bảo vệ dữ liệu cá nhân của bạn trực tuyến."
+      }
+    ],
+    "word_family": [
+      "encrypt (v)",
+      "encrypted (adj)",
+      "decrypt (v)"
+    ],
+    "collocations": [
+      "data encryption",
+      "end-to-end encryption",
+      "encryption key"
+    ],
+    "synonyms": [
+      "coding",
+      "ciphering"
+    ],
+    "antonyms": [
+      "decryption"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "encryption code",
+        "correct": "encryption key",
+        "explain_vi": "'Key' mới là thuật ngữ chính xác, không phải 'code'."
+      }
+    ],
+    "grammar_patterns": [
+      "noun: encryption + of + noun",
+      "adjective + encryption"
+    ]
+  },
+  {
+    "word": "firewall",
+    "phonetic": "/ˈfaɪər.wɔːl/",
+    "meaning_vi": "tường lửa",
+    "meaning_en": "a security system that monitors and controls network traffic",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The company installed a firewall to block unauthorized access.",
+        "vi": "Công ty đã cài đặt tường lửa để chặn truy cập trái phép."
+      }
+    ],
+    "word_family": [
+      "fire (n)",
+      "wall (n)"
+    ],
+    "collocations": [
+      "configure a firewall",
+      "firewall protection",
+      "bypass the firewall"
+    ],
+    "synonyms": [
+      "security barrier",
+      "network filter"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "fire wall",
+        "correct": "firewall",
+        "explain_vi": "Viết liền, không tách rời."
+      }
+    ],
+    "grammar_patterns": [
+      "article + firewall",
+      "firewall + verb"
+    ]
+  },
+  {
+    "word": "latency",
+    "phonetic": "/ˈleɪ.tən.si/",
+    "meaning_vi": "độ trễ",
+    "meaning_en": "the delay before a transfer of data begins following an instruction",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Low latency is crucial for online gaming.",
+        "vi": "Độ trễ thấp rất quan trọng cho chơi game trực tuyến."
+      }
+    ],
+    "word_family": [
+      "latent (adj)",
+      "latently (adv)"
+    ],
+    "collocations": [
+      "low latency",
+      "high latency",
+      "latency time"
+    ],
+    "synonyms": [
+      "delay",
+      "lag"
+    ],
+    "antonyms": [
+      "speed"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "latency is slow",
+        "correct": "latency is high",
+        "explain_vi": "Độ trễ cao chứ không phải chậm."
+      }
+    ],
+    "grammar_patterns": [
+      "adjective + latency",
+      "latency + of + noun"
+    ]
+  },
+  {
+    "word": "protocol",
+    "phonetic": "/ˈprəʊ.tə.kɒl/",
+    "meaning_vi": "giao thức",
+    "meaning_en": "a set of rules governing the exchange of data between devices",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "HTTP is a protocol used for web communication.",
+        "vi": "HTTP là một giao thức được sử dụng cho giao tiếp web."
+      }
+    ],
+    "word_family": [
+      "protocols (pl)",
+      "procedural (adj)"
+    ],
+    "collocations": [
+      "communication protocol",
+      "network protocol",
+      "protocol stack"
+    ],
+    "synonyms": [
+      "standard",
+      "convention"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "protocol is a software",
+        "correct": "protocol is a set of rules",
+        "explain_vi": "Giao thức là quy tắc, không phải phần mềm."
+      }
+    ],
+    "grammar_patterns": [
+      "noun: protocol + for + noun",
+      "adjective + protocol"
+    ]
+  },
+  {
+    "word": "router",
+    "phonetic": "/ˈruː.tər/",
+    "meaning_vi": "bộ định tuyến",
+    "meaning_en": "a device that forwards data packets between networks",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The router connects our home network to the internet.",
+        "vi": "Bộ định tuyến kết nối mạng gia đình chúng tôi với internet."
+      }
+    ],
+    "word_family": [
+      "route (n/v)",
+      "routing (n)"
+    ],
+    "collocations": [
+      "wireless router",
+      "router configuration",
+      "reset the router"
+    ],
+    "synonyms": [
+      "hub",
+      "switch"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "route-er",
+        "correct": "router",
+        "explain_vi": "Phát âm là /ˈruː.tər/, không phải /raʊ.tər/."
+      }
+    ],
+    "grammar_patterns": [
+      "article + router",
+      "router + verb"
+    ]
+  },
+  {
+    "word": "server",
+    "phonetic": "/ˈsɜː.vər/",
+    "meaning_vi": "máy chủ",
+    "meaning_en": "a computer that provides data or services to other computers",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The website is hosted on a powerful server.",
+        "vi": "Trang web được lưu trữ trên một máy chủ mạnh mẽ."
+      }
+    ],
+    "word_family": [
+      "serve (v)",
+      "service (n)"
+    ],
+    "collocations": [
+      "web server",
+      "server room",
+      "client-server"
+    ],
+    "synonyms": [
+      "host",
+      "mainframe"
+    ],
+    "antonyms": [
+      "client"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "server is a computer program",
+        "correct": "server is a computer",
+        "explain_vi": "Server là máy tính, không phải chương trình."
+      }
+    ],
+    "grammar_patterns": [
+      "article + server",
+      "server + noun"
+    ]
+  },
+  {
+    "word": "malware",
+    "phonetic": "/ˈmæl.weər/",
+    "meaning_vi": "phần mềm độc hại",
+    "meaning_en": "software designed to damage or disrupt a computer system",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Install antivirus software to protect against malware.",
+        "vi": "Cài đặt phần mềm diệt virus để bảo vệ khỏi phần mềm độc hại."
+      }
+    ],
+    "word_family": [
+      "malicious (adj)",
+      "malware (uncountable)"
+    ],
+    "collocations": [
+      "malware attack",
+      "malware infection",
+      "remove malware"
+    ],
+    "synonyms": [
+      "virus",
+      "spyware"
+    ],
+    "antonyms": [
+      "antivirus"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "malwares",
+        "correct": "malware",
+        "explain_vi": "Malware là danh từ không đếm được, không có dạng số nhiều."
+      }
+    ],
+    "grammar_patterns": [
+      "uncountable noun: malware + verb (singular)"
+    ]
+  },
+  {
+    "word": "phishing",
+    "phonetic": "/ˈfɪʃ.ɪŋ/",
+    "meaning_vi": "lừa đảo qua mạng",
+    "meaning_en": "fraudulent attempt to obtain sensitive information by disguising as a trustworthy entity",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Be careful of phishing emails that ask for your password.",
+        "vi": "Hãy cẩn thận với email lừa đảo yêu cầu mật khẩu của bạn."
+      }
+    ],
+    "word_family": [
+      "phish (v)",
+      "phisher (n)"
+    ],
+    "collocations": [
+      "phishing attack",
+      "phishing email",
+      "phishing scam"
+    ],
+    "synonyms": [
+      "cyber fraud",
+      "identity theft"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "fishing",
+        "correct": "phishing",
+        "explain_vi": "Phishing viết với 'ph', không phải 'f'."
+      }
+    ],
+    "grammar_patterns": [
+      "noun: phishing + noun",
+      "phishing + verb"
+    ]
+  },
+  {
+    "word": "spam",
+    "phonetic": "/spæm/",
+    "meaning_vi": "thư rác",
+    "meaning_en": "unwanted or unsolicited electronic messages",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "My email filter automatically moves spam to a separate folder.",
+        "vi": "Bộ lọc email của tôi tự động chuyển thư rác vào một thư mục riêng."
+      }
+    ],
+    "word_family": [
+      "spammer (n)",
+      "spamming (n)"
+    ],
+    "collocations": [
+      "spam email",
+      "spam filter",
+      "spam message"
+    ],
+    "synonyms": [
+      "junk mail",
+      "unsolicited mail"
+    ],
+    "antonyms": [
+      "ham (legitimate email)"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "spam is a verb",
+        "correct": "spam can be a verb or noun",
+        "explain_vi": "Spam vừa là danh từ vừa là động từ."
+      }
+    ],
+    "grammar_patterns": [
+      "uncountable noun: spam + verb (singular)",
+      "verb: spam + object"
+    ]
+  },
+  {
+    "word": "interface",
+    "phonetic": "/ˈɪntərfeɪs/",
+    "meaning_vi": "giao diện",
+    "meaning_en": "the way a computer program presents information to a user or receives commands",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The new interface is user-friendly.",
+        "vi": "Giao diện mới rất thân thiện với người dùng."
+      }
+    ],
+    "word_family": [
+      "interfacial (adj)"
+    ],
+    "collocations": [
+      "user interface",
+      "graphical interface",
+      "interface design"
+    ],
+    "synonyms": [
+      "GUI",
+      "user interface"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I like the interfacing of this app.",
+        "correct": "I like the interface of this app.",
+        "explain_vi": "'Interface' là danh từ, không phải động từ ở đây."
+      }
+    ],
+    "grammar_patterns": [
+      "the + interface + of + noun"
+    ]
+  },
+  {
+    "word": "protocol",
+    "phonetic": "/ˈproʊtəkɔːl/",
+    "meaning_vi": "giao thức",
+    "meaning_en": "a set of rules governing the exchange of data between devices",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "HTTP is a standard protocol for web communication.",
+        "vi": "HTTP là một giao thức chuẩn cho giao tiếp web."
+      }
+    ],
+    "word_family": [
+      "protocols (pl)",
+      "protocolary (adj)"
+    ],
+    "collocations": [
+      "communication protocol",
+      "network protocol",
+      "follow protocol"
+    ],
+    "synonyms": [
+      "standard",
+      "procedure"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "The protocol is very strict.",
+        "correct": "The protocol is very strict.",
+        "explain_vi": "Cách dùng đúng, nhưng nhớ phát âm trọng âm rơi vào âm đầu."
+      }
+    ],
+    "grammar_patterns": [
+      "protocol + for + noun/gerund"
+    ]
+  },
+  {
+    "word": "bandwidth",
+    "phonetic": "/ˈbændwɪdθ/",
+    "meaning_vi": "băng thông",
+    "meaning_en": "the maximum rate of data transfer across a given path",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We need more bandwidth for video streaming.",
+        "vi": "Chúng tôi cần thêm băng thông để xem video trực tuyến."
+      }
+    ],
+    "word_family": [
+      "bandwidths (pl)"
+    ],
+    "collocations": [
+      "high bandwidth",
+      "bandwidth limit",
+      "bandwidth allocation"
+    ],
+    "synonyms": [
+      "data capacity",
+      "throughput"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "The bandwidth is low.",
+        "correct": "The bandwidth is low.",
+        "explain_vi": "Cách dùng đúng, nhưng lưu ý 'bandwidth' không đếm được."
+      }
+    ],
+    "grammar_patterns": [
+      "bandwidth + of + number"
+    ]
+  },
+  {
+    "word": "latency",
+    "phonetic": "/ˈleɪtənsi/",
+    "meaning_vi": "độ trễ",
+    "meaning_en": "the delay before a transfer of data begins following an instruction",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Low latency is crucial for online gaming.",
+        "vi": "Độ trễ thấp rất quan trọng cho chơi game trực tuyến."
+      }
+    ],
+    "word_family": [
+      "latent (adj)"
+    ],
+    "collocations": [
+      "low latency",
+      "high latency",
+      "latency time"
+    ],
+    "synonyms": [
+      "delay",
+      "lag"
+    ],
+    "antonyms": [
+      "responsiveness"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "The network has many latency.",
+        "correct": "The network has a lot of latency.",
+        "explain_vi": "'Latency' không đếm được, dùng 'a lot of' thay vì 'many'."
+      }
+    ],
+    "grammar_patterns": [
+      "latency + of + number"
+    ]
+  },
+  {
+    "word": "firewall",
+    "phonetic": "/ˈfaɪərwɔːl/",
+    "meaning_vi": "tường lửa",
+    "meaning_en": "a system designed to prevent unauthorized access to or from a private network",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The company installed a new firewall.",
+        "vi": "Công ty đã cài đặt một tường lửa mới."
+      }
+    ],
+    "word_family": [
+      "firewalls (pl)"
+    ],
+    "collocations": [
+      "configure a firewall",
+      "firewall protection",
+      "bypass the firewall"
+    ],
+    "synonyms": [
+      "security barrier"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Firewall is very important.",
+        "correct": "A firewall is very important.",
+        "explain_vi": "Cần mạo từ 'a' trước danh từ đếm được."
+      }
+    ],
+    "grammar_patterns": [
+      "firewall + between + noun"
+    ]
+  },
+  {
+    "word": "encryption",
+    "phonetic": "/ɪnˈkrɪpʃən/",
+    "meaning_vi": "mã hóa",
+    "meaning_en": "the process of converting information into a code to prevent unauthorized access",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Encryption protects your data.",
+        "vi": "Mã hóa bảo vệ dữ liệu của bạn."
+      }
+    ],
+    "word_family": [
+      "encrypt (v)",
+      "encrypted (adj)"
+    ],
+    "collocations": [
+      "data encryption",
+      "encryption key",
+      "end-to-end encryption"
+    ],
+    "synonyms": [
+      "coding",
+      "scrambling"
+    ],
+    "antonyms": [
+      "decryption"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "The encryption is strong.",
+        "correct": "The encryption is strong.",
+        "explain_vi": "Cách dùng đúng, nhưng nhớ phát âm /ɪnˈkrɪpʃən/."
+      }
+    ],
+    "grammar_patterns": [
+      "encryption + of + noun"
+    ]
+  },
+  {
+    "word": "malware",
+    "phonetic": "/ˈmælweər/",
+    "meaning_vi": "phần mềm độc hại",
+    "meaning_en": "software designed to disrupt, damage, or gain unauthorized access to a computer system",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Malware can steal your personal information.",
+        "vi": "Phần mềm độc hại có thể đánh cắp thông tin cá nhân của bạn."
+      }
+    ],
+    "word_family": [
+      "malicious (adj)"
+    ],
+    "collocations": [
+      "detect malware",
+      "remove malware",
+      "malware attack"
+    ],
+    "synonyms": [
+      "virus",
+      "spyware"
+    ],
+    "antonyms": [
+      "antivirus"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Malwares are dangerous.",
+        "correct": "Malware is dangerous.",
+        "explain_vi": "'Malware' là danh từ không đếm được."
+      }
+    ],
+    "grammar_patterns": [
+      "malware + verb (singular)"
+    ]
+  },
+  {
+    "word": "phishing",
+    "phonetic": "/ˈfɪʃɪŋ/",
+    "meaning_vi": "lừa đảo qua mạng",
+    "meaning_en": "the fraudulent practice of sending emails pretending to be from reputable companies to induce individuals to reveal personal information",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Be careful of phishing emails.",
+        "vi": "Hãy cẩn thận với email lừa đảo."
+      }
+    ],
+    "word_family": [
+      "phish (v)",
+      "phisher (n)"
+    ],
+    "collocations": [
+      "phishing attack",
+      "phishing scam",
+      "fall for phishing"
+    ],
+    "synonyms": [
+      "scam",
+      "fraud"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I received a phishing.",
+        "correct": "I received a phishing email.",
+        "explain_vi": "Cần thêm 'email' sau 'phishing'."
+      }
+    ],
+    "grammar_patterns": [
+      "phishing + noun"
+    ]
+  },
+  {
+    "word": "spam",
+    "phonetic": "/spæm/",
+    "meaning_vi": "thư rác",
+    "meaning_en": "irrelevant or unsolicited messages sent over the internet, typically to many users",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "My inbox is full of spam.",
+        "vi": "Hộp thư của tôi đầy thư rác."
+      }
+    ],
+    "word_family": [
+      "spammer (n)",
+      "spamming (v)"
+    ],
+    "collocations": [
+      "spam filter",
+      "spam email",
+      "report as spam"
+    ],
+    "synonyms": [
+      "junk mail",
+      "unsolicited mail"
+    ],
+    "antonyms": [
+      "ham"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I got a spam.",
+        "correct": "I got spam.",
+        "explain_vi": "'Spam' là danh từ không đếm được."
+      }
+    ],
+    "grammar_patterns": [
+      "spam + noun"
+    ]
+  },
+  {
+    "word": "router",
+    "phonetic": "/ˈruːtər/",
+    "meaning_vi": "bộ định tuyến",
+    "meaning_en": "a device that forwards data packets between computer networks",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The router connects our home network to the internet.",
+        "vi": "Bộ định tuyến kết nối mạng gia đình chúng tôi với internet."
+      }
+    ],
+    "word_family": [
+      "routing (n)"
+    ],
+    "collocations": [
+      "wireless router",
+      "configure a router",
+      "router settings"
+    ],
+    "synonyms": [
+      "modem",
+      "switch"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I need to restart the route.",
+        "correct": "I need to restart the router.",
+        "explain_vi": "'Router' là thiết bị, 'route' là tuyến đường."
+      }
+    ],
+    "grammar_patterns": [
+      "router + for + noun"
+    ]
+  },
+  {
+    "word": "server",
+    "phonetic": "/ˈsɜːrvər/",
+    "meaning_vi": "máy chủ",
+    "meaning_en": "a computer or system that manages network resources and provides services to clients",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The server is down for maintenance.",
+        "vi": "Máy chủ đang bảo trì."
+      }
+    ],
+    "word_family": [
+      "server farm (n)",
+      "server-side (adj)"
+    ],
+    "collocations": [
+      "server room",
+      "server crash",
+      "server administrator"
+    ],
+    "synonyms": [
+      "host",
+      "mainframe"
+    ],
+    "antonyms": [
+      "client"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "The serve is slow.",
+        "correct": "The server is slow.",
+        "explain_vi": "'Server' là danh từ, 'serve' là động từ."
+      }
+    ],
+    "grammar_patterns": [
+      "server + for + noun"
+    ]
+  },
+  {
+    "word": "digital",
+    "phonetic": "/ˈdɪdʒɪtl/",
+    "meaning_vi": "kỹ thuật số",
+    "meaning_en": "relating to or using signals or information represented by discrete values (digits)",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "We live in a digital age.",
+        "vi": "Chúng ta đang sống trong thời đại kỹ thuật số."
+      }
+    ],
+    "word_family": [
+      "digitally (adv)",
+      "digitize (v)"
+    ],
+    "collocations": [
+      "digital technology",
+      "digital transformation",
+      "digital native"
+    ],
+    "synonyms": [
+      "electronic",
+      "computerized"
+    ],
+    "antonyms": [
+      "analog"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I have a digital camera.",
+        "correct": "I have a digital camera.",
+        "explain_vi": "Cách dùng đúng, nhưng lưu ý 'digital' là tính từ."
+      }
+    ],
+    "grammar_patterns": [
+      "digital + noun"
+    ]
+  },
+  {
+    "word": "network",
+    "phonetic": "/ˈnetwɜːrk/",
+    "meaning_vi": "mạng lưới, mạng",
+    "meaning_en": "a group of interconnected computers or systems",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The office network is down.",
+        "vi": "Mạng văn phòng bị hỏng."
+      }
+    ],
+    "word_family": [
+      "networking (n)",
+      "networked (adj)"
+    ],
+    "collocations": [
+      "network security",
+      "network administrator",
+      "social network"
+    ],
+    "synonyms": [
+      "grid",
+      "web"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have a network problem.",
+        "correct": "I have a network problem.",
+        "explain_vi": "Cách dùng đúng, nhưng nhớ phát âm /ˈnetwɜːrk/."
+      }
+    ],
+    "grammar_patterns": [
+      "network + of + noun"
+    ]
+  },
+  {
+    "word": "device",
+    "phonetic": "/dɪˈvaɪs/",
+    "meaning_vi": "thiết bị",
+    "meaning_en": "a piece of equipment or a mechanism designed to serve a special purpose",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Smartphones are versatile devices.",
+        "vi": "Điện thoại thông minh là thiết bị đa năng."
+      }
+    ],
+    "word_family": [
+      "devices (pl)"
+    ],
+    "collocations": [
+      "electronic device",
+      "mobile device",
+      "device settings"
+    ],
+    "synonyms": [
+      "gadget",
+      "appliance"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have many device.",
+        "correct": "I have many devices.",
+        "explain_vi": "Cần thêm 's' cho danh từ số nhiều."
+      }
+    ],
+    "grammar_patterns": [
+      "device + for + noun/gerund"
+    ]
+  },
+  {
+    "word": "software",
+    "phonetic": "/ˈsɒftweər/",
+    "meaning_vi": "phần mềm",
+    "meaning_en": "programs and operating information used by a computer",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We need to update the software.",
+        "vi": "Chúng tôi cần cập nhật phần mềm."
+      }
+    ],
+    "word_family": [
+      "software engineer (n)",
+      "software development (n)"
+    ],
+    "collocations": [
+      "software update",
+      "software license",
+      "install software"
+    ],
+    "synonyms": [
+      "program",
+      "application"
+    ],
+    "antonyms": [
+      "hardware"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Softwares are expensive.",
+        "correct": "Software is expensive.",
+        "explain_vi": "'Software' là danh từ không đếm được."
+      }
+    ],
+    "grammar_patterns": [
+      "software + for + noun/gerund"
+    ]
+  },
+  {
+    "word": "hardware",
+    "phonetic": "/ˈhɑːrdweər/",
+    "meaning_vi": "phần cứng",
+    "meaning_en": "the physical components of a computer system",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The hardware needs to be replaced.",
+        "vi": "Phần cứng cần được thay thế."
+      }
+    ],
+    "word_family": [
+      "hardware store (n)"
+    ],
+    "collocations": [
+      "hardware failure",
+      "hardware upgrade",
+      "hardware compatibility"
+    ],
+    "synonyms": [
+      "equipment",
+      "machinery"
+    ],
+    "antonyms": [
+      "software"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I bought new hardwares.",
+        "correct": "I bought new hardware.",
+        "explain_vi": "'Hardware' là danh từ không đếm được."
+      }
+    ],
+    "grammar_patterns": [
+      "hardware + for + noun"
+    ]
+  },
+  {
+    "word": "database",
+    "phonetic": "/ˈdeɪtəbeɪs/",
+    "meaning_vi": "cơ sở dữ liệu",
+    "meaning_en": "a structured set of data held in a computer",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The database contains customer information.",
+        "vi": "Cơ sở dữ liệu chứa thông tin khách hàng."
+      }
+    ],
+    "word_family": [
+      "database management (n)"
+    ],
+    "collocations": [
+      "database administrator",
+      "database system",
+      "query a database"
+    ],
+    "synonyms": [
+      "repository",
+      "data store"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "The data base is slow.",
+        "correct": "The database is slow.",
+        "explain_vi": "Viết liền 'database'."
+      }
+    ],
+    "grammar_patterns": [
+      "database + of + noun"
+    ]
+  },
+  {
+    "word": "cloud",
+    "phonetic": "/klaʊd/",
+    "meaning_vi": "đám mây (điện toán đám mây)",
+    "meaning_en": "a network of remote servers used to store and manage data online",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We store our files in the cloud.",
+        "vi": "Chúng tôi lưu trữ tệp tin trên đám mây."
+      }
+    ],
+    "word_family": [
+      "cloud computing (n)",
+      "cloud storage (n)"
+    ],
+    "collocations": [
+      "cloud service",
+      "cloud-based",
+      "cloud security"
+    ],
+    "synonyms": [
+      "online storage",
+      "remote server"
+    ],
+    "antonyms": [
+      "local storage"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I uploaded it to cloud.",
+        "correct": "I uploaded it to the cloud.",
+        "explain_vi": "Cần mạo từ 'the'."
+      }
+    ],
+    "grammar_patterns": [
+      "in the cloud",
+      "on the cloud"
+    ]
+  },
+  {
+    "word": "download",
+    "phonetic": "/ˈdaʊnloʊd/",
+    "meaning_vi": "tải xuống",
+    "meaning_en": "to copy data from one computer system to another, typically over the internet",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "I need to download the file.",
+        "vi": "Tôi cần tải tệp tin xuống."
+      }
+    ],
+    "word_family": [
+      "downloadable (adj)",
+      "downloader (n)"
+    ],
+    "collocations": [
+      "download speed",
+      "download manager",
+      "download a file"
+    ],
+    "synonyms": [
+      "transfer",
+      "retrieve"
+    ],
+    "antonyms": [
+      "upload"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I down loaded the app.",
+        "correct": "I downloaded the app.",
+        "explain_vi": "Viết liền 'download' và chia động từ đúng."
+      }
+    ],
+    "grammar_patterns": [
+      "download + noun"
+    ]
+  },
+  {
+    "word": "upload",
+    "phonetic": "/ˈʌploʊd/",
+    "meaning_vi": "tải lên",
+    "meaning_en": "to transfer data from a local computer to a remote system",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "Please upload the document.",
+        "vi": "Vui lòng tải tài liệu lên."
+      }
+    ],
+    "word_family": [
+      "uploadable (adj)",
+      "uploader (n)"
+    ],
+    "collocations": [
+      "upload speed",
+      "upload a photo",
+      "upload progress"
+    ],
+    "synonyms": [
+      "post",
+      "send"
+    ],
+    "antonyms": [
+      "download"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I uploded the video.",
+        "correct": "I uploaded the video.",
+        "explain_vi": "Chia động từ đúng: 'uploaded'."
+      }
+    ],
+    "grammar_patterns": [
+      "upload + noun"
+    ]
+  },
+  {
+    "word": "algorithm",
+    "phonetic": "/ˈælɡərɪðəm/",
+    "meaning_vi": "thuật toán",
+    "meaning_en": "a set of rules for solving a problem or performing a calculation",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The search engine uses a complex algorithm.",
+        "vi": "Công cụ tìm kiếm sử dụng một thuật toán phức tạp."
+      }
+    ],
+    "word_family": [
+      "algorithmic (adj)"
+    ],
+    "collocations": [
+      "design an algorithm",
+      "implement an algorithm",
+      "optimize an algorithm"
+    ],
+    "synonyms": [
+      "procedure",
+      "process"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "thuật toán 'al-go-rith-um'",
+        "correct": "thuật toán 'al-go-rith-um'",
+        "explain_vi": "Phát âm đúng là /ˈælɡərɪðəm/, không phải /ˈælɡəraɪðəm/"
+      }
+    ],
+    "grammar_patterns": [
+      "algorithm + for + noun/gerund"
+    ]
+  },
+  {
+    "word": "authentication",
+    "phonetic": "/ɔːˌθentɪˈkeɪʃən/",
+    "meaning_vi": "xác thực",
+    "meaning_en": "the process of verifying the identity of a user or device",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Two-factor authentication adds an extra layer of security.",
+        "vi": "Xác thực hai yếu tố thêm một lớp bảo mật bổ sung."
+      }
+    ],
+    "word_family": [
+      "authenticate (v)",
+      "authentic (adj)"
+    ],
+    "collocations": [
+      "two-factor authentication",
+      "biometric authentication",
+      "authentication process"
+    ],
+    "synonyms": [
+      "verification",
+      "identification"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "xác thực 'au-then-ti-ca-tion'",
+        "correct": "xác thực 'au-then-ti-ca-tion'",
+        "explain_vi": "Nhấn âm tiết thứ ba: /ɔːˌθentɪˈkeɪʃən/"
+      }
+    ],
+    "grammar_patterns": [
+      "authentication + of + noun"
+    ]
+  },
+  {
+    "word": "backup",
+    "phonetic": "/ˈbækʌp/",
+    "meaning_vi": "sao lưu",
+    "meaning_en": "a copy of data used to restore original data in case of loss",
+    "pos": "noun/verb",
+    "examples": [
+      {
+        "en": "Remember to back up your files regularly.",
+        "vi": "Nhớ sao lưu tập tin thường xuyên."
+      }
+    ],
+    "word_family": [
+      "back up (phrasal verb)"
+    ],
+    "collocations": [
+      "create a backup",
+      "backup system",
+      "backup plan"
+    ],
+    "synonyms": [
+      "copy",
+      "duplicate"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "sao lưu 'back-up'",
+        "correct": "sao lưu 'backup'",
+        "explain_vi": "Viết liền là 'backup', không gạch nối khi là danh từ"
+      }
+    ],
+    "grammar_patterns": [
+      "backup + of + noun",
+      "back up + noun"
+    ]
+  },
+  {
+    "word": "bandwidth",
+    "phonetic": "/ˈbændwɪdθ/",
+    "meaning_vi": "băng thông",
+    "meaning_en": "the maximum rate of data transfer across a network",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Streaming video requires high bandwidth.",
+        "vi": "Phát video trực tuyến yêu cầu băng thông cao."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "high bandwidth",
+      "bandwidth limit",
+      "bandwidth throttling"
+    ],
+    "synonyms": [
+      "data capacity"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "băng thông 'band-width'",
+        "correct": "băng thông 'bandwidth'",
+        "explain_vi": "Viết liền, không có gạch nối"
+      }
+    ],
+    "grammar_patterns": [
+      "bandwidth + is + adjective"
+    ]
+  },
+  {
+    "word": "binary",
+    "phonetic": "/ˈbaɪnəri/",
+    "meaning_vi": "nhị phân",
+    "meaning_en": "relating to a system of two digits (0 and 1) used in computing",
+    "pos": "adjective/noun",
+    "examples": [
+      {
+        "en": "Computers use binary code to process data.",
+        "vi": "Máy tính sử dụng mã nhị phân để xử lý dữ liệu."
+      }
+    ],
+    "word_family": [
+      "binarily (adv)"
+    ],
+    "collocations": [
+      "binary code",
+      "binary system",
+      "binary number"
+    ],
+    "synonyms": [
+      "base-2"
+    ],
+    "antonyms": [
+      "decimal"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "nhị phân 'bi-na-ry'",
+        "correct": "nhị phân 'bi-na-ry'",
+        "explain_vi": "Phát âm /ˈbaɪnəri/, nhấn âm đầu"
+      }
+    ],
+    "grammar_patterns": [
+      "binary + noun"
+    ]
+  },
+  {
+    "word": "biometric",
+    "phonetic": "/ˌbaɪəʊˈmetrɪk/",
+    "meaning_vi": "sinh trắc học",
+    "meaning_en": "relating to the measurement of unique physical characteristics for identification",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "Biometric authentication uses fingerprints or facial recognition.",
+        "vi": "Xác thực sinh trắc học sử dụng dấu vân tay hoặc nhận dạng khuôn mặt."
+      }
+    ],
+    "word_family": [
+      "biometrics (noun)"
+    ],
+    "collocations": [
+      "biometric data",
+      "biometric scanner",
+      "biometric system"
+    ],
+    "synonyms": [
+      "biological measurement"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "sinh trắc học 'bio-metric'",
+        "correct": "sinh trắc học 'biometric'",
+        "explain_vi": "Phát âm /ˌbaɪəʊˈmetrɪk/, nhấn âm thứ ba"
+      }
+    ],
+    "grammar_patterns": [
+      "biometric + noun"
+    ]
+  },
+  {
+    "word": "bot",
+    "phonetic": "/bɒt/",
+    "meaning_vi": "bot (chương trình tự động)",
+    "meaning_en": "a software program that performs automated tasks over the internet",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Chatbots can answer customer queries 24/7.",
+        "vi": "Chatbot có thể trả lời thắc mắc của khách hàng 24/7."
+      }
+    ],
+    "word_family": [
+      "robotic (adj)"
+    ],
+    "collocations": [
+      "chat bot",
+      "spam bot",
+      "bot network"
+    ],
+    "synonyms": [
+      "automaton",
+      "agent"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "bot 'bót'",
+        "correct": "bot 'bót'",
+        "explain_vi": "Phát âm /bɒt/, giống 'bọt' nhưng ngắn"
+      }
+    ],
+    "grammar_patterns": [
+      "bot + verb"
+    ]
+  },
+  {
+    "word": "browser",
+    "phonetic": "/ˈbraʊzər/",
+    "meaning_vi": "trình duyệt",
+    "meaning_en": "a software application for accessing the World Wide Web",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Which browser do you prefer: Chrome or Firefox?",
+        "vi": "Bạn thích trình duyệt nào hơn: Chrome hay Firefox?"
+      }
+    ],
+    "word_family": [
+      "browse (v)"
+    ],
+    "collocations": [
+      "web browser",
+      "browser history",
+      "browser extension"
+    ],
+    "synonyms": [
+      "web browser"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "trình duyệt 'brow-zer'",
+        "correct": "trình duyệt 'brow-zer'",
+        "explain_vi": "Phát âm /ˈbraʊzər/, nhấn âm đầu"
+      }
+    ],
+    "grammar_patterns": [
+      "browser + noun"
+    ]
+  },
+  {
+    "word": "cache",
+    "phonetic": "/kæʃ/",
+    "meaning_vi": "bộ nhớ đệm",
+    "meaning_en": "a temporary storage area for frequently accessed data",
+    "pos": "noun/verb",
+    "examples": [
+      {
+        "en": "Clear your browser cache to free up space.",
+        "vi": "Xóa bộ nhớ đệm của trình duyệt để giải phóng dung lượng."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "cache memory",
+      "clear cache",
+      "cache data"
+    ],
+    "synonyms": [
+      "buffer",
+      "temporary storage"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "bộ nhớ đệm 'ca-chê'",
+        "correct": "bộ nhớ đệm 'cache'",
+        "explain_vi": "Phát âm /kæʃ/, giống 'cash'"
+      }
+    ],
+    "grammar_patterns": [
+      "cache + noun",
+      "cache + verb"
+    ]
+  },
+  {
+    "word": "cloud",
+    "phonetic": "/klaʊd/",
+    "meaning_vi": "đám mây (dịch vụ lưu trữ trực tuyến)",
+    "meaning_en": "a network of remote servers used to store and manage data online",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I store my photos on the cloud.",
+        "vi": "Tôi lưu trữ ảnh trên đám mây."
+      }
+    ],
+    "word_family": [
+      "cloud-based (adj)"
+    ],
+    "collocations": [
+      "cloud storage",
+      "cloud computing",
+      "cloud service"
+    ],
+    "synonyms": [
+      "online storage"
+    ],
+    "antonyms": [
+      "local storage"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "đám mây 'cloud' như mây trời",
+        "correct": "đám mây 'cloud' trong công nghệ",
+        "explain_vi": "Nghĩa công nghệ khác với mây trời"
+      }
+    ],
+    "grammar_patterns": [
+      "on the cloud",
+      "in the cloud"
+    ]
+  },
+  {
+    "word": "compression",
+    "phonetic": "/kəmˈpreʃən/",
+    "meaning_vi": "nén (dữ liệu)",
+    "meaning_en": "the process of reducing the size of a file or data",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "File compression saves storage space.",
+        "vi": "Nén tập tin tiết kiệm không gian lưu trữ."
+      }
+    ],
+    "word_family": [
+      "compress (v)",
+      "compressed (adj)"
+    ],
+    "collocations": [
+      "data compression",
+      "compression algorithm",
+      "compression ratio"
+    ],
+    "synonyms": [
+      "zipping",
+      "shrinking"
+    ],
+    "antonyms": [
+      "decompression",
+      "expansion"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "nén 'com-press-ion'",
+        "correct": "nén 'com-press-ion'",
+        "explain_vi": "Phát âm /kəmˈpreʃən/, nhấn âm thứ hai"
+      }
+    ],
+    "grammar_patterns": [
+      "compression + of + noun"
+    ]
+  },
+  {
+    "word": "cookie",
+    "phonetic": "/ˈkʊki/",
+    "meaning_vi": "cookie (tệp tin lưu thông tin người dùng)",
+    "meaning_en": "a small piece of data stored on a user's computer by a web browser",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Websites use cookies to remember your preferences.",
+        "vi": "Các trang web sử dụng cookie để ghi nhớ sở thích của bạn."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "browser cookie",
+      "cookie policy",
+      "delete cookies"
+    ],
+    "synonyms": [
+      "tracking file"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "cookie 'cúc-ki'",
+        "correct": "cookie 'cúc-ki'",
+        "explain_vi": "Phát âm /ˈkʊki/, giống 'cooky'"
+      }
+    ],
+    "grammar_patterns": [
+      "cookie + verb"
+    ]
+  },
+  {
+    "word": "cybersecurity",
+    "phonetic": "/ˌsaɪbəsɪˈkjʊərɪti/",
+    "meaning_vi": "an ninh mạng",
+    "meaning_en": "the practice of protecting systems and networks from digital attacks",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Cybersecurity is crucial for businesses.",
+        "vi": "An ninh mạng rất quan trọng đối với doanh nghiệp."
+      }
+    ],
+    "word_family": [
+      "cyber (adj)"
+    ],
+    "collocations": [
+      "cybersecurity threat",
+      "cybersecurity measure",
+      "cybersecurity expert"
+    ],
+    "synonyms": [
+      "computer security",
+      "IT security"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "an ninh mạng 'cyber-se-cu-ri-ty'",
+        "correct": "an ninh mạng 'cyber-se-cu-ri-ty'",
+        "explain_vi": "Nhấn âm thứ ba: /ˌsaɪbəsɪˈkjʊərɪti/"
+      }
+    ],
+    "grammar_patterns": [
+      "cybersecurity + noun"
+    ]
+  },
+  {
+    "word": "debug",
+    "phonetic": "/diːˈbʌɡ/",
+    "meaning_vi": "gỡ lỗi",
+    "meaning_en": "to identify and remove errors from computer software or hardware",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "Developers spend hours debugging code.",
+        "vi": "Các nhà phát triển dành hàng giờ để gỡ lỗi mã."
+      }
+    ],
+    "word_family": [
+      "debugging (noun)",
+      "debugger (noun)"
+    ],
+    "collocations": [
+      "debug code",
+      "debug process",
+      "debug tool"
+    ],
+    "synonyms": [
+      "fix errors",
+      "troubleshoot"
+    ],
+    "antonyms": [
+      "introduce bugs"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "gỡ lỗi 'de-bug'",
+        "correct": "gỡ lỗi 'de-bug'",
+        "explain_vi": "Phát âm /diːˈbʌɡ/, nhấn âm thứ hai"
+      }
+    ],
+    "grammar_patterns": [
+      "debug + noun"
+    ]
+  },
+  {
+    "word": "domain",
+    "phonetic": "/dəˈmeɪn/",
+    "meaning_vi": "tên miền",
+    "meaning_en": "a unique name that identifies a website on the internet",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Our domain is example.com.",
+        "vi": "Tên miền của chúng tôi là example.com."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "domain name",
+      "domain registration",
+      "domain extension"
+    ],
+    "synonyms": [
+      "web address",
+      "URL"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "tên miền 'do-main'",
+        "correct": "tên miền 'do-main'",
+        "explain_vi": "Phát âm /dəˈmeɪn/, nhấn âm thứ hai"
+      }
+    ],
+    "grammar_patterns": [
+      "domain + noun"
+    ]
+  },
+  {
+    "word": "encryption",
+    "phonetic": "/ɪnˈkrɪpʃən/",
+    "meaning_vi": "mã hóa",
+    "meaning_en": "the process of converting data into a coded form to prevent unauthorized access",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "End-to-end encryption keeps messages private.",
+        "vi": "Mã hóa đầu cuối giữ tin nhắn riêng tư."
+      }
+    ],
+    "word_family": [
+      "encrypt (v)",
+      "encrypted (adj)"
+    ],
+    "collocations": [
+      "data encryption",
+      "encryption key",
+      "encryption algorithm"
+    ],
+    "synonyms": [
+      "coding",
+      "scrambling"
+    ],
+    "antonyms": [
+      "decryption"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "mã hóa 'en-cryp-tion'",
+        "correct": "mã hóa 'en-cryp-tion'",
+        "explain_vi": "Phát âm /ɪnˈkrɪpʃən/, nhấn âm thứ hai"
+      }
+    ],
+    "grammar_patterns": [
+      "encryption + of + noun"
+    ]
+  },
+  {
+    "word": "firewall",
+    "phonetic": "/ˈfaɪərwɔːl/",
+    "meaning_vi": "tường lửa",
+    "meaning_en": "a security system that monitors and controls incoming and outgoing network traffic",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The firewall blocks unauthorized access.",
+        "vi": "Tường lửa chặn truy cập trái phép."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "firewall protection",
+      "firewall rule",
+      "configure a firewall"
+    ],
+    "synonyms": [
+      "security barrier"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "tường lửa 'fire-wall'",
+        "correct": "tường lửa 'firewall'",
+        "explain_vi": "Viết liền, không gạch nối"
+      }
+    ],
+    "grammar_patterns": [
+      "firewall + noun"
+    ]
+  },
+  {
+    "word": "hub",
+    "phonetic": "/hʌb/",
+    "meaning_vi": "trung tâm (mạng)",
+    "meaning_en": "a central device that connects multiple network devices together",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The hub connects all computers in the office.",
+        "vi": "Trung tâm kết nối tất cả máy tính trong văn phòng."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "network hub",
+      "USB hub",
+      "hub and spoke"
+    ],
+    "synonyms": [
+      "switch",
+      "central point"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "trung tâm 'húp'",
+        "correct": "trung tâm 'húp'",
+        "explain_vi": "Phát âm /hʌb/, giống 'hạp' nhưng ngắn"
+      }
+    ],
+    "grammar_patterns": [
+      "hub + noun"
+    ]
+  },
+  {
+    "word": "hyperlink",
+    "phonetic": "/ˈhaɪpərlɪŋk/",
+    "meaning_vi": "siêu liên kết",
+    "meaning_en": "a clickable link in a document that leads to another document or website",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Click the hyperlink to open the page.",
+        "vi": "Nhấp vào siêu liên kết để mở trang."
+      }
+    ],
+    "word_family": [
+      "link (noun/verb)"
+    ],
+    "collocations": [
+      "create a hyperlink",
+      "hyperlink text",
+      "broken hyperlink"
+    ],
+    "synonyms": [
+      "link",
+      "connection"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "siêu liên kết 'hy-per-link'",
+        "correct": "siêu liên kết 'hy-per-link'",
+        "explain_vi": "Phát âm /ˈhaɪpərlɪŋk/, nhấn âm đầu"
+      }
+    ],
+    "grammar_patterns": [
+      "hyperlink + to + noun"
+    ]
+  },
+  {
+    "word": "malware",
+    "phonetic": "/ˈmælweər/",
+    "meaning_vi": "phần mềm độc hại",
+    "meaning_en": "software designed to disrupt, damage, or gain unauthorized access to a computer system",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Antivirus software protects against malware.",
+        "vi": "Phần mềm diệt virus bảo vệ khỏi phần mềm độc hại."
+      }
+    ],
+    "word_family": [
+      "malicious (adj)"
+    ],
+    "collocations": [
+      "malware attack",
+      "malware infection",
+      "remove malware"
+    ],
+    "synonyms": [
+      "virus",
+      "trojan",
+      "spyware"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "phần mềm độc hại 'mal-ware'",
+        "correct": "phần mềm độc hại 'mal-ware'",
+        "explain_vi": "Phát âm /ˈmælweər/, nhấn âm đầu"
+      }
+    ],
+    "grammar_patterns": [
+      "malware + noun"
+    ]
+  },
+  {
+    "word": "streaming",
+    "phonetic": "/ˈstriːmɪŋ/",
+    "meaning_vi": "phát trực tuyến",
+    "meaning_en": "the process of transmitting or receiving data (especially video and audio) over a computer network in a continuous flow",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Streaming has become the most popular way to watch movies.",
+        "vi": "Phát trực tuyến đã trở thành cách xem phim phổ biến nhất."
+      }
+    ],
+    "word_family": [
+      "stream (v)",
+      "streamer (n)"
+    ],
+    "collocations": [
+      "video streaming",
+      "streaming service",
+      "streaming platform"
+    ],
+    "synonyms": [
+      "online streaming",
+      "live streaming"
+    ],
+    "antonyms": [
+      "download"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I watch streaming video.",
+        "correct": "I watch videos via streaming.",
+        "explain_vi": "Không dùng 'streaming' như tính từ trước danh từ; nói 'via streaming' hoặc 'streaming video' (danh từ ghép)."
+      }
+    ],
+    "grammar_patterns": [
+      "streaming + noun (e.g., streaming service)",
+      "noun + streaming (e.g., video streaming)"
+    ]
+  },
+  {
+    "word": "patch",
+    "phonetic": "/pætʃ/",
+    "meaning_vi": "bản vá (phần mềm)",
+    "meaning_en": "a small piece of code inserted into a program to fix a bug or improve security",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "You should install the latest security patch.",
+        "vi": "Bạn nên cài đặt bản vá bảo mật mới nhất."
+      }
+    ],
+    "word_family": [
+      "patch (v)",
+      "patching (n)"
+    ],
+    "collocations": [
+      "security patch",
+      "software patch",
+      "apply a patch"
+    ],
+    "synonyms": [
+      "update",
+      "fix"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I need to patch update.",
+        "correct": "I need to apply a patch.",
+        "explain_vi": "Dùng 'apply a patch' thay vì 'patch update'."
+      }
+    ],
+    "grammar_patterns": [
+      "patch + noun (e.g., patch management)",
+      "apply + a + patch"
+    ]
+  },
+  {
+    "word": "virtual",
+    "phonetic": "/ˈvɜːrtʃuəl/",
+    "meaning_vi": "ảo, ảo hóa",
+    "meaning_en": "simulated or existing on a computer rather than in physical reality",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "We had a virtual meeting via Zoom.",
+        "vi": "Chúng tôi đã có một cuộc họp ảo qua Zoom."
+      }
+    ],
+    "word_family": [
+      "virtually (adv)",
+      "virtualization (n)"
+    ],
+    "collocations": [
+      "virtual reality",
+      "virtual meeting",
+      "virtual assistant"
+    ],
+    "synonyms": [
+      "simulated",
+      "online"
+    ],
+    "antonyms": [
+      "physical",
+      "real"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "We met virtually in real life.",
+        "correct": "We met virtually online.",
+        "explain_vi": "'Virtually' không dùng với 'in real life'; thay bằng 'online'."
+      }
+    ],
+    "grammar_patterns": [
+      "virtual + noun",
+      "be + virtual"
+    ]
+  },
+  {
+    "word": "bandwidth",
+    "phonetic": "/ˈbændwɪdθ/",
+    "meaning_vi": "băng thông",
+    "meaning_en": "the maximum rate of data transfer across a given path",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The bandwidth is not enough for streaming 4K video.",
+        "vi": "Băng thông không đủ để phát video 4K."
+      }
+    ],
+    "word_family": [
+      "bandwidth (n)"
+    ],
+    "collocations": [
+      "high bandwidth",
+      "bandwidth limit",
+      "bandwidth usage"
+    ],
+    "synonyms": [
+      "data capacity",
+      "throughput"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "My internet bandwidth is slow.",
+        "correct": "My internet bandwidth is low.",
+        "explain_vi": "Dùng 'low' thay vì 'slow' cho bandwidth."
+      }
+    ],
+    "grammar_patterns": [
+      "bandwidth + noun (e.g., bandwidth management)",
+      "adjective + bandwidth"
+    ]
+  },
+  {
+    "word": "latency",
+    "phonetic": "/ˈleɪtənsi/",
+    "meaning_vi": "độ trễ",
+    "meaning_en": "the delay before a transfer of data begins following an instruction",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Low latency is crucial for online gaming.",
+        "vi": "Độ trễ thấp rất quan trọng cho chơi game trực tuyến."
+      }
+    ],
+    "word_family": [
+      "latent (adj)",
+      "latently (adv)"
+    ],
+    "collocations": [
+      "low latency",
+      "high latency",
+      "network latency"
+    ],
+    "synonyms": [
+      "delay",
+      "lag"
+    ],
+    "antonyms": [
+      "responsiveness"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "The latency is very slow.",
+        "correct": "The latency is very high.",
+        "explain_vi": "Dùng 'high' thay vì 'slow' cho latency."
+      }
+    ],
+    "grammar_patterns": [
+      "latency + noun (e.g., latency time)",
+      "adjective + latency"
+    ]
+  },
+  {
+    "word": "encryption",
+    "phonetic": "/ɪnˈkrɪpʃən/",
+    "meaning_vi": "mã hóa",
+    "meaning_en": "the process of converting information or data into a code to prevent unauthorized access",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Encryption protects your data from hackers.",
+        "vi": "Mã hóa bảo vệ dữ liệu của bạn khỏi tin tặc."
+      }
+    ],
+    "word_family": [
+      "encrypt (v)",
+      "encrypted (adj)"
+    ],
+    "collocations": [
+      "data encryption",
+      "encryption key",
+      "end-to-end encryption"
+    ],
+    "synonyms": [
+      "encoding",
+      "ciphering"
+    ],
+    "antonyms": [
+      "decryption"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Encryption is a method to secure data.",
+        "correct": "Encryption is a method of securing data.",
+        "explain_vi": "Dùng 'of securing' thay vì 'to secure' sau 'method'."
+      }
+    ],
+    "grammar_patterns": [
+      "encryption + noun (e.g., encryption software)",
+      "noun + encryption (e.g., data encryption)"
+    ]
+  },
+  {
+    "word": "firewall",
+    "phonetic": "/ˈfaɪərwɔːl/",
+    "meaning_vi": "tường lửa",
+    "meaning_en": "a network security system that monitors and controls incoming and outgoing network traffic",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The firewall blocked the suspicious connection.",
+        "vi": "Tường lửa đã chặn kết nối đáng ngờ."
+      }
+    ],
+    "word_family": [
+      "firewall (v)"
+    ],
+    "collocations": [
+      "configure a firewall",
+      "firewall protection",
+      "bypass a firewall"
+    ],
+    "synonyms": [
+      "security barrier"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Firewall is a software.",
+        "correct": "A firewall is software.",
+        "explain_vi": "Dùng mạo từ 'a' trước 'firewall'."
+      }
+    ],
+    "grammar_patterns": [
+      "firewall + noun (e.g., firewall settings)",
+      "the + firewall"
+    ]
+  },
+  {
+    "word": "malware",
+    "phonetic": "/ˈmælweər/",
+    "meaning_vi": "phần mềm độc hại",
+    "meaning_en": "software that is specifically designed to disrupt, damage, or gain unauthorized access to a computer system",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Malware can steal your personal information.",
+        "vi": "Phần mềm độc hại có thể đánh cắp thông tin cá nhân của bạn."
+      }
+    ],
+    "word_family": [
+      "malicious (adj)",
+      "malware (n)"
+    ],
+    "collocations": [
+      "malware attack",
+      "malware protection",
+      "remove malware"
+    ],
+    "synonyms": [
+      "malicious software",
+      "virus (general)"
+    ],
+    "antonyms": [
+      "antivirus"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I got a malware.",
+        "correct": "I got malware.",
+        "explain_vi": "Malware là danh từ không đếm được, không dùng 'a'."
+      }
+    ],
+    "grammar_patterns": [
+      "malware + noun (e.g., malware infection)",
+      "be infected with malware"
+    ]
+  },
+  {
+    "word": "phishing",
+    "phonetic": "/ˈfɪʃɪŋ/",
+    "meaning_vi": "lừa đảo qua mạng (giả mạo)",
+    "meaning_en": "the fraudulent practice of sending emails or other messages purporting to be from reputable companies to induce individuals to reveal personal information",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Phishing emails often look legitimate.",
+        "vi": "Email lừa đảo thường trông có vẻ hợp pháp."
+      }
+    ],
+    "word_family": [
+      "phish (v)",
+      "phisher (n)"
+    ],
+    "collocations": [
+      "phishing attack",
+      "phishing email",
+      "fall for phishing"
+    ],
+    "synonyms": [
+      "scam",
+      "fraud"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I received a phishing.",
+        "correct": "I received a phishing email.",
+        "explain_vi": "Phishing là danh từ không đếm được; cần danh từ đi kèm như 'email'."
+      }
+    ],
+    "grammar_patterns": [
+      "phishing + noun (e.g., phishing scam)",
+      "be a victim of phishing"
+    ]
+  },
+  {
+    "word": "spam",
+    "phonetic": "/spæm/",
+    "meaning_vi": "thư rác",
+    "meaning_en": "irrelevant or unsolicited messages sent over the internet, typically to a large number of users",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "My spam folder is full of unwanted emails.",
+        "vi": "Thư mục thư rác của tôi đầy những email không mong muốn."
+      }
+    ],
+    "word_family": [
+      "spam (v)",
+      "spammer (n)"
+    ],
+    "collocations": [
+      "spam filter",
+      "spam message",
+      "mark as spam"
+    ],
+    "synonyms": [
+      "junk mail",
+      "unsolicited mail"
+    ],
+    "antonyms": [
+      "ham (legitimate email)"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I got a spam.",
+        "correct": "I got spam.",
+        "explain_vi": "Spam là danh từ không đếm được."
+      }
+    ],
+    "grammar_patterns": [
+      "spam + noun (e.g., spam folder)",
+      "be considered spam"
+    ]
+  },
+  {
+    "word": "protocol",
+    "phonetic": "/ˈproʊtəkɒl/",
+    "meaning_vi": "giao thức",
+    "meaning_en": "a set of rules governing the exchange of data between devices",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "HTTP is a protocol used for web communication.",
+        "vi": "HTTP là một giao thức được sử dụng cho truyền thông web."
+      }
+    ],
+    "word_family": [
+      "protocol (n)",
+      "protocol-based (adj)"
+    ],
+    "collocations": [
+      "network protocol",
+      "communication protocol",
+      "protocol stack"
+    ],
+    "synonyms": [
+      "standard",
+      "convention"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Protocol is a rule.",
+        "correct": "A protocol is a set of rules.",
+        "explain_vi": "Protocol cần mạo từ và là tập hợp các quy tắc, không chỉ một quy tắc."
+      }
+    ],
+    "grammar_patterns": [
+      "protocol + noun (e.g., protocol layer)",
+      "follow + protocol"
+    ]
+  },
+  {
+    "word": "router",
+    "phonetic": "/ˈruːtər/",
+    "meaning_vi": "bộ định tuyến",
+    "meaning_en": "a device that forwards data packets between computer networks",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The router connects your home network to the internet.",
+        "vi": "Bộ định tuyến kết nối mạng gia đình bạn với internet."
+      }
+    ],
+    "word_family": [
+      "route (v)",
+      "routing (n)"
+    ],
+    "collocations": [
+      "wireless router",
+      "router configuration",
+      "reset the router"
+    ],
+    "synonyms": [
+      "network hub",
+      "switch (different)"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Router is a device.",
+        "correct": "A router is a device.",
+        "explain_vi": "Thiếu mạo từ 'a'."
+      }
+    ],
+    "grammar_patterns": [
+      "router + noun (e.g., router settings)",
+      "use a router"
+    ]
+  },
+  {
+    "word": "server",
+    "phonetic": "/ˈsɜːrvər/",
+    "meaning_vi": "máy chủ",
+    "meaning_en": "a computer or system that provides resources, data, services, or programs to other computers over a network",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The website is hosted on a remote server.",
+        "vi": "Trang web được lưu trữ trên một máy chủ từ xa."
+      }
+    ],
+    "word_family": [
+      "serve (v)",
+      "server-side (adj)"
+    ],
+    "collocations": [
+      "web server",
+      "server room",
+      "server downtime"
+    ],
+    "synonyms": [
+      "host",
+      "mainframe"
+    ],
+    "antonyms": [
+      "client"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Server is a computer.",
+        "correct": "A server is a computer.",
+        "explain_vi": "Thiếu mạo từ 'a'."
+      }
+    ],
+    "grammar_patterns": [
+      "server + noun (e.g., server software)",
+      "run on a server"
+    ]
+  },
+  {
+    "word": "interface",
+    "phonetic": "/ˈɪntərfeɪs/",
+    "meaning_vi": "giao diện",
+    "meaning_en": "a point of interaction between a user and a computer system or between two systems",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The user interface is intuitive and easy to use.",
+        "vi": "Giao diện người dùng trực quan và dễ sử dụng."
+      }
+    ],
+    "word_family": [
+      "interface (v)",
+      "interfacing (n)"
+    ],
+    "collocations": [
+      "user interface",
+      "graphical interface",
+      "interface design"
+    ],
+    "synonyms": [
+      "UI",
+      "connection point"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Interface is a screen.",
+        "correct": "An interface is a means of interaction.",
+        "explain_vi": "Interface không chỉ là màn hình; nó là điểm tương tác."
+      }
+    ],
+    "grammar_patterns": [
+      "interface + noun (e.g., interface cable)",
+      "the interface between X and Y"
+    ]
+  },
+  {
+    "word": "cloud",
+    "phonetic": "/klaʊd/",
+    "meaning_vi": "đám mây (lưu trữ đám mây)",
+    "meaning_en": "a network of remote servers hosted on the internet to store, manage, and process data",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I store my photos on the cloud.",
+        "vi": "Tôi lưu trữ ảnh của mình trên đám mây."
+      }
+    ],
+    "word_family": [
+      "cloud-based (adj)",
+      "cloud computing (n)"
+    ],
+    "collocations": [
+      "cloud storage",
+      "cloud service",
+      "the cloud"
+    ],
+    "synonyms": [
+      "online storage",
+      "remote servers"
+    ],
+    "antonyms": [
+      "local storage"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I saved it in cloud.",
+        "correct": "I saved it in the cloud.",
+        "explain_vi": "Cần mạo từ 'the' trước 'cloud'."
+      }
+    ],
+    "grammar_patterns": [
+      "the + cloud",
+      "cloud + noun (e.g., cloud computing)"
+    ]
+  },
+  {
+    "word": "download",
+    "phonetic": "/daʊnˈloʊd/",
+    "meaning_vi": "tải xuống",
+    "meaning_en": "to copy data from one computer system to another, typically from a server to a local device",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "Please download the attachment.",
+        "vi": "Vui lòng tải xuống tệp đính kèm."
+      }
+    ],
+    "word_family": [
+      "download (n)",
+      "downloading (n)"
+    ],
+    "collocations": [
+      "download a file",
+      "download speed",
+      "download link"
+    ],
+    "synonyms": [
+      "transfer",
+      "retrieve"
+    ],
+    "antonyms": [
+      "upload"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I download it from internet.",
+        "correct": "I download it from the internet.",
+        "explain_vi": "Cần mạo từ 'the' trước 'internet'."
+      }
+    ],
+    "grammar_patterns": [
+      "download + noun (e.g., download a document)",
+      "download from + noun"
+    ]
+  },
+  {
+    "word": "upload",
+    "phonetic": "/ʌpˈloʊd/",
+    "meaning_vi": "tải lên",
+    "meaning_en": "to transfer data from a local device to a remote system such as a server",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "You can upload your photos to the website.",
+        "vi": "Bạn có thể tải ảnh lên trang web."
+      }
+    ],
+    "word_family": [
+      "upload (n)",
+      "uploading (n)"
+    ],
+    "collocations": [
+      "upload a video",
+      "upload speed",
+      "upload button"
+    ],
+    "synonyms": [
+      "post",
+      "send"
+    ],
+    "antonyms": [
+      "download"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I upload it to cloud.",
+        "correct": "I upload it to the cloud.",
+        "explain_vi": "Cần 'the' trước 'cloud'."
+      }
+    ],
+    "grammar_patterns": [
+      "upload + noun (e.g., upload a file)",
+      "upload to + noun"
+    ]
+  },
+  {
+    "word": "digital",
+    "phonetic": "/ˈdɪdʒɪtl/",
+    "meaning_vi": "kỹ thuật số",
+    "meaning_en": "relating to or using signals or information represented by discrete digits (0 and 1)",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "We live in a digital age.",
+        "vi": "Chúng ta sống trong thời đại kỹ thuật số."
+      }
+    ],
+    "word_family": [
+      "digitally (adv)",
+      "digitalize (v)"
+    ],
+    "collocations": [
+      "digital technology",
+      "digital transformation",
+      "digital world"
+    ],
+    "synonyms": [
+      "electronic",
+      "computerized"
+    ],
+    "antonyms": [
+      "analog",
+      "physical"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Digital is a noun.",
+        "correct": "Digital is an adjective.",
+        "explain_vi": "Digital là tính từ, không phải danh từ."
+      }
+    ],
+    "grammar_patterns": [
+      "digital + noun",
+      "be digital"
+    ]
+  },
+  {
+    "word": "network",
+    "phonetic": "/ˈnetwɜːrk/",
+    "meaning_vi": "mạng lưới, mạng",
+    "meaning_en": "a group of interconnected computers or devices that can communicate and share resources",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The company has a secure network.",
+        "vi": "Công ty có một mạng lưới an toàn."
+      }
+    ],
+    "word_family": [
+      "networking (n)",
+      "networked (adj)"
+    ],
+    "collocations": [
+      "computer network",
+      "network security",
+      "social network"
+    ],
+    "synonyms": [
+      "system",
+      "web"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Network is a group of computers.",
+        "correct": "A network is a group of interconnected computers.",
+        "explain_vi": "Thiếu mạo từ và từ 'interconnected'."
+      }
+    ],
+    "grammar_patterns": [
+      "network + noun (e.g., network administrator)",
+      "be on a network"
+    ]
+  },
+  {
+    "word": "device",
+    "phonetic": "/dɪˈvaɪs/",
+    "meaning_vi": "thiết bị",
+    "meaning_en": "a piece of equipment or a machine designed for a specific purpose",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "You can connect multiple devices to the network.",
+        "vi": "Bạn có thể kết nối nhiều thiết bị với mạng."
+      }
+    ],
+    "word_family": [
+      "device (n)"
+    ],
+    "collocations": [
+      "electronic device",
+      "mobile device",
+      "device management"
+    ],
+    "synonyms": [
+      "gadget",
+      "apparatus"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Device is a tool.",
+        "correct": "A device is a tool.",
+        "explain_vi": "Thiếu mạo từ 'a'."
+      }
+    ],
+    "grammar_patterns": [
+      "device + noun (e.g., device driver)",
+      "use a device"
+    ]
+  }
+]

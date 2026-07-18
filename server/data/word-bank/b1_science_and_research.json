@@ -1,0 +1,3208 @@
+[
+  {
+    "word": "research",
+    "phonetic": "/rɪˈsɜːrtʃ/",
+    "meaning_vi": "nghiên cứu",
+    "meaning_en": "systematic investigation to establish facts or principles",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She is doing research on climate change.",
+        "vi": "Cô ấy đang nghiên cứu về biến đổi khí hậu."
+      }
+    ],
+    "word_family": [
+      "researcher (n)"
+    ],
+    "collocations": [
+      "do research",
+      "conduct research",
+      "research project"
+    ],
+    "synonyms": [
+      "study",
+      "investigation"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I research about cancer",
+        "correct": "I research cancer",
+        "explain_vi": "Không dùng 'about' sau 'research' khi là động từ"
+      }
+    ],
+    "grammar_patterns": [
+      "do/conduct + research"
+    ]
+  },
+  {
+    "word": "experiment",
+    "phonetic": "/ɪkˈsperɪmənt/",
+    "meaning_vi": "thí nghiệm",
+    "meaning_en": "a scientific procedure to test a hypothesis",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We performed an experiment in the lab.",
+        "vi": "Chúng tôi đã thực hiện một thí nghiệm trong phòng thí nghiệm."
+      }
+    ],
+    "word_family": [
+      "experimental (adj)",
+      "experiment (v)"
+    ],
+    "collocations": [
+      "conduct an experiment",
+      "lab experiment",
+      "experiment results"
+    ],
+    "synonyms": [
+      "test",
+      "trial"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I did an experience",
+        "correct": "I did an experiment",
+        "explain_vi": "Không nhầm 'experience' (kinh nghiệm) với 'experiment' (thí nghiệm)"
+      }
+    ],
+    "grammar_patterns": [
+      "do/conduct + an experiment"
+    ]
+  },
+  {
+    "word": "theory",
+    "phonetic": "/ˈθɪri/",
+    "meaning_vi": "lý thuyết, giả thuyết",
+    "meaning_en": "a set of principles explaining a phenomenon",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Einstein's theory of relativity changed science.",
+        "vi": "Thuyết tương đối của Einstein đã thay đổi khoa học."
+      }
+    ],
+    "word_family": [
+      "theoretical (adj)",
+      "theorize (v)"
+    ],
+    "collocations": [
+      "scientific theory",
+      "theory of evolution",
+      "test a theory"
+    ],
+    "synonyms": [
+      "hypothesis",
+      "principle"
+    ],
+    "antonyms": [
+      "practice"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "In theory, it work",
+        "correct": "In theory, it works",
+        "explain_vi": "Chia động từ đúng theo chủ ngữ"
+      }
+    ],
+    "grammar_patterns": [
+      "theory + of + noun",
+      "in theory"
+    ]
+  },
+  {
+    "word": "data",
+    "phonetic": "/ˈdeɪtə/",
+    "meaning_vi": "dữ liệu",
+    "meaning_en": "facts and statistics collected for analysis",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The data shows a clear trend.",
+        "vi": "Dữ liệu cho thấy một xu hướng rõ ràng."
+      }
+    ],
+    "word_family": [
+      "database (n)"
+    ],
+    "collocations": [
+      "collect data",
+      "analyze data",
+      "data set"
+    ],
+    "synonyms": [
+      "information",
+      "statistics"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "The data is... (số ít)",
+        "correct": "The data are... (số nhiều, trong văn phong khoa học)",
+        "explain_vi": "Trong khoa học, 'data' thường được dùng như danh từ số nhiều"
+      }
+    ],
+    "grammar_patterns": [
+      "data + plural verb (formal)"
+    ]
+  },
+  {
+    "word": "analysis",
+    "phonetic": "/əˈnæləsɪs/",
+    "meaning_vi": "phân tích",
+    "meaning_en": "detailed examination of something",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The analysis of the sample took two days.",
+        "vi": "Việc phân tích mẫu mất hai ngày."
+      }
+    ],
+    "word_family": [
+      "analyze (v)",
+      "analytical (adj)"
+    ],
+    "collocations": [
+      "data analysis",
+      "chemical analysis",
+      "in-depth analysis"
+    ],
+    "synonyms": [
+      "examination",
+      "study"
+    ],
+    "antonyms": [
+      "synthesis"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "We analysis the results",
+        "correct": "We analyzed the results",
+        "explain_vi": "Nhầm danh từ 'analysis' với động từ 'analyze'"
+      }
+    ],
+    "grammar_patterns": [
+      "analysis + of + noun"
+    ]
+  },
+  {
+    "word": "hypothesis",
+    "phonetic": "/haɪˈpɒθəsɪs/",
+    "meaning_vi": "giả thuyết",
+    "meaning_en": "a proposed explanation for a phenomenon",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Our hypothesis was confirmed by the experiment.",
+        "vi": "Giả thuyết của chúng tôi đã được xác nhận bởi thí nghiệm."
+      }
+    ],
+    "word_family": [
+      "hypothesize (v)",
+      "hypothetical (adj)"
+    ],
+    "collocations": [
+      "form a hypothesis",
+      "test a hypothesis",
+      "working hypothesis"
+    ],
+    "synonyms": [
+      "theory",
+      "supposition"
+    ],
+    "antonyms": [
+      "fact"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "This is a hypothesis",
+        "correct": "This is a hypothesis (phát âm /haɪˈpɒθəsɪs/)",
+        "explain_vi": "Chú ý phát âm đúng, không đọc là /haɪˈpɒθɪsɪs/"
+      }
+    ],
+    "grammar_patterns": [
+      "hypothesis + that + clause"
+    ]
+  },
+  {
+    "word": "laboratory",
+    "phonetic": "/ləˈbɒrətri/",
+    "meaning_vi": "phòng thí nghiệm",
+    "meaning_en": "a room for scientific experiments",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The laboratory is equipped with modern tools.",
+        "vi": "Phòng thí nghiệm được trang bị các công cụ hiện đại."
+      }
+    ],
+    "word_family": [
+      "lab (abbreviation)"
+    ],
+    "collocations": [
+      "laboratory test",
+      "laboratory equipment",
+      "work in a laboratory"
+    ],
+    "synonyms": [
+      "lab",
+      "research facility"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go to laboratory",
+        "correct": "I go to the laboratory",
+        "explain_vi": "Cần mạo từ 'the' trước 'laboratory'"
+      }
+    ],
+    "grammar_patterns": [
+      "in/at + the + laboratory"
+    ]
+  },
+  {
+    "word": "observation",
+    "phonetic": "/ˌɒbzərˈveɪʃn/",
+    "meaning_vi": "quan sát",
+    "meaning_en": "the act of watching carefully",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The scientist made careful observations.",
+        "vi": "Nhà khoa học đã thực hiện những quan sát cẩn thận."
+      }
+    ],
+    "word_family": [
+      "observe (v)",
+      "observational (adj)"
+    ],
+    "collocations": [
+      "make an observation",
+      "under observation",
+      "observation skills"
+    ],
+    "synonyms": [
+      "monitoring",
+      "inspection"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I observation the stars",
+        "correct": "I observe the stars",
+        "explain_vi": "Nhầm danh từ 'observation' với động từ 'observe'"
+      }
+    ],
+    "grammar_patterns": [
+      "make + an observation"
+    ]
+  },
+  {
+    "word": "variable",
+    "phonetic": "/ˈveəriəbl/",
+    "meaning_vi": "biến số",
+    "meaning_en": "a factor that can change in an experiment",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Temperature is an important variable.",
+        "vi": "Nhiệt độ là một biến số quan trọng."
+      }
+    ],
+    "word_family": [
+      "vary (v)",
+      "variation (n)"
+    ],
+    "collocations": [
+      "independent variable",
+      "dependent variable",
+      "control variable"
+    ],
+    "synonyms": [
+      "factor",
+      "parameter"
+    ],
+    "antonyms": [
+      "constant"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "This variable is constant",
+        "correct": "This variable is not constant",
+        "explain_vi": "Biến số có nghĩa là thay đổi, nên không thể là hằng số"
+      }
+    ],
+    "grammar_patterns": [
+      "variable + in + noun"
+    ]
+  },
+  {
+    "word": "sample",
+    "phonetic": "/ˈsɑːmpl/",
+    "meaning_vi": "mẫu",
+    "meaning_en": "a small part representing the whole",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We collected a sample of water.",
+        "vi": "Chúng tôi đã thu thập một mẫu nước."
+      }
+    ],
+    "word_family": [
+      "sampling (n)"
+    ],
+    "collocations": [
+      "take a sample",
+      "blood sample",
+      "sample size"
+    ],
+    "synonyms": [
+      "specimen",
+      "example"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "We need more samples to analyze",
+        "correct": "We need more samples to analyze",
+        "explain_vi": "Chú ý số nhiều: samples"
+      }
+    ],
+    "grammar_patterns": [
+      "a sample + of + noun"
+    ]
+  },
+  {
+    "word": "conclusion",
+    "phonetic": "/kənˈkluːʒn/",
+    "meaning_vi": "kết luận",
+    "meaning_en": "a final decision or judgment based on evidence",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The conclusion of the study was surprising.",
+        "vi": "Kết luận của nghiên cứu thật bất ngờ."
+      }
+    ],
+    "word_family": [
+      "conclude (v)",
+      "conclusive (adj)"
+    ],
+    "collocations": [
+      "draw a conclusion",
+      "reach a conclusion",
+      "in conclusion"
+    ],
+    "synonyms": [
+      "inference",
+      "deduction"
+    ],
+    "antonyms": [
+      "premise"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "In conclusion, I think...",
+        "correct": "In conclusion, I think... (đúng)",
+        "explain_vi": "Cụm từ 'in conclusion' đúng, nhưng đừng lạm dụng"
+      }
+    ],
+    "grammar_patterns": [
+      "in + conclusion",
+      "conclusion + that + clause"
+    ]
+  },
+  {
+    "word": "evidence",
+    "phonetic": "/ˈevɪdəns/",
+    "meaning_vi": "bằng chứng",
+    "meaning_en": "facts supporting a belief or proposition",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "There is strong evidence for the theory.",
+        "vi": "Có bằng chứng mạnh mẽ cho lý thuyết này."
+      }
+    ],
+    "word_family": [
+      "evident (adj)",
+      "evidently (adv)"
+    ],
+    "collocations": [
+      "provide evidence",
+      "evidence of",
+      "empirical evidence"
+    ],
+    "synonyms": [
+      "proof",
+      "confirmation"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "These evidences are clear",
+        "correct": "This evidence is clear",
+        "explain_vi": "Evidence là danh từ không đếm được, không có số nhiều"
+      }
+    ],
+    "grammar_patterns": [
+      "evidence + of/for + noun"
+    ]
+  },
+  {
+    "word": "phenomenon",
+    "phonetic": "/fəˈnɒmɪnən/",
+    "meaning_vi": "hiện tượng",
+    "meaning_en": "an observable fact or event",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The Northern Lights are a natural phenomenon.",
+        "vi": "Cực quang là một hiện tượng tự nhiên."
+      }
+    ],
+    "word_family": [
+      "phenomena (plural)",
+      "phenomenal (adj)"
+    ],
+    "collocations": [
+      "natural phenomenon",
+      "social phenomenon",
+      "scientific phenomenon"
+    ],
+    "synonyms": [
+      "occurrence",
+      "event"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "This phenomenon is rare",
+        "correct": "This phenomenon is rare (số ít)",
+        "explain_vi": "Số nhiều là 'phenomena', không phải 'phenomenons'"
+      }
+    ],
+    "grammar_patterns": [
+      "phenomenon + of + noun"
+    ]
+  },
+  {
+    "word": "result",
+    "phonetic": "/rɪˈzʌlt/",
+    "meaning_vi": "kết quả",
+    "meaning_en": "the outcome of an experiment or process",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The results were published in a journal.",
+        "vi": "Kết quả đã được công bố trên một tạp chí."
+      }
+    ],
+    "word_family": [
+      "result (v)",
+      "resulting (adj)"
+    ],
+    "collocations": [
+      "test results",
+      "as a result",
+      "result from"
+    ],
+    "synonyms": [
+      "outcome",
+      "consequence"
+    ],
+    "antonyms": [
+      "cause"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "The result is depend on...",
+        "correct": "The result depends on...",
+        "explain_vi": "Không dùng 'is depend', dùng 'depends'"
+      }
+    ],
+    "grammar_patterns": [
+      "result + of + noun",
+      "as a result of"
+    ]
+  },
+  {
+    "word": "method",
+    "phonetic": "/ˈmeθəd/",
+    "meaning_vi": "phương pháp",
+    "meaning_en": "a systematic way of doing something",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We need a different method to solve this.",
+        "vi": "Chúng ta cần một phương pháp khác để giải quyết vấn đề này."
+      }
+    ],
+    "word_family": [
+      "methodical (adj)",
+      "methodology (n)"
+    ],
+    "collocations": [
+      "scientific method",
+      "research method",
+      "method of analysis"
+    ],
+    "synonyms": [
+      "technique",
+      "approach"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "This method is more better",
+        "correct": "This method is better",
+        "explain_vi": "Không dùng 'more better' vì 'better' đã là so sánh hơn"
+      }
+    ],
+    "grammar_patterns": [
+      "method + of + noun/gerund"
+    ]
+  },
+  {
+    "word": "process",
+    "phonetic": "/ˈprəʊses/",
+    "meaning_vi": "quá trình",
+    "meaning_en": "a series of actions or steps",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The process takes about an hour.",
+        "vi": "Quá trình này mất khoảng một giờ."
+      }
+    ],
+    "word_family": [
+      "process (v)",
+      "processing (n)"
+    ],
+    "collocations": [
+      "chemical process",
+      "learning process",
+      "in the process of"
+    ],
+    "synonyms": [
+      "procedure",
+      "procedure"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "The process is complicate",
+        "correct": "The process is complicated",
+        "explain_vi": "Dùng tính từ 'complicated' thay vì 'complicate'"
+      }
+    ],
+    "grammar_patterns": [
+      "process + of + noun/gerund"
+    ]
+  },
+  {
+    "word": "discovery",
+    "phonetic": "/dɪˈskʌvəri/",
+    "meaning_vi": "khám phá",
+    "meaning_en": "finding something unknown",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The discovery of penicillin saved many lives.",
+        "vi": "Việc khám phá ra penicillin đã cứu nhiều mạng sống."
+      }
+    ],
+    "word_family": [
+      "discover (v)",
+      "discoverer (n)"
+    ],
+    "collocations": [
+      "make a discovery",
+      "scientific discovery",
+      "breakthrough discovery"
+    ],
+    "synonyms": [
+      "finding",
+      "breakthrough"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I discovery a new species",
+        "correct": "I discovered a new species",
+        "explain_vi": "Nhầm danh từ với động từ 'discover'"
+      }
+    ],
+    "grammar_patterns": [
+      "discovery + of + noun"
+    ]
+  },
+  {
+    "word": "invention",
+    "phonetic": "/ɪnˈvenʃn/",
+    "meaning_vi": "phát minh",
+    "meaning_en": "a new device or process created by someone",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The telephone was a great invention.",
+        "vi": "Điện thoại là một phát minh vĩ đại."
+      }
+    ],
+    "word_family": [
+      "invent (v)",
+      "inventor (n)"
+    ],
+    "collocations": [
+      "patent an invention",
+      "modern invention",
+      "invention of"
+    ],
+    "synonyms": [
+      "creation",
+      "innovation"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "He invented a new invention",
+        "correct": "He invented something new",
+        "explain_vi": "Tránh lặp từ: 'invent' + 'invention' không tự nhiên"
+      }
+    ],
+    "grammar_patterns": [
+      "invention + of + noun"
+    ]
+  },
+  {
+    "word": "technology",
+    "phonetic": "/tekˈnɒlədʒi/",
+    "meaning_vi": "công nghệ",
+    "meaning_en": "application of scientific knowledge for practical use",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Technology is advancing rapidly.",
+        "vi": "Công nghệ đang phát triển nhanh chóng."
+      }
+    ],
+    "word_family": [
+      "technological (adj)",
+      "technologist (n)"
+    ],
+    "collocations": [
+      "modern technology",
+      "information technology",
+      "technology company"
+    ],
+    "synonyms": [
+      "tech",
+      "engineering"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "The technology is develop",
+        "correct": "Technology is developing",
+        "explain_vi": "Dùng thì tiếp diễn và không có 'the' khi nói chung"
+      }
+    ],
+    "grammar_patterns": [
+      "technology + verb (singular)"
+    ]
+  },
+  {
+    "word": "scientist",
+    "phonetic": "/ˈsaɪəntɪst/",
+    "meaning_vi": "nhà khoa học",
+    "meaning_en": "a person who studies science",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Many scientists work in research institutes.",
+        "vi": "Nhiều nhà khoa học làm việc trong các viện nghiên cứu."
+      }
+    ],
+    "word_family": [
+      "science (n)",
+      "scientific (adj)"
+    ],
+    "collocations": [
+      "research scientist",
+      "computer scientist",
+      "team of scientists"
+    ],
+    "synonyms": [
+      "researcher",
+      "scholar"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "He is a science",
+        "correct": "He is a scientist",
+        "explain_vi": "Nhầm lẫn giữa 'science' (khoa học) và 'scientist' (nhà khoa học)"
+      }
+    ],
+    "grammar_patterns": [
+      "scientist + verb"
+    ]
+  },
+  {
+    "word": "experimental",
+    "phonetic": "/ɪkˌsper.ɪˈmen.təl/",
+    "meaning_vi": "thuộc về thí nghiệm, dựa trên thí nghiệm",
+    "meaning_en": "relating to or based on experiment",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The experimental results were surprising.",
+        "vi": "Kết quả thí nghiệm thật bất ngờ."
+      },
+      {
+        "en": "They used an experimental method.",
+        "vi": "Họ đã sử dụng một phương pháp thí nghiệm."
+      }
+    ],
+    "word_family": [
+      "experiment (n)",
+      "experimentally (adv)"
+    ],
+    "collocations": [
+      "experimental data",
+      "experimental group",
+      "experimental design"
+    ],
+    "synonyms": [
+      "trial",
+      "test",
+      "pilot"
+    ],
+    "antonyms": [
+      "theoretical",
+      "established"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "experiment results",
+        "correct": "experimental results",
+        "explain_vi": "Cần dùng tính từ 'experimental' để bổ nghĩa cho danh từ."
+      }
+    ],
+    "grammar_patterns": [
+      "experimental + noun"
+    ]
+  },
+  {
+    "word": "analyze",
+    "phonetic": "/ˈæn.əl.aɪz/",
+    "meaning_vi": "phân tích",
+    "meaning_en": "to examine something in detail",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "We need to analyze the data.",
+        "vi": "Chúng ta cần phân tích dữ liệu."
+      },
+      {
+        "en": "The scientist analyzed the sample.",
+        "vi": "Nhà khoa học đã phân tích mẫu vật."
+      }
+    ],
+    "word_family": [
+      "analysis (n)",
+      "analytical (adj)",
+      "analyst (n)"
+    ],
+    "collocations": [
+      "analyze data",
+      "analyze results",
+      "analyze a problem"
+    ],
+    "synonyms": [
+      "examine",
+      "study",
+      "investigate"
+    ],
+    "antonyms": [
+      "synthesize",
+      "ignore"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "analysis the data",
+        "correct": "analyze the data",
+        "explain_vi": "Nhầm lẫn giữa danh từ 'analysis' và động từ 'analyze'."
+      }
+    ],
+    "grammar_patterns": [
+      "analyze + noun",
+      "analyze + wh-clause"
+    ]
+  },
+  {
+    "word": "observe",
+    "phonetic": "/əbˈzɜːrv/",
+    "meaning_vi": "quan sát",
+    "meaning_en": "to watch carefully",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "Scientists observe the stars.",
+        "vi": "Các nhà khoa học quan sát các ngôi sao."
+      },
+      {
+        "en": "Observe how the chemical reacts.",
+        "vi": "Quan sát cách hóa chất phản ứng."
+      }
+    ],
+    "word_family": [
+      "observation (n)",
+      "observer (n)",
+      "observable (adj)"
+    ],
+    "collocations": [
+      "observe behavior",
+      "observe changes",
+      "observe carefully"
+    ],
+    "synonyms": [
+      "watch",
+      "monitor",
+      "examine"
+    ],
+    "antonyms": [
+      "ignore",
+      "overlook"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "observe to the experiment",
+        "correct": "observe the experiment",
+        "explain_vi": "Không dùng giới từ 'to' sau 'observe'."
+      }
+    ],
+    "grammar_patterns": [
+      "observe + noun",
+      "observe + that clause"
+    ]
+  },
+  {
+    "word": "measure",
+    "phonetic": "/ˈmeʒ.ər/",
+    "meaning_vi": "đo lường",
+    "meaning_en": "to find the size, quantity, etc. of something",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "We measured the temperature.",
+        "vi": "Chúng tôi đã đo nhiệt độ."
+      },
+      {
+        "en": "Measure the length of the table.",
+        "vi": "Đo chiều dài của cái bàn."
+      }
+    ],
+    "word_family": [
+      "measurement (n)",
+      "measurable (adj)"
+    ],
+    "collocations": [
+      "measure temperature",
+      "measure distance",
+      "measure accurately"
+    ],
+    "synonyms": [
+      "gauge",
+      "calculate",
+      "quantify"
+    ],
+    "antonyms": [
+      "estimate",
+      "guess"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "measurement the data",
+        "correct": "measure the data",
+        "explain_vi": "Nhầm lẫn giữa danh từ 'measurement' và động từ 'measure'."
+      }
+    ],
+    "grammar_patterns": [
+      "measure + noun"
+    ]
+  },
+  {
+    "word": "procedure",
+    "phonetic": "/prəˈsiː.dʒər/",
+    "meaning_vi": "quy trình, thủ tục",
+    "meaning_en": "an established or official way of doing something",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Follow the safety procedure.",
+        "vi": "Tuân theo quy trình an toàn."
+      },
+      {
+        "en": "The experiment procedure is clear.",
+        "vi": "Quy trình thí nghiệm rõ ràng."
+      }
+    ],
+    "word_family": [
+      "procedural (adj)",
+      "proceed (v)"
+    ],
+    "collocations": [
+      "follow procedure",
+      "standard procedure",
+      "laboratory procedure"
+    ],
+    "synonyms": [
+      "method",
+      "protocol",
+      "process"
+    ],
+    "antonyms": [
+      "improvisation",
+      "disorder"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "procedure of experiment",
+        "correct": "experiment procedure",
+        "explain_vi": "Dùng danh từ ghép thay vì cụm giới từ."
+      }
+    ],
+    "grammar_patterns": [
+      "procedure + noun",
+      "adjective + procedure"
+    ]
+  },
+  {
+    "word": "accurate",
+    "phonetic": "/ˈæk.jʊ.rət/",
+    "meaning_vi": "chính xác",
+    "meaning_en": "correct and exact",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The data must be accurate.",
+        "vi": "Dữ liệu phải chính xác."
+      },
+      {
+        "en": "She gave an accurate description.",
+        "vi": "Cô ấy đã mô tả chính xác."
+      }
+    ],
+    "word_family": [
+      "accuracy (n)",
+      "accurately (adv)"
+    ],
+    "collocations": [
+      "accurate data",
+      "accurate measurement",
+      "accurate result"
+    ],
+    "synonyms": [
+      "precise",
+      "exact",
+      "correct"
+    ],
+    "antonyms": [
+      "inaccurate",
+      "approximate"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "accurate data is important",
+        "correct": "accurate data are important",
+        "explain_vi": "Data là danh từ số nhiều, dùng 'are'."
+      }
+    ],
+    "grammar_patterns": [
+      "accurate + noun",
+      "be accurate"
+    ]
+  },
+  {
+    "word": "sample",
+    "phonetic": "/ˈsæm.pəl/",
+    "meaning_vi": "mẫu vật, mẫu",
+    "meaning_en": "a small part or quantity intended to show what the whole is like",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We collected a blood sample.",
+        "vi": "Chúng tôi đã lấy mẫu máu."
+      },
+      {
+        "en": "The sample size is too small.",
+        "vi": "Kích thước mẫu quá nhỏ."
+      }
+    ],
+    "word_family": [
+      "sampling (n)",
+      "sample (v)"
+    ],
+    "collocations": [
+      "take a sample",
+      "sample collection",
+      "random sample"
+    ],
+    "synonyms": [
+      "specimen",
+      "example",
+      "portion"
+    ],
+    "antonyms": [
+      "whole",
+      "population"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "sample of blood",
+        "correct": "blood sample",
+        "explain_vi": "Dùng danh từ ghép thay vì cụm giới từ."
+      }
+    ],
+    "grammar_patterns": [
+      "sample + noun",
+      "adjective + sample"
+    ]
+  },
+  {
+    "word": "variable",
+    "phonetic": "/ˈver.i.ə.bəl/",
+    "meaning_vi": "biến số, yếu tố thay đổi",
+    "meaning_en": "an element that can change or be changed",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Temperature is a key variable.",
+        "vi": "Nhiệt độ là một biến số chính."
+      },
+      {
+        "en": "Control the variables in the experiment.",
+        "vi": "Kiểm soát các biến số trong thí nghiệm."
+      }
+    ],
+    "word_family": [
+      "variability (n)",
+      "vary (v)",
+      "various (adj)"
+    ],
+    "collocations": [
+      "independent variable",
+      "dependent variable",
+      "control variable"
+    ],
+    "synonyms": [
+      "factor",
+      "element",
+      "parameter"
+    ],
+    "antonyms": [
+      "constant",
+      "invariant"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "variable is important",
+        "correct": "variables are important",
+        "explain_vi": "Variable thường dùng số nhiều trong ngữ cảnh khoa học."
+      }
+    ],
+    "grammar_patterns": [
+      "adjective + variable",
+      "variable + verb"
+    ]
+  },
+  {
+    "word": "conclusion",
+    "phonetic": "/kənˈkluː.ʒən/",
+    "meaning_vi": "kết luận",
+    "meaning_en": "a judgment or decision reached after consideration",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "What is your conclusion?",
+        "vi": "Kết luận của bạn là gì?"
+      },
+      {
+        "en": "The study came to a conclusion.",
+        "vi": "Nghiên cứu đã đưa ra kết luận."
+      }
+    ],
+    "word_family": [
+      "conclude (v)",
+      "conclusive (adj)"
+    ],
+    "collocations": [
+      "draw a conclusion",
+      "reach a conclusion",
+      "come to a conclusion"
+    ],
+    "synonyms": [
+      "inference",
+      "deduction",
+      "finding"
+    ],
+    "antonyms": [
+      "introduction",
+      "premise"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "conclusion of the study",
+        "correct": "the study's conclusion",
+        "explain_vi": "Có thể dùng sở hữu cách thay vì giới từ."
+      }
+    ],
+    "grammar_patterns": [
+      "draw + conclusion",
+      "conclusion + that clause"
+    ]
+  },
+  {
+    "word": "evidence",
+    "phonetic": "/ˈev.ɪ.dəns/",
+    "meaning_vi": "bằng chứng",
+    "meaning_en": "the available facts or information indicating whether a belief is true",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "There is strong evidence.",
+        "vi": "Có bằng chứng mạnh mẽ."
+      },
+      {
+        "en": "The evidence supports the theory.",
+        "vi": "Bằng chứng ủng hộ giả thuyết."
+      }
+    ],
+    "word_family": [
+      "evident (adj)",
+      "evidently (adv)"
+    ],
+    "collocations": [
+      "strong evidence",
+      "evidence shows",
+      "gather evidence"
+    ],
+    "synonyms": [
+      "proof",
+      "confirmation",
+      "testimony"
+    ],
+    "antonyms": [
+      "disproof",
+      "refutation"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "evidences",
+        "correct": "evidence",
+        "explain_vi": "Evidence là danh từ không đếm được, không có dạng số nhiều."
+      }
+    ],
+    "grammar_patterns": [
+      "evidence + of + noun",
+      "evidence + that clause"
+    ]
+  },
+  {
+    "word": "phenomenon",
+    "phonetic": "/fɪˈnɒm.ɪ.nən/",
+    "meaning_vi": "hiện tượng",
+    "meaning_en": "a fact or event that can be observed",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The phenomenon is rare.",
+        "vi": "Hiện tượng này hiếm gặp."
+      },
+      {
+        "en": "Natural phenomena include earthquakes.",
+        "vi": "Các hiện t��ợng tự nhiên bao gồm động đất."
+      }
+    ],
+    "word_family": [
+      "phenomenal (adj)",
+      "phenomena (plural)"
+    ],
+    "collocations": [
+      "natural phenomenon",
+      "social phenomenon",
+      "observed phenomenon"
+    ],
+    "synonyms": [
+      "occurrence",
+      "event",
+      "happening"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "phenomenons",
+        "correct": "phenomena",
+        "explain_vi": "Số nhiều của phenomenon là phenomena, không phải phenomenons."
+      }
+    ],
+    "grammar_patterns": [
+      "phenomenon + verb",
+      "adjective + phenomenon"
+    ]
+  },
+  {
+    "word": "result",
+    "phonetic": "/rɪˈzʌlt/",
+    "meaning_vi": "kết quả",
+    "meaning_en": "the outcome of an experiment or process",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The result was positive.",
+        "vi": "Kết quả là tích cực."
+      },
+      {
+        "en": "We analyzed the results.",
+        "vi": "Chúng tôi đã phân tích kết quả."
+      }
+    ],
+    "word_family": [
+      "result (v)",
+      "resulting (adj)"
+    ],
+    "collocations": [
+      "test result",
+      "result shows",
+      "positive result"
+    ],
+    "synonyms": [
+      "outcome",
+      "finding",
+      "conclusion"
+    ],
+    "antonyms": [
+      "cause",
+      "origin"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "result of experiment",
+        "correct": "experiment result",
+        "explain_vi": "Dùng danh từ ghép thay vì cụm giới từ."
+      }
+    ],
+    "grammar_patterns": [
+      "result + verb",
+      "adjective + result"
+    ]
+  },
+  {
+    "word": "method",
+    "phonetic": "/ˈmeθ.əd/",
+    "meaning_vi": "phương ph��p",
+    "meaning_en": "a particular way of doing something",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "This method is effective.",
+        "vi": "Phương pháp này hiệu quả."
+      },
+      {
+        "en": "We need a new method.",
+        "vi": "Chúng ta cần một phương pháp mới."
+      }
+    ],
+    "word_family": [
+      "methodical (adj)",
+      "methodology (n)"
+    ],
+    "collocations": [
+      "scientific method",
+      "research method",
+      "method of analysis"
+    ],
+    "synonyms": [
+      "technique",
+      "approach",
+      "procedure"
+    ],
+    "antonyms": [
+      "chaos",
+      "randomness"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "method for do",
+        "correct": "method of doing",
+        "explain_vi": "Sau method dùng giới từ 'of' + V-ing."
+      }
+    ],
+    "grammar_patterns": [
+      "method + of + V-ing",
+      "adjective + method"
+    ]
+  },
+  {
+    "word": "process",
+    "phonetic": "/ˈprəʊ.ses/",
+    "meaning_vi": "quá trình, quy trình",
+    "meaning_en": "a series of actions or steps",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The process takes time.",
+        "vi": "Quá trình này mất thời gian."
+      },
+      {
+        "en": "Learning is a process.",
+        "vi": "Học tập là một quá trình."
+      }
+    ],
+    "word_family": [
+      "process (v)",
+      "processing (n)"
+    ],
+    "collocations": [
+      "manufacturing process",
+      "learning process",
+      "process of elimination"
+    ],
+    "synonyms": [
+      "procedure",
+      "method",
+      "system"
+    ],
+    "antonyms": [
+      "stagnation",
+      "pause"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "process of make",
+        "correct": "process of making",
+        "explain_vi": "Sau 'of' dùng V-ing."
+      }
+    ],
+    "grammar_patterns": [
+      "process + of + V-ing",
+      "adjective + process"
+    ]
+  },
+  {
+    "word": "discovery",
+    "phonetic": "/dɪˈskʌv.ər.i/",
+    "meaning_vi": "sự khám phá, phát hiện",
+    "meaning_en": "the act of finding something new",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The discovery was important.",
+        "vi": "Khám phá này quan trọng."
+      },
+      {
+        "en": "She made a great discovery.",
+        "vi": "Cô ấy đã có một khám phá vĩ đại."
+      }
+    ],
+    "word_family": [
+      "discover (v)",
+      "discoverer (n)"
+    ],
+    "collocations": [
+      "make a discovery",
+      "scientific discovery",
+      "accidental discovery"
+    ],
+    "synonyms": [
+      "finding",
+      "invention",
+      "breakthrough"
+    ],
+    "antonyms": [
+      "loss",
+      "concealment"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "discovery of new",
+        "correct": "discovery of a new",
+        "explain_vi": "Cần mạo từ 'a' trước danh từ đếm được số ít."
+      }
+    ],
+    "grammar_patterns": [
+      "discovery + of + noun",
+      "make + discovery"
+    ]
+  },
+  {
+    "word": "invention",
+    "phonetic": "/ɪnˈven.ʃən/",
+    "meaning_vi": "phát minh",
+    "meaning_en": "a new device or process created by study and experimentation",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The telephone is a great invention.",
+        "vi": "Điện thoại là một phát minh vĩ đại."
+      },
+      {
+        "en": "She invented a new device.",
+        "vi": "Cô ấy đã phát minh ra một thiết bị mới."
+      }
+    ],
+    "word_family": [
+      "invent (v)",
+      "inventor (n)",
+      "inventive (adj)"
+    ],
+    "collocations": [
+      "modern invention",
+      "invention of",
+      "patent an invention"
+    ],
+    "synonyms": [
+      "creation",
+      "innovation",
+      "device"
+    ],
+    "antonyms": [
+      "copy",
+      "imitation"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "invention is new",
+        "correct": "the invention is new",
+        "explain_vi": "Cần mạo từ 'the' khi nói về phát minh cụ thể."
+      }
+    ],
+    "grammar_patterns": [
+      "invention + of + noun",
+      "adjective + invention"
+    ]
+  },
+  {
+    "word": "technology",
+    "phonetic": "/tekˈnɒl.ə.dʒi/",
+    "meaning_vi": "công nghệ",
+    "meaning_en": "the application of scientific knowledge for practical purposes",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Technology is advancing rapidly.",
+        "vi": "Công nghệ đang phát triển nhanh chóng."
+      },
+      {
+        "en": "We use modern technology.",
+        "vi": "Chúng tôi sử dụng công nghệ hiện đại."
+      }
+    ],
+    "word_family": [
+      "technological (adj)",
+      "technologist (n)"
+    ],
+    "collocations": [
+      "information technology",
+      "technology development",
+      "new technology"
+    ],
+    "synonyms": [
+      "engineering",
+      "innovation",
+      "applied science"
+    ],
+    "antonyms": [
+      "nature",
+      "tradition"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "technologies is",
+        "correct": "technologies are",
+        "explain_vi": "Technologies là số nhiều, dùng 'are'."
+      }
+    ],
+    "grammar_patterns": [
+      "technology + verb",
+      "adjective + technology"
+    ]
+  },
+  {
+    "word": "scientist",
+    "phonetic": "/ˈsaɪ.ən.tɪst/",
+    "meaning_vi": "nhà khoa học",
+    "meaning_en": "a person who studies science",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The scientist conducted an experiment.",
+        "vi": "Nhà khoa học đã tiến hành thí nghiệm."
+      },
+      {
+        "en": "Many scientists work in labs.",
+        "vi": "Nhiều nhà khoa học làm việc trong phòng thí nghiệm."
+      }
+    ],
+    "word_family": [
+      "science (n)",
+      "scientific (adj)",
+      "scientifically (adv)"
+    ],
+    "collocations": [
+      "research scientist",
+      "scientist discovers",
+      "team of scientists"
+    ],
+    "synonyms": [
+      "researcher",
+      "scholar",
+      "expert"
+    ],
+    "antonyms": [
+      "layperson",
+      "amateur"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "scientist people",
+        "correct": "scientists",
+        "explain_vi": "Không cần thêm 'people' vì scientist đã chỉ người."
+      }
+    ],
+    "grammar_patterns": [
+      "scientist + verb",
+      "adjective + scientist"
+    ]
+  },
+  {
+    "word": "experiment",
+    "phonetic": "/ɪkˈsper.ɪ.mənt/",
+    "meaning_vi": "thí nghiệm, cuộc thử nghiệm",
+    "meaning_en": "a scientific test to discover something",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We performed an experiment.",
+        "vi": "Chúng tôi đã thực hiện một thí nghiệm."
+      },
+      {
+        "en": "The experiment failed.",
+        "vi": "Thí nghiệm đã thất bại."
+      }
+    ],
+    "word_family": [
+      "experimental (adj)",
+      "experiment (v)",
+      "experimentation (n)"
+    ],
+    "collocations": [
+      "conduct an experiment",
+      "laboratory experiment",
+      "experiment results"
+    ],
+    "synonyms": [
+      "test",
+      "trial",
+      "study"
+    ],
+    "antonyms": [
+      "theory",
+      "hypothesis"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "make an experiment",
+        "correct": "conduct an experiment",
+        "explain_vi": "Dùng 'conduct' thay vì 'make' với experiment."
+      }
+    ],
+    "grammar_patterns": [
+      "experiment + on + noun",
+      "adjective + experiment"
+    ]
+  },
+  {
+    "word": "theory",
+    "phonetic": "/ˈθɪə.ri/",
+    "meaning_vi": "lý thuyết, giả thuyết",
+    "meaning_en": "a system of ideas intended to explain something",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Darwin's theory of evolution.",
+        "vi": "Thuyết tiến hóa của Darwin."
+      },
+      {
+        "en": "The theory is widely accepted.",
+        "vi": "Lý thuyết này được chấp nhận rộng rãi."
+      }
+    ],
+    "word_family": [
+      "theoretical (adj)",
+      "theorize (v)",
+      "theorist (n)"
+    ],
+    "collocations": [
+      "scientific theory",
+      "theory of relativity",
+      "propose a theory"
+    ],
+    "synonyms": [
+      "hypothesis",
+      "model",
+      "framework"
+    ],
+    "antonyms": [
+      "fact",
+      "practice"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "theory of Einstein",
+        "correct": "Einstein's theory",
+        "explain_vi": "Dùng sở hữu cách thay vì giới từ."
+      }
+    ],
+    "grammar_patterns": [
+      "theory + of + noun",
+      "theory + that clause"
+    ]
+  },
+  {
+    "word": "sample",
+    "phonetic": "/ˈsæm.pəl/",
+    "meaning_vi": "mẫu (vật)",
+    "meaning_en": "a small part or quantity intended to show what the whole is like",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The researcher collected a blood sample.",
+        "vi": "Nhà nghiên cứu đã thu thập một mẫu máu."
+      }
+    ],
+    "word_family": [
+      "sample (v)",
+      "sampling (n)"
+    ],
+    "collocations": [
+      "collect a sample",
+      "take a sample",
+      "sample size"
+    ],
+    "synonyms": [
+      "specimen"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I need a sample of water.",
+        "correct": "I need a water sample.",
+        "explain_vi": "Trong tiếng Anh, 'water sample' là cách nói tự nhiên hơn."
+      }
+    ],
+    "grammar_patterns": [
+      "a sample of + noun",
+      "sample + noun"
+    ]
+  },
+  {
+    "word": "variable",
+    "phonetic": "/ˈver.i.ə.bəl/",
+    "meaning_vi": "biến số",
+    "meaning_en": "a factor that can change in an experiment",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Temperature is a key variable in the experiment.",
+        "vi": "Nhiệt độ là một biến số chính trong thí nghiệm."
+      }
+    ],
+    "word_family": [
+      "variable (adj)",
+      "variability (n)",
+      "vary (v)"
+    ],
+    "collocations": [
+      "independent variable",
+      "dependent variable",
+      "control variable"
+    ],
+    "synonyms": [
+      "factor"
+    ],
+    "antonyms": [
+      "constant"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "The variable is change.",
+        "correct": "The variable changes.",
+        "explain_vi": "Nhầm lẫn giữa động từ và danh từ."
+      }
+    ],
+    "grammar_patterns": [
+      "variable + verb",
+      "a variable in + noun"
+    ]
+  },
+  {
+    "word": "conclusion",
+    "phonetic": "/kənˈkluː.ʒən/",
+    "meaning_vi": "kết luận",
+    "meaning_en": "a judgment or decision reached after consideration",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The conclusion of the study was surprising.",
+        "vi": "Kết luận của nghiên cứu thật bất ngờ."
+      }
+    ],
+    "word_family": [
+      "conclude (v)",
+      "conclusive (adj)"
+    ],
+    "collocations": [
+      "draw a conclusion",
+      "reach a conclusion",
+      "in conclusion"
+    ],
+    "synonyms": [
+      "finding",
+      "deduction"
+    ],
+    "antonyms": [
+      "premise"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I conclusion that...",
+        "correct": "I conclude that...",
+        "explain_vi": "Nhầm lẫn giữa danh từ 'conclusion' và động từ 'conclude'."
+      }
+    ],
+    "grammar_patterns": [
+      "conclusion + that clause",
+      "come to a conclusion"
+    ]
+  },
+  {
+    "word": "evidence",
+    "phonetic": "/ˈev.ɪ.dəns/",
+    "meaning_vi": "bằng chứng",
+    "meaning_en": "the available facts supporting a belief or proposition",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "There is strong evidence for the theory.",
+        "vi": "Có bằng chứng mạnh mẽ cho lý thuyết này."
+      }
+    ],
+    "word_family": [
+      "evident (adj)",
+      "evidently (adv)"
+    ],
+    "collocations": [
+      "provide evidence",
+      "find evidence",
+      "evidence of"
+    ],
+    "synonyms": [
+      "proof"
+    ],
+    "antonyms": [
+      "disproof"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "evidences",
+        "correct": "evidence",
+        "explain_vi": "'Evidence' là danh từ không đếm được, không có dạng số nhiều."
+      }
+    ],
+    "grammar_patterns": [
+      "evidence + of + noun",
+      "evidence + that clause"
+    ]
+  },
+  {
+    "word": "phenomenon",
+    "phonetic": "/fɪˈnɒm.ɪ.nən/",
+    "meaning_vi": "hiện tượng",
+    "meaning_en": "a fact or event that can be observed",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The northern lights are a natural phenomenon.",
+        "vi": "Cực quang là một hiện tượng tự nhiên."
+      }
+    ],
+    "word_family": [
+      "phenomena (plural)",
+      "phenomenal (adj)"
+    ],
+    "collocations": [
+      "natural phenomenon",
+      "social phenomenon",
+      "observe a phenomenon"
+    ],
+    "synonyms": [
+      "occurrence"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "phenomenons",
+        "correct": "phenomena",
+        "explain_vi": "Số nhiều bất quy tắc: phenomenon -> phenomena."
+      }
+    ],
+    "grammar_patterns": [
+      "phenomenon + verb (singular)",
+      "a phenomenon of + noun"
+    ]
+  },
+  {
+    "word": "result",
+    "phonetic": "/rɪˈzʌlt/",
+    "meaning_vi": "kết quả",
+    "meaning_en": "the outcome of an experiment or process",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The results of the test were positive.",
+        "vi": "Kết quả của bài kiểm tra là tích cực."
+      }
+    ],
+    "word_family": [
+      "result (v)",
+      "resulting (adj)"
+    ],
+    "collocations": [
+      "get results",
+      "show results",
+      "result in"
+    ],
+    "synonyms": [
+      "outcome",
+      "finding"
+    ],
+    "antonyms": [
+      "cause"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "The result is depend on...",
+        "correct": "The result depends on...",
+        "explain_vi": "Nhầm lẫn giữa 'depend' và 'dependent'."
+      }
+    ],
+    "grammar_patterns": [
+      "result + of + noun",
+      "result + from + noun"
+    ]
+  },
+  {
+    "word": "method",
+    "phonetic": "/ˈmeθ.əd/",
+    "meaning_vi": "phương pháp",
+    "meaning_en": "a particular way of doing something",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We need a better method to analyze the data.",
+        "vi": "Chúng ta cần một phương pháp tốt hơn để phân tích dữ liệu."
+      }
+    ],
+    "word_family": [
+      "methodical (adj)",
+      "methodology (n)"
+    ],
+    "collocations": [
+      "scientific method",
+      "research method",
+      "method of"
+    ],
+    "synonyms": [
+      "approach",
+      "technique"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "methodology",
+        "correct": "method",
+        "explain_vi": "Phân biệt: 'method' là phương pháp cụ thể, 'methodology' là hệ thống phương pháp."
+      }
+    ],
+    "grammar_patterns": [
+      "method + of + gerund",
+      "method + for + noun"
+    ]
+  },
+  {
+    "word": "process",
+    "phonetic": "/ˈprəʊ.ses/",
+    "meaning_vi": "quy trình",
+    "meaning_en": "a series of actions or steps to achieve a result",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The manufacturing process is complex.",
+        "vi": "Quy trình sản xuất rất phức tạp."
+      }
+    ],
+    "word_family": [
+      "process (v)",
+      "processing (n)"
+    ],
+    "collocations": [
+      "in process",
+      "process of",
+      "start a process"
+    ],
+    "synonyms": [
+      "procedure",
+      "procedure"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "process of making",
+        "correct": "process for making",
+        "explain_vi": "Thường dùng 'process for + V-ing'."
+      }
+    ],
+    "grammar_patterns": [
+      "process + of + noun",
+      "process + to + infinitive"
+    ]
+  },
+  {
+    "word": "discovery",
+    "phonetic": "/dɪˈskʌv.ər.i/",
+    "meaning_vi": "khám phá",
+    "meaning_en": "the act of finding something unknown",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The discovery of penicillin revolutionized medicine.",
+        "vi": "Khám phá ra penicillin đã cách mạng hóa y học."
+      }
+    ],
+    "word_family": [
+      "discover (v)",
+      "discoverer (n)"
+    ],
+    "collocations": [
+      "make a discovery",
+      "scientific discovery",
+      "discovery of"
+    ],
+    "synonyms": [
+      "finding",
+      "breakthrough"
+    ],
+    "antonyms": [
+      "loss"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "discovery new thing",
+        "correct": "discovery of a new thing",
+        "explain_vi": "Cần giới từ 'of' sau 'discovery'."
+      }
+    ],
+    "grammar_patterns": [
+      "discovery + of + noun",
+      "discovery + that clause"
+    ]
+  },
+  {
+    "word": "invention",
+    "phonetic": "/ɪnˈven.ʃən/",
+    "meaning_vi": "phát minh",
+    "meaning_en": "a new device or process created by someone",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The telephone was a great invention.",
+        "vi": "Điện thoại là một phát minh vĩ đại."
+      }
+    ],
+    "word_family": [
+      "invent (v)",
+      "inventor (n)"
+    ],
+    "collocations": [
+      "patent an invention",
+      "invention of",
+      "new invention"
+    ],
+    "synonyms": [
+      "creation",
+      "innovation"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "invention of telephone",
+        "correct": "invention of the telephone",
+        "explain_vi": "Cần mạo từ 'the' trước danh từ cụ thể."
+      }
+    ],
+    "grammar_patterns": [
+      "invention + of + noun",
+      "invention + by + person"
+    ]
+  },
+  {
+    "word": "technology",
+    "phonetic": "/tekˈnɒl.ə.dʒi/",
+    "meaning_vi": "công nghệ",
+    "meaning_en": "the application of scientific knowledge for practical purposes",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Modern technology has changed our lives.",
+        "vi": "Công nghệ hiện đại đã thay đổi cuộc sống của chúng ta."
+      }
+    ],
+    "word_family": [
+      "technological (adj)",
+      "technologist (n)"
+    ],
+    "collocations": [
+      "information technology",
+      "new technology",
+      "technology company"
+    ],
+    "synonyms": [
+      "tech"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "technologies",
+        "correct": "technology",
+        "explain_vi": "Thường dùng 'technology' ở dạng không đếm được."
+      }
+    ],
+    "grammar_patterns": [
+      "technology + noun (e.g. technology sector)",
+      "adjective + technology"
+    ]
+  },
+  {
+    "word": "scientist",
+    "phonetic": "/ˈsaɪ.ən.tɪst/",
+    "meaning_vi": "nhà khoa học",
+    "meaning_en": "a person who studies or practices science",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The scientist conducted an experiment.",
+        "vi": "Nhà khoa học đã tiến hành một thí nghiệm."
+      }
+    ],
+    "word_family": [
+      "science (n)",
+      "scientific (adj)"
+    ],
+    "collocations": [
+      "research scientist",
+      "data scientist",
+      "scientist in"
+    ],
+    "synonyms": [
+      "researcher"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "scientist person",
+        "correct": "scientist",
+        "explain_vi": "Không cần thêm 'person' vì 'scientist' đã chỉ người."
+      }
+    ],
+    "grammar_patterns": [
+      "scientist + verb",
+      "a scientist who"
+    ]
+  },
+  {
+    "word": "experiment",
+    "phonetic": "/ɪkˈsper.ɪ.mənt/",
+    "meaning_vi": "thí nghiệm",
+    "meaning_en": "a scientific test to discover something",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We performed a simple experiment.",
+        "vi": "Chúng tôi đã thực hiện một thí nghiệm đơn giản."
+      }
+    ],
+    "word_family": [
+      "experiment (v)",
+      "experimental (adj)"
+    ],
+    "collocations": [
+      "conduct an experiment",
+      "experiment on",
+      "experiment with"
+    ],
+    "synonyms": [
+      "test",
+      "trial"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "do experiment",
+        "correct": "conduct an experiment",
+        "explain_vi": "Dùng 'conduct' trang trọng hơn 'do'."
+      }
+    ],
+    "grammar_patterns": [
+      "experiment + on + noun",
+      "experiment + with + noun"
+    ]
+  },
+  {
+    "word": "theory",
+    "phonetic": "/ˈθɪə.ri/",
+    "meaning_vi": "lý thuyết",
+    "meaning_en": "a system of ideas intended to explain something",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Einstein's theory of relativity is famous.",
+        "vi": "Thuyết tương đối của Einstein rất nổi tiếng."
+      }
+    ],
+    "word_family": [
+      "theoretical (adj)",
+      "theorize (v)"
+    ],
+    "collocations": [
+      "theory of",
+      "in theory",
+      "propose a theory"
+    ],
+    "synonyms": [
+      "hypothesis",
+      "model"
+    ],
+    "antonyms": [
+      "practice"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "theory and practice",
+        "correct": "theory versus practice",
+        "explain_vi": "Thường dùng 'versus' hoặc 'and' đều được, nhưng 'versus' nhấn mạnh sự đối lập."
+      }
+    ],
+    "grammar_patterns": [
+      "theory + that clause",
+      "theory + of + noun"
+    ]
+  },
+  {
+    "word": "data",
+    "phonetic": "/ˈdeɪ.tə/",
+    "meaning_vi": "dữ liệu",
+    "meaning_en": "facts and statistics collected together",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The data shows a clear trend.",
+        "vi": "Dữ liệu cho thấy một xu hướng rõ ràng."
+      }
+    ],
+    "word_family": [
+      "datum (singular, rare)",
+      "database (n)"
+    ],
+    "collocations": [
+      "collect data",
+      "analyze data",
+      "data set"
+    ],
+    "synonyms": [
+      "information",
+      "figures"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "data is",
+        "correct": "data are",
+        "explain_vi": "Trong văn phong khoa học, 'data' thường được coi là số nhiều."
+      }
+    ],
+    "grammar_patterns": [
+      "data + plural verb",
+      "data + on + noun"
+    ]
+  },
+  {
+    "word": "analysis",
+    "phonetic": "/əˈnæl.ə.sɪs/",
+    "meaning_vi": "phân tích",
+    "meaning_en": "detailed examination of something",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The analysis of the results took a week.",
+        "vi": "Việc phân tích kết quả mất một tuần."
+      }
+    ],
+    "word_family": [
+      "analyze (v)",
+      "analytical (adj)"
+    ],
+    "collocations": [
+      "carry out an analysis",
+      "in-depth analysis",
+      "analysis of"
+    ],
+    "synonyms": [
+      "examination",
+      "study"
+    ],
+    "antonyms": [
+      "synthesis"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "analysis data",
+        "correct": "analysis of data",
+        "explain_vi": "Cần giới từ 'of'."
+      }
+    ],
+    "grammar_patterns": [
+      "analysis + of + noun",
+      "analysis + that clause"
+    ]
+  },
+  {
+    "word": "hypothesis",
+    "phonetic": "/haɪˈpɒθ.ə.sɪs/",
+    "meaning_vi": "giả thuyết",
+    "meaning_en": "a proposed explanation for a phenomenon",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The scientist tested her hypothesis.",
+        "vi": "Nhà khoa học đã kiểm tra giả thuyết của mình."
+      }
+    ],
+    "word_family": [
+      "hypotheses (plural)",
+      "hypothesize (v)",
+      "hypothetical (adj)"
+    ],
+    "collocations": [
+      "form a hypothesis",
+      "test a hypothesis",
+      "hypothesis about"
+    ],
+    "synonyms": [
+      "theory",
+      "supposition"
+    ],
+    "antonyms": [
+      "fact"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "hypothesis is",
+        "correct": "hypothesis is",
+        "explain_vi": "Không có lỗi phổ biến đặc biệt, nhưng chú ý số nhiều 'hypotheses'."
+      }
+    ],
+    "grammar_patterns": [
+      "hypothesis + that clause",
+      "hypothesis + about + noun"
+    ]
+  },
+  {
+    "word": "laboratory",
+    "phonetic": "/ləˈbɒr.ə.tər.i/",
+    "meaning_vi": "phòng thí nghiệm",
+    "meaning_en": "a room or building for scientific experiments",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The laboratory is equipped with modern instruments.",
+        "vi": "Phòng thí nghiệm được trang bị các thiết bị hiện đại."
+      }
+    ],
+    "word_family": [
+      "lab (abbreviation)",
+      "laboratory (adj)"
+    ],
+    "collocations": [
+      "in the laboratory",
+      "laboratory test",
+      "laboratory equipment"
+    ],
+    "synonyms": [
+      "lab",
+      "research facility"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "laboratory",
+        "correct": "laboratory",
+        "explain_vi": "Phát âm thường nhầm: nhấn âm thứ hai."
+      }
+    ],
+    "grammar_patterns": [
+      "laboratory + noun (e.g. laboratory coat)",
+      "in + laboratory"
+    ]
+  },
+  {
+    "word": "observation",
+    "phonetic": "/ˌɒb.zəˈveɪ.ʃən/",
+    "meaning_vi": "quan sát",
+    "meaning_en": "the action of watching something carefully",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Careful observation is essential in science.",
+        "vi": "Quan sát cẩn thận là điều cần thiết trong khoa học."
+      }
+    ],
+    "word_family": [
+      "observe (v)",
+      "observational (adj)",
+      "observer (n)"
+    ],
+    "collocations": [
+      "make an observation",
+      "under observation",
+      "observation of"
+    ],
+    "synonyms": [
+      "monitoring",
+      "watching"
+    ],
+    "antonyms": [
+      "ignorance"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "observation on",
+        "correct": "observation of",
+        "explain_vi": "Dùng 'of' thay vì 'on'."
+      }
+    ],
+    "grammar_patterns": [
+      "observation + of + noun",
+      "observation + that clause"
+    ]
+  },
+  {
+    "word": "accurate",
+    "phonetic": "/ˈæk.jə.rət/",
+    "meaning_vi": "chính xác",
+    "meaning_en": "correct and exact in detail",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The measurements must be accurate.",
+        "vi": "Các phép đo phải chính xác."
+      }
+    ],
+    "word_family": [
+      "accuracy (n)",
+      "inaccurate (adj)"
+    ],
+    "collocations": [
+      "accurate data",
+      "accurate measurement",
+      "highly accurate"
+    ],
+    "synonyms": [
+      "precise",
+      "exact"
+    ],
+    "antonyms": [
+      "inaccurate",
+      "approximate"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "accurate than",
+        "correct": "more accurate than",
+        "explain_vi": "So sánh hơn với tính từ dài: 'more accurate'."
+      }
+    ],
+    "grammar_patterns": [
+      "be accurate",
+      "accurate + noun"
+    ]
+  },
+  {
+    "word": "experiment",
+    "phonetic": "/ɪkˈsper.ɪ.mənt/",
+    "meaning_vi": "thí nghiệm",
+    "meaning_en": "a scientific test to discover something",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We conducted an experiment to test the theory.",
+        "vi": "Chúng tôi đã tiến hành một thí nghiệm để kiểm tra lý thuyết."
+      }
+    ],
+    "word_family": [
+      "experimental (adj)",
+      "experimentally (adv)"
+    ],
+    "collocations": [
+      "conduct an experiment",
+      "perform an experiment",
+      "laboratory experiment"
+    ],
+    "synonyms": [
+      "test",
+      "trial"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I did an experiment.",
+        "correct": "I conducted an experiment.",
+        "explain_vi": "'Do' không trang trọng bằng 'conduct' trong ngữ cảnh khoa học."
+      }
+    ],
+    "grammar_patterns": [
+      "conduct/perform + experiment"
+    ]
+  },
+  {
+    "word": "theory",
+    "phonetic": "/ˈθɪə.ri/",
+    "meaning_vi": "lý thuyết",
+    "meaning_en": "a set of ideas that explains something",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Einstein's theory of relativity changed physics.",
+        "vi": "Thuyết tương đối của Einstein đã thay đổi vật lý học."
+      }
+    ],
+    "word_family": [
+      "theoretical (adj)",
+      "theorize (v)"
+    ],
+    "collocations": [
+      "propose a theory",
+      "support a theory",
+      "theory of evolution"
+    ],
+    "synonyms": [
+      "hypothesis",
+      "model"
+    ],
+    "antonyms": [
+      "practice"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "In theory, it works.",
+        "correct": "In theory, it works.",
+        "explain_vi": "Cụm từ 'in theory' đúng, nhưng hay nhầm với 'in practice'."
+      }
+    ],
+    "grammar_patterns": [
+      "theory + of + noun"
+    ]
+  },
+  {
+    "word": "data",
+    "phonetic": "/ˈdeɪ.tə/",
+    "meaning_vi": "dữ liệu",
+    "meaning_en": "information collected for analysis",
+    "pos": "noun (uncountable)",
+    "examples": [
+      {
+        "en": "The data shows a clear trend.",
+        "vi": "Dữ liệu cho thấy một xu hướng rõ ràng."
+      }
+    ],
+    "word_family": [
+      "database (n)",
+      "data processing (n)"
+    ],
+    "collocations": [
+      "collect data",
+      "analyze data",
+      "data set"
+    ],
+    "synonyms": [
+      "information",
+      "statistics"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "The data show that...",
+        "correct": "The data shows that...",
+        "explain_vi": "'Data' thường dùng như danh từ không đếm được, đi với động từ số ít."
+      }
+    ],
+    "grammar_patterns": [
+      "data + singular verb"
+    ]
+  },
+  {
+    "word": "analysis",
+    "phonetic": "/əˈnæl.ə.sɪs/",
+    "meaning_vi": "phân tích",
+    "meaning_en": "the process of examining something in detail",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We need a detailed analysis of the results.",
+        "vi": "Chúng ta cần một phân tích chi tiết về kết quả."
+      }
+    ],
+    "word_family": [
+      "analyze (v)",
+      "analytical (adj)"
+    ],
+    "collocations": [
+      "carry out an analysis",
+      "in-depth analysis",
+      "data analysis"
+    ],
+    "synonyms": [
+      "examination",
+      "study"
+    ],
+    "antonyms": [
+      "synthesis"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "We analysis the data.",
+        "correct": "We analyze the data.",
+        "explain_vi": "'Analysis' là danh từ; động từ là 'analyze'."
+      }
+    ],
+    "grammar_patterns": [
+      "analysis + of + noun"
+    ]
+  },
+  {
+    "word": "hypothesis",
+    "phonetic": "/haɪˈpɒθ.ə.sɪs/",
+    "meaning_vi": "giả thuyết",
+    "meaning_en": "a proposed explanation to be tested",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The hypothesis was confirmed by the experiment.",
+        "vi": "Giả thuyết đã được xác nhận bởi thí nghiệm."
+      }
+    ],
+    "word_family": [
+      "hypothesize (v)",
+      "hypothetical (adj)"
+    ],
+    "collocations": [
+      "form a hypothesis",
+      "test a hypothesis",
+      "working hypothesis"
+    ],
+    "synonyms": [
+      "theory",
+      "proposition"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have a hypothesis.",
+        "correct": "I have a hypothesis.",
+        "explain_vi": "Phát âm đúng là /haɪˈpɒθ.ə.sɪs/, không phải 'hai-poth-esis'."
+      }
+    ],
+    "grammar_patterns": [
+      "hypothesis + that + clause"
+    ]
+  },
+  {
+    "word": "laboratory",
+    "phonetic": "/ləˈbɒr.ə.tər.i/",
+    "meaning_vi": "phòng thí nghiệm",
+    "meaning_en": "a room with equipment for scientific work",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The students work in the laboratory every Tuesday.",
+        "vi": "Các sinh viên làm việc trong phòng thí nghiệm mỗi thứ Ba."
+      }
+    ],
+    "word_family": [
+      "lab (abbreviation)"
+    ],
+    "collocations": [
+      "laboratory experiment",
+      "laboratory equipment",
+      "in the laboratory"
+    ],
+    "synonyms": [
+      "lab",
+      "research facility"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go to the labratory.",
+        "correct": "I go to the laboratory.",
+        "explain_vi": "Nhầm âm 'or' thành 'ra', cần phát âm đủ 'laboratory'."
+      }
+    ],
+    "grammar_patterns": [
+      "in/at + the + laboratory"
+    ]
+  },
+  {
+    "word": "observation",
+    "phonetic": "/ˌɒb.zəˈveɪ.ʃən/",
+    "meaning_vi": "quan sát",
+    "meaning_en": "the act of watching carefully",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "His observation of the stars led to a new discovery.",
+        "vi": "Sự quan sát các ngôi sao của ông đã dẫn đến một khám phá mới."
+      }
+    ],
+    "word_family": [
+      "observe (v)",
+      "observational (adj)"
+    ],
+    "collocations": [
+      "make an observation",
+      "under observation",
+      "scientific observation"
+    ],
+    "synonyms": [
+      "watching",
+      "monitoring"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I observation the experiment.",
+        "correct": "I observe the experiment.",
+        "explain_vi": "'Observation' là danh từ; động từ là 'observe'."
+      }
+    ],
+    "grammar_patterns": [
+      "observation + of + noun"
+    ]
+  },
+  {
+    "word": "variable",
+    "phonetic": "/ˈveə.ri.ə.bəl/",
+    "meaning_vi": "biến số",
+    "meaning_en": "a factor that can change in an experiment",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Temperature is an important variable in this experiment.",
+        "vi": "Nhiệt độ là một biến số quan trọng trong thí nghiệm này."
+      }
+    ],
+    "word_family": [
+      "vary (v)",
+      "variation (n)"
+    ],
+    "collocations": [
+      "independent variable",
+      "dependent variable",
+      "control variable"
+    ],
+    "synonyms": [
+      "factor",
+      "parameter"
+    ],
+    "antonyms": [
+      "constant"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Variable is change.",
+        "correct": "A variable is something that changes.",
+        "explain_vi": "Nhầm lẫn từ loại; 'variable' là danh từ, không phải động từ."
+      }
+    ],
+    "grammar_patterns": [
+      "variable + in + noun"
+    ]
+  },
+  {
+    "word": "sample",
+    "phonetic": "/ˈsɑːm.pəl/",
+    "meaning_vi": "mẫu",
+    "meaning_en": "a small part representing the whole",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We took a blood sample for testing.",
+        "vi": "Chúng tôi đã lấy một mẫu máu để xét nghiệm."
+      }
+    ],
+    "word_family": [
+      "sample (v)",
+      "sampling (n)"
+    ],
+    "collocations": [
+      "take a sample",
+      "blood sample",
+      "sample size"
+    ],
+    "synonyms": [
+      "specimen",
+      "example"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Sample is small.",
+        "correct": "The sample is small.",
+        "explain_vi": "Thiếu mạo từ 'the' hoặc 'a'."
+      }
+    ],
+    "grammar_patterns": [
+      "a + sample + of + noun"
+    ]
+  },
+  {
+    "word": "conclusion",
+    "phonetic": "/kənˈkluː.ʒən/",
+    "meaning_vi": "kết luận",
+    "meaning_en": "a decision based on evidence",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The conclusion of the study was surprising.",
+        "vi": "Kết luận của nghiên cứu thật bất ngờ."
+      }
+    ],
+    "word_family": [
+      "conclude (v)",
+      "conclusive (adj)"
+    ],
+    "collocations": [
+      "draw a conclusion",
+      "reach a conclusion",
+      "in conclusion"
+    ],
+    "synonyms": [
+      "finding",
+      "deduction"
+    ],
+    "antonyms": [
+      "introduction"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I conclusion that...",
+        "correct": "I conclude that...",
+        "explain_vi": "'Conclusion' là danh từ; động từ là 'conclude'."
+      }
+    ],
+    "grammar_patterns": [
+      "conclusion + that + clause"
+    ]
+  },
+  {
+    "word": "evidence",
+    "phonetic": "/ˈev.ɪ.dəns/",
+    "meaning_vi": "bằng chứng",
+    "meaning_en": "facts that prove something",
+    "pos": "noun (uncountable)",
+    "examples": [
+      {
+        "en": "There is no evidence to support the claim.",
+        "vi": "Không có bằng chứng để hỗ trợ cho tuyên bố đó."
+      }
+    ],
+    "word_family": [
+      "evident (adj)",
+      "evidently (adv)"
+    ],
+    "collocations": [
+      "provide evidence",
+      "strong evidence",
+      "evidence of"
+    ],
+    "synonyms": [
+      "proof",
+      "confirmation"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Evidences show that...",
+        "correct": "Evidence shows that...",
+        "explain_vi": "'Evidence' không đếm được, không thêm 's'."
+      }
+    ],
+    "grammar_patterns": [
+      "evidence + of + noun",
+      "evidence + that + clause"
+    ]
+  },
+  {
+    "word": "phenomenon",
+    "phonetic": "/fɪˈnɒm.ɪ.nən/",
+    "meaning_vi": "hiện tượng",
+    "meaning_en": "a fact or event that can be observed",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The northern lights are a natural phenomenon.",
+        "vi": "Cực quang là một hiện tượng tự nhiên."
+      }
+    ],
+    "word_family": [
+      "phenomena (plural)",
+      "phenomenal (adj)"
+    ],
+    "collocations": [
+      "natural phenomenon",
+      "scientific phenomenon",
+      "rare phenomenon"
+    ],
+    "synonyms": [
+      "occurrence",
+      "event"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "One phenomenon, two phenomenons.",
+        "correct": "One phenomenon, two phenomena.",
+        "explain_vi": "Số nhiều bất quy tắc: 'phenomenon' -> 'phenomena'."
+      }
+    ],
+    "grammar_patterns": [
+      "phenomenon + of + noun"
+    ]
+  },
+  {
+    "word": "result",
+    "phonetic": "/rɪˈzʌlt/",
+    "meaning_vi": "kết quả",
+    "meaning_en": "the outcome of an experiment",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The results of the test were positive.",
+        "vi": "Kết quả của bài kiểm tra là tích cực."
+      }
+    ],
+    "word_family": [
+      "result (v)",
+      "resulting (adj)"
+    ],
+    "collocations": [
+      "get a result",
+      "test result",
+      "as a result of"
+    ],
+    "synonyms": [
+      "outcome",
+      "finding"
+    ],
+    "antonyms": [
+      "cause"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Result is good.",
+        "correct": "The result is good.",
+        "explain_vi": "Thiếu mạo từ."
+      }
+    ],
+    "grammar_patterns": [
+      "result + of + noun"
+    ]
+  },
+  {
+    "word": "method",
+    "phonetic": "/ˈmeθ.əd/",
+    "meaning_vi": "phương pháp",
+    "meaning_en": "a way of doing something",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "This method is commonly used in research.",
+        "vi": "Phương pháp này thường được sử dụng trong nghiên cứu."
+      }
+    ],
+    "word_family": [
+      "methodical (adj)",
+      "methodology (n)"
+    ],
+    "collocations": [
+      "scientific method",
+      "research method",
+      "effective method"
+    ],
+    "synonyms": [
+      "technique",
+      "approach"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Method is important.",
+        "correct": "The method is important.",
+        "explain_vi": "Thiếu mạo từ."
+      }
+    ],
+    "grammar_patterns": [
+      "method + of + noun/gerund"
+    ]
+  },
+  {
+    "word": "process",
+    "phonetic": "/ˈprəʊ.ses/",
+    "meaning_vi": "quy trình, quá trình",
+    "meaning_en": "a series of steps to achieve a result",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The manufacturing process takes three days.",
+        "vi": "Quy trình sản xuất mất ba ngày."
+      }
+    ],
+    "word_family": [
+      "process (v)",
+      "processing (n)"
+    ],
+    "collocations": [
+      "in the process",
+      "manufacturing process",
+      "learning process"
+    ],
+    "synonyms": [
+      "procedure",
+      "method"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Process is slow.",
+        "correct": "The process is slow.",
+        "explain_vi": "Thiếu mạo từ."
+      }
+    ],
+    "grammar_patterns": [
+      "process + of + noun/gerund"
+    ]
+  },
+  {
+    "word": "discovery",
+    "phonetic": "/dɪˈskʌv.ər.i/",
+    "meaning_vi": "khám phá",
+    "meaning_en": "something found for the first time",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The discovery of penicillin saved many lives.",
+        "vi": "Khám phá ra penicillin đã cứu nhiều mạng sống."
+      }
+    ],
+    "word_family": [
+      "discover (v)",
+      "discoverer (n)"
+    ],
+    "collocations": [
+      "make a discovery",
+      "scientific discovery",
+      "important discovery"
+    ],
+    "synonyms": [
+      "finding",
+      "breakthrough"
+    ],
+    "antonyms": [
+      "loss"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I discovery something new.",
+        "correct": "I discover something new.",
+        "explain_vi": "'Discovery' là danh từ; động từ là 'discover'."
+      }
+    ],
+    "grammar_patterns": [
+      "discovery + of + noun"
+    ]
+  },
+  {
+    "word": "invention",
+    "phonetic": "/ɪnˈven.ʃən/",
+    "meaning_vi": "phát minh",
+    "meaning_en": "a device or process created for the first time",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The telephone was a great invention.",
+        "vi": "Điện thoại là một phát minh vĩ đại."
+      }
+    ],
+    "word_family": [
+      "invent (v)",
+      "inventor (n)"
+    ],
+    "collocations": [
+      "make an invention",
+      "patent an invention",
+      "modern invention"
+    ],
+    "synonyms": [
+      "creation",
+      "innovation"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "He invention a new machine.",
+        "correct": "He invented a new machine.",
+        "explain_vi": "'Invention' là danh từ; động từ là 'invent'."
+      }
+    ],
+    "grammar_patterns": [
+      "invention + of + noun"
+    ]
+  },
+  {
+    "word": "technology",
+    "phonetic": "/tekˈnɒl.ə.dʒi/",
+    "meaning_vi": "công nghệ",
+    "meaning_en": "the use of science for practical purposes",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Technology has changed our lives.",
+        "vi": "Công nghệ đã thay đổi cuộc sống của chúng ta."
+      }
+    ],
+    "word_family": [
+      "technological (adj)",
+      "technologist (n)"
+    ],
+    "collocations": [
+      "modern technology",
+      "information technology",
+      "develop technology"
+    ],
+    "synonyms": [
+      "engineering",
+      "applied science"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Technologies are important.",
+        "correct": "Technology is important.",
+        "explain_vi": "'Technology' thường là không đếm được."
+      }
+    ],
+    "grammar_patterns": [
+      "technology + singular verb"
+    ]
+  },
+  {
+    "word": "scientist",
+    "phonetic": "/ˈsaɪ.ən.tɪst/",
+    "meaning_vi": "nhà khoa học",
+    "meaning_en": "a person who studies science",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The scientist published her findings.",
+        "vi": "Nhà khoa học đã công bố những phát hiện của mình."
+      }
+    ],
+    "word_family": [
+      "science (n)",
+      "scientific (adj)"
+    ],
+    "collocations": [
+      "research scientist",
+      "data scientist",
+      "team of scientists"
+    ],
+    "synonyms": [
+      "researcher",
+      "scholar"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "He is a science.",
+        "correct": "He is a scientist.",
+        "explain_vi": "'Science' là môn học; người làm khoa học là 'scientist'."
+      }
+    ],
+    "grammar_patterns": [
+      "a + scientist + who/that"
+    ]
+  },
+  {
+    "word": "accurate",
+    "phonetic": "/ˈæk.jə.rət/",
+    "meaning_vi": "chính xác",
+    "meaning_en": "correct and without mistakes",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The measurements must be accurate.",
+        "vi": "Các phép đo phải chính xác."
+      }
+    ],
+    "word_family": [
+      "accuracy (n)",
+      "inaccurate (adj)"
+    ],
+    "collocations": [
+      "accurate data",
+      "accurate measurement",
+      "highly accurate"
+    ],
+    "synonyms": [
+      "precise",
+      "exact"
+    ],
+    "antonyms": [
+      "inaccurate"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "This is accurate data.",
+        "correct": "This data is accurate.",
+        "explain_vi": "Vị trí tính từ: 'accurate' đứng sau 'be' hoặc trước danh từ."
+      }
+    ],
+    "grammar_patterns": [
+      "be + accurate",
+      "accurate + noun"
+    ]
+  }
+]

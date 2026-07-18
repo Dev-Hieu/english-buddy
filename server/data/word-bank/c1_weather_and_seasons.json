@@ -1,0 +1,2332 @@
+[
+  {
+    "word": "drizzle",
+    "phonetic": "/ˈdrɪz.əl/",
+    "meaning_vi": "mưa phùn",
+    "meaning_en": "light rain falling in very fine drops",
+    "pos": "noun/verb",
+    "examples": [
+      {
+        "en": "The drizzle continued all morning.",
+        "vi": "Mưa phùn kéo dài suốt buổi sáng."
+      }
+    ],
+    "word_family": [
+      "drizzly (adj)"
+    ],
+    "collocations": [
+      "light drizzle",
+      "drizzle with rain",
+      "drizzle on"
+    ],
+    "synonyms": [
+      "mizzle",
+      "misty rain"
+    ],
+    "antonyms": [
+      "downpour"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "It drizzles small rain.",
+        "correct": "It is drizzling.",
+        "explain_vi": "Không cần thêm 'small rain' vì 'drizzle' đã mang nghĩa mưa nhỏ."
+      }
+    ],
+    "grammar_patterns": [
+      "it + drizzles",
+      "a + drizzle + of + rain"
+    ]
+  },
+  {
+    "word": "downpour",
+    "phonetic": "/ˈdaʊn.pɔːr/",
+    "meaning_vi": "mưa như trút nước",
+    "meaning_en": "a heavy fall of rain",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We got caught in a sudden downpour.",
+        "vi": "Chúng tôi bị mắc kẹt trong cơn mưa như trút nước bất chợt."
+      }
+    ],
+    "word_family": [
+      "pour (v)"
+    ],
+    "collocations": [
+      "heavy downpour",
+      "sudden downpour",
+      "torrential downpour"
+    ],
+    "synonyms": [
+      "deluge",
+      "cloudburst"
+    ],
+    "antonyms": [
+      "drizzle"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "It downpours heavily.",
+        "correct": "There is a heavy downpour.",
+        "explain_vi": "'Downpour' là danh từ, không dùng như động từ."
+      }
+    ],
+    "grammar_patterns": [
+      "a + downpour",
+      "in a + downpour"
+    ]
+  },
+  {
+    "word": "blizzard",
+    "phonetic": "/ˈblɪz.əd/",
+    "meaning_vi": "bão tuyết",
+    "meaning_en": "a severe snowstorm with high winds",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The blizzard shut down the entire city.",
+        "vi": "Trận bão tuyết đã làm tê liệt toàn thành phố."
+      }
+    ],
+    "word_family": [
+      "blizzardy (adj)"
+    ],
+    "collocations": [
+      "severe blizzard",
+      "blizzard conditions",
+      "blizzard warning"
+    ],
+    "synonyms": [
+      "snowstorm",
+      "whiteout"
+    ],
+    "antonyms": [
+      "thaw"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "It is blizzarding.",
+        "correct": "There is a blizzard.",
+        "explain_vi": "Không dùng 'blizzard' như động từ; nói 'There is a blizzard' hoặc 'It is snowing heavily'."
+      }
+    ],
+    "grammar_patterns": [
+      "a + blizzard",
+      "in a + blizzard"
+    ]
+  },
+  {
+    "word": "scorching",
+    "phonetic": "/ˈskɔːr.tʃɪŋ/",
+    "meaning_vi": "nóng như thiêu đốt",
+    "meaning_en": "extremely hot",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The scorching heat made it unbearable to go outside.",
+        "vi": "Cái nóng như thiêu đốt khiến việc ra ngoài trở nên không thể chịu nổi."
+      }
+    ],
+    "word_family": [
+      "scorch (v)",
+      "scorcher (n)"
+    ],
+    "collocations": [
+      "scorching heat",
+      "scorching sun",
+      "scorching temperatures"
+    ],
+    "synonyms": [
+      "blazing",
+      "sweltering"
+    ],
+    "antonyms": [
+      "freezing"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "It is very scorching.",
+        "correct": "It is scorching.",
+        "explain_vi": "Không cần 'very' vì 'scorching' đã mang nghĩa rất nóng."
+      }
+    ],
+    "grammar_patterns": [
+      "scorching + noun",
+      "it is scorching"
+    ]
+  },
+  {
+    "word": "humid",
+    "phonetic": "/ˈhjuː.mɪd/",
+    "meaning_vi": "ẩm ướt",
+    "meaning_en": "containing a high amount of water vapor; muggy",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The humid weather made me feel sticky all day.",
+        "vi": "Thời tiết ẩm ướt khiến tôi cảm thấy dính dớp cả ngày."
+      }
+    ],
+    "word_family": [
+      "humidity (n)",
+      "humidify (v)"
+    ],
+    "collocations": [
+      "humid climate",
+      "humid air",
+      "humid conditions"
+    ],
+    "synonyms": [
+      "muggy",
+      "sultry"
+    ],
+    "antonyms": [
+      "dry",
+      "arid"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "The weather is wet.",
+        "correct": "The weather is humid.",
+        "explain_vi": "'Wet' chỉ trạng thái ướt, 'humid' chỉ độ ẩm cao. Dùng 'humid' cho không khí."
+      }
+    ],
+    "grammar_patterns": [
+      "humid + noun",
+      "it is humid"
+    ]
+  },
+  {
+    "word": "frost",
+    "phonetic": "/frɒst/",
+    "meaning_vi": "sương giá",
+    "meaning_en": "a deposit of ice crystals on surfaces when the temperature falls below freezing",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The car windows were covered in frost this morning.",
+        "vi": "Kính xe ô tô bị phủ đầy sương giá sáng nay."
+      }
+    ],
+    "word_family": [
+      "frosty (adj)",
+      "frostbite (n)"
+    ],
+    "collocations": [
+      "heavy frost",
+      "ground frost",
+      "frost on the ground"
+    ],
+    "synonyms": [
+      "ice crystals",
+      "rime"
+    ],
+    "antonyms": [
+      "thaw"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "It frosts today.",
+        "correct": "There is frost today.",
+        "explain_vi": "'Frost' là danh từ, không dùng như động từ."
+      }
+    ],
+    "grammar_patterns": [
+      "frost + on + noun",
+      "covered in frost"
+    ]
+  },
+  {
+    "word": "thaw",
+    "phonetic": "/θɔː/",
+    "meaning_vi": "tan băng",
+    "meaning_en": "the process of ice or snow melting",
+    "pos": "noun/verb",
+    "examples": [
+      {
+        "en": "The spring thaw caused the river to flood.",
+        "vi": "Đợt tan băng mùa xuân đã gây ra lũ lụt trên sông."
+      }
+    ],
+    "word_family": [
+      "thawing (adj)"
+    ],
+    "collocations": [
+      "spring thaw",
+      "thaw out",
+      "thaw period"
+    ],
+    "synonyms": [
+      "melt",
+      "defrost"
+    ],
+    "antonyms": [
+      "freeze"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "The ice thaws.",
+        "correct": "The ice is thawing.",
+        "explain_vi": "Dùng thì tiếp diễn để diễn tả quá trình tan."
+      }
+    ],
+    "grammar_patterns": [
+      "thaw + out",
+      "a + thaw"
+    ]
+  },
+  {
+    "word": "gale",
+    "phonetic": "/ɡeɪl/",
+    "meaning_vi": "gió giật mạnh",
+    "meaning_en": "a very strong wind, often used in weather forecasts",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Gale-force winds are expected tonight.",
+        "vi": "Gió giật mạnh cấp bão dự kiến xảy ra tối nay."
+      }
+    ],
+    "word_family": [
+      "gale-force (adj)"
+    ],
+    "collocations": [
+      "gale-force winds",
+      "strong gale",
+      "gale warning"
+    ],
+    "synonyms": [
+      "storm",
+      "squall"
+    ],
+    "antonyms": [
+      "calm",
+      "breeze"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "The wind is gale.",
+        "correct": "The wind is gale-force.",
+        "explain_vi": "'Gale' là danh từ; dùng 'gale-force' như tính từ."
+      }
+    ],
+    "grammar_patterns": [
+      "a + gale",
+      "gale-force + noun"
+    ]
+  },
+  {
+    "word": "breeze",
+    "phonetic": "/briːz/",
+    "meaning_vi": "gió nhẹ",
+    "meaning_en": "a gentle wind",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "A cool breeze blew in from the sea.",
+        "vi": "Một làn gió mát thổi vào từ biển."
+      }
+    ],
+    "word_family": [
+      "breezy (adj)"
+    ],
+    "collocations": [
+      "cool breeze",
+      "gentle breeze",
+      "sea breeze"
+    ],
+    "synonyms": [
+      "light wind",
+      "zephyr"
+    ],
+    "antonyms": [
+      "gale",
+      "gust"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "It breezes lightly.",
+        "correct": "There is a light breeze.",
+        "explain_vi": "'Breeze' là danh từ; không dùng như động từ."
+      }
+    ],
+    "grammar_patterns": [
+      "a + breeze",
+      "breeze + blows"
+    ]
+  },
+  {
+    "word": "gust",
+    "phonetic": "/ɡʌst/",
+    "meaning_vi": "cơn gió giật",
+    "meaning_en": "a sudden, strong rush of wind",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "A gust of wind blew my hat off.",
+        "vi": "Một cơn gió giật thổi bay mũ của tôi."
+      }
+    ],
+    "word_family": [
+      "gusty (adj)"
+    ],
+    "collocations": [
+      "gust of wind",
+      "strong gust",
+      "sudden gust"
+    ],
+    "synonyms": [
+      "blast",
+      "squall"
+    ],
+    "antonyms": [
+      "breeze"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "It gusts strongly.",
+        "correct": "There is a strong gust.",
+        "explain_vi": "'Gust' là danh từ; dùng 'gusty' cho tính từ."
+      }
+    ],
+    "grammar_patterns": [
+      "a + gust + of + wind",
+      "gusty + noun"
+    ]
+  },
+  {
+    "word": "clear",
+    "phonetic": "/klɪər/",
+    "meaning_vi": "quang đãng, trong xanh",
+    "meaning_en": "without clouds or haze; bright and sunny",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The sky is clear today.",
+        "vi": "Bầu trời hôm nay quang đãng."
+      }
+    ],
+    "word_family": [
+      "clarity (n)",
+      "clearly (adv)"
+    ],
+    "collocations": [
+      "clear sky",
+      "clear day",
+      "clear weather"
+    ],
+    "synonyms": [
+      "sunny",
+      "bright"
+    ],
+    "antonyms": [
+      "overcast",
+      "cloudy"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "It is clear sky.",
+        "correct": "The sky is clear.",
+        "explain_vi": "Dùng 'The sky is clear' thay vì 'It is clear sky'."
+      }
+    ],
+    "grammar_patterns": [
+      "clear + noun",
+      "the sky is clear"
+    ]
+  },
+  {
+    "word": "overcast",
+    "phonetic": "/ˌəʊ.vəˈkɑːst/",
+    "meaning_vi": "u ám, nhiều mây",
+    "meaning_en": "covered with clouds; gloomy",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The sky was overcast all afternoon.",
+        "vi": "Bầu trời u ám suốt buổi chiều."
+      }
+    ],
+    "word_family": [
+      "overcast (n)"
+    ],
+    "collocations": [
+      "overcast sky",
+      "overcast day",
+      "overcast conditions"
+    ],
+    "synonyms": [
+      "cloudy",
+      "gloomy"
+    ],
+    "antonyms": [
+      "clear",
+      "sunny"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "It is overcast sky.",
+        "correct": "It is overcast.",
+        "explain_vi": "Không cần 'sky' vì 'overcast' đã bao hàm."
+      }
+    ],
+    "grammar_patterns": [
+      "it is overcast",
+      "overcast + noun"
+    ]
+  },
+  {
+    "word": "forecast",
+    "phonetic": "/ˈfɔː.kɑːst/",
+    "meaning_vi": "dự báo thời tiết",
+    "meaning_en": "a prediction of weather conditions",
+    "pos": "noun/verb",
+    "examples": [
+      {
+        "en": "The forecast says it will rain tomorrow.",
+        "vi": "Dự báo thời tiết nói rằng ngày mai sẽ mưa."
+      }
+    ],
+    "word_family": [
+      "forecaster (n)",
+      "forecasting (n)"
+    ],
+    "collocations": [
+      "weather forecast",
+      "forecast for tomorrow",
+      "forecast calls for"
+    ],
+    "synonyms": [
+      "prediction",
+      "outlook"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I listen to the weather forecast.",
+        "correct": "I watch/listen to the weather forecast.",
+        "explain_vi": "Dùng 'watch' hoặc 'listen to' tùy phương tiện."
+      }
+    ],
+    "grammar_patterns": [
+      "the + forecast",
+      "forecast + that + clause"
+    ]
+  },
+  {
+    "word": "mild",
+    "phonetic": "/maɪld/",
+    "meaning_vi": "ôn hòa, dễ chịu",
+    "meaning_en": "not very cold or very hot; temperate",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "We had a mild winter this year.",
+        "vi": "Năm nay chúng ta có một mùa đông ôn hòa."
+      }
+    ],
+    "word_family": [
+      "mildness (n)",
+      "mildly (adv)"
+    ],
+    "collocations": [
+      "mild climate",
+      "mild weather",
+      "mild winter"
+    ],
+    "synonyms": [
+      "temperate",
+      "gentle"
+    ],
+    "antonyms": [
+      "severe",
+      "harsh"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "The weather is mild warm.",
+        "correct": "The weather is mild.",
+        "explain_vi": "Không cần 'warm' vì 'mild' đã mang nghĩa ấm áp vừa phải."
+      }
+    ],
+    "grammar_patterns": [
+      "mild + noun",
+      "it is mild"
+    ]
+  },
+  {
+    "word": "severe",
+    "phonetic": "/sɪˈvɪər/",
+    "meaning_vi": "khắc nghiệt, dữ dội",
+    "meaning_en": "very intense or extreme, often causing damage",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "Severe storms are expected along the coast.",
+        "vi": "Các cơn bão dữ dội được dự báo dọc theo bờ biển."
+      }
+    ],
+    "word_family": [
+      "severity (n)",
+      "severely (adv)"
+    ],
+    "collocations": [
+      "severe weather",
+      "severe storm",
+      "severe conditions"
+    ],
+    "synonyms": [
+      "extreme",
+      "harsh"
+    ],
+    "antonyms": [
+      "mild",
+      "gentle"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "The storm is very severe.",
+        "correct": "The storm is severe.",
+        "explain_vi": "Không cần 'very' vì 'severe' đã mang nghĩa rất."
+      }
+    ],
+    "grammar_patterns": [
+      "severe + noun",
+      "it is severe"
+    ]
+  },
+  {
+    "word": "sweltering",
+    "phonetic": "/ˈswel.tər.ɪŋ/",
+    "meaning_vi": "nóng oi bức",
+    "meaning_en": "extremely hot and uncomfortable",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The sweltering heat made it difficult to sleep.",
+        "vi": "Cái nóng oi bức khiến khó ngủ."
+      }
+    ],
+    "word_family": [
+      "swelter (v)"
+    ],
+    "collocations": [
+      "sweltering heat",
+      "sweltering day",
+      "sweltering conditions"
+    ],
+    "synonyms": [
+      "scorching",
+      "boiling"
+    ],
+    "antonyms": [
+      "freezing"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "It is sweltering hot.",
+        "correct": "It is sweltering.",
+        "explain_vi": "Không cần 'hot' vì 'sweltering' đã bao hàm."
+      }
+    ],
+    "grammar_patterns": [
+      "sweltering + noun",
+      "it is sweltering"
+    ]
+  },
+  {
+    "word": "freezing",
+    "phonetic": "/ˈfriː.zɪŋ/",
+    "meaning_vi": "lạnh cóng",
+    "meaning_en": "extremely cold; at or below freezing point",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "It's freezing outside today.",
+        "vi": "Hôm nay ngoài trời lạnh cóng."
+      }
+    ],
+    "word_family": [
+      "freeze (v)",
+      "freezer (n)"
+    ],
+    "collocations": [
+      "freezing cold",
+      "freezing temperatures",
+      "freezing point"
+    ],
+    "synonyms": [
+      "bitter cold",
+      "icy"
+    ],
+    "antonyms": [
+      "boiling",
+      "scorching"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "It is very freezing.",
+        "correct": "It is freezing.",
+        "explain_vi": "Không cần 'very' vì 'freezing' đã mang nghĩa rất lạnh."
+      }
+    ],
+    "grammar_patterns": [
+      "freezing + noun",
+      "it is freezing"
+    ]
+  },
+  {
+    "word": "chilly",
+    "phonetic": "/ˈtʃɪl.i/",
+    "meaning_vi": "se lạnh, hơi lạnh",
+    "meaning_en": "unpleasantly cold",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "It's a bit chilly today, so bring a jacket.",
+        "vi": "Hôm nay hơi se lạnh, vì vậy hãy mang theo áo khoác."
+      }
+    ],
+    "word_family": [
+      "chill (n/v)",
+      "chilliness (n)"
+    ],
+    "collocations": [
+      "chilly weather",
+      "chilly morning",
+      "chilly wind"
+    ],
+    "synonyms": [
+      "cool",
+      "brisk"
+    ],
+    "antonyms": [
+      "warm",
+      "hot"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "It is chilly cold.",
+        "correct": "It is chilly.",
+        "explain_vi": "Không cần 'cold' vì 'chilly' đã mang nghĩa lạnh."
+      }
+    ],
+    "grammar_patterns": [
+      "chilly + noun",
+      "it is chilly"
+    ]
+  },
+  {
+    "word": "balmy",
+    "phonetic": "/ˈbɑː.mi/",
+    "meaning_vi": "ấm áp dễ chịu",
+    "meaning_en": "pleasantly warm and mild",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The balmy evening was perfect for a walk.",
+        "vi": "Buổi tối ấm áp dễ chịu thật hoàn hảo cho một buổi đi dạo."
+      }
+    ],
+    "word_family": [
+      "balminess (n)"
+    ],
+    "collocations": [
+      "balmy weather",
+      "balmy breeze",
+      "balmy night"
+    ],
+    "synonyms": [
+      "mild",
+      "temperate"
+    ],
+    "antonyms": [
+      "chilly",
+      "cold"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "It is balmy warm.",
+        "correct": "It is balmy.",
+        "explain_vi": "Không cần 'warm' vì 'balmy' đã mang nghĩa ấm áp."
+      }
+    ],
+    "grammar_patterns": [
+      "balmy + noun",
+      "it is balmy"
+    ]
+  },
+  {
+    "word": "crisp",
+    "phonetic": "/krɪsp/",
+    "meaning_vi": "trong lành, mát mẻ",
+    "meaning_en": "(of weather) cool, fresh, and invigorating",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The crisp autumn air was refreshing.",
+        "vi": "Không khí mùa thu trong lành thật sảng khoái."
+      }
+    ],
+    "word_family": [
+      "crispness (n)",
+      "crisply (adv)"
+    ],
+    "collocations": [
+      "crisp air",
+      "crisp morning",
+      "crisp weather"
+    ],
+    "synonyms": [
+      "fresh",
+      "bracing"
+    ],
+    "antonyms": [
+      "stuffy",
+      "humid"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "It is crisp cool.",
+        "correct": "It is crisp.",
+        "explain_vi": "Không cần 'cool' vì 'crisp' đã bao hàm."
+      }
+    ],
+    "grammar_patterns": [
+      "crisp + noun",
+      "it is crisp"
+    ]
+  },
+  {
+    "word": "sultry",
+    "phonetic": "/ˈsʌl.tri/",
+    "meaning_vi": "oi bức, ngột ngạt",
+    "meaning_en": "hot and humid; causing discomfort",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The sultry afternoon made everyone lethargic.",
+        "vi": "Buổi chiều oi bức khiến mọi người uể oải."
+      }
+    ],
+    "word_family": [
+      "sultriness (n)"
+    ],
+    "collocations": [
+      "sultry weather",
+      "sultry summer",
+      "sultry heat"
+    ],
+    "synonyms": [
+      "muggy",
+      "stifling",
+      "oppressive"
+    ],
+    "antonyms": [
+      "cool",
+      "refreshing"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Sultry weather is very hot but dry.",
+        "correct": "Sultry weather is hot and humid.",
+        "explain_vi": "Sultry có nghĩa là nóng ẩm, không phải nóng khô."
+      }
+    ],
+    "grammar_patterns": [
+      "sultry + noun"
+    ]
+  },
+  {
+    "word": "drought",
+    "phonetic": "/draʊt/",
+    "meaning_vi": "hạn hán",
+    "meaning_en": "a prolonged period of abnormally low rainfall",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The region suffered a severe drought last year.",
+        "vi": "Khu vực này đã trải qua một trận hạn hán nghiêm trọng năm ngoái."
+      }
+    ],
+    "word_family": [
+      "droughty (adj)"
+    ],
+    "collocations": [
+      "severe drought",
+      "drought conditions",
+      "drought relief"
+    ],
+    "synonyms": [
+      "dry spell",
+      "water shortage"
+    ],
+    "antonyms": [
+      "flood",
+      "deluge"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Drought is a long period of rain.",
+        "correct": "Drought is a long period without rain.",
+        "explain_vi": "Drought là hạn hán, thiếu mưa, không phải mưa nhiều."
+      }
+    ],
+    "grammar_patterns": [
+      "drought + verb (e.g., occurs)"
+    ]
+  },
+  {
+    "word": "flurry",
+    "phonetic": "/ˈflɜː.ri/",
+    "meaning_vi": "cơn mưa/tuyết nhẹ bất chợt; sự xôn xao",
+    "meaning_en": "a brief, light snowfall or rain; a sudden burst of activity",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "A flurry of snowflakes dusted the streets.",
+        "vi": "Một trận tuyết nhẹ phủ lên đường phố."
+      }
+    ],
+    "word_family": [
+      "flurried (adj)"
+    ],
+    "collocations": [
+      "snow flurry",
+      "flurry of activity",
+      "flurry of excitement"
+    ],
+    "synonyms": [
+      "shower",
+      "burst",
+      "spurt"
+    ],
+    "antonyms": [
+      "calm",
+      "lull"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "A flurry is a heavy storm.",
+        "correct": "A flurry is a brief, light snowfall or rain.",
+        "explain_vi": "Flurry chỉ mưa/tuyết nhẹ, không phải bão lớn."
+      }
+    ],
+    "grammar_patterns": [
+      "a flurry of + noun"
+    ]
+  },
+  {
+    "word": "torrential",
+    "phonetic": "/tɒˈren.ʃəl/",
+    "meaning_vi": "như trút nước, rất mạnh (mưa)",
+    "meaning_en": "falling rapidly and in copious quantities (especially rain)",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "Torrential rain caused flooding in the city.",
+        "vi": "Mưa như trút nước gây ngập lụt trong thành phố."
+      }
+    ],
+    "word_family": [
+      "torrent (n)"
+    ],
+    "collocations": [
+      "torrential rain",
+      "torrential downpour",
+      "torrential floods"
+    ],
+    "synonyms": [
+      "heavy",
+      "pelting",
+      "deluging"
+    ],
+    "antonyms": [
+      "light",
+      "drizzle"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Torrential rain is a light rain.",
+        "correct": "Torrential rain is very heavy rain.",
+        "explain_vi": "Torrential chỉ mưa rất to, không phải mưa nhẹ."
+      }
+    ],
+    "grammar_patterns": [
+      "torrential + noun"
+    ]
+  },
+  {
+    "word": "muggy",
+    "phonetic": "/ˈmʌɡ.i/",
+    "meaning_vi": "nóng ẩm, oi bức",
+    "meaning_en": "unpleasantly warm and humid",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The muggy weather made it hard to breathe.",
+        "vi": "Thời tiết nóng ẩm khiến khó thở."
+      }
+    ],
+    "word_family": [
+      "mugginess (n)"
+    ],
+    "collocations": [
+      "muggy day",
+      "muggy climate",
+      "muggy heat"
+    ],
+    "synonyms": [
+      "sultry",
+      "humid",
+      "sticky"
+    ],
+    "antonyms": [
+      "dry",
+      "arid"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Muggy weather is cold and damp.",
+        "correct": "Muggy weather is warm and humid.",
+        "explain_vi": "Muggy là nóng ẩm, không phải lạnh ẩm."
+      }
+    ],
+    "grammar_patterns": [
+      "muggy + noun"
+    ]
+  },
+  {
+    "word": "tempest",
+    "phonetic": "/ˈtem.pɪst/",
+    "meaning_vi": "bão tố, cuồng phong",
+    "meaning_en": "a violent windy storm",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The tempest uprooted trees and damaged homes.",
+        "vi": "Cơn bão tố đã làm bật gốc cây và phá hủy nhà cửa."
+      }
+    ],
+    "word_family": [
+      "tempestuous (adj)"
+    ],
+    "collocations": [
+      "violent tempest",
+      "tempest raged",
+      "tempest of wind"
+    ],
+    "synonyms": [
+      "storm",
+      "cyclone",
+      "hurricane"
+    ],
+    "antonyms": [
+      "calm",
+      "tranquility"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Tempest is a light rain.",
+        "correct": "Tempest is a violent storm.",
+        "explain_vi": "Tempest là bão lớn, không phải mưa nhẹ."
+      }
+    ],
+    "grammar_patterns": [
+      "tempest + verb (e.g., struck)"
+    ]
+  },
+  {
+    "word": "damp",
+    "phonetic": "/dæmp/",
+    "meaning_vi": "ẩm ướt, ẩm thấp",
+    "meaning_en": "slightly wet, often in an unpleasant way",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The damp air made the room feel chilly.",
+        "vi": "Không khí ẩm khiến căn phòng có cảm giác lạnh."
+      }
+    ],
+    "word_family": [
+      "dampness (n)",
+      "dampen (v)"
+    ],
+    "collocations": [
+      "damp weather",
+      "damp climate",
+      "damp conditions"
+    ],
+    "synonyms": [
+      "moist",
+      "humid",
+      "clammy"
+    ],
+    "antonyms": [
+      "dry",
+      "arid"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Damp means completely wet.",
+        "correct": "Damp means slightly wet.",
+        "explain_vi": "Damp là hơi ẩm, không phải ướt đẫm."
+      }
+    ],
+    "grammar_patterns": [
+      "damp + noun"
+    ]
+  },
+  {
+    "word": "hail",
+    "phonetic": "/heɪl/",
+    "meaning_vi": "mưa đá",
+    "meaning_en": "pellets of frozen rain falling from the sky",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The hailstorm damaged the crops.",
+        "vi": "Trận mưa đá đã phá hỏng mùa màng."
+      }
+    ],
+    "word_family": [
+      "hailstorm (n)"
+    ],
+    "collocations": [
+      "hail storm",
+      "hail damage",
+      "hail stones"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Hail is the same as snow.",
+        "correct": "Hail is frozen rain, not snow.",
+        "explain_vi": "Hail là mưa đá, khác với tuyết."
+      }
+    ],
+    "grammar_patterns": [
+      "hail + verb (e.g., fell)"
+    ]
+  },
+  {
+    "word": "scorch",
+    "phonetic": "/skɔːrtʃ/",
+    "meaning_vi": "thiêu đốt, làm cháy xém",
+    "meaning_en": "to burn the surface of something with intense heat",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "The sun scorched the grass, turning it brown.",
+        "vi": "Mặt trời thiêu đốt cỏ, làm nó chuyển sang màu nâu."
+      }
+    ],
+    "word_family": [
+      "scorching (adj)",
+      "scorcher (n)"
+    ],
+    "collocations": [
+      "scorch the earth",
+      "scorch under the sun",
+      "scorched by heat"
+    ],
+    "synonyms": [
+      "burn",
+      "sear",
+      "singe"
+    ],
+    "antonyms": [
+      "cool",
+      "extinguish"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Scorch means to cool something.",
+        "correct": "Scorch means to burn or dry up with heat.",
+        "explain_vi": "Scorch là đốt cháy, không phải làm mát."
+      }
+    ],
+    "grammar_patterns": [
+      "scorch + object"
+    ]
+  },
+  {
+    "word": "biting",
+    "phonetic": "/ˈbaɪ.tɪŋ/",
+    "meaning_vi": "cắt da cắt thịt, buốt giá (gió, lạnh)",
+    "meaning_en": "extremely cold and harsh (wind or weather)",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "A biting wind swept through the valley.",
+        "vi": "Một cơn gió buốt giá quét qua thung lũng."
+      }
+    ],
+    "word_family": [
+      "bite (v)"
+    ],
+    "collocations": [
+      "biting wind",
+      "biting cold",
+      "biting frost"
+    ],
+    "synonyms": [
+      "piercing",
+      "bitter",
+      "cutting"
+    ],
+    "antonyms": [
+      "gentle",
+      "mild"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Biting wind is a wind that bites people.",
+        "correct": "Biting wind is a very cold and harsh wind.",
+        "explain_vi": "Biting ở đây mang nghĩa ẩn dụ chỉ sự lạnh buốt, không phải gió cắn."
+      }
+    ],
+    "grammar_patterns": [
+      "biting + noun"
+    ]
+  },
+  {
+    "word": "mild",
+    "phonetic": "/maɪld/",
+    "meaning_vi": "ôn hòa, dễ chịu (thời tiết)",
+    "meaning_en": "not very cold or hot; pleasant",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "We enjoyed a mild winter this year.",
+        "vi": "Chúng tôi đã tận hưởng một mùa đông ôn hòa năm nay."
+      }
+    ],
+    "word_family": [
+      "mildness (n)"
+    ],
+    "collocations": [
+      "mild weather",
+      "mild climate",
+      "mild winter"
+    ],
+    "synonyms": [
+      "temperate",
+      "gentle",
+      "pleasant"
+    ],
+    "antonyms": [
+      "extreme",
+      "severe"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Mild means very hot.",
+        "correct": "Mild means not extreme, pleasant.",
+        "explain_vi": "Mild là ôn hòa, không phải nóng."
+      }
+    ],
+    "grammar_patterns": [
+      "mild + noun"
+    ]
+  },
+  {
+    "word": "severe",
+    "phonetic": "/sɪˈvɪr/",
+    "meaning_vi": "khắc nghiệt, dữ dội (thời tiết)",
+    "meaning_en": "very intense or harsh (weather conditions)",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "Severe storms are expected tonight.",
+        "vi": "Dự kiến có bão dữ dội vào tối nay."
+      }
+    ],
+    "word_family": [
+      "severity (n)"
+    ],
+    "collocations": [
+      "severe weather",
+      "severe storm",
+      "severe drought"
+    ],
+    "synonyms": [
+      "harsh",
+      "extreme",
+      "intense"
+    ],
+    "antonyms": [
+      "mild",
+      "gentle"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Severe weather is always cold.",
+        "correct": "Severe weather can be hot, cold, or stormy.",
+        "explain_vi": "Severe chỉ mức độ khắc nghiệt, không riêng lạnh."
+      }
+    ],
+    "grammar_patterns": [
+      "severe + noun"
+    ]
+  },
+  {
+    "word": "sweltering",
+    "phonetic": "/ˈswel.tər.ɪŋ/",
+    "meaning_vi": "nóng như thiêu như đốt",
+    "meaning_en": "extremely hot and uncomfortable",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The sweltering heat made outdoor work impossible.",
+        "vi": "Cái nóng như thiêu đốt khiến công việc ngoài trời không thể thực hiện được."
+      }
+    ],
+    "word_family": [
+      "swelter (v)"
+    ],
+    "collocations": [
+      "sweltering heat",
+      "sweltering day",
+      "sweltering summer"
+    ],
+    "synonyms": [
+      "scorching",
+      "broiling",
+      "blistering"
+    ],
+    "antonyms": [
+      "freezing",
+      "icy"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Sweltering means slightly warm.",
+        "correct": "Sweltering means extremely hot.",
+        "explain_vi": "Sweltering là rất nóng, không phải hơi ấm."
+      }
+    ],
+    "grammar_patterns": [
+      "sweltering + noun"
+    ]
+  },
+  {
+    "word": "freezing",
+    "phonetic": "/ˈfriː.zɪŋ/",
+    "meaning_vi": "băng giá, rất lạnh",
+    "meaning_en": "extremely cold; at or below 0°C",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The temperature is freezing tonight.",
+        "vi": "Nhiệt độ sẽ xuống dưới 0°C tối nay."
+      }
+    ],
+    "word_family": [
+      "freeze (v)",
+      "freezer (n)"
+    ],
+    "collocations": [
+      "freezing cold",
+      "freezing point",
+      "freezing weather"
+    ],
+    "synonyms": [
+      "icy",
+      "glacial",
+      "bitter"
+    ],
+    "antonyms": [
+      "boiling",
+      "hot"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Freezing means very hot.",
+        "correct": "Freezing means very cold.",
+        "explain_vi": "Freezing là lạnh, không phải nóng."
+      }
+    ],
+    "grammar_patterns": [
+      "freezing + noun"
+    ]
+  },
+  {
+    "word": "chilly",
+    "phonetic": "/ˈtʃɪl.i/",
+    "meaning_vi": "se lạnh, hơi lạnh",
+    "meaning_en": "unpleasantly cold",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "It's a chilly morning; bring a jacket.",
+        "vi": "Sáng nay se lạnh; hãy mang theo áo khoác."
+      }
+    ],
+    "word_family": [
+      "chill (n/v)"
+    ],
+    "collocations": [
+      "chilly weather",
+      "chilly wind",
+      "chilly night"
+    ],
+    "synonyms": [
+      "cool",
+      "brisk",
+      "crisp"
+    ],
+    "antonyms": [
+      "warm",
+      "mild"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Chilly means extremely cold.",
+        "correct": "Chilly means slightly cold, uncomfortable.",
+        "explain_vi": "Chilly là lạnh nhẹ, không phải cực lạnh."
+      }
+    ],
+    "grammar_patterns": [
+      "chilly + noun"
+    ]
+  },
+  {
+    "word": "balmy",
+    "phonetic": "/ˈbɑː.mi/",
+    "meaning_vi": "ấm áp dễ chịu",
+    "meaning_en": "pleasantly warm and mild",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "A balmy breeze blew in from the sea.",
+        "vi": "Một làn gió ấm áp từ biển thổi vào."
+      }
+    ],
+    "word_family": [
+      "balminess (n)"
+    ],
+    "collocations": [
+      "balmy weather",
+      "balmy evening",
+      "balmy air"
+    ],
+    "synonyms": [
+      "mild",
+      "gentle",
+      "temperate"
+    ],
+    "antonyms": [
+      "harsh",
+      "cold"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Balmy means very hot.",
+        "correct": "Balmy means pleasantly warm.",
+        "explain_vi": "Balmy là ấm áp dễ chịu, không phải nóng."
+      }
+    ],
+    "grammar_patterns": [
+      "balmy + noun"
+    ]
+  },
+  {
+    "word": "crisp",
+    "phonetic": "/krɪsp/",
+    "meaning_vi": "trong lành, se lạnh (không khí)",
+    "meaning_en": "pleasantly cool and fresh (air or weather)",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The crisp autumn air was invigorating.",
+        "vi": "Không khí mùa thu trong lành thật sảng khoái."
+      }
+    ],
+    "word_family": [
+      "crispness (n)"
+    ],
+    "collocations": [
+      "crisp air",
+      "crisp morning",
+      "crisp weather"
+    ],
+    "synonyms": [
+      "fresh",
+      "bracing",
+      "invigorating"
+    ],
+    "antonyms": [
+      "stale",
+      "humid"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Crisp means very cold.",
+        "correct": "Crisp means pleasantly cool and fresh.",
+        "explain_vi": "Crisp là mát mẻ dễ chịu, không phải lạnh buốt."
+      }
+    ],
+    "grammar_patterns": [
+      "crisp + noun"
+    ]
+  },
+  {
+    "word": "drizzle",
+    "phonetic": "/ˈdrɪz.əl/",
+    "meaning_vi": "mưa phùn",
+    "meaning_en": "light rain falling in very fine drops",
+    "pos": "noun/verb",
+    "examples": [
+      {
+        "en": "A steady drizzle fell all morning.",
+        "vi": "Mưa phùn rả rích suốt buổi sáng."
+      }
+    ],
+    "word_family": [
+      "drizzly (adj)"
+    ],
+    "collocations": [
+      "light drizzle",
+      "drizzle with rain",
+      "drizzle fell"
+    ],
+    "synonyms": [
+      "mist",
+      "sprinkle"
+    ],
+    "antonyms": [
+      "downpour",
+      "torrent"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Drizzle is heavy rain.",
+        "correct": "Drizzle is light rain.",
+        "explain_vi": "Drizzle là mưa phùn, không phải mưa to."
+      }
+    ],
+    "grammar_patterns": [
+      "drizzle + verb (e.g., started)"
+    ]
+  },
+  {
+    "word": "downpour",
+    "phonetic": "/ˈdaʊn.pɔːr/",
+    "meaning_vi": "mưa như trút nước",
+    "meaning_en": "a heavy fall of rain",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We got caught in a sudden downpour.",
+        "vi": "Chúng tôi bị mắc kẹt trong một trận mưa như trút nước."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "heavy downpour",
+      "sudden downpour",
+      "tropical downpour"
+    ],
+    "synonyms": [
+      "deluge",
+      "cloudburst",
+      "torrent"
+    ],
+    "antonyms": [
+      "drizzle",
+      "sprinkle"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Downpour is a light rain.",
+        "correct": "Downpour is a heavy rain.",
+        "explain_vi": "Downpour là mưa to, không phải mưa nhẹ."
+      }
+    ],
+    "grammar_patterns": [
+      "downpour + verb (e.g., began)"
+    ]
+  },
+  {
+    "word": "blizzard",
+    "phonetic": "/ˈblɪz.ərd/",
+    "meaning_vi": "bão tuyết",
+    "meaning_en": "a severe snowstorm with strong winds",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The blizzard closed all schools and roads.",
+        "vi": "Bão tuyết đã đóng cửa tất cả trường học và đường xá."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "blizzard conditions",
+      "blizzard warning",
+      "severe blizzard"
+    ],
+    "synonyms": [
+      "snowstorm",
+      "whiteout"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Blizzard is a rainstorm.",
+        "correct": "Blizzard is a snowstorm with strong winds.",
+        "explain_vi": "Blizzard là bão tuyết, không phải bão mưa."
+      }
+    ],
+    "grammar_patterns": [
+      "blizzard + verb (e.g., hit)"
+    ]
+  },
+  {
+    "word": "barometer",
+    "phonetic": "/bəˈrɒm.ɪ.tər/",
+    "meaning_vi": "phong vũ biểu",
+    "meaning_en": "an instrument measuring atmospheric pressure, used in forecasting",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The barometer is falling, indicating a storm is approaching.",
+        "vi": "Phong vũ biểu đang giảm, báo hiệu một cơn bão đang đến gần."
+      }
+    ],
+    "word_family": [
+      "barometric (adj)"
+    ],
+    "collocations": [
+      "falling barometer",
+      "rising barometer",
+      "barometer reading"
+    ],
+    "synonyms": [
+      "pressure gauge"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "The barometer is going down.",
+        "correct": "The barometer is falling.",
+        "explain_vi": "Nên dùng 'falling' thay vì 'going down' trong ngữ cảnh này."
+      }
+    ],
+    "grammar_patterns": [
+      "the + barometer + verb (rise/fall)"
+    ]
+  },
+  {
+    "word": "isobar",
+    "phonetic": "/ˈaɪ.sə.bɑːr/",
+    "meaning_vi": "đường đẳng áp",
+    "meaning_en": "a line on a map connecting points of equal atmospheric pressure",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Closely spaced isobars indicate strong winds.",
+        "vi": "Các đường đẳng áp gần nhau cho thấy gió mạnh."
+      }
+    ],
+    "word_family": [
+      "isobaric (adj)"
+    ],
+    "collocations": [
+      "closely spaced isobars",
+      "isobar map",
+      "isobar pattern"
+    ],
+    "synonyms": [
+      "pressure line"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Isobars are lines of equal temperature.",
+        "correct": "Isobars are lines of equal pressure.",
+        "explain_vi": "Nhầm lẫn với đường đẳng nhiệt."
+      }
+    ],
+    "grammar_patterns": [
+      "plural isobars",
+      "adjective + isobars"
+    ]
+  },
+  {
+    "word": "cyclogenesis",
+    "phonetic": "/ˌsaɪ.kləʊˈdʒen.ə.sɪs/",
+    "meaning_vi": "sự hình thành xoáy thuận",
+    "meaning_en": "the development or intensification of a cyclone",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Cyclogenesis occurs when warm and cold air masses collide.",
+        "vi": "Sự hình thành xoáy thuận xảy ra khi khối khí nóng và lạnh va chạm."
+      }
+    ],
+    "word_family": [
+      "cyclogenetic (adj)"
+    ],
+    "collocations": [
+      "rapid cyclogenesis",
+      "cyclogenesis event",
+      "cyclogenesis region"
+    ],
+    "synonyms": [
+      "storm development"
+    ],
+    "antonyms": [
+      "cyclolysis"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Cyclogenesis is the same as a cyclone.",
+        "correct": "Cyclogenesis is the formation of a cyclone.",
+        "explain_vi": "Cyclogenesis là quá trình, không phải hiện tượng."
+      }
+    ],
+    "grammar_patterns": [
+      "noun + occurs",
+      "adjective + cyclogenesis"
+    ]
+  },
+  {
+    "word": "anemometer",
+    "phonetic": "/ˌæn.ɪˈmɒm.ɪ.tər/",
+    "meaning_vi": "máy đo gió",
+    "meaning_en": "an instrument for measuring wind speed",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The anemometer recorded gusts of up to 50 knots.",
+        "vi": "Máy đo gió ghi nhận gió giật lên tới 50 hải lý/giờ."
+      }
+    ],
+    "word_family": [
+      "anemometric (adj)"
+    ],
+    "collocations": [
+      "anemometer reading",
+      "cup anemometer",
+      "anemometer data"
+    ],
+    "synonyms": [
+      "wind gauge"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "The anemometer measures temperature.",
+        "correct": "The anemometer measures wind speed.",
+        "explain_vi": "Nhầm với nhiệt kế."
+      }
+    ],
+    "grammar_patterns": [
+      "the + anemometer + verb",
+      "anemometer + noun"
+    ]
+  },
+  {
+    "word": "occluded front",
+    "phonetic": "/əˈkluː.dɪd frʌnt/",
+    "meaning_vi": "front bị chặn",
+    "meaning_en": "a weather front formed when a cold front overtakes a warm front",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "An occluded front often brings prolonged precipitation.",
+        "vi": "Front bị chặn thường mang lại mưa kéo dài."
+      }
+    ],
+    "word_family": [
+      "occlude (v)",
+      "occlusion (n)"
+    ],
+    "collocations": [
+      "occluded front passage",
+      "occluded front system"
+    ],
+    "synonyms": [
+      "occlusion"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Occluded front is a type of cold front.",
+        "correct": "Occluded front is a combination of cold and warm fronts.",
+        "explain_vi": "Front bị chặn không chỉ là front lạnh."
+      }
+    ],
+    "grammar_patterns": [
+      "an + occluded + front"
+    ]
+  },
+  {
+    "word": "ridge of high pressure",
+    "phonetic": "/rɪdʒ əv haɪ ˈpreʃ.ər/",
+    "meaning_vi": "sống áp cao",
+    "meaning_en": "an elongated area of high atmospheric pressure",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "A ridge of high pressure is bringing settled weather.",
+        "vi": "Một sống áp cao đang mang lại thời tiết ổn định."
+      }
+    ],
+    "word_family": [
+      "ridge (n)",
+      "high pressure (n)"
+    ],
+    "collocations": [
+      "ridge of high pressure extends",
+      "ridge of high pressure builds"
+    ],
+    "synonyms": [
+      "high-pressure ridge"
+    ],
+    "antonyms": [
+      "trough of low pressure"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Ridge of high pressure means high temperature.",
+        "correct": "Ridge of high pressure means high atmospheric pressure.",
+        "explain_vi": "Áp suất cao không đồng nghĩa với nhiệt độ cao."
+      }
+    ],
+    "grammar_patterns": [
+      "a + ridge + of + high pressure"
+    ]
+  },
+  {
+    "word": "trough of low pressure",
+    "phonetic": "/trɒf əv ləʊ ˈpreʃ.ər/",
+    "meaning_vi": "rãnh áp thấp",
+    "meaning_en": "an elongated area of low atmospheric pressure",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "A trough of low pressure is moving eastward.",
+        "vi": "Một rãnh áp thấp đang di chuyển về phía đông."
+      }
+    ],
+    "word_family": [
+      "trough (n)",
+      "low pressure (n)"
+    ],
+    "collocations": [
+      "trough of low pressure deepens",
+      "trough of low pressure approaches"
+    ],
+    "synonyms": [
+      "low-pressure trough"
+    ],
+    "antonyms": [
+      "ridge of high pressure"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Trough of low pressure is the same as a cyclone.",
+        "correct": "A trough is an elongated area, not a closed cyclone.",
+        "explain_vi": "Rãnh áp thấp khác với xoáy thuận."
+      }
+    ],
+    "grammar_patterns": [
+      "a + trough + of + low pressure"
+    ]
+  },
+  {
+    "word": "jet stream",
+    "phonetic": "/ˈdʒet striːm/",
+    "meaning_vi": "dòng tia",
+    "meaning_en": "a narrow band of strong wind in the upper atmosphere",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The jet stream influences weather patterns across the globe.",
+        "vi": "Dòng tia ảnh hưởng đến các kiểu thời tiết trên toàn cầu."
+      }
+    ],
+    "word_family": [
+      "jet (n)",
+      "stream (n)"
+    ],
+    "collocations": [
+      "jet stream position",
+      "jet stream strength",
+      "polar jet stream"
+    ],
+    "synonyms": [
+      "upper-level jet"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Jet stream is a type of wind near the ground.",
+        "correct": "Jet stream occurs in the upper atmosphere.",
+        "explain_vi": "Dòng tia không phải gió mặt đất."
+      }
+    ],
+    "grammar_patterns": [
+      "the + jet stream + verb",
+      "adjective + jet stream"
+    ]
+  },
+  {
+    "word": "atmospheric pressure",
+    "phonetic": "/ˌæt.məsˈfer.ɪk ˈpreʃ.ər/",
+    "meaning_vi": "áp suất khí quyển",
+    "meaning_en": "the pressure exerted by the weight of the atmosphere",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Atmospheric pressure decreases with altitude.",
+        "vi": "Áp suất khí quyển giảm dần theo độ cao."
+      }
+    ],
+    "word_family": [
+      "atmosphere (n)",
+      "pressure (n)"
+    ],
+    "collocations": [
+      "atmospheric pressure changes",
+      "high atmospheric pressure",
+      "low atmospheric pressure"
+    ],
+    "synonyms": [
+      "barometric pressure"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Atmospheric pressure is the same as air pressure.",
+        "correct": "They are synonymous.",
+        "explain_vi": "Hai thuật ngữ này có thể dùng thay thế."
+      }
+    ],
+    "grammar_patterns": [
+      "atmospheric + pressure"
+    ]
+  },
+  {
+    "word": "relative humidity",
+    "phonetic": "/ˈrel.ə.tɪv hjuːˈmɪd.ɪ.ti/",
+    "meaning_vi": "độ ẩm tương đối",
+    "meaning_en": "the amount of water vapor present in air expressed as a percentage of the amount needed for saturation",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Relative humidity is high during the monsoon season.",
+        "vi": "Độ ẩm tương đối cao trong mùa gió mùa."
+      }
+    ],
+    "word_family": [
+      "relative (adj)",
+      "humidity (n)"
+    ],
+    "collocations": [
+      "relative humidity level",
+      "relative humidity percentage",
+      "high relative humidity"
+    ],
+    "synonyms": [
+      "humidity ratio"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Relative humidity is the same as absolute humidity.",
+        "correct": "Relative humidity is a percentage; absolute humidity is a mass measurement.",
+        "explain_vi": "Độ ẩm tương đối khác với độ ẩm tuyệt đối."
+      }
+    ],
+    "grammar_patterns": [
+      "relative + humidity"
+    ]
+  },
+  {
+    "word": "dew point",
+    "phonetic": "/ˈdjuː pɔɪnt/",
+    "meaning_vi": "điểm sương",
+    "meaning_en": "the temperature at which air becomes saturated and water vapor condenses",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "When the temperature drops to the dew point, fog forms.",
+        "vi": "Khi nhiệt độ giảm xuống điểm sương, sương mù hình thành."
+      }
+    ],
+    "word_family": [
+      "dew (n)",
+      "point (n)"
+    ],
+    "collocations": [
+      "dew point temperature",
+      "dew point depression",
+      "high dew point"
+    ],
+    "synonyms": [
+      "condensation point"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Dew point is the temperature at which rain falls.",
+        "correct": "Dew point is the temperature at which condensation occurs.",
+        "explain_vi": "Điểm sương không liên quan trực tiếp đến mưa."
+      }
+    ],
+    "grammar_patterns": [
+      "the + dew point",
+      "verb + dew point"
+    ]
+  },
+  {
+    "word": "visibility",
+    "phonetic": "/ˌvɪz.ɪˈbɪl.ɪ.ti/",
+    "meaning_vi": "tầm nhìn xa",
+    "meaning_en": "the distance one can see, affected by weather conditions",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Visibility is reduced to less than 100 meters in heavy fog.",
+        "vi": "Tầm nhìn xa giảm xuống dưới 100 mét trong sương mù dày đặc."
+      }
+    ],
+    "word_family": [
+      "visible (adj)",
+      "visibility (n)"
+    ],
+    "collocations": [
+      "poor visibility",
+      "low visibility",
+      "visibility range"
+    ],
+    "synonyms": [
+      "visual range"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Visibility is the ability to see clearly.",
+        "correct": "Visibility is the distance one can see.",
+        "explain_vi": "Tầm nhìn xa là khoảng cách, không phải khả năng."
+      }
+    ],
+    "grammar_patterns": [
+      "visibility + verb (improve, reduce)",
+      "adjective + visibility"
+    ]
+  },
+  {
+    "word": "precipitation",
+    "phonetic": "/prɪˌsɪp.ɪˈteɪ.ʃən/",
+    "meaning_vi": "lượng mưa",
+    "meaning_en": "any form of water falling from the sky (rain, snow, sleet, hail)",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Precipitation is expected throughout the weekend.",
+        "vi": "Lượng mưa được dự báo trong suốt cuối tuần."
+      }
+    ],
+    "word_family": [
+      "precipitate (v)",
+      "precipitous (adj)"
+    ],
+    "collocations": [
+      "precipitation forecast",
+      "precipitation amount",
+      "heavy precipitation"
+    ],
+    "synonyms": [
+      "rainfall",
+      "snowfall"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Precipitation only refers to rain.",
+        "correct": "Precipitation includes rain, snow, sleet, and hail.",
+        "explain_vi": "Precipitation bao gồm tất cả các dạng mưa."
+      }
+    ],
+    "grammar_patterns": [
+      "precipitation + verb (occur, fall)",
+      "adjective + precipitation"
+    ]
+  },
+  {
+    "word": "evaporation",
+    "phonetic": "/ɪˌvæp.əˈreɪ.ʃən/",
+    "meaning_vi": "sự bay hơi",
+    "meaning_en": "the process of liquid turning into vapor",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Evaporation rates are higher in hot, dry weather.",
+        "vi": "Tốc độ bay hơi cao hơn trong thời tiết nóng và khô."
+      }
+    ],
+    "word_family": [
+      "evaporate (v)",
+      "evaporative (adj)"
+    ],
+    "collocations": [
+      "evaporation rate",
+      "evaporation process",
+      "water evaporation"
+    ],
+    "synonyms": [
+      "vaporization"
+    ],
+    "antonyms": [
+      "condensation"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Evaporation only occurs at boiling point.",
+        "correct": "Evaporation occurs at any temperature.",
+        "explain_vi": "Bay hơi xảy ra ở mọi nhiệt độ."
+      }
+    ],
+    "grammar_patterns": [
+      "evaporation + verb (occur, increase)",
+      "noun + of evaporation"
+    ]
+  },
+  {
+    "word": "condensation",
+    "phonetic": "/ˌkɒn.denˈseɪ.ʃən/",
+    "meaning_vi": "sự ngưng tụ",
+    "meaning_en": "the process of vapor turning into liquid",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Condensation forms clouds when warm air rises and cools.",
+        "vi": "Sự ngưng tụ tạo thành mây khi không khí ấm bốc lên và nguội đi."
+      }
+    ],
+    "word_family": [
+      "condense (v)",
+      "condenser (n)"
+    ],
+    "collocations": [
+      "condensation point",
+      "condensation nuclei",
+      "condensation process"
+    ],
+    "synonyms": [
+      "liquefaction"
+    ],
+    "antonyms": [
+      "evaporation"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Condensation is the same as precipitation.",
+        "correct": "Condensation is the process of forming liquid; precipitation is falling water.",
+        "explain_vi": "Ngưng tụ khác với mưa."
+      }
+    ],
+    "grammar_patterns": [
+      "condensation + verb (occur, form)",
+      "noun + of condensation"
+    ]
+  },
+  {
+    "word": "convection",
+    "phonetic": "/kənˈvek.ʃən/",
+    "meaning_vi": "sự đối lưu",
+    "meaning_en": "the transfer of heat by the movement of a fluid (air or water)",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Convection currents in the atmosphere create thunderstorms.",
+        "vi": "Các dòng đối lưu trong khí quyển tạo ra giông bão."
+      }
+    ],
+    "word_family": [
+      "convect (v)",
+      "convective (adj)"
+    ],
+    "collocations": [
+      "convection current",
+      "convection cell",
+      "convection process"
+    ],
+    "synonyms": [
+      "heat transfer"
+    ],
+    "antonyms": [
+      "conduction"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Convection only occurs in liquids.",
+        "correct": "Convection occurs in both liquids and gases.",
+        "explain_vi": "Đối lưu xảy ra trong cả chất lỏng và chất khí."
+      }
+    ],
+    "grammar_patterns": [
+      "convection + verb (occur, drive)",
+      "adjective + convection"
+    ]
+  },
+  {
+    "word": "adiabatic",
+    "phonetic": "/ˌeɪ.daɪ.əˈbæt.ɪk/",
+    "meaning_vi": "đoạn nhiệt",
+    "meaning_en": "relating to a process without heat transfer",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "Adiabatic cooling causes rising air to form clouds.",
+        "vi": "Làm lạnh đoạn nhiệt khiến không khí bốc lên tạo thành mây."
+      }
+    ],
+    "word_family": [
+      "adiabatically (adv)"
+    ],
+    "collocations": [
+      "adiabatic process",
+      "adiabatic cooling",
+      "adiabatic heating"
+    ],
+    "synonyms": [
+      "isentropic"
+    ],
+    "antonyms": [
+      "diabatic"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Adiabatic means no temperature change.",
+        "correct": "Adiabatic means no heat exchange, but temperature can change.",
+        "explain_vi": "Đoạn nhiệt không có trao đổi nhiệt nhưng nhiệt độ có thể thay đổi."
+      }
+    ],
+    "grammar_patterns": [
+      "adiabatic + noun"
+    ]
+  },
+  {
+    "word": "inversion",
+    "phonetic": "/ɪnˈvɜː.ʃən/",
+    "meaning_vi": "sự nghịch nhiệt",
+    "meaning_en": "a reversal of normal temperature gradient (warmer air above cooler air)",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "A temperature inversion traps pollutants near the ground.",
+        "vi": "Sự nghịch nhiệt giữ các chất ô nhiễm gần mặt đất."
+      }
+    ],
+    "word_family": [
+      "invert (v)",
+      "inverse (adj)"
+    ],
+    "collocations": [
+      "temperature inversion",
+      "inversion layer",
+      "inversion condition"
+    ],
+    "synonyms": [
+      "thermal inversion"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Inversion means temperature decreases with height.",
+        "correct": "Inversion means temperature increases with height.",
+        "explain_vi": "Nghịch nhiệt là nhiệt độ tăng theo độ cao."
+      }
+    ],
+    "grammar_patterns": [
+      "inversion + verb (occur, form)",
+      "noun + inversion"
+    ]
+  },
+  {
+    "word": "cold snap",
+    "phonetic": "/ˈkəʊld snæp/",
+    "meaning_vi": "đợt rét đột ngột",
+    "meaning_en": "a sudden, short period of cold weather",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "A cold snap caused temperatures to drop below freezing overnight.",
+        "vi": "Một đợt rét đột ngột khiến nhiệt độ giảm xuống dưới mức đóng băng qua đêm."
+      }
+    ],
+    "word_family": [
+      "cold (adj)",
+      "snap (n)"
+    ],
+    "collocations": [
+      "cold snap hits",
+      "cold snap arrives",
+      "severe cold snap"
+    ],
+    "synonyms": [
+      "cold spell",
+      "cold wave"
+    ],
+    "antonyms": [
+      "heat wave"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Cold snap is the same as cold weather.",
+        "correct": "Cold snap is a sudden, brief period of cold.",
+        "explain_vi": "Cold snap là đợt rét đột ngột, ngắn."
+      }
+    ],
+    "grammar_patterns": [
+      "a + cold snap",
+      "cold snap + verb"
+    ]
+  },
+  {
+    "word": "heat wave",
+    "phonetic": "/ˈhiːt weɪv/",
+    "meaning_vi": "đợt nắng nóng",
+    "meaning_en": "a prolonged period of abnormally hot weather",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The heat wave lasted for two weeks with temperatures above 40°C.",
+        "vi": "Đợt nắng nóng kéo dài hai tuần với nhiệt độ trên 40°C."
+      }
+    ],
+    "word_family": [
+      "heat (n)",
+      "wave (n)"
+    ],
+    "collocations": [
+      "heat wave warning",
+      "heat wave conditions",
+      "intense heat wave"
+    ],
+    "synonyms": [
+      "hot spell"
+    ],
+    "antonyms": [
+      "cold snap"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Heat wave is the same as high temperature.",
+        "correct": "Heat wave is a prolonged period of high temperature.",
+        "explain_vi": "Heat wave là đợt nắng nóng kéo dài."
+      }
+    ],
+    "grammar_patterns": [
+      "a + heat wave",
+      "heat wave + verb (strike, hit)"
+    ]
+  }
+]

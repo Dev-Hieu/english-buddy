@@ -1,0 +1,3337 @@
+[
+  {
+    "word": "community",
+    "phonetic": "/kəˈmjuːnəti/",
+    "meaning_vi": "cộng đồng",
+    "meaning_en": "a group of people living in the same place or having something in common",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Our community has a new park.",
+        "vi": "Cộng đồng của chúng tôi có một công viên mới."
+      }
+    ],
+    "word_family": [
+      "communal (adj)",
+      "commune (n)"
+    ],
+    "collocations": [
+      "local community",
+      "community center",
+      "community spirit"
+    ],
+    "synonyms": [
+      "neighborhood",
+      "society"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "community",
+        "correct": "community",
+        "explain_vi": "Không có lỗi phổ biến, nhưng nhớ phát âm đúng trọng âm rơi vào âm tiết thứ hai."
+      }
+    ],
+    "grammar_patterns": [
+      "the + community",
+      "a + community"
+    ]
+  },
+  {
+    "word": "society",
+    "phonetic": "/səˈsaɪəti/",
+    "meaning_vi": "xã hội",
+    "meaning_en": "people in general living together in organized communities",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Society expects us to follow rules.",
+        "vi": "Xã hội mong đợi chúng ta tuân theo các quy tắc."
+      }
+    ],
+    "word_family": [
+      "social (adj)",
+      "socialize (v)"
+    ],
+    "collocations": [
+      "modern society",
+      "human society",
+      "society as a whole"
+    ],
+    "synonyms": [
+      "community",
+      "the public"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "societey",
+        "correct": "society",
+        "explain_vi": "Nhầm lẫn chính tả: 'society' không có 'e' sau 't'."
+      }
+    ],
+    "grammar_patterns": [
+      "society + verb (singular)",
+      "in society"
+    ]
+  },
+  {
+    "word": "neighbor",
+    "phonetic": "/ˈneɪbər/",
+    "meaning_vi": "hàng xóm",
+    "meaning_en": "a person living near or next door",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "My neighbor is very friendly.",
+        "vi": "Hàng xóm của tôi rất thân thiện."
+      }
+    ],
+    "word_family": [
+      "neighborhood (n)",
+      "neighboring (adj)"
+    ],
+    "collocations": [
+      "next-door neighbor",
+      "neighborly",
+      "good neighbor"
+    ],
+    "synonyms": [
+      "resident",
+      "inhabitant"
+    ],
+    "antonyms": [
+      "stranger"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "neighbour",
+        "correct": "neighbor",
+        "explain_vi": "Trong tiếng Anh Mỹ viết 'neighbor' (không có 'u'); tiếng Anh Anh là 'neighbour'."
+      }
+    ],
+    "grammar_patterns": [
+      "my + neighbor",
+      "a + neighbor"
+    ]
+  },
+  {
+    "word": "citizen",
+    "phonetic": "/ˈsɪtɪzən/",
+    "meaning_vi": "công dân",
+    "meaning_en": "a legally recognized member of a country",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Every citizen has the right to vote.",
+        "vi": "Mọi công dân đều có quyền bầu cử."
+      }
+    ],
+    "word_family": [
+      "citizenship (n)",
+      "citizenry (n)"
+    ],
+    "collocations": [
+      "law-abiding citizen",
+      "citizen of the world",
+      "senior citizen"
+    ],
+    "synonyms": [
+      "national",
+      "resident"
+    ],
+    "antonyms": [
+      "alien",
+      "foreigner"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "sitizen",
+        "correct": "citizen",
+        "explain_vi": "Phát âm nhầm 'c' thành 's' nhưng viết 'c'."
+      }
+    ],
+    "grammar_patterns": [
+      "a + citizen",
+      "citizen + of + country"
+    ]
+  },
+  {
+    "word": "volunteer",
+    "phonetic": "/ˌvɑːlənˈtɪr/",
+    "meaning_vi": "tình nguyện viên",
+    "meaning_en": "a person who freely offers to do something",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She works as a volunteer at the hospital.",
+        "vi": "Cô ấy làm tình nguyện viên tại bệnh viện."
+      }
+    ],
+    "word_family": [
+      "volunteering (n)",
+      "voluntary (adj)"
+    ],
+    "collocations": [
+      "volunteer work",
+      "volunteer program",
+      "become a volunteer"
+    ],
+    "synonyms": [
+      "helper",
+      "unpaid worker"
+    ],
+    "antonyms": [
+      "paid worker"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "volunteer",
+        "correct": "volunteer",
+        "explain_vi": "Trọng âm rơi vào âm tiết cuối: /ˌvɑːlənˈtɪr/."
+      }
+    ],
+    "grammar_patterns": [
+      "a + volunteer",
+      "volunteer + to + verb"
+    ]
+  },
+  {
+    "word": "charity",
+    "phonetic": "/ˈtʃærəti/",
+    "meaning_vi": "từ thiện",
+    "meaning_en": "an organization that helps people in need",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "They donate money to charity.",
+        "vi": "Họ quyên góp tiền cho từ thiện."
+      }
+    ],
+    "word_family": [
+      "charitable (adj)",
+      "charitably (adv)"
+    ],
+    "collocations": [
+      "charity event",
+      "charity organization",
+      "give to charity"
+    ],
+    "synonyms": [
+      "nonprofit",
+      "philanthropy"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "charity",
+        "correct": "charity",
+        "explain_vi": "Phát âm /ˈtʃærəti/, không phải /ˈtʃɑːrəti/."
+      }
+    ],
+    "grammar_patterns": [
+      "a + charity",
+      "charity + noun"
+    ]
+  },
+  {
+    "word": "donate",
+    "phonetic": "/ˈdoʊneɪt/",
+    "meaning_vi": "quyên góp",
+    "meaning_en": "to give something, especially money, to help others",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "Many people donate blood.",
+        "vi": "Nhiều người hiến máu."
+      }
+    ],
+    "word_family": [
+      "donation (n)",
+      "donor (n)"
+    ],
+    "collocations": [
+      "donate money",
+      "donate to charity",
+      "donate blood"
+    ],
+    "synonyms": [
+      "give",
+      "contribute"
+    ],
+    "antonyms": [
+      "receive",
+      "take"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "donate for",
+        "correct": "donate to",
+        "explain_vi": "Dùng 'donate to' thay vì 'donate for'."
+      }
+    ],
+    "grammar_patterns": [
+      "donate + something + to + someone"
+    ]
+  },
+  {
+    "word": "support",
+    "phonetic": "/səˈpɔːrt/",
+    "meaning_vi": "hỗ trợ",
+    "meaning_en": "to help or encourage someone or something",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "We support local businesses.",
+        "vi": "Chúng tôi hỗ trợ các doanh nghiệp địa phương."
+      }
+    ],
+    "word_family": [
+      "supportive (adj)",
+      "supporter (n)"
+    ],
+    "collocations": [
+      "support a cause",
+      "support someone",
+      "financial support"
+    ],
+    "synonyms": [
+      "help",
+      "assist",
+      "back"
+    ],
+    "antonyms": [
+      "oppose",
+      "hinder"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "support to",
+        "correct": "support",
+        "explain_vi": "Không dùng 'support to', nói 'support someone'."
+      }
+    ],
+    "grammar_patterns": [
+      "support + noun",
+      "support + someone + in + noun/gerund"
+    ]
+  },
+  {
+    "word": "respect",
+    "phonetic": "/rɪˈspekt/",
+    "meaning_vi": "tôn trọng",
+    "meaning_en": "admiration for someone or something based on their qualities",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Children should show respect to their elders.",
+        "vi": "Trẻ em nên thể hiện sự tôn trọng với người lớn tuổi."
+      }
+    ],
+    "word_family": [
+      "respectful (adj)",
+      "respectable (adj)"
+    ],
+    "collocations": [
+      "show respect",
+      "gain respect",
+      "mutual respect"
+    ],
+    "synonyms": [
+      "esteem",
+      "admiration"
+    ],
+    "antonyms": [
+      "disrespect",
+      "contempt"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "respect to",
+        "correct": "respect for",
+        "explain_vi": "Dùng 'respect for' thay vì 'respect to'."
+      }
+    ],
+    "grammar_patterns": [
+      "respect + for + noun",
+      "have respect"
+    ]
+  },
+  {
+    "word": "responsibility",
+    "phonetic": "/rɪˌspɑːnsəˈbɪləti/",
+    "meaning_vi": "trách nhiệm",
+    "meaning_en": "a duty to deal with something or to take care of someone",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "It is your responsibility to finish the task.",
+        "vi": "Đó là trách nhiệm của bạn để hoàn thành nhiệm vụ."
+      }
+    ],
+    "word_family": [
+      "responsible (adj)",
+      "irresponsible (adj)"
+    ],
+    "collocations": [
+      "take responsibility",
+      "share responsibility",
+      "sense of responsibility"
+    ],
+    "synonyms": [
+      "duty",
+      "obligation"
+    ],
+    "antonyms": [
+      "irresponsibility"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "responsibility",
+        "correct": "responsibility",
+        "explain_vi": "Trọng âm rơi vào âm tiết thứ ba: /rɪˌspɑːnsəˈbɪləti/."
+      }
+    ],
+    "grammar_patterns": [
+      "responsibility + to + verb",
+      "have a responsibility"
+    ]
+  },
+  {
+    "word": "issue",
+    "phonetic": "/ˈɪʃuː/",
+    "meaning_vi": "vấn đề",
+    "meaning_en": "an important topic or problem for debate or discussion",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Climate change is a global issue.",
+        "vi": "Biến đổi khí hậu là một vấn đề toàn cầu."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "address an issue",
+      "social issue",
+      "raise an issue"
+    ],
+    "synonyms": [
+      "problem",
+      "matter",
+      "concern"
+    ],
+    "antonyms": [
+      "solution"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "issuse",
+        "correct": "issue",
+        "explain_vi": "Nhầm lẫn chính tả: 'issue' không có 's' thừa."
+      }
+    ],
+    "grammar_patterns": [
+      "an + issue",
+      "issue + of + noun"
+    ]
+  },
+  {
+    "word": "campaign",
+    "phonetic": "/kæmˈpeɪn/",
+    "meaning_vi": "chiến dịch",
+    "meaning_en": "a series of actions intended to achieve a particular result",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "They launched a campaign to clean the river.",
+        "vi": "Họ phát động một chiến dịch làm sạch sông."
+      }
+    ],
+    "word_family": [
+      "campaigner (n)"
+    ],
+    "collocations": [
+      "political campaign",
+      "advertising campaign",
+      "campaign for"
+    ],
+    "synonyms": [
+      "drive",
+      "effort",
+      "movement"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "campain",
+        "correct": "campaign",
+        "explain_vi": "Nhớ viết 'aign' thay vì 'ain'."
+      }
+    ],
+    "grammar_patterns": [
+      "a + campaign",
+      "campaign + to + verb"
+    ]
+  },
+  {
+    "word": "fundraise",
+    "phonetic": "/ˈfʌndreɪz/",
+    "meaning_vi": "gây quỹ",
+    "meaning_en": "to collect money for a particular purpose",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "The school is fundraising for new computers.",
+        "vi": "Trường đang gây quỹ mua máy tính mới."
+      }
+    ],
+    "word_family": [
+      "fundraiser (n)",
+      "fundraising (n)"
+    ],
+    "collocations": [
+      "fundraise for",
+      "fundraising event",
+      "fundraise money"
+    ],
+    "synonyms": [
+      "raise money",
+      "collect donations"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "fund raise",
+        "correct": "fundraise",
+        "explain_vi": "Viết liền 'fundraise' như một từ."
+      }
+    ],
+    "grammar_patterns": [
+      "fundraise + for + noun",
+      "fundraise + money"
+    ]
+  },
+  {
+    "word": "community center",
+    "phonetic": "/kəˈmjuːnəti ˈsentər/",
+    "meaning_vi": "trung tâm cộng đồng",
+    "meaning_en": "a place where people from a neighborhood can meet for social, educational, or recreational activities",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The community center offers free classes.",
+        "vi": "Trung tâm cộng đồng cung cấp các lớp học miễn phí."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "local community center",
+      "community center activities",
+      "visit the community center"
+    ],
+    "synonyms": [
+      "recreation center",
+      "neighborhood center"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "community centre",
+        "correct": "community center",
+        "explain_vi": "Tiếng Anh Mỹ dùng 'center', tiếng Anh Anh dùng 'centre'."
+      }
+    ],
+    "grammar_patterns": [
+      "the + community center",
+      "at a community center"
+    ]
+  },
+  {
+    "word": "elderly",
+    "phonetic": "/ˈeldərli/",
+    "meaning_vi": "người cao tuổi",
+    "meaning_en": "old people considered as a group",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "We should respect the elderly.",
+        "vi": "Chúng ta nên tôn trọng người cao tuổi."
+      }
+    ],
+    "word_family": [
+      "elder (n)"
+    ],
+    "collocations": [
+      "elderly people",
+      "elderly care",
+      "elderly parents"
+    ],
+    "synonyms": [
+      "senior",
+      "aged"
+    ],
+    "antonyms": [
+      "young",
+      "youthful"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "the elder",
+        "correct": "the elderly",
+        "explain_vi": "Dùng 'the elderly' để chỉ nhóm người cao tuổi."
+      }
+    ],
+    "grammar_patterns": [
+      "the + elderly",
+      "elderly + noun"
+    ]
+  },
+  {
+    "word": "homeless",
+    "phonetic": "/ˈhoʊmləs/",
+    "meaning_vi": "vô gia cư",
+    "meaning_en": "without a permanent place to live",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The charity helps homeless people.",
+        "vi": "Tổ chức từ thiện giúp đỡ người vô gia cư."
+      }
+    ],
+    "word_family": [
+      "homelessness (n)"
+    ],
+    "collocations": [
+      "homeless shelter",
+      "homeless person",
+      "become homeless"
+    ],
+    "synonyms": [
+      "houseless",
+      "unhoused"
+    ],
+    "antonyms": [
+      "housed",
+      "settled"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "homeless",
+        "correct": "homeless",
+        "explain_vi": "Phát âm /ˈhoʊmləs/, không phải /ˈhɒmləs/."
+      }
+    ],
+    "grammar_patterns": [
+      "the + homeless",
+      "homeless + noun"
+    ]
+  },
+  {
+    "word": "poverty",
+    "phonetic": "/ˈpɑːvərti/",
+    "meaning_vi": "nghèo đói",
+    "meaning_en": "the state of being extremely poor",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Many children live in poverty.",
+        "vi": "Nhiều trẻ em sống trong nghèo đói."
+      }
+    ],
+    "word_family": [
+      "poor (adj)",
+      "impoverished (adj)"
+    ],
+    "collocations": [
+      "poverty line",
+      "poverty rate",
+      "fight poverty"
+    ],
+    "synonyms": [
+      "destitution",
+      "indigence"
+    ],
+    "antonyms": [
+      "wealth",
+      "affluence"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "poverty",
+        "correct": "poverty",
+        "explain_vi": "Trọng âm rơi vào âm tiết đầu: /ˈpɑːvərti/."
+      }
+    ],
+    "grammar_patterns": [
+      "in poverty",
+      "poverty + noun"
+    ]
+  },
+  {
+    "word": "discrimination",
+    "phonetic": "/dɪˌskrɪmɪˈneɪʃn/",
+    "meaning_vi": "phân biệt đối xử",
+    "meaning_en": "unfair treatment of a person or group based on prejudice",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Discrimination based on race is illegal.",
+        "vi": "Phân biệt đối xử dựa trên chủng tộc là bất hợp pháp."
+      }
+    ],
+    "word_family": [
+      "discriminate (v)",
+      "discriminatory (adj)"
+    ],
+    "collocations": [
+      "racial discrimination",
+      "gender discrimination",
+      "discrimination against"
+    ],
+    "synonyms": [
+      "prejudice",
+      "bias",
+      "inequality"
+    ],
+    "antonyms": [
+      "equality",
+      "fairness"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "discrimination",
+        "correct": "discrimination",
+        "explain_vi": "Trọng âm rơi vào âm tiết thứ ba: /dɪˌskrɪmɪˈneɪʃn/."
+      }
+    ],
+    "grammar_patterns": [
+      "discrimination + against + noun",
+      "discrimination + in + noun"
+    ]
+  },
+  {
+    "word": "equality",
+    "phonetic": "/iˈkwɑːləti/",
+    "meaning_vi": "bình đẳng",
+    "meaning_en": "the state of being equal, especially in rights and opportunities",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We fight for gender equality.",
+        "vi": "Chúng tôi đấu tranh cho bình đẳng giới."
+      }
+    ],
+    "word_family": [
+      "equal (adj)",
+      "equalize (v)"
+    ],
+    "collocations": [
+      "gender equality",
+      "racial equality",
+      "equality of opportunity"
+    ],
+    "synonyms": [
+      "fairness",
+      "justice",
+      "parity"
+    ],
+    "antonyms": [
+      "inequality",
+      "discrimination"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "equality",
+        "correct": "equality",
+        "explain_vi": "Phát âm /iˈkwɑːləti/, không phải /ˈekwəlti/."
+      }
+    ],
+    "grammar_patterns": [
+      "equality + of + noun",
+      "equality + between + plural noun"
+    ]
+  },
+  {
+    "word": "integration",
+    "phonetic": "/ˌɪntɪˈɡreɪʃn/",
+    "meaning_vi": "hội nhập",
+    "meaning_en": "the process of combining or including into a larger group",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Integration of immigrants is important.",
+        "vi": "Hội nhập của người nhập cư là quan trọng."
+      }
+    ],
+    "word_family": [
+      "integrate (v)",
+      "integrated (adj)"
+    ],
+    "collocations": [
+      "social integration",
+      "cultural integration",
+      "integration into"
+    ],
+    "synonyms": [
+      "inclusion",
+      "assimilation",
+      "unification"
+    ],
+    "antonyms": [
+      "segregation",
+      "exclusion"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "integration",
+        "correct": "integration",
+        "explain_vi": "Trọng âm rơi vào âm tiết thứ ba: /ˌɪntɪˈɡreɪʃn/."
+      }
+    ],
+    "grammar_patterns": [
+      "integration + of + noun",
+      "integration + into + noun"
+    ]
+  },
+  {
+    "word": "volunteer",
+    "phonetic": "/ˌvɒl.ənˈtɪər/",
+    "meaning_vi": "tình nguyện viên",
+    "meaning_en": "a person who freely offers to do something",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She works as a volunteer at the local hospital.",
+        "vi": "Cô ấy làm tình nguyện viên tại bệnh viện địa phương."
+      }
+    ],
+    "word_family": [
+      "volunteer (v)",
+      "voluntary (adj)",
+      "voluntarily (adv)"
+    ],
+    "collocations": [
+      "volunteer work",
+      "volunteer program",
+      "become a volunteer"
+    ],
+    "synonyms": [
+      "helper",
+      "charity worker"
+    ],
+    "antonyms": [
+      "paid worker"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I want to volunteer for charity.",
+        "correct": "I want to volunteer for a charity.",
+        "explain_vi": "Cần mạo từ 'a' trước 'charity' khi nói về một tổ chức cụ thể."
+      }
+    ],
+    "grammar_patterns": [
+      "volunteer + to + infinitive",
+      "volunteer + for + noun"
+    ]
+  },
+  {
+    "word": "charity",
+    "phonetic": "/ˈtʃær.ə.ti/",
+    "meaning_vi": "từ thiện",
+    "meaning_en": "an organization that helps people in need",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "They donated money to a children's charity.",
+        "vi": "Họ quyên góp tiền cho một tổ chức từ thiện trẻ em."
+      }
+    ],
+    "word_family": [
+      "charitable (adj)",
+      "charitably (adv)"
+    ],
+    "collocations": [
+      "give to charity",
+      "charity event",
+      "charity shop"
+    ],
+    "synonyms": [
+      "nonprofit",
+      "foundation"
+    ],
+    "antonyms": [
+      "for-profit organization"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I give money for charity.",
+        "correct": "I give money to charity.",
+        "explain_vi": "Dùng 'to' thay vì 'for' với 'give'."
+      }
+    ],
+    "grammar_patterns": [
+      "charity + noun",
+      "donate to charity"
+    ]
+  },
+  {
+    "word": "donate",
+    "phonetic": "/dəʊˈneɪt/",
+    "meaning_vi": "quyên góp",
+    "meaning_en": "to give something, especially money, to help others",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "Many people donate blood regularly.",
+        "vi": "Nhiều người hiến máu thường xuyên."
+      }
+    ],
+    "word_family": [
+      "donation (n)",
+      "donor (n)"
+    ],
+    "collocations": [
+      "donate money",
+      "donate clothes",
+      "donate to"
+    ],
+    "synonyms": [
+      "give",
+      "contribute"
+    ],
+    "antonyms": [
+      "keep",
+      "withhold"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I donated for the charity.",
+        "correct": "I donated to the charity.",
+        "explain_vi": "Dùng 'to' thay vì 'for' sau 'donate'."
+      }
+    ],
+    "grammar_patterns": [
+      "donate + something + to + someone/something"
+    ]
+  },
+  {
+    "word": "support",
+    "phonetic": "/səˈpɔːt/",
+    "meaning_vi": "hỗ trợ",
+    "meaning_en": "to help or encourage someone or something",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "We support local businesses.",
+        "vi": "Chúng tôi ủng hộ các doanh nghiệp địa phương."
+      }
+    ],
+    "word_family": [
+      "support (n)",
+      "supporter (n)",
+      "supportive (adj)"
+    ],
+    "collocations": [
+      "support a cause",
+      "support a family",
+      "support system"
+    ],
+    "synonyms": [
+      "aid",
+      "assist"
+    ],
+    "antonyms": [
+      "oppose",
+      "hinder"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I support for the team.",
+        "correct": "I support the team.",
+        "explain_vi": "Không dùng giới từ 'for' sau 'support'."
+      }
+    ],
+    "grammar_patterns": [
+      "support + noun/pronoun"
+    ]
+  },
+  {
+    "word": "respect",
+    "phonetic": "/rɪˈspekt/",
+    "meaning_vi": "tôn trọng",
+    "meaning_en": "to admire someone or something because of their qualities",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "We should respect our elders.",
+        "vi": "Chúng ta nên tôn trọng người lớn tuổi."
+      }
+    ],
+    "word_family": [
+      "respect (n)",
+      "respectful (adj)",
+      "respectable (adj)"
+    ],
+    "collocations": [
+      "show respect",
+      "earn respect",
+      "respect for"
+    ],
+    "synonyms": [
+      "admire",
+      "honor"
+    ],
+    "antonyms": [
+      "disrespect",
+      "ignore"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I respect to him.",
+        "correct": "I respect him.",
+        "explain_vi": "Không dùng giới từ 'to' sau 'respect' khi là động từ."
+      }
+    ],
+    "grammar_patterns": [
+      "respect + noun/pronoun"
+    ]
+  },
+  {
+    "word": "responsibility",
+    "phonetic": "/rɪˌspɒn.səˈbɪl.ə.ti/",
+    "meaning_vi": "trách nhiệm",
+    "meaning_en": "a duty or task that you are required to do",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "It is your responsibility to clean your room.",
+        "vi": "Đó là trách nhiệm của bạn để dọn phòng."
+      }
+    ],
+    "word_family": [
+      "responsible (adj)",
+      "irresponsible (adj)"
+    ],
+    "collocations": [
+      "take responsibility",
+      "share responsibility",
+      "responsibility for"
+    ],
+    "synonyms": [
+      "duty",
+      "obligation"
+    ],
+    "antonyms": [
+      "irresponsibility"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I have responsibility to do it.",
+        "correct": "I have a responsibility to do it.",
+        "explain_vi": "Cần mạo từ 'a' trước 'responsibility' khi nói về một trách nhiệm cụ thể."
+      }
+    ],
+    "grammar_patterns": [
+      "have + a + responsibility + to + infinitive",
+      "it is + someone's + responsibility + to + infinitive"
+    ]
+  },
+  {
+    "word": "issue",
+    "phonetic": "/ˈɪʃ.uː/",
+    "meaning_vi": "vấn đề",
+    "meaning_en": "an important topic or problem for discussion",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Climate change is a global issue.",
+        "vi": "Biến đổi khí hậu là một vấn đề toàn cầu."
+      }
+    ],
+    "word_family": [
+      "issue (v)"
+    ],
+    "collocations": [
+      "address an issue",
+      "raise an issue",
+      "social issue"
+    ],
+    "synonyms": [
+      "problem",
+      "concern"
+    ],
+    "antonyms": [
+      "solution"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "This is a big issue problem.",
+        "correct": "This is a big issue.",
+        "explain_vi": "Không dùng cả 'issue' và 'problem' cùng nhau."
+      }
+    ],
+    "grammar_patterns": [
+      "issue + of + noun",
+      "issue + about + noun"
+    ]
+  },
+  {
+    "word": "campaign",
+    "phonetic": "/kæmˈpeɪn/",
+    "meaning_vi": "chiến dịch",
+    "meaning_en": "a series of actions intended to achieve a particular result",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "They launched a campaign to end poverty.",
+        "vi": "Họ phát động một chiến dịch chấm dứt nghèo đói."
+      }
+    ],
+    "word_family": [
+      "campaign (v)",
+      "campaigner (n)"
+    ],
+    "collocations": [
+      "run a campaign",
+      "campaign for",
+      "election campaign"
+    ],
+    "synonyms": [
+      "drive",
+      "movement"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "They campaign against pollution.",
+        "correct": "They campaign against pollution.",
+        "explain_vi": "Đúng, 'campaign against' là đúng."
+      }
+    ],
+    "grammar_patterns": [
+      "campaign + for/against + noun",
+      "launch a campaign"
+    ]
+  },
+  {
+    "word": "fundraise",
+    "phonetic": "/ˈfʌnd.reɪz/",
+    "meaning_vi": "gây quỹ",
+    "meaning_en": "to collect money for a particular purpose",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "They are fundraising for a new school.",
+        "vi": "Họ đang gây quỹ cho một trường học mới."
+      }
+    ],
+    "word_family": [
+      "fundraiser (n)",
+      "fundraising (n)"
+    ],
+    "collocations": [
+      "fundraise for",
+      "fundraise money"
+    ],
+    "synonyms": [
+      "raise money",
+      "collect donations"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "We fundraise money for charity.",
+        "correct": "We fundraise for charity.",
+        "explain_vi": "Từ 'fundraise' đã bao hàm 'money', nên không cần thêm 'money'."
+      }
+    ],
+    "grammar_patterns": [
+      "fundraise + for + noun"
+    ]
+  },
+  {
+    "word": "community center",
+    "phonetic": "/kəˈmjuː.nə.ti ˌsen.tər/",
+    "meaning_vi": "trung tâm cộng đồng",
+    "meaning_en": "a place where people from a community can meet for social or educational activities",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The community center offers free classes.",
+        "vi": "Trung tâm cộng đồng cung cấp các lớp học miễn phí."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "go to the community center",
+      "community center activities"
+    ],
+    "synonyms": [
+      "recreation center",
+      "neighborhood center"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go to community center.",
+        "correct": "I go to the community center.",
+        "explain_vi": "Cần mạo từ 'the' vì là địa điểm cụ thể."
+      }
+    ],
+    "grammar_patterns": [
+      "the + community center"
+    ]
+  },
+  {
+    "word": "elderly",
+    "phonetic": "/ˈel.dər.li/",
+    "meaning_vi": "người cao tuổi",
+    "meaning_en": "old people considered as a group",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "We should care for the elderly.",
+        "vi": "Chúng ta nên chăm sóc người cao tuổi."
+      }
+    ],
+    "word_family": [
+      "elder (n)"
+    ],
+    "collocations": [
+      "elderly people",
+      "elderly care",
+      "the elderly"
+    ],
+    "synonyms": [
+      "aged",
+      "senior"
+    ],
+    "antonyms": [
+      "young"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "The elderlies need help.",
+        "correct": "The elderly need help.",
+        "explain_vi": "'Elderly' là tính từ, không thêm 's'."
+      }
+    ],
+    "grammar_patterns": [
+      "the + elderly (as a group)"
+    ]
+  },
+  {
+    "word": "homeless",
+    "phonetic": "/ˈhəʊm.ləs/",
+    "meaning_vi": "vô gia cư",
+    "meaning_en": "people who have no home",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The city provides shelter for the homeless.",
+        "vi": "Thành phố cung cấp nơi trú ẩn cho người vô gia cư."
+      }
+    ],
+    "word_family": [
+      "homelessness (n)"
+    ],
+    "collocations": [
+      "homeless people",
+      "the homeless",
+      "become homeless"
+    ],
+    "synonyms": [
+      "houseless",
+      "unhoused"
+    ],
+    "antonyms": [
+      "housed"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "The homeless people are homeless.",
+        "correct": "The homeless are homeless.",
+        "explain_vi": "Có thể nói 'homeless people' nhưng thường dùng 'the homeless' để chỉ nhóm."
+      }
+    ],
+    "grammar_patterns": [
+      "the + homeless (as a group)"
+    ]
+  },
+  {
+    "word": "poverty",
+    "phonetic": "/ˈpɒv.ə.ti/",
+    "meaning_vi": "nghèo đói",
+    "meaning_en": "the state of being extremely poor",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Many children live in poverty.",
+        "vi": "Nhiều trẻ em sống trong nghèo đói."
+      }
+    ],
+    "word_family": [
+      "poor (adj)",
+      "impoverished (adj)"
+    ],
+    "collocations": [
+      "live in poverty",
+      "poverty line",
+      "poverty rate"
+    ],
+    "synonyms": [
+      "destitution",
+      "need"
+    ],
+    "antonyms": [
+      "wealth",
+      "affluence"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "He is in the poverty.",
+        "correct": "He is in poverty.",
+        "explain_vi": "Không dùng mạo từ 'the' trước 'poverty'."
+      }
+    ],
+    "grammar_patterns": [
+      "in poverty",
+      "poverty + noun"
+    ]
+  },
+  {
+    "word": "discrimination",
+    "phonetic": "/dɪˌskrɪm.ɪˈneɪ.ʃən/",
+    "meaning_vi": "phân biệt đối xử",
+    "meaning_en": "unfair treatment of someone because of their group",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Discrimination based on race is illegal.",
+        "vi": "Phân biệt đối xử dựa trên chủng tộc là bất hợp pháp."
+      }
+    ],
+    "word_family": [
+      "discriminate (v)",
+      "discriminatory (adj)"
+    ],
+    "collocations": [
+      "racial discrimination",
+      "gender discrimination",
+      "discrimination against"
+    ],
+    "synonyms": [
+      "prejudice",
+      "bias"
+    ],
+    "antonyms": [
+      "fairness",
+      "equality"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Discrimination of women is wrong.",
+        "correct": "Discrimination against women is wrong.",
+        "explain_vi": "Dùng 'against' thay vì 'of'."
+      }
+    ],
+    "grammar_patterns": [
+      "discrimination + against + noun",
+      "discrimination + based on + noun"
+    ]
+  },
+  {
+    "word": "equality",
+    "phonetic": "/ɪˈkwɒl.ə.ti/",
+    "meaning_vi": "bình đẳng",
+    "meaning_en": "the state of being equal, especially in rights",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We fight for gender equality.",
+        "vi": "Chúng tôi đấu tranh cho bình đẳng giới."
+      }
+    ],
+    "word_family": [
+      "equal (adj)",
+      "equalize (v)"
+    ],
+    "collocations": [
+      "gender equality",
+      "racial equality",
+      "equality of opportunity"
+    ],
+    "synonyms": [
+      "fairness",
+      "justice"
+    ],
+    "antonyms": [
+      "inequality",
+      "discrimination"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Equality between men and women.",
+        "correct": "Equality between men and women.",
+        "explain_vi": "Đúng."
+      }
+    ],
+    "grammar_patterns": [
+      "equality + of + noun",
+      "equality + between + noun"
+    ]
+  },
+  {
+    "word": "integration",
+    "phonetic": "/ˌɪn.tɪˈɡreɪ.ʃən/",
+    "meaning_vi": "hội nhập",
+    "meaning_en": "the process of combining or joining different groups",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Integration of immigrants is important.",
+        "vi": "Hội nhập của người nhập cư là quan trọng."
+      }
+    ],
+    "word_family": [
+      "integrate (v)",
+      "integrated (adj)"
+    ],
+    "collocations": [
+      "social integration",
+      "integration into",
+      "integration process"
+    ],
+    "synonyms": [
+      "inclusion",
+      "assimilation"
+    ],
+    "antonyms": [
+      "segregation",
+      "exclusion"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Integration with the community.",
+        "correct": "Integration into the community.",
+        "explain_vi": "Dùng 'into' thay vì 'with'."
+      }
+    ],
+    "grammar_patterns": [
+      "integration + of + noun",
+      "integration + into + noun"
+    ]
+  },
+  {
+    "word": "diverse",
+    "phonetic": "/daɪˈvɜːs/",
+    "meaning_vi": "đa dạng",
+    "meaning_en": "showing a great deal of variety",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "Our city is culturally diverse.",
+        "vi": "Thành phố của chúng tôi đa dạng về văn hóa."
+      }
+    ],
+    "word_family": [
+      "diversity (n)",
+      "diversify (v)"
+    ],
+    "collocations": [
+      "diverse community",
+      "diverse population",
+      "diverse backgrounds"
+    ],
+    "synonyms": [
+      "varied",
+      "multicultural"
+    ],
+    "antonyms": [
+      "homogeneous",
+      "uniform"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "The group is diversity.",
+        "correct": "The group is diverse.",
+        "explain_vi": "Dùng tính từ 'diverse' thay vì danh từ 'diversity'."
+      }
+    ],
+    "grammar_patterns": [
+      "diverse + noun",
+      "be diverse"
+    ]
+  },
+  {
+    "word": "tolerance",
+    "phonetic": "/ˈtɒl.ər.əns/",
+    "meaning_vi": "sự khoan dung",
+    "meaning_en": "willingness to accept different opinions or behaviors",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Tolerance is essential in a diverse society.",
+        "vi": "Khoan dung là cần thiết trong một xã hội đa dạng."
+      }
+    ],
+    "word_family": [
+      "tolerant (adj)",
+      "tolerate (v)"
+    ],
+    "collocations": [
+      "show tolerance",
+      "tolerance for",
+      "religious tolerance"
+    ],
+    "synonyms": [
+      "acceptance",
+      "open-mindedness"
+    ],
+    "antonyms": [
+      "intolerance",
+      "prejudice"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Tolerance with different cultures.",
+        "correct": "Tolerance of different cultures.",
+        "explain_vi": "Dùng 'of' thay vì 'with'."
+      }
+    ],
+    "grammar_patterns": [
+      "tolerance + of/for + noun"
+    ]
+  },
+  {
+    "word": "solidarity",
+    "phonetic": "/ˌsɒl.ɪˈdær.ə.ti/",
+    "meaning_vi": "đoàn kết",
+    "meaning_en": "unity or agreement of feeling or action among a group",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The workers showed solidarity by striking together.",
+        "vi": "Công nhân thể hiện sự đoàn kết bằng cách đình công cùng nhau."
+      }
+    ],
+    "word_family": [
+      "solid (adj)",
+      "solidify (v)"
+    ],
+    "collocations": [
+      "show solidarity",
+      "in solidarity with",
+      "express solidarity"
+    ],
+    "synonyms": [
+      "unity",
+      "togetherness"
+    ],
+    "antonyms": [
+      "division",
+      "disunity"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Solidarity between the group.",
+        "correct": "Solidarity within the group.",
+        "explain_vi": "Dùng 'within' thay vì 'between'."
+      }
+    ],
+    "grammar_patterns": [
+      "solidarity + with + noun",
+      "in solidarity"
+    ]
+  },
+  {
+    "word": "volunteerism",
+    "phonetic": "/ˌvɒl.ənˈtɪə.rɪ.zəm/",
+    "meaning_vi": "tinh thần tình nguyện",
+    "meaning_en": "the practice of volunteering one's time or talents for charitable causes",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Volunteerism strengthens communities.",
+        "vi": "Tinh thần tình nguyện củng cố cộng đồng."
+      }
+    ],
+    "word_family": [
+      "volunteer (n/v)",
+      "voluntary (adj)"
+    ],
+    "collocations": [
+      "promote volunteerism",
+      "spirit of volunteerism"
+    ],
+    "synonyms": [
+      "community service",
+      "philanthropy"
+    ],
+    "antonyms": [
+      "selfishness"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Volunteerism is good.",
+        "correct": "Volunteerism is good.",
+        "explain_vi": "Đúng."
+      }
+    ],
+    "grammar_patterns": [
+      "volunteerism + verb"
+    ]
+  },
+  {
+    "word": "funding",
+    "phonetic": "/ˈfʌndɪŋ/",
+    "meaning_vi": "tài trợ, kinh phí",
+    "meaning_en": "money provided for a particular purpose",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The project needs more funding.",
+        "vi": "Dự án cần thêm kinh phí."
+      },
+      {
+        "en": "They secured funding from the government.",
+        "vi": "Họ đã nhận được tài trợ từ chính phủ."
+      }
+    ],
+    "word_family": [
+      "fund (v)",
+      "fundraiser (n)"
+    ],
+    "collocations": [
+      "secure funding",
+      "provide funding",
+      "cut funding"
+    ],
+    "synonyms": [
+      "financing",
+      "backing"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "They need fund for the school.",
+        "correct": "They need funding for the school.",
+        "explain_vi": "'Fund' là danh từ chỉ quỹ, còn 'funding' là việc cấp tiền."
+      }
+    ],
+    "grammar_patterns": [
+      "funding + for + noun"
+    ]
+  },
+  {
+    "word": "awareness",
+    "phonetic": "/əˈwɛrnəs/",
+    "meaning_vi": "nhận thức, ý thức",
+    "meaning_en": "knowledge or understanding of a subject or situation",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We need to raise awareness about climate change.",
+        "vi": "Chúng ta cần nâng cao nhận thức về biến đổi khí hậu."
+      },
+      {
+        "en": "There is a growing awareness of mental health issues.",
+        "vi": "Ngày càng có nhiều nhận thức về các vấn đề sức khỏe tâm thần."
+      }
+    ],
+    "word_family": [
+      "aware (adj)",
+      "unaware (adj)"
+    ],
+    "collocations": [
+      "raise awareness",
+      "increase awareness",
+      "public awareness"
+    ],
+    "synonyms": [
+      "consciousness",
+      "understanding"
+    ],
+    "antonyms": [
+      "ignorance"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "We need to aware of the problem.",
+        "correct": "We need to be aware of the problem.",
+        "explain_vi": "'Aware' là tính từ, cần động từ 'to be'."
+      }
+    ],
+    "grammar_patterns": [
+      "awareness + of + noun",
+      "awareness + about + noun"
+    ]
+  },
+  {
+    "word": "advocate",
+    "phonetic": "/ˈædvəkət/",
+    "meaning_vi": "người ủng hộ, biện hộ",
+    "meaning_en": "a person who publicly supports or recommends a particular cause or policy",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She is an advocate for women's rights.",
+        "vi": "Cô ấy là người ủng hộ quyền phụ nữ."
+      },
+      {
+        "en": "He works as a patient advocate.",
+        "vi": "Anh ấy làm việc như một người bảo vệ quyền lợi bệnh nhân."
+      }
+    ],
+    "word_family": [
+      "advocate (v)",
+      "advocacy (n)"
+    ],
+    "collocations": [
+      "advocate for",
+      "strong advocate",
+      "patient advocate"
+    ],
+    "synonyms": [
+      "supporter",
+      "champion"
+    ],
+    "antonyms": [
+      "opponent"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "He advocates for human rights.",
+        "correct": "He is an advocate for human rights.",
+        "explain_vi": "Phân biệt 'advocate' (danh từ) và 'advocate for' (động từ)."
+      }
+    ],
+    "grammar_patterns": [
+      "advocate + for + noun",
+      "advocate + of + noun"
+    ]
+  },
+  {
+    "word": "rally",
+    "phonetic": "/ˈræli/",
+    "meaning_vi": "cuộc mít tinh, biểu tình",
+    "meaning_en": "a large public meeting, especially one held to support a particular idea or political party",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Thousands attended the rally for climate action.",
+        "vi": "Hàng ngàn người đã tham dự cuộc mít tinh vì hành động khí hậu."
+      },
+      {
+        "en": "The opposition party held a rally in the square.",
+        "vi": "Đảng đối lập đã tổ chức một cuộc mít tinh tại quảng trường."
+      }
+    ],
+    "word_family": [
+      "rally (v)"
+    ],
+    "collocations": [
+      "hold a rally",
+      "attend a rally",
+      "political rally"
+    ],
+    "synonyms": [
+      "demonstration",
+      "protest"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "They organized a rally for peace.",
+        "correct": "They organized a rally for peace.",
+        "explain_vi": "Cách dùng tương tự tiếng Việt, không có lỗi phổ biến."
+      }
+    ],
+    "grammar_patterns": [
+      "rally + for + noun",
+      "rally + against + noun"
+    ]
+  },
+  {
+    "word": "petition",
+    "phonetic": "/pəˈtɪʃən/",
+    "meaning_vi": "kiến nghị, đơn thỉnh cầu",
+    "meaning_en": "a formal written request, typically one signed by many people, appealing to authority",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "They started a petition to save the local park.",
+        "vi": "Họ đã bắt đầu một bản kiến nghị để cứu công viên địa phương."
+      },
+      {
+        "en": "Over 10,000 people signed the petition.",
+        "vi": "Hơn 10.000 người đã ký vào bản kiến nghị."
+      }
+    ],
+    "word_family": [
+      "petition (v)",
+      "petitioner (n)"
+    ],
+    "collocations": [
+      "sign a petition",
+      "start a petition",
+      "deliver a petition"
+    ],
+    "synonyms": [
+      "appeal",
+      "request"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I signed a petition for clean water.",
+        "correct": "I signed a petition for clean water.",
+        "explain_vi": "Cách dùng tương tự tiếng Việt."
+      }
+    ],
+    "grammar_patterns": [
+      "petition + for + noun",
+      "petition + against + noun"
+    ]
+  },
+  {
+    "word": "volunteerism",
+    "phonetic": "/ˌvɑlənˈtɪrɪzəm/",
+    "meaning_vi": "tinh thần tình nguyện",
+    "meaning_en": "the practice of volunteering and the use of volunteer labor",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Volunteerism strengthens communities.",
+        "vi": "Tinh thần tình nguyện củng cố cộng đồng."
+      },
+      {
+        "en": "The organization promotes volunteerism among youth.",
+        "vi": "Tổ chức này thúc đẩy tinh thần tình nguyện trong giới trẻ."
+      }
+    ],
+    "word_family": [
+      "volunteer (n/v)",
+      "voluntary (adj)"
+    ],
+    "collocations": [
+      "promote volunteerism",
+      "encourage volunteerism",
+      "spirit of volunteerism"
+    ],
+    "synonyms": [
+      "community service",
+      "philanthropy"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Volunteerism is good for society.",
+        "correct": "Volunteerism is good for society.",
+        "explain_vi": "Cách dùng tương tự tiếng Việt."
+      }
+    ],
+    "grammar_patterns": [
+      "volunteerism + among + group"
+    ]
+  },
+  {
+    "word": "grassroots",
+    "phonetic": "/ˈɡræsˌruːts/",
+    "meaning_vi": "cơ sở, phong trào quần chúng",
+    "meaning_en": "the ordinary people in a society or an organization, especially a political party",
+    "pos": "noun/adj",
+    "examples": [
+      {
+        "en": "The movement began at the grassroots level.",
+        "vi": "Phong trào bắt đầu từ cấp cơ sở."
+      },
+      {
+        "en": "They launched a grassroots campaign.",
+        "vi": "Họ đã phát động một chiến dịch quần chúng."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "grassroots movement",
+      "grassroots campaign",
+      "grassroots support"
+    ],
+    "synonyms": [
+      "rank and file",
+      "common people"
+    ],
+    "antonyms": [
+      "elite"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "The grassroots are supporting the policy.",
+        "correct": "The grassroots is supporting the policy.",
+        "explain_vi": "'Grassroots' thường được dùng như danh từ số ít."
+      }
+    ],
+    "grammar_patterns": [
+      "at the grassroots level",
+      "grassroots + noun"
+    ]
+  },
+  {
+    "word": "marginalized",
+    "phonetic": "/ˈmɑːrdʒɪnəlaɪzd/",
+    "meaning_vi": "bị gạt ra ngoài lề xã hội",
+    "meaning_en": "treated as insignificant or peripheral",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The program helps marginalized communities.",
+        "vi": "Chương trình giúp đỡ các cộng đồng bị gạt ra ngoài lề xã hội."
+      },
+      {
+        "en": "They advocate for marginalized groups.",
+        "vi": "Họ ủng hộ các nhóm yếu thế."
+      }
+    ],
+    "word_family": [
+      "marginalize (v)",
+      "marginalization (n)"
+    ],
+    "collocations": [
+      "marginalized communities",
+      "marginalized groups",
+      "marginalized people"
+    ],
+    "synonyms": [
+      "disadvantaged",
+      "underprivileged"
+    ],
+    "antonyms": [
+      "privileged",
+      "mainstream"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "They are marginal people.",
+        "correct": "They are marginalized people.",
+        "explain_vi": "'Marginal' có nghĩa khác, nên dùng 'marginalized' để chỉ bị gạt ra lề."
+      }
+    ],
+    "grammar_patterns": [
+      "marginalized + noun"
+    ]
+  },
+  {
+    "word": "outreach",
+    "phonetic": "/ˈaʊtriːtʃ/",
+    "meaning_vi": "tiếp cận cộng đồng",
+    "meaning_en": "the activity of providing services to people who might not otherwise have access to them",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The charity does outreach to homeless people.",
+        "vi": "Tổ chức từ thiện thực hiện tiếp cận cộng đồng với người vô gia cư."
+      },
+      {
+        "en": "They have an outreach program for youth.",
+        "vi": "Họ có một chương trình tiếp cận cộng đồng cho thanh thiếu niên."
+      }
+    ],
+    "word_family": [
+      "reach out (v)"
+    ],
+    "collocations": [
+      "outreach program",
+      "community outreach",
+      "outreach worker"
+    ],
+    "synonyms": [
+      "community engagement",
+      "public service"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "They do outreach to the poor.",
+        "correct": "They do outreach to the poor.",
+        "explain_vi": "Cách dùng tương tự tiếng Việt."
+      }
+    ],
+    "grammar_patterns": [
+      "outreach + to + noun",
+      "outreach + program"
+    ]
+  },
+  {
+    "word": "stakeholder",
+    "phonetic": "/ˈsteɪkˌhoʊldər/",
+    "meaning_vi": "bên liên quan",
+    "meaning_en": "a person with an interest or concern in something, especially a business",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "All stakeholders were invited to the meeting.",
+        "vi": "Tất cả các bên liên quan đều được mời đến cuộc họp."
+      },
+      {
+        "en": "The project involves multiple stakeholders.",
+        "vi": "Dự án liên quan đến nhiều bên liên quan."
+      }
+    ],
+    "word_family": [
+      "stake (n)"
+    ],
+    "collocations": [
+      "key stakeholder",
+      "stakeholder engagement",
+      "stakeholder meeting"
+    ],
+    "synonyms": [
+      "interested party",
+      "participant"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Stakeholders are people who hold stock.",
+        "correct": "Stakeholders are people with an interest.",
+        "explain_vi": "'Stakeholder' rộng hơn 'shareholder' (cổ đông)."
+      }
+    ],
+    "grammar_patterns": [
+      "stakeholder + in + noun"
+    ]
+  },
+  {
+    "word": "consensus",
+    "phonetic": "/kənˈsɛnsəs/",
+    "meaning_vi": "sự đồng thuận",
+    "meaning_en": "a general agreement among a group of people",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "They reached a consensus on the issue.",
+        "vi": "Họ đã đạt được sự đồng thuận về vấn đề này."
+      },
+      {
+        "en": "There is a growing consensus that action is needed.",
+        "vi": "Ngày càng có sự đồng thuận rằng cần phải hành động."
+      }
+    ],
+    "word_family": [
+      "consent (n/v)",
+      "consensual (adj)"
+    ],
+    "collocations": [
+      "reach a consensus",
+      "build consensus",
+      "general consensus"
+    ],
+    "synonyms": [
+      "agreement",
+      "unanimity"
+    ],
+    "antonyms": [
+      "disagreement",
+      "dissensus"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "They reached consensus.",
+        "correct": "They reached a consensus.",
+        "explain_vi": "'Consensus' thường đi với mạo từ 'a'."
+      }
+    ],
+    "grammar_patterns": [
+      "consensus + on + noun",
+      "consensus + that + clause"
+    ]
+  },
+  {
+    "word": "civic",
+    "phonetic": "/ˈsɪvɪk/",
+    "meaning_vi": "thuộc về công dân, dân sự",
+    "meaning_en": "relating to a city or town, especially its administration; relating to the duties or activities of people in relation to their town, city, or local area",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "Voting is a civic duty.",
+        "vi": "Bỏ phiếu là một nghĩa vụ công dân."
+      },
+      {
+        "en": "They are involved in civic activities.",
+        "vi": "Họ tham gia vào các hoạt động dân sự."
+      }
+    ],
+    "word_family": [
+      "civics (n)",
+      "civil (adj)"
+    ],
+    "collocations": [
+      "civic duty",
+      "civic engagement",
+      "civic center"
+    ],
+    "synonyms": [
+      "municipal",
+      "public"
+    ],
+    "antonyms": [
+      "private"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "It is a civil duty.",
+        "correct": "It is a civic duty.",
+        "explain_vi": "'Civil' thường chỉ dân sự đối lập với quân sự, 'civic' chỉ nghĩa vụ công dân."
+      }
+    ],
+    "grammar_patterns": [
+      "civic + noun"
+    ]
+  },
+  {
+    "word": "empower",
+    "phonetic": "/ɪmˈpaʊər/",
+    "meaning_vi": "trao quyền, làm cho có quyền lực",
+    "meaning_en": "to give someone the authority or power to do something",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "Education empowers people.",
+        "vi": "Giáo dục trao quyền cho con người."
+      },
+      {
+        "en": "The program aims to empower women.",
+        "vi": "Chương trình nhằm trao quyền cho phụ nữ."
+      }
+    ],
+    "word_family": [
+      "empowerment (n)",
+      "power (n)"
+    ],
+    "collocations": [
+      "empower someone",
+      "empower communities",
+      "empower individuals"
+    ],
+    "synonyms": [
+      "enable",
+      "authorize"
+    ],
+    "antonyms": [
+      "disempower"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "The law empowers to people.",
+        "correct": "The law empowers people.",
+        "explain_vi": "'Empower' là ngoại động từ, không cần giới từ 'to'."
+      }
+    ],
+    "grammar_patterns": [
+      "empower + object + to infinitive"
+    ]
+  },
+  {
+    "word": "initiative",
+    "phonetic": "/ɪˈnɪʃətɪv/",
+    "meaning_vi": "sáng kiến, chủ động",
+    "meaning_en": "a new plan or process to achieve something or solve a problem",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "They launched a new initiative to reduce waste.",
+        "vi": "Họ đã khởi động một sáng kiến mới để giảm rác thải."
+      },
+      {
+        "en": "She showed initiative by organizing the event.",
+        "vi": "Cô ấy thể hiện sự chủ động bằng cách tổ chức sự kiện."
+      }
+    ],
+    "word_family": [
+      "initiate (v)",
+      "initial (adj)"
+    ],
+    "collocations": [
+      "take the initiative",
+      "launch an initiative",
+      "community initiative"
+    ],
+    "synonyms": [
+      "project",
+      "plan"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "He has a good initiative.",
+        "correct": "He shows good initiative.",
+        "explain_vi": "'Initiative' thường đi với 'show' hoặc 'take'."
+      }
+    ],
+    "grammar_patterns": [
+      "initiative + to + infinitive",
+      "initiative + for + noun"
+    ]
+  },
+  {
+    "word": "solidarity",
+    "phonetic": "/ˌsɑːlɪˈdærəti/",
+    "meaning_vi": "đoàn kết",
+    "meaning_en": "unity or agreement of feeling or action, especially among individuals with a common interest",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The workers showed solidarity by going on strike.",
+        "vi": "Các công nhân thể hiện sự đoàn kết bằng cách đình công."
+      },
+      {
+        "en": "We stand in solidarity with the victims.",
+        "vi": "Chúng tôi đứng về phía các nạn nhân."
+      }
+    ],
+    "word_family": [
+      "solid (adj)",
+      "solidify (v)"
+    ],
+    "collocations": [
+      "show solidarity",
+      "stand in solidarity",
+      "express solidarity"
+    ],
+    "synonyms": [
+      "unity",
+      "togetherness"
+    ],
+    "antonyms": [
+      "division",
+      "disunity"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "We have solidarity with them.",
+        "correct": "We show solidarity with them.",
+        "explain_vi": "Thường dùng 'show solidarity' hơn là 'have solidarity'."
+      }
+    ],
+    "grammar_patterns": [
+      "solidarity + with + noun",
+      "in solidarity + with + noun"
+    ]
+  },
+  {
+    "word": "cohesion",
+    "phonetic": "/koʊˈhiːʒən/",
+    "meaning_vi": "sự gắn kết",
+    "meaning_en": "the act or state of sticking together tightly, especially in a social group",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Social cohesion is important for a stable society.",
+        "vi": "Sự gắn kết xã hội rất quan trọng cho một xã hội ổn định."
+      },
+      {
+        "en": "The community lacks cohesion.",
+        "vi": "Cộng đồng thiếu sự gắn kết."
+      }
+    ],
+    "word_family": [
+      "cohesive (adj)",
+      "cohere (v)"
+    ],
+    "collocations": [
+      "social cohesion",
+      "community cohesion",
+      "promote cohesion"
+    ],
+    "synonyms": [
+      "unity",
+      "solidarity"
+    ],
+    "antonyms": [
+      "disintegration",
+      "division"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "The group has good cohesion.",
+        "correct": "The group has good cohesion.",
+        "explain_vi": "Cách dùng tương tự tiếng Việt."
+      }
+    ],
+    "grammar_patterns": [
+      "cohesion + among + group",
+      "cohesion + in + noun"
+    ]
+  },
+  {
+    "word": "philanthropy",
+    "phonetic": "/fɪˈlænθrəpi/",
+    "meaning_vi": "từ thiện, lòng nhân ái",
+    "meaning_en": "the desire to promote the welfare of others, expressed especially by the generous donation of money to good causes",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "His philanthropy benefited many schools.",
+        "vi": "Hoạt động từ thiện của ông đã mang lại lợi ích cho nhiều trường học."
+      },
+      {
+        "en": "She is known for her philanthropy.",
+        "vi": "Cô ấy nổi tiếng vì lòng nhân ái."
+      }
+    ],
+    "word_family": [
+      "philanthropist (n)",
+      "philanthropic (adj)"
+    ],
+    "collocations": [
+      "engage in philanthropy",
+      "philanthropy and charity",
+      "corporate philanthropy"
+    ],
+    "synonyms": [
+      "charity",
+      "generosity"
+    ],
+    "antonyms": [
+      "misanthropy"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "He does philanthropy.",
+        "correct": "He engages in philanthropy.",
+        "explain_vi": "Thường dùng 'engage in philanthropy' hoặc 'practice philanthropy'."
+      }
+    ],
+    "grammar_patterns": [
+      "philanthropy + for + noun"
+    ]
+  },
+  {
+    "word": "beneficiary",
+    "phonetic": "/ˌbɛnɪˈfɪʃiˌɛri/",
+    "meaning_vi": "người thụ hưởng",
+    "meaning_en": "a person who receives benefits, especially from a will or insurance policy",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The charity helps its beneficiaries.",
+        "vi": "Tổ chức từ thiện giúp đỡ những người thụ hưởng."
+      },
+      {
+        "en": "She is the beneficiary of the fund.",
+        "vi": "Cô ấy là người thụ hưởng quỹ."
+      }
+    ],
+    "word_family": [
+      "benefit (n/v)",
+      "beneficial (adj)"
+    ],
+    "collocations": [
+      "direct beneficiary",
+      "main beneficiary",
+      "beneficiary of"
+    ],
+    "synonyms": [
+      "recipient",
+      "heir"
+    ],
+    "antonyms": [
+      "donor",
+      "giver"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "He is a benefit of the program.",
+        "correct": "He is a beneficiary of the program.",
+        "explain_vi": "Phân biệt 'benefit' (lợi ích) và 'beneficiary' (người hưởng lợi)."
+      }
+    ],
+    "grammar_patterns": [
+      "beneficiary + of + noun"
+    ]
+  },
+  {
+    "word": "constituency",
+    "phonetic": "/kənˈstɪtʃuənsi/",
+    "meaning_vi": "khu vực bầu cử, cử tri",
+    "meaning_en": "a group of voters in a specified area who elect a representative to a legislative body",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "He represents a rural constituency.",
+        "vi": "Ông ấy đại diện cho một khu vực bầu cử nông thôn."
+      },
+      {
+        "en": "The MP listened to his constituency.",
+        "vi": "Nghị sĩ lắng nghe cử tri của mình."
+      }
+    ],
+    "word_family": [
+      "constituent (n)",
+      "constitute (v)"
+    ],
+    "collocations": [
+      "electoral constituency",
+      "represent a constituency",
+      "constituency service"
+    ],
+    "synonyms": [
+      "electorate",
+      "district"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "The constituency are unhappy.",
+        "correct": "The constituency is unhappy.",
+        "explain_vi": "'Constituency' là danh từ số ít, dùng động từ số ít."
+      }
+    ],
+    "grammar_patterns": [
+      "constituency + of + noun"
+    ]
+  },
+  {
+    "word": "mandate",
+    "phonetic": "/ˈmændeɪt/",
+    "meaning_vi": "nhiệm vụ, ủy quyền",
+    "meaning_en": "an official order or commission to do something",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The government has a mandate to reform the system.",
+        "vi": "Chính phủ có nhiệm vụ cải cách hệ thống."
+      },
+      {
+        "en": "They received a mandate from the voters.",
+        "vi": "Họ nhận được sự ủy quyền từ cử tri."
+      }
+    ],
+    "word_family": [
+      "mandate (v)",
+      "mandatory (adj)"
+    ],
+    "collocations": [
+      "have a mandate",
+      "receive a mandate",
+      "mandate from"
+    ],
+    "synonyms": [
+      "authority",
+      "command"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "The mandate is to do something.",
+        "correct": "The mandate is to do something.",
+        "explain_vi": "Cách dùng tương tự tiếng Việt."
+      }
+    ],
+    "grammar_patterns": [
+      "mandate + to + infinitive",
+      "mandate + from + noun"
+    ]
+  },
+  {
+    "word": "neighborhood",
+    "phonetic": "/ˈneɪ.bər.hʊd/",
+    "meaning_vi": "khu phố, hàng xóm",
+    "meaning_en": "a district or area, especially with reference to its inhabitants",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We live in a quiet neighborhood.",
+        "vi": "Chúng tôi sống trong một khu phố yên tĩnh."
+      },
+      {
+        "en": "The whole neighborhood came to the party.",
+        "vi": "Cả khu phố đã đến bữa tiệc."
+      }
+    ],
+    "word_family": [
+      "neighbor (n)",
+      "neighboring (adj)"
+    ],
+    "collocations": [
+      "quiet neighborhood",
+      "friendly neighborhood",
+      "neighborhood watch"
+    ],
+    "synonyms": [
+      "district",
+      "area",
+      "community"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I live in a neighbor.",
+        "correct": "I live in a neighborhood.",
+        "explain_vi": "Nhầm 'neighbor' (người hàng xóm) với 'neighborhood' (khu phố)."
+      }
+    ],
+    "grammar_patterns": [
+      "in a/the neighborhood",
+      "neighborhood + noun"
+    ]
+  },
+  {
+    "word": "local",
+    "phonetic": "/ˈloʊ.kəl/",
+    "meaning_vi": "địa phương, thuộc về địa phương",
+    "meaning_en": "relating to a particular place or area",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "We should support local businesses.",
+        "vi": "Chúng ta nên ủng hộ các doanh nghiệp địa phương."
+      },
+      {
+        "en": "She works at the local hospital.",
+        "vi": "Cô ấy làm việc tại bệnh viện địa phương."
+      }
+    ],
+    "word_family": [
+      "locally (adv)",
+      "locality (n)"
+    ],
+    "collocations": [
+      "local community",
+      "local government",
+      "local residents"
+    ],
+    "synonyms": [
+      "regional",
+      "nearby",
+      "community"
+    ],
+    "antonyms": [
+      "national",
+      "global"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I buy from local market.",
+        "correct": "I buy from the local market.",
+        "explain_vi": "Thiếu mạo từ 'the' trước 'local market'."
+      }
+    ],
+    "grammar_patterns": [
+      "the + local + noun",
+      "local + noun (plural)"
+    ]
+  },
+  {
+    "word": "resident",
+    "phonetic": "/ˈrez.ɪ.dənt/",
+    "meaning_vi": "cư dân",
+    "meaning_en": "a person who lives in a particular place",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The residents of the building are friendly.",
+        "vi": "Các cư dân của tòa nhà rất thân thiện."
+      },
+      {
+        "en": "New residents must register with the city.",
+        "vi": "Cư dân mới phải đăng ký với thành phố."
+      }
+    ],
+    "word_family": [
+      "residence (n)",
+      "residential (adj)",
+      "reside (v)"
+    ],
+    "collocations": [
+      "local resident",
+      "permanent resident",
+      "resident association"
+    ],
+    "synonyms": [
+      "inhabitant",
+      "dweller",
+      "occupant"
+    ],
+    "antonyms": [
+      "visitor",
+      "tourist"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "He is a resident of Vietnam.",
+        "correct": "He is a resident of Vietnam.",
+        "explain_vi": "Cách dùng đúng, nhưng hay nhầm 'resident' với 'citizen' (công dân)."
+      }
+    ],
+    "grammar_patterns": [
+      "resident + of + place",
+      "the + residents"
+    ]
+  },
+  {
+    "word": "public",
+    "phonetic": "/ˈpʌb.lɪk/",
+    "meaning_vi": "công cộng, công chúng",
+    "meaning_en": "of or concerning the people as a whole",
+    "pos": "adjective / noun",
+    "examples": [
+      {
+        "en": "Public transport is cheap here.",
+        "vi": "Phương tiện giao thông công cộng ở đây rẻ."
+      },
+      {
+        "en": "The public has a right to know.",
+        "vi": "Công chúng có quyền được biết."
+      }
+    ],
+    "word_family": [
+      "publicly (adv)",
+      "publicity (n)",
+      "publicize (v)"
+    ],
+    "collocations": [
+      "public service",
+      "public opinion",
+      "public health"
+    ],
+    "synonyms": [
+      "communal",
+      "civic",
+      "general"
+    ],
+    "antonyms": [
+      "private"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I use public transportation.",
+        "correct": "I use public transportation.",
+        "explain_vi": "Đúng, nhưng hay thiếu 'the' khi dùng 'the public'."
+      }
+    ],
+    "grammar_patterns": [
+      "the + public",
+      "public + noun"
+    ]
+  },
+  {
+    "word": "government",
+    "phonetic": "/ˈɡʌv.ərn.mənt/",
+    "meaning_vi": "chính phủ",
+    "meaning_en": "the group of people who rule a country or state",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The government provides many services.",
+        "vi": "Chính phủ cung cấp nhiều dịch vụ."
+      },
+      {
+        "en": "She works for the government.",
+        "vi": "Cô ấy làm việc cho chính phủ."
+      }
+    ],
+    "word_family": [
+      "govern (v)",
+      "governor (n)",
+      "governmental (adj)"
+    ],
+    "collocations": [
+      "federal government",
+      "local government",
+      "government policy"
+    ],
+    "synonyms": [
+      "administration",
+      "authorities",
+      "regime"
+    ],
+    "antonyms": [
+      "opposition"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Government is important.",
+        "correct": "The government is important.",
+        "explain_vi": "Thiếu mạo từ 'the' trước 'government'."
+      }
+    ],
+    "grammar_patterns": [
+      "the + government",
+      "government + noun"
+    ]
+  },
+  {
+    "word": "pollution",
+    "phonetic": "/pəˈluː.ʃən/",
+    "meaning_vi": "ô nhiễm",
+    "meaning_en": "the presence of harmful substances in the environment",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Air pollution is a serious problem.",
+        "vi": "Ô nhiễm không khí là một vấn đề nghiêm trọng."
+      },
+      {
+        "en": "We need to reduce pollution.",
+        "vi": "Chúng ta cần giảm ô nhiễm."
+      }
+    ],
+    "word_family": [
+      "pollute (v)",
+      "pollutant (n)",
+      "polluted (adj)"
+    ],
+    "collocations": [
+      "air pollution",
+      "water pollution",
+      "reduce pollution"
+    ],
+    "synonyms": [
+      "contamination",
+      "toxicity"
+    ],
+    "antonyms": [
+      "cleanliness"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "The pollution is bad.",
+        "correct": "Pollution is bad.",
+        "explain_vi": "Không dùng mạo từ khi nói chung về ô nhiễm."
+      }
+    ],
+    "grammar_patterns": [
+      "pollution + noun",
+      "types of pollution"
+    ]
+  },
+  {
+    "word": "recycle",
+    "phonetic": "/ˌriːˈsaɪ.kəl/",
+    "meaning_vi": "tái chế",
+    "meaning_en": "to convert waste into reusable material",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "We should recycle plastic bottles.",
+        "vi": "Chúng ta nên tái chế chai nhựa."
+      },
+      {
+        "en": "Do you recycle paper?",
+        "vi": "Bạn có tái chế giấy không?"
+      }
+    ],
+    "word_family": [
+      "recycling (n)",
+      "recyclable (adj)",
+      "recycled (adj)"
+    ],
+    "collocations": [
+      "recycle waste",
+      "recycle bins",
+      "recycle materials"
+    ],
+    "synonyms": [
+      "reuse",
+      "repurpose"
+    ],
+    "antonyms": [
+      "waste",
+      "discard"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I recycle papers.",
+        "correct": "I recycle paper.",
+        "explain_vi": "Không thêm 's' khi nói về vật liệu nói chung."
+      }
+    ],
+    "grammar_patterns": [
+      "recycle + noun",
+      "recycle into something"
+    ]
+  },
+  {
+    "word": "environment",
+    "phonetic": "/ɪnˈvaɪ.rən.mənt/",
+    "meaning_vi": "môi trường",
+    "meaning_en": "the natural world around us",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We must protect the environment.",
+        "vi": "Chúng ta phải bảo vệ môi trường."
+      },
+      {
+        "en": "The environment is in danger.",
+        "vi": "Môi trường đang gặp nguy hiểm."
+      }
+    ],
+    "word_family": [
+      "environmental (adj)",
+      "environmentally (adv)",
+      "environmentalist (n)"
+    ],
+    "collocations": [
+      "protect the environment",
+      "natural environment",
+      "environmental issues"
+    ],
+    "synonyms": [
+      "nature",
+      "ecosystem",
+      "habitat"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Environment is important.",
+        "correct": "The environment is important.",
+        "explain_vi": "Thiếu mạo từ 'the' khi nói về môi trường nói chung."
+      }
+    ],
+    "grammar_patterns": [
+      "the + environment",
+      "environment + noun"
+    ]
+  },
+  {
+    "word": "culture",
+    "phonetic": "/ˈkʌl.tʃər/",
+    "meaning_vi": "văn hóa",
+    "meaning_en": "the customs, arts, and social institutions of a group",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Vietnam has a rich culture.",
+        "vi": "Việt Nam có một nền văn hóa phong phú."
+      },
+      {
+        "en": "I love learning about different cultures.",
+        "vi": "Tôi thích tìm hiểu về các nền văn hóa khác nhau."
+      }
+    ],
+    "word_family": [
+      "cultural (adj)",
+      "culturally (adv)",
+      "multicultural (adj)"
+    ],
+    "collocations": [
+      "local culture",
+      "cultural diversity",
+      "culture shock"
+    ],
+    "synonyms": [
+      "heritage",
+      "traditions",
+      "customs"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Vietnamese culture is interesting.",
+        "correct": "Vietnamese culture is interesting.",
+        "explain_vi": "Đúng, nhưng hay nhầm 'culture' với 'custom' (phong tục)."
+      }
+    ],
+    "grammar_patterns": [
+      "culture + noun",
+      "the culture of + place"
+    ]
+  },
+  {
+    "word": "tradition",
+    "phonetic": "/trəˈdɪʃ.ən/",
+    "meaning_vi": "truyền thống",
+    "meaning_en": "a long-established custom or belief",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "It is a tradition to give lucky money at Tet.",
+        "vi": "Tặng lì xì vào Tết là một truyền thống."
+      },
+      {
+        "en": "They follow old traditions.",
+        "vi": "Họ theo những truyền thống cũ."
+      }
+    ],
+    "word_family": [
+      "traditional (adj)",
+      "traditionally (adv)",
+      "traditionalist (n)"
+    ],
+    "collocations": [
+      "family tradition",
+      "cultural tradition",
+      "by tradition"
+    ],
+    "synonyms": [
+      "custom",
+      "practice",
+      "heritage"
+    ],
+    "antonyms": [
+      "innovation",
+      "modernity"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "It is tradition to do that.",
+        "correct": "It is a tradition to do that.",
+        "explain_vi": "Thiếu mạo từ 'a' trước 'tradition'."
+      }
+    ],
+    "grammar_patterns": [
+      "a/the tradition",
+      "tradition of + doing"
+    ]
+  },
+  {
+    "word": "event",
+    "phonetic": "/ɪˈvent/",
+    "meaning_vi": "sự kiện",
+    "meaning_en": "a planned public or social occasion",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The school is organizing a community event.",
+        "vi": "Trường đang tổ chức một sự kiện cộng đồng."
+      },
+      {
+        "en": "I went to a charity event last night.",
+        "vi": "Tôi đã đến một sự kiện từ thiện tối qua."
+      }
+    ],
+    "word_family": [
+      "eventful (adj)",
+      "uneventful (adj)",
+      "eventually (adv)"
+    ],
+    "collocations": [
+      "special event",
+      "community event",
+      "event planning"
+    ],
+    "synonyms": [
+      "occasion",
+      "gathering",
+      "function"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "There is a event.",
+        "correct": "There is an event.",
+        "explain_vi": "Dùng 'an' thay vì 'a' vì 'event' bắt đầu bằng nguyên âm."
+      }
+    ],
+    "grammar_patterns": [
+      "event + noun",
+      "at an event"
+    ]
+  },
+  {
+    "word": "festival",
+    "phonetic": "/ˈfes.tɪ.vəl/",
+    "meaning_vi": "lễ hội",
+    "meaning_en": "a day or period of celebration",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The village holds a harvest festival every year.",
+        "vi": "Làng tổ chức lễ hội thu hoạch hàng năm."
+      },
+      {
+        "en": "We enjoy the music festival.",
+        "vi": "Chúng tôi thích lễ hội âm nhạc."
+      }
+    ],
+    "word_family": [
+      "festive (adj)",
+      "festivity (n)"
+    ],
+    "collocations": [
+      "music festival",
+      "cultural festival",
+      "festival season"
+    ],
+    "synonyms": [
+      "carnival",
+      "fair",
+      "celebration"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go to festival.",
+        "correct": "I go to a festival.",
+        "explain_vi": "Thiếu mạo từ 'a' trước 'festival'."
+      }
+    ],
+    "grammar_patterns": [
+      "a/the festival",
+      "festival + noun"
+    ]
+  },
+  {
+    "word": "ceremony",
+    "phonetic": "/ˈser.ɪ.moʊ.ni/",
+    "meaning_vi": "nghi lễ, buổi lễ",
+    "meaning_en": "a formal event performed on a special occasion",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The wedding ceremony was beautiful.",
+        "vi": "Lễ cưới thật đẹp."
+      },
+      {
+        "en": "There will be a ceremony to open the new building.",
+        "vi": "Sẽ có một buổi lễ khánh thành tòa nhà mới."
+      }
+    ],
+    "word_family": [
+      "ceremonial (adj)",
+      "ceremoniously (adv)"
+    ],
+    "collocations": [
+      "opening ceremony",
+      "closing ceremony",
+      "award ceremony"
+    ],
+    "synonyms": [
+      "rite",
+      "ritual",
+      "service"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "We had ceremony.",
+        "correct": "We had a ceremony.",
+        "explain_vi": "Thiếu mạo từ 'a'."
+      }
+    ],
+    "grammar_patterns": [
+      "a/the ceremony",
+      "ceremony + noun"
+    ]
+  },
+  {
+    "word": "generation",
+    "phonetic": "/ˌdʒen.əˈreɪ.ʃən/",
+    "meaning_vi": "thế hệ",
+    "meaning_en": "a group of people born around the same time",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The younger generation uses social media a lot.",
+        "vi": "Thế hệ trẻ sử dụng mạng xã hội nhiều."
+      },
+      {
+        "en": "There is a generation gap between us.",
+        "vi": "Có khoảng cách thế hệ giữa chúng tôi."
+      }
+    ],
+    "word_family": [
+      "generational (adj)",
+      "intergenerational (adj)"
+    ],
+    "collocations": [
+      "younger generation",
+      "older generation",
+      "generation gap"
+    ],
+    "synonyms": [
+      "age group",
+      "cohort"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "My generation are different.",
+        "correct": "My generation is different.",
+        "explain_vi": "Dùng động từ số ít với 'generation' (tập thể)."
+      }
+    ],
+    "grammar_patterns": [
+      "generation + noun",
+      "the + adjective + generation"
+    ]
+  },
+  {
+    "word": "conflict",
+    "phonetic": "/ˈkɑːn.flɪkt/",
+    "meaning_vi": "xung đột, mâu thuẫn",
+    "meaning_en": "a serious disagreement or argument",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "There is a conflict between the two groups.",
+        "vi": "Có xung đột giữa hai nhóm."
+      },
+      {
+        "en": "We need to resolve this conflict.",
+        "vi": "Chúng ta cần giải quyết mâu thuẫn này."
+      }
+    ],
+    "word_family": [
+      "conflict (v)",
+      "conflicting (adj)",
+      "conflictual (adj)"
+    ],
+    "collocations": [
+      "conflict resolution",
+      "armed conflict",
+      "conflict of interest"
+    ],
+    "synonyms": [
+      "dispute",
+      "clash",
+      "struggle"
+    ],
+    "antonyms": [
+      "peace",
+      "harmony"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "They have conflict.",
+        "correct": "They have a conflict.",
+        "explain_vi": "Thiếu mạo từ 'a' khi nói về một cuộc xung đột cụ thể."
+      }
+    ],
+    "grammar_patterns": [
+      "conflict between/among",
+      "conflict with"
+    ]
+  },
+  {
+    "word": "cooperation",
+    "phonetic": "/koʊˌɑːp.əˈreɪ.ʃən/",
+    "meaning_vi": "sự hợp tác",
+    "meaning_en": "the process of working together for a common purpose",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "International cooperation is essential.",
+        "vi": "Hợp tác quốc tế là cần thiết."
+      },
+      {
+        "en": "The project requires cooperation from everyone.",
+        "vi": "Dự án đòi hỏi sự hợp tác từ mọi người."
+      }
+    ],
+    "word_family": [
+      "cooperate (v)",
+      "cooperative (adj)",
+      "cooperatively (adv)"
+    ],
+    "collocations": [
+      "close cooperation",
+      "in cooperation with",
+      "economic cooperation"
+    ],
+    "synonyms": [
+      "collaboration",
+      "teamwork",
+      "partnership"
+    ],
+    "antonyms": [
+      "conflict",
+      "competition"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "We need cooperate.",
+        "correct": "We need cooperation.",
+        "explain_vi": "Nhầm động từ 'cooperate' với danh từ 'cooperation'."
+      }
+    ],
+    "grammar_patterns": [
+      "cooperation between/among",
+      "in cooperation with"
+    ]
+  },
+  {
+    "word": "organization",
+    "phonetic": "/ˌɔːr.ɡən.ɪˈzeɪ.ʃən/",
+    "meaning_vi": "tổ chức",
+    "meaning_en": "a group of people with a particular purpose",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She works for a non-profit organization.",
+        "vi": "Cô ấy làm việc cho một tổ chức phi lợi nhuận."
+      },
+      {
+        "en": "The organization helps the poor.",
+        "vi": "Tổ chức này giúp đỡ người nghèo."
+      }
+    ],
+    "word_family": [
+      "organize (v)",
+      "organizational (adj)",
+      "organizer (n)"
+    ],
+    "collocations": [
+      "non-profit organization",
+      "international organization",
+      "community organization"
+    ],
+    "synonyms": [
+      "association",
+      "institution",
+      "group"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I join organization.",
+        "correct": "I join an organization.",
+        "explain_vi": "Thiếu mạo từ 'an'."
+      }
+    ],
+    "grammar_patterns": [
+      "an/the organization",
+      "organization + noun"
+    ]
+  },
+  {
+    "word": "authority",
+    "phonetic": "/əˈθɔːr.ə.ti/",
+    "meaning_vi": "chính quyền, thẩm quyền",
+    "meaning_en": "the power or right to give orders, make decisions, and enforce obedience",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The local authority is responsible for schools.",
+        "vi": "Chính quyền địa phương chịu trách nhiệm về trường học."
+      },
+      {
+        "en": "He has the authority to sign documents.",
+        "vi": "Anh ấy có thẩm quyền ký tài liệu."
+      }
+    ],
+    "word_family": [
+      "authorize (v)",
+      "authoritative (adj)",
+      "authorization (n)"
+    ],
+    "collocations": [
+      "local authorities",
+      "authority figure",
+      "have the authority"
+    ],
+    "synonyms": [
+      "power",
+      "jurisdiction",
+      "government"
+    ],
+    "antonyms": [
+      "subordination",
+      "powerlessness"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "The authority is good.",
+        "correct": "The authorities are good.",
+        "explain_vi": "Khi nói về chính quyền, thường dùng số nhiều 'authorities'."
+      }
+    ],
+    "grammar_patterns": [
+      "the authorities",
+      "authority over"
+    ]
+  },
+  {
+    "word": "policy",
+    "phonetic": "/ˈpɑː.lə.si/",
+    "meaning_vi": "chính sách",
+    "meaning_en": "a set of principles or rules adopted by an organization or government",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The government introduced a new policy on education.",
+        "vi": "Chính phủ đã ban hành chính sách mới về giáo dục."
+      },
+      {
+        "en": "Our company has a strict policy on safety.",
+        "vi": "Công ty chúng tôi có chính sách nghiêm ngặt về an toàn."
+      }
+    ],
+    "word_family": [
+      "policy-maker (n)",
+      "policy-related (adj)"
+    ],
+    "collocations": [
+      "government policy",
+      "company policy",
+      "foreign policy"
+    ],
+    "synonyms": [
+      "rules",
+      "guidelines",
+      "regulations"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "This is a policy of company.",
+        "correct": "This is a company policy.",
+        "explain_vi": "Dùng 'company policy' thay vì 'policy of company'."
+      }
+    ],
+    "grammar_patterns": [
+      "policy + noun",
+      "policy on + noun"
+    ]
+  },
+  {
+    "word": "law",
+    "phonetic": "/lɔː/",
+    "meaning_vi": "luật pháp",
+    "meaning_en": "a system of rules that a country or community recognizes as regulating the actions of its members",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "It is against the law to steal.",
+        "vi": "Ăn cắp là vi phạm pháp luật."
+      },
+      {
+        "en": "The law requires you to wear a seatbelt.",
+        "vi": "Luật yêu cầu bạn thắt dây an toàn."
+      }
+    ],
+    "word_family": [
+      "legal (adj)",
+      "illegal (adj)",
+      "lawyer (n)"
+    ],
+    "collocations": [
+      "by law",
+      "break the law",
+      "law and order"
+    ],
+    "synonyms": [
+      "legislation",
+      "statute",
+      "regulation"
+    ],
+    "antonyms": [
+      "anarchy"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Law is strict.",
+        "correct": "The law is strict.",
+        "explain_vi": "Thiếu mạo từ 'the' khi nói về hệ thống luật pháp."
+      }
+    ],
+    "grammar_patterns": [
+      "the law",
+      "law + noun"
+    ]
+  }
+]

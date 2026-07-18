@@ -1,0 +1,3049 @@
+[
+  {
+    "word": "lunch",
+    "phonetic": "/lʌntʃ/",
+    "meaning_vi": "bữa trưa",
+    "meaning_en": "a meal eaten in the middle of the day",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I usually have lunch at noon.",
+        "vi": "Tôi thường ăn trưa lúc 12 giờ."
+      }
+    ],
+    "word_family": [
+      "luncheon (n)"
+    ],
+    "collocations": [
+      "have lunch",
+      "eat lunch",
+      "pack lunch"
+    ],
+    "synonyms": [
+      "midday meal"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I eat lunch",
+        "correct": "I have lunch",
+        "explain_vi": "Dùng 'have' thay vì 'eat' với lunch"
+      }
+    ],
+    "grammar_patterns": [
+      "have + lunch (no article)"
+    ]
+  },
+  {
+    "word": "dinner",
+    "phonetic": "/ˈdɪn.ər/",
+    "meaning_vi": "bữa tối",
+    "meaning_en": "the main meal of the day, usually eaten in the evening",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We had dinner at a nice restaurant.",
+        "vi": "Chúng tôi đã ăn tối tại một nhà hàng đẹp."
+      }
+    ],
+    "word_family": [
+      "dine (v)",
+      "diner (n)"
+    ],
+    "collocations": [
+      "have dinner",
+      "cook dinner",
+      "dinner party"
+    ],
+    "synonyms": [
+      "evening meal",
+      "supper"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I eat dinner",
+        "correct": "I have dinner",
+        "explain_vi": "Dùng 'have' thay vì 'eat' với dinner"
+      }
+    ],
+    "grammar_patterns": [
+      "have + dinner (no article)"
+    ]
+  },
+  {
+    "word": "snack",
+    "phonetic": "/snæk/",
+    "meaning_vi": "đồ ăn nhẹ",
+    "meaning_en": "a small amount of food eaten between meals",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I had a snack after school.",
+        "vi": "Tôi đã ăn một bữa nhẹ sau giờ học."
+      }
+    ],
+    "word_family": [
+      "snack (v)"
+    ],
+    "collocations": [
+      "have a snack",
+      "snack bar",
+      "healthy snack"
+    ],
+    "synonyms": [
+      "light meal",
+      "bite"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I eat snack",
+        "correct": "I have a snack",
+        "explain_vi": "Cần mạo từ 'a' trước 'snack'"
+      }
+    ],
+    "grammar_patterns": [
+      "have a snack"
+    ]
+  },
+  {
+    "word": "thirsty",
+    "phonetic": "/ˈθɜːr.sti/",
+    "meaning_vi": "khát",
+    "meaning_en": "feeling the need to drink",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "I'm thirsty after running.",
+        "vi": "Tôi khát sau khi chạy."
+      }
+    ],
+    "word_family": [
+      "thirst (n)"
+    ],
+    "collocations": [
+      "feel thirsty",
+      "be thirsty",
+      "quench thirst"
+    ],
+    "synonyms": [
+      "parched"
+    ],
+    "antonyms": [
+      "hydrated"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I have thirsty",
+        "correct": "I am thirsty",
+        "explain_vi": "Dùng 'be' (am/is/are) với tính từ"
+      }
+    ],
+    "grammar_patterns": [
+      "be + thirsty"
+    ]
+  },
+  {
+    "word": "hungry",
+    "phonetic": "/ˈhʌŋ.ɡri/",
+    "meaning_vi": "đói",
+    "meaning_en": "feeling the need to eat",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "I'm hungry. Let's eat.",
+        "vi": "Tôi đói. Ăn thôi."
+      }
+    ],
+    "word_family": [
+      "hunger (n)"
+    ],
+    "collocations": [
+      "feel hungry",
+      "be hungry",
+      "go hungry"
+    ],
+    "synonyms": [
+      "starving",
+      "ravenous"
+    ],
+    "antonyms": [
+      "full"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I have hungry",
+        "correct": "I am hungry",
+        "explain_vi": "Dùng 'be' (am/is/are) với tính từ"
+      }
+    ],
+    "grammar_patterns": [
+      "be + hungry"
+    ]
+  },
+  {
+    "word": "delicious",
+    "phonetic": "/dɪˈlɪʃ.əs/",
+    "meaning_vi": "ngon",
+    "meaning_en": "having a very pleasant taste",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The cake is delicious.",
+        "vi": "Cái bánh này ngon quá."
+      }
+    ],
+    "word_family": [
+      "deliciously (adv)",
+      "deliciousness (n)"
+    ],
+    "collocations": [
+      "taste delicious",
+      "look delicious",
+      "absolutely delicious"
+    ],
+    "synonyms": [
+      "tasty",
+      "yummy"
+    ],
+    "antonyms": [
+      "disgusting",
+      "awful"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "It's very delicious",
+        "correct": "It's delicious",
+        "explain_vi": "Không cần 'very' vì 'delicious' đã mạnh"
+      }
+    ],
+    "grammar_patterns": [
+      "be + delicious"
+    ]
+  },
+  {
+    "word": "taste",
+    "phonetic": "/teɪst/",
+    "meaning_vi": "vị, nếm",
+    "meaning_en": "the flavor of something; to experience flavor",
+    "pos": "noun/verb",
+    "examples": [
+      {
+        "en": "This soup tastes great.",
+        "vi": "Món súp này có vị tuyệt."
+      }
+    ],
+    "word_family": [
+      "tasty (adj)",
+      "tasteful (adj)"
+    ],
+    "collocations": [
+      "have a taste",
+      "taste like",
+      "taste good"
+    ],
+    "synonyms": [
+      "flavor",
+      "savor"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "It tastes deliciously",
+        "correct": "It tastes delicious",
+        "explain_vi": "Sau 'taste' dùng tính từ, không phải trạng từ"
+      }
+    ],
+    "grammar_patterns": [
+      "taste + adjective"
+    ]
+  },
+  {
+    "word": "spicy",
+    "phonetic": "/ˈspaɪ.si/",
+    "meaning_vi": "cay",
+    "meaning_en": "having a strong, hot flavor from spices",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "Thai food is very spicy.",
+        "vi": "Đồ ăn Thái rất cay."
+      }
+    ],
+    "word_family": [
+      "spice (n)",
+      "spiciness (n)"
+    ],
+    "collocations": [
+      "spicy food",
+      "too spicy",
+      "spicy flavor"
+    ],
+    "synonyms": [
+      "hot",
+      "piquant"
+    ],
+    "antonyms": [
+      "mild",
+      "bland"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "It's so spicy hot",
+        "correct": "It's very spicy",
+        "explain_vi": "Không dùng cả 'spicy' và 'hot' cùng lúc"
+      }
+    ],
+    "grammar_patterns": [
+      "be + spicy"
+    ]
+  },
+  {
+    "word": "sweet",
+    "phonetic": "/swiːt/",
+    "meaning_vi": "ngọt",
+    "meaning_en": "containing or tasting like sugar",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "I like sweet desserts.",
+        "vi": "Tôi thích đồ tráng miệng ngọt."
+      }
+    ],
+    "word_family": [
+      "sweetness (n)",
+      "sweeten (v)"
+    ],
+    "collocations": [
+      "sweet taste",
+      "sweet tooth",
+      "sweet and sour"
+    ],
+    "synonyms": [
+      "sugary",
+      "candy-like"
+    ],
+    "antonyms": [
+      "sour",
+      "bitter",
+      "salty"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "It tastes sweetly",
+        "correct": "It tastes sweet",
+        "explain_vi": "Sau 'taste' dùng tính từ"
+      }
+    ],
+    "grammar_patterns": [
+      "be + sweet"
+    ]
+  },
+  {
+    "word": "sour",
+    "phonetic": "/ˈsaʊ.ər/",
+    "meaning_vi": "chua",
+    "meaning_en": "having a sharp, acidic taste",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "Lemons are sour.",
+        "vi": "Chanh thì chua."
+      }
+    ],
+    "word_family": [
+      "sourness (n)",
+      "sour (v)"
+    ],
+    "collocations": [
+      "sour taste",
+      "sour candy",
+      "go sour"
+    ],
+    "synonyms": [
+      "acidic",
+      "tangy"
+    ],
+    "antonyms": [
+      "sweet",
+      "mild"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "It tastes sourly",
+        "correct": "It tastes sour",
+        "explain_vi": "Sau 'taste' dùng tính từ"
+      }
+    ],
+    "grammar_patterns": [
+      "be + sour"
+    ]
+  },
+  {
+    "word": "bitter",
+    "phonetic": "/ˈbɪt.ər/",
+    "meaning_vi": "đắng",
+    "meaning_en": "having a sharp, unpleasant taste",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "Dark chocolate is bitter.",
+        "vi": "Sô-cô-la đen thì đắng."
+      }
+    ],
+    "word_family": [
+      "bitterness (n)",
+      "bitterly (adv)"
+    ],
+    "collocations": [
+      "bitter taste",
+      "bitter coffee",
+      "bitter flavor"
+    ],
+    "synonyms": [
+      "sharp",
+      "acrid"
+    ],
+    "antonyms": [
+      "sweet",
+      "mild"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "It tastes bitterly",
+        "correct": "It tastes bitter",
+        "explain_vi": "Sau 'taste' dùng tính từ"
+      }
+    ],
+    "grammar_patterns": [
+      "be + bitter"
+    ]
+  },
+  {
+    "word": "salty",
+    "phonetic": "/ˈsɔːl.ti/",
+    "meaning_vi": "mặn",
+    "meaning_en": "containing or tasting of salt",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The soup is too salty.",
+        "vi": "Món súp mặn quá."
+      }
+    ],
+    "word_family": [
+      "salt (n)",
+      "saltiness (n)"
+    ],
+    "collocations": [
+      "salty snack",
+      "salty taste",
+      "too salty"
+    ],
+    "synonyms": [
+      "briny",
+      "salted"
+    ],
+    "antonyms": [
+      "fresh",
+      "unsalted"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "It tastes saltily",
+        "correct": "It tastes salty",
+        "explain_vi": "Sau 'taste' dùng tính từ"
+      }
+    ],
+    "grammar_patterns": [
+      "be + salty"
+    ]
+  },
+  {
+    "word": "fresh",
+    "phonetic": "/freʃ/",
+    "meaning_vi": "tươi",
+    "meaning_en": "recently made or picked; not processed",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "I bought fresh vegetables.",
+        "vi": "Tôi đã mua rau tươi."
+      }
+    ],
+    "word_family": [
+      "freshness (n)",
+      "freshly (adv)"
+    ],
+    "collocations": [
+      "fresh fruit",
+      "fresh bread",
+      "fresh air"
+    ],
+    "synonyms": [
+      "new",
+      "just-picked"
+    ],
+    "antonyms": [
+      "stale",
+      "frozen",
+      "canned"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "It's fresh and new",
+        "correct": "It's fresh",
+        "explain_vi": "Không cần 'new' sau 'fresh'"
+      }
+    ],
+    "grammar_patterns": [
+      "be + fresh"
+    ]
+  },
+  {
+    "word": "fried",
+    "phonetic": "/fraɪd/",
+    "meaning_vi": "rán, chiên",
+    "meaning_en": "cooked in hot oil or fat",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "I like fried chicken.",
+        "vi": "Tôi thích gà rán."
+      }
+    ],
+    "word_family": [
+      "fry (v)",
+      "frying (n)"
+    ],
+    "collocations": [
+      "fried rice",
+      "fried eggs",
+      "fried food"
+    ],
+    "synonyms": [
+      "deep-fried",
+      "pan-fried"
+    ],
+    "antonyms": [
+      "boiled",
+      "steamed",
+      "baked"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I like chicken fried",
+        "correct": "I like fried chicken",
+        "explain_vi": "Tính từ đứng trước danh từ"
+      }
+    ],
+    "grammar_patterns": [
+      "fried + noun"
+    ]
+  },
+  {
+    "word": "boiled",
+    "phonetic": "/bɔɪld/",
+    "meaning_vi": "luộc",
+    "meaning_en": "cooked in boiling water",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "I prefer boiled eggs.",
+        "vi": "Tôi thích trứng luộc hơn."
+      }
+    ],
+    "word_family": [
+      "boil (v)",
+      "boiling (adj)"
+    ],
+    "collocations": [
+      "boiled water",
+      "boiled rice",
+      "boiled vegetables"
+    ],
+    "synonyms": [
+      "simmered"
+    ],
+    "antonyms": [
+      "fried",
+      "raw"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I like eggs boiled",
+        "correct": "I like boiled eggs",
+        "explain_vi": "Tính từ đứng trước danh từ"
+      }
+    ],
+    "grammar_patterns": [
+      "boiled + noun"
+    ]
+  },
+  {
+    "word": "roast",
+    "phonetic": "/roʊst/",
+    "meaning_vi": "quay, rang",
+    "meaning_en": "cooked in an oven or over fire",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "We had roast chicken for dinner.",
+        "vi": "Chúng tôi đã ăn gà quay cho bữa tối."
+      }
+    ],
+    "word_family": [
+      "roast (v)",
+      "roasting (n)"
+    ],
+    "collocations": [
+      "roast beef",
+      "roast potatoes",
+      "roast dinner"
+    ],
+    "synonyms": [
+      "baked",
+      "grilled"
+    ],
+    "antonyms": [
+      "raw",
+      "boiled"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I like chicken roast",
+        "correct": "I like roast chicken",
+        "explain_vi": "Tính từ đứng trước danh từ"
+      }
+    ],
+    "grammar_patterns": [
+      "roast + noun"
+    ]
+  },
+  {
+    "word": "grill",
+    "phonetic": "/ɡrɪl/",
+    "meaning_vi": "nướng (trên vỉ)",
+    "meaning_en": "cook on a metal frame over heat",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "I'll grill the fish.",
+        "vi": "Tôi sẽ nướng cá."
+      }
+    ],
+    "word_family": [
+      "grill (n)",
+      "grilled (adj)"
+    ],
+    "collocations": [
+      "grill meat",
+      "grill vegetables",
+      "grill outdoors"
+    ],
+    "synonyms": [
+      "barbecue",
+      "broil"
+    ],
+    "antonyms": [
+      "boil",
+      "steam"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I grill the fish on the pan",
+        "correct": "I grill the fish on the grill",
+        "explain_vi": "'Grill' là nướng trên vỉ, không phải chảo"
+      }
+    ],
+    "grammar_patterns": [
+      "grill + noun"
+    ]
+  },
+  {
+    "word": "bake",
+    "phonetic": "/beɪk/",
+    "meaning_vi": "nướng (lò)",
+    "meaning_en": "cook in an oven using dry heat",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "She bakes bread every week.",
+        "vi": "Cô ấy nướng bánh mì mỗi tuần."
+      }
+    ],
+    "word_family": [
+      "baker (n)",
+      "bakery (n)",
+      "baked (adj)"
+    ],
+    "collocations": [
+      "bake a cake",
+      "bake cookies",
+      "bake bread"
+    ],
+    "synonyms": [
+      "roast"
+    ],
+    "antonyms": [
+      "fry",
+      "boil"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I bake the chicken in the microwave",
+        "correct": "I bake the chicken in the oven",
+        "explain_vi": "'Bake' dùng lò nướng, không phải lò vi sóng"
+      }
+    ],
+    "grammar_patterns": [
+      "bake + noun"
+    ]
+  },
+  {
+    "word": "pour",
+    "phonetic": "/pɔːr/",
+    "meaning_vi": "rót, đổ",
+    "meaning_en": "to cause liquid to flow from a container",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "Please pour me a glass of water.",
+        "vi": "Làm ơn rót cho tôi một cốc nước."
+      }
+    ],
+    "word_family": [
+      "pourer (n)"
+    ],
+    "collocations": [
+      "pour water",
+      "pour milk",
+      "pour into"
+    ],
+    "synonyms": [
+      "serve",
+      "decant"
+    ],
+    "antonyms": [
+      "drain",
+      "empty"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I pour the water to the glass",
+        "correct": "I pour the water into the glass",
+        "explain_vi": "Dùng 'into' sau 'pour'"
+      }
+    ],
+    "grammar_patterns": [
+      "pour + noun + into + noun"
+    ]
+  },
+  {
+    "word": "stir",
+    "phonetic": "/stɜːr/",
+    "meaning_vi": "khuấy",
+    "meaning_en": "to mix a liquid or other substance with a spoon",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "Stir the soup occasionally.",
+        "vi": "Thỉnh thoảng khuấy súp."
+      }
+    ],
+    "word_family": [
+      "stirrer (n)",
+      "stirring (adj)"
+    ],
+    "collocations": [
+      "stir the pot",
+      "stir well",
+      "stir in"
+    ],
+    "synonyms": [
+      "mix",
+      "blend"
+    ],
+    "antonyms": [
+      "still"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Stir the soup with a fork",
+        "correct": "Stir the soup with a spoon",
+        "explain_vi": "Dùng thìa để khuấy"
+      }
+    ],
+    "grammar_patterns": [
+      "stir + noun"
+    ]
+  },
+  {
+    "word": "meal",
+    "phonetic": "/miːl/",
+    "meaning_vi": "bữa ăn",
+    "meaning_en": "an occasion when food is eaten",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We usually have three meals a day.",
+        "vi": "Chúng tôi thường ăn ba bữa một ngày."
+      }
+    ],
+    "word_family": [
+      "mealtime (n)"
+    ],
+    "collocations": [
+      "have a meal",
+      "cook a meal",
+      "skip a meal"
+    ],
+    "synonyms": [
+      "repast"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I eat meal",
+        "correct": "I have a meal",
+        "explain_vi": "Cần dùng mạo từ 'a' trước 'meal'"
+      }
+    ],
+    "grammar_patterns": [
+      "have a meal",
+      "eat a meal"
+    ]
+  },
+  {
+    "word": "appetite",
+    "phonetic": "/ˈæp.ɪ.taɪt/",
+    "meaning_vi": "sự thèm ăn",
+    "meaning_en": "the desire to eat food",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I have a big appetite today.",
+        "vi": "Hôm nay tôi thèm ăn quá."
+      }
+    ],
+    "word_family": [
+      "appetizing (adj)",
+      "appetizer (n)"
+    ],
+    "collocations": [
+      "have an appetite",
+      "lose your appetite",
+      "work up an appetite"
+    ],
+    "synonyms": [
+      "hunger",
+      "craving"
+    ],
+    "antonyms": [
+      "satiety"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I have appetite",
+        "correct": "I have an appetite",
+        "explain_vi": "Cần mạo từ 'an' vì 'appetite' bắt đầu bằng nguyên âm"
+      }
+    ],
+    "grammar_patterns": [
+      "have an appetite",
+      "an appetite for"
+    ]
+  },
+  {
+    "word": "thirst",
+    "phonetic": "/θɜːst/",
+    "meaning_vi": "cơn khát",
+    "meaning_en": "the feeling of needing to drink",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "After the run, I had a terrible thirst.",
+        "vi": "Sau khi chạy, tôi khát khô cổ."
+      }
+    ],
+    "word_family": [
+      "thirsty (adj)",
+      "thirstily (adv)"
+    ],
+    "collocations": [
+      "quench your thirst",
+      "have a thirst",
+      "die of thirst"
+    ],
+    "synonyms": [
+      "dryness",
+      "dehydration"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I am thirst",
+        "correct": "I am thirsty",
+        "explain_vi": "Dùng 'thirsty' làm tính từ, không phải 'thirst'"
+      }
+    ],
+    "grammar_patterns": [
+      "have a thirst",
+      "quench thirst"
+    ]
+  },
+  {
+    "word": "ingredient",
+    "phonetic": "/ɪnˈɡriː.di.ənt/",
+    "meaning_vi": "nguyên liệu",
+    "meaning_en": "any of the foods or substances combined to make a dish",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The main ingredients are flour, eggs, and sugar.",
+        "vi": "Nguyên liệu chính là bột mì, trứng và đường."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "key ingredient",
+      "fresh ingredients",
+      "mix ingredients"
+    ],
+    "synonyms": [
+      "component",
+      "element"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "ingredient không đếm được",
+        "correct": "ingredient đếm được",
+        "explain_vi": "'Ingredient' là danh từ đếm được, có thể dùng số nhiều"
+      }
+    ],
+    "grammar_patterns": [
+      "an ingredient",
+      "ingredients of"
+    ]
+  },
+  {
+    "word": "recipe",
+    "phonetic": "/ˈres.ɪ.pi/",
+    "meaning_vi": "công thức nấu ăn",
+    "meaning_en": "a set of instructions for cooking a dish",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Can you give me the recipe for this cake?",
+        "vi": "Bạn có thể cho tôi công thức làm bánh này không?"
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "follow a recipe",
+      "write a recipe",
+      "traditional recipe"
+    ],
+    "synonyms": [
+      "cookbook entry"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "recipe phát âm /riːsip/",
+        "correct": "/ˈres.ɪ.pi/",
+        "explain_vi": "Nhấn âm đầu, 'e' ngắn"
+      }
+    ],
+    "grammar_patterns": [
+      "recipe for",
+      "recipe book"
+    ]
+  },
+  {
+    "word": "portion",
+    "phonetic": "/ˈpɔːr.ʃən/",
+    "meaning_vi": "khẩu phần",
+    "meaning_en": "the amount of food served to one person",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The restaurant serves generous portions.",
+        "vi": "Nhà hàng phục vụ khẩu phần lớn."
+      }
+    ],
+    "word_family": [
+      "portion (v)"
+    ],
+    "collocations": [
+      "large portion",
+      "small portion",
+      "portion size"
+    ],
+    "synonyms": [
+      "serving",
+      "helping"
+    ],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "a portion of",
+      "portion control"
+    ]
+  },
+  {
+    "word": "leftovers",
+    "phonetic": "/ˈlef.toʊ.vərz/",
+    "meaning_vi": "thức ăn thừa",
+    "meaning_en": "food that has not been eaten at the end of a meal",
+    "pos": "noun plural",
+    "examples": [
+      {
+        "en": "We ate the leftovers for lunch.",
+        "vi": "Chúng tôi ăn thức ăn thừa vào bữa trưa."
+      }
+    ],
+    "word_family": [
+      "leftover (adj)"
+    ],
+    "collocations": [
+      "have leftovers",
+      "reheat leftovers",
+      "leftover container"
+    ],
+    "synonyms": [
+      "scraps",
+      "remnants"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "leftover là số ít",
+        "correct": "leftovers số nhiều",
+        "explain_vi": "Thường dùng dạng số nhiều 'leftovers'"
+      }
+    ],
+    "grammar_patterns": [
+      "leftovers from",
+      "eat leftovers"
+    ]
+  },
+  {
+    "word": "diet",
+    "phonetic": "/ˈdaɪ.ət/",
+    "meaning_vi": "chế độ ăn kiêng",
+    "meaning_en": "the food and drink regularly consumed; a special eating plan",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She is on a low-carb diet.",
+        "vi": "Cô ấy đang ăn kiêng low-carb."
+      }
+    ],
+    "word_family": [
+      "dietary (adj)",
+      "dieter (n)"
+    ],
+    "collocations": [
+      "go on a diet",
+      "balanced diet",
+      "diet plan"
+    ],
+    "synonyms": [
+      "regimen",
+      "nutrition plan"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "diet có nghĩa là ăn kiêng",
+        "correct": "diet có thể chỉ chế độ ăn nói chung",
+        "explain_vi": "'Diet' không chỉ ăn kiêng mà còn là chế độ ăn hàng ngày"
+      }
+    ],
+    "grammar_patterns": [
+      "on a diet",
+      "diet of"
+    ]
+  },
+  {
+    "word": "nutrition",
+    "phonetic": "/nuːˈtrɪʃ.ən/",
+    "meaning_vi": "dinh dưỡng",
+    "meaning_en": "the process of providing or obtaining the food necessary for health and growth",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Good nutrition is important for children.",
+        "vi": "Dinh dưỡng tốt rất quan trọng cho trẻ em."
+      }
+    ],
+    "word_family": [
+      "nutritious (adj)",
+      "nutritional (adj)"
+    ],
+    "collocations": [
+      "good nutrition",
+      "nutrition facts",
+      "nutrition plan"
+    ],
+    "synonyms": [
+      "nourishment",
+      "sustenance"
+    ],
+    "antonyms": [
+      "malnutrition"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "nutrition và nutritious giống nhau",
+        "correct": "nutrition là danh từ, nutritious là tính từ",
+        "explain_vi": "Phân biệt danh từ và tính từ"
+      }
+    ],
+    "grammar_patterns": [
+      "nutrition in",
+      "source of nutrition"
+    ]
+  },
+  {
+    "word": "calorie",
+    "phonetic": "/ˈkæl.ər.i/",
+    "meaning_vi": "calo",
+    "meaning_en": "a unit of energy in food",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "This drink has a lot of calories.",
+        "vi": "Đồ uống này có nhiều calo."
+      }
+    ],
+    "word_family": [
+      "caloric (adj)"
+    ],
+    "collocations": [
+      "low calorie",
+      "high calorie",
+      "count calories"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "calorie phát âm /kəˈloːri/",
+        "correct": "/ˈkæl.ər.i/",
+        "explain_vi": "Nhấn âm đầu, 'a' ngắn"
+      }
+    ],
+    "grammar_patterns": [
+      "calories in",
+      "calorie count"
+    ]
+  },
+  {
+    "word": "beverage",
+    "phonetic": "/ˈbev.ər.ɪdʒ/",
+    "meaning_vi": "đồ uống",
+    "meaning_en": "any drink other than water",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We offer a variety of beverages.",
+        "vi": "Chúng tôi cung cấp nhiều loại đồ uống."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "hot beverage",
+      "alcoholic beverage",
+      "beverage menu"
+    ],
+    "synonyms": [
+      "drink",
+      "refreshment"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "beverage dùng cho mọi loại đồ uống",
+        "correct": "beverage thường trang trọng hơn drink",
+        "explain_vi": "'Beverage' trang trọng, 'drink' thông dụng hơn"
+      }
+    ],
+    "grammar_patterns": [
+      "beverage of",
+      "beverage choice"
+    ]
+  },
+  {
+    "word": "cuisine",
+    "phonetic": "/kwɪˈziːn/",
+    "meaning_vi": "ẩm thực",
+    "meaning_en": "a style or method of cooking, especially of a particular country or region",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I love Italian cuisine.",
+        "vi": "Tôi yêu ẩm thực Ý."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "local cuisine",
+      "French cuisine",
+      "cuisine style"
+    ],
+    "synonyms": [
+      "cooking",
+      "gastronomy"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "cuisine phát âm /ˈkjuː.ɪ.ziːn/",
+        "correct": "/kwɪˈziːn/",
+        "explain_vi": "Âm 'kwi' chứ không phải 'kyu'"
+      }
+    ],
+    "grammar_patterns": [
+      "cuisine of",
+      "cuisine from"
+    ]
+  },
+  {
+    "word": "flavor",
+    "phonetic": "/ˈfleɪ.vər/",
+    "meaning_vi": "hương vị",
+    "meaning_en": "the taste of food or drink",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "This ice cream has a rich chocolate flavor.",
+        "vi": "Kem này có hương vị sô cô la đậm đà."
+      }
+    ],
+    "word_family": [
+      "flavorful (adj)",
+      "flavorless (adj)"
+    ],
+    "collocations": [
+      "strong flavor",
+      "add flavor",
+      "natural flavor"
+    ],
+    "synonyms": [
+      "taste",
+      "savor"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "flavor viết là flavour",
+        "correct": "flavor (Mỹ) / flavour (Anh)",
+        "explain_vi": "Cả hai đều đúng, tùy vùng"
+      }
+    ],
+    "grammar_patterns": [
+      "flavor of",
+      "flavor in"
+    ]
+  },
+  {
+    "word": "spice",
+    "phonetic": "/spaɪs/",
+    "meaning_vi": "gia vị",
+    "meaning_en": "a substance used to add flavor to food, often from plants",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Cinnamon is a popular spice.",
+        "vi": "Quế là một loại gia vị phổ biến."
+      }
+    ],
+    "word_family": [
+      "spicy (adj)",
+      "spiced (adj)"
+    ],
+    "collocations": [
+      "add spice",
+      "spice mix",
+      "spice up"
+    ],
+    "synonyms": [
+      "seasoning",
+      "herb"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "spice và spicy giống nhau",
+        "correct": "spice là danh từ, spicy là tính từ",
+        "explain_vi": "Phân biệt danh từ - tính từ"
+      }
+    ],
+    "grammar_patterns": [
+      "spice for",
+      "spice in"
+    ]
+  },
+  {
+    "word": "herb",
+    "phonetic": "/ɜːrb/",
+    "meaning_vi": "thảo mộc",
+    "meaning_en": "a plant used for flavoring food or as medicine",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Fresh herbs like basil and mint are great in salads.",
+        "vi": "Các loại thảo mộc tươi như húng quế và bạc hà rất tuyệt trong món salad."
+      }
+    ],
+    "word_family": [
+      "herbal (adj)"
+    ],
+    "collocations": [
+      "fresh herbs",
+      "dried herbs",
+      "herb garden"
+    ],
+    "synonyms": [
+      "seasoning",
+      "aromatic"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "herb phát âm /hɜːb/",
+        "correct": "/ɜːrb/ (Mỹ) hoặc /hɜːb/ (Anh)",
+        "explain_vi": "Ở Mỹ âm 'h' câm"
+      }
+    ],
+    "grammar_patterns": [
+      "herbs in",
+      "herb used for"
+    ]
+  },
+  {
+    "word": "sauce",
+    "phonetic": "/sɔːs/",
+    "meaning_vi": "nước sốt",
+    "meaning_en": "a thick liquid served with food to add flavor",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I like tomato sauce on pasta.",
+        "vi": "Tôi thích sốt cà chua trên mì ý."
+      }
+    ],
+    "word_family": [
+      "saucy (adj)"
+    ],
+    "collocations": [
+      "pour sauce",
+      "tomato sauce",
+      "soy sauce"
+    ],
+    "synonyms": [
+      "gravy",
+      "dressing"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "sauce phát âm /saus/",
+        "correct": "/sɔːs/",
+        "explain_vi": "Âm 'aw' dài, không phải 'au'"
+      }
+    ],
+    "grammar_patterns": [
+      "sauce for",
+      "sauce on"
+    ]
+  },
+  {
+    "word": "dessert",
+    "phonetic": "/dɪˈzɜːrt/",
+    "meaning_vi": "món tráng miệng",
+    "meaning_en": "the sweet course eaten at the end of a meal",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We had cake for dessert.",
+        "vi": "Chúng tôi ăn bánh ngọt làm món tráng miệng."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "have dessert",
+      "dessert menu",
+      "sweet dessert"
+    ],
+    "synonyms": [
+      "pudding",
+      "sweet"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "dessert viết là desert",
+        "correct": "dessert (tráng miệng) vs desert (sa mạc)",
+        "explain_vi": "Dễ nhầm lẫn chính tả: dessert có hai 's', desert có một 's'"
+      }
+    ],
+    "grammar_patterns": [
+      "for dessert",
+      "dessert of"
+    ]
+  },
+  {
+    "word": "appetizer",
+    "phonetic": "/ˈæp.ɪ.taɪ.zər/",
+    "meaning_vi": "món khai vị",
+    "meaning_en": "a small dish served before the main course",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We ordered spring rolls as an appetizer.",
+        "vi": "Chúng tôi gọi chả giò làm món khai vị."
+      }
+    ],
+    "word_family": [
+      "appetizing (adj)"
+    ],
+    "collocations": [
+      "serve appetizers",
+      "appetizer menu",
+      "light appetizer"
+    ],
+    "synonyms": [
+      "starter",
+      "hors d'oeuvre"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "appetizer phát âm /əˈpet.ɪ.zaɪ/",
+        "correct": "/ˈæp.ɪ.taɪ.zər/",
+        "explain_vi": "Nhấn âm đầu, 'a' ngắn"
+      }
+    ],
+    "grammar_patterns": [
+      "as an appetizer",
+      "appetizer of"
+    ]
+  },
+  {
+    "word": "main course",
+    "phonetic": "/ˌmeɪn ˈkɔːrs/",
+    "meaning_vi": "món chính",
+    "meaning_en": "the largest or most important part of a meal",
+    "pos": "noun phrase",
+    "examples": [
+      {
+        "en": "For the main course, we had grilled fish.",
+        "vi": "Món chính, chúng tôi ăn cá nướng."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "main course dish",
+      "order the main course",
+      "main course menu"
+    ],
+    "synonyms": [
+      "entree",
+      "main dish"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "main course và entree giống nhau",
+        "correct": "Ở Mỹ, entree là món chính; ở Anh, entree là món giữa",
+        "explain_vi": "Lưu ý khác biệt Anh-Mỹ"
+      }
+    ],
+    "grammar_patterns": [
+      "for the main course",
+      "main course of"
+    ]
+  },
+  {
+    "word": "serving",
+    "phonetic": "/ˈsɜːr.vɪŋ/",
+    "meaning_vi": "suất ăn",
+    "meaning_en": "an amount of food for one person",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "This recipe makes four servings.",
+        "vi": "Công thức này làm được bốn suất ăn."
+      }
+    ],
+    "word_family": [
+      "serve (v)",
+      "server (n)"
+    ],
+    "collocations": [
+      "serving size",
+      "per serving",
+      "generous serving"
+    ],
+    "synonyms": [
+      "portion",
+      "helping"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "serving và serve giống nhau",
+        "correct": "serving là danh từ, serve là động từ",
+        "explain_vi": "Phân biệt từ loại"
+      }
+    ],
+    "grammar_patterns": [
+      "serving of",
+      "servings per"
+    ]
+  },
+  {
+    "word": "appetizer",
+    "phonetic": "/ˈæp.ə.taɪ.zər/",
+    "meaning_vi": "món khai vị",
+    "meaning_en": "a small dish served before the main course",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We ordered spring rolls as an appetizer.",
+        "vi": "Chúng tôi gọi chả giò làm món khai vị."
+      }
+    ],
+    "word_family": [
+      "appetizing (adj)",
+      "appetite (n)"
+    ],
+    "collocations": [
+      "as an appetizer",
+      "order an appetizer",
+      "appetizer menu"
+    ],
+    "synonyms": [
+      "starter",
+      "hors d'oeuvre"
+    ],
+    "antonyms": [
+      "dessert",
+      "main course"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I eat appetizer before meal.",
+        "correct": "I eat an appetizer before the meal.",
+        "explain_vi": "Thiếu mạo từ 'an' và 'the'."
+      }
+    ],
+    "grammar_patterns": [
+      "an appetizer",
+      "appetizers (plural)"
+    ]
+  },
+  {
+    "word": "main course",
+    "phonetic": "/ˌmeɪn ˈkɔːrs/",
+    "meaning_vi": "món chính",
+    "meaning_en": "the largest or most important part of a meal",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The main course was grilled fish.",
+        "vi": "Món chính là cá nướng."
+      }
+    ],
+    "word_family": [
+      "main (adj)",
+      "course (n)"
+    ],
+    "collocations": [
+      "order the main course",
+      "serve the main course",
+      "main course dish"
+    ],
+    "synonyms": [
+      "entrée",
+      "main dish"
+    ],
+    "antonyms": [
+      "appetizer",
+      "dessert"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I want main course.",
+        "correct": "I want the main course.",
+        "explain_vi": "Thiếu mạo từ 'the'."
+      }
+    ],
+    "grammar_patterns": [
+      "the main course",
+      "main courses (plural)"
+    ]
+  },
+  {
+    "word": "dessert",
+    "phonetic": "/dɪˈzɜːrt/",
+    "meaning_vi": "món tráng miệng",
+    "meaning_en": "sweet food eaten after the main course",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "For dessert, we had ice cream.",
+        "vi": "Món tráng miệng, chúng tôi ăn kem."
+      }
+    ],
+    "word_family": [
+      "dessert (n)"
+    ],
+    "collocations": [
+      "have dessert",
+      "order dessert",
+      "dessert menu"
+    ],
+    "synonyms": [
+      "sweet",
+      "pudding"
+    ],
+    "antonyms": [
+      "appetizer",
+      "main course"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I like dessert after dinner.",
+        "correct": "I like dessert after dinner.",
+        "explain_vi": "Không có lỗi phổ biến, nhưng nhớ 'dessert' có hai chữ 's'."
+      }
+    ],
+    "grammar_patterns": [
+      "for dessert",
+      "dessert (uncountable usually)"
+    ]
+  },
+  {
+    "word": "beverage",
+    "phonetic": "/ˈbev.ər.ɪdʒ/",
+    "meaning_vi": "đồ uống",
+    "meaning_en": "any drink other than water",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Would you like a beverage with your meal?",
+        "vi": "Bạn có muốn đồ uống kèm bữa ăn không?"
+      }
+    ],
+    "word_family": [
+      "beverage (n)"
+    ],
+    "collocations": [
+      "alcoholic beverage",
+      "hot beverage",
+      "beverage menu"
+    ],
+    "synonyms": [
+      "drink",
+      "refreshment"
+    ],
+    "antonyms": [
+      "food"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I want beverage.",
+        "correct": "I want a beverage.",
+        "explain_vi": "Thiếu mạo từ 'a'."
+      }
+    ],
+    "grammar_patterns": [
+      "a beverage",
+      "beverages (plural)"
+    ]
+  },
+  {
+    "word": "cuisine",
+    "phonetic": "/kwɪˈziːn/",
+    "meaning_vi": "ẩm thực",
+    "meaning_en": "a style or method of cooking, especially of a particular country or region",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Italian cuisine is very popular.",
+        "vi": "Ẩm thực Ý rất phổ biến."
+      }
+    ],
+    "word_family": [
+      "cuisine (n)"
+    ],
+    "collocations": [
+      "French cuisine",
+      "local cuisine",
+      "cuisine style"
+    ],
+    "synonyms": [
+      "cooking",
+      "gastronomy"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I like cuisine Vietnamese.",
+        "correct": "I like Vietnamese cuisine.",
+        "explain_vi": "Sai trật tự tính từ, phải là 'Vietnamese cuisine'."
+      }
+    ],
+    "grammar_patterns": [
+      "cuisine of [country]",
+      "[country] cuisine"
+    ]
+  },
+  {
+    "word": "flavor",
+    "phonetic": "/ˈfleɪ.vər/",
+    "meaning_vi": "hương vị",
+    "meaning_en": "the taste of a food or drink",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "This soup has a rich flavor.",
+        "vi": "Món súp này có hương vị đậm đà."
+      }
+    ],
+    "word_family": [
+      "flavorful (adj)",
+      "flavorless (adj)"
+    ],
+    "collocations": [
+      "strong flavor",
+      "add flavor",
+      "flavor profile"
+    ],
+    "synonyms": [
+      "taste",
+      "savor"
+    ],
+    "antonyms": [
+      "blandness"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "The flavor of food is good.",
+        "correct": "The flavor of the food is good.",
+        "explain_vi": "Thiếu mạo từ 'the'."
+      }
+    ],
+    "grammar_patterns": [
+      "a flavor",
+      "flavor of [food]"
+    ]
+  },
+  {
+    "word": "spice",
+    "phonetic": "/spaɪs/",
+    "meaning_vi": "gia vị",
+    "meaning_en": "a substance used to add flavor to food, often from plants",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Cinnamon is a popular spice.",
+        "vi": "Quế là một loại gia vị phổ biến."
+      }
+    ],
+    "word_family": [
+      "spicy (adj)",
+      "spice (v)"
+    ],
+    "collocations": [
+      "add spice",
+      "spice blend",
+      "spice rack"
+    ],
+    "synonyms": [
+      "seasoning",
+      "herb"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I like spice food.",
+        "correct": "I like spicy food.",
+        "explain_vi": "Nhầm 'spice' (danh từ) với 'spicy' (tính từ)."
+      }
+    ],
+    "grammar_patterns": [
+      "a spice",
+      "spices (plural)"
+    ]
+  },
+  {
+    "word": "herb",
+    "phonetic": "/hɜːrb/",
+    "meaning_vi": "thảo mộc, rau thơm",
+    "meaning_en": "a plant used for flavoring food or in medicine",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Fresh herbs like basil and mint are used in salads.",
+        "vi": "Các loại thảo mộc tươi như húng quế và bạc hà được dùng trong salad."
+      }
+    ],
+    "word_family": [
+      "herbal (adj)"
+    ],
+    "collocations": [
+      "fresh herbs",
+      "dried herbs",
+      "herb garden"
+    ],
+    "synonyms": [
+      "seasoning",
+      "spice"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I like herb tea.",
+        "correct": "I like herbal tea.",
+        "explain_vi": "Dùng 'herbal' (tính từ) thay vì 'herb' (danh từ)."
+      }
+    ],
+    "grammar_patterns": [
+      "an herb",
+      "herbs (plural)"
+    ]
+  },
+  {
+    "word": "sauce",
+    "phonetic": "/sɔːs/",
+    "meaning_vi": "nước sốt",
+    "meaning_en": "a liquid or semi-liquid served with food to add flavor",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I like tomato sauce on pasta.",
+        "vi": "Tôi thích nước sốt cà chua trên mì ý."
+      }
+    ],
+    "word_family": [
+      "saucy (adj)"
+    ],
+    "collocations": [
+      "pour sauce",
+      "sauce pan",
+      "soy sauce"
+    ],
+    "synonyms": [
+      "gravy",
+      "dressing"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I eat sauce with rice.",
+        "correct": "I eat rice with sauce.",
+        "explain_vi": "Sai trật tự từ, nên đặt 'rice' trước 'sauce'."
+      }
+    ],
+    "grammar_patterns": [
+      "a sauce",
+      "sauce (uncountable often)"
+    ]
+  },
+  {
+    "word": "portion",
+    "phonetic": "/ˈpɔːr.ʃən/",
+    "meaning_vi": "khẩu phần, phần",
+    "meaning_en": "the amount of food served to one person",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The restaurant serves generous portions.",
+        "vi": "Nhà hàng phục vụ khẩu phần hào phóng."
+      }
+    ],
+    "word_family": [
+      "portion (v)",
+      "portion control (n)"
+    ],
+    "collocations": [
+      "portion size",
+      "large portion",
+      "portion of food"
+    ],
+    "synonyms": [
+      "serving",
+      "helping"
+    ],
+    "antonyms": [
+      "whole"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I want a portion.",
+        "correct": "I want a portion of rice.",
+        "explain_vi": "Cần chỉ rõ loại thực phẩm."
+      }
+    ],
+    "grammar_patterns": [
+      "a portion of [food]",
+      "portions (plural)"
+    ]
+  },
+  {
+    "word": "leftovers",
+    "phonetic": "/ˈlef.toʊ.vərz/",
+    "meaning_vi": "thức ăn thừa",
+    "meaning_en": "food that has not been eaten and is saved for later",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We had leftovers for dinner.",
+        "vi": "Chúng tôi ăn thức ăn thừa cho bữa tối."
+      }
+    ],
+    "word_family": [
+      "leftover (adj)",
+      "leave over (v)"
+    ],
+    "collocations": [
+      "eat leftovers",
+      "leftover container",
+      "leftover food"
+    ],
+    "synonyms": [
+      "remnants",
+      "scraps"
+    ],
+    "antonyms": [
+      "fresh food"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I eat leftover for lunch.",
+        "correct": "I eat leftovers for lunch.",
+        "explain_vi": "Luôn dùng số nhiều 'leftovers'."
+      }
+    ],
+    "grammar_patterns": [
+      "leftovers (plural only)",
+      "a leftover (rare)"
+    ]
+  },
+  {
+    "word": "diet",
+    "phonetic": "/ˈdaɪ.ət/",
+    "meaning_vi": "chế độ ăn kiêng",
+    "meaning_en": "the food and drink regularly consumed, or a restricted regimen",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She is on a low-carb diet.",
+        "vi": "Cô ấy đang theo chế độ ăn ít carb."
+      }
+    ],
+    "word_family": [
+      "dietary (adj)",
+      "diet (v)",
+      "dieter (n)"
+    ],
+    "collocations": [
+      "go on a diet",
+      "balanced diet",
+      "diet plan"
+    ],
+    "synonyms": [
+      "regimen",
+      "nutrition plan"
+    ],
+    "antonyms": [
+      "overeating"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I diet to lose weight.",
+        "correct": "I am on a diet to lose weight.",
+        "explain_vi": "Dùng 'on a diet' thay vì động từ 'diet'."
+      }
+    ],
+    "grammar_patterns": [
+      "a diet",
+      "on a diet"
+    ]
+  },
+  {
+    "word": "nutrition",
+    "phonetic": "/nuːˈtrɪʃ.ən/",
+    "meaning_vi": "dinh dưỡng",
+    "meaning_en": "the process of providing or obtaining the food necessary for health and growth",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Good nutrition is important for children.",
+        "vi": "Dinh dưỡng tốt rất quan trọng cho trẻ em."
+      }
+    ],
+    "word_family": [
+      "nutritional (adj)",
+      "nutritious (adj)",
+      "nutrient (n)"
+    ],
+    "collocations": [
+      "nutrition facts",
+      "nutrition label",
+      "good nutrition"
+    ],
+    "synonyms": [
+      "nourishment",
+      "sustenance"
+    ],
+    "antonyms": [
+      "malnutrition"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I study nutrition.",
+        "correct": "I study nutrition.",
+        "explain_vi": "Không có lỗi phổ biến, nhưng không dùng số nhiều."
+      }
+    ],
+    "grammar_patterns": [
+      "nutrition (uncountable)"
+    ]
+  },
+  {
+    "word": "calorie",
+    "phonetic": "/ˈkæl.ər.i/",
+    "meaning_vi": "calo",
+    "meaning_en": "a unit of energy in food",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "This cake has 300 calories.",
+        "vi": "Cái bánh này có 300 calo."
+      }
+    ],
+    "word_family": [
+      "caloric (adj)",
+      "calorie (n)"
+    ],
+    "collocations": [
+      "calorie count",
+      "low-calorie",
+      "calorie intake"
+    ],
+    "synonyms": [
+      "energy unit"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I eat many calories.",
+        "correct": "I consume many calories.",
+        "explain_vi": "Dùng 'consume' thay vì 'eat' cho calo."
+      }
+    ],
+    "grammar_patterns": [
+      "a calorie",
+      "calories (plural)"
+    ]
+  },
+  {
+    "word": "snack",
+    "phonetic": "/snæk/",
+    "meaning_vi": "đồ ăn nhẹ",
+    "meaning_en": "a small amount of food eaten between meals",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I had a snack in the afternoon.",
+        "vi": "Tôi ăn đồ ăn nhẹ vào buổi chiều."
+      }
+    ],
+    "word_family": [
+      "snack (v)",
+      "snack bar (n)"
+    ],
+    "collocations": [
+      "have a snack",
+      "snack food",
+      "snack time"
+    ],
+    "synonyms": [
+      "bite",
+      "morsel"
+    ],
+    "antonyms": [
+      "meal"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I snack a cookie.",
+        "correct": "I snack on a cookie.",
+        "explain_vi": "Dùng 'snack on' thay vì 'snack' trực tiếp."
+      }
+    ],
+    "grammar_patterns": [
+      "a snack",
+      "snack on [food]"
+    ]
+  },
+  {
+    "word": "thirst",
+    "phonetic": "/θɜːrst/",
+    "meaning_vi": "cơn khát",
+    "meaning_en": "a feeling of needing or wanting to drink",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "After running, I had a great thirst.",
+        "vi": "Sau khi chạy, tôi rất khát."
+      }
+    ],
+    "word_family": [
+      "thirsty (adj)"
+    ],
+    "collocations": [
+      "quench thirst",
+      "suffer from thirst",
+      "thirst for"
+    ],
+    "synonyms": [
+      "dehydration",
+      "dryness"
+    ],
+    "antonyms": [
+      "satiety"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I have thirst.",
+        "correct": "I am thirsty.",
+        "explain_vi": "Dùng 'thirsty' thay vì 'thirst'."
+      }
+    ],
+    "grammar_patterns": [
+      "a thirst",
+      "thirst (uncountable usually)"
+    ]
+  },
+  {
+    "word": "appetite",
+    "phonetic": "/ˈæp.ə.taɪt/",
+    "meaning_vi": "sự thèm ăn",
+    "meaning_en": "a natural desire to eat",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I have a big appetite today.",
+        "vi": "Hôm nay tôi ăn rất ngon miệng."
+      }
+    ],
+    "word_family": [
+      "appetizer (n)",
+      "appetizing (adj)"
+    ],
+    "collocations": [
+      "have an appetite",
+      "good appetite",
+      "loss of appetite"
+    ],
+    "synonyms": [
+      "hunger",
+      "craving"
+    ],
+    "antonyms": [
+      "satiety",
+      "disgust"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I have appetite.",
+        "correct": "I have an appetite.",
+        "explain_vi": "Thiếu mạo từ 'an'."
+      }
+    ],
+    "grammar_patterns": [
+      "an appetite",
+      "appetite for [food]"
+    ]
+  },
+  {
+    "word": "ingredient",
+    "phonetic": "/ɪnˈɡriː.di.ənt/",
+    "meaning_vi": "nguyên liệu",
+    "meaning_en": "any of the foods or substances combined to make a dish",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Flour and eggs are main ingredients.",
+        "vi": "Bột mì và trứng là nguyên liệu chính."
+      }
+    ],
+    "word_family": [
+      "ingredient (n)"
+    ],
+    "collocations": [
+      "list of ingredients",
+      "key ingredient",
+      "ingredient label"
+    ],
+    "synonyms": [
+      "component",
+      "element"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I need ingredient.",
+        "correct": "I need ingredients.",
+        "explain_vi": "Thường dùng số nhiều."
+      }
+    ],
+    "grammar_patterns": [
+      "an ingredient",
+      "ingredients (plural)"
+    ]
+  },
+  {
+    "word": "recipe",
+    "phonetic": "/ˈres.ɪ.pi/",
+    "meaning_vi": "công thức nấu ăn",
+    "meaning_en": "a set of instructions for preparing a dish",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I followed the recipe for the cake.",
+        "vi": "Tôi làm theo công thức cho cái bánh."
+      }
+    ],
+    "word_family": [
+      "recipe (n)"
+    ],
+    "collocations": [
+      "recipe book",
+      "follow a recipe",
+      "recipe for success"
+    ],
+    "synonyms": [
+      "cookbook entry",
+      "formula"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have recipe.",
+        "correct": "I have a recipe.",
+        "explain_vi": "Thiếu mạo từ 'a'."
+      }
+    ],
+    "grammar_patterns": [
+      "a recipe",
+      "recipe for [dish]"
+    ]
+  },
+  {
+    "word": "serving",
+    "phonetic": "/ˈsɜːr.vɪŋ/",
+    "meaning_vi": "suất ăn, khẩu phần",
+    "meaning_en": "an amount of food for one person",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "This recipe makes four servings.",
+        "vi": "Công thức này làm được bốn suất ăn."
+      }
+    ],
+    "word_family": [
+      "serve (v)",
+      "server (n)"
+    ],
+    "collocations": [
+      "serving size",
+      "per serving",
+      "serving dish"
+    ],
+    "synonyms": [
+      "portion",
+      "helping"
+    ],
+    "antonyms": [
+      "whole"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I want a serving.",
+        "correct": "I want a serving of rice.",
+        "explain_vi": "Cần chỉ rõ loại thực phẩm."
+      }
+    ],
+    "grammar_patterns": [
+      "a serving",
+      "servings (plural)"
+    ]
+  },
+  {
+    "word": "sip",
+    "phonetic": "/sɪp/",
+    "meaning_vi": "nhấp, uống từng ngụm nhỏ",
+    "meaning_en": "to drink slowly in small amounts",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "She sipped her coffee slowly.",
+        "vi": "Cô ấy nhấp cà phê từ từ."
+      }
+    ],
+    "word_family": [
+      "sip (n)"
+    ],
+    "collocations": [
+      "sip tea",
+      "sip wine",
+      "sip slowly"
+    ],
+    "synonyms": [
+      "drink slowly"
+    ],
+    "antonyms": [
+      "gulp"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "She sips the whole glass.",
+        "correct": "She sips the wine.",
+        "explain_vi": "'Sip' chỉ uống từng ngụm nhỏ, không thể uống hết ly."
+      }
+    ],
+    "grammar_patterns": [
+      "sip + noun",
+      "sip + adverb"
+    ]
+  },
+  {
+    "word": "gulp",
+    "phonetic": "/ɡʌlp/",
+    "meaning_vi": "nuốt ực, uống hết một hơi",
+    "meaning_en": "to swallow quickly or in large amounts",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "He gulped down his beer.",
+        "vi": "Anh ấy uống hết bia một hơi."
+      }
+    ],
+    "word_family": [
+      "gulp (n)"
+    ],
+    "collocations": [
+      "gulp down",
+      "gulp air"
+    ],
+    "synonyms": [
+      "swallow"
+    ],
+    "antonyms": [
+      "sip"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "He gulped his coffee slowly.",
+        "correct": "He gulped his coffee.",
+        "explain_vi": "'Gulp' mang nghĩa nhanh, không thể dùng với 'slowly'."
+      }
+    ],
+    "grammar_patterns": [
+      "gulp + noun",
+      "gulp down + noun"
+    ]
+  },
+  {
+    "word": "chew",
+    "phonetic": "/tʃuː/",
+    "meaning_vi": "nhai",
+    "meaning_en": "to bite and grind food in the mouth",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "Chew your food thoroughly.",
+        "vi": "Nhai kỹ thức ăn của bạn."
+      }
+    ],
+    "word_family": [
+      "chew (n)",
+      "chewy (adj)"
+    ],
+    "collocations": [
+      "chew food",
+      "chew gum",
+      "chew thoroughly"
+    ],
+    "synonyms": [
+      "masticate"
+    ],
+    "antonyms": [
+      "swallow whole"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I chew my breakfast quickly.",
+        "correct": "I chew my food well.",
+        "explain_vi": "Nên dùng 'chew well' thay vì 'quickly'."
+      }
+    ],
+    "grammar_patterns": [
+      "chew + noun",
+      "chew + adverb"
+    ]
+  },
+  {
+    "word": "swallow",
+    "phonetic": "/ˈswɒl.əʊ/",
+    "meaning_vi": "nuốt",
+    "meaning_en": "to cause food or drink to pass down the throat",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "He swallowed the pill with water.",
+        "vi": "Anh ấy nuốt viên thuốc với nước."
+      }
+    ],
+    "word_family": [
+      "swallow (n)"
+    ],
+    "collocations": [
+      "swallow food",
+      "swallow medicine",
+      "swallow hard"
+    ],
+    "synonyms": [
+      "gulp"
+    ],
+    "antonyms": [
+      "spit out"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I swallowed my breakfast.",
+        "correct": "I ate my breakfast.",
+        "explain_vi": "'Swallow' chỉ hành động nuốt, không dùng cho cả bữa ăn."
+      }
+    ],
+    "grammar_patterns": [
+      "swallow + noun"
+    ]
+  },
+  {
+    "word": "spit",
+    "phonetic": "/spɪt/",
+    "meaning_vi": "nhổ",
+    "meaning_en": "to force liquid or food out of the mouth",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "Don't spit on the floor.",
+        "vi": "Đừng nhổ ra sàn."
+      }
+    ],
+    "word_family": [
+      "spit (n)",
+      "spittle (n)"
+    ],
+    "collocations": [
+      "spit out",
+      "spit food"
+    ],
+    "synonyms": [
+      "expectorate"
+    ],
+    "antonyms": [
+      "swallow"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "He spat the food into the napkin.",
+        "correct": "He spat out the food.",
+        "explain_vi": "Thường dùng 'spit out' thay vì 'spit into'."
+      }
+    ],
+    "grammar_patterns": [
+      "spit + adverb",
+      "spit out + noun"
+    ]
+  },
+  {
+    "word": "bite",
+    "phonetic": "/baɪt/",
+    "meaning_vi": "cắn, miếng cắn",
+    "meaning_en": "to cut or grip with teeth; a small amount of food",
+    "pos": "verb/noun",
+    "examples": [
+      {
+        "en": "He took a bite of the apple.",
+        "vi": "Anh ấy cắn một miếng táo."
+      }
+    ],
+    "word_family": [
+      "bite (n)",
+      "biter (n)"
+    ],
+    "collocations": [
+      "take a bite",
+      "bite into",
+      "bite off"
+    ],
+    "synonyms": [
+      "nibble",
+      "chomp"
+    ],
+    "antonyms": [
+      "gulp"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I bite my lunch.",
+        "correct": "I take a bite of my lunch.",
+        "explain_vi": "Không dùng 'bite' như động từ cho cả bữa."
+      }
+    ],
+    "grammar_patterns": [
+      "bite + noun",
+      "take a bite of + noun"
+    ]
+  },
+  {
+    "word": "nibble",
+    "phonetic": "/ˈnɪb.əl/",
+    "meaning_vi": "gặm, nhấm nháp",
+    "meaning_en": "to take small bites",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "The rabbit nibbled a carrot.",
+        "vi": "Con thỏ gặm cà rốt."
+      }
+    ],
+    "word_family": [
+      "nibble (n)",
+      "nibbler (n)"
+    ],
+    "collocations": [
+      "nibble on",
+      "nibble at"
+    ],
+    "synonyms": [
+      "gnaw",
+      "peck"
+    ],
+    "antonyms": [
+      "devour"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I nibbled my whole sandwich.",
+        "correct": "I nibbled on my sandwich.",
+        "explain_vi": "Dùng 'nibble on' để chỉ ăn từ từ."
+      }
+    ],
+    "grammar_patterns": [
+      "nibble + noun",
+      "nibble on + noun"
+    ]
+  },
+  {
+    "word": "devour",
+    "phonetic": "/dɪˈvaʊər/",
+    "meaning_vi": "ngấu nghiến, ăn ngấu ăn nghiến",
+    "meaning_en": "to eat quickly and greedily",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "The hungry boy devoured his dinner.",
+        "vi": "Cậu bé đói ngấu nghiến bữa tối."
+      }
+    ],
+    "word_family": [
+      "devourer (n)"
+    ],
+    "collocations": [
+      "devour food",
+      "devour a meal"
+    ],
+    "synonyms": [
+      "gobble",
+      "wolf down"
+    ],
+    "antonyms": [
+      "nibble"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I devoured my breakfast slowly.",
+        "correct": "I devoured my breakfast.",
+        "explain_vi": "'Devour' mang nghĩa nhanh, không dùng với 'slowly'."
+      }
+    ],
+    "grammar_patterns": [
+      "devour + noun"
+    ]
+  },
+  {
+    "word": "gobble",
+    "phonetic": "/ˈɡɒb.əl/",
+    "meaning_vi": "ăn ngấu nghiến",
+    "meaning_en": "to eat quickly and noisily",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "He gobbled up his food in minutes.",
+        "vi": "Anh ấy ngấu nghiến thức ăn trong vài phút."
+      }
+    ],
+    "word_family": [
+      "gobble (n)",
+      "gobbler (n)"
+    ],
+    "collocations": [
+      "gobble up",
+      "gobble down"
+    ],
+    "synonyms": [
+      "devour",
+      "gulp"
+    ],
+    "antonyms": [
+      "nibble"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "She gobbled her soup.",
+        "correct": "She gobbled up her food.",
+        "explain_vi": "Dùng 'gobble up' với thức ăn đặc, không phải soup."
+      }
+    ],
+    "grammar_patterns": [
+      "gobble + noun",
+      "gobble up + noun"
+    ]
+  },
+  {
+    "word": "lick",
+    "phonetic": "/lɪk/",
+    "meaning_vi": "liếm",
+    "meaning_en": "to pass the tongue over a surface",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "The dog licked its bowl clean.",
+        "vi": "Con chó liếm sạch bát."
+      }
+    ],
+    "word_family": [
+      "lick (n)",
+      "licking (n)"
+    ],
+    "collocations": [
+      "lick off",
+      "lick clean"
+    ],
+    "synonyms": [
+      "lap"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I licked my ice cream slowly.",
+        "correct": "I licked my ice cream.",
+        "explain_vi": "Có thể dùng 'lick' với kem, nhưng thường là liếm bề mặt."
+      }
+    ],
+    "grammar_patterns": [
+      "lick + noun",
+      "lick + adjective"
+    ]
+  },
+  {
+    "word": "stir",
+    "phonetic": "/stɜːr/",
+    "meaning_vi": "khuấy, quấy",
+    "meaning_en": "to mix a liquid or food by moving a spoon around",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "Stir the soup occasionally.",
+        "vi": "Thỉnh thoảng khuấy súp."
+      }
+    ],
+    "word_family": [
+      "stir (n)",
+      "stirrer (n)"
+    ],
+    "collocations": [
+      "stir well",
+      "stir in",
+      "stir constantly"
+    ],
+    "synonyms": [
+      "mix",
+      "whisk"
+    ],
+    "antonyms": [
+      "leave still"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Stir the water fast.",
+        "correct": "Stir the soup.",
+        "explain_vi": "Thường dùng 'stir' với thức ăn lỏng."
+      }
+    ],
+    "grammar_patterns": [
+      "stir + noun",
+      "stir + adverb"
+    ]
+  },
+  {
+    "word": "whisk",
+    "phonetic": "/wɪsk/",
+    "meaning_vi": "đánh (trứng, kem) bằng máy đánh trứng",
+    "meaning_en": "to beat or stir rapidly with a whisk or fork",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "Whisk the eggs until fluffy.",
+        "vi": "Đánh trứng cho đến khi bông lên."
+      }
+    ],
+    "word_family": [
+      "whisk (n)",
+      "whisker (n)"
+    ],
+    "collocations": [
+      "whisk together",
+      "whisk in"
+    ],
+    "synonyms": [
+      "beat",
+      "whip"
+    ],
+    "antonyms": [
+      "stir slowly"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Whisk the soup.",
+        "correct": "Whisk the eggs.",
+        "explain_vi": "'Whisk' thường dùng cho trứng, kem, không phải súp."
+      }
+    ],
+    "grammar_patterns": [
+      "whisk + noun",
+      "whisk + adverb"
+    ]
+  },
+  {
+    "word": "knead",
+    "phonetic": "/niːd/",
+    "meaning_vi": "nhào (bột)",
+    "meaning_en": "to work dough or clay by pressing and folding",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "Knead the dough for ten minutes.",
+        "vi": "Nhào bột trong mười phút."
+      }
+    ],
+    "word_family": [
+      "kneader (n)"
+    ],
+    "collocations": [
+      "knead dough",
+      "knead well"
+    ],
+    "synonyms": [
+      "work",
+      "pound"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Knead the bread.",
+        "correct": "Knead the dough.",
+        "explain_vi": "Nhào bột trước khi nướng, không phải nhào bánh mì."
+      }
+    ],
+    "grammar_patterns": [
+      "knead + noun"
+    ]
+  },
+  {
+    "word": "dough",
+    "phonetic": "/dəʊ/",
+    "meaning_vi": "bột nhào",
+    "meaning_en": "a mixture of flour and water used for baking",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The dough is ready for baking.",
+        "vi": "Bột nhào đã sẵn sàng để nướng."
+      }
+    ],
+    "word_family": [
+      "doughy (adj)"
+    ],
+    "collocations": [
+      "knead dough",
+      "roll dough",
+      "rise dough"
+    ],
+    "synonyms": [
+      "paste",
+      "batter"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I made a dough for cake.",
+        "correct": "I made dough for bread.",
+        "explain_vi": "Thường dùng 'dough' cho bánh mì, 'batter' cho bánh ngọt."
+      }
+    ],
+    "grammar_patterns": [
+      "make dough",
+      "prepare dough"
+    ]
+  },
+  {
+    "word": "batter",
+    "phonetic": "/ˈbæt.ər/",
+    "meaning_vi": "bột nhão (để chiên, nướng)",
+    "meaning_en": "a mixture of flour, eggs, and milk used in cooking",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Pour the batter into the pan.",
+        "vi": "Đổ bột nhão vào chảo."
+      }
+    ],
+    "word_family": [
+      "batter (v)"
+    ],
+    "collocations": [
+      "pancake batter",
+      "cake batter",
+      "pour batter"
+    ],
+    "synonyms": [
+      "mixture"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Knead the batter.",
+        "correct": "Pour the batter.",
+        "explain_vi": "'Batter' là lỏng, không nhào được."
+      }
+    ],
+    "grammar_patterns": [
+      "mix batter",
+      "pour batter"
+    ]
+  },
+  {
+    "word": "dice",
+    "phonetic": "/daɪs/",
+    "meaning_vi": "cắt hạt lựu",
+    "meaning_en": "to cut food into small cubes",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "Dice the onions finely.",
+        "vi": "Cắt hành tây thành hạt lựu nhỏ."
+      }
+    ],
+    "word_family": [
+      "dice (n)",
+      "dicer (n)"
+    ],
+    "collocations": [
+      "dice vegetables",
+      "dice finely"
+    ],
+    "synonyms": [
+      "cube",
+      "chop"
+    ],
+    "antonyms": [
+      "slice"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Dice the meat into slices.",
+        "correct": "Dice the meat into cubes.",
+        "explain_vi": "'Dice' là cắt hạt lựu, không phải lát."
+      }
+    ],
+    "grammar_patterns": [
+      "dice + noun",
+      "dice + adverb"
+    ]
+  },
+  {
+    "word": "mince",
+    "phonetic": "/mɪns/",
+    "meaning_vi": "băm nhỏ",
+    "meaning_en": "to cut food into very small pieces",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "Mince the garlic before adding.",
+        "vi": "Băm nhỏ tỏi trước khi cho vào."
+      }
+    ],
+    "word_family": [
+      "mince (n)",
+      "mincer (n)"
+    ],
+    "collocations": [
+      "mince meat",
+      "mince finely"
+    ],
+    "synonyms": [
+      "grind",
+      "chop"
+    ],
+    "antonyms": [
+      "dice"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Mince the onion into cubes.",
+        "correct": "Mince the onion into small pieces.",
+        "explain_vi": "'Mince' là băm nhỏ, không phải cắt hạt lựu."
+      }
+    ],
+    "grammar_patterns": [
+      "mince + noun"
+    ]
+  },
+  {
+    "word": "grate",
+    "phonetic": "/ɡreɪt/",
+    "meaning_vi": "nạo (vỏ, phô mai)",
+    "meaning_en": "to shred food by rubbing against a grater",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "Grate some cheese on top.",
+        "vi": "Nạo một ít phô mai lên trên."
+      }
+    ],
+    "word_family": [
+      "grater (n)",
+      "grated (adj)"
+    ],
+    "collocations": [
+      "grate cheese",
+      "grate lemon zest"
+    ],
+    "synonyms": [
+      "shred"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Grate the carrot into slices.",
+        "correct": "Grate the carrot into shreds.",
+        "explain_vi": "'Grate' là nạo sợi, không phải cắt lát."
+      }
+    ],
+    "grammar_patterns": [
+      "grate + noun"
+    ]
+  },
+  {
+    "word": "peel",
+    "phonetic": "/piːl/",
+    "meaning_vi": "gọt vỏ, bóc vỏ",
+    "meaning_en": "to remove the skin of a fruit or vegetable",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "Peel the potatoes before boiling.",
+        "vi": "Gọt vỏ khoai tây trước khi luộc."
+      }
+    ],
+    "word_family": [
+      "peel (n)",
+      "peeler (n)"
+    ],
+    "collocations": [
+      "peel an apple",
+      "peel off"
+    ],
+    "synonyms": [
+      "skin",
+      "pare"
+    ],
+    "antonyms": [
+      "leave unpeeled"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Peel the banana with a knife.",
+        "correct": "Peel the banana by hand.",
+        "explain_vi": "Chuối thường bóc bằng tay, không dùng dao."
+      }
+    ],
+    "grammar_patterns": [
+      "peel + noun"
+    ]
+  },
+  {
+    "word": "slice",
+    "phonetic": "/slaɪs/",
+    "meaning_vi": "cắt lát",
+    "meaning_en": "to cut into thin, flat pieces",
+    "pos": "verb/noun",
+    "examples": [
+      {
+        "en": "Slice the bread thinly.",
+        "vi": "Cắt bánh mì thành lát mỏng."
+      }
+    ],
+    "word_family": [
+      "slice (n)",
+      "slicer (n)"
+    ],
+    "collocations": [
+      "slice of cake",
+      "slice up",
+      "thinly slice"
+    ],
+    "synonyms": [
+      "cut",
+      "carve"
+    ],
+    "antonyms": [
+      "dice"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Slice the onion into cubes.",
+        "correct": "Slice the onion into rings.",
+        "explain_vi": "'Slice' là lát mỏng, không phải hạt lựu."
+      }
+    ],
+    "grammar_patterns": [
+      "slice + noun",
+      "slice + adverb"
+    ]
+  }
+]

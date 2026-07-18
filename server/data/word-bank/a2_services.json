@@ -1,0 +1,2593 @@
+[
+  {
+    "word": "service",
+    "phonetic": "/ˈsɜːrvɪs/",
+    "meaning_vi": "dịch vụ",
+    "meaning_en": "a system that provides something the public needs",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The service in this hotel is excellent.",
+        "vi": "Dịch vụ ở khách sạn này rất tuyệt vời."
+      },
+      {
+        "en": "We offer free delivery service.",
+        "vi": "Chúng tôi cung cấp dịch vụ giao hàng miễn phí."
+      }
+    ],
+    "word_family": [
+      "serve (v)",
+      "server (n)"
+    ],
+    "collocations": [
+      "customer service",
+      "room service",
+      "service charge"
+    ],
+    "synonyms": [
+      "assistance",
+      "support"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I need a service.",
+        "correct": "I need some service.",
+        "explain_vi": "Dùng 'some' thay vì 'a' với danh từ không đếm được."
+      }
+    ],
+    "grammar_patterns": [
+      "service + noun (e.g., service industry)",
+      "adjective + service"
+    ]
+  },
+  {
+    "word": "delivery",
+    "phonetic": "/dɪˈlɪvəri/",
+    "meaning_vi": "giao hàng",
+    "meaning_en": "the act of taking goods to a place",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The delivery will take two days.",
+        "vi": "Việc giao hàng sẽ mất hai ngày."
+      },
+      {
+        "en": "We offer free delivery for orders over $50.",
+        "vi": "Chúng tôi giao hàng miễn phí cho đơn hàng trên 50 đô la."
+      }
+    ],
+    "word_family": [
+      "deliver (v)",
+      "deliverable (adj)"
+    ],
+    "collocations": [
+      "food delivery",
+      "delivery time",
+      "delivery service"
+    ],
+    "synonyms": [
+      "shipment",
+      "distribution"
+    ],
+    "antonyms": [
+      "pickup"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "The deliver is fast.",
+        "correct": "The delivery is fast.",
+        "explain_vi": "Nhầm 'deliver' (động từ) với 'delivery' (danh từ)."
+      }
+    ],
+    "grammar_patterns": [
+      "delivery + noun (e.g., delivery man)",
+      "adjective + delivery"
+    ]
+  },
+  {
+    "word": "appointment",
+    "phonetic": "/əˈpɔɪntmənt/",
+    "meaning_vi": "cuộc hẹn",
+    "meaning_en": "a time arranged to meet someone",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I have a doctor's appointment at 3 PM.",
+        "vi": "Tôi có cuộc hẹn với bác sĩ lúc 3 giờ chiều."
+      },
+      {
+        "en": "Please call to make an appointment.",
+        "vi": "Vui lòng gọi để đặt lịch hẹn."
+      }
+    ],
+    "word_family": [
+      "appoint (v)",
+      "appointed (adj)"
+    ],
+    "collocations": [
+      "make an appointment",
+      "appointment book",
+      "dentist appointment"
+    ],
+    "synonyms": [
+      "meeting",
+      "booking"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have appointment.",
+        "correct": "I have an appointment.",
+        "explain_vi": "Thiếu mạo từ 'an' trước danh từ đếm được số ít."
+      }
+    ],
+    "grammar_patterns": [
+      "have + an appointment",
+      "make + an appointment"
+    ]
+  },
+  {
+    "word": "repair",
+    "phonetic": "/rɪˈper/",
+    "meaning_vi": "sửa chữa",
+    "meaning_en": "to fix something that is broken",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "Can you repair my phone?",
+        "vi": "Bạn có thể sửa điện thoại của tôi không?"
+      },
+      {
+        "en": "The repair cost $100.",
+        "vi": "Chi phí sửa chữa là 100 đô la."
+      }
+    ],
+    "word_family": [
+      "repairer (n)",
+      "repairable (adj)"
+    ],
+    "collocations": [
+      "car repair",
+      "repair shop",
+      "need repair"
+    ],
+    "synonyms": [
+      "fix",
+      "mend"
+    ],
+    "antonyms": [
+      "break",
+      "damage"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I need to repair my car at a repair.",
+        "correct": "I need to repair my car at a repair shop.",
+        "explain_vi": "Thiếu từ 'shop' sau 'repair' khi nói về địa điểm."
+      }
+    ],
+    "grammar_patterns": [
+      "repair + object",
+      "get + object + repaired"
+    ]
+  },
+  {
+    "word": "bill",
+    "phonetic": "/bɪl/",
+    "meaning_vi": "hóa đơn",
+    "meaning_en": "a statement of money owed for goods or services",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Can I have the bill, please?",
+        "vi": "Cho tôi xin hóa đơn được không?"
+      },
+      {
+        "en": "The electricity bill is high this month.",
+        "vi": "Hóa đơn tiền điện tháng này cao."
+      }
+    ],
+    "word_family": [
+      "bill (v)",
+      "billing (n)"
+    ],
+    "collocations": [
+      "pay the bill",
+      "bill payment",
+      "utility bill"
+    ],
+    "synonyms": [
+      "invoice",
+      "check"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I need to pay bill.",
+        "correct": "I need to pay the bill.",
+        "explain_vi": "Thiếu mạo từ 'the' trước 'bill'."
+      }
+    ],
+    "grammar_patterns": [
+      "pay + the bill",
+      "get + the bill"
+    ]
+  },
+  {
+    "word": "menu",
+    "phonetic": "/ˈmenjuː/",
+    "meaning_vi": "thực đơn",
+    "meaning_en": "a list of dishes available in a restaurant",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Let's look at the menu.",
+        "vi": "Hãy xem thực đơn."
+      },
+      {
+        "en": "The menu has many options.",
+        "vi": "Thực đơn có nhiều lựa chọn."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "check the menu",
+      "menu item",
+      "daily menu"
+    ],
+    "synonyms": [
+      "list"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I want to see menu.",
+        "correct": "I want to see the menu.",
+        "explain_vi": "Thiếu mạo từ 'the'."
+      }
+    ],
+    "grammar_patterns": [
+      "the + menu",
+      "on the menu"
+    ]
+  },
+  {
+    "word": "order",
+    "phonetic": "/ˈɔːrdər/",
+    "meaning_vi": "đặt hàng / gọi món",
+    "meaning_en": "to request something to be made or delivered",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "I would like to order a pizza.",
+        "vi": "Tôi muốn gọi một cái pizza."
+      },
+      {
+        "en": "Please order online.",
+        "vi": "Vui lòng đặt hàng trực tuyến."
+      }
+    ],
+    "word_family": [
+      "order (n)",
+      "ordering (n)"
+    ],
+    "collocations": [
+      "place an order",
+      "order food",
+      "order online"
+    ],
+    "synonyms": [
+      "request",
+      "book"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I want order a coffee.",
+        "correct": "I want to order a coffee.",
+        "explain_vi": "Thiếu 'to' trước động từ 'order'."
+      }
+    ],
+    "grammar_patterns": [
+      "order + object",
+      "order from + place"
+    ]
+  },
+  {
+    "word": "customer",
+    "phonetic": "/ˈkʌstəmər/",
+    "meaning_vi": "khách hàng",
+    "meaning_en": "a person who buys goods or services",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The customer is always right.",
+        "vi": "Khách hàng luôn luôn đúng."
+      },
+      {
+        "en": "We have many satisfied customers.",
+        "vi": "Chúng tôi có nhiều khách hàng hài lòng."
+      }
+    ],
+    "word_family": [
+      "custom (n)",
+      "customize (v)"
+    ],
+    "collocations": [
+      "customer service",
+      "regular customer",
+      "customer satisfaction"
+    ],
+    "synonyms": [
+      "client",
+      "buyer"
+    ],
+    "antonyms": [
+      "seller",
+      "provider"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I am a custom.",
+        "correct": "I am a customer.",
+        "explain_vi": "Nhầm 'custom' (phong tục) với 'customer' (khách hàng)."
+      }
+    ],
+    "grammar_patterns": [
+      "customer + noun (e.g., customer service)",
+      "adjective + customer"
+    ]
+  },
+  {
+    "word": "check-in",
+    "phonetic": "/ˈtʃek.ɪn/",
+    "meaning_vi": "làm thủ tục nhận phòng / đăng ký",
+    "meaning_en": "the process of registering at a hotel or airport",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Check-in is at 2 PM.",
+        "vi": "Giờ nhận phòng là 2 giờ chiều."
+      },
+      {
+        "en": "We need to do online check-in.",
+        "vi": "Chúng tôi cần làm thủ tục trực tuyến."
+      }
+    ],
+    "word_family": [
+      "check in (v)"
+    ],
+    "collocations": [
+      "check-in time",
+      "check-in counter",
+      "online check-in"
+    ],
+    "synonyms": [
+      "registration"
+    ],
+    "antonyms": [
+      "check-out"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I need to check in at the check in.",
+        "correct": "I need to check in at the check-in counter.",
+        "explain_vi": "Thiếu từ 'counter' sau 'check-in'."
+      }
+    ],
+    "grammar_patterns": [
+      "check-in + noun (e.g., check-in desk)",
+      "do + check-in"
+    ]
+  },
+  {
+    "word": "check-out",
+    "phonetic": "/ˈtʃek.aʊt/",
+    "meaning_vi": "trả phòng / thanh toán",
+    "meaning_en": "the process of leaving a hotel or paying for goods",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Check-out is at 11 AM.",
+        "vi": "Giờ trả phòng là 11 giờ sáng."
+      },
+      {
+        "en": "Please proceed to the check-out counter.",
+        "vi": "Vui lòng đến quầy thanh toán."
+      }
+    ],
+    "word_family": [
+      "check out (v)"
+    ],
+    "collocations": [
+      "check-out time",
+      "check-out counter",
+      "late check-out"
+    ],
+    "synonyms": [
+      "payment",
+      "departure"
+    ],
+    "antonyms": [
+      "check-in"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I will check out at check out.",
+        "correct": "I will check out at the check-out counter.",
+        "explain_vi": "Thiếu từ 'counter'."
+      }
+    ],
+    "grammar_patterns": [
+      "check-out + noun",
+      "do + check-out"
+    ]
+  },
+  {
+    "word": "reservation",
+    "phonetic": "/ˌrezərˈveɪʃn/",
+    "meaning_vi": "đặt chỗ",
+    "meaning_en": "an arrangement to have something held for you",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I have a reservation for two.",
+        "vi": "Tôi có đặt chỗ cho hai người."
+      },
+      {
+        "en": "Please confirm your reservation.",
+        "vi": "Vui lòng xác nhận đặt chỗ của bạn."
+      }
+    ],
+    "word_family": [
+      "reserve (v)",
+      "reserved (adj)"
+    ],
+    "collocations": [
+      "make a reservation",
+      "reservation number",
+      "table reservation"
+    ],
+    "synonyms": [
+      "booking"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have reservation.",
+        "correct": "I have a reservation.",
+        "explain_vi": "Thiếu mạo từ 'a'."
+      }
+    ],
+    "grammar_patterns": [
+      "have + a reservation",
+      "make + a reservation"
+    ]
+  },
+  {
+    "word": "receipt",
+    "phonetic": "/rɪˈsiːt/",
+    "meaning_vi": "biên lai, hóa đơn",
+    "meaning_en": "a document showing payment",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Please keep your receipt.",
+        "vi": "Vui lòng giữ biên lai của bạn."
+      },
+      {
+        "en": "Can I have a receipt, please?",
+        "vi": "Cho tôi xin biên lai được không?"
+      }
+    ],
+    "word_family": [
+      "receive (v)",
+      "receivable (adj)"
+    ],
+    "collocations": [
+      "keep the receipt",
+      "receipt number",
+      "sales receipt"
+    ],
+    "synonyms": [
+      "invoice",
+      "bill"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I need a recipe.",
+        "correct": "I need a receipt.",
+        "explain_vi": "Nhầm 'recipe' (công thức nấu ăn) với 'receipt' (biên lai)."
+      }
+    ],
+    "grammar_patterns": [
+      "a + receipt",
+      "get + a receipt"
+    ]
+  },
+  {
+    "word": "laundry",
+    "phonetic": "/ˈlɔːndri/",
+    "meaning_vi": "giặt ủi",
+    "meaning_en": "clothes that need washing or have been washed",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I need to do my laundry.",
+        "vi": "Tôi cần giặt đồ."
+      },
+      {
+        "en": "The hotel has a laundry service.",
+        "vi": "Khách sạn có dịch vụ giặt ủi."
+      }
+    ],
+    "word_family": [
+      "launder (v)",
+      "laundromat (n)"
+    ],
+    "collocations": [
+      "do laundry",
+      "laundry room",
+      "laundry service"
+    ],
+    "synonyms": [
+      "washing"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I need to wash laundry.",
+        "correct": "I need to do laundry.",
+        "explain_vi": "Dùng 'do laundry' thay vì 'wash laundry'."
+      }
+    ],
+    "grammar_patterns": [
+      "do + laundry",
+      "laundry + noun (e.g., laundry basket)"
+    ]
+  },
+  {
+    "word": "tip",
+    "phonetic": "/tɪp/",
+    "meaning_vi": "tiền boa",
+    "meaning_en": "extra money given to a server for good service",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We left a tip for the waiter.",
+        "vi": "Chúng tôi đã để lại tiền boa cho người phục vụ."
+      },
+      {
+        "en": "Is the tip included?",
+        "vi": "Tiền boa đã bao gồm chưa?"
+      }
+    ],
+    "word_family": [
+      "tip (v)",
+      "tipping (n)"
+    ],
+    "collocations": [
+      "leave a tip",
+      "tip jar",
+      "generous tip"
+    ],
+    "synonyms": [
+      "gratuity"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I give tip.",
+        "correct": "I give a tip.",
+        "explain_vi": "Thiếu mạo từ 'a'."
+      }
+    ],
+    "grammar_patterns": [
+      "leave + a tip",
+      "give + a tip"
+    ]
+  },
+  {
+    "word": "complaint",
+    "phonetic": "/kəmˈpleɪnt/",
+    "meaning_vi": "khiếu nại, phàn nàn",
+    "meaning_en": "a statement of dissatisfaction",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I have a complaint about the service.",
+        "vi": "Tôi có khiếu nại về dịch vụ."
+      },
+      {
+        "en": "Please file a complaint if you are not happy.",
+        "vi": "Vui lòng gửi khiếu nại nếu bạn không hài lòng."
+      }
+    ],
+    "word_family": [
+      "complain (v)",
+      "complaining (adj)"
+    ],
+    "collocations": [
+      "make a complaint",
+      "complaint form",
+      "customer complaint"
+    ],
+    "synonyms": [
+      "grievance",
+      "objection"
+    ],
+    "antonyms": [
+      "compliment",
+      "praise"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I have complaint.",
+        "correct": "I have a complaint.",
+        "explain_vi": "Thiếu mạo từ 'a'."
+      }
+    ],
+    "grammar_patterns": [
+      "have + a complaint",
+      "make + a complaint"
+    ]
+  },
+  {
+    "word": "queue",
+    "phonetic": "/kjuː/",
+    "meaning_vi": "hàng đợi",
+    "meaning_en": "a line of people waiting for something",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "There is a long queue at the bank.",
+        "vi": "Có một hàng đợi dài ở ngân hàng."
+      },
+      {
+        "en": "Please stand in the queue.",
+        "vi": "Vui lòng đứng xếp hàng."
+      }
+    ],
+    "word_family": [
+      "queue (v)",
+      "queuing (n)"
+    ],
+    "collocations": [
+      "stand in a queue",
+      "queue up",
+      "queue system"
+    ],
+    "synonyms": [
+      "line",
+      "waiting line"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I wait in queue.",
+        "correct": "I wait in a queue.",
+        "explain_vi": "Thiếu mạo từ 'a'."
+      }
+    ],
+    "grammar_patterns": [
+      "in + a queue",
+      "join + a queue"
+    ]
+  },
+  {
+    "word": "refund",
+    "phonetic": "/ˈriːfʌnd/",
+    "meaning_vi": "hoàn tiền",
+    "meaning_en": "money returned to a customer for a returned item",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I want a full refund.",
+        "vi": "Tôi muốn được hoàn lại toàn bộ tiền."
+      },
+      {
+        "en": "The store gave me a refund.",
+        "vi": "Cửa hàng đã hoàn tiền cho tôi."
+      }
+    ],
+    "word_family": [
+      "refund (v)",
+      "refundable (adj)"
+    ],
+    "collocations": [
+      "get a refund",
+      "refund policy",
+      "full refund"
+    ],
+    "synonyms": [
+      "reimbursement",
+      "repayment"
+    ],
+    "antonyms": [
+      "payment",
+      "charge"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I need refund.",
+        "correct": "I need a refund.",
+        "explain_vi": "Thiếu mạo từ 'a'."
+      }
+    ],
+    "grammar_patterns": [
+      "get + a refund",
+      "ask for + a refund"
+    ]
+  },
+  {
+    "word": "exchange",
+    "phonetic": "/ɪksˈtʃeɪndʒ/",
+    "meaning_vi": "đổi trả",
+    "meaning_en": "to give something and receive something else in return",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "Can I exchange this shirt for a smaller size?",
+        "vi": "Tôi có thể đổi cái áo này sang size nhỏ hơn không?"
+      },
+      {
+        "en": "The store allows exchanges within 30 days.",
+        "vi": "Cửa hàng cho phép đổi trả trong vòng 30 ngày."
+      }
+    ],
+    "word_family": [
+      "exchange (n)",
+      "exchangeable (adj)"
+    ],
+    "collocations": [
+      "exchange rate",
+      "exchange policy",
+      "exchange goods"
+    ],
+    "synonyms": [
+      "swap",
+      "trade"
+    ],
+    "antonyms": [
+      "keep",
+      "return"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I want exchange this.",
+        "correct": "I want to exchange this.",
+        "explain_vi": "Thiếu 'to' trước động từ."
+      }
+    ],
+    "grammar_patterns": [
+      "exchange + object + for + object",
+      "exchange + noun"
+    ]
+  },
+  {
+    "word": "complimentary",
+    "phonetic": "/ˌkɒmplɪˈmentri/",
+    "meaning_vi": "miễn phí",
+    "meaning_en": "given free of charge",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "Breakfast is complimentary.",
+        "vi": "Bữa sáng miễn phí."
+      },
+      {
+        "en": "We offer complimentary Wi-Fi.",
+        "vi": "Chúng tôi cung cấp Wi-Fi miễn phí."
+      }
+    ],
+    "word_family": [
+      "compliment (n)",
+      "compliment (v)"
+    ],
+    "collocations": [
+      "complimentary breakfast",
+      "complimentary service",
+      "complimentary ticket"
+    ],
+    "synonyms": [
+      "free",
+      "gratis"
+    ],
+    "antonyms": [
+      "paid",
+      "chargeable"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "This is compliment.",
+        "correct": "This is complimentary.",
+        "explain_vi": "Nhầm 'compliment' (lời khen) với 'complimentary' (miễn phí)."
+      }
+    ],
+    "grammar_patterns": [
+      "complimentary + noun",
+      "be + complimentary"
+    ]
+  },
+  {
+    "word": "available",
+    "phonetic": "/əˈveɪləbl/",
+    "meaning_vi": "có sẵn, khả dụng",
+    "meaning_en": "able to be used or obtained",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "Is this table available?",
+        "vi": "Bàn này còn trống không?"
+      },
+      {
+        "en": "The service is available 24/7.",
+        "vi": "Dịch vụ có sẵn 24/7."
+      }
+    ],
+    "word_family": [
+      "availability (n)",
+      "unavailable (adj)"
+    ],
+    "collocations": [
+      "available now",
+      "available online",
+      "available in store"
+    ],
+    "synonyms": [
+      "accessible",
+      "obtainable"
+    ],
+    "antonyms": [
+      "unavailable",
+      "occupied"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I am available for service.",
+        "correct": "The service is available.",
+        "explain_vi": "Dùng sai chủ ngữ; 'available' thường dùng cho đồ vật/dịch vụ."
+      }
+    ],
+    "grammar_patterns": [
+      "be + available",
+      "available + noun"
+    ]
+  },
+  {
+    "word": "menu",
+    "phonetic": "/ˈmen.juː/",
+    "meaning_vi": "thực đơn",
+    "meaning_en": "a list of food and drinks available in a restaurant",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Can I see the menu?",
+        "vi": "Tôi có thể xem thực đơn không?"
+      },
+      {
+        "en": "The menu has many options.",
+        "vi": "Thực đơn có nhiều lựa chọn."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "look at the menu",
+      "order from the menu",
+      "menu item"
+    ],
+    "synonyms": [
+      "bill of fare"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I want menu",
+        "correct": "I want the menu",
+        "explain_vi": "Cần mạo từ 'the' trước 'menu'"
+      }
+    ],
+    "grammar_patterns": [
+      "the menu",
+      "a menu"
+    ]
+  },
+  {
+    "word": "order",
+    "phonetic": "/ˈɔːr.dər/",
+    "meaning_vi": "gọi món; đặt hàng",
+    "meaning_en": "to ask for food or goods to be served or sent",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "I would like to order a pizza.",
+        "vi": "Tôi muốn gọi một cái pizza."
+      },
+      {
+        "en": "She ordered coffee.",
+        "vi": "Cô ấy đã gọi cà phê."
+      }
+    ],
+    "word_family": [
+      "order (n)"
+    ],
+    "collocations": [
+      "place an order",
+      "order food",
+      "order online"
+    ],
+    "synonyms": [
+      "request"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I order a coffee please.",
+        "correct": "I would like to order a coffee, please.",
+        "explain_vi": "Lịch sự hơn khi dùng 'would like to'"
+      }
+    ],
+    "grammar_patterns": [
+      "order + noun",
+      "order + to + infinitive"
+    ]
+  },
+  {
+    "word": "customer",
+    "phonetic": "/ˈkʌs.tə.mər/",
+    "meaning_vi": "khách hàng",
+    "meaning_en": "a person who buys goods or services",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The customer is always right.",
+        "vi": "Khách hàng luôn đúng."
+      },
+      {
+        "en": "We have many loyal customers.",
+        "vi": "Chúng tôi có nhiều khách hàng trung thành."
+      }
+    ],
+    "word_family": [
+      "custom (n)",
+      "customize (v)"
+    ],
+    "collocations": [
+      "customer service",
+      "regular customer",
+      "customer satisfaction"
+    ],
+    "synonyms": [
+      "client",
+      "buyer"
+    ],
+    "antonyms": [
+      "seller"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I am a customer of this shop.",
+        "correct": "I am a customer at this shop.",
+        "explain_vi": "Dùng 'at' thay vì 'of' khi nói đến cửa hàng"
+      }
+    ],
+    "grammar_patterns": [
+      "a customer",
+      "the customer"
+    ]
+  },
+  {
+    "word": "check-in",
+    "phonetic": "/ˈtʃek.ɪn/",
+    "meaning_vi": "làm thủ tục nhận phòng (khách sạn); làm thủ tục lên máy bay",
+    "meaning_en": "the act of reporting your arrival at a hotel or airport",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Check-in is at 2 PM.",
+        "vi": "Giờ nhận phòng là 2 giờ chiều."
+      },
+      {
+        "en": "We did online check-in.",
+        "vi": "Chúng tôi đã làm thủ tục trực tuyến."
+      }
+    ],
+    "word_family": [
+      "check in (v)"
+    ],
+    "collocations": [
+      "check-in counter",
+      "check-in time",
+      "online check-in"
+    ],
+    "synonyms": [
+      "arrival"
+    ],
+    "antonyms": [
+      "check-out"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I check-in at hotel.",
+        "correct": "I check in at the hotel.",
+        "explain_vi": "Cần mạo từ 'the' và 'check in' là động từ, 'check-in' là danh từ"
+      }
+    ],
+    "grammar_patterns": [
+      "check-in + noun",
+      "do check-in"
+    ]
+  },
+  {
+    "word": "check-out",
+    "phonetic": "/ˈtʃek.aʊt/",
+    "meaning_vi": "trả phòng (khách sạn); thanh toán (siêu thị)",
+    "meaning_en": "the act of leaving a hotel after paying or paying for goods in a store",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Check-out is at 11 AM.",
+        "vi": "Giờ trả phòng là 11 giờ sáng."
+      },
+      {
+        "en": "Please proceed to check-out.",
+        "vi": "Vui lòng đến quầy thanh toán."
+      }
+    ],
+    "word_family": [
+      "check out (v)"
+    ],
+    "collocations": [
+      "check-out time",
+      "check-out counter",
+      "late check-out"
+    ],
+    "synonyms": [
+      "departure",
+      "payment"
+    ],
+    "antonyms": [
+      "check-in"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I check-out at 11.",
+        "correct": "I check out at 11.",
+        "explain_vi": "'Check out' là động từ, 'check-out' là danh từ"
+      }
+    ],
+    "grammar_patterns": [
+      "check-out + noun",
+      "do check-out"
+    ]
+  },
+  {
+    "word": "reservation",
+    "phonetic": "/ˌrez.ərˈveɪ.ʃən/",
+    "meaning_vi": "đặt chỗ, đặt trước",
+    "meaning_en": "an arrangement to have something held for your use, such as a table or room",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I have a reservation for two people.",
+        "vi": "Tôi có đặt bàn cho hai người."
+      },
+      {
+        "en": "Can I make a reservation?",
+        "vi": "Tôi có thể đặt chỗ không?"
+      }
+    ],
+    "word_family": [
+      "reserve (v)"
+    ],
+    "collocations": [
+      "make a reservation",
+      "cancel a reservation",
+      "confirm a reservation"
+    ],
+    "synonyms": [
+      "booking"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I want reservation.",
+        "correct": "I want a reservation.",
+        "explain_vi": "Cần mạo từ 'a' trước 'reservation'"
+      }
+    ],
+    "grammar_patterns": [
+      "a reservation",
+      "make a reservation"
+    ]
+  },
+  {
+    "word": "receipt",
+    "phonetic": "/rɪˈsiːt/",
+    "meaning_vi": "hóa đơn, biên lai",
+    "meaning_en": "a piece of paper that shows you have paid for something",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Can I have a receipt?",
+        "vi": "Cho tôi xin hóa đơn?"
+      },
+      {
+        "en": "Keep your receipt.",
+        "vi": "Giữ hóa đơn của bạn."
+      }
+    ],
+    "word_family": [
+      "receive (v)"
+    ],
+    "collocations": [
+      "get a receipt",
+      "ask for a receipt",
+      "receipt number"
+    ],
+    "synonyms": [
+      "bill",
+      "invoice"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I need receipt.",
+        "correct": "I need a receipt.",
+        "explain_vi": "Cần mạo từ 'a'"
+      }
+    ],
+    "grammar_patterns": [
+      "a receipt",
+      "the receipt"
+    ]
+  },
+  {
+    "word": "laundry",
+    "phonetic": "/ˈlɔːn.dri/",
+    "meaning_vi": "giặt ủi; đồ giặt",
+    "meaning_en": "clothes that need washing or have been washed; the act of washing clothes",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I need to do my laundry.",
+        "vi": "Tôi cần giặt đồ."
+      },
+      {
+        "en": "The hotel has laundry service.",
+        "vi": "Khách sạn có dịch vụ giặt ủi."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "do the laundry",
+      "laundry service",
+      "laundry room"
+    ],
+    "synonyms": [
+      "washing"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I wash laundry.",
+        "correct": "I do the laundry.",
+        "explain_vi": "Dùng 'do the laundry' thay vì 'wash laundry'"
+      }
+    ],
+    "grammar_patterns": [
+      "do the laundry",
+      "laundry + noun"
+    ]
+  },
+  {
+    "word": "tip",
+    "phonetic": "/tɪp/",
+    "meaning_vi": "tiền boa",
+    "meaning_en": "a small amount of extra money given to a server or worker for good service",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We left a tip for the waiter.",
+        "vi": "Chúng tôi đã để lại tiền boa cho người phục vụ."
+      },
+      {
+        "en": "How much tip should I give?",
+        "vi": "Tôi nên boa bao nhiêu?"
+      }
+    ],
+    "word_family": [
+      "tip (v)"
+    ],
+    "collocations": [
+      "leave a tip",
+      "give a tip",
+      "tip jar"
+    ],
+    "synonyms": [
+      "gratuity"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I tip 10%",
+        "correct": "I give a 10% tip",
+        "explain_vi": "Dùng 'give a tip' thay vì 'tip' như động từ khi nói về tỷ lệ"
+      }
+    ],
+    "grammar_patterns": [
+      "a tip",
+      "leave a tip"
+    ]
+  },
+  {
+    "word": "complaint",
+    "phonetic": "/kəmˈpleɪnt/",
+    "meaning_vi": "khiếu nại, phàn nàn",
+    "meaning_en": "a statement that something is wrong or not satisfactory",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I have a complaint about the service.",
+        "vi": "Tôi có khiếu nại về dịch vụ."
+      },
+      {
+        "en": "Please register your complaint at the desk.",
+        "vi": "Vui lòng ghi lại khiếu nại của bạn tại quầy."
+      }
+    ],
+    "word_family": [
+      "complain (v)"
+    ],
+    "collocations": [
+      "make a complaint",
+      "file a complaint",
+      "complaint letter"
+    ],
+    "synonyms": [
+      "grievance",
+      "objection"
+    ],
+    "antonyms": [
+      "compliment"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I have complaint.",
+        "correct": "I have a complaint.",
+        "explain_vi": "Cần mạo từ 'a'"
+      }
+    ],
+    "grammar_patterns": [
+      "a complaint",
+      "make a complaint"
+    ]
+  },
+  {
+    "word": "queue",
+    "phonetic": "/kjuː/",
+    "meaning_vi": "hàng đợi, xếp hàng",
+    "meaning_en": "a line of people waiting for something",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "There is a long queue at the counter.",
+        "vi": "Có một hàng dài ở quầy."
+      },
+      {
+        "en": "Please join the queue.",
+        "vi": "Vui lòng xếp hàng."
+      }
+    ],
+    "word_family": [
+      "queue (v)"
+    ],
+    "collocations": [
+      "stand in a queue",
+      "join the queue",
+      "queue up"
+    ],
+    "synonyms": [
+      "line",
+      "waiting line"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I queue in line.",
+        "correct": "I stand in a queue.",
+        "explain_vi": "Dùng 'stand in a queue' hoặc 'queue up'"
+      }
+    ],
+    "grammar_patterns": [
+      "a queue",
+      "in a queue"
+    ]
+  },
+  {
+    "word": "refund",
+    "phonetic": "/ˈriː.fʌnd/",
+    "meaning_vi": "hoàn tiền",
+    "meaning_en": "money that is given back to you when you return something or cancel a service",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I asked for a refund.",
+        "vi": "Tôi yêu cầu hoàn tiền."
+      },
+      {
+        "en": "They gave me a full refund.",
+        "vi": "Họ đã hoàn lại toàn bộ tiền cho tôi."
+      }
+    ],
+    "word_family": [
+      "refund (v)"
+    ],
+    "collocations": [
+      "get a refund",
+      "ask for a refund",
+      "full refund"
+    ],
+    "synonyms": [
+      "reimbursement"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I want refund.",
+        "correct": "I want a refund.",
+        "explain_vi": "Cần mạo từ 'a'"
+      }
+    ],
+    "grammar_patterns": [
+      "a refund",
+      "get a refund"
+    ]
+  },
+  {
+    "word": "exchange",
+    "phonetic": "/ɪksˈtʃeɪndʒ/",
+    "meaning_vi": "đổi trả (hàng); trao đổi",
+    "meaning_en": "to give something to someone and receive something in return, often used for returning goods",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "Can I exchange this shirt for a smaller size?",
+        "vi": "Tôi có thể đổi cái áo này sang size nhỏ hơn không?"
+      },
+      {
+        "en": "They do not allow exchanges.",
+        "vi": "Họ không cho phép đổi trả."
+      }
+    ],
+    "word_family": [
+      "exchange (n)"
+    ],
+    "collocations": [
+      "exchange for",
+      "exchange policy",
+      "exchange rate"
+    ],
+    "synonyms": [
+      "swap",
+      "trade"
+    ],
+    "antonyms": [
+      "keep"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I want exchange this.",
+        "correct": "I want to exchange this.",
+        "explain_vi": "Cần 'to' sau 'want'"
+      }
+    ],
+    "grammar_patterns": [
+      "exchange + noun + for + noun"
+    ]
+  },
+  {
+    "word": "complimentary",
+    "phonetic": "/ˌkɒm.plɪˈmen.tər.i/",
+    "meaning_vi": "miễn phí, tặng kèm",
+    "meaning_en": "given free of charge, often as a courtesy",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The hotel offers complimentary breakfast.",
+        "vi": "Khách sạn cung cấp bữa sáng miễn phí."
+      },
+      {
+        "en": "Here is a complimentary gift.",
+        "vi": "Đây là một món quà tặng kèm."
+      }
+    ],
+    "word_family": [
+      "compliment (n)"
+    ],
+    "collocations": [
+      "complimentary service",
+      "complimentary drink",
+      "complimentary ticket"
+    ],
+    "synonyms": [
+      "free",
+      "on the house"
+    ],
+    "antonyms": [
+      "paid"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "It is complimentary free.",
+        "correct": "It is complimentary.",
+        "explain_vi": "Không cần 'free' vì 'complimentary' đã có nghĩa miễn phí"
+      }
+    ],
+    "grammar_patterns": [
+      "complimentary + noun"
+    ]
+  },
+  {
+    "word": "available",
+    "phonetic": "/əˈveɪ.lə.bəl/",
+    "meaning_vi": "có sẵn, có thể sử dụng",
+    "meaning_en": "able to be used or obtained; not busy",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "Is this table available?",
+        "vi": "Bàn này còn trống không?"
+      },
+      {
+        "en": "The service is available 24/7.",
+        "vi": "Dịch vụ có sẵn 24/7."
+      }
+    ],
+    "word_family": [
+      "availability (n)"
+    ],
+    "collocations": [
+      "available for",
+      "available in",
+      "available on"
+    ],
+    "synonyms": [
+      "free",
+      "accessible"
+    ],
+    "antonyms": [
+      "unavailable",
+      "occupied"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I am available on Monday.",
+        "correct": "I am free on Monday.",
+        "explain_vi": "'Available' thường dùng cho đồ vật, 'free' cho người"
+      }
+    ],
+    "grammar_patterns": [
+      "be available"
+    ]
+  },
+  {
+    "word": "appointment",
+    "phonetic": "/əˈpɔɪnt.mənt/",
+    "meaning_vi": "cuộc hẹn (dịch vụ như bác sĩ, làm tóc)",
+    "meaning_en": "a formal arrangement to meet or receive service at a particular time",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I have a dentist appointment at 3 PM.",
+        "vi": "Tôi có cuộc hẹn nha sĩ lúc 3 giờ chiều."
+      },
+      {
+        "en": "Can I make an appointment?",
+        "vi": "Tôi có thể đặt lịch hẹn không?"
+      }
+    ],
+    "word_family": [
+      "appoint (v)"
+    ],
+    "collocations": [
+      "make an appointment",
+      "cancel an appointment",
+      "keep an appointment"
+    ],
+    "synonyms": [
+      "booking",
+      "reservation"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have appointment.",
+        "correct": "I have an appointment.",
+        "explain_vi": "Cần mạo từ 'an'"
+      }
+    ],
+    "grammar_patterns": [
+      "an appointment",
+      "make an appointment"
+    ]
+  },
+  {
+    "word": "repair",
+    "phonetic": "/rɪˈpeər/",
+    "meaning_vi": "sửa chữa",
+    "meaning_en": "to fix something that is broken or damaged",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "Can you repair my phone?",
+        "vi": "Bạn có thể sửa điện thoại của tôi không?"
+      },
+      {
+        "en": "The repair will take two days.",
+        "vi": "Việc sửa chữa sẽ mất hai ngày."
+      }
+    ],
+    "word_family": [
+      "repair (n)",
+      "repairable (adj)"
+    ],
+    "collocations": [
+      "repair service",
+      "repair shop",
+      "need repair"
+    ],
+    "synonyms": [
+      "fix",
+      "mend"
+    ],
+    "antonyms": [
+      "break"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I repair my car at garage.",
+        "correct": "I get my car repaired at the garage.",
+        "explain_vi": "Dùng cấu trúc 'get something repaired'"
+      }
+    ],
+    "grammar_patterns": [
+      "repair + noun",
+      "get + noun + repaired"
+    ]
+  },
+  {
+    "word": "bill",
+    "phonetic": "/bɪl/",
+    "meaning_vi": "hóa đơn (nhà hàng, khách sạn, tiện ích)",
+    "meaning_en": "a statement of money owed for services or goods",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Can I have the bill, please?",
+        "vi": "Cho tôi xin hóa đơn?"
+      },
+      {
+        "en": "The bill includes tax.",
+        "vi": "Hóa đơn đã bao gồm thuế."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "pay the bill",
+      "split the bill",
+      "bill amount"
+    ],
+    "synonyms": [
+      "check",
+      "invoice"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I want bill.",
+        "correct": "I want the bill.",
+        "explain_vi": "Cần mạo từ 'the'"
+      }
+    ],
+    "grammar_patterns": [
+      "the bill",
+      "a bill"
+    ]
+  },
+  {
+    "word": "delivery",
+    "phonetic": "/dɪˈlɪv.ər.i/",
+    "meaning_vi": "giao hàng",
+    "meaning_en": "the act of bringing goods to a person or place",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The delivery will arrive tomorrow.",
+        "vi": "Hàng sẽ được giao vào ngày mai."
+      },
+      {
+        "en": "We offer free delivery.",
+        "vi": "Chúng tôi giao hàng miễn phí."
+      }
+    ],
+    "word_family": [
+      "deliver (v)"
+    ],
+    "collocations": [
+      "delivery service",
+      "delivery time",
+      "home delivery"
+    ],
+    "synonyms": [
+      "shipping",
+      "dispatch"
+    ],
+    "antonyms": [
+      "pickup"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I want delivery pizza.",
+        "correct": "I want pizza delivery.",
+        "explain_vi": "Thứ tự từ: 'pizza delivery'"
+      }
+    ],
+    "grammar_patterns": [
+      "delivery + noun",
+      "noun + delivery"
+    ]
+  },
+  {
+    "word": "service",
+    "phonetic": "/ˈsɜːr.vɪs/",
+    "meaning_vi": "dịch vụ",
+    "meaning_en": "the action of helping or doing work for someone; a business that provides something",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The service here is excellent.",
+        "vi": "Dịch vụ ở đây rất tuyệt."
+      },
+      {
+        "en": "They offer room service.",
+        "vi": "Họ cung cấp dịch vụ phòng."
+      }
+    ],
+    "word_family": [
+      "serve (v)",
+      "server (n)"
+    ],
+    "collocations": [
+      "customer service",
+      "room service",
+      "service charge"
+    ],
+    "synonyms": [
+      "assistance",
+      "support"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Service is good.",
+        "correct": "The service is good.",
+        "explain_vi": "Cần mạo từ 'the' khi nói chung"
+      }
+    ],
+    "grammar_patterns": [
+      "the service",
+      "service + noun"
+    ]
+  },
+  {
+    "word": "rate",
+    "phonetic": "/reɪt/",
+    "meaning_vi": "giá, tỷ lệ, mức giá",
+    "meaning_en": "a fixed price paid or charged for something, or a measurement of the speed or frequency of something",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The hotel rate is $100 per night.",
+        "vi": "Giá khách sạn là 100 đô la một đêm."
+      },
+      {
+        "en": "What is the exchange rate?",
+        "vi": "Tỷ giá hối đoái là bao nhiêu?"
+      }
+    ],
+    "word_family": [
+      "rating (n)",
+      "rate (v)"
+    ],
+    "collocations": [
+      "room rate",
+      "exchange rate",
+      "interest rate"
+    ],
+    "synonyms": [
+      "price",
+      "charge",
+      "fee"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "The rate is expensive.",
+        "correct": "The rate is high.",
+        "explain_vi": "Dùng 'high' thay vì 'expensive' cho rate."
+      }
+    ],
+    "grammar_patterns": [
+      "rate + of + noun",
+      "rate + for + noun"
+    ]
+  },
+  {
+    "word": "fee",
+    "phonetic": "/fiː/",
+    "meaning_vi": "phí, lệ phí",
+    "meaning_en": "an amount of money paid for a particular service or right",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "There is a service fee of 10%.",
+        "vi": "Có phí dịch vụ 10%."
+      },
+      {
+        "en": "The entrance fee is $5.",
+        "vi": "Phí vào cửa là 5 đô la."
+      }
+    ],
+    "word_family": [
+      "fee-based (adj)"
+    ],
+    "collocations": [
+      "service fee",
+      "membership fee",
+      "late fee"
+    ],
+    "synonyms": [
+      "charge",
+      "cost",
+      "price"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I paid the fee of service.",
+        "correct": "I paid the service fee.",
+        "explain_vi": "Đặt fee sau tính từ bổ nghĩa."
+      }
+    ],
+    "grammar_patterns": [
+      "fee + for + noun",
+      "fee + of + amount"
+    ]
+  },
+  {
+    "word": "charge",
+    "phonetic": "/tʃɑːrdʒ/",
+    "meaning_vi": "phí, khoản phí; tính phí",
+    "meaning_en": "an amount of money that must be paid; to ask an amount of money for something",
+    "pos": "noun/verb",
+    "examples": [
+      {
+        "en": "There is no charge for delivery.",
+        "vi": "Không có phí giao hàng."
+      },
+      {
+        "en": "The restaurant charges $10 for this dish.",
+        "vi": "Nhà hàng tính 10 đô la cho món này."
+      }
+    ],
+    "word_family": [
+      "charger (n)",
+      "chargeable (adj)"
+    ],
+    "collocations": [
+      "free of charge",
+      "charge a fee",
+      "service charge"
+    ],
+    "synonyms": [
+      "fee",
+      "cost",
+      "price"
+    ],
+    "antonyms": [
+      "free"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "How much do you charge for it?",
+        "correct": "How much do you charge for it?",
+        "explain_vi": "Cấu trúc đúng: charge + (someone) + (amount) + for + something."
+      }
+    ],
+    "grammar_patterns": [
+      "charge (someone) (amount) for (something)",
+      "charge for + noun"
+    ]
+  },
+  {
+    "word": "pay",
+    "phonetic": "/peɪ/",
+    "meaning_vi": "trả tiền, thanh toán",
+    "meaning_en": "to give money to someone for goods or services",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "I need to pay the bill.",
+        "vi": "Tôi cần thanh toán hóa đơn."
+      },
+      {
+        "en": "Can I pay by card?",
+        "vi": "Tôi có thể trả bằng thẻ không?"
+      }
+    ],
+    "word_family": [
+      "payment (n)",
+      "payer (n)"
+    ],
+    "collocations": [
+      "pay by card",
+      "pay in cash",
+      "pay the bill"
+    ],
+    "synonyms": [
+      "settle",
+      "discharge"
+    ],
+    "antonyms": [
+      "owe"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I will pay the bill by cash.",
+        "correct": "I will pay the bill in cash.",
+        "explain_vi": "Dùng 'in cash' thay vì 'by cash'."
+      }
+    ],
+    "grammar_patterns": [
+      "pay + (someone) + (amount)",
+      "pay for + something",
+      "pay by + method"
+    ]
+  },
+  {
+    "word": "book",
+    "phonetic": "/bʊk/",
+    "meaning_vi": "đặt trước (phòng, vé, bàn)",
+    "meaning_en": "to arrange to have or use something at a future time",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "I booked a room online.",
+        "vi": "Tôi đã đặt phòng trực tuyến."
+      },
+      {
+        "en": "Can I book a table for two?",
+        "vi": "Tôi có thể đặt bàn cho hai người không?"
+      }
+    ],
+    "word_family": [
+      "booking (n)",
+      "bookable (adj)"
+    ],
+    "collocations": [
+      "book a room",
+      "book a ticket",
+      "book online"
+    ],
+    "synonyms": [
+      "reserve",
+      "schedule"
+    ],
+    "antonyms": [
+      "cancel"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I want to book a reservation.",
+        "correct": "I want to make a reservation.",
+        "explain_vi": "Book và reservation trùng nghĩa, chỉ dùng một."
+      }
+    ],
+    "grammar_patterns": [
+      "book + something",
+      "book + for + number of people"
+    ]
+  },
+  {
+    "word": "cancel",
+    "phonetic": "/ˈkænsəl/",
+    "meaning_vi": "hủy bỏ",
+    "meaning_en": "to decide that something that has been arranged will not happen",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "I need to cancel my reservation.",
+        "vi": "Tôi cần hủy đặt chỗ của mình."
+      },
+      {
+        "en": "The flight was canceled due to weather.",
+        "vi": "Chuyến bay đã bị hủy do thời tiết."
+      }
+    ],
+    "word_family": [
+      "cancellation (n)"
+    ],
+    "collocations": [
+      "cancel a reservation",
+      "cancel an order",
+      "cancel a subscription"
+    ],
+    "synonyms": [
+      "call off",
+      "revoke"
+    ],
+    "antonyms": [
+      "confirm",
+      "book"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I cancelled the booking.",
+        "correct": "I canceled the booking.",
+        "explain_vi": "Cả hai đều đúng, nhưng 'canceled' phổ biến hơn trong tiếng Anh Mỹ."
+      }
+    ],
+    "grammar_patterns": [
+      "cancel + something",
+      "cancel + for + reason"
+    ]
+  },
+  {
+    "word": "confirm",
+    "phonetic": "/kənˈfɜːrm/",
+    "meaning_vi": "xác nhận",
+    "meaning_en": "to state or show that something is definitely true or correct, especially by providing evidence",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "Please confirm your booking by email.",
+        "vi": "Vui lòng xác nhận đặt chỗ của bạn qua email."
+      },
+      {
+        "en": "The hotel confirmed our reservation.",
+        "vi": "Khách sạn đã xác nhận đặt phòng của chúng tôi."
+      }
+    ],
+    "word_family": [
+      "confirmation (n)",
+      "confirmed (adj)"
+    ],
+    "collocations": [
+      "confirm a reservation",
+      "confirm an appointment",
+      "confirm details"
+    ],
+    "synonyms": [
+      "verify",
+      "validate"
+    ],
+    "antonyms": [
+      "cancel",
+      "deny"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I need to confirm about the booking.",
+        "correct": "I need to confirm the booking.",
+        "explain_vi": "Confirm là ngoại động từ, không cần giới từ."
+      }
+    ],
+    "grammar_patterns": [
+      "confirm + something",
+      "confirm + that + clause"
+    ]
+  },
+  {
+    "word": "offer",
+    "phonetic": "/ˈɔːfər/",
+    "meaning_vi": "ưu đãi, đề nghị; cung cấp",
+    "meaning_en": "a special deal or proposal; to provide or give something",
+    "pos": "noun/verb",
+    "examples": [
+      {
+        "en": "The store has a special offer this week.",
+        "vi": "Cửa hàng có ưu đãi đặc biệt trong tuần này."
+      },
+      {
+        "en": "They offer free Wi-Fi to guests.",
+        "vi": "Họ cung cấp Wi-Fi miễn phí cho khách."
+      }
+    ],
+    "word_family": [
+      "offering (n)",
+      "offerer (n)"
+    ],
+    "collocations": [
+      "special offer",
+      "offer a discount",
+      "job offer"
+    ],
+    "synonyms": [
+      "proposal",
+      "deal",
+      "provide"
+    ],
+    "antonyms": [
+      "refuse",
+      "withdraw"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "They offered me a job.",
+        "correct": "They offered me a job.",
+        "explain_vi": "Cấu trúc đúng: offer + someone + something."
+      }
+    ],
+    "grammar_patterns": [
+      "offer + something",
+      "offer + to + verb",
+      "offer + someone + something"
+    ]
+  },
+  {
+    "word": "discount",
+    "phonetic": "/ˈdɪskaʊnt/",
+    "meaning_vi": "giảm giá, chiết khấu",
+    "meaning_en": "a reduction in the usual price",
+    "pos": "noun/verb",
+    "examples": [
+      {
+        "en": "Students get a 10% discount.",
+        "vi": "Sinh viên được giảm giá 10%."
+      },
+      {
+        "en": "The store discounts items at the end of season.",
+        "vi": "Cửa hàng giảm giá hàng vào cuối mùa."
+      }
+    ],
+    "word_family": [
+      "discounter (n)",
+      "discountable (adj)"
+    ],
+    "collocations": [
+      "get a discount",
+      "offer a discount",
+      "discount price"
+    ],
+    "synonyms": [
+      "reduction",
+      "markdown"
+    ],
+    "antonyms": [
+      "surcharge"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Discount 10% for students.",
+        "correct": "10% discount for students.",
+        "explain_vi": "Đặt phần trăm trước discount."
+      }
+    ],
+    "grammar_patterns": [
+      "discount + on + something",
+      "discount + of + percentage"
+    ]
+  },
+  {
+    "word": "membership",
+    "phonetic": "/ˈmembərʃɪp/",
+    "meaning_vi": "tư cách thành viên, hội viên",
+    "meaning_en": "the state of being a member of a group or organization",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Gym membership costs $50 per month.",
+        "vi": "Phí hội viên phòng gym là 50 đô la một tháng."
+      },
+      {
+        "en": "She applied for membership in the club.",
+        "vi": "Cô ấy đã xin làm thành viên của câu lạc bộ."
+      }
+    ],
+    "word_family": [
+      "member (n)"
+    ],
+    "collocations": [
+      "gym membership",
+      "membership fee",
+      "apply for membership"
+    ],
+    "synonyms": [
+      "enrollment",
+      "affiliation"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have membership of the gym.",
+        "correct": "I have a gym membership.",
+        "explain_vi": "Dùng 'a gym membership' thay vì 'membership of the gym'."
+      }
+    ],
+    "grammar_patterns": [
+      "membership + in + organization",
+      "membership + fee"
+    ]
+  },
+  {
+    "word": "insurance",
+    "phonetic": "/ɪnˈʃʊrəns/",
+    "meaning_vi": "bảo hiểm",
+    "meaning_en": "an arrangement in which you pay money to a company, and they pay you if something bad happens",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Do you have travel insurance?",
+        "vi": "Bạn có bảo hiểm du lịch không?"
+      },
+      {
+        "en": "Car insurance is mandatory.",
+        "vi": "Bảo hiểm xe hơi là bắt buộc."
+      }
+    ],
+    "word_family": [
+      "insure (v)",
+      "insured (adj)"
+    ],
+    "collocations": [
+      "health insurance",
+      "travel insurance",
+      "insurance policy"
+    ],
+    "synonyms": [
+      "coverage",
+      "assurance"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I bought an insurance.",
+        "correct": "I bought insurance.",
+        "explain_vi": "Insurance là danh từ không đếm được."
+      }
+    ],
+    "grammar_patterns": [
+      "insurance + for + something",
+      "insurance + against + risk"
+    ]
+  },
+  {
+    "word": "warranty",
+    "phonetic": "/ˈwɔːrənti/",
+    "meaning_vi": "bảo hành",
+    "meaning_en": "a written promise by a company to repair or replace a product if it breaks within a certain period",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The laptop comes with a one-year warranty.",
+        "vi": "Máy tính xách tay đi kèm bảo hành một năm."
+      },
+      {
+        "en": "The warranty covers parts and labor.",
+        "vi": "Bảo hành bao gồm phụ tùng và công sửa chữa."
+      }
+    ],
+    "word_family": [
+      "warrant (v)",
+      "warranted (adj)"
+    ],
+    "collocations": [
+      "under warranty",
+      "extended warranty",
+      "warranty period"
+    ],
+    "synonyms": [
+      "guarantee"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "The warranty is expired.",
+        "correct": "The warranty has expired.",
+        "explain_vi": "Dùng thì hiện tại hoàn thành với 'expired'."
+      }
+    ],
+    "grammar_patterns": [
+      "warranty + on + something",
+      "under warranty"
+    ]
+  },
+  {
+    "word": "package",
+    "phonetic": "/ˈpækɪdʒ/",
+    "meaning_vi": "gói hàng; gói dịch vụ",
+    "meaning_en": "a box or bag containing things; a set of services offered together",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The package arrived this morning.",
+        "vi": "Gói hàng đã đến sáng nay."
+      },
+      {
+        "en": "We offer a vacation package including flights and hotel.",
+        "vi": "Chúng tôi cung cấp gói kỳ nghỉ bao gồm vé máy bay và khách sạn."
+      }
+    ],
+    "word_family": [
+      "pack (v)",
+      "packaging (n)"
+    ],
+    "collocations": [
+      "package deal",
+      "package tour",
+      "deliver a package"
+    ],
+    "synonyms": [
+      "parcel",
+      "bundle",
+      "deal"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I sent a package by post.",
+        "correct": "I sent a package by mail.",
+        "explain_vi": "Cả hai đều đúng, nhưng 'by mail' phổ biến hơn."
+      }
+    ],
+    "grammar_patterns": [
+      "package + of + items",
+      "package + for + purpose"
+    ]
+  },
+  {
+    "word": "deliver",
+    "phonetic": "/dɪˈlɪvər/",
+    "meaning_vi": "giao hàng, chuyển phát",
+    "meaning_en": "to take goods, letters, etc. to the person they have been sent to",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "They deliver pizza to your door.",
+        "vi": "Họ giao pizza tận cửa."
+      },
+      {
+        "en": "The mail is delivered daily.",
+        "vi": "Thư được phát hàng ngày."
+      }
+    ],
+    "word_family": [
+      "delivery (n)",
+      "deliverer (n)"
+    ],
+    "collocations": [
+      "deliver goods",
+      "deliver a package",
+      "deliver food"
+    ],
+    "synonyms": [
+      "ship",
+      "transport",
+      "bring"
+    ],
+    "antonyms": [
+      "collect",
+      "pick up"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "They delivery the package.",
+        "correct": "They deliver the package.",
+        "explain_vi": "Deliver là động từ, delivery là danh từ."
+      }
+    ],
+    "grammar_patterns": [
+      "deliver + something + to + someone/place"
+    ]
+  },
+  {
+    "word": "track",
+    "phonetic": "/træk/",
+    "meaning_vi": "theo dõi (hàng hóa, đơn hàng)",
+    "meaning_en": "to follow the progress or movement of something",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "You can track your order online.",
+        "vi": "Bạn có thể theo dõi đơn hàng trực tuyến."
+      },
+      {
+        "en": "The app allows you to track the delivery.",
+        "vi": "Ứng dụng cho phép bạn theo dõi việc giao hàng."
+      }
+    ],
+    "word_family": [
+      "tracking (n)",
+      "tracker (n)"
+    ],
+    "collocations": [
+      "track an order",
+      "track a package",
+      "tracking number"
+    ],
+    "synonyms": [
+      "monitor",
+      "follow"
+    ],
+    "antonyms": [
+      "lose"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I want to track for my package.",
+        "correct": "I want to track my package.",
+        "explain_vi": "Track là ngoại động từ, không cần giới từ."
+      }
+    ],
+    "grammar_patterns": [
+      "track + something",
+      "track + by + method"
+    ]
+  },
+  {
+    "word": "subscribe",
+    "phonetic": "/səbˈskraɪb/",
+    "meaning_vi": "đăng ký (dịch vụ, báo, tạp chí)",
+    "meaning_en": "to arrange to receive a service, magazine, etc. regularly by paying in advance",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "I subscribe to a streaming service.",
+        "vi": "Tôi đăng ký một dịch vụ phát trực tuyến."
+      },
+      {
+        "en": "You can subscribe to our newsletter.",
+        "vi": "Bạn có thể đăng ký nhận bản tin của chúng tôi."
+      }
+    ],
+    "word_family": [
+      "subscription (n)",
+      "subscriber (n)"
+    ],
+    "collocations": [
+      "subscribe to a service",
+      "subscribe online",
+      "monthly subscription"
+    ],
+    "synonyms": [
+      "sign up",
+      "enroll"
+    ],
+    "antonyms": [
+      "unsubscribe"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I subscribed for the service.",
+        "correct": "I subscribed to the service.",
+        "explain_vi": "Dùng 'to' thay vì 'for'."
+      }
+    ],
+    "grammar_patterns": [
+      "subscribe + to + something"
+    ]
+  },
+  {
+    "word": "unsubscribe",
+    "phonetic": "/ˌʌnsəbˈskraɪb/",
+    "meaning_vi": "hủy đăng ký",
+    "meaning_en": "to cancel a subscription",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "Click here to unsubscribe from our emails.",
+        "vi": "Nhấp vào đây để hủy đăng ký nhận email của chúng tôi."
+      },
+      {
+        "en": "I want to unsubscribe from this service.",
+        "vi": "Tôi muốn hủy đăng ký dịch vụ này."
+      }
+    ],
+    "word_family": [
+      "unsubscription (n)"
+    ],
+    "collocations": [
+      "unsubscribe from a list",
+      "unsubscribe from emails"
+    ],
+    "synonyms": [
+      "cancel subscription"
+    ],
+    "antonyms": [
+      "subscribe"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I unsubscribed the service.",
+        "correct": "I unsubscribed from the service.",
+        "explain_vi": "Cần giới từ 'from'."
+      }
+    ],
+    "grammar_patterns": [
+      "unsubscribe + from + something"
+    ]
+  },
+  {
+    "word": "account",
+    "phonetic": "/əˈkaʊnt/",
+    "meaning_vi": "tài khoản",
+    "meaning_en": "an arrangement with a bank or other organization to keep your money or to use a service",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I opened a bank account.",
+        "vi": "Tôi đã mở một tài khoản ngân hàng."
+      },
+      {
+        "en": "You need an account to use this app.",
+        "vi": "Bạn cần có tài khoản để sử dụng ứng dụng này."
+      }
+    ],
+    "word_family": [
+      "accountant (n)",
+      "accounting (n)"
+    ],
+    "collocations": [
+      "open an account",
+      "close an account",
+      "bank account"
+    ],
+    "synonyms": [
+      "profile",
+      "membership"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have a account.",
+        "correct": "I have an account.",
+        "explain_vi": "Dùng 'an' vì account bắt đầu bằng nguyên âm."
+      }
+    ],
+    "grammar_patterns": [
+      "account + with + organization",
+      "account + for + purpose"
+    ]
+  },
+  {
+    "word": "password",
+    "phonetic": "/ˈpæswɜːrd/",
+    "meaning_vi": "mật khẩu",
+    "meaning_en": "a secret word or phrase that you need to know to be allowed into a place or to use a computer system",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Please enter your password.",
+        "vi": "Vui lòng nhập mật khẩu của bạn."
+      },
+      {
+        "en": "I forgot my password.",
+        "vi": "Tôi quên mật khẩu."
+      }
+    ],
+    "word_family": [
+      "password-protected (adj)"
+    ],
+    "collocations": [
+      "enter password",
+      "reset password",
+      "forgot password"
+    ],
+    "synonyms": [
+      "code",
+      "key"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "My password is secret.",
+        "correct": "My password is secret.",
+        "explain_vi": "Cấu trúc đúng."
+      }
+    ],
+    "grammar_patterns": [
+      "password + for + something",
+      "password + to + verb"
+    ]
+  },
+  {
+    "word": "login",
+    "phonetic": "/ˈlɒɡɪn/",
+    "meaning_vi": "đăng nhập",
+    "meaning_en": "the act of connecting to a computer system by typing your name and password",
+    "pos": "noun/verb",
+    "examples": [
+      {
+        "en": "You need to login to your account.",
+        "vi": "Bạn cần đăng nhập vào tài khoản của mình."
+      },
+      {
+        "en": "Enter your login details.",
+        "vi": "Nhập thông tin đăng nhập của bạn."
+      }
+    ],
+    "word_family": [
+      "log in (phrasal verb)"
+    ],
+    "collocations": [
+      "login page",
+      "login credentials",
+      "login successfully"
+    ],
+    "synonyms": [
+      "sign in",
+      "log on"
+    ],
+    "antonyms": [
+      "logout",
+      "sign out"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I login to my account.",
+        "correct": "I log in to my account.",
+        "explain_vi": "Login là danh từ; động từ là 'log in'."
+      }
+    ],
+    "grammar_patterns": [
+      "login + to + account",
+      "log in + to + system"
+    ]
+  },
+  {
+    "word": "logout",
+    "phonetic": "/ˈlɒɡaʊt/",
+    "meaning_vi": "đăng xuất",
+    "meaning_en": "the act of leaving a computer system, especially by typing a command",
+    "pos": "noun/verb",
+    "examples": [
+      {
+        "en": "Don't forget to logout when you finish.",
+        "vi": "Đừng quên đăng xuất khi bạn kết thúc."
+      },
+      {
+        "en": "Click here to logout.",
+        "vi": "Nhấp vào đây để đăng xuất."
+      }
+    ],
+    "word_family": [
+      "log out (phrasal verb)"
+    ],
+    "collocations": [
+      "logout button",
+      "logout page"
+    ],
+    "synonyms": [
+      "sign out",
+      "log off"
+    ],
+    "antonyms": [
+      "login",
+      "sign in"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I logout of my account.",
+        "correct": "I log out of my account.",
+        "explain_vi": "Logout là danh từ; động từ là 'log out'."
+      }
+    ],
+    "grammar_patterns": [
+      "logout + of + account",
+      "log out + of + system"
+    ]
+  }
+]

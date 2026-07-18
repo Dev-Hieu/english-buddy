@@ -1,0 +1,2256 @@
+[
+  {
+    "word": "itinerary",
+    "phonetic": "/aɪˈtɪn.ər.ər.i/",
+    "meaning_vi": "lịch trình",
+    "meaning_en": "a detailed plan for a journey",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Please check the itinerary for our trip.",
+        "vi": "Vui lòng kiểm tra lịch trình cho chuyến đi của chúng tôi."
+      }
+    ],
+    "word_family": [
+      "itinerant (adj)"
+    ],
+    "collocations": [
+      "draw up an itinerary",
+      "follow an itinerary",
+      "packed itinerary"
+    ],
+    "synonyms": [
+      "schedule",
+      "plan",
+      "route"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "itinerary travel",
+        "correct": "travel itinerary",
+        "explain_vi": "Trật tự từ sai, nên dùng 'travel itinerary'"
+      }
+    ],
+    "grammar_patterns": [
+      "an itinerary for + noun",
+      "on the itinerary"
+    ]
+  },
+  {
+    "word": "commute",
+    "phonetic": "/kəˈmjuːt/",
+    "meaning_vi": "đi lại hàng ngày",
+    "meaning_en": "to travel regularly between home and work",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "I commute by train every day.",
+        "vi": "Tôi đi làm bằng tàu hỏa mỗi ngày."
+      }
+    ],
+    "word_family": [
+      "commuter (n)",
+      "commutation (n)"
+    ],
+    "collocations": [
+      "commute to work",
+      "long commute",
+      "commute by car"
+    ],
+    "synonyms": [
+      "travel",
+      "journey"
+    ],
+    "antonyms": [
+      "stay home"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I commute to office",
+        "correct": "I commute to work",
+        "explain_vi": "Dùng 'work' thay vì 'office' trong ngữ cảnh chung"
+      }
+    ],
+    "grammar_patterns": [
+      "commute + from + place + to + place"
+    ]
+  },
+  {
+    "word": "layover",
+    "phonetic": "/ˈleɪ.oʊ.vər/",
+    "meaning_vi": "quá cảnh",
+    "meaning_en": "a short stay between parts of a journey",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We had a two-hour layover in Dubai.",
+        "vi": "Chúng tôi có hai giờ quá cảnh ở Dubai."
+      }
+    ],
+    "word_family": [
+      "lay over (v)"
+    ],
+    "collocations": [
+      "a layover in",
+      "long layover",
+      "during the layover"
+    ],
+    "synonyms": [
+      "stopover",
+      "connection"
+    ],
+    "antonyms": [
+      "direct flight"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "layover flight",
+        "correct": "layover",
+        "explain_vi": "Không cần thêm 'flight'"
+      }
+    ],
+    "grammar_patterns": [
+      "a + number + layover"
+    ]
+  },
+  {
+    "word": "expedition",
+    "phonetic": "/ˌek.spəˈdɪʃ.ən/",
+    "meaning_vi": "cuộc thám hiểm",
+    "meaning_en": "a journey organized for a particular purpose",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "They went on an expedition to the Arctic.",
+        "vi": "Họ đã tham gia một cuộc thám hiểm đến Bắc Cực."
+      }
+    ],
+    "word_family": [
+      "expeditionary (adj)",
+      "expedite (v)"
+    ],
+    "collocations": [
+      "mount an expedition",
+      "scientific expedition",
+      "expedition leader"
+    ],
+    "synonyms": [
+      "exploration",
+      "mission",
+      "journey"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "go to expedition",
+        "correct": "go on an expedition",
+        "explain_vi": "Dùng giới từ 'on'"
+      }
+    ],
+    "grammar_patterns": [
+      "an expedition to + place",
+      "on an expedition"
+    ]
+  },
+  {
+    "word": "detour",
+    "phonetic": "/ˈdiː.tʊr/",
+    "meaning_vi": "đường vòng",
+    "meaning_en": "a longer route taken to avoid something or to visit something",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We took a detour to see the waterfall.",
+        "vi": "Chúng tôi đi đường vòng để xem thác nước."
+      }
+    ],
+    "word_family": [
+      "detour (v)"
+    ],
+    "collocations": [
+      "take a detour",
+      "make a detour",
+      "detour sign"
+    ],
+    "synonyms": [
+      "diversion",
+      "roundabout route"
+    ],
+    "antonyms": [
+      "direct route"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "detour road",
+        "correct": "detour",
+        "explain_vi": "Không cần thêm 'road'"
+      }
+    ],
+    "grammar_patterns": [
+      "detour + around/through"
+    ]
+  },
+  {
+    "word": "embark",
+    "phonetic": "/ɪmˈbɑːrk/",
+    "meaning_vi": "lên tàu, bắt đầu",
+    "meaning_en": "to board a ship or aircraft; to begin a journey",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "We embarked on a cruise from Singapore.",
+        "vi": "Chúng tôi lên tàu du lịch từ Singapore."
+      }
+    ],
+    "word_family": [
+      "embarkation (n)",
+      "disembark (v)"
+    ],
+    "collocations": [
+      "embark on",
+      "embark upon",
+      "embark for"
+    ],
+    "synonyms": [
+      "board",
+      "begin",
+      "start"
+    ],
+    "antonyms": [
+      "disembark"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "embark to",
+        "correct": "embark on",
+        "explain_vi": "Dùng giới từ 'on'"
+      }
+    ],
+    "grammar_patterns": [
+      "embark on + noun"
+    ]
+  },
+  {
+    "word": "disembark",
+    "phonetic": "/ˌdɪs.ɪmˈbɑːrk/",
+    "meaning_vi": "rời tàu, lên bờ",
+    "meaning_en": "to leave a ship, aircraft, or train",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "Passengers must wait for the signal to disembark.",
+        "vi": "Hành khách phải đợi tín hiệu để rời tàu."
+      }
+    ],
+    "word_family": [
+      "disembarkation (n)",
+      "embark (v)"
+    ],
+    "collocations": [
+      "disembark from",
+      "disembark at"
+    ],
+    "synonyms": [
+      "get off",
+      "alight",
+      "deplane"
+    ],
+    "antonyms": [
+      "embark"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "disembark the plane",
+        "correct": "disembark from the plane",
+        "explain_vi": "Cần thêm giới từ 'from'"
+      }
+    ],
+    "grammar_patterns": [
+      "disembark from + vehicle"
+    ]
+  },
+  {
+    "word": "berth",
+    "phonetic": "/bɜːrθ/",
+    "meaning_vi": "giường ngủ trên tàu",
+    "meaning_en": "a bed on a ship, train, or aircraft",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I booked an upper berth on the overnight train.",
+        "vi": "Tôi đã đặt một giường trên trên tàu đêm."
+      }
+    ],
+    "word_family": [
+      "berth (v)"
+    ],
+    "collocations": [
+      "upper berth",
+      "lower berth",
+      "book a berth"
+    ],
+    "synonyms": [
+      "bunk",
+      "cot",
+      "bed"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "sleep in berth",
+        "correct": "sleep on a berth",
+        "explain_vi": "Dùng giới từ 'on'"
+      }
+    ],
+    "grammar_patterns": [
+      "a + adjective + berth"
+    ]
+  },
+  {
+    "word": "cabin",
+    "phonetic": "/ˈkæb.ɪn/",
+    "meaning_vi": "khoang, cabin",
+    "meaning_en": "a private room on a ship or aircraft",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The cabin was small but comfortable.",
+        "vi": "Cabin nhỏ nhưng thoải mái."
+      }
+    ],
+    "word_family": [
+      "cabin crew (n)"
+    ],
+    "collocations": [
+      "cabin class",
+      "cabin luggage",
+      "cabin door"
+    ],
+    "synonyms": [
+      "compartment",
+      "stateroom",
+      "berth"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "cabin room",
+        "correct": "cabin",
+        "explain_vi": "Thừa từ 'room'"
+      }
+    ],
+    "grammar_patterns": [
+      "a cabin on + ship/plane"
+    ]
+  },
+  {
+    "word": "departure",
+    "phonetic": "/dɪˈpɑːr.tʃər/",
+    "meaning_vi": "khởi hành",
+    "meaning_en": "the act of leaving, especially on a journey",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Our departure is scheduled for 6 a.m.",
+        "vi": "Chuyến khởi hành của chúng tôi dự kiến lúc 6 giờ sáng."
+      }
+    ],
+    "word_family": [
+      "depart (v)",
+      "departed (adj)"
+    ],
+    "collocations": [
+      "departure time",
+      "departure gate",
+      "departure lounge"
+    ],
+    "synonyms": [
+      "leave",
+      "exit",
+      "takeoff"
+    ],
+    "antonyms": [
+      "arrival"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "departure from",
+        "correct": "departure from",
+        "explain_vi": "Đúng, nhưng lưu ý giới từ 'from'"
+      }
+    ],
+    "grammar_patterns": [
+      "departure from + place",
+      "departure at + time"
+    ]
+  },
+  {
+    "word": "arrival",
+    "phonetic": "/əˈraɪ.vəl/",
+    "meaning_vi": "đến nơi",
+    "meaning_en": "the act of reaching a destination",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We expect your arrival at noon.",
+        "vi": "Chúng tôi mong bạn đến vào buổi trưa."
+      }
+    ],
+    "word_family": [
+      "arrive (v)",
+      "arrived (adj)"
+    ],
+    "collocations": [
+      "arrival time",
+      "arrival gate",
+      "arrival hall"
+    ],
+    "synonyms": [
+      "coming",
+      "landing",
+      "approach"
+    ],
+    "antonyms": [
+      "departure"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "arrival to",
+        "correct": "arrival at/in",
+        "explain_vi": "Dùng 'at' cho địa điểm cụ thể, 'in' cho thành phố/quốc gia"
+      }
+    ],
+    "grammar_patterns": [
+      "arrival at + place",
+      "arrival in + city/country"
+    ]
+  },
+  {
+    "word": "transfer",
+    "phonetic": "/ˈtræns.fɜːr/",
+    "meaning_vi": "chuyển tiếp, trung chuyển",
+    "meaning_en": "a change from one vehicle to another during a journey",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We had a quick transfer at the airport.",
+        "vi": "Chúng tôi có một chuyển tiếp nhanh tại sân bay."
+      }
+    ],
+    "word_family": [
+      "transfer (v)",
+      "transferable (adj)"
+    ],
+    "collocations": [
+      "transfer passenger",
+      "transfer time",
+      "bus transfer"
+    ],
+    "synonyms": [
+      "connection",
+      "change",
+      "shuttle"
+    ],
+    "antonyms": [
+      "direct"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "transfer flight",
+        "correct": "connecting flight",
+        "explain_vi": "Dùng 'connecting flight' thay vì 'transfer flight'"
+      }
+    ],
+    "grammar_patterns": [
+      "a transfer from + vehicle + to + vehicle"
+    ]
+  },
+  {
+    "word": "transit",
+    "phonetic": "/ˈtræn.zɪt/",
+    "meaning_vi": "quá cảnh",
+    "meaning_en": "the passage of people or goods through a place on the way to a destination",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Passengers in transit must stay in the lounge.",
+        "vi": "Hành khách quá cảnh phải ở lại phòng chờ."
+      }
+    ],
+    "word_family": [
+      "transit (v)",
+      "transitory (adj)"
+    ],
+    "collocations": [
+      "in transit",
+      "transit visa",
+      "transit passenger"
+    ],
+    "synonyms": [
+      "passage",
+      "travel",
+      "transfer"
+    ],
+    "antonyms": [
+      "stay"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "transit through",
+        "correct": "in transit through",
+        "explain_vi": "Dùng 'in transit' trước 'through'"
+      }
+    ],
+    "grammar_patterns": [
+      "in transit",
+      "transit through + place"
+    ]
+  },
+  {
+    "word": "terminal",
+    "phonetic": "/ˈtɜːr.mɪ.nəl/",
+    "meaning_vi": "nhà ga, bến",
+    "meaning_en": "a building at an airport or station where passengers arrive and depart",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Our flight leaves from Terminal 3.",
+        "vi": "Chuyến bay của chúng tôi khởi hành từ nhà ga số 3."
+      }
+    ],
+    "word_family": [
+      "terminus (n)",
+      "terminal (adj)"
+    ],
+    "collocations": [
+      "terminal building",
+      "terminal gate",
+      "bus terminal"
+    ],
+    "synonyms": [
+      "station",
+      "depot",
+      "gateway"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "go to terminal",
+        "correct": "go to the terminal",
+        "explain_vi": "Cần mạo từ 'the'"
+      }
+    ],
+    "grammar_patterns": [
+      "at the terminal",
+      "Terminal + number"
+    ]
+  },
+  {
+    "word": "check-in",
+    "phonetic": "/ˈtʃek.ɪn/",
+    "meaning_vi": "làm thủ tục",
+    "meaning_en": "the process of registering at a hotel or airport",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Check-in opens two hours before departure.",
+        "vi": "Làm thủ tục mở cửa hai giờ trước khi khởi hành."
+      }
+    ],
+    "word_family": [
+      "check in (v)"
+    ],
+    "collocations": [
+      "check-in counter",
+      "online check-in",
+      "check-in time"
+    ],
+    "synonyms": [
+      "registration",
+      "booking in"
+    ],
+    "antonyms": [
+      "check-out"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "check in desk",
+        "correct": "check-in desk",
+        "explain_vi": "Cần gạch nối khi là tính từ"
+      }
+    ],
+    "grammar_patterns": [
+      "check-in + noun",
+      "check in (v) at + place"
+    ]
+  },
+  {
+    "word": "boarding pass",
+    "phonetic": "/ˈbɔːr.dɪŋ pæs/",
+    "meaning_vi": "thẻ lên máy bay",
+    "meaning_en": "a card that allows a passenger to board a plane",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Please show your boarding pass at the gate.",
+        "vi": "Vui lòng xuất trình thẻ lên máy bay tại cửa."
+      }
+    ],
+    "word_family": [
+      "board (v)",
+      "pass (n)"
+    ],
+    "collocations": [
+      "print boarding pass",
+      "mobile boarding pass",
+      "boarding pass scanner"
+    ],
+    "synonyms": [
+      "boarding card"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "boarding ticket",
+        "correct": "boarding pass",
+        "explain_vi": "Dùng 'boarding pass' thay vì 'ticket'"
+      }
+    ],
+    "grammar_patterns": [
+      "a boarding pass",
+      "boarding pass for + flight"
+    ]
+  },
+  {
+    "word": "jet lag",
+    "phonetic": "/ˈdʒet læɡ/",
+    "meaning_vi": "say máy bay, mệt do lệch múi giờ",
+    "meaning_en": "extreme tiredness after a long flight across time zones",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I suffer from jet lag after long-haul flights.",
+        "vi": "Tôi bị say máy bay sau các chuyến bay đường dài."
+      }
+    ],
+    "word_family": [
+      "jet-lagged (adj)"
+    ],
+    "collocations": [
+      "experience jet lag",
+      "get over jet lag",
+      "jet lag symptoms"
+    ],
+    "synonyms": [
+      "time zone fatigue"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "jetlag (one word)",
+        "correct": "jet lag (two words)",
+        "explain_vi": "Viết hai từ riêng biệt"
+      }
+    ],
+    "grammar_patterns": [
+      "suffer from jet lag",
+      "jet lag + noun"
+    ]
+  },
+  {
+    "word": "sightseeing",
+    "phonetic": "/ˈsaɪt.siː.ɪŋ/",
+    "meaning_vi": "tham quan",
+    "meaning_en": "the activity of visiting interesting places as a tourist",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We spent the day sightseeing in Paris.",
+        "vi": "Chúng tôi dành cả ngày tham quan Paris."
+      }
+    ],
+    "word_family": [
+      "sightsee (v)",
+      "sightseer (n)"
+    ],
+    "collocations": [
+      "go sightseeing",
+      "sightseeing tour",
+      "sightseeing bus"
+    ],
+    "synonyms": [
+      "touring",
+      "exploring"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "see sightseeing",
+        "correct": "go sightseeing",
+        "explain_vi": "Dùng 'go sightseeing' thay vì 'see'"
+      }
+    ],
+    "grammar_patterns": [
+      "go sightseeing",
+      "sightseeing in + place"
+    ]
+  },
+  {
+    "word": "eco-tourism",
+    "phonetic": "/ˈiː.koʊ.tʊr.ɪ.zəm/",
+    "meaning_vi": "du lịch sinh thái",
+    "meaning_en": "tourism that is designed to protect the environment",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Eco-tourism is popular in Costa Rica.",
+        "vi": "Du lịch sinh thái phổ biến ở Costa Rica."
+      }
+    ],
+    "word_family": [
+      "eco-tourist (n)",
+      "eco-tour (n)"
+    ],
+    "collocations": [
+      "eco-tourism destination",
+      "eco-tourism project",
+      "promote eco-tourism"
+    ],
+    "synonyms": [
+      "sustainable tourism",
+      "green tourism"
+    ],
+    "antonyms": [
+      "mass tourism"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "ecotourism (no hyphen)",
+        "correct": "eco-tourism (with hyphen)",
+        "explain_vi": "Nên viết có gạch nối"
+      }
+    ],
+    "grammar_patterns": [
+      "eco-tourism + noun"
+    ]
+  },
+  {
+    "word": "hitchhiking",
+    "phonetic": "/ˈhɪtʃ.haɪ.kɪŋ/",
+    "meaning_vi": "đi nhờ xe",
+    "meaning_en": "the practice of getting free rides by signaling to drivers",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Hitchhiking is common in some countries.",
+        "vi": "Đi nhờ xe phổ biến ở một số quốc gia."
+      }
+    ],
+    "word_family": [
+      "hitchhike (v)",
+      "hitchhiker (n)"
+    ],
+    "collocations": [
+      "go hitchhiking",
+      "hitchhiking trip",
+      "hitchhiking experience"
+    ],
+    "synonyms": [
+      "thumbing a ride"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "hitch hike (two words)",
+        "correct": "hitchhike (one word)",
+        "explain_vi": "Viết liền khi là động từ"
+      }
+    ],
+    "grammar_patterns": [
+      "go hitchhiking",
+      "hitchhiking across + place"
+    ]
+  },
+  {
+    "word": "layover",
+    "phonetic": "/ˈleɪ.oʊ.vər/",
+    "meaning_vi": "quá cảnh (dừng lại giữa chặng)",
+    "meaning_en": "a short stay between parts of a journey, especially a flight",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We had a three-hour layover in Dubai.",
+        "vi": "Chúng tôi có ba giờ quá cảnh ở Dubai."
+      }
+    ],
+    "word_family": [
+      "lay over (v)"
+    ],
+    "collocations": [
+      "long layover",
+      "have a layover",
+      "layover time"
+    ],
+    "synonyms": [
+      "stopover"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "We have layover in Dubai.",
+        "correct": "We have a layover in Dubai.",
+        "explain_vi": "Cần mạo từ 'a' trước 'layover'."
+      }
+    ],
+    "grammar_patterns": [
+      "have a layover",
+      "layover + noun"
+    ]
+  },
+  {
+    "word": "expedition",
+    "phonetic": "/ˌek.spəˈdɪʃ.ən/",
+    "meaning_vi": "cuộc thám hiểm",
+    "meaning_en": "a journey undertaken for a specific purpose, often exploration or research",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "They organized an expedition to the Arctic.",
+        "vi": "Họ tổ chức một cuộc thám hiểm đến Bắc Cực."
+      }
+    ],
+    "word_family": [
+      "expeditionary (adj)"
+    ],
+    "collocations": [
+      "mount an expedition",
+      "scientific expedition",
+      "expedition leader"
+    ],
+    "synonyms": [
+      "exploration",
+      "mission"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "They went to expedition.",
+        "correct": "They went on an expedition.",
+        "explain_vi": "Dùng giới từ 'on' với 'expedition'."
+      }
+    ],
+    "grammar_patterns": [
+      "go on an expedition",
+      "expedition to + place"
+    ]
+  },
+  {
+    "word": "detour",
+    "phonetic": "/ˈdiː.tʊr/",
+    "meaning_vi": "đường vòng",
+    "meaning_en": "a longer route taken to avoid something or to visit something along the way",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We had to take a detour because of the road closure.",
+        "vi": "Chúng tôi phải đi đường vòng vì đường bị đóng."
+      }
+    ],
+    "word_family": [
+      "detour (v)"
+    ],
+    "collocations": [
+      "take a detour",
+      "make a detour",
+      "detour sign"
+    ],
+    "synonyms": [
+      "diversion",
+      "alternative route"
+    ],
+    "antonyms": [
+      "direct route"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "We detour around the city.",
+        "correct": "We took a detour around the city.",
+        "explain_vi": "'Detour' là danh t���, cần động từ 'take'."
+      }
+    ],
+    "grammar_patterns": [
+      "take a detour",
+      "detour around/through"
+    ]
+  },
+  {
+    "word": "embark",
+    "phonetic": "/ɪmˈbɑːrk/",
+    "meaning_vi": "lên tàu, bắt đầu hành trình",
+    "meaning_en": "to board a ship, aircraft, or other vehicle; to begin a journey or project",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "Passengers are requested to embark at Gate 12.",
+        "vi": "Hành khách được yêu cầu lên tàu tại cửa 12."
+      }
+    ],
+    "word_family": [
+      "embarkation (n)"
+    ],
+    "collocations": [
+      "embark on",
+      "embark upon",
+      "embark a ship"
+    ],
+    "synonyms": [
+      "board",
+      "get on"
+    ],
+    "antonyms": [
+      "disembark"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "We embark the ship.",
+        "correct": "We embark on the ship.",
+        "explain_vi": "Cần giới từ 'on' sau 'embark'."
+      }
+    ],
+    "grammar_patterns": [
+      "embark on/upon + noun"
+    ]
+  },
+  {
+    "word": "disembark",
+    "phonetic": "/ˌdɪs.ɪmˈbɑːrk/",
+    "meaning_vi": "xuống tàu, rời tàu",
+    "meaning_en": "to leave a ship, aircraft, or other vehicle",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "We disembarked the ferry and took a taxi.",
+        "vi": "Chúng tôi xuống phà và bắt taxi."
+      }
+    ],
+    "word_family": [
+      "disembarkation (n)"
+    ],
+    "collocations": [
+      "disembark from",
+      "disembark a plane"
+    ],
+    "synonyms": [
+      "get off",
+      "alight"
+    ],
+    "antonyms": [
+      "embark"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "We disembarked the bus.",
+        "correct": "We disembarked from the bus.",
+        "explain_vi": "Cần giới từ 'from'."
+      }
+    ],
+    "grammar_patterns": [
+      "disembark from + vehicle"
+    ]
+  },
+  {
+    "word": "berth",
+    "phonetic": "/bɜːrθ/",
+    "meaning_vi": "giường ngủ trên tàu; bến tàu",
+    "meaning_en": "a bed on a ship, train, or other vehicle; a place for a ship to dock",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We booked a berth in a first-class compartment.",
+        "vi": "Chúng tôi đặt một giường ngủ trong toa hạng nhất."
+      }
+    ],
+    "word_family": [
+      "berth (v)"
+    ],
+    "collocations": [
+      "book a berth",
+      "upper berth",
+      "lower berth",
+      "give a wide berth"
+    ],
+    "synonyms": [
+      "bunk",
+      "cabin"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I sleep on the berth.",
+        "correct": "I sleep in the berth.",
+        "explain_vi": "Dùng 'in' vì berth là không gian."
+      }
+    ],
+    "grammar_patterns": [
+      "a berth in/on + vehicle"
+    ]
+  },
+  {
+    "word": "cabin",
+    "phonetic": "/ˈkæb.ɪn/",
+    "meaning_vi": "ca bin, phòng nhỏ trên tàu/thuyền",
+    "meaning_en": "a private room on a ship or aircraft",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Our cabin on the cruise ship was spacious.",
+        "vi": "Ca bin của chúng tôi trên tàu du lịch rất rộng rãi."
+      }
+    ],
+    "word_family": [
+      "cabinet (n)"
+    ],
+    "collocations": [
+      "cabin crew",
+      "cabin luggage",
+      "cabin class"
+    ],
+    "synonyms": [
+      "stateroom",
+      "compartment"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "We stay in cabin.",
+        "correct": "We stay in a cabin.",
+        "explain_vi": "Cần mạo từ 'a'."
+      }
+    ],
+    "grammar_patterns": [
+      "in a/the cabin",
+      "cabin on + ship/plane"
+    ]
+  },
+  {
+    "word": "departure",
+    "phonetic": "/dɪˈpɑːr.tʃər/",
+    "meaning_vi": "sự khởi hành",
+    "meaning_en": "the act of leaving, especially to start a journey",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The departure of the flight was delayed by two hours.",
+        "vi": "Chuyến bay khởi hành bị hoãn hai tiếng."
+      }
+    ],
+    "word_family": [
+      "depart (v)"
+    ],
+    "collocations": [
+      "departure lounge",
+      "departure time",
+      "departure gate"
+    ],
+    "synonyms": [
+      "leave-taking",
+      "exit"
+    ],
+    "antonyms": [
+      "arrival"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "We have departure at 8 AM.",
+        "correct": "Our departure is at 8 AM.",
+        "explain_vi": "Dùng tính từ sở hữu hoặc 'the'."
+      }
+    ],
+    "grammar_patterns": [
+      "departure from + place",
+      "departure at + time"
+    ]
+  },
+  {
+    "word": "arrival",
+    "phonetic": "/əˈraɪ.vəl/",
+    "meaning_vi": "sự đến nơi",
+    "meaning_en": "the act of reaching a place, especially at the end of a journey",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We expect our arrival in Paris by noon.",
+        "vi": "Chúng tôi dự kiến đến Paris trước trưa."
+      }
+    ],
+    "word_family": [
+      "arrive (v)"
+    ],
+    "collocations": [
+      "arrival time",
+      "arrival gate",
+      "arrival lounge",
+      "on arrival"
+    ],
+    "synonyms": [
+      "coming",
+      "appearance"
+    ],
+    "antonyms": [
+      "departure"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "We arrival at the airport.",
+        "correct": "We arrive at the airport.",
+        "explain_vi": "'Arrival' là danh từ, cần động từ 'arrive'."
+      }
+    ],
+    "grammar_patterns": [
+      "arrival at/in + place",
+      "on arrival"
+    ]
+  },
+  {
+    "word": "transfer",
+    "phonetic": "/ˈtræns.fɜːr/",
+    "meaning_vi": "sự chuyển tiếp, trung chuyển",
+    "meaning_en": "the act of moving from one vehicle or place to another during a journey",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We had a quick transfer at the central station.",
+        "vi": "Chúng tôi có một lần chuyển tiếp nhanh tại ga trung tâm."
+      }
+    ],
+    "word_family": [
+      "transfer (v)",
+      "transferable (adj)"
+    ],
+    "collocations": [
+      "airport transfer",
+      "transfer time",
+      "make a transfer"
+    ],
+    "synonyms": [
+      "connection",
+      "changeover"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "We transfer to another train.",
+        "correct": "We made a transfer to another train.",
+        "explain_vi": "Dùng 'make a transfer' thay vì động từ 'transfer' khi là danh từ."
+      }
+    ],
+    "grammar_patterns": [
+      "transfer from...to...",
+      "a transfer at + place"
+    ]
+  },
+  {
+    "word": "transit",
+    "phonetic": "/ˈtræn.zɪt/",
+    "meaning_vi": "quá cảnh, vận chuyển",
+    "meaning_en": "the carriage of people or goods from one place to another; the passage through a place",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The goods were lost in transit.",
+        "vi": "Hàng hóa bị thất lạc trong quá trình vận chuyển."
+      }
+    ],
+    "word_family": [
+      "transit (v)",
+      "transition (n)"
+    ],
+    "collocations": [
+      "in transit",
+      "transit visa",
+      "transit passenger"
+    ],
+    "synonyms": [
+      "transportation",
+      "passage"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "We are in transit to Hanoi.",
+        "correct": "We are in transit to Hanoi.",
+        "explain_vi": "Cụm từ 'in transit' đã đúng, không cần thay đổi."
+      }
+    ],
+    "grammar_patterns": [
+      "in transit",
+      "transit through + place"
+    ]
+  },
+  {
+    "word": "terminal",
+    "phonetic": "/ˈtɜːr.mɪ.nəl/",
+    "meaning_vi": "nhà ga, bến (cuối)",
+    "meaning_en": "a building at an airport or station where passengers arrive and depart",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Please proceed to Terminal 3 for international flights.",
+        "vi": "Vui lòng đến Nhà ga số 3 cho các chuyến bay quốc tế."
+      }
+    ],
+    "word_family": [
+      "terminate (v)",
+      "termination (n)"
+    ],
+    "collocations": [
+      "bus terminal",
+      "airport terminal",
+      "terminal building"
+    ],
+    "synonyms": [
+      "station",
+      "depot"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "We meet at terminal.",
+        "correct": "We meet at the terminal.",
+        "explain_vi": "Cần mạo từ 'the'."
+      }
+    ],
+    "grammar_patterns": [
+      "at the terminal",
+      "terminal + number"
+    ]
+  },
+  {
+    "word": "check-in",
+    "phonetic": "/ˈtʃek.ɪn/",
+    "meaning_vi": "làm thủ tục (lên máy bay)",
+    "meaning_en": "the process of registering one's arrival at an airport or hotel",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Online check-in saves time at the airport.",
+        "vi": "Làm thủ tục trực tuyến tiết kiệm thời gian ở sân bay."
+      }
+    ],
+    "word_family": [
+      "check in (v)"
+    ],
+    "collocations": [
+      "check-in counter",
+      "check-in time",
+      "online check-in"
+    ],
+    "synonyms": [
+      "registration"
+    ],
+    "antonyms": [
+      "check-out"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "We check-in at the counter.",
+        "correct": "We check in at the counter.",
+        "explain_vi": "Khi là động từ, viết 'check in' không có dấu gạch nối."
+      }
+    ],
+    "grammar_patterns": [
+      "check-in + noun",
+      "check in (v) at + place"
+    ]
+  },
+  {
+    "word": "boarding pass",
+    "phonetic": "/ˈbɔːr.dɪŋ ˌpæs/",
+    "meaning_vi": "thẻ lên tàu/máy bay",
+    "meaning_en": "a document that allows a passenger to board an aircraft or ship",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Please have your boarding pass ready at the gate.",
+        "vi": "Vui lòng chuẩn bị thẻ lên máy bay tại cửa."
+      }
+    ],
+    "word_family": [
+      "board (v)",
+      "pass (n)"
+    ],
+    "collocations": [
+      "print boarding pass",
+      "boarding pass scanner",
+      "mobile boarding pass"
+    ],
+    "synonyms": [
+      "boarding card"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I lost my boarding pass.",
+        "correct": "I lost my boarding pass.",
+        "explain_vi": "Cụm từ đúng, không có lỗi phổ biến."
+      }
+    ],
+    "grammar_patterns": [
+      "a boarding pass",
+      "boarding pass for + flight"
+    ]
+  },
+  {
+    "word": "jet lag",
+    "phonetic": "/ˈdʒet ˌlæɡ/",
+    "meaning_vi": "mệt mỏi do lệch múi giờ",
+    "meaning_en": "extreme tiredness and other physical effects felt by a person after a long flight across different time zones",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I suffered from jet lag after the flight from New York.",
+        "vi": "Tôi bị mệt do lệch múi giờ sau chuyến bay từ New York."
+      }
+    ],
+    "word_family": [
+      "jet-lagged (adj)"
+    ],
+    "collocations": [
+      "suffer from jet lag",
+      "jet lag symptoms",
+      "overcome jet lag"
+    ],
+    "synonyms": [
+      "time zone fatigue"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have jet lag.",
+        "correct": "I have jet lag.",
+        "explain_vi": "Cụm từ đúng, không lỗi."
+      }
+    ],
+    "grammar_patterns": [
+      "have jet lag",
+      "suffer from jet lag"
+    ]
+  },
+  {
+    "word": "sightseeing",
+    "phonetic": "/ˈsaɪt.siː.ɪŋ/",
+    "meaning_vi": "tham quan, ngắm cảnh",
+    "meaning_en": "the activity of visiting interesting places, especially as a tourist",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We spent the day sightseeing in Rome.",
+        "vi": "Chúng tôi dành cả ngày tham quan ở Rome."
+      }
+    ],
+    "word_family": [
+      "sightsee (v)",
+      "sightseer (n)"
+    ],
+    "collocations": [
+      "go sightseeing",
+      "sightseeing tour",
+      "sightseeing bus"
+    ],
+    "synonyms": [
+      "touring",
+      "exploring"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "We do sightseeing.",
+        "correct": "We go sightseeing.",
+        "explain_vi": "Dùng 'go sightseeing' thay vì 'do'."
+      }
+    ],
+    "grammar_patterns": [
+      "go sightseeing",
+      "sightseeing in + place"
+    ]
+  },
+  {
+    "word": "eco-tourism",
+    "phonetic": "/ˈiː.koʊ.tʊr.ɪ.zəm/",
+    "meaning_vi": "du lịch sinh thái",
+    "meaning_en": "tourism directed toward exotic, often threatened, natural environments, intended to support conservation efforts",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Eco-tourism has become popular in Costa Rica.",
+        "vi": "Du lịch sinh thái đã trở nên phổ biến ở Costa Rica."
+      }
+    ],
+    "word_family": [
+      "eco-tourist (n)",
+      "eco-tour (n)"
+    ],
+    "collocations": [
+      "eco-tourism destination",
+      "eco-tourism industry",
+      "promote eco-tourism"
+    ],
+    "synonyms": [
+      "sustainable tourism"
+    ],
+    "antonyms": [
+      "mass tourism"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "We go eco-tourism.",
+        "correct": "We go on an eco-tourism trip.",
+        "explain_vi": "Cần thêm 'on a trip' hoặc dùng 'eco-tourism' như danh từ."
+      }
+    ],
+    "grammar_patterns": [
+      "eco-tourism + noun",
+      "engage in eco-tourism"
+    ]
+  },
+  {
+    "word": "hitchhiking",
+    "phonetic": "/ˈhɪtʃ.haɪ.kɪŋ/",
+    "meaning_vi": "đi nhờ xe",
+    "meaning_en": "the practice of obtaining free rides by signaling drivers",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Hitchhiking is risky but adventurous.",
+        "vi": "Đi nhờ xe rủi ro nhưng mạo hiểm."
+      }
+    ],
+    "word_family": [
+      "hitchhike (v)",
+      "hitchhiker (n)"
+    ],
+    "collocations": [
+      "go hitchhiking",
+      "hitchhiking trip"
+    ],
+    "synonyms": [
+      "thumbing a ride"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I hitchhiking to the city.",
+        "correct": "I went hitchhiking to the city.",
+        "explain_vi": "Cần động từ 'go' trước 'hitchhiking'."
+      }
+    ],
+    "grammar_patterns": [
+      "go hitchhiking",
+      "hitchhiking across + place"
+    ]
+  },
+  {
+    "word": "itinerary",
+    "phonetic": "/aɪˈtɪn.ə.rer.i/",
+    "meaning_vi": "lịch trình",
+    "meaning_en": "a detailed plan for a journey, including routes and stops",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The travel agency provided a detailed itinerary.",
+        "vi": "Công ty du lịch cung cấp một lịch trình chi tiết."
+      }
+    ],
+    "word_family": [
+      "itinerant (adj)"
+    ],
+    "collocations": [
+      "plan an itinerary",
+      "follow an itinerary",
+      "travel itinerary"
+    ],
+    "synonyms": [
+      "schedule",
+      "route plan"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "We have itinerary.",
+        "correct": "We have an itinerary.",
+        "explain_vi": "Cần mạo từ 'an'."
+      }
+    ],
+    "grammar_patterns": [
+      "an itinerary for + trip",
+      "on the itinerary"
+    ]
+  },
+  {
+    "word": "commute",
+    "phonetic": "/kəˈmjuːt/",
+    "meaning_vi": "sự đi lại thường xuyên (giữa nhà và nơi làm việc)",
+    "meaning_en": "the act of traveling regularly to and from work, especially over a distance",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "My daily commute takes about an hour.",
+        "vi": "Việc đi lại hàng ngày của tôi mất khoảng một giờ."
+      }
+    ],
+    "word_family": [
+      "commute (v)",
+      "commuter (n)"
+    ],
+    "collocations": [
+      "long commute",
+      "commute time",
+      "commute to work"
+    ],
+    "synonyms": [
+      "journey to work",
+      "daily travel"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I commute to work by car.",
+        "correct": "I commute to work by car.",
+        "explain_vi": "Đúng, không lỗi."
+      }
+    ],
+    "grammar_patterns": [
+      "a commute from...to...",
+      "commute (v) between...and..."
+    ]
+  },
+  {
+    "word": "red-eye",
+    "phonetic": "/ˈrɛdˌaɪ/",
+    "meaning_vi": "chuyến bay đêm",
+    "meaning_en": "a late-night flight that arrives early in the morning",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We took the red-eye to New York to save money.",
+        "vi": "Chúng tôi đi chuyến bay đêm đến New York để tiết kiệm tiền."
+      }
+    ],
+    "word_family": [
+      "red-eye (adj)"
+    ],
+    "collocations": [
+      "take a red-eye",
+      "catch the red-eye",
+      "red-eye flight"
+    ],
+    "synonyms": [
+      "overnight flight",
+      "night flight"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "red-eye flight",
+        "correct": "red-eye",
+        "explain_vi": "Từ 'red-eye' đã bao hàm nghĩa chuyến bay, không cần thêm 'flight'."
+      }
+    ],
+    "grammar_patterns": [
+      "take + a/the + red-eye"
+    ]
+  },
+  {
+    "word": "stopover",
+    "phonetic": "/ˈstɒpˌoʊvər/",
+    "meaning_vi": "điểm dừng chân (trong hành trình)",
+    "meaning_en": "a short stay in a place between parts of a journey",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We had a stopover in Dubai on our way to Bangkok.",
+        "vi": "Chúng tôi có điểm dừng chân ở Dubai trên đường đến Bangkok."
+      }
+    ],
+    "word_family": [
+      "stop over (phrasal verb)"
+    ],
+    "collocations": [
+      "have a stopover",
+      "a stopover in",
+      "overnight stopover"
+    ],
+    "synonyms": [
+      "layover (shorter)",
+      "stayover"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "stopover flight",
+        "correct": "stopover",
+        "explain_vi": "Không cần thêm 'flight' vì 'stopover' đã đủ nghĩa."
+      }
+    ],
+    "grammar_patterns": [
+      "have + a + stopover + in + place"
+    ]
+  },
+  {
+    "word": "car rental",
+    "phonetic": "/ˈkɑːr ˌrɛntl/",
+    "meaning_vi": "dịch vụ cho thuê xe",
+    "meaning_en": "the service of renting a car for a period of time",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We booked a car rental at the airport.",
+        "vi": "Chúng tôi đặt dịch vụ cho thuê xe tại sân bay."
+      }
+    ],
+    "word_family": [
+      "rent a car (verb phrase)"
+    ],
+    "collocations": [
+      "car rental company",
+      "car rental service",
+      "book a car rental"
+    ],
+    "synonyms": [
+      "car hire (British)"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "car rent",
+        "correct": "car rental",
+        "explain_vi": "'Rent' là động từ, cần dùng 'rental' (danh từ) khi nói về dịch vụ."
+      }
+    ],
+    "grammar_patterns": [
+      "car rental + noun (e.g., car rental company)"
+    ]
+  },
+  {
+    "word": "open-jaw",
+    "phonetic": "/ˈoʊpən ˌdʒɔː/",
+    "meaning_vi": "vé máy bay khứ hồi không cùng điểm đến/về",
+    "meaning_en": "a flight ticket where the arrival and departure cities differ",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We booked an open-jaw ticket: fly into Paris and out of Rome.",
+        "vi": "Chúng tôi đặt vé mở: bay vào Paris và ra khỏi Rome."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "open-jaw ticket",
+      "open-jaw flight",
+      "book open-jaw"
+    ],
+    "synonyms": [
+      "multi-city ticket"
+    ],
+    "antonyms": [
+      "round-trip ticket"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "open jaw",
+        "correct": "open-jaw",
+        "explain_vi": "Cần có dấu gạch nối khi dùng làm tính từ."
+      }
+    ],
+    "grammar_patterns": [
+      "open-jaw + ticket/noun"
+    ]
+  },
+  {
+    "word": "self-drive",
+    "phonetic": "/ˌsɛlf ˈdraɪv/",
+    "meaning_vi": "tự lái xe (thuê xe tự lái)",
+    "meaning_en": "a type of car rental where you drive yourself",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "We opted for a self-drive car rental to explore the countryside.",
+        "vi": "Chúng tôi chọn thuê xe tự lái để khám phá vùng nông thôn."
+      }
+    ],
+    "word_family": [
+      "self-drive (noun)"
+    ],
+    "collocations": [
+      "self-drive car",
+      "self-drive rental",
+      "self-drive holiday"
+    ],
+    "synonyms": [
+      "self-drive car hire"
+    ],
+    "antonyms": [
+      "chauffeur-driven"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "self-driving",
+        "correct": "self-drive",
+        "explain_vi": "'Self-driving' là xe tự lái (không người lái), 'self-drive' là bạn tự lái."
+      }
+    ],
+    "grammar_patterns": [
+      "self-drive + noun"
+    ]
+  },
+  {
+    "word": "standby",
+    "phonetic": "/ˈstændbaɪ/",
+    "meaning_vi": "chờ (vé chờ, chưa chắc có chỗ)",
+    "meaning_en": "a system where a passenger waits for an available seat without a reservation",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We flew standby and got the last two seats.",
+        "vi": "Chúng tôi bay dạng chờ và có được hai ghế cuối cùng."
+      }
+    ],
+    "word_family": [
+      "stand by (phrasal verb)"
+    ],
+    "collocations": [
+      "fly standby",
+      "standby ticket",
+      "standby list"
+    ],
+    "synonyms": [
+      "on standby"
+    ],
+    "antonyms": [
+      "confirmed reservation"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "stand by ticket",
+        "correct": "standby ticket",
+        "explain_vi": "'Standby' là tính từ, viết liền."
+      }
+    ],
+    "grammar_patterns": [
+      "fly + standby",
+      "on + standby"
+    ]
+  },
+  {
+    "word": "direct flight",
+    "phonetic": "/dɪˈrɛkt flaɪt/",
+    "meaning_vi": "chuyến bay thẳng",
+    "meaning_en": "a flight without stops, but may have intermediate landings without changing plane",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "There is a direct flight from Hanoi to Ho Chi Minh City.",
+        "vi": "Có chuyến bay thẳng từ Hà Nội đến Thành phố Hồ Chí Minh."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "direct flight to",
+      "book a direct flight",
+      "take a direct flight"
+    ],
+    "synonyms": [
+      "non-stop flight (more strict)"
+    ],
+    "antonyms": [
+      "connecting flight",
+      "indirect flight"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "direct flight = non-stop flight",
+        "correct": "direct flight may have stops but no plane change",
+        "explain_vi": "Nhiều người nhầm 'direct flight' là không dừng, nhưng thực tế có thể dừng để đón khách."
+      }
+    ],
+    "grammar_patterns": [
+      "direct flight + to/from"
+    ]
+  },
+  {
+    "word": "non-stop flight",
+    "phonetic": "/ˈnɑn stɒp flaɪt/",
+    "meaning_vi": "chuyến bay không dừng",
+    "meaning_en": "a flight without any intermediate stops",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We prefer non-stop flights to avoid delays.",
+        "vi": "Chúng tôi thích chuyến bay không dừng để tránh chậm trễ."
+      }
+    ],
+    "word_family": [
+      "non-stop (adj)"
+    ],
+    "collocations": [
+      "non-stop flight to",
+      "book a non-stop",
+      "non-stop service"
+    ],
+    "synonyms": [
+      "direct flight (less strict)"
+    ],
+    "antonyms": [
+      "connecting flight"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "non-stop = direct",
+        "correct": "non-stop is always no stops; direct may have stops",
+        "explain_vi": "Không nên nhầm lẫn: non-stop là không dừng, direct có thể dừng."
+      }
+    ],
+    "grammar_patterns": [
+      "non-stop + flight/noun"
+    ]
+  },
+  {
+    "word": "ground transportation",
+    "phonetic": "/ɡraʊnd ˌtrænspərˈteɪʃən/",
+    "meaning_vi": "phương tiện giao thông mặt đất",
+    "meaning_en": "transportation on land, such as buses, taxis, trains",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The hotel provides ground transportation from the airport.",
+        "vi": "Khách sạn cung cấp phương tiện đưa đón từ sân bay."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "ground transportation options",
+      "ground transportation service",
+      "arrange ground transportation"
+    ],
+    "synonyms": [
+      "land transport",
+      "surface transport"
+    ],
+    "antonyms": [
+      "air transportation"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "ground transport",
+        "correct": "ground transportation",
+        "explain_vi": "Thường dùng 'transportation' thay vì 'transport' trong tiếng Anh Mỹ."
+      }
+    ],
+    "grammar_patterns": [
+      "ground transportation + noun"
+    ]
+  },
+  {
+    "word": "shuttle",
+    "phonetic": "/ˈʃʌtl/",
+    "meaning_vi": "xe đưa đón",
+    "meaning_en": "a bus or train that travels regularly between two places",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "A shuttle runs between the hotel and the airport every 30 minutes.",
+        "vi": "Xe đưa đón chạy giữa khách sạn và sân bay mỗi 30 phút."
+      }
+    ],
+    "word_family": [
+      "shuttle (verb)"
+    ],
+    "collocations": [
+      "shuttle bus",
+      "shuttle service",
+      "airport shuttle"
+    ],
+    "synonyms": [
+      "shuttle bus",
+      "courtesy bus"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "shuttle bus is redundant",
+        "correct": "shuttle already implies bus; but 'shuttle bus' is common",
+        "explain_vi": "Có thể dùng 'shuttle' hoặc 'shuttle bus' đều được."
+      }
+    ],
+    "grammar_patterns": [
+      "shuttle + between + place1 + and + place2"
+    ]
+  },
+  {
+    "word": "toll road",
+    "phonetic": "/ˈtoʊl roʊd/",
+    "meaning_vi": "đường thu phí",
+    "meaning_en": "a road for which a fee is charged to use",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We took the toll road to avoid traffic.",
+        "vi": "Chúng tôi đi đường thu phí để tránh kẹt xe."
+      }
+    ],
+    "word_family": [
+      "toll (noun)"
+    ],
+    "collocations": [
+      "toll road fee",
+      "toll road booth",
+      "drive on a toll road"
+    ],
+    "synonyms": [
+      "turnpike",
+      "tollway"
+    ],
+    "antonyms": [
+      "free road"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "toll free road",
+        "correct": "toll road",
+        "explain_vi": "Đừng nhầm với 'toll-free' (miễn phí)."
+      }
+    ],
+    "grammar_patterns": [
+      "take + a/the + toll road"
+    ]
+  },
+  {
+    "word": "peak season",
+    "phonetic": "/piːk ˈsiːzən/",
+    "meaning_vi": "mùa cao điểm",
+    "meaning_en": "the time of year when travel is most popular and prices are highest",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Flights are more expensive during peak season.",
+        "vi": "Vé máy bay đắt hơn trong mùa cao điểm."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "peak season travel",
+      "peak season rates",
+      "during peak season"
+    ],
+    "synonyms": [
+      "high season",
+      "busy season"
+    ],
+    "antonyms": [
+      "off-peak season",
+      "low season"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "peak season = summer",
+        "correct": "peak season varies by destination",
+        "explain_vi": "Không phải lúc nào mùa hè cũng là cao điểm; tùy điểm đến."
+      }
+    ],
+    "grammar_patterns": [
+      "in/during + peak season"
+    ]
+  },
+  {
+    "word": "off-peak",
+    "phonetic": "/ˈɒf piːk/",
+    "meaning_vi": "giờ thấp điểm, mùa thấp điểm",
+    "meaning_en": "a period of lower demand, often with lower prices",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "We traveled off-peak to save money.",
+        "vi": "Chúng tôi đi du lịch vào mùa thấp điểm để tiết kiệm tiền."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "off-peak season",
+      "off-peak hours",
+      "off-peak fares"
+    ],
+    "synonyms": [
+      "low season",
+      "shoulder season"
+    ],
+    "antonyms": [
+      "peak season",
+      "rush hour"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "off peak",
+        "correct": "off-peak",
+        "explain_vi": "Cần gạch nối khi làm tính từ."
+      }
+    ],
+    "grammar_patterns": [
+      "off-peak + noun",
+      "travel + off-peak"
+    ]
+  },
+  {
+    "word": "all-inclusive",
+    "phonetic": "/ˌɔːl ɪnˈkluːsɪv/",
+    "meaning_vi": "trọn gói, bao gồm tất cả",
+    "meaning_en": "a holiday package that includes all meals, drinks, and activities",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "We booked an all-inclusive resort in Cancun.",
+        "vi": "Chúng tôi đặt khu nghỉ dưỡng trọn gói ở Cancun."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "all-inclusive resort",
+      "all-inclusive package",
+      "all-inclusive holiday"
+    ],
+    "synonyms": [
+      "full board (less inclusive)"
+    ],
+    "antonyms": [
+      "pay-as-you-go"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "all inclusive",
+        "correct": "all-inclusive",
+        "explain_vi": "Cần gạch nối khi làm tính từ."
+      }
+    ],
+    "grammar_patterns": [
+      "all-inclusive + noun"
+    ]
+  },
+  {
+    "word": "package holiday",
+    "phonetic": "/ˈpækɪdʒ ˈhɒlɪdeɪ/",
+    "meaning_vi": "kỳ nghỉ trọn gói",
+    "meaning_en": "a holiday organized by a tour operator, including transport and accommodation",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We bought a package holiday to Phuket.",
+        "vi": "Chúng tôi mua kỳ nghỉ trọn gói đến Phuket."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "package holiday deal",
+      "book a package holiday",
+      "all-inclusive package holiday"
+    ],
+    "synonyms": [
+      "package tour",
+      "all-inclusive holiday"
+    ],
+    "antonyms": [
+      "independent travel"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "package tour = package holiday",
+        "correct": "package tour often includes guided tours; package holiday may not",
+        "explain_vi": "Có sự khác biệt nhỏ: package tour thường có hướng dẫn viên."
+      }
+    ],
+    "grammar_patterns": [
+      "package holiday + to + place"
+    ]
+  },
+  {
+    "word": "guided tour",
+    "phonetic": "/ˈɡaɪdɪd tʊr/",
+    "meaning_vi": "tour có hướng dẫn viên",
+    "meaning_en": "a tour led by a guide who provides information",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We took a guided tour of the old town.",
+        "vi": "Chúng tôi tham gia tour có hướng dẫn viên tham quan phố cổ."
+      }
+    ],
+    "word_family": [
+      "guide (noun)"
+    ],
+    "collocations": [
+      "guided tour of",
+      "take a guided tour",
+      "join a guided tour"
+    ],
+    "synonyms": [
+      "escorted tour"
+    ],
+    "antonyms": [
+      "self-guided tour"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "guide tour",
+        "correct": "guided tour",
+        "explain_vi": "Cần dùng tính từ 'guided'."
+      }
+    ],
+    "grammar_patterns": [
+      "guided tour + of + place"
+    ]
+  },
+  {
+    "word": "self-guided tour",
+    "phonetic": "/ˌsɛlf ˈɡaɪdɪd tʊr/",
+    "meaning_vi": "tour tự hướng dẫn",
+    "meaning_en": "a tour where you explore on your own using a map or audio guide",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We did a self-guided tour of the museum using an app.",
+        "vi": "Chúng tôi tự tham quan bảo tàng bằng ứng dụng."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "self-guided tour of",
+      "self-guided walking tour",
+      "self-guided audio tour"
+    ],
+    "synonyms": [
+      "independent tour"
+    ],
+    "antonyms": [
+      "guided tour"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "self guide tour",
+        "correct": "self-guided tour",
+        "explain_vi": "Cần gạch nối và dạng tính từ."
+      }
+    ],
+    "grammar_patterns": [
+      "self-guided tour + of + place"
+    ]
+  },
+  {
+    "word": "excursion",
+    "phonetic": "/ɪkˈskɜːrʒən/",
+    "meaning_vi": "chuyến đi ngắn, chuyến tham quan",
+    "meaning_en": "a short trip or outing, often for leisure",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We went on an excursion to the nearby island.",
+        "vi": "Chúng tôi đi tham quan đảo gần đó."
+      }
+    ],
+    "word_family": [
+      "excursionist (noun)"
+    ],
+    "collocations": [
+      "excursion to",
+      "go on an excursion",
+      "day excursion"
+    ],
+    "synonyms": [
+      "day trip",
+      "outing",
+      "field trip"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "excursion = expedition",
+        "correct": "excursion is short and light; expedition is longer and more serious",
+        "explain_vi": "Excursion là chuyến ngắn, expedition là thám hiểm dài ngày."
+      }
+    ],
+    "grammar_patterns": [
+      "excursion + to + place"
+    ]
+  },
+  {
+    "word": "sightseeing tour",
+    "phonetic": "/ˈsaɪtˌsiːɪŋ tʊr/",
+    "meaning_vi": "tour tham quan danh lam thắng cảnh",
+    "meaning_en": "a tour that visits places of interest",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We booked a sightseeing tour of the city.",
+        "vi": "Chúng tôi đặt tour tham quan thành phố."
+      }
+    ],
+    "word_family": [
+      "sightsee (verb)",
+      "sightseer (noun)"
+    ],
+    "collocations": [
+      "sightseeing tour of",
+      "go on a sightseeing tour",
+      "hop-on hop-off sightseeing tour"
+    ],
+    "synonyms": [
+      "city tour",
+      "tourist tour"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "sight seeing",
+        "correct": "sightseeing",
+        "explain_vi": "Viết liền, không tách rời."
+      }
+    ],
+    "grammar_patterns": [
+      "sightseeing tour + of + place"
+    ]
+  },
+  {
+    "word": "departure lounge",
+    "phonetic": "/dɪˈpɑːrtʃər laʊndʒ/",
+    "meaning_vi": "phòng chờ khởi hành",
+    "meaning_en": "the area in an airport where passengers wait before boarding",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We waited in the departure lounge for our flight.",
+        "vi": "Chúng tôi chờ trong phòng chờ khởi hành cho chuyến bay."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "departure lounge area",
+      "in the departure lounge",
+      "departure lounge bar"
+    ],
+    "synonyms": [
+      "gate area",
+      "boarding lounge"
+    ],
+    "antonyms": [
+      "arrival lounge"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "departure room",
+        "correct": "departure lounge",
+        "explain_vi": "Không dùng 'room', dùng 'lounge'."
+      }
+    ],
+    "grammar_patterns": [
+      "in + the + departure lounge"
+    ]
+  }
+]

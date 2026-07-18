@@ -1,0 +1,2318 @@
+[
+  {
+    "word": "hypothesize",
+    "phonetic": "/haɪˈpɒθ.ə.saɪz/",
+    "meaning_vi": "đưa ra giả thuyết",
+    "meaning_en": "to put forward a hypothesis",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "Scientists hypothesize that the planet may have once supported life.",
+        "vi": "Các nhà khoa học đưa ra giả thuyết rằng hành tinh này có thể đã từng hỗ trợ sự sống."
+      }
+    ],
+    "word_family": [
+      "hypothesis (n)",
+      "hypothetical (adj)"
+    ],
+    "collocations": [
+      "hypothesize that",
+      "hypothesize about"
+    ],
+    "synonyms": [
+      "postulate",
+      "theorize"
+    ],
+    "antonyms": [
+      "prove"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I hypothesize something",
+        "correct": "I hypothesize that something",
+        "explain_vi": "Thường dùng với mệnh đề 'that'"
+      }
+    ],
+    "grammar_patterns": [
+      "hypothesize + that + clause"
+    ]
+  },
+  {
+    "word": "empirical",
+    "phonetic": "/ɪmˈpɪr.ɪ.kəl/",
+    "meaning_vi": "thực nghiệm, dựa trên kinh nghiệm",
+    "meaning_en": "based on observation or experience rather than theory",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The research relies on empirical evidence.",
+        "vi": "Nghiên cứu dựa trên bằng chứng thực nghiệm."
+      }
+    ],
+    "word_family": [
+      "empirically (adv)",
+      "empiricism (n)"
+    ],
+    "collocations": [
+      "empirical evidence",
+      "empirical research",
+      "empirical study"
+    ],
+    "synonyms": [
+      "observational",
+      "experiential"
+    ],
+    "antonyms": [
+      "theoretical"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "empiric evidence",
+        "correct": "empirical evidence",
+        "explain_vi": "Dùng 'empirical' chứ không phải 'empiric'"
+      }
+    ],
+    "grammar_patterns": [
+      "empirical + noun"
+    ]
+  },
+  {
+    "word": "paradigm",
+    "phonetic": "/ˈpær.ə.daɪm/",
+    "meaning_vi": "mô hình, hệ hình",
+    "meaning_en": "a typical example or pattern of something; a set of assumptions",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "This discovery shifted the scientific paradigm.",
+        "vi": "Khám phá này đã thay đổi hệ hình khoa học."
+      }
+    ],
+    "word_family": [
+      "paradigmatic (adj)"
+    ],
+    "collocations": [
+      "paradigm shift",
+      "dominant paradigm",
+      "new paradigm"
+    ],
+    "synonyms": [
+      "model",
+      "framework"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "a paradigm of science",
+        "correct": "a scientific paradigm",
+        "explain_vi": "Thường dùng 'scientific paradigm' thay vì 'paradigm of science'"
+      }
+    ],
+    "grammar_patterns": [
+      "paradigm + of + noun",
+      "paradigm shift"
+    ]
+  },
+  {
+    "word": "quantitative",
+    "phonetic": "/ˈkwɒn.tɪ.tə.tɪv/",
+    "meaning_vi": "định lượng",
+    "meaning_en": "relating to the measurement of quantity",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The study used quantitative methods to collect data.",
+        "vi": "Nghiên cứu sử dụng phương pháp định lượng để thu thập dữ liệu."
+      }
+    ],
+    "word_family": [
+      "quantitatively (adv)",
+      "quantity (n)"
+    ],
+    "collocations": [
+      "quantitative analysis",
+      "quantitative research",
+      "quantitative data"
+    ],
+    "synonyms": [
+      "numerical",
+      "measurable"
+    ],
+    "antonyms": [
+      "qualitative"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "quantitative number",
+        "correct": "quantitative data",
+        "explain_vi": "Không dùng 'quantitative number'; dùng 'quantitative data'"
+      }
+    ],
+    "grammar_patterns": [
+      "quantitative + noun"
+    ]
+  },
+  {
+    "word": "qualitative",
+    "phonetic": "/ˈkwɒl.ɪ.tə.tɪv/",
+    "meaning_vi": "định tính",
+    "meaning_en": "relating to the nature or standard of something",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "Qualitative research explores people's experiences.",
+        "vi": "Nghiên cứu định tính khám phá trải nghiệm của con người."
+      }
+    ],
+    "word_family": [
+      "qualitatively (adv)",
+      "quality (n)"
+    ],
+    "collocations": [
+      "qualitative analysis",
+      "qualitative research",
+      "qualitative data"
+    ],
+    "synonyms": [
+      "descriptive",
+      "interpretive"
+    ],
+    "antonyms": [
+      "quantitative"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "qualitative number",
+        "correct": "qualitative data",
+        "explain_vi": "Không dùng 'qualitative number'; dùng 'qualitative data'"
+      }
+    ],
+    "grammar_patterns": [
+      "qualitative + noun"
+    ]
+  },
+  {
+    "word": "methodology",
+    "phonetic": "/ˌmeθ.əˈdɒl.ə.dʒi/",
+    "meaning_vi": "phương pháp luận",
+    "meaning_en": "a system of methods used in a particular field",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The methodology of the experiment was flawed.",
+        "vi": "Phương pháp luận của thí nghiệm có sai sót."
+      }
+    ],
+    "word_family": [
+      "methodological (adj)",
+      "methodologically (adv)"
+    ],
+    "collocations": [
+      "research methodology",
+      "study methodology",
+      "methodology section"
+    ],
+    "synonyms": [
+      "approach",
+      "procedure"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "methodology of research",
+        "correct": "research methodology",
+        "explain_vi": "Thường dùng 'research methodology' thay vì 'methodology of research'"
+      }
+    ],
+    "grammar_patterns": [
+      "methodology + of + noun",
+      "research methodology"
+    ]
+  },
+  {
+    "word": "correlation",
+    "phonetic": "/ˌkɒr.əˈleɪ.ʃən/",
+    "meaning_vi": "sự tương quan",
+    "meaning_en": "a mutual relationship or connection between two or more things",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "There is a strong correlation between smoking and lung cancer.",
+        "vi": "Có mối tương quan mạnh giữa hút thuốc và ung thư phổi."
+      }
+    ],
+    "word_family": [
+      "correlate (v)",
+      "correlational (adj)"
+    ],
+    "collocations": [
+      "strong correlation",
+      "positive correlation",
+      "negative correlation",
+      "correlation between"
+    ],
+    "synonyms": [
+      "relationship",
+      "association"
+    ],
+    "antonyms": [
+      "independence"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "correlation of A and B",
+        "correct": "correlation between A and B",
+        "explain_vi": "Dùng 'correlation between' chứ không phải 'correlation of'"
+      }
+    ],
+    "grammar_patterns": [
+      "correlation + between + noun and noun"
+    ]
+  },
+  {
+    "word": "causal",
+    "phonetic": "/ˈkɔː.zəl/",
+    "meaning_vi": "nhân quả",
+    "meaning_en": "relating to or acting as a cause",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The study aims to establish a causal link.",
+        "vi": "Nghiên cứu nhằm thiết lập mối liên hệ nhân quả."
+      }
+    ],
+    "word_family": [
+      "causally (adv)",
+      "causality (n)"
+    ],
+    "collocations": [
+      "causal relationship",
+      "causal link",
+      "causal factor"
+    ],
+    "synonyms": [
+      "causative",
+      "etiological"
+    ],
+    "antonyms": [
+      "accidental"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "causal reason",
+        "correct": "causal factor",
+        "explain_vi": "Dùng 'causal factor' thay vì 'causal reason'"
+      }
+    ],
+    "grammar_patterns": [
+      "causal + noun"
+    ]
+  },
+  {
+    "word": "variable",
+    "phonetic": "/ˈveə.ri.ə.bəl/",
+    "meaning_vi": "biến số",
+    "meaning_en": "an element that can change or be changed",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Temperature is a key variable in the experiment.",
+        "vi": "Nhiệt độ là một biến số chính trong thí nghiệm."
+      }
+    ],
+    "word_family": [
+      "variability (n)",
+      "invariable (adj)"
+    ],
+    "collocations": [
+      "independent variable",
+      "dependent variable",
+      "control variable",
+      "key variable"
+    ],
+    "synonyms": [
+      "factor",
+      "parameter"
+    ],
+    "antonyms": [
+      "constant"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "variable of temperature",
+        "correct": "temperature variable",
+        "explain_vi": "Thường dùng 'temperature variable' thay vì 'variable of temperature'"
+      }
+    ],
+    "grammar_patterns": [
+      "variable + in + noun"
+    ]
+  },
+  {
+    "word": "control group",
+    "phonetic": "/kənˈtrəʊl ɡruːp/",
+    "meaning_vi": "nhóm đối chứng",
+    "meaning_en": "a group in an experiment that does not receive the treatment",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The control group received a placebo.",
+        "vi": "Nhóm đối chứng nhận được giả dược."
+      }
+    ],
+    "word_family": [
+      "control (v)"
+    ],
+    "collocations": [
+      "control group design",
+      "control group vs experimental group"
+    ],
+    "synonyms": [
+      "comparison group"
+    ],
+    "antonyms": [
+      "experimental group"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "controlled group",
+        "correct": "control group",
+        "explain_vi": "Dùng 'control group' chứ không phải 'controlled group'"
+      }
+    ],
+    "grammar_patterns": [
+      "the + control group"
+    ]
+  },
+  {
+    "word": "statistically significant",
+    "phonetic": "/stəˈtɪs.tɪ.kli sɪɡˈnɪf.ɪ.kənt/",
+    "meaning_vi": "có ý nghĩa thống kê",
+    "meaning_en": "unlikely to have occurred by chance",
+    "pos": "adjective phrase",
+    "examples": [
+      {
+        "en": "The results were statistically significant.",
+        "vi": "Kết quả có ý nghĩa thống kê."
+      }
+    ],
+    "word_family": [
+      "statistical significance (n)"
+    ],
+    "collocations": [
+      "statistically significant difference",
+      "statistically significant result"
+    ],
+    "synonyms": [
+      "meaningful"
+    ],
+    "antonyms": [
+      "insignificant"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "significant statistically",
+        "correct": "statistically significant",
+        "explain_vi": "Trật tự từ: 'statistically significant'"
+      }
+    ],
+    "grammar_patterns": [
+      "be + statistically significant"
+    ]
+  },
+  {
+    "word": "peer review",
+    "phonetic": "/pɪər rɪˈvjuː/",
+    "meaning_vi": "bình duyệt đồng cấp",
+    "meaning_en": "evaluation of scientific work by others in the same field",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The paper is under peer review.",
+        "vi": "Bài báo đang được bình duyệt."
+      }
+    ],
+    "word_family": [
+      "peer-reviewed (adj)"
+    ],
+    "collocations": [
+      "peer review process",
+      "peer review journal",
+      "undergo peer review"
+    ],
+    "synonyms": [
+      "refereeing"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "peer review paper",
+        "correct": "peer-reviewed paper",
+        "explain_vi": "Dùng 'peer-reviewed' làm tính từ"
+      }
+    ],
+    "grammar_patterns": [
+      "under + peer review"
+    ]
+  },
+  {
+    "word": "replicate",
+    "phonetic": "/ˈrep.lɪ.keɪt/",
+    "meaning_vi": "sao chép, tái tạo (kết quả nghiên cứu)",
+    "meaning_en": "to repeat a study to verify its results",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "Other labs failed to replicate the findings.",
+        "vi": "Các phòng thí nghiệm khác đã thất bại trong việc tái tạo các phát hiện."
+      }
+    ],
+    "word_family": [
+      "replication (n)",
+      "replicable (adj)"
+    ],
+    "collocations": [
+      "replicate results",
+      "replicate study",
+      "replicate experiment"
+    ],
+    "synonyms": [
+      "duplicate",
+      "reproduce"
+    ],
+    "antonyms": [
+      "invalidate"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "replicate the research again",
+        "correct": "replicate the research",
+        "explain_vi": "Không cần 'again' vì 'replicate' đã bao hàm ý lặp lại"
+      }
+    ],
+    "grammar_patterns": [
+      "replicate + noun"
+    ]
+  },
+  {
+    "word": "extrapolate",
+    "phonetic": "/ɪkˈstræp.ə.leɪt/",
+    "meaning_vi": "ngoại suy",
+    "meaning_en": "to estimate something beyond the known data",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "We can extrapolate future trends from current data.",
+        "vi": "Chúng ta có thể ngoại suy xu hướng tương lai từ dữ liệu hiện tại."
+      }
+    ],
+    "word_family": [
+      "extrapolation (n)",
+      "extrapolative (adj)"
+    ],
+    "collocations": [
+      "extrapolate from",
+      "extrapolate to",
+      "extrapolate data"
+    ],
+    "synonyms": [
+      "project",
+      "infer"
+    ],
+    "antonyms": [
+      "interpolate"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "extrapolate about",
+        "correct": "extrapolate from",
+        "explain_vi": "Dùng 'extrapolate from' thay vì 'extrapolate about'"
+      }
+    ],
+    "grammar_patterns": [
+      "extrapolate + from + noun",
+      "extrapolate + to + noun"
+    ]
+  },
+  {
+    "word": "robust",
+    "phonetic": "/rəʊˈbʌst/",
+    "meaning_vi": "mạnh mẽ, vững chắc (kết quả nghiên cứu)",
+    "meaning_en": "strong and reliable; not easily damaged or weakened",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The study provides robust evidence.",
+        "vi": "Nghiên cứu cung cấp bằng chứng vững chắc."
+      }
+    ],
+    "word_family": [
+      "robustness (n)",
+      "robustly (adv)"
+    ],
+    "collocations": [
+      "robust evidence",
+      "robust analysis",
+      "robust results"
+    ],
+    "synonyms": [
+      "sturdy",
+      "solid"
+    ],
+    "antonyms": [
+      "weak",
+      "fragile"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "robust number",
+        "correct": "robust data",
+        "explain_vi": "Dùng 'robust data' thay vì 'robust number'"
+      }
+    ],
+    "grammar_patterns": [
+      "robust + noun"
+    ]
+  },
+  {
+    "word": "anomaly",
+    "phonetic": "/əˈnɒm.ə.li/",
+    "meaning_vi": "sự bất thường, dị thường",
+    "meaning_en": "something that deviates from what is standard or expected",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The data showed an anomaly that needed explanation.",
+        "vi": "Dữ liệu cho thấy một sự bất thường cần được giải thích."
+      }
+    ],
+    "word_family": [
+      "anomalous (adj)",
+      "anomalously (adv)"
+    ],
+    "collocations": [
+      "statistical anomaly",
+      "data anomaly",
+      "temperature anomaly"
+    ],
+    "synonyms": [
+      "aberration",
+      "irregularity"
+    ],
+    "antonyms": [
+      "norm",
+      "regularity"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "an anomaly of data",
+        "correct": "a data anomaly",
+        "explain_vi": "Thường dùng 'data anomaly' thay vì 'anomaly of data'"
+      }
+    ],
+    "grammar_patterns": [
+      "anomaly + in + noun"
+    ]
+  },
+  {
+    "word": "hypothesis testing",
+    "phonetic": "/haɪˈpɒθ.ə.sɪs ˈtest.ɪŋ/",
+    "meaning_vi": "kiểm định giả thuyết",
+    "meaning_en": "a method of statistical inference",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Hypothesis testing is a core part of statistics.",
+        "vi": "Kiểm định giả thuyết là một phần cốt lõi của thống kê."
+      }
+    ],
+    "word_family": [
+      "hypothesis test (n)"
+    ],
+    "collocations": [
+      "null hypothesis testing",
+      "hypothesis testing procedure"
+    ],
+    "synonyms": [
+      "significance testing"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "testing hypothesis",
+        "correct": "hypothesis testing",
+        "explain_vi": "Trật tự từ: 'hypothesis testing'"
+      }
+    ],
+    "grammar_patterns": [
+      "hypothesis testing + noun"
+    ]
+  },
+  {
+    "word": "longitudinal study",
+    "phonetic": "/ˌlɒŋ.ɡɪˈtjuː.dɪ.nəl ˈstʌd.i/",
+    "meaning_vi": "nghiên cứu dọc",
+    "meaning_en": "a study that follows the same subjects over a long period",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "A longitudinal study tracked children's development for 20 years.",
+        "vi": "Một nghiên cứu dọc đã theo dõi sự phát triển của trẻ em trong 20 năm."
+      }
+    ],
+    "word_family": [
+      "longitudinally (adv)"
+    ],
+    "collocations": [
+      "longitudinal study design",
+      "longitudinal data"
+    ],
+    "synonyms": [
+      "cohort study"
+    ],
+    "antonyms": [
+      "cross-sectional study"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "longitudinal research",
+        "correct": "longitudinal study",
+        "explain_vi": "Thường dùng 'longitudinal study' hơn 'longitudinal research'"
+      }
+    ],
+    "grammar_patterns": [
+      "a + longitudinal study"
+    ]
+  },
+  {
+    "word": "cross-sectional study",
+    "phonetic": "/ˈkrɒs ˈsek.ʃən.əl ˈstʌd.i/",
+    "meaning_vi": "nghiên cứu cắt ngang",
+    "meaning_en": "a study that examines data at a single point in time",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "A cross-sectional study compared different age groups.",
+        "vi": "Một nghiên cứu cắt ngang so sánh các nhóm tuổi khác nhau."
+      }
+    ],
+    "word_family": [
+      "cross-section (n)"
+    ],
+    "collocations": [
+      "cross-sectional design",
+      "cross-sectional survey"
+    ],
+    "synonyms": [
+      "prevalence study"
+    ],
+    "antonyms": [
+      "longitudinal study"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "cross-sectional research",
+        "correct": "cross-sectional study",
+        "explain_vi": "Thường dùng 'cross-sectional study' hơn 'cross-sectional research'"
+      }
+    ],
+    "grammar_patterns": [
+      "a + cross-sectional study"
+    ]
+  },
+  {
+    "word": "confounding variable",
+    "phonetic": "/kənˈfaʊn.dɪŋ ˈveə.ri.ə.bəl/",
+    "meaning_vi": "biến gây nhiễu",
+    "meaning_en": "a variable that influences both the dependent and independent variables",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Age can be a confounding variable in many studies.",
+        "vi": "Tuổi tác có thể là một biến gây nhiễu trong nhiều nghiên cứu."
+      }
+    ],
+    "word_family": [
+      "confound (v)"
+    ],
+    "collocations": [
+      "confounding variable effect",
+      "control for confounding variables"
+    ],
+    "synonyms": [
+      "confounder",
+      "lurking variable"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "confused variable",
+        "correct": "confounding variable",
+        "explain_vi": "Dùng 'confounding' chứ không phải 'confused'"
+      }
+    ],
+    "grammar_patterns": [
+      "confounding variable + in + noun"
+    ]
+  },
+  {
+    "word": "methodology",
+    "phonetic": "/ˌmeθ.əˈdɒl.ə.dʒi/",
+    "meaning_vi": "phương pháp luận",
+    "meaning_en": "a system of methods used in a particular area of study or activity",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The methodology used in this study is robust.",
+        "vi": "Phương pháp luận được sử dụng trong nghiên cứu này rất chắc chắn."
+      }
+    ],
+    "word_family": [
+      "methodological (adj)",
+      "methodologically (adv)"
+    ],
+    "collocations": [
+      "research methodology",
+      "methodology section",
+      "adopt a methodology"
+    ],
+    "synonyms": [
+      "approach",
+      "framework"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "methodology is very important",
+        "correct": "methodology is very important",
+        "explain_vi": "Từ 'methodology' đã bao hàm 'system of methods', không cần 'method' riêng."
+      }
+    ],
+    "grammar_patterns": [
+      "the methodology of/for + noun"
+    ]
+  },
+  {
+    "word": "correlation",
+    "phonetic": "/ˌkɒr.əˈleɪ.ʃən/",
+    "meaning_vi": "mối tương quan",
+    "meaning_en": "a mutual relationship or connection between two or more things",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "There is a strong correlation between smoking and lung cancer.",
+        "vi": "Có mối tương quan mạnh mẽ giữa hút thuốc và ung thư phổi."
+      }
+    ],
+    "word_family": [
+      "correlate (v)",
+      "correlational (adj)"
+    ],
+    "collocations": [
+      "strong correlation",
+      "positive correlation",
+      "negative correlation",
+      "correlation coefficient"
+    ],
+    "synonyms": [
+      "association",
+      "relationship"
+    ],
+    "antonyms": [
+      "independence"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "correlation means causation",
+        "correct": "correlation does not imply causation",
+        "explain_vi": "Tương quan không có nghĩa là nguyên nhân."
+      }
+    ],
+    "grammar_patterns": [
+      "correlation between + noun and + noun"
+    ]
+  },
+  {
+    "word": "causal",
+    "phonetic": "/ˈkɔː.zəl/",
+    "meaning_vi": "nhân quả",
+    "meaning_en": "relating to or acting as a cause",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The study aims to establish a causal link.",
+        "vi": "Nghiên cứu nhằm thiết lập một mối liên hệ nhân quả."
+      }
+    ],
+    "word_family": [
+      "causality (n)",
+      "causation (n)",
+      "cause (n/v)"
+    ],
+    "collocations": [
+      "causal relationship",
+      "causal effect",
+      "causal mechanism"
+    ],
+    "synonyms": [
+      "causative"
+    ],
+    "antonyms": [
+      "accidental"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "causal relation",
+        "correct": "causal relationship",
+        "explain_vi": "Thường dùng 'relationship' thay vì 'relation'."
+      }
+    ],
+    "grammar_patterns": [
+      "causal + noun"
+    ]
+  },
+  {
+    "word": "variable",
+    "phonetic": "/ˈveə.ri.ə.bəl/",
+    "meaning_vi": "biến số",
+    "meaning_en": "an element, feature, or factor that is liable to vary or change",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Temperature is an important variable in the experiment.",
+        "vi": "Nhiệt độ là một biến số quan trọng trong thí nghiệm."
+      }
+    ],
+    "word_family": [
+      "vary (v)",
+      "variation (n)",
+      "variability (n)"
+    ],
+    "collocations": [
+      "independent variable",
+      "dependent variable",
+      "control variable",
+      "confounding variable"
+    ],
+    "synonyms": [
+      "factor",
+      "parameter"
+    ],
+    "antonyms": [
+      "constant"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "variable is change",
+        "correct": "variable is a factor that can change",
+        "explain_vi": "Biến số là yếu tố có thể thay đổi, không ph���i bản thân sự thay đổi."
+      }
+    ],
+    "grammar_patterns": [
+      "variable in + noun"
+    ]
+  },
+  {
+    "word": "control group",
+    "phonetic": "/kənˈtrəʊl ɡruːp/",
+    "meaning_vi": "nhóm đối chứng",
+    "meaning_en": "a group in an experiment that does not receive the treatment and is used as a baseline",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The control group received a placebo.",
+        "vi": "Nhóm đối chứng nhận được giả dược."
+      }
+    ],
+    "word_family": [
+      "control (v/n)"
+    ],
+    "collocations": [
+      "assign to a control group",
+      "control group condition"
+    ],
+    "synonyms": [
+      "comparison group"
+    ],
+    "antonyms": [
+      "experimental group"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "control group is the group that is controlled",
+        "correct": "control group is the group that does not receive the treatment",
+        "explain_vi": "Nhóm đối chứng là nhóm không nhận tác động."
+      }
+    ],
+    "grammar_patterns": [
+      "the control group + verb"
+    ]
+  },
+  {
+    "word": "statistically significant",
+    "phonetic": "/stəˈtɪs.tɪ.kəl.i sɪɡˈnɪf.ɪ.kənt/",
+    "meaning_vi": "có ý nghĩa thống kê",
+    "meaning_en": "unlikely to have occurred by chance, as determined by a statistical test",
+    "pos": "adjective phrase",
+    "examples": [
+      {
+        "en": "The results were statistically significant at p < 0.05.",
+        "vi": "Kết quả có ý nghĩa thống kê với p < 0.05."
+      }
+    ],
+    "word_family": [
+      "statistical significance (n)"
+    ],
+    "collocations": [
+      "statistically significant difference",
+      "statistically significant effect"
+    ],
+    "synonyms": [
+      "meaningful",
+      "non-random"
+    ],
+    "antonyms": [
+      "insignificant",
+      "non-significant"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "statistically significant means important",
+        "correct": "statistically significant means unlikely due to chance, not necessarily important",
+        "explain_vi": "Ý nghĩa thống kê không đồng nghĩa với quan trọng về mặt thực tế."
+      }
+    ],
+    "grammar_patterns": [
+      "be statistically significant"
+    ]
+  },
+  {
+    "word": "peer review",
+    "phonetic": "/pɪər rɪˈvjuː/",
+    "meaning_vi": "bình duyệt đồng cấp",
+    "meaning_en": "evaluation of scientific work by other experts in the same field",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The paper underwent rigorous peer review.",
+        "vi": "Bài báo đã trải qua quá trình bình duyệt đồng cấp nghiêm ngặt."
+      }
+    ],
+    "word_family": [
+      "peer-reviewed (adj)"
+    ],
+    "collocations": [
+      "peer review process",
+      "peer review journal",
+      "undergo peer review"
+    ],
+    "synonyms": [
+      "refereeing"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "peer review is done by friends",
+        "correct": "peer review is done by anonymous experts",
+        "explain_vi": "Bình duyệt đồng cấp do các chuyên gia ẩn danh thực hiện, không phải bạn bè."
+      }
+    ],
+    "grammar_patterns": [
+      "peer review of + noun"
+    ]
+  },
+  {
+    "word": "replicate",
+    "phonetic": "/ˈrep.lɪ.keɪt/",
+    "meaning_vi": "tái tạo, lặp lại",
+    "meaning_en": "to repeat (a scientific experiment or study) to obtain consistent results",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "Other labs failed to replicate the findings.",
+        "vi": "Các phòng thí nghiệm khác đã thất bại trong việc tái tạo các phát hiện."
+      }
+    ],
+    "word_family": [
+      "replication (n)",
+      "replicable (adj)"
+    ],
+    "collocations": [
+      "replicate a study",
+      "replicate results",
+      "successfully replicate"
+    ],
+    "synonyms": [
+      "repeat",
+      "duplicate"
+    ],
+    "antonyms": [
+      "contradict"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "replicate means copy exactly",
+        "correct": "replicate means repeat with the same methods to see if results are consistent",
+        "explain_vi": "Tái tạo không phải sao chép y hệt mà là lặp lại để kiểm tra độ tin cậy."
+      }
+    ],
+    "grammar_patterns": [
+      "replicate + noun"
+    ]
+  },
+  {
+    "word": "extrapolate",
+    "phonetic": "/ɪkˈstræp.ə.leɪt/",
+    "meaning_vi": "ngoại suy",
+    "meaning_en": "to extend the application of findings beyond the range of the data",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "We can extrapolate these results to the general population.",
+        "vi": "Chúng ta có thể ngoại suy các kết quả này cho dân số chung."
+      }
+    ],
+    "word_family": [
+      "extrapolation (n)"
+    ],
+    "collocations": [
+      "extrapolate from data",
+      "extrapolate to",
+      "extrapolate beyond"
+    ],
+    "synonyms": [
+      "project",
+      "infer"
+    ],
+    "antonyms": [
+      "interpolate"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "extrapolate means guess",
+        "correct": "extrapolate means estimate based on known data",
+        "explain_vi": "Ngoại suy dựa trên dữ liệu có sẵn, không phải phỏng đoán."
+      }
+    ],
+    "grammar_patterns": [
+      "extrapolate + from + noun + to + noun"
+    ]
+  },
+  {
+    "word": "robust",
+    "phonetic": "/rəʊˈbʌst/",
+    "meaning_vi": "mạnh mẽ, chắc chắn (kết quả/phương pháp)",
+    "meaning_en": "strong; not likely to fail or be affected by changes",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The study provides robust evidence for the theory.",
+        "vi": "Nghiên cứu cung cấp bằng chứng mạnh mẽ cho lý thuyết."
+      }
+    ],
+    "word_family": [
+      "robustness (n)"
+    ],
+    "collocations": [
+      "robust analysis",
+      "robust method",
+      "robust results"
+    ],
+    "synonyms": [
+      "strong",
+      "solid",
+      "reliable"
+    ],
+    "antonyms": [
+      "weak",
+      "fragile"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "robust means big",
+        "correct": "robust means strong and reliable",
+        "explain_vi": "Robust không có nghĩa là lớn mà là chắc chắn, đáng tin cậy."
+      }
+    ],
+    "grammar_patterns": [
+      "robust + noun"
+    ]
+  },
+  {
+    "word": "anomaly",
+    "phonetic": "/əˈnɒm.ə.li/",
+    "meaning_vi": "bất thường, dị thường",
+    "meaning_en": "something that deviates from what is standard, normal, or expected",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The data showed an anomaly that required further investigation.",
+        "vi": "Dữ liệu cho thấy một điểm bất thường cần được điều tra thêm."
+      }
+    ],
+    "word_family": [
+      "anomalous (adj)",
+      "anomalously (adv)"
+    ],
+    "collocations": [
+      "statistical anomaly",
+      "temperature anomaly",
+      "detect an anomaly"
+    ],
+    "synonyms": [
+      "aberration",
+      "outlier",
+      "irregularity"
+    ],
+    "antonyms": [
+      "normality",
+      "regularity"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "anomaly is a mistake",
+        "correct": "anomaly is an unexpected observation, not necessarily an error",
+        "explain_vi": "Bất thường là quan sát không mong đợi, không nhất thiết là sai sót."
+      }
+    ],
+    "grammar_patterns": [
+      "anomaly in + noun"
+    ]
+  },
+  {
+    "word": "hypothesis testing",
+    "phonetic": "/haɪˈpɒθ.ə.sɪs ˈtest.ɪŋ/",
+    "meaning_vi": "kiểm định giả thuyết",
+    "meaning_en": "a statistical method used to decide whether a hypothesis is supported by the data",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Hypothesis testing is a core component of inferential statistics.",
+        "vi": "Kiểm định giả thuyết là một thành phần cốt lõi của thống kê suy luận."
+      }
+    ],
+    "word_family": [
+      "hypothesis (n)",
+      "hypothesize (v)",
+      "test (v/n)"
+    ],
+    "collocations": [
+      "null hypothesis testing",
+      "alternative hypothesis",
+      "conduct hypothesis testing"
+    ],
+    "synonyms": [
+      "significance testing"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "hypothesis testing proves a hypothesis",
+        "correct": "hypothesis testing either rejects or fails to reject the null hypothesis",
+        "explain_vi": "Kiểm định giả thuyết không chứng minh giả thuyết đúng, chỉ bác bỏ hoặc không bác bỏ giả thuyết không."
+      }
+    ],
+    "grammar_patterns": [
+      "hypothesis testing of + noun"
+    ]
+  },
+  {
+    "word": "longitudinal study",
+    "phonetic": "/lɒŋ.ɡɪˈtjuː.dɪ.nəl ˈstʌd.i/",
+    "meaning_vi": "nghiên cứu dọc",
+    "meaning_en": "a research study that follows the same subjects over a long period",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "A longitudinal study tracked the participants for 20 years.",
+        "vi": "Một nghiên cứu dọc đã theo dõi những người tham gia trong 20 năm."
+      }
+    ],
+    "word_family": [
+      "longitude (n)",
+      "longitudinal (adj)"
+    ],
+    "collocations": [
+      "longitudinal data",
+      "longitudinal design",
+      "longitudinal analysis"
+    ],
+    "synonyms": [
+      "cohort study",
+      "panel study"
+    ],
+    "antonyms": [
+      "cross-sectional study"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "longitudinal study is long",
+        "correct": "longitudinal study follows subjects over time, not necessarily long in duration",
+        "explain_vi": "Nghiên cứu dọc theo dõi theo thời gian, không nh��t thiết phải dài."
+      }
+    ],
+    "grammar_patterns": [
+      "a longitudinal study of + noun"
+    ]
+  },
+  {
+    "word": "cross-sectional study",
+    "phonetic": "/krɒs ˈsek.ʃən.əl ˈstʌd.i/",
+    "meaning_vi": "nghiên cứu cắt ngang",
+    "meaning_en": "a research study that analyzes data from a population at a specific point in time",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "A cross-sectional study was conducted to assess prevalence.",
+        "vi": "Một nghiên cứu cắt ngang được tiến hành để đánh giá tỷ lệ hiện mắc."
+      }
+    ],
+    "word_family": [
+      "cross-section (n)",
+      "cross-sectional (adj)"
+    ],
+    "collocations": [
+      "cross-sectional survey",
+      "cross-sectional data",
+      "cross-sectional analysis"
+    ],
+    "synonyms": [
+      "prevalence study"
+    ],
+    "antonyms": [
+      "longitudinal study"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "cross-sectional study shows causality",
+        "correct": "cross-sectional study shows associations, not causality",
+        "explain_vi": "Nghiên cứu cắt ngang chỉ cho thấy mối liên quan, không phải nguyên nhân."
+      }
+    ],
+    "grammar_patterns": [
+      "a cross-sectional study of + noun"
+    ]
+  },
+  {
+    "word": "confounding variable",
+    "phonetic": "/kənˈfaʊn.dɪŋ ˈveə.ri.ə.bəl/",
+    "meaning_vi": "biến gây nhiễu",
+    "meaning_en": "a variable that influences both the dependent and independent variables, causing a spurious association",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Age can be a confounding variable in many studies.",
+        "vi": "Tuổi tác có thể là một biến gây nhiễu trong nhiều nghiên cứu."
+      }
+    ],
+    "word_family": [
+      "confound (v)",
+      "confounded (adj)"
+    ],
+    "collocations": [
+      "control for confounding variables",
+      "potential confounding variable",
+      "confounding factor"
+    ],
+    "synonyms": [
+      "confounder",
+      "lurking variable"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "confounding variable is a variable that confuses",
+        "correct": "confounding variable distorts the true relationship",
+        "explain_vi": "Biến gây nhiễu làm sai lệch mối quan hệ thực sự, không chỉ gây nhầm lẫn."
+      }
+    ],
+    "grammar_patterns": [
+      "confounding variable in + noun"
+    ]
+  },
+  {
+    "word": "synthesize",
+    "phonetic": "/ˈsɪn.θə.saɪz/",
+    "meaning_vi": "tổng hợp",
+    "meaning_en": "to combine separate elements into a coherent whole, especially in research or analysis",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "The review synthesizes findings from multiple studies.",
+        "vi": "Bài tổng quan tổng hợp các phát hiện từ nhiều nghiên cứu."
+      }
+    ],
+    "word_family": [
+      "synthesis (n)",
+      "synthetic (adj)"
+    ],
+    "collocations": [
+      "synthesize data",
+      "synthesize information",
+      "synthesize results"
+    ],
+    "synonyms": [
+      "integrate",
+      "combine",
+      "amalgamate"
+    ],
+    "antonyms": [
+      "analyze",
+      "separate"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "synthesize means summarize",
+        "correct": "synthesize means combine to create something new, not just summarize",
+        "explain_vi": "Tổng hợp là kết hợp để tạo ra cái mới, không chỉ tóm tắt."
+      }
+    ],
+    "grammar_patterns": [
+      "synthesize + noun"
+    ]
+  },
+  {
+    "word": "empirical evidence",
+    "phonetic": "/ɪmˈpɪr.ɪ.kəl ˈev.ɪ.dəns/",
+    "meaning_vi": "bằng chứng thực nghiệm",
+    "meaning_en": "evidence obtained through observation or experimentation",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The theory is supported by empirical evidence.",
+        "vi": "Lý thuyết được hỗ trợ bởi bằng chứng thực nghiệm."
+      }
+    ],
+    "word_family": [
+      "empirically (adv)",
+      "empiricism (n)"
+    ],
+    "collocations": [
+      "strong empirical evidence",
+      "empirical evidence suggests",
+      "lack of empirical evidence"
+    ],
+    "synonyms": [
+      "observational evidence",
+      "experimental evidence"
+    ],
+    "antonyms": [
+      "theoretical evidence",
+      "anecdotal evidence"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "empirical evidence is based on theory",
+        "correct": "empirical evidence is based on observation/experiment",
+        "explain_vi": "Bằng chứng thực nghiệm dựa trên quan sát, không phải lý thuyết."
+      }
+    ],
+    "grammar_patterns": [
+      "empirical evidence of/for + noun"
+    ]
+  },
+  {
+    "word": "theoretical framework",
+    "phonetic": "/θɪəˈret.ɪ.kəl ˈfreɪm.wɜːk/",
+    "meaning_vi": "khung lý thuyết",
+    "meaning_en": "a set of concepts and assumptions that guide research",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The study is grounded in a strong theoretical framework.",
+        "vi": "Nghiên cứu dựa trên một khung lý thuyết vững chắc."
+      }
+    ],
+    "word_family": [
+      "theory (n)",
+      "theoretically (adv)"
+    ],
+    "collocations": [
+      "develop a theoretical framework",
+      "theoretical framework for",
+      "within a theoretical framework"
+    ],
+    "synonyms": [
+      "conceptual framework",
+      "theoretical basis"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "theoretical framework is the same as literature review",
+        "correct": "theoretical framework is the lens for analysis, not just a summary of literature",
+        "explain_vi": "Khung lý thuyết là lăng kính phân tích, không chỉ là tổng quan tài liệu."
+      }
+    ],
+    "grammar_patterns": [
+      "theoretical framework of/for + noun"
+    ]
+  },
+  {
+    "word": "data analysis",
+    "phonetic": "/ˈdeɪ.tə əˈnæl.ə.sɪs/",
+    "meaning_vi": "phân tích dữ liệu",
+    "meaning_en": "the process of inspecting, cleaning, transforming, and modeling data to discover useful information",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Data analysis was performed using SPSS.",
+        "vi": "Phân tích dữ liệu được thực hiện bằng SPSS."
+      }
+    ],
+    "word_family": [
+      "analyze (v)",
+      "analytical (adj)"
+    ],
+    "collocations": [
+      "data analysis methods",
+      "data analysis techniques",
+      "data analysis software"
+    ],
+    "synonyms": [
+      "data processing",
+      "data examination"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "data is plural",
+        "correct": "data can be singular or plural, but in academic contexts often plural",
+        "explain_vi": "Trong ngữ cảnh học thuật, 'data' thường được coi là danh từ số nhiều."
+      }
+    ],
+    "grammar_patterns": [
+      "data analysis of + noun"
+    ]
+  },
+  {
+    "word": "literature review",
+    "phonetic": "/ˈlɪt.rə.tʃə rɪˈvjuː/",
+    "meaning_vi": "tổng quan tài liệu",
+    "meaning_en": "a comprehensive survey of scholarly sources on a specific topic",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The literature review identified several gaps in the research.",
+        "vi": "Tổng quan tài liệu đã xác định một số khoảng trống trong nghiên cứu."
+      }
+    ],
+    "word_family": [
+      "literature (n)",
+      "review (v/n)"
+    ],
+    "collocations": [
+      "conduct a literature review",
+      "systematic literature review",
+      "literature review section"
+    ],
+    "synonyms": [
+      "survey of literature",
+      "review of the literature"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "literature review is just a list of summaries",
+        "correct": "literature review synthesizes and critiques existing research",
+        "explain_vi": "Tổng quan tài liệu tổng hợp và phê bình, không chỉ liệt kê tóm tắt."
+      }
+    ],
+    "grammar_patterns": [
+      "literature review on + noun"
+    ]
+  },
+  {
+    "word": "disseminate",
+    "phonetic": "/dɪˈsem.ɪ.neɪt/",
+    "meaning_vi": "phổ biến, truyền bá",
+    "meaning_en": "to spread information, knowledge, or ideas widely",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "The findings were disseminated through academic journals.",
+        "vi": "Các phát hiện đã được phổ biến qua các tạp chí học thuật."
+      }
+    ],
+    "word_family": [
+      "dissemination (n)",
+      "disseminator (n)"
+    ],
+    "collocations": [
+      "disseminate findings",
+      "disseminate information",
+      "disseminate knowledge"
+    ],
+    "synonyms": [
+      "spread",
+      "circulate",
+      "distribute"
+    ],
+    "antonyms": [
+      "suppress",
+      "conceal"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "disseminate the research",
+        "correct": "disseminate the research findings",
+        "explain_vi": "Thường dùng với tân ngữ là thông tin, kết quả, không phải bản thân nghiên cứu."
+      }
+    ],
+    "grammar_patterns": [
+      "disseminate + noun phrase"
+    ]
+  },
+  {
+    "word": "rigorous",
+    "phonetic": "/ˈrɪɡ.ər.əs/",
+    "meaning_vi": "nghiêm ngặt, chặt chẽ",
+    "meaning_en": "extremely thorough, exhaustive, or accurate",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The study underwent rigorous peer review.",
+        "vi": "Nghiên cứu đã trải qua quá trình phản biện nghiêm ngặt."
+      }
+    ],
+    "word_family": [
+      "rigor (n)",
+      "rigorously (adv)"
+    ],
+    "collocations": [
+      "rigorous analysis",
+      "rigorous testing",
+      "rigorous standards"
+    ],
+    "synonyms": [
+      "strict",
+      "thorough",
+      "stringent"
+    ],
+    "antonyms": [
+      "lax",
+      "careless"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "rigorous research",
+        "correct": "rigorous research methodology",
+        "explain_vi": "Thường bổ nghĩa cho phương pháp, quy trình hơn là bản thân nghiên cứu."
+      }
+    ],
+    "grammar_patterns": [
+      "rigorous + noun"
+    ]
+  },
+  {
+    "word": "validate",
+    "phonetic": "/ˈvæl.ɪ.deɪt/",
+    "meaning_vi": "xác nhận, kiểm chứng",
+    "meaning_en": "to check or prove the accuracy or validity of something",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "The results were validated by an independent lab.",
+        "vi": "Kết quả đã được kiểm chứng bởi một phòng thí nghiệm độc lập."
+      }
+    ],
+    "word_family": [
+      "validation (n)",
+      "valid (adj)",
+      "validity (n)"
+    ],
+    "collocations": [
+      "validate findings",
+      "validate a hypothesis",
+      "validate data"
+    ],
+    "synonyms": [
+      "confirm",
+      "verify",
+      "corroborate"
+    ],
+    "antonyms": [
+      "invalidate",
+      "disprove"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "validate the research",
+        "correct": "validate the results",
+        "explain_vi": "Thường dùng với kết quả, dữ liệu, không phải toàn bộ nghiên cứu."
+      }
+    ],
+    "grammar_patterns": [
+      "validate + noun phrase"
+    ]
+  },
+  {
+    "word": "contradict",
+    "phonetic": "/ˌkɒn.trəˈdɪkt/",
+    "meaning_vi": "mâu thuẫn, trái ngược",
+    "meaning_en": "to be in conflict with or deny the truth of a statement",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "The new evidence contradicts earlier theories.",
+        "vi": "Bằng chứng mới mâu thuẫn với các lý thuyết trước đó."
+      }
+    ],
+    "word_family": [
+      "contradiction (n)",
+      "contradictory (adj)"
+    ],
+    "collocations": [
+      "contradict a theory",
+      "contradict evidence",
+      "contradict a claim"
+    ],
+    "synonyms": [
+      "dispute",
+      "refute",
+      "oppose"
+    ],
+    "antonyms": [
+      "support",
+      "confirm"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "contradict with",
+        "correct": "contradict (without preposition)",
+        "explain_vi": "Không dùng giới từ 'with' sau 'contradict'."
+      }
+    ],
+    "grammar_patterns": [
+      "contradict + noun phrase"
+    ]
+  },
+  {
+    "word": "elucidate",
+    "phonetic": "/iˈluː.sɪ.deɪt/",
+    "meaning_vi": "làm sáng tỏ, giải thích",
+    "meaning_en": "to make something clear; explain",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "The paper elucidates the mechanism of the reaction.",
+        "vi": "Bài báo làm sáng tỏ cơ chế của phản ứng."
+      }
+    ],
+    "word_family": [
+      "elucidation (n)",
+      "elucidatory (adj)"
+    ],
+    "collocations": [
+      "elucidate a mechanism",
+      "elucidate a concept",
+      "elucidate the process"
+    ],
+    "synonyms": [
+      "clarify",
+      "explain",
+      "illuminate"
+    ],
+    "antonyms": [
+      "obscure",
+      "confuse"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "elucidate about",
+        "correct": "elucidate (no preposition)",
+        "explain_vi": "Không dùng giới từ 'about' sau 'elucidate'."
+      }
+    ],
+    "grammar_patterns": [
+      "elucidate + noun phrase"
+    ]
+  },
+  {
+    "word": "scrutinize",
+    "phonetic": "/ˈskruː.tɪ.naɪz/",
+    "meaning_vi": "xem xét kỹ lưỡng",
+    "meaning_en": "to examine or inspect closely and thoroughly",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "The data was scrutinized for errors.",
+        "vi": "Dữ liệu đã được xem xét kỹ lưỡng để tìm lỗi."
+      }
+    ],
+    "word_family": [
+      "scrutiny (n)",
+      "scrutinizing (adj)"
+    ],
+    "collocations": [
+      "scrutinize data",
+      "scrutinize evidence",
+      "scrutinize a proposal"
+    ],
+    "synonyms": [
+      "examine",
+      "inspect",
+      "analyze"
+    ],
+    "antonyms": [
+      "ignore",
+      "overlook"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "scrutinize on",
+        "correct": "scrutinize (no preposition)",
+        "explain_vi": "Không dùng giới từ 'on' sau 'scrutinize'."
+      }
+    ],
+    "grammar_patterns": [
+      "scrutinize + noun phrase"
+    ]
+  },
+  {
+    "word": "substantiate",
+    "phonetic": "/səbˈstæn.ʃi.eɪt/",
+    "meaning_vi": "chứng minh, xác thực",
+    "meaning_en": "to provide evidence to support or prove the truth of something",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "The claims have not been substantiated by any evidence.",
+        "vi": "Các tuyên bố chưa được chứng minh bằng bất kỳ bằng chứng nào."
+      }
+    ],
+    "word_family": [
+      "substantiation (n)",
+      "substantive (adj)"
+    ],
+    "collocations": [
+      "substantiate a claim",
+      "substantiate findings",
+      "substantiate a theory"
+    ],
+    "synonyms": [
+      "verify",
+      "confirm",
+      "corroborate"
+    ],
+    "antonyms": [
+      "refute",
+      "disprove"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "substantiate with evidence",
+        "correct": "substantiate (by/with evidence)",
+        "explain_vi": "Có thể dùng 'by' hoặc 'with', nhưng không thiếu giới từ."
+      }
+    ],
+    "grammar_patterns": [
+      "substantiate + noun phrase"
+    ]
+  },
+  {
+    "word": "caveat",
+    "phonetic": "/ˈkæv.i.æt/",
+    "meaning_vi": "lưu ý, cảnh báo",
+    "meaning_en": "a warning or proviso of specific conditions",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "A caveat to the study is the small sample size.",
+        "vi": "Một lưu ý cho nghiên cứu là kích thước mẫu nhỏ."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "important caveat",
+      "add a caveat",
+      "with the caveat that"
+    ],
+    "synonyms": [
+      "warning",
+      "proviso",
+      "stipulation"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "caveat emptor (only in legal context)",
+        "correct": "caveat (general warning)",
+        "explain_vi": "Không nhầm với 'caveat emptor' (người mua tự chịu trách nhiệm)."
+      }
+    ],
+    "grammar_patterns": [
+      "a caveat to/for + noun phrase",
+      "with the caveat that + clause"
+    ]
+  },
+  {
+    "word": "conjecture",
+    "phonetic": "/kənˈdʒek.tʃər/",
+    "meaning_vi": "phỏng đoán, suy luận",
+    "meaning_en": "an opinion or conclusion formed on the basis of incomplete information",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "That is mere conjecture, not proven fact.",
+        "vi": "Đó chỉ l�� phỏng đoán, không phải sự thật đã được chứng minh."
+      }
+    ],
+    "word_family": [
+      "conjectural (adj)",
+      "conjecture (v)"
+    ],
+    "collocations": [
+      "pure conjecture",
+      "based on conjecture",
+      "conjecture about"
+    ],
+    "synonyms": [
+      "speculation",
+      "guess",
+      "hypothesis"
+    ],
+    "antonyms": [
+      "fact",
+      "certainty"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "conjecture that (as verb)",
+        "correct": "conjecture (noun) + that clause",
+        "explain_vi": "Dùng như danh từ, động từ 'conjecture that' cũng đúng."
+      }
+    ],
+    "grammar_patterns": [
+      "conjecture about + noun phrase",
+      "conjecture that + clause"
+    ]
+  },
+  {
+    "word": "postulate",
+    "phonetic": "/ˈpɒs.tʃə.leɪt/",
+    "meaning_vi": "giả định, công nhận",
+    "meaning_en": "to suggest or assume the existence, fact, or truth of something as a basis for reasoning",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "Einstein postulated that the speed of light is constant.",
+        "vi": "Einstein đã giả định rằng tốc độ ánh sáng là không đổi."
+      }
+    ],
+    "word_family": [
+      "postulation (n)",
+      "postulate (n)"
+    ],
+    "collocations": [
+      "postulate a theory",
+      "postulate that",
+      "postulate the existence of"
+    ],
+    "synonyms": [
+      "hypothesize",
+      "assume",
+      "posit"
+    ],
+    "antonyms": [
+      "prove",
+      "demonstrate"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "postulate (noun) used as verb",
+        "correct": "postulate (verb) + that clause",
+        "explain_vi": "Chú ý trọng âm: danh từ /ˈpɒs.tʃə.lət/, động từ /ˈpɒs.tʃə.leɪt/."
+      }
+    ],
+    "grammar_patterns": [
+      "postulate + that clause"
+    ]
+  },
+  {
+    "word": "empiricism",
+    "phonetic": "/ɪmˈpɪr.ɪ.sɪ.zəm/",
+    "meaning_vi": "chủ nghĩa kinh nghiệm",
+    "meaning_en": "the theory that all knowledge is derived from sense-experience",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Empiricism is fundamental to the scientific method.",
+        "vi": "Chủ nghĩa kinh nghiệm là nền tảng của phương pháp khoa học."
+      }
+    ],
+    "word_family": [
+      "empiricist (n)",
+      "empirical (adj)"
+    ],
+    "collocations": [
+      "empiricism in science",
+      "radical empiricism",
+      "empiricism vs rationalism"
+    ],
+    "synonyms": [
+      "empirical method",
+      "sensory experience"
+    ],
+    "antonyms": [
+      "rationalism"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "empiricism (confused with empirical)",
+        "correct": "empiricism is the philosophy",
+        "explain_vi": "Phân biệt: 'empiricism' là danh từ chỉ triết lý, 'empirical' là tính từ."
+      }
+    ],
+    "grammar_patterns": [
+      "empiricism + is/forms"
+    ]
+  },
+  {
+    "word": "falsify",
+    "phonetic": "/ˈfɔːl.sɪ.faɪ/",
+    "meaning_vi": "bác bỏ, làm sai lệch",
+    "meaning_en": "to prove that a statement or theory is false",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "The hypothesis was falsified by the experimental results.",
+        "vi": "Giả thuyết đã bị bác bỏ bởi kết quả thí nghiệm."
+      }
+    ],
+    "word_family": [
+      "falsification (n)",
+      "falsifiable (adj)"
+    ],
+    "collocations": [
+      "falsify a hypothesis",
+      "falsify data (negative meaning)",
+      "falsify a theory"
+    ],
+    "synonyms": [
+      "disprove",
+      "refute",
+      "invalidate"
+    ],
+    "antonyms": [
+      "verify",
+      "confirm"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "falsify (only negative: forge)",
+        "correct": "falsify also means disprove",
+        "explain_vi": "Trong khoa học, 'falsify' thường mang nghĩa bác bỏ, không chỉ làm giả."
+      }
+    ],
+    "grammar_patterns": [
+      "falsify + noun phrase"
+    ]
+  },
+  {
+    "word": "generalize",
+    "phonetic": "/ˈdʒen.ər.ə.laɪz/",
+    "meaning_vi": "khái quát hóa",
+    "meaning_en": "to make a general statement based on specific instances",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "It is difficult to generalize from such a small sample.",
+        "vi": "Thật khó để khái quát hóa từ một mẫu nhỏ như vậy."
+      }
+    ],
+    "word_family": [
+      "generalization (n)",
+      "generalizable (adj)"
+    ],
+    "collocations": [
+      "generalize from",
+      "generalize to",
+      "generalize about"
+    ],
+    "synonyms": [
+      "extrapolate",
+      "infer"
+    ],
+    "antonyms": [
+      "specify",
+      "particularize"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "generalize that",
+        "correct": "generalize + from/to/about",
+        "explain_vi": "Thường dùng với giới từ, không trực tiếp 'generalize that'."
+      }
+    ],
+    "grammar_patterns": [
+      "generalize from + noun phrase",
+      "generalize to + noun phrase"
+    ]
+  },
+  {
+    "word": "triangulate",
+    "phonetic": "/traɪˈæŋ.ɡjə.leɪt/",
+    "meaning_vi": "tam giác hóa (dùng nhiều nguồn để kiểm chứng)",
+    "meaning_en": "to use multiple sources or methods to verify findings",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "The researchers triangulated their data using surveys and interviews.",
+        "vi": "Các nhà nghiên cứu đã tam giác hóa dữ liệu của họ bằng cách sử dụng khảo sát và phỏng vấn."
+      }
+    ],
+    "word_family": [
+      "triangulation (n)"
+    ],
+    "collocations": [
+      "triangulate data",
+      "triangulate results",
+      "triangulate methods"
+    ],
+    "synonyms": [
+      "cross-verify",
+      "cross-check"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "triangulate (only in geometry)",
+        "correct": "triangulate also in research",
+        "explain_vi": "Trong nghiên cứu, 'triangulate' nghĩa là dùng nhiều phương pháp."
+      }
+    ],
+    "grammar_patterns": [
+      "triangulate + noun phrase"
+    ]
+  },
+  {
+    "word": "meta-analysis",
+    "phonetic": "/ˌmet.ə.əˈnæl.ə.sɪs/",
+    "meaning_vi": "phân tích tổng hợp",
+    "meaning_en": "a statistical analysis combining results from multiple studies",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "A meta-analysis of 50 trials confirmed the drug's efficacy.",
+        "vi": "Một phân tích tổng hợp của 50 thử nghiệm đã xác nhận hiệu quả của thuốc."
+      }
+    ],
+    "word_family": [
+      "meta-analytic (adj)",
+      "meta-analyst (n)"
+    ],
+    "collocations": [
+      "conduct a meta-analysis",
+      "meta-analysis of studies",
+      "meta-analysis results"
+    ],
+    "synonyms": [
+      "systematic review",
+      "pooled analysis"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "meta-analysis (confused with systematic review)",
+        "correct": "meta-analysis is quantitative, systematic review is qualitative",
+        "explain_vi": "Phân biệt: meta-analysis dùng thống kê, systematic review tổng quan có hệ thống."
+      }
+    ],
+    "grammar_patterns": [
+      "a meta-analysis of + plural noun"
+    ]
+  },
+  {
+    "word": "overarching",
+    "phonetic": "/ˌəʊ.vərˈɑː.tʃɪŋ/",
+    "meaning_vi": "bao trùm, tổng thể",
+    "meaning_en": "comprehensive or all-embracing",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The overarching theme of the conference was sustainability.",
+        "vi": "Chủ đề bao trùm của hội nghị là tính bền vững."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "overarching theme",
+      "overarching goal",
+      "overarching framework"
+    ],
+    "synonyms": [
+      "comprehensive",
+      "all-encompassing"
+    ],
+    "antonyms": [
+      "narrow",
+      "specific"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "overarching (used as verb)",
+        "correct": "overarching is an adjective",
+        "explain_vi": "Không phải động từ; 'overarch' là động từ nhưng hiếm dùng."
+      }
+    ],
+    "grammar_patterns": [
+      "overarching + noun"
+    ]
+  },
+  {
+    "word": "paradigm shift",
+    "phonetic": "/ˈpær.ə.daɪm ʃɪft/",
+    "meaning_vi": "sự thay đổi mô hình, chuyển đổi căn bản",
+    "meaning_en": "a fundamental change in approach or underlying assumptions",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The discovery caused a paradigm shift in physics.",
+        "vi": "Khám phá đã gây ra một sự thay đổi mô hình trong vật lý."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "undergo a paradigm shift",
+      "cause a paradigm shift",
+      "paradigm shift in"
+    ],
+    "synonyms": [
+      "revolution",
+      "sea change"
+    ],
+    "antonyms": [
+      "continuity"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "paradigm shift (overused)",
+        "correct": "use sparingly",
+        "explain_vi": "Tránh lạm dụng; chỉ dùng khi thực sự có thay đổi lớn."
+      }
+    ],
+    "grammar_patterns": [
+      "a paradigm shift in + noun phrase"
+    ]
+  },
+  {
+    "word": "reproducibility",
+    "phonetic": "/ˌriː.prəˌdjuː.səˈbɪl.ə.ti/",
+    "meaning_vi": "tính tái lập",
+    "meaning_en": "the ability of an experiment to be repeated with the same results",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Reproducibility is a cornerstone of scientific research.",
+        "vi": "Tính tái lập là nền tảng của nghiên cứu khoa học."
+      }
+    ],
+    "word_family": [
+      "reproducible (adj)",
+      "reproduce (v)"
+    ],
+    "collocations": [
+      "reproducibility crisis",
+      "ensure reproducibility",
+      "reproducibility of results"
+    ],
+    "synonyms": [
+      "repeatability",
+      "replicability"
+    ],
+    "antonyms": [
+      "irreproducibility"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "reproducibility (confused with replication)",
+        "correct": "reproducibility: same lab; replication: different lab",
+        "explain_vi": "Phân biệt: reproducibility là cùng phòng thí nghiệm, replication là khác."
+      }
+    ],
+    "grammar_patterns": [
+      "reproducibility of + noun phrase"
+    ]
+  },
+  {
+    "word": "robustness",
+    "phonetic": "/rəʊˈbʌst.nəs/",
+    "meaning_vi": "tính vững chắc, độ tin cậy",
+    "meaning_en": "the quality of being strong and unlikely to fail or be affected by changes",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The robustness of the model was tested under various conditions.",
+        "vi": "Độ tin cậy của mô hình đã được kiểm tra trong nhiều điều kiện khác nhau."
+      }
+    ],
+    "word_family": [
+      "robust (adj)",
+      "robustly (adv)"
+    ],
+    "collocations": [
+      "robustness of results",
+      "test robustness",
+      "robustness check"
+    ],
+    "synonyms": [
+      "reliability",
+      "sturdiness"
+    ],
+    "antonyms": [
+      "fragility",
+      "weakness"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "robustness (confused with strength)",
+        "correct": "robustness implies resistance to variation",
+        "explain_vi": "Robustness không chỉ mạnh mà còn chịu được biến đổi."
+      }
+    ],
+    "grammar_patterns": [
+      "robustness of + noun phrase"
+    ]
+  },
+  {
+    "word": "salient",
+    "phonetic": "/ˈseɪ.li.ənt/",
+    "meaning_vi": "nổi bật, quan trọng",
+    "meaning_en": "most noticeable or important",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The salient points of the argument were summarized.",
+        "vi": "Các điểm nổi bật của lập luận đã được tóm tắt."
+      }
+    ],
+    "word_family": [
+      "salience (n)"
+    ],
+    "collocations": [
+      "salient points",
+      "salient features",
+      "salient findings"
+    ],
+    "synonyms": [
+      "prominent",
+      "conspicuous",
+      "striking"
+    ],
+    "antonyms": [
+      "inconspicuous",
+      "minor"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "salient (confused with salience)",
+        "correct": "salient is adjective, salience is noun",
+        "explain_vi": "Phân biệt từ loại."
+      }
+    ],
+    "grammar_patterns": [
+      "salient + noun"
+    ]
+  }
+]

@@ -1,0 +1,1616 @@
+[
+  {
+    "word": "car",
+    "phonetic": "/kɑːr/",
+    "meaning_vi": "xe hơi, ô tô",
+    "meaning_en": "a road vehicle with four wheels that can carry a small number of people",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I drive a car.",
+        "vi": "Tôi lái xe hơi."
+      },
+      {
+        "en": "My car is red.",
+        "vi": "Xe của tôi màu đỏ."
+      }
+    ],
+    "word_family": [
+      "cars (plural)"
+    ],
+    "collocations": [
+      "drive a car",
+      "park a car",
+      "get in the car"
+    ],
+    "synonyms": [
+      "automobile",
+      "vehicle"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I car to work.",
+        "correct": "I go to work by car.",
+        "explain_vi": "Dùng giới từ 'by' trước 'car' khi nói về phương tiện."
+      }
+    ],
+    "grammar_patterns": [
+      "by car",
+      "in the car",
+      "a car"
+    ]
+  },
+  {
+    "word": "bus",
+    "phonetic": "/bʌs/",
+    "meaning_vi": "xe buýt",
+    "meaning_en": "a large vehicle that carries passengers by road, usually along a fixed route",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I take the bus to school.",
+        "vi": "Tôi đi xe buýt đến trường."
+      },
+      {
+        "en": "The bus is late.",
+        "vi": "Xe buýt bị trễ."
+      }
+    ],
+    "word_family": [
+      "buses (plural)"
+    ],
+    "collocations": [
+      "take the bus",
+      "catch the bus",
+      "wait for the bus"
+    ],
+    "synonyms": [
+      "coach"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go to school by bus.",
+        "correct": "I go to school by bus.",
+        "explain_vi": "Cụm từ 'by bus' đã đúng; lỗi thường gặp là quên 'the' khi nói 'take the bus'."
+      }
+    ],
+    "grammar_patterns": [
+      "by bus",
+      "on the bus",
+      "take + the + bus"
+    ]
+  },
+  {
+    "word": "train",
+    "phonetic": "/treɪn/",
+    "meaning_vi": "tàu hỏa, xe lửa",
+    "meaning_en": "a series of railroad cars pulled by an engine",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I go to Hanoi by train.",
+        "vi": "Tôi đi Hà Nội bằng tàu hỏa."
+      },
+      {
+        "en": "The train arrives at 5 pm.",
+        "vi": "Tàu đến lúc 5 giờ chiều."
+      }
+    ],
+    "word_family": [
+      "trains (plural)"
+    ],
+    "collocations": [
+      "take the train",
+      "catch the train",
+      "miss the train"
+    ],
+    "synonyms": [
+      "railway"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go to Hanoi on train.",
+        "correct": "I go to Hanoi by train.",
+        "explain_vi": "Dùng 'by' với phương tiện giao thông."
+      }
+    ],
+    "grammar_patterns": [
+      "by train",
+      "on the train",
+      "take + the + train"
+    ]
+  },
+  {
+    "word": "airplane",
+    "phonetic": "/ˈer.pleɪn/",
+    "meaning_vi": "máy bay",
+    "meaning_en": "a powered flying vehicle with fixed wings",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I fly by airplane.",
+        "vi": "Tôi đi máy bay."
+      },
+      {
+        "en": "The airplane takes off at 8 am.",
+        "vi": "Máy bay cất cánh lúc 8 giờ sáng."
+      }
+    ],
+    "word_family": [
+      "airplanes (plural)"
+    ],
+    "collocations": [
+      "by airplane",
+      "on the airplane",
+      "board the airplane"
+    ],
+    "synonyms": [
+      "plane",
+      "aircraft"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go to America on airplane.",
+        "correct": "I go to America by airplane.",
+        "explain_vi": "Dùng 'by' với phương tiện."
+      }
+    ],
+    "grammar_patterns": [
+      "by airplane",
+      "on the airplane",
+      "an airplane"
+    ]
+  },
+  {
+    "word": "bicycle",
+    "phonetic": "/ˈbaɪ.sɪ.kəl/",
+    "meaning_vi": "xe đạp",
+    "meaning_en": "a vehicle with two wheels that you ride by pedaling",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I ride a bicycle.",
+        "vi": "Tôi đi xe đạp."
+      },
+      {
+        "en": "My bicycle is blue.",
+        "vi": "Xe đạp của tôi màu xanh."
+      }
+    ],
+    "word_family": [
+      "bicycles (plural)",
+      "bike (short form)"
+    ],
+    "collocations": [
+      "ride a bicycle",
+      "by bicycle",
+      "get on a bicycle"
+    ],
+    "synonyms": [
+      "bike",
+      "cycle"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go by bicycle to school.",
+        "correct": "I go to school by bicycle.",
+        "explain_vi": "Trật tự từ: 'go to school by bicycle'."
+      }
+    ],
+    "grammar_patterns": [
+      "by bicycle",
+      "on a bicycle",
+      "ride + a + bicycle"
+    ]
+  },
+  {
+    "word": "motorcycle",
+    "phonetic": "/ˈmoʊ.tər.saɪ.kəl/",
+    "meaning_vi": "xe máy",
+    "meaning_en": "a two-wheeled vehicle with an engine",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "He rides a motorcycle.",
+        "vi": "Anh ấy đi xe máy."
+      },
+      {
+        "en": "My father has a motorcycle.",
+        "vi": "Bố tôi có một chiếc xe máy."
+      }
+    ],
+    "word_family": [
+      "motorcycles (plural)"
+    ],
+    "collocations": [
+      "ride a motorcycle",
+      "by motorcycle",
+      "drive a motorcycle"
+    ],
+    "synonyms": [
+      "motorbike",
+      "bike"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go to work on motorcycle.",
+        "correct": "I go to work by motorcycle.",
+        "explain_vi": "Dùng 'by' với phương tiện."
+      }
+    ],
+    "grammar_patterns": [
+      "by motorcycle",
+      "on a motorcycle",
+      "ride + a + motorcycle"
+    ]
+  },
+  {
+    "word": "taxi",
+    "phonetic": "/ˈtæk.si/",
+    "meaning_vi": "xe taxi",
+    "meaning_en": "a car that you can hire to take you somewhere",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I take a taxi to the airport.",
+        "vi": "Tôi đi taxi đến sân bay."
+      },
+      {
+        "en": "Call a taxi, please.",
+        "vi": "Làm ơn gọi taxi."
+      }
+    ],
+    "word_family": [
+      "taxis (plural)"
+    ],
+    "collocations": [
+      "take a taxi",
+      "call a taxi",
+      "by taxi"
+    ],
+    "synonyms": [
+      "cab"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go by taxi to airport.",
+        "correct": "I go to the airport by taxi.",
+        "explain_vi": "Cần mạo từ 'the' trước 'airport'."
+      }
+    ],
+    "grammar_patterns": [
+      "by taxi",
+      "in a taxi",
+      "take + a + taxi"
+    ]
+  },
+  {
+    "word": "boat",
+    "phonetic": "/boʊt/",
+    "meaning_vi": "thuyền, tàu thủy",
+    "meaning_en": "a small vessel for traveling on water",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We go by boat to the island.",
+        "vi": "Chúng tôi đi thuyền ra đảo."
+      },
+      {
+        "en": "The boat is fast.",
+        "vi": "Thuyền chạy nhanh."
+      }
+    ],
+    "word_family": [
+      "boats (plural)"
+    ],
+    "collocations": [
+      "by boat",
+      "take a boat",
+      "get on the boat"
+    ],
+    "synonyms": [
+      "ship",
+      "vessel"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go to island by boat.",
+        "correct": "I go to the island by boat.",
+        "explain_vi": "Cần mạo từ 'the' trước 'island'."
+      }
+    ],
+    "grammar_patterns": [
+      "by boat",
+      "on a boat",
+      "take + a + boat"
+    ]
+  },
+  {
+    "word": "ticket",
+    "phonetic": "/ˈtɪk.ɪt/",
+    "meaning_vi": "vé",
+    "meaning_en": "a piece of paper or card that shows you have paid to do something",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I buy a ticket for the bus.",
+        "vi": "Tôi mua vé xe buýt."
+      },
+      {
+        "en": "How much is the ticket?",
+        "vi": "Vé bao nhiêu tiền?"
+      }
+    ],
+    "word_family": [
+      "tickets (plural)"
+    ],
+    "collocations": [
+      "buy a ticket",
+      "one-way ticket",
+      "round-trip ticket"
+    ],
+    "synonyms": [
+      "pass",
+      "voucher"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I buy ticket bus.",
+        "correct": "I buy a bus ticket.",
+        "explain_vi": "Dùng mạo từ 'a' và đặt 'bus' trước 'ticket' như tính từ."
+      }
+    ],
+    "grammar_patterns": [
+      "a ticket for",
+      "a ticket to",
+      "buy + a + ticket"
+    ]
+  },
+  {
+    "word": "station",
+    "phonetic": "/ˈsteɪ.ʃən/",
+    "meaning_vi": "nhà ga, bến xe",
+    "meaning_en": "a place where trains, buses, etc. stop so that passengers can get on and off",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The train station is near my house.",
+        "vi": "Nhà ga gần nhà tôi."
+      },
+      {
+        "en": "I wait at the bus station.",
+        "vi": "Tôi đợi ở bến xe buýt."
+      }
+    ],
+    "word_family": [
+      "stations (plural)"
+    ],
+    "collocations": [
+      "train station",
+      "bus station",
+      "at the station"
+    ],
+    "synonyms": [
+      "terminal",
+      "depot"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go to station.",
+        "correct": "I go to the station.",
+        "explain_vi": "Cần mạo từ 'the' vì là địa điểm xác định."
+      }
+    ],
+    "grammar_patterns": [
+      "at the station",
+      "to the station",
+      "the + station"
+    ]
+  },
+  {
+    "word": "airport",
+    "phonetic": "/ˈer.pɔːrt/",
+    "meaning_vi": "sân bay",
+    "meaning_en": "a place where aircraft take off and land",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I go to the airport by taxi.",
+        "vi": "Tôi ra sân bay bằng taxi."
+      },
+      {
+        "en": "The airport is big.",
+        "vi": "Sân bay rộng lớn."
+      }
+    ],
+    "word_family": [
+      "airports (plural)"
+    ],
+    "collocations": [
+      "at the airport",
+      "to the airport",
+      "airport terminal"
+    ],
+    "synonyms": [
+      "aerodrome",
+      "airfield"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go to airport.",
+        "correct": "I go to the airport.",
+        "explain_vi": "Cần mạo từ 'the'."
+      }
+    ],
+    "grammar_patterns": [
+      "at the airport",
+      "to the airport",
+      "the + airport"
+    ]
+  },
+  {
+    "word": "map",
+    "phonetic": "/mæp/",
+    "meaning_vi": "bản đồ",
+    "meaning_en": "a drawing of a particular area showing roads, rivers, cities, etc.",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I have a map of the city.",
+        "vi": "Tôi có bản đồ thành phố."
+      },
+      {
+        "en": "Look at the map.",
+        "vi": "Nhìn vào bản đồ."
+      }
+    ],
+    "word_family": [
+      "maps (plural)"
+    ],
+    "collocations": [
+      "read a map",
+      "on the map",
+      "fold the map"
+    ],
+    "synonyms": [
+      "chart",
+      "guide"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I look map.",
+        "correct": "I look at the map.",
+        "explain_vi": "Cần giới từ 'at' và mạo từ 'the'."
+      }
+    ],
+    "grammar_patterns": [
+      "a map of",
+      "on the map",
+      "look at + the + map"
+    ]
+  },
+  {
+    "word": "passport",
+    "phonetic": "/ˈpæs.pɔːrt/",
+    "meaning_vi": "hộ chiếu",
+    "meaning_en": "an official document that identifies you as a citizen of a country and allows you to travel abroad",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Show me your passport.",
+        "vi": "Cho tôi xem hộ chiếu của bạn."
+      },
+      {
+        "en": "I need a passport to travel.",
+        "vi": "Tôi cần hộ chiếu để đi du lịch."
+      }
+    ],
+    "word_family": [
+      "passports (plural)"
+    ],
+    "collocations": [
+      "travel passport",
+      "renew a passport",
+      "passport control"
+    ],
+    "synonyms": [
+      "travel document"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have passport.",
+        "correct": "I have a passport.",
+        "explain_vi": "Cần mạo từ 'a'."
+      }
+    ],
+    "grammar_patterns": [
+      "a passport",
+      "your passport",
+      "passport + noun"
+    ]
+  },
+  {
+    "word": "suitcase",
+    "phonetic": "/ˈsuːt.keɪs/",
+    "meaning_vi": "va li, vali",
+    "meaning_en": "a large rectangular container with a handle and often with wheels, used for carrying clothes and belongings while traveling",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I pack my suitcase.",
+        "vi": "Tôi đóng gói va li."
+      },
+      {
+        "en": "My suitcase is heavy.",
+        "vi": "Va li của tôi nặng."
+      }
+    ],
+    "word_family": [
+      "suitcases (plural)"
+    ],
+    "collocations": [
+      "pack a suitcase",
+      "unpack a suitcase",
+      "carry a suitcase"
+    ],
+    "synonyms": [
+      "bag",
+      "luggage"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have suitcase.",
+        "correct": "I have a suitcase.",
+        "explain_vi": "Cần mạo từ 'a'."
+      }
+    ],
+    "grammar_patterns": [
+      "a suitcase",
+      "my suitcase",
+      "pack + a + suitcase"
+    ]
+  },
+  {
+    "word": "hotel",
+    "phonetic": "/hoʊˈtel/",
+    "meaning_vi": "khách sạn",
+    "meaning_en": "a building where people stay and pay for rooms and meals",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We stay at a hotel.",
+        "vi": "Chúng tôi ở khách sạn."
+      },
+      {
+        "en": "The hotel is near the beach.",
+        "vi": "Khách sạn gần bãi biển."
+      }
+    ],
+    "word_family": [
+      "hotels (plural)"
+    ],
+    "collocations": [
+      "stay at a hotel",
+      "book a hotel",
+      "hotel room"
+    ],
+    "synonyms": [
+      "inn",
+      "lodging"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go to hotel.",
+        "correct": "I go to the hotel.",
+        "explain_vi": "Cần mạo từ 'the'."
+      }
+    ],
+    "grammar_patterns": [
+      "at a hotel",
+      "in the hotel",
+      "stay + at + a + hotel"
+    ]
+  },
+  {
+    "word": "trip",
+    "phonetic": "/trɪp/",
+    "meaning_vi": "chuyến đi",
+    "meaning_en": "a journey to a place and back again",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We go on a trip to the beach.",
+        "vi": "Chúng tôi đi chơi ở bãi biển."
+      },
+      {
+        "en": "It is a long trip.",
+        "vi": "Đó là một chuyến đi dài."
+      }
+    ],
+    "word_family": [
+      "trips (plural)"
+    ],
+    "collocations": [
+      "go on a trip",
+      "take a trip",
+      "business trip"
+    ],
+    "synonyms": [
+      "journey",
+      "excursion"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go to trip.",
+        "correct": "I go on a trip.",
+        "explain_vi": "Dùng 'on a trip' thay vì 'to trip'."
+      }
+    ],
+    "grammar_patterns": [
+      "on a trip",
+      "a trip to",
+      "go + on + a + trip"
+    ]
+  },
+  {
+    "word": "holiday",
+    "phonetic": "/ˈhɑː.lə.deɪ/",
+    "meaning_vi": "kỳ nghỉ, ngày lễ",
+    "meaning_en": "a day of celebration or a period of time when you do not have to go to work or school",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We go on holiday in summer.",
+        "vi": "Chúng tôi đi nghỉ vào mùa hè."
+      },
+      {
+        "en": "I love the holidays.",
+        "vi": "Tôi thích những ngày lễ."
+      }
+    ],
+    "word_family": [
+      "holidays (plural)"
+    ],
+    "collocations": [
+      "go on holiday",
+      "summer holiday",
+      "public holiday"
+    ],
+    "synonyms": [
+      "vacation",
+      "break"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go to holiday.",
+        "correct": "I go on holiday.",
+        "explain_vi": "Dùng 'on holiday' thay vì 'to holiday'."
+      }
+    ],
+    "grammar_patterns": [
+      "on holiday",
+      "a holiday",
+      "go + on + holiday"
+    ]
+  },
+  {
+    "word": "travel",
+    "phonetic": "/ˈtræv.əl/",
+    "meaning_vi": "du lịch, đi lại",
+    "meaning_en": "to go from one place to another, especially over a long distance",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "I travel to work by bus.",
+        "vi": "Tôi đi làm bằng xe buýt."
+      },
+      {
+        "en": "She likes to travel.",
+        "vi": "Cô ấy thích du lịch."
+      }
+    ],
+    "word_family": [
+      "travels (third person)",
+      "traveling (present participle)",
+      "traveled (past)"
+    ],
+    "collocations": [
+      "travel abroad",
+      "travel by car",
+      "travel light"
+    ],
+    "synonyms": [
+      "journey",
+      "go"
+    ],
+    "antonyms": [
+      "stay"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I travel to home.",
+        "correct": "I travel home.",
+        "explain_vi": "Không dùng 'to' với 'home'."
+      }
+    ],
+    "grammar_patterns": [
+      "travel + to + place",
+      "travel + by + transport",
+      "travel + adverb"
+    ]
+  },
+  {
+    "word": "drive",
+    "phonetic": "/draɪv/",
+    "meaning_vi": "lái xe",
+    "meaning_en": "to operate a car or other vehicle and control its movement",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "I drive my car to work.",
+        "vi": "Tôi lái xe đi làm."
+      },
+      {
+        "en": "Can you drive?",
+        "vi": "Bạn có thể lái xe không?"
+      }
+    ],
+    "word_family": [
+      "drives (third person)",
+      "driving (present participle)",
+      "drove (past)",
+      "driven (past participle)"
+    ],
+    "collocations": [
+      "drive a car",
+      "drive fast",
+      "drive carefully"
+    ],
+    "synonyms": [
+      "operate",
+      "steer"
+    ],
+    "antonyms": [
+      "walk"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I drive car.",
+        "correct": "I drive a car.",
+        "explain_vi": "Cần mạo từ 'a'."
+      }
+    ],
+    "grammar_patterns": [
+      "drive + a + vehicle",
+      "drive to + place",
+      "drive + adverb"
+    ]
+  },
+  {
+    "word": "fly",
+    "phonetic": "/flaɪ/",
+    "meaning_vi": "bay",
+    "meaning_en": "to travel through the air in an aircraft",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "I fly to Da Nang.",
+        "vi": "Tôi bay đến Đà Nẵng."
+      },
+      {
+        "en": "The bird flies.",
+        "vi": "Con chim bay."
+      }
+    ],
+    "word_family": [
+      "flies (third person)",
+      "flying (present participle)",
+      "flew (past)",
+      "flown (past participle)"
+    ],
+    "collocations": [
+      "fly by plane",
+      "fly to",
+      "fly from"
+    ],
+    "synonyms": [
+      "soar",
+      "travel by air"
+    ],
+    "antonyms": [
+      "drive",
+      "walk"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I fly to home.",
+        "correct": "I fly home.",
+        "explain_vi": "Không dùng 'to' với 'home'."
+      }
+    ],
+    "grammar_patterns": [
+      "fly + to + place",
+      "fly + from + place",
+      "fly + by + transport"
+    ]
+  },
+  {
+    "word": "go",
+    "phonetic": "/ɡəʊ/",
+    "meaning_vi": "đi",
+    "meaning_en": "to move or travel from one place to another",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "I go to school by bus.",
+        "vi": "Tôi đi học bằng xe buýt."
+      }
+    ],
+    "word_family": [
+      "goes (v)",
+      "going (v)",
+      "gone (v)"
+    ],
+    "collocations": [
+      "go to",
+      "go by",
+      "go on"
+    ],
+    "synonyms": [
+      "travel",
+      "move"
+    ],
+    "antonyms": [
+      "stay"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I go to home",
+        "correct": "I go home",
+        "explain_vi": "Không dùng 'to' trước 'home'"
+      }
+    ],
+    "grammar_patterns": [
+      "go + to + place",
+      "go + home (no preposition)"
+    ]
+  },
+  {
+    "word": "stop",
+    "phonetic": "/stɒp/",
+    "meaning_vi": "dừng lại, trạm dừng",
+    "meaning_en": "to cease moving or operating; a place where a bus or train stops",
+    "pos": "verb/noun",
+    "examples": [
+      {
+        "en": "The bus stops here.",
+        "vi": "Xe buýt dừng ở đây."
+      },
+      {
+        "en": "I get off at the next stop.",
+        "vi": "Tôi xuống ở trạm tiếp theo."
+      }
+    ],
+    "word_family": [
+      "stops (v)",
+      "stopped (v)",
+      "stopping (v)"
+    ],
+    "collocations": [
+      "bus stop",
+      "stop at",
+      "come to a stop"
+    ],
+    "synonyms": [
+      "halt",
+      "station"
+    ],
+    "antonyms": [
+      "go",
+      "start"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I stop at the bus station",
+        "correct": "I stop at the bus stop",
+        "explain_vi": "Dùng 'bus stop' cho điểm dừng xe buýt, 'bus station' là bến xe"
+      }
+    ],
+    "grammar_patterns": [
+      "stop + at + place",
+      "stop + -ing (to cease an action)"
+    ]
+  },
+  {
+    "word": "left",
+    "phonetic": "/left/",
+    "meaning_vi": "trái",
+    "meaning_en": "on or towards the side of your body that is to the west when you face north",
+    "pos": "adjective/adverb/noun",
+    "examples": [
+      {
+        "en": "Turn left at the traffic lights.",
+        "vi": "Rẽ trái ở đèn giao thông."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "turn left",
+      "on the left",
+      "left side"
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "right"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Turn left side",
+        "correct": "Turn left",
+        "explain_vi": "Không cần 'side' khi dùng 'turn left'"
+      }
+    ],
+    "grammar_patterns": [
+      "turn + left/right",
+      "on the + left/right"
+    ]
+  },
+  {
+    "word": "right",
+    "phonetic": "/raɪt/",
+    "meaning_vi": "phải",
+    "meaning_en": "on or towards the side of your body that is to the east when you face north",
+    "pos": "adjective/adverb/noun",
+    "examples": [
+      {
+        "en": "The hotel is on the right.",
+        "vi": "Khách sạn ở bên phải."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "turn right",
+      "on the right",
+      "right side"
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "left"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Turn right side",
+        "correct": "Turn right",
+        "explain_vi": "Không cần 'side' khi dùng 'turn right'"
+      }
+    ],
+    "grammar_patterns": [
+      "turn + left/right",
+      "on the + left/right"
+    ]
+  },
+  {
+    "word": "straight",
+    "phonetic": "/streɪt/",
+    "meaning_vi": "thẳng",
+    "meaning_en": "without a bend or curve; in a straight line",
+    "pos": "adjective/adverb",
+    "examples": [
+      {
+        "en": "Go straight ahead.",
+        "vi": "Đi thẳng."
+      }
+    ],
+    "word_family": [
+      "straighten (v)"
+    ],
+    "collocations": [
+      "go straight",
+      "straight ahead",
+      "straight on"
+    ],
+    "synonyms": [
+      "directly"
+    ],
+    "antonyms": [
+      "curved"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Go straightly",
+        "correct": "Go straight",
+        "explain_vi": "'Straight' vừa là tính từ vừa là trạng từ, không thêm -ly"
+      }
+    ],
+    "grammar_patterns": [
+      "go + straight",
+      "straight + ahead"
+    ]
+  },
+  {
+    "word": "near",
+    "phonetic": "/nɪər/",
+    "meaning_vi": "gần",
+    "meaning_en": "at a short distance away from something",
+    "pos": "preposition/adjective/adverb",
+    "examples": [
+      {
+        "en": "The bank is near the station.",
+        "vi": "Ngân hàng ở gần nhà ga."
+      }
+    ],
+    "word_family": [
+      "nearby (adj/adv)",
+      "nearly (adv)"
+    ],
+    "collocations": [
+      "near to",
+      "near here",
+      "near the"
+    ],
+    "synonyms": [
+      "close to",
+      "next to"
+    ],
+    "antonyms": [
+      "far"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "The bank is near to the station",
+        "correct": "The bank is near the station",
+        "explain_vi": "Không cần 'to' sau 'near' trong tiếng Anh"
+      }
+    ],
+    "grammar_patterns": [
+      "near + noun",
+      "be near"
+    ]
+  },
+  {
+    "word": "far",
+    "phonetic": "/fɑːr/",
+    "meaning_vi": "xa",
+    "meaning_en": "at a great distance",
+    "pos": "adjective/adverb",
+    "examples": [
+      {
+        "en": "How far is it to the airport?",
+        "vi": "Từ đây đến sân bay bao xa?"
+      }
+    ],
+    "word_family": [
+      "farther (comparative)",
+      "farthest (superlative)"
+    ],
+    "collocations": [
+      "far from",
+      "how far",
+      "far away"
+    ],
+    "synonyms": [
+      "distant"
+    ],
+    "antonyms": [
+      "near",
+      "close"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "It is far from here to the airport",
+        "correct": "It is far from here to the airport",
+        "explain_vi": "Cấu trúc 'far from' đúng, nhưng thường dùng 'How far is it?'"
+      }
+    ],
+    "grammar_patterns": [
+      "far from + noun",
+      "how far + is/are"
+    ]
+  },
+  {
+    "word": "here",
+    "phonetic": "/hɪər/",
+    "meaning_vi": "ở đây",
+    "meaning_en": "in, at, or to this place",
+    "pos": "adverb",
+    "examples": [
+      {
+        "en": "Come here, please.",
+        "vi": "Lại đây, làm ơn."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "over here",
+      "here and there",
+      "here is"
+    ],
+    "synonyms": [
+      "this place"
+    ],
+    "antonyms": [
+      "there"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I am here since 8 o'clock",
+        "correct": "I have been here since 8 o'clock",
+        "explain_vi": "Dùng thì hiện tại hoàn thành với 'since'"
+      }
+    ],
+    "grammar_patterns": [
+      "here + verb",
+      "be here"
+    ]
+  },
+  {
+    "word": "there",
+    "phonetic": "/ðeər/",
+    "meaning_vi": "ở đó",
+    "meaning_en": "in, at, or to that place",
+    "pos": "adverb",
+    "examples": [
+      {
+        "en": "The museum is over there.",
+        "vi": "Bảo tàng ở đằng kia."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "over there",
+      "there is",
+      "there are"
+    ],
+    "synonyms": [
+      "that place"
+    ],
+    "antonyms": [
+      "here"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "There have a bus stop",
+        "correct": "There is a bus stop",
+        "explain_vi": "Dùng 'there is/are' để nói về sự tồn tại, không dùng 'have'"
+      }
+    ],
+    "grammar_patterns": [
+      "there + be + noun",
+      "there + is/are"
+    ]
+  },
+  {
+    "word": "where",
+    "phonetic": "/weər/",
+    "meaning_vi": "ở đâu",
+    "meaning_en": "in or to what place",
+    "pos": "adverb",
+    "examples": [
+      {
+        "en": "Where is the bus stop?",
+        "vi": "Trạm xe buýt ở đâu?"
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "where is",
+      "where are",
+      "where to"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Where is the bus stop is?",
+        "correct": "Where is the bus stop?",
+        "explain_vi": "Không lặp động từ 'is' trong câu hỏi"
+      }
+    ],
+    "grammar_patterns": [
+      "where + be + noun",
+      "where + do/does + subject + verb"
+    ]
+  },
+  {
+    "word": "road",
+    "phonetic": "/rəʊd/",
+    "meaning_vi": "đường (dành cho xe cộ)",
+    "meaning_en": "a wide way leading from one place to another, especially one with a hard surface",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The road is very busy.",
+        "vi": "Con đường rất đông đúc."
+      }
+    ],
+    "word_family": [
+      "roadside (n)",
+      "roadway (n)"
+    ],
+    "collocations": [
+      "main road",
+      "on the road",
+      "cross the road"
+    ],
+    "synonyms": [
+      "street",
+      "highway"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I walk on road",
+        "correct": "I walk on the road",
+        "explain_vi": "Cần mạo từ 'the' trước 'road'"
+      }
+    ],
+    "grammar_patterns": [
+      "the + road",
+      "on + the + road"
+    ]
+  },
+  {
+    "word": "street",
+    "phonetic": "/striːt/",
+    "meaning_vi": "phố, đường phố",
+    "meaning_en": "a public road in a city or town that has buildings on one or both sides",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I live on this street.",
+        "vi": "Tôi sống trên con phố này."
+      }
+    ],
+    "word_family": [
+      "streetcar (n)",
+      "streetlight (n)"
+    ],
+    "collocations": [
+      "main street",
+      "on the street",
+      "across the street"
+    ],
+    "synonyms": [
+      "road",
+      "avenue"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I live in this street",
+        "correct": "I live on this street",
+        "explain_vi": "Dùng 'on' với tên đường/phố"
+      }
+    ],
+    "grammar_patterns": [
+      "on + the + street",
+      "street + name"
+    ]
+  },
+  {
+    "word": "bridge",
+    "phonetic": "/brɪdʒ/",
+    "meaning_vi": "cầu",
+    "meaning_en": "a structure built over a river, road, etc. so that people or vehicles can cross",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We cross the bridge.",
+        "vi": "Chúng tôi băng qua cầu."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "cross the bridge",
+      "over the bridge",
+      "bridge over"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "We go on the bridge",
+        "correct": "We cross the bridge",
+        "explain_vi": "Dùng 'cross' để diễn tả đi qua cầu"
+      }
+    ],
+    "grammar_patterns": [
+      "cross + the + bridge",
+      "bridge + over + noun"
+    ]
+  },
+  {
+    "word": "traffic",
+    "phonetic": "/ˈtræf.ɪk/",
+    "meaning_vi": "giao thông",
+    "meaning_en": "the movement of vehicles along a road",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "There is a lot of traffic today.",
+        "vi": "Hôm nay có nhiều xe cộ."
+      }
+    ],
+    "word_family": [
+      "traffic jam (n)",
+      "traffic light (n)"
+    ],
+    "collocations": [
+      "heavy traffic",
+      "traffic jam",
+      "traffic light"
+    ],
+    "synonyms": [
+      "congestion"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Traffic are heavy",
+        "correct": "Traffic is heavy",
+        "explain_vi": "'Traffic' là danh từ không đếm được, dùng động từ số ít"
+      }
+    ],
+    "grammar_patterns": [
+      "traffic + is/are",
+      "a lot of + traffic"
+    ]
+  },
+  {
+    "word": "light",
+    "phonetic": "/laɪt/",
+    "meaning_vi": "đèn (giao thông)",
+    "meaning_en": "a device that gives light, especially a traffic light",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The light is red.",
+        "vi": "Đèn đỏ."
+      }
+    ],
+    "word_family": [
+      "traffic light (n)"
+    ],
+    "collocations": [
+      "traffic light",
+      "red light",
+      "green light"
+    ],
+    "synonyms": [
+      "lamp",
+      "signal"
+    ],
+    "antonyms": [
+      "darkness"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "The light is red color",
+        "correct": "The light is red",
+        "explain_vi": "Không cần 'color' sau màu sắc"
+      }
+    ],
+    "grammar_patterns": [
+      "the + light + be + color"
+    ]
+  },
+  {
+    "word": "walk",
+    "phonetic": "/wɔːk/",
+    "meaning_vi": "đi bộ",
+    "meaning_en": "to move at a regular pace by lifting each foot in turn",
+    "pos": "verb/noun",
+    "examples": [
+      {
+        "en": "I walk to school every day.",
+        "vi": "Tôi đi bộ đến trường mỗi ngày."
+      }
+    ],
+    "word_family": [
+      "walks (v)",
+      "walking (v)",
+      "walker (n)"
+    ],
+    "collocations": [
+      "walk to",
+      "go for a walk",
+      "walk along"
+    ],
+    "synonyms": [
+      "stroll"
+    ],
+    "antonyms": [
+      "run"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I walk on foot to school",
+        "correct": "I walk to school",
+        "explain_vi": "'Walk' đã bao hàm 'on foot', không cần nói thêm"
+      }
+    ],
+    "grammar_patterns": [
+      "walk + to + place",
+      "go for a + walk"
+    ]
+  },
+  {
+    "word": "run",
+    "phonetic": "/rʌn/",
+    "meaning_vi": "chạy",
+    "meaning_en": "to move quickly on foot",
+    "pos": "verb/noun",
+    "examples": [
+      {
+        "en": "He runs to catch the bus.",
+        "vi": "Anh ấy chạy để bắt xe buýt."
+      }
+    ],
+    "word_family": [
+      "runs (v)",
+      "running (v)",
+      "runner (n)"
+    ],
+    "collocations": [
+      "run to",
+      "run after",
+      "run fast"
+    ],
+    "synonyms": [
+      "sprint",
+      "jog"
+    ],
+    "antonyms": [
+      "walk"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I run fastly",
+        "correct": "I run fast",
+        "explain_vi": "Fast vừa là tính từ vừa là trạng từ, không thêm -ly"
+      }
+    ],
+    "grammar_patterns": [
+      "run + to + place",
+      "run + adverb"
+    ]
+  },
+  {
+    "word": "ride",
+    "phonetic": "/raɪd/",
+    "meaning_vi": "đi (xe đạp, xe máy, ngựa)",
+    "meaning_en": "to sit on and control a bicycle, motorcycle, or animal",
+    "pos": "verb/noun",
+    "examples": [
+      {
+        "en": "I ride a bike to work.",
+        "vi": "Tôi đi xe đạp đến chỗ làm."
+      }
+    ],
+    "word_family": [
+      "rides (v)",
+      "riding (v)",
+      "rider (n)"
+    ],
+    "collocations": [
+      "ride a bike",
+      "ride a horse",
+      "go for a ride"
+    ],
+    "synonyms": [
+      "cycle",
+      "drive"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I ride car",
+        "correct": "I drive a car",
+        "explain_vi": "Dùng 'drive' cho ô tô, 'ride' cho xe đạp/xe máy/ngựa"
+      }
+    ],
+    "grammar_patterns": [
+      "ride + a/an + vehicle/animal"
+    ]
+  },
+  {
+    "word": "wait",
+    "phonetic": "/weɪt/",
+    "meaning_vi": "chờ",
+    "meaning_en": "to stay in a place until someone or something arrives or is ready",
+    "pos": "verb/noun",
+    "examples": [
+      {
+        "en": "We wait for the bus.",
+        "vi": "Chúng tôi chờ xe buýt."
+      }
+    ],
+    "word_family": [
+      "waits (v)",
+      "waiting (v)",
+      "waiter (n)"
+    ],
+    "collocations": [
+      "wait for",
+      "wait in line",
+      "wait a minute"
+    ],
+    "synonyms": [
+      "stay",
+      "remain"
+    ],
+    "antonyms": [
+      "leave"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I wait the bus",
+        "correct": "I wait for the bus",
+        "explain_vi": "Cần giới từ 'for' sau 'wait'"
+      }
+    ],
+    "grammar_patterns": [
+      "wait + for + noun",
+      "wait + to + verb"
+    ]
+  },
+  {
+    "word": "leave",
+    "phonetic": "/liːv/",
+    "meaning_vi": "rời đi",
+    "meaning_en": "to go away from a place",
+    "pos": "verb/noun",
+    "examples": [
+      {
+        "en": "The train leaves at 8 o'clock.",
+        "vi": "Tàu rời đi lúc 8 giờ."
+      }
+    ],
+    "word_family": [
+      "leaves (v)",
+      "left (v)",
+      "leaving (v)"
+    ],
+    "collocations": [
+      "leave for",
+      "leave from",
+      "leave at"
+    ],
+    "synonyms": [
+      "depart",
+      "go"
+    ],
+    "antonyms": [
+      "arrive",
+      "stay"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I leave from home at 7",
+        "correct": "I leave home at 7",
+        "explain_vi": "Không cần 'from' sau 'leave' khi nơi đi là nhà"
+      }
+    ],
+    "grammar_patterns": [
+      "leave + place",
+      "leave + at + time"
+    ]
+  }
+]

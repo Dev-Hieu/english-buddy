@@ -1,0 +1,1676 @@
+[
+  {
+    "word": "family",
+    "phonetic": "/ˈfæm.əl.i/",
+    "meaning_vi": "gia đình",
+    "meaning_en": "a group of people related to each other",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "My family is big.",
+        "vi": "Gia đình tôi lớn."
+      }
+    ],
+    "word_family": [
+      "familial (adj)",
+      "familiar (adj)"
+    ],
+    "collocations": [
+      "big family",
+      "family member",
+      "family name"
+    ],
+    "synonyms": [
+      "relatives",
+      "household"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "My family are big.",
+        "correct": "My family is big.",
+        "explain_vi": "Family là danh từ số ít, dùng 'is'."
+      }
+    ],
+    "grammar_patterns": [
+      "family + singular verb (US English)"
+    ]
+  },
+  {
+    "word": "friend",
+    "phonetic": "/frend/",
+    "meaning_vi": "bạn bè",
+    "meaning_en": "a person you know and like",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She is my friend.",
+        "vi": "Cô ấy là bạn của tôi."
+      }
+    ],
+    "word_family": [
+      "friendly (adj)",
+      "friendship (n)"
+    ],
+    "collocations": [
+      "best friend",
+      "close friend",
+      "make friends"
+    ],
+    "synonyms": [
+      "pal",
+      "buddy"
+    ],
+    "antonyms": [
+      "enemy"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I have many friend.",
+        "correct": "I have many friends.",
+        "explain_vi": "Friend phải thêm 's' khi số nhiều."
+      }
+    ],
+    "grammar_patterns": [
+      "a friend of mine",
+      "my friend"
+    ]
+  },
+  {
+    "word": "mother",
+    "phonetic": "/ˈmʌð.ər/",
+    "meaning_vi": "mẹ",
+    "meaning_en": "a female parent",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "My mother is a teacher.",
+        "vi": "Mẹ tôi là giáo viên."
+      }
+    ],
+    "word_family": [
+      "motherly (adj)",
+      "motherhood (n)"
+    ],
+    "collocations": [
+      "mother and father",
+      "single mother",
+      "mother's day"
+    ],
+    "synonyms": [
+      "mom",
+      "mum"
+    ],
+    "antonyms": [
+      "father"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "My mother she is a teacher.",
+        "correct": "My mother is a teacher.",
+        "explain_vi": "Không cần 'she' sau chủ ngữ."
+      }
+    ],
+    "grammar_patterns": [
+      "my mother",
+      "the mother of"
+    ]
+  },
+  {
+    "word": "father",
+    "phonetic": "/ˈfɑː.ðər/",
+    "meaning_vi": "bố",
+    "meaning_en": "a male parent",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "My father works in an office.",
+        "vi": "Bố tôi làm việc ở văn phòng."
+      }
+    ],
+    "word_family": [
+      "fatherly (adj)",
+      "fatherhood (n)"
+    ],
+    "collocations": [
+      "father and mother",
+      "father's day",
+      "stepfather"
+    ],
+    "synonyms": [
+      "dad",
+      "daddy"
+    ],
+    "antonyms": [
+      "mother"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "My father he is tall.",
+        "correct": "My father is tall.",
+        "explain_vi": "Không lặp chủ ngữ."
+      }
+    ],
+    "grammar_patterns": [
+      "my father",
+      "the father of"
+    ]
+  },
+  {
+    "word": "sister",
+    "phonetic": "/ˈsɪs.tər/",
+    "meaning_vi": "chị/em gái",
+    "meaning_en": "a female sibling",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I have one sister.",
+        "vi": "Tôi có một chị gái."
+      }
+    ],
+    "word_family": [
+      "sisterly (adj)",
+      "sisterhood (n)"
+    ],
+    "collocations": [
+      "older sister",
+      "younger sister",
+      "sister and brother"
+    ],
+    "synonyms": [
+      "sis"
+    ],
+    "antonyms": [
+      "brother"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I have a sister, she name is Lan.",
+        "correct": "I have a sister. Her name is Lan.",
+        "explain_vi": "Dùng 'her' thay v�� 'she'."
+      }
+    ],
+    "grammar_patterns": [
+      "my sister",
+      "a sister of mine"
+    ]
+  },
+  {
+    "word": "brother",
+    "phonetic": "/ˈbrʌð.ər/",
+    "meaning_vi": "anh/em trai",
+    "meaning_en": "a male sibling",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "My brother is ten years old.",
+        "vi": "Em trai tôi mười tuổi."
+      }
+    ],
+    "word_family": [
+      "brotherly (adj)",
+      "brotherhood (n)"
+    ],
+    "collocations": [
+      "older brother",
+      "younger brother",
+      "brother and sister"
+    ],
+    "synonyms": [
+      "bro"
+    ],
+    "antonyms": [
+      "sister"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "My brother he is ten.",
+        "correct": "My brother is ten.",
+        "explain_vi": "Không lặp chủ ngữ."
+      }
+    ],
+    "grammar_patterns": [
+      "my brother",
+      "a brother of mine"
+    ]
+  },
+  {
+    "word": "baby",
+    "phonetic": "/ˈbeɪ.bi/",
+    "meaning_vi": "em bé",
+    "meaning_en": "a very young child",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The baby is sleeping.",
+        "vi": "Em bé đang ngủ."
+      }
+    ],
+    "word_family": [
+      "babyish (adj)",
+      "babysit (v)"
+    ],
+    "collocations": [
+      "baby boy",
+      "baby girl",
+      "have a baby"
+    ],
+    "synonyms": [
+      "infant",
+      "newborn"
+    ],
+    "antonyms": [
+      "adult"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "The baby are sleeping.",
+        "correct": "The baby is sleeping.",
+        "explain_vi": "Baby số ít, dùng 'is'."
+      }
+    ],
+    "grammar_patterns": [
+      "a baby",
+      "the baby"
+    ]
+  },
+  {
+    "word": "grandmother",
+    "phonetic": "/ˈɡrænd.mʌð.ər/",
+    "meaning_vi": "bà",
+    "meaning_en": "the mother of your parent",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "My grandmother lives with us.",
+        "vi": "Bà tôi sống với chúng tôi."
+      }
+    ],
+    "word_family": [
+      "grandmotherly (adj)",
+      "great-grandmother (n)"
+    ],
+    "collocations": [
+      "grandmother and grandfather",
+      "visit grandmother",
+      "grandmother's house"
+    ],
+    "synonyms": [
+      "grandma",
+      "granny"
+    ],
+    "antonyms": [
+      "grandfather"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "My grandmother she is old.",
+        "correct": "My grandmother is old.",
+        "explain_vi": "Không lặp chủ ngữ."
+      }
+    ],
+    "grammar_patterns": [
+      "my grandmother",
+      "the grandmother of"
+    ]
+  },
+  {
+    "word": "grandfather",
+    "phonetic": "/ˈɡrænd.fɑː.ðər/",
+    "meaning_vi": "ông",
+    "meaning_en": "the father of your parent",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "My grandfather is kind.",
+        "vi": "Ông tôi hiền lành."
+      }
+    ],
+    "word_family": [
+      "grandfatherly (adj)",
+      "great-grandfather (n)"
+    ],
+    "collocations": [
+      "grandfather and grandmother",
+      "grandfather clock",
+      "visit grandfather"
+    ],
+    "synonyms": [
+      "grandpa",
+      "grandad"
+    ],
+    "antonyms": [
+      "grandmother"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "My grandfather he is kind.",
+        "correct": "My grandfather is kind.",
+        "explain_vi": "Không lặp chủ ngữ."
+      }
+    ],
+    "grammar_patterns": [
+      "my grandfather",
+      "the grandfather of"
+    ]
+  },
+  {
+    "word": "aunt",
+    "phonetic": "/ænt/",
+    "meaning_vi": "cô/dì",
+    "meaning_en": "the sister of your parent",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "My aunt lives in Hanoi.",
+        "vi": "Cô tôi sống ở Hà Nội."
+      }
+    ],
+    "word_family": [
+      "auntie (n)"
+    ],
+    "collocations": [
+      "aunt and uncle",
+      "visit aunt",
+      "aunt's house"
+    ],
+    "synonyms": [
+      "auntie"
+    ],
+    "antonyms": [
+      "uncle"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "My aunt she is a doctor.",
+        "correct": "My aunt is a doctor.",
+        "explain_vi": "Không lặp chủ ngữ."
+      }
+    ],
+    "grammar_patterns": [
+      "my aunt",
+      "an aunt of mine"
+    ]
+  },
+  {
+    "word": "uncle",
+    "phonetic": "/ˈʌŋ.kəl/",
+    "meaning_vi": "chú/bác",
+    "meaning_en": "the brother of your parent",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "My uncle is funny.",
+        "vi": "Chú tôi vui tính."
+      }
+    ],
+    "word_family": [
+      "uncle (n)"
+    ],
+    "collocations": [
+      "uncle and aunt",
+      "uncle's house",
+      "visit uncle"
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "aunt"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "My uncle he is funny.",
+        "correct": "My uncle is funny.",
+        "explain_vi": "Không lặp chủ ngữ."
+      }
+    ],
+    "grammar_patterns": [
+      "my uncle",
+      "an uncle of mine"
+    ]
+  },
+  {
+    "word": "cousin",
+    "phonetic": "/ˈkʌz.ɪn/",
+    "meaning_vi": "anh chị em họ",
+    "meaning_en": "the child of your aunt or uncle",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I play with my cousin.",
+        "vi": "Tôi chơi với em họ của tôi."
+      }
+    ],
+    "word_family": [
+      "cousin (n)"
+    ],
+    "collocations": [
+      "first cousin",
+      "cousin brother/sister (in some contexts)",
+      "visit cousin"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have two cousin.",
+        "correct": "I have two cousins.",
+        "explain_vi": "Cousin thêm 's' khi số nhiều."
+      }
+    ],
+    "grammar_patterns": [
+      "my cousin",
+      "a cousin of mine"
+    ]
+  },
+  {
+    "word": "neighbor",
+    "phonetic": "/ˈneɪ.bər/",
+    "meaning_vi": "hàng xóm",
+    "meaning_en": "a person who lives near you",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Our neighbor is friendly.",
+        "vi": "Hàng xóm của chúng tôi thân thiện."
+      }
+    ],
+    "word_family": [
+      "neighborhood (n)",
+      "neighborly (adj)"
+    ],
+    "collocations": [
+      "next-door neighbor",
+      "good neighbor",
+      "neighbor's house"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "My neighbor they are nice.",
+        "correct": "My neighbor is nice.",
+        "explain_vi": "Neighbor số ít, dùng 'is'."
+      }
+    ],
+    "grammar_patterns": [
+      "my neighbor",
+      "a neighbor of mine"
+    ]
+  },
+  {
+    "word": "husband",
+    "phonetic": "/ˈhʌz.bənd/",
+    "meaning_vi": "chồng",
+    "meaning_en": "a man you are married to",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "My husband is a doctor.",
+        "vi": "Chồng tôi là bác sĩ."
+      }
+    ],
+    "word_family": [
+      "husbandry (n)"
+    ],
+    "collocations": [
+      "husband and wife",
+      "ex-husband",
+      "husband's name"
+    ],
+    "synonyms": [
+      "spouse (male)"
+    ],
+    "antonyms": [
+      "wife"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "My husband he is a doctor.",
+        "correct": "My husband is a doctor.",
+        "explain_vi": "Không lặp chủ ngữ."
+      }
+    ],
+    "grammar_patterns": [
+      "my husband",
+      "the husband of"
+    ]
+  },
+  {
+    "word": "wife",
+    "phonetic": "/waɪf/",
+    "meaning_vi": "vợ",
+    "meaning_en": "a woman you are married to",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "My wife is a nurse.",
+        "vi": "Vợ tôi là y tá."
+      }
+    ],
+    "word_family": [
+      "wifely (adj)",
+      "housewife (n)"
+    ],
+    "collocations": [
+      "wife and husband",
+      "ex-wife",
+      "wife's name"
+    ],
+    "synonyms": [
+      "spouse (female)"
+    ],
+    "antonyms": [
+      "husband"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "My wife she is a nurse.",
+        "correct": "My wife is a nurse.",
+        "explain_vi": "Không lặp chủ ngữ."
+      }
+    ],
+    "grammar_patterns": [
+      "my wife",
+      "the wife of"
+    ]
+  },
+  {
+    "word": "child",
+    "phonetic": "/tʃaɪld/",
+    "meaning_vi": "đứa trẻ",
+    "meaning_en": "a young person (son or daughter)",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "They have one child.",
+        "vi": "Họ có một đứa con."
+      }
+    ],
+    "word_family": [
+      "childhood (n)",
+      "childish (adj)",
+      "children (pl)"
+    ],
+    "collocations": [
+      "only child",
+      "child care",
+      "child's toy"
+    ],
+    "synonyms": [
+      "kid",
+      "youngster"
+    ],
+    "antonyms": [
+      "adult",
+      "parent"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "They have two child.",
+        "correct": "They have two children.",
+        "explain_vi": "Số nhiều của child là children."
+      }
+    ],
+    "grammar_patterns": [
+      "a child",
+      "the child"
+    ]
+  },
+  {
+    "word": "son",
+    "phonetic": "/sʌn/",
+    "meaning_vi": "con trai",
+    "meaning_en": "a male child",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "My son is five.",
+        "vi": "Con trai tôi năm tuổi."
+      }
+    ],
+    "word_family": [
+      "sonny (n)"
+    ],
+    "collocations": [
+      "son and daughter",
+      "eldest son",
+      "son's name"
+    ],
+    "synonyms": [
+      "boy"
+    ],
+    "antonyms": [
+      "daughter"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "My son he is five.",
+        "correct": "My son is five.",
+        "explain_vi": "Không lặp chủ ngữ."
+      }
+    ],
+    "grammar_patterns": [
+      "my son",
+      "the son of"
+    ]
+  },
+  {
+    "word": "daughter",
+    "phonetic": "/ˈdɔː.tər/",
+    "meaning_vi": "con gái",
+    "meaning_en": "a female child",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "My daughter is a student.",
+        "vi": "Con gái tôi là học sinh."
+      }
+    ],
+    "word_family": [
+      "daughterly (adj)"
+    ],
+    "collocations": [
+      "daughter and son",
+      "eldest daughter",
+      "daughter's name"
+    ],
+    "synonyms": [
+      "girl"
+    ],
+    "antonyms": [
+      "son"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "My daughter she is a student.",
+        "correct": "My daughter is a student.",
+        "explain_vi": "Không lặp chủ ngữ."
+      }
+    ],
+    "grammar_patterns": [
+      "my daughter",
+      "the daughter of"
+    ]
+  },
+  {
+    "word": "parent",
+    "phonetic": "/ˈper.ənt/",
+    "meaning_vi": "bố mẹ",
+    "meaning_en": "a father or mother",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "My parents are at home.",
+        "vi": "Bố mẹ tôi ở nhà."
+      }
+    ],
+    "word_family": [
+      "parental (adj)",
+      "parenting (n)"
+    ],
+    "collocations": [
+      "single parent",
+      "parent and child",
+      "parent's meeting"
+    ],
+    "synonyms": [
+      "mother",
+      "father"
+    ],
+    "antonyms": [
+      "child"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "My parent is at home.",
+        "correct": "My parents are at home.",
+        "explain_vi": "Thường dùng số nhiều 'parents'."
+      }
+    ],
+    "grammar_patterns": [
+      "my parents",
+      "a parent of"
+    ]
+  },
+  {
+    "word": "people",
+    "phonetic": "/ˈpiː.pəl/",
+    "meaning_vi": "mọi người",
+    "meaning_en": "human beings in general or a group",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "There are many people in the park.",
+        "vi": "Có nhiều người trong công viên."
+      }
+    ],
+    "word_family": [
+      "peoples (n, plural)",
+      "peoplehood (n)"
+    ],
+    "collocations": [
+      "many people",
+      "people person",
+      "people's choice"
+    ],
+    "synonyms": [
+      "folks",
+      "humans"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "There is many people.",
+        "correct": "There are many people.",
+        "explain_vi": "People số nhiều, dùng 'are'."
+      }
+    ],
+    "grammar_patterns": [
+      "people + plural verb"
+    ]
+  },
+  {
+    "word": "name",
+    "phonetic": "/neɪm/",
+    "meaning_vi": "tên",
+    "meaning_en": "a word by which a person is known",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "My name is John.",
+        "vi": "Tên tôi là John."
+      },
+      {
+        "en": "What is your name?",
+        "vi": "Tên bạn là gì?"
+      }
+    ],
+    "word_family": [
+      "named (adj)",
+      "nameless (adj)"
+    ],
+    "collocations": [
+      "first name",
+      "last name",
+      "full name"
+    ],
+    "synonyms": [
+      "given name",
+      "surname"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "My name is John.",
+        "correct": "My name is John.",
+        "explain_vi": "Không có lỗi phổ biến, nhưng cần nhớ thứ tự họ tên."
+      }
+    ],
+    "grammar_patterns": [
+      "possessive + name",
+      "name + be + noun"
+    ]
+  },
+  {
+    "word": "love",
+    "phonetic": "/lʌv/",
+    "meaning_vi": "yêu",
+    "meaning_en": "to have strong affection for someone",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "I love my family.",
+        "vi": "Tôi yêu gia đình tôi."
+      },
+      {
+        "en": "She loves her friends.",
+        "vi": "Cô ấy yêu bạn bè của cô ấy."
+      }
+    ],
+    "word_family": [
+      "lover (n)",
+      "lovely (adj)",
+      "loving (adj)"
+    ],
+    "collocations": [
+      "love someone",
+      "fall in love",
+      "make love"
+    ],
+    "synonyms": [
+      "adore",
+      "cherish"
+    ],
+    "antonyms": [
+      "hate"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I love my mother very much.",
+        "correct": "I love my mother very much.",
+        "explain_vi": "Không có lỗi, nhưng cần phân biệt 'love' và 'like'."
+      }
+    ],
+    "grammar_patterns": [
+      "love + noun",
+      "love + verb-ing"
+    ]
+  },
+  {
+    "word": "like",
+    "phonetic": "/laɪk/",
+    "meaning_vi": "thích",
+    "meaning_en": "to enjoy something or find someone pleasant",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "I like my friend.",
+        "vi": "Tôi thích bạn của tôi."
+      },
+      {
+        "en": "Do you like coffee?",
+        "vi": "Bạn có thích cà phê không?"
+      }
+    ],
+    "word_family": [
+      "likable (adj)",
+      "liking (n)"
+    ],
+    "collocations": [
+      "like something",
+      "like doing",
+      "like to do"
+    ],
+    "synonyms": [
+      "enjoy",
+      "be fond of"
+    ],
+    "antonyms": [
+      "dislike",
+      "hate"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I like play football.",
+        "correct": "I like playing football.",
+        "explain_vi": "Sau 'like' dùng V-ing hoặc to V, không dùng V nguyên mẫu."
+      }
+    ],
+    "grammar_patterns": [
+      "like + noun",
+      "like + verb-ing",
+      "like + to verb"
+    ]
+  },
+  {
+    "word": "friend",
+    "phonetic": "/frend/",
+    "meaning_vi": "bạn",
+    "meaning_en": "a person you know well and like",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She is my best friend.",
+        "vi": "Cô ấy là bạn thân nhất của tôi."
+      },
+      {
+        "en": "I have many friends.",
+        "vi": "Tôi có nhiều bạn."
+      }
+    ],
+    "word_family": [
+      "friendly (adj)",
+      "friendship (n)",
+      "boyfriend (n)",
+      "girlfriend (n)"
+    ],
+    "collocations": [
+      "best friend",
+      "close friend",
+      "make friends"
+    ],
+    "synonyms": [
+      "pal",
+      "buddy"
+    ],
+    "antonyms": [
+      "enemy"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I and my friend",
+        "correct": "My friend and I",
+        "explain_vi": "Trong tiếng Anh, đặt người khác trước 'I'."
+      }
+    ],
+    "grammar_patterns": [
+      "possessive + friend",
+      "friend of + possessive"
+    ]
+  },
+  {
+    "word": "home",
+    "phonetic": "/hoʊm/",
+    "meaning_vi": "nhà",
+    "meaning_en": "the place where you live",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I go home after school.",
+        "vi": "Tôi về nhà sau giờ học."
+      },
+      {
+        "en": "My home is small.",
+        "vi": "Nhà tôi nhỏ."
+      }
+    ],
+    "word_family": [
+      "homeless (adj)",
+      "homework (n)",
+      "homeland (n)"
+    ],
+    "collocations": [
+      "at home",
+      "go home",
+      "stay home"
+    ],
+    "synonyms": [
+      "house",
+      "residence"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go to home.",
+        "correct": "I go home.",
+        "explain_vi": "Không dùng 'to' trước 'home' khi di chuyển."
+      }
+    ],
+    "grammar_patterns": [
+      "go home",
+      "at home",
+      "home + be + adjective"
+    ]
+  },
+  {
+    "word": "school",
+    "phonetic": "/skuːl/",
+    "meaning_vi": "trường học",
+    "meaning_en": "a place where children learn",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I go to school every day.",
+        "vi": "Tôi đi học mỗi ngày."
+      },
+      {
+        "en": "My school is big.",
+        "vi": "Trường tôi lớn."
+      }
+    ],
+    "word_family": [
+      "schooling (n)",
+      "schoolboy (n)",
+      "schoolgirl (n)"
+    ],
+    "collocations": [
+      "go to school",
+      "primary school",
+      "high school"
+    ],
+    "synonyms": [
+      "academy",
+      "institution"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go to the school.",
+        "correct": "I go to school.",
+        "explain_vi": "Không dùng mạo từ 'the' khi nói về trường học nói chung."
+      }
+    ],
+    "grammar_patterns": [
+      "go to school",
+      "at school",
+      "school + be + adjective"
+    ]
+  },
+  {
+    "word": "teacher",
+    "phonetic": "/ˈtiː.tʃər/",
+    "meaning_vi": "giáo viên",
+    "meaning_en": "a person who teaches",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "My teacher is nice.",
+        "vi": "Giáo viên của tôi tốt."
+      },
+      {
+        "en": "She is a teacher.",
+        "vi": "Cô ấy là giáo viên."
+      }
+    ],
+    "word_family": [
+      "teach (v)",
+      "teaching (n)"
+    ],
+    "collocations": [
+      "English teacher",
+      "favorite teacher",
+      "teacher's desk"
+    ],
+    "synonyms": [
+      "instructor",
+      "educator"
+    ],
+    "antonyms": [
+      "student"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I am teacher.",
+        "correct": "I am a teacher.",
+        "explain_vi": "Cần mạo từ 'a' trước danh từ nghề nghiệp."
+      }
+    ],
+    "grammar_patterns": [
+      "be a teacher",
+      "teacher of + subject"
+    ]
+  },
+  {
+    "word": "student",
+    "phonetic": "/ˈstuː.dənt/",
+    "meaning_vi": "học sinh",
+    "meaning_en": "a person who studies",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I am a student.",
+        "vi": "Tôi là học sinh."
+      },
+      {
+        "en": "She is a good student.",
+        "vi": "Cô ấy là học sinh giỏi."
+      }
+    ],
+    "word_family": [
+      "study (v)",
+      "student body (n)"
+    ],
+    "collocations": [
+      "college student",
+      "student life",
+      "student ID"
+    ],
+    "synonyms": [
+      "pupil",
+      "learner"
+    ],
+    "antonyms": [
+      "teacher"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I student.",
+        "correct": "I am a student.",
+        "explain_vi": "Thiếu động từ 'am' và mạo từ 'a'."
+      }
+    ],
+    "grammar_patterns": [
+      "be a student",
+      "student of + school"
+    ]
+  },
+  {
+    "word": "play",
+    "phonetic": "/pleɪ/",
+    "meaning_vi": "chơi",
+    "meaning_en": "to take part in a game or activity for fun",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "Children play in the park.",
+        "vi": "Trẻ em chơi trong công viên."
+      },
+      {
+        "en": "I play with my friend.",
+        "vi": "Tôi chơi với bạn tôi."
+      }
+    ],
+    "word_family": [
+      "player (n)",
+      "playful (adj)",
+      "playground (n)"
+    ],
+    "collocations": [
+      "play games",
+      "play with",
+      "play sports"
+    ],
+    "synonyms": [
+      "have fun",
+      "amuse oneself"
+    ],
+    "antonyms": [
+      "work"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I play football.",
+        "correct": "I play football.",
+        "explain_vi": "Đúng, nhưng cần nhớ 'play' + tên môn thể thao không có 'the'."
+      }
+    ],
+    "grammar_patterns": [
+      "play + noun",
+      "play with + noun"
+    ]
+  },
+  {
+    "word": "work",
+    "phonetic": "/wɜːrk/",
+    "meaning_vi": "làm việc",
+    "meaning_en": "to do a job or task",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "My father works in a hospital.",
+        "vi": "Bố tôi làm việc ở bệnh viện."
+      },
+      {
+        "en": "I work every day.",
+        "vi": "Tôi làm việc mỗi ngày."
+      }
+    ],
+    "word_family": [
+      "worker (n)",
+      "workplace (n)",
+      "homework (n)"
+    ],
+    "collocations": [
+      "go to work",
+      "work hard",
+      "work with"
+    ],
+    "synonyms": [
+      "labor",
+      "toil"
+    ],
+    "antonyms": [
+      "rest",
+      "play"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I work in office.",
+        "correct": "I work in an office.",
+        "explain_vi": "Cần mạo từ 'an' trước 'office'."
+      }
+    ],
+    "grammar_patterns": [
+      "work + preposition + place",
+      "work + adverb"
+    ]
+  },
+  {
+    "word": "live",
+    "phonetic": "/lɪv/",
+    "meaning_vi": "sống",
+    "meaning_en": "to have your home in a place",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "I live in Hanoi.",
+        "vi": "Tôi sống ở Hà Nội."
+      },
+      {
+        "en": "She lives with her family.",
+        "vi": "Cô ấy sống với gia đình."
+      }
+    ],
+    "word_family": [
+      "life (n)",
+      "living (adj)",
+      "alive (adj)"
+    ],
+    "collocations": [
+      "live in",
+      "live with",
+      "live alone"
+    ],
+    "synonyms": [
+      "reside",
+      "dwell"
+    ],
+    "antonyms": [
+      "die"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I live at Hanoi.",
+        "correct": "I live in Hanoi.",
+        "explain_vi": "Dùng 'in' với thành phố, 'at' với địa chỉ cụ thể."
+      }
+    ],
+    "grammar_patterns": [
+      "live + in/at + place",
+      "live with + person"
+    ]
+  },
+  {
+    "word": "old",
+    "phonetic": "/oʊld/",
+    "meaning_vi": "già, cũ",
+    "meaning_en": "having lived for a long time; not young",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "My grandmother is old.",
+        "vi": "Bà tôi già."
+      },
+      {
+        "en": "This is an old house.",
+        "vi": "Đây là một ngôi nhà cũ."
+      }
+    ],
+    "word_family": [
+      "elderly (adj)",
+      "old age (n)"
+    ],
+    "collocations": [
+      "old man",
+      "old friend",
+      "get old"
+    ],
+    "synonyms": [
+      "aged",
+      "elderly"
+    ],
+    "antonyms": [
+      "young",
+      "new"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "She is more old than me.",
+        "correct": "She is older than me.",
+        "explain_vi": "So sánh hơn của 'old' là 'older', không phải 'more old'."
+      }
+    ],
+    "grammar_patterns": [
+      "be old",
+      "older than",
+      "the oldest"
+    ]
+  },
+  {
+    "word": "young",
+    "phonetic": "/jʌŋ/",
+    "meaning_vi": "trẻ",
+    "meaning_en": "having lived for only a short time; not old",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "My brother is young.",
+        "vi": "Em trai tôi còn trẻ."
+      },
+      {
+        "en": "She is a young teacher.",
+        "vi": "Cô ấy là giáo viên trẻ."
+      }
+    ],
+    "word_family": [
+      "youth (n)",
+      "youngster (n)"
+    ],
+    "collocations": [
+      "young people",
+      "young age",
+      "younger brother"
+    ],
+    "synonyms": [
+      "youthful",
+      "juvenile"
+    ],
+    "antonyms": [
+      "old",
+      "elderly"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "He is more young than me.",
+        "correct": "He is younger than me.",
+        "explain_vi": "So sánh hơn của 'young' là 'younger'."
+      }
+    ],
+    "grammar_patterns": [
+      "be young",
+      "younger than",
+      "the youngest"
+    ]
+  },
+  {
+    "word": "big",
+    "phonetic": "/bɪɡ/",
+    "meaning_vi": "to, lớn",
+    "meaning_en": "large in size",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "My family is big.",
+        "vi": "Gia đình tôi lớn."
+      },
+      {
+        "en": "He has a big house.",
+        "vi": "Anh ấy có một ngôi nhà lớn."
+      }
+    ],
+    "word_family": [
+      "bigger (adj)",
+      "biggest (adj)"
+    ],
+    "collocations": [
+      "big family",
+      "big city",
+      "big brother"
+    ],
+    "synonyms": [
+      "large",
+      "huge"
+    ],
+    "antonyms": [
+      "small",
+      "little"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "It is more big.",
+        "correct": "It is bigger.",
+        "explain_vi": "So sánh hơn của 'big' là 'bigger', không phải 'more big'."
+      }
+    ],
+    "grammar_patterns": [
+      "be big",
+      "bigger than",
+      "the biggest"
+    ]
+  },
+  {
+    "word": "small",
+    "phonetic": "/smɔːl/",
+    "meaning_vi": "nhỏ, bé",
+    "meaning_en": "little in size",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "My sister is small.",
+        "vi": "Em gái tôi nhỏ."
+      },
+      {
+        "en": "We have a small dog.",
+        "vi": "Chúng tôi có một con chó nhỏ."
+      }
+    ],
+    "word_family": [
+      "smaller (adj)",
+      "smallest (adj)"
+    ],
+    "collocations": [
+      "small child",
+      "small town",
+      "small number"
+    ],
+    "synonyms": [
+      "little",
+      "tiny"
+    ],
+    "antonyms": [
+      "big",
+      "large"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "It is more small.",
+        "correct": "It is smaller.",
+        "explain_vi": "So sánh hơn của 'small' là 'smaller'."
+      }
+    ],
+    "grammar_patterns": [
+      "be small",
+      "smaller than",
+      "the smallest"
+    ]
+  },
+  {
+    "word": "nice",
+    "phonetic": "/naɪs/",
+    "meaning_vi": "tốt, đẹp",
+    "meaning_en": "pleasant; kind",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "She is a nice friend.",
+        "vi": "Cô ấy là một người bạn tốt."
+      },
+      {
+        "en": "The weather is nice.",
+        "vi": "Thời tiết đẹp."
+      }
+    ],
+    "word_family": [
+      "nicely (adv)",
+      "niceness (n)"
+    ],
+    "collocations": [
+      "nice person",
+      "nice day",
+      "nice to meet you"
+    ],
+    "synonyms": [
+      "kind",
+      "pleasant"
+    ],
+    "antonyms": [
+      "mean",
+      "unpleasant"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "He is a nice.",
+        "correct": "He is nice.",
+        "explain_vi": "'Nice' là tính từ, không dùng mạo từ 'a' trực tiếp."
+      }
+    ],
+    "grammar_patterns": [
+      "be nice",
+      "nice + noun",
+      "nice to + verb"
+    ]
+  },
+  {
+    "word": "good",
+    "phonetic": "/ɡʊd/",
+    "meaning_vi": "tốt",
+    "meaning_en": "of a high quality or standard",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "He is a good father.",
+        "vi": "Anh ấy là một người cha tốt."
+      },
+      {
+        "en": "This is a good book.",
+        "vi": "Đây là một cuốn sách tốt."
+      }
+    ],
+    "word_family": [
+      "goodness (n)",
+      "better (adj)",
+      "best (adj)"
+    ],
+    "collocations": [
+      "good friend",
+      "good idea",
+      "good morning"
+    ],
+    "synonyms": [
+      "fine",
+      "excellent"
+    ],
+    "antonyms": [
+      "bad"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "She is good in math.",
+        "correct": "She is good at math.",
+        "explain_vi": "Dùng 'good at' với kỹ năng."
+      }
+    ],
+    "grammar_patterns": [
+      "be good",
+      "good at + noun/verb-ing"
+    ]
+  },
+  {
+    "word": "bad",
+    "phonetic": "/bæd/",
+    "meaning_vi": "xấu, tệ",
+    "meaning_en": "not good; of low quality",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "He is a bad person.",
+        "vi": "Anh ta là người xấu."
+      },
+      {
+        "en": "The food is bad.",
+        "vi": "Đồ ăn tệ."
+      }
+    ],
+    "word_family": [
+      "badly (adv)",
+      "worse (adj)",
+      "worst (adj)"
+    ],
+    "collocations": [
+      "bad habit",
+      "bad weather",
+      "bad day"
+    ],
+    "synonyms": [
+      "terrible",
+      "awful"
+    ],
+    "antonyms": [
+      "good"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I feel badly.",
+        "correct": "I feel bad.",
+        "explain_vi": "Sau 'feel' dùng tính từ 'bad', không phải trạng từ 'badly'."
+      }
+    ],
+    "grammar_patterns": [
+      "be bad",
+      "bad for + noun",
+      "bad at + noun/verb-ing"
+    ]
+  },
+  {
+    "word": "happy",
+    "phonetic": "/ˈhæp.i/",
+    "meaning_vi": "vui vẻ, hạnh phúc",
+    "meaning_en": "feeling pleasure or contentment",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "I am happy with my family.",
+        "vi": "Tôi hạnh phúc với gia đình."
+      },
+      {
+        "en": "She looks happy.",
+        "vi": "Cô ấy trông vui vẻ."
+      }
+    ],
+    "word_family": [
+      "happiness (n)",
+      "happily (adv)",
+      "unhappy (adj)"
+    ],
+    "collocations": [
+      "happy birthday",
+      "happy family",
+      "feel happy"
+    ],
+    "synonyms": [
+      "glad",
+      "joyful"
+    ],
+    "antonyms": [
+      "sad",
+      "unhappy"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I am happy with you.",
+        "correct": "I am happy with you.",
+        "explain_vi": "Đúng, nhưng cần phân biệt 'happy about' và 'happy with'."
+      }
+    ],
+    "grammar_patterns": [
+      "be happy",
+      "happy + preposition + noun"
+    ]
+  },
+  {
+    "word": "sad",
+    "phonetic": "/sæd/",
+    "meaning_vi": "buồn",
+    "meaning_en": "feeling unhappy",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "She is sad because her friend left.",
+        "vi": "Cô ấy buồn vì bạn cô ấy đã đi."
+      },
+      {
+        "en": "I feel sad.",
+        "vi": "Tôi cảm thấy buồn."
+      }
+    ],
+    "word_family": [
+      "sadness (n)",
+      "sadly (adv)"
+    ],
+    "collocations": [
+      "sad story",
+      "feel sad",
+      "look sad"
+    ],
+    "synonyms": [
+      "unhappy",
+      "upset"
+    ],
+    "antonyms": [
+      "happy",
+      "glad"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I am sad because of the weather.",
+        "correct": "I am sad because of the weather.",
+        "explain_vi": "Đúng, nhưng cần nhớ 'because of' + noun."
+      }
+    ],
+    "grammar_patterns": [
+      "be sad",
+      "sad + about + noun",
+      "sad + because + clause"
+    ]
+  }
+]

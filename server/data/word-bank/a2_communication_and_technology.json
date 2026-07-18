@@ -1,0 +1,2286 @@
+[
+  {
+    "word": "email",
+    "phonetic": "/ˈiː.meɪl/",
+    "meaning_vi": "thư điện tử",
+    "meaning_en": "a message sent electronically",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I will send you an email.",
+        "vi": "Tôi sẽ gửi cho bạn một email."
+      }
+    ],
+    "word_family": [
+      "e- (prefix)",
+      "mail (n)"
+    ],
+    "collocations": [
+      "send an email",
+      "check email",
+      "reply to an email"
+    ],
+    "synonyms": [
+      "electronic mail"
+    ],
+    "antonyms": [
+      "snail mail"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I will email to you.",
+        "correct": "I will email you.",
+        "explain_vi": "Không dùng giới từ 'to' sau 'email' khi có tân ngữ trực tiếp."
+      }
+    ],
+    "grammar_patterns": [
+      "email + object (no preposition)"
+    ]
+  },
+  {
+    "word": "message",
+    "phonetic": "/ˈmes.ɪdʒ/",
+    "meaning_vi": "tin nhắn",
+    "meaning_en": "a piece of information sent to someone",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I got your message.",
+        "vi": "Tôi đã nhận được tin nhắn của bạn."
+      }
+    ],
+    "word_family": [
+      "messenger (n)",
+      "text message (n)"
+    ],
+    "collocations": [
+      "send a message",
+      "receive a message",
+      "leave a message"
+    ],
+    "synonyms": [
+      "note",
+      "communication"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I message you yesterday.",
+        "correct": "I messaged you yesterday.",
+        "explain_vi": "Dùng thì quá khứ đơn 'messaged'."
+      }
+    ],
+    "grammar_patterns": [
+      "message (n) + verb",
+      "message (v) + object"
+    ]
+  },
+  {
+    "word": "phone",
+    "phonetic": "/fəʊn/",
+    "meaning_vi": "điện thoại",
+    "meaning_en": "a device for voice communication",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "My phone is on the table.",
+        "vi": "Điện thoại của tôi ở trên bàn."
+      }
+    ],
+    "word_family": [
+      "telephone (n)",
+      "cell phone (n)",
+      "smartphone (n)"
+    ],
+    "collocations": [
+      "make a phone call",
+      "answer the phone",
+      "phone number"
+    ],
+    "synonyms": [
+      "telephone",
+      "mobile"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I will phone to you.",
+        "correct": "I will phone you.",
+        "explain_vi": "Không dùng 'to' sau 'phone' khi có tân ngữ."
+      }
+    ],
+    "grammar_patterns": [
+      "phone (v) + object",
+      "on the phone"
+    ]
+  },
+  {
+    "word": "call",
+    "phonetic": "/kɔːl/",
+    "meaning_vi": "cuộc gọi",
+    "meaning_en": "an act of telephoning",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I will give you a call.",
+        "vi": "Tôi sẽ gọi cho bạn."
+      }
+    ],
+    "word_family": [
+      "caller (n)",
+      "callback (n)"
+    ],
+    "collocations": [
+      "make a call",
+      "take a call",
+      "return a call"
+    ],
+    "synonyms": [
+      "phone call",
+      "ring"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I call to him yesterday.",
+        "correct": "I called him yesterday.",
+        "explain_vi": "Không dùng 'to' sau 'call' và dùng thì quá khứ."
+      }
+    ],
+    "grammar_patterns": [
+      "call (v) + object",
+      "call (n) + verb"
+    ]
+  },
+  {
+    "word": "text",
+    "phonetic": "/tekst/",
+    "meaning_vi": "tin nhắn văn bản",
+    "meaning_en": "a short written message sent by phone",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Send me a text when you arrive.",
+        "vi": "Nhắn tin cho tôi khi bạn đến."
+      }
+    ],
+    "word_family": [
+      "texting (n)",
+      "text message (n)"
+    ],
+    "collocations": [
+      "send a text",
+      "get a text",
+      "text back"
+    ],
+    "synonyms": [
+      "SMS",
+      "message"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I texted to her.",
+        "correct": "I texted her.",
+        "explain_vi": "Không dùng 'to' sau 'text'."
+      }
+    ],
+    "grammar_patterns": [
+      "text (v) + object",
+      "text (n) + verb"
+    ]
+  },
+  {
+    "word": "internet",
+    "phonetic": "/ˈɪn.tə.net/",
+    "meaning_vi": "internet",
+    "meaning_en": "a global computer network",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I use the internet every day.",
+        "vi": "Tôi sử dụng internet mỗi ngày."
+      }
+    ],
+    "word_family": [
+      "online (adj/adv)",
+      "web (n)"
+    ],
+    "collocations": [
+      "surf the internet",
+      "access the internet",
+      "internet connection"
+    ],
+    "synonyms": [
+      "web",
+      "net"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go internet.",
+        "correct": "I go on the internet.",
+        "explain_vi": "Dùng 'on the internet' thay vì chỉ 'internet'."
+      }
+    ],
+    "grammar_patterns": [
+      "the internet",
+      "on the internet"
+    ]
+  },
+  {
+    "word": "website",
+    "phonetic": "/ˈweb.saɪt/",
+    "meaning_vi": "trang web",
+    "meaning_en": "a set of pages on the internet",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I visited the website.",
+        "vi": "Tôi đã truy cập trang web."
+      }
+    ],
+    "word_family": [
+      "webpage (n)",
+      "web (n)"
+    ],
+    "collocations": [
+      "visit a website",
+      "create a website",
+      "website address"
+    ],
+    "synonyms": [
+      "site",
+      "web page"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go to website.",
+        "correct": "I go to the website.",
+        "explain_vi": "Cần mạo từ 'the'."
+      }
+    ],
+    "grammar_patterns": [
+      "website + verb",
+      "on the website"
+    ]
+  },
+  {
+    "word": "computer",
+    "phonetic": "/kəmˈpjuː.tər/",
+    "meaning_vi": "máy tính",
+    "meaning_en": "an electronic device for processing data",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I work on my computer.",
+        "vi": "Tôi làm việc trên máy tính của tôi."
+      }
+    ],
+    "word_family": [
+      "computing (n)",
+      "computerize (v)"
+    ],
+    "collocations": [
+      "use a computer",
+      "turn on the computer",
+      "computer screen"
+    ],
+    "synonyms": [
+      "PC",
+      "laptop"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I play computer.",
+        "correct": "I play on the computer.",
+        "explain_vi": "Dùng 'on the computer' khi nói về hoạt động."
+      }
+    ],
+    "grammar_patterns": [
+      "computer + noun",
+      "on the computer"
+    ]
+  },
+  {
+    "word": "keyboard",
+    "phonetic": "/ˈkiː.bɔːd/",
+    "meaning_vi": "bàn phím",
+    "meaning_en": "a set of keys for typing",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I type on the keyboard.",
+        "vi": "Tôi gõ trên bàn phím."
+      }
+    ],
+    "word_family": [
+      "key (n)",
+      "board (n)"
+    ],
+    "collocations": [
+      "use the keyboard",
+      "keyboard shortcut",
+      "keyboard keys"
+    ],
+    "synonyms": [
+      "input device"
+    ],
+    "antonyms": [
+      "mouse"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I use keyboard.",
+        "correct": "I use the keyboard.",
+        "explain_vi": "Cần mạo từ 'the'."
+      }
+    ],
+    "grammar_patterns": [
+      "the keyboard",
+      "on the keyboard"
+    ]
+  },
+  {
+    "word": "mouse",
+    "phonetic": "/maʊs/",
+    "meaning_vi": "chuột máy tính",
+    "meaning_en": "a device that moves the cursor",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Click the mouse.",
+        "vi": "Nhấp chuột."
+      }
+    ],
+    "word_family": [
+      "mice (plural)",
+      "mousepad (n)"
+    ],
+    "collocations": [
+      "click the mouse",
+      "move the mouse",
+      "mouse button"
+    ],
+    "synonyms": [
+      "pointing device"
+    ],
+    "antonyms": [
+      "keyboard"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I use mouse.",
+        "correct": "I use the mouse.",
+        "explain_vi": "Cần mạo từ 'the'."
+      }
+    ],
+    "grammar_patterns": [
+      "the mouse",
+      "with the mouse"
+    ]
+  },
+  {
+    "word": "screen",
+    "phonetic": "/skriːn/",
+    "meaning_vi": "màn hình",
+    "meaning_en": "a display surface",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Look at the screen.",
+        "vi": "Nhìn vào màn hình."
+      }
+    ],
+    "word_family": [
+      "screening (n)",
+      "touchscreen (n)"
+    ],
+    "collocations": [
+      "computer screen",
+      "phone screen",
+      "screen size"
+    ],
+    "synonyms": [
+      "display",
+      "monitor"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I see on screen.",
+        "correct": "I see on the screen.",
+        "explain_vi": "Cần mạo từ 'the'."
+      }
+    ],
+    "grammar_patterns": [
+      "the screen",
+      "on the screen"
+    ]
+  },
+  {
+    "word": "download",
+    "phonetic": "/ˈdaʊn.ləʊd/",
+    "meaning_vi": "tải xuống",
+    "meaning_en": "to copy data from the internet to a device",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "I download music from the internet.",
+        "vi": "Tôi tải nhạc từ internet."
+      }
+    ],
+    "word_family": [
+      "downloader (n)",
+      "downloadable (adj)"
+    ],
+    "collocations": [
+      "download a file",
+      "download an app",
+      "download speed"
+    ],
+    "synonyms": [
+      "save",
+      "transfer"
+    ],
+    "antonyms": [
+      "upload"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I download from internet.",
+        "correct": "I download from the internet.",
+        "explain_vi": "Cần mạo từ 'the' trước 'internet'."
+      }
+    ],
+    "grammar_patterns": [
+      "download + object",
+      "download from + place"
+    ]
+  },
+  {
+    "word": "upload",
+    "phonetic": "/ʌpˈləʊd/",
+    "meaning_vi": "tải lên",
+    "meaning_en": "to send data from a device to the internet",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "I upload photos to Facebook.",
+        "vi": "Tôi tải ảnh lên Facebook."
+      }
+    ],
+    "word_family": [
+      "uploader (n)",
+      "uploading (n)"
+    ],
+    "collocations": [
+      "upload a photo",
+      "upload a video",
+      "upload speed"
+    ],
+    "synonyms": [
+      "post",
+      "share"
+    ],
+    "antonyms": [
+      "download"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I upload photo.",
+        "correct": "I upload a photo.",
+        "explain_vi": "Cần mạo từ 'a'."
+      }
+    ],
+    "grammar_patterns": [
+      "upload + object",
+      "upload to + place"
+    ]
+  },
+  {
+    "word": "password",
+    "phonetic": "/ˈpɑːs.wɜːd/",
+    "meaning_vi": "mật khẩu",
+    "meaning_en": "a secret code for access",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Enter your password.",
+        "vi": "Nhập mật khẩu của bạn."
+      }
+    ],
+    "word_family": [
+      "pass (v)",
+      "word (n)"
+    ],
+    "collocations": [
+      "set a password",
+      "forgot password",
+      "password protection"
+    ],
+    "synonyms": [
+      "code",
+      "key"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I forgot password.",
+        "correct": "I forgot my password.",
+        "explain_vi": "Cần tính từ sở hữu 'my'."
+      }
+    ],
+    "grammar_patterns": [
+      "password + noun",
+      "enter + possessive + password"
+    ]
+  },
+  {
+    "word": "account",
+    "phonetic": "/əˈkaʊnt/",
+    "meaning_vi": "tài khoản",
+    "meaning_en": "a registered user profile",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I have an account on Instagram.",
+        "vi": "Tôi có một tài khoản trên Instagram."
+      }
+    ],
+    "word_family": [
+      "accounting (n)",
+      "accountant (n)"
+    ],
+    "collocations": [
+      "create an account",
+      "log into account",
+      "account settings"
+    ],
+    "synonyms": [
+      "profile",
+      "membership"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I make account.",
+        "correct": "I create an account.",
+        "explain_vi": "Dùng 'create' và cần mạo từ 'an'."
+      }
+    ],
+    "grammar_patterns": [
+      "account + noun",
+      "an account"
+    ]
+  },
+  {
+    "word": "log in",
+    "phonetic": "/lɒɡ ɪn/",
+    "meaning_vi": "đăng nhập",
+    "meaning_en": "to enter a system with credentials",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "Log in to your email.",
+        "vi": "Đăng nhập vào email của bạn."
+      }
+    ],
+    "word_family": [
+      "login (n)",
+      "log out (v)"
+    ],
+    "collocations": [
+      "log in to",
+      "log in with",
+      "log in button"
+    ],
+    "synonyms": [
+      "sign in",
+      "authenticate"
+    ],
+    "antonyms": [
+      "log out"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Login to website.",
+        "correct": "Log in to the website.",
+        "explain_vi": "Cần mạo từ 'the' và 'log in' là hai từ."
+      }
+    ],
+    "grammar_patterns": [
+      "log in to + place",
+      "log in with + credentials"
+    ]
+  },
+  {
+    "word": "log out",
+    "phonetic": "/lɒɡ aʊt/",
+    "meaning_vi": "đăng xuất",
+    "meaning_en": "to exit a system",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "Log out of your account.",
+        "vi": "Đăng xuất khỏi tài khoản của bạn."
+      }
+    ],
+    "word_family": [
+      "logout (n)",
+      "log in (v)"
+    ],
+    "collocations": [
+      "log out of",
+      "log out button"
+    ],
+    "synonyms": [
+      "sign out",
+      "disconnect"
+    ],
+    "antonyms": [
+      "log in"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Logout from account.",
+        "correct": "Log out of your account.",
+        "explain_vi": "'Log out' là hai từ, dùng 'of'."
+      }
+    ],
+    "grammar_patterns": [
+      "log out of + place"
+    ]
+  },
+  {
+    "word": "app",
+    "phonetic": "/æp/",
+    "meaning_vi": "ứng dụng",
+    "meaning_en": "a software application for a device",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I downloaded a new app.",
+        "vi": "Tôi đã tải một ứng dụng mới."
+      }
+    ],
+    "word_family": [
+      "application (n)",
+      "app store (n)"
+    ],
+    "collocations": [
+      "download an app",
+      "use an app",
+      "app store"
+    ],
+    "synonyms": [
+      "application",
+      "program"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I use app.",
+        "correct": "I use an app.",
+        "explain_vi": "Cần mạo từ 'an'."
+      }
+    ],
+    "grammar_patterns": [
+      "app + noun",
+      "an app"
+    ]
+  },
+  {
+    "word": "social media",
+    "phonetic": "/ˈsəʊ.ʃəl ˈmiː.di.ə/",
+    "meaning_vi": "mạng xã hội",
+    "meaning_en": "websites and apps for social networking",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I use social media to talk to friends.",
+        "vi": "Tôi dùng mạng xã hội để nói chuyện với bạn bè."
+      }
+    ],
+    "word_family": [
+      "social (adj)",
+      "media (n)"
+    ],
+    "collocations": [
+      "use social media",
+      "social media account",
+      "social media platform"
+    ],
+    "synonyms": [
+      "social network",
+      "online community"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go social media.",
+        "correct": "I use social media.",
+        "explain_vi": "Dùng 'use' thay vì 'go'."
+      }
+    ],
+    "grammar_patterns": [
+      "social media + noun",
+      "use social media"
+    ]
+  },
+  {
+    "word": "video call",
+    "phonetic": "/ˈvɪd.i.əʊ kɔːl/",
+    "meaning_vi": "cuộc gọi video",
+    "meaning_en": "a call with live video",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Let's have a video call.",
+        "vi": "Hãy gọi video."
+      }
+    ],
+    "word_family": [
+      "video (n)",
+      "call (n)"
+    ],
+    "collocations": [
+      "make a video call",
+      "video call app",
+      "video call with"
+    ],
+    "synonyms": [
+      "video chat",
+      "face-to-face call"
+    ],
+    "antonyms": [
+      "voice call"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I video call to him.",
+        "correct": "I video call him.",
+        "explain_vi": "Không dùng 'to' sau 'video call'."
+      }
+    ],
+    "grammar_patterns": [
+      "video call (v) + object",
+      "a video call"
+    ]
+  },
+  {
+    "word": "chat",
+    "phonetic": "/tʃæt/",
+    "meaning_vi": "trò chuyện",
+    "meaning_en": "to talk in a friendly informal way",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "We chat online every evening.",
+        "vi": "Chúng tôi trò chuyện trực tuyến mỗi tối."
+      }
+    ],
+    "word_family": [
+      "chat (n)",
+      "chatter (n/v)"
+    ],
+    "collocations": [
+      "chat with",
+      "chat online",
+      "have a chat"
+    ],
+    "synonyms": [
+      "talk",
+      "converse"
+    ],
+    "antonyms": [
+      "silence"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I chat with my friend on phone.",
+        "correct": "I chat with my friend on the phone.",
+        "explain_vi": "Thiếu mạo từ 'the' trước 'phone'."
+      }
+    ],
+    "grammar_patterns": [
+      "chat (with someone) (about something)"
+    ]
+  },
+  {
+    "word": "connect",
+    "phonetic": "/kəˈnekt/",
+    "meaning_vi": "kết nối",
+    "meaning_en": "to join or be joined to something else",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "I can't connect to the internet.",
+        "vi": "Tôi không thể kết nối internet."
+      }
+    ],
+    "word_family": [
+      "connection (n)",
+      "disconnect (v)"
+    ],
+    "collocations": [
+      "connect to",
+      "connect with",
+      "connect online"
+    ],
+    "synonyms": [
+      "link",
+      "join"
+    ],
+    "antonyms": [
+      "disconnect"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Connect internet",
+        "correct": "Connect to the internet",
+        "explain_vi": "Cần giới từ 'to' và mạo từ 'the'."
+      }
+    ],
+    "grammar_patterns": [
+      "connect (something) to/with (something)"
+    ]
+  },
+  {
+    "word": "share",
+    "phonetic": "/ʃer/",
+    "meaning_vi": "chia sẻ",
+    "meaning_en": "to have or use something at the same time as someone else",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "She shares photos on social media.",
+        "vi": "Cô ấy chia sẻ ảnh trên mạng xã hội."
+      }
+    ],
+    "word_family": [
+      "sharing (n)",
+      "shareable (adj)"
+    ],
+    "collocations": [
+      "share with",
+      "share on",
+      "share a post"
+    ],
+    "synonyms": [
+      "post",
+      "distribute"
+    ],
+    "antonyms": [
+      "keep",
+      "withhold"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Share for me",
+        "correct": "Share with me",
+        "explain_vi": "Dùng 'with' thay vì 'for'."
+      }
+    ],
+    "grammar_patterns": [
+      "share (something) (with someone)"
+    ]
+  },
+  {
+    "word": "post",
+    "phonetic": "/poʊst/",
+    "meaning_vi": "đăng bài",
+    "meaning_en": "to publish something on a website or social media",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "He posted a video on YouTube.",
+        "vi": "Anh ấy đăng một video lên YouTube."
+      }
+    ],
+    "word_family": [
+      "post (n)",
+      "posting (n)"
+    ],
+    "collocations": [
+      "post a comment",
+      "post a photo",
+      "post online"
+    ],
+    "synonyms": [
+      "upload",
+      "publish"
+    ],
+    "antonyms": [
+      "delete",
+      "remove"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Post in Facebook",
+        "correct": "Post on Facebook",
+        "explain_vi": "Dùng 'on' thay vì 'in' với mạng xã hội."
+      }
+    ],
+    "grammar_patterns": [
+      "post (something) (on/at place)"
+    ]
+  },
+  {
+    "word": "friend",
+    "phonetic": "/frend/",
+    "meaning_vi": "bạn bè",
+    "meaning_en": "a person you know well and like",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I have 200 friends on Facebook.",
+        "vi": "Tôi có 200 bạn trên Facebook."
+      }
+    ],
+    "word_family": [
+      "friendly (adj)",
+      "friendship (n)"
+    ],
+    "collocations": [
+      "add a friend",
+      "friend request",
+      "best friend"
+    ],
+    "synonyms": [
+      "buddy",
+      "pal"
+    ],
+    "antonyms": [
+      "enemy",
+      "stranger"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I have many friend.",
+        "correct": "I have many friends.",
+        "explain_vi": "Quên thêm 's' số nhiều."
+      }
+    ],
+    "grammar_patterns": [
+      "(number) friend(s)"
+    ]
+  },
+  {
+    "word": "follow",
+    "phonetic": "/ˈfɑː.loʊ/",
+    "meaning_vi": "theo dõi",
+    "meaning_en": "to watch or subscribe to someone on social media",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "Follow me on Instagram.",
+        "vi": "Theo dõi tôi trên Instagram."
+      }
+    ],
+    "word_family": [
+      "follower (n)",
+      "following (n)"
+    ],
+    "collocations": [
+      "follow someone",
+      "follow an account",
+      "follow on"
+    ],
+    "synonyms": [
+      "subscribe"
+    ],
+    "antonyms": [
+      "unfollow"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Follow me in Instagram",
+        "correct": "Follow me on Instagram",
+        "explain_vi": "Dùng 'on' thay vì 'in'."
+      }
+    ],
+    "grammar_patterns": [
+      "follow (someone) (on platform)"
+    ]
+  },
+  {
+    "word": "like",
+    "phonetic": "/laɪk/",
+    "meaning_vi": "thích",
+    "meaning_en": "to show that you enjoy something on social media",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "I liked your photo.",
+        "vi": "Tôi đã thích ảnh của bạn."
+      }
+    ],
+    "word_family": [
+      "like (n)",
+      "likable (adj)"
+    ],
+    "collocations": [
+      "like a post",
+      "get likes",
+      "like button"
+    ],
+    "synonyms": [
+      "favorite",
+      "heart"
+    ],
+    "antonyms": [
+      "dislike"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I like it.",
+        "correct": "I liked it.",
+        "explain_vi": "Cần chia thì quá khứ nếu đã thích."
+      }
+    ],
+    "grammar_patterns": [
+      "like (something)"
+    ]
+  },
+  {
+    "word": "comment",
+    "phonetic": "/ˈkɑː.ment/",
+    "meaning_vi": "bình luận",
+    "meaning_en": "a written remark on a website or social media",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Leave a comment below.",
+        "vi": "Để lại bình luận bên dưới."
+      }
+    ],
+    "word_family": [
+      "comment (v)",
+      "commenter (n)"
+    ],
+    "collocations": [
+      "leave a comment",
+      "write a comment",
+      "comment on"
+    ],
+    "synonyms": [
+      "remark",
+      "feedback"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Comment below video",
+        "correct": "Comment below the video",
+        "explain_vi": "Thiếu mạo từ 'the'."
+      }
+    ],
+    "grammar_patterns": [
+      "comment (on something)",
+      "make a comment"
+    ]
+  },
+  {
+    "word": "group",
+    "phonetic": "/ɡruːp/",
+    "meaning_vi": "nhóm",
+    "meaning_en": "a number of people who communicate together online",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Join our Facebook group.",
+        "vi": "Tham gia nhóm Facebook của chúng tôi."
+      }
+    ],
+    "word_family": [
+      "group chat (n)",
+      "group (v)"
+    ],
+    "collocations": [
+      "join a group",
+      "create a group",
+      "group chat"
+    ],
+    "synonyms": [
+      "community",
+      "forum"
+    ],
+    "antonyms": [
+      "individual"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Group of Facebook",
+        "correct": "Facebook group",
+        "explain_vi": "Trật tự từ sai."
+      }
+    ],
+    "grammar_patterns": [
+      "(adjective) group",
+      "group of (people)"
+    ]
+  },
+  {
+    "word": "online",
+    "phonetic": "/ˌɑːnˈlaɪn/",
+    "meaning_vi": "trực tuyến",
+    "meaning_en": "connected to the internet",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "I buy things online.",
+        "vi": "Tôi mua đồ trực tuyến."
+      }
+    ],
+    "word_family": [
+      "offline (adj/adv)"
+    ],
+    "collocations": [
+      "shop online",
+      "online class",
+      "go online"
+    ],
+    "synonyms": [
+      "virtual",
+      "digital"
+    ],
+    "antonyms": [
+      "offline"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Online internet",
+        "correct": "Online",
+        "explain_vi": "Thừa từ 'internet'."
+      }
+    ],
+    "grammar_patterns": [
+      "online (noun)",
+      "be online"
+    ]
+  },
+  {
+    "word": "search",
+    "phonetic": "/sɜːrtʃ/",
+    "meaning_vi": "tìm kiếm",
+    "meaning_en": "to try to find information on the internet",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "Search for the answer online.",
+        "vi": "Tìm kiếm câu trả lời trực tuyến."
+      }
+    ],
+    "word_family": [
+      "search (n)",
+      "search engine (n)"
+    ],
+    "collocations": [
+      "search for",
+      "search online",
+      "search engine"
+    ],
+    "synonyms": [
+      "look up",
+      "find"
+    ],
+    "antonyms": [
+      "ignore"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Search in Google",
+        "correct": "Search on Google",
+        "explain_vi": "Dùng 'on' thay vì 'in'."
+      }
+    ],
+    "grammar_patterns": [
+      "search (for something)",
+      "search (something)"
+    ]
+  },
+  {
+    "word": "link",
+    "phonetic": "/lɪŋk/",
+    "meaning_vi": "liên kết",
+    "meaning_en": "a connection between two things, especially on the web",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Click the link to open the page.",
+        "vi": "Nhấp vào liên kết để mở trang."
+      }
+    ],
+    "word_family": [
+      "link (v)",
+      "hyperlink (n)"
+    ],
+    "collocations": [
+      "click a link",
+      "send a link",
+      "link to"
+    ],
+    "synonyms": [
+      "URL",
+      "hyperlink"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Link internet",
+        "correct": "Link to the internet",
+        "explain_vi": "Cần giới từ 'to'."
+      }
+    ],
+    "grammar_patterns": [
+      "link (to something)",
+      "a link between"
+    ]
+  },
+  {
+    "word": "video",
+    "phonetic": "/ˈvɪd.i.oʊ/",
+    "meaning_vi": "video",
+    "meaning_en": "a recording of moving images",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Watch this video on YouTube.",
+        "vi": "Xem video này trên YouTube."
+      }
+    ],
+    "word_family": [
+      "video (adj)",
+      "videotape (n)"
+    ],
+    "collocations": [
+      "watch a video",
+      "record a video",
+      "video call"
+    ],
+    "synonyms": [
+      "clip",
+      "film"
+    ],
+    "antonyms": [
+      "audio"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "See a video",
+        "correct": "Watch a video",
+        "explain_vi": "Dùng 'watch' thay vì 'see'."
+      }
+    ],
+    "grammar_patterns": [
+      "video of (someone/something)",
+      "on video"
+    ]
+  },
+  {
+    "word": "photo",
+    "phonetic": "/ˈfoʊ.toʊ/",
+    "meaning_vi": "ảnh",
+    "meaning_en": "a picture made with a camera",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I took a photo of the sunset.",
+        "vi": "Tôi chụp một bức ảnh hoàng hôn."
+      }
+    ],
+    "word_family": [
+      "photograph (n)",
+      "photography (n)"
+    ],
+    "collocations": [
+      "take a photo",
+      "upload a photo",
+      "photo album"
+    ],
+    "synonyms": [
+      "picture",
+      "image"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Take photo",
+        "correct": "Take a photo",
+        "explain_vi": "Thiếu mạo từ 'a'."
+      }
+    ],
+    "grammar_patterns": [
+      "photo of (something)",
+      "in a photo"
+    ]
+  },
+  {
+    "word": "file",
+    "phonetic": "/faɪl/",
+    "meaning_vi": "tệp tin",
+    "meaning_en": "a collection of data stored on a computer",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Attach the file to the email.",
+        "vi": "Đính kèm tệp tin vào email."
+      }
+    ],
+    "word_family": [
+      "file (v)",
+      "file folder (n)"
+    ],
+    "collocations": [
+      "open a file",
+      "save a file",
+      "file attachment"
+    ],
+    "synonyms": [
+      "document",
+      "data"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "File computer",
+        "correct": "Computer file",
+        "explain_vi": "Trật tự từ sai."
+      }
+    ],
+    "grammar_patterns": [
+      "(adjective) file",
+      "file of (type)"
+    ]
+  },
+  {
+    "word": "attachment",
+    "phonetic": "/əˈtætʃ.mənt/",
+    "meaning_vi": "tệp đính kèm",
+    "meaning_en": "a file sent with an email",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Please find the attachment.",
+        "vi": "Vui lòng xem tệp đính kèm."
+      }
+    ],
+    "word_family": [
+      "attach (v)",
+      "detach (v)"
+    ],
+    "collocations": [
+      "send an attachment",
+      "open an attachment",
+      "attachment file"
+    ],
+    "synonyms": [
+      "enclosure",
+      "file"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Attachment file",
+        "correct": "File attachment",
+        "explain_vi": "Thường dùng 'file attachment' hoặc 'attachment'."
+      }
+    ],
+    "grammar_patterns": [
+      "attachment to (something)"
+    ]
+  },
+  {
+    "word": "sign up",
+    "phonetic": "/saɪn ʌp/",
+    "meaning_vi": "đăng ký",
+    "meaning_en": "to register for a service or account",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "Sign up for a new account.",
+        "vi": "Đăng ký tài khoản mới."
+      }
+    ],
+    "word_family": [
+      "signup (n)"
+    ],
+    "collocations": [
+      "sign up for",
+      "sign up to",
+      "sign up now"
+    ],
+    "synonyms": [
+      "register",
+      "join"
+    ],
+    "antonyms": [
+      "cancel",
+      "unsubscribe"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Sign up account",
+        "correct": "Sign up for an account",
+        "explain_vi": "Cần giới từ 'for' và mạo từ."
+      }
+    ],
+    "grammar_patterns": [
+      "sign up (for something)"
+    ]
+  },
+  {
+    "word": "notification",
+    "phonetic": "/ˌnoʊ.tɪ.fɪˈkeɪ.ʃən/",
+    "meaning_vi": "thông báo",
+    "meaning_en": "a message that tells you about something new",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I got a notification from the app.",
+        "vi": "Tôi nhận được thông báo từ ứng dụng."
+      }
+    ],
+    "word_family": [
+      "notify (v)",
+      "notifier (n)"
+    ],
+    "collocations": [
+      "receive a notification",
+      "push notification",
+      "notification sound"
+    ],
+    "synonyms": [
+      "alert",
+      "reminder"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Notification from Facebook",
+        "correct": "Notification from Facebook",
+        "explain_vi": "Có thể chấp nhận, nhưng 'on Facebook' thường dùng hơn."
+      }
+    ],
+    "grammar_patterns": [
+      "notification of (something)",
+      "notification from (source)"
+    ]
+  },
+  {
+    "word": "block",
+    "phonetic": "/blɑːk/",
+    "meaning_vi": "chặn",
+    "meaning_en": "to prevent someone from contacting you online",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "I blocked the spammer.",
+        "vi": "Tôi đã chặn người gửi spam."
+      }
+    ],
+    "word_family": [
+      "block (n)",
+      "blocked (adj)"
+    ],
+    "collocations": [
+      "block someone",
+      "block a user",
+      "block list"
+    ],
+    "synonyms": [
+      "ban",
+      "restrict"
+    ],
+    "antonyms": [
+      "unblock",
+      "allow"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Block him in Facebook",
+        "correct": "Block him on Facebook",
+        "explain_vi": "Dùng 'on' thay vì 'in'."
+      }
+    ],
+    "grammar_patterns": [
+      "block (someone) (from something)"
+    ]
+  },
+  {
+    "word": "report",
+    "phonetic": "/rɪˈpɔːrt/",
+    "meaning_vi": "báo cáo",
+    "meaning_en": "to tell someone in authority about a problem",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "Report the abusive comment.",
+        "vi": "Báo cáo bình luận xúc phạm."
+      }
+    ],
+    "word_family": [
+      "report (n)",
+      "reporter (n)"
+    ],
+    "collocations": [
+      "report a problem",
+      "report to",
+      "report abuse"
+    ],
+    "synonyms": [
+      "notify",
+      "inform"
+    ],
+    "antonyms": [
+      "ignore"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Report for Facebook",
+        "correct": "Report to Facebook",
+        "explain_vi": "Dùng 'to' thay vì 'for'."
+      }
+    ],
+    "grammar_patterns": [
+      "report (something) (to someone)"
+    ]
+  },
+  {
+    "word": "laptop",
+    "phonetic": "/ˈlæp.tɒp/",
+    "meaning_vi": "máy tính xách tay",
+    "meaning_en": "a portable computer",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I use my laptop for work.",
+        "vi": "Tôi dùng máy tính xách tay để làm việc."
+      }
+    ],
+    "word_family": [
+      "laptop (n)"
+    ],
+    "collocations": [
+      "use a laptop",
+      "open a laptop",
+      "shut down a laptop"
+    ],
+    "synonyms": [
+      "notebook"
+    ],
+    "antonyms": [
+      "desktop"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I have a laptop computer.",
+        "correct": "I have a laptop.",
+        "explain_vi": "Không cần thêm 'computer' vì laptop đã là máy tính."
+      }
+    ],
+    "grammar_patterns": [
+      "a/an + laptop",
+      "the + laptop"
+    ]
+  },
+  {
+    "word": "tablet",
+    "phonetic": "/ˈtæb.lət/",
+    "meaning_vi": "máy tính bảng",
+    "meaning_en": "a flat, portable device with a touchscreen",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She reads books on her tablet.",
+        "vi": "Cô ấy đọc sách trên máy tính bảng."
+      }
+    ],
+    "word_family": [
+      "tablet (n)"
+    ],
+    "collocations": [
+      "use a tablet",
+      "tablet screen",
+      "tablet computer"
+    ],
+    "synonyms": [
+      "iPad",
+      "slate"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have a tablet computer.",
+        "correct": "I have a tablet.",
+        "explain_vi": "Tương tự laptop, không cần thêm 'computer'."
+      }
+    ],
+    "grammar_patterns": [
+      "a/an + tablet",
+      "the + tablet"
+    ]
+  },
+  {
+    "word": "smartphone",
+    "phonetic": "/ˈsmɑːrt.foʊn/",
+    "meaning_vi": "điện thoại thông minh",
+    "meaning_en": "a mobile phone with advanced features",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I check my smartphone every morning.",
+        "vi": "Tôi kiểm tra điện thoại thông minh mỗi sáng."
+      }
+    ],
+    "word_family": [
+      "smartphone (n)"
+    ],
+    "collocations": [
+      "use a smartphone",
+      "smartphone screen",
+      "smartphone app"
+    ],
+    "synonyms": [
+      "mobile phone",
+      "cell phone"
+    ],
+    "antonyms": [
+      "dumbphone"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I have a smartphone phone.",
+        "correct": "I have a smartphone.",
+        "explain_vi": "Không nói 'smartphone phone' vì thừa từ 'phone'."
+      }
+    ],
+    "grammar_patterns": [
+      "a/an + smartphone",
+      "the + smartphone"
+    ]
+  },
+  {
+    "word": "camera",
+    "phonetic": "/ˈkæm.rə/",
+    "meaning_vi": "máy ảnh",
+    "meaning_en": "a device for taking photos or videos",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "This camera takes good pictures.",
+        "vi": "Máy ảnh này chụp ảnh đẹp."
+      }
+    ],
+    "word_family": [
+      "camera (n)",
+      "photograph (n)"
+    ],
+    "collocations": [
+      "take a camera",
+      "camera phone",
+      "digital camera"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have a camera phone.",
+        "correct": "I have a phone with a camera.",
+        "explain_vi": "'Camera phone' không phổ biến; nên nói 'phone with a camera'."
+      }
+    ],
+    "grammar_patterns": [
+      "a/an + camera",
+      "the + camera"
+    ]
+  },
+  {
+    "word": "microphone",
+    "phonetic": "/ˈmaɪ.krə.foʊn/",
+    "meaning_vi": "micro",
+    "meaning_en": "a device that captures sound",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Speak into the microphone.",
+        "vi": "Nói vào micro."
+      }
+    ],
+    "word_family": [
+      "microphone (n)"
+    ],
+    "collocations": [
+      "use a microphone",
+      "microphone stand",
+      "wireless microphone"
+    ],
+    "synonyms": [
+      "mic"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I need a microphone to speak.",
+        "correct": "I need a microphone to speak.",
+        "explain_vi": "Không có lỗi phổ biến."
+      }
+    ],
+    "grammar_patterns": [
+      "a/an + microphone",
+      "the + microphone"
+    ]
+  },
+  {
+    "word": "speaker",
+    "phonetic": "/ˈspiː.kər/",
+    "meaning_vi": "loa",
+    "meaning_en": "a device that produces sound",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The speaker is too loud.",
+        "vi": "Loa to quá."
+      }
+    ],
+    "word_family": [
+      "speaker (n)",
+      "speak (v)"
+    ],
+    "collocations": [
+      "turn on the speaker",
+      "speaker volume",
+      "bluetooth speaker"
+    ],
+    "synonyms": [
+      "loudspeaker"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have a speaker phone.",
+        "correct": "I have a speakerphone.",
+        "explain_vi": "'Speaker phone' là một từ ghép: speakerphone."
+      }
+    ],
+    "grammar_patterns": [
+      "the + speaker",
+      "a/an + speaker"
+    ]
+  },
+  {
+    "word": "headphones",
+    "phonetic": "/ˈhed.foʊnz/",
+    "meaning_vi": "tai nghe",
+    "meaning_en": "a pair of listening devices worn over ears",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I wear headphones to listen to music.",
+        "vi": "Tôi đeo tai nghe để nghe nhạc."
+      }
+    ],
+    "word_family": [
+      "headphone (n)",
+      "headset (n)"
+    ],
+    "collocations": [
+      "wear headphones",
+      "put on headphones",
+      "headphone jack"
+    ],
+    "synonyms": [
+      "earphones",
+      "headset"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have a headphone.",
+        "correct": "I have headphones.",
+        "explain_vi": "Headphones thường dùng số nhiều."
+      }
+    ],
+    "grammar_patterns": [
+      "plural: headphones",
+      "a pair of headphones"
+    ]
+  },
+  {
+    "word": "printer",
+    "phonetic": "/ˈprɪn.tər/",
+    "meaning_vi": "máy in",
+    "meaning_en": "a machine that prints documents",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The printer is out of ink.",
+        "vi": "Máy in hết mực."
+      }
+    ],
+    "word_family": [
+      "printer (n)",
+      "print (v)"
+    ],
+    "collocations": [
+      "use a printer",
+      "printer paper",
+      "wireless printer"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I need to print a paper.",
+        "correct": "I need to print a document.",
+        "explain_vi": "'Paper' là giấy, 'document' là tài liệu."
+      }
+    ],
+    "grammar_patterns": [
+      "a/an + printer",
+      "the + printer"
+    ]
+  },
+  {
+    "word": "scanner",
+    "phonetic": "/ˈskæn.ər/",
+    "meaning_vi": "máy scan",
+    "meaning_en": "a device that digitizes documents",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Scan the document with the scanner.",
+        "vi": "Scan tài liệu bằng máy scan."
+      }
+    ],
+    "word_family": [
+      "scanner (n)",
+      "scan (v)"
+    ],
+    "collocations": [
+      "use a scanner",
+      "scanner app",
+      "flatbed scanner"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I will scan this paper.",
+        "correct": "I will scan this document.",
+        "explain_vi": "Tương tự printer, nên dùng 'document'."
+      }
+    ],
+    "grammar_patterns": [
+      "a/an + scanner",
+      "the + scanner"
+    ]
+  },
+  {
+    "word": "router",
+    "phonetic": "/ˈruː.tər/",
+    "meaning_vi": "bộ định tuyến",
+    "meaning_en": "a device that connects networks",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The router is in the living room.",
+        "vi": "Bộ định tuyến ở phòng khách."
+      }
+    ],
+    "word_family": [
+      "router (n)"
+    ],
+    "collocations": [
+      "set up a router",
+      "router password",
+      "wireless router"
+    ],
+    "synonyms": [
+      "modem"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I need a router WiFi.",
+        "correct": "I need a WiFi router.",
+        "explain_vi": "Thứ tự từ: 'WiFi router'."
+      }
+    ],
+    "grammar_patterns": [
+      "a/an + router",
+      "the + router"
+    ]
+  },
+  {
+    "word": "modem",
+    "phonetic": "/ˈmoʊ.dem/",
+    "meaning_vi": "modem",
+    "meaning_en": "a device that connects to the internet",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The modem is not working.",
+        "vi": "Modem không hoạt động."
+      }
+    ],
+    "word_family": [
+      "modem (n)"
+    ],
+    "collocations": [
+      "cable modem",
+      "modem router",
+      "reset the modem"
+    ],
+    "synonyms": [
+      "router"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have a modem router.",
+        "correct": "I have a modem and router.",
+        "explain_vi": "Modem và router là hai thiết bị khác nhau."
+      }
+    ],
+    "grammar_patterns": [
+      "a/an + modem",
+      "the + modem"
+    ]
+  },
+  {
+    "word": "network",
+    "phonetic": "/ˈnet.wɜːrk/",
+    "meaning_vi": "mạng",
+    "meaning_en": "a group of connected computers",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The network is down.",
+        "vi": "Mạng bị hỏng."
+      }
+    ],
+    "word_family": [
+      "network (n)",
+      "networking (n)"
+    ],
+    "collocations": [
+      "network connection",
+      "network security",
+      "social network"
+    ],
+    "synonyms": [
+      "internet"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have no network.",
+        "correct": "I have no network connection.",
+        "explain_vi": "Thêm 'connection' để rõ nghĩa."
+      }
+    ],
+    "grammar_patterns": [
+      "the + network",
+      "a/an + network"
+    ]
+  },
+  {
+    "word": "connection",
+    "phonetic": "/kəˈnek.ʃən/",
+    "meaning_vi": "kết nối",
+    "meaning_en": "a link between devices or networks",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The internet connection is slow.",
+        "vi": "Kết nối internet chậm."
+      }
+    ],
+    "word_family": [
+      "connect (v)",
+      "connection (n)"
+    ],
+    "collocations": [
+      "internet connection",
+      "connection speed",
+      "lose connection"
+    ],
+    "synonyms": [
+      "link"
+    ],
+    "antonyms": [
+      "disconnection"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I have a good connection internet.",
+        "correct": "I have a good internet connection.",
+        "explain_vi": "Thứ tự từ: 'internet connection'."
+      }
+    ],
+    "grammar_patterns": [
+      "a/an + connection",
+      "the + connection"
+    ]
+  },
+  {
+    "word": "signal",
+    "phonetic": "/ˈsɪɡ.nəl/",
+    "meaning_vi": "tín hiệu",
+    "meaning_en": "a transmitted electrical impulse or radio wave",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The signal is weak here.",
+        "vi": "Tín hiệu yếu ở đây."
+      }
+    ],
+    "word_family": [
+      "signal (n)",
+      "signal (v)"
+    ],
+    "collocations": [
+      "signal strength",
+      "mobile signal",
+      "WiFi signal"
+    ],
+    "synonyms": [
+      "reception"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have no signal internet.",
+        "correct": "I have no internet signal.",
+        "explain_vi": "Nói 'internet signal'."
+      }
+    ],
+    "grammar_patterns": [
+      "the + signal",
+      "a/an + signal"
+    ]
+  },
+  {
+    "word": "battery",
+    "phonetic": "/ˈbæt.ər.i/",
+    "meaning_vi": "pin",
+    "meaning_en": "a device that stores energy",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "My phone battery is low.",
+        "vi": "Pin điện thoại của tôi sắp hết."
+      }
+    ],
+    "word_family": [
+      "battery (n)",
+      "batteries (pl)"
+    ],
+    "collocations": [
+      "battery life",
+      "charge the battery",
+      "replace the battery"
+    ],
+    "synonyms": [
+      "cell"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "My battery is dead.",
+        "correct": "My battery is dead.",
+        "explain_vi": "Không có lỗi phổ biến."
+      }
+    ],
+    "grammar_patterns": [
+      "a/an + battery",
+      "the + battery"
+    ]
+  },
+  {
+    "word": "charger",
+    "phonetic": "/ˈtʃɑːr.dʒər/",
+    "meaning_vi": "sạc",
+    "meaning_en": "a device used to recharge a battery",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I forgot my charger at home.",
+        "vi": "Tôi quên sạc ở nhà."
+      }
+    ],
+    "word_family": [
+      "charge (v)",
+      "charger (n)"
+    ],
+    "collocations": [
+      "phone charger",
+      "charger cable",
+      "wireless charger"
+    ],
+    "synonyms": [
+      "adapter"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I need a charger for my phone.",
+        "correct": "I need a charger for my phone.",
+        "explain_vi": "Không có lỗi phổ biến."
+      }
+    ],
+    "grammar_patterns": [
+      "a/an + charger",
+      "the + charger"
+    ]
+  },
+  {
+    "word": "cable",
+    "phonetic": "/ˈkeɪ.bəl/",
+    "meaning_vi": "cáp",
+    "meaning_en": "a wire for transmitting electricity or data",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Connect the cable to the computer.",
+        "vi": "Kết nối cáp với máy tính."
+      }
+    ],
+    "word_family": [
+      "cable (n)"
+    ],
+    "collocations": [
+      "USB cable",
+      "charging cable",
+      "cable connection"
+    ],
+    "synonyms": [
+      "wire",
+      "cord"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I need a cable USB.",
+        "correct": "I need a USB cable.",
+        "explain_vi": "Thứ tự từ: 'USB cable'."
+      }
+    ],
+    "grammar_patterns": [
+      "a/an + cable",
+      "the + cable"
+    ]
+  },
+  {
+    "word": "wireless",
+    "phonetic": "/ˈwaɪər.ləs/",
+    "meaning_vi": "không dây",
+    "meaning_en": "operating without wires",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "I have a wireless mouse.",
+        "vi": "Tôi có chuột không dây."
+      }
+    ],
+    "word_family": [
+      "wireless (adj)",
+      "wire (n)"
+    ],
+    "collocations": [
+      "wireless network",
+      "wireless connection",
+      "wireless device"
+    ],
+    "synonyms": [
+      "cordless"
+    ],
+    "antonyms": [
+      "wired"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I use wireless internet.",
+        "correct": "I use a wireless internet connection.",
+        "explain_vi": "Thêm 'connection' cho rõ."
+      }
+    ],
+    "grammar_patterns": [
+      "wireless + noun"
+    ]
+  },
+  {
+    "word": "bluetooth",
+    "phonetic": "/ˈbluː.tuːθ/",
+    "meaning_vi": "bluetooth",
+    "meaning_en": "a short-range wireless technology",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Connect via Bluetooth.",
+        "vi": "Kết nối qua bluetooth."
+      }
+    ],
+    "word_family": [
+      "bluetooth (n)"
+    ],
+    "collocations": [
+      "Bluetooth connection",
+      "turn on Bluetooth",
+      "Bluetooth device"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have bluetooth.",
+        "correct": "I have Bluetooth turned on.",
+        "explain_vi": "Nói 'turn on Bluetooth'."
+      }
+    ],
+    "grammar_patterns": [
+      "Bluetooth (uncountable)"
+    ]
+  },
+  {
+    "word": "memory",
+    "phonetic": "/ˈmem.ər.i/",
+    "meaning_vi": "bộ nhớ",
+    "meaning_en": "the capacity to store data",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "My phone has 64GB of memory.",
+        "vi": "Điện thoại của tôi có 64GB bộ nhớ."
+      }
+    ],
+    "word_family": [
+      "memory (n)",
+      "memorize (v)"
+    ],
+    "collocations": [
+      "memory card",
+      "memory space",
+      "expand memory"
+    ],
+    "synonyms": [
+      "storage"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I need more memory storage.",
+        "correct": "I need more memory.",
+        "explain_vi": "Không cần 'storage' vì memory đã bao hàm."
+      }
+    ],
+    "grammar_patterns": [
+      "uncountable: memory",
+      "a memory (a specific memory)"
+    ]
+  }
+]

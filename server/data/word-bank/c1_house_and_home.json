@@ -1,0 +1,2447 @@
+[
+  {
+    "word": "dwelling",
+    "phonetic": "/ˈdwel.ɪŋ/",
+    "meaning_vi": "nơi ở, chỗ ở",
+    "meaning_en": "a house, apartment, or other place of residence",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The city is building affordable dwellings for low-income families.",
+        "vi": "Thành phố đang xây dựng những nơi ở giá rẻ cho các gia đình thu nhập thấp."
+      }
+    ],
+    "word_family": [
+      "dwell (v)",
+      "dweller (n)"
+    ],
+    "collocations": [
+      "permanent dwelling",
+      "dwelling place",
+      "dwelling unit"
+    ],
+    "synonyms": [
+      "residence",
+      "abode",
+      "home"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "dwelling house",
+        "correct": "dwelling",
+        "explain_vi": "Dwelling đã bao hàm nghĩa là nhà ở, không cần thêm 'house'"
+      }
+    ],
+    "grammar_patterns": [
+      "dwelling + (preposition)"
+    ]
+  },
+  {
+    "word": "abode",
+    "phonetic": "/əˈbəʊd/",
+    "meaning_vi": "nơi ở, chốn cư trú",
+    "meaning_en": "a place of residence; a house or home",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "They took up their abode in a small village.",
+        "vi": "Họ định cư tại một ngôi làng nhỏ."
+      }
+    ],
+    "word_family": [
+      "abide (v)"
+    ],
+    "collocations": [
+      "right of abode",
+      "place of abode",
+      "fixed abode"
+    ],
+    "synonyms": [
+      "dwelling",
+      "residence",
+      "home"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "abode house",
+        "correct": "abode",
+        "explain_vi": "Abode đã mang nghĩa nhà ở, không cần thêm 'house'"
+      }
+    ],
+    "grammar_patterns": [
+      "one's abode",
+      "abode + (preposition)"
+    ]
+  },
+  {
+    "word": "habitable",
+    "phonetic": "/ˈhæb.ɪ.tə.bəl/",
+    "meaning_vi": "có thể ở được",
+    "meaning_en": "suitable or good enough to live in",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The house is no longer habitable after the fire.",
+        "vi": "Ngôi nhà không còn ở được sau trận hỏa hoạn."
+      }
+    ],
+    "word_family": [
+      "habitability (n)",
+      "uninhabitable (adj)"
+    ],
+    "collocations": [
+      "habitable space",
+      "habitable room",
+      "habitable condition"
+    ],
+    "synonyms": [
+      "livable",
+      "inhabitable"
+    ],
+    "antonyms": [
+      "uninhabitable"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "habitable house",
+        "correct": "habitable",
+        "explain_vi": "Habitable đã là tính từ, không cần thêm 'house'"
+      }
+    ],
+    "grammar_patterns": [
+      "be + habitable",
+      "remain habitable"
+    ]
+  },
+  {
+    "word": "renovate",
+    "phonetic": "/ˈren.ə.veɪt/",
+    "meaning_vi": "cải tạo, tu sửa",
+    "meaning_en": "to repair and improve a building, especially an old one",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "They plan to renovate the entire kitchen.",
+        "vi": "Họ dự định cải tạo toàn bộ nhà bếp."
+      }
+    ],
+    "word_family": [
+      "renovation (n)",
+      "renovator (n)"
+    ],
+    "collocations": [
+      "renovate a house",
+      "renovate a building",
+      "completely renovate"
+    ],
+    "synonyms": [
+      "refurbish",
+      "restore",
+      "overhaul"
+    ],
+    "antonyms": [
+      "neglect"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "renovate the house new",
+        "correct": "renovate the house",
+        "explain_vi": "Renovate đã bao hàm ý làm mới, không cần thêm 'new'"
+      }
+    ],
+    "grammar_patterns": [
+      "renovate + object",
+      "have something renovated"
+    ]
+  },
+  {
+    "word": "spacious",
+    "phonetic": "/ˈspeɪ.ʃəs/",
+    "meaning_vi": "rộng rãi, thoáng đãng",
+    "meaning_en": "having a lot of space; roomy",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The living room is very spacious.",
+        "vi": "Phòng khách rất rộng rãi."
+      }
+    ],
+    "word_family": [
+      "space (n)",
+      "spaciousness (n)"
+    ],
+    "collocations": [
+      "spacious room",
+      "spacious house",
+      "spacious interior"
+    ],
+    "synonyms": [
+      "roomy",
+      "ample",
+      "commodious"
+    ],
+    "antonyms": [
+      "cramped",
+      "confined"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "spacious space",
+        "correct": "spacious",
+        "explain_vi": "Spacious đã có nghĩa là rộng rãi, 'space' là thừa"
+      }
+    ],
+    "grammar_patterns": [
+      "be + spacious",
+      "spacious + noun"
+    ]
+  },
+  {
+    "word": "clutter",
+    "phonetic": "/ˈklʌt.ər/",
+    "meaning_vi": "đồ lộn xộn, bừa bộn",
+    "meaning_en": "a collection of things lying about in an untidy state",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Her desk is covered in clutter.",
+        "vi": "Bàn của cô ấy đầy đồ lộn xộn."
+      }
+    ],
+    "word_family": [
+      "cluttered (adj)",
+      "declutter (v)"
+    ],
+    "collocations": [
+      "clutter-free",
+      "clear the clutter",
+      "reduce clutter"
+    ],
+    "synonyms": [
+      "mess",
+      "disorder",
+      "jumble"
+    ],
+    "antonyms": [
+      "order",
+      "tidiness"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "clutter things",
+        "correct": "clutter",
+        "explain_vi": "Clutter là danh từ không đếm được, không dùng số nhiều"
+      }
+    ],
+    "grammar_patterns": [
+      "clutter + (preposition)",
+      "be in clutter"
+    ]
+  },
+  {
+    "word": "declutter",
+    "phonetic": "/diːˈklʌt.ər/",
+    "meaning_vi": "dọn dẹp, loại bỏ đồ lộn xộn",
+    "meaning_en": "to remove unnecessary items from (a place)",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "I need to declutter my closet this weekend.",
+        "vi": "Cuối tuần này tôi cần dọn dẹp tủ quần áo."
+      }
+    ],
+    "word_family": [
+      "decluttering (n)"
+    ],
+    "collocations": [
+      "declutter a room",
+      "declutter your home",
+      "declutter your life"
+    ],
+    "synonyms": [
+      "tidy up",
+      "organize",
+      "clear out"
+    ],
+    "antonyms": [
+      "clutter"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "declutter the clutter",
+        "correct": "declutter the room",
+        "explain_vi": "Declutter đã bao hàm ý loại bỏ clutter, không cần nói 'declutter the clutter'"
+      }
+    ],
+    "grammar_patterns": [
+      "declutter + object",
+      "declutter + place"
+    ]
+  },
+  {
+    "word": "cosy",
+    "phonetic": "/ˈkəʊ.zi/",
+    "meaning_vi": "ấm cúng, thoải mái",
+    "meaning_en": "comfortable, warm, and inviting",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The cottage was small but cosy.",
+        "vi": "Ngôi nhà nhỏ nhưng ấm cúng."
+      }
+    ],
+    "word_family": [
+      "cosiness (n)",
+      "cosily (adv)"
+    ],
+    "collocations": [
+      "cosy room",
+      "cosy atmosphere",
+      "cosy corner"
+    ],
+    "synonyms": [
+      "snug",
+      "comfortable",
+      "homely"
+    ],
+    "antonyms": [
+      "cold",
+      "uncomfortable"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "cosy house",
+        "correct": "cosy",
+        "explain_vi": "Cosy là tính từ, không cần thêm 'house'"
+      }
+    ],
+    "grammar_patterns": [
+      "be + cosy",
+      "cosy + noun"
+    ]
+  },
+  {
+    "word": "furnish",
+    "phonetic": "/ˈfɜː.nɪʃ/",
+    "meaning_vi": "trang bị nội thất",
+    "meaning_en": "to provide a room or building with furniture and fittings",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "They furnished the apartment in a modern style.",
+        "vi": "Họ trang bị nội thất cho căn hộ theo phong cách hiện đại."
+      }
+    ],
+    "word_family": [
+      "furniture (n)",
+      "furnishing (n)"
+    ],
+    "collocations": [
+      "furnish a room",
+      "furnish with",
+      "fully furnished"
+    ],
+    "synonyms": [
+      "equip",
+      "outfit",
+      "decorate"
+    ],
+    "antonyms": [
+      "strip",
+      "empty"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "furnish furniture",
+        "correct": "furnish with furniture",
+        "explain_vi": "Furnish có nghĩa là cung cấp đồ đạc, không cần lặp 'furniture'"
+      }
+    ],
+    "grammar_patterns": [
+      "furnish + object",
+      "furnish + with + noun"
+    ]
+  },
+  {
+    "word": "mortgage",
+    "phonetic": "/ˈmɔː.ɡɪdʒ/",
+    "meaning_vi": "thế chấp, khoản vay mua nhà",
+    "meaning_en": "a legal agreement by which a bank lends money to buy a house",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "They took out a mortgage to buy the house.",
+        "vi": "Họ vay thế chấp để mua nhà."
+      }
+    ],
+    "word_family": [
+      "mortgagee (n)",
+      "mortgagor (n)"
+    ],
+    "collocations": [
+      "mortgage loan",
+      "mortgage rate",
+      "pay off a mortgage"
+    ],
+    "synonyms": [
+      "home loan",
+      "housing loan"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "mortgage the house",
+        "correct": "take out a mortgage",
+        "explain_vi": "Mortgage là danh từ, động từ là 'mortgage' nhưng thường dùng 'take out a mortgage'"
+      }
+    ],
+    "grammar_patterns": [
+      "take out a mortgage",
+      "mortgage + noun (v)"
+    ]
+  },
+  {
+    "word": "landlord",
+    "phonetic": "/ˈlænd.lɔːd/",
+    "meaning_vi": "chủ nhà cho thuê",
+    "meaning_en": "a person who rents out land, a building, or an apartment",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The landlord raised the rent.",
+        "vi": "Chủ nhà tăng tiền thuê."
+      }
+    ],
+    "word_family": [
+      "landlady (n)",
+      "landlordism (n)"
+    ],
+    "collocations": [
+      "landlord and tenant",
+      "landlord association",
+      "pay the landlord"
+    ],
+    "synonyms": [
+      "lessor",
+      "property owner"
+    ],
+    "antonyms": [
+      "tenant"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "landlord of the house",
+        "correct": "landlord",
+        "explain_vi": "Landlord đã bao hàm chủ sở hữu nhà cho thuê"
+      }
+    ],
+    "grammar_patterns": [
+      "the landlord + verb",
+      "landlord of + property"
+    ]
+  },
+  {
+    "word": "tenant",
+    "phonetic": "/ˈten.ənt/",
+    "meaning_vi": "người thuê nhà",
+    "meaning_en": "a person who rents land or property from a landlord",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The tenant complained about the leak.",
+        "vi": "Người thuê nhà phàn nàn về chỗ rò rỉ."
+      }
+    ],
+    "word_family": [
+      "tenancy (n)",
+      "tenantry (n)"
+    ],
+    "collocations": [
+      "tenant rights",
+      "tenant agreement",
+      "sitting tenant"
+    ],
+    "synonyms": [
+      "renter",
+      "leaseholder",
+      "occupant"
+    ],
+    "antonyms": [
+      "landlord"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "tenant house",
+        "correct": "tenant",
+        "explain_vi": "Tenant là người thuê, không phải nhà"
+      }
+    ],
+    "grammar_patterns": [
+      "the tenant + verb",
+      "tenant of + property"
+    ]
+  },
+  {
+    "word": "lease",
+    "phonetic": "/liːs/",
+    "meaning_vi": "hợp đồng cho thuê",
+    "meaning_en": "a contract by which one party conveys land, property, etc. to another for a specified time",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "They signed a two-year lease on the apartment.",
+        "vi": "Họ ký hợp đồng thuê căn hộ hai năm."
+      }
+    ],
+    "word_family": [
+      "leasehold (n)",
+      "lessee (n)",
+      "lessor (n)"
+    ],
+    "collocations": [
+      "lease agreement",
+      "lease term",
+      "sign a lease"
+    ],
+    "synonyms": [
+      "rental agreement",
+      "tenancy contract"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "lease contract",
+        "correct": "lease",
+        "explain_vi": "Lease đã là hợp đồng, không cần thêm 'contract'"
+      }
+    ],
+    "grammar_patterns": [
+      "lease + on + property",
+      "under a lease"
+    ]
+  },
+  {
+    "word": "amenities",
+    "phonetic": "/əˈmiː.nə.tiz/",
+    "meaning_vi": "tiện nghi, tiện ích",
+    "meaning_en": "features that make a place pleasant or comfortable to live in",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The apartment complex has excellent amenities like a pool and gym.",
+        "vi": "Khu chung cư có các tiện nghi tuyệt vời như hồ bơi và phòng tập."
+      }
+    ],
+    "word_family": [
+      "amenity (n)"
+    ],
+    "collocations": [
+      "modern amenities",
+      "local amenities",
+      "amenities include"
+    ],
+    "synonyms": [
+      "facilities",
+      "conveniences",
+      "features"
+    ],
+    "antonyms": [
+      "drawbacks"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "amenity",
+        "correct": "amenities",
+        "explain_vi": "Thường dùng số nhiều khi chỉ các tiện nghi"
+      }
+    ],
+    "grammar_patterns": [
+      "amenities + (preposition)",
+      "with amenities"
+    ]
+  },
+  {
+    "word": "interior",
+    "phonetic": "/ɪnˈtɪə.ri.ər/",
+    "meaning_vi": "nội thất, bên trong",
+    "meaning_en": "the inside part of a building, car, etc.",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The interior of the house is beautifully decorated.",
+        "vi": "Nội thất của ngôi nhà được trang trí đẹp mắt."
+      }
+    ],
+    "word_family": [
+      "interiority (n)",
+      "interiorize (v)"
+    ],
+    "collocations": [
+      "interior design",
+      "interior space",
+      "interior wall"
+    ],
+    "synonyms": [
+      "inside",
+      "inner part"
+    ],
+    "antonyms": [
+      "exterior"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "interior design of the interior",
+        "correct": "interior design",
+        "explain_vi": "Interior design đã bao hàm thiết kế bên trong"
+      }
+    ],
+    "grammar_patterns": [
+      "the interior of + noun",
+      "interior + noun"
+    ]
+  },
+  {
+    "word": "exterior",
+    "phonetic": "/ɪkˈstɪə.ri.ər/",
+    "meaning_vi": "ngoại thất, bên ngoài",
+    "meaning_en": "the outside part of a building, car, etc.",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The exterior of the house needs painting.",
+        "vi": "Ngoại thất của ngôi nhà cần sơn lại."
+      }
+    ],
+    "word_family": [
+      "exteriority (n)",
+      "exteriorize (v)"
+    ],
+    "collocations": [
+      "exterior wall",
+      "exterior design",
+      "exterior surface"
+    ],
+    "synonyms": [
+      "outside",
+      "outer part"
+    ],
+    "antonyms": [
+      "interior"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "exterior outside",
+        "correct": "exterior",
+        "explain_vi": "Exterior đã là bên ngoài, không cần thêm 'outside'"
+      }
+    ],
+    "grammar_patterns": [
+      "the exterior of + noun",
+      "exterior + noun"
+    ]
+  },
+  {
+    "word": "layout",
+    "phonetic": "/ˈleɪ.aʊt/",
+    "meaning_vi": "bố trí, cách sắp xếp",
+    "meaning_en": "the way in which the parts of something are arranged",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The apartment has an open-plan layout.",
+        "vi": "Căn hộ có bố trí dạng mở."
+      }
+    ],
+    "word_family": [
+      "lay out (v)"
+    ],
+    "collocations": [
+      "room layout",
+      "layout design",
+      "floor layout"
+    ],
+    "synonyms": [
+      "arrangement",
+      "configuration",
+      "plan"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "layout of the layout",
+        "correct": "layout",
+        "explain_vi": "Layout đã là cách bố trí"
+      }
+    ],
+    "grammar_patterns": [
+      "layout + of + noun",
+      "have a + adjective + layout"
+    ]
+  },
+  {
+    "word": "renovation",
+    "phonetic": "/ˌren.əˈveɪ.ʃən/",
+    "meaning_vi": "sự cải tạo, tu sửa",
+    "meaning_en": "the act of repairing and improving a building",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The kitchen renovation took three months.",
+        "vi": "Việc cải tạo nhà bếp mất ba tháng."
+      }
+    ],
+    "word_family": [
+      "renovate (v)",
+      "renovator (n)"
+    ],
+    "collocations": [
+      "home renovation",
+      "renovation project",
+      "undergo renovation"
+    ],
+    "synonyms": [
+      "refurbishment",
+      "restoration",
+      "remodeling"
+    ],
+    "antonyms": [
+      "neglect"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "renovation of the renovation",
+        "correct": "renovation",
+        "explain_vi": "Renovation là danh từ chỉ quá trình"
+      }
+    ],
+    "grammar_patterns": [
+      "renovation + of + noun",
+      "under renovation"
+    ]
+  },
+  {
+    "word": "property",
+    "phonetic": "/ˈprɒp.ə.ti/",
+    "meaning_vi": "bất động sản, tài sản",
+    "meaning_en": "a building or land; a possession",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "He invested in commercial property.",
+        "vi": "Anh ấy đầu tư vào bất động sản thương mại."
+      }
+    ],
+    "word_family": [
+      "propertied (adj)"
+    ],
+    "collocations": [
+      "property market",
+      "property value",
+      "real property"
+    ],
+    "synonyms": [
+      "real estate",
+      "assets",
+      "holdings"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "property house",
+        "correct": "property",
+        "explain_vi": "Property đã bao hàm nhà cửa, đất đai"
+      }
+    ],
+    "grammar_patterns": [
+      "property + (preposition)",
+      "own property"
+    ]
+  },
+  {
+    "word": "neighbourhood",
+    "phonetic": "/ˈneɪ.bə.hʊd/",
+    "meaning_vi": "khu phố, láng giềng",
+    "meaning_en": "a district or community within a town or city",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "This is a quiet neighbourhood.",
+        "vi": "Đây là một khu phố yên tĩnh."
+      }
+    ],
+    "word_family": [
+      "neighbour (n)",
+      "neighbourly (adj)"
+    ],
+    "collocations": [
+      "neighbourhood watch",
+      "neighbourhood park",
+      "friendly neighbourhood"
+    ],
+    "synonyms": [
+      "area",
+      "district",
+      "community"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "neighbourhood area",
+        "correct": "neighbourhood",
+        "explain_vi": "Neighbourhood đã là khu vực"
+      }
+    ],
+    "grammar_patterns": [
+      "in the neighbourhood",
+      "neighbourhood + noun"
+    ]
+  },
+  {
+    "word": "outskirts",
+    "phonetic": "/ˈaʊt.skɜːts/",
+    "meaning_vi": "vùng ngoại ô",
+    "meaning_en": "the outer parts of a town or city",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "They live on the outskirts of London.",
+        "vi": "Họ sống ở vùng ngoại ô Luân Đôn."
+      }
+    ],
+    "word_family": [
+      "outskirt (n)"
+    ],
+    "collocations": [
+      "on the outskirts",
+      "live on the outskirts"
+    ],
+    "synonyms": [
+      "suburbs",
+      "periphery"
+    ],
+    "antonyms": [
+      "city center",
+      "downtown"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "They live in the outskirts.",
+        "correct": "They live on the outskirts.",
+        "explain_vi": "Dùng 'on' chứ không phải 'in' với 'outskirts'."
+      }
+    ],
+    "grammar_patterns": [
+      "on the outskirts (prepositional phrase)"
+    ]
+  },
+  {
+    "word": "estate",
+    "phonetic": "/ɪˈsteɪt/",
+    "meaning_vi": "khu đất rộng; bất động sản",
+    "meaning_en": "a large area of land with a large house; also used in 'housing estate' or 'real estate'",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The family owns a large estate in the countryside.",
+        "vi": "Gia đình sở hữu một khu đất rộng lớn ở vùng nông thôn."
+      }
+    ],
+    "word_family": [
+      "real estate (n)"
+    ],
+    "collocations": [
+      "housing estate",
+      "real estate",
+      "country estate"
+    ],
+    "synonyms": [
+      "property",
+      "landholding"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "He bought an estate in the city center.",
+        "correct": "He bought a property in the city center.",
+        "explain_vi": "'Estate' thường chỉ khu đất rộng ở ngoại ô hoặc nông thôn, không dùng cho căn hộ trong thành phố."
+      }
+    ],
+    "grammar_patterns": [
+      "a/an + estate",
+      "estate of + noun"
+    ]
+  },
+  {
+    "word": "fixture",
+    "phonetic": "/ˈfɪkstʃər/",
+    "meaning_vi": "vật cố định (trong nhà)",
+    "meaning_en": "an item attached to a building that is not normally removed, e.g., a sink or light fitting",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The kitchen fixtures include the cabinets and the sink.",
+        "vi": "Các vật cố định trong bếp bao gồm tủ và bồn rửa."
+      }
+    ],
+    "word_family": [
+      "fix (v)",
+      "fixed (adj)"
+    ],
+    "collocations": [
+      "light fixture",
+      "bathroom fixture",
+      "fixtures and fittings"
+    ],
+    "synonyms": [
+      "fitting",
+      "appliance"
+    ],
+    "antonyms": [
+      "movable item"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "The fixture is broken.",
+        "correct": "The light fixture is broken.",
+        "explain_vi": "Cần xác định rõ loại fixture (đèn, vòi nước...)."
+      }
+    ],
+    "grammar_patterns": [
+      "fixture + of + noun",
+      "plural: fixtures"
+    ]
+  },
+  {
+    "word": "fittings",
+    "phonetic": "/ˈfɪtɪŋz/",
+    "meaning_vi": "đồ đạc, phụ kiện (có thể tháo rời)",
+    "meaning_en": "items in a building that are not permanently fixed, e.g., curtains or blinds",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The estate agent listed all the fittings included in the sale.",
+        "vi": "Người môi giới bất động sản đã liệt kê tất cả đồ đạc đi kèm trong giao dịch."
+      }
+    ],
+    "word_family": [
+      "fit (v)",
+      "fitting (adj)"
+    ],
+    "collocations": [
+      "fixtures and fittings",
+      "included fittings"
+    ],
+    "synonyms": [
+      "accessories",
+      "attachments"
+    ],
+    "antonyms": [
+      "fixtures"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "The fittings are attached to the wall.",
+        "correct": "The fixtures are attached to the wall.",
+        "explain_vi": "'Fittings' thường là đồ có thể tháo rời, 'fixtures' là cố định."
+      }
+    ],
+    "grammar_patterns": [
+      "plural noun",
+      "fittings + verb (plural)"
+    ]
+  },
+  {
+    "word": "residence",
+    "phonetic": "/ˈrezɪdəns/",
+    "meaning_vi": "nơi cư trú, dinh thự",
+    "meaning_en": "a place where someone lives; a large house",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The ambassador's residence is a grand building.",
+        "vi": "Dinh thự của đại sứ là một tòa nhà nguy nga."
+      }
+    ],
+    "word_family": [
+      "resident (n)",
+      "residential (adj)",
+      "reside (v)"
+    ],
+    "collocations": [
+      "place of residence",
+      "official residence",
+      "primary residence"
+    ],
+    "synonyms": [
+      "home",
+      "dwelling",
+      "abode"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I live in a residence.",
+        "correct": "I live in a house/apartment.",
+        "explain_vi": "'Residence' trang trọng hơn, thường dùng cho dinh thự hoặc nơi ở chính thức."
+      }
+    ],
+    "grammar_patterns": [
+      "a/an + residence",
+      "residence of + noun"
+    ]
+  },
+  {
+    "word": "household",
+    "phonetic": "/ˈhaʊs.həʊld/",
+    "meaning_vi": "hộ gia đình",
+    "meaning_en": "all the people living in a house or apartment together",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The household consists of four people.",
+        "vi": "Hộ gia đình gồm bốn người."
+      }
+    ],
+    "word_family": [
+      "householder (n)",
+      "household (adj)"
+    ],
+    "collocations": [
+      "household chores",
+      "household income",
+      "household name"
+    ],
+    "synonyms": [
+      "family",
+      "home"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "My household has three rooms.",
+        "correct": "My house has three rooms.",
+        "explain_vi": "'Household' chỉ người, không chỉ tòa nhà."
+      }
+    ],
+    "grammar_patterns": [
+      "the + household",
+      "household + noun (e.g., household chores)"
+    ]
+  },
+  {
+    "word": "homely",
+    "phonetic": "/ˈhəʊm.li/",
+    "meaning_vi": "ấm cúng, giản dị",
+    "meaning_en": "comfortable and cozy; simple and pleasant (BrE); plain or unattractive (AmE)",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The cottage had a homely atmosphere.",
+        "vi": "Ngôi nhà tranh có bầu không khí ấm cúng."
+      }
+    ],
+    "word_family": [
+      "home (n)",
+      "homeliness (n)"
+    ],
+    "collocations": [
+      "homely feel",
+      "homely atmosphere",
+      "homely meal"
+    ],
+    "synonyms": [
+      "cozy",
+      "snug",
+      "comfortable"
+    ],
+    "antonyms": [
+      "uncomfortable",
+      "cold"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "She is very homely.",
+        "correct": "She is very homely (BrE: friendly, simple) or She is plain (AmE).",
+        "explain_vi": "Cẩn thận: 'homely' trong Anh-Mỹ có nghĩa khác (xấu)."
+      }
+    ],
+    "grammar_patterns": [
+      "homely + noun",
+      "be + homely"
+    ]
+  },
+  {
+    "word": "domestic",
+    "phonetic": "/dəˈmestɪk/",
+    "meaning_vi": "trong nước; thuộc gia đình",
+    "meaning_en": "relating to the home or family; within a country",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "She is skilled in domestic tasks like cooking and cleaning.",
+        "vi": "Cô ấy giỏi các công việc gia đình như nấu ăn và dọn dẹp."
+      }
+    ],
+    "word_family": [
+      "domesticate (v)",
+      "domesticity (n)"
+    ],
+    "collocations": [
+      "domestic chores",
+      "domestic violence",
+      "domestic policy"
+    ],
+    "synonyms": [
+      "household",
+      "home",
+      "internal"
+    ],
+    "antonyms": [
+      "foreign",
+      "international"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I prefer domestic flights.",
+        "correct": "I prefer domestic flights.",
+        "explain_vi": "Không nhầm lẫn: 'domestic' vừa chỉ gia đình vừa chỉ trong nước."
+      }
+    ],
+    "grammar_patterns": [
+      "domestic + noun"
+    ]
+  },
+  {
+    "word": "renovation",
+    "phonetic": "/ˌren.əˈveɪ.ʃən/",
+    "meaning_vi": "sự cải tạo, tu sửa",
+    "meaning_en": "the process of repairing and improving a building",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The kitchen renovation took three months.",
+        "vi": "Việc cải tạo nhà bếp mất ba tháng."
+      }
+    ],
+    "word_family": [
+      "renovate (v)",
+      "renovator (n)"
+    ],
+    "collocations": [
+      "home renovation",
+      "major renovation",
+      "renovation project"
+    ],
+    "synonyms": [
+      "remodeling",
+      "refurbishment",
+      "restoration"
+    ],
+    "antonyms": [
+      "neglect",
+      "deterioration"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "We are doing renovation.",
+        "correct": "We are doing renovations.",
+        "explain_vi": "Thường dùng số nhiều 'renovations'."
+      }
+    ],
+    "grammar_patterns": [
+      "renovation + of + noun",
+      "undergo renovation"
+    ]
+  },
+  {
+    "word": "refurbishment",
+    "phonetic": "/riːˈfɜː.bɪʃ.mənt/",
+    "meaning_vi": "sự tân trang, sửa chữa",
+    "meaning_en": "the act of cleaning, repairing, and redecorating a building or room",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The hotel is closed for refurbishment.",
+        "vi": "Khách sạn đóng cửa để tân trang."
+      }
+    ],
+    "word_family": [
+      "refurbish (v)",
+      "refurbished (adj)"
+    ],
+    "collocations": [
+      "undergo refurbishment",
+      "refurbishment work",
+      "complete refurbishment"
+    ],
+    "synonyms": [
+      "renovation",
+      "redecoration",
+      "restoration"
+    ],
+    "antonyms": [
+      "damage",
+      "wear"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "The refurbishment of my house.",
+        "correct": "The refurbishment of my house (correct, but 'renovation' is more common for houses).",
+        "explain_vi": "'Refurbishment' thường dùng cho tòa nhà thương mại hơn."
+      }
+    ],
+    "grammar_patterns": [
+      "refurbishment + of + noun",
+      "for refurbishment"
+    ]
+  },
+  {
+    "word": "conversion",
+    "phonetic": "/kənˈvɜː.ʒən/",
+    "meaning_vi": "sự chuyển đổi (công năng nhà)",
+    "meaning_en": "the process of changing a building's purpose, e.g., from a barn to a house",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "They live in a barn conversion.",
+        "vi": "Họ sống trong một ngôi nhà chuyển đổi từ chuồng ngựa."
+      }
+    ],
+    "word_family": [
+      "convert (v)",
+      "convertible (adj)"
+    ],
+    "collocations": [
+      "loft conversion",
+      "barn conversion",
+      "church conversion"
+    ],
+    "synonyms": [
+      "adaptation",
+      "transformation"
+    ],
+    "antonyms": [
+      "original state"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "They converted the garage to a bedroom.",
+        "correct": "They converted the garage into a bedroom.",
+        "explain_vi": "Dùng 'convert into' chứ không phải 'convert to'."
+      }
+    ],
+    "grammar_patterns": [
+      "conversion + of + noun",
+      "conversion into"
+    ]
+  },
+  {
+    "word": "extension",
+    "phonetic": "/ɪkˈsten.ʃən/",
+    "meaning_vi": "phần mở rộng (nhà)",
+    "meaning_en": "a new room or rooms added to an existing building",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "They built a kitchen extension.",
+        "vi": "Họ đã xây thêm phần mở rộng cho nhà bếp."
+      }
+    ],
+    "word_family": [
+      "extend (v)",
+      "extensive (adj)"
+    ],
+    "collocations": [
+      "house extension",
+      "build an extension",
+      "extension to the house"
+    ],
+    "synonyms": [
+      "addition",
+      "annexe"
+    ],
+    "antonyms": [
+      "reduction"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "We added an extension.",
+        "correct": "We added an extension to the house.",
+        "explain_vi": "Cần nói rõ 'extension to something'."
+      }
+    ],
+    "grammar_patterns": [
+      "extension + to + noun",
+      "build an extension"
+    ]
+  },
+  {
+    "word": "loft",
+    "phonetic": "/lɒft/",
+    "meaning_vi": "gác xép, tầng áp mái",
+    "meaning_en": "a room or space directly under the roof, often used for storage or converted into a living area",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "They converted the loft into a bedroom.",
+        "vi": "Họ đã cải tạo gác xép thành phòng ngủ."
+      }
+    ],
+    "word_family": [
+      "lofty (adj)"
+    ],
+    "collocations": [
+      "loft conversion",
+      "loft apartment",
+      "loft space"
+    ],
+    "synonyms": [
+      "attic",
+      "garret"
+    ],
+    "antonyms": [
+      "basement"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I sleep in the loft.",
+        "correct": "I sleep in the loft (if converted).",
+        "explain_vi": "'Loft' thường là không gian mở, không phải phòng ngủ chính thức."
+      }
+    ],
+    "grammar_patterns": [
+      "the + loft",
+      "loft + noun (loft conversion)"
+    ]
+  },
+  {
+    "word": "en suite",
+    "phonetic": "/ɒ̃ ˈswiːt/",
+    "meaning_vi": "phòng tắm riêng (trong phòng ngủ)",
+    "meaning_en": "a bathroom connected to a bedroom",
+    "pos": "adjective/adverb",
+    "examples": [
+      {
+        "en": "The master bedroom has an en suite bathroom.",
+        "vi": "Phòng ngủ chính có phòng tắm riêng."
+      }
+    ],
+    "word_family": [
+      "suite (n)"
+    ],
+    "collocations": [
+      "en suite bathroom",
+      "en suite facilities",
+      "room with en suite"
+    ],
+    "synonyms": [
+      "private bathroom"
+    ],
+    "antonyms": [
+      "shared bathroom"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "The room has en suite.",
+        "correct": "The room has an en suite bathroom.",
+        "explain_vi": "Cần có 'bathroom' hoặc dùng 'en suite' như tính từ."
+      }
+    ],
+    "grammar_patterns": [
+      "en suite + noun",
+      "be en suite"
+    ]
+  },
+  {
+    "word": "open-plan",
+    "phonetic": "/ˌəʊ.pən ˈplæn/",
+    "meaning_vi": "thiết kế mở (không vách ngăn)",
+    "meaning_en": "a floor plan with few or no walls between rooms, especially living areas",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "They prefer an open-plan kitchen and living room.",
+        "vi": "Họ thích thiết kế mở giữa bếp và phòng khách."
+      }
+    ],
+    "word_family": [
+      "open (adj)",
+      "plan (n)"
+    ],
+    "collocations": [
+      "open-plan living",
+      "open-plan office",
+      "open-plan layout"
+    ],
+    "synonyms": [
+      "open concept"
+    ],
+    "antonyms": [
+      "closed-plan",
+      "compartmentalized"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "It's an open plan.",
+        "correct": "It's an open-plan layout.",
+        "explain_vi": "'Open-plan' là tính từ ghép, cần danh từ đi kèm."
+      }
+    ],
+    "grammar_patterns": [
+      "open-plan + noun"
+    ]
+  },
+  {
+    "word": "landscaping",
+    "phonetic": "/ˈlænd.skeɪ.pɪŋ/",
+    "meaning_vi": "cảnh quan, việc tạo cảnh quan",
+    "meaning_en": "the activity of designing and arranging gardens and outdoor areas",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Professional landscaping can increase property value.",
+        "vi": "Việc tạo cảnh quan chuyên nghiệp có thể tăng giá trị bất động sản."
+      }
+    ],
+    "word_family": [
+      "landscape (n/v)",
+      "landscaper (n)"
+    ],
+    "collocations": [
+      "landscaping design",
+      "garden landscaping",
+      "landscaping project"
+    ],
+    "synonyms": [
+      "gardening",
+      "groundskeeping"
+    ],
+    "antonyms": [
+      "neglect"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I like landscaping.",
+        "correct": "I like landscaping (correct, but 'landscape' as verb: I landscape the garden).",
+        "explain_vi": "Phân biệt danh từ 'landscaping' và động từ 'landscape'."
+      }
+    ],
+    "grammar_patterns": [
+      "landscaping + noun",
+      "do landscaping"
+    ]
+  },
+  {
+    "word": "patio",
+    "phonetic": "/ˈpæt.i.əʊ/",
+    "meaning_vi": "sân hiên, sân trong",
+    "meaning_en": "a paved outdoor area next to a house, used for dining or relaxation",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We have breakfast on the patio in summer.",
+        "vi": "Chúng tôi ăn sáng trên sân hiên vào mùa hè."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "patio furniture",
+      "patio door",
+      "on the patio"
+    ],
+    "synonyms": [
+      "terrace",
+      "deck",
+      "veranda"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I sit in the patio.",
+        "correct": "I sit on the patio.",
+        "explain_vi": "Dùng 'on the patio' vì là bề mặt."
+      }
+    ],
+    "grammar_patterns": [
+      "the + patio",
+      "on the patio"
+    ]
+  },
+  {
+    "word": "driveway",
+    "phonetic": "/ˈdraɪv.weɪ/",
+    "meaning_vi": "đường lái xe vào nhà",
+    "meaning_en": "a short private road from the street to a house or garage",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "They parked the car in the driveway.",
+        "vi": "Họ đỗ xe ở đường vào nhà."
+      }
+    ],
+    "word_family": [
+      "drive (v)",
+      "way (n)"
+    ],
+    "collocations": [
+      "private driveway",
+      "shared driveway",
+      "long driveway"
+    ],
+    "synonyms": [
+      "drive",
+      "access road"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I parked on the driveway.",
+        "correct": "I parked in the driveway.",
+        "explain_vi": "Dùng 'in the driveway' (trong khu vực) hoặc 'on the driveway' cũng được nhưng 'in' phổ biến hơn."
+      }
+    ],
+    "grammar_patterns": [
+      "the + driveway",
+      "in the driveway"
+    ]
+  },
+  {
+    "word": "fence",
+    "phonetic": "/fens/",
+    "meaning_vi": "hàng rào",
+    "meaning_en": "a structure that encloses an area, typically outdoors, made of wood or metal",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The garden is surrounded by a wooden fence.",
+        "vi": "Khu vườn được bao quanh bởi hàng rào gỗ."
+      }
+    ],
+    "word_family": [
+      "fencing (n)",
+      "fence (v)"
+    ],
+    "collocations": [
+      "wooden fence",
+      "chain-link fence",
+      "build a fence"
+    ],
+    "synonyms": [
+      "barrier",
+      "enclosure",
+      "hedge"
+    ],
+    "antonyms": [
+      "opening"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "They fenced the garden.",
+        "correct": "They fenced in the garden.",
+        "explain_vi": "Khi dùng động từ 'fence', thường thêm 'in' hoặc 'off'."
+      }
+    ],
+    "grammar_patterns": [
+      "a + fence",
+      "fence + around + noun"
+    ]
+  },
+  {
+    "word": "hedge",
+    "phonetic": "/hedʒ/",
+    "meaning_vi": "hàng rào cây xanh",
+    "meaning_en": "a row of closely planted shrubs or bushes forming a boundary",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "They trimmed the hedge to keep it neat.",
+        "vi": "Họ cắt tỉa hàng rào cây để giữ cho nó gọn gàng."
+      }
+    ],
+    "word_family": [
+      "hedging (n)",
+      "hedge (v)"
+    ],
+    "collocations": [
+      "hedge trimming",
+      "hedge fund (financial)",
+      "privet hedge"
+    ],
+    "synonyms": [
+      "hedgerow",
+      "shrubbery"
+    ],
+    "antonyms": [
+      "open space"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "The hedge is made of wood.",
+        "correct": "The hedge is made of bushes.",
+        "explain_vi": "'Hedge' là cây bụi, không phải gỗ."
+      }
+    ],
+    "grammar_patterns": [
+      "a + hedge",
+      "hedge + of + noun"
+    ]
+  },
+  {
+    "word": "upkeep",
+    "phonetic": "/ˈʌp.kiːp/",
+    "meaning_vi": "sự bảo trì, duy trì",
+    "meaning_en": "the process or cost of keeping something in good condition",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The upkeep of a large house can be expensive.",
+        "vi": "Chi phí bảo trì một ngôi nhà lớn có thể đắt đỏ."
+      }
+    ],
+    "word_family": [
+      "keep (v)",
+      "upkeep (n)"
+    ],
+    "collocations": [
+      "upkeep of the house",
+      "upkeep costs",
+      "upkeep expenses"
+    ],
+    "synonyms": [
+      "maintenance",
+      "preservation"
+    ],
+    "antonyms": [
+      "neglect"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "upkeep the house",
+        "correct": "the upkeep of the house",
+        "explain_vi": "Upkeep là danh từ, không phải động từ. Dùng 'the upkeep of'."
+      }
+    ],
+    "grammar_patterns": [
+      "the upkeep of + noun",
+      "upkeep + noun (as compound)"
+    ]
+  },
+  {
+    "word": "dilapidated",
+    "phonetic": "/dɪˈlæp.ɪ.deɪ.tɪd/",
+    "meaning_vi": "đổ nát, hư hỏng nặng",
+    "meaning_en": "in a state of disrepair or ruin as a result of age or neglect",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "They bought a dilapidated old mansion and restored it.",
+        "vi": "Họ mua một biệt thự cũ đổ nát và phục hồi nó."
+      }
+    ],
+    "word_family": [
+      "dilapidate (v)",
+      "dilapidation (n)"
+    ],
+    "collocations": [
+      "dilapidated building",
+      "dilapidated house",
+      "fall into dilapidation"
+    ],
+    "synonyms": [
+      "run-down",
+      "ramshackle",
+      "decrepit"
+    ],
+    "antonyms": [
+      "well-maintained",
+      "pristine"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "dilapidated house is very old",
+        "correct": "dilapidated house is in very bad condition",
+        "explain_vi": "Dilapidated nhấn mạnh tình trạng hư hỏng, không chỉ tuổi tác."
+      }
+    ],
+    "grammar_patterns": [
+      "be + dilapidated",
+      "dilapidated + noun"
+    ]
+  },
+  {
+    "word": "quaint",
+    "phonetic": "/kweɪnt/",
+    "meaning_vi": "cổ kính và duyên dáng",
+    "meaning_en": "attractively unusual or old-fashioned",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The village has many quaint cottages with thatched roofs.",
+        "vi": "Ngôi làng có nhiều ngôi nhà tranh cổ kính với mái rạ."
+      }
+    ],
+    "word_family": [
+      "quaintness (n)",
+      "quaintly (adv)"
+    ],
+    "collocations": [
+      "quaint village",
+      "quaint house",
+      "quaint charm"
+    ],
+    "synonyms": [
+      "picturesque",
+      "charming",
+      "old-world"
+    ],
+    "antonyms": [
+      "modern",
+      "sleek"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "quaint house is very old and ugly",
+        "correct": "quaint house is old but charming",
+        "explain_vi": "Quaint mang nghĩa tích cực, duyên dáng, không phải xấu."
+      }
+    ],
+    "grammar_patterns": [
+      "quaint + noun",
+      "be + quaint"
+    ]
+  },
+  {
+    "word": "clad",
+    "phonetic": "/klæd/",
+    "meaning_vi": "được ốp, bọc bên ngoài",
+    "meaning_en": "covered with a particular material",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The house is clad in red brick.",
+        "vi": "Ngôi nhà được ốp gạch đỏ."
+      }
+    ],
+    "word_family": [
+      "cladding (n)"
+    ],
+    "collocations": [
+      "clad in wood",
+      "clad in stone",
+      "clad with tiles"
+    ],
+    "synonyms": [
+      "covered",
+      "faced"
+    ],
+    "antonyms": [
+      "bare",
+      "uncovered"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "The house is clad by brick",
+        "correct": "The house is clad in brick",
+        "explain_vi": "Dùng 'in' hoặc 'with', không dùng 'by'."
+      }
+    ],
+    "grammar_patterns": [
+      "be clad in + material",
+      "be clad with + material"
+    ]
+  },
+  {
+    "word": "bespoke",
+    "phonetic": "/bɪˈspəʊk/",
+    "meaning_vi": "đặt làm riêng, theo yêu cầu",
+    "meaning_en": "made to order; custom-made",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "They had a bespoke kitchen fitted.",
+        "vi": "Họ đã lắp đặt một căn bếp được thiết kế riêng."
+      }
+    ],
+    "word_family": [
+      "bespeak (v)"
+    ],
+    "collocations": [
+      "bespoke furniture",
+      "bespoke design",
+      "bespoke kitchen"
+    ],
+    "synonyms": [
+      "custom-made",
+      "tailor-made",
+      "customized"
+    ],
+    "antonyms": [
+      "mass-produced",
+      "off-the-shelf"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "bespoke kitchen is very expensive and ugly",
+        "correct": "bespoke kitchen is custom-made and often expensive",
+        "explain_vi": "Bespoke không mang nghĩa xấu, chỉ là 'đặt làm riêng'."
+      }
+    ],
+    "grammar_patterns": [
+      "bespoke + noun"
+    ]
+  },
+  {
+    "word": "dwelling",
+    "phonetic": "/ˈdwel.ɪŋ/",
+    "meaning_vi": "nơi ở, nhà ở",
+    "meaning_en": "a house, flat, or other place of residence",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The dwelling was destroyed by fire.",
+        "vi": "Ngôi nhà đã bị phá hủy bởi hỏa hoạn."
+      }
+    ],
+    "word_family": [
+      "dwell (v)",
+      "dweller (n)"
+    ],
+    "collocations": [
+      "residential dwelling",
+      "dwelling place",
+      "dwelling unit"
+    ],
+    "synonyms": [
+      "residence",
+      "home",
+      "abode"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "dwelling is a verb",
+        "correct": "dwelling is a noun, dwell is the verb",
+        "explain_vi": "Dwelling là danh từ, động từ là dwell."
+      }
+    ],
+    "grammar_patterns": [
+      "dwelling + noun (as compound)",
+      "a/the dwelling"
+    ]
+  },
+  {
+    "word": "abode",
+    "phonetic": "/əˈbəʊd/",
+    "meaning_vi": "nơi ở, chốn ở",
+    "meaning_en": "a place of residence; a house or home",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Welcome to my humble abode.",
+        "vi": "Chào mừng đến với chốn ở khiêm tốn của tôi."
+      }
+    ],
+    "word_family": [
+      "abide (v)"
+    ],
+    "collocations": [
+      "humble abode",
+      "place of abode",
+      "right of abode"
+    ],
+    "synonyms": [
+      "dwelling",
+      "residence",
+      "home"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "abode is very formal and not used",
+        "correct": "abode is formal but used in fixed expressions",
+        "explain_vi": "Abode thường dùng trong văn viết trang trọng hoặc cụm từ cố định."
+      }
+    ],
+    "grammar_patterns": [
+      "one's abode",
+      "place of abode"
+    ]
+  },
+  {
+    "word": "habitable",
+    "phonetic": "/ˈhæb.ɪ.tə.bəl/",
+    "meaning_vi": "có thể ở được",
+    "meaning_en": "suitable or good enough to live in",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The house is no longer habitable after the flood.",
+        "vi": "Ngôi nhà không còn ở được sau trận lũ."
+      }
+    ],
+    "word_family": [
+      "habitability (n)",
+      "inhabitable (adj)"
+    ],
+    "collocations": [
+      "habitable condition",
+      "habitable space",
+      "make habitable"
+    ],
+    "synonyms": [
+      "livable",
+      "inhabitable"
+    ],
+    "antonyms": [
+      "uninhabitable",
+      "derelict"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "habitable is the same as inhabitable",
+        "correct": "habitable and inhabitable are synonyms",
+        "explain_vi": "Cả hai đều có nghĩa 'có thể ở được'."
+      }
+    ],
+    "grammar_patterns": [
+      "be habitable",
+      "habitable + noun"
+    ]
+  },
+  {
+    "word": "renovate",
+    "phonetic": "/ˈren.ə.veɪt/",
+    "meaning_vi": "cải tạo, sửa chữa lớn",
+    "meaning_en": "to repair and improve a building",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "They decided to renovate the old barn into a studio.",
+        "vi": "Họ quyết định cải tạo chuồng ngựa cũ thành một studio."
+      }
+    ],
+    "word_family": [
+      "renovation (n)",
+      "renovator (n)"
+    ],
+    "collocations": [
+      "renovate a house",
+      "renovate a kitchen",
+      "renovate a building"
+    ],
+    "synonyms": [
+      "refurbish",
+      "restore",
+      "remodel"
+    ],
+    "antonyms": [
+      "neglect",
+      "abandon"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "renovate and redecorate are the same",
+        "correct": "renovate involves major structural changes, redecorate is cosmetic",
+        "explain_vi": "Renovate là cải tạo lớn, redecorate là trang trí lại."
+      }
+    ],
+    "grammar_patterns": [
+      "renovate + noun"
+    ]
+  },
+  {
+    "word": "spacious",
+    "phonetic": "/ˈspeɪ.ʃəs/",
+    "meaning_vi": "rộng rãi, thoáng đãng",
+    "meaning_en": "having a lot of space",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The living room is very spacious.",
+        "vi": "Phòng khách rất rộng rãi."
+      }
+    ],
+    "word_family": [
+      "space (n)",
+      "spaciousness (n)"
+    ],
+    "collocations": [
+      "spacious room",
+      "spacious house",
+      "spacious interior"
+    ],
+    "synonyms": [
+      "roomy",
+      "generous",
+      "ample"
+    ],
+    "antonyms": [
+      "cramped",
+      "tiny",
+      "confined"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "spacious is used for time",
+        "correct": "spacious is only for physical space",
+        "explain_vi": "Spacious chỉ không gian vật lý, không dùng cho thời gian."
+      }
+    ],
+    "grammar_patterns": [
+      "be spacious",
+      "spacious + noun"
+    ]
+  },
+  {
+    "word": "clutter",
+    "phonetic": "/ˈklʌt.ər/",
+    "meaning_vi": "đồ lộn xộn, bừa bộn",
+    "meaning_en": "a collection of things lying about in an untidy state",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Her desk was covered in clutter.",
+        "vi": "Bàn làm việc của cô ấy đầy đồ lộn xộn."
+      }
+    ],
+    "word_family": [
+      "cluttered (adj)",
+      "declutter (v)"
+    ],
+    "collocations": [
+      "clear the clutter",
+      "reduce clutter",
+      "clutter-free"
+    ],
+    "synonyms": [
+      "mess",
+      "disorder",
+      "jumble"
+    ],
+    "antonyms": [
+      "tidiness",
+      "order"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "clutter is a verb only",
+        "correct": "clutter can be a noun or verb",
+        "explain_vi": "Clutter vừa là danh từ (đồ lộn xộn) vừa là động từ (làm lộn xộn)."
+      }
+    ],
+    "grammar_patterns": [
+      "a clutter of + noun",
+      "be in clutter"
+    ]
+  },
+  {
+    "word": "declutter",
+    "phonetic": "/diːˈklʌt.ər/",
+    "meaning_vi": "dọn dẹp, loại bỏ đồ lộn xộn",
+    "meaning_en": "to remove unnecessary items from a space",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "I need to declutter my wardrobe.",
+        "vi": "Tôi cần dọn dẹp tủ quần áo của mình."
+      }
+    ],
+    "word_family": [
+      "decluttering (n)",
+      "clutter (n/v)"
+    ],
+    "collocations": [
+      "declutter the house",
+      "declutter a room",
+      "declutter your life"
+    ],
+    "synonyms": [
+      "tidy up",
+      "clear out",
+      "organize"
+    ],
+    "antonyms": [
+      "clutter",
+      "mess up"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "declutter means to make something dirty",
+        "correct": "declutter means to remove clutter",
+        "explain_vi": "Declutter là loại bỏ đồ lộn xộn, không phải làm bẩn."
+      }
+    ],
+    "grammar_patterns": [
+      "declutter + noun"
+    ]
+  },
+  {
+    "word": "cosy",
+    "phonetic": "/ˈkəʊ.zi/",
+    "meaning_vi": "ấm cúng",
+    "meaning_en": "giving a feeling of comfort, warmth, and relaxation",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The cottage was small but cosy.",
+        "vi": "Ngôi nhà tranh nhỏ nhưng ấm cúng."
+      }
+    ],
+    "word_family": [
+      "cosiness (n)",
+      "cosily (adv)"
+    ],
+    "collocations": [
+      "cosy room",
+      "cosy atmosphere",
+      "cosy corner"
+    ],
+    "synonyms": [
+      "snug",
+      "comfortable",
+      "warm"
+    ],
+    "antonyms": [
+      "cold",
+      "uncomfortable",
+      "bleak"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "cosy is spelled cozy",
+        "correct": "both spellings are correct, cosy is British, cozy is American",
+        "explain_vi": "Cosy (Anh) và cozy (Mỹ) đều đúng."
+      }
+    ],
+    "grammar_patterns": [
+      "be cosy",
+      "cosy + noun"
+    ]
+  },
+  {
+    "word": "furnish",
+    "phonetic": "/ˈfɜː.nɪʃ/",
+    "meaning_vi": "trang bị nội thất",
+    "meaning_en": "to provide a room or building with furniture",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "They furnished the flat with modern furniture.",
+        "vi": "Họ trang bị nội thất hiện đại cho căn hộ."
+      }
+    ],
+    "word_family": [
+      "furniture (n)",
+      "furnished (adj)",
+      "unfurnished (adj)"
+    ],
+    "collocations": [
+      "furnish a room",
+      "furnish a house",
+      "furnish with"
+    ],
+    "synonyms": [
+      "equip",
+      "outfit",
+      "fit out"
+    ],
+    "antonyms": [
+      "strip",
+      "empty"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "furnish and decorate are the same",
+        "correct": "furnish is about furniture, decorate is about aesthetics",
+        "explain_vi": "Furnish là cung cấp đồ nội thất, decorate là trang trí."
+      }
+    ],
+    "grammar_patterns": [
+      "furnish + noun",
+      "furnish with + noun"
+    ]
+  },
+  {
+    "word": "mortgage",
+    "phonetic": "/ˈmɔː.ɡɪdʒ/",
+    "meaning_vi": "thế chấp, khoản vay mua nhà",
+    "meaning_en": "a loan to buy a property, paid back over many years",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "They took out a mortgage to buy the house.",
+        "vi": "Họ vay thế chấp để mua nhà."
+      }
+    ],
+    "word_family": [
+      "mortgage (v)",
+      "mortgagor (n)",
+      "mortgagee (n)"
+    ],
+    "collocations": [
+      "take out a mortgage",
+      "pay off a mortgage",
+      "mortgage rate"
+    ],
+    "synonyms": [
+      "home loan",
+      "housing loan"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "mortgage pronunciation: /ˈmɔː.tɡeɪdʒ/",
+        "correct": "/ˈmɔː.ɡɪdʒ/",
+        "explain_vi": "Âm 't' không được phát âm."
+      }
+    ],
+    "grammar_patterns": [
+      "a mortgage on + property",
+      "mortgage + noun (as compound)"
+    ]
+  },
+  {
+    "word": "landlord",
+    "phonetic": "/ˈlænd.lɔːd/",
+    "meaning_vi": "chủ nhà cho thuê",
+    "meaning_en": "a person who rents out property to tenants",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The landlord raised the rent.",
+        "vi": "Chủ nhà tăng tiền thuê."
+      }
+    ],
+    "word_family": [
+      "landlady (n)",
+      "landlordism (n)"
+    ],
+    "collocations": [
+      "landlord and tenant",
+      "landlord's permission",
+      "landlord insurance"
+    ],
+    "synonyms": [
+      "lessor",
+      "property owner"
+    ],
+    "antonyms": [
+      "tenant"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "landlord is only for male",
+        "correct": "landlord can be used for both, but landlady for female",
+        "explain_vi": "Landlord dùng chung, landlady chỉ chủ nhà nữ."
+      }
+    ],
+    "grammar_patterns": [
+      "the landlord of + property"
+    ]
+  },
+  {
+    "word": "tenant",
+    "phonetic": "/ˈten.ənt/",
+    "meaning_vi": "người thuê nhà",
+    "meaning_en": "a person who rents property from a landlord",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The tenant complained about the heating.",
+        "vi": "Người thuê nhà phàn nàn về hệ thống sưởi."
+      }
+    ],
+    "word_family": [
+      "tenancy (n)",
+      "tenant (v)"
+    ],
+    "collocations": [
+      "tenant rights",
+      "tenant agreement",
+      "sitting tenant"
+    ],
+    "synonyms": [
+      "renter",
+      "lessee",
+      "occupant"
+    ],
+    "antonyms": [
+      "landlord",
+      "owner"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "tenant and tenet are the same",
+        "correct": "tenant is renter, tenet is principle",
+        "explain_vi": "Tenant (người thuê) khác tenet (nguyên tắc)."
+      }
+    ],
+    "grammar_patterns": [
+      "tenant of + property"
+    ]
+  },
+  {
+    "word": "lease",
+    "phonetic": "/liːs/",
+    "meaning_vi": "hợp đồng cho thuê",
+    "meaning_en": "a legal agreement to rent property for a specified period",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We signed a two-year lease on the apartment.",
+        "vi": "Chúng tôi đã ký hợp đồng thuê căn hộ hai năm."
+      }
+    ],
+    "word_family": [
+      "lease (v)",
+      "lessee (n)",
+      "lessor (n)"
+    ],
+    "collocations": [
+      "sign a lease",
+      "renew a lease",
+      "lease agreement"
+    ],
+    "synonyms": [
+      "rental agreement",
+      "tenancy"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "lease and rent are interchangeable",
+        "correct": "lease is a contract, rent is the payment",
+        "explain_vi": "Lease là hợp đồng, rent là tiền thuê."
+      }
+    ],
+    "grammar_patterns": [
+      "a lease on + property",
+      "lease + noun (as verb)"
+    ]
+  },
+  {
+    "word": "amenities",
+    "phonetic": "/əˈmiː.nɪ.tiz/",
+    "meaning_vi": "tiện nghi, tiện ích",
+    "meaning_en": "features that make a place comfortable or enjoyable",
+    "pos": "noun (plural)",
+    "examples": [
+      {
+        "en": "The apartment complex has excellent amenities like a pool and gym.",
+        "vi": "Khu chung cư có các tiện ích tuyệt vời như hồ bơi và phòng gym."
+      }
+    ],
+    "word_family": [
+      "amenity (n singular)"
+    ],
+    "collocations": [
+      "local amenities",
+      "modern amenities",
+      "amenities include"
+    ],
+    "synonyms": [
+      "facilities",
+      "features",
+      "services"
+    ],
+    "antonyms": [
+      "drawbacks",
+      "disadvantages"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "amenities is singular",
+        "correct": "amenities is plural, singular is amenity",
+        "explain_vi": "Amenities là số nhiều, số ít là amenity."
+      }
+    ],
+    "grammar_patterns": [
+      "amenities such as",
+      "with all amenities"
+    ]
+  },
+  {
+    "word": "interior",
+    "phonetic": "/ɪnˈtɪə.ri.ər/",
+    "meaning_vi": "nội thất, bên trong",
+    "meaning_en": "the inside part of a building",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The interior of the house was beautifully decorated.",
+        "vi": "Nội thất của ngôi nhà được trang trí đẹp mắt."
+      }
+    ],
+    "word_family": [
+      "interior (adj)",
+      "interiority (n)"
+    ],
+    "collocations": [
+      "interior design",
+      "interior decorator",
+      "interior space"
+    ],
+    "synonyms": [
+      "inside",
+      "internal space"
+    ],
+    "antonyms": [
+      "exterior",
+      "outside"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "interior is only for cars",
+        "correct": "interior is used for buildings, cars, etc.",
+        "explain_vi": "Interior dùng cho bên trong của bất kỳ công trình nào."
+      }
+    ],
+    "grammar_patterns": [
+      "the interior of + noun",
+      "interior + noun"
+    ]
+  },
+  {
+    "word": "exterior",
+    "phonetic": "/ɪkˈstɪə.ri.ər/",
+    "meaning_vi": "ngoại thất, bên ngoài",
+    "meaning_en": "the outside part of a building",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The exterior of the house needs painting.",
+        "vi": "Ngoại thất của ngôi nhà cần sơn lại."
+      }
+    ],
+    "word_family": [
+      "exterior (adj)",
+      "exteriority (n)"
+    ],
+    "collocations": [
+      "exterior paint",
+      "exterior wall",
+      "exterior design"
+    ],
+    "synonyms": [
+      "outside",
+      "external surface"
+    ],
+    "antonyms": [
+      "interior",
+      "inside"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "exterior is the same as external",
+        "correct": "exterior is a noun, external is an adjective",
+        "explain_vi": "Exterior là danh từ, external là tính từ."
+      }
+    ],
+    "grammar_patterns": [
+      "the exterior of + noun",
+      "exterior + noun"
+    ]
+  }
+]

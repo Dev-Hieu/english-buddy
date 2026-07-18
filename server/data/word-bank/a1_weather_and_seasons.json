@@ -1,0 +1,1575 @@
+[
+  {
+    "word": "weather",
+    "phonetic": "/ˈweð.ər/",
+    "meaning_vi": "thời tiết",
+    "meaning_en": "the state of the atmosphere at a particular time and place",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The weather is nice today.",
+        "vi": "Thời tiết hôm nay đẹp."
+      }
+    ],
+    "word_family": [
+      "weather (v)"
+    ],
+    "collocations": [
+      "good weather",
+      "bad weather",
+      "weather forecast"
+    ],
+    "synonyms": [
+      "climate"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "weather is hot",
+        "correct": "it is hot",
+        "explain_vi": "Trong tiếng Anh, dùng 'it is' để nói về thời tiết, không dùng 'weather is'."
+      }
+    ],
+    "grammar_patterns": [
+      "the weather + be + adjective"
+    ]
+  },
+  {
+    "word": "hot",
+    "phonetic": "/hɒt/",
+    "meaning_vi": "nóng",
+    "meaning_en": "having a high temperature",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "It is hot in summer.",
+        "vi": "Trời nóng vào mùa hè."
+      }
+    ],
+    "word_family": [
+      "heat (n)",
+      "hotly (adv)"
+    ],
+    "collocations": [
+      "hot weather",
+      "hot day",
+      "hot drink"
+    ],
+    "synonyms": [
+      "warm"
+    ],
+    "antonyms": [
+      "cold"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I am hot",
+        "correct": "It is hot",
+        "explain_vi": "Khi nói về thời tiết, dùng 'it is hot', không dùng 'I am hot' (có nghĩa là tôi bị kích thích)."
+      }
+    ],
+    "grammar_patterns": [
+      "it + be + hot"
+    ]
+  },
+  {
+    "word": "cold",
+    "phonetic": "/kəʊld/",
+    "meaning_vi": "lạnh",
+    "meaning_en": "having a low temperature",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "It is cold in winter.",
+        "vi": "Trời lạnh vào mùa đông."
+      }
+    ],
+    "word_family": [
+      "cold (n)",
+      "coldly (adv)"
+    ],
+    "collocations": [
+      "cold weather",
+      "cold day",
+      "cold drink"
+    ],
+    "synonyms": [
+      "cool"
+    ],
+    "antonyms": [
+      "hot"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I am cold",
+        "correct": "It is cold",
+        "explain_vi": "Khi nói về thời tiết, dùng 'it is cold', không dùng 'I am cold' (có nghĩa là tôi bị lạnh)."
+      }
+    ],
+    "grammar_patterns": [
+      "it + be + cold"
+    ]
+  },
+  {
+    "word": "sunny",
+    "phonetic": "/ˈsʌn.i/",
+    "meaning_vi": "nắng",
+    "meaning_en": "with a lot of light from the sun",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "It is sunny today.",
+        "vi": "Hôm nay trời nắng."
+      }
+    ],
+    "word_family": [
+      "sun (n)",
+      "sunshine (n)"
+    ],
+    "collocations": [
+      "sunny day",
+      "sunny weather",
+      "sunny morning"
+    ],
+    "synonyms": [
+      "bright",
+      "clear"
+    ],
+    "antonyms": [
+      "cloudy",
+      "rainy"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "sunny hot",
+        "correct": "hot and sunny",
+        "explain_vi": "Tính từ 'sunny' và 'hot' có thể kết hợp với 'and', không đặt liền nhau."
+      }
+    ],
+    "grammar_patterns": [
+      "it + be + sunny"
+    ]
+  },
+  {
+    "word": "rainy",
+    "phonetic": "/ˈreɪ.ni/",
+    "meaning_vi": "mưa",
+    "meaning_en": "with a lot of rain",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "It is rainy in autumn.",
+        "vi": "Trời mưa vào mùa thu."
+      }
+    ],
+    "word_family": [
+      "rain (n/v)",
+      "rainfall (n)"
+    ],
+    "collocations": [
+      "rainy day",
+      "rainy season",
+      "rainy weather"
+    ],
+    "synonyms": [
+      "wet"
+    ],
+    "antonyms": [
+      "dry",
+      "sunny"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "rainy heavily",
+        "correct": "raining heavily",
+        "explain_vi": "Khi muốn nói mưa to, dùng 'raining heavily' thay vì 'rainy heavily'."
+      }
+    ],
+    "grammar_patterns": [
+      "it + be + rainy"
+    ]
+  },
+  {
+    "word": "windy",
+    "phonetic": "/ˈwɪn.di/",
+    "meaning_vi": "gió",
+    "meaning_en": "with a lot of wind",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "It is windy today.",
+        "vi": "Hôm nay trời gió."
+      }
+    ],
+    "word_family": [
+      "wind (n)",
+      "windless (adj)"
+    ],
+    "collocations": [
+      "windy day",
+      "windy weather",
+      "windy city"
+    ],
+    "synonyms": [
+      "breezy"
+    ],
+    "antonyms": [
+      "calm",
+      "still"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "windy strong",
+        "correct": "very windy",
+        "explain_vi": "Dùng 'very windy' thay vì 'windy strong'."
+      }
+    ],
+    "grammar_patterns": [
+      "it + be + windy"
+    ]
+  },
+  {
+    "word": "cloudy",
+    "phonetic": "/ˈklaʊ.di/",
+    "meaning_vi": "nhiều mây",
+    "meaning_en": "covered with clouds",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "It is cloudy this morning.",
+        "vi": "Sáng nay trời nhiều mây."
+      }
+    ],
+    "word_family": [
+      "cloud (n)",
+      "cloudless (adj)"
+    ],
+    "collocations": [
+      "cloudy sky",
+      "cloudy weather",
+      "cloudy day"
+    ],
+    "synonyms": [
+      "overcast",
+      "grey"
+    ],
+    "antonyms": [
+      "clear",
+      "sunny"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "cloudy rain",
+        "correct": "cloudy and rainy",
+        "explain_vi": "Dùng 'and' để kết hợp hai tính từ."
+      }
+    ],
+    "grammar_patterns": [
+      "it + be + cloudy"
+    ]
+  },
+  {
+    "word": "summer",
+    "phonetic": "/ˈsʌm.ər/",
+    "meaning_vi": "mùa hè",
+    "meaning_en": "the warmest season of the year",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Summer is hot.",
+        "vi": "Mùa hè nóng."
+      }
+    ],
+    "word_family": [
+      "summery (adj)"
+    ],
+    "collocations": [
+      "in summer",
+      "summer vacation",
+      "summer weather"
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "winter"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "on summer",
+        "correct": "in summer",
+        "explain_vi": "Dùng giới từ 'in' với mùa, không dùng 'on'."
+      }
+    ],
+    "grammar_patterns": [
+      "in + summer"
+    ]
+  },
+  {
+    "word": "winter",
+    "phonetic": "/ˈwɪn.tər/",
+    "meaning_vi": "mùa đông",
+    "meaning_en": "the coldest season of the year",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Winter is cold.",
+        "vi": "Mùa đông lạnh."
+      }
+    ],
+    "word_family": [
+      "wintry (adj)"
+    ],
+    "collocations": [
+      "in winter",
+      "winter coat",
+      "winter weather"
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "summer"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "on winter",
+        "correct": "in winter",
+        "explain_vi": "Dùng giới từ 'in' với mùa."
+      }
+    ],
+    "grammar_patterns": [
+      "in + winter"
+    ]
+  },
+  {
+    "word": "spring",
+    "phonetic": "/sprɪŋ/",
+    "meaning_vi": "mùa xuân",
+    "meaning_en": "the season after winter and before summer",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Spring is warm.",
+        "vi": "Mùa xuân ấm áp."
+      }
+    ],
+    "word_family": [
+      "spring (v)",
+      "springtime (n)"
+    ],
+    "collocations": [
+      "in spring",
+      "spring flowers",
+      "spring weather"
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "autumn"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "on spring",
+        "correct": "in spring",
+        "explain_vi": "Dùng 'in' với mùa."
+      }
+    ],
+    "grammar_patterns": [
+      "in + spring"
+    ]
+  },
+  {
+    "word": "autumn",
+    "phonetic": "/ˈɔː.təm/",
+    "meaning_vi": "mùa thu",
+    "meaning_en": "the season after summer and before winter",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Autumn is cool.",
+        "vi": "Mùa thu mát mẻ."
+      }
+    ],
+    "word_family": [
+      "autumnal (adj)"
+    ],
+    "collocations": [
+      "in autumn",
+      "autumn leaves",
+      "autumn weather"
+    ],
+    "synonyms": [
+      "fall (US)"
+    ],
+    "antonyms": [
+      "spring"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "on autumn",
+        "correct": "in autumn",
+        "explain_vi": "Dùng 'in' với mùa."
+      }
+    ],
+    "grammar_patterns": [
+      "in + autumn"
+    ]
+  },
+  {
+    "word": "rain",
+    "phonetic": "/reɪn/",
+    "meaning_vi": "mưa",
+    "meaning_en": "water that falls from the sky in drops",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Rain is good for plants.",
+        "vi": "Mưa tốt cho cây cối."
+      }
+    ],
+    "word_family": [
+      "rain (v)",
+      "rainy (adj)",
+      "rainfall (n)"
+    ],
+    "collocations": [
+      "heavy rain",
+      "light rain",
+      "in the rain"
+    ],
+    "synonyms": [
+      "drizzle",
+      "shower"
+    ],
+    "antonyms": [
+      "sunshine"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "rain big",
+        "correct": "heavy rain",
+        "explain_vi": "Dùng 'heavy rain' thay vì 'big rain'."
+      }
+    ],
+    "grammar_patterns": [
+      "uncountable noun: some rain"
+    ]
+  },
+  {
+    "word": "snow",
+    "phonetic": "/snəʊ/",
+    "meaning_vi": "tuyết",
+    "meaning_en": "white frozen water that falls from the sky",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Snow is white.",
+        "vi": "Tuyết trắng."
+      }
+    ],
+    "word_family": [
+      "snow (v)",
+      "snowy (adj)",
+      "snowfall (n)"
+    ],
+    "collocations": [
+      "heavy snow",
+      "light snow",
+      "in the snow"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "a snow",
+        "correct": "snow (uncountable)",
+        "explain_vi": "Snow là danh từ không đếm được, không dùng 'a snow'."
+      }
+    ],
+    "grammar_patterns": [
+      "uncountable noun: some snow"
+    ]
+  },
+  {
+    "word": "wind",
+    "phonetic": "/wɪnd/",
+    "meaning_vi": "gió",
+    "meaning_en": "moving air",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The wind is strong.",
+        "vi": "Gió mạnh."
+      }
+    ],
+    "word_family": [
+      "wind (v)",
+      "windy (adj)",
+      "windless (adj)"
+    ],
+    "collocations": [
+      "strong wind",
+      "light wind",
+      "in the wind"
+    ],
+    "synonyms": [
+      "breeze",
+      "gust"
+    ],
+    "antonyms": [
+      "calm"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "wind big",
+        "correct": "strong wind",
+        "explain_vi": "Dùng 'strong wind' thay vì 'big wind'."
+      }
+    ],
+    "grammar_patterns": [
+      "countable/uncountable: a wind / some wind"
+    ]
+  },
+  {
+    "word": "sun",
+    "phonetic": "/sʌn/",
+    "meaning_vi": "mặt trời",
+    "meaning_en": "the star that gives light and heat to the Earth",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The sun is bright.",
+        "vi": "Mặt trời sáng."
+      }
+    ],
+    "word_family": [
+      "sunny (adj)",
+      "sunshine (n)"
+    ],
+    "collocations": [
+      "in the sun",
+      "the sun shines",
+      "under the sun"
+    ],
+    "synonyms": [
+      "sunshine"
+    ],
+    "antonyms": [
+      "moon"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "sun hot",
+        "correct": "the sun is hot",
+        "explain_vi": "Nhớ dùng mạo từ 'the' và động từ 'is'."
+      }
+    ],
+    "grammar_patterns": [
+      "the + sun (unique)"
+    ]
+  },
+  {
+    "word": "cloud",
+    "phonetic": "/klaʊd/",
+    "meaning_vi": "mây",
+    "meaning_en": "a white or grey mass in the sky",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "There are clouds in the sky.",
+        "vi": "Có mây trên bầu trời."
+      }
+    ],
+    "word_family": [
+      "cloudy (adj)",
+      "cloudless (adj)"
+    ],
+    "collocations": [
+      "white cloud",
+      "dark cloud",
+      "cloud cover"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "cloud many",
+        "correct": "many clouds",
+        "explain_vi": "Dùng 'many clouds' vì cloud đếm được."
+      }
+    ],
+    "grammar_patterns": [
+      "countable noun: a cloud, clouds"
+    ]
+  },
+  {
+    "word": "sky",
+    "phonetic": "/skaɪ/",
+    "meaning_vi": "bầu trời",
+    "meaning_en": "the space above the Earth",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The sky is blue.",
+        "vi": "Bầu trời xanh."
+      }
+    ],
+    "word_family": [
+      "skylight (n)",
+      "skyscraper (n)"
+    ],
+    "collocations": [
+      "blue sky",
+      "clear sky",
+      "in the sky"
+    ],
+    "synonyms": [
+      "heavens"
+    ],
+    "antonyms": [
+      "ground"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "sky is cloudy",
+        "correct": "the sky is cloudy",
+        "explain_vi": "Nhớ dùng mạo từ 'the'."
+      }
+    ],
+    "grammar_patterns": [
+      "the + sky (usually singular)"
+    ]
+  },
+  {
+    "word": "storm",
+    "phonetic": "/stɔːm/",
+    "meaning_vi": "bão",
+    "meaning_en": "a period of very bad weather with strong winds and rain",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "A storm is coming.",
+        "vi": "Một cơn bão đang đến."
+      }
+    ],
+    "word_family": [
+      "stormy (adj)",
+      "storm (v)"
+    ],
+    "collocations": [
+      "heavy storm",
+      "thunderstorm",
+      "storm warning"
+    ],
+    "synonyms": [
+      "tempest",
+      "cyclone"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "storm big",
+        "correct": "big storm",
+        "explain_vi": "Dùng 'big storm' thay vì 'storm big'."
+      }
+    ],
+    "grammar_patterns": [
+      "countable noun: a storm, storms"
+    ]
+  },
+  {
+    "word": "temperature",
+    "phonetic": "/ˈtem.prə.tʃər/",
+    "meaning_vi": "nhiệt độ",
+    "meaning_en": "how hot or cold something is",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The temperature is 30 degrees.",
+        "vi": "Nhiệt độ là 30 độ."
+      }
+    ],
+    "word_family": [
+      "temperate (adj)"
+    ],
+    "collocations": [
+      "high temperature",
+      "low temperature",
+      "room temperature"
+    ],
+    "synonyms": [
+      "heat",
+      "warmth"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "temperature hot",
+        "correct": "high temperature",
+        "explain_vi": "Dùng 'high temperature' thay vì 'temperature hot'."
+      }
+    ],
+    "grammar_patterns": [
+      "countable/uncountable: a temperature, some temperature"
+    ]
+  },
+  {
+    "word": "season",
+    "phonetic": "/ˈsiː.zən/",
+    "meaning_vi": "mùa",
+    "meaning_en": "one of the four periods of the year",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "There are four seasons.",
+        "vi": "Có bốn mùa."
+      }
+    ],
+    "word_family": [
+      "seasonal (adj)",
+      "season (v)"
+    ],
+    "collocations": [
+      "rainy season",
+      "dry season",
+      "holiday season"
+    ],
+    "synonyms": [
+      "time of year"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "in season summer",
+        "correct": "in summer",
+        "explain_vi": "Không cần 'season' khi đã nói tên mùa."
+      }
+    ],
+    "grammar_patterns": [
+      "countable noun: a season, seasons"
+    ]
+  },
+  {
+    "word": "fog",
+    "phonetic": "/fɒɡ/",
+    "meaning_vi": "sương mù",
+    "meaning_en": "a thick cloud of small water droplets near the ground",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "There is thick fog in the morning.",
+        "vi": "Có sương mù dày đặc vào buổi sáng."
+      },
+      {
+        "en": "The fog is gone by noon.",
+        "vi": "Sương mù tan vào buổi trưa."
+      }
+    ],
+    "word_family": [
+      "foggy (adj)"
+    ],
+    "collocations": [
+      "thick fog",
+      "heavy fog",
+      "fog rolls in"
+    ],
+    "synonyms": [
+      "mist"
+    ],
+    "antonyms": [
+      "clear sky"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I see foggy.",
+        "correct": "I see fog.",
+        "explain_vi": "Fog là danh từ, foggy là tính từ."
+      }
+    ],
+    "grammar_patterns": [
+      "there is + fog"
+    ]
+  },
+  {
+    "word": "ice",
+    "phonetic": "/aɪs/",
+    "meaning_vi": "băng",
+    "meaning_en": "frozen water",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The lake is covered with ice.",
+        "vi": "Hồ bị phủ đầy băng."
+      },
+      {
+        "en": "Ice melts in the sun.",
+        "vi": "Băng tan dưới ánh mặt trời."
+      }
+    ],
+    "word_family": [
+      "icy (adj)",
+      "iceberg (n)"
+    ],
+    "collocations": [
+      "black ice",
+      "ice sheet",
+      "ice cube"
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "water",
+      "steam"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "The ice is very cold.",
+        "correct": "Ice is very cold.",
+        "explain_vi": "Không dùng mạo từ 'the' khi nói chung."
+      }
+    ],
+    "grammar_patterns": [
+      "uncountable noun"
+    ]
+  },
+  {
+    "word": "frost",
+    "phonetic": "/frɒst/",
+    "meaning_vi": "sương giá",
+    "meaning_en": "a thin layer of ice on surfaces when it is cold",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "There is frost on the grass.",
+        "vi": "Có sương giá trên cỏ."
+      },
+      {
+        "en": "The car windows have frost.",
+        "vi": "Cửa kính xe có sương giá."
+      }
+    ],
+    "word_family": [
+      "frosty (adj)",
+      "frostbite (n)"
+    ],
+    "collocations": [
+      "ground frost",
+      "heavy frost",
+      "frost forms"
+    ],
+    "synonyms": [
+      "ice crystals"
+    ],
+    "antonyms": [
+      "dew"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "The frost is white.",
+        "correct": "Frost is white.",
+        "explain_vi": "Không dùng mạo từ khi nói chung."
+      }
+    ],
+    "grammar_patterns": [
+      "there is + frost"
+    ]
+  },
+  {
+    "word": "hail",
+    "phonetic": "/heɪl/",
+    "meaning_vi": "mưa đá",
+    "meaning_en": "small balls of ice that fall from the sky",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Hail damaged the crops.",
+        "vi": "Mưa đá làm hỏng mùa màng."
+      },
+      {
+        "en": "We had hail last night.",
+        "vi": "Chúng tôi có mưa đá tối qua."
+      }
+    ],
+    "word_family": [
+      "hailstorm (n)"
+    ],
+    "collocations": [
+      "heavy hail",
+      "hail stones",
+      "hail storm"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "It is hailing big.",
+        "correct": "It is hailing heavily.",
+        "explain_vi": "Dùng 'heavily' thay vì 'big'."
+      }
+    ],
+    "grammar_patterns": [
+      "uncountable noun; verb: It hails."
+    ]
+  },
+  {
+    "word": "thunder",
+    "phonetic": "/ˈθʌndər/",
+    "meaning_vi": "sấm",
+    "meaning_en": "the loud sound that comes after lightning",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I heard thunder in the distance.",
+        "vi": "Tôi nghe thấy sấm ở xa."
+      },
+      {
+        "en": "Thunder scares my dog.",
+        "vi": "Sấm làm con chó của tôi sợ."
+      }
+    ],
+    "word_family": [
+      "thunderstorm (n)",
+      "thunderous (adj)"
+    ],
+    "collocations": [
+      "loud thunder",
+      "thunder rolls",
+      "thunder clap"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Thunder is very noisy.",
+        "correct": "Thunder is very loud.",
+        "explain_vi": "Dùng 'loud' thay vì 'noisy'."
+      }
+    ],
+    "grammar_patterns": [
+      "uncountable noun; verb: It thunders."
+    ]
+  },
+  {
+    "word": "lightning",
+    "phonetic": "/ˈlaɪtnɪŋ/",
+    "meaning_vi": "chớp",
+    "meaning_en": "a bright flash of light in the sky during a storm",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Lightning struck a tree.",
+        "vi": "Sét đánh vào một cái cây."
+      },
+      {
+        "en": "I saw lightning in the sky.",
+        "vi": "Tôi thấy chớp trên bầu trời."
+      }
+    ],
+    "word_family": [
+      "lightning bolt (n)"
+    ],
+    "collocations": [
+      "lightning strike",
+      "flash of lightning",
+      "lightning storm"
+    ],
+    "synonyms": [
+      "bolt of lightning"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Lightning is dangerous.",
+        "correct": "Lightning is dangerous.",
+        "explain_vi": "Không có lỗi phổ biến, nhưng chú ý: 'lightning' không có 'e'."
+      }
+    ],
+    "grammar_patterns": [
+      "uncountable noun"
+    ]
+  },
+  {
+    "word": "breeze",
+    "phonetic": "/briːz/",
+    "meaning_vi": "gió nhẹ",
+    "meaning_en": "a gentle wind",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "A cool breeze is blowing.",
+        "vi": "Một cơn gió nhẹ mát đang thổi."
+      },
+      {
+        "en": "The breeze feels nice.",
+        "vi": "Gió nhẹ thật dễ chịu."
+      }
+    ],
+    "word_family": [
+      "breezy (adj)"
+    ],
+    "collocations": [
+      "cool breeze",
+      "gentle breeze",
+      "sea breeze"
+    ],
+    "synonyms": [
+      "gentle wind"
+    ],
+    "antonyms": [
+      "gale",
+      "storm"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "The breeze is blowing strong.",
+        "correct": "The breeze is blowing gently.",
+        "explain_vi": "Breeze là gió nhẹ, không dùng 'strong'."
+      }
+    ],
+    "grammar_patterns": [
+      "countable noun: a breeze"
+    ]
+  },
+  {
+    "word": "drizzle",
+    "phonetic": "/ˈdrɪzəl/",
+    "meaning_vi": "mưa phùn",
+    "meaning_en": "light rain falling in very fine drops",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "A light drizzle started falling.",
+        "vi": "Một cơn mưa phùn nhẹ bắt đầu rơi."
+      },
+      {
+        "en": "The drizzle lasted all morning.",
+        "vi": "Mưa phùn kéo dài cả buổi sáng."
+      }
+    ],
+    "word_family": [
+      "drizzly (adj)"
+    ],
+    "collocations": [
+      "light drizzle",
+      "drizzle falls",
+      "drizzle stops"
+    ],
+    "synonyms": [
+      "mizzle"
+    ],
+    "antonyms": [
+      "downpour"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "It is drizzling big.",
+        "correct": "It is drizzling lightly.",
+        "explain_vi": "Dùng 'lightly' thay vì 'big'."
+      }
+    ],
+    "grammar_patterns": [
+      "uncountable noun; verb: It drizzles."
+    ]
+  },
+  {
+    "word": "shower",
+    "phonetic": "/ˈʃaʊər/",
+    "meaning_vi": "mưa rào",
+    "meaning_en": "a short period of rain",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We had a heavy shower this afternoon.",
+        "vi": "Chúng tôi có một trận mưa rào lớn chiều nay."
+      },
+      {
+        "en": "Showers are expected later.",
+        "vi": "Dự báo có mưa rào sau đó."
+      }
+    ],
+    "word_family": [
+      "showery (adj)"
+    ],
+    "collocations": [
+      "heavy shower",
+      "light shower",
+      "scattered showers"
+    ],
+    "synonyms": [
+      "rain shower"
+    ],
+    "antonyms": [
+      "drought"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Shower is falling.",
+        "correct": "It is showering.",
+        "explain_vi": "Dùng động từ 'shower'."
+      }
+    ],
+    "grammar_patterns": [
+      "countable noun; verb: It showers."
+    ]
+  },
+  {
+    "word": "flood",
+    "phonetic": "/flʌd/",
+    "meaning_vi": "lũ lụt",
+    "meaning_en": "a large amount of water covering an area that is usually dry",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The flood destroyed many houses.",
+        "vi": "Lũ lụt phá hủy nhiều ngôi nhà."
+      },
+      {
+        "en": "Floods are common in this area.",
+        "vi": "Lũ lụt thường xảy ra ở khu vực này."
+      }
+    ],
+    "word_family": [
+      "flooding (n)",
+      "flooded (adj)"
+    ],
+    "collocations": [
+      "flash flood",
+      "flood water",
+      "flood damage"
+    ],
+    "synonyms": [
+      "inundation"
+    ],
+    "antonyms": [
+      "drought"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "The flood is very big.",
+        "correct": "The flood is severe.",
+        "explain_vi": "Dùng 'severe' thay vì 'big'."
+      }
+    ],
+    "grammar_patterns": [
+      "countable/uncountable noun"
+    ]
+  },
+  {
+    "word": "drought",
+    "phonetic": "/draʊt/",
+    "meaning_vi": "hạn hán",
+    "meaning_en": "a long period with little or no rain",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The drought caused water shortages.",
+        "vi": "Hạn hán gây ra thiếu nước."
+      },
+      {
+        "en": "Farmers suffer during a drought.",
+        "vi": "Nông dân chịu khổ trong thời kỳ hạn hán."
+      }
+    ],
+    "word_family": [
+      "drought-stricken (adj)"
+    ],
+    "collocations": [
+      "severe drought",
+      "drought conditions",
+      "drought ends"
+    ],
+    "synonyms": [
+      "dry spell"
+    ],
+    "antonyms": [
+      "flood"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Drought is long time no rain.",
+        "correct": "A drought is a long period without rain.",
+        "explain_vi": "Cấu trúc câu đúng."
+      }
+    ],
+    "grammar_patterns": [
+      "countable/uncountable noun"
+    ]
+  },
+  {
+    "word": "humid",
+    "phonetic": "/ˈhjuːmɪd/",
+    "meaning_vi": "ẩm ướt",
+    "meaning_en": "having a lot of moisture in the air",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "It is very humid today.",
+        "vi": "Hôm nay trời rất ẩm."
+      },
+      {
+        "en": "Humid weather makes me sweat.",
+        "vi": "Thời tiết ẩm khiến tôi đổ mồ hôi."
+      }
+    ],
+    "word_family": [
+      "humidity (n)"
+    ],
+    "collocations": [
+      "humid climate",
+      "humid air",
+      "hot and humid"
+    ],
+    "synonyms": [
+      "muggy",
+      "sticky"
+    ],
+    "antonyms": [
+      "dry"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I don't like humid weather because it is wet.",
+        "correct": "I don't like humid weather because it is muggy.",
+        "explain_vi": "Dùng 'muggy' thay vì 'wet'."
+      }
+    ],
+    "grammar_patterns": [
+      "it is + humid"
+    ]
+  },
+  {
+    "word": "dry",
+    "phonetic": "/draɪ/",
+    "meaning_vi": "khô ráo",
+    "meaning_en": "without water or moisture",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The weather is dry today.",
+        "vi": "Hôm nay thời tiết khô ráo."
+      },
+      {
+        "en": "My skin is dry in winter.",
+        "vi": "Da tôi bị khô vào mùa đông."
+      }
+    ],
+    "word_family": [
+      "dryness (n)",
+      "drought (n)"
+    ],
+    "collocations": [
+      "dry climate",
+      "dry air",
+      "dry season"
+    ],
+    "synonyms": [
+      "arid"
+    ],
+    "antonyms": [
+      "wet",
+      "humid"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "It is dry weather.",
+        "correct": "The weather is dry.",
+        "explain_vi": "Đặt tính từ sau 'is'."
+      }
+    ],
+    "grammar_patterns": [
+      "it is + dry"
+    ]
+  },
+  {
+    "word": "wet",
+    "phonetic": "/wet/",
+    "meaning_vi": "ẩm ướt",
+    "meaning_en": "covered with or containing liquid",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The ground is wet after the rain.",
+        "vi": "Mặt đất ẩm ướt sau cơn mưa."
+      },
+      {
+        "en": "I got wet in the shower.",
+        "vi": "Tôi bị ướt trong cơn mưa rào."
+      }
+    ],
+    "word_family": [
+      "wetness (n)"
+    ],
+    "collocations": [
+      "wet weather",
+      "wet season",
+      "get wet"
+    ],
+    "synonyms": [
+      "damp",
+      "moist"
+    ],
+    "antonyms": [
+      "dry"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "My clothes are wet because of rain.",
+        "correct": "My clothes are wet from the rain.",
+        "explain_vi": "Dùng 'from' thay vì 'because of'."
+      }
+    ],
+    "grammar_patterns": [
+      "it is + wet"
+    ]
+  },
+  {
+    "word": "chilly",
+    "phonetic": "/ˈtʃɪli/",
+    "meaning_vi": "se lạnh",
+    "meaning_en": "uncomfortably cold",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "It is chilly outside.",
+        "vi": "Bên ngoài trời se lạnh."
+      },
+      {
+        "en": "I feel chilly in the morning.",
+        "vi": "Tôi cảm thấy se lạnh vào buổi sáng."
+      }
+    ],
+    "word_family": [
+      "chill (n)",
+      "chilliness (n)"
+    ],
+    "collocations": [
+      "chilly wind",
+      "chilly morning",
+      "chilly weather"
+    ],
+    "synonyms": [
+      "cool",
+      "brisk"
+    ],
+    "antonyms": [
+      "warm",
+      "hot"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "It is chilly cold.",
+        "correct": "It is chilly.",
+        "explain_vi": "Chilly đã mang nghĩa lạnh, không cần thêm 'cold'."
+      }
+    ],
+    "grammar_patterns": [
+      "it is + chilly"
+    ]
+  },
+  {
+    "word": "warm",
+    "phonetic": "/wɔːrm/",
+    "meaning_vi": "ấm áp",
+    "meaning_en": "having a moderately high temperature",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The weather is warm today.",
+        "vi": "Hôm nay thời tiết ấm áp."
+      },
+      {
+        "en": "I like warm days.",
+        "vi": "Tôi thích những ngày ấm áp."
+      }
+    ],
+    "word_family": [
+      "warmth (n)",
+      "warming (n)"
+    ],
+    "collocations": [
+      "warm weather",
+      "warm climate",
+      "warm up"
+    ],
+    "synonyms": [
+      "mild",
+      "balmy"
+    ],
+    "antonyms": [
+      "cool",
+      "cold"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "It is warm hot.",
+        "correct": "It is warm.",
+        "explain_vi": "Warm không cần thêm 'hot'."
+      }
+    ],
+    "grammar_patterns": [
+      "it is + warm"
+    ]
+  },
+  {
+    "word": "cool",
+    "phonetic": "/kuːl/",
+    "meaning_vi": "mát mẻ",
+    "meaning_en": "having a low but not cold temperature",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The evening is cool.",
+        "vi": "Buổi tối mát mẻ."
+      },
+      {
+        "en": "A cool breeze is blowing.",
+        "vi": "Một cơn gió mát đang thổi."
+      }
+    ],
+    "word_family": [
+      "coolness (n)",
+      "cooling (adj)"
+    ],
+    "collocations": [
+      "cool weather",
+      "cool air",
+      "cool down"
+    ],
+    "synonyms": [
+      "refreshing"
+    ],
+    "antonyms": [
+      "warm"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "It is cool cold.",
+        "correct": "It is cool.",
+        "explain_vi": "Cool đã mang nghĩa mát, không cần thêm 'cold'."
+      }
+    ],
+    "grammar_patterns": [
+      "it is + cool"
+    ]
+  },
+  {
+    "word": "mild",
+    "phonetic": "/maɪld/",
+    "meaning_vi": "ôn hòa",
+    "meaning_en": "not very cold or hot; pleasant",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "We have mild weather in spring.",
+        "vi": "Chúng tôi có thời tiết ôn hòa vào mùa xuân."
+      },
+      {
+        "en": "It is mild today.",
+        "vi": "Hôm nay trời ôn hòa."
+      }
+    ],
+    "word_family": [
+      "mildness (n)"
+    ],
+    "collocations": [
+      "mild climate",
+      "mild winter",
+      "mild temperature"
+    ],
+    "synonyms": [
+      "temperate"
+    ],
+    "antonyms": [
+      "extreme"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "The weather is mild warm.",
+        "correct": "The weather is mild.",
+        "explain_vi": "Mild đã mang nghĩa ấm áp vừa phải."
+      }
+    ],
+    "grammar_patterns": [
+      "it is + mild"
+    ]
+  },
+  {
+    "word": "freezing",
+    "phonetic": "/ˈfriːzɪŋ/",
+    "meaning_vi": "đóng băng",
+    "meaning_en": "extremely cold; at or below 0°C",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "It is freezing outside.",
+        "vi": "Bên ngoài trời đóng băng."
+      },
+      {
+        "en": "I am freezing!",
+        "vi": "Tôi lạnh cóng!"
+      }
+    ],
+    "word_family": [
+      "freeze (v)",
+      "freezer (n)"
+    ],
+    "collocations": [
+      "freezing cold",
+      "freezing temperature",
+      "freezing point"
+    ],
+    "synonyms": [
+      "bitterly cold"
+    ],
+    "antonyms": [
+      "boiling"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "It is freezing cold.",
+        "correct": "It is freezing.",
+        "explain_vi": "Freezing đã mang nghĩa rất lạnh."
+      }
+    ],
+    "grammar_patterns": [
+      "it is + freezing"
+    ]
+  },
+  {
+    "word": "boiling",
+    "phonetic": "/ˈbɔɪlɪŋ/",
+    "meaning_vi": "nóng như đun sôi",
+    "meaning_en": "very hot",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "It is boiling outside.",
+        "vi": "Bên ngoài trời nóng như đun sôi."
+      },
+      {
+        "en": "I am boiling in this heat.",
+        "vi": "Tôi nóng như đun sôi trong cái nóng này."
+      }
+    ],
+    "word_family": [
+      "boil (v)",
+      "boiler (n)"
+    ],
+    "collocations": [
+      "boiling hot",
+      "boiling temperature",
+      "boiling weather"
+    ],
+    "synonyms": [
+      "scorching"
+    ],
+    "antonyms": [
+      "freezing"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "It is boiling hot.",
+        "correct": "It is boiling.",
+        "explain_vi": "Boiling đã mang nghĩa rất nóng."
+      }
+    ],
+    "grammar_patterns": [
+      "it is + boiling"
+    ]
+  }
+]

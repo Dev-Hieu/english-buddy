@@ -1,0 +1,2455 @@
+[
+  {
+    "word": "quantify",
+    "phonetic": "/ˈkwɒn.tɪ.faɪ/",
+    "meaning_vi": "định lượng",
+    "meaning_en": "to measure or express the amount of something",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "It is difficult to quantify the impact of the policy.",
+        "vi": "Thật khó để định lượng tác động của chính sách."
+      }
+    ],
+    "word_family": [
+      "quantifiable (adj)",
+      "quantification (n)",
+      "quantity (n)"
+    ],
+    "collocations": [
+      "quantify the effect",
+      "quantify the risk",
+      "quantify the benefits"
+    ],
+    "synonyms": [
+      "measure",
+      "calculate",
+      "determine"
+    ],
+    "antonyms": [
+      "qualify"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "quantify the number",
+        "correct": "quantify the amount",
+        "explain_vi": "'Number' dùng cho đếm được, 'amount' cho không đếm được."
+      }
+    ],
+    "grammar_patterns": [
+      "quantify + noun phrase"
+    ]
+  },
+  {
+    "word": "magnitude",
+    "phonetic": "/ˈmæɡ.nɪ.tjuːd/",
+    "meaning_vi": "độ lớn, tầm quan trọng",
+    "meaning_en": "the great size or extent of something",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The magnitude of the problem is enormous.",
+        "vi": "Mức độ nghiêm trọng của vấn đề là rất lớn."
+      }
+    ],
+    "word_family": [
+      "magnify (v)",
+      "magnitude (n)"
+    ],
+    "collocations": [
+      "order of magnitude",
+      "magnitude of the problem",
+      "magnitude of the earthquake"
+    ],
+    "synonyms": [
+      "scale",
+      "extent",
+      "size"
+    ],
+    "antonyms": [
+      "insignificance"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "the magnitude is big",
+        "correct": "the magnitude is large",
+        "explain_vi": "Dùng 'large' thay vì 'big' với magnitude."
+      }
+    ],
+    "grammar_patterns": [
+      "magnitude of + noun"
+    ]
+  },
+  {
+    "word": "parameter",
+    "phonetic": "/pəˈræm.ɪ.tər/",
+    "meaning_vi": "thông số, tham số",
+    "meaning_en": "a measurable factor that defines a system",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We need to define the parameters of the experiment.",
+        "vi": "Chúng ta cần xác định các tham số của thí nghiệm."
+      }
+    ],
+    "word_family": [
+      "parametric (adj)",
+      "parameterize (v)"
+    ],
+    "collocations": [
+      "key parameter",
+      "define a parameter",
+      "parameter value"
+    ],
+    "synonyms": [
+      "variable",
+      "factor",
+      "metric"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "parameter is a number",
+        "correct": "parameter is a variable",
+        "explain_vi": "Parameter không chỉ là số mà còn có thể là yếu tố."
+      }
+    ],
+    "grammar_patterns": [
+      "parameter of + noun",
+      "set parameters"
+    ]
+  },
+  {
+    "word": "fluctuation",
+    "phonetic": "/ˌflʌk.tʃuˈeɪ.ʃən/",
+    "meaning_vi": "sự dao động, biến động",
+    "meaning_en": "an irregular rising and falling in number or amount",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The fluctuation in stock prices is normal.",
+        "vi": "Sự biến động giá cổ phiếu là bình thường."
+      }
+    ],
+    "word_family": [
+      "fluctuate (v)",
+      "fluctuating (adj)"
+    ],
+    "collocations": [
+      "price fluctuation",
+      "market fluctuation",
+      "temperature fluctuation"
+    ],
+    "synonyms": [
+      "variation",
+      "instability",
+      "oscillation"
+    ],
+    "antonyms": [
+      "stability"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "fluctuation of price",
+        "correct": "fluctuation in price",
+        "explain_vi": "Giới từ 'in' thay vì 'of'."
+      }
+    ],
+    "grammar_patterns": [
+      "fluctuation in + noun"
+    ]
+  },
+  {
+    "word": "increment",
+    "phonetic": "/ˈɪŋ.krə.mənt/",
+    "meaning_vi": "sự tăng dần, lượng tăng",
+    "meaning_en": "an increase or addition, especially one of a series",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The salary increments are given annually.",
+        "vi": "Các khoản tăng lương được trao hàng năm."
+      }
+    ],
+    "word_family": [
+      "incremental (adj)",
+      "incrementally (adv)"
+    ],
+    "collocations": [
+      "small increment",
+      "annual increment",
+      "increment value"
+    ],
+    "synonyms": [
+      "increase",
+      "addition",
+      "rise"
+    ],
+    "antonyms": [
+      "decrement"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "increment of 10%",
+        "correct": "10% increment",
+        "explain_vi": "Thứ tự từ: '10% increment'."
+      }
+    ],
+    "grammar_patterns": [
+      "increment in + noun",
+      "increment of + number"
+    ]
+  },
+  {
+    "word": "discrete",
+    "phonetic": "/dɪˈskriːt/",
+    "meaning_vi": "rời rạc, riêng biệt",
+    "meaning_en": "individually separate and distinct",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The data is divided into discrete categories.",
+        "vi": "Dữ liệu được chia thành các danh mục riêng biệt."
+      }
+    ],
+    "word_family": [
+      "discreteness (n)",
+      "discretely (adv)"
+    ],
+    "collocations": [
+      "discrete variable",
+      "discrete units",
+      "discrete parts"
+    ],
+    "synonyms": [
+      "separate",
+      "individual",
+      "distinct"
+    ],
+    "antonyms": [
+      "continuous"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "discrete numbers",
+        "correct": "discrete values",
+        "explain_vi": "Dùng 'values' thay vì 'numbers'."
+      }
+    ],
+    "grammar_patterns": [
+      "discrete + noun"
+    ]
+  },
+  {
+    "word": "cumulative",
+    "phonetic": "/ˈkjuː.mjə.lə.tɪv/",
+    "meaning_vi": "tích lũy, cộng dồn",
+    "meaning_en": "increasing or growing by accumulation",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The cumulative effect of stress can be harmful.",
+        "vi": "Hiệu ứng tích lũy của căng thẳng có thể có hại."
+      }
+    ],
+    "word_family": [
+      "cumulate (v)",
+      "cumulation (n)"
+    ],
+    "collocations": [
+      "cumulative total",
+      "cumulative effect",
+      "cumulative frequency"
+    ],
+    "synonyms": [
+      "accumulated",
+      "aggregate",
+      "total"
+    ],
+    "antonyms": [
+      "distributive"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "cumulative sum",
+        "correct": "cumulative total",
+        "explain_vi": "'Total' phổ biến hơn 'sum'."
+      }
+    ],
+    "grammar_patterns": [
+      "cumulative + noun"
+    ]
+  },
+  {
+    "word": "approximation",
+    "phonetic": "/əˌprɒk.sɪˈmeɪ.ʃən/",
+    "meaning_vi": "sự xấp xỉ, gần đúng",
+    "meaning_en": "a value that is nearly but not exactly correct",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "This is only a rough approximation.",
+        "vi": "Đây chỉ là một sự xấp xỉ thô."
+      }
+    ],
+    "word_family": [
+      "approximate (adj/v)",
+      "approximately (adv)"
+    ],
+    "collocations": [
+      "rough approximation",
+      "good approximation",
+      "first approximation"
+    ],
+    "synonyms": [
+      "estimate",
+      "guess",
+      "rough calculation"
+    ],
+    "antonyms": [
+      "exact value"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "approximation of 10",
+        "correct": "approximation to 10",
+        "explain_vi": "Giới từ 'to'."
+      }
+    ],
+    "grammar_patterns": [
+      "approximation of/to + noun",
+      "by approximation"
+    ]
+  },
+  {
+    "word": "ratio",
+    "phonetic": "/ˈreɪ.ʃi.əʊ/",
+    "meaning_vi": "tỷ lệ, tỷ số",
+    "meaning_en": "the quantitative relation between two amounts",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The ratio of men to women is 2:1.",
+        "vi": "Tỷ lệ nam so với nữ là 2:1."
+      }
+    ],
+    "word_family": [
+      "ration (n)",
+      "rational (adj)"
+    ],
+    "collocations": [
+      "ratio of A to B",
+      "high ratio",
+      "low ratio"
+    ],
+    "synonyms": [
+      "proportion",
+      "rate",
+      "quotient"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "ratio between A and B",
+        "correct": "ratio of A to B",
+        "explain_vi": "Dùng 'of...to' thay vì 'between...and'."
+      }
+    ],
+    "grammar_patterns": [
+      "ratio of + noun + to + noun"
+    ]
+  },
+  {
+    "word": "dimension",
+    "phonetic": "/daɪˈmen.ʃən/",
+    "meaning_vi": "kích thước, chiều",
+    "meaning_en": "a measurable extent of some kind",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "What are the dimensions of the room?",
+        "vi": "Kích thước của căn phòng là bao nhiêu?"
+      }
+    ],
+    "word_family": [
+      "dimensional (adj)",
+      "dimensionless (adj)"
+    ],
+    "collocations": [
+      "third dimension",
+      "dimensions of",
+      "physical dimension"
+    ],
+    "synonyms": [
+      "size",
+      "measurement",
+      "extent"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "dimension of length",
+        "correct": "length dimension",
+        "explain_vi": "Thứ tự: 'length dimension'."
+      }
+    ],
+    "grammar_patterns": [
+      "dimension of + noun",
+      "in dimension"
+    ]
+  },
+  {
+    "word": "aggregate",
+    "phonetic": "/ˈæɡ.rɪ.ɡət/",
+    "meaning_vi": "tổng hợp, tổng cộng",
+    "meaning_en": "a whole formed by combining several elements",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The aggregate of all sales is impressive.",
+        "vi": "Tổng doanh số bán hàng rất ấn tượng."
+      }
+    ],
+    "word_family": [
+      "aggregation (n)",
+      "aggregate (adj/v)"
+    ],
+    "collocations": [
+      "in aggregate",
+      "aggregate demand",
+      "aggregate data"
+    ],
+    "synonyms": [
+      "total",
+      "sum",
+      "whole"
+    ],
+    "antonyms": [
+      "individual"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "aggregate of numbers",
+        "correct": "aggregate of values",
+        "explain_vi": "Dùng 'values' thay vì 'numbers'."
+      }
+    ],
+    "grammar_patterns": [
+      "aggregate of + noun",
+      "in the aggregate"
+    ]
+  },
+  {
+    "word": "precision",
+    "phonetic": "/prɪˈsɪʒ.ən/",
+    "meaning_vi": "độ chính xác, sự chính xác",
+    "meaning_en": "the quality of being exact and accurate",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The measurements were taken with great precision.",
+        "vi": "Các phép đo được thực hiện với độ chính xác cao."
+      }
+    ],
+    "word_family": [
+      "precise (adj)",
+      "precisely (adv)"
+    ],
+    "collocations": [
+      "high precision",
+      "precision instrument",
+      "with precision"
+    ],
+    "synonyms": [
+      "accuracy",
+      "exactness",
+      "fineness"
+    ],
+    "antonyms": [
+      "imprecision",
+      "inaccuracy"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "precision is high",
+        "correct": "precision is great",
+        "explain_vi": "'Great precision' phổ biến hơn."
+      }
+    ],
+    "grammar_patterns": [
+      "with precision",
+      "precision of + noun"
+    ]
+  },
+  {
+    "word": "calibration",
+    "phonetic": "/ˌkæl.ɪˈbreɪ.ʃən/",
+    "meaning_vi": "sự hiệu chuẩn",
+    "meaning_en": "the process of setting a measuring instrument's accuracy",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The scale requires calibration.",
+        "vi": "Cân cần được hiệu chuẩn."
+      }
+    ],
+    "word_family": [
+      "calibrate (v)",
+      "calibrator (n)"
+    ],
+    "collocations": [
+      "calibration curve",
+      "perform calibration",
+      "calibration standard"
+    ],
+    "synonyms": [
+      "adjustment",
+      "standardization",
+      "tuning"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "calibrate the number",
+        "correct": "calibrate the instrument",
+        "explain_vi": "'Calibrate' dùng với thiết bị."
+      }
+    ],
+    "grammar_patterns": [
+      "calibration of + noun"
+    ]
+  },
+  {
+    "word": "derivative",
+    "phonetic": "/dɪˈrɪv.ə.tɪv/",
+    "meaning_vi": "đạo hàm, phái sinh",
+    "meaning_en": "something derived from another source; in calculus, the rate of change",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The derivative of x^2 is 2x.",
+        "vi": "Đạo hàm của x^2 là 2x."
+      }
+    ],
+    "word_family": [
+      "derive (v)",
+      "derivation (n)"
+    ],
+    "collocations": [
+      "derivative of",
+      "first derivative",
+      "derivative market"
+    ],
+    "synonyms": [
+      "derived function",
+      "differential coefficient"
+    ],
+    "antonyms": [
+      "integral"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "derivative of function",
+        "correct": "derivative of the function",
+        "explain_vi": "Cần mạo từ 'the'."
+      }
+    ],
+    "grammar_patterns": [
+      "derivative of + noun"
+    ]
+  },
+  {
+    "word": "integral",
+    "phonetic": "/ˈɪn.tɪ.ɡrəl/",
+    "meaning_vi": "tích phân, không thể thiếu",
+    "meaning_en": "the whole; in calculus, the area under a curve",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The integral of 2x is x^2.",
+        "vi": "Tích phân của 2x là x^2."
+      }
+    ],
+    "word_family": [
+      "integrate (v)",
+      "integration (n)"
+    ],
+    "collocations": [
+      "integral of",
+      "definite integral",
+      "integral part"
+    ],
+    "synonyms": [
+      "essential",
+      "indispensable"
+    ],
+    "antonyms": [
+      "derivative"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "integral is essential",
+        "correct": "integral part",
+        "explain_vi": "'Integral' thường dùng với 'part'."
+      }
+    ],
+    "grammar_patterns": [
+      "integral of + noun",
+      "integral to"
+    ]
+  },
+  {
+    "word": "exponential",
+    "phonetic": "/ˌek.spəˈnen.ʃəl/",
+    "meaning_vi": "hàm mũ, tăng theo cấp số nhân",
+    "meaning_en": "relating to a mathematical function that increases rapidly",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The population grew exponentially.",
+        "vi": "Dân số tăng theo cấp số nhân."
+      }
+    ],
+    "word_family": [
+      "exponent (n)",
+      "exponentially (adv)"
+    ],
+    "collocations": [
+      "exponential growth",
+      "exponential function",
+      "exponential increase"
+    ],
+    "synonyms": [
+      "rapid",
+      "explosive"
+    ],
+    "antonyms": [
+      "linear",
+      "logarithmic"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "exponential number",
+        "correct": "exponential function",
+        "explain_vi": "'Exponential' thường đi với 'growth' hoặc 'function'."
+      }
+    ],
+    "grammar_patterns": [
+      "exponential + noun"
+    ]
+  },
+  {
+    "word": "logarithmic",
+    "phonetic": "/ˌlɒɡ.əˈrɪð.mɪk/",
+    "meaning_vi": "logarit, thuộc về logarit",
+    "meaning_en": "relating to a logarithm; increasing slowly",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The scale is logarithmic.",
+        "vi": "Thang đo là logarit."
+      }
+    ],
+    "word_family": [
+      "logarithm (n)",
+      "logarithmically (adv)"
+    ],
+    "collocations": [
+      "logarithmic scale",
+      "logarithmic function",
+      "logarithmic growth"
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "exponential"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "logarithmic number",
+        "correct": "logarithmic scale",
+        "explain_vi": "'Logarithmic' thường với 'scale'."
+      }
+    ],
+    "grammar_patterns": [
+      "logarithmic + noun"
+    ]
+  },
+  {
+    "word": "scalar",
+    "phonetic": "/ˈskeɪ.lər/",
+    "meaning_vi": "vô hướng",
+    "meaning_en": "a quantity having only magnitude, not direction",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Speed is a scalar, while velocity is a vector.",
+        "vi": "Tốc độ là vô hướng, trong khi vận tốc là vectơ."
+      }
+    ],
+    "word_family": [
+      "scalar (adj)"
+    ],
+    "collocations": [
+      "scalar quantity",
+      "scalar field",
+      "scalar product"
+    ],
+    "synonyms": [
+      "magnitude"
+    ],
+    "antonyms": [
+      "vector"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "scalar number",
+        "correct": "scalar quantity",
+        "explain_vi": "'Scalar' là tính từ, dùng với 'quantity'."
+      }
+    ],
+    "grammar_patterns": [
+      "scalar + noun"
+    ]
+  },
+  {
+    "word": "vector",
+    "phonetic": "/ˈvek.tər/",
+    "meaning_vi": "vectơ",
+    "meaning_en": "a quantity having direction as well as magnitude",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Force is a vector.",
+        "vi": "Lực là một vectơ."
+      }
+    ],
+    "word_family": [
+      "vectorial (adj)",
+      "vectorize (v)"
+    ],
+    "collocations": [
+      "vector quantity",
+      "vector space",
+      "vector sum"
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "scalar"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "vector has size",
+        "correct": "vector has magnitude",
+        "explain_vi": "Dùng 'magnitude' thay vì 'size'."
+      }
+    ],
+    "grammar_patterns": [
+      "vector + noun"
+    ]
+  },
+  {
+    "word": "metric",
+    "phonetic": "/ˈmet.rɪk/",
+    "meaning_vi": "hệ mét, thước đo",
+    "meaning_en": "a system or standard of measurement",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We need a metric to evaluate performance.",
+        "vi": "Chúng ta cần một thước đo để đánh giá hiệu suất."
+      }
+    ],
+    "word_family": [
+      "metrics (n)",
+      "metric (adj)"
+    ],
+    "collocations": [
+      "key metric",
+      "performance metric",
+      "metric system"
+    ],
+    "synonyms": [
+      "measure",
+      "standard",
+      "benchmark"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "metric of success",
+        "correct": "metric for success",
+        "explain_vi": "Giới từ 'for'."
+      }
+    ],
+    "grammar_patterns": [
+      "metric for + noun",
+      "metric of + noun"
+    ]
+  },
+  {
+    "word": "approximate",
+    "phonetic": "/əˈprɒk.sɪ.mət/",
+    "meaning_vi": "xấp xỉ, gần đúng",
+    "meaning_en": "almost exact or correct; not completely accurate",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "We need an approximate value for the calculation.",
+        "vi": "Chúng ta cần một giá trị xấp xỉ cho phép tính."
+      },
+      {
+        "en": "The approximate time of arrival is 3 PM.",
+        "vi": "Thời gian đến xấp xỉ là 3 giờ chiều."
+      }
+    ],
+    "word_family": [
+      "approximate (v)",
+      "approximation (n)",
+      "approximately (adv)"
+    ],
+    "collocations": [
+      "approximate value",
+      "approximate number",
+      "approximate date"
+    ],
+    "synonyms": [
+      "rough",
+      "estimated",
+      "near"
+    ],
+    "antonyms": [
+      "exact",
+      "precise"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "approximate number of people",
+        "correct": "approximate number of people",
+        "explain_vi": "Từ này đã đúng; tránh nhầm với 'approximately' (trạng từ)."
+      }
+    ],
+    "grammar_patterns": [
+      "approximate + noun",
+      "be + approximate"
+    ]
+  },
+  {
+    "word": "coefficient",
+    "phonetic": "/ˌkoʊ.ɪˈfɪʃ.ənt/",
+    "meaning_vi": "hệ số",
+    "meaning_en": "a number or symbol multiplied with a variable in an algebraic expression",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The coefficient of x in 3x is 3.",
+        "vi": "Hệ số của x trong 3x là 3."
+      },
+      {
+        "en": "We need to calculate the correlation coefficient.",
+        "vi": "Chúng ta cần tính hệ số tương quan."
+      }
+    ],
+    "word_family": [
+      "coefficient (n)"
+    ],
+    "collocations": [
+      "correlation coefficient",
+      "coefficient of determination",
+      "coefficient of friction"
+    ],
+    "synonyms": [
+      "factor",
+      "multiplier"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "co-efficient",
+        "correct": "coefficient",
+        "explain_vi": "Không có dấu gạch nối; viết liền."
+      }
+    ],
+    "grammar_patterns": [
+      "coefficient + of + noun",
+      "adjective + coefficient"
+    ]
+  },
+  {
+    "word": "constant",
+    "phonetic": "/ˈkɒn.stənt/",
+    "meaning_vi": "hằng số",
+    "meaning_en": "a value that does not change",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Pi is a mathematical constant.",
+        "vi": "Pi là một hằng số toán học."
+      },
+      {
+        "en": "The speed of light is a constant.",
+        "vi": "Tốc độ ánh sáng là một hằng số."
+      }
+    ],
+    "word_family": [
+      "constant (adj)",
+      "constantly (adv)",
+      "constancy (n)"
+    ],
+    "collocations": [
+      "mathematical constant",
+      "physical constant",
+      "constant value"
+    ],
+    "synonyms": [
+      "fixed value",
+      "invariant"
+    ],
+    "antonyms": [
+      "variable"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "hằng số constant",
+        "correct": "constant",
+        "explain_vi": "Không cần thêm 'hằng số' vì đã là noun."
+      }
+    ],
+    "grammar_patterns": [
+      "the + constant + of + noun",
+      "be + constant"
+    ]
+  },
+  {
+    "word": "variable",
+    "phonetic": "/ˈveə.ri.ə.bəl/",
+    "meaning_vi": "biến số",
+    "meaning_en": "a symbol representing a quantity that can change",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Let x be the independent variable.",
+        "vi": "Gọi x là biến độc lập."
+      },
+      {
+        "en": "Temperature is a variable in the experiment.",
+        "vi": "Nhiệt độ là một biến trong thí nghiệm."
+      }
+    ],
+    "word_family": [
+      "variable (adj)",
+      "variability (n)",
+      "vary (v)"
+    ],
+    "collocations": [
+      "independent variable",
+      "dependent variable",
+      "random variable"
+    ],
+    "synonyms": [
+      "parameter",
+      "factor"
+    ],
+    "antonyms": [
+      "constant"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "biến số variable",
+        "correct": "variable",
+        "explain_vi": "Không lặp từ; 'variable' đã là 'biến số'."
+      }
+    ],
+    "grammar_patterns": [
+      "adjective + variable",
+      "variable + of + noun"
+    ]
+  },
+  {
+    "word": "measurement",
+    "phonetic": "/ˈmeʒ.ə.mənt/",
+    "meaning_vi": "sự đo lường, kích thước",
+    "meaning_en": "the act or result of measuring",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Accurate measurement is essential in science.",
+        "vi": "Đo lường chính xác là cần thiết trong khoa học."
+      },
+      {
+        "en": "The measurements of the room are 5 by 4 meters.",
+        "vi": "Kích thước của căn phòng là 5 nhân 4 mét."
+      }
+    ],
+    "word_family": [
+      "measure (v)",
+      "measurable (adj)",
+      "measurably (adv)"
+    ],
+    "collocations": [
+      "take measurements",
+      "accurate measurement",
+      "measurement error"
+    ],
+    "synonyms": [
+      "dimension",
+      "size",
+      "assessment"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "measurement of length",
+        "correct": "measurement of length",
+        "explain_vi": "Cụm từ này đã đúng; tránh dùng 'measure' thay cho 'measurement'."
+      }
+    ],
+    "grammar_patterns": [
+      "measurement + of + noun",
+      "adjective + measurement"
+    ]
+  },
+  {
+    "word": "deviation",
+    "phonetic": "/ˌdiː.viˈeɪ.ʃən/",
+    "meaning_vi": "độ lệch",
+    "meaning_en": "the amount by which a value differs from a standard or average",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The standard deviation measures the spread of data.",
+        "vi": "Độ lệch chuẩn đo lường sự phân tán của dữ liệu."
+      },
+      {
+        "en": "Any deviation from the plan must be reported.",
+        "vi": "Bất kỳ sự sai lệch nào so với kế hoạch đều phải được báo cáo."
+      }
+    ],
+    "word_family": [
+      "deviate (v)",
+      "deviant (adj)"
+    ],
+    "collocations": [
+      "standard deviation",
+      "mean deviation",
+      "deviation from"
+    ],
+    "synonyms": [
+      "divergence",
+      "departure",
+      "anomaly"
+    ],
+    "antonyms": [
+      "conformity"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "deviation of the mean",
+        "correct": "deviation from the mean",
+        "explain_vi": "Dùng 'from' chứ không phải 'of'."
+      }
+    ],
+    "grammar_patterns": [
+      "deviation + from + noun",
+      "adjective + deviation"
+    ]
+  },
+  {
+    "word": "variance",
+    "phonetic": "/ˈveə.ri.əns/",
+    "meaning_vi": "phương sai",
+    "meaning_en": "the expectation of the squared deviation of a random variable from its mean",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Variance is a measure of dispersion.",
+        "vi": "Phương sai là một thước đo độ phân tán."
+      },
+      {
+        "en": "The variance of the data set is high.",
+        "vi": "Phương sai của tập dữ liệu cao."
+      }
+    ],
+    "word_family": [
+      "vary (v)",
+      "variable (adj)",
+      "variant (n)"
+    ],
+    "collocations": [
+      "sample variance",
+      "population variance",
+      "variance analysis"
+    ],
+    "synonyms": [
+      "dispersion",
+      "spread"
+    ],
+    "antonyms": [
+      "uniformity"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "variance of",
+        "correct": "variance of",
+        "explain_vi": "Thường dùng 'variance of' nhưng trong thống kê cần chính xác."
+      }
+    ],
+    "grammar_patterns": [
+      "variance + of + noun",
+      "adjective + variance"
+    ]
+  },
+  {
+    "word": "correlation",
+    "phonetic": "/ˌkɒr.əˈleɪ.ʃən/",
+    "meaning_vi": "sự tương quan",
+    "meaning_en": "a mutual relationship or connection between two variables",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "There is a strong correlation between smoking and lung cancer.",
+        "vi": "Có mối tương quan mạnh giữa hút thuốc và ung thư phổi."
+      },
+      {
+        "en": "Correlation does not imply causation.",
+        "vi": "Tương quan không đồng nghĩa với nhân quả."
+      }
+    ],
+    "word_family": [
+      "correlate (v)",
+      "correlative (adj)"
+    ],
+    "collocations": [
+      "correlation coefficient",
+      "positive correlation",
+      "negative correlation"
+    ],
+    "synonyms": [
+      "association",
+      "relationship",
+      "link"
+    ],
+    "antonyms": [
+      "independence"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "correlation between A to B",
+        "correct": "correlation between A and B",
+        "explain_vi": "Dùng 'between...and' chứ không phải 'to'."
+      }
+    ],
+    "grammar_patterns": [
+      "correlation + between + noun and noun",
+      "correlation + with + noun"
+    ]
+  },
+  {
+    "word": "probability",
+    "phonetic": "/ˌprɒb.əˈbɪl.ə.ti/",
+    "meaning_vi": "xác suất",
+    "meaning_en": "the likelihood of an event occurring",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The probability of rain is 30%.",
+        "vi": "Xác suất có mưa là 30%."
+      },
+      {
+        "en": "Probability theory is fundamental to statistics.",
+        "vi": "Lý thuyết xác suất là nền tảng của thống kê."
+      }
+    ],
+    "word_family": [
+      "probable (adj)",
+      "probably (adv)"
+    ],
+    "collocations": [
+      "probability distribution",
+      "conditional probability",
+      "probability of"
+    ],
+    "synonyms": [
+      "likelihood",
+      "chance",
+      "odds"
+    ],
+    "antonyms": [
+      "improbability"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "probability to happen",
+        "correct": "probability of happening",
+        "explain_vi": "Dùng 'of + V-ing' chứ không phải 'to V'."
+      }
+    ],
+    "grammar_patterns": [
+      "probability + of + noun/gerund",
+      "adjective + probability"
+    ]
+  },
+  {
+    "word": "distribution",
+    "phonetic": "/ˌdɪs.trɪˈbjuː.ʃən/",
+    "meaning_vi": "phân phối, phân bố",
+    "meaning_en": "the way in which something is spread over an area or among a group",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The normal distribution is symmetric.",
+        "vi": "Phân phối chuẩn là đối xứng."
+      },
+      {
+        "en": "We studied the distribution of income across the population.",
+        "vi": "Chúng tôi nghiên cứu sự phân bố thu nhập trong dân số."
+      }
+    ],
+    "word_family": [
+      "distribute (v)",
+      "distributive (adj)"
+    ],
+    "collocations": [
+      "frequency distribution",
+      "probability distribution",
+      "distribution of"
+    ],
+    "synonyms": [
+      "dispersion",
+      "spread",
+      "allocation"
+    ],
+    "antonyms": [
+      "concentration"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "distribution of",
+        "correct": "distribution of",
+        "explain_vi": "Cụm từ đúng; chú ý giới từ 'of'."
+      }
+    ],
+    "grammar_patterns": [
+      "distribution + of + noun",
+      "adjective + distribution"
+    ]
+  },
+  {
+    "word": "frequency",
+    "phonetic": "/ˈfriː.kwən.si/",
+    "meaning_vi": "tần số, tần suất",
+    "meaning_en": "the rate at which something occurs or is repeated",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The frequency of the wave is 50 Hz.",
+        "vi": "Tần số của sóng là 50 Hz."
+      },
+      {
+        "en": "We recorded the frequency of each word.",
+        "vi": "Chúng tôi ghi lại tần suất của mỗi từ."
+      }
+    ],
+    "word_family": [
+      "frequent (adj)",
+      "frequently (adv)"
+    ],
+    "collocations": [
+      "frequency distribution",
+      "high frequency",
+      "low frequency"
+    ],
+    "synonyms": [
+      "rate",
+      "occurrence",
+      "prevalence"
+    ],
+    "antonyms": [
+      "infrequency"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "frequency of occurrence",
+        "correct": "frequency of occurrence",
+        "explain_vi": "Cụm từ đúng; tránh nhầm với 'frequent'."
+      }
+    ],
+    "grammar_patterns": [
+      "frequency + of + noun",
+      "adjective + frequency"
+    ]
+  },
+  {
+    "word": "magnitude",
+    "phonetic": "/ˈmæɡ.nɪ.tjuːd/",
+    "meaning_vi": "độ lớn, cường độ",
+    "meaning_en": "the great size or extent of something",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The earthquake had a magnitude of 7.0.",
+        "vi": "Trận động đất có độ lớn 7.0."
+      },
+      {
+        "en": "We cannot underestimate the magnitude of the problem.",
+        "vi": "Chúng ta không thể đánh giá thấp mức độ nghiêm trọng của vấn đề."
+      }
+    ],
+    "word_family": [
+      "magnify (v)",
+      "magnificent (adj)"
+    ],
+    "collocations": [
+      "order of magnitude",
+      "magnitude of",
+      "absolute magnitude"
+    ],
+    "synonyms": [
+      "size",
+      "scale",
+      "extent"
+    ],
+    "antonyms": [
+      "smallness"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "magnitude of the earthquake",
+        "correct": "magnitude of the earthquake",
+        "explain_vi": "Cụm từ đúng; 'magnitude' thường đi với 'of'."
+      }
+    ],
+    "grammar_patterns": [
+      "magnitude + of + noun",
+      "adjective + magnitude"
+    ]
+  },
+  {
+    "word": "ratio",
+    "phonetic": "/ˈreɪ.ʃi.oʊ/",
+    "meaning_vi": "tỷ lệ, tỷ số",
+    "meaning_en": "the quantitative relation between two amounts showing the number of times one contains the other",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The ratio of boys to girls is 2:1.",
+        "vi": "Tỷ lệ nam so với nữ là 2:1."
+      },
+      {
+        "en": "We calculated the ratio of profit to cost.",
+        "vi": "Chúng tôi tính tỷ lệ lợi nhuận trên chi phí."
+      }
+    ],
+    "word_family": [
+      "rate (n)",
+      "rational (adj)"
+    ],
+    "collocations": [
+      "ratio of",
+      "in the ratio",
+      "ratio to"
+    ],
+    "synonyms": [
+      "proportion",
+      "rate",
+      "quotient"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "ratio between A to B",
+        "correct": "ratio of A to B",
+        "explain_vi": "Dùng 'of A to B' chứ không phải 'between...to'."
+      }
+    ],
+    "grammar_patterns": [
+      "ratio + of + noun + to + noun",
+      "adjective + ratio"
+    ]
+  },
+  {
+    "word": "proportion",
+    "phonetic": "/prəˈpɔːr.ʃən/",
+    "meaning_vi": "tỷ lệ, phần",
+    "meaning_en": "a part, share, or number considered in comparative relation to a whole",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "A large proportion of the budget is spent on education.",
+        "vi": "Một tỷ lệ lớn ngân sách được chi cho giáo dục."
+      },
+      {
+        "en": "The proportion of women in the workforce has increased.",
+        "vi": "Tỷ lệ phụ nữ trong lực lượng lao động đã tăng."
+      }
+    ],
+    "word_family": [
+      "proportional (adj)",
+      "proportionate (adj)",
+      "proportionally (adv)"
+    ],
+    "collocations": [
+      "in proportion to",
+      "out of proportion",
+      "proportion of"
+    ],
+    "synonyms": [
+      "ratio",
+      "percentage",
+      "share"
+    ],
+    "antonyms": [
+      "disproportion"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "proportion of ... compared to",
+        "correct": "proportion of ... relative to",
+        "explain_vi": "Dùng 'relative to' hoặc 'in proportion to'."
+      }
+    ],
+    "grammar_patterns": [
+      "proportion + of + noun",
+      "in + proportion + to + noun"
+    ]
+  },
+  {
+    "word": "average",
+    "phonetic": "/ˈæv.ər.ɪdʒ/",
+    "meaning_vi": "trung bình",
+    "meaning_en": "a number expressing the central or typical value in a set of data",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The average of the numbers is 5.",
+        "vi": "Trung bình của các số là 5."
+      },
+      {
+        "en": "On average, we receive 10 emails per day.",
+        "vi": "Trung bình, chúng tôi nhận 10 email mỗi ngày."
+      }
+    ],
+    "word_family": [
+      "average (adj)",
+      "average (v)"
+    ],
+    "collocations": [
+      "on average",
+      "average of",
+      "above average"
+    ],
+    "synonyms": [
+      "mean",
+      "median",
+      "norm"
+    ],
+    "antonyms": [
+      "extreme"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "average of 5 numbers",
+        "correct": "average of 5 numbers",
+        "explain_vi": "Cụm từ đúng; chú ý 'of'."
+      }
+    ],
+    "grammar_patterns": [
+      "average + of + noun",
+      "on + average"
+    ]
+  },
+  {
+    "word": "median",
+    "phonetic": "/ˈmiː.di.ən/",
+    "meaning_vi": "số trung vị",
+    "meaning_en": "the middle value in a sorted list of numbers",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The median of the data set is 7.",
+        "vi": "Số trung vị của tập dữ liệu là 7."
+      },
+      {
+        "en": "Median income is often used instead of average.",
+        "vi": "Thu nhập trung vị thường được dùng thay cho trung bình."
+      }
+    ],
+    "word_family": [
+      "median (adj)"
+    ],
+    "collocations": [
+      "median value",
+      "median income",
+      "median age"
+    ],
+    "synonyms": [
+      "middle value"
+    ],
+    "antonyms": [
+      "mode",
+      "mean"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "median of",
+        "correct": "median of",
+        "explain_vi": "Cụm từ đúng; 'median' thường đi với 'of'."
+      }
+    ],
+    "grammar_patterns": [
+      "median + of + noun",
+      "the + median"
+    ]
+  },
+  {
+    "word": "mode",
+    "phonetic": "/moʊd/",
+    "meaning_vi": "mốt (giá trị xuất hiện nhiều nhất)",
+    "meaning_en": "the value that appears most frequently in a data set",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The mode of the numbers is 3.",
+        "vi": "Mốt của các số là 3."
+      },
+      {
+        "en": "In statistics, mode is a measure of central tendency.",
+        "vi": "Trong thống kê, mốt là một thước đo xu hướng trung tâm."
+      }
+    ],
+    "word_family": [
+      "modal (adj)"
+    ],
+    "collocations": [
+      "mode of",
+      "the mode"
+    ],
+    "synonyms": [
+      "modal value"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "mode of the data",
+        "correct": "mode of the data",
+        "explain_vi": "Cụm từ đúng; 'mode' thường đi với 'of'."
+      }
+    ],
+    "grammar_patterns": [
+      "mode + of + noun",
+      "the + mode"
+    ]
+  },
+  {
+    "word": "range",
+    "phonetic": "/reɪndʒ/",
+    "meaning_vi": "khoảng, phạm vi",
+    "meaning_en": "the difference between the highest and lowest values in a set",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The range of the data is 10.",
+        "vi": "Khoảng của dữ liệu là 10."
+      },
+      {
+        "en": "Prices range from $10 to $100.",
+        "vi": "Giá dao động từ 10 đến 100 đô la."
+      }
+    ],
+    "word_family": [
+      "range (v)",
+      "ranging (adj)"
+    ],
+    "collocations": [
+      "range of",
+      "wide range",
+      "range from"
+    ],
+    "synonyms": [
+      "span",
+      "scope",
+      "extent"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "range between 10 to 20",
+        "correct": "range from 10 to 20",
+        "explain_vi": "Dùng 'from...to' chứ không phải 'between...to'."
+      }
+    ],
+    "grammar_patterns": [
+      "range + of + noun",
+      "range + from + noun + to + noun"
+    ]
+  },
+  {
+    "word": "interval",
+    "phonetic": "/ˈɪn.tə.vəl/",
+    "meaning_vi": "khoảng (thời gian hoặc không gian)",
+    "meaning_en": "a space between two things; a period of time between events",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The interval between the two events is 5 minutes.",
+        "vi": "Khoảng thời gian giữa hai sự kiện là 5 phút."
+      },
+      {
+        "en": "Confidence interval is used in statistics.",
+        "vi": "Khoảng tin cậy được sử dụng trong thống kê."
+      }
+    ],
+    "word_family": [
+      "intervene (v)",
+      "intermittent (adj)"
+    ],
+    "collocations": [
+      "confidence interval",
+      "interval of",
+      "at intervals"
+    ],
+    "synonyms": [
+      "gap",
+      "space",
+      "period"
+    ],
+    "antonyms": [
+      "continuity"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "interval between A to B",
+        "correct": "interval between A and B",
+        "explain_vi": "Dùng 'between...and' chứ không phải 'to'."
+      }
+    ],
+    "grammar_patterns": [
+      "interval + between + noun and noun",
+      "interval + of + noun"
+    ]
+  },
+  {
+    "word": "accuracy",
+    "phonetic": "/ˈæk.jʊ.rə.si/",
+    "meaning_vi": "độ chính xác",
+    "meaning_en": "the quality of being correct or precise",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The accuracy of the measurement is crucial.",
+        "vi": "Độ chính xác của phép đo là rất quan trọng."
+      },
+      {
+        "en": "We need to ensure high accuracy in our calculations.",
+        "vi": "Chúng ta cần đảm bảo độ chính xác cao trong tính toán."
+      }
+    ],
+    "word_family": [
+      "accurate (adj)",
+      "accurately (adv)"
+    ],
+    "collocations": [
+      "high accuracy",
+      "accuracy of",
+      "degree of accuracy"
+    ],
+    "synonyms": [
+      "precision",
+      "exactness",
+      "correctness"
+    ],
+    "antonyms": [
+      "inaccuracy"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "accuracy of the data",
+        "correct": "accuracy of the data",
+        "explain_vi": "Cụm từ đúng; chú ý 'of'."
+      }
+    ],
+    "grammar_patterns": [
+      "accuracy + of + noun",
+      "adjective + accuracy"
+    ]
+  },
+  {
+    "word": "asymptotic",
+    "phonetic": "/ˌæsɪmˈtɒtɪk/",
+    "meaning_vi": "tiệm cận",
+    "meaning_en": "relating to a line that a curve approaches but never touches",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The function has an asymptotic behavior at infinity.",
+        "vi": "Hàm số có hành vi tiệm cận ở vô cực."
+      }
+    ],
+    "word_family": [
+      "asymptote (n)",
+      "asymptotically (adv)"
+    ],
+    "collocations": [
+      "asymptotic behavior",
+      "asymptotic analysis",
+      "asymptotic expansion"
+    ],
+    "synonyms": [
+      "approaching",
+      "limiting"
+    ],
+    "antonyms": [
+      "divergent"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "asymtotic",
+        "correct": "asymptotic",
+        "explain_vi": "Dễ viết sai chính tả, thiếu chữ 'p'."
+      }
+    ],
+    "grammar_patterns": [
+      "asymptotic + noun"
+    ]
+  },
+  {
+    "word": "calibrate",
+    "phonetic": "/ˈkælɪbreɪt/",
+    "meaning_vi": "hiệu chuẩn",
+    "meaning_en": "to mark or adjust the scale of a measuring instrument",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "The technician calibrated the thermometer.",
+        "vi": "Kỹ thuật viên đã hiệu chuẩn nhiệt kế."
+      }
+    ],
+    "word_family": [
+      "calibration (n)",
+      "calibrator (n)"
+    ],
+    "collocations": [
+      "calibrate an instrument",
+      "calibrate a device",
+      "calibrate against a standard"
+    ],
+    "synonyms": [
+      "adjust",
+      "standardize"
+    ],
+    "antonyms": [
+      "misalign"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "calibate",
+        "correct": "calibrate",
+        "explain_vi": "Thiếu chữ 'r' trong từ."
+      }
+    ],
+    "grammar_patterns": [
+      "calibrate + noun",
+      "calibrate + to + value"
+    ]
+  },
+  {
+    "word": "cardinal",
+    "phonetic": "/ˈkɑːrdɪnəl/",
+    "meaning_vi": "cơ bản, chính yếu; (toán) số lượng",
+    "meaning_en": "fundamental; (of numbers) denoting quantity",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The cardinal numbers are one, two, three.",
+        "vi": "Các số cơ bản là một, hai, ba."
+      }
+    ],
+    "word_family": [
+      "cardinality (n)"
+    ],
+    "collocations": [
+      "cardinal number",
+      "cardinal rule",
+      "cardinal direction"
+    ],
+    "synonyms": [
+      "primary",
+      "fundamental"
+    ],
+    "antonyms": [
+      "ordinal",
+      "secondary"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "cardial",
+        "correct": "cardinal",
+        "explain_vi": "Dễ nhầm với 'cardial' (tim), thiếu 'n'."
+      }
+    ],
+    "grammar_patterns": [
+      "cardinal + noun"
+    ]
+  },
+  {
+    "word": "congruent",
+    "phonetic": "/ˈkɒŋɡruənt/",
+    "meaning_vi": "tương đồng, đồng dạng",
+    "meaning_en": "identical in form; corresponding in character",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The two triangles are congruent.",
+        "vi": "Hai tam giác đó đồng dạng."
+      }
+    ],
+    "word_family": [
+      "congruence (n)",
+      "congruently (adv)"
+    ],
+    "collocations": [
+      "congruent figures",
+      "congruent shapes",
+      "congruent modulo"
+    ],
+    "synonyms": [
+      "identical",
+      "matching"
+    ],
+    "antonyms": [
+      "incongruent",
+      "dissimilar"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "congruent with",
+        "correct": "congruent to",
+        "explain_vi": "Trong hình học, dùng 'congruent to' thay vì 'with'."
+      }
+    ],
+    "grammar_patterns": [
+      "congruent to + noun"
+    ]
+  },
+  {
+    "word": "contiguous",
+    "phonetic": "/kənˈtɪɡjuəs/",
+    "meaning_vi": "liền kề, tiếp giáp",
+    "meaning_en": "sharing a common border; touching",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The 48 contiguous states of the US.",
+        "vi": "48 tiểu bang liền kề của Hoa Kỳ."
+      }
+    ],
+    "word_family": [
+      "contiguity (n)",
+      "contiguously (adv)"
+    ],
+    "collocations": [
+      "contiguous area",
+      "contiguous region",
+      "contiguous memory"
+    ],
+    "synonyms": [
+      "adjacent",
+      "neighboring"
+    ],
+    "antonyms": [
+      "discontiguous",
+      "separate"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "contigous",
+        "correct": "contiguous",
+        "explain_vi": "Thiếu chữ 'u' sau 'g'."
+      }
+    ],
+    "grammar_patterns": [
+      "contiguous + noun",
+      "contiguous to + noun"
+    ]
+  },
+  {
+    "word": "convergent",
+    "phonetic": "/kənˈvɜːrdʒənt/",
+    "meaning_vi": "hội tụ",
+    "meaning_en": "tending to move toward a common point",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The series is convergent.",
+        "vi": "Chuỗi số hội tụ."
+      }
+    ],
+    "word_family": [
+      "converge (v)",
+      "convergence (n)"
+    ],
+    "collocations": [
+      "convergent series",
+      "convergent evolution",
+      "convergent boundary"
+    ],
+    "synonyms": [
+      "converging",
+      "meeting"
+    ],
+    "antonyms": [
+      "divergent"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "convergent series",
+        "correct": "convergent series",
+        "explain_vi": "Không có lỗi phổ biến nhưng chú ý phát âm."
+      }
+    ],
+    "grammar_patterns": [
+      "convergent + noun"
+    ]
+  },
+  {
+    "word": "curvilinear",
+    "phonetic": "/ˌkɜːrvɪˈlɪniər/",
+    "meaning_vi": "đường cong",
+    "meaning_en": "contained by or consisting of a curved line",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The graph shows a curvilinear relationship.",
+        "vi": "Đồ thị cho thấy mối quan hệ đường cong."
+      }
+    ],
+    "word_family": [
+      "curvilinearly (adv)"
+    ],
+    "collocations": [
+      "curvilinear motion",
+      "curvilinear coordinate",
+      "curvilinear regression"
+    ],
+    "synonyms": [
+      "curved",
+      "bent"
+    ],
+    "antonyms": [
+      "rectilinear",
+      "straight"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "curvilinear",
+        "correct": "curvilinear",
+        "explain_vi": "Không có lỗi phổ biến."
+      }
+    ],
+    "grammar_patterns": [
+      "curvilinear + noun"
+    ]
+  },
+  {
+    "word": "derivative",
+    "phonetic": "/dɪˈrɪvətɪv/",
+    "meaning_vi": "đạo hàm; phái sinh",
+    "meaning_en": "a measure of how a function changes as its input changes",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The derivative of x^2 is 2x.",
+        "vi": "Đạo hàm của x^2 là 2x."
+      }
+    ],
+    "word_family": [
+      "derive (v)",
+      "derivation (n)"
+    ],
+    "collocations": [
+      "take the derivative",
+      "first derivative",
+      "partial derivative"
+    ],
+    "synonyms": [
+      "differential"
+    ],
+    "antonyms": [
+      "integral"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "derivate",
+        "correct": "derivative",
+        "explain_vi": "Dùng 'derivative' thay vì 'derivate'."
+      }
+    ],
+    "grammar_patterns": [
+      "derivative of + noun"
+    ]
+  },
+  {
+    "word": "diameter",
+    "phonetic": "/daɪˈæmɪtər/",
+    "meaning_vi": "đường kính",
+    "meaning_en": "a straight line passing from side to side through the center of a circle",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The diameter of the circle is 10 cm.",
+        "vi": "Đường kính của hình tròn là 10 cm."
+      }
+    ],
+    "word_family": [
+      "diametrical (adj)",
+      "diametrically (adv)"
+    ],
+    "collocations": [
+      "diameter of",
+      "measure the diameter",
+      "outer diameter"
+    ],
+    "synonyms": [
+      "width",
+      "span"
+    ],
+    "antonyms": [
+      "radius"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "diametre",
+        "correct": "diameter",
+        "explain_vi": "Nhầm lẫn giữa Anh-Anh và Anh-Mỹ; dùng 'diameter'."
+      }
+    ],
+    "grammar_patterns": [
+      "the diameter of + noun"
+    ]
+  },
+  {
+    "word": "discrete",
+    "phonetic": "/dɪˈskriːt/",
+    "meaning_vi": "rời rạc, riêng lẻ",
+    "meaning_en": "individually separate and distinct",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "Discrete data can only take certain values.",
+        "vi": "Dữ liệu rời rạc chỉ có thể nhận các giá trị nhất định."
+      }
+    ],
+    "word_family": [
+      "discreteness (n)",
+      "discretely (adv)"
+    ],
+    "collocations": [
+      "discrete variable",
+      "discrete mathematics",
+      "discrete component"
+    ],
+    "synonyms": [
+      "separate",
+      "distinct"
+    ],
+    "antonyms": [
+      "continuous"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "discrete (nhầm với 'discreet')",
+        "correct": "discrete",
+        "explain_vi": "Phân biệt 'discrete' (rời rạc) và 'discreet' (kín đáo)."
+      }
+    ],
+    "grammar_patterns": [
+      "discrete + noun"
+    ]
+  },
+  {
+    "word": "echelon",
+    "phonetic": "/ˈeʃəlɒn/",
+    "meaning_vi": "cấp bậc; đội hình thang",
+    "meaning_en": "a level or rank in an organization, a profession, or society",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She reached the upper echelons of management.",
+        "vi": "Cô ấy đạt đến cấp quản lý cao nhất."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "upper echelons",
+      "lower echelons",
+      "echelon formation"
+    ],
+    "synonyms": [
+      "tier",
+      "rank"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "echelon (phát âm sai)",
+        "correct": "/ˈeʃəlɒn/",
+        "explain_vi": "Phát âm âm 'sh' thay vì 'ch'."
+      }
+    ],
+    "grammar_patterns": [
+      "echelon of + noun"
+    ]
+  },
+  {
+    "word": "ellipsoid",
+    "phonetic": "/ɪˈlɪpsɔɪd/",
+    "meaning_vi": "hình elipxoit",
+    "meaning_en": "a three-dimensional shape like an elongated sphere",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The Earth is an oblate ellipsoid.",
+        "vi": "Trái Đất là một hình elipxoit dẹt."
+      }
+    ],
+    "word_family": [
+      "ellipsoidal (adj)"
+    ],
+    "collocations": [
+      "ellipsoid shape",
+      "ellipsoid of revolution",
+      "ellipsoid model"
+    ],
+    "synonyms": [
+      "spheroid"
+    ],
+    "antonyms": [
+      "sphere"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "ellipsoid (phát âm sai)",
+        "correct": "/ɪˈlɪpsɔɪd/",
+        "explain_vi": "Nhấn âm thứ hai."
+      }
+    ],
+    "grammar_patterns": [
+      "an ellipsoid"
+    ]
+  },
+  {
+    "word": "extrapolate",
+    "phonetic": "/ɪkˈstræpəleɪt/",
+    "meaning_vi": "ngoại suy",
+    "meaning_en": "to estimate or conclude something by extending known information",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "We can extrapolate future trends from current data.",
+        "vi": "Chúng ta có thể ngoại suy xu hướng tương lai từ dữ liệu hiện tại."
+      }
+    ],
+    "word_family": [
+      "extrapolation (n)",
+      "extrapolative (adj)"
+    ],
+    "collocations": [
+      "extrapolate from",
+      "extrapolate to",
+      "extrapolate data"
+    ],
+    "synonyms": [
+      "project",
+      "infer"
+    ],
+    "antonyms": [
+      "interpolate"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "extrapolate (thiếu 'o')",
+        "correct": "extrapolate",
+        "explain_vi": "Viết đúng với 'o' sau 'p'."
+      }
+    ],
+    "grammar_patterns": [
+      "extrapolate + from + noun",
+      "extrapolate + to + noun"
+    ]
+  },
+  {
+    "word": "fractional",
+    "phonetic": "/ˈfrækʃənəl/",
+    "meaning_vi": "phân số; nhỏ, không đáng kể",
+    "meaning_en": "relating to a fraction; very small in amount",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "There was a fractional increase in sales.",
+        "vi": "Doanh số tăng một phần nhỏ."
+      }
+    ],
+    "word_family": [
+      "fraction (n)",
+      "fractionally (adv)"
+    ],
+    "collocations": [
+      "fractional part",
+      "fractional reserve",
+      "fractional ownership"
+    ],
+    "synonyms": [
+      "partial",
+      "tiny"
+    ],
+    "antonyms": [
+      "whole",
+      "entire"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "fractional (nhầm với 'fraction')",
+        "correct": "fractional",
+        "explain_vi": "Là tính từ, không phải danh từ."
+      }
+    ],
+    "grammar_patterns": [
+      "fractional + noun"
+    ]
+  },
+  {
+    "word": "geometric",
+    "phonetic": "/ˌdʒiːəˈmetrɪk/",
+    "meaning_vi": "hình học",
+    "meaning_en": "relating to geometry; characterized by simple geometric forms",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The design uses geometric patterns.",
+        "vi": "Thiết kế sử dụng các họa tiết hình học."
+      }
+    ],
+    "word_family": [
+      "geometry (n)",
+      "geometrically (adv)"
+    ],
+    "collocations": [
+      "geometric shape",
+      "geometric progression",
+      "geometric mean"
+    ],
+    "synonyms": [
+      "geometrical"
+    ],
+    "antonyms": [
+      "organic",
+      "freeform"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "geometric (phát âm sai 'geo')",
+        "correct": "/ˌdʒiːəˈmetrɪk/",
+        "explain_vi": "Phát âm 'geo' như 'jee-oh'."
+      }
+    ],
+    "grammar_patterns": [
+      "geometric + noun"
+    ]
+  },
+  {
+    "word": "infinity",
+    "phonetic": "/ɪnˈfɪnɪti/",
+    "meaning_vi": "vô cực, vô hạn",
+    "meaning_en": "the state of being endless or unlimited",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The concept of infinity is hard to grasp.",
+        "vi": "Khái niệm vô cực khó nắm bắt."
+      }
+    ],
+    "word_family": [
+      "infinite (adj)",
+      "infinitely (adv)"
+    ],
+    "collocations": [
+      "to infinity",
+      "infinity symbol",
+      "infinity and beyond"
+    ],
+    "synonyms": [
+      "eternity",
+      "endlessness"
+    ],
+    "antonyms": [
+      "finity",
+      "limit"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "infinity (nhầm với 'infiniti')",
+        "correct": "infinity",
+        "explain_vi": "Viết đúng với 'y' ở cuối."
+      }
+    ],
+    "grammar_patterns": [
+      "infinity of + noun"
+    ]
+  },
+  {
+    "word": "integral",
+    "phonetic": "/ˈɪntɪɡrəl/",
+    "meaning_vi": "tích phân; thiết yếu",
+    "meaning_en": "necessary to make a whole complete; of or denoted by an integer",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "She is an integral part of the team.",
+        "vi": "Cô ấy là một phần thiết yếu của đội."
+      }
+    ],
+    "word_family": [
+      "integrate (v)",
+      "integration (n)"
+    ],
+    "collocations": [
+      "integral part",
+      "integral calculus",
+      "integral equation"
+    ],
+    "synonyms": [
+      "essential",
+      "fundamental"
+    ],
+    "antonyms": [
+      "peripheral",
+      "extraneous"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "integral (phát âm sai)",
+        "correct": "/ˈɪntɪɡrəl/",
+        "explain_vi": "Nhấn âm đầu."
+      }
+    ],
+    "grammar_patterns": [
+      "integral + to + noun",
+      "integral + noun"
+    ]
+  },
+  {
+    "word": "interpolate",
+    "phonetic": "/ɪnˈtɜːrpəleɪt/",
+    "meaning_vi": "nội suy",
+    "meaning_en": "to insert something between fixed points; to estimate a value within known data",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "We interpolated missing data points.",
+        "vi": "Chúng tôi đã nội suy các điểm dữ liệu bị thiếu."
+      }
+    ],
+    "word_family": [
+      "interpolation (n)",
+      "interpolative (adj)"
+    ],
+    "collocations": [
+      "interpolate between",
+      "interpolate data",
+      "interpolate values"
+    ],
+    "synonyms": [
+      "insert",
+      "estimate"
+    ],
+    "antonyms": [
+      "extrapolate"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "interpolate (thiếu 'o')",
+        "correct": "interpolate",
+        "explain_vi": "Viết đúng với 'o' sau 'p'."
+      }
+    ],
+    "grammar_patterns": [
+      "interpolate + between + noun"
+    ]
+  },
+  {
+    "word": "inverse",
+    "phonetic": "/ɪnˈvɜːrs/",
+    "meaning_vi": "nghịch đảo, đảo ngược",
+    "meaning_en": "opposite in order, nature, or effect",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "Multiplication and division are inverse operations.",
+        "vi": "Nhân và chia là các phép toán nghịch đảo."
+      }
+    ],
+    "word_family": [
+      "inversely (adv)",
+      "inversion (n)"
+    ],
+    "collocations": [
+      "inverse relationship",
+      "inverse function",
+      "inverse proportion"
+    ],
+    "synonyms": [
+      "opposite",
+      "reverse"
+    ],
+    "antonyms": [
+      "direct"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "inverse (phát âm sai 'in-verse')",
+        "correct": "/ɪnˈvɜːrs/",
+        "explain_vi": "Nhấn âm thứ hai."
+      }
+    ],
+    "grammar_patterns": [
+      "inverse + noun",
+      "inverse of + noun"
+    ]
+  },
+  {
+    "word": "multivariate",
+    "phonetic": "/ˌmʌltɪˈveəriɪt/",
+    "meaning_vi": "đa biến",
+    "meaning_en": "involving multiple variables",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "Multivariate analysis is used in statistics.",
+        "vi": "Phân tích đa biến được sử dụng trong thống kê."
+      }
+    ],
+    "word_family": [
+      "multivariable (adj)"
+    ],
+    "collocations": [
+      "multivariate analysis",
+      "multivariate data",
+      "multivariate regression"
+    ],
+    "synonyms": [
+      "multivariable"
+    ],
+    "antonyms": [
+      "univariate"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "multivariate (thiếu 'i')",
+        "correct": "multivariate",
+        "explain_vi": "Viết đúng với 'i' sau 'r'."
+      }
+    ],
+    "grammar_patterns": [
+      "multivariate + noun"
+    ]
+  }
+]

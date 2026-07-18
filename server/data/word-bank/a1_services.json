@@ -1,0 +1,1447 @@
+[
+  {
+    "word": "water",
+    "phonetic": "/ˈwɔː.tər/",
+    "meaning_vi": "nước",
+    "meaning_en": "a clear liquid used for drinking",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I drink water every day.",
+        "vi": "Tôi uống nước mỗi ngày."
+      }
+    ],
+    "word_family": [
+      "water (v)"
+    ],
+    "collocations": [
+      "drink water",
+      "bottled water",
+      "tap water"
+    ],
+    "synonyms": [
+      "H2O"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I want water cold.",
+        "correct": "I want cold water.",
+        "explain_vi": "Tính từ đứng trước danh từ."
+      }
+    ],
+    "grammar_patterns": [
+      "uncountable noun, no article"
+    ]
+  },
+  {
+    "word": "food",
+    "phonetic": "/fuːd/",
+    "meaning_vi": "thức ăn",
+    "meaning_en": "things that people eat",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The food is good.",
+        "vi": "Thức ăn ngon."
+      }
+    ],
+    "word_family": [
+      "feed (v)"
+    ],
+    "collocations": [
+      "eat food",
+      "buy food",
+      "delicious food"
+    ],
+    "synonyms": [
+      "meal"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I like foods.",
+        "correct": "I like food.",
+        "explain_vi": "Food thường là danh từ không đếm được."
+      }
+    ],
+    "grammar_patterns": [
+      "uncountable noun"
+    ]
+  },
+  {
+    "word": "money",
+    "phonetic": "/ˈmʌn.i/",
+    "meaning_vi": "tiền",
+    "meaning_en": "coins or paper used to buy things",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I need money.",
+        "vi": "Tôi cần tiền."
+      }
+    ],
+    "word_family": [
+      "monetary (adj)"
+    ],
+    "collocations": [
+      "spend money",
+      "save money",
+      "pay money"
+    ],
+    "synonyms": [
+      "cash"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have many money.",
+        "correct": "I have a lot of money.",
+        "explain_vi": "Money là danh từ không đếm được."
+      }
+    ],
+    "grammar_patterns": [
+      "uncountable noun"
+    ]
+  },
+  {
+    "word": "help",
+    "phonetic": "/help/",
+    "meaning_vi": "giúp đỡ",
+    "meaning_en": "to do something for someone",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "Can you help me?",
+        "vi": "Bạn có thể giúp tôi không?"
+      }
+    ],
+    "word_family": [
+      "help (n)",
+      "helpful (adj)"
+    ],
+    "collocations": [
+      "help someone",
+      "ask for help",
+      "need help"
+    ],
+    "synonyms": [
+      "assist"
+    ],
+    "antonyms": [
+      "hinder"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Help me do it.",
+        "correct": "Help me to do it.",
+        "explain_vi": "Có thể dùng 'help + object + to V' hoặc 'help + object + V'."
+      }
+    ],
+    "grammar_patterns": [
+      "help + object + (to) verb"
+    ]
+  },
+  {
+    "word": "service",
+    "phonetic": "/ˈsɜː.vɪs/",
+    "meaning_vi": "dịch vụ",
+    "meaning_en": "work done for others",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The service is fast.",
+        "vi": "Dịch vụ nhanh."
+      }
+    ],
+    "word_family": [
+      "serve (v)",
+      "servant (n)"
+    ],
+    "collocations": [
+      "customer service",
+      "room service",
+      "good service"
+    ],
+    "synonyms": [
+      "assistance"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "This service is not good.",
+        "correct": "This service is not good.",
+        "explain_vi": "Không có lỗi phổ biến."
+      }
+    ],
+    "grammar_patterns": [
+      "countable/uncountable noun"
+    ]
+  },
+  {
+    "word": "price",
+    "phonetic": "/praɪs/",
+    "meaning_vi": "giá",
+    "meaning_en": "the amount of money to buy something",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "What is the price?",
+        "vi": "Giá bao nhiêu?"
+      }
+    ],
+    "word_family": [
+      "priceless (adj)",
+      "pricing (n)"
+    ],
+    "collocations": [
+      "low price",
+      "high price",
+      "price tag"
+    ],
+    "synonyms": [
+      "cost"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "How much price?",
+        "correct": "What is the price?",
+        "explain_vi": "Dùng 'what' thay vì 'how much' với price."
+      }
+    ],
+    "grammar_patterns": [
+      "the price of something"
+    ]
+  },
+  {
+    "word": "shop",
+    "phonetic": "/ʃɒp/",
+    "meaning_vi": "cửa hàng",
+    "meaning_en": "a place where you buy things",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I go to the shop.",
+        "vi": "Tôi đi đến cửa hàng."
+      }
+    ],
+    "word_family": [
+      "shopping (n)",
+      "shopper (n)"
+    ],
+    "collocations": [
+      "shop assistant",
+      "shop window",
+      "coffee shop"
+    ],
+    "synonyms": [
+      "store"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I shop food.",
+        "correct": "I buy food.",
+        "explain_vi": "Shop là danh từ, mua hàng dùng 'buy'."
+      }
+    ],
+    "grammar_patterns": [
+      "go to the shop"
+    ]
+  },
+  {
+    "word": "buy",
+    "phonetic": "/baɪ/",
+    "meaning_vi": "mua",
+    "meaning_en": "to get something by paying money",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "I buy milk.",
+        "vi": "Tôi mua sữa."
+      }
+    ],
+    "word_family": [
+      "buyer (n)",
+      "buying (n)"
+    ],
+    "collocations": [
+      "buy something",
+      "buy from",
+      "buy for"
+    ],
+    "synonyms": [
+      "purchase"
+    ],
+    "antonyms": [
+      "sell"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I buy a bread.",
+        "correct": "I buy bread.",
+        "explain_vi": "Bread là danh từ không đếm được."
+      }
+    ],
+    "grammar_patterns": [
+      "buy + object"
+    ]
+  },
+  {
+    "word": "sell",
+    "phonetic": "/sel/",
+    "meaning_vi": "bán",
+    "meaning_en": "to give something for money",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "They sell clothes.",
+        "vi": "Họ bán quần áo."
+      }
+    ],
+    "word_family": [
+      "seller (n)",
+      "sale (n)"
+    ],
+    "collocations": [
+      "sell something",
+      "sell at",
+      "sell for"
+    ],
+    "synonyms": [
+      "vend"
+    ],
+    "antonyms": [
+      "buy"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I sell my car for cheap.",
+        "correct": "I sell my car cheaply.",
+        "explain_vi": "Dùng trạng từ cheaply."
+      }
+    ],
+    "grammar_patterns": [
+      "sell + object"
+    ]
+  },
+  {
+    "word": "pay",
+    "phonetic": "/peɪ/",
+    "meaning_vi": "trả tiền",
+    "meaning_en": "to give money for something",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "I pay the bill.",
+        "vi": "Tôi trả hóa đơn."
+      }
+    ],
+    "word_family": [
+      "payment (n)",
+      "payer (n)"
+    ],
+    "collocations": [
+      "pay for",
+      "pay cash",
+      "pay by card"
+    ],
+    "synonyms": [
+      "settle"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I pay the dinner.",
+        "correct": "I pay for the dinner.",
+        "explain_vi": "Pay for + đối tượng."
+      }
+    ],
+    "grammar_patterns": [
+      "pay + for + object"
+    ]
+  },
+  {
+    "word": "bill",
+    "phonetic": "/bɪl/",
+    "meaning_vi": "hóa đơn",
+    "meaning_en": "a piece of paper that shows what you owe",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The bill is high.",
+        "vi": "Hóa đơn cao."
+      }
+    ],
+    "word_family": [
+      "bill (v)"
+    ],
+    "collocations": [
+      "pay the bill",
+      "bill of sale",
+      "electricity bill"
+    ],
+    "synonyms": [
+      "invoice"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have a bill.",
+        "correct": "I have a bill.",
+        "explain_vi": "Không có lỗi phổ biến."
+      }
+    ],
+    "grammar_patterns": [
+      "the bill for something"
+    ]
+  },
+  {
+    "word": "order",
+    "phonetic": "/ˈɔː.dər/",
+    "meaning_vi": "gọi món",
+    "meaning_en": "to ask for food or a product",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "I order coffee.",
+        "vi": "Tôi gọi cà phê."
+      }
+    ],
+    "word_family": [
+      "order (n)",
+      "ordering (n)"
+    ],
+    "collocations": [
+      "order food",
+      "order online",
+      "place an order"
+    ],
+    "synonyms": [
+      "request"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I order a coffee.",
+        "correct": "I order coffee.",
+        "explain_vi": "Cà phê là danh từ không đếm được, nhưng 'a coffee' cũng chấp nhận được."
+      }
+    ],
+    "grammar_patterns": [
+      "order + object"
+    ]
+  },
+  {
+    "word": "menu",
+    "phonetic": "/ˈmen.juː/",
+    "meaning_vi": "thực đơn",
+    "meaning_en": "a list of food and drinks",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Can I see the menu?",
+        "vi": "Tôi có thể xem thực đơn không?"
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "look at the menu",
+      "menu item",
+      "set menu"
+    ],
+    "synonyms": [
+      "bill of fare"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I want menu.",
+        "correct": "I want the menu.",
+        "explain_vi": "Cần mạo từ 'the'."
+      }
+    ],
+    "grammar_patterns": [
+      "the menu"
+    ]
+  },
+  {
+    "word": "table",
+    "phonetic": "/ˈteɪ.bəl/",
+    "meaning_vi": "bàn",
+    "meaning_en": "a piece of furniture with a flat top",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We sit at the table.",
+        "vi": "Chúng tôi ngồi ở bàn."
+      }
+    ],
+    "word_family": [
+      "table (v)"
+    ],
+    "collocations": [
+      "table for two",
+      "table number",
+      "book a table"
+    ],
+    "synonyms": [
+      "desk"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I sit on the table.",
+        "correct": "I sit at the table.",
+        "explain_vi": "Dùng 'at' cho bàn ăn."
+      }
+    ],
+    "grammar_patterns": [
+      "at the table"
+    ]
+  },
+  {
+    "word": "room",
+    "phonetic": "/ruːm/",
+    "meaning_vi": "phòng",
+    "meaning_en": "a part of a building with walls",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I need a room.",
+        "vi": "Tôi cần một phòng."
+      }
+    ],
+    "word_family": [
+      "roomy (adj)"
+    ],
+    "collocations": [
+      "hotel room",
+      "single room",
+      "room service"
+    ],
+    "synonyms": [
+      "chamber"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I want a room.",
+        "correct": "I want a room.",
+        "explain_vi": "Không có lỗi phổ biến."
+      }
+    ],
+    "grammar_patterns": [
+      "a room with a view"
+    ]
+  },
+  {
+    "word": "key",
+    "phonetic": "/kiː/",
+    "meaning_vi": "chìa khóa",
+    "meaning_en": "a metal object to open a lock",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Here is your key.",
+        "vi": "Đây là chìa khóa của bạn."
+      }
+    ],
+    "word_family": [
+      "key (adj)",
+      "key (v)"
+    ],
+    "collocations": [
+      "room key",
+      "car key",
+      "key card"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have key.",
+        "correct": "I have a key.",
+        "explain_vi": "Cần mạo từ."
+      }
+    ],
+    "grammar_patterns": [
+      "the key to something"
+    ]
+  },
+  {
+    "word": "check",
+    "phonetic": "/tʃek/",
+    "meaning_vi": "kiểm tra",
+    "meaning_en": "to look at something to see if it is correct",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "Please check the bill.",
+        "vi": "Vui lòng kiểm tra hóa đơn."
+      }
+    ],
+    "word_family": [
+      "check (n)",
+      "checkout (n)"
+    ],
+    "collocations": [
+      "check in",
+      "check out",
+      "check for"
+    ],
+    "synonyms": [
+      "verify"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Check it.",
+        "correct": "Check it.",
+        "explain_vi": "Không có lỗi phổ biến."
+      }
+    ],
+    "grammar_patterns": [
+      "check + object"
+    ]
+  },
+  {
+    "word": "appointment",
+    "phonetic": "/əˈpɔɪnt.mənt/",
+    "meaning_vi": "cuộc hẹn",
+    "meaning_en": "a time to meet someone",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I have an appointment.",
+        "vi": "Tôi có một cuộc hẹn."
+      }
+    ],
+    "word_family": [
+      "appoint (v)"
+    ],
+    "collocations": [
+      "make an appointment",
+      "doctor's appointment",
+      "keep an appointment"
+    ],
+    "synonyms": [
+      "booking"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have appointment.",
+        "correct": "I have an appointment.",
+        "explain_vi": "Cần mạo từ 'an'."
+      }
+    ],
+    "grammar_patterns": [
+      "an appointment with someone"
+    ]
+  },
+  {
+    "word": "repair",
+    "phonetic": "/rɪˈpeər/",
+    "meaning_vi": "sửa chữa",
+    "meaning_en": "to fix something broken",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "Can you repair my phone?",
+        "vi": "Bạn có thể sửa điện thoại của tôi không?"
+      }
+    ],
+    "word_family": [
+      "repair (n)",
+      "repairman (n)"
+    ],
+    "collocations": [
+      "repair service",
+      "repair shop",
+      "need repair"
+    ],
+    "synonyms": [
+      "fix"
+    ],
+    "antonyms": [
+      "break"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I repair my car.",
+        "correct": "I repair my car.",
+        "explain_vi": "Không có lỗi phổ biến."
+      }
+    ],
+    "grammar_patterns": [
+      "repair + object"
+    ]
+  },
+  {
+    "word": "clean",
+    "phonetic": "/kliːn/",
+    "meaning_vi": "dọn dẹp",
+    "meaning_en": "to make something free of dirt",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "Please clean the room.",
+        "vi": "Vui lòng dọn phòng."
+      }
+    ],
+    "word_family": [
+      "clean (adj)",
+      "cleaning (n)"
+    ],
+    "collocations": [
+      "clean up",
+      "clean service",
+      "clean the house"
+    ],
+    "synonyms": [
+      "wash"
+    ],
+    "antonyms": [
+      "dirty"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I clean my room.",
+        "correct": "I clean my room.",
+        "explain_vi": "Không có lỗi phổ biến."
+      }
+    ],
+    "grammar_patterns": [
+      "clean + object"
+    ]
+  },
+  {
+    "word": "bank",
+    "phonetic": "/bæŋk/",
+    "meaning_vi": "ngân hàng",
+    "meaning_en": "a place where you keep your money",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I go to the bank.",
+        "vi": "Tôi đi ngân hàng."
+      }
+    ],
+    "word_family": [
+      "banking (n)"
+    ],
+    "collocations": [
+      "go to the bank",
+      "bank account",
+      "bank card"
+    ],
+    "synonyms": [
+      "financial institution"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go bank",
+        "correct": "I go to the bank",
+        "explain_vi": "Thiếu giới từ 'to' và mạo từ 'the'"
+      }
+    ],
+    "grammar_patterns": [
+      "go to the bank"
+    ]
+  },
+  {
+    "word": "post office",
+    "phonetic": "/ˈpoʊst ˌɒfɪs/",
+    "meaning_vi": "bưu điện",
+    "meaning_en": "a place where you send letters and packages",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I go to the post office.",
+        "vi": "Tôi đi bưu điện."
+      }
+    ],
+    "word_family": [
+      "post (n)",
+      "postal (adj)"
+    ],
+    "collocations": [
+      "at the post office",
+      "post office box",
+      "post office counter"
+    ],
+    "synonyms": [
+      "mail office"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go post office",
+        "correct": "I go to the post office",
+        "explain_vi": "Thiếu giới từ 'to' và mạo từ 'the'"
+      }
+    ],
+    "grammar_patterns": [
+      "go to the post office"
+    ]
+  },
+  {
+    "word": "hospital",
+    "phonetic": "/ˈhɒspɪtl/",
+    "meaning_vi": "bệnh viện",
+    "meaning_en": "a place where sick people go to get treatment",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "He is in the hospital.",
+        "vi": "Anh ấy ở bệnh viện."
+      }
+    ],
+    "word_family": [
+      "hospitalize (v)",
+      "hospitalization (n)"
+    ],
+    "collocations": [
+      "go to hospital",
+      "in hospital",
+      "hospital room"
+    ],
+    "synonyms": [
+      "clinic",
+      "medical center"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "He goes to hospital.",
+        "correct": "He goes to the hospital.",
+        "explain_vi": "Trong tiếng Anh Mỹ thường dùng mạo từ 'the'"
+      }
+    ],
+    "grammar_patterns": [
+      "go to the hospital (US)",
+      "go to hospital (UK)"
+    ]
+  },
+  {
+    "word": "pharmacy",
+    "phonetic": "/ˈfɑːrməsi/",
+    "meaning_vi": "hiệu thuốc",
+    "meaning_en": "a place where you buy medicine",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I buy medicine at the pharmacy.",
+        "vi": "Tôi mua thuốc ở hiệu thuốc."
+      }
+    ],
+    "word_family": [
+      "pharmacist (n)",
+      "pharmaceutical (adj)"
+    ],
+    "collocations": [
+      "at the pharmacy",
+      "pharmacy counter",
+      "pharmacy hours"
+    ],
+    "synonyms": [
+      "drugstore",
+      "chemist"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go pharmacy",
+        "correct": "I go to the pharmacy",
+        "explain_vi": "Thiếu giới từ 'to' và mạo từ 'the'"
+      }
+    ],
+    "grammar_patterns": [
+      "go to the pharmacy"
+    ]
+  },
+  {
+    "word": "library",
+    "phonetic": "/ˈlaɪbrəri/",
+    "meaning_vi": "thư viện",
+    "meaning_en": "a place where you borrow books",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I read books in the library.",
+        "vi": "Tôi đọc sách trong thư viện."
+      }
+    ],
+    "word_family": [
+      "librarian (n)"
+    ],
+    "collocations": [
+      "at the library",
+      "library card",
+      "library book"
+    ],
+    "synonyms": [
+      "book archive"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go library",
+        "correct": "I go to the library",
+        "explain_vi": "Thiếu giới từ 'to' và mạo từ 'the'"
+      }
+    ],
+    "grammar_patterns": [
+      "go to the library"
+    ]
+  },
+  {
+    "word": "gym",
+    "phonetic": "/dʒɪm/",
+    "meaning_vi": "phòng tập thể dục",
+    "meaning_en": "a place where you exercise",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I go to the gym every day.",
+        "vi": "Tôi đi tập gym mỗi ngày."
+      }
+    ],
+    "word_family": [
+      "gymnasium (n)"
+    ],
+    "collocations": [
+      "go to the gym",
+      "gym membership",
+      "gym class"
+    ],
+    "synonyms": [
+      "fitness center"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go gym",
+        "correct": "I go to the gym",
+        "explain_vi": "Thiếu giới từ 'to' và mạo từ 'the'"
+      }
+    ],
+    "grammar_patterns": [
+      "go to the gym"
+    ]
+  },
+  {
+    "word": "park",
+    "phonetic": "/pɑːrk/",
+    "meaning_vi": "công viên",
+    "meaning_en": "a public area with grass and trees",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The children play in the park.",
+        "vi": "Bọn trẻ chơi trong công viên."
+      }
+    ],
+    "word_family": [
+      "parking (n)"
+    ],
+    "collocations": [
+      "in the park",
+      "park bench",
+      "park walk"
+    ],
+    "synonyms": [
+      "garden",
+      "green space"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go park",
+        "correct": "I go to the park",
+        "explain_vi": "Thiếu giới từ 'to' và mạo từ 'the'"
+      }
+    ],
+    "grammar_patterns": [
+      "go to the park"
+    ]
+  },
+  {
+    "word": "school",
+    "phonetic": "/skuːl/",
+    "meaning_vi": "trường học",
+    "meaning_en": "a place where children learn",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I go to school.",
+        "vi": "Tôi đi học."
+      }
+    ],
+    "word_family": [
+      "schooling (n)",
+      "schoolboy (n)",
+      "schoolgirl (n)"
+    ],
+    "collocations": [
+      "go to school",
+      "at school",
+      "school bus"
+    ],
+    "synonyms": [
+      "academy",
+      "educational institution"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go to the school.",
+        "correct": "I go to school.",
+        "explain_vi": "Không dùng mạo từ 'the' khi nói về mục đích học tập"
+      }
+    ],
+    "grammar_patterns": [
+      "go to school (no article)"
+    ]
+  },
+  {
+    "word": "supermarket",
+    "phonetic": "/ˈsuːpərˌmɑːrkɪt/",
+    "meaning_vi": "siêu thị",
+    "meaning_en": "a large shop where you buy food and household items",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I buy food at the supermarket.",
+        "vi": "Tôi mua thực phẩm ở siêu thị."
+      }
+    ],
+    "word_family": [
+      "market (n)"
+    ],
+    "collocations": [
+      "at the supermarket",
+      "supermarket aisle",
+      "supermarket chain"
+    ],
+    "synonyms": [
+      "grocery store"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go supermarket",
+        "correct": "I go to the supermarket",
+        "explain_vi": "Thiếu giới từ 'to' và mạo từ 'the'"
+      }
+    ],
+    "grammar_patterns": [
+      "go to the supermarket"
+    ]
+  },
+  {
+    "word": "taxi",
+    "phonetic": "/ˈtæksi/",
+    "meaning_vi": "xe taxi",
+    "meaning_en": "a car that you pay to ride in",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I take a taxi to the airport.",
+        "vi": "Tôi đi taxi ra sân bay."
+      }
+    ],
+    "word_family": [
+      "taxicab (n)",
+      "taxi driver (n)"
+    ],
+    "collocations": [
+      "take a taxi",
+      "call a taxi",
+      "taxi rank"
+    ],
+    "synonyms": [
+      "cab",
+      "hackney carriage"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go taxi",
+        "correct": "I take a taxi",
+        "explain_vi": "Dùng 'take a taxi' thay vì 'go taxi'"
+      }
+    ],
+    "grammar_patterns": [
+      "take a taxi"
+    ]
+  },
+  {
+    "word": "bus",
+    "phonetic": "/bʌs/",
+    "meaning_vi": "xe buýt",
+    "meaning_en": "a large vehicle that carries passengers",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I go to work by bus.",
+        "vi": "Tôi đi làm bằng xe buýt."
+      }
+    ],
+    "word_family": [
+      "busing (n)",
+      "bus stop (n)"
+    ],
+    "collocations": [
+      "by bus",
+      "take the bus",
+      "bus stop"
+    ],
+    "synonyms": [
+      "coach",
+      "omnibus"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go by bus to work",
+        "correct": "I go to work by bus",
+        "explain_vi": "Đặt 'by bus' cuối câu"
+      }
+    ],
+    "grammar_patterns": [
+      "go by bus"
+    ]
+  },
+  {
+    "word": "train",
+    "phonetic": "/treɪn/",
+    "meaning_vi": "tàu hỏa",
+    "meaning_en": "a series of connected vehicles on tracks",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I take the train to Hanoi.",
+        "vi": "Tôi đi tàu hỏa ra Hà Nội."
+      }
+    ],
+    "word_family": [
+      "training (n)",
+      "train station (n)"
+    ],
+    "collocations": [
+      "take the train",
+      "by train",
+      "train station"
+    ],
+    "synonyms": [
+      "railway",
+      "railroad"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go train",
+        "correct": "I take the train",
+        "explain_vi": "Dùng 'take the train' thay vì 'go train'"
+      }
+    ],
+    "grammar_patterns": [
+      "take the train"
+    ]
+  },
+  {
+    "word": "airport",
+    "phonetic": "/ˈerpɔːrt/",
+    "meaning_vi": "sân bay",
+    "meaning_en": "a place where planes take off and land",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I fly from the airport.",
+        "vi": "Tôi bay từ sân bay."
+      }
+    ],
+    "word_family": [
+      "air (n)",
+      "port (n)"
+    ],
+    "collocations": [
+      "at the airport",
+      "airport terminal",
+      "airport security"
+    ],
+    "synonyms": [
+      "airfield",
+      "aerodrome"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go airport",
+        "correct": "I go to the airport",
+        "explain_vi": "Thiếu giới từ 'to' và mạo từ 'the'"
+      }
+    ],
+    "grammar_patterns": [
+      "go to the airport"
+    ]
+  },
+  {
+    "word": "hotel",
+    "phonetic": "/hoʊˈtel/",
+    "meaning_vi": "khách sạn",
+    "meaning_en": "a place where you pay to sleep when traveling",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I stay at a hotel.",
+        "vi": "Tôi ở khách sạn."
+      }
+    ],
+    "word_family": [
+      "hotelier (n)"
+    ],
+    "collocations": [
+      "stay at a hotel",
+      "hotel room",
+      "hotel reservation"
+    ],
+    "synonyms": [
+      "inn",
+      "motel"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go hotel",
+        "correct": "I go to the hotel",
+        "explain_vi": "Thiếu giới từ 'to' và mạo từ 'the'"
+      }
+    ],
+    "grammar_patterns": [
+      "stay at a hotel"
+    ]
+  },
+  {
+    "word": "restaurant",
+    "phonetic": "/ˈrestərɑːnt/",
+    "meaning_vi": "nhà hàng",
+    "meaning_en": "a place where you pay for a meal",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We eat at a restaurant.",
+        "vi": "Chúng tôi ăn ở nhà hàng."
+      }
+    ],
+    "word_family": [
+      "restaurateur (n)"
+    ],
+    "collocations": [
+      "at a restaurant",
+      "restaurant menu",
+      "restaurant table"
+    ],
+    "synonyms": [
+      "eatery",
+      "diner"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go restaurant",
+        "correct": "I go to a restaurant",
+        "explain_vi": "Thiếu giới từ 'to' và mạo từ 'a'"
+      }
+    ],
+    "grammar_patterns": [
+      "go to a restaurant"
+    ]
+  },
+  {
+    "word": "parking lot",
+    "phonetic": "/ˈpɑːrkɪŋ lɒt/",
+    "meaning_vi": "bãi đỗ xe",
+    "meaning_en": "an area where you can park cars",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I park my car in the parking lot.",
+        "vi": "Tôi đỗ xe trong bãi đỗ xe."
+      }
+    ],
+    "word_family": [
+      "park (v)"
+    ],
+    "collocations": [
+      "parking lot attendant",
+      "parking lot fee",
+      "parking lot space"
+    ],
+    "synonyms": [
+      "car park"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go parking lot",
+        "correct": "I go to the parking lot",
+        "explain_vi": "Thiếu giới từ 'to' và mạo từ 'the'"
+      }
+    ],
+    "grammar_patterns": [
+      "in the parking lot"
+    ]
+  },
+  {
+    "word": "laundry",
+    "phonetic": "/ˈlɔːndri/",
+    "meaning_vi": "tiệm giặt ủi",
+    "meaning_en": "a place where you wash clothes",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I take my clothes to the laundry.",
+        "vi": "Tôi mang quần áo đến tiệm giặt."
+      }
+    ],
+    "word_family": [
+      "launder (v)",
+      "laundromat (n)"
+    ],
+    "collocations": [
+      "do laundry",
+      "laundry service",
+      "laundry room"
+    ],
+    "synonyms": [
+      "cleaners",
+      "laundromat"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go laundry",
+        "correct": "I go to the laundry",
+        "explain_vi": "Thiếu giới từ 'to' và mạo từ 'the'"
+      }
+    ],
+    "grammar_patterns": [
+      "go to the laundry"
+    ]
+  },
+  {
+    "word": "barber",
+    "phonetic": "/ˈbɑːrbər/",
+    "meaning_vi": "thợ cắt tóc",
+    "meaning_en": "a person who cuts men's hair",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The barber cuts my hair.",
+        "vi": "Người thợ cắt tóc cắt tóc cho tôi."
+      }
+    ],
+    "word_family": [
+      "barbershop (n)",
+      "barbering (n)"
+    ],
+    "collocations": [
+      "barber shop",
+      "barber chair",
+      "barber's"
+    ],
+    "synonyms": [
+      "hairdresser",
+      "stylist"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go barber",
+        "correct": "I go to the barber",
+        "explain_vi": "Thiếu giới từ 'to' và mạo từ 'the'"
+      }
+    ],
+    "grammar_patterns": [
+      "go to the barber"
+    ]
+  },
+  {
+    "word": "hairdresser",
+    "phonetic": "/ˈherˌdresər/",
+    "meaning_vi": "thợ làm tóc",
+    "meaning_en": "a person who cuts or styles hair",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The hairdresser styles my hair.",
+        "vi": "Người thợ làm tóc tạo kiểu tóc cho tôi."
+      }
+    ],
+    "word_family": [
+      "hair (n)",
+      "dress (v)"
+    ],
+    "collocations": [
+      "hairdresser's salon",
+      "hairdresser appointment",
+      "hairdresser scissors"
+    ],
+    "synonyms": [
+      "stylist",
+      "barber"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go hairdresser",
+        "correct": "I go to the hairdresser",
+        "explain_vi": "Thiếu giới từ 'to' và mạo từ 'the'"
+      }
+    ],
+    "grammar_patterns": [
+      "go to the hairdresser"
+    ]
+  },
+  {
+    "word": "dentist",
+    "phonetic": "/ˈdentɪst/",
+    "meaning_vi": "nha sĩ",
+    "meaning_en": "a doctor who takes care of teeth",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I go to the dentist every year.",
+        "vi": "Tôi đi khám nha sĩ mỗi năm."
+      }
+    ],
+    "word_family": [
+      "dentistry (n)",
+      "dental (adj)"
+    ],
+    "collocations": [
+      "go to the dentist",
+      "dentist appointment",
+      "dentist office"
+    ],
+    "synonyms": [
+      "dental surgeon"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go dentist",
+        "correct": "I go to the dentist",
+        "explain_vi": "Thiếu giới từ 'to' và mạo từ 'the'"
+      }
+    ],
+    "grammar_patterns": [
+      "go to the dentist"
+    ]
+  }
+]

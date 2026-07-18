@@ -1,0 +1,3148 @@
+[
+  {
+    "word": "health",
+    "phonetic": "/helθ/",
+    "meaning_vi": "sức khỏe",
+    "meaning_en": "the condition of a person's body or mind",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Regular exercise is good for your health.",
+        "vi": "Tập thể dục thường xuyên tốt cho sức khỏe của bạn."
+      }
+    ],
+    "word_family": [
+      "healthy (adj)",
+      "unhealthy (adj)",
+      "healthily (adv)"
+    ],
+    "collocations": [
+      "good health",
+      "poor health",
+      "health problems",
+      "mental health"
+    ],
+    "synonyms": [
+      "wellness",
+      "fitness"
+    ],
+    "antonyms": [
+      "illness"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I have a good health.",
+        "correct": "I have good health.",
+        "explain_vi": "Không dùng mạo từ 'a' trước 'health'."
+      }
+    ],
+    "grammar_patterns": [
+      "uncountable noun",
+      "often used with 'good' or 'poor'"
+    ]
+  },
+  {
+    "word": "diet",
+    "phonetic": "/ˈdaɪ.ət/",
+    "meaning_vi": "chế độ ăn uống",
+    "meaning_en": "the kinds of food that a person eats",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "A balanced diet is important.",
+        "vi": "Một chế độ ăn uống cân bằng rất quan trọng."
+      }
+    ],
+    "word_family": [
+      "dietary (adj)",
+      "dieter (n)"
+    ],
+    "collocations": [
+      "balanced diet",
+      "healthy diet",
+      "go on a diet",
+      "diet plan"
+    ],
+    "synonyms": [
+      "eating plan",
+      "nutrition"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I am in diet.",
+        "correct": "I am on a diet.",
+        "explain_vi": "Dùng 'on a diet' thay vì 'in diet'."
+      }
+    ],
+    "grammar_patterns": [
+      "countable noun",
+      "often used with 'on a'"
+    ]
+  },
+  {
+    "word": "exercise",
+    "phonetic": "/ˈek.sər.saɪz/",
+    "meaning_vi": "bài tập, tập thể dục",
+    "meaning_en": "physical activity to keep your body healthy",
+    "pos": "noun/verb",
+    "examples": [
+      {
+        "en": "I do exercise every morning.",
+        "vi": "Tôi tập thể dục mỗi sáng."
+      }
+    ],
+    "word_family": [
+      "exercised (adj)",
+      "exercising (v-ing)"
+    ],
+    "collocations": [
+      "do exercise",
+      "take exercise",
+      "physical exercise",
+      "exercise routine"
+    ],
+    "synonyms": [
+      "workout",
+      "physical activity"
+    ],
+    "antonyms": [
+      "inactivity"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I play exercise.",
+        "correct": "I do exercise.",
+        "explain_vi": "Dùng 'do' thay vì 'play' với exercise."
+      }
+    ],
+    "grammar_patterns": [
+      "uncountable noun (often)",
+      "verb: exercise + object"
+    ]
+  },
+  {
+    "word": "symptom",
+    "phonetic": "/ˈsɪmp.təm/",
+    "meaning_vi": "triệu chứng",
+    "meaning_en": "a sign of an illness or condition",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "A cough is a common symptom of a cold.",
+        "vi": "Ho là triệu chứng phổ biến của cảm lạnh."
+      }
+    ],
+    "word_family": [
+      "symptomatic (adj)",
+      "asymptomatic (adj)"
+    ],
+    "collocations": [
+      "symptom of",
+      "common symptom",
+      "show symptoms",
+      "symptom checker"
+    ],
+    "synonyms": [
+      "sign",
+      "indication"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have symptom.",
+        "correct": "I have symptoms.",
+        "explain_vi": "Thường dùng số nhiều 'symptoms'."
+      }
+    ],
+    "grammar_patterns": [
+      "countable noun",
+      "often followed by 'of'"
+    ]
+  },
+  {
+    "word": "pain",
+    "phonetic": "/peɪn/",
+    "meaning_vi": "cơn đau",
+    "meaning_en": "a feeling of physical hurt or discomfort",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I have a pain in my back.",
+        "vi": "Tôi bị đau lưng."
+      }
+    ],
+    "word_family": [
+      "painful (adj)",
+      "painless (adj)",
+      "painfully (adv)"
+    ],
+    "collocations": [
+      "have a pain",
+      "in pain",
+      "chest pain",
+      "back pain",
+      "relieve pain"
+    ],
+    "synonyms": [
+      "ache",
+      "hurt"
+    ],
+    "antonyms": [
+      "comfort"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I have pain on my back.",
+        "correct": "I have pain in my back.",
+        "explain_vi": "Dùng 'in' thay vì 'on' với bộ phận cơ thể."
+      }
+    ],
+    "grammar_patterns": [
+      "countable/uncountable",
+      "often 'a pain in + body part'"
+    ]
+  },
+  {
+    "word": "medicine",
+    "phonetic": "/ˈmed.ɪ.sɪn/",
+    "meaning_vi": "thuốc",
+    "meaning_en": "a substance used to treat illness",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Take this medicine three times a day.",
+        "vi": "Uống thuốc này ba lần một ngày."
+      }
+    ],
+    "word_family": [
+      "medicinal (adj)",
+      "medicate (v)"
+    ],
+    "collocations": [
+      "take medicine",
+      "prescribe medicine",
+      "medicine bottle",
+      "cold medicine"
+    ],
+    "synonyms": [
+      "drug",
+      "medication"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I drink medicine.",
+        "correct": "I take medicine.",
+        "explain_vi": "Dùng 'take' thay vì 'drink' với medicine."
+      }
+    ],
+    "grammar_patterns": [
+      "uncountable noun (usually)",
+      "verb: take medicine"
+    ]
+  },
+  {
+    "word": "fever",
+    "phonetic": "/ˈfiː.vər/",
+    "meaning_vi": "sốt",
+    "meaning_en": "a high body temperature caused by illness",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She has a high fever.",
+        "vi": "Cô ấy bị sốt cao."
+      }
+    ],
+    "word_family": [
+      "feverish (adj)"
+    ],
+    "collocations": [
+      "have a fever",
+      "high fever",
+      "run a fever",
+      "break a fever"
+    ],
+    "synonyms": [
+      "high temperature"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I catch fever.",
+        "correct": "I have a fever.",
+        "explain_vi": "Dùng 'have a fever' thay vì 'catch fever'."
+      }
+    ],
+    "grammar_patterns": [
+      "countable noun",
+      "often 'have a fever'"
+    ]
+  },
+  {
+    "word": "cough",
+    "phonetic": "/kɒf/",
+    "meaning_vi": "ho",
+    "meaning_en": "to force air out of your throat with a sudden sound",
+    "pos": "verb/noun",
+    "examples": [
+      {
+        "en": "He has a bad cough.",
+        "vi": "Anh ấy bị ho nặng."
+      }
+    ],
+    "word_family": [
+      "coughing (n)"
+    ],
+    "collocations": [
+      "have a cough",
+      "cough syrup",
+      "cough up",
+      "dry cough"
+    ],
+    "synonyms": [
+      "hack"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I cough blood.",
+        "correct": "I cough up blood.",
+        "explain_vi": "Thêm 'up' khi nói ho ra máu."
+      }
+    ],
+    "grammar_patterns": [
+      "verb: cough (no object or 'cough up')",
+      "noun: a cough"
+    ]
+  },
+  {
+    "word": "headache",
+    "phonetic": "/ˈhed.eɪk/",
+    "meaning_vi": "đau đầu",
+    "meaning_en": "a pain in your head",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I have a terrible headache.",
+        "vi": "Tôi bị đau đầu khủng khiếp."
+      }
+    ],
+    "word_family": [
+      "headachy (adj)"
+    ],
+    "collocations": [
+      "have a headache",
+      "bad headache",
+      "get a headache",
+      "headache medicine"
+    ],
+    "synonyms": [
+      "migraine"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have headache.",
+        "correct": "I have a headache.",
+        "explain_vi": "Luôn dùng mạo từ 'a'."
+      }
+    ],
+    "grammar_patterns": [
+      "countable noun",
+      "usually singular with 'a'"
+    ]
+  },
+  {
+    "word": "stomachache",
+    "phonetic": "/ˈstʌm.ək.eɪk/",
+    "meaning_vi": "đau bụng",
+    "meaning_en": "a pain in your stomach or abdomen",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Eating too much gave me a stomachache.",
+        "vi": "Ăn quá nhiều khiến tôi đau bụng."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "have a stomachache",
+      "stomachache medicine",
+      "cause a stomachache"
+    ],
+    "synonyms": [
+      "bellyache"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have stomachache.",
+        "correct": "I have a stomachache.",
+        "explain_vi": "Luôn dùng mạo từ 'a'."
+      }
+    ],
+    "grammar_patterns": [
+      "countable noun",
+      "usually singular with 'a'"
+    ]
+  },
+  {
+    "word": "rest",
+    "phonetic": "/rest/",
+    "meaning_vi": "nghỉ ngơi",
+    "meaning_en": "to stop working or doing an activity to relax",
+    "pos": "verb/noun",
+    "examples": [
+      {
+        "en": "You should rest after exercise.",
+        "vi": "Bạn nên nghỉ ngơi sau khi tập thể dục."
+      }
+    ],
+    "word_family": [
+      "restful (adj)",
+      "restless (adj)"
+    ],
+    "collocations": [
+      "get some rest",
+      "take a rest",
+      "rest day",
+      "need rest"
+    ],
+    "synonyms": [
+      "relax",
+      "take a break"
+    ],
+    "antonyms": [
+      "work",
+      "activity"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I need a rest.",
+        "correct": "I need some rest.",
+        "explain_vi": "Dùng 'some rest' thay vì 'a rest'."
+      }
+    ],
+    "grammar_patterns": [
+      "uncountable noun (often)",
+      "verb: rest (no object)"
+    ]
+  },
+  {
+    "word": "weight",
+    "phonetic": "/weɪt/",
+    "meaning_vi": "cân nặng",
+    "meaning_en": "how heavy someone or something is",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I need to lose weight.",
+        "vi": "Tôi cần giảm cân."
+      }
+    ],
+    "word_family": [
+      "weigh (v)",
+      "weighty (adj)"
+    ],
+    "collocations": [
+      "lose weight",
+      "gain weight",
+      "put on weight",
+      "watch your weight"
+    ],
+    "synonyms": [
+      "heaviness"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I need to loss weight.",
+        "correct": "I need to lose weight.",
+        "explain_vi": "Dùng 'lose' thay vì 'loss'."
+      }
+    ],
+    "grammar_patterns": [
+      "uncountable noun",
+      "verb: lose/gain weight"
+    ]
+  },
+  {
+    "word": "blood",
+    "phonetic": "/blʌd/",
+    "meaning_vi": "máu",
+    "meaning_en": "the red liquid that flows through your body",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The doctor took a blood sample.",
+        "vi": "Bác sĩ đã lấy mẫu máu."
+      }
+    ],
+    "word_family": [
+      "bleed (v)",
+      "bloody (adj)"
+    ],
+    "collocations": [
+      "blood pressure",
+      "blood test",
+      "blood type",
+      "blood vessel"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have high blood.",
+        "correct": "I have high blood pressure.",
+        "explain_vi": "Không nói 'high blood' mà là 'high blood pressure'."
+      }
+    ],
+    "grammar_patterns": [
+      "uncountable noun"
+    ]
+  },
+  {
+    "word": "heart",
+    "phonetic": "/hɑːrt/",
+    "meaning_vi": "tim",
+    "meaning_en": "the organ that pumps blood around your body",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Exercise is good for your heart.",
+        "vi": "Tập thể dục tốt cho tim của bạn."
+      }
+    ],
+    "word_family": [
+      "heartbeat (n)",
+      "heartless (adj)"
+    ],
+    "collocations": [
+      "heart disease",
+      "heart attack",
+      "heart rate",
+      "heart condition"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "My heart hurts.",
+        "correct": "I have chest pain.",
+        "explain_vi": "Thường nói 'chest pain' thay vì 'heart hurts'."
+      }
+    ],
+    "grammar_patterns": [
+      "countable noun",
+      "often used with 'the'"
+    ]
+  },
+  {
+    "word": "lung",
+    "phonetic": "/lʌŋ/",
+    "meaning_vi": "phổi",
+    "meaning_en": "one of the two organs in your chest used for breathing",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Smoking damages your lungs.",
+        "vi": "Hút thuốc làm tổn thương phổi của bạn."
+      }
+    ],
+    "word_family": [
+      "lungful (n)"
+    ],
+    "collocations": [
+      "lung cancer",
+      "lung capacity",
+      "lung disease",
+      "lung infection"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have pain in lung.",
+        "correct": "I have pain in my lung.",
+        "explain_vi": "Cần dùng tính từ sở hữu 'my'."
+      }
+    ],
+    "grammar_patterns": [
+      "countable noun",
+      "usually plural 'lungs'"
+    ]
+  },
+  {
+    "word": "muscle",
+    "phonetic": "/ˈmʌs.əl/",
+    "meaning_vi": "cơ bắp",
+    "meaning_en": "a body tissue that can contract to produce movement",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Lifting weights builds muscle.",
+        "vi": "Nâng tạ xây dựng cơ bắp."
+      }
+    ],
+    "word_family": [
+      "muscular (adj)"
+    ],
+    "collocations": [
+      "muscle pain",
+      "muscle strain",
+      "build muscle",
+      "muscle mass"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "My muscle is hurt.",
+        "correct": "My muscle hurts.",
+        "explain_vi": "Dùng 'hurts' thay vì 'is hurt'."
+      }
+    ],
+    "grammar_patterns": [
+      "countable/uncountable",
+      "often plural 'muscles'"
+    ]
+  },
+  {
+    "word": "bone",
+    "phonetic": "/boʊn/",
+    "meaning_vi": "xương",
+    "meaning_en": "the hard parts inside your body that form the skeleton",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "He broke a bone in his leg.",
+        "vi": "Anh ấy bị gãy xương ở chân."
+      }
+    ],
+    "word_family": [
+      "bony (adj)"
+    ],
+    "collocations": [
+      "broken bone",
+      "bone density",
+      "bone fracture",
+      "bone health"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I break my bone.",
+        "correct": "I broke a bone.",
+        "explain_vi": "Dùng 'broke' (quá khứ) và mạo từ 'a'."
+      }
+    ],
+    "grammar_patterns": [
+      "countable noun"
+    ]
+  },
+  {
+    "word": "skin",
+    "phonetic": "/skɪn/",
+    "meaning_vi": "da",
+    "meaning_en": "the outer covering of your body",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She has sensitive skin.",
+        "vi": "Cô ấy có làn da nhạy cảm."
+      }
+    ],
+    "word_family": [
+      "skinny (adj)",
+      "skincare (n)"
+    ],
+    "collocations": [
+      "skin care",
+      "skin condition",
+      "skin rash",
+      "dry skin"
+    ],
+    "synonyms": [
+      "complexion"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "My skin is itch.",
+        "correct": "My skin itches.",
+        "explain_vi": "Dùng động từ 'itches' thay vì 'is itch'."
+      }
+    ],
+    "grammar_patterns": [
+      "uncountable noun (usually)",
+      "often used with adjectives"
+    ]
+  },
+  {
+    "word": "stomach",
+    "phonetic": "/ˈstʌm.ək/",
+    "meaning_vi": "dạ dày",
+    "meaning_en": "the organ in your body where food is digested",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "My stomach hurts after eating.",
+        "vi": "Bụng tôi đau sau khi ăn."
+      }
+    ],
+    "word_family": [
+      "stomachache (n)"
+    ],
+    "collocations": [
+      "stomach pain",
+      "stomach ulcer",
+      "stomach flu",
+      "upset stomach"
+    ],
+    "synonyms": [
+      "belly",
+      "abdomen"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have a stomach.",
+        "correct": "My stomach hurts.",
+        "explain_vi": "Không nói 'have a stomach' để chỉ đau."
+      }
+    ],
+    "grammar_patterns": [
+      "countable noun",
+      "often used with possessive adjective"
+    ]
+  },
+  {
+    "word": "back",
+    "phonetic": "/bæk/",
+    "meaning_vi": "lưng",
+    "meaning_en": "the rear part of your body from neck to bottom",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I have a pain in my lower back.",
+        "vi": "Tôi bị đau ở lưng dưới."
+      }
+    ],
+    "word_family": [
+      "backache (n)",
+      "backward (adv)"
+    ],
+    "collocations": [
+      "back pain",
+      "back injury",
+      "lower back",
+      "back problems"
+    ],
+    "synonyms": [
+      "spine"
+    ],
+    "antonyms": [
+      "front"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "My back is pain.",
+        "correct": "My back hurts.",
+        "explain_vi": "Dùng 'hurts' thay vì 'is pain'."
+      }
+    ],
+    "grammar_patterns": [
+      "countable noun",
+      "often used with possessive adjective"
+    ]
+  },
+  {
+    "word": "prescription",
+    "phonetic": "/prɪˈskrɪp.ʃən/",
+    "meaning_vi": "đơn thuốc",
+    "meaning_en": "an instruction written by a doctor for the preparation and use of a medicine",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The doctor gave me a prescription for antibiotics.",
+        "vi": "Bác sĩ đã cho tôi một đơn thuốc kháng sinh."
+      }
+    ],
+    "word_family": [
+      "prescribe (v)",
+      "prescribed (adj)"
+    ],
+    "collocations": [
+      "write a prescription",
+      "fill a prescription",
+      "on prescription"
+    ],
+    "synonyms": [
+      "doctor's order"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I need a recipe for medicine.",
+        "correct": "I need a prescription for medicine.",
+        "explain_vi": "'Recipe' là công thức nấu ăn, không phải đơn thuốc."
+      }
+    ],
+    "grammar_patterns": [
+      "a prescription for + medicine"
+    ]
+  },
+  {
+    "word": "diagnosis",
+    "phonetic": "/ˌdaɪ.əɡˈnoʊ.sɪs/",
+    "meaning_vi": "chẩn đoán",
+    "meaning_en": "the identification of the nature of an illness or problem by examination",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The diagnosis was a viral infection.",
+        "vi": "Chẩn đoán là nhiễm virus."
+      }
+    ],
+    "word_family": [
+      "diagnose (v)",
+      "diagnostic (adj)"
+    ],
+    "collocations": [
+      "make a diagnosis",
+      "confirm a diagnosis",
+      "early diagnosis"
+    ],
+    "synonyms": [
+      "identification",
+      "determination"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "The doctor diagnosed me with flu.",
+        "correct": "The doctor diagnosed me with the flu.",
+        "explain_vi": "Thiếu mạo từ 'the' trước 'flu'."
+      }
+    ],
+    "grammar_patterns": [
+      "diagnosis of + illness"
+    ]
+  },
+  {
+    "word": "infection",
+    "phonetic": "/ɪnˈfek.ʃən/",
+    "meaning_vi": "nhiễm trùng",
+    "meaning_en": "the process of infecting or the state of being infected with a disease",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The wound developed an infection.",
+        "vi": "Vết thương bị nhiễm trùng."
+      }
+    ],
+    "word_family": [
+      "infect (v)",
+      "infectious (adj)"
+    ],
+    "collocations": [
+      "spread an infection",
+      "treat an infection",
+      "bacterial infection"
+    ],
+    "synonyms": [
+      "contagion",
+      "disease"
+    ],
+    "antonyms": [
+      "immunity"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I have infection in my throat.",
+        "correct": "I have an infection in my throat.",
+        "explain_vi": "Thiếu mạo từ 'an'."
+      }
+    ],
+    "grammar_patterns": [
+      "an infection in + body part"
+    ]
+  },
+  {
+    "word": "surgery",
+    "phonetic": "/ˈsɜːr.dʒər.i/",
+    "meaning_vi": "phẫu thuật",
+    "meaning_en": "medical treatment involving cutting into the body",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "He had surgery on his knee.",
+        "vi": "Anh ấy đã phẫu thuật đầu gối."
+      }
+    ],
+    "word_family": [
+      "surgeon (n)",
+      "surgical (adj)"
+    ],
+    "collocations": [
+      "undergo surgery",
+      "perform surgery",
+      "minor surgery"
+    ],
+    "synonyms": [
+      "operation"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I need a surgery.",
+        "correct": "I need surgery.",
+        "explain_vi": "Không dùng mạo từ 'a' trước 'surgery' khi nói chung."
+      }
+    ],
+    "grammar_patterns": [
+      "surgery on + body part"
+    ]
+  },
+  {
+    "word": "therapy",
+    "phonetic": "/ˈθer.ə.pi/",
+    "meaning_vi": "liệu pháp",
+    "meaning_en": "treatment to help relieve or heal a disorder",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She is undergoing physical therapy.",
+        "vi": "Cô ấy đang trải qua liệu pháp vật lý."
+      }
+    ],
+    "word_family": [
+      "therapist (n)",
+      "therapeutic (adj)"
+    ],
+    "collocations": [
+      "undergo therapy",
+      "physical therapy",
+      "talk therapy"
+    ],
+    "synonyms": [
+      "treatment",
+      "remedy"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go to therapy every week.",
+        "correct": "I go to therapy every week.",
+        "explain_vi": "Đúng rồi, không có lỗi."
+      }
+    ],
+    "grammar_patterns": [
+      "therapy for + condition"
+    ]
+  },
+  {
+    "word": "vaccine",
+    "phonetic": "/vækˈsiːn/",
+    "meaning_vi": "vắc-xin",
+    "meaning_en": "a substance used to stimulate the production of antibodies and provide immunity against a disease",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The vaccine protects against the flu.",
+        "vi": "Vắc-xin bảo vệ khỏi bệnh cúm."
+      }
+    ],
+    "word_family": [
+      "vaccinate (v)",
+      "vaccination (n)"
+    ],
+    "collocations": [
+      "get a vaccine",
+      "develop a vaccine",
+      "flu vaccine"
+    ],
+    "synonyms": [
+      "immunization",
+      "shot"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I need vaccine for COVID.",
+        "correct": "I need a vaccine for COVID.",
+        "explain_vi": "Thiếu mạo từ 'a'."
+      }
+    ],
+    "grammar_patterns": [
+      "vaccine against + disease"
+    ]
+  },
+  {
+    "word": "allergy",
+    "phonetic": "/ˈæl.ər.dʒi/",
+    "meaning_vi": "dị ứng",
+    "meaning_en": "a condition in which the body has an exaggerated reaction to a substance",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I have an allergy to peanuts.",
+        "vi": "Tôi bị dị ứng với đậu phộng."
+      }
+    ],
+    "word_family": [
+      "allergic (adj)",
+      "allergen (n)"
+    ],
+    "collocations": [
+      "have an allergy",
+      "food allergy",
+      "allergy test"
+    ],
+    "synonyms": [
+      "hypersensitivity"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I am allergy to dust.",
+        "correct": "I am allergic to dust.",
+        "explain_vi": "Nhầm tính từ 'allergic' với danh từ 'allergy'."
+      }
+    ],
+    "grammar_patterns": [
+      "allergy to + substance"
+    ]
+  },
+  {
+    "word": "symptom",
+    "phonetic": "/ˈsɪmp.təm/",
+    "meaning_vi": "triệu chứng",
+    "meaning_en": "a physical or mental feature indicating a condition",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Common symptoms include fever and cough.",
+        "vi": "Các triệu chứng phổ biến bao gồm sốt và ho."
+      }
+    ],
+    "word_family": [
+      "symptomatic (adj)",
+      "asymptomatic (adj)"
+    ],
+    "collocations": [
+      "show symptoms",
+      "early symptoms",
+      "symptoms of"
+    ],
+    "synonyms": [
+      "sign",
+      "indication"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have symptom of cold.",
+        "correct": "I have symptoms of a cold.",
+        "explain_vi": "Thiếu số nhiều và mạo từ."
+      }
+    ],
+    "grammar_patterns": [
+      "symptom of + illness"
+    ]
+  },
+  {
+    "word": "chronic",
+    "phonetic": "/ˈkrɑː.nɪk/",
+    "meaning_vi": "mãn tính",
+    "meaning_en": "(of an illness) persisting for a long time or constantly recurring",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "She suffers from chronic back pain.",
+        "vi": "Cô ấy bị đau lưng mãn tính."
+      }
+    ],
+    "word_family": [
+      "chronically (adv)",
+      "chronicity (n)"
+    ],
+    "collocations": [
+      "chronic disease",
+      "chronic pain",
+      "chronic condition"
+    ],
+    "synonyms": [
+      "persistent",
+      "long-term"
+    ],
+    "antonyms": [
+      "acute"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "He has a chronic illness.",
+        "correct": "He has a chronic illness.",
+        "explain_vi": "Đúng rồi, không lỗi."
+      }
+    ],
+    "grammar_patterns": [
+      "chronic + noun"
+    ]
+  },
+  {
+    "word": "acute",
+    "phonetic": "/əˈkjuːt/",
+    "meaning_vi": "cấp tính",
+    "meaning_en": "(of an illness) coming on quickly but lasting a short time",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "He was hospitalized with acute appendicitis.",
+        "vi": "Anh ấy nhập viện vì viêm ruột thừa cấp tính."
+      }
+    ],
+    "word_family": [
+      "acutely (adv)",
+      "acuteness (n)"
+    ],
+    "collocations": [
+      "acute pain",
+      "acute illness",
+      "acute care"
+    ],
+    "synonyms": [
+      "severe",
+      "intense"
+    ],
+    "antonyms": [
+      "chronic"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "She has an acute disease.",
+        "correct": "She has an acute disease.",
+        "explain_vi": "Đúng rồi."
+      }
+    ],
+    "grammar_patterns": [
+      "acute + noun"
+    ]
+  },
+  {
+    "word": "wound",
+    "phonetic": "/wuːnd/",
+    "meaning_vi": "vết thương",
+    "meaning_en": "an injury to living tissue caused by a cut, blow, or other impact",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "He cleaned the wound with antiseptic.",
+        "vi": "Anh ấy làm sạch vết thương bằng thuốc sát trùng."
+      }
+    ],
+    "word_family": [
+      "wound (v)",
+      "wounded (adj)"
+    ],
+    "collocations": [
+      "treat a wound",
+      "deep wound",
+      "open wound"
+    ],
+    "synonyms": [
+      "injury",
+      "cut"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have a wound on my leg.",
+        "correct": "I have a wound on my leg.",
+        "explain_vi": "Đúng rồi."
+      }
+    ],
+    "grammar_patterns": [
+      "a wound on + body part"
+    ]
+  },
+  {
+    "word": "fracture",
+    "phonetic": "/ˈfræk.tʃər/",
+    "meaning_vi": "gãy xương",
+    "meaning_en": "the cracking or breaking of a bone",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The X-ray showed a fracture in his arm.",
+        "vi": "X-quang cho thấy một vết gãy ở cánh tay anh ấy."
+      }
+    ],
+    "word_family": [
+      "fracture (v)",
+      "fractured (adj)"
+    ],
+    "collocations": [
+      "suffer a fracture",
+      "hairline fracture",
+      "compound fracture"
+    ],
+    "synonyms": [
+      "break",
+      "crack"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "He fractured his leg.",
+        "correct": "He fractured his leg.",
+        "explain_vi": "Đúng rồi."
+      }
+    ],
+    "grammar_patterns": [
+      "fracture of + body part"
+    ]
+  },
+  {
+    "word": "bandage",
+    "phonetic": "/ˈbæn.dɪdʒ/",
+    "meaning_vi": "băng gạc",
+    "meaning_en": "a strip of material used to bind a wound or protect an injury",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She wrapped a bandage around his ankle.",
+        "vi": "Cô ấy quấn băng quanh mắt cá chân anh ấy."
+      }
+    ],
+    "word_family": [
+      "bandage (v)"
+    ],
+    "collocations": [
+      "apply a bandage",
+      "change a bandage",
+      "elastic bandage"
+    ],
+    "synonyms": [
+      "dressing",
+      "plaster"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I need bandage for my cut.",
+        "correct": "I need a bandage for my cut.",
+        "explain_vi": "Thiếu mạo từ 'a'."
+      }
+    ],
+    "grammar_patterns": [
+      "a bandage on + body part"
+    ]
+  },
+  {
+    "word": "swollen",
+    "phonetic": "/ˈswoʊ.lən/",
+    "meaning_vi": "sưng",
+    "meaning_en": "increased in size, often due to injury or infection",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "Her ankle was swollen after the fall.",
+        "vi": "Mắt cá chân của cô ấy bị sưng sau cú ngã."
+      }
+    ],
+    "word_family": [
+      "swell (v)",
+      "swelling (n)"
+    ],
+    "collocations": [
+      "swollen joint",
+      "swollen gland",
+      "get swollen"
+    ],
+    "synonyms": [
+      "inflamed",
+      "puffy"
+    ],
+    "antonyms": [
+      "shrunken"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "My leg is swelling.",
+        "correct": "My leg is swollen.",
+        "explain_vi": "Nhầm thì hiện tại tiếp diễn với tính từ."
+      }
+    ],
+    "grammar_patterns": [
+      "swollen + noun"
+    ]
+  },
+  {
+    "word": "bruise",
+    "phonetic": "/bruːz/",
+    "meaning_vi": "vết bầm",
+    "meaning_en": "an injury appearing as an area of discolored skin on the body",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "He had a bruise on his arm from the accident.",
+        "vi": "Anh ấy có một vết bầm trên cánh tay sau tai nạn."
+      }
+    ],
+    "word_family": [
+      "bruise (v)",
+      "bruised (adj)"
+    ],
+    "collocations": [
+      "get a bruise",
+      "black and blue bruise",
+      "bruise easily"
+    ],
+    "synonyms": [
+      "contusion",
+      "mark"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have bruise on my knee.",
+        "correct": "I have a bruise on my knee.",
+        "explain_vi": "Thiếu mạo từ 'a'."
+      }
+    ],
+    "grammar_patterns": [
+      "a bruise on + body part"
+    ]
+  },
+  {
+    "word": "injury",
+    "phonetic": "/ˈɪn.dʒər.i/",
+    "meaning_vi": "chấn thương",
+    "meaning_en": "physical harm or damage to the body",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "He suffered a serious injury to his spine.",
+        "vi": "Anh ấy bị chấn thương nghiêm trọng ở cột sống."
+      }
+    ],
+    "word_family": [
+      "injure (v)",
+      "injured (adj)"
+    ],
+    "collocations": [
+      "sustain an injury",
+      "serious injury",
+      "sports injury"
+    ],
+    "synonyms": [
+      "harm",
+      "damage"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I injured my foot.",
+        "correct": "I injured my foot.",
+        "explain_vi": "Đúng rồi."
+      }
+    ],
+    "grammar_patterns": [
+      "injury to + body part"
+    ]
+  },
+  {
+    "word": "recovery",
+    "phonetic": "/rɪˈkʌv.ər.i/",
+    "meaning_vi": "sự hồi phục",
+    "meaning_en": "the process of returning to a normal state after illness or injury",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Her recovery from surgery was quick.",
+        "vi": "Sự hồi phục sau phẫu thuật của cô ấy rất nhanh."
+      }
+    ],
+    "word_family": [
+      "recover (v)",
+      "recovered (adj)"
+    ],
+    "collocations": [
+      "make a recovery",
+      "full recovery",
+      "recovery time"
+    ],
+    "synonyms": [
+      "healing",
+      "recuperation"
+    ],
+    "antonyms": [
+      "relapse"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I am recovering from illness.",
+        "correct": "I am recovering from an illness.",
+        "explain_vi": "Thiếu mạo từ 'an'."
+      }
+    ],
+    "grammar_patterns": [
+      "recovery from + condition"
+    ]
+  },
+  {
+    "word": "relapse",
+    "phonetic": "/rɪˈlæps/",
+    "meaning_vi": "tái phát",
+    "meaning_en": "a return of a disease after apparent recovery",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "He had a relapse of his illness.",
+        "vi": "Anh ấy bị tái phát bệnh."
+      }
+    ],
+    "word_family": [
+      "relapse (v)"
+    ],
+    "collocations": [
+      "suffer a relapse",
+      "prevent a relapse",
+      "relapse rate"
+    ],
+    "synonyms": [
+      "recurrence",
+      "setback"
+    ],
+    "antonyms": [
+      "remission"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "He relapsed again.",
+        "correct": "He had a relapse.",
+        "explain_vi": "Dùng danh từ 'relapse' phổ biến hơn."
+      }
+    ],
+    "grammar_patterns": [
+      "a relapse of + illness"
+    ]
+  },
+  {
+    "word": "immunity",
+    "phonetic": "/ɪˈmjuː.nə.ti/",
+    "meaning_vi": "miễn dịch",
+    "meaning_en": "the ability of the body to resist infection",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Vaccination builds immunity to the disease.",
+        "vi": "Tiêm chủng xây dựng miễn dịch với bệnh."
+      }
+    ],
+    "word_family": [
+      "immune (adj)",
+      "immunize (v)"
+    ],
+    "collocations": [
+      "boost immunity",
+      "natural immunity",
+      "immunity to"
+    ],
+    "synonyms": [
+      "resistance",
+      "protection"
+    ],
+    "antonyms": [
+      "susceptibility"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I have immunity for flu.",
+        "correct": "I have immunity to the flu.",
+        "explain_vi": "Sai giới từ 'for' thành 'to'."
+      }
+    ],
+    "grammar_patterns": [
+      "immunity to + disease"
+    ]
+  },
+  {
+    "word": "contagious",
+    "phonetic": "/kənˈteɪ.dʒəs/",
+    "meaning_vi": "lây nhiễm",
+    "meaning_en": "(of a disease) spread from one person to another by direct or indirect contact",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The flu is highly contagious.",
+        "vi": "Cúm rất dễ lây nhiễm."
+      }
+    ],
+    "word_family": [
+      "contagion (n)",
+      "contagiously (adv)"
+    ],
+    "collocations": [
+      "contagious disease",
+      "highly contagious",
+      "contagious virus"
+    ],
+    "synonyms": [
+      "infectious",
+      "transmissible"
+    ],
+    "antonyms": [
+      "noncontagious"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "This disease is contagious.",
+        "correct": "This disease is contagious.",
+        "explain_vi": "Đúng rồi."
+      }
+    ],
+    "grammar_patterns": [
+      "contagious + noun"
+    ]
+  },
+  {
+    "word": "appetite",
+    "phonetic": "/ˈæp.ɪ.taɪt/",
+    "meaning_vi": "sự thèm ăn, cảm giác ngon miệng",
+    "meaning_en": "a natural desire to eat food",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I have a good appetite today.",
+        "vi": "Hôm nay tôi ăn ngon miệng."
+      },
+      {
+        "en": "He lost his appetite due to stress.",
+        "vi": "Anh ấy mất cảm giác thèm ăn vì căng thẳng."
+      }
+    ],
+    "word_family": [
+      "appetizing (adj)"
+    ],
+    "collocations": [
+      "have an appetite",
+      "lose your appetite",
+      "good appetite",
+      "poor appetite"
+    ],
+    "synonyms": [
+      "hunger"
+    ],
+    "antonyms": [
+      "loss of appetite"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I have appetite",
+        "correct": "I have an appetite",
+        "explain_vi": "Cần mạo từ 'an' trước 'appetite'"
+      }
+    ],
+    "grammar_patterns": [
+      "have an appetite (countable)"
+    ]
+  },
+  {
+    "word": "digestion",
+    "phonetic": "/daɪˈdʒes.tʃən/",
+    "meaning_vi": "sự tiêu hóa",
+    "meaning_en": "the process of breaking down food in the body",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Yoga can improve digestion.",
+        "vi": "Yoga có thể cải thiện tiêu hóa."
+      },
+      {
+        "en": "She has a digestion problem.",
+        "vi": "Cô ấy có vấn đề về tiêu hóa."
+      }
+    ],
+    "word_family": [
+      "digest (v)",
+      "digestive (adj)"
+    ],
+    "collocations": [
+      "good digestion",
+      "poor digestion",
+      "aid digestion",
+      "digestion problem"
+    ],
+    "synonyms": [
+      "assimilation"
+    ],
+    "antonyms": [
+      "indigestion"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I have digestion",
+        "correct": "I have good/poor digestion",
+        "explain_vi": "Cần thêm tính từ hoặc dùng 'digestion problem'"
+      }
+    ],
+    "grammar_patterns": [
+      "uncountable noun"
+    ]
+  },
+  {
+    "word": "nutrient",
+    "phonetic": "/ˈnuː.tri.ənt/",
+    "meaning_vi": "chất dinh dưỡng",
+    "meaning_en": "a substance that provides nourishment essential for growth and life",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Vegetables are rich in nutrients.",
+        "vi": "Rau củ giàu chất dinh dưỡng."
+      },
+      {
+        "en": "This food lacks essential nutrients.",
+        "vi": "Thức ăn này thiếu chất dinh dưỡng thiết yếu."
+      }
+    ],
+    "word_family": [
+      "nutrition (n)",
+      "nutritious (adj)"
+    ],
+    "collocations": [
+      "essential nutrients",
+      "rich in nutrients",
+      "absorb nutrients",
+      "lack nutrients"
+    ],
+    "synonyms": [
+      "nourishment"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "nutrient is countable",
+        "correct": "nutrient is countable",
+        "explain_vi": "'Nutrient' là danh từ đếm được, có thể dùng số nhiều 'nutrients'"
+      }
+    ],
+    "grammar_patterns": [
+      "countable noun"
+    ]
+  },
+  {
+    "word": "calorie",
+    "phonetic": "/ˈkæl.ər.i/",
+    "meaning_vi": "calo, năng lượng từ thức ăn",
+    "meaning_en": "a unit of energy in food",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "This snack has 200 calories.",
+        "vi": "Món ăn nhẹ này có 200 calo."
+      },
+      {
+        "en": "She counts calories to lose weight.",
+        "vi": "Cô ấy đếm calo để giảm cân."
+      }
+    ],
+    "word_family": [
+      "caloric (adj)"
+    ],
+    "collocations": [
+      "low in calories",
+      "high in calories",
+      "burn calories",
+      "count calories"
+    ],
+    "synonyms": [
+      "energy unit"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I need to reduce calorie",
+        "correct": "I need to reduce calories",
+        "explain_vi": "Dùng số nhiều 'calories' khi nói chung"
+      }
+    ],
+    "grammar_patterns": [
+      "countable noun"
+    ]
+  },
+  {
+    "word": "obesity",
+    "phonetic": "/oʊˈbiː.sə.ti/",
+    "meaning_vi": "béo phì",
+    "meaning_en": "the condition of being very overweight",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Obesity can lead to heart disease.",
+        "vi": "Béo phì có thể dẫn đến bệnh tim."
+      },
+      {
+        "en": "Childhood obesity is a growing problem.",
+        "vi": "Béo phì ở trẻ em là vấn đề ngày càng tăng."
+      }
+    ],
+    "word_family": [
+      "obese (adj)"
+    ],
+    "collocations": [
+      "childhood obesity",
+      "obesity rate",
+      "obesity epidemic",
+      "cause obesity"
+    ],
+    "synonyms": [
+      "overweightness"
+    ],
+    "antonyms": [
+      "thinness"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "He is obesity",
+        "correct": "He is obese",
+        "explain_vi": "'Obesity' là danh từ, 'obese' là tính từ"
+      }
+    ],
+    "grammar_patterns": [
+      "uncountable noun"
+    ]
+  },
+  {
+    "word": "diabetes",
+    "phonetic": "/ˌdaɪ.əˈbiː.tiːz/",
+    "meaning_vi": "bệnh tiểu đường",
+    "meaning_en": "a disease in which the body cannot control the amount of sugar in the blood",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "My grandfather has diabetes.",
+        "vi": "Ông tôi bị tiểu đường."
+      },
+      {
+        "en": "She manages her diabetes with diet.",
+        "vi": "Cô ấy kiểm soát bệnh tiểu đường bằng chế độ ăn."
+      }
+    ],
+    "word_family": [
+      "diabetic (adj/n)"
+    ],
+    "collocations": [
+      "type 1 diabetes",
+      "type 2 diabetes",
+      "have diabetes",
+      "manage diabetes"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "diabetes is countable",
+        "correct": "diabetes is uncountable",
+        "explain_vi": "'Diabetes' là danh từ không đếm được"
+      }
+    ],
+    "grammar_patterns": [
+      "uncountable noun"
+    ]
+  },
+  {
+    "word": "symptom",
+    "phonetic": "/ˈsɪmp.təm/",
+    "meaning_vi": "triệu chứng",
+    "meaning_en": "a sign of illness",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Common symptoms include fever and cough.",
+        "vi": "Triệu chứng phổ biến gồm sốt và ho."
+      },
+      {
+        "en": "She has all the symptoms of flu.",
+        "vi": "Cô ấy có tất cả triệu chứng của cúm."
+      }
+    ],
+    "word_family": [
+      "symptomatic (adj)"
+    ],
+    "collocations": [
+      "common symptoms",
+      "show symptoms",
+      "symptoms of",
+      "early symptoms"
+    ],
+    "synonyms": [
+      "sign",
+      "indication"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have symptom",
+        "correct": "I have a symptom / symptoms",
+        "explain_vi": "Cần mạo từ hoặc dùng số nhiều"
+      }
+    ],
+    "grammar_patterns": [
+      "countable noun"
+    ]
+  },
+  {
+    "word": "diagnosis",
+    "phonetic": "/ˌdaɪ.əɡˈnoʊ.sɪs/",
+    "meaning_vi": "chẩn đoán",
+    "meaning_en": "the identification of an illness",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The doctor made a diagnosis of asthma.",
+        "vi": "Bác sĩ chẩn đoán bệnh hen suyễn."
+      },
+      {
+        "en": "Early diagnosis is important.",
+        "vi": "Chẩn đoán sớm rất quan trọng."
+      }
+    ],
+    "word_family": [
+      "diagnose (v)",
+      "diagnostic (adj)"
+    ],
+    "collocations": [
+      "make a diagnosis",
+      "early diagnosis",
+      "diagnosis of",
+      "confirm a diagnosis"
+    ],
+    "synonyms": [
+      "identification"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "diagnosis plural is diagnosis",
+        "correct": "diagnoses",
+        "explain_vi": "Số nhiều của 'diagnosis' là 'diagnoses'"
+      }
+    ],
+    "grammar_patterns": [
+      "countable noun (plural: diagnoses)"
+    ]
+  },
+  {
+    "word": "treatment",
+    "phonetic": "/ˈtriːt.mənt/",
+    "meaning_vi": "điều trị",
+    "meaning_en": "medical care for an illness",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She is receiving treatment for cancer.",
+        "vi": "Cô ấy đang được điều trị ung thư."
+      },
+      {
+        "en": "The treatment is effective.",
+        "vi": "Phương pháp điều trị có hiệu quả."
+      }
+    ],
+    "word_family": [
+      "treat (v)"
+    ],
+    "collocations": [
+      "receive treatment",
+      "undergo treatment",
+      "treatment for",
+      "effective treatment"
+    ],
+    "synonyms": [
+      "therapy",
+      "care"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I need a treatment",
+        "correct": "I need treatment",
+        "explain_vi": "'Treatment' thường không dùng mạo từ khi nói chung"
+      }
+    ],
+    "grammar_patterns": [
+      "uncountable noun (can be countable with 'a' for a specific type)"
+    ]
+  },
+  {
+    "word": "prescription",
+    "phonetic": "/prɪˈskrɪp.ʃən/",
+    "meaning_vi": "đơn thuốc",
+    "meaning_en": "a doctor's written order for medicine",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "You need a prescription for this drug.",
+        "vi": "Bạn cần đơn thuốc cho loại thuốc này."
+      },
+      {
+        "en": "I got a prescription from my doctor.",
+        "vi": "Tôi đã nhận đơn thuốc từ bác sĩ."
+      }
+    ],
+    "word_family": [
+      "prescribe (v)"
+    ],
+    "collocations": [
+      "write a prescription",
+      "fill a prescription",
+      "on prescription",
+      "prescription drug"
+    ],
+    "synonyms": [
+      "script (informal)"
+    ],
+    "antonyms": [
+      "over-the-counter"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I need prescription",
+        "correct": "I need a prescription",
+        "explain_vi": "Cần mạo từ 'a'"
+      }
+    ],
+    "grammar_patterns": [
+      "countable noun"
+    ]
+  },
+  {
+    "word": "dose",
+    "phonetic": "/doʊs/",
+    "meaning_vi": "liều (thuốc)",
+    "meaning_en": "a measured amount of medicine",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Take one dose twice a day.",
+        "vi": "Uống một liều hai lần mỗi ngày."
+      },
+      {
+        "en": "The doctor increased the dose.",
+        "vi": "Bác sĩ đã tăng liều."
+      }
+    ],
+    "word_family": [
+      "dosage (n)"
+    ],
+    "collocations": [
+      "take a dose",
+      "increase the dose",
+      "daily dose",
+      "overdose"
+    ],
+    "synonyms": [
+      "amount",
+      "quantity"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I took dose",
+        "correct": "I took a dose",
+        "explain_vi": "Cần mạo từ 'a'"
+      }
+    ],
+    "grammar_patterns": [
+      "countable noun"
+    ]
+  },
+  {
+    "word": "side effect",
+    "phonetic": "/ˈsaɪd ɪˌfekt/",
+    "meaning_vi": "tác dụng phụ",
+    "meaning_en": "an additional effect of a drug, usually bad",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "This medicine has no side effects.",
+        "vi": "Thuốc này không có tác dụng phụ."
+      },
+      {
+        "en": "Headache is a common side effect.",
+        "vi": "Đau đầu là tác dụng phụ thường gặp."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "side effects of",
+      "common side effects",
+      "cause side effects",
+      "no side effects"
+    ],
+    "synonyms": [
+      "adverse reaction"
+    ],
+    "antonyms": [
+      "benefit"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "side effect is countable",
+        "correct": "side effect is countable",
+        "explain_vi": "'Side effect' là danh từ đếm được, có số nhiều 'side effects'"
+      }
+    ],
+    "grammar_patterns": [
+      "countable noun (often plural)"
+    ]
+  },
+  {
+    "word": "injection",
+    "phonetic": "/ɪnˈdʒek.ʃən/",
+    "meaning_vi": "mũi tiêm",
+    "meaning_en": "the act of putting a liquid into the body with a needle",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The nurse gave me an injection.",
+        "vi": "Y tá đã tiêm cho tôi."
+      },
+      {
+        "en": "Some vaccines require multiple injections.",
+        "vi": "Một số vắc-xin cần nhiều mũi tiêm."
+      }
+    ],
+    "word_family": [
+      "inject (v)"
+    ],
+    "collocations": [
+      "give an injection",
+      "get an injection",
+      "injection site",
+      "flu injection"
+    ],
+    "synonyms": [
+      "shot (informal)",
+      "vaccination"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have injection",
+        "correct": "I have an injection",
+        "explain_vi": "Cần mạo từ 'an'"
+      }
+    ],
+    "grammar_patterns": [
+      "countable noun"
+    ]
+  },
+  {
+    "word": "bruise",
+    "phonetic": "/bruːz/",
+    "meaning_vi": "vết bầm tím",
+    "meaning_en": "a dark mark on the skin from an injury",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I have a bruise on my leg.",
+        "vi": "Tôi có vết bầm trên chân."
+      },
+      {
+        "en": "The bruise turned purple.",
+        "vi": "Vết bầm chuyển sang màu tím."
+      }
+    ],
+    "word_family": [
+      "bruise (v)",
+      "bruised (adj)"
+    ],
+    "collocations": [
+      "have a bruise",
+      "get a bruise",
+      "black and blue bruise",
+      "cover a bruise"
+    ],
+    "synonyms": [
+      "contusion"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I bruise",
+        "correct": "I have a bruise",
+        "explain_vi": "Dùng 'have a bruise' thay vì động từ 'bruise' khi nói về vết thương"
+      }
+    ],
+    "grammar_patterns": [
+      "countable noun"
+    ]
+  },
+  {
+    "word": "swollen",
+    "phonetic": "/ˈswoʊ.lən/",
+    "meaning_vi": "sưng, phồng",
+    "meaning_en": "larger than normal due to injury or infection",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "My ankle is swollen.",
+        "vi": "Mắt cá chân của tôi bị sưng."
+      },
+      {
+        "en": "She has a swollen gland.",
+        "vi": "Cô ấy bị sưng hạch."
+      }
+    ],
+    "word_family": [
+      "swell (v)",
+      "swelling (n)"
+    ],
+    "collocations": [
+      "swollen ankle",
+      "swollen eyes",
+      "swollen lymph nodes",
+      "become swollen"
+    ],
+    "synonyms": [
+      "puffy",
+      "inflamed"
+    ],
+    "antonyms": [
+      "normal",
+      "flat"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I am swollen",
+        "correct": "My [body part] is swollen",
+        "explain_vi": "Không dùng 'I am swollen' mà chỉ bộ phận cơ thể bị sưng"
+      }
+    ],
+    "grammar_patterns": [
+      "adjective (cannot be used with 'very')"
+    ]
+  },
+  {
+    "word": "fracture",
+    "phonetic": "/ˈfræk.tʃər/",
+    "meaning_vi": "gãy xương",
+    "meaning_en": "a break in a bone",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "He suffered a fracture in his arm.",
+        "vi": "Anh ấy bị gãy xương cánh tay."
+      },
+      {
+        "en": "The X-ray showed a hairline fracture.",
+        "vi": "X-quang cho thấy một vết nứt nhỏ."
+      }
+    ],
+    "word_family": [
+      "fracture (v)",
+      "fractured (adj)"
+    ],
+    "collocations": [
+      "suffer a fracture",
+      "hairline fracture",
+      "compound fracture",
+      "fracture of"
+    ],
+    "synonyms": [
+      "break",
+      "crack"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have fracture",
+        "correct": "I have a fracture",
+        "explain_vi": "Cần mạo từ 'a'"
+      }
+    ],
+    "grammar_patterns": [
+      "countable noun"
+    ]
+  },
+  {
+    "word": "injury",
+    "phonetic": "/ˈɪn.dʒər.i/",
+    "meaning_vi": "chấn thương",
+    "meaning_en": "physical harm to the body",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "He suffered a serious injury.",
+        "vi": "Anh ấy bị chấn thương nghiêm trọng."
+      },
+      {
+        "en": "Injury to the back can be painful.",
+        "vi": "Chấn thương lưng có thể rất đau."
+      }
+    ],
+    "word_family": [
+      "injure (v)",
+      "injured (adj)"
+    ],
+    "collocations": [
+      "serious injury",
+      "suffer an injury",
+      "injury to",
+      "prevent injury"
+    ],
+    "synonyms": [
+      "harm",
+      "damage"
+    ],
+    "antonyms": [
+      "healing"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I have injury",
+        "correct": "I have an injury",
+        "explain_vi": "Cần mạo từ 'an'"
+      }
+    ],
+    "grammar_patterns": [
+      "countable noun"
+    ]
+  },
+  {
+    "word": "recovery",
+    "phonetic": "/rɪˈkʌv.ər.i/",
+    "meaning_vi": "sự hồi phục",
+    "meaning_en": "the process of getting better after an illness or injury",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Her recovery was slow.",
+        "vi": "Sự hồi phục của cô ấy diễn ra chậm."
+      },
+      {
+        "en": "He is on the road to recovery.",
+        "vi": "Anh ấy đang trên đà hồi phục."
+      }
+    ],
+    "word_family": [
+      "recover (v)"
+    ],
+    "collocations": [
+      "make a recovery",
+      "full recovery",
+      "speedy recovery",
+      "recovery from"
+    ],
+    "synonyms": [
+      "healing",
+      "recuperation"
+    ],
+    "antonyms": [
+      "relapse"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I am recovery",
+        "correct": "I am recovering",
+        "explain_vi": "'Recovery' là danh từ, dùng động từ 'recover'"
+      }
+    ],
+    "grammar_patterns": [
+      "uncountable noun (can be countable with 'a')"
+    ]
+  },
+  {
+    "word": "relapse",
+    "phonetic": "/rɪˈlæps/",
+    "meaning_vi": "tái phát",
+    "meaning_en": "the return of a disease after recovery",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "He had a relapse after stopping treatment.",
+        "vi": "Anh ấy bị tái phát sau khi ngừng điều trị."
+      },
+      {
+        "en": "The patient is at risk of relapse.",
+        "vi": "Bệnh nhân có nguy cơ tái phát."
+      }
+    ],
+    "word_family": [
+      "relapse (v)"
+    ],
+    "collocations": [
+      "have a relapse",
+      "suffer a relapse",
+      "risk of relapse",
+      "prevent relapse"
+    ],
+    "synonyms": [
+      "recurrence"
+    ],
+    "antonyms": [
+      "recovery"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I relapsed",
+        "correct": "I had a relapse",
+        "explain_vi": "Thường dùng 'have a relapse' hơn là động từ 'relapse'"
+      }
+    ],
+    "grammar_patterns": [
+      "countable noun"
+    ]
+  },
+  {
+    "word": "immunity",
+    "phonetic": "/ɪˈmjuː.nə.ti/",
+    "meaning_vi": "miễn dịch",
+    "meaning_en": "the body's ability to resist disease",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Vaccines build immunity.",
+        "vi": "Vắc-xin xây dựng miễn dịch."
+      },
+      {
+        "en": "She has natural immunity to the virus.",
+        "vi": "Cô ấy có miễn dịch tự nhiên với virus."
+      }
+    ],
+    "word_family": [
+      "immune (adj)",
+      "immunize (v)"
+    ],
+    "collocations": [
+      "build immunity",
+      "natural immunity",
+      "immunity to",
+      "weaken immunity"
+    ],
+    "synonyms": [
+      "resistance"
+    ],
+    "antonyms": [
+      "susceptibility"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I have immunity",
+        "correct": "I have immunity to [disease]",
+        "explain_vi": "Cần thêm 'to' khi nói miễn dịch với bệnh gì"
+      }
+    ],
+    "grammar_patterns": [
+      "uncountable noun"
+    ]
+  },
+  {
+    "word": "sore",
+    "phonetic": "/sɔːr/",
+    "meaning_vi": "đau, nhức",
+    "meaning_en": "painful and uncomfortable, especially when touched",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "I have a sore throat.",
+        "vi": "Tôi bị đau họng."
+      },
+      {
+        "en": "My muscles are sore after the workout.",
+        "vi": "Cơ bắp của tôi bị nhức sau khi tập."
+      }
+    ],
+    "word_family": [
+      "soreness (n)"
+    ],
+    "collocations": [
+      "sore throat",
+      "sore muscles",
+      "feel sore"
+    ],
+    "synonyms": [
+      "painful",
+      "tender"
+    ],
+    "antonyms": [
+      "pain-free"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I have sore throat.",
+        "correct": "I have a sore throat.",
+        "explain_vi": "Cần mạo từ 'a' trước 'sore throat'."
+      }
+    ],
+    "grammar_patterns": [
+      "have a + adj + body part"
+    ]
+  },
+  {
+    "word": "nausea",
+    "phonetic": "/ˈnɔː.zi.ə/",
+    "meaning_vi": "buồn nôn",
+    "meaning_en": "the feeling that you are going to vomit",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The smell caused nausea.",
+        "vi": "Mùi đó gây buồn nôn."
+      },
+      {
+        "en": "I have nausea and dizziness.",
+        "vi": "Tôi bị buồn nôn và chóng mặt."
+      }
+    ],
+    "word_family": [
+      "nauseous (adj)",
+      "nauseate (v)"
+    ],
+    "collocations": [
+      "feel nausea",
+      "cause nausea",
+      "suffer from nausea"
+    ],
+    "synonyms": [
+      "queasiness",
+      "sickness"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have nausea feeling.",
+        "correct": "I feel nauseous.",
+        "explain_vi": "Nói 'feel nauseous' thay vì 'have nausea feeling'."
+      }
+    ],
+    "grammar_patterns": [
+      "have + nausea"
+    ]
+  },
+  {
+    "word": "dizzy",
+    "phonetic": "/ˈdɪz.i/",
+    "meaning_vi": "chóng mặt, hoa mắt",
+    "meaning_en": "feeling as if everything is spinning or you might fall",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "I felt dizzy after standing up too fast.",
+        "vi": "Tôi cảm thấy chóng mặt sau khi đứng dậy quá nhanh."
+      },
+      {
+        "en": "The heat made me dizzy.",
+        "vi": "Cái nóng làm tôi chóng mặt."
+      }
+    ],
+    "word_family": [
+      "dizziness (n)"
+    ],
+    "collocations": [
+      "feel dizzy",
+      "get dizzy",
+      "make someone dizzy"
+    ],
+    "synonyms": [
+      "lightheaded",
+      "giddy"
+    ],
+    "antonyms": [
+      "steady"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I have dizzy.",
+        "correct": "I feel dizzy.",
+        "explain_vi": "Không dùng 'have', dùng 'feel' với dizzy."
+      }
+    ],
+    "grammar_patterns": [
+      "feel + dizzy"
+    ]
+  },
+  {
+    "word": "vomit",
+    "phonetic": "/ˈvɒm.ɪt/",
+    "meaning_vi": "nôn mửa",
+    "meaning_en": "to empty the contents of the stomach through the mouth",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "He vomited after eating spoiled food.",
+        "vi": "Anh ấy nôn sau khi ăn thức ăn hỏng."
+      },
+      {
+        "en": "The patient vomited twice.",
+        "vi": "Bệnh nhân nôn hai lần."
+      }
+    ],
+    "word_family": [
+      "vomiting (n)",
+      "vomit (n)"
+    ],
+    "collocations": [
+      "vomit up",
+      "make someone vomit",
+      "feel like vomiting"
+    ],
+    "synonyms": [
+      "throw up",
+      "puke"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I vomit out.",
+        "correct": "I vomit.",
+        "explain_vi": "Không cần 'out', chỉ cần 'vomit'."
+      }
+    ],
+    "grammar_patterns": [
+      "vomit + (adverb)"
+    ]
+  },
+  {
+    "word": "chill",
+    "phonetic": "/tʃɪl/",
+    "meaning_vi": "ớn lạnh, rùng mình",
+    "meaning_en": "a feeling of coldness, often with shivering, as when ill",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I have chills and a fever.",
+        "vi": "Tôi bị ớn lạnh và sốt."
+      },
+      {
+        "en": "The patient complained of chills.",
+        "vi": "Bệnh nhân phàn nàn về cảm giác ớn lạnh."
+      }
+    ],
+    "word_family": [
+      "chilly (adj)",
+      "chill (v)"
+    ],
+    "collocations": [
+      "have chills",
+      "get chills",
+      "feel a chill"
+    ],
+    "synonyms": [
+      "shivers",
+      "cold spell"
+    ],
+    "antonyms": [
+      "fever"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I have chill.",
+        "correct": "I have chills.",
+        "explain_vi": "Thường dùng số nhiều 'chills'."
+      }
+    ],
+    "grammar_patterns": [
+      "have + chills"
+    ]
+  },
+  {
+    "word": "rash",
+    "phonetic": "/ræʃ/",
+    "meaning_vi": "phát ban",
+    "meaning_en": "an area of red spots on the skin, often itchy",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She developed a rash after using the cream.",
+        "vi": "Cô ấy bị phát ban sau khi dùng kem."
+      },
+      {
+        "en": "The baby has a diaper rash.",
+        "vi": "Em bé bị hăm tã."
+      }
+    ],
+    "word_family": [
+      "rash (adj)"
+    ],
+    "collocations": [
+      "have a rash",
+      "break out in a rash",
+      "skin rash"
+    ],
+    "synonyms": [
+      "hives",
+      "eruption"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have rash.",
+        "correct": "I have a rash.",
+        "explain_vi": "Cần mạo từ 'a'."
+      }
+    ],
+    "grammar_patterns": [
+      "have a + rash"
+    ]
+  },
+  {
+    "word": "itch",
+    "phonetic": "/ɪtʃ/",
+    "meaning_vi": "ngứa",
+    "meaning_en": "an uncomfortable feeling on the skin that makes you want to scratch",
+    "pos": "noun/verb",
+    "examples": [
+      {
+        "en": "I have an itch on my arm.",
+        "vi": "Tôi bị ngứa ở cánh tay."
+      },
+      {
+        "en": "The mosquito bite itches.",
+        "vi": "Vết muỗi đốt bị ngứa."
+      }
+    ],
+    "word_family": [
+      "itchy (adj)",
+      "itching (n)"
+    ],
+    "collocations": [
+      "have an itch",
+      "scratch an itch",
+      "itchy skin"
+    ],
+    "synonyms": [
+      "tickle",
+      "irritation"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I feel itchy.",
+        "correct": "I have an itch.",
+        "explain_vi": "Có thể dùng 'I have an itch' hoặc 'I feel itchy'."
+      }
+    ],
+    "grammar_patterns": [
+      "have an + itch"
+    ]
+  },
+  {
+    "word": "sneeze",
+    "phonetic": "/sniːz/",
+    "meaning_vi": "hắt hơi",
+    "meaning_en": "to suddenly force air out of your nose and mouth because of irritation",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "I can't stop sneezing.",
+        "vi": "Tôi không ngừng hắt hơi."
+      },
+      {
+        "en": "Pepper makes me sneeze.",
+        "vi": "Hạt tiêu làm tôi hắt hơi."
+      }
+    ],
+    "word_family": [
+      "sneeze (n)",
+      "sneezy (adj)"
+    ],
+    "collocations": [
+      "sneeze a lot",
+      "sneeze into your elbow",
+      "sneeze fit"
+    ],
+    "synonyms": [
+      "achoo"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I sneeze out.",
+        "correct": "I sneeze.",
+        "explain_vi": "Không cần 'out'."
+      }
+    ],
+    "grammar_patterns": [
+      "sneeze + (adverb)"
+    ]
+  },
+  {
+    "word": "cough",
+    "phonetic": "/kɒf/",
+    "meaning_vi": "ho",
+    "meaning_en": "to force air out of your lungs with a sudden sound",
+    "pos": "verb/noun",
+    "examples": [
+      {
+        "en": "He has been coughing all night.",
+        "vi": "Anh ấy ho suốt đêm."
+      },
+      {
+        "en": "She has a dry cough.",
+        "vi": "Cô ấy bị ho khan."
+      }
+    ],
+    "word_family": [
+      "coughing (n)",
+      "cough (n)"
+    ],
+    "collocations": [
+      "have a cough",
+      "cough up",
+      "cough syrup"
+    ],
+    "synonyms": [
+      "hack",
+      "clear throat"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I cough blood.",
+        "correct": "I cough up blood.",
+        "explain_vi": "Dùng 'cough up' khi ho ra thứ gì."
+      }
+    ],
+    "grammar_patterns": [
+      "cough + (adverb)",
+      "have a + cough"
+    ]
+  },
+  {
+    "word": "faint",
+    "phonetic": "/feɪnt/",
+    "meaning_vi": "ngất xỉu",
+    "meaning_en": "to suddenly become unconscious for a short time",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "She fainted from the heat.",
+        "vi": "Cô ấy ngất vì nóng."
+      },
+      {
+        "en": "He felt like he was going to faint.",
+        "vi": "Anh ấy cảm thấy như sắp ngất."
+      }
+    ],
+    "word_family": [
+      "faint (adj)",
+      "fainting (n)"
+    ],
+    "collocations": [
+      "faint from",
+      "faint away",
+      "feel faint"
+    ],
+    "synonyms": [
+      "pass out",
+      "collapse"
+    ],
+    "antonyms": [
+      "come to"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I fainted down.",
+        "correct": "I fainted.",
+        "explain_vi": "Không cần 'down'."
+      }
+    ],
+    "grammar_patterns": [
+      "faint + (from/with)"
+    ]
+  },
+  {
+    "word": "bandage",
+    "phonetic": "/ˈbæn.dɪdʒ/",
+    "meaning_vi": "băng gạc",
+    "meaning_en": "a strip of material used to cover and protect a wound",
+    "pos": "noun/verb",
+    "examples": [
+      {
+        "en": "The nurse put a bandage on the cut.",
+        "vi": "Y tá băng vết cắt."
+      },
+      {
+        "en": "He bandaged his ankle.",
+        "vi": "Anh ấy băng bó mắt cá chân."
+      }
+    ],
+    "word_family": [
+      "bandaging (n)"
+    ],
+    "collocations": [
+      "put on a bandage",
+      "change a bandage",
+      "bandage a wound"
+    ],
+    "synonyms": [
+      "dressing",
+      "plaster"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I bandage my hand.",
+        "correct": "I put a bandage on my hand.",
+        "explain_vi": "Có thể dùng 'bandage' như động từ nhưng thông thường hơn là 'put a bandage on'."
+      }
+    ],
+    "grammar_patterns": [
+      "put a bandage on + body part"
+    ]
+  },
+  {
+    "word": "cast",
+    "phonetic": "/kæst/",
+    "meaning_vi": "bó bột",
+    "meaning_en": "a hard covering to protect a broken bone",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "He has a cast on his arm.",
+        "vi": "Anh ấy bó bột ở cánh tay."
+      },
+      {
+        "en": "The doctor put a cast on his leg.",
+        "vi": "Bác sĩ bó bột chân anh ấy."
+      }
+    ],
+    "word_family": [
+      "cast (v)"
+    ],
+    "collocations": [
+      "have a cast",
+      "put a cast on",
+      "remove a cast"
+    ],
+    "synonyms": [
+      "plaster cast"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have cast.",
+        "correct": "I have a cast.",
+        "explain_vi": "Cần mạo từ 'a'."
+      }
+    ],
+    "grammar_patterns": [
+      "have a cast on + body part"
+    ]
+  },
+  {
+    "word": "crutch",
+    "phonetic": "/krʌtʃ/",
+    "meaning_vi": "nạng",
+    "meaning_en": "a stick that supports you when walking with an injured leg or foot",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "He uses crutches after the accident.",
+        "vi": "Anh ấy dùng nạng sau tai nạn."
+      },
+      {
+        "en": "She is on crutches.",
+        "vi": "Cô ấy đang chống nạng."
+      }
+    ],
+    "word_family": [
+      "crutch (v)"
+    ],
+    "collocations": [
+      "use crutches",
+      "walk on crutches",
+      "be on crutches"
+    ],
+    "synonyms": [
+      "walking stick"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have crutch.",
+        "correct": "I have crutches.",
+        "explain_vi": "Thường dùng số nhiều vì có hai cái."
+      }
+    ],
+    "grammar_patterns": [
+      "be on crutches"
+    ]
+  },
+  {
+    "word": "wheelchair",
+    "phonetic": "/ˈwiːl.tʃeər/",
+    "meaning_vi": "xe lăn",
+    "meaning_en": "a chair with wheels for people who cannot walk",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "He is in a wheelchair.",
+        "vi": "Anh ấy ngồi xe lăn."
+      },
+      {
+        "en": "The hospital has wheelchair access.",
+        "vi": "Bệnh viện có lối đi cho xe lăn."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "in a wheelchair",
+      "use a wheelchair",
+      "wheelchair user"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "He uses wheelchair.",
+        "correct": "He uses a wheelchair.",
+        "explain_vi": "Cần mạo từ 'a'."
+      }
+    ],
+    "grammar_patterns": [
+      "be in a wheelchair"
+    ]
+  },
+  {
+    "word": "stretcher",
+    "phonetic": "/ˈstretʃ.ər/",
+    "meaning_vi": "cáng",
+    "meaning_en": "a frame for carrying a sick or injured person",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "They carried him on a stretcher.",
+        "vi": "Họ khiêng anh ấy trên cáng."
+      },
+      {
+        "en": "The paramedics put the patient on a stretcher.",
+        "vi": "Nhân viên cấp cứu đặt bệnh nhân lên cáng."
+      }
+    ],
+    "word_family": [
+      "stretch (v)"
+    ],
+    "collocations": [
+      "on a stretcher",
+      "carry on a stretcher",
+      "load onto a stretcher"
+    ],
+    "synonyms": [
+      "gurney"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "They take him on stretcher.",
+        "correct": "They carry him on a stretcher.",
+        "explain_vi": "Dùng 'carry' và mạo từ 'a'."
+      }
+    ],
+    "grammar_patterns": [
+      "on a stretcher"
+    ]
+  },
+  {
+    "word": "ambulance",
+    "phonetic": "/ˈæm.bjə.ləns/",
+    "meaning_vi": "xe cứu thương",
+    "meaning_en": "a vehicle for taking sick or injured people to hospital",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Call an ambulance!",
+        "vi": "Gọi xe cứu thương!"
+      },
+      {
+        "en": "The ambulance arrived quickly.",
+        "vi": "Xe cứu thương đến nhanh chóng."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "call an ambulance",
+      "ambulance service",
+      "ambulance driver"
+    ],
+    "synonyms": [
+      "emergency vehicle"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Call ambulance.",
+        "correct": "Call an ambulance.",
+        "explain_vi": "Cần mạo từ 'an'."
+      }
+    ],
+    "grammar_patterns": [
+      "call an ambulance"
+    ]
+  },
+  {
+    "word": "pharmacy",
+    "phonetic": "/ˈfɑːr.mə.si/",
+    "meaning_vi": "hiệu thuốc",
+    "meaning_en": "a shop where medicines are sold",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I need to go to the pharmacy.",
+        "vi": "Tôi cần đến hiệu thuốc."
+      },
+      {
+        "en": "The pharmacy is open 24 hours.",
+        "vi": "Hiệu thuốc mở cửa 24 giờ."
+      }
+    ],
+    "word_family": [
+      "pharmacist (n)"
+    ],
+    "collocations": [
+      "at the pharmacy",
+      "pharmacy counter",
+      "pharmacy technician"
+    ],
+    "synonyms": [
+      "drugstore",
+      "chemist"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go to pharmacy.",
+        "correct": "I go to the pharmacy.",
+        "explain_vi": "Cần mạo từ 'the'."
+      }
+    ],
+    "grammar_patterns": [
+      "go to the pharmacy"
+    ]
+  },
+  {
+    "word": "prescription",
+    "phonetic": "/prɪˈskrɪp.ʃən/",
+    "meaning_vi": "đơn thuốc",
+    "meaning_en": "a doctor's written instruction for medicine",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The doctor gave me a prescription.",
+        "vi": "Bác sĩ cho tôi đơn thuốc."
+      },
+      {
+        "en": "I need to fill this prescription at the pharmacy.",
+        "vi": "Tôi cần mua thuốc theo đơn này ở hiệu thuốc."
+      }
+    ],
+    "word_family": [
+      "prescribe (v)"
+    ],
+    "collocations": [
+      "write a prescription",
+      "fill a prescription",
+      "prescription drug"
+    ],
+    "synonyms": [
+      "recipe (rare)"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have prescription.",
+        "correct": "I have a prescription.",
+        "explain_vi": "Cần mạo từ 'a'."
+      }
+    ],
+    "grammar_patterns": [
+      "have a prescription",
+      "fill a prescription"
+    ]
+  },
+  {
+    "word": "dose",
+    "phonetic": "/doʊs/",
+    "meaning_vi": "liều lượng",
+    "meaning_en": "a specific amount of medicine to be taken at one time",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Take one dose of the medicine every 6 hours.",
+        "vi": "Uống một liều thuốc mỗi 6 giờ."
+      },
+      {
+        "en": "The doctor increased the dose.",
+        "vi": "Bác sĩ tăng liều."
+      }
+    ],
+    "word_family": [
+      "dosage (n)"
+    ],
+    "collocations": [
+      "take a dose",
+      "dose of medicine",
+      "overdose"
+    ],
+    "synonyms": [
+      "amount",
+      "quantity"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I take dose of medicine.",
+        "correct": "I take a dose of medicine.",
+        "explain_vi": "Cần mạo từ 'a'."
+      }
+    ],
+    "grammar_patterns": [
+      "take a dose of + medicine"
+    ]
+  },
+  {
+    "word": "side effect",
+    "phonetic": "/ˈsaɪd ɪˌfekt/",
+    "meaning_vi": "tác dụng phụ",
+    "meaning_en": "an extra effect of a drug that is not intended",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "This medication has side effects.",
+        "vi": "Thuốc này có tác dụng phụ."
+      },
+      {
+        "en": "Drowsiness is a common side effect.",
+        "vi": "Buồn ngủ là tác dụng phụ phổ biến."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "have side effects",
+      "cause side effects",
+      "side effect profile"
+    ],
+    "synonyms": [
+      "adverse reaction"
+    ],
+    "antonyms": [
+      "benefit"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "It has side effect.",
+        "correct": "It has side effects.",
+        "explain_vi": "Thường dùng số nhiều."
+      }
+    ],
+    "grammar_patterns": [
+      "have + side effects"
+    ]
+  }
+]

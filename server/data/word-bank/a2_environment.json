@@ -1,0 +1,2402 @@
+[
+  {
+    "word": "environment",
+    "phonetic": "/ɪnˈvaɪrənmənt/",
+    "meaning_vi": "môi trường",
+    "meaning_en": "the natural world, including land, water, air, plants, and animals",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We need to protect the environment.",
+        "vi": "Chúng ta cần bảo vệ môi trường."
+      }
+    ],
+    "word_family": [
+      "environmental (adj)",
+      "environmentally (adv)"
+    ],
+    "collocations": [
+      "protect the environment",
+      "pollute the environment",
+      "environmental issues"
+    ],
+    "synonyms": [
+      "nature",
+      "natural world"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "environment is important",
+        "correct": "the environment is important",
+        "explain_vi": "Cần mạo từ 'the' trước 'environment' khi nói chung"
+      }
+    ],
+    "grammar_patterns": [
+      "the environment (countable, usually singular)"
+    ]
+  },
+  {
+    "word": "pollution",
+    "phonetic": "/pəˈluːʃən/",
+    "meaning_vi": "ô nhiễm",
+    "meaning_en": "dirty or harmful substances in the air, water, or land",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Air pollution is bad for our health.",
+        "vi": "Ô nhiễm không khí có hại cho sức khỏe của chúng ta."
+      }
+    ],
+    "word_family": [
+      "pollute (v)",
+      "pollutant (n)"
+    ],
+    "collocations": [
+      "air pollution",
+      "water pollution",
+      "reduce pollution"
+    ],
+    "synonyms": [
+      "contamination"
+    ],
+    "antonyms": [
+      "cleanliness"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "pollute",
+        "correct": "pollution (noun)",
+        "explain_vi": "Phân biệt động từ 'pollute' và danh từ 'pollution'"
+      }
+    ],
+    "grammar_patterns": [
+      "uncountable noun"
+    ]
+  },
+  {
+    "word": "recycle",
+    "phonetic": "/ˌriːˈsaɪkəl/",
+    "meaning_vi": "tái chế",
+    "meaning_en": "to convert waste into reusable material",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "You should recycle plastic bottles.",
+        "vi": "Bạn nên tái chế chai nhựa."
+      }
+    ],
+    "word_family": [
+      "recycling (n)",
+      "recyclable (adj)"
+    ],
+    "collocations": [
+      "recycle paper",
+      "recycle glass",
+      "recycling bin"
+    ],
+    "synonyms": [
+      "reprocess",
+      "reuse"
+    ],
+    "antonyms": [
+      "waste"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "recycle the rubbish",
+        "correct": "recycle waste",
+        "explain_vi": "Dùng 'waste' thay vì 'rubbish' cho tái chế"
+      }
+    ],
+    "grammar_patterns": [
+      "transitive verb"
+    ]
+  },
+  {
+    "word": "waste",
+    "phonetic": "/weɪst/",
+    "meaning_vi": "rác thải, lãng phí",
+    "meaning_en": "unwanted materials; to use something carelessly",
+    "pos": "noun/verb",
+    "examples": [
+      {
+        "en": "Don't waste water.",
+        "vi": "Đừng lãng phí nước."
+      }
+    ],
+    "word_family": [
+      "wasteful (adj)",
+      "wastage (n)"
+    ],
+    "collocations": [
+      "food waste",
+      "waste time",
+      "waste management"
+    ],
+    "synonyms": [
+      "rubbish (UK)",
+      "garbage (US)"
+    ],
+    "antonyms": [
+      "save"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "waste the time",
+        "correct": "waste time (no article)",
+        "explain_vi": "Không dùng mạo từ 'the' trước 'time' khi nói chung"
+      }
+    ],
+    "grammar_patterns": [
+      "uncountable noun; verb + object"
+    ]
+  },
+  {
+    "word": "energy",
+    "phonetic": "/ˈenərdʒi/",
+    "meaning_vi": "năng lượng",
+    "meaning_en": "power from sources like electricity, fuel, or the sun",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Solar energy is clean.",
+        "vi": "Năng lượng mặt trời là sạch."
+      }
+    ],
+    "word_family": [
+      "energetic (adj)",
+      "energize (v)"
+    ],
+    "collocations": [
+      "save energy",
+      "renewable energy",
+      "energy consumption"
+    ],
+    "synonyms": [
+      "power"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "energies",
+        "correct": "energy (uncountable)",
+        "explain_vi": "Không dùng số nhiều 'energies' trừ trường hợp đặc biệt"
+      }
+    ],
+    "grammar_patterns": [
+      "uncountable noun"
+    ]
+  },
+  {
+    "word": "global warming",
+    "phonetic": "/ˈɡloʊbəl ˈwɔːrmɪŋ/",
+    "meaning_vi": "sự nóng lên toàn cầu",
+    "meaning_en": "the increase in the earth's temperature",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Global warming is a serious problem.",
+        "vi": "Sự nóng lên toàn cầu là một vấn đề nghiêm trọng."
+      }
+    ],
+    "word_family": [
+      "warm (v/adj)"
+    ],
+    "collocations": [
+      "cause global warming",
+      "fight global warming",
+      "effects of global warming"
+    ],
+    "synonyms": [
+      "climate change"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "the global warming",
+        "correct": "global warming (no article)",
+        "explain_vi": "Không dùng mạo từ 'the' trước 'global warming'"
+      }
+    ],
+    "grammar_patterns": [
+      "uncountable noun"
+    ]
+  },
+  {
+    "word": "climate",
+    "phonetic": "/ˈklaɪmɪt/",
+    "meaning_vi": "khí hậu",
+    "meaning_en": "the usual weather conditions in a place",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The climate here is hot and humid.",
+        "vi": "Khí hậu ở đây nóng và ẩm."
+      }
+    ],
+    "word_family": [
+      "climatic (adj)",
+      "climatology (n)"
+    ],
+    "collocations": [
+      "climate change",
+      "tropical climate",
+      "mild climate"
+    ],
+    "synonyms": [
+      "weather patterns"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "climate is changing",
+        "correct": "the climate is changing",
+        "explain_vi": "Cần mạo từ 'the' khi nói về khí hậu cụ thể"
+      }
+    ],
+    "grammar_patterns": [
+      "countable noun, usually singular"
+    ]
+  },
+  {
+    "word": "reduce",
+    "phonetic": "/rɪˈdjuːs/",
+    "meaning_vi": "giảm",
+    "meaning_en": "to make something smaller or less",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "We should reduce plastic use.",
+        "vi": "Chúng ta nên giảm sử dụng nhựa."
+      }
+    ],
+    "word_family": [
+      "reduction (n)",
+      "reducible (adj)"
+    ],
+    "collocations": [
+      "reduce waste",
+      "reduce emissions",
+      "reduce cost"
+    ],
+    "synonyms": [
+      "cut down",
+      "lessen"
+    ],
+    "antonyms": [
+      "increase"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "reduce the pollution",
+        "correct": "reduce pollution (no article)",
+        "explain_vi": "Không dùng mạo từ với danh từ không đếm được như 'pollution'"
+      }
+    ],
+    "grammar_patterns": [
+      "transitive verb"
+    ]
+  },
+  {
+    "word": "reuse",
+    "phonetic": "/ˌriːˈjuːz/",
+    "meaning_vi": "tái sử dụng",
+    "meaning_en": "to use something again",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "You can reuse glass jars.",
+        "vi": "Bạn có thể tái sử dụng lọ thủy tinh."
+      }
+    ],
+    "word_family": [
+      "reusable (adj)",
+      "reuse (n)"
+    ],
+    "collocations": [
+      "reuse bags",
+      "reuse containers",
+      "reuse water"
+    ],
+    "synonyms": [
+      "repurpose"
+    ],
+    "antonyms": [
+      "discard"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "reuse the bottle again",
+        "correct": "reuse the bottle",
+        "explain_vi": "Không cần 'again' vì 'reuse' đã có nghĩa là dùng lại"
+      }
+    ],
+    "grammar_patterns": [
+      "transitive verb"
+    ]
+  },
+  {
+    "word": "nature",
+    "phonetic": "/ˈneɪtʃər/",
+    "meaning_vi": "thiên nhiên",
+    "meaning_en": "the natural world, including plants, animals, and landscapes",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I love spending time in nature.",
+        "vi": "Tôi thích dành thời gian ở thiên nhiên."
+      }
+    ],
+    "word_family": [
+      "natural (adj)",
+      "naturally (adv)"
+    ],
+    "collocations": [
+      "protect nature",
+      "nature reserve",
+      "nature lover"
+    ],
+    "synonyms": [
+      "the outdoors",
+      "wilderness"
+    ],
+    "antonyms": [
+      "city",
+      "urban"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "nature is beautiful",
+        "correct": "nature is beautiful (no article)",
+        "explain_vi": "Không dùng mạo từ 'the' khi nói về thiên nhiên nói chung"
+      }
+    ],
+    "grammar_patterns": [
+      "uncountable noun"
+    ]
+  },
+  {
+    "word": "plastic",
+    "phonetic": "/ˈplæstɪk/",
+    "meaning_vi": "nhựa",
+    "meaning_en": "a synthetic material used for many products",
+    "pos": "noun/adj",
+    "examples": [
+      {
+        "en": "Plastic bags harm the environment.",
+        "vi": "Túi nhựa gây hại cho môi trường."
+      }
+    ],
+    "word_family": [
+      "plasticity (n)",
+      "plasticize (v)"
+    ],
+    "collocations": [
+      "plastic bottle",
+      "plastic waste",
+      "plastic pollution"
+    ],
+    "synonyms": [
+      "synthetic"
+    ],
+    "antonyms": [
+      "biodegradable",
+      "natural"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "plastic is not good",
+        "correct": "plastic is harmful",
+        "explain_vi": "Dùng 'harmful' thay vì 'not good' để chính xác hơn"
+      }
+    ],
+    "grammar_patterns": [
+      "uncountable noun; adjective"
+    ]
+  },
+  {
+    "word": "forest",
+    "phonetic": "/ˈfɔːrɪst/",
+    "meaning_vi": "rừng",
+    "meaning_en": "a large area covered with trees",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The forest is home to many animals.",
+        "vi": "Rừng là nhà của nhiều loài động vật."
+      }
+    ],
+    "word_family": [
+      "forested (adj)",
+      "forestry (n)"
+    ],
+    "collocations": [
+      "rainforest",
+      "forest fire",
+      "deforestation"
+    ],
+    "synonyms": [
+      "woodland",
+      "woods"
+    ],
+    "antonyms": [
+      "desert",
+      "plain"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "forests are important",
+        "correct": "forests are important (correct)",
+        "explain_vi": "Có thể dùng số nhiều 'forests' khi nói chung"
+      }
+    ],
+    "grammar_patterns": [
+      "countable noun"
+    ]
+  },
+  {
+    "word": "water",
+    "phonetic": "/ˈwɔːtər/",
+    "meaning_vi": "nước",
+    "meaning_en": "a clear liquid essential for life",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We need clean water to drink.",
+        "vi": "Chúng ta cần nước sạch để uống."
+      }
+    ],
+    "word_family": [
+      "watery (adj)",
+      "waterproof (adj)"
+    ],
+    "collocations": [
+      "drinking water",
+      "water pollution",
+      "save water"
+    ],
+    "synonyms": [
+      "H2O"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "a water",
+        "correct": "water (uncountable)",
+        "explain_vi": "Không dùng mạo từ 'a' với water; dùng 'some water' nếu cần"
+      }
+    ],
+    "grammar_patterns": [
+      "uncountable noun"
+    ]
+  },
+  {
+    "word": "air",
+    "phonetic": "/er/",
+    "meaning_vi": "không khí",
+    "meaning_en": "the invisible gas around us that we breathe",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The air is fresh in the mountains.",
+        "vi": "Không khí trong lành ở vùng núi."
+      }
+    ],
+    "word_family": [
+      "airy (adj)",
+      "airless (adj)"
+    ],
+    "collocations": [
+      "fresh air",
+      "air pollution",
+      "clean air"
+    ],
+    "synonyms": [
+      "atmosphere"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "an air",
+        "correct": "air (uncountable)",
+        "explain_vi": "Không dùng mạo từ 'an' với air; dùng 'the air' khi nói cụ thể"
+      }
+    ],
+    "grammar_patterns": [
+      "uncountable noun"
+    ]
+  },
+  {
+    "word": "land",
+    "phonetic": "/lænd/",
+    "meaning_vi": "đất đai",
+    "meaning_en": "the solid part of the earth's surface",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Farmers use the land to grow crops.",
+        "vi": "Nông dân sử dụng đất để trồng trọt."
+      }
+    ],
+    "word_family": [
+      "landfill (n)",
+      "landscape (n)"
+    ],
+    "collocations": [
+      "land pollution",
+      "land use",
+      "agricultural land"
+    ],
+    "synonyms": [
+      "ground",
+      "soil"
+    ],
+    "antonyms": [
+      "sea",
+      "air"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "a land",
+        "correct": "land (uncountable)",
+        "explain_vi": "Không dùng mạo từ 'a' với land khi nói chung; 'a land' chỉ một vùng đất cụ thể"
+      }
+    ],
+    "grammar_patterns": [
+      "uncountable noun; countable when meaning 'country'"
+    ]
+  },
+  {
+    "word": "save",
+    "phonetic": "/seɪv/",
+    "meaning_vi": "tiết kiệm, cứu",
+    "meaning_en": "to keep something from being wasted or harmed",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "We must save the planet.",
+        "vi": "Chúng ta phải cứu hành tinh."
+      }
+    ],
+    "word_family": [
+      "savings (n)",
+      "saver (n)"
+    ],
+    "collocations": [
+      "save energy",
+      "save water",
+      "save the environment"
+    ],
+    "synonyms": [
+      "conserve",
+      "protect"
+    ],
+    "antonyms": [
+      "waste",
+      "destroy"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "save the water",
+        "correct": "save water (no article)",
+        "explain_vi": "Không dùng mạo từ 'the' khi nói chung"
+      }
+    ],
+    "grammar_patterns": [
+      "transitive verb"
+    ]
+  },
+  {
+    "word": "protect",
+    "phonetic": "/prəˈtekt/",
+    "meaning_vi": "bảo vệ",
+    "meaning_en": "to keep something safe from harm",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "We should protect endangered animals.",
+        "vi": "Chúng ta nên bảo vệ động vật có nguy cơ tuyệt chủng."
+      }
+    ],
+    "word_family": [
+      "protection (n)",
+      "protective (adj)"
+    ],
+    "collocations": [
+      "protect the environment",
+      "protect wildlife",
+      "protect nature"
+    ],
+    "synonyms": [
+      "preserve",
+      "safeguard"
+    ],
+    "antonyms": [
+      "harm",
+      "destroy"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "protect to the environment",
+        "correct": "protect the environment",
+        "explain_vi": "Không dùng giới từ 'to' sau 'protect'"
+      }
+    ],
+    "grammar_patterns": [
+      "transitive verb"
+    ]
+  },
+  {
+    "word": "plant",
+    "phonetic": "/plænt/",
+    "meaning_vi": "cây cối, trồng",
+    "meaning_en": "a living organism that grows in the ground; to put a plant in the ground",
+    "pos": "noun/verb",
+    "examples": [
+      {
+        "en": "We plant trees every year.",
+        "vi": "Chúng tôi trồng cây mỗi năm."
+      }
+    ],
+    "word_family": [
+      "plantation (n)",
+      "planter (n)"
+    ],
+    "collocations": [
+      "plant a tree",
+      "plant flowers",
+      "plant-based"
+    ],
+    "synonyms": [
+      "vegetation (n)",
+      "sow (v)"
+    ],
+    "antonyms": [
+      "uproot"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "plant a plants",
+        "correct": "plant a plant",
+        "explain_vi": "Không dùng số nhiều sau 'a'"
+      }
+    ],
+    "grammar_patterns": [
+      "countable noun; transitive verb"
+    ]
+  },
+  {
+    "word": "animal",
+    "phonetic": "/ˈænɪməl/",
+    "meaning_vi": "động vật",
+    "meaning_en": "a living organism that is not a plant",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Many animals live in the forest.",
+        "vi": "Nhiều động vật sống trong rừng."
+      }
+    ],
+    "word_family": [
+      "animalistic (adj)"
+    ],
+    "collocations": [
+      "wild animal",
+      "domestic animal",
+      "endangered animal"
+    ],
+    "synonyms": [
+      "creature",
+      "beast"
+    ],
+    "antonyms": [
+      "plant"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "an animal is",
+        "correct": "an animal is (correct)",
+        "explain_vi": "Dùng mạo từ 'an' vì 'animal' bắt đầu bằng nguyên âm"
+      }
+    ],
+    "grammar_patterns": [
+      "countable noun"
+    ]
+  },
+  {
+    "word": "ecology",
+    "phonetic": "/ɪˈkɑːlədʒi/",
+    "meaning_vi": "sinh thái học",
+    "meaning_en": "the study of the relationship between living things and their environment",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Ecology helps us understand nature.",
+        "vi": "Sinh thái học giúp chúng ta hiểu thiên nhiên."
+      }
+    ],
+    "word_family": [
+      "ecological (adj)",
+      "ecologist (n)"
+    ],
+    "collocations": [
+      "ecology of the area",
+      "marine ecology",
+      "human ecology"
+    ],
+    "synonyms": [
+      "environmental science"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "ecology is important",
+        "correct": "ecology is important (correct)",
+        "explain_vi": "Không cần mạo từ 'the' khi nói về môn học"
+      }
+    ],
+    "grammar_patterns": [
+      "uncountable noun"
+    ]
+  },
+  {
+    "word": "renewable",
+    "phonetic": "/rɪˈnjuː.ə.bəl/",
+    "meaning_vi": "có thể tái tạo",
+    "meaning_en": "able to be replaced naturally",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "Solar energy is renewable.",
+        "vi": "Năng lượng mặt trời là tái tạo."
+      },
+      {
+        "en": "We need more renewable energy.",
+        "vi": "Chúng ta cần nhiều năng lượng tái tạo hơn."
+      }
+    ],
+    "word_family": [
+      "renew (v)",
+      "renewal (n)"
+    ],
+    "collocations": [
+      "renewable energy",
+      "renewable resources",
+      "renewable sources"
+    ],
+    "synonyms": [
+      "sustainable"
+    ],
+    "antonyms": [
+      "non-renewable"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "renewable energies",
+        "correct": "renewable energy",
+        "explain_vi": "Năng lượng tái tạo thường không đếm được."
+      }
+    ],
+    "grammar_patterns": [
+      "renewable + noun"
+    ]
+  },
+  {
+    "word": "solar",
+    "phonetic": "/ˈsəʊ.lər/",
+    "meaning_vi": "thuộc về mặt trời",
+    "meaning_en": "of or from the sun",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "Solar panels produce electricity.",
+        "vi": "Tấm pin mặt trời sản xuất điện."
+      },
+      {
+        "en": "Solar power is clean.",
+        "vi": "Năng lượng mặt trời sạch."
+      }
+    ],
+    "word_family": [
+      "solar energy (n)"
+    ],
+    "collocations": [
+      "solar power",
+      "solar panel",
+      "solar system"
+    ],
+    "synonyms": [
+      "sunlight"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "solar energy is a renewable",
+        "correct": "solar energy is renewable",
+        "explain_vi": "Không dùng mạo từ 'a' trước tính từ."
+      }
+    ],
+    "grammar_patterns": [
+      "solar + noun"
+    ]
+  },
+  {
+    "word": "wind",
+    "phonetic": "/wɪnd/",
+    "meaning_vi": "gió",
+    "meaning_en": "moving air",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The wind blows strongly.",
+        "vi": "Gió thổi mạnh."
+      },
+      {
+        "en": "Wind energy is clean.",
+        "vi": "Năng lượng gió sạch."
+      }
+    ],
+    "word_family": [
+      "windy (adj)",
+      "windmill (n)"
+    ],
+    "collocations": [
+      "wind power",
+      "wind farm",
+      "strong wind"
+    ],
+    "synonyms": [
+      "breeze"
+    ],
+    "antonyms": [
+      "calm"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "wind energy is a clean",
+        "correct": "wind energy is clean",
+        "explain_vi": "Không dùng mạo từ 'a' trước tính từ."
+      }
+    ],
+    "grammar_patterns": [
+      "wind + noun",
+      "the wind"
+    ]
+  },
+  {
+    "word": "pollute",
+    "phonetic": "/pəˈluːt/",
+    "meaning_vi": "làm ô nhiễm",
+    "meaning_en": "to make dirty or harmful",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "Factories pollute the air.",
+        "vi": "Nhà máy làm ô nhiễm không khí."
+      },
+      {
+        "en": "Don't pollute the river.",
+        "vi": "Đừng làm ô nhiễm sông."
+      }
+    ],
+    "word_family": [
+      "pollution (n)",
+      "polluted (adj)",
+      "pollutant (n)"
+    ],
+    "collocations": [
+      "pollute the air",
+      "pollute water",
+      "pollute the environment"
+    ],
+    "synonyms": [
+      "contaminate"
+    ],
+    "antonyms": [
+      "clean"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "pollute the environment is bad",
+        "correct": "polluting the environment is bad",
+        "explain_vi": "Cần dùng danh động từ (V-ing) làm chủ ngữ."
+      }
+    ],
+    "grammar_patterns": [
+      "pollute + noun"
+    ]
+  },
+  {
+    "word": "trash",
+    "phonetic": "/træʃ/",
+    "meaning_vi": "rác thải",
+    "meaning_en": "waste material",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Throw the trash in the bin.",
+        "vi": "Vứt rác vào thùng."
+      },
+      {
+        "en": "Don't leave trash on the beach.",
+        "vi": "Đừng để rác trên bãi biển."
+      }
+    ],
+    "word_family": [
+      "trashy (adj)"
+    ],
+    "collocations": [
+      "trash can",
+      "trash bag",
+      "take out the trash"
+    ],
+    "synonyms": [
+      "garbage",
+      "rubbish"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "trashes",
+        "correct": "trash",
+        "explain_vi": "Rác không đếm được, không có dạng số nhiều."
+      }
+    ],
+    "grammar_patterns": [
+      "the trash",
+      "trash + noun"
+    ]
+  },
+  {
+    "word": "garbage",
+    "phonetic": "/ˈɡɑːr.bɪdʒ/",
+    "meaning_vi": "rác thải",
+    "meaning_en": "waste material",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The garbage truck comes on Monday.",
+        "vi": "Xe rác đến vào thứ Hai."
+      },
+      {
+        "en": "Don't throw garbage on the street.",
+        "vi": "Đừng vứt rác ra đường."
+      }
+    ],
+    "word_family": [
+      "garbage can (n)"
+    ],
+    "collocations": [
+      "garbage can",
+      "garbage dump",
+      "garbage collection"
+    ],
+    "synonyms": [
+      "trash",
+      "rubbish"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "garbages",
+        "correct": "garbage",
+        "explain_vi": "Rác không đếm được."
+      }
+    ],
+    "grammar_patterns": [
+      "garbage + noun"
+    ]
+  },
+  {
+    "word": "litter",
+    "phonetic": "/ˈlɪt.ər/",
+    "meaning_vi": "rác vứt bừa bãi",
+    "meaning_en": "small pieces of rubbish left in public",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "There is a lot of litter in the park.",
+        "vi": "Có nhiều rác trong công viên."
+      },
+      {
+        "en": "Please pick up the litter.",
+        "vi": "Làm ơn nhặt rác lên."
+      }
+    ],
+    "word_family": [
+      "litter (v)",
+      "littering (n)"
+    ],
+    "collocations": [
+      "litter bin",
+      "litter problem",
+      "drop litter"
+    ],
+    "synonyms": [
+      "trash",
+      "rubbish"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "litters",
+        "correct": "litter",
+        "explain_vi": "Litter không đếm được."
+      }
+    ],
+    "grammar_patterns": [
+      "litter + noun"
+    ]
+  },
+  {
+    "word": "bin",
+    "phonetic": "/bɪn/",
+    "meaning_vi": "thùng rác",
+    "meaning_en": "a container for waste",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Put the paper in the bin.",
+        "vi": "Bỏ giấy vào thùng rác."
+      },
+      {
+        "en": "There are recycling bins in the school.",
+        "vi": "Có thùng rác tái chế trong trường."
+      }
+    ],
+    "word_family": [
+      "bin bag (n)"
+    ],
+    "collocations": [
+      "trash bin",
+      "recycling bin",
+      "rubbish bin"
+    ],
+    "synonyms": [
+      "trash can",
+      "dustbin"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "bin is full",
+        "correct": "the bin is full",
+        "explain_vi": "Cần mạo từ 'the'."
+      }
+    ],
+    "grammar_patterns": [
+      "the bin",
+      "a bin"
+    ]
+  },
+  {
+    "word": "compost",
+    "phonetic": "/ˈkɒm.pɒst/",
+    "meaning_vi": "phân hữu cơ",
+    "meaning_en": "decayed organic material used as fertilizer",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We make compost from kitchen waste.",
+        "vi": "Chúng tôi làm phân hữu cơ từ rác nhà bếp."
+      },
+      {
+        "en": "Compost is good for the garden.",
+        "vi": "Phân hữu cơ tốt cho vườn."
+      }
+    ],
+    "word_family": [
+      "compost (v)",
+      "composting (n)"
+    ],
+    "collocations": [
+      "compost heap",
+      "compost bin",
+      "make compost"
+    ],
+    "synonyms": [
+      "fertilizer"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "composts",
+        "correct": "compost",
+        "explain_vi": "Compost không đếm được."
+      }
+    ],
+    "grammar_patterns": [
+      "compost + noun"
+    ]
+  },
+  {
+    "word": "organic",
+    "phonetic": "/ɔːˈɡæn.ɪk/",
+    "meaning_vi": "hữu cơ",
+    "meaning_en": "produced without chemicals",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "I buy organic vegetables.",
+        "vi": "Tôi mua rau hữu cơ."
+      },
+      {
+        "en": "Organic food is healthier.",
+        "vi": "Thực phẩm hữu cơ lành mạnh hơn."
+      }
+    ],
+    "word_family": [
+      "organically (adv)"
+    ],
+    "collocations": [
+      "organic food",
+      "organic farming",
+      "organic waste"
+    ],
+    "synonyms": [
+      "natural"
+    ],
+    "antonyms": [
+      "chemical",
+      "non-organic"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "an organic",
+        "correct": "organic",
+        "explain_vi": "Tính từ không cần mạo từ."
+      }
+    ],
+    "grammar_patterns": [
+      "organic + noun"
+    ]
+  },
+  {
+    "word": "chemical",
+    "phonetic": "/ˈkem.ɪ.kəl/",
+    "meaning_vi": "hóa chất",
+    "meaning_en": "a substance used in chemistry",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Chemicals can harm the environment.",
+        "vi": "Hóa chất có thể gây hại cho môi trường."
+      },
+      {
+        "en": "Don't use too many chemicals.",
+        "vi": "Đừng dùng quá nhiều hóa chất."
+      }
+    ],
+    "word_family": [
+      "chemical (adj)",
+      "chemically (adv)"
+    ],
+    "collocations": [
+      "chemical waste",
+      "chemical fertilizer",
+      "chemical reaction"
+    ],
+    "synonyms": [
+      "substance"
+    ],
+    "antonyms": [
+      "organic"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "a chemical",
+        "correct": "chemicals",
+        "explain_vi": "Khi nói chung, dùng số nhiều."
+      }
+    ],
+    "grammar_patterns": [
+      "chemical + noun"
+    ]
+  },
+  {
+    "word": "toxic",
+    "phonetic": "/ˈtɒk.sɪk/",
+    "meaning_vi": "độc hại",
+    "meaning_en": "poisonous",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "This waste is toxic.",
+        "vi": "Chất thải này độc hại."
+      },
+      {
+        "en": "Toxic chemicals are dangerous.",
+        "vi": "Hóa chất độc hại rất nguy hiểm."
+      }
+    ],
+    "word_family": [
+      "toxicity (n)",
+      "toxin (n)"
+    ],
+    "collocations": [
+      "toxic waste",
+      "toxic chemical",
+      "toxic substance"
+    ],
+    "synonyms": [
+      "poisonous",
+      "harmful"
+    ],
+    "antonyms": [
+      "safe",
+      "non-toxic"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "a toxic",
+        "correct": "toxic",
+        "explain_vi": "Tính từ không cần mạo từ."
+      }
+    ],
+    "grammar_patterns": [
+      "toxic + noun"
+    ]
+  },
+  {
+    "word": "emission",
+    "phonetic": "/ɪˈmɪʃ.ən/",
+    "meaning_vi": "khí thải",
+    "meaning_en": "the act of sending out gas or light",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Car emissions cause pollution.",
+        "vi": "Khí thải xe gây ô nhiễm."
+      },
+      {
+        "en": "We need to reduce emissions.",
+        "vi": "Chúng ta cần giảm khí thải."
+      }
+    ],
+    "word_family": [
+      "emit (v)"
+    ],
+    "collocations": [
+      "carbon emissions",
+      "gas emissions",
+      "reduce emissions"
+    ],
+    "synonyms": [
+      "discharge"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "emission is bad",
+        "correct": "emissions are bad",
+        "explain_vi": "Thường dùng số nhiều."
+      }
+    ],
+    "grammar_patterns": [
+      "emission + noun",
+      "emissions of + noun"
+    ]
+  },
+  {
+    "word": "carbon",
+    "phonetic": "/ˈkɑːr.bən/",
+    "meaning_vi": "cacbon",
+    "meaning_en": "a chemical element found in all living things",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Carbon dioxide is a greenhouse gas.",
+        "vi": "Cacbon dioxide là khí nhà kính."
+      },
+      {
+        "en": "We must reduce our carbon footprint.",
+        "vi": "Chúng ta phải giảm dấu chân cacbon."
+      }
+    ],
+    "word_family": [
+      "carbonate (n)"
+    ],
+    "collocations": [
+      "carbon dioxide",
+      "carbon footprint",
+      "carbon emissions"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "carbon is a gas",
+        "correct": "carbon is an element",
+        "explain_vi": "Carbon là nguyên tố, không phải khí; carbon dioxide mới là khí."
+      }
+    ],
+    "grammar_patterns": [
+      "carbon + noun"
+    ]
+  },
+  {
+    "word": "footprint",
+    "phonetic": "/ˈfʊt.prɪnt/",
+    "meaning_vi": "dấu chân",
+    "meaning_en": "the mark left by a foot",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We saw animal footprints in the mud.",
+        "vi": "Chúng tôi thấy dấu chân động vật trong bùn."
+      },
+      {
+        "en": "Reduce your carbon footprint.",
+        "vi": "Giảm dấu chân cacbon của bạn."
+      }
+    ],
+    "word_family": [
+      "footprint (n)"
+    ],
+    "collocations": [
+      "carbon footprint",
+      "ecological footprint",
+      "leave footprints"
+    ],
+    "synonyms": [
+      "track",
+      "print"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "footprints is",
+        "correct": "footprints are",
+        "explain_vi": "Footprints số nhiều, động từ chia số nhiều."
+      }
+    ],
+    "grammar_patterns": [
+      "footprint of + noun"
+    ]
+  },
+  {
+    "word": "conservation",
+    "phonetic": "/ˌkɒn.sərˈveɪ.ʃən/",
+    "meaning_vi": "bảo tồn",
+    "meaning_en": "the protection of the environment",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Conservation of forests is important.",
+        "vi": "Bảo tồn rừng rất quan trọng."
+      },
+      {
+        "en": "We support wildlife conservation.",
+        "vi": "Chúng tôi ủng hộ bảo tồn động vật hoang dã."
+      }
+    ],
+    "word_family": [
+      "conserve (v)",
+      "conservationist (n)"
+    ],
+    "collocations": [
+      "wildlife conservation",
+      "conservation area",
+      "energy conservation"
+    ],
+    "synonyms": [
+      "preservation",
+      "protection"
+    ],
+    "antonyms": [
+      "destruction"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "conservation of the environment",
+        "correct": "environmental conservation",
+        "explain_vi": "Cụm từ thông dụng hơn."
+      }
+    ],
+    "grammar_patterns": [
+      "conservation of + noun"
+    ]
+  },
+  {
+    "word": "preserve",
+    "phonetic": "/prɪˈzɜːrv/",
+    "meaning_vi": "bảo vệ, bảo tồn",
+    "meaning_en": "to keep something in its original state",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "We must preserve the rainforest.",
+        "vi": "Chúng ta phải bảo tồn rừng nhiệt đới."
+      },
+      {
+        "en": "They work to preserve endangered species.",
+        "vi": "Họ làm việc để bảo tồn các loài có nguy cơ tuyệt chủng."
+      }
+    ],
+    "word_family": [
+      "preservation (n)",
+      "preservative (n)"
+    ],
+    "collocations": [
+      "preserve nature",
+      "preserve wildlife",
+      "preserve the environment"
+    ],
+    "synonyms": [
+      "protect",
+      "conserve"
+    ],
+    "antonyms": [
+      "destroy",
+      "damage"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "preserve animals",
+        "correct": "preserve animal species",
+        "explain_vi": "Preserve thường đi với tài nguyên, không phải động vật cụ thể."
+      }
+    ],
+    "grammar_patterns": [
+      "preserve + noun"
+    ]
+  },
+  {
+    "word": "species",
+    "phonetic": "/ˈspiː.ʃiːz/",
+    "meaning_vi": "loài",
+    "meaning_en": "a group of living things with similar characteristics",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Many species are endangered.",
+        "vi": "Nhiều loài có nguy cơ tuyệt chủng."
+      },
+      {
+        "en": "This species lives in the ocean.",
+        "vi": "Loài này sống ở đại dương."
+      }
+    ],
+    "word_family": [
+      "speciation (n)"
+    ],
+    "collocations": [
+      "endangered species",
+      "animal species",
+      "plant species"
+    ],
+    "synonyms": [
+      "type",
+      "kind"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "a species are",
+        "correct": "a species is",
+        "explain_vi": "Species số ít hay số nhiều đều giống nhau; động từ chia theo ngữ cảnh."
+      }
+    ],
+    "grammar_patterns": [
+      "species of + noun"
+    ]
+  },
+  {
+    "word": "extinct",
+    "phonetic": "/ɪkˈstɪŋkt/",
+    "meaning_vi": "tuyệt chủng",
+    "meaning_en": "no longer existing",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "Dinosaurs are extinct.",
+        "vi": "Khủng long đã tuyệt chủng."
+      },
+      {
+        "en": "Many species may become extinct.",
+        "vi": "Nhiều loài có thể trở nên tuyệt chủng."
+      }
+    ],
+    "word_family": [
+      "extinction (n)"
+    ],
+    "collocations": [
+      "become extinct",
+      "go extinct",
+      "extinct species"
+    ],
+    "synonyms": [
+      "dead",
+      "vanished"
+    ],
+    "antonyms": [
+      "existing",
+      "living"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "extinct animals",
+        "correct": "extinct species",
+        "explain_vi": "Extinct thường dùng với species."
+      }
+    ],
+    "grammar_patterns": [
+      "be extinct",
+      "become extinct"
+    ]
+  },
+  {
+    "word": "endangered",
+    "phonetic": "/ɪnˈdeɪn.dʒərd/",
+    "meaning_vi": "có nguy cơ tuyệt chủng",
+    "meaning_en": "at risk of becoming extinct",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The tiger is an endangered species.",
+        "vi": "Hổ là loài có nguy cơ tuyệt chủng."
+      },
+      {
+        "en": "We must protect endangered animals.",
+        "vi": "Chúng ta phải bảo vệ động vật có nguy cơ tuyệt chủng."
+      }
+    ],
+    "word_family": [
+      "endanger (v)",
+      "endangerment (n)"
+    ],
+    "collocations": [
+      "endangered species",
+      "endangered animals",
+      "endangered plants"
+    ],
+    "synonyms": [
+      "threatened",
+      "at risk"
+    ],
+    "antonyms": [
+      "safe",
+      "common"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "an endangered",
+        "correct": "an endangered species",
+        "explain_vi": "Endangered là tính từ, cần danh từ đi kèm."
+      }
+    ],
+    "grammar_patterns": [
+      "endangered + noun"
+    ]
+  },
+  {
+    "word": "oxygen",
+    "phonetic": "/ˈɒk.sɪ.dʒən/",
+    "meaning_vi": "ô-xy",
+    "meaning_en": "a gas that we breathe to live",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Trees produce oxygen.",
+        "vi": "Cây cối sản xuất ô-xy."
+      },
+      {
+        "en": "We need oxygen to survive.",
+        "vi": "Chúng ta cần ô-xy để sống."
+      }
+    ],
+    "word_family": [
+      "oxygenate (v)"
+    ],
+    "collocations": [
+      "produce oxygen",
+      "breathe oxygen",
+      "lack of oxygen"
+    ],
+    "synonyms": [
+      "O2"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "oxygen is a liquid",
+        "correct": "oxygen is a gas",
+        "explain_vi": "Oxy là chất khí, không phải chất lỏng"
+      }
+    ],
+    "grammar_patterns": [
+      "uncountable noun"
+    ]
+  },
+  {
+    "word": "habitat",
+    "phonetic": "/ˈhæb.ɪ.tæt/",
+    "meaning_vi": "môi trường sống",
+    "meaning_en": "the natural home of a plant or animal",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The forest is the habitat of many animals.",
+        "vi": "Rừng là môi trường sống của nhiều loài động vật."
+      },
+      {
+        "en": "We must protect natural habitats.",
+        "vi": "Chúng ta phải bảo vệ môi trường sống tự nhiên."
+      }
+    ],
+    "word_family": [
+      "habitation (n)"
+    ],
+    "collocations": [
+      "natural habitat",
+      "destroy habitat",
+      "protect habitat"
+    ],
+    "synonyms": [
+      "environment",
+      "home"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "habitat of fish",
+        "correct": "aquatic habitat",
+        "explain_vi": "Dùng 'aquatic habitat' cho sinh vật dưới nước"
+      }
+    ],
+    "grammar_patterns": [
+      "countable noun"
+    ]
+  },
+  {
+    "word": "fuel",
+    "phonetic": "/ˈfjuː.əl/",
+    "meaning_vi": "nhiên liệu",
+    "meaning_en": "a substance used to produce energy, like petrol or coal",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Cars use fuel to run.",
+        "vi": "Xe hơi sử dụng nhiên liệu để chạy."
+      },
+      {
+        "en": "We should use less fossil fuel.",
+        "vi": "Chúng ta nên sử dụng ít nhiên liệu hóa thạch hơn."
+      }
+    ],
+    "word_family": [
+      "fuel (v)",
+      "refuel (v)"
+    ],
+    "collocations": [
+      "fossil fuel",
+      "burn fuel",
+      "save fuel"
+    ],
+    "synonyms": [
+      "energy source"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "fuel is a liquid only",
+        "correct": "fuel can be solid, liquid, or gas",
+        "explain_vi": "Nhiên liệu có thể ở dạng r���n, lỏng hoặc khí"
+      }
+    ],
+    "grammar_patterns": [
+      "countable/uncountable noun"
+    ]
+  },
+  {
+    "word": "ecosystem",
+    "phonetic": "/ˈiː.kəʊ.sɪs.təm/",
+    "meaning_vi": "hệ sinh thái",
+    "meaning_en": "all the plants, animals, and other living things in an area and their environment",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "A pond is a small ecosystem.",
+        "vi": "Ao là một hệ sinh thái nhỏ."
+      },
+      {
+        "en": "Pollution damages the ecosystem.",
+        "vi": "Ô nhiễm làm tổn hại hệ sinh thái."
+      }
+    ],
+    "word_family": [
+      "ecological (adj)"
+    ],
+    "collocations": [
+      "marine ecosystem",
+      "fragile ecosystem",
+      "protect the ecosystem"
+    ],
+    "synonyms": [
+      "biome"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "ecosystem only includes animals",
+        "correct": "ecosystem includes plants, animals, and environment",
+        "explain_vi": "Hệ sinh thái bao gồm cả thực vật, động vật và môi trường"
+      }
+    ],
+    "grammar_patterns": [
+      "countable noun"
+    ]
+  },
+  {
+    "word": "soil",
+    "phonetic": "/sɔɪl/",
+    "meaning_vi": "đất",
+    "meaning_en": "the top layer of the earth where plants grow",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Plants need good soil to grow.",
+        "vi": "Cây cần đất tốt để phát triển."
+      },
+      {
+        "en": "The soil is very dry.",
+        "vi": "Đất rất khô."
+      }
+    ],
+    "word_family": [
+      "soilless (adj)"
+    ],
+    "collocations": [
+      "fertile soil",
+      "soil erosion",
+      "dig in the soil"
+    ],
+    "synonyms": [
+      "earth",
+      "ground"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "soil is the same as dirt",
+        "correct": "soil is fertile, dirt is loose earth",
+        "explain_vi": "Soil là đất màu mỡ, dirt là đất bẩn"
+      }
+    ],
+    "grammar_patterns": [
+      "uncountable noun"
+    ]
+  },
+  {
+    "word": "rainforest",
+    "phonetic": "/ˈreɪn.fɒr.ɪst/",
+    "meaning_vi": "rừng mưa nhiệt đới",
+    "meaning_en": "a thick forest in hot, rainy areas",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The Amazon is a large rainforest.",
+        "vi": "Amazon là một khu rừng mưa nhiệt đới lớn."
+      },
+      {
+        "en": "Rainforests are home to many species.",
+        "vi": "Rừng mưa là nhà của nhiều loài."
+      }
+    ],
+    "word_family": [
+      "rainforest (adj)"
+    ],
+    "collocations": [
+      "tropical rainforest",
+      "destroy rainforest",
+      "protect rainforest"
+    ],
+    "synonyms": [
+      "jungle"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "rainforest is the same as forest",
+        "correct": "rainforest has high rainfall and biodiversity",
+        "explain_vi": "Rừng mưa có lượng mưa lớn và đa dạng sinh học cao"
+      }
+    ],
+    "grammar_patterns": [
+      "countable noun"
+    ]
+  },
+  {
+    "word": "volcano",
+    "phonetic": "/vɒlˈkeɪ.nəʊ/",
+    "meaning_vi": "núi lửa",
+    "meaning_en": "a mountain that can explode and send out hot rock and smoke",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The volcano erupted last night.",
+        "vi": "Núi lửa phun trào tối qua."
+      },
+      {
+        "en": "Lava flows from a volcano.",
+        "vi": "Dung nham chảy từ núi lửa."
+      }
+    ],
+    "word_family": [
+      "volcanic (adj)"
+    ],
+    "collocations": [
+      "active volcano",
+      "erupt volcano",
+      "volcanic ash"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "volcano is always active",
+        "correct": "volcanoes can be dormant or extinct",
+        "explain_vi": "Núi lửa có thể không hoạt động hoặc đã tắt"
+      }
+    ],
+    "grammar_patterns": [
+      "countable noun"
+    ]
+  },
+  {
+    "word": "earthquake",
+    "phonetic": "/ˈɜːθ.kweɪk/",
+    "meaning_vi": "động đất",
+    "meaning_en": "a sudden shaking of the ground",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The earthquake destroyed many buildings.",
+        "vi": "Trận động đất phá hủy nhiều tòa nhà."
+      },
+      {
+        "en": "We felt a small earthquake.",
+        "vi": "Chúng tôi cảm thấy một trận động đất nhỏ."
+      }
+    ],
+    "word_family": [
+      "earthquake (adj)"
+    ],
+    "collocations": [
+      "strong earthquake",
+      "earthquake zone",
+      "survive an earthquake"
+    ],
+    "synonyms": [
+      "tremor",
+      "quake"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "earthquake is the same as tsunami",
+        "correct": "earthquake is shaking, tsunami is a wave",
+        "explain_vi": "Động đất là rung chuyển, sóng thần là sóng lớn"
+      }
+    ],
+    "grammar_patterns": [
+      "countable noun"
+    ]
+  },
+  {
+    "word": "flood",
+    "phonetic": "/flʌd/",
+    "meaning_vi": "lũ lụt",
+    "meaning_en": "a large amount of water covering dry land",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The flood destroyed the crops.",
+        "vi": "Lũ lụt phá hủy mùa màng."
+      },
+      {
+        "en": "Heavy rain caused floods.",
+        "vi": "Mưa lớn gây ra lũ lụt."
+      }
+    ],
+    "word_family": [
+      "flood (v)",
+      "flooding (n)"
+    ],
+    "collocations": [
+      "flash flood",
+      "flood warning",
+      "flood damage"
+    ],
+    "synonyms": [
+      "inundation"
+    ],
+    "antonyms": [
+      "drought"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "flood is the same as tsunami",
+        "correct": "flood is from rain, tsunami is from earthquake",
+        "explain_vi": "Lũ lụt do mưa, sóng thần do động đất"
+      }
+    ],
+    "grammar_patterns": [
+      "countable noun"
+    ]
+  },
+  {
+    "word": "drought",
+    "phonetic": "/draʊt/",
+    "meaning_vi": "hạn hán",
+    "meaning_en": "a long period with little or no rain",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The drought caused many crops to die.",
+        "vi": "Hạn hán khiến nhiều cây trồng chết."
+      },
+      {
+        "en": "We are suffering from a drought.",
+        "vi": "Chúng tôi đang bị hạn hán."
+      }
+    ],
+    "word_family": [
+      "drought (adj)"
+    ],
+    "collocations": [
+      "severe drought",
+      "drought relief",
+      "drought-resistant"
+    ],
+    "synonyms": [
+      "dry spell"
+    ],
+    "antonyms": [
+      "flood"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "drought is the same as dry season",
+        "correct": "drought is unusually long dry period",
+        "explain_vi": "Hạn hán là thời kỳ khô hạn bất thường kéo dài"
+      }
+    ],
+    "grammar_patterns": [
+      "countable/uncountable noun"
+    ]
+  },
+  {
+    "word": "hurricane",
+    "phonetic": "/ˈhʌr.ɪ.kən/",
+    "meaning_vi": "bão nhiệt đới",
+    "meaning_en": "a very strong storm with heavy rain and wind",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The hurricane destroyed many houses.",
+        "vi": "Cơn bão phá hủy nhiều ngôi nhà."
+      },
+      {
+        "en": "People evacuated before the hurricane.",
+        "vi": "Mọi người sơ tán trước cơn bão."
+      }
+    ],
+    "word_family": [
+      "hurricane (adj)"
+    ],
+    "collocations": [
+      "hurricane season",
+      "hurricane force",
+      "hurricane warning"
+    ],
+    "synonyms": [
+      "typhoon",
+      "cyclone"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "hurricane is the same as tornado",
+        "correct": "hurricane is large, tornado is small and violent",
+        "explain_vi": "Bão lớn, lốc xoáy nhỏ và dữ dội hơn"
+      }
+    ],
+    "grammar_patterns": [
+      "countable noun"
+    ]
+  },
+  {
+    "word": "ozone",
+    "phonetic": "/ˈəʊ.zəʊn/",
+    "meaning_vi": "ô-zôn",
+    "meaning_en": "a gas that protects the earth from the sun's harmful rays",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The ozone layer is important for life.",
+        "vi": "Tầng ô-zôn quan trọng cho sự sống."
+      },
+      {
+        "en": "Chemicals can damage the ozone layer.",
+        "vi": "Hóa chất có thể làm hỏng tầng ô-zôn."
+      }
+    ],
+    "word_family": [
+      "ozonic (adj)"
+    ],
+    "collocations": [
+      "ozone layer",
+      "ozone hole",
+      "ozone depletion"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "ozone is a pollutant",
+        "correct": "ozone high up is protective, ground-level is harmful",
+        "explain_vi": "Ozone trên cao bảo vệ, ozone dưới thấp có hại"
+      }
+    ],
+    "grammar_patterns": [
+      "uncountable noun"
+    ]
+  },
+  {
+    "word": "greenhouse",
+    "phonetic": "/ˈɡriːn.haʊs/",
+    "meaning_vi": "nhà kính",
+    "meaning_en": "a glass building for growing plants; also refers to gases trapping heat",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The greenhouse keeps plants warm.",
+        "vi": "Nhà kính giữ ấm cho cây."
+      },
+      {
+        "en": "Greenhouse gases cause global warming.",
+        "vi": "Khí nhà kính gây ra sự nóng lên toàn cầu."
+      }
+    ],
+    "word_family": [
+      "greenhouse (adj)"
+    ],
+    "collocations": [
+      "greenhouse gas",
+      "greenhouse effect",
+      "greenhouse farming"
+    ],
+    "synonyms": [
+      "glasshouse"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "greenhouse only means a glass building",
+        "correct": "also refers to gases in climate context",
+        "explain_vi": "Greenhouse còn chỉ khí nhà kính trong biến đổi khí hậu"
+      }
+    ],
+    "grammar_patterns": [
+      "countable noun"
+    ]
+  },
+  {
+    "word": "sustainable",
+    "phonetic": "/səˈsteɪ.nə.bəl/",
+    "meaning_vi": "bền vững",
+    "meaning_en": "able to continue without harming the environment",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "We need sustainable energy sources.",
+        "vi": "Chúng ta cần nguồn năng lượng bền vững."
+      },
+      {
+        "en": "Sustainable farming is good for the land.",
+        "vi": "Canh tác bền vững tốt cho đất đai."
+      }
+    ],
+    "word_family": [
+      "sustain (v)",
+      "sustainability (n)"
+    ],
+    "collocations": [
+      "sustainable development",
+      "sustainable energy",
+      "sustainable living"
+    ],
+    "synonyms": [
+      "eco-friendly",
+      "green"
+    ],
+    "antonyms": [
+      "unsustainable"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "sustainable means the same as renewable",
+        "correct": "sustainable includes social and economic aspects",
+        "explain_vi": "Bền vững bao gồm cả khía cạnh xã hội và kinh tế"
+      }
+    ],
+    "grammar_patterns": [
+      "adjective"
+    ]
+  },
+  {
+    "word": "biodegradable",
+    "phonetic": "/ˌbaɪ.əʊ.dɪˈɡreɪ.də.bəl/",
+    "meaning_vi": "có thể phân hủy sinh học",
+    "meaning_en": "able to be broken down naturally by bacteria",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "Paper bags are biodegradable.",
+        "vi": "Túi giấy có thể phân hủy sinh học."
+      },
+      {
+        "en": "We should use biodegradable products.",
+        "vi": "Chúng ta nên dùng sản phẩm phân hủy sinh học."
+      }
+    ],
+    "word_family": [
+      "biodegrade (v)",
+      "biodegradability (n)"
+    ],
+    "collocations": [
+      "biodegradable material",
+      "biodegradable waste",
+      "biodegradable plastic"
+    ],
+    "synonyms": [
+      "compostable"
+    ],
+    "antonyms": [
+      "non-biodegradable"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "biodegradable means the same as compostable",
+        "correct": "all compostable is biodegradable, but not vice versa",
+        "explain_vi": "Mọi thứ ủ được đều phân hủy, nhưng không phải mọi thứ phân hủy đều ủ được"
+      }
+    ],
+    "grammar_patterns": [
+      "adjective"
+    ]
+  },
+  {
+    "word": "conservation",
+    "phonetic": "/ˌkɒn.səˈveɪ.ʃən/",
+    "meaning_vi": "bảo tồn",
+    "meaning_en": "the protection of nature and natural resources",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Wildlife conservation is important.",
+        "vi": "Bảo tồn động vật hoang dã rất quan trọng."
+      },
+      {
+        "en": "We support forest conservation.",
+        "vi": "Chúng tôi ủng hộ bảo tồn rừng."
+      }
+    ],
+    "word_family": [
+      "conserve (v)",
+      "conservationist (n)"
+    ],
+    "collocations": [
+      "wildlife conservation",
+      "energy conservation",
+      "water conservation"
+    ],
+    "synonyms": [
+      "preservation"
+    ],
+    "antonyms": [
+      "destruction"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "conservation is the same as preservation",
+        "correct": "conservation allows sustainable use, preservation protects untouched",
+        "explain_vi": "Bảo tồn cho phép sử dụng bền vững, bảo vệ giữ nguyên trạng"
+      }
+    ],
+    "grammar_patterns": [
+      "uncountable noun"
+    ]
+  },
+  {
+    "word": "extinct",
+    "phonetic": "/ɪkˈstɪŋkt/",
+    "meaning_vi": "tuyệt chủng",
+    "meaning_en": "no longer existing (a species that has died out)",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "Dinosaurs are extinct.",
+        "vi": "Khủng long đã tuyệt chủng."
+      },
+      {
+        "en": "Many species are becoming extinct.",
+        "vi": "Nhiều loài đang bị tuyệt chủng."
+      }
+    ],
+    "word_family": [
+      "extinction (n)"
+    ],
+    "collocations": [
+      "become extinct",
+      "extinct species",
+      "go extinct"
+    ],
+    "synonyms": [
+      "vanished"
+    ],
+    "antonyms": [
+      "existing",
+      "living"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "extinct means the same as endangered",
+        "correct": "extinct means no longer exists, endangered means at risk",
+        "explain_vi": "Tuyệt chủng là không còn tồn tại, nguy cấp là có nguy cơ"
+      }
+    ],
+    "grammar_patterns": [
+      "adjective"
+    ]
+  },
+  {
+    "word": "endangered",
+    "phonetic": "/ɪnˈdeɪn.dʒəd/",
+    "meaning_vi": "có nguy cơ tuyệt chủng",
+    "meaning_en": "at risk of becoming extinct",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "Pandas are endangered.",
+        "vi": "Gấu trúc có nguy cơ tuyệt chủng."
+      },
+      {
+        "en": "We must protect endangered animals.",
+        "vi": "Chúng ta phải bảo vệ động vật có nguy cơ tuyệt chủng."
+      }
+    ],
+    "word_family": [
+      "endanger (v)",
+      "endangerment (n)"
+    ],
+    "collocations": [
+      "endangered species",
+      "critically endangered",
+      "endangered list"
+    ],
+    "synonyms": [
+      "threatened"
+    ],
+    "antonyms": [
+      "safe",
+      "abundant"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "endangered means the same as extinct",
+        "correct": "endangered means at risk, not yet extinct",
+        "explain_vi": "Nguy cấp là có nguy cơ, chưa tuyệt chủng"
+      }
+    ],
+    "grammar_patterns": [
+      "adjective"
+    ]
+  },
+  {
+    "word": "deforestation",
+    "phonetic": "/diːˌfɒr.ɪˈsteɪ.ʃən/",
+    "meaning_vi": "phá rừng",
+    "meaning_en": "the cutting down of trees in a large area",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Deforestation destroys animal habitats.",
+        "vi": "Phá rừng phá hủy môi trường sống của động vật."
+      },
+      {
+        "en": "We should stop deforestation.",
+        "vi": "Chúng ta nên ngừng phá rừng."
+      }
+    ],
+    "word_family": [
+      "deforest (v)"
+    ],
+    "collocations": [
+      "tropical deforestation",
+      "deforestation rate",
+      "prevent deforestation"
+    ],
+    "synonyms": [
+      "clearing",
+      "logging"
+    ],
+    "antonyms": [
+      "reforestation"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "deforestation is the same as forest fire",
+        "correct": "deforestation is human-caused cutting, fire can be natural",
+        "explain_vi": "Phá rừng do con người chặt, cháy rừng có thể tự nhiên"
+      }
+    ],
+    "grammar_patterns": [
+      "uncountable noun"
+    ]
+  },
+  {
+    "word": "renewable",
+    "phonetic": "/rɪˈnjuː.ə.bəl/",
+    "meaning_vi": "có thể tái tạo",
+    "meaning_en": "able to be replaced naturally (e.g., solar or wind energy)",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "Solar power is renewable.",
+        "vi": "Năng lượng mặt trời có thể tái tạo."
+      },
+      {
+        "en": "We need more renewable energy.",
+        "vi": "Chúng ta cần nhiều năng lượng tái tạo hơn."
+      }
+    ],
+    "word_family": [
+      "renew (v)",
+      "renewability (n)"
+    ],
+    "collocations": [
+      "renewable energy",
+      "renewable resource",
+      "renewable source"
+    ],
+    "synonyms": [
+      "sustainable"
+    ],
+    "antonyms": [
+      "non-renewable"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "renewable means the same as reusable",
+        "correct": "renewable refers to energy sources, reusable to products",
+        "explain_vi": "Tái tạo chỉ nguồn năng lượng, tái sử dụng chỉ sản phẩm"
+      }
+    ],
+    "grammar_patterns": [
+      "adjective"
+    ]
+  }
+]

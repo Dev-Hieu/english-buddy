@@ -1,0 +1,2278 @@
+[
+  {
+    "word": "nurture",
+    "phonetic": "/ˈnɜːrtʃər/",
+    "meaning_vi": "nuôi dưỡng, vun đắp",
+    "meaning_en": "to care for and encourage the growth or development of someone or something",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "Parents nurture their children's talents.",
+        "vi": "Cha mẹ nuôi dưỡng tài năng của con cái."
+      }
+    ],
+    "word_family": [
+      "nurturing (adj)",
+      "nurturer (n)"
+    ],
+    "collocations": [
+      "nurture a relationship",
+      "nurture a child",
+      "nurture talent"
+    ],
+    "synonyms": [
+      "foster",
+      "cultivate"
+    ],
+    "antonyms": [
+      "neglect"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "nurture the children",
+        "correct": "nurture children",
+        "explain_vi": "Không cần mạo từ 'the' khi nói chung"
+      }
+    ],
+    "grammar_patterns": [
+      "nurture + noun"
+    ]
+  },
+  {
+    "word": "bond",
+    "phonetic": "/bɒnd/",
+    "meaning_vi": "mối quan hệ gắn bó, tình cảm",
+    "meaning_en": "a close connection or relationship between people",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The bond between mother and child is strong.",
+        "vi": "Mối quan hệ gắn bó giữa mẹ và con rất bền chặt."
+      }
+    ],
+    "word_family": [
+      "bonding (n)",
+      "bond (v)"
+    ],
+    "collocations": [
+      "strong bond",
+      "family bond",
+      "emotional bond"
+    ],
+    "synonyms": [
+      "tie",
+      "connection"
+    ],
+    "antonyms": [
+      "estrangement"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "bond with someone",
+        "correct": "bond with someone",
+        "explain_vi": "Đúng rồi, nhưng nhớ dùng giới từ 'with'"
+      }
+    ],
+    "grammar_patterns": [
+      "bond + between + noun + and + noun"
+    ]
+  },
+  {
+    "word": "upbringing",
+    "phonetic": "/ˈʌpbrɪŋɪŋ/",
+    "meaning_vi": "sự nuôi dạy, giáo dục",
+    "meaning_en": "the way in which a child is raised and educated",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She had a strict upbringing.",
+        "vi": "Cô ấy được nuôi dạy nghiêm khắc."
+      }
+    ],
+    "word_family": [
+      "bring up (v)"
+    ],
+    "collocations": [
+      "strict upbringing",
+      "religious upbringing",
+      "good upbringing"
+    ],
+    "synonyms": [
+      "rearing",
+      "raising"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "upbringing children",
+        "correct": "raising children",
+        "explain_vi": "'Upbringing' là danh từ, không dùng như động từ"
+      }
+    ],
+    "grammar_patterns": [
+      "have + adj + upbringing"
+    ]
+  },
+  {
+    "word": "sibling",
+    "phonetic": "/ˈsɪblɪŋ/",
+    "meaning_vi": "anh chị em ruột",
+    "meaning_en": "a brother or sister",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I have two siblings: a brother and a sister.",
+        "vi": "Tôi có hai anh chị em ruột: một anh trai và một chị gái."
+      }
+    ],
+    "word_family": [
+      "sibling rivalry (n)"
+    ],
+    "collocations": [
+      "sibling rivalry",
+      "younger sibling",
+      "older sibling"
+    ],
+    "synonyms": [
+      "brother",
+      "sister"
+    ],
+    "antonyms": [
+      "only child"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "sibling brother",
+        "correct": "sibling",
+        "explain_vi": "Không cần thêm 'brother' vì 'sibling' đã bao hàm"
+      }
+    ],
+    "grammar_patterns": [
+      "number + siblings"
+    ]
+  },
+  {
+    "word": "spouse",
+    "phonetic": "/spaʊs/",
+    "meaning_vi": "vợ hoặc chồng",
+    "meaning_en": "a husband or wife",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "My spouse and I celebrate our anniversary.",
+        "vi": "Tôi và vợ/chồng tôi kỷ niệm ngày cưới."
+      }
+    ],
+    "word_family": [
+      "spousal (adj)"
+    ],
+    "collocations": [
+      "spouse and children",
+      "surviving spouse",
+      "spousal support"
+    ],
+    "synonyms": [
+      "partner",
+      "mate"
+    ],
+    "antonyms": [
+      "ex-spouse"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "spouse husband",
+        "correct": "spouse",
+        "explain_vi": "Không cần thêm 'husband' vì 'spouse' đã bao hàm"
+      }
+    ],
+    "grammar_patterns": [
+      "possessive + spouse"
+    ]
+  },
+  {
+    "word": "ancestor",
+    "phonetic": "/ˈænses.tər/",
+    "meaning_vi": "tổ tiên",
+    "meaning_en": "a person from whom one is descended, especially one more remote than a grandparent",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We honor our ancestors during the festival.",
+        "vi": "Chúng tôi tôn vinh tổ tiên trong lễ hội."
+      }
+    ],
+    "word_family": [
+      "ancestral (adj)",
+      "ancestry (n)"
+    ],
+    "collocations": [
+      "ancestor worship",
+      "common ancestor",
+      "direct ancestor"
+    ],
+    "synonyms": [
+      "forefather",
+      "predecessor"
+    ],
+    "antonyms": [
+      "descendant"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "ancestor of me",
+        "correct": "my ancestor",
+        "explain_vi": "Dùng tính từ sở hữu thay vì 'of me'"
+      }
+    ],
+    "grammar_patterns": [
+      "possessive + ancestor"
+    ]
+  },
+  {
+    "word": "descendant",
+    "phonetic": "/dɪˈsendənt/",
+    "meaning_vi": "hậu duệ, con cháu",
+    "meaning_en": "a person who is descended from a particular ancestor",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "He is a descendant of a royal family.",
+        "vi": "Anh ấy là hậu duệ của một gia đình hoàng tộc."
+      }
+    ],
+    "word_family": [
+      "descend (v)",
+      "descent (n)"
+    ],
+    "collocations": [
+      "direct descendant",
+      "descendant of",
+      "living descendant"
+    ],
+    "synonyms": [
+      "offspring",
+      "heir"
+    ],
+    "antonyms": [
+      "ancestor"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "descendant from",
+        "correct": "descendant of",
+        "explain_vi": "Dùng 'of' thay vì 'from'"
+      }
+    ],
+    "grammar_patterns": [
+      "descendant + of + noun"
+    ]
+  },
+  {
+    "word": "kin",
+    "phonetic": "/kɪn/",
+    "meaning_vi": "họ hàng, thân nhân",
+    "meaning_en": "one's family and relations",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "All my kin gathered for the reunion.",
+        "vi": "Tất cả họ hàng của tôi tụ họp cho buổi họp mặt."
+      }
+    ],
+    "word_family": [
+      "kinship (n)",
+      "kinsman (n)"
+    ],
+    "collocations": [
+      "next of kin",
+      "kin and kith",
+      "close kin"
+    ],
+    "synonyms": [
+      "relatives",
+      "family"
+    ],
+    "antonyms": [
+      "strangers"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "kin people",
+        "correct": "kin",
+        "explain_vi": "'Kin' đã bao hàm nghĩa người thân, không cần thêm 'people'"
+      }
+    ],
+    "grammar_patterns": [
+      "possessive + kin"
+    ]
+  },
+  {
+    "word": "offspring",
+    "phonetic": "/ˈɒfsprɪŋ/",
+    "meaning_vi": "con cái, đàn con",
+    "meaning_en": "a person's child or children",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "They have three offspring.",
+        "vi": "Họ có ba đứa con."
+      }
+    ],
+    "word_family": [
+      "spring (v) - không liên quan"
+    ],
+    "collocations": [
+      "produce offspring",
+      "raise offspring",
+      "offspring of"
+    ],
+    "synonyms": [
+      "children",
+      "progeny"
+    ],
+    "antonyms": [
+      "parents"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "offsprings",
+        "correct": "offspring",
+        "explain_vi": "'Offspring' không thay đổi ở số nhiều"
+      }
+    ],
+    "grammar_patterns": [
+      "number + offspring"
+    ]
+  },
+  {
+    "word": "kinship",
+    "phonetic": "/ˈkɪnʃɪp/",
+    "meaning_vi": "quan hệ họ hàng, tình thân",
+    "meaning_en": "blood relationship or a close connection",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "They share a strong kinship.",
+        "vi": "Họ có mối quan hệ họ hàng gắn bó."
+      }
+    ],
+    "word_family": [
+      "kin (n)",
+      "kinsman (n)"
+    ],
+    "collocations": [
+      "kinship ties",
+      "kinship system",
+      "sense of kinship"
+    ],
+    "synonyms": [
+      "bond",
+      "affinity"
+    ],
+    "antonyms": [
+      "estrangement"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "kinship with someone",
+        "correct": "kinship with someone",
+        "explain_vi": "Đúng, nhưng nhớ giới từ 'with'"
+      }
+    ],
+    "grammar_patterns": [
+      "kinship + between + noun + and + noun"
+    ]
+  },
+  {
+    "word": "foster",
+    "phonetic": "/ˈfɒstər/",
+    "meaning_vi": "nuôi dưỡng, thúc đẩy",
+    "meaning_en": "to encourage or promote the development of something; to raise a child not one's own",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "They foster a child from a broken home.",
+        "vi": "Họ nhận nuôi một đứa trẻ từ gia đình tan vỡ."
+      }
+    ],
+    "word_family": [
+      "foster parent (n)",
+      "foster care (n)"
+    ],
+    "collocations": [
+      "foster a child",
+      "foster relationship",
+      "foster growth"
+    ],
+    "synonyms": [
+      "nurture",
+      "cultivate"
+    ],
+    "antonyms": [
+      "neglect",
+      "stifle"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "foster child",
+        "correct": "foster a child",
+        "explain_vi": "'Foster' là động từ, cần tân ngữ"
+      }
+    ],
+    "grammar_patterns": [
+      "foster + noun"
+    ]
+  },
+  {
+    "word": "adopt",
+    "phonetic": "/əˈdɒpt/",
+    "meaning_vi": "nhận nuôi, chấp nhận",
+    "meaning_en": "to legally take another's child as one's own; to choose and follow",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "They decided to adopt a baby.",
+        "vi": "Họ quyết định nhận nuôi một em bé."
+      }
+    ],
+    "word_family": [
+      "adoption (n)",
+      "adoptive (adj)"
+    ],
+    "collocations": [
+      "adopt a child",
+      "adopt a policy",
+      "adopt an approach"
+    ],
+    "synonyms": [
+      "take in",
+      "foster"
+    ],
+    "antonyms": [
+      "abandon"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "adopt a baby from",
+        "correct": "adopt a baby from",
+        "explain_vi": "Đúng, nhưng nhớ giới từ 'from'"
+      }
+    ],
+    "grammar_patterns": [
+      "adopt + noun"
+    ]
+  },
+  {
+    "word": "estranged",
+    "phonetic": "/ɪˈstreɪndʒd/",
+    "meaning_vi": "xa lánh, ly thân (với gia đình)",
+    "meaning_en": "no longer close or affectionate to someone; separated",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "He is estranged from his family.",
+        "vi": "Anh ấy xa lánh gia đình."
+      }
+    ],
+    "word_family": [
+      "estrange (v)",
+      "estrangement (n)"
+    ],
+    "collocations": [
+      "estranged from",
+      "estranged spouse",
+      "estranged relative"
+    ],
+    "synonyms": [
+      "alienated",
+      "separated"
+    ],
+    "antonyms": [
+      "close",
+      "reconciled"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "estranged with",
+        "correct": "estranged from",
+        "explain_vi": "Dùng 'from' thay vì 'with'"
+      }
+    ],
+    "grammar_patterns": [
+      "estranged + from + noun"
+    ]
+  },
+  {
+    "word": "reconcile",
+    "phonetic": "/ˈrekənsaɪl/",
+    "meaning_vi": "hòa giải, làm lành",
+    "meaning_en": "to restore friendly relations after a disagreement",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "They reconciled after years of conflict.",
+        "vi": "Họ hòa giải sau nhiều năm xung đột."
+      }
+    ],
+    "word_family": [
+      "reconciliation (n)",
+      "reconcilable (adj)"
+    ],
+    "collocations": [
+      "reconcile with",
+      "reconcile differences",
+      "reconcile oneself to"
+    ],
+    "synonyms": [
+      "make up",
+      "settle"
+    ],
+    "antonyms": [
+      "estrange",
+      "alienate"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "reconcile with someone",
+        "correct": "reconcile with someone",
+        "explain_vi": "Đúng, nhưng nhớ giới từ 'with'"
+      }
+    ],
+    "grammar_patterns": [
+      "reconcile + with + noun"
+    ]
+  },
+  {
+    "word": "lineage",
+    "phonetic": "/ˈlɪniɪdʒ/",
+    "meaning_vi": "dòng dõi, huyết thống",
+    "meaning_en": "direct descent from an ancestor; ancestry",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "They trace their lineage back to the 18th century.",
+        "vi": "Họ truy tìm dòng dõi của mình từ thế kỷ 18."
+      }
+    ],
+    "word_family": [
+      "lineal (adj)",
+      "line (n)"
+    ],
+    "collocations": [
+      "direct lineage",
+      "family lineage",
+      "trace lineage"
+    ],
+    "synonyms": [
+      "ancestry",
+      "bloodline"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "lineage of family",
+        "correct": "family lineage",
+        "explain_vi": "Thường dùng 'family lineage' hơn"
+      }
+    ],
+    "grammar_patterns": [
+      "possessive + lineage"
+    ]
+  },
+  {
+    "word": "matriarch",
+    "phonetic": "/ˈmeɪtriɑːrk/",
+    "meaning_vi": "mẫu hệ, người phụ nữ đứng đầu gia đình",
+    "meaning_en": "a woman who is the head of a family or tribe",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The matriarch ruled the family with wisdom.",
+        "vi": "Người mẹ đứng đầu gia đình cai quản với sự khôn ngoan."
+      }
+    ],
+    "word_family": [
+      "matriarchal (adj)",
+      "matriarchy (n)"
+    ],
+    "collocations": [
+      "family matriarch",
+      "matriarch of the clan"
+    ],
+    "synonyms": [
+      "matriarchal figure"
+    ],
+    "antonyms": [
+      "patriarch"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "matriarch mother",
+        "correct": "matriarch",
+        "explain_vi": "Không cần thêm 'mother'"
+      }
+    ],
+    "grammar_patterns": [
+      "the + matriarch + of + noun"
+    ]
+  },
+  {
+    "word": "patriarch",
+    "phonetic": "/ˈpeɪtriɑːrk/",
+    "meaning_vi": "gia trưởng, người đàn ông đứng đầu gia đình",
+    "meaning_en": "a man who is the head of a family or tribe",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The patriarch makes all important decisions.",
+        "vi": "Người cha gia trưởng đưa ra mọi quyết định quan trọng."
+      }
+    ],
+    "word_family": [
+      "patriarchal (adj)",
+      "patriarchy (n)"
+    ],
+    "collocations": [
+      "family patriarch",
+      "patriarch of the community"
+    ],
+    "synonyms": [
+      "patriarchal figure"
+    ],
+    "antonyms": [
+      "matriarch"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "patriarch father",
+        "correct": "patriarch",
+        "explain_vi": "Không cần thêm 'father'"
+      }
+    ],
+    "grammar_patterns": [
+      "the + patriarch + of + noun"
+    ]
+  },
+  {
+    "word": "filial",
+    "phonetic": "/ˈfɪliəl/",
+    "meaning_vi": "thuộc về con cái, hiếu thảo",
+    "meaning_en": "relating to or due from a son or daughter",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "Filial piety is important in many cultures.",
+        "vi": "Lòng hiếu thảo rất quan trọng trong nhiều nền văn hóa."
+      }
+    ],
+    "word_family": [
+      "filial piety (n)"
+    ],
+    "collocations": [
+      "filial duty",
+      "filial love",
+      "filial respect"
+    ],
+    "synonyms": [
+      "dutiful",
+      "devoted"
+    ],
+    "antonyms": [
+      "disobedient",
+      "rebellious"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "filial child",
+        "correct": "filial child",
+        "explain_vi": "Đúng, 'filial' là tính từ, 'child' là danh từ"
+      }
+    ],
+    "grammar_patterns": [
+      "filial + noun"
+    ]
+  },
+  {
+    "word": "avuncular",
+    "phonetic": "/əˈvʌŋkjʊlər/",
+    "meaning_vi": "thuộc về chú bác, như người chú",
+    "meaning_en": "relating to an uncle; kind and friendly like an uncle",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "He gave me avuncular advice.",
+        "vi": "Anh ấy cho tôi lời khuyên như người chú."
+      }
+    ],
+    "word_family": [
+      "uncle (n)"
+    ],
+    "collocations": [
+      "avuncular figure",
+      "avuncular relationship",
+      "avuncular advice"
+    ],
+    "synonyms": [
+      "uncle-like",
+      "benevolent"
+    ],
+    "antonyms": [
+      "hostile"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "avuncular uncle",
+        "correct": "avuncular",
+        "explain_vi": "Không cần thêm 'uncle'"
+      }
+    ],
+    "grammar_patterns": [
+      "avuncular + noun"
+    ]
+  },
+  {
+    "word": "conjugal",
+    "phonetic": "/ˈkɒndʒʊɡəl/",
+    "meaning_vi": "thuộc về hôn nhân, vợ chồng",
+    "meaning_en": "relating to marriage or the relationship between husband and wife",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "They enjoy conjugal bliss.",
+        "vi": "Họ tận hưởng hạnh phúc vợ chồng."
+      }
+    ],
+    "word_family": [
+      "conjugal rights (n)",
+      "conjugal visit (n)"
+    ],
+    "collocations": [
+      "conjugal relationship",
+      "conjugal duties",
+      "conjugal home"
+    ],
+    "synonyms": [
+      "marital",
+      "matrimonial"
+    ],
+    "antonyms": [
+      "celibate"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "conjugal marriage",
+        "correct": "conjugal",
+        "explain_vi": "Không cần thêm 'marriage'"
+      }
+    ],
+    "grammar_patterns": [
+      "conjugal + noun"
+    ]
+  },
+  {
+    "word": "confidant",
+    "phonetic": "/ˈkɒn.fɪ.dænt/",
+    "meaning_vi": "bạn tâm giao",
+    "meaning_en": "a person with whom one shares a secret or private matter, trusting them not to repeat it to others",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She is my closest confidant; I tell her everything.",
+        "vi": "Cô ấy là bạn tâm giao thân thiết nhất của tôi; tôi kể cho cô ấy mọi thứ."
+      }
+    ],
+    "word_family": [
+      "confide (v)",
+      "confidante (n fem)",
+      "confidential (adj)"
+    ],
+    "collocations": [
+      "close confidant",
+      "trusted confidant",
+      "act as a confidant"
+    ],
+    "synonyms": [
+      "intimate",
+      "trusted friend",
+      "bosom friend"
+    ],
+    "antonyms": [
+      "stranger",
+      "adversary"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "She is my confident.",
+        "correct": "She is my confidant.",
+        "explain_vi": "'Confident' là tính từ nghĩa tự tin; 'confidant' là danh từ."
+      }
+    ],
+    "grammar_patterns": [
+      "possessive + confidant",
+      "be a confidant to"
+    ]
+  },
+  {
+    "word": "progeny",
+    "phonetic": "/ˈprɒdʒ.ə.ni/",
+    "meaning_vi": "con cái, dòng dõi",
+    "meaning_en": "a descendant or the descendants of a person, animal, or plant; offspring",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "His progeny inherited the family estate.",
+        "vi": "Con cháu của ông ấy thừa kế gia sản của gia đình."
+      }
+    ],
+    "word_family": [
+      "progenitor (n)"
+    ],
+    "collocations": [
+      "progeny of",
+      "raise progeny",
+      "numerous progeny"
+    ],
+    "synonyms": [
+      "offspring",
+      "descendants",
+      "issue"
+    ],
+    "antonyms": [
+      "ancestors",
+      "forebears"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "His progeny is smart.",
+        "correct": "His progeny are smart.",
+        "explain_vi": "'Progeny' thường dùng số nhiều, động từ chia số nhiều."
+      }
+    ],
+    "grammar_patterns": [
+      "progeny + plural verb",
+      "the progeny of"
+    ]
+  },
+  {
+    "word": "affinity",
+    "phonetic": "/əˈfɪn.ə.ti/",
+    "meaning_vi": "sự gần gũi, đồng điệu",
+    "meaning_en": "a natural liking for and understanding of someone or something; similarity or connection",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "There is a strong affinity between the siblings.",
+        "vi": "Có một sự gắn kết mạnh mẽ giữa anh chị em."
+      }
+    ],
+    "word_family": [
+      "affine (adj)",
+      "affinity (n)"
+    ],
+    "collocations": [
+      "have an affinity for",
+      "affinity with",
+      "natural affinity"
+    ],
+    "synonyms": [
+      "kinship",
+      "rapport",
+      "connection"
+    ],
+    "antonyms": [
+      "aversion",
+      "dislike"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I have affinity with her.",
+        "correct": "I have an affinity with her.",
+        "explain_vi": "Cần mạo từ 'an' trước 'affinity'."
+      }
+    ],
+    "grammar_patterns": [
+      "have an affinity with/for",
+      "affinity between"
+    ]
+  },
+  {
+    "word": "comrade",
+    "phonetic": "/ˈkɒm.reɪd/",
+    "meaning_vi": "đồng chí, bạn chiến đấu",
+    "meaning_en": "a companion who shares one's activities or is a fellow member of an organization",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "He fought alongside his comrades in the war.",
+        "vi": "Anh ấy chiến đấu cùng đồng đội trong chiến tranh."
+      }
+    ],
+    "word_family": [
+      "comradeship (n)"
+    ],
+    "collocations": [
+      "comrade in arms",
+      "close comrade",
+      "fellow comrade"
+    ],
+    "synonyms": [
+      "ally",
+      "companion",
+      "associate"
+    ],
+    "antonyms": [
+      "enemy",
+      "foe"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "He is my comrade at work.",
+        "correct": "He is my colleague at work.",
+        "explain_vi": "'Comrade' thường dùng trong ngữ cảnh chính trị hoặc quân sự, không dùng cho đồng nghiệp thông thường."
+      }
+    ],
+    "grammar_patterns": [
+      "comrade + in + noun",
+      "possessive + comrade"
+    ]
+  },
+  {
+    "word": "matrimony",
+    "phonetic": "/ˈmæt.rɪ.mə.ni/",
+    "meaning_vi": "hôn nhân, hôn lễ",
+    "meaning_en": "the state of being married; the institution of marriage",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "They were joined in holy matrimony.",
+        "vi": "Họ đã kết hôn trong lễ thành hôn thiêng liêng."
+      }
+    ],
+    "word_family": [
+      "matrimonial (adj)",
+      "matrimonially (adv)"
+    ],
+    "collocations": [
+      "holy matrimony",
+      "enter into matrimony",
+      "dissolve matrimony"
+    ],
+    "synonyms": [
+      "marriage",
+      "wedlock",
+      "union"
+    ],
+    "antonyms": [
+      "divorce",
+      "separation"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "They celebrated their matrimony.",
+        "correct": "They celebrated their marriage.",
+        "explain_vi": "'Matrimony' trang trọng hơn, thường dùng trong ngữ cảnh tôn giáo; 'marriage' phổ biến hơn."
+      }
+    ],
+    "grammar_patterns": [
+      "in matrimony",
+      "join in matrimony"
+    ]
+  },
+  {
+    "word": "fraternal",
+    "phonetic": "/frəˈtɜː.nəl/",
+    "meaning_vi": "thuộc về anh em",
+    "meaning_en": "relating to brothers; brotherly",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "They share a fraternal bond.",
+        "vi": "Họ có mối quan hệ anh em."
+      }
+    ],
+    "word_family": [
+      "fraternity (n)",
+      "fraternize (v)"
+    ],
+    "collocations": [
+      "fraternal love",
+      "fraternal relationship",
+      "fraternal twins"
+    ],
+    "synonyms": [
+      "brotherly",
+      "sibling"
+    ],
+    "antonyms": [
+      "sororal",
+      "hostile"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "They are fraternal sisters.",
+        "correct": "They are sororal sisters.",
+        "explain_vi": "'Fraternal' chỉ anh em trai; cho chị em gái dùng 'sororal'."
+      }
+    ],
+    "grammar_patterns": [
+      "fraternal + noun"
+    ]
+  },
+  {
+    "word": "sororal",
+    "phonetic": "/səˈrɔː.rəl/",
+    "meaning_vi": "thuộc về chị em",
+    "meaning_en": "relating to sisters; sisterly",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "Their sororal relationship is very close.",
+        "vi": "Mối quan hệ chị em của họ rất thân thiết."
+      }
+    ],
+    "word_family": [
+      "sorority (n)"
+    ],
+    "collocations": [
+      "sororal bond",
+      "sororal love"
+    ],
+    "synonyms": [
+      "sisterly"
+    ],
+    "antonyms": [
+      "fraternal"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "She has a sororal brother.",
+        "correct": "She has a fraternal brother.",
+        "explain_vi": "'Sororal' chỉ chị em gái; cho anh em trai dùng 'fraternal'."
+      }
+    ],
+    "grammar_patterns": [
+      "sororal + noun"
+    ]
+  },
+  {
+    "word": "paternal",
+    "phonetic": "/pəˈtɜː.nəl/",
+    "meaning_vi": "thuộc về cha, bên nội",
+    "meaning_en": "relating to a father; fatherly",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "He has a paternal instinct.",
+        "vi": "Anh ấy có bản năng làm cha."
+      }
+    ],
+    "word_family": [
+      "paternity (n)",
+      "paternalism (n)"
+    ],
+    "collocations": [
+      "paternal love",
+      "paternal side",
+      "paternal uncle"
+    ],
+    "synonyms": [
+      "fatherly"
+    ],
+    "antonyms": [
+      "maternal"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "My paternal mother is kind.",
+        "correct": "My maternal grandmother is kind.",
+        "explain_vi": "'Paternal' chỉ bên nội; 'maternal' chỉ bên ngoại."
+      }
+    ],
+    "grammar_patterns": [
+      "paternal + noun"
+    ]
+  },
+  {
+    "word": "maternal",
+    "phonetic": "/məˈtɜː.nəl/",
+    "meaning_vi": "thuộc về mẹ, bên ngoại",
+    "meaning_en": "relating to a mother; motherly",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "She has a maternal instinct.",
+        "vi": "Cô ấy có bản năng làm mẹ."
+      }
+    ],
+    "word_family": [
+      "maternity (n)",
+      "maternalism (n)"
+    ],
+    "collocations": [
+      "maternal love",
+      "maternal side",
+      "maternal aunt"
+    ],
+    "synonyms": [
+      "motherly"
+    ],
+    "antonyms": [
+      "paternal"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "My maternal father is strict.",
+        "correct": "My maternal grandfather is strict.",
+        "explain_vi": "'Maternal' chỉ bên ngoại; 'paternal' chỉ bên nội."
+      }
+    ],
+    "grammar_patterns": [
+      "maternal + noun"
+    ]
+  },
+  {
+    "word": "benevolent",
+    "phonetic": "/bəˈnev.əl.ənt/",
+    "meaning_vi": "nhân từ, hào phóng",
+    "meaning_en": "well-meaning and kindly; generous",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The benevolent grandmother donated to charity.",
+        "vi": "Người bà nhân từ đã quyên góp cho từ thiện."
+      }
+    ],
+    "word_family": [
+      "benevolence (n)",
+      "benevolently (adv)"
+    ],
+    "collocations": [
+      "benevolent attitude",
+      "benevolent society",
+      "benevolent dictator"
+    ],
+    "synonyms": [
+      "kind-hearted",
+      "generous",
+      "compassionate"
+    ],
+    "antonyms": [
+      "malevolent",
+      "cruel"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "He is a benevolent person.",
+        "correct": "He is a benevolent person.",
+        "explain_vi": "Không có lỗi phổ biến; từ này dùng đúng."
+      }
+    ],
+    "grammar_patterns": [
+      "benevolent + noun"
+    ]
+  },
+  {
+    "word": "malevolent",
+    "phonetic": "/məˈlev.əl.ənt/",
+    "meaning_vi": "ác ý, hiểm độc",
+    "meaning_en": "having or showing a wish to do evil to others",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The malevolent stepmother treated her badly.",
+        "vi": "Người mẹ kế độc ác đã đối xử tệ với cô ấy."
+      }
+    ],
+    "word_family": [
+      "malevolence (n)",
+      "malevolently (adv)"
+    ],
+    "collocations": [
+      "malevolent look",
+      "malevolent intent",
+      "malevolent spirit"
+    ],
+    "synonyms": [
+      "malicious",
+      "spiteful",
+      "vicious"
+    ],
+    "antonyms": [
+      "benevolent",
+      "kind"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "He has a malevolent heart.",
+        "correct": "He has a malevolent heart.",
+        "explain_vi": "Không có lỗi phổ biến; từ này dùng đúng."
+      }
+    ],
+    "grammar_patterns": [
+      "malevolent + noun"
+    ]
+  },
+  {
+    "word": "consanguinity",
+    "phonetic": "/ˌkɒn.sæŋˈɡwɪn.ə.ti/",
+    "meaning_vi": "quan hệ huyết thống",
+    "meaning_en": "the fact of being descended from the same ancestor; blood relationship",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Consanguinity is considered in marriage laws.",
+        "vi": "Quan hệ huyết thống được xem xét trong luật hôn nhân."
+      }
+    ],
+    "word_family": [
+      "consanguineous (adj)",
+      "consanguine (adj)"
+    ],
+    "collocations": [
+      "consanguinity marriage",
+      "degree of consanguinity",
+      "consanguinity test"
+    ],
+    "synonyms": [
+      "blood relation",
+      "kinship"
+    ],
+    "antonyms": [
+      "affinity (by marriage)"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "They have consanguinity.",
+        "correct": "They are related by consanguinity.",
+        "explain_vi": "Thường dùng 'related by consanguinity'."
+      }
+    ],
+    "grammar_patterns": [
+      "consanguinity + between",
+      "by consanguinity"
+    ]
+  },
+  {
+    "word": "affinal",
+    "phonetic": "/əˈfaɪ.nəl/",
+    "meaning_vi": "thuộc về quan hệ thông gia",
+    "meaning_en": "related by marriage rather than blood",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "Affinal relatives include in-laws.",
+        "vi": "Người thân bên thông gia bao gồm họ hàng bên vợ/chồng."
+      }
+    ],
+    "word_family": [
+      "affinity (n)"
+    ],
+    "collocations": [
+      "affinal relationship",
+      "affinal kin"
+    ],
+    "synonyms": [
+      "in-law"
+    ],
+    "antonyms": [
+      "consanguineous"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "They are affinal brothers.",
+        "correct": "They are brothers-in-law.",
+        "explain_vi": "'Affinal' là tính từ, không dùng cho danh từ chỉ người."
+      }
+    ],
+    "grammar_patterns": [
+      "affinal + noun"
+    ]
+  },
+  {
+    "word": "dysfunctional",
+    "phonetic": "/dɪsˈfʌŋk.ʃən.əl/",
+    "meaning_vi": "rối loạn chức năng (gia đình)",
+    "meaning_en": "not operating normally or properly; characterized by conflict or abnormality",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "They grew up in a dysfunctional family.",
+        "vi": "Họ lớn lên trong một gia đình rối loạn chức năng."
+      }
+    ],
+    "word_family": [
+      "dysfunction (n)",
+      "dysfunctionally (adv)"
+    ],
+    "collocations": [
+      "dysfunctional family",
+      "dysfunctional relationship",
+      "dysfunctional behavior"
+    ],
+    "synonyms": [
+      "unstable",
+      "broken",
+      "unhealthy"
+    ],
+    "antonyms": [
+      "functional",
+      "healthy"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "His family is dysfunction.",
+        "correct": "His family is dysfunctional.",
+        "explain_vi": "Cần dùng tính từ 'dysfunctional', không phải danh từ 'dysfunction'."
+      }
+    ],
+    "grammar_patterns": [
+      "dysfunctional + noun"
+    ]
+  },
+  {
+    "word": "nepotism",
+    "phonetic": "/ˈnep.ə.tɪz.əm/",
+    "meaning_vi": "chủ nghĩa gia đình trị",
+    "meaning_en": "the practice of favoring relatives or friends, especially in giving jobs",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Nepotism in the company caused resentment.",
+        "vi": "Chủ nghĩa gia đình trị trong công ty gây ra sự bất mãn."
+      }
+    ],
+    "word_family": [
+      "nepotistic (adj)",
+      "nepotist (n)"
+    ],
+    "collocations": [
+      "accusations of nepotism",
+      "nepotism in hiring",
+      "rampant nepotism"
+    ],
+    "synonyms": [
+      "favoritism",
+      "cronyism"
+    ],
+    "antonyms": [
+      "meritocracy"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "He is a nepotism.",
+        "correct": "He is a nepotist.",
+        "explain_vi": "'Nepotism' là danh từ chỉ hành vi; 'nepotist' là người thực hiện."
+      }
+    ],
+    "grammar_patterns": [
+      "nepotism + in + noun",
+      "accuse of nepotism"
+    ]
+  },
+  {
+    "word": "foster",
+    "phonetic": "/ˈfɒs.tər/",
+    "meaning_vi": "nuôi dưỡng, chăm sóc",
+    "meaning_en": "to raise a child that is not one's own by birth; to promote the development of",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "They decided to foster a child.",
+        "vi": "Họ quyết định nhận nuôi một đứa trẻ."
+      }
+    ],
+    "word_family": [
+      "foster (adj)",
+      "fosterage (n)",
+      "fosterer (n)"
+    ],
+    "collocations": [
+      "foster child",
+      "foster parent",
+      "foster care"
+    ],
+    "synonyms": [
+      "raise",
+      "nurture",
+      "care for"
+    ],
+    "antonyms": [
+      "neglect",
+      "abandon"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "They adopted a child.",
+        "correct": "They fostered a child (temporarily).",
+        "explain_vi": "'Foster' là nuôi tạm thời; 'adopt' là nhận nuôi hợp pháp."
+      }
+    ],
+    "grammar_patterns": [
+      "foster + noun",
+      "foster someone"
+    ]
+  },
+  {
+    "word": "adopt",
+    "phonetic": "/əˈdɒpt/",
+    "meaning_vi": "nhận nuôi (hợp pháp)",
+    "meaning_en": "to legally take another's child and bring it up as one's own",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "They adopted a baby girl.",
+        "vi": "Họ nhận nuôi một bé gái."
+      }
+    ],
+    "word_family": [
+      "adoption (n)",
+      "adoptive (adj)",
+      "adopter (n)"
+    ],
+    "collocations": [
+      "adopt a child",
+      "adopt a pet",
+      "adopt a policy"
+    ],
+    "synonyms": [
+      "take in",
+      "foster (temporary)"
+    ],
+    "antonyms": [
+      "give up",
+      "abandon"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "They adopted a child from the orphanage.",
+        "correct": "They adopted a child from the orphanage.",
+        "explain_vi": "Không có lỗi phổ biến."
+      }
+    ],
+    "grammar_patterns": [
+      "adopt + noun",
+      "adopt someone"
+    ]
+  },
+  {
+    "word": "estranged",
+    "phonetic": "/ɪˈstreɪndʒd/",
+    "meaning_vi": "xa lánh, ghẻ lạnh",
+    "meaning_en": "no longer close or affectionate to someone; alienated",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "He is estranged from his family.",
+        "vi": "Anh ấy ghẻ lạnh với gia đình."
+      }
+    ],
+    "word_family": [
+      "estrangement (n)",
+      "estrange (v)"
+    ],
+    "collocations": [
+      "estranged from",
+      "estranged spouse",
+      "estranged relationship"
+    ],
+    "synonyms": [
+      "alienated",
+      "separated",
+      "disaffected"
+    ],
+    "antonyms": [
+      "close",
+      "reconciled"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "He estranged from his wife.",
+        "correct": "He is estranged from his wife.",
+        "explain_vi": "Cần dùng 'be estranged from'."
+      }
+    ],
+    "grammar_patterns": [
+      "be estranged from",
+      "become estranged"
+    ]
+  },
+  {
+    "word": "reconcile",
+    "phonetic": "/ˈrek.ən.saɪl/",
+    "meaning_vi": "hòa giải, làm lành",
+    "meaning_en": "to restore friendly relations after an argument or disagreement",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "They reconciled after the fight.",
+        "vi": "Họ đã làm lành sau cuộc cãi vã."
+      }
+    ],
+    "word_family": [
+      "reconciliation (n)",
+      "reconcilable (adj)",
+      "reconciler (n)"
+    ],
+    "collocations": [
+      "reconcile with",
+      "reconcile differences",
+      "reconcile accounts"
+    ],
+    "synonyms": [
+      "make up",
+      "settle",
+      "harmonize"
+    ],
+    "antonyms": [
+      "alienate",
+      "estrange"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "They reconciled together.",
+        "correct": "They reconciled.",
+        "explain_vi": "Không cần 'together' vì 'reconcile' đã bao hàm ý nhau."
+      }
+    ],
+    "grammar_patterns": [
+      "reconcile with someone",
+      "reconcile something"
+    ]
+  },
+  {
+    "word": "lineage",
+    "phonetic": "/ˈlɪn.i.ɪdʒ/",
+    "meaning_vi": "dòng dõi, huyết thống",
+    "meaning_en": "direct descent from an ancestor; ancestry or pedigree",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She comes from a noble lineage.",
+        "vi": "Cô ấy xuất thân từ dòng dõi quý tộc."
+      }
+    ],
+    "word_family": [
+      "lineal (adj)",
+      "lineally (adv)"
+    ],
+    "collocations": [
+      "trace lineage",
+      "direct lineage",
+      "royal lineage"
+    ],
+    "synonyms": [
+      "ancestry",
+      "descent",
+      "bloodline"
+    ],
+    "antonyms": [
+      "adoption (non-biological)"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "His lineage is long.",
+        "correct": "His lineage is ancient.",
+        "explain_vi": "Dùng 'ancient' thay vì 'long' cho dòng dõi."
+      }
+    ],
+    "grammar_patterns": [
+      "lineage of",
+      "from a lineage"
+    ]
+  },
+  {
+    "word": "compatible",
+    "phonetic": "/kəmˈpæt.ə.bəl/",
+    "meaning_vi": "hợp nhau, hòa hợp",
+    "meaning_en": "able to exist or work together without conflict",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "They are a compatible couple.",
+        "vi": "Họ là một cặp đôi hòa hợp."
+      }
+    ],
+    "word_family": [
+      "compatibility (n)",
+      "incompatible (adj)"
+    ],
+    "collocations": [
+      "compatible with",
+      "compatible partners",
+      "compatible personalities"
+    ],
+    "synonyms": [
+      "harmonious",
+      "well-matched"
+    ],
+    "antonyms": [
+      "incompatible"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "They are compatible each other.",
+        "correct": "They are compatible with each other.",
+        "explain_vi": "Cần giới từ 'with' sau 'compatible'."
+      }
+    ],
+    "grammar_patterns": [
+      "be compatible with"
+    ]
+  },
+  {
+    "word": "fall out",
+    "phonetic": "/fɔːl aʊt/",
+    "meaning_vi": "cãi nhau, bất hòa",
+    "meaning_en": "to have a disagreement or quarrel with someone",
+    "pos": "phrasal verb",
+    "examples": [
+      {
+        "en": "They fell out over money.",
+        "vi": "Họ cãi nhau vì tiền bạc."
+      }
+    ],
+    "word_family": [
+      "fallout (n)"
+    ],
+    "collocations": [
+      "fall out with",
+      "fall out over"
+    ],
+    "synonyms": [
+      "quarrel",
+      "argue"
+    ],
+    "antonyms": [
+      "make up",
+      "reconcile"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "They fell out each other.",
+        "correct": "They fell out with each other.",
+        "explain_vi": "Cần giới từ 'with' sau 'fall out'."
+      }
+    ],
+    "grammar_patterns": [
+      "fall out with someone (over something)"
+    ]
+  },
+  {
+    "word": "take after",
+    "phonetic": "/teɪk ˈæf.tər/",
+    "meaning_vi": "giống (ai đó trong gia đình)",
+    "meaning_en": "to resemble a family member in appearance or character",
+    "pos": "phrasal verb",
+    "examples": [
+      {
+        "en": "She takes after her mother.",
+        "vi": "Cô ấy giống mẹ."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "take after someone",
+      "take after in looks",
+      "take after in personality"
+    ],
+    "synonyms": [
+      "resemble",
+      "look like"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "She takes after to her mother.",
+        "correct": "She takes after her mother.",
+        "explain_vi": "Không dùng 'to' sau 'take after'."
+      }
+    ],
+    "grammar_patterns": [
+      "take after + person"
+    ]
+  },
+  {
+    "word": "look up to",
+    "phonetic": "/lʊk ʌp tuː/",
+    "meaning_vi": "ngưỡng mộ, kính trọng",
+    "meaning_en": "to admire and respect someone",
+    "pos": "phrasal verb",
+    "examples": [
+      {
+        "en": "I look up to my older brother.",
+        "vi": "Tôi ngưỡng mộ anh trai tôi."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "look up to someone",
+      "look up to as a role model"
+    ],
+    "synonyms": [
+      "admire",
+      "respect"
+    ],
+    "antonyms": [
+      "look down on"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I look up him.",
+        "correct": "I look up to him.",
+        "explain_vi": "Cần giới từ 'to' sau 'look up'."
+      }
+    ],
+    "grammar_patterns": [
+      "look up to + person"
+    ]
+  },
+  {
+    "word": "get along",
+    "phonetic": "/ɡet əˈlɒŋ/",
+    "meaning_vi": "hòa thuận, hợp nhau",
+    "meaning_en": "to have a friendly relationship",
+    "pos": "phrasal verb",
+    "examples": [
+      {
+        "en": "We get along well with our neighbors.",
+        "vi": "Chúng tôi hòa thuận với hàng xóm."
+      }
+    ],
+    "word_family": [
+      "get on (syn)"
+    ],
+    "collocations": [
+      "get along with",
+      "get along well",
+      "get along together"
+    ],
+    "synonyms": [
+      "get on",
+      "hit it off"
+    ],
+    "antonyms": [
+      "fall out",
+      "clash"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "We get along each other.",
+        "correct": "We get along with each other.",
+        "explain_vi": "Cần giới từ 'with' sau 'get along'."
+      }
+    ],
+    "grammar_patterns": [
+      "get along with someone"
+    ]
+  },
+  {
+    "word": "bring up",
+    "phonetic": "/brɪŋ ʌp/",
+    "meaning_vi": "nuôi dưỡng, dạy dỗ",
+    "meaning_en": "to raise a child",
+    "pos": "phrasal verb",
+    "examples": [
+      {
+        "en": "They brought up their children to be honest.",
+        "vi": "Họ nuôi dạy con cái trở nên trung thực."
+      }
+    ],
+    "word_family": [
+      "upbringing (n)"
+    ],
+    "collocations": [
+      "bring up a child",
+      "bring up with values"
+    ],
+    "synonyms": [
+      "raise",
+      "rear"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "She brought up her children with strict.",
+        "correct": "She brought up her children strictly.",
+        "explain_vi": "Cần trạng từ thay vì tính từ."
+      }
+    ],
+    "grammar_patterns": [
+      "bring up + child"
+    ]
+  },
+  {
+    "word": "grow up",
+    "phonetic": "/ɡrəʊ ʌp/",
+    "meaning_vi": "lớn lên, trưởng thành",
+    "meaning_en": "to develop from a child into an adult",
+    "pos": "phrasal verb",
+    "examples": [
+      {
+        "en": "I grew up in a small town.",
+        "vi": "Tôi lớn lên ở một thị trấn nhỏ."
+      }
+    ],
+    "word_family": [
+      "grown-up (n/adj)"
+    ],
+    "collocations": [
+      "grow up in",
+      "grow up with"
+    ],
+    "synonyms": [
+      "mature",
+      "come of age"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I was grown up in Hanoi.",
+        "correct": "I grew up in Hanoi.",
+        "explain_vi": "Không dùng bị động với 'grow up'."
+      }
+    ],
+    "grammar_patterns": [
+      "grow up + place/time"
+    ]
+  },
+  {
+    "word": "count on",
+    "phonetic": "/kaʊnt ɒn/",
+    "meaning_vi": "tin tưởng, dựa vào",
+    "meaning_en": "to rely on someone",
+    "pos": "phrasal verb",
+    "examples": [
+      {
+        "en": "You can count on me.",
+        "vi": "Bạn có thể tin tưởng tôi."
+      }
+    ],
+    "word_family": [
+      "count on (v)"
+    ],
+    "collocations": [
+      "count on someone",
+      "count on support"
+    ],
+    "synonyms": [
+      "depend on",
+      "rely on"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I count you.",
+        "correct": "I count on you.",
+        "explain_vi": "Cần giới từ 'on' sau 'count'."
+      }
+    ],
+    "grammar_patterns": [
+      "count on + person/thing"
+    ]
+  },
+  {
+    "word": "side with",
+    "phonetic": "/saɪd wɪð/",
+    "meaning_vi": "đứng về phía, ủng hộ",
+    "meaning_en": "to support one person or group in an argument",
+    "pos": "phrasal verb",
+    "examples": [
+      {
+        "en": "I side with my sister in this matter.",
+        "vi": "Tôi đứng về phía chị tôi trong vấn đề này."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "side with someone",
+      "side against"
+    ],
+    "synonyms": [
+      "support",
+      "back"
+    ],
+    "antonyms": [
+      "oppose"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I side my brother.",
+        "correct": "I side with my brother.",
+        "explain_vi": "Cần giới từ 'with' sau 'side'."
+      }
+    ],
+    "grammar_patterns": [
+      "side with + person"
+    ]
+  },
+  {
+    "word": "make up",
+    "phonetic": "/meɪk ʌp/",
+    "meaning_vi": "làm hòa",
+    "meaning_en": "to reconcile after a disagreement",
+    "pos": "phrasal verb",
+    "examples": [
+      {
+        "en": "They kissed and made up.",
+        "vi": "Họ hôn nhau và làm hòa."
+      }
+    ],
+    "word_family": [
+      "makeup (n)"
+    ],
+    "collocations": [
+      "make up with",
+      "make up after a fight"
+    ],
+    "synonyms": [
+      "reconcile",
+      "bury the hatchet"
+    ],
+    "antonyms": [
+      "fall out"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "They made up each other.",
+        "correct": "They made up with each other.",
+        "explain_vi": "Cần giới từ 'with' sau 'make up'."
+      }
+    ],
+    "grammar_patterns": [
+      "make up with someone"
+    ]
+  },
+  {
+    "word": "put up with",
+    "phonetic": "/pʊt ʌp wɪð/",
+    "meaning_vi": "chịu đựng",
+    "meaning_en": "to tolerate something or someone",
+    "pos": "phrasal verb",
+    "examples": [
+      {
+        "en": "I can't put up with his behavior.",
+        "vi": "Tôi không thể chịu đựng hành vi của anh ấy."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "put up with someone",
+      "put up with something"
+    ],
+    "synonyms": [
+      "tolerate",
+      "stand"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I put up his behavior.",
+        "correct": "I put up with his behavior.",
+        "explain_vi": "Cần giới từ 'with' sau 'put up'."
+      }
+    ],
+    "grammar_patterns": [
+      "put up with + noun/gerund"
+    ]
+  },
+  {
+    "word": "look after",
+    "phonetic": "/lʊk ˈæf.tər/",
+    "meaning_vi": "chăm sóc",
+    "meaning_en": "to take care of someone or something",
+    "pos": "phrasal verb",
+    "examples": [
+      {
+        "en": "She looks after her elderly parents.",
+        "vi": "Cô ấy chăm sóc cha mẹ già."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "look after someone",
+      "look after something"
+    ],
+    "synonyms": [
+      "care for",
+      "tend to"
+    ],
+    "antonyms": [
+      "neglect"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "She looks her parents after.",
+        "correct": "She looks after her parents.",
+        "explain_vi": "Trật tự từ sai; 'after' phải đứng sau 'look'."
+      }
+    ],
+    "grammar_patterns": [
+      "look after + noun"
+    ]
+  },
+  {
+    "word": "close-knit",
+    "phonetic": "/ˈkləʊs nɪt/",
+    "meaning_vi": "gắn bó khăng khít",
+    "meaning_en": "united by strong relationships and common interests",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "They are a close-knit family.",
+        "vi": "Họ là một gia đình gắn bó khăng khít."
+      }
+    ],
+    "word_family": [
+      "close-knit community"
+    ],
+    "collocations": [
+      "close-knit family",
+      "close-knit group"
+    ],
+    "synonyms": [
+      "tight-knit",
+      "united"
+    ],
+    "antonyms": [
+      "distant",
+      "fragmented"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "They have a close-knit relationship.",
+        "correct": "They are a close-knit family.",
+        "explain_vi": "Thường dùng cho nhóm hơn là mối quan hệ."
+      }
+    ],
+    "grammar_patterns": [
+      "close-knit + noun"
+    ]
+  },
+  {
+    "word": "kith and kin",
+    "phonetic": "/ˈkɪθ ənd ˈkɪn/",
+    "meaning_vi": "bạn bè và người thân",
+    "meaning_en": "friends and relatives",
+    "pos": "noun phrase",
+    "examples": [
+      {
+        "en": "He invited all his kith and kin to the wedding.",
+        "vi": "Anh ấy mời tất cả bạn bè và người thân đến đám cưới."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "kith and kin"
+    ],
+    "synonyms": [
+      "family and friends",
+      "relatives and acquaintances"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "His kith and kin are coming.",
+        "correct": "His kith and kin are coming.",
+        "explain_vi": "Chú ý: 'kith and kin' là danh từ số nhiều."
+      }
+    ],
+    "grammar_patterns": [
+      "kith and kin (plural verb)"
+    ]
+  },
+  {
+    "word": "flesh and blood",
+    "phonetic": "/ˈfleʃ ənd ˈblʌd/",
+    "meaning_vi": "ruột thịt, máu mủ",
+    "meaning_en": "one's family or relatives",
+    "pos": "noun phrase",
+    "examples": [
+      {
+        "en": "She is my own flesh and blood.",
+        "vi": "Cô ấy là ruột thịt của tôi."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "own flesh and blood",
+      "flesh and blood relative"
+    ],
+    "synonyms": [
+      "blood relative",
+      "kin"
+    ],
+    "antonyms": [
+      "stranger"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "He is flesh and blood of me.",
+        "correct": "He is my flesh and blood.",
+        "explain_vi": "Không dùng 'of' trong cụm này."
+      }
+    ],
+    "grammar_patterns": [
+      "possessive + flesh and blood"
+    ]
+  },
+  {
+    "word": "kith and kin",
+    "phonetic": "/ˈkɪθ ənd ˈkɪn/",
+    "meaning_vi": "bạn bè và người thân",
+    "meaning_en": "friends and relatives",
+    "pos": "noun phrase",
+    "examples": [
+      {
+        "en": "He invited all his kith and kin to the wedding.",
+        "vi": "Anh ấy mời tất cả bạn bè và người thân đến đám cưới."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "kith and kin"
+    ],
+    "synonyms": [
+      "family and friends",
+      "relatives and acquaintances"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "His kith and kin is coming.",
+        "correct": "His kith and kin are coming.",
+        "explain_vi": "'Kith and kin' dùng động từ số nhiều."
+      }
+    ],
+    "grammar_patterns": [
+      "kith and kin (plural)"
+    ]
+  },
+  {
+    "word": "next of kin",
+    "phonetic": "/ˈnekst əv ˈkɪn/",
+    "meaning_vi": "người thân nhất",
+    "meaning_en": "the person most closely related to someone",
+    "pos": "noun phrase",
+    "examples": [
+      {
+        "en": "Her next of kin was notified of the accident.",
+        "vi": "Người thân nhất của cô ấy đã được thông báo về vụ tai nạn."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "next of kin",
+      "nearest next of kin"
+    ],
+    "synonyms": [
+      "closest relative"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "She is the next of kin of him.",
+        "correct": "She is his next of kin.",
+        "explain_vi": "Dùng tính từ sở hữu thay vì 'of'."
+      }
+    ],
+    "grammar_patterns": [
+      "possessive + next of kin"
+    ]
+  },
+  {
+    "word": "kith and kin",
+    "phonetic": "/ˈkɪθ ənd ˈkɪn/",
+    "meaning_vi": "bạn bè và người thân",
+    "meaning_en": "friends and relatives",
+    "pos": "noun phrase",
+    "examples": [
+      {
+        "en": "He invited all his kith and kin to the wedding.",
+        "vi": "Anh ấy mời tất cả bạn bè và người thân đến đám cưới."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "kith and kin"
+    ],
+    "synonyms": [
+      "family and friends",
+      "relatives and acquaintances"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "His kith and kin is coming.",
+        "correct": "His kith and kin are coming.",
+        "explain_vi": "'Kith and kin' dùng động từ số nhiều."
+      }
+    ],
+    "grammar_patterns": [
+      "kith and kin (plural)"
+    ]
+  },
+  {
+    "word": "kith and kin",
+    "phonetic": "/ˈkɪθ ənd ˈkɪn/",
+    "meaning_vi": "bạn bè và người thân",
+    "meaning_en": "friends and relatives",
+    "pos": "noun phrase",
+    "examples": [
+      {
+        "en": "He invited all his kith and kin to the wedding.",
+        "vi": "Anh ấy mời tất cả bạn bè và người thân đến đám cưới."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "kith and kin"
+    ],
+    "synonyms": [
+      "family and friends",
+      "relatives and acquaintances"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "His kith and kin is coming.",
+        "correct": "His kith and kin are coming.",
+        "explain_vi": "'Kith and kin' dùng động từ số nhiều."
+      }
+    ],
+    "grammar_patterns": [
+      "kith and kin (plural)"
+    ]
+  },
+  {
+    "word": "kith and kin",
+    "phonetic": "/ˈkɪθ ənd ˈkɪn/",
+    "meaning_vi": "bạn bè và người thân",
+    "meaning_en": "friends and relatives",
+    "pos": "noun phrase",
+    "examples": [
+      {
+        "en": "He invited all his kith and kin to the wedding.",
+        "vi": "Anh ấy mời tất cả bạn bè và người thân đến đám cưới."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "kith and kin"
+    ],
+    "synonyms": [
+      "family and friends",
+      "relatives and acquaintances"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "His kith and kin is coming.",
+        "correct": "His kith and kin are coming.",
+        "explain_vi": "'Kith and kin' dùng động từ số nhiều."
+      }
+    ],
+    "grammar_patterns": [
+      "kith and kin (plural)"
+    ]
+  }
+]

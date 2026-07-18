@@ -1,0 +1,3098 @@
+[
+  {
+    "word": "movie",
+    "phonetic": "/ˈmuː.vi/",
+    "meaning_vi": "phim",
+    "meaning_en": "a film shown in a cinema or on television",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Let's watch a movie tonight.",
+        "vi": "Tối nay chúng ta xem phim nhé."
+      },
+      {
+        "en": "I love action movies.",
+        "vi": "Tôi thích phim hành động."
+      }
+    ],
+    "word_family": [
+      "moviegoer (n)"
+    ],
+    "collocations": [
+      "watch a movie",
+      "go to the movies",
+      "action movie"
+    ],
+    "synonyms": [
+      "film"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I went to see a film.",
+        "correct": "I went to see a movie.",
+        "explain_vi": "Trong tiếng Anh Mỹ, 'movie' phổ biến hơn 'film'."
+      }
+    ],
+    "grammar_patterns": [
+      "watch + a + movie",
+      "go to the + movies"
+    ]
+  },
+  {
+    "word": "music",
+    "phonetic": "/ˈmjuː.zɪk/",
+    "meaning_vi": "âm nhạc",
+    "meaning_en": "sounds arranged in patterns, especially for singing or playing instruments",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I listen to music every day.",
+        "vi": "Tôi nghe nhạc mỗi ngày."
+      },
+      {
+        "en": "What kind of music do you like?",
+        "vi": "Bạn thích thể loại nhạc nào?"
+      }
+    ],
+    "word_family": [
+      "musical (adj)",
+      "musician (n)"
+    ],
+    "collocations": [
+      "listen to music",
+      "play music",
+      "classical music"
+    ],
+    "synonyms": [
+      "melody",
+      "tune"
+    ],
+    "antonyms": [
+      "silence"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I listen music.",
+        "correct": "I listen to music.",
+        "explain_vi": "Cần giới từ 'to' sau động từ 'listen'."
+      }
+    ],
+    "grammar_patterns": [
+      "listen to + music",
+      "play + music"
+    ]
+  },
+  {
+    "word": "game",
+    "phonetic": "/ɡeɪm/",
+    "meaning_vi": "trò chơi, trận đấu",
+    "meaning_en": "an activity for amusement, or a sport",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We played a board game.",
+        "vi": "Chúng tôi chơi một trò chơi trên bàn."
+      },
+      {
+        "en": "The game was exciting.",
+        "vi": "Trận đấu thật thú vị."
+      }
+    ],
+    "word_family": [
+      "gamer (n)",
+      "gaming (n)"
+    ],
+    "collocations": [
+      "play a game",
+      "video game",
+      "board game"
+    ],
+    "synonyms": [
+      "match",
+      "contest"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I play game.",
+        "correct": "I play games.",
+        "explain_vi": "Cần dùng số nhiều khi n��i chung."
+      }
+    ],
+    "grammar_patterns": [
+      "play + a + game",
+      "play + games"
+    ]
+  },
+  {
+    "word": "show",
+    "phonetic": "/ʃoʊ/",
+    "meaning_vi": "chương trình, buổi biểu diễn",
+    "meaning_en": "a performance or television program",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I watch my favorite show every week.",
+        "vi": "Tôi xem chương trình yêu thích mỗi tuần."
+      },
+      {
+        "en": "The show starts at 8pm.",
+        "vi": "Buổi biểu diễn bắt đầu lúc 8 giờ tối."
+      }
+    ],
+    "word_family": [
+      "showtime (n)",
+      "showman (n)"
+    ],
+    "collocations": [
+      "watch a show",
+      "TV show",
+      "talk show"
+    ],
+    "synonyms": [
+      "program",
+      "performance"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I saw a show on TV.",
+        "correct": "I watched a show on TV.",
+        "explain_vi": "Dùng 'watch' cho TV, 'see' cho phim ở rạp."
+      }
+    ],
+    "grammar_patterns": [
+      "watch + a + show"
+    ]
+  },
+  {
+    "word": "song",
+    "phonetic": "/sɔːŋ/",
+    "meaning_vi": "bài hát",
+    "meaning_en": "a short piece of music with words",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "This is my favorite song.",
+        "vi": "Đây là bài hát yêu thích của tôi."
+      },
+      {
+        "en": "She sang a beautiful song.",
+        "vi": "Cô ấy hát một bài hát hay."
+      }
+    ],
+    "word_family": [
+      "singer (n)",
+      "songwriter (n)"
+    ],
+    "collocations": [
+      "sing a song",
+      "listen to a song",
+      "favorite song"
+    ],
+    "synonyms": [
+      "tune",
+      "melody"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I like this song very much.",
+        "correct": "I like this song a lot.",
+        "explain_vi": "'Very much' thường đứng cuối câu."
+      }
+    ],
+    "grammar_patterns": [
+      "sing + a + song",
+      "listen to + a + song"
+    ]
+  },
+  {
+    "word": "concert",
+    "phonetic": "/ˈkɑːn.sɚt/",
+    "meaning_vi": "buổi hòa nhạc",
+    "meaning_en": "a live performance of music",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We went to a concert last night.",
+        "vi": "Tối qua chúng tôi đi xem hòa nhạc."
+      },
+      {
+        "en": "The concert was amazing.",
+        "vi": "Buổi hòa nhạc thật tuyệt vời."
+      }
+    ],
+    "word_family": [
+      "concertgoer (n)"
+    ],
+    "collocations": [
+      "go to a concert",
+      "attend a concert",
+      "rock concert"
+    ],
+    "synonyms": [
+      "gig",
+      "performance"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go to concert.",
+        "correct": "I go to a concert.",
+        "explain_vi": "Cần mạo từ 'a'."
+      }
+    ],
+    "grammar_patterns": [
+      "go to + a + concert"
+    ]
+  },
+  {
+    "word": "channel",
+    "phonetic": "/ˈtʃæn.əl/",
+    "meaning_vi": "kênh (truyền hình)",
+    "meaning_en": "a television station",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "What channel is the news on?",
+        "vi": "Bản tin chiếu trên kênh nào?"
+      },
+      {
+        "en": "I changed the channel.",
+        "vi": "Tôi đã chuyển kênh."
+      }
+    ],
+    "word_family": [
+      "channel surf (v)"
+    ],
+    "collocations": [
+      "change the channel",
+      "TV channel",
+      "channel number"
+    ],
+    "synonyms": [
+      "station",
+      "network"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I watch channel 7.",
+        "correct": "I watch channel 7.",
+        "explain_vi": "Cụm từ này đúng, nhưng nhớ không dùng 'the' trước 'channel' khi có số."
+      }
+    ],
+    "grammar_patterns": [
+      "on + channel + number"
+    ]
+  },
+  {
+    "word": "actor",
+    "phonetic": "/ˈæk.tɚ/",
+    "meaning_vi": "diễn viên (nam)",
+    "meaning_en": "a person who performs in plays, films, or television",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "He is a famous actor.",
+        "vi": "Anh ấy là một diễn viên nổi tiếng."
+      },
+      {
+        "en": "My favorite actor is Tom Hanks.",
+        "vi": "Diễn viên yêu thích của tôi là Tom Hanks."
+      }
+    ],
+    "word_family": [
+      "actress (n)",
+      "acting (n)"
+    ],
+    "collocations": [
+      "famous actor",
+      "film actor",
+      "supporting actor"
+    ],
+    "synonyms": [
+      "performer",
+      "thespian"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "She is a good actor.",
+        "correct": "She is a good actress.",
+        "explain_vi": "Dùng 'actress' cho nữ."
+      }
+    ],
+    "grammar_patterns": [
+      "actor + plays + role"
+    ]
+  },
+  {
+    "word": "audience",
+    "phonetic": "/ˈɑː.di.əns/",
+    "meaning_vi": "khán giả",
+    "meaning_en": "the people who watch or listen to a performance",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The audience clapped loudly.",
+        "vi": "Khán giả vỗ tay nhiệt liệt."
+      },
+      {
+        "en": "The show had a large audience.",
+        "vi": "Chương trình có lượng khán giả lớn."
+      }
+    ],
+    "word_family": [
+      "audience member (n)"
+    ],
+    "collocations": [
+      "live audience",
+      "target audience",
+      "audience applause"
+    ],
+    "synonyms": [
+      "spectators",
+      "viewers"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Audiences are happy.",
+        "correct": "The audience is happy.",
+        "explain_vi": "'Audience' thường là danh từ tập hợp, dùng số ít."
+      }
+    ],
+    "grammar_patterns": [
+      "the + audience + verb (singular)"
+    ]
+  },
+  {
+    "word": "episode",
+    "phonetic": "/ˈep.ɪ.soʊd/",
+    "meaning_vi": "tập (phim, chương trình)",
+    "meaning_en": "one part of a series of a TV or radio program",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I watched the first episode.",
+        "vi": "Tôi đã xem tập đầu tiên."
+      },
+      {
+        "en": "The episode ends with a cliffhanger.",
+        "vi": "Tập phim kết thúc với một tình huống hồi hộp."
+      }
+    ],
+    "word_family": [
+      "episodic (adj)"
+    ],
+    "collocations": [
+      "first episode",
+      "watch an episode",
+      "episode number"
+    ],
+    "synonyms": [
+      "installment",
+      "part"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I saw episode 1.",
+        "correct": "I saw episode 1.",
+        "explain_vi": "Có thể dùng số, nhưng không cần 'the'."
+      }
+    ],
+    "grammar_patterns": [
+      "episode + number"
+    ]
+  },
+  {
+    "word": "comedy",
+    "phonetic": "/ˈkɑː.mə.di/",
+    "meaning_vi": "hài kịch",
+    "meaning_en": "entertainment that is intended to make people laugh",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I enjoy watching comedies.",
+        "vi": "Tôi thích xem phim hài."
+      },
+      {
+        "en": "He told a comedy sketch.",
+        "vi": "Anh ấy kể một tiểu phẩm hài."
+      }
+    ],
+    "word_family": [
+      "comedian (n)",
+      "comic (adj)"
+    ],
+    "collocations": [
+      "stand-up comedy",
+      "comedy film",
+      "comedy show"
+    ],
+    "synonyms": [
+      "humor",
+      "farce"
+    ],
+    "antonyms": [
+      "tragedy"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I like comedy movies.",
+        "correct": "I like comedy movies.",
+        "explain_vi": "Từ này dùng như tính từ ghép."
+      }
+    ],
+    "grammar_patterns": [
+      "comedy + noun"
+    ]
+  },
+  {
+    "word": "drama",
+    "phonetic": "/ˈdrɑː.mə/",
+    "meaning_vi": "phim tâm lý, kịch",
+    "meaning_en": "a story or play with serious emotions or conflicts",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The drama was very emotional.",
+        "vi": "Bộ phim tâm lý rất xúc động."
+      },
+      {
+        "en": "She loves watching Korean dramas.",
+        "vi": "Cô ấy thích xem phim truyền hình Hàn Quốc."
+      }
+    ],
+    "word_family": [
+      "dramatic (adj)",
+      "dramatist (n)"
+    ],
+    "collocations": [
+      "TV drama",
+      "historical drama",
+      "drama series"
+    ],
+    "synonyms": [
+      "play",
+      "soap opera"
+    ],
+    "antonyms": [
+      "comedy"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I like drama film.",
+        "correct": "I like drama films.",
+        "explain_vi": "Cần dùng số nhiều khi nói chung."
+      }
+    ],
+    "grammar_patterns": [
+      "drama + noun"
+    ]
+  },
+  {
+    "word": "stream",
+    "phonetic": "/striːm/",
+    "meaning_vi": "phát trực tuyến",
+    "meaning_en": "to watch or listen to media over the internet",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "I stream movies on Netflix.",
+        "vi": "Tôi xem phim trực tuyến trên Netflix."
+      },
+      {
+        "en": "We streamed the concert live.",
+        "vi": "Chúng tôi đã phát trực tiếp buổi hòa nhạc."
+      }
+    ],
+    "word_family": [
+      "streaming (n)",
+      "streamer (n)"
+    ],
+    "collocations": [
+      "stream a movie",
+      "stream music",
+      "live stream"
+    ],
+    "synonyms": [
+      "broadcast",
+      "transmit"
+    ],
+    "antonyms": [
+      "download"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I streamed a film on Netflix.",
+        "correct": "I streamed a movie on Netflix.",
+        "explain_vi": "Từ 'film' thường dùng trong Anh-Anh; 'movie' phổ biến hơn."
+      }
+    ],
+    "grammar_patterns": [
+      "stream + noun"
+    ]
+  },
+  {
+    "word": "download",
+    "phonetic": "/ˌdaʊnˈloʊd/",
+    "meaning_vi": "tải xuống",
+    "meaning_en": "to copy data from the internet to your device",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "I downloaded the app.",
+        "vi": "Tôi đã tải ứng dụng xuống."
+      },
+      {
+        "en": "You can download the song for free.",
+        "vi": "Bạn có thể tải bài hát miễn phí."
+      }
+    ],
+    "word_family": [
+      "downloadable (adj)",
+      "downloader (n)"
+    ],
+    "collocations": [
+      "download a file",
+      "download music",
+      "download speed"
+    ],
+    "synonyms": [
+      "save",
+      "transfer"
+    ],
+    "antonyms": [
+      "upload"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I download a movie.",
+        "correct": "I downloaded a movie.",
+        "explain_vi": "Nhớ chia thì quá khứ."
+      }
+    ],
+    "grammar_patterns": [
+      "download + noun"
+    ]
+  },
+  {
+    "word": "review",
+    "phonetic": "/rɪˈvjuː/",
+    "meaning_vi": "bài đánh giá",
+    "meaning_en": "a critical evaluation of a work, such as a movie or book",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I read a review of the film.",
+        "vi": "Tôi đọc một bài đánh giá về bộ phim."
+      },
+      {
+        "en": "The review was positive.",
+        "vi": "Bài đánh giá tích cực."
+      }
+    ],
+    "word_family": [
+      "reviewer (n)",
+      "review (v)"
+    ],
+    "collocations": [
+      "write a review",
+      "read a review",
+      "movie review"
+    ],
+    "synonyms": [
+      "critique",
+      "assessment"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I review the movie.",
+        "correct": "I wrote a review of the movie.",
+        "explain_vi": "Cần phân biệt động từ và danh từ."
+      }
+    ],
+    "grammar_patterns": [
+      "a + review + of + noun"
+    ]
+  },
+  {
+    "word": "screen",
+    "phonetic": "/skriːn/",
+    "meaning_vi": "màn hình",
+    "meaning_en": "the flat surface on which images are displayed",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The screen is too small.",
+        "vi": "Màn hình quá nhỏ."
+      },
+      {
+        "en": "He stared at the screen.",
+        "vi": "Anh ấy nhìn chằm chằm vào màn hình."
+      }
+    ],
+    "word_family": [
+      "screenplay (n)",
+      "screenwriter (n)"
+    ],
+    "collocations": [
+      "on screen",
+      "screen size",
+      "touch screen"
+    ],
+    "synonyms": [
+      "display",
+      "monitor"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I look the screen.",
+        "correct": "I look at the screen.",
+        "explain_vi": "Cần giới từ 'at'."
+      }
+    ],
+    "grammar_patterns": [
+      "on + the + screen"
+    ]
+  },
+  {
+    "word": "series",
+    "phonetic": "/ˈsɪr.iːz/",
+    "meaning_vi": "loạt phim, sê-ri",
+    "meaning_en": "a set of related television or radio programs",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I binge-watched the entire series.",
+        "vi": "Tôi đã xem hết cả loạt phim."
+      },
+      {
+        "en": "The series has 10 episodes.",
+        "vi": "Sê-ri có 10 tập."
+      }
+    ],
+    "word_family": [
+      "serial (n)",
+      "series finale (n)"
+    ],
+    "collocations": [
+      "TV series",
+      "watch a series",
+      "new series"
+    ],
+    "synonyms": [
+      "show",
+      "program"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I like this series.",
+        "correct": "I like this series.",
+        "explain_vi": "Từ 'series' có hình thức giống số ít và số nhiều."
+      }
+    ],
+    "grammar_patterns": [
+      "a + series + of + noun"
+    ]
+  },
+  {
+    "word": "entertainment",
+    "phonetic": "/ˌen.tɚˈteɪn.mənt/",
+    "meaning_vi": "giải trí",
+    "meaning_en": "activities that provide amusement or enjoyment",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Movies are a form of entertainment.",
+        "vi": "Phim ảnh là một hình thức giải trí."
+      },
+      {
+        "en": "There is live entertainment at the festival.",
+        "vi": "Có chương trình giải trí trực tiếp tại lễ hội."
+      }
+    ],
+    "word_family": [
+      "entertain (v)",
+      "entertainer (n)"
+    ],
+    "collocations": [
+      "entertainment industry",
+      "live entertainment",
+      "entertainment center"
+    ],
+    "synonyms": [
+      "amusement",
+      "recreation"
+    ],
+    "antonyms": [
+      "boredom"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I go for entertainment.",
+        "correct": "I go for entertainment.",
+        "explain_vi": "Cụm từ này ổn, nhưng thường dùng 'for entertainment purposes'."
+      }
+    ],
+    "grammar_patterns": [
+      "for + entertainment"
+    ]
+  },
+  {
+    "word": "celebrity",
+    "phonetic": "/səˈleb.rə.ti/",
+    "meaning_vi": "người nổi tiếng",
+    "meaning_en": "a famous person",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She is a TV celebrity.",
+        "vi": "Cô ấy là một người nổi tiếng trên TV."
+      },
+      {
+        "en": "Celebrities often appear in magazines.",
+        "vi": "Người nổi tiếng thường xuất hiện trên tạp chí."
+      }
+    ],
+    "word_family": [
+      "celebrate (v)",
+      "celebrity status (n)"
+    ],
+    "collocations": [
+      "celebrity gossip",
+      "celebrity chef",
+      "celebrity endorsement"
+    ],
+    "synonyms": [
+      "star",
+      "famous person"
+    ],
+    "antonyms": [
+      "unknown"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "He is a celebrity.",
+        "correct": "He is a celebrity.",
+        "explain_vi": "Từ này đúng, nhưng nhấn âm thứ hai."
+      }
+    ],
+    "grammar_patterns": [
+      "a + celebrity"
+    ]
+  },
+  {
+    "word": "fan",
+    "phonetic": "/fæn/",
+    "meaning_vi": "người hâm mộ",
+    "meaning_en": "an enthusiastic admirer of a person, team, or activity",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I am a big fan of that band.",
+        "vi": "Tôi là một fan lớn của ban nhạc đó."
+      },
+      {
+        "en": "Fans cheered loudly.",
+        "vi": "Người hâm mộ cổ vũ nhiệt tình."
+      }
+    ],
+    "word_family": [
+      "fanatic (n)",
+      "fandom (n)"
+    ],
+    "collocations": [
+      "big fan",
+      "fan club",
+      "sports fan"
+    ],
+    "synonyms": [
+      "admirer",
+      "enthusiast"
+    ],
+    "antonyms": [
+      "critic"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I am fan of him.",
+        "correct": "I am a fan of his.",
+        "explain_vi": "Cần mạo từ 'a' và dùng 'of + possessive'."
+      }
+    ],
+    "grammar_patterns": [
+      "a + fan + of + noun"
+    ]
+  },
+  {
+    "word": "broadcast",
+    "phonetic": "/ˈbrɔːd.kæst/",
+    "meaning_vi": "phát sóng",
+    "meaning_en": "to send out a program on television or radio",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "The match will be broadcast live.",
+        "vi": "Trận đấu sẽ được phát sóng trực tiếp."
+      }
+    ],
+    "word_family": [
+      "broadcaster (n)",
+      "broadcasting (n)"
+    ],
+    "collocations": [
+      "live broadcast",
+      "broadcast a show",
+      "broadcast news"
+    ],
+    "synonyms": [
+      "transmit",
+      "air"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "The program is broadcasted every day.",
+        "correct": "The program is broadcast every day.",
+        "explain_vi": "Broadcast có dạng quá khứ giống nguyên thể, không thêm -ed."
+      }
+    ],
+    "grammar_patterns": [
+      "broadcast + noun (a program)"
+    ]
+  },
+  {
+    "word": "interview",
+    "phonetic": "/ˈɪn.tə.vjuː/",
+    "meaning_vi": "cuộc phỏng vấn",
+    "meaning_en": "a meeting where questions are asked to get information",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I watched an interview with the director.",
+        "vi": "Tôi đã xem một cuộc phỏng vấn với đạo diễn."
+      }
+    ],
+    "word_family": [
+      "interview (v)",
+      "interviewer (n)",
+      "interviewee (n)"
+    ],
+    "collocations": [
+      "give an interview",
+      "do an interview",
+      "job interview"
+    ],
+    "synonyms": [
+      "talk",
+      "conversation"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I had a interview yesterday.",
+        "correct": "I had an interview yesterday.",
+        "explain_vi": "Dùng 'an' trước 'interview' vì âm bắt đầu là nguyên âm."
+      }
+    ],
+    "grammar_patterns": [
+      "have an interview",
+      "give an interview"
+    ]
+  },
+  {
+    "word": "plot",
+    "phonetic": "/plɒt/",
+    "meaning_vi": "cốt truyện",
+    "meaning_en": "the main story of a book, film, or play",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The plot was very confusing.",
+        "vi": "Cốt truyện rất khó hiểu."
+      }
+    ],
+    "word_family": [
+      "plot (v)"
+    ],
+    "collocations": [
+      "plot twist",
+      "main plot",
+      "follow the plot"
+    ],
+    "synonyms": [
+      "storyline",
+      "narrative"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "The plot is very interested.",
+        "correct": "The plot is very interesting.",
+        "explain_vi": "Dùng tính từ 'interesting' để miêu tả, không phải 'interested'."
+      }
+    ],
+    "grammar_patterns": [
+      "the plot of + noun"
+    ]
+  },
+  {
+    "word": "release",
+    "phonetic": "/rɪˈliːs/",
+    "meaning_vi": "phát hành",
+    "meaning_en": "to make a film, song, or product available to the public",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "The new album will be released next month.",
+        "vi": "Album mới sẽ được phát hành vào tháng sau."
+      }
+    ],
+    "word_family": [
+      "release (n)",
+      "released (adj)"
+    ],
+    "collocations": [
+      "release a movie",
+      "release date",
+      "new release"
+    ],
+    "synonyms": [
+      "launch",
+      "issue"
+    ],
+    "antonyms": [
+      "withhold"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "The film is released in 2020.",
+        "correct": "The film was released in 2020.",
+        "explain_vi": "Dùng quá khứ khi nói về sự kiện đã xảy ra."
+      }
+    ],
+    "grammar_patterns": [
+      "release + noun",
+      "be released"
+    ]
+  },
+  {
+    "word": "channel",
+    "phonetic": "/ˈtʃæn.əl/",
+    "meaning_vi": "kênh (truyền hình)",
+    "meaning_en": "a television station or frequency",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Which channel is the news on?",
+        "vi": "Tin tức ở kênh nào?"
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "change the channel",
+      "TV channel",
+      "news channel"
+    ],
+    "synonyms": [
+      "station"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I watched channel 7.",
+        "correct": "I watched channel 7.",
+        "explain_vi": "Không dùng mạo từ 'the' trước tên kênh có số."
+      }
+    ],
+    "grammar_patterns": [
+      "on + channel"
+    ]
+  },
+  {
+    "word": "download",
+    "phonetic": "/ˈdaʊn.ləʊd/",
+    "meaning_vi": "tải xuống",
+    "meaning_en": "to copy data from the internet to your device",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "I downloaded the app.",
+        "vi": "Tôi đã tải ứng dụng xuống."
+      }
+    ],
+    "word_family": [
+      "download (n)",
+      "downloading (n)"
+    ],
+    "collocations": [
+      "download a file",
+      "download speed",
+      "download from"
+    ],
+    "synonyms": [
+      "save",
+      "transfer"
+    ],
+    "antonyms": [
+      "upload"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I download it yesterday.",
+        "correct": "I downloaded it yesterday.",
+        "explain_vi": "Dùng quá khứ 'downloaded' cho hành động đã xảy ra."
+      }
+    ],
+    "grammar_patterns": [
+      "download + noun"
+    ]
+  },
+  {
+    "word": "stream",
+    "phonetic": "/striːm/",
+    "meaning_vi": "phát trực tuyến",
+    "meaning_en": "to watch or listen to media over the internet in real time",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "I stream movies on Netflix.",
+        "vi": "Tôi xem phim trực tuyến trên Netflix."
+      }
+    ],
+    "word_family": [
+      "streaming (n)",
+      "stream (n)"
+    ],
+    "collocations": [
+      "stream a video",
+      "live stream",
+      "streaming service"
+    ],
+    "synonyms": [
+      "watch online",
+      "broadcast"
+    ],
+    "antonyms": [
+      "download"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I streamed a film from YouTube.",
+        "correct": "I streamed a film on YouTube.",
+        "explain_vi": "Dùng giới từ 'on' với nền tảng."
+      }
+    ],
+    "grammar_patterns": [
+      "stream + noun",
+      "stream on + platform"
+    ]
+  },
+  {
+    "word": "review",
+    "phonetic": "/rɪˈvjuː/",
+    "meaning_vi": "bài đánh giá",
+    "meaning_en": "a critical evaluation of a book, film, or product",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The movie got good reviews.",
+        "vi": "Bộ phim nhận được nhiều đánh giá tốt."
+      }
+    ],
+    "word_family": [
+      "review (v)",
+      "reviewer (n)"
+    ],
+    "collocations": [
+      "write a review",
+      "positive review",
+      "book review"
+    ],
+    "synonyms": [
+      "critique",
+      "rating"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I read a review about the film.",
+        "correct": "I read a review of the film.",
+        "explain_vi": "Dùng 'of' sau 'review'."
+      }
+    ],
+    "grammar_patterns": [
+      "review of + noun"
+    ]
+  },
+  {
+    "word": "screen",
+    "phonetic": "/skriːn/",
+    "meaning_vi": "màn hình",
+    "meaning_en": "the flat surface on which images are displayed",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Turn off the screen when not in use.",
+        "vi": "Tắt màn hình khi không sử dụng."
+      }
+    ],
+    "word_family": [
+      "screen (v)"
+    ],
+    "collocations": [
+      "screen size",
+      "on screen",
+      "touch screen"
+    ],
+    "synonyms": [
+      "display",
+      "monitor"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "The screen is too small.",
+        "correct": "The screen is too small.",
+        "explain_vi": "Không nhầm với 'scene' (cảnh)."
+      }
+    ],
+    "grammar_patterns": [
+      "on the screen",
+      "screen of + device"
+    ]
+  },
+  {
+    "word": "episode",
+    "phonetic": "/ˈep.ɪ.səʊd/",
+    "meaning_vi": "tập (phim)",
+    "meaning_en": "one part of a series of TV or radio programs",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The next episode airs on Friday.",
+        "vi": "Tập tiếp theo sẽ lên sóng vào thứ Sáu."
+      }
+    ],
+    "word_family": [
+      "episodic (adj)"
+    ],
+    "collocations": [
+      "watch an episode",
+      "final episode",
+      "episode guide"
+    ],
+    "synonyms": [
+      "installment",
+      "part"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I saw two episodes in a row.",
+        "correct": "I saw two episodes in a row.",
+        "explain_vi": "Đừng viết sai chính tả 'episode' thành 'episod'."
+      }
+    ],
+    "grammar_patterns": [
+      "episode of + series"
+    ]
+  },
+  {
+    "word": "comedy",
+    "phonetic": "/ˈkɒm.ə.di/",
+    "meaning_vi": "hài kịch",
+    "meaning_en": "a genre of entertainment that is funny",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I love watching comedy shows.",
+        "vi": "Tôi thích xem các chương trình hài."
+      }
+    ],
+    "word_family": [
+      "comedian (n)",
+      "comic (adj)"
+    ],
+    "collocations": [
+      "stand-up comedy",
+      "comedy film",
+      "comedy series"
+    ],
+    "synonyms": [
+      "humor"
+    ],
+    "antonyms": [
+      "drama"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "This comedy is very bored.",
+        "correct": "This comedy is very boring.",
+        "explain_vi": "Dùng 'boring' để miêu tả tính chất, không phải 'bored'."
+      }
+    ],
+    "grammar_patterns": [
+      "a comedy about + topic"
+    ]
+  },
+  {
+    "word": "drama",
+    "phonetic": "/ˈdrɑː.mə/",
+    "meaning_vi": "phim tâm lý, kịch",
+    "meaning_en": "a genre of entertainment with serious or emotional themes",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She prefers drama to comedy.",
+        "vi": "Cô ấy thích phim tâm lý hơn hài."
+      }
+    ],
+    "word_family": [
+      "dramatic (adj)",
+      "dramatist (n)"
+    ],
+    "collocations": [
+      "TV drama",
+      "historical drama",
+      "drama series"
+    ],
+    "synonyms": [
+      "play",
+      "soap opera"
+    ],
+    "antonyms": [
+      "comedy"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I like dramas movies.",
+        "correct": "I like drama movies.",
+        "explain_vi": "Drama là danh từ không đếm được khi chỉ thể loại."
+      }
+    ],
+    "grammar_patterns": [
+      "drama about + topic"
+    ]
+  },
+  {
+    "word": "celebrity",
+    "phonetic": "/səˈleb.rə.ti/",
+    "meaning_vi": "người nổi tiếng",
+    "meaning_en": "a famous person, especially in entertainment",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Many celebrities attended the premiere.",
+        "vi": "Nhiều người nổi tiếng đã tham dự buổi ra mắt."
+      }
+    ],
+    "word_family": [
+      "celebrity (adj)"
+    ],
+    "collocations": [
+      "celebrity news",
+      "celebrity gossip",
+      "become a celebrity"
+    ],
+    "synonyms": [
+      "star",
+      "famous person"
+    ],
+    "antonyms": [
+      "unknown"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "She is a celebrity.",
+        "correct": "She is a celebrity.",
+        "explain_vi": "Chú ý trọng âm rơi vào âm tiết thứ hai."
+      }
+    ],
+    "grammar_patterns": [
+      "celebrity + noun (e.g., celebrity chef)"
+    ]
+  },
+  {
+    "word": "fan",
+    "phonetic": "/fæn/",
+    "meaning_vi": "người hâm mộ",
+    "meaning_en": "an enthusiastic admirer of a person or thing",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "He is a big fan of the band.",
+        "vi": "Anh ấy là một người hâm mộ lớn của ban nhạc."
+      }
+    ],
+    "word_family": [
+      "fanatic (n)",
+      "fandom (n)"
+    ],
+    "collocations": [
+      "fan club",
+      "fan base",
+      "become a fan"
+    ],
+    "synonyms": [
+      "admirer",
+      "enthusiast"
+    ],
+    "antonyms": [
+      "critic"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I am fan of football.",
+        "correct": "I am a fan of football.",
+        "explain_vi": "Luôn dùng mạo từ 'a' trước 'fan'."
+      }
+    ],
+    "grammar_patterns": [
+      "fan of + noun"
+    ]
+  },
+  {
+    "word": "trailer",
+    "phonetic": "/ˈtreɪ.lər/",
+    "meaning_vi": "đoạn giới thiệu",
+    "meaning_en": "a short preview of a film or show",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I saw the trailer for the new movie.",
+        "vi": "Tôi đã xem đoạn giới thiệu cho bộ phim mới."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "watch a trailer",
+      "movie trailer",
+      "trailer release"
+    ],
+    "synonyms": [
+      "preview",
+      "teaser"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I watched a trailer of the film.",
+        "correct": "I watched a trailer for the film.",
+        "explain_vi": "Dùng 'for' sau 'trailer'."
+      }
+    ],
+    "grammar_patterns": [
+      "trailer for + noun"
+    ]
+  },
+  {
+    "word": "cast",
+    "phonetic": "/kɑːst/",
+    "meaning_vi": "dàn diễn viên",
+    "meaning_en": "the actors in a film, play, or show",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The cast includes many famous actors.",
+        "vi": "Dàn diễn viên bao gồm nhiều diễn viên nổi tiếng."
+      }
+    ],
+    "word_family": [
+      "cast (v)"
+    ],
+    "collocations": [
+      "cast member",
+      "ensemble cast",
+      "cast list"
+    ],
+    "synonyms": [
+      "actors",
+      "performers"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "The cast are great.",
+        "correct": "The cast is great.",
+        "explain_vi": "Cast là danh từ tập hợp, dùng động từ số ít."
+      }
+    ],
+    "grammar_patterns": [
+      "the cast of + film"
+    ]
+  },
+  {
+    "word": "scene",
+    "phonetic": "/siːn/",
+    "meaning_vi": "cảnh (trong phim)",
+    "meaning_en": "a part of a film or play in one location",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "My favorite scene is the ending.",
+        "vi": "Cảnh yêu thích của tôi là kết thúc."
+      }
+    ],
+    "word_family": [
+      "scenery (n)"
+    ],
+    "collocations": [
+      "opening scene",
+      "action scene",
+      "scene from"
+    ],
+    "synonyms": [
+      "sequence",
+      "segment"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "The scene was very touched.",
+        "correct": "The scene was very touching.",
+        "explain_vi": "Dùng 'touching' (cảm động) thay vì 'touched'."
+      }
+    ],
+    "grammar_patterns": [
+      "scene in + film"
+    ]
+  },
+  {
+    "word": "script",
+    "phonetic": "/skrɪpt/",
+    "meaning_vi": "kịch bản",
+    "meaning_en": "the written text of a film, play, or broadcast",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The script was written by a famous author.",
+        "vi": "Kịch bản được viết bởi một tác giả nổi tiếng."
+      }
+    ],
+    "word_family": [
+      "scriptwriter (n)",
+      "scripted (adj)"
+    ],
+    "collocations": [
+      "write a script",
+      "film script",
+      "follow the script"
+    ],
+    "synonyms": [
+      "screenplay",
+      "dialogue"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "He wrote the script by himself.",
+        "correct": "He wrote the script himself.",
+        "explain_vi": "Dùng 'himself' thay vì 'by himself' trong ngữ cảnh này."
+      }
+    ],
+    "grammar_patterns": [
+      "script for + noun"
+    ]
+  },
+  {
+    "word": "soundtrack",
+    "phonetic": "/ˈsaʊnd.træk/",
+    "meaning_vi": "nhạc phim",
+    "meaning_en": "the music accompanying a film or show",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The soundtrack is amazing.",
+        "vi": "Nhạc phim thật tuyệt vời."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "original soundtrack",
+      "soundtrack album",
+      "listen to the soundtrack"
+    ],
+    "synonyms": [
+      "score",
+      "music"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I love the sound track of this movie.",
+        "correct": "I love the soundtrack of this movie.",
+        "explain_vi": "Viết liền 'soundtrack', không tách rời."
+      }
+    ],
+    "grammar_patterns": [
+      "soundtrack of + noun"
+    ]
+  },
+  {
+    "word": "premiere",
+    "phonetic": "/ˈprem.i.eər/",
+    "meaning_vi": "buổi ra mắt",
+    "meaning_en": "the first public performance of a film or show",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The movie premiere was a big event.",
+        "vi": "Buổi ra mắt phim là một sự kiện lớn."
+      }
+    ],
+    "word_family": [
+      "premiere (v)"
+    ],
+    "collocations": [
+      "world premiere",
+      "premiere night",
+      "attend the premiere"
+    ],
+    "synonyms": [
+      "debut",
+      "opening"
+    ],
+    "antonyms": [
+      "finale"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "The premiere of the film was last night.",
+        "correct": "The film's premiere was last night.",
+        "explain_vi": "Có thể dùng sở hữu cách 'film's'."
+      }
+    ],
+    "grammar_patterns": [
+      "premiere of + noun"
+    ]
+  },
+  {
+    "word": "album",
+    "phonetic": "/ˈæl.bəm/",
+    "meaning_vi": "album",
+    "meaning_en": "a collection of recordings issued as a single item",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Her new album is coming out next month.",
+        "vi": "Album mới của cô ấy sẽ ra mắt vào tháng sau."
+      }
+    ],
+    "word_family": [
+      "albums (pl)",
+      "album cover (n)"
+    ],
+    "collocations": [
+      "release an album",
+      "debut album",
+      "album cover"
+    ],
+    "synonyms": [
+      "record",
+      "LP"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I bought a new CD album.",
+        "correct": "I bought a new album.",
+        "explain_vi": "Không cần nói 'CD album', chỉ cần 'album' là đủ."
+      }
+    ],
+    "grammar_patterns": [
+      "a/an + album",
+      "the + album"
+    ]
+  },
+  {
+    "word": "documentary",
+    "phonetic": "/ˌdɑː.kjəˈmen.tər.i/",
+    "meaning_vi": "phim tài liệu",
+    "meaning_en": "a film or television program that gives facts about a real situation",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I watched a documentary about climate change.",
+        "vi": "Tôi đã xem một bộ phim tài liệu về biến đổi khí hậu."
+      }
+    ],
+    "word_family": [
+      "document (n)",
+      "documentarian (n)"
+    ],
+    "collocations": [
+      "watch a documentary",
+      "documentary series",
+      "documentary film"
+    ],
+    "synonyms": [
+      "non-fiction film"
+    ],
+    "antonyms": [
+      "fiction film"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "documentary film",
+        "correct": "documentary",
+        "explain_vi": "'Documentary' đã bao hàm 'film', không cần thêm."
+      }
+    ],
+    "grammar_patterns": [
+      "a/an + documentary",
+      "documentary + about"
+    ]
+  },
+  {
+    "word": "genre",
+    "phonetic": "/ˈʒɑːn.rə/",
+    "meaning_vi": "thể loại",
+    "meaning_en": "a category of artistic composition characterized by similarities in form, style, or subject matter",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "What genre of music do you like?",
+        "vi": "Bạn thích thể loại nhạc nào?"
+      }
+    ],
+    "word_family": [
+      "generic (adj)"
+    ],
+    "collocations": [
+      "music genre",
+      "film genre",
+      "literary genre"
+    ],
+    "synonyms": [
+      "type",
+      "category",
+      "style"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I like many kind of genre.",
+        "correct": "I like many kinds of genres.",
+        "explain_vi": "'Genre' là danh từ đếm được, cần số nhiều khi nói nhiều thể loại."
+      }
+    ],
+    "grammar_patterns": [
+      "genre + of + noun",
+      "a + genre"
+    ]
+  },
+  {
+    "word": "animation",
+    "phonetic": "/ˌæn.ɪˈmeɪ.ʃən/",
+    "meaning_vi": "phim hoạt hình",
+    "meaning_en": "the technique of photographing successive drawings or positions of puppets to create an illusion of movement",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Children love watching animation.",
+        "vi": "Trẻ em thích xem phim hoạt hình."
+      }
+    ],
+    "word_family": [
+      "animate (v)",
+      "animated (adj)"
+    ],
+    "collocations": [
+      "computer animation",
+      "stop-motion animation",
+      "animation film"
+    ],
+    "synonyms": [
+      "cartoon"
+    ],
+    "antonyms": [
+      "live-action"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I like watch animation.",
+        "correct": "I like watching animation.",
+        "explain_vi": "Sau 'like' dùng V-ing."
+      }
+    ],
+    "grammar_patterns": [
+      "animation + is",
+      "a/an + animation"
+    ]
+  },
+  {
+    "word": "blog",
+    "phonetic": "/blɑːɡ/",
+    "meaning_vi": "blog",
+    "meaning_en": "a regularly updated website or web page, typically one run by an individual or small group",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She writes a blog about fashion.",
+        "vi": "Cô ấy viết blog về thời trang."
+      }
+    ],
+    "word_family": [
+      "blogger (n)",
+      "blogging (n)"
+    ],
+    "collocations": [
+      "write a blog",
+      "read a blog",
+      "blog post"
+    ],
+    "synonyms": [
+      "web log",
+      "online journal"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have a blog in Vietnamese.",
+        "correct": "I have a blog in Vietnamese.",
+        "explain_vi": "Cách dùng đúng, không có lỗi phổ biến."
+      }
+    ],
+    "grammar_patterns": [
+      "a/an + blog",
+      "blog + about"
+    ]
+  },
+  {
+    "word": "podcast",
+    "phonetic": "/ˈpɑːd.kæst/",
+    "meaning_vi": "podcast",
+    "meaning_en": "a digital audio file made available on the internet for downloading to a computer or mobile device",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I listen to a podcast every morning.",
+        "vi": "Tôi nghe podcast mỗi sáng."
+      }
+    ],
+    "word_family": [
+      "podcaster (n)",
+      "podcasting (n)"
+    ],
+    "collocations": [
+      "listen to a podcast",
+      "podcast episode",
+      "start a podcast"
+    ],
+    "synonyms": [
+      "audio program"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I listen podcast.",
+        "correct": "I listen to a podcast.",
+        "explain_vi": "Cần giới từ 'to' sau 'listen'."
+      }
+    ],
+    "grammar_patterns": [
+      "a/an + podcast",
+      "podcast + about"
+    ]
+  },
+  {
+    "word": "vlog",
+    "phonetic": "/vlɑːɡ/",
+    "meaning_vi": "vlog",
+    "meaning_en": "a personal website or social media account where a person regularly posts short videos",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "He uploads a new vlog every week.",
+        "vi": "Anh ấy tải lên một vlog mới mỗi tuần."
+      }
+    ],
+    "word_family": [
+      "vlogger (n)",
+      "vlogging (n)"
+    ],
+    "collocations": [
+      "make a vlog",
+      "watch a vlog",
+      "vlog series"
+    ],
+    "synonyms": [
+      "video blog"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I like vlog.",
+        "correct": "I like vlogs.",
+        "explain_vi": "Cần số nhiều khi nói chung."
+      }
+    ],
+    "grammar_patterns": [
+      "a/an + vlog",
+      "vlog + about"
+    ]
+  },
+  {
+    "word": "social media",
+    "phonetic": "/ˈsoʊ.ʃəl ˈmiː.di.ə/",
+    "meaning_vi": "mạng xã hội",
+    "meaning_en": "websites and applications that enable users to create and share content or participate in social networking",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She spends a lot of time on social media.",
+        "vi": "Cô ấy dành nhiều thời gian trên mạng xã hội."
+      }
+    ],
+    "word_family": [
+      "social (adj)",
+      "media (n)"
+    ],
+    "collocations": [
+      "use social media",
+      "social media platform",
+      "social media post"
+    ],
+    "synonyms": [
+      "social networking"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "social medias",
+        "correct": "social media",
+        "explain_vi": "'Media' là danh từ số nhiều nhưng 'social media' thường dùng như không đếm được."
+      }
+    ],
+    "grammar_patterns": [
+      "social media + is/are",
+      "on social media"
+    ]
+  },
+  {
+    "word": "live",
+    "phonetic": "/laɪv/",
+    "meaning_vi": "trực tiếp",
+    "meaning_en": "broadcast or transmitted at the time of occurrence",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "We watched the live concert on TV.",
+        "vi": "Chúng tôi đã xem buổi hòa nhạc trực tiếp trên TV."
+      }
+    ],
+    "word_family": [
+      "live (v)",
+      "lively (adj)"
+    ],
+    "collocations": [
+      "live broadcast",
+      "live stream",
+      "live performance"
+    ],
+    "synonyms": [
+      "real-time"
+    ],
+    "antonyms": [
+      "recorded"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I saw a live concert yesterday.",
+        "correct": "I saw a live concert yesterday.",
+        "explain_vi": "Cách dùng đúng."
+      }
+    ],
+    "grammar_patterns": [
+      "live + noun",
+      "be + live"
+    ]
+  },
+  {
+    "word": "performance",
+    "phonetic": "/pərˈfɔːr.məns/",
+    "meaning_vi": "buổi biểu diễn",
+    "meaning_en": "an act of performing a play, concert, or other form of entertainment",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The performance was amazing.",
+        "vi": "Buổi biểu diễn thật tuyệt vời."
+      }
+    ],
+    "word_family": [
+      "perform (v)",
+      "performer (n)"
+    ],
+    "collocations": [
+      "give a performance",
+      "attend a performance",
+      "live performance"
+    ],
+    "synonyms": [
+      "show",
+      "act"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I saw a performance of music.",
+        "correct": "I saw a musical performance.",
+        "explain_vi": "Dùng 'musical performance' thay vì 'performance of music'."
+      }
+    ],
+    "grammar_patterns": [
+      "a/an + performance",
+      "performance + of"
+    ]
+  },
+  {
+    "word": "theater",
+    "phonetic": "/ˈθɪə.tər/",
+    "meaning_vi": "nhà hát, rạp hát",
+    "meaning_en": "a building where plays and other dramatic performances take place",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We went to the theater last night.",
+        "vi": "Chúng tôi đã đi đến nhà hát tối qua."
+      }
+    ],
+    "word_family": [
+      "theatrical (adj)",
+      "theatre (UK)"
+    ],
+    "collocations": [
+      "go to the theater",
+      "theater production",
+      "movie theater"
+    ],
+    "synonyms": [
+      "playhouse",
+      "cinema"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go to theater.",
+        "correct": "I go to the theater.",
+        "explain_vi": "Cần mạo từ 'the'."
+      }
+    ],
+    "grammar_patterns": [
+      "the + theater",
+      "at the theater"
+    ]
+  },
+  {
+    "word": "musical",
+    "phonetic": "/ˈmjuː.zɪ.kəl/",
+    "meaning_vi": "nhạc kịch",
+    "meaning_en": "a play or film in which singing and dancing play an essential part",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I love watching musicals.",
+        "vi": "Tôi thích xem nhạc kịch."
+      }
+    ],
+    "word_family": [
+      "music (n)",
+      "musician (n)"
+    ],
+    "collocations": [
+      "see a musical",
+      "musical theater",
+      "Broadway musical"
+    ],
+    "synonyms": [
+      "musical play"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I like musical.",
+        "correct": "I like musicals.",
+        "explain_vi": "Cần số nhiều khi nói chung."
+      }
+    ],
+    "grammar_patterns": [
+      "a/an + musical",
+      "the + musical"
+    ]
+  },
+  {
+    "word": "blockbuster",
+    "phonetic": "/ˈblɑːk.bʌs.tər/",
+    "meaning_vi": "phim bom tấn",
+    "meaning_en": "a film that is very successful financially",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The movie was a blockbuster.",
+        "vi": "Bộ phim đó là một bom tấn."
+      }
+    ],
+    "word_family": [
+      "blockbuster (adj)"
+    ],
+    "collocations": [
+      "summer blockbuster",
+      "blockbuster film",
+      "blockbuster hit"
+    ],
+    "synonyms": [
+      "hit",
+      "smash"
+    ],
+    "antonyms": [
+      "flop"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "blockbuster movie",
+        "correct": "blockbuster",
+        "explain_vi": "Có thể dùng 'blockbuster' một mình."
+      }
+    ],
+    "grammar_patterns": [
+      "a/an + blockbuster",
+      "blockbuster + noun"
+    ]
+  },
+  {
+    "word": "flop",
+    "phonetic": "/flɑːp/",
+    "meaning_vi": "thất bại, phim chết",
+    "meaning_en": "a failure",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The film was a flop at the box office.",
+        "vi": "Bộ phim đó là một thất bại về doanh thu phòng vé."
+      }
+    ],
+    "word_family": [
+      "flop (v)",
+      "floppy (adj)"
+    ],
+    "collocations": [
+      "box office flop",
+      "commercial flop"
+    ],
+    "synonyms": [
+      "failure",
+      "disaster"
+    ],
+    "antonyms": [
+      "hit",
+      "success"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "The movie flop.",
+        "correct": "The movie was a flop.",
+        "explain_vi": "Cần động từ 'was' và mạo từ 'a'."
+      }
+    ],
+    "grammar_patterns": [
+      "a/an + flop",
+      "be + a flop"
+    ]
+  },
+  {
+    "word": "premiere",
+    "phonetic": "/prɪˈmɪr/",
+    "meaning_vi": "buổi công chiếu",
+    "meaning_en": "the first public performance of a film, play, or musical work",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The movie had its premiere in New York.",
+        "vi": "Bộ phim đã có buổi công chiếu tại New York."
+      }
+    ],
+    "word_family": [
+      "premiere (v)"
+    ],
+    "collocations": [
+      "world premiere",
+      "film premiere",
+      "premiere night"
+    ],
+    "synonyms": [
+      "first showing",
+      "opening"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "premier",
+        "correct": "premiere",
+        "explain_vi": "'Premier' là thủ tướng, 'premiere' là buổi công chiếu."
+      }
+    ],
+    "grammar_patterns": [
+      "the + premiere",
+      "premiere + of"
+    ]
+  },
+  {
+    "word": "screening",
+    "phonetic": "/ˈskriː.nɪŋ/",
+    "meaning_vi": "buổi chiếu phim",
+    "meaning_en": "the showing of a film or television program",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "There will be a special screening tonight.",
+        "vi": "Sẽ có một buổi chiếu đặc biệt tối nay."
+      }
+    ],
+    "word_family": [
+      "screen (n/v)",
+      "screener (n)"
+    ],
+    "collocations": [
+      "film screening",
+      "special screening",
+      "private screening"
+    ],
+    "synonyms": [
+      "showing",
+      "viewing"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "screening movie",
+        "correct": "movie screening",
+        "explain_vi": "Thứ tự từ: 'movie screening'."
+      }
+    ],
+    "grammar_patterns": [
+      "a/an + screening",
+      "screening + of"
+    ]
+  },
+  {
+    "word": "subscription",
+    "phonetic": "/səbˈskrɪp.ʃən/",
+    "meaning_vi": "đăng ký, gói cước",
+    "meaning_en": "an arrangement to receive something regularly by paying in advance",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I have a subscription to Netflix.",
+        "vi": "Tôi có đăng ký Netflix."
+      }
+    ],
+    "word_family": [
+      "subscribe (v)",
+      "subscriber (n)"
+    ],
+    "collocations": [
+      "monthly subscription",
+      "subscription service",
+      "cancel a subscription"
+    ],
+    "synonyms": [
+      "membership"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I subscription Netflix.",
+        "correct": "I have a subscription to Netflix.",
+        "explain_vi": "Cần động từ 'have' và giới từ 'to'."
+      }
+    ],
+    "grammar_patterns": [
+      "a/an + subscription",
+      "subscription + to"
+    ]
+  },
+  {
+    "word": "platform",
+    "phonetic": "/ˈplæt.fɔːrm/",
+    "meaning_vi": "nền tảng",
+    "meaning_en": "a website or application that provides a service",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "YouTube is a popular video platform.",
+        "vi": "YouTube là một nền tảng video phổ biến."
+      }
+    ],
+    "word_family": [
+      "platform (v)"
+    ],
+    "collocations": [
+      "streaming platform",
+      "social media platform",
+      "online platform"
+    ],
+    "synonyms": [
+      "service",
+      "site"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "platform like YouTube",
+        "correct": "platforms like YouTube",
+        "explain_vi": "Cần số nhiều khi nói chung."
+      }
+    ],
+    "grammar_patterns": [
+      "a/an + platform",
+      "platform + for"
+    ]
+  },
+  {
+    "word": "trending",
+    "phonetic": "/ˈtren.dɪŋ/",
+    "meaning_vi": "đang thịnh hành",
+    "meaning_en": "currently popular or widely discussed online",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "That video is trending on social media.",
+        "vi": "Video đó đang thịnh hành trên mạng xã hội."
+      }
+    ],
+    "word_family": [
+      "trend (n)",
+      "trendy (adj)"
+    ],
+    "collocations": [
+      "trending topic",
+      "trending now",
+      "trending video"
+    ],
+    "synonyms": [
+      "popular",
+      "viral"
+    ],
+    "antonyms": [
+      "unpopular"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "It is trending on YouTube.",
+        "correct": "It is trending on YouTube.",
+        "explain_vi": "Cách dùng đúng."
+      }
+    ],
+    "grammar_patterns": [
+      "be + trending",
+      "trending + noun"
+    ]
+  },
+  {
+    "word": "viral",
+    "phonetic": "/ˈvaɪ.rəl/",
+    "meaning_vi": "lan truyền nhanh, viral",
+    "meaning_en": "an image, video, or piece of information that is circulated rapidly on the internet",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The meme went viral overnight.",
+        "vi": "Meme đó đã lan truyền nhanh chỉ sau một đêm."
+      }
+    ],
+    "word_family": [
+      "virus (n)",
+      "virality (n)"
+    ],
+    "collocations": [
+      "go viral",
+      "viral video",
+      "viral sensation"
+    ],
+    "synonyms": [
+      "trending",
+      "popular"
+    ],
+    "antonyms": [
+      "obscure"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "It is viral.",
+        "correct": "It went viral.",
+        "explain_vi": "Dùng 'go viral' thay vì 'be viral'."
+      }
+    ],
+    "grammar_patterns": [
+      "go + viral",
+      "viral + noun"
+    ]
+  },
+  {
+    "word": "audience",
+    "phonetic": "/ˈɔː.di.əns/",
+    "meaning_vi": "khán giả",
+    "meaning_en": "the people who watch or listen to a performance, movie, etc.",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The audience clapped loudly.",
+        "vi": "Khán giả vỗ tay rất to."
+      }
+    ],
+    "word_family": [
+      "auditorium (n)"
+    ],
+    "collocations": [
+      "live audience",
+      "target audience",
+      "audience reaction"
+    ],
+    "synonyms": [
+      "viewers",
+      "spectators"
+    ],
+    "antonyms": [
+      "performer"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "The audiences were happy.",
+        "correct": "The audience was happy.",
+        "explain_vi": "Audience thường là danh từ tập hợp, dùng số ít."
+      }
+    ],
+    "grammar_patterns": [
+      "the + audience + singular verb"
+    ]
+  },
+  {
+    "word": "channel",
+    "phonetic": "/ˈtʃæn.əl/",
+    "meaning_vi": "kênh (truyền hình, YouTube)",
+    "meaning_en": "a television or radio station; a platform for content",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "What channel is the news on?",
+        "vi": "Tin tức ở kênh nào?"
+      }
+    ],
+    "word_family": [
+      "channel surf (v)"
+    ],
+    "collocations": [
+      "TV channel",
+      "change the channel",
+      "subscribe to a channel"
+    ],
+    "synonyms": [
+      "station",
+      "network"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I watch channel 7.",
+        "correct": "I watch channel 7.",
+        "explain_vi": "Không cần mạo từ 'the' trước số kênh."
+      }
+    ],
+    "grammar_patterns": [
+      "on + channel + number"
+    ]
+  },
+  {
+    "word": "episode",
+    "phonetic": "/ˈep.ɪ.səʊd/",
+    "meaning_vi": "tập (phim truyền hình)",
+    "meaning_en": "one part of a series of a TV or radio program",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The first episode was exciting.",
+        "vi": "Tập đầu tiên rất hấp dẫn."
+      }
+    ],
+    "word_family": [
+      "episodic (adj)"
+    ],
+    "collocations": [
+      "watch an episode",
+      "next episode",
+      "episode guide"
+    ],
+    "synonyms": [
+      "installment",
+      "part"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I saw the episode of that series.",
+        "correct": "I saw an episode of that series.",
+        "explain_vi": "Dùng 'an' vì không xác định tập nào."
+      }
+    ],
+    "grammar_patterns": [
+      "episode + of + series name"
+    ]
+  },
+  {
+    "word": "comedy",
+    "phonetic": "/ˈkɒm.ə.di/",
+    "meaning_vi": "hài kịch, phim hài",
+    "meaning_en": "a genre of entertainment intended to make people laugh",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I love watching comedies.",
+        "vi": "Tôi thích xem phim hài."
+      }
+    ],
+    "word_family": [
+      "comedian (n)",
+      "comic (adj)"
+    ],
+    "collocations": [
+      "stand-up comedy",
+      "comedy show",
+      "comedy film"
+    ],
+    "synonyms": [
+      "humor",
+      "farce"
+    ],
+    "antonyms": [
+      "drama",
+      "tragedy"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I like comedy movies.",
+        "correct": "I like comedy movies.",
+        "explain_vi": "Có thể dùng 'comedy' như tính từ."
+      }
+    ],
+    "grammar_patterns": [
+      "comedy + noun (e.g., comedy series)"
+    ]
+  },
+  {
+    "word": "drama",
+    "phonetic": "/ˈdrɑː.mə/",
+    "meaning_vi": "phim tâm lý, kịch",
+    "meaning_en": "a genre of entertainment with serious or emotional themes",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "This drama is very touching.",
+        "vi": "Bộ phim tâm lý này rất cảm động."
+      }
+    ],
+    "word_family": [
+      "dramatic (adj)",
+      "dramatist (n)"
+    ],
+    "collocations": [
+      "TV drama",
+      "drama series",
+      "historical drama"
+    ],
+    "synonyms": [
+      "play",
+      "soap opera"
+    ],
+    "antonyms": [
+      "comedy"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I like drama films.",
+        "correct": "I like drama films.",
+        "explain_vi": "Drama có thể dùng như tính từ."
+      }
+    ],
+    "grammar_patterns": [
+      "drama + noun (e.g., drama queen)"
+    ]
+  },
+  {
+    "word": "celebrity",
+    "phonetic": "/səˈleb.rə.ti/",
+    "meaning_vi": "người nổi tiếng",
+    "meaning_en": "a famous person, especially in entertainment",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She is a big celebrity.",
+        "vi": "Cô ấy là một người nổi tiếng lớn."
+      }
+    ],
+    "word_family": [
+      "celebrate (v)",
+      "celeb (n, informal)"
+    ],
+    "collocations": [
+      "celebrity gossip",
+      "celebrity status",
+      "celebrity chef"
+    ],
+    "synonyms": [
+      "star",
+      "VIP"
+    ],
+    "antonyms": [
+      "unknown",
+      "nobody"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "She is celebrity.",
+        "correct": "She is a celebrity.",
+        "explain_vi": "Cần mạo từ 'a' trước danh từ đếm được."
+      }
+    ],
+    "grammar_patterns": [
+      "a/an + celebrity"
+    ]
+  },
+  {
+    "word": "fan",
+    "phonetic": "/fæn/",
+    "meaning_vi": "người hâm mộ",
+    "meaning_en": "an enthusiastic admirer of someone or something",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "He is a huge fan of that band.",
+        "vi": "Anh ấy là một fan cuồng của ban nhạc đó."
+      }
+    ],
+    "word_family": [
+      "fanatic (n)",
+      "fandom (n)"
+    ],
+    "collocations": [
+      "die-hard fan",
+      "fan club",
+      "fan base"
+    ],
+    "synonyms": [
+      "admirer",
+      "enthusiast"
+    ],
+    "antonyms": [
+      "critic",
+      "hater"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I am fan of her.",
+        "correct": "I am a fan of hers.",
+        "explain_vi": "Cần 'a' và dùng 'of hers' (hoặc 'of her' không chuẩn)."
+      }
+    ],
+    "grammar_patterns": [
+      "fan + of + noun/pronoun"
+    ]
+  },
+  {
+    "word": "trailer",
+    "phonetic": "/ˈtreɪ.lər/",
+    "meaning_vi": "đoạn giới thiệu phim",
+    "meaning_en": "a short preview of a movie or TV show",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The trailer looks amazing.",
+        "vi": "Đoạn giới thiệu trông tuyệt vời."
+      }
+    ],
+    "word_family": [
+      "trail (v)"
+    ],
+    "collocations": [
+      "movie trailer",
+      "watch a trailer",
+      "trailer park"
+    ],
+    "synonyms": [
+      "preview",
+      "teaser"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I saw a trailer of the film.",
+        "correct": "I saw a trailer for the film.",
+        "explain_vi": "Dùng giới từ 'for' thay vì 'of'."
+      }
+    ],
+    "grammar_patterns": [
+      "trailer + for + noun"
+    ]
+  },
+  {
+    "word": "cast",
+    "phonetic": "/kɑːst/",
+    "meaning_vi": "dàn diễn viên",
+    "meaning_en": "the actors in a movie, play, or show",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The cast includes many famous actors.",
+        "vi": "Dàn diễn viên bao gồm nhiều diễn viên nổi tiếng."
+      }
+    ],
+    "word_family": [
+      "casting (n)",
+      "cast (v)"
+    ],
+    "collocations": [
+      "cast member",
+      "all-star cast",
+      "cast list"
+    ],
+    "synonyms": [
+      "actors",
+      "performers"
+    ],
+    "antonyms": [
+      "crew"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "The cast are good.",
+        "correct": "The cast is good.",
+        "explain_vi": "Cast là danh từ tập hợp, thường dùng số ít."
+      }
+    ],
+    "grammar_patterns": [
+      "the + cast + singular verb"
+    ]
+  },
+  {
+    "word": "scene",
+    "phonetic": "/siːn/",
+    "meaning_vi": "cảnh (trong phim)",
+    "meaning_en": "a part of a play, movie, or book in which events happen in one place",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "That scene was very emotional.",
+        "vi": "Cảnh đó rất xúc động."
+      }
+    ],
+    "word_family": [
+      "scenery (n)",
+      "scenic (adj)"
+    ],
+    "collocations": [
+      "opening scene",
+      "love scene",
+      "scene of the crime"
+    ],
+    "synonyms": [
+      "sequence",
+      "segment"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I like the scene that he died.",
+        "correct": "I like the scene where he dies.",
+        "explain_vi": "Dùng 'where' thay vì 'that' cho địa điểm."
+      }
+    ],
+    "grammar_patterns": [
+      "scene + where + clause"
+    ]
+  },
+  {
+    "word": "script",
+    "phonetic": "/skrɪpt/",
+    "meaning_vi": "kịch bản",
+    "meaning_en": "the written text of a play, movie, or show",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The script was written by a famous author.",
+        "vi": "Kịch bản được viết bởi một tác giả nổi tiếng."
+      }
+    ],
+    "word_family": [
+      "scriptwriter (n)",
+      "scripted (adj)"
+    ],
+    "collocations": [
+      "write a script",
+      "film script",
+      "script editor"
+    ],
+    "synonyms": [
+      "screenplay",
+      "dialogue"
+    ],
+    "antonyms": [
+      "improvisation"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "He wrote the script of the movie.",
+        "correct": "He wrote the script for the movie.",
+        "explain_vi": "Dùng 'for' thay vì 'of'."
+      }
+    ],
+    "grammar_patterns": [
+      "script + for + noun"
+    ]
+  },
+  {
+    "word": "soundtrack",
+    "phonetic": "/ˈsaʊnd.træk/",
+    "meaning_vi": "nhạc phim",
+    "meaning_en": "the music or audio recording of a movie or show",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The soundtrack of this film is amazing.",
+        "vi": "Nhạc phim của bộ phim này thật tuyệt."
+      }
+    ],
+    "word_family": [
+      "sound (n)",
+      "track (n)"
+    ],
+    "collocations": [
+      "original soundtrack",
+      "soundtrack album",
+      "listen to the soundtrack"
+    ],
+    "synonyms": [
+      "score",
+      "music"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I like soundtrack of that movie.",
+        "correct": "I like the soundtrack of that movie.",
+        "explain_vi": "Cần mạo từ 'the'."
+      }
+    ],
+    "grammar_patterns": [
+      "the + soundtrack + of + noun"
+    ]
+  },
+  {
+    "word": "premiere",
+    "phonetic": "/prɪˈmɪr/",
+    "meaning_vi": "buổi công chiếu",
+    "meaning_en": "the first public performance or showing of a movie, play, etc.",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The movie premiere was a big event.",
+        "vi": "Buổi công chiếu phim là một sự kiện lớn."
+      }
+    ],
+    "word_family": [
+      "premier (adj)"
+    ],
+    "collocations": [
+      "world premiere",
+      "red carpet premiere",
+      "premiere night"
+    ],
+    "synonyms": [
+      "debut",
+      "opening"
+    ],
+    "antonyms": [
+      "finale"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "The premiere of the film is tonight.",
+        "correct": "The film premiere is tonight.",
+        "explain_vi": "Có thể dùng 'film premiere'."
+      }
+    ],
+    "grammar_patterns": [
+      "premiere + of + noun"
+    ]
+  },
+  {
+    "word": "album",
+    "phonetic": "/ˈæl.bəm/",
+    "meaning_vi": "album (nhạc)",
+    "meaning_en": "a collection of songs or music released as a single item",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Her new album is a hit.",
+        "vi": "Album mới của cô ấy rất thành công."
+      }
+    ],
+    "word_family": [
+      "albums (pl)"
+    ],
+    "collocations": [
+      "debut album",
+      "studio album",
+      "album cover"
+    ],
+    "synonyms": [
+      "record",
+      "LP"
+    ],
+    "antonyms": [
+      "single"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I bought a album.",
+        "correct": "I bought an album.",
+        "explain_vi": "Dùng 'an' vì 'album' bắt đầu bằng nguyên âm."
+      }
+    ],
+    "grammar_patterns": [
+      "album + by + artist"
+    ]
+  },
+  {
+    "word": "documentary",
+    "phonetic": "/ˌdɒk.jəˈmen.tər.i/",
+    "meaning_vi": "phim tài liệu",
+    "meaning_en": "a non-fiction film or TV program that provides factual information",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I watched a documentary about wildlife.",
+        "vi": "Tôi xem một phim tài liệu về động vật hoang dã."
+      }
+    ],
+    "word_family": [
+      "document (v)",
+      "documentarian (n)"
+    ],
+    "collocations": [
+      "documentary film",
+      "documentary series",
+      "watch a documentary"
+    ],
+    "synonyms": [
+      "non-fiction film",
+      "exposé"
+    ],
+    "antonyms": [
+      "fiction film"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I like documentary.",
+        "correct": "I like documentaries.",
+        "explain_vi": "Dùng số nhiều khi nói chung."
+      }
+    ],
+    "grammar_patterns": [
+      "documentary + about + topic"
+    ]
+  },
+  {
+    "word": "genre",
+    "phonetic": "/ˈʒɒn.rə/",
+    "meaning_vi": "thể loại",
+    "meaning_en": "a category of artistic composition, as in music or film",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "What genre of music do you like?",
+        "vi": "Bạn thích thể loại nhạc nào?"
+      }
+    ],
+    "word_family": [
+      "generic (adj)"
+    ],
+    "collocations": [
+      "music genre",
+      "film genre",
+      "genre fiction"
+    ],
+    "synonyms": [
+      "category",
+      "type"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I like genre horror.",
+        "correct": "I like the horror genre.",
+        "explain_vi": "Dùng 'the ... genre'."
+      }
+    ],
+    "grammar_patterns": [
+      "genre + of + noun"
+    ]
+  },
+  {
+    "word": "animation",
+    "phonetic": "/ˌæn.ɪˈmeɪ.ʃən/",
+    "meaning_vi": "phim hoạt hình",
+    "meaning_en": "the technique of creating moving images from drawings, models, etc.",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "This animation is beautifully made.",
+        "vi": "Bộ phim hoạt hình này được làm rất đẹp."
+      }
+    ],
+    "word_family": [
+      "animate (v)",
+      "animator (n)"
+    ],
+    "collocations": [
+      "computer animation",
+      "animated film",
+      "animation studio"
+    ],
+    "synonyms": [
+      "cartoon",
+      "CGI"
+    ],
+    "antonyms": [
+      "live-action"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I like animation movies.",
+        "correct": "I like animated movies.",
+        "explain_vi": "Dùng 'animated' làm tính từ."
+      }
+    ],
+    "grammar_patterns": [
+      "animation + noun (e.g., animation festival)"
+    ]
+  },
+  {
+    "word": "blog",
+    "phonetic": "/blɒɡ/",
+    "meaning_vi": "blog",
+    "meaning_en": "a regularly updated website or web page, typically run by an individual",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She writes a fashion blog.",
+        "vi": "Cô ấy viết blog thời trang."
+      }
+    ],
+    "word_family": [
+      "blogger (n)",
+      "blogging (n)"
+    ],
+    "collocations": [
+      "personal blog",
+      "blog post",
+      "blog comment"
+    ],
+    "synonyms": [
+      "weblog",
+      "vlog (video blog)"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I read a blog of her.",
+        "correct": "I read her blog.",
+        "explain_vi": "Dùng tính từ sở hữu."
+      }
+    ],
+    "grammar_patterns": [
+      "blog + about + topic"
+    ]
+  },
+  {
+    "word": "podcast",
+    "phonetic": "/ˈpɒd.kɑːst/",
+    "meaning_vi": "podcast",
+    "meaning_en": "a digital audio or video file series available for streaming or download",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I listen to podcasts on my commute.",
+        "vi": "Tôi nghe podcast trên đường đi làm."
+      }
+    ],
+    "word_family": [
+      "podcaster (n)",
+      "podcasting (n)"
+    ],
+    "collocations": [
+      "listen to a podcast",
+      "podcast episode",
+      "podcast host"
+    ],
+    "synonyms": [
+      "audio series"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I like podcast.",
+        "correct": "I like podcasts.",
+        "explain_vi": "Dùng số nhiều khi nói chung."
+      }
+    ],
+    "grammar_patterns": [
+      "podcast + about + topic"
+    ]
+  },
+  {
+    "word": "vlog",
+    "phonetic": "/vlɒɡ/",
+    "meaning_vi": "vlog (blog video)",
+    "meaning_en": "a video blog, typically a personal diary or commentary",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "He posts a vlog every week.",
+        "vi": "Anh ấy đăng vlog mỗi tuần."
+      }
+    ],
+    "word_family": [
+      "vlogger (n)",
+      "vlogging (n)"
+    ],
+    "collocations": [
+      "daily vlog",
+      "travel vlog",
+      "vlog channel"
+    ],
+    "synonyms": [
+      "video blog"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I watch vlog of her.",
+        "correct": "I watch her vlog.",
+        "explain_vi": "Dùng tính từ sở hữu."
+      }
+    ],
+    "grammar_patterns": [
+      "vlog + about + topic"
+    ]
+  }
+]

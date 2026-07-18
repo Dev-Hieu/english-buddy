@@ -1,0 +1,2286 @@
+[
+  {
+    "word": "diagnosis",
+    "phonetic": "/ˌdaɪ.əɡˈnəʊ.sɪs/",
+    "meaning_vi": "chẩn đoán",
+    "meaning_en": "the identification of the nature of an illness or problem by examination of the symptoms",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The doctor made a diagnosis of diabetes.",
+        "vi": "Bác sĩ đưa ra chẩn đoán mắc bệnh tiểu đường."
+      }
+    ],
+    "word_family": [
+      "diagnose (v)",
+      "diagnostic (adj)"
+    ],
+    "collocations": [
+      "make a diagnosis",
+      "confirm a diagnosis",
+      "early diagnosis"
+    ],
+    "synonyms": [
+      "identification",
+      "determination"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "He diagnosed the disease.",
+        "correct": "He made a diagnosis of the disease.",
+        "explain_vi": "Dùng 'make a diagnosis' thay vì 'diagnose' khi nói về hành động chẩn đoán."
+      }
+    ],
+    "grammar_patterns": [
+      "make + a diagnosis + of + illness"
+    ]
+  },
+  {
+    "word": "prognosis",
+    "phonetic": "/prɒɡˈnəʊ.sɪs/",
+    "meaning_vi": "tiên lượng",
+    "meaning_en": "the likely course of a disease or ailment",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The prognosis for recovery is good.",
+        "vi": "Tiên lượng hồi phục là tốt."
+      }
+    ],
+    "word_family": [
+      "prognostic (adj)",
+      "prognosticate (v)"
+    ],
+    "collocations": [
+      "good prognosis",
+      "poor prognosis",
+      "prognosis for"
+    ],
+    "synonyms": [
+      "outlook",
+      "prediction"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "The prognosis is bad.",
+        "correct": "The prognosis is poor.",
+        "explain_vi": "Dùng 'poor' thay vì 'bad' trong ngữ cảnh y tế."
+      }
+    ],
+    "grammar_patterns": [
+      "prognosis + for + noun phrase"
+    ]
+  },
+  {
+    "word": "symptom",
+    "phonetic": "/ˈsɪmp.təm/",
+    "meaning_vi": "triệu chứng",
+    "meaning_en": "a physical or mental feature indicating a condition",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Common symptoms include fever and cough.",
+        "vi": "Các triệu chứng thường gặp bao gồm sốt và ho."
+      }
+    ],
+    "word_family": [
+      "symptomatic (adj)",
+      "asymptomatic (adj)"
+    ],
+    "collocations": [
+      "common symptom",
+      "symptom of",
+      "develop symptoms"
+    ],
+    "synonyms": [
+      "indication",
+      "sign"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have symptom fever.",
+        "correct": "I have a symptom of fever.",
+        "explain_vi": "Thiếu mạo từ 'a' và giới từ 'of'."
+      }
+    ],
+    "grammar_patterns": [
+      "symptom + of + illness"
+    ]
+  },
+  {
+    "word": "chronic",
+    "phonetic": "/ˈkrɒn.ɪk/",
+    "meaning_vi": "mãn tính",
+    "meaning_en": "(of an illness) persisting for a long time or constantly recurring",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "She suffers from chronic back pain.",
+        "vi": "Cô ấy bị đau lưng mãn tính."
+      }
+    ],
+    "word_family": [
+      "chronically (adv)",
+      "chronicity (n)"
+    ],
+    "collocations": [
+      "chronic disease",
+      "chronic pain",
+      "chronic condition"
+    ],
+    "synonyms": [
+      "persistent",
+      "long-term"
+    ],
+    "antonyms": [
+      "acute"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "He has a chronic disease.",
+        "correct": "He has a chronic disease.",
+        "explain_vi": "Không có lỗi phổ biến, nhưng lưu ý 'chronic' không dùng cho cấp tính."
+      }
+    ],
+    "grammar_patterns": [
+      "chronic + noun (illness)"
+    ]
+  },
+  {
+    "word": "acute",
+    "phonetic": "/əˈkjuːt/",
+    "meaning_vi": "cấp tính",
+    "meaning_en": "(of an illness) coming on sharply and severely",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "He was admitted with acute appendicitis.",
+        "vi": "Anh ấy được nhập viện với viêm ruột thừa cấp tính."
+      }
+    ],
+    "word_family": [
+      "acutely (adv)",
+      "acuteness (n)"
+    ],
+    "collocations": [
+      "acute pain",
+      "acute illness",
+      "acute infection"
+    ],
+    "synonyms": [
+      "severe",
+      "intense"
+    ],
+    "antonyms": [
+      "chronic"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "He has an acute disease.",
+        "correct": "He has an acute disease.",
+        "explain_vi": "Không có lỗi phổ biến, nhưng lưu ý 'acute' trái nghĩa với 'chronic'."
+      }
+    ],
+    "grammar_patterns": [
+      "acute + noun"
+    ]
+  },
+  {
+    "word": "remedy",
+    "phonetic": "/ˈrem.ə.di/",
+    "meaning_vi": "phương thuốc, biện pháp khắc phục",
+    "meaning_en": "a medicine or treatment for a disease or injury",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Herbal remedies are popular in Vietnam.",
+        "vi": "Các phương thuốc thảo dược phổ biến ở Việt Nam."
+      }
+    ],
+    "word_family": [
+      "remedial (adj)",
+      "remedy (v)"
+    ],
+    "collocations": [
+      "herbal remedy",
+      "home remedy",
+      "remedy for"
+    ],
+    "synonyms": [
+      "cure",
+      "treatment",
+      "medicine"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I need a remedy for headache.",
+        "correct": "I need a remedy for headaches.",
+        "explain_vi": "Dùng số nhiều 'headaches' hoặc thêm mạo từ 'a headache'."
+      }
+    ],
+    "grammar_patterns": [
+      "remedy + for + condition"
+    ]
+  },
+  {
+    "word": "surgery",
+    "phonetic": "/ˈsɜː.dʒər.i/",
+    "meaning_vi": "phẫu thuật",
+    "meaning_en": "the branch of medicine dealing with operative procedures",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "He underwent surgery to remove the tumor.",
+        "vi": "Anh ấy đã trải qua phẫu thuật để loại bỏ khối u."
+      }
+    ],
+    "word_family": [
+      "surgical (adj)",
+      "surgeon (n)"
+    ],
+    "collocations": [
+      "undergo surgery",
+      "perform surgery",
+      "major surgery"
+    ],
+    "synonyms": [
+      "operation"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "He did surgery.",
+        "correct": "He underwent surgery / had surgery.",
+        "explain_vi": "Dùng 'undergo' hoặc 'have' thay vì 'do'."
+      }
+    ],
+    "grammar_patterns": [
+      "undergo + surgery"
+    ]
+  },
+  {
+    "word": "therapy",
+    "phonetic": "/ˈθer.ə.pi/",
+    "meaning_vi": "liệu pháp",
+    "meaning_en": "treatment intended to relieve or heal a disorder",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Physical therapy helped her recover.",
+        "vi": "Vật lý trị liệu đã giúp cô ấy hồi phục."
+      }
+    ],
+    "word_family": [
+      "therapeutic (adj)",
+      "therapist (n)"
+    ],
+    "collocations": [
+      "physical therapy",
+      "occupational therapy",
+      "therapy for"
+    ],
+    "synonyms": [
+      "treatment",
+      "rehabilitation"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "He is doing therapy.",
+        "correct": "He is undergoing therapy.",
+        "explain_vi": "Dùng 'undergo' thay vì 'do'."
+      }
+    ],
+    "grammar_patterns": [
+      "therapy + for + condition"
+    ]
+  },
+  {
+    "word": "diagnose",
+    "phonetic": "/ˈdaɪ.əɡ.nəʊz/",
+    "meaning_vi": "chẩn đoán",
+    "meaning_en": "to identify the nature of an illness by examination",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "The doctor diagnosed her with cancer.",
+        "vi": "Bác sĩ chẩn đoán cô ấy bị ung thư."
+      }
+    ],
+    "word_family": [
+      "diagnosis (n)",
+      "diagnostic (adj)"
+    ],
+    "collocations": [
+      "diagnose with",
+      "diagnose as",
+      "diagnose correctly"
+    ],
+    "synonyms": [
+      "identify",
+      "determine"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "He diagnosed the disease.",
+        "correct": "He diagnosed the patient with the disease.",
+        "explain_vi": "Cần tân ngữ là người, sau đó 'with' bệnh."
+      }
+    ],
+    "grammar_patterns": [
+      "diagnose + person + with + illness"
+    ]
+  },
+  {
+    "word": "prescribe",
+    "phonetic": "/prɪˈskraɪb/",
+    "meaning_vi": "kê đơn",
+    "meaning_en": "to recommend and authorize the use of a medicine or treatment",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "The doctor prescribed antibiotics.",
+        "vi": "Bác sĩ kê đơn thuốc kháng sinh."
+      }
+    ],
+    "word_family": [
+      "prescription (n)",
+      "prescriptive (adj)"
+    ],
+    "collocations": [
+      "prescribe medication",
+      "prescribe for",
+      "prescribe a course of"
+    ],
+    "synonyms": [
+      "order",
+      "recommend"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "He prescribed me medicine.",
+        "correct": "He prescribed medicine for me.",
+        "explain_vi": "Dùng giới từ 'for' thay vì tân ngữ gián tiếp."
+      }
+    ],
+    "grammar_patterns": [
+      "prescribe + medicine + for + person"
+    ]
+  },
+  {
+    "word": "adverse",
+    "phonetic": "/ˈæd.vɜːs/",
+    "meaning_vi": "bất lợi, có hại",
+    "meaning_en": "preventing success or development; harmful",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The drug may cause adverse side effects.",
+        "vi": "Thuốc có thể gây ra các tác dụng phụ có hại."
+      }
+    ],
+    "word_family": [
+      "adversely (adv)",
+      "adversity (n)"
+    ],
+    "collocations": [
+      "adverse effect",
+      "adverse reaction",
+      "adverse conditions"
+    ],
+    "synonyms": [
+      "harmful",
+      "detrimental",
+      "negative"
+    ],
+    "antonyms": [
+      "beneficial",
+      "favorable"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "The medicine has adverse effect.",
+        "correct": "The medicine has adverse effects.",
+        "explain_vi": "Thường dùng số nhiều 'effects'."
+      }
+    ],
+    "grammar_patterns": [
+      "adverse + noun (effect/reaction)"
+    ]
+  },
+  {
+    "word": "inflammation",
+    "phonetic": "/ˌɪn.fləˈmeɪ.ʃən/",
+    "meaning_vi": "viêm",
+    "meaning_en": "a localized physical condition with redness, swelling, and pain",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Inflammation of the joints is common in arthritis.",
+        "vi": "Viêm khớp thường gặp trong bệnh viêm khớp."
+      }
+    ],
+    "word_family": [
+      "inflame (v)",
+      "inflammatory (adj)"
+    ],
+    "collocations": [
+      "reduce inflammation",
+      "chronic inflammation",
+      "inflammation of"
+    ],
+    "synonyms": [
+      "swelling",
+      "irritation"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have inflammation on my knee.",
+        "correct": "I have inflammation in my knee.",
+        "explain_vi": "Dùng 'in' thay vì 'on'."
+      }
+    ],
+    "grammar_patterns": [
+      "inflammation + of/in + body part"
+    ]
+  },
+  {
+    "word": "immune",
+    "phonetic": "/ɪˈmjuːn/",
+    "meaning_vi": "miễn dịch",
+    "meaning_en": "resistant to a particular infection or toxin",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "Vaccination boosts the immune system.",
+        "vi": "Tiêm chủng tăng cường hệ miễn dịch."
+      }
+    ],
+    "word_family": [
+      "immunity (n)",
+      "immunize (v)"
+    ],
+    "collocations": [
+      "immune system",
+      "immune response",
+      "immune to"
+    ],
+    "synonyms": [
+      "resistant",
+      "protected"
+    ],
+    "antonyms": [
+      "susceptible"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "He is immune with that disease.",
+        "correct": "He is immune to that disease.",
+        "explain_vi": "Dùng 'to' thay vì 'with'."
+      }
+    ],
+    "grammar_patterns": [
+      "immune + to + disease"
+    ]
+  },
+  {
+    "word": "contagious",
+    "phonetic": "/kənˈteɪ.dʒəs/",
+    "meaning_vi": "lây nhiễm",
+    "meaning_en": "(of a disease) spread from one person to another by direct or indirect contact",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The flu is highly contagious.",
+        "vi": "Cúm rất dễ lây lan."
+      }
+    ],
+    "word_family": [
+      "contagion (n)",
+      "contagiously (adv)"
+    ],
+    "collocations": [
+      "highly contagious",
+      "contagious disease",
+      "contagious laughter"
+    ],
+    "synonyms": [
+      "infectious",
+      "transmissible"
+    ],
+    "antonyms": [
+      "non-contagious"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "This disease is very contagious.",
+        "correct": "This disease is very contagious.",
+        "explain_vi": "Không có lỗi phổ biến, nhưng lưu ý 'contagious' khác 'infectious'."
+      }
+    ],
+    "grammar_patterns": [
+      "contagious + noun"
+    ]
+  },
+  {
+    "word": "epidemic",
+    "phonetic": "/ˌep.ɪˈdem.ɪk/",
+    "meaning_vi": "dịch bệnh",
+    "meaning_en": "a widespread occurrence of an infectious disease in a community at a particular time",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The city experienced a flu epidemic last winter.",
+        "vi": "Thành phố đã trải qua một trận dịch cúm vào mùa đông năm ngoái."
+      }
+    ],
+    "word_family": [
+      "epidemiology (n)",
+      "epidemiological (adj)"
+    ],
+    "collocations": [
+      "flu epidemic",
+      "epidemic outbreak",
+      "epidemic of"
+    ],
+    "synonyms": [
+      "outbreak",
+      "plague"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "There is an epidemic disease.",
+        "correct": "There is an epidemic of the disease.",
+        "explain_vi": "Dùng 'epidemic of' thay vì 'epidemic disease'."
+      }
+    ],
+    "grammar_patterns": [
+      "epidemic + of + disease"
+    ]
+  },
+  {
+    "word": "pandemic",
+    "phonetic": "/pænˈdem.ɪk/",
+    "meaning_vi": "đại dịch",
+    "meaning_en": "an epidemic that has spread over multiple countries or continents",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "COVID-19 was declared a pandemic.",
+        "vi": "COVID-19 được tuyên bố là đại dịch."
+      }
+    ],
+    "word_family": [
+      "pandemics (n pl)",
+      "pandemic (adj)"
+    ],
+    "collocations": [
+      "global pandemic",
+      "pandemic outbreak",
+      "pandemic situation"
+    ],
+    "synonyms": [
+      "global epidemic"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "The pandemic is very serious.",
+        "correct": "The pandemic is very serious.",
+        "explain_vi": "Không có lỗi phổ biến, nhưng lưu ý phân biệt với 'epidemic'."
+      }
+    ],
+    "grammar_patterns": [
+      "pandemic + of + disease"
+    ]
+  },
+  {
+    "word": "vaccine",
+    "phonetic": "/ˈvæk.siːn/",
+    "meaning_vi": "vắc-xin",
+    "meaning_en": "a substance used to stimulate immunity to a disease",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The vaccine is effective against the virus.",
+        "vi": "Vắc-xin có hiệu quả chống lại virus."
+      }
+    ],
+    "word_family": [
+      "vaccinate (v)",
+      "vaccination (n)"
+    ],
+    "collocations": [
+      "get a vaccine",
+      "develop a vaccine",
+      "vaccine against"
+    ],
+    "synonyms": [
+      "immunization",
+      "inoculation"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I need a vaccine for flu.",
+        "correct": "I need a vaccine against the flu.",
+        "explain_vi": "Dùng 'against' thay vì 'for'."
+      }
+    ],
+    "grammar_patterns": [
+      "vaccine + against + disease"
+    ]
+  },
+  {
+    "word": "antibiotic",
+    "phonetic": "/ˌæn.ti.baɪˈɒt.ɪk/",
+    "meaning_vi": "kháng sinh",
+    "meaning_en": "a drug that inhibits the growth of or destroys microorganisms",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Doctors prescribe antibiotics for bacterial infections.",
+        "vi": "Bác sĩ kê đơn kháng sinh cho nhiễm khuẩn."
+      }
+    ],
+    "word_family": [
+      "antibacterial (adj)",
+      "antibiotic (adj)"
+    ],
+    "collocations": [
+      "take antibiotics",
+      "prescribe antibiotics",
+      "antibiotic resistance"
+    ],
+    "synonyms": [
+      "antimicrobial"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I need an antibiotic for virus.",
+        "correct": "I need an antibiotic for bacterial infection.",
+        "explain_vi": "Kháng sinh không trị virus."
+      }
+    ],
+    "grammar_patterns": [
+      "antibiotic + for + infection"
+    ]
+  },
+  {
+    "word": "allergy",
+    "phonetic": "/ˈæl.ə.dʒi/",
+    "meaning_vi": "dị ứng",
+    "meaning_en": "a damaging immune response to a substance",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She has an allergy to peanuts.",
+        "vi": "Cô ấy bị dị ứng với đậu phộng."
+      }
+    ],
+    "word_family": [
+      "allergic (adj)",
+      "allergen (n)"
+    ],
+    "collocations": [
+      "have an allergy",
+      "allergy to",
+      "severe allergy"
+    ],
+    "synonyms": [
+      "hypersensitivity",
+      "intolerance"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have allergy with dust.",
+        "correct": "I have an allergy to dust.",
+        "explain_vi": "Dùng 'an allergy to' thay vì 'allergy with'."
+      }
+    ],
+    "grammar_patterns": [
+      "have an allergy + to + substance"
+    ]
+  },
+  {
+    "word": "nutrition",
+    "phonetic": "/njuːˈtrɪʃ.ən/",
+    "meaning_vi": "dinh dưỡng",
+    "meaning_en": "the process of providing or obtaining the food necessary for health and growth",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Good nutrition is essential for a healthy body.",
+        "vi": "Dinh dưỡng tốt rất cần thiết cho cơ thể khỏe mạnh."
+      }
+    ],
+    "word_family": [
+      "nutritious (adj)",
+      "nutritional (adj)"
+    ],
+    "collocations": [
+      "good nutrition",
+      "poor nutrition",
+      "nutrition plan"
+    ],
+    "synonyms": [
+      "nourishment",
+      "diet"
+    ],
+    "antonyms": [
+      "malnutrition"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "He has a good nutrition.",
+        "correct": "He has good nutrition.",
+        "explain_vi": "Không dùng mạo từ 'a' trước 'nutrition'."
+      }
+    ],
+    "grammar_patterns": [
+      "nutrition + noun (plan/information)"
+    ]
+  },
+  {
+    "word": "relapse",
+    "phonetic": "/rɪˈlæps/",
+    "meaning_vi": "tái phát",
+    "meaning_en": "a return of a disease or symptoms after recovery",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The patient suffered a relapse after stopping medication.",
+        "vi": "Bệnh nhân bị tái phát sau khi ngừng thuốc."
+      }
+    ],
+    "word_family": [
+      "relapse (v)",
+      "relapsing (adj)"
+    ],
+    "collocations": [
+      "suffer a relapse",
+      "prevent a relapse",
+      "risk of relapse"
+    ],
+    "synonyms": [
+      "recurrence",
+      "setback"
+    ],
+    "antonyms": [
+      "remission"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "He relapsed again.",
+        "correct": "He suffered a relapse.",
+        "explain_vi": "Dùng 'suffer a relapse' thay vì 'relapse' như động từ trong văn viết trang trọng."
+      }
+    ],
+    "grammar_patterns": [
+      "have a relapse",
+      "suffer a relapse"
+    ]
+  },
+  {
+    "word": "remission",
+    "phonetic": "/rɪˈmɪʃ.ən/",
+    "meaning_vi": "thuyên giảm",
+    "meaning_en": "a temporary or permanent reduction in the severity of a disease",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The cancer is in remission.",
+        "vi": "Ung thư đang trong giai đoạn thuyên giảm."
+      }
+    ],
+    "word_family": [
+      "remit (v)"
+    ],
+    "collocations": [
+      "in remission",
+      "go into remission",
+      "achieve remission"
+    ],
+    "synonyms": [
+      "alleviation",
+      "abatement"
+    ],
+    "antonyms": [
+      "relapse",
+      "exacerbation"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "The disease is remission.",
+        "correct": "The disease is in remission.",
+        "explain_vi": "Cần giới từ 'in' trước 'remission'."
+      }
+    ],
+    "grammar_patterns": [
+      "be in remission",
+      "go into remission"
+    ]
+  },
+  {
+    "word": "etiology",
+    "phonetic": "/ˌiː.tiˈɒl.ə.dʒi/",
+    "meaning_vi": "nguyên nhân học, căn nguyên",
+    "meaning_en": "the cause or origin of a disease",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The etiology of the disease remains unknown.",
+        "vi": "Căn nguyên của căn bệnh vẫn chưa được biết."
+      }
+    ],
+    "word_family": [
+      "etiological (adj)",
+      "etiologically (adv)"
+    ],
+    "collocations": [
+      "determine the etiology",
+      "study the etiology",
+      "unknown etiology"
+    ],
+    "synonyms": [
+      "cause",
+      "origin"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "The etiology of this disease is virus.",
+        "correct": "The etiology of this disease is viral.",
+        "explain_vi": "Dùng tính từ 'viral' thay vì danh từ 'virus'."
+      }
+    ],
+    "grammar_patterns": [
+      "the etiology of + disease"
+    ]
+  },
+  {
+    "word": "pathology",
+    "phonetic": "/pəˈθɒl.ə.dʒi/",
+    "meaning_vi": "bệnh lý học, bệnh lý",
+    "meaning_en": "the study of the causes and effects of diseases",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The pathology report showed abnormal cells.",
+        "vi": "Báo cáo bệnh lý cho thấy các tế bào bất thường."
+      }
+    ],
+    "word_family": [
+      "pathological (adj)",
+      "pathologist (n)"
+    ],
+    "collocations": [
+      "pathology report",
+      "clinical pathology",
+      "pathology lab"
+    ],
+    "synonyms": [
+      "disease study"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Pathology is the study of pathos.",
+        "correct": "Pathology is the study of diseases.",
+        "explain_vi": "Không nhầm lẫn với 'pathos' (sự thương cảm)."
+      }
+    ],
+    "grammar_patterns": [
+      "pathology of + disease"
+    ]
+  },
+  {
+    "word": "comorbidity",
+    "phonetic": "/ˌkoʊ.mɔːrˈbɪd.ə.ti/",
+    "meaning_vi": "bệnh đồng mắc",
+    "meaning_en": "the simultaneous presence of two or more diseases in a patient",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Patients with comorbidities are at higher risk.",
+        "vi": "Bệnh nhân có bệnh đồng mắc có nguy cơ cao hơn."
+      }
+    ],
+    "word_family": [
+      "comorbid (adj)"
+    ],
+    "collocations": [
+      "underlying comorbidity",
+      "multiple comorbidities",
+      "comorbidity index"
+    ],
+    "synonyms": [
+      "coexisting condition"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "He has many comorbidity.",
+        "correct": "He has many comorbidities.",
+        "explain_vi": "Comorbidity là danh từ đếm được, cần dùng số nhiều."
+      }
+    ],
+    "grammar_patterns": [
+      "have a comorbidity",
+      "with comorbidities"
+    ]
+  },
+  {
+    "word": "prognostic",
+    "phonetic": "/prɒɡˈnɒs.tɪk/",
+    "meaning_vi": "tiên lượng",
+    "meaning_en": "relating to a prediction of the likely course of a disease",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The prognostic factors indicate a good outcome.",
+        "vi": "Các yếu tố tiên lượng chỉ ra kết quả tốt."
+      }
+    ],
+    "word_family": [
+      "prognosis (n)",
+      "prognosticate (v)"
+    ],
+    "collocations": [
+      "prognostic factor",
+      "prognostic value",
+      "prognostic marker"
+    ],
+    "synonyms": [
+      "predictive",
+      "forecasting"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "The doctor gave a prognostic.",
+        "correct": "The doctor gave a prognosis.",
+        "explain_vi": "'Prognostic' là tính từ, danh từ là 'prognosis'."
+      }
+    ],
+    "grammar_patterns": [
+      "prognostic + noun"
+    ]
+  },
+  {
+    "word": "symptomatic",
+    "phonetic": "/ˌsɪmp.təˈmæt.ɪk/",
+    "meaning_vi": "có triệu chứng",
+    "meaning_en": "showing symptoms of a disease",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "Symptomatic patients should self-isolate.",
+        "vi": "Bệnh nhân có triệu chứng nên tự cách ly."
+      }
+    ],
+    "word_family": [
+      "symptom (n)",
+      "asymptomatic (adj)"
+    ],
+    "collocations": [
+      "symptomatic treatment",
+      "symptomatic relief",
+      "symptomatic infection"
+    ],
+    "synonyms": [
+      "manifesting"
+    ],
+    "antonyms": [
+      "asymptomatic"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "He is symptom.",
+        "correct": "He is symptomatic.",
+        "explain_vi": "Dùng tính từ 'symptomatic' thay vì danh từ 'symptom'."
+      }
+    ],
+    "grammar_patterns": [
+      "be symptomatic",
+      "symptomatic of + disease"
+    ]
+  },
+  {
+    "word": "asymptomatic",
+    "phonetic": "/ˌeɪ.sɪmp.təˈmæt.ɪk/",
+    "meaning_vi": "không triệu chứng",
+    "meaning_en": "showing no symptoms of a disease",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "Many carriers are asymptomatic.",
+        "vi": "Nhiều người mang mầm bệnh không có triệu chứng."
+      }
+    ],
+    "word_family": [
+      "asymptomatically (adv)"
+    ],
+    "collocations": [
+      "asymptomatic carrier",
+      "asymptomatic infection",
+      "remain asymptomatic"
+    ],
+    "synonyms": [
+      "subclinical"
+    ],
+    "antonyms": [
+      "symptomatic"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "He is asymptomatic carrier.",
+        "correct": "He is an asymptomatic carrier.",
+        "explain_vi": "Cần mạo từ 'an' trước 'asymptomatic carrier'."
+      }
+    ],
+    "grammar_patterns": [
+      "be asymptomatic",
+      "asymptomatic + noun"
+    ]
+  },
+  {
+    "word": "malignant",
+    "phonetic": "/məˈlɪɡ.nənt/",
+    "meaning_vi": "ác tính",
+    "meaning_en": "(of a tumor) cancerous and likely to spread",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The biopsy revealed a malignant tumor.",
+        "vi": "Kết quả sinh thiết cho thấy một khối u ác tính."
+      }
+    ],
+    "word_family": [
+      "malignancy (n)",
+      "malignantly (adv)"
+    ],
+    "collocations": [
+      "malignant tumor",
+      "malignant cancer",
+      "malignant cells"
+    ],
+    "synonyms": [
+      "cancerous",
+      "dangerous"
+    ],
+    "antonyms": [
+      "benign"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "The tumor is malign.",
+        "correct": "The tumor is malignant.",
+        "explain_vi": "Dùng 'malignant' thay vì 'malign' (từ này ít dùng)."
+      }
+    ],
+    "grammar_patterns": [
+      "malignant + noun"
+    ]
+  },
+  {
+    "word": "benign",
+    "phonetic": "/bɪˈnaɪn/",
+    "meaning_vi": "lành tính",
+    "meaning_en": "(of a tumor) not cancerous; harmless",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "Fortunately, the lump was benign.",
+        "vi": "May mắn thay, khối u là lành tính."
+      }
+    ],
+    "word_family": [
+      "benignly (adv)"
+    ],
+    "collocations": [
+      "benign tumor",
+      "benign condition",
+      "benign growth"
+    ],
+    "synonyms": [
+      "harmless",
+      "noncancerous"
+    ],
+    "antonyms": [
+      "malignant"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "The tumor is benignant.",
+        "correct": "The tumor is benign.",
+        "explain_vi": "'Benignant' là từ hiếm, dùng 'benign' là đúng."
+      }
+    ],
+    "grammar_patterns": [
+      "benign + noun"
+    ]
+  },
+  {
+    "word": "metastasis",
+    "phonetic": "/məˈtæs.tə.sɪs/",
+    "meaning_vi": "di căn",
+    "meaning_en": "the spread of cancer cells to other parts of the body",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The cancer has metastasized to the liver.",
+        "vi": "Ung thư đã di căn đến gan."
+      }
+    ],
+    "word_family": [
+      "metastasize (v)",
+      "metastatic (adj)"
+    ],
+    "collocations": [
+      "metastasis of cancer",
+      "prevent metastasis",
+      "distant metastasis"
+    ],
+    "synonyms": [
+      "spread",
+      "dissemination"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "The cancer metastasized to liver.",
+        "correct": "The cancer metastasized to the liver.",
+        "explain_vi": "Cần mạo từ 'the' trước bộ phận cơ thể."
+      }
+    ],
+    "grammar_patterns": [
+      "metastasis to + organ",
+      "metastasis of + cancer"
+    ]
+  },
+  {
+    "word": "carcinogen",
+    "phonetic": "/kɑːrˈsɪn.ə.dʒən/",
+    "meaning_vi": "chất gây ung thư",
+    "meaning_en": "a substance that can cause cancer",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Asbestos is a known carcinogen.",
+        "vi": "Amiăng là một chất gây ung thư đã biết."
+      }
+    ],
+    "word_family": [
+      "carcinogenic (adj)",
+      "carcinogenesis (n)"
+    ],
+    "collocations": [
+      "known carcinogen",
+      "potential carcinogen",
+      "exposure to carcinogens"
+    ],
+    "synonyms": [
+      "cancer-causing agent"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "This chemical is carcinogenic.",
+        "correct": "This chemical is a carcinogen.",
+        "explain_vi": "'Carcinogen' là danh từ, 'carcinogenic' là tính từ."
+      }
+    ],
+    "grammar_patterns": [
+      "be a carcinogen",
+      "act as a carcinogen"
+    ]
+  },
+  {
+    "word": "exacerbate",
+    "phonetic": "/ɪɡˈzæs.ər.beɪt/",
+    "meaning_vi": "làm trầm trọng thêm",
+    "meaning_en": "to make a disease or problem worse",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "Smoking exacerbates respiratory conditions.",
+        "vi": "Hút thuốc làm trầm trọng thêm các bệnh về hô hấp."
+      }
+    ],
+    "word_family": [
+      "exacerbation (n)",
+      "exacerbating (adj)"
+    ],
+    "collocations": [
+      "exacerbate symptoms",
+      "exacerbate a condition",
+      "exacerbate pain"
+    ],
+    "synonyms": [
+      "aggravate",
+      "worsen"
+    ],
+    "antonyms": [
+      "alleviate",
+      "mitigate"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "The disease exacerbates.",
+        "correct": "The disease is exacerbated by stress.",
+        "explain_vi": "Thường dùng bị động: 'be exacerbated by'."
+      }
+    ],
+    "grammar_patterns": [
+      "exacerbate + noun",
+      "be exacerbated by + noun"
+    ]
+  },
+  {
+    "word": "alleviate",
+    "phonetic": "/əˈliː.vi.eɪt/",
+    "meaning_vi": "làm giảm nhẹ",
+    "meaning_en": "to make symptoms less severe",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "This medication alleviates pain.",
+        "vi": "Thuốc này làm giảm đau."
+      }
+    ],
+    "word_family": [
+      "alleviation (n)",
+      "alleviating (adj)"
+    ],
+    "collocations": [
+      "alleviate symptoms",
+      "alleviate pain",
+      "alleviate suffering"
+    ],
+    "synonyms": [
+      "relieve",
+      "ease"
+    ],
+    "antonyms": [
+      "exacerbate",
+      "aggravate"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "The medicine alleviates the pain.",
+        "correct": "The medicine alleviates pain.",
+        "explain_vi": "Thường không dùng mạo từ trước 'pain' khi nói chung."
+      }
+    ],
+    "grammar_patterns": [
+      "alleviate + noun"
+    ]
+  },
+  {
+    "word": "palliative",
+    "phonetic": "/ˈpæl.i.ə.tɪv/",
+    "meaning_vi": "giảm nhẹ, chăm sóc giảm nhẹ",
+    "meaning_en": "relieving symptoms without curing the disease",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "Palliative care focuses on quality of life.",
+        "vi": "Chăm sóc giảm nhẹ tập trung vào chất lượng cuộc sống."
+      }
+    ],
+    "word_family": [
+      "palliate (v)",
+      "palliation (n)"
+    ],
+    "collocations": [
+      "palliative care",
+      "palliative treatment",
+      "palliative medicine"
+    ],
+    "synonyms": [
+      "comforting",
+      "alleviating"
+    ],
+    "antonyms": [
+      "curative"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Palliative care is only for dying patients.",
+        "correct": "Palliative care is for patients with serious illness.",
+        "explain_vi": "Không chỉ dành cho bệnh nhân sắp chết."
+      }
+    ],
+    "grammar_patterns": [
+      "palliative + noun"
+    ]
+  },
+  {
+    "word": "contraindication",
+    "phonetic": "/ˌkɒn.trə.ɪn.dɪˈkeɪ.ʃən/",
+    "meaning_vi": "chống chỉ định",
+    "meaning_en": "a condition that makes a treatment inadvisable",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Pregnancy is a contraindication for this drug.",
+        "vi": "Mang thai là chống chỉ định cho thuốc này."
+      }
+    ],
+    "word_family": [
+      "contraindicate (v)",
+      "contraindicated (adj)"
+    ],
+    "collocations": [
+      "absolute contraindication",
+      "relative contraindication",
+      "contraindication to treatment"
+    ],
+    "synonyms": [
+      "prohibition",
+      "inadvisability"
+    ],
+    "antonyms": [
+      "indication"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "This drug is contraindication in pregnancy.",
+        "correct": "This drug is contraindicated in pregnancy.",
+        "explain_vi": "Dùng tính từ 'contraindicated' thay vì danh từ."
+      }
+    ],
+    "grammar_patterns": [
+      "contraindication for + noun",
+      "contraindication to + noun"
+    ]
+  },
+  {
+    "word": "iatrogenic",
+    "phonetic": "/aɪˌæt.rəˈdʒen.ɪk/",
+    "meaning_vi": "do thầy thuốc gây ra",
+    "meaning_en": "caused by medical treatment or procedures",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "An iatrogenic infection occurred after surgery.",
+        "vi": "Nhiễm trùng do thầy thuốc gây ra xảy ra sau phẫu thuật."
+      }
+    ],
+    "word_family": [
+      "iatrogenesis (n)"
+    ],
+    "collocations": [
+      "iatrogenic disease",
+      "iatrogenic injury",
+      "iatrogenic condition"
+    ],
+    "synonyms": [
+      "treatment-induced"
+    ],
+    "antonyms": [
+      "idiopathic"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "The infection is iatrogenic.",
+        "correct": "The infection is iatrogenic.",
+        "explain_vi": "Cách dùng đúng, nhưng cần lưu ý phát âm."
+      }
+    ],
+    "grammar_patterns": [
+      "iatrogenic + noun"
+    ]
+  },
+  {
+    "word": "idiopathic",
+    "phonetic": "/ˌɪd.i.əˈpæθ.ɪk/",
+    "meaning_vi": "vô căn",
+    "meaning_en": "of unknown cause",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "Idiopathic pulmonary fibrosis has no known cause.",
+        "vi": "Xơ phổi vô căn không có nguyên nhân rõ."
+      }
+    ],
+    "word_family": [
+      "idiopathy (n)"
+    ],
+    "collocations": [
+      "idiopathic disease",
+      "idiopathic condition",
+      "idiopathic cause"
+    ],
+    "synonyms": [
+      "spontaneous",
+      "cryptogenic"
+    ],
+    "antonyms": [
+      "iatrogenic",
+      "secondary"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "The disease is idiopathic in origin.",
+        "correct": "The disease is idiopathic.",
+        "explain_vi": "Có thể nói gọn 'idiopathic' mà không cần 'in origin'."
+      }
+    ],
+    "grammar_patterns": [
+      "idiopathic + noun"
+    ]
+  },
+  {
+    "word": "nosocomial",
+    "phonetic": "/ˌnɒs.əˈkoʊ.mi.əl/",
+    "meaning_vi": "bệnh viện (nhiễm trùng bệnh viện)",
+    "meaning_en": "acquired in a hospital setting",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "Nosocomial infections are a major concern.",
+        "vi": "Nhiễm trùng bệnh viện là một mối quan tâm lớn."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "nosocomial infection",
+      "nosocomial transmission",
+      "nosocomial outbreak"
+    ],
+    "synonyms": [
+      "hospital-acquired"
+    ],
+    "antonyms": [
+      "community-acquired"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "He got a nosocomial infection.",
+        "correct": "He acquired a nosocomial infection.",
+        "explain_vi": "Dùng 'acquire' thay vì 'get' trong văn viết trang trọng."
+      }
+    ],
+    "grammar_patterns": [
+      "nosocomial + noun"
+    ]
+  },
+  {
+    "word": "prophylaxis",
+    "phonetic": "/ˌprɒf.ɪˈlæk.sɪs/",
+    "meaning_vi": "dự phòng",
+    "meaning_en": "treatment to prevent disease",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Antibiotic prophylaxis is given before surgery.",
+        "vi": "Dự phòng kháng sinh được dùng trước phẫu thuật."
+      }
+    ],
+    "word_family": [
+      "prophylactic (adj/n)",
+      "prophylactically (adv)"
+    ],
+    "collocations": [
+      "prophylaxis against infection",
+      "antibiotic prophylaxis",
+      "pre-exposure prophylaxis"
+    ],
+    "synonyms": [
+      "prevention",
+      "preventive treatment"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Prophylaxis is a treatment.",
+        "correct": "Prophylaxis is a preventive treatment.",
+        "explain_vi": "Cần nhấn mạnh tính dự phòng."
+      }
+    ],
+    "grammar_patterns": [
+      "prophylaxis against + disease",
+      "prophylaxis for + condition"
+    ]
+  },
+  {
+    "word": "inoculation",
+    "phonetic": "/ɪˌnɒk.jəˈleɪ.ʃən/",
+    "meaning_vi": "sự tiêm chủng, sự chủng ngừa",
+    "meaning_en": "the introduction of a vaccine into the body to produce immunity",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Inoculation against influenza is recommended for the elderly.",
+        "vi": "Tiêm chủng phòng cúm được khuyến cáo cho người già."
+      }
+    ],
+    "word_family": [
+      "inoculate (v)",
+      "inoculative (adj)"
+    ],
+    "collocations": [
+      "receive inoculation",
+      "undergo inoculation",
+      "inoculation program"
+    ],
+    "synonyms": [
+      "vaccination",
+      "immunization"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I will inoculation tomorrow.",
+        "correct": "I will get inoculation tomorrow.",
+        "explain_vi": "Inoculation là danh từ, cần động từ 'get' hoặc 'receive'."
+      }
+    ],
+    "grammar_patterns": [
+      "get/receive + inoculation",
+      "inoculation against + disease"
+    ]
+  },
+  {
+    "word": "hypertension",
+    "phonetic": "/ˌhaɪ.pəˈten.ʃən/",
+    "meaning_vi": "tăng huyết áp",
+    "meaning_en": "abnormally high blood pressure",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Hypertension is a major risk factor for heart disease.",
+        "vi": "Tăng huyết áp là yếu tố nguy cơ chính cho bệnh tim."
+      }
+    ],
+    "word_family": [
+      "hypertensive (adj/n)",
+      "hypertensiveness (n)"
+    ],
+    "collocations": [
+      "suffer from hypertension",
+      "manage hypertension",
+      "hypertension medication"
+    ],
+    "synonyms": [
+      "high blood pressure"
+    ],
+    "antonyms": [
+      "hypotension"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "He has hypertension high.",
+        "correct": "He has high hypertension.",
+        "explain_vi": "Hypertension đã mang nghĩa 'cao', không cần 'high'."
+      }
+    ],
+    "grammar_patterns": [
+      "have/suffer from + hypertension",
+      "hypertension + is + adjective"
+    ]
+  },
+  {
+    "word": "hypotension",
+    "phonetic": "/ˌhaɪ.pəˈten.ʃən/",
+    "meaning_vi": "hạ huyết áp",
+    "meaning_en": "abnormally low blood pressure",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Hypotension can cause dizziness and fainting.",
+        "vi": "Hạ huyết áp có thể gây chóng mặt và ngất xỉu."
+      }
+    ],
+    "word_family": [
+      "hypotensive (adj/n)",
+      "hypotensiveness (n)"
+    ],
+    "collocations": [
+      "experience hypotension",
+      "treat hypotension",
+      "orthostatic hypotension"
+    ],
+    "synonyms": [
+      "low blood pressure"
+    ],
+    "antonyms": [
+      "hypertension"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "She has low hypotension.",
+        "correct": "She has hypotension.",
+        "explain_vi": "Hypotension đã mang nghĩa 'thấp', không cần 'low'."
+      }
+    ],
+    "grammar_patterns": [
+      "have/suffer from + hypotension"
+    ]
+  },
+  {
+    "word": "edema",
+    "phonetic": "/ɪˈdiː.mə/",
+    "meaning_vi": "phù nề",
+    "meaning_en": "swelling caused by excess fluid trapped in body tissues",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Edema in the legs is common during pregnancy.",
+        "vi": "Phù nề ở chân thường gặp trong thai kỳ."
+      }
+    ],
+    "word_family": [
+      "edematous (adj)"
+    ],
+    "collocations": [
+      "suffer from edema",
+      "reduce edema",
+      "peripheral edema"
+    ],
+    "synonyms": [
+      "swelling",
+      "dropsy"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "He has edema swelling.",
+        "correct": "He has edema.",
+        "explain_vi": "Edema đã bao hàm nghĩa sưng phù."
+      }
+    ],
+    "grammar_patterns": [
+      "have/develop + edema",
+      "edema + in + body part"
+    ]
+  },
+  {
+    "word": "ischemia",
+    "phonetic": "/ɪˈskiː.mi.ə/",
+    "meaning_vi": "thiếu máu cục bộ",
+    "meaning_en": "inadequate blood supply to an organ or part of the body",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Myocardial ischemia can lead to a heart attack.",
+        "vi": "Thiếu máu cơ tim có thể dẫn đến đau tim."
+      }
+    ],
+    "word_family": [
+      "ischemic (adj)"
+    ],
+    "collocations": [
+      "cause ischemia",
+      "suffer from ischemia",
+      "cerebral ischemia"
+    ],
+    "synonyms": [
+      "blood flow deficiency"
+    ],
+    "antonyms": [
+      "hyperemia"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "He has ischemia disease.",
+        "correct": "He has ischemia.",
+        "explain_vi": "Ischemia là tình trạng, không phải bệnh cụ thể."
+      }
+    ],
+    "grammar_patterns": [
+      "have/suffer from + ischemia",
+      "ischemia + in + organ"
+    ]
+  },
+  {
+    "word": "necrosis",
+    "phonetic": "/nəˈkrəʊ.sɪs/",
+    "meaning_vi": "hoại tử",
+    "meaning_en": "the death of cells in a tissue or organ due to disease or injury",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Necrosis of the liver tissue can be fatal.",
+        "vi": "Hoại tử mô gan có thể gây tử vong."
+      }
+    ],
+    "word_family": [
+      "necrotic (adj)",
+      "necroticize (v)"
+    ],
+    "collocations": [
+      "cause necrosis",
+      "undergo necrosis",
+      "avascular necrosis"
+    ],
+    "synonyms": [
+      "cell death",
+      "gangrene"
+    ],
+    "antonyms": [
+      "regeneration"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "The tissue is necrosis.",
+        "correct": "The tissue is necrotic.",
+        "explain_vi": "Necrosis là danh từ, cần tính từ 'necrotic'."
+      }
+    ],
+    "grammar_patterns": [
+      "necrosis + of + tissue/organ",
+      "undergo + necrosis"
+    ]
+  },
+  {
+    "word": "stenosis",
+    "phonetic": "/stɪˈnəʊ.sɪs/",
+    "meaning_vi": "hẹp (ống, mạch)",
+    "meaning_en": "abnormal narrowing of a passage or opening in the body",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Spinal stenosis can cause back pain and numbness.",
+        "vi": "Hẹp ống sống có thể gây đau lưng và tê."
+      }
+    ],
+    "word_family": [
+      "stenotic (adj)",
+      "stenosing (adj)"
+    ],
+    "collocations": [
+      "suffer from stenosis",
+      "aortic stenosis",
+      "spinal stenosis"
+    ],
+    "synonyms": [
+      "narrowing",
+      "constriction"
+    ],
+    "antonyms": [
+      "dilation"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "He has stenosis narrow.",
+        "correct": "He has stenosis.",
+        "explain_vi": "Stenosis đã mang nghĩa hẹp."
+      }
+    ],
+    "grammar_patterns": [
+      "have/suffer from + stenosis",
+      "stenosis + of + body part"
+    ]
+  },
+  {
+    "word": "thrombosis",
+    "phonetic": "/θrɒmˈbəʊ.sɪs/",
+    "meaning_vi": "huyết khối, tắc mạch",
+    "meaning_en": "formation of a blood clot inside a blood vessel",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Deep vein thrombosis is a serious condition.",
+        "vi": "Huyết khối tĩnh mạch sâu là một tình trạng nghiêm trọng."
+      }
+    ],
+    "word_family": [
+      "thrombotic (adj)",
+      "thrombus (n)"
+    ],
+    "collocations": [
+      "develop thrombosis",
+      "prevent thrombosis",
+      "coronary thrombosis"
+    ],
+    "synonyms": [
+      "clotting",
+      "embolism"
+    ],
+    "antonyms": [
+      "hemostasis"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "He has thrombosis clot.",
+        "correct": "He has thrombosis.",
+        "explain_vi": "Thrombosis đã bao hàm cục máu đông."
+      }
+    ],
+    "grammar_patterns": [
+      "have/develop + thrombosis",
+      "thrombosis + in + vessel"
+    ]
+  },
+  {
+    "word": "embolism",
+    "phonetic": "/ˈem.bə.lɪ.zəm/",
+    "meaning_vi": "thuyên tắc",
+    "meaning_en": "blockage of a blood vessel by an embolus (e.g., a clot, air bubble)",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "A pulmonary embolism can be life-threatening.",
+        "vi": "Thuyên tắc phổi có thể đe dọa tính mạng."
+      }
+    ],
+    "word_family": [
+      "embolic (adj)",
+      "embolus (n)"
+    ],
+    "collocations": [
+      "cause embolism",
+      "suffer from embolism",
+      "fat embolism"
+    ],
+    "synonyms": [
+      "blockage",
+      "occlusion"
+    ],
+    "antonyms": [
+      "patency"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "He has embolism block.",
+        "correct": "He has an embolism.",
+        "explain_vi": "Embolism là danh từ đếm được, cần mạo từ 'an'."
+      }
+    ],
+    "grammar_patterns": [
+      "have/suffer from + an embolism",
+      "embolism + in + organ"
+    ]
+  },
+  {
+    "word": "aneurysm",
+    "phonetic": "/ˈæn.jə.rɪ.zəm/",
+    "meaning_vi": "phình mạch",
+    "meaning_en": "a localized enlargement of an artery due to a weakened wall",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "A ruptured brain aneurysm can cause a stroke.",
+        "vi": "Phình mạch não vỡ có thể gây đột quỵ."
+      }
+    ],
+    "word_family": [
+      "aneurysmal (adj)"
+    ],
+    "collocations": [
+      "develop an aneurysm",
+      "rupture an aneurysm",
+      "aortic aneurysm"
+    ],
+    "synonyms": [
+      "dilation",
+      "bulge"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "He has aneurysm.",
+        "correct": "He has an aneurysm.",
+        "explain_vi": "Aneurysm là danh từ đếm được, cần mạo từ."
+      }
+    ],
+    "grammar_patterns": [
+      "have/develop + an aneurysm",
+      "aneurysm + of + artery"
+    ]
+  },
+  {
+    "word": "hematoma",
+    "phonetic": "/ˌhiː.məˈtəʊ.mə/",
+    "meaning_vi": "tụ máu",
+    "meaning_en": "a solid swelling of clotted blood within the tissues",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "A subdural hematoma requires surgical evacuation.",
+        "vi": "Tụ máu dưới màng cứng cần được phẫu thuật dẫn lưu."
+      }
+    ],
+    "word_family": [
+      "hematomatous (adj)"
+    ],
+    "collocations": [
+      "form a hematoma",
+      "evacuate a hematoma",
+      "subdural hematoma"
+    ],
+    "synonyms": [
+      "blood blister",
+      "contusion"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "He has hematoma swelling.",
+        "correct": "He has a hematoma.",
+        "explain_vi": "Hematoma là danh từ đếm được, cần mạo từ."
+      }
+    ],
+    "grammar_patterns": [
+      "have/develop + a hematoma",
+      "hematoma + in + location"
+    ]
+  },
+  {
+    "word": "laparoscopy",
+    "phonetic": "/ˌlæp.əˈrɒs.kə.pi/",
+    "meaning_vi": "nội soi ổ bụng",
+    "meaning_en": "a surgical procedure using a laparoscope to examine the abdominal cavity",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The diagnosis was confirmed by laparoscopy.",
+        "vi": "Chẩn đoán được xác nhận bằng nội soi ổ bụng."
+      }
+    ],
+    "word_family": [
+      "laparoscopic (adj)",
+      "laparoscope (n)"
+    ],
+    "collocations": [
+      "undergo laparoscopy",
+      "perform laparoscopy",
+      "diagnostic laparoscopy"
+    ],
+    "synonyms": [
+      "keyhole surgery",
+      "minimally invasive surgery"
+    ],
+    "antonyms": [
+      "laparotomy"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "He had a laparoscopy surgery.",
+        "correct": "He had laparoscopy.",
+        "explain_vi": "Laparoscopy đã là thủ thuật, không cần 'surgery'."
+      }
+    ],
+    "grammar_patterns": [
+      "have/undergo + laparoscopy",
+      "perform + laparoscopy"
+    ]
+  },
+  {
+    "word": "endoscopy",
+    "phonetic": "/enˈdɒs.kə.pi/",
+    "meaning_vi": "nội soi",
+    "meaning_en": "a procedure using an endoscope to examine the interior of a hollow organ",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "An endoscopy revealed ulcers in the stomach.",
+        "vi": "Nội soi phát hiện loét dạ dày."
+      }
+    ],
+    "word_family": [
+      "endoscopic (adj)",
+      "endoscope (n)"
+    ],
+    "collocations": [
+      "undergo endoscopy",
+      "perform endoscopy",
+      "upper endoscopy"
+    ],
+    "synonyms": [
+      "internal examination"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "He had endoscopy examination.",
+        "correct": "He had an endoscopy.",
+        "explain_vi": "Endoscopy là danh từ đếm được, cần mạo từ."
+      }
+    ],
+    "grammar_patterns": [
+      "have/undergo + an endoscopy",
+      "perform + endoscopy"
+    ]
+  },
+  {
+    "word": "biopsy",
+    "phonetic": "/ˈbaɪ.ɒp.si/",
+    "meaning_vi": "sinh thiết",
+    "meaning_en": "the removal of a small piece of tissue for examination under a microscope",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "A biopsy confirmed the tumor was malignant.",
+        "vi": "Sinh thiết xác nhận khối u là ác tính."
+      }
+    ],
+    "word_family": [
+      "bioptic (adj)",
+      "biopsied (v past)"
+    ],
+    "collocations": [
+      "perform a biopsy",
+      "undergo a biopsy",
+      "needle biopsy"
+    ],
+    "synonyms": [
+      "tissue sample",
+      "histological examination"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "He had biopsy test.",
+        "correct": "He had a biopsy.",
+        "explain_vi": "Biopsy là danh từ đếm được, cần mạo từ."
+      }
+    ],
+    "grammar_patterns": [
+      "have/undergo + a biopsy",
+      "biopsy + of + organ"
+    ]
+  },
+  {
+    "word": "resection",
+    "phonetic": "/rɪˈsek.ʃən/",
+    "meaning_vi": "cắt bỏ (phẫu thuật)",
+    "meaning_en": "surgical removal of part of an organ or structure",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "A bowel resection was necessary to remove the damaged section.",
+        "vi": "Cắt bỏ ruột là cần thiết để loại bỏ phần bị tổn thương."
+      }
+    ],
+    "word_family": [
+      "resect (v)",
+      "resectable (adj)"
+    ],
+    "collocations": [
+      "undergo resection",
+      "perform a resection",
+      "liver resection"
+    ],
+    "synonyms": [
+      "excision",
+      "removal"
+    ],
+    "antonyms": [
+      "reconstruction"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "He had resection surgery.",
+        "correct": "He had a resection.",
+        "explain_vi": "Resection là danh từ đếm được, cần mạo từ."
+      }
+    ],
+    "grammar_patterns": [
+      "have/undergo + a resection",
+      "resection + of + organ"
+    ]
+  },
+  {
+    "word": "amputation",
+    "phonetic": "/ˌæm.pjʊˈteɪ.ʃən/",
+    "meaning_vi": "cắt cụt",
+    "meaning_en": "the surgical removal of a limb or part of a limb",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Amputation of the leg was the only option to save his life.",
+        "vi": "Cắt cụt chân là lựa chọn duy nhất để cứu sống anh ấy."
+      }
+    ],
+    "word_family": [
+      "amputate (v)",
+      "amputee (n)"
+    ],
+    "collocations": [
+      "undergo amputation",
+      "perform an amputation",
+      "traumatic amputation"
+    ],
+    "synonyms": [
+      "severance",
+      "dismemberment"
+    ],
+    "antonyms": [
+      "replantation"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "He had amputation leg.",
+        "correct": "He had an amputation of the leg.",
+        "explain_vi": "Cần giới từ 'of' để chỉ bộ phận."
+      }
+    ],
+    "grammar_patterns": [
+      "have/undergo + an amputation",
+      "amputation + of + body part"
+    ]
+  },
+  {
+    "word": "prosthesis",
+    "phonetic": "/ˈprɒs.θə.sɪs/",
+    "meaning_vi": "chân tay giả, bộ phận giả",
+    "meaning_en": "an artificial device to replace a missing body part",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "He was fitted with a lower limb prosthesis.",
+        "vi": "Anh ấy được lắp chân giả."
+      }
+    ],
+    "word_family": [
+      "prosthetic (adj)",
+      "prosthetically (adv)"
+    ],
+    "collocations": [
+      "wear a prosthesis",
+      "fit a prosthesis",
+      "dental prosthesis"
+    ],
+    "synonyms": [
+      "artificial limb",
+      "implant"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "He uses prosthesis leg.",
+        "correct": "He uses a leg prosthesis.",
+        "explain_vi": "Prosthesis là danh từ, cần mạo từ và đặt tính từ trước."
+      }
+    ],
+    "grammar_patterns": [
+      "use/wear + a prosthesis",
+      "prosthesis + for + body part"
+    ]
+  },
+  {
+    "word": "orthopedics",
+    "phonetic": "/ˌɔː.θəˈpiː.dɪks/",
+    "meaning_vi": "chỉnh hình",
+    "meaning_en": "the branch of medicine dealing with the correction of deformities of bones or muscles",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She specializes in pediatric orthopedics.",
+        "vi": "Cô ấy chuyên về chỉnh hình nhi khoa."
+      }
+    ],
+    "word_family": [
+      "orthopedic (adj)",
+      "orthopedist (n)"
+    ],
+    "collocations": [
+      "study orthopedics",
+      "orthopedic surgery",
+      "orthopedic surgeon"
+    ],
+    "synonyms": [
+      "orthopaedics"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "He went to orthopedics doctor.",
+        "correct": "He went to an orthopedist.",
+        "explain_vi": "Orthopedics là chuyên ngành, bác sĩ là orthopedist."
+      }
+    ],
+    "grammar_patterns": [
+      "practice/treat + orthopedics",
+      "orthopedics + noun"
+    ]
+  },
+  {
+    "word": "dermatology",
+    "phonetic": "/ˌdɜː.məˈtɒl.ə.dʒi/",
+    "meaning_vi": "da liễu",
+    "meaning_en": "the branch of medicine dealing with the skin and its diseases",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She consulted a dermatology specialist for her rash.",
+        "vi": "Cô ấy đã tham khảo ý kiến bác sĩ da liễu về vết phát ban."
+      }
+    ],
+    "word_family": [
+      "dermatological (adj)",
+      "dermatologist (n)"
+    ],
+    "collocations": [
+      "study dermatology",
+      "dermatology clinic",
+      "dermatology department"
+    ],
+    "synonyms": [
+      "skin medicine"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "He went to dermatology.",
+        "correct": "He went to a dermatologist.",
+        "explain_vi": "Dermatology là chuyên ngành, cần nói đến bác sĩ."
+      }
+    ],
+    "grammar_patterns": [
+      "practice/study + dermatology",
+      "dermatology + noun"
+    ]
+  },
+  {
+    "word": "neurology",
+    "phonetic": "/njʊˈrɒl.ə.dʒi/",
+    "meaning_vi": "thần kinh học",
+    "meaning_en": "the branch of medicine dealing with the nervous system and its disorders",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Neurology is a challenging field of medicine.",
+        "vi": "Thần kinh học là một lĩnh vực y học đầy thách thức."
+      }
+    ],
+    "word_family": [
+      "neurological (adj)",
+      "neurologist (n)"
+    ],
+    "collocations": [
+      "study neurology",
+      "neurology department",
+      "neurology consultation"
+    ],
+    "synonyms": [
+      "neuroscience"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "He is a neurology.",
+        "correct": "He is a neurologist.",
+        "explain_vi": "Neurology là ngành, người hành nghề là neurologist."
+      }
+    ],
+    "grammar_patterns": [
+      "practice/study + neurology",
+      "neurology + noun"
+    ]
+  }
+]

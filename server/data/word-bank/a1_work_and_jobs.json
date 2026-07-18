@@ -1,0 +1,1563 @@
+[
+  {
+    "word": "job",
+    "phonetic": "/dʒɒb/",
+    "meaning_vi": "công việc",
+    "meaning_en": "work that you do regularly to earn money",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I have a job.",
+        "vi": "Tôi có một công việc."
+      },
+      {
+        "en": "She likes her job.",
+        "vi": "Cô ấy thích công việc của mình."
+      }
+    ],
+    "word_family": [
+      "jobless (adj)"
+    ],
+    "collocations": [
+      "get a job",
+      "lose a job",
+      "full-time job"
+    ],
+    "synonyms": [
+      "work",
+      "occupation"
+    ],
+    "antonyms": [
+      "unemployment"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I have job",
+        "correct": "I have a job",
+        "explain_vi": "Cần mạo từ 'a' trước 'job'"
+      }
+    ],
+    "grammar_patterns": [
+      "have a job",
+      "get a job"
+    ]
+  },
+  {
+    "word": "work",
+    "phonetic": "/wɜːk/",
+    "meaning_vi": "làm việc; công việc",
+    "meaning_en": "to do a job; the place where you do your job",
+    "pos": "verb/noun",
+    "examples": [
+      {
+        "en": "I work in an office.",
+        "vi": "Tôi làm việc ở văn phòng."
+      },
+      {
+        "en": "I go to work by bus.",
+        "vi": "Tôi đi làm bằng xe buýt."
+      }
+    ],
+    "word_family": [
+      "worker (n)",
+      "workplace (n)"
+    ],
+    "collocations": [
+      "go to work",
+      "start work",
+      "finish work"
+    ],
+    "synonyms": [
+      "labor",
+      "employment"
+    ],
+    "antonyms": [
+      "rest",
+      "leisure"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I work at hospital",
+        "correct": "I work in a hospital",
+        "explain_vi": "Dùng 'in a' thay vì 'at' với nơi làm việc"
+      }
+    ],
+    "grammar_patterns": [
+      "work in/at/for",
+      "go to work"
+    ]
+  },
+  {
+    "word": "office",
+    "phonetic": "/ˈɒf.ɪs/",
+    "meaning_vi": "văn phòng",
+    "meaning_en": "a room or building where people work",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "My office is on the second floor.",
+        "vi": "Văn phòng của tôi ở tầng hai."
+      },
+      {
+        "en": "She works in a big office.",
+        "vi": "Cô ấy làm việc trong một văn phòng lớn."
+      }
+    ],
+    "word_family": [
+      "officer (n)",
+      "official (adj)"
+    ],
+    "collocations": [
+      "in the office",
+      "office worker",
+      "office hours"
+    ],
+    "synonyms": [
+      "workplace",
+      "bureau"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go to office",
+        "correct": "I go to the office",
+        "explain_vi": "Cần mạo từ 'the' trước 'office'"
+      }
+    ],
+    "grammar_patterns": [
+      "in an office",
+      "at the office"
+    ]
+  },
+  {
+    "word": "boss",
+    "phonetic": "/bɒs/",
+    "meaning_vi": "sếp",
+    "meaning_en": "the person who is in charge of you at work",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "My boss is very nice.",
+        "vi": "Sếp của tôi rất tốt."
+      },
+      {
+        "en": "She is the boss of the company.",
+        "vi": "Cô ấy là sếp của công ty."
+      }
+    ],
+    "word_family": [
+      "bossy (adj)"
+    ],
+    "collocations": [
+      "my boss",
+      "new boss",
+      "ask the boss"
+    ],
+    "synonyms": [
+      "manager",
+      "supervisor"
+    ],
+    "antonyms": [
+      "employee",
+      "worker"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "My boss is kind with me",
+        "correct": "My boss is kind to me",
+        "explain_vi": "Dùng 'to' thay vì 'with' sau 'kind'"
+      }
+    ],
+    "grammar_patterns": [
+      "the boss of",
+      "my boss"
+    ]
+  },
+  {
+    "word": "colleague",
+    "phonetic": "/ˈkɒl.iːɡ/",
+    "meaning_vi": "đồng nghiệp",
+    "meaning_en": "a person you work with",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "My colleague helps me.",
+        "vi": "Đồng nghiệp của tôi giúp tôi."
+      },
+      {
+        "en": "She is a good colleague.",
+        "vi": "Cô ấy là một đồng nghiệp tốt."
+      }
+    ],
+    "word_family": [
+      "collegial (adj)"
+    ],
+    "collocations": [
+      "work colleague",
+      "close colleague"
+    ],
+    "synonyms": [
+      "coworker",
+      "associate"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "My colleague and I are working",
+        "correct": "My colleague and I are working",
+        "explain_vi": "Không có lỗi phổ biến"
+      }
+    ],
+    "grammar_patterns": [
+      "my colleague",
+      "a colleague of mine"
+    ]
+  },
+  {
+    "word": "salary",
+    "phonetic": "/ˈsæl.ər.i/",
+    "meaning_vi": "lương",
+    "meaning_en": "the money you receive for your work, usually monthly",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "My salary is good.",
+        "vi": "Lương của tôi tốt."
+      },
+      {
+        "en": "She gets a high salary.",
+        "vi": "Cô ấy nhận lương cao."
+      }
+    ],
+    "word_family": [
+      "salaried (adj)"
+    ],
+    "collocations": [
+      "high salary",
+      "low salary",
+      "monthly salary"
+    ],
+    "synonyms": [
+      "wage",
+      "pay"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have good salary",
+        "correct": "I have a good salary",
+        "explain_vi": "Cần mạo từ 'a' trước 'salary'"
+      }
+    ],
+    "grammar_patterns": [
+      "a salary of",
+      "get a salary"
+    ]
+  },
+  {
+    "word": "company",
+    "phonetic": "/ˈkʌm.pə.ni/",
+    "meaning_vi": "công ty",
+    "meaning_en": "an organization that sells goods or services",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I work for a big company.",
+        "vi": "Tôi làm việc cho một công ty lớn."
+      },
+      {
+        "en": "The company has 100 employees.",
+        "vi": "Công ty có 100 nhân viên."
+      }
+    ],
+    "word_family": [
+      "corporate (adj)"
+    ],
+    "collocations": [
+      "work for a company",
+      "start a company",
+      "company name"
+    ],
+    "synonyms": [
+      "firm",
+      "corporation"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I work in a company",
+        "correct": "I work for a company",
+        "explain_vi": "Dùng 'for' thay vì 'in' khi nói về nơi làm việc"
+      }
+    ],
+    "grammar_patterns": [
+      "work for a company",
+      "a company of"
+    ]
+  },
+  {
+    "word": "employee",
+    "phonetic": "/ɪmˈplɔɪ.iː/",
+    "meaning_vi": "nhân viên",
+    "meaning_en": "a person who works for a company or another person",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "He is a new employee.",
+        "vi": "Anh ấy là nhân viên mới."
+      },
+      {
+        "en": "The employees are happy.",
+        "vi": "Các nhân viên đều vui."
+      }
+    ],
+    "word_family": [
+      "employer (n)",
+      "employment (n)"
+    ],
+    "collocations": [
+      "new employee",
+      "full-time employee",
+      "employee benefits"
+    ],
+    "synonyms": [
+      "worker",
+      "staff"
+    ],
+    "antonyms": [
+      "employer",
+      "boss"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I am employee",
+        "correct": "I am an employee",
+        "explain_vi": "Cần mạo từ 'an' trước 'employee'"
+      }
+    ],
+    "grammar_patterns": [
+      "an employee of",
+      "be an employee"
+    ]
+  },
+  {
+    "word": "meeting",
+    "phonetic": "/ˈmiː.tɪŋ/",
+    "meaning_vi": "cuộc họp",
+    "meaning_en": "an event where people come together to discuss things",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We have a meeting at 10.",
+        "vi": "Chúng tôi có cuộc họp lúc 10 giờ."
+      },
+      {
+        "en": "The meeting is in room 5.",
+        "vi": "Cuộc họp ở phòng 5."
+      }
+    ],
+    "word_family": [
+      "meet (v)"
+    ],
+    "collocations": [
+      "have a meeting",
+      "attend a meeting",
+      "meeting room"
+    ],
+    "synonyms": [
+      "conference",
+      "gathering"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have meeting",
+        "correct": "I have a meeting",
+        "explain_vi": "Cần mạo từ 'a' trước 'meeting'"
+      }
+    ],
+    "grammar_patterns": [
+      "have a meeting",
+      "in a meeting"
+    ]
+  },
+  {
+    "word": "manager",
+    "phonetic": "/ˈmæn.ɪ.dʒər/",
+    "meaning_vi": "quản lý",
+    "meaning_en": "a person who controls or organizes a company or part of it",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "My manager is helpful.",
+        "vi": "Quản lý của tôi hay giúp đỡ."
+      },
+      {
+        "en": "She is the sales manager.",
+        "vi": "Cô ấy là quản lý bán hàng."
+      }
+    ],
+    "word_family": [
+      "manage (v)",
+      "management (n)"
+    ],
+    "collocations": [
+      "project manager",
+      "general manager",
+      "under a manager"
+    ],
+    "synonyms": [
+      "supervisor",
+      "director"
+    ],
+    "antonyms": [
+      "subordinate",
+      "employee"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I want to become manager",
+        "correct": "I want to become a manager",
+        "explain_vi": "Cần mạo từ 'a' trước 'manager'"
+      }
+    ],
+    "grammar_patterns": [
+      "the manager of",
+      "be a manager"
+    ]
+  },
+  {
+    "word": "client",
+    "phonetic": "/ˈklaɪ.ənt/",
+    "meaning_vi": "khách hàng",
+    "meaning_en": "a person or company that pays for goods or services",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Our client is happy.",
+        "vi": "Khách hàng của chúng tôi hài lòng."
+      },
+      {
+        "en": "She meets with clients.",
+        "vi": "Cô ấy gặp khách hàng."
+      }
+    ],
+    "word_family": [
+      "clientele (n)"
+    ],
+    "collocations": [
+      "meet a client",
+      "new client",
+      "client meeting"
+    ],
+    "synonyms": [
+      "customer",
+      "buyer"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have a client meeting at 2pm",
+        "correct": "I have a client meeting at 2 p.m.",
+        "explain_vi": "Viết tắt 'p.m.' đúng chuẩn"
+      }
+    ],
+    "grammar_patterns": [
+      "a client of",
+      "meet with a client"
+    ]
+  },
+  {
+    "word": "resume",
+    "phonetic": "/rɪˈzjuːm/",
+    "meaning_vi": "sơ yếu lý lịch",
+    "meaning_en": "a document listing your education and work experience",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Please send your resume.",
+        "vi": "Vui lòng gửi sơ yếu lý lịch của bạn."
+      },
+      {
+        "en": "I updated my resume.",
+        "vi": "Tôi đã cập nhật sơ yếu lý lịch."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "send a resume",
+      "update a resume",
+      "resume format"
+    ],
+    "synonyms": [
+      "CV",
+      "curriculum vitae"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I sent my CV",
+        "correct": "I sent my resume",
+        "explain_vi": "Ở Mỹ thường dùng 'resume' thay vì 'CV'"
+      }
+    ],
+    "grammar_patterns": [
+      "my resume",
+      "a resume for"
+    ]
+  },
+  {
+    "word": "interview",
+    "phonetic": "/ˈɪn.tər.vjuː/",
+    "meaning_vi": "phỏng vấn",
+    "meaning_en": "a meeting where someone asks you questions to see if you are suitable for a job",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I have a job interview tomorrow.",
+        "vi": "Tôi có buổi phỏng vấn xin việc vào ngày mai."
+      },
+      {
+        "en": "The interview was difficult.",
+        "vi": "Buổi phỏng vấn rất khó."
+      }
+    ],
+    "word_family": [
+      "interviewer (n)",
+      "interviewee (n)"
+    ],
+    "collocations": [
+      "job interview",
+      "have an interview",
+      "interview questions"
+    ],
+    "synonyms": [
+      "audition",
+      "meeting"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have interview",
+        "correct": "I have an interview",
+        "explain_vi": "Cần mạo từ 'an' trước 'interview'"
+      }
+    ],
+    "grammar_patterns": [
+      "have an interview",
+      "go for an interview"
+    ]
+  },
+  {
+    "word": "contract",
+    "phonetic": "/ˈkɒn.trækt/",
+    "meaning_vi": "hợp đồng",
+    "meaning_en": "a legal agreement between two people or companies",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I signed a contract.",
+        "vi": "Tôi đã ký hợp đồng."
+      },
+      {
+        "en": "The contract is for one year.",
+        "vi": "Hợp đồng có thời hạn một năm."
+      }
+    ],
+    "word_family": [
+      "contractor (n)",
+      "contractual (adj)"
+    ],
+    "collocations": [
+      "sign a contract",
+      "contract terms",
+      "employment contract"
+    ],
+    "synonyms": [
+      "agreement",
+      "deal"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I signed contract",
+        "correct": "I signed a contract",
+        "explain_vi": "Cần mạo từ 'a' trước 'contract'"
+      }
+    ],
+    "grammar_patterns": [
+      "a contract with",
+      "under contract"
+    ]
+  },
+  {
+    "word": "full-time",
+    "phonetic": "/ˌfʊl ˈtaɪm/",
+    "meaning_vi": "toàn thời gian",
+    "meaning_en": "working the normal number of hours per week",
+    "pos": "adjective/adverb",
+    "examples": [
+      {
+        "en": "I have a full-time job.",
+        "vi": "Tôi có công việc toàn thời gian."
+      },
+      {
+        "en": "She works full-time.",
+        "vi": "Cô ấy làm việc toàn thời gian."
+      }
+    ],
+    "word_family": [
+      "part-time (adj/adv)"
+    ],
+    "collocations": [
+      "full-time job",
+      "full-time employee",
+      "work full-time"
+    ],
+    "synonyms": [
+      "full-time employment"
+    ],
+    "antonyms": [
+      "part-time"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I work full-time job",
+        "correct": "I work full-time",
+        "explain_vi": "Không cần 'job' sau 'work full-time'"
+      }
+    ],
+    "grammar_patterns": [
+      "a full-time job",
+      "work full-time"
+    ]
+  },
+  {
+    "word": "part-time",
+    "phonetic": "/ˌpɑːt ˈtaɪm/",
+    "meaning_vi": "bán thời gian",
+    "meaning_en": "working fewer hours than full-time",
+    "pos": "adjective/adverb",
+    "examples": [
+      {
+        "en": "She has a part-time job.",
+        "vi": "Cô ấy có công việc bán thời gian."
+      },
+      {
+        "en": "He works part-time.",
+        "vi": "Anh ấy làm việc bán thời gian."
+      }
+    ],
+    "word_family": [
+      "full-time (adj/adv)"
+    ],
+    "collocations": [
+      "part-time job",
+      "part-time worker",
+      "work part-time"
+    ],
+    "synonyms": [
+      "part-time employment"
+    ],
+    "antonyms": [
+      "full-time"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I work part-time job",
+        "correct": "I work part-time",
+        "explain_vi": "Không cần 'job' sau 'work part-time'"
+      }
+    ],
+    "grammar_patterns": [
+      "a part-time job",
+      "work part-time"
+    ]
+  },
+  {
+    "word": "salary",
+    "phonetic": "/ˈsæl.ər.i/",
+    "meaning_vi": "lương",
+    "meaning_en": "the money you receive for your work, usually monthly",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "My salary is good.",
+        "vi": "Lương của tôi tốt."
+      },
+      {
+        "en": "She gets a high salary.",
+        "vi": "Cô ấy nhận lương cao."
+      }
+    ],
+    "word_family": [
+      "salaried (adj)"
+    ],
+    "collocations": [
+      "high salary",
+      "low salary",
+      "monthly salary"
+    ],
+    "synonyms": [
+      "wage",
+      "pay"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have good salary",
+        "correct": "I have a good salary",
+        "explain_vi": "Cần mạo từ 'a' trước 'salary'"
+      }
+    ],
+    "grammar_patterns": [
+      "a salary of",
+      "get a salary"
+    ]
+  },
+  {
+    "word": "wage",
+    "phonetic": "/weɪdʒ/",
+    "meaning_vi": "tiền lương (theo giờ/tuần)",
+    "meaning_en": "money you earn per hour or per week",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The wage is $15 per hour.",
+        "vi": "Tiền lương là 15 đô la một giờ."
+      },
+      {
+        "en": "He gets a good wage.",
+        "vi": "Anh ấy nhận được mức lương tốt."
+      }
+    ],
+    "word_family": [
+      "wage earner (n)"
+    ],
+    "collocations": [
+      "minimum wage",
+      "hourly wage",
+      "low wage"
+    ],
+    "synonyms": [
+      "pay",
+      "earnings"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "My wage is high",
+        "correct": "My wages are high",
+        "explain_vi": "Thường dùng số nhiều 'wages'"
+      }
+    ],
+    "grammar_patterns": [
+      "a wage of",
+      "wages are"
+    ]
+  },
+  {
+    "word": "promotion",
+    "phonetic": "/prəˈməʊ.ʃən/",
+    "meaning_vi": "sự thăng chức",
+    "meaning_en": "a move to a higher level or position in a company",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She got a promotion.",
+        "vi": "Cô ấy được thăng chức."
+      },
+      {
+        "en": "I hope for a promotion.",
+        "vi": "Tôi hy vọng được thăng chức."
+      }
+    ],
+    "word_family": [
+      "promote (v)"
+    ],
+    "collocations": [
+      "get a promotion",
+      "deserve a promotion",
+      "promotion opportunity"
+    ],
+    "synonyms": [
+      "advancement",
+      "upgrade"
+    ],
+    "antonyms": [
+      "demotion"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I got promotion",
+        "correct": "I got a promotion",
+        "explain_vi": "Cần mạo từ 'a' trước 'promotion'"
+      }
+    ],
+    "grammar_patterns": [
+      "get a promotion",
+      "promotion to"
+    ]
+  },
+  {
+    "word": "experience",
+    "phonetic": "/ɪkˈspɪə.ri.əns/",
+    "meaning_vi": "kinh nghiệm",
+    "meaning_en": "knowledge or skill gained from doing a job",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I have five years of experience.",
+        "vi": "Tôi có năm năm kinh nghiệm."
+      },
+      {
+        "en": "She has a lot of experience.",
+        "vi": "Cô ấy có nhiều kinh nghiệm."
+      }
+    ],
+    "word_family": [
+      "experienced (adj)",
+      "inexperienced (adj)"
+    ],
+    "collocations": [
+      "work experience",
+      "job experience",
+      "gain experience"
+    ],
+    "synonyms": [
+      "background",
+      "practice"
+    ],
+    "antonyms": [
+      "inexperience"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I have experience about",
+        "correct": "I have experience in",
+        "explain_vi": "Dùng 'in' thay vì 'about' sau 'experience'"
+      }
+    ],
+    "grammar_patterns": [
+      "experience in",
+      "years of experience"
+    ]
+  },
+  {
+    "word": "coworker",
+    "phonetic": "/ˈkoʊˌwɜːrkər/",
+    "meaning_vi": "đồng nghiệp",
+    "meaning_en": "a person you work with",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "My coworker is nice.",
+        "vi": "Đồng nghiệp của tôi tốt bụng."
+      }
+    ],
+    "word_family": [
+      "work (v)",
+      "worker (n)"
+    ],
+    "collocations": [
+      "coworker and I",
+      "new coworker",
+      "meet a coworker"
+    ],
+    "synonyms": [
+      "colleague"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "My coworker and me",
+        "correct": "My coworker and I",
+        "explain_vi": "Dùng 'I' thay vì 'me' khi làm chủ ngữ"
+      }
+    ],
+    "grammar_patterns": [
+      "possessive + coworker"
+    ]
+  },
+  {
+    "word": "shift",
+    "phonetic": "/ʃɪft/",
+    "meaning_vi": "ca làm việc",
+    "meaning_en": "a period of time worked",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I work the morning shift.",
+        "vi": "Tôi làm ca sáng."
+      }
+    ],
+    "word_family": [
+      "shift (v)",
+      "shifter (n)"
+    ],
+    "collocations": [
+      "morning shift",
+      "night shift",
+      "work a shift"
+    ],
+    "synonyms": [
+      "period"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I work shift morning",
+        "correct": "I work the morning shift",
+        "explain_vi": "Đặt tính từ trước danh từ"
+      }
+    ],
+    "grammar_patterns": [
+      "the + adjective + shift"
+    ]
+  },
+  {
+    "word": "overtime",
+    "phonetic": "/ˈoʊvərtaɪm/",
+    "meaning_vi": "làm thêm giờ",
+    "meaning_en": "extra time worked beyond regular hours",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I work overtime today.",
+        "vi": "Hôm nay tôi làm thêm giờ."
+      }
+    ],
+    "word_family": [
+      "over (pref)",
+      "time (n)"
+    ],
+    "collocations": [
+      "work overtime",
+      "overtime pay",
+      "do overtime"
+    ],
+    "synonyms": [
+      "extra work"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I work over time",
+        "correct": "I work overtime",
+        "explain_vi": "'Overtime' là một từ, không tách rời"
+      }
+    ],
+    "grammar_patterns": [
+      "work + overtime"
+    ]
+  },
+  {
+    "word": "break",
+    "phonetic": "/breɪk/",
+    "meaning_vi": "giờ nghỉ",
+    "meaning_en": "a short rest from work",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I take a break at ten.",
+        "vi": "Tôi nghỉ giải lao lúc 10 giờ."
+      }
+    ],
+    "word_family": [
+      "break (v)",
+      "breakable (adj)"
+    ],
+    "collocations": [
+      "take a break",
+      "coffee break",
+      "lunch break"
+    ],
+    "synonyms": [
+      "rest"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have break",
+        "correct": "I have a break",
+        "explain_vi": "Cần mạo từ 'a' trước 'break'"
+      }
+    ],
+    "grammar_patterns": [
+      "have/take + a + break"
+    ]
+  },
+  {
+    "word": "uniform",
+    "phonetic": "/ˈjuːnɪfɔːrm/",
+    "meaning_vi": "đồng phục",
+    "meaning_en": "special clothes worn at work",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I wear a blue uniform.",
+        "vi": "Tôi mặc đồng phục màu xanh."
+      }
+    ],
+    "word_family": [
+      "uniformed (adj)"
+    ],
+    "collocations": [
+      "wear a uniform",
+      "school uniform",
+      "work uniform"
+    ],
+    "synonyms": [
+      "outfit"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I wear uniform",
+        "correct": "I wear a uniform",
+        "explain_vi": "Cần mạo từ 'a' trước 'uniform'"
+      }
+    ],
+    "grammar_patterns": [
+      "wear + a/an + uniform"
+    ]
+  },
+  {
+    "word": "schedule",
+    "phonetic": "/ˈʃedjuːl/",
+    "meaning_vi": "lịch làm việc",
+    "meaning_en": "a plan of times for work",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "My schedule is busy.",
+        "vi": "Lịch của tôi bận rộn."
+      }
+    ],
+    "word_family": [
+      "scheduling (n)"
+    ],
+    "collocations": [
+      "work schedule",
+      "busy schedule",
+      "check schedule"
+    ],
+    "synonyms": [
+      "timetable"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "My scheduling",
+        "correct": "My schedule",
+        "explain_vi": "Dùng 'schedule' (danh từ) không phải 'scheduling'"
+      }
+    ],
+    "grammar_patterns": [
+      "possessive + schedule"
+    ]
+  },
+  {
+    "word": "task",
+    "phonetic": "/tæsk/",
+    "meaning_vi": "nhiệm vụ",
+    "meaning_en": "a piece of work to do",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I have many tasks today.",
+        "vi": "Hôm nay tôi có nhiều nhiệm vụ."
+      }
+    ],
+    "word_family": [
+      "task (v)"
+    ],
+    "collocations": [
+      "do a task",
+      "complete a task",
+      "daily tasks"
+    ],
+    "synonyms": [
+      "job",
+      "duty"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have many task",
+        "correct": "I have many tasks",
+        "explain_vi": "Cần thêm 's' để chỉ số nhiều"
+      }
+    ],
+    "grammar_patterns": [
+      "adjective + tasks"
+    ]
+  },
+  {
+    "word": "tool",
+    "phonetic": "/tuːl/",
+    "meaning_vi": "dụng cụ",
+    "meaning_en": "an object used to do work",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "This tool is sharp.",
+        "vi": "Dụng cụ này sắc."
+      }
+    ],
+    "word_family": [
+      "toolbox (n)"
+    ],
+    "collocations": [
+      "use a tool",
+      "power tool",
+      "hand tool"
+    ],
+    "synonyms": [
+      "instrument"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "This tools",
+        "correct": "These tools",
+        "explain_vi": "Dùng 'these' với danh từ số nhiều"
+      }
+    ],
+    "grammar_patterns": [
+      "adjective + tool"
+    ]
+  },
+  {
+    "word": "machine",
+    "phonetic": "/məˈʃiːn/",
+    "meaning_vi": "máy móc",
+    "meaning_en": "a device that does work",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The machine is loud.",
+        "vi": "Cái máy ồn ào."
+      }
+    ],
+    "word_family": [
+      "machinery (n)"
+    ],
+    "collocations": [
+      "operate a machine",
+      "fix a machine",
+      "washing machine"
+    ],
+    "synonyms": [
+      "device"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Machine is loud",
+        "correct": "The machine is loud",
+        "explain_vi": "Cần mạo từ 'the'"
+      }
+    ],
+    "grammar_patterns": [
+      "the + machine"
+    ]
+  },
+  {
+    "word": "computer",
+    "phonetic": "/kəmˈpjuːtər/",
+    "meaning_vi": "máy tính",
+    "meaning_en": "an electronic device for work",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I use a computer at work.",
+        "vi": "Tôi sử dụng máy tính ở nơi làm việc."
+      }
+    ],
+    "word_family": [
+      "compute (v)",
+      "computerize (v)"
+    ],
+    "collocations": [
+      "use a computer",
+      "turn on the computer",
+      "computer screen"
+    ],
+    "synonyms": [
+      "PC",
+      "laptop"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I use computer",
+        "correct": "I use a computer",
+        "explain_vi": "Cần mạo từ 'a'"
+      }
+    ],
+    "grammar_patterns": [
+      "use + a + computer"
+    ]
+  },
+  {
+    "word": "phone",
+    "phonetic": "/foʊn/",
+    "meaning_vi": "điện thoại",
+    "meaning_en": "a device for calling",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I answer the phone.",
+        "vi": "Tôi nghe điện thoại."
+      }
+    ],
+    "word_family": [
+      "telephone (n)"
+    ],
+    "collocations": [
+      "answer the phone",
+      "make a phone call",
+      "phone number"
+    ],
+    "synonyms": [
+      "telephone"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I phone call",
+        "correct": "I make a phone call",
+        "explain_vi": "Dùng 'make a phone call'"
+      }
+    ],
+    "grammar_patterns": [
+      "the + phone"
+    ]
+  },
+  {
+    "word": "email",
+    "phonetic": "/ˈiːmeɪl/",
+    "meaning_vi": "thư điện tử",
+    "meaning_en": "a message sent electronically",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I send an email.",
+        "vi": "Tôi gửi một email."
+      }
+    ],
+    "word_family": [
+      "e-mail (n)"
+    ],
+    "collocations": [
+      "send an email",
+      "check email",
+      "reply to an email"
+    ],
+    "synonyms": [
+      "message"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I send email",
+        "correct": "I send an email",
+        "explain_vi": "Cần mạo từ 'an'"
+      }
+    ],
+    "grammar_patterns": [
+      "send + an + email"
+    ]
+  },
+  {
+    "word": "report",
+    "phonetic": "/rɪˈpɔːrt/",
+    "meaning_vi": "báo cáo",
+    "meaning_en": "a document with information",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "I write a report.",
+        "vi": "Tôi viết một báo cáo."
+      }
+    ],
+    "word_family": [
+      "report (v)",
+      "reporter (n)"
+    ],
+    "collocations": [
+      "write a report",
+      "submit a report",
+      "annual report"
+    ],
+    "synonyms": [
+      "document"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I report write",
+        "correct": "I write a report",
+        "explain_vi": "Đặt động từ trước tân ngữ"
+      }
+    ],
+    "grammar_patterns": [
+      "write + a + report"
+    ]
+  },
+  {
+    "word": "project",
+    "phonetic": "/ˈprɒdʒekt/",
+    "meaning_vi": "dự án",
+    "meaning_en": "a planned piece of work",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "This project is big.",
+        "vi": "Dự án này lớn."
+      }
+    ],
+    "word_family": [
+      "project (v)"
+    ],
+    "collocations": [
+      "work on a project",
+      "start a project",
+      "finish a project"
+    ],
+    "synonyms": [
+      "plan"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "This project big",
+        "correct": "This project is big",
+        "explain_vi": "Cần động từ 'is'"
+      }
+    ],
+    "grammar_patterns": [
+      "adjective + project"
+    ]
+  },
+  {
+    "word": "team",
+    "phonetic": "/tiːm/",
+    "meaning_vi": "đội nhóm",
+    "meaning_en": "a group of people working together",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Our team works hard.",
+        "vi": "Đội của chúng tôi làm việc chăm chỉ."
+      }
+    ],
+    "word_family": [
+      "teammate (n)"
+    ],
+    "collocations": [
+      "team member",
+      "team leader",
+      "work in a team"
+    ],
+    "synonyms": [
+      "group"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Team work hard",
+        "correct": "The team works hard",
+        "explain_vi": "Cần mạo từ và động từ chia số ít"
+      }
+    ],
+    "grammar_patterns": [
+      "the + team"
+    ]
+  },
+  {
+    "word": "bossy",
+    "phonetic": "/ˈbɒsi/",
+    "meaning_vi": "hách dịch",
+    "meaning_en": "telling others what to do too much",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "My boss is bossy.",
+        "vi": "Sếp của tôi rất hách dịch."
+      }
+    ],
+    "word_family": [
+      "boss (n)"
+    ],
+    "collocations": [
+      "bossy person",
+      "too bossy"
+    ],
+    "synonyms": [
+      "domineering"
+    ],
+    "antonyms": [
+      "easy-going"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "My bossy boss",
+        "correct": "My boss is bossy",
+        "explain_vi": "Phân biệt 'boss' (danh từ) và 'bossy' (tính từ)"
+      }
+    ],
+    "grammar_patterns": [
+      "be + bossy"
+    ]
+  },
+  {
+    "word": "busy",
+    "phonetic": "/ˈbɪzi/",
+    "meaning_vi": "bận rộn",
+    "meaning_en": "having a lot of work",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "I am busy today.",
+        "vi": "Hôm nay tôi bận."
+      }
+    ],
+    "word_family": [
+      "busyness (n)"
+    ],
+    "collocations": [
+      "busy day",
+      "busy with work",
+      "too busy"
+    ],
+    "synonyms": [
+      "occupied"
+    ],
+    "antonyms": [
+      "free"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I busy",
+        "correct": "I am busy",
+        "explain_vi": "Cần động từ 'am'"
+      }
+    ],
+    "grammar_patterns": [
+      "be + busy"
+    ]
+  },
+  {
+    "word": "hard",
+    "phonetic": "/hɑːrd/",
+    "meaning_vi": "chăm chỉ",
+    "meaning_en": "with a lot of effort",
+    "pos": "adverb",
+    "examples": [
+      {
+        "en": "She works hard.",
+        "vi": "Cô ấy làm việc chăm chỉ."
+      }
+    ],
+    "word_family": [
+      "hard (adj)",
+      "harden (v)"
+    ],
+    "collocations": [
+      "work hard",
+      "try hard"
+    ],
+    "synonyms": [
+      "diligently"
+    ],
+    "antonyms": [
+      "lazily"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "She works hardly",
+        "correct": "She works hard",
+        "explain_vi": "'Hardly' nghĩa là 'hầu như không'"
+      }
+    ],
+    "grammar_patterns": [
+      "verb + hard"
+    ]
+  },
+  {
+    "word": "lazy",
+    "phonetic": "/ˈleɪzi/",
+    "meaning_vi": "lười biếng",
+    "meaning_en": "not wanting to work",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "He is lazy.",
+        "vi": "Anh ấy lười."
+      }
+    ],
+    "word_family": [
+      "laziness (n)"
+    ],
+    "collocations": [
+      "lazy person",
+      "feel lazy",
+      "too lazy"
+    ],
+    "synonyms": [
+      "idle"
+    ],
+    "antonyms": [
+      "hardworking"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "He lazy",
+        "correct": "He is lazy",
+        "explain_vi": "Cần động từ 'is'"
+      }
+    ],
+    "grammar_patterns": [
+      "be + lazy"
+    ]
+  },
+  {
+    "word": "early",
+    "phonetic": "/ˈɜːrli/",
+    "meaning_vi": "sớm",
+    "meaning_en": "before the usual time",
+    "pos": "adverb",
+    "examples": [
+      {
+        "en": "I go to work early.",
+        "vi": "Tôi đi làm sớm."
+      }
+    ],
+    "word_family": [
+      "early (adj)"
+    ],
+    "collocations": [
+      "arrive early",
+      "wake up early",
+      "early morning"
+    ],
+    "synonyms": [
+      "ahead of time"
+    ],
+    "antonyms": [
+      "late"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I go early to work",
+        "correct": "I go to work early",
+        "explain_vi": "Đặt trạng từ 'early' ở cuối câu"
+      }
+    ],
+    "grammar_patterns": [
+      "verb + early"
+    ]
+  }
+]

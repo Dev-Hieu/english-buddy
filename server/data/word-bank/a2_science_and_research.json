@@ -1,0 +1,2497 @@
+[
+  {
+    "word": "experiment",
+    "phonetic": "/ɪkˈsper.ɪ.mənt/",
+    "meaning_vi": "thí nghiệm",
+    "meaning_en": "a scientific test to discover something",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We did an experiment in chemistry class.",
+        "vi": "Chúng tôi đã làm một thí nghiệm trong lớp hóa học."
+      },
+      {
+        "en": "The experiment failed.",
+        "vi": "Thí nghiệm đã thất bại."
+      }
+    ],
+    "word_family": [
+      "experiment (v)",
+      "experimental (adj)",
+      "experimentation (n)"
+    ],
+    "collocations": [
+      "do an experiment",
+      "conduct an experiment",
+      "design an experiment"
+    ],
+    "synonyms": [
+      "test",
+      "trial"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I did experiment.",
+        "correct": "I did an experiment.",
+        "explain_vi": "Cần mạo từ 'an' trước 'experiment'."
+      }
+    ],
+    "grammar_patterns": [
+      "do/conduct/carry out + an experiment"
+    ]
+  },
+  {
+    "word": "research",
+    "phonetic": "/rɪˈsɜːrtʃ/",
+    "meaning_vi": "nghiên cứu",
+    "meaning_en": "the study of a subject to find new information",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "She is doing research on climate change.",
+        "vi": "Cô ấy đang nghiên cứu về biến đổi khí hậu."
+      },
+      {
+        "en": "We need more research.",
+        "vi": "Chúng ta cần nghiên cứu thêm."
+      }
+    ],
+    "word_family": [
+      "research (v)",
+      "researcher (n)"
+    ],
+    "collocations": [
+      "do research",
+      "conduct research",
+      "research project"
+    ],
+    "synonyms": [
+      "study",
+      "investigation"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I did a research.",
+        "correct": "I did research.",
+        "explain_vi": "'Research' là danh từ không đếm được, không dùng 'a'."
+      }
+    ],
+    "grammar_patterns": [
+      "do/conduct + research",
+      "research + on/into"
+    ]
+  },
+  {
+    "word": "laboratory",
+    "phonetic": "/ləˈbɒr.ə.tər.i/",
+    "meaning_vi": "phòng thí nghiệm",
+    "meaning_en": "a room with equipment for scientific work",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The students are in the laboratory.",
+        "vi": "Các học sinh đang ở trong phòng thí nghiệm."
+      },
+      {
+        "en": "We have a new laboratory.",
+        "vi": "Chúng tôi có một phòng thí nghiệm mới."
+      }
+    ],
+    "word_family": [
+      "lab (n, abbreviation)"
+    ],
+    "collocations": [
+      "go to the laboratory",
+      "work in a laboratory",
+      "laboratory equipment"
+    ],
+    "synonyms": [
+      "lab"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I go to laboratory.",
+        "correct": "I go to the laboratory.",
+        "explain_vi": "Cần mạo từ 'the' trước 'laboratory'."
+      }
+    ],
+    "grammar_patterns": [
+      "in the laboratory",
+      "to the laboratory"
+    ]
+  },
+  {
+    "word": "scientist",
+    "phonetic": "/ˈsaɪən.tɪst/",
+    "meaning_vi": "nhà khoa học",
+    "meaning_en": "a person who studies science",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Marie Curie was a famous scientist.",
+        "vi": "Marie Curie là một nhà khoa học nổi tiếng."
+      },
+      {
+        "en": "Many scientists work in labs.",
+        "vi": "Nhiều nhà khoa học làm việc trong phòng thí nghiệm."
+      }
+    ],
+    "word_family": [
+      "science (n)",
+      "scientific (adj)"
+    ],
+    "collocations": [
+      "become a scientist",
+      "famous scientist",
+      "research scientist"
+    ],
+    "synonyms": [
+      "researcher"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "He is science.",
+        "correct": "He is a scientist.",
+        "explain_vi": "Cần dùng 'scientist' để chỉ người, không phải 'science'."
+      }
+    ],
+    "grammar_patterns": [
+      "a scientist",
+      "the scientist"
+    ]
+  },
+  {
+    "word": "discover",
+    "phonetic": "/dɪˈskʌv.ər/",
+    "meaning_vi": "khám phá",
+    "meaning_en": "to find something new or unknown",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "Scientists discovered a new planet.",
+        "vi": "Các nhà khoa học đã khám phá ra một hành tinh mới."
+      },
+      {
+        "en": "I discovered a good restaurant.",
+        "vi": "Tôi đã khám phá ra một nhà hàng ngon."
+      }
+    ],
+    "word_family": [
+      "discovery (n)",
+      "discoverer (n)"
+    ],
+    "collocations": [
+      "discover something",
+      "discover a cure",
+      "discover a planet"
+    ],
+    "synonyms": [
+      "find",
+      "uncover"
+    ],
+    "antonyms": [
+      "hide",
+      "conceal"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I discovered out.",
+        "correct": "I discovered.",
+        "explain_vi": "Không cần 'out' sau 'discover'."
+      }
+    ],
+    "grammar_patterns": [
+      "discover + noun",
+      "discover that + clause"
+    ]
+  },
+  {
+    "word": "invent",
+    "phonetic": "/ɪnˈvent/",
+    "meaning_vi": "phát minh",
+    "meaning_en": "to create something that did not exist before",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "Edison invented the light bulb.",
+        "vi": "Edison đã phát minh ra bóng đèn."
+      },
+      {
+        "en": "Who invented the telephone?",
+        "vi": "Ai đã phát minh ra điện thoại?"
+      }
+    ],
+    "word_family": [
+      "invention (n)",
+      "inventor (n)"
+    ],
+    "collocations": [
+      "invent something",
+      "invent a machine",
+      "invent a story"
+    ],
+    "synonyms": [
+      "create",
+      "devise"
+    ],
+    "antonyms": [
+      "copy",
+      "imitate"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "He invented a new kind of car.",
+        "correct": "He invented a new kind of car.",
+        "explain_vi": "Đúng, nhưng lưu ý 'invent' là ngoại động từ."
+      }
+    ],
+    "grammar_patterns": [
+      "invent + noun"
+    ]
+  },
+  {
+    "word": "observation",
+    "phonetic": "/ˌɒb.zərˈveɪ.ʃən/",
+    "meaning_vi": "sự quan sát",
+    "meaning_en": "the act of watching carefully",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Observation is important in science.",
+        "vi": "Quan sát rất quan trọng trong khoa học."
+      },
+      {
+        "en": "He made an observation about the experiment.",
+        "vi": "Anh ấy đã đưa ra một nhận xét về thí nghiệm."
+      }
+    ],
+    "word_family": [
+      "observe (v)",
+      "observer (n)",
+      "observational (adj)"
+    ],
+    "collocations": [
+      "make an observation",
+      "scientific observation",
+      "under observation"
+    ],
+    "synonyms": [
+      "watching",
+      "examination"
+    ],
+    "antonyms": [
+      "ignorance"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I did observation.",
+        "correct": "I made an observation.",
+        "explain_vi": "Dùng 'make' với 'observation'."
+      }
+    ],
+    "grammar_patterns": [
+      "make an observation",
+      "observation of"
+    ]
+  },
+  {
+    "word": "data",
+    "phonetic": "/ˈdeɪ.tə/",
+    "meaning_vi": "dữ liệu",
+    "meaning_en": "facts and information collected for analysis",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We collected data from the experiment.",
+        "vi": "Chúng tôi đã thu thập dữ liệu từ thí nghiệm."
+      },
+      {
+        "en": "The data show a clear trend.",
+        "vi": "Dữ liệu cho thấy một xu hướng rõ ràng."
+      }
+    ],
+    "word_family": [
+      "datum (singular, rare)"
+    ],
+    "collocations": [
+      "collect data",
+      "analyze data",
+      "data set"
+    ],
+    "synonyms": [
+      "information",
+      "facts"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "The data is clear.",
+        "correct": "The data are clear.",
+        "explain_vi": "'Data' thường được dùng với đ��ng từ số nhiều trong văn phong trang trọng."
+      }
+    ],
+    "grammar_patterns": [
+      "data + plural verb (formal)",
+      "data + singular verb (informal)"
+    ]
+  },
+  {
+    "word": "analyze",
+    "phonetic": "/ˈæn.əl.aɪz/",
+    "meaning_vi": "phân tích",
+    "meaning_en": "to examine something in detail",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "We need to analyze the results.",
+        "vi": "Chúng ta cần phân tích kết quả."
+      },
+      {
+        "en": "The data was analyzed carefully.",
+        "vi": "Dữ liệu đã được phân tích cẩn thận."
+      }
+    ],
+    "word_family": [
+      "analysis (n)",
+      "analyst (n)",
+      "analytical (adj)"
+    ],
+    "collocations": [
+      "analyze data",
+      "analyze a problem",
+      "analyze results"
+    ],
+    "synonyms": [
+      "examine",
+      "study"
+    ],
+    "antonyms": [
+      "ignore",
+      "overlook"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I analysis the data.",
+        "correct": "I analyze the data.",
+        "explain_vi": "'Analyze' là động từ, 'analysis' là danh từ."
+      }
+    ],
+    "grammar_patterns": [
+      "analyze + noun"
+    ]
+  },
+  {
+    "word": "result",
+    "phonetic": "/rɪˈzʌlt/",
+    "meaning_vi": "kết quả",
+    "meaning_en": "the outcome of an experiment or study",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The results of the test were positive.",
+        "vi": "Kết quả xét nghiệm dương tính."
+      },
+      {
+        "en": "We are waiting for the results.",
+        "vi": "Chúng tôi đang chờ kết quả."
+      }
+    ],
+    "word_family": [
+      "result (v)",
+      "resulting (adj)"
+    ],
+    "collocations": [
+      "get a result",
+      "announce results",
+      "result of"
+    ],
+    "synonyms": [
+      "outcome",
+      "conclusion"
+    ],
+    "antonyms": [
+      "cause"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "The result is success.",
+        "correct": "The result is a success.",
+        "explain_vi": "Cần mạo từ 'a' trước 'success'."
+      }
+    ],
+    "grammar_patterns": [
+      "result + of",
+      "result + from"
+    ]
+  },
+  {
+    "word": "theory",
+    "phonetic": "/ˈθɪə.ri/",
+    "meaning_vi": "lý thuyết",
+    "meaning_en": "a set of ideas that explains something",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Einstein's theory of relativity is famous.",
+        "vi": "Thuyết tương đối của Einstein nổi tiếng."
+      },
+      {
+        "en": "We studied the theory in class.",
+        "vi": "Chúng tôi đã học lý thuyết trong lớp."
+      }
+    ],
+    "word_family": [
+      "theoretical (adj)",
+      "theorize (v)"
+    ],
+    "collocations": [
+      "theory of",
+      "propose a theory",
+      "test a theory"
+    ],
+    "synonyms": [
+      "hypothesis",
+      "idea"
+    ],
+    "antonyms": [
+      "practice"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I have a theory that...",
+        "correct": "I have a theory that...",
+        "explain_vi": "Đúng, nhưng lưu ý 'theory' có thể đếm được."
+      }
+    ],
+    "grammar_patterns": [
+      "theory + of",
+      "theory + that"
+    ]
+  },
+  {
+    "word": "prove",
+    "phonetic": "/pruːv/",
+    "meaning_vi": "chứng minh",
+    "meaning_en": "to show that something is true",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "The experiment proved the theory.",
+        "vi": "Thí nghiệm đã chứng minh lý thuyết."
+      },
+      {
+        "en": "Can you prove it?",
+        "vi": "Bạn có thể chứng minh điều đó không?"
+      }
+    ],
+    "word_family": [
+      "proof (n)",
+      "proven (adj)"
+    ],
+    "collocations": [
+      "prove something",
+      "prove a point",
+      "prove wrong"
+    ],
+    "synonyms": [
+      "demonstrate",
+      "confirm"
+    ],
+    "antonyms": [
+      "disprove",
+      "refute"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I proved that he is right.",
+        "correct": "I proved that he was right.",
+        "explain_vi": "Lưu ý thì của động từ trong câu gián tiếp."
+      }
+    ],
+    "grammar_patterns": [
+      "prove + noun",
+      "prove that + clause"
+    ]
+  },
+  {
+    "word": "evidence",
+    "phonetic": "/ˈev.ɪ.dəns/",
+    "meaning_vi": "bằng chứng",
+    "meaning_en": "facts that show something is true",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "There is evidence of life on Mars.",
+        "vi": "Có bằng chứng về sự sống trên sao Hỏa."
+      },
+      {
+        "en": "The evidence supports the theory.",
+        "vi": "Bằng chứng ủng hộ lý thuyết."
+      }
+    ],
+    "word_family": [
+      "evident (adj)",
+      "evidently (adv)"
+    ],
+    "collocations": [
+      "provide evidence",
+      "find evidence",
+      "evidence of"
+    ],
+    "synonyms": [
+      "proof",
+      "confirmation"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I have an evidence.",
+        "correct": "I have evidence.",
+        "explain_vi": "'Evidence' là danh từ không đếm được, không dùng 'an'."
+      }
+    ],
+    "grammar_patterns": [
+      "evidence + of",
+      "evidence + that"
+    ]
+  },
+  {
+    "word": "hypothesis",
+    "phonetic": "/haɪˈpɒθ.ə.sɪs/",
+    "meaning_vi": "giả thuyết",
+    "meaning_en": "an idea that is tested in an experiment",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Our hypothesis was correct.",
+        "vi": "Giả thuyết của chúng tôi đã đúng."
+      },
+      {
+        "en": "We need to test this hypothesis.",
+        "vi": "Chúng ta cần kiểm tra giả thuyết này."
+      }
+    ],
+    "word_family": [
+      "hypotheses (plural)",
+      "hypothetical (adj)",
+      "hypothesize (v)"
+    ],
+    "collocations": [
+      "form a hypothesis",
+      "test a hypothesis",
+      "support a hypothesis"
+    ],
+    "synonyms": [
+      "theory",
+      "supposition"
+    ],
+    "antonyms": [
+      "fact",
+      "certainty"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I have a hypothesis.",
+        "correct": "I have a hypothesis.",
+        "explain_vi": "Đúng, nhưng số nhiều là 'hypotheses'."
+      }
+    ],
+    "grammar_patterns": [
+      "hypothesis + that",
+      "hypothesis + about"
+    ]
+  },
+  {
+    "word": "conclusion",
+    "phonetic": "/kənˈkluː.ʒən/",
+    "meaning_vi": "kết luận",
+    "meaning_en": "the final decision or opinion after research",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The conclusion of the study was surprising.",
+        "vi": "Kết luận của nghiên cứu thật bất ngờ."
+      },
+      {
+        "en": "We came to a conclusion.",
+        "vi": "Chúng tôi đã đi đến một kết luận."
+      }
+    ],
+    "word_family": [
+      "conclude (v)",
+      "conclusive (adj)"
+    ],
+    "collocations": [
+      "draw a conclusion",
+      "reach a conclusion",
+      "come to a conclusion"
+    ],
+    "synonyms": [
+      "finding",
+      "inference"
+    ],
+    "antonyms": [
+      "introduction",
+      "start"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I conclusion that...",
+        "correct": "I conclude that...",
+        "explain_vi": "'Conclusion' là danh từ, động từ là 'conclude'."
+      }
+    ],
+    "grammar_patterns": [
+      "conclusion + that",
+      "in conclusion"
+    ]
+  },
+  {
+    "word": "microscope",
+    "phonetic": "/ˈmaɪ.krə.skəʊp/",
+    "meaning_vi": "kính hiển vi",
+    "meaning_en": "an instrument that makes small things look bigger",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We looked at cells under a microscope.",
+        "vi": "Chúng tôi đã nhìn tế bào dưới kính hiển vi."
+      },
+      {
+        "en": "The microscope is broken.",
+        "vi": "Kính hiển vi bị hỏng."
+      }
+    ],
+    "word_family": [
+      "microscopic (adj)"
+    ],
+    "collocations": [
+      "under a microscope",
+      "use a microscope",
+      "look through a microscope"
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "telescope"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I look microscope.",
+        "correct": "I look through a microscope.",
+        "explain_vi": "Cần giới từ 'through'."
+      }
+    ],
+    "grammar_patterns": [
+      "under a microscope",
+      "through a microscope"
+    ]
+  },
+  {
+    "word": "telescope",
+    "phonetic": "/ˈtel.ɪ.skəʊp/",
+    "meaning_vi": "kính thiên văn",
+    "meaning_en": "an instrument that makes distant objects look bigger",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "He looked at the stars through a telescope.",
+        "vi": "Anh ấy nhìn các ngôi sao qua kính thiên văn."
+      },
+      {
+        "en": "The telescope was invented a long time ago.",
+        "vi": "Kính thiên văn được phát minh từ lâu."
+      }
+    ],
+    "word_family": [
+      "telescopic (adj)"
+    ],
+    "collocations": [
+      "look through a telescope",
+      "use a telescope",
+      "telescope lens"
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "microscope"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I see telescope.",
+        "correct": "I see through a telescope.",
+        "explain_vi": "Cần giới từ 'through'."
+      }
+    ],
+    "grammar_patterns": [
+      "through a telescope"
+    ]
+  },
+  {
+    "word": "chemical",
+    "phonetic": "/ˈkem.ɪ.kəl/",
+    "meaning_vi": "hóa chất",
+    "meaning_en": "a substance used in chemistry",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We mixed two chemicals in the lab.",
+        "vi": "Chúng tôi đã trộn hai hóa chất trong phòng thí nghiệm."
+      },
+      {
+        "en": "Some chemicals are dangerous.",
+        "vi": "Một số hóa chất rất nguy hiểm."
+      }
+    ],
+    "word_family": [
+      "chemistry (n)",
+      "chemist (n)",
+      "chemical (adj)"
+    ],
+    "collocations": [
+      "chemical reaction",
+      "chemical compound",
+      "chemical substance"
+    ],
+    "synonyms": [
+      "substance"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I study chemical.",
+        "correct": "I study chemistry.",
+        "explain_vi": "'Chemical' là hóa chất, 'chemistry' là môn hóa học."
+      }
+    ],
+    "grammar_patterns": [
+      "a chemical",
+      "chemicals"
+    ]
+  },
+  {
+    "word": "biology",
+    "phonetic": "/baɪˈɒl.ə.dʒi/",
+    "meaning_vi": "sinh học",
+    "meaning_en": "the study of living things",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Biology is my favorite subject.",
+        "vi": "Sinh học là môn yêu thích của tôi."
+      },
+      {
+        "en": "She studies biology at university.",
+        "vi": "Cô ấy học sinh học ở trường đại học."
+      }
+    ],
+    "word_family": [
+      "biological (adj)",
+      "biologist (n)"
+    ],
+    "collocations": [
+      "study biology",
+      "biology class",
+      "biology textbook"
+    ],
+    "synonyms": [
+      "life science"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I am biology.",
+        "correct": "I study biology.",
+        "explain_vi": "Cần động từ 'study'."
+      }
+    ],
+    "grammar_patterns": [
+      "study biology",
+      "in biology"
+    ]
+  },
+  {
+    "word": "physics",
+    "phonetic": "/ˈfɪz.ɪks/",
+    "meaning_vi": "vật lý",
+    "meaning_en": "the study of matter, energy, and forces",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Physics explains how things move.",
+        "vi": "Vật lý giải thích cách mọi vật chuyển động."
+      },
+      {
+        "en": "We have a physics test tomorrow.",
+        "vi": "Chúng tôi có bài kiểm tra vật lý vào ngày mai."
+      }
+    ],
+    "word_family": [
+      "physical (adj)",
+      "physicist (n)"
+    ],
+    "collocations": [
+      "study physics",
+      "physics experiment",
+      "physics teacher"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I am physics.",
+        "correct": "I study physics.",
+        "explain_vi": "Cần động từ 'study'."
+      }
+    ],
+    "grammar_patterns": [
+      "study physics",
+      "in physics"
+    ]
+  },
+  {
+    "word": "sample",
+    "phonetic": "/ˈsæm.pəl/",
+    "meaning_vi": "mẫu vật",
+    "meaning_en": "a small amount of something that shows what the rest is like",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The scientist took a sample of water.",
+        "vi": "Nhà khoa học đã lấy một mẫu nước."
+      }
+    ],
+    "word_family": [
+      "sampling (n)",
+      "sample (v)"
+    ],
+    "collocations": [
+      "take a sample",
+      "collect a sample",
+      "blood sample"
+    ],
+    "synonyms": [
+      "specimen",
+      "example"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I need to sample the water.",
+        "correct": "I need to take a sample of the water.",
+        "explain_vi": "Khi là danh từ, dùng 'take a sample' thay vì dùng động từ 'sample'."
+      }
+    ],
+    "grammar_patterns": [
+      "a sample of + noun"
+    ]
+  },
+  {
+    "word": "measure",
+    "phonetic": "/ˈmeʒ.ər/",
+    "meaning_vi": "đo lường",
+    "meaning_en": "to find the size, amount, or degree of something",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "We measure the temperature every hour.",
+        "vi": "Chúng tôi đo nhiệt độ mỗi giờ."
+      }
+    ],
+    "word_family": [
+      "measurement (n)",
+      "measurable (adj)"
+    ],
+    "collocations": [
+      "measure temperature",
+      "measure length",
+      "measure accurately"
+    ],
+    "synonyms": [
+      "gauge",
+      "calculate"
+    ],
+    "antonyms": [
+      "estimate"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I measured the weight.",
+        "correct": "I measured the weight.",
+        "explain_vi": "Câu này đúng, nhưng lưu ý không dùng 'measure' với 'weigh' (cân)."
+      }
+    ],
+    "grammar_patterns": [
+      "measure + noun"
+    ]
+  },
+  {
+    "word": "process",
+    "phonetic": "/ˈprɑː.ses/",
+    "meaning_vi": "quá trình, quy trình",
+    "meaning_en": "a series of actions or steps to achieve a result",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The process of photosynthesis takes time.",
+        "vi": "Quá trình quang hợp cần thời gian."
+      }
+    ],
+    "word_family": [
+      "process (v)",
+      "processing (n)"
+    ],
+    "collocations": [
+      "learning process",
+      "chemical process",
+      "follow a process"
+    ],
+    "synonyms": [
+      "procedure",
+      "method"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "The process is slow.",
+        "correct": "The process is slow.",
+        "explain_vi": "Câu này đúng, nhưng nhớ 'process' phát âm /prɑː.ses/ không phải /prəʊ.ses/."
+      }
+    ],
+    "grammar_patterns": [
+      "the process of + noun/gerund"
+    ]
+  },
+  {
+    "word": "method",
+    "phonetic": "/ˈmeθ.əd/",
+    "meaning_vi": "phương pháp",
+    "meaning_en": "a way of doing something",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "This method is more effective.",
+        "vi": "Phương pháp này hiệu quả hơn."
+      }
+    ],
+    "word_family": [
+      "methodical (adj)",
+      "methodology (n)"
+    ],
+    "collocations": [
+      "scientific method",
+      "teaching method",
+      "use a method"
+    ],
+    "synonyms": [
+      "technique",
+      "approach"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "We need a method to solve.",
+        "correct": "We need a method to solve it.",
+        "explain_vi": "Cần tân ngữ sau động từ 'solve'."
+      }
+    ],
+    "grammar_patterns": [
+      "method of + noun/gerund",
+      "method for + noun/gerund"
+    ]
+  },
+  {
+    "word": "substance",
+    "phonetic": "/ˈsʌb.stəns/",
+    "meaning_vi": "chất",
+    "meaning_en": "a type of material with particular properties",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "This substance is toxic.",
+        "vi": "Chất này độc hại."
+      }
+    ],
+    "word_family": [
+      "substantial (adj)",
+      "substantially (adv)"
+    ],
+    "collocations": [
+      "chemical substance",
+      "dangerous substance",
+      "substance abuse"
+    ],
+    "synonyms": [
+      "material",
+      "matter"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Substance is liquid.",
+        "correct": "The substance is a liquid.",
+        "explain_vi": "Cần mạo từ 'a' trước 'liquid'."
+      }
+    ],
+    "grammar_patterns": [
+      "substance + verb",
+      "a substance"
+    ]
+  },
+  {
+    "word": "observe",
+    "phonetic": "/əbˈzɜːrv/",
+    "meaning_vi": "quan sát",
+    "meaning_en": "to watch carefully",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "We observe the stars at night.",
+        "vi": "Chúng tôi quan sát các ngôi sao vào ban đêm."
+      }
+    ],
+    "word_family": [
+      "observation (n)",
+      "observer (n)"
+    ],
+    "collocations": [
+      "observe behavior",
+      "observe carefully",
+      "observe changes"
+    ],
+    "synonyms": [
+      "watch",
+      "monitor"
+    ],
+    "antonyms": [
+      "ignore"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I observed the experiment.",
+        "correct": "I observed the experiment.",
+        "explain_vi": "Câu này đúng, nhưng tránh nhầm lẫn với 'serve' (phục vụ)."
+      }
+    ],
+    "grammar_patterns": [
+      "observe + noun",
+      "observe + that clause"
+    ]
+  },
+  {
+    "word": "record",
+    "phonetic": "/ˈrek.ɔːrd/",
+    "meaning_vi": "ghi chép, ghi lại",
+    "meaning_en": "to write down or store information",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "Please record the data.",
+        "vi": "Vui lòng ghi lại dữ liệu."
+      }
+    ],
+    "word_family": [
+      "record (n)",
+      "recording (n)"
+    ],
+    "collocations": [
+      "record results",
+      "record temperature",
+      "record video"
+    ],
+    "synonyms": [
+      "document",
+      "log"
+    ],
+    "antonyms": [
+      "delete"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I recorded the meeting.",
+        "correct": "I recorded the meeting.",
+        "explain_vi": "Nhấn âm khác nhau: động từ /rɪˈkɔːrd/, danh từ /ˈrek.ɔːrd/."
+      }
+    ],
+    "grammar_patterns": [
+      "record + noun"
+    ]
+  },
+  {
+    "word": "compare",
+    "phonetic": "/kəmˈper/",
+    "meaning_vi": "so sánh",
+    "meaning_en": "to examine similarities and differences",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "Compare the two samples.",
+        "vi": "So sánh hai mẫu vật."
+      }
+    ],
+    "word_family": [
+      "comparison (n)",
+      "comparative (adj)"
+    ],
+    "collocations": [
+      "compare results",
+      "compare with",
+      "compare to"
+    ],
+    "synonyms": [
+      "contrast",
+      "match"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Compare this and that.",
+        "correct": "Compare this with that.",
+        "explain_vi": "Dùng 'with' thay vì 'and' khi so sánh."
+      }
+    ],
+    "grammar_patterns": [
+      "compare + noun + with/to + noun"
+    ]
+  },
+  {
+    "word": "control",
+    "phonetic": "/kənˈtroʊl/",
+    "meaning_vi": "kiểm soát, đối chứng",
+    "meaning_en": "to have power over something; a standard for comparison",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We need a control group.",
+        "vi": "Chúng ta cần một nhóm đối chứng."
+      }
+    ],
+    "word_family": [
+      "control (v)",
+      "controlled (adj)"
+    ],
+    "collocations": [
+      "control group",
+      "under control",
+      "quality control"
+    ],
+    "synonyms": [
+      "check",
+      "regulation"
+    ],
+    "antonyms": [
+      "chaos"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "The control is important.",
+        "correct": "The control is important.",
+        "explain_vi": "Trong ngữ cảnh thí nghiệm, 'control' là danh từ, không phải động từ."
+      }
+    ],
+    "grammar_patterns": [
+      "control + noun",
+      "a control"
+    ]
+  },
+  {
+    "word": "variable",
+    "phonetic": "/ˈver.i.ə.bəl/",
+    "meaning_vi": "biến số",
+    "meaning_en": "something that can change in an experiment",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Temperature is a variable.",
+        "vi": "Nhiệt độ là một biến số."
+      }
+    ],
+    "word_family": [
+      "vary (v)",
+      "variation (n)"
+    ],
+    "collocations": [
+      "independent variable",
+      "dependent variable",
+      "control variable"
+    ],
+    "synonyms": [
+      "factor",
+      "element"
+    ],
+    "antonyms": [
+      "constant"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "The variable is change.",
+        "correct": "The variable changes.",
+        "explain_vi": "Cần chia động từ phù hợp."
+      }
+    ],
+    "grammar_patterns": [
+      "a variable",
+      "variable + verb"
+    ]
+  },
+  {
+    "word": "laboratory",
+    "phonetic": "/ˈlæb.rə.tɔːr.i/",
+    "meaning_vi": "phòng thí nghiệm",
+    "meaning_en": "a room for scientific experiments",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The laboratory is on the second floor.",
+        "vi": "Phòng thí nghiệm ở tầng hai."
+      }
+    ],
+    "word_family": [
+      "lab (abbreviation)"
+    ],
+    "collocations": [
+      "laboratory equipment",
+      "laboratory test",
+      "laboratory assistant"
+    ],
+    "synonyms": [
+      "lab",
+      "research facility"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "I work in laboratory.",
+        "correct": "I work in a laboratory.",
+        "explain_vi": "Cần mạo từ 'a'."
+      }
+    ],
+    "grammar_patterns": [
+      "in the laboratory",
+      "a laboratory"
+    ]
+  },
+  {
+    "word": "scientist",
+    "phonetic": "/ˈsaɪ.ən.tɪst/",
+    "meaning_vi": "nhà khoa học",
+    "meaning_en": "a person who does scientific research",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The scientist discovered a new planet.",
+        "vi": "Nhà khoa học đã khám phá ra một hành tinh mới."
+      }
+    ],
+    "word_family": [
+      "science (n)",
+      "scientific (adj)"
+    ],
+    "collocations": [
+      "research scientist",
+      "data scientist",
+      "scientist studies"
+    ],
+    "synonyms": [
+      "researcher",
+      "scholar"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "He is a science.",
+        "correct": "He is a scientist.",
+        "explain_vi": "Nhầm lẫn giữa danh từ chỉ người và lĩnh vực."
+      }
+    ],
+    "grammar_patterns": [
+      "a scientist",
+      "scientist + verb"
+    ]
+  },
+  {
+    "word": "discover",
+    "phonetic": "/dɪˈskʌv.ər/",
+    "meaning_vi": "khám phá",
+    "meaning_en": "to find something for the first time",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "They discovered a new species.",
+        "vi": "Họ đã khám phá ra một loài mới."
+      }
+    ],
+    "word_family": [
+      "discovery (n)",
+      "discoverer (n)"
+    ],
+    "collocations": [
+      "discover a cure",
+      "discover new information",
+      "discover the truth"
+    ],
+    "synonyms": [
+      "find",
+      "uncover"
+    ],
+    "antonyms": [
+      "lose",
+      "hide"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I discovered about it.",
+        "correct": "I discovered it.",
+        "explain_vi": "Không dùng 'about' sau 'discover'."
+      }
+    ],
+    "grammar_patterns": [
+      "discover + noun",
+      "discover that clause"
+    ]
+  },
+  {
+    "word": "invent",
+    "phonetic": "/ɪnˈvent/",
+    "meaning_vi": "phát minh",
+    "meaning_en": "to create something new",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "Who invented the light bulb?",
+        "vi": "Ai đã phát minh ra bóng đèn?"
+      }
+    ],
+    "word_family": [
+      "invention (n)",
+      "inventor (n)"
+    ],
+    "collocations": [
+      "invent a device",
+      "invent a story",
+      "invent technology"
+    ],
+    "synonyms": [
+      "create",
+      "devise"
+    ],
+    "antonyms": [
+      "copy",
+      "imitate"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "He invented a new machine.",
+        "correct": "He invented a new machine.",
+        "explain_vi": "Đúng, nhưng lưu ý không nhầm với 'discover'."
+      }
+    ],
+    "grammar_patterns": [
+      "invent + noun"
+    ]
+  },
+  {
+    "word": "observation",
+    "phonetic": "/ˌɑːb.zərˈveɪ.ʃən/",
+    "meaning_vi": "sự quan sát",
+    "meaning_en": "the act of watching carefully",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Make an observation of the reaction.",
+        "vi": "Thực hiện một quan sát về phản ứng."
+      }
+    ],
+    "word_family": [
+      "observe (v)",
+      "observational (adj)"
+    ],
+    "collocations": [
+      "scientific observation",
+      "under observation",
+      "observation skills"
+    ],
+    "synonyms": [
+      "monitoring",
+      "scrutiny"
+    ],
+    "antonyms": [
+      "neglect"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I made observation.",
+        "correct": "I made an observation.",
+        "explain_vi": "Cần mạo từ 'an'."
+      }
+    ],
+    "grammar_patterns": [
+      "an observation",
+      "observation of + noun"
+    ]
+  },
+  {
+    "word": "data",
+    "phonetic": "/ˈdeɪ.tə/",
+    "meaning_vi": "dữ liệu",
+    "meaning_en": "information collected for analysis",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The data shows a trend.",
+        "vi": "Dữ liệu cho thấy một xu hướng."
+      }
+    ],
+    "word_family": [
+      "database (n)",
+      "data set (n)"
+    ],
+    "collocations": [
+      "collect data",
+      "analyze data",
+      "data analysis"
+    ],
+    "synonyms": [
+      "information",
+      "figures"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "The data is clear.",
+        "correct": "The data are clear.",
+        "explain_vi": "Trong tiếng Anh học thuật, 'data' thường được coi là số nhiều."
+      }
+    ],
+    "grammar_patterns": [
+      "data + verb (plural or singular)"
+    ]
+  },
+  {
+    "word": "analyze",
+    "phonetic": "/ˈæn.əl.aɪz/",
+    "meaning_vi": "phân tích",
+    "meaning_en": "to examine something in detail",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "We need to analyze the results.",
+        "vi": "Chúng ta cần phân tích kết quả."
+      }
+    ],
+    "word_family": [
+      "analysis (n)",
+      "analyst (n)"
+    ],
+    "collocations": [
+      "analyze data",
+      "analyze a problem",
+      "analyze carefully"
+    ],
+    "synonyms": [
+      "examine",
+      "study"
+    ],
+    "antonyms": [
+      "synthesize"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "We analysis the data.",
+        "correct": "We analyze the data.",
+        "explain_vi": "Nhầm lẫn giữa danh từ 'analysis' và động từ 'analyze'."
+      }
+    ],
+    "grammar_patterns": [
+      "analyze + noun"
+    ]
+  },
+  {
+    "word": "result",
+    "phonetic": "/rɪˈzʌlt/",
+    "meaning_vi": "kết quả",
+    "meaning_en": "the outcome of an experiment",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The result was positive.",
+        "vi": "Kết quả là dương tính."
+      }
+    ],
+    "word_family": [
+      "result (v)",
+      "resulting (adj)"
+    ],
+    "collocations": [
+      "test result",
+      "final result",
+      "result from"
+    ],
+    "synonyms": [
+      "outcome",
+      "conclusion"
+    ],
+    "antonyms": [
+      "cause"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "The result are good.",
+        "correct": "The results are good.",
+        "explain_vi": "Cần chia số nhiều nếu có nhiều kết quả."
+      }
+    ],
+    "grammar_patterns": [
+      "a result",
+      "result of + noun"
+    ]
+  },
+  {
+    "word": "theory",
+    "phonetic": "/ˈθɪr.i/",
+    "meaning_vi": "lý thuyết",
+    "meaning_en": "a set of ideas to explain something",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Einstein's theory of relativity.",
+        "vi": "Thuyết tương đối của Einstein."
+      }
+    ],
+    "word_family": [
+      "theoretical (adj)",
+      "theorize (v)"
+    ],
+    "collocations": [
+      "scientific theory",
+      "theory of evolution",
+      "prove a theory"
+    ],
+    "synonyms": [
+      "hypothesis",
+      "principle"
+    ],
+    "antonyms": [
+      "practice"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "This is only theory.",
+        "correct": "This is only a theory.",
+        "explain_vi": "Cần mạo từ 'a'."
+      }
+    ],
+    "grammar_patterns": [
+      "a theory",
+      "theory of + noun"
+    ]
+  },
+  {
+    "word": "prove",
+    "phonetic": "/pruːv/",
+    "meaning_vi": "chứng minh",
+    "meaning_en": "to show that something is true",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "The experiment proved the hypothesis.",
+        "vi": "Thí nghiệm đã chứng minh giả thuyết."
+      }
+    ],
+    "word_family": [
+      "proof (n)",
+      "proven (adj)"
+    ],
+    "collocations": [
+      "prove a point",
+      "prove someone wrong",
+      "prove that"
+    ],
+    "synonyms": [
+      "demonstrate",
+      "verify"
+    ],
+    "antonyms": [
+      "disprove",
+      "refute"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "It prove that.",
+        "correct": "It proves that.",
+        "explain_vi": "Chia động từ theo chủ ngữ số ít."
+      }
+    ],
+    "grammar_patterns": [
+      "prove + noun",
+      "prove that clause"
+    ]
+  },
+  {
+    "word": "generate",
+    "phonetic": "/ˈdʒen.ə.reɪt/",
+    "meaning_vi": "tạo ra, sinh ra",
+    "meaning_en": "to produce or create something",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "The machine generates electricity.",
+        "vi": "Máy tạo ra điện."
+      },
+      {
+        "en": "This experiment generates heat.",
+        "vi": "Thí nghiệm này sinh ra nhiệt."
+      }
+    ],
+    "word_family": [
+      "generation (n)",
+      "generator (n)"
+    ],
+    "collocations": [
+      "generate electricity",
+      "generate heat",
+      "generate data"
+    ],
+    "synonyms": [
+      "produce",
+      "create"
+    ],
+    "antonyms": [
+      "consume",
+      "destroy"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "The machine makes electricity.",
+        "correct": "The machine generates electricity.",
+        "explain_vi": "Trong ngữ cảnh khoa học, dùng 'generate' thay vì 'make'."
+      }
+    ],
+    "grammar_patterns": [
+      "generate + noun"
+    ]
+  },
+  {
+    "word": "temperature",
+    "phonetic": "/ˈtem.prə.tʃər/",
+    "meaning_vi": "nhiệt độ",
+    "meaning_en": "how hot or cold something is",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "We measure the temperature with a thermometer.",
+        "vi": "Chúng tôi đo nhiệt độ bằng nhiệt kế."
+      },
+      {
+        "en": "The temperature is 25 degrees.",
+        "vi": "Nhiệt độ là 25 độ."
+      }
+    ],
+    "word_family": [
+      "temperate (adj)",
+      "temperature (n)"
+    ],
+    "collocations": [
+      "high temperature",
+      "low temperature",
+      "room temperature"
+    ],
+    "synonyms": [
+      "heat",
+      "cold"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "The temperature is hot.",
+        "correct": "The temperature is high.",
+        "explain_vi": "Nhiệt độ không phải là 'nóng', mà là 'cao' hoặc 'thấp'."
+      }
+    ],
+    "grammar_patterns": [
+      "the temperature is + adjective",
+      "measure the temperature"
+    ]
+  },
+  {
+    "word": "substance",
+    "phonetic": "/ˈsʌb.stəns/",
+    "meaning_vi": "chất",
+    "meaning_en": "a type of material with particular properties",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Water is a clear substance.",
+        "vi": "Nước là một chất trong suốt."
+      },
+      {
+        "en": "This substance is toxic.",
+        "vi": "Chất này có độc."
+      }
+    ],
+    "word_family": [
+      "substantial (adj)",
+      "substantiate (v)"
+    ],
+    "collocations": [
+      "chemical substance",
+      "dangerous substance",
+      "pure substance"
+    ],
+    "synonyms": [
+      "material",
+      "matter"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "This substance is poison.",
+        "correct": "This substance is poisonous.",
+        "explain_vi": "Cần dùng tính từ 'poisonous' thay vì danh từ 'poison'."
+      }
+    ],
+    "grammar_patterns": [
+      "substance + be + adjective"
+    ]
+  },
+  {
+    "word": "liquid",
+    "phonetic": "/ˈlɪk.wɪd/",
+    "meaning_vi": "chất lỏng",
+    "meaning_en": "a substance that flows freely, like water",
+    "pos": "noun / adjective",
+    "examples": [
+      {
+        "en": "Oil is a liquid.",
+        "vi": "Dầu là chất lỏng."
+      },
+      {
+        "en": "The liquid turned into gas.",
+        "vi": "Chất lỏng biến thành khí."
+      }
+    ],
+    "word_family": [
+      "liquidity (n)",
+      "liquefy (v)"
+    ],
+    "collocations": [
+      "liquid state",
+      "liquid nitrogen",
+      "pour liquid"
+    ],
+    "synonyms": [
+      "fluid"
+    ],
+    "antonyms": [
+      "solid",
+      "gas"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Water is liquid.",
+        "correct": "Water is a liquid.",
+        "explain_vi": "Cần mạo từ 'a' trước danh từ đếm được số ít."
+      }
+    ],
+    "grammar_patterns": [
+      "be + a liquid",
+      "liquid + noun (e.g., liquid nitrogen)"
+    ]
+  },
+  {
+    "word": "solid",
+    "phonetic": "/ˈsɒl.ɪd/",
+    "meaning_vi": "chất rắn",
+    "meaning_en": "a substance that is firm and not liquid or gas",
+    "pos": "noun / adjective",
+    "examples": [
+      {
+        "en": "Ice is a solid.",
+        "vi": "Băng là chất rắn."
+      },
+      {
+        "en": "The solid melted.",
+        "vi": "Chất rắn tan chảy."
+      }
+    ],
+    "word_family": [
+      "solidify (v)",
+      "solidity (n)"
+    ],
+    "collocations": [
+      "solid state",
+      "solid object",
+      "solid fuel"
+    ],
+    "synonyms": [
+      "hard"
+    ],
+    "antonyms": [
+      "liquid",
+      "gas"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "This is a solid rock.",
+        "correct": "This rock is solid.",
+        "explain_vi": "Khi dùng tính từ, 'solid' đứng sau 'be'."
+      }
+    ],
+    "grammar_patterns": [
+      "be + solid",
+      "a solid"
+    ]
+  },
+  {
+    "word": "gas",
+    "phonetic": "/ɡæs/",
+    "meaning_vi": "khí, chất khí",
+    "meaning_en": "a substance like air that is not solid or liquid",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Oxygen is a gas.",
+        "vi": "Oxy là một chất khí."
+      },
+      {
+        "en": "The gas expanded.",
+        "vi": "Khí giãn nở."
+      }
+    ],
+    "word_family": [
+      "gaseous (adj)",
+      "gasify (v)"
+    ],
+    "collocations": [
+      "natural gas",
+      "gas pressure",
+      "gas state"
+    ],
+    "synonyms": [
+      "vapor"
+    ],
+    "antonyms": [
+      "solid",
+      "liquid"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Gas is lighter than air.",
+        "correct": "Gas is lighter than air.",
+        "explain_vi": "Chú ý: 'gas' là danh từ không đếm được, không dùng 'a gas' trừ khi chỉ loại khí cụ thể."
+      }
+    ],
+    "grammar_patterns": [
+      "be + a gas",
+      "gas + verb"
+    ]
+  },
+  {
+    "word": "particle",
+    "phonetic": "/ˈpɑːr.tɪ.kəl/",
+    "meaning_vi": "hạt",
+    "meaning_en": "a very small piece of something",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Dust particles float in the air.",
+        "vi": "Các hạt bụi bay trong không khí."
+      },
+      {
+        "en": "Atoms are tiny particles.",
+        "vi": "Nguyên tử là những hạt cực nhỏ."
+      }
+    ],
+    "word_family": [
+      "particulate (adj)",
+      "particular (adj)"
+    ],
+    "collocations": [
+      "tiny particle",
+      "dust particle",
+      "subatomic particle"
+    ],
+    "synonyms": [
+      "grain",
+      "speck"
+    ],
+    "antonyms": [
+      "mass"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Particle is small.",
+        "correct": "A particle is small.",
+        "explain_vi": "Cần mạo từ 'a' hoặc dùng số nhiều."
+      }
+    ],
+    "grammar_patterns": [
+      "particle + verb",
+      "a particle of + noun"
+    ]
+  },
+  {
+    "word": "atom",
+    "phonetic": "/ˈæt.əm/",
+    "meaning_vi": "nguyên tử",
+    "meaning_en": "the smallest unit of a chemical element",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Water has two hydrogen atoms.",
+        "vi": "Nước có hai nguyên tử hydro."
+      },
+      {
+        "en": "Atoms are very small.",
+        "vi": "Nguyên tử rất nhỏ."
+      }
+    ],
+    "word_family": [
+      "atomic (adj)",
+      "atomize (v)"
+    ],
+    "collocations": [
+      "atom bomb",
+      "atom structure",
+      "carbon atom"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Atom is small.",
+        "correct": "An atom is small.",
+        "explain_vi": "Cần mạo từ 'an' vì 'atom' bắt đầu bằng nguyên âm."
+      }
+    ],
+    "grammar_patterns": [
+      "an atom",
+      "atom + noun"
+    ]
+  },
+  {
+    "word": "molecule",
+    "phonetic": "/ˈmɒl.ɪ.kjuːl/",
+    "meaning_vi": "phân tử",
+    "meaning_en": "a group of atoms bonded together",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "A water molecule has three atoms.",
+        "vi": "Một phân tử nước có ba nguyên tử."
+      },
+      {
+        "en": "Molecules are made of atoms.",
+        "vi": "Phân tử được tạo thành từ nguyên tử."
+      }
+    ],
+    "word_family": [
+      "molecular (adj)"
+    ],
+    "collocations": [
+      "molecule structure",
+      "water molecule",
+      "DNA molecule"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Molecule is big.",
+        "correct": "A molecule is big.",
+        "explain_vi": "Cần mạo từ 'a'."
+      }
+    ],
+    "grammar_patterns": [
+      "a molecule",
+      "molecule of + noun"
+    ]
+  },
+  {
+    "word": "element",
+    "phonetic": "/ˈel.ɪ.mənt/",
+    "meaning_vi": "nguyên tố",
+    "meaning_en": "a substance that cannot be broken down into simpler substances",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Gold is an element.",
+        "vi": "Vàng là một nguyên tố."
+      },
+      {
+        "en": "The periodic table lists all elements.",
+        "vi": "Bảng tuần hoàn liệt kê tất cả các nguyên tố."
+      }
+    ],
+    "word_family": [
+      "elementary (adj)",
+      "elemental (adj)"
+    ],
+    "collocations": [
+      "chemical element",
+      "element symbol",
+      "heavy element"
+    ],
+    "synonyms": [
+      "component"
+    ],
+    "antonyms": [
+      "compound"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Element is a pure substance.",
+        "correct": "An element is a pure substance.",
+        "explain_vi": "Cần mạo từ 'an'."
+      }
+    ],
+    "grammar_patterns": [
+      "an element",
+      "element of + noun"
+    ]
+  },
+  {
+    "word": "compound",
+    "phonetic": "/ˈkɒm.paʊnd/",
+    "meaning_vi": "hợp chất",
+    "meaning_en": "a substance made of two or more elements",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Water is a compound of hydrogen and oxygen.",
+        "vi": "Nước là hợp chất của hydro và oxy."
+      },
+      {
+        "en": "Salt is a compound.",
+        "vi": "Muối là một hợp chất."
+      }
+    ],
+    "word_family": [
+      "compound (v)",
+      "compounding (n)"
+    ],
+    "collocations": [
+      "chemical compound",
+      "organic compound",
+      "compound word"
+    ],
+    "synonyms": [
+      "mixture"
+    ],
+    "antonyms": [
+      "element"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Compound is made of elements.",
+        "correct": "A compound is made of elements.",
+        "explain_vi": "Cần mạo từ 'a'."
+      }
+    ],
+    "grammar_patterns": [
+      "a compound",
+      "compound of + noun"
+    ]
+  },
+  {
+    "word": "reaction",
+    "phonetic": "/riˈæk.ʃən/",
+    "meaning_vi": "phản ứng",
+    "meaning_en": "a process in which substances change chemically",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "The reaction produced heat.",
+        "vi": "Phản ứng tạo ra nhiệt."
+      },
+      {
+        "en": "We observed a chemical reaction.",
+        "vi": "Chúng tôi quan sát một phản ứng hóa học."
+      }
+    ],
+    "word_family": [
+      "react (v)",
+      "reactive (adj)"
+    ],
+    "collocations": [
+      "chemical reaction",
+      "chain reaction",
+      "reaction time"
+    ],
+    "synonyms": [
+      "response"
+    ],
+    "antonyms": [
+      "inertia"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Reaction is fast.",
+        "correct": "The reaction is fast.",
+        "explain_vi": "Cần mạo từ 'the' hoặc 'a'."
+      }
+    ],
+    "grammar_patterns": [
+      "a reaction",
+      "reaction between + noun and noun"
+    ]
+  },
+  {
+    "word": "mixture",
+    "phonetic": "/ˈmɪks.tʃər/",
+    "meaning_vi": "hỗn hợp",
+    "meaning_en": "a combination of different substances",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Air is a mixture of gases.",
+        "vi": "Không khí là hỗn hợp các khí."
+      },
+      {
+        "en": "We made a mixture of sand and water.",
+        "vi": "Chúng tôi tạo hỗn hợp cát và nước."
+      }
+    ],
+    "word_family": [
+      "mix (v)",
+      "mixed (adj)"
+    ],
+    "collocations": [
+      "mixture of",
+      "homogeneous mixture",
+      "heterogeneous mixture"
+    ],
+    "synonyms": [
+      "blend",
+      "combination"
+    ],
+    "antonyms": [
+      "pure substance"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Mixture is a combination.",
+        "correct": "A mixture is a combination.",
+        "explain_vi": "Cần mạo từ 'a'."
+      }
+    ],
+    "grammar_patterns": [
+      "a mixture",
+      "mixture of + noun and noun"
+    ]
+  },
+  {
+    "word": "solution",
+    "phonetic": "/səˈluː.ʃən/",
+    "meaning_vi": "dung dịch",
+    "meaning_en": "a liquid mixture where one substance is dissolved in another",
+    "pos": "noun",
+    "examples": [
+      {
+        "en": "Salt water is a solution.",
+        "vi": "Nước muối là một dung dịch."
+      },
+      {
+        "en": "We prepared a sugar solution.",
+        "vi": "Chúng tôi chuẩn bị dung dịch đường."
+      }
+    ],
+    "word_family": [
+      "solve (v)",
+      "soluble (adj)"
+    ],
+    "collocations": [
+      "aqueous solution",
+      "concentrated solution",
+      "solution to"
+    ],
+    "synonyms": [
+      "mixture"
+    ],
+    "antonyms": [
+      "suspension"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Solution is a mixture.",
+        "correct": "A solution is a mixture.",
+        "explain_vi": "Cần mạo từ 'a'."
+      }
+    ],
+    "grammar_patterns": [
+      "a solution",
+      "solution of + noun"
+    ]
+  },
+  {
+    "word": "filter",
+    "phonetic": "/ˈfɪl.tər/",
+    "meaning_vi": "lọc",
+    "meaning_en": "to remove solids from a liquid or gas by passing through a device",
+    "pos": "verb / noun",
+    "examples": [
+      {
+        "en": "We filter the water before drinking.",
+        "vi": "Chúng tôi lọc nước trước khi uống."
+      },
+      {
+        "en": "The coffee filter is clean.",
+        "vi": "Bộ lọc cà phê sạch."
+      }
+    ],
+    "word_family": [
+      "filtration (n)",
+      "filtered (adj)"
+    ],
+    "collocations": [
+      "filter paper",
+      "water filter",
+      "filter out"
+    ],
+    "synonyms": [
+      "strain",
+      "sieve"
+    ],
+    "antonyms": [
+      "contaminate"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "We filter out the dirt.",
+        "correct": "We filter out the dirt.",
+        "explain_vi": "Cụm 'filter out' đúng, nhưng cần chú ý giới từ."
+      }
+    ],
+    "grammar_patterns": [
+      "filter + noun",
+      "filter out + noun"
+    ]
+  },
+  {
+    "word": "magnify",
+    "phonetic": "/ˈmæɡ.nɪ.faɪ/",
+    "meaning_vi": "phóng đại",
+    "meaning_en": "to make something look bigger",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "The microscope magnifies small objects.",
+        "vi": "Kính hiển vi phóng đại các vật nhỏ."
+      },
+      {
+        "en": "This lens magnifies the image.",
+        "vi": "Thấu kính này phóng đại hình ảnh."
+      }
+    ],
+    "word_family": [
+      "magnification (n)",
+      "magnifier (n)"
+    ],
+    "collocations": [
+      "magnify image",
+      "magnify object",
+      "magnify by"
+    ],
+    "synonyms": [
+      "enlarge",
+      "zoom"
+    ],
+    "antonyms": [
+      "reduce",
+      "minify"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "The microscope makes it bigger.",
+        "correct": "The microscope magnifies it.",
+        "explain_vi": "Trong khoa học, dùng 'magnify' thay vì 'make bigger'."
+      }
+    ],
+    "grammar_patterns": [
+      "magnify + noun",
+      "magnify by + number"
+    ]
+  },
+  {
+    "word": "dissolve",
+    "phonetic": "/dɪˈzɒlv/",
+    "meaning_vi": "hòa tan",
+    "meaning_en": "to mix with a liquid and become part of it",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "Sugar dissolves in water.",
+        "vi": "Đường hòa tan trong nước."
+      },
+      {
+        "en": "We dissolved the salt in water.",
+        "vi": "Chúng tôi hòa tan muối trong nước."
+      }
+    ],
+    "word_family": [
+      "dissolution (n)",
+      "dissolved (adj)"
+    ],
+    "collocations": [
+      "dissolve in",
+      "dissolve completely",
+      "dissolve slowly"
+    ],
+    "synonyms": [
+      "melt",
+      "liquefy"
+    ],
+    "antonyms": [
+      "precipitate",
+      "solidify"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Sugar dissolves with water.",
+        "correct": "Sugar dissolves in water.",
+        "explain_vi": "Dùng 'in' thay vì 'with'."
+      }
+    ],
+    "grammar_patterns": [
+      "dissolve + in + noun",
+      "dissolve + noun + in + noun"
+    ]
+  },
+  {
+    "word": "evaporate",
+    "phonetic": "/ɪˈvæp.ə.reɪt/",
+    "meaning_vi": "bay hơi",
+    "meaning_en": "to change from liquid to gas",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "Water evaporates when heated.",
+        "vi": "Nước bay hơi khi được đun nóng."
+      },
+      {
+        "en": "The puddle evaporated quickly.",
+        "vi": "Vũng nước bay hơi nhanh chóng."
+      }
+    ],
+    "word_family": [
+      "evaporation (n)",
+      "evaporated (adj)"
+    ],
+    "collocations": [
+      "evaporate into",
+      "evaporate completely",
+      "evaporate slowly"
+    ],
+    "synonyms": [
+      "vaporize",
+      "dry up"
+    ],
+    "antonyms": [
+      "condense",
+      "liquefy"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Water evaporates to gas.",
+        "correct": "Water evaporates into gas.",
+        "explain_vi": "Dùng 'into' thay vì 'to'."
+      }
+    ],
+    "grammar_patterns": [
+      "evaporate + into + noun",
+      "evaporate from + noun"
+    ]
+  },
+  {
+    "word": "condense",
+    "phonetic": "/kənˈdens/",
+    "meaning_vi": "ngưng tụ",
+    "meaning_en": "to change from gas to liquid",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "Steam condenses into water.",
+        "vi": "Hơi nước ngưng tụ thành nước."
+      },
+      {
+        "en": "The cold air caused the vapor to condense.",
+        "vi": "Không khí lạnh làm hơi nước ngưng tụ."
+      }
+    ],
+    "word_family": [
+      "condensation (n)",
+      "condensed (adj)"
+    ],
+    "collocations": [
+      "condense into",
+      "condense on",
+      "condense quickly"
+    ],
+    "synonyms": [
+      "liquefy",
+      "precipitate"
+    ],
+    "antonyms": [
+      "evaporate",
+      "vaporize"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Steam condenses to water.",
+        "correct": "Steam condenses into water.",
+        "explain_vi": "Dùng 'into' thay vì 'to'."
+      }
+    ],
+    "grammar_patterns": [
+      "condense + into + noun",
+      "condense on + noun"
+    ]
+  },
+  {
+    "word": "expand",
+    "phonetic": "/ɪkˈspænd/",
+    "meaning_vi": "giãn nở",
+    "meaning_en": "to become larger in size or volume",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "Metals expand when heated.",
+        "vi": "Kim loại giãn nở khi được đun nóng."
+      },
+      {
+        "en": "The gas expanded to fill the container.",
+        "vi": "Khí giãn nở để lấp đầy bình chứa."
+      }
+    ],
+    "word_family": [
+      "expansion (n)",
+      "expansive (adj)"
+    ],
+    "collocations": [
+      "expand when heated",
+      "expand rapidly",
+      "expand into"
+    ],
+    "synonyms": [
+      "enlarge",
+      "swell"
+    ],
+    "antonyms": [
+      "contract",
+      "shrink"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "The balloon expands with air.",
+        "correct": "The balloon expands when filled with air.",
+        "explain_vi": "Dùng 'when' thay vì 'with'."
+      }
+    ],
+    "grammar_patterns": [
+      "expand + when + condition",
+      "expand into + noun"
+    ]
+  }
+]

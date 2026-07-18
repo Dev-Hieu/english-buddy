@@ -1,0 +1,1746 @@
+[
+  {
+    "word": "happy",
+    "phonetic": "/ˈhæpi/",
+    "meaning_vi": "vui vẻ, hạnh phúc",
+    "meaning_en": "feeling pleasure or contentment",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "I am happy.",
+        "vi": "Tôi vui."
+      },
+      {
+        "en": "She looks happy.",
+        "vi": "Cô ấy trông vui vẻ."
+      }
+    ],
+    "word_family": [
+      "happiness (n)",
+      "unhappy (adj)"
+    ],
+    "collocations": [
+      "feel happy",
+      "look happy",
+      "be happy"
+    ],
+    "synonyms": [
+      "glad",
+      "cheerful"
+    ],
+    "antonyms": [
+      "sad"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I happy",
+        "correct": "I am happy",
+        "explain_vi": "Thiếu động từ 'to be' (am/is/are)"
+      }
+    ],
+    "grammar_patterns": [
+      "be + happy",
+      "feel + happy"
+    ]
+  },
+  {
+    "word": "sad",
+    "phonetic": "/sæd/",
+    "meaning_vi": "buồn",
+    "meaning_en": "feeling sorrow or unhappiness",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "He is sad.",
+        "vi": "Anh ấy buồn."
+      },
+      {
+        "en": "Don't be sad.",
+        "vi": "Đừng buồn."
+      }
+    ],
+    "word_family": [
+      "sadness (n)",
+      "sadly (adv)"
+    ],
+    "collocations": [
+      "feel sad",
+      "look sad",
+      "be sad"
+    ],
+    "synonyms": [
+      "unhappy",
+      "down"
+    ],
+    "antonyms": [
+      "happy"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I sad",
+        "correct": "I am sad",
+        "explain_vi": "Thiếu động từ 'to be'"
+      }
+    ],
+    "grammar_patterns": [
+      "be + sad",
+      "feel + sad"
+    ]
+  },
+  {
+    "word": "angry",
+    "phonetic": "/ˈæŋɡri/",
+    "meaning_vi": "tức giận",
+    "meaning_en": "feeling or showing strong annoyance",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "She is angry.",
+        "vi": "Cô ấy tức giận."
+      },
+      {
+        "en": "Why are you angry?",
+        "vi": "Tại sao bạn tức giận?"
+      }
+    ],
+    "word_family": [
+      "anger (n)",
+      "angrily (adv)"
+    ],
+    "collocations": [
+      "get angry",
+      "be angry",
+      "look angry"
+    ],
+    "synonyms": [
+      "mad",
+      "furious"
+    ],
+    "antonyms": [
+      "calm"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I angry with you",
+        "correct": "I am angry with you",
+        "explain_vi": "Thiếu động từ 'to be'"
+      }
+    ],
+    "grammar_patterns": [
+      "be + angry",
+      "get + angry"
+    ]
+  },
+  {
+    "word": "tired",
+    "phonetic": "/taɪərd/",
+    "meaning_vi": "mệt mỏi",
+    "meaning_en": "in need of rest or sleep",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "I am tired.",
+        "vi": "Tôi mệt."
+      },
+      {
+        "en": "Are you tired?",
+        "vi": "Bạn có mệt không?"
+      }
+    ],
+    "word_family": [
+      "tire (v)",
+      "tiring (adj)",
+      "tirelessly (adv)"
+    ],
+    "collocations": [
+      "feel tired",
+      "get tired",
+      "be tired"
+    ],
+    "synonyms": [
+      "exhausted",
+      "sleepy"
+    ],
+    "antonyms": [
+      "energetic"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I tired",
+        "correct": "I am tired",
+        "explain_vi": "Thiếu động từ 'to be'"
+      }
+    ],
+    "grammar_patterns": [
+      "be + tired",
+      "feel + tired"
+    ]
+  },
+  {
+    "word": "scared",
+    "phonetic": "/skerd/",
+    "meaning_vi": "sợ hãi",
+    "meaning_en": "frightened or afraid",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "I am scared of dogs.",
+        "vi": "Tôi sợ chó."
+      },
+      {
+        "en": "Don't be scared.",
+        "vi": "Đừng sợ."
+      }
+    ],
+    "word_family": [
+      "scare (v)",
+      "scary (adj)"
+    ],
+    "collocations": [
+      "be scared of",
+      "feel scared",
+      "get scared"
+    ],
+    "synonyms": [
+      "afraid",
+      "frightened"
+    ],
+    "antonyms": [
+      "brave"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I scared dog",
+        "correct": "I am scared of dogs",
+        "explain_vi": "Nhầm cấu trúc 'scared of' và thiếu 'to be'"
+      }
+    ],
+    "grammar_patterns": [
+      "be + scared",
+      "be scared of + noun/gerund"
+    ]
+  },
+  {
+    "word": "surprised",
+    "phonetic": "/sərˈpraɪzd/",
+    "meaning_vi": "ngạc nhiên",
+    "meaning_en": "feeling or showing sudden wonder",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "I am surprised.",
+        "vi": "Tôi ngạc nhiên."
+      },
+      {
+        "en": "She was surprised by the news.",
+        "vi": "Cô ấy ngạc nhiên trước tin đó."
+      }
+    ],
+    "word_family": [
+      "surprise (n/v)",
+      "surprising (adj)"
+    ],
+    "collocations": [
+      "be surprised",
+      "look surprised",
+      "feel surprised"
+    ],
+    "synonyms": [
+      "astonished",
+      "amazed"
+    ],
+    "antonyms": [
+      "unsurprised"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I surprise",
+        "correct": "I am surprised",
+        "explain_vi": "Nhầm dạng tính từ với động từ"
+      }
+    ],
+    "grammar_patterns": [
+      "be + surprised",
+      "be surprised at/by"
+    ]
+  },
+  {
+    "word": "excited",
+    "phonetic": "/ɪkˈsaɪtɪd/",
+    "meaning_vi": "hào hứng, phấn khích",
+    "meaning_en": "feeling very enthusiastic and eager",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "I am excited about the trip.",
+        "vi": "Tôi hào hứng về chuyến đi."
+      },
+      {
+        "en": "The kids are excited.",
+        "vi": "Bọn trẻ rất phấn khích."
+      }
+    ],
+    "word_family": [
+      "excite (v)",
+      "exciting (adj)",
+      "excitement (n)"
+    ],
+    "collocations": [
+      "be excited about",
+      "get excited",
+      "feel excited"
+    ],
+    "synonyms": [
+      "thrilled",
+      "enthusiastic"
+    ],
+    "antonyms": [
+      "bored"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I excited",
+        "correct": "I am excited",
+        "explain_vi": "Thiếu động từ 'to be'"
+      }
+    ],
+    "grammar_patterns": [
+      "be + excited",
+      "be excited about + noun/gerund"
+    ]
+  },
+  {
+    "word": "bored",
+    "phonetic": "/bɔːrd/",
+    "meaning_vi": "chán",
+    "meaning_en": "feeling weary because one is unoccupied or lacks interest",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "I am bored.",
+        "vi": "Tôi chán."
+      },
+      {
+        "en": "The movie was boring, so I was bored.",
+        "vi": "Phim chán nên tôi chán."
+      }
+    ],
+    "word_family": [
+      "bore (v)",
+      "boring (adj)",
+      "boredom (n)"
+    ],
+    "collocations": [
+      "be bored",
+      "get bored",
+      "feel bored"
+    ],
+    "synonyms": [
+      "uninterested"
+    ],
+    "antonyms": [
+      "interested"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I boring",
+        "correct": "I am bored",
+        "explain_vi": "Nhầm giữa 'bored' (chán) và 'boring' (gây chán)"
+      }
+    ],
+    "grammar_patterns": [
+      "be + bored",
+      "get + bored"
+    ]
+  },
+  {
+    "word": "interested",
+    "phonetic": "/ˈɪntrəstɪd/",
+    "meaning_vi": "quan tâm, thích thú",
+    "meaning_en": "showing curiosity or concern about something",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "I am interested in music.",
+        "vi": "Tôi quan tâm đến âm nhạc."
+      },
+      {
+        "en": "Are you interested?",
+        "vi": "Bạn có thích thú không?"
+      }
+    ],
+    "word_family": [
+      "interest (n/v)",
+      "interesting (adj)"
+    ],
+    "collocations": [
+      "be interested in",
+      "get interested",
+      "seem interested"
+    ],
+    "synonyms": [
+      "curious",
+      "engaged"
+    ],
+    "antonyms": [
+      "bored"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I interesting in",
+        "correct": "I am interested in",
+        "explain_vi": "Nhầm 'interesting' (thú vị) với 'interested' (quan tâm)"
+      }
+    ],
+    "grammar_patterns": [
+      "be + interested",
+      "be interested in + noun/gerund"
+    ]
+  },
+  {
+    "word": "hungry",
+    "phonetic": "/ˈhʌŋɡri/",
+    "meaning_vi": "đói",
+    "meaning_en": "feeling the need for food",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "I am hungry.",
+        "vi": "Tôi đói."
+      },
+      {
+        "en": "Are you hungry?",
+        "vi": "Bạn có đói không?"
+      }
+    ],
+    "word_family": [
+      "hunger (n)",
+      "hungrily (adv)"
+    ],
+    "collocations": [
+      "be hungry",
+      "feel hungry",
+      "get hungry"
+    ],
+    "synonyms": [
+      "starving",
+      "famished"
+    ],
+    "antonyms": [
+      "full"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I hungry",
+        "correct": "I am hungry",
+        "explain_vi": "Thiếu động từ 'to be'"
+      }
+    ],
+    "grammar_patterns": [
+      "be + hungry",
+      "feel + hungry"
+    ]
+  },
+  {
+    "word": "thirsty",
+    "phonetic": "/ˈθɜːrsti/",
+    "meaning_vi": "khát",
+    "meaning_en": "feeling the need to drink",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "I am thirsty.",
+        "vi": "Tôi khát."
+      },
+      {
+        "en": "She is thirsty after running.",
+        "vi": "Cô ấy khát sau khi chạy."
+      }
+    ],
+    "word_family": [
+      "thirst (n)",
+      "thirstily (adv)"
+    ],
+    "collocations": [
+      "be thirsty",
+      "feel thirsty",
+      "get thirsty"
+    ],
+    "synonyms": [
+      "parched",
+      "dry"
+    ],
+    "antonyms": [
+      "hydrated"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I thirsty",
+        "correct": "I am thirsty",
+        "explain_vi": "Thiếu động từ 'to be'"
+      }
+    ],
+    "grammar_patterns": [
+      "be + thirsty",
+      "feel + thirsty"
+    ]
+  },
+  {
+    "word": "cold",
+    "phonetic": "/koʊld/",
+    "meaning_vi": "lạnh",
+    "meaning_en": "of or at a low temperature",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "I am cold.",
+        "vi": "Tôi lạnh."
+      },
+      {
+        "en": "The water is cold.",
+        "vi": "Nước lạnh."
+      }
+    ],
+    "word_family": [
+      "coldness (n)",
+      "coldly (adv)"
+    ],
+    "collocations": [
+      "be cold",
+      "feel cold",
+      "get cold"
+    ],
+    "synonyms": [
+      "chilly",
+      "freezing"
+    ],
+    "antonyms": [
+      "hot"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I cold",
+        "correct": "I am cold",
+        "explain_vi": "Thiếu động từ 'to be'"
+      }
+    ],
+    "grammar_patterns": [
+      "be + cold",
+      "feel + cold"
+    ]
+  },
+  {
+    "word": "hot",
+    "phonetic": "/hɑːt/",
+    "meaning_vi": "nóng",
+    "meaning_en": "having a high temperature",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "I am hot.",
+        "vi": "Tôi nóng."
+      },
+      {
+        "en": "The soup is hot.",
+        "vi": "Súp nóng."
+      }
+    ],
+    "word_family": [
+      "heat (n/v)",
+      "hotly (adv)"
+    ],
+    "collocations": [
+      "be hot",
+      "feel hot",
+      "get hot"
+    ],
+    "synonyms": [
+      "warm",
+      "burning"
+    ],
+    "antonyms": [
+      "cold"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I hot",
+        "correct": "I am hot",
+        "explain_vi": "Thiếu động từ 'to be'"
+      }
+    ],
+    "grammar_patterns": [
+      "be + hot",
+      "feel + hot"
+    ]
+  },
+  {
+    "word": "sick",
+    "phonetic": "/sɪk/",
+    "meaning_vi": "ốm, bệnh",
+    "meaning_en": "affected by physical or mental illness",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "I am sick.",
+        "vi": "Tôi bị ốm."
+      },
+      {
+        "en": "She feels sick.",
+        "vi": "Cô ấy cảm thấy buồn nôn."
+      }
+    ],
+    "word_family": [
+      "sickness (n)",
+      "sicken (v)"
+    ],
+    "collocations": [
+      "be sick",
+      "feel sick",
+      "get sick"
+    ],
+    "synonyms": [
+      "ill",
+      "unwell"
+    ],
+    "antonyms": [
+      "healthy"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I sick",
+        "correct": "I am sick",
+        "explain_vi": "Thiếu động từ 'to be'"
+      }
+    ],
+    "grammar_patterns": [
+      "be + sick",
+      "feel + sick"
+    ]
+  },
+  {
+    "word": "good",
+    "phonetic": "/ɡʊd/",
+    "meaning_vi": "tốt, ngon",
+    "meaning_en": "to be desired or approved of",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "This food is good.",
+        "vi": "Món này ngon."
+      },
+      {
+        "en": "I feel good.",
+        "vi": "Tôi cảm thấy tốt."
+      }
+    ],
+    "word_family": [
+      "goodness (n)",
+      "better (comp)",
+      "best (sup)"
+    ],
+    "collocations": [
+      "be good",
+      "feel good",
+      "look good"
+    ],
+    "synonyms": [
+      "fine",
+      "nice"
+    ],
+    "antonyms": [
+      "bad"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I good",
+        "correct": "I am good",
+        "explain_vi": "Thiếu động từ 'to be'"
+      }
+    ],
+    "grammar_patterns": [
+      "be + good",
+      "feel + good"
+    ]
+  },
+  {
+    "word": "bad",
+    "phonetic": "/bæd/",
+    "meaning_vi": "tệ, xấu",
+    "meaning_en": "of poor quality or a low standard",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The weather is bad.",
+        "vi": "Thời tiết xấu."
+      },
+      {
+        "en": "I feel bad.",
+        "vi": "Tôi cảm thấy tệ."
+      }
+    ],
+    "word_family": [
+      "badness (n)",
+      "badly (adv)",
+      "worse (comp)",
+      "worst (sup)"
+    ],
+    "collocations": [
+      "be bad",
+      "feel bad",
+      "go bad"
+    ],
+    "synonyms": [
+      "poor",
+      "terrible"
+    ],
+    "antonyms": [
+      "good"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I bad",
+        "correct": "I am bad",
+        "explain_vi": "Thiếu động từ 'to be'"
+      }
+    ],
+    "grammar_patterns": [
+      "be + bad",
+      "feel + bad"
+    ]
+  },
+  {
+    "word": "fine",
+    "phonetic": "/faɪn/",
+    "meaning_vi": "ổn, tốt",
+    "meaning_en": "in a satisfactory manner",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "I am fine, thank you.",
+        "vi": "Tôi ổn, cảm ơn."
+      },
+      {
+        "en": "Everything is fine.",
+        "vi": "Mọi thứ đều ổn."
+      }
+    ],
+    "word_family": [
+      "fineness (n)",
+      "finely (adv)"
+    ],
+    "collocations": [
+      "be fine",
+      "feel fine",
+      "look fine"
+    ],
+    "synonyms": [
+      "okay",
+      "alright"
+    ],
+    "antonyms": [
+      "bad"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I fine",
+        "correct": "I am fine",
+        "explain_vi": "Thiếu động từ 'to be'"
+      }
+    ],
+    "grammar_patterns": [
+      "be + fine",
+      "feel + fine"
+    ]
+  },
+  {
+    "word": "great",
+    "phonetic": "/ɡreɪt/",
+    "meaning_vi": "tuyệt vời",
+    "meaning_en": "very good; excellent",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "That's great!",
+        "vi": "Tuyệt vời!"
+      },
+      {
+        "en": "I feel great.",
+        "vi": "Tôi cảm thấy tuyệt vời."
+      }
+    ],
+    "word_family": [
+      "greatness (n)",
+      "greatly (adv)"
+    ],
+    "collocations": [
+      "be great",
+      "feel great",
+      "look great"
+    ],
+    "synonyms": [
+      "wonderful",
+      "fantastic"
+    ],
+    "antonyms": [
+      "terrible"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I great",
+        "correct": "I am great",
+        "explain_vi": "Thiếu động từ 'to be'"
+      }
+    ],
+    "grammar_patterns": [
+      "be + great",
+      "feel + great"
+    ]
+  },
+  {
+    "word": "terrible",
+    "phonetic": "/ˈterəbl/",
+    "meaning_vi": "tồi tệ, khủng khiếp",
+    "meaning_en": "extremely bad or serious",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The movie was terrible.",
+        "vi": "Bộ phim thật tệ."
+      },
+      {
+        "en": "I feel terrible.",
+        "vi": "Tôi cảm thấy tồi tệ."
+      }
+    ],
+    "word_family": [
+      "terribly (adv)",
+      "terribleness (n)"
+    ],
+    "collocations": [
+      "be terrible",
+      "feel terrible",
+      "look terrible"
+    ],
+    "synonyms": [
+      "awful",
+      "horrible"
+    ],
+    "antonyms": [
+      "great"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I terrible",
+        "correct": "I am terrible",
+        "explain_vi": "Thiếu động từ 'to be'"
+      }
+    ],
+    "grammar_patterns": [
+      "be + terrible",
+      "feel + terrible"
+    ]
+  },
+  {
+    "word": "love",
+    "phonetic": "/lʌv/",
+    "meaning_vi": "yêu, thích",
+    "meaning_en": "feel deep affection for someone or something",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "I love you.",
+        "vi": "Anh yêu em."
+      },
+      {
+        "en": "I love ice cream.",
+        "vi": "Tôi thích kem."
+      }
+    ],
+    "word_family": [
+      "loving (adj)",
+      "lovely (adj)",
+      "lover (n)"
+    ],
+    "collocations": [
+      "love someone",
+      "love doing something",
+      "fall in love"
+    ],
+    "synonyms": [
+      "adore",
+      "like very much"
+    ],
+    "antonyms": [
+      "hate"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I love eat ice cream",
+        "correct": "I love eating ice cream",
+        "explain_vi": "Sau 'love' dùng V-ing hoặc to V"
+      }
+    ],
+    "grammar_patterns": [
+      "love + noun",
+      "love + V-ing",
+      "love + to V"
+    ]
+  },
+  {
+    "word": "like",
+    "phonetic": "/laɪk/",
+    "meaning_vi": "thích",
+    "meaning_en": "to enjoy something",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "I like ice cream.",
+        "vi": "Tôi thích kem."
+      },
+      {
+        "en": "She likes cats.",
+        "vi": "Cô ấy thích mèo."
+      }
+    ],
+    "word_family": [
+      "likes (v)",
+      "liking (v)"
+    ],
+    "collocations": [
+      "like + noun",
+      "like + verb-ing"
+    ],
+    "synonyms": [
+      "enjoy",
+      "love"
+    ],
+    "antonyms": [
+      "dislike",
+      "hate"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I like eat ice cream.",
+        "correct": "I like eating ice cream.",
+        "explain_vi": "Sau 'like' dùng danh động từ (V-ing)."
+      }
+    ],
+    "grammar_patterns": [
+      "like + noun",
+      "like + verb-ing"
+    ]
+  },
+  {
+    "word": "want",
+    "phonetic": "/wɒnt/",
+    "meaning_vi": "muốn",
+    "meaning_en": "to desire something",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "I want water.",
+        "vi": "Tôi muốn nước."
+      },
+      {
+        "en": "Do you want to go?",
+        "vi": "Bạn có muốn đi không?"
+      }
+    ],
+    "word_family": [
+      "wants (v)",
+      "wanted (v)"
+    ],
+    "collocations": [
+      "want + noun",
+      "want + to + verb"
+    ],
+    "synonyms": [
+      "would like",
+      "desire"
+    ],
+    "antonyms": [
+      "not want",
+      "refuse"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I want going.",
+        "correct": "I want to go.",
+        "explain_vi": "Sau 'want' dùng 'to + động từ'."
+      }
+    ],
+    "grammar_patterns": [
+      "want + noun",
+      "want + to-infinitive"
+    ]
+  },
+  {
+    "word": "need",
+    "phonetic": "/niːd/",
+    "meaning_vi": "cần",
+    "meaning_en": "to require something",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "I need help.",
+        "vi": "Tôi cần giúp đỡ."
+      },
+      {
+        "en": "We need to study.",
+        "vi": "Chúng tôi cần học."
+      }
+    ],
+    "word_family": [
+      "needs (v)",
+      "needed (v)"
+    ],
+    "collocations": [
+      "need + noun",
+      "need + to + verb"
+    ],
+    "synonyms": [
+      "require",
+      "must have"
+    ],
+    "antonyms": [
+      "not need",
+      "have"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I need go.",
+        "correct": "I need to go.",
+        "explain_vi": "Sau 'need' dùng 'to + động từ'."
+      }
+    ],
+    "grammar_patterns": [
+      "need + noun",
+      "need + to-infinitive"
+    ]
+  },
+  {
+    "word": "hate",
+    "phonetic": "/heɪt/",
+    "meaning_vi": "ghét",
+    "meaning_en": "to strongly dislike",
+    "pos": "verb",
+    "examples": [
+      {
+        "en": "I hate spiders.",
+        "vi": "Tôi ghét nhện."
+      },
+      {
+        "en": "He hates waiting.",
+        "vi": "Anh ấy ghét chờ đợi."
+      }
+    ],
+    "word_family": [
+      "hates (v)",
+      "hating (v)"
+    ],
+    "collocations": [
+      "hate + noun",
+      "hate + verb-ing"
+    ],
+    "synonyms": [
+      "detest",
+      "can't stand"
+    ],
+    "antonyms": [
+      "love",
+      "like"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I hate to wait.",
+        "correct": "I hate waiting.",
+        "explain_vi": "Thường dùng V-ing sau 'hate' để chỉ chung."
+      }
+    ],
+    "grammar_patterns": [
+      "hate + noun",
+      "hate + verb-ing"
+    ]
+  },
+  {
+    "word": "fun",
+    "phonetic": "/fʌn/",
+    "meaning_vi": "vui vẻ, thú vị",
+    "meaning_en": "enjoyable and amusing",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The party was fun.",
+        "vi": "Bữa tiệc rất vui."
+      },
+      {
+        "en": "We had fun.",
+        "vi": "Chúng tôi đã vui vẻ."
+      }
+    ],
+    "word_family": [
+      "funny (adj)"
+    ],
+    "collocations": [
+      "have fun",
+      "fun time",
+      "fun activity"
+    ],
+    "synonyms": [
+      "enjoyable",
+      "entertaining"
+    ],
+    "antonyms": [
+      "boring",
+      "dull"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I am fun.",
+        "correct": "I am funny.",
+        "explain_vi": "'Fun' mô tả sự việc, 'funny' mô tả người gây cười."
+      }
+    ],
+    "grammar_patterns": [
+      "be fun",
+      "have fun"
+    ]
+  },
+  {
+    "word": "easy",
+    "phonetic": "/ˈiː.zi/",
+    "meaning_vi": "dễ dàng",
+    "meaning_en": "not difficult",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "This test is easy.",
+        "vi": "Bài kiểm tra này dễ."
+      },
+      {
+        "en": "It's easy to learn.",
+        "vi": "Nó dễ học."
+      }
+    ],
+    "word_family": [
+      "easily (adv)",
+      "ease (n)"
+    ],
+    "collocations": [
+      "easy to + verb",
+      "easy for someone"
+    ],
+    "synonyms": [
+      "simple",
+      "effortless"
+    ],
+    "antonyms": [
+      "hard",
+      "difficult"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "It's easy learn.",
+        "correct": "It's easy to learn.",
+        "explain_vi": "Cần 'to' sau tính từ 'easy'."
+      }
+    ],
+    "grammar_patterns": [
+      "be easy",
+      "easy to + infinitive"
+    ]
+  },
+  {
+    "word": "difficult",
+    "phonetic": "/ˈdɪf.ɪ.kəlt/",
+    "meaning_vi": "khó khăn",
+    "meaning_en": "not easy, hard",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The homework is difficult.",
+        "vi": "Bài tập về nhà khó."
+      },
+      {
+        "en": "It's difficult to say.",
+        "vi": "Thật khó để nói."
+      }
+    ],
+    "word_family": [
+      "difficulty (n)",
+      "difficultly (adv)"
+    ],
+    "collocations": [
+      "difficult to + verb",
+      "difficult for someone"
+    ],
+    "synonyms": [
+      "hard",
+      "challenging"
+    ],
+    "antonyms": [
+      "easy",
+      "simple"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "It's difficult do.",
+        "correct": "It's difficult to do.",
+        "explain_vi": "Cần 'to' sau tính từ 'difficult'."
+      }
+    ],
+    "grammar_patterns": [
+      "be difficult",
+      "difficult to + infinitive"
+    ]
+  },
+  {
+    "word": "important",
+    "phonetic": "/ɪmˈpɔː.tənt/",
+    "meaning_vi": "quan trọng",
+    "meaning_en": "of great significance",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "This is important.",
+        "vi": "Điều này quan trọng."
+      },
+      {
+        "en": "It's important to study.",
+        "vi": "Học tập là quan trọng."
+      }
+    ],
+    "word_family": [
+      "importance (n)",
+      "importantly (adv)"
+    ],
+    "collocations": [
+      "important to + verb",
+      "important for someone"
+    ],
+    "synonyms": [
+      "significant",
+      "crucial"
+    ],
+    "antonyms": [
+      "unimportant",
+      "trivial"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "It's important study.",
+        "correct": "It's important to study.",
+        "explain_vi": "Cần 'to' sau tính từ 'important'."
+      }
+    ],
+    "grammar_patterns": [
+      "be important",
+      "important to + infinitive"
+    ]
+  },
+  {
+    "word": "nice",
+    "phonetic": "/naɪs/",
+    "meaning_vi": "tốt, đẹp, dễ chịu",
+    "meaning_en": "pleasant or kind",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "She is nice.",
+        "vi": "Cô ấy tốt bụng."
+      },
+      {
+        "en": "Nice weather.",
+        "vi": "Thời tiết đẹp."
+      }
+    ],
+    "word_family": [
+      "nicely (adv)",
+      "niceness (n)"
+    ],
+    "collocations": [
+      "nice to someone",
+      "nice day",
+      "nice person"
+    ],
+    "synonyms": [
+      "pleasant",
+      "kind"
+    ],
+    "antonyms": [
+      "mean",
+      "unpleasant"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I am nice with you.",
+        "correct": "I am nice to you.",
+        "explain_vi": "Dùng 'to' chứ không phải 'with'."
+      }
+    ],
+    "grammar_patterns": [
+      "be nice",
+      "nice to + noun"
+    ]
+  },
+  {
+    "word": "beautiful",
+    "phonetic": "/ˈbjuː.tɪ.fəl/",
+    "meaning_vi": "đẹp",
+    "meaning_en": "very pleasing to look at",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The flower is beautiful.",
+        "vi": "Bông hoa đẹp."
+      },
+      {
+        "en": "She is beautiful.",
+        "vi": "Cô ấy đẹp."
+      }
+    ],
+    "word_family": [
+      "beauty (n)",
+      "beautifully (adv)"
+    ],
+    "collocations": [
+      "beautiful place",
+      "beautiful woman",
+      "beautiful day"
+    ],
+    "synonyms": [
+      "gorgeous",
+      "lovely"
+    ],
+    "antonyms": [
+      "ugly",
+      "plain"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "He is beautiful.",
+        "correct": "He is handsome.",
+        "explain_vi": "'Beautiful' thường dùng cho nữ, 'handsome' cho nam."
+      }
+    ],
+    "grammar_patterns": [
+      "be beautiful"
+    ]
+  },
+  {
+    "word": "ugly",
+    "phonetic": "/ˈʌɡ.li/",
+    "meaning_vi": "xấu xí",
+    "meaning_en": "unpleasant to look at",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "The building is ugly.",
+        "vi": "Tòa nhà xấu xí."
+      },
+      {
+        "en": "That is an ugly color.",
+        "vi": "Đó là màu xấu."
+      }
+    ],
+    "word_family": [
+      "ugliness (n)"
+    ],
+    "collocations": [
+      "ugly face",
+      "ugly truth"
+    ],
+    "synonyms": [
+      "hideous",
+      "unattractive"
+    ],
+    "antonyms": [
+      "beautiful",
+      "pretty"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "She is ugly.",
+        "correct": "She is not beautiful.",
+        "explain_vi": "Tránh nói thẳng 'ugly' vì có thể thô lỗ."
+      }
+    ],
+    "grammar_patterns": [
+      "be ugly"
+    ]
+  },
+  {
+    "word": "right",
+    "phonetic": "/raɪt/",
+    "meaning_vi": "đúng",
+    "meaning_en": "correct or morally good",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "You are right.",
+        "vi": "Bạn đúng."
+      },
+      {
+        "en": "That is the right answer.",
+        "vi": "Đó là câu trả lời đúng."
+      }
+    ],
+    "word_family": [
+      "rightly (adv)",
+      "rightness (n)"
+    ],
+    "collocations": [
+      "right answer",
+      "right thing",
+      "right now"
+    ],
+    "synonyms": [
+      "correct",
+      "true"
+    ],
+    "antonyms": [
+      "wrong",
+      "incorrect"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I am right.",
+        "correct": "I am right.",
+        "explain_vi": "Không có lỗi phổ biến, nhưng lưu ý 'right' cũng có nghĩa 'bên phải'."
+      }
+    ],
+    "grammar_patterns": [
+      "be right"
+    ]
+  },
+  {
+    "word": "wrong",
+    "phonetic": "/rɒŋ/",
+    "meaning_vi": "sai",
+    "meaning_en": "incorrect or morally bad",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "You are wrong.",
+        "vi": "Bạn sai."
+      },
+      {
+        "en": "That is the wrong number.",
+        "vi": "Đó là số sai."
+      }
+    ],
+    "word_family": [
+      "wrongly (adv)",
+      "wrongness (n)"
+    ],
+    "collocations": [
+      "wrong answer",
+      "wrong way",
+      "wrong thing"
+    ],
+    "synonyms": [
+      "incorrect",
+      "false"
+    ],
+    "antonyms": [
+      "right",
+      "correct"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I am wrong.",
+        "correct": "I am wrong.",
+        "explain_vi": "Không có lỗi phổ biến, nhưng lưu ý 'wrong' là tính từ."
+      }
+    ],
+    "grammar_patterns": [
+      "be wrong"
+    ]
+  },
+  {
+    "word": "okay",
+    "phonetic": "/əʊˈkeɪ/",
+    "meaning_vi": "ổn, được",
+    "meaning_en": "acceptable or fine",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "I am okay.",
+        "vi": "Tôi ổn."
+      },
+      {
+        "en": "That's okay.",
+        "vi": "Không sao."
+      }
+    ],
+    "word_family": [
+      "okay (adv)"
+    ],
+    "collocations": [
+      "be okay",
+      "feel okay",
+      "okay with something"
+    ],
+    "synonyms": [
+      "fine",
+      "alright"
+    ],
+    "antonyms": [
+      "bad",
+      "terrible"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I am ok.",
+        "correct": "I am okay.",
+        "explain_vi": "Viết đầy đủ 'okay' hoặc 'OK'."
+      }
+    ],
+    "grammar_patterns": [
+      "be okay"
+    ]
+  },
+  {
+    "word": "sure",
+    "phonetic": "/ʃɔːr/",
+    "meaning_vi": "chắc chắn",
+    "meaning_en": "certain or confident",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "I am sure.",
+        "vi": "Tôi chắc chắn."
+      },
+      {
+        "en": "Are you sure?",
+        "vi": "Bạn có chắc không?"
+      }
+    ],
+    "word_family": [
+      "surely (adv)",
+      "sureness (n)"
+    ],
+    "collocations": [
+      "be sure",
+      "sure about something",
+      "make sure"
+    ],
+    "synonyms": [
+      "certain",
+      "confident"
+    ],
+    "antonyms": [
+      "unsure",
+      "doubtful"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I sure.",
+        "correct": "I am sure.",
+        "explain_vi": "Cần động từ 'to be'."
+      }
+    ],
+    "grammar_patterns": [
+      "be sure"
+    ]
+  },
+  {
+    "word": "maybe",
+    "phonetic": "/ˈmeɪ.bi/",
+    "meaning_vi": "có lẽ",
+    "meaning_en": "possibly",
+    "pos": "adverb",
+    "examples": [
+      {
+        "en": "Maybe it will rain.",
+        "vi": "Có lẽ trời sẽ mưa."
+      },
+      {
+        "en": "Maybe he is tired.",
+        "vi": "Có lẽ anh ấy mệt."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "maybe + clause"
+    ],
+    "synonyms": [
+      "perhaps",
+      "possibly"
+    ],
+    "antonyms": [
+      "definitely",
+      "certainly"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Maybe I go.",
+        "correct": "Maybe I will go.",
+        "explain_vi": "Thường dùng với thì tương lai hoặc hiện tại."
+      }
+    ],
+    "grammar_patterns": [
+      "maybe + sentence"
+    ]
+  },
+  {
+    "word": "yes",
+    "phonetic": "/jes/",
+    "meaning_vi": "có, vâng",
+    "meaning_en": "affirmative answer",
+    "pos": "interjection",
+    "examples": [
+      {
+        "en": "Yes, I do.",
+        "vi": "Vâng, tôi có."
+      },
+      {
+        "en": "Yes, please.",
+        "vi": "Vâng, làm ơn."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "say yes",
+      "yes or no"
+    ],
+    "synonyms": [
+      "yeah",
+      "sure"
+    ],
+    "antonyms": [
+      "no"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Yes, I like.",
+        "correct": "Yes, I like it.",
+        "explain_vi": "Cần tân ngữ sau động từ."
+      }
+    ],
+    "grammar_patterns": [
+      "Yes, + subject + verb"
+    ]
+  },
+  {
+    "word": "no",
+    "phonetic": "/nəʊ/",
+    "meaning_vi": "không",
+    "meaning_en": "negative answer",
+    "pos": "interjection",
+    "examples": [
+      {
+        "en": "No, I don't.",
+        "vi": "Không, tôi không."
+      },
+      {
+        "en": "No, thank you.",
+        "vi": "Không, cảm ơn."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "say no",
+      "no way"
+    ],
+    "synonyms": [
+      "nope",
+      "not"
+    ],
+    "antonyms": [
+      "yes"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "No, I don't like.",
+        "correct": "No, I don't like it.",
+        "explain_vi": "Cần tân ngữ sau động từ."
+      }
+    ],
+    "grammar_patterns": [
+      "No, + subject + auxiliary verb + not"
+    ]
+  },
+  {
+    "word": "please",
+    "phonetic": "/pliːz/",
+    "meaning_vi": "làm ơn, xin vui lòng",
+    "meaning_en": "polite request",
+    "pos": "interjection",
+    "examples": [
+      {
+        "en": "Please sit down.",
+        "vi": "Làm ơn ngồi xuống."
+      },
+      {
+        "en": "Yes, please.",
+        "vi": "Vâng, làm ơn."
+      }
+    ],
+    "word_family": [
+      "pleasing (adj)",
+      "pleasure (n)"
+    ],
+    "collocations": [
+      "please + verb",
+      "yes, please"
+    ],
+    "synonyms": [
+      "kindly"
+    ],
+    "antonyms": [],
+    "common_mistakes": [
+      {
+        "wrong": "Please you sit.",
+        "correct": "Please sit.",
+        "explain_vi": "Không cần chủ ngữ sau 'please'."
+      }
+    ],
+    "grammar_patterns": [
+      "please + imperative"
+    ]
+  },
+  {
+    "word": "sorry",
+    "phonetic": "/ˈsɒr.i/",
+    "meaning_vi": "xin lỗi",
+    "meaning_en": "feeling regret or apology",
+    "pos": "adjective",
+    "examples": [
+      {
+        "en": "I am sorry.",
+        "vi": "Tôi xin lỗi."
+      },
+      {
+        "en": "Sorry for the delay.",
+        "vi": "Xin lỗi vì sự chậm trễ."
+      }
+    ],
+    "word_family": [
+      "sorrow (n)",
+      "sorrily (adv)"
+    ],
+    "collocations": [
+      "be sorry",
+      "sorry for something",
+      "sorry about that"
+    ],
+    "synonyms": [
+      "apologetic",
+      "regretful"
+    ],
+    "antonyms": [
+      "unapologetic"
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I sorry.",
+        "correct": "I am sorry.",
+        "explain_vi": "Cần động từ 'to be'."
+      }
+    ],
+    "grammar_patterns": [
+      "be sorry"
+    ]
+  }
+]
