@@ -40,7 +40,7 @@ export const KIDS4_WORDS: VocabularyWord[] = [
   mk("kids","word_kids4_recess","recess","/ˈriː.ses/","giờ ra chơi","a break time at school","We play at recess.","Chúng con chơi giờ ra chơi.",["topic_school"]),
   mk("kids","word_kids4_playground","playground","/ˈpleɪ.ɡraʊnd/","sân chơi","a place to play outside","I run on the playground.","Con chạy ở sân chơi.",["topic_school"]),
   mk("kids","word_kids4_library","library","/ˈlaɪ.brər.i/","thư viện","a room full of books","I read in the library.","Con đọc sách ở thư viện.",["topic_school"]),
-  mk("kids","word_kids4_bus","bus","/bʌs/","xe buýt","a big car for many people","I take the bus to school.","Con đi xe buýt tới trường.",["topic_school"]),
+  mk("kids","word_kids4_bus","bus","/bʌs/","xe buýt","a big car for many people","I take the bus to school.","Con đi xe buýt tới trường.",["topic_transport"]),
   mk("kids","word_kids4_lunch","lunch","/lʌntʃ/","bữa trưa","the meal at midday","I eat lunch at school.","Con ăn trưa ở trường.",["topic_school"]),
   mk("kids","word_kids4_lunchbox","lunchbox","/ˈlʌntʃ.bɒks/","hộp cơm trưa","a box for your food","I bring my lunchbox.","Con mang hộp cơm.",["topic_school"]),
   mk("kids","word_kids4_paint","paint","/peɪnt/","vẽ tranh, sơn","to put color with a brush","I paint a tree.","Con vẽ một cái cây.",["topic_school"]),

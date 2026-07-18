@@ -132,11 +132,12 @@ const CORE_WORDS: VocabularyWord[] = [
   word({ id: "word_shorts", word: "shorts", phonetic: "/ʃɔːts/", meaning_vi: "quần đùi / quần soóc", example: "He wears shorts in summer.", example_vi: "Bạn ấy mặc quần đùi vào mùa hè.", topicIds: ["topic_clothes"] }),
   word({ id: "word_sweater", word: "sweater", phonetic: "/ˈswet.ər/", meaning_vi: "áo len", example: "This sweater is soft.", example_vi: "Chiếc áo len này mềm.", topicIds: ["topic_clothes"] }),
 
-  // ── Travel ──
-  word({ id: "word_airplane", word: "airplane", phonetic: "/ˈeə.pleɪn/", meaning_vi: "máy bay", example: "The airplane is fast.", example_vi: "Máy bay rất nhanh.", topicIds: ["topic_travel"] }),
-  word({ id: "word_train", word: "train", phonetic: "/treɪn/", meaning_vi: "tàu hỏa", example: "We go by train.", example_vi: "Chúng con đi bằng tàu hỏa.", topicIds: ["topic_travel"] }),
-  word({ id: "word_bus", word: "bus", phonetic: "/bʌs/", meaning_vi: "xe buýt", example: "I take the bus.", example_vi: "Con đi xe buýt.", topicIds: ["topic_travel"] }),
-  word({ id: "word_car", word: "car", phonetic: "/kɑːr/", meaning_vi: "xe ô tô", example: "My father drives a car.", example_vi: "Bố con lái ô tô.", topicIds: ["topic_travel"] }),
+  // ── Transport (phương tiện) ──
+  word({ id: "word_airplane", word: "airplane", phonetic: "/ˈeə.pleɪn/", meaning_vi: "máy bay", example: "The airplane is fast.", example_vi: "Máy bay rất nhanh.", topicIds: ["topic_transport"] }),
+  word({ id: "word_train", word: "train", phonetic: "/treɪn/", meaning_vi: "tàu hỏa", example: "We go by train.", example_vi: "Chúng con đi bằng tàu hỏa.", topicIds: ["topic_transport"] }),
+  word({ id: "word_bus", word: "bus", phonetic: "/bʌs/", meaning_vi: "xe buýt", example: "I take the bus.", example_vi: "Con đi xe buýt.", topicIds: ["topic_transport"] }),
+  word({ id: "word_car", word: "car", phonetic: "/kɑːr/", meaning_vi: "xe ô tô", example: "My father drives a car.", example_vi: "Bố con lái ô tô.", topicIds: ["topic_transport"] }),
+  // ── Travel (du lịch) ──
   word({ id: "word_ticket", word: "ticket", phonetic: "/ˈtɪk.ɪt/", meaning_vi: "vé", example: "I buy a ticket.", example_vi: "Con mua một chiếc vé.", topicIds: ["topic_travel"] }),
   word({ id: "word_suitcase", word: "suitcase", phonetic: "/ˈsuːt.keɪs/", meaning_vi: "vali", example: "My suitcase is heavy.", example_vi: "Vali của con nặng.", topicIds: ["topic_travel"] }),
   word({ id: "word_map", word: "map", phonetic: "/mæp/", meaning_vi: "bản đồ", example: "We look at the map.", example_vi: "Chúng con xem bản đồ.", topicIds: ["topic_travel"] }),
