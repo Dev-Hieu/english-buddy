@@ -5,6 +5,8 @@ import { SessionHeader } from "@/components/layout/SessionHeader";
 import { speakText } from "@/services/speechService";
 import { saveCertificate } from "@/services/certificateService";
 import { cn } from "@/components/ui/cn";
+import { generateExam } from "@/services/examService";
+import type { GeneratedExam } from "@/services/examService";
 
 /* ────────────────────────── Types ────────────────────────── */
 
@@ -514,6 +516,48 @@ function generateCertId(): string {
   return id;
 }
 
+/** Convert API GeneratedExam to CertExam format, merging with the hardcoded fallback. */
+function apiExamToCertExam(api: GeneratedExam, fallback: CertExam): CertExam {
+  const toExamQuestion = (q: GeneratedExam["sections"]["listening"][0]): ExamQuestion | null => {
+    if (!q.options || q.options.length < 2) return null;
+    const answerNum = typeof q.answer === "number" ? q.answer : parseInt(String(q.answer), 10);
+    if (isNaN(answerNum) || answerNum < 0 || answerNum >= q.options.length) return null;
+    return {
+      question: q.question,
+      options: q.options,
+      answer: answerNum,
+      explanation: q.explain_vi,
+      listenText: q.audio_text,
+    };
+  };
+
+  const vocabGrammarQs = api.sections.vocab_grammar
+    .map(toExamQuestion)
+    .filter((q): q is ExamQuestion => q !== null);
+  const listeningQs = api.sections.listening
+    .map(toExamQuestion)
+    .filter((q): q is ExamQuestion => q !== null);
+  const readingQs = api.sections.reading
+    .map(toExamQuestion)
+    .filter((q): q is ExamQuestion => q !== null);
+
+  // Build sections, falling back to hardcoded if API returned nothing useful
+  const sections: ExamSection[] = fallback.sections.map((sec) => {
+    if (sec.type === "vocabulary" || sec.type === "grammar") {
+      return vocabGrammarQs.length > 0 ? { ...sec, questions: vocabGrammarQs } : sec;
+    }
+    if (sec.type === "listening") {
+      return listeningQs.length > 0 ? { ...sec, questions: listeningQs } : sec;
+    }
+    if (sec.type === "reading") {
+      return readingQs.length > 0 ? { ...sec, questions: readingQs } : sec;
+    }
+    return sec;
+  });
+
+  return { ...fallback, sections };
+}
+
 function formatTime(seconds: number): string {
   const m = Math.floor(seconds / 60);
   const s = seconds % 60;
@@ -548,6 +592,7 @@ export function CertificationPage({ student, onBackHome, onLevelUp }: { student:
   const [certId] = useState(generateCertId);
   const [levelAdvanced, setLevelAdvanced] = useState(false);
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
+  const fallbackExamRef = useRef<CertExam | null>(null);
 
   // Flatten questions for indexing
   const allQuestions = selectedExam ? selectedExam.sections.flatMap((s) => s.questions) : [];
@@ -578,6 +623,7 @@ export function CertificationPage({ student, onBackHome, onLevelUp }: { student:
   }, [phase]);
 
   const startExam = (exam: CertExam) => {
+    fallbackExamRef.current = exam;
     setSelectedExam(exam);
     setAnswers({});
     setCurrentSection(0);
@@ -585,6 +631,22 @@ export function CertificationPage({ student, onBackHome, onLevelUp }: { student:
     setTimeLeft(exam.timeMinutes * 60);
     setPhase("preExam");
   };
+
+  // Try to load questions from API when user is on the pre-exam screen.
+  // On success, replace selectedExam with API questions. On failure, keep hardcoded fallback.
+  useEffect(() => {
+    if (phase !== "preExam" || !selectedExam || !fallbackExamRef.current) return;
+    const fallback = fallbackExamRef.current;
+    const apiLevel = selectedExam.level.toLowerCase();
+    generateExam(apiLevel)
+      .then((apiExam) => {
+        setSelectedExam(apiExamToCertExam(apiExam, fallback));
+      })
+      .catch(() => {
+        // Silently fall back to hardcoded questions
+      });
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [phase]);
 
   const beginExam = () => {
     setPhase("exam");

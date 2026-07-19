@@ -1,10 +1,12 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import type { Student } from "@/types";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { SessionHeader } from "@/components/layout/SessionHeader";
 import { GraduationCap, CheckCircle, XCircle, Trophy, Award, Printer } from "lucide-react";
 import { saveCertificate } from "@/services/certificateService";
+import { generateExam } from "@/services/examService";
+import type { GeneratedExam } from "@/services/examService";
 
 // ── Types ──
 
@@ -617,17 +619,17 @@ const LEVELS: CEFRLevel[] = ["pre-A1", "A1", "A2", "B1", "B2", "C1", "C2"];
 const MAX_ANSWERS = 30;
 
 /** Pick next unused question at the given level, or null if exhausted */
-function pickNextQuestion(level: CEFRLevel, usedIndices: Set<number>): number | null {
-  for (let i = 0; i < QUESTION_BANK.length; i++) {
-    if (!usedIndices.has(i) && QUESTION_BANK[i].level === level) return i;
+function pickNextQuestion(level: CEFRLevel, usedIndices: Set<number>, bank: Question[] = QUESTION_BANK): number | null {
+  for (let i = 0; i < bank.length; i++) {
+    if (!usedIndices.has(i) && bank[i].level === level) return i;
   }
   // Try adjacent levels if current exhausted
   const idx = LEVELS.indexOf(level);
   for (const delta of [1, -1, 2, -2, 3, -3]) {
     const adj = idx + delta;
     if (adj < 0 || adj >= LEVELS.length) continue;
-    for (let i = 0; i < QUESTION_BANK.length; i++) {
-      if (!usedIndices.has(i) && QUESTION_BANK[i].level === LEVELS[adj]) return i;
+    for (let i = 0; i < bank.length; i++) {
+      if (!usedIndices.has(i) && bank[i].level === LEVELS[adj]) return i;
     }
   }
   return null;
@@ -711,6 +713,56 @@ const LEVEL_DESC_VI: Record<CEFRLevel, string> = {
   C2: "Thành thạo — Bạn hiểu mọi thứ dễ dàng, gần như người bản ngữ.",
 };
 
+// ── API helpers ──
+
+const API_LEVEL_MAP: Partial<Record<string, CEFRLevel>> = {
+  "pre-a1": "pre-A1",
+  a1: "A1",
+  a2: "A2",
+  b1: "B1",
+  b2: "B2",
+  c1: "C1",
+  c2: "C2",
+};
+
+const TYPE_MAP: Record<string, Question["type"]> = {
+  vocabulary: "vocabulary",
+  grammar: "grammar",
+  listening: "listening",
+  reading: "reading",
+};
+
+/** Convert API GeneratedExam questions to the placement test Question format. */
+function apiToPlacementQuestions(api: GeneratedExam): Question[] {
+  const cefrLevel = API_LEVEL_MAP[api.level.toLowerCase()];
+  if (!cefrLevel) return [];
+
+  const result: Question[] = [];
+  const allSections: [string, GeneratedExam["sections"]["listening"]][] = [
+    ["vocabulary", api.sections.vocab_grammar],
+    ["listening", api.sections.listening],
+    ["reading", api.sections.reading],
+  ];
+
+  for (const [sectionType, questions] of allSections) {
+    for (const q of questions) {
+      if (!q.options || q.options.length !== 4) continue;
+      const answerNum = typeof q.answer === "number" ? q.answer : parseInt(String(q.answer), 10);
+      if (isNaN(answerNum) || answerNum < 0 || answerNum >= q.options.length) continue;
+      const qType: Question["type"] = TYPE_MAP[sectionType] ?? "vocabulary";
+      result.push({
+        level: cefrLevel,
+        type: qType,
+        question: q.question,
+        options: q.options as [string, string, string, string],
+        answer: answerNum,
+        context: q.passage,
+      });
+    }
+  }
+  return result;
+}
+
 // ── Component ──
 
 type Phase = "intro" | "testing" | "result" | "certificate";
@@ -725,12 +777,31 @@ export function PlacementTestPage({ student, onComplete, onBack }: Props) {
   const [showFeedback, setShowFeedback] = useState(false);
   const [resultLevel, setResultLevel] = useState<CEFRLevel>("pre-A1");
 
+  // Extended question bank: starts with hardcoded questions, augmented with API questions on mount.
+  const bankRef = useRef<Question[]>([...QUESTION_BANK]);
+
+  useEffect(() => {
+    // Load questions from API for key levels and prepend them (API questions first so they're picked first).
+    const levels = ["pre-a1", "a1", "a2", "b1", "b2", "c1", "c2"];
+    Promise.allSettled(levels.map((lv) => generateExam(lv))).then((results) => {
+      const apiQuestions: Question[] = [];
+      for (const result of results) {
+        if (result.status === "fulfilled") {
+          apiQuestions.push(...apiToPlacementQuestions(result.value));
+        }
+      }
+      if (apiQuestions.length > 0) {
+        bankRef.current = [...apiQuestions, ...QUESTION_BANK];
+      }
+    });
+  }, []);
+
   const questionNum = answers.length + 1;
   const progressPct = (answers.length / MAX_ANSWERS) * 100;
 
   // Start test — always at Pre-A1
   const startTest = () => {
-    const idx = pickNextQuestion("pre-A1", new Set());
+    const idx = pickNextQuestion("pre-A1", new Set(), bankRef.current);
     setQuestionIdx(idx);
     if (idx !== null) setUsedIndices(new Set([idx]));
     setCurrentLevel("pre-A1");
@@ -763,7 +834,7 @@ export function PlacementTestPage({ student, onComplete, onBack }: Props) {
     setSelected(optionIdx);
     setShowFeedback(true);
 
-    const q = QUESTION_BANK[questionIdx];
+    const q = bankRef.current[questionIdx];
     const correct = optionIdx === q.answer;
     const newAnswers = [...answers, { level: q.level, correct }];
 
@@ -782,7 +853,7 @@ export function PlacementTestPage({ student, onComplete, onBack }: Props) {
       const nextLevel = adaptLevel(currentLevel, correct);
       setCurrentLevel(nextLevel);
       const newUsed = new Set(usedIndices);
-      const nextIdx = pickNextQuestion(nextLevel, newUsed);
+      const nextIdx = pickNextQuestion(nextLevel, newUsed, bankRef.current);
       if (nextIdx !== null) {
         newUsed.add(nextIdx);
         setUsedIndices(newUsed);
@@ -1002,7 +1073,7 @@ export function PlacementTestPage({ student, onComplete, onBack }: Props) {
   }
 
   // ── Testing screen ──
-  const q = questionIdx !== null ? QUESTION_BANK[questionIdx] : null;
+  const q = questionIdx !== null ? bankRef.current[questionIdx] : null;
   if (!q) return null;
 
   const typeLabel: Record<Question["type"], string> = {
