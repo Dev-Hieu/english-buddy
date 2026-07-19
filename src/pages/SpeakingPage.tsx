@@ -4,6 +4,7 @@ import { SEED_TOPICS, TOPIC_TO_CATEGORY } from "@/data/seedTopics";
 import { SEED_VOCABULARY } from "@/data/seedVocabulary";
 import { getVideoLesson } from "@/data/videoLessons";
 import { getWordBank, type BankWord } from "@/services/wordBankService";
+import { getPhraseBank } from "@/services/phraseBankService";
 import { LEVEL_LABELS, LEVEL_ORDER, type Level, type Student } from "@/types";
 import { speakText } from "@/services/speechService";
 import { micAvailable, startRecording, type Recorder } from "@/services/audioRecorder";
@@ -385,11 +386,29 @@ function WordMode({ topicId, level, onBack, onShadowing }: { topicId: string; le
 
 function PhraseMode({ topicId, level, onBack }: { topicId: string; level: Level; onBack: () => void }) {
   const videoLesson = useMemo(() => getVideoLesson(topicId), [topicId]);
+  const categoryId = topicId?.startsWith("topic_") ? TOPIC_TO_CATEGORY[topicId] : topicId;
+
+  const [bankPhrases, setBankPhrases] = useState<{ phrase: string; meaning_vi: string }[]>([]);
+  useEffect(() => {
+    if (!categoryId || videoLesson) return;
+    getPhraseBank((level as string) === "all" ? undefined : level, categoryId)
+      .then((data) => {
+        const mapped = data.map((b) => ({ phrase: b.phrase, meaning_vi: b.meaning_vi }));
+        if (mapped.length > 0) setBankPhrases(mapped);
+      })
+      .catch(() => {});
+  }, [categoryId, level, videoLesson]);
+
   const phrases = useMemo(() => {
     // Ưu tiên video phrases
     if (videoLesson && videoLesson.phrases.length > 0) {
       const vp = videoLesson.phrases.map((p) => ({ phrase: p.en, meaning_vi: p.vi }));
       const shuffled = vp.sort(() => Math.random() - 0.5);
+      return shuffled.slice(0, 8);
+    }
+    // Use bank phrases when available
+    if (bankPhrases.length > 0) {
+      const shuffled = [...bankPhrases].sort(() => Math.random() - 0.5);
       return shuffled.slice(0, 8);
     }
     // Fallback: combine multi-word vocabulary entries + common phrases
@@ -413,7 +432,7 @@ function PhraseMode({ topicId, level, onBack }: { topicId: string; level: Level;
     // Shuffle and take up to 8
     const shuffled = unique.sort(() => Math.random() - 0.5);
     return shuffled.slice(0, 8);
-  }, [topicId, level]);
+  }, [topicId, level, bankPhrases, videoLesson]);
 
   const [n, setN] = useState(0);
   const [done, setDone] = useState(false);

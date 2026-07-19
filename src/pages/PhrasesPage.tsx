@@ -3,8 +3,9 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import type { Student } from "@/types";
 import type { Level } from "@/types/student";
 import { LEVEL_ORDER } from "@/types/student";
-import { SEED_PHRASES, PHRASE_CATEGORIES } from "@/data/seedPhrases";
+import { SEED_PHRASES } from "@/data/seedPhrases";
 import type { Phrase } from "@/data/seedPhrases";
+import { TOPIC_TO_CATEGORY } from "@/data/seedTopics";
 import { getPhraseBank } from "@/services/phraseBankService";
 import { speakText } from "@/services/speechService";
 import { matchesLevel } from "@/utils/levelFilter";
@@ -29,24 +30,32 @@ function shuffle<T>(a: T[]): T[] {
   return r;
 }
 
-const TOPIC_TO_CATEGORY: Record<string, string> = {
-  topic_greetings: "greetings",
-  topic_travel: "travel",
-  topic_food: "restaurant",
-  topic_shopping: "shopping",
-  topic_family: "family",
-  topic_health: "health",
-  topic_sports: "sports",
-  topic_weather: "weather",
-  topic_feelings: "feelings",
-  topic_school: "school",
-  topic_entertainment: "entertainment",
-  topic_work: "work",
-  topic_transport: "transport",
-  topic_city: "directions",
-  topic_hobbies: "social",
-  topic_house: "hotel",
-};
+const BANK_PHRASE_CATEGORIES = [
+  { id: "animals_and_nature", name: "Animals & Nature", name_vi: "Động vật", emoji: "🐾" },
+  { id: "clothes_and_accessories", name: "Clothes", name_vi: "Quần áo", emoji: "👔" },
+  { id: "colours_and_shapes", name: "Colours", name_vi: "Màu sắc", emoji: "🎨" },
+  { id: "communication_and_technology", name: "Technology", name_vi: "Công nghệ", emoji: "📱" },
+  { id: "daily_life", name: "Daily Life", name_vi: "Sinh hoạt", emoji: "☀️" },
+  { id: "education", name: "Education", name_vi: "Giáo dục", emoji: "📚" },
+  { id: "entertainment_and_media", name: "Entertainment", name_vi: "Giải trí", emoji: "🎬" },
+  { id: "environment", name: "Environment", name_vi: "Môi trường", emoji: "🌍" },
+  { id: "family_and_friends", name: "Family", name_vi: "Gia đình", emoji: "👨‍👩‍👧" },
+  { id: "feelings_and_opinions", name: "Feelings", name_vi: "Cảm xúc", emoji: "😊" },
+  { id: "food_and_drink", name: "Food & Drink", name_vi: "Đồ ăn", emoji: "🍽️" },
+  { id: "health_and_body", name: "Health", name_vi: "Sức khỏe", emoji: "🏥" },
+  { id: "hobbies_and_leisure", name: "Hobbies", name_vi: "Sở thích", emoji: "⚽" },
+  { id: "house_and_home", name: "Home", name_vi: "Nhà ở", emoji: "🏠" },
+  { id: "measurements_and_numbers", name: "Numbers", name_vi: "Số", emoji: "🔢" },
+  { id: "places", name: "Places", name_vi: "Địa điểm", emoji: "🏛️" },
+  { id: "services", name: "Services", name_vi: "Dịch vụ", emoji: "🏪" },
+  { id: "shopping", name: "Shopping", name_vi: "Mua sắm", emoji: "🛒" },
+  { id: "society_and_community", name: "Society", name_vi: "Xã hội", emoji: "🤝" },
+  { id: "sport", name: "Sport", name_vi: "Thể thao", emoji: "🏆" },
+  { id: "science_and_research", name: "Science", name_vi: "Khoa học", emoji: "🔬" },
+  { id: "travel_and_transport", name: "Travel", name_vi: "Du lịch", emoji: "✈️" },
+  { id: "weather_and_seasons", name: "Weather", name_vi: "Thời tiết", emoji: "🌤️" },
+  { id: "work_and_jobs", name: "Work", name_vi: "Công việc", emoji: "💼" },
+];
 
 export function PhrasesPage({ student, topicId, onBackHome }: Props) {
   const initialCategory = topicId ? TOPIC_TO_CATEGORY[topicId] ?? null : null;
@@ -76,10 +85,9 @@ export function PhrasesPage({ student, topicId, onBackHome }: Props) {
       .catch(() => {});
   }, [level]);
 
-  const activeCategory = PHRASE_CATEGORIES.find((c) => c.id === activeCategoryId) ?? null;
+  const activeCategory = BANK_PHRASE_CATEGORIES.find((c) => c.id === activeCategoryId) ?? null;
 
-  // TODO: bank phrases use new category IDs — need category migration before switching
-  const phraseSource = SEED_PHRASES;
+  const phraseSource = bankPhrases.length > 0 ? bankPhrases : SEED_PHRASES;
 
   const filteredPhrases = useMemo(() => {
     if (!activeCategoryId) return [];
@@ -116,7 +124,7 @@ export function PhrasesPage({ student, topicId, onBackHome }: Props) {
         </div>
 
         <div className="grid grid-cols-2 gap-3">
-          {PHRASE_CATEGORIES.map((cat) => {
+          {BANK_PHRASE_CATEGORIES.map((cat) => {
             const count = phraseSource.filter(
               (p) => p.category === cat.id && (level === "all" || matchesLevel(p.level, level)),
             ).length;
