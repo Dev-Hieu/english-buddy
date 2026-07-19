@@ -388,7 +388,7 @@ function WordImageGame({ topicId, level, onClose }: { topicId?: string; level: L
     if (!categoryId) return;
     const vl = topicId ? getVideoLesson(topicId) : undefined;
     if (vl) return;
-    getWordBank(level === "all" ? undefined : level, categoryId).then(setBankWords).catch(() => {});
+    getWordBank(level as string === "all" ? undefined : level, categoryId).then(setBankWords).catch(() => {});
   }, [categoryId, level, topicId]);
 
   const pool = useMemo(() => {
@@ -522,7 +522,7 @@ function SentenceGame({ topicId, level, onClose }: { topicId?: string; level: Le
     if (!categoryId) return;
     const vl = topicId ? getVideoLesson(topicId) : undefined;
     if (vl) return;
-    getWordBank(level === "all" ? undefined : level, categoryId).then(setBankWords).catch(() => {});
+    getWordBank(level as string === "all" ? undefined : level, categoryId).then(setBankWords).catch(() => {});
   }, [categoryId, level, topicId]);
 
   const pool = useMemo(() => {

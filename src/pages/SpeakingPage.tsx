@@ -216,7 +216,7 @@ function WordMode({ topicId, level, onBack, onShadowing }: { topicId: string; le
   const [bankWords, setBankWords] = useState<BankWord[]>([]);
   useEffect(() => {
     if (!categoryId || videoLesson) return;
-    getWordBank(level === "all" ? undefined : level, categoryId).then(setBankWords).catch(() => {});
+    getWordBank((level as string) === "all" ? undefined : level, categoryId).then(setBankWords).catch(() => {});
   }, [categoryId, level, videoLesson]);
 
   const words = useMemo(() => {
