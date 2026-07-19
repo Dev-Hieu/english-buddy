@@ -40,6 +40,14 @@ const SUGGESTED_VIDEOS: SuggestedVideo[] = [
   { id: "aiUGN3TDvw4", title: "Activities & Hobbies (BBC)", level: "A1", topic: "Daily" },
   { id: "on_1sS6Ii8M", title: "Your Home Town (BBC)", level: "A1", topic: "Daily" },
   { id: "sMg4vj6ugSs", title: "The Weather (BBC)", level: "A1", topic: "Daily" },
+  { id: "31y2Bq1RYQA", title: "Where You're From (BBC)", level: "A1", topic: "Daily" },
+  { id: "SHXPpsIJTb0", title: "Asking Directions (BBC)", level: "A1", topic: "Daily" },
+  { id: "1vUTq-Pd4Vs", title: "Talking About Ability (BBC)", level: "A1", topic: "Daily" },
+  { id: "gCs4knrlnD4", title: "Habits (BBC)", level: "A2", topic: "Daily" },
+  { id: "kTf0V4HyFtM", title: "Last Weekend (BBC)", level: "A2", topic: "Daily" },
+  { id: "yyClpj_GJDc", title: "Feelings (BBC)", level: "A2", topic: "Daily" },
+  { id: "osDr7To4Ml4", title: "Personality (BBC)", level: "A2", topic: "Daily" },
+  { id: "5VGtCbFclgk", title: "Superlatives (BBC)", level: "A2", topic: "Daily" },
   // ── Easy English — A1 (topics without BBC match) ──
   { id: "h_KUklZdq5w", title: "Daily Conversations — Food", level: "A1", topic: "Daily" },
   { id: "InwUQgGhwRU", title: "School Life", level: "A1", topic: "Daily" },
@@ -56,6 +64,12 @@ const SUGGESTED_VIDEOS: SuggestedVideo[] = [
   { id: "wbKtYgJfV4I", title: "My Little Red Wagon", level: "A1", topic: "Kids" },
   { id: "ZeRq4dNWu68", title: "Hello (Story)", level: "A1", topic: "Kids" },
   { id: "ZXTmyBKV0AI", title: "GS1 Monkey", level: "A1", topic: "Kids" },
+  // ── Little Fox — Kids Stories & Songs ──
+  { id: "ZNeUFr1fRAk", title: "Good Morning Song", level: "A1", topic: "Kids" },
+  { id: "hGk_YH2VPgM", title: "Hello Hello", level: "A1", topic: "Kids" },
+  { id: "Uv1JkBL5728", title: "What Do You Want?", level: "A1", topic: "Kids" },
+  { id: "tbbKjDjMDok", title: "The Three Little Pigs", level: "A1", topic: "Kids" },
+  { id: "R9yn5CI3jWI", title: "Goldilocks and Three Bears", level: "A1", topic: "Kids" },
   // ── Daily (A1-A2) ──
   { id: "2iiuvBnW9kQ", title: "English Reading — Shopping", level: "A1", topic: "Daily" },
   { id: "bngvFaB_qx0", title: "English Reading — Traveling", level: "A1", topic: "Daily" },
