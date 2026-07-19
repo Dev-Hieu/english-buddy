@@ -42,17 +42,26 @@ interface HomePageProps {
   onNavigate: Nav;
 }
 
-// ── Skill tiles — iOS app icon style: bold bg + white icon ──
-const SKILL_TILES: { icon: ComponentType<{ className?: string }>; title: string; view: string; bg: string }[] = [
+// ── Tiles — grouped by purpose ──
+type Tile = { icon: ComponentType<{ className?: string }>; title: string; view: string; bg: string };
+
+const FOUNDATION_TILES: Tile[] = [
+  { icon: Sparkles, title: "Từ vựng", view: "topics", bg: "bg-amber-500" },
+  { icon: MessageSquareText, title: "Cụm từ", view: "phrases", bg: "bg-sky-500" },
+  { icon: GraduationCap, title: "Ngữ pháp", view: "grammar", bg: "bg-rose-500" },
+  { icon: Type, title: "Mẫu câu", view: "conversation", bg: "bg-orange-500" },
+];
+
+const SKILL_TILES: Tile[] = [
   { icon: Ear, title: "Nghe", view: "listening", bg: "bg-blue-500" },
   { icon: Mic, title: "Nói", view: "speak", bg: "bg-teal-500" },
   { icon: BookOpen, title: "Đọc", view: "reading", bg: "bg-green-500" },
   { icon: PenLine, title: "Viết", view: "writing", bg: "bg-violet-500" },
-  { icon: Sparkles, title: "Từ mới", view: "topics", bg: "bg-amber-500" },
-  { icon: MessageSquareText, title: "Câu", view: "phrases", bg: "bg-sky-500" },
-  { icon: GraduationCap, title: "Ngữ pháp", view: "grammar", bg: "bg-rose-500" },
+];
+
+const PRACTICE_TILES: Tile[] = [
   { icon: Gamepad2, title: "Game", view: "games", bg: "bg-pink-500" },
-  { icon: Type, title: "Mẫu câu", view: "conversation", bg: "bg-orange-500" },
+  { icon: Mic, title: "Shadowing", view: "shadowing", bg: "bg-cyan-500" },
 ];
 
 export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, learnedToday, reviewDue, pendingCount, dueTestCount, onStartSkillTest, onChangeStudent, onLogout, onOpenProfile, onNavigate }: HomePageProps) {
@@ -375,14 +384,14 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
         </p>
       )}
 
-      {/* ── Kỹ năng 3×3 ── */}
+      {/* ── 📖 HỌC NỀN TẢNG ── */}
       <section>
-        <h2 className="mb-3 text-base font-black">Kỹ năng</h2>
-        <div className="grid grid-cols-3 sm:grid-cols-3 lg:grid-cols-5 gap-4 lg:gap-5">
-          {SKILL_TILES.map((t) => (
+        <h2 className="mb-3 text-base font-black">📖 Học nền tảng</h2>
+        <div className="grid grid-cols-4 gap-4">
+          {FOUNDATION_TILES.map((t) => (
             <button key={t.view} type="button" onClick={() => onNavigate(t.view)}
               className="flex flex-col items-center gap-2 transition-all duration-150 active:scale-[0.90] hover:scale-[1.05]">
-              <span className={cn("flex h-14 w-14 lg:h-16 lg:w-16 items-center justify-center rounded-[1rem] text-white shadow-lg", t.bg)}>
+              <span className={cn("flex h-14 w-14 items-center justify-center rounded-[1rem] text-white shadow-lg", t.bg)}>
                 <t.icon className="h-7 w-7" />
               </span>
               <span className="text-[11px] font-bold text-foreground">{t.title}</span>
@@ -391,10 +400,49 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
         </div>
       </section>
 
+      {/* ── 🎯 LUYỆN 4 KỸ NĂNG ── */}
+      <section>
+        <h2 className="mb-3 text-base font-black">🎯 Luyện 4 kỹ năng</h2>
+        <div className="grid grid-cols-4 gap-4">
+          {SKILL_TILES.map((t) => (
+            <button key={t.view} type="button" onClick={() => onNavigate(t.view)}
+              className="flex flex-col items-center gap-2 transition-all duration-150 active:scale-[0.90] hover:scale-[1.05]">
+              <span className={cn("flex h-14 w-14 items-center justify-center rounded-[1rem] text-white shadow-lg", t.bg)}>
+                <t.icon className="h-7 w-7" />
+              </span>
+              <span className="text-[11px] font-bold text-foreground">{t.title}</span>
+            </button>
+          ))}
+        </div>
+      </section>
+
+      {/* ── 🎮 LUYỆN TẬP THÊM ── */}
+      <section>
+        <h2 className="mb-3 text-base font-black">🎮 Luyện tập thêm</h2>
+        <div className="grid grid-cols-4 gap-4">
+          {PRACTICE_TILES.map((t) => (
+            <button key={t.view} type="button" onClick={() => onNavigate(t.view)}
+              className="flex flex-col items-center gap-2 transition-all duration-150 active:scale-[0.90] hover:scale-[1.05]">
+              <span className={cn("flex h-14 w-14 items-center justify-center rounded-[1rem] text-white shadow-lg", t.bg)}>
+                <t.icon className="h-7 w-7" />
+              </span>
+              <span className="text-[11px] font-bold text-foreground">{t.title}</span>
+            </button>
+          ))}
+          <button type="button" onClick={() => onNavigate("integrated-lesson")}
+            className="flex flex-col items-center gap-2 transition-all duration-150 active:scale-[0.90] hover:scale-[1.05]">
+            <span className="flex h-14 w-14 items-center justify-center rounded-[1rem] bg-emerald-500 text-white shadow-lg">
+              <Layers className="h-7 w-7" />
+            </span>
+            <span className="text-[11px] font-bold text-foreground">Tích hợp</span>
+          </button>
+        </div>
+      </section>
+
       {/* ── Từ yếu tuần này ── */}
       <SmartReview studentId={student.id} onNavigate={onNavigate} />
 
-      {/* ── Kết quả thi gần đây — iOS icon row ── */}
+      {/* ── Kết quả thi gần đây ── */}
       {testResults.length > 0 && (
         <section>
           <h3 className="mb-3 text-center text-xs font-black text-muted-foreground">Kết quả gần đây</h3>
@@ -415,9 +463,9 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
         </section>
       )}
 
-      {/* ── Khám phá thêm ── */}
+      {/* ── 📊 ĐÁNH GIÁ & LỘ TRÌNH ── */}
       <section>
-        <h2 className="mb-3 text-base font-black">Khám phá thêm</h2>
+        <h2 className="mb-3 text-base font-black">📊 Đánh giá & Lộ trình</h2>
         <div className="grid grid-cols-2 gap-2">
           <button type="button" onClick={() => onNavigate("placement")}
             className="flex items-center gap-3 rounded-2xl bg-card border border-border/40 p-3 shadow-sm transition-all active:scale-[0.97] hover:shadow-md text-left">
@@ -427,6 +475,16 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
             <div className="min-w-0">
               <p className="text-xs font-extrabold">Xếp lớp</p>
               <p className="text-[9px] text-muted-foreground">Kiểm tra trình độ</p>
+            </div>
+          </button>
+          <button type="button" onClick={() => onNavigate("certification")}
+            className="flex items-center gap-3 rounded-2xl bg-card border border-border/40 p-3 shadow-sm transition-all active:scale-[0.97] hover:shadow-md text-left">
+            <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-[0.625rem] bg-red-500 text-white shadow-md">
+              <Award className="h-5 w-5" />
+            </span>
+            <div className="min-w-0">
+              <p className="text-xs font-extrabold">Chứng chỉ</p>
+              <p className="text-[9px] text-muted-foreground">Thi lấy bằng</p>
             </div>
           </button>
           <button type="button" onClick={() => onNavigate("learning-path")}
@@ -447,26 +505,6 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
             <div className="min-w-0">
               <p className="text-xs font-extrabold">Huy hiệu</p>
               <p className="text-[9px] text-muted-foreground">Thành tích</p>
-            </div>
-          </button>
-          <button type="button" onClick={() => onNavigate("integrated-lesson")}
-            className="flex items-center gap-3 rounded-2xl bg-card border border-border/40 p-3 shadow-sm transition-all active:scale-[0.97] hover:shadow-md text-left">
-            <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-[0.625rem] bg-emerald-500 text-white shadow-md">
-              <Layers className="h-5 w-5" />
-            </span>
-            <div className="min-w-0">
-              <p className="text-xs font-extrabold">Bài tích hợp</p>
-              <p className="text-[9px] text-muted-foreground">4 kỹ năng</p>
-            </div>
-          </button>
-          <button type="button" onClick={() => onNavigate("certification")}
-            className="flex items-center gap-3 rounded-2xl bg-card border border-border/40 p-3 shadow-sm transition-all active:scale-[0.97] hover:shadow-md text-left">
-            <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-[0.625rem] bg-red-500 text-white shadow-md">
-              <Award className="h-5 w-5" />
-            </span>
-            <div className="min-w-0">
-              <p className="text-xs font-extrabold">Chứng chỉ</p>
-              <p className="text-[9px] text-muted-foreground">Thi lấy bằng</p>
             </div>
           </button>
         </div>
