@@ -1,12 +1,60 @@
 import { ArrowRight, BookOpen, Check, GraduationCap, PenLine, RotateCcw, Sparkles, X } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { GRAMMAR_TOPICS } from "@/data/grammar";
 import { checkGrammar } from "@/utils/grammarCheck";
 import { submitQuiz } from "@/services/quizService";
+import { getGrammarBank, type BankGrammarTopic } from "@/services/grammarBankService";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { SessionHeader } from "@/components/layout/SessionHeader";
 import { cn } from "@/components/ui/cn";
+import type { GrammarTopic, GrammarExercise } from "@/types";
+
+/** Convert grammar bank API topic → GrammarTopic format */
+function bankToGrammarTopic(b: BankGrammarTopic): GrammarTopic {
+  const points = b.rules.map((r) => `${r.rule} → ${r.example_en} (${r.example_vi})`);
+  b.common_mistakes.forEach((m) => points.push(`💡 Sai: "${m.wrong}" → Đúng: "${m.correct}" — ${m.explain_vi}`));
+
+  const exercises: GrammarExercise[] = b.exercises.map((ex: any, i: number) => {
+    if (ex.type === "multiple_choice" && ex.options) {
+      return {
+        id: `${b.id}_ex${i}`,
+        type: "choice" as const,
+        question: ex.question,
+        options: ex.options,
+        answer: ex.options[typeof ex.answer === "number" ? ex.answer : 0] || "",
+        explain_vi: ex.explain_vi,
+      };
+    }
+    if (ex.type === "error_correction") {
+      return {
+        id: `${b.id}_ex${i}`,
+        type: "fill" as const,
+        question: `Sửa lỗi: "${ex.question}"`,
+        answer: typeof ex.answer === "string" ? ex.answer : "",
+        explain_vi: ex.explain_vi,
+      };
+    }
+    // fill_in
+    return {
+      id: `${b.id}_ex${i}`,
+      type: "fill" as const,
+      question: ex.question,
+      answer: typeof ex.answer === "string" ? ex.answer : "",
+      explain_vi: ex.explain_vi,
+    };
+  });
+
+  return {
+    id: b.id,
+    level: b.level as any,
+    title: b.title,
+    title_vi: b.title_vi,
+    summary_vi: b.description_vi,
+    points,
+    exercises,
+  };
+}
 
 interface GrammarRunnerPageProps {
   topicId: string;
@@ -60,7 +108,21 @@ function GrammarPoint({ text }: { text: string }) {
 }
 
 export function GrammarRunnerPage({ topicId, studentId, onBackHome }: GrammarRunnerPageProps) {
-  const topic = GRAMMAR_TOPICS.find((t) => t.id === topicId);
+  const seedTopic = GRAMMAR_TOPICS.find((t) => t.id === topicId);
+  const [bankTopic, setBankTopic] = useState<GrammarTopic | null>(null);
+  const [loading, setLoading] = useState(!seedTopic);
+
+  useEffect(() => {
+    if (seedTopic) return; // already found in seed data
+    // Try loading from grammar bank API
+    getGrammarBank().then((topics) => {
+      const found = topics.find((t) => t.id === topicId);
+      if (found) setBankTopic(bankToGrammarTopic(found));
+      setLoading(false);
+    }).catch(() => setLoading(false));
+  }, [topicId, seedTopic]);
+
+  const topic = seedTopic || bankTopic;
   const [phase, setPhase] = useState<"learn" | "quiz" | "done">("learn");
   const [index, setIndex] = useState(0);
   const [input, setInput] = useState("");
@@ -68,6 +130,15 @@ export function GrammarRunnerPage({ topicId, studentId, onBackHome }: GrammarRun
   const [checked, setChecked] = useState(false);
   const [correct, setCorrect] = useState(false);
   const [score, setScore] = useState(0);
+
+  if (loading) {
+    return (
+      <main className="mx-auto w-full max-w-md sm:max-w-lg lg:max-w-2xl overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
+        <SessionHeader title="Ngữ pháp" onClose={onBackHome} />
+        <Card><CardContent className="p-8 text-center font-bold text-muted-foreground">Đang tải...</CardContent></Card>
+      </main>
+    );
+  }
 
   if (!topic) {
     return (
