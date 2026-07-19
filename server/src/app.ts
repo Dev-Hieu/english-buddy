@@ -1689,6 +1689,37 @@ Return ONLY valid JSON, no markdown, no code fences.` },
     res.json(exam);
   });
 
+  // ── AI Grade Writing (DeepSeek) ──
+  app.post("/api/grade-writing", requireAuth, async (req, res) => {
+    const { text, prompt, level } = req.body;
+    if (!text || typeof text !== "string") return res.status(400).json({ error: "text required" });
+    const dsKey = process.env.DEEPSEEK_API_KEY;
+    if (!dsKey) return res.json({ score: 0, feedback: "AI chưa được cấu hình", corrections: [] });
+
+    try {
+      const r = await fetch("https://api.deepseek.com/chat/completions", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Authorization: `Bearer ${dsKey}` },
+        body: JSON.stringify({
+          model: process.env.DEEPSEEK_MODEL || "deepseek-chat",
+          messages: [
+            { role: "system", content: `You are an English writing teacher for Vietnamese learners at ${(level || "a1").toUpperCase()} level. Grade the student's writing based on the given prompt. Return ONLY valid JSON with: {"score": 0-100, "feedback": "short feedback in Vietnamese", "corrections": ["correction 1 in Vietnamese", "correction 2"]}. Be encouraging but honest. Check grammar, spelling, vocabulary usage, and whether the writing addresses the prompt.` },
+            { role: "user", content: `Prompt: ${prompt || "Free writing"}\n\nStudent's writing:\n${text}` },
+          ],
+          temperature: 0.3,
+          max_tokens: 500,
+          response_format: { type: "json_object" },
+        }),
+      });
+      const data = await r.json() as any;
+      const content = data.choices?.[0]?.message?.content;
+      const parsed = JSON.parse(content);
+      res.json({ score: parsed.score || 0, feedback: parsed.feedback || "", corrections: parsed.corrections || [] });
+    } catch {
+      res.json({ score: 0, feedback: "Lỗi khi chấm bài", corrections: [] });
+    }
+  });
+
   return app;
 }
 

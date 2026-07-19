@@ -1,5 +1,5 @@
 import { BookOpen, CheckCircle2, Ear, GraduationCap, Mic, PenLine, Play, RotateCcw, Volume2, ArrowRight } from "lucide-react";
-import { useCallback, useMemo, useState } from "react";
+import { useCallback, useMemo, useRef, useState } from "react";
 import type { Student } from "@/types";
 import { speakText } from "@/services/speechService";
 import { listenOnce, isRecognitionSupported } from "@/services/speechRecognitionService";
@@ -647,10 +647,15 @@ function VocabStep({ step, onNext }: { step: LessonStep; onNext: () => void }) {
 function ListenStep({ step, onNext }: { step: LessonStep; onNext: () => void }) {
   const [answers, setAnswers] = useState<Record<number, number>>({});
   const [checked, setChecked] = useState(false);
+  const [showText, setShowText] = useState(false);
+  const [playCount, setPlayCount] = useState(0);
   const questions = step.questions || [];
 
   const playPassage = () => {
-    if (step.passage) speakText(step.passage);
+    if (step.passage) {
+      speakText(step.passage);
+      setPlayCount((c) => c + 1);
+    }
   };
 
   const pick = (qi: number, oi: number) => {
@@ -658,63 +663,71 @@ function ListenStep({ step, onNext }: { step: LessonStep; onNext: () => void }) 
     setAnswers((prev) => ({ ...prev, [qi]: oi }));
   };
 
-  const check = () => setChecked(true);
+  const check = () => { setChecked(true); setShowText(true); };
   const allAnswered = questions.every((_, i) => answers[i] !== undefined);
   const score = questions.filter((q, i) => answers[i] === q.answer).length;
 
   return (
     <div className="space-y-4">
-      <h2 className="text-lg font-extrabold">{step.title}</h2>
+      <h2 className="text-lg font-extrabold flex items-center gap-2">
+        <Ear className="h-5 w-5 text-blue-500" /> {step.title}
+      </h2>
       <p className="text-sm text-muted-foreground">{step.content}</p>
 
-      <Card>
-        <CardContent className="p-4 space-y-3">
-          <Button variant="outline" size="sm" onClick={playPassage} className="w-full">
-            <Play className="h-4 w-4" /> Nghe bài đọc
-          </Button>
-          {step.passage && (
-            <p className="font-reading text-sm lg:text-base leading-relaxed border-l-2 border-primary/30 pl-3 text-muted-foreground">{step.passage}</p>
+      <Card className="border-blue-200 bg-blue-50/30 dark:border-blue-800 dark:bg-blue-950/20">
+        <CardContent className="p-5 text-center space-y-3">
+          <button type="button" onClick={playPassage}
+            className="flex items-center justify-center gap-2 mx-auto h-16 w-16 rounded-full bg-blue-500 text-white shadow-lg transition-all active:scale-95 hover:bg-blue-600">
+            <Play className="h-7 w-7" />
+          </button>
+          <p className="text-xs font-bold text-blue-600">{playCount === 0 ? "Nhấn để nghe" : `Đã nghe ${playCount} lần`}</p>
+          {!showText && playCount > 0 && (
+            <button type="button" onClick={() => setShowText(true)}
+              className="text-[10px] text-muted-foreground underline">Xem nội dung</button>
+          )}
+          {showText && step.passage && (
+            <p className="font-reading text-sm leading-relaxed text-left border-l-2 border-blue-300 pl-3 text-muted-foreground mt-2">{step.passage}</p>
           )}
         </CardContent>
       </Card>
 
-      {questions.map((q, qi) => (
-        <div key={qi} className="space-y-2">
-          <p className="text-sm font-bold">{q.q}</p>
-          <div className="grid gap-2">
-            {q.options.map((opt, oi) => {
-              const selected = answers[qi] === oi;
-              const isCorrect = oi === q.answer;
-              let cls = "border-border";
-              if (checked && selected && isCorrect) cls = "border-green-500 bg-green-50";
-              else if (checked && selected && !isCorrect) cls = "border-red-500 bg-red-50";
-              else if (checked && isCorrect) cls = "border-green-300 bg-green-50/50";
-              else if (selected) cls = "border-primary bg-primary/5";
-              return (
-                <button
-                  key={oi}
-                  type="button"
-                  onClick={() => pick(qi, oi)}
-                  className={cn("rounded-xl border-2 px-4 py-2.5 text-left text-sm font-semibold transition-all active:scale-[0.98]", cls)}
-                >
-                  {opt}
-                </button>
-              );
-            })}
-          </div>
-        </div>
-      ))}
+      {playCount > 0 && (
+        <>
+          {questions.map((q, qi) => (
+            <div key={qi} className="space-y-2">
+              <p className="text-sm font-bold">{q.q}</p>
+              <div className="grid gap-2">
+                {q.options.map((opt, oi) => {
+                  const selected = answers[qi] === oi;
+                  const isCorrect = oi === q.answer;
+                  let cls = "border-border";
+                  if (checked && selected && isCorrect) cls = "border-green-500 bg-green-50";
+                  else if (checked && selected && !isCorrect) cls = "border-red-500 bg-red-50";
+                  else if (checked && isCorrect) cls = "border-green-300 bg-green-50/50";
+                  else if (selected) cls = "border-primary bg-primary/5";
+                  return (
+                    <button key={oi} type="button" onClick={() => pick(qi, oi)}
+                      className={cn("rounded-xl border-2 px-4 py-2.5 text-left text-sm font-semibold transition-all active:scale-[0.98]", cls)}>
+                      {opt}
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+          ))}
 
-      <div className="flex justify-end gap-2">
-        {!checked ? (
-          <Button onClick={check} disabled={!allAnswered}>Kiểm tra</Button>
-        ) : (
-          <div className="flex items-center gap-3 w-full justify-between">
-            <span className="text-sm font-bold">{score}/{questions.length} đúng</span>
-            <Button onClick={onNext}>Tiếp theo <ArrowRight className="h-4 w-4" /></Button>
+          <div className="flex justify-end gap-2">
+            {!checked ? (
+              <Button onClick={check} disabled={!allAnswered}>Kiểm tra</Button>
+            ) : (
+              <div className="flex items-center gap-3 w-full justify-between">
+                <span className="text-sm font-bold">{score}/{questions.length} đúng</span>
+                <Button onClick={onNext}>Tiếp theo <ArrowRight className="h-4 w-4" /></Button>
+              </div>
+            )}
           </div>
-        )}
-      </div>
+        </>
+      )}
     </div>
   );
 }
@@ -860,40 +873,51 @@ function GrammarStep({ step, onNext }: { step: LessonStep; onNext: () => void })
 // ── Speak Step ──
 
 function SpeakStep({ step, onNext }: { step: LessonStep; onNext: () => void }) {
-  const [listening, setListening] = useState(false);
-  const [result, setResult] = useState<string | null>(null);
-  const [matched, setMatched] = useState<boolean | null>(null);
+  const [phase, setPhase] = useState<"idle" | "recording" | "scoring" | "result">("idle");
+  const [score, setScore] = useState<number | null>(null);
   const phrase = step.phrase || "";
-  const supported = isRecognitionSupported();
+  const canMic = typeof window !== "undefined" && window.isSecureContext;
+  const recorderRef = useRef<any>(null);
 
   const playPhrase = () => speakText(phrase);
 
-  const startListening = async () => {
-    if (!supported) return;
-    setListening(true);
-    setResult(null);
-    setMatched(null);
+  const startRecording = async () => {
+    if (!canMic) return;
+    setPhase("recording");
+    setScore(null);
     try {
-      const results = await listenOnce("en-US");
-      const heard = results[0]?.toLowerCase().trim() || "";
-      setResult(heard);
-      const target = phrase.toLowerCase().replace(/[.,!?]/g, "").trim();
-      const match = heard.includes(target) || target.includes(heard) || similarity(heard, target) > 0.6;
-      setMatched(match);
+      const { startRecording: start } = await import("@/services/audioRecorder");
+      recorderRef.current = await start();
     } catch {
-      setResult("(Không nghe được, thử lại)");
-      setMatched(false);
-    } finally {
-      setListening(false);
+      setPhase("idle");
     }
   };
 
+  const stopAndScore = async () => {
+    if (!recorderRef.current) { setPhase("idle"); return; }
+    setPhase("scoring");
+    try {
+      const blob = await recorderRef.current.stop();
+      const { assessPronunciation } = await import("@/services/pronunciationService");
+      const result = await assessPronunciation(blob, phrase);
+      setScore(result.score);
+    } catch {
+      setScore(null);
+    }
+    setPhase("result");
+  };
+
+  const verdict = score === null ? "Không chấm được" : score >= 80 ? "Xuất sắc!" : score >= 60 ? "Khá tốt!" : "Thử lại nhé!";
+  const verdictColor = score === null ? "border-gray-300" : score >= 80 ? "border-green-500 bg-green-50" : score >= 60 ? "border-amber-400 bg-amber-50" : "border-red-400 bg-red-50";
+
   return (
     <div className="space-y-4">
-      <h2 className="text-lg font-extrabold">{step.title}</h2>
+      <h2 className="text-lg font-extrabold flex items-center gap-2">
+        <Mic className="h-5 w-5 text-teal-500" /> {step.title}
+      </h2>
       <p className="text-sm text-muted-foreground">{step.content}</p>
 
-      <Card>
+      <Card className="border-teal-200 bg-teal-50/30 dark:border-teal-800 dark:bg-teal-950/20">
         <CardContent className="p-5 text-center space-y-4">
           <p className="text-xl font-bold">{phrase}</p>
           <Button variant="outline" size="sm" onClick={playPhrase}>
@@ -902,31 +926,45 @@ function SpeakStep({ step, onNext }: { step: LessonStep; onNext: () => void }) {
         </CardContent>
       </Card>
 
-      {supported ? (
-        <div className="flex flex-col items-center gap-3">
-          <button
-            type="button"
-            onClick={startListening}
-            disabled={listening}
-            className={cn(
-              "flex h-16 w-16 items-center justify-center rounded-full transition-all",
-              listening ? "bg-red-500 animate-pulse" : "bg-primary hover:brightness-110",
-            )}
-          >
-            <Mic className="h-7 w-7 text-white" />
-          </button>
-          <span className="text-xs text-muted-foreground">{listening ? "Đang nghe..." : "Nhấn để nói"}</span>
-
-          {result !== null && (
-            <div className={cn("w-full rounded-xl border-2 p-4 text-center", matched ? "border-green-500 bg-green-50" : "border-red-400 bg-red-50")}>
-              <p className="text-sm font-bold">{matched ? "Rất tốt!" : "Thử lại nhé!"}</p>
-              <p className="text-xs text-muted-foreground mt-1">Bạn nói: "{result}"</p>
+      <div className="flex flex-col items-center gap-3">
+        {phase === "idle" && (
+          <>
+            <button type="button" onClick={startRecording}
+              className="flex h-16 w-16 items-center justify-center rounded-full bg-teal-500 text-white shadow-lg transition-all active:scale-95 hover:bg-teal-600">
+              <Mic className="h-7 w-7" />
+            </button>
+            <span className="text-xs text-muted-foreground">Nhấn để thu âm</span>
+          </>
+        )}
+        {phase === "recording" && (
+          <>
+            <button type="button" onClick={stopAndScore}
+              className="flex h-16 w-16 items-center justify-center rounded-full bg-red-500 text-white shadow-lg animate-pulse">
+              <span className="h-6 w-6 rounded bg-white" />
+            </button>
+            <span className="text-xs font-bold text-red-500">Đang ghi âm... Nhấn để dừng</span>
+          </>
+        )}
+        {phase === "scoring" && (
+          <div className="flex flex-col items-center gap-2 py-4">
+            <RotateCcw className="h-8 w-8 animate-spin text-primary" />
+            <span className="text-xs font-bold text-muted-foreground">Đang chấm phát âm...</span>
+          </div>
+        )}
+        {phase === "result" && (
+          <>
+            <div className={cn("w-full rounded-xl border-2 p-4 text-center", verdictColor)}>
+              {score !== null && (
+                <p className="text-3xl font-black mb-1">{score}%</p>
+              )}
+              <p className="text-sm font-bold">{verdict}</p>
             </div>
-          )}
-        </div>
-      ) : (
-        <p className="text-sm text-muted-foreground text-center">Trình duyệt không hỗ trợ nhận dạng giọng nói.</p>
-      )}
+            <Button variant="outline" size="sm" onClick={() => { setPhase("idle"); setScore(null); }}>
+              <RotateCcw className="h-4 w-4" /> Thử lại
+            </Button>
+          </>
+        )}
+      </div>
 
       <div className="flex justify-end">
         <Button onClick={onNext}>Tiếp theo <ArrowRight className="h-4 w-4" /></Button>
@@ -939,10 +977,32 @@ function SpeakStep({ step, onNext }: { step: LessonStep; onNext: () => void }) {
 
 function WriteStep({ step, onNext }: { step: LessonStep; onNext: () => void }) {
   const [text, setText] = useState("");
+  const [grading, setGrading] = useState(false);
+  const [feedback, setFeedback] = useState<{ score: number; feedback: string; corrections: string[] } | null>(null);
+
+  const gradeWriting = async () => {
+    if (text.trim().length < 3) return;
+    setGrading(true);
+    try {
+      const { apiRequest } = await import("@/services/api");
+      const result = await apiRequest<{ score: number; feedback: string; corrections: string[] }>("/api/grade-writing", {
+        method: "POST",
+        body: { text: text.trim(), prompt: step.prompt || step.content, level: "a1" },
+      });
+      setFeedback(result);
+    } catch {
+      setFeedback({ score: 0, feedback: "Không thể chấm bài. Vui lòng thử lại.", corrections: [] });
+    }
+    setGrading(false);
+  };
+
+  const wordCount = text.trim().split(/\s+/).filter(Boolean).length;
 
   return (
     <div className="space-y-4">
-      <h2 className="text-lg font-extrabold">{step.title}</h2>
+      <h2 className="text-lg font-extrabold flex items-center gap-2">
+        <PenLine className="h-5 w-5 text-violet-500" /> {step.title}
+      </h2>
       <p className="text-sm text-muted-foreground">{step.content}</p>
 
       {step.prompt && (
@@ -962,11 +1022,35 @@ function WriteStep({ step, onNext }: { step: LessonStep; onNext: () => void }) {
       />
 
       <div className="flex items-center justify-between">
-        <span className="text-xs text-muted-foreground">{text.trim().split(/\s+/).filter(Boolean).length} từ</span>
-        <Button onClick={onNext} disabled={text.trim().length < 3}>
-          Tiếp theo <ArrowRight className="h-4 w-4" />
-        </Button>
+        <span className="text-xs text-muted-foreground">{wordCount} từ</span>
+        {!feedback ? (
+          <Button onClick={gradeWriting} disabled={wordCount < 3 || grading}>
+            {grading ? <><RotateCcw className="h-4 w-4 animate-spin" /> Đang chấm...</> : <><CheckCircle2 className="h-4 w-4" /> Chấm bài</>}
+          </Button>
+        ) : (
+          <Button onClick={onNext}>Tiếp theo <ArrowRight className="h-4 w-4" /></Button>
+        )}
       </div>
+
+      {feedback && (
+        <Card className={cn("border-2", feedback.score >= 70 ? "border-green-400 bg-green-50/50" : feedback.score >= 40 ? "border-amber-400 bg-amber-50/50" : "border-red-400 bg-red-50/50")}>
+          <CardContent className="p-4 space-y-2">
+            <div className="flex items-center gap-3">
+              <span className="text-2xl font-black">{feedback.score}%</span>
+              <span className="text-sm font-bold">{feedback.score >= 70 ? "Tốt lắm!" : feedback.score >= 40 ? "Khá, cần cải thiện" : "Cần luyện thêm"}</span>
+            </div>
+            <p className="text-sm text-muted-foreground">{feedback.feedback}</p>
+            {feedback.corrections.length > 0 && (
+              <div>
+                <p className="text-xs font-bold mb-1">Gợi ý sửa:</p>
+                {feedback.corrections.map((c, i) => (
+                  <p key={i} className="text-xs text-muted-foreground">• {c}</p>
+                ))}
+              </div>
+            )}
+          </CardContent>
+        </Card>
+      )}
     </div>
   );
 }
