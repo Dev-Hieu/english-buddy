@@ -5,9 +5,10 @@ import { useEffect, useMemo, useState } from "react";
 import { getLeaderboard } from "@/services/studentService";
 import { apiRequest } from "@/services/api";
 import { getSkillTestResults, type SkillTestResult } from "@/services/progressService";
-// TODO: migrate SEED_TOPICS and SEED_VOCABULARY usages below to getCategories()/getWordBank() APIs.
+// Uses bank API with SEED fallback
 import { SEED_TOPICS } from "@/data/seedTopics";
 import { SEED_VOCABULARY } from "@/data/seedVocabulary";
+import { getCategories, getWordBank, type Category, type BankWord } from "@/services/wordBankService";
 import type { Level, Student } from "@/types";
 import { topicWords, topicsWithLevel } from "@/utils/levelFilter";
 import { avatarEmoji } from "@/components/ui/emoji";
@@ -68,6 +69,9 @@ const PRACTICE_TILES: Tile[] = [
 export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, learnedToday, reviewDue, pendingCount, dueTestCount, onStartSkillTest, onChangeStudent, onLogout, onOpenProfile, onNavigate }: HomePageProps) {
   const learned = new Set(studiedWordIds);
   const [testResults, setTestResults] = useState<SkillTestResult[]>([]);
+  // Uses bank API with SEED fallback
+  const [bankWords, setBankWords] = useState<BankWord[]>([]);
+  const [bankCategories, setBankCategories] = useState<Category[]>([]);
   const [showMenu, setShowMenu] = useState(false);
   const [weekRank, setWeekRank] = useState<number | null>(null);
   const [showFreezeConfirm, setShowFreezeConfirm] = useState(false);
@@ -88,6 +92,11 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
 
   useEffect(() => { getSkillTestResults(student.id).then(r => setTestResults(r.slice(0, 5))).catch(() => {}); }, [student.id]);
   useEffect(() => { getLeaderboard("week").then((lb) => { const idx = lb.findIndex((e: any) => e.id === student.id); setWeekRank(idx >= 0 ? idx + 1 : null); }).catch(() => {}); }, [student.id]);
+  // Uses bank API with SEED fallback
+  useEffect(() => {
+    getWordBank(student.level).then(setBankWords).catch(() => {});
+    getCategories().then(setBankCategories).catch(() => {});
+  }, [student.level]);
 
   const [editGoal, setEditGoal] = useState(false);
   const [goalVal, setGoalVal] = useState(student.dailyGoal || 10);
@@ -116,17 +125,20 @@ export function HomePage({ student, studiedWordIds, streak, xp, learnedTotal, le
     const done = ws.filter((w) => learned.has(w.id)).length;
     return { id: t.id, name: t.name_vi, total: ws.length, done, pct: ws.length ? Math.round((done / ws.length) * 100) : 0 };
   });
-  const totalWords = SEED_VOCABULARY.length;
-  const overallPct = totalWords ? Math.round((learned.size / totalWords) * 100) : 0;
+  // Uses bank API with SEED fallback
+  const totalVocab = bankWords.length > 0 ? bankWords.length : SEED_VOCABULARY.length;
+  const overallPct = totalVocab ? Math.round((learned.size / totalVocab) * 100) : 0;
 
-  // Word of the Day — deterministic pick based on day of year
+  // Word of the Day — deterministic pick based on day of year. Uses bank API with SEED fallback
   const wotd = useMemo(() => {
+    const dayOfYear = Math.floor((Date.now() - new Date(new Date().getFullYear(), 0, 0).getTime()) / 86400000);
+    if (bankWords.length > 0) {
+      const bw = bankWords[dayOfYear % bankWords.length];
+      return { id: bw.id, word: bw.word, phonetic: bw.phonetic, meaning_vi: bw.meaning_vi, example: bw.examples?.[0]?.en || "", topicIds: bw.categories, level: bw.level as any, imageUrl: "", source: "seed" as const, createdAt: 0 };
+    }
     if (SEED_VOCABULARY.length === 0) return null;
-    const now = new Date();
-    const start = new Date(now.getFullYear(), 0, 0);
-    const dayOfYear = Math.floor((now.getTime() - start.getTime()) / 86400000);
     return SEED_VOCABULARY[dayOfYear % SEED_VOCABULARY.length];
-  }, []);
+  }, [bankWords]);
 
   return (
     <main className="mx-auto w-full max-w-md sm:max-w-lg lg:max-w-2xl overflow-x-hidden h-[100dvh] overflow-y-auto bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:h-[calc(100dvh-2rem)] sm:border sm:border-border/40 px-4 pt-4 pb-6 space-y-4">
