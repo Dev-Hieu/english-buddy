@@ -1,9 +1,10 @@
 import { ClipboardCheck, Loader2, Volume2 } from "lucide-react";
-import { useEffect, useRef, useState } from "react";
-import { SEED_TOPICS } from "@/data/seedTopics";
+import { useEffect, useMemo, useRef, useState } from "react";
+import { SEED_TOPICS, TOPIC_TO_CATEGORY } from "@/data/seedTopics";
 import { SEED_VOCABULARY } from "@/data/seedVocabulary";
 import type { QuizQuestion, Student } from "@/types";
 import { generateQuiz, submitQuiz } from "@/services/quizService";
+import { getWordBank, type BankWord } from "@/services/wordBankService";
 import { speakText } from "@/services/speechService";
 import { cn } from "@/components/ui/cn";
 import { Button } from "@/components/ui/button";
@@ -18,7 +19,7 @@ interface TestPageProps {
   onBackHome: () => void;
 }
 
-const wordById = new Map(SEED_VOCABULARY.map((w) => [w.id, w]));
+const seedWordById = new Map(SEED_VOCABULARY.map((w) => [w.id, w]));
 
 export function TestPage({ student, topicId, level = "all", onBackHome }: TestPageProps) {
   const topic = SEED_TOPICS.find((t) => t.id === topicId);
@@ -29,6 +30,31 @@ export function TestPage({ student, topicId, level = "all", onBackHome }: TestPa
   const [wrongWordIds, setWrongWordIds] = useState<string[]>([]);
   const [finished, setFinished] = useState(false);
   const startedAt = useRef(Date.now());
+
+  const categoryId = topicId?.startsWith("topic_") ? TOPIC_TO_CATEGORY[topicId] : topicId;
+  const [bankWords, setBankWords] = useState<BankWord[]>([]);
+  useEffect(() => {
+    if (!categoryId) return;
+    getWordBank(level === "all" ? undefined : level, categoryId).then(setBankWords).catch(() => {});
+  }, [categoryId, level]);
+
+  const wordById = useMemo(() => {
+    if (bankWords.length === 0) return seedWordById;
+    const map = new Map(seedWordById);
+    for (const bw of bankWords) {
+      if (!map.has(bw.id)) {
+        map.set(bw.id, {
+          id: bw.id, word: bw.word, phonetic: bw.phonetic || "",
+          meaning_vi: bw.meaning_vi, meaning_en: bw.meaning_en || "",
+          pos: bw.pos || "", example: bw.examples?.[0]?.en || "",
+          example_vi: bw.examples?.[0]?.vi || "",
+          topicIds: bw.categories, level: bw.level as any,
+          imageUrl: bw.image || "", source: "seed" as const, createdAt: 0,
+        });
+      }
+    }
+    return map;
+  }, [bankWords]);
 
   useEffect(() => {
     let alive = true;

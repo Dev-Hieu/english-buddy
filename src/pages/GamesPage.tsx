@@ -1,6 +1,8 @@
 import { Car, Ear, Gamepad2, Grid3x3, Images, Link2, PartyPopper, Puzzle, Trophy, Volume2, X } from "lucide-react";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { SEED_VOCABULARY } from "@/data/seedVocabulary";
+import { TOPIC_TO_CATEGORY } from "@/data/seedTopics";
+import { getWordBank, type BankWord } from "@/services/wordBankService";
 import type { Student, VocabularyWord } from "@/types";
 import { recordAnswer } from "@/services/progressService";
 import { speakText } from "@/services/speechService";
@@ -43,10 +45,27 @@ export function GamesPage({ student, topicId, level = "all", studiedWordIds, onB
   const [hard, setHard] = useState(false);
   const [lbGameId, setLbGameId] = useState<string | null>(null);
 
+  const categoryId = topicId?.startsWith("topic_") ? TOPIC_TO_CATEGORY[topicId] : topicId;
+  const [bankWords, setBankWords] = useState<BankWord[]>([]);
+  useEffect(() => {
+    if (!categoryId) return;
+    getWordBank(level === "all" ? undefined : level, categoryId).then(setBankWords).catch(() => {});
+  }, [categoryId, level]);
+
   const base = useMemo(() => {
+    if (bankWords.length >= 4) {
+      return bankWords.map((bw): VocabularyWord => ({
+        id: bw.id, word: bw.word, phonetic: bw.phonetic || "",
+        meaning_vi: bw.meaning_vi, meaning_en: bw.meaning_en || "",
+        pos: bw.pos || "", example: bw.examples?.[0]?.en || "",
+        example_vi: bw.examples?.[0]?.vi || "",
+        topicIds: bw.categories, level: bw.level as any,
+        imageUrl: bw.image || "", source: "seed" as const, createdAt: 0,
+      }));
+    }
     const t = topicWords(SEED_VOCABULARY, topicId, level);
     return t.length >= 4 ? t : SEED_VOCABULARY;
-  }, [topicId, level]);
+  }, [bankWords, topicId, level]);
   const reviewPool = useMemo(() => {
     const learned = new Set(studiedWordIds);
     const r = base.filter((w) => learned.has(w.id));
@@ -156,7 +175,7 @@ export function GamesPage({ student, topicId, level = "all", studiedWordIds, onB
       {game === "sudoku" && <SudokuGame onClose={back} />}
       {game === "wordsearch" && <WordSearchGame words={reviewPool.map((w) => ({ word: w.word, meaning_vi: w.meaning_vi }))} onComplete={(s) => submitGameScore(student.id, "wordsearch", s).catch(() => {})} onBack={back} />}
       {game === "speedtype" && <SpeedTypeGame words={reviewPool.map((w) => ({ word: w.word, meaning_vi: w.meaning_vi }))} onComplete={(s) => submitGameScore(student.id, "speedtype", s).catch(() => {})} onBack={back} />}
-      {game === "wordchain" && <WordChainGame words={SEED_VOCABULARY.map((w) => ({ word: w.word }))} onComplete={(s) => submitGameScore(student.id, "wordchain", s).catch(() => {})} onBack={back} />}
+      {game === "wordchain" && <WordChainGame words={base.map((w) => ({ word: w.word }))} onComplete={(s) => submitGameScore(student.id, "wordchain", s).catch(() => {})} onBack={back} />}
     </main>
   );
 }

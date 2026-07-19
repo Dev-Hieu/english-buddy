@@ -1,6 +1,7 @@
 import { GraduationCap, Volume2 } from "lucide-react";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { SEED_VOCABULARY } from "@/data/seedVocabulary";
+import { getWordBank, type BankWord } from "@/services/wordBankService";
 import { buildQuiz } from "@/utils/quizGenerator";
 import { matchesLevel } from "@/utils/levelFilter";
 import { recordAnswer } from "@/services/progressService";
@@ -19,15 +20,50 @@ interface ExamPageProps {
   onBackHome: () => void;
 }
 
-const wordById = new Map(SEED_VOCABULARY.map((w) => [w.id, w]));
+const seedWordById = new Map(SEED_VOCABULARY.map((w) => [w.id, w]));
 const EXAM_SIZE = 20;
 
 export function ExamPage({ student, level = "all", onBackHome }: ExamPageProps) {
   const lv = level;
+
+  const [bankWords, setBankWords] = useState<BankWord[]>([]);
+  useEffect(() => {
+    getWordBank(lv === "all" ? undefined : lv).then(setBankWords).catch(() => {});
+  }, [lv]);
+
   const questions = useMemo(() => {
+    if (bankWords.length > 0) {
+      const words = bankWords.filter((bw) => matchesLevel(bw.level, lv)).map((bw) => ({
+        id: bw.id, word: bw.word, phonetic: bw.phonetic || "",
+        meaning_vi: bw.meaning_vi, meaning_en: bw.meaning_en || "",
+        pos: bw.pos || "", example: bw.examples?.[0]?.en || "",
+        example_vi: bw.examples?.[0]?.vi || "",
+        topicIds: bw.categories, level: bw.level as any,
+        imageUrl: bw.image || "", source: "seed" as const, createdAt: 0,
+      }));
+      if (words.length > 0) return buildQuiz(words, EXAM_SIZE);
+    }
     const words = SEED_VOCABULARY.filter((w) => matchesLevel(w.level, lv)); // kế thừa: ≤ cấp
     return buildQuiz(words, EXAM_SIZE);
-  }, [lv]);
+  }, [bankWords, lv]);
+
+  const wordById = useMemo(() => {
+    if (bankWords.length === 0) return seedWordById;
+    const map = new Map(seedWordById);
+    for (const bw of bankWords) {
+      if (!map.has(bw.id)) {
+        map.set(bw.id, {
+          id: bw.id, word: bw.word, phonetic: bw.phonetic || "",
+          meaning_vi: bw.meaning_vi, meaning_en: bw.meaning_en || "",
+          pos: bw.pos || "", example: bw.examples?.[0]?.en || "",
+          example_vi: bw.examples?.[0]?.vi || "",
+          topicIds: bw.categories, level: bw.level as any,
+          imageUrl: bw.image || "", source: "seed" as const, createdAt: 0,
+        });
+      }
+    }
+    return map;
+  }, [bankWords]);
 
   const [index, setIndex] = useState(0);
   const [picked, setPicked] = useState<string | null>(null);

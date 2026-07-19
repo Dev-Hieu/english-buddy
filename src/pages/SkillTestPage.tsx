@@ -2,6 +2,7 @@ import { GraduationCap, Loader2, Mic, PartyPopper, Volume2 } from "lucide-react"
 import { useEffect, useMemo, useRef, useState } from "react";
 import type { Student } from "@/types";
 import { SEED_VOCABULARY } from "@/data/seedVocabulary";
+import { getWordBank, type BankWord } from "@/services/wordBankService";
 import {
   startSkillTest, submitSkillTest,
   type Skill, type SkillAnswer, type SkillResult, type SkillTestItem, type SkillTestSession,
@@ -35,12 +36,19 @@ export function SkillTestPage({ student, mode, onBackHome }: Props) {
   const [answers, setAnswers] = useState<SkillAnswer[]>([]);
   const [submitting, setSubmitting] = useState(false);
   const [results, setResults] = useState<{ results: SkillResult[]; totalDelta: number } | null>(null);
+  const [bankWords, setBankWords] = useState<BankWord[]>([]);
 
   useEffect(() => {
     startSkillTest(student.id, mode)
       .then(setSession)
       .catch(() => setError("Chưa có từ để thi. Hãy học thêm và bấm \"Thuộc\" cho đủ 10 từ."));
   }, [student.id, mode]);
+
+  useEffect(() => {
+    if (!session) return;
+    const lv = session.level && session.level !== "all" ? session.level : undefined;
+    getWordBank(lv).then(setBankWords).catch(() => {});
+  }, [session]);
 
   // Danh sách nhiệm vụ phẳng: mỗi (từ × kỹ năng) là 1 bước.
   const tasks = useMemo(() => {
@@ -72,7 +80,7 @@ export function SkillTestPage({ student, mode, onBackHome }: Props) {
 
   if (error) return <Shell onBack={onBackHome}><Info text={error} /></Shell>;
   if (!session || submitting) return <Shell onBack={onBackHome}><Center><Loader2 className="h-8 w-8 animate-spin text-primary" /></Center></Shell>;
-  if (results) return <Shell onBack={onBackHome}><ResultView data={results} answers={answers} onDone={onBackHome} /></Shell>;
+  if (results) return <Shell onBack={onBackHome}><ResultView data={results} answers={answers} bankWords={bankWords} onDone={onBackHome} /></Shell>;
   // Không có từ hợp lệ để thi (vd từ đã bị gỡ khỏi từ điển) -> báo nhẹ, KHÔNG để trắng trang.
   if (!tasks.length) return <Shell onBack={onBackHome}><Info text="Chưa có từ để thi lúc này. Hãy học thêm và bấm 'Thuộc' cho đủ từ nhé." /></Shell>;
 
@@ -209,8 +217,12 @@ function SpeakWord({ item, onAnswer }: { item: SkillTestItem; onAnswer: (v: stri
   );
 }
 
-function ResultView({ data, answers, onDone }: { data: { results: SkillResult[]; totalDelta: number; score?: number }; answers?: SkillAnswer[]; onDone: () => void }) {
-  const wordText = (id: string) => SEED_VOCABULARY.find((w) => w.id === id)?.word ?? id;
+function ResultView({ data, answers, bankWords, onDone }: { data: { results: SkillResult[]; totalDelta: number; score?: number }; answers?: SkillAnswer[]; bankWords?: BankWord[]; onDone: () => void }) {
+  const wordText = (id: string) => {
+    const fromBank = bankWords?.find((bw) => bw.id === id);
+    if (fromBank) return fromBank.word;
+    return SEED_VOCABULARY.find((w) => w.id === id)?.word ?? id;
+  };
   const totalSkills = data.results.reduce((s, r) => s + r.passed.length + r.lost.length, 0);
   const passedSkills = data.results.reduce((s, r) => s + r.passed.length, 0);
   const score = data.score ?? (totalSkills > 0 ? Math.round((passedSkills / totalSkills) * 100) : 0);
