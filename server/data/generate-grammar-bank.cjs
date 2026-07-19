@@ -14,6 +14,15 @@ const OUTPUT_DIR = path.join(__dirname, "grammar-bank");
 
 // Grammar topics per level
 const TOPICS_BY_LEVEL = {
+  kids: [
+    { title: "I am / You are / He is (To Be basics)", title_vi: "Động từ 'to be' cơ bản", category: "tenses" },
+    { title: "This / That (Demonstratives)", title_vi: "This / That – Từ chỉ định", category: "pronouns" },
+    { title: "Singular and Plural -s (Plurals)", title_vi: "Số ít và số nhiều", category: "word_formation" },
+    { title: "A / An (Articles basics)", title_vi: "Mạo từ A / An cơ bản", category: "articles_determiners" },
+    { title: "Can (Ability - basic)", title_vi: "Can – Khả năng cơ bản", category: "modals" },
+    { title: "Have / Has (Possession)", title_vi: "Have / Has – Sở hữu", category: "tenses" },
+    { title: "In / On / Under (Basic prepositions)", title_vi: "In / On / Under – Giới từ cơ bản", category: "prepositions" },
+  ],
   a1: [
     { title: "To Be", title_vi: "Động từ 'to be'", category: "tenses" },
     { title: "Present Simple", title_vi: "Thì hiện tại đơn", category: "tenses" },
@@ -136,6 +145,7 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 // ---------------------------------------------------------------------------
 function buildPrompt(level, topics) {
   const levelDescriptions = {
+    kids: "young children (ages 5-10, pre-A1, very basic English)",
     a1: "absolute beginner (CEFR A1)",
     a2: "elementary (CEFR A2)",
     b1: "intermediate (CEFR B1)",

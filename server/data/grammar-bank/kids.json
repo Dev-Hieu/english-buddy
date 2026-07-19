@@ -1,0 +1,698 @@
+[
+  {
+    "title": "I am / You are / He is (To Be basics)",
+    "title_vi": "Động từ 'to be' cơ bản",
+    "level": "kids",
+    "category": "tenses",
+    "description_vi": "Dùng để giới thiệu bản thân, nói về cảm xúc, trạng thái, tuổi tác, nghề nghiệp.",
+    "rules": [
+      {
+        "rule": "I am + (danh từ/tính từ)",
+        "example_en": "I am a student.",
+        "example_vi": "Tôi là học sinh."
+      },
+      {
+        "rule": "You are + (danh từ/tính từ)",
+        "example_en": "You are happy.",
+        "example_vi": "Bạn đang vui."
+      },
+      {
+        "rule": "He/She/It is + (danh từ/tính từ)",
+        "example_en": "He is a teacher.",
+        "example_vi": "Anh ấy là giáo viên."
+      },
+      {
+        "rule": "Dạng phủ định: thêm 'not' sau am/is/are",
+        "example_en": "I am not sad.",
+        "example_vi": "Tôi không buồn."
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I is happy.",
+        "correct": "I am happy.",
+        "explain_vi": "Với 'I' phải dùng 'am', không dùng 'is'."
+      },
+      {
+        "wrong": "He are a boy.",
+        "correct": "He is a boy.",
+        "explain_vi": "Với 'He' phải dùng 'is', không dùng 'are'."
+      },
+      {
+        "wrong": "You is my friend.",
+        "correct": "You are my friend.",
+        "explain_vi": "Với 'You' phải dùng 'are', không dùng 'is'."
+      }
+    ],
+    "related_vocab": [
+      "happy",
+      "sad",
+      "big",
+      "small",
+      "good",
+      "tired"
+    ],
+    "related_phrases": [
+      "a student",
+      "a teacher",
+      "a friend",
+      "my mom",
+      "my dad"
+    ],
+    "exercises": [
+      {
+        "type": "fill_in",
+        "question": "I ___ a girl.",
+        "answer": "am",
+        "explain_vi": "Chủ ngữ 'I' đi với 'am'."
+      },
+      {
+        "type": "fill_in",
+        "question": "She ___ my sister.",
+        "answer": "is",
+        "explain_vi": "Chủ ngữ 'She' đi với 'is'."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "We ___ friends.",
+        "options": [
+          "am",
+          "is",
+          "are",
+          "be"
+        ],
+        "answer": 2,
+        "explain_vi": "'We' là số nhiều, dùng 'are'."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "He ___ not tall.",
+        "options": [
+          "am",
+          "is",
+          "are",
+          "be"
+        ],
+        "answer": 1,
+        "explain_vi": "'He' đi với 'is', phủ định thêm 'not'."
+      },
+      {
+        "type": "error_correction",
+        "question": "I is a student.",
+        "answer": "I am a student.",
+        "explain_vi": "Sai: 'I' phải đi với 'am', không phải 'is'."
+      }
+    ]
+  },
+  {
+    "title": "This / That (Demonstratives)",
+    "title_vi": "This / That – Từ chỉ định",
+    "level": "kids",
+    "category": "pronouns",
+    "description_vi": "Dùng để chỉ người/vật ở gần (this) hay xa (that).",
+    "rules": [
+      {
+        "rule": "This + is + danh từ số ít (chỉ vật ở gần)",
+        "example_en": "This is a book.",
+        "example_vi": "Đây là một quyển sách."
+      },
+      {
+        "rule": "That + is + danh từ số ít (chỉ vật ở xa)",
+        "example_en": "That is a car.",
+        "example_vi": "Kia là một chiếc xe hơi."
+      },
+      {
+        "rule": "Câu hỏi: Is this/that...?",
+        "example_en": "Is this your pen?",
+        "example_vi": "Đây có phải bút của bạn không?"
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "This is pen.",
+        "correct": "This is a pen.",
+        "explain_vi": "Thiếu mạo từ 'a' trước danh từ đếm được số ít."
+      },
+      {
+        "wrong": "That a dog.",
+        "correct": "That is a dog.",
+        "explain_vi": "Thiếu động từ 'is'."
+      },
+      {
+        "wrong": "This book is red. (dùng đúng nhưng cần nhấn mạnh cách dùng)",
+        "correct": "This book is red.",
+        "explain_vi": "Cấu trúc 'This + danh từ' vẫn đúng, nhưng cần lưu ý 'this' có thể đứng một mình hoặc bổ nghĩa cho danh từ."
+      }
+    ],
+    "related_vocab": [
+      "book",
+      "pen",
+      "cat",
+      "dog",
+      "ball",
+      "house"
+    ],
+    "related_phrases": [
+      "this book",
+      "that car",
+      "this is my",
+      "that is your"
+    ],
+    "exercises": [
+      {
+        "type": "fill_in",
+        "question": "___ is a cat. (chỉ con mèo ở gần)",
+        "answer": "This",
+        "explain_vi": "Vật ở gần dùng 'This'."
+      },
+      {
+        "type": "fill_in",
+        "question": "___ is a tree. (chỉ cái cây ở xa)",
+        "answer": "That",
+        "explain_vi": "Vật ở xa dùng 'That'."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "___ is my school. (trường ở gần)",
+        "options": [
+          "This",
+          "That",
+          "These",
+          "Those"
+        ],
+        "answer": 0,
+        "explain_vi": "Vật ở gần số ít dùng 'This'."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Is ___ your bag? (cái túi ở xa)",
+        "options": [
+          "this",
+          "that",
+          "these",
+          "those"
+        ],
+        "answer": 1,
+        "explain_vi": "Vật ở xa dùng 'that' trong câu hỏi."
+      },
+      {
+        "type": "error_correction",
+        "question": "This is apple.",
+        "answer": "This is an apple.",
+        "explain_vi": "Thiếu mạo từ 'an' trước 'apple' (bắt đầu bằng nguyên âm)."
+      }
+    ]
+  },
+  {
+    "title": "Singular and Plural -s (Plurals)",
+    "title_vi": "Số ít và số nhiều",
+    "level": "kids",
+    "category": "word_formation",
+    "description_vi": "Cách thêm -s hoặc -es để tạo danh từ số nhiều.",
+    "rules": [
+      {
+        "rule": "Thêm -s vào hầu hết danh từ",
+        "example_en": "one cat → two cats",
+        "example_vi": "một con mèo → hai con mèo"
+      },
+      {
+        "rule": "Thêm -es vào danh từ tận cùng là -s, -ss, -sh, -ch, -x, -o",
+        "example_en": "one bus → two buses",
+        "example_vi": "một xe buýt → hai xe buýt"
+      },
+      {
+        "rule": "Danh từ tận cùng là phụ âm + y: đổi y thành i rồi thêm -es",
+        "example_en": "one baby → two babies",
+        "example_vi": "một em bé → hai em bé"
+      },
+      {
+        "rule": "Một số danh từ bất quy tắc",
+        "example_en": "one child → two children",
+        "example_vi": "một đứa trẻ → hai đứa trẻ"
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "two cat",
+        "correct": "two cats",
+        "explain_vi": "Số nhiều phải thêm -s."
+      },
+      {
+        "wrong": "three bus",
+        "correct": "three buses",
+        "explain_vi": "Danh từ tận cùng -s phải thêm -es."
+      },
+      {
+        "wrong": "two childs",
+        "correct": "two children",
+        "explain_vi": "'Child' là bất quy tắc, số nhiều là 'children'."
+      },
+      {
+        "wrong": "one book, two book",
+        "correct": "one book, two books",
+        "explain_vi": "Số nhiều của 'book' là 'books', thêm -s."
+      }
+    ],
+    "related_vocab": [
+      "cat",
+      "dog",
+      "book",
+      "pen",
+      "bus",
+      "baby"
+    ],
+    "related_phrases": [
+      "one apple",
+      "two apples",
+      "three cats",
+      "many dogs"
+    ],
+    "exercises": [
+      {
+        "type": "fill_in",
+        "question": "I have two ___ (dog).",
+        "answer": "dogs",
+        "explain_vi": "Số nhiều thêm -s: dog → dogs."
+      },
+      {
+        "type": "fill_in",
+        "question": "She sees three ___ (bus).",
+        "answer": "buses",
+        "explain_vi": "Bus tận cùng -s nên thêm -es."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "There are five ___ in the room.",
+        "options": [
+          "child",
+          "childs",
+          "children",
+          "childrens"
+        ],
+        "answer": 2,
+        "explain_vi": "'Child' số nhiều bất quy tắc là 'children'."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "I have two ___.",
+        "options": [
+          "pen",
+          "pens",
+          "penes",
+          "penss"
+        ],
+        "answer": 1,
+        "explain_vi": "Thêm -s: pen → pens."
+      },
+      {
+        "type": "error_correction",
+        "question": "I see three box.",
+        "answer": "I see three boxes.",
+        "explain_vi": "Box tận cùng -x nên thêm -es: boxes."
+      }
+    ]
+  },
+  {
+    "title": "A / An (Articles basics)",
+    "title_vi": "Mạo từ A / An cơ bản",
+    "level": "kids",
+    "category": "articles_determiners",
+    "description_vi": "Dùng 'a' trước danh từ bắt đầu bằng phụ âm, 'an' trước danh từ bắt đầu bằng nguyên âm (a, e, i, o, u).",
+    "rules": [
+      {
+        "rule": "Dùng 'a' trước danh từ bắt đầu bằng phụ âm",
+        "example_en": "a cat, a dog, a book",
+        "example_vi": "một con mèo, một con chó, một quyển sách"
+      },
+      {
+        "rule": "Dùng 'an' trước danh từ bắt đầu bằng nguyên âm (a, e, i, o, u)",
+        "example_en": "an apple, an egg, an umbrella",
+        "example_vi": "một quả táo, một quả trứng, một cái ô"
+      },
+      {
+        "rule": "Chỉ dùng với danh từ đếm được số ít",
+        "example_en": "a car (đúng), a milk (sai vì milk không đếm được)",
+        "example_vi": "một chiếc xe hơi, một sữa (sai)"
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "a apple",
+        "correct": "an apple",
+        "explain_vi": "'Apple' bắt đầu bằng nguyên âm 'a' nên dùng 'an'."
+      },
+      {
+        "wrong": "an book",
+        "correct": "a book",
+        "explain_vi": "'Book' bắt đầu bằng phụ âm 'b' nên dùng 'a'."
+      },
+      {
+        "wrong": "I have cat.",
+        "correct": "I have a cat.",
+        "explain_vi": "Thiếu mạo từ 'a' trước danh từ số ít đếm được."
+      },
+      {
+        "wrong": "an university",
+        "correct": "a university",
+        "explain_vi": "'University' bắt đầu bằng phụ âm /juː/, nên dùng 'a'."
+      }
+    ],
+    "related_vocab": [
+      "apple",
+      "banana",
+      "cat",
+      "dog",
+      "elephant",
+      "umbrella"
+    ],
+    "related_phrases": [
+      "a pen",
+      "an orange",
+      "a big house",
+      "an old man"
+    ],
+    "exercises": [
+      {
+        "type": "fill_in",
+        "question": "I see ___ elephant.",
+        "answer": "an",
+        "explain_vi": "'Elephant' bắt đầu bằng nguyên âm 'e' nên dùng 'an'."
+      },
+      {
+        "type": "fill_in",
+        "question": "She has ___ red dress.",
+        "answer": "a",
+        "explain_vi": "'Red' bắt đầu bằng phụ âm 'r' nên dùng 'a'."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "He is ___ teacher.",
+        "options": [
+          "a",
+          "an",
+          "the",
+          "no article"
+        ],
+        "answer": 0,
+        "explain_vi": "'Teacher' bắt đầu bằng phụ âm 't' nên dùng 'a'."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "It's ___ orange.",
+        "options": [
+          "a",
+          "an",
+          "the",
+          "no article"
+        ],
+        "answer": 1,
+        "explain_vi": "'Orange' bắt đầu bằng nguyên âm 'o' nên dùng 'an'."
+      },
+      {
+        "type": "error_correction",
+        "question": "I want an banana.",
+        "answer": "I want a banana.",
+        "explain_vi": "'Banana' bắt đầu bằng phụ âm 'b' nên dùng 'a', không phải 'an'."
+      }
+    ]
+  },
+  {
+    "title": "Can (Ability - basic)",
+    "title_vi": "Can – Khả năng cơ bản",
+    "level": "kids",
+    "category": "modals",
+    "description_vi": "Dùng để nói về khả năng làm được việc gì đó.",
+    "rules": [
+      {
+        "rule": "S + can + V (nguyên thể) (khẳng định)",
+        "example_en": "I can swim.",
+        "example_vi": "Tôi có thể bơi."
+      },
+      {
+        "rule": "S + cannot / can't + V (nguyên thể) (phủ định)",
+        "example_en": "She can't fly.",
+        "example_vi": "Cô ấy không thể bay."
+      },
+      {
+        "rule": "Can + S + V (nguyên thể)? (nghi vấn)",
+        "example_en": "Can you dance?",
+        "example_vi": "Bạn có thể nhảy không?"
+      },
+      {
+        "rule": "Yes, S + can. / No, S + can't. (trả lời ngắn)",
+        "example_en": "Yes, I can. / No, I can't.",
+        "example_vi": "Có, tôi có thể. / Không, tôi không thể."
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "He can swims.",
+        "correct": "He can swim.",
+        "explain_vi": "Sau 'can' luôn là động từ nguyên thể, không thêm 's'."
+      },
+      {
+        "wrong": "I no can play.",
+        "correct": "I can't play.",
+        "explain_vi": "Phủ định dùng 'can't' hoặc 'cannot', không dùng 'no'."
+      },
+      {
+        "wrong": "Can he to sing?",
+        "correct": "Can he sing?",
+        "explain_vi": "Sau 'can' không có 'to'."
+      }
+    ],
+    "related_vocab": [
+      "run",
+      "jump",
+      "swim",
+      "dance",
+      "sing",
+      "fly"
+    ],
+    "related_phrases": [
+      "ride a bike",
+      "play football",
+      "speak English",
+      "climb a tree",
+      "draw a picture"
+    ],
+    "exercises": [
+      {
+        "type": "fill_in",
+        "question": "She ___ (can) swim very fast.",
+        "answer": "can",
+        "explain_vi": "Chủ ngữ 'she' + can + động từ nguyên thể."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "___ you play the piano?",
+        "options": [
+          "Can",
+          "Are",
+          "Do",
+          "Is"
+        ],
+        "answer": 0,
+        "explain_vi": "Hỏi khả năng dùng 'Can'."
+      },
+      {
+        "type": "error_correction",
+        "question": "He can runs fast.",
+        "answer": "He can run fast.",
+        "explain_vi": "Sau 'can' phải là động từ nguyên thể 'run', không thêm 's'."
+      },
+      {
+        "type": "fill_in",
+        "question": "I ___ (can not) swim. I'm scared.",
+        "answer": "can't",
+        "explain_vi": "Phủ định của 'can' là 'can't' hoặc 'cannot'."
+      }
+    ]
+  },
+  {
+    "title": "Have / Has (Possession)",
+    "title_vi": "Have / Has – Sở hữu",
+    "level": "kids",
+    "category": "tenses",
+    "description_vi": "Dùng để nói về sự sở hữu một cái gì đó.",
+    "rules": [
+      {
+        "rule": "I/You/We/They + have + danh từ",
+        "example_en": "I have a dog.",
+        "example_vi": "Tôi có một con chó."
+      },
+      {
+        "rule": "He/She/It + has + danh từ",
+        "example_en": "She has a cat.",
+        "example_vi": "Cô ấy có một con mèo."
+      },
+      {
+        "rule": "S + don't have / doesn't have + danh từ (phủ định)",
+        "example_en": "He doesn't have a car.",
+        "example_vi": "Anh ấy không có ô tô."
+      },
+      {
+        "rule": "Do/Does + S + have + danh từ? (nghi vấn)",
+        "example_en": "Do you have a pen?",
+        "example_vi": "Bạn có bút không?"
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "She have a book.",
+        "correct": "She has a book.",
+        "explain_vi": "Ngôi thứ 3 số ít (he/she/it) dùng 'has'."
+      },
+      {
+        "wrong": "I has a toy.",
+        "correct": "I have a toy.",
+        "explain_vi": "Ngôi 'I' dùng 'have', không dùng 'has'."
+      },
+      {
+        "wrong": "He doesn't has a bike.",
+        "correct": "He doesn't have a bike.",
+        "explain_vi": "Sau 'doesn't' động từ trở về nguyên thể 'have'."
+      },
+      {
+        "wrong": "Does she have a pen? Yes, she have.",
+        "correct": "Does she have a pen? Yes, she does.",
+        "explain_vi": "Trả lời ngắn dùng 'does', không lặp 'have'."
+      }
+    ],
+    "related_vocab": [
+      "dog",
+      "cat",
+      "book",
+      "pen",
+      "toy",
+      "bike"
+    ],
+    "related_phrases": [
+      "have a pet",
+      "have a car",
+      "have a sister",
+      "have a house",
+      "have a phone"
+    ],
+    "exercises": [
+      {
+        "type": "fill_in",
+        "question": "She ___ (have) a red dress.",
+        "answer": "has",
+        "explain_vi": "Chủ ngữ 'She' → dùng 'has'."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "We ___ a big house.",
+        "options": [
+          "has",
+          "have",
+          "is",
+          "are"
+        ],
+        "answer": 1,
+        "explain_vi": "Chủ ngữ 'We' → dùng 'have'."
+      },
+      {
+        "type": "error_correction",
+        "question": "He have two brothers.",
+        "answer": "He has two brothers.",
+        "explain_vi": "Ngôi thứ 3 số ít phải dùng 'has'."
+      },
+      {
+        "type": "fill_in",
+        "question": "I ___ (not have) a pet.",
+        "answer": "don't have",
+        "explain_vi": "Phủ định với 'I' dùng 'don't have'."
+      }
+    ]
+  },
+  {
+    "title": "In / On / Under (Basic prepositions)",
+    "title_vi": "In / On / Under – Giới từ cơ bản",
+    "level": "kids",
+    "category": "prepositions",
+    "description_vi": "Dùng để chỉ vị trí của vật: in (trong), on (trên), under (dưới).",
+    "rules": [
+      {
+        "rule": "S + be + in + nơi chốn (bên trong)",
+        "example_en": "The cat is in the box.",
+        "example_vi": "Con mèo ở trong hộp."
+      },
+      {
+        "rule": "S + be + on + bề mặt (trên)",
+        "example_en": "The book is on the table.",
+        "example_vi": "Quyển sách ở trên bàn."
+      },
+      {
+        "rule": "S + be + under + vật (bên dưới)",
+        "example_en": "The ball is under the chair.",
+        "example_vi": "Quả bóng ở dưới ghế."
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "The cat is on the box. (khi muốn nói trong hộp)",
+        "correct": "The cat is in the box.",
+        "explain_vi": "'In' dùng cho bên trong; 'on' dùng cho bề mặt."
+      },
+      {
+        "wrong": "The pen is under the table? (thiếu động từ)",
+        "correct": "The pen is under the table.",
+        "explain_vi": "Câu phải có động từ 'is/are'."
+      },
+      {
+        "wrong": "It is on the box. (không rõ vật)",
+        "correct": "The toy is on the box.",
+        "explain_vi": "Nên có chủ ngữ cụ thể để rõ nghĩa."
+      }
+    ],
+    "related_vocab": [
+      "box",
+      "table",
+      "chair",
+      "bed",
+      "bag",
+      "tree"
+    ],
+    "related_phrases": [
+      "in the room",
+      "on the floor",
+      "under the bed",
+      "on the desk",
+      "in the car"
+    ],
+    "exercises": [
+      {
+        "type": "fill_in",
+        "question": "The pencil is ___ the box. (trong)",
+        "answer": "in",
+        "explain_vi": "Bên trong hộp dùng 'in'."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "The dog is ___ the table. (dưới)",
+        "options": [
+          "in",
+          "on",
+          "under",
+          "at"
+        ],
+        "answer": 2,
+        "explain_vi": "'Under' nghĩa là bên dưới."
+      },
+      {
+        "type": "error_correction",
+        "question": "The cat are on the chair.",
+        "answer": "The cat is on the chair.",
+        "explain_vi": "Chủ ngữ số ít 'cat' dùng 'is'."
+      },
+      {
+        "type": "fill_in",
+        "question": "My bag is ___ the bed. (dưới)",
+        "answer": "under",
+        "explain_vi": "'Under' chỉ vị trí bên dưới."
+      }
+    ]
+  }
+]
