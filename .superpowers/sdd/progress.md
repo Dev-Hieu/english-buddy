@@ -53,3 +53,20 @@
 | API: POST word-progress | ✅ | SM-2 SRS, per-skill mastery update |
 | API: GET summary | ✅ | Dashboard stats + avg mastery |
 | Deploy + test | ✅ | All endpoints working |
+
+## Phase 6: UI Update
+
+| Task | Status | Notes |
+|------|--------|-------|
+| 6A TopicListPage | ✅ | 24 categories from API, emoji mapping |
+| 6A LessonPage | ✅ | word bank API, fallback SEED_VOCABULARY |
+| 6B PhrasesPage | ✅ | phrase bank API, fallback SEED_PHRASES |
+| 6B GrammarListPage | ✅ | grammar bank API, fallback GRAMMAR_TOPICS |
+| Deploy | ✅ | Build OK, PM2 reloaded |
+
+## Phase 7: Certification
+
+| Task | Status | Notes |
+|------|--------|-------|
+| /api/generate-exam endpoint | ✅ | 5 sections: vocab, grammar, listening, reading, writing |
+| Deploy + test | ✅ | 17 questions/exam, all sections working |
