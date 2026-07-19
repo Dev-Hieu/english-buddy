@@ -1,11 +1,13 @@
 import { PenLine, Keyboard, MessageSquareText, FileText, Volume2, CheckCircle2, XCircle, RotateCcw, Loader2, AlertTriangle } from "lucide-react";
-import { useState, useCallback, useMemo } from "react";
+import { useState, useCallback, useEffect, useMemo } from "react";
 import type { Student } from "@/types";
 import { Card, CardContent } from "@/components/ui/card";
 import { SessionHeader } from "@/components/layout/SessionHeader";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/components/ui/cn";
 import { SEED_VOCABULARY } from "@/data/seedVocabulary";
+import { TOPIC_TO_CATEGORY } from "@/data/seedTopics";
+import { getWordBank, type BankWord } from "@/services/wordBankService";
 import { getVideoLesson } from "@/data/videoLessons";
 import { speakText } from "@/services/speechService";
 import { apiRequest } from "@/services/api";
@@ -207,8 +209,17 @@ const ESSAY_PROMPTS: Record<CEFRLevel, string[]> = {
 
 /* ─── Word Dictation Component ─── */
 function WordDictation({ topicId, level, onBack }: { topicId?: string; level: CEFRLevel; onBack: () => void }) {
+  const categoryId = topicId?.startsWith("topic_") ? TOPIC_TO_CATEGORY[topicId] : topicId;
+  const vocabLevel = CEFR_TO_LEVEL[level];
+  const [bankWords, setBankWords] = useState<BankWord[]>([]);
+  useEffect(() => {
+    if (!categoryId) return;
+    const vl = topicId ? getVideoLesson(topicId) : undefined;
+    if (vl) return;
+    getWordBank(vocabLevel, categoryId).then(setBankWords).catch(() => {});
+  }, [categoryId, vocabLevel, topicId]);
+
   const words = useMemo(() => {
-    const vocabLevel = CEFR_TO_LEVEL[level];
     // Video lesson words first
     const vl = topicId ? getVideoLesson(topicId) : undefined;
     if (vl) {
@@ -216,10 +227,19 @@ function WordDictation({ topicId, level, onBack }: { topicId?: string; level: CE
         .map((w, i) => ({ id: `vl_wd_${i}`, word: w.word, phonetic: "", meaning_vi: w.meaning_vi, meaning_en: "", topicIds: [topicId], level: vocabLevel, imageUrl: "", source: "seed" as const, createdAt: 0 } as any));
       if (vw.length >= 5) return shuffle(vw).slice(0, 10);
     }
+    if (bankWords.length >= 5) {
+      return shuffle(bankWords.filter((w) => !w.word.includes(" ") && w.word.length > 2).map((bw) => ({
+        id: bw.id, word: bw.word, phonetic: bw.phonetic || "",
+        meaning_vi: bw.meaning_vi, meaning_en: bw.meaning_en || "",
+        pos: bw.pos || "", example: bw.examples?.[0]?.en || "", example_vi: bw.examples?.[0]?.vi || "",
+        topicIds: bw.categories, level: bw.level as any, imageUrl: bw.image || "",
+        source: "seed" as const, createdAt: 0,
+      }))).slice(0, 10);
+    }
     const byTopic = topicId ? SEED_VOCABULARY.filter((v) => v.level === vocabLevel && v.topicIds.includes(topicId)) : [];
     const filtered = byTopic.length >= 5 ? byTopic : SEED_VOCABULARY.filter((v) => v.level === vocabLevel);
     return shuffle(filtered).slice(0, 10);
-  }, [level, topicId]);
+  }, [level, topicId, bankWords, vocabLevel]);
 
   const [index, setIndex] = useState(0);
   const [input, setInput] = useState("");
@@ -326,8 +346,18 @@ function WordDictation({ topicId, level, onBack }: { topicId?: string; level: CE
 
 /* ─── Sentence Dictation Component ─── */
 function SentenceDictation({ topicId, level, onBack }: { topicId?: string; level: CEFRLevel; onBack: () => void }) {
+  const categoryId = topicId?.startsWith("topic_") ? TOPIC_TO_CATEGORY[topicId] : topicId;
+  const vocabLevelSD = CEFR_TO_LEVEL[level];
+  const [bankWordsSD, setBankWordsSD] = useState<BankWord[]>([]);
+  useEffect(() => {
+    if (!categoryId) return;
+    const vl = topicId ? getVideoLesson(topicId) : undefined;
+    if (vl) return;
+    getWordBank(vocabLevelSD, categoryId).then(setBankWordsSD).catch(() => {});
+  }, [categoryId, vocabLevelSD, topicId]);
+
   const sentences = useMemo(() => {
-    const vocabLevel = CEFR_TO_LEVEL[level];
+    const vocabLevel = vocabLevelSD;
     // Video lesson words first
     const vl = topicId ? getVideoLesson(topicId) : undefined;
     if (vl) {
@@ -339,12 +369,18 @@ function SentenceDictation({ topicId, level, onBack }: { topicId?: string; level
         return picked.map((v: any, i: number) => templates[i % templates.length](v.word));
       }
     }
+    if (bankWordsSD.length >= 5) {
+      const filtered = bankWordsSD.filter((w) => !w.word.includes(" ") && w.word.length > 2);
+      const picked = shuffle(filtered).slice(0, 5);
+      const templates = SENTENCE_TEMPLATES[level];
+      return picked.map((v, i) => templates[i % templates.length](v.word));
+    }
     const byTopic = topicId ? SEED_VOCABULARY.filter((v) => v.level === vocabLevel && v.topicIds.includes(topicId)) : [];
     const filtered = byTopic.length >= 5 ? byTopic : SEED_VOCABULARY.filter((v) => v.level === vocabLevel);
     const picked = shuffle(filtered).slice(0, 5);
     const templates = SENTENCE_TEMPLATES[level];
     return picked.map((v, i) => templates[i % templates.length](v.word));
-  }, [level, topicId]);
+  }, [level, topicId, bankWordsSD, vocabLevelSD]);
 
   const [index, setIndex] = useState(0);
   const [input, setInput] = useState("");

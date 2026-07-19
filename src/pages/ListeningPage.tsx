@@ -4,6 +4,8 @@ import type { Student, VocabularyWord } from "@/types";
 import type { Level } from "@/types/student";
 import { LEVEL_LABELS, LEVEL_ORDER } from "@/types/student";
 import { SEED_VOCABULARY } from "@/data/seedVocabulary";
+import { TOPIC_TO_CATEGORY } from "@/data/seedTopics";
+import { getWordBank, type BankWord } from "@/services/wordBankService";
 import { getVideoLesson } from "@/data/videoLessons";
 import { speakText } from "@/services/speechService";
 import { matchesLevel } from "@/utils/levelFilter";
@@ -380,6 +382,15 @@ export function ListeningPage({ student, topicId, onBackHome }: Props) {
 // ════════════════════════════════════════════
 
 function WordImageGame({ topicId, level, onClose }: { topicId?: string; level: Level; onClose: () => void }) {
+  const categoryId = topicId?.startsWith("topic_") ? TOPIC_TO_CATEGORY[topicId] : topicId;
+  const [bankWords, setBankWords] = useState<BankWord[]>([]);
+  useEffect(() => {
+    if (!categoryId) return;
+    const vl = topicId ? getVideoLesson(topicId) : undefined;
+    if (vl) return;
+    getWordBank(level === "all" ? undefined : level, categoryId).then(setBankWords).catch(() => {});
+  }, [categoryId, level, topicId]);
+
   const pool = useMemo(() => {
     // Video lesson words first
     const vl = topicId ? getVideoLesson(topicId) : undefined;
@@ -388,11 +399,20 @@ function WordImageGame({ topicId, level, onClose }: { topicId?: string; level: L
         .map((w, i) => ({ id: `vl_${topicId}_${i}`, word: w.word, phonetic: "", meaning_vi: w.meaning_vi, meaning_en: "", topicIds: [topicId], level: "a1" as const, imageUrl: "", source: "seed" as const, createdAt: 0 } as any));
       if (vw.length >= 4) return vw;
     }
+    if (bankWords.length >= 4) {
+      return bankWords.filter((w) => !w.word.includes(" ")).map((bw) => ({
+        id: bw.id, word: bw.word, phonetic: bw.phonetic || "",
+        meaning_vi: bw.meaning_vi, meaning_en: bw.meaning_en || "",
+        pos: bw.pos || "", example: bw.examples?.[0]?.en || "", example_vi: bw.examples?.[0]?.vi || "",
+        topicIds: bw.categories, level: bw.level as any, imageUrl: bw.image || "",
+        source: "seed" as const, createdAt: 0,
+      }));
+    }
     const byTopic = topicId ? SEED_VOCABULARY.filter((w) => w.imageUrl && w.topicIds.includes(topicId) && matchesLevel(w.level, level)) : [];
     if (byTopic.length >= 4) return byTopic;
     const filtered = SEED_VOCABULARY.filter((w) => w.imageUrl && matchesLevel(w.level, level));
     return filtered.length >= 4 ? filtered : SEED_VOCABULARY.filter((w) => w.imageUrl);
-  }, [topicId, level]);
+  }, [topicId, level, bankWords]);
 
   const [targets] = useState(() => pickN(pool, ROUND_SIZE));
   const [n, setN] = useState(0);
@@ -496,6 +516,15 @@ function buildSentenceQuestion(target: VocabularyWord, pool: VocabularyWord[]): 
 }
 
 function SentenceGame({ topicId, level, onClose }: { topicId?: string; level: Level; onClose: () => void }) {
+  const categoryId = topicId?.startsWith("topic_") ? TOPIC_TO_CATEGORY[topicId] : topicId;
+  const [bankWords, setBankWords] = useState<BankWord[]>([]);
+  useEffect(() => {
+    if (!categoryId) return;
+    const vl = topicId ? getVideoLesson(topicId) : undefined;
+    if (vl) return;
+    getWordBank(level === "all" ? undefined : level, categoryId).then(setBankWords).catch(() => {});
+  }, [categoryId, level, topicId]);
+
   const pool = useMemo(() => {
     // Video lesson words first
     const vl = topicId ? getVideoLesson(topicId) : undefined;
@@ -504,11 +533,20 @@ function SentenceGame({ topicId, level, onClose }: { topicId?: string; level: Le
         .map((w, i) => ({ id: `vl_${topicId}_${i}`, word: w.word, phonetic: "", meaning_vi: w.meaning_vi, meaning_en: "", example: w.example || "", example_vi: "", topicIds: [topicId], level: "a1" as const, imageUrl: "", source: "seed" as const, createdAt: 0 } as any));
       if (vw.length >= 4) return vw;
     }
+    if (bankWords.length >= 4) {
+      return bankWords.filter((w) => !w.word.includes(" ")).map((bw) => ({
+        id: bw.id, word: bw.word, phonetic: bw.phonetic || "",
+        meaning_vi: bw.meaning_vi, meaning_en: bw.meaning_en || "",
+        pos: bw.pos || "", example: bw.examples?.[0]?.en || "", example_vi: bw.examples?.[0]?.vi || "",
+        topicIds: bw.categories, level: bw.level as any, imageUrl: bw.image || "",
+        source: "seed" as const, createdAt: 0,
+      }));
+    }
     const byTopic = topicId ? SEED_VOCABULARY.filter((w) => w.topicIds.includes(topicId) && matchesLevel(w.level, level)) : [];
     if (byTopic.length >= 4) return byTopic;
     const filtered = SEED_VOCABULARY.filter((w) => matchesLevel(w.level, level));
     return filtered.length >= 4 ? filtered : SEED_VOCABULARY;
-  }, [topicId, level]);
+  }, [topicId, level, bankWords]);
 
   const [questions] = useState(() => {
     const targets = pickN(pool, ROUND_SIZE);

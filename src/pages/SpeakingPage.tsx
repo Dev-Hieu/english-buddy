@@ -1,8 +1,9 @@
 import { ArrowRight, Ear, Headphones, Loader2, MessageCircle, Mic, PartyPopper, Square, ThumbsUp, Volume2 } from "lucide-react";
-import { useCallback, useMemo, useRef, useState } from "react";
-import { SEED_TOPICS } from "@/data/seedTopics";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { SEED_TOPICS, TOPIC_TO_CATEGORY } from "@/data/seedTopics";
 import { SEED_VOCABULARY } from "@/data/seedVocabulary";
 import { getVideoLesson } from "@/data/videoLessons";
+import { getWordBank, type BankWord } from "@/services/wordBankService";
 import { LEVEL_LABELS, LEVEL_ORDER, type Level, type Student } from "@/types";
 import { speakText } from "@/services/speechService";
 import { micAvailable, startRecording, type Recorder } from "@/services/audioRecorder";
@@ -210,6 +211,14 @@ export function SpeakingPage({ student, topicId, onBackHome, onShadowing }: Spea
 function WordMode({ topicId, level, onBack, onShadowing }: { topicId: string; level: Level; onBack: () => void; onShadowing?: () => void }) {
   const topic = SEED_TOPICS.find((t) => t.id === topicId);
   const videoLesson = useMemo(() => getVideoLesson(topicId), [topicId]);
+
+  const categoryId = topicId?.startsWith("topic_") ? TOPIC_TO_CATEGORY[topicId] : topicId;
+  const [bankWords, setBankWords] = useState<BankWord[]>([]);
+  useEffect(() => {
+    if (!categoryId || videoLesson) return;
+    getWordBank(level === "all" ? undefined : level, categoryId).then(setBankWords).catch(() => {});
+  }, [categoryId, level, videoLesson]);
+
   const words = useMemo(() => {
     // Ưu tiên từ video lesson — chỉ lấy từ đơn (không phrase)
     if (videoLesson) {
@@ -218,10 +227,20 @@ function WordMode({ topicId, level, onBack, onShadowing }: { topicId: string; le
         .map((w, i) => ({ id: `vl_${topicId}_${i}`, word: w.word, phonetic: "", meaning_vi: w.meaning_vi, meaning_en: "", pos: w.pos, example: w.example, example_vi: "", topicIds: [topicId], level: "a1" as const, imageUrl: "", source: "seed" as const, createdAt: 0 }));
       return pickWords(vw.length >= 1 ? vw : SEED_VOCABULARY, 8);
     }
+    if (bankWords.length > 0) {
+      const bw = bankWords.filter((w) => !w.word.includes(" ")).map((bw, i) => ({
+        id: bw.id, word: bw.word, phonetic: bw.phonetic || "",
+        meaning_vi: bw.meaning_vi, meaning_en: bw.meaning_en || "",
+        pos: bw.pos || "", example: bw.examples?.[0]?.en || "", example_vi: bw.examples?.[0]?.vi || "",
+        topicIds: bw.categories, level: bw.level as any, imageUrl: bw.image || "",
+        source: "seed" as const, createdAt: 0,
+      }));
+      return pickWords(bw.length >= 1 ? bw : SEED_VOCABULARY, 8);
+    }
     const t = SEED_VOCABULARY.filter((w) => w.topicIds.includes(topicId) && !w.word.includes(" ") && matchesLevel(w.level, level));
     const fallback = SEED_VOCABULARY.filter((w) => !w.word.includes(" ") && matchesLevel(w.level, level));
     return pickWords(t.length >= 1 ? t : fallback.length >= 1 ? fallback : SEED_VOCABULARY, 8);
-  }, [topicId, level, videoLesson]);
+  }, [topicId, level, videoLesson, bankWords]);
 
   const [n, setN] = useState(0);
   const [phase, setPhase] = useState<Phase>("idle");
