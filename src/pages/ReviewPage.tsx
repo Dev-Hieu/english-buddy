@@ -244,8 +244,8 @@ export function ReviewPage({ student, onBackHome }: ReviewPageProps) {
                 {showAnswer ? (
                   <>
                     <p className="text-base font-bold text-primary mb-1">{currentWord!.meaning_vi}</p>
-                    {currentWord!.example_en && (
-                      <p className="text-xs text-muted-foreground italic mt-2">{currentWord!.example_en}</p>
+                    {currentWord!.example && (
+                      <p className="text-xs text-muted-foreground italic mt-2">{currentWord!.example}</p>
                     )}
                     <div className="flex gap-3 mt-6">
                       <button
