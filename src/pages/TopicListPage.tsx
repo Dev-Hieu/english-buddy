@@ -1,12 +1,22 @@
 import { CheckCircle2 } from "lucide-react";
-import { useState } from "react";
-import { SEED_TOPICS } from "@/data/seedTopics";
-import { SEED_VOCABULARY } from "@/data/seedVocabulary";
+import { useEffect, useState } from "react";
 import { LEVEL_LABELS, LEVEL_ORDER, type Level, type Student } from "@/types";
 import { ProgressBar } from "@/components/ui/progress";
-import { topicEmoji } from "@/components/ui/emoji";
 import { cn } from "@/components/ui/cn";
-import { topicWords, topicsWithLevel } from "@/utils/levelFilter";
+import { getCategories, getWordBank, type Category, type BankWord } from "@/services/wordBankService";
+
+const CATEGORY_EMOJI: Record<string, string> = {
+  animals_and_nature: "🐾", clothes_and_accessories: "👔", colours_and_shapes: "🎨",
+  communication_and_technology: "📱", daily_life: "☀️", education: "📚",
+  entertainment_and_media: "🎬", environment: "🌍", family_and_friends: "👨‍👩‍👧",
+  feelings_and_opinions: "😊", food_and_drink: "🍽️", health_and_body: "🏥",
+  hobbies_and_leisure: "⚽", house_and_home: "🏠", measurements_and_numbers: "🔢",
+  places: "🏛️", services: "🏪", shopping: "🛒",
+  society_and_community: "🤝", sport: "🏆", science_and_research: "🔬",
+  travel_and_transport: "✈️", weather_and_seasons: "🌤️", work_and_jobs: "💼",
+};
+
+const categoryEmoji = (id: string) => CATEGORY_EMOJI[id] ?? "📚";
 
 interface TopicListPageProps {
   student: Student;
@@ -18,9 +28,29 @@ interface TopicListPageProps {
 export function TopicListPage({ student, studiedWordIds, onStartTopic }: TopicListPageProps) {
   const learned = new Set(studiedWordIds);
   const [level, setLevel] = useState<Level | "all">(LEVEL_ORDER.includes(student.level as Level) ? (student.level as Level) : "all");
-  // Lọc theo từ Ở CẤP đó (không theo level của chủ đề) -> "Trẻ em" vẫn hiện các chủ đề có từ kids.
-  const wordsOf = (topicId: string) => topicWords(SEED_VOCABULARY, topicId, level);
-  const topics = topicsWithLevel(SEED_TOPICS, SEED_VOCABULARY, level);
+  const [categories, setCategories] = useState<Category[]>([]);
+  const [wordsByCat, setWordsByCat] = useState<Record<string, BankWord[]>>({});
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    getCategories().then(setCategories).catch(() => setCategories([]));
+  }, []);
+
+  useEffect(() => {
+    if (categories.length === 0) return;
+    setLoading(true);
+    const lvParam = level === "all" ? undefined : level;
+    Promise.all(
+      categories.map((cat) =>
+        getWordBank(lvParam, cat.id).then((words) => ({ id: cat.id, words }))
+      )
+    ).then((results) => {
+      const map: Record<string, BankWord[]> = {};
+      for (const r of results) map[r.id] = r.words;
+      setWordsByCat(map);
+      setLoading(false);
+    }).catch(() => setLoading(false));
+  }, [categories, level]);
 
   return (
     <main className="mx-auto w-full max-w-2xl px-4 pt-6">
@@ -46,36 +76,39 @@ export function TopicListPage({ student, studiedWordIds, onStartTopic }: TopicLi
         ))}
       </div>
 
-      <section className="space-y-3">
-        {topics.map((topic) => {
-          const words = wordsOf(topic.id);
-          const studied = words.filter((w) => learned.has(w.id)).length;
-          const pct = words.length === 0 ? 0 : Math.round((studied / words.length) * 100);
-          const complete = pct >= 100 && words.length > 0;
-          return (
-            <button
-              key={topic.id}
-              type="button"
-              onClick={() => onStartTopic(topic.id, level)}
-              className="flex w-full items-center gap-4 rounded-3xl border border-border/70 bg-card p-4 text-left shadow-card transition-transform active:scale-[0.99]"
-            >
-              <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-secondary text-3xl">
-                {topicEmoji(topic.id)}
-              </span>
-              <span className="min-w-0 flex-1">
-                <span className="flex items-center gap-2">
-                  <span className="truncate text-lg font-extrabold">{topic.name}</span>
-                  <span className="shrink-0 rounded-full bg-muted px-2 py-0.5 text-[11px] font-extrabold uppercase text-muted-foreground">{LEVEL_LABELS[topic.level]}</span>
-                  {complete ? <CheckCircle2 className="h-5 w-5 shrink-0 text-success" /> : null}
+      {loading ? (
+        <p className="py-12 text-center text-sm font-semibold text-muted-foreground">Đang tải chủ đề…</p>
+      ) : (
+        <section className="space-y-3">
+          {categories.map((cat) => {
+            const words = wordsByCat[cat.id] ?? [];
+            const studied = words.filter((w) => learned.has(w.id)).length;
+            const pct = words.length === 0 ? 0 : Math.round((studied / words.length) * 100);
+            const complete = pct >= 100 && words.length > 0;
+            return (
+              <button
+                key={cat.id}
+                type="button"
+                onClick={() => onStartTopic(cat.id, level)}
+                className="flex w-full items-center gap-4 rounded-3xl border border-border/70 bg-card p-4 text-left shadow-card transition-transform active:scale-[0.99]"
+              >
+                <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-secondary text-3xl">
+                  {categoryEmoji(cat.id)}
                 </span>
-                <span className="block text-sm font-semibold text-muted-foreground">{topic.name_vi}</span>
-                <ProgressBar value={pct} className="mt-2 h-2" />
-              </span>
-              <span className="shrink-0 text-sm font-extrabold text-muted-foreground">{studied}/{words.length}</span>
-            </button>
-          );
-        })}
-      </section>
+                <span className="min-w-0 flex-1">
+                  <span className="flex items-center gap-2">
+                    <span className="truncate text-lg font-extrabold">{cat.name}</span>
+                    {complete ? <CheckCircle2 className="h-5 w-5 shrink-0 text-success" /> : null}
+                  </span>
+                  <span className="block text-sm font-semibold text-muted-foreground">{cat.name_vi}</span>
+                  <ProgressBar value={pct} className="mt-2 h-2" />
+                </span>
+                <span className="shrink-0 text-sm font-extrabold text-muted-foreground">{studied}/{words.length}</span>
+              </button>
+            );
+          })}
+        </section>
+      )}
     </main>
   );
 }

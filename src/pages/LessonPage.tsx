@@ -1,15 +1,16 @@
 import { ArrowLeft, ArrowRight, CheckCircle2, GraduationCap, Layers, List, Sparkles } from "lucide-react";
-import { useMemo, useState } from "react";
-import { SEED_TOPICS } from "@/data/seedTopics";
+import { useEffect, useMemo, useState } from "react";
+import { SEED_TOPICS, TOPIC_TO_CATEGORY } from "@/data/seedTopics";
 import { SEED_VOCABULARY } from "@/data/seedVocabulary";
 import { getVideoLesson } from "@/data/videoLessons";
-import type { Student, VocabularyWord } from "@/types";
+import type { Level, Student, VocabularyWord } from "@/types";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { SessionHeader } from "@/components/layout/SessionHeader";
 import { WordCard } from "@/components/vocabulary/WordCard";
 import { topicEmoji } from "@/components/ui/emoji";
 import { topicWords } from "@/utils/levelFilter";
+import { getWordBank, type BankWord } from "@/services/wordBankService";
 
 interface LessonPageProps {
   topicId?: string;
@@ -34,8 +35,17 @@ export function LessonPage({
   onStartTest,
   onViewWordList,
 }: LessonPageProps) {
+  // Resolve old topic_xxx IDs to new category IDs for backward compatibility
+  const categoryId = topicId.startsWith("topic_") ? (TOPIC_TO_CATEGORY[topicId] ?? topicId) : topicId;
   const topic = SEED_TOPICS.find((item) => item.id === topicId);
   const videoLesson = useMemo(() => getVideoLesson(topicId), [topicId]);
+
+  const [bankWords, setBankWords] = useState<BankWord[]>([]);
+  useEffect(() => {
+    const lvParam = level === "all" ? undefined : level;
+    getWordBank(lvParam, categoryId).then(setBankWords).catch(() => setBankWords([]));
+  }, [categoryId, level]);
+
   const words = useMemo(() => {
     // Ưu tiên từ video lesson nếu có
     if (videoLesson) {
@@ -55,8 +65,25 @@ export function LessonPage({
         createdAt: 0,
       }));
     }
+    if (bankWords.length > 0) {
+      return bankWords.map((bw): VocabularyWord => ({
+        id: bw.id,
+        word: bw.word,
+        phonetic: bw.phonetic,
+        meaning_vi: bw.meaning_vi,
+        meaning_en: bw.meaning_en,
+        pos: bw.pos,
+        example: bw.examples?.[0]?.en ?? "",
+        example_vi: bw.examples?.[0]?.vi ?? "",
+        topicIds: bw.categories,
+        level: bw.level as Level,
+        imageUrl: bw.image ?? "",
+        source: "seed",
+        createdAt: 0,
+      }));
+    }
     return topicWords(SEED_VOCABULARY, topicId, level);
-  }, [topicId, level, videoLesson]);
+  }, [bankWords, topicId, level, videoLesson]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const studiedIds = useMemo(() => new Set(studiedWordIds), [studiedWordIds]);
 
@@ -76,7 +103,7 @@ export function LessonPage({
     else goNext();
   };
 
-  if (!topic || !currentWord) {
+  if (!currentWord) {
     return (
       <main className="mx-auto w-full max-w-md sm:max-w-lg lg:max-w-2xl overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
         <SessionHeader title="Bài học" onClose={onBackHome} />
@@ -86,10 +113,14 @@ export function LessonPage({
   }
 
   const isLast = currentIndex === words.length - 1;
+  // Use seed topic name if available, otherwise fall back to categoryId
+  const sessionTitle = topic
+    ? `${topicEmoji(topic.id)} ${topic.name} · ${topic.name_vi}`
+    : categoryId;
 
   return (
     <main className="mx-auto w-full max-w-md sm:max-w-lg lg:max-w-2xl overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
-      <SessionHeader title={`${topicEmoji(topic.id)} ${topic.name} · ${topic.name_vi}`} onClose={onBackHome} progress={progress} icon={<Sparkles className="h-4 w-4" />} iconBg="bg-amber-500" />
+      <SessionHeader title={sessionTitle} onClose={onBackHome} progress={progress} icon={<Sparkles className="h-4 w-4" />} iconBg="bg-amber-500" />
 
       <p className="mb-3 text-center text-sm font-extrabold text-muted-foreground">Từ {currentIndex + 1} / {words.length}</p>
 
