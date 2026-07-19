@@ -80,7 +80,7 @@ export function TopicListPage({ student, studiedWordIds, onStartTopic }: TopicLi
         <p className="py-12 text-center text-sm font-semibold text-muted-foreground">Đang tải chủ đề…</p>
       ) : (
         <section className="space-y-3">
-          {categories.map((cat) => {
+          {categories.filter((cat) => (wordsByCat[cat.id] ?? []).length > 0).map((cat) => {
             const words = wordsByCat[cat.id] ?? [];
             const studied = words.filter((w) => learned.has(w.id)).length;
             const pct = words.length === 0 ? 0 : Math.round((studied / words.length) * 100);
