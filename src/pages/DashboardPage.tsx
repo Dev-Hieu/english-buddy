@@ -131,7 +131,7 @@ export function DashboardPage({ students, onBackHome }: DashboardPageProps) {
             <span className="flex h-14 w-14 items-center justify-center rounded-2xl bg-secondary text-3xl">{avatarEmoji(student.avatar)}</span>
             <div className="flex-1 min-w-0">
               <h2 className="text-xl font-black">{student.name}</h2>
-              <p className="text-xs font-bold text-muted-foreground">Cấp {level} · {levelLabel(xp)} · {student.level?.toUpperCase?.() || "A1"}</p>
+              <p className="text-xs font-bold text-muted-foreground">Cấp {level} · {levelLabel(xp)} · {String(student.level || "a1").toUpperCase()}</p>
             </div>
           </div>
 
