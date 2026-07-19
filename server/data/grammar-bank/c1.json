@@ -1,0 +1,941 @@
+[
+  {
+    "title": "Inversion (Advanced)",
+    "title_vi": "Đảo ngữ nâng cao (Not only... but also, Rarely, Never)",
+    "level": "c1",
+    "category": "sentence_structure",
+    "description_vi": "Cấu trúc đảo ngữ dùng để nhấn mạnh, thường đặt trợ động từ trước chủ ngữ trong các câu bắt đầu bằng 'Not only..., but also', 'Rarely', 'Never', v.v.",
+    "rules": [
+      {
+        "rule": "Not only + trợ động từ + S + V, but also + S + V",
+        "example_en": "Not only does she speak English, but she also speaks French.",
+        "example_vi": "Cô ấy không chỉ nói tiếng Anh mà còn nói tiếng Pháp."
+      },
+      {
+        "rule": "Rarely/Never/Seldom + trợ động từ + S + V",
+        "example_en": "Rarely have I seen such a beautiful sunset.",
+        "example_vi": "Hiếm khi tôi thấy hoàng hôn đẹp như vậy."
+      },
+      {
+        "rule": "No sooner + had + S + Vp2 + than + S + V (quá khứ đơn)",
+        "example_en": "No sooner had he arrived than the meeting started.",
+        "example_vi": "Ngay khi anh ấy đến thì cuộc họp bắt đầu."
+      },
+      {
+        "rule": "Only after/only when + mệnh đề + trợ động từ + S + V",
+        "example_en": "Only after finishing the exam did he feel relieved.",
+        "example_vi": "Chỉ sau khi hoàn thành bài thi anh ấy mới cảm thấy nhẹ nhõm."
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Not only she speaks English but also French.",
+        "correct": "Not only does she speak English, but she also speaks French.",
+        "explain_vi": "Thiếu trợ động từ 'does' sau 'Not only' và thiếu chủ ngữ 'she' trước 'but also'."
+      },
+      {
+        "wrong": "Rarely I have seen such a beautiful sunset.",
+        "correct": "Rarely have I seen such a beautiful sunset.",
+        "explain_vi": "Đảo ngữ yêu cầu trợ động từ 'have' đứng trước chủ ngữ 'I'."
+      },
+      {
+        "wrong": "No sooner he had arrived than the meeting started.",
+        "correct": "No sooner had he arrived than the meeting started.",
+        "explain_vi": "Trong cấu trúc 'No sooner...than', trợ động từ 'had' phải đứng trước chủ ngữ."
+      }
+    ],
+    "related_vocab": [
+      "not only",
+      "but also",
+      "rarely",
+      "never",
+      "seldom",
+      "no sooner"
+    ],
+    "related_phrases": [
+      "in no way",
+      "under no circumstances",
+      "on no account",
+      "only then",
+      "hardly ever"
+    ],
+    "exercises": [
+      {
+        "type": "fill_in",
+        "question": "Not only ___ (he/be) late, but he also forgot the documents.",
+        "answer": "was he",
+        "explain_vi": "Đảo ngữ: 'Not only was he late' – trợ động từ 'was' đứng trước chủ ngữ 'he'."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "___ have I seen such a talented musician.",
+        "options": [
+          "Never",
+          "Not only",
+          "Only after",
+          "No sooner"
+        ],
+        "answer": 0,
+        "explain_vi": "'Never' đứng đầu câu yêu cầu đảo ngữ: 'Never have I seen...'."
+      },
+      {
+        "type": "error_correction",
+        "question": "Rarely she goes out after dark.",
+        "answer": "Rarely does she go out after dark.",
+        "explain_vi": "Cần trợ động từ 'does' sau 'Rarely' và động từ 'go' ở dạng nguyên thể."
+      },
+      {
+        "type": "fill_in",
+        "question": "No sooner ___ (the bell/ring) than the students rushed out.",
+        "answer": "had the bell rung",
+        "explain_vi": "Đảo ngữ: 'No sooner had the bell rung' – trợ động từ 'had' trước chủ ngữ 'the bell', động từ 'rung' dạng quá khứ phân từ."
+      }
+    ]
+  },
+  {
+    "title": "Cleft Sentences (Advanced)",
+    "title_vi": "Câu tách nâng cao",
+    "level": "c1",
+    "category": "sentence_structure",
+    "description_vi": "Câu tách dùng để nhấn mạnh một thành phần trong câu, thường dùng cấu trúc 'It is/was ... that/who' hoặc 'What ... is/was ...'.",
+    "rules": [
+      {
+        "rule": "It + be + thành phần nhấn mạnh + that/who + phần còn lại",
+        "example_en": "It was John who broke the vase.",
+        "example_vi": "Chính John đã làm vỡ bình hoa."
+      },
+      {
+        "rule": "What + S + V + be + thành phần nhấn mạnh",
+        "example_en": "What I need is a good rest.",
+        "example_vi": "Cái tôi cần là một giấc nghỉ ngơi tốt."
+      },
+      {
+        "rule": "Câu tách với 'all': All + S + V + be + thành phần nhấn mạnh",
+        "example_en": "All she wants is a little peace.",
+        "example_vi": "Tất cả những gì cô ấy muốn là một chút yên bình."
+      },
+      {
+        "rule": "Câu tách với 'the thing / the person / the place': The thing/person/place + that + S + V + be + ...",
+        "example_en": "The person who called me is my brother.",
+        "example_vi": "Người đã gọi cho tôi là anh trai tôi."
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "It was John broke the vase.",
+        "correct": "It was John who broke the vase.",
+        "explain_vi": "Thiếu 'who' sau danh từ chỉ người."
+      },
+      {
+        "wrong": "What I need is a good rest?",
+        "correct": "What I need is a good rest.",
+        "explain_vi": "Câu tách 'What...' không phải câu hỏi, không dùng dấu hỏi."
+      },
+      {
+        "wrong": "It is the book that I bought it yesterday.",
+        "correct": "It is the book that I bought yesterday.",
+        "explain_vi": "Không lặp lại tân ngữ 'it' sau 'that'."
+      }
+    ],
+    "related_vocab": [
+      "it is",
+      "it was",
+      "what",
+      "all",
+      "the person",
+      "the thing"
+    ],
+    "related_phrases": [
+      "the reason why",
+      "the place where",
+      "the time when",
+      "the way how"
+    ],
+    "exercises": [
+      {
+        "type": "fill_in",
+        "question": "___ (it / be) the dog that barked all night.",
+        "answer": "It was",
+        "explain_vi": "Dùng 'It was' với quá khứ đơn vì hành động đã xảy ra."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "___ I need is a cup of coffee.",
+        "options": [
+          "That",
+          "What",
+          "It",
+          "All what"
+        ],
+        "answer": 1,
+        "explain_vi": "'What' dùng để nhấn mạnh tân ngữ: 'What I need is...'."
+      },
+      {
+        "type": "error_correction",
+        "question": "It was last week when I met her.",
+        "answer": "It was last week that I met her.",
+        "explain_vi": "Khi nhấn mạnh thời gian, dùng 'that' thay vì 'when'."
+      },
+      {
+        "type": "fill_in",
+        "question": "___ (all / she / want) is to be happy.",
+        "answer": "All she wants",
+        "explain_vi": "Cấu trúc 'All she wants' – chủ ngữ giả, động từ chia ngôi thứ ba số ít."
+      }
+    ]
+  },
+  {
+    "title": "Mixed Conditionals (Advanced)",
+    "title_vi": "Điều kiện hỗn hợp phức tạp",
+    "level": "c1",
+    "category": "sentence_structure",
+    "description_vi": "Câu điều kiện hỗn hợp kết hợp các thì khác nhau trong mệnh đề if và mệnh đề chính để diễn tả các tình huống không có thật ở quá khứ và hiện tại.",
+    "rules": [
+      {
+        "rule": "Loại 1: If + quá khứ hoàn thành, would + V (hiện tại) – quá khứ giả định ảnh hưởng hiện tại",
+        "example_en": "If I had studied harder, I would be a doctor now.",
+        "example_vi": "Nếu tôi học chăm hơn, bây giờ tôi đã là bác sĩ."
+      },
+      {
+        "rule": "Loại 2: If + quá khứ đơn, would have + Vp2 (quá khứ) – hiện tại giả định ảnh hưởng quá khứ",
+        "example_en": "If she were more careful, she wouldn't have made that mistake.",
+        "example_vi": "Nếu cô ấy cẩn thận hơn, cô ấy đã không mắc lỗi đó."
+      },
+      {
+        "rule": "Loại 3: If + quá khứ hoàn thành, would have + Vp2 (quá khứ) – quá khứ giả định ảnh hưởng quá khứ (câu điều kiện loại 3 thông thường)",
+        "example_en": "If he had left earlier, he would have caught the train.",
+        "example_vi": "Nếu anh ấy đi sớm hơn, anh ấy đã bắt kịp tàu."
+      },
+      {
+        "rule": "Loại 4: If + quá khứ đơn, would + V (hiện tại) – hiện tại giả định (câu điều kiện loại 2 thông thường)",
+        "example_en": "If I were you, I would accept the offer.",
+        "example_vi": "Nếu tôi là bạn, tôi sẽ chấp nhận lời đề nghị."
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "If I had studied harder, I would be a doctor now. (đúng)",
+        "correct": "If I had studied harder, I would be a doctor now.",
+        "explain_vi": "Câu này đúng, nhưng học sinh thường nhầm thành 'would have been' thay vì 'would be'."
+      },
+      {
+        "wrong": "If she is more careful, she wouldn't have made that mistake.",
+        "correct": "If she were more careful, she wouldn't have made that mistake.",
+        "explain_vi": "Mệnh đề if dùng 'were' (quá khứ giả định) không phải 'is'."
+      },
+      {
+        "wrong": "If he had left earlier, he would catch the train.",
+        "correct": "If he had left earlier, he would have caught the train.",
+        "explain_vi": "Mệnh đề chính phải là 'would have caught' để chỉ quá khứ."
+      }
+    ],
+    "related_vocab": [
+      "if",
+      "would",
+      "had",
+      "were",
+      "could have",
+      "might have"
+    ],
+    "related_phrases": [
+      "if only",
+      "unless",
+      "provided that",
+      "as long as",
+      "even if"
+    ],
+    "exercises": [
+      {
+        "type": "fill_in",
+        "question": "If I ___ (take) that job, I would be rich now.",
+        "answer": "had taken",
+        "explain_vi": "Mệnh đề if dùng quá khứ hoàn thành (had taken) vì hành động trong quá khứ."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "If she ___ more confident, she would have spoken up.",
+        "options": [
+          "is",
+          "was",
+          "were",
+          "had been"
+        ],
+        "answer": 2,
+        "explain_vi": "Dùng 'were' (quá khứ giả định) cho mệnh đề if loại hỗn hợp này."
+      },
+      {
+        "type": "error_correction",
+        "question": "If I had known, I would tell you.",
+        "answer": "If I had known, I would have told you.",
+        "explain_vi": "Mệnh đề chính phải là 'would have told' vì hành động trong quá khứ."
+      },
+      {
+        "type": "fill_in",
+        "question": "If he ___ (be) taller, he could have been a basketball player.",
+        "answer": "were",
+        "explain_vi": "Dùng 'were' (quá khứ giả định) cho mệnh đề if loại 2."
+      }
+    ]
+  },
+  {
+    "title": "Subjunctive Mood",
+    "title_vi": "Thức giả định (Subjunctive)",
+    "level": "c1",
+    "category": "sentence_structure",
+    "description_vi": "Thức giả định dùng để diễn tả điều không có thật, mong ước, yêu cầu, đề nghị, hoặc tình huống giả định. Thường dùng 'were' cho tất cả ngôi và động từ nguyên thể không 'to' sau một số động từ.",
+    "rules": [
+      {
+        "rule": "Động từ 'be' ở quá khứ giả định: were (cho tất cả ngôi)",
+        "example_en": "I wish I were a bird.",
+        "example_vi": "Tôi ước tôi là một con chim."
+      },
+      {
+        "rule": "Sau các động từ: suggest, recommend, insist, demand, propose, etc. + that + S + (should) + V (nguyên thể)",
+        "example_en": "I suggest that he study harder.",
+        "example_vi": "Tôi đề nghị anh ấy học chăm hơn."
+      },
+      {
+        "rule": "Sau cấu trúc: It is + adj (important, necessary, essential, etc.) + that + S + (should) + V (nguyên thể)",
+        "example_en": "It is important that she be on time.",
+        "example_vi": "Điều quan trọng là cô ấy phải đúng giờ."
+      },
+      {
+        "rule": "Thức giả định trong các cấu trúc: as if / as though + S + V (quá khứ) (không có thật ở hiện tại)",
+        "example_en": "He talks as if he knew everything.",
+        "example_vi": "Anh ấy nói như thể anh ấy biết mọi thứ."
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I wish I was a bird.",
+        "correct": "I wish I were a bird.",
+        "explain_vi": "Trong thức giả định, dùng 'were' cho tất cả ngôi, không dùng 'was'."
+      },
+      {
+        "wrong": "I suggest that he studies harder.",
+        "correct": "I suggest that he study harder.",
+        "explain_vi": "Sau 'suggest that', động từ ở dạng nguyên thể không chia (study), không thêm -s."
+      },
+      {
+        "wrong": "It is important that she is on time.",
+        "correct": "It is important that she be on time.",
+        "explain_vi": "Sau 'It is important that', dùng 'be' (nguyên thể) thay vì 'is'."
+      }
+    ],
+    "related_vocab": [
+      "wish",
+      "if only",
+      "suggest",
+      "recommend",
+      "insist",
+      "demand"
+    ],
+    "related_phrases": [
+      "as if",
+      "as though",
+      "it is essential that",
+      "it is necessary that",
+      "it is vital that"
+    ],
+    "exercises": [
+      {
+        "type": "fill_in",
+        "question": "I wish I ___ (be) taller.",
+        "answer": "were",
+        "explain_vi": "Dùng 'were' (quá khứ giả định) cho tất cả ngôi."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "The teacher recommended that every student ___ the assignment.",
+        "options": [
+          "finishes",
+          "finish",
+          "finished",
+          "has finished"
+        ],
+        "answer": 1,
+        "explain_vi": "Sau 'recommended that', động từ dạng nguyên thể 'finish'."
+      },
+      {
+        "type": "error_correction",
+        "question": "It is essential that she arrives on time.",
+        "answer": "It is essential that she arrive on time.",
+        "explain_vi": "Dùng 'arrive' (nguyên thể) thay vì 'arrives'."
+      },
+      {
+        "type": "fill_in",
+        "question": "He behaves as if he ___ (be) the boss.",
+        "answer": "were",
+        "explain_vi": "Dùng 'were' sau 'as if' để chỉ tình huống không có thật ở hiện tại."
+      }
+    ]
+  },
+  {
+    "title": "Nominal Clauses",
+    "title_vi": "Mệnh đề danh ngữ",
+    "level": "c1",
+    "category": "sentence_structure",
+    "description_vi": "Mệnh đề danh ngữ là mệnh đề đóng vai trò như một danh từ trong câu, có thể làm chủ ngữ, tân ngữ, bổ ngữ, hoặc đứng sau giới từ. Thường bắt đầu bằng 'that', 'whether/if', hoặc từ để hỏi (wh-words).",
+    "rules": [
+      {
+        "rule": "Mệnh đề danh ngữ làm chủ ngữ: That + S + V + V (số ít)",
+        "example_en": "That she passed the exam surprised everyone.",
+        "example_vi": "Việc cô ấy đỗ kỳ thi đã làm mọi người ngạc nhiên."
+      },
+      {
+        "rule": "Mệnh đề danh ngữ làm tân ngữ: S + V + (that) + S + V",
+        "example_en": "I believe (that) he is honest.",
+        "example_vi": "Tôi tin rằng anh ấy trung thực."
+      },
+      {
+        "rule": "Mệnh đề danh ngữ với whether/if: S + V + whether/if + S + V",
+        "example_en": "I don't know whether she will come.",
+        "example_vi": "Tôi không biết liệu cô ấy có đến không."
+      },
+      {
+        "rule": "Mệnh đề danh ngữ với từ để hỏi: S + V + wh-word + S + V",
+        "example_en": "I wonder what he is doing.",
+        "example_vi": "Tôi tự hỏi anh ấy đang làm gì."
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "That she passed the exam surprised everyone. (đúng)",
+        "correct": "That she passed the exam surprised everyone.",
+        "explain_vi": "Học sinh thường quên rằng mệnh đề 'That...' làm chủ ngữ thì động từ chính chia số ít."
+      },
+      {
+        "wrong": "I don't know if she will come or not?",
+        "correct": "I don't know whether she will come or not.",
+        "explain_vi": "Khi có 'or not', dùng 'whether' thay vì 'if'."
+      },
+      {
+        "wrong": "I wonder what is he doing.",
+        "correct": "I wonder what he is doing.",
+        "explain_vi": "Trong mệnh đề danh ngữ với từ để hỏi, không đảo ngữ (chủ ngữ đứng trước động từ)."
+      }
+    ],
+    "related_vocab": [
+      "that",
+      "whether",
+      "if",
+      "what",
+      "who",
+      "when",
+      "where",
+      "why",
+      "how"
+    ],
+    "related_phrases": [
+      "the fact that",
+      "the idea that",
+      "the question whether",
+      "it is clear that",
+      "it is uncertain whether"
+    ],
+    "exercises": [
+      {
+        "type": "fill_in",
+        "question": "___ (that / she / win) the prize is incredible.",
+        "answer": "That she won",
+        "explain_vi": "Mệnh đề 'That she won' làm chủ ngữ, động từ 'won' ở quá khứ."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "I don't know ___ he will accept the offer.",
+        "options": [
+          "that",
+          "whether",
+          "what",
+          "which"
+        ],
+        "answer": 1,
+        "explain_vi": "Dùng 'whether' vì câu mang nghĩa 'liệu có hay không'."
+      },
+      {
+        "type": "error_correction",
+        "question": "The question is that should we go or not.",
+        "answer": "The question is whether we should go or not.",
+        "explain_vi": "Sau 'The question is' dùng 'whether' và trật tự từ không đảo."
+      },
+      {
+        "type": "fill_in",
+        "question": "I wonder ___ (what / he / want).",
+        "answer": "what he wants",
+        "explain_vi": "Mệnh đề danh ngữ với 'what', trật tự từ: chủ ngữ 'he' trước động từ 'wants'."
+      }
+    ]
+  },
+  {
+    "title": "Ellipsis and Substitution",
+    "title_vi": "Tỉnh lược và thay thế",
+    "level": "c1",
+    "category": "connectors",
+    "description_vi": "Dùng để tránh lặp từ, làm câu ngắn gọn hơn. Tỉnh lược là bỏ từ, thay thế là dùng từ khác thay cho từ đã nhắc.",
+    "rules": [
+      {
+        "rule": "Tỉnh lược chủ ngữ và động từ trong mệnh đề phụ khi trùng với mệnh đề chính.",
+        "example_en": "She was tired but (she was) still working.",
+        "example_vi": "Cô ấy mệt nhưng vẫn làm việc."
+      },
+      {
+        "rule": "Dùng 'so' và 'not' để thay thế cho mệnh đề sau các động từ như hope, think, believe, expect, be afraid.",
+        "example_en": "Do you think it will rain? I hope not.",
+        "example_vi": "Bạn có nghĩ trời sẽ mưa không? Tôi hy vọng là không."
+      },
+      {
+        "rule": "Dùng 'do/does/did' để thay thế cho động từ chính trong mệnh đề trước.",
+        "example_en": "He works harder than I do.",
+        "example_vi": "Anh ấy làm việc chăm chỉ hơn tôi."
+      },
+      {
+        "rule": "Dùng 'one/ones' để thay thế cho danh từ đã nhắc đến.",
+        "example_en": "I don't like this dress; I prefer the red one.",
+        "example_vi": "Tôi không thích chiếc váy này; tôi thích cái màu đỏ hơn."
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "She is taller than him is.",
+        "correct": "She is taller than him.",
+        "explain_vi": "Sau 'than' có thể tỉnh lược động từ 'is' vì đã hiểu."
+      },
+      {
+        "wrong": "I think yes.",
+        "correct": "I think so.",
+        "explain_vi": "Trong tiếng Anh, dùng 'so' để thay thế mệnh đề khẳng định, không dùng 'yes'."
+      },
+      {
+        "wrong": "He doesn't like coffee, and I don't like too.",
+        "correct": "He doesn't like coffee, and I don't either.",
+        "explain_vi": "Dùng 'either' trong câu phủ định, không dùng 'too'."
+      },
+      {
+        "wrong": "I prefer the red dress than the blue one.",
+        "correct": "I prefer the red dress to the blue one.",
+        "explain_vi": "Sau 'prefer' dùng 'to', không dùng 'than'."
+      }
+    ],
+    "related_vocab": [
+      "so",
+      "not",
+      "do",
+      "one",
+      "ones",
+      "either",
+      "too",
+      "neither"
+    ],
+    "related_phrases": [
+      "I think so",
+      "I hope not",
+      "I don't think so",
+      "the one I like",
+      "do so"
+    ],
+    "exercises": [
+      {
+        "type": "fill_in",
+        "question": "She said she would come, but she didn't __.",
+        "answer": "do so",
+        "explain_vi": "Dùng 'do so' thay thế cho 'come'."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Do you think he will pass? I __.",
+        "options": [
+          "hope so",
+          "hope",
+          "hope it",
+          "hope that"
+        ],
+        "answer": 0,
+        "explain_vi": "Dùng 'hope so' thay thế cho mệnh đề 'that he will pass'."
+      },
+      {
+        "type": "error_correction",
+        "question": "He works harder than me do.",
+        "answer": "He works harder than I do.",
+        "explain_vi": "Sau 'than' cần chủ ngữ 'I' thay vì 'me' trước khi dùng 'do'."
+      }
+    ]
+  },
+  {
+    "title": "Advanced Passive Structures",
+    "title_vi": "Cấu trúc bị động nâng cao",
+    "level": "c1",
+    "category": "sentence_structure",
+    "description_vi": "Bao gồm bị động với động từ kép, bị động với 'have/get something done', và bị động với 'it is said that...'",
+    "rules": [
+      {
+        "rule": "Bị động với động từ kép (verb + preposition): chuyển giới từ xuống cuối.",
+        "example_en": "The doctor is sent for.",
+        "example_vi": "Bác sĩ được mời đến."
+      },
+      {
+        "rule": "Cấu trúc 'have/get something done' (nhờ ai đó làm gì).",
+        "example_en": "I had my hair cut yesterday.",
+        "example_vi": "Tôi đã đi cắt tóc hôm qua."
+      },
+      {
+        "rule": "Bị động với 'It is said that...' hoặc chủ ngữ giả 'it'.",
+        "example_en": "It is believed that the company will go bankrupt.",
+        "example_vi": "Người ta tin rằng công ty sẽ phá sản."
+      },
+      {
+        "rule": "Bị động với động từ nguyên mẫu hoàn thành (to have been + V3).",
+        "example_en": "The report is said to have been completed.",
+        "example_vi": "Báo cáo được cho là đã hoàn thành."
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I cut my hair at the salon.",
+        "correct": "I had my hair cut at the salon.",
+        "explain_vi": "Khi nhờ người khác cắt, dùng 'have something done', không dùng 'cut' chủ động."
+      },
+      {
+        "wrong": "She is sent for the doctor.",
+        "correct": "The doctor is sent for.",
+        "explain_vi": "Trong bị động, tân ngữ của giới từ làm chủ ngữ, giới từ để cuối."
+      },
+      {
+        "wrong": "It is said that he is a doctor.",
+        "correct": "He is said to be a doctor.",
+        "explain_vi": "Có thể dùng cấu trúc 'S + be + said to V' thay cho 'It is said that'."
+      },
+      {
+        "wrong": "The house is building.",
+        "correct": "The house is being built.",
+        "explain_vi": "Bị động tiếp diễn phải có 'being' + V3."
+      }
+    ],
+    "related_vocab": [
+      "have",
+      "get",
+      "said",
+      "believed",
+      "reported",
+      "considered",
+      "thought",
+      "known"
+    ],
+    "related_phrases": [
+      "have something done",
+      "get something done",
+      "it is said that",
+      "be supposed to",
+      "be believed to"
+    ],
+    "exercises": [
+      {
+        "type": "fill_in",
+        "question": "I need to ___ my car ___ (repair) before the trip.",
+        "answer": "have, repaired",
+        "explain_vi": "Cấu trúc 'have something done'."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "The president is reported ___ the hospital.",
+        "options": [
+          "to visit",
+          "to have visited",
+          "having visited",
+          "visited"
+        ],
+        "answer": 1,
+        "explain_vi": "Dùng 'to have visited' vì hành động đã xảy ra."
+      },
+      {
+        "type": "error_correction",
+        "question": "She was said be a genius.",
+        "answer": "She was said to be a genius.",
+        "explain_vi": "Thiếu 'to' trước động từ nguyên mẫu."
+      }
+    ]
+  },
+  {
+    "title": "Discourse Markers",
+    "title_vi": "Từ nối diễn ngôn (Discourse Markers)",
+    "level": "c1",
+    "category": "connectors",
+    "description_vi": "Dùng để liên kết ý tưởng, sắp xếp thông tin, thể hiện thái độ người nói.",
+    "rules": [
+      {
+        "rule": "Dùng 'however', 'nevertheless', 'on the other hand' để chỉ sự đối lập.",
+        "example_en": "It was raining; however, we went out.",
+        "example_vi": "Trời mưa; tuy nhiên, chúng tôi vẫn đi ra ngoài."
+      },
+      {
+        "rule": "Dùng 'furthermore', 'moreover', 'in addition' để bổ sung thông tin.",
+        "example_en": "The candidate is qualified; moreover, he has experience.",
+        "example_vi": "Ứng viên có đủ điều kiện; hơn nữa, anh ấy có kinh nghiệm."
+      },
+      {
+        "rule": "Dùng 'therefore', 'consequently', 'as a result' để chỉ kết quả.",
+        "example_en": "He didn't study; therefore, he failed.",
+        "example_vi": "Anh ấy không học; do đó, anh ấy trượt."
+      },
+      {
+        "rule": "Dùng 'firstly', 'secondly', 'finally' để sắp xếp ý.",
+        "example_en": "Firstly, I will discuss the problem; then, I'll propose solutions.",
+        "example_vi": "Đầu tiên, tôi sẽ thảo luận vấn đề; sau đó, tôi đề xuất giải pháp."
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "He is rich, however he is unhappy.",
+        "correct": "He is rich; however, he is unhappy.",
+        "explain_vi": "Cần dấu chấm phẩy hoặc dấu chấm trước 'however', không dùng dấu phẩy."
+      },
+      {
+        "wrong": "Moreover, he is also smart.",
+        "correct": "Moreover, he is smart.",
+        "explain_vi": "'Moreover' đã mang nghĩa 'thêm vào', không cần 'also'."
+      },
+      {
+        "wrong": "Because he studied hard, therefore he passed.",
+        "correct": "Because he studied hard, he passed.",
+        "explain_vi": "Không dùng cả 'because' và 'therefore' trong cùng câu."
+      },
+      {
+        "wrong": "First, I will go to the market. Second, I will cook dinner.",
+        "correct": "First, I will go to the market. Then, I will cook dinner.",
+        "explain_vi": "Nên dùng 'then' thay vì 'second' nếu không liệt kê nhiều hơn hai bước."
+      }
+    ],
+    "related_vocab": [
+      "however",
+      "nevertheless",
+      "furthermore",
+      "moreover",
+      "therefore",
+      "consequently",
+      "firstly",
+      "secondly",
+      "finally"
+    ],
+    "related_phrases": [
+      "on the other hand",
+      "in addition",
+      "as a result",
+      "in contrast",
+      "for instance"
+    ],
+    "exercises": [
+      {
+        "type": "fill_in",
+        "question": "The weather was bad; ___, we enjoyed the trip.",
+        "answer": "nevertheless",
+        "explain_vi": "Dùng 'nevertheless' để chỉ sự đối lập."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "He is very talented; ___, he is very lazy.",
+        "options": [
+          "therefore",
+          "however",
+          "furthermore",
+          "consequently"
+        ],
+        "answer": 1,
+        "explain_vi": "Cần từ chỉ sự đối lập: 'however'."
+      },
+      {
+        "type": "error_correction",
+        "question": "Firstly, I want to thank you. Secondly, I want to apologize.",
+        "answer": "First, I want to thank you. Second, I want to apologize.",
+        "explain_vi": "Có thể dùng 'first/second' thay 'firstly/secondly' cho ngắn gọn."
+      }
+    ]
+  },
+  {
+    "title": "Hedging Language",
+    "title_vi": "Ngôn ngữ dè dặt / không chắc chắn",
+    "level": "c1",
+    "category": "connectors",
+    "description_vi": "Dùng để giảm bớt sự khẳng định, thể hiện sự thận trọng hoặc lịch sự.",
+    "rules": [
+      {
+        "rule": "Dùng động từ khiếm khuyết: might, may, could, would.",
+        "example_en": "This might be the solution.",
+        "example_vi": "Đây có thể là giải pháp."
+      },
+      {
+        "rule": "Dùng trạng từ: perhaps, possibly, probably, apparently.",
+        "example_en": "Perhaps it will rain tomorrow.",
+        "example_vi": "Có lẽ ngày mai trời sẽ mưa."
+      },
+      {
+        "rule": "Dùng cấu trúc: it seems that, it appears that, it is likely that.",
+        "example_en": "It seems that the project is delayed.",
+        "example_vi": "Có vẻ như dự án bị trì hoãn."
+      },
+      {
+        "rule": "Dùng động từ: tend to, appear, seem, suggest.",
+        "example_en": "The data suggest a different conclusion.",
+        "example_vi": "Dữ liệu gợi ý một kết luận khác."
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "He is definitely wrong.",
+        "correct": "He might be wrong.",
+        "explain_vi": "Khi không chắc chắn, dùng 'might' thay vì 'definitely'."
+      },
+      {
+        "wrong": "It maybe rain.",
+        "correct": "It may rain.",
+        "explain_vi": "'May' là động từ khiếm khuyết, không có 'be'."
+      },
+      {
+        "wrong": "I think it is possibly true.",
+        "correct": "I think it is possibly true.",
+        "explain_vi": "Câu này đúng, nhưng có thể dùng 'I think' và 'possibly' cùng nhau."
+      },
+      {
+        "wrong": "According to me, the plan is good.",
+        "correct": "In my opinion, the plan is good.",
+        "explain_vi": "Không dùng 'according to me'; dùng 'in my opinion'."
+      }
+    ],
+    "related_vocab": [
+      "might",
+      "may",
+      "could",
+      "perhaps",
+      "possibly",
+      "probably",
+      "apparently",
+      "seem",
+      "tend",
+      "suggest"
+    ],
+    "related_phrases": [
+      "it seems that",
+      "it appears that",
+      "it is likely that",
+      "in my opinion",
+      "to some extent"
+    ],
+    "exercises": [
+      {
+        "type": "fill_in",
+        "question": "The economy ___ improve next year, but it's not certain.",
+        "answer": "might",
+        "explain_vi": "Dùng 'might' để diễn tả khả năng không chắc chắn."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "___ the flight will be delayed due to weather.",
+        "options": [
+          "Definitely",
+          "Perhaps",
+          "Certainly",
+          "Absolutely"
+        ],
+        "answer": 1,
+        "explain_vi": "'Perhaps' thể hiện sự không chắc chắn."
+      },
+      {
+        "type": "error_correction",
+        "question": "It seem that he is unhappy.",
+        "answer": "It seems that he is unhappy.",
+        "explain_vi": "Chủ ngữ 'it' ngôi thứ ba số ít, động từ phải thêm 's'."
+      }
+    ]
+  },
+  {
+    "title": "Advanced Modal Verbs",
+    "title_vi": "Modal nâng cao (Must have / Should have / Needn't have)",
+    "level": "c1",
+    "category": "modals",
+    "description_vi": "Dùng để suy luận về quá khứ, chỉ trích, hoặc diễn tả điều không cần thiết trong quá khứ.",
+    "rules": [
+      {
+        "rule": "Must have + V3: suy luận chắc chắn về quá khứ.",
+        "example_en": "She must have forgotten the meeting.",
+        "example_vi": "Chắc hẳn cô ấy đã quên cuộc họp."
+      },
+      {
+        "rule": "Should have + V3: chỉ điều đáng lẽ nên làm nhưng đã không làm (thường chỉ trích hoặc hối tiếc).",
+        "example_en": "You should have told me earlier.",
+        "example_vi": "Đáng lẽ bạn nên nói với tôi sớm hơn."
+      },
+      {
+        "rule": "Needn't have + V3: chỉ điều đã làm nhưng không cần thiết.",
+        "example_en": "I needn't have bought so much food; nobody came.",
+        "example_vi": "Tôi đã không cần mua nhiều đồ ăn đến thế; chẳng ai đến cả."
+      },
+      {
+        "rule": "Could have + V3: khả năng trong quá khứ nhưng không xảy ra.",
+        "example_en": "He could have won the race if he had tried.",
+        "example_vi": "Anh ấy đã có thể thắng cuộc đua nếu anh ấy cố gắng."
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "He must be at home now.",
+        "correct": "He must have been at home yesterday.",
+        "explain_vi": "'Must have' dùng cho quá khứ, 'must' không dùng cho quá khứ."
+      },
+      {
+        "wrong": "You should have came earlier.",
+        "correct": "You should have come earlier.",
+        "explain_vi": "Sau 'have' dùng V3 (come), không dùng V2 (came)."
+      },
+      {
+        "wrong": "I needn't to buy it.",
+        "correct": "I needn't have bought it.",
+        "explain_vi": "'Needn't have' + V3, không có 'to'."
+      },
+      {
+        "wrong": "You mustn't have done that.",
+        "correct": "You shouldn't have done that.",
+        "explain_vi": "'Mustn't have' không đúng; dùng 'shouldn't have' để chỉ trích."
+      }
+    ],
+    "related_vocab": [
+      "must have",
+      "should have",
+      "needn't have",
+      "could have",
+      "might have",
+      "may have",
+      "would have"
+    ],
+    "related_phrases": [
+      "must have been",
+      "should have known",
+      "needn't have worried",
+      "could have done",
+      "might have been"
+    ],
+    "exercises": [
+      {
+        "type": "fill_in",
+        "question": "You ___ (tell) me earlier. I waited for you for an hour.",
+        "answer": "should have told",
+        "explain_vi": "Dùng 'should have told' để chỉ trích."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "She ___ the train; she left home very late.",
+        "options": [
+          "must have missed",
+          "should have missed",
+          "needn't have missed",
+          "could have missed"
+        ],
+        "answer": 0,
+        "explain_vi": "Suy luận chắc chắn: 'must have missed'."
+      },
+      {
+        "type": "error_correction",
+        "question": "I needn't to worry about the exam.",
+        "answer": "I needn't have worried about the exam.",
+        "explain_vi": "Cần 'have' + V3 và bỏ 'to'."
+      }
+    ]
+  }
+]

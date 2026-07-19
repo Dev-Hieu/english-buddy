@@ -1,0 +1,1294 @@
+[
+  {
+    "title": "Present Perfect vs Past Simple",
+    "title_vi": "Hiện tại hoàn thành vs Quá khứ đơn",
+    "level": "b1",
+    "category": "tenses",
+    "description_vi": "Phân biệt thì hiện tại hoàn thành (nhấn mạnh kết quả hiện tại) và quá khứ đơn (hành động đã kết thúc trong quá khứ)",
+    "rules": [
+      {
+        "rule": "Past Simple: S + V-ed/2 (hành động xảy ra và kết thúc trong quá khứ, có thời gian xác định)",
+        "example_en": "I visited Da Nang last year.",
+        "example_vi": "Tôi đã đi Đà Nẵng năm ngoái."
+      },
+      {
+        "rule": "Present Perfect: S + have/has + V3 (hành động xảy ra trong quá khứ nhưng còn liên quan đến hiện tại, không có thời gian xác định)",
+        "example_en": "I have visited Da Nang three times.",
+        "example_vi": "Tôi đã đến Đà Nẵng ba lần."
+      },
+      {
+        "rule": "Present Perfect dùng với 'ever, never, already, yet, just, since, for'",
+        "example_en": "She has never eaten pho.",
+        "example_vi": "Cô ấy chưa bao giờ ăn phở."
+      },
+      {
+        "rule": "Past Simple dùng với 'yesterday, last week, ago, in 2010'",
+        "example_en": "They moved here two years ago.",
+        "example_vi": "Họ chuyển đến đây hai năm trước."
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I have visited Da Nang last year.",
+        "correct": "I visited Da Nang last year.",
+        "explain_vi": "Có thời gian xác định (last year) phải dùng quá khứ đơn, không dùng hiện tại hoàn thành."
+      },
+      {
+        "wrong": "She has gone to Ha Long Bay yesterday.",
+        "correct": "She went to Ha Long Bay yesterday.",
+        "explain_vi": "Yesterday là thời gian xác định, phải dùng quá khứ đơn."
+      },
+      {
+        "wrong": "He didn't eat anything since morning.",
+        "correct": "He hasn't eaten anything since morning.",
+        "explain_vi": "Since + mốc thời gian là dấu hiệu của hiện tại hoàn thành, không dùng quá khứ đơn."
+      }
+    ],
+    "related_vocab": [
+      "already",
+      "yet",
+      "ever",
+      "never",
+      "since",
+      "for",
+      "ago",
+      "last",
+      "yesterday"
+    ],
+    "related_phrases": [
+      "have been to",
+      "have gone to",
+      "have done",
+      "did ... last",
+      "visited ... ago"
+    ],
+    "exercises": [
+      {
+        "type": "fill_in",
+        "question": "She ___ (live) in Ho Chi Minh City since 2015.",
+        "answer": "has lived",
+        "explain_vi": "Since + mốc thời gian → hiện tại hoàn thành."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "I ___ a new phone yesterday.",
+        "options": [
+          "have bought",
+          "bought",
+          "buy",
+          "was buying"
+        ],
+        "answer": 1,
+        "explain_vi": "Yesterday là thời gian xác định trong quá khứ → quá khứ đơn."
+      },
+      {
+        "type": "error_correction",
+        "question": "They have finished their homework an hour ago.",
+        "answer": "They finished their homework an hour ago.",
+        "explain_vi": "An hour ago là thời gian xác định → dùng quá khứ đơn."
+      }
+    ]
+  },
+  {
+    "title": "Present Perfect Continuous",
+    "title_vi": "Thì hiện tại hoàn thành tiếp diễn",
+    "level": "b1",
+    "category": "tenses",
+    "description_vi": "Dùng để nhấn mạnh hành động bắt đầu trong quá khứ và vẫn đang tiếp diễn đến hiện tại, hoặc hành động vừa kết thúc nhưng còn dấu hiệu ở hiện tại",
+    "rules": [
+      {
+        "rule": "S + have/has + been + V-ing (nhấn mạnh tính liên tục của hành động)",
+        "example_en": "I have been studying English for three hours.",
+        "example_vi": "Tôi đã học tiếng Anh được ba giờ rồi."
+      },
+      {
+        "rule": "Dùng để diễn tả hành động vừa kết thúc nhưng còn kết quả ở hiện tại",
+        "example_en": "It has been raining, so the ground is wet.",
+        "example_vi": "Trời vừa mưa xong, nên mặt đất ướt."
+      },
+      {
+        "rule": "Thường dùng với 'for' (khoảng thời gian) và 'since' (mốc thời gian)",
+        "example_en": "She has been working here since 2018.",
+        "example_vi": "Cô ấy đã làm việc ở đây từ năm 2018."
+      },
+      {
+        "rule": "Không dùng với động từ chỉ trạng thái (know, believe, like...)",
+        "example_en": "I have known her for a long time. (không: have been knowing)",
+        "example_vi": "Tôi đã biết cô ấy lâu rồi."
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I have been knowing him for 5 years.",
+        "correct": "I have known him for 5 years.",
+        "explain_vi": "Know là động từ chỉ trạng thái, không dùng ở tiếp diễn."
+      },
+      {
+        "wrong": "She has been working here since 3 hours.",
+        "correct": "She has been working here for 3 hours.",
+        "explain_vi": "3 hours là khoảng thời gian, dùng 'for', không dùng 'since'."
+      },
+      {
+        "wrong": "He has been going to Da Lat last month.",
+        "correct": "He went to Da Lat last month.",
+        "explain_vi": "Last month là thời gian xác định, phải dùng quá khứ đơn, không dùng hiện tại hoàn thành tiếp diễn."
+      }
+    ],
+    "related_vocab": [
+      "for",
+      "since",
+      "all day",
+      "recently",
+      "lately",
+      "how long"
+    ],
+    "related_phrases": [
+      "have been waiting",
+      "have been doing",
+      "have been working",
+      "have been studying"
+    ],
+    "exercises": [
+      {
+        "type": "fill_in",
+        "question": "They ___ (build) this house for two years.",
+        "answer": "have been building",
+        "explain_vi": "For two years → hiện tại hoàn thành tiếp diễn."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "I'm tired because I ___ all morning.",
+        "options": [
+          "have been running",
+          "ran",
+          "have run",
+          "was running"
+        ],
+        "answer": 0,
+        "explain_vi": "Kết quả hiện tại (mệt) do hành động kéo dài → hiện tại hoàn thành tiếp diễn."
+      },
+      {
+        "type": "error_correction",
+        "question": "She has been knowing the answer since yesterday.",
+        "answer": "She has known the answer since yesterday.",
+        "explain_vi": "Know là động từ trạng thái, không dùng tiếp diễn."
+      }
+    ]
+  },
+  {
+    "title": "Past Perfect",
+    "title_vi": "Thì quá khứ hoàn thành",
+    "level": "b1",
+    "category": "tenses",
+    "description_vi": "Dùng để diễn tả hành động xảy ra trước một hành động khác trong quá khứ (hành động xảy ra trước dùng past perfect, hành động xảy ra sau dùng past simple)",
+    "rules": [
+      {
+        "rule": "S + had + V3 (hành động xảy ra trước một thời điểm/hành động khác trong quá khứ)",
+        "example_en": "When I arrived, the train had already left.",
+        "example_vi": "Khi tôi đến, tàu đã rời đi rồi."
+      },
+      {
+        "rule": "Thường dùng với các liên từ: after, before, when, by the time, until, as soon as",
+        "example_en": "After she had finished her homework, she went out.",
+        "example_vi": "Sau khi cô ấy làm xong bài tập, cô ấy ra ngoài."
+      },
+      {
+        "rule": "Dùng để giải thích nguyên nhân của một trạng thái trong quá khứ",
+        "example_en": "He was tired because he had worked all night.",
+        "example_vi": "Anh ấy mệt vì đã làm việc cả đêm."
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "When I arrived, the train already left.",
+        "correct": "When I arrived, the train had already left.",
+        "explain_vi": "Hành động tàu rời đi xảy ra trước khi tôi đến, nên phải dùng quá khứ hoàn thành."
+      },
+      {
+        "wrong": "After she finished her homework, she had gone out.",
+        "correct": "After she had finished her homework, she went out.",
+        "explain_vi": "Hành động xong bài tập xảy ra trước, dùng past perfect; hành động ra ngoài xảy ra sau, dùng past simple."
+      },
+      {
+        "wrong": "He had worked all night, so he is tired.",
+        "correct": "He had worked all night, so he was tired.",
+        "explain_vi": "Câu ở quá khứ, 'is' phải đổi thành 'was'."
+      }
+    ],
+    "related_vocab": [
+      "already",
+      "just",
+      "never",
+      "before",
+      "after",
+      "by the time",
+      "until"
+    ],
+    "related_phrases": [
+      "had done",
+      "had gone",
+      "had finished",
+      "had seen",
+      "had eaten"
+    ],
+    "exercises": [
+      {
+        "type": "fill_in",
+        "question": "By the time we got to the cinema, the movie ___ (start).",
+        "answer": "had started",
+        "explain_vi": "Hành động phim bắt đầu xảy ra trước khi chúng tôi đến → quá khứ hoàn thành."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "She ___ (already/eat) when I called her.",
+        "options": [
+          "already ate",
+          "had already eaten",
+          "has already eaten",
+          "was already eating"
+        ],
+        "answer": 1,
+        "explain_vi": "Hành động ăn xảy ra trước khi gọi → quá khứ hoàn thành."
+      },
+      {
+        "type": "error_correction",
+        "question": "He didn't go to the party because he didn't receive the invitation.",
+        "answer": "He didn't go to the party because he hadn't received the invitation.",
+        "explain_vi": "Việc không nhận được lời mời xảy ra trước khi không đi dự tiệc → dùng quá khứ hoàn thành."
+      }
+    ]
+  },
+  {
+    "title": "Second Conditional",
+    "title_vi": "Câu điều kiện loại 2",
+    "level": "b1",
+    "category": "sentence_structure",
+    "description_vi": "Dùng để diễn tả điều kiện không có thật ở hiện tại hoặc tương lai (giả định trái với thực tế)",
+    "rules": [
+      {
+        "rule": "If + S + V-ed, S + would + V (nguyên thể)",
+        "example_en": "If I had a car, I would drive to work.",
+        "example_vi": "Nếu tôi có ô tô, tôi sẽ lái xe đi làm."
+      },
+      {
+        "rule": "Dùng 'were' cho tất cả các chủ ngữ (thay vì 'was') trong mệnh đề if",
+        "example_en": "If I were you, I would accept the offer.",
+        "example_vi": "Nếu tôi là bạn, tôi sẽ nhận lời đề nghị."
+      },
+      {
+        "rule": "Có thể đảo ngữ: Were + S + ..., S + would + V",
+        "example_en": "Were I rich, I would travel the world.",
+        "example_vi": "Nếu tôi giàu, tôi sẽ đi du lịch vòng quanh thế giới."
+      },
+      {
+        "rule": "Dùng để đưa ra lời khuyên (If I were you...)",
+        "example_en": "If I were you, I would study harder.",
+        "example_vi": "Nếu tôi là bạn, tôi sẽ học chăm chỉ hơn."
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "If I am you, I would go.",
+        "correct": "If I were you, I would go.",
+        "explain_vi": "Câu điều kiện loại 2 dùng 'were' cho tất cả chủ ngữ, không dùng 'am'."
+      },
+      {
+        "wrong": "If I had money, I will buy a house.",
+        "correct": "If I had money, I would buy a house.",
+        "explain_vi": "Mệnh đề chính phải dùng 'would', không dùng 'will'."
+      },
+      {
+        "wrong": "If he studied harder, he will pass the exam.",
+        "correct": "If he studied harder, he would pass the exam.",
+        "explain_vi": "Câu điều kiện loại 2: mệnh đề if dùng quá khứ, mệnh đề chính dùng would + V."
+      }
+    ],
+    "related_vocab": [
+      "if",
+      "would",
+      "were",
+      "could",
+      "might",
+      "impossible"
+    ],
+    "related_phrases": [
+      "if I were you",
+      "if I had",
+      "if it were",
+      "would + V"
+    ],
+    "exercises": [
+      {
+        "type": "fill_in",
+        "question": "If I ___ (be) you, I would apologize.",
+        "answer": "were",
+        "explain_vi": "Chủ ngữ I nhưng dùng 'were' trong câu điều kiện loại 2."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "If she had more time, she ___ (learn) a new language.",
+        "options": [
+          "will learn",
+          "would learn",
+          "learns",
+          "learned"
+        ],
+        "answer": 1,
+        "explain_vi": "Mệnh đề chính dùng 'would + V'."
+      },
+      {
+        "type": "error_correction",
+        "question": "If I have wings, I would fly.",
+        "answer": "If I had wings, I would fly.",
+        "explain_vi": "Giả định không có thật ở hiện tại → mệnh đề if dùng quá khứ (had)."
+      }
+    ]
+  },
+  {
+    "title": "Passive Voice (Present & Past)",
+    "title_vi": "Câu bị động (hiện tại & quá khứ)",
+    "level": "b1",
+    "category": "sentence_structure",
+    "description_vi": "Cấu trúc bị động nhấn mạnh vào hành động hoặc đối tượng chịu tác động, thay vì người thực hiện hành động",
+    "rules": [
+      {
+        "rule": "Hiện tại đơn: S + am/is/are + V3",
+        "example_en": "Rice is grown in Vietnam.",
+        "example_vi": "Lúa được trồng ở Việt Nam."
+      },
+      {
+        "rule": "Quá khứ đơn: S + was/were + V3",
+        "example_en": "The letter was sent yesterday.",
+        "example_vi": "Lá thư đã được gửi hôm qua."
+      },
+      {
+        "rule": "Có thể dùng 'by' để chỉ người thực hiện hành động",
+        "example_en": "The cake was made by my mother.",
+        "example_vi": "Cái bánh được làm bởi mẹ tôi."
+      },
+      {
+        "rule": "Khi chủ ngữ không xác định hoặc không quan trọng, có thể bỏ 'by'",
+        "example_en": "English is spoken worldwide.",
+        "example_vi": "Tiếng Anh được nói trên toàn thế giới."
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "The window is breaked.",
+        "correct": "The window is broken.",
+        "explain_vi": "Động từ bất quy tắc 'break' có V3 là 'broken', không phải 'breaked'."
+      },
+      {
+        "wrong": "The letter was send yesterday.",
+        "correct": "The letter was sent yesterday.",
+        "explain_vi": "Bị động quá khứ: was/were + V3, 'send' có V3 là 'sent'."
+      },
+      {
+        "wrong": "Rice are grown in Vietnam.",
+        "correct": "Rice is grown in Vietnam.",
+        "explain_vi": "Rice là danh từ không đếm được, dùng 'is' chứ không dùng 'are'."
+      }
+    ],
+    "related_vocab": [
+      "by",
+      "made",
+      "built",
+      "written",
+      "known",
+      "spoken"
+    ],
+    "related_phrases": [
+      "is made",
+      "was built",
+      "are written",
+      "were sent",
+      "is spoken"
+    ],
+    "exercises": [
+      {
+        "type": "fill_in",
+        "question": "This bridge ___ (build) in 1990.",
+        "answer": "was built",
+        "explain_vi": "Quá khứ đơn bị động: was + V3."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Coffee ___ in Brazil.",
+        "options": [
+          "is grown",
+          "grows",
+          "is grow",
+          "grown"
+        ],
+        "answer": 0,
+        "explain_vi": "Hiện tại đơn bị động: is + V3."
+      },
+      {
+        "type": "error_correction",
+        "question": "The homework was do by the students.",
+        "answer": "The homework was done by the students.",
+        "explain_vi": "V3 của 'do' là 'done'."
+      }
+    ]
+  },
+  {
+    "title": "Modals of Obligation (Must / Have To)",
+    "title_vi": "Modal bắt buộc: Must / Have To",
+    "level": "b1",
+    "category": "modals",
+    "description_vi": "Phân biệt 'must' (bắt buộc từ người nói) và 'have to' (bắt buộc từ hoàn cảnh bên ngoài)",
+    "rules": [
+      {
+        "rule": "Must: S + must + V (nguyên thể) - sự bắt buộc từ người nói (cảm giác cá nhân)",
+        "example_en": "You must wear a helmet when riding a motorbike.",
+        "example_vi": "Bạn phải đội mũ bảo hiểm khi đi xe máy."
+      },
+      {
+        "rule": "Have to: S + have to + V (nguyên thể) - sự bắt buộc từ quy định, hoàn cảnh",
+        "example_en": "I have to wear a uniform at work.",
+        "example_vi": "Tôi phải mặc đồng phục ở nơi làm việc."
+      },
+      {
+        "rule": "Must not (mustn't): cấm đoán (không được làm)",
+        "example_en": "You must not smoke here.",
+        "example_vi": "Bạn không được hút thuốc ở đây."
+      },
+      {
+        "rule": "Don't have to: không cần phải làm (không bắt buộc)",
+        "example_en": "You don't have to come if you're busy.",
+        "example_vi": "Bạn không cần phải đến nếu bận."
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "You must to wear a helmet.",
+        "correct": "You must wear a helmet.",
+        "explain_vi": "Sau must là động từ nguyên thể không 'to'."
+      },
+      {
+        "wrong": "I must to go now.",
+        "correct": "I must go now.",
+        "explain_vi": "Không thêm 'to' sau must."
+      },
+      {
+        "wrong": "You don't must smoke here.",
+        "correct": "You must not smoke here.",
+        "explain_vi": "Phủ định của must là mustn't, không dùng don't must."
+      }
+    ],
+    "related_vocab": [
+      "must",
+      "have to",
+      "mustn't",
+      "don't have to",
+      "obligation",
+      "necessary"
+    ],
+    "related_phrases": [
+      "must do",
+      "have to do",
+      "must not do",
+      "don't have to do"
+    ],
+    "exercises": [
+      {
+        "type": "fill_in",
+        "question": "You ___ (not/need) to finish it today; you can do it tomorrow.",
+        "answer": "don't have to",
+        "explain_vi": "Không bắt buộc → don't have to."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Students ___ cheat in exams.",
+        "options": [
+          "mustn't",
+          "don't have to",
+          "must",
+          "have to"
+        ],
+        "answer": 0,
+        "explain_vi": "Cấm đoán → mustn't."
+      },
+      {
+        "type": "error_correction",
+        "question": "He has to wears a tie at work.",
+        "answer": "He has to wear a tie at work.",
+        "explain_vi": "Sau 'has to' là động từ nguyên thể, không chia."
+      }
+    ]
+  },
+  {
+    "title": "Modals of Possibility (May / Might / Could)",
+    "title_vi": "Modal khả năng: May / Might / Could",
+    "level": "b1",
+    "category": "modals",
+    "description_vi": "Dùng để diễn tả khả năng xảy ra của một sự việc (may > might > could về mức độ chắc chắn)",
+    "rules": [
+      {
+        "rule": "May: khả năng xảy ra (khoảng 50%)",
+        "example_en": "It may rain later.",
+        "example_vi": "Trời có thể mưa sau đó."
+      },
+      {
+        "rule": "Might: khả năng thấp hơn may (khoảng 30%)",
+        "example_en": "She might come to the party.",
+        "example_vi": "Cô ấy có thể sẽ đến bữa tiệc."
+      },
+      {
+        "rule": "Could: khả năng xảy ra (thường dùng trong câu điều kiện hoặc đề nghị lịch sự)",
+        "example_en": "He could be at home now.",
+        "example_vi": "Anh ấy có thể đang ở nhà bây giờ."
+      },
+      {
+        "rule": "Phủ định: may not, might not, could not (không thể)",
+        "example_en": "It may not be true.",
+        "example_vi": "Điều đó có thể không đúng."
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "She may to come.",
+        "correct": "She may come.",
+        "explain_vi": "Sau modal verb là động từ nguyên thể không 'to'."
+      },
+      {
+        "wrong": "He mights be late.",
+        "correct": "He might be late.",
+        "explain_vi": "Modal verb không chia theo ngôi, không thêm 's'."
+      },
+      {
+        "wrong": "It may rains.",
+        "correct": "It may rain.",
+        "explain_vi": "Sau may là động từ nguyên thể, không chia."
+      }
+    ],
+    "related_vocab": [
+      "may",
+      "might",
+      "could",
+      "maybe",
+      "perhaps",
+      "possibly"
+    ],
+    "related_phrases": [
+      "may be",
+      "might have",
+      "could be",
+      "may not",
+      "might not"
+    ],
+    "exercises": [
+      {
+        "type": "fill_in",
+        "question": "She ___ (may) be at the library now.",
+        "answer": "may",
+        "explain_vi": "Điền 'may' vào chỗ trống."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "It looks dark. It ___ rain soon.",
+        "options": [
+          "might",
+          "must",
+          "can't",
+          "should"
+        ],
+        "answer": 0,
+        "explain_vi": "Khả năng thấp → might."
+      },
+      {
+        "type": "error_correction",
+        "question": "He coulds be the winner.",
+        "answer": "He could be the winner.",
+        "explain_vi": "Không thêm 's' vào modal verb."
+      }
+    ]
+  },
+  {
+    "title": "Relative Clauses (Who / Which / That)",
+    "title_vi": "Mệnh đề quan hệ (Who / Which / That)",
+    "level": "b1",
+    "category": "sentence_structure",
+    "description_vi": "Mệnh đề quan hệ dùng để bổ nghĩa cho danh từ, giúp xác định hoặc cung cấp thêm thông tin về danh từ đó",
+    "rules": [
+      {
+        "rule": "Who: dùng cho người (chủ ngữ)",
+        "example_en": "The woman who lives next door is a doctor.",
+        "example_vi": "Người phụ nữ sống bên cạnh là bác sĩ."
+      },
+      {
+        "rule": "Which: dùng cho vật (chủ ngữ hoặc tân ngữ)",
+        "example_en": "The book which I read was interesting.",
+        "example_vi": "Cuốn sách mà tôi đọc rất thú vị."
+      },
+      {
+        "rule": "That: dùng cho cả người và vật (thường thay thế who/which trong mệnh đề xác định)",
+        "example_en": "The car that is parked outside is mine.",
+        "example_vi": "Chiếc xe đỗ bên ngoài là của tôi."
+      },
+      {
+        "rule": "Không dùng 'that' trong m���nh đề không xác định (có dấu phẩy)",
+        "example_en": "My mother, who is a teacher, loves her job. (không: that)",
+        "example_vi": "Mẹ tôi, là giáo viên, yêu công việc của mình."
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "The man which is talking to John is my uncle.",
+        "correct": "The man who is talking to John is my uncle.",
+        "explain_vi": "Người dùng 'who', không dùng 'which'."
+      },
+      {
+        "wrong": "The book who I bought is expensive.",
+        "correct": "The book which/that I bought is expensive.",
+        "explain_vi": "Vật dùng 'which' hoặc 'that', không dùng 'who'."
+      },
+      {
+        "wrong": "My sister, that is a nurse, works hard.",
+        "correct": "My sister, who is a nurse, works hard.",
+        "explain_vi": "Mệnh đề không xác định (có dấu phẩy) không dùng 'that'."
+      }
+    ],
+    "related_vocab": [
+      "who",
+      "which",
+      "that",
+      "whom",
+      "whose",
+      "where"
+    ],
+    "related_phrases": [
+      "the person who",
+      "the thing which",
+      "the one that",
+      "the place where"
+    ],
+    "exercises": [
+      {
+        "type": "fill_in",
+        "question": "The artist ___ painted this picture is famous.",
+        "answer": "who",
+        "explain_vi": "Người dùng 'who'."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "I like the dress ___ you are wearing.",
+        "options": [
+          "who",
+          "which",
+          "whom",
+          "where"
+        ],
+        "answer": 1,
+        "explain_vi": "Vật dùng 'which'."
+      },
+      {
+        "type": "error_correction",
+        "question": "The house who is on the corner is old.",
+        "answer": "The house which/that is on the corner is old.",
+        "explain_vi": "Nhà là vật, dùng 'which' hoặc 'that', không dùng 'who'."
+      }
+    ]
+  },
+  {
+    "title": "Reported Speech (Basic)",
+    "title_vi": "Lời nói gián tiếp (cơ bản)",
+    "level": "b1",
+    "category": "sentence_structure",
+    "description_vi": "Dùng để tường thuật lại lời nói của người khác, thay đổi thì và đại từ cho phù hợp.",
+    "rules": [
+      {
+        "rule": "Lùi thì (backshift): hiện tại → quá khứ, quá khứ → quá khứ hoàn thành",
+        "example_en": "She said, 'I am tired.' → She said she was tired.",
+        "example_vi": "Cô ấy nói: 'Tôi mệt.' → Cô ấy nói cô ấy mệt."
+      },
+      {
+        "rule": "Đại từ và tính từ sở hữu thay đổi theo chủ ngữ của mệnh đề chính",
+        "example_en": "He said, 'I love my job.' → He said he loved his job.",
+        "example_vi": "Anh ấy nói: 'Tôi yêu công việc của tôi.' → Anh ấy nói anh ấy yêu công việc của anh ấy."
+      },
+      {
+        "rule": "Câu hỏi Yes/No dùng 'if/whether', câu hỏi Wh- giữ nguyên từ để hỏi",
+        "example_en": "She asked, 'Do you like coffee?' → She asked if I liked coffee.",
+        "example_vi": "Cô ấy hỏi: 'Bạn có thích cà phê không?' → Cô ấy hỏi tôi có thích cà phê không."
+      },
+      {
+        "rule": "Câu mệnh lệnh dùng 'told + O + to V' hoặc 'asked + O + to V'",
+        "example_en": "He said, 'Close the door.' → He told me to close the door.",
+        "example_vi": "Anh ấy nói: 'Đóng cửa lại.' → Anh ấy bảo tôi đóng cửa."
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "She said she is tired.",
+        "correct": "She said she was tired.",
+        "explain_vi": "Khi tường thuật, phải lùi thì: 'is' thành 'was'."
+      },
+      {
+        "wrong": "He asked me do I like coffee.",
+        "correct": "He asked me if I liked coffee.",
+        "explain_vi": "Câu hỏi gián tiếp cần 'if' và thay đổi trật tự từ (không đảo ngữ)."
+      },
+      {
+        "wrong": "She told me that she will come.",
+        "correct": "She told me that she would come.",
+        "explain_vi": "Lùi thì: 'will' thành 'would'."
+      }
+    ],
+    "related_vocab": [
+      "said",
+      "told",
+      "asked",
+      "if",
+      "whether",
+      "that"
+    ],
+    "related_phrases": [
+      "said that",
+      "told me to",
+      "asked if",
+      "wondered whether"
+    ],
+    "exercises": [
+      {
+        "type": "fill_in",
+        "question": "She said, 'I am happy.' → She said that she ___ happy.",
+        "answer": "was",
+        "explain_vi": "Lùi thì: 'am' → 'was'."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "He asked, 'Where do you live?' → He asked me where I ___.",
+        "options": [
+          "live",
+          "lived",
+          "living",
+          "am living"
+        ],
+        "answer": 1,
+        "explain_vi": "Lùi thì: 'do you live' → 'I lived'."
+      },
+      {
+        "type": "error_correction",
+        "question": "She told me that she is coming.",
+        "answer": "She told me that she was coming.",
+        "explain_vi": "Lùi thì: 'is coming' → 'was coming'."
+      }
+    ]
+  },
+  {
+    "title": "Used To",
+    "title_vi": "Used to – thói quen trong quá khứ",
+    "level": "b1",
+    "category": "tenses",
+    "description_vi": "Dùng để diễn tả thói quen hoặc trạng thái trong quá khứ mà nay không còn.",
+    "rules": [
+      {
+        "rule": "Khẳng định: S + used to + V (nguyên thể)",
+        "example_en": "I used to play football every Sunday.",
+        "example_vi": "Tôi từng chơi bóng đá mỗi Chủ nhật."
+      },
+      {
+        "rule": "Phủ định: S + didn't use to + V",
+        "example_en": "She didn't use to drink coffee.",
+        "example_vi": "Cô ấy đã từng không uống cà phê."
+      },
+      {
+        "rule": "Nghi vấn: Did + S + use to + V?",
+        "example_en": "Did you use to live here?",
+        "example_vi": "Bạn đã từng sống ở đây phải không?"
+      },
+      {
+        "rule": "Không dùng 'used to' cho thói quen hiện tại; dùng 'usually'",
+        "example_en": "I usually get up early. (không: I use to get up early)",
+        "example_vi": "Tôi thường dậy sớm."
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I use to go swimming.",
+        "correct": "I used to go swimming.",
+        "explain_vi": "Luôn dùng 'used to' ở quá khứ, không phải 'use to'."
+      },
+      {
+        "wrong": "She didn't used to smoke.",
+        "correct": "She didn't use to smoke.",
+        "explain_vi": "Sau 'didn't' dùng 'use to' (không có -d)."
+      },
+      {
+        "wrong": "I am used to get up early. (nhầm với 'be used to')",
+        "correct": "I used to get up early.",
+        "explain_vi": "'Used to' chỉ thói quen quá khứ; 'be used to' (quen với) + V-ing."
+      }
+    ],
+    "related_vocab": [
+      "used to",
+      "didn't use to",
+      "never used to",
+      "would (for past habits)"
+    ],
+    "related_phrases": [
+      "used to live",
+      "used to play",
+      "used to be",
+      "used to have"
+    ],
+    "exercises": [
+      {
+        "type": "fill_in",
+        "question": "I ___ (live) in Hanoi, but now I live in HCMC.",
+        "answer": "used to live",
+        "explain_vi": "Thói quen quá khứ đã chấm dứt → dùng 'used to live'."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "He ___ smoke, but he quit last year.",
+        "options": [
+          "used to",
+          "use to",
+          "was used to",
+          "did use to"
+        ],
+        "answer": 0,
+        "explain_vi": "Chọn 'used to' cho thói quen quá khứ."
+      },
+      {
+        "type": "error_correction",
+        "question": "I didn't used to like vegetables.",
+        "answer": "I didn't use to like vegetables.",
+        "explain_vi": "Sau 'didn't' dùng 'use to' (không -d)."
+      }
+    ]
+  },
+  {
+    "title": "Gerund vs Infinitive",
+    "title_vi": "Danh động từ vs Động từ nguyên thể",
+    "level": "b1",
+    "category": "word_formation",
+    "description_vi": "Phân biệt khi nào dùng V-ing (gerund) và khi nào dùng to-V (infinitive) sau động từ.",
+    "rules": [
+      {
+        "rule": "Một số động từ + gerund: enjoy, mind, suggest, avoid, finish",
+        "example_en": "I enjoy reading books.",
+        "example_vi": "Tôi thích đọc sách."
+      },
+      {
+        "rule": "Một số động từ + to-infinitive: want, hope, decide, plan, promise",
+        "example_en": "She hopes to pass the exam.",
+        "example_vi": "Cô ấy hy vọng vượt qua kỳ thi."
+      },
+      {
+        "rule": "Một số động từ có thể + cả hai nhưng nghĩa thay đổi: stop, remember, forget, try",
+        "example_en": "I stopped smoking. (bỏ hẳn) vs I stopped to smoke. (dừng lại để hút)",
+        "example_vi": "Tôi ngừng hút thuốc. vs Tôi dừng lại để hút thuốc."
+      },
+      {
+        "rule": "Sau giới từ luôn dùng gerund",
+        "example_en": "He is interested in learning English.",
+        "example_vi": "Anh ấy quan tâm đến việc học tiếng Anh."
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I enjoy to swim.",
+        "correct": "I enjoy swimming.",
+        "explain_vi": "Sau 'enjoy' phải dùng V-ing, không phải to-infinitive."
+      },
+      {
+        "wrong": "She decided going abroad.",
+        "correct": "She decided to go abroad.",
+        "explain_vi": "Sau 'decide' dùng to-infinitive."
+      },
+      {
+        "wrong": "I am looking forward to meet you.",
+        "correct": "I am looking forward to meeting you.",
+        "explain_vi": "'To' ở đây là giới từ, nên sau nó dùng V-ing."
+      }
+    ],
+    "related_vocab": [
+      "enjoy",
+      "avoid",
+      "suggest",
+      "want",
+      "hope",
+      "decide"
+    ],
+    "related_phrases": [
+      "enjoy doing",
+      "want to do",
+      "stop doing",
+      "stop to do",
+      "look forward to doing"
+    ],
+    "exercises": [
+      {
+        "type": "fill_in",
+        "question": "I avoid ___ (eat) junk food.",
+        "answer": "eating",
+        "explain_vi": "Sau 'avoid' dùng V-ing."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "She promised ___ (help) me.",
+        "options": [
+          "helping",
+          "to help",
+          "help",
+          "helped"
+        ],
+        "answer": 1,
+        "explain_vi": "Sau 'promise' dùng to-infinitive."
+      },
+      {
+        "type": "error_correction",
+        "question": "He suggested to go to the cinema.",
+        "answer": "He suggested going to the cinema.",
+        "explain_vi": "Sau 'suggest' dùng V-ing."
+      }
+    ]
+  },
+  {
+    "title": "Wish + Past Simple",
+    "title_vi": "Wish + quá khứ đơn (ước muốn hiện tại)",
+    "level": "b1",
+    "category": "sentence_structure",
+    "description_vi": "Dùng để diễn tả mong ước không có thật ở hiện tại.",
+    "rules": [
+      {
+        "rule": "Cấu trúc: S + wish(es) + S + V (quá khứ đơn)",
+        "example_en": "I wish I had more money.",
+        "example_vi": "Tôi ước tôi có nhiều tiền hơn."
+      },
+      {
+        "rule": "Động từ 'to be' dùng 'were' cho tất cả các ngôi",
+        "example_en": "She wishes she were taller.",
+        "example_vi": "Cô ấy ước cô ấy cao hơn."
+      },
+      {
+        "rule": "Dùng 'could' để diễn tả khả năng",
+        "example_en": "I wish I could speak Chinese.",
+        "example_vi": "Tôi ước tôi có thể nói tiếng Trung."
+      },
+      {
+        "rule": "Không dùng 'wish + would' cho bản thân (chỉ dùng cho người khác hoặc sự việc)",
+        "example_en": "I wish you would stop smoking. (mong người khác thay đổi)",
+        "example_vi": "Tôi ước bạn ngừng hút thuốc."
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I wish I am rich.",
+        "correct": "I wish I were rich.",
+        "explain_vi": "Sau 'wish' dùng quá khứ đơn, 'to be' dùng 'were'."
+      },
+      {
+        "wrong": "She wishes she is taller.",
+        "correct": "She wishes she were taller.",
+        "explain_vi": "Dùng 'were' cho tất cả ngôi."
+      },
+      {
+        "wrong": "I wish I can fly.",
+        "correct": "I wish I could fly.",
+        "explain_vi": "Dùng 'could' (quá khứ của 'can')."
+      }
+    ],
+    "related_vocab": [
+      "wish",
+      "if only",
+      "could",
+      "were"
+    ],
+    "related_phrases": [
+      "wish I had",
+      "wish I were",
+      "wish I could",
+      "if only I had"
+    ],
+    "exercises": [
+      {
+        "type": "fill_in",
+        "question": "I wish I ___ (be) taller.",
+        "answer": "were",
+        "explain_vi": "Sau 'wish' dùng 'were' cho 'to be'."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "She wishes she ___ (can) drive.",
+        "options": [
+          "can",
+          "could",
+          "will",
+          "would"
+        ],
+        "answer": 1,
+        "explain_vi": "Dùng 'could' (quá khứ của 'can')."
+      },
+      {
+        "type": "error_correction",
+        "question": "I wish I have a car.",
+        "answer": "I wish I had a car.",
+        "explain_vi": "Sau 'wish' dùng quá khứ: 'have' → 'had'."
+      }
+    ]
+  },
+  {
+    "title": "Quantifiers (Some / Any / Much / Many / A lot of)",
+    "title_vi": "Từ chỉ số lượng",
+    "level": "b1",
+    "category": "articles_determiners",
+    "description_vi": "Dùng để chỉ số lượng, phân biệt danh từ đếm được và không đếm được.",
+    "rules": [
+      {
+        "rule": "Some: dùng trong câu khẳng định, lời mời, yêu cầu",
+        "example_en": "I have some friends.",
+        "example_vi": "Tôi có một vài người bạn."
+      },
+      {
+        "rule": "Any: dùng trong câu phủ định và nghi vấn",
+        "example_en": "I don't have any money.",
+        "example_vi": "Tôi không có chút tiền nào."
+      },
+      {
+        "rule": "Much + danh từ không đếm được; Many + danh từ đếm được số nhiều",
+        "example_en": "How much water? / How many books?",
+        "example_vi": "Bao nhiêu nước? / Bao nhiêu quyển sách?"
+      },
+      {
+        "rule": "A lot of / lots of: dùng với cả hai loại danh từ",
+        "example_en": "She has a lot of friends / a lot of money.",
+        "example_vi": "Cô ấy có nhiều bạn / nhiều tiền."
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I have many money.",
+        "correct": "I have a lot of money.",
+        "explain_vi": "'Money' là danh từ không đếm được, dùng 'much' hoặc 'a lot of'."
+      },
+      {
+        "wrong": "She doesn't have some time.",
+        "correct": "She doesn't have any time.",
+        "explain_vi": "Câu phủ định dùng 'any'."
+      },
+      {
+        "wrong": "How many rice do you want?",
+        "correct": "How much rice do you want?",
+        "explain_vi": "'Rice' không đếm được, dùng 'much'."
+      }
+    ],
+    "related_vocab": [
+      "some",
+      "any",
+      "much",
+      "many",
+      "a lot of",
+      "lots of"
+    ],
+    "related_phrases": [
+      "some friends",
+      "any money",
+      "much time",
+      "many books",
+      "a lot of people"
+    ],
+    "exercises": [
+      {
+        "type": "fill_in",
+        "question": "I need ___ (some/any) help.",
+        "answer": "some",
+        "explain_vi": "Câu khẳng định dùng 'some'."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "How ___ sugar do you want?",
+        "options": [
+          "much",
+          "many",
+          "some",
+          "any"
+        ],
+        "answer": 0,
+        "explain_vi": "'Sugar' không đếm được, dùng 'much'."
+      },
+      {
+        "type": "error_correction",
+        "question": "There isn't some milk.",
+        "answer": "There isn't any milk.",
+        "explain_vi": "Câu phủ định dùng 'any'."
+      }
+    ]
+  },
+  {
+    "title": "Phrasal Verb Patterns",
+    "title_vi": "Cấu trúc động từ ghép (phrasal verbs)",
+    "level": "b1",
+    "category": "word_formation",
+    "description_vi": "Động từ + tiểu từ (preposition/adverb) tạo nghĩa mới. Cần biết vị trí tân ngữ.",
+    "rules": [
+      {
+        "rule": "Phrasal verb không tách rời (inseparable): tân ngữ luôn sau tiểu từ",
+        "example_en": "I ran into an old friend. (không: ran an old friend into)",
+        "example_vi": "Tôi tình cờ gặp một người bạn cũ."
+      },
+      {
+        "rule": "Phrasal verb tách rời (separable): tân ngữ có thể ở giữa hoặc sau. Nếu tân ngữ là đại từ, phải ở giữa.",
+        "example_en": "Turn off the light. / Turn the light off. / Turn it off. (không: turn off it)",
+        "example_vi": "Tắt đèn. / Tắt nó đi."
+      },
+      {
+        "rule": "Một số phrasal verb có 3 từ (verb + particle + preposition): không tách",
+        "example_en": "I look forward to hearing from you.",
+        "example_vi": "Tôi mong nhận được tin từ bạn."
+      },
+      {
+        "rule": "Nghĩa của phrasal verb thường khác nghĩa gốc của động từ",
+        "example_en": "give up = stop trying; look up = search for information",
+        "example_vi": "give up = từ bỏ; look up = tra cứu"
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Please pick up it.",
+        "correct": "Please pick it up.",
+        "explain_vi": "Đại từ tân ngữ phải đứng giữa động từ và tiểu từ."
+      },
+      {
+        "wrong": "I look forward to hear from you.",
+        "correct": "I look forward to hearing from you.",
+        "explain_vi": "Sau 'to' (giới từ) dùng V-ing."
+      },
+      {
+        "wrong": "She gave up smoke.",
+        "correct": "She gave up smoking.",
+        "explain_vi": "Sau phrasal verb 'give up' dùng V-ing."
+      }
+    ],
+    "related_vocab": [
+      "give up",
+      "look up",
+      "turn off",
+      "put on",
+      "take off",
+      "run into"
+    ],
+    "related_phrases": [
+      "give up smoking",
+      "look up a word",
+      "turn off the TV",
+      "put on a jacket",
+      "take off shoes"
+    ],
+    "exercises": [
+      {
+        "type": "fill_in",
+        "question": "Please turn ___ the light. (off/on)",
+        "answer": "off",
+        "explain_vi": "Dùng 'turn off' để tắt."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "I need to look ___ this word.",
+        "options": [
+          "up",
+          "out",
+          "for",
+          "after"
+        ],
+        "answer": 0,
+        "explain_vi": "Look up = tra cứu."
+      },
+      {
+        "type": "error_correction",
+        "question": "Can you pick up me at 5?",
+        "answer": "Can you pick me up at 5?",
+        "explain_vi": "Đại từ 'me' phải đứng giữa 'pick' và 'up'."
+      }
+    ]
+  },
+  {
+    "title": "Linking Words (However / Although / Despite)",
+    "title_vi": "Từ nối (tương phản)",
+    "level": "b1",
+    "category": "connectors",
+    "description_vi": "Dùng để nối hai mệnh đề tương phản, thể hiện sự đối lập.",
+    "rules": [
+      {
+        "rule": "Although + mệnh đề (S + V)",
+        "example_en": "Although it rained, we went out.",
+        "example_vi": "Mặc dù trời mưa, chúng tôi vẫn ra ngoài."
+      },
+      {
+        "rule": "Despite / In spite of + danh từ / V-ing",
+        "example_en": "Despite the rain, we went out.",
+        "example_vi": "Mặc dù trời mưa, chúng tôi vẫn ra ngoài."
+      },
+      {
+        "rule": "However: đứng đầu câu hoặc giữa câu, ngăn cách bằng dấu phẩy",
+        "example_en": "It rained. However, we went out. / It rained; however, we went out.",
+        "example_vi": "Trời mưa. Tuy nhiên, chúng tôi vẫn ra ngoài."
+      },
+      {
+        "rule": "Không dùng 'although' và 'but' cùng nhau trong cùng một câu",
+        "example_en": "Although it rained, we went out. (Đúng) / Although it rained, but we went out. (Sai)",
+        "example_vi": "Mặc dù trời mưa, chúng tôi vẫn ra ngoài."
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Although it rained, but we went out.",
+        "correct": "Although it rained, we went out.",
+        "explain_vi": "Không dùng 'although' và 'but' cùng nhau."
+      },
+      {
+        "wrong": "Despite it rained, we went out.",
+        "correct": "Despite the rain, we went out.",
+        "explain_vi": "Sau 'despite' dùng danh từ hoặc V-ing, không phải mệnh đề."
+      },
+      {
+        "wrong": "He is tired. However he keeps working.",
+        "correct": "He is tired. However, he keeps working.",
+        "explain_vi": "Sau 'however' cần dấu phẩy."
+      }
+    ],
+    "related_vocab": [
+      "although",
+      "though",
+      "even though",
+      "despite",
+      "in spite of",
+      "however"
+    ],
+    "related_phrases": [
+      "although it is",
+      "despite the fact that",
+      "in spite of being",
+      "however, I think"
+    ],
+    "exercises": [
+      {
+        "type": "fill_in",
+        "question": "___ (Although/Despite) the cold weather, we went swimming.",
+        "answer": "Despite",
+        "explain_vi": "Sau 'despite' dùng danh từ (the cold weather)."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "___ it was late, she continued working.",
+        "options": [
+          "Despite",
+          "Although",
+          "However",
+          "In spite of"
+        ],
+        "answer": 1,
+        "explain_vi": "Sau 'although' là mệnh đề (it was late)."
+      },
+      {
+        "type": "error_correction",
+        "question": "Despite he is rich, he is unhappy.",
+        "answer": "Although he is rich, he is unhappy.",
+        "explain_vi": "Sau 'despite' không dùng mệnh đề; dùng 'although' hoặc 'despite being rich'."
+      }
+    ]
+  }
+]

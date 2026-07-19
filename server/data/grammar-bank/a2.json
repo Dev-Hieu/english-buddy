@@ -1,0 +1,1172 @@
+[
+  {
+    "title": "Past Simple (Regular & Irregular)",
+    "title_vi": "Thì quá khứ đơn",
+    "level": "a2",
+    "category": "tenses",
+    "description_vi": "Dùng để diễn tả hành động đã xảy ra và kết thúc trong quá khứ, thường có thời gian xác định.",
+    "rules": [
+      {
+        "rule": "Khẳng định: S + V2/ed + O",
+        "example_en": "I visited my grandmother yesterday.",
+        "example_vi": "Hôm qua tôi đã thăm bà tôi."
+      },
+      {
+        "rule": "Phủ định: S + did not + V (nguyên thể) + O",
+        "example_en": "She didn't go to the party last night.",
+        "example_vi": "Cô ấy đã không đi dự tiệc tối qua."
+      },
+      {
+        "rule": "Nghi vấn: Did + S + V (nguyên thể) + O?",
+        "example_en": "Did you finish your homework?",
+        "example_vi": "Bạn đã làm xong bài tập về nhà chưa?"
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I go to the cinema yesterday.",
+        "correct": "I went to the cinema yesterday.",
+        "explain_vi": "Hành động đã xảy ra hôm qua nên phải dùng quá khứ: go → went."
+      },
+      {
+        "wrong": "She didn't went to school.",
+        "correct": "She didn't go to school.",
+        "explain_vi": "Sau 'did not' động từ phải ở dạng nguyên thể, không chia quá khứ."
+      },
+      {
+        "wrong": "He buyed a new car.",
+        "correct": "He bought a new car.",
+        "explain_vi": "Buy là động từ bất quy tắc, quá khứ là bought, không thêm -ed."
+      }
+    ],
+    "related_vocab": [
+      "yesterday",
+      "last night",
+      "ago",
+      "in 2020",
+      "then"
+    ],
+    "related_phrases": [
+      "go to school",
+      "have dinner",
+      "watch TV",
+      "play football"
+    ],
+    "exercises": [
+      {
+        "type": "fill_in",
+        "question": "She ___ (study) English last night.",
+        "answer": "studied",
+        "explain_vi": "Study là động từ có quy tắc, thêm -ed thành studied."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "They ___ to the beach last weekend.",
+        "options": [
+          "go",
+          "went",
+          "goed",
+          "gone"
+        ],
+        "answer": 1,
+        "explain_vi": "Go là bất quy tắc, quá khứ là went."
+      },
+      {
+        "type": "error_correction",
+        "question": "He didn't saw the movie.",
+        "answer": "He didn't see the movie.",
+        "explain_vi": "Sau didn't dùng nguyên thể see, không dùng saw."
+      }
+    ]
+  },
+  {
+    "title": "Past Continuous",
+    "title_vi": "Thì quá khứ tiếp diễn",
+    "level": "a2",
+    "category": "tenses",
+    "description_vi": "Dùng để diễn tả hành động đang xảy ra tại một thời điểm cụ thể trong quá khứ, hoặc hai hành động xảy ra đồng thời.",
+    "rules": [
+      {
+        "rule": "Khẳng định: S + was/were + V-ing + O",
+        "example_en": "I was watching TV at 8 p.m. last night.",
+        "example_vi": "Tôi đang xem TV lúc 8 giờ tối qua."
+      },
+      {
+        "rule": "Phủ định: S + was/were + not + V-ing + O",
+        "example_en": "They weren't playing football at that time.",
+        "example_vi": "Họ đã không chơi bóng đá vào lúc đó."
+      },
+      {
+        "rule": "Nghi vấn: Was/Were + S + V-ing + O?",
+        "example_en": "Were you sleeping when I called?",
+        "example_vi": "Bạn có đang ngủ khi tôi gọi không?"
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I was watch TV at 8 p.m.",
+        "correct": "I was watching TV at 8 p.m.",
+        "explain_vi": "Phải dùng V-ing sau was/were, không dùng nguyên thể."
+      },
+      {
+        "wrong": "She were cooking dinner.",
+        "correct": "She was cooking dinner.",
+        "explain_vi": "Chủ ngữ số ít (she) đi với was, không phải were."
+      },
+      {
+        "wrong": "While I watched TV, she came.",
+        "correct": "While I was watching TV, she came.",
+        "explain_vi": "While thường dùng với quá khứ tiếp diễn để chỉ hành động đang diễn ra."
+      }
+    ],
+    "related_vocab": [
+      "while",
+      "when",
+      "at that moment",
+      "all day yesterday",
+      "at 5 o'clock"
+    ],
+    "related_phrases": [
+      "do homework",
+      "have lunch",
+      "drive a car",
+      "read a book"
+    ],
+    "exercises": [
+      {
+        "type": "fill_in",
+        "question": "At 7 p.m., I ___ (have) dinner.",
+        "answer": "was having",
+        "explain_vi": "Hành động đang diễn ra tại thời điểm xác định trong quá khứ → was having."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "They ___ when the teacher arrived.",
+        "options": [
+          "talked",
+          "were talking",
+          "are talking",
+          "talk"
+        ],
+        "answer": 1,
+        "explain_vi": "Hành động đang xảy ra thì bị ngắt quãng → were talking."
+      },
+      {
+        "type": "error_correction",
+        "question": "He was go to school when I saw him.",
+        "answer": "He was going to school when I saw him.",
+        "explain_vi": "Sau was phải là V-ing: go → going."
+      }
+    ]
+  },
+  {
+    "title": "Going To (Future)",
+    "title_vi": "Going to – kế hoạch tương lai",
+    "level": "a2",
+    "category": "tenses",
+    "description_vi": "Dùng để diễn tả dự định, kế hoạch đã được quyết định trước, hoặc dự đoán dựa trên bằng chứng hiện tại.",
+    "rules": [
+      {
+        "rule": "Khẳng định: S + am/is/are + going to + V (nguyên thể) + O",
+        "example_en": "I am going to visit Hanoi next month.",
+        "example_vi": "Tôi dự định thăm Hà Nội vào tháng sau."
+      },
+      {
+        "rule": "Phủ định: S + am/is/are + not + going to + V (nguyên thể) + O",
+        "example_en": "She is not going to buy that dress.",
+        "example_vi": "Cô ấy sẽ không mua chiếc váy đó."
+      },
+      {
+        "rule": "Nghi vấn: Am/Is/Are + S + going to + V (nguyên thể) + O?",
+        "example_en": "Are you going to apply for the job?",
+        "example_vi": "Bạn có dự định nộp đơn xin việc không?"
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I will going to the market.",
+        "correct": "I am going to go to the market.",
+        "explain_vi": "Không kết hợp will và going to; dùng am going to go hoặc will go."
+      },
+      {
+        "wrong": "She going to study abroad.",
+        "correct": "She is going to study abroad.",
+        "explain_vi": "Thiếu động từ to be (is) trước going to."
+      },
+      {
+        "wrong": "They are go to travel.",
+        "correct": "They are going to travel.",
+        "explain_vi": "Sau 'going to' phải là động từ nguyên thể, không thêm 'to' nữa."
+      }
+    ],
+    "related_vocab": [
+      "tomorrow",
+      "next week",
+      "plan",
+      "intend",
+      "soon"
+    ],
+    "related_phrases": [
+      "travel to",
+      "buy a car",
+      "start a business",
+      "learn English"
+    ],
+    "exercises": [
+      {
+        "type": "fill_in",
+        "question": "We ___ (have) a party next Saturday.",
+        "answer": "are going to have",
+        "explain_vi": "Diễn tả kế hoạch đã định → are going to have."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Look at the clouds! It ___ rain.",
+        "options": [
+          "will",
+          "is going to",
+          "goes to",
+          "going"
+        ],
+        "answer": 1,
+        "explain_vi": "Dựa vào bằng chứng (mây đen) → dùng is going to."
+      },
+      {
+        "type": "error_correction",
+        "question": "He is going to visits his grandparents.",
+        "answer": "He is going to visit his grandparents.",
+        "explain_vi": "Sau 'going to' động từ ở dạng nguyên thể, không chia."
+      }
+    ]
+  },
+  {
+    "title": "Will (Future)",
+    "title_vi": "Will – tương lai đơn",
+    "level": "a2",
+    "category": "tenses",
+    "description_vi": "Dùng để diễn tả quyết định tức thời, lời hứa, dự đoán không có bằng chứng, hoặc sự thật trong tương lai.",
+    "rules": [
+      {
+        "rule": "Khẳng định: S + will + V (nguyên thể) + O",
+        "example_en": "I will help you with your homework.",
+        "example_vi": "Tôi sẽ giúp bạn làm bài tập."
+      },
+      {
+        "rule": "Phủ định: S + will not (won't) + V (nguyên thể) + O",
+        "example_en": "She won't come to the party.",
+        "example_vi": "Cô ấy sẽ không đến bữa tiệc."
+      },
+      {
+        "rule": "Nghi vấn: Will + S + V (nguyên thể) + O?",
+        "example_en": "Will you marry me?",
+        "example_vi": "Em sẽ lấy anh chứ?"
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I will to call you later.",
+        "correct": "I will call you later.",
+        "explain_vi": "Sau will động từ ở dạng nguyên thể, không có 'to'."
+      },
+      {
+        "wrong": "He will goes to school.",
+        "correct": "He will go to school.",
+        "explain_vi": "Sau will không chia động từ, giữ nguyên thể."
+      },
+      {
+        "wrong": "She not will come.",
+        "correct": "She will not come.",
+        "explain_vi": "Phủ định: will not, không đặt not trước will."
+      }
+    ],
+    "related_vocab": [
+      "promise",
+      "guess",
+      "maybe",
+      "probably",
+      "certainly"
+    ],
+    "related_phrases": [
+      "call you",
+      "send an email",
+      "buy a gift",
+      "visit a friend"
+    ],
+    "exercises": [
+      {
+        "type": "fill_in",
+        "question": "I ___ (help) you with the dishes.",
+        "answer": "will help",
+        "explain_vi": "Quyết định tức thời → will help."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "I think it ___ sunny tomorrow.",
+        "options": [
+          "will be",
+          "is going to be",
+          "is",
+          "be"
+        ],
+        "answer": 0,
+        "explain_vi": "Dự đoán không có bằng chứng → will be."
+      },
+      {
+        "type": "error_correction",
+        "question": "I will not to go there.",
+        "answer": "I will not go there.",
+        "explain_vi": "Sau will không có to."
+      }
+    ]
+  },
+  {
+    "title": "Comparatives",
+    "title_vi": "So sánh hơn",
+    "level": "a2",
+    "category": "word_formation",
+    "description_vi": "Dùng để so sánh hai người/vật; tính từ ngắn thêm -er, tính từ dài thêm 'more'.",
+    "rules": [
+      {
+        "rule": "Tính từ ngắn (1 âm tiết): S + V + adj-er + than + O",
+        "example_en": "My house is bigger than yours.",
+        "example_vi": "Nhà tôi lớn hơn nhà bạn."
+      },
+      {
+        "rule": "Tính từ dài (2 âm tiết trở lên): S + V + more + adj + than + O",
+        "example_en": "This book is more interesting than that one.",
+        "example_vi": "Cuốn sách này thú vị hơn cuốn kia."
+      },
+      {
+        "rule": "Bất quy tắc: good → better, bad → worse, far → farther/further",
+        "example_en": "Her English is better than mine.",
+        "example_vi": "Tiếng Anh của cô ấy tốt hơn của tôi."
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "She is more tall than me.",
+        "correct": "She is taller than me.",
+        "explain_vi": "Tall là tính từ ngắn, phải thêm -er, không dùng more."
+      },
+      {
+        "wrong": "He is more smarter than his brother.",
+        "correct": "He is smarter than his brother.",
+        "explain_vi": "Không dùng cả more và -er cùng lúc."
+      },
+      {
+        "wrong": "My car is more good than yours.",
+        "correct": "My car is better than yours.",
+        "explain_vi": "Good có dạng so sánh bất quy tắc là better."
+      }
+    ],
+    "related_vocab": [
+      "than",
+      "cheaper",
+      "faster",
+      "more expensive",
+      "better"
+    ],
+    "related_phrases": [
+      "as ... as",
+      "not as ... as",
+      "the same as"
+    ],
+    "exercises": [
+      {
+        "type": "fill_in",
+        "question": "This road is ___ (narrow) than that one.",
+        "answer": "narrower",
+        "explain_vi": "Narrow là tính từ ngắn, thêm -er."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "She is ___ than her sister.",
+        "options": [
+          "more beautiful",
+          "beautifuler",
+          "most beautiful",
+          "beautiful"
+        ],
+        "answer": 0,
+        "explain_vi": "Beautiful là tính từ dài, dùng more beautiful."
+      },
+      {
+        "type": "error_correction",
+        "question": "This exam is more easy than the last one.",
+        "answer": "This exam is easier than the last one.",
+        "explain_vi": "Easy là tính từ ngắn (kết thúc bằng y) → easier, không dùng more."
+      }
+    ]
+  },
+  {
+    "title": "Superlatives",
+    "title_vi": "So sánh nhất",
+    "level": "a2",
+    "category": "word_formation",
+    "description_vi": "Dùng để so sánh một người/vật với tất cả những người/vật khác trong nhóm; thêm -est hoặc 'most'.",
+    "rules": [
+      {
+        "rule": "Tính từ ngắn: S + V + the + adj-est + (in/of + nhóm)",
+        "example_en": "He is the tallest boy in the class.",
+        "example_vi": "Cậu ấy là cậu bé cao nhất trong lớp."
+      },
+      {
+        "rule": "Tính từ dài: S + V + the most + adj + (in/of + nhóm)",
+        "example_en": "This is the most expensive car in the showroom.",
+        "example_vi": "Đây là chiếc xe đắt nhất trong phòng trưng bày."
+      },
+      {
+        "rule": "Bất quy tắc: good → the best, bad → the worst, far → the farthest/furthest",
+        "example_en": "She is the best student in our school.",
+        "example_vi": "Cô ấy là học sinh giỏi nhất trường chúng tôi."
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "She is the most tallest girl.",
+        "correct": "She is the tallest girl.",
+        "explain_vi": "Không dùng cả most và -est cùng lúc."
+      },
+      {
+        "wrong": "He is the best student in the class.",
+        "correct": "He is the best student in the class.",
+        "explain_vi": "Câu này đúng, nhưng học sinh hay quên 'the'."
+      },
+      {
+        "wrong": "This is the more interesting book.",
+        "correct": "This is the most interesting book.",
+        "explain_vi": "So sánh nhất dùng most, không dùng more."
+      }
+    ],
+    "related_vocab": [
+      "the best",
+      "the worst",
+      "the biggest",
+      "the smallest",
+      "the most"
+    ],
+    "related_phrases": [
+      "in the world",
+      "of all",
+      "in the group"
+    ],
+    "exercises": [
+      {
+        "type": "fill_in",
+        "question": "She is ___ (happy) person I know.",
+        "answer": "the happiest",
+        "explain_vi": "Happy kết thúc bằng y → the happiest."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "Mount Everest is ___ mountain in the world.",
+        "options": [
+          "tall",
+          "taller",
+          "the tallest",
+          "the most tall"
+        ],
+        "answer": 2,
+        "explain_vi": "So sánh nhất của tall (ngắn) → the tallest."
+      },
+      {
+        "type": "error_correction",
+        "question": "He is the most smart student.",
+        "answer": "He is the smartest student.",
+        "explain_vi": "Smart là tính từ ngắn → smartest, không dùng most."
+      }
+    ]
+  },
+  {
+    "title": "Adverbs of Frequency",
+    "title_vi": "Trạng từ chỉ tần suất",
+    "level": "a2",
+    "category": "sentence_structure",
+    "description_vi": "Dùng để nói mức độ thường xuyên của hành động; đứng trước động từ thường, sau động từ to be.",
+    "rules": [
+      {
+        "rule": "Trước động từ thường: S + adv + V (chính) + O",
+        "example_en": "I always drink coffee in the morning.",
+        "example_vi": "Tôi luôn uống cà phê vào buổi sáng."
+      },
+      {
+        "rule": "Sau động từ to be: S + to be + adv + ...",
+        "example_en": "She is often late for school.",
+        "example_vi": "Cô ấy thường xuyên đi học muộn."
+      },
+      {
+        "rule": "Trong câu hỏi: trợ động từ + S + adv + V?",
+        "example_en": "Do you usually eat breakfast?",
+        "example_vi": "Bạn có thường ăn sáng không?"
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I go always to school by bus.",
+        "correct": "I always go to school by bus.",
+        "explain_vi": "Trạng từ tần suất đứng trước động từ thường (go), không đứng sau."
+      },
+      {
+        "wrong": "She is sometimes tired.",
+        "correct": "She is sometimes tired.",
+        "explain_vi": "Câu này đúng, nhưng học sinh hay đặt sometimes ở cuối câu."
+      },
+      {
+        "wrong": "He never is late.",
+        "correct": "He is never late.",
+        "explain_vi": "Sau to be, trạng từ đứng sau to be: is never."
+      }
+    ],
+    "related_vocab": [
+      "always",
+      "usually",
+      "often",
+      "sometimes",
+      "rarely",
+      "never"
+    ],
+    "related_phrases": [
+      "every day",
+      "once a week",
+      "twice a month"
+    ],
+    "exercises": [
+      {
+        "type": "fill_in",
+        "question": "She ___ (usually / get up) at 6 a.m.",
+        "answer": "usually gets up",
+        "explain_vi": "Trạng từ tần suất đứng trước động từ thường."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "They ___ go to the cinema on weekends.",
+        "options": [
+          "go often",
+          "often go",
+          "goes often",
+          "often goes"
+        ],
+        "answer": 1,
+        "explain_vi": "Often đứng trước động từ thường go."
+      },
+      {
+        "type": "error_correction",
+        "question": "He is always happy.",
+        "answer": "He is always happy.",
+        "explain_vi": "Câu này đúng rồi. (Ví dụ để củng cố)"
+      }
+    ]
+  },
+  {
+    "title": "First Conditional",
+    "title_vi": "Câu điều kiện loại 1",
+    "level": "a2",
+    "category": "sentence_structure",
+    "description_vi": "Dùng để diễn tả điều kiện có thể xảy ra ở hiện tại hoặc tương lai; mệnh đề if dùng thì hiện tại đơn, mệnh đề chính dùng will + V.",
+    "rules": [
+      {
+        "rule": "If + S + V (hiện tại đơn), S + will + V (nguyên thể) + O",
+        "example_en": "If it rains, I will stay at home.",
+        "example_vi": "Nếu trời mưa, tôi sẽ ở nhà."
+      },
+      {
+        "rule": "Có thể đảo mệnh đề: S + will + V + if + S + V (hiện tại đơn)",
+        "example_en": "I will go out if the weather is nice.",
+        "example_vi": "Tôi sẽ ra ngoài nếu thời tiết đẹp."
+      },
+      {
+        "rule": "Phủ định: If + S + don't/doesn't + V, S + won't + V",
+        "example_en": "If you don't study, you won't pass the exam.",
+        "example_vi": "Nếu bạn không học, bạn sẽ không đỗ kỳ thi."
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "If it will rain, I will stay home.",
+        "correct": "If it rains, I will stay home.",
+        "explain_vi": "Mệnh đề if dùng hiện tại đơn, không dùng will."
+      },
+      {
+        "wrong": "If she studies hard, she passes the exam.",
+        "correct": "If she studies hard, she will pass the exam.",
+        "explain_vi": "Mệnh đề chính phải dùng will + V để chỉ kết quả tương lai."
+      },
+      {
+        "wrong": "If he doesn't go, he will not be sad.",
+        "correct": "If he doesn't go, he won't be sad.",
+        "explain_vi": "Có thể dùng won't, nhưng câu này đúng. Lỗi thường gặp là thiếu will."
+      }
+    ],
+    "related_vocab": [
+      "if",
+      "unless",
+      "when",
+      "as soon as",
+      "provided that"
+    ],
+    "related_phrases": [
+      "if it rains",
+      "if you study",
+      "if she calls",
+      "if they come"
+    ],
+    "exercises": [
+      {
+        "type": "fill_in",
+        "question": "If she ___ (study) hard, she will pass the exam.",
+        "answer": "studies",
+        "explain_vi": "Mệnh đề if dùng hiện tại đơn: she studies."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "If you eat too much, you ___ sick.",
+        "options": [
+          "will feel",
+          "feel",
+          "felt",
+          "would feel"
+        ],
+        "answer": 0,
+        "explain_vi": "Mệnh đề chính dùng will + V: will feel."
+      },
+      {
+        "type": "error_correction",
+        "question": "If he will come, I will be happy.",
+        "answer": "If he comes, I will be happy.",
+        "explain_vi": "Mệnh đề if không dùng will."
+      }
+    ]
+  },
+  {
+    "title": "Could / Couldn't",
+    "title_vi": "Could / Couldn't – khả năng trong quá khứ",
+    "level": "a2",
+    "category": "modals",
+    "description_vi": "Dùng để diễn tả khả năng trong quá khứ (có thể / không thể làm gì)",
+    "rules": [
+      {
+        "rule": "S + could + V (nguyên thể) – khả năng trong quá khứ",
+        "example_en": "I could swim when I was five.",
+        "example_vi": "Tôi có thể bơi khi tôi 5 tuổi."
+      },
+      {
+        "rule": "S + couldn't + V (nguyên thể) – không thể trong quá khứ",
+        "example_en": "She couldn't come to the party last night.",
+        "example_vi": "Cô ấy không thể đến bữa tiệc tối qua."
+      },
+      {
+        "rule": "Could + S + V? – câu hỏi về khả năng quá khứ",
+        "example_en": "Could you ride a bike when you were young?",
+        "example_vi": "Bạn có thể đi xe đạp khi còn nhỏ không?"
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I could swimming when I was young.",
+        "correct": "I could swim when I was young.",
+        "explain_vi": "Sau 'could' luôn là động từ nguyên thể không 'to'"
+      },
+      {
+        "wrong": "She could not went to school yesterday.",
+        "correct": "She couldn't go to school yesterday.",
+        "explain_vi": "Sau 'couldn't' dùng động từ nguyên thể, không chia thì quá khứ"
+      }
+    ],
+    "related_vocab": [
+      "could",
+      "couldn't",
+      "ability",
+      "past",
+      "possible"
+    ],
+    "related_phrases": [
+      "could swim",
+      "couldn't come",
+      "could you help"
+    ],
+    "exercises": [
+      {
+        "type": "fill_in",
+        "question": "When I was a child, I ___ (can) run very fast.",
+        "answer": "could",
+        "explain_vi": "Dùng 'could' để diễn tả khả năng trong quá khứ"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "He ___ finish the work yesterday because he was sick.",
+        "options": [
+          "could",
+          "couldn't",
+          "can't",
+          "can"
+        ],
+        "answer": 1,
+        "explain_vi": "Vì anh ấy bị ốm nên không thể hoàn thành công việc"
+      },
+      {
+        "type": "error_correction",
+        "question": "I could to play the guitar when I was ten.",
+        "answer": "I could play the guitar when I was ten.",
+        "explain_vi": "Sau 'could' không có 'to'"
+      }
+    ]
+  },
+  {
+    "title": "Should / Shouldn't",
+    "title_vi": "Should / Shouldn't – lời khuyên",
+    "level": "a2",
+    "category": "modals",
+    "description_vi": "Dùng để đưa ra lời khuyên hoặc ý kiến",
+    "rules": [
+      {
+        "rule": "S + should + V (nguyên thể) – nên làm gì",
+        "example_en": "You should drink more water.",
+        "example_vi": "Bạn nên uống nhiều nước hơn."
+      },
+      {
+        "rule": "S + shouldn't + V (nguyên thể) – không nên làm gì",
+        "example_en": "You shouldn't eat too much sugar.",
+        "example_vi": "Bạn không nên ăn quá nhiều đường."
+      },
+      {
+        "rule": "Should + S + V? – câu hỏi xin lời khuyên",
+        "example_en": "Should I call her now?",
+        "example_vi": "Tôi có nên gọi cho cô ấy bây giờ không?"
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "You should to study harder.",
+        "correct": "You should study harder.",
+        "explain_vi": "Sau 'should' là động từ nguyên thể không 'to'"
+      },
+      {
+        "wrong": "He shouldn't smokes.",
+        "correct": "He shouldn't smoke.",
+        "explain_vi": "Sau 'shouldn't' dùng động từ nguyên thể, không chia"
+      }
+    ],
+    "related_vocab": [
+      "should",
+      "shouldn't",
+      "advice",
+      "recommend",
+      "better"
+    ],
+    "related_phrases": [
+      "should go",
+      "shouldn't eat",
+      "should I"
+    ],
+    "exercises": [
+      {
+        "type": "fill_in",
+        "question": "You look tired. You ___ (should) go to bed early.",
+        "answer": "should",
+        "explain_vi": "Dùng 'should' để đưa ra lời khuyên"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "It's raining. You ___ take an umbrella.",
+        "options": [
+          "should",
+          "shouldn't",
+          "could",
+          "can't"
+        ],
+        "answer": 0,
+        "explain_vi": "Trời mưa nên bạn nên mang ô"
+      },
+      {
+        "type": "error_correction",
+        "question": "She should to call her mother.",
+        "answer": "She should call her mother.",
+        "explain_vi": "Sau 'should' không có 'to'"
+      }
+    ]
+  },
+  {
+    "title": "Have To / Don't Have To",
+    "title_vi": "Have to / Don't have to – bắt buộc",
+    "level": "a2",
+    "category": "modals",
+    "description_vi": "Dùng để diễn tả sự bắt buộc hoặc không bắt buộc",
+    "rules": [
+      {
+        "rule": "S + have/has to + V (nguyên thể) – phải làm gì",
+        "example_en": "I have to finish my homework before 9.",
+        "example_vi": "Tôi phải hoàn thành bài tập về nhà trước 9 giờ."
+      },
+      {
+        "rule": "S + don't/doesn't have to + V – không cần phải làm gì",
+        "example_en": "You don't have to wear a tie.",
+        "example_vi": "Bạn không cần phải đeo cà vạt."
+      },
+      {
+        "rule": "Do/Does + S + have to + V? – câu hỏi",
+        "example_en": "Does she have to work on Saturday?",
+        "example_vi": "Cô ấy có phải làm việc vào thứ Bảy không?"
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "She have to go now.",
+        "correct": "She has to go now.",
+        "explain_vi": "Ngôi thứ 3 số ít dùng 'has to'"
+      },
+      {
+        "wrong": "You don't have to smoke here. (nghĩa cấm)",
+        "correct": "You mustn't smoke here. (nếu cấm)",
+        "explain_vi": "'Don't have to' nghĩa là không cần phải, không phải cấm"
+      }
+    ],
+    "related_vocab": [
+      "have to",
+      "has to",
+      "don't have to",
+      "must",
+      "obligation"
+    ],
+    "related_phrases": [
+      "have to work",
+      "don't have to pay",
+      "does he have to"
+    ],
+    "exercises": [
+      {
+        "type": "fill_in",
+        "question": "We ___ (have to) wear a uniform at school.",
+        "answer": "have to",
+        "explain_vi": "Chủ ngữ 'we' dùng 'have to'"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "You ___ pay for the ticket. It's free.",
+        "options": [
+          "have to",
+          "don't have to",
+          "must",
+          "can't"
+        ],
+        "answer": 1,
+        "explain_vi": "Vé miễn phí nên bạn không cần phải trả tiền"
+      },
+      {
+        "type": "error_correction",
+        "question": "He have to study for the exam.",
+        "answer": "He has to study for the exam.",
+        "explain_vi": "Ngôi thứ 3 số ít dùng 'has to'"
+      }
+    ]
+  },
+  {
+    "title": "Present Perfect (Basic)",
+    "title_vi": "Thì hiện tại hoàn thành (cơ bản)",
+    "level": "a2",
+    "category": "tenses",
+    "description_vi": "Dùng để nói về kinh nghiệm, hành động xảy ra trong quá khứ nhưng không rõ thời gian hoặc có liên quan đến hiện tại",
+    "rules": [
+      {
+        "rule": "S + have/has + V3/ed – khẳng định",
+        "example_en": "I have visited Ha Long Bay.",
+        "example_vi": "Tôi đã từng thăm Vịnh Hạ Long."
+      },
+      {
+        "rule": "S + haven't/hasn't + V3/ed – phủ định",
+        "example_en": "She hasn't finished her homework yet.",
+        "example_vi": "Cô ấy vẫn chưa hoàn thành bài tập về nhà."
+      },
+      {
+        "rule": "Have/Has + S + V3/ed? – câu hỏi",
+        "example_en": "Have you ever eaten pho?",
+        "example_vi": "Bạn đã từng ăn phở chưa?"
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I have went to Hanoi.",
+        "correct": "I have gone to Hanoi.",
+        "explain_vi": "Sau 'have' dùng quá khứ phân từ (V3), 'go' -> 'gone'"
+      },
+      {
+        "wrong": "She has saw that movie.",
+        "correct": "She has seen that movie.",
+        "explain_vi": "'see' -> 'saw' (quá khứ đơn) nhưng với HTHT phải dùng 'seen'"
+      }
+    ],
+    "related_vocab": [
+      "ever",
+      "never",
+      "already",
+      "yet",
+      "just",
+      "since",
+      "for"
+    ],
+    "related_phrases": [
+      "have been",
+      "has done",
+      "haven't seen"
+    ],
+    "exercises": [
+      {
+        "type": "fill_in",
+        "question": "I ___ (see) that movie three times.",
+        "answer": "have seen",
+        "explain_vi": "Dùng thì hiện tại hoàn thành vì nói về kinh nghiệm"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "She ___ to London.",
+        "options": [
+          "has gone",
+          "have gone",
+          "has went",
+          "went"
+        ],
+        "answer": 0,
+        "explain_vi": "Chủ ngữ 'She' dùng 'has' + V3 'gone'"
+      },
+      {
+        "type": "error_correction",
+        "question": "They have buy a new car.",
+        "answer": "They have bought a new car.",
+        "explain_vi": "Sau 'have' dùng quá khứ phân từ 'bought'"
+      }
+    ]
+  },
+  {
+    "title": "Too / Enough",
+    "title_vi": "Too / Enough",
+    "level": "a2",
+    "category": "sentence_structure",
+    "description_vi": "Dùng để diễn tả mức độ quá nhiều (too) hoặc đủ (enough)",
+    "rules": [
+      {
+        "rule": "S + V + too + adj/adv + (for O) + to V – quá... đến nỗi không thể",
+        "example_en": "The tea is too hot to drink.",
+        "example_vi": "Trà quá nóng để uống."
+      },
+      {
+        "rule": "S + V + adj/adv + enough + (for O) + to V – đủ... để làm gì",
+        "example_en": "He is tall enough to reach the shelf.",
+        "example_vi": "Anh ấy đủ cao để với tới kệ."
+      },
+      {
+        "rule": "S + V + enough + noun + (for O) + to V – đủ danh từ để làm gì",
+        "example_en": "We have enough time to finish.",
+        "example_vi": "Chúng tôi có đủ thời gian để hoàn thành."
+      },
+      {
+        "rule": "S + V + too + much/many + noun + (for O) + to V – quá nhiều... không thể",
+        "example_en": "There is too much sugar in this cake.",
+        "example_vi": "Có quá nhiều đường trong cái bánh này."
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "The water is too cold to drink it.",
+        "correct": "The water is too cold to drink.",
+        "explain_vi": "Không cần 'it' vì tân ngữ đã được hiểu ngầm"
+      },
+      {
+        "wrong": "He is enough strong to lift the box.",
+        "correct": "He is strong enough to lift the box.",
+        "explain_vi": "Tính từ đứng trước 'enough'"
+      }
+    ],
+    "related_vocab": [
+      "too",
+      "enough",
+      "too much",
+      "too many",
+      "enough money"
+    ],
+    "related_phrases": [
+      "too hot",
+      "big enough",
+      "too much work"
+    ],
+    "exercises": [
+      {
+        "type": "fill_in",
+        "question": "This coffee is ___ (too) bitter for me.",
+        "answer": "too",
+        "explain_vi": "Dùng 'too' trước tính từ để diễn tả quá mức"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "She is ___ to drive a car.",
+        "options": [
+          "old enough",
+          "enough old",
+          "too old",
+          "old too"
+        ],
+        "answer": 0,
+        "explain_vi": "Cấu trúc 'adj + enough'"
+      },
+      {
+        "type": "error_correction",
+        "question": "There is too much chairs in the room.",
+        "answer": "There are too many chairs in the room.",
+        "explain_vi": "'Chairs' đếm được số nhiều, dùng 'too many'"
+      }
+    ]
+  },
+  {
+    "title": "So / Because",
+    "title_vi": "So / Because – liên từ nguyên nhân – kết quả",
+    "level": "a2",
+    "category": "connectors",
+    "description_vi": "Dùng để nối câu chỉ nguyên nhân (because) và kết quả (so)",
+    "rules": [
+      {
+        "rule": "Because + S + V, S + V. – bởi vì... nên...",
+        "example_en": "Because it rained, we stayed home.",
+        "example_vi": "Bởi vì trời mưa, chúng tôi ở nhà."
+      },
+      {
+        "rule": "S + V + because + S + V. – ... bởi vì ...",
+        "example_en": "We stayed home because it rained.",
+        "example_vi": "Chúng tôi ở nhà bởi vì trời mưa."
+      },
+      {
+        "rule": "S + V, so + S + V. – ... nên ...",
+        "example_en": "It rained, so we stayed home.",
+        "example_vi": "Trời mưa, nên chúng tôi ở nhà."
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "Because I was tired, so I went to bed.",
+        "correct": "Because I was tired, I went to bed. hoặc I was tired, so I went to bed.",
+        "explain_vi": "Không dùng cả 'because' và 'so' trong cùng một câu"
+      },
+      {
+        "wrong": "I went to bed because I was tired so I fell asleep.",
+        "correct": "I went to bed because I was tired, so I fell asleep. (cần dấu phẩy)",
+        "explain_vi": "Khi dùng 'so' cần dấu phẩy trước nó"
+      }
+    ],
+    "related_vocab": [
+      "because",
+      "so",
+      "reason",
+      "result",
+      "therefore"
+    ],
+    "related_phrases": [
+      "because of",
+      "so that",
+      "because it's"
+    ],
+    "exercises": [
+      {
+        "type": "fill_in",
+        "question": "I was hungry, ___ I ate a sandwich.",
+        "answer": "so",
+        "explain_vi": "Dùng 'so' để chỉ kết quả"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "___ she studied hard, she passed the exam.",
+        "options": [
+          "So",
+          "Because",
+          "Because of",
+          "So that"
+        ],
+        "answer": 1,
+        "explain_vi": "Dùng 'Because' để chỉ nguyên nhân"
+      },
+      {
+        "type": "error_correction",
+        "question": "Because he was late so he missed the bus.",
+        "answer": "Because he was late, he missed the bus. hoặc He was late, so he missed the bus.",
+        "explain_vi": "Không dùng cả 'because' và 'so'"
+      }
+    ]
+  },
+  {
+    "title": "Object Pronouns",
+    "title_vi": "Đại từ tân ngữ",
+    "level": "a2",
+    "category": "pronouns",
+    "description_vi": "Dùng để thay thế cho danh từ làm tân ngữ trong câu (đứng sau động từ hoặc giới từ)",
+    "rules": [
+      {
+        "rule": "me – tôi (tân ngữ)",
+        "example_en": "She gave me a book.",
+        "example_vi": "Cô ấy đưa tôi một cuốn sách."
+      },
+      {
+        "rule": "you – bạn (tân ngữ)",
+        "example_en": "I saw you at the park.",
+        "example_vi": "Tôi đã thấy bạn ở công viên."
+      },
+      {
+        "rule": "him – anh ấy; her – cô ấy; it – nó (vật/động vật)",
+        "example_en": "I love him. She called her. We bought it.",
+        "example_vi": "Tôi yêu anh ấy. Cô ấy gọi cho cô ấy. Chúng tôi đã mua nó."
+      },
+      {
+        "rule": "us – chúng tôi; them – họ",
+        "example_en": "The teacher helped us. I invited them.",
+        "example_vi": "Giáo viên đã giúp chúng tôi. Tôi đã mời họ."
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I gave she a gift.",
+        "correct": "I gave her a gift.",
+        "explain_vi": "Sau động từ dùng tân ngữ 'her', không phải 'she'"
+      },
+      {
+        "wrong": "He sat between you and I.",
+        "correct": "He sat between you and me.",
+        "explain_vi": "Sau giới từ 'between' dùng tân ngữ 'me'"
+      }
+    ],
+    "related_vocab": [
+      "me",
+      "you",
+      "him",
+      "her",
+      "it",
+      "us",
+      "them"
+    ],
+    "related_phrases": [
+      "help me",
+      "call him",
+      "give us"
+    ],
+    "exercises": [
+      {
+        "type": "fill_in",
+        "question": "Please give ___ (I) the book.",
+        "answer": "me",
+        "explain_vi": "Sau động từ 'give' dùng tân ngữ 'me'"
+      },
+      {
+        "type": "multiple_choice",
+        "question": "I saw ___ at the mall yesterday.",
+        "options": [
+          "she",
+          "her",
+          "hers",
+          "herself"
+        ],
+        "answer": 1,
+        "explain_vi": "Sau động từ 'saw' dùng tân ngữ 'her'"
+      },
+      {
+        "type": "error_correction",
+        "question": "My mother loves I very much.",
+        "answer": "My mother loves me very much.",
+        "explain_vi": "Sau động từ 'loves' dùng tân ngữ 'me'"
+      }
+    ]
+  }
+]

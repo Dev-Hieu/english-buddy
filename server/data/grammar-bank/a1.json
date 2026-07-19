@@ -1,0 +1,1278 @@
+[
+  {
+    "title": "To Be",
+    "title_vi": "Động từ 'to be'",
+    "level": "a1",
+    "category": "tenses",
+    "description_vi": "Dùng để giới thiệu bản thân, mô tả người/vật, nói về nghề nghiệp, cảm xúc.",
+    "rules": [
+      {
+        "rule": "I + am",
+        "example_en": "I am a student.",
+        "example_vi": "Tôi là học sinh."
+      },
+      {
+        "rule": "He/She/It + is",
+        "example_en": "She is a teacher.",
+        "example_vi": "Cô ấy là giáo viên."
+      },
+      {
+        "rule": "You/We/They + are",
+        "example_en": "They are doctors.",
+        "example_vi": "Họ là bác sĩ."
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "He be happy.",
+        "correct": "He is happy.",
+        "explain_vi": "Động từ 'to be' phải chia theo chủ ngữ: he → is."
+      },
+      {
+        "wrong": "I is a student.",
+        "correct": "I am a student.",
+        "explain_vi": "Với 'I' phải dùng 'am', không dùng 'is'."
+      },
+      {
+        "wrong": "She are a doctor.",
+        "correct": "She is a doctor.",
+        "explain_vi": "Chủ ngữ số ít (she) đi với 'is', không phải 'are'."
+      }
+    ],
+    "related_vocab": [
+      "am",
+      "is",
+      "are",
+      "student",
+      "teacher"
+    ],
+    "related_phrases": [
+      "I am",
+      "She is",
+      "They are"
+    ],
+    "exercises": [
+      {
+        "type": "fill_in",
+        "question": "She ___ a nurse.",
+        "answer": "is",
+        "explain_vi": "Chủ ngữ 'She' (số ít) → dùng 'is'."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "I ___ a student.",
+        "options": [
+          "am",
+          "is",
+          "are",
+          "be"
+        ],
+        "answer": 0,
+        "explain_vi": "Với 'I' luôn dùng 'am'."
+      },
+      {
+        "type": "error_correction",
+        "question": "They is happy.",
+        "answer": "They are happy.",
+        "explain_vi": "Chủ ngữ số nhiều 'They' phải đi với 'are'."
+      }
+    ]
+  },
+  {
+    "title": "Present Simple",
+    "title_vi": "Thì hiện tại đơn",
+    "level": "a1",
+    "category": "tenses",
+    "description_vi": "Dùng để nói về thói quen, sự thật hiển nhiên, lịch trình cố định.",
+    "rules": [
+      {
+        "rule": "S + V(s/es) + O (khẳng định)",
+        "example_en": "She gets up at 7 every day.",
+        "example_vi": "Cô ấy thức dậy lúc 7 giờ mỗi ngày."
+      },
+      {
+        "rule": "He/She/It + V-s/es; I/You/We/They + V (nguyên thể)",
+        "example_en": "I like coffee. He likes tea.",
+        "example_vi": "Tôi thích cà phê. Anh ấy thích trà."
+      },
+      {
+        "rule": "Do/Does + S + V? (nghi vấn)",
+        "example_en": "Does she speak English?",
+        "example_vi": "Cô ấy có nói tiếng Anh không?"
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "She get up early.",
+        "correct": "She gets up early.",
+        "explain_vi": "Ngôi thứ 3 số ít (he/she/it) phải thêm -s/-es vào động từ."
+      },
+      {
+        "wrong": "He doesn't likes coffee.",
+        "correct": "He doesn't like coffee.",
+        "explain_vi": "Sau 'doesn't' động từ phải ở dạng nguyên thể, không thêm 's'."
+      },
+      {
+        "wrong": "Do she go to school?",
+        "correct": "Does she go to school?",
+        "explain_vi": "Với chủ ngữ số ít (she) phải dùng 'does' chứ không dùng 'do'."
+      }
+    ],
+    "related_vocab": [
+      "always",
+      "usually",
+      "sometimes",
+      "never",
+      "every day"
+    ],
+    "related_phrases": [
+      "get up",
+      "go to school",
+      "have breakfast"
+    ],
+    "exercises": [
+      {
+        "type": "fill_in",
+        "question": "She ___ (go) to school every day.",
+        "answer": "goes",
+        "explain_vi": "Ngôi thứ 3 số ít → thêm -es (go → goes)."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "They ___ English very well.",
+        "options": [
+          "speaks",
+          "speak",
+          "speaking",
+          "is speak"
+        ],
+        "answer": 1,
+        "explain_vi": "They là ngôi thứ 3 số nhiều → dùng nguyên thể 'speak'."
+      },
+      {
+        "type": "error_correction",
+        "question": "He don't like fish.",
+        "answer": "He doesn't like fish.",
+        "explain_vi": "Ngôi thứ 3 số ít dùng 'doesn't' thay vì 'don't'."
+      }
+    ]
+  },
+  {
+    "title": "Present Continuous",
+    "title_vi": "Thì hiện tại tiếp diễn",
+    "level": "a1",
+    "category": "tenses",
+    "description_vi": "Dùng để nói về hành động đang xảy ra tại thời điểm nói hoặc xung quanh thời điểm nói.",
+    "rules": [
+      {
+        "rule": "S + am/is/are + V-ing",
+        "example_en": "I am reading a book now.",
+        "example_vi": "Tôi đang đọc sách."
+      },
+      {
+        "rule": "S + am/is/are + not + V-ing (phủ định)",
+        "example_en": "She is not sleeping.",
+        "example_vi": "Cô ấy không ngủ."
+      },
+      {
+        "rule": "Am/Is/Are + S + V-ing? (nghi vấn)",
+        "example_en": "Are you listening?",
+        "example_vi": "Bạn có đang nghe không?"
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I am go to school now.",
+        "correct": "I am going to school now.",
+        "explain_vi": "Phải thêm -ing vào động từ chính (go → going)."
+      },
+      {
+        "wrong": "She is read a book.",
+        "correct": "She is reading a book.",
+        "explain_vi": "Thiếu -ing ở động từ chính."
+      },
+      {
+        "wrong": "They are play football.",
+        "correct": "They are playing football.",
+        "explain_vi": "Động từ play phải thêm -ing."
+      }
+    ],
+    "related_vocab": [
+      "now",
+      "at the moment",
+      "today",
+      "this week",
+      "currently"
+    ],
+    "related_phrases": [
+      "am doing",
+      "is working",
+      "are studying"
+    ],
+    "exercises": [
+      {
+        "type": "fill_in",
+        "question": "She ___ (cook) dinner now.",
+        "answer": "is cooking",
+        "explain_vi": "Chủ ngữ 'She' + 'is' + cook + ing."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "They ___ to music at the moment.",
+        "options": [
+          "listen",
+          "are listening",
+          "listening",
+          "is listening"
+        ],
+        "answer": 1,
+        "explain_vi": "They + are + listen + ing."
+      },
+      {
+        "type": "error_correction",
+        "question": "I am study English now.",
+        "answer": "I am studying English now.",
+        "explain_vi": "Thiếu -ing ở động từ study."
+      }
+    ]
+  },
+  {
+    "title": "There Is / There Are",
+    "title_vi": "There is / There are",
+    "level": "a1",
+    "category": "sentence_structure",
+    "description_vi": "Dùng để nói về sự tồn tại của người/vật ở một nơi nào đó.",
+    "rules": [
+      {
+        "rule": "There is + danh từ số ít / không đếm được",
+        "example_en": "There is a book on the table.",
+        "example_vi": "Có một quyển sách trên bàn."
+      },
+      {
+        "rule": "There are + danh từ số nhiều",
+        "example_en": "There are two cats in the garden.",
+        "example_vi": "Có hai con mèo trong vườn."
+      },
+      {
+        "rule": "There is/are not + ... (phủ định)",
+        "example_en": "There is not any milk in the fridge.",
+        "example_vi": "Không có sữa trong tủ lạnh."
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "There is two books.",
+        "correct": "There are two books.",
+        "explain_vi": "Danh từ số nhiều (two books) phải dùng 'there are'."
+      },
+      {
+        "wrong": "There are a cat.",
+        "correct": "There is a cat.",
+        "explain_vi": "Danh từ số ít (a cat) phải dùng 'there is'."
+      },
+      {
+        "wrong": "There is many students.",
+        "correct": "There are many students.",
+        "explain_vi": "Many students là số nhiều → dùng 'there are'."
+      }
+    ],
+    "related_vocab": [
+      "a",
+      "an",
+      "some",
+      "any",
+      "many",
+      "a lot of"
+    ],
+    "related_phrases": [
+      "there is",
+      "there are",
+      "there isn't",
+      "there aren't"
+    ],
+    "exercises": [
+      {
+        "type": "fill_in",
+        "question": "There ___ a pen on the desk.",
+        "answer": "is",
+        "explain_vi": "Danh từ số ít 'a pen' → dùng 'there is'."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "There ___ three chairs in the room.",
+        "options": [
+          "is",
+          "are",
+          "am",
+          "be"
+        ],
+        "answer": 1,
+        "explain_vi": "Danh từ số nhiều 'three chairs' → dùng 'there are'."
+      },
+      {
+        "type": "error_correction",
+        "question": "There is many apples on the tree.",
+        "answer": "There are many apples on the tree.",
+        "explain_vi": "Many apples là số nhiều → dùng 'there are'."
+      }
+    ]
+  },
+  {
+    "title": "Imperatives",
+    "title_vi": "Câu mệnh lệnh",
+    "level": "a1",
+    "category": "sentence_structure",
+    "description_vi": "Dùng để đưa ra mệnh lệnh, yêu cầu, hướng dẫn, lời khuyên.",
+    "rules": [
+      {
+        "rule": "V (nguyên thể) + ... (mệnh lệnh khẳng định)",
+        "example_en": "Open the door.",
+        "example_vi": "Mở cửa ra."
+      },
+      {
+        "rule": "Don't + V (nguyên thể) + ... (mệnh lệnh phủ định)",
+        "example_en": "Don't touch that.",
+        "example_vi": "Đừng chạm vào đó."
+      },
+      {
+        "rule": "Please + V (nguyên thể) (lịch sự)",
+        "example_en": "Please sit down.",
+        "example_vi": "Vui lòng ngồi xuống."
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "You open the door.",
+        "correct": "Open the door.",
+        "explain_vi": "Câu mệnh lệnh không cần chủ ngữ 'you'."
+      },
+      {
+        "wrong": "Don't to go there.",
+        "correct": "Don't go there.",
+        "explain_vi": "Sau 'don't' dùng động từ nguyên thể, không có 'to'."
+      },
+      {
+        "wrong": "No smoking here. (dùng sai cấu trúc)",
+        "correct": "Don't smoke here.",
+        "explain_vi": "Câu mệnh lệnh phủ định dùng 'Don't + V', không dùng 'No + V-ing' (trừ biển báo)."
+      }
+    ],
+    "related_vocab": [
+      "open",
+      "close",
+      "sit",
+      "stand",
+      "listen",
+      "look"
+    ],
+    "related_phrases": [
+      "Please",
+      "Don't",
+      "Let's"
+    ],
+    "exercises": [
+      {
+        "type": "fill_in",
+        "question": "___ (Not/run) in the hallway.",
+        "answer": "Don't run",
+        "explain_vi": "Mệnh lệnh phủ định: Don't + run."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "___ your book.",
+        "options": [
+          "Open",
+          "Opens",
+          "Opening",
+          "To open"
+        ],
+        "answer": 0,
+        "explain_vi": "Mệnh lệnh dùng động từ nguyên thể 'Open'."
+      },
+      {
+        "type": "error_correction",
+        "question": "You be quiet, please.",
+        "answer": "Be quiet, please.",
+        "explain_vi": "Câu mệnh lệnh không cần 'You'."
+      }
+    ]
+  },
+  {
+    "title": "Possessives",
+    "title_vi": "Sở hữu cách",
+    "level": "a1",
+    "category": "pronouns",
+    "description_vi": "Dùng để chỉ sự sở hữu, mối quan hệ giữa người và vật.",
+    "rules": [
+      {
+        "rule": "Danh từ + 's (sở hữu cách)",
+        "example_en": "This is John's book.",
+        "example_vi": "Đây là sách của John."
+      },
+      {
+        "rule": "Tính từ sở hữu: my, your, his, her, its, our, their",
+        "example_en": "That is her pen.",
+        "example_vi": "Đó là bút của cô ấy."
+      },
+      {
+        "rule": "Đại từ sở hữu: mine, yours, his, hers, its, ours, theirs",
+        "example_en": "This book is mine.",
+        "example_vi": "Quyển sách này là của tôi."
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "This is John book.",
+        "correct": "This is John's book.",
+        "explain_vi": "Thiếu dấu nháy đơn và 's' để chỉ sở hữu."
+      },
+      {
+        "wrong": "That is she pen.",
+        "correct": "That is her pen.",
+        "explain_vi": "Dùng tính từ sở hữu 'her' thay vì đại từ chủ ngữ 'she'."
+      },
+      {
+        "wrong": "This book is my.",
+        "correct": "This book is mine.",
+        "explain_vi": "Sau 'is' phải dùng đại từ sở hữu 'mine', không dùng tính từ sở hữu 'my'."
+      }
+    ],
+    "related_vocab": [
+      "my",
+      "your",
+      "his",
+      "her",
+      "its",
+      "our",
+      "their",
+      "mine",
+      "yours",
+      "his",
+      "hers",
+      "its",
+      "ours",
+      "theirs"
+    ],
+    "related_phrases": [
+      "my book",
+      "her car",
+      "their house",
+      "a friend of mine"
+    ],
+    "exercises": [
+      {
+        "type": "fill_in",
+        "question": "This is ___ (Mary) bag.",
+        "answer": "Mary's",
+        "explain_vi": "Thêm 's vào tên Mary."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "That is ___ car.",
+        "options": [
+          "he",
+          "his",
+          "him",
+          "her"
+        ],
+        "answer": 1,
+        "explain_vi": "Tính từ sở hữu của 'he' là 'his'."
+      },
+      {
+        "type": "error_correction",
+        "question": "This pen is her.",
+        "answer": "This pen is hers.",
+        "explain_vi": "Sau 'is' dùng đại từ sở hữu 'hers'."
+      }
+    ]
+  },
+  {
+    "title": "Articles: A / An / The",
+    "title_vi": "Mạo từ a / an / the",
+    "level": "a1",
+    "category": "articles_determiners",
+    "description_vi": "Dùng trước danh từ để xác định hoặc không xác định danh từ đó.",
+    "rules": [
+      {
+        "rule": "A + danh từ bắt đầu bằng phụ âm",
+        "example_en": "I have a cat.",
+        "example_vi": "Tôi có một con mèo."
+      },
+      {
+        "rule": "An + danh từ bắt đầu bằng nguyên âm (a, e, i, o, u)",
+        "example_en": "She is an engineer.",
+        "example_vi": "Cô ấy là kỹ sư."
+      },
+      {
+        "rule": "The + danh từ xác định (đã biết hoặc duy nhất)",
+        "example_en": "The sun is bright.",
+        "example_vi": "Mặt trời sáng."
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I have cat.",
+        "correct": "I have a cat.",
+        "explain_vi": "Thiếu mạo từ 'a' trước danh từ số ít đếm được."
+      },
+      {
+        "wrong": "She is a engineer.",
+        "correct": "She is an engineer.",
+        "explain_vi": "'Engineer' bắt đầu bằng nguyên âm 'e' nên dùng 'an'."
+      },
+      {
+        "wrong": "I like the dogs. (nói chung)",
+        "correct": "I like dogs.",
+        "explain_vi": "Khi nói về loài vật nói chung, không dùng 'the'."
+      }
+    ],
+    "related_vocab": [
+      "a",
+      "an",
+      "the",
+      "some",
+      "any"
+    ],
+    "related_phrases": [
+      "a book",
+      "an apple",
+      "the moon",
+      "the sky"
+    ],
+    "exercises": [
+      {
+        "type": "fill_in",
+        "question": "I need ___ umbrella.",
+        "answer": "an",
+        "explain_vi": "'Umbrella' bắt đầu bằng nguyên âm 'u' → dùng 'an'."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "She is ___ teacher.",
+        "options": [
+          "a",
+          "an",
+          "the",
+          "no article"
+        ],
+        "answer": 0,
+        "explain_vi": "'Teacher' bắt đầu bằng phụ âm 't' → dùng 'a'."
+      },
+      {
+        "type": "error_correction",
+        "question": "I have an dog.",
+        "answer": "I have a dog.",
+        "explain_vi": "'Dog' bắt đầu bằng phụ âm 'd' → dùng 'a'."
+      }
+    ]
+  },
+  {
+    "title": "Plural Nouns",
+    "title_vi": "Danh từ số nhiều",
+    "level": "a1",
+    "category": "word_formation",
+    "description_vi": "Cách tạo danh từ số nhiều trong tiếng Anh.",
+    "rules": [
+      {
+        "rule": "Thêm -s vào danh từ số ít",
+        "example_en": "book → books",
+        "example_vi": "quyển sách → những quyển sách"
+      },
+      {
+        "rule": "Thêm -es vào danh từ tận cùng bằng -s, -sh, -ch, -x, -o",
+        "example_en": "box → boxes",
+        "example_vi": "cái hộp → những cái hộp"
+      },
+      {
+        "rule": "Đổi -y thành -ies (nếu trước -y là phụ âm)",
+        "example_en": "baby → babies",
+        "example_vi": "em bé → những em bé"
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "two childs",
+        "correct": "two children",
+        "explain_vi": "'Child' có dạng số nhiều bất quy tắc 'children'."
+      },
+      {
+        "wrong": "three mouses",
+        "correct": "three mice",
+        "explain_vi": "'Mouse' có dạng số nhiều bất quy tắc 'mice'."
+      },
+      {
+        "wrong": "two sheeps",
+        "correct": "two sheep",
+        "explain_vi": "'Sheep' là danh từ bất quy tắc, số nhiều giống số ít."
+      }
+    ],
+    "related_vocab": [
+      "books",
+      "pens",
+      "children",
+      "men",
+      "women",
+      "people"
+    ],
+    "related_phrases": [
+      "two cats",
+      "three boxes",
+      "many babies",
+      "a lot of sheep"
+    ],
+    "exercises": [
+      {
+        "type": "fill_in",
+        "question": "I have two ___ (dog).",
+        "answer": "dogs",
+        "explain_vi": "Thêm -s vào 'dog'."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "There are three ___ in the room.",
+        "options": [
+          "childs",
+          "children",
+          "child",
+          "childes"
+        ],
+        "answer": 1,
+        "explain_vi": "'Child' số nhiều là 'children'."
+      },
+      {
+        "type": "error_correction",
+        "question": "I see two mouses.",
+        "answer": "I see two mice.",
+        "explain_vi": "'Mouse' số nhiều là 'mice'."
+      }
+    ]
+  },
+  {
+    "title": "Demonstratives: This / That / These / Those",
+    "title_vi": "Từ chỉ định: This / That / These / Those",
+    "level": "a1",
+    "category": "pronouns",
+    "description_vi": "Dùng để chỉ người/vật ở gần (this/these) hay xa (that/those) và số ít (this/that) hay số nhiều (these/those).",
+    "rules": [
+      {
+        "rule": "This + singular noun (chỉ vật/người ở gần)",
+        "example_en": "This is my book.",
+        "example_vi": "Đây là quyển sách của tôi."
+      },
+      {
+        "rule": "That + singular noun (chỉ vật/người ở xa)",
+        "example_en": "That is your car.",
+        "example_vi": "Kia là xe của bạn."
+      },
+      {
+        "rule": "These + plural noun (chỉ nhiều vật/người ở gần)",
+        "example_en": "These are my keys.",
+        "example_vi": "Đây là chìa khóa của tôi."
+      },
+      {
+        "rule": "Those + plural noun (chỉ nhiều vật/người ở xa)",
+        "example_en": "Those are her shoes.",
+        "example_vi": "Kia là giày của cô ấy."
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "This books are new.",
+        "correct": "These books are new.",
+        "explain_vi": "This dùng với danh từ số ít, 'books' số nhiều phải dùng 'These'."
+      },
+      {
+        "wrong": "That is a pens.",
+        "correct": "That is a pen.",
+        "explain_vi": "That dùng với danh từ số ít, 'pens' số nhiều → sửa thành 'pen' hoặc dùng 'Those are pens'."
+      },
+      {
+        "wrong": "This pen is red and that pen is blue.",
+        "correct": "This pen is red and that pen is blue.",
+        "explain_vi": "Câu này đúng, chỉ là nhấn mạnh cách dùng đúng."
+      }
+    ],
+    "related_vocab": [
+      "this",
+      "that",
+      "these",
+      "those",
+      "here",
+      "there"
+    ],
+    "related_phrases": [
+      "this book",
+      "that house",
+      "these students",
+      "those cars"
+    ],
+    "exercises": [
+      {
+        "type": "fill_in",
+        "question": "___ is my phone. (near, singular)",
+        "answer": "This",
+        "explain_vi": "Gần và số ít → dùng 'This'."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "___ are my friends over there.",
+        "options": [
+          "This",
+          "That",
+          "These",
+          "Those"
+        ],
+        "answer": 3,
+        "explain_vi": "Xa và số nhiều → dùng 'Those'."
+      },
+      {
+        "type": "error_correction",
+        "question": "These is my pen.",
+        "answer": "This is my pen.",
+        "explain_vi": "'These' dùng với số nhiều, nhưng 'pen' số ít → sửa thành 'This'."
+      }
+    ]
+  },
+  {
+    "title": "Can (Ability)",
+    "title_vi": "Can – diễn đạt khả năng",
+    "level": "a1",
+    "category": "modals",
+    "description_vi": "Dùng 'can' để nói về khả năng làm gì đó. 'Can' không thay đổi theo ngôi và theo sau là động từ nguyên thể.",
+    "rules": [
+      {
+        "rule": "S + can + V (khẳng định)",
+        "example_en": "I can swim.",
+        "example_vi": "Tôi có thể bơi."
+      },
+      {
+        "rule": "S + can't + V (phủ định)",
+        "example_en": "He can't drive.",
+        "example_vi": "Anh ấy không thể lái xe."
+      },
+      {
+        "rule": "Can + S + V? (nghi vấn)",
+        "example_en": "Can you speak English?",
+        "example_vi": "Bạn có thể nói tiếng Anh không?"
+      },
+      {
+        "rule": "Short answers: Yes, S + can. / No, S + can't.",
+        "example_en": "Yes, I can. / No, I can't.",
+        "example_vi": "Có, tôi có thể. / Không, tôi không thể."
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I can to swim.",
+        "correct": "I can swim.",
+        "explain_vi": "Sau 'can' dùng động từ nguyên thể không 'to'."
+      },
+      {
+        "wrong": "He cans swim.",
+        "correct": "He can swim.",
+        "explain_vi": "'Can' không thay đổi theo ngôi, không thêm 's'."
+      },
+      {
+        "wrong": "I don't can swim.",
+        "correct": "I can't swim.",
+        "explain_vi": "Phủ định của 'can' là 'can't' (cannot), không dùng 'don't'."
+      }
+    ],
+    "related_vocab": [
+      "can",
+      "can't",
+      "swim",
+      "drive",
+      "speak",
+      "play"
+    ],
+    "related_phrases": [
+      "can swim",
+      "can't drive",
+      "can speak English",
+      "can play guitar"
+    ],
+    "exercises": [
+      {
+        "type": "fill_in",
+        "question": "She ___ (can) cook very well.",
+        "answer": "can",
+        "explain_vi": "Khẳng định: chủ ngữ + can + động từ."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "___ you play the piano?",
+        "options": [
+          "Can",
+          "Do",
+          "Are",
+          "Is"
+        ],
+        "answer": 0,
+        "explain_vi": "Hỏi khả năng dùng 'Can'."
+      },
+      {
+        "type": "error_correction",
+        "question": "He can to run fast.",
+        "answer": "He can run fast.",
+        "explain_vi": "Bỏ 'to' sau 'can'."
+      }
+    ]
+  },
+  {
+    "title": "Prepositions of Place",
+    "title_vi": "Giới từ chỉ nơi chốn",
+    "level": "a1",
+    "category": "prepositions",
+    "description_vi": "Dùng để chỉ vị trí của người/vật: in, on, at, under, next to, between, in front of, behind.",
+    "rules": [
+      {
+        "rule": "In + không gian kín (phòng, thành phố, quốc gia)",
+        "example_en": "She is in the kitchen.",
+        "example_vi": "Cô ấy ở trong bếp."
+      },
+      {
+        "rule": "On + bề mặt (bàn, tường, sàn)",
+        "example_en": "The book is on the table.",
+        "example_vi": "Quyển sách ở trên bàn."
+      },
+      {
+        "rule": "At + địa điểm cụ thể (trường, bệnh viện, trạm xe buýt)",
+        "example_en": "He is at school.",
+        "example_vi": "Anh ấy ở trường."
+      },
+      {
+        "rule": "Under + bên dưới",
+        "example_en": "The cat is under the chair.",
+        "example_vi": "Con mèo ở dưới ghế."
+      },
+      {
+        "rule": "Next to / Between / In front of / Behind",
+        "example_en": "The bank is next to the post office.",
+        "example_vi": "Ngân hàng ở bên cạnh bưu điện."
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I am on the school.",
+        "correct": "I am at school.",
+        "explain_vi": "Dùng 'at' cho trường học như một địa điểm, 'on' dùng cho bề mặt."
+      },
+      {
+        "wrong": "The pen is at the table.",
+        "correct": "The pen is on the table.",
+        "explain_vi": "Bút trên mặt bàn dùng 'on', 'at' chỉ vị trí chung chung."
+      },
+      {
+        "wrong": "She is in the bus stop.",
+        "correct": "She is at the bus stop.",
+        "explain_vi": "Trạm xe buýt là điểm cụ thể dùng 'at', 'in' dùng cho không gian kín."
+      }
+    ],
+    "related_vocab": [
+      "in",
+      "on",
+      "at",
+      "under",
+      "next to",
+      "between",
+      "behind",
+      "in front of"
+    ],
+    "related_phrases": [
+      "in the room",
+      "on the desk",
+      "at the station",
+      "under the bed",
+      "next to the store"
+    ],
+    "exercises": [
+      {
+        "type": "fill_in",
+        "question": "My phone is ___ my bag.",
+        "answer": "in",
+        "explain_vi": "Trong túi xách là không gian kín → dùng 'in'."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "The cat is sleeping ___ the sofa.",
+        "options": [
+          "in",
+          "on",
+          "at",
+          "under"
+        ],
+        "answer": 1,
+        "explain_vi": "Trên bề mặt ghế sofa → dùng 'on'."
+      },
+      {
+        "type": "error_correction",
+        "question": "He is at the kitchen.",
+        "answer": "He is in the kitchen.",
+        "explain_vi": "Bếp là phòng, không gian kín → dùng 'in'."
+      }
+    ]
+  },
+  {
+    "title": "Prepositions of Time",
+    "title_vi": "Giới từ chỉ thời gian",
+    "level": "a1",
+    "category": "prepositions",
+    "description_vi": "Dùng 'in' cho tháng/năm/mùa, 'on' cho ngày/thứ, 'at' cho giờ/thời điểm cụ thể.",
+    "rules": [
+      {
+        "rule": "In + tháng, năm, mùa, buổi trong ngày",
+        "example_en": "I was born in May.",
+        "example_vi": "Tôi sinh vào tháng Năm."
+      },
+      {
+        "rule": "On + ngày, thứ",
+        "example_en": "We have a meeting on Monday.",
+        "example_vi": "Chúng tôi có cuộc họp vào thứ Hai."
+      },
+      {
+        "rule": "At + giờ, thời điểm cụ thể (lúc nửa đêm, giữa trưa)",
+        "example_en": "The class starts at 8 o'clock.",
+        "example_vi": "Lớp học bắt đầu lúc 8 giờ."
+      },
+      {
+        "rule": "At + night, at the weekend (khác biệt)",
+        "example_en": "I sleep at night.",
+        "example_vi": "Tôi ngủ vào ban đêm."
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I go to school on the morning.",
+        "correct": "I go to school in the morning.",
+        "explain_vi": "Buổi trong ngày dùng 'in', không dùng 'on'."
+      },
+      {
+        "wrong": "She was born in 2020 March.",
+        "correct": "She was born in March 2020.",
+        "explain_vi": "Thứ tự: tháng trước năm, hoặc 'in March 2020'."
+      },
+      {
+        "wrong": "We meet at Sunday.",
+        "correct": "We meet on Sunday.",
+        "explain_vi": "Thứ trong tuần dùng 'on'."
+      }
+    ],
+    "related_vocab": [
+      "in",
+      "on",
+      "at",
+      "morning",
+      "afternoon",
+      "night",
+      "Monday",
+      "January"
+    ],
+    "related_phrases": [
+      "in the morning",
+      "on Friday",
+      "at 5 pm",
+      "in summer",
+      "at night"
+    ],
+    "exercises": [
+      {
+        "type": "fill_in",
+        "question": "The party is ___ Saturday.",
+        "answer": "on",
+        "explain_vi": "Ngày/thứ dùng 'on'."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "I usually get up ___ 6 a.m.",
+        "options": [
+          "in",
+          "on",
+          "at",
+          "by"
+        ],
+        "answer": 2,
+        "explain_vi": "Giờ cụ thể dùng 'at'."
+      },
+      {
+        "type": "error_correction",
+        "question": "He was born on 1995.",
+        "answer": "He was born in 1995.",
+        "explain_vi": "Năm dùng 'in'."
+      }
+    ]
+  },
+  {
+    "title": "Have Got",
+    "title_vi": "Have got – sở hữu",
+    "level": "a1",
+    "category": "tenses",
+    "description_vi": "Dùng 'have got' để diễn tả sở hữu (thường dùng trong tiếng Anh Anh). 'Have got' có nghĩa như 'have' nhưng thân mật hơn.",
+    "rules": [
+      {
+        "rule": "S + have/has got + something (khẳng định)",
+        "example_en": "I have got a car.",
+        "example_vi": "Tôi có một chiếc xe hơi."
+      },
+      {
+        "rule": "S + haven't/hasn't got + something (phủ định)",
+        "example_en": "She hasn't got a sister.",
+        "example_vi": "Cô ấy không có chị em gái."
+      },
+      {
+        "rule": "Have/Has + S + got + something? (nghi vấn)",
+        "example_en": "Have you got a pen?",
+        "example_vi": "Bạn có cây bút nào không?"
+      },
+      {
+        "rule": "Short answers: Yes, S + have/has. / No, S + haven't/hasn't.",
+        "example_en": "Yes, I have. / No, I haven't.",
+        "example_vi": "Có, tôi có. / Không, tôi không có."
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I have got a car. (đúng nhưng lưu ý: 'have got' không dùng với 'do' ở câu hỏi)",
+        "correct": "I have got a car.",
+        "explain_vi": "Câu này đúng, nhưng câu hỏi phải đảo 'have' lên trước, không dùng 'do'."
+      },
+      {
+        "wrong": "Do you have got a pen?",
+        "correct": "Have you got a pen?",
+        "explain_vi": "Câu hỏi với 'have got' không dùng trợ động từ 'do'."
+      },
+      {
+        "wrong": "She has got not a book.",
+        "correct": "She hasn't got a book.",
+        "explain_vi": "Phủ định: thêm 'not' vào 'has' → 'hasn't got'."
+      }
+    ],
+    "related_vocab": [
+      "have got",
+      "has got",
+      "haven't got",
+      "hasn't got",
+      "got"
+    ],
+    "related_phrases": [
+      "have got a car",
+      "has got a brother",
+      "haven't got money",
+      "hasn't got time"
+    ],
+    "exercises": [
+      {
+        "type": "fill_in",
+        "question": "He ___ (have got) a new phone.",
+        "answer": "has got",
+        "explain_vi": "Ngôi thứ 3 số ít dùng 'has got'."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "___ you got any siblings?",
+        "options": [
+          "Have",
+          "Has",
+          "Do",
+          "Are"
+        ],
+        "answer": 0,
+        "explain_vi": "Câu hỏi với 'you' dùng 'Have'."
+      },
+      {
+        "type": "error_correction",
+        "question": "She have got a dog.",
+        "answer": "She has got a dog.",
+        "explain_vi": "Ngôi thứ 3 số ít phải dùng 'has'."
+      }
+    ]
+  },
+  {
+    "title": "Countable and Uncountable Nouns",
+    "title_vi": "Danh từ đếm được và không đếm được",
+    "level": "a1",
+    "category": "articles_determiners",
+    "description_vi": "Danh từ đếm được (countable) có thể đếm được và có dạng số nhiều. Danh từ không đếm được (uncountable) không thể đếm trực tiếp, không có số nhiều.",
+    "rules": [
+      {
+        "rule": "Countable nouns: dùng a/an (số ít) hoặc số nhiều (thêm -s/-es)",
+        "example_en": "I have an apple. / I have two apples.",
+        "example_vi": "Tôi có một quả táo. / Tôi có hai quả táo."
+      },
+      {
+        "rule": "Uncountable nouns: không dùng a/an, dùng some, much, a lot of",
+        "example_en": "I need some water.",
+        "example_vi": "Tôi cần một ít nước."
+      },
+      {
+        "rule": "Hỏi số lượng: How many + countable noun? / How much + uncountable noun?",
+        "example_en": "How many books do you have? / How much milk do you want?",
+        "example_vi": "Bạn có bao nhiêu quyển sách? / Bạn muốn bao nhiêu sữa?"
+      },
+      {
+        "rule": "Dùng 'some' trong câu khẳng định, 'any' trong phủ định và nghi vấn (cho cả hai loại)",
+        "example_en": "I have some money. / I don't have any money.",
+        "example_vi": "Tôi có một ít tiền. / Tôi không có tiền nào."
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "I need an information.",
+        "correct": "I need some information.",
+        "explain_vi": "'Information' là danh từ không đếm được, không dùng 'an'."
+      },
+      {
+        "wrong": "There are many furnitures.",
+        "correct": "There is a lot of furniture.",
+        "explain_vi": "'Furniture' là không đếm được, không có số nhiều."
+      },
+      {
+        "wrong": "How many rice do you eat?",
+        "correct": "How much rice do you eat?",
+        "explain_vi": "'Rice' không đếm được, dùng 'how much'."
+      }
+    ],
+    "related_vocab": [
+      "apple",
+      "book",
+      "water",
+      "rice",
+      "money",
+      "information",
+      "furniture"
+    ],
+    "related_phrases": [
+      "an apple",
+      "some water",
+      "many books",
+      "much money",
+      "a lot of furniture"
+    ],
+    "exercises": [
+      {
+        "type": "fill_in",
+        "question": "I need ___ (some / a) advice.",
+        "answer": "some",
+        "explain_vi": "'Advice' là không đếm được, dùng 'some'."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "How ___ chairs are there?",
+        "options": [
+          "much",
+          "many",
+          "a lot of",
+          "some"
+        ],
+        "answer": 1,
+        "explain_vi": "'Chairs' đếm được số nhiều → dùng 'how many'."
+      },
+      {
+        "type": "error_correction",
+        "question": "She has a good news.",
+        "answer": "She has good news.",
+        "explain_vi": "'News' là không đếm được, không dùng 'a'."
+      }
+    ]
+  },
+  {
+    "title": "Question Words (Wh-)",
+    "title_vi": "Từ để hỏi (Wh-)",
+    "level": "a1",
+    "category": "sentence_structure",
+    "description_vi": "Dùng từ để hỏi: What, Where, When, Why, Who, How để đặt câu hỏi. Cấu trúc: Wh-word + trợ động từ + chủ ngữ + động từ?",
+    "rules": [
+      {
+        "rule": "What: hỏi về vật/việc gì",
+        "example_en": "What is your name?",
+        "example_vi": "Tên bạn là gì?"
+      },
+      {
+        "rule": "Where: hỏi về nơi chốn",
+        "example_en": "Where do you live?",
+        "example_vi": "Bạn sống ở đâu?"
+      },
+      {
+        "rule": "When: hỏi về thời gian",
+        "example_en": "When is your birthday?",
+        "example_vi": "Sinh nhật bạn khi nào?"
+      },
+      {
+        "rule": "Why: hỏi về lý do",
+        "example_en": "Why are you late?",
+        "example_vi": "Tại sao bạn đến trễ?"
+      },
+      {
+        "rule": "Who: hỏi về người",
+        "example_en": "Who is that man?",
+        "example_vi": "Người đàn ông đó là ai?"
+      },
+      {
+        "rule": "How: hỏi về cách thức, tình trạng",
+        "example_en": "How are you?",
+        "example_vi": "Bạn khỏe không?"
+      }
+    ],
+    "common_mistakes": [
+      {
+        "wrong": "What you want?",
+        "correct": "What do you want?",
+        "explain_vi": "Câu hỏi cần trợ động từ 'do' sau từ để hỏi."
+      },
+      {
+        "wrong": "Where you live?",
+        "correct": "Where do you live?",
+        "explain_vi": "Thiếu trợ động từ 'do'."
+      },
+      {
+        "wrong": "Who is he? (đúng) nhưng nhầm với 'What is he?'",
+        "correct": "Who is he? (hỏi tên) / What is he? (hỏi nghề nghiệp)",
+        "explain_vi": "Phân biệt: 'Who' hỏi về danh tính, 'What' hỏi về nghề nghiệp."
+      }
+    ],
+    "related_vocab": [
+      "what",
+      "where",
+      "when",
+      "why",
+      "who",
+      "how",
+      "how many",
+      "how much"
+    ],
+    "related_phrases": [
+      "What is this?",
+      "Where are you?",
+      "When do you go?",
+      "Why is that?",
+      "Who is she?",
+      "How old are you?"
+    ],
+    "exercises": [
+      {
+        "type": "fill_in",
+        "question": "___ is your favorite color?",
+        "answer": "What",
+        "explain_vi": "Hỏi về vật → dùng 'What'."
+      },
+      {
+        "type": "multiple_choice",
+        "question": "___ do you go to school? - By bus.",
+        "options": [
+          "What",
+          "Where",
+          "How",
+          "Why"
+        ],
+        "answer": 2,
+        "explain_vi": "Hỏi cách thức → 'How'."
+      },
+      {
+        "type": "error_correction",
+        "question": "Why you are sad?",
+        "answer": "Why are you sad?",
+        "explain_vi": "Đảo trợ động từ lên trước chủ ngữ: 'are you'."
+      }
+    ]
+  }
+]
