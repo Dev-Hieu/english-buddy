@@ -1572,7 +1572,133 @@ Return ONLY valid JSON, no markdown, no code fences.` },
     res.json({ bestScore, rank: rankRow?.rank ?? 1, totalPlayers });
   });
 
+  // ── Exam Generation from Foundation Banks ──
+  app.get("/api/generate-exam", requireAuth, (req, res) => {
+    const { level } = req.query;
+    if (!level || typeof level !== "string") return res.status(400).json({ error: "level required" });
+
+    // Section 1: Vocabulary & Grammar (8 questions)
+    const vocabRows = db.prepare("SELECT * FROM word_bank WHERE level = ? ORDER BY RANDOM() LIMIT 20").all(level) as any[];
+    const grammarRows = db.prepare("SELECT * FROM grammar_bank WHERE level = ? ORDER BY RANDOM() LIMIT 3").all(level) as any[];
+
+    const vocabQuestions = vocabRows.slice(0, 4).map((w: any) => {
+      const distractors = vocabRows.slice(4, 8).map((d: any) => d.meaning_vi);
+      const options = shuffle([w.meaning_vi, ...distractors.slice(0, 3)]);
+      return {
+        section: "vocab",
+        type: "multiple_choice",
+        question: `What does "${w.word}" mean?`,
+        question_vi: `"${w.word}" nghĩa là gì?`,
+        options,
+        answer: options.indexOf(w.meaning_vi),
+        word: w.word,
+        phonetic: w.phonetic,
+      };
+    });
+
+    // Grammar questions from exercises
+    const grammarQuestions = grammarRows.flatMap((g: any) => {
+      const exercises = JSON.parse(g.exercises || "[]");
+      return exercises.slice(0, 2).map((ex: any) => ({
+        section: "grammar",
+        type: ex.type || "fill_in",
+        question: ex.question,
+        options: ex.options || [],
+        answer: ex.answer,
+        explain_vi: ex.explain_vi || "",
+      }));
+    }).slice(0, 4);
+
+    // Section 2: Listening (4 questions) — word recognition
+    const listenWords = vocabRows.slice(8, 12).map((w: any) => {
+      const distractors = vocabRows.slice(12, 16).map((d: any) => d.word);
+      const options = shuffle([w.word, ...distractors.slice(0, 3)]);
+      return {
+        section: "listening",
+        type: "listen_choose",
+        audio_text: w.word,
+        question: "Listen and choose the correct word.",
+        question_vi: "Nghe và chọn từ đúng.",
+        options,
+        answer: options.indexOf(w.word),
+        phonetic: w.phonetic,
+      };
+    });
+
+    // Section 3: Reading (4 questions) — from conversation bank
+    const convRow = db.prepare("SELECT * FROM conversation_bank WHERE level = ? ORDER BY RANDOM() LIMIT 1").get(level) as any;
+    let readingQuestions: any[] = [];
+    if (convRow) {
+      const dialogue = JSON.parse(convRow.dialogue || "[]");
+      const keyVocab = JSON.parse(convRow.key_vocab || "[]");
+      const passage = dialogue.map((d: any) => `${d.role}: ${d.en}`).join("\n");
+
+      readingQuestions = [
+        {
+          section: "reading",
+          type: "comprehension",
+          passage,
+          passage_vi: dialogue.map((d: any) => `${d.role}: ${d.vi}`).join("\n"),
+          question: `What is the situation in this conversation?`,
+          question_vi: `Tình huống trong đoạn hội thoại này là gì?`,
+          scenario: convRow.scenario,
+          scenario_vi: convRow.scenario_vi,
+        },
+      ];
+
+      // Fill-in questions from key vocab
+      keyVocab.slice(0, 3).forEach((word: string) => {
+        const wordRow = db.prepare("SELECT meaning_vi FROM word_bank WHERE word = ? AND level = ?").get(word, level) as any;
+        if (wordRow) {
+          readingQuestions.push({
+            section: "reading",
+            type: "vocab_in_context",
+            question: `In the conversation above, what does "${word}" mean?`,
+            question_vi: `Trong đoạn hội thoại trên, "${word}" nghĩa là gì?`,
+            answer: wordRow.meaning_vi,
+          });
+        }
+      });
+    }
+
+    // Section 4: Writing (4 questions) — dictation + sentence completion
+    const phraseRows = db.prepare("SELECT * FROM phrase_bank WHERE level = ? ORDER BY RANDOM() LIMIT 4").all(level) as any[];
+    const writingQuestions = phraseRows.map((p: any) => ({
+      section: "writing",
+      type: "dictation",
+      audio_text: p.phrase,
+      question: "Listen and write what you hear.",
+      question_vi: "Nghe và viết lại.",
+      answer: p.phrase,
+      meaning_vi: p.meaning_vi,
+    }));
+
+    // Combine all sections
+    const exam = {
+      level,
+      totalQuestions: vocabQuestions.length + grammarQuestions.length + listenWords.length + readingQuestions.length + writingQuestions.length,
+      sections: {
+        vocab_grammar: [...vocabQuestions, ...grammarQuestions],
+        listening: listenWords,
+        reading: readingQuestions,
+        writing: writingQuestions,
+      },
+      generatedAt: Date.now(),
+    };
+
+    res.json(exam);
+  });
+
   return app;
+}
+
+function shuffle<T>(arr: T[]): T[] {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
 }
 
 async function fromPexels(query: string, count = 5, page = 1) {
