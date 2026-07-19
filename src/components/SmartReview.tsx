@@ -1,8 +1,9 @@
 import { AlertTriangle, ArrowRight } from "lucide-react";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { getStudentProgress } from "@/services/progressService";
 import { SEED_VOCABULARY } from "@/data/seedVocabulary";
 import type { StudentVocabularyProgress, VocabularyWord } from "@/types";
+import { getWordBank, type BankWord } from "@/services/wordBankService";
 
 interface SmartReviewProps {
   studentId: string;
@@ -18,12 +19,39 @@ export function SmartReview({ studentId, onNavigate }: SmartReviewProps) {
   const [weakWords, setWeakWords] = useState<WeakWord[]>([]);
   const [loading, setLoading] = useState(true);
 
+  const [bankWords, setBankWords] = useState<BankWord[]>([]);
+  useEffect(() => {
+    getWordBank().then(setBankWords).catch(() => {});
+  }, []);
+
+  const vocabMap = useMemo(() => {
+    if (bankWords.length > 0) {
+      return new Map(
+        bankWords.map((bw) => [
+          bw.id,
+          {
+            id: bw.id,
+            word: bw.word,
+            phonetic: bw.phonetic || "",
+            meaning_vi: bw.meaning_vi,
+            meaning_en: bw.meaning_en || "",
+            topicIds: bw.categories,
+            level: bw.level as VocabularyWord["level"],
+            imageUrl: bw.image || "",
+            source: "seed" as const,
+            createdAt: 0,
+          } satisfies VocabularyWord,
+        ])
+      );
+    }
+    return new Map(SEED_VOCABULARY.map((w) => [w.id, w]));
+  }, [bankWords]);
+
   useEffect(() => {
     let alive = true;
     getStudentProgress(studentId)
       .then((progress) => {
         if (!alive) return;
-        const vocabMap = new Map(SEED_VOCABULARY.map((w) => [w.id, w]));
         const weak = progress
           .filter((p) => p.wrongCount > 0 || p.mastery < 3)
           .filter((p) => p.status !== "new")
@@ -38,7 +66,7 @@ export function SmartReview({ studentId, onNavigate }: SmartReviewProps) {
         if (alive) setLoading(false);
       });
     return () => { alive = false; };
-  }, [studentId]);
+  }, [studentId, vocabMap]);
 
   if (loading || weakWords.length === 0) return null;
 

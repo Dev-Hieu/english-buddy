@@ -1,12 +1,14 @@
 import { BookOpen, CheckCircle2, Volume2 } from "lucide-react";
-import { useMemo } from "react";
-import { SEED_TOPICS } from "@/data/seedTopics";
+import { useEffect, useMemo, useState } from "react";
+import { SEED_TOPICS, TOPIC_TO_CATEGORY } from "@/data/seedTopics";
 import { SEED_VOCABULARY } from "@/data/seedVocabulary";
 import { speakText } from "@/services/speechService";
 import { SessionHeader } from "@/components/layout/SessionHeader";
 import { topicEmoji } from "@/components/ui/emoji";
 import { cn } from "@/components/ui/cn";
 import { topicWords } from "@/utils/levelFilter";
+import { getWordBank, type BankWord } from "@/services/wordBankService";
+import type { VocabularyWord } from "@/types";
 
 interface TopicWordsPageProps {
   topicId: string;
@@ -19,7 +21,31 @@ interface TopicWordsPageProps {
 export function TopicWordsPage({ topicId, level = "all", studiedWordIds, onBack }: TopicWordsPageProps) {
   const topic = SEED_TOPICS.find((t) => t.id === topicId);
   const studied = useMemo(() => new Set(studiedWordIds), [studiedWordIds]);
-  const words = useMemo(() => topicWords(SEED_VOCABULARY, topicId, level), [topicId, level]);
+  const categoryId = topicId.startsWith("topic_") ? TOPIC_TO_CATEGORY[topicId] : topicId;
+
+  const [bankWords, setBankWords] = useState<BankWord[]>([]);
+  useEffect(() => {
+    const lvl = level === "all" ? undefined : level;
+    getWordBank(lvl, categoryId).then(setBankWords).catch(() => {});
+  }, [categoryId, level]);
+
+  const words = useMemo((): VocabularyWord[] => {
+    if (bankWords.length > 0) {
+      return bankWords.map((bw) => ({
+        id: bw.id,
+        word: bw.word,
+        phonetic: bw.phonetic || "",
+        meaning_vi: bw.meaning_vi,
+        meaning_en: bw.meaning_en || "",
+        topicIds: bw.categories,
+        level: bw.level as VocabularyWord["level"],
+        imageUrl: bw.image || "",
+        source: "seed" as const,
+        createdAt: 0,
+      }));
+    }
+    return topicWords(SEED_VOCABULARY, topicId, level);
+  }, [bankWords, topicId, level]);
   const doneCount = words.filter((w) => studied.has(w.id)).length;
 
   return (

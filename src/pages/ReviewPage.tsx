@@ -1,5 +1,5 @@
 import { CheckCircle, Loader2, XCircle } from "lucide-react";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { SEED_VOCABULARY } from "@/data/seedVocabulary";
 import type { Student, StudentVocabularyProgress, VocabularyWord } from "@/types";
 import { getRelearn } from "@/services/skillTestService";
@@ -8,6 +8,7 @@ import { DeckRunner } from "@/components/vocabulary/DeckRunner";
 import { SessionHeader } from "@/components/layout/SessionHeader";
 import { cn } from "@/components/ui/cn";
 import { apiRequest } from "@/services/api";
+import { getWordBank, type BankWord } from "@/services/wordBankService";
 
 interface ReviewPageProps {
   student: Student;
@@ -55,9 +56,37 @@ export function ReviewPage({ student, onBackHome }: ReviewPageProps) {
   const [showAnswer, setShowAnswer] = useState(false);
   const [smartLoading, setSmartLoading] = useState(false);
 
+  const [bankWords, setBankWords] = useState<BankWord[]>([]);
+  useEffect(() => {
+    getWordBank().then(setBankWords).catch(() => {});
+  }, []);
+
+  const vocabById = useMemo(() => {
+    if (bankWords.length > 0) {
+      return new Map(
+        bankWords.map((bw) => [
+          bw.id,
+          {
+            id: bw.id,
+            word: bw.word,
+            phonetic: bw.phonetic || "",
+            meaning_vi: bw.meaning_vi,
+            meaning_en: bw.meaning_en || "",
+            topicIds: bw.categories,
+            level: bw.level as VocabularyWord["level"],
+            imageUrl: bw.image || "",
+            source: "seed" as const,
+            createdAt: 0,
+          } satisfies VocabularyWord,
+        ])
+      );
+    }
+    return new Map(SEED_VOCABULARY.map((w) => [w.id, w]));
+  }, [bankWords]);
+
   useEffect(() => {
     let alive = true;
-    const byId = new Map(SEED_VOCABULARY.map((w) => [w.id, w]));
+    const byId = vocabById;
 
     getRelearn(student.id)
       .then(({ words: ids }) => {
@@ -88,16 +117,15 @@ export function ReviewPage({ student, onBackHome }: ReviewPageProps) {
     apiRequest<DueWordProgress[]>(`/api/students/${student.id}/word-progress?due=true`)
       .then((due) => {
         if (!alive) return;
-        const wordMap = new Map(SEED_VOCABULARY.map((w) => [w.id, w]));
         const dueVocab = due
-          .map((d) => wordMap.get(d.wordId))
+          .map((d) => byId.get(d.wordId))
           .filter((w): w is VocabularyWord => !!w);
         setSmartDue(dueVocab);
       })
       .catch(() => alive && setSmartDue([]));
 
     return () => { alive = false; };
-  }, [student.id]);
+  }, [student.id, vocabById]);
 
   const handleMarkMastered = (wordId: string) => {
     setMastering((prev) => new Set(prev).add(wordId));
