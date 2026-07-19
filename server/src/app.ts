@@ -780,6 +780,96 @@ export function createApp() {
     res.json(rows);
   });
 
+  // ── Student Word Progress (Phase 5: unified SRS per skill) ──
+
+  app.get("/api/students/:id/word-progress", requireAuth, async (req, res) => {
+    const { id } = req.params;
+    const { status, skill, due } = req.query;
+    let sql = "SELECT * FROM student_word_progress WHERE student_id = ?";
+    const params: any[] = [id];
+    if (status && typeof status === "string") { sql += " AND status = ?"; params.push(status); }
+    if (due === "true") { sql += " AND srs_next_review <= ?"; params.push(Date.now()); }
+    sql += " ORDER BY srs_next_review ASC";
+    const rows = db.prepare(sql).all(...params);
+    rows.forEach((r: any) => { try { r.mistakes = JSON.parse(r.mistakes || "[]"); } catch { r.mistakes = []; } });
+    res.json(rows);
+  });
+
+  app.post("/api/students/:id/word-progress", requireAuth, (req, res) => {
+    const { id } = req.params;
+    const { wordId, skill, correct, sourceType, sourceRef } = req.body;
+    if (!wordId || !skill) return res.status(400).json({ error: "wordId and skill required" });
+
+    const now = Date.now();
+    const existing = db.prepare("SELECT * FROM student_word_progress WHERE student_id = ? AND word_id = ?").get(id, wordId) as any;
+
+    if (!existing) {
+      const masteryField = `mastery_${skill}`;
+      const mastery = correct ? 20 : 0;
+      db.prepare(`INSERT INTO student_word_progress (student_id, word_id, status, source_type, source_ref, ${masteryField}, encounters, srs_interval, srs_ease, srs_next_review, created_at, updated_at) VALUES (?, ?, 'learning', ?, ?, ?, 1, 1, 2.5, ?, ?, ?)`).run(
+        id, wordId, sourceType || "core", sourceRef || "", mastery, now + 86400000, now, now
+      );
+    } else {
+      const field = `mastery_${skill}`;
+      const currentMastery = existing[field] || 0;
+      const newMastery = correct
+        ? Math.min(100, currentMastery + Math.max(5, Math.round((100 - currentMastery) * 0.3)))
+        : Math.max(0, currentMastery - 15);
+
+      let { srs_interval: interval, srs_ease: ease } = existing;
+      if (correct) {
+        ease = Math.max(1.3, ease + 0.1);
+        interval = interval < 1 ? 1 : interval * ease;
+      } else {
+        ease = Math.max(1.3, ease - 0.2);
+        interval = 1;
+      }
+      const nextReview = now + Math.round(interval * 86400000);
+
+      const allMastery = [
+        field === "mastery_listening" ? newMastery : (existing.mastery_listening || 0),
+        field === "mastery_speaking" ? newMastery : (existing.mastery_speaking || 0),
+        field === "mastery_reading" ? newMastery : (existing.mastery_reading || 0),
+        field === "mastery_writing" ? newMastery : (existing.mastery_writing || 0),
+      ];
+      const status = allMastery.every(m => m >= 80) ? "mastered" : "learning";
+
+      let mistakes: any[] = [];
+      try { mistakes = JSON.parse(existing.mistakes || "[]"); } catch { mistakes = []; }
+      if (!correct) {
+        mistakes.push({ skill, timestamp: now });
+        if (mistakes.length > 20) mistakes = mistakes.slice(-20);
+      }
+
+      db.prepare(`UPDATE student_word_progress SET ${field} = ?, status = ?, encounters = encounters + 1, srs_interval = ?, srs_ease = ?, srs_next_review = ?, mistakes = ?, updated_at = ? WHERE student_id = ? AND word_id = ?`).run(
+        newMastery, status, interval, ease, nextReview, JSON.stringify(mistakes), now, id, wordId
+      );
+    }
+
+    res.json({ ok: true });
+  });
+
+  app.get("/api/students/:id/word-progress/summary", requireAuth, (req, res) => {
+    const { id } = req.params;
+    const total = db.prepare("SELECT COUNT(*) as c FROM student_word_progress WHERE student_id = ?").get(id) as any;
+    const mastered = db.prepare("SELECT COUNT(*) as c FROM student_word_progress WHERE student_id = ? AND status = 'mastered'").get(id) as any;
+    const learning = db.prepare("SELECT COUNT(*) as c FROM student_word_progress WHERE student_id = ? AND status = 'learning'").get(id) as any;
+    const dueReview = db.prepare("SELECT COUNT(*) as c FROM student_word_progress WHERE student_id = ? AND srs_next_review <= ?").get(id, Date.now()) as any;
+    const avg = db.prepare("SELECT AVG(mastery_listening) as listening, AVG(mastery_speaking) as speaking, AVG(mastery_reading) as reading, AVG(mastery_writing) as writing FROM student_word_progress WHERE student_id = ? AND status != 'new'").get(id) as any;
+    res.json({
+      total: total.c,
+      mastered: mastered.c,
+      learning: learning.c,
+      dueReview: dueReview.c,
+      avgMastery: {
+        listening: Math.round(avg?.listening || 0),
+        speaking: Math.round(avg?.speaking || 0),
+        reading: Math.round(avg?.reading || 0),
+        writing: Math.round(avg?.writing || 0),
+      },
+    });
+  });
+
   // ── Học sinh (theo tài khoản) ──
   app.get("/api/students", requireAuth, (req, res) => {
     const user = (req as any).user;
