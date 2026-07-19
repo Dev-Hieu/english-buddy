@@ -5,6 +5,7 @@ import { useEffect, useMemo, useState } from "react";
 import { getLeaderboard } from "@/services/studentService";
 import { apiRequest } from "@/services/api";
 import { getSkillTestResults, type SkillTestResult } from "@/services/progressService";
+// TODO: migrate SEED_TOPICS and SEED_VOCABULARY usages below to getCategories()/getWordBank() APIs.
 import { SEED_TOPICS } from "@/data/seedTopics";
 import { SEED_VOCABULARY } from "@/data/seedVocabulary";
 import type { Level, Student } from "@/types";

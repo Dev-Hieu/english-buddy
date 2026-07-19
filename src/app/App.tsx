@@ -176,6 +176,7 @@ export function App() {
   useEffect(() => { if (isLoggedIn()) refreshMe().then((u) => u && setUser(u)); }, []);
 
   // Load từ vựng từ DB (Oxford 3000, phrases...) merge vào SEED_VOCABULARY
+  // TODO: once all pages migrate to bank API, remove this getVocabulary() merge and SEED_VOCABULARY import.
   const [, setVocabVer] = useState(0);
   useEffect(() => {
     getVocabulary().then((dbWords) => {

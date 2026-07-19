@@ -1,7 +1,7 @@
 import { BarChart3, BookOpen, Check, ClipboardCheck, Copy, Ear, Flame, Gamepad2, GraduationCap, Loader2, MessageSquareText, Mic, PenLine, Share2, Sparkles, Star, Trophy, Type } from "lucide-react";
 import { useEffect, useState } from "react";
-import { SEED_TOPICS } from "@/data/seedTopics";
 import { SEED_VOCABULARY } from "@/data/seedVocabulary";
+import { getCategories, getWordBank, type Category, type BankWord } from "@/services/wordBankService";
 import type { QuizResult, Student, StudentVocabularyProgress } from "@/types";
 import { getStudentProgress, getSkillTestResults, type SkillTestResult } from "@/services/progressService";
 import { getStudent } from "@/services/studentService";
@@ -34,13 +34,15 @@ interface DashboardPageProps {
 function levelOf(xp: number) { const t = [0, 50, 150, 400, 800, 1500, 3000]; const l = t.findIndex((v) => xp < v); return l < 0 ? t.length : l; }
 function levelLabel(xp: number) { return ["Mới bắt đầu", "Sơ cấp", "Tiền trung cấp", "Trung cấp", "Trung cao cấp", "Cao cấp", "Thành thạo"][levelOf(xp) - 1] || ""; }
 
+// wordById is built from SEED_VOCABULARY for looking up word text from progress records.
+// TODO: migrate to bank API words once all usages are on bank API.
 const wordById = new Map(SEED_VOCABULARY.map((w) => [w.id, w]));
 
-function suggestTopic(learnedIds: Set<string>): string {
-  for (const t of [...SEED_TOPICS].sort((a, b) => a.order - b.order)) {
-    const words = SEED_VOCABULARY.filter((w) => w.topicIds.includes(t.id));
+function suggestTopicFromBank(learnedIds: Set<string>, categories: Category[], bankWords: BankWord[]): string {
+  for (const cat of [...categories].sort((a, b) => a.order - b.order)) {
+    const words = bankWords.filter((w) => w.categories.includes(cat.id));
     const done = words.filter((w) => learnedIds.has(w.id)).length;
-    if (words.length && done < words.length) return `${t.name_vi} (${t.name})`;
+    if (words.length && done < words.length) return `${cat.name_vi} (${cat.name})`;
   }
   return "Ôn tập các từ đã học";
 }
@@ -66,6 +68,8 @@ export function DashboardPage({ students, onBackHome }: DashboardPageProps) {
   const [info, setInfo] = useState<Student | null>(null);
   const [expandedSection, setExpandedSection] = useState<string | null>(null);
   const [copied, setCopied] = useState(false);
+  const [categories, setCategories] = useState<Category[]>([]);
+  const [bankWords, setBankWords] = useState<BankWord[]>([]);
 
   const student = students[0];
 
@@ -77,9 +81,13 @@ export function DashboardPage({ students, onBackHome }: DashboardPageProps) {
       getQuizResults(student.id).catch(() => []),
       getSkillTestResults(student.id).catch(() => []),
       getStudent(student.id).catch(() => null),
-    ]).then(([p, q, s, i]) => {
+      getCategories().catch(() => []),
+      getWordBank().catch(() => []),
+    ]).then(([p, q, s, i, cats, words]) => {
       if (!alive) return;
-      setProgress(p); setQuizzes(q); setSkillResults(s); setInfo(i); setLoading(false);
+      setProgress(p); setQuizzes(q); setSkillResults(s); setInfo(i);
+      setCategories(cats as Category[]); setBankWords(words as BankWord[]);
+      setLoading(false);
     });
     return () => { alive = false; };
   }, [student?.id]);
@@ -96,14 +104,15 @@ export function DashboardPage({ students, onBackHome }: DashboardPageProps) {
   const xp = info?.xp ?? 0;
   const streak = info?.streak ?? 0;
   const level = levelOf(xp);
-  const totalWords = SEED_VOCABULARY.length;
+  // Use bank word count when available, fall back to SEED count as denominator.
+  const totalWords = bankWords.length > 0 ? bankWords.length : SEED_VOCABULARY.length;
   const overallPct = totalWords ? Math.round((learnedIds.size / totalWords) * 100) : 0;
 
-  // Topic progress
-  const topicStats = SEED_TOPICS.map((t) => {
-    const words = SEED_VOCABULARY.filter((w) => w.topicIds.includes(t.id));
+  // Topic progress — uses categories + bank API words when loaded, otherwise empty (shown after load).
+  const topicStats = categories.map((cat) => {
+    const words = bankWords.filter((w) => w.categories.includes(cat.id));
     const done = words.filter((w) => learnedIds.has(w.id)).length;
-    return { id: t.id, name: t.name_vi, nameEn: t.name, total: words.length, done, pct: words.length ? Math.round((done / words.length) * 100) : 0 };
+    return { id: cat.id, name: cat.name_vi, nameEn: cat.name, total: words.length, done, pct: words.length ? Math.round((done / words.length) * 100) : 0 };
   }).sort((a, b) => b.pct - a.pct);
 
   // Skill test stats
@@ -224,7 +233,7 @@ export function DashboardPage({ students, onBackHome }: DashboardPageProps) {
                   {s.key === "vocab" && (
                     <>
                       <p className="text-xs font-bold">Đã học: <span className="text-primary">{learnedIds.size}</span> / {totalWords} từ · Thuộc: {masteredCount} · Cần ôn: {dueCount}</p>
-                      <p className="text-xs font-bold">Đề xuất: <span className="text-primary">{suggestTopic(learnedIds)}</span></p>
+                      <p className="text-xs font-bold">Đề xuất: <span className="text-primary">{suggestTopicFromBank(learnedIds, categories, bankWords)}</span></p>
                       {weakWords.length > 0 && (
                         <div>
                           <p className="text-xs font-bold mb-1">Từ hay sai:</p>
