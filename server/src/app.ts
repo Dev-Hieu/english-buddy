@@ -737,6 +737,21 @@ export function createApp() {
     res.json(rows);
   });
 
+  app.get("/api/phrase-bank", (req, res) => {
+    const { level, category, type } = req.query;
+    let sql = "SELECT * FROM phrase_bank WHERE 1=1";
+    const params: any[] = [];
+    if (level && typeof level === "string") { sql += " AND level = ?"; params.push(level); }
+    if (category && typeof category === "string") { sql += " AND category = ?"; params.push(category); }
+    if (type && typeof type === "string") { sql += " AND type = ?"; params.push(type); }
+    sql += " ORDER BY phrase ASC";
+    const rows = db.prepare(sql).all(...params);
+    ["examples", "collocations", "example_dialogue"].forEach(f => {
+      rows.forEach((r: any) => { try { r[f] = JSON.parse(r[f] || "[]"); } catch { r[f] = []; } });
+    });
+    res.json(rows);
+  });
+
   // ── Học sinh (theo tài khoản) ──
   app.get("/api/students", requireAuth, (req, res) => {
     const user = (req as any).user;
