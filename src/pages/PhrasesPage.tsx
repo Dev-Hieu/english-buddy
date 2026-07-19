@@ -206,7 +206,7 @@ function PhraseCard({ phrase }: { phrase: Phrase }) {
               <p className="mt-1 text-xs font-bold text-muted-foreground">{phrase.vi}</p>
             )}
             {!expanded && (
-              <p className="mt-0.5 text-[11px] text-muted-foreground">Nhan de xem nghia</p>
+              <p className="mt-0.5 text-[11px] text-muted-foreground">Nhấn để xem nghĩa</p>
             )}
           </div>
           <button type="button" onClick={() => speakText(phrase.en)}
