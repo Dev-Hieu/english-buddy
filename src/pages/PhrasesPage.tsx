@@ -76,56 +76,10 @@ export function PhrasesPage({ student, topicId, onBackHome }: Props) {
       .catch(() => {});
   }, [level]);
 
-  // Bank phrases use new category IDs (daily_life, food_and_drink, etc.)
-  // Build dynamic categories from bank data when available
-  const dynamicCategories = useMemo(() => {
-    if (bankPhrases.length === 0) return null;
-    const catMap = new Map<string, { count: number }>();
-    bankPhrases.forEach((p) => {
-      if (!catMap.has(p.category)) catMap.set(p.category, { count: 0 });
-      if (level === "all" || matchesLevel(p.level, level)) {
-        catMap.get(p.category)!.count++;
-      }
-    });
-    const CATEGORY_NAMES: Record<string, { name: string; name_vi: string; emoji: string }> = {
-      animals_and_nature: { name: "Animals & Nature", name_vi: "Động vật", emoji: "🐾" },
-      clothes_and_accessories: { name: "Clothes", name_vi: "Quần áo", emoji: "👔" },
-      colours_and_shapes: { name: "Colours", name_vi: "Màu sắc", emoji: "🎨" },
-      communication_and_technology: { name: "Technology", name_vi: "Công nghệ", emoji: "📱" },
-      daily_life: { name: "Daily Life", name_vi: "Sinh hoạt", emoji: "☀️" },
-      education: { name: "Education", name_vi: "Giáo dục", emoji: "📚" },
-      entertainment_and_media: { name: "Entertainment", name_vi: "Giải trí", emoji: "🎬" },
-      environment: { name: "Environment", name_vi: "Môi trường", emoji: "🌍" },
-      family_and_friends: { name: "Family", name_vi: "Gia đình", emoji: "👨‍👩‍👧" },
-      feelings_and_opinions: { name: "Feelings", name_vi: "Cảm xúc", emoji: "😊" },
-      food_and_drink: { name: "Food & Drink", name_vi: "Đồ ăn", emoji: "🍽️" },
-      health_and_body: { name: "Health", name_vi: "Sức khỏe", emoji: "🏥" },
-      hobbies_and_leisure: { name: "Hobbies", name_vi: "Sở thích", emoji: "⚽" },
-      house_and_home: { name: "Home", name_vi: "Nhà ở", emoji: "🏠" },
-      measurements_and_numbers: { name: "Numbers", name_vi: "Số", emoji: "🔢" },
-      places: { name: "Places", name_vi: "Địa điểm", emoji: "🏛️" },
-      services: { name: "Services", name_vi: "Dịch vụ", emoji: "🏪" },
-      shopping: { name: "Shopping", name_vi: "Mua sắm", emoji: "🛒" },
-      society_and_community: { name: "Society", name_vi: "Xã hội", emoji: "🤝" },
-      sport: { name: "Sport", name_vi: "Thể thao", emoji: "🏆" },
-      science_and_research: { name: "Science", name_vi: "Khoa học", emoji: "🔬" },
-      travel_and_transport: { name: "Travel", name_vi: "Du lịch", emoji: "✈️" },
-      weather_and_seasons: { name: "Weather", name_vi: "Thời tiết", emoji: "🌤️" },
-      work_and_jobs: { name: "Work", name_vi: "Công việc", emoji: "💼" },
-    };
-    return Array.from(catMap.entries()).map(([id, { count }]) => ({
-      id,
-      name: CATEGORY_NAMES[id]?.name || id,
-      name_vi: CATEGORY_NAMES[id]?.name_vi || id,
-      emoji: CATEGORY_NAMES[id]?.emoji || "📝",
-      count,
-    }));
-  }, [bankPhrases, level]);
+  const activeCategory = PHRASE_CATEGORIES.find((c) => c.id === activeCategoryId) ?? null;
 
-  const displayCategories = dynamicCategories || PHRASE_CATEGORIES;
-  const activeCategory = displayCategories.find((c) => c.id === activeCategoryId) ?? null;
-
-  const phraseSource = bankPhrases.length > 0 ? bankPhrases : SEED_PHRASES;
+  // TODO: bank phrases use new category IDs — need category migration before switching
+  const phraseSource = SEED_PHRASES;
 
   const filteredPhrases = useMemo(() => {
     if (!activeCategoryId) return [];
@@ -162,8 +116,8 @@ export function PhrasesPage({ student, topicId, onBackHome }: Props) {
         </div>
 
         <div className="grid grid-cols-2 gap-3">
-          {displayCategories.map((cat) => {
-            const count = "count" in cat ? (cat as any).count : phraseSource.filter(
+          {PHRASE_CATEGORIES.map((cat) => {
+            const count = phraseSource.filter(
               (p) => p.category === cat.id && (level === "all" || matchesLevel(p.level, level)),
             ).length;
             return (
