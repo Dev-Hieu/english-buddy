@@ -1,6 +1,8 @@
 import { Check, ChevronRight, Loader2, MessageCircle, Mic, Send, Sparkles, Square, Volume2 } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { CHAT_SCENARIOS } from "@/data/chatScenarios";
+import { getConversationBank } from "@/services/conversationBankService";
+import type { BankScenario } from "@/services/conversationBankService";
 import { getChatStatus, sendChat } from "@/services/chatService";
 import { speakText } from "@/services/speechService";
 import { translateToVi } from "@/services/translateService";
@@ -80,8 +82,47 @@ const SpeechRecognition = typeof window !== "undefined"
   : null;
 const canVoice = !!SpeechRecognition;
 
+// Map a BankScenario from the API to the ChatScenario format used by this page.
+// The bank has dialogue[] but no steps/options, so we build a minimal script from it.
+function bankToChat(b: BankScenario): ChatScenario {
+  const categoryEmoji: Record<string, string> = {
+    food_and_drink: "🍔", greetings: "👋", school: "🏫", shopping: "🛍️",
+    travel: "✈️", health: "🏥", sports: "⚽", family: "👨‍👩‍👧", nature: "🌿",
+  };
+  const emoji = categoryEmoji[b.category] ?? "💬";
+
+  // Build script steps from dialogue pairs (bot → user turns).
+  const steps: ChatScenario["steps"] = [];
+  for (let i = 0; i < b.dialogue.length - 1; i++) {
+    const bot = b.dialogue[i];
+    const usr = b.dialogue[i + 1];
+    if (bot.role !== "user" && usr.role === "user") {
+      steps.push({
+        bot_en: bot.en,
+        bot_vi: bot.vi,
+        answer: usr.en,
+        options: [{ en: usr.en, vi: usr.vi }],
+      });
+      i++; // skip the user turn we just consumed
+    }
+  }
+
+  const firstBot = b.dialogue.find((d) => d.role !== "user");
+
+  return {
+    id: b.id,
+    emoji,
+    title_vi: b.scenario_vi,
+    prompt: b.scenario,
+    opening_en: firstBot?.en ?? b.scenario,
+    opening_vi: firstBot?.vi ?? b.scenario_vi,
+    steps,
+  };
+}
+
 export function ConversationPage({ student, onBackHome }: ConversationPageProps) {
   const [aiEnabled, setAiEnabled] = useState<boolean | null>(null);
+  const [bankScenarios, setBankScenarios] = useState<ChatScenario[] | null>(null);
   const [scenario, setScenario] = useState<ChatScenario | null>(null);
   const [messages, setMessages] = useState<ChatMessage[]>([]);
   // AI mode
@@ -99,6 +140,11 @@ export function ConversationPage({ student, onBackHome }: ConversationPageProps)
   const endRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => { getChatStatus().then((s) => setAiEnabled(s.enabled)).catch(() => setAiEnabled(false)); }, []);
+  useEffect(() => {
+    getConversationBank(student.level)
+      .then((items: BankScenario[]) => { if (items.length > 0) setBankScenarios(items.map(bankToChat)); })
+      .catch(() => { /* silently fall back to hardcoded scenarios */ });
+  }, [student.level]);
   useEffect(() => { endRef.current?.scrollIntoView({ behavior: "smooth" }); }, [messages, loading]);
 
   const start = (s: ChatScenario) => {
@@ -189,7 +235,7 @@ export function ConversationPage({ student, onBackHome }: ConversationPageProps)
             : "Chọn câu trả lời đúng để hoàn thành đoạn hội thoại theo tình huống."}
         </p>
         <section className="space-y-3">
-          {CHAT_SCENARIOS.map((s) => (
+          {(bankScenarios ?? CHAT_SCENARIOS).map((s) => (
             <button key={s.id} type="button" onClick={() => start(s)}
               className="flex w-full items-center gap-4 rounded-3xl border border-border/70 bg-card p-4 text-left shadow-card transition-transform active:scale-[0.99]">
               <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-secondary text-2xl">{s.emoji}</span>
