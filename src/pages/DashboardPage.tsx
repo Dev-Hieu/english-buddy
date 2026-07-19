@@ -10,7 +10,21 @@ import { Card, CardContent } from "@/components/ui/card";
 import { SessionHeader } from "@/components/layout/SessionHeader";
 import { avatarEmoji } from "@/components/ui/emoji";
 import { cn } from "@/components/ui/cn";
-import { countEarnedBadges } from "@/pages/BadgesPage";
+// Inline badge count to avoid cross-page import issues
+function countEarnedBadgesInline(student: { streak: number; xp: number }, wordsLearned: number): number {
+  let count = 0;
+  if (wordsLearned >= 10) count++;
+  if (wordsLearned >= 50) count++;
+  if (wordsLearned >= 100) count++;
+  if (wordsLearned >= 500) count++;
+  if (student.streak >= 3) count++;
+  if (student.streak >= 7) count++;
+  if (student.streak >= 30) count++;
+  if (student.xp >= 100) count++;
+  if (student.xp >= 500) count++;
+  if (student.xp >= 1000) count++;
+  return count;
+}
 
 interface DashboardPageProps {
   students: Student[];
@@ -99,7 +113,7 @@ export function DashboardPage({ students, onBackHome }: DashboardPageProps) {
 
   // Share progress
   const [copied, setCopied] = useState(false);
-  const badgeCount = countEarnedBadges(student, learnedIds.size);
+  const badgeCount = countEarnedBadgesInline(student, learnedIds.size);
   const shareText = `English Buddy\n${student.name}: ${levelLabel(xp)} · ${xp} XP · ${streak} ngay\n${learnedIds.size} tu da hoc\n${badgeCount} huy hieu\nen.vev.vn`;
 
   const copyProgress = async () => {
