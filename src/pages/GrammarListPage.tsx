@@ -1,9 +1,10 @@
 import { BookOpen, ChevronRight, GraduationCap } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { GRAMMAR_TOPICS } from "@/data/grammar";
-import { LEVEL_LABELS, LEVEL_ORDER, type Level, type Student } from "@/types";
+import { LEVEL_LABELS, LEVEL_ORDER, type Level, type Student, type GrammarTopic } from "@/types";
 import { SessionHeader } from "@/components/layout/SessionHeader";
 import { cn } from "@/components/ui/cn";
+import { getGrammarBank } from "@/services/grammarBankService";
 
 interface GrammarListPageProps {
   student: Student;
@@ -15,7 +16,30 @@ interface GrammarListPageProps {
 export function GrammarListPage({ student, initialLevel, onBackHome, onPick }: GrammarListPageProps) {
   const start = initialLevel && initialLevel !== "all" ? initialLevel : (LEVEL_ORDER.includes(student.level as Level) ? (student.level as Level) : "all");
   const [level, setLevel] = useState<Level | "all">(start);
-  const topics = GRAMMAR_TOPICS.filter((t) => level === "all" || t.level === level);
+  const [bankTopics, setBankTopics] = useState<GrammarTopic[]>([]);
+
+  useEffect(() => {
+    const lvl = level === "all" ? undefined : level;
+    getGrammarBank(lvl)
+      .then((data) => {
+        const mapped: GrammarTopic[] = data.map((b) => ({
+          id: b.id,
+          level: b.level as Level,
+          title: b.title,
+          title_vi: b.title_vi,
+          summary_vi: b.description_vi,
+          points: b.rules.map((r) => `${r.rule} — ${r.example_en} (${r.example_vi})`),
+          exercises: b.exercises,
+        }));
+        setBankTopics(mapped);
+      })
+      .catch(() => {
+        // fallback to GRAMMAR_TOPICS — do nothing
+      });
+  }, [level]);
+
+  const topicSource = bankTopics.length > 0 ? bankTopics : GRAMMAR_TOPICS;
+  const topics = topicSource.filter((t) => level === "all" || t.level === level);
 
   return (
     <main className="mx-auto w-full max-w-md sm:max-w-lg lg:max-w-2xl overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-6 pb-6">

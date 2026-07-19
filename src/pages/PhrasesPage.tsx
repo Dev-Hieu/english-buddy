@@ -1,10 +1,11 @@
 import { ArrowLeft, Eye, EyeOff, MessageSquareText, Shuffle, Volume2 } from "lucide-react";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import type { Student } from "@/types";
 import type { Level } from "@/types/student";
 import { LEVEL_ORDER } from "@/types/student";
 import { SEED_PHRASES, PHRASE_CATEGORIES } from "@/data/seedPhrases";
 import type { Phrase } from "@/data/seedPhrases";
+import { getPhraseBank } from "@/services/phraseBankService";
 import { speakText } from "@/services/speechService";
 import { matchesLevel } from "@/utils/levelFilter";
 import { Card, CardContent } from "@/components/ui/card";
@@ -55,12 +56,38 @@ export function PhrasesPage({ student, topicId, onBackHome }: Props) {
 
   const activeCategory = PHRASE_CATEGORIES.find((c) => c.id === activeCategoryId) ?? null;
 
+  const [bankPhrases, setBankPhrases] = useState<Phrase[]>([]);
+  const loadedLevelRef = useRef<string | null>(null);
+
+  useEffect(() => {
+    const lvl = level === "all" ? undefined : level;
+    const key = lvl ?? "all";
+    if (loadedLevelRef.current === key) return;
+    loadedLevelRef.current = key;
+    getPhraseBank(lvl)
+      .then((data) => {
+        const mapped: Phrase[] = data.map((b) => ({
+          id: b.id,
+          en: b.phrase,
+          vi: b.meaning_vi,
+          category: b.category,
+          level: b.level,
+        }));
+        setBankPhrases(mapped);
+      })
+      .catch(() => {
+        // fallback to SEED_PHRASES — do nothing
+      });
+  }, [level]);
+
+  const phraseSource = bankPhrases.length > 0 ? bankPhrases : SEED_PHRASES;
+
   const filteredPhrases = useMemo(() => {
     if (!activeCategoryId) return [];
-    return SEED_PHRASES.filter(
+    return phraseSource.filter(
       (p) => p.category === activeCategoryId && (level === "all" || matchesLevel(p.level, level)),
     );
-  }, [activeCategoryId, level]);
+  }, [activeCategoryId, level, phraseSource]);
 
   function openCategory(id: string) {
     setActiveCategoryId(id);
@@ -91,7 +118,7 @@ export function PhrasesPage({ student, topicId, onBackHome }: Props) {
 
         <div className="grid grid-cols-2 gap-3">
           {PHRASE_CATEGORIES.map((cat) => {
-            const count = SEED_PHRASES.filter(
+            const count = phraseSource.filter(
               (p) => p.category === cat.id && (level === "all" || matchesLevel(p.level, level)),
             ).length;
             return (
