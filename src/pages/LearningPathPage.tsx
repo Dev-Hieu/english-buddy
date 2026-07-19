@@ -49,48 +49,48 @@ const CURRICULUM: Record<string, Lesson[]> = {
   a1: [
     // Week 1: Chào hỏi & Gia đình — people, greetings, numbers, family, colors
     { id: "a1-w1d1", week: 1, day: 1, title: "Hello & Goodbye", titleVi: "Chào hỏi & Tạm biệt", skills: [
-      { type: "vocab", label: "Từ vựng chào hỏi", view: "topics", topicId: "topic_greetings" },
-      { type: "speak", label: "Luyện nói lời chào", view: "speak", topicId: "topic_greetings" },
+      { type: "vocab", label: "Từ vựng chào hỏi", view: "topics", topicId: "daily_life" },
+      { type: "speak", label: "Luyện nói lời chào", view: "speak", topicId: "daily_life" },
       { type: "listen", label: "Nghe lời chào", view: "listening" },
     ]},
     { id: "a1-w1d2", week: 1, day: 2, title: "People Around Me", titleVi: "Những người quanh em", skills: [
-      { type: "vocab", label: "Từ vựng về người", view: "topics", topicId: "topic_people" },
+      { type: "vocab", label: "Từ vựng về người", view: "topics", topicId: "family_and_friends" },
       { type: "listen", label: "Nghe miêu tả người", view: "listening" },
       { type: "grammar", label: "Đại từ nhân xưng", view: "grammar" },
     ]},
     { id: "a1-w1d3", week: 1, day: 3, title: "Numbers & Time", titleVi: "Số đếm & Thời gian", skills: [
-      { type: "vocab", label: "Từ vựng số & giờ", view: "topics", topicId: "topic_numbers" },
+      { type: "vocab", label: "Từ vựng số & giờ", view: "topics", topicId: "measurements_and_numbers" },
       { type: "write", label: "Viết số", view: "writing" },
       { type: "listen", label: "Nghe & đếm", view: "listening" },
     ]},
     { id: "a1-w1d4", week: 1, day: 4, title: "My Family", titleVi: "Gia đình tôi", skills: [
-      { type: "vocab", label: "Từ vựng gia đình", view: "topics", topicId: "topic_family" },
+      { type: "vocab", label: "Từ vựng gia đình", view: "topics", topicId: "family_and_friends" },
       { type: "read", label: "Đọc 'My Family'", view: "reading" },
-      { type: "speak", label: "Nói về gia đình", view: "speak", topicId: "topic_family" },
+      { type: "speak", label: "Nói về gia đình", view: "speak", topicId: "family_and_friends" },
     ]},
     { id: "a1-w1d5", week: 1, day: 5, title: "Colors & Shapes", titleVi: "Màu sắc & Hình dạng", skills: [
-      { type: "vocab", label: "Từ vựng màu sắc", view: "topics", topicId: "topic_colors" },
+      { type: "vocab", label: "Từ vựng màu sắc", view: "topics", topicId: "colours_and_shapes" },
       { type: "grammar", label: "Cấu trúc 'It is...'", view: "grammar" },
       { type: "write", label: "Mô tả hình ảnh", view: "writing" },
     ]},
     // Week 2: Nhà & Sinh hoạt — house, daily, body, animals
     { id: "a1-w2d1", week: 2, day: 1, title: "My House", titleVi: "Ngôi nhà của tôi", skills: [
-      { type: "vocab", label: "Từ vựng ngôi nhà", view: "topics", topicId: "topic_house" },
+      { type: "vocab", label: "Từ vựng ngôi nhà", view: "topics", topicId: "house_and_home" },
       { type: "grammar", label: "There is / There are", view: "grammar" },
       { type: "listen", label: "Nghe miêu tả nhà", view: "listening" },
     ]},
     { id: "a1-w2d2", week: 2, day: 2, title: "Daily Activities", titleVi: "Hoạt động hàng ngày", skills: [
-      { type: "vocab", label: "Từ vựng sinh hoạt", view: "topics", topicId: "topic_daily" },
+      { type: "vocab", label: "Từ vựng sinh hoạt", view: "topics", topicId: "daily_life" },
       { type: "grammar", label: "Thì hiện tại đơn", view: "grammar" },
       { type: "speak", label: "Kể về ngày của em", view: "speak" },
     ]},
     { id: "a1-w2d3", week: 2, day: 3, title: "Body Parts", titleVi: "Bộ phận cơ thể", skills: [
-      { type: "vocab", label: "Từ vựng cơ thể", view: "topics", topicId: "topic_body" },
+      { type: "vocab", label: "Từ vựng cơ thể", view: "topics", topicId: "health_and_body" },
       { type: "listen", label: "Nghe mô tả cơ thể", view: "listening" },
       { type: "write", label: "Viết miêu tả người", view: "writing" },
     ]},
     { id: "a1-w2d4", week: 2, day: 4, title: "Animals", titleVi: "Động vật", skills: [
-      { type: "vocab", label: "Từ vựng động vật", view: "topics", topicId: "topic_animals" },
+      { type: "vocab", label: "Từ vựng động vật", view: "topics", topicId: "animals_and_nature" },
       { type: "read", label: "Đọc về động vật", view: "reading" },
       { type: "speak", label: "Nói về con vật yêu thích", view: "speak" },
     ]},
@@ -101,17 +101,17 @@ const CURRICULUM: Record<string, Lesson[]> = {
     ]},
     // Week 3: Đồ ăn & Mua sắm — food, shopping, hobbies
     { id: "a1-w3d1", week: 3, day: 1, title: "Food & Drinks", titleVi: "Đồ ăn & Đồ uống", skills: [
-      { type: "vocab", label: "Từ vựng đồ ăn", view: "topics", topicId: "topic_food" },
+      { type: "vocab", label: "Từ vựng đồ ăn", view: "topics", topicId: "food_and_drink" },
       { type: "listen", label: "Nghe tên thực phẩm", view: "listening" },
-      { type: "speak", label: "Nói tên thực phẩm", view: "speak", topicId: "topic_food" },
+      { type: "speak", label: "Nói tên thực phẩm", view: "speak", topicId: "food_and_drink" },
     ]},
     { id: "a1-w3d2", week: 3, day: 2, title: "Shopping", titleVi: "Đi mua sắm", skills: [
-      { type: "vocab", label: "Từ vựng mua sắm", view: "topics", topicId: "topic_shopping" },
+      { type: "vocab", label: "Từ vựng mua sắm", view: "topics", topicId: "shopping" },
       { type: "grammar", label: "How much / How many", view: "grammar" },
       { type: "listen", label: "Nghe hỏi giá", view: "listening" },
     ]},
     { id: "a1-w3d3", week: 3, day: 3, title: "Hobbies & Free Time", titleVi: "Sở thích & Giải trí", skills: [
-      { type: "vocab", label: "Từ vựng sở thích", view: "topics", topicId: "topic_hobbies" },
+      { type: "vocab", label: "Từ vựng sở thích", view: "topics", topicId: "hobbies_and_leisure" },
       { type: "speak", label: "Nói về sở thích", view: "speak" },
       { type: "write", label: "Viết về sở thích", view: "writing" },
     ]},
@@ -127,22 +127,22 @@ const CURRICULUM: Record<string, Lesson[]> = {
     ]},
     // Week 4: Trường & Thành phố — school, weather, transport, city
     { id: "a1-w4d1", week: 4, day: 1, title: "School", titleVi: "Trường học", skills: [
-      { type: "vocab", label: "Từ vựng trường học", view: "topics", topicId: "topic_school" },
+      { type: "vocab", label: "Từ vựng trường học", view: "topics", topicId: "education" },
       { type: "listen", label: "Nghe tên đồ vật", view: "listening" },
       { type: "grammar", label: "This / That / These / Those", view: "grammar" },
     ]},
     { id: "a1-w4d2", week: 4, day: 2, title: "Transport", titleVi: "Phương tiện giao thông", skills: [
-      { type: "vocab", label: "Từ vựng giao thông", view: "topics", topicId: "topic_transport" },
+      { type: "vocab", label: "Từ vựng giao thông", view: "topics", topicId: "travel_and_transport" },
       { type: "listen", label: "Nghe về phương tiện", view: "listening" },
       { type: "speak", label: "Nói cách đi học", view: "speak" },
     ]},
     { id: "a1-w4d3", week: 4, day: 3, title: "City & Places", titleVi: "Thành phố & Địa điểm", skills: [
-      { type: "vocab", label: "Từ vựng thành phố", view: "topics", topicId: "topic_city" },
+      { type: "vocab", label: "Từ vựng thành phố", view: "topics", topicId: "places" },
       { type: "read", label: "Đọc bản đồ", view: "reading" },
       { type: "write", label: "Viết về thành phố", view: "writing" },
     ]},
     { id: "a1-w4d4", week: 4, day: 4, title: "Weather & Seasons", titleVi: "Thời tiết & Mùa", skills: [
-      { type: "vocab", label: "Từ vựng thời tiết", view: "topics", topicId: "topic_weather" },
+      { type: "vocab", label: "Từ vựng thời tiết", view: "topics", topicId: "weather_and_seasons" },
       { type: "listen", label: "Nghe dự báo thời tiết", view: "listening" },
       { type: "speak", label: "Nói về thời tiết", view: "speak" },
     ]},
@@ -158,7 +158,7 @@ const CURRICULUM: Record<string, Lesson[]> = {
   a2: [
     // Week 1: Giao thông & Du lịch — transport, travel
     { id: "a2-w1d1", week: 1, day: 1, title: "Means of Transport", titleVi: "Phương tiện giao thông", skills: [
-      { type: "vocab", label: "Từ vựng giao thông", view: "topics", topicId: "topic_transport" },
+      { type: "vocab", label: "Từ vựng giao thông", view: "topics", topicId: "travel_and_transport" },
       { type: "listen", label: "Nghe hướng dẫn đi lại", view: "listening" },
       { type: "grammar", label: "Can / Could", view: "grammar" },
     ]},
@@ -168,7 +168,7 @@ const CURRICULUM: Record<string, Lesson[]> = {
       { type: "write", label: "Viết chỉ dẫn", view: "writing" },
     ]},
     { id: "a2-w1d3", week: 1, day: 3, title: "At the Airport", titleVi: "Ở sân bay", skills: [
-      { type: "vocab", label: "Từ vựng sân bay", view: "topics", topicId: "topic_travel" },
+      { type: "vocab", label: "Từ vựng sân bay", view: "topics", topicId: "travel_and_transport" },
       { type: "read", label: "Đọc bảng thông báo", view: "reading" },
       { type: "speak", label: "Làm thủ tục bay", view: "speak" },
     ]},
@@ -184,22 +184,22 @@ const CURRICULUM: Record<string, Lesson[]> = {
     ]},
     // Week 2: Quần áo & Cảm xúc — clothes, feelings, jobs
     { id: "a2-w2d1", week: 2, day: 1, title: "Clothes & Fashion", titleVi: "Quần áo & Thời trang", skills: [
-      { type: "vocab", label: "Từ vựng quần áo", view: "topics", topicId: "topic_clothes" },
+      { type: "vocab", label: "Từ vựng quần áo", view: "topics", topicId: "clothes_and_accessories" },
       { type: "listen", label: "Nghe miêu tả trang phục", view: "listening" },
       { type: "grammar", label: "So sánh hơn", view: "grammar" },
     ]},
     { id: "a2-w2d2", week: 2, day: 2, title: "Feelings & Emotions", titleVi: "Cảm xúc & Tâm trạng", skills: [
-      { type: "vocab", label: "Từ vựng cảm xúc", view: "topics", topicId: "topic_feelings" },
+      { type: "vocab", label: "Từ vựng cảm xúc", view: "topics", topicId: "feelings_and_opinions" },
       { type: "speak", label: "Nói về cảm xúc", view: "speak" },
       { type: "listen", label: "Nghe câu chuyện cảm xúc", view: "listening" },
     ]},
     { id: "a2-w2d3", week: 2, day: 3, title: "Jobs & Occupations", titleVi: "Nghề nghiệp", skills: [
-      { type: "vocab", label: "Từ vựng nghề nghiệp", view: "topics", topicId: "topic_jobs" },
+      { type: "vocab", label: "Từ vựng nghề nghiệp", view: "topics", topicId: "work_and_jobs" },
       { type: "read", label: "Đọc mô tả công việc", view: "reading" },
       { type: "speak", label: "Nói về nghề mơ ước", view: "speak" },
     ]},
     { id: "a2-w2d4", week: 2, day: 4, title: "Describing People", titleVi: "Miêu tả người", skills: [
-      { type: "vocab", label: "Từ vựng tính cách", view: "topics", topicId: "topic_feelings" },
+      { type: "vocab", label: "Từ vựng tính cách", view: "topics", topicId: "feelings_and_opinions" },
       { type: "write", label: "Viết miêu tả bạn thân", view: "writing" },
       { type: "grammar", label: "Tính từ so sánh nhất", view: "grammar" },
     ]},
@@ -210,7 +210,7 @@ const CURRICULUM: Record<string, Lesson[]> = {
     ]},
     // Week 3: Thể thao & Sức khỏe — sports
     { id: "a2-w3d1", week: 3, day: 1, title: "Sports & Exercise", titleVi: "Thể thao & Tập luyện", skills: [
-      { type: "vocab", label: "Từ vựng thể thao", view: "topics", topicId: "topic_sports" },
+      { type: "vocab", label: "Từ vựng thể thao", view: "topics", topicId: "sport" },
       { type: "listen", label: "Nghe bình luận thể thao", view: "listening" },
       { type: "grammar", label: "Have got / Has got", view: "grammar" },
     ]},
@@ -236,12 +236,12 @@ const CURRICULUM: Record<string, Lesson[]> = {
     ]},
     // Week 4: Giải trí & Ôn tập — entertainment
     { id: "a2-w4d1", week: 4, day: 1, title: "Entertainment & Media", titleVi: "Giải trí & Truyền thông", skills: [
-      { type: "vocab", label: "Từ vựng giải trí", view: "topics", topicId: "topic_entertainment" },
+      { type: "vocab", label: "Từ vựng giải trí", view: "topics", topicId: "entertainment_and_media" },
       { type: "listen", label: "Nghe review phim", view: "listening" },
       { type: "speak", label: "Nói về phim yêu thích", view: "speak" },
     ]},
     { id: "a2-w4d2", week: 4, day: 2, title: "Music & Games", titleVi: "Âm nhạc & Trò chơi", skills: [
-      { type: "vocab", label: "Từ vựng âm nhạc", view: "topics", topicId: "topic_entertainment" },
+      { type: "vocab", label: "Từ vựng âm nhạc", view: "topics", topicId: "entertainment_and_media" },
       { type: "read", label: "Đọc về ngôi sao", view: "reading" },
       { type: "write", label: "Viết review bài hát", view: "writing" },
     ]},
@@ -267,7 +267,7 @@ const CURRICULUM: Record<string, Lesson[]> = {
   b1: [
     // Week 1: Sức khỏe & Môi trường — health, environment
     { id: "b1-w1d1", week: 1, day: 1, title: "Health & Wellness", titleVi: "Sức khỏe & Dinh dưỡng", skills: [
-      { type: "vocab", label: "Từ vựng sức khỏe", view: "topics", topicId: "topic_health" },
+      { type: "vocab", label: "Từ vựng sức khỏe", view: "topics", topicId: "health_and_body" },
       { type: "listen", label: "Nghe lời khuyên sức khỏe", view: "listening" },
       { type: "grammar", label: "Present Perfect", view: "grammar" },
     ]},
@@ -277,7 +277,7 @@ const CURRICULUM: Record<string, Lesson[]> = {
       { type: "write", label: "Viết về thói quen tốt", view: "writing" },
     ]},
     { id: "b1-w1d3", week: 1, day: 3, title: "Environment Issues", titleVi: "Vấn đề môi trường", skills: [
-      { type: "vocab", label: "Từ vựng môi trường", view: "topics", topicId: "topic_environment" },
+      { type: "vocab", label: "Từ vựng môi trường", view: "topics", topicId: "environment" },
       { type: "read", label: "Đọc bài về ô nhiễm", view: "reading" },
       { type: "grammar", label: "Conditionals Type 1 & 2", view: "grammar" },
     ]},
@@ -293,7 +293,7 @@ const CURRICULUM: Record<string, Lesson[]> = {
     ]},
     // Week 2: Công nghệ — technology
     { id: "b1-w2d1", week: 2, day: 1, title: "Tech & Gadgets", titleVi: "Công nghệ & Thiết bị", skills: [
-      { type: "vocab", label: "Từ vựng công nghệ", view: "topics", topicId: "topic_technology" },
+      { type: "vocab", label: "Từ vựng công nghệ", view: "topics", topicId: "communication_and_technology" },
       { type: "listen", label: "Nghe review sản phẩm", view: "listening" },
       { type: "grammar", label: "Passive Voice", view: "grammar" },
     ]},
@@ -304,7 +304,7 @@ const CURRICULUM: Record<string, Lesson[]> = {
     ]},
     { id: "b1-w2d3", week: 2, day: 3, title: "News & Articles", titleVi: "Tin tức & Báo chí", skills: [
       { type: "read", label: "Đọc tin tức", view: "reading" },
-      { type: "vocab", label: "Từ vựng truyền thông", view: "topics", topicId: "topic_technology" },
+      { type: "vocab", label: "Từ vựng truyền thông", view: "topics", topicId: "communication_and_technology" },
       { type: "listen", label: "Nghe bản tin", view: "listening" },
     ]},
     { id: "b1-w2d4", week: 2, day: 4, title: "Movies & Entertainment", titleVi: "Phim & Giải trí", skills: [
@@ -319,22 +319,22 @@ const CURRICULUM: Record<string, Lesson[]> = {
     ]},
     // Week 3: Giao tiếp & Cộng đồng — communication, community
     { id: "b1-w3d1", week: 3, day: 1, title: "Communication Skills", titleVi: "Kỹ năng giao tiếp", skills: [
-      { type: "vocab", label: "Từ vựng giao tiếp", view: "topics", topicId: "topic_communication" },
+      { type: "vocab", label: "Từ vựng giao tiếp", view: "topics", topicId: "communication_and_technology" },
       { type: "speak", label: "Luyện tranh luận", view: "speak" },
       { type: "grammar", label: "Reported Speech", view: "grammar" },
     ]},
     { id: "b1-w3d2", week: 3, day: 2, title: "Media & News", titleVi: "Truyền thông & Tin tức", skills: [
-      { type: "vocab", label: "Từ vựng truyền thông", view: "topics", topicId: "topic_communication" },
+      { type: "vocab", label: "Từ vựng truyền thông", view: "topics", topicId: "communication_and_technology" },
       { type: "read", label: "Đọc bài báo", view: "reading" },
       { type: "listen", label: "Nghe thời sự", view: "listening" },
     ]},
     { id: "b1-w3d3", week: 3, day: 3, title: "Community & Volunteering", titleVi: "Cộng đồng & Tình nguyện", skills: [
-      { type: "vocab", label: "Từ vựng cộng đồng", view: "topics", topicId: "topic_community" },
+      { type: "vocab", label: "Từ vựng cộng đồng", view: "topics", topicId: "society_and_community" },
       { type: "read", label: "Đọc về tình nguyện", view: "reading" },
       { type: "speak", label: "Kể về trải nghiệm", view: "speak" },
     ]},
     { id: "b1-w3d4", week: 3, day: 4, title: "Social Issues", titleVi: "Vấn đề xã hội", skills: [
-      { type: "vocab", label: "Từ vựng xã hội", view: "topics", topicId: "topic_community" },
+      { type: "vocab", label: "Từ vựng xã hội", view: "topics", topicId: "society_and_community" },
       { type: "listen", label: "Nghe podcast xã hội", view: "listening" },
       { type: "write", label: "Viết bài luận ngắn", view: "writing" },
     ]},
@@ -376,7 +376,7 @@ const CURRICULUM: Record<string, Lesson[]> = {
   b2: [
     // Week 1: Công việc & Nghề nghiệp — work
     { id: "b2-w1d1", week: 1, day: 1, title: "Jobs & Career", titleVi: "Nghề nghiệp & Sự nghiệp", skills: [
-      { type: "vocab", label: "Từ vựng nghề nghiệp", view: "topics", topicId: "topic_work" },
+      { type: "vocab", label: "Từ vựng nghề nghiệp", view: "topics", topicId: "work_and_jobs" },
       { type: "listen", label: "Nghe phỏng vấn xin việc", view: "listening" },
       { type: "grammar", label: "Mixed Conditionals", view: "grammar" },
     ]},
@@ -386,7 +386,7 @@ const CURRICULUM: Record<string, Lesson[]> = {
       { type: "write", label: "Viết thư xin việc", view: "writing" },
     ]},
     { id: "b2-w1d3", week: 1, day: 3, title: "Office & Business", titleVi: "Văn phòng & Kinh doanh", skills: [
-      { type: "vocab", label: "Từ vựng kinh doanh", view: "topics", topicId: "topic_work" },
+      { type: "vocab", label: "Từ vựng kinh doanh", view: "topics", topicId: "work_and_jobs" },
       { type: "listen", label: "Nghe hội thoại văn phòng", view: "listening" },
       { type: "speak", label: "Pitch ý tưởng", view: "speak" },
     ]},
@@ -402,7 +402,7 @@ const CURRICULUM: Record<string, Lesson[]> = {
     ]},
     // Week 2: Giáo dục — education
     { id: "b2-w2d1", week: 2, day: 1, title: "Education Systems", titleVi: "Hệ thống giáo dục", skills: [
-      { type: "vocab", label: "Từ vựng giáo dục", view: "topics", topicId: "topic_education" },
+      { type: "vocab", label: "Từ vựng giáo dục", view: "topics", topicId: "education" },
       { type: "read", label: "Đọc bài so sánh giáo dục", view: "reading" },
       { type: "grammar", label: "Cleft sentences", view: "grammar" },
     ]},
@@ -412,7 +412,7 @@ const CURRICULUM: Record<string, Lesson[]> = {
       { type: "write", label: "Viết bài nghị luận", view: "writing" },
     ]},
     { id: "b2-w2d3", week: 2, day: 3, title: "Academic Writing", titleVi: "Viết học thuật", skills: [
-      { type: "vocab", label: "Từ vựng học thuật", view: "topics", topicId: "topic_education" },
+      { type: "vocab", label: "Từ vựng học thuật", view: "topics", topicId: "education" },
       { type: "write", label: "Viết bài essay", view: "writing" },
       { type: "grammar", label: "Formal linking words", view: "grammar" },
     ]},
@@ -428,7 +428,7 @@ const CURRICULUM: Record<string, Lesson[]> = {
     ]},
     // Week 3: Xã hội — society
     { id: "b2-w3d1", week: 3, day: 1, title: "Social Issues", titleVi: "Vấn đề xã hội", skills: [
-      { type: "vocab", label: "Từ vựng xã hội", view: "topics", topicId: "topic_society" },
+      { type: "vocab", label: "Từ vựng xã hội", view: "topics", topicId: "society_and_community" },
       { type: "read", label: "Đọc bài xã luận", view: "reading" },
       { type: "grammar", label: "Subjunctive mood", view: "grammar" },
     ]},
@@ -439,7 +439,7 @@ const CURRICULUM: Record<string, Lesson[]> = {
     ]},
     { id: "b2-w3d3", week: 3, day: 3, title: "Media & Ethics", titleVi: "Truyền thông & Đạo đức", skills: [
       { type: "read", label: "Đọc bài về đạo đức", view: "reading" },
-      { type: "vocab", label: "Từ vựng pháp lý", view: "topics", topicId: "topic_society" },
+      { type: "vocab", label: "Từ vựng pháp lý", view: "topics", topicId: "society_and_community" },
       { type: "speak", label: "Trình bày quan điểm", view: "speak" },
     ]},
     { id: "b2-w3d4", week: 3, day: 4, title: "Global Challenges", titleVi: "Thách thức toàn cầu", skills: [
@@ -454,7 +454,7 @@ const CURRICULUM: Record<string, Lesson[]> = {
     ]},
     // Week 4: Chính trị & Luyện thi — politics
     { id: "b2-w4d1", week: 4, day: 1, title: "Politics & Economy", titleVi: "Chính trị & Kinh tế", skills: [
-      { type: "vocab", label: "Từ vựng chính trị", view: "topics", topicId: "topic_politics" },
+      { type: "vocab", label: "Từ vựng chính trị", view: "topics", topicId: "society_and_community" },
       { type: "read", label: "Đọc bài phân tích", view: "reading" },
       { type: "grammar", label: "Participle clauses", view: "grammar" },
     ]},
@@ -485,7 +485,7 @@ const CURRICULUM: Record<string, Lesson[]> = {
   c1: [
     // Week 1: Khoa học — science
     { id: "c1-w1d1", week: 1, day: 1, title: "Scientific Discovery", titleVi: "Phát minh khoa học", skills: [
-      { type: "vocab", label: "Từ vựng khoa học", view: "topics", topicId: "topic_science" },
+      { type: "vocab", label: "Từ vựng khoa học", view: "topics", topicId: "science_and_research" },
       { type: "read", label: "Đọc bài khoa học", view: "reading" },
       { type: "grammar", label: "Advanced Passive", view: "grammar" },
     ]},
@@ -495,7 +495,7 @@ const CURRICULUM: Record<string, Lesson[]> = {
       { type: "write", label: "Viết tóm tắt nghiên cứu", view: "writing" },
     ]},
     { id: "c1-w1d3", week: 1, day: 3, title: "AI & Future Tech", titleVi: "AI & Công nghệ tương lai", skills: [
-      { type: "vocab", label: "Từ vựng AI", view: "topics", topicId: "topic_science" },
+      { type: "vocab", label: "Từ vựng AI", view: "topics", topicId: "science_and_research" },
       { type: "read", label: "Đọc về trí tuệ nhân tạo", view: "reading" },
       { type: "speak", label: "Tranh luận về AI", view: "speak" },
     ]},
@@ -511,7 +511,7 @@ const CURRICULUM: Record<string, Lesson[]> = {
     ]},
     // Week 2: Văn hóa & Truyền thông — culture
     { id: "c1-w2d1", week: 2, day: 1, title: "World Cultures", titleVi: "Văn hóa thế giới", skills: [
-      { type: "vocab", label: "Từ vựng văn hóa", view: "topics", topicId: "topic_culture" },
+      { type: "vocab", label: "Từ vựng văn hóa", view: "topics", topicId: "entertainment_and_media" },
       { type: "read", label: "Đọc về phong tục", view: "reading" },
       { type: "grammar", label: "Cleft sentences", view: "grammar" },
     ]},
@@ -521,7 +521,7 @@ const CURRICULUM: Record<string, Lesson[]> = {
       { type: "write", label: "Viết bài phê bình", view: "writing" },
     ]},
     { id: "c1-w2d3", week: 2, day: 3, title: "Media & Journalism", titleVi: "Truyền thông & Báo chí", skills: [
-      { type: "vocab", label: "Từ vựng truyền thông", view: "topics", topicId: "topic_culture" },
+      { type: "vocab", label: "Từ vựng truyền thông", view: "topics", topicId: "entertainment_and_media" },
       { type: "read", label: "Đọc bài xã luận", view: "reading" },
       { type: "speak", label: "Phân tích tin tức", view: "speak" },
     ]},
@@ -537,22 +537,22 @@ const CURRICULUM: Record<string, Lesson[]> = {
     ]},
     // Week 3: Học thuật & Vấn đề toàn cầu — academic, global
     { id: "c1-w3d1", week: 3, day: 1, title: "Academic Research", titleVi: "Nghiên cứu học thuật", skills: [
-      { type: "vocab", label: "Từ vựng học thuật", view: "topics", topicId: "topic_academic" },
+      { type: "vocab", label: "Từ vựng học thuật", view: "topics", topicId: "science_and_research" },
       { type: "read", label: "Đọc bài nghiên cứu", view: "reading" },
       { type: "grammar", label: "Inversion", view: "grammar" },
     ]},
     { id: "c1-w3d2", week: 3, day: 2, title: "Academic Writing", titleVi: "Viết học thuật", skills: [
-      { type: "vocab", label: "Từ vựng viết luận", view: "topics", topicId: "topic_academic" },
+      { type: "vocab", label: "Từ vựng viết luận", view: "topics", topicId: "science_and_research" },
       { type: "write", label: "Viết tóm tắt nghiên cứu", view: "writing" },
       { type: "grammar", label: "Emphasis & hedging", view: "grammar" },
     ]},
     { id: "c1-w3d3", week: 3, day: 3, title: "Global Issues", titleVi: "Vấn đề toàn cầu", skills: [
-      { type: "vocab", label: "Từ vựng toàn cầu", view: "topics", topicId: "topic_global" },
+      { type: "vocab", label: "Từ vựng toàn cầu", view: "topics", topicId: "society_and_community" },
       { type: "read", label: "Đọc bài phân tích", view: "reading" },
       { type: "speak", label: "Tranh luận đạo đức", view: "speak" },
     ]},
     { id: "c1-w3d4", week: 3, day: 4, title: "Ethics & Philosophy", titleVi: "Đạo đức & Triết học", skills: [
-      { type: "vocab", label: "Từ vựng đạo đức", view: "topics", topicId: "topic_global" },
+      { type: "vocab", label: "Từ vựng đạo đức", view: "topics", topicId: "society_and_community" },
       { type: "listen", label: "Nghe bài giảng triết học", view: "listening" },
       { type: "write", label: "Viết bài nghị luận sâu", view: "writing" },
     ]},
