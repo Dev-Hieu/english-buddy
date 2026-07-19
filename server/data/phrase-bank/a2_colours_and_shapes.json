@@ -1,0 +1,374 @@
+[
+  {
+    "phrase": "bright red",
+    "meaning_vi": "đỏ tươi",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "She wore a bright red dress.",
+        "vi": "Cô ấy mặc một chiếc váy đỏ tươi."
+      },
+      {
+        "en": "The stop sign is bright red.",
+        "vi": "Biển báo dừng có màu đỏ tươi."
+      }
+    ],
+    "collocations": [
+      "bright red",
+      "bright blue",
+      "bright yellow"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What color is your new car?"
+      },
+      {
+        "speaker": "B",
+        "text": "It's bright red."
+      }
+    ]
+  },
+  {
+    "phrase": "dark blue",
+    "meaning_vi": "xanh đậm",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "He painted the wall dark blue.",
+        "vi": "Anh ấy sơn tường màu xanh đậm."
+      },
+      {
+        "en": "I prefer dark blue jeans.",
+        "vi": "Tôi thích quần jean xanh đậm hơn."
+      }
+    ],
+    "collocations": [
+      "dark blue",
+      "dark green",
+      "dark gray"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Which shirt do you like?"
+      },
+      {
+        "speaker": "B",
+        "text": "The dark blue one."
+      }
+    ]
+  },
+  {
+    "phrase": "light pink",
+    "meaning_vi": "hồng nhạt",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "The baby's room is light pink.",
+        "vi": "Phòng em bé màu hồng nhạt."
+      },
+      {
+        "en": "She bought a light pink scarf.",
+        "vi": "Cô ấy mua một chiếc khăn hồng nhạt."
+      }
+    ],
+    "collocations": [
+      "light pink",
+      "light green",
+      "light purple"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What color is your phone case?"
+      },
+      {
+        "speaker": "B",
+        "text": "It's light pink."
+      }
+    ]
+  },
+  {
+    "phrase": "square shape",
+    "meaning_vi": "hình vuông",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "The table has a square shape.",
+        "vi": "Cái bàn có hình vuông."
+      },
+      {
+        "en": "I need a square shape for the puzzle.",
+        "vi": "Tôi cần một hình vuông cho trò xếp hình."
+      }
+    ],
+    "collocations": [
+      "square shape",
+      "round shape",
+      "triangular shape"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What shape is the box?"
+      },
+      {
+        "speaker": "B",
+        "text": "It's a square shape."
+      }
+    ]
+  },
+  {
+    "phrase": "round circle",
+    "meaning_vi": "vòng tròn",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "The clock is a round circle.",
+        "vi": "Đồng hồ là một vòng tròn."
+      },
+      {
+        "en": "Draw a round circle on the paper.",
+        "vi": "Vẽ một vòng tròn trên giấy."
+      }
+    ],
+    "collocations": [
+      "round circle",
+      "perfect circle",
+      "small circle"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Can you draw a round circle?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I can."
+      }
+    ]
+  },
+  {
+    "phrase": "star shape",
+    "meaning_vi": "hình ngôi sao",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "The cookie is a star shape.",
+        "vi": "Cái bánh quy có hình ngôi sao."
+      },
+      {
+        "en": "She cut the paper into a star shape.",
+        "vi": "Cô ấy cắt giấy thành hình ngôi sao."
+      }
+    ],
+    "collocations": [
+      "star shape",
+      "heart shape",
+      "diamond shape"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What shape is the sticker?"
+      },
+      {
+        "speaker": "B",
+        "text": "It's a star shape."
+      }
+    ]
+  },
+  {
+    "phrase": "color in",
+    "meaning_vi": "tô màu",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "The children color in the pictures.",
+        "vi": "Bọn trẻ tô màu vào các bức tranh."
+      },
+      {
+        "en": "Please color in the circle.",
+        "vi": "Làm ơn tô màu vào hình tròn."
+      }
+    ],
+    "collocations": [
+      "color in",
+      "color in the lines",
+      "color in the shape"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What are you doing?"
+      },
+      {
+        "speaker": "B",
+        "text": "I'm coloring in the star."
+      }
+    ]
+  },
+  {
+    "phrase": "match the color",
+    "meaning_vi": "phối màu",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "Your shirt matches the color of your eyes.",
+        "vi": "Áo sơ mi của bạn phối màu với mắt bạn."
+      },
+      {
+        "en": "These two colors don't match.",
+        "vi": "Hai màu này không phối hợp với nhau."
+      }
+    ],
+    "collocations": [
+      "match the color",
+      "match colors",
+      "color match"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Does this tie match my shirt?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, the colors match well."
+      }
+    ]
+  },
+  {
+    "phrase": "change color",
+    "meaning_vi": "đổi màu",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "The leaves change color in autumn.",
+        "vi": "Lá cây đổi màu vào mùa thu."
+      },
+      {
+        "en": "The chameleon can change color.",
+        "vi": "Tắc kè hoa có thể đổi màu."
+      }
+    ],
+    "collocations": [
+      "change color",
+      "color change",
+      "change its color"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Why do leaves change color?"
+      },
+      {
+        "speaker": "B",
+        "text": "Because of the weather."
+      }
+    ]
+  },
+  {
+    "phrase": "primary colors",
+    "meaning_vi": "màu cơ bản",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "Red, blue, and yellow are primary colors.",
+        "vi": "Đỏ, xanh dương và vàng là các màu cơ bản."
+      },
+      {
+        "en": "We learn about primary colors in art class.",
+        "vi": "Chúng tôi học về màu cơ bản trong lớp mỹ thuật."
+      }
+    ],
+    "collocations": [
+      "primary colors",
+      "secondary colors",
+      "basic colors"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What are the primary colors?"
+      },
+      {
+        "speaker": "B",
+        "text": "Red, blue, and yellow."
+      }
+    ]
+  },
+  {
+    "phrase": "in the shape of",
+    "meaning_vi": "có hình dạng của",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "The cake is in the shape of a heart.",
+        "vi": "Cái bánh có hình trái tim."
+      },
+      {
+        "en": "The cloud is in the shape of a dog.",
+        "vi": "Đám mây có hình con chó."
+      }
+    ],
+    "collocations": [
+      "in the shape of",
+      "in the form of",
+      "shaped like"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What shape is the balloon?"
+      },
+      {
+        "speaker": "B",
+        "text": "It's in the shape of a star."
+      }
+    ]
+  },
+  {
+    "phrase": "colorful",
+    "meaning_vi": "nhiều màu sắc",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "The garden is very colorful in spring.",
+        "vi": "Khu vườn rất nhiều màu sắc vào mùa xuân."
+      },
+      {
+        "en": "She wore a colorful dress.",
+        "vi": "Cô ấy mặc một chiếc váy nhiều màu sắc."
+      }
+    ],
+    "collocations": [
+      "colorful",
+      "colorful picture",
+      "colorful design"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you like the painting?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, it's very colorful."
+      }
+    ]
+  }
+]

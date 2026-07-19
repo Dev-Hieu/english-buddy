@@ -1,0 +1,374 @@
+[
+  {
+    "phrase": "go to the cinema",
+    "meaning_vi": "đi xem phim",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "Let's go to the cinema tonight.",
+        "vi": "Tối nay đi xem phim nhé."
+      },
+      {
+        "en": "I often go to the cinema on weekends.",
+        "vi": "Tôi thường đi xem phim vào cuối tuần."
+      }
+    ],
+    "collocations": [
+      "go to the cinema with friends",
+      "go to the cinema on Friday",
+      "go to the cinema near my house"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you want to go to the cinema?"
+      },
+      {
+        "speaker": "B",
+        "text": "Sure, what movie?"
+      }
+    ]
+  },
+  {
+    "phrase": "at the park",
+    "meaning_vi": "ở công viên",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "We played football at the park.",
+        "vi": "Chúng tôi đã chơi bóng đá ở công viên."
+      },
+      {
+        "en": "She walks her dog at the park every morning.",
+        "vi": "Cô ấy dắt chó đi dạo ở công viên mỗi sáng."
+      }
+    ],
+    "collocations": [
+      "at the park near my house",
+      "at the park on Sunday",
+      "at the park with my family"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Where did you go yesterday?"
+      },
+      {
+        "speaker": "B",
+        "text": "I went to the park with my sister."
+      }
+    ]
+  },
+  {
+    "phrase": "on the beach",
+    "meaning_vi": "trên bãi biển",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "We built a sandcastle on the beach.",
+        "vi": "Chúng tôi đã xây lâu đài cát trên bãi biển."
+      },
+      {
+        "en": "They relaxed on the beach all day.",
+        "vi": "Họ thư giãn trên bãi biển cả ngày."
+      }
+    ],
+    "collocations": [
+      "on the beach in summer",
+      "on the beach near the hotel",
+      "on the beach with friends"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Did you enjoy your holiday?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, we spent every day on the beach."
+      }
+    ]
+  },
+  {
+    "phrase": "in the city center",
+    "meaning_vi": "ở trung tâm thành phố",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "There are many shops in the city center.",
+        "vi": "Có nhiều cửa hàng ở trung tâm thành phố."
+      },
+      {
+        "en": "I work in the city center.",
+        "vi": "Tôi làm việc ở trung tâm thành phố."
+      }
+    ],
+    "collocations": [
+      "in the city center of Hanoi",
+      "in the city center on weekends",
+      "in the city center near the square"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Where is your office?"
+      },
+      {
+        "speaker": "B",
+        "text": "It's in the city center, near the lake."
+      }
+    ]
+  },
+  {
+    "phrase": "take a taxi",
+    "meaning_vi": "đi taxi",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "We took a taxi to the airport.",
+        "vi": "Chúng tôi đã đi taxi ra sân bay."
+      },
+      {
+        "en": "It's faster to take a taxi.",
+        "vi": "Đi taxi nhanh hơn."
+      }
+    ],
+    "collocations": [
+      "take a taxi home",
+      "take a taxi to the station",
+      "take a taxi from the hotel"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How do we get to the museum?"
+      },
+      {
+        "speaker": "B",
+        "text": "Let's take a taxi."
+      }
+    ]
+  },
+  {
+    "phrase": "get lost",
+    "meaning_vi": "lạc đường",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I got lost in the old town.",
+        "vi": "T��i đã bị lạc ở phố cổ."
+      },
+      {
+        "en": "Don't get lost! Use the map.",
+        "vi": "Đừng để bị lạc! Hãy dùng bản đồ."
+      }
+    ],
+    "collocations": [
+      "get lost in a new city",
+      "get lost on the way",
+      "get lost easily"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Are you okay? You look worried."
+      },
+      {
+        "speaker": "B",
+        "text": "I think I got lost. Can you help me?"
+      }
+    ]
+  },
+  {
+    "phrase": "ask for directions",
+    "meaning_vi": "hỏi đường",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I asked a policeman for directions.",
+        "vi": "Tôi đã hỏi đường một cảnh sát."
+      },
+      {
+        "en": "You can ask for directions at the information desk.",
+        "vi": "Bạn có thể hỏi đường ở quầy thông tin."
+      }
+    ],
+    "collocations": [
+      "ask for directions to the station",
+      "ask for directions politely",
+      "ask for directions on the street"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Excuse me, can I ask for directions?"
+      },
+      {
+        "speaker": "B",
+        "text": "Sure, where do you want to go?"
+      }
+    ]
+  },
+  {
+    "phrase": "go straight",
+    "meaning_vi": "đi thẳng",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "Go straight for two blocks.",
+        "vi": "Đi thẳng hai dãy nhà."
+      },
+      {
+        "en": "Then go straight until you see the bank.",
+        "vi": "Sau đó đi thẳng cho đến khi bạn thấy ngân hàng."
+      }
+    ],
+    "collocations": [
+      "go straight ahead",
+      "go straight on",
+      "go straight down the street"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How do I get to the post office?"
+      },
+      {
+        "speaker": "B",
+        "text": "Go straight and turn left at the traffic lights."
+      }
+    ]
+  },
+  {
+    "phrase": "turn left / turn right",
+    "meaning_vi": "rẽ trái / rẽ phải",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "Turn left at the corner.",
+        "vi": "Rẽ trái ở góc đường."
+      },
+      {
+        "en": "Turn right after the bridge.",
+        "vi": "Rẽ phải sau cây cầu."
+      }
+    ],
+    "collocations": [
+      "turn left at the traffic lights",
+      "turn right onto Main Street",
+      "turn left into the parking lot"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Is the supermarket near here?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, turn right at the next street."
+      }
+    ]
+  },
+  {
+    "phrase": "across from",
+    "meaning_vi": "đối diện",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "The bank is across from the post office.",
+        "vi": "Ngân hàng ở đối diện bưu điện."
+      },
+      {
+        "en": "We stayed at a hotel across from the beach.",
+        "vi": "Chúng tôi ở khách sạn đối diện bãi biển."
+      }
+    ],
+    "collocations": [
+      "across from the park",
+      "across from the station",
+      "across from the supermarket"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Where is the restaurant?"
+      },
+      {
+        "speaker": "B",
+        "text": "It's across from the cinema."
+      }
+    ]
+  },
+  {
+    "phrase": "next to",
+    "meaning_vi": "bên cạnh",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "The library is next to the school.",
+        "vi": "Thư viện ở bên cạnh trường học."
+      },
+      {
+        "en": "She lives next to a supermarket.",
+        "vi": "Cô ấy sống bên cạnh một siêu thị."
+      }
+    ],
+    "collocations": [
+      "next to the bank",
+      "next to the park",
+      "next to my house"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Is there a pharmacy near here?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, it's next to the bakery."
+      }
+    ]
+  },
+  {
+    "phrase": "near here",
+    "meaning_vi": "gần đây",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "Is there a bus stop near here?",
+        "vi": "Có trạm xe buýt nào gần đây không?"
+      },
+      {
+        "en": "I work near here.",
+        "vi": "Tôi làm việc gần đây."
+      }
+    ],
+    "collocations": [
+      "near here",
+      "near my house",
+      "near the station"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Excuse me, is there a toilet near here?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, there's one in the shopping mall."
+      }
+    ]
+  }
+]

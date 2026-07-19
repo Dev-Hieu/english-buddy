@@ -1,0 +1,250 @@
+[
+  {
+    "phrase": "throw away",
+    "meaning_vi": "vứt bỏ",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Don't throw away plastic bottles.",
+        "vi": "Đừng vứt bỏ chai nhựa."
+      },
+      {
+        "en": "We should throw away garbage properly.",
+        "vi": "Chúng ta nên vứt rác đúng cách."
+      }
+    ],
+    "collocations": [
+      "throw away trash",
+      "throw away food",
+      "throw away paper"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Where should I throw this away?"
+      },
+      {
+        "speaker": "B",
+        "text": "Throw it away in the bin."
+      }
+    ]
+  },
+  {
+    "phrase": "clean up",
+    "meaning_vi": "dọn dẹp",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Let's clean up the park.",
+        "vi": "Hãy dọn dẹp công viên."
+      },
+      {
+        "en": "We clean up after the picnic.",
+        "vi": "Chúng tôi dọn dẹp sau buổi dã ngoại."
+      }
+    ],
+    "collocations": [
+      "clean up the beach",
+      "clean up the room",
+      "clean up the mess"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "The beach is dirty."
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, let's clean it up."
+      }
+    ]
+  },
+  {
+    "phrase": "pick up",
+    "meaning_vi": "nhặt lên",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Pick up the trash on the ground.",
+        "vi": "Nhặt rác trên mặt đất lên."
+      },
+      {
+        "en": "Can you pick up that bottle?",
+        "vi": "Bạn có thể nhặt cái chai đó lên không?"
+      }
+    ],
+    "collocations": [
+      "pick up litter",
+      "pick up cans",
+      "pick up plastic"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "There is a can on the floor."
+      },
+      {
+        "speaker": "B",
+        "text": "I will pick it up."
+      }
+    ]
+  },
+  {
+    "phrase": "save water",
+    "meaning_vi": "tiết kiệm nước",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "We should save water every day.",
+        "vi": "Chúng ta nên tiết kiệm nước mỗi ngày."
+      },
+      {
+        "en": "Turn off the tap to save water.",
+        "vi": "Tắt vòi nước để tiết kiệm nước."
+      }
+    ],
+    "collocations": [
+      "save water at home",
+      "save water in the shower",
+      "save water when brushing teeth"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Why do we save water?"
+      },
+      {
+        "speaker": "B",
+        "text": "Because water is precious."
+      }
+    ]
+  },
+  {
+    "phrase": "turn off",
+    "meaning_vi": "tắt",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Turn off the lights when you leave.",
+        "vi": "Tắt đèn khi bạn rời đi."
+      },
+      {
+        "en": "Please turn off the TV.",
+        "vi": "Làm ơn tắt TV."
+      }
+    ],
+    "collocations": [
+      "turn off the light",
+      "turn off the fan",
+      "turn off the computer"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Don't forget to turn off the lights."
+      },
+      {
+        "speaker": "B",
+        "text": "Okay, I will turn them off."
+      }
+    ]
+  },
+  {
+    "phrase": "plant trees",
+    "meaning_vi": "trồng cây",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "We plant trees in the garden.",
+        "vi": "Chúng tôi trồng cây trong vườn."
+      },
+      {
+        "en": "Planting trees helps the environment.",
+        "vi": "Trồng cây giúp ích cho môi trường."
+      }
+    ],
+    "collocations": [
+      "plant more trees",
+      "plant trees in the park",
+      "plant trees for shade"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What can we do for the environment?"
+      },
+      {
+        "speaker": "B",
+        "text": "We can plant trees."
+      }
+    ]
+  },
+  {
+    "phrase": "recycle paper",
+    "meaning_vi": "tái chế giấy",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "Please recycle paper and cardboard.",
+        "vi": "Làm ơn tái chế giấy và bìa cứng."
+      },
+      {
+        "en": "It is good to recycle paper.",
+        "vi": "Tái chế giấy là tốt."
+      }
+    ],
+    "collocations": [
+      "recycle paper bags",
+      "recycle old newspapers",
+      "recycle office paper"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What do you do with old paper?"
+      },
+      {
+        "speaker": "B",
+        "text": "I recycle it."
+      }
+    ]
+  },
+  {
+    "phrase": "protect the environment",
+    "meaning_vi": "bảo vệ môi trường",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "We must protect the environment.",
+        "vi": "Chúng ta phải bảo vệ môi trường."
+      },
+      {
+        "en": "Everyone can help protect the environment.",
+        "vi": "Mọi người đều có thể giúp bảo vệ môi trường."
+      }
+    ],
+    "collocations": [
+      "protect the environment for the future",
+      "protect the environment from pollution",
+      "protect the environment together"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Why is it important to protect the environment?"
+      },
+      {
+        "speaker": "B",
+        "text": "Because we live here."
+      }
+    ]
+  }
+]

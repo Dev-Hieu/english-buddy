@@ -1,0 +1,250 @@
+[
+  {
+    "phrase": "listen to music",
+    "meaning_vi": "nghe nhạc",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I listen to music every day.",
+        "vi": "Tôi nghe nhạc mỗi ngày."
+      },
+      {
+        "en": "Do you like to listen to music?",
+        "vi": "Bạn có thích nghe nhạc không?"
+      }
+    ],
+    "collocations": [
+      "listen to pop music",
+      "listen to classical music",
+      "listen to music on the radio"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What do you do in your free time?"
+      },
+      {
+        "speaker": "B",
+        "text": "I listen to music."
+      }
+    ]
+  },
+  {
+    "phrase": "watch TV",
+    "meaning_vi": "xem tivi",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I watch TV in the evening.",
+        "vi": "Tôi xem tivi vào buổi tối."
+      },
+      {
+        "en": "She watches TV after dinner.",
+        "vi": "Cô ấy xem tivi sau bữa tối."
+      }
+    ],
+    "collocations": [
+      "watch TV shows",
+      "watch TV at home",
+      "watch TV with family"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you watch TV a lot?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I watch TV every night."
+      }
+    ]
+  },
+  {
+    "phrase": "play sports",
+    "meaning_vi": "chơi thể thao",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I play sports on weekends.",
+        "vi": "Tôi chơi thể thao vào cuối tuần."
+      },
+      {
+        "en": "He plays sports like soccer and basketball.",
+        "vi": "Anh ấy chơi các môn thể thao như bóng đá và bóng rổ."
+      }
+    ],
+    "collocations": [
+      "play soccer",
+      "play tennis",
+      "play basketball"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What sports do you play?"
+      },
+      {
+        "speaker": "B",
+        "text": "I play soccer."
+      }
+    ]
+  },
+  {
+    "phrase": "read a book",
+    "meaning_vi": "đọc sách",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I read a book before bed.",
+        "vi": "Tôi đọc sách trước khi đi ngủ."
+      },
+      {
+        "en": "She reads a book every week.",
+        "vi": "Cô ấy đọc một cuốn sách mỗi tuần."
+      }
+    ],
+    "collocations": [
+      "read a novel",
+      "read a magazine",
+      "read a story"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you like to read books?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I read a book every day."
+      }
+    ]
+  },
+  {
+    "phrase": "go for a walk",
+    "meaning_vi": "đi dạo",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "I go for a walk in the park.",
+        "vi": "Tôi đi dạo trong công viên."
+      },
+      {
+        "en": "Let's go for a walk after lunch.",
+        "vi": "Chúng ta hãy đi dạo sau bữa trưa."
+      }
+    ],
+    "collocations": [
+      "go for a walk in the morning",
+      "go for a walk with friends",
+      "go for a walk after dinner"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What do you want to do?"
+      },
+      {
+        "speaker": "B",
+        "text": "Let's go for a walk."
+      }
+    ]
+  },
+  {
+    "phrase": "take photos",
+    "meaning_vi": "chụp ảnh",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I take photos of flowers.",
+        "vi": "Tôi chụp ảnh hoa."
+      },
+      {
+        "en": "She takes photos on her phone.",
+        "vi": "Cô ấy chụp ảnh bằng điện thoại."
+      }
+    ],
+    "collocations": [
+      "take photos of nature",
+      "take photos with friends",
+      "take photos on vacation"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you like to take photos?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I take photos every day."
+      }
+    ]
+  },
+  {
+    "phrase": "cook dinner",
+    "meaning_vi": "nấu bữa tối",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I cook dinner for my family.",
+        "vi": "Tôi nấu bữa tối cho gia đình."
+      },
+      {
+        "en": "She cooks dinner at six o'clock.",
+        "vi": "Cô ấy nấu bữa tối lúc sáu giờ."
+      }
+    ],
+    "collocations": [
+      "cook dinner together",
+      "cook dinner at home",
+      "cook dinner quickly"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What do you do in the evening?"
+      },
+      {
+        "speaker": "B",
+        "text": "I cook dinner."
+      }
+    ]
+  },
+  {
+    "phrase": "hang out with friends",
+    "meaning_vi": "đi chơi với bạn bè",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "I hang out with friends on Saturday.",
+        "vi": "Tôi đi chơi với bạn bè vào thứ Bảy."
+      },
+      {
+        "en": "We hang out with friends at the mall.",
+        "vi": "Chúng tôi đi chơi với bạn bè ở trung tâm thương mại."
+      }
+    ],
+    "collocations": [
+      "hang out with friends after school",
+      "hang out with friends at the park",
+      "hang out with friends on weekends"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What do you do on weekends?"
+      },
+      {
+        "speaker": "B",
+        "text": "I hang out with friends."
+      }
+    ]
+  }
+]

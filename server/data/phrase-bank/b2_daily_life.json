@@ -1,0 +1,374 @@
+[
+  {
+    "phrase": "get up",
+    "meaning_vi": "thức dậy",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I get up at 6 every morning.",
+        "vi": "Tôi thức dậy lúc 6 giờ mỗi sáng."
+      },
+      {
+        "en": "What time do you get up?",
+        "vi": "Bạn thức dậy lúc mấy giờ?"
+      }
+    ],
+    "collocations": [
+      "get up early",
+      "get up late",
+      "get up on time"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What time do you usually get up?"
+      },
+      {
+        "speaker": "B",
+        "text": "I usually get up at seven."
+      }
+    ]
+  },
+  {
+    "phrase": "run errands",
+    "meaning_vi": "chạy việc vặt",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I need to run some errands after work.",
+        "vi": "Tôi cần chạy vài việc vặt sau giờ làm."
+      },
+      {
+        "en": "She spends Saturday mornings running errands.",
+        "vi": "Cô ấy dành sáng thứ bảy để chạy việc vặt."
+      }
+    ],
+    "collocations": [
+      "run errands for someone",
+      "run a quick errand",
+      "run daily errands"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you have any plans for this afternoon?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I have to run some errands."
+      }
+    ]
+  },
+  {
+    "phrase": "make ends meet",
+    "meaning_vi": "xoay sở đủ sống",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "It's hard to make ends meet on a single income.",
+        "vi": "Thật khó để xoay sở đủ sống với một nguồn thu nhập duy nhất."
+      },
+      {
+        "en": "They both work part-time to make ends meet.",
+        "vi": "Cả hai đều làm bán thời gian để xoay sở đủ sống."
+      }
+    ],
+    "collocations": [
+      "struggle to make ends meet",
+      "barely make ends meet",
+      "manage to make ends meet"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How are you managing financially?"
+      },
+      {
+        "speaker": "B",
+        "text": "We're just about making ends meet."
+      }
+    ]
+  },
+  {
+    "phrase": "catch up with",
+    "meaning_vi": "bắt kịp (tin tức, công việc)",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I need to catch up with my emails.",
+        "vi": "Tôi cần bắt kịp email của mình."
+      },
+      {
+        "en": "Let's meet for coffee and catch up with each other.",
+        "vi": "Hãy gặp nhau uống cà phê và bắt kịp tin tức của nhau."
+      }
+    ],
+    "collocations": [
+      "catch up with work",
+      "catch up with friends",
+      "catch up on sleep"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "It's been a while! Let's catch up soon."
+      },
+      {
+        "speaker": "B",
+        "text": "Sure, how about this weekend?"
+      }
+    ]
+  },
+  {
+    "phrase": "take a break",
+    "meaning_vi": "nghỉ giải lao",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "Let's take a break for 15 minutes.",
+        "vi": "Chúng ta hãy nghỉ giải lao 15 phút."
+      },
+      {
+        "en": "You should take a break when you feel tired.",
+        "vi": "Bạn nên nghỉ giải lao khi cảm thấy mệt mỏi."
+      }
+    ],
+    "collocations": [
+      "take a short break",
+      "take a coffee break",
+      "take a lunch break"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I've been working for hours."
+      },
+      {
+        "speaker": "B",
+        "text": "Why don't you take a break?"
+      }
+    ]
+  },
+  {
+    "phrase": "put off",
+    "meaning_vi": "trì hoãn",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Don't put off your homework until tomorrow.",
+        "vi": "Đừng trì hoãn bài tập về nhà đến ngày mai."
+      },
+      {
+        "en": "They put off the meeting due to the storm.",
+        "vi": "Họ đã hoãn cuộc họp vì bão."
+      }
+    ],
+    "collocations": [
+      "put off a decision",
+      "put off doing something",
+      "put off indefinitely"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Have you called the dentist yet?"
+      },
+      {
+        "speaker": "B",
+        "text": "No, I keep putting it off."
+      }
+    ]
+  },
+  {
+    "phrase": "look forward to",
+    "meaning_vi": "mong đợi",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "I look forward to meeting you.",
+        "vi": "Tôi mong được gặp bạn."
+      },
+      {
+        "en": "She is looking forward to the weekend.",
+        "vi": "Cô ấy đang mong đến cuối tuần."
+      }
+    ],
+    "collocations": [
+      "look forward to hearing from you",
+      "look forward to seeing someone",
+      "look forward to something"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Are you excited about the trip?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I'm really looking forward to it."
+      }
+    ]
+  },
+  {
+    "phrase": "get along with",
+    "meaning_vi": "hòa thuận với",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I get along well with my colleagues.",
+        "vi": "Tôi hòa thuận với đồng nghiệp."
+      },
+      {
+        "en": "Do you get along with your new roommate?",
+        "vi": "Bạn có hòa thuận với bạn cùng phòng mới không?"
+      }
+    ],
+    "collocations": [
+      "get along with someone",
+      "get along well",
+      "get along badly"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How do you get along with your neighbors?"
+      },
+      {
+        "speaker": "B",
+        "text": "Pretty well, actually."
+      }
+    ]
+  },
+  {
+    "phrase": "stay up",
+    "meaning_vi": "thức khuya",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I stayed up late to finish the report.",
+        "vi": "Tôi thức khuya để hoàn thành báo cáo."
+      },
+      {
+        "en": "Don't stay up too late on school nights.",
+        "vi": "Đừng thức quá khuya vào các tối trước ngày đi học."
+      }
+    ],
+    "collocations": [
+      "stay up late",
+      "stay up all night",
+      "stay up watching TV"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "You look tired. Did you stay up?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I stayed up to watch the game."
+      }
+    ]
+  },
+  {
+    "phrase": "take care of",
+    "meaning_vi": "chăm sóc, lo liệu",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "She takes care of her elderly mother.",
+        "vi": "Cô ấy chăm sóc mẹ già của mình."
+      },
+      {
+        "en": "I'll take care of the tickets.",
+        "vi": "Tôi sẽ lo liệu vé."
+      }
+    ],
+    "collocations": [
+      "take care of someone",
+      "take care of business",
+      "take care of a problem"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Who will take care of the kids?"
+      },
+      {
+        "speaker": "B",
+        "text": "My sister will take care of them."
+      }
+    ]
+  },
+  {
+    "phrase": "work out",
+    "meaning_vi": "tập thể dục",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I work out at the gym three times a week.",
+        "vi": "Tôi tập thể dục ở phòng gym ba lần một tuần."
+      },
+      {
+        "en": "Do you work out regularly?",
+        "vi": "Bạn có tập thể dục thường xuyên không?"
+      }
+    ],
+    "collocations": [
+      "work out at the gym",
+      "work out at home",
+      "work out with weights"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How do you stay fit?"
+      },
+      {
+        "speaker": "B",
+        "text": "I work out every morning."
+      }
+    ]
+  },
+  {
+    "phrase": "settle down",
+    "meaning_vi": "ổn định cuộc sống",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "They want to settle down and start a family.",
+        "vi": "Họ muốn ổn định cuộc sống và lập gia đình."
+      },
+      {
+        "en": "After traveling, he settled down in a small town.",
+        "vi": "Sau khi đi du lịch, anh ấy ổn định ở một thị trấn nhỏ."
+      }
+    ],
+    "collocations": [
+      "settle down in a place",
+      "settle down with someone",
+      "settle down to a routine"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Are you planning to settle down soon?"
+      },
+      {
+        "speaker": "B",
+        "text": "Maybe in a couple of years."
+      }
+    ]
+  }
+]

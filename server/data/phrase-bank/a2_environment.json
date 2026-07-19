@@ -1,0 +1,374 @@
+[
+  {
+    "phrase": "clean up",
+    "meaning_vi": "dọn dẹp",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "We need to clean up the park.",
+        "vi": "Chúng ta cần dọn dẹp công viên."
+      },
+      {
+        "en": "Please clean up your room.",
+        "vi": "Làm ơn dọn dẹp phòng của bạn."
+      }
+    ],
+    "collocations": [
+      "clean up the beach",
+      "clean up the mess",
+      "clean up after yourself"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Let's clean up the park this weekend."
+      },
+      {
+        "speaker": "B",
+        "text": "Good idea! I'll bring some bags."
+      }
+    ]
+  },
+  {
+    "phrase": "throw away",
+    "meaning_vi": "vứt bỏ",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Don't throw away plastic bottles.",
+        "vi": "Đừng vứt bỏ chai nhựa."
+      },
+      {
+        "en": "You should throw away old newspapers.",
+        "vi": "Bạn nên vứt bỏ báo cũ."
+      }
+    ],
+    "collocations": [
+      "throw away trash",
+      "throw away garbage",
+      "throw away waste"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What should I do with this bottle?"
+      },
+      {
+        "speaker": "B",
+        "text": "Don't throw it away. Recycle it."
+      }
+    ]
+  },
+  {
+    "phrase": "pick up",
+    "meaning_vi": "nhặt lên",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Please pick up the litter.",
+        "vi": "Làm ơn nhặt rác lên."
+      },
+      {
+        "en": "He picked up a piece of paper.",
+        "vi": "Anh ấy nhặt một mảnh giấy."
+      }
+    ],
+    "collocations": [
+      "pick up trash",
+      "pick up rubbish",
+      "pick up litter"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Why are you picking up that can?"
+      },
+      {
+        "speaker": "B",
+        "text": "I'm going to recycle it."
+      }
+    ]
+  },
+  {
+    "phrase": "cut down",
+    "meaning_vi": "chặt phá",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "They cut down many trees.",
+        "vi": "Họ chặt phá nhiều cây."
+      },
+      {
+        "en": "We should not cut down forests.",
+        "vi": "Chúng ta không nên chặt phá rừng."
+      }
+    ],
+    "collocations": [
+      "cut down trees",
+      "cut down forests",
+      "cut down rainforests"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Why are they cutting down those trees?"
+      },
+      {
+        "speaker": "B",
+        "text": "To build new houses."
+      }
+    ]
+  },
+  {
+    "phrase": "save energy",
+    "meaning_vi": "tiết kiệm năng lượng",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "Turn off lights to save energy.",
+        "vi": "Tắt đèn để tiết kiệm năng lượng."
+      },
+      {
+        "en": "We can save energy by using less electricity.",
+        "vi": "Chúng ta có thể tiết kiệm năng lượng bằng cách dùng ít điện hơn."
+      }
+    ],
+    "collocations": [
+      "save electricity",
+      "save water",
+      "save power"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How can we save energy at home?"
+      },
+      {
+        "speaker": "B",
+        "text": "We can turn off the TV when not watching."
+      }
+    ]
+  },
+  {
+    "phrase": "protect the environment",
+    "meaning_vi": "bảo vệ môi trường",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "We must protect the environment.",
+        "vi": "Chúng ta phải bảo vệ môi trường."
+      },
+      {
+        "en": "Everyone can help protect the environment.",
+        "vi": "Mọi người đều có thể giúp bảo vệ môi trường."
+      }
+    ],
+    "collocations": [
+      "protect nature",
+      "protect wildlife",
+      "protect the planet"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Why is it important to protect the environment?"
+      },
+      {
+        "speaker": "B",
+        "text": "Because we need clean air and water."
+      }
+    ]
+  },
+  {
+    "phrase": "reduce waste",
+    "meaning_vi": "giảm rác thải",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "We should reduce waste at home.",
+        "vi": "Chúng ta nên giảm rác thải tại nhà."
+      },
+      {
+        "en": "Using reusable bags helps reduce waste.",
+        "vi": "Dùng túi tái sử dụng giúp giảm rác thải."
+      }
+    ],
+    "collocations": [
+      "reduce plastic waste",
+      "reduce food waste",
+      "reduce packaging waste"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How can I reduce waste?"
+      },
+      {
+        "speaker": "B",
+        "text": "You can bring your own water bottle."
+      }
+    ]
+  },
+  {
+    "phrase": "recycle paper",
+    "meaning_vi": "tái chế giấy",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "Please recycle paper instead of throwing it away.",
+        "vi": "Làm ơn tái chế giấy thay vì vứt đi."
+      },
+      {
+        "en": "Many schools recycle paper.",
+        "vi": "Nhiều trường học tái chế giấy."
+      }
+    ],
+    "collocations": [
+      "recycle plastic",
+      "recycle glass",
+      "recycle cans"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you recycle paper at home?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, we have a separate bin for it."
+      }
+    ]
+  },
+  {
+    "phrase": "go green",
+    "meaning_vi": "sống xanh",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "More people are trying to go green.",
+        "vi": "Ngày càng nhiều người cố gắng sống xanh."
+      },
+      {
+        "en": "Going green means helping the Earth.",
+        "vi": "Sống xanh có nghĩa là giúp Trái Đất."
+      }
+    ],
+    "collocations": [
+      "go green campaign",
+      "go green lifestyle",
+      "go green tips"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What does 'go green' mean?"
+      },
+      {
+        "speaker": "B",
+        "text": "It means living in an eco-friendly way."
+      }
+    ]
+  },
+  {
+    "phrase": "global warming",
+    "meaning_vi": "sự nóng lên toàn cầu",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "Global warming is a big problem.",
+        "vi": "Sự nóng lên toàn cầu là một vấn đề lớn."
+      },
+      {
+        "en": "We need to stop global warming.",
+        "vi": "Chúng ta cần ngăn chặn sự nóng lên toàn cầu."
+      }
+    ],
+    "collocations": [
+      "cause global warming",
+      "prevent global warming",
+      "global warming effects"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Is global warming serious?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, it's causing many changes in weather."
+      }
+    ]
+  },
+  {
+    "phrase": "endangered species",
+    "meaning_vi": "loài có nguy cơ tuyệt chủng",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "The panda is an endangered species.",
+        "vi": "Gấu trúc là một loài có nguy cơ tuyệt chủng."
+      },
+      {
+        "en": "We should protect endangered species.",
+        "vi": "Chúng ta nên bảo vệ các loài có nguy cơ tuyệt chủng."
+      }
+    ],
+    "collocations": [
+      "protect endangered species",
+      "list of endangered species",
+      "save endangered species"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Which animals are endangered species?"
+      },
+      {
+        "speaker": "B",
+        "text": "Tigers and elephants are endangered."
+      }
+    ]
+  },
+  {
+    "phrase": "carbon footprint",
+    "meaning_vi": "dấu chân carbon",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "Driving less reduces your carbon footprint.",
+        "vi": "Lái xe ít hơn giảm dấu chân carbon của bạn."
+      },
+      {
+        "en": "We can lower our carbon footprint by recycling.",
+        "vi": "Chúng ta có thể giảm dấu chân carbon bằng cách tái chế."
+      }
+    ],
+    "collocations": [
+      "reduce carbon footprint",
+      "low carbon footprint",
+      "carbon footprint calculator"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What is a carbon footprint?"
+      },
+      {
+        "speaker": "B",
+        "text": "It's the amount of CO2 you produce."
+      }
+    ]
+  }
+]

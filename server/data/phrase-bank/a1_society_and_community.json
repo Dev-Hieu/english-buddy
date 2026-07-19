@@ -1,0 +1,250 @@
+[
+  {
+    "phrase": "live in",
+    "meaning_vi": "sống ở",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I live in a small house.",
+        "vi": "Tôi sống trong một ngôi nhà nhỏ."
+      },
+      {
+        "en": "Where do you live?",
+        "vi": "Bạn sống ở đâu?"
+      }
+    ],
+    "collocations": [
+      "live in a city",
+      "live in the countryside",
+      "live in an apartment"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you live in the city?"
+      },
+      {
+        "speaker": "B",
+        "text": "No, I live in the countryside."
+      }
+    ]
+  },
+  {
+    "phrase": "neighbor",
+    "meaning_vi": "hàng xóm",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "My neighbor is very friendly.",
+        "vi": "Hàng xóm của tôi rất thân thiện."
+      },
+      {
+        "en": "We have new neighbors.",
+        "vi": "Chúng tôi có hàng xóm mới."
+      }
+    ],
+    "collocations": [
+      "good neighbor",
+      "next-door neighbor",
+      "neighbor's house"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Who is your neighbor?"
+      },
+      {
+        "speaker": "B",
+        "text": "Mr. Smith is my neighbor."
+      }
+    ]
+  },
+  {
+    "phrase": "go to school",
+    "meaning_vi": "đi học",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I go to school by bus.",
+        "vi": "Tôi đi học bằng xe buýt."
+      },
+      {
+        "en": "My brother goes to school near here.",
+        "vi": "Em trai tôi đi học gần đây."
+      }
+    ],
+    "collocations": [
+      "go to school by bike",
+      "go to school every day",
+      "go to school with friends"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How do you go to school?"
+      },
+      {
+        "speaker": "B",
+        "text": "I go to school by bike."
+      }
+    ]
+  },
+  {
+    "phrase": "work at",
+    "meaning_vi": "làm việc tại",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "She works at a hospital.",
+        "vi": "Cô ấy làm việc tại một bệnh viện."
+      },
+      {
+        "en": "He works at a bank.",
+        "vi": "Anh ấy làm việc tại một ngân hàng."
+      }
+    ],
+    "collocations": [
+      "work at a company",
+      "work at a school",
+      "work at home"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Where do you work?"
+      },
+      {
+        "speaker": "B",
+        "text": "I work at a restaurant."
+      }
+    ]
+  },
+  {
+    "phrase": "help each other",
+    "meaning_vi": "giúp đỡ lẫn nhau",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "We help each other in the community.",
+        "vi": "Chúng tôi giúp đỡ lẫn nhau trong cộng đồng."
+      },
+      {
+        "en": "Good neighbors help each other.",
+        "vi": "Hàng xóm tốt giúp đỡ lẫn nhau."
+      }
+    ],
+    "collocations": [
+      "help each other with homework",
+      "help each other in trouble",
+      "always help each other"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you help each other?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, we help each other every day."
+      }
+    ]
+  },
+  {
+    "phrase": "take care of",
+    "meaning_vi": "chăm sóc",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "She takes care of her children.",
+        "vi": "Cô ấy chăm sóc các con của mình."
+      },
+      {
+        "en": "We take care of the park.",
+        "vi": "Chúng tôi chăm sóc công viên."
+      }
+    ],
+    "collocations": [
+      "take care of family",
+      "take care of pets",
+      "take care of the garden"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Who takes care of the garden?"
+      },
+      {
+        "speaker": "B",
+        "text": "My father takes care of it."
+      }
+    ]
+  },
+  {
+    "phrase": "community center",
+    "meaning_vi": "trung tâm cộng đồng",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "There is a community center near my house.",
+        "vi": "Có một trung tâm cộng đồng gần nhà tôi."
+      },
+      {
+        "en": "We go to the community center on weekends.",
+        "vi": "Chúng tôi đến trung tâm cộng đồng vào cuối tuần."
+      }
+    ],
+    "collocations": [
+      "community center activities",
+      "community center classes",
+      "community center meeting"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you go to the community center?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I go there for yoga classes."
+      }
+    ]
+  },
+  {
+    "phrase": "meet people",
+    "meaning_vi": "gặp gỡ mọi người",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I like to meet new people.",
+        "vi": "Tôi thích gặp gỡ những người mới."
+      },
+      {
+        "en": "We meet people at the park.",
+        "vi": "Chúng tôi gặp mọi người ở công viên."
+      }
+    ],
+    "collocations": [
+      "meet people from different countries",
+      "meet people at work",
+      "meet people online"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you meet people here?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I meet many friendly people."
+      }
+    ]
+  }
+]

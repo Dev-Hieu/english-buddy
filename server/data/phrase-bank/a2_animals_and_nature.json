@@ -1,0 +1,374 @@
+[
+  {
+    "phrase": "go for a walk",
+    "meaning_vi": "đi dạo",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "Let's go for a walk in the park.",
+        "vi": "Chúng ta hãy đi dạo trong công viên."
+      },
+      {
+        "en": "I go for a walk every evening.",
+        "vi": "Tôi đi dạo mỗi buổi tối."
+      }
+    ],
+    "collocations": [
+      "go for a long walk",
+      "go for a walk in the woods",
+      "go for a walk along the beach"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you want to go for a walk?"
+      },
+      {
+        "speaker": "B",
+        "text": "Sure, let's go to the park."
+      }
+    ]
+  },
+  {
+    "phrase": "look after",
+    "meaning_vi": "chăm sóc",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "She looks after her little brother.",
+        "vi": "Cô ấy chăm sóc em trai nhỏ của mình."
+      },
+      {
+        "en": "Who looks after the garden?",
+        "vi": "Ai chăm sóc khu vườn?"
+      }
+    ],
+    "collocations": [
+      "look after a pet",
+      "look after plants",
+      "look after the environment"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Can you look after my dog this weekend?"
+      },
+      {
+        "speaker": "B",
+        "text": "Of course, I love dogs."
+      }
+    ]
+  },
+  {
+    "phrase": "pick up",
+    "meaning_vi": "nhặt, lượm",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Please pick up the trash.",
+        "vi": "Làm ơn nhặt rác lên."
+      },
+      {
+        "en": "He picked up a pretty shell on the beach.",
+        "vi": "Anh ấy nhặt một vỏ sò đẹp trên bãi biển."
+      }
+    ],
+    "collocations": [
+      "pick up litter",
+      "pick up leaves",
+      "pick up a stone"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Why did you pick up that stick?"
+      },
+      {
+        "speaker": "B",
+        "text": "I want to draw in the sand."
+      }
+    ]
+  },
+  {
+    "phrase": "take care of",
+    "meaning_vi": "chăm sóc, lo lắng cho",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "We must take care of our planet.",
+        "vi": "Chúng ta phải chăm sóc hành tinh của mình."
+      },
+      {
+        "en": "She takes care of the cats at the shelter.",
+        "vi": "Cô ấy chăm sóc những con mèo ở trại cứu hộ."
+      }
+    ],
+    "collocations": [
+      "take care of a pet",
+      "take care of the environment",
+      "take care of plants"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Who takes care of the garden?"
+      },
+      {
+        "speaker": "B",
+        "text": "My mother does. She loves flowers."
+      }
+    ]
+  },
+  {
+    "phrase": "feed the animals",
+    "meaning_vi": "cho động vật ăn",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "Don't feed the animals at the zoo.",
+        "vi": "Đừng cho động vật ăn ở sở thú."
+      },
+      {
+        "en": "I feed my cat every morning.",
+        "vi": "Tôi cho mèo ăn mỗi sáng."
+      }
+    ],
+    "collocations": [
+      "feed the birds",
+      "feed the fish",
+      "feed the dog"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What time do you feed the dog?"
+      },
+      {
+        "speaker": "B",
+        "text": "I feed him at 7 AM and 6 PM."
+      }
+    ]
+  },
+  {
+    "phrase": "grow up",
+    "meaning_vi": "lớn lên",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I grew up in the countryside.",
+        "vi": "Tôi lớn lên ở vùng nông thôn."
+      },
+      {
+        "en": "The trees grow up very fast in the rain.",
+        "vi": "Cây cối lớn lên rất nhanh trong mưa."
+      }
+    ],
+    "collocations": [
+      "grow up in a village",
+      "grow up with pets",
+      "grow up near a forest"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Where did you grow up?"
+      },
+      {
+        "speaker": "B",
+        "text": "I grew up near a big lake."
+      }
+    ]
+  },
+  {
+    "phrase": "fresh air",
+    "meaning_vi": "không khí trong lành",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "I love the fresh air in the mountains.",
+        "vi": "Tôi thích không khí trong lành trên núi."
+      },
+      {
+        "en": "Let's open the window for some fresh air.",
+        "vi": "Hãy mở cửa sổ để đón không khí trong lành."
+      }
+    ],
+    "collocations": [
+      "breathe fresh air",
+      "enjoy fresh air",
+      "get some fresh air"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Why do you like camping?"
+      },
+      {
+        "speaker": "B",
+        "text": "Because I can enjoy fresh air and nature."
+      }
+    ]
+  },
+  {
+    "phrase": "wild animals",
+    "meaning_vi": "động vật hoang dã",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "We saw many wild animals in the forest.",
+        "vi": "Chúng tôi thấy nhiều động vật hoang dã trong rừng."
+      },
+      {
+        "en": "Don't feed wild animals; it's dangerous.",
+        "vi": "Đừng cho động vật hoang dã ăn; rất nguy hiểm."
+      }
+    ],
+    "collocations": [
+      "protect wild animals",
+      "watch wild animals",
+      "wild animals in the jungle"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What wild animals did you see?"
+      },
+      {
+        "speaker": "B",
+        "text": "We saw deer and rabbits."
+      }
+    ]
+  },
+  {
+    "phrase": "plant trees",
+    "meaning_vi": "trồng cây",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "We should plant more trees to help the environment.",
+        "vi": "Chúng ta nên trồng nhiều cây hơn để giúp môi trường."
+      },
+      {
+        "en": "My grandfather planted trees in our garden.",
+        "vi": "Ông tôi trồng cây trong vườn nhà."
+      }
+    ],
+    "collocations": [
+      "plant trees in the park",
+      "plant trees along the street",
+      "plant fruit trees"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What are you doing?"
+      },
+      {
+        "speaker": "B",
+        "text": "I'm planting trees in the backyard."
+      }
+    ]
+  },
+  {
+    "phrase": "take a photo",
+    "meaning_vi": "chụp ảnh",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I took a photo of the beautiful sunset.",
+        "vi": "Tôi chụp một bức ảnh hoàng hôn đẹp."
+      },
+      {
+        "en": "Can you take a photo of me with the flowers?",
+        "vi": "Bạn có thể chụp ảnh tôi với những bông hoa không?"
+      }
+    ],
+    "collocations": [
+      "take a photo of nature",
+      "take a photo of animals",
+      "take a photo with a camera"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "That bird is so beautiful!"
+      },
+      {
+        "speaker": "B",
+        "text": "Let me take a photo of it."
+      }
+    ]
+  },
+  {
+    "phrase": "protect nature",
+    "meaning_vi": "bảo vệ thiên nhiên",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "We must protect nature for future generations.",
+        "vi": "Chúng ta phải bảo vệ thiên nhiên cho thế hệ tương lai."
+      },
+      {
+        "en": "Everyone can help protect nature by recycling.",
+        "vi": "Mọi người đều có thể giúp bảo vệ thiên nhiên bằng cách tái chế."
+      }
+    ],
+    "collocations": [
+      "protect nature and wildlife",
+      "protect the natural environment",
+      "protect nature from pollution"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Why is it important to protect nature?"
+      },
+      {
+        "speaker": "B",
+        "text": "Because nature gives us clean air and water."
+      }
+    ]
+  },
+  {
+    "phrase": "watch birds",
+    "meaning_vi": "ngắm chim",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I like to watch birds in the park.",
+        "vi": "Tôi thích ngắm chim trong công viên."
+      },
+      {
+        "en": "We watched birds with binoculars.",
+        "vi": "Chúng tôi ngắm chim bằng ống nhòm."
+      }
+    ],
+    "collocations": [
+      "watch birds in the morning",
+      "watch birds fly",
+      "watch birds build nests"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What are you doing?"
+      },
+      {
+        "speaker": "B",
+        "text": "I'm watching birds. Can you see that blue one?"
+      }
+    ]
+  }
+]

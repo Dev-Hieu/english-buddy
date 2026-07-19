@@ -1,0 +1,254 @@
+[
+  {
+    "phrase": "get up",
+    "meaning_vi": "thức dậy",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I get up at 6 every morning.",
+        "vi": "Tôi thức dậy lúc 6 giờ mỗi sáng."
+      },
+      {
+        "en": "What time do you get up?",
+        "vi": "Bạn thức dậy lúc mấy giờ?"
+      }
+    ],
+    "collocations": [
+      "get up early",
+      "get up late",
+      "get up on time"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What time do you usually get up?"
+      },
+      {
+        "speaker": "B",
+        "text": "I usually get up at seven."
+      }
+    ]
+  },
+  {
+    "phrase": "have breakfast",
+    "meaning_vi": "ăn sáng",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I have breakfast at 7.",
+        "vi": "Tôi ăn sáng lúc 7 giờ."
+      },
+      {
+        "en": "Do you have breakfast every day?",
+        "vi": "Bạn có ăn sáng mỗi ngày không?"
+      }
+    ],
+    "collocations": [
+      "have a big breakfast",
+      "have a light breakfast",
+      "skip breakfast"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What do you have for breakfast?"
+      },
+      {
+        "speaker": "B",
+        "text": "I usually have bread and milk."
+      }
+    ]
+  },
+  {
+    "phrase": "go to work",
+    "meaning_vi": "đi làm",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I go to work by bus.",
+        "vi": "Tôi đi làm bằng xe buýt."
+      },
+      {
+        "en": "She goes to work at 8.",
+        "vi": "Cô ấy đi làm lúc 8 giờ."
+      }
+    ],
+    "collocations": [
+      "go to work by car",
+      "go to work on foot",
+      "go to work early"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How do you go to work?"
+      },
+      {
+        "speaker": "B",
+        "text": "I go to work by motorbike."
+      }
+    ]
+  },
+  {
+    "phrase": "come home",
+    "meaning_vi": "về nhà",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I come home at 5.",
+        "vi": "Tôi về nhà lúc 5 giờ."
+      },
+      {
+        "en": "What time do you come home?",
+        "vi": "Bạn về nhà lúc mấy giờ?"
+      }
+    ],
+    "collocations": [
+      "come home late",
+      "come home early",
+      "come home for lunch"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "When do you usually come home?"
+      },
+      {
+        "speaker": "B",
+        "text": "I come home around six."
+      }
+    ]
+  },
+  {
+    "phrase": "watch TV",
+    "meaning_vi": "xem TV",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I watch TV in the evening.",
+        "vi": "Tôi xem TV vào buổi tối."
+      },
+      {
+        "en": "Do you watch TV every day?",
+        "vi": "Bạn có xem TV mỗi ngày không?"
+      }
+    ],
+    "collocations": [
+      "watch TV after dinner",
+      "watch TV shows",
+      "watch the news"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What do you do in the evening?"
+      },
+      {
+        "speaker": "B",
+        "text": "I watch TV or read a book."
+      }
+    ]
+  },
+  {
+    "phrase": "go to bed",
+    "meaning_vi": "đi ngủ",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I go to bed at 10.",
+        "vi": "Tôi đi ngủ lúc 10 giờ."
+      },
+      {
+        "en": "She goes to bed early.",
+        "vi": "Cô ấy đi ngủ sớm."
+      }
+    ],
+    "collocations": [
+      "go to bed late",
+      "go to bed early",
+      "go to bed at midnight"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What time do you go to bed?"
+      },
+      {
+        "speaker": "B",
+        "text": "I usually go to bed at 11."
+      }
+    ]
+  },
+  {
+    "phrase": "have dinner",
+    "meaning_vi": "ăn tối",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "We have dinner at 7.",
+        "vi": "Chúng tôi ăn tối lúc 7 giờ."
+      },
+      {
+        "en": "Let's have dinner together.",
+        "vi": "Cùng ăn tối nhé."
+      }
+    ],
+    "collocations": [
+      "have a big dinner",
+      "have dinner with family",
+      "have dinner out"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What time do you have dinner?"
+      },
+      {
+        "speaker": "B",
+        "text": "We have dinner at seven."
+      }
+    ]
+  },
+  {
+    "phrase": "How are you?",
+    "meaning_vi": "Bạn khỏe không?",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "How are you?",
+        "vi": "Bạn khỏe không?"
+      },
+      {
+        "en": "I'm fine, thanks.",
+        "vi": "Tôi khỏe, cảm ơn."
+      }
+    ],
+    "collocations": [
+      "How are you today?",
+      "How are you doing?",
+      "How's it going?"
+    ],
+    "response": "I'm fine, thanks.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Hi, how are you?"
+      },
+      {
+        "speaker": "B",
+        "text": "I'm fine, thanks. And you?"
+      },
+      {
+        "speaker": "A",
+        "text": "I'm good, thanks."
+      }
+    ]
+  }
+]

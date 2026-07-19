@@ -1,0 +1,374 @@
+[
+  {
+    "phrase": "go shopping",
+    "meaning_vi": "đi mua sắm",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I go shopping every Saturday.",
+        "vi": "Tôi đi mua sắm mỗi thứ Bảy."
+      },
+      {
+        "en": "Let's go shopping this afternoon.",
+        "vi": "Chiều nay chúng ta đi mua sắm nhé."
+      }
+    ],
+    "collocations": [
+      "go window shopping",
+      "go grocery shopping",
+      "go online shopping"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What do you want to do this weekend?"
+      },
+      {
+        "speaker": "B",
+        "text": "I want to go shopping for new clothes."
+      }
+    ]
+  },
+  {
+    "phrase": "try on",
+    "meaning_vi": "mặc thử",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Can I try on this dress?",
+        "vi": "Tôi có thể mặc thử chiếc váy này không?"
+      },
+      {
+        "en": "You should try on the shoes before buying.",
+        "vi": "Bạn nên mang thử giày trước khi mua."
+      }
+    ],
+    "collocations": [
+      "try on clothes",
+      "try on shoes",
+      "try on a jacket"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Excuse me, can I try on this shirt?"
+      },
+      {
+        "speaker": "B",
+        "text": "Sure, the fitting room is over there."
+      }
+    ]
+  },
+  {
+    "phrase": "pay for",
+    "meaning_vi": "trả tiền cho",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I will pay for the groceries.",
+        "vi": "Tôi sẽ trả tiền cho hàng tạp hóa."
+      },
+      {
+        "en": "How do you want to pay for this?",
+        "vi": "Bạn muốn trả tiền cho cái này bằng cách nào?"
+      }
+    ],
+    "collocations": [
+      "pay for the items",
+      "pay for the meal",
+      "pay for the ticket"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Let's split the bill."
+      },
+      {
+        "speaker": "B",
+        "text": "No, I'll pay for everything."
+      }
+    ]
+  },
+  {
+    "phrase": "on sale",
+    "meaning_vi": "đang giảm giá",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "This jacket is on sale for 50% off.",
+        "vi": "Áo khoác này đang giảm giá 50%."
+      },
+      {
+        "en": "I bought these shoes on sale.",
+        "vi": "Tôi mua đôi giày này khi đang giảm giá."
+      }
+    ],
+    "collocations": [
+      "buy on sale",
+      "items on sale",
+      "on sale now"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Is this dress on sale?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, it's 20% off today."
+      }
+    ]
+  },
+  {
+    "phrase": "look for",
+    "meaning_vi": "tìm kiếm",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I am looking for a gift for my mother.",
+        "vi": "Tôi đang tìm một món quà cho mẹ."
+      },
+      {
+        "en": "What are you looking for?",
+        "vi": "Bạn đang tìm gì thế?"
+      }
+    ],
+    "collocations": [
+      "look for a bargain",
+      "look for a size",
+      "look for something special"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Can I help you?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I'm looking for a red handbag."
+      }
+    ]
+  },
+  {
+    "phrase": "sold out",
+    "meaning_vi": "hết hàng",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "The concert tickets are sold out.",
+        "vi": "Vé buổi hòa nhạc đã bán hết."
+      },
+      {
+        "en": "Sorry, this size is sold out.",
+        "vi": "Xin lỗi, cỡ này đã hết hàng."
+      }
+    ],
+    "collocations": [
+      "completely sold out",
+      "sold out quickly",
+      "already sold out"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you have this in blue?"
+      },
+      {
+        "speaker": "B",
+        "text": "I'm sorry, blue is sold out."
+      }
+    ]
+  },
+  {
+    "phrase": "cash or card",
+    "meaning_vi": "tiền mặt hay thẻ",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "Do you pay cash or card?",
+        "vi": "Bạn trả tiền mặt hay thẻ?"
+      },
+      {
+        "en": "I'll pay by card.",
+        "vi": "Tôi sẽ trả bằng thẻ."
+      }
+    ],
+    "collocations": [
+      "pay with cash",
+      "pay by card",
+      "credit card"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "That will be $20. Cash or card?"
+      },
+      {
+        "speaker": "B",
+        "text": "Card, please."
+      }
+    ]
+  },
+  {
+    "phrase": "bargain hunt",
+    "meaning_vi": "săn hàng giảm giá",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I love to bargain hunt at the flea market.",
+        "vi": "Tôi thích săn hàng giảm giá ở chợ trời."
+      },
+      {
+        "en": "She is a bargain hunter.",
+        "vi": "Cô ấy là người thích săn đồ rẻ."
+      }
+    ],
+    "collocations": [
+      "go bargain hunting",
+      "bargain hunter",
+      "bargain hunting tips"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Why are you going to the mall so early?"
+      },
+      {
+        "speaker": "B",
+        "text": "I want to bargain hunt during the sale."
+      }
+    ]
+  },
+  {
+    "phrase": "shop around",
+    "meaning_vi": "đi nhiều nơi để so sánh giá",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "You should shop around before buying a laptop.",
+        "vi": "Bạn nên đi nhiều nơi so sánh giá trước khi mua laptop."
+      },
+      {
+        "en": "I shopped around and found a better price.",
+        "vi": "Tôi đã đi so sánh giá và tìm được giá tốt hơn."
+      }
+    ],
+    "collocations": [
+      "shop around for the best deal",
+      "shop around online",
+      "shop around for insurance"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "This store is expensive. Should I buy here?"
+      },
+      {
+        "speaker": "B",
+        "text": "No, let's shop around first."
+      }
+    ]
+  },
+  {
+    "phrase": "price tag",
+    "meaning_vi": "thẻ giá",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "The price tag says $50.",
+        "vi": "Thẻ giá ghi 50 đô la."
+      },
+      {
+        "en": "Don't forget to remove the price tag before giving the gift.",
+        "vi": "Đừng quên tháo thẻ giá trước khi tặng quà."
+      }
+    ],
+    "collocations": [
+      "check the price tag",
+      "price tag on",
+      "price tag off"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How much is this?"
+      },
+      {
+        "speaker": "B",
+        "text": "Let me check the price tag."
+      }
+    ]
+  },
+  {
+    "phrase": "buy one get one free",
+    "meaning_vi": "mua một tặng một",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "This store has a buy one get one free offer.",
+        "vi": "Cửa hàng này có chương trình mua một tặng một."
+      },
+      {
+        "en": "I bought two shirts because it was buy one get one free.",
+        "vi": "Tôi mua hai cái áo vì chương trình mua một tặng một."
+      }
+    ],
+    "collocations": [
+      "BOGO",
+      "buy one get one free sale",
+      "buy one get one free deal"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Why did you buy two?"
+      },
+      {
+        "speaker": "B",
+        "text": "Because it's buy one get one free."
+      }
+    ]
+  },
+  {
+    "phrase": "fitting room",
+    "meaning_vi": "phòng thử đồ",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "The fitting room is at the back of the store.",
+        "vi": "Phòng thử đồ ở phía sau cửa hàng."
+      },
+      {
+        "en": "You can try on the clothes in the fitting room.",
+        "vi": "Bạn có thể thử quần áo trong phòng thử đồ."
+      }
+    ],
+    "collocations": [
+      "use the fitting room",
+      "fitting room available",
+      "fitting room mirror"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Where can I try this on?"
+      },
+      {
+        "speaker": "B",
+        "text": "The fitting room is on your left."
+      }
+    ]
+  }
+]

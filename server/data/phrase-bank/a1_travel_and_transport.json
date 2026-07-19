@@ -1,0 +1,250 @@
+[
+  {
+    "phrase": "get on",
+    "meaning_vi": "lên (xe buýt, tàu, máy bay)",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I get on the bus at the station.",
+        "vi": "Tôi lên xe buýt ở nhà ga."
+      },
+      {
+        "en": "She gets on the train every morning.",
+        "vi": "Cô ấy lên tàu hỏa mỗi sáng."
+      }
+    ],
+    "collocations": [
+      "get on the bus",
+      "get on the train",
+      "get on the plane"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Where do you get on the bus?"
+      },
+      {
+        "speaker": "B",
+        "text": "I get on at the bus stop near my house."
+      }
+    ]
+  },
+  {
+    "phrase": "get off",
+    "meaning_vi": "xuống (xe buýt, tàu, máy bay)",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "We get off the train at the next station.",
+        "vi": "Chúng tôi xuống tàu ở ga tiếp theo."
+      },
+      {
+        "en": "Please get off the bus carefully.",
+        "vi": "Xin hãy xuống xe buýt cẩn thận."
+      }
+    ],
+    "collocations": [
+      "get off the bus",
+      "get off the train",
+      "get off at the stop"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "When do we get off?"
+      },
+      {
+        "speaker": "B",
+        "text": "We get off at the next stop."
+      }
+    ]
+  },
+  {
+    "phrase": "by bus",
+    "meaning_vi": "bằng xe buýt",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I go to work by bus.",
+        "vi": "Tôi đi làm bằng xe buýt."
+      },
+      {
+        "en": "She travels by bus every day.",
+        "vi": "Cô ấy đi lại bằng xe buýt mỗi ngày."
+      }
+    ],
+    "collocations": [
+      "go by bus",
+      "travel by bus",
+      "come by bus"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How do you go to school?"
+      },
+      {
+        "speaker": "B",
+        "text": "I go by bus."
+      }
+    ]
+  },
+  {
+    "phrase": "by car",
+    "meaning_vi": "bằng ô tô",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "We go to the beach by car.",
+        "vi": "Chúng tôi đi biển bằng ô tô."
+      },
+      {
+        "en": "He comes to work by car.",
+        "vi": "Anh ấy đến chỗ làm bằng ô tô."
+      }
+    ],
+    "collocations": [
+      "go by car",
+      "travel by car",
+      "come by car"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you go by car or by bus?"
+      },
+      {
+        "speaker": "B",
+        "text": "I go by car."
+      }
+    ]
+  },
+  {
+    "phrase": "take a taxi",
+    "meaning_vi": "đi taxi",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I take a taxi to the airport.",
+        "vi": "Tôi đi taxi ra sân bay."
+      },
+      {
+        "en": "She takes a taxi when she is late.",
+        "vi": "Cô ấy đi taxi khi bị trễ."
+      }
+    ],
+    "collocations": [
+      "take a taxi to",
+      "take a taxi from",
+      "take a taxi home"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How do we get to the hotel?"
+      },
+      {
+        "speaker": "B",
+        "text": "Let's take a taxi."
+      }
+    ]
+  },
+  {
+    "phrase": "travel abroad",
+    "meaning_vi": "đi du lịch nước ngoài",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I want to travel abroad next year.",
+        "vi": "Tôi muốn đi du lịch nước ngoài năm sau."
+      },
+      {
+        "en": "She travels abroad for work.",
+        "vi": "Cô ấy đi công tác nước ngoài."
+      }
+    ],
+    "collocations": [
+      "travel abroad for",
+      "travel abroad with",
+      "travel abroad often"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you like to travel abroad?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I love it."
+      }
+    ]
+  },
+  {
+    "phrase": "book a ticket",
+    "meaning_vi": "đặt vé",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I need to book a ticket for the train.",
+        "vi": "Tôi cần đặt vé tàu hỏa."
+      },
+      {
+        "en": "She books a ticket online.",
+        "vi": "Cô ấy đặt vé trực tuyến."
+      }
+    ],
+    "collocations": [
+      "book a ticket online",
+      "book a ticket for",
+      "book a ticket in advance"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Did you book a ticket yet?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I booked it yesterday."
+      }
+    ]
+  },
+  {
+    "phrase": "How much is a ticket to...?",
+    "meaning_vi": "Vé đến... bao nhiêu tiền?",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "How much is a ticket to Hanoi?",
+        "vi": "Vé đến Hà Nội bao nhiêu tiền?"
+      },
+      {
+        "en": "How much is a ticket to the city center?",
+        "vi": "Vé đến trung tâm thành phố bao nhiêu tiền?"
+      }
+    ],
+    "collocations": [
+      "How much is a bus ticket to...?",
+      "How much is a train ticket to...?",
+      "How much is a plane ticket to...?"
+    ],
+    "response": "It's 50,000 dong.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Excuse me, how much is a ticket to Da Nang?"
+      },
+      {
+        "speaker": "B",
+        "text": "It's 200,000 dong."
+      }
+    ]
+  }
+]

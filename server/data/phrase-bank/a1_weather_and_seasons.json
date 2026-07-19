@@ -1,0 +1,251 @@
+[
+  {
+    "phrase": "What's the weather like?",
+    "meaning_vi": "Thời tiết thế nào?",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "What's the weather like today?",
+        "vi": "Hôm nay thời tiết thế nào?"
+      },
+      {
+        "en": "What's the weather like in summer?",
+        "vi": "Thời tiết mùa hè thế nào?"
+      }
+    ],
+    "collocations": [
+      "ask about the weather",
+      "check the weather",
+      "weather forecast"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What's the weather like today?"
+      },
+      {
+        "speaker": "B",
+        "text": "It's sunny and hot."
+      }
+    ]
+  },
+  {
+    "phrase": "It is sunny",
+    "meaning_vi": "Trời nắng",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "It is sunny today.",
+        "vi": "Hôm nay trời nắng."
+      },
+      {
+        "en": "It is sunny in the morning.",
+        "vi": "Buổi sáng trời nắng."
+      }
+    ],
+    "collocations": [
+      "sunny day",
+      "sunny weather",
+      "sunny and hot"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How is the weather?"
+      },
+      {
+        "speaker": "B",
+        "text": "It is sunny."
+      }
+    ]
+  },
+  {
+    "phrase": "It is raining",
+    "meaning_vi": "Trời đang mưa",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "It is raining now.",
+        "vi": "Bây giờ trời đang mưa."
+      },
+      {
+        "en": "It is raining hard.",
+        "vi": "Trời mưa to."
+      }
+    ],
+    "collocations": [
+      "heavy rain",
+      "light rain",
+      "rainy season"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Is it raining outside?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, it is raining."
+      }
+    ]
+  },
+  {
+    "phrase": "It is cold",
+    "meaning_vi": "Trời lạnh",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "It is cold in winter.",
+        "vi": "Mùa đông trời lạnh."
+      },
+      {
+        "en": "It is very cold today.",
+        "vi": "Hôm nay trời rất lạnh."
+      }
+    ],
+    "collocations": [
+      "cold weather",
+      "cold day",
+      "cold and windy"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you like winter?"
+      },
+      {
+        "speaker": "B",
+        "text": "No, because it is cold."
+      }
+    ]
+  },
+  {
+    "phrase": "It is hot",
+    "meaning_vi": "Trời nóng",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "It is hot in summer.",
+        "vi": "Mùa hè trời nóng."
+      },
+      {
+        "en": "It is very hot today.",
+        "vi": "Hôm nay trời rất nóng."
+      }
+    ],
+    "collocations": [
+      "hot weather",
+      "hot day",
+      "hot and humid"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How is the weather in Vietnam?"
+      },
+      {
+        "speaker": "B",
+        "text": "It is hot and humid."
+      }
+    ]
+  },
+  {
+    "phrase": "It is windy",
+    "meaning_vi": "Trời có gió",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "It is windy today.",
+        "vi": "Hôm nay trời có gió."
+      },
+      {
+        "en": "It is very windy in autumn.",
+        "vi": "Mùa thu trời rất nhiều gió."
+      }
+    ],
+    "collocations": [
+      "windy day",
+      "strong wind",
+      "windy weather"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Should we go outside?"
+      },
+      {
+        "speaker": "B",
+        "text": "No, it is too windy."
+      }
+    ]
+  },
+  {
+    "phrase": "What season is it?",
+    "meaning_vi": "Bây giờ là mùa gì?",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "What season is it now?",
+        "vi": "Bây giờ là mùa gì?"
+      },
+      {
+        "en": "What season do you like?",
+        "vi": "Bạn thích mùa nào?"
+      }
+    ],
+    "collocations": [
+      "spring",
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What season is it?"
+      },
+      {
+        "speaker": "B",
+        "text": "It is summer."
+      }
+    ]
+  },
+  {
+    "phrase": "I like spring",
+    "meaning_vi": "Tôi thích mùa xuân",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I like spring because it is warm.",
+        "vi": "Tôi thích mùa xuân vì trời ấm."
+      },
+      {
+        "en": "Do you like spring?",
+        "vi": "Bạn có thích mùa xuân không?"
+      }
+    ],
+    "collocations": [
+      "spring weather",
+      "spring flowers",
+      "spring season"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Which season do you like?"
+      },
+      {
+        "speaker": "B",
+        "text": "I like spring."
+      }
+    ]
+  }
+]

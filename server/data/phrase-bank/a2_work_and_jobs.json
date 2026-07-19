@@ -1,0 +1,374 @@
+[
+  {
+    "phrase": "get a job",
+    "meaning_vi": "kiếm việc làm",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I need to get a job after graduation.",
+        "vi": "Tôi cần kiếm việc làm sau khi tốt nghiệp."
+      },
+      {
+        "en": "She got a job at a bank.",
+        "vi": "Cô ấy kiếm được việc làm ở ngân hàng."
+      }
+    ],
+    "collocations": [
+      "find a job",
+      "lose a job",
+      "quit a job"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Have you got a job yet?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I got a job at a hospital."
+      }
+    ]
+  },
+  {
+    "phrase": "work overtime",
+    "meaning_vi": "làm thêm giờ",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I often work overtime on weekends.",
+        "vi": "Tôi thường làm thêm giờ vào cuối tuần."
+      },
+      {
+        "en": "She doesn't like to work overtime.",
+        "vi": "Cô ấy không thích làm thêm giờ."
+      }
+    ],
+    "collocations": [
+      "work late",
+      "work extra hours",
+      "work on weekends"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Are you free tonight?"
+      },
+      {
+        "speaker": "B",
+        "text": "No, I have to work overtime."
+      }
+    ]
+  },
+  {
+    "phrase": "take a break",
+    "meaning_vi": "nghỉ giải lao",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "Let's take a break for 10 minutes.",
+        "vi": "Chúng ta hãy nghỉ giải lao 10 phút."
+      },
+      {
+        "en": "She took a break to have coffee.",
+        "vi": "Cô ấy nghỉ giải lao để uống cà phê."
+      }
+    ],
+    "collocations": [
+      "have a break",
+      "take a rest",
+      "take a lunch break"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I'm so tired."
+      },
+      {
+        "speaker": "B",
+        "text": "You should take a break."
+      }
+    ]
+  },
+  {
+    "phrase": "apply for a job",
+    "meaning_vi": "nộp đơn xin việc",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I applied for a job at a school.",
+        "vi": "Tôi đã nộp đơn xin việc ở một trường học."
+      },
+      {
+        "en": "She is applying for many jobs.",
+        "vi": "Cô ấy đang nộp đơn xin nhiều việc."
+      }
+    ],
+    "collocations": [
+      "apply online",
+      "apply in person",
+      "send an application"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Did you apply for the job?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I applied yesterday."
+      }
+    ]
+  },
+  {
+    "phrase": "go on a business trip",
+    "meaning_vi": "đi công tác",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "He often goes on a business trip to Hanoi.",
+        "vi": "Anh ấy thường đi công tác ở Hà Nội."
+      },
+      {
+        "en": "I went on a business trip last week.",
+        "vi": "Tuần trước tôi đã đi công tác."
+      }
+    ],
+    "collocations": [
+      "go on a trip",
+      "business travel",
+      "travel for work"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Where is John?"
+      },
+      {
+        "speaker": "B",
+        "text": "He is on a business trip."
+      }
+    ]
+  },
+  {
+    "phrase": "have a day off",
+    "meaning_vi": "nghỉ một ngày",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I have a day off tomorrow.",
+        "vi": "Ngày mai tôi được nghỉ."
+      },
+      {
+        "en": "She has two days off this week.",
+        "vi": "Tuần này cô ấy được nghỉ hai ngày."
+      }
+    ],
+    "collocations": [
+      "take a day off",
+      "get a day off",
+      "ask for a day off"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Are you working tomorrow?"
+      },
+      {
+        "speaker": "B",
+        "text": "No, I have a day off."
+      }
+    ]
+  },
+  {
+    "phrase": "look for a job",
+    "meaning_vi": "tìm việc làm",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "She is looking for a job in marketing.",
+        "vi": "Cô ấy đang tìm việc trong lĩnh vực tiếp thị."
+      },
+      {
+        "en": "I looked for a job for two months.",
+        "vi": "Tôi đã tìm việc trong hai tháng."
+      }
+    ],
+    "collocations": [
+      "search for a job",
+      "job hunting",
+      "find a job"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What are you doing these days?"
+      },
+      {
+        "speaker": "B",
+        "text": "I'm looking for a job."
+      }
+    ]
+  },
+  {
+    "phrase": "work as",
+    "meaning_vi": "làm việc với tư cách là",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "He works as a teacher.",
+        "vi": "Anh ấy làm giáo viên."
+      },
+      {
+        "en": "I want to work as a designer.",
+        "vi": "Tôi muốn làm việc với tư cách là nhà thiết kế."
+      }
+    ],
+    "collocations": [
+      "work as a doctor",
+      "work as an engineer",
+      "work as a waiter"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What do you do?"
+      },
+      {
+        "speaker": "B",
+        "text": "I work as a nurse."
+      }
+    ]
+  },
+  {
+    "phrase": "earn money",
+    "meaning_vi": "kiếm tiền",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "She earns a lot of money.",
+        "vi": "Cô ấy kiếm được nhiều tiền."
+      },
+      {
+        "en": "I need to earn more money.",
+        "vi": "Tôi cần kiếm thêm tiền."
+      }
+    ],
+    "collocations": [
+      "make money",
+      "earn a salary",
+      "earn a living"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Does your job earn good money?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I earn enough money."
+      }
+    ]
+  },
+  {
+    "phrase": "get promoted",
+    "meaning_vi": "được thăng chức",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "She got promoted last month.",
+        "vi": "Cô ấy đã được thăng chức tháng trước."
+      },
+      {
+        "en": "I hope to get promoted soon.",
+        "vi": "Tôi hy vọng sớm được thăng chức."
+      }
+    ],
+    "collocations": [
+      "get a promotion",
+      "be promoted",
+      "ask for a promotion"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I heard you got promoted. Congratulations!"
+      },
+      {
+        "speaker": "B",
+        "text": "Thank you!"
+      }
+    ]
+  },
+  {
+    "phrase": "clock in",
+    "meaning_vi": "chấm công vào",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I clock in at 8 AM every day.",
+        "vi": "Tôi chấm công vào lúc 8 giờ sáng mỗi ngày."
+      },
+      {
+        "en": "Don't forget to clock in when you arrive.",
+        "vi": "Đừng quên chấm công vào khi bạn đến."
+      }
+    ],
+    "collocations": [
+      "clock out",
+      "clock in late",
+      "clock in early"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What time do you clock in?"
+      },
+      {
+        "speaker": "B",
+        "text": "I clock in at eight."
+      }
+    ]
+  },
+  {
+    "phrase": "clock out",
+    "meaning_vi": "chấm công ra",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I usually clock out at 5 PM.",
+        "vi": "Tôi thường chấm công ra lúc 5 giờ chiều."
+      },
+      {
+        "en": "She clocked out early today.",
+        "vi": "Hôm nay cô ấy chấm công ra sớm."
+      }
+    ],
+    "collocations": [
+      "clock in",
+      "clock out late",
+      "clock out on time"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Are you ready to leave?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I just clocked out."
+      }
+    ]
+  }
+]

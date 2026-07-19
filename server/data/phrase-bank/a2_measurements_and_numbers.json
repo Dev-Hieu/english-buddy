@@ -1,0 +1,374 @@
+[
+  {
+    "phrase": "how long",
+    "meaning_vi": "bao lâu",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "How long is this table?",
+        "vi": "Cái bàn này dài bao nhiêu?"
+      },
+      {
+        "en": "How long does the movie last?",
+        "vi": "Bộ phim kéo dài bao lâu?"
+      }
+    ],
+    "collocations": [
+      "how long is",
+      "how long does",
+      "how long will"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How long is the rope?"
+      },
+      {
+        "speaker": "B",
+        "text": "It's about 5 meters."
+      }
+    ]
+  },
+  {
+    "phrase": "how many",
+    "meaning_vi": "bao nhiêu (số lượng đếm được)",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "How many apples do you want?",
+        "vi": "Bạn muốn bao nhiêu quả táo?"
+      },
+      {
+        "en": "How many people are there?",
+        "vi": "Có bao nhiêu người?"
+      }
+    ],
+    "collocations": [
+      "how many people",
+      "how many times",
+      "how many books"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How many chairs do we need?"
+      },
+      {
+        "speaker": "B",
+        "text": "We need ten chairs."
+      }
+    ]
+  },
+  {
+    "phrase": "how much",
+    "meaning_vi": "bao nhiêu (số lượng không đếm được/giá cả)",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "How much water do you drink?",
+        "vi": "Bạn uống bao nhiêu nước?"
+      },
+      {
+        "en": "How much is this shirt?",
+        "vi": "Cái áo này giá bao nhiêu?"
+      }
+    ],
+    "collocations": [
+      "how much money",
+      "how much time",
+      "how much does it cost"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How much sugar do you need?"
+      },
+      {
+        "speaker": "B",
+        "text": "Just a little, about a teaspoon."
+      }
+    ]
+  },
+  {
+    "phrase": "a kilo of",
+    "meaning_vi": "một ki-lô-gam",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "Please give me a kilo of rice.",
+        "vi": "Làm ơn cho tôi một ki-lô gạo."
+      },
+      {
+        "en": "I bought a kilo of apples.",
+        "vi": "Tôi đã mua một ki-lô táo."
+      }
+    ],
+    "collocations": [
+      "a kilo of sugar",
+      "a kilo of meat",
+      "a kilo of flour"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How many kilos of potatoes do you want?"
+      },
+      {
+        "speaker": "B",
+        "text": "Just a kilo, please."
+      }
+    ]
+  },
+  {
+    "phrase": "a liter of",
+    "meaning_vi": "một lít",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I need a liter of milk.",
+        "vi": "Tôi cần một lít sữa."
+      },
+      {
+        "en": "She drank a liter of water.",
+        "vi": "Cô ấy đã uống một lít nước."
+      }
+    ],
+    "collocations": [
+      "a liter of juice",
+      "a liter of oil",
+      "a liter of soda"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How much milk do we have?"
+      },
+      {
+        "speaker": "B",
+        "text": "Only a liter left."
+      }
+    ]
+  },
+  {
+    "phrase": "a piece of",
+    "meaning_vi": "một miếng/một mảnh",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "Can I have a piece of cake?",
+        "vi": "Tôi có thể lấy một miếng bánh được không?"
+      },
+      {
+        "en": "She gave me a piece of paper.",
+        "vi": "Cô ấy đưa tôi một mảnh giấy."
+      }
+    ],
+    "collocations": [
+      "a piece of bread",
+      "a piece of furniture",
+      "a piece of advice"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Would you like a piece of pizza?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, please. Just one piece."
+      }
+    ]
+  },
+  {
+    "phrase": "a cup of",
+    "meaning_vi": "một cốc",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I'd like a cup of coffee.",
+        "vi": "Tôi muốn một cốc cà phê."
+      },
+      {
+        "en": "She drinks a cup of tea every morning.",
+        "vi": "Cô ấy uống một cốc trà mỗi sáng."
+      }
+    ],
+    "collocations": [
+      "a cup of tea",
+      "a cup of coffee",
+      "a cup of water"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What would you like to drink?"
+      },
+      {
+        "speaker": "B",
+        "text": "A cup of hot chocolate, please."
+      }
+    ]
+  },
+  {
+    "phrase": "a dozen",
+    "meaning_vi": "một tá (12 cái)",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "Please buy a dozen eggs.",
+        "vi": "Làm ơn mua một tá trứng."
+      },
+      {
+        "en": "I need a dozen roses.",
+        "vi": "Tôi cần một tá hoa hồng."
+      }
+    ],
+    "collocations": [
+      "a dozen eggs",
+      "a dozen roses",
+      "half a dozen"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How many eggs do you need?"
+      },
+      {
+        "speaker": "B",
+        "text": "A dozen, please."
+      }
+    ]
+  },
+  {
+    "phrase": "add up to",
+    "meaning_vi": "tổng cộng là",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "The bill adds up to $50.",
+        "vi": "Hóa đơn tổng cộng là 50 đô la."
+      },
+      {
+        "en": "The numbers add up to 100.",
+        "vi": "Các con số cộng lại là 100."
+      }
+    ],
+    "collocations": [
+      "add up to a total",
+      "add up to the sum",
+      "add up to the cost"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How much does everything add up to?"
+      },
+      {
+        "speaker": "B",
+        "text": "It adds up to 150 dollars."
+      }
+    ]
+  },
+  {
+    "phrase": "count on",
+    "meaning_vi": "tin tưởng, dựa vào",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "You can count on me.",
+        "vi": "Bạn có thể tin tưởng vào tôi."
+      },
+      {
+        "en": "I count on you to help.",
+        "vi": "Tôi trông cậy vào bạn để giúp đỡ."
+      }
+    ],
+    "collocations": [
+      "count on someone",
+      "count on help",
+      "count on support"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Will you be there?"
+      },
+      {
+        "speaker": "B",
+        "text": "You can count on me."
+      }
+    ]
+  },
+  {
+    "phrase": "a couple of",
+    "meaning_vi": "một vài, một cặp",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "I'll be there in a couple of minutes.",
+        "vi": "Tôi sẽ đến đó trong vài phút nữa."
+      },
+      {
+        "en": "She bought a couple of books.",
+        "vi": "Cô ấy đã mua một vài cuốn sách."
+      }
+    ],
+    "collocations": [
+      "a couple of days",
+      "a couple of hours",
+      "a couple of people"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How many apples did you buy?"
+      },
+      {
+        "speaker": "B",
+        "text": "Just a couple of them."
+      }
+    ]
+  },
+  {
+    "phrase": "a lot of",
+    "meaning_vi": "nhiều",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "There are a lot of people here.",
+        "vi": "Ở đây có rất nhiều người."
+      },
+      {
+        "en": "I have a lot of work to do.",
+        "vi": "Tôi có nhiều việc phải làm."
+      }
+    ],
+    "collocations": [
+      "a lot of money",
+      "a lot of time",
+      "a lot of fun"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you have many friends?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I have a lot of friends."
+      }
+    ]
+  }
+]

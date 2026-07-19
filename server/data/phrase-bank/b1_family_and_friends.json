@@ -1,0 +1,485 @@
+[
+  {
+    "phrase": "get along with",
+    "meaning_vi": "hòa thuận với",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I get along with my brother.",
+        "vi": "Tôi hòa thuận với anh trai."
+      },
+      {
+        "en": "Do you get along with your colleagues?",
+        "vi": "Bạn có hòa thuận với đồng nghiệp không?"
+      }
+    ],
+    "collocations": [
+      "get along well with",
+      "get along with someone",
+      "get along with each other"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How do you get along with your new roommate?"
+      },
+      {
+        "speaker": "B",
+        "text": "We get along very well."
+      }
+    ]
+  },
+  {
+    "phrase": "look up to",
+    "meaning_vi": "ngưỡng mộ, kính trọng",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I look up to my father.",
+        "vi": "Tôi ngưỡng mộ bố tôi."
+      },
+      {
+        "en": "She looks up to her teacher.",
+        "vi": "Cô ấy kính trọng giáo viên của mình."
+      }
+    ],
+    "collocations": [
+      "look up to someone",
+      "look up to as a role model",
+      "look up to for advice"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Who do you look up to?"
+      },
+      {
+        "speaker": "B",
+        "text": "I look up to my older sister."
+      }
+    ]
+  },
+  {
+    "phrase": "bring up",
+    "meaning_vi": "nuôi dưỡng, đề cập",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "She was brought up by her grandparents.",
+        "vi": "Cô ấy được ông bà nuôi dưỡng."
+      },
+      {
+        "en": "Don't bring up that topic again.",
+        "vi": "Đừng đề cập lại chủ đề đó nữa."
+      }
+    ],
+    "collocations": [
+      "bring up children",
+      "bring up a topic",
+      "bring up in conversation"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Who brought you up?"
+      },
+      {
+        "speaker": "B",
+        "text": "My parents brought me up."
+      }
+    ]
+  },
+  {
+    "phrase": "take after",
+    "meaning_vi": "giống (tính cách, ngoại hình)",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "He takes after his mother.",
+        "vi": "Anh ấy giống mẹ."
+      },
+      {
+        "en": "I take after my dad in personality.",
+        "vi": "Tôi giống bố về tính cách."
+      }
+    ],
+    "collocations": [
+      "take after someone",
+      "take after in looks",
+      "take after in character"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "You look like your father."
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I take after him."
+      }
+    ]
+  },
+  {
+    "phrase": "grow up",
+    "meaning_vi": "lớn lên",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I grew up in a small town.",
+        "vi": "Tôi lớn lên ở một thị trấn nhỏ."
+      },
+      {
+        "en": "What do you want to be when you grow up?",
+        "vi": "Bạn muốn làm gì khi lớn lên?"
+      }
+    ],
+    "collocations": [
+      "grow up together",
+      "grow up with",
+      "grow up in"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Where did you grow up?"
+      },
+      {
+        "speaker": "B",
+        "text": "I grew up in Hanoi."
+      }
+    ]
+  },
+  {
+    "phrase": "count on",
+    "meaning_vi": "tin tưởng, dựa vào",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "You can count on me.",
+        "vi": "Bạn có thể tin tưởng tôi."
+      },
+      {
+        "en": "I count on my friends for support.",
+        "vi": "Tôi dựa vào bạn bè để được hỗ trợ."
+      }
+    ],
+    "collocations": [
+      "count on someone",
+      "count on help",
+      "count on support"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Can I count on you to help?"
+      },
+      {
+        "speaker": "B",
+        "text": "Of course, you can count on me."
+      }
+    ]
+  },
+  {
+    "phrase": "fall out with",
+    "meaning_vi": "cãi nhau, bất hòa với",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I fell out with my best friend.",
+        "vi": "Tôi đã cãi nhau với bạn thân."
+      },
+      {
+        "en": "They fell out over money.",
+        "vi": "Họ bất hòa vì tiền."
+      }
+    ],
+    "collocations": [
+      "fall out with someone",
+      "fall out over something",
+      "fall out badly"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Why did you fall out with Tom?"
+      },
+      {
+        "speaker": "B",
+        "text": "We fell out over a misunderstanding."
+      }
+    ]
+  },
+  {
+    "phrase": "make up",
+    "meaning_vi": "làm hòa",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "They made up after the argument.",
+        "vi": "Họ làm hòa sau cuộc tranh cãi."
+      },
+      {
+        "en": "We need to make up with each other.",
+        "vi": "Chúng ta cần làm hòa với nhau."
+      }
+    ],
+    "collocations": [
+      "make up with someone",
+      "make up after a fight",
+      "make up and forgive"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Did you and your sister make up?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, we made up yesterday."
+      }
+    ]
+  },
+  {
+    "phrase": "close-knit family",
+    "meaning_vi": "gia đình gắn bó",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "We are a close-knit family.",
+        "vi": "Chúng tôi là một gia đình gắn bó."
+      },
+      {
+        "en": "They have a close-knit family.",
+        "vi": "Họ có một gia đình gắn bó."
+      }
+    ],
+    "collocations": [
+      "close-knit community",
+      "close-knit group",
+      "close relationship"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Your family seems very close."
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, we are a close-knit family."
+      }
+    ]
+  },
+  {
+    "phrase": "blood is thicker than water",
+    "meaning_vi": "một giọt máu đào hơn ao nước lã",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "Family always comes first; blood is thicker than water.",
+        "vi": "Gia đình luôn là trên hết; một giọt máu đào hơn ao nước lã."
+      },
+      {
+        "en": "I know we argue, but blood is thicker than water.",
+        "vi": "Tôi biết chúng ta hay cãi nhau, nhưng một giọt máu đào hơn ao nước lã."
+      }
+    ],
+    "collocations": [],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Why do you always help your brother?"
+      },
+      {
+        "speaker": "B",
+        "text": "Because blood is thicker than water."
+      }
+    ]
+  },
+  {
+    "phrase": "like two peas in a pod",
+    "meaning_vi": "giống nhau như hai giọt nước",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "The twins are like two peas in a pod.",
+        "vi": "Cặp song sinh giống nhau như hai giọt nước."
+      },
+      {
+        "en": "My sister and I are like two peas in a pod.",
+        "vi": "Chị tôi và tôi giống nhau như hai giọt nước."
+      }
+    ],
+    "collocations": [],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "You and your cousin are so similar."
+      },
+      {
+        "speaker": "B",
+        "text": "We are like two peas in a pod."
+      }
+    ]
+  },
+  {
+    "phrase": "black sheep of the family",
+    "meaning_vi": "con sâu làm rầu nồi canh",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "He is the black sheep of the family.",
+        "vi": "Anh ấy là con sâu làm rầu nồi canh."
+      },
+      {
+        "en": "I don't want to be the black sheep.",
+        "vi": "Tôi không muốn làm con sâu làm rầu nồi canh."
+      }
+    ],
+    "collocations": [],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Why does your family treat you differently?"
+      },
+      {
+        "speaker": "B",
+        "text": "Because I'm the black sheep of the family."
+      }
+    ]
+  },
+  {
+    "phrase": "to see eye to eye",
+    "meaning_vi": "đồng quan điểm",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "We don't see eye to eye on politics.",
+        "vi": "Chúng tôi không đồng quan điểm về chính trị."
+      },
+      {
+        "en": "They see eye to eye on most issues.",
+        "vi": "Họ đồng quan điểm về hầu hết các vấn đề."
+      }
+    ],
+    "collocations": [
+      "see eye to eye with someone",
+      "see eye to eye on something"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you and your father see eye to eye?"
+      },
+      {
+        "speaker": "B",
+        "text": "Not always, but we respect each other."
+      }
+    ]
+  },
+  {
+    "phrase": "a shoulder to cry on",
+    "meaning_vi": "bờ vai để dựa vào",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "She is always a shoulder to cry on.",
+        "vi": "Cô ấy luôn là bờ vai để dựa vào."
+      },
+      {
+        "en": "I need a shoulder to cry on.",
+        "vi": "Tôi cần một bờ vai để dựa vào."
+      }
+    ],
+    "collocations": [
+      "be a shoulder to cry on",
+      "need a shoulder to cry on",
+      "offer a shoulder to cry on"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I'm feeling really sad."
+      },
+      {
+        "speaker": "B",
+        "text": "I can be a shoulder to cry on."
+      }
+    ]
+  },
+  {
+    "phrase": "to hit it off",
+    "meaning_vi": "hợp nhau ngay lập tức",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "We hit it off immediately.",
+        "vi": "Chúng tôi hợp nhau ngay lập tức."
+      },
+      {
+        "en": "They hit it off at the party.",
+        "vi": "Họ hợp nhau ngay tại bữa tiệc."
+      }
+    ],
+    "collocations": [
+      "hit it off with someone",
+      "hit it off immediately",
+      "really hit it off"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How did you and your best friend meet?"
+      },
+      {
+        "speaker": "B",
+        "text": "We met at school and hit it off."
+      }
+    ]
+  },
+  {
+    "phrase": "to bury the hatchet",
+    "meaning_vi": "gác lại mâu thuẫn, làm hòa",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "Let's bury the hatchet and move on.",
+        "vi": "Hãy gác lại mâu thuẫn và tiếp tục."
+      },
+      {
+        "en": "They decided to bury the hatchet.",
+        "vi": "Họ quyết định làm hòa."
+      }
+    ],
+    "collocations": [
+      "bury the hatchet with someone",
+      "decide to bury the hatchet",
+      "bury the hatchet and forgive"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I'm tired of fighting with you."
+      },
+      {
+        "speaker": "B",
+        "text": "Me too. Let's bury the hatchet."
+      }
+    ]
+  }
+]

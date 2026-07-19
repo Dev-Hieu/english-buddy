@@ -1,0 +1,250 @@
+[
+  {
+    "phrase": "ward off",
+    "meaning_vi": "ngăn chặn, phòng tránh",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Eating citrus fruits can help ward off colds.",
+        "vi": "Ăn trái cây họ cam quýt có thể giúp phòng tránh cảm lạnh."
+      },
+      {
+        "en": "Regular exercise wards off many diseases.",
+        "vi": "Tập thể dục thường xuyên ngăn chặn nhiều bệnh tật."
+      }
+    ],
+    "collocations": [
+      "ward off illness",
+      "ward off infection",
+      "ward off disease"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you think vitamin C really helps?"
+      },
+      {
+        "speaker": "B",
+        "text": "Absolutely, it's known to ward off colds."
+      }
+    ]
+  },
+  {
+    "phrase": "fight off",
+    "meaning_vi": "chống lại, đẩy lùi (bệnh tật)",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Her immune system fought off the virus.",
+        "vi": "Hệ miễn dịch của cô ấy đã đẩy lùi virus."
+      },
+      {
+        "en": "He's fighting off a bad cold.",
+        "vi": "Anh ấy đang chống chọi với cảm lạnh nặng."
+      }
+    ],
+    "collocations": [
+      "fight off infection",
+      "fight off a cold",
+      "fight off disease"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How are you feeling?"
+      },
+      {
+        "speaker": "B",
+        "text": "Still fighting off this flu, but getting better."
+      }
+    ]
+  },
+  {
+    "phrase": "come down with",
+    "meaning_vi": "mắc bệnh (thường là bệnh nhẹ)",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I think I'm coming down with a cold.",
+        "vi": "Tôi nghĩ tôi sắp bị cảm lạnh."
+      },
+      {
+        "en": "She came down with the flu last week.",
+        "vi": "Cô ấy bị cúm tuần trước."
+      }
+    ],
+    "collocations": [
+      "come down with a cold",
+      "come down with the flu",
+      "come down with something"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "You look pale. Are you okay?"
+      },
+      {
+        "speaker": "B",
+        "text": "I think I'm coming down with something."
+      }
+    ]
+  },
+  {
+    "phrase": "pass out",
+    "meaning_vi": "ngất xỉu",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "He passed out from the heat.",
+        "vi": "Anh ấy ngất xỉu vì nóng."
+      },
+      {
+        "en": "She nearly passed out when she saw the blood.",
+        "vi": "Cô ấy suýt ngất khi thấy máu."
+      }
+    ],
+    "collocations": [
+      "pass out from exhaustion",
+      "pass out from pain",
+      "pass out from dehydration"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What happened to him?"
+      },
+      {
+        "speaker": "B",
+        "text": "He passed out due to the heat."
+      }
+    ]
+  },
+  {
+    "phrase": "throw up",
+    "meaning_vi": "nôn mửa",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "The smell made me throw up.",
+        "vi": "Mùi đó khiến tôi nôn."
+      },
+      {
+        "en": "She threw up after eating spoiled food.",
+        "vi": "Cô ấy nôn sau khi ăn đồ hỏng."
+      }
+    ],
+    "collocations": [
+      "throw up violently",
+      "throw up repeatedly",
+      "feel like throwing up"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Are you feeling sick?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I think I'm going to throw up."
+      }
+    ]
+  },
+  {
+    "phrase": "break out in",
+    "meaning_vi": "nổi (mụn, mẩn ngứa)",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "She broke out in a rash after eating shellfish.",
+        "vi": "Cô ấy nổi mẩn ngứa sau khi ăn hải sản."
+      },
+      {
+        "en": "He broke out in hives from stress.",
+        "vi": "Anh ấy nổi mề đay vì căng thẳng."
+      }
+    ],
+    "collocations": [
+      "break out in a rash",
+      "break out in hives",
+      "break out in spots"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Why is your arm so red?"
+      },
+      {
+        "speaker": "B",
+        "text": "I broke out in a rash from that lotion."
+      }
+    ]
+  },
+  {
+    "phrase": "work out",
+    "meaning_vi": "tập thể dục",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I work out at the gym three times a week.",
+        "vi": "Tôi tập gym ba lần một tuần."
+      },
+      {
+        "en": "She works out to stay fit.",
+        "vi": "Cô ấy tập thể dục để giữ dáng."
+      }
+    ],
+    "collocations": [
+      "work out regularly",
+      "work out hard",
+      "work out at the gym"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How do you stay in shape?"
+      },
+      {
+        "speaker": "B",
+        "text": "I work out every morning."
+      }
+    ]
+  },
+  {
+    "phrase": "get over",
+    "meaning_vi": "khỏi bệnh, vượt qua (bệnh tật)",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "It took her a week to get over the flu.",
+        "vi": "Cô ấy mất một tuần để khỏi cúm."
+      },
+      {
+        "en": "He still hasn't gotten over that cold.",
+        "vi": "Anh ấy vẫn chưa khỏi cảm lạnh."
+      }
+    ],
+    "collocations": [
+      "get over an illness",
+      "get over a cold",
+      "get over the flu"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Are you feeling better now?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I finally got over that nasty bug."
+      }
+    ]
+  }
+]

@@ -1,0 +1,250 @@
+[
+  {
+    "phrase": "get up",
+    "meaning_vi": "thức dậy",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I get up at 6 every morning.",
+        "vi": "Tôi thức dậy lúc 6 giờ mỗi sáng."
+      },
+      {
+        "en": "What time do you get up?",
+        "vi": "Bạn thức dậy lúc mấy giờ?"
+      }
+    ],
+    "collocations": [
+      "get up early",
+      "get up late",
+      "get up on time"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What time do you usually get up?"
+      },
+      {
+        "speaker": "B",
+        "text": "I usually get up at seven."
+      }
+    ]
+  },
+  {
+    "phrase": "go to work",
+    "meaning_vi": "đi làm",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I go to work by bus.",
+        "vi": "Tôi đi làm bằng xe buýt."
+      },
+      {
+        "en": "She goes to work at 8 am.",
+        "vi": "Cô ấy đi làm lúc 8 giờ sáng."
+      }
+    ],
+    "collocations": [
+      "go to work by car",
+      "go to work on foot",
+      "go to work early"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How do you go to work?"
+      },
+      {
+        "speaker": "B",
+        "text": "I go to work by bike."
+      }
+    ]
+  },
+  {
+    "phrase": "finish work",
+    "meaning_vi": "tan làm",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I finish work at 5 pm.",
+        "vi": "Tôi tan làm lúc 5 giờ chiều."
+      },
+      {
+        "en": "When do you finish work?",
+        "vi": "Khi nào bạn tan làm?"
+      }
+    ],
+    "collocations": [
+      "finish work early",
+      "finish work late",
+      "finish work on time"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What time do you finish work?"
+      },
+      {
+        "speaker": "B",
+        "text": "I finish work at six."
+      }
+    ]
+  },
+  {
+    "phrase": "have a job",
+    "meaning_vi": "có việc làm",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I have a job in a hospital.",
+        "vi": "Tôi có việc làm ở bệnh viện."
+      },
+      {
+        "en": "She has a job as a teacher.",
+        "vi": "Cô ấy có việc làm là giáo viên."
+      }
+    ],
+    "collocations": [
+      "have a full-time job",
+      "have a part-time job",
+      "have a good job"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you have a job?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I have a job in an office."
+      }
+    ]
+  },
+  {
+    "phrase": "look for a job",
+    "meaning_vi": "tìm việc",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I am looking for a job.",
+        "vi": "Tôi đang tìm việc."
+      },
+      {
+        "en": "He looks for a job every day.",
+        "vi": "Anh ấy tìm việc mỗi ngày."
+      }
+    ],
+    "collocations": [
+      "look for a new job",
+      "look for a better job",
+      "look for a job online"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What are you doing?"
+      },
+      {
+        "speaker": "B",
+        "text": "I'm looking for a job."
+      }
+    ]
+  },
+  {
+    "phrase": "take a break",
+    "meaning_vi": "nghỉ giải lao",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "Let's take a break.",
+        "vi": "Chúng ta hãy nghỉ giải lao."
+      },
+      {
+        "en": "I take a break at 10 am.",
+        "vi": "Tôi nghỉ giải lao lúc 10 giờ sáng."
+      }
+    ],
+    "collocations": [
+      "take a short break",
+      "take a coffee break",
+      "take a lunch break"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Are you tired?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, let's take a break."
+      }
+    ]
+  },
+  {
+    "phrase": "work hard",
+    "meaning_vi": "làm việc chăm chỉ",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "She works hard every day.",
+        "vi": "Cô ấy làm việc chăm chỉ mỗi ngày."
+      },
+      {
+        "en": "You need to work hard.",
+        "vi": "Bạn cần phải làm việc chăm chỉ."
+      }
+    ],
+    "collocations": [
+      "work hard at the office",
+      "work hard on a project",
+      "work hard for money"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How is your new job?"
+      },
+      {
+        "speaker": "B",
+        "text": "I work hard, but I like it."
+      }
+    ]
+  },
+  {
+    "phrase": "start work",
+    "meaning_vi": "bắt đầu làm việc",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I start work at 9 am.",
+        "vi": "Tôi bắt đầu làm việc lúc 9 giờ sáng."
+      },
+      {
+        "en": "When do you start work?",
+        "vi": "Khi nào bạn bắt đầu làm việc?"
+      }
+    ],
+    "collocations": [
+      "start work early",
+      "start work late",
+      "start work tomorrow"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What time do you start work?"
+      },
+      {
+        "speaker": "B",
+        "text": "I start work at eight."
+      }
+    ]
+  }
+]

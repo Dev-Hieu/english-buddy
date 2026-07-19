@@ -1,0 +1,250 @@
+[
+  {
+    "phrase": "get up",
+    "meaning_vi": "thức dậy",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I get up at 6 every morning.",
+        "vi": "Tôi thức dậy lúc 6 giờ mỗi sáng."
+      },
+      {
+        "en": "What time do you get up?",
+        "vi": "Bạn thức dậy lúc mấy giờ?"
+      }
+    ],
+    "collocations": [
+      "get up early",
+      "get up late",
+      "get up on time"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What time do you usually get up?"
+      },
+      {
+        "speaker": "B",
+        "text": "I usually get up at seven."
+      }
+    ]
+  },
+  {
+    "phrase": "go to bed",
+    "meaning_vi": "đi ngủ",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I go to bed at 10 p.m.",
+        "vi": "Tôi đi ngủ lúc 10 giờ tối."
+      },
+      {
+        "en": "She goes to bed early.",
+        "vi": "Cô ấy đi ngủ sớm."
+      }
+    ],
+    "collocations": [
+      "go to bed early",
+      "go to bed late",
+      "go to bed at 11"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What time do you go to bed?"
+      },
+      {
+        "speaker": "B",
+        "text": "I go to bed at 10."
+      }
+    ]
+  },
+  {
+    "phrase": "make the bed",
+    "meaning_vi": "dọn giường",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I make the bed every morning.",
+        "vi": "Tôi dọn giường mỗi sáng."
+      },
+      {
+        "en": "Please make your bed.",
+        "vi": "Làm ơn dọn giường của bạn."
+      }
+    ],
+    "collocations": [
+      "make the bed",
+      "make my bed",
+      "make your bed"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you make your bed?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I make it every day."
+      }
+    ]
+  },
+  {
+    "phrase": "do the dishes",
+    "meaning_vi": "rửa bát",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I do the dishes after dinner.",
+        "vi": "Tôi rửa bát sau bữa tối."
+      },
+      {
+        "en": "Who does the dishes in your house?",
+        "vi": "Ai rửa bát trong nhà bạn?"
+      }
+    ],
+    "collocations": [
+      "do the dishes",
+      "wash the dishes",
+      "do the washing-up"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Can you do the dishes?"
+      },
+      {
+        "speaker": "B",
+        "text": "Sure, I'll do them now."
+      }
+    ]
+  },
+  {
+    "phrase": "take a shower",
+    "meaning_vi": "tắm vòi sen",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I take a shower in the morning.",
+        "vi": "Tôi tắm vòi sen vào buổi sáng."
+      },
+      {
+        "en": "She takes a shower before bed.",
+        "vi": "Cô ấy tắm vòi sen trước khi đi ngủ."
+      }
+    ],
+    "collocations": [
+      "take a shower",
+      "take a bath",
+      "have a shower"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you take a shower in the morning?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I always take a shower."
+      }
+    ]
+  },
+  {
+    "phrase": "come home",
+    "meaning_vi": "về nhà",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I come home at 5 p.m.",
+        "vi": "Tôi về nhà lúc 5 giờ chiều."
+      },
+      {
+        "en": "When do you come home?",
+        "vi": "Khi nào bạn về nhà?"
+      }
+    ],
+    "collocations": [
+      "come home late",
+      "come home early",
+      "come home from work"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What time do you come home?"
+      },
+      {
+        "speaker": "B",
+        "text": "I come home at six."
+      }
+    ]
+  },
+  {
+    "phrase": "turn on the light",
+    "meaning_vi": "bật đèn",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "Please turn on the light.",
+        "vi": "Làm ơn bật đèn lên."
+      },
+      {
+        "en": "I turn on the light when I enter the room.",
+        "vi": "Tôi bật đèn khi vào phòng."
+      }
+    ],
+    "collocations": [
+      "turn on the light",
+      "turn off the light",
+      "switch on the light"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "It's dark. Can you turn on the light?"
+      },
+      {
+        "speaker": "B",
+        "text": "Sure, I'll turn it on."
+      }
+    ]
+  },
+  {
+    "phrase": "wash the clothes",
+    "meaning_vi": "giặt quần áo",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I wash the clothes on Sunday.",
+        "vi": "Tôi giặt quần áo vào Chủ nhật."
+      },
+      {
+        "en": "She washes the clothes by hand.",
+        "vi": "Cô ấy giặt quần áo bằng tay."
+      }
+    ],
+    "collocations": [
+      "wash the clothes",
+      "do the laundry",
+      "wash clothes"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "When do you wash the clothes?"
+      },
+      {
+        "speaker": "B",
+        "text": "I wash them on weekends."
+      }
+    ]
+  }
+]

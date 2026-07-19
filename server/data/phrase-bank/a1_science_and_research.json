@@ -1,0 +1,250 @@
+[
+  {
+    "phrase": "carry out",
+    "meaning_vi": "tiến hành",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "We carry out experiments in the lab.",
+        "vi": "Chúng tôi tiến hành thí nghiệm trong phòng thí nghiệm."
+      },
+      {
+        "en": "The scientists carry out research every day.",
+        "vi": "Các nhà khoa học tiến hành nghiên cứu mỗi ngày."
+      }
+    ],
+    "collocations": [
+      "carry out an experiment",
+      "carry out a study",
+      "carry out research"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What do you do in the lab?"
+      },
+      {
+        "speaker": "B",
+        "text": "We carry out experiments."
+      }
+    ]
+  },
+  {
+    "phrase": "find out",
+    "meaning_vi": "tìm ra, khám phá",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I want to find out the answer.",
+        "vi": "Tôi muốn tìm ra câu trả lời."
+      },
+      {
+        "en": "Did you find out why it happened?",
+        "vi": "Bạn có tìm ra tại sao nó xảy ra không?"
+      }
+    ],
+    "collocations": [
+      "find out the truth",
+      "find out the reason",
+      "find out how"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Did you find out the answer?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I found out it is because of heat."
+      }
+    ]
+  },
+  {
+    "phrase": "look into",
+    "meaning_vi": "xem xét, điều tra",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "The team will look into the problem.",
+        "vi": "Nhóm sẽ xem xét vấn đề."
+      },
+      {
+        "en": "We need to look into this data.",
+        "vi": "Chúng ta cần xem xét dữ liệu này."
+      }
+    ],
+    "collocations": [
+      "look into the matter",
+      "look into the issue",
+      "look into the cause"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What should we do about the error?"
+      },
+      {
+        "speaker": "B",
+        "text": "We need to look into it."
+      }
+    ]
+  },
+  {
+    "phrase": "set up",
+    "meaning_vi": "thiết lập, dựng lên",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "They set up the equipment in the lab.",
+        "vi": "Họ thiết lập thiết bị trong phòng thí nghiệm."
+      },
+      {
+        "en": "We set up a new experiment today.",
+        "vi": "Hôm nay chúng tôi thiết lập một thí nghiệm mới."
+      }
+    ],
+    "collocations": [
+      "set up an experiment",
+      "set up a lab",
+      "set up equipment"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Have you set up the experiment?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, we set it up this morning."
+      }
+    ]
+  },
+  {
+    "phrase": "take part in",
+    "meaning_vi": "tham gia vào",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "Many students take part in the science fair.",
+        "vi": "Nhiều sinh viên tham gia hội chợ khoa học."
+      },
+      {
+        "en": "Do you want to take part in the study?",
+        "vi": "Bạn có muốn tham gia nghiên cứu không?"
+      }
+    ],
+    "collocations": [
+      "take part in a project",
+      "take part in an experiment",
+      "take part in research"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Are you taking part in the experiment?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I am taking part in it."
+      }
+    ]
+  },
+  {
+    "phrase": "make a discovery",
+    "meaning_vi": "khám phá ra",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "The scientist made a big discovery.",
+        "vi": "Nhà khoa học đã khám phá ra một điều lớn."
+      },
+      {
+        "en": "They made a discovery about plants.",
+        "vi": "Họ đã khám phá ra về thực vật."
+      }
+    ],
+    "collocations": [
+      "make a new discovery",
+      "make an important discovery",
+      "make a scientific discovery"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What did the scientist do?"
+      },
+      {
+        "speaker": "B",
+        "text": "He made a discovery about space."
+      }
+    ]
+  },
+  {
+    "phrase": "do research",
+    "meaning_vi": "làm nghiên cứu",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I do research on biology.",
+        "vi": "Tôi làm nghiên cứu về sinh học."
+      },
+      {
+        "en": "She does research in the lab every day.",
+        "vi": "Cô ấy làm nghiên cứu trong phòng thí nghiệm mỗi ngày."
+      }
+    ],
+    "collocations": [
+      "do scientific research",
+      "do research on",
+      "do research in"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What do you do at the university?"
+      },
+      {
+        "speaker": "B",
+        "text": "I do research on climate change."
+      }
+    ]
+  },
+  {
+    "phrase": "test a hypothesis",
+    "meaning_vi": "kiểm tra giả thuyết",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "We need to test this hypothesis.",
+        "vi": "Chúng ta cần kiểm tra giả thuyết này."
+      },
+      {
+        "en": "They tested the hypothesis and it was correct.",
+        "vi": "Họ đã kiểm tra giả thuyết và nó đúng."
+      }
+    ],
+    "collocations": [
+      "test a scientific hypothesis",
+      "test the hypothesis",
+      "test a hypothesis with data"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What is the next step?"
+      },
+      {
+        "speaker": "B",
+        "text": "We test our hypothesis."
+      }
+    ]
+  }
+]

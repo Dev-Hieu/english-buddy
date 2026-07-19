@@ -1,0 +1,374 @@
+[
+  {
+    "phrase": "check in",
+    "meaning_vi": "làm thủ tục nhận phòng (khách sạn, sân bay)",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "We need to check in at the hotel before 3 PM.",
+        "vi": "Chúng tôi cần làm thủ tục nhận phòng khách sạn trước 3 giờ chiều."
+      },
+      {
+        "en": "Please check in online to save time.",
+        "vi": "Vui lòng làm thủ tục trực tuyến để tiết kiệm thời gian."
+      }
+    ],
+    "collocations": [
+      "check in online",
+      "check in at the airport",
+      "check in to a hotel"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What time do we check in?"
+      },
+      {
+        "speaker": "B",
+        "text": "We can check in from 2 PM."
+      }
+    ]
+  },
+  {
+    "phrase": "check out",
+    "meaning_vi": "làm thủ tục trả phòng (khách sạn)",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "We have to check out by 12 noon.",
+        "vi": "Chúng tôi phải trả phòng trước 12 giờ trưa."
+      },
+      {
+        "en": "Can we check out later?",
+        "vi": "Chúng tôi có thể trả phòng muộn hơn không?"
+      }
+    ],
+    "collocations": [
+      "check out of a hotel",
+      "check out time",
+      "late check out"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What time is check out?"
+      },
+      {
+        "speaker": "B",
+        "text": "Check out is at 11 AM."
+      }
+    ]
+  },
+  {
+    "phrase": "call back",
+    "meaning_vi": "gọi lại (điện thoại)",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I'll call you back in a few minutes.",
+        "vi": "Tôi sẽ gọi lại cho bạn trong vài phút nữa."
+      },
+      {
+        "en": "Please ask him to call me back.",
+        "vi": "Vui lòng yêu cầu anh ấy gọi lại cho tôi."
+      }
+    ],
+    "collocations": [
+      "call back later",
+      "call someone back",
+      "call back as soon as possible"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Can I speak to Mr. Smith?"
+      },
+      {
+        "speaker": "B",
+        "text": "He's busy. Can you call back later?"
+      }
+    ]
+  },
+  {
+    "phrase": "sign up",
+    "meaning_vi": "đăng ký (tham gia)",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I want to sign up for a gym membership.",
+        "vi": "Tôi muốn đăng ký hội viên phòng tập."
+      },
+      {
+        "en": "You can sign up online.",
+        "vi": "Bạn có thể đăng ký trực tuyến."
+      }
+    ],
+    "collocations": [
+      "sign up for a class",
+      "sign up for a service",
+      "sign up online"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How do I sign up for the course?"
+      },
+      {
+        "speaker": "B",
+        "text": "Just fill out this form."
+      }
+    ]
+  },
+  {
+    "phrase": "pick up",
+    "meaning_vi": "đón, nhặt, lấy",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Can you pick me up at the airport?",
+        "vi": "Bạn có thể đón tôi ở sân bay không?"
+      },
+      {
+        "en": "I need to pick up my dry cleaning.",
+        "vi": "Tôi cần lấy đồ giặt khô."
+      }
+    ],
+    "collocations": [
+      "pick up someone",
+      "pick up something",
+      "pick up the phone"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What time should I pick you up?"
+      },
+      {
+        "speaker": "B",
+        "text": "Please pick me up at 7 PM."
+      }
+    ]
+  },
+  {
+    "phrase": "drop off",
+    "meaning_vi": "thả (ai đó), gửi (đồ)",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I can drop you off at the station.",
+        "vi": "Tôi có thể thả bạn ở nhà ga."
+      },
+      {
+        "en": "Please drop off the package at the post office.",
+        "vi": "Vui lòng gửi bưu kiện ở bưu điện."
+      }
+    ],
+    "collocations": [
+      "drop off someone",
+      "drop off something",
+      "drop off at the door"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Where should I drop you off?"
+      },
+      {
+        "speaker": "B",
+        "text": "You can drop me off at the mall."
+      }
+    ]
+  },
+  {
+    "phrase": "turn on",
+    "meaning_vi": "bật (thiết bị)",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Please turn on the air conditioner.",
+        "vi": "Vui lòng bật máy lạnh."
+      },
+      {
+        "en": "I can't turn on the TV.",
+        "vi": "Tôi không thể bật TV."
+      }
+    ],
+    "collocations": [
+      "turn on the light",
+      "turn on the computer",
+      "turn on the fan"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "It's hot in here. Can you turn on the fan?"
+      },
+      {
+        "speaker": "B",
+        "text": "Sure, I'll turn it on."
+      }
+    ]
+  },
+  {
+    "phrase": "turn off",
+    "meaning_vi": "tắt (thiết bị)",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Don't forget to turn off the lights.",
+        "vi": "Đừng quên tắt đèn."
+      },
+      {
+        "en": "Please turn off your phone during the movie.",
+        "vi": "Vui lòng tắt điện thoại trong suốt bộ phim."
+      }
+    ],
+    "collocations": [
+      "turn off the TV",
+      "turn off the engine",
+      "turn off the tap"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Should I turn off the computer?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, turn it off when you leave."
+      }
+    ]
+  },
+  {
+    "phrase": "fill out",
+    "meaning_vi": "điền vào (đơn, mẫu)",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Please fill out this form.",
+        "vi": "Vui lòng điền vào mẫu đơn này."
+      },
+      {
+        "en": "I need to fill out an application.",
+        "vi": "Tôi cần điền đơn xin việc."
+      }
+    ],
+    "collocations": [
+      "fill out a form",
+      "fill out an application",
+      "fill out a survey"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do I need to fill out anything?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, please fill out this registration form."
+      }
+    ]
+  },
+  {
+    "phrase": "look for",
+    "meaning_vi": "tìm kiếm",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I'm looking for a good restaurant.",
+        "vi": "Tôi đang tìm một nhà hàng ngon."
+      },
+      {
+        "en": "What are you looking for?",
+        "vi": "Bạn đang tìm gì thế?"
+      }
+    ],
+    "collocations": [
+      "look for a job",
+      "look for information",
+      "look for a place"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Can I help you?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I'm looking for a pharmacy."
+      }
+    ]
+  },
+  {
+    "phrase": "ask for",
+    "meaning_vi": "yêu cầu, xin",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "You can ask for help at the front desk.",
+        "vi": "Bạn có thể yêu cầu trợ giúp ở quầy lễ tân."
+      },
+      {
+        "en": "He asked for the bill.",
+        "vi": "Anh ấy yêu cầu hóa đơn."
+      }
+    ],
+    "collocations": [
+      "ask for directions",
+      "ask for permission",
+      "ask for a discount"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What should I do if I'm lost?"
+      },
+      {
+        "speaker": "B",
+        "text": "Just ask for directions at the information desk."
+      }
+    ]
+  },
+  {
+    "phrase": "wait for",
+    "meaning_vi": "chờ đợi",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Please wait for me at the entrance.",
+        "vi": "Vui lòng chờ tôi ở lối vào."
+      },
+      {
+        "en": "We are waiting for the bus.",
+        "vi": "Chúng tôi đang chờ xe buýt."
+      }
+    ],
+    "collocations": [
+      "wait for someone",
+      "wait for a bus",
+      "wait for an answer"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Where should I wait for you?"
+      },
+      {
+        "speaker": "B",
+        "text": "Wait for me in front of the store."
+      }
+    ]
+  }
+]

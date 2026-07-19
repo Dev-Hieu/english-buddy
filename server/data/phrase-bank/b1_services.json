@@ -1,0 +1,498 @@
+[
+  {
+    "phrase": "pick up",
+    "meaning_vi": "đón (ai đó)",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I'll pick you up at the airport.",
+        "vi": "Tôi sẽ đón bạn ở sân bay."
+      },
+      {
+        "en": "Can you pick up the kids from school?",
+        "vi": "Bạn có thể đón bọn trẻ từ trường không?"
+      }
+    ],
+    "collocations": [
+      "pick up someone",
+      "pick up the phone",
+      "pick up speed"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What time should I pick you up?"
+      },
+      {
+        "speaker": "B",
+        "text": "Pick me up at 8 pm, please."
+      }
+    ]
+  },
+  {
+    "phrase": "drop off",
+    "meaning_vi": "thả (ai đó) xuống",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I can drop you off at the station.",
+        "vi": "Tôi có thể thả bạn ở ga."
+      },
+      {
+        "en": "She dropped off the package at the post office.",
+        "vi": "Cô ấy đã gửi gói hàng tại bưu điện."
+      }
+    ],
+    "collocations": [
+      "drop off someone",
+      "drop off a package",
+      "drop off to sleep"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Can you drop me off at the mall?"
+      },
+      {
+        "speaker": "B",
+        "text": "Sure, I'll drop you off on my way."
+      }
+    ]
+  },
+  {
+    "phrase": "look for",
+    "meaning_vi": "tìm kiếm",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I'm looking for a good restaurant.",
+        "vi": "Tôi đang tìm một nhà hàng ngon."
+      },
+      {
+        "en": "She is looking for her keys.",
+        "vi": "Cô ấy đang tìm chìa khóa."
+      }
+    ],
+    "collocations": [
+      "look for a job",
+      "look for an apartment",
+      "look for information"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What are you looking for?"
+      },
+      {
+        "speaker": "B",
+        "text": "I'm looking for my phone."
+      }
+    ]
+  },
+  {
+    "phrase": "turn on",
+    "meaning_vi": "bật (thiết bị)",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Please turn on the light.",
+        "vi": "Làm ơn bật đèn lên."
+      },
+      {
+        "en": "He turned on the computer.",
+        "vi": "Anh ấy đã bật máy tính."
+      }
+    ],
+    "collocations": [
+      "turn on the TV",
+      "turn on the air conditioner",
+      "turn on the faucet"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "It's dark in here. Can you turn on the light?"
+      },
+      {
+        "speaker": "B",
+        "text": "Sure, I'll turn it on."
+      }
+    ]
+  },
+  {
+    "phrase": "turn off",
+    "meaning_vi": "tắt (thiết bị)",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Don't forget to turn off the lights.",
+        "vi": "Đừng quên tắt đèn."
+      },
+      {
+        "en": "She turned off the TV and went to bed.",
+        "vi": "Cô ấy tắt TV và đi ngủ."
+      }
+    ],
+    "collocations": [
+      "turn off the engine",
+      "turn off the water",
+      "turn off the phone"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Should I turn off the computer?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, turn it off before you leave."
+      }
+    ]
+  },
+  {
+    "phrase": "put on",
+    "meaning_vi": "mặc (quần áo)",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Put on your coat; it's cold outside.",
+        "vi": "Mặc áo khoác vào; ngoài trời lạnh."
+      },
+      {
+        "en": "She put on her shoes and left.",
+        "vi": "Cô ấy mang giày và đi."
+      }
+    ],
+    "collocations": [
+      "put on clothes",
+      "put on makeup",
+      "put on a show"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What should I put on for the party?"
+      },
+      {
+        "speaker": "B",
+        "text": "Put on something nice."
+      }
+    ]
+  },
+  {
+    "phrase": "take off",
+    "meaning_vi": "cởi (quần áo); cất cánh (máy bay)",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Please take off your shoes before entering.",
+        "vi": "Làm ơn cởi giày trước khi vào."
+      },
+      {
+        "en": "The plane will take off in ten minutes.",
+        "vi": "Máy bay sẽ cất cánh trong mười phút nữa."
+      }
+    ],
+    "collocations": [
+      "take off clothes",
+      "take off shoes",
+      "take off the plane"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "When does the flight take off?"
+      },
+      {
+        "speaker": "B",
+        "text": "It takes off at 9 am."
+      }
+    ]
+  },
+  {
+    "phrase": "call back",
+    "meaning_vi": "gọi lại (điện thoại)",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I'll call you back later.",
+        "vi": "Tôi sẽ gọi lại cho bạn sau."
+      },
+      {
+        "en": "She didn't call me back.",
+        "vi": "Cô ấy đã không gọi lại cho tôi."
+      }
+    ],
+    "collocations": [
+      "call back someone",
+      "call back later",
+      "call back as soon as possible"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Can you call me back in an hour?"
+      },
+      {
+        "speaker": "B",
+        "text": "Sure, I'll call you back."
+      }
+    ]
+  },
+  {
+    "phrase": "get along with",
+    "meaning_vi": "hòa thuận với ai",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I get along with my colleagues.",
+        "vi": "Tôi hòa thuận với đồng nghiệp."
+      },
+      {
+        "en": "Do you get along with your neighbors?",
+        "vi": "Bạn có hòa thuận với hàng xóm không?"
+      }
+    ],
+    "collocations": [
+      "get along with someone",
+      "get along well",
+      "get along fine"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How do you get along with your roommate?"
+      },
+      {
+        "speaker": "B",
+        "text": "We get along very well."
+      }
+    ]
+  },
+  {
+    "phrase": "run out of",
+    "meaning_vi": "hết (cái gì đó)",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "We've run out of milk.",
+        "vi": "Chúng ta đã hết sữa."
+      },
+      {
+        "en": "I ran out of money.",
+        "vi": "Tôi đã hết tiền."
+      }
+    ],
+    "collocations": [
+      "run out of time",
+      "run out of gas",
+      "run out of ideas"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do we have any sugar?"
+      },
+      {
+        "speaker": "B",
+        "text": "No, we've run out of sugar."
+      }
+    ]
+  },
+  {
+    "phrase": "come up with",
+    "meaning_vi": "nghĩ ra (ý tưởng, giải pháp)",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "He came up with a great idea.",
+        "vi": "Anh ấy đã nghĩ ra một ý tưởng tuyệt vời."
+      },
+      {
+        "en": "Can you come up with a solution?",
+        "vi": "Bạn có thể nghĩ ra giải pháp không?"
+      }
+    ],
+    "collocations": [
+      "come up with an idea",
+      "come up with a plan",
+      "come up with an answer"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "We need a new marketing strategy."
+      },
+      {
+        "speaker": "B",
+        "text": "Let me come up with something."
+      }
+    ]
+  },
+  {
+    "phrase": "deal with",
+    "meaning_vi": "giải quyết (vấn đề)",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I have to deal with this problem.",
+        "vi": "Tôi phải giải quyết vấn đề này."
+      },
+      {
+        "en": "She is good at dealing with customers.",
+        "vi": "Cô ấy giỏi giải quyết với khách hàng."
+      }
+    ],
+    "collocations": [
+      "deal with a problem",
+      "deal with a situation",
+      "deal with people"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Who will deal with this issue?"
+      },
+      {
+        "speaker": "B",
+        "text": "I'll deal with it."
+      }
+    ]
+  },
+  {
+    "phrase": "apply for",
+    "meaning_vi": "nộp đơn xin (việc, học bổng)",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I applied for a job at the bank.",
+        "vi": "Tôi đã nộp đơn xin việc ở ngân hàng."
+      },
+      {
+        "en": "She applied for a scholarship.",
+        "vi": "Cô ấy đã nộp đơn xin học bổng."
+      }
+    ],
+    "collocations": [
+      "apply for a job",
+      "apply for a visa",
+      "apply for a loan"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Have you applied for any jobs?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I applied for a position at a tech company."
+      }
+    ]
+  },
+  {
+    "phrase": "sign up",
+    "meaning_vi": "đăng ký (tham gia)",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I signed up for a yoga class.",
+        "vi": "Tôi đã đăng ký lớp học yoga."
+      },
+      {
+        "en": "You can sign up online.",
+        "vi": "Bạn có thể đăng ký trực tuyến."
+      }
+    ],
+    "collocations": [
+      "sign up for a course",
+      "sign up for a newsletter",
+      "sign up for an account"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Did you sign up for the workshop?"
+      },
+      {
+        "speaker": "B",
+        "text": "Not yet, I'll sign up later."
+      }
+    ]
+  },
+  {
+    "phrase": "set up",
+    "meaning_vi": "thiết lập, sắp xếp",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "We need to set up a meeting.",
+        "vi": "Chúng ta cần sắp xếp một cuộc họp."
+      },
+      {
+        "en": "She set up her own business.",
+        "vi": "Cô ấy đã thành lập doanh nghiệp riêng."
+      }
+    ],
+    "collocations": [
+      "set up a meeting",
+      "set up a system",
+      "set up an appointment"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Can you set up a time for us to meet?"
+      },
+      {
+        "speaker": "B",
+        "text": "Sure, I'll set up something for next week."
+      }
+    ]
+  },
+  {
+    "phrase": "check in",
+    "meaning_vi": "làm thủ tục (khách sạn, sân bay)",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "We checked in at the hotel at 3 pm.",
+        "vi": "Chúng tôi làm thủ tục nhận phòng khách sạn lúc 3 giờ chiều."
+      },
+      {
+        "en": "Please check in online before your flight.",
+        "vi": "Làm ơn làm thủ tục trực tuyến trước chuyến bay."
+      }
+    ],
+    "collocations": [
+      "check in at the airport",
+      "check in to a hotel",
+      "check in online"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What time can we check in?"
+      },
+      {
+        "speaker": "B",
+        "text": "Check-in is at 2 pm."
+      }
+    ]
+  }
+]

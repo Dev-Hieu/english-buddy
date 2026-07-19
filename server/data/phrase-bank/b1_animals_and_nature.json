@@ -1,0 +1,498 @@
+[
+  {
+    "phrase": "get up",
+    "meaning_vi": "thức dậy",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I get up at 6 every morning.",
+        "vi": "Tôi thức dậy lúc 6 giờ mỗi sáng."
+      },
+      {
+        "en": "What time do you get up?",
+        "vi": "Bạn thức dậy lúc mấy giờ?"
+      }
+    ],
+    "collocations": [
+      "get up early",
+      "get up late",
+      "get up on time"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What time do you usually get up?"
+      },
+      {
+        "speaker": "B",
+        "text": "I usually get up at seven."
+      }
+    ]
+  },
+  {
+    "phrase": "look after",
+    "meaning_vi": "chăm sóc",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "She looks after her younger brother.",
+        "vi": "Cô ấy chăm sóc em trai của mình."
+      },
+      {
+        "en": "Who will look after the plants while we're away?",
+        "vi": "Ai sẽ chăm sóc cây khi chúng ta đi vắng?"
+      }
+    ],
+    "collocations": [
+      "look after children",
+      "look after pets",
+      "look after the garden"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Can you look after my cat this weekend?"
+      },
+      {
+        "speaker": "B",
+        "text": "Sure, I love cats."
+      }
+    ]
+  },
+  {
+    "phrase": "run out of",
+    "meaning_vi": "hết, cạn kiệt",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "We ran out of water during the hike.",
+        "vi": "Chúng tôi đã hết nước trong chuyến đi bộ."
+      },
+      {
+        "en": "Don't run out of patience.",
+        "vi": "Đừng hết kiên nhẫn."
+      }
+    ],
+    "collocations": [
+      "run out of time",
+      "run out of food",
+      "run out of ideas"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "We've run out of gas for the stove."
+      },
+      {
+        "speaker": "B",
+        "text": "Let's use the fire pit instead."
+      }
+    ]
+  },
+  {
+    "phrase": "come across",
+    "meaning_vi": "tình cờ gặp, bắt gặp",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I came across a rare bird in the forest.",
+        "vi": "Tôi tình cờ bắt gặp một con chim quý trong rừng."
+      },
+      {
+        "en": "Have you ever come across a bear?",
+        "vi": "Bạn đã bao giờ tình cờ gặp gấu chưa?"
+      }
+    ],
+    "collocations": [
+      "come across an animal",
+      "come across a problem",
+      "come across an interesting fact"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I came across a deer in the park yesterday."
+      },
+      {
+        "speaker": "B",
+        "text": "Wow, that's amazing!"
+      }
+    ]
+  },
+  {
+    "phrase": "give off",
+    "meaning_vi": "phát ra, tỏa ra",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "The flowers give off a sweet smell.",
+        "vi": "Những bông hoa tỏa ra mùi thơm ngọt ngào."
+      },
+      {
+        "en": "The volcano gave off a lot of smoke.",
+        "vi": "Núi lửa phát ra rất nhiều khói."
+      }
+    ],
+    "collocations": [
+      "give off heat",
+      "give off light",
+      "give off a scent"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Why is the room so warm?"
+      },
+      {
+        "speaker": "B",
+        "text": "The fireplace gives off a lot of heat."
+      }
+    ]
+  },
+  {
+    "phrase": "die out",
+    "meaning_vi": "tuyệt chủng, biến mất",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Many species are dying out due to climate change.",
+        "vi": "Nhiều loài đang bị tuyệt chủng do biến đổi khí hậu."
+      },
+      {
+        "en": "The tradition might die out if we don't preserve it.",
+        "vi": "Truyền thống có thể biến mất nếu chúng ta không bảo tồn nó."
+      }
+    ],
+    "collocations": [
+      "die out completely",
+      "die out slowly",
+      "die out in the wild"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Are pandas dying out?"
+      },
+      {
+        "speaker": "B",
+        "text": "They are endangered, but conservation efforts help."
+      }
+    ]
+  },
+  {
+    "phrase": "break out",
+    "meaning_vi": "bùng phát, nổ ra",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "A fire broke out in the forest.",
+        "vi": "Một đám cháy bùng phát trong rừng."
+      },
+      {
+        "en": "The disease broke out suddenly.",
+        "vi": "Dịch bệnh bùng phát đột ngột."
+      }
+    ],
+    "collocations": [
+      "break out in flames",
+      "break out in a rash",
+      "break out of prison"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Did you hear about the wildfire?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, it broke out near the national park."
+      }
+    ]
+  },
+  {
+    "phrase": "bring up",
+    "meaning_vi": "nuôi dưỡng, đề cập",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "She was brought up in the countryside.",
+        "vi": "Cô ấy được nuôi dưỡng ở vùng nông thôn."
+      },
+      {
+        "en": "He brought up the topic of animal rights.",
+        "vi": "Anh ấy đề cập đến chủ đề quyền động vật."
+      }
+    ],
+    "collocations": [
+      "bring up children",
+      "bring up a subject",
+      "bring up an issue"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I was brought up on a farm."
+      },
+      {
+        "speaker": "B",
+        "text": "That must have been fun."
+      }
+    ]
+  },
+  {
+    "phrase": "clean up",
+    "meaning_vi": "dọn dẹp, làm sạch",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "We need to clean up the park after the picnic.",
+        "vi": "Chúng ta cần dọn dẹp công viên sau buổi dã ngoại."
+      },
+      {
+        "en": "Volunteers cleaned up the beach.",
+        "vi": "Các tình nguyện viên đã dọn sạch bãi biển."
+      }
+    ],
+    "collocations": [
+      "clean up the mess",
+      "clean up the environment",
+      "clean up after yourself"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "The river is polluted."
+      },
+      {
+        "speaker": "B",
+        "text": "We should organize a clean-up event."
+      }
+    ]
+  },
+  {
+    "phrase": "cut down",
+    "meaning_vi": "chặt hạ, cắt giảm",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "They cut down the old tree.",
+        "vi": "Họ đã chặt hạ cây cổ thụ."
+      },
+      {
+        "en": "We should cut down on plastic use.",
+        "vi": "Chúng ta nên cắt giảm sử dụng nhựa."
+      }
+    ],
+    "collocations": [
+      "cut down trees",
+      "cut down on waste",
+      "cut down on emissions"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Why are they cutting down the forest?"
+      },
+      {
+        "speaker": "B",
+        "text": "To build a new road."
+      }
+    ]
+  },
+  {
+    "phrase": "wildlife conservation",
+    "meaning_vi": "bảo tồn động vật hoang dã",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "Wildlife conservation is important for biodiversity.",
+        "vi": "Bảo tồn động vật hoang dã quan trọng cho đa dạng sinh học."
+      },
+      {
+        "en": "She works in wildlife conservation.",
+        "vi": "Cô ấy làm việc trong lĩnh vực bảo tồn động vật hoang dã."
+      }
+    ],
+    "collocations": [
+      "wildlife conservation efforts",
+      "wildlife conservation organization",
+      "wildlife conservation area"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What do you do?"
+      },
+      {
+        "speaker": "B",
+        "text": "I'm involved in wildlife conservation."
+      }
+    ]
+  },
+  {
+    "phrase": "endangered species",
+    "meaning_vi": "loài có nguy cơ tuyệt chủng",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "The panda is an endangered species.",
+        "vi": "Gấu trúc là một loài có nguy cơ tuyệt chủng."
+      },
+      {
+        "en": "Many endangered species are protected by law.",
+        "vi": "Nhiều loài có nguy cơ tuyệt chủng được pháp luật bảo vệ."
+      }
+    ],
+    "collocations": [
+      "endangered species list",
+      "protect endangered species",
+      "endangered species habitat"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Is the tiger an endangered species?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, unfortunately."
+      }
+    ]
+  },
+  {
+    "phrase": "climate change",
+    "meaning_vi": "biến đổi khí hậu",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "Climate change affects weather patterns.",
+        "vi": "Biến đổi khí hậu ảnh hưởng đến các kiểu thời tiết."
+      },
+      {
+        "en": "We need to act on climate change.",
+        "vi": "Chúng ta cần hành động về biến đổi khí hậu."
+      }
+    ],
+    "collocations": [
+      "climate change impact",
+      "fight climate change",
+      "climate change awareness"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you believe in climate change?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, the evidence is clear."
+      }
+    ]
+  },
+  {
+    "phrase": "natural habitat",
+    "meaning_vi": "môi trường sống tự nhiên",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "Animals should live in their natural habitat.",
+        "vi": "Động vật nên sống trong môi trường sống tự nhiên của chúng."
+      },
+      {
+        "en": "Deforestation destroys natural habitats.",
+        "vi": "Phá rừng phá hủy môi trường sống tự nhiên."
+      }
+    ],
+    "collocations": [
+      "natural habitat loss",
+      "preserve natural habitat",
+      "natural habitat of species"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Where do polar bears live?"
+      },
+      {
+        "speaker": "B",
+        "text": "In their natural habitat in the Arctic."
+      }
+    ]
+  },
+  {
+    "phrase": "a breath of fresh air",
+    "meaning_vi": "luồng gió mới (nghĩa đen và bóng)",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "Going to the mountains is a breath of fresh air.",
+        "vi": "Đi lên núi là một luồng gió mới."
+      },
+      {
+        "en": "Her idea was a breath of fresh air.",
+        "vi": "Ý tưởng của cô ấy là một luồng gió mới."
+      }
+    ],
+    "collocations": [
+      "get a breath of fresh air",
+      "need a breath of fresh air",
+      "like a breath of fresh air"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Let's go for a walk in the park."
+      },
+      {
+        "speaker": "B",
+        "text": "Good idea, I need a breath of fresh air."
+      }
+    ]
+  },
+  {
+    "phrase": "the great outdoors",
+    "meaning_vi": "thiên nhiên, không gian ngoài trời",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "I love spending time in the great outdoors.",
+        "vi": "Tôi thích dành thời gian ở thiên nhiên."
+      },
+      {
+        "en": "Camping is a great way to enjoy the great outdoors.",
+        "vi": "Cắm trại là cách tuyệt vời để tận hưởng thiên nhiên."
+      }
+    ],
+    "collocations": [
+      "enjoy the great outdoors",
+      "explore the great outdoors",
+      "love the great outdoors"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What do you do on weekends?"
+      },
+      {
+        "speaker": "B",
+        "text": "I often go hiking and enjoy the great outdoors."
+      }
+    ]
+  }
+]

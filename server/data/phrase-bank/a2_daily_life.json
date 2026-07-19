@@ -1,0 +1,374 @@
+[
+  {
+    "phrase": "wake up",
+    "meaning_vi": "thức giấc",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I wake up at 6 every morning.",
+        "vi": "Tôi thức giấc lúc 6 giờ mỗi sáng."
+      },
+      {
+        "en": "She wakes up early on weekdays.",
+        "vi": "Cô ấy thức dậy sớm vào các ngày trong tuần."
+      }
+    ],
+    "collocations": [
+      "wake up early",
+      "wake up late",
+      "wake up suddenly"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What time do you wake up?"
+      },
+      {
+        "speaker": "B",
+        "text": "I usually wake up at seven."
+      }
+    ]
+  },
+  {
+    "phrase": "have breakfast",
+    "meaning_vi": "ăn sáng",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I have breakfast at 7:30.",
+        "vi": "Tôi ăn sáng lúc 7:30."
+      },
+      {
+        "en": "Do you have breakfast every day?",
+        "vi": "Bạn có ăn sáng mỗi ngày không?"
+      }
+    ],
+    "collocations": [
+      "have a big breakfast",
+      "have a light breakfast",
+      "skip breakfast"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What do you usually have for breakfast?"
+      },
+      {
+        "speaker": "B",
+        "text": "I usually have bread and eggs."
+      }
+    ]
+  },
+  {
+    "phrase": "go to work",
+    "meaning_vi": "đi làm",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I go to work by bus.",
+        "vi": "Tôi đi làm bằng xe buýt."
+      },
+      {
+        "en": "She goes to work at 8 o'clock.",
+        "vi": "Cô ấy đi làm lúc 8 giờ."
+      }
+    ],
+    "collocations": [
+      "go to work by car",
+      "go to work on foot",
+      "go to work early"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How do you go to work?"
+      },
+      {
+        "speaker": "B",
+        "text": "I go to work by motorbike."
+      }
+    ]
+  },
+  {
+    "phrase": "come home",
+    "meaning_vi": "về nhà",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I come home at 6 p.m.",
+        "vi": "Tôi về nhà lúc 6 giờ tối."
+      },
+      {
+        "en": "When do you usually come home?",
+        "vi": "Bạn thường về nhà lúc mấy giờ?"
+      }
+    ],
+    "collocations": [
+      "come home late",
+      "come home early",
+      "come home tired"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What time do you come home?"
+      },
+      {
+        "speaker": "B",
+        "text": "I usually come home around six."
+      }
+    ]
+  },
+  {
+    "phrase": "have dinner",
+    "meaning_vi": "ăn tối",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "We have dinner at 7 p.m.",
+        "vi": "Chúng tôi ăn tối lúc 7 giờ tối."
+      },
+      {
+        "en": "Let's have dinner together.",
+        "vi": "Cùng ăn tối nhé."
+      }
+    ],
+    "collocations": [
+      "have a nice dinner",
+      "have dinner with family",
+      "have dinner out"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What time do you have dinner?"
+      },
+      {
+        "speaker": "B",
+        "text": "We usually have dinner at seven."
+      }
+    ]
+  },
+  {
+    "phrase": "do the dishes",
+    "meaning_vi": "rửa bát",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I do the dishes after dinner.",
+        "vi": "Tôi rửa bát sau bữa tối."
+      },
+      {
+        "en": "Can you do the dishes tonight?",
+        "vi": "Tối nay bạn có thể rửa bát không?"
+      }
+    ],
+    "collocations": [
+      "do the dishes by hand",
+      "do the dishes in the dishwasher",
+      "help do the dishes"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Who does the dishes at home?"
+      },
+      {
+        "speaker": "B",
+        "text": "I usually do the dishes."
+      }
+    ]
+  },
+  {
+    "phrase": "watch TV",
+    "meaning_vi": "xem tivi",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I watch TV in the evening.",
+        "vi": "Tôi xem tivi vào buổi tối."
+      },
+      {
+        "en": "What do you like to watch on TV?",
+        "vi": "Bạn thích xem gì trên tivi?"
+      }
+    ],
+    "collocations": [
+      "watch TV shows",
+      "watch TV news",
+      "watch TV for an hour"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you watch TV every night?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I watch TV after dinner."
+      }
+    ]
+  },
+  {
+    "phrase": "go to bed",
+    "meaning_vi": "đi ngủ",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I go to bed at 10 p.m.",
+        "vi": "Tôi đi ngủ lúc 10 giờ tối."
+      },
+      {
+        "en": "You should go to bed early.",
+        "vi": "Bạn nên đi ngủ sớm."
+      }
+    ],
+    "collocations": [
+      "go to bed late",
+      "go to bed early",
+      "go to bed at 11"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What time do you go to bed?"
+      },
+      {
+        "speaker": "B",
+        "text": "I usually go to bed at ten."
+      }
+    ]
+  },
+  {
+    "phrase": "take a shower",
+    "meaning_vi": "tắm vòi sen",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I take a shower in the morning.",
+        "vi": "Tôi tắm vòi sen vào buổi sáng."
+      },
+      {
+        "en": "She takes a shower before bed.",
+        "vi": "Cô ấy tắm trước khi đi ngủ."
+      }
+    ],
+    "collocations": [
+      "take a hot shower",
+      "take a quick shower",
+      "take a shower in the evening"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you take a shower in the morning?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I take a shower every morning."
+      }
+    ]
+  },
+  {
+    "phrase": "get dressed",
+    "meaning_vi": "mặc quần áo",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I get dressed after breakfast.",
+        "vi": "Tôi mặc quần áo sau bữa sáng."
+      },
+      {
+        "en": "She gets dressed quickly.",
+        "vi": "Cô ấy mặc quần áo nhanh chóng."
+      }
+    ],
+    "collocations": [
+      "get dressed for work",
+      "get dressed in a hurry",
+      "get dressed casually"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "When do you get dressed?"
+      },
+      {
+        "speaker": "B",
+        "text": "I get dressed after I take a shower."
+      }
+    ]
+  },
+  {
+    "phrase": "brush teeth",
+    "meaning_vi": "đánh răng",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I brush my teeth twice a day.",
+        "vi": "Tôi đánh răng hai lần một ngày."
+      },
+      {
+        "en": "Don't forget to brush your teeth.",
+        "vi": "Đừng quên đánh răng nhé."
+      }
+    ],
+    "collocations": [
+      "brush teeth in the morning",
+      "brush teeth before bed",
+      "brush teeth properly"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you brush your teeth every morning?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I brush my teeth after breakfast."
+      }
+    ]
+  },
+  {
+    "phrase": "check email",
+    "meaning_vi": "kiểm tra email",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I check my email every morning.",
+        "vi": "Tôi kiểm tra email mỗi sáng."
+      },
+      {
+        "en": "Have you checked your email today?",
+        "vi": "Hôm nay bạn đã kiểm tra email chưa?"
+      }
+    ],
+    "collocations": [
+      "check email on the phone",
+      "check email at work",
+      "check email regularly"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What do you do first in the morning?"
+      },
+      {
+        "speaker": "B",
+        "text": "I check my email while having coffee."
+      }
+    ]
+  }
+]

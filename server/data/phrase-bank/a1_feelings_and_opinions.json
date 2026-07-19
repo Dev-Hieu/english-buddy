@@ -1,0 +1,250 @@
+[
+  {
+    "phrase": "feel happy",
+    "meaning_vi": "cảm thấy vui",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I feel happy today.",
+        "vi": "Hôm nay tôi cảm thấy vui."
+      },
+      {
+        "en": "She feels happy when she sees her friends.",
+        "vi": "Cô ấy cảm thấy vui khi gặp bạn bè."
+      }
+    ],
+    "collocations": [
+      "feel happy about",
+      "feel very happy",
+      "feel so happy"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How do you feel today?"
+      },
+      {
+        "speaker": "B",
+        "text": "I feel happy."
+      }
+    ]
+  },
+  {
+    "phrase": "feel sad",
+    "meaning_vi": "cảm thấy buồn",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "He feels sad when it rains.",
+        "vi": "Anh ấy cảm thấy buồn khi trời mưa."
+      },
+      {
+        "en": "Do you feel sad?",
+        "vi": "Bạn có cảm thấy buồn không?"
+      }
+    ],
+    "collocations": [
+      "feel sad about",
+      "feel a little sad",
+      "feel very sad"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "You look sad. Are you okay?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I feel a little sad today."
+      }
+    ]
+  },
+  {
+    "phrase": "be tired",
+    "meaning_vi": "mệt mỏi",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "I am tired after work.",
+        "vi": "Tôi mệt sau giờ làm."
+      },
+      {
+        "en": "Are you tired?",
+        "vi": "Bạn có mệt không?"
+      }
+    ],
+    "collocations": [
+      "be very tired",
+      "be so tired",
+      "be tired of"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How are you?"
+      },
+      {
+        "speaker": "B",
+        "text": "I'm tired. I worked a lot today."
+      }
+    ]
+  },
+  {
+    "phrase": "be hungry",
+    "meaning_vi": "đói bụng",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "I am hungry. Let's eat.",
+        "vi": "Tôi đói bụng. Ăn thôi."
+      },
+      {
+        "en": "She is hungry now.",
+        "vi": "Bây giờ cô ấy đói."
+      }
+    ],
+    "collocations": [
+      "be very hungry",
+      "be so hungry",
+      "be hungry for"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Are you hungry?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I'm very hungry."
+      }
+    ]
+  },
+  {
+    "phrase": "be thirsty",
+    "meaning_vi": "khát nước",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "I am thirsty. Can I have water?",
+        "vi": "Tôi khát nước. Cho tôi xin nước được không?"
+      },
+      {
+        "en": "After running, he is thirsty.",
+        "vi": "Sau khi chạy, anh ấy khát nước."
+      }
+    ],
+    "collocations": [
+      "be very thirsty",
+      "be so thirsty",
+      "be thirsty for"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you want something to drink?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I'm thirsty."
+      }
+    ]
+  },
+  {
+    "phrase": "be cold",
+    "meaning_vi": "lạnh",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "I am cold. Close the window.",
+        "vi": "Tôi lạnh. Đóng cửa sổ lại."
+      },
+      {
+        "en": "She is cold in winter.",
+        "vi": "Mùa đông cô ấy lạnh."
+      }
+    ],
+    "collocations": [
+      "be very cold",
+      "be so cold",
+      "be cold outside"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Are you cold?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I'm very cold."
+      }
+    ]
+  },
+  {
+    "phrase": "be hot",
+    "meaning_vi": "nóng",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "I am hot. Turn on the fan.",
+        "vi": "Tôi nóng. Bật quạt lên."
+      },
+      {
+        "en": "It is hot in summer.",
+        "vi": "Mùa hè trời nóng."
+      }
+    ],
+    "collocations": [
+      "be very hot",
+      "be so hot",
+      "be hot outside"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How do you feel?"
+      },
+      {
+        "speaker": "B",
+        "text": "I'm hot. Let's go inside."
+      }
+    ]
+  },
+  {
+    "phrase": "be scared",
+    "meaning_vi": "sợ hãi",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "I am scared of the dark.",
+        "vi": "Tôi sợ bóng tối."
+      },
+      {
+        "en": "She is scared of spiders.",
+        "vi": "Cô ấy sợ nhện."
+      }
+    ],
+    "collocations": [
+      "be very scared",
+      "be so scared",
+      "be scared of"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Are you scared?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I'm scared of the noise."
+      }
+    ]
+  }
+]

@@ -1,0 +1,498 @@
+[
+  {
+    "phrase": "get on",
+    "meaning_vi": "lên (tàu, xe)",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "We got on the bus at the station.",
+        "vi": "Chúng tôi lên xe buýt ở ga."
+      },
+      {
+        "en": "She got on the train just in time.",
+        "vi": "Cô ấy lên tàu vừa kịp lúc."
+      }
+    ],
+    "collocations": [
+      "get on a bus",
+      "get on a train",
+      "get on a plane"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Did you get on the right bus?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I got on the number 12."
+      }
+    ]
+  },
+  {
+    "phrase": "get off",
+    "meaning_vi": "xuống (tàu, xe)",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Please get off at the next stop.",
+        "vi": "Vui lòng xuống ở trạm tiếp theo."
+      },
+      {
+        "en": "I got off the train at Oxford Circus.",
+        "vi": "Tôi xuống tàu ở Oxford Circus."
+      }
+    ],
+    "collocations": [
+      "get off a bus",
+      "get off a train",
+      "get off at a stop"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Where should I get off?"
+      },
+      {
+        "speaker": "B",
+        "text": "Get off at the third stop."
+      }
+    ]
+  },
+  {
+    "phrase": "check in",
+    "meaning_vi": "làm thủ tục (ở sân bay, khách sạn)",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "We need to check in two hours before the flight.",
+        "vi": "Chúng ta cần làm thủ tục hai tiếng trước chuyến bay."
+      },
+      {
+        "en": "I checked in online to save time.",
+        "vi": "Tôi đã làm thủ tục trực tuyến để tiết kiệm thời gian."
+      }
+    ],
+    "collocations": [
+      "check in online",
+      "check in at the airport",
+      "check in to a hotel"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Have you checked in yet?"
+      },
+      {
+        "speaker": "B",
+        "text": "Not yet. I'll check in at the counter."
+      }
+    ]
+  },
+  {
+    "phrase": "check out",
+    "meaning_vi": "trả phòng (khách sạn)",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "We have to check out before noon.",
+        "vi": "Chúng tôi phải trả phòng trước trưa."
+      },
+      {
+        "en": "She checked out and left the hotel.",
+        "vi": "Cô ấy đã trả phòng và rời khách sạn."
+      }
+    ],
+    "collocations": [
+      "check out of a hotel",
+      "check out early",
+      "check out time"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What time is check out?"
+      },
+      {
+        "speaker": "B",
+        "text": "Check out is at 11 am."
+      }
+    ]
+  },
+  {
+    "phrase": "set off",
+    "meaning_vi": "khởi hành",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "We set off early in the morning.",
+        "vi": "Chúng tôi khởi hành sớm vào buổi sáng."
+      },
+      {
+        "en": "They set off for the airport at 5 am.",
+        "vi": "Họ khởi hành đến sân bay lúc 5 giờ sáng."
+      }
+    ],
+    "collocations": [
+      "set off on a journey",
+      "set off for",
+      "set off early"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "When shall we set off?"
+      },
+      {
+        "speaker": "B",
+        "text": "Let's set off at 7."
+      }
+    ]
+  },
+  {
+    "phrase": "pick up",
+    "meaning_vi": "đón (ai đó)",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I'll pick you up at the station.",
+        "vi": "Tôi sẽ đón bạn ở ga."
+      },
+      {
+        "en": "Can you pick me up after work?",
+        "vi": "Bạn có thể đón tôi sau giờ làm không?"
+      }
+    ],
+    "collocations": [
+      "pick someone up",
+      "pick up from the airport",
+      "pick up a passenger"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Who is picking you up?"
+      },
+      {
+        "speaker": "B",
+        "text": "My dad is picking me up."
+      }
+    ]
+  },
+  {
+    "phrase": "drop off",
+    "meaning_vi": "thả (ai đó) xuống",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I'll drop you off at the bus stop.",
+        "vi": "Tôi sẽ thả bạn ở trạm xe buýt."
+      },
+      {
+        "en": "She dropped off her kids at school.",
+        "vi": "Cô ấy thả con ở trường."
+      }
+    ],
+    "collocations": [
+      "drop someone off",
+      "drop off at the airport",
+      "drop off a package"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Where should I drop you off?"
+      },
+      {
+        "speaker": "B",
+        "text": "Drop me off at the corner, please."
+      }
+    ]
+  },
+  {
+    "phrase": "take off",
+    "meaning_vi": "cất cánh (máy bay)",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "The plane took off on time.",
+        "vi": "Máy bay đã cất cánh đúng giờ."
+      },
+      {
+        "en": "We took off from Hanoi at noon.",
+        "vi": "Chúng tôi cất cánh từ Hà Nội lúc trưa."
+      }
+    ],
+    "collocations": [
+      "take off from",
+      "take off time",
+      "delayed take off"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "When does the plane take off?"
+      },
+      {
+        "speaker": "B",
+        "text": "It takes off at 3 pm."
+      }
+    ]
+  },
+  {
+    "phrase": "land",
+    "meaning_vi": "hạ cánh",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "The plane landed safely.",
+        "vi": "Máy bay đã hạ cánh an toàn."
+      },
+      {
+        "en": "We landed at 10 pm local time.",
+        "vi": "Chúng tôi hạ cánh lúc 10 giờ tối giờ địa phương."
+      }
+    ],
+    "collocations": [
+      "land at an airport",
+      "land safely",
+      "land on time"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Did the plane land yet?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, it landed ten minutes ago."
+      }
+    ]
+  },
+  {
+    "phrase": "go through",
+    "meaning_vi": "đi qua (cửa kiểm soát)",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "We went through security check.",
+        "vi": "Chúng tôi đã đi qua kiểm tra an ninh."
+      },
+      {
+        "en": "You need to go through customs.",
+        "vi": "Bạn cần đi qua hải quan."
+      }
+    ],
+    "collocations": [
+      "go through security",
+      "go through customs",
+      "go through passport control"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How long did it take to go through security?"
+      },
+      {
+        "speaker": "B",
+        "text": "About 20 minutes."
+      }
+    ]
+  },
+  {
+    "phrase": "boarding pass",
+    "meaning_vi": "thẻ lên máy bay",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "Please show your boarding pass at the gate.",
+        "vi": "Vui lòng xuất trình thẻ lên máy bay tại cửa."
+      },
+      {
+        "en": "I printed my boarding pass at home.",
+        "vi": "Tôi đã in thẻ lên máy bay ở nhà."
+      }
+    ],
+    "collocations": [
+      "print boarding pass",
+      "show boarding pass",
+      "boarding pass scanner"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you have your boarding pass?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, here it is."
+      }
+    ]
+  },
+  {
+    "phrase": "carry-on luggage",
+    "meaning_vi": "hành lý xách tay",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "You can only take one carry-on luggage.",
+        "vi": "Bạn chỉ được mang một kiện hành lý xách tay."
+      },
+      {
+        "en": "My carry-on luggage is too heavy.",
+        "vi": "Hành lý xách tay của tôi quá nặng."
+      }
+    ],
+    "collocations": [
+      "carry-on bag",
+      "carry-on size",
+      "carry-on allowance"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Is this bag allowed as carry-on luggage?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, it fits the size limit."
+      }
+    ]
+  },
+  {
+    "phrase": "round trip",
+    "meaning_vi": "khứ hồi",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I'd like a round trip ticket to Ho Chi Minh City.",
+        "vi": "Tôi muốn mua vé khứ hồi đi Thành phố Hồ Chí Minh."
+      },
+      {
+        "en": "Round trip tickets are cheaper than two one-ways.",
+        "vi": "Vé khứ hồi rẻ hơn hai vé một chiều."
+      }
+    ],
+    "collocations": [
+      "round trip ticket",
+      "round trip flight",
+      "round trip fare"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you want a one-way or round trip?"
+      },
+      {
+        "speaker": "B",
+        "text": "Round trip, please."
+      }
+    ]
+  },
+  {
+    "phrase": "catch a flight",
+    "meaning_vi": "bắt chuyến bay",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "I need to catch a flight to Da Nang.",
+        "vi": "Tôi cần bắt chuyến bay đi Đà Nẵng."
+      },
+      {
+        "en": "We caught the early flight.",
+        "vi": "Chúng tôi đã bắt chuyến bay sớm."
+      }
+    ],
+    "collocations": [
+      "catch a flight to",
+      "catch the last flight",
+      "catch a connecting flight"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What time is your flight?"
+      },
+      {
+        "speaker": "B",
+        "text": "I have to catch the 8 am flight."
+      }
+    ]
+  },
+  {
+    "phrase": "miss a flight",
+    "meaning_vi": "lỡ chuyến bay",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "I missed my flight because of traffic.",
+        "vi": "Tôi đã lỡ chuyến bay vì kẹt xe."
+      },
+      {
+        "en": "Don't miss your flight! Arrive early.",
+        "vi": "Đừng lỡ chuyến bay! Hãy đến sớm."
+      }
+    ],
+    "collocations": [
+      "miss a flight",
+      "miss the last flight",
+      "miss a connection"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Why are you still here?"
+      },
+      {
+        "speaker": "B",
+        "text": "I missed my flight."
+      }
+    ]
+  },
+  {
+    "phrase": "book a ticket",
+    "meaning_vi": "đặt vé",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I booked a ticket to Hanoi online.",
+        "vi": "Tôi đã đặt vé đi Hà Nội trực tuyến."
+      },
+      {
+        "en": "You should book your ticket in advance.",
+        "vi": "Bạn nên đặt vé trước."
+      }
+    ],
+    "collocations": [
+      "book a flight",
+      "book a train ticket",
+      "book a bus ticket"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Have you booked your ticket yet?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I booked it last week."
+      }
+    ]
+  }
+]

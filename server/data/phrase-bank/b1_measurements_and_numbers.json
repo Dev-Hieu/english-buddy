@@ -1,0 +1,498 @@
+[
+  {
+    "phrase": "add up",
+    "meaning_vi": "cộng lại",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Can you add up these numbers?",
+        "vi": "Bạn có thể cộng các số này lại không?"
+      },
+      {
+        "en": "The numbers don't add up.",
+        "vi": "Các con số không cộng lại khớp nhau."
+      }
+    ],
+    "collocations": [
+      "add up the bill",
+      "add up the costs",
+      "add up quickly"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Did you add up the total?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, it comes to $50."
+      }
+    ]
+  },
+  {
+    "phrase": "a couple of",
+    "meaning_vi": "một vài, hai cái",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I need a couple of minutes.",
+        "vi": "Tôi cần một vài phút."
+      },
+      {
+        "en": "She bought a couple of apples.",
+        "vi": "Cô ấy mua một vài quả táo."
+      }
+    ],
+    "collocations": [
+      "a couple of days",
+      "a couple of times",
+      "a couple of people"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How many do you need?"
+      },
+      {
+        "speaker": "B",
+        "text": "Just a couple of them."
+      }
+    ]
+  },
+  {
+    "phrase": "a great deal of",
+    "meaning_vi": "nhiều, một lượng lớn",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "He has a great deal of experience.",
+        "vi": "Anh ấy có nhiều kinh nghiệm."
+      },
+      {
+        "en": "It costs a great deal of money.",
+        "vi": "Nó tốn rất nhiều tiền."
+      }
+    ],
+    "collocations": [
+      "a great deal of time",
+      "a great deal of effort",
+      "a great deal of work"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Was the project difficult?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, it required a great deal of effort."
+      }
+    ]
+  },
+  {
+    "phrase": "a little bit",
+    "meaning_vi": "một chút",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I'm a little bit tired.",
+        "vi": "Tôi hơi mệt một chút."
+      },
+      {
+        "en": "Can you speak a little bit slower?",
+        "vi": "Bạn có thể nói chậm hơn một chút không?"
+      }
+    ],
+    "collocations": [
+      "a little bit more",
+      "a little bit less",
+      "a little bit of sugar"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Are you hungry?"
+      },
+      {
+        "speaker": "B",
+        "text": "Just a little bit."
+      }
+    ]
+  },
+  {
+    "phrase": "a lot of",
+    "meaning_vi": "nhiều",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "There are a lot of people here.",
+        "vi": "Có nhiều người ở đây."
+      },
+      {
+        "en": "I have a lot of homework.",
+        "vi": "Tôi có nhiều bài tập về nhà."
+      }
+    ],
+    "collocations": [
+      "a lot of time",
+      "a lot of money",
+      "a lot of fun"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Did you enjoy the party?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, we had a lot of fun."
+      }
+    ]
+  },
+  {
+    "phrase": "at least",
+    "meaning_vi": "ít nhất",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "You should drink at least 8 glasses of water a day.",
+        "vi": "Bạn nên uống ít nhất 8 ly nước mỗi ngày."
+      },
+      {
+        "en": "It will take at least two hours.",
+        "vi": "Nó sẽ mất ít nhất hai tiếng."
+      }
+    ],
+    "collocations": [
+      "at least once",
+      "at least three times",
+      "at least half"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How long will it take?"
+      },
+      {
+        "speaker": "B",
+        "text": "At least an hour."
+      }
+    ]
+  },
+  {
+    "phrase": "cut down on",
+    "meaning_vi": "cắt giảm",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I need to cut down on sugar.",
+        "vi": "Tôi cần cắt giảm đường."
+      },
+      {
+        "en": "He cut down on his spending.",
+        "vi": "Anh ấy cắt giảm chi tiêu."
+      }
+    ],
+    "collocations": [
+      "cut down on expenses",
+      "cut down on smoking",
+      "cut down on salt"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Why are you drinking black coffee?"
+      },
+      {
+        "speaker": "B",
+        "text": "I'm trying to cut down on sugar."
+      }
+    ]
+  },
+  {
+    "phrase": "figure out",
+    "meaning_vi": "tìm ra, tính toán",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I can't figure out this math problem.",
+        "vi": "Tôi không thể tìm ra bài toán này."
+      },
+      {
+        "en": "We need to figure out the total cost.",
+        "vi": "Chúng ta cần tính tổng chi phí."
+      }
+    ],
+    "collocations": [
+      "figure out the answer",
+      "figure out a way",
+      "figure out the meaning"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Did you figure out the solution?"
+      },
+      {
+        "speaker": "B",
+        "text": "Not yet, it's tricky."
+      }
+    ]
+  },
+  {
+    "phrase": "go up",
+    "meaning_vi": "tăng lên",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Prices have gone up again.",
+        "vi": "Giá cả lại tăng lên rồi."
+      },
+      {
+        "en": "The temperature is going up.",
+        "vi": "Nhiệt độ đang tăng lên."
+      }
+    ],
+    "collocations": [
+      "go up in price",
+      "go up by 10%",
+      "go up sharply"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Why are you worried?"
+      },
+      {
+        "speaker": "B",
+        "text": "The cost of living keeps going up."
+      }
+    ]
+  },
+  {
+    "phrase": "in half",
+    "meaning_vi": "một nửa",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "Cut the cake in half.",
+        "vi": "Cắt cái bánh làm đôi."
+      },
+      {
+        "en": "The price was reduced in half.",
+        "vi": "Giá đã giảm một nửa."
+      }
+    ],
+    "collocations": [
+      "split in half",
+      "divide in half",
+      "reduce in half"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How should we share it?"
+      },
+      {
+        "speaker": "B",
+        "text": "Let's cut it in half."
+      }
+    ]
+  },
+  {
+    "phrase": "more or less",
+    "meaning_vi": "nhiều hơn hoặc ít hơn, khoảng",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "It's more or less finished.",
+        "vi": "Nó gần như hoàn thành."
+      },
+      {
+        "en": "The distance is 10 miles, more or less.",
+        "vi": "Khoảng cách là 10 dặm, nhiều hơn hoặc ít hơn."
+      }
+    ],
+    "collocations": [
+      "more or less the same",
+      "more or less correct",
+      "more or less done"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Is the project complete?"
+      },
+      {
+        "speaker": "B",
+        "text": "More or less, just a few details left."
+      }
+    ]
+  },
+  {
+    "phrase": "no more than",
+    "meaning_vi": "không quá",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "It costs no more than $20.",
+        "vi": "Nó có giá không quá 20 đô la."
+      },
+      {
+        "en": "You have no more than 5 minutes.",
+        "vi": "Bạn có không quá 5 phút."
+      }
+    ],
+    "collocations": [
+      "no more than three",
+      "no more than enough",
+      "no more than a week"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How many people are coming?"
+      },
+      {
+        "speaker": "B",
+        "text": "No more than ten."
+      }
+    ]
+  },
+  {
+    "phrase": "plenty of",
+    "meaning_vi": "nhiều, đầy đủ",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "There's plenty of food.",
+        "vi": "Có nhiều thức ăn."
+      },
+      {
+        "en": "We have plenty of time.",
+        "vi": "Chúng ta có nhiều thời gian."
+      }
+    ],
+    "collocations": [
+      "plenty of water",
+      "plenty of space",
+      "plenty of opportunities"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do we need more chairs?"
+      },
+      {
+        "speaker": "B",
+        "text": "No, there are plenty of them."
+      }
+    ]
+  },
+  {
+    "phrase": "quite a few",
+    "meaning_vi": "khá nhiều",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I have quite a few books.",
+        "vi": "Tôi có khá nhiều sách."
+      },
+      {
+        "en": "Quite a few people came.",
+        "vi": "Khá nhiều người đã đến."
+      }
+    ],
+    "collocations": [
+      "quite a few times",
+      "quite a few problems",
+      "quite a few options"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Were there many guests?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, quite a few."
+      }
+    ]
+  },
+  {
+    "phrase": "run out of",
+    "meaning_vi": "hết, cạn kiệt",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "We ran out of milk.",
+        "vi": "Chúng tôi hết sữa rồi."
+      },
+      {
+        "en": "I'm running out of time.",
+        "vi": "Tôi sắp hết thời gian rồi."
+      }
+    ],
+    "collocations": [
+      "run out of money",
+      "run out of ideas",
+      "run out of gas"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Can I have some sugar?"
+      },
+      {
+        "speaker": "B",
+        "text": "Sorry, we've run out of it."
+      }
+    ]
+  },
+  {
+    "phrase": "up to",
+    "meaning_vi": "lên tới, tùy vào",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "The room can hold up to 50 people.",
+        "vi": "Căn phòng có thể chứa lên tới 50 người."
+      },
+      {
+        "en": "It's up to you.",
+        "vi": "Tùy bạn."
+      }
+    ],
+    "collocations": [
+      "up to 10",
+      "up to you",
+      "up to date"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How many guests can we invite?"
+      },
+      {
+        "speaker": "B",
+        "text": "Up to twenty."
+      }
+    ]
+  }
+]

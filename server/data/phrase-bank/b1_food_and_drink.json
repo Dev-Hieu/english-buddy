@@ -1,0 +1,498 @@
+[
+  {
+    "phrase": "eat out",
+    "meaning_vi": "ăn ngoài hàng",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "We often eat out on weekends.",
+        "vi": "Chúng tôi thường ăn ngoài hàng vào cuối tuần."
+      },
+      {
+        "en": "Do you prefer to eat out or cook at home?",
+        "vi": "Bạn thích ăn ngoài hay nấu ăn ở nhà?"
+      }
+    ],
+    "collocations": [
+      "eat out frequently",
+      "eat out with friends",
+      "eat out at a restaurant"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Are you free tonight? We could eat out."
+      },
+      {
+        "speaker": "B",
+        "text": "Sure! I know a good Italian place."
+      }
+    ]
+  },
+  {
+    "phrase": "cut down on",
+    "meaning_vi": "cắt giảm (thức ăn/uống)",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I'm trying to cut down on sugar.",
+        "vi": "Tôi đang cố gắng cắt giảm đường."
+      },
+      {
+        "en": "You should cut down on fried foods.",
+        "vi": "Bạn nên cắt giảm đồ chiên rán."
+      }
+    ],
+    "collocations": [
+      "cut down on salt",
+      "cut down on caffeine",
+      "cut down on junk food"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Why are you drinking black coffee?"
+      },
+      {
+        "speaker": "B",
+        "text": "I'm cutting down on sugar."
+      }
+    ]
+  },
+  {
+    "phrase": "warm up",
+    "meaning_vi": "hâm nóng lại",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I'll warm up the leftover soup.",
+        "vi": "Tôi sẽ hâm nóng lại súp thừa."
+      },
+      {
+        "en": "Can you warm up the pizza in the microwave?",
+        "vi": "Bạn có thể hâm nóng pizza trong lò vi sóng không?"
+      }
+    ],
+    "collocations": [
+      "warm up food",
+      "warm up leftovers",
+      "warm up in the microwave"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you want me to warm up the pasta?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, please. I'm hungry."
+      }
+    ]
+  },
+  {
+    "phrase": "go with",
+    "meaning_vi": "hợp với, kết hợp với (đồ ăn)",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Red wine goes well with steak.",
+        "vi": "Rượu vang đỏ hợp với bít tết."
+      },
+      {
+        "en": "What side dish goes with grilled chicken?",
+        "vi": "Món ăn kèm nào hợp với gà nướng?"
+      }
+    ],
+    "collocations": [
+      "go well with",
+      "go perfectly with",
+      "go nicely with"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I'm having salmon for dinner."
+      },
+      {
+        "speaker": "B",
+        "text": "A light white wine would go well with that."
+      }
+    ]
+  },
+  {
+    "phrase": "finish up",
+    "meaning_vi": "ăn hết, uống hết",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Finish up your vegetables, please.",
+        "vi": "Hãy ăn hết rau của con đi."
+      },
+      {
+        "en": "We need to finish up the cake before it goes bad.",
+        "vi": "Chúng ta cần ăn hết bánh trước khi nó hỏng."
+      }
+    ],
+    "collocations": [
+      "finish up the meal",
+      "finish up leftovers",
+      "finish up quickly"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Hurry up and finish up your dinner."
+      },
+      {
+        "speaker": "B",
+        "text": "I'm trying, but I'm not very hungry."
+      }
+    ]
+  },
+  {
+    "phrase": "take away",
+    "meaning_vi": "mang đi, mua về",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "We ordered Chinese food to take away.",
+        "vi": "Chúng tôi đặt đồ ăn Trung Quốc mang về."
+      },
+      {
+        "en": "Is this for here or to take away?",
+        "vi": "Cái này ăn tại đây hay mang về?"
+      }
+    ],
+    "collocations": [
+      "take away food",
+      "take away coffee",
+      "take away pizza"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Would you like your coffee to take away?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, please. I'm in a hurry."
+      }
+    ]
+  },
+  {
+    "phrase": "a balanced diet",
+    "meaning_vi": "chế độ ăn cân bằng",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "A balanced diet includes fruits and vegetables.",
+        "vi": "Chế độ ăn cân bằng bao gồm trái cây và rau củ."
+      },
+      {
+        "en": "You need a balanced diet to stay healthy.",
+        "vi": "Bạn cần chế độ ăn cân bằng để khỏe mạnh."
+      }
+    ],
+    "collocations": [
+      "eat a balanced diet",
+      "maintain a balanced diet",
+      "have a balanced diet"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How do you stay so healthy?"
+      },
+      {
+        "speaker": "B",
+        "text": "I try to eat a balanced diet and exercise."
+      }
+    ]
+  },
+  {
+    "phrase": "junk food",
+    "meaning_vi": "đồ ăn vặt, thức ăn nhanh không lành mạnh",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I try to avoid junk food.",
+        "vi": "Tôi cố gắng tránh đồ ăn vặt."
+      },
+      {
+        "en": "Kids often love junk food like chips and candy.",
+        "vi": "Trẻ em thường thích đồ ăn vặt như khoai tây chiên và kẹo."
+      }
+    ],
+    "collocations": [
+      "eat junk food",
+      "avoid junk food",
+      "junk food cravings"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you want some chips?"
+      },
+      {
+        "speaker": "B",
+        "text": "No thanks, I'm trying to cut down on junk food."
+      }
+    ]
+  },
+  {
+    "phrase": "fast food",
+    "meaning_vi": "thức ăn nhanh",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "Fast food is convenient but not very healthy.",
+        "vi": "Thức ăn nhanh tiện lợi nhưng không lành mạnh lắm."
+      },
+      {
+        "en": "We grabbed some fast food on the way home.",
+        "vi": "Chúng tôi mua đồ ăn nhanh trên đường về nhà."
+      }
+    ],
+    "collocations": [
+      "eat fast food",
+      "fast food restaurant",
+      "fast food meal"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I'm too tired to cook."
+      },
+      {
+        "speaker": "B",
+        "text": "Let's just get some fast food then."
+      }
+    ]
+  },
+  {
+    "phrase": "home-cooked meal",
+    "meaning_vi": "bữa ăn nấu tại nhà",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "There's nothing like a home-cooked meal.",
+        "vi": "Không gì bằng một bữa ăn nấu tại nhà."
+      },
+      {
+        "en": "I prefer home-cooked meals over restaurant food.",
+        "vi": "Tôi thích bữa ăn nấu tại nhà hơn đồ ăn nhà hàng."
+      }
+    ],
+    "collocations": [
+      "enjoy a home-cooked meal",
+      "have a home-cooked meal",
+      "cook a home-cooked meal"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What did you have for dinner?"
+      },
+      {
+        "speaker": "B",
+        "text": "A lovely home-cooked meal my mom made."
+      }
+    ]
+  },
+  {
+    "phrase": "fresh ingredients",
+    "meaning_vi": "nguyên liệu tươi",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "This dish uses fresh ingredients like herbs and vegetables.",
+        "vi": "Món này sử dụng nguyên liệu tươi như rau thơm và rau củ."
+      },
+      {
+        "en": "Fresh ingredients make a big difference in taste.",
+        "vi": "Nguyên li���u tươi tạo ra sự khác biệt lớn về hương vị."
+      }
+    ],
+    "collocations": [
+      "use fresh ingredients",
+      "buy fresh ingredients",
+      "cook with fresh ingredients"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "This salad is delicious!"
+      },
+      {
+        "speaker": "B",
+        "text": "Thanks, I only use fresh ingredients."
+      }
+    ]
+  },
+  {
+    "phrase": "spicy food",
+    "meaning_vi": "đồ ăn cay",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I love spicy food, especially Thai cuisine.",
+        "vi": "Tôi thích đồ ăn cay, đặc biệt là ẩm thực Thái."
+      },
+      {
+        "en": "Be careful, this dish is very spicy.",
+        "vi": "Cẩn thận, món này rất cay."
+      }
+    ],
+    "collocations": [
+      "like spicy food",
+      "eat spicy food",
+      "spicy food lover"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How is the curry?"
+      },
+      {
+        "speaker": "B",
+        "text": "It's good, but quite spicy."
+      }
+    ]
+  },
+  {
+    "phrase": "a sweet tooth",
+    "meaning_vi": "sở thích ăn ngọt",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "I have a sweet tooth, so I love desserts.",
+        "vi": "Tôi thích ăn ngọt, nên tôi rất thích tráng miệng."
+      },
+      {
+        "en": "She has a sweet tooth and can't resist chocolate.",
+        "vi": "Cô ấy thích ăn ngọt và không thể cưỡng lại sô cô la."
+      }
+    ],
+    "collocations": [
+      "have a sweet tooth",
+      "satisfy your sweet tooth",
+      "a real sweet tooth"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Would you like some cake?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, please! I have a sweet tooth."
+      }
+    ]
+  },
+  {
+    "phrase": "on the house",
+    "meaning_vi": "miễn phí (do quán mời)",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "The dessert is on the house tonight.",
+        "vi": "Món tráng miệng tối nay được quán mời miễn phí."
+      },
+      {
+        "en": "They gave us a free drink on the house.",
+        "vi": "Họ mời chúng tôi một ly đồ uống miễn phí."
+      }
+    ],
+    "collocations": [
+      "drinks on the house",
+      "meal on the house",
+      "coffee on the house"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Wow, we didn't pay for the appetizers!"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, they were on the house."
+      }
+    ]
+  },
+  {
+    "phrase": "to have a bite",
+    "meaning_vi": "ăn một chút, ăn vội",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "Let's grab a bite before the movie.",
+        "vi": "Chúng ta hãy ăn một chút trước khi xem phim."
+      },
+      {
+        "en": "I need to have a bite; I'm starving.",
+        "vi": "Tôi cần ăn một chút, tôi đói quá."
+      }
+    ],
+    "collocations": [
+      "grab a bite",
+      "have a quick bite",
+      "get a bite to eat"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Are you hungry?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, let's have a bite at that café."
+      }
+    ]
+  },
+  {
+    "phrase": "to be starving",
+    "meaning_vi": "đói lả, đói cồn cào",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "I'm starving; I haven't eaten all day.",
+        "vi": "Tôi đói lả rồi; cả ngày chưa ăn gì."
+      },
+      {
+        "en": "By dinner time, we were starving.",
+        "vi": "Đến bữa tối, chúng tôi đói cồn cào."
+      }
+    ],
+    "collocations": [
+      "absolutely starving",
+      "completely starving",
+      "feel starving"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Hurry up with the food!"
+      },
+      {
+        "speaker": "B",
+        "text": "I know, I'm starving too."
+      }
+    ]
+  }
+]

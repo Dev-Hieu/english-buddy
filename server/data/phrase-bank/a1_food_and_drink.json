@@ -1,0 +1,250 @@
+[
+  {
+    "phrase": "have breakfast",
+    "meaning_vi": "ăn sáng",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I have breakfast at 7 o'clock.",
+        "vi": "Tôi ăn sáng lúc 7 giờ."
+      },
+      {
+        "en": "Do you have breakfast every day?",
+        "vi": "Bạn có ăn sáng mỗi ngày không?"
+      }
+    ],
+    "collocations": [
+      "have a big breakfast",
+      "have a light breakfast",
+      "have breakfast together"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What time do you have breakfast?"
+      },
+      {
+        "speaker": "B",
+        "text": "I have breakfast at 7."
+      }
+    ]
+  },
+  {
+    "phrase": "drink water",
+    "meaning_vi": "uống nước",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "You should drink water every day.",
+        "vi": "Bạn nên uống nước mỗi ngày."
+      },
+      {
+        "en": "I drink water after exercise.",
+        "vi": "Tôi uống nước sau khi tập thể dục."
+      }
+    ],
+    "collocations": [
+      "drink cold water",
+      "drink warm water",
+      "drink a glass of water"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you drink water in the morning?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I drink a glass of water."
+      }
+    ]
+  },
+  {
+    "phrase": "order food",
+    "meaning_vi": "gọi món",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "Let's order food from the restaurant.",
+        "vi": "Hãy gọi món từ nhà hàng."
+      },
+      {
+        "en": "I want to order food now.",
+        "vi": "Tôi muốn gọi món ngay bây giờ."
+      }
+    ],
+    "collocations": [
+      "order food online",
+      "order food for delivery",
+      "order food at the counter"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What do you want to eat?"
+      },
+      {
+        "speaker": "B",
+        "text": "I want to order food from the menu."
+      }
+    ]
+  },
+  {
+    "phrase": "cook dinner",
+    "meaning_vi": "nấu bữa tối",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I cook dinner for my family.",
+        "vi": "Tôi nấu bữa tối cho gia đình."
+      },
+      {
+        "en": "She cooks dinner every evening.",
+        "vi": "Cô ấy nấu bữa tối mỗi tối."
+      }
+    ],
+    "collocations": [
+      "cook a simple dinner",
+      "cook dinner together",
+      "cook dinner at home"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What time do you cook dinner?"
+      },
+      {
+        "speaker": "B",
+        "text": "I cook dinner at 6 pm."
+      }
+    ]
+  },
+  {
+    "phrase": "eat out",
+    "meaning_vi": "ăn ngoài",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "We eat out on weekends.",
+        "vi": "Chúng tôi ăn ngoài vào cuối tuần."
+      },
+      {
+        "en": "Do you like to eat out?",
+        "vi": "Bạn có thích ăn ngoài không?"
+      }
+    ],
+    "collocations": [
+      "eat out often",
+      "eat out with friends",
+      "eat out at a restaurant"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Let's eat out tonight."
+      },
+      {
+        "speaker": "B",
+        "text": "Great idea! Where do you want to go?"
+      }
+    ]
+  },
+  {
+    "phrase": "go for coffee",
+    "meaning_vi": "đi uống cà phê",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "Let's go for coffee after work.",
+        "vi": "Hãy đi uống cà phê sau giờ làm."
+      },
+      {
+        "en": "She goes for coffee every morning.",
+        "vi": "Cô ấy đi uống cà phê mỗi sáng."
+      }
+    ],
+    "collocations": [
+      "go for a coffee",
+      "go for coffee with friends",
+      "go for coffee to relax"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you want to go for coffee?"
+      },
+      {
+        "speaker": "B",
+        "text": "Sure, I love coffee."
+      }
+    ]
+  },
+  {
+    "phrase": "feel hungry",
+    "meaning_vi": "cảm thấy đói",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "I feel hungry now.",
+        "vi": "Tôi cảm thấy đói bây giờ."
+      },
+      {
+        "en": "Do you feel hungry?",
+        "vi": "Bạn có cảm thấy đói không?"
+      }
+    ],
+    "collocations": [
+      "feel very hungry",
+      "feel a little hungry",
+      "feel hungry for lunch"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Are you hungry?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I feel hungry. Let's eat."
+      }
+    ]
+  },
+  {
+    "phrase": "have a sweet tooth",
+    "meaning_vi": "thích đồ ngọt",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "I have a sweet tooth, so I love cake.",
+        "vi": "Tôi thích đồ ngọt, nên tôi thích bánh ngọt."
+      },
+      {
+        "en": "She has a sweet tooth and eats chocolate every day.",
+        "vi": "Cô ấy thích đồ ngọt và ăn sô-cô-la mỗi ngày."
+      }
+    ],
+    "collocations": [
+      "have a big sweet tooth",
+      "have a terrible sweet tooth",
+      "have a sweet tooth for ice cream"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you want some dessert?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I have a sweet tooth."
+      }
+    ]
+  }
+]

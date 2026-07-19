@@ -1,0 +1,250 @@
+[
+  {
+    "phrase": "how much",
+    "meaning_vi": "bao nhiêu (giá cả)",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "How much is this book?",
+        "vi": "Cuốn sách này bao nhiêu tiền?"
+      },
+      {
+        "en": "How much does it cost?",
+        "vi": "Nó giá bao nhiêu?"
+      }
+    ],
+    "collocations": [
+      "how much is",
+      "how much does",
+      "how much money"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How much is this shirt?"
+      },
+      {
+        "speaker": "B",
+        "text": "It's twenty dollars."
+      }
+    ]
+  },
+  {
+    "phrase": "how many",
+    "meaning_vi": "bao nhiêu (số lượng)",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "How many apples do you want?",
+        "vi": "Bạn muốn bao nhiêu quả táo?"
+      },
+      {
+        "en": "How many students are there?",
+        "vi": "Có bao nhiêu học sinh?"
+      }
+    ],
+    "collocations": [
+      "how many people",
+      "how many books",
+      "how many days"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How many chairs do we need?"
+      },
+      {
+        "speaker": "B",
+        "text": "We need four chairs."
+      }
+    ]
+  },
+  {
+    "phrase": "a lot of",
+    "meaning_vi": "nhiều",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I have a lot of friends.",
+        "vi": "Tôi có nhiều bạn."
+      },
+      {
+        "en": "There is a lot of water.",
+        "vi": "Có nhiều nước."
+      }
+    ],
+    "collocations": [
+      "a lot of people",
+      "a lot of time",
+      "a lot of money"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you have a lot of homework?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I have a lot of homework."
+      }
+    ]
+  },
+  {
+    "phrase": "a little",
+    "meaning_vi": "một ít",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I need a little sugar.",
+        "vi": "Tôi cần một ít đường."
+      },
+      {
+        "en": "She speaks a little English.",
+        "vi": "Cô ấy nói được một ít tiếng Anh."
+      }
+    ],
+    "collocations": [
+      "a little bit",
+      "a little more",
+      "a little water"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you want some milk?"
+      },
+      {
+        "speaker": "B",
+        "text": "Just a little, please."
+      }
+    ]
+  },
+  {
+    "phrase": "more than",
+    "meaning_vi": "nhiều hơn",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "I have more than ten books.",
+        "vi": "Tôi có hơn mười cuốn sách."
+      },
+      {
+        "en": "It costs more than five dollars.",
+        "vi": "Nó có giá hơn năm đô la."
+      }
+    ],
+    "collocations": [
+      "more than enough",
+      "more than that",
+      "more than one"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How many people are coming?"
+      },
+      {
+        "speaker": "B",
+        "text": "More than twenty."
+      }
+    ]
+  },
+  {
+    "phrase": "less than",
+    "meaning_vi": "ít hơn",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "I have less than five dollars.",
+        "vi": "Tôi có ít hơn năm đô la."
+      },
+      {
+        "en": "It's less than one kilometer.",
+        "vi": "Nó ít hơn một cây số."
+      }
+    ],
+    "collocations": [
+      "less than half",
+      "less than a minute",
+      "less than that"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Is it far?"
+      },
+      {
+        "speaker": "B",
+        "text": "No, it's less than two kilometers."
+      }
+    ]
+  },
+  {
+    "phrase": "a couple of",
+    "meaning_vi": "một vài",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I need a couple of minutes.",
+        "vi": "Tôi cần một vài phút."
+      },
+      {
+        "en": "She bought a couple of apples.",
+        "vi": "Cô ấy mua một vài quả táo."
+      }
+    ],
+    "collocations": [
+      "a couple of days",
+      "a couple of hours",
+      "a couple of people"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Can you wait a couple of minutes?"
+      },
+      {
+        "speaker": "B",
+        "text": "Sure, no problem."
+      }
+    ]
+  },
+  {
+    "phrase": "how long",
+    "meaning_vi": "bao lâu",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "How long is the movie?",
+        "vi": "Bộ phim dài bao lâu?"
+      },
+      {
+        "en": "How long does it take?",
+        "vi": "Mất bao lâu?"
+      }
+    ],
+    "collocations": [
+      "how long does",
+      "how long is",
+      "how long will"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How long is the flight?"
+      },
+      {
+        "speaker": "B",
+        "text": "It's about three hours."
+      }
+    ]
+  }
+]

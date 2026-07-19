@@ -1,0 +1,506 @@
+[
+  {
+    "phrase": "feel down",
+    "meaning_vi": "cảm thấy buồn",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I've been feeling down lately.",
+        "vi": "Dạo này tôi cảm thấy buồn."
+      },
+      {
+        "en": "She felt down after hearing the news.",
+        "vi": "Cô ấy buồn sau khi nghe tin."
+      }
+    ],
+    "collocations": [
+      "feel a bit down",
+      "feel really down",
+      "feel down about something"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "You look sad. Are you feeling down?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yeah, I'm feeling a bit down today."
+      }
+    ]
+  },
+  {
+    "phrase": "cheer up",
+    "meaning_vi": "vui lên",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Cheer up! It's not the end of the world.",
+        "vi": "Vui lên! Không phải tận thế đâu."
+      },
+      {
+        "en": "I tried to cheer her up with a joke.",
+        "vi": "Tôi cố gắng làm cô ấy vui bằng một câu chuyện cười."
+      }
+    ],
+    "collocations": [
+      "cheer someone up",
+      "cheer up quickly",
+      "try to cheer up"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Why are you so sad?"
+      },
+      {
+        "speaker": "B",
+        "text": "I failed my exam."
+      },
+      {
+        "speaker": "A",
+        "text": "Oh, cheer up! You can try again."
+      }
+    ]
+  },
+  {
+    "phrase": "in a good mood",
+    "meaning_vi": "tâm trạng tốt",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "She's in a good mood today.",
+        "vi": "Hôm nay cô ấy có tâm trạng tốt."
+      },
+      {
+        "en": "I'm in a good mood because the sun is shining.",
+        "vi": "Tôi có tâm trạng tốt vì nắng đẹp."
+      }
+    ],
+    "collocations": [
+      "in a bad mood",
+      "in a great mood",
+      "put someone in a good mood"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Why is he so cheerful?"
+      },
+      {
+        "speaker": "B",
+        "text": "He's in a good mood because he got a promotion."
+      }
+    ]
+  },
+  {
+    "phrase": "lose your temper",
+    "meaning_vi": "mất bình tĩnh",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "He tends to lose his temper easily.",
+        "vi": "Anh ấy thường dễ mất bình tĩnh."
+      },
+      {
+        "en": "I almost lost my temper with the rude customer.",
+        "vi": "Tôi suýt mất bình tĩnh với vị khách thô lỗ."
+      }
+    ],
+    "collocations": [
+      "lose one's temper quickly",
+      "try not to lose your temper",
+      "lose your temper over nothing"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Did you see how angry he got?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, he really lost his temper."
+      }
+    ]
+  },
+  {
+    "phrase": "take it easy",
+    "meaning_vi": "thư giãn, đừng căng thẳng",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "Take it easy and relax.",
+        "vi": "Thư giãn và nghỉ ngơi đi."
+      },
+      {
+        "en": "You should take it easy after work.",
+        "vi": "Bạn nên thư giãn sau giờ làm."
+      }
+    ],
+    "collocations": [
+      "take it easy today",
+      "take things easy",
+      "just take it easy"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I'm so stressed about the exam."
+      },
+      {
+        "speaker": "B",
+        "text": "Take it easy. You've studied hard."
+      }
+    ]
+  },
+  {
+    "phrase": "feel like",
+    "meaning_vi": "cảm thấy muốn",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "I feel like going for a walk.",
+        "vi": "Tôi cảm thấy muốn đi dạo."
+      },
+      {
+        "en": "Do you feel like eating out tonight?",
+        "vi": "Bạn có muốn ăn ngoài tối nay không?"
+      }
+    ],
+    "collocations": [
+      "feel like doing something",
+      "feel like something",
+      "just feel like it"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What do you want to do?"
+      },
+      {
+        "speaker": "B",
+        "text": "I feel like watching a movie."
+      }
+    ]
+  },
+  {
+    "phrase": "make up your mind",
+    "meaning_vi": "quyết định",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "Have you made up your mind yet?",
+        "vi": "Bạn đã quyết định chưa?"
+      },
+      {
+        "en": "I can't make up my mind about the job offer.",
+        "vi": "Tôi không thể quyết định về lời mời làm việc."
+      }
+    ],
+    "collocations": [
+      "make up one's mind quickly",
+      "can't make up my mind",
+      "finally make up your mind"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Which dress should I buy?"
+      },
+      {
+        "speaker": "B",
+        "text": "Make up your mind soon; the sale ends today."
+      }
+    ]
+  },
+  {
+    "phrase": "change your mind",
+    "meaning_vi": "thay đổi ý định",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "She changed her mind at the last minute.",
+        "vi": "Cô ấy thay đổi ý định vào phút cuối."
+      },
+      {
+        "en": "You can always change your mind if you want.",
+        "vi": "Bạn luôn có thể thay đổi ý định nếu muốn."
+      }
+    ],
+    "collocations": [
+      "change one's mind often",
+      "change your mind about something",
+      "decide to change your mind"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I thought you were going to the party."
+      },
+      {
+        "speaker": "B",
+        "text": "I changed my mind. I'm too tired."
+      }
+    ]
+  },
+  {
+    "phrase": "get on someone's nerves",
+    "meaning_vi": "làm ai đó khó chịu",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "His constant complaining gets on my nerves.",
+        "vi": "Việc than vãn liên tục của anh ấy làm tôi khó chịu."
+      },
+      {
+        "en": "The noise is getting on my nerves.",
+        "vi": "Tiếng ồn đang làm tôi khó chịu."
+      }
+    ],
+    "collocations": [
+      "really get on someone's nerves",
+      "get on each other's nerves",
+      "start to get on my nerves"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Why are you so annoyed?"
+      },
+      {
+        "speaker": "B",
+        "text": "That loud music is getting on my nerves."
+      }
+    ]
+  },
+  {
+    "phrase": "be fed up with",
+    "meaning_vi": "chán ngấy",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "I'm fed up with this weather.",
+        "vi": "Tôi chán ngấy thời tiết này rồi."
+      },
+      {
+        "en": "She's fed up with his excuses.",
+        "vi": "Cô ấy chán ngấy những lời bào chữa của anh ta."
+      }
+    ],
+    "collocations": [
+      "be fed up with something",
+      "get fed up with",
+      "fed up with waiting"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "You look upset."
+      },
+      {
+        "speaker": "B",
+        "text": "I'm fed up with my job. I need a change."
+      }
+    ]
+  },
+  {
+    "phrase": "in my opinion",
+    "meaning_vi": "theo ý kiến của tôi",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "In my opinion, this is the best solution.",
+        "vi": "Theo ý kiến của tôi, đây là giải pháp tốt nhất."
+      },
+      {
+        "en": "In my opinion, she should accept the offer.",
+        "vi": "Theo ý kiến của tôi, cô ấy nên chấp nhận lời đề nghị."
+      }
+    ],
+    "collocations": [
+      "in my humble opinion",
+      "in my opinion, it's better to",
+      "in my opinion, he's right"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What do you think about the plan?"
+      },
+      {
+        "speaker": "B",
+        "text": "In my opinion, it's too risky."
+      }
+    ]
+  },
+  {
+    "phrase": "as far as I'm concerned",
+    "meaning_vi": "theo như tôi quan tâm",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "As far as I'm concerned, the matter is closed.",
+        "vi": "Theo như tôi quan tâm, vấn đề đã kết thúc."
+      },
+      {
+        "en": "As far as I'm concerned, you can do what you want.",
+        "vi": "Theo như tôi quan tâm, bạn có thể làm gì bạn muốn."
+      }
+    ],
+    "collocations": [
+      "as far as I'm concerned, it's fine",
+      "as far as I'm concerned, no",
+      "as far as I'm concerned, yes"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you mind if I leave early?"
+      },
+      {
+        "speaker": "B",
+        "text": "As far as I'm concerned, it's okay."
+      }
+    ]
+  },
+  {
+    "phrase": "agree to disagree",
+    "meaning_vi": "đồng ý bất đồng",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "We have different opinions, so let's agree to disagree.",
+        "vi": "Chúng ta có ý kiến khác nhau, vậy hãy đồng ý bất đồng."
+      },
+      {
+        "en": "Sometimes it's best to agree to disagree.",
+        "vi": "Đôi khi tốt nhất là đồng ý bất đồng."
+      }
+    ],
+    "collocations": [
+      "agree to disagree on that",
+      "decide to agree to disagree",
+      "just agree to disagree"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I think the movie was great."
+      },
+      {
+        "speaker": "B",
+        "text": "I didn't like it at all."
+      },
+      {
+        "speaker": "A",
+        "text": "Let's agree to disagree."
+      }
+    ]
+  },
+  {
+    "phrase": "have second thoughts",
+    "meaning_vi": "có sự đắn đo, do dự",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "I'm having second thoughts about the trip.",
+        "vi": "Tôi đang đắn đo về chuyến đi."
+      },
+      {
+        "en": "She had second thoughts after signing the contract.",
+        "vi": "Cô ấy do dự sau khi ký hợp đồng."
+      }
+    ],
+    "collocations": [
+      "have second thoughts about something",
+      "start having second thoughts",
+      "suddenly have second thoughts"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Are you still going to quit your job?"
+      },
+      {
+        "speaker": "B",
+        "text": "I'm having second thoughts now."
+      }
+    ]
+  },
+  {
+    "phrase": "be of the same mind",
+    "meaning_vi": "cùng quan điểm",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "We are of the same mind on this issue.",
+        "vi": "Chúng tôi cùng quan điểm về vấn đề này."
+      },
+      {
+        "en": "Are you of the same mind as me?",
+        "vi": "Bạn có cùng quan điểm với tôi không?"
+      }
+    ],
+    "collocations": [
+      "be of the same mind about",
+      "be of the same mind as someone",
+      "be of the same mind on that"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I think we should invest more in education."
+      },
+      {
+        "speaker": "B",
+        "text": "I'm of the same mind."
+      }
+    ]
+  },
+  {
+    "phrase": "feel strongly about",
+    "meaning_vi": "cảm thấy mạnh mẽ về",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "She feels strongly about animal rights.",
+        "vi": "Cô ấy cảm thấy mạnh mẽ về quyền động vật."
+      },
+      {
+        "en": "I don't feel strongly about that issue.",
+        "vi": "Tôi không có cảm xúc mạnh mẽ về vấn đề đó."
+      }
+    ],
+    "collocations": [
+      "feel strongly about something",
+      "feel very strongly about",
+      "not feel strongly about"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What do you think about the new policy?"
+      },
+      {
+        "speaker": "B",
+        "text": "I feel strongly that it's unfair."
+      }
+    ]
+  }
+]

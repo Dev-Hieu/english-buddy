@@ -1,0 +1,498 @@
+[
+  {
+    "phrase": "stand out",
+    "meaning_vi": "nổi bật",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "The red dress really stands out in the crowd.",
+        "vi": "Chiếc váy đỏ thực sự nổi bật giữa đám đông."
+      },
+      {
+        "en": "Her artwork stands out because of its vibrant colors.",
+        "vi": "Tác phẩm nghệ thuật của cô ấy nổi bật nhờ màu sắc rực rỡ."
+      }
+    ],
+    "collocations": [
+      "stand out from the crowd",
+      "stand out in a group",
+      "stand out because of"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Which painting do you like best?"
+      },
+      {
+        "speaker": "B",
+        "text": "The one with the bright colors really stands out."
+      }
+    ]
+  },
+  {
+    "phrase": "light up",
+    "meaning_vi": "sáng lên, rạng rỡ",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Her face lit up when she saw the colorful balloons.",
+        "vi": "Khuôn mặt cô ấy rạng rỡ khi thấy những quả bóng bay đầy màu sắc."
+      },
+      {
+        "en": "The fireworks lit up the sky with many colors.",
+        "vi": "Pháo hoa thắp sáng bầu trời với nhiều màu sắc."
+      }
+    ],
+    "collocations": [
+      "light up a room",
+      "light up with joy",
+      "light up the sky"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Did you see the sunset?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, it lit up the whole sky with orange and pink."
+      }
+    ]
+  },
+  {
+    "phrase": "blend in",
+    "meaning_vi": "hòa hợp, không nổi bật",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "The gray walls blend in with the surroundings.",
+        "vi": "Những bức tường xám hòa hợp với môi trường xung quanh."
+      },
+      {
+        "en": "He wore dark colors to blend in with the crowd.",
+        "vi": "Anh ấy mặc màu tối để hòa vào đám đông."
+      }
+    ],
+    "collocations": [
+      "blend in with",
+      "blend into the background",
+      "blend in perfectly"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Why did you choose beige for the walls?"
+      },
+      {
+        "speaker": "B",
+        "text": "So they blend in with the floor."
+      }
+    ]
+  },
+  {
+    "phrase": "bright color",
+    "meaning_vi": "màu sáng",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "She prefers bright colors like yellow and orange.",
+        "vi": "Cô ấy thích những màu sáng như vàng và cam."
+      },
+      {
+        "en": "Bright colors make a room feel more cheerful.",
+        "vi": "Màu sáng làm căn phòng trông vui vẻ hơn."
+      }
+    ],
+    "collocations": [
+      "bright color scheme",
+      "bright color palette",
+      "bright color combination"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What color should I paint my bedroom?"
+      },
+      {
+        "speaker": "B",
+        "text": "Try a bright color to make it feel bigger."
+      }
+    ]
+  },
+  {
+    "phrase": "dark shade",
+    "meaning_vi": "màu tối",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "Dark shades like navy blue are very elegant.",
+        "vi": "Những màu tối như xanh nước biển đậm rất thanh lịch."
+      },
+      {
+        "en": "He chose a dark shade for his suit.",
+        "vi": "Anh ấy chọn một màu tối cho bộ vest của mình."
+      }
+    ],
+    "collocations": [
+      "dark shade of blue",
+      "dark shade of green",
+      "dark shade of red"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you think I should wear a dark shade?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, it's more professional."
+      }
+    ]
+  },
+  {
+    "phrase": "primary color",
+    "meaning_vi": "màu cơ bản",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "Red, blue, and yellow are primary colors.",
+        "vi": "Đỏ, xanh dương và vàng là những màu cơ bản."
+      },
+      {
+        "en": "You can mix primary colors to create secondary ones.",
+        "vi": "Bạn có thể pha trộn các màu cơ bản để tạo ra màu thứ cấp."
+      }
+    ],
+    "collocations": [
+      "primary color wheel",
+      "primary color palette",
+      "primary color mixing"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What are the primary colors?"
+      },
+      {
+        "speaker": "B",
+        "text": "Red, blue, and yellow."
+      }
+    ]
+  },
+  {
+    "phrase": "secondary color",
+    "meaning_vi": "màu thứ cấp",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "Green, orange, and purple are secondary colors.",
+        "vi": "Xanh lá, cam và tím là các màu thứ cấp."
+      },
+      {
+        "en": "Secondary colors are made by mixing two primary colors.",
+        "vi": "Màu thứ cấp được tạo bằng cách pha hai màu cơ bản."
+      }
+    ],
+    "collocations": [
+      "secondary color mixing",
+      "secondary color scheme",
+      "secondary color wheel"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How do you get secondary colors?"
+      },
+      {
+        "speaker": "B",
+        "text": "By mixing two primary colors."
+      }
+    ]
+  },
+  {
+    "phrase": "geometric shape",
+    "meaning_vi": "hình học",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "A square is a basic geometric shape.",
+        "vi": "Hình vuông là một hình học cơ bản."
+      },
+      {
+        "en": "The design uses many geometric shapes.",
+        "vi": "Thiết kế sử dụng nhiều hình học."
+      }
+    ],
+    "collocations": [
+      "geometric shape pattern",
+      "geometric shape art",
+      "geometric shape design"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What kind of shapes do you like?"
+      },
+      {
+        "speaker": "B",
+        "text": "I prefer geometric shapes like triangles and circles."
+      }
+    ]
+  },
+  {
+    "phrase": "in the shape of",
+    "meaning_vi": "có hình dạng",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "The cake was in the shape of a star.",
+        "vi": "Chiếc bánh có hình ngôi sao."
+      },
+      {
+        "en": "She drew a heart in the shape of a circle.",
+        "vi": "Cô ấy vẽ một trái tim có hình tròn."
+      }
+    ],
+    "collocations": [
+      "in the shape of a heart",
+      "in the shape of a square",
+      "in the shape of a triangle"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What shape is the table?"
+      },
+      {
+        "speaker": "B",
+        "text": "It's in the shape of an oval."
+      }
+    ]
+  },
+  {
+    "phrase": "color scheme",
+    "meaning_vi": "phối màu",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "The room has a warm color scheme.",
+        "vi": "Căn phòng có phối màu ấm."
+      },
+      {
+        "en": "I like the color scheme of that painting.",
+        "vi": "Tôi thích phối màu của bức tranh đó."
+      }
+    ],
+    "collocations": [
+      "warm color scheme",
+      "cool color scheme",
+      "monochromatic color scheme"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What color scheme did you choose for your website?"
+      },
+      {
+        "speaker": "B",
+        "text": "I went with a blue and white scheme."
+      }
+    ]
+  },
+  {
+    "phrase": "color palette",
+    "meaning_vi": "bảng màu",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "The artist used a limited color palette.",
+        "vi": "Họa sĩ đã sử dụng một bảng màu hạn chế."
+      },
+      {
+        "en": "She selected a pastel color palette for the nursery.",
+        "vi": "Cô ấy chọn bảng màu pastel cho phòng trẻ em."
+      }
+    ],
+    "collocations": [
+      "pastel color palette",
+      "vibrant color palette",
+      "neutral color palette"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What colors are in your palette?"
+      },
+      {
+        "speaker": "B",
+        "text": "Mostly earth tones and some bright accents."
+      }
+    ]
+  },
+  {
+    "phrase": "shade of",
+    "meaning_vi": "sắc thái của",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "I love this shade of blue.",
+        "vi": "Tôi thích sắc thái xanh dương này."
+      },
+      {
+        "en": "The wall is painted in a shade of green.",
+        "vi": "Bức tường được sơn một sắc xanh lá."
+      }
+    ],
+    "collocations": [
+      "shade of red",
+      "shade of gray",
+      "shade of purple"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Which shade do you prefer?"
+      },
+      {
+        "speaker": "B",
+        "text": "A lighter shade of pink."
+      }
+    ]
+  },
+  {
+    "phrase": "tone down",
+    "meaning_vi": "làm dịu bớt, giảm bớt",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "You should tone down the brightness of the color.",
+        "vi": "Bạn nên làm dịu bớt độ sáng của màu."
+      },
+      {
+        "en": "He toned down the design by using softer colors.",
+        "vi": "Anh ấy làm dịu thiết kế bằng cách sử dụng màu sắc nhẹ nhàng hơn."
+      }
+    ],
+    "collocations": [
+      "tone down the color",
+      "tone down the brightness",
+      "tone down the design"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "The room is too loud."
+      },
+      {
+        "speaker": "B",
+        "text": "Let's tone down the wall color."
+      }
+    ]
+  },
+  {
+    "phrase": "pop of color",
+    "meaning_vi": "mảng màu nổi bật",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "Add a pop of color with a bright pillow.",
+        "vi": "Thêm một mảng màu nổi bật với một chiếc gối sáng."
+      },
+      {
+        "en": "The room needs a pop of color.",
+        "vi": "Căn phòng cần một mảng màu nổi bật."
+      }
+    ],
+    "collocations": [
+      "add a pop of color",
+      "a pop of color in",
+      "bright pop of color"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What do you think the room is missing?"
+      },
+      {
+        "speaker": "B",
+        "text": "A pop of color, like a red vase."
+      }
+    ]
+  },
+  {
+    "phrase": "circle back",
+    "meaning_vi": "quay lại, trở lại vấn đề (không liên quan đến hình học)",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Let's circle back to that topic later.",
+        "vi": "Hãy quay lại chủ đề đó sau."
+      },
+      {
+        "en": "We can circle back after the break.",
+        "vi": "Chúng ta có thể quay lại sau giờ giải lao."
+      }
+    ],
+    "collocations": [
+      "circle back to",
+      "circle back later",
+      "circle back on"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "We didn't finish discussing the color palette."
+      },
+      {
+        "speaker": "B",
+        "text": "Let's circle back to it after lunch."
+      }
+    ]
+  },
+  {
+    "phrase": "out of shape",
+    "meaning_vi": "mất dáng, không còn hình dạng ban đầu",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "The box is out of shape after being crushed.",
+        "vi": "Cái hộp bị mất dáng sau khi bị bẹp."
+      },
+      {
+        "en": "My sweater is out of shape after washing.",
+        "vi": "Áo len của tôi mất dáng sau khi giặt."
+      }
+    ],
+    "collocations": [
+      "get out of shape",
+      "stretch out of shape",
+      "bend out of shape"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Why does your hat look weird?"
+      },
+      {
+        "speaker": "B",
+        "text": "It got out of shape in the rain."
+      }
+    ]
+  }
+]

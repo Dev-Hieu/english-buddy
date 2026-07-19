@@ -1,0 +1,250 @@
+[
+  {
+    "phrase": "wake up",
+    "meaning_vi": "thức dậy",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I wake up at 7 AM.",
+        "vi": "Tôi thức dậy lúc 7 giờ sáng."
+      },
+      {
+        "en": "She wakes up early every day.",
+        "vi": "Cô ấy thức dậy sớm mỗi ngày."
+      }
+    ],
+    "collocations": [
+      "wake up early",
+      "wake up late",
+      "wake up to an alarm"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What time do you wake up?"
+      },
+      {
+        "speaker": "B",
+        "text": "I wake up at six."
+      }
+    ]
+  },
+  {
+    "phrase": "get up",
+    "meaning_vi": "ngồi dậy, đứng dậy",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I get up after waking up.",
+        "vi": "Tôi ngồi dậy sau khi thức dậy."
+      },
+      {
+        "en": "Please get up from the chair.",
+        "vi": "Làm ơn đứng dậy khỏi ghế."
+      }
+    ],
+    "collocations": [
+      "get up slowly",
+      "get up quickly",
+      "get up from bed"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Are you still in bed? Get up!"
+      },
+      {
+        "speaker": "B",
+        "text": "Okay, I'm getting up now."
+      }
+    ]
+  },
+  {
+    "phrase": "turn on",
+    "meaning_vi": "bật (thiết bị)",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Please turn on the light.",
+        "vi": "Làm ơn bật đèn lên."
+      },
+      {
+        "en": "I turn on the TV every evening.",
+        "vi": "Tôi bật TV mỗi tối."
+      }
+    ],
+    "collocations": [
+      "turn on the light",
+      "turn on the TV",
+      "turn on the computer"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "It's dark. Can you turn on the light?"
+      },
+      {
+        "speaker": "B",
+        "text": "Sure, I'll turn it on."
+      }
+    ]
+  },
+  {
+    "phrase": "turn off",
+    "meaning_vi": "tắt (thiết bị)",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Please turn off the fan.",
+        "vi": "Làm ơn tắt quạt."
+      },
+      {
+        "en": "Don't forget to turn off the lights.",
+        "vi": "Đừng quên tắt đèn."
+      }
+    ],
+    "collocations": [
+      "turn off the light",
+      "turn off the TV",
+      "turn off the tap"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Please turn off the TV before you leave."
+      },
+      {
+        "speaker": "B",
+        "text": "Okay, I'll turn it off."
+      }
+    ]
+  },
+  {
+    "phrase": "look for",
+    "meaning_vi": "tìm kiếm",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I am looking for my keys.",
+        "vi": "Tôi đang tìm chìa khóa của tôi."
+      },
+      {
+        "en": "She is looking for a job.",
+        "vi": "Cô ấy đang tìm việc."
+      }
+    ],
+    "collocations": [
+      "look for a job",
+      "look for a place",
+      "look for something"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What are you looking for?"
+      },
+      {
+        "speaker": "B",
+        "text": "I'm looking for my phone."
+      }
+    ]
+  },
+  {
+    "phrase": "wait for",
+    "meaning_vi": "chờ đợi",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Please wait for me.",
+        "vi": "Làm ơn chờ tôi."
+      },
+      {
+        "en": "They are waiting for the bus.",
+        "vi": "Họ đang chờ xe buýt."
+      }
+    ],
+    "collocations": [
+      "wait for someone",
+      "wait for the bus",
+      "wait for a response"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Are you waiting for someone?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I'm waiting for my friend."
+      }
+    ]
+  },
+  {
+    "phrase": "pay for",
+    "meaning_vi": "trả tiền cho",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I will pay for the meal.",
+        "vi": "Tôi sẽ trả tiền bữa ăn."
+      },
+      {
+        "en": "She paid for the ticket.",
+        "vi": "Cô ấy đã trả tiền vé."
+      }
+    ],
+    "collocations": [
+      "pay for dinner",
+      "pay for the ticket",
+      "pay for the service"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How much did you pay for this?"
+      },
+      {
+        "speaker": "B",
+        "text": "I paid ten dollars."
+      }
+    ]
+  },
+  {
+    "phrase": "ask for",
+    "meaning_vi": "yêu cầu, hỏi xin",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Can I ask for the bill?",
+        "vi": "Tôi có thể yêu cầu hóa đơn không?"
+      },
+      {
+        "en": "She asked for help.",
+        "vi": "Cô ấy đã yêu cầu giúp đỡ."
+      }
+    ],
+    "collocations": [
+      "ask for help",
+      "ask for the bill",
+      "ask for directions"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What did you ask for?"
+      },
+      {
+        "speaker": "B",
+        "text": "I asked for a glass of water."
+      }
+    ]
+  }
+]

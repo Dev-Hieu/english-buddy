@@ -1,0 +1,374 @@
+[
+  {
+    "phrase": "put on",
+    "meaning_vi": "mặc vào",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "You should put on a coat because it's cold outside.",
+        "vi": "Bạn nên mặc áo khoác vào vì ngoài trời lạnh."
+      },
+      {
+        "en": "She put on her sunglasses before going out.",
+        "vi": "Cô ấy đeo kính râm vào trước khi ra ngoài."
+      }
+    ],
+    "collocations": [
+      "put on a jacket",
+      "put on a hat",
+      "put on sunscreen"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "It's raining. Don't forget to put on your raincoat."
+      },
+      {
+        "speaker": "B",
+        "text": "Thanks, I will."
+      }
+    ]
+  },
+  {
+    "phrase": "take off",
+    "meaning_vi": "cởi ra",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Please take off your shoes before entering the house.",
+        "vi": "Vui lòng cởi giày trước khi vào nhà."
+      },
+      {
+        "en": "He took off his hat when he came inside.",
+        "vi": "Anh ấy cởi mũ ra khi vào trong nhà."
+      }
+    ],
+    "collocations": [
+      "take off a coat",
+      "take off gloves",
+      "take off a sweater"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "It's warm inside. You can take off your jacket."
+      },
+      {
+        "speaker": "B",
+        "text": "Good idea. I will."
+      }
+    ]
+  },
+  {
+    "phrase": "warm up",
+    "meaning_vi": "làm ấm, khởi động",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Let's warm up by the fire.",
+        "vi": "Hãy sưởi ấm bên lửa."
+      },
+      {
+        "en": "I need to warm up before exercising.",
+        "vi": "Tôi cần khởi động trước khi tập thể dục."
+      }
+    ],
+    "collocations": [
+      "warm up the room",
+      "warm up food",
+      "warm up a car"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "It's freezing! Let's go inside and warm up."
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I'm so cold."
+      }
+    ]
+  },
+  {
+    "phrase": "cool down",
+    "meaning_vi": "hạ nhiệt, làm mát",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "After running, you should cool down slowly.",
+        "vi": "Sau khi chạy, bạn nên hạ nhiệt từ từ."
+      },
+      {
+        "en": "The weather will cool down in the evening.",
+        "vi": "Thời tiết sẽ mát hơn vào buổi tối."
+      }
+    ],
+    "collocations": [
+      "cool down the engine",
+      "cool down after exercise",
+      "cool down a drink"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "It's so hot today. I hope it cools down soon."
+      },
+      {
+        "speaker": "B",
+        "text": "Me too. Let's go swimming to cool down."
+      }
+    ]
+  },
+  {
+    "phrase": "heavy rain",
+    "meaning_vi": "mưa lớn",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "We had heavy rain all night.",
+        "vi": "Chúng tôi có mưa lớn suốt đêm."
+      },
+      {
+        "en": "Heavy rain caused flooding in the streets.",
+        "vi": "Mưa lớn gây ngập lụt trên đường phố."
+      }
+    ],
+    "collocations": [
+      "heavy rain warning",
+      "heavy rain forecast",
+      "heavy rainstorm"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Look at the dark clouds. It's going to be heavy rain."
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, we should stay inside."
+      }
+    ]
+  },
+  {
+    "phrase": "strong wind",
+    "meaning_vi": "gió mạnh",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "The strong wind blew my hat away.",
+        "vi": "Gió mạnh thổi bay mũ của tôi."
+      },
+      {
+        "en": "Be careful of strong wind when you ride a bike.",
+        "vi": "Hãy cẩn thận với gió mạnh khi bạn đi xe đạp."
+      }
+    ],
+    "collocations": [
+      "strong wind warning",
+      "strong wind gusts",
+      "strong wind damage"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "It's very windy today. Hold your umbrella tight."
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, the strong wind might break it."
+      }
+    ]
+  },
+  {
+    "phrase": "sunny day",
+    "meaning_vi": "ngày nắng",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "It's a beautiful sunny day. Let's go to the beach.",
+        "vi": "Đó là một ngày nắng đẹp. Hãy đi biển."
+      },
+      {
+        "en": "I love sunny days because I can play outside.",
+        "vi": "Tôi thích những ngày nắng vì tôi có thể chơi ngoài trời."
+      }
+    ],
+    "collocations": [
+      "sunny day forecast",
+      "sunny day activities",
+      "bright sunny day"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What a sunny day! Let's have a picnic."
+      },
+      {
+        "speaker": "B",
+        "text": "Great idea! I'll prepare some food."
+      }
+    ]
+  },
+  {
+    "phrase": "freezing cold",
+    "meaning_vi": "lạnh cóng",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "It's freezing cold outside. Wear a heavy coat.",
+        "vi": "Ngoài trời lạnh cóng. Hãy mặc áo khoác dày."
+      },
+      {
+        "en": "I'm freezing cold. Can you turn up the heater?",
+        "vi": "Tôi lạnh cóng. Bạn có thể bật máy sưởi lên không?"
+      }
+    ],
+    "collocations": [
+      "freezing cold weather",
+      "freezing cold water",
+      "freezing cold hands"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "It's freezing cold today. I need a hot drink."
+      },
+      {
+        "speaker": "B",
+        "text": "Me too. Let's make some tea."
+      }
+    ]
+  },
+  {
+    "phrase": "boiling hot",
+    "meaning_vi": "nóng như thiêu",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "It's boiling hot in here. Can you open the window?",
+        "vi": "Ở đây nóng như thiêu. Bạn có thể mở cửa sổ không?"
+      },
+      {
+        "en": "I hate boiling hot summers.",
+        "vi": "Tôi ghét mùa hè nóng như thiêu."
+      }
+    ],
+    "collocations": [
+      "boiling hot day",
+      "boiling hot weather",
+      "boiling hot sun"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "It's boiling hot outside. Let's stay in the shade."
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I'm sweating a lot."
+      }
+    ]
+  },
+  {
+    "phrase": "weather forecast",
+    "meaning_vi": "dự báo thời tiết",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I always check the weather forecast before going out.",
+        "vi": "Tôi luôn kiểm tra dự báo thời tiết trước khi ra ngoài."
+      },
+      {
+        "en": "The weather forecast says it will rain tomorrow.",
+        "vi": "Dự báo thời tiết nói rằng ngày mai sẽ mưa."
+      }
+    ],
+    "collocations": [
+      "check the weather forecast",
+      "weather forecast on TV",
+      "accurate weather forecast"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Did you see the weather forecast for today?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, it says sunny and warm."
+      }
+    ]
+  },
+  {
+    "phrase": "change of seasons",
+    "meaning_vi": "chuyển mùa",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "The change of seasons always makes me feel excited.",
+        "vi": "Sự chuyển mùa luôn khiến tôi cảm thấy hào hứng."
+      },
+      {
+        "en": "I love the change of seasons, especially from winter to spring.",
+        "vi": "Tôi thích sự chuyển mùa, đặc biệt từ đông sang xuân."
+      }
+    ],
+    "collocations": [
+      "change of seasons affects health",
+      "enjoy the change of seasons",
+      "during the change of seasons"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "The weather is getting warmer. I love the change of seasons."
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, spring is coming."
+      }
+    ]
+  },
+  {
+    "phrase": "What's the weather like?",
+    "meaning_vi": "Thời tiết thế nào?",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "What's the weather like in Hanoi today?",
+        "vi": "Thời tiết ở Hà Nội hôm nay thế nào?"
+      },
+      {
+        "en": "I don't know what the weather is like. Let me check.",
+        "vi": "Tôi không biết thời tiết thế nào. Để tôi kiểm tra."
+      }
+    ],
+    "collocations": [
+      "ask about the weather",
+      "check what the weather is like",
+      "what's the weather like today"
+    ],
+    "response": "It's sunny and warm.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What's the weather like today?"
+      },
+      {
+        "speaker": "B",
+        "text": "It's cloudy but not cold."
+      }
+    ]
+  }
+]

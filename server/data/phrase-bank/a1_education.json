@@ -1,0 +1,250 @@
+[
+  {
+    "phrase": "go to school",
+    "meaning_vi": "đi học",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I go to school by bus.",
+        "vi": "Tôi đi học bằng xe buýt."
+      },
+      {
+        "en": "She goes to school every day.",
+        "vi": "Cô ấy đi học mỗi ngày."
+      }
+    ],
+    "collocations": [
+      "go to school",
+      "go to class",
+      "go to university"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How do you go to school?"
+      },
+      {
+        "speaker": "B",
+        "text": "I go to school by bike."
+      }
+    ]
+  },
+  {
+    "phrase": "take a test",
+    "meaning_vi": "làm bài kiểm tra",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "We take a test on Friday.",
+        "vi": "Chúng tôi làm bài kiểm tra vào thứ Sáu."
+      },
+      {
+        "en": "Did you take the test?",
+        "vi": "Bạn đã làm bài kiểm tra chưa?"
+      }
+    ],
+    "collocations": [
+      "take a test",
+      "take an exam",
+      "take a quiz"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "When do we take the test?"
+      },
+      {
+        "speaker": "B",
+        "text": "We take it next Monday."
+      }
+    ]
+  },
+  {
+    "phrase": "do homework",
+    "meaning_vi": "làm bài tập về nhà",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I do homework after dinner.",
+        "vi": "Tôi làm bài tập về nhà sau bữa tối."
+      },
+      {
+        "en": "Do you do homework every day?",
+        "vi": "Bạn có làm bài tập về nhà mỗi ngày không?"
+      }
+    ],
+    "collocations": [
+      "do homework",
+      "do exercises",
+      "do assignments"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What time do you do homework?"
+      },
+      {
+        "speaker": "B",
+        "text": "I do homework at 7 pm."
+      }
+    ]
+  },
+  {
+    "phrase": "study hard",
+    "meaning_vi": "học chăm chỉ",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I study hard for the exam.",
+        "vi": "Tôi học chăm chỉ cho kỳ thi."
+      },
+      {
+        "en": "She studies hard every night.",
+        "vi": "Cô ấy học chăm chỉ mỗi tối."
+      }
+    ],
+    "collocations": [
+      "study hard",
+      "study well",
+      "study English"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you study hard?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I study hard every day."
+      }
+    ]
+  },
+  {
+    "phrase": "listen to the teacher",
+    "meaning_vi": "nghe lời thầy cô",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "You should listen to the teacher.",
+        "vi": "Bạn nên nghe lời thầy cô."
+      },
+      {
+        "en": "They listen to the teacher in class.",
+        "vi": "Họ nghe lời thầy cô trong lớp."
+      }
+    ],
+    "collocations": [
+      "listen to the teacher",
+      "listen carefully",
+      "listen in class"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you listen to the teacher?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I always listen carefully."
+      }
+    ]
+  },
+  {
+    "phrase": "raise your hand",
+    "meaning_vi": "giơ tay",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "Please raise your hand to ask a question.",
+        "vi": "Hãy giơ tay để hỏi câu hỏi."
+      },
+      {
+        "en": "The student raised his hand.",
+        "vi": "Học sinh đó đã giơ tay."
+      }
+    ],
+    "collocations": [
+      "raise your hand",
+      "raise your hand in class",
+      "raise your hand to speak"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Can I ask a question?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, raise your hand first."
+      }
+    ]
+  },
+  {
+    "phrase": "learn by heart",
+    "meaning_vi": "học thuộc lòng",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "I learn vocabulary by heart.",
+        "vi": "Tôi học thuộc lòng từ vựng."
+      },
+      {
+        "en": "She learns the poem by heart.",
+        "vi": "Cô ấy học thuộc lòng bài thơ."
+      }
+    ],
+    "collocations": [
+      "learn by heart",
+      "memorize",
+      "learn by rote"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How do you learn new words?"
+      },
+      {
+        "speaker": "B",
+        "text": "I learn them by heart."
+      }
+    ]
+  },
+  {
+    "phrase": "hand in",
+    "meaning_vi": "nộp bài",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Please hand in your homework on Friday.",
+        "vi": "Hãy nộp bài tập về nhà vào thứ Sáu."
+      },
+      {
+        "en": "I handed in my essay yesterday.",
+        "vi": "Tôi đã nộp bài luận hôm qua."
+      }
+    ],
+    "collocations": [
+      "hand in homework",
+      "hand in assignment",
+      "hand in paper"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "When should we hand in the report?"
+      },
+      {
+        "speaker": "B",
+        "text": "Hand it in by next Monday."
+      }
+    ]
+  }
+]

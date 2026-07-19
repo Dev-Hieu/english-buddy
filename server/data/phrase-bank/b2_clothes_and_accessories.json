@@ -1,0 +1,374 @@
+[
+  {
+    "phrase": "dress up",
+    "meaning_vi": "ăn mặc đẹp, diện",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "We need to dress up for the gala tonight.",
+        "vi": "Chúng ta cần ăn mặc đẹp cho buổi dạ hội tối nay."
+      },
+      {
+        "en": "She dressed up in a stunning evening gown.",
+        "vi": "Cô ấy diện một chiếc váy dạ hội lộng lẫy."
+      }
+    ],
+    "collocations": [
+      "dress up for a party",
+      "dress up in costume",
+      "dress up formally"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Are you dressing up for the wedding?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I have a beautiful dress ready."
+      }
+    ]
+  },
+  {
+    "phrase": "try on",
+    "meaning_vi": "mặc thử",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Can I try on this jacket?",
+        "vi": "Tôi có thể mặc thử áo khoác này không?"
+      },
+      {
+        "en": "She tried on three dresses before choosing one.",
+        "vi": "Cô ấy đã mặc thử ba chiếc váy trước khi chọn một cái."
+      }
+    ],
+    "collocations": [
+      "try on clothes",
+      "try on shoes",
+      "try on accessories"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Would you like to try on that blouse?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I'll try it on right now."
+      }
+    ]
+  },
+  {
+    "phrase": "go with",
+    "meaning_vi": "hợp với, phù hợp với",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "This scarf goes with your coat perfectly.",
+        "vi": "Chiếc khăn này hợp với áo khoác của bạn một cách hoàn hảo."
+      },
+      {
+        "en": "Does this belt go with these pants?",
+        "vi": "Cái thắt lưng này có hợp với quần này không?"
+      }
+    ],
+    "collocations": [
+      "go with an outfit",
+      "go with shoes",
+      "go with accessories"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I think this necklace goes with your dress."
+      },
+      {
+        "speaker": "B",
+        "text": "Really? I thought it might clash."
+      }
+    ]
+  },
+  {
+    "phrase": "take off",
+    "meaning_vi": "cởi ra",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Please take off your shoes before entering.",
+        "vi": "Vui lòng cởi giày trước khi vào."
+      },
+      {
+        "en": "He took off his hat and gloves.",
+        "vi": "Anh ấy cởi mũ và găng tay."
+      }
+    ],
+    "collocations": [
+      "take off a jacket",
+      "take off jewelry",
+      "take off makeup"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "It's hot in here. You can take off your coat."
+      },
+      {
+        "speaker": "B",
+        "text": "Good idea, I'll take it off."
+      }
+    ]
+  },
+  {
+    "phrase": "put on",
+    "meaning_vi": "mặc vào",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Put on your sweater; it's cold outside.",
+        "vi": "Mặc áo len vào, ngoài trời lạnh đấy."
+      },
+      {
+        "en": "She put on her earrings before leaving.",
+        "vi": "Cô ấy đeo bông tai trước khi ra ngoài."
+      }
+    ],
+    "collocations": [
+      "put on clothes",
+      "put on makeup",
+      "put on accessories"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What should I put on for the party?"
+      },
+      {
+        "speaker": "B",
+        "text": "Put on something comfortable but stylish."
+      }
+    ]
+  },
+  {
+    "phrase": "dress down",
+    "meaning_vi": "ăn mặc giản dị",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "On Fridays we can dress down at work.",
+        "vi": "Vào thứ Sáu, chúng tôi có thể ăn mặc giản dị ở công ty."
+      },
+      {
+        "en": "He dressed down in jeans and a t-shirt.",
+        "vi": "Anh ấy ăn mặc giản dị với quần jean và áo phông."
+      }
+    ],
+    "collocations": [
+      "dress down for casual Friday",
+      "dress down in casual wear",
+      "dress down code"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Are you dressing down for the picnic?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, just jeans and sneakers."
+      }
+    ]
+  },
+  {
+    "phrase": "throw on",
+    "meaning_vi": "khoác vội, mặc nhanh",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I'll just throw on a jacket and go.",
+        "vi": "Tôi sẽ khoác vội áo khoác và đi."
+      },
+      {
+        "en": "She threw on a dress and ran out.",
+        "vi": "Cô ấy mặc nhanh một chiếc váy và chạy ra ngoài."
+      }
+    ],
+    "collocations": [
+      "throw on clothes",
+      "throw on a coat",
+      "throw on something casual"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "We're late! Just throw on anything."
+      },
+      {
+        "speaker": "B",
+        "text": "Okay, I'll throw on this sweater."
+      }
+    ]
+  },
+  {
+    "phrase": "dress to impress",
+    "meaning_vi": "ăn mặc để gây ấn tượng",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "She always dresses to impress at business meetings.",
+        "vi": "Cô ấy luôn ăn mặc để gây ấn tượng trong các cuộc họp kinh doanh."
+      },
+      {
+        "en": "If you want the job, dress to impress.",
+        "vi": "Nếu bạn muốn có công việc, hãy ăn mặc để gây ấn tượng."
+      }
+    ],
+    "collocations": [
+      "dress to impress for an interview",
+      "dress to impress at a party",
+      "dress to impress on a date"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Why are you so dressed up?"
+      },
+      {
+        "speaker": "B",
+        "text": "I have a date tonight. I want to dress to impress."
+      }
+    ]
+  },
+  {
+    "phrase": "mix and match",
+    "meaning_vi": "phối đồ",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "You can mix and match different tops and skirts.",
+        "vi": "Bạn có thể phối đồ với nhiều áo và váy khác nhau."
+      },
+      {
+        "en": "She loves to mix and match accessories.",
+        "vi": "Cô ấy thích phối phụ kiện."
+      }
+    ],
+    "collocations": [
+      "mix and match outfits",
+      "mix and match patterns",
+      "mix and match colors"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How do you create so many outfits?"
+      },
+      {
+        "speaker": "B",
+        "text": "I just mix and match a few basic pieces."
+      }
+    ]
+  },
+  {
+    "phrase": "a wardrobe staple",
+    "meaning_vi": "món đồ không thể thiếu trong tủ quần áo",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "A little black dress is a wardrobe staple.",
+        "vi": "Một chiếc váy đen nhỏ là món đồ không thể thiếu trong tủ quần áo."
+      },
+      {
+        "en": "White shirts are a wardrobe staple for many professionals.",
+        "vi": "Áo sơ mi trắng là món đồ không thể thiếu trong tủ quần áo của nhiều người làm việc chuyên nghiệp."
+      }
+    ],
+    "collocations": [
+      "a wardrobe staple for every season",
+      "a wardrobe staple piece",
+      "a wardrobe staple item"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I need a new blazer."
+      },
+      {
+        "speaker": "B",
+        "text": "A classic blazer is a wardrobe staple."
+      }
+    ]
+  },
+  {
+    "phrase": "dress sense",
+    "meaning_vi": "gu thời trang, khiếu ăn mặc",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "She has great dress sense.",
+        "vi": "Cô ấy có gu thời trang tuyệt vời."
+      },
+      {
+        "en": "His dress sense is very modern.",
+        "vi": "Gu thời trang của anh ấy rất hiện đại."
+      }
+    ],
+    "collocations": [
+      "have good dress sense",
+      "poor dress sense",
+      "develop dress sense"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Where did you buy that outfit?"
+      },
+      {
+        "speaker": "B",
+        "text": "Thanks! I try to have good dress sense."
+      }
+    ]
+  },
+  {
+    "phrase": "a fashion statement",
+    "meaning_vi": "tuyên bố thời trang, phong cách nổi bật",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "Wearing bold colors is a fashion statement.",
+        "vi": "Mặc màu sắc nổi bật là một tuyên bố thời trang."
+      },
+      {
+        "en": "Her unique hat made a fashion statement.",
+        "vi": "Chiếc mũ độc đáo của cô ấy tạo nên một tuyên bố thời trang."
+      }
+    ],
+    "collocations": [
+      "make a fashion statement",
+      "bold fashion statement",
+      "personal fashion statement"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Why are you wearing those huge earrings?"
+      },
+      {
+        "speaker": "B",
+        "text": "I want to make a fashion statement."
+      }
+    ]
+  }
+]

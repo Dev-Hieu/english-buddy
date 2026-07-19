@@ -1,0 +1,498 @@
+[
+  {
+    "phrase": "call back",
+    "meaning_vi": "gọi lại",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I'll call you back later.",
+        "vi": "Tôi sẽ gọi lại cho bạn sau."
+      },
+      {
+        "en": "She called me back after the meeting.",
+        "vi": "Cô ấy gọi lại cho tôi sau cuộc họp."
+      }
+    ],
+    "collocations": [
+      "call someone back",
+      "call back later",
+      "call back as soon as possible"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Can you call me back in an hour?"
+      },
+      {
+        "speaker": "B",
+        "text": "Sure, I'll call you back then."
+      }
+    ]
+  },
+  {
+    "phrase": "hang up",
+    "meaning_vi": "cúp máy",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Don't hang up, I need to tell you something.",
+        "vi": "Đừng cúp máy, tôi cần nói với bạn điều này."
+      },
+      {
+        "en": "He hung up on me.",
+        "vi": "Anh ta cúp máy khi tôi đang nói."
+      }
+    ],
+    "collocations": [
+      "hang up the phone",
+      "hang up on someone",
+      "hang up abruptly"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I have to go now. Goodbye."
+      },
+      {
+        "speaker": "B",
+        "text": "Okay, don't hang up yet! I have one more thing."
+      }
+    ]
+  },
+  {
+    "phrase": "pick up",
+    "meaning_vi": "nhấc máy; đón",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Can you pick up the phone? It's ringing.",
+        "vi": "Bạn có thể nhấc máy không? Điện thoại đang reo."
+      },
+      {
+        "en": "I'll pick you up at the station.",
+        "vi": "Tôi sẽ đón bạn ở ga."
+      }
+    ],
+    "collocations": [
+      "pick up the phone",
+      "pick up a call",
+      "pick up someone"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Why didn't you pick up when I called?"
+      },
+      {
+        "speaker": "B",
+        "text": "Sorry, I was in a meeting."
+      }
+    ]
+  },
+  {
+    "phrase": "turn on",
+    "meaning_vi": "bật",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Please turn on the TV.",
+        "vi": "Vui lòng bật TV lên."
+      },
+      {
+        "en": "I turned on my computer to check emails.",
+        "vi": "Tôi bật máy tính để kiểm tra email."
+      }
+    ],
+    "collocations": [
+      "turn on the TV",
+      "turn on the computer",
+      "turn on the light"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Can you turn on the air conditioner? It's hot."
+      },
+      {
+        "speaker": "B",
+        "text": "Sure, I'll turn it on right now."
+      }
+    ]
+  },
+  {
+    "phrase": "turn off",
+    "meaning_vi": "tắt",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Don't forget to turn off the lights.",
+        "vi": "Đừng quên tắt đèn."
+      },
+      {
+        "en": "I turned off my phone during the movie.",
+        "vi": "Tôi tắt điện thoại trong suốt bộ phim."
+      }
+    ],
+    "collocations": [
+      "turn off the TV",
+      "turn off the computer",
+      "turn off the engine"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Please turn off your phone in the meeting."
+      },
+      {
+        "speaker": "B",
+        "text": "Okay, I'll turn it off now."
+      }
+    ]
+  },
+  {
+    "phrase": "log in",
+    "meaning_vi": "đăng nhập",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "You need to log in to your account.",
+        "vi": "Bạn cần đăng nhập vào tài khoản của mình."
+      },
+      {
+        "en": "I can't log in because I forgot my password.",
+        "vi": "Tôi không thể đăng nhập vì quên mật khẩu."
+      }
+    ],
+    "collocations": [
+      "log in to an account",
+      "log in with a username",
+      "log in successfully"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How do I log in to the website?"
+      },
+      {
+        "speaker": "B",
+        "text": "Enter your email and password, then click 'Log in'."
+      }
+    ]
+  },
+  {
+    "phrase": "log out",
+    "meaning_vi": "đăng xuất",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Always log out of your account on public computers.",
+        "vi": "Luôn đăng xuất khỏi tài khoản trên máy tính công cộng."
+      },
+      {
+        "en": "I forgot to log out, so someone else used my account.",
+        "vi": "Tôi quên đăng xuất nên người khác đã dùng tài khoản của tôi."
+      }
+    ],
+    "collocations": [
+      "log out of an account",
+      "log out automatically",
+      "log out for security"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Don't forget to log out before you leave."
+      },
+      {
+        "speaker": "B",
+        "text": "I already logged out. Thanks for reminding me."
+      }
+    ]
+  },
+  {
+    "phrase": "connect to",
+    "meaning_vi": "kết nối với",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I need to connect to the Wi-Fi network.",
+        "vi": "Tôi cần kết nối với mạng Wi-Fi."
+      },
+      {
+        "en": "My phone automatically connects to the home network.",
+        "vi": "Điện thoại của tôi tự động kết nối với mạng ở nhà."
+      }
+    ],
+    "collocations": [
+      "connect to the internet",
+      "connect to a network",
+      "connect to a device"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Can you help me connect to the printer?"
+      },
+      {
+        "speaker": "B",
+        "text": "Sure, I'll show you how to connect to it."
+      }
+    ]
+  },
+  {
+    "phrase": "download",
+    "meaning_vi": "tải xuống",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I downloaded the app from the store.",
+        "vi": "Tôi đã tải ứng dụng từ cửa hàng."
+      },
+      {
+        "en": "You can download the file for free.",
+        "vi": "Bạn có thể tải tệp miễn phí."
+      }
+    ],
+    "collocations": [
+      "download a file",
+      "download an app",
+      "download music"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Where can I download this software?"
+      },
+      {
+        "speaker": "B",
+        "text": "You can download it from the official website."
+      }
+    ]
+  },
+  {
+    "phrase": "upload",
+    "meaning_vi": "tải lên",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I uploaded the photos to my social media.",
+        "vi": "Tôi đã tải ảnh lên mạng xã hội của mình."
+      },
+      {
+        "en": "Please upload the document to the shared folder.",
+        "vi": "Vui lòng tải tài liệu lên thư mục chia sẻ."
+      }
+    ],
+    "collocations": [
+      "upload a photo",
+      "upload a video",
+      "upload a document"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Have you uploaded the report yet?"
+      },
+      {
+        "speaker": "B",
+        "text": "Not yet, I'll upload it after lunch."
+      }
+    ]
+  },
+  {
+    "phrase": "break down",
+    "meaning_vi": "hỏng hóc; phân tích",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "My computer broke down yesterday.",
+        "vi": "Máy tính của tôi bị hỏng hôm qua."
+      },
+      {
+        "en": "Can you break down the process for me?",
+        "vi": "Bạn có thể phân tích quy trình cho tôi được không?"
+      }
+    ],
+    "collocations": [
+      "break down (machine)",
+      "break down (explain)",
+      "break down into parts"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "My laptop broke down again."
+      },
+      {
+        "speaker": "B",
+        "text": "You should take it to a repair shop."
+      }
+    ]
+  },
+  {
+    "phrase": "set up",
+    "meaning_vi": "thiết lập, cài đặt",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I need to set up a new email account.",
+        "vi": "Tôi cần thiết lập một tài khoản email mới."
+      },
+      {
+        "en": "He set up the printer in the office.",
+        "vi": "Anh ấy đã cài đặt máy in trong văn phòng."
+      }
+    ],
+    "collocations": [
+      "set up a device",
+      "set up an account",
+      "set up a meeting"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Can you help me set up my new phone?"
+      },
+      {
+        "speaker": "B",
+        "text": "Of course, I'll set it up for you."
+      }
+    ]
+  },
+  {
+    "phrase": "keep in touch",
+    "meaning_vi": "giữ liên lạc",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "Let's keep in touch after you move.",
+        "vi": "Hãy giữ liên lạc sau khi bạn chuyển đi nhé."
+      },
+      {
+        "en": "We keep in touch through social media.",
+        "vi": "Chúng tôi giữ liên lạc qua mạng xã hội."
+      }
+    ],
+    "collocations": [
+      "keep in touch with someone",
+      "stay in touch",
+      "keep in touch via email"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I'm going to study abroad next month."
+      },
+      {
+        "speaker": "B",
+        "text": "That's great! Let's keep in touch."
+      }
+    ]
+  },
+  {
+    "phrase": "get in touch",
+    "meaning_vi": "liên lạc",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "I'll get in touch with you soon.",
+        "vi": "Tôi sẽ liên lạc với bạn sớm."
+      },
+      {
+        "en": "How can I get in touch with customer service?",
+        "vi": "Làm thế nào tôi có thể liên lạc với dịch vụ khách hàng?"
+      }
+    ],
+    "collocations": [
+      "get in touch with someone",
+      "get in touch via phone",
+      "get in touch by email"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I lost your number. How can I get in touch with you?"
+      },
+      {
+        "speaker": "B",
+        "text": "You can email me at my work address."
+      }
+    ]
+  },
+  {
+    "phrase": "text message",
+    "meaning_vi": "tin nhắn văn bản",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I sent her a text message.",
+        "vi": "Tôi đã gửi cho cô ấy một tin nhắn văn bản."
+      },
+      {
+        "en": "He replied to my text message quickly.",
+        "vi": "Anh ấy trả lời tin nhắn của tôi rất nhanh."
+      }
+    ],
+    "collocations": [
+      "send a text message",
+      "receive a text message",
+      "reply to a text message"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Did you get my text message?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I just replied to it."
+      }
+    ]
+  },
+  {
+    "phrase": "social media",
+    "meaning_vi": "mạng xã hội",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I spend too much time on social media.",
+        "vi": "Tôi dành quá nhiều thời gian trên mạng xã hội."
+      },
+      {
+        "en": "She posts updates on social media every day.",
+        "vi": "Cô ấy đăng cập nhật trên mạng xã hội mỗi ngày."
+      }
+    ],
+    "collocations": [
+      "use social media",
+      "post on social media",
+      "social media platform"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you use social media a lot?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I'm active on Facebook and Instagram."
+      }
+    ]
+  }
+]

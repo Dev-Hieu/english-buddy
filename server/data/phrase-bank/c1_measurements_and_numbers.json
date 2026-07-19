@@ -1,0 +1,249 @@
+[
+  {
+    "phrase": "ballpark figure",
+    "meaning_vi": "con số ước lượng",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "Could you give me a ballpark figure for the total cost?",
+        "vi": "Bạn có thể cho tôi một con số ước lượng về tổng chi phí không?"
+      },
+      {
+        "en": "We need a ballpark figure before we proceed.",
+        "vi": "Chúng tôi cần một con số ước lượng trước khi tiến hành."
+      }
+    ],
+    "collocations": [
+      "ballpark estimate",
+      "ballpark figure",
+      "in the ballpark"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What's the ballpark figure for the project?"
+      },
+      {
+        "speaker": "B",
+        "text": "Around $50,000, but it's just an estimate."
+      }
+    ]
+  },
+  {
+    "phrase": "by a wide margin",
+    "meaning_vi": "với cách biệt lớn",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "She won the race by a wide margin.",
+        "vi": "Cô ấy đã thắng cuộc đua với cách biệt lớn."
+      },
+      {
+        "en": "The proposal was rejected by a wide margin.",
+        "vi": "Đề xuất đã bị từ chối với số phiếu chênh lệch lớn."
+      }
+    ],
+    "collocations": [
+      "win by a wide margin",
+      "lose by a wide margin",
+      "pass by a wide margin"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Did our team win?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, by a wide margin—30 points ahead."
+      }
+    ]
+  },
+  {
+    "phrase": "order of magnitude",
+    "meaning_vi": "cấp độ lớn (thường dùng để so sánh kích thước, số lượng)",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "The new system is an order of magnitude faster.",
+        "vi": "Hệ thống mới nhanh hơn một cấp độ lớn."
+      },
+      {
+        "en": "We need to reduce costs by an order of magnitude.",
+        "vi": "Chúng ta cần giảm chi phí xuống một cấp độ lớn."
+      }
+    ],
+    "collocations": [
+      "an order of magnitude",
+      "orders of magnitude",
+      "same order of magnitude"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How much faster is the new server?"
+      },
+      {
+        "speaker": "B",
+        "text": "It's an order of magnitude faster than the old one."
+      }
+    ]
+  },
+  {
+    "phrase": "to the nearest",
+    "meaning_vi": "làm tròn đến",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "Round the number to the nearest hundred.",
+        "vi": "Làm tròn số đến hàng trăm gần nhất."
+      },
+      {
+        "en": "The distance is 10 km to the nearest kilometer.",
+        "vi": "Khoảng cách là 10 km, làm tròn đến km gần nhất."
+      }
+    ],
+    "collocations": [
+      "to the nearest ten",
+      "to the nearest hundred",
+      "to the nearest decimal"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What's the population to the nearest thousand?"
+      },
+      {
+        "speaker": "B",
+        "text": "About 2,345,000."
+      }
+    ]
+  },
+  {
+    "phrase": "a far cry from",
+    "meaning_vi": "khác xa với",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "His estimate is a far cry from the actual cost.",
+        "vi": "Ước tính của anh ấy khác xa với chi phí thực tế."
+      },
+      {
+        "en": "The final number was a far cry from what we expected.",
+        "vi": "Con số cuối cùng khác xa với những gì chúng tôi mong đợi."
+      }
+    ],
+    "collocations": [
+      "a far cry from reality",
+      "a far cry from expectations",
+      "a far cry from the truth"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Is the budget enough?"
+      },
+      {
+        "speaker": "B",
+        "text": "No, it's a far cry from what we need."
+      }
+    ]
+  },
+  {
+    "phrase": "ballpark",
+    "meaning_vi": "ước lượng, trong khoảng",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "We're in the ballpark of $5,000.",
+        "vi": "Chúng tôi đang ở trong khoảng 5.000 đô la."
+      },
+      {
+        "en": "That figure is not even in the ballpark.",
+        "vi": "Con số đó thậm chí còn không ở trong khoảng ước lượng."
+      }
+    ],
+    "collocations": [
+      "in the ballpark",
+      "ballpark figure",
+      "ballpark estimate"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Is $10,000 a reasonable estimate?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, you're in the ballpark."
+      }
+    ]
+  },
+  {
+    "phrase": "a whole new ball game",
+    "meaning_vi": "một chuyện hoàn toàn khác",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "Dealing with millions is a whole new ball game.",
+        "vi": "Xử lý hàng triệu là một chuyện hoàn toàn khác."
+      },
+      {
+        "en": "When you scale up, it's a whole new ball game.",
+        "vi": "Khi bạn mở rộng quy mô, đó là một chuyện hoàn toàn khác."
+      }
+    ],
+    "collocations": [
+      "a whole new ball game",
+      "a different ball game",
+      "a new ball game"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Is it hard to manage a large team?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, compared to a small team, it's a whole new ball game."
+      }
+    ]
+  },
+  {
+    "phrase": "by the same token",
+    "meaning_vi": "tương tự như vậy",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "The price increased; by the same token, demand fell.",
+        "vi": "Giá tăng; tương tự như vậy, nhu cầu giảm."
+      },
+      {
+        "en": "Measurements must be accurate; by the same token, so must calculations.",
+        "vi": "Các phép đo phải chính xác; tương tự như vậy, các tính toán cũng vậy."
+      }
+    ],
+    "collocations": [
+      "by the same token",
+      "by that token"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "The margin of error is small."
+      },
+      {
+        "speaker": "B",
+        "text": "By the same token, we need to be very precise."
+      }
+    ]
+  }
+]

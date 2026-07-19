@@ -1,0 +1,376 @@
+[
+  {
+    "phrase": "come across",
+    "meaning_vi": "tình cờ gặp, bắt gặp",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "While hiking, we came across a rare orchid.",
+        "vi": "Khi đi bộ đường dài, chúng tôi tình cờ gặp một loài phong lan quý hiếm."
+      },
+      {
+        "en": "I came across an interesting article about deforestation.",
+        "vi": "Tôi tình cờ đọc được một bài báo thú vị về nạn phá rừng."
+      }
+    ],
+    "collocations": [
+      "come across a species",
+      "come across a problem",
+      "come across an idea"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Guess what I came across in the forest?"
+      },
+      {
+        "speaker": "B",
+        "text": "A deer?"
+      },
+      {
+        "speaker": "A",
+        "text": "No, a rare butterfly!"
+      }
+    ]
+  },
+  {
+    "phrase": "die out",
+    "meaning_vi": "tuyệt chủng, biến mất",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Many species are dying out due to habitat loss.",
+        "vi": "Nhiều loài đang tuyệt chủng vì mất môi trường sống."
+      },
+      {
+        "en": "If we don't act, the tiger could die out in the wild.",
+        "vi": "Nếu chúng ta không hành động, hổ có thể tuyệt chủng trong tự nhiên."
+      }
+    ],
+    "collocations": [
+      "die out completely",
+      "die out gradually",
+      "die out locally"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Are pandas still endangered?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, but they haven't died out yet."
+      }
+    ]
+  },
+  {
+    "phrase": "bring back",
+    "meaning_vi": "phục hồi, mang trở lại",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Conservationists are trying to bring back the native forest.",
+        "vi": "Các nhà bảo tồn đang cố gắng phục hồi khu rừng bản địa."
+      },
+      {
+        "en": "The zoo hopes to bring back the endangered species through breeding programs.",
+        "vi": "Sở thú hy vọng phục hồi loài có nguy cơ tuyệt chủng thông qua các chương trình nhân giống."
+      }
+    ],
+    "collocations": [
+      "bring back to life",
+      "bring back from extinction",
+      "bring back the population"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Can we bring back the wolves?"
+      },
+      {
+        "speaker": "B",
+        "text": "It's possible, but it takes time."
+      }
+    ]
+  },
+  {
+    "phrase": "cut down",
+    "meaning_vi": "chặt phá, đốn hạ",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "They cut down thousands of trees to build a road.",
+        "vi": "Họ đã chặt hàng ngàn cây để xây đường."
+      },
+      {
+        "en": "Illegal logging cuts down forests at an alarming rate.",
+        "vi": "Khai thác gỗ trái phép chặt phá rừng với tốc độ báo động."
+      }
+    ],
+    "collocations": [
+      "cut down trees",
+      "cut down forests",
+      "cut down on waste"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Why are they cutting down all those trees?"
+      },
+      {
+        "speaker": "B",
+        "text": "To make room for a new housing development."
+      }
+    ]
+  },
+  {
+    "phrase": "endangered species",
+    "meaning_vi": "loài có nguy cơ tuyệt chủng",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "The giant panda is an endangered species.",
+        "vi": "Gấu trúc khổng lồ là một loài có nguy cơ tuyệt chủng."
+      },
+      {
+        "en": "Many endangered species are protected by law.",
+        "vi": "Nhiều loài có nguy cơ tuyệt chủng được pháp luật bảo vệ."
+      }
+    ],
+    "collocations": [
+      "protect endangered species",
+      "list of endangered species",
+      "endangered species act"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What can we do to help endangered species?"
+      },
+      {
+        "speaker": "B",
+        "text": "Support conservation efforts and avoid buying products made from them."
+      }
+    ]
+  },
+  {
+    "phrase": "global warming",
+    "meaning_vi": "sự nóng lên toàn cầu",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "Global warming is causing ice caps to melt.",
+        "vi": "Sự nóng lên toàn cầu đang làm tan các chỏm băng."
+      },
+      {
+        "en": "Reducing carbon emissions can slow global warming.",
+        "vi": "Giảm khí thải carbon có thể làm chậm sự nóng lên toàn cầu."
+      }
+    ],
+    "collocations": [
+      "combat global warming",
+      "effects of global warming",
+      "global warming crisis"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you think global warming is real?"
+      },
+      {
+        "speaker": "B",
+        "text": "Absolutely, the evidence is overwhelming."
+      }
+    ]
+  },
+  {
+    "phrase": "natural habitat",
+    "meaning_vi": "môi trường sống tự nhiên",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "Deforestation destroys the natural habitat of many animals.",
+        "vi": "Phá rừng phá hủy môi trường sống tự nhiên của nhiều loài động vật."
+      },
+      {
+        "en": "Zoos try to replicate the natural habitat of their animals.",
+        "vi": "Các sở thú cố gắng tái tạo môi trường sống tự nhiên cho động vật của họ."
+      }
+    ],
+    "collocations": [
+      "protect natural habitat",
+      "destroy natural habitat",
+      "restore natural habitat"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Why are so many animals losing their natural habitat?"
+      },
+      {
+        "speaker": "B",
+        "text": "Because of human activities like farming and urbanization."
+      }
+    ]
+  },
+  {
+    "phrase": "food chain",
+    "meaning_vi": "chuỗi thức ăn",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "Pollution can disrupt the entire food chain.",
+        "vi": "Ô nhiễm có thể phá vỡ toàn bộ chuỗi thức ăn."
+      },
+      {
+        "en": "Killer whales are at the top of the ocean food chain.",
+        "vi": "Cá voi sát thủ đứng đầu chuỗi thức ăn đại dương."
+      }
+    ],
+    "collocations": [
+      "top of the food chain",
+      "bottom of the food chain",
+      "disrupt the food chain"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What happens if a species disappears from the food chain?"
+      },
+      {
+        "speaker": "B",
+        "text": "It can cause a ripple effect on other species."
+      }
+    ]
+  },
+  {
+    "phrase": "carbon footprint",
+    "meaning_vi": "dấu chân carbon (lượng khí thải carbon)",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "Using public transport reduces your carbon footprint.",
+        "vi": "Sử dụng phương tiện công cộng làm giảm dấu chân carbon của bạn."
+      },
+      {
+        "en": "We should all try to minimize our carbon footprint.",
+        "vi": "Tất cả chúng ta nên cố gắng giảm thiểu dấu chân carbon của mình."
+      }
+    ],
+    "collocations": [
+      "reduce carbon footprint",
+      "carbon footprint calculation",
+      "offset carbon footprint"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How can I lower my carbon footprint?"
+      },
+      {
+        "speaker": "B",
+        "text": "Start by eating less meat and flying less."
+      }
+    ]
+  },
+  {
+    "phrase": "the circle of life",
+    "meaning_vi": "vòng tuần hoàn của sự sống",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "The lion's death is part of the circle of life.",
+        "vi": "Cái chết của sư tử là một phần của vòng tuần hoàn sự sống."
+      },
+      {
+        "en": "In nature, everything follows the circle of life.",
+        "vi": "Trong tự nhiên, mọi thứ đều tuân theo vòng tuần hoàn của sự sống."
+      }
+    ],
+    "collocations": [
+      "part of the circle of life",
+      "understand the circle of life"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "It's sad when animals die."
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, but it's part of the circle of life."
+      }
+    ]
+  },
+  {
+    "phrase": "a drop in the ocean",
+    "meaning_vi": "giọt nước giữa đại dương (việc nhỏ bé, không đáng kể)",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "My recycling efforts are just a drop in the ocean.",
+        "vi": "Nỗ lực tái chế của tôi chỉ như giọt nước giữa đại dương."
+      },
+      {
+        "en": "Donating a small amount may seem like a drop in the ocean, but it helps.",
+        "vi": "Quyên góp một số tiền nhỏ có vẻ như giọt nước giữa đại dương, nhưng nó có ích."
+      }
+    ],
+    "collocations": [
+      "just a drop in the ocean",
+      "a drop in the ocean compared to"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Is planting one tree really going to help?"
+      },
+      {
+        "speaker": "B",
+        "text": "It might seem like a drop in the ocean, but every bit counts."
+      }
+    ]
+  },
+  {
+    "phrase": "to go green",
+    "meaning_vi": "sống xanh, bảo vệ môi trường",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "Many companies are trying to go green by reducing waste.",
+        "vi": "Nhiều công ty đang cố gắng sống xanh bằng cách giảm chất thải."
+      },
+      {
+        "en": "We decided to go green and install solar panels.",
+        "vi": "Chúng tôi quyết định sống xanh và lắp đặt các tấm pin mặt trời."
+      }
+    ],
+    "collocations": [
+      "go green initiative",
+      "go green campaign",
+      "try to go green"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Have you made any changes to go green?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I started composting and using reusable bags."
+      }
+    ]
+  }
+]

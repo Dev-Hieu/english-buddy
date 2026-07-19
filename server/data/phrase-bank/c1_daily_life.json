@@ -1,0 +1,250 @@
+[
+  {
+    "phrase": "wind down",
+    "meaning_vi": "thư giãn, xả hơi",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "After a long day at work, I like to wind down with a good book.",
+        "vi": "Sau một ngày dài làm việc, tôi thích thư giãn bằng cách đọc sách."
+      },
+      {
+        "en": "It's important to wind down before bed for better sleep.",
+        "vi": "Thư giãn trước khi ngủ rất quan trọng để có giấc ngủ ngon hơn."
+      }
+    ],
+    "collocations": [
+      "wind down after work",
+      "wind down in the evening",
+      "wind down with music"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "You seem stressed. How do you wind down?"
+      },
+      {
+        "speaker": "B",
+        "text": "I usually wind down by taking a hot bath."
+      }
+    ]
+  },
+  {
+    "phrase": "catch up on",
+    "meaning_vi": "bù đắp, làm nốt việc còn dang dở",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I need to catch up on my emails this weekend.",
+        "vi": "Cuối tuần này tôi cần giải quyết nốt đống email."
+      },
+      {
+        "en": "Let's catch up on sleep after the trip.",
+        "vi": "Sau chuyến đi, hãy ngủ bù nhé."
+      }
+    ],
+    "collocations": [
+      "catch up on work",
+      "catch up on sleep",
+      "catch up on news"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "You look tired. Did you catch up on sleep?"
+      },
+      {
+        "speaker": "B",
+        "text": "Not yet. I have to catch up on some reports first."
+      }
+    ]
+  },
+  {
+    "phrase": "run errands",
+    "meaning_vi": "chạy vặt, làm việc vặt",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I have to run a few errands after work, like picking up groceries.",
+        "vi": "Sau giờ làm tôi phải chạy vặt vài việc, như mua đồ tạp hóa."
+      },
+      {
+        "en": "She spent the whole morning running errands.",
+        "vi": "Cô ấy dành cả buổi sáng để làm việc vặt."
+      }
+    ],
+    "collocations": [
+      "run some errands",
+      "run a quick errand",
+      "run errands for someone"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What are you doing this afternoon?"
+      },
+      {
+        "speaker": "B",
+        "text": "Just running errands. I need to go to the bank and post office."
+      }
+    ]
+  },
+  {
+    "phrase": "hit the sack",
+    "meaning_vi": "đi ngủ",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "I'm exhausted. I'm going to hit the sack early tonight.",
+        "vi": "Tôi mệt quá. Tối nay tôi sẽ đi ngủ sớm."
+      },
+      {
+        "en": "After the long flight, I just wanted to hit the sack.",
+        "vi": "Sau chuyến bay dài, tôi chỉ muốn lăn ra ngủ."
+      }
+    ],
+    "collocations": [
+      "hit the sack early",
+      "hit the sack late",
+      "hit the sack after midnight"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "It's already 11 PM. I think I'll hit the sack."
+      },
+      {
+        "speaker": "B",
+        "text": "Good idea. I'm going to hit the sack too."
+      }
+    ]
+  },
+  {
+    "phrase": "get the hang of",
+    "meaning_vi": "nắm được, quen với",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "It took me a while to get the hang of the new coffee machine.",
+        "vi": "Tôi mất một lúc mới quen được với máy pha cà phê mới."
+      },
+      {
+        "en": "Once you get the hang of it, it's easy.",
+        "vi": "Một khi bạn đã quen, nó rất dễ."
+      }
+    ],
+    "collocations": [
+      "get the hang of something",
+      "finally get the hang of it",
+      "quickly get the hang of"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How's the new software?"
+      },
+      {
+        "speaker": "B",
+        "text": "A bit tricky at first, but I'm starting to get the hang of it."
+      }
+    ]
+  },
+  {
+    "phrase": "make ends meet",
+    "meaning_vi": "xoay sở đủ sống, đủ trang trải",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "With the rising cost of living, it's hard to make ends meet.",
+        "vi": "Với chi phí sinh hoạt tăng cao, thật khó để xoay sở đủ sống."
+      },
+      {
+        "en": "She works two jobs just to make ends meet.",
+        "vi": "Cô ấy làm hai công việc chỉ để đủ trang trải."
+      }
+    ],
+    "collocations": [
+      "struggle to make ends meet",
+      "barely make ends meet",
+      "work extra to make ends meet"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How do you manage on such a tight budget?"
+      },
+      {
+        "speaker": "B",
+        "text": "It's tough, but we somehow make ends meet."
+      }
+    ]
+  },
+  {
+    "phrase": "on the go",
+    "meaning_vi": "bận rộn, luôn di chuyển",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I've been on the go all day with meetings and appointments.",
+        "vi": "Tôi đã bận rộn cả ngày với các cuộc họp và cuộc hẹn."
+      },
+      {
+        "en": "She prefers to eat on the go rather than sit down for a meal.",
+        "vi": "Cô ấy thích ăn vội hơn là ngồi vào bàn ăn."
+      }
+    ],
+    "collocations": [
+      "always on the go",
+      "eat on the go",
+      "on the go lifestyle"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "You seem really busy lately."
+      },
+      {
+        "speaker": "B",
+        "text": "Yeah, I've been on the go non-stop."
+      }
+    ]
+  },
+  {
+    "phrase": "take it easy",
+    "meaning_vi": "thư giãn, thoải mái",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "You've been working too hard. You should take it easy this weekend.",
+        "vi": "Bạn đã làm việc quá sức rồi. Cuối tuần này bạn nên thư giãn đi."
+      },
+      {
+        "en": "The doctor told him to take it easy for a few days.",
+        "vi": "Bác sĩ bảo anh ấy nên nghỉ ngơi vài ngày."
+      }
+    ],
+    "collocations": [
+      "take it easy on",
+      "take it easy for a while",
+      "just take it easy"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I'm feeling a bit under the weather."
+      },
+      {
+        "speaker": "B",
+        "text": "Take it easy and get some rest."
+      }
+    ]
+  }
+]

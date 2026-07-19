@@ -1,0 +1,374 @@
+[
+  {
+    "phrase": "get on",
+    "meaning_vi": "lên (xe buýt, tàu)",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "We need to get on the bus now.",
+        "vi": "Chúng ta cần lên xe buýt ngay bây giờ."
+      },
+      {
+        "en": "She got on the train at Hanoi station.",
+        "vi": "Cô ấy lên tàu ở ga Hà Nội."
+      }
+    ],
+    "collocations": [
+      "get on the bus",
+      "get on the train",
+      "get on the plane"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Is this the right bus?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, get on quickly!"
+      }
+    ]
+  },
+  {
+    "phrase": "get off",
+    "meaning_vi": "xuống (xe, tàu)",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "We get off at the next stop.",
+        "vi": "Chúng ta xuống ở trạm tiếp theo."
+      },
+      {
+        "en": "Please get off the train at Da Nang.",
+        "vi": "Vui lòng xuống tàu ở Đà Nẵng."
+      }
+    ],
+    "collocations": [
+      "get off the bus",
+      "get off the train",
+      "get off at the station"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Where do we get off?"
+      },
+      {
+        "speaker": "B",
+        "text": "We get off at the central station."
+      }
+    ]
+  },
+  {
+    "phrase": "take a taxi",
+    "meaning_vi": "đi taxi",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "Let's take a taxi to the airport.",
+        "vi": "Chúng ta hãy đi taxi ra sân bay."
+      },
+      {
+        "en": "I usually take a taxi when I am late.",
+        "vi": "Tôi thường đi taxi khi bị muộn."
+      }
+    ],
+    "collocations": [
+      "take a taxi to",
+      "take a taxi from",
+      "take a taxi home"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How do we get to the hotel?"
+      },
+      {
+        "speaker": "B",
+        "text": "We can take a taxi."
+      }
+    ]
+  },
+  {
+    "phrase": "book a ticket",
+    "meaning_vi": "đặt vé",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I need to book a ticket for the train.",
+        "vi": "Tôi cần đặt vé tàu."
+      },
+      {
+        "en": "She booked a ticket online.",
+        "vi": "Cô ấy đặt vé trực tuyến."
+      }
+    ],
+    "collocations": [
+      "book a plane ticket",
+      "book a train ticket",
+      "book a bus ticket"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Did you book a ticket yet?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I booked two tickets for tomorrow."
+      }
+    ]
+  },
+  {
+    "phrase": "catch a flight",
+    "meaning_vi": "kịp chuyến bay",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "We must hurry to catch our flight.",
+        "vi": "Chúng ta phải nhanh lên để kịp chuyến bay."
+      },
+      {
+        "en": "She caught the last flight to Ho Chi Minh City.",
+        "vi": "Cô ấy đã kịp chuyến bay cuối cùng đi TP. Hồ Chí Minh."
+      }
+    ],
+    "collocations": [
+      "catch a plane",
+      "catch a train",
+      "miss a flight"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What time is your flight?"
+      },
+      {
+        "speaker": "B",
+        "text": "At 8 PM. I hope I catch it."
+      }
+    ]
+  },
+  {
+    "phrase": "miss the bus",
+    "meaning_vi": "lỡ xe buýt",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I missed the bus this morning.",
+        "vi": "Sáng nay tôi lỡ xe buýt."
+      },
+      {
+        "en": "Don't miss the last bus home.",
+        "vi": "Đừng lỡ chuyến xe buýt cuối về nhà."
+      }
+    ],
+    "collocations": [
+      "miss the train",
+      "miss the plane",
+      "miss the bus"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Why are you late?"
+      },
+      {
+        "speaker": "B",
+        "text": "I missed the bus."
+      }
+    ]
+  },
+  {
+    "phrase": "check in",
+    "meaning_vi": "làm thủ tục (lên máy bay)",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "We need to check in two hours before the flight.",
+        "vi": "Chúng ta cần làm thủ tục hai tiếng trước chuyến bay."
+      },
+      {
+        "en": "You can check in online.",
+        "vi": "Bạn có thể làm thủ tục trực tuyến."
+      }
+    ],
+    "collocations": [
+      "check in online",
+      "check in at the airport",
+      "check in luggage"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Have you checked in yet?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I checked in online."
+      }
+    ]
+  },
+  {
+    "phrase": "check out",
+    "meaning_vi": "trả phòng (khách sạn)",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "We have to check out before noon.",
+        "vi": "Chúng ta phải trả phòng trước trưa."
+      },
+      {
+        "en": "She checked out of the hotel at 10 AM.",
+        "vi": "Cô ấy trả phòng khách sạn lúc 10 giờ sáng."
+      }
+    ],
+    "collocations": [
+      "check out of the hotel",
+      "check out time",
+      "check out early"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What time is check out?"
+      },
+      {
+        "speaker": "B",
+        "text": "Check out is at 12 PM."
+      }
+    ]
+  },
+  {
+    "phrase": "go by",
+    "meaning_vi": "đi bằng (phương tiện)",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I usually go by bus to work.",
+        "vi": "Tôi thường đi làm bằng xe buýt."
+      },
+      {
+        "en": "Shall we go by train or by car?",
+        "vi": "Chúng ta đi bằng tàu hay ô tô?"
+      }
+    ],
+    "collocations": [
+      "go by bus",
+      "go by train",
+      "go by plane"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How do you go to school?"
+      },
+      {
+        "speaker": "B",
+        "text": "I go by bike."
+      }
+    ]
+  },
+  {
+    "phrase": "pick up",
+    "meaning_vi": "đón (ai đó)",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I will pick you up at the airport.",
+        "vi": "Tôi sẽ đón bạn ở sân bay."
+      },
+      {
+        "en": "Can you pick me up at 5 PM?",
+        "vi": "Bạn có thể đón tôi lúc 5 giờ chiều không?"
+      }
+    ],
+    "collocations": [
+      "pick up someone",
+      "pick up from the station",
+      "pick up at the hotel"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Who is picking you up?"
+      },
+      {
+        "speaker": "B",
+        "text": "My brother will pick me up."
+      }
+    ]
+  },
+  {
+    "phrase": "drop off",
+    "meaning_vi": "thả (ai đó) xuống",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Please drop me off at the bus stop.",
+        "vi": "Làm ơn thả tôi ở trạm xe buýt."
+      },
+      {
+        "en": "He dropped his friend off at the airport.",
+        "vi": "Anh ấy thả bạn ở sân bay."
+      }
+    ],
+    "collocations": [
+      "drop off someone",
+      "drop off at the station",
+      "drop off at the hotel"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Where should I drop you off?"
+      },
+      {
+        "speaker": "B",
+        "text": "Drop me off at the corner, please."
+      }
+    ]
+  },
+  {
+    "phrase": "go sightseeing",
+    "meaning_vi": "đi tham quan",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "We went sightseeing in the old quarter.",
+        "vi": "Chúng tôi đã đi tham quan khu phố cổ."
+      },
+      {
+        "en": "I like to go sightseeing when I travel.",
+        "vi": "Tôi thích đi tham quan khi du lịch."
+      }
+    ],
+    "collocations": [
+      "go sightseeing in",
+      "go sightseeing around",
+      "go sightseeing tour"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What do you want to do tomorrow?"
+      },
+      {
+        "speaker": "B",
+        "text": "Let's go sightseeing."
+      }
+    ]
+  }
+]

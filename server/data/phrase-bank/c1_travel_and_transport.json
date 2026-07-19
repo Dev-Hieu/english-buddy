@@ -1,0 +1,250 @@
+[
+  {
+    "phrase": "touch down",
+    "meaning_vi": "hạ cánh",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "The plane touched down at 3 PM.",
+        "vi": "Máy bay hạ cánh lúc 3 giờ chiều."
+      },
+      {
+        "en": "We'll touch down in Paris in an hour.",
+        "vi": "Chúng ta sẽ hạ cánh ở Paris trong một giờ nữa."
+      }
+    ],
+    "collocations": [
+      "touch down safely",
+      "touch down on time",
+      "touch down at the airport"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "When did your flight touch down?"
+      },
+      {
+        "speaker": "B",
+        "text": "It touched down about twenty minutes ago."
+      }
+    ]
+  },
+  {
+    "phrase": "set off",
+    "meaning_vi": "khởi hành, lên đường",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "We set off at dawn to avoid traffic.",
+        "vi": "Chúng tôi khởi hành lúc bình minh để tránh kẹt xe."
+      },
+      {
+        "en": "They set off on a road trip across the country.",
+        "vi": "Họ lên đường cho chuyến đi xuyên quốc gia."
+      }
+    ],
+    "collocations": [
+      "set off early",
+      "set off on a journey",
+      "set off for the airport"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What time should we set off?"
+      },
+      {
+        "speaker": "B",
+        "text": "Let's set off at 6 AM to beat the rush."
+      }
+    ]
+  },
+  {
+    "phrase": "hop on/off",
+    "meaning_vi": "nhảy lên/xuống (phương tiện)",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "We hopped on the bus just in time.",
+        "vi": "Chúng tôi nhảy lên xe buýt vừa kịp lúc."
+      },
+      {
+        "en": "You can hop off at the next stop.",
+        "vi": "Bạn có thể xuống ở trạm tiếp theo."
+      }
+    ],
+    "collocations": [
+      "hop on a train",
+      "hop off at the station",
+      "hop on a plane"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Let's hop on the subway to get downtown."
+      },
+      {
+        "speaker": "B",
+        "text": "Good idea. We'll hop off at Times Square."
+      }
+    ]
+  },
+  {
+    "phrase": "layover",
+    "meaning_vi": "quá cảnh, nghỉ chân giữa chuyến",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "We had a two-hour layover in Dubai.",
+        "vi": "Chúng tôi có hai tiếng quá cảnh ở Dubai."
+      },
+      {
+        "en": "A long layover can be exhausting.",
+        "vi": "Quá cảnh lâu có thể rất mệt."
+      }
+    ],
+    "collocations": [
+      "short layover",
+      "long layover",
+      "overnight layover"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How long is your layover?"
+      },
+      {
+        "speaker": "B",
+        "text": "Just an hour, so I'll stay in the terminal."
+      }
+    ]
+  },
+  {
+    "phrase": "red-eye flight",
+    "meaning_vi": "chuyến bay đêm",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I took a red-eye flight to save money.",
+        "vi": "Tôi đi chuyến bay đêm để tiết kiệm tiền."
+      },
+      {
+        "en": "Red-eye flights are usually cheaper.",
+        "vi": "Các chuyến bay đêm thường rẻ hơn."
+      }
+    ],
+    "collocations": [
+      "catch a red-eye",
+      "book a red-eye",
+      "red-eye flight from New York"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Are you taking a red-eye?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I prefer red-eyes so I don't waste daylight."
+      }
+    ]
+  },
+  {
+    "phrase": "bumper-to-bumper",
+    "meaning_vi": "kẹt xe dài, nối đuôi nhau",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "Traffic was bumper-to-bumper all the way to the city.",
+        "vi": "Xe cộ nối đuôi nhau suốt đường vào thành phố."
+      },
+      {
+        "en": "We were stuck in bumper-to-bumper traffic for hours.",
+        "vi": "Chúng tôi bị kẹt xe dài hàng giờ."
+      }
+    ],
+    "collocations": [
+      "bumper-to-bumper traffic",
+      "bumper-to-bumper commute",
+      "bumper-to-bumper jam"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How was the drive?"
+      },
+      {
+        "speaker": "B",
+        "text": "Terrible, bumper-to-bumper the whole way."
+      }
+    ]
+  },
+  {
+    "phrase": "catch a glimpse of",
+    "meaning_vi": "thoáng thấy, bắt gặp khoảnh khắc",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "I caught a glimpse of the Eiffel Tower from the bus.",
+        "vi": "Tôi thoáng thấy tháp Eiffel từ xe buýt."
+      },
+      {
+        "en": "We only caught a glimpse of the sunset before it disappeared.",
+        "vi": "Chúng tôi chỉ kịp thoáng thấy hoàng hôn trước khi nó biến mất."
+      }
+    ],
+    "collocations": [
+      "catch a glimpse of the view",
+      "catch a glimpse of a celebrity",
+      "catch a glimpse of the scenery"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Did you see the Statue of Liberty?"
+      },
+      {
+        "speaker": "B",
+        "text": "Just caught a glimpse of it from the ferry."
+      }
+    ]
+  },
+  {
+    "phrase": "off the beaten track",
+    "meaning_vi": "xa trung tâm, ít người biết đến",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "We stayed in a village off the beaten track.",
+        "vi": "Chúng tôi ở một ngôi làng xa trung tâm, ít người biết."
+      },
+      {
+        "en": "He prefers traveling off the beaten track.",
+        "vi": "Anh ấy thích du lịch những nơi ít người biết."
+      }
+    ],
+    "collocations": [
+      "go off the beaten track",
+      "a place off the beaten track",
+      "explore off the beaten track"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Where should we go on our trip?"
+      },
+      {
+        "speaker": "B",
+        "text": "Let's find somewhere off the beaten track, away from tourists."
+      }
+    ]
+  }
+]

@@ -1,0 +1,374 @@
+[
+  {
+    "phrase": "round up",
+    "meaning_vi": "làm tròn lên",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Please round up the total to the nearest dollar.",
+        "vi": "Vui lòng làm tròn tổng số lên đến đô la gần nhất."
+      },
+      {
+        "en": "The price was rounded up from $4.50 to $5.",
+        "vi": "Giá đã được làm tròn lên từ 4,50 đô la thành 5 đô la."
+      }
+    ],
+    "collocations": [
+      "round up to",
+      "round up numbers",
+      "round up the total"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Should we round up the bill?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, round it up to $50."
+      }
+    ]
+  },
+  {
+    "phrase": "measure up",
+    "meaning_vi": "đáp ứng tiêu chuẩn, đạt yêu cầu",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "The new employee didn't measure up to our expectations.",
+        "vi": "Nhân viên mới không đáp ứng được kỳ vọng của chúng tôi."
+      },
+      {
+        "en": "Does this product measure up to the quality standards?",
+        "vi": "Sản phẩm này có đạt tiêu chuẩn chất lượng không?"
+      }
+    ],
+    "collocations": [
+      "measure up to",
+      "measure up against",
+      "fail to measure up"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How does our new model measure up?"
+      },
+      {
+        "speaker": "B",
+        "text": "It measures up well against the competition."
+      }
+    ]
+  },
+  {
+    "phrase": "ballpark figure",
+    "meaning_vi": "con số ước lượng",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "Can you give me a ballpark figure for the cost?",
+        "vi": "Bạn có thể cho tôi một con số ước lượng về chi phí không?"
+      },
+      {
+        "en": "I need a ballpark figure before making a decision.",
+        "vi": "Tôi cần một con số ước lượng trước khi đưa ra quyết định."
+      }
+    ],
+    "collocations": [
+      "give a ballpark figure",
+      "rough ballpark figure",
+      "ballpark estimate"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What's the ballpark figure for the project?"
+      },
+      {
+        "speaker": "B",
+        "text": "Around $10,000, but it's just a rough estimate."
+      }
+    ]
+  },
+  {
+    "phrase": "by a wide margin",
+    "meaning_vi": "với cách biệt lớn",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "She won the race by a wide margin.",
+        "vi": "Cô ấy đã thắng cuộc đua với cách biệt lớn."
+      },
+      {
+        "en": "The proposal was rejected by a wide margin.",
+        "vi": "Đề xuất đã bị từ chối với số phiếu chênh lệch lớn."
+      }
+    ],
+    "collocations": [
+      "win by a wide margin",
+      "lose by a wide margin",
+      "defeat by a wide margin"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Did our team win?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, by a wide margin."
+      }
+    ]
+  },
+  {
+    "phrase": "rough estimate",
+    "meaning_vi": "ước tính sơ bộ",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I can give you a rough estimate of the distance.",
+        "vi": "Tôi có thể đưa ra ước tính sơ bộ về khoảng cách."
+      },
+      {
+        "en": "This is just a rough estimate; the exact number may vary.",
+        "vi": "Đây chỉ là ước tính sơ bộ; con số chính xác có thể thay đổi."
+      }
+    ],
+    "collocations": [
+      "give a rough estimate",
+      "rough estimate of",
+      "based on rough estimates"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you have a rough estimate of the cost?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, roughly $200."
+      }
+    ]
+  },
+  {
+    "phrase": "add up to",
+    "meaning_vi": "tổng cộng là",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "The expenses add up to $500.",
+        "vi": "Chi phí tổng cộng là 500 đô la."
+      },
+      {
+        "en": "All these numbers add up to a significant amount.",
+        "vi": "Tất cả những con số này cộng lại thành một số tiền đáng kể."
+      }
+    ],
+    "collocations": [
+      "add up to a total",
+      "add up to something",
+      "add up to nothing"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What do the costs add up to?"
+      },
+      {
+        "speaker": "B",
+        "text": "They add up to over $1,000."
+      }
+    ]
+  },
+  {
+    "phrase": "dimensions of",
+    "meaning_vi": "kích thước của",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "What are the dimensions of the room?",
+        "vi": "Kích thước của căn phòng là bao nhiêu?"
+      },
+      {
+        "en": "The dimensions of the box are 10x20x30 cm.",
+        "vi": "Kích thước của hộp là 10x20x30 cm."
+      }
+    ],
+    "collocations": [
+      "exact dimensions",
+      "overall dimensions",
+      "dimensions of an object"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Could you tell me the dimensions of the table?"
+      },
+      {
+        "speaker": "B",
+        "text": "Sure, it's 1.5 meters by 0.8 meters."
+      }
+    ]
+  },
+  {
+    "phrase": "within a range",
+    "meaning_vi": "trong một khoảng",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "The temperature should be kept within a range of 20-25 degrees.",
+        "vi": "Nhiệt độ nên được giữ trong khoảng 20-25 độ."
+      },
+      {
+        "en": "Prices vary within a range of $10 to $50.",
+        "vi": "Giá cả dao động trong khoảng từ 10 đến 50 đô la."
+      }
+    ],
+    "collocations": [
+      "within a narrow range",
+      "within a certain range",
+      "within the range of"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Is the weight within the acceptable range?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, it's within the range of 5 to 10 kg."
+      }
+    ]
+  },
+  {
+    "phrase": "as of",
+    "meaning_vi": "tính đến thời điểm",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "As of today, the population is 8 million.",
+        "vi": "Tính đến hôm nay, dân số là 8 triệu."
+      },
+      {
+        "en": "As of last year, the company had 500 employees.",
+        "vi": "Tính đến năm ngoái, công ty có 500 nhân viên."
+      }
+    ],
+    "collocations": [
+      "as of now",
+      "as of yesterday",
+      "as of the latest report"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What's the total as of this morning?"
+      },
+      {
+        "speaker": "B",
+        "text": "As of this morning, we have 200 orders."
+      }
+    ]
+  },
+  {
+    "phrase": "in the ballpark of",
+    "meaning_vi": "trong khoảng",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "The project will cost in the ballpark of $50,000.",
+        "vi": "Dự án sẽ tốn trong khoảng 50.000 đô la."
+      },
+      {
+        "en": "We're looking for a salary in the ballpark of $60,000.",
+        "vi": "Chúng tôi đang tìm mức lương trong khoảng 60.000 đô la."
+      }
+    ],
+    "collocations": [
+      "in the ballpark of",
+      "ballpark figure",
+      "ballpark estimate"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How much will the renovation be?"
+      },
+      {
+        "speaker": "B",
+        "text": "It's in the ballpark of $20,000."
+      }
+    ]
+  },
+  {
+    "phrase": "shoot up",
+    "meaning_vi": "tăng vọt",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Prices have shot up recently.",
+        "vi": "Giá cả đã tăng vọt gần đây."
+      },
+      {
+        "en": "The temperature shot up to 40 degrees.",
+        "vi": "Nhiệt độ tăng vọt lên 40 độ."
+      }
+    ],
+    "collocations": [
+      "shoot up in price",
+      "shoot up rapidly",
+      "shoot up by"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Why did the cost shoot up?"
+      },
+      {
+        "speaker": "B",
+        "text": "Because of the shortage of materials."
+      }
+    ]
+  },
+  {
+    "phrase": "in increments of",
+    "meaning_vi": "theo bội số của",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "You can add the amount in increments of $10.",
+        "vi": "Bạn có thể thêm số tiền theo bội số của 10 đô la."
+      },
+      {
+        "en": "The scale is marked in increments of 5 kg.",
+        "vi": "Cân được đánh dấu theo bội số của 5 kg."
+      }
+    ],
+    "collocations": [
+      "in small increments",
+      "in increments of 10",
+      "increase in increments"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How should I increase the dosage?"
+      },
+      {
+        "speaker": "B",
+        "text": "In increments of 5 mg."
+      }
+    ]
+  }
+]

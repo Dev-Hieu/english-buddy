@@ -1,0 +1,498 @@
+[
+  {
+    "phrase": "apply for a job",
+    "meaning_vi": "nộp đơn xin việc",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I applied for a job at a tech company.",
+        "vi": "Tôi đã nộp đơn xin việc tại một công ty công nghệ."
+      },
+      {
+        "en": "She is applying for several jobs this week.",
+        "vi": "Cô ấy đang nộp đơn xin nhiều việc trong tuần này."
+      }
+    ],
+    "collocations": [
+      "apply for a position",
+      "apply online",
+      "submit an application"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Have you applied for any jobs yet?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I applied for a marketing job yesterday."
+      }
+    ]
+  },
+  {
+    "phrase": "get a promotion",
+    "meaning_vi": "được thăng chức",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "He got a promotion after working hard for two years.",
+        "vi": "Anh ấy được thăng chức sau khi làm việc chăm chỉ trong hai năm."
+      },
+      {
+        "en": "She hopes to get a promotion next year.",
+        "vi": "Cô ấy hy vọng sẽ được thăng chức vào năm tới."
+      }
+    ],
+    "collocations": [
+      "earn a promotion",
+      "receive a promotion",
+      "get promoted"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Did you hear about Tom?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, he got a promotion to manager!"
+      }
+    ]
+  },
+  {
+    "phrase": "take on a project",
+    "meaning_vi": "nhận một dự án",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I'm going to take on a new project at work.",
+        "vi": "Tôi sắp nhận một dự án mới ở chỗ làm."
+      },
+      {
+        "en": "She took on the project despite the tight deadline.",
+        "vi": "Cô ấy đã nhận dự án mặc dù thời hạn gấp rút."
+      }
+    ],
+    "collocations": [
+      "take on a task",
+      "take on a role",
+      "take on responsibility"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Are you busy with anything new?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I just took on a project for a client."
+      }
+    ]
+  },
+  {
+    "phrase": "work overtime",
+    "meaning_vi": "làm thêm giờ",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I have to work overtime this weekend.",
+        "vi": "Tôi phải làm thêm giờ vào cuối tuần này."
+      },
+      {
+        "en": "She often works overtime to meet deadlines.",
+        "vi": "Cô ấy thường làm thêm giờ để kịp hạn chót."
+      }
+    ],
+    "collocations": [
+      "work late",
+      "work extra hours",
+      "overtime pay"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "You look tired. Did you work overtime?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yeah, I worked overtime until 9 PM."
+      }
+    ]
+  },
+  {
+    "phrase": "call in sick",
+    "meaning_vi": "gọi điện xin nghỉ ốm",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I called in sick because I had a fever.",
+        "vi": "Tôi gọi điện xin nghỉ ốm vì bị sốt."
+      },
+      {
+        "en": "She called in sick this morning.",
+        "vi": "Sáng nay cô ấy gọi điện xin nghỉ ốm."
+      }
+    ],
+    "collocations": [
+      "call in sick to work",
+      "call in sick for the day",
+      "call off sick"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Where's John today?"
+      },
+      {
+        "speaker": "B",
+        "text": "He called in sick. He has a cold."
+      }
+    ]
+  },
+  {
+    "phrase": "go on a business trip",
+    "meaning_vi": "đi công tác",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I'm going on a business trip to Hanoi next week.",
+        "vi": "Tuần sau tôi đi công tác ở Hà Nội."
+      },
+      {
+        "en": "She goes on business trips twice a month.",
+        "vi": "Cô ấy đi công tác hai lần một tháng."
+      }
+    ],
+    "collocations": [
+      "take a business trip",
+      "business travel",
+      "business trip expenses"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Are you free next Friday?"
+      },
+      {
+        "speaker": "B",
+        "text": "No, I'm going on a business trip to Japan."
+      }
+    ]
+  },
+  {
+    "phrase": "fill in for someone",
+    "meaning_vi": "thay thế ai đó tạm thời",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Can you fill in for me at the meeting tomorrow?",
+        "vi": "Bạn có thể thay tôi tham dự cuộc họp ngày mai không?"
+      },
+      {
+        "en": "She filled in for her colleague while he was on leave.",
+        "vi": "Cô ấy đã thay thế đồng nghiệp khi anh ấy nghỉ phép."
+      }
+    ],
+    "collocations": [
+      "fill in for a coworker",
+      "fill in temporarily",
+      "fill in as a substitute"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I need someone to fill in for me on Saturday."
+      },
+      {
+        "speaker": "B",
+        "text": "I can fill in for you."
+      }
+    ]
+  },
+  {
+    "phrase": "look for a job",
+    "meaning_vi": "tìm việc làm",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "He is looking for a job in finance.",
+        "vi": "Anh ấy đang tìm việc trong lĩnh vực tài chính."
+      },
+      {
+        "en": "I've been looking for a job for three months.",
+        "vi": "Tôi đã tìm việc được ba tháng rồi."
+      }
+    ],
+    "collocations": [
+      "search for a job",
+      "find a job",
+      "job hunting"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What are you doing these days?"
+      },
+      {
+        "speaker": "B",
+        "text": "I'm looking for a job in IT."
+      }
+    ]
+  },
+  {
+    "phrase": "hand in one's notice",
+    "meaning_vi": "nộp đơn xin nghỉ việc",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "She handed in her notice yesterday.",
+        "vi": "Hôm qua cô ấy đã nộp đơn xin nghỉ việc."
+      },
+      {
+        "en": "I'm thinking of handing in my notice.",
+        "vi": "Tôi đang nghĩ đến việc nộp đơn xin nghỉ việc."
+      }
+    ],
+    "collocations": [
+      "give notice",
+      "resign",
+      "quit a job"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Why did you hand in your notice?"
+      },
+      {
+        "speaker": "B",
+        "text": "I found a better opportunity."
+      }
+    ]
+  },
+  {
+    "phrase": "be laid off",
+    "meaning_vi": "bị sa thải (do công ty cắt giảm)",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "Many workers were laid off during the crisis.",
+        "vi": "Nhiều công nhân đã bị sa thải trong cuộc khủng hoảng."
+      },
+      {
+        "en": "He was laid off from his job last month.",
+        "vi": "Anh ấy bị sa thải khỏi công việc tháng trước."
+      }
+    ],
+    "collocations": [
+      "get laid off",
+      "lay off employees",
+      "mass layoffs"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I heard your company is downsizing."
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I was laid off yesterday."
+      }
+    ]
+  },
+  {
+    "phrase": "come up with an idea",
+    "meaning_vi": "nảy ra ý tưởng",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "She came up with a great idea for the campaign.",
+        "vi": "Cô ấy đã nảy ra một ý tưởng tuyệt vời cho chiến dịch."
+      },
+      {
+        "en": "We need to come up with a solution soon.",
+        "vi": "Chúng ta cần sớm nghĩ ra một giải pháp."
+      }
+    ],
+    "collocations": [
+      "come up with a plan",
+      "come up with a solution",
+      "come up with a suggestion"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How can we improve sales?"
+      },
+      {
+        "speaker": "B",
+        "text": "I came up with an idea for a new marketing strategy."
+      }
+    ]
+  },
+  {
+    "phrase": "keep up with the workload",
+    "meaning_vi": "theo kịp khối lượng công việc",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "It's hard to keep up with the workload.",
+        "vi": "Thật khó để theo kịp khối lượng công việc."
+      },
+      {
+        "en": "She can't keep up with the workload anymore.",
+        "vi": "Cô ấy không thể theo kịp khối lượng công việc nữa."
+      }
+    ],
+    "collocations": [
+      "manage the workload",
+      "handle the workload",
+      "heavy workload"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How is your new job?"
+      },
+      {
+        "speaker": "B",
+        "text": "It's busy, but I can keep up with the workload."
+      }
+    ]
+  },
+  {
+    "phrase": "get along with colleagues",
+    "meaning_vi": "hòa đồng với đồng nghiệp",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I get along well with my colleagues.",
+        "vi": "Tôi hòa đồng tốt với đồng nghiệp."
+      },
+      {
+        "en": "It's important to get along with colleagues.",
+        "vi": "Điều quan trọng là hòa đồng với đồng nghiệp."
+      }
+    ],
+    "collocations": [
+      "get on with colleagues",
+      "work well with others",
+      "good working relationship"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you like your team?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I get along with all my colleagues."
+      }
+    ]
+  },
+  {
+    "phrase": "take a day off",
+    "meaning_vi": "nghỉ một ngày",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I'm going to take a day off next Monday.",
+        "vi": "Tôi sẽ nghỉ một ngày vào thứ Hai tới."
+      },
+      {
+        "en": "She took a day off to go to the doctor.",
+        "vi": "Cô ấy đã nghỉ một ngày để đi khám bác sĩ."
+      }
+    ],
+    "collocations": [
+      "take time off",
+      "take a leave",
+      "day off request"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "You look stressed. You should take a day off."
+      },
+      {
+        "speaker": "B",
+        "text": "I think I will. I need a break."
+      }
+    ]
+  },
+  {
+    "phrase": "work under pressure",
+    "meaning_vi": "làm việc dưới áp lực",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "She works well under pressure.",
+        "vi": "Cô ấy làm việc tốt dưới áp lực."
+      },
+      {
+        "en": "I don't like to work under pressure.",
+        "vi": "Tôi không thích làm việc dưới áp lực."
+      }
+    ],
+    "collocations": [
+      "handle pressure",
+      "work under stress",
+      "pressure at work"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Is the job stressful?"
+      },
+      {
+        "speaker": "B",
+        "text": "Sometimes, but I can work under pressure."
+      }
+    ]
+  },
+  {
+    "phrase": "set up a meeting",
+    "meaning_vi": "sắp xếp một cuộc họp",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I will set up a meeting with the client.",
+        "vi": "Tôi sẽ sắp xếp một cuộc họp với khách hàng."
+      },
+      {
+        "en": "Can you set up a meeting for next week?",
+        "vi": "Bạn có thể sắp xếp một cuộc họp vào tuần sau không?"
+      }
+    ],
+    "collocations": [
+      "schedule a meeting",
+      "arrange a meeting",
+      "organize a meeting"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "We need to discuss the project."
+      },
+      {
+        "speaker": "B",
+        "text": "I'll set up a meeting for Friday."
+      }
+    ]
+  }
+]

@@ -1,0 +1,250 @@
+[
+  {
+    "phrase": "watch TV",
+    "meaning_vi": "xem ti vi",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I watch TV every evening.",
+        "vi": "Tôi xem ti vi mỗi tối."
+      },
+      {
+        "en": "Do you watch TV in the morning?",
+        "vi": "Bạn có xem ti vi vào buổi sáng không?"
+      }
+    ],
+    "collocations": [
+      "watch a movie",
+      "watch a show",
+      "watch the news"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What do you do in the evening?"
+      },
+      {
+        "speaker": "B",
+        "text": "I watch TV."
+      }
+    ]
+  },
+  {
+    "phrase": "listen to music",
+    "meaning_vi": "nghe nhạc",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I like to listen to music.",
+        "vi": "Tôi thích nghe nhạc."
+      },
+      {
+        "en": "She listens to music every day.",
+        "vi": "Cô ấy nghe nhạc mỗi ngày."
+      }
+    ],
+    "collocations": [
+      "listen to pop music",
+      "listen to classical",
+      "listen to songs"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What do you do in your free time?"
+      },
+      {
+        "speaker": "B",
+        "text": "I listen to music."
+      }
+    ]
+  },
+  {
+    "phrase": "play games",
+    "meaning_vi": "chơi trò chơi",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "The children play games outside.",
+        "vi": "Bọn trẻ chơi trò chơi ở ngoài."
+      },
+      {
+        "en": "Do you play games on your phone?",
+        "vi": "Bạn có chơi trò chơi trên điện thoại không?"
+      }
+    ],
+    "collocations": [
+      "play video games",
+      "play board games",
+      "play card games"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Let's play a game."
+      },
+      {
+        "speaker": "B",
+        "text": "Okay, I like to play games."
+      }
+    ]
+  },
+  {
+    "phrase": "read a book",
+    "meaning_vi": "đọc sách",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I read a book before bed.",
+        "vi": "Tôi đọc sách trước khi ngủ."
+      },
+      {
+        "en": "She reads a book every week.",
+        "vi": "Cô ấy đọc sách mỗi tuần."
+      }
+    ],
+    "collocations": [
+      "read a magazine",
+      "read a story",
+      "read a newspaper"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What are you doing?"
+      },
+      {
+        "speaker": "B",
+        "text": "I am reading a book."
+      }
+    ]
+  },
+  {
+    "phrase": "go to the cinema",
+    "meaning_vi": "đi xem phim",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "Let's go to the cinema tonight.",
+        "vi": "Tối nay chúng ta đi xem phim nhé."
+      },
+      {
+        "en": "I go to the cinema with friends.",
+        "vi": "Tôi đi xem phim với bạn bè."
+      }
+    ],
+    "collocations": [
+      "go to the movies",
+      "go to a theater",
+      "go see a film"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you want to go to the cinema?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I love movies."
+      }
+    ]
+  },
+  {
+    "phrase": "surf the Internet",
+    "meaning_vi": "lướt mạng",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "I surf the Internet every day.",
+        "vi": "Tôi lướt mạng mỗi ngày."
+      },
+      {
+        "en": "He surfs the Internet for news.",
+        "vi": "Anh ấy lướt mạng để xem tin tức."
+      }
+    ],
+    "collocations": [
+      "browse the web",
+      "go online",
+      "use the Internet"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What do you do on your computer?"
+      },
+      {
+        "speaker": "B",
+        "text": "I surf the Internet."
+      }
+    ]
+  },
+  {
+    "phrase": "take a photo",
+    "meaning_vi": "chụp ảnh",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "Can you take a photo of me?",
+        "vi": "Bạn có thể chụp ảnh cho tôi không?"
+      },
+      {
+        "en": "I take a photo of the sunset.",
+        "vi": "Tôi chụp ảnh hoàng hôn."
+      }
+    ],
+    "collocations": [
+      "take a picture",
+      "take a selfie",
+      "take a snapshot"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "This view is beautiful!"
+      },
+      {
+        "speaker": "B",
+        "text": "Let me take a photo."
+      }
+    ]
+  },
+  {
+    "phrase": "send a message",
+    "meaning_vi": "gửi tin nhắn",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I send a message to my mom.",
+        "vi": "Tôi gửi tin nhắn cho mẹ."
+      },
+      {
+        "en": "Please send me a message later.",
+        "vi": "Làm ơn gửi tin nhắn cho tôi sau."
+      }
+    ],
+    "collocations": [
+      "text someone",
+      "send an email",
+      "send a text"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I will call you."
+      },
+      {
+        "speaker": "B",
+        "text": "Okay, or send me a message."
+      }
+    ]
+  }
+]

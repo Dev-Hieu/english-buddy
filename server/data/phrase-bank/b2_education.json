@@ -1,0 +1,374 @@
+[
+  {
+    "phrase": "catch up on",
+    "meaning_vi": "bắt kịp, theo kịp (bài vở, tin tức)",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I need to catch up on my reading over the weekend.",
+        "vi": "Tôi cần bắt kịp việc đọc sách vào cuối tuần."
+      },
+      {
+        "en": "She stayed up late to catch up on her assignments.",
+        "vi": "Cô ấy thức khuya để theo kịp bài tập."
+      }
+    ],
+    "collocations": [
+      "catch up on homework",
+      "catch up on sleep",
+      "catch up on the news"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "You look tired. Did you stay up late?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yeah, I had to catch up on my project."
+      }
+    ]
+  },
+  {
+    "phrase": "brush up on",
+    "meaning_vi": "ôn lại, trau dồi (kiến thức, kỹ năng)",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I should brush up on my French before the exam.",
+        "vi": "Tôi nên ôn lại tiếng Pháp trước kỳ thi."
+      },
+      {
+        "en": "He brushed up on his presentation skills for the conference.",
+        "vi": "Anh ấy trau dồi kỹ năng thuyết trình cho hội nghị."
+      }
+    ],
+    "collocations": [
+      "brush up on grammar",
+      "brush up on techniques",
+      "brush up on vocabulary"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Are you ready for the test tomorrow?"
+      },
+      {
+        "speaker": "B",
+        "text": "Not yet. I need to brush up on the last chapter."
+      }
+    ]
+  },
+  {
+    "phrase": "fall behind",
+    "meaning_vi": "tụt lại phía sau (trong học tập, công việc)",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "If you miss too many classes, you'll fall behind.",
+        "vi": "Nếu bạn nghỉ quá nhiều buổi học, bạn sẽ bị tụt lại."
+      },
+      {
+        "en": "She fell behind in math and had to get a tutor.",
+        "vi": "Cô ấy bị tụt lại trong môn toán và phải tìm gia sư."
+      }
+    ],
+    "collocations": [
+      "fall behind in studies",
+      "fall behind schedule",
+      "fall behind the class"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I'm struggling with the coursework."
+      },
+      {
+        "speaker": "B",
+        "text": "Don't fall behind. Ask the teacher for help."
+      }
+    ]
+  },
+  {
+    "phrase": "drop out",
+    "meaning_vi": "bỏ học giữa chừng",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "He dropped out of college to start his own business.",
+        "vi": "Anh ấy bỏ đại học để bắt đầu kinh doanh riêng."
+      },
+      {
+        "en": "Many students drop out due to financial difficulties.",
+        "vi": "Nhiều sinh viên bỏ học vì khó khăn tài chính."
+      }
+    ],
+    "collocations": [
+      "drop out of school",
+      "drop out of a course",
+      "drop out rate"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Did you hear that Tom dropped out?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, he decided to pursue a career in music."
+      }
+    ]
+  },
+  {
+    "phrase": "keep up with",
+    "meaning_vi": "theo kịp (bài vở, nhịp độ)",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "It's hard to keep up with all the reading assignments.",
+        "vi": "Thật khó để theo kịp tất cả các bài đọc."
+      },
+      {
+        "en": "She works hard to keep up with her classmates.",
+        "vi": "Cô ấy học chăm chỉ để theo kịp các bạn cùng lớp."
+      }
+    ],
+    "collocations": [
+      "keep up with the workload",
+      "keep up with the latest research",
+      "keep up with deadlines"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How are you managing the course?"
+      },
+      {
+        "speaker": "B",
+        "text": "Barely. I'm struggling to keep up with the pace."
+      }
+    ]
+  },
+  {
+    "phrase": "major in",
+    "meaning_vi": "học chuyên ngành (ở đại học)",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "She decided to major in economics.",
+        "vi": "Cô ấy quyết định học chuyên ngành kinh tế."
+      },
+      {
+        "en": "What do you plan to major in?",
+        "vi": "Bạn dự định học chuyên ngành gì?"
+      }
+    ],
+    "collocations": [
+      "major in business",
+      "major in engineering",
+      "major in computer science"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What's your major?"
+      },
+      {
+        "speaker": "B",
+        "text": "I major in biology. How about you?"
+      }
+    ]
+  },
+  {
+    "phrase": "do research",
+    "meaning_vi": "làm nghiên cứu",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "She is doing research on climate change.",
+        "vi": "Cô ấy đang làm nghiên cứu về biến đổi khí hậu."
+      },
+      {
+        "en": "We need to do more research before drawing conclusions.",
+        "vi": "Chúng ta cần làm thêm nghiên cứu trước khi rút ra kết luận."
+      }
+    ],
+    "collocations": [
+      "do scientific research",
+      "do market research",
+      "do research on a topic"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What are you working on these days?"
+      },
+      {
+        "speaker": "B",
+        "text": "I'm doing research for my thesis."
+      }
+    ]
+  },
+  {
+    "phrase": "hand in",
+    "meaning_vi": "nộp (bài tập, báo cáo)",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Please hand in your essays by Friday.",
+        "vi": "Vui lòng nộp bài luận trước thứ Sáu."
+      },
+      {
+        "en": "He forgot to hand in his assignment on time.",
+        "vi": "Anh ấy quên nộp bài tập đúng hạn."
+      }
+    ],
+    "collocations": [
+      "hand in homework",
+      "hand in a report",
+      "hand in an application"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Have you handed in your project yet?"
+      },
+      {
+        "speaker": "B",
+        "text": "Not yet. I still have a few edits to make."
+      }
+    ]
+  },
+  {
+    "phrase": "figure out",
+    "meaning_vi": "tìm ra, hiểu được (cách giải quyết vấn đề)",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I need to figure out how to solve this equation.",
+        "vi": "Tôi cần tìm ra cách giải phương trình này."
+      },
+      {
+        "en": "She finally figured out the answer.",
+        "vi": "Cuối cùng cô ấy đã tìm ra câu trả lời."
+      }
+    ],
+    "collocations": [
+      "figure out a problem",
+      "figure out the meaning",
+      "figure out a solution"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "This math problem is really tricky."
+      },
+      {
+        "speaker": "B",
+        "text": "Let's work together to figure it out."
+      }
+    ]
+  },
+  {
+    "phrase": "go over",
+    "meaning_vi": "xem lại, ôn lại (bài học, tài liệu)",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Let's go over the main points again.",
+        "vi": "Hãy xem lại các điểm chính một lần nữa."
+      },
+      {
+        "en": "She went over her notes before the exam.",
+        "vi": "Cô ấy xem lại ghi chú trước kỳ thi."
+      }
+    ],
+    "collocations": [
+      "go over the lesson",
+      "go over the details",
+      "go over the material"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Can we go over chapter five?"
+      },
+      {
+        "speaker": "B",
+        "text": "Sure, I have some questions about it."
+      }
+    ]
+  },
+  {
+    "phrase": "take notes",
+    "meaning_vi": "ghi chép bài",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "It's important to take notes during lectures.",
+        "vi": "Việc ghi chép trong các bài giảng rất quan trọng."
+      },
+      {
+        "en": "She takes notes in every class.",
+        "vi": "Cô ấy ghi chép trong mỗi buổi học."
+      }
+    ],
+    "collocations": [
+      "take detailed notes",
+      "take notes by hand",
+      "take notes on a laptop"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you take notes in class?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I find it helps me remember better."
+      }
+    ]
+  },
+  {
+    "phrase": "pass with flying colors",
+    "meaning_vi": "vượt qua (kỳ thi) với kết quả xuất sắc",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "She passed the exam with flying colors.",
+        "vi": "Cô ấy đã vượt qua kỳ thi với kết quả xuất sắc."
+      },
+      {
+        "en": "He hopes to pass his driving test with flying colors.",
+        "vi": "Anh ấy hy vọng sẽ vượt qua bài kiểm tra lái xe với kết quả xuất sắc."
+      }
+    ],
+    "collocations": [
+      "pass a test with flying colors",
+      "pass an interview with flying colors",
+      "pass a course with flying colors"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How did you do on the final?"
+      },
+      {
+        "speaker": "B",
+        "text": "I passed with flying colors!"
+      }
+    ]
+  }
+]

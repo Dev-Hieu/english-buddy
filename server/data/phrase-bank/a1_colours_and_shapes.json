@@ -1,0 +1,250 @@
+[
+  {
+    "phrase": "a red car",
+    "meaning_vi": "xe màu đỏ",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I see a red car.",
+        "vi": "Tôi thấy một chiếc xe màu đỏ."
+      },
+      {
+        "en": "She has a red car.",
+        "vi": "Cô ấy có một chiếc xe màu đỏ."
+      }
+    ],
+    "collocations": [
+      "a blue car",
+      "a green car",
+      "a yellow car"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What color is your car?"
+      },
+      {
+        "speaker": "B",
+        "text": "My car is red."
+      }
+    ]
+  },
+  {
+    "phrase": "a round table",
+    "meaning_vi": "bàn tròn",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "We have a round table.",
+        "vi": "Chúng tôi có một cái bàn tròn."
+      },
+      {
+        "en": "The table is round.",
+        "vi": "Cái bàn hình tròn."
+      }
+    ],
+    "collocations": [
+      "a square table",
+      "a rectangular table",
+      "a small table"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Is your table round?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, it's a round table."
+      }
+    ]
+  },
+  {
+    "phrase": "looks blue",
+    "meaning_vi": "trông màu xanh",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "The sky looks blue.",
+        "vi": "Bầu trời trông màu xanh."
+      },
+      {
+        "en": "His shirt looks blue.",
+        "vi": "Áo sơ mi của anh ấy trông màu xanh."
+      }
+    ],
+    "collocations": [
+      "looks red",
+      "looks green",
+      "looks yellow"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What color is the sky?"
+      },
+      {
+        "speaker": "B",
+        "text": "It looks blue."
+      }
+    ]
+  },
+  {
+    "phrase": "a big circle",
+    "meaning_vi": "hình tròn lớn",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "Draw a big circle.",
+        "vi": "Vẽ một hình tròn lớn."
+      },
+      {
+        "en": "The circle is big.",
+        "vi": "Hình tròn lớn."
+      }
+    ],
+    "collocations": [
+      "a small circle",
+      "a red circle",
+      "a perfect circle"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Can you draw a circle?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, a big circle."
+      }
+    ]
+  },
+  {
+    "phrase": "turn red",
+    "meaning_vi": "chuyển sang màu đỏ",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "The leaves turn red in autumn.",
+        "vi": "Lá chuyển sang màu đỏ vào mùa thu."
+      },
+      {
+        "en": "His face turned red.",
+        "vi": "Mặt anh ấy đỏ lên."
+      }
+    ],
+    "collocations": [
+      "turn yellow",
+      "turn brown",
+      "turn green"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Why are the leaves turning red?"
+      },
+      {
+        "speaker": "B",
+        "text": "Because it's autumn."
+      }
+    ]
+  },
+  {
+    "phrase": "a square box",
+    "meaning_vi": "hộp vuông",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I have a square box.",
+        "vi": "Tôi có một cái hộp vuông."
+      },
+      {
+        "en": "The box is square.",
+        "vi": "Cái hộp hình vuông."
+      }
+    ],
+    "collocations": [
+      "a round box",
+      "a small box",
+      "a blue box"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What shape is the box?"
+      },
+      {
+        "speaker": "B",
+        "text": "It's a square box."
+      }
+    ]
+  },
+  {
+    "phrase": "color in",
+    "meaning_vi": "tô màu",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Color in the circle.",
+        "vi": "Tô màu hình tròn."
+      },
+      {
+        "en": "She colors in the picture.",
+        "vi": "Cô ấy tô màu bức tranh."
+      }
+    ],
+    "collocations": [
+      "color in red",
+      "color in blue",
+      "color in the shape"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What should I do?"
+      },
+      {
+        "speaker": "B",
+        "text": "Color in the square."
+      }
+    ]
+  },
+  {
+    "phrase": "a long line",
+    "meaning_vi": "đường thẳng dài",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "Draw a long line.",
+        "vi": "Vẽ một đường thẳng dài."
+      },
+      {
+        "en": "The line is long.",
+        "vi": "Đường thẳng dài."
+      }
+    ],
+    "collocations": [
+      "a short line",
+      "a straight line",
+      "a red line"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Can you draw a line?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, a long line."
+      }
+    ]
+  }
+]

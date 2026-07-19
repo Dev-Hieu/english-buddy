@@ -1,0 +1,250 @@
+[
+  {
+    "phrase": "put on",
+    "meaning_vi": "mặc vào",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I put on my shirt.",
+        "vi": "Tôi mặc áo sơ mi vào."
+      },
+      {
+        "en": "She puts on her shoes.",
+        "vi": "Cô ấy đi giày vào."
+      }
+    ],
+    "collocations": [
+      "put on a jacket",
+      "put on a hat",
+      "put on socks"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What are you doing?"
+      },
+      {
+        "speaker": "B",
+        "text": "I'm putting on my coat."
+      }
+    ]
+  },
+  {
+    "phrase": "take off",
+    "meaning_vi": "cởi ra",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Please take off your shoes.",
+        "vi": "Vui lòng cởi giày ra."
+      },
+      {
+        "en": "He takes off his hat.",
+        "vi": "Anh ấy cởi mũ ra."
+      }
+    ],
+    "collocations": [
+      "take off a jacket",
+      "take off glasses",
+      "take off a watch"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "It's hot in here."
+      },
+      {
+        "speaker": "B",
+        "text": "You can take off your sweater."
+      }
+    ]
+  },
+  {
+    "phrase": "try on",
+    "meaning_vi": "thử (quần áo)",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Can I try on this dress?",
+        "vi": "Tôi có thể thử cái váy này không?"
+      },
+      {
+        "en": "She tries on the jeans.",
+        "vi": "Cô ấy thử quần jeans."
+      }
+    ],
+    "collocations": [
+      "try on a shirt",
+      "try on shoes",
+      "try on a hat"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you like this dress?"
+      },
+      {
+        "speaker": "B",
+        "text": "I don't know. Let me try it on."
+      }
+    ]
+  },
+  {
+    "phrase": "wear",
+    "meaning_vi": "mặc, mang",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I wear a blue shirt today.",
+        "vi": "Hôm nay tôi mặc áo sơ mi xanh."
+      },
+      {
+        "en": "She wears glasses.",
+        "vi": "Cô ấy đeo kính."
+      }
+    ],
+    "collocations": [
+      "wear a dress",
+      "wear a hat",
+      "wear a watch"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What are you wearing?"
+      },
+      {
+        "speaker": "B",
+        "text": "I'm wearing a red jacket."
+      }
+    ]
+  },
+  {
+    "phrase": "go with",
+    "meaning_vi": "hợp với (quần áo)",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "This shirt goes with my pants.",
+        "vi": "Cái áo này hợp với quần của tôi."
+      },
+      {
+        "en": "Does this hat go with my coat?",
+        "vi": "Cái mũ này có hợp với áo khoác của tôi không?"
+      }
+    ],
+    "collocations": [
+      "go well with",
+      "go perfectly with",
+      "go together"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you like this tie?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, it goes with your shirt."
+      }
+    ]
+  },
+  {
+    "phrase": "dress up",
+    "meaning_vi": "ăn mặc đẹp, diện",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I dress up for the party.",
+        "vi": "Tôi ăn mặc đẹp cho bữa tiệc."
+      },
+      {
+        "en": "She loves to dress up.",
+        "vi": "Cô ấy thích diện đồ."
+      }
+    ],
+    "collocations": [
+      "dress up formally",
+      "dress up casually",
+      "dress up for an occasion"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Are you dressing up for the wedding?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I'm wearing a suit."
+      }
+    ]
+  },
+  {
+    "phrase": "look good in",
+    "meaning_vi": "mặc đẹp, hợp với (ai đó)",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "You look good in red.",
+        "vi": "Bạn mặc màu đỏ đẹp."
+      },
+      {
+        "en": "She looks good in that dress.",
+        "vi": "Cô ấy mặc cái váy đó đẹp."
+      }
+    ],
+    "collocations": [
+      "look good in blue",
+      "look good in jeans",
+      "look good in a suit"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you like this dress?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, you look good in it."
+      }
+    ]
+  },
+  {
+    "phrase": "fit",
+    "meaning_vi": "vừa (quần áo)",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "These shoes fit me.",
+        "vi": "Đôi giày này vừa với tôi."
+      },
+      {
+        "en": "The jacket doesn't fit.",
+        "vi": "Áo khoác không vừa."
+      }
+    ],
+    "collocations": [
+      "fit well",
+      "fit perfectly",
+      "fit loosely"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How is the shirt?"
+      },
+      {
+        "speaker": "B",
+        "text": "It fits perfectly."
+      }
+    ]
+  }
+]

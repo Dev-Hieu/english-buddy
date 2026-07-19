@@ -1,0 +1,5959 @@
+[
+  {
+    "phrase": "wake up",
+    "meaning_vi": "thức dậy",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I wake up at 7 every day.",
+        "vi": "Tôi thức dậy lúc 7 giờ mỗi ngày."
+      },
+      {
+        "en": "She wakes up early.",
+        "vi": "Cô ấy thức dậy sớm."
+      }
+    ],
+    "collocations": [
+      "wake up early",
+      "wake up late",
+      "wake up slowly"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What time do you wake up?"
+      },
+      {
+        "speaker": "B",
+        "text": "I wake up at 6."
+      }
+    ]
+  },
+  {
+    "phrase": "look at",
+    "meaning_vi": "nhìn vào",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Look at the bird!",
+        "vi": "Nhìn con chim kìa!"
+      },
+      {
+        "en": "Look at the flowers.",
+        "vi": "Nhìn những bông hoa kìa."
+      }
+    ],
+    "collocations": [
+      "look at the sky",
+      "look at the tree",
+      "look at the animal"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Look at that rabbit!"
+      },
+      {
+        "speaker": "B",
+        "text": "It's so cute."
+      }
+    ]
+  },
+  {
+    "phrase": "take care of",
+    "meaning_vi": "chăm sóc",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I take care of my dog.",
+        "vi": "Tôi chăm sóc con chó của mình."
+      },
+      {
+        "en": "She takes care of the plants.",
+        "vi": "Cô ấy chăm sóc cây cối."
+      }
+    ],
+    "collocations": [
+      "take care of a pet",
+      "take care of a garden",
+      "take care of nature"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you take care of any animals?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I take care of my cat."
+      }
+    ]
+  },
+  {
+    "phrase": "go for a walk",
+    "meaning_vi": "đi dạo",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "Let's go for a walk in the park.",
+        "vi": "Hãy đi dạo trong công viên."
+      },
+      {
+        "en": "I go for a walk every morning.",
+        "vi": "Tôi đi dạo mỗi sáng."
+      }
+    ],
+    "collocations": [
+      "go for a walk in the woods",
+      "go for a walk on the beach",
+      "go for a walk with the dog"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you want to go for a walk?"
+      },
+      {
+        "speaker": "B",
+        "text": "Sure, let's go to the park."
+      }
+    ]
+  },
+  {
+    "phrase": "listen to",
+    "meaning_vi": "lắng nghe",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Listen to the birds singing.",
+        "vi": "Lắng nghe tiếng chim hót."
+      },
+      {
+        "en": "I listen to the wind.",
+        "vi": "Tôi lắng nghe tiếng gió."
+      }
+    ],
+    "collocations": [
+      "listen to nature sounds",
+      "listen to the rain",
+      "listen to the ocean"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What do you listen to in the morning?"
+      },
+      {
+        "speaker": "B",
+        "text": "I listen to the birds."
+      }
+    ]
+  },
+  {
+    "phrase": "climb a tree",
+    "meaning_vi": "trèo cây",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "The boy climbs a tree.",
+        "vi": "Cậu bé trèo cây."
+      },
+      {
+        "en": "Can you climb a tree?",
+        "vi": "Bạn có thể trèo cây không?"
+      }
+    ],
+    "collocations": [
+      "climb a tall tree",
+      "climb an apple tree",
+      "climb a tree easily"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Look! The cat climbs a tree."
+      },
+      {
+        "speaker": "B",
+        "text": "It is very fast."
+      }
+    ]
+  },
+  {
+    "phrase": "pick flowers",
+    "meaning_vi": "hái hoa",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "She picks flowers in the garden.",
+        "vi": "Cô ấy hái hoa trong vườn."
+      },
+      {
+        "en": "Don't pick the flowers!",
+        "vi": "Đừng hái hoa!"
+      }
+    ],
+    "collocations": [
+      "pick wild flowers",
+      "pick a bunch of flowers",
+      "pick flowers for a vase"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Can I pick a flower?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, but only one."
+      }
+    ]
+  },
+  {
+    "phrase": "feed the animals",
+    "meaning_vi": "cho động vật ăn",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I feed the ducks at the pond.",
+        "vi": "Tôi cho vịt ăn ở ao."
+      },
+      {
+        "en": "Please don't feed the animals.",
+        "vi": "Vui lòng không cho động vật ăn."
+      }
+    ],
+    "collocations": [
+      "feed the birds",
+      "feed the fish",
+      "feed the dog"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you feed the birds?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I feed them every morning."
+      }
+    ]
+  },
+  {
+    "phrase": "put on",
+    "meaning_vi": "mặc vào",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I put on my shirt.",
+        "vi": "Tôi mặc áo sơ mi vào."
+      },
+      {
+        "en": "She puts on her shoes.",
+        "vi": "Cô ấy đi giày vào."
+      }
+    ],
+    "collocations": [
+      "put on a jacket",
+      "put on a hat",
+      "put on socks"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What are you doing?"
+      },
+      {
+        "speaker": "B",
+        "text": "I'm putting on my coat."
+      }
+    ]
+  },
+  {
+    "phrase": "take off",
+    "meaning_vi": "cởi ra",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Please take off your shoes.",
+        "vi": "Vui lòng cởi giày ra."
+      },
+      {
+        "en": "He takes off his hat.",
+        "vi": "Anh ấy cởi mũ ra."
+      }
+    ],
+    "collocations": [
+      "take off a jacket",
+      "take off glasses",
+      "take off a watch"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "It's hot in here."
+      },
+      {
+        "speaker": "B",
+        "text": "You can take off your sweater."
+      }
+    ]
+  },
+  {
+    "phrase": "try on",
+    "meaning_vi": "thử (quần áo)",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Can I try on this dress?",
+        "vi": "Tôi có thể thử cái váy này không?"
+      },
+      {
+        "en": "She tries on the jeans.",
+        "vi": "Cô ấy thử quần jeans."
+      }
+    ],
+    "collocations": [
+      "try on a shirt",
+      "try on shoes",
+      "try on a hat"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you like this dress?"
+      },
+      {
+        "speaker": "B",
+        "text": "I don't know. Let me try it on."
+      }
+    ]
+  },
+  {
+    "phrase": "wear",
+    "meaning_vi": "mặc, mang",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I wear a blue shirt today.",
+        "vi": "Hôm nay tôi mặc áo sơ mi xanh."
+      },
+      {
+        "en": "She wears glasses.",
+        "vi": "Cô ấy đeo kính."
+      }
+    ],
+    "collocations": [
+      "wear a dress",
+      "wear a hat",
+      "wear a watch"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What are you wearing?"
+      },
+      {
+        "speaker": "B",
+        "text": "I'm wearing a red jacket."
+      }
+    ]
+  },
+  {
+    "phrase": "go with",
+    "meaning_vi": "hợp với (quần áo)",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "This shirt goes with my pants.",
+        "vi": "Cái áo này hợp với quần của tôi."
+      },
+      {
+        "en": "Does this hat go with my coat?",
+        "vi": "Cái mũ này có hợp với áo khoác của tôi không?"
+      }
+    ],
+    "collocations": [
+      "go well with",
+      "go perfectly with",
+      "go together"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you like this tie?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, it goes with your shirt."
+      }
+    ]
+  },
+  {
+    "phrase": "dress up",
+    "meaning_vi": "ăn mặc đẹp, diện",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I dress up for the party.",
+        "vi": "Tôi ăn mặc đẹp cho bữa tiệc."
+      },
+      {
+        "en": "She loves to dress up.",
+        "vi": "Cô ấy thích diện đồ."
+      }
+    ],
+    "collocations": [
+      "dress up formally",
+      "dress up casually",
+      "dress up for an occasion"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Are you dressing up for the wedding?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I'm wearing a suit."
+      }
+    ]
+  },
+  {
+    "phrase": "look good in",
+    "meaning_vi": "mặc đẹp, hợp với (ai đó)",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "You look good in red.",
+        "vi": "Bạn mặc màu đỏ đẹp."
+      },
+      {
+        "en": "She looks good in that dress.",
+        "vi": "Cô ấy mặc cái váy đó đẹp."
+      }
+    ],
+    "collocations": [
+      "look good in blue",
+      "look good in jeans",
+      "look good in a suit"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you like this dress?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, you look good in it."
+      }
+    ]
+  },
+  {
+    "phrase": "fit",
+    "meaning_vi": "vừa (quần áo)",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "These shoes fit me.",
+        "vi": "Đôi giày này vừa với tôi."
+      },
+      {
+        "en": "The jacket doesn't fit.",
+        "vi": "Áo khoác không vừa."
+      }
+    ],
+    "collocations": [
+      "fit well",
+      "fit perfectly",
+      "fit loosely"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How is the shirt?"
+      },
+      {
+        "speaker": "B",
+        "text": "It fits perfectly."
+      }
+    ]
+  },
+  {
+    "phrase": "a red car",
+    "meaning_vi": "xe màu đỏ",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I see a red car.",
+        "vi": "Tôi thấy một chiếc xe màu đỏ."
+      },
+      {
+        "en": "She has a red car.",
+        "vi": "Cô ấy có một chiếc xe màu đỏ."
+      }
+    ],
+    "collocations": [
+      "a blue car",
+      "a green car",
+      "a yellow car"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What color is your car?"
+      },
+      {
+        "speaker": "B",
+        "text": "My car is red."
+      }
+    ]
+  },
+  {
+    "phrase": "a round table",
+    "meaning_vi": "bàn tròn",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "We have a round table.",
+        "vi": "Chúng tôi có một cái bàn tròn."
+      },
+      {
+        "en": "The table is round.",
+        "vi": "Cái bàn hình tròn."
+      }
+    ],
+    "collocations": [
+      "a square table",
+      "a rectangular table",
+      "a small table"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Is your table round?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, it's a round table."
+      }
+    ]
+  },
+  {
+    "phrase": "looks blue",
+    "meaning_vi": "trông màu xanh",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "The sky looks blue.",
+        "vi": "Bầu trời trông màu xanh."
+      },
+      {
+        "en": "His shirt looks blue.",
+        "vi": "Áo sơ mi của anh ấy trông màu xanh."
+      }
+    ],
+    "collocations": [
+      "looks red",
+      "looks green",
+      "looks yellow"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What color is the sky?"
+      },
+      {
+        "speaker": "B",
+        "text": "It looks blue."
+      }
+    ]
+  },
+  {
+    "phrase": "a big circle",
+    "meaning_vi": "hình tròn lớn",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "Draw a big circle.",
+        "vi": "Vẽ một hình tròn lớn."
+      },
+      {
+        "en": "The circle is big.",
+        "vi": "Hình tròn lớn."
+      }
+    ],
+    "collocations": [
+      "a small circle",
+      "a red circle",
+      "a perfect circle"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Can you draw a circle?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, a big circle."
+      }
+    ]
+  },
+  {
+    "phrase": "turn red",
+    "meaning_vi": "chuyển sang màu đỏ",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "The leaves turn red in autumn.",
+        "vi": "Lá chuyển sang màu đỏ vào mùa thu."
+      },
+      {
+        "en": "His face turned red.",
+        "vi": "Mặt anh ấy đỏ lên."
+      }
+    ],
+    "collocations": [
+      "turn yellow",
+      "turn brown",
+      "turn green"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Why are the leaves turning red?"
+      },
+      {
+        "speaker": "B",
+        "text": "Because it's autumn."
+      }
+    ]
+  },
+  {
+    "phrase": "a square box",
+    "meaning_vi": "hộp vuông",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I have a square box.",
+        "vi": "Tôi có một cái hộp vuông."
+      },
+      {
+        "en": "The box is square.",
+        "vi": "Cái hộp hình vuông."
+      }
+    ],
+    "collocations": [
+      "a round box",
+      "a small box",
+      "a blue box"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What shape is the box?"
+      },
+      {
+        "speaker": "B",
+        "text": "It's a square box."
+      }
+    ]
+  },
+  {
+    "phrase": "color in",
+    "meaning_vi": "tô màu",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Color in the circle.",
+        "vi": "Tô màu hình tròn."
+      },
+      {
+        "en": "She colors in the picture.",
+        "vi": "Cô ấy tô màu bức tranh."
+      }
+    ],
+    "collocations": [
+      "color in red",
+      "color in blue",
+      "color in the shape"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What should I do?"
+      },
+      {
+        "speaker": "B",
+        "text": "Color in the square."
+      }
+    ]
+  },
+  {
+    "phrase": "a long line",
+    "meaning_vi": "đường thẳng dài",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "Draw a long line.",
+        "vi": "Vẽ một đường thẳng dài."
+      },
+      {
+        "en": "The line is long.",
+        "vi": "Đường thẳng dài."
+      }
+    ],
+    "collocations": [
+      "a short line",
+      "a straight line",
+      "a red line"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Can you draw a line?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, a long line."
+      }
+    ]
+  },
+  {
+    "phrase": "turn on",
+    "meaning_vi": "bật (thiết bị)",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Please turn on the TV.",
+        "vi": "Làm ơn bật TV lên."
+      },
+      {
+        "en": "I turn on my computer every morning.",
+        "vi": "Tôi bật máy tính mỗi sáng."
+      }
+    ],
+    "collocations": [
+      "turn on the light",
+      "turn on the phone",
+      "turn on the radio"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Can you turn on the light?"
+      },
+      {
+        "speaker": "B",
+        "text": "Sure, I'll turn it on now."
+      }
+    ]
+  },
+  {
+    "phrase": "turn off",
+    "meaning_vi": "tắt (thiết bị)",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Don't forget to turn off the TV.",
+        "vi": "Đừng quên tắt TV."
+      },
+      {
+        "en": "I turn off my phone at night.",
+        "vi": "Tôi tắt điện thoại vào ban đêm."
+      }
+    ],
+    "collocations": [
+      "turn off the light",
+      "turn off the computer",
+      "turn off the music"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Please turn off your phone in class."
+      },
+      {
+        "speaker": "B",
+        "text": "Okay, I'll turn it off."
+      }
+    ]
+  },
+  {
+    "phrase": "charge my phone",
+    "meaning_vi": "sạc điện thoại",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I need to charge my phone.",
+        "vi": "Tôi cần sạc điện thoại."
+      },
+      {
+        "en": "Can I charge my phone here?",
+        "vi": "Tôi có thể sạc điện thoại ở đây không?"
+      }
+    ],
+    "collocations": [
+      "charge the battery",
+      "charge the laptop",
+      "fully charged"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "My phone is dead."
+      },
+      {
+        "speaker": "B",
+        "text": "You can charge it here."
+      }
+    ]
+  },
+  {
+    "phrase": "send a text",
+    "meaning_vi": "nhắn tin",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I'll send you a text later.",
+        "vi": "Tôi sẽ nhắn tin cho bạn sau."
+      },
+      {
+        "en": "She sends a text to her mom every day.",
+        "vi": "Cô ấy nhắn tin cho mẹ mỗi ngày."
+      }
+    ],
+    "collocations": [
+      "send a message",
+      "send an email",
+      "send a photo"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Can you send me a text?"
+      },
+      {
+        "speaker": "B",
+        "text": "Sure, I'll send it now."
+      }
+    ]
+  },
+  {
+    "phrase": "check email",
+    "meaning_vi": "kiểm tra email",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I check my email in the morning.",
+        "vi": "Tôi kiểm tra email vào buổi sáng."
+      },
+      {
+        "en": "Have you checked your email today?",
+        "vi": "Bạn đã kiểm tra email hôm nay chưa?"
+      }
+    ],
+    "collocations": [
+      "check messages",
+      "check notifications",
+      "check the internet"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Did you check your email?"
+      },
+      {
+        "speaker": "B",
+        "text": "Not yet, I'll check it now."
+      }
+    ]
+  },
+  {
+    "phrase": "surf the web",
+    "meaning_vi": "lướt web",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "I like to surf the web at night.",
+        "vi": "Tôi thích lướt web vào ban đêm."
+      },
+      {
+        "en": "He surfs the web for news.",
+        "vi": "Anh ấy lướt web để đọc tin tức."
+      }
+    ],
+    "collocations": [
+      "browse the internet",
+      "go online",
+      "search the web"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What do you do in your free time?"
+      },
+      {
+        "speaker": "B",
+        "text": "I usually surf the web."
+      }
+    ]
+  },
+  {
+    "phrase": "download an app",
+    "meaning_vi": "tải ứng dụng",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I want to download a new app.",
+        "vi": "Tôi muốn tải một ứng dụng mới."
+      },
+      {
+        "en": "How do I download this app?",
+        "vi": "Làm thế nào để tải ứng dụng này?"
+      }
+    ],
+    "collocations": [
+      "download a game",
+      "download a file",
+      "download music"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I need to download an app for work."
+      },
+      {
+        "speaker": "B",
+        "text": "Which app do you want to download?"
+      }
+    ]
+  },
+  {
+    "phrase": "log in",
+    "meaning_vi": "đăng nhập",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Please log in with your username.",
+        "vi": "Vui lòng đăng nhập bằng tên người dùng của bạn."
+      },
+      {
+        "en": "I can't log in to my account.",
+        "vi": "Tôi không thể đăng nhập vào tài khoản của mình."
+      }
+    ],
+    "collocations": [
+      "log in to a website",
+      "log in to email",
+      "log out"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How do I log in?"
+      },
+      {
+        "speaker": "B",
+        "text": "Enter your password and click 'Log in'."
+      }
+    ]
+  },
+  {
+    "phrase": "get up",
+    "meaning_vi": "thức dậy",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I get up at 6 every morning.",
+        "vi": "Tôi thức dậy lúc 6 giờ mỗi sáng."
+      },
+      {
+        "en": "What time do you get up?",
+        "vi": "Bạn thức dậy lúc mấy giờ?"
+      }
+    ],
+    "collocations": [
+      "get up early",
+      "get up late",
+      "get up on time"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What time do you usually get up?"
+      },
+      {
+        "speaker": "B",
+        "text": "I usually get up at seven."
+      }
+    ]
+  },
+  {
+    "phrase": "have breakfast",
+    "meaning_vi": "ăn sáng",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I have breakfast at 7.",
+        "vi": "Tôi ăn sáng lúc 7 giờ."
+      },
+      {
+        "en": "Do you have breakfast every day?",
+        "vi": "Bạn có ăn sáng mỗi ngày không?"
+      }
+    ],
+    "collocations": [
+      "have a big breakfast",
+      "have a light breakfast",
+      "skip breakfast"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What do you have for breakfast?"
+      },
+      {
+        "speaker": "B",
+        "text": "I usually have bread and milk."
+      }
+    ]
+  },
+  {
+    "phrase": "go to work",
+    "meaning_vi": "đi làm",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I go to work by bus.",
+        "vi": "Tôi đi làm bằng xe buýt."
+      },
+      {
+        "en": "She goes to work at 8.",
+        "vi": "Cô ấy đi làm lúc 8 giờ."
+      }
+    ],
+    "collocations": [
+      "go to work by car",
+      "go to work on foot",
+      "go to work early"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How do you go to work?"
+      },
+      {
+        "speaker": "B",
+        "text": "I go to work by motorbike."
+      }
+    ]
+  },
+  {
+    "phrase": "come home",
+    "meaning_vi": "về nhà",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I come home at 5.",
+        "vi": "Tôi về nhà lúc 5 giờ."
+      },
+      {
+        "en": "What time do you come home?",
+        "vi": "Bạn về nhà lúc mấy giờ?"
+      }
+    ],
+    "collocations": [
+      "come home late",
+      "come home early",
+      "come home for lunch"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "When do you usually come home?"
+      },
+      {
+        "speaker": "B",
+        "text": "I come home around six."
+      }
+    ]
+  },
+  {
+    "phrase": "watch TV",
+    "meaning_vi": "xem TV",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I watch TV in the evening.",
+        "vi": "Tôi xem TV vào buổi tối."
+      },
+      {
+        "en": "Do you watch TV every day?",
+        "vi": "Bạn có xem TV mỗi ngày không?"
+      }
+    ],
+    "collocations": [
+      "watch TV after dinner",
+      "watch TV shows",
+      "watch the news"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What do you do in the evening?"
+      },
+      {
+        "speaker": "B",
+        "text": "I watch TV or read a book."
+      }
+    ]
+  },
+  {
+    "phrase": "go to bed",
+    "meaning_vi": "đi ngủ",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I go to bed at 10.",
+        "vi": "Tôi đi ngủ lúc 10 giờ."
+      },
+      {
+        "en": "She goes to bed early.",
+        "vi": "Cô ấy đi ngủ sớm."
+      }
+    ],
+    "collocations": [
+      "go to bed late",
+      "go to bed early",
+      "go to bed at midnight"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What time do you go to bed?"
+      },
+      {
+        "speaker": "B",
+        "text": "I usually go to bed at 11."
+      }
+    ]
+  },
+  {
+    "phrase": "have dinner",
+    "meaning_vi": "ăn tối",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "We have dinner at 7.",
+        "vi": "Chúng tôi ăn tối lúc 7 giờ."
+      },
+      {
+        "en": "Let's have dinner together.",
+        "vi": "Cùng ăn tối nhé."
+      }
+    ],
+    "collocations": [
+      "have a big dinner",
+      "have dinner with family",
+      "have dinner out"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What time do you have dinner?"
+      },
+      {
+        "speaker": "B",
+        "text": "We have dinner at seven."
+      }
+    ]
+  },
+  {
+    "phrase": "How are you?",
+    "meaning_vi": "Bạn khỏe không?",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "How are you?",
+        "vi": "Bạn khỏe không?"
+      },
+      {
+        "en": "I'm fine, thanks.",
+        "vi": "Tôi khỏe, cảm ơn."
+      }
+    ],
+    "collocations": [
+      "How are you today?",
+      "How are you doing?",
+      "How's it going?"
+    ],
+    "response": "I'm fine, thanks.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Hi, how are you?"
+      },
+      {
+        "speaker": "B",
+        "text": "I'm fine, thanks. And you?"
+      },
+      {
+        "speaker": "A",
+        "text": "I'm good, thanks."
+      }
+    ]
+  },
+  {
+    "phrase": "go to school",
+    "meaning_vi": "đi học",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I go to school by bus.",
+        "vi": "Tôi đi học bằng xe buýt."
+      },
+      {
+        "en": "She goes to school every day.",
+        "vi": "Cô ấy đi học mỗi ngày."
+      }
+    ],
+    "collocations": [
+      "go to school",
+      "go to class",
+      "go to university"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How do you go to school?"
+      },
+      {
+        "speaker": "B",
+        "text": "I go to school by bike."
+      }
+    ]
+  },
+  {
+    "phrase": "take a test",
+    "meaning_vi": "làm bài kiểm tra",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "We take a test on Friday.",
+        "vi": "Chúng tôi làm bài kiểm tra vào thứ Sáu."
+      },
+      {
+        "en": "Did you take the test?",
+        "vi": "Bạn đã làm bài kiểm tra chưa?"
+      }
+    ],
+    "collocations": [
+      "take a test",
+      "take an exam",
+      "take a quiz"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "When do we take the test?"
+      },
+      {
+        "speaker": "B",
+        "text": "We take it next Monday."
+      }
+    ]
+  },
+  {
+    "phrase": "do homework",
+    "meaning_vi": "làm bài tập về nhà",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I do homework after dinner.",
+        "vi": "Tôi làm bài tập về nhà sau bữa tối."
+      },
+      {
+        "en": "Do you do homework every day?",
+        "vi": "Bạn có làm bài tập về nhà mỗi ngày không?"
+      }
+    ],
+    "collocations": [
+      "do homework",
+      "do exercises",
+      "do assignments"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What time do you do homework?"
+      },
+      {
+        "speaker": "B",
+        "text": "I do homework at 7 pm."
+      }
+    ]
+  },
+  {
+    "phrase": "study hard",
+    "meaning_vi": "học chăm chỉ",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I study hard for the exam.",
+        "vi": "Tôi học chăm chỉ cho kỳ thi."
+      },
+      {
+        "en": "She studies hard every night.",
+        "vi": "Cô ấy học chăm chỉ mỗi tối."
+      }
+    ],
+    "collocations": [
+      "study hard",
+      "study well",
+      "study English"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you study hard?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I study hard every day."
+      }
+    ]
+  },
+  {
+    "phrase": "listen to the teacher",
+    "meaning_vi": "nghe lời thầy cô",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "You should listen to the teacher.",
+        "vi": "Bạn nên nghe lời thầy cô."
+      },
+      {
+        "en": "They listen to the teacher in class.",
+        "vi": "Họ nghe lời thầy cô trong lớp."
+      }
+    ],
+    "collocations": [
+      "listen to the teacher",
+      "listen carefully",
+      "listen in class"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you listen to the teacher?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I always listen carefully."
+      }
+    ]
+  },
+  {
+    "phrase": "raise your hand",
+    "meaning_vi": "giơ tay",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "Please raise your hand to ask a question.",
+        "vi": "Hãy giơ tay để hỏi câu hỏi."
+      },
+      {
+        "en": "The student raised his hand.",
+        "vi": "Học sinh đó đã giơ tay."
+      }
+    ],
+    "collocations": [
+      "raise your hand",
+      "raise your hand in class",
+      "raise your hand to speak"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Can I ask a question?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, raise your hand first."
+      }
+    ]
+  },
+  {
+    "phrase": "learn by heart",
+    "meaning_vi": "học thuộc lòng",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "I learn vocabulary by heart.",
+        "vi": "Tôi học thuộc lòng từ vựng."
+      },
+      {
+        "en": "She learns the poem by heart.",
+        "vi": "Cô ấy học thuộc lòng bài thơ."
+      }
+    ],
+    "collocations": [
+      "learn by heart",
+      "memorize",
+      "learn by rote"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How do you learn new words?"
+      },
+      {
+        "speaker": "B",
+        "text": "I learn them by heart."
+      }
+    ]
+  },
+  {
+    "phrase": "hand in",
+    "meaning_vi": "nộp bài",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Please hand in your homework on Friday.",
+        "vi": "Hãy nộp bài tập về nhà vào thứ Sáu."
+      },
+      {
+        "en": "I handed in my essay yesterday.",
+        "vi": "Tôi đã nộp bài luận hôm qua."
+      }
+    ],
+    "collocations": [
+      "hand in homework",
+      "hand in assignment",
+      "hand in paper"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "When should we hand in the report?"
+      },
+      {
+        "speaker": "B",
+        "text": "Hand it in by next Monday."
+      }
+    ]
+  },
+  {
+    "phrase": "watch TV",
+    "meaning_vi": "xem ti vi",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I watch TV every evening.",
+        "vi": "Tôi xem ti vi mỗi tối."
+      },
+      {
+        "en": "Do you watch TV in the morning?",
+        "vi": "Bạn có xem ti vi vào buổi sáng không?"
+      }
+    ],
+    "collocations": [
+      "watch a movie",
+      "watch a show",
+      "watch the news"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What do you do in the evening?"
+      },
+      {
+        "speaker": "B",
+        "text": "I watch TV."
+      }
+    ]
+  },
+  {
+    "phrase": "listen to music",
+    "meaning_vi": "nghe nhạc",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I like to listen to music.",
+        "vi": "Tôi thích nghe nhạc."
+      },
+      {
+        "en": "She listens to music every day.",
+        "vi": "Cô ấy nghe nhạc mỗi ngày."
+      }
+    ],
+    "collocations": [
+      "listen to pop music",
+      "listen to classical",
+      "listen to songs"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What do you do in your free time?"
+      },
+      {
+        "speaker": "B",
+        "text": "I listen to music."
+      }
+    ]
+  },
+  {
+    "phrase": "play games",
+    "meaning_vi": "chơi trò chơi",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "The children play games outside.",
+        "vi": "Bọn trẻ chơi trò chơi ở ngoài."
+      },
+      {
+        "en": "Do you play games on your phone?",
+        "vi": "Bạn có chơi trò chơi trên điện thoại không?"
+      }
+    ],
+    "collocations": [
+      "play video games",
+      "play board games",
+      "play card games"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Let's play a game."
+      },
+      {
+        "speaker": "B",
+        "text": "Okay, I like to play games."
+      }
+    ]
+  },
+  {
+    "phrase": "read a book",
+    "meaning_vi": "đọc sách",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I read a book before bed.",
+        "vi": "Tôi đọc sách trước khi ngủ."
+      },
+      {
+        "en": "She reads a book every week.",
+        "vi": "Cô ấy đọc sách mỗi tuần."
+      }
+    ],
+    "collocations": [
+      "read a magazine",
+      "read a story",
+      "read a newspaper"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What are you doing?"
+      },
+      {
+        "speaker": "B",
+        "text": "I am reading a book."
+      }
+    ]
+  },
+  {
+    "phrase": "go to the cinema",
+    "meaning_vi": "đi xem phim",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "Let's go to the cinema tonight.",
+        "vi": "Tối nay chúng ta đi xem phim nhé."
+      },
+      {
+        "en": "I go to the cinema with friends.",
+        "vi": "Tôi đi xem phim với bạn bè."
+      }
+    ],
+    "collocations": [
+      "go to the movies",
+      "go to a theater",
+      "go see a film"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you want to go to the cinema?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I love movies."
+      }
+    ]
+  },
+  {
+    "phrase": "surf the Internet",
+    "meaning_vi": "lướt mạng",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "I surf the Internet every day.",
+        "vi": "Tôi lướt mạng mỗi ngày."
+      },
+      {
+        "en": "He surfs the Internet for news.",
+        "vi": "Anh ấy lướt mạng để xem tin tức."
+      }
+    ],
+    "collocations": [
+      "browse the web",
+      "go online",
+      "use the Internet"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What do you do on your computer?"
+      },
+      {
+        "speaker": "B",
+        "text": "I surf the Internet."
+      }
+    ]
+  },
+  {
+    "phrase": "take a photo",
+    "meaning_vi": "chụp ảnh",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "Can you take a photo of me?",
+        "vi": "Bạn có thể chụp ảnh cho tôi không?"
+      },
+      {
+        "en": "I take a photo of the sunset.",
+        "vi": "Tôi chụp ảnh hoàng hôn."
+      }
+    ],
+    "collocations": [
+      "take a picture",
+      "take a selfie",
+      "take a snapshot"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "This view is beautiful!"
+      },
+      {
+        "speaker": "B",
+        "text": "Let me take a photo."
+      }
+    ]
+  },
+  {
+    "phrase": "send a message",
+    "meaning_vi": "gửi tin nhắn",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I send a message to my mom.",
+        "vi": "Tôi gửi tin nhắn cho mẹ."
+      },
+      {
+        "en": "Please send me a message later.",
+        "vi": "Làm ơn gửi tin nhắn cho tôi sau."
+      }
+    ],
+    "collocations": [
+      "text someone",
+      "send an email",
+      "send a text"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I will call you."
+      },
+      {
+        "speaker": "B",
+        "text": "Okay, or send me a message."
+      }
+    ]
+  },
+  {
+    "phrase": "throw away",
+    "meaning_vi": "vứt bỏ",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Don't throw away plastic bottles.",
+        "vi": "Đừng vứt bỏ chai nhựa."
+      },
+      {
+        "en": "We should throw away garbage properly.",
+        "vi": "Chúng ta nên vứt rác đúng cách."
+      }
+    ],
+    "collocations": [
+      "throw away trash",
+      "throw away food",
+      "throw away paper"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Where should I throw this away?"
+      },
+      {
+        "speaker": "B",
+        "text": "Throw it away in the bin."
+      }
+    ]
+  },
+  {
+    "phrase": "clean up",
+    "meaning_vi": "dọn dẹp",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Let's clean up the park.",
+        "vi": "Hãy dọn dẹp công viên."
+      },
+      {
+        "en": "We clean up after the picnic.",
+        "vi": "Chúng tôi dọn dẹp sau buổi dã ngoại."
+      }
+    ],
+    "collocations": [
+      "clean up the beach",
+      "clean up the room",
+      "clean up the mess"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "The beach is dirty."
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, let's clean it up."
+      }
+    ]
+  },
+  {
+    "phrase": "pick up",
+    "meaning_vi": "nhặt lên",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Pick up the trash on the ground.",
+        "vi": "Nhặt rác trên mặt đất lên."
+      },
+      {
+        "en": "Can you pick up that bottle?",
+        "vi": "Bạn có thể nhặt cái chai đó lên không?"
+      }
+    ],
+    "collocations": [
+      "pick up litter",
+      "pick up cans",
+      "pick up plastic"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "There is a can on the floor."
+      },
+      {
+        "speaker": "B",
+        "text": "I will pick it up."
+      }
+    ]
+  },
+  {
+    "phrase": "save water",
+    "meaning_vi": "tiết kiệm nước",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "We should save water every day.",
+        "vi": "Chúng ta nên tiết kiệm nước mỗi ngày."
+      },
+      {
+        "en": "Turn off the tap to save water.",
+        "vi": "Tắt vòi nước để tiết kiệm nước."
+      }
+    ],
+    "collocations": [
+      "save water at home",
+      "save water in the shower",
+      "save water when brushing teeth"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Why do we save water?"
+      },
+      {
+        "speaker": "B",
+        "text": "Because water is precious."
+      }
+    ]
+  },
+  {
+    "phrase": "turn off",
+    "meaning_vi": "tắt",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Turn off the lights when you leave.",
+        "vi": "Tắt đèn khi bạn rời đi."
+      },
+      {
+        "en": "Please turn off the TV.",
+        "vi": "Làm ơn tắt TV."
+      }
+    ],
+    "collocations": [
+      "turn off the light",
+      "turn off the fan",
+      "turn off the computer"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Don't forget to turn off the lights."
+      },
+      {
+        "speaker": "B",
+        "text": "Okay, I will turn them off."
+      }
+    ]
+  },
+  {
+    "phrase": "plant trees",
+    "meaning_vi": "trồng cây",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "We plant trees in the garden.",
+        "vi": "Chúng tôi trồng cây trong vườn."
+      },
+      {
+        "en": "Planting trees helps the environment.",
+        "vi": "Trồng cây giúp ích cho môi trường."
+      }
+    ],
+    "collocations": [
+      "plant more trees",
+      "plant trees in the park",
+      "plant trees for shade"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What can we do for the environment?"
+      },
+      {
+        "speaker": "B",
+        "text": "We can plant trees."
+      }
+    ]
+  },
+  {
+    "phrase": "recycle paper",
+    "meaning_vi": "tái chế giấy",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "Please recycle paper and cardboard.",
+        "vi": "Làm ơn tái chế giấy và bìa cứng."
+      },
+      {
+        "en": "It is good to recycle paper.",
+        "vi": "Tái chế giấy là tốt."
+      }
+    ],
+    "collocations": [
+      "recycle paper bags",
+      "recycle old newspapers",
+      "recycle office paper"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What do you do with old paper?"
+      },
+      {
+        "speaker": "B",
+        "text": "I recycle it."
+      }
+    ]
+  },
+  {
+    "phrase": "protect the environment",
+    "meaning_vi": "bảo vệ môi trường",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "We must protect the environment.",
+        "vi": "Chúng ta phải bảo vệ môi trường."
+      },
+      {
+        "en": "Everyone can help protect the environment.",
+        "vi": "Mọi người đều có thể giúp bảo vệ môi trường."
+      }
+    ],
+    "collocations": [
+      "protect the environment for the future",
+      "protect the environment from pollution",
+      "protect the environment together"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Why is it important to protect the environment?"
+      },
+      {
+        "speaker": "B",
+        "text": "Because we live here."
+      }
+    ]
+  },
+  {
+    "phrase": "get together",
+    "meaning_vi": "tụ họp, gặp gỡ",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "We get together every weekend.",
+        "vi": "Chúng tôi tụ họp mỗi cuối tuần."
+      },
+      {
+        "en": "Let's get together for coffee.",
+        "vi": "Hãy gặp nhau uống cà phê nhé."
+      }
+    ],
+    "collocations": [
+      "get together with friends",
+      "family get-together",
+      "get together for dinner"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you want to get together this Saturday?"
+      },
+      {
+        "speaker": "B",
+        "text": "Sure, I'd love to."
+      }
+    ]
+  },
+  {
+    "phrase": "hang out",
+    "meaning_vi": "đi chơi, tụ tập",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I like to hang out with my friends.",
+        "vi": "Tôi thích đi chơi với bạn bè."
+      },
+      {
+        "en": "Where do you usually hang out?",
+        "vi": "Bạn thường tụ tập ở đâu?"
+      }
+    ],
+    "collocations": [
+      "hang out with friends",
+      "hang out at the mall",
+      "hang out together"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What do you do on weekends?"
+      },
+      {
+        "speaker": "B",
+        "text": "I hang out with my cousins."
+      }
+    ]
+  },
+  {
+    "phrase": "close friend",
+    "meaning_vi": "bạn thân",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "She is my close friend.",
+        "vi": "Cô ấy là bạn thân của tôi."
+      },
+      {
+        "en": "I have two close friends.",
+        "vi": "Tôi có hai người bạn thân."
+      }
+    ],
+    "collocations": [
+      "best friend",
+      "childhood friend",
+      "close family friend"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Is Tom your close friend?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, we've known each other for years."
+      }
+    ]
+  },
+  {
+    "phrase": "family member",
+    "meaning_vi": "thành viên trong gia đình",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "How many family members do you have?",
+        "vi": "Gia đình bạn có bao nhiêu người?"
+      },
+      {
+        "en": "All my family members live in Hanoi.",
+        "vi": "Tất cả thành viên gia đình tôi sống ở Hà Nội."
+      }
+    ],
+    "collocations": [
+      "immediate family member",
+      "close family member",
+      "family member's name"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you live with your family members?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I live with my parents and sister."
+      }
+    ]
+  },
+  {
+    "phrase": "take care of",
+    "meaning_vi": "chăm sóc",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I take care of my little brother.",
+        "vi": "Tôi chăm sóc em trai nhỏ của tôi."
+      },
+      {
+        "en": "She takes care of her grandparents.",
+        "vi": "Cô ấy chăm sóc ông bà của cô ấy."
+      }
+    ],
+    "collocations": [
+      "take care of the children",
+      "take care of a pet",
+      "take care of yourself"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Who takes care of your dog?"
+      },
+      {
+        "speaker": "B",
+        "text": "My mom takes care of him."
+      }
+    ]
+  },
+  {
+    "phrase": "look like",
+    "meaning_vi": "trông giống",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "You look like your mother.",
+        "vi": "Bạn trông giống mẹ của bạn."
+      },
+      {
+        "en": "What does he look like?",
+        "vi": "Anh ấy trông như thế nào?"
+      }
+    ],
+    "collocations": [
+      "look like someone",
+      "look like a model",
+      "look like a celebrity"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Does your brother look like you?"
+      },
+      {
+        "speaker": "B",
+        "text": "No, he looks like my father."
+      }
+    ]
+  },
+  {
+    "phrase": "get along with",
+    "meaning_vi": "hòa thuận với",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I get along with my sister.",
+        "vi": "Tôi hòa thuận với chị gái tôi."
+      },
+      {
+        "en": "Do you get along with your classmates?",
+        "vi": "Bạn có hòa thuận với bạn cùng lớp không?"
+      }
+    ],
+    "collocations": [
+      "get along well with",
+      "get along with everyone",
+      "get along with family"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How do you get along with your new roommate?"
+      },
+      {
+        "speaker": "B",
+        "text": "We get along very well."
+      }
+    ]
+  },
+  {
+    "phrase": "long time no see",
+    "meaning_vi": "lâu rồi không gặp",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "Long time no see! How are you?",
+        "vi": "Lâu rồi không gặp! Bạn khỏe không?"
+      },
+      {
+        "en": "Long time no see, my friend.",
+        "vi": "Lâu rồi không gặp, bạn tôi."
+      }
+    ],
+    "collocations": [
+      "long time no talk",
+      "long time no hear",
+      "long time no chat"
+    ],
+    "response": "Nice to see you again!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Hi, long time no see!"
+      },
+      {
+        "speaker": "B",
+        "text": "Yeah, it's been a while. How have you been?"
+      }
+    ]
+  },
+  {
+    "phrase": "feel happy",
+    "meaning_vi": "cảm thấy vui",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I feel happy today.",
+        "vi": "Hôm nay tôi cảm thấy vui."
+      },
+      {
+        "en": "She feels happy when she sees her friends.",
+        "vi": "Cô ấy cảm thấy vui khi gặp bạn bè."
+      }
+    ],
+    "collocations": [
+      "feel happy about",
+      "feel very happy",
+      "feel so happy"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How do you feel today?"
+      },
+      {
+        "speaker": "B",
+        "text": "I feel happy."
+      }
+    ]
+  },
+  {
+    "phrase": "feel sad",
+    "meaning_vi": "cảm thấy buồn",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "He feels sad when it rains.",
+        "vi": "Anh ấy cảm thấy buồn khi trời mưa."
+      },
+      {
+        "en": "Do you feel sad?",
+        "vi": "Bạn có cảm thấy buồn không?"
+      }
+    ],
+    "collocations": [
+      "feel sad about",
+      "feel a little sad",
+      "feel very sad"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "You look sad. Are you okay?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I feel a little sad today."
+      }
+    ]
+  },
+  {
+    "phrase": "be tired",
+    "meaning_vi": "mệt mỏi",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "I am tired after work.",
+        "vi": "Tôi mệt sau giờ làm."
+      },
+      {
+        "en": "Are you tired?",
+        "vi": "Bạn có mệt không?"
+      }
+    ],
+    "collocations": [
+      "be very tired",
+      "be so tired",
+      "be tired of"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How are you?"
+      },
+      {
+        "speaker": "B",
+        "text": "I'm tired. I worked a lot today."
+      }
+    ]
+  },
+  {
+    "phrase": "be hungry",
+    "meaning_vi": "đói bụng",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "I am hungry. Let's eat.",
+        "vi": "Tôi đói bụng. Ăn thôi."
+      },
+      {
+        "en": "She is hungry now.",
+        "vi": "Bây giờ cô ấy đói."
+      }
+    ],
+    "collocations": [
+      "be very hungry",
+      "be so hungry",
+      "be hungry for"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Are you hungry?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I'm very hungry."
+      }
+    ]
+  },
+  {
+    "phrase": "be thirsty",
+    "meaning_vi": "khát nước",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "I am thirsty. Can I have water?",
+        "vi": "Tôi khát nước. Cho tôi xin nước được không?"
+      },
+      {
+        "en": "After running, he is thirsty.",
+        "vi": "Sau khi chạy, anh ấy khát nước."
+      }
+    ],
+    "collocations": [
+      "be very thirsty",
+      "be so thirsty",
+      "be thirsty for"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you want something to drink?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I'm thirsty."
+      }
+    ]
+  },
+  {
+    "phrase": "be cold",
+    "meaning_vi": "lạnh",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "I am cold. Close the window.",
+        "vi": "Tôi lạnh. Đóng cửa sổ lại."
+      },
+      {
+        "en": "She is cold in winter.",
+        "vi": "Mùa đông cô ấy lạnh."
+      }
+    ],
+    "collocations": [
+      "be very cold",
+      "be so cold",
+      "be cold outside"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Are you cold?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I'm very cold."
+      }
+    ]
+  },
+  {
+    "phrase": "be hot",
+    "meaning_vi": "nóng",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "I am hot. Turn on the fan.",
+        "vi": "Tôi nóng. Bật quạt lên."
+      },
+      {
+        "en": "It is hot in summer.",
+        "vi": "Mùa hè trời nóng."
+      }
+    ],
+    "collocations": [
+      "be very hot",
+      "be so hot",
+      "be hot outside"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How do you feel?"
+      },
+      {
+        "speaker": "B",
+        "text": "I'm hot. Let's go inside."
+      }
+    ]
+  },
+  {
+    "phrase": "be scared",
+    "meaning_vi": "sợ hãi",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "I am scared of the dark.",
+        "vi": "Tôi sợ bóng tối."
+      },
+      {
+        "en": "She is scared of spiders.",
+        "vi": "Cô ấy sợ nhện."
+      }
+    ],
+    "collocations": [
+      "be very scared",
+      "be so scared",
+      "be scared of"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Are you scared?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I'm scared of the noise."
+      }
+    ]
+  },
+  {
+    "phrase": "have breakfast",
+    "meaning_vi": "ăn sáng",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I have breakfast at 7 o'clock.",
+        "vi": "Tôi ăn sáng lúc 7 giờ."
+      },
+      {
+        "en": "Do you have breakfast every day?",
+        "vi": "Bạn có ăn sáng mỗi ngày không?"
+      }
+    ],
+    "collocations": [
+      "have a big breakfast",
+      "have a light breakfast",
+      "have breakfast together"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What time do you have breakfast?"
+      },
+      {
+        "speaker": "B",
+        "text": "I have breakfast at 7."
+      }
+    ]
+  },
+  {
+    "phrase": "drink water",
+    "meaning_vi": "uống nước",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "You should drink water every day.",
+        "vi": "Bạn nên uống nước mỗi ngày."
+      },
+      {
+        "en": "I drink water after exercise.",
+        "vi": "Tôi uống nước sau khi tập thể dục."
+      }
+    ],
+    "collocations": [
+      "drink cold water",
+      "drink warm water",
+      "drink a glass of water"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you drink water in the morning?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I drink a glass of water."
+      }
+    ]
+  },
+  {
+    "phrase": "order food",
+    "meaning_vi": "gọi món",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "Let's order food from the restaurant.",
+        "vi": "Hãy gọi món từ nhà hàng."
+      },
+      {
+        "en": "I want to order food now.",
+        "vi": "Tôi muốn gọi món ngay bây giờ."
+      }
+    ],
+    "collocations": [
+      "order food online",
+      "order food for delivery",
+      "order food at the counter"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What do you want to eat?"
+      },
+      {
+        "speaker": "B",
+        "text": "I want to order food from the menu."
+      }
+    ]
+  },
+  {
+    "phrase": "cook dinner",
+    "meaning_vi": "nấu bữa tối",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I cook dinner for my family.",
+        "vi": "Tôi nấu bữa tối cho gia đình."
+      },
+      {
+        "en": "She cooks dinner every evening.",
+        "vi": "Cô ấy nấu bữa tối mỗi tối."
+      }
+    ],
+    "collocations": [
+      "cook a simple dinner",
+      "cook dinner together",
+      "cook dinner at home"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What time do you cook dinner?"
+      },
+      {
+        "speaker": "B",
+        "text": "I cook dinner at 6 pm."
+      }
+    ]
+  },
+  {
+    "phrase": "eat out",
+    "meaning_vi": "ăn ngoài",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "We eat out on weekends.",
+        "vi": "Chúng tôi ăn ngoài vào cuối tuần."
+      },
+      {
+        "en": "Do you like to eat out?",
+        "vi": "Bạn có thích ăn ngoài không?"
+      }
+    ],
+    "collocations": [
+      "eat out often",
+      "eat out with friends",
+      "eat out at a restaurant"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Let's eat out tonight."
+      },
+      {
+        "speaker": "B",
+        "text": "Great idea! Where do you want to go?"
+      }
+    ]
+  },
+  {
+    "phrase": "go for coffee",
+    "meaning_vi": "đi uống cà phê",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "Let's go for coffee after work.",
+        "vi": "Hãy đi uống cà phê sau giờ làm."
+      },
+      {
+        "en": "She goes for coffee every morning.",
+        "vi": "Cô ấy đi uống cà phê mỗi sáng."
+      }
+    ],
+    "collocations": [
+      "go for a coffee",
+      "go for coffee with friends",
+      "go for coffee to relax"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you want to go for coffee?"
+      },
+      {
+        "speaker": "B",
+        "text": "Sure, I love coffee."
+      }
+    ]
+  },
+  {
+    "phrase": "feel hungry",
+    "meaning_vi": "cảm thấy đói",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "I feel hungry now.",
+        "vi": "Tôi cảm thấy đói bây giờ."
+      },
+      {
+        "en": "Do you feel hungry?",
+        "vi": "Bạn có cảm thấy đói không?"
+      }
+    ],
+    "collocations": [
+      "feel very hungry",
+      "feel a little hungry",
+      "feel hungry for lunch"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Are you hungry?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I feel hungry. Let's eat."
+      }
+    ]
+  },
+  {
+    "phrase": "have a sweet tooth",
+    "meaning_vi": "thích đồ ngọt",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "I have a sweet tooth, so I love cake.",
+        "vi": "Tôi thích đồ ngọt, nên tôi thích bánh ngọt."
+      },
+      {
+        "en": "She has a sweet tooth and eats chocolate every day.",
+        "vi": "Cô ấy thích đồ ngọt và ăn sô-cô-la mỗi ngày."
+      }
+    ],
+    "collocations": [
+      "have a big sweet tooth",
+      "have a terrible sweet tooth",
+      "have a sweet tooth for ice cream"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you want some dessert?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I have a sweet tooth."
+      }
+    ]
+  },
+  {
+    "phrase": "wake up",
+    "meaning_vi": "thức dậy",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I wake up at 7 every day.",
+        "vi": "Tôi thức dậy lúc 7 giờ mỗi ngày."
+      },
+      {
+        "en": "She wakes up early.",
+        "vi": "Cô ấy thức dậy sớm."
+      }
+    ],
+    "collocations": [
+      "wake up early",
+      "wake up late",
+      "wake up suddenly"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What time do you wake up?"
+      },
+      {
+        "speaker": "B",
+        "text": "I wake up at 6."
+      }
+    ]
+  },
+  {
+    "phrase": "go to bed",
+    "meaning_vi": "đi ngủ",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I go to bed at 10 pm.",
+        "vi": "Tôi đi ngủ lúc 10 giờ tối."
+      },
+      {
+        "en": "You should go to bed early.",
+        "vi": "Bạn nên đi ngủ sớm."
+      }
+    ],
+    "collocations": [
+      "go to bed early",
+      "go to bed late",
+      "go to bed at 9"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "When do you go to bed?"
+      },
+      {
+        "speaker": "B",
+        "text": "I go to bed at 11."
+      }
+    ]
+  },
+  {
+    "phrase": "feel better",
+    "meaning_vi": "cảm thấy khỏe hơn",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "I feel better now.",
+        "vi": "Bây giờ tôi cảm thấy khỏe hơn."
+      },
+      {
+        "en": "Do you feel better?",
+        "vi": "Bạn cảm thấy khỏe hơn chưa?"
+      }
+    ],
+    "collocations": [
+      "feel better soon",
+      "feel much better",
+      "feel a little better"
+    ],
+    "response": "I'm fine, thanks.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How are you?"
+      },
+      {
+        "speaker": "B",
+        "text": "I feel better now, thanks."
+      }
+    ]
+  },
+  {
+    "phrase": "take medicine",
+    "meaning_vi": "uống thuốc",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I take medicine every morning.",
+        "vi": "Tôi uống thuốc mỗi sáng."
+      },
+      {
+        "en": "Did you take your medicine?",
+        "vi": "Bạn đã uống thuốc chưa?"
+      }
+    ],
+    "collocations": [
+      "take medicine for a cold",
+      "take medicine after meals",
+      "take liquid medicine"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you take medicine?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I take medicine for my headache."
+      }
+    ]
+  },
+  {
+    "phrase": "have a cold",
+    "meaning_vi": "bị cảm",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "I have a cold.",
+        "vi": "Tôi bị cảm."
+      },
+      {
+        "en": "She has a bad cold.",
+        "vi": "Cô ấy bị cảm nặng."
+      }
+    ],
+    "collocations": [
+      "have a cold",
+      "catch a cold",
+      "get over a cold"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "You look tired. What's wrong?"
+      },
+      {
+        "speaker": "B",
+        "text": "I have a cold."
+      }
+    ]
+  },
+  {
+    "phrase": "brush teeth",
+    "meaning_vi": "đánh răng",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I brush my teeth twice a day.",
+        "vi": "Tôi đánh răng hai lần một ngày."
+      },
+      {
+        "en": "Don't forget to brush your teeth.",
+        "vi": "Đừng quên đánh răng."
+      }
+    ],
+    "collocations": [
+      "brush teeth after meals",
+      "brush teeth before bed",
+      "brush teeth with toothpaste"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you brush your teeth every night?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I brush my teeth before I go to bed."
+      }
+    ]
+  },
+  {
+    "phrase": "work out",
+    "meaning_vi": "tập thể dục",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I work out at the gym.",
+        "vi": "Tôi tập thể dục ở phòng gym."
+      },
+      {
+        "en": "She works out every day.",
+        "vi": "Cô ấy tập thể dục mỗi ngày."
+      }
+    ],
+    "collocations": [
+      "work out regularly",
+      "work out at home",
+      "work out with friends"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Where do you work out?"
+      },
+      {
+        "speaker": "B",
+        "text": "I work out at home."
+      }
+    ]
+  },
+  {
+    "phrase": "stay healthy",
+    "meaning_vi": "giữ sức khỏe",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "Eat well to stay healthy.",
+        "vi": "Ăn uống tốt để giữ sức khỏe."
+      },
+      {
+        "en": "Exercise helps you stay healthy.",
+        "vi": "Tập thể dục giúp bạn giữ sức khỏe."
+      }
+    ],
+    "collocations": [
+      "stay healthy and strong",
+      "stay healthy by eating right",
+      "stay healthy during winter"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How do you stay healthy?"
+      },
+      {
+        "speaker": "B",
+        "text": "I eat well and work out."
+      }
+    ]
+  },
+  {
+    "phrase": "listen to music",
+    "meaning_vi": "nghe nhạc",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I listen to music every day.",
+        "vi": "Tôi nghe nhạc mỗi ngày."
+      },
+      {
+        "en": "Do you like to listen to music?",
+        "vi": "Bạn có thích nghe nhạc không?"
+      }
+    ],
+    "collocations": [
+      "listen to pop music",
+      "listen to classical music",
+      "listen to music on the radio"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What do you do in your free time?"
+      },
+      {
+        "speaker": "B",
+        "text": "I listen to music."
+      }
+    ]
+  },
+  {
+    "phrase": "watch TV",
+    "meaning_vi": "xem tivi",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I watch TV in the evening.",
+        "vi": "Tôi xem tivi vào buổi tối."
+      },
+      {
+        "en": "She watches TV after dinner.",
+        "vi": "Cô ấy xem tivi sau bữa tối."
+      }
+    ],
+    "collocations": [
+      "watch TV shows",
+      "watch TV at home",
+      "watch TV with family"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you watch TV a lot?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I watch TV every night."
+      }
+    ]
+  },
+  {
+    "phrase": "play sports",
+    "meaning_vi": "chơi thể thao",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I play sports on weekends.",
+        "vi": "Tôi chơi thể thao vào cuối tuần."
+      },
+      {
+        "en": "He plays sports like soccer and basketball.",
+        "vi": "Anh ấy chơi các môn thể thao như bóng đá và bóng rổ."
+      }
+    ],
+    "collocations": [
+      "play soccer",
+      "play tennis",
+      "play basketball"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What sports do you play?"
+      },
+      {
+        "speaker": "B",
+        "text": "I play soccer."
+      }
+    ]
+  },
+  {
+    "phrase": "read a book",
+    "meaning_vi": "đọc sách",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I read a book before bed.",
+        "vi": "Tôi đọc sách trước khi đi ngủ."
+      },
+      {
+        "en": "She reads a book every week.",
+        "vi": "Cô ấy đọc một cuốn sách mỗi tuần."
+      }
+    ],
+    "collocations": [
+      "read a novel",
+      "read a magazine",
+      "read a story"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you like to read books?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I read a book every day."
+      }
+    ]
+  },
+  {
+    "phrase": "go for a walk",
+    "meaning_vi": "đi dạo",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "I go for a walk in the park.",
+        "vi": "Tôi đi dạo trong công viên."
+      },
+      {
+        "en": "Let's go for a walk after lunch.",
+        "vi": "Chúng ta hãy đi dạo sau bữa trưa."
+      }
+    ],
+    "collocations": [
+      "go for a walk in the morning",
+      "go for a walk with friends",
+      "go for a walk after dinner"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What do you want to do?"
+      },
+      {
+        "speaker": "B",
+        "text": "Let's go for a walk."
+      }
+    ]
+  },
+  {
+    "phrase": "take photos",
+    "meaning_vi": "chụp ảnh",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I take photos of flowers.",
+        "vi": "Tôi chụp ảnh hoa."
+      },
+      {
+        "en": "She takes photos on her phone.",
+        "vi": "Cô ấy chụp ảnh bằng điện thoại."
+      }
+    ],
+    "collocations": [
+      "take photos of nature",
+      "take photos with friends",
+      "take photos on vacation"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you like to take photos?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I take photos every day."
+      }
+    ]
+  },
+  {
+    "phrase": "cook dinner",
+    "meaning_vi": "nấu bữa tối",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I cook dinner for my family.",
+        "vi": "Tôi nấu bữa tối cho gia đình."
+      },
+      {
+        "en": "She cooks dinner at six o'clock.",
+        "vi": "Cô ấy nấu bữa tối lúc sáu giờ."
+      }
+    ],
+    "collocations": [
+      "cook dinner together",
+      "cook dinner at home",
+      "cook dinner quickly"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What do you do in the evening?"
+      },
+      {
+        "speaker": "B",
+        "text": "I cook dinner."
+      }
+    ]
+  },
+  {
+    "phrase": "hang out with friends",
+    "meaning_vi": "đi chơi với bạn bè",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "I hang out with friends on Saturday.",
+        "vi": "Tôi đi chơi với bạn bè vào thứ Bảy."
+      },
+      {
+        "en": "We hang out with friends at the mall.",
+        "vi": "Chúng tôi đi chơi với bạn bè ở trung tâm thương mại."
+      }
+    ],
+    "collocations": [
+      "hang out with friends after school",
+      "hang out with friends at the park",
+      "hang out with friends on weekends"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What do you do on weekends?"
+      },
+      {
+        "speaker": "B",
+        "text": "I hang out with friends."
+      }
+    ]
+  },
+  {
+    "phrase": "get up",
+    "meaning_vi": "thức dậy",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I get up at 6 every morning.",
+        "vi": "Tôi thức dậy lúc 6 giờ mỗi sáng."
+      },
+      {
+        "en": "What time do you get up?",
+        "vi": "Bạn thức dậy lúc mấy giờ?"
+      }
+    ],
+    "collocations": [
+      "get up early",
+      "get up late",
+      "get up on time"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What time do you usually get up?"
+      },
+      {
+        "speaker": "B",
+        "text": "I usually get up at seven."
+      }
+    ]
+  },
+  {
+    "phrase": "go to bed",
+    "meaning_vi": "đi ngủ",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I go to bed at 10 p.m.",
+        "vi": "Tôi đi ngủ lúc 10 giờ tối."
+      },
+      {
+        "en": "She goes to bed early.",
+        "vi": "Cô ấy đi ngủ sớm."
+      }
+    ],
+    "collocations": [
+      "go to bed early",
+      "go to bed late",
+      "go to bed at 11"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What time do you go to bed?"
+      },
+      {
+        "speaker": "B",
+        "text": "I go to bed at 10."
+      }
+    ]
+  },
+  {
+    "phrase": "make the bed",
+    "meaning_vi": "dọn giường",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I make the bed every morning.",
+        "vi": "Tôi dọn giường mỗi sáng."
+      },
+      {
+        "en": "Please make your bed.",
+        "vi": "Làm ơn dọn giường của bạn."
+      }
+    ],
+    "collocations": [
+      "make the bed",
+      "make my bed",
+      "make your bed"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you make your bed?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I make it every day."
+      }
+    ]
+  },
+  {
+    "phrase": "do the dishes",
+    "meaning_vi": "rửa bát",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I do the dishes after dinner.",
+        "vi": "Tôi rửa bát sau bữa tối."
+      },
+      {
+        "en": "Who does the dishes in your house?",
+        "vi": "Ai rửa bát trong nhà bạn?"
+      }
+    ],
+    "collocations": [
+      "do the dishes",
+      "wash the dishes",
+      "do the washing-up"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Can you do the dishes?"
+      },
+      {
+        "speaker": "B",
+        "text": "Sure, I'll do them now."
+      }
+    ]
+  },
+  {
+    "phrase": "take a shower",
+    "meaning_vi": "tắm vòi sen",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I take a shower in the morning.",
+        "vi": "Tôi tắm vòi sen vào buổi sáng."
+      },
+      {
+        "en": "She takes a shower before bed.",
+        "vi": "Cô ấy tắm vòi sen trước khi đi ngủ."
+      }
+    ],
+    "collocations": [
+      "take a shower",
+      "take a bath",
+      "have a shower"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you take a shower in the morning?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I always take a shower."
+      }
+    ]
+  },
+  {
+    "phrase": "come home",
+    "meaning_vi": "về nhà",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I come home at 5 p.m.",
+        "vi": "Tôi về nhà lúc 5 giờ chiều."
+      },
+      {
+        "en": "When do you come home?",
+        "vi": "Khi nào bạn về nhà?"
+      }
+    ],
+    "collocations": [
+      "come home late",
+      "come home early",
+      "come home from work"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What time do you come home?"
+      },
+      {
+        "speaker": "B",
+        "text": "I come home at six."
+      }
+    ]
+  },
+  {
+    "phrase": "turn on the light",
+    "meaning_vi": "bật đèn",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "Please turn on the light.",
+        "vi": "Làm ơn bật đèn lên."
+      },
+      {
+        "en": "I turn on the light when I enter the room.",
+        "vi": "Tôi bật đèn khi vào phòng."
+      }
+    ],
+    "collocations": [
+      "turn on the light",
+      "turn off the light",
+      "switch on the light"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "It's dark. Can you turn on the light?"
+      },
+      {
+        "speaker": "B",
+        "text": "Sure, I'll turn it on."
+      }
+    ]
+  },
+  {
+    "phrase": "wash the clothes",
+    "meaning_vi": "giặt quần áo",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I wash the clothes on Sunday.",
+        "vi": "Tôi giặt quần áo vào Chủ nhật."
+      },
+      {
+        "en": "She washes the clothes by hand.",
+        "vi": "Cô ấy giặt quần áo bằng tay."
+      }
+    ],
+    "collocations": [
+      "wash the clothes",
+      "do the laundry",
+      "wash clothes"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "When do you wash the clothes?"
+      },
+      {
+        "speaker": "B",
+        "text": "I wash them on weekends."
+      }
+    ]
+  },
+  {
+    "phrase": "how much",
+    "meaning_vi": "bao nhiêu (giá cả)",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "How much is this book?",
+        "vi": "Cuốn sách này bao nhiêu tiền?"
+      },
+      {
+        "en": "How much does it cost?",
+        "vi": "Nó giá bao nhiêu?"
+      }
+    ],
+    "collocations": [
+      "how much is",
+      "how much does",
+      "how much money"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How much is this shirt?"
+      },
+      {
+        "speaker": "B",
+        "text": "It's twenty dollars."
+      }
+    ]
+  },
+  {
+    "phrase": "how many",
+    "meaning_vi": "bao nhiêu (số lượng)",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "How many apples do you want?",
+        "vi": "Bạn muốn bao nhiêu quả táo?"
+      },
+      {
+        "en": "How many students are there?",
+        "vi": "Có bao nhiêu học sinh?"
+      }
+    ],
+    "collocations": [
+      "how many people",
+      "how many books",
+      "how many days"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How many chairs do we need?"
+      },
+      {
+        "speaker": "B",
+        "text": "We need four chairs."
+      }
+    ]
+  },
+  {
+    "phrase": "a lot of",
+    "meaning_vi": "nhiều",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I have a lot of friends.",
+        "vi": "Tôi có nhiều bạn."
+      },
+      {
+        "en": "There is a lot of water.",
+        "vi": "Có nhiều nước."
+      }
+    ],
+    "collocations": [
+      "a lot of people",
+      "a lot of time",
+      "a lot of money"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you have a lot of homework?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I have a lot of homework."
+      }
+    ]
+  },
+  {
+    "phrase": "a little",
+    "meaning_vi": "một ít",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I need a little sugar.",
+        "vi": "Tôi cần một ít đường."
+      },
+      {
+        "en": "She speaks a little English.",
+        "vi": "Cô ấy nói được một ít tiếng Anh."
+      }
+    ],
+    "collocations": [
+      "a little bit",
+      "a little more",
+      "a little water"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you want some milk?"
+      },
+      {
+        "speaker": "B",
+        "text": "Just a little, please."
+      }
+    ]
+  },
+  {
+    "phrase": "more than",
+    "meaning_vi": "nhiều hơn",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "I have more than ten books.",
+        "vi": "Tôi có hơn mười cuốn sách."
+      },
+      {
+        "en": "It costs more than five dollars.",
+        "vi": "Nó có giá hơn năm đô la."
+      }
+    ],
+    "collocations": [
+      "more than enough",
+      "more than that",
+      "more than one"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How many people are coming?"
+      },
+      {
+        "speaker": "B",
+        "text": "More than twenty."
+      }
+    ]
+  },
+  {
+    "phrase": "less than",
+    "meaning_vi": "ít hơn",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "I have less than five dollars.",
+        "vi": "Tôi có ít hơn năm đô la."
+      },
+      {
+        "en": "It's less than one kilometer.",
+        "vi": "Nó ít hơn một cây số."
+      }
+    ],
+    "collocations": [
+      "less than half",
+      "less than a minute",
+      "less than that"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Is it far?"
+      },
+      {
+        "speaker": "B",
+        "text": "No, it's less than two kilometers."
+      }
+    ]
+  },
+  {
+    "phrase": "a couple of",
+    "meaning_vi": "một vài",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I need a couple of minutes.",
+        "vi": "Tôi cần một vài phút."
+      },
+      {
+        "en": "She bought a couple of apples.",
+        "vi": "Cô ấy mua một vài quả táo."
+      }
+    ],
+    "collocations": [
+      "a couple of days",
+      "a couple of hours",
+      "a couple of people"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Can you wait a couple of minutes?"
+      },
+      {
+        "speaker": "B",
+        "text": "Sure, no problem."
+      }
+    ]
+  },
+  {
+    "phrase": "how long",
+    "meaning_vi": "bao lâu",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "How long is the movie?",
+        "vi": "Bộ phim dài bao lâu?"
+      },
+      {
+        "en": "How long does it take?",
+        "vi": "Mất bao lâu?"
+      }
+    ],
+    "collocations": [
+      "how long does",
+      "how long is",
+      "how long will"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How long is the flight?"
+      },
+      {
+        "speaker": "B",
+        "text": "It's about three hours."
+      }
+    ]
+  },
+  {
+    "phrase": "go to",
+    "meaning_vi": "đi đến",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I go to school every day.",
+        "vi": "Tôi đi đến trường mỗi ngày."
+      },
+      {
+        "en": "She goes to work by bus.",
+        "vi": "Cô ấy đi làm bằng xe buýt."
+      }
+    ],
+    "collocations": [
+      "go to school",
+      "go to work",
+      "go to the market"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Where do you go every morning?"
+      },
+      {
+        "speaker": "B",
+        "text": "I go to school."
+      }
+    ]
+  },
+  {
+    "phrase": "live in",
+    "meaning_vi": "sống ở",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I live in a small house.",
+        "vi": "Tôi sống trong một ngôi nhà nhỏ."
+      },
+      {
+        "en": "They live in the city.",
+        "vi": "Họ sống ở thành phố."
+      }
+    ],
+    "collocations": [
+      "live in a house",
+      "live in an apartment",
+      "live in a village"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Where do you live?"
+      },
+      {
+        "speaker": "B",
+        "text": "I live in a big city."
+      }
+    ]
+  },
+  {
+    "phrase": "near here",
+    "meaning_vi": "gần đây",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "Is there a supermarket near here?",
+        "vi": "Có siêu thị nào gần đây không?"
+      },
+      {
+        "en": "The park is near here.",
+        "vi": "Công viên ở gần đây."
+      }
+    ],
+    "collocations": [
+      "near here",
+      "far from here",
+      "close to here"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Is there a bus stop near here?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, it's near here."
+      }
+    ]
+  },
+  {
+    "phrase": "turn left",
+    "meaning_vi": "rẽ trái",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Turn left at the traffic light.",
+        "vi": "Rẽ trái ở đèn giao thông."
+      },
+      {
+        "en": "Please turn left here.",
+        "vi": "Làm ơn rẽ trái ở đây."
+      }
+    ],
+    "collocations": [
+      "turn left",
+      "turn right",
+      "go straight"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How do I get to the station?"
+      },
+      {
+        "speaker": "B",
+        "text": "Turn left at the corner."
+      }
+    ]
+  },
+  {
+    "phrase": "on the corner",
+    "meaning_vi": "ở góc",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "The bank is on the corner.",
+        "vi": "Ngân hàng ở góc phố."
+      },
+      {
+        "en": "There is a café on the corner.",
+        "vi": "Có một quán cà phê ở góc."
+      }
+    ],
+    "collocations": [
+      "on the corner",
+      "at the corner",
+      "around the corner"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Where is the post office?"
+      },
+      {
+        "speaker": "B",
+        "text": "It's on the corner of Main Street."
+      }
+    ]
+  },
+  {
+    "phrase": "go straight",
+    "meaning_vi": "đi thẳng",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Go straight for two blocks.",
+        "vi": "Đi thẳng hai dãy nhà."
+      },
+      {
+        "en": "You need to go straight ahead.",
+        "vi": "Bạn cần đi thẳng về phía trước."
+      }
+    ],
+    "collocations": [
+      "go straight",
+      "go straight ahead",
+      "keep going straight"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Excuse me, where is the hospital?"
+      },
+      {
+        "speaker": "B",
+        "text": "Go straight and you will see it."
+      }
+    ]
+  },
+  {
+    "phrase": "next to",
+    "meaning_vi": "bên cạnh",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "The library is next to the school.",
+        "vi": "Thư viện ở bên cạnh trường học."
+      },
+      {
+        "en": "My house is next to a park.",
+        "vi": "Nhà tôi ở bên cạnh một công viên."
+      }
+    ],
+    "collocations": [
+      "next to",
+      "beside",
+      "near"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Where is the pharmacy?"
+      },
+      {
+        "speaker": "B",
+        "text": "It's next to the supermarket."
+      }
+    ]
+  },
+  {
+    "phrase": "across from",
+    "meaning_vi": "đối diện",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "The restaurant is across from the bank.",
+        "vi": "Nhà hàng ở đối diện ngân hàng."
+      },
+      {
+        "en": "There is a hotel across from the station.",
+        "vi": "Có một khách sạn đối diện nhà ga."
+      }
+    ],
+    "collocations": [
+      "across from",
+      "opposite",
+      "facing"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Is there a café near here?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, across from the park."
+      }
+    ]
+  },
+  {
+    "phrase": "wake up",
+    "meaning_vi": "thức dậy",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I wake up at 7 AM.",
+        "vi": "Tôi thức dậy lúc 7 giờ sáng."
+      },
+      {
+        "en": "She wakes up early every day.",
+        "vi": "Cô ấy thức dậy sớm mỗi ngày."
+      }
+    ],
+    "collocations": [
+      "wake up early",
+      "wake up late",
+      "wake up to an alarm"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What time do you wake up?"
+      },
+      {
+        "speaker": "B",
+        "text": "I wake up at six."
+      }
+    ]
+  },
+  {
+    "phrase": "get up",
+    "meaning_vi": "ngồi dậy, đứng dậy",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I get up after waking up.",
+        "vi": "Tôi ngồi dậy sau khi thức dậy."
+      },
+      {
+        "en": "Please get up from the chair.",
+        "vi": "Làm ơn đứng dậy khỏi ghế."
+      }
+    ],
+    "collocations": [
+      "get up slowly",
+      "get up quickly",
+      "get up from bed"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Are you still in bed? Get up!"
+      },
+      {
+        "speaker": "B",
+        "text": "Okay, I'm getting up now."
+      }
+    ]
+  },
+  {
+    "phrase": "turn on",
+    "meaning_vi": "bật (thiết bị)",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Please turn on the light.",
+        "vi": "Làm ơn bật đèn lên."
+      },
+      {
+        "en": "I turn on the TV every evening.",
+        "vi": "Tôi bật TV mỗi tối."
+      }
+    ],
+    "collocations": [
+      "turn on the light",
+      "turn on the TV",
+      "turn on the computer"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "It's dark. Can you turn on the light?"
+      },
+      {
+        "speaker": "B",
+        "text": "Sure, I'll turn it on."
+      }
+    ]
+  },
+  {
+    "phrase": "turn off",
+    "meaning_vi": "tắt (thiết bị)",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Please turn off the fan.",
+        "vi": "Làm ơn tắt quạt."
+      },
+      {
+        "en": "Don't forget to turn off the lights.",
+        "vi": "Đừng quên tắt đèn."
+      }
+    ],
+    "collocations": [
+      "turn off the light",
+      "turn off the TV",
+      "turn off the tap"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Please turn off the TV before you leave."
+      },
+      {
+        "speaker": "B",
+        "text": "Okay, I'll turn it off."
+      }
+    ]
+  },
+  {
+    "phrase": "look for",
+    "meaning_vi": "tìm kiếm",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I am looking for my keys.",
+        "vi": "Tôi đang tìm chìa khóa của tôi."
+      },
+      {
+        "en": "She is looking for a job.",
+        "vi": "Cô ấy đang tìm việc."
+      }
+    ],
+    "collocations": [
+      "look for a job",
+      "look for a place",
+      "look for something"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What are you looking for?"
+      },
+      {
+        "speaker": "B",
+        "text": "I'm looking for my phone."
+      }
+    ]
+  },
+  {
+    "phrase": "wait for",
+    "meaning_vi": "chờ đợi",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Please wait for me.",
+        "vi": "Làm ơn chờ tôi."
+      },
+      {
+        "en": "They are waiting for the bus.",
+        "vi": "Họ đang chờ xe buýt."
+      }
+    ],
+    "collocations": [
+      "wait for someone",
+      "wait for the bus",
+      "wait for a response"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Are you waiting for someone?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I'm waiting for my friend."
+      }
+    ]
+  },
+  {
+    "phrase": "pay for",
+    "meaning_vi": "trả tiền cho",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I will pay for the meal.",
+        "vi": "Tôi sẽ trả tiền bữa ăn."
+      },
+      {
+        "en": "She paid for the ticket.",
+        "vi": "Cô ấy đã trả tiền vé."
+      }
+    ],
+    "collocations": [
+      "pay for dinner",
+      "pay for the ticket",
+      "pay for the service"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How much did you pay for this?"
+      },
+      {
+        "speaker": "B",
+        "text": "I paid ten dollars."
+      }
+    ]
+  },
+  {
+    "phrase": "ask for",
+    "meaning_vi": "yêu cầu, hỏi xin",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Can I ask for the bill?",
+        "vi": "Tôi có thể yêu cầu hóa đơn không?"
+      },
+      {
+        "en": "She asked for help.",
+        "vi": "Cô ấy đã yêu cầu giúp đỡ."
+      }
+    ],
+    "collocations": [
+      "ask for help",
+      "ask for the bill",
+      "ask for directions"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What did you ask for?"
+      },
+      {
+        "speaker": "B",
+        "text": "I asked for a glass of water."
+      }
+    ]
+  },
+  {
+    "phrase": "go shopping",
+    "meaning_vi": "đi mua sắm",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I go shopping every Saturday.",
+        "vi": "Tôi đi mua sắm mỗi thứ Bảy."
+      },
+      {
+        "en": "Do you want to go shopping with me?",
+        "vi": "Bạn có muốn đi mua sắm với tôi không?"
+      }
+    ],
+    "collocations": [
+      "go shopping for clothes",
+      "go grocery shopping",
+      "go window shopping"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Let's go shopping this afternoon."
+      },
+      {
+        "speaker": "B",
+        "text": "Great! I need to buy a new dress."
+      }
+    ]
+  },
+  {
+    "phrase": "pay for",
+    "meaning_vi": "trả tiền cho",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I will pay for the groceries.",
+        "vi": "Tôi sẽ trả tiền cho đồ tạp hóa."
+      },
+      {
+        "en": "Who pays for the dinner?",
+        "vi": "Ai trả tiền cho bữa tối?"
+      }
+    ],
+    "collocations": [
+      "pay for the items",
+      "pay for the meal",
+      "pay for the ticket"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How much is this?"
+      },
+      {
+        "speaker": "B",
+        "text": "It's 20 dollars. I'll pay for it."
+      }
+    ]
+  },
+  {
+    "phrase": "try on",
+    "meaning_vi": "mặc thử",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Can I try on this shirt?",
+        "vi": "Tôi có thể mặc thử cái áo này không?"
+      },
+      {
+        "en": "She is trying on a pair of shoes.",
+        "vi": "Cô ấy đang thử một đôi giày."
+      }
+    ],
+    "collocations": [
+      "try on clothes",
+      "try on shoes",
+      "try on a dress"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I like this jacket. Can I try it on?"
+      },
+      {
+        "speaker": "B",
+        "text": "Sure, the fitting room is over there."
+      }
+    ]
+  },
+  {
+    "phrase": "on sale",
+    "meaning_vi": "đang giảm giá",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "This dress is on sale today.",
+        "vi": "Cái váy này đang giảm giá hôm nay."
+      },
+      {
+        "en": "I bought this bag on sale.",
+        "vi": "Tôi mua cái túi này khi giảm giá."
+      }
+    ],
+    "collocations": [
+      "on sale for 50% off",
+      "on sale now",
+      "buy on sale"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Is this on sale?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, it's 30% off."
+      }
+    ]
+  },
+  {
+    "phrase": "how much",
+    "meaning_vi": "bao nhiêu tiền",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "How much is this book?",
+        "vi": "Cuốn sách này bao nhiêu tiền?"
+      },
+      {
+        "en": "How much does it cost?",
+        "vi": "Nó có giá bao nhiêu?"
+      }
+    ],
+    "collocations": [
+      "how much is it",
+      "how much are they",
+      "how much does it cost"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Excuse me, how much is this T-shirt?"
+      },
+      {
+        "speaker": "B",
+        "text": "It's 15 dollars."
+      }
+    ]
+  },
+  {
+    "phrase": "look for",
+    "meaning_vi": "tìm kiếm",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I am looking for a gift.",
+        "vi": "Tôi đang tìm một món quà."
+      },
+      {
+        "en": "What are you looking for?",
+        "vi": "Bạn đang tìm gì vậy?"
+      }
+    ],
+    "collocations": [
+      "look for a present",
+      "look for a size",
+      "look for something"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Can I help you?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I'm looking for a red dress."
+      }
+    ]
+  },
+  {
+    "phrase": "buy one get one free",
+    "meaning_vi": "mua một tặng một",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "These shoes are buy one get one free.",
+        "vi": "Đôi giày này mua một tặng một."
+      },
+      {
+        "en": "There is a buy one get one free offer.",
+        "vi": "Có chương trình mua một tặng một."
+      }
+    ],
+    "collocations": [
+      "buy one get one free offer",
+      "buy one get one free deal",
+      "BOGO"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Why are there two shirts?"
+      },
+      {
+        "speaker": "B",
+        "text": "It's buy one get one free."
+      }
+    ]
+  },
+  {
+    "phrase": "take it",
+    "meaning_vi": "lấy cái đó (mua)",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "I'll take it.",
+        "vi": "Tôi lấy cái đó."
+      },
+      {
+        "en": "She decided to take the red one.",
+        "vi": "Cô ấy quyết định lấy cái màu đỏ."
+      }
+    ],
+    "collocations": [
+      "I'll take it",
+      "take the blue one",
+      "take this"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "This is 10 dollars."
+      },
+      {
+        "speaker": "B",
+        "text": "Okay, I'll take it."
+      }
+    ]
+  },
+  {
+    "phrase": "live in",
+    "meaning_vi": "sống ở",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I live in a small house.",
+        "vi": "Tôi sống trong một ngôi nhà nhỏ."
+      },
+      {
+        "en": "Where do you live?",
+        "vi": "Bạn sống ở đâu?"
+      }
+    ],
+    "collocations": [
+      "live in a city",
+      "live in the countryside",
+      "live in an apartment"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you live in the city?"
+      },
+      {
+        "speaker": "B",
+        "text": "No, I live in the countryside."
+      }
+    ]
+  },
+  {
+    "phrase": "neighbor",
+    "meaning_vi": "hàng xóm",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "My neighbor is very friendly.",
+        "vi": "Hàng xóm của tôi rất thân thiện."
+      },
+      {
+        "en": "We have new neighbors.",
+        "vi": "Chúng tôi có hàng xóm mới."
+      }
+    ],
+    "collocations": [
+      "good neighbor",
+      "next-door neighbor",
+      "neighbor's house"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Who is your neighbor?"
+      },
+      {
+        "speaker": "B",
+        "text": "Mr. Smith is my neighbor."
+      }
+    ]
+  },
+  {
+    "phrase": "go to school",
+    "meaning_vi": "đi học",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I go to school by bus.",
+        "vi": "Tôi đi học bằng xe buýt."
+      },
+      {
+        "en": "My brother goes to school near here.",
+        "vi": "Em trai tôi đi học gần đây."
+      }
+    ],
+    "collocations": [
+      "go to school by bike",
+      "go to school every day",
+      "go to school with friends"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How do you go to school?"
+      },
+      {
+        "speaker": "B",
+        "text": "I go to school by bike."
+      }
+    ]
+  },
+  {
+    "phrase": "work at",
+    "meaning_vi": "làm việc tại",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "She works at a hospital.",
+        "vi": "Cô ấy làm việc tại một bệnh viện."
+      },
+      {
+        "en": "He works at a bank.",
+        "vi": "Anh ấy làm việc tại một ngân hàng."
+      }
+    ],
+    "collocations": [
+      "work at a company",
+      "work at a school",
+      "work at home"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Where do you work?"
+      },
+      {
+        "speaker": "B",
+        "text": "I work at a restaurant."
+      }
+    ]
+  },
+  {
+    "phrase": "help each other",
+    "meaning_vi": "giúp đỡ lẫn nhau",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "We help each other in the community.",
+        "vi": "Chúng tôi giúp đỡ lẫn nhau trong cộng đồng."
+      },
+      {
+        "en": "Good neighbors help each other.",
+        "vi": "Hàng xóm tốt giúp đỡ lẫn nhau."
+      }
+    ],
+    "collocations": [
+      "help each other with homework",
+      "help each other in trouble",
+      "always help each other"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you help each other?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, we help each other every day."
+      }
+    ]
+  },
+  {
+    "phrase": "take care of",
+    "meaning_vi": "chăm sóc",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "She takes care of her children.",
+        "vi": "Cô ấy chăm sóc các con của mình."
+      },
+      {
+        "en": "We take care of the park.",
+        "vi": "Chúng tôi chăm sóc công viên."
+      }
+    ],
+    "collocations": [
+      "take care of family",
+      "take care of pets",
+      "take care of the garden"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Who takes care of the garden?"
+      },
+      {
+        "speaker": "B",
+        "text": "My father takes care of it."
+      }
+    ]
+  },
+  {
+    "phrase": "community center",
+    "meaning_vi": "trung tâm cộng đồng",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "There is a community center near my house.",
+        "vi": "Có một trung tâm cộng đồng gần nhà tôi."
+      },
+      {
+        "en": "We go to the community center on weekends.",
+        "vi": "Chúng tôi đến trung tâm cộng đồng vào cuối tuần."
+      }
+    ],
+    "collocations": [
+      "community center activities",
+      "community center classes",
+      "community center meeting"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you go to the community center?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I go there for yoga classes."
+      }
+    ]
+  },
+  {
+    "phrase": "meet people",
+    "meaning_vi": "gặp gỡ mọi người",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I like to meet new people.",
+        "vi": "Tôi thích gặp gỡ những người mới."
+      },
+      {
+        "en": "We meet people at the park.",
+        "vi": "Chúng tôi gặp mọi người ở công viên."
+      }
+    ],
+    "collocations": [
+      "meet people from different countries",
+      "meet people at work",
+      "meet people online"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you meet people here?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I meet many friendly people."
+      }
+    ]
+  },
+  {
+    "phrase": "work out",
+    "meaning_vi": "tập thể dục",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I work out every day.",
+        "vi": "Tôi tập thể dục mỗi ngày."
+      },
+      {
+        "en": "Do you work out at the gym?",
+        "vi": "Bạn có tập ở phòng gym không?"
+      }
+    ],
+    "collocations": [
+      "work out at home",
+      "work out with friends",
+      "work out regularly"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you work out?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I work out three times a week."
+      }
+    ]
+  },
+  {
+    "phrase": "play football",
+    "meaning_vi": "chơi bóng đá",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I play football on Saturdays.",
+        "vi": "Tôi chơi bóng đá vào thứ Bảy."
+      },
+      {
+        "en": "They play football in the park.",
+        "vi": "Họ chơi bóng đá ở công viên."
+      }
+    ],
+    "collocations": [
+      "play football with friends",
+      "play football after school",
+      "play football for fun"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What sport do you play?"
+      },
+      {
+        "speaker": "B",
+        "text": "I play football."
+      }
+    ]
+  },
+  {
+    "phrase": "go swimming",
+    "meaning_vi": "đi bơi",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I go swimming every Sunday.",
+        "vi": "Tôi đi bơi mỗi Chủ nhật."
+      },
+      {
+        "en": "Let's go swimming this afternoon.",
+        "vi": "Chiều nay chúng ta đi bơi nhé."
+      }
+    ],
+    "collocations": [
+      "go swimming in the pool",
+      "go swimming at the beach",
+      "go swimming with family"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you want to go swimming?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I love swimming."
+      }
+    ]
+  },
+  {
+    "phrase": "keep fit",
+    "meaning_vi": "giữ dáng/giữ sức khỏe",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "I run to keep fit.",
+        "vi": "Tôi chạy bộ để giữ dáng."
+      },
+      {
+        "en": "She exercises to keep fit.",
+        "vi": "Cô ấy tập thể dục để giữ sức khỏe."
+      }
+    ],
+    "collocations": [
+      "keep fit by jogging",
+      "keep fit and healthy",
+      "try to keep fit"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Why do you play tennis?"
+      },
+      {
+        "speaker": "B",
+        "text": "To keep fit."
+      }
+    ]
+  },
+  {
+    "phrase": "do yoga",
+    "meaning_vi": "tập yoga",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I do yoga in the morning.",
+        "vi": "Tôi tập yoga vào buổi sáng."
+      },
+      {
+        "en": "She does yoga twice a week.",
+        "vi": "Cô ấy tập yoga hai lần một tuần."
+      }
+    ],
+    "collocations": [
+      "do yoga at home",
+      "do yoga for relaxation",
+      "do yoga with a teacher"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What do you do to relax?"
+      },
+      {
+        "speaker": "B",
+        "text": "I do yoga."
+      }
+    ]
+  },
+  {
+    "phrase": "warm up",
+    "meaning_vi": "khởi động",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Always warm up before exercise.",
+        "vi": "Luôn khởi động trước khi tập."
+      },
+      {
+        "en": "We warm up for ten minutes.",
+        "vi": "Chúng tôi khởi động trong mười phút."
+      }
+    ],
+    "collocations": [
+      "warm up before a game",
+      "warm up with stretching",
+      "warm up properly"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What should I do first?"
+      },
+      {
+        "speaker": "B",
+        "text": "Warm up for five minutes."
+      }
+    ]
+  },
+  {
+    "phrase": "score a goal",
+    "meaning_vi": "ghi bàn",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "He scored a goal in the match.",
+        "vi": "Anh ấy đã ghi bàn trong trận đấu."
+      },
+      {
+        "en": "She scored the winning goal.",
+        "vi": "Cô ấy đã ghi bàn thắng quyết định."
+      }
+    ],
+    "collocations": [
+      "score a goal in football",
+      "score a goal from a penalty",
+      "score a goal for the team"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Did you see the game?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, he scored a great goal."
+      }
+    ]
+  },
+  {
+    "phrase": "play tennis",
+    "meaning_vi": "chơi quần vợt",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I play tennis with my brother.",
+        "vi": "Tôi chơi quần vợt với anh trai."
+      },
+      {
+        "en": "They play tennis every weekend.",
+        "vi": "Họ chơi quần vợt mỗi cuối tuần."
+      }
+    ],
+    "collocations": [
+      "play tennis on the court",
+      "play tennis for an hour",
+      "play tennis in the afternoon"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What sport do you like?"
+      },
+      {
+        "speaker": "B",
+        "text": "I like to play tennis."
+      }
+    ]
+  },
+  {
+    "phrase": "carry out",
+    "meaning_vi": "tiến hành",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "We carry out experiments in the lab.",
+        "vi": "Chúng tôi tiến hành thí nghiệm trong phòng thí nghiệm."
+      },
+      {
+        "en": "The scientists carry out research every day.",
+        "vi": "Các nhà khoa học tiến hành nghiên cứu mỗi ngày."
+      }
+    ],
+    "collocations": [
+      "carry out an experiment",
+      "carry out a study",
+      "carry out research"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What do you do in the lab?"
+      },
+      {
+        "speaker": "B",
+        "text": "We carry out experiments."
+      }
+    ]
+  },
+  {
+    "phrase": "find out",
+    "meaning_vi": "tìm ra, khám phá",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I want to find out the answer.",
+        "vi": "Tôi muốn tìm ra câu trả lời."
+      },
+      {
+        "en": "Did you find out why it happened?",
+        "vi": "Bạn có tìm ra tại sao nó xảy ra không?"
+      }
+    ],
+    "collocations": [
+      "find out the truth",
+      "find out the reason",
+      "find out how"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Did you find out the answer?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I found out it is because of heat."
+      }
+    ]
+  },
+  {
+    "phrase": "look into",
+    "meaning_vi": "xem xét, điều tra",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "The team will look into the problem.",
+        "vi": "Nhóm sẽ xem xét vấn đề."
+      },
+      {
+        "en": "We need to look into this data.",
+        "vi": "Chúng ta cần xem xét dữ liệu này."
+      }
+    ],
+    "collocations": [
+      "look into the matter",
+      "look into the issue",
+      "look into the cause"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What should we do about the error?"
+      },
+      {
+        "speaker": "B",
+        "text": "We need to look into it."
+      }
+    ]
+  },
+  {
+    "phrase": "set up",
+    "meaning_vi": "thiết lập, dựng lên",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "They set up the equipment in the lab.",
+        "vi": "Họ thiết lập thiết bị trong phòng thí nghiệm."
+      },
+      {
+        "en": "We set up a new experiment today.",
+        "vi": "Hôm nay chúng tôi thiết lập một thí nghiệm mới."
+      }
+    ],
+    "collocations": [
+      "set up an experiment",
+      "set up a lab",
+      "set up equipment"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Have you set up the experiment?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, we set it up this morning."
+      }
+    ]
+  },
+  {
+    "phrase": "take part in",
+    "meaning_vi": "tham gia vào",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "Many students take part in the science fair.",
+        "vi": "Nhiều sinh viên tham gia hội chợ khoa học."
+      },
+      {
+        "en": "Do you want to take part in the study?",
+        "vi": "Bạn có muốn tham gia nghiên cứu không?"
+      }
+    ],
+    "collocations": [
+      "take part in a project",
+      "take part in an experiment",
+      "take part in research"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Are you taking part in the experiment?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I am taking part in it."
+      }
+    ]
+  },
+  {
+    "phrase": "make a discovery",
+    "meaning_vi": "khám phá ra",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "The scientist made a big discovery.",
+        "vi": "Nhà khoa học đã khám phá ra một điều lớn."
+      },
+      {
+        "en": "They made a discovery about plants.",
+        "vi": "Họ đã khám phá ra về thực vật."
+      }
+    ],
+    "collocations": [
+      "make a new discovery",
+      "make an important discovery",
+      "make a scientific discovery"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What did the scientist do?"
+      },
+      {
+        "speaker": "B",
+        "text": "He made a discovery about space."
+      }
+    ]
+  },
+  {
+    "phrase": "do research",
+    "meaning_vi": "làm nghiên cứu",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I do research on biology.",
+        "vi": "Tôi làm nghiên cứu về sinh học."
+      },
+      {
+        "en": "She does research in the lab every day.",
+        "vi": "Cô ấy làm nghiên cứu trong phòng thí nghiệm mỗi ngày."
+      }
+    ],
+    "collocations": [
+      "do scientific research",
+      "do research on",
+      "do research in"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What do you do at the university?"
+      },
+      {
+        "speaker": "B",
+        "text": "I do research on climate change."
+      }
+    ]
+  },
+  {
+    "phrase": "test a hypothesis",
+    "meaning_vi": "kiểm tra giả thuyết",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "We need to test this hypothesis.",
+        "vi": "Chúng ta cần kiểm tra giả thuyết này."
+      },
+      {
+        "en": "They tested the hypothesis and it was correct.",
+        "vi": "Họ đã kiểm tra giả thuyết và nó đúng."
+      }
+    ],
+    "collocations": [
+      "test a scientific hypothesis",
+      "test the hypothesis",
+      "test a hypothesis with data"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What is the next step?"
+      },
+      {
+        "speaker": "B",
+        "text": "We test our hypothesis."
+      }
+    ]
+  },
+  {
+    "phrase": "get on",
+    "meaning_vi": "lên (xe buýt, tàu, máy bay)",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I get on the bus at the station.",
+        "vi": "Tôi lên xe buýt ở nhà ga."
+      },
+      {
+        "en": "She gets on the train every morning.",
+        "vi": "Cô ấy lên tàu hỏa mỗi sáng."
+      }
+    ],
+    "collocations": [
+      "get on the bus",
+      "get on the train",
+      "get on the plane"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Where do you get on the bus?"
+      },
+      {
+        "speaker": "B",
+        "text": "I get on at the bus stop near my house."
+      }
+    ]
+  },
+  {
+    "phrase": "get off",
+    "meaning_vi": "xuống (xe buýt, tàu, máy bay)",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "We get off the train at the next station.",
+        "vi": "Chúng tôi xuống tàu ở ga tiếp theo."
+      },
+      {
+        "en": "Please get off the bus carefully.",
+        "vi": "Xin hãy xuống xe buýt cẩn thận."
+      }
+    ],
+    "collocations": [
+      "get off the bus",
+      "get off the train",
+      "get off at the stop"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "When do we get off?"
+      },
+      {
+        "speaker": "B",
+        "text": "We get off at the next stop."
+      }
+    ]
+  },
+  {
+    "phrase": "by bus",
+    "meaning_vi": "bằng xe buýt",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I go to work by bus.",
+        "vi": "Tôi đi làm bằng xe buýt."
+      },
+      {
+        "en": "She travels by bus every day.",
+        "vi": "Cô ấy đi lại bằng xe buýt mỗi ngày."
+      }
+    ],
+    "collocations": [
+      "go by bus",
+      "travel by bus",
+      "come by bus"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How do you go to school?"
+      },
+      {
+        "speaker": "B",
+        "text": "I go by bus."
+      }
+    ]
+  },
+  {
+    "phrase": "by car",
+    "meaning_vi": "bằng ô tô",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "We go to the beach by car.",
+        "vi": "Chúng tôi đi biển bằng ô tô."
+      },
+      {
+        "en": "He comes to work by car.",
+        "vi": "Anh ấy đến chỗ làm bằng ô tô."
+      }
+    ],
+    "collocations": [
+      "go by car",
+      "travel by car",
+      "come by car"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you go by car or by bus?"
+      },
+      {
+        "speaker": "B",
+        "text": "I go by car."
+      }
+    ]
+  },
+  {
+    "phrase": "take a taxi",
+    "meaning_vi": "đi taxi",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I take a taxi to the airport.",
+        "vi": "Tôi đi taxi ra sân bay."
+      },
+      {
+        "en": "She takes a taxi when she is late.",
+        "vi": "Cô ấy đi taxi khi bị trễ."
+      }
+    ],
+    "collocations": [
+      "take a taxi to",
+      "take a taxi from",
+      "take a taxi home"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How do we get to the hotel?"
+      },
+      {
+        "speaker": "B",
+        "text": "Let's take a taxi."
+      }
+    ]
+  },
+  {
+    "phrase": "travel abroad",
+    "meaning_vi": "đi du lịch nước ngoài",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I want to travel abroad next year.",
+        "vi": "Tôi muốn đi du lịch nước ngoài năm sau."
+      },
+      {
+        "en": "She travels abroad for work.",
+        "vi": "Cô ấy đi công tác nước ngoài."
+      }
+    ],
+    "collocations": [
+      "travel abroad for",
+      "travel abroad with",
+      "travel abroad often"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you like to travel abroad?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I love it."
+      }
+    ]
+  },
+  {
+    "phrase": "book a ticket",
+    "meaning_vi": "đặt vé",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I need to book a ticket for the train.",
+        "vi": "Tôi cần đặt vé tàu hỏa."
+      },
+      {
+        "en": "She books a ticket online.",
+        "vi": "Cô ấy đặt vé trực tuyến."
+      }
+    ],
+    "collocations": [
+      "book a ticket online",
+      "book a ticket for",
+      "book a ticket in advance"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Did you book a ticket yet?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I booked it yesterday."
+      }
+    ]
+  },
+  {
+    "phrase": "How much is a ticket to...?",
+    "meaning_vi": "Vé đến... bao nhiêu tiền?",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "How much is a ticket to Hanoi?",
+        "vi": "Vé đến Hà Nội bao nhiêu tiền?"
+      },
+      {
+        "en": "How much is a ticket to the city center?",
+        "vi": "Vé đến trung tâm thành phố bao nhiêu tiền?"
+      }
+    ],
+    "collocations": [
+      "How much is a bus ticket to...?",
+      "How much is a train ticket to...?",
+      "How much is a plane ticket to...?"
+    ],
+    "response": "It's 50,000 dong.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Excuse me, how much is a ticket to Da Nang?"
+      },
+      {
+        "speaker": "B",
+        "text": "It's 200,000 dong."
+      }
+    ]
+  },
+  {
+    "phrase": "What's the weather like?",
+    "meaning_vi": "Thời tiết thế nào?",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "What's the weather like today?",
+        "vi": "Hôm nay thời tiết thế nào?"
+      },
+      {
+        "en": "What's the weather like in summer?",
+        "vi": "Thời tiết mùa hè thế nào?"
+      }
+    ],
+    "collocations": [
+      "ask about the weather",
+      "check the weather",
+      "weather forecast"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What's the weather like today?"
+      },
+      {
+        "speaker": "B",
+        "text": "It's sunny and hot."
+      }
+    ]
+  },
+  {
+    "phrase": "It is sunny",
+    "meaning_vi": "Trời nắng",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "It is sunny today.",
+        "vi": "Hôm nay trời nắng."
+      },
+      {
+        "en": "It is sunny in the morning.",
+        "vi": "Buổi sáng trời nắng."
+      }
+    ],
+    "collocations": [
+      "sunny day",
+      "sunny weather",
+      "sunny and hot"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How is the weather?"
+      },
+      {
+        "speaker": "B",
+        "text": "It is sunny."
+      }
+    ]
+  },
+  {
+    "phrase": "It is raining",
+    "meaning_vi": "Trời đang mưa",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "It is raining now.",
+        "vi": "Bây giờ trời đang mưa."
+      },
+      {
+        "en": "It is raining hard.",
+        "vi": "Trời mưa to."
+      }
+    ],
+    "collocations": [
+      "heavy rain",
+      "light rain",
+      "rainy season"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Is it raining outside?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, it is raining."
+      }
+    ]
+  },
+  {
+    "phrase": "It is cold",
+    "meaning_vi": "Trời lạnh",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "It is cold in winter.",
+        "vi": "Mùa đông trời lạnh."
+      },
+      {
+        "en": "It is very cold today.",
+        "vi": "Hôm nay trời rất lạnh."
+      }
+    ],
+    "collocations": [
+      "cold weather",
+      "cold day",
+      "cold and windy"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you like winter?"
+      },
+      {
+        "speaker": "B",
+        "text": "No, because it is cold."
+      }
+    ]
+  },
+  {
+    "phrase": "It is hot",
+    "meaning_vi": "Trời nóng",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "It is hot in summer.",
+        "vi": "Mùa hè trời nóng."
+      },
+      {
+        "en": "It is very hot today.",
+        "vi": "Hôm nay trời rất nóng."
+      }
+    ],
+    "collocations": [
+      "hot weather",
+      "hot day",
+      "hot and humid"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How is the weather in Vietnam?"
+      },
+      {
+        "speaker": "B",
+        "text": "It is hot and humid."
+      }
+    ]
+  },
+  {
+    "phrase": "It is windy",
+    "meaning_vi": "Trời có gió",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "It is windy today.",
+        "vi": "Hôm nay trời có gió."
+      },
+      {
+        "en": "It is very windy in autumn.",
+        "vi": "Mùa thu trời rất nhiều gió."
+      }
+    ],
+    "collocations": [
+      "windy day",
+      "strong wind",
+      "windy weather"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Should we go outside?"
+      },
+      {
+        "speaker": "B",
+        "text": "No, it is too windy."
+      }
+    ]
+  },
+  {
+    "phrase": "What season is it?",
+    "meaning_vi": "Bây giờ là mùa gì?",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "What season is it now?",
+        "vi": "Bây giờ là mùa gì?"
+      },
+      {
+        "en": "What season do you like?",
+        "vi": "Bạn thích mùa nào?"
+      }
+    ],
+    "collocations": [
+      "spring",
+      "summer",
+      "autumn",
+      "winter"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What season is it?"
+      },
+      {
+        "speaker": "B",
+        "text": "It is summer."
+      }
+    ]
+  },
+  {
+    "phrase": "I like spring",
+    "meaning_vi": "Tôi thích mùa xuân",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I like spring because it is warm.",
+        "vi": "Tôi thích mùa xuân vì trời ấm."
+      },
+      {
+        "en": "Do you like spring?",
+        "vi": "Bạn có thích mùa xuân không?"
+      }
+    ],
+    "collocations": [
+      "spring weather",
+      "spring flowers",
+      "spring season"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Which season do you like?"
+      },
+      {
+        "speaker": "B",
+        "text": "I like spring."
+      }
+    ]
+  },
+  {
+    "phrase": "get up",
+    "meaning_vi": "thức dậy",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I get up at 6 every morning.",
+        "vi": "Tôi thức dậy lúc 6 giờ mỗi sáng."
+      },
+      {
+        "en": "What time do you get up?",
+        "vi": "Bạn thức dậy lúc mấy giờ?"
+      }
+    ],
+    "collocations": [
+      "get up early",
+      "get up late",
+      "get up on time"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What time do you usually get up?"
+      },
+      {
+        "speaker": "B",
+        "text": "I usually get up at seven."
+      }
+    ]
+  },
+  {
+    "phrase": "go to work",
+    "meaning_vi": "đi làm",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I go to work by bus.",
+        "vi": "Tôi đi làm bằng xe buýt."
+      },
+      {
+        "en": "She goes to work at 8 am.",
+        "vi": "Cô ấy đi làm lúc 8 giờ sáng."
+      }
+    ],
+    "collocations": [
+      "go to work by car",
+      "go to work on foot",
+      "go to work early"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How do you go to work?"
+      },
+      {
+        "speaker": "B",
+        "text": "I go to work by bike."
+      }
+    ]
+  },
+  {
+    "phrase": "finish work",
+    "meaning_vi": "tan làm",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I finish work at 5 pm.",
+        "vi": "Tôi tan làm lúc 5 giờ chiều."
+      },
+      {
+        "en": "When do you finish work?",
+        "vi": "Khi nào bạn tan làm?"
+      }
+    ],
+    "collocations": [
+      "finish work early",
+      "finish work late",
+      "finish work on time"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What time do you finish work?"
+      },
+      {
+        "speaker": "B",
+        "text": "I finish work at six."
+      }
+    ]
+  },
+  {
+    "phrase": "have a job",
+    "meaning_vi": "có việc làm",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I have a job in a hospital.",
+        "vi": "Tôi có việc làm ở bệnh viện."
+      },
+      {
+        "en": "She has a job as a teacher.",
+        "vi": "Cô ấy có việc làm là giáo viên."
+      }
+    ],
+    "collocations": [
+      "have a full-time job",
+      "have a part-time job",
+      "have a good job"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you have a job?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I have a job in an office."
+      }
+    ]
+  },
+  {
+    "phrase": "look for a job",
+    "meaning_vi": "tìm việc",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I am looking for a job.",
+        "vi": "Tôi đang tìm việc."
+      },
+      {
+        "en": "He looks for a job every day.",
+        "vi": "Anh ấy tìm việc mỗi ngày."
+      }
+    ],
+    "collocations": [
+      "look for a new job",
+      "look for a better job",
+      "look for a job online"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What are you doing?"
+      },
+      {
+        "speaker": "B",
+        "text": "I'm looking for a job."
+      }
+    ]
+  },
+  {
+    "phrase": "take a break",
+    "meaning_vi": "nghỉ giải lao",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "Let's take a break.",
+        "vi": "Chúng ta hãy nghỉ giải lao."
+      },
+      {
+        "en": "I take a break at 10 am.",
+        "vi": "Tôi nghỉ giải lao lúc 10 giờ sáng."
+      }
+    ],
+    "collocations": [
+      "take a short break",
+      "take a coffee break",
+      "take a lunch break"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Are you tired?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, let's take a break."
+      }
+    ]
+  },
+  {
+    "phrase": "work hard",
+    "meaning_vi": "làm việc chăm chỉ",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "She works hard every day.",
+        "vi": "Cô ấy làm việc chăm chỉ mỗi ngày."
+      },
+      {
+        "en": "You need to work hard.",
+        "vi": "Bạn cần phải làm việc chăm chỉ."
+      }
+    ],
+    "collocations": [
+      "work hard at the office",
+      "work hard on a project",
+      "work hard for money"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How is your new job?"
+      },
+      {
+        "speaker": "B",
+        "text": "I work hard, but I like it."
+      }
+    ]
+  },
+  {
+    "phrase": "start work",
+    "meaning_vi": "bắt đầu làm việc",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I start work at 9 am.",
+        "vi": "Tôi bắt đầu làm việc lúc 9 giờ sáng."
+      },
+      {
+        "en": "When do you start work?",
+        "vi": "Khi nào bạn bắt đầu làm việc?"
+      }
+    ],
+    "collocations": [
+      "start work early",
+      "start work late",
+      "start work tomorrow"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What time do you start work?"
+      },
+      {
+        "speaker": "B",
+        "text": "I start work at eight."
+      }
+    ]
+  }
+]

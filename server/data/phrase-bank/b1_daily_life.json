@@ -1,0 +1,494 @@
+[
+  {
+    "phrase": "get up",
+    "meaning_vi": "thức dậy",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I get up at 6 every morning.",
+        "vi": "Tôi thức dậy lúc 6 giờ mỗi sáng."
+      },
+      {
+        "en": "What time do you get up?",
+        "vi": "Bạn thức dậy lúc mấy giờ?"
+      }
+    ],
+    "collocations": [
+      "get up early",
+      "get up late",
+      "get up on time"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What time do you usually get up?"
+      },
+      {
+        "speaker": "B",
+        "text": "I usually get up at seven."
+      }
+    ]
+  },
+  {
+    "phrase": "go to bed",
+    "meaning_vi": "đi ngủ",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I usually go to bed around 11 pm.",
+        "vi": "Tôi thường đi ngủ khoảng 11 giờ tối."
+      },
+      {
+        "en": "You should go to bed early tonight.",
+        "vi": "Tối nay bạn nên đi ngủ sớm."
+      }
+    ],
+    "collocations": [
+      "go to bed early",
+      "go to bed late",
+      "go to bed at"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I'm so tired. I think I'll go to bed now."
+      },
+      {
+        "speaker": "B",
+        "text": "Good idea. You need rest."
+      }
+    ]
+  },
+  {
+    "phrase": "have breakfast",
+    "meaning_vi": "ăn sáng",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I usually have breakfast at 7.",
+        "vi": "Tôi thường ăn sáng lúc 7 giờ."
+      },
+      {
+        "en": "Do you want to have breakfast together?",
+        "vi": "Bạn có muốn ăn sáng cùng nhau không?"
+      }
+    ],
+    "collocations": [
+      "have a big breakfast",
+      "have a light breakfast",
+      "have breakfast with"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What do you usually have for breakfast?"
+      },
+      {
+        "speaker": "B",
+        "text": "I usually have bread and eggs."
+      }
+    ]
+  },
+  {
+    "phrase": "take a shower",
+    "meaning_vi": "tắm vòi sen",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I take a shower every morning.",
+        "vi": "Tôi tắm vòi sen mỗi sáng."
+      },
+      {
+        "en": "She is taking a shower now.",
+        "vi": "Cô ấy đang tắm."
+      }
+    ],
+    "collocations": [
+      "take a hot shower",
+      "take a quick shower",
+      "take a shower in the morning"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Can I use the bathroom? I need to take a shower."
+      },
+      {
+        "speaker": "B",
+        "text": "Sure, go ahead."
+      }
+    ]
+  },
+  {
+    "phrase": "brush one's teeth",
+    "meaning_vi": "đánh răng",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "You should brush your teeth twice a day.",
+        "vi": "Bạn nên đánh răng hai lần một ngày."
+      },
+      {
+        "en": "I forgot to brush my teeth this morning.",
+        "vi": "Sáng nay tôi quên đánh răng."
+      }
+    ],
+    "collocations": [
+      "brush your teeth thoroughly",
+      "brush your teeth before bed",
+      "brush your teeth after meals"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Have you brushed your teeth yet?"
+      },
+      {
+        "speaker": "B",
+        "text": "Not yet. I'll do it now."
+      }
+    ]
+  },
+  {
+    "phrase": "get dressed",
+    "meaning_vi": "mặc quần áo",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I get dressed after breakfast.",
+        "vi": "Tôi mặc quần áo sau khi ăn sáng."
+      },
+      {
+        "en": "She got dressed quickly.",
+        "vi": "Cô ấy mặc quần áo nhanh chóng."
+      }
+    ],
+    "collocations": [
+      "get dressed for work",
+      "get dressed casually",
+      "get dressed in a hurry"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Are you ready?"
+      },
+      {
+        "speaker": "B",
+        "text": "Almost. I just need to get dressed."
+      }
+    ]
+  },
+  {
+    "phrase": "go to work",
+    "meaning_vi": "đi làm",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I go to work by bus.",
+        "vi": "Tôi đi làm bằng xe buýt."
+      },
+      {
+        "en": "What time do you go to work?",
+        "vi": "Bạn đi làm lúc mấy giờ?"
+      }
+    ],
+    "collocations": [
+      "go to work by car",
+      "go to work on foot",
+      "go to work early"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How do you go to work?"
+      },
+      {
+        "speaker": "B",
+        "text": "I usually go by bus."
+      }
+    ]
+  },
+  {
+    "phrase": "come home",
+    "meaning_vi": "về nhà",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I come home at 6 pm.",
+        "vi": "Tôi về nhà lúc 6 giờ tối."
+      },
+      {
+        "en": "She came home late last night.",
+        "vi": "Tối qua cô ấy về nhà muộn."
+      }
+    ],
+    "collocations": [
+      "come home from work",
+      "come home late",
+      "come home tired"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What time do you usually come home?"
+      },
+      {
+        "speaker": "B",
+        "text": "Around 6:30."
+      }
+    ]
+  },
+  {
+    "phrase": "cook dinner",
+    "meaning_vi": "nấu bữa tối",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I often cook dinner for my family.",
+        "vi": "Tôi thường nấu bữa tối cho gia đình."
+      },
+      {
+        "en": "Who cooks dinner in your house?",
+        "vi": "Ai nấu bữa tối trong nhà bạn?"
+      }
+    ],
+    "collocations": [
+      "cook a simple dinner",
+      "cook a special dinner",
+      "cook dinner together"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What are you doing?"
+      },
+      {
+        "speaker": "B",
+        "text": "I'm cooking dinner."
+      }
+    ]
+  },
+  {
+    "phrase": "do the dishes",
+    "meaning_vi": "rửa bát",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I do the dishes after dinner.",
+        "vi": "Tôi rửa bát sau bữa tối."
+      },
+      {
+        "en": "Can you do the dishes tonight?",
+        "vi": "Tối nay bạn có thể rửa bát không?"
+      }
+    ],
+    "collocations": [
+      "do the dishes by hand",
+      "do the dishes in the dishwasher",
+      "do the dishes right away"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Who's going to do the dishes?"
+      },
+      {
+        "speaker": "B",
+        "text": "I'll do them."
+      }
+    ]
+  },
+  {
+    "phrase": "watch TV",
+    "meaning_vi": "xem tivi",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I like to watch TV in the evening.",
+        "vi": "Tôi thích xem tivi vào buổi tối."
+      },
+      {
+        "en": "What are you watching on TV?",
+        "vi": "Bạn đang xem gì trên tivi?"
+      }
+    ],
+    "collocations": [
+      "watch TV shows",
+      "watch TV news",
+      "watch TV for an hour"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you want to watch TV?"
+      },
+      {
+        "speaker": "B",
+        "text": "Sure, what's on?"
+      }
+    ]
+  },
+  {
+    "phrase": "do homework",
+    "meaning_vi": "làm bài tập về nhà",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I do my homework after school.",
+        "vi": "Tôi làm bài tập về nhà sau giờ học."
+      },
+      {
+        "en": "Have you done your homework?",
+        "vi": "Bạn đã làm bài tập về nhà chưa?"
+      }
+    ],
+    "collocations": [
+      "do math homework",
+      "do homework quickly",
+      "do homework with a friend"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Can you play now?"
+      },
+      {
+        "speaker": "B",
+        "text": "Not yet. I have to do my homework first."
+      }
+    ]
+  },
+  {
+    "phrase": "hang out",
+    "meaning_vi": "đi chơi, tụ tập",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I like to hang out with my friends on weekends.",
+        "vi": "Tôi thích đi chơi với bạn bè vào cuối tuần."
+      },
+      {
+        "en": "Where do you usually hang out?",
+        "vi": "Bạn thường tụ tập ở đâu?"
+      }
+    ],
+    "collocations": [
+      "hang out at the mall",
+      "hang out with friends",
+      "hang out at home"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What are you doing this Saturday?"
+      },
+      {
+        "speaker": "B",
+        "text": "I'm going to hang out with some friends."
+      }
+    ]
+  },
+  {
+    "phrase": "go shopping",
+    "meaning_vi": "đi mua sắm",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I go shopping every weekend.",
+        "vi": "Tôi đi mua sắm mỗi cuối tuần."
+      },
+      {
+        "en": "Let's go shopping this afternoon.",
+        "vi": "Chiều nay chúng ta đi mua sắm nhé."
+      }
+    ],
+    "collocations": [
+      "go grocery shopping",
+      "go clothes shopping",
+      "go shopping online"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you want to go shopping with me?"
+      },
+      {
+        "speaker": "B",
+        "text": "Sure, I need to buy some things."
+      }
+    ]
+  },
+  {
+    "phrase": "take a break",
+    "meaning_vi": "nghỉ giải lao",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "Let's take a break for 10 minutes.",
+        "vi": "Chúng ta hãy nghỉ giải lao 10 phút."
+      },
+      {
+        "en": "You look tired. Take a break.",
+        "vi": "Bạn trông mệt mỏi. Hãy nghỉ giải lao đi."
+      }
+    ],
+    "collocations": [
+      "take a short break",
+      "take a coffee break",
+      "take a break from work"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I've been working for hours."
+      },
+      {
+        "speaker": "B",
+        "text": "Why don't you take a break?"
+      }
+    ]
+  },
+  {
+    "phrase": "How are you?",
+    "meaning_vi": "Bạn có khỏe không?",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "How are you?",
+        "vi": "Bạn có khỏe không?"
+      },
+      {
+        "en": "I'm fine, thanks.",
+        "vi": "Tôi khỏe, cảm ơn."
+      }
+    ],
+    "collocations": [],
+    "response": "I'm fine, thanks.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Hi, how are you?"
+      },
+      {
+        "speaker": "B",
+        "text": "I'm fine, thanks. And you?"
+      }
+    ]
+  }
+]

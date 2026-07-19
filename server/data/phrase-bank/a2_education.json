@@ -1,0 +1,374 @@
+[
+  {
+    "phrase": "go to school",
+    "meaning_vi": "đi học",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I go to school by bus.",
+        "vi": "Tôi đi học bằng xe buýt."
+      },
+      {
+        "en": "She goes to school every day.",
+        "vi": "Cô ấy đi học mỗi ngày."
+      }
+    ],
+    "collocations": [
+      "go to school by bike",
+      "go to school on foot",
+      "go to school with friends"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How do you go to school?"
+      },
+      {
+        "speaker": "B",
+        "text": "I go to school by bike."
+      }
+    ]
+  },
+  {
+    "phrase": "do homework",
+    "meaning_vi": "làm bài tập về nhà",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I do my homework after dinner.",
+        "vi": "Tôi làm bài tập về nhà sau bữa tối."
+      },
+      {
+        "en": "Do you have a lot of homework?",
+        "vi": "Bạn có nhiều bài tập về nhà không?"
+      }
+    ],
+    "collocations": [
+      "do math homework",
+      "do English homework",
+      "finish homework"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Did you do your homework?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I did it after school."
+      }
+    ]
+  },
+  {
+    "phrase": "take an exam",
+    "meaning_vi": "thi",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I will take an exam next week.",
+        "vi": "Tôi sẽ thi vào tuần sau."
+      },
+      {
+        "en": "She is taking an exam now.",
+        "vi": "Cô ấy đang thi."
+      }
+    ],
+    "collocations": [
+      "take a final exam",
+      "take a test",
+      "take an entrance exam"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "When do you take the exam?"
+      },
+      {
+        "speaker": "B",
+        "text": "Next Monday."
+      }
+    ]
+  },
+  {
+    "phrase": "pay attention",
+    "meaning_vi": "chú ý",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "Please pay attention in class.",
+        "vi": "Hãy chú ý trong lớp học."
+      },
+      {
+        "en": "You need to pay attention to the teacher.",
+        "vi": "Bạn cần chú ý nghe giáo viên."
+      }
+    ],
+    "collocations": [
+      "pay attention to details",
+      "pay attention in class",
+      "pay close attention"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Why are you not paying attention?"
+      },
+      {
+        "speaker": "B",
+        "text": "I'm sorry, I was daydreaming."
+      }
+    ]
+  },
+  {
+    "phrase": "hand in",
+    "meaning_vi": "nộp (bài)",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Please hand in your homework tomorrow.",
+        "vi": "Làm ơn nộp bài tập về nhà vào ngày mai."
+      },
+      {
+        "en": "I handed in my essay late.",
+        "vi": "Tôi đã nộp bài luận muộn."
+      }
+    ],
+    "collocations": [
+      "hand in homework",
+      "hand in a report",
+      "hand in an assignment"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "When should we hand in the project?"
+      },
+      {
+        "speaker": "B",
+        "text": "By Friday."
+      }
+    ]
+  },
+  {
+    "phrase": "look up",
+    "meaning_vi": "tra cứu",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I look up new words in a dictionary.",
+        "vi": "Tôi tra từ mới trong từ điển."
+      },
+      {
+        "en": "Can you look up the meaning for me?",
+        "vi": "Bạn có thể tra nghĩa giúp tôi không?"
+      }
+    ],
+    "collocations": [
+      "look up a word",
+      "look up information",
+      "look up online"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How do you spell that word?"
+      },
+      {
+        "speaker": "B",
+        "text": "I don't know. Let's look it up."
+      }
+    ]
+  },
+  {
+    "phrase": "fall behind",
+    "meaning_vi": "bị tụt lại, chậm tiến độ",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I don't want to fall behind in math.",
+        "vi": "Tôi không muốn bị tụt lại trong môn toán."
+      },
+      {
+        "en": "She fell behind because she was sick.",
+        "vi": "Cô ấy bị tụt lại vì bị ốm."
+      }
+    ],
+    "collocations": [
+      "fall behind in class",
+      "fall behind with homework",
+      "fall behind schedule"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Are you keeping up with the lessons?"
+      },
+      {
+        "speaker": "B",
+        "text": "No, I'm falling behind."
+      }
+    ]
+  },
+  {
+    "phrase": "catch up",
+    "meaning_vi": "theo kịp, bắt kịp",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I need to catch up on my reading.",
+        "vi": "Tôi cần đọc để bắt kịp."
+      },
+      {
+        "en": "She studied hard to catch up with the class.",
+        "vi": "Cô ấy học chăm chỉ để bắt kịp lớp."
+      }
+    ],
+    "collocations": [
+      "catch up on homework",
+      "catch up with friends",
+      "catch up on lessons"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "You missed a lot. Can you catch up?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I will study this weekend."
+      }
+    ]
+  },
+  {
+    "phrase": "take notes",
+    "meaning_vi": "ghi chép",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I always take notes in class.",
+        "vi": "Tôi luôn ghi chép trong lớp."
+      },
+      {
+        "en": "You should take notes during the lecture.",
+        "vi": "Bạn nên ghi chép trong suốt bài giảng."
+      }
+    ],
+    "collocations": [
+      "take good notes",
+      "take notes quickly",
+      "take notes in a notebook"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you take notes in history class?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I do. It helps me remember."
+      }
+    ]
+  },
+  {
+    "phrase": "make a mistake",
+    "meaning_vi": "phạm lỗi, mắc lỗi",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "I made a mistake on the test.",
+        "vi": "Tôi đã mắc lỗi trong bài kiểm tra."
+      },
+      {
+        "en": "Don't worry about making mistakes.",
+        "vi": "Đừng lo lắng về việc mắc lỗi."
+      }
+    ],
+    "collocations": [
+      "make a spelling mistake",
+      "make a grammar mistake",
+      "make a silly mistake"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I made a mistake in the exercise."
+      },
+      {
+        "speaker": "B",
+        "text": "It's okay. Learn from it."
+      }
+    ]
+  },
+  {
+    "phrase": "ask for help",
+    "meaning_vi": "yêu cầu giúp đỡ",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "You can ask the teacher for help.",
+        "vi": "Bạn có thể yêu cầu giáo viên giúp đỡ."
+      },
+      {
+        "en": "I asked my friend for help with math.",
+        "vi": "Tôi đã nhờ bạn giúp đỡ môn toán."
+      }
+    ],
+    "collocations": [
+      "ask for help with homework",
+      "ask for help from a tutor",
+      "ask for help politely"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I don't understand this problem."
+      },
+      {
+        "speaker": "B",
+        "text": "Why don't you ask the teacher for help?"
+      }
+    ]
+  },
+  {
+    "phrase": "learn by heart",
+    "meaning_vi": "học thuộc lòng",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "We have to learn this poem by heart.",
+        "vi": "Chúng tôi phải học thuộc lòng bài thơ này."
+      },
+      {
+        "en": "She learned all the vocabulary by heart.",
+        "vi": "Cô ấy đã học thuộc lòng tất cả từ vựng."
+      }
+    ],
+    "collocations": [
+      "learn by heart a song",
+      "learn by heart a speech",
+      "learn by heart the rules"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How do you remember all these words?"
+      },
+      {
+        "speaker": "B",
+        "text": "I learn them by heart."
+      }
+    ]
+  }
+]

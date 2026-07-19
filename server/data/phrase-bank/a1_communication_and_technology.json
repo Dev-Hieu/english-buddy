@@ -1,0 +1,250 @@
+[
+  {
+    "phrase": "turn on",
+    "meaning_vi": "bật (thiết bị)",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Please turn on the TV.",
+        "vi": "Làm ơn bật TV lên."
+      },
+      {
+        "en": "I turn on my computer every morning.",
+        "vi": "Tôi bật máy tính mỗi sáng."
+      }
+    ],
+    "collocations": [
+      "turn on the light",
+      "turn on the phone",
+      "turn on the radio"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Can you turn on the light?"
+      },
+      {
+        "speaker": "B",
+        "text": "Sure, I'll turn it on now."
+      }
+    ]
+  },
+  {
+    "phrase": "turn off",
+    "meaning_vi": "tắt (thiết bị)",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Don't forget to turn off the TV.",
+        "vi": "Đừng quên tắt TV."
+      },
+      {
+        "en": "I turn off my phone at night.",
+        "vi": "Tôi tắt điện thoại vào ban đêm."
+      }
+    ],
+    "collocations": [
+      "turn off the light",
+      "turn off the computer",
+      "turn off the music"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Please turn off your phone in class."
+      },
+      {
+        "speaker": "B",
+        "text": "Okay, I'll turn it off."
+      }
+    ]
+  },
+  {
+    "phrase": "charge my phone",
+    "meaning_vi": "sạc điện thoại",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I need to charge my phone.",
+        "vi": "Tôi cần sạc điện thoại."
+      },
+      {
+        "en": "Can I charge my phone here?",
+        "vi": "Tôi có thể sạc điện thoại ở đây không?"
+      }
+    ],
+    "collocations": [
+      "charge the battery",
+      "charge the laptop",
+      "fully charged"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "My phone is dead."
+      },
+      {
+        "speaker": "B",
+        "text": "You can charge it here."
+      }
+    ]
+  },
+  {
+    "phrase": "send a text",
+    "meaning_vi": "nhắn tin",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I'll send you a text later.",
+        "vi": "Tôi sẽ nhắn tin cho bạn sau."
+      },
+      {
+        "en": "She sends a text to her mom every day.",
+        "vi": "Cô ấy nhắn tin cho mẹ mỗi ngày."
+      }
+    ],
+    "collocations": [
+      "send a message",
+      "send an email",
+      "send a photo"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Can you send me a text?"
+      },
+      {
+        "speaker": "B",
+        "text": "Sure, I'll send it now."
+      }
+    ]
+  },
+  {
+    "phrase": "check email",
+    "meaning_vi": "kiểm tra email",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I check my email in the morning.",
+        "vi": "Tôi kiểm tra email vào buổi sáng."
+      },
+      {
+        "en": "Have you checked your email today?",
+        "vi": "Bạn đã kiểm tra email hôm nay chưa?"
+      }
+    ],
+    "collocations": [
+      "check messages",
+      "check notifications",
+      "check the internet"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Did you check your email?"
+      },
+      {
+        "speaker": "B",
+        "text": "Not yet, I'll check it now."
+      }
+    ]
+  },
+  {
+    "phrase": "surf the web",
+    "meaning_vi": "lướt web",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "I like to surf the web at night.",
+        "vi": "Tôi thích lướt web vào ban đêm."
+      },
+      {
+        "en": "He surfs the web for news.",
+        "vi": "Anh ấy lướt web để đọc tin tức."
+      }
+    ],
+    "collocations": [
+      "browse the internet",
+      "go online",
+      "search the web"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What do you do in your free time?"
+      },
+      {
+        "speaker": "B",
+        "text": "I usually surf the web."
+      }
+    ]
+  },
+  {
+    "phrase": "download an app",
+    "meaning_vi": "tải ứng dụng",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I want to download a new app.",
+        "vi": "Tôi muốn tải một ứng dụng mới."
+      },
+      {
+        "en": "How do I download this app?",
+        "vi": "Làm thế nào để tải ứng dụng này?"
+      }
+    ],
+    "collocations": [
+      "download a game",
+      "download a file",
+      "download music"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I need to download an app for work."
+      },
+      {
+        "speaker": "B",
+        "text": "Which app do you want to download?"
+      }
+    ]
+  },
+  {
+    "phrase": "log in",
+    "meaning_vi": "đăng nhập",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Please log in with your username.",
+        "vi": "Vui lòng đăng nhập bằng tên người dùng của bạn."
+      },
+      {
+        "en": "I can't log in to my account.",
+        "vi": "Tôi không thể đăng nhập vào tài khoản của mình."
+      }
+    ],
+    "collocations": [
+      "log in to a website",
+      "log in to email",
+      "log out"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How do I log in?"
+      },
+      {
+        "speaker": "B",
+        "text": "Enter your password and click 'Log in'."
+      }
+    ]
+  }
+]

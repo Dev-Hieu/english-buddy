@@ -1,0 +1,374 @@
+[
+  {
+    "phrase": "warm up",
+    "meaning_vi": "khởi động",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Always warm up before exercising to prevent injuries.",
+        "vi": "Luôn khởi động trước khi tập thể dục để tránh chấn thương."
+      },
+      {
+        "en": "The team spent 15 minutes warming up before the match.",
+        "vi": "Đội đã dành 15 phút khởi động trước trận đấu."
+      }
+    ],
+    "collocations": [
+      "warm up properly",
+      "warm up exercises",
+      "warm up before a game"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Did you warm up before playing?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I did some light stretches."
+      }
+    ]
+  },
+  {
+    "phrase": "cool down",
+    "meaning_vi": "thả lỏng, hạ nhiệt",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "After the run, we cooled down by walking slowly.",
+        "vi": "Sau khi chạy, chúng tôi thả lỏng bằng cách đi bộ chậm."
+      },
+      {
+        "en": "It's important to cool down after intense exercise.",
+        "vi": "Điều quan trọng là thả lỏng sau khi tập luyện cường độ cao."
+      }
+    ],
+    "collocations": [
+      "cool down gradually",
+      "cool down stretches",
+      "cool down after workout"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Don't forget to cool down after the race."
+      },
+      {
+        "speaker": "B",
+        "text": "Right, I'll do some gentle jogging."
+      }
+    ]
+  },
+  {
+    "phrase": "work out",
+    "meaning_vi": "tập luyện, rèn luyện thân thể",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I work out at the gym three times a week.",
+        "vi": "Tôi tập luyện ở phòng gym ba lần một tuần."
+      },
+      {
+        "en": "She works out to stay fit and healthy.",
+        "vi": "Cô ấy tập luyện để giữ dáng và khỏe mạnh."
+      }
+    ],
+    "collocations": [
+      "work out regularly",
+      "work out at home",
+      "work out with weights"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How often do you work out?"
+      },
+      {
+        "speaker": "B",
+        "text": "I try to work out at least four times a week."
+      }
+    ]
+  },
+  {
+    "phrase": "take up",
+    "meaning_vi": "bắt đầu (một môn thể thao, sở thích)",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I've decided to take up swimming to improve my fitness.",
+        "vi": "Tôi đã quyết định bắt đầu học bơi để cải thiện thể lực."
+      },
+      {
+        "en": "He took up tennis when he was in college.",
+        "vi": "Anh ấy bắt đầu chơi quần vợt từ thời đại học."
+      }
+    ],
+    "collocations": [
+      "take up a sport",
+      "take up a hobby",
+      "take up running"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Have you taken up any new sports recently?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I've taken up yoga."
+      }
+    ]
+  },
+  {
+    "phrase": "give up",
+    "meaning_vi": "từ bỏ",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "He gave up playing football after his injury.",
+        "vi": "Anh ấy đã từ bỏ chơi bóng đá sau chấn thương."
+      },
+      {
+        "en": "Don't give up; you can improve with practice.",
+        "vi": "Đừng từ bỏ; bạn có thể cải thiện bằng cách luyện tập."
+      }
+    ],
+    "collocations": [
+      "give up easily",
+      "give up hope",
+      "give up a sport"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I'm thinking of giving up running."
+      },
+      {
+        "speaker": "B",
+        "text": "Why? You've made so much progress."
+      }
+    ]
+  },
+  {
+    "phrase": "keep fit",
+    "meaning_vi": "giữ dáng, giữ gìn sức khỏe",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "Regular exercise helps you keep fit.",
+        "vi": "Tập thể dục thường xuyên giúp bạn giữ dáng."
+      },
+      {
+        "en": "She runs every morning to keep fit.",
+        "vi": "Cô ấy chạy bộ mỗi sáng để giữ dáng."
+      }
+    ],
+    "collocations": [
+      "keep fit and healthy",
+      "keep fit through exercise",
+      "keep fit by swimming"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What do you do to keep fit?"
+      },
+      {
+        "speaker": "B",
+        "text": "I go to the gym and also play badminton."
+      }
+    ]
+  },
+  {
+    "phrase": "break a record",
+    "meaning_vi": "phá kỷ lục",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "The athlete broke the world record in the 100-meter sprint.",
+        "vi": "Vận động viên đã phá kỷ lục thế giới ở nội dung chạy 100 mét."
+      },
+      {
+        "en": "She broke her own record by two seconds.",
+        "vi": "Cô ấy đã phá kỷ lục của chính mình với hai giây."
+      }
+    ],
+    "collocations": [
+      "break a world record",
+      "break a personal record",
+      "break an Olympic record"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Did you see the race? He broke the record!"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, it was amazing. He ran so fast."
+      }
+    ]
+  },
+  {
+    "phrase": "personal best",
+    "meaning_vi": "thành tích cá nhân tốt nhất",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "She achieved a personal best in the marathon.",
+        "vi": "Cô ấy đã đạt thành tích cá nhân tốt nhất ở cuộc thi marathon."
+      },
+      {
+        "en": "I'm trying to beat my personal best in the 5k run.",
+        "vi": "Tôi đang cố gắng phá thành tích cá nhân tốt nhất của mình ở đường chạy 5km."
+      }
+    ],
+    "collocations": [
+      "set a personal best",
+      "achieve a personal best",
+      "personal best time"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How did you do in the race?"
+      },
+      {
+        "speaker": "B",
+        "text": "I ran a personal best of 20 minutes."
+      }
+    ]
+  },
+  {
+    "phrase": "home advantage",
+    "meaning_vi": "lợi thế sân nhà",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "The team had home advantage in the final match.",
+        "vi": "Đội có lợi thế sân nhà trong trận chung kết."
+      },
+      {
+        "en": "Home advantage can be crucial in football.",
+        "vi": "Lợi thế sân nhà có thể rất quan trọng trong bóng đá."
+      }
+    ],
+    "collocations": [
+      "have home advantage",
+      "enjoy home advantage",
+      "lose home advantage"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you think home advantage will help them win?"
+      },
+      {
+        "speaker": "B",
+        "text": "Definitely, the crowd is behind them."
+      }
+    ]
+  },
+  {
+    "phrase": "upset victory",
+    "meaning_vi": "chiến thắng bất ngờ (đội yếu thắng đội mạnh)",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "The underdog team scored an upset victory over the champions.",
+        "vi": "Đội yếu hơn đã giành chiến thắng bất ngờ trước nhà vô địch."
+      },
+      {
+        "en": "It was an upset victory that shocked everyone.",
+        "vi": "Đó là một chiến thắng bất ngờ làm mọi người sốc."
+      }
+    ],
+    "collocations": [
+      "score an upset victory",
+      "pull off an upset victory",
+      "upset victory over"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Did you see the game? The underdog won!"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, it was a huge upset victory."
+      }
+    ]
+  },
+  {
+    "phrase": "go the distance",
+    "meaning_vi": "hoàn thành cuộc đua/trận đấu (dù khó khăn)",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "The boxer went the distance and won on points.",
+        "vi": "Võ sĩ đã hoàn thành trận đấu và thắng bằng điểm."
+      },
+      {
+        "en": "She was exhausted but determined to go the distance.",
+        "vi": "Cô ấy kiệt sức nhưng quyết tâm hoàn thành cuộc đua."
+      }
+    ],
+    "collocations": [
+      "go the full distance",
+      "go the distance in a race",
+      "able to go the distance"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you think he can finish the marathon?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, he's trained hard and can go the distance."
+      }
+    ]
+  },
+  {
+    "phrase": "call a game",
+    "meaning_vi": "bắt lỗi, thổi còi (trọng tài)",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "The referee called a foul on the defender.",
+        "vi": "Trọng tài đã thổi phạt hậu vệ."
+      },
+      {
+        "en": "He was called for a penalty in the final minute.",
+        "vi": "Anh ấy bị thổi phạt đền ở phút cuối."
+      }
+    ],
+    "collocations": [
+      "call a foul",
+      "call a penalty",
+      "call a timeout"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Why did the referee stop the play?"
+      },
+      {
+        "speaker": "B",
+        "text": "He called a foul for pushing."
+      }
+    ]
+  }
+]

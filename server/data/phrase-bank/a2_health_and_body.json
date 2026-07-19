@@ -1,0 +1,374 @@
+[
+  {
+    "phrase": "get up",
+    "meaning_vi": "thức dậy",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I get up at 6 every morning.",
+        "vi": "Tôi thức dậy lúc 6 giờ mỗi sáng."
+      },
+      {
+        "en": "What time do you get up?",
+        "vi": "Bạn thức dậy lúc mấy giờ?"
+      }
+    ],
+    "collocations": [
+      "get up early",
+      "get up late",
+      "get up on time"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What time do you usually get up?"
+      },
+      {
+        "speaker": "B",
+        "text": "I usually get up at seven."
+      }
+    ]
+  },
+  {
+    "phrase": "work out",
+    "meaning_vi": "tập thể dục",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I work out three times a week.",
+        "vi": "Tôi tập thể dục ba lần một tuần."
+      },
+      {
+        "en": "She works out at the gym.",
+        "vi": "Cô ấy tập thể dục ở phòng gym."
+      }
+    ],
+    "collocations": [
+      "work out regularly",
+      "work out at home",
+      "work out with weights"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you work out?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I work out every morning."
+      }
+    ]
+  },
+  {
+    "phrase": "feel better",
+    "meaning_vi": "cảm thấy khỏe hơn",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "I hope you feel better soon.",
+        "vi": "Mong bạn sớm cảm thấy khỏe hơn."
+      },
+      {
+        "en": "After taking the medicine, she felt better.",
+        "vi": "Sau khi uống thuốc, cô ấy cảm thấy khỏe hơn."
+      }
+    ],
+    "collocations": [
+      "feel much better",
+      "feel a little better",
+      "feel better after rest"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How are you feeling today?"
+      },
+      {
+        "speaker": "B",
+        "text": "I feel better, thank you."
+      }
+    ]
+  },
+  {
+    "phrase": "have a cold",
+    "meaning_vi": "bị cảm lạnh",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I have a cold and a sore throat.",
+        "vi": "Tôi bị cảm lạnh và đau họng."
+      },
+      {
+        "en": "She has a bad cold.",
+        "vi": "Cô ấy bị cảm nặng."
+      }
+    ],
+    "collocations": [
+      "have a bad cold",
+      "catch a cold",
+      "get over a cold"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "You sound sick. What's wrong?"
+      },
+      {
+        "speaker": "B",
+        "text": "I have a cold."
+      }
+    ]
+  },
+  {
+    "phrase": "take medicine",
+    "meaning_vi": "uống thuốc",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "You should take medicine three times a day.",
+        "vi": "Bạn nên uống thuốc ba lần một ngày."
+      },
+      {
+        "en": "Don't forget to take your medicine.",
+        "vi": "Đừng quên uống thuốc nhé."
+      }
+    ],
+    "collocations": [
+      "take medicine for a cold",
+      "take medicine before meals",
+      "take liquid medicine"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Did you take your medicine?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I just took it."
+      }
+    ]
+  },
+  {
+    "phrase": "go to the doctor",
+    "meaning_vi": "đi khám bác sĩ",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "If you feel worse, go to the doctor.",
+        "vi": "Nếu bạn cảm thấy tệ hơn, hãy đi khám bác sĩ."
+      },
+      {
+        "en": "I need to go to the doctor for a check-up.",
+        "vi": "Tôi cần đi khám bác sĩ để kiểm tra sức khỏe."
+      }
+    ],
+    "collocations": [
+      "go to the doctor for a cold",
+      "go to the doctor regularly",
+      "go to the doctor's office"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "You look pale. You should go to the doctor."
+      },
+      {
+        "speaker": "B",
+        "text": "You're right. I'll go tomorrow."
+      }
+    ]
+  },
+  {
+    "phrase": "get enough sleep",
+    "meaning_vi": "ngủ đủ giấc",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "It's important to get enough sleep every night.",
+        "vi": "Quan trọng là ngủ đủ giấc mỗi đêm."
+      },
+      {
+        "en": "I didn't get enough sleep last night.",
+        "vi": "Tôi đã không ngủ đủ giấc tối qua."
+      }
+    ],
+    "collocations": [
+      "get enough rest",
+      "get enough sleep at night",
+      "try to get enough sleep"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Why are you so tired?"
+      },
+      {
+        "speaker": "B",
+        "text": "I didn't get enough sleep last night."
+      }
+    ]
+  },
+  {
+    "phrase": "eat healthy",
+    "meaning_vi": "ăn uống lành mạnh",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "You should eat healthy to stay fit.",
+        "vi": "Bạn nên ăn uống lành mạnh để giữ dáng."
+      },
+      {
+        "en": "She tries to eat healthy every day.",
+        "vi": "Cô ấy cố gắng ăn uống lành mạnh mỗi ngày."
+      }
+    ],
+    "collocations": [
+      "eat healthy food",
+      "eat a healthy diet",
+      "eat healthy meals"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What do you do to stay healthy?"
+      },
+      {
+        "speaker": "B",
+        "text": "I eat healthy and exercise."
+      }
+    ]
+  },
+  {
+    "phrase": "break a leg",
+    "meaning_vi": "bị gãy chân",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "He broke his leg playing soccer.",
+        "vi": "Anh ấy bị gãy chân khi chơi bóng đá."
+      },
+      {
+        "en": "How did you break your leg?",
+        "vi": "Bạn bị gãy chân như thế nào?"
+      }
+    ],
+    "collocations": [
+      "break an arm",
+      "break a bone",
+      "break a leg in an accident"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What happened to your leg?"
+      },
+      {
+        "speaker": "B",
+        "text": "I broke it while running."
+      }
+    ]
+  },
+  {
+    "phrase": "have a headache",
+    "meaning_vi": "bị đau đầu",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I have a headache and need some rest.",
+        "vi": "Tôi bị đau đầu và cần nghỉ ngơi."
+      },
+      {
+        "en": "She often has headaches in the afternoon.",
+        "vi": "Cô ấy thường bị đau đầu vào buổi chiều."
+      }
+    ],
+    "collocations": [
+      "have a bad headache",
+      "have a splitting headache",
+      "get a headache from stress"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Are you okay?"
+      },
+      {
+        "speaker": "B",
+        "text": "Not really. I have a headache."
+      }
+    ]
+  },
+  {
+    "phrase": "stay in shape",
+    "meaning_vi": "giữ dáng, giữ thể lực tốt",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "I exercise every day to stay in shape.",
+        "vi": "Tôi tập thể dục mỗi ngày để giữ dáng."
+      },
+      {
+        "en": "She runs to stay in shape.",
+        "vi": "Cô ấy chạy bộ để giữ thể lực tốt."
+      }
+    ],
+    "collocations": [
+      "stay in good shape",
+      "stay in shape by exercising",
+      "try to stay in shape"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "You look fit. How do you stay in shape?"
+      },
+      {
+        "speaker": "B",
+        "text": "I go jogging every morning."
+      }
+    ]
+  },
+  {
+    "phrase": "feel sick",
+    "meaning_vi": "cảm thấy ốm, buồn nôn",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "I feel sick after eating too much.",
+        "vi": "Tôi cảm thấy buồn nôn sau khi ăn quá nhiều."
+      },
+      {
+        "en": "She feels sick and wants to lie down.",
+        "vi": "Cô ấy cảm thấy ốm và muốn nằm xuống."
+      }
+    ],
+    "collocations": [
+      "feel very sick",
+      "feel sick to the stomach",
+      "feel sick all day"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "You don't look well. Do you feel sick?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I feel a little sick."
+      }
+    ]
+  }
+]

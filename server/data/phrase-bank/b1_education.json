@@ -1,0 +1,498 @@
+[
+  {
+    "phrase": "fall behind",
+    "meaning_vi": "tụt lại phía sau",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I fell behind in math class.",
+        "vi": "Tôi bị tụt lại trong lớp toán."
+      },
+      {
+        "en": "Try not to fall behind on your homework.",
+        "vi": "Cố gắng đừng để bị chậm bài tập về nhà."
+      }
+    ],
+    "collocations": [
+      "fall behind in class",
+      "fall behind on assignments",
+      "fall behind schedule"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How's your physics class going?"
+      },
+      {
+        "speaker": "B",
+        "text": "Not great. I'm falling behind on the homework."
+      }
+    ]
+  },
+  {
+    "phrase": "catch up",
+    "meaning_vi": "theo kịp",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I need to catch up on my reading.",
+        "vi": "Tôi cần đọc để theo kịp bài."
+      },
+      {
+        "en": "She caught up with the class quickly.",
+        "vi": "Cô ấy đã theo kịp lớp nhanh chóng."
+      }
+    ],
+    "collocations": [
+      "catch up on work",
+      "catch up with classmates",
+      "catch up on missed lessons"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "You missed two weeks of school."
+      },
+      {
+        "speaker": "B",
+        "text": "I know. I'm trying to catch up."
+      }
+    ]
+  },
+  {
+    "phrase": "drop out",
+    "meaning_vi": "bỏ học",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "He dropped out of college.",
+        "vi": "Anh ấy đã bỏ học đại học."
+      },
+      {
+        "en": "Many students drop out due to financial problems.",
+        "vi": "Nhiều sinh viên bỏ học vì vấn đề tài chính."
+      }
+    ],
+    "collocations": [
+      "drop out of school",
+      "drop out of a course",
+      "dropout rate"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Did you hear about Tom?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, he dropped out of university."
+      }
+    ]
+  },
+  {
+    "phrase": "hand in",
+    "meaning_vi": "nộp (bài tập)",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Please hand in your homework by Friday.",
+        "vi": "Vui lòng nộp bài tập về nhà trước thứ Sáu."
+      },
+      {
+        "en": "I handed in my essay late.",
+        "vi": "Tôi đã nộp bài luận muộn."
+      }
+    ],
+    "collocations": [
+      "hand in an assignment",
+      "hand in a report",
+      "hand in on time"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "When is the deadline?"
+      },
+      {
+        "speaker": "B",
+        "text": "Tomorrow. Don't forget to hand in your paper."
+      }
+    ]
+  },
+  {
+    "phrase": "keep up with",
+    "meaning_vi": "theo kịp (bài học, bạn bè)",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "It's hard to keep up with all the homework.",
+        "vi": "Thật khó để theo kịp tất cả bài tập về nhà."
+      },
+      {
+        "en": "She keeps up with the latest research.",
+        "vi": "Cô ấy theo kịp các nghiên cứu mới nhất."
+      }
+    ],
+    "collocations": [
+      "keep up with studies",
+      "keep up with class",
+      "keep up with news"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "The teacher speaks so fast."
+      },
+      {
+        "speaker": "B",
+        "text": "I know. I can't keep up with her."
+      }
+    ]
+  },
+  {
+    "phrase": "look up",
+    "meaning_vi": "tra cứu",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Look up the word in a dictionary.",
+        "vi": "Tra từ đó trong từ điển."
+      },
+      {
+        "en": "I looked up the answer online.",
+        "vi": "Tôi đã tra câu trả lời trên mạng."
+      }
+    ],
+    "collocations": [
+      "look up information",
+      "look up a word",
+      "look up a reference"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What does 'ambiguous' mean?"
+      },
+      {
+        "speaker": "B",
+        "text": "I don't know. Let's look it up."
+      }
+    ]
+  },
+  {
+    "phrase": "major in",
+    "meaning_vi": "học chuyên ngành",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I'm majoring in biology.",
+        "vi": "Tôi đang học chuyên ngành sinh học."
+      },
+      {
+        "en": "What did you major in?",
+        "vi": "Bạn đã học chuyên ngành gì?"
+      }
+    ],
+    "collocations": [
+      "major in engineering",
+      "major in business",
+      "major in English"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What's your major?"
+      },
+      {
+        "speaker": "B",
+        "text": "I major in computer science."
+      }
+    ]
+  },
+  {
+    "phrase": "brush up on",
+    "meaning_vi": "ôn lại, trau dồi lại",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I need to brush up on my Spanish before the trip.",
+        "vi": "Tôi cần ôn lại tiếng Tây Ban Nha trước chuyến đi."
+      },
+      {
+        "en": "She brushed up on her math skills.",
+        "vi": "Cô ấy đã trau dồi lại kỹ năng toán."
+      }
+    ],
+    "collocations": [
+      "brush up on a language",
+      "brush up on knowledge",
+      "brush up on skills"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "You have a history exam next week, right?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I need to brush up on the dates."
+      }
+    ]
+  },
+  {
+    "phrase": "take notes",
+    "meaning_vi": "ghi chép",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "Remember to take notes during the lecture.",
+        "vi": "Nhớ ghi chép trong buổi giảng."
+      },
+      {
+        "en": "I take notes in every class.",
+        "vi": "Tôi ghi chép trong mỗi tiết học."
+      }
+    ],
+    "collocations": [
+      "take detailed notes",
+      "take notes in class",
+      "take notes on a lecture"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you take notes?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I always take notes in class."
+      }
+    ]
+  },
+  {
+    "phrase": "do research",
+    "meaning_vi": "làm nghiên cứu",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I need to do research for my paper.",
+        "vi": "Tôi cần làm nghiên cứu cho bài báo của mình."
+      },
+      {
+        "en": "She does research on climate change.",
+        "vi": "Cô ấy nghiên cứu về biến đổi khí hậu."
+      }
+    ],
+    "collocations": [
+      "do scientific research",
+      "do market research",
+      "do online research"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What are you working on?"
+      },
+      {
+        "speaker": "B",
+        "text": "I'm doing research for my thesis."
+      }
+    ]
+  },
+  {
+    "phrase": "take a test",
+    "meaning_vi": "làm bài kiểm tra",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "We are taking a test tomorrow.",
+        "vi": "Chúng tôi sẽ làm bài kiểm tra vào ngày mai."
+      },
+      {
+        "en": "I took a test in math yesterday.",
+        "vi": "Tôi đã làm bài kiểm tra toán hôm qua."
+      }
+    ],
+    "collocations": [
+      "take a final exam",
+      "take a quiz",
+      "take a placement test"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Are you ready for the test?"
+      },
+      {
+        "speaker": "B",
+        "text": "I think so. I've studied a lot."
+      }
+    ]
+  },
+  {
+    "phrase": "get a degree",
+    "meaning_vi": "lấy bằng",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "She got a degree in economics.",
+        "vi": "Cô ấy đã lấy bằng kinh tế."
+      },
+      {
+        "en": "I want to get a master's degree.",
+        "vi": "Tôi muốn lấy bằng thạc sĩ."
+      }
+    ],
+    "collocations": [
+      "get a bachelor's degree",
+      "get a college degree",
+      "get a degree in law"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What degree did you get?"
+      },
+      {
+        "speaker": "B",
+        "text": "I got a degree in engineering."
+      }
+    ]
+  },
+  {
+    "phrase": "attend class",
+    "meaning_vi": "đi học, tham dự lớp học",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I attend class every day.",
+        "vi": "Tôi đi học mỗi ngày."
+      },
+      {
+        "en": "You should attend all classes.",
+        "vi": "Bạn nên tham dự tất cả các lớp."
+      }
+    ],
+    "collocations": [
+      "attend a lecture",
+      "attend a seminar",
+      "attend school"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you attend all your classes?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, attendance is important."
+      }
+    ]
+  },
+  {
+    "phrase": "study abroad",
+    "meaning_vi": "du học",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "She plans to study abroad next year.",
+        "vi": "Cô ấy dự định du học vào năm tới."
+      },
+      {
+        "en": "Studying abroad is a great experience.",
+        "vi": "Du học là một trải nghiệm tuyệt vời."
+      }
+    ],
+    "collocations": [
+      "study abroad program",
+      "study abroad in France",
+      "study abroad for a semester"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Where do you want to study abroad?"
+      },
+      {
+        "speaker": "B",
+        "text": "I'd like to study abroad in Japan."
+      }
+    ]
+  },
+  {
+    "phrase": "hit the books",
+    "meaning_vi": "học hành chăm chỉ",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "I need to hit the books tonight.",
+        "vi": "Tôi cần học hành chăm chỉ tối nay."
+      },
+      {
+        "en": "It's time to hit the books for the exam.",
+        "vi": "Đến lúc phải học hành chăm chỉ cho kỳ thi rồi."
+      }
+    ],
+    "collocations": [
+      "hit the books hard",
+      "hit the books before a test",
+      "hit the books all night"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you want to go out tonight?"
+      },
+      {
+        "speaker": "B",
+        "text": "Sorry, I have to hit the books."
+      }
+    ]
+  },
+  {
+    "phrase": "learn by heart",
+    "meaning_vi": "học thuộc lòng",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "I learned the poem by heart.",
+        "vi": "Tôi đã học thuộc lòng bài thơ."
+      },
+      {
+        "en": "You don't need to learn everything by heart.",
+        "vi": "Bạn không cần phải học thuộc lòng mọi thứ."
+      }
+    ],
+    "collocations": [
+      "learn a speech by heart",
+      "learn vocabulary by heart",
+      "learn by heart for the exam"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How do you memorize so many words?"
+      },
+      {
+        "speaker": "B",
+        "text": "I learn them by heart."
+      }
+    ]
+  }
+]

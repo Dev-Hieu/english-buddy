@@ -1,0 +1,374 @@
+[
+  {
+    "phrase": "feel like",
+    "meaning_vi": "cảm thấy muốn",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I feel like going for a walk.",
+        "vi": "Tôi cảm thấy muốn đi dạo."
+      },
+      {
+        "en": "Do you feel like eating out?",
+        "vi": "Bạn có muốn đi ăn ngoài không?"
+      }
+    ],
+    "collocations": [
+      "feel like doing something",
+      "feel like something",
+      "feel like it"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What do you want to do this evening?"
+      },
+      {
+        "speaker": "B",
+        "text": "I feel like watching a movie."
+      }
+    ]
+  },
+  {
+    "phrase": "in my opinion",
+    "meaning_vi": "theo ý kiến của tôi",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "In my opinion, this book is very interesting.",
+        "vi": "Theo ý kiến của tôi, cuốn sách này rất thú vị."
+      },
+      {
+        "en": "In my opinion, we should leave now.",
+        "vi": "Theo tôi, chúng ta nên đi bây giờ."
+      }
+    ],
+    "collocations": [
+      "in my humble opinion",
+      "in my opinion, ...",
+      "in my view"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What do you think of this restaurant?"
+      },
+      {
+        "speaker": "B",
+        "text": "In my opinion, the food is great."
+      }
+    ]
+  },
+  {
+    "phrase": "look forward to",
+    "meaning_vi": "mong đợi",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I look forward to meeting you.",
+        "vi": "Tôi mong được gặp bạn."
+      },
+      {
+        "en": "She is looking forward to the party.",
+        "vi": "Cô ấy đang mong chờ bữa tiệc."
+      }
+    ],
+    "collocations": [
+      "look forward to + noun",
+      "look forward to + verb-ing",
+      "really look forward to"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Are you excited about the trip?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I'm looking forward to it."
+      }
+    ]
+  },
+  {
+    "phrase": "get on",
+    "meaning_vi": "hòa hợp, có mối quan hệ tốt",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I get on well with my classmates.",
+        "vi": "Tôi hòa hợp tốt với các bạn cùng lớp."
+      },
+      {
+        "en": "Do you get on with your neighbors?",
+        "vi": "Bạn có hòa thuận với hàng xóm không?"
+      }
+    ],
+    "collocations": [
+      "get on with someone",
+      "get on well",
+      "get on badly"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How do you get on with your colleagues?"
+      },
+      {
+        "speaker": "B",
+        "text": "I get on very well with them."
+      }
+    ]
+  },
+  {
+    "phrase": "fed up with",
+    "meaning_vi": "chán ngấy",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "I'm fed up with this weather.",
+        "vi": "Tôi chán ngấy thời tiết này rồi."
+      },
+      {
+        "en": "She is fed up with his excuses.",
+        "vi": "Cô ấy chán ngấy những lời bào chữa của anh ta."
+      }
+    ],
+    "collocations": [
+      "fed up with something",
+      "fed up with someone",
+      "get fed up"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Why are you so upset?"
+      },
+      {
+        "speaker": "B",
+        "text": "I'm fed up with the noise."
+      }
+    ]
+  },
+  {
+    "phrase": "think of",
+    "meaning_vi": "nghĩ về, có ý kiến về",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "What do you think of this song?",
+        "vi": "Bạn nghĩ gì về bài hát này?"
+      },
+      {
+        "en": "I think of you often.",
+        "vi": "Tôi thường nghĩ về bạn."
+      }
+    ],
+    "collocations": [
+      "think of something/someone",
+      "think of doing something",
+      "what do you think of"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What do you think of my new haircut?"
+      },
+      {
+        "speaker": "B",
+        "text": "I think it looks great!"
+      }
+    ]
+  },
+  {
+    "phrase": "agree with",
+    "meaning_vi": "đồng ý với",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I agree with you.",
+        "vi": "Tôi đồng ý với bạn."
+      },
+      {
+        "en": "She doesn't agree with his decision.",
+        "vi": "Cô ấy không đồng ý với quyết định của anh ấy."
+      }
+    ],
+    "collocations": [
+      "agree with someone",
+      "agree with something",
+      "completely agree with"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I think we should start early."
+      },
+      {
+        "speaker": "B",
+        "text": "I agree with you."
+      }
+    ]
+  },
+  {
+    "phrase": "calm down",
+    "meaning_vi": "bình tĩnh lại",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Calm down! Everything will be fine.",
+        "vi": "Bình tĩnh lại! Mọi thứ sẽ ổn thôi."
+      },
+      {
+        "en": "She took a deep breath to calm down.",
+        "vi": "Cô ấy hít một hơi thật sâu để bình tĩnh lại."
+      }
+    ],
+    "collocations": [
+      "calm down",
+      "calm someone down",
+      "try to calm down"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I'm so nervous about the exam."
+      },
+      {
+        "speaker": "B",
+        "text": "Calm down. You've studied hard."
+      }
+    ]
+  },
+  {
+    "phrase": "cheer up",
+    "meaning_vi": "vui lên",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Cheer up! It's not the end of the world.",
+        "vi": "Vui lên! Đâu phải tận thế."
+      },
+      {
+        "en": "I tried to cheer her up with a joke.",
+        "vi": "Tôi cố gắng làm cô ấy vui bằng một câu chuyện cười."
+      }
+    ],
+    "collocations": [
+      "cheer up",
+      "cheer someone up",
+      "try to cheer up"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I failed my driving test."
+      },
+      {
+        "speaker": "B",
+        "text": "Cheer up! You can try again."
+      }
+    ]
+  },
+  {
+    "phrase": "be crazy about",
+    "meaning_vi": "rất thích, mê",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "I'm crazy about chocolate.",
+        "vi": "Tôi mê sô cô la."
+      },
+      {
+        "en": "He is crazy about football.",
+        "vi": "Anh ấy rất thích bóng đá."
+      }
+    ],
+    "collocations": [
+      "be crazy about something",
+      "be crazy about someone",
+      "go crazy for"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you like that band?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I'm crazy about them."
+      }
+    ]
+  },
+  {
+    "phrase": "be keen on",
+    "meaning_vi": "thích, say mê",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "She is keen on painting.",
+        "vi": "Cô ấy thích vẽ tranh."
+      },
+      {
+        "en": "Are you keen on sports?",
+        "vi": "Bạn có thích thể thao không?"
+      }
+    ],
+    "collocations": [
+      "be keen on something",
+      "be keen on doing something",
+      "not keen on"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What are your hobbies?"
+      },
+      {
+        "speaker": "B",
+        "text": "I'm keen on photography."
+      }
+    ]
+  },
+  {
+    "phrase": "be in a good mood",
+    "meaning_vi": "có tâm trạng tốt",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "She is in a good mood today.",
+        "vi": "Hôm nay cô ấy có tâm trạng tốt."
+      },
+      {
+        "en": "I'm not in a good mood.",
+        "vi": "Tôi không có tâm trạng tốt."
+      }
+    ],
+    "collocations": [
+      "in a good mood",
+      "in a bad mood",
+      "put someone in a good mood"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Why is she smiling?"
+      },
+      {
+        "speaker": "B",
+        "text": "She's in a good mood because she got a promotion."
+      }
+    ]
+  }
+]

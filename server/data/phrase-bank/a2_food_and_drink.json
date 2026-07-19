@@ -1,0 +1,374 @@
+[
+  {
+    "phrase": "have breakfast",
+    "meaning_vi": "ăn sáng",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I usually have breakfast at 7.",
+        "vi": "Tôi thường ăn sáng lúc 7 giờ."
+      },
+      {
+        "en": "What do you have for breakfast?",
+        "vi": "Bạn ăn gì vào bữa sáng?"
+      }
+    ],
+    "collocations": [
+      "have a big breakfast",
+      "have a light breakfast",
+      "skip breakfast"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Did you have breakfast?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I had toast and eggs."
+      }
+    ]
+  },
+  {
+    "phrase": "order food",
+    "meaning_vi": "gọi món",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "Let's order food from that restaurant.",
+        "vi": "Chúng ta hãy gọi món từ nhà hàng đó."
+      },
+      {
+        "en": "I want to order food for delivery.",
+        "vi": "Tôi muốn gọi đồ ăn giao tận nhà."
+      }
+    ],
+    "collocations": [
+      "order food online",
+      "order takeaway",
+      "order a meal"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Are you hungry?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, let's order food."
+      }
+    ]
+  },
+  {
+    "phrase": "pay the bill",
+    "meaning_vi": "thanh toán hóa đơn",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "Can I pay the bill, please?",
+        "vi": "Tôi có thể thanh toán hóa đơn được không?"
+      },
+      {
+        "en": "We paid the bill and left.",
+        "vi": "Chúng tôi đã thanh toán hóa đơn và rời đi."
+      }
+    ],
+    "collocations": [
+      "pay the bill by card",
+      "pay the bill in cash",
+      "split the bill"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Let me pay the bill."
+      },
+      {
+        "speaker": "B",
+        "text": "No, it's my treat."
+      }
+    ]
+  },
+  {
+    "phrase": "cook dinner",
+    "meaning_vi": "nấu bữa tối",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I cook dinner every evening.",
+        "vi": "Tôi nấu bữa tối mỗi tối."
+      },
+      {
+        "en": "She is cooking dinner now.",
+        "vi": "Cô ấy đang nấu bữa tối."
+      }
+    ],
+    "collocations": [
+      "cook a meal",
+      "cook for someone",
+      "cook at home"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What are you doing?"
+      },
+      {
+        "speaker": "B",
+        "text": "I'm cooking dinner."
+      }
+    ]
+  },
+  {
+    "phrase": "go out for dinner",
+    "meaning_vi": "đi ăn tối ngoài hàng",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "Let's go out for dinner tonight.",
+        "vi": "Tối nay chúng ta đi ăn ngoài nhé."
+      },
+      {
+        "en": "They often go out for dinner on weekends.",
+        "vi": "Họ thường đi ăn ngoài vào cuối tuần."
+      }
+    ],
+    "collocations": [
+      "go out for lunch",
+      "go out for a meal",
+      "go out to eat"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you want to go out for dinner?"
+      },
+      {
+        "speaker": "B",
+        "text": "Sure, where shall we go?"
+      }
+    ]
+  },
+  {
+    "phrase": "have a drink",
+    "meaning_vi": "uống đồ uống",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "Would you like to have a drink?",
+        "vi": "Bạn có muốn uống gì không?"
+      },
+      {
+        "en": "Let's have a drink after work.",
+        "vi": "Chúng ta hãy đi uống nước sau giờ làm."
+      }
+    ],
+    "collocations": [
+      "have a cup of coffee",
+      "have a glass of water",
+      "have a soft drink"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I'm thirsty."
+      },
+      {
+        "speaker": "B",
+        "text": "Let's have a drink."
+      }
+    ]
+  },
+  {
+    "phrase": "taste good",
+    "meaning_vi": "ngon",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "This soup tastes good.",
+        "vi": "Món súp này ngon."
+      },
+      {
+        "en": "Does it taste good?",
+        "vi": "Nó có ngon không?"
+      }
+    ],
+    "collocations": [
+      "taste delicious",
+      "taste bad",
+      "taste sweet"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How is the pasta?"
+      },
+      {
+        "speaker": "B",
+        "text": "It tastes good."
+      }
+    ]
+  },
+  {
+    "phrase": "make coffee",
+    "meaning_vi": "pha cà phê",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I make coffee every morning.",
+        "vi": "Tôi pha cà phê mỗi sáng."
+      },
+      {
+        "en": "Can you make coffee for me?",
+        "vi": "Bạn có thể pha cà phê cho tôi không?"
+      }
+    ],
+    "collocations": [
+      "make tea",
+      "make juice",
+      "make a smoothie"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Would you like some coffee?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I'll make coffee."
+      }
+    ]
+  },
+  {
+    "phrase": "eat out",
+    "meaning_vi": "ăn ngoài hàng",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "We eat out once a week.",
+        "vi": "Chúng tôi ăn ngoài một lần một tuần."
+      },
+      {
+        "en": "Do you like to eat out?",
+        "vi": "Bạn có thích ăn ngoài không?"
+      }
+    ],
+    "collocations": [
+      "eat out often",
+      "eat out with friends",
+      "eat out at a restaurant"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Where do you want to eat?"
+      },
+      {
+        "speaker": "B",
+        "text": "I don't feel like cooking. Let's eat out."
+      }
+    ]
+  },
+  {
+    "phrase": "finish your meal",
+    "meaning_vi": "ăn hết phần ăn",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "Please finish your meal before dessert.",
+        "vi": "Hãy ăn hết phần ăn trước khi tráng miệng."
+      },
+      {
+        "en": "He didn't finish his meal.",
+        "vi": "Anh ấy không ăn hết phần ăn."
+      }
+    ],
+    "collocations": [
+      "finish your plate",
+      "finish eating",
+      "finish dinner"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Are you full?"
+      },
+      {
+        "speaker": "B",
+        "text": "No, I want to finish my meal."
+      }
+    ]
+  },
+  {
+    "phrase": "take a seat",
+    "meaning_vi": "ngồi xuống",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "Please take a seat at the table.",
+        "vi": "Xin mời ngồi vào bàn."
+      },
+      {
+        "en": "Let's take a seat and order.",
+        "vi": "Chúng ta hãy ngồi xuống và gọi món."
+      }
+    ],
+    "collocations": [
+      "take a seat at the bar",
+      "take a seat by the window",
+      "take a seat anywhere"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Welcome to our restaurant."
+      },
+      {
+        "speaker": "B",
+        "text": "Thank you. Can we take a seat over there?"
+      }
+    ]
+  },
+  {
+    "phrase": "bring the check",
+    "meaning_vi": "mang hóa đơn ra",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "Could you bring the check, please?",
+        "vi": "Bạn có thể mang hóa đơn ra được không?"
+      },
+      {
+        "en": "The waiter brought the check.",
+        "vi": "Người phục vụ đã mang hóa đơn ra."
+      }
+    ],
+    "collocations": [
+      "bring the bill",
+      "ask for the check",
+      "get the check"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Are you ready to pay?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, please bring the check."
+      }
+    ]
+  }
+]

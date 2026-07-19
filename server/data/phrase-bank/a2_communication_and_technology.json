@@ -1,0 +1,374 @@
+[
+  {
+    "phrase": "log in",
+    "meaning_vi": "đăng nhập",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Please log in to your email account.",
+        "vi": "Vui lòng đăng nhập vào tài khoản email của bạn."
+      },
+      {
+        "en": "I forgot my password and can't log in.",
+        "vi": "Tôi quên mật khẩu và không thể đăng nhập."
+      }
+    ],
+    "collocations": [
+      "log in to",
+      "log in with",
+      "log in successfully"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Can you log in to the website?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I just logged in."
+      }
+    ]
+  },
+  {
+    "phrase": "turn on",
+    "meaning_vi": "bật (thiết bị)",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Turn on the computer, please.",
+        "vi": "Làm ơn bật máy tính lên."
+      },
+      {
+        "en": "I turned on the TV to watch the news.",
+        "vi": "Tôi bật TV để xem tin tức."
+      }
+    ],
+    "collocations": [
+      "turn on the light",
+      "turn on the phone",
+      "turn on the Wi-Fi"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Can you turn on the projector?"
+      },
+      {
+        "speaker": "B",
+        "text": "Sure, I'll turn it on now."
+      }
+    ]
+  },
+  {
+    "phrase": "turn off",
+    "meaning_vi": "tắt (thiết bị)",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Don't forget to turn off the lights.",
+        "vi": "Đừng quên tắt đèn."
+      },
+      {
+        "en": "I turned off my phone during the meeting.",
+        "vi": "Tôi đã tắt điện thoại trong cuộc họp."
+      }
+    ],
+    "collocations": [
+      "turn off the computer",
+      "turn off the TV",
+      "turn off the alarm"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Should I turn off the Wi-Fi?"
+      },
+      {
+        "speaker": "B",
+        "text": "No, leave it on."
+      }
+    ]
+  },
+  {
+    "phrase": "search for",
+    "meaning_vi": "tìm kiếm",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I need to search for information online.",
+        "vi": "Tôi cần tìm kiếm thông tin trên mạng."
+      },
+      {
+        "en": "She searched for a good recipe on Google.",
+        "vi": "Cô ấy tìm kiếm một công thức nấu ăn ngon trên Google."
+      }
+    ],
+    "collocations": [
+      "search for a word",
+      "search for a file",
+      "search for a person"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What are you searching for?"
+      },
+      {
+        "speaker": "B",
+        "text": "I'm searching for a cheap hotel."
+      }
+    ]
+  },
+  {
+    "phrase": "download",
+    "meaning_vi": "tải xuống",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I downloaded a new app on my phone.",
+        "vi": "Tôi đã tải một ứng dụng mới trên điện thoại."
+      },
+      {
+        "en": "Can you download this file for me?",
+        "vi": "Bạn có thể tải tập tin này giúp tôi không?"
+      }
+    ],
+    "collocations": [
+      "download a file",
+      "download music",
+      "download an update"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Did you download the photos?"
+      },
+      {
+        "speaker": "B",
+        "text": "Not yet, I'll do it now."
+      }
+    ]
+  },
+  {
+    "phrase": "upload",
+    "meaning_vi": "tải lên",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I need to upload my homework to the class page.",
+        "vi": "Tôi cần tải bài tập về nhà lên trang lớp."
+      },
+      {
+        "en": "She uploaded a video to YouTube.",
+        "vi": "Cô ấy đã tải một video lên YouTube."
+      }
+    ],
+    "collocations": [
+      "upload a photo",
+      "upload a document",
+      "upload to the cloud"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Have you uploaded the report?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I uploaded it this morning."
+      }
+    ]
+  },
+  {
+    "phrase": "check email",
+    "meaning_vi": "kiểm tra email",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I check my email every morning.",
+        "vi": "Tôi kiểm tra email mỗi sáng."
+      },
+      {
+        "en": "Don't forget to check your email for the confirmation.",
+        "vi": "Đừng quên kiểm tra email để xác nhận."
+      }
+    ],
+    "collocations": [
+      "check email regularly",
+      "check work email",
+      "check personal email"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Did you check your email?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I saw your message."
+      }
+    ]
+  },
+  {
+    "phrase": "send a text",
+    "meaning_vi": "nhắn tin",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I'll send you a text when I arrive.",
+        "vi": "Tôi sẽ nhắn tin cho bạn khi tôi đến."
+      },
+      {
+        "en": "Please send a text to confirm.",
+        "vi": "Vui lòng nhắn tin xác nhận."
+      }
+    ],
+    "collocations": [
+      "send a text message",
+      "send a quick text",
+      "send a text back"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Can you send me a text?"
+      },
+      {
+        "speaker": "B",
+        "text": "Sure, I'll send it now."
+      }
+    ]
+  },
+  {
+    "phrase": "surf the web",
+    "meaning_vi": "lướt web",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I like to surf the web in my free time.",
+        "vi": "Tôi thích lướt web vào thời gian rảnh."
+      },
+      {
+        "en": "He was surfing the web for news.",
+        "vi": "Anh ấy đang lướt web để tìm tin tức."
+      }
+    ],
+    "collocations": [
+      "surf the internet",
+      "surf online",
+      "surf the net"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What are you doing?"
+      },
+      {
+        "speaker": "B",
+        "text": "Just surfing the web."
+      }
+    ]
+  },
+  {
+    "phrase": "make a call",
+    "meaning_vi": "gọi điện",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I need to make a call to my boss.",
+        "vi": "Tôi cần gọi điện cho sếp."
+      },
+      {
+        "en": "Can I make a call using your phone?",
+        "vi": "Tôi có thể gọi điện bằng điện thoại của bạn không?"
+      }
+    ],
+    "collocations": [
+      "make a phone call",
+      "make a quick call",
+      "make a call back"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Can I make a call?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, go ahead."
+      }
+    ]
+  },
+  {
+    "phrase": "get online",
+    "meaning_vi": "lên mạng",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I usually get online after dinner.",
+        "vi": "Tôi thường lên mạng sau bữa tối."
+      },
+      {
+        "en": "Can you get online and check the weather?",
+        "vi": "Bạn có thể lên mạng và kiểm tra thời tiết không?"
+      }
+    ],
+    "collocations": [
+      "get online quickly",
+      "get online from home",
+      "get online with a laptop"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Are you getting online now?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I'm getting online to check my email."
+      }
+    ]
+  },
+  {
+    "phrase": "hang up",
+    "meaning_vi": "tắt máy (điện thoại)",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Don't hang up, I have more to say.",
+        "vi": "Đừng tắt máy, tôi còn muốn nói thêm."
+      },
+      {
+        "en": "He hung up without saying goodbye.",
+        "vi": "Anh ấy tắt máy mà không nói lời tạm biệt."
+      }
+    ],
+    "collocations": [
+      "hang up the phone",
+      "hang up on someone",
+      "hang up abruptly"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I have to go now. Bye!"
+      },
+      {
+        "speaker": "B",
+        "text": "Okay, don't hang up yet. I need to tell you something."
+      }
+    ]
+  }
+]

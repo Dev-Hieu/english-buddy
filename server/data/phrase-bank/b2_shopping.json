@@ -1,0 +1,373 @@
+[
+  {
+    "phrase": "shop around",
+    "meaning_vi": "đi nhiều cửa hàng để so sánh giá",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Before buying a laptop, I like to shop around for the best deal.",
+        "vi": "Trước khi mua máy tính xách tay, tôi thích đi nhiều cửa hàng để tìm giá tốt nhất."
+      },
+      {
+        "en": "You should shop around before making a big purchase.",
+        "vi": "Bạn nên tham khảo nhiều nơi trước khi mua hàng đắt tiền."
+      }
+    ],
+    "collocations": [
+      "shop around for",
+      "shop around online",
+      "shop around to compare"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Where did you buy your TV?"
+      },
+      {
+        "speaker": "B",
+        "text": "I shopped around for a week before deciding."
+      }
+    ]
+  },
+  {
+    "phrase": "try on",
+    "meaning_vi": "mặc thử (quần áo)",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Can I try on this dress in the fitting room?",
+        "vi": "Tôi có thể mặc thử chiếc váy này trong phòng thử đồ không?"
+      },
+      {
+        "en": "She tried on several pairs of shoes before choosing one.",
+        "vi": "Cô ấy đã thử nhiều đôi giày trước khi chọn một đôi."
+      }
+    ],
+    "collocations": [
+      "try on clothes",
+      "try on shoes",
+      "try on accessories"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Would you like to try on that jacket?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, please. Where is the fitting room?"
+      }
+    ]
+  },
+  {
+    "phrase": "sell out",
+    "meaning_vi": "bán hết, cháy hàng",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "The new iPhone sold out within hours.",
+        "vi": "iPhone mới đã bán hết chỉ trong vài giờ."
+      },
+      {
+        "en": "Tickets for the concert sold out quickly.",
+        "vi": "Vé cho buổi hòa nhạc đã bán hết nhanh chóng."
+      }
+    ],
+    "collocations": [
+      "sell out of",
+      "sell out fast",
+      "sold out everywhere"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you have this shirt in medium?"
+      },
+      {
+        "speaker": "B",
+        "text": "Sorry, we're sold out of medium."
+      }
+    ]
+  },
+  {
+    "phrase": "pay off",
+    "meaning_vi": "trả hết (nợ)",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I finally paid off my credit card debt.",
+        "vi": "Cuối cùng tôi đã trả hết nợ thẻ tín dụng."
+      },
+      {
+        "en": "She paid off her car loan early.",
+        "vi": "Cô ấy đã trả hết khoản vay mua xe sớm."
+      }
+    ],
+    "collocations": [
+      "pay off debt",
+      "pay off a loan",
+      "pay off the balance"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How long did it take to pay off your student loan?"
+      },
+      {
+        "speaker": "B",
+        "text": "It took me five years to pay it off."
+      }
+    ]
+  },
+  {
+    "phrase": "bargain hunter",
+    "meaning_vi": "người săn hàng giá rẻ",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "My mother is a bargain hunter who always finds great deals.",
+        "vi": "Mẹ tôi là một người săn hàng giá rẻ, luôn tìm được những món hời."
+      },
+      {
+        "en": "Bargain hunters often shop during sales seasons.",
+        "vi": "Những người săn hàng giá rẻ thường mua sắm vào mùa giảm giá."
+      }
+    ],
+    "collocations": [
+      "avid bargain hunter",
+      "online bargain hunter",
+      "bargain hunter mentality"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How did you get this jacket so cheap?"
+      },
+      {
+        "speaker": "B",
+        "text": "I'm a bargain hunter – I always look for discounts."
+      }
+    ]
+  },
+  {
+    "phrase": "window shop",
+    "meaning_vi": "ngắm hàng qua cửa sổ (không mua)",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "We spent the afternoon window shopping downtown.",
+        "vi": "Chúng tôi đã dành cả buổi chiều để ngắm hàng ở trung tâm thành phố."
+      },
+      {
+        "en": "I love window shopping even if I don't buy anything.",
+        "vi": "Tôi thích ngắm hàng dù không mua gì."
+      }
+    ],
+    "collocations": [
+      "go window shopping",
+      "window shop online",
+      "just window shopping"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you want to go inside?"
+      },
+      {
+        "speaker": "B",
+        "text": "No, I'm just window shopping today."
+      }
+    ]
+  },
+  {
+    "phrase": "money-back guarantee",
+    "meaning_vi": "bảo đảm hoàn tiền",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "This product comes with a 30-day money-back guarantee.",
+        "vi": "Sản phẩm này đi kèm với bảo đảm hoàn tiền trong 30 ngày."
+      },
+      {
+        "en": "I only buy from stores that offer a money-back guarantee.",
+        "vi": "Tôi chỉ mua từ các cửa hàng có bảo đảm hoàn tiền."
+      }
+    ],
+    "collocations": [
+      "full money-back guarantee",
+      "satisfaction money-back guarantee",
+      "no-questions-asked money-back guarantee"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Are you sure about buying this online?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, they have a money-back guarantee, so it's safe."
+      }
+    ]
+  },
+  {
+    "phrase": "gift receipt",
+    "meaning_vi": "hóa đơn quà tặng",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "Please include a gift receipt in case they want to exchange it.",
+        "vi": "Vui lòng kèm hóa đơn quà tặng để phòng khi họ muốn đổi."
+      },
+      {
+        "en": "I asked for a gift receipt when I bought the present.",
+        "vi": "Tôi đã yêu cầu hóa đơn quà tặng khi mua món quà."
+      }
+    ],
+    "collocations": [
+      "ask for a gift receipt",
+      "include a gift receipt",
+      "gift receipt policy"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you want a regular receipt or a gift receipt?"
+      },
+      {
+        "speaker": "B",
+        "text": "Gift receipt, please."
+      }
+    ]
+  },
+  {
+    "phrase": "shop until you drop",
+    "meaning_vi": "mua sắm thả ga",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "We went to the mall and shopped until we dropped.",
+        "vi": "Chúng tôi đến trung tâm thương mại và mua sắm thả ga."
+      },
+      {
+        "en": "She loves to shop until she drops on weekends.",
+        "vi": "Cô ấy thích mua sắm thả ga vào cuối tuần."
+      }
+    ],
+    "collocations": [
+      "shop until you drop",
+      "shop 'til you drop"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "You bought so many things!"
+      },
+      {
+        "speaker": "B",
+        "text": "I know, I shopped until I dropped."
+      }
+    ]
+  },
+  {
+    "phrase": "splash out",
+    "meaning_vi": "chi tiêu mạnh tay, xài sang",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "We decided to splash out on a luxury hotel for our anniversary.",
+        "vi": "Chúng tôi quyết định chi mạnh tay cho một khách sạn sang trọng nhân kỷ niệm."
+      },
+      {
+        "en": "He splashed out on a new sports car.",
+        "vi": "Anh ấy đã chi mạnh tay mua một chiếc xe thể thao mới."
+      }
+    ],
+    "collocations": [
+      "splash out on",
+      "splash out for",
+      "really splash out"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "You bought a designer bag?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I decided to splash out for once."
+      }
+    ]
+  },
+  {
+    "phrase": "retail therapy",
+    "meaning_vi": "liệu pháp mua sắm (mua sắm để giải tỏa căng thẳng)",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "After a stressful week, I need some retail therapy.",
+        "vi": "Sau một tuần căng thẳng, tôi cần liệu pháp mua sắm."
+      },
+      {
+        "en": "She believes in retail therapy to cheer herself up.",
+        "vi": "Cô ấy tin vào liệu pháp mua sắm để làm mình vui lên."
+      }
+    ],
+    "collocations": [
+      "need retail therapy",
+      "indulge in retail therapy",
+      "retail therapy session"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Why did you buy so many shoes?"
+      },
+      {
+        "speaker": "B",
+        "text": "I was feeling down, so I did some retail therapy."
+      }
+    ]
+  },
+  {
+    "phrase": "buy one get one free",
+    "meaning_vi": "mua một tặng một",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "There's a buy one get one free offer on shampoo.",
+        "vi": "Có chương trình mua một tặng một cho dầu gội."
+      },
+      {
+        "en": "I love buy one get one free deals.",
+        "vi": "Tôi thích các chương trình mua một tặng một."
+      }
+    ],
+    "collocations": [
+      "BOGO",
+      "buy one get one free offer",
+      "buy one get one free sale"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Look, these shirts are buy one get one free!"
+      },
+      {
+        "speaker": "B",
+        "text": "Great, let's get two then."
+      }
+    ]
+  }
+]

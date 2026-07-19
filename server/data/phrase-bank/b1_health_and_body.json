@@ -1,0 +1,502 @@
+[
+  {
+    "phrase": "work out",
+    "meaning_vi": "tập thể dục",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I work out at the gym three times a week.",
+        "vi": "Tôi tập thể dục ở phòng gym ba lần một tuần."
+      },
+      {
+        "en": "She works out to stay healthy.",
+        "vi": "Cô ấy tập thể dục để giữ sức khỏe."
+      }
+    ],
+    "collocations": [
+      "work out regularly",
+      "work out hard",
+      "work out at home"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you work out often?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I try to work out every morning."
+      }
+    ]
+  },
+  {
+    "phrase": "come down with",
+    "meaning_vi": "mắc bệnh, bị ốm",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I think I'm coming down with a cold.",
+        "vi": "Tôi nghĩ tôi sắp bị cảm lạnh."
+      },
+      {
+        "en": "She came down with the flu last week.",
+        "vi": "Cô ấy bị cúm tuần trước."
+      }
+    ],
+    "collocations": [
+      "come down with a cold",
+      "come down with the flu",
+      "come down with something"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "You look tired. Are you okay?"
+      },
+      {
+        "speaker": "B",
+        "text": "I think I'm coming down with something."
+      }
+    ]
+  },
+  {
+    "phrase": "get over",
+    "meaning_vi": "khỏi bệnh, vượt qua",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "It took me a week to get over the flu.",
+        "vi": "Tôi mất một tuần để khỏi cúm."
+      },
+      {
+        "en": "She is still getting over her illness.",
+        "vi": "Cô ấy vẫn đang hồi phục sau cơn bệnh."
+      }
+    ],
+    "collocations": [
+      "get over a cold",
+      "get over an illness",
+      "get over it"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How are you feeling now?"
+      },
+      {
+        "speaker": "B",
+        "text": "Better. I'm finally getting over the flu."
+      }
+    ]
+  },
+  {
+    "phrase": "pass out",
+    "meaning_vi": "ngất xỉu",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "He passed out from the heat.",
+        "vi": "Anh ấy ngất xỉu vì nóng."
+      },
+      {
+        "en": "She almost passed out when she saw the blood.",
+        "vi": "Cô ấy suýt ngất khi thấy máu."
+      }
+    ],
+    "collocations": [
+      "pass out from heat",
+      "pass out from pain",
+      "almost pass out"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What happened? He just fell!"
+      },
+      {
+        "speaker": "B",
+        "text": "He passed out. Call an ambulance!"
+      }
+    ]
+  },
+  {
+    "phrase": "cut down on",
+    "meaning_vi": "cắt giảm",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I need to cut down on sugar.",
+        "vi": "Tôi cần cắt giảm đường."
+      },
+      {
+        "en": "He cut down on smoking for his health.",
+        "vi": "Anh ấy cắt giảm hút thuốc vì sức khỏe."
+      }
+    ],
+    "collocations": [
+      "cut down on sugar",
+      "cut down on fat",
+      "cut down on alcohol"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "You should cut down on coffee."
+      },
+      {
+        "speaker": "B",
+        "text": "I know, but it's hard."
+      }
+    ]
+  },
+  {
+    "phrase": "warm up",
+    "meaning_vi": "khởi động",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Always warm up before exercising.",
+        "vi": "Luôn khởi động trước khi tập thể dục."
+      },
+      {
+        "en": "She did some stretches to warm up.",
+        "vi": "Cô ấy thực hiện vài động tác giãn cơ để khởi động."
+      }
+    ],
+    "collocations": [
+      "warm up before exercise",
+      "warm up properly",
+      "warm up muscles"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Ready to run?"
+      },
+      {
+        "speaker": "B",
+        "text": "Not yet. I need to warm up first."
+      }
+    ]
+  },
+  {
+    "phrase": "cool down",
+    "meaning_vi": "thả lỏng, hạ nhiệt",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Don't forget to cool down after your workout.",
+        "vi": "Đừng quên thả lỏng sau khi tập."
+      },
+      {
+        "en": "He did some light jogging to cool down.",
+        "vi": "Anh ấy chạy nhẹ để thả lỏng."
+      }
+    ],
+    "collocations": [
+      "cool down after exercise",
+      "cool down slowly",
+      "cool down routine"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Why are you still walking?"
+      },
+      {
+        "speaker": "B",
+        "text": "I'm cooling down after my run."
+      }
+    ]
+  },
+  {
+    "phrase": "stay in shape",
+    "meaning_vi": "giữ dáng, giữ sức khỏe",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "Exercising regularly helps me stay in shape.",
+        "vi": "Tập thể dục thường xuyên giúp tôi giữ dáng."
+      },
+      {
+        "en": "She runs every day to stay in shape.",
+        "vi": "Cô ấy chạy bộ mỗi ngày để giữ dáng."
+      }
+    ],
+    "collocations": [
+      "stay in good shape",
+      "stay in shape by exercising",
+      "try to stay in shape"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "You look fit!"
+      },
+      {
+        "speaker": "B",
+        "text": "Thanks. I try to stay in shape."
+      }
+    ]
+  },
+  {
+    "phrase": "feel under the weather",
+    "meaning_vi": "cảm thấy không khỏe, hơi ốm",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "I'm feeling a bit under the weather today.",
+        "vi": "Hôm nay tôi cảm thấy hơi ốm."
+      },
+      {
+        "en": "She's been under the weather all week.",
+        "vi": "Cô ấy đã không khỏe cả tuần."
+      }
+    ],
+    "collocations": [
+      "feel under the weather",
+      "a bit under the weather",
+      "really under the weather"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "You don't look well."
+      },
+      {
+        "speaker": "B",
+        "text": "Yeah, I feel a bit under the weather."
+      }
+    ]
+  },
+  {
+    "phrase": "break a leg",
+    "meaning_vi": "chúc may mắn (trong biểu diễn)",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "Break a leg at your performance tonight!",
+        "vi": "Chúc bạn may mắn trong buổi biểu diễn tối nay!"
+      },
+      {
+        "en": "I have a big exam tomorrow. Break a leg!",
+        "vi": "Ngày mai tôi có kỳ thi lớn. Chúc may mắn!"
+      }
+    ],
+    "collocations": [
+      "break a leg",
+      "break a leg performance",
+      "break a leg show"
+    ],
+    "response": "Thanks, I will!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I have a dance recital tonight."
+      },
+      {
+        "speaker": "B",
+        "text": "Break a leg!"
+      },
+      {
+        "speaker": "A",
+        "text": "Thanks, I will!"
+      }
+    ]
+  },
+  {
+    "phrase": "black eye",
+    "meaning_vi": "mắt thâm tím",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "He got a black eye from the fight.",
+        "vi": "Anh ấy bị thâm mắt vì đánh nhau."
+      },
+      {
+        "en": "How did you get a black eye?",
+        "vi": "Sao bạn bị thâm mắt thế?"
+      }
+    ],
+    "collocations": [
+      "get a black eye",
+      "have a black eye",
+      "black eye from accident"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What happened to your eye?"
+      },
+      {
+        "speaker": "B",
+        "text": "I got a black eye playing basketball."
+      }
+    ]
+  },
+  {
+    "phrase": "sore throat",
+    "meaning_vi": "đau họng",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I have a sore throat and can't swallow.",
+        "vi": "Tôi bị đau họng và không nuốt được."
+      },
+      {
+        "en": "Drink warm tea for a sore throat.",
+        "vi": "Uống trà ấm cho đau họng."
+      }
+    ],
+    "collocations": [
+      "have a sore throat",
+      "bad sore throat",
+      "sore throat remedy"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "You sound hoarse."
+      },
+      {
+        "speaker": "B",
+        "text": "I have a sore throat."
+      }
+    ]
+  },
+  {
+    "phrase": "run a fever",
+    "meaning_vi": "bị sốt",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "The baby is running a fever.",
+        "vi": "Em bé đang bị sốt."
+      },
+      {
+        "en": "If you run a fever, stay in bed.",
+        "vi": "Nếu bạn bị sốt, hãy nằm nghỉ."
+      }
+    ],
+    "collocations": [
+      "run a high fever",
+      "run a slight fever",
+      "start running a fever"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Is your son okay?"
+      },
+      {
+        "speaker": "B",
+        "text": "He's running a fever, so we're staying home."
+      }
+    ]
+  },
+  {
+    "phrase": "take it easy",
+    "meaning_vi": "nghỉ ngơi, thư giãn",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "You should take it easy after surgery.",
+        "vi": "Bạn nên nghỉ ngơi sau phẫu thuật."
+      },
+      {
+        "en": "Take it easy and don't stress too much.",
+        "vi": "Hãy thư giãn và đừng căng thẳng quá."
+      }
+    ],
+    "collocations": [
+      "take it easy for a while",
+      "take it easy today",
+      "just take it easy"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I'm so tired from work."
+      },
+      {
+        "speaker": "B",
+        "text": "Take it easy this weekend."
+      }
+    ]
+  },
+  {
+    "phrase": "on the mend",
+    "meaning_vi": "đang hồi phục",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "He's on the mend after the accident.",
+        "vi": "Anh ấy đang hồi phục sau tai nạn."
+      },
+      {
+        "en": "My grandmother is on the mend now.",
+        "vi": "Bà tôi đang hồi phục."
+      }
+    ],
+    "collocations": [
+      "be on the mend",
+      "slowly on the mend",
+      "finally on the mend"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How's your father?"
+      },
+      {
+        "speaker": "B",
+        "text": "He's on the mend, getting better every day."
+      }
+    ]
+  },
+  {
+    "phrase": "catch some Z's",
+    "meaning_vi": "chợp mắt, ngủ một giấc",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "I need to catch some Z's before the meeting.",
+        "vi": "Tôi cần chợp mắt trước cuộc họp."
+      },
+      {
+        "en": "He caught some Z's on the couch.",
+        "vi": "Anh ấy ngủ một giấc trên ghế sofa."
+      }
+    ],
+    "collocations": [
+      "catch some Z's",
+      "try to catch some Z's",
+      "go catch some Z's"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "You look exhausted."
+      },
+      {
+        "speaker": "B",
+        "text": "I am. I'm going to catch some Z's."
+      }
+    ]
+  }
+]

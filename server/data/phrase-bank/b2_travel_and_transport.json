@@ -1,0 +1,374 @@
+[
+  {
+    "phrase": "check in",
+    "meaning_vi": "làm thủ tục (lên máy bay, nhận phòng)",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "We need to check in two hours before departure.",
+        "vi": "Chúng tôi cần làm thủ tục hai giờ trước khi khởi hành."
+      },
+      {
+        "en": "You can check in online to save time.",
+        "vi": "Bạn có thể làm thủ tục trực tuyến để tiết kiệm thời gian."
+      }
+    ],
+    "collocations": [
+      "check in online",
+      "check in at the airport",
+      "check in for a flight"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What time do we need to check in?"
+      },
+      {
+        "speaker": "B",
+        "text": "The airline says two hours before the flight."
+      }
+    ]
+  },
+  {
+    "phrase": "get around",
+    "meaning_vi": "đi lại, di chuyển (trong thành phố, khu vực)",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "It's easy to get around the city by metro.",
+        "vi": "Đi lại trong thành phố bằng tàu điện ngầm rất dễ dàng."
+      },
+      {
+        "en": "Bicycles are a great way to get around town.",
+        "vi": "Xe đạp là cách tuyệt vời để đi lại trong thị trấn."
+      }
+    ],
+    "collocations": [
+      "get around by bus",
+      "get around on foot",
+      "get around the city"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How do you get around in Hanoi?"
+      },
+      {
+        "speaker": "B",
+        "text": "I usually take the bus or a taxi."
+      }
+    ]
+  },
+  {
+    "phrase": "set off",
+    "meaning_vi": "khởi hành, lên đường",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "We set off early to avoid traffic.",
+        "vi": "Chúng tôi khởi hành sớm để tránh kẹt xe."
+      },
+      {
+        "en": "What time should we set off tomorrow?",
+        "vi": "Mai chúng ta nên lên đường lúc mấy giờ?"
+      }
+    ],
+    "collocations": [
+      "set off on a journey",
+      "set off for the airport",
+      "set off in the morning"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "When are we setting off?"
+      },
+      {
+        "speaker": "B",
+        "text": "We'll set off at 6 a.m. to catch the sunrise."
+      }
+    ]
+  },
+  {
+    "phrase": "pick up",
+    "meaning_vi": "đón (ai đó)",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I'll pick you up at the station at 8.",
+        "vi": "Tôi sẽ đón bạn ở ga lúc 8 giờ."
+      },
+      {
+        "en": "Can you pick me up from the airport?",
+        "vi": "Bạn có thể đón tôi ở sân bay không?"
+      }
+    ],
+    "collocations": [
+      "pick up someone from the airport",
+      "pick up a passenger",
+      "pick up the kids"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Can you pick me up at the hotel?"
+      },
+      {
+        "speaker": "B",
+        "text": "Sure, I'll be there at 10."
+      }
+    ]
+  },
+  {
+    "phrase": "drop off",
+    "meaning_vi": "thả (ai đó) xuống",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I can drop you off at the mall on my way.",
+        "vi": "Tôi có thể thả bạn ở trung tâm thương mại trên đường đi."
+      },
+      {
+        "en": "The bus dropped us off right in front of the museum.",
+        "vi": "Xe buýt thả chúng tôi ngay trước bảo tàng."
+      }
+    ],
+    "collocations": [
+      "drop off someone at the station",
+      "drop off luggage",
+      "drop off the car"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Where should I drop you off?"
+      },
+      {
+        "speaker": "B",
+        "text": "Just drop me off at the corner, please."
+      }
+    ]
+  },
+  {
+    "phrase": "board the plane",
+    "meaning_vi": "lên máy bay",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "Passengers are now boarding the plane at gate 12.",
+        "vi": "Hành khách hiện đang lên máy bay tại cửa 12."
+      },
+      {
+        "en": "We boarded the plane and found our seats.",
+        "vi": "Chúng tôi lên máy bay và tìm chỗ ngồi."
+      }
+    ],
+    "collocations": [
+      "board the flight",
+      "board the ship",
+      "board the train"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "When do we board the plane?"
+      },
+      {
+        "speaker": "B",
+        "text": "Boarding starts at 3:30."
+      }
+    ]
+  },
+  {
+    "phrase": "catch a flight",
+    "meaning_vi": "kịp chuyến bay",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I need to catch a flight to Ho Chi Minh City.",
+        "vi": "Tôi cần kịp chuyến bay đến Thành phố Hồ Chí Minh."
+      },
+      {
+        "en": "We barely caught our flight because of the traffic.",
+        "vi": "Chúng tôi suýt lỡ chuyến bay vì kẹt xe."
+      }
+    ],
+    "collocations": [
+      "catch a train",
+      "catch a bus",
+      "catch a taxi"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Did you catch your flight?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, but it was close."
+      }
+    ]
+  },
+  {
+    "phrase": "miss the bus",
+    "meaning_vi": "lỡ xe buýt",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I missed the bus and had to take a taxi.",
+        "vi": "Tôi lỡ xe buýt và phải đi taxi."
+      },
+      {
+        "en": "Don't miss the last bus home.",
+        "vi": "Đừng lỡ chuyến xe buýt cuối cùng về nhà."
+      }
+    ],
+    "collocations": [
+      "miss the train",
+      "miss the flight",
+      "miss the boat"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "You're late! Did you miss the bus?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yeah, I missed it by a minute."
+      }
+    ]
+  },
+  {
+    "phrase": "travel light",
+    "meaning_vi": "đi nhẹ hành lý",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "I always try to travel light with just a carry-on.",
+        "vi": "Tôi luôn cố gắng đi nhẹ hành lý chỉ với một vali xách tay."
+      },
+      {
+        "en": "Traveling light makes it easier to move around.",
+        "vi": "Đi nhẹ hành lý giúp di chuyển dễ dàng hơn."
+      }
+    ],
+    "collocations": [
+      "pack light",
+      "travel with hand luggage",
+      "minimal luggage"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How do you manage to travel light?"
+      },
+      {
+        "speaker": "B",
+        "text": "I only bring the essentials."
+      }
+    ]
+  },
+  {
+    "phrase": "jet lag",
+    "meaning_vi": "mệt mỏi do thay đổi múi giờ",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "I'm suffering from jet lag after the long flight.",
+        "vi": "Tôi bị mệt mỏi do thay đổi múi giờ sau chuyến bay dài."
+      },
+      {
+        "en": "Jet lag can take a few days to recover from.",
+        "vi": "Mệt mỏi do thay đổi múi giờ có thể mất vài ngày để hồi phục."
+      }
+    ],
+    "collocations": [
+      "suffer from jet lag",
+      "get over jet lag",
+      "jet lag symptoms"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "You look tired. Is it jet lag?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yeah, I haven't adjusted to the time difference yet."
+      }
+    ]
+  },
+  {
+    "phrase": "hop on/hop off",
+    "meaning_vi": "lên/xuống (xe buýt tham quan)",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "We bought a hop-on hop-off bus ticket for the city tour.",
+        "vi": "Chúng tôi mua vé xe buýt tham quan thành phố kiểu lên xuống tùy ý."
+      },
+      {
+        "en": "You can hop on and off at any stop.",
+        "vi": "Bạn có thể lên xuống ở bất kỳ trạm nào."
+      }
+    ],
+    "collocations": [
+      "hop-on hop-off bus",
+      "hop-on hop-off tour",
+      "hop on the train"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How does the hop-on hop-off bus work?"
+      },
+      {
+        "speaker": "B",
+        "text": "You can get off at any attraction and catch the next bus."
+      }
+    ]
+  },
+  {
+    "phrase": "all aboard",
+    "meaning_vi": "mời lên tàu/xe (thông báo chuẩn bị khởi hành)",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "The conductor shouted 'All aboard!' and the train departed.",
+        "vi": "Người soát vé hô 'Mời lên tàu!' và tàu khởi hành."
+      },
+      {
+        "en": "We heard 'All aboard!' and rushed to get on.",
+        "vi": "Chúng tôi nghe 'Mời lên tàu!' và vội vã lên."
+      }
+    ],
+    "collocations": [
+      "all aboard the train",
+      "all aboard the ship",
+      "all aboard announcement"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Did you hear the announcement?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, it's 'All aboard!' We need to get on now."
+      }
+    ]
+  }
+]

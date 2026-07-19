@@ -1,0 +1,374 @@
+[
+  {
+    "phrase": "cut down on",
+    "meaning_vi": "cắt giảm",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "We need to cut down on our use of plastic bags.",
+        "vi": "Chúng ta cần cắt giảm việc sử dụng túi ni lông."
+      },
+      {
+        "en": "The government is encouraging people to cut down on energy consumption.",
+        "vi": "Chính phủ đang khuyến khích mọi người cắt giảm tiêu thụ năng lượng."
+      }
+    ],
+    "collocations": [
+      "cut down on waste",
+      "cut down on emissions",
+      "cut down on consumption"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How can we reduce our carbon footprint?"
+      },
+      {
+        "speaker": "B",
+        "text": "We should cut down on single-use plastics."
+      }
+    ]
+  },
+  {
+    "phrase": "carbon footprint",
+    "meaning_vi": "dấu chân carbon",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "Using public transport can help reduce your carbon footprint.",
+        "vi": "Sử dụng phương tiện công cộng có thể giúp giảm dấu chân carbon của bạn."
+      },
+      {
+        "en": "Many companies are trying to lower their carbon footprint.",
+        "vi": "Nhiều công ty đang cố gắng giảm dấu chân carbon của họ."
+      }
+    ],
+    "collocations": [
+      "reduce carbon footprint",
+      "carbon footprint calculator",
+      "carbon footprint offset"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I'm trying to be more eco-friendly."
+      },
+      {
+        "speaker": "B",
+        "text": "Great! You can start by calculating your carbon footprint."
+      }
+    ]
+  },
+  {
+    "phrase": "run out of",
+    "meaning_vi": "hết, cạn kiệt",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "We've run out of clean water in the village.",
+        "vi": "Chúng tôi đã hết nước sạch trong làng."
+      },
+      {
+        "en": "The world may run out of fossil fuels one day.",
+        "vi": "Thế giới có thể cạn kiệt nhiên liệu hóa thạch một ngày nào đó."
+      }
+    ],
+    "collocations": [
+      "run out of resources",
+      "run out of time",
+      "run out of options"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Why are you so worried?"
+      },
+      {
+        "speaker": "B",
+        "text": "We're running out of clean energy sources."
+      }
+    ]
+  },
+  {
+    "phrase": "global warming",
+    "meaning_vi": "sự nóng lên toàn cầu",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "Global warming is causing the polar ice caps to melt.",
+        "vi": "Sự nóng lên toàn cầu đang làm tan các chỏm băng ở hai cực."
+      },
+      {
+        "en": "We must take action to slow down global warming.",
+        "vi": "Chúng ta phải hành động để làm chậm sự nóng lên toàn cầu."
+      }
+    ],
+    "collocations": [
+      "combat global warming",
+      "global warming effects",
+      "global warming solutions"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you think global warming is a serious issue?"
+      },
+      {
+        "speaker": "B",
+        "text": "Absolutely. It's one of the biggest challenges we face."
+      }
+    ]
+  },
+  {
+    "phrase": "clean up",
+    "meaning_vi": "dọn dẹp, làm sạch",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Volunteers are cleaning up the beach after the oil spill.",
+        "vi": "Các tình nguyện viên đang dọn dẹp bãi biển sau sự cố tràn dầu."
+      },
+      {
+        "en": "We should clean up our local park this weekend.",
+        "vi": "Chúng ta nên dọn dẹp công viên địa phương vào cuối tuần này."
+      }
+    ],
+    "collocations": [
+      "clean up pollution",
+      "clean up the environment",
+      "clean up campaign"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What are you doing this Saturday?"
+      },
+      {
+        "speaker": "B",
+        "text": "I'm joining a clean-up event at the river."
+      }
+    ]
+  },
+  {
+    "phrase": "greenhouse gas",
+    "meaning_vi": "khí nhà kính",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "Carbon dioxide is a major greenhouse gas.",
+        "vi": "Carbon dioxide là một khí nhà kính chính."
+      },
+      {
+        "en": "We need to reduce greenhouse gas emissions to combat climate change.",
+        "vi": "Chúng ta cần giảm phát thải khí nhà kính để chống biến đổi khí hậu."
+      }
+    ],
+    "collocations": [
+      "greenhouse gas emissions",
+      "greenhouse gas effect",
+      "greenhouse gas reduction"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What causes the greenhouse effect?"
+      },
+      {
+        "speaker": "B",
+        "text": "It's mainly due to greenhouse gases like CO2 and methane."
+      }
+    ]
+  },
+  {
+    "phrase": "throw away",
+    "meaning_vi": "vứt bỏ",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Don't throw away plastic bottles; recycle them.",
+        "vi": "Đừng vứt bỏ chai nhựa; hãy tái chế chúng."
+      },
+      {
+        "en": "We throw away too much food every day.",
+        "vi": "Chúng ta vứt bỏ quá nhiều thức ăn mỗi ngày."
+      }
+    ],
+    "collocations": [
+      "throw away garbage",
+      "throw away waste",
+      "throw away packaging"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What should I do with this old newspaper?"
+      },
+      {
+        "speaker": "B",
+        "text": "Don't throw it away. Put it in the recycling bin."
+      }
+    ]
+  },
+  {
+    "phrase": "sustainable development",
+    "meaning_vi": "phát triển bền vững",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "Sustainable development aims to meet our needs without harming future generations.",
+        "vi": "Phát triển bền vững nhằm đáp ứng nhu cầu của chúng ta mà không gây hại cho thế hệ tương lai."
+      },
+      {
+        "en": "Many countries are investing in sustainable development projects.",
+        "vi": "Nhiều quốc gia đang đầu tư vào các dự án phát triển bền vững."
+      }
+    ],
+    "collocations": [
+      "sustainable development goals",
+      "sustainable development practices",
+      "sustainable development policy"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How can businesses contribute to sustainability?"
+      },
+      {
+        "speaker": "B",
+        "text": "By adopting sustainable development practices."
+      }
+    ]
+  },
+  {
+    "phrase": "break down",
+    "meaning_vi": "phân hủy",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Plastic bags take hundreds of years to break down.",
+        "vi": "Túi ni lông mất hàng trăm năm để phân hủy."
+      },
+      {
+        "en": "Bacteria help break down organic waste in compost.",
+        "vi": "Vi khuẩn giúp phân hủy chất thải hữu cơ trong phân compost."
+      }
+    ],
+    "collocations": [
+      "break down waste",
+      "break down naturally",
+      "break down into"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Why is plastic so harmful?"
+      },
+      {
+        "speaker": "B",
+        "text": "Because it doesn't break down easily in the environment."
+      }
+    ]
+  },
+  {
+    "phrase": "renewable energy",
+    "meaning_vi": "năng lượng tái tạo",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "Solar and wind power are forms of renewable energy.",
+        "vi": "Năng lượng mặt trời và gió là các dạng năng lượng tái tạo."
+      },
+      {
+        "en": "Investing in renewable energy is crucial for a sustainable future.",
+        "vi": "Đầu tư vào năng lượng tái tạo là rất quan trọng cho một tương lai bền vững."
+      }
+    ],
+    "collocations": [
+      "renewable energy sources",
+      "renewable energy technology",
+      "renewable energy investment"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What can we do to reduce reliance on fossil fuels?"
+      },
+      {
+        "speaker": "B",
+        "text": "We should switch to renewable energy like solar or wind."
+      }
+    ]
+  },
+  {
+    "phrase": "give off",
+    "meaning_vi": "thải ra, phát ra",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "Factories give off harmful gases into the atmosphere.",
+        "vi": "Các nhà máy thải ra khí độc hại vào bầu khí quyển."
+      },
+      {
+        "en": "Cars give off a lot of carbon dioxide.",
+        "vi": "Xe hơi thải ra rất nhiều carbon dioxide."
+      }
+    ],
+    "collocations": [
+      "give off emissions",
+      "give off fumes",
+      "give off heat"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Why is the air quality so bad?"
+      },
+      {
+        "speaker": "B",
+        "text": "Because the power plant is giving off a lot of smoke."
+      }
+    ]
+  },
+  {
+    "phrase": "endangered species",
+    "meaning_vi": "loài có nguy cơ tuyệt chủng",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "The tiger is an endangered species due to poaching.",
+        "vi": "Hổ là loài có nguy cơ tuyệt chủng do săn trộm."
+      },
+      {
+        "en": "We must protect endangered species and their habitats.",
+        "vi": "Chúng ta phải bảo vệ các loài có nguy cơ tuyệt chủng và môi trường sống của chúng."
+      }
+    ],
+    "collocations": [
+      "endangered species list",
+      "protect endangered species",
+      "endangered species conservation"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Why are pandas considered endangered?"
+      },
+      {
+        "speaker": "B",
+        "text": "Because their natural habitat is being destroyed."
+      }
+    ]
+  }
+]

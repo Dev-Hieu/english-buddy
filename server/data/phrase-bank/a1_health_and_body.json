@@ -1,0 +1,250 @@
+[
+  {
+    "phrase": "wake up",
+    "meaning_vi": "thức dậy",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I wake up at 7 every day.",
+        "vi": "Tôi thức dậy lúc 7 giờ mỗi ngày."
+      },
+      {
+        "en": "She wakes up early.",
+        "vi": "Cô ấy thức dậy sớm."
+      }
+    ],
+    "collocations": [
+      "wake up early",
+      "wake up late",
+      "wake up suddenly"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What time do you wake up?"
+      },
+      {
+        "speaker": "B",
+        "text": "I wake up at 6."
+      }
+    ]
+  },
+  {
+    "phrase": "go to bed",
+    "meaning_vi": "đi ngủ",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I go to bed at 10 pm.",
+        "vi": "Tôi đi ngủ lúc 10 giờ tối."
+      },
+      {
+        "en": "You should go to bed early.",
+        "vi": "Bạn nên đi ngủ sớm."
+      }
+    ],
+    "collocations": [
+      "go to bed early",
+      "go to bed late",
+      "go to bed at 9"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "When do you go to bed?"
+      },
+      {
+        "speaker": "B",
+        "text": "I go to bed at 11."
+      }
+    ]
+  },
+  {
+    "phrase": "feel better",
+    "meaning_vi": "cảm thấy khỏe hơn",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "I feel better now.",
+        "vi": "Bây giờ tôi cảm thấy khỏe hơn."
+      },
+      {
+        "en": "Do you feel better?",
+        "vi": "Bạn cảm thấy khỏe hơn chưa?"
+      }
+    ],
+    "collocations": [
+      "feel better soon",
+      "feel much better",
+      "feel a little better"
+    ],
+    "response": "I'm fine, thanks.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How are you?"
+      },
+      {
+        "speaker": "B",
+        "text": "I feel better now, thanks."
+      }
+    ]
+  },
+  {
+    "phrase": "take medicine",
+    "meaning_vi": "uống thuốc",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I take medicine every morning.",
+        "vi": "Tôi uống thuốc mỗi sáng."
+      },
+      {
+        "en": "Did you take your medicine?",
+        "vi": "Bạn đã uống thuốc chưa?"
+      }
+    ],
+    "collocations": [
+      "take medicine for a cold",
+      "take medicine after meals",
+      "take liquid medicine"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you take medicine?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I take medicine for my headache."
+      }
+    ]
+  },
+  {
+    "phrase": "have a cold",
+    "meaning_vi": "bị cảm",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "I have a cold.",
+        "vi": "Tôi bị cảm."
+      },
+      {
+        "en": "She has a bad cold.",
+        "vi": "Cô ấy bị cảm nặng."
+      }
+    ],
+    "collocations": [
+      "have a cold",
+      "catch a cold",
+      "get over a cold"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "You look tired. What's wrong?"
+      },
+      {
+        "speaker": "B",
+        "text": "I have a cold."
+      }
+    ]
+  },
+  {
+    "phrase": "brush teeth",
+    "meaning_vi": "đánh răng",
+    "type": "collocation",
+    "examples": [
+      {
+        "en": "I brush my teeth twice a day.",
+        "vi": "Tôi đánh răng hai lần một ngày."
+      },
+      {
+        "en": "Don't forget to brush your teeth.",
+        "vi": "Đừng quên đánh răng."
+      }
+    ],
+    "collocations": [
+      "brush teeth after meals",
+      "brush teeth before bed",
+      "brush teeth with toothpaste"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you brush your teeth every night?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I brush my teeth before I go to bed."
+      }
+    ]
+  },
+  {
+    "phrase": "work out",
+    "meaning_vi": "tập thể dục",
+    "type": "phrasal_verb",
+    "examples": [
+      {
+        "en": "I work out at the gym.",
+        "vi": "Tôi tập thể dục ở phòng gym."
+      },
+      {
+        "en": "She works out every day.",
+        "vi": "Cô ấy tập thể dục mỗi ngày."
+      }
+    ],
+    "collocations": [
+      "work out regularly",
+      "work out at home",
+      "work out with friends"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Where do you work out?"
+      },
+      {
+        "speaker": "B",
+        "text": "I work out at home."
+      }
+    ]
+  },
+  {
+    "phrase": "stay healthy",
+    "meaning_vi": "giữ sức khỏe",
+    "type": "expression",
+    "examples": [
+      {
+        "en": "Eat well to stay healthy.",
+        "vi": "Ăn uống tốt để giữ sức khỏe."
+      },
+      {
+        "en": "Exercise helps you stay healthy.",
+        "vi": "Tập thể dục giúp bạn giữ sức khỏe."
+      }
+    ],
+    "collocations": [
+      "stay healthy and strong",
+      "stay healthy by eating right",
+      "stay healthy during winter"
+    ],
+    "response": "",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How do you stay healthy?"
+      },
+      {
+        "speaker": "B",
+        "text": "I eat well and work out."
+      }
+    ]
+  }
+]
