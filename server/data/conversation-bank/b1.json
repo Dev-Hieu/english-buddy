@@ -1,0 +1,1538 @@
+[
+  {
+    "scenario": "Job interview for a marketing position",
+    "scenario_vi": "Phỏng vấn xin việc vị trí marketing",
+    "category": "work_and_jobs",
+    "roles": [
+      "Interviewer",
+      "Candidate"
+    ],
+    "dialogue": [
+      {
+        "role": "Interviewer",
+        "en": "So, tell me about your experience in marketing.",
+        "vi": "Vậy, hãy kể cho tôi nghe về kinh nghiệm marketing của bạn."
+      },
+      {
+        "role": "Candidate",
+        "en": "Well, I've been working in digital marketing for three years now.",
+        "vi": "À, tôi đã làm marketing kỹ thuật số được ba năm rồi."
+      },
+      {
+        "role": "Interviewer",
+        "en": "Impressive. What's your biggest achievement so far?",
+        "vi": "Ấn tượng đấy. Thành tích lớn nhất của bạn là gì?"
+      },
+      {
+        "role": "Candidate",
+        "en": "I led a campaign that boosted sales by 30% in six months.",
+        "vi": "Tôi đã dẫn dắt một chiến dịch giúp tăng doanh số 30% trong sáu tháng."
+      },
+      {
+        "role": "Interviewer",
+        "en": "That's great. How do you handle tight deadlines?",
+        "vi": "Tuyệt. Bạn xử lý deadline gấp rút thế nào?"
+      },
+      {
+        "role": "Candidate",
+        "en": "I prioritize tasks and stay focused. I'm used to working under pressure.",
+        "vi": "Tôi ưu tiên công việc và tập trung. Tôi quen với áp lực rồi."
+      },
+      {
+        "role": "Interviewer",
+        "en": "Good. Why do you want to work here?",
+        "vi": "Tốt. Tại sao bạn muốn làm việc ở đây?"
+      },
+      {
+        "role": "Candidate",
+        "en": "I admire your company's innovative approach and would love to contribute.",
+        "vi": "Tôi ngưỡng mộ cách tiếp cận sáng tạo của công ty và muốn đóng góp."
+      },
+      {
+        "role": "Interviewer",
+        "en": "Any questions for me?",
+        "vi": "Có câu hỏi gì cho tôi không?"
+      },
+      {
+        "role": "Candidate",
+        "en": "Yes, what's the team culture like here?",
+        "vi": "Có, văn hóa nhóm ở đây thế nào ạ?"
+      },
+      {
+        "role": "Interviewer",
+        "en": "We're collaborative and supportive. You'll fit right in.",
+        "vi": "Chúng tôi hợp tác và hỗ trợ lẫn nhau. Bạn sẽ hòa nhập ngay thôi."
+      },
+      {
+        "role": "Candidate",
+        "en": "Sounds perfect. Thank you for your time.",
+        "vi": "Nghe tuyệt quá. Cảm ơn anh/chị đã dành thời gian."
+      }
+    ],
+    "key_phrases": [
+      "tell me about your experience",
+      "biggest achievement",
+      "handle tight deadlines",
+      "team culture"
+    ],
+    "key_vocab": [
+      "campaign",
+      "boost",
+      "deadline",
+      "innovative",
+      "collaborative"
+    ],
+    "grammar_points": [
+      "present perfect continuous (have been working)",
+      "used to + noun/gerund"
+    ],
+    "level": "b1"
+  },
+  {
+    "scenario": "Discussing a project deadline with a colleague",
+    "scenario_vi": "Bàn về deadline dự án với đồng nghiệp",
+    "category": "work_and_jobs",
+    "roles": [
+      "Manager",
+      "Employee"
+    ],
+    "dialogue": [
+      {
+        "role": "Manager",
+        "en": "Hey, got a minute? We need to talk about the project deadline.",
+        "vi": "Này, có rảnh không? Chúng ta cần nói về deadline dự án."
+      },
+      {
+        "role": "Employee",
+        "en": "Sure, what's up? I thought we were on track.",
+        "vi": "Vâng, có chuyện gì thế? Tôi tưởng mọi thứ đang ổn."
+      },
+      {
+        "role": "Manager",
+        "en": "The client just pushed the deadline forward by two weeks.",
+        "vi": "Khách hàng vừa đẩy deadline lên sớm hai tuần."
+      },
+      {
+        "role": "Employee",
+        "en": "That's tough. We'd have to work overtime to make it.",
+        "vi": "Khó đấy. Chúng ta sẽ phải tăng ca để kịp."
+      },
+      {
+        "role": "Manager",
+        "en": "I know. Can you rearrange your tasks and prioritize the critical ones?",
+        "vi": "Tôi biết. Anh có thể sắp xếp lại công việc và ưu tiên những việc quan trọng không?"
+      },
+      {
+        "role": "Employee",
+        "en": "I'll try. But I'll need help from the design team.",
+        "vi": "Tôi sẽ cố. Nhưng tôi cần sự giúp đỡ từ team thiết kế."
+      },
+      {
+        "role": "Manager",
+        "en": "I'll talk to them. Also, let's have a quick stand-up meeting every morning.",
+        "vi": "Tôi sẽ nói chuyện với họ. Ngoài ra, chúng ta họp nhanh mỗi sáng nhé."
+      },
+      {
+        "role": "Employee",
+        "en": "Good idea. That'll keep everyone aligned.",
+        "vi": "Ý hay đấy. Điều đó giúp mọi người đồng bộ."
+      },
+      {
+        "role": "Manager",
+        "en": "Great. Let's make it happen. Any other concerns?",
+        "vi": "Tốt. Cùng làm nhé. Còn lo lắng gì không?"
+      },
+      {
+        "role": "Employee",
+        "en": "Just the workload. But I'll manage.",
+        "vi": "Chỉ có khối lượng công việc thôi. Nhưng tôi sẽ xoay sở được."
+      },
+      {
+        "role": "Manager",
+        "en": "I appreciate your dedication. Let's get through this together.",
+        "vi": "Tôi đánh giá cao sự tận tâm của anh. Cùng vượt qua nhé."
+      },
+      {
+        "role": "Employee",
+        "en": "Thanks. I'll update my task list and get back to you.",
+        "vi": "Cảm ơn. Tôi sẽ cập nhật danh sách công việc và báo lại anh."
+      }
+    ],
+    "key_phrases": [
+      "push the deadline forward",
+      "work overtime",
+      "stand-up meeting",
+      "get through this together"
+    ],
+    "key_vocab": [
+      "deadline",
+      "overtime",
+      "prioritize",
+      "aligned",
+      "workload"
+    ],
+    "grammar_points": [
+      "conditional (would have to)",
+      "let's + base verb"
+    ],
+    "level": "b1"
+  },
+  {
+    "scenario": "Asking for a raise during a performance review",
+    "scenario_vi": "Xin tăng lương trong buổi đánh giá hiệu suất",
+    "category": "work_and_jobs",
+    "roles": [
+      "Employee",
+      "Manager"
+    ],
+    "dialogue": [
+      {
+        "role": "Manager",
+        "en": "Thanks for coming. Let's review your performance this quarter.",
+        "vi": "Cảm ơn anh đã đến. Cùng xem xét hiệu suất quý này nhé."
+      },
+      {
+        "role": "Employee",
+        "en": "Sure. I think I've exceeded my targets, especially in sales.",
+        "vi": "Vâng. Tôi nghĩ tôi đã vượt chỉ tiêu, đặc biệt là doanh số."
+      },
+      {
+        "role": "Manager",
+        "en": "Absolutely, your numbers are impressive. Is there anything you'd like to discuss?",
+        "vi": "Chắc chắn rồi, số liệu của anh rất ấn tượng. Anh muốn thảo luận gì không?"
+      },
+      {
+        "role": "Employee",
+        "en": "Actually, I'd like to talk about my compensation. I believe I deserve a raise.",
+        "vi": "Thực ra, tôi muốn nói về lương. Tôi tin mình xứng đáng được tăng lương."
+      },
+      {
+        "role": "Manager",
+        "en": "I see. What kind of increase are you thinking?",
+        "vi": "Tôi hiểu. Anh nghĩ mức tăng bao nhiêu?"
+      },
+      {
+        "role": "Employee",
+        "en": "Around 15% would be fair, given my contributions and market rates.",
+        "vi": "Khoảng 15% là hợp lý, dựa trên đóng góp và mặt bằng thị trường."
+      },
+      {
+        "role": "Manager",
+        "en": "That's a bit high. Let me see what we can do. I'll need to get approval from HR.",
+        "vi": "Hơi cao đấy. Để tôi xem có thể làm gì. Tôi cần xin phép HR."
+      },
+      {
+        "role": "Employee",
+        "en": "I understand. I just feel that my efforts should be recognized financially.",
+        "vi": "Tôi hiểu. Tôi chỉ cảm thấy nỗ lực của mình nên được ghi nhận về mặt tài chính."
+      },
+      {
+        "role": "Manager",
+        "en": "You've made a strong case. I'll support your request.",
+        "vi": "Anh đã đưa ra lý lẽ thuyết phục. Tôi sẽ ủng hộ yêu cầu của anh."
+      },
+      {
+        "role": "Employee",
+        "en": "Thank you. I really appreciate that.",
+        "vi": "Cảm ơn anh. Tôi rất trân trọng điều đó."
+      },
+      {
+        "role": "Manager",
+        "en": "Let's follow up next week. Keep up the good work!",
+        "vi": "Tuần sau chúng ta sẽ theo dõi tiếp. Hãy tiếp tục phát huy nhé!"
+      },
+      {
+        "role": "Employee",
+        "en": "Will do. Thanks again.",
+        "vi": "Vâng ạ. Cảm ơn lần nữa."
+      }
+    ],
+    "key_phrases": [
+      "exceeded my targets",
+      "deserve a raise",
+      "market rates",
+      "made a strong case"
+    ],
+    "key_vocab": [
+      "compensation",
+      "raise",
+      "contributions",
+      "approval",
+      "recognized"
+    ],
+    "grammar_points": [
+      "present perfect (have exceeded)",
+      "conditional (would be)"
+    ],
+    "level": "b1"
+  },
+  {
+    "scenario": "Networking at a company event",
+    "scenario_vi": "Giao lưu kết nối tại sự kiện công ty",
+    "category": "work_and_jobs",
+    "roles": [
+      "Employee",
+      "Colleague from another department"
+    ],
+    "dialogue": [
+      {
+        "role": "Employee",
+        "en": "Hi, I don't think we've met. I'm Linh from marketing.",
+        "vi": "Chào, hình như chưa gặp nhau. Tôi là Linh bên marketing."
+      },
+      {
+        "role": "Colleague from another department",
+        "en": "Nice to meet you! I'm Minh from IT. Enjoying the event?",
+        "vi": "Rất vui được gặp bạn! Tôi là Minh bên IT. Bạn có thích sự kiện không?"
+      },
+      {
+        "role": "Employee",
+        "en": "Yeah, it's great. I'm learning a lot about the new projects.",
+        "vi": "Ừ, tuyệt lắm. Tôi đang học được nhiều về các dự án mới."
+      },
+      {
+        "role": "Colleague from another department",
+        "en": "Same here. I'm working on the new CRM system. It's been quite a challenge.",
+        "vi": "Tôi cũng vậy. Tôi đang làm hệ thống CRM mới. Khá là thử thách."
+      },
+      {
+        "role": "Employee",
+        "en": "Oh, I've heard about that. How's it going so far?",
+        "vi": "Ồ, tôi có nghe nói. Dạo này thế nào rồi?"
+      },
+      {
+        "role": "Colleague from another department",
+        "en": "We're ironing out some bugs, but it should be ready next month.",
+        "vi": "Chúng tôi đang sửa vài lỗi, nhưng dự kiến hoàn thành tháng sau."
+      },
+      {
+        "role": "Employee",
+        "en": "That's good to hear. Maybe we can collaborate once it's live.",
+        "vi": "Nghe tốt đấy. Có lẽ chúng ta có thể hợp tác khi nó chạy."
+      },
+      {
+        "role": "Colleague from another department",
+        "en": "Absolutely! I'd love to see how marketing can leverage it.",
+        "vi": "Chắc chắn rồi! Tôi rất muốn xem marketing tận dụng nó thế nào."
+      },
+      {
+        "role": "Employee",
+        "en": "Let's exchange contact info. We can grab coffee sometime.",
+        "vi": "Đổi thông tin liên lạc nhé. Hôm nào cà phê nói chuyện."
+      },
+      {
+        "role": "Colleague from another department",
+        "en": "Sounds good. I'll send you an invite for a demo next week.",
+        "vi": "Tuyệt đấy. Tôi sẽ gửi bạn lời mời xem demo tuần sau."
+      },
+      {
+        "role": "Employee",
+        "en": "Perfect. Looking forward to it!",
+        "vi": "Hoàn hảo. Rất mong chờ!"
+      },
+      {
+        "role": "Colleague from another department",
+        "en": "Same here. See you around!",
+        "vi": "Tôi cũng vậy. Hẹn gặp lại!"
+      }
+    ],
+    "key_phrases": [
+      "don't think we've met",
+      "ironing out some bugs",
+      "exchange contact info",
+      "grab coffee sometime"
+    ],
+    "key_vocab": [
+      "networking",
+      "projects",
+      "CRM",
+      "bugs",
+      "demo",
+      "collaborate"
+    ],
+    "grammar_points": [
+      "present continuous (am working)",
+      "present perfect (have heard)"
+    ],
+    "level": "b1"
+  },
+  {
+    "scenario": "Requesting a haircut at a salon",
+    "scenario_vi": "Yêu cầu cắt tóc tại tiệm",
+    "category": "services",
+    "roles": [
+      "Customer",
+      "Hairdresser"
+    ],
+    "dialogue": [
+      {
+        "role": "Hairdresser",
+        "en": "Hi there! What can I do for you today?",
+        "vi": "Chào bạn! Hôm nay tôi có thể giúp gì cho bạn?"
+      },
+      {
+        "role": "Customer",
+        "en": "I'd like a trim, just take off a couple of inches.",
+        "vi": "Tôi muốn cắt tỉa một chút, chỉ cắt bỏ vài cm thôi."
+      },
+      {
+        "role": "Hairdresser",
+        "en": "Sure thing. Any particular style in mind?",
+        "vi": "Được thôi. Bạn có kiểu nào trong đầu không?"
+      },
+      {
+        "role": "Customer",
+        "en": "Not really. I'm open to suggestions, but nothing too short.",
+        "vi": "Không hẳn. Tôi muốn nghe gợi ý, nhưng đừng cắt quá ngắn."
+      },
+      {
+        "role": "Hairdresser",
+        "en": "Got it. How about layering it a bit? That'll add volume.",
+        "vi": "Hiểu rồi. Cắt lớp một chút nhé? Sẽ tạo độ phồng đấy."
+      },
+      {
+        "role": "Customer",
+        "en": "Sounds good. Go ahead.",
+        "vi": "Nghe được đấy. Làm đi ạ."
+      },
+      {
+        "role": "Hairdresser",
+        "en": "Alright, let me just wash your hair first.",
+        "vi": "Okay, để tôi gội đầu trước nhé."
+      },
+      {
+        "role": "Customer",
+        "en": "Sure, no problem.",
+        "vi": "Vâng, không vấn đề gì."
+      },
+      {
+        "role": "Hairdresser",
+        "en": "All done! What do you think?",
+        "vi": "Xong rồi! Bạn thấy thế nào?"
+      },
+      {
+        "role": "Customer",
+        "en": "It looks great! Thanks a lot.",
+        "vi": "Đẹp lắm! Cảm ơn nhiều."
+      },
+      {
+        "role": "Hairdresser",
+        "en": "You're welcome. That'll be $25.",
+        "vi": "Không có gì. Tổng cộng 25 đô la."
+      }
+    ],
+    "key_phrases": [
+      "I'd like a trim",
+      "open to suggestions",
+      "Go ahead"
+    ],
+    "key_vocab": [
+      "trim",
+      "layering",
+      "volume",
+      "wash"
+    ],
+    "grammar_points": [
+      "I'd like + noun",
+      "How about + verb-ing?"
+    ],
+    "level": "b1"
+  },
+  {
+    "scenario": "Complaining about a hotel room",
+    "scenario_vi": "Phàn nàn về phòng khách sạn",
+    "category": "services",
+    "roles": [
+      "Guest",
+      "Hotel Staff"
+    ],
+    "dialogue": [
+      {
+        "role": "Guest",
+        "en": "Excuse me, there's a problem with my room.",
+        "vi": "Xin lỗi, phòng tôi có vấn đề."
+      },
+      {
+        "role": "Hotel Staff",
+        "en": "I'm sorry to hear that. What seems to be the issue?",
+        "vi": "Tôi rất tiếc. Vấn đề là gì thế ạ?"
+      },
+      {
+        "role": "Guest",
+        "en": "The air conditioning isn't working, and it's boiling in here.",
+        "vi": "Điều hòa không hoạt động, ở đây nóng như đổ lửa."
+      },
+      {
+        "role": "Hotel Staff",
+        "en": "Oh, I apologize. Let me send someone up to fix it right away.",
+        "vi": "Ồ, tôi xin lỗi. Để tôi cho người lên sửa ngay."
+      },
+      {
+        "role": "Guest",
+        "en": "Also, the TV remote is missing batteries.",
+        "vi": "Thêm nữa, điều khiển tivi hết pin rồi."
+      },
+      {
+        "role": "Hotel Staff",
+        "en": "I'll bring fresh batteries along. Is there anything else?",
+        "vi": "Tôi sẽ mang pin mới lên. Còn gì nữa không ạ?"
+      },
+      {
+        "role": "Guest",
+        "en": "No, that's all. But I'd appreciate it if you could hurry.",
+        "vi": "Không, thế thôi. Nhưng tôi mong là anh làm nhanh."
+      },
+      {
+        "role": "Hotel Staff",
+        "en": "Of course. I'll be up in five minutes with the technician.",
+        "vi": "Tất nhiên. Tôi sẽ lên trong năm phút cùng kỹ thuật viên."
+      },
+      {
+        "role": "Guest",
+        "en": "Thank you. I'll be waiting.",
+        "vi": "Cảm ơn. Tôi sẽ chờ."
+      }
+    ],
+    "key_phrases": [
+      "there's a problem with",
+      "I'm sorry to hear that",
+      "I'd appreciate it if"
+    ],
+    "key_vocab": [
+      "air conditioning",
+      "remote",
+      "batteries",
+      "technician",
+      "fix"
+    ],
+    "grammar_points": [
+      "present continuous for current issue",
+      "I'd appreciate it if + past simple"
+    ],
+    "level": "b1"
+  },
+  {
+    "scenario": "Asking for tech support",
+    "scenario_vi": "Yêu cầu hỗ trợ kỹ thuật",
+    "category": "services",
+    "roles": [
+      "Customer",
+      "Support Agent"
+    ],
+    "dialogue": [
+      {
+        "role": "Customer",
+        "en": "Hi, my internet has been down since yesterday.",
+        "vi": "Chào anh, mạng internet của tôi bị mất từ hôm qua."
+      },
+      {
+        "role": "Support Agent",
+        "en": "I'm sorry about that. Let me check your account.",
+        "vi": "Tôi xin lỗi. Để tôi kiểm tra tài khoản của anh."
+      },
+      {
+        "role": "Customer",
+        "en": "I've already restarted the router twice, but no luck.",
+        "vi": "Tôi đã khởi động lại router hai lần rồi mà không được."
+      },
+      {
+        "role": "Support Agent",
+        "en": "Alright, I see a signal issue in your area. We're working on it.",
+        "vi": "Được rồi, tôi thấy có vấn đề tín hiệu trong khu vực của anh. Chúng tôi đang xử lý."
+      },
+      {
+        "role": "Customer",
+        "en": "How long is it going to take? I need it for work.",
+        "vi": "Mất bao lâu? Tôi cần mạng để làm việc."
+      },
+      {
+        "role": "Support Agent",
+        "en": "It should be back within a couple of hours. I'll send you an update.",
+        "vi": "Chắc trong vòng vài giờ nữa sẽ có lại. Tôi sẽ gửi cập nhật cho anh."
+      },
+      {
+        "role": "Customer",
+        "en": "Alright, thanks. I'll wait.",
+        "vi": "Được rồi, cảm ơn. Tôi sẽ chờ."
+      },
+      {
+        "role": "Support Agent",
+        "en": "No problem. Sorry for the inconvenience.",
+        "vi": "Không có gì. Xin lỗi vì sự bất tiện."
+      }
+    ],
+    "key_phrases": [
+      "has been down since",
+      "no luck",
+      "How long is it going to take?"
+    ],
+    "key_vocab": [
+      "internet",
+      "router",
+      "signal",
+      "update",
+      "inconvenience"
+    ],
+    "grammar_points": [
+      "present perfect continuous for duration",
+      "going to for future"
+    ],
+    "level": "b1"
+  },
+  {
+    "scenario": "Two friends discussing their online learning experiences",
+    "scenario_vi": "Hai bạn thảo luận về trải nghiệm học trực tuyến",
+    "category": "education",
+    "roles": [
+      "Student A",
+      "Student B"
+    ],
+    "dialogue": [
+      {
+        "role": "Student A",
+        "en": "I've been taking an online course in data science lately.",
+        "vi": "Dạo này tôi đang học một khóa học trực tuyến về khoa học dữ liệu."
+      },
+      {
+        "role": "Student B",
+        "en": "How are you finding it? I've heard it's quite demanding.",
+        "vi": "Bạn thấy thế nào? Tôi nghe nói nó khá nặng đấy."
+      },
+      {
+        "role": "Student A",
+        "en": "It's a lot of work, but I'm really enjoying it. The flexibility is great.",
+        "vi": "Nhiều việc thật, nhưng tôi rất thích nó. Sự linh hoạt rất tuyệt."
+      },
+      {
+        "role": "Student B",
+        "en": "I prefer face-to-face classes myself. I find it hard to stay motivated online.",
+        "vi": "Cá nhân tôi thích lớp học trực tiếp hơn. Tôi thấy khó duy trì động lực khi học online."
+      },
+      {
+        "role": "Student A",
+        "en": "I get that. But with recorded lectures, I can pause and rewatch tough parts.",
+        "vi": "Tôi hiểu. Nhưng với bài giảng được ghi lại, tôi có thể tạm dừng và xem lại những phần khó."
+      },
+      {
+        "role": "Student B",
+        "en": "True. Maybe I should give it another shot. What platform are you using?",
+        "vi": "Đúng vậy. Có lẽ tôi nên thử lại. Bạn đang dùng nền tảng nào?"
+      },
+      {
+        "role": "Student A",
+        "en": "Coursera. The courses are well-structured and the forums are active.",
+        "vi": "Coursera. Các khóa học được cấu trúc tốt và diễn đàn rất sôi nổi."
+      },
+      {
+        "role": "Student B",
+        "en": "I might check it out. Thanks for the recommendation!",
+        "vi": "Tôi có thể xem thử. Cảm ơn bạn đã gợi ý!"
+      }
+    ],
+    "key_phrases": [
+      "How are you finding it?",
+      "give it another shot",
+      "check it out"
+    ],
+    "key_vocab": [
+      "online course",
+      "flexibility",
+      "motivated",
+      "recorded lectures",
+      "platform"
+    ],
+    "grammar_points": [
+      "Present perfect continuous (I've been taking)",
+      "Prefer + noun/gerund",
+      "Modal verbs for suggestions (might, should)"
+    ],
+    "level": "b1"
+  },
+  {
+    "scenario": "A teacher and student discussing exam preparation",
+    "scenario_vi": "Giáo viên và học sinh thảo luận về việc ôn thi",
+    "category": "education",
+    "roles": [
+      "Teacher",
+      "Student"
+    ],
+    "dialogue": [
+      {
+        "role": "Teacher",
+        "en": "I notice you've been struggling with the past papers. What seems to be the issue?",
+        "vi": "Tôi thấy em đang gặp khó khăn với các đề thi cũ. Vấn đề là gì?"
+      },
+      {
+        "role": "Student",
+        "en": "I just can't seem to finish on time. There's so much to write!",
+        "vi": "Em dường như không thể làm kịp giờ. Có quá nhiều thứ phải viết!"
+      },
+      {
+        "role": "Teacher",
+        "en": "Time management is key. Have you tried practicing under timed conditions?",
+        "vi": "Quản lý thời gian là chìa khóa. Em đã thử luyện tập trong điều kiện tính giờ chưa?"
+      },
+      {
+        "role": "Student",
+        "en": "Not really. I usually just do the questions at my own pace.",
+        "vi": "Chưa ạ. Em thường chỉ làm bài theo tốc độ của mình."
+      },
+      {
+        "role": "Teacher",
+        "en": "That's a common mistake. I'd recommend setting a timer for each section.",
+        "vi": "Đó là một lỗi phổ biến. Tôi khuyên em nên đặt đồng hồ cho từng phần."
+      },
+      {
+        "role": "Student",
+        "en": "Good idea. Also, I'm not sure how to structure my essays.",
+        "vi": "Ý hay đấy. Ngoài ra, em không chắc cách cấu trúc bài luận của mình."
+      },
+      {
+        "role": "Teacher",
+        "en": "Let me show you a simple framework: introduction, body paragraphs, and conclusion.",
+        "vi": "Để tôi chỉ em một khung đơn giản: mở bài, thân bài và kết luận."
+      },
+      {
+        "role": "Student",
+        "en": "That sounds helpful. I'll give it a try. Thanks, teacher!",
+        "vi": "Nghe có vẻ hữu ích. Em sẽ thử. Cảm ơn thầy/cô!"
+      }
+    ],
+    "key_phrases": [
+      "struggling with",
+      "time management is key",
+      "give it a try"
+    ],
+    "key_vocab": [
+      "past papers",
+      "timed conditions",
+      "framework",
+      "essay"
+    ],
+    "grammar_points": [
+      "Present perfect continuous (have been struggling)",
+      "Have you tried + gerund?",
+      "I'd recommend + gerund"
+    ],
+    "level": "b1"
+  },
+  {
+    "scenario": "Two university students discussing their majors",
+    "scenario_vi": "Hai sinh viên đại học thảo luận về chuyên ngành của họ",
+    "category": "education",
+    "roles": [
+      "Student A",
+      "Student B"
+    ],
+    "dialogue": [
+      {
+        "role": "Student A",
+        "en": "I'm thinking of switching my major from business to graphic design.",
+        "vi": "Tôi đang nghĩ đến việc chuyển ngành từ kinh doanh sang thiết kế đồ họa."
+      },
+      {
+        "role": "Student B",
+        "en": "Really? That's a big change. What made you decide that?",
+        "vi": "Thật sao? Đó là một thay đổi lớn. Điều gì khiến bạn quyết định vậy?"
+      },
+      {
+        "role": "Student A",
+        "en": "I've always been passionate about art, and I feel more creative in design.",
+        "vi": "Tôi luôn đam mê nghệ thuật, và tôi cảm thấy sáng tạo hơn trong thiết kế."
+      },
+      {
+        "role": "Student B",
+        "en": "I see. But won't you lose a year? You're already in your second year.",
+        "vi": "Tôi hiểu. Nhưng bạn sẽ mất một năm phải không? Bạn đã học năm thứ hai rồi."
+      },
+      {
+        "role": "Student A",
+        "en": "Yeah, I'll have to take some extra courses, but I think it's worth it.",
+        "vi": "Ừ, tôi sẽ phải học thêm vài môn, nhưng tôi nghĩ nó đáng giá."
+      },
+      {
+        "role": "Student B",
+        "en": "That's true. It's better to do something you love. I'm sticking with engineering, though.",
+        "vi": "Đúng vậy. Tốt hơn là làm điều mình yêu thích. Tuy nhiên, tôi vẫn theo ngành kỹ thuật."
+      },
+      {
+        "role": "Student A",
+        "en": "Engineering is tough! How are you handling the workload?",
+        "vi": "Kỹ thuật khó đấy! Bạn xử lý khối lượng công việc thế nào?"
+      },
+      {
+        "role": "Student B",
+        "en": "It's intense, but I manage. Group study helps a lot.",
+        "vi": "Nó căng thẳng, nhưng tôi xoay sở được. Học nhóm giúp ích nhiều."
+      }
+    ],
+    "key_phrases": [
+      "switching my major",
+      "stick with",
+      "handle the workload"
+    ],
+    "key_vocab": [
+      "major",
+      "passionate",
+      "creative",
+      "extra courses",
+      "group study"
+    ],
+    "grammar_points": [
+      "Present continuous for future plans (I'm thinking of...)",
+      "Future with 'will' (I'll have to)",
+      "Gerund after 'stick with' (sticking with)"
+    ],
+    "level": "b1"
+  },
+  {
+    "scenario": "Asking for directions at a train station",
+    "scenario_vi": "Hỏi đường ở ga tàu",
+    "category": "travel_and_transport",
+    "roles": [
+      "Tourist",
+      "Station Staff"
+    ],
+    "dialogue": [
+      {
+        "role": "Tourist",
+        "en": "Excuse me, could you tell me which platform the train to Ho Chi Minh City leaves from?",
+        "vi": "Xin lỗi, anh/chị có thể chỉ cho tôi biết tàu đi Thành phố Hồ Chí Minh xuất phát từ sân ga nào không?"
+      },
+      {
+        "role": "Station Staff",
+        "en": "Sure, it's platform 3. But you'd better hurry – it's departing in 10 minutes.",
+        "vi": "Chắc chắn rồi, sân ga số 3. Nhưng bạn nên nhanh lên – tàu sắp khởi hành trong 10 phút nữa đấy."
+      },
+      {
+        "role": "Tourist",
+        "en": "Oh, I see. And is there a ticket machine nearby? I need to buy a ticket.",
+        "vi": "Ồ, tôi hiểu rồi. Và có máy bán vé gần đây không? Tôi cần mua vé."
+      },
+      {
+        "role": "Station Staff",
+        "en": "Yes, there's one right over there, next to the newsstand. You can get a single or return ticket.",
+        "vi": "Có, có một cái ngay đằng kia, cạnh quầy báo. Bạn có thể mua vé một chiều hoặc khứ hồi."
+      },
+      {
+        "role": "Tourist",
+        "en": "Great, thanks a lot. One more thing – do I need to validate my ticket before boarding?",
+        "vi": "Tuyệt, cảm ơn nhiều. Còn một điều nữa – tôi có cần xác nhận vé trước khi lên tàu không?"
+      },
+      {
+        "role": "Station Staff",
+        "en": "No, you don't have to. Just show it to the conductor when you board. Have a safe trip!",
+        "vi": "Không, bạn không cần đâu. Chỉ cần đưa cho người soát vé khi lên tàu thôi. Chúc bạn chuyến đi an toàn!"
+      }
+    ],
+    "key_phrases": [
+      "could you tell me",
+      "you'd better hurry",
+      "one more thing"
+    ],
+    "key_vocab": [
+      "platform",
+      "ticket machine",
+      "single ticket",
+      "return ticket",
+      "validate",
+      "conductor"
+    ],
+    "grammar_points": [
+      "indirect questions (Could you tell me...)",
+      "had better + infinitive"
+    ],
+    "level": "b1"
+  },
+  {
+    "scenario": "Renting a car at the airport",
+    "scenario_vi": "Thuê xe tại sân bay",
+    "category": "travel_and_transport",
+    "roles": [
+      "Customer",
+      "Rental Agent"
+    ],
+    "dialogue": [
+      {
+        "role": "Rental Agent",
+        "en": "Hi there! Welcome to Wheels Rent-a-Car. How can I help you?",
+        "vi": "Xin chào! Chào mừng bạn đến với Wheels Rent-a-Car. Tôi có thể giúp gì cho bạn?"
+      },
+      {
+        "role": "Customer",
+        "en": "Hi, I'd like to rent a car for three days. What models do you have available?",
+        "vi": "Chào, tôi muốn thuê một chiếc xe trong ba ngày. Anh có những mẫu xe nào sẵn có?"
+      },
+      {
+        "role": "Rental Agent",
+        "en": "We have compact cars, sedans, and SUVs. I'd recommend a compact if you're driving in the city – it's easier to park.",
+        "vi": "Chúng tôi có xe nhỏ gọn, xe sedan và SUV. Tôi khuyên bạn nên chọn xe nhỏ gọn nếu bạn lái trong thành phố – đỗ xe dễ hơn."
+      },
+      {
+        "role": "Customer",
+        "en": "Sounds good. What's the daily rate for a compact?",
+        "vi": "Nghe ổn đấy. Giá thuê mỗi ngày cho xe nhỏ gọn là bao nhiêu?"
+      },
+      {
+        "role": "Rental Agent",
+        "en": "It's $45 per day, with unlimited mileage. But you'll need to put down a deposit of $200.",
+        "vi": "45 đô một ngày, không giới hạn số dặm. Nhưng bạn cần đặt cọc 200 đô."
+      },
+      {
+        "role": "Customer",
+        "en": "Alright, I'll take it. Do I need to bring it back with a full tank?",
+        "vi": "Được rồi, tôi lấy xe. Tôi có cần trả xe với bình xăng đầy không?"
+      },
+      {
+        "role": "Rental Agent",
+        "en": "Yes, please. Otherwise, we'll charge you for refueling. And just so you know, insurance is included in the price.",
+        "vi": "Vâng, làm ơn. Nếu không, chúng tôi sẽ tính phí đổ xăng. Và bạn nên biết, bảo hiểm đã bao gồm trong giá."
+      },
+      {
+        "role": "Customer",
+        "en": "Perfect. Could I see the contract, please?",
+        "vi": "Tuyệt vời. Cho tôi xem hợp đồng được không?"
+      }
+    ],
+    "key_phrases": [
+      "What's the daily rate?",
+      "put down a deposit",
+      "just so you know"
+    ],
+    "key_vocab": [
+      "rent",
+      "compact car",
+      "sedan",
+      "SUV",
+      "deposit",
+      "insurance"
+    ],
+    "grammar_points": [
+      "would like + infinitive",
+      "need to + infinitive",
+      "otherwise clause"
+    ],
+    "level": "b1"
+  },
+  {
+    "scenario": "Booking a flight online and confirming details",
+    "scenario_vi": "Đặt vé máy bay trực tuyến và xác nhận chi tiết",
+    "category": "travel_and_transport",
+    "roles": [
+      "Customer",
+      "Customer Service Agent"
+    ],
+    "dialogue": [
+      {
+        "role": "Customer Service Agent",
+        "en": "Good morning, Skyline Airlines. How may I assist you today?",
+        "vi": "Chào buổi sáng, Hãng hàng không Skyline. Tôi có thể giúp gì cho bạn hôm nay?"
+      },
+      {
+        "role": "Customer",
+        "en": "Hi, I'm calling to confirm my booking for tomorrow's flight to Da Nang.",
+        "vi": "Chào, tôi gọi để xác nhận vé đã đặt cho chuyến bay ngày mai đến Đà Nẵng."
+      },
+      {
+        "role": "Customer Service Agent",
+        "en": "Sure, may I have your booking reference number?",
+        "vi": "Chắc chắn rồi, bạn cho tôi số tham chiếu đặt vé được không?"
+      },
+      {
+        "role": "Customer",
+        "en": "It's ABC123. I'd like to check if there are any changes to the departure time.",
+        "vi": "Là ABC123. Tôi muốn kiểm tra xem có thay đổi gì về giờ khởi hành không."
+      },
+      {
+        "role": "Customer Service Agent",
+        "en": "Let me pull it up. Your flight is on time, departing at 2:30 PM from gate 7. No changes.",
+        "vi": "Để tôi tra cứu. Chuyến bay của bạn đúng giờ, khởi hành lúc 2:30 chiều từ cửa số 7. Không có thay đổi."
+      },
+      {
+        "role": "Customer",
+        "en": "Great. Also, can I request a window seat? I booked an aisle seat online by mistake.",
+        "vi": "Tuyệt. Ngoài ra, tôi có thể yêu cầu ghế cạnh cửa sổ không? Tôi đã đặt nhầm ghế lối đi trên mạng."
+      },
+      {
+        "role": "Customer Service Agent",
+        "en": "Of course. Let me see if there's one available... Yes, I've switched you to 14A, a window seat. Is there anything else?",
+        "vi": "Tất nhiên. Để tôi xem có ghế trống không... Có, tôi đã chuyển bạn sang 14A, ghế cạnh cửa sổ. Còn gì nữa không?"
+      },
+      {
+        "role": "Customer",
+        "en": "No, that's all. Thanks for your help!",
+        "vi": "Không, thế thôi. Cảm ơn bạn đã giúp đỡ!"
+      }
+    ],
+    "key_phrases": [
+      "confirm my booking",
+      "pull it up",
+      "by mistake"
+    ],
+    "key_vocab": [
+      "booking reference",
+      "departure time",
+      "gate",
+      "window seat",
+      "aisle seat"
+    ],
+    "grammar_points": [
+      "present continuous for future (departing)",
+      "past simple for completed actions (booked)",
+      "can I request...?"
+    ],
+    "level": "b1"
+  },
+  {
+    "scenario": "Talking to a doctor about back pain",
+    "scenario_vi": "Nói chuyện với bác sĩ về đau lưng",
+    "category": "health_and_body",
+    "roles": [
+      "Patient",
+      "Doctor"
+    ],
+    "dialogue": [
+      {
+        "role": "Doctor",
+        "en": "What brings you in today?",
+        "vi": "Hôm nay anh/chị đến khám vì vấn đề gì ạ?"
+      },
+      {
+        "role": "Patient",
+        "en": "I've been having this nagging pain in my lower back for a few weeks.",
+        "vi": "Tôi bị đau âm ỉ ở vùng lưng dưới vài tuần nay rồi."
+      },
+      {
+        "role": "Doctor",
+        "en": "Does it get worse when you bend or lift something?",
+        "vi": "Có đau hơn khi anh/chị cúi xuống hoặc nhấc đồ không?"
+      },
+      {
+        "role": "Patient",
+        "en": "Yeah, especially after sitting at my desk all day.",
+        "vi": "Có, nhất là sau khi ngồi bàn làm việc cả ngày."
+      },
+      {
+        "role": "Doctor",
+        "en": "It sounds like a muscle strain. Have you tried any painkillers?",
+        "vi": "Có vẻ là căng cơ. Anh/chị đã dùng thuốc giảm đau nào chưa?"
+      },
+      {
+        "role": "Patient",
+        "en": "I took ibuprofen a couple of times, but it only helps temporarily.",
+        "vi": "Tôi uống ibuprofen vài lần, nhưng chỉ đỡ tạm thời thôi."
+      },
+      {
+        "role": "Doctor",
+        "en": "I'd recommend some stretching exercises and a better chair. Avoid heavy lifting for now.",
+        "vi": "Tôi khuyên anh/chị nên tập giãn cơ và dùng ghế tốt hơn. Tránh nhấc đồ nặng nhé."
+      },
+      {
+        "role": "Patient",
+        "en": "Should I come back if it doesn't get better?",
+        "vi": "Nếu không đỡ, tôi có nên quay lại không?"
+      },
+      {
+        "role": "Doctor",
+        "en": "Yes, if the pain persists after a week, we might need an X-ray.",
+        "vi": "Có, nếu đau kéo dài sau một tuần, chúng ta có thể cần chụp X-quang."
+      },
+      {
+        "role": "Patient",
+        "en": "Okay, I'll try the exercises. Thanks, doctor.",
+        "vi": "Vâng, tôi sẽ tập thử. Cảm ơn bác sĩ."
+      },
+      {
+        "role": "Doctor",
+        "en": "Take care, and don't hesitate to call if you have any concerns.",
+        "vi": "Giữ gìn sức khỏe nhé, và đừng ngại gọi nếu có gì thắc mắc."
+      }
+    ],
+    "key_phrases": [
+      "What brings you in today?",
+      "nagging pain",
+      "muscle strain",
+      "avoid heavy lifting",
+      "if it doesn't get better"
+    ],
+    "key_vocab": [
+      "pain",
+      "strain",
+      "stretching",
+      "X-ray",
+      "painkillers",
+      "persist"
+    ],
+    "grammar_points": [
+      "Present perfect continuous: have been having",
+      "Conditional: if it doesn't get better",
+      "Modal verbs: should, might"
+    ],
+    "level": "b1"
+  },
+  {
+    "scenario": "Asking a friend about their cold symptoms",
+    "scenario_vi": "Hỏi bạn về triệu chứng cảm lạnh",
+    "category": "health_and_body",
+    "roles": [
+      "Friend 1",
+      "Friend 2"
+    ],
+    "dialogue": [
+      {
+        "role": "Friend 1",
+        "en": "Hey, you sound awful! Are you okay?",
+        "vi": "Này, giọng bạn nghe tệ quá! Bạn ổn không?"
+      },
+      {
+        "role": "Friend 2",
+        "en": "I think I'm coming down with something. My throat is really sore.",
+        "vi": "Chắc mình sắp bị ốm rồi. Cổ họng đau quá."
+      },
+      {
+        "role": "Friend 1",
+        "en": "Oh no, have you taken anything for it?",
+        "vi": "Trời, bạn uống thuốc gì chưa?"
+      },
+      {
+        "role": "Friend 2",
+        "en": "Not yet. I've just been drinking hot tea with honey.",
+        "vi": "Chưa. Mình chỉ uống trà nóng với mật ong thôi."
+      },
+      {
+        "role": "Friend 1",
+        "en": "You should try some ginger tea too. It works wonders.",
+        "vi": "Bạn nên thử trà gừng nữa. Hiệu quả lắm đấy."
+      },
+      {
+        "role": "Friend 2",
+        "en": "I'll give it a shot. Also, I've been sneezing non-stop.",
+        "vi": "Mình sẽ thử. Mà mình cũng hắt hơi liên tục nữa."
+      },
+      {
+        "role": "Friend 1",
+        "en": "Sounds like a cold. Have you checked if you have a fever?",
+        "vi": "Nghe như cảm lạnh. Bạn đo nhiệt độ chưa?"
+      },
+      {
+        "role": "Friend 2",
+        "en": "I don't have a thermometer, but I feel a bit warm.",
+        "vi": "Mình không có nhiệt kế, nhưng thấy hơi nóng."
+      },
+      {
+        "role": "Friend 1",
+        "en": "You'd better rest and stay hydrated. I can bring you some soup later.",
+        "vi": "Bạn nên nghỉ ngơi và uống nhiều nước. Tí mình mang súp cho nhé."
+      },
+      {
+        "role": "Friend 2",
+        "en": "That's so kind of you. Thanks, I could really use that.",
+        "vi": "Bạn tốt quá. Cảm ơn, mình đang cần lắm đây."
+      }
+    ],
+    "key_phrases": [
+      "coming down with something",
+      "work wonders",
+      "give it a shot",
+      "could really use that"
+    ],
+    "key_vocab": [
+      "throat",
+      "sneezing",
+      "fever",
+      "thermometer",
+      "hydrated",
+      "sore"
+    ],
+    "grammar_points": [
+      "Present continuous for symptoms: I'm coming down",
+      "Present perfect: I've been drinking",
+      "Modal verbs: should, had better"
+    ],
+    "level": "b1"
+  },
+  {
+    "scenario": "Discussing a movie at a coffee shop",
+    "scenario_vi": "Bàn luận về một bộ phim tại quán cà phê",
+    "category": "entertainment_and_media",
+    "roles": [
+      "Mai",
+      "Lan"
+    ],
+    "dialogue": [
+      {
+        "role": "Mai",
+        "en": "Have you seen the new sci-fi movie yet?",
+        "vi": "Bạn xem bộ phim khoa học viễn tưởng mới chưa?"
+      },
+      {
+        "role": "Lan",
+        "en": "Not yet, but I heard it's a real blockbuster.",
+        "vi": "Chưa, nhưng mình nghe nói nó là bom tấn đấy."
+      },
+      {
+        "role": "Mai",
+        "en": "It is! The special effects blew me away.",
+        "vi": "Đúng vậy! Hiệu ứng đặc biệt làm mình choáng ngợp."
+      },
+      {
+        "role": "Lan",
+        "en": "I'm not a big fan of sci-fi, but the trailer looked cool.",
+        "vi": "Mình không phải fan của sci-fi, nhưng trailer trông ngầu đấy."
+      },
+      {
+        "role": "Mai",
+        "en": "You should give it a shot. The plot is surprisingly deep.",
+        "vi": "Bạn nên thử xem. Cốt truyện sâu sắc bất ngờ."
+      },
+      {
+        "role": "Lan",
+        "en": "Alright, I'll check it out this weekend. Who's in the cast?",
+        "vi": "Được rồi, cu���i tuần này mình sẽ xem. Dàn diễn viên gồm những ai?"
+      },
+      {
+        "role": "Mai",
+        "en": "It stars that actor from the action series, you know, the one everyone's talking about.",
+        "vi": "Có diễn viên chính từ series hành động, bạn biết đấy, người mà ai cũng đang bàn tán."
+      },
+      {
+        "role": "Lan",
+        "en": "Oh, him! I thought he only does action flicks.",
+        "vi": "Ồ, anh ta! Mình tưởng anh chỉ đóng phim hành động thôi."
+      },
+      {
+        "role": "Mai",
+        "en": "He's versatile. This role is quite different.",
+        "vi": "Anh ấy đa dạng mà. Vai này khá khác biệt."
+      },
+      {
+        "role": "Lan",
+        "en": "I'm curious now. Maybe we can watch it together?",
+        "vi": "Giờ mình tò mò rồi. Hay mình xem cùng nhau nhé?"
+      },
+      {
+        "role": "Mai",
+        "en": "Sure! Let's catch a matinee show on Saturday.",
+        "vi": "Được! Mình đi suất chiếu sáng thứ Bảy nhé."
+      },
+      {
+        "role": "Lan",
+        "en": "Sounds like a plan. I'll text you the details.",
+        "vi": "Nghe có vẻ ổn. Mình sẽ nhắn tin chi tiết cho bạn."
+      }
+    ],
+    "key_phrases": [
+      "give it a shot",
+      "blew me away",
+      "check it out",
+      "sounds like a plan"
+    ],
+    "key_vocab": [
+      "blockbuster",
+      "special effects",
+      "trailer",
+      "plot",
+      "cast",
+      "matinee"
+    ],
+    "grammar_points": [
+      "Present perfect (Have you seen...?)",
+      "Future with 'will'",
+      "Comparative adjectives (deeper)"
+    ],
+    "level": "b1"
+  },
+  {
+    "scenario": "Talking about a new album with a friend",
+    "scenario_vi": "Nói chuyện về album mới với bạn",
+    "category": "entertainment_and_media",
+    "roles": [
+      "Nam",
+      "Huy"
+    ],
+    "dialogue": [
+      {
+        "role": "Nam",
+        "en": "Hey, have you listened to that new album by The Midnight yet?",
+        "vi": "Này, bạn đã nghe album mới của The Midnight chưa?"
+      },
+      {
+        "role": "Huy",
+        "en": "I've been meaning to, but I haven't gotten around to it.",
+        "vi": "Mình định nghe mà chưa có thời gian."
+      },
+      {
+        "role": "Nam",
+        "en": "You're missing out! It's totally different from their last one.",
+        "vi": "Bạn đang bỏ lỡ đấy! Nó hoàn toàn khác so với album trước."
+      },
+      {
+        "role": "Huy",
+        "en": "In what way? I thought they'd stick to their synthwave style.",
+        "vi": "Khác thế nào? Mình tưởng họ sẽ giữ nguyên phong cách synthwave."
+      },
+      {
+        "role": "Nam",
+        "en": "They've incorporated more live instruments this time. It's more organic.",
+        "vi": "Lần này họ kết hợp nhiều nhạc cụ trực tiếp hơn. Nghe tự nhiên hơn."
+      },
+      {
+        "role": "Huy",
+        "en": "Interesting. I'm a sucker for good melodies, so I'll give it a spin.",
+        "vi": "Thú vị đấy. Mình mê giai điệu hay, nên sẽ nghe thử."
+      },
+      {
+        "role": "Nam",
+        "en": "You won't regret it. The lead singer's voice is on point.",
+        "vi": "Bạn sẽ không hối hận đâu. Giọng ca chính rất chuẩn."
+      },
+      {
+        "role": "Huy",
+        "en": "I've been listening to a lot of indie bands lately. This might be up my alley.",
+        "vi": "Dạo này mình nghe nhiều ban nhạc indie. Có lẽ album này hợp gu mình."
+      },
+      {
+        "role": "Nam",
+        "en": "Definitely! Let me know what you think after you've heard it.",
+        "vi": "Chắc chắn rồi! Cho mình biết cảm nghĩ của bạn sau khi nghe nhé."
+      },
+      {
+        "role": "Huy",
+        "en": "Will do. Can you send me the link?",
+        "vi": "Được. Bạn gửi mình link nhé?"
+      },
+      {
+        "role": "Nam",
+        "en": "Sure, I'll text it to you right away.",
+        "vi": "Tất nhiên, mình sẽ nhắn ngay cho bạn."
+      },
+      {
+        "role": "Huy",
+        "en": "Thanks! I'm looking forward to it.",
+        "vi": "Cảm ơn! Mình rất mong chờ."
+      }
+    ],
+    "key_phrases": [
+      "missing out",
+      "give it a spin",
+      "up my alley",
+      "on point"
+    ],
+    "key_vocab": [
+      "album",
+      "synthwave",
+      "instruments",
+      "melodies",
+      "indie",
+      "lead singer"
+    ],
+    "grammar_points": [
+      "Present perfect continuous (have been meaning to)",
+      "Future with 'will'",
+      "Comparative structures (more organic)"
+    ],
+    "level": "b1"
+  },
+  {
+    "scenario": "Dealing with a poor internet connection",
+    "scenario_vi": "Xử lý kết nối internet chập chờn",
+    "category": "communication_and_technology",
+    "roles": [
+      "Employee",
+      "IT Support"
+    ],
+    "dialogue": [
+      {
+        "role": "Employee",
+        "en": "Hey, my internet keeps dropping. I can't get any work done.",
+        "vi": "Này, mạng của tôi cứ bị ngắt. Chẳng làm được việc gì cả."
+      },
+      {
+        "role": "IT Support",
+        "en": "Hmm, have you tried restarting your router?",
+        "vi": "Hmm, anh đã thử khởi động lại router chưa?"
+      },
+      {
+        "role": "Employee",
+        "en": "Yeah, I did that twice. Still the same issue.",
+        "vi": "Rồi, tôi làm hai lần rồi. Vẫn y như cũ."
+      },
+      {
+        "role": "IT Support",
+        "en": "Okay, let me check the connection from here. Can you run a speed test?",
+        "vi": "Được rồi, để tôi kiểm tra kết nối từ đây. Anh chạy thử speed test được không?"
+      },
+      {
+        "role": "Employee",
+        "en": "Sure, one moment. It says 5 Mbps download, but it's all over the place.",
+        "vi": "Được, chờ chút. Nó báo tải xuống 5 Mbps, nhưng lúc lên lúc xuống."
+      },
+      {
+        "role": "IT Support",
+        "en": "That's pretty slow. I'll escalate this to the provider. In the meantime, try using a wired connection.",
+        "vi": "Chậm quá. Tôi sẽ báo lên nhà cung cấp. Trong lúc đó, anh thử dùng dây mạng xem."
+      },
+      {
+        "role": "Employee",
+        "en": "Good idea. Thanks for the help!",
+        "vi": "Ý hay đấy. Cảm ơn anh đã giúp!"
+      },
+      {
+        "role": "IT Support",
+        "en": "No problem. I'll send you an update once I hear back.",
+        "vi": "Không có gì. Khi có phản hồi tôi sẽ báo anh."
+      }
+    ],
+    "key_phrases": [
+      "keeps dropping",
+      "run a speed test",
+      "all over the place"
+    ],
+    "key_vocab": [
+      "router",
+      "speed test",
+      "provider",
+      "wired connection"
+    ],
+    "grammar_points": [
+      "keeps + verb-ing",
+      "have you tried + verb-ing"
+    ],
+    "level": "b1"
+  },
+  {
+    "scenario": "Choosing a new smartphone with a friend",
+    "scenario_vi": "Chọn mua điện thoại mới cùng bạn",
+    "category": "communication_and_technology",
+    "roles": [
+      "Friend A",
+      "Friend B"
+    ],
+    "dialogue": [
+      {
+        "role": "Friend A",
+        "en": "I'm thinking of upgrading my phone. Any recommendations?",
+        "vi": "Tôi đang tính lên đời điện thoại. Có gợi ý gì không?"
+      },
+      {
+        "role": "Friend B",
+        "en": "Well, it depends on what you need. Do you take a lot of photos?",
+        "vi": "Ồ, tùy vào nhu cầu của bạn. Bạn có hay chụp ảnh không?"
+      },
+      {
+        "role": "Friend A",
+        "en": "Yeah, I love photography. And I need good battery life.",
+        "vi": "Có, tôi thích chụp ảnh. Và tôi cần pin trâu."
+      },
+      {
+        "role": "Friend B",
+        "en": "Then you should check out the latest Pixel. The camera is amazing.",
+        "vi": "Vậy bạn nên xem Pixel mới nhất. Camera tuyệt vời."
+      },
+      {
+        "role": "Friend A",
+        "en": "But I've heard the battery isn't great. What about the Samsung?",
+        "vi": "Nhưng tôi nghe nói pin không tốt lắm. Còn Samsung thì sao?"
+      },
+      {
+        "role": "Friend B",
+        "en": "Samsung has a great display and battery, but the camera is a bit behind.",
+        "vi": "Samsung màn hình đẹp và pin tốt, nhưng camera hơi kém hơn."
+      },
+      {
+        "role": "Friend A",
+        "en": "Hmm, tough choice. I'll watch some reviews and decide.",
+        "vi": "Hừm, khó chọn quá. Tôi sẽ xem vài bài đánh giá rồi quyết định."
+      },
+      {
+        "role": "Friend B",
+        "en": "Good plan. Let me know what you pick!",
+        "vi": "Kế hoạch hay. Cho tôi biết bạn chọn cái nào nhé!"
+      }
+    ],
+    "key_phrases": [
+      "upgrading my phone",
+      "it depends on",
+      "check out",
+      "a bit behind"
+    ],
+    "key_vocab": [
+      "photography",
+      "battery life",
+      "display",
+      "reviews"
+    ],
+    "grammar_points": [
+      "should + base verb",
+      "what about...?"
+    ],
+    "level": "b1"
+  },
+  {
+    "scenario": "Troubleshooting a video call issue",
+    "scenario_vi": "Xử lý sự cố cuộc gọi video",
+    "category": "communication_and_technology",
+    "roles": [
+      "Student",
+      "Teacher"
+    ],
+    "dialogue": [
+      {
+        "role": "Student",
+        "en": "Hi, I'm having trouble joining the Zoom meeting. It says 'connection error'.",
+        "vi": "Chào thầy, em không vào được phòng Zoom. Nó báo 'lỗi kết nối'."
+      },
+      {
+        "role": "Teacher",
+        "en": "Let me check. Are you using the latest version of Zoom?",
+        "vi": "Để thầy xem. Em có dùng phiên bản Zoom mới nhất không?"
+      },
+      {
+        "role": "Student",
+        "en": "I think so. I updated it last week.",
+        "vi": "Em nghĩ là có. Em cập nhật tuần trước rồi."
+      },
+      {
+        "role": "Teacher",
+        "en": "Okay, try closing the app and reopening it. Sometimes that helps.",
+        "vi": "Được rồi, em thử tắt ứng dụng và mở lại xem. Đôi khi cách đó có tác dụng."
+      },
+      {
+        "role": "Student",
+        "en": "Alright, I'll give it a shot. Hold on... It worked! Thanks!",
+        "vi": "Vâng, em thử xem. Chờ chút... Được rồi! Cảm ơn thầy!"
+      },
+      {
+        "role": "Teacher",
+        "en": "Great! I'm glad. Now you can join the class.",
+        "vi": "Tốt! Thầy mừng rồi. Bây giờ em vào lớp được rồi."
+      },
+      {
+        "role": "Student",
+        "en": "Sorry for the delay. I'll be right there.",
+        "vi": "Xin lỗi thầy vì chậm trễ. Em vào ngay đây."
+      },
+      {
+        "role": "Teacher",
+        "en": "No worries. See you on the call.",
+        "vi": "Không sao. Gặp em trong cuộc gọi."
+      }
+    ],
+    "key_phrases": [
+      "having trouble",
+      "give it a shot",
+      "I'll be right there"
+    ],
+    "key_vocab": [
+      "connection error",
+      "version",
+      "app",
+      "reopening"
+    ],
+    "grammar_points": [
+      "try + verb-ing",
+      "sometimes + simple present"
+    ],
+    "level": "b1"
+  }
+]

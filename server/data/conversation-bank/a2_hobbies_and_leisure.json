@@ -1,0 +1,139 @@
+[
+  {
+    "scenario": "Talking about weekend plans",
+    "scenario_vi": "Nói về kế hoạch cuối tuần",
+    "category": "hobbies_and_leisure",
+    "roles": [
+      "Minh",
+      "Lan"
+    ],
+    "dialogue": [
+      {
+        "role": "Minh",
+        "en": "What did you do last weekend?",
+        "vi": "Cuối tuần trước bạn đã làm gì thế?"
+      },
+      {
+        "role": "Lan",
+        "en": "I went hiking with my family. It was great!",
+        "vi": "Mình đi leo núi với gia đình. Vui lắm!"
+      },
+      {
+        "role": "Minh",
+        "en": "That sounds fun! I stayed home and watched movies.",
+        "vi": "Nghe vui quá! Mình ở nhà xem phim."
+      },
+      {
+        "role": "Lan",
+        "en": "What about next weekend? Do you have any plans?",
+        "vi": "Thế cuối tuần sau thì sao? Bạn có kế hoạch gì chưa?"
+      },
+      {
+        "role": "Minh",
+        "en": "Yes, I will join a cooking class. I want to learn how to make pasta.",
+        "vi": "Có, mình sẽ tham gia một lớp học nấu ăn. Mình muốn học cách làm mì Ý."
+      },
+      {
+        "role": "Lan",
+        "en": "That's interesting! I will go to a photography exhibition.",
+        "vi": "Thú vị đấy! Mình sẽ đi xem triển lãm nhiếp ảnh."
+      },
+      {
+        "role": "Minh",
+        "en": "Maybe we can hang out on Sunday evening?",
+        "vi": "Có lẽ chúng ta có thể đi chơi tối Chủ nhật nhé?"
+      },
+      {
+        "role": "Lan",
+        "en": "Sure, sounds like a plan!",
+        "vi": "Được thôi, nghe hay đấy!"
+      }
+    ],
+    "key_phrases": [
+      "What did you do last weekend?",
+      "Do you have any plans?",
+      "sounds like a plan"
+    ],
+    "key_vocab": [
+      "hiking",
+      "cooking class",
+      "photography exhibition",
+      "hang out"
+    ],
+    "grammar_points": [
+      "Simple past (What did you do...?)",
+      "Future with 'will' (I will join...)",
+      "want to + verb"
+    ],
+    "level": "a2"
+  },
+  {
+    "scenario": "Discussing a new hobby",
+    "scenario_vi": "Thảo luận về sở thích mới",
+    "category": "hobbies_and_leisure",
+    "roles": [
+      "Anna",
+      "Tom"
+    ],
+    "dialogue": [
+      {
+        "role": "Anna",
+        "en": "I started painting last month. It's very relaxing.",
+        "vi": "Mình bắt đầu học vẽ tháng trước. Thư giãn lắm."
+      },
+      {
+        "role": "Tom",
+        "en": "Really? I tried painting once, but I wasn't very good.",
+        "vi": "Thật à? Mình thử vẽ một lần nhưng không giỏi lắm."
+      },
+      {
+        "role": "Anna",
+        "en": "You should try again. I took a class and learned a lot.",
+        "vi": "Bạn nên thử lại đi. Mình đã tham gia một lớp học và học được nhiều thứ."
+      },
+      {
+        "role": "Tom",
+        "en": "Maybe I will. I enjoy drawing, so painting might be fun.",
+        "vi": "Có lẽ mình sẽ thử. Mình thích vẽ nên vẽ tranh có thể cũng vui."
+      },
+      {
+        "role": "Anna",
+        "en": "Exactly! Did you draw something recently?",
+        "vi": "Chính xác! Gần đây bạn có vẽ gì không?"
+      },
+      {
+        "role": "Tom",
+        "en": "Yes, I drew a portrait of my dog last weekend.",
+        "vi": "Có, mình vẽ chân dung con chó của mình cuối tuần trước."
+      },
+      {
+        "role": "Anna",
+        "en": "That sounds cute! Can I see it?",
+        "vi": "Nghe dễ thương quá! Mình xem được không?"
+      },
+      {
+        "role": "Tom",
+        "en": "Sure, I'll bring it tomorrow.",
+        "vi": "Được chứ, mai mình sẽ mang đến."
+      }
+    ],
+    "key_phrases": [
+      "I started painting",
+      "You should try again",
+      "Can I see it?"
+    ],
+    "key_vocab": [
+      "painting",
+      "drawing",
+      "portrait",
+      "relaxing",
+      "class"
+    ],
+    "grammar_points": [
+      "Simple past (I started, I tried)",
+      "should + base verb (You should try)",
+      "Future with 'will' (I'll bring)"
+    ],
+    "level": "a2"
+  }
+]

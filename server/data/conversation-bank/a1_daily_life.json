@@ -1,0 +1,173 @@
+[
+  {
+    "scenario": "Greeting a neighbor in the morning",
+    "scenario_vi": "Chào hỏi hàng xóm buổi sáng",
+    "category": "daily_life",
+    "roles": [
+      "Person A",
+      "Person B"
+    ],
+    "dialogue": [
+      {
+        "role": "Person A",
+        "en": "Good morning! How are you?",
+        "vi": "Chào buổi sáng! Bạn khỏe không?"
+      },
+      {
+        "role": "Person B",
+        "en": "Good morning! I'm fine, thanks. And you?",
+        "vi": "Chào buổi sáng! Mình khỏe, cảm ơn. Còn bạn?"
+      },
+      {
+        "role": "Person A",
+        "en": "I'm good. Are you going to work?",
+        "vi": "Mình ổn. Bạn đi làm à?"
+      },
+      {
+        "role": "Person B",
+        "en": "Yes, I am. Have a nice day!",
+        "vi": "Ừ, mình đi làm. Chúc bạn một ngày tốt lành!"
+      },
+      {
+        "role": "Person A",
+        "en": "You too! See you later.",
+        "vi": "Bạn cũng vậy nhé! Hẹn gặp lại."
+      }
+    ],
+    "key_phrases": [
+      "Good morning!",
+      "How are you?",
+      "Have a nice day!",
+      "See you later."
+    ],
+    "key_vocab": [
+      "morning",
+      "fine",
+      "work",
+      "day"
+    ],
+    "grammar_points": [
+      "Present simple 'to be'",
+      "Question: Are you...?"
+    ],
+    "level": "a1"
+  },
+  {
+    "scenario": "Buying groceries at a store",
+    "scenario_vi": "Mua thực phẩm ở cửa hàng",
+    "category": "daily_life",
+    "roles": [
+      "Customer",
+      "Shopkeeper"
+    ],
+    "dialogue": [
+      {
+        "role": "Shopkeeper",
+        "en": "Hello! Can I help you?",
+        "vi": "Xin chào! Tôi có thể giúp gì cho bạn?"
+      },
+      {
+        "role": "Customer",
+        "en": "Yes, I want some apples. How much are they?",
+        "vi": "Vâng, tôi muốn mua táo. Chúng bao nhiêu tiền ạ?"
+      },
+      {
+        "role": "Shopkeeper",
+        "en": "They are 2 dollars per kilo. How many do you want?",
+        "vi": "2 đô la một ki-lô. Bạn muốn mua bao nhiêu?"
+      },
+      {
+        "role": "Customer",
+        "en": "Two kilos, please.",
+        "vi": "Hai ki-lô ạ."
+      },
+      {
+        "role": "Shopkeeper",
+        "en": "Here you are. That's 4 dollars.",
+        "vi": "Của bạn đây. Tổng cộng 4 đô la."
+      },
+      {
+        "role": "Customer",
+        "en": "Thank you. Goodbye!",
+        "vi": "Cảm ơn. Tạm biệt!"
+      }
+    ],
+    "key_phrases": [
+      "Can I help you?",
+      "I want...",
+      "How much are they?",
+      "Here you are."
+    ],
+    "key_vocab": [
+      "apples",
+      "kilo",
+      "dollar",
+      "want"
+    ],
+    "grammar_points": [
+      "How much + be + noun?",
+      "Imperative: Here you are."
+    ],
+    "level": "a1"
+  },
+  {
+    "scenario": "Asking for directions on the street",
+    "scenario_vi": "Hỏi đường trên phố",
+    "category": "daily_life",
+    "roles": [
+      "Tourist",
+      "Local"
+    ],
+    "dialogue": [
+      {
+        "role": "Tourist",
+        "en": "Excuse me. Where is the bus station?",
+        "vi": "Xin lỗi. Bến xe buýt ở đâu vậy?"
+      },
+      {
+        "role": "Local",
+        "en": "It's over there, next to the park.",
+        "vi": "Ở đằng kia, cạnh công viên."
+      },
+      {
+        "role": "Tourist",
+        "en": "Is it far?",
+        "vi": "Có xa không?"
+      },
+      {
+        "role": "Local",
+        "en": "No, it's not far. About 5 minutes walk.",
+        "vi": "Không, không xa đâu. Đi bộ khoảng 5 phút."
+      },
+      {
+        "role": "Tourist",
+        "en": "Thank you very much!",
+        "vi": "Cảm ơn bạn rất nhiều!"
+      },
+      {
+        "role": "Local",
+        "en": "You're welcome. Have a good day!",
+        "vi": "Không có gì. Chúc bạn một ngày tốt lành!"
+      }
+    ],
+    "key_phrases": [
+      "Excuse me.",
+      "Where is...?",
+      "Is it far?",
+      "You're welcome."
+    ],
+    "key_vocab": [
+      "bus station",
+      "park",
+      "far",
+      "walk",
+      "minute"
+    ],
+    "grammar_points": [
+      "Where is + noun?",
+      "Yes/No question with 'to be'",
+      "It's + adjective"
+    ],
+    "level": "a1"
+  }
+]

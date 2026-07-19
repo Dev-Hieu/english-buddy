@@ -1,0 +1,140 @@
+[
+  {
+    "scenario": "Job interview for a part-time job",
+    "scenario_vi": "Phỏng vấn xin việc bán thời gian",
+    "category": "work_and_jobs",
+    "roles": [
+      "Interviewer",
+      "Applicant"
+    ],
+    "dialogue": [
+      {
+        "role": "Interviewer",
+        "en": "Good morning. Have you worked before?",
+        "vi": "Chào buổi sáng. Bạn đã từng đi làm chưa?"
+      },
+      {
+        "role": "Applicant",
+        "en": "Yes, I worked as a cashier last summer.",
+        "vi": "Dạ có, mùa hè năm ngoái em làm thu ngân."
+      },
+      {
+        "role": "Interviewer",
+        "en": "What did you do there?",
+        "vi": "Bạn đã làm gì ở đó?"
+      },
+      {
+        "role": "Applicant",
+        "en": "I helped customers and handled money.",
+        "vi": "Em giúp khách hàng và xử lý tiền."
+      },
+      {
+        "role": "Interviewer",
+        "en": "Will you work on weekends?",
+        "vi": "Bạn sẽ làm việc vào cuối tuần chứ?"
+      },
+      {
+        "role": "Applicant",
+        "en": "Yes, I can work on Saturdays.",
+        "vi": "Dạ, em có thể làm thứ Bảy."
+      },
+      {
+        "role": "Interviewer",
+        "en": "Great. We'll call you next week.",
+        "vi": "Tốt. Chúng tôi sẽ gọi bạn vào tuần sau."
+      },
+      {
+        "role": "Applicant",
+        "en": "Thank you. I look forward to it.",
+        "vi": "Cảm ơn anh/chị. Em rất mong chờ."
+      }
+    ],
+    "key_phrases": [
+      "Have you worked before?",
+      "I worked as...",
+      "I can work on..."
+    ],
+    "key_vocab": [
+      "cashier",
+      "customer",
+      "handle",
+      "weekend",
+      "call"
+    ],
+    "grammar_points": [
+      "Simple past (worked, did)",
+      "Future (will call)",
+      "Modal 'can' for ability"
+    ],
+    "level": "a2"
+  },
+  {
+    "scenario": "Discussing a new project with a colleague",
+    "scenario_vi": "Thảo luận về dự án mới với đồng nghiệp",
+    "category": "work_and_jobs",
+    "roles": [
+      "Employee A",
+      "Employee B"
+    ],
+    "dialogue": [
+      {
+        "role": "Employee A",
+        "en": "Did you finish the report?",
+        "vi": "Bạn đã hoàn thành báo cáo chưa?"
+      },
+      {
+        "role": "Employee B",
+        "en": "Not yet. I will finish it tomorrow.",
+        "vi": "Chưa. Mai tôi sẽ làm xong."
+      },
+      {
+        "role": "Employee A",
+        "en": "The boss wants it by Friday.",
+        "vi": "Sếp muốn có nó trước thứ Sáu."
+      },
+      {
+        "role": "Employee B",
+        "en": "No problem. I worked on it last night.",
+        "vi": "Không vấn đề. Tối qua tôi đã làm nó."
+      },
+      {
+        "role": "Employee A",
+        "en": "What about the new project? Did you start?",
+        "vi": "Còn dự án mới thì sao? Bạn bắt đầu chưa?"
+      },
+      {
+        "role": "Employee B",
+        "en": "We will start next Monday.",
+        "vi": "Chúng ta sẽ bắt đầu vào thứ Hai tuần sau."
+      },
+      {
+        "role": "Employee A",
+        "en": "Great. I will help you with the report.",
+        "vi": "Tuyệt. Tôi sẽ giúp bạn làm báo cáo."
+      },
+      {
+        "role": "Employee B",
+        "en": "Thanks! That will be a big help.",
+        "vi": "Cảm ơn! Điều đó sẽ giúp ích nhiều lắm."
+      }
+    ],
+    "key_phrases": [
+      "Did you finish...?",
+      "I will finish it...",
+      "What about...?"
+    ],
+    "key_vocab": [
+      "report",
+      "project",
+      "boss",
+      "start",
+      "help"
+    ],
+    "grammar_points": [
+      "Simple past (did, finished, worked)",
+      "Simple future (will finish, will start)",
+      "Present perfect? (not yet - implied)"
+    ],
+    "level": "a2"
+  }
+]

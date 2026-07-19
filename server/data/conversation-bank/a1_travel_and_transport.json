@@ -1,0 +1,121 @@
+[
+  {
+    "scenario": "Asking for directions to the bus stop",
+    "scenario_vi": "Hỏi đường đến trạm xe buýt",
+    "category": "travel_and_transport",
+    "roles": [
+      "Tourist",
+      "Local"
+    ],
+    "dialogue": [
+      {
+        "role": "Tourist",
+        "en": "Excuse me, where is the bus stop?",
+        "vi": "Xin lỗi, trạm xe buýt ở đâu ạ?"
+      },
+      {
+        "role": "Local",
+        "en": "Go straight. It's on the left.",
+        "vi": "Đi thẳng. Nó ở bên trái."
+      },
+      {
+        "role": "Tourist",
+        "en": "Is it far from here?",
+        "vi": "Có xa đây không ạ?"
+      },
+      {
+        "role": "Local",
+        "en": "No, it's very near. About two minutes.",
+        "vi": "Không, rất gần. Khoảng hai phút."
+      },
+      {
+        "role": "Tourist",
+        "en": "Thank you very much!",
+        "vi": "Cảm ơn bạn rất nhiều!"
+      },
+      {
+        "role": "Local",
+        "en": "You're welcome. Have a good day!",
+        "vi": "Không có gì. Chúc bạn một ngày tốt lành!"
+      }
+    ],
+    "key_phrases": [
+      "Excuse me, where is...?",
+      "Go straight",
+      "Is it far from here?"
+    ],
+    "key_vocab": [
+      "bus stop",
+      "near",
+      "far",
+      "left",
+      "straight"
+    ],
+    "grammar_points": [
+      "Wh- questions with 'where'",
+      "Present tense for directions: 'Go straight'",
+      "Yes/No questions with 'is it'"
+    ],
+    "level": "a1"
+  },
+  {
+    "scenario": "Buying a train ticket at the station",
+    "scenario_vi": "Mua vé tàu ở ga",
+    "category": "travel_and_transport",
+    "roles": [
+      "Passenger",
+      "Ticket Clerk"
+    ],
+    "dialogue": [
+      {
+        "role": "Passenger",
+        "en": "Hello! I'd like a ticket to Hanoi, please.",
+        "vi": "Xin chào! Cho tôi một vé đi Hà Nội ạ."
+      },
+      {
+        "role": "Ticket Clerk",
+        "en": "One way or round trip?",
+        "vi": "Vé một chiều hay khứ hồi ạ?"
+      },
+      {
+        "role": "Passenger",
+        "en": "One way, please. How much is it?",
+        "vi": "Một chiều ạ. Bao nhiêu tiền vậy?"
+      },
+      {
+        "role": "Ticket Clerk",
+        "en": "It's 200,000 dong.",
+        "vi": "200,000 đồng ạ."
+      },
+      {
+        "role": "Passenger",
+        "en": "Here you go. Thank you.",
+        "vi": "Của bạn đây. Cảm ơn."
+      },
+      {
+        "role": "Ticket Clerk",
+        "en": "Here's your ticket. The train leaves at 3 PM.",
+        "vi": "Vé của bạn đây. Tàu khởi hành lúc 3 giờ chiều."
+      }
+    ],
+    "key_phrases": [
+      "I'd like a ticket to...",
+      "One way or round trip?",
+      "How much is it?"
+    ],
+    "key_vocab": [
+      "ticket",
+      "one way",
+      "round trip",
+      "price",
+      "train",
+      "station"
+    ],
+    "grammar_points": [
+      "'I'd like' for polite requests",
+      "Wh- questions with 'how much'",
+      "Present tense for schedules: 'leaves at'"
+    ],
+    "level": "a1"
+  }
+]

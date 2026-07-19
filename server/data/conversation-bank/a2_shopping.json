@@ -1,0 +1,149 @@
+[
+  {
+    "scenario": "Buying clothes at a store",
+    "scenario_vi": "Mua quần áo ở cửa hàng",
+    "category": "shopping",
+    "roles": [
+      "Customer",
+      "Sales Assistant"
+    ],
+    "dialogue": [
+      {
+        "role": "Sales Assistant",
+        "en": "Hi! Can I help you find anything?",
+        "vi": "Chào bạn! Tôi có thể giúp bạn tìm gì không?"
+      },
+      {
+        "role": "Customer",
+        "en": "Yes, I'm looking for a dress. Yesterday I saw one but it was too expensive.",
+        "vi": "Vâng, tôi đang tìm một cái váy. Hôm qua tôi thấy một cái nhưng nó đắt quá."
+      },
+      {
+        "role": "Sales Assistant",
+        "en": "What color do you like? We have some nice blue dresses on sale.",
+        "vi": "Bạn thích màu gì? Chúng tôi có vài cái váy xanh đang giảm giá."
+      },
+      {
+        "role": "Customer",
+        "en": "Blue is great! Can I try this one on?",
+        "vi": "Màu xanh tuyệt! Tôi có thể thử cái này không?"
+      },
+      {
+        "role": "Sales Assistant",
+        "en": "Sure, the fitting room is over there. Let me know if you need a different size.",
+        "vi": "Chắc chắn rồi, phòng thử đồ ở đằng kia. Hãy cho tôi biết nếu bạn cần size khác nhé."
+      },
+      {
+        "role": "Customer",
+        "en": "Thanks. I'll try it on now.",
+        "vi": "Cảm ơn. Tôi sẽ thử ngay bây giờ."
+      },
+      {
+        "role": "Customer",
+        "en": "It fits perfectly! I'll take it. How much is it?",
+        "vi": "Nó vừa vặn hoàn hảo! Tôi sẽ lấy nó. Bao nhiêu tiền vậy?"
+      },
+      {
+        "role": "Sales Assistant",
+        "en": "It's 25 dollars. Will that be cash or card?",
+        "vi": "25 đô la. Bạn trả tiền mặt hay thẻ?"
+      },
+      {
+        "role": "Customer",
+        "en": "Card, please. I'll pay with my card.",
+        "vi": "Thẻ ạ. Tôi sẽ trả bằng thẻ."
+      }
+    ],
+    "key_phrases": [
+      "Can I help you find anything?",
+      "I'm looking for...",
+      "Can I try this on?",
+      "I'll take it."
+    ],
+    "key_vocab": [
+      "dress",
+      "on sale",
+      "fitting room",
+      "size",
+      "fit",
+      "cash",
+      "card"
+    ],
+    "grammar_points": [
+      "present continuous for plans (I'm looking for)",
+      "past simple (saw, was)",
+      "future with will (I'll take it, I'll pay)"
+    ],
+    "level": "a2"
+  },
+  {
+    "scenario": "Returning a faulty item",
+    "scenario_vi": "Trả lại hàng bị lỗi",
+    "category": "shopping",
+    "roles": [
+      "Customer",
+      "Store Clerk"
+    ],
+    "dialogue": [
+      {
+        "role": "Customer",
+        "en": "Hi, I bought this blender here yesterday, but it doesn't work.",
+        "vi": "Chào, hôm qua tôi mua cái máy xay này ở đây, nhưng nó không hoạt động."
+      },
+      {
+        "role": "Store Clerk",
+        "en": "I'm sorry to hear that. Do you have the receipt?",
+        "vi": "Tôi rất tiếc khi nghe điều đó. Bạn có hóa đơn không?"
+      },
+      {
+        "role": "Customer",
+        "en": "Yes, here it is. I paid 40 dollars.",
+        "vi": "Có, đây ạ. Tôi đã trả 40 đô la."
+      },
+      {
+        "role": "Store Clerk",
+        "en": "Thank you. Let me check. Yes, I can give you a refund or you can exchange it for another one.",
+        "vi": "Cảm ơn. Để tôi kiểm tra. Vâng, tôi có thể hoàn tiền hoặc bạn có thể đổi lấy cái khác."
+      },
+      {
+        "role": "Customer",
+        "en": "I think I'll just get a refund. I'll buy a different brand later.",
+        "vi": "Tôi nghĩ tôi sẽ lấy lại tiền. Tôi sẽ mua một hãng khác sau."
+      },
+      {
+        "role": "Store Clerk",
+        "en": "No problem. I'll process the refund now. It will go back to your card in 5 days.",
+        "vi": "Không vấn đề gì. Tôi sẽ xử lý việc hoàn tiền ngay. Nó sẽ trở lại thẻ của bạn trong vòng 5 ngày."
+      },
+      {
+        "role": "Customer",
+        "en": "Great, thank you very much!",
+        "vi": "Tuyệt vời, cảm ơn bạn rất nhiều!"
+      },
+      {
+        "role": "Store Clerk",
+        "en": "You're welcome. Sorry for the inconvenience.",
+        "vi": "Không có gì. Xin lỗi vì sự bất tiện này."
+      }
+    ],
+    "key_phrases": [
+      "It doesn't work.",
+      "Do you have the receipt?",
+      "I can give you a refund",
+      "exchange it for another one"
+    ],
+    "key_vocab": [
+      "blender",
+      "receipt",
+      "refund",
+      "exchange",
+      "process"
+    ],
+    "grammar_points": [
+      "past simple (bought, paid, didn't work)",
+      "future with will (I'll buy, I'll process, will go back)",
+      "modal verbs for offers (can give, can exchange)"
+    ],
+    "level": "a2"
+  }
+]

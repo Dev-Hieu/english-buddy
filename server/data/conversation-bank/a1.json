@@ -1,0 +1,1205 @@
+[
+  {
+    "scenario": "Greeting a neighbor in the morning",
+    "scenario_vi": "Chào hỏi hàng xóm buổi sáng",
+    "category": "daily_life",
+    "roles": [
+      "Person A",
+      "Person B"
+    ],
+    "dialogue": [
+      {
+        "role": "Person A",
+        "en": "Good morning! How are you?",
+        "vi": "Chào buổi sáng! Bạn khỏe không?"
+      },
+      {
+        "role": "Person B",
+        "en": "Good morning! I'm fine, thanks. And you?",
+        "vi": "Chào buổi sáng! Mình khỏe, cảm ơn. Còn bạn?"
+      },
+      {
+        "role": "Person A",
+        "en": "I'm good. Are you going to work?",
+        "vi": "Mình ổn. Bạn đi làm à?"
+      },
+      {
+        "role": "Person B",
+        "en": "Yes, I am. Have a nice day!",
+        "vi": "Ừ, mình đi làm. Chúc bạn một ngày tốt lành!"
+      },
+      {
+        "role": "Person A",
+        "en": "You too! See you later.",
+        "vi": "Bạn cũng vậy nhé! Hẹn gặp lại."
+      }
+    ],
+    "key_phrases": [
+      "Good morning!",
+      "How are you?",
+      "Have a nice day!",
+      "See you later."
+    ],
+    "key_vocab": [
+      "morning",
+      "fine",
+      "work",
+      "day"
+    ],
+    "grammar_points": [
+      "Present simple 'to be'",
+      "Question: Are you...?"
+    ],
+    "level": "a1"
+  },
+  {
+    "scenario": "Buying groceries at a store",
+    "scenario_vi": "Mua thực phẩm ở cửa hàng",
+    "category": "daily_life",
+    "roles": [
+      "Customer",
+      "Shopkeeper"
+    ],
+    "dialogue": [
+      {
+        "role": "Shopkeeper",
+        "en": "Hello! Can I help you?",
+        "vi": "Xin chào! Tôi có thể giúp gì cho bạn?"
+      },
+      {
+        "role": "Customer",
+        "en": "Yes, I want some apples. How much are they?",
+        "vi": "Vâng, tôi muốn mua táo. Chúng bao nhiêu tiền ạ?"
+      },
+      {
+        "role": "Shopkeeper",
+        "en": "They are 2 dollars per kilo. How many do you want?",
+        "vi": "2 đô la một ki-lô. Bạn muốn mua bao nhiêu?"
+      },
+      {
+        "role": "Customer",
+        "en": "Two kilos, please.",
+        "vi": "Hai ki-lô ạ."
+      },
+      {
+        "role": "Shopkeeper",
+        "en": "Here you are. That's 4 dollars.",
+        "vi": "Của bạn đây. Tổng cộng 4 đô la."
+      },
+      {
+        "role": "Customer",
+        "en": "Thank you. Goodbye!",
+        "vi": "Cảm ơn. Tạm biệt!"
+      }
+    ],
+    "key_phrases": [
+      "Can I help you?",
+      "I want...",
+      "How much are they?",
+      "Here you are."
+    ],
+    "key_vocab": [
+      "apples",
+      "kilo",
+      "dollar",
+      "want"
+    ],
+    "grammar_points": [
+      "How much + be + noun?",
+      "Imperative: Here you are."
+    ],
+    "level": "a1"
+  },
+  {
+    "scenario": "Asking for directions on the street",
+    "scenario_vi": "Hỏi đường trên phố",
+    "category": "daily_life",
+    "roles": [
+      "Tourist",
+      "Local"
+    ],
+    "dialogue": [
+      {
+        "role": "Tourist",
+        "en": "Excuse me. Where is the bus station?",
+        "vi": "Xin lỗi. Bến xe buýt ở đâu vậy?"
+      },
+      {
+        "role": "Local",
+        "en": "It's over there, next to the park.",
+        "vi": "Ở đằng kia, cạnh công viên."
+      },
+      {
+        "role": "Tourist",
+        "en": "Is it far?",
+        "vi": "Có xa không?"
+      },
+      {
+        "role": "Local",
+        "en": "No, it's not far. About 5 minutes walk.",
+        "vi": "Không, không xa đâu. Đi bộ khoảng 5 phút."
+      },
+      {
+        "role": "Tourist",
+        "en": "Thank you very much!",
+        "vi": "Cảm ơn bạn rất nhiều!"
+      },
+      {
+        "role": "Local",
+        "en": "You're welcome. Have a good day!",
+        "vi": "Không có gì. Chúc bạn một ngày tốt lành!"
+      }
+    ],
+    "key_phrases": [
+      "Excuse me.",
+      "Where is...?",
+      "Is it far?",
+      "You're welcome."
+    ],
+    "key_vocab": [
+      "bus station",
+      "park",
+      "far",
+      "walk",
+      "minute"
+    ],
+    "grammar_points": [
+      "Where is + noun?",
+      "Yes/No question with 'to be'",
+      "It's + adjective"
+    ],
+    "level": "a1"
+  },
+  {
+    "scenario": "Ordering coffee at a cafe",
+    "scenario_vi": "Gọi cà phê ở quán",
+    "category": "food_and_drink",
+    "roles": [
+      "Customer",
+      "Waiter"
+    ],
+    "dialogue": [
+      {
+        "role": "Waiter",
+        "en": "Hi! What can I get for you?",
+        "vi": "Chào anh! Anh muốn uống gì ạ?"
+      },
+      {
+        "role": "Customer",
+        "en": "I'd like a black coffee, please.",
+        "vi": "Cho tôi một cà phê đen."
+      },
+      {
+        "role": "Waiter",
+        "en": "Sure. Hot or iced?",
+        "vi": "Vâng. Nóng hay đá ạ?"
+      },
+      {
+        "role": "Customer",
+        "en": "Hot, please. And a croissant.",
+        "vi": "Nóng nhé. Và thêm một bánh sừng bò."
+      },
+      {
+        "role": "Waiter",
+        "en": "Anything else?",
+        "vi": "Còn gì nữa không ạ?"
+      },
+      {
+        "role": "Customer",
+        "en": "No, that's all. Thank you.",
+        "vi": "Không, thế thôi. Cảm ơn."
+      }
+    ],
+    "key_phrases": [
+      "What can I get for you?",
+      "I'd like...",
+      "Anything else?",
+      "That's all."
+    ],
+    "key_vocab": [
+      "coffee",
+      "hot",
+      "iced",
+      "croissant"
+    ],
+    "grammar_points": [
+      "I'd like + noun",
+      "Question: Hot or iced?",
+      "That's all."
+    ],
+    "level": "a1"
+  },
+  {
+    "scenario": "Buying fruit at a market",
+    "scenario_vi": "Mua trái cây ở chợ",
+    "category": "food_and_drink",
+    "roles": [
+      "Customer",
+      "Vendor"
+    ],
+    "dialogue": [
+      {
+        "role": "Customer",
+        "en": "How much are these apples?",
+        "vi": "Táo này bao nhiêu tiền ạ?"
+      },
+      {
+        "role": "Vendor",
+        "en": "They're 20,000 dong per kilo.",
+        "vi": "20.000 đồng một cân."
+      },
+      {
+        "role": "Customer",
+        "en": "I'll take two kilos, please.",
+        "vi": "Cho tôi hai cân."
+      },
+      {
+        "role": "Vendor",
+        "en": "Here you are. Anything else?",
+        "vi": "Của bạn đây. Còn gì nữa không?"
+      },
+      {
+        "role": "Customer",
+        "en": "Yes, some bananas. How much are they?",
+        "vi": "Có, cho tôi ít chuối. Chuối bao nhiêu tiền?"
+      },
+      {
+        "role": "Vendor",
+        "en": "15,000 dong per kilo.",
+        "vi": "15.000 đồng một cân."
+      },
+      {
+        "role": "Customer",
+        "en": "Give me one kilo, please.",
+        "vi": "Cho tôi một cân."
+      },
+      {
+        "role": "Vendor",
+        "en": "Okay. That'll be 55,000 dong total.",
+        "vi": "Được rồi. Tổng cộng 55.000 đồng."
+      }
+    ],
+    "key_phrases": [
+      "How much are...?",
+      "I'll take...",
+      "Anything else?",
+      "Give me..."
+    ],
+    "key_vocab": [
+      "apples",
+      "bananas",
+      "kilo",
+      "dongs",
+      "total"
+    ],
+    "grammar_points": [
+      "How much + noun + verb?",
+      "I'll take + number + noun",
+      "That'll be + amount"
+    ],
+    "level": "a1"
+  },
+  {
+    "scenario": "Buying a T-shirt at a clothing store",
+    "scenario_vi": "Mua áo phông ở cửa hàng quần áo",
+    "category": "shopping",
+    "roles": [
+      "Customer",
+      "Shop Assistant"
+    ],
+    "dialogue": [
+      {
+        "role": "Shop Assistant",
+        "en": "Hello! Can I help you?",
+        "vi": "Xin chào! Tôi có thể giúp gì cho bạn?"
+      },
+      {
+        "role": "Customer",
+        "en": "Yes, I like this T-shirt. How much is it?",
+        "vi": "Vâng, tôi thích cái áo phông này. Bao nhiêu tiền vậy?"
+      },
+      {
+        "role": "Shop Assistant",
+        "en": "It's 150,000 dong.",
+        "vi": "Nó giá 150 nghìn đồng."
+      },
+      {
+        "role": "Customer",
+        "en": "Can I try it on?",
+        "vi": "Tôi có thể mặc thử không?"
+      },
+      {
+        "role": "Shop Assistant",
+        "en": "Sure! The fitting room is over there.",
+        "vi": "Tất nhiên! Phòng thử đồ ở đằng kia."
+      },
+      {
+        "role": "Customer",
+        "en": "It fits well. I'll take it.",
+        "vi": "Vừa lắm. Tôi lấy cái này."
+      }
+    ],
+    "key_phrases": [
+      "How much is it?",
+      "Can I try it on?",
+      "I'll take it"
+    ],
+    "key_vocab": [
+      "T-shirt",
+      "dong",
+      "fitting room",
+      "try on",
+      "take"
+    ],
+    "grammar_points": [
+      "How much + is + it?",
+      "Can I + verb?"
+    ],
+    "level": "a1"
+  },
+  {
+    "scenario": "Buying fruit at a market",
+    "scenario_vi": "Mua trái cây ở chợ",
+    "category": "shopping",
+    "roles": [
+      "Customer",
+      "Vendor"
+    ],
+    "dialogue": [
+      {
+        "role": "Customer",
+        "en": "How much are these apples?",
+        "vi": "Mấy quả táo này bao nhiêu?"
+      },
+      {
+        "role": "Vendor",
+        "en": "They are 20,000 dong per kilo.",
+        "vi": "20 nghìn đồng một ký."
+      },
+      {
+        "role": "Customer",
+        "en": "I want two kilos, please.",
+        "vi": "Cho tôi hai ký nhé."
+      },
+      {
+        "role": "Vendor",
+        "en": "Here you are. Anything else?",
+        "vi": "Của bạn đây. Còn gì nữa không?"
+      },
+      {
+        "role": "Customer",
+        "en": "No, that's all. How much total?",
+        "vi": "Không, thế thôi. Tổng cộng bao nhiêu?"
+      },
+      {
+        "role": "Vendor",
+        "en": "That's 40,000 dong.",
+        "vi": "40 nghìn đồng."
+      },
+      {
+        "role": "Customer",
+        "en": "Here you go. Thank you!",
+        "vi": "Của bạn đây. Cảm ơn!"
+      }
+    ],
+    "key_phrases": [
+      "How much are...?",
+      "I want...",
+      "Anything else?",
+      "That's all"
+    ],
+    "key_vocab": [
+      "apples",
+      "kilo",
+      "total",
+      "per"
+    ],
+    "grammar_points": [
+      "How much + are + noun?",
+      "I want + noun"
+    ],
+    "level": "a1"
+  },
+  {
+    "scenario": "Introducing a friend to family",
+    "scenario_vi": "Giới thiệu bạn với gia đình",
+    "category": "family_and_friends",
+    "roles": [
+      "Child",
+      "Parent"
+    ],
+    "dialogue": [
+      {
+        "role": "Child",
+        "en": "Mom, this is my friend, Anna.",
+        "vi": "Mẹ ơi, đây là bạn của con, Anna."
+      },
+      {
+        "role": "Parent",
+        "en": "Hello, Anna. Nice to meet you.",
+        "vi": "Chào Anna. Rất vui được gặp cháu."
+      },
+      {
+        "role": "Child",
+        "en": "Anna, this is my mother.",
+        "vi": "Anna, đây là mẹ của tớ."
+      },
+      {
+        "role": "Friend",
+        "en": "Hello, Mrs. Lan. Thank you for having me.",
+        "vi": "Chào cô Lan. Cảm ơn cô đã mời cháu."
+      },
+      {
+        "role": "Parent",
+        "en": "You are welcome. Please come in.",
+        "vi": "Không có gì. Mời cháu vào nhà."
+      },
+      {
+        "role": "Child",
+        "en": "Let's go to my room.",
+        "vi": "Chúng ta lên phòng của tớ đi."
+      }
+    ],
+    "key_phrases": [
+      "This is my friend",
+      "Nice to meet you",
+      "Thank you for having me"
+    ],
+    "key_vocab": [
+      "mom",
+      "friend",
+      "mother",
+      "room"
+    ],
+    "grammar_points": [
+      "This is...",
+      "Nice to meet you."
+    ],
+    "level": "a1"
+  },
+  {
+    "scenario": "Asking about siblings",
+    "scenario_vi": "Hỏi về anh chị em",
+    "category": "family_and_friends",
+    "roles": [
+      "Student A",
+      "Student B"
+    ],
+    "dialogue": [
+      {
+        "role": "Student A",
+        "en": "Do you have brothers or sisters?",
+        "vi": "Bạn có anh chị em không?"
+      },
+      {
+        "role": "Student B",
+        "en": "Yes, I have one brother.",
+        "vi": "Có, mình có một người anh trai."
+      },
+      {
+        "role": "Student A",
+        "en": "How old is he?",
+        "vi": "Anh ấy bao nhiêu tuổi?"
+      },
+      {
+        "role": "Student B",
+        "en": "He is 15 years old.",
+        "vi": "Anh ấy 15 tuổi."
+      },
+      {
+        "role": "Student A",
+        "en": "Do you play together?",
+        "vi": "Hai anh em có chơi cùng nhau không?"
+      },
+      {
+        "role": "Student B",
+        "en": "Yes, we play soccer on weekends.",
+        "vi": "Có, bọn mình chơi bóng đá vào cuối tuần."
+      }
+    ],
+    "key_phrases": [
+      "Do you have...?",
+      "How old is he?",
+      "play together"
+    ],
+    "key_vocab": [
+      "brother",
+      "sister",
+      "old",
+      "play",
+      "weekend"
+    ],
+    "grammar_points": [
+      "Yes/No questions with 'do'",
+      "How old + to be"
+    ],
+    "level": "a1"
+  },
+  {
+    "scenario": "Asking for help in class",
+    "scenario_vi": "Hỏi bài trong lớp",
+    "category": "education",
+    "roles": [
+      "Student",
+      "Teacher"
+    ],
+    "dialogue": [
+      {
+        "role": "Student",
+        "en": "Teacher, I have a question.",
+        "vi": "Thưa cô, em có một câu hỏi."
+      },
+      {
+        "role": "Teacher",
+        "en": "Yes, please go ahead.",
+        "vi": "Được, em cứ hỏi."
+      },
+      {
+        "role": "Student",
+        "en": "What is the answer to number five?",
+        "vi": "Đáp án câu số năm là gì ạ?"
+      },
+      {
+        "role": "Teacher",
+        "en": "Let me see. The answer is 'apple'.",
+        "vi": "Để cô xem. Đáp án là 'quả táo'."
+      },
+      {
+        "role": "Student",
+        "en": "Thank you, teacher!",
+        "vi": "Em cảm ơn cô!"
+      },
+      {
+        "role": "Teacher",
+        "en": "You're welcome. Any other questions?",
+        "vi": "Không có gì. Còn câu hỏi nào khác không?"
+      }
+    ],
+    "key_phrases": [
+      "I have a question",
+      "Please go ahead",
+      "Thank you, teacher",
+      "You're welcome"
+    ],
+    "key_vocab": [
+      "question",
+      "answer",
+      "teacher",
+      "student"
+    ],
+    "grammar_points": [
+      "Subject + have/has + noun",
+      "Imperative: Please + verb"
+    ],
+    "level": "a1"
+  },
+  {
+    "scenario": "Borrowing a book from the library",
+    "scenario_vi": "Mượn sách ở thư viện",
+    "category": "education",
+    "roles": [
+      "Student",
+      "Librarian"
+    ],
+    "dialogue": [
+      {
+        "role": "Student",
+        "en": "Excuse me, can I borrow this book?",
+        "vi": "Xin lỗi, em có thể mượn cuốn sách này không ạ?"
+      },
+      {
+        "role": "Librarian",
+        "en": "Sure. Do you have your library card?",
+        "vi": "Được chứ. Em có thẻ thư viện không?"
+      },
+      {
+        "role": "Student",
+        "en": "Yes, here it is.",
+        "vi": "Dạ, đây ạ."
+      },
+      {
+        "role": "Librarian",
+        "en": "Okay, you have it for two weeks.",
+        "vi": "Được rồi, em có thể mượn trong hai tuần."
+      },
+      {
+        "role": "Student",
+        "en": "Thank you very much.",
+        "vi": "Cảm ơn cô nhiều ạ."
+      },
+      {
+        "role": "Librarian",
+        "en": "You're welcome. Enjoy the book!",
+        "vi": "Không có gì. Đọc sách vui nhé!"
+      }
+    ],
+    "key_phrases": [
+      "Can I borrow...?",
+      "library card",
+      "for two weeks",
+      "Enjoy the book"
+    ],
+    "key_vocab": [
+      "borrow",
+      "book",
+      "library card",
+      "week"
+    ],
+    "grammar_points": [
+      "Can I + verb?",
+      "Here it is",
+      "for + time period"
+    ],
+    "level": "a1"
+  },
+  {
+    "scenario": "Asking for directions to the bus stop",
+    "scenario_vi": "Hỏi đường đến trạm xe buýt",
+    "category": "travel_and_transport",
+    "roles": [
+      "Tourist",
+      "Local"
+    ],
+    "dialogue": [
+      {
+        "role": "Tourist",
+        "en": "Excuse me, where is the bus stop?",
+        "vi": "Xin lỗi, trạm xe buýt ở đâu ạ?"
+      },
+      {
+        "role": "Local",
+        "en": "Go straight. It's on the left.",
+        "vi": "Đi thẳng. Nó ở bên trái."
+      },
+      {
+        "role": "Tourist",
+        "en": "Is it far from here?",
+        "vi": "Có xa đây không ạ?"
+      },
+      {
+        "role": "Local",
+        "en": "No, it's very near. About two minutes.",
+        "vi": "Không, rất gần. Khoảng hai phút."
+      },
+      {
+        "role": "Tourist",
+        "en": "Thank you very much!",
+        "vi": "Cảm ơn bạn rất nhiều!"
+      },
+      {
+        "role": "Local",
+        "en": "You're welcome. Have a good day!",
+        "vi": "Không có gì. Chúc bạn một ngày tốt lành!"
+      }
+    ],
+    "key_phrases": [
+      "Excuse me, where is...?",
+      "Go straight",
+      "Is it far from here?"
+    ],
+    "key_vocab": [
+      "bus stop",
+      "near",
+      "far",
+      "left",
+      "straight"
+    ],
+    "grammar_points": [
+      "Wh- questions with 'where'",
+      "Present tense for directions: 'Go straight'",
+      "Yes/No questions with 'is it'"
+    ],
+    "level": "a1"
+  },
+  {
+    "scenario": "Buying a train ticket at the station",
+    "scenario_vi": "Mua vé tàu ở ga",
+    "category": "travel_and_transport",
+    "roles": [
+      "Passenger",
+      "Ticket Clerk"
+    ],
+    "dialogue": [
+      {
+        "role": "Passenger",
+        "en": "Hello! I'd like a ticket to Hanoi, please.",
+        "vi": "Xin chào! Cho tôi một vé đi Hà Nội ạ."
+      },
+      {
+        "role": "Ticket Clerk",
+        "en": "One way or round trip?",
+        "vi": "Vé một chiều hay khứ hồi ạ?"
+      },
+      {
+        "role": "Passenger",
+        "en": "One way, please. How much is it?",
+        "vi": "Một chiều ạ. Bao nhiêu tiền vậy?"
+      },
+      {
+        "role": "Ticket Clerk",
+        "en": "It's 200,000 dong.",
+        "vi": "200,000 đồng ạ."
+      },
+      {
+        "role": "Passenger",
+        "en": "Here you go. Thank you.",
+        "vi": "Của bạn đây. Cảm ơn."
+      },
+      {
+        "role": "Ticket Clerk",
+        "en": "Here's your ticket. The train leaves at 3 PM.",
+        "vi": "Vé của bạn đây. Tàu khởi hành lúc 3 giờ chiều."
+      }
+    ],
+    "key_phrases": [
+      "I'd like a ticket to...",
+      "One way or round trip?",
+      "How much is it?"
+    ],
+    "key_vocab": [
+      "ticket",
+      "one way",
+      "round trip",
+      "price",
+      "train",
+      "station"
+    ],
+    "grammar_points": [
+      "'I'd like' for polite requests",
+      "Wh- questions with 'how much'",
+      "Present tense for schedules: 'leaves at'"
+    ],
+    "level": "a1"
+  },
+  {
+    "scenario": "At the pharmacy",
+    "scenario_vi": "Ở hiệu thuốc",
+    "category": "health_and_body",
+    "roles": [
+      "Customer",
+      "Pharmacist"
+    ],
+    "dialogue": [
+      {
+        "role": "Customer",
+        "en": "Hello, I have a headache.",
+        "vi": "Chào anh/chị, tôi bị đau đầu."
+      },
+      {
+        "role": "Pharmacist",
+        "en": "How long have you had it?",
+        "vi": "Bị lâu chưa ạ?"
+      },
+      {
+        "role": "Customer",
+        "en": "Since this morning.",
+        "vi": "Từ sáng nay."
+      },
+      {
+        "role": "Pharmacist",
+        "en": "Do you have a fever?",
+        "vi": "Có sốt không?"
+      },
+      {
+        "role": "Customer",
+        "en": "No, just the headache.",
+        "vi": "Không, chỉ đau đầu thôi."
+      },
+      {
+        "role": "Pharmacist",
+        "en": "I recommend this medicine. Take one pill every 6 hours.",
+        "vi": "Tôi khuyên dùng thuốc này. Uống một viên mỗi 6 tiếng."
+      },
+      {
+        "role": "Customer",
+        "en": "Thank you. How much is it?",
+        "vi": "Cảm ơn. Bao nhiêu tiền ạ?"
+      },
+      {
+        "role": "Pharmacist",
+        "en": "50,000 dong.",
+        "vi": "50.000 đồng."
+      }
+    ],
+    "key_phrases": [
+      "I have a headache",
+      "Do you have a fever?",
+      "Take one pill every 6 hours"
+    ],
+    "key_vocab": [
+      "headache",
+      "fever",
+      "medicine",
+      "pill",
+      "recommend"
+    ],
+    "grammar_points": [
+      "present simple for states (I have...)",
+      "imperatives (take...)",
+      "question with 'Do you have...?'"
+    ],
+    "level": "a1"
+  },
+  {
+    "scenario": "Two friends talking about weekend hobbies",
+    "scenario_vi": "Hai người bạn nói về sở thích cuối tuần",
+    "category": "hobbies_and_leisure",
+    "roles": [
+      "Minh",
+      "Lan"
+    ],
+    "dialogue": [
+      {
+        "role": "Minh",
+        "en": "What do you do on weekends?",
+        "vi": "Cuối tuần bạn làm gì?"
+      },
+      {
+        "role": "Lan",
+        "en": "I like to read books.",
+        "vi": "Mình thích đọc sách."
+      },
+      {
+        "role": "Minh",
+        "en": "That's nice! I like to play soccer.",
+        "vi": "Hay đấy! Mình thích chơi bóng đá."
+      },
+      {
+        "role": "Lan",
+        "en": "Do you play every weekend?",
+        "vi": "Bạn chơi mỗi cuối tuần à?"
+      },
+      {
+        "role": "Minh",
+        "en": "Yes, I play on Saturday mornings.",
+        "vi": "Ừ, mình chơi sáng thứ Bảy."
+      },
+      {
+        "role": "Lan",
+        "en": "Maybe I can watch you play sometime.",
+        "vi": "Có lẽ mình có thể xem bạn chơi lúc nào đó."
+      },
+      {
+        "role": "Minh",
+        "en": "Sure! You can come this Saturday.",
+        "vi": "Chắc chắn rồi! Bạn có thể đến thứ Bảy này."
+      }
+    ],
+    "key_phrases": [
+      "What do you do on weekends?",
+      "I like to...",
+      "Do you play every weekend?",
+      "Maybe I can..."
+    ],
+    "key_vocab": [
+      "weekend",
+      "read",
+      "play",
+      "soccer",
+      "watch"
+    ],
+    "grammar_points": [
+      "like to + verb",
+      "do you...?",
+      "can + verb"
+    ],
+    "level": "a1"
+  },
+  {
+    "scenario": "Talking about a favorite movie",
+    "scenario_vi": "Nói về bộ phim yêu thích",
+    "category": "hobbies_and_leisure",
+    "roles": [
+      "Tom",
+      "Anna"
+    ],
+    "dialogue": [
+      {
+        "role": "Tom",
+        "en": "Do you like movies?",
+        "vi": "Bạn có thích phim không?"
+      },
+      {
+        "role": "Anna",
+        "en": "Yes, I love action movies.",
+        "vi": "Có, mình thích phim hành động."
+      },
+      {
+        "role": "Tom",
+        "en": "What is your favorite movie?",
+        "vi": "Phim yêu thích của bạn là gì?"
+      },
+      {
+        "role": "Anna",
+        "en": "My favorite is 'Fast & Furious'.",
+        "vi": "Phim yêu thích của mình là 'Fast & Furious'."
+      },
+      {
+        "role": "Tom",
+        "en": "Oh, I know that one! It is very exciting.",
+        "vi": "Ồ, mình biết phim đó! Nó rất hấp dẫn."
+      },
+      {
+        "role": "Anna",
+        "en": "Yes, I watch it many times.",
+        "vi": "Ừ, mình xem nó nhiều lần rồi."
+      },
+      {
+        "role": "Tom",
+        "en": "Maybe we can watch a movie together.",
+        "vi": "Có lẽ chúng ta có thể xem phim cùng nhau."
+      }
+    ],
+    "key_phrases": [
+      "Do you like movies?",
+      "What is your favorite movie?",
+      "I love...",
+      "Maybe we can..."
+    ],
+    "key_vocab": [
+      "movie",
+      "action",
+      "favorite",
+      "exciting",
+      "watch"
+    ],
+    "grammar_points": [
+      "do you like...?",
+      "what is...?",
+      "can + verb"
+    ],
+    "level": "a1"
+  },
+  {
+    "scenario": "Checking in at a hotel",
+    "scenario_vi": "Nhận phòng khách sạn",
+    "category": "services",
+    "roles": [
+      "Guest",
+      "Receptionist"
+    ],
+    "dialogue": [
+      {
+        "role": "Receptionist",
+        "en": "Good afternoon. Do you have a reservation?",
+        "vi": "Chào buổi chiều. Anh/chị có đặt phòng trước không ạ?"
+      },
+      {
+        "role": "Guest",
+        "en": "Yes, my name is John Smith.",
+        "vi": "Có, tôi tên là John Smith."
+      },
+      {
+        "role": "Receptionist",
+        "en": "Okay, a single room for two nights. Here is your key.",
+        "vi": "Dạ, phòng đơn hai đêm. Đây là chìa khóa của anh."
+      },
+      {
+        "role": "Guest",
+        "en": "Thank you. What time is breakfast?",
+        "vi": "Cảm ơn. Bữa sáng lúc mấy giờ ạ?"
+      },
+      {
+        "role": "Receptionist",
+        "en": "Breakfast is from 6:30 to 9:30 in the restaurant downstairs.",
+        "vi": "Bữa sáng từ 6:30 đến 9:30 ở nhà hàng dưới tầng trệt."
+      },
+      {
+        "role": "Guest",
+        "en": "Great. Thanks!",
+        "vi": "Tuyệt. Cảm ơn!"
+      }
+    ],
+    "key_phrases": [
+      "Do you have a reservation?",
+      "Here is your key.",
+      "What time is breakfast?"
+    ],
+    "key_vocab": [
+      "reservation",
+      "single room",
+      "key",
+      "breakfast"
+    ],
+    "grammar_points": [
+      "Do you have...?",
+      "What time is...?"
+    ],
+    "level": "a1"
+  },
+  {
+    "scenario": "Asking for directions on the street",
+    "scenario_vi": "Hỏi đường trên phố",
+    "category": "services",
+    "roles": [
+      "Tourist",
+      "Local"
+    ],
+    "dialogue": [
+      {
+        "role": "Tourist",
+        "en": "Excuse me, where is the bus station?",
+        "vi": "Xin lỗi, bến xe buýt ở đâu ạ?"
+      },
+      {
+        "role": "Local",
+        "en": "Go straight, then turn left at the traffic lights.",
+        "vi": "Đi thẳng, sau đó rẽ trái ở đèn giao thông."
+      },
+      {
+        "role": "Tourist",
+        "en": "Is it far?",
+        "vi": "Có xa không ạ?"
+      },
+      {
+        "role": "Local",
+        "en": "No, it's about five minutes on foot.",
+        "vi": "Không, chỉ khoảng năm phút đi bộ thôi."
+      },
+      {
+        "role": "Tourist",
+        "en": "Thank you very much.",
+        "vi": "Cảm ơn nhiều ạ."
+      },
+      {
+        "role": "Local",
+        "en": "You're welcome. Have a nice day!",
+        "vi": "Không có chi. Chúc anh một ngày tốt lành!"
+      }
+    ],
+    "key_phrases": [
+      "Where is...?",
+      "Go straight",
+      "turn left",
+      "Is it far?"
+    ],
+    "key_vocab": [
+      "bus station",
+      "traffic lights",
+      "on foot"
+    ],
+    "grammar_points": [
+      "imperative for directions",
+      "Is it...?"
+    ],
+    "level": "a1"
+  },
+  {
+    "scenario": "Asking for directions to the museum",
+    "scenario_vi": "Hỏi đường đến bảo tàng",
+    "category": "places",
+    "roles": [
+      "Tourist",
+      "Local"
+    ],
+    "dialogue": [
+      {
+        "role": "Tourist",
+        "en": "Excuse me. Where is the museum?",
+        "vi": "Xin lỗi. Bảo tàng ở đâu ạ?"
+      },
+      {
+        "role": "Local",
+        "en": "Go straight. It's on the left.",
+        "vi": "Đi thẳng. Nó ở bên trái."
+      },
+      {
+        "role": "Tourist",
+        "en": "Is it far?",
+        "vi": "Có xa không ạ?"
+      },
+      {
+        "role": "Local",
+        "en": "No, it's near. About five minutes.",
+        "vi": "Không, gần thôi. Khoảng năm phút."
+      },
+      {
+        "role": "Tourist",
+        "en": "Thank you very much!",
+        "vi": "Cảm ơn nhiều!"
+      },
+      {
+        "role": "Local",
+        "en": "You're welcome. Have a nice day!",
+        "vi": "Không có gì. Chúc một ngày tốt lành!"
+      }
+    ],
+    "key_phrases": [
+      "Excuse me",
+      "Where is the museum?",
+      "Go straight",
+      "It's on the left",
+      "Is it far?"
+    ],
+    "key_vocab": [
+      "museum",
+      "far",
+      "near",
+      "straight",
+      "left"
+    ],
+    "grammar_points": [
+      "Where is...?",
+      "It's on the + direction"
+    ],
+    "level": "a1"
+  },
+  {
+    "scenario": "Buying a ticket at the cinema",
+    "scenario_vi": "Mua vé ở rạp chiếu phim",
+    "category": "places",
+    "roles": [
+      "Customer",
+      "Cashier"
+    ],
+    "dialogue": [
+      {
+        "role": "Customer",
+        "en": "Hello. One ticket, please.",
+        "vi": "Xin chào. Cho tôi một vé ạ."
+      },
+      {
+        "role": "Cashier",
+        "en": "For which movie?",
+        "vi": "Cho phim nào ạ?"
+      },
+      {
+        "role": "Customer",
+        "en": "The new cartoon.",
+        "vi": "Phim hoạt hình mới ạ."
+      },
+      {
+        "role": "Cashier",
+        "en": "Okay. That's 8 dollars.",
+        "vi": "Được ạ. 8 đô la ạ."
+      },
+      {
+        "role": "Customer",
+        "en": "Here you go.",
+        "vi": "Của bạn đây."
+      },
+      {
+        "role": "Cashier",
+        "en": "Thank you. Enjoy the movie!",
+        "vi": "Cảm ơn. Xem phim vui vẻ!"
+      }
+    ],
+    "key_phrases": [
+      "One ticket, please",
+      "For which movie?",
+      "Here you go",
+      "Enjoy the movie!"
+    ],
+    "key_vocab": [
+      "ticket",
+      "movie",
+      "cartoon",
+      "dollar"
+    ],
+    "grammar_points": [
+      "For which + noun?",
+      "That's + price"
+    ],
+    "level": "a1"
+  }
+]

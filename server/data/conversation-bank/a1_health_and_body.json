@@ -1,0 +1,71 @@
+[
+  {
+    "scenario": "At the pharmacy",
+    "scenario_vi": "Ở hiệu thuốc",
+    "category": "health_and_body",
+    "roles": [
+      "Customer",
+      "Pharmacist"
+    ],
+    "dialogue": [
+      {
+        "role": "Customer",
+        "en": "Hello, I have a headache.",
+        "vi": "Chào anh/chị, tôi bị đau đầu."
+      },
+      {
+        "role": "Pharmacist",
+        "en": "How long have you had it?",
+        "vi": "Bị lâu chưa ạ?"
+      },
+      {
+        "role": "Customer",
+        "en": "Since this morning.",
+        "vi": "Từ sáng nay."
+      },
+      {
+        "role": "Pharmacist",
+        "en": "Do you have a fever?",
+        "vi": "Có sốt không?"
+      },
+      {
+        "role": "Customer",
+        "en": "No, just the headache.",
+        "vi": "Không, chỉ đau đầu thôi."
+      },
+      {
+        "role": "Pharmacist",
+        "en": "I recommend this medicine. Take one pill every 6 hours.",
+        "vi": "Tôi khuyên dùng thuốc này. Uống một viên mỗi 6 tiếng."
+      },
+      {
+        "role": "Customer",
+        "en": "Thank you. How much is it?",
+        "vi": "Cảm ơn. Bao nhiêu tiền ạ?"
+      },
+      {
+        "role": "Pharmacist",
+        "en": "50,000 dong.",
+        "vi": "50.000 đồng."
+      }
+    ],
+    "key_phrases": [
+      "I have a headache",
+      "Do you have a fever?",
+      "Take one pill every 6 hours"
+    ],
+    "key_vocab": [
+      "headache",
+      "fever",
+      "medicine",
+      "pill",
+      "recommend"
+    ],
+    "grammar_points": [
+      "present simple for states (I have...)",
+      "imperatives (take...)",
+      "question with 'Do you have...?'"
+    ],
+    "level": "a1"
+  }
+]

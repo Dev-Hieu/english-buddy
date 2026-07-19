@@ -1,0 +1,83 @@
+[
+  {
+    "scenario": "Negotiating a salary raise with manager",
+    "scenario_vi": "Đàm phán tăng lương với quản lý",
+    "category": "work_and_jobs",
+    "roles": [
+      "Employee",
+      "Manager"
+    ],
+    "dialogue": [
+      {
+        "role": "Employee",
+        "en": "Thanks for making time, Sarah. I wanted to discuss my compensation.",
+        "vi": "Cảm ơn chị đã dành thời gian, Sarah. Em muốn thảo luận về lương thưởng của mình."
+      },
+      {
+        "role": "Manager",
+        "en": "Sure, go ahead. What's on your mind?",
+        "vi": "Được thôi, em cứ nói. Em có ý gì?"
+      },
+      {
+        "role": "Employee",
+        "en": "Well, I've been here for three years now, and I've consistently exceeded my KPIs. I'm hoping we can revisit my salary.",
+        "vi": "À, em đã làm ở đây được ba năm rồi, và em luôn vượt chỉ tiêu. Em hy vọng chúng ta có thể xem xét lại mức lương của em."
+      },
+      {
+        "role": "Manager",
+        "en": "I appreciate your hard work. What kind of increase were you thinking?",
+        "vi": "Chị đánh giá cao sự nỗ lực của em. Em mong muốn mức tăng bao nhiêu?"
+      },
+      {
+        "role": "Employee",
+        "en": "Based on market research and my contributions, I'm looking at a 15% raise.",
+        "vi": "Dựa trên khảo sát thị trường và đóng góp của em, em hy vọng tăng 15%."
+      },
+      {
+        "role": "Manager",
+        "en": "That's a significant jump. Can you walk me through your rationale?",
+        "vi": "Mức tăng đó khá lớn. Em có thể giải thích lý do được không?"
+      },
+      {
+        "role": "Employee",
+        "en": "Sure. I've taken on additional responsibilities like mentoring juniors and leading the Q3 project. My performance reviews have been stellar.",
+        "vi": "Vâng. Em đã đảm nhận thêm trách nhiệm như kèm cặp nhân viên mới và dẫn dắt dự án quý 3. Đánh giá hiệu suất của em rất tốt."
+      },
+      {
+        "role": "Manager",
+        "en": "I see your point. Let me talk to HR and see what we can do. I'll get back to you by next week.",
+        "vi": "Chị hiểu rồi. Để chị nói chuyện với HR xem có thể làm gì. Chị sẽ trả lời em trong tuần sau."
+      },
+      {
+        "role": "Employee",
+        "en": "Thank you, Sarah. I really appreciate your support.",
+        "vi": "Cảm ơn chị, Sarah. Em rất trân trọng sự hỗ trợ của chị."
+      },
+      {
+        "role": "Manager",
+        "en": "No problem. You've earned it. Keep up the good work.",
+        "vi": "Không có gì. Em xứng đáng mà. Tiếp tục phát huy nhé."
+      }
+    ],
+    "key_phrases": [
+      "revisit my salary",
+      "based on market research",
+      "walk me through your rationale",
+      "get back to you"
+    ],
+    "key_vocab": [
+      "compensation",
+      "KPIs",
+      "raise",
+      "rationale",
+      "mentoring",
+      "stellar"
+    ],
+    "grammar_points": [
+      "Present perfect continuous (I've been here)",
+      "Conditional (Let me... and see what we can do)",
+      "Future intention (I'll get back to you)"
+    ],
+    "level": "c1"
+  }
+]

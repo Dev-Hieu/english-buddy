@@ -1,0 +1,73 @@
+[
+  {
+    "scenario": "Debating online privacy with a friend",
+    "scenario_vi": "Tranh luận về quyền riêng tư trực tuyến với bạn",
+    "category": "communication_and_technology",
+    "roles": [
+      "Mai",
+      "Linh"
+    ],
+    "dialogue": [
+      {
+        "role": "Mai",
+        "en": "You know, I just found out that my messaging app has been sharing my data with third parties. I'm seriously thinking about deleting it.",
+        "vi": "Bạn biết không, mình vừa phát hiện ra ứng dụng nhắn tin của mình đã chia sẻ dữ liệu cho bên thứ ba. Mình đang nghiêm túc cân nhắc xóa nó đấy."
+      },
+      {
+        "role": "Linh",
+        "en": "Come on, Mai. Most apps do that these days. It's practically impossible to avoid. You'd have to go off the grid entirely.",
+        "vi": "Thôi nào Mai. Hầu hết các ứng dụng bây giờ đều làm vậy cả. Thực tế thì không thể tránh được đâu. Bạn phải sống tách biệt hoàn toàn mới được."
+      },
+      {
+        "role": "Mai",
+        "en": "That's a bit of an overstatement. I'm not saying I'll ditch my smartphone, but I can be more selective about what I use. There are privacy-focused alternatives.",
+        "vi": "Hơi quá đáng rồi đấy. Mình không nói là sẽ vứt điện thoại thông minh đi, nhưng mình có thể chọn lọc hơn về những gì mình dùng. Có những ứng dụng thay thế tập trung vào quyền riêng tư mà."
+      },
+      {
+        "role": "Linh",
+        "en": "Sure, but convenience often wins out. I mean, who has the time to research every app's privacy policy? It's a trade-off we all make.",
+        "vi": "Ừ, nhưng tiện lợi thường thắng. Ý mình là, ai có thời gian để nghiên cứu chính sách bảo mật của từng ứng dụng chứ? Đó là sự đánh đổi mà tất cả chúng ta đều chấp nhận."
+      },
+      {
+        "role": "Mai",
+        "en": "That's exactly the mindset that got us into this mess. If we don't push back, companies will keep encroaching on our privacy. It's a slippery slope.",
+        "vi": "Chính cái suy nghĩ đó đã đưa chúng ta vào tình trạng này đấy. Nếu chúng ta không phản kháng, các công ty sẽ tiếp tục xâm phạm quyền riêng tư của chúng ta. Đó là một con đường trơn trượt."
+      },
+      {
+        "role": "Linh",
+        "en": "I see your point, but I think it's a bit naive to believe we can have total privacy in the digital age. The genie's out of the bottle, so to speak.",
+        "vi": "Mình hiểu ý bạn, nhưng mình nghĩ hơi ngây thơ khi tin rằng chúng ta có thể có quyền riêng tư tuyệt đối trong thời đại kỹ thuật số. Nói nôm na là nước đã đổ đi rồi."
+      },
+      {
+        "role": "Mai",
+        "en": "I'm not asking for total privacy, just basic respect for my data. And it's not just about me; it's about setting a precedent for future generations.",
+        "vi": "Mình không yêu cầu quyền riêng tư tuyệt đối, chỉ là sự tôn trọng cơ bản đối với dữ liệu của mình thôi. Và không chỉ vì mình, mà còn để tạo tiền lệ cho các thế hệ tương lai."
+      },
+      {
+        "role": "Linh",
+        "en": "Alright, you've given me food for thought. Maybe I should look into those privacy-focused apps you mentioned. Do you have any recommendations?",
+        "vi": "Được rồi, bạn đã cho mình một vấn đề để suy nghĩ. Có lẽ mình nên tìm hiểu về những ứng dụng tập trung vào quyền riêng tư mà bạn đề cập. Bạn có gợi ý gì không?"
+      }
+    ],
+    "key_phrases": [
+      "off the grid",
+      "a trade-off",
+      "a slippery slope",
+      "food for thought"
+    ],
+    "key_vocab": [
+      "encroaching",
+      "precedent",
+      "selective",
+      "alternatives",
+      "overstatement",
+      "privacy-focused"
+    ],
+    "grammar_points": [
+      "Conditional: If we don't push back, companies will keep encroaching...",
+      "Comparative: more selective",
+      "Modal: can have, would have to"
+    ],
+    "level": "c1"
+  }
+]

@@ -1,0 +1,222 @@
+[
+  {
+    "scenario": "Ordering food at a restaurant",
+    "scenario_vi": "Gọi món ở nhà hàng",
+    "category": "food_and_drink",
+    "roles": [
+      "Customer",
+      "Waiter"
+    ],
+    "dialogue": [
+      {
+        "role": "Waiter",
+        "en": "Good evening! Are you ready to order?",
+        "vi": "Chào buổi tối! Quý khách đã sẵn sàng gọi món chưa ạ?"
+      },
+      {
+        "role": "Customer",
+        "en": "Yes, I'd like the grilled chicken, please.",
+        "vi": "Vâng, cho tôi món gà nướng ạ."
+      },
+      {
+        "role": "Waiter",
+        "en": "Sure. Would you like a side dish with that?",
+        "vi": "Vâng. Quý khách có muốn dùng kèm món phụ không ạ?"
+      },
+      {
+        "role": "Customer",
+        "en": "What do you recommend?",
+        "vi": "Anh/chị có gợi ý gì không?"
+      },
+      {
+        "role": "Waiter",
+        "en": "The mashed potatoes are very popular.",
+        "vi": "Món khoai tây nghiền rất được ưa chuộng ạ."
+      },
+      {
+        "role": "Customer",
+        "en": "I'll have that. And a glass of orange juice, please.",
+        "vi": "Tôi sẽ lấy món đó. Và một cốc nước cam ạ."
+      },
+      {
+        "role": "Waiter",
+        "en": "Great. I'll bring your order soon.",
+        "vi": "Tuyệt vời. Tôi sẽ mang món ra ngay ạ."
+      },
+      {
+        "role": "Customer",
+        "en": "Thank you.",
+        "vi": "Cảm ơn."
+      }
+    ],
+    "key_phrases": [
+      "Are you ready to order?",
+      "I'd like...",
+      "What do you recommend?",
+      "I'll have..."
+    ],
+    "key_vocab": [
+      "order",
+      "recommend",
+      "side dish",
+      "popular"
+    ],
+    "grammar_points": [
+      "would like + noun",
+      "What do you recommend?"
+    ],
+    "level": "a2"
+  },
+  {
+    "scenario": "Buying groceries at a market",
+    "scenario_vi": "Mua thực phẩm ở chợ",
+    "category": "food_and_drink",
+    "roles": [
+      "Customer",
+      "Vendor"
+    ],
+    "dialogue": [
+      {
+        "role": "Customer",
+        "en": "How much are these apples?",
+        "vi": "Mấy quả táo này bao nhiêu tiền ạ?"
+      },
+      {
+        "role": "Vendor",
+        "en": "They're 30,000 dong per kilo.",
+        "vi": "30 nghìn một cân em ạ."
+      },
+      {
+        "role": "Customer",
+        "en": "I'll take two kilos, please.",
+        "vi": "Em lấy hai cân ạ."
+      },
+      {
+        "role": "Vendor",
+        "en": "Here you are. Anything else?",
+        "vi": "Của em đây. Còn gì nữa không em?"
+      },
+      {
+        "role": "Customer",
+        "en": "Do you have fresh milk?",
+        "vi": "Có sữa tươi không ạ?"
+      },
+      {
+        "role": "Vendor",
+        "en": "Yes, over there. It's 25,000 dong a carton.",
+        "vi": "Có, ở đằng kia. Một hộp 25 nghìn em ạ."
+      },
+      {
+        "role": "Customer",
+        "en": "I'll get two cartons. How much is that in total?",
+        "vi": "Em lấy hai hộp. Tổng cộng bao nhiêu ạ?"
+      },
+      {
+        "role": "Vendor",
+        "en": "It's 110,000 dong altogether.",
+        "vi": "Tổng cộng 110 nghìn em ạ."
+      },
+      {
+        "role": "Customer",
+        "en": "Here's 120,000.",
+        "vi": "Em gửi 120 nghìn ạ."
+      },
+      {
+        "role": "Vendor",
+        "en": "And here's your change. Thank you!",
+        "vi": "Tiền thừa của em đây. Cảm ơn em!"
+      }
+    ],
+    "key_phrases": [
+      "How much are...?",
+      "I'll take...",
+      "Anything else?",
+      "How much is that in total?"
+    ],
+    "key_vocab": [
+      "kilo",
+      "carton",
+      "change",
+      "total"
+    ],
+    "grammar_points": [
+      "How much + noun?",
+      "I'll take + noun"
+    ],
+    "level": "a2"
+  },
+  {
+    "scenario": "Planning a dinner party with a friend",
+    "scenario_vi": "Lên kế hoạch tiệc tối với bạn",
+    "category": "food_and_drink",
+    "roles": [
+      "Friend A",
+      "Friend B"
+    ],
+    "dialogue": [
+      {
+        "role": "Friend A",
+        "en": "What should we cook for the party tomorrow?",
+        "vi": "Ngày mai chúng ta nên nấu gì cho bữa tiệc?"
+      },
+      {
+        "role": "Friend B",
+        "en": "I think we'll make spaghetti and a salad.",
+        "vi": "Mình nghĩ chúng ta sẽ làm mỳ Ý và salad."
+      },
+      {
+        "role": "Friend A",
+        "en": "Good idea. I'll bring the ingredients.",
+        "vi": "Ý hay đấy. Mình sẽ mang nguyên liệu."
+      },
+      {
+        "role": "Friend B",
+        "en": "Did you buy the tomatoes yesterday?",
+        "vi": "Hôm qua bạn mua cà chua chưa?"
+      },
+      {
+        "role": "Friend A",
+        "en": "Yes, I bought some. Also, I'll get some cheese later.",
+        "vi": "Rồi, mình mua một ít. Tí nữa mình sẽ mua thêm phô mai."
+      },
+      {
+        "role": "Friend B",
+        "en": "Great! I'll prepare the dessert.",
+        "vi": "Tuyệt! Mình sẽ chuẩn bị món tráng miệng."
+      },
+      {
+        "role": "Friend A",
+        "en": "What will you make?",
+        "vi": "Bạn sẽ làm gì?"
+      },
+      {
+        "role": "Friend B",
+        "en": "I'll bake a chocolate cake.",
+        "vi": "Mình sẽ nướng bánh sô-cô-la."
+      },
+      {
+        "role": "Friend A",
+        "en": "Sounds delicious! See you tomorrow.",
+        "vi": "Nghe ngon quá! Hẹn gặp bạn ngày mai."
+      }
+    ],
+    "key_phrases": [
+      "What should we cook?",
+      "I think we'll make...",
+      "I'll bring...",
+      "I'll get..."
+    ],
+    "key_vocab": [
+      "ingredients",
+      "spaghetti",
+      "salad",
+      "dessert",
+      "bake"
+    ],
+    "grammar_points": [
+      "will + verb (future)",
+      "What will you...?"
+    ],
+    "level": "a2"
+  }
+]

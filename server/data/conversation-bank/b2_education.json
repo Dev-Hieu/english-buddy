@@ -1,0 +1,151 @@
+[
+  {
+    "scenario": "Debating the value of online courses",
+    "scenario_vi": "Tranh luận về giá trị của các khóa học trực tuyến",
+    "category": "education",
+    "roles": [
+      "Student A",
+      "Student B"
+    ],
+    "dialogue": [
+      {
+        "role": "Student A",
+        "en": "I'm thinking of taking an online course in data science, but I'm not sure if it's worth it.",
+        "vi": "Mình đang nghĩ đến việc học một khóa học trực tuyến về khoa học dữ liệu, nhưng không chắc có đáng không."
+      },
+      {
+        "role": "Student B",
+        "en": "Well, I've taken a few online courses before. They're convenient, but you really need self-discipline.",
+        "vi": "Ừ, mình đã học vài khóa online rồi. Tiện lợi thật đấy, nhưng bạn cần có tính tự giác cao."
+      },
+      {
+        "role": "Student A",
+        "en": "That's what I'm worried about – I tend to procrastinate. But the flexibility is tempting.",
+        "vi": "Đó là điều mình lo – mình hay trì hoãn lắm. Nhưng sự linh hoạt thì hấp dẫn thật."
+      },
+      {
+        "role": "Student B",
+        "en": "True. Plus, you can learn at your own pace. Have you looked into the syllabus?",
+        "vi": "Đúng vậy. Thêm nữa, bạn có thể học theo tốc độ của mình. Bạn đã xem đề cương chưa?"
+      },
+      {
+        "role": "Student A",
+        "en": "Yeah, it covers machine learning and big data. Seems quite comprehensive.",
+        "vi": "Rồi, nó bao gồm học máy và dữ liệu lớn. Có vẻ khá toàn diện."
+      },
+      {
+        "role": "Student B",
+        "en": "Sounds good. But remember, employers often value hands-on projects over certificates.",
+        "vi": "Nghe ổn đấy. Nhưng nhớ rằng, nhà tuyển dụng thường coi trọng các dự án thực tế hơn chứng chỉ."
+      },
+      {
+        "role": "Student A",
+        "en": "Good point. The course includes a capstone project, so that might help.",
+        "vi": "Ý hay đấy. Khóa học có đồ án cuối khóa, vậy nên có thể hữu ích."
+      },
+      {
+        "role": "Student B",
+        "en": "Then I'd say go for it. You can always supplement it with personal projects.",
+        "vi": "Vậy thì mình nghĩ bạn nên thử. Bạn luôn có thể bổ sung bằng các dự án cá nhân."
+      }
+    ],
+    "key_phrases": [
+      "I'm thinking of...",
+      "it's worth it",
+      "learn at your own pace",
+      "hands-on projects",
+      "go for it"
+    ],
+    "key_vocab": [
+      "self-discipline",
+      "procrastinate",
+      "syllabus",
+      "comprehensive",
+      "capstone project",
+      "supplement"
+    ],
+    "grammar_points": [
+      "tend to + verb",
+      "Plus, + clause",
+      "employers often value X over Y"
+    ],
+    "level": "b2"
+  },
+  {
+    "scenario": "Discussing exam stress with a teacher",
+    "scenario_vi": "Thảo luận về áp lực thi cử với giáo viên",
+    "category": "education",
+    "roles": [
+      "Student",
+      "Teacher"
+    ],
+    "dialogue": [
+      {
+        "role": "Student",
+        "en": "Excuse me, Miss Lan, do you have a moment? I'm really stressed about the final exams.",
+        "vi": "Thưa cô Lan, cô có rảnh không ạ? Em đang rất căng thẳng về kỳ thi cuối kỳ."
+      },
+      {
+        "role": "Teacher",
+        "en": "Of course, come in. What seems to be the problem?",
+        "vi": "Tất nhiên, vào đi. Có chuyện gì vậy em?"
+      },
+      {
+        "role": "Student",
+        "en": "I've been studying all week, but I feel like I'm not retaining anything. It's overwhelming.",
+        "vi": "Em đã học cả tuần rồi, nhưng cảm giác chẳng nhớ được gì. Thật quá tải."
+      },
+      {
+        "role": "Teacher",
+        "en": "That's quite common. You might be burning out. Have you tried taking short breaks?",
+        "vi": "Điều đó khá phổ biến. Có lẽ em đang kiệt sức. Em đã thử nghỉ giải lao ngắn chưa?"
+      },
+      {
+        "role": "Student",
+        "en": "Not really. I feel guilty if I stop studying.",
+        "vi": "Chưa ạ. Em thấy có lỗi nếu ngừng học."
+      },
+      {
+        "role": "Teacher",
+        "en": "I see. But your brain needs rest to consolidate information. Try the Pomodoro technique – 25 minutes of focused study, then a 5-minute break.",
+        "vi": "Cô hiểu. Nhưng não bộ cần nghỉ ngơi để củng cố thông tin. Hãy thử kỹ thuật Pomodoro – học tập trung 25 phút, rồi nghỉ 5 phút."
+      },
+      {
+        "role": "Student",
+        "en": "That might help. Also, I'm not sure I understand some key concepts in physics.",
+        "vi": "Có thể hữu ích ạ. Ngoài ra, em không chắc hiểu một số khái niệm chính trong vật lý."
+      },
+      {
+        "role": "Teacher",
+        "en": "We can go over them together after class. But remember, it's not about memorizing everything – it's about understanding the core ideas.",
+        "vi": "Chúng ta có thể xem lại chúng sau giờ học. Nhưng hãy nhớ, không phải là học thuộc lòng mọi thứ – mà là hiểu các ý chính."
+      },
+      {
+        "role": "Student",
+        "en": "Thanks, Miss. I'll try to pace myself and focus on understanding.",
+        "vi": "Cảm ơn cô. Em sẽ cố gắng học có điều độ và tập trung vào hiểu bài."
+      }
+    ],
+    "key_phrases": [
+      "do you have a moment?",
+      "burning out",
+      "take short breaks",
+      "go over them",
+      "pace myself"
+    ],
+    "key_vocab": [
+      "retaining",
+      "overwhelming",
+      "consolidate",
+      "Pomodoro technique",
+      "core ideas",
+      "memorizing"
+    ],
+    "grammar_points": [
+      "might be + verb-ing (speculation)",
+      "It's not about X – it's about Y",
+      "try + verb-ing (suggestion)"
+    ],
+    "level": "b2"
+  }
+]

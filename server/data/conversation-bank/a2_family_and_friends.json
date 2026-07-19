@@ -1,0 +1,140 @@
+[
+  {
+    "scenario": "Asking a friend about a past trip",
+    "scenario_vi": "Hỏi bạn về chuyến đi vừa rồi",
+    "category": "family_and_friends",
+    "roles": [
+      "Lan",
+      "Minh"
+    ],
+    "dialogue": [
+      {
+        "role": "Lan",
+        "en": "Hey Minh, how was your trip to Da Lat last week?",
+        "vi": "Chào Minh, chuyến đi Đà Lạt tuần trước thế nào?"
+      },
+      {
+        "role": "Minh",
+        "en": "It was great! I went with my family.",
+        "vi": "Tuyệt lắm! Mình đi với gia đình."
+      },
+      {
+        "role": "Lan",
+        "en": "What did you do there?",
+        "vi": "Các bạn đã làm gì ở đó?"
+      },
+      {
+        "role": "Minh",
+        "en": "We visited some waterfalls and ate a lot of strawberries.",
+        "vi": "Tụi mình tham quan vài thác nước và ăn nhiều dâu tây."
+      },
+      {
+        "role": "Lan",
+        "en": "Sounds fun! Will you go again next year?",
+        "vi": "Nghe vui quá! Năm sau bạn có đi lại không?"
+      },
+      {
+        "role": "Minh",
+        "en": "Maybe. I'll tell you if I do.",
+        "vi": "Có thể. Mình sẽ nói bạn nếu đi."
+      },
+      {
+        "role": "Lan",
+        "en": "Great, I'd love to join!",
+        "vi": "Tuyệt, mình rất muốn đi cùng!"
+      },
+      {
+        "role": "Minh",
+        "en": "Sure, I'll let you know.",
+        "vi": "Chắc chắn rồi, mình sẽ báo bạn."
+      }
+    ],
+    "key_phrases": [
+      "How was your trip?",
+      "What did you do there?",
+      "I'll let you know."
+    ],
+    "key_vocab": [
+      "trip",
+      "waterfall",
+      "strawberry",
+      "join",
+      "maybe",
+      "family"
+    ],
+    "grammar_points": [
+      "Simple past (was, did, visited, ate)",
+      "Future with will"
+    ],
+    "level": "a2"
+  },
+  {
+    "scenario": "Planning a birthday party for a friend",
+    "scenario_vi": "Lên kế hoạch sinh nhật cho bạn",
+    "category": "family_and_friends",
+    "roles": [
+      "Hoa",
+      "Nam"
+    ],
+    "dialogue": [
+      {
+        "role": "Hoa",
+        "en": "Nam, it's Linh's birthday next Saturday. What should we do?",
+        "vi": "Nam ơi, thứ Bảy tuần sau là sinh nhật Linh. Mình nên làm gì?"
+      },
+      {
+        "role": "Nam",
+        "en": "Let's throw her a surprise party! I'll bring the cake.",
+        "vi": "Tổ chức tiệc bất ngờ cho cô ấy đi! Mình sẽ mang bánh kem."
+      },
+      {
+        "role": "Hoa",
+        "en": "Good idea! I'll invite our friends.",
+        "vi": "Ý hay đấy! Mình sẽ mời bạn bè."
+      },
+      {
+        "role": "Nam",
+        "en": "Will you buy decorations too?",
+        "vi": "Bạn sẽ mua đồ trang trí luôn chứ?"
+      },
+      {
+        "role": "Hoa",
+        "en": "Yes, I'll get some balloons and streamers.",
+        "vi": "Có, mình sẽ mua bóng bay và dây kim tuyến."
+      },
+      {
+        "role": "Nam",
+        "en": "Perfect. What about gifts? Did you get her anything?",
+        "vi": "Tuyệt. Còn quà thì sao? Bạn đã mua gì cho cô ấy chưa?"
+      },
+      {
+        "role": "Hoa",
+        "en": "Not yet. I'll buy a nice book tomorrow.",
+        "vi": "Chưa. Ngày mai mình sẽ mua một cuốn sách hay."
+      },
+      {
+        "role": "Nam",
+        "en": "Sounds good! I'll get her a scarf.",
+        "vi": "Nghe ổn đấy! Mình sẽ tặng cô ấy một cái khăn."
+      }
+    ],
+    "key_phrases": [
+      "What should we do?",
+      "Let's throw her a surprise party!",
+      "I'll bring the cake."
+    ],
+    "key_vocab": [
+      "birthday",
+      "surprise party",
+      "cake",
+      "decorations",
+      "balloons",
+      "scarf"
+    ],
+    "grammar_points": [
+      "Let's + base verb",
+      "Future with will"
+    ],
+    "level": "a2"
+  }
+]

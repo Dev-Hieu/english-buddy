@@ -1,0 +1,159 @@
+[
+  {
+    "scenario": "Getting a haircut at a salon",
+    "scenario_vi": "Cắt tóc ở tiệm",
+    "category": "services",
+    "roles": [
+      "Customer",
+      "Hair Stylist"
+    ],
+    "dialogue": [
+      {
+        "role": "Hair Stylist",
+        "en": "Hi there! What can I do for you today?",
+        "vi": "Chào bạn! Hôm nay tôi có thể giúp gì cho bạn?"
+      },
+      {
+        "role": "Customer",
+        "en": "I'd like a haircut, please. Just a trim.",
+        "vi": "Tôi muốn cắt tóc, làm ơn. Chỉ cắt tỉa thôi."
+      },
+      {
+        "role": "Hair Stylist",
+        "en": "Sure. How short would you like it?",
+        "vi": "Được rồi. Bạn muốn cắt ngắn bao nhiêu?"
+      },
+      {
+        "role": "Customer",
+        "en": "About two inches off, please.",
+        "vi": "Cắt bỏ khoảng 5 cm ạ."
+      },
+      {
+        "role": "Hair Stylist",
+        "en": "Okay. Did you wash your hair this morning?",
+        "vi": "Được rồi. Sáng nay bạn đã gội đầu chưa?"
+      },
+      {
+        "role": "Customer",
+        "en": "Yes, I did.",
+        "vi": "Rồi ạ."
+      },
+      {
+        "role": "Hair Stylist",
+        "en": "Great. I'll start now. It will take about 20 minutes.",
+        "vi": "Tuyệt. Tôi sẽ bắt đầu ngay. Sẽ mất khoảng 20 phút."
+      },
+      {
+        "role": "Customer",
+        "en": "Thank you.",
+        "vi": "Cảm ơn."
+      },
+      {
+        "role": "Hair Stylist",
+        "en": "All done! How does it look?",
+        "vi": "Xong rồi! Trông thế nào?"
+      },
+      {
+        "role": "Customer",
+        "en": "It looks great! How much do I owe you?",
+        "vi": "Đẹp lắm! Tôi phải trả bao nhiêu?"
+      }
+    ],
+    "key_phrases": [
+      "What can I do for you?",
+      "I'd like a haircut",
+      "How much do I owe you?"
+    ],
+    "key_vocab": [
+      "haircut",
+      "trim",
+      "inches",
+      "salon"
+    ],
+    "grammar_points": [
+      "would like + noun",
+      "How much...?",
+      "Simple past tense"
+    ],
+    "level": "a2"
+  },
+  {
+    "scenario": "Booking a hotel room over the phone",
+    "scenario_vi": "Đặt phòng khách sạn qua điện thoại",
+    "category": "services",
+    "roles": [
+      "Guest",
+      "Receptionist"
+    ],
+    "dialogue": [
+      {
+        "role": "Receptionist",
+        "en": "Hello, Royal Hotel. How can I help you?",
+        "vi": "Xin chào, Khách sạn Royal. Tôi có thể giúp gì cho bạn?"
+      },
+      {
+        "role": "Guest",
+        "en": "Hi, I'd like to book a room for two nights.",
+        "vi": "Chào, tôi muốn đặt phòng cho hai đêm."
+      },
+      {
+        "role": "Receptionist",
+        "en": "Sure. When will you be arriving?",
+        "vi": "Được ạ. Quý khách sẽ đến vào lúc nào?"
+      },
+      {
+        "role": "Guest",
+        "en": "Next Monday, the 15th.",
+        "vi": "Thứ Hai tuần sau, ngày 15."
+      },
+      {
+        "role": "Receptionist",
+        "en": "And how many guests will there be?",
+        "vi": "Và có bao nhiêu khách ạ?"
+      },
+      {
+        "role": "Guest",
+        "en": "Just one person.",
+        "vi": "Chỉ một người thôi."
+      },
+      {
+        "role": "Receptionist",
+        "en": "Okay. We have a single room available. It's $80 per night.",
+        "vi": "Được ạ. Chúng tôi có phòng đơn. Giá 80 đô một đêm."
+      },
+      {
+        "role": "Guest",
+        "en": "That sounds good. I'll take it.",
+        "vi": "Nghe ổn đấy. Tôi sẽ lấy phòng đó."
+      },
+      {
+        "role": "Receptionist",
+        "en": "Great. Could I have your name and phone number, please?",
+        "vi": "Tuyệt vời. Quý khách vui lòng cho tôi tên và số điện thoại?"
+      },
+      {
+        "role": "Guest",
+        "en": "Sure. My name is Minh and my number is 0901234567.",
+        "vi": "Vâng. Tôi là Minh, số điện thoại là 0901234567."
+      }
+    ],
+    "key_phrases": [
+      "I'd like to book a room",
+      "How many guests?",
+      "I'll take it"
+    ],
+    "key_vocab": [
+      "book",
+      "room",
+      "arriving",
+      "single room",
+      "per night"
+    ],
+    "grammar_points": [
+      "will + verb (future)",
+      "How many...?",
+      "Could I have...?"
+    ],
+    "level": "a2"
+  }
+]

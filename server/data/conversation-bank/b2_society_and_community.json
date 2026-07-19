@@ -1,0 +1,149 @@
+[
+  {
+    "scenario": "Debating a city development project",
+    "scenario_vi": "Tranh luận về dự án phát triển đô thị",
+    "category": "society_and_community",
+    "roles": [
+      "Resident",
+      "City Councilor"
+    ],
+    "dialogue": [
+      {
+        "role": "Resident",
+        "en": "I've been reading about the new shopping mall proposal. Honestly, I'm pretty concerned about its impact on our neighborhood.",
+        "vi": "Tôi có đọc về đề xuất xây trung tâm thương mại mới. Thú thật, tôi khá lo ngại về tác động của nó tới khu phố chúng ta."
+      },
+      {
+        "role": "City Councilor",
+        "en": "I understand your worries, but the mall could bring in jobs and boost the local economy. We've done a thorough environmental impact assessment.",
+        "vi": "Tôi hiểu những lo lắng của bạn, nhưng trung tâm thương mại có thể tạo việc làm và thúc đẩy kinh tế địa phương. Chúng tôi đã tiến hành đánh giá tác động môi trường kỹ lưỡng."
+      },
+      {
+        "role": "Resident",
+        "en": "I'm not convinced. What about the increased traffic and noise? Our streets are already congested enough.",
+        "vi": "Tôi chưa bị thuyết phục. Còn vấn đề giao thông và tiếng ồn gia tăng thì sao? Đường phố chúng ta đã quá tải rồi."
+      },
+      {
+        "role": "City Councilor",
+        "en": "We've planned for traffic improvements, including a new roundabout and extended bus lanes. The project also includes a public park.",
+        "vi": "Chúng tôi đã có kế hoạch cải thiện giao thông, bao gồm một vòng xoay mới và làn xe buýt mở rộng. Dự án cũng bao gồm một công viên công cộng."
+      },
+      {
+        "role": "Resident",
+        "en": "That sounds good on paper, but I've seen similar promises fall through before. Could we have a community vote on this?",
+        "vi": "Nghe có vẻ tốt trên giấy, nhưng tôi đã thấy những lời hứa tương tự trước đây không thực hiện được. Chúng ta có thể tổ chức bỏ phiếu cộng đồng về việc này không?"
+      },
+      {
+        "role": "City Councilor",
+        "en": "There will be a public hearing next month where you can voice your opinion. I encourage you to attend and bring your neighbors.",
+        "vi": "Sẽ có một buổi điều trần công khai vào tháng tới, nơi bạn có thể bày tỏ ý kiến. Tôi khuyến khích bạn tham dự và rủ hàng xóm cùng đi."
+      },
+      {
+        "role": "Resident",
+        "en": "I'll definitely be there. Thanks for listening, Councilor.",
+        "vi": "Tôi nhất định sẽ có mặt. Cảm ơn ông đã lắng nghe, Nghị viên."
+      },
+      {
+        "role": "City Councilor",
+        "en": "Thank you for your engagement. It's important that we work together on this.",
+        "vi": "Cảm ơn bạn đã quan tâm. Điều quan trọng là chúng ta cùng hợp tác về vấn đề này."
+      }
+    ],
+    "key_phrases": [
+      "I'm not convinced",
+      "fall through",
+      "voice your opinion",
+      "work together"
+    ],
+    "key_vocab": [
+      "proposal",
+      "impact",
+      "congested",
+      "roundabout",
+      "public hearing",
+      "engagement"
+    ],
+    "grammar_points": [
+      "I've been reading about... (present perfect continuous)",
+      "What about...? (asking about concerns)",
+      "Could we have...? (polite suggestion)"
+    ],
+    "level": "b2"
+  },
+  {
+    "scenario": "Organizing a neighborhood volunteer event",
+    "scenario_vi": "Tổ chức sự kiện tình nguyện khu phố",
+    "category": "society_and_community",
+    "roles": [
+      "Volunteer Coordinator",
+      "New Volunteer"
+    ],
+    "dialogue": [
+      {
+        "role": "Volunteer Coordinator",
+        "en": "Hi there! Thanks for signing up for the community clean-up. We're focusing on the park and the riverbank this Saturday.",
+        "vi": "Chào bạn! Cảm ơn bạn đã đăng ký tham gia dọn dẹp cộng đồng. Chúng ta sẽ tập trung vào công viên và bờ sông thứ Bảy này."
+      },
+      {
+        "role": "New Volunteer",
+        "en": "I'm glad to help. What time should I arrive, and what should I bring?",
+        "vi": "Tôi rất vui được giúp đỡ. Tôi nên đến lúc mấy giờ và cần mang theo gì?"
+      },
+      {
+        "role": "Volunteer Coordinator",
+        "en": "We'll start at 8 AM sharp. Bring gloves and a hat if you have them; we'll provide trash bags and pickers. Also, wear sturdy shoes.",
+        "vi": "Chúng ta sẽ bắt đầu đúng 8 giờ sáng. Mang theo găng tay và mũ nếu bạn có; chúng tôi sẽ cung cấp túi rác và que gắp. Ngoài ra, hãy đi giày chắc chắn."
+      },
+      {
+        "role": "New Volunteer",
+        "en": "Got it. Is there anything else I should be aware of? I've never done this before.",
+        "vi": "Rõ. Có điều gì khác tôi cần lưu ý không? Tôi chưa từng làm việc này trước đây."
+      },
+      {
+        "role": "Volunteer Coordinator",
+        "en": "No worries! We'll have a quick briefing on safety and what to do. We'll split into teams, and I'll be around if you need anything.",
+        "vi": "Đừng lo! Chúng tôi sẽ có một buổi hướng dẫn nhanh về an toàn và những việc cần làm. Chúng ta sẽ chia thành các đội, và tôi sẽ ở gần nếu bạn cần bất cứ điều gì."
+      },
+      {
+        "role": "New Volunteer",
+        "en": "That sounds great. I'm looking forward to it. By the way, do we need to register individually or can I bring a friend?",
+        "vi": "Nghe tuyệt quá. Tôi rất mong chờ. Nhân tiện, chúng tôi cần đăng ký riêng lẻ hay tôi có thể dẫn theo một người bạn?"
+      },
+      {
+        "role": "Volunteer Coordinator",
+        "en": "Bringing a friend is absolutely welcome! Just let me know a headcount so we have enough supplies. We could always use more hands.",
+        "vi": "Dẫn theo bạn bè là hoàn toàn hoan nghênh! Chỉ cần cho tôi biết số lượng để chúng tôi có đủ dụng cụ. Chúng tôi luôn cần thêm nhiều người giúp đỡ."
+      },
+      {
+        "role": "New Volunteer",
+        "en": "Perfect. I'll ask around. Thanks for organizing this!",
+        "vi": "Tuyệt vời. Tôi sẽ hỏi thăm xung quanh. Cảm ơn bạn đã tổ chức sự kiện này!"
+      },
+      {
+        "role": "Volunteer Coordinator",
+        "en": "My pleasure! See you on Saturday. Let's make our community cleaner and greener!",
+        "vi": "Rất vui! Hẹn gặp bạn vào thứ Bảy. Hãy cùng nhau làm cho cộng đồng của chúng ta sạch hơn và xanh hơn!"
+      }
+    ],
+    "key_phrases": [
+      "sign up for",
+      "I'm looking forward to it",
+      "bring a friend",
+      "could always use more hands"
+    ],
+    "key_vocab": [
+      "clean-up",
+      "briefing",
+      "headcount",
+      "supplies",
+      "sturdy",
+      "greener"
+    ],
+    "grammar_points": [
+      "Thanks for + V-ing (expressing gratitude for an action)",
+      "What time should I...? (asking for schedule)",
+      "I've never done this before (present perfect + never)"
+    ],
+    "level": "b2"
+  }
+]

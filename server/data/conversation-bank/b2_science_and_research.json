@@ -1,0 +1,74 @@
+[
+  {
+    "scenario": "Two researchers discuss experimental results",
+    "scenario_vi": "Hai nhà nghiên cứu thảo luận về kết quả thí nghiệm",
+    "category": "science_and_research",
+    "roles": [
+      "Researcher A",
+      "Researcher B"
+    ],
+    "dialogue": [
+      {
+        "role": "Researcher A",
+        "en": "Have you had a chance to look at the preliminary data from the experiment?",
+        "vi": "Bạn đã xem qua dữ liệu sơ bộ từ thí nghiệm chưa?"
+      },
+      {
+        "role": "Researcher B",
+        "en": "Yes, I have. The results are quite intriguing, but there's a lot of noise in the control group.",
+        "vi": "Rồi, tôi đã xem. Kết quả khá thú vị, nhưng có nhiều nhiễu trong nhóm đối chứng."
+      },
+      {
+        "role": "Researcher A",
+        "en": "I noticed that too. Could it be due to the variability in the sample size?",
+        "vi": "Tôi cũng để ý thấy vậy. Có thể do độ biến thiên về kích thước mẫu không?"
+      },
+      {
+        "role": "Researcher B",
+        "en": "That's a possibility, but I think we need to run a statistical analysis to confirm. Let's run a t-test.",
+        "vi": "Đó là một khả năng, nhưng tôi nghĩ chúng ta c���n chạy phân tích thống kê để xác nhận. Hãy chạy kiểm định t."
+      },
+      {
+        "role": "Researcher A",
+        "en": "Agreed. Also, I'm wondering if the temperature fluctuations might have skewed the results.",
+        "vi": "Đồng ý. Ngoài ra, tôi đang băn khoăn liệu biến động nhiệt độ có thể làm lệch kết quả không."
+      },
+      {
+        "role": "Researcher B",
+        "en": "Good point. We should double-check the calibration logs for that period.",
+        "vi": "Ý kiến hay. Chúng ta nên kiểm tra lại nhật ký hiệu chuẩn trong khoảng thời gian đó."
+      },
+      {
+        "role": "Researcher A",
+        "en": "Let's compile all the anomalies and present them in the next lab meeting.",
+        "vi": "Hãy tổng hợp tất cả các điểm bất thường và trình bày trong buổi họp phòng thí nghiệm tới."
+      },
+      {
+        "role": "Researcher B",
+        "en": "Sounds like a plan. I'll draft a summary by tomorrow.",
+        "vi": "Nghe có vẻ khả thi. Tôi sẽ soạn bản tóm tắt vào ngày mai."
+      }
+    ],
+    "key_phrases": [
+      "preliminary data",
+      "run a statistical analysis",
+      "skew the results",
+      "calibration logs",
+      "compile the anomalies"
+    ],
+    "key_vocab": [
+      "intriguing",
+      "noise",
+      "variability",
+      "t-test",
+      "fluctuations",
+      "anomalies"
+    ],
+    "grammar_points": [
+      "modal verbs for speculation (might have, could be)",
+      "conditional clauses (if...)",
+      "present perfect for recent actions (have you had, I've compiled)"
+    ],
+    "level": "b2"
+  }
+]

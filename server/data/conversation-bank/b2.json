@@ -1,0 +1,739 @@
+[
+  {
+    "scenario": "Negotiating a job offer",
+    "scenario_vi": "Đàm phán lời mời làm việc",
+    "category": "work_and_jobs",
+    "roles": [
+      "Candidate",
+      "HR Manager"
+    ],
+    "dialogue": [
+      {
+        "role": "HR Manager",
+        "en": "We were really impressed with your interview. We'd like to offer you the position.",
+        "vi": "Chúng tôi rất ấn tượng với buổi phỏng vấn của bạn. Chúng tôi muốn mời bạn nhận vị trí này."
+      },
+      {
+        "role": "Candidate",
+        "en": "Thank you! I'm excited about the opportunity. Could you walk me through the compensation package?",
+        "vi": "Cảm ơn! Tôi rất hào hứng với cơ hội này. Anh/chị có thể cho tôi biết chi tiết về gói lương thưởng được không?"
+      },
+      {
+        "role": "HR Manager",
+        "en": "Sure. The base salary is $80,000 with a 10% annual bonus. You'd also get 20 vacation days and health insurance.",
+        "vi": "Chắc chắn rồi. Lương cơ bản là 80.000 đô la với 10% thưởng hàng năm. Bạn cũng sẽ được 20 ngày nghỉ phép và bảo hiểm y tế."
+      },
+      {
+        "role": "Candidate",
+        "en": "That sounds good, but I was hoping the base salary could be a bit higher. Is there any wiggle room?",
+        "vi": "Nghe có vẻ tốt, nhưng tôi hy vọng mức lương cơ bản có thể cao hơn một chút. Có thể thương lượng được không ạ?"
+      },
+      {
+        "role": "HR Manager",
+        "en": "We could stretch it to $85,000, but that would be our final offer. Does that work for you?",
+        "vi": "Chúng tôi có thể nâng lên 85.000 đô la, nhưng đó là mức cuối cùng. Bạn thấy ổn không?"
+      },
+      {
+        "role": "Candidate",
+        "en": "Yes, I think we have a deal. I'll sign the contract as soon as I receive it.",
+        "vi": "Vâng, tôi nghĩ chúng ta đã đồng ý. Tôi sẽ ký hợp đồng ngay khi nhận được."
+      }
+    ],
+    "key_phrases": [
+      "walk me through",
+      "wiggle room",
+      "final offer",
+      "have a deal"
+    ],
+    "key_vocab": [
+      "compensation package",
+      "base salary",
+      "bonus",
+      "negotiate",
+      "contract"
+    ],
+    "grammar_points": [
+      "Conditional sentences with 'could'",
+      "Future tense with 'will' for decisions",
+      "Indirect questions"
+    ],
+    "level": "b2"
+  },
+  {
+    "scenario": "Discussing a career change",
+    "scenario_vi": "Thảo luận về chuyển đổi nghề nghiệp",
+    "category": "work_and_jobs",
+    "roles": [
+      "Employee",
+      "Friend"
+    ],
+    "dialogue": [
+      {
+        "role": "Employee",
+        "en": "I've been thinking about switching careers. I'm just not passionate about accounting anymore.",
+        "vi": "Tôi đã suy nghĩ về việc chuyển đổi nghề nghiệp. Tôi không còn đam mê với kế toán nữa."
+      },
+      {
+        "role": "Friend",
+        "en": "What would you rather do? You've been in finance for over a decade.",
+        "vi": "Vậy bạn muốn làm gì hơn? Bạn đã làm trong lĩnh vực tài chính hơn một thập kỷ rồi."
+      },
+      {
+        "role": "Employee",
+        "en": "I've always had a knack for graphic design. I'm considering taking some courses and then looking for a junior position.",
+        "vi": "Tôi luôn có năng khiếu về thiết kế đồ họa. Tôi đang cân nhắc tham gia một số khóa học và sau đó tìm kiếm vị trí junior."
+      },
+      {
+        "role": "Friend",
+        "en": "That's a bold move. Are you prepared to take a pay cut? Entry-level design jobs don't pay as well.",
+        "vi": "Đó là một bước đi táo bạo. Bạn đã sẵn sàng chấp nhận mức lương thấp hơn chưa? Công việc thiết kế ở cấp đầu vào không trả lương cao."
+      },
+      {
+        "role": "Employee",
+        "en": "I know. I've saved up enough to cover a year of living expenses. I think it's worth it for long-term happiness.",
+        "vi": "Tôi biết. Tôi đã tiết kiệm đủ để trang trải một năm chi phí sinh hoạt. Tôi nghĩ nó đáng giá cho hạnh phúc lâu dài."
+      },
+      {
+        "role": "Friend",
+        "en": "I admire your courage. Go for it! You only live once.",
+        "vi": "Tôi ngưỡng mộ lòng can đảm của bạn. Hãy làm đi! Đời chỉ sống một lần."
+      }
+    ],
+    "key_phrases": [
+      "switch careers",
+      "have a knack for",
+      "bold move",
+      "pay cut",
+      "you only live once"
+    ],
+    "key_vocab": [
+      "passionate",
+      "decade",
+      "courses",
+      "entry-level",
+      "expenses"
+    ],
+    "grammar_points": [
+      "Present perfect continuous for ongoing actions",
+      "Question forms with 'would rather'",
+      "Adjective + enough + infinitive"
+    ],
+    "level": "b2"
+  },
+  {
+    "scenario": "Handling a workplace conflict",
+    "scenario_vi": "Giải quyết xung đột nơi làm việc",
+    "category": "work_and_jobs",
+    "roles": [
+      "Team Lead",
+      "Project Manager"
+    ],
+    "dialogue": [
+      {
+        "role": "Project Manager",
+        "en": "I need to talk to you about the missed deadline. The client is really upset.",
+        "vi": "Tôi cần nói chuyện với bạn về việc trễ hạn. Khách hàng rất bực mình."
+      },
+      {
+        "role": "Team Lead",
+        "en": "I understand. But to be fair, we were short-staffed and the requirements kept changing.",
+        "vi": "Tôi hiểu. Nhưng công bằng mà nói, chúng tôi thiếu nhân sự và yêu cầu cứ thay đổi liên tục."
+      },
+      {
+        "role": "Project Manager",
+        "en": "I get that, but you should have flagged it sooner. We could have adjusted the timeline.",
+        "vi": "Tôi hiểu điều đó, nhưng bạn lẽ ra nên báo cáo sớm hơn. Chúng ta có thể đã điều chỉnh thời hạn."
+      },
+      {
+        "role": "Team Lead",
+        "en": "You're right. I dropped the ball on communication. I'll make sure to keep you in the loop going forward.",
+        "vi": "Bạn nói đúng. Tôi đã thiếu sót trong việc giao tiếp. Tôi sẽ đảm bảo cập nhật cho bạn thường xuyên."
+      },
+      {
+        "role": "Project Manager",
+        "en": "Thanks. Let's work together to get this back on track. I'll talk to the client about extending the deadline.",
+        "vi": "Cảm ơn. Hãy cùng nhau đưa mọi thứ trở lại đúng hướng. Tôi sẽ nói chuyện với khách hàng về việc gia hạn."
+      },
+      {
+        "role": "Team Lead",
+        "en": "Appreciate that. I'll rally the team and prioritize this project above everything else.",
+        "vi": "Cảm ơn. Tôi sẽ tập hợp đội và ưu tiên dự án này lên trên hết."
+      }
+    ],
+    "key_phrases": [
+      "to be fair",
+      "dropped the ball",
+      "keep in the loop",
+      "back on track",
+      "rally the team"
+    ],
+    "key_vocab": [
+      "deadline",
+      "short-staffed",
+      "requirements",
+      "flag",
+      "timeline"
+    ],
+    "grammar_points": [
+      "Modal perfect 'should have' for past obligation",
+      "Future continuous for planned actions",
+      "Phrasal verbs"
+    ],
+    "level": "b2"
+  },
+  {
+    "scenario": "Debating a city development project",
+    "scenario_vi": "Tranh luận về dự án phát triển đô thị",
+    "category": "society_and_community",
+    "roles": [
+      "Resident",
+      "City Councilor"
+    ],
+    "dialogue": [
+      {
+        "role": "Resident",
+        "en": "I've been reading about the new shopping mall proposal. Honestly, I'm pretty concerned about its impact on our neighborhood.",
+        "vi": "Tôi có đọc về đề xuất xây trung tâm thương mại mới. Thú thật, tôi khá lo ngại về tác động của nó tới khu phố chúng ta."
+      },
+      {
+        "role": "City Councilor",
+        "en": "I understand your worries, but the mall could bring in jobs and boost the local economy. We've done a thorough environmental impact assessment.",
+        "vi": "Tôi hiểu những lo lắng của bạn, nhưng trung tâm thương mại có thể tạo việc làm và thúc đẩy kinh tế địa phương. Chúng tôi đã tiến hành đánh giá tác động môi trường kỹ lưỡng."
+      },
+      {
+        "role": "Resident",
+        "en": "I'm not convinced. What about the increased traffic and noise? Our streets are already congested enough.",
+        "vi": "Tôi chưa bị thuyết phục. Còn vấn đề giao thông và tiếng ồn gia tăng thì sao? Đường phố chúng ta đã quá tải rồi."
+      },
+      {
+        "role": "City Councilor",
+        "en": "We've planned for traffic improvements, including a new roundabout and extended bus lanes. The project also includes a public park.",
+        "vi": "Chúng tôi đã có kế hoạch cải thiện giao thông, bao gồm một vòng xoay mới và làn xe buýt mở rộng. Dự án cũng bao gồm một công viên công cộng."
+      },
+      {
+        "role": "Resident",
+        "en": "That sounds good on paper, but I've seen similar promises fall through before. Could we have a community vote on this?",
+        "vi": "Nghe có vẻ tốt trên giấy, nhưng tôi đã thấy những lời hứa tương tự trước đây không thực hiện được. Chúng ta có thể tổ chức bỏ phiếu cộng đồng về việc này không?"
+      },
+      {
+        "role": "City Councilor",
+        "en": "There will be a public hearing next month where you can voice your opinion. I encourage you to attend and bring your neighbors.",
+        "vi": "Sẽ có một buổi điều trần công khai vào tháng tới, nơi bạn có thể bày tỏ ý kiến. Tôi khuyến khích bạn tham dự và rủ hàng xóm cùng đi."
+      },
+      {
+        "role": "Resident",
+        "en": "I'll definitely be there. Thanks for listening, Councilor.",
+        "vi": "Tôi nhất định sẽ có mặt. Cảm ơn ông đã lắng nghe, Nghị viên."
+      },
+      {
+        "role": "City Councilor",
+        "en": "Thank you for your engagement. It's important that we work together on this.",
+        "vi": "Cảm ơn bạn đã quan tâm. Điều quan trọng là chúng ta cùng hợp tác về vấn đề này."
+      }
+    ],
+    "key_phrases": [
+      "I'm not convinced",
+      "fall through",
+      "voice your opinion",
+      "work together"
+    ],
+    "key_vocab": [
+      "proposal",
+      "impact",
+      "congested",
+      "roundabout",
+      "public hearing",
+      "engagement"
+    ],
+    "grammar_points": [
+      "I've been reading about... (present perfect continuous)",
+      "What about...? (asking about concerns)",
+      "Could we have...? (polite suggestion)"
+    ],
+    "level": "b2"
+  },
+  {
+    "scenario": "Organizing a neighborhood volunteer event",
+    "scenario_vi": "Tổ chức sự kiện tình nguyện khu phố",
+    "category": "society_and_community",
+    "roles": [
+      "Volunteer Coordinator",
+      "New Volunteer"
+    ],
+    "dialogue": [
+      {
+        "role": "Volunteer Coordinator",
+        "en": "Hi there! Thanks for signing up for the community clean-up. We're focusing on the park and the riverbank this Saturday.",
+        "vi": "Chào bạn! Cảm ơn bạn đã đăng ký tham gia dọn dẹp cộng đồng. Chúng ta sẽ tập trung vào công viên và bờ sông thứ Bảy này."
+      },
+      {
+        "role": "New Volunteer",
+        "en": "I'm glad to help. What time should I arrive, and what should I bring?",
+        "vi": "Tôi rất vui được giúp đỡ. Tôi nên đến lúc mấy giờ và cần mang theo gì?"
+      },
+      {
+        "role": "Volunteer Coordinator",
+        "en": "We'll start at 8 AM sharp. Bring gloves and a hat if you have them; we'll provide trash bags and pickers. Also, wear sturdy shoes.",
+        "vi": "Chúng ta sẽ bắt đầu đúng 8 giờ sáng. Mang theo găng tay và mũ nếu bạn có; chúng tôi sẽ cung cấp túi rác và que gắp. Ngoài ra, hãy đi giày chắc chắn."
+      },
+      {
+        "role": "New Volunteer",
+        "en": "Got it. Is there anything else I should be aware of? I've never done this before.",
+        "vi": "Rõ. Có điều gì khác tôi cần lưu ý không? Tôi chưa từng làm việc này trước đây."
+      },
+      {
+        "role": "Volunteer Coordinator",
+        "en": "No worries! We'll have a quick briefing on safety and what to do. We'll split into teams, and I'll be around if you need anything.",
+        "vi": "Đừng lo! Chúng tôi sẽ có một buổi hướng dẫn nhanh về an toàn và những việc cần làm. Chúng ta sẽ chia thành các đội, và tôi sẽ ở gần nếu bạn cần bất cứ điều gì."
+      },
+      {
+        "role": "New Volunteer",
+        "en": "That sounds great. I'm looking forward to it. By the way, do we need to register individually or can I bring a friend?",
+        "vi": "Nghe tuyệt quá. Tôi rất mong chờ. Nhân tiện, chúng tôi cần đăng ký riêng lẻ hay tôi có thể dẫn theo một người bạn?"
+      },
+      {
+        "role": "Volunteer Coordinator",
+        "en": "Bringing a friend is absolutely welcome! Just let me know a headcount so we have enough supplies. We could always use more hands.",
+        "vi": "Dẫn theo bạn bè là hoàn toàn hoan nghênh! Chỉ cần cho tôi biết số lượng để chúng tôi có đủ dụng cụ. Chúng tôi luôn cần thêm nhiều người giúp đỡ."
+      },
+      {
+        "role": "New Volunteer",
+        "en": "Perfect. I'll ask around. Thanks for organizing this!",
+        "vi": "Tuyệt vời. Tôi sẽ hỏi thăm xung quanh. Cảm ơn bạn đã tổ chức sự kiện này!"
+      },
+      {
+        "role": "Volunteer Coordinator",
+        "en": "My pleasure! See you on Saturday. Let's make our community cleaner and greener!",
+        "vi": "Rất vui! Hẹn gặp bạn vào thứ Bảy. Hãy cùng nhau làm cho cộng đồng của chúng ta sạch hơn và xanh hơn!"
+      }
+    ],
+    "key_phrases": [
+      "sign up for",
+      "I'm looking forward to it",
+      "bring a friend",
+      "could always use more hands"
+    ],
+    "key_vocab": [
+      "clean-up",
+      "briefing",
+      "headcount",
+      "supplies",
+      "sturdy",
+      "greener"
+    ],
+    "grammar_points": [
+      "Thanks for + V-ing (expressing gratitude for an action)",
+      "What time should I...? (asking for schedule)",
+      "I've never done this before (present perfect + never)"
+    ],
+    "level": "b2"
+  },
+  {
+    "scenario": "Debating the value of online courses",
+    "scenario_vi": "Tranh luận về giá trị của các khóa học trực tuyến",
+    "category": "education",
+    "roles": [
+      "Student A",
+      "Student B"
+    ],
+    "dialogue": [
+      {
+        "role": "Student A",
+        "en": "I'm thinking of taking an online course in data science, but I'm not sure if it's worth it.",
+        "vi": "Mình đang nghĩ đến việc học một khóa học trực tuyến về khoa học dữ liệu, nhưng không chắc có đáng không."
+      },
+      {
+        "role": "Student B",
+        "en": "Well, I've taken a few online courses before. They're convenient, but you really need self-discipline.",
+        "vi": "Ừ, mình đã học vài khóa online rồi. Tiện lợi thật đấy, nhưng bạn cần có tính tự giác cao."
+      },
+      {
+        "role": "Student A",
+        "en": "That's what I'm worried about – I tend to procrastinate. But the flexibility is tempting.",
+        "vi": "Đó là điều mình lo – mình hay trì hoãn lắm. Nhưng sự linh hoạt thì hấp dẫn thật."
+      },
+      {
+        "role": "Student B",
+        "en": "True. Plus, you can learn at your own pace. Have you looked into the syllabus?",
+        "vi": "Đúng vậy. Thêm nữa, bạn có thể học theo tốc độ của mình. Bạn đã xem đề cương chưa?"
+      },
+      {
+        "role": "Student A",
+        "en": "Yeah, it covers machine learning and big data. Seems quite comprehensive.",
+        "vi": "Rồi, nó bao gồm học máy và dữ liệu lớn. Có vẻ khá toàn diện."
+      },
+      {
+        "role": "Student B",
+        "en": "Sounds good. But remember, employers often value hands-on projects over certificates.",
+        "vi": "Nghe ổn đấy. Nhưng nhớ rằng, nhà tuyển dụng thường coi trọng các dự án thực tế hơn chứng chỉ."
+      },
+      {
+        "role": "Student A",
+        "en": "Good point. The course includes a capstone project, so that might help.",
+        "vi": "Ý hay đấy. Khóa học có đồ án cuối khóa, vậy nên có thể hữu ích."
+      },
+      {
+        "role": "Student B",
+        "en": "Then I'd say go for it. You can always supplement it with personal projects.",
+        "vi": "Vậy thì mình nghĩ bạn nên thử. Bạn luôn có thể bổ sung bằng các dự án cá nhân."
+      }
+    ],
+    "key_phrases": [
+      "I'm thinking of...",
+      "it's worth it",
+      "learn at your own pace",
+      "hands-on projects",
+      "go for it"
+    ],
+    "key_vocab": [
+      "self-discipline",
+      "procrastinate",
+      "syllabus",
+      "comprehensive",
+      "capstone project",
+      "supplement"
+    ],
+    "grammar_points": [
+      "tend to + verb",
+      "Plus, + clause",
+      "employers often value X over Y"
+    ],
+    "level": "b2"
+  },
+  {
+    "scenario": "Discussing exam stress with a teacher",
+    "scenario_vi": "Thảo luận về áp lực thi cử với giáo viên",
+    "category": "education",
+    "roles": [
+      "Student",
+      "Teacher"
+    ],
+    "dialogue": [
+      {
+        "role": "Student",
+        "en": "Excuse me, Miss Lan, do you have a moment? I'm really stressed about the final exams.",
+        "vi": "Thưa cô Lan, cô có rảnh không ạ? Em đang rất căng thẳng về kỳ thi cuối kỳ."
+      },
+      {
+        "role": "Teacher",
+        "en": "Of course, come in. What seems to be the problem?",
+        "vi": "Tất nhiên, vào đi. Có chuyện gì vậy em?"
+      },
+      {
+        "role": "Student",
+        "en": "I've been studying all week, but I feel like I'm not retaining anything. It's overwhelming.",
+        "vi": "Em đã học cả tuần rồi, nhưng cảm giác chẳng nhớ được gì. Thật quá tải."
+      },
+      {
+        "role": "Teacher",
+        "en": "That's quite common. You might be burning out. Have you tried taking short breaks?",
+        "vi": "Điều đó khá phổ biến. Có lẽ em đang kiệt sức. Em đã thử nghỉ giải lao ngắn chưa?"
+      },
+      {
+        "role": "Student",
+        "en": "Not really. I feel guilty if I stop studying.",
+        "vi": "Chưa ạ. Em thấy có lỗi nếu ngừng học."
+      },
+      {
+        "role": "Teacher",
+        "en": "I see. But your brain needs rest to consolidate information. Try the Pomodoro technique – 25 minutes of focused study, then a 5-minute break.",
+        "vi": "Cô hiểu. Nhưng não bộ cần nghỉ ngơi để củng cố thông tin. Hãy thử kỹ thuật Pomodoro – học tập trung 25 phút, rồi nghỉ 5 phút."
+      },
+      {
+        "role": "Student",
+        "en": "That might help. Also, I'm not sure I understand some key concepts in physics.",
+        "vi": "Có thể hữu ích ạ. Ngoài ra, em không chắc hiểu một số khái niệm chính trong vật lý."
+      },
+      {
+        "role": "Teacher",
+        "en": "We can go over them together after class. But remember, it's not about memorizing everything – it's about understanding the core ideas.",
+        "vi": "Chúng ta có thể xem lại chúng sau giờ học. Nhưng hãy nhớ, không phải là học thuộc lòng mọi thứ – mà là hiểu các ý chính."
+      },
+      {
+        "role": "Student",
+        "en": "Thanks, Miss. I'll try to pace myself and focus on understanding.",
+        "vi": "Cảm ơn cô. Em sẽ cố gắng học có điều độ và tập trung vào hiểu bài."
+      }
+    ],
+    "key_phrases": [
+      "do you have a moment?",
+      "burning out",
+      "take short breaks",
+      "go over them",
+      "pace myself"
+    ],
+    "key_vocab": [
+      "retaining",
+      "overwhelming",
+      "consolidate",
+      "Pomodoro technique",
+      "core ideas",
+      "memorizing"
+    ],
+    "grammar_points": [
+      "might be + verb-ing (speculation)",
+      "It's not about X – it's about Y",
+      "try + verb-ing (suggestion)"
+    ],
+    "level": "b2"
+  },
+  {
+    "scenario": "Two researchers discuss experimental results",
+    "scenario_vi": "Hai nhà nghiên cứu thảo luận về kết quả thí nghiệm",
+    "category": "science_and_research",
+    "roles": [
+      "Researcher A",
+      "Researcher B"
+    ],
+    "dialogue": [
+      {
+        "role": "Researcher A",
+        "en": "Have you had a chance to look at the preliminary data from the experiment?",
+        "vi": "Bạn đã xem qua dữ liệu sơ bộ từ thí nghiệm chưa?"
+      },
+      {
+        "role": "Researcher B",
+        "en": "Yes, I have. The results are quite intriguing, but there's a lot of noise in the control group.",
+        "vi": "Rồi, tôi đã xem. Kết quả khá thú vị, nhưng có nhiều nhiễu trong nhóm đối chứng."
+      },
+      {
+        "role": "Researcher A",
+        "en": "I noticed that too. Could it be due to the variability in the sample size?",
+        "vi": "Tôi cũng để ý thấy vậy. Có thể do độ biến thiên về kích thước mẫu không?"
+      },
+      {
+        "role": "Researcher B",
+        "en": "That's a possibility, but I think we need to run a statistical analysis to confirm. Let's run a t-test.",
+        "vi": "Đó là một khả năng, nhưng tôi nghĩ chúng ta c���n chạy phân tích thống kê để xác nhận. Hãy chạy kiểm định t."
+      },
+      {
+        "role": "Researcher A",
+        "en": "Agreed. Also, I'm wondering if the temperature fluctuations might have skewed the results.",
+        "vi": "Đồng ý. Ngoài ra, tôi đang băn khoăn liệu biến động nhiệt độ có thể làm lệch kết quả không."
+      },
+      {
+        "role": "Researcher B",
+        "en": "Good point. We should double-check the calibration logs for that period.",
+        "vi": "Ý kiến hay. Chúng ta nên kiểm tra lại nhật ký hiệu chuẩn trong khoảng thời gian đó."
+      },
+      {
+        "role": "Researcher A",
+        "en": "Let's compile all the anomalies and present them in the next lab meeting.",
+        "vi": "Hãy tổng hợp tất cả các điểm bất thường và trình bày trong buổi họp phòng thí nghiệm tới."
+      },
+      {
+        "role": "Researcher B",
+        "en": "Sounds like a plan. I'll draft a summary by tomorrow.",
+        "vi": "Nghe có vẻ khả thi. Tôi sẽ soạn bản tóm tắt vào ngày mai."
+      }
+    ],
+    "key_phrases": [
+      "preliminary data",
+      "run a statistical analysis",
+      "skew the results",
+      "calibration logs",
+      "compile the anomalies"
+    ],
+    "key_vocab": [
+      "intriguing",
+      "noise",
+      "variability",
+      "t-test",
+      "fluctuations",
+      "anomalies"
+    ],
+    "grammar_points": [
+      "modal verbs for speculation (might have, could be)",
+      "conditional clauses (if...)",
+      "present perfect for recent actions (have you had, I've compiled)"
+    ],
+    "level": "b2"
+  },
+  {
+    "scenario": "Discussing remote work challenges",
+    "scenario_vi": "Thảo luận về thách thức làm việc từ xa",
+    "category": "communication_and_technology",
+    "roles": [
+      "Manager",
+      "Employee"
+    ],
+    "dialogue": [
+      {
+        "role": "Manager",
+        "en": "So, how are you finding the transition to remote work?",
+        "vi": "Vậy, anh thấy việc chuyển sang làm việc từ xa thế nào?"
+      },
+      {
+        "role": "Employee",
+        "en": "Honestly, it's been a mixed bag. I appreciate the flexibility, but I sometimes feel like I'm always on call.",
+        "vi": "Thành thật mà nói, có cả mặt tốt và xấu. Tôi đánh giá cao sự linh hoạt, nhưng đôi khi tôi cảm thấy như mình lúc nào cũng phải trực."
+      },
+      {
+        "role": "Manager",
+        "en": "I get that. Setting boundaries is crucial. Have you tried using the 'do not disturb' feature?",
+        "vi": "Tôi hiểu. Việc đặt ra ranh giới rất quan trọng. Anh đã thử dùng tính năng 'không làm phiền' chưa?"
+      },
+      {
+        "role": "Employee",
+        "en": "Yeah, but it's tricky when you're collaborating with colleagues in different time zones. Sometimes I have to be available during odd hours.",
+        "vi": "Có, nhưng nó khó khăn khi phải cộng tác với đồng nghiệp ở múi giờ khác. Đôi khi tôi phải có mặt vào những giờ lẻ."
+      },
+      {
+        "role": "Manager",
+        "en": "That's a valid concern. Maybe we could establish core overlapping hours for the whole team.",
+        "vi": "Đó là một mối lo chính đáng. Có lẽ chúng ta có thể thiết lập giờ làm việc chung cho cả nhóm."
+      },
+      {
+        "role": "Employee",
+        "en": "That would help a lot. Also, I've noticed that informal communication has dropped off—you know, those quick chats by the water cooler.",
+        "vi": "Điều đó sẽ giúp ích nhiều. Ngoài ra, tôi nhận thấy giao tiếp không chính thức đã giảm hẳn—anh biết đấy, những cuộc nói chuyện nhanh bên máy làm mát nước."
+      },
+      {
+        "role": "Manager",
+        "en": "Absolutely. We should make an effort to replicate that virtually. Maybe a dedicated Slack channel for non-work banter?",
+        "vi": "Chắc chắn rồi. Chúng ta nên cố gắng tái tạo điều đó qua mạng. Có thể một kênh Slack riêng cho chuyện phiếm ngoài công việc?"
+      },
+      {
+        "role": "Employee",
+        "en": "Great idea. I think that could boost team morale. By the way, have you heard about the new project management tool we're adopting?",
+        "vi": "Ý kiến hay đấy. Tôi nghĩ nó có thể nâng cao tinh thần đội nhóm. Nhân tiện, anh đã nghe về công cụ quản lý dự án mới chúng ta sắp dùng chưa?"
+      },
+      {
+        "role": "Manager",
+        "en": "Yes, I attended a demo yesterday. It seems promising, but there'll be a learning curve.",
+        "vi": "Rồi, tôi đã tham dự một buổi demo hôm qua. Nó có vẻ hứa hẹn, nhưng sẽ có một đường cong học tập."
+      },
+      {
+        "role": "Employee",
+        "en": "I'm a bit concerned about that. Could we schedule some training sessions before the rollout?",
+        "vi": "Tôi hơi lo về điều đó. Chúng ta có thể sắp xếp vài buổi đào tạo trước khi triển khai không?"
+      },
+      {
+        "role": "Manager",
+        "en": "Absolutely. I'll talk to HR about setting up workshops. Let's make sure everyone's on the same page.",
+        "vi": "Chắc chắn rồi. Tôi sẽ nói chuyện với phòng Nhân sự về việc tổ chức các hội thảo. Hãy đảm bảo mọi người đều hiểu rõ."
+      },
+      {
+        "role": "Employee",
+        "en": "Thanks, that would be fantastic.",
+        "vi": "Cảm ơn anh, điều đó thật tuyệt vời."
+      }
+    ],
+    "key_phrases": [
+      "mixed bag",
+      "always on call",
+      "setting boundaries",
+      "on the same page"
+    ],
+    "key_vocab": [
+      "transition",
+      "flexibility",
+      "collaborating",
+      "overlapping",
+      "morale",
+      "rollout"
+    ],
+    "grammar_points": [
+      "present perfect continuous (have been finding)",
+      "conditional (could we...?)",
+      "gerund as subject (Setting boundaries...)"
+    ],
+    "level": "b2"
+  },
+  {
+    "scenario": "Troubleshooting a video call issue",
+    "scenario_vi": "Khắc phục sự cố cuộc gọi video",
+    "category": "communication_and_technology",
+    "roles": [
+      "Colleague A",
+      "Colleague B"
+    ],
+    "dialogue": [
+      {
+        "role": "Colleague A",
+        "en": "Hey, sorry to bother you, but I'm having trouble with the video call for the client presentation.",
+        "vi": "Này, xin lỗi làm phiền bạn, nhưng tôi đang gặp rắc rối với cuộc gọi video cho buổi thuyết trình với khách hàng."
+      },
+      {
+        "role": "Colleague B",
+        "en": "No worries. What's going on? Can you hear me okay?",
+        "vi": "Không sao. Chuyện gì vậy? Bạn nghe tôi rõ không?"
+      },
+      {
+        "role": "Colleague A",
+        "en": "Your audio is fine, but my video keeps freezing. I've tried restarting the app, but it's still lagging.",
+        "vi": "Âm thanh của bạn ổn, nhưng video của tôi cứ bị đứng. Tôi đã thử khởi động lại ứng dụng, nhưng nó vẫn bị giật."
+      },
+      {
+        "role": "Colleague B",
+        "en": "Hmm, it might be your internet connection. Are you on Wi-Fi or Ethernet?",
+        "vi": "Hmm, có thể là do kết nối internet của bạn. Bạn đang dùng Wi-Fi hay Ethernet?"
+      },
+      {
+        "role": "Colleague A",
+        "en": "Wi-Fi. But I've never had issues before. The speed test shows decent bandwidth.",
+        "vi": "Wi-Fi. Nhưng trước giờ tôi chưa bao giờ gặp vấn đề. Kiểm tra tốc độ cho thấy băng thông ổn."
+      },
+      {
+        "role": "Colleague B",
+        "en": "Sometimes it's not just speed; latency and packet loss can cause freezing. Could you try switching to a wired connection?",
+        "vi": "Đôi khi không chỉ tốc độ; độ trễ và mất gói tin có thể gây đứng hình. Bạn có thể thử chuyển sang kết nối có dây không?"
+      },
+      {
+        "role": "Colleague A",
+        "en": "Good point. Let me plug in the Ethernet cable. ... Okay, it's connected. Should I restart the call?",
+        "vi": "Ý hay đấy. Để tôi cắm cáp Ethernet. ... Được rồi, đã kết nối. Tôi có nên khởi động lại cuộc gọi không?"
+      },
+      {
+        "role": "Colleague B",
+        "en": "Yes, and make sure no other apps are hogging the bandwidth—like large downloads or streaming.",
+        "vi": "Có, và hãy chắc chắn không có ứng dụng nào khác đang chiếm băng thông—như tải xuống lớn hay phát trực tuyến."
+      },
+      {
+        "role": "Colleague A",
+        "en": "Will do. I also noticed that the camera quality seems lower than usual. Could it be a setting?",
+        "vi": "Sẽ làm ngay. Tôi cũng nhận thấy chất lượng camera có vẻ thấp hơn thường lệ. Có thể do cài đặt không?"
+      },
+      {
+        "role": "Colleague B",
+        "en": "Possibly. Check if the video resolution is set to 'auto' or 'high definition'. Sometimes it defaults to a lower setting.",
+        "vi": "Có thể. Hãy kiểm tra xem độ phân giải video được đặt ở chế độ 'tự động' hay 'độ nét cao'. Đôi khi nó mặc định ở chế độ thấp hơn."
+      },
+      {
+        "role": "Colleague A",
+        "en": "Ah, that was it! It was on 'standard'. I've switched it to 'HD'. Let's see if that helps.",
+        "vi": "À, chính nó! Nó đang ở chế độ 'tiêu chuẩn'. Tôi đã chuyển sang 'HD'. Xem thử có đỡ không."
+      },
+      {
+        "role": "Colleague B",
+        "en": "Great. And if the problem persists, we could always fall back to audio-only and share the screen for the slides.",
+        "vi": "Tuyệt. Và nếu vấn đề vẫn tiếp diễn, chúng ta luôn có thể chuyển sang chỉ dùng âm thanh và chia sẻ màn hình cho các slide."
+      },
+      {
+        "role": "Colleague A",
+        "en": "True. Thanks for your help. I think it's working now. Let's test with a quick call?",
+        "vi": "Đúng vậy. Cảm ơn bạn đã giúp đỡ. Tôi nghĩ bây giờ nó hoạt động rồi. Chúng ta thử một cuộc gọi nhanh nhé?"
+      }
+    ],
+    "key_phrases": [
+      "trouble with",
+      "keep freezing",
+      "fall back to",
+      "hogging the bandwidth"
+    ],
+    "key_vocab": [
+      "lagging",
+      "latency",
+      "packet loss",
+      "resolution",
+      "bandwidth",
+      "defaults"
+    ],
+    "grammar_points": [
+      "present continuous for temporary issues (is freezing)",
+      "modal verbs for suggestions (could try, should restart)",
+      "conditional (if the problem persists)"
+    ],
+    "level": "b2"
+  }
+]

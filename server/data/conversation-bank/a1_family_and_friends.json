@@ -1,0 +1,117 @@
+[
+  {
+    "scenario": "Introducing a friend to family",
+    "scenario_vi": "Giới thiệu bạn với gia đình",
+    "category": "family_and_friends",
+    "roles": [
+      "Child",
+      "Parent"
+    ],
+    "dialogue": [
+      {
+        "role": "Child",
+        "en": "Mom, this is my friend, Anna.",
+        "vi": "Mẹ ơi, đây là bạn của con, Anna."
+      },
+      {
+        "role": "Parent",
+        "en": "Hello, Anna. Nice to meet you.",
+        "vi": "Chào Anna. Rất vui được gặp cháu."
+      },
+      {
+        "role": "Child",
+        "en": "Anna, this is my mother.",
+        "vi": "Anna, đây là mẹ của tớ."
+      },
+      {
+        "role": "Friend",
+        "en": "Hello, Mrs. Lan. Thank you for having me.",
+        "vi": "Chào cô Lan. Cảm ơn cô đã mời cháu."
+      },
+      {
+        "role": "Parent",
+        "en": "You are welcome. Please come in.",
+        "vi": "Không có gì. Mời cháu vào nhà."
+      },
+      {
+        "role": "Child",
+        "en": "Let's go to my room.",
+        "vi": "Chúng ta lên phòng của tớ đi."
+      }
+    ],
+    "key_phrases": [
+      "This is my friend",
+      "Nice to meet you",
+      "Thank you for having me"
+    ],
+    "key_vocab": [
+      "mom",
+      "friend",
+      "mother",
+      "room"
+    ],
+    "grammar_points": [
+      "This is...",
+      "Nice to meet you."
+    ],
+    "level": "a1"
+  },
+  {
+    "scenario": "Asking about siblings",
+    "scenario_vi": "Hỏi về anh chị em",
+    "category": "family_and_friends",
+    "roles": [
+      "Student A",
+      "Student B"
+    ],
+    "dialogue": [
+      {
+        "role": "Student A",
+        "en": "Do you have brothers or sisters?",
+        "vi": "Bạn có anh chị em không?"
+      },
+      {
+        "role": "Student B",
+        "en": "Yes, I have one brother.",
+        "vi": "Có, mình có một người anh trai."
+      },
+      {
+        "role": "Student A",
+        "en": "How old is he?",
+        "vi": "Anh ấy bao nhiêu tuổi?"
+      },
+      {
+        "role": "Student B",
+        "en": "He is 15 years old.",
+        "vi": "Anh ấy 15 tuổi."
+      },
+      {
+        "role": "Student A",
+        "en": "Do you play together?",
+        "vi": "Hai anh em có chơi cùng nhau không?"
+      },
+      {
+        "role": "Student B",
+        "en": "Yes, we play soccer on weekends.",
+        "vi": "Có, bọn mình chơi bóng đá vào cuối tuần."
+      }
+    ],
+    "key_phrases": [
+      "Do you have...?",
+      "How old is he?",
+      "play together"
+    ],
+    "key_vocab": [
+      "brother",
+      "sister",
+      "old",
+      "play",
+      "weekend"
+    ],
+    "grammar_points": [
+      "Yes/No questions with 'do'",
+      "How old + to be"
+    ],
+    "level": "a1"
+  }
+]

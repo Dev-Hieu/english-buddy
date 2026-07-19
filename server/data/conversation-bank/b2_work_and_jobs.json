@@ -1,0 +1,184 @@
+[
+  {
+    "scenario": "Negotiating a job offer",
+    "scenario_vi": "Đàm phán lời mời làm việc",
+    "category": "work_and_jobs",
+    "roles": [
+      "Candidate",
+      "HR Manager"
+    ],
+    "dialogue": [
+      {
+        "role": "HR Manager",
+        "en": "We were really impressed with your interview. We'd like to offer you the position.",
+        "vi": "Chúng tôi rất ấn tượng với buổi phỏng vấn của bạn. Chúng tôi muốn mời bạn nhận vị trí này."
+      },
+      {
+        "role": "Candidate",
+        "en": "Thank you! I'm excited about the opportunity. Could you walk me through the compensation package?",
+        "vi": "Cảm ơn! Tôi rất hào hứng với cơ hội này. Anh/chị có thể cho tôi biết chi tiết về gói lương thưởng được không?"
+      },
+      {
+        "role": "HR Manager",
+        "en": "Sure. The base salary is $80,000 with a 10% annual bonus. You'd also get 20 vacation days and health insurance.",
+        "vi": "Chắc chắn rồi. Lương cơ bản là 80.000 đô la với 10% thưởng hàng năm. Bạn cũng sẽ được 20 ngày nghỉ phép và bảo hiểm y tế."
+      },
+      {
+        "role": "Candidate",
+        "en": "That sounds good, but I was hoping the base salary could be a bit higher. Is there any wiggle room?",
+        "vi": "Nghe có vẻ tốt, nhưng tôi hy vọng mức lương cơ bản có thể cao hơn một chút. Có thể thương lượng được không ạ?"
+      },
+      {
+        "role": "HR Manager",
+        "en": "We could stretch it to $85,000, but that would be our final offer. Does that work for you?",
+        "vi": "Chúng tôi có thể nâng lên 85.000 đô la, nhưng đó là mức cuối cùng. Bạn thấy ổn không?"
+      },
+      {
+        "role": "Candidate",
+        "en": "Yes, I think we have a deal. I'll sign the contract as soon as I receive it.",
+        "vi": "Vâng, tôi nghĩ chúng ta đã đồng ý. Tôi sẽ ký hợp đồng ngay khi nhận được."
+      }
+    ],
+    "key_phrases": [
+      "walk me through",
+      "wiggle room",
+      "final offer",
+      "have a deal"
+    ],
+    "key_vocab": [
+      "compensation package",
+      "base salary",
+      "bonus",
+      "negotiate",
+      "contract"
+    ],
+    "grammar_points": [
+      "Conditional sentences with 'could'",
+      "Future tense with 'will' for decisions",
+      "Indirect questions"
+    ],
+    "level": "b2"
+  },
+  {
+    "scenario": "Discussing a career change",
+    "scenario_vi": "Thảo luận về chuyển đổi nghề nghiệp",
+    "category": "work_and_jobs",
+    "roles": [
+      "Employee",
+      "Friend"
+    ],
+    "dialogue": [
+      {
+        "role": "Employee",
+        "en": "I've been thinking about switching careers. I'm just not passionate about accounting anymore.",
+        "vi": "Tôi đã suy nghĩ về việc chuyển đổi nghề nghiệp. Tôi không còn đam mê với kế toán nữa."
+      },
+      {
+        "role": "Friend",
+        "en": "What would you rather do? You've been in finance for over a decade.",
+        "vi": "Vậy bạn muốn làm gì hơn? Bạn đã làm trong lĩnh vực tài chính hơn một thập kỷ rồi."
+      },
+      {
+        "role": "Employee",
+        "en": "I've always had a knack for graphic design. I'm considering taking some courses and then looking for a junior position.",
+        "vi": "Tôi luôn có năng khiếu về thiết kế đồ họa. Tôi đang cân nhắc tham gia một số khóa học và sau đó tìm kiếm vị trí junior."
+      },
+      {
+        "role": "Friend",
+        "en": "That's a bold move. Are you prepared to take a pay cut? Entry-level design jobs don't pay as well.",
+        "vi": "Đó là một bước đi táo bạo. Bạn đã sẵn sàng chấp nhận mức lương thấp hơn chưa? Công việc thiết kế ở cấp đầu vào không trả lương cao."
+      },
+      {
+        "role": "Employee",
+        "en": "I know. I've saved up enough to cover a year of living expenses. I think it's worth it for long-term happiness.",
+        "vi": "Tôi biết. Tôi đã tiết kiệm đủ để trang trải một năm chi phí sinh hoạt. Tôi nghĩ nó đáng giá cho hạnh phúc lâu dài."
+      },
+      {
+        "role": "Friend",
+        "en": "I admire your courage. Go for it! You only live once.",
+        "vi": "Tôi ngưỡng mộ lòng can đảm của bạn. Hãy làm đi! Đời chỉ sống một lần."
+      }
+    ],
+    "key_phrases": [
+      "switch careers",
+      "have a knack for",
+      "bold move",
+      "pay cut",
+      "you only live once"
+    ],
+    "key_vocab": [
+      "passionate",
+      "decade",
+      "courses",
+      "entry-level",
+      "expenses"
+    ],
+    "grammar_points": [
+      "Present perfect continuous for ongoing actions",
+      "Question forms with 'would rather'",
+      "Adjective + enough + infinitive"
+    ],
+    "level": "b2"
+  },
+  {
+    "scenario": "Handling a workplace conflict",
+    "scenario_vi": "Giải quyết xung đột nơi làm việc",
+    "category": "work_and_jobs",
+    "roles": [
+      "Team Lead",
+      "Project Manager"
+    ],
+    "dialogue": [
+      {
+        "role": "Project Manager",
+        "en": "I need to talk to you about the missed deadline. The client is really upset.",
+        "vi": "Tôi cần nói chuyện với bạn về việc trễ hạn. Khách hàng rất bực mình."
+      },
+      {
+        "role": "Team Lead",
+        "en": "I understand. But to be fair, we were short-staffed and the requirements kept changing.",
+        "vi": "Tôi hiểu. Nhưng công bằng mà nói, chúng tôi thiếu nhân sự và yêu cầu cứ thay đổi liên tục."
+      },
+      {
+        "role": "Project Manager",
+        "en": "I get that, but you should have flagged it sooner. We could have adjusted the timeline.",
+        "vi": "Tôi hiểu điều đó, nhưng bạn lẽ ra nên báo cáo sớm hơn. Chúng ta có thể đã điều chỉnh thời hạn."
+      },
+      {
+        "role": "Team Lead",
+        "en": "You're right. I dropped the ball on communication. I'll make sure to keep you in the loop going forward.",
+        "vi": "Bạn nói đúng. Tôi đã thiếu sót trong việc giao tiếp. Tôi sẽ đảm bảo cập nhật cho bạn thường xuyên."
+      },
+      {
+        "role": "Project Manager",
+        "en": "Thanks. Let's work together to get this back on track. I'll talk to the client about extending the deadline.",
+        "vi": "Cảm ơn. Hãy cùng nhau đưa mọi thứ trở lại đúng hướng. Tôi sẽ nói chuyện với khách hàng về việc gia hạn."
+      },
+      {
+        "role": "Team Lead",
+        "en": "Appreciate that. I'll rally the team and prioritize this project above everything else.",
+        "vi": "Cảm ơn. Tôi sẽ tập hợp đội và ưu tiên dự án này lên trên hết."
+      }
+    ],
+    "key_phrases": [
+      "to be fair",
+      "dropped the ball",
+      "keep in the loop",
+      "back on track",
+      "rally the team"
+    ],
+    "key_vocab": [
+      "deadline",
+      "short-staffed",
+      "requirements",
+      "flag",
+      "timeline"
+    ],
+    "grammar_points": [
+      "Modal perfect 'should have' for past obligation",
+      "Future continuous for planned actions",
+      "Phrasal verbs"
+    ],
+    "level": "b2"
+  }
+]

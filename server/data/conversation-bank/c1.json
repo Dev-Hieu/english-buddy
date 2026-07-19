@@ -1,0 +1,362 @@
+[
+  {
+    "scenario": "Debating gentrification in a neighborhood meeting",
+    "scenario_vi": "Tranh luận về quá trình đô thị hóa khu dân cư tại cuộc họp khu phố",
+    "category": "society_and_community",
+    "roles": [
+      "Long-time resident",
+      "New resident"
+    ],
+    "dialogue": [
+      {
+        "role": "Long-time resident",
+        "en": "I've lived here for 30 years, and these new developments are pricing us out.",
+        "vi": "Tôi sống ở đây 30 năm rồi, mấy dự án mới này đang đẩy giá đất lên cao quá."
+      },
+      {
+        "role": "New resident",
+        "en": "I get your frustration, but the new cafes and shops have actually made the area safer.",
+        "vi": "Tôi hiểu sự bức xúc của anh, nhưng mấy quán cà phê và cửa hàng mới thực sự làm khu này an toàn hơn."
+      },
+      {
+        "role": "Long-time resident",
+        "en": "Safer for whom? My neighbors can't even afford the rent anymore.",
+        "vi": "An toàn cho ai? Hàng xóm của tôi giờ không còn đủ tiền thuê nhà nữa."
+      },
+      {
+        "role": "New resident",
+        "en": "That's a tough one. But if we don't attract investment, the area will just crumble.",
+        "vi": "C��i đó khó nói. Nhưng nếu không thu hút đầu tư, khu này sẽ xuống cấp mất."
+      },
+      {
+        "role": "Long-time resident",
+        "en": "Investment? It's just wealthy outsiders buying up properties. We need affordable housing policies.",
+        "vi": "Đầu tư gì? Toàn người ngoài giàu có mua nhà. Chúng tôi cần chính sách nhà ở giá rẻ."
+      },
+      {
+        "role": "New resident",
+        "en": "I agree we need balance, but you can't stop progress. It's a double-edged sword.",
+        "vi": "Tôi đồng ý là cần cân bằng, nhưng không thể ngăn tiến bộ. Nó có hai mặt mà."
+      },
+      {
+        "role": "Long-time resident",
+        "en": "Progress shouldn't mean pushing people out. The community's soul is at stake.",
+        "vi": "Tiến bộ không có nghĩa là đẩy người ta đi. Linh hồn của cộng đồng đang bị đe dọa."
+      },
+      {
+        "role": "New resident",
+        "en": "I hear you. Let's work on a plan that includes both development and protections for locals.",
+        "vi": "Tôi nghe anh rồi. Hãy cùng lên kế hoạch vừa phát triển vừa bảo vệ người dân địa phương."
+      }
+    ],
+    "key_phrases": [
+      "pricing us out",
+      "double-edged sword",
+      "I hear you",
+      "community's soul is at stake"
+    ],
+    "key_vocab": [
+      "gentrification",
+      "affordable housing",
+      "investment",
+      "development",
+      "displacement"
+    ],
+    "grammar_points": [
+      "present perfect continuous (I've been living)",
+      "conditional sentences (if we don't...)",
+      "modal verbs for necessity (need to)"
+    ],
+    "level": "c1"
+  },
+  {
+    "scenario": "Discussing volunteer work at a homeless shelter",
+    "scenario_vi": "Thảo luận về công việc tình nguyện tại trại tạm trú cho người vô gia cư",
+    "category": "society_and_community",
+    "roles": [
+      "Volunteer coordinator",
+      "Potential volunteer"
+    ],
+    "dialogue": [
+      {
+        "role": "Volunteer coordinator",
+        "en": "Thanks for coming in. We're swamped right now, especially with the cold snap.",
+        "vi": "Cảm ơn bạn đã đến. Bọn mình đang quá tải, nhất là trong đợt rét đậm này."
+      },
+      {
+        "role": "Potential volunteer",
+        "en": "I'm happy to help. What's the biggest need right now?",
+        "vi": "Mình rất vui được giúp. Hiện tại cần gì nhất?"
+      },
+      {
+        "role": "Volunteer coordinator",
+        "en": "We're short on blankets and warm clothes. Also, we could use extra hands in the kitchen.",
+        "vi": "Chúng mình thiếu chăn và quần áo ấm. Ngoài ra, cần thêm người phụ bếp."
+      },
+      {
+        "role": "Potential volunteer",
+        "en": "I can bring some donations from my neighborhood. And I'm a decent cook, actually.",
+        "vi": "Mình có thể quyên góp từ khu nhà mình. Thực ra mình nấu ăn cũng tạm."
+      },
+      {
+        "role": "Volunteer coordinator",
+        "en": "That would be amazing. We have a real sense of community here — everyone pitches in.",
+        "vi": "Tuyệt quá. Ở đây tinh thần cộng đồng rất cao — ai cũng góp sức."
+      },
+      {
+        "role": "Potential volunteer",
+        "en": "I've always wanted to give back. It breaks my heart seeing people on the streets in this weather.",
+        "vi": "Mình luôn muốn đền đáp. Nhìn người ta ngoài đường trong thời tiết này xót xa quá."
+      },
+      {
+        "role": "Volunteer coordinator",
+        "en": "Yeah, it's tough. But every little bit helps. We're all in the same boat.",
+        "vi": "Ừ, khó khăn lắm. Nhưng mỗi chút đều có ích. Tất cả chúng ta đều cùng cảnh ngộ."
+      },
+      {
+        "role": "Potential volunteer",
+        "en": "Count me in. Just tell me when and where.",
+        "vi": "Tính mình vào nhé. Chỉ cần bảo mình khi nào và ở đâu."
+      }
+    ],
+    "key_phrases": [
+      "swamped right now",
+      "could use extra hands",
+      "pitches in",
+      "all in the same boat",
+      "count me in"
+    ],
+    "key_vocab": [
+      "donations",
+      "shelter",
+      "volunteer",
+      "community",
+      "cold snap"
+    ],
+    "grammar_points": [
+      "present continuous for current situation (we're swamped)",
+      "modal verbs for offers (could use)",
+      "present perfect for experience (I've always wanted)"
+    ],
+    "level": "c1"
+  },
+  {
+    "scenario": "Discussing a new research paper in the lab",
+    "scenario_vi": "Thảo luận về một bài báo nghiên cứu mới trong phòng thí nghiệm",
+    "category": "science_and_research",
+    "roles": [
+      "Senior Researcher",
+      "Junior Researcher"
+    ],
+    "dialogue": [
+      {
+        "role": "Senior Researcher",
+        "en": "Hey, did you catch that paper in Nature about quantum entanglement?",
+        "vi": "Này, cậu có đọc bài báo trên Nature về vướng víu lượng tử không?"
+      },
+      {
+        "role": "Junior Researcher",
+        "en": "Yeah, I skimmed it. The experimental setup is pretty slick, but I'm a bit skeptical about the statistical analysis.",
+        "vi": "Có, tôi lướt qua rồi. Cách bố trí thí nghiệm khá tinh vi, nhưng tôi hơi nghi ngờ về phân tích thống kê."
+      },
+      {
+        "role": "Senior Researcher",
+        "en": "Right? They used a Bayesian approach, but the prior assumptions seem a bit shaky to me. I wonder if the results would hold under frequentist methods.",
+        "vi": "Phải không? Họ dùng phương pháp Bayes, nhưng các giả định tiên nghiệm có vẻ hơi thiếu chắc chắn. Không biết kết quả có đứng vững dưới phương pháp tần suất không."
+      },
+      {
+        "role": "Junior Researcher",
+        "en": "Exactly. And the sample size is relatively small. They might be overfitting the model. Have you looked at the supplementary materials?",
+        "vi": "Chính xác. Và cỡ mẫu tương đối nhỏ. Họ có thể đang overfit mô hình. Anh đã xem tài liệu bổ sung chưa?"
+      },
+      {
+        "role": "Senior Researcher",
+        "en": "Not yet, but I plan to dig into them later. I'd like to replicate the key experiment if we can get the resources.",
+        "vi": "Chưa, nhưng tôi dự định sẽ xem kỹ sau. Tôi muốn tái tạo thí nghiệm chính nếu có thể xin được nguồn lực."
+      },
+      {
+        "role": "Junior Researcher",
+        "en": "That would be great. I can help set up the apparatus. By the way, are you going to the seminar on quantum computing next week?",
+        "vi": "Tuyệt quá. Tôi có thể giúp lắp đặt thiết bị. Nhân tiện, anh có đi dự hội thảo về điện toán lượng tử tuần sau không?"
+      },
+      {
+        "role": "Senior Researcher",
+        "en": "Yes, I registered. I heard the keynote speaker is a big deal in the field. It might give us some fresh perspectives.",
+        "vi": "Có, tôi đã đăng ký rồi. Tôi nghe nói diễn giả chính là một người có tiếng trong ngành. Có thể cho chúng ta vài góc nhìn mới."
+      }
+    ],
+    "key_phrases": [
+      "catch that paper",
+      "pretty slick",
+      "dig into them",
+      "a big deal in the field",
+      "fresh perspectives"
+    ],
+    "key_vocab": [
+      "skimmed",
+      "skeptical",
+      "shaky",
+      "overfitting",
+      "replicate",
+      "apparatus"
+    ],
+    "grammar_points": [
+      "I wonder if...",
+      "would hold under...",
+      "plan to + infinitive"
+    ],
+    "level": "c1"
+  },
+  {
+    "scenario": "Negotiating a salary raise with manager",
+    "scenario_vi": "Đàm phán tăng lương với quản lý",
+    "category": "work_and_jobs",
+    "roles": [
+      "Employee",
+      "Manager"
+    ],
+    "dialogue": [
+      {
+        "role": "Employee",
+        "en": "Thanks for making time, Sarah. I wanted to discuss my compensation.",
+        "vi": "Cảm ơn chị đã dành thời gian, Sarah. Em muốn thảo luận về lương thưởng của mình."
+      },
+      {
+        "role": "Manager",
+        "en": "Sure, go ahead. What's on your mind?",
+        "vi": "Được thôi, em cứ nói. Em có ý gì?"
+      },
+      {
+        "role": "Employee",
+        "en": "Well, I've been here for three years now, and I've consistently exceeded my KPIs. I'm hoping we can revisit my salary.",
+        "vi": "À, em đã làm ở đây được ba năm rồi, và em luôn vượt chỉ tiêu. Em hy vọng chúng ta có thể xem xét lại mức lương của em."
+      },
+      {
+        "role": "Manager",
+        "en": "I appreciate your hard work. What kind of increase were you thinking?",
+        "vi": "Chị đánh giá cao sự nỗ lực của em. Em mong muốn mức tăng bao nhiêu?"
+      },
+      {
+        "role": "Employee",
+        "en": "Based on market research and my contributions, I'm looking at a 15% raise.",
+        "vi": "Dựa trên khảo sát thị trường và đóng góp của em, em hy vọng tăng 15%."
+      },
+      {
+        "role": "Manager",
+        "en": "That's a significant jump. Can you walk me through your rationale?",
+        "vi": "Mức tăng đó khá lớn. Em có thể giải thích lý do được không?"
+      },
+      {
+        "role": "Employee",
+        "en": "Sure. I've taken on additional responsibilities like mentoring juniors and leading the Q3 project. My performance reviews have been stellar.",
+        "vi": "Vâng. Em đã đảm nhận thêm trách nhiệm như kèm cặp nhân viên mới và dẫn dắt dự án quý 3. Đánh giá hiệu suất của em rất tốt."
+      },
+      {
+        "role": "Manager",
+        "en": "I see your point. Let me talk to HR and see what we can do. I'll get back to you by next week.",
+        "vi": "Chị hiểu rồi. Để chị nói chuyện với HR xem có thể làm gì. Chị sẽ trả lời em trong tuần sau."
+      },
+      {
+        "role": "Employee",
+        "en": "Thank you, Sarah. I really appreciate your support.",
+        "vi": "Cảm ơn chị, Sarah. Em rất trân trọng sự hỗ trợ của chị."
+      },
+      {
+        "role": "Manager",
+        "en": "No problem. You've earned it. Keep up the good work.",
+        "vi": "Không có gì. Em xứng đáng mà. Tiếp tục phát huy nhé."
+      }
+    ],
+    "key_phrases": [
+      "revisit my salary",
+      "based on market research",
+      "walk me through your rationale",
+      "get back to you"
+    ],
+    "key_vocab": [
+      "compensation",
+      "KPIs",
+      "raise",
+      "rationale",
+      "mentoring",
+      "stellar"
+    ],
+    "grammar_points": [
+      "Present perfect continuous (I've been here)",
+      "Conditional (Let me... and see what we can do)",
+      "Future intention (I'll get back to you)"
+    ],
+    "level": "c1"
+  },
+  {
+    "scenario": "Debating online privacy with a friend",
+    "scenario_vi": "Tranh luận về quyền riêng tư trực tuyến với bạn",
+    "category": "communication_and_technology",
+    "roles": [
+      "Mai",
+      "Linh"
+    ],
+    "dialogue": [
+      {
+        "role": "Mai",
+        "en": "You know, I just found out that my messaging app has been sharing my data with third parties. I'm seriously thinking about deleting it.",
+        "vi": "Bạn biết không, mình vừa phát hiện ra ứng dụng nhắn tin của mình đã chia sẻ dữ liệu cho bên thứ ba. Mình đang nghiêm túc cân nhắc xóa nó đấy."
+      },
+      {
+        "role": "Linh",
+        "en": "Come on, Mai. Most apps do that these days. It's practically impossible to avoid. You'd have to go off the grid entirely.",
+        "vi": "Thôi nào Mai. Hầu hết các ứng dụng bây giờ đều làm vậy cả. Thực tế thì không thể tránh được đâu. Bạn phải sống tách biệt hoàn toàn mới được."
+      },
+      {
+        "role": "Mai",
+        "en": "That's a bit of an overstatement. I'm not saying I'll ditch my smartphone, but I can be more selective about what I use. There are privacy-focused alternatives.",
+        "vi": "Hơi quá đáng rồi đấy. Mình không nói là sẽ vứt điện thoại thông minh đi, nhưng mình có thể chọn lọc hơn về những gì mình dùng. Có những ứng dụng thay thế tập trung vào quyền riêng tư mà."
+      },
+      {
+        "role": "Linh",
+        "en": "Sure, but convenience often wins out. I mean, who has the time to research every app's privacy policy? It's a trade-off we all make.",
+        "vi": "Ừ, nhưng tiện lợi thường thắng. Ý mình là, ai có thời gian để nghiên cứu chính sách bảo mật của từng ứng dụng chứ? Đó là sự đánh đổi mà tất cả chúng ta đều chấp nhận."
+      },
+      {
+        "role": "Mai",
+        "en": "That's exactly the mindset that got us into this mess. If we don't push back, companies will keep encroaching on our privacy. It's a slippery slope.",
+        "vi": "Chính cái suy nghĩ đó đã đưa chúng ta vào tình trạng này đấy. Nếu chúng ta không phản kháng, các công ty sẽ tiếp tục xâm phạm quyền riêng tư của chúng ta. Đó là một con đường trơn trượt."
+      },
+      {
+        "role": "Linh",
+        "en": "I see your point, but I think it's a bit naive to believe we can have total privacy in the digital age. The genie's out of the bottle, so to speak.",
+        "vi": "Mình hiểu ý bạn, nhưng mình nghĩ hơi ngây thơ khi tin rằng chúng ta có thể có quyền riêng tư tuyệt đối trong thời đại kỹ thuật số. Nói nôm na là nước đã đổ đi rồi."
+      },
+      {
+        "role": "Mai",
+        "en": "I'm not asking for total privacy, just basic respect for my data. And it's not just about me; it's about setting a precedent for future generations.",
+        "vi": "Mình không yêu cầu quyền riêng tư tuyệt đối, chỉ là sự tôn trọng cơ bản đối với dữ liệu của mình thôi. Và không chỉ vì mình, mà còn để tạo tiền lệ cho các thế hệ tương lai."
+      },
+      {
+        "role": "Linh",
+        "en": "Alright, you've given me food for thought. Maybe I should look into those privacy-focused apps you mentioned. Do you have any recommendations?",
+        "vi": "Được rồi, bạn đã cho mình một vấn đề để suy nghĩ. Có lẽ mình nên tìm hiểu về những ứng dụng tập trung vào quyền riêng tư mà bạn đề cập. Bạn có gợi ý gì không?"
+      }
+    ],
+    "key_phrases": [
+      "off the grid",
+      "a trade-off",
+      "a slippery slope",
+      "food for thought"
+    ],
+    "key_vocab": [
+      "encroaching",
+      "precedent",
+      "selective",
+      "alternatives",
+      "overstatement",
+      "privacy-focused"
+    ],
+    "grammar_points": [
+      "Conditional: If we don't push back, companies will keep encroaching...",
+      "Comparative: more selective",
+      "Modal: can have, would have to"
+    ],
+    "level": "c1"
+  }
+]

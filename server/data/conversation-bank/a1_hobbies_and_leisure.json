@@ -1,0 +1,132 @@
+[
+  {
+    "scenario": "Two friends talking about weekend hobbies",
+    "scenario_vi": "Hai người bạn nói về sở thích cuối tuần",
+    "category": "hobbies_and_leisure",
+    "roles": [
+      "Minh",
+      "Lan"
+    ],
+    "dialogue": [
+      {
+        "role": "Minh",
+        "en": "What do you do on weekends?",
+        "vi": "Cuối tuần bạn làm gì?"
+      },
+      {
+        "role": "Lan",
+        "en": "I like to read books.",
+        "vi": "Mình thích đọc sách."
+      },
+      {
+        "role": "Minh",
+        "en": "That's nice! I like to play soccer.",
+        "vi": "Hay đấy! Mình thích chơi bóng đá."
+      },
+      {
+        "role": "Lan",
+        "en": "Do you play every weekend?",
+        "vi": "Bạn chơi mỗi cuối tuần à?"
+      },
+      {
+        "role": "Minh",
+        "en": "Yes, I play on Saturday mornings.",
+        "vi": "Ừ, mình chơi sáng thứ Bảy."
+      },
+      {
+        "role": "Lan",
+        "en": "Maybe I can watch you play sometime.",
+        "vi": "Có lẽ mình có thể xem bạn chơi lúc nào đó."
+      },
+      {
+        "role": "Minh",
+        "en": "Sure! You can come this Saturday.",
+        "vi": "Chắc chắn rồi! Bạn có thể đến thứ Bảy này."
+      }
+    ],
+    "key_phrases": [
+      "What do you do on weekends?",
+      "I like to...",
+      "Do you play every weekend?",
+      "Maybe I can..."
+    ],
+    "key_vocab": [
+      "weekend",
+      "read",
+      "play",
+      "soccer",
+      "watch"
+    ],
+    "grammar_points": [
+      "like to + verb",
+      "do you...?",
+      "can + verb"
+    ],
+    "level": "a1"
+  },
+  {
+    "scenario": "Talking about a favorite movie",
+    "scenario_vi": "Nói về bộ phim yêu thích",
+    "category": "hobbies_and_leisure",
+    "roles": [
+      "Tom",
+      "Anna"
+    ],
+    "dialogue": [
+      {
+        "role": "Tom",
+        "en": "Do you like movies?",
+        "vi": "Bạn có thích phim không?"
+      },
+      {
+        "role": "Anna",
+        "en": "Yes, I love action movies.",
+        "vi": "Có, mình thích phim hành động."
+      },
+      {
+        "role": "Tom",
+        "en": "What is your favorite movie?",
+        "vi": "Phim yêu thích của bạn là gì?"
+      },
+      {
+        "role": "Anna",
+        "en": "My favorite is 'Fast & Furious'.",
+        "vi": "Phim yêu thích của mình là 'Fast & Furious'."
+      },
+      {
+        "role": "Tom",
+        "en": "Oh, I know that one! It is very exciting.",
+        "vi": "Ồ, mình biết phim đó! Nó rất hấp dẫn."
+      },
+      {
+        "role": "Anna",
+        "en": "Yes, I watch it many times.",
+        "vi": "Ừ, mình xem nó nhiều lần rồi."
+      },
+      {
+        "role": "Tom",
+        "en": "Maybe we can watch a movie together.",
+        "vi": "Có lẽ chúng ta có thể xem phim cùng nhau."
+      }
+    ],
+    "key_phrases": [
+      "Do you like movies?",
+      "What is your favorite movie?",
+      "I love...",
+      "Maybe we can..."
+    ],
+    "key_vocab": [
+      "movie",
+      "action",
+      "favorite",
+      "exciting",
+      "watch"
+    ],
+    "grammar_points": [
+      "do you like...?",
+      "what is...?",
+      "can + verb"
+    ],
+    "level": "a1"
+  }
+]

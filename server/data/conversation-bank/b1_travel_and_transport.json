@@ -1,0 +1,200 @@
+[
+  {
+    "scenario": "Asking for directions at a train station",
+    "scenario_vi": "Hỏi đường ở ga tàu",
+    "category": "travel_and_transport",
+    "roles": [
+      "Tourist",
+      "Station Staff"
+    ],
+    "dialogue": [
+      {
+        "role": "Tourist",
+        "en": "Excuse me, could you tell me which platform the train to Ho Chi Minh City leaves from?",
+        "vi": "Xin lỗi, anh/chị có thể chỉ cho tôi biết tàu đi Thành phố Hồ Chí Minh xuất phát từ sân ga nào không?"
+      },
+      {
+        "role": "Station Staff",
+        "en": "Sure, it's platform 3. But you'd better hurry – it's departing in 10 minutes.",
+        "vi": "Chắc chắn rồi, sân ga số 3. Nhưng bạn nên nhanh lên – tàu sắp khởi hành trong 10 phút nữa đấy."
+      },
+      {
+        "role": "Tourist",
+        "en": "Oh, I see. And is there a ticket machine nearby? I need to buy a ticket.",
+        "vi": "Ồ, tôi hiểu rồi. Và có máy bán vé gần đây không? Tôi cần mua vé."
+      },
+      {
+        "role": "Station Staff",
+        "en": "Yes, there's one right over there, next to the newsstand. You can get a single or return ticket.",
+        "vi": "Có, có một cái ngay đằng kia, cạnh quầy báo. Bạn có thể mua vé một chiều hoặc khứ hồi."
+      },
+      {
+        "role": "Tourist",
+        "en": "Great, thanks a lot. One more thing – do I need to validate my ticket before boarding?",
+        "vi": "Tuyệt, cảm ơn nhiều. Còn một điều nữa – tôi có cần xác nhận vé trước khi lên tàu không?"
+      },
+      {
+        "role": "Station Staff",
+        "en": "No, you don't have to. Just show it to the conductor when you board. Have a safe trip!",
+        "vi": "Không, bạn không cần đâu. Chỉ cần đưa cho người soát vé khi lên tàu thôi. Chúc bạn chuyến đi an toàn!"
+      }
+    ],
+    "key_phrases": [
+      "could you tell me",
+      "you'd better hurry",
+      "one more thing"
+    ],
+    "key_vocab": [
+      "platform",
+      "ticket machine",
+      "single ticket",
+      "return ticket",
+      "validate",
+      "conductor"
+    ],
+    "grammar_points": [
+      "indirect questions (Could you tell me...)",
+      "had better + infinitive"
+    ],
+    "level": "b1"
+  },
+  {
+    "scenario": "Renting a car at the airport",
+    "scenario_vi": "Thuê xe tại sân bay",
+    "category": "travel_and_transport",
+    "roles": [
+      "Customer",
+      "Rental Agent"
+    ],
+    "dialogue": [
+      {
+        "role": "Rental Agent",
+        "en": "Hi there! Welcome to Wheels Rent-a-Car. How can I help you?",
+        "vi": "Xin chào! Chào mừng bạn đến với Wheels Rent-a-Car. Tôi có thể giúp gì cho bạn?"
+      },
+      {
+        "role": "Customer",
+        "en": "Hi, I'd like to rent a car for three days. What models do you have available?",
+        "vi": "Chào, tôi muốn thuê một chiếc xe trong ba ngày. Anh có những mẫu xe nào sẵn có?"
+      },
+      {
+        "role": "Rental Agent",
+        "en": "We have compact cars, sedans, and SUVs. I'd recommend a compact if you're driving in the city – it's easier to park.",
+        "vi": "Chúng tôi có xe nhỏ gọn, xe sedan và SUV. Tôi khuyên bạn nên chọn xe nhỏ gọn nếu bạn lái trong thành phố – đỗ xe dễ hơn."
+      },
+      {
+        "role": "Customer",
+        "en": "Sounds good. What's the daily rate for a compact?",
+        "vi": "Nghe ổn đấy. Giá thuê mỗi ngày cho xe nhỏ gọn là bao nhiêu?"
+      },
+      {
+        "role": "Rental Agent",
+        "en": "It's $45 per day, with unlimited mileage. But you'll need to put down a deposit of $200.",
+        "vi": "45 đô một ngày, không giới hạn số dặm. Nhưng bạn cần đặt cọc 200 đô."
+      },
+      {
+        "role": "Customer",
+        "en": "Alright, I'll take it. Do I need to bring it back with a full tank?",
+        "vi": "Được rồi, tôi lấy xe. Tôi có cần trả xe với bình xăng đầy không?"
+      },
+      {
+        "role": "Rental Agent",
+        "en": "Yes, please. Otherwise, we'll charge you for refueling. And just so you know, insurance is included in the price.",
+        "vi": "Vâng, làm ơn. Nếu không, chúng tôi sẽ tính phí đổ xăng. Và bạn nên biết, bảo hiểm đã bao gồm trong giá."
+      },
+      {
+        "role": "Customer",
+        "en": "Perfect. Could I see the contract, please?",
+        "vi": "Tuyệt vời. Cho tôi xem hợp đồng được không?"
+      }
+    ],
+    "key_phrases": [
+      "What's the daily rate?",
+      "put down a deposit",
+      "just so you know"
+    ],
+    "key_vocab": [
+      "rent",
+      "compact car",
+      "sedan",
+      "SUV",
+      "deposit",
+      "insurance"
+    ],
+    "grammar_points": [
+      "would like + infinitive",
+      "need to + infinitive",
+      "otherwise clause"
+    ],
+    "level": "b1"
+  },
+  {
+    "scenario": "Booking a flight online and confirming details",
+    "scenario_vi": "Đặt vé máy bay trực tuyến và xác nhận chi tiết",
+    "category": "travel_and_transport",
+    "roles": [
+      "Customer",
+      "Customer Service Agent"
+    ],
+    "dialogue": [
+      {
+        "role": "Customer Service Agent",
+        "en": "Good morning, Skyline Airlines. How may I assist you today?",
+        "vi": "Chào buổi sáng, Hãng hàng không Skyline. Tôi có thể giúp gì cho bạn hôm nay?"
+      },
+      {
+        "role": "Customer",
+        "en": "Hi, I'm calling to confirm my booking for tomorrow's flight to Da Nang.",
+        "vi": "Chào, tôi gọi để xác nhận vé đã đặt cho chuyến bay ngày mai đến Đà Nẵng."
+      },
+      {
+        "role": "Customer Service Agent",
+        "en": "Sure, may I have your booking reference number?",
+        "vi": "Chắc chắn rồi, bạn cho tôi số tham chiếu đặt vé được không?"
+      },
+      {
+        "role": "Customer",
+        "en": "It's ABC123. I'd like to check if there are any changes to the departure time.",
+        "vi": "Là ABC123. Tôi muốn kiểm tra xem có thay đổi gì về giờ khởi hành không."
+      },
+      {
+        "role": "Customer Service Agent",
+        "en": "Let me pull it up. Your flight is on time, departing at 2:30 PM from gate 7. No changes.",
+        "vi": "Để tôi tra cứu. Chuyến bay của bạn đúng giờ, khởi hành lúc 2:30 chiều từ cửa số 7. Không có thay đổi."
+      },
+      {
+        "role": "Customer",
+        "en": "Great. Also, can I request a window seat? I booked an aisle seat online by mistake.",
+        "vi": "Tuyệt. Ngoài ra, tôi có thể yêu cầu ghế cạnh cửa sổ không? Tôi đã đặt nhầm ghế lối đi trên mạng."
+      },
+      {
+        "role": "Customer Service Agent",
+        "en": "Of course. Let me see if there's one available... Yes, I've switched you to 14A, a window seat. Is there anything else?",
+        "vi": "Tất nhiên. Để tôi xem có ghế trống không... Có, tôi đã chuyển bạn sang 14A, ghế cạnh cửa sổ. Còn gì nữa không?"
+      },
+      {
+        "role": "Customer",
+        "en": "No, that's all. Thanks for your help!",
+        "vi": "Không, thế thôi. Cảm ơn bạn đã giúp đỡ!"
+      }
+    ],
+    "key_phrases": [
+      "confirm my booking",
+      "pull it up",
+      "by mistake"
+    ],
+    "key_vocab": [
+      "booking reference",
+      "departure time",
+      "gate",
+      "window seat",
+      "aisle seat"
+    ],
+    "grammar_points": [
+      "present continuous for future (departing)",
+      "past simple for completed actions (booked)",
+      "can I request...?"
+    ],
+    "level": "b1"
+  }
+]

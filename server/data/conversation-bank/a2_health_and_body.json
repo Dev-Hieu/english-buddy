@@ -1,0 +1,141 @@
+[
+  {
+    "scenario": "Describing symptoms at a pharmacy",
+    "scenario_vi": "Mô tả triệu chứng ở hiệu thuốc",
+    "category": "health_and_body",
+    "roles": [
+      "Customer",
+      "Pharmacist"
+    ],
+    "dialogue": [
+      {
+        "role": "Customer",
+        "en": "Hi, I don't feel well. I have a headache and a sore throat.",
+        "vi": "Chào anh, tôi thấy không khỏe. Tôi bị đau đầu và đau họng."
+      },
+      {
+        "role": "Pharmacist",
+        "en": "I see. Did you take anything for it yet?",
+        "vi": "Tôi hiểu rồi. Anh đã uống thuốc gì chưa?"
+      },
+      {
+        "role": "Customer",
+        "en": "No, I just started feeling sick yesterday.",
+        "vi": "Chưa, tôi mới thấy bệnh từ hôm qua."
+      },
+      {
+        "role": "Pharmacist",
+        "en": "You should rest and drink warm water. I recommend this medicine.",
+        "vi": "Anh nên nghỉ ngơi và uống nước ấm. Tôi khuyên dùng thuốc này."
+      },
+      {
+        "role": "Customer",
+        "en": "Okay, I'll take it. How many times a day?",
+        "vi": "Vâng, tôi sẽ uống. Mỗi ngày mấy lần ạ?"
+      },
+      {
+        "role": "Pharmacist",
+        "en": "Take one pill three times a day after meals.",
+        "vi": "Uống một viên ba lần một ngày sau bữa ăn."
+      },
+      {
+        "role": "Customer",
+        "en": "Thank you. I hope I'll feel better soon.",
+        "vi": "Cảm ơn anh. Hy vọng tôi sẽ sớm khỏe lại."
+      },
+      {
+        "role": "Pharmacist",
+        "en": "You're welcome. Get well soon!",
+        "vi": "Không có gì. Chúc anh mau khỏe!"
+      }
+    ],
+    "key_phrases": [
+      "I don't feel well",
+      "I have a headache",
+      "You should rest",
+      "How many times a day?"
+    ],
+    "key_vocab": [
+      "headache",
+      "sore throat",
+      "medicine",
+      "pill",
+      "rest"
+    ],
+    "grammar_points": [
+      "Present simple for symptoms",
+      "Should for advice",
+      "How many + noun"
+    ],
+    "level": "a2"
+  },
+  {
+    "scenario": "Talking about a past injury",
+    "scenario_vi": "Nói về chấn thương trong quá khứ",
+    "category": "health_and_body",
+    "roles": [
+      "Friend A",
+      "Friend B"
+    ],
+    "dialogue": [
+      {
+        "role": "Friend A",
+        "en": "Hey, I heard you hurt your leg last week. What happened?",
+        "vi": "Này, tôi nghe tuần trước bạn bị đau chân. Chuyện gì thế?"
+      },
+      {
+        "role": "Friend B",
+        "en": "Yeah, I fell down the stairs. It was so painful.",
+        "vi": "Ừ, tôi bị ngã cầu thang. Đau lắm."
+      },
+      {
+        "role": "Friend A",
+        "en": "Oh no! Did you go to the doctor?",
+        "vi": "Trời ơi! Bạn có đi bác sĩ không?"
+      },
+      {
+        "role": "Friend B",
+        "en": "Yes, I went to the hospital. The doctor said it was just a sprain.",
+        "vi": "Có, tôi đến bệnh viện. Bác sĩ bảo chỉ bị bong gân thôi."
+      },
+      {
+        "role": "Friend A",
+        "en": "That's good. Will you be okay for the football match next week?",
+        "vi": "Thế thì tốt. Bạn có ổn để đá bóng tuần sau không?"
+      },
+      {
+        "role": "Friend B",
+        "en": "I don't think so. I'll need to rest for a few more days.",
+        "vi": "Chắc không. Tôi cần nghỉ thêm vài ngày nữa."
+      },
+      {
+        "role": "Friend A",
+        "en": "Take care. I hope you recover soon.",
+        "vi": "Giữ gìn nhé. Mong bạn mau hồi phục."
+      },
+      {
+        "role": "Friend B",
+        "en": "Thanks! I'll be careful.",
+        "vi": "Cảm ơn! Tôi sẽ cẩn thận."
+      }
+    ],
+    "key_phrases": [
+      "hurt your leg",
+      "fell down the stairs",
+      "go to the doctor",
+      "take care"
+    ],
+    "key_vocab": [
+      "sprain",
+      "doctor",
+      "hospital",
+      "match",
+      "recover"
+    ],
+    "grammar_points": [
+      "Past simple for events",
+      "Will for future intentions"
+    ],
+    "level": "a2"
+  }
+]

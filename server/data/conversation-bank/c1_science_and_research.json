@@ -1,0 +1,69 @@
+[
+  {
+    "scenario": "Discussing a new research paper in the lab",
+    "scenario_vi": "Thảo luận về một bài báo nghiên cứu mới trong phòng thí nghiệm",
+    "category": "science_and_research",
+    "roles": [
+      "Senior Researcher",
+      "Junior Researcher"
+    ],
+    "dialogue": [
+      {
+        "role": "Senior Researcher",
+        "en": "Hey, did you catch that paper in Nature about quantum entanglement?",
+        "vi": "Này, cậu có đọc bài báo trên Nature về vướng víu lượng tử không?"
+      },
+      {
+        "role": "Junior Researcher",
+        "en": "Yeah, I skimmed it. The experimental setup is pretty slick, but I'm a bit skeptical about the statistical analysis.",
+        "vi": "Có, tôi lướt qua rồi. Cách bố trí thí nghiệm khá tinh vi, nhưng tôi hơi nghi ngờ về phân tích thống kê."
+      },
+      {
+        "role": "Senior Researcher",
+        "en": "Right? They used a Bayesian approach, but the prior assumptions seem a bit shaky to me. I wonder if the results would hold under frequentist methods.",
+        "vi": "Phải không? Họ dùng phương pháp Bayes, nhưng các giả định tiên nghiệm có vẻ hơi thiếu chắc chắn. Không biết kết quả có đứng vững dưới phương pháp tần suất không."
+      },
+      {
+        "role": "Junior Researcher",
+        "en": "Exactly. And the sample size is relatively small. They might be overfitting the model. Have you looked at the supplementary materials?",
+        "vi": "Chính xác. Và cỡ mẫu tương đối nhỏ. Họ có thể đang overfit mô hình. Anh đã xem tài liệu bổ sung chưa?"
+      },
+      {
+        "role": "Senior Researcher",
+        "en": "Not yet, but I plan to dig into them later. I'd like to replicate the key experiment if we can get the resources.",
+        "vi": "Chưa, nhưng tôi dự định sẽ xem kỹ sau. Tôi muốn tái tạo thí nghiệm chính nếu có thể xin được nguồn lực."
+      },
+      {
+        "role": "Junior Researcher",
+        "en": "That would be great. I can help set up the apparatus. By the way, are you going to the seminar on quantum computing next week?",
+        "vi": "Tuyệt quá. Tôi có thể giúp lắp đặt thiết bị. Nhân tiện, anh có đi dự hội thảo về điện toán lượng tử tuần sau không?"
+      },
+      {
+        "role": "Senior Researcher",
+        "en": "Yes, I registered. I heard the keynote speaker is a big deal in the field. It might give us some fresh perspectives.",
+        "vi": "Có, tôi đã đăng ký rồi. Tôi nghe nói diễn giả chính là một người có tiếng trong ngành. Có thể cho chúng ta vài góc nhìn mới."
+      }
+    ],
+    "key_phrases": [
+      "catch that paper",
+      "pretty slick",
+      "dig into them",
+      "a big deal in the field",
+      "fresh perspectives"
+    ],
+    "key_vocab": [
+      "skimmed",
+      "skeptical",
+      "shaky",
+      "overfitting",
+      "replicate",
+      "apparatus"
+    ],
+    "grammar_points": [
+      "I wonder if...",
+      "would hold under...",
+      "plan to + infinitive"
+    ],
+    "level": "c1"
+  }
+]

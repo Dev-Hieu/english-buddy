@@ -1,0 +1,1729 @@
+[
+  {
+    "scenario": "Asking for directions to the supermarket",
+    "scenario_vi": "Hỏi đường đến siêu thị",
+    "category": "daily_life",
+    "roles": [
+      "Tourist",
+      "Local"
+    ],
+    "dialogue": [
+      {
+        "role": "Tourist",
+        "en": "Excuse me, is there a supermarket near here?",
+        "vi": "Xin lỗi, có siêu thị nào gần đây không ạ?"
+      },
+      {
+        "role": "Local",
+        "en": "Yes, there's one on Green Street. Just go straight and turn left.",
+        "vi": "Có, có một cái ở phố Green. Cứ đi thẳng rồi rẽ trái."
+      },
+      {
+        "role": "Tourist",
+        "en": "How far is it from here?",
+        "vi": "Cách đây bao xa ạ?"
+      },
+      {
+        "role": "Local",
+        "en": "It's about a 10-minute walk. You can't miss it.",
+        "vi": "Đi bộ khoảng 10 phút. Anh sẽ thấy ngay."
+      },
+      {
+        "role": "Tourist",
+        "en": "Thank you very much.",
+        "vi": "Cảm ơn anh nhiều."
+      },
+      {
+        "role": "Local",
+        "en": "You're welcome. Have a nice day!",
+        "vi": "Không có gì. Chúc anh một ngày tốt lành!"
+      }
+    ],
+    "key_phrases": [
+      "Excuse me, is there...?",
+      "Go straight and turn left",
+      "How far is it?",
+      "You can't miss it"
+    ],
+    "key_vocab": [
+      "supermarket",
+      "straight",
+      "left",
+      "walk",
+      "far"
+    ],
+    "grammar_points": [
+      "There is/are...",
+      "Imperatives for directions"
+    ],
+    "level": "a2"
+  },
+  {
+    "scenario": "Talking about weekend plans",
+    "scenario_vi": "Nói về kế hoạch cuối tuần",
+    "category": "daily_life",
+    "roles": [
+      "Friend A",
+      "Friend B"
+    ],
+    "dialogue": [
+      {
+        "role": "Friend A",
+        "en": "What are you going to do this weekend?",
+        "vi": "Cuối tuần này bạn định làm gì?"
+      },
+      {
+        "role": "Friend B",
+        "en": "I'm going to visit my grandparents. They live in the countryside.",
+        "vi": "Mình sẽ đi thăm ông bà. Ông bà sống ở quê."
+      },
+      {
+        "role": "Friend A",
+        "en": "That sounds nice. Did you go there last weekend?",
+        "vi": "Nghe hay quá. Cuối tuần trước bạn có đến đó không?"
+      },
+      {
+        "role": "Friend B",
+        "en": "No, I didn't. I stayed home and studied.",
+        "vi": "Không, mình ở nhà và học bài."
+      },
+      {
+        "role": "Friend A",
+        "en": "I see. Well, have fun this weekend!",
+        "vi": "À ra vậy. Chúc bạn cuối tuần vui vẻ!"
+      },
+      {
+        "role": "Friend B",
+        "en": "Thanks! You too.",
+        "vi": "Cảm ơn! Bạn cũng vậy nhé."
+      }
+    ],
+    "key_phrases": [
+      "What are you going to do?",
+      "I'm going to...",
+      "That sounds nice",
+      "Have fun!"
+    ],
+    "key_vocab": [
+      "weekend",
+      "visit",
+      "grandparents",
+      "countryside",
+      "stay home"
+    ],
+    "grammar_points": [
+      "be going to for future plans",
+      "Simple past (Did you...?)"
+    ],
+    "level": "a2"
+  },
+  {
+    "scenario": "Booking a hotel room by phone",
+    "scenario_vi": "Đặt phòng khách sạn qua điện thoại",
+    "category": "daily_life",
+    "roles": [
+      "Guest",
+      "Receptionist"
+    ],
+    "dialogue": [
+      {
+        "role": "Guest",
+        "en": "Hello, I'd like to book a double room for two nights.",
+        "vi": "Xin chào, tôi muốn đặt một phòng đôi cho hai đêm."
+      },
+      {
+        "role": "Receptionist",
+        "en": "Of course. When do you want to check in?",
+        "vi": "Vâng ạ. Quý khách muốn nhận phòng khi nào?"
+      },
+      {
+        "role": "Guest",
+        "en": "Next Friday, July 5th.",
+        "vi": "Thứ Sáu tuần sau, ngày 5 tháng 7."
+      },
+      {
+        "role": "Receptionist",
+        "en": "Let me check. Yes, we have a room available. The price is $80 per night.",
+        "vi": "Để tôi kiểm tra. Vâng, chúng tôi còn phòng. Giá là 80 đô một đêm."
+      },
+      {
+        "role": "Guest",
+        "en": "That's fine. Can I pay by credit card?",
+        "vi": "Được đấy. Tôi có thể thanh toán bằng thẻ tín dụng không?"
+      },
+      {
+        "role": "Receptionist",
+        "en": "Yes, we accept Visa and Mastercard.",
+        "vi": "Có ạ, chúng tôi chấp nhận Visa và Mastercard."
+      }
+    ],
+    "key_phrases": [
+      "I'd like to book...",
+      "When do you want to check in?",
+      "Can I pay by credit card?",
+      "We accept..."
+    ],
+    "key_vocab": [
+      "book",
+      "double room",
+      "check in",
+      "available",
+      "price",
+      "credit card"
+    ],
+    "grammar_points": [
+      "would like to + verb",
+      "Can I...? for requests"
+    ],
+    "level": "a2"
+  },
+  {
+    "scenario": "Ordering food at a restaurant",
+    "scenario_vi": "Gọi món ở nhà hàng",
+    "category": "food_and_drink",
+    "roles": [
+      "Customer",
+      "Waiter"
+    ],
+    "dialogue": [
+      {
+        "role": "Waiter",
+        "en": "Good evening! Are you ready to order?",
+        "vi": "Chào buổi tối! Quý khách đã sẵn sàng gọi món chưa ạ?"
+      },
+      {
+        "role": "Customer",
+        "en": "Yes, I'd like the grilled chicken, please.",
+        "vi": "Vâng, cho tôi món gà nướng ạ."
+      },
+      {
+        "role": "Waiter",
+        "en": "Sure. Would you like a side dish with that?",
+        "vi": "Vâng. Quý khách có muốn dùng kèm món phụ không ạ?"
+      },
+      {
+        "role": "Customer",
+        "en": "What do you recommend?",
+        "vi": "Anh/chị có gợi ý gì không?"
+      },
+      {
+        "role": "Waiter",
+        "en": "The mashed potatoes are very popular.",
+        "vi": "Món khoai tây nghiền rất được ưa chuộng ạ."
+      },
+      {
+        "role": "Customer",
+        "en": "I'll have that. And a glass of orange juice, please.",
+        "vi": "Tôi sẽ lấy món đó. Và một cốc nước cam ạ."
+      },
+      {
+        "role": "Waiter",
+        "en": "Great. I'll bring your order soon.",
+        "vi": "Tuyệt vời. Tôi sẽ mang món ra ngay ạ."
+      },
+      {
+        "role": "Customer",
+        "en": "Thank you.",
+        "vi": "Cảm ơn."
+      }
+    ],
+    "key_phrases": [
+      "Are you ready to order?",
+      "I'd like...",
+      "What do you recommend?",
+      "I'll have..."
+    ],
+    "key_vocab": [
+      "order",
+      "recommend",
+      "side dish",
+      "popular"
+    ],
+    "grammar_points": [
+      "would like + noun",
+      "What do you recommend?"
+    ],
+    "level": "a2"
+  },
+  {
+    "scenario": "Buying groceries at a market",
+    "scenario_vi": "Mua thực phẩm ở chợ",
+    "category": "food_and_drink",
+    "roles": [
+      "Customer",
+      "Vendor"
+    ],
+    "dialogue": [
+      {
+        "role": "Customer",
+        "en": "How much are these apples?",
+        "vi": "Mấy quả táo này bao nhiêu tiền ạ?"
+      },
+      {
+        "role": "Vendor",
+        "en": "They're 30,000 dong per kilo.",
+        "vi": "30 nghìn một cân em ạ."
+      },
+      {
+        "role": "Customer",
+        "en": "I'll take two kilos, please.",
+        "vi": "Em lấy hai cân ạ."
+      },
+      {
+        "role": "Vendor",
+        "en": "Here you are. Anything else?",
+        "vi": "Của em đây. Còn gì nữa không em?"
+      },
+      {
+        "role": "Customer",
+        "en": "Do you have fresh milk?",
+        "vi": "Có sữa tươi không ạ?"
+      },
+      {
+        "role": "Vendor",
+        "en": "Yes, over there. It's 25,000 dong a carton.",
+        "vi": "Có, ở đằng kia. Một hộp 25 nghìn em ạ."
+      },
+      {
+        "role": "Customer",
+        "en": "I'll get two cartons. How much is that in total?",
+        "vi": "Em lấy hai hộp. Tổng cộng bao nhiêu ạ?"
+      },
+      {
+        "role": "Vendor",
+        "en": "It's 110,000 dong altogether.",
+        "vi": "Tổng cộng 110 nghìn em ạ."
+      },
+      {
+        "role": "Customer",
+        "en": "Here's 120,000.",
+        "vi": "Em gửi 120 nghìn ạ."
+      },
+      {
+        "role": "Vendor",
+        "en": "And here's your change. Thank you!",
+        "vi": "Tiền thừa của em đây. Cảm ơn em!"
+      }
+    ],
+    "key_phrases": [
+      "How much are...?",
+      "I'll take...",
+      "Anything else?",
+      "How much is that in total?"
+    ],
+    "key_vocab": [
+      "kilo",
+      "carton",
+      "change",
+      "total"
+    ],
+    "grammar_points": [
+      "How much + noun?",
+      "I'll take + noun"
+    ],
+    "level": "a2"
+  },
+  {
+    "scenario": "Planning a dinner party with a friend",
+    "scenario_vi": "Lên kế hoạch tiệc tối với bạn",
+    "category": "food_and_drink",
+    "roles": [
+      "Friend A",
+      "Friend B"
+    ],
+    "dialogue": [
+      {
+        "role": "Friend A",
+        "en": "What should we cook for the party tomorrow?",
+        "vi": "Ngày mai chúng ta nên nấu gì cho bữa tiệc?"
+      },
+      {
+        "role": "Friend B",
+        "en": "I think we'll make spaghetti and a salad.",
+        "vi": "Mình nghĩ chúng ta sẽ làm mỳ Ý và salad."
+      },
+      {
+        "role": "Friend A",
+        "en": "Good idea. I'll bring the ingredients.",
+        "vi": "Ý hay đấy. Mình sẽ mang nguyên liệu."
+      },
+      {
+        "role": "Friend B",
+        "en": "Did you buy the tomatoes yesterday?",
+        "vi": "Hôm qua bạn mua cà chua chưa?"
+      },
+      {
+        "role": "Friend A",
+        "en": "Yes, I bought some. Also, I'll get some cheese later.",
+        "vi": "Rồi, mình mua một ít. Tí nữa mình sẽ mua thêm phô mai."
+      },
+      {
+        "role": "Friend B",
+        "en": "Great! I'll prepare the dessert.",
+        "vi": "Tuyệt! Mình sẽ chuẩn bị món tráng miệng."
+      },
+      {
+        "role": "Friend A",
+        "en": "What will you make?",
+        "vi": "Bạn sẽ làm gì?"
+      },
+      {
+        "role": "Friend B",
+        "en": "I'll bake a chocolate cake.",
+        "vi": "Mình sẽ nướng bánh sô-cô-la."
+      },
+      {
+        "role": "Friend A",
+        "en": "Sounds delicious! See you tomorrow.",
+        "vi": "Nghe ngon quá! Hẹn gặp bạn ngày mai."
+      }
+    ],
+    "key_phrases": [
+      "What should we cook?",
+      "I think we'll make...",
+      "I'll bring...",
+      "I'll get..."
+    ],
+    "key_vocab": [
+      "ingredients",
+      "spaghetti",
+      "salad",
+      "dessert",
+      "bake"
+    ],
+    "grammar_points": [
+      "will + verb (future)",
+      "What will you...?"
+    ],
+    "level": "a2"
+  },
+  {
+    "scenario": "Buying clothes at a store",
+    "scenario_vi": "Mua quần áo ở cửa hàng",
+    "category": "shopping",
+    "roles": [
+      "Customer",
+      "Sales Assistant"
+    ],
+    "dialogue": [
+      {
+        "role": "Sales Assistant",
+        "en": "Hi! Can I help you find anything?",
+        "vi": "Chào bạn! Tôi có thể giúp bạn tìm gì không?"
+      },
+      {
+        "role": "Customer",
+        "en": "Yes, I'm looking for a dress. Yesterday I saw one but it was too expensive.",
+        "vi": "Vâng, tôi đang tìm một cái váy. Hôm qua tôi thấy một cái nhưng nó đắt quá."
+      },
+      {
+        "role": "Sales Assistant",
+        "en": "What color do you like? We have some nice blue dresses on sale.",
+        "vi": "Bạn thích màu gì? Chúng tôi có vài cái váy xanh đang giảm giá."
+      },
+      {
+        "role": "Customer",
+        "en": "Blue is great! Can I try this one on?",
+        "vi": "Màu xanh tuyệt! Tôi có thể thử cái này không?"
+      },
+      {
+        "role": "Sales Assistant",
+        "en": "Sure, the fitting room is over there. Let me know if you need a different size.",
+        "vi": "Chắc chắn rồi, phòng thử đồ ở đằng kia. Hãy cho tôi biết nếu bạn cần size khác nhé."
+      },
+      {
+        "role": "Customer",
+        "en": "Thanks. I'll try it on now.",
+        "vi": "Cảm ơn. Tôi sẽ thử ngay bây giờ."
+      },
+      {
+        "role": "Customer",
+        "en": "It fits perfectly! I'll take it. How much is it?",
+        "vi": "Nó vừa vặn hoàn hảo! Tôi sẽ lấy nó. Bao nhiêu tiền vậy?"
+      },
+      {
+        "role": "Sales Assistant",
+        "en": "It's 25 dollars. Will that be cash or card?",
+        "vi": "25 đô la. Bạn trả tiền mặt hay thẻ?"
+      },
+      {
+        "role": "Customer",
+        "en": "Card, please. I'll pay with my card.",
+        "vi": "Thẻ ạ. Tôi sẽ trả bằng thẻ."
+      }
+    ],
+    "key_phrases": [
+      "Can I help you find anything?",
+      "I'm looking for...",
+      "Can I try this on?",
+      "I'll take it."
+    ],
+    "key_vocab": [
+      "dress",
+      "on sale",
+      "fitting room",
+      "size",
+      "fit",
+      "cash",
+      "card"
+    ],
+    "grammar_points": [
+      "present continuous for plans (I'm looking for)",
+      "past simple (saw, was)",
+      "future with will (I'll take it, I'll pay)"
+    ],
+    "level": "a2"
+  },
+  {
+    "scenario": "Returning a faulty item",
+    "scenario_vi": "Trả lại hàng bị lỗi",
+    "category": "shopping",
+    "roles": [
+      "Customer",
+      "Store Clerk"
+    ],
+    "dialogue": [
+      {
+        "role": "Customer",
+        "en": "Hi, I bought this blender here yesterday, but it doesn't work.",
+        "vi": "Chào, hôm qua tôi mua cái máy xay này ở đây, nhưng nó không hoạt động."
+      },
+      {
+        "role": "Store Clerk",
+        "en": "I'm sorry to hear that. Do you have the receipt?",
+        "vi": "Tôi rất tiếc khi nghe điều đó. Bạn có hóa đơn không?"
+      },
+      {
+        "role": "Customer",
+        "en": "Yes, here it is. I paid 40 dollars.",
+        "vi": "Có, đây ạ. Tôi đã trả 40 đô la."
+      },
+      {
+        "role": "Store Clerk",
+        "en": "Thank you. Let me check. Yes, I can give you a refund or you can exchange it for another one.",
+        "vi": "Cảm ơn. Để tôi kiểm tra. Vâng, tôi có thể hoàn tiền hoặc bạn có thể đổi lấy cái khác."
+      },
+      {
+        "role": "Customer",
+        "en": "I think I'll just get a refund. I'll buy a different brand later.",
+        "vi": "Tôi nghĩ tôi sẽ lấy lại tiền. Tôi sẽ mua một hãng khác sau."
+      },
+      {
+        "role": "Store Clerk",
+        "en": "No problem. I'll process the refund now. It will go back to your card in 5 days.",
+        "vi": "Không vấn đề gì. Tôi sẽ xử lý việc hoàn tiền ngay. Nó sẽ trở lại thẻ của bạn trong vòng 5 ngày."
+      },
+      {
+        "role": "Customer",
+        "en": "Great, thank you very much!",
+        "vi": "Tuyệt vời, cảm ơn bạn rất nhiều!"
+      },
+      {
+        "role": "Store Clerk",
+        "en": "You're welcome. Sorry for the inconvenience.",
+        "vi": "Không có gì. Xin lỗi vì sự bất tiện này."
+      }
+    ],
+    "key_phrases": [
+      "It doesn't work.",
+      "Do you have the receipt?",
+      "I can give you a refund",
+      "exchange it for another one"
+    ],
+    "key_vocab": [
+      "blender",
+      "receipt",
+      "refund",
+      "exchange",
+      "process"
+    ],
+    "grammar_points": [
+      "past simple (bought, paid, didn't work)",
+      "future with will (I'll buy, I'll process, will go back)",
+      "modal verbs for offers (can give, can exchange)"
+    ],
+    "level": "a2"
+  },
+  {
+    "scenario": "Asking a friend about a past trip",
+    "scenario_vi": "Hỏi bạn về chuyến đi vừa rồi",
+    "category": "family_and_friends",
+    "roles": [
+      "Lan",
+      "Minh"
+    ],
+    "dialogue": [
+      {
+        "role": "Lan",
+        "en": "Hey Minh, how was your trip to Da Lat last week?",
+        "vi": "Chào Minh, chuyến đi Đà Lạt tuần trước thế nào?"
+      },
+      {
+        "role": "Minh",
+        "en": "It was great! I went with my family.",
+        "vi": "Tuyệt lắm! Mình đi với gia đình."
+      },
+      {
+        "role": "Lan",
+        "en": "What did you do there?",
+        "vi": "Các bạn đã làm gì ở đó?"
+      },
+      {
+        "role": "Minh",
+        "en": "We visited some waterfalls and ate a lot of strawberries.",
+        "vi": "Tụi mình tham quan vài thác nước và ăn nhiều dâu tây."
+      },
+      {
+        "role": "Lan",
+        "en": "Sounds fun! Will you go again next year?",
+        "vi": "Nghe vui quá! Năm sau bạn có đi lại không?"
+      },
+      {
+        "role": "Minh",
+        "en": "Maybe. I'll tell you if I do.",
+        "vi": "Có thể. Mình sẽ nói bạn nếu đi."
+      },
+      {
+        "role": "Lan",
+        "en": "Great, I'd love to join!",
+        "vi": "Tuyệt, mình rất muốn đi cùng!"
+      },
+      {
+        "role": "Minh",
+        "en": "Sure, I'll let you know.",
+        "vi": "Chắc chắn rồi, mình sẽ báo bạn."
+      }
+    ],
+    "key_phrases": [
+      "How was your trip?",
+      "What did you do there?",
+      "I'll let you know."
+    ],
+    "key_vocab": [
+      "trip",
+      "waterfall",
+      "strawberry",
+      "join",
+      "maybe",
+      "family"
+    ],
+    "grammar_points": [
+      "Simple past (was, did, visited, ate)",
+      "Future with will"
+    ],
+    "level": "a2"
+  },
+  {
+    "scenario": "Planning a birthday party for a friend",
+    "scenario_vi": "Lên kế hoạch sinh nhật cho bạn",
+    "category": "family_and_friends",
+    "roles": [
+      "Hoa",
+      "Nam"
+    ],
+    "dialogue": [
+      {
+        "role": "Hoa",
+        "en": "Nam, it's Linh's birthday next Saturday. What should we do?",
+        "vi": "Nam ơi, thứ Bảy tuần sau là sinh nhật Linh. Mình nên làm gì?"
+      },
+      {
+        "role": "Nam",
+        "en": "Let's throw her a surprise party! I'll bring the cake.",
+        "vi": "Tổ chức tiệc bất ngờ cho cô ấy đi! Mình sẽ mang bánh kem."
+      },
+      {
+        "role": "Hoa",
+        "en": "Good idea! I'll invite our friends.",
+        "vi": "Ý hay đấy! Mình sẽ mời bạn bè."
+      },
+      {
+        "role": "Nam",
+        "en": "Will you buy decorations too?",
+        "vi": "Bạn sẽ mua đồ trang trí luôn chứ?"
+      },
+      {
+        "role": "Hoa",
+        "en": "Yes, I'll get some balloons and streamers.",
+        "vi": "Có, mình sẽ mua bóng bay và dây kim tuyến."
+      },
+      {
+        "role": "Nam",
+        "en": "Perfect. What about gifts? Did you get her anything?",
+        "vi": "Tuyệt. Còn quà thì sao? Bạn đã mua gì cho cô ấy chưa?"
+      },
+      {
+        "role": "Hoa",
+        "en": "Not yet. I'll buy a nice book tomorrow.",
+        "vi": "Chưa. Ngày mai mình sẽ mua một cuốn sách hay."
+      },
+      {
+        "role": "Nam",
+        "en": "Sounds good! I'll get her a scarf.",
+        "vi": "Nghe ổn đấy! Mình sẽ tặng cô ấy một cái khăn."
+      }
+    ],
+    "key_phrases": [
+      "What should we do?",
+      "Let's throw her a surprise party!",
+      "I'll bring the cake."
+    ],
+    "key_vocab": [
+      "birthday",
+      "surprise party",
+      "cake",
+      "decorations",
+      "balloons",
+      "scarf"
+    ],
+    "grammar_points": [
+      "Let's + base verb",
+      "Future with will"
+    ],
+    "level": "a2"
+  },
+  {
+    "scenario": "Asking about a past exam",
+    "scenario_vi": "Hỏi về kỳ thi đã qua",
+    "category": "education",
+    "roles": [
+      "Student",
+      "Friend"
+    ],
+    "dialogue": [
+      {
+        "role": "Student",
+        "en": "Hey, how was the math exam yesterday?",
+        "vi": "Này, bài kiểm tra toán hôm qua thế nào?"
+      },
+      {
+        "role": "Friend",
+        "en": "It was tough. I didn't finish all the questions.",
+        "vi": "Khó quá. Tớ không làm hết bài."
+      },
+      {
+        "role": "Student",
+        "en": "Really? I thought you studied a lot.",
+        "vi": "Thật à? Tớ tưởng cậu học nhiều lắm."
+      },
+      {
+        "role": "Friend",
+        "en": "I did study, but the last part was really hard.",
+        "vi": "Tớ có học, nhưng phần cuối khó quá."
+      },
+      {
+        "role": "Student",
+        "en": "What about the listening part?",
+        "vi": "Còn phần nghe thì sao?"
+      },
+      {
+        "role": "Friend",
+        "en": "That was okay. I think I got most of it right.",
+        "vi": "Phần đó ổn. Tớ nghĩ mình làm đúng hầu hết."
+      },
+      {
+        "role": "Student",
+        "en": "I hope you pass with a good grade.",
+        "vi": "Hy vọng cậu đạt điểm cao."
+      },
+      {
+        "role": "Friend",
+        "en": "Thanks. I'll find out next week.",
+        "vi": "Cảm ơn. Tuần sau tớ mới biết kết quả."
+      }
+    ],
+    "key_phrases": [
+      "How was the exam?",
+      "I didn't finish",
+      "I hope you pass",
+      "find out next week"
+    ],
+    "key_vocab": [
+      "exam",
+      "tough",
+      "questions",
+      "grade",
+      "listening"
+    ],
+    "grammar_points": [
+      "Simple past tense",
+      "Past negative: didn't + base verb"
+    ],
+    "level": "a2"
+  },
+  {
+    "scenario": "Talking about future classes",
+    "scenario_vi": "Nói về lớp học sắp tới",
+    "category": "education",
+    "roles": [
+      "Student",
+      "Student"
+    ],
+    "dialogue": [
+      {
+        "role": "Student",
+        "en": "Are you going to take the English class next semester?",
+        "vi": "Cậu có định học lớp tiếng Anh học kỳ tới không?"
+      },
+      {
+        "role": "Student",
+        "en": "Yes, I am. I want to improve my speaking.",
+        "vi": "Có, tớ định học. Tớ muốn cải thiện kỹ năng nói."
+      },
+      {
+        "role": "Student",
+        "en": "Me too. I heard the teacher is really good.",
+        "vi": "Tớ cũng vậy. Tớ nghe nói giáo viên dạy hay lắm."
+      },
+      {
+        "role": "Student",
+        "en": "That's great. I will study hard this time.",
+        "vi": "Tuyệt quá. Lần này tớ sẽ học chăm chỉ."
+      },
+      {
+        "role": "Student",
+        "en": "Will there be a lot of homework?",
+        "vi": "Sẽ có nhiều bài tập về nhà không?"
+      },
+      {
+        "role": "Student",
+        "en": "I think so, but it's okay. I need the practice.",
+        "vi": "Tớ nghĩ là có, nhưng không sao. Tớ cần luyện tập."
+      },
+      {
+        "role": "Student",
+        "en": "Maybe we can study together.",
+        "vi": "Có lẽ chúng ta có thể học cùng nhau."
+      },
+      {
+        "role": "Student",
+        "en": "Good idea! Let's do that.",
+        "vi": "Ý hay đấy! Cùng học nhé."
+      }
+    ],
+    "key_phrases": [
+      "Are you going to take",
+      "I will study hard",
+      "Maybe we can study together"
+    ],
+    "key_vocab": [
+      "semester",
+      "improve",
+      "homework",
+      "practice"
+    ],
+    "grammar_points": [
+      "Future with 'be going to'",
+      "Future with 'will'"
+    ],
+    "level": "a2"
+  },
+  {
+    "scenario": "Asking for directions at a bus station",
+    "scenario_vi": "Hỏi đường ở bến xe buýt",
+    "category": "travel_and_transport",
+    "roles": [
+      "Tourist",
+      "Local"
+    ],
+    "dialogue": [
+      {
+        "role": "Tourist",
+        "en": "Excuse me, does this bus go to the city center?",
+        "vi": "Xin lỗi, xe buýt này có đi trung tâm thành phố không ạ?"
+      },
+      {
+        "role": "Local",
+        "en": "No, you need bus number 12. It leaves every 15 minutes.",
+        "vi": "Không, bạn cần đi xe số 12. Xe chạy 15 phút một chuyến."
+      },
+      {
+        "role": "Tourist",
+        "en": "Where can I catch it?",
+        "vi": "Tôi có thể bắt xe ở đâu?"
+      },
+      {
+        "role": "Local",
+        "en": "The stop is just over there, next to the convenience store.",
+        "vi": "Trạm dừng ở ngay đằng kia, cạnh cửa hàng tiện lợi."
+      },
+      {
+        "role": "Tourist",
+        "en": "Great, thanks! And how long does it take to get to the center?",
+        "vi": "Tuyệt, cảm ơn! Và đi đến trung tâm mất bao lâu?"
+      },
+      {
+        "role": "Local",
+        "en": "About 20 minutes, depending on traffic.",
+        "vi": "Khoảng 20 phút, tùy vào giao thông."
+      },
+      {
+        "role": "Tourist",
+        "en": "Perfect. I'll wait for bus 12. Thanks a lot!",
+        "vi": "Hoàn hảo. Tôi sẽ đợi xe số 12. Cảm ơn nhiều!"
+      },
+      {
+        "role": "Local",
+        "en": "You're welcome. Have a nice day!",
+        "vi": "Không có gì. Chúc bạn một ngày tốt lành!"
+      }
+    ],
+    "key_phrases": [
+      "Does this bus go to...?",
+      "Where can I catch it?",
+      "How long does it take?"
+    ],
+    "key_vocab": [
+      "bus",
+      "stop",
+      "traffic",
+      "center",
+      "convenience store"
+    ],
+    "grammar_points": [
+      "Simple present for schedules",
+      "How long does it take?"
+    ],
+    "level": "a2"
+  },
+  {
+    "scenario": "Booking a taxi to the airport",
+    "scenario_vi": "Đặt taxi ra sân bay",
+    "category": "travel_and_transport",
+    "roles": [
+      "Customer",
+      "Driver"
+    ],
+    "dialogue": [
+      {
+        "role": "Customer",
+        "en": "Hi, I need a taxi to the airport tomorrow at 6 AM.",
+        "vi": "Chào anh, tôi cần đặt taxi ra sân bay vào lúc 6 giờ sáng mai."
+      },
+      {
+        "role": "Driver",
+        "en": "Sure. May I have your address, please?",
+        "vi": "Vâng. Cho tôi xin địa chỉ của anh ạ?"
+      },
+      {
+        "role": "Customer",
+        "en": "I'm at 25 Nguyen Hue Street, District 1.",
+        "vi": "Tôi ở số 25 Nguyễn Huệ, Quận 1."
+      },
+      {
+        "role": "Driver",
+        "en": "No problem. I'll pick you up at 5:45 to be safe. Is that okay?",
+        "vi": "Không vấn đề. Tôi sẽ đón anh lúc 5:45 cho chắc. Được không ạ?"
+      },
+      {
+        "role": "Customer",
+        "en": "Yes, that's fine. How much will it cost?",
+        "vi": "Vâng, được. Giá bao nhiêu vậy?"
+      },
+      {
+        "role": "Driver",
+        "en": "About 150,000 dong, depending on traffic.",
+        "vi": "Khoảng 150,000 đồng, tùy vào giao thông."
+      },
+      {
+        "role": "Customer",
+        "en": "Okay, I'll pay in cash. See you tomorrow!",
+        "vi": "Được, tôi sẽ trả tiền mặt. Hẹn gặp anh mai!"
+      },
+      {
+        "role": "Driver",
+        "en": "See you! Have a good trip!",
+        "vi": "Hẹn gặp! Chúc anh chuyến đi tốt lành!"
+      }
+    ],
+    "key_phrases": [
+      "I need a taxi to...",
+      "pick you up",
+      "How much will it cost?"
+    ],
+    "key_vocab": [
+      "taxi",
+      "airport",
+      "address",
+      "pick up",
+      "cash"
+    ],
+    "grammar_points": [
+      "Simple future with will",
+      "May I have...?"
+    ],
+    "level": "a2"
+  },
+  {
+    "scenario": "Buying train tickets at the station",
+    "scenario_vi": "Mua vé tàu ở ga",
+    "category": "travel_and_transport",
+    "roles": [
+      "Traveler",
+      "Ticket Agent"
+    ],
+    "dialogue": [
+      {
+        "role": "Traveler",
+        "en": "Good morning. I'd like two tickets to Da Nang, please.",
+        "vi": "Chào chị. Cho tôi xin hai vé đi Đà Nẵng ạ."
+      },
+      {
+        "role": "Ticket Agent",
+        "en": "Sure. For today or tomorrow?",
+        "vi": "Vâng. Đi hôm nay hay ngày mai?"
+      },
+      {
+        "role": "Traveler",
+        "en": "Tomorrow morning. Is there a train at 8 AM?",
+        "vi": "Sáng mai. Có chuyến tàu lúc 8 giờ sáng không?"
+      },
+      {
+        "role": "Ticket Agent",
+        "en": "Yes, the SE2 departs at 8:15 and arrives at 2 PM.",
+        "vi": "Có, tàu SE2 khởi hành lúc 8:15 và đến lúc 2 giờ chiều."
+      },
+      {
+        "role": "Traveler",
+        "en": "Great. How much are the tickets?",
+        "vi": "Tuyệt. Vé bao nhiêu tiền?"
+      },
+      {
+        "role": "Ticket Agent",
+        "en": "300,000 dong each, so 600,000 in total.",
+        "vi": "Mỗi vé 300,000 đồng, tổng cộng 600,000 đồng."
+      },
+      {
+        "role": "Traveler",
+        "en": "Okay, I'll take two. Here you go.",
+        "vi": "Được, tôi lấy hai vé. Đây ạ."
+      },
+      {
+        "role": "Ticket Agent",
+        "en": "Thank you. Here are your tickets. Have a nice trip!",
+        "vi": "Cảm ơn. Vé của bạn đây. Chúc bạn chuyến đi vui vẻ!"
+      }
+    ],
+    "key_phrases": [
+      "I'd like two tickets to...",
+      "Is there a train at...?",
+      "How much are the tickets?"
+    ],
+    "key_vocab": [
+      "ticket",
+      "train",
+      "depart",
+      "arrive",
+      "total"
+    ],
+    "grammar_points": [
+      "Simple present for schedules",
+      "would like + noun"
+    ],
+    "level": "a2"
+  },
+  {
+    "scenario": "Describing symptoms at a pharmacy",
+    "scenario_vi": "Mô tả triệu chứng ở hiệu thuốc",
+    "category": "health_and_body",
+    "roles": [
+      "Customer",
+      "Pharmacist"
+    ],
+    "dialogue": [
+      {
+        "role": "Customer",
+        "en": "Hi, I don't feel well. I have a headache and a sore throat.",
+        "vi": "Chào anh, tôi thấy không khỏe. Tôi bị đau đầu và đau họng."
+      },
+      {
+        "role": "Pharmacist",
+        "en": "I see. Did you take anything for it yet?",
+        "vi": "Tôi hiểu rồi. Anh đã uống thuốc gì chưa?"
+      },
+      {
+        "role": "Customer",
+        "en": "No, I just started feeling sick yesterday.",
+        "vi": "Chưa, tôi mới thấy bệnh từ hôm qua."
+      },
+      {
+        "role": "Pharmacist",
+        "en": "You should rest and drink warm water. I recommend this medicine.",
+        "vi": "Anh nên nghỉ ngơi và uống nước ấm. Tôi khuyên dùng thuốc này."
+      },
+      {
+        "role": "Customer",
+        "en": "Okay, I'll take it. How many times a day?",
+        "vi": "Vâng, tôi sẽ uống. Mỗi ngày mấy lần ạ?"
+      },
+      {
+        "role": "Pharmacist",
+        "en": "Take one pill three times a day after meals.",
+        "vi": "Uống một viên ba lần một ngày sau bữa ăn."
+      },
+      {
+        "role": "Customer",
+        "en": "Thank you. I hope I'll feel better soon.",
+        "vi": "Cảm ơn anh. Hy vọng tôi sẽ sớm khỏe lại."
+      },
+      {
+        "role": "Pharmacist",
+        "en": "You're welcome. Get well soon!",
+        "vi": "Không có gì. Chúc anh mau khỏe!"
+      }
+    ],
+    "key_phrases": [
+      "I don't feel well",
+      "I have a headache",
+      "You should rest",
+      "How many times a day?"
+    ],
+    "key_vocab": [
+      "headache",
+      "sore throat",
+      "medicine",
+      "pill",
+      "rest"
+    ],
+    "grammar_points": [
+      "Present simple for symptoms",
+      "Should for advice",
+      "How many + noun"
+    ],
+    "level": "a2"
+  },
+  {
+    "scenario": "Talking about a past injury",
+    "scenario_vi": "Nói về chấn thương trong quá khứ",
+    "category": "health_and_body",
+    "roles": [
+      "Friend A",
+      "Friend B"
+    ],
+    "dialogue": [
+      {
+        "role": "Friend A",
+        "en": "Hey, I heard you hurt your leg last week. What happened?",
+        "vi": "Này, tôi nghe tuần trước bạn bị đau chân. Chuyện gì thế?"
+      },
+      {
+        "role": "Friend B",
+        "en": "Yeah, I fell down the stairs. It was so painful.",
+        "vi": "Ừ, tôi bị ngã cầu thang. Đau lắm."
+      },
+      {
+        "role": "Friend A",
+        "en": "Oh no! Did you go to the doctor?",
+        "vi": "Trời ơi! Bạn có đi bác sĩ không?"
+      },
+      {
+        "role": "Friend B",
+        "en": "Yes, I went to the hospital. The doctor said it was just a sprain.",
+        "vi": "Có, tôi đến bệnh viện. Bác sĩ bảo chỉ bị bong gân thôi."
+      },
+      {
+        "role": "Friend A",
+        "en": "That's good. Will you be okay for the football match next week?",
+        "vi": "Thế thì tốt. Bạn có ổn để đá bóng tuần sau không?"
+      },
+      {
+        "role": "Friend B",
+        "en": "I don't think so. I'll need to rest for a few more days.",
+        "vi": "Chắc không. Tôi cần nghỉ thêm vài ngày nữa."
+      },
+      {
+        "role": "Friend A",
+        "en": "Take care. I hope you recover soon.",
+        "vi": "Giữ gìn nhé. Mong bạn mau hồi phục."
+      },
+      {
+        "role": "Friend B",
+        "en": "Thanks! I'll be careful.",
+        "vi": "Cảm ơn! Tôi sẽ cẩn thận."
+      }
+    ],
+    "key_phrases": [
+      "hurt your leg",
+      "fell down the stairs",
+      "go to the doctor",
+      "take care"
+    ],
+    "key_vocab": [
+      "sprain",
+      "doctor",
+      "hospital",
+      "match",
+      "recover"
+    ],
+    "grammar_points": [
+      "Past simple for events",
+      "Will for future intentions"
+    ],
+    "level": "a2"
+  },
+  {
+    "scenario": "Talking about weekend plans",
+    "scenario_vi": "Nói về kế hoạch cuối tuần",
+    "category": "hobbies_and_leisure",
+    "roles": [
+      "Minh",
+      "Lan"
+    ],
+    "dialogue": [
+      {
+        "role": "Minh",
+        "en": "What did you do last weekend?",
+        "vi": "Cuối tuần trước bạn đã làm gì thế?"
+      },
+      {
+        "role": "Lan",
+        "en": "I went hiking with my family. It was great!",
+        "vi": "Mình đi leo núi với gia đình. Vui lắm!"
+      },
+      {
+        "role": "Minh",
+        "en": "That sounds fun! I stayed home and watched movies.",
+        "vi": "Nghe vui quá! Mình ở nhà xem phim."
+      },
+      {
+        "role": "Lan",
+        "en": "What about next weekend? Do you have any plans?",
+        "vi": "Thế cuối tuần sau thì sao? Bạn có kế hoạch gì chưa?"
+      },
+      {
+        "role": "Minh",
+        "en": "Yes, I will join a cooking class. I want to learn how to make pasta.",
+        "vi": "Có, mình sẽ tham gia một lớp học nấu ăn. Mình muốn học cách làm mì Ý."
+      },
+      {
+        "role": "Lan",
+        "en": "That's interesting! I will go to a photography exhibition.",
+        "vi": "Thú vị đấy! Mình sẽ đi xem triển lãm nhiếp ảnh."
+      },
+      {
+        "role": "Minh",
+        "en": "Maybe we can hang out on Sunday evening?",
+        "vi": "Có lẽ chúng ta có thể đi chơi tối Chủ nhật nhé?"
+      },
+      {
+        "role": "Lan",
+        "en": "Sure, sounds like a plan!",
+        "vi": "Được thôi, nghe hay đấy!"
+      }
+    ],
+    "key_phrases": [
+      "What did you do last weekend?",
+      "Do you have any plans?",
+      "sounds like a plan"
+    ],
+    "key_vocab": [
+      "hiking",
+      "cooking class",
+      "photography exhibition",
+      "hang out"
+    ],
+    "grammar_points": [
+      "Simple past (What did you do...?)",
+      "Future with 'will' (I will join...)",
+      "want to + verb"
+    ],
+    "level": "a2"
+  },
+  {
+    "scenario": "Discussing a new hobby",
+    "scenario_vi": "Thảo luận về sở thích mới",
+    "category": "hobbies_and_leisure",
+    "roles": [
+      "Anna",
+      "Tom"
+    ],
+    "dialogue": [
+      {
+        "role": "Anna",
+        "en": "I started painting last month. It's very relaxing.",
+        "vi": "Mình bắt đầu học vẽ tháng trước. Thư giãn lắm."
+      },
+      {
+        "role": "Tom",
+        "en": "Really? I tried painting once, but I wasn't very good.",
+        "vi": "Thật à? Mình thử vẽ một lần nhưng không giỏi lắm."
+      },
+      {
+        "role": "Anna",
+        "en": "You should try again. I took a class and learned a lot.",
+        "vi": "Bạn nên thử lại đi. Mình đã tham gia một lớp học và học được nhiều thứ."
+      },
+      {
+        "role": "Tom",
+        "en": "Maybe I will. I enjoy drawing, so painting might be fun.",
+        "vi": "Có lẽ mình sẽ thử. Mình thích vẽ nên vẽ tranh có thể cũng vui."
+      },
+      {
+        "role": "Anna",
+        "en": "Exactly! Did you draw something recently?",
+        "vi": "Chính xác! Gần đây bạn có vẽ gì không?"
+      },
+      {
+        "role": "Tom",
+        "en": "Yes, I drew a portrait of my dog last weekend.",
+        "vi": "Có, mình vẽ chân dung con chó của mình cuối tuần trước."
+      },
+      {
+        "role": "Anna",
+        "en": "That sounds cute! Can I see it?",
+        "vi": "Nghe dễ thương quá! Mình xem được không?"
+      },
+      {
+        "role": "Tom",
+        "en": "Sure, I'll bring it tomorrow.",
+        "vi": "Được chứ, mai mình sẽ mang đến."
+      }
+    ],
+    "key_phrases": [
+      "I started painting",
+      "You should try again",
+      "Can I see it?"
+    ],
+    "key_vocab": [
+      "painting",
+      "drawing",
+      "portrait",
+      "relaxing",
+      "class"
+    ],
+    "grammar_points": [
+      "Simple past (I started, I tried)",
+      "should + base verb (You should try)",
+      "Future with 'will' (I'll bring)"
+    ],
+    "level": "a2"
+  },
+  {
+    "scenario": "Getting a haircut at a salon",
+    "scenario_vi": "Cắt tóc ở tiệm",
+    "category": "services",
+    "roles": [
+      "Customer",
+      "Hair Stylist"
+    ],
+    "dialogue": [
+      {
+        "role": "Hair Stylist",
+        "en": "Hi there! What can I do for you today?",
+        "vi": "Chào bạn! Hôm nay tôi có thể giúp gì cho bạn?"
+      },
+      {
+        "role": "Customer",
+        "en": "I'd like a haircut, please. Just a trim.",
+        "vi": "Tôi muốn cắt tóc, làm ơn. Chỉ cắt tỉa thôi."
+      },
+      {
+        "role": "Hair Stylist",
+        "en": "Sure. How short would you like it?",
+        "vi": "Được rồi. Bạn muốn cắt ngắn bao nhiêu?"
+      },
+      {
+        "role": "Customer",
+        "en": "About two inches off, please.",
+        "vi": "Cắt bỏ khoảng 5 cm ạ."
+      },
+      {
+        "role": "Hair Stylist",
+        "en": "Okay. Did you wash your hair this morning?",
+        "vi": "Được rồi. Sáng nay bạn đã gội đầu chưa?"
+      },
+      {
+        "role": "Customer",
+        "en": "Yes, I did.",
+        "vi": "Rồi ạ."
+      },
+      {
+        "role": "Hair Stylist",
+        "en": "Great. I'll start now. It will take about 20 minutes.",
+        "vi": "Tuyệt. Tôi sẽ bắt đầu ngay. Sẽ mất khoảng 20 phút."
+      },
+      {
+        "role": "Customer",
+        "en": "Thank you.",
+        "vi": "Cảm ơn."
+      },
+      {
+        "role": "Hair Stylist",
+        "en": "All done! How does it look?",
+        "vi": "Xong rồi! Trông thế nào?"
+      },
+      {
+        "role": "Customer",
+        "en": "It looks great! How much do I owe you?",
+        "vi": "Đẹp lắm! Tôi phải trả bao nhiêu?"
+      }
+    ],
+    "key_phrases": [
+      "What can I do for you?",
+      "I'd like a haircut",
+      "How much do I owe you?"
+    ],
+    "key_vocab": [
+      "haircut",
+      "trim",
+      "inches",
+      "salon"
+    ],
+    "grammar_points": [
+      "would like + noun",
+      "How much...?",
+      "Simple past tense"
+    ],
+    "level": "a2"
+  },
+  {
+    "scenario": "Booking a hotel room over the phone",
+    "scenario_vi": "Đặt phòng khách sạn qua điện thoại",
+    "category": "services",
+    "roles": [
+      "Guest",
+      "Receptionist"
+    ],
+    "dialogue": [
+      {
+        "role": "Receptionist",
+        "en": "Hello, Royal Hotel. How can I help you?",
+        "vi": "Xin chào, Khách sạn Royal. Tôi có thể giúp gì cho bạn?"
+      },
+      {
+        "role": "Guest",
+        "en": "Hi, I'd like to book a room for two nights.",
+        "vi": "Chào, tôi muốn đặt phòng cho hai đêm."
+      },
+      {
+        "role": "Receptionist",
+        "en": "Sure. When will you be arriving?",
+        "vi": "Được ạ. Quý khách sẽ đến vào lúc nào?"
+      },
+      {
+        "role": "Guest",
+        "en": "Next Monday, the 15th.",
+        "vi": "Thứ Hai tuần sau, ngày 15."
+      },
+      {
+        "role": "Receptionist",
+        "en": "And how many guests will there be?",
+        "vi": "Và có bao nhiêu khách ạ?"
+      },
+      {
+        "role": "Guest",
+        "en": "Just one person.",
+        "vi": "Chỉ một người thôi."
+      },
+      {
+        "role": "Receptionist",
+        "en": "Okay. We have a single room available. It's $80 per night.",
+        "vi": "Được ạ. Chúng tôi có phòng đơn. Giá 80 đô một đêm."
+      },
+      {
+        "role": "Guest",
+        "en": "That sounds good. I'll take it.",
+        "vi": "Nghe ổn đấy. Tôi sẽ lấy phòng đó."
+      },
+      {
+        "role": "Receptionist",
+        "en": "Great. Could I have your name and phone number, please?",
+        "vi": "Tuyệt vời. Quý khách vui lòng cho tôi tên và số điện thoại?"
+      },
+      {
+        "role": "Guest",
+        "en": "Sure. My name is Minh and my number is 0901234567.",
+        "vi": "Vâng. Tôi là Minh, số điện thoại là 0901234567."
+      }
+    ],
+    "key_phrases": [
+      "I'd like to book a room",
+      "How many guests?",
+      "I'll take it"
+    ],
+    "key_vocab": [
+      "book",
+      "room",
+      "arriving",
+      "single room",
+      "per night"
+    ],
+    "grammar_points": [
+      "will + verb (future)",
+      "How many...?",
+      "Could I have...?"
+    ],
+    "level": "a2"
+  },
+  {
+    "scenario": "Job interview for a part-time job",
+    "scenario_vi": "Phỏng vấn xin việc bán thời gian",
+    "category": "work_and_jobs",
+    "roles": [
+      "Interviewer",
+      "Applicant"
+    ],
+    "dialogue": [
+      {
+        "role": "Interviewer",
+        "en": "Good morning. Have you worked before?",
+        "vi": "Chào buổi sáng. Bạn đã từng đi làm chưa?"
+      },
+      {
+        "role": "Applicant",
+        "en": "Yes, I worked as a cashier last summer.",
+        "vi": "Dạ có, mùa hè năm ngoái em làm thu ngân."
+      },
+      {
+        "role": "Interviewer",
+        "en": "What did you do there?",
+        "vi": "Bạn đã làm gì ở đó?"
+      },
+      {
+        "role": "Applicant",
+        "en": "I helped customers and handled money.",
+        "vi": "Em giúp khách hàng và xử lý tiền."
+      },
+      {
+        "role": "Interviewer",
+        "en": "Will you work on weekends?",
+        "vi": "Bạn sẽ làm việc vào cuối tuần chứ?"
+      },
+      {
+        "role": "Applicant",
+        "en": "Yes, I can work on Saturdays.",
+        "vi": "Dạ, em có thể làm thứ Bảy."
+      },
+      {
+        "role": "Interviewer",
+        "en": "Great. We'll call you next week.",
+        "vi": "Tốt. Chúng tôi sẽ gọi bạn vào tuần sau."
+      },
+      {
+        "role": "Applicant",
+        "en": "Thank you. I look forward to it.",
+        "vi": "Cảm ơn anh/chị. Em rất mong chờ."
+      }
+    ],
+    "key_phrases": [
+      "Have you worked before?",
+      "I worked as...",
+      "I can work on..."
+    ],
+    "key_vocab": [
+      "cashier",
+      "customer",
+      "handle",
+      "weekend",
+      "call"
+    ],
+    "grammar_points": [
+      "Simple past (worked, did)",
+      "Future (will call)",
+      "Modal 'can' for ability"
+    ],
+    "level": "a2"
+  },
+  {
+    "scenario": "Discussing a new project with a colleague",
+    "scenario_vi": "Thảo luận về dự án mới với đồng nghiệp",
+    "category": "work_and_jobs",
+    "roles": [
+      "Employee A",
+      "Employee B"
+    ],
+    "dialogue": [
+      {
+        "role": "Employee A",
+        "en": "Did you finish the report?",
+        "vi": "Bạn đã hoàn thành báo cáo chưa?"
+      },
+      {
+        "role": "Employee B",
+        "en": "Not yet. I will finish it tomorrow.",
+        "vi": "Chưa. Mai tôi sẽ làm xong."
+      },
+      {
+        "role": "Employee A",
+        "en": "The boss wants it by Friday.",
+        "vi": "Sếp muốn có nó trước thứ Sáu."
+      },
+      {
+        "role": "Employee B",
+        "en": "No problem. I worked on it last night.",
+        "vi": "Không vấn đề. Tối qua tôi đã làm nó."
+      },
+      {
+        "role": "Employee A",
+        "en": "What about the new project? Did you start?",
+        "vi": "Còn dự án mới thì sao? Bạn bắt đầu chưa?"
+      },
+      {
+        "role": "Employee B",
+        "en": "We will start next Monday.",
+        "vi": "Chúng ta sẽ bắt đầu vào thứ Hai tuần sau."
+      },
+      {
+        "role": "Employee A",
+        "en": "Great. I will help you with the report.",
+        "vi": "Tuyệt. Tôi sẽ giúp bạn làm báo cáo."
+      },
+      {
+        "role": "Employee B",
+        "en": "Thanks! That will be a big help.",
+        "vi": "Cảm ơn! Điều đó sẽ giúp ích nhiều lắm."
+      }
+    ],
+    "key_phrases": [
+      "Did you finish...?",
+      "I will finish it...",
+      "What about...?"
+    ],
+    "key_vocab": [
+      "report",
+      "project",
+      "boss",
+      "start",
+      "help"
+    ],
+    "grammar_points": [
+      "Simple past (did, finished, worked)",
+      "Simple future (will finish, will start)",
+      "Present perfect? (not yet - implied)"
+    ],
+    "level": "a2"
+  },
+  {
+    "scenario": "Asking for help with a smartphone",
+    "scenario_vi": "Nhờ giúp đỡ về điện thoại thông minh",
+    "category": "communication_and_technology",
+    "roles": [
+      "Student",
+      "Friend"
+    ],
+    "dialogue": [
+      {
+        "role": "Student",
+        "en": "Hey, can you help me with my phone? I couldn't send a text yesterday.",
+        "vi": "Này, cậu giúp tớ với cái điện thoại được không? Hôm qua tớ không gửi được tin nhắn."
+      },
+      {
+        "role": "Friend",
+        "en": "Sure! What happened? Did you check your signal?",
+        "vi": "Được chứ! Chuyện gì thế? Cậu đã kiểm tra sóng chưa?"
+      },
+      {
+        "role": "Student",
+        "en": "Yes, I had full bars. But the message said 'Not delivered'.",
+        "vi": "Rồi, sóng đầy mà. Nhưng tin nhắn báo 'Chưa gửi được'."
+      },
+      {
+        "role": "Friend",
+        "en": "Maybe your mobile data was off. Let me see.",
+        "vi": "Có thể cậu tắt dữ liệu di động rồi. Để tớ xem."
+      },
+      {
+        "role": "Student",
+        "en": "Oh, I think I turned it off to save battery.",
+        "vi": "À, tớ nghĩ tớ đã tắt để tiết kiệm pin."
+      },
+      {
+        "role": "Friend",
+        "en": "That's it! Turn it on and try again. It will work now.",
+        "vi": "Đúng rồi đấy! Bật lên và thử lại đi. Bây giờ sẽ gửi được."
+      },
+      {
+        "role": "Student",
+        "en": "Great, it worked! Thanks a lot.",
+        "vi": "Tuyệt, gửi được rồi! Cảm ơn cậu nhiều."
+      }
+    ],
+    "key_phrases": [
+      "can you help me with",
+      "I couldn't",
+      "turn it on",
+      "it worked"
+    ],
+    "key_vocab": [
+      "text",
+      "signal",
+      "bars",
+      "mobile data",
+      "battery",
+      "delivered"
+    ],
+    "grammar_points": [
+      "Simple past for inability (couldn't)",
+      "Simple future for prediction (will work)",
+      "Imperative for instructions (Turn it on)"
+    ],
+    "level": "a2"
+  },
+  {
+    "scenario": "Setting up a video call with a friend",
+    "scenario_vi": "Cài đặt cuộc gọi video với bạn",
+    "category": "communication_and_technology",
+    "roles": [
+      "User",
+      "Friend"
+    ],
+    "dialogue": [
+      {
+        "role": "User",
+        "en": "Hi! I will call you on Zoom tomorrow. Is that okay?",
+        "vi": "Chào! Ngày mai tớ sẽ gọi cho cậu qua Zoom nhé. Được không?"
+      },
+      {
+        "role": "Friend",
+        "en": "Sure! But I have never used Zoom before. How does it work?",
+        "vi": "Được chứ! Nhưng tớ chưa dùng Zoom bao giờ. Nó hoạt động thế nào?"
+      },
+      {
+        "role": "User",
+        "en": "It's easy. First, download the app. Then I will send you a link.",
+        "vi": "Dễ lắm. Đầu tiên, tải ứng dụng về. Sau đó tớ sẽ gửi cậu một đường link."
+      },
+      {
+        "role": "Friend",
+        "en": "Okay, I downloaded it. What's next?",
+        "vi": "Okay, tớ tải xong rồi. Tiếp theo là gì?"
+      },
+      {
+        "role": "User",
+        "en": "Click the link I sent. It will open the meeting. Then turn on your camera and microphone.",
+        "vi": "Nhấn vào link tớ gửi. Nó sẽ mở cuộc họp. Sau đó bật camera và mic lên."
+      },
+      {
+        "role": "Friend",
+        "en": "Got it. I will try that. See you tomorrow at 3 PM!",
+        "vi": "Rõ rồi. Tớ sẽ thử. Hẹn gặp cậu 3 giờ chiều mai nhé!"
+      },
+      {
+        "role": "User",
+        "en": "Great! Let me know if you have any problems. Bye!",
+        "vi": "Tuyệt! Báo tớ nếu cậu gặp vấn đề gì nhé. Tạm biệt!"
+      }
+    ],
+    "key_phrases": [
+      "I will call you",
+      "download the app",
+      "send you a link",
+      "turn on your camera",
+      "let me know"
+    ],
+    "key_vocab": [
+      "Zoom",
+      "app",
+      "link",
+      "meeting",
+      "camera",
+      "microphone"
+    ],
+    "grammar_points": [
+      "Simple future with 'will' (I will call, you will see)",
+      "Sequence words (first, then, next)",
+      "Imperatives for instructions (download, click, turn on)"
+    ],
+    "level": "a2"
+  }
+]

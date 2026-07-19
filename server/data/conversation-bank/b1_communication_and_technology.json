@@ -1,0 +1,204 @@
+[
+  {
+    "scenario": "Dealing with a poor internet connection",
+    "scenario_vi": "Xử lý kết nối internet chập chờn",
+    "category": "communication_and_technology",
+    "roles": [
+      "Employee",
+      "IT Support"
+    ],
+    "dialogue": [
+      {
+        "role": "Employee",
+        "en": "Hey, my internet keeps dropping. I can't get any work done.",
+        "vi": "Này, mạng của tôi cứ bị ngắt. Chẳng làm được việc gì cả."
+      },
+      {
+        "role": "IT Support",
+        "en": "Hmm, have you tried restarting your router?",
+        "vi": "Hmm, anh đã thử khởi động lại router chưa?"
+      },
+      {
+        "role": "Employee",
+        "en": "Yeah, I did that twice. Still the same issue.",
+        "vi": "Rồi, tôi làm hai lần rồi. Vẫn y như cũ."
+      },
+      {
+        "role": "IT Support",
+        "en": "Okay, let me check the connection from here. Can you run a speed test?",
+        "vi": "Được rồi, để tôi kiểm tra kết nối từ đây. Anh chạy thử speed test được không?"
+      },
+      {
+        "role": "Employee",
+        "en": "Sure, one moment. It says 5 Mbps download, but it's all over the place.",
+        "vi": "Được, chờ chút. Nó báo tải xuống 5 Mbps, nhưng lúc lên lúc xuống."
+      },
+      {
+        "role": "IT Support",
+        "en": "That's pretty slow. I'll escalate this to the provider. In the meantime, try using a wired connection.",
+        "vi": "Chậm quá. Tôi sẽ báo lên nhà cung cấp. Trong lúc đó, anh thử dùng dây mạng xem."
+      },
+      {
+        "role": "Employee",
+        "en": "Good idea. Thanks for the help!",
+        "vi": "Ý hay đấy. Cảm ơn anh đã giúp!"
+      },
+      {
+        "role": "IT Support",
+        "en": "No problem. I'll send you an update once I hear back.",
+        "vi": "Không có gì. Khi có phản hồi tôi sẽ báo anh."
+      }
+    ],
+    "key_phrases": [
+      "keeps dropping",
+      "run a speed test",
+      "all over the place"
+    ],
+    "key_vocab": [
+      "router",
+      "speed test",
+      "provider",
+      "wired connection"
+    ],
+    "grammar_points": [
+      "keeps + verb-ing",
+      "have you tried + verb-ing"
+    ],
+    "level": "b1"
+  },
+  {
+    "scenario": "Choosing a new smartphone with a friend",
+    "scenario_vi": "Chọn mua điện thoại mới cùng bạn",
+    "category": "communication_and_technology",
+    "roles": [
+      "Friend A",
+      "Friend B"
+    ],
+    "dialogue": [
+      {
+        "role": "Friend A",
+        "en": "I'm thinking of upgrading my phone. Any recommendations?",
+        "vi": "Tôi đang tính lên đời điện thoại. Có gợi ý gì không?"
+      },
+      {
+        "role": "Friend B",
+        "en": "Well, it depends on what you need. Do you take a lot of photos?",
+        "vi": "Ồ, tùy vào nhu cầu của bạn. Bạn có hay chụp ảnh không?"
+      },
+      {
+        "role": "Friend A",
+        "en": "Yeah, I love photography. And I need good battery life.",
+        "vi": "Có, tôi thích chụp ảnh. Và tôi cần pin trâu."
+      },
+      {
+        "role": "Friend B",
+        "en": "Then you should check out the latest Pixel. The camera is amazing.",
+        "vi": "Vậy bạn nên xem Pixel mới nhất. Camera tuyệt vời."
+      },
+      {
+        "role": "Friend A",
+        "en": "But I've heard the battery isn't great. What about the Samsung?",
+        "vi": "Nhưng tôi nghe nói pin không tốt lắm. Còn Samsung thì sao?"
+      },
+      {
+        "role": "Friend B",
+        "en": "Samsung has a great display and battery, but the camera is a bit behind.",
+        "vi": "Samsung màn hình đẹp và pin tốt, nhưng camera hơi kém hơn."
+      },
+      {
+        "role": "Friend A",
+        "en": "Hmm, tough choice. I'll watch some reviews and decide.",
+        "vi": "Hừm, khó chọn quá. Tôi sẽ xem vài bài đánh giá rồi quyết định."
+      },
+      {
+        "role": "Friend B",
+        "en": "Good plan. Let me know what you pick!",
+        "vi": "Kế hoạch hay. Cho tôi biết bạn chọn cái nào nhé!"
+      }
+    ],
+    "key_phrases": [
+      "upgrading my phone",
+      "it depends on",
+      "check out",
+      "a bit behind"
+    ],
+    "key_vocab": [
+      "photography",
+      "battery life",
+      "display",
+      "reviews"
+    ],
+    "grammar_points": [
+      "should + base verb",
+      "what about...?"
+    ],
+    "level": "b1"
+  },
+  {
+    "scenario": "Troubleshooting a video call issue",
+    "scenario_vi": "Xử lý sự cố cuộc gọi video",
+    "category": "communication_and_technology",
+    "roles": [
+      "Student",
+      "Teacher"
+    ],
+    "dialogue": [
+      {
+        "role": "Student",
+        "en": "Hi, I'm having trouble joining the Zoom meeting. It says 'connection error'.",
+        "vi": "Chào thầy, em không vào được phòng Zoom. Nó báo 'lỗi kết nối'."
+      },
+      {
+        "role": "Teacher",
+        "en": "Let me check. Are you using the latest version of Zoom?",
+        "vi": "Để thầy xem. Em có dùng phiên bản Zoom mới nhất không?"
+      },
+      {
+        "role": "Student",
+        "en": "I think so. I updated it last week.",
+        "vi": "Em nghĩ là có. Em cập nhật tuần trước rồi."
+      },
+      {
+        "role": "Teacher",
+        "en": "Okay, try closing the app and reopening it. Sometimes that helps.",
+        "vi": "Được rồi, em thử tắt ứng dụng và mở lại xem. Đôi khi cách đó có tác dụng."
+      },
+      {
+        "role": "Student",
+        "en": "Alright, I'll give it a shot. Hold on... It worked! Thanks!",
+        "vi": "Vâng, em thử xem. Chờ chút... Được rồi! Cảm ơn thầy!"
+      },
+      {
+        "role": "Teacher",
+        "en": "Great! I'm glad. Now you can join the class.",
+        "vi": "Tốt! Thầy mừng rồi. Bây giờ em vào lớp được rồi."
+      },
+      {
+        "role": "Student",
+        "en": "Sorry for the delay. I'll be right there.",
+        "vi": "Xin lỗi thầy vì chậm trễ. Em vào ngay đây."
+      },
+      {
+        "role": "Teacher",
+        "en": "No worries. See you on the call.",
+        "vi": "Không sao. Gặp em trong cuộc gọi."
+      }
+    ],
+    "key_phrases": [
+      "having trouble",
+      "give it a shot",
+      "I'll be right there"
+    ],
+    "key_vocab": [
+      "connection error",
+      "version",
+      "app",
+      "reopening"
+    ],
+    "grammar_points": [
+      "try + verb-ing",
+      "sometimes + simple present"
+    ],
+    "level": "b1"
+  }
+]

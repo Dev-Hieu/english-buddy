@@ -1,0 +1,143 @@
+[
+  {
+    "scenario": "Debating gentrification in a neighborhood meeting",
+    "scenario_vi": "Tranh luận về quá trình đô thị hóa khu dân cư tại cuộc họp khu phố",
+    "category": "society_and_community",
+    "roles": [
+      "Long-time resident",
+      "New resident"
+    ],
+    "dialogue": [
+      {
+        "role": "Long-time resident",
+        "en": "I've lived here for 30 years, and these new developments are pricing us out.",
+        "vi": "Tôi sống ở đây 30 năm rồi, mấy dự án mới này đang đẩy giá đất lên cao quá."
+      },
+      {
+        "role": "New resident",
+        "en": "I get your frustration, but the new cafes and shops have actually made the area safer.",
+        "vi": "Tôi hiểu sự bức xúc của anh, nhưng mấy quán cà phê và cửa hàng mới thực sự làm khu này an toàn hơn."
+      },
+      {
+        "role": "Long-time resident",
+        "en": "Safer for whom? My neighbors can't even afford the rent anymore.",
+        "vi": "An toàn cho ai? Hàng xóm của tôi giờ không còn đủ tiền thuê nhà nữa."
+      },
+      {
+        "role": "New resident",
+        "en": "That's a tough one. But if we don't attract investment, the area will just crumble.",
+        "vi": "C��i đó khó nói. Nhưng nếu không thu hút đầu tư, khu này sẽ xuống cấp mất."
+      },
+      {
+        "role": "Long-time resident",
+        "en": "Investment? It's just wealthy outsiders buying up properties. We need affordable housing policies.",
+        "vi": "Đầu tư gì? Toàn người ngoài giàu có mua nhà. Chúng tôi cần chính sách nhà ở giá rẻ."
+      },
+      {
+        "role": "New resident",
+        "en": "I agree we need balance, but you can't stop progress. It's a double-edged sword.",
+        "vi": "Tôi đồng ý là cần cân bằng, nhưng không thể ngăn tiến bộ. Nó có hai mặt mà."
+      },
+      {
+        "role": "Long-time resident",
+        "en": "Progress shouldn't mean pushing people out. The community's soul is at stake.",
+        "vi": "Tiến bộ không có nghĩa là đẩy người ta đi. Linh hồn của cộng đồng đang bị đe dọa."
+      },
+      {
+        "role": "New resident",
+        "en": "I hear you. Let's work on a plan that includes both development and protections for locals.",
+        "vi": "Tôi nghe anh rồi. Hãy cùng lên kế hoạch vừa phát triển vừa bảo vệ người dân địa phương."
+      }
+    ],
+    "key_phrases": [
+      "pricing us out",
+      "double-edged sword",
+      "I hear you",
+      "community's soul is at stake"
+    ],
+    "key_vocab": [
+      "gentrification",
+      "affordable housing",
+      "investment",
+      "development",
+      "displacement"
+    ],
+    "grammar_points": [
+      "present perfect continuous (I've been living)",
+      "conditional sentences (if we don't...)",
+      "modal verbs for necessity (need to)"
+    ],
+    "level": "c1"
+  },
+  {
+    "scenario": "Discussing volunteer work at a homeless shelter",
+    "scenario_vi": "Thảo luận về công việc tình nguyện tại trại tạm trú cho người vô gia cư",
+    "category": "society_and_community",
+    "roles": [
+      "Volunteer coordinator",
+      "Potential volunteer"
+    ],
+    "dialogue": [
+      {
+        "role": "Volunteer coordinator",
+        "en": "Thanks for coming in. We're swamped right now, especially with the cold snap.",
+        "vi": "Cảm ơn bạn đã đến. Bọn mình đang quá tải, nhất là trong đợt rét đậm này."
+      },
+      {
+        "role": "Potential volunteer",
+        "en": "I'm happy to help. What's the biggest need right now?",
+        "vi": "Mình rất vui được giúp. Hiện tại cần gì nhất?"
+      },
+      {
+        "role": "Volunteer coordinator",
+        "en": "We're short on blankets and warm clothes. Also, we could use extra hands in the kitchen.",
+        "vi": "Chúng mình thiếu chăn và quần áo ấm. Ngoài ra, cần thêm người phụ bếp."
+      },
+      {
+        "role": "Potential volunteer",
+        "en": "I can bring some donations from my neighborhood. And I'm a decent cook, actually.",
+        "vi": "Mình có thể quyên góp từ khu nhà mình. Thực ra mình nấu ăn cũng tạm."
+      },
+      {
+        "role": "Volunteer coordinator",
+        "en": "That would be amazing. We have a real sense of community here — everyone pitches in.",
+        "vi": "Tuyệt quá. Ở đây tinh thần cộng đồng rất cao — ai cũng góp sức."
+      },
+      {
+        "role": "Potential volunteer",
+        "en": "I've always wanted to give back. It breaks my heart seeing people on the streets in this weather.",
+        "vi": "Mình luôn muốn đền đáp. Nhìn người ta ngoài đường trong thời tiết này xót xa quá."
+      },
+      {
+        "role": "Volunteer coordinator",
+        "en": "Yeah, it's tough. But every little bit helps. We're all in the same boat.",
+        "vi": "Ừ, khó khăn lắm. Nhưng mỗi chút đều có ích. Tất cả chúng ta đều cùng cảnh ngộ."
+      },
+      {
+        "role": "Potential volunteer",
+        "en": "Count me in. Just tell me when and where.",
+        "vi": "Tính mình vào nhé. Chỉ cần bảo mình khi nào và ở đâu."
+      }
+    ],
+    "key_phrases": [
+      "swamped right now",
+      "could use extra hands",
+      "pitches in",
+      "all in the same boat",
+      "count me in"
+    ],
+    "key_vocab": [
+      "donations",
+      "shelter",
+      "volunteer",
+      "community",
+      "cold snap"
+    ],
+    "grammar_points": [
+      "present continuous for current situation (we're swamped)",
+      "modal verbs for offers (could use)",
+      "present perfect for experience (I've always wanted)"
+    ],
+    "level": "c1"
+  }
+]

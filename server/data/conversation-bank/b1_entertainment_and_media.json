@@ -1,0 +1,184 @@
+[
+  {
+    "scenario": "Discussing a movie at a coffee shop",
+    "scenario_vi": "Bàn luận về một bộ phim tại quán cà phê",
+    "category": "entertainment_and_media",
+    "roles": [
+      "Mai",
+      "Lan"
+    ],
+    "dialogue": [
+      {
+        "role": "Mai",
+        "en": "Have you seen the new sci-fi movie yet?",
+        "vi": "Bạn xem bộ phim khoa học viễn tưởng mới chưa?"
+      },
+      {
+        "role": "Lan",
+        "en": "Not yet, but I heard it's a real blockbuster.",
+        "vi": "Chưa, nhưng mình nghe nói nó là bom tấn đấy."
+      },
+      {
+        "role": "Mai",
+        "en": "It is! The special effects blew me away.",
+        "vi": "Đúng vậy! Hiệu ứng đặc biệt làm mình choáng ngợp."
+      },
+      {
+        "role": "Lan",
+        "en": "I'm not a big fan of sci-fi, but the trailer looked cool.",
+        "vi": "Mình không phải fan của sci-fi, nhưng trailer trông ngầu đấy."
+      },
+      {
+        "role": "Mai",
+        "en": "You should give it a shot. The plot is surprisingly deep.",
+        "vi": "Bạn nên thử xem. Cốt truyện sâu sắc bất ngờ."
+      },
+      {
+        "role": "Lan",
+        "en": "Alright, I'll check it out this weekend. Who's in the cast?",
+        "vi": "Được rồi, cu���i tuần này mình sẽ xem. Dàn diễn viên gồm những ai?"
+      },
+      {
+        "role": "Mai",
+        "en": "It stars that actor from the action series, you know, the one everyone's talking about.",
+        "vi": "Có diễn viên chính từ series hành động, bạn biết đấy, người mà ai cũng đang bàn tán."
+      },
+      {
+        "role": "Lan",
+        "en": "Oh, him! I thought he only does action flicks.",
+        "vi": "Ồ, anh ta! Mình tưởng anh chỉ đóng phim hành động thôi."
+      },
+      {
+        "role": "Mai",
+        "en": "He's versatile. This role is quite different.",
+        "vi": "Anh ấy đa dạng mà. Vai này khá khác biệt."
+      },
+      {
+        "role": "Lan",
+        "en": "I'm curious now. Maybe we can watch it together?",
+        "vi": "Giờ mình tò mò rồi. Hay mình xem cùng nhau nhé?"
+      },
+      {
+        "role": "Mai",
+        "en": "Sure! Let's catch a matinee show on Saturday.",
+        "vi": "Được! Mình đi suất chiếu sáng thứ Bảy nhé."
+      },
+      {
+        "role": "Lan",
+        "en": "Sounds like a plan. I'll text you the details.",
+        "vi": "Nghe có vẻ ổn. Mình sẽ nhắn tin chi tiết cho bạn."
+      }
+    ],
+    "key_phrases": [
+      "give it a shot",
+      "blew me away",
+      "check it out",
+      "sounds like a plan"
+    ],
+    "key_vocab": [
+      "blockbuster",
+      "special effects",
+      "trailer",
+      "plot",
+      "cast",
+      "matinee"
+    ],
+    "grammar_points": [
+      "Present perfect (Have you seen...?)",
+      "Future with 'will'",
+      "Comparative adjectives (deeper)"
+    ],
+    "level": "b1"
+  },
+  {
+    "scenario": "Talking about a new album with a friend",
+    "scenario_vi": "Nói chuyện về album mới với bạn",
+    "category": "entertainment_and_media",
+    "roles": [
+      "Nam",
+      "Huy"
+    ],
+    "dialogue": [
+      {
+        "role": "Nam",
+        "en": "Hey, have you listened to that new album by The Midnight yet?",
+        "vi": "Này, bạn đã nghe album mới của The Midnight chưa?"
+      },
+      {
+        "role": "Huy",
+        "en": "I've been meaning to, but I haven't gotten around to it.",
+        "vi": "Mình định nghe mà chưa có thời gian."
+      },
+      {
+        "role": "Nam",
+        "en": "You're missing out! It's totally different from their last one.",
+        "vi": "Bạn đang bỏ lỡ đấy! Nó hoàn toàn khác so với album trước."
+      },
+      {
+        "role": "Huy",
+        "en": "In what way? I thought they'd stick to their synthwave style.",
+        "vi": "Khác thế nào? Mình tưởng họ sẽ giữ nguyên phong cách synthwave."
+      },
+      {
+        "role": "Nam",
+        "en": "They've incorporated more live instruments this time. It's more organic.",
+        "vi": "Lần này họ kết hợp nhiều nhạc cụ trực tiếp hơn. Nghe tự nhiên hơn."
+      },
+      {
+        "role": "Huy",
+        "en": "Interesting. I'm a sucker for good melodies, so I'll give it a spin.",
+        "vi": "Thú vị đấy. Mình mê giai điệu hay, nên sẽ nghe thử."
+      },
+      {
+        "role": "Nam",
+        "en": "You won't regret it. The lead singer's voice is on point.",
+        "vi": "Bạn sẽ không hối hận đâu. Giọng ca chính rất chuẩn."
+      },
+      {
+        "role": "Huy",
+        "en": "I've been listening to a lot of indie bands lately. This might be up my alley.",
+        "vi": "Dạo này mình nghe nhiều ban nhạc indie. Có lẽ album này hợp gu mình."
+      },
+      {
+        "role": "Nam",
+        "en": "Definitely! Let me know what you think after you've heard it.",
+        "vi": "Chắc chắn rồi! Cho mình biết cảm nghĩ của bạn sau khi nghe nhé."
+      },
+      {
+        "role": "Huy",
+        "en": "Will do. Can you send me the link?",
+        "vi": "Được. Bạn gửi mình link nhé?"
+      },
+      {
+        "role": "Nam",
+        "en": "Sure, I'll text it to you right away.",
+        "vi": "Tất nhiên, mình sẽ nhắn ngay cho bạn."
+      },
+      {
+        "role": "Huy",
+        "en": "Thanks! I'm looking forward to it.",
+        "vi": "Cảm ơn! Mình rất mong chờ."
+      }
+    ],
+    "key_phrases": [
+      "missing out",
+      "give it a spin",
+      "up my alley",
+      "on point"
+    ],
+    "key_vocab": [
+      "album",
+      "synthwave",
+      "instruments",
+      "melodies",
+      "indie",
+      "lead singer"
+    ],
+    "grammar_points": [
+      "Present perfect continuous (have been meaning to)",
+      "Future with 'will'",
+      "Comparative structures (more organic)"
+    ],
+    "level": "b1"
+  }
+]

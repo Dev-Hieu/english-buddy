@@ -1,0 +1,189 @@
+[
+  {
+    "scenario": "Discussing remote work challenges",
+    "scenario_vi": "Thảo luận về thách thức làm việc từ xa",
+    "category": "communication_and_technology",
+    "roles": [
+      "Manager",
+      "Employee"
+    ],
+    "dialogue": [
+      {
+        "role": "Manager",
+        "en": "So, how are you finding the transition to remote work?",
+        "vi": "Vậy, anh thấy việc chuyển sang làm việc từ xa thế nào?"
+      },
+      {
+        "role": "Employee",
+        "en": "Honestly, it's been a mixed bag. I appreciate the flexibility, but I sometimes feel like I'm always on call.",
+        "vi": "Thành thật mà nói, có cả mặt tốt và xấu. Tôi đánh giá cao sự linh hoạt, nhưng đôi khi tôi cảm thấy như mình lúc nào cũng phải trực."
+      },
+      {
+        "role": "Manager",
+        "en": "I get that. Setting boundaries is crucial. Have you tried using the 'do not disturb' feature?",
+        "vi": "Tôi hiểu. Việc đặt ra ranh giới rất quan trọng. Anh đã thử dùng tính năng 'không làm phiền' chưa?"
+      },
+      {
+        "role": "Employee",
+        "en": "Yeah, but it's tricky when you're collaborating with colleagues in different time zones. Sometimes I have to be available during odd hours.",
+        "vi": "Có, nhưng nó khó khăn khi phải cộng tác với đồng nghiệp ở múi giờ khác. Đôi khi tôi phải có mặt vào những giờ lẻ."
+      },
+      {
+        "role": "Manager",
+        "en": "That's a valid concern. Maybe we could establish core overlapping hours for the whole team.",
+        "vi": "Đó là một mối lo chính đáng. Có lẽ chúng ta có thể thiết lập giờ làm việc chung cho cả nhóm."
+      },
+      {
+        "role": "Employee",
+        "en": "That would help a lot. Also, I've noticed that informal communication has dropped off—you know, those quick chats by the water cooler.",
+        "vi": "Điều đó sẽ giúp ích nhiều. Ngoài ra, tôi nhận thấy giao tiếp không chính thức đã giảm hẳn—anh biết đấy, những cuộc nói chuyện nhanh bên máy làm mát nước."
+      },
+      {
+        "role": "Manager",
+        "en": "Absolutely. We should make an effort to replicate that virtually. Maybe a dedicated Slack channel for non-work banter?",
+        "vi": "Chắc chắn rồi. Chúng ta nên cố gắng tái tạo điều đó qua mạng. Có thể một kênh Slack riêng cho chuyện phiếm ngoài công việc?"
+      },
+      {
+        "role": "Employee",
+        "en": "Great idea. I think that could boost team morale. By the way, have you heard about the new project management tool we're adopting?",
+        "vi": "Ý kiến hay đấy. Tôi nghĩ nó có thể nâng cao tinh thần đội nhóm. Nhân tiện, anh đã nghe về công cụ quản lý dự án mới chúng ta sắp dùng chưa?"
+      },
+      {
+        "role": "Manager",
+        "en": "Yes, I attended a demo yesterday. It seems promising, but there'll be a learning curve.",
+        "vi": "Rồi, tôi đã tham dự một buổi demo hôm qua. Nó có vẻ hứa hẹn, nhưng sẽ có một đường cong học tập."
+      },
+      {
+        "role": "Employee",
+        "en": "I'm a bit concerned about that. Could we schedule some training sessions before the rollout?",
+        "vi": "Tôi hơi lo về điều đó. Chúng ta có thể sắp xếp vài buổi đào tạo trước khi triển khai không?"
+      },
+      {
+        "role": "Manager",
+        "en": "Absolutely. I'll talk to HR about setting up workshops. Let's make sure everyone's on the same page.",
+        "vi": "Chắc chắn rồi. Tôi sẽ nói chuyện với phòng Nhân sự về việc tổ chức các hội thảo. Hãy đảm bảo mọi người đều hiểu rõ."
+      },
+      {
+        "role": "Employee",
+        "en": "Thanks, that would be fantastic.",
+        "vi": "Cảm ơn anh, điều đó thật tuyệt vời."
+      }
+    ],
+    "key_phrases": [
+      "mixed bag",
+      "always on call",
+      "setting boundaries",
+      "on the same page"
+    ],
+    "key_vocab": [
+      "transition",
+      "flexibility",
+      "collaborating",
+      "overlapping",
+      "morale",
+      "rollout"
+    ],
+    "grammar_points": [
+      "present perfect continuous (have been finding)",
+      "conditional (could we...?)",
+      "gerund as subject (Setting boundaries...)"
+    ],
+    "level": "b2"
+  },
+  {
+    "scenario": "Troubleshooting a video call issue",
+    "scenario_vi": "Khắc phục sự cố cuộc gọi video",
+    "category": "communication_and_technology",
+    "roles": [
+      "Colleague A",
+      "Colleague B"
+    ],
+    "dialogue": [
+      {
+        "role": "Colleague A",
+        "en": "Hey, sorry to bother you, but I'm having trouble with the video call for the client presentation.",
+        "vi": "Này, xin lỗi làm phiền bạn, nhưng tôi đang gặp rắc rối với cuộc gọi video cho buổi thuyết trình với khách hàng."
+      },
+      {
+        "role": "Colleague B",
+        "en": "No worries. What's going on? Can you hear me okay?",
+        "vi": "Không sao. Chuyện gì vậy? Bạn nghe tôi rõ không?"
+      },
+      {
+        "role": "Colleague A",
+        "en": "Your audio is fine, but my video keeps freezing. I've tried restarting the app, but it's still lagging.",
+        "vi": "Âm thanh của bạn ổn, nhưng video của tôi cứ bị đứng. Tôi đã thử khởi động lại ứng dụng, nhưng nó vẫn bị giật."
+      },
+      {
+        "role": "Colleague B",
+        "en": "Hmm, it might be your internet connection. Are you on Wi-Fi or Ethernet?",
+        "vi": "Hmm, có thể là do kết nối internet của bạn. Bạn đang dùng Wi-Fi hay Ethernet?"
+      },
+      {
+        "role": "Colleague A",
+        "en": "Wi-Fi. But I've never had issues before. The speed test shows decent bandwidth.",
+        "vi": "Wi-Fi. Nhưng trước giờ tôi chưa bao giờ gặp vấn đề. Kiểm tra tốc độ cho thấy băng thông ổn."
+      },
+      {
+        "role": "Colleague B",
+        "en": "Sometimes it's not just speed; latency and packet loss can cause freezing. Could you try switching to a wired connection?",
+        "vi": "Đôi khi không chỉ tốc độ; độ trễ và mất gói tin có thể gây đứng hình. Bạn có thể thử chuyển sang kết nối có dây không?"
+      },
+      {
+        "role": "Colleague A",
+        "en": "Good point. Let me plug in the Ethernet cable. ... Okay, it's connected. Should I restart the call?",
+        "vi": "Ý hay đấy. Để tôi cắm cáp Ethernet. ... Được rồi, đã kết nối. Tôi có nên khởi động lại cuộc gọi không?"
+      },
+      {
+        "role": "Colleague B",
+        "en": "Yes, and make sure no other apps are hogging the bandwidth—like large downloads or streaming.",
+        "vi": "Có, và hãy chắc chắn không có ứng dụng nào khác đang chiếm băng thông—như tải xuống lớn hay phát trực tuyến."
+      },
+      {
+        "role": "Colleague A",
+        "en": "Will do. I also noticed that the camera quality seems lower than usual. Could it be a setting?",
+        "vi": "Sẽ làm ngay. Tôi cũng nhận thấy chất lượng camera có vẻ thấp hơn thường lệ. Có thể do cài đặt không?"
+      },
+      {
+        "role": "Colleague B",
+        "en": "Possibly. Check if the video resolution is set to 'auto' or 'high definition'. Sometimes it defaults to a lower setting.",
+        "vi": "Có thể. Hãy kiểm tra xem độ phân giải video được đặt ở chế độ 'tự động' hay 'độ nét cao'. Đôi khi nó mặc định ở chế độ thấp hơn."
+      },
+      {
+        "role": "Colleague A",
+        "en": "Ah, that was it! It was on 'standard'. I've switched it to 'HD'. Let's see if that helps.",
+        "vi": "À, chính nó! Nó đang ở chế độ 'tiêu chuẩn'. Tôi đã chuyển sang 'HD'. Xem thử có đỡ không."
+      },
+      {
+        "role": "Colleague B",
+        "en": "Great. And if the problem persists, we could always fall back to audio-only and share the screen for the slides.",
+        "vi": "Tuyệt. Và nếu vấn đề vẫn tiếp diễn, chúng ta luôn có thể chuyển sang chỉ dùng âm thanh và chia sẻ màn hình cho các slide."
+      },
+      {
+        "role": "Colleague A",
+        "en": "True. Thanks for your help. I think it's working now. Let's test with a quick call?",
+        "vi": "Đúng vậy. Cảm ơn bạn đã giúp đỡ. Tôi nghĩ bây giờ nó hoạt động rồi. Chúng ta thử một cuộc gọi nhanh nhé?"
+      }
+    ],
+    "key_phrases": [
+      "trouble with",
+      "keep freezing",
+      "fall back to",
+      "hogging the bandwidth"
+    ],
+    "key_vocab": [
+      "lagging",
+      "latency",
+      "packet loss",
+      "resolution",
+      "bandwidth",
+      "defaults"
+    ],
+    "grammar_points": [
+      "present continuous for temporary issues (is freezing)",
+      "modal verbs for suggestions (could try, should restart)",
+      "conditional (if the problem persists)"
+    ],
+    "level": "b2"
+  }
+]

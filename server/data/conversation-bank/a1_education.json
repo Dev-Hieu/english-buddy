@@ -1,0 +1,119 @@
+[
+  {
+    "scenario": "Asking for help in class",
+    "scenario_vi": "Hỏi bài trong lớp",
+    "category": "education",
+    "roles": [
+      "Student",
+      "Teacher"
+    ],
+    "dialogue": [
+      {
+        "role": "Student",
+        "en": "Teacher, I have a question.",
+        "vi": "Thưa cô, em có một câu hỏi."
+      },
+      {
+        "role": "Teacher",
+        "en": "Yes, please go ahead.",
+        "vi": "Được, em cứ hỏi."
+      },
+      {
+        "role": "Student",
+        "en": "What is the answer to number five?",
+        "vi": "Đáp án câu số năm là gì ạ?"
+      },
+      {
+        "role": "Teacher",
+        "en": "Let me see. The answer is 'apple'.",
+        "vi": "Để cô xem. Đáp án là 'quả táo'."
+      },
+      {
+        "role": "Student",
+        "en": "Thank you, teacher!",
+        "vi": "Em cảm ơn cô!"
+      },
+      {
+        "role": "Teacher",
+        "en": "You're welcome. Any other questions?",
+        "vi": "Không có gì. Còn câu hỏi nào khác không?"
+      }
+    ],
+    "key_phrases": [
+      "I have a question",
+      "Please go ahead",
+      "Thank you, teacher",
+      "You're welcome"
+    ],
+    "key_vocab": [
+      "question",
+      "answer",
+      "teacher",
+      "student"
+    ],
+    "grammar_points": [
+      "Subject + have/has + noun",
+      "Imperative: Please + verb"
+    ],
+    "level": "a1"
+  },
+  {
+    "scenario": "Borrowing a book from the library",
+    "scenario_vi": "Mượn sách ở thư viện",
+    "category": "education",
+    "roles": [
+      "Student",
+      "Librarian"
+    ],
+    "dialogue": [
+      {
+        "role": "Student",
+        "en": "Excuse me, can I borrow this book?",
+        "vi": "Xin lỗi, em có thể mượn cuốn sách này không ạ?"
+      },
+      {
+        "role": "Librarian",
+        "en": "Sure. Do you have your library card?",
+        "vi": "Được chứ. Em có thẻ thư viện không?"
+      },
+      {
+        "role": "Student",
+        "en": "Yes, here it is.",
+        "vi": "Dạ, đây ạ."
+      },
+      {
+        "role": "Librarian",
+        "en": "Okay, you have it for two weeks.",
+        "vi": "Được rồi, em có thể mượn trong hai tuần."
+      },
+      {
+        "role": "Student",
+        "en": "Thank you very much.",
+        "vi": "Cảm ơn cô nhiều ạ."
+      },
+      {
+        "role": "Librarian",
+        "en": "You're welcome. Enjoy the book!",
+        "vi": "Không có gì. Đọc sách vui nhé!"
+      }
+    ],
+    "key_phrases": [
+      "Can I borrow...?",
+      "library card",
+      "for two weeks",
+      "Enjoy the book"
+    ],
+    "key_vocab": [
+      "borrow",
+      "book",
+      "library card",
+      "week"
+    ],
+    "grammar_points": [
+      "Can I + verb?",
+      "Here it is",
+      "for + time period"
+    ],
+    "level": "a1"
+  }
+]

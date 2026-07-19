@@ -1,0 +1,138 @@
+[
+  {
+    "scenario": "Asking about a past exam",
+    "scenario_vi": "Hỏi về kỳ thi đã qua",
+    "category": "education",
+    "roles": [
+      "Student",
+      "Friend"
+    ],
+    "dialogue": [
+      {
+        "role": "Student",
+        "en": "Hey, how was the math exam yesterday?",
+        "vi": "Này, bài kiểm tra toán hôm qua thế nào?"
+      },
+      {
+        "role": "Friend",
+        "en": "It was tough. I didn't finish all the questions.",
+        "vi": "Khó quá. Tớ không làm hết bài."
+      },
+      {
+        "role": "Student",
+        "en": "Really? I thought you studied a lot.",
+        "vi": "Thật à? Tớ tưởng cậu học nhiều lắm."
+      },
+      {
+        "role": "Friend",
+        "en": "I did study, but the last part was really hard.",
+        "vi": "Tớ có học, nhưng phần cuối khó quá."
+      },
+      {
+        "role": "Student",
+        "en": "What about the listening part?",
+        "vi": "Còn phần nghe thì sao?"
+      },
+      {
+        "role": "Friend",
+        "en": "That was okay. I think I got most of it right.",
+        "vi": "Phần đó ổn. Tớ nghĩ mình làm đúng hầu hết."
+      },
+      {
+        "role": "Student",
+        "en": "I hope you pass with a good grade.",
+        "vi": "Hy vọng cậu đạt điểm cao."
+      },
+      {
+        "role": "Friend",
+        "en": "Thanks. I'll find out next week.",
+        "vi": "Cảm ơn. Tuần sau tớ mới biết kết quả."
+      }
+    ],
+    "key_phrases": [
+      "How was the exam?",
+      "I didn't finish",
+      "I hope you pass",
+      "find out next week"
+    ],
+    "key_vocab": [
+      "exam",
+      "tough",
+      "questions",
+      "grade",
+      "listening"
+    ],
+    "grammar_points": [
+      "Simple past tense",
+      "Past negative: didn't + base verb"
+    ],
+    "level": "a2"
+  },
+  {
+    "scenario": "Talking about future classes",
+    "scenario_vi": "Nói về lớp học sắp tới",
+    "category": "education",
+    "roles": [
+      "Student",
+      "Student"
+    ],
+    "dialogue": [
+      {
+        "role": "Student",
+        "en": "Are you going to take the English class next semester?",
+        "vi": "Cậu có định học lớp tiếng Anh học kỳ tới không?"
+      },
+      {
+        "role": "Student",
+        "en": "Yes, I am. I want to improve my speaking.",
+        "vi": "Có, tớ định học. Tớ muốn cải thiện kỹ năng nói."
+      },
+      {
+        "role": "Student",
+        "en": "Me too. I heard the teacher is really good.",
+        "vi": "Tớ cũng vậy. Tớ nghe nói giáo viên dạy hay lắm."
+      },
+      {
+        "role": "Student",
+        "en": "That's great. I will study hard this time.",
+        "vi": "Tuyệt quá. Lần này tớ sẽ học chăm chỉ."
+      },
+      {
+        "role": "Student",
+        "en": "Will there be a lot of homework?",
+        "vi": "Sẽ có nhiều bài tập về nhà không?"
+      },
+      {
+        "role": "Student",
+        "en": "I think so, but it's okay. I need the practice.",
+        "vi": "Tớ nghĩ là có, nhưng không sao. Tớ cần luyện tập."
+      },
+      {
+        "role": "Student",
+        "en": "Maybe we can study together.",
+        "vi": "Có lẽ chúng ta có thể học cùng nhau."
+      },
+      {
+        "role": "Student",
+        "en": "Good idea! Let's do that.",
+        "vi": "Ý hay đấy! Cùng học nhé."
+      }
+    ],
+    "key_phrases": [
+      "Are you going to take",
+      "I will study hard",
+      "Maybe we can study together"
+    ],
+    "key_vocab": [
+      "semester",
+      "improve",
+      "homework",
+      "practice"
+    ],
+    "grammar_points": [
+      "Future with 'be going to'",
+      "Future with 'will'"
+    ],
+    "level": "a2"
+  }
+]

@@ -1,0 +1,180 @@
+[
+  {
+    "scenario": "Asking for directions to the supermarket",
+    "scenario_vi": "Hỏi đường đến siêu thị",
+    "category": "daily_life",
+    "roles": [
+      "Tourist",
+      "Local"
+    ],
+    "dialogue": [
+      {
+        "role": "Tourist",
+        "en": "Excuse me, is there a supermarket near here?",
+        "vi": "Xin lỗi, có siêu thị nào gần đây không ạ?"
+      },
+      {
+        "role": "Local",
+        "en": "Yes, there's one on Green Street. Just go straight and turn left.",
+        "vi": "Có, có một cái ở phố Green. Cứ đi thẳng rồi rẽ trái."
+      },
+      {
+        "role": "Tourist",
+        "en": "How far is it from here?",
+        "vi": "Cách đây bao xa ạ?"
+      },
+      {
+        "role": "Local",
+        "en": "It's about a 10-minute walk. You can't miss it.",
+        "vi": "Đi bộ khoảng 10 phút. Anh sẽ thấy ngay."
+      },
+      {
+        "role": "Tourist",
+        "en": "Thank you very much.",
+        "vi": "Cảm ơn anh nhiều."
+      },
+      {
+        "role": "Local",
+        "en": "You're welcome. Have a nice day!",
+        "vi": "Không có gì. Chúc anh một ngày tốt lành!"
+      }
+    ],
+    "key_phrases": [
+      "Excuse me, is there...?",
+      "Go straight and turn left",
+      "How far is it?",
+      "You can't miss it"
+    ],
+    "key_vocab": [
+      "supermarket",
+      "straight",
+      "left",
+      "walk",
+      "far"
+    ],
+    "grammar_points": [
+      "There is/are...",
+      "Imperatives for directions"
+    ],
+    "level": "a2"
+  },
+  {
+    "scenario": "Talking about weekend plans",
+    "scenario_vi": "Nói về kế hoạch cuối tuần",
+    "category": "daily_life",
+    "roles": [
+      "Friend A",
+      "Friend B"
+    ],
+    "dialogue": [
+      {
+        "role": "Friend A",
+        "en": "What are you going to do this weekend?",
+        "vi": "Cuối tuần này bạn định làm gì?"
+      },
+      {
+        "role": "Friend B",
+        "en": "I'm going to visit my grandparents. They live in the countryside.",
+        "vi": "Mình sẽ đi thăm ông bà. Ông bà sống ở quê."
+      },
+      {
+        "role": "Friend A",
+        "en": "That sounds nice. Did you go there last weekend?",
+        "vi": "Nghe hay quá. Cuối tuần trước bạn có đến đó không?"
+      },
+      {
+        "role": "Friend B",
+        "en": "No, I didn't. I stayed home and studied.",
+        "vi": "Không, mình ở nhà và học bài."
+      },
+      {
+        "role": "Friend A",
+        "en": "I see. Well, have fun this weekend!",
+        "vi": "À ra vậy. Chúc bạn cuối tuần vui vẻ!"
+      },
+      {
+        "role": "Friend B",
+        "en": "Thanks! You too.",
+        "vi": "Cảm ơn! Bạn cũng vậy nhé."
+      }
+    ],
+    "key_phrases": [
+      "What are you going to do?",
+      "I'm going to...",
+      "That sounds nice",
+      "Have fun!"
+    ],
+    "key_vocab": [
+      "weekend",
+      "visit",
+      "grandparents",
+      "countryside",
+      "stay home"
+    ],
+    "grammar_points": [
+      "be going to for future plans",
+      "Simple past (Did you...?)"
+    ],
+    "level": "a2"
+  },
+  {
+    "scenario": "Booking a hotel room by phone",
+    "scenario_vi": "Đặt phòng khách sạn qua điện thoại",
+    "category": "daily_life",
+    "roles": [
+      "Guest",
+      "Receptionist"
+    ],
+    "dialogue": [
+      {
+        "role": "Guest",
+        "en": "Hello, I'd like to book a double room for two nights.",
+        "vi": "Xin chào, tôi muốn đặt một phòng đôi cho hai đêm."
+      },
+      {
+        "role": "Receptionist",
+        "en": "Of course. When do you want to check in?",
+        "vi": "Vâng ạ. Quý khách muốn nhận phòng khi nào?"
+      },
+      {
+        "role": "Guest",
+        "en": "Next Friday, July 5th.",
+        "vi": "Thứ Sáu tuần sau, ngày 5 tháng 7."
+      },
+      {
+        "role": "Receptionist",
+        "en": "Let me check. Yes, we have a room available. The price is $80 per night.",
+        "vi": "Để tôi kiểm tra. Vâng, chúng tôi còn phòng. Giá là 80 đô một đêm."
+      },
+      {
+        "role": "Guest",
+        "en": "That's fine. Can I pay by credit card?",
+        "vi": "Được đấy. Tôi có thể thanh toán bằng thẻ tín dụng không?"
+      },
+      {
+        "role": "Receptionist",
+        "en": "Yes, we accept Visa and Mastercard.",
+        "vi": "Có ạ, chúng tôi chấp nhận Visa và Mastercard."
+      }
+    ],
+    "key_phrases": [
+      "I'd like to book...",
+      "When do you want to check in?",
+      "Can I pay by credit card?",
+      "We accept..."
+    ],
+    "key_vocab": [
+      "book",
+      "double room",
+      "check in",
+      "available",
+      "price",
+      "credit card"
+    ],
+    "grammar_points": [
+      "would like to + verb",
+      "Can I...? for requests"
+    ],
+    "level": "a2"
+  }
+]

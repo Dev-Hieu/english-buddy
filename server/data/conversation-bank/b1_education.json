@@ -1,0 +1,208 @@
+[
+  {
+    "scenario": "Two friends discussing their online learning experiences",
+    "scenario_vi": "Hai bạn thảo luận về trải nghiệm học trực tuyến",
+    "category": "education",
+    "roles": [
+      "Student A",
+      "Student B"
+    ],
+    "dialogue": [
+      {
+        "role": "Student A",
+        "en": "I've been taking an online course in data science lately.",
+        "vi": "Dạo này tôi đang học một khóa học trực tuyến về khoa học dữ liệu."
+      },
+      {
+        "role": "Student B",
+        "en": "How are you finding it? I've heard it's quite demanding.",
+        "vi": "Bạn thấy thế nào? Tôi nghe nói nó khá nặng đấy."
+      },
+      {
+        "role": "Student A",
+        "en": "It's a lot of work, but I'm really enjoying it. The flexibility is great.",
+        "vi": "Nhiều việc thật, nhưng tôi rất thích nó. Sự linh hoạt rất tuyệt."
+      },
+      {
+        "role": "Student B",
+        "en": "I prefer face-to-face classes myself. I find it hard to stay motivated online.",
+        "vi": "Cá nhân tôi thích lớp học trực tiếp hơn. Tôi thấy khó duy trì động lực khi học online."
+      },
+      {
+        "role": "Student A",
+        "en": "I get that. But with recorded lectures, I can pause and rewatch tough parts.",
+        "vi": "Tôi hiểu. Nhưng với bài giảng được ghi lại, tôi có thể tạm dừng và xem lại những phần khó."
+      },
+      {
+        "role": "Student B",
+        "en": "True. Maybe I should give it another shot. What platform are you using?",
+        "vi": "Đúng vậy. Có lẽ tôi nên thử lại. Bạn đang dùng nền tảng nào?"
+      },
+      {
+        "role": "Student A",
+        "en": "Coursera. The courses are well-structured and the forums are active.",
+        "vi": "Coursera. Các khóa học được cấu trúc tốt và diễn đàn rất sôi nổi."
+      },
+      {
+        "role": "Student B",
+        "en": "I might check it out. Thanks for the recommendation!",
+        "vi": "Tôi có thể xem thử. Cảm ơn bạn đã gợi ý!"
+      }
+    ],
+    "key_phrases": [
+      "How are you finding it?",
+      "give it another shot",
+      "check it out"
+    ],
+    "key_vocab": [
+      "online course",
+      "flexibility",
+      "motivated",
+      "recorded lectures",
+      "platform"
+    ],
+    "grammar_points": [
+      "Present perfect continuous (I've been taking)",
+      "Prefer + noun/gerund",
+      "Modal verbs for suggestions (might, should)"
+    ],
+    "level": "b1"
+  },
+  {
+    "scenario": "A teacher and student discussing exam preparation",
+    "scenario_vi": "Giáo viên và học sinh thảo luận về việc ôn thi",
+    "category": "education",
+    "roles": [
+      "Teacher",
+      "Student"
+    ],
+    "dialogue": [
+      {
+        "role": "Teacher",
+        "en": "I notice you've been struggling with the past papers. What seems to be the issue?",
+        "vi": "Tôi thấy em đang gặp khó khăn với các đề thi cũ. Vấn đề là gì?"
+      },
+      {
+        "role": "Student",
+        "en": "I just can't seem to finish on time. There's so much to write!",
+        "vi": "Em dường như không thể làm kịp giờ. Có quá nhiều thứ phải viết!"
+      },
+      {
+        "role": "Teacher",
+        "en": "Time management is key. Have you tried practicing under timed conditions?",
+        "vi": "Quản lý thời gian là chìa khóa. Em đã thử luyện tập trong điều kiện tính giờ chưa?"
+      },
+      {
+        "role": "Student",
+        "en": "Not really. I usually just do the questions at my own pace.",
+        "vi": "Chưa ạ. Em thường chỉ làm bài theo tốc độ của mình."
+      },
+      {
+        "role": "Teacher",
+        "en": "That's a common mistake. I'd recommend setting a timer for each section.",
+        "vi": "Đó là một lỗi phổ biến. Tôi khuyên em nên đặt đồng hồ cho từng phần."
+      },
+      {
+        "role": "Student",
+        "en": "Good idea. Also, I'm not sure how to structure my essays.",
+        "vi": "Ý hay đấy. Ngoài ra, em không chắc cách cấu trúc bài luận của mình."
+      },
+      {
+        "role": "Teacher",
+        "en": "Let me show you a simple framework: introduction, body paragraphs, and conclusion.",
+        "vi": "Để tôi chỉ em một khung đơn giản: mở bài, thân bài và kết luận."
+      },
+      {
+        "role": "Student",
+        "en": "That sounds helpful. I'll give it a try. Thanks, teacher!",
+        "vi": "Nghe có vẻ hữu ích. Em sẽ thử. Cảm ơn thầy/cô!"
+      }
+    ],
+    "key_phrases": [
+      "struggling with",
+      "time management is key",
+      "give it a try"
+    ],
+    "key_vocab": [
+      "past papers",
+      "timed conditions",
+      "framework",
+      "essay"
+    ],
+    "grammar_points": [
+      "Present perfect continuous (have been struggling)",
+      "Have you tried + gerund?",
+      "I'd recommend + gerund"
+    ],
+    "level": "b1"
+  },
+  {
+    "scenario": "Two university students discussing their majors",
+    "scenario_vi": "Hai sinh viên đại học thảo luận về chuyên ngành của họ",
+    "category": "education",
+    "roles": [
+      "Student A",
+      "Student B"
+    ],
+    "dialogue": [
+      {
+        "role": "Student A",
+        "en": "I'm thinking of switching my major from business to graphic design.",
+        "vi": "Tôi đang nghĩ đến việc chuyển ngành từ kinh doanh sang thiết kế đồ họa."
+      },
+      {
+        "role": "Student B",
+        "en": "Really? That's a big change. What made you decide that?",
+        "vi": "Thật sao? Đó là một thay đổi lớn. Điều gì khiến bạn quyết định vậy?"
+      },
+      {
+        "role": "Student A",
+        "en": "I've always been passionate about art, and I feel more creative in design.",
+        "vi": "Tôi luôn đam mê nghệ thuật, và tôi cảm thấy sáng tạo hơn trong thiết kế."
+      },
+      {
+        "role": "Student B",
+        "en": "I see. But won't you lose a year? You're already in your second year.",
+        "vi": "Tôi hiểu. Nhưng bạn sẽ mất một năm phải không? Bạn đã học năm thứ hai rồi."
+      },
+      {
+        "role": "Student A",
+        "en": "Yeah, I'll have to take some extra courses, but I think it's worth it.",
+        "vi": "Ừ, tôi sẽ phải học thêm vài môn, nhưng tôi nghĩ nó đáng giá."
+      },
+      {
+        "role": "Student B",
+        "en": "That's true. It's better to do something you love. I'm sticking with engineering, though.",
+        "vi": "Đúng vậy. Tốt hơn là làm điều mình yêu thích. Tuy nhiên, tôi vẫn theo ngành kỹ thuật."
+      },
+      {
+        "role": "Student A",
+        "en": "Engineering is tough! How are you handling the workload?",
+        "vi": "Kỹ thuật khó đấy! Bạn xử lý khối lượng công việc thế nào?"
+      },
+      {
+        "role": "Student B",
+        "en": "It's intense, but I manage. Group study helps a lot.",
+        "vi": "Nó căng thẳng, nhưng tôi xoay sở được. Học nhóm giúp ích nhiều."
+      }
+    ],
+    "key_phrases": [
+      "switching my major",
+      "stick with",
+      "handle the workload"
+    ],
+    "key_vocab": [
+      "major",
+      "passionate",
+      "creative",
+      "extra courses",
+      "group study"
+    ],
+    "grammar_points": [
+      "Present continuous for future plans (I'm thinking of...)",
+      "Future with 'will' (I'll have to)",
+      "Gerund after 'stick with' (sticking with)"
+    ],
+    "level": "b1"
+  }
+]

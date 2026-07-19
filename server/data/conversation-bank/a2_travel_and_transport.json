@@ -1,0 +1,206 @@
+[
+  {
+    "scenario": "Asking for directions at a bus station",
+    "scenario_vi": "Hỏi đường ở bến xe buýt",
+    "category": "travel_and_transport",
+    "roles": [
+      "Tourist",
+      "Local"
+    ],
+    "dialogue": [
+      {
+        "role": "Tourist",
+        "en": "Excuse me, does this bus go to the city center?",
+        "vi": "Xin lỗi, xe buýt này có đi trung tâm thành phố không ạ?"
+      },
+      {
+        "role": "Local",
+        "en": "No, you need bus number 12. It leaves every 15 minutes.",
+        "vi": "Không, bạn cần đi xe số 12. Xe chạy 15 phút một chuyến."
+      },
+      {
+        "role": "Tourist",
+        "en": "Where can I catch it?",
+        "vi": "Tôi có thể bắt xe ở đâu?"
+      },
+      {
+        "role": "Local",
+        "en": "The stop is just over there, next to the convenience store.",
+        "vi": "Trạm dừng ở ngay đằng kia, cạnh cửa hàng tiện lợi."
+      },
+      {
+        "role": "Tourist",
+        "en": "Great, thanks! And how long does it take to get to the center?",
+        "vi": "Tuyệt, cảm ơn! Và đi đến trung tâm mất bao lâu?"
+      },
+      {
+        "role": "Local",
+        "en": "About 20 minutes, depending on traffic.",
+        "vi": "Khoảng 20 phút, tùy vào giao thông."
+      },
+      {
+        "role": "Tourist",
+        "en": "Perfect. I'll wait for bus 12. Thanks a lot!",
+        "vi": "Hoàn hảo. Tôi sẽ đợi xe số 12. Cảm ơn nhiều!"
+      },
+      {
+        "role": "Local",
+        "en": "You're welcome. Have a nice day!",
+        "vi": "Không có gì. Chúc bạn một ngày tốt lành!"
+      }
+    ],
+    "key_phrases": [
+      "Does this bus go to...?",
+      "Where can I catch it?",
+      "How long does it take?"
+    ],
+    "key_vocab": [
+      "bus",
+      "stop",
+      "traffic",
+      "center",
+      "convenience store"
+    ],
+    "grammar_points": [
+      "Simple present for schedules",
+      "How long does it take?"
+    ],
+    "level": "a2"
+  },
+  {
+    "scenario": "Booking a taxi to the airport",
+    "scenario_vi": "Đặt taxi ra sân bay",
+    "category": "travel_and_transport",
+    "roles": [
+      "Customer",
+      "Driver"
+    ],
+    "dialogue": [
+      {
+        "role": "Customer",
+        "en": "Hi, I need a taxi to the airport tomorrow at 6 AM.",
+        "vi": "Chào anh, tôi cần đặt taxi ra sân bay vào lúc 6 giờ sáng mai."
+      },
+      {
+        "role": "Driver",
+        "en": "Sure. May I have your address, please?",
+        "vi": "Vâng. Cho tôi xin địa chỉ của anh ạ?"
+      },
+      {
+        "role": "Customer",
+        "en": "I'm at 25 Nguyen Hue Street, District 1.",
+        "vi": "Tôi ở số 25 Nguyễn Huệ, Quận 1."
+      },
+      {
+        "role": "Driver",
+        "en": "No problem. I'll pick you up at 5:45 to be safe. Is that okay?",
+        "vi": "Không vấn đề. Tôi sẽ đón anh lúc 5:45 cho chắc. Được không ạ?"
+      },
+      {
+        "role": "Customer",
+        "en": "Yes, that's fine. How much will it cost?",
+        "vi": "Vâng, được. Giá bao nhiêu vậy?"
+      },
+      {
+        "role": "Driver",
+        "en": "About 150,000 dong, depending on traffic.",
+        "vi": "Khoảng 150,000 đồng, tùy vào giao thông."
+      },
+      {
+        "role": "Customer",
+        "en": "Okay, I'll pay in cash. See you tomorrow!",
+        "vi": "Được, tôi sẽ trả tiền mặt. Hẹn gặp anh mai!"
+      },
+      {
+        "role": "Driver",
+        "en": "See you! Have a good trip!",
+        "vi": "Hẹn gặp! Chúc anh chuyến đi tốt lành!"
+      }
+    ],
+    "key_phrases": [
+      "I need a taxi to...",
+      "pick you up",
+      "How much will it cost?"
+    ],
+    "key_vocab": [
+      "taxi",
+      "airport",
+      "address",
+      "pick up",
+      "cash"
+    ],
+    "grammar_points": [
+      "Simple future with will",
+      "May I have...?"
+    ],
+    "level": "a2"
+  },
+  {
+    "scenario": "Buying train tickets at the station",
+    "scenario_vi": "Mua vé tàu ở ga",
+    "category": "travel_and_transport",
+    "roles": [
+      "Traveler",
+      "Ticket Agent"
+    ],
+    "dialogue": [
+      {
+        "role": "Traveler",
+        "en": "Good morning. I'd like two tickets to Da Nang, please.",
+        "vi": "Chào chị. Cho tôi xin hai vé đi Đà Nẵng ạ."
+      },
+      {
+        "role": "Ticket Agent",
+        "en": "Sure. For today or tomorrow?",
+        "vi": "Vâng. Đi hôm nay hay ngày mai?"
+      },
+      {
+        "role": "Traveler",
+        "en": "Tomorrow morning. Is there a train at 8 AM?",
+        "vi": "Sáng mai. Có chuyến tàu lúc 8 giờ sáng không?"
+      },
+      {
+        "role": "Ticket Agent",
+        "en": "Yes, the SE2 departs at 8:15 and arrives at 2 PM.",
+        "vi": "Có, tàu SE2 khởi hành lúc 8:15 và đến lúc 2 giờ chiều."
+      },
+      {
+        "role": "Traveler",
+        "en": "Great. How much are the tickets?",
+        "vi": "Tuyệt. Vé bao nhiêu tiền?"
+      },
+      {
+        "role": "Ticket Agent",
+        "en": "300,000 dong each, so 600,000 in total.",
+        "vi": "Mỗi vé 300,000 đồng, tổng cộng 600,000 đồng."
+      },
+      {
+        "role": "Traveler",
+        "en": "Okay, I'll take two. Here you go.",
+        "vi": "Được, tôi lấy hai vé. Đây ạ."
+      },
+      {
+        "role": "Ticket Agent",
+        "en": "Thank you. Here are your tickets. Have a nice trip!",
+        "vi": "Cảm ơn. Vé của bạn đây. Chúc bạn chuyến đi vui vẻ!"
+      }
+    ],
+    "key_phrases": [
+      "I'd like two tickets to...",
+      "Is there a train at...?",
+      "How much are the tickets?"
+    ],
+    "key_vocab": [
+      "ticket",
+      "train",
+      "depart",
+      "arrive",
+      "total"
+    ],
+    "grammar_points": [
+      "Simple present for schedules",
+      "would like + noun"
+    ],
+    "level": "a2"
+  }
+]

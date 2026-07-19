@@ -1,0 +1,135 @@
+[
+  {
+    "scenario": "Asking for help with a smartphone",
+    "scenario_vi": "Nhờ giúp đỡ về điện thoại thông minh",
+    "category": "communication_and_technology",
+    "roles": [
+      "Student",
+      "Friend"
+    ],
+    "dialogue": [
+      {
+        "role": "Student",
+        "en": "Hey, can you help me with my phone? I couldn't send a text yesterday.",
+        "vi": "Này, cậu giúp tớ với cái điện thoại được không? Hôm qua tớ không gửi được tin nhắn."
+      },
+      {
+        "role": "Friend",
+        "en": "Sure! What happened? Did you check your signal?",
+        "vi": "Được chứ! Chuyện gì thế? Cậu đã kiểm tra sóng chưa?"
+      },
+      {
+        "role": "Student",
+        "en": "Yes, I had full bars. But the message said 'Not delivered'.",
+        "vi": "Rồi, sóng đầy mà. Nhưng tin nhắn báo 'Chưa gửi được'."
+      },
+      {
+        "role": "Friend",
+        "en": "Maybe your mobile data was off. Let me see.",
+        "vi": "Có thể cậu tắt dữ liệu di động rồi. Để tớ xem."
+      },
+      {
+        "role": "Student",
+        "en": "Oh, I think I turned it off to save battery.",
+        "vi": "À, tớ nghĩ tớ đã tắt để tiết kiệm pin."
+      },
+      {
+        "role": "Friend",
+        "en": "That's it! Turn it on and try again. It will work now.",
+        "vi": "Đúng rồi đấy! Bật lên và thử lại đi. Bây giờ sẽ gửi được."
+      },
+      {
+        "role": "Student",
+        "en": "Great, it worked! Thanks a lot.",
+        "vi": "Tuyệt, gửi được rồi! Cảm ơn cậu nhiều."
+      }
+    ],
+    "key_phrases": [
+      "can you help me with",
+      "I couldn't",
+      "turn it on",
+      "it worked"
+    ],
+    "key_vocab": [
+      "text",
+      "signal",
+      "bars",
+      "mobile data",
+      "battery",
+      "delivered"
+    ],
+    "grammar_points": [
+      "Simple past for inability (couldn't)",
+      "Simple future for prediction (will work)",
+      "Imperative for instructions (Turn it on)"
+    ],
+    "level": "a2"
+  },
+  {
+    "scenario": "Setting up a video call with a friend",
+    "scenario_vi": "Cài đặt cuộc gọi video với bạn",
+    "category": "communication_and_technology",
+    "roles": [
+      "User",
+      "Friend"
+    ],
+    "dialogue": [
+      {
+        "role": "User",
+        "en": "Hi! I will call you on Zoom tomorrow. Is that okay?",
+        "vi": "Chào! Ngày mai tớ sẽ gọi cho cậu qua Zoom nhé. Được không?"
+      },
+      {
+        "role": "Friend",
+        "en": "Sure! But I have never used Zoom before. How does it work?",
+        "vi": "Được chứ! Nhưng tớ chưa dùng Zoom bao giờ. Nó hoạt động thế nào?"
+      },
+      {
+        "role": "User",
+        "en": "It's easy. First, download the app. Then I will send you a link.",
+        "vi": "Dễ lắm. Đầu tiên, tải ứng dụng về. Sau đó tớ sẽ gửi cậu một đường link."
+      },
+      {
+        "role": "Friend",
+        "en": "Okay, I downloaded it. What's next?",
+        "vi": "Okay, tớ tải xong rồi. Tiếp theo là gì?"
+      },
+      {
+        "role": "User",
+        "en": "Click the link I sent. It will open the meeting. Then turn on your camera and microphone.",
+        "vi": "Nhấn vào link tớ gửi. Nó sẽ mở cuộc họp. Sau đó bật camera và mic lên."
+      },
+      {
+        "role": "Friend",
+        "en": "Got it. I will try that. See you tomorrow at 3 PM!",
+        "vi": "Rõ rồi. Tớ sẽ thử. Hẹn gặp cậu 3 giờ chiều mai nhé!"
+      },
+      {
+        "role": "User",
+        "en": "Great! Let me know if you have any problems. Bye!",
+        "vi": "Tuyệt! Báo tớ nếu cậu gặp vấn đề gì nhé. Tạm biệt!"
+      }
+    ],
+    "key_phrases": [
+      "I will call you",
+      "download the app",
+      "send you a link",
+      "turn on your camera",
+      "let me know"
+    ],
+    "key_vocab": [
+      "Zoom",
+      "app",
+      "link",
+      "meeting",
+      "camera",
+      "microphone"
+    ],
+    "grammar_points": [
+      "Simple future with 'will' (I will call, you will see)",
+      "Sequence words (first, then, next)",
+      "Imperatives for instructions (download, click, turn on)"
+    ],
+    "level": "a2"
+  }
+]

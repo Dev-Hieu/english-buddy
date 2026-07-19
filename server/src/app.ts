@@ -752,6 +752,20 @@ export function createApp() {
     res.json(rows);
   });
 
+  app.get("/api/conversation-bank", (req, res) => {
+    const { level, category } = req.query;
+    let sql = "SELECT * FROM conversation_bank WHERE 1=1";
+    const params: any[] = [];
+    if (level && typeof level === "string") { sql += " AND level = ?"; params.push(level); }
+    if (category && typeof category === "string") { sql += " AND category = ?"; params.push(category); }
+    sql += " ORDER BY scenario ASC";
+    const rows = db.prepare(sql).all(...params);
+    ["roles", "dialogue", "key_phrases", "key_vocab", "grammar_points"].forEach(f => {
+      rows.forEach((r: any) => { try { r[f] = JSON.parse(r[f] || "[]"); } catch { r[f] = []; } });
+    });
+    res.json(rows);
+  });
+
   // ── Học sinh (theo tài khoản) ──
   app.get("/api/students", requireAuth, (req, res) => {
     const user = (req as any).user;

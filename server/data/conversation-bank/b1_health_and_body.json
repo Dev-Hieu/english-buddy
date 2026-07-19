@@ -1,0 +1,170 @@
+[
+  {
+    "scenario": "Talking to a doctor about back pain",
+    "scenario_vi": "Nói chuyện với bác sĩ về đau lưng",
+    "category": "health_and_body",
+    "roles": [
+      "Patient",
+      "Doctor"
+    ],
+    "dialogue": [
+      {
+        "role": "Doctor",
+        "en": "What brings you in today?",
+        "vi": "Hôm nay anh/chị đến khám vì vấn đề gì ạ?"
+      },
+      {
+        "role": "Patient",
+        "en": "I've been having this nagging pain in my lower back for a few weeks.",
+        "vi": "Tôi bị đau âm ỉ ở vùng lưng dưới vài tuần nay rồi."
+      },
+      {
+        "role": "Doctor",
+        "en": "Does it get worse when you bend or lift something?",
+        "vi": "Có đau hơn khi anh/chị cúi xuống hoặc nhấc đồ không?"
+      },
+      {
+        "role": "Patient",
+        "en": "Yeah, especially after sitting at my desk all day.",
+        "vi": "Có, nhất là sau khi ngồi bàn làm việc cả ngày."
+      },
+      {
+        "role": "Doctor",
+        "en": "It sounds like a muscle strain. Have you tried any painkillers?",
+        "vi": "Có vẻ là căng cơ. Anh/chị đã dùng thuốc giảm đau nào chưa?"
+      },
+      {
+        "role": "Patient",
+        "en": "I took ibuprofen a couple of times, but it only helps temporarily.",
+        "vi": "Tôi uống ibuprofen vài lần, nhưng chỉ đỡ tạm thời thôi."
+      },
+      {
+        "role": "Doctor",
+        "en": "I'd recommend some stretching exercises and a better chair. Avoid heavy lifting for now.",
+        "vi": "Tôi khuyên anh/chị nên tập giãn cơ và dùng ghế tốt hơn. Tránh nhấc đồ nặng nhé."
+      },
+      {
+        "role": "Patient",
+        "en": "Should I come back if it doesn't get better?",
+        "vi": "Nếu không đỡ, tôi có nên quay lại không?"
+      },
+      {
+        "role": "Doctor",
+        "en": "Yes, if the pain persists after a week, we might need an X-ray.",
+        "vi": "Có, nếu đau kéo dài sau một tuần, chúng ta có thể cần chụp X-quang."
+      },
+      {
+        "role": "Patient",
+        "en": "Okay, I'll try the exercises. Thanks, doctor.",
+        "vi": "Vâng, tôi sẽ tập thử. Cảm ơn bác sĩ."
+      },
+      {
+        "role": "Doctor",
+        "en": "Take care, and don't hesitate to call if you have any concerns.",
+        "vi": "Giữ gìn sức khỏe nhé, và đừng ngại gọi nếu có gì thắc mắc."
+      }
+    ],
+    "key_phrases": [
+      "What brings you in today?",
+      "nagging pain",
+      "muscle strain",
+      "avoid heavy lifting",
+      "if it doesn't get better"
+    ],
+    "key_vocab": [
+      "pain",
+      "strain",
+      "stretching",
+      "X-ray",
+      "painkillers",
+      "persist"
+    ],
+    "grammar_points": [
+      "Present perfect continuous: have been having",
+      "Conditional: if it doesn't get better",
+      "Modal verbs: should, might"
+    ],
+    "level": "b1"
+  },
+  {
+    "scenario": "Asking a friend about their cold symptoms",
+    "scenario_vi": "Hỏi bạn về triệu chứng cảm lạnh",
+    "category": "health_and_body",
+    "roles": [
+      "Friend 1",
+      "Friend 2"
+    ],
+    "dialogue": [
+      {
+        "role": "Friend 1",
+        "en": "Hey, you sound awful! Are you okay?",
+        "vi": "Này, giọng bạn nghe tệ quá! Bạn ổn không?"
+      },
+      {
+        "role": "Friend 2",
+        "en": "I think I'm coming down with something. My throat is really sore.",
+        "vi": "Chắc mình sắp bị ốm rồi. Cổ họng đau quá."
+      },
+      {
+        "role": "Friend 1",
+        "en": "Oh no, have you taken anything for it?",
+        "vi": "Trời, bạn uống thuốc gì chưa?"
+      },
+      {
+        "role": "Friend 2",
+        "en": "Not yet. I've just been drinking hot tea with honey.",
+        "vi": "Chưa. Mình chỉ uống trà nóng với mật ong thôi."
+      },
+      {
+        "role": "Friend 1",
+        "en": "You should try some ginger tea too. It works wonders.",
+        "vi": "Bạn nên thử trà gừng nữa. Hiệu quả lắm đấy."
+      },
+      {
+        "role": "Friend 2",
+        "en": "I'll give it a shot. Also, I've been sneezing non-stop.",
+        "vi": "Mình sẽ thử. Mà mình cũng hắt hơi liên tục nữa."
+      },
+      {
+        "role": "Friend 1",
+        "en": "Sounds like a cold. Have you checked if you have a fever?",
+        "vi": "Nghe như cảm lạnh. Bạn đo nhiệt độ chưa?"
+      },
+      {
+        "role": "Friend 2",
+        "en": "I don't have a thermometer, but I feel a bit warm.",
+        "vi": "Mình không có nhiệt kế, nhưng thấy hơi nóng."
+      },
+      {
+        "role": "Friend 1",
+        "en": "You'd better rest and stay hydrated. I can bring you some soup later.",
+        "vi": "Bạn nên nghỉ ngơi và uống nhiều nước. Tí mình mang súp cho nhé."
+      },
+      {
+        "role": "Friend 2",
+        "en": "That's so kind of you. Thanks, I could really use that.",
+        "vi": "Bạn tốt quá. Cảm ơn, mình đang cần lắm đây."
+      }
+    ],
+    "key_phrases": [
+      "coming down with something",
+      "work wonders",
+      "give it a shot",
+      "could really use that"
+    ],
+    "key_vocab": [
+      "throat",
+      "sneezing",
+      "fever",
+      "thermometer",
+      "hydrated",
+      "sore"
+    ],
+    "grammar_points": [
+      "Present continuous for symptoms: I'm coming down",
+      "Present perfect: I've been drinking",
+      "Modal verbs: should, had better"
+    ],
+    "level": "b1"
+  }
+]

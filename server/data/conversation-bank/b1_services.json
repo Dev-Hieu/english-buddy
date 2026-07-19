@@ -1,0 +1,225 @@
+[
+  {
+    "scenario": "Requesting a haircut at a salon",
+    "scenario_vi": "Yêu cầu cắt tóc tại tiệm",
+    "category": "services",
+    "roles": [
+      "Customer",
+      "Hairdresser"
+    ],
+    "dialogue": [
+      {
+        "role": "Hairdresser",
+        "en": "Hi there! What can I do for you today?",
+        "vi": "Chào bạn! Hôm nay tôi có thể giúp gì cho bạn?"
+      },
+      {
+        "role": "Customer",
+        "en": "I'd like a trim, just take off a couple of inches.",
+        "vi": "Tôi muốn cắt tỉa một chút, chỉ cắt bỏ vài cm thôi."
+      },
+      {
+        "role": "Hairdresser",
+        "en": "Sure thing. Any particular style in mind?",
+        "vi": "Được thôi. Bạn có kiểu nào trong đầu không?"
+      },
+      {
+        "role": "Customer",
+        "en": "Not really. I'm open to suggestions, but nothing too short.",
+        "vi": "Không hẳn. Tôi muốn nghe gợi ý, nhưng đừng cắt quá ngắn."
+      },
+      {
+        "role": "Hairdresser",
+        "en": "Got it. How about layering it a bit? That'll add volume.",
+        "vi": "Hiểu rồi. Cắt lớp một chút nhé? Sẽ tạo độ phồng đấy."
+      },
+      {
+        "role": "Customer",
+        "en": "Sounds good. Go ahead.",
+        "vi": "Nghe được đấy. Làm đi ạ."
+      },
+      {
+        "role": "Hairdresser",
+        "en": "Alright, let me just wash your hair first.",
+        "vi": "Okay, để tôi gội đầu trước nhé."
+      },
+      {
+        "role": "Customer",
+        "en": "Sure, no problem.",
+        "vi": "Vâng, không vấn đề gì."
+      },
+      {
+        "role": "Hairdresser",
+        "en": "All done! What do you think?",
+        "vi": "Xong rồi! Bạn thấy thế nào?"
+      },
+      {
+        "role": "Customer",
+        "en": "It looks great! Thanks a lot.",
+        "vi": "Đẹp lắm! Cảm ơn nhiều."
+      },
+      {
+        "role": "Hairdresser",
+        "en": "You're welcome. That'll be $25.",
+        "vi": "Không có gì. Tổng cộng 25 đô la."
+      }
+    ],
+    "key_phrases": [
+      "I'd like a trim",
+      "open to suggestions",
+      "Go ahead"
+    ],
+    "key_vocab": [
+      "trim",
+      "layering",
+      "volume",
+      "wash"
+    ],
+    "grammar_points": [
+      "I'd like + noun",
+      "How about + verb-ing?"
+    ],
+    "level": "b1"
+  },
+  {
+    "scenario": "Complaining about a hotel room",
+    "scenario_vi": "Phàn nàn về phòng khách sạn",
+    "category": "services",
+    "roles": [
+      "Guest",
+      "Hotel Staff"
+    ],
+    "dialogue": [
+      {
+        "role": "Guest",
+        "en": "Excuse me, there's a problem with my room.",
+        "vi": "Xin lỗi, phòng tôi có vấn đề."
+      },
+      {
+        "role": "Hotel Staff",
+        "en": "I'm sorry to hear that. What seems to be the issue?",
+        "vi": "Tôi rất tiếc. Vấn đề là gì thế ạ?"
+      },
+      {
+        "role": "Guest",
+        "en": "The air conditioning isn't working, and it's boiling in here.",
+        "vi": "Điều hòa không hoạt động, ở đây nóng như đổ lửa."
+      },
+      {
+        "role": "Hotel Staff",
+        "en": "Oh, I apologize. Let me send someone up to fix it right away.",
+        "vi": "Ồ, tôi xin lỗi. Để tôi cho người lên sửa ngay."
+      },
+      {
+        "role": "Guest",
+        "en": "Also, the TV remote is missing batteries.",
+        "vi": "Thêm nữa, điều khiển tivi hết pin rồi."
+      },
+      {
+        "role": "Hotel Staff",
+        "en": "I'll bring fresh batteries along. Is there anything else?",
+        "vi": "Tôi sẽ mang pin mới lên. Còn gì nữa không ạ?"
+      },
+      {
+        "role": "Guest",
+        "en": "No, that's all. But I'd appreciate it if you could hurry.",
+        "vi": "Không, thế thôi. Nhưng tôi mong là anh làm nhanh."
+      },
+      {
+        "role": "Hotel Staff",
+        "en": "Of course. I'll be up in five minutes with the technician.",
+        "vi": "Tất nhiên. Tôi sẽ lên trong năm phút cùng kỹ thuật viên."
+      },
+      {
+        "role": "Guest",
+        "en": "Thank you. I'll be waiting.",
+        "vi": "Cảm ơn. Tôi sẽ chờ."
+      }
+    ],
+    "key_phrases": [
+      "there's a problem with",
+      "I'm sorry to hear that",
+      "I'd appreciate it if"
+    ],
+    "key_vocab": [
+      "air conditioning",
+      "remote",
+      "batteries",
+      "technician",
+      "fix"
+    ],
+    "grammar_points": [
+      "present continuous for current issue",
+      "I'd appreciate it if + past simple"
+    ],
+    "level": "b1"
+  },
+  {
+    "scenario": "Asking for tech support",
+    "scenario_vi": "Yêu cầu hỗ trợ kỹ thuật",
+    "category": "services",
+    "roles": [
+      "Customer",
+      "Support Agent"
+    ],
+    "dialogue": [
+      {
+        "role": "Customer",
+        "en": "Hi, my internet has been down since yesterday.",
+        "vi": "Chào anh, mạng internet của tôi bị mất từ hôm qua."
+      },
+      {
+        "role": "Support Agent",
+        "en": "I'm sorry about that. Let me check your account.",
+        "vi": "Tôi xin lỗi. Để tôi kiểm tra tài khoản của anh."
+      },
+      {
+        "role": "Customer",
+        "en": "I've already restarted the router twice, but no luck.",
+        "vi": "Tôi đã khởi động lại router hai lần rồi mà không được."
+      },
+      {
+        "role": "Support Agent",
+        "en": "Alright, I see a signal issue in your area. We're working on it.",
+        "vi": "Được rồi, tôi thấy có vấn đề tín hiệu trong khu vực của anh. Chúng tôi đang xử lý."
+      },
+      {
+        "role": "Customer",
+        "en": "How long is it going to take? I need it for work.",
+        "vi": "Mất bao lâu? Tôi cần mạng để làm việc."
+      },
+      {
+        "role": "Support Agent",
+        "en": "It should be back within a couple of hours. I'll send you an update.",
+        "vi": "Chắc trong vòng vài giờ nữa sẽ có lại. Tôi sẽ gửi cập nhật cho anh."
+      },
+      {
+        "role": "Customer",
+        "en": "Alright, thanks. I'll wait.",
+        "vi": "Được rồi, cảm ơn. Tôi sẽ chờ."
+      },
+      {
+        "role": "Support Agent",
+        "en": "No problem. Sorry for the inconvenience.",
+        "vi": "Không có gì. Xin lỗi vì sự bất tiện."
+      }
+    ],
+    "key_phrases": [
+      "has been down since",
+      "no luck",
+      "How long is it going to take?"
+    ],
+    "key_vocab": [
+      "internet",
+      "router",
+      "signal",
+      "update",
+      "inconvenience"
+    ],
+    "grammar_points": [
+      "present perfect continuous for duration",
+      "going to for future"
+    ],
+    "level": "b1"
+  }
+]

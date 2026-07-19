@@ -1,0 +1,123 @@
+[
+  {
+    "scenario": "Buying a T-shirt at a clothing store",
+    "scenario_vi": "Mua áo phông ở cửa hàng quần áo",
+    "category": "shopping",
+    "roles": [
+      "Customer",
+      "Shop Assistant"
+    ],
+    "dialogue": [
+      {
+        "role": "Shop Assistant",
+        "en": "Hello! Can I help you?",
+        "vi": "Xin chào! Tôi có thể giúp gì cho bạn?"
+      },
+      {
+        "role": "Customer",
+        "en": "Yes, I like this T-shirt. How much is it?",
+        "vi": "Vâng, tôi thích cái áo phông này. Bao nhiêu tiền vậy?"
+      },
+      {
+        "role": "Shop Assistant",
+        "en": "It's 150,000 dong.",
+        "vi": "Nó giá 150 nghìn đồng."
+      },
+      {
+        "role": "Customer",
+        "en": "Can I try it on?",
+        "vi": "Tôi có thể mặc thử không?"
+      },
+      {
+        "role": "Shop Assistant",
+        "en": "Sure! The fitting room is over there.",
+        "vi": "Tất nhiên! Phòng thử đồ ở đằng kia."
+      },
+      {
+        "role": "Customer",
+        "en": "It fits well. I'll take it.",
+        "vi": "Vừa lắm. Tôi lấy cái này."
+      }
+    ],
+    "key_phrases": [
+      "How much is it?",
+      "Can I try it on?",
+      "I'll take it"
+    ],
+    "key_vocab": [
+      "T-shirt",
+      "dong",
+      "fitting room",
+      "try on",
+      "take"
+    ],
+    "grammar_points": [
+      "How much + is + it?",
+      "Can I + verb?"
+    ],
+    "level": "a1"
+  },
+  {
+    "scenario": "Buying fruit at a market",
+    "scenario_vi": "Mua trái cây ở chợ",
+    "category": "shopping",
+    "roles": [
+      "Customer",
+      "Vendor"
+    ],
+    "dialogue": [
+      {
+        "role": "Customer",
+        "en": "How much are these apples?",
+        "vi": "Mấy quả táo này bao nhiêu?"
+      },
+      {
+        "role": "Vendor",
+        "en": "They are 20,000 dong per kilo.",
+        "vi": "20 nghìn đồng một ký."
+      },
+      {
+        "role": "Customer",
+        "en": "I want two kilos, please.",
+        "vi": "Cho tôi hai ký nhé."
+      },
+      {
+        "role": "Vendor",
+        "en": "Here you are. Anything else?",
+        "vi": "Của bạn đây. Còn gì nữa không?"
+      },
+      {
+        "role": "Customer",
+        "en": "No, that's all. How much total?",
+        "vi": "Không, thế thôi. Tổng cộng bao nhiêu?"
+      },
+      {
+        "role": "Vendor",
+        "en": "That's 40,000 dong.",
+        "vi": "40 nghìn đồng."
+      },
+      {
+        "role": "Customer",
+        "en": "Here you go. Thank you!",
+        "vi": "Của bạn đây. Cảm ơn!"
+      }
+    ],
+    "key_phrases": [
+      "How much are...?",
+      "I want...",
+      "Anything else?",
+      "That's all"
+    ],
+    "key_vocab": [
+      "apples",
+      "kilo",
+      "total",
+      "per"
+    ],
+    "grammar_points": [
+      "How much + are + noun?",
+      "I want + noun"
+    ],
+    "level": "a1"
+  }
+]

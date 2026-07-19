@@ -1,0 +1,120 @@
+[
+  {
+    "scenario": "Asking for directions to the museum",
+    "scenario_vi": "Hỏi đường đến bảo tàng",
+    "category": "places",
+    "roles": [
+      "Tourist",
+      "Local"
+    ],
+    "dialogue": [
+      {
+        "role": "Tourist",
+        "en": "Excuse me. Where is the museum?",
+        "vi": "Xin lỗi. Bảo tàng ở đâu ạ?"
+      },
+      {
+        "role": "Local",
+        "en": "Go straight. It's on the left.",
+        "vi": "Đi thẳng. Nó ở bên trái."
+      },
+      {
+        "role": "Tourist",
+        "en": "Is it far?",
+        "vi": "Có xa không ạ?"
+      },
+      {
+        "role": "Local",
+        "en": "No, it's near. About five minutes.",
+        "vi": "Không, gần thôi. Khoảng năm phút."
+      },
+      {
+        "role": "Tourist",
+        "en": "Thank you very much!",
+        "vi": "Cảm ơn nhiều!"
+      },
+      {
+        "role": "Local",
+        "en": "You're welcome. Have a nice day!",
+        "vi": "Không có gì. Chúc một ngày tốt lành!"
+      }
+    ],
+    "key_phrases": [
+      "Excuse me",
+      "Where is the museum?",
+      "Go straight",
+      "It's on the left",
+      "Is it far?"
+    ],
+    "key_vocab": [
+      "museum",
+      "far",
+      "near",
+      "straight",
+      "left"
+    ],
+    "grammar_points": [
+      "Where is...?",
+      "It's on the + direction"
+    ],
+    "level": "a1"
+  },
+  {
+    "scenario": "Buying a ticket at the cinema",
+    "scenario_vi": "Mua vé ở rạp chiếu phim",
+    "category": "places",
+    "roles": [
+      "Customer",
+      "Cashier"
+    ],
+    "dialogue": [
+      {
+        "role": "Customer",
+        "en": "Hello. One ticket, please.",
+        "vi": "Xin chào. Cho tôi một vé ạ."
+      },
+      {
+        "role": "Cashier",
+        "en": "For which movie?",
+        "vi": "Cho phim nào ạ?"
+      },
+      {
+        "role": "Customer",
+        "en": "The new cartoon.",
+        "vi": "Phim hoạt hình mới ạ."
+      },
+      {
+        "role": "Cashier",
+        "en": "Okay. That's 8 dollars.",
+        "vi": "Được ạ. 8 đô la ạ."
+      },
+      {
+        "role": "Customer",
+        "en": "Here you go.",
+        "vi": "Của bạn đây."
+      },
+      {
+        "role": "Cashier",
+        "en": "Thank you. Enjoy the movie!",
+        "vi": "Cảm ơn. Xem phim vui vẻ!"
+      }
+    ],
+    "key_phrases": [
+      "One ticket, please",
+      "For which movie?",
+      "Here you go",
+      "Enjoy the movie!"
+    ],
+    "key_vocab": [
+      "ticket",
+      "movie",
+      "cartoon",
+      "dollar"
+    ],
+    "grammar_points": [
+      "For which + noun?",
+      "That's + price"
+    ],
+    "level": "a1"
+  }
+]

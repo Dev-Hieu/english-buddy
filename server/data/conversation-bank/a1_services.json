@@ -1,0 +1,116 @@
+[
+  {
+    "scenario": "Checking in at a hotel",
+    "scenario_vi": "Nhận phòng khách sạn",
+    "category": "services",
+    "roles": [
+      "Guest",
+      "Receptionist"
+    ],
+    "dialogue": [
+      {
+        "role": "Receptionist",
+        "en": "Good afternoon. Do you have a reservation?",
+        "vi": "Chào buổi chiều. Anh/chị có đặt phòng trước không ạ?"
+      },
+      {
+        "role": "Guest",
+        "en": "Yes, my name is John Smith.",
+        "vi": "Có, tôi tên là John Smith."
+      },
+      {
+        "role": "Receptionist",
+        "en": "Okay, a single room for two nights. Here is your key.",
+        "vi": "Dạ, phòng đơn hai đêm. Đây là chìa khóa của anh."
+      },
+      {
+        "role": "Guest",
+        "en": "Thank you. What time is breakfast?",
+        "vi": "Cảm ơn. Bữa sáng lúc mấy giờ ạ?"
+      },
+      {
+        "role": "Receptionist",
+        "en": "Breakfast is from 6:30 to 9:30 in the restaurant downstairs.",
+        "vi": "Bữa sáng từ 6:30 đến 9:30 ở nhà hàng dưới tầng trệt."
+      },
+      {
+        "role": "Guest",
+        "en": "Great. Thanks!",
+        "vi": "Tuyệt. Cảm ơn!"
+      }
+    ],
+    "key_phrases": [
+      "Do you have a reservation?",
+      "Here is your key.",
+      "What time is breakfast?"
+    ],
+    "key_vocab": [
+      "reservation",
+      "single room",
+      "key",
+      "breakfast"
+    ],
+    "grammar_points": [
+      "Do you have...?",
+      "What time is...?"
+    ],
+    "level": "a1"
+  },
+  {
+    "scenario": "Asking for directions on the street",
+    "scenario_vi": "Hỏi đường trên phố",
+    "category": "services",
+    "roles": [
+      "Tourist",
+      "Local"
+    ],
+    "dialogue": [
+      {
+        "role": "Tourist",
+        "en": "Excuse me, where is the bus station?",
+        "vi": "Xin lỗi, bến xe buýt ở đâu ạ?"
+      },
+      {
+        "role": "Local",
+        "en": "Go straight, then turn left at the traffic lights.",
+        "vi": "Đi thẳng, sau đó rẽ trái ở đèn giao thông."
+      },
+      {
+        "role": "Tourist",
+        "en": "Is it far?",
+        "vi": "Có xa không ạ?"
+      },
+      {
+        "role": "Local",
+        "en": "No, it's about five minutes on foot.",
+        "vi": "Không, chỉ khoảng năm phút đi bộ thôi."
+      },
+      {
+        "role": "Tourist",
+        "en": "Thank you very much.",
+        "vi": "Cảm ơn nhiều ạ."
+      },
+      {
+        "role": "Local",
+        "en": "You're welcome. Have a nice day!",
+        "vi": "Không có chi. Chúc anh một ngày tốt lành!"
+      }
+    ],
+    "key_phrases": [
+      "Where is...?",
+      "Go straight",
+      "turn left",
+      "Is it far?"
+    ],
+    "key_vocab": [
+      "bus station",
+      "traffic lights",
+      "on foot"
+    ],
+    "grammar_points": [
+      "imperative for directions",
+      "Is it...?"
+    ],
+    "level": "a1"
+  }
+]

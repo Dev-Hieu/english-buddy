@@ -1,0 +1,131 @@
+[
+  {
+    "scenario": "Ordering coffee at a cafe",
+    "scenario_vi": "Gọi cà phê ở quán",
+    "category": "food_and_drink",
+    "roles": [
+      "Customer",
+      "Waiter"
+    ],
+    "dialogue": [
+      {
+        "role": "Waiter",
+        "en": "Hi! What can I get for you?",
+        "vi": "Chào anh! Anh muốn uống gì ạ?"
+      },
+      {
+        "role": "Customer",
+        "en": "I'd like a black coffee, please.",
+        "vi": "Cho tôi một cà phê đen."
+      },
+      {
+        "role": "Waiter",
+        "en": "Sure. Hot or iced?",
+        "vi": "Vâng. Nóng hay đá ạ?"
+      },
+      {
+        "role": "Customer",
+        "en": "Hot, please. And a croissant.",
+        "vi": "Nóng nhé. Và thêm một bánh sừng bò."
+      },
+      {
+        "role": "Waiter",
+        "en": "Anything else?",
+        "vi": "Còn gì nữa không ạ?"
+      },
+      {
+        "role": "Customer",
+        "en": "No, that's all. Thank you.",
+        "vi": "Không, thế thôi. Cảm ơn."
+      }
+    ],
+    "key_phrases": [
+      "What can I get for you?",
+      "I'd like...",
+      "Anything else?",
+      "That's all."
+    ],
+    "key_vocab": [
+      "coffee",
+      "hot",
+      "iced",
+      "croissant"
+    ],
+    "grammar_points": [
+      "I'd like + noun",
+      "Question: Hot or iced?",
+      "That's all."
+    ],
+    "level": "a1"
+  },
+  {
+    "scenario": "Buying fruit at a market",
+    "scenario_vi": "Mua trái cây ở chợ",
+    "category": "food_and_drink",
+    "roles": [
+      "Customer",
+      "Vendor"
+    ],
+    "dialogue": [
+      {
+        "role": "Customer",
+        "en": "How much are these apples?",
+        "vi": "Táo này bao nhiêu tiền ạ?"
+      },
+      {
+        "role": "Vendor",
+        "en": "They're 20,000 dong per kilo.",
+        "vi": "20.000 đồng một cân."
+      },
+      {
+        "role": "Customer",
+        "en": "I'll take two kilos, please.",
+        "vi": "Cho tôi hai cân."
+      },
+      {
+        "role": "Vendor",
+        "en": "Here you are. Anything else?",
+        "vi": "Của bạn đây. Còn gì nữa không?"
+      },
+      {
+        "role": "Customer",
+        "en": "Yes, some bananas. How much are they?",
+        "vi": "Có, cho tôi ít chuối. Chuối bao nhiêu tiền?"
+      },
+      {
+        "role": "Vendor",
+        "en": "15,000 dong per kilo.",
+        "vi": "15.000 đồng một cân."
+      },
+      {
+        "role": "Customer",
+        "en": "Give me one kilo, please.",
+        "vi": "Cho tôi một cân."
+      },
+      {
+        "role": "Vendor",
+        "en": "Okay. That'll be 55,000 dong total.",
+        "vi": "Được rồi. Tổng cộng 55.000 đồng."
+      }
+    ],
+    "key_phrases": [
+      "How much are...?",
+      "I'll take...",
+      "Anything else?",
+      "Give me..."
+    ],
+    "key_vocab": [
+      "apples",
+      "bananas",
+      "kilo",
+      "dongs",
+      "total"
+    ],
+    "grammar_points": [
+      "How much + noun + verb?",
+      "I'll take + number + noun",
+      "That'll be + amount"
+    ],
+    "level": "a1"
+  }
+]

@@ -1,0 +1,359 @@
+[
+  {
+    "scenario": "Job interview for a marketing position",
+    "scenario_vi": "Phỏng vấn xin việc vị trí marketing",
+    "category": "work_and_jobs",
+    "roles": [
+      "Interviewer",
+      "Candidate"
+    ],
+    "dialogue": [
+      {
+        "role": "Interviewer",
+        "en": "So, tell me about your experience in marketing.",
+        "vi": "Vậy, hãy kể cho tôi nghe về kinh nghiệm marketing của bạn."
+      },
+      {
+        "role": "Candidate",
+        "en": "Well, I've been working in digital marketing for three years now.",
+        "vi": "À, tôi đã làm marketing kỹ thuật số được ba năm rồi."
+      },
+      {
+        "role": "Interviewer",
+        "en": "Impressive. What's your biggest achievement so far?",
+        "vi": "Ấn tượng đấy. Thành tích lớn nhất của bạn là gì?"
+      },
+      {
+        "role": "Candidate",
+        "en": "I led a campaign that boosted sales by 30% in six months.",
+        "vi": "Tôi đã dẫn dắt một chiến dịch giúp tăng doanh số 30% trong sáu tháng."
+      },
+      {
+        "role": "Interviewer",
+        "en": "That's great. How do you handle tight deadlines?",
+        "vi": "Tuyệt. Bạn xử lý deadline gấp rút thế nào?"
+      },
+      {
+        "role": "Candidate",
+        "en": "I prioritize tasks and stay focused. I'm used to working under pressure.",
+        "vi": "Tôi ưu tiên công việc và tập trung. Tôi quen với áp lực rồi."
+      },
+      {
+        "role": "Interviewer",
+        "en": "Good. Why do you want to work here?",
+        "vi": "Tốt. Tại sao bạn muốn làm việc ở đây?"
+      },
+      {
+        "role": "Candidate",
+        "en": "I admire your company's innovative approach and would love to contribute.",
+        "vi": "Tôi ngưỡng mộ cách tiếp cận sáng tạo của công ty và muốn đóng góp."
+      },
+      {
+        "role": "Interviewer",
+        "en": "Any questions for me?",
+        "vi": "Có câu hỏi gì cho tôi không?"
+      },
+      {
+        "role": "Candidate",
+        "en": "Yes, what's the team culture like here?",
+        "vi": "Có, văn hóa nhóm ở đây thế nào ạ?"
+      },
+      {
+        "role": "Interviewer",
+        "en": "We're collaborative and supportive. You'll fit right in.",
+        "vi": "Chúng tôi hợp tác và hỗ trợ lẫn nhau. Bạn sẽ hòa nhập ngay thôi."
+      },
+      {
+        "role": "Candidate",
+        "en": "Sounds perfect. Thank you for your time.",
+        "vi": "Nghe tuyệt quá. Cảm ơn anh/chị đã dành thời gian."
+      }
+    ],
+    "key_phrases": [
+      "tell me about your experience",
+      "biggest achievement",
+      "handle tight deadlines",
+      "team culture"
+    ],
+    "key_vocab": [
+      "campaign",
+      "boost",
+      "deadline",
+      "innovative",
+      "collaborative"
+    ],
+    "grammar_points": [
+      "present perfect continuous (have been working)",
+      "used to + noun/gerund"
+    ],
+    "level": "b1"
+  },
+  {
+    "scenario": "Discussing a project deadline with a colleague",
+    "scenario_vi": "Bàn về deadline dự án với đồng nghiệp",
+    "category": "work_and_jobs",
+    "roles": [
+      "Manager",
+      "Employee"
+    ],
+    "dialogue": [
+      {
+        "role": "Manager",
+        "en": "Hey, got a minute? We need to talk about the project deadline.",
+        "vi": "Này, có rảnh không? Chúng ta cần nói về deadline dự án."
+      },
+      {
+        "role": "Employee",
+        "en": "Sure, what's up? I thought we were on track.",
+        "vi": "Vâng, có chuyện gì thế? Tôi tưởng mọi thứ đang ổn."
+      },
+      {
+        "role": "Manager",
+        "en": "The client just pushed the deadline forward by two weeks.",
+        "vi": "Khách hàng vừa đẩy deadline lên sớm hai tuần."
+      },
+      {
+        "role": "Employee",
+        "en": "That's tough. We'd have to work overtime to make it.",
+        "vi": "Khó đấy. Chúng ta sẽ phải tăng ca để kịp."
+      },
+      {
+        "role": "Manager",
+        "en": "I know. Can you rearrange your tasks and prioritize the critical ones?",
+        "vi": "Tôi biết. Anh có thể sắp xếp lại công việc và ưu tiên những việc quan trọng không?"
+      },
+      {
+        "role": "Employee",
+        "en": "I'll try. But I'll need help from the design team.",
+        "vi": "Tôi sẽ cố. Nhưng tôi cần sự giúp đỡ từ team thiết kế."
+      },
+      {
+        "role": "Manager",
+        "en": "I'll talk to them. Also, let's have a quick stand-up meeting every morning.",
+        "vi": "Tôi sẽ nói chuyện với họ. Ngoài ra, chúng ta họp nhanh mỗi sáng nhé."
+      },
+      {
+        "role": "Employee",
+        "en": "Good idea. That'll keep everyone aligned.",
+        "vi": "Ý hay đấy. Điều đó giúp mọi người đồng bộ."
+      },
+      {
+        "role": "Manager",
+        "en": "Great. Let's make it happen. Any other concerns?",
+        "vi": "Tốt. Cùng làm nhé. Còn lo lắng gì không?"
+      },
+      {
+        "role": "Employee",
+        "en": "Just the workload. But I'll manage.",
+        "vi": "Chỉ có khối lượng công việc thôi. Nhưng tôi sẽ xoay sở được."
+      },
+      {
+        "role": "Manager",
+        "en": "I appreciate your dedication. Let's get through this together.",
+        "vi": "Tôi đánh giá cao sự tận tâm của anh. Cùng vượt qua nhé."
+      },
+      {
+        "role": "Employee",
+        "en": "Thanks. I'll update my task list and get back to you.",
+        "vi": "Cảm ơn. Tôi sẽ cập nhật danh sách công việc và báo lại anh."
+      }
+    ],
+    "key_phrases": [
+      "push the deadline forward",
+      "work overtime",
+      "stand-up meeting",
+      "get through this together"
+    ],
+    "key_vocab": [
+      "deadline",
+      "overtime",
+      "prioritize",
+      "aligned",
+      "workload"
+    ],
+    "grammar_points": [
+      "conditional (would have to)",
+      "let's + base verb"
+    ],
+    "level": "b1"
+  },
+  {
+    "scenario": "Asking for a raise during a performance review",
+    "scenario_vi": "Xin tăng lương trong buổi đánh giá hiệu suất",
+    "category": "work_and_jobs",
+    "roles": [
+      "Employee",
+      "Manager"
+    ],
+    "dialogue": [
+      {
+        "role": "Manager",
+        "en": "Thanks for coming. Let's review your performance this quarter.",
+        "vi": "Cảm ơn anh đã đến. Cùng xem xét hiệu suất quý này nhé."
+      },
+      {
+        "role": "Employee",
+        "en": "Sure. I think I've exceeded my targets, especially in sales.",
+        "vi": "Vâng. Tôi nghĩ tôi đã vượt chỉ tiêu, đặc biệt là doanh số."
+      },
+      {
+        "role": "Manager",
+        "en": "Absolutely, your numbers are impressive. Is there anything you'd like to discuss?",
+        "vi": "Chắc chắn rồi, số liệu của anh rất ấn tượng. Anh muốn thảo luận gì không?"
+      },
+      {
+        "role": "Employee",
+        "en": "Actually, I'd like to talk about my compensation. I believe I deserve a raise.",
+        "vi": "Thực ra, tôi muốn nói về lương. Tôi tin mình xứng đáng được tăng lương."
+      },
+      {
+        "role": "Manager",
+        "en": "I see. What kind of increase are you thinking?",
+        "vi": "Tôi hiểu. Anh nghĩ mức tăng bao nhiêu?"
+      },
+      {
+        "role": "Employee",
+        "en": "Around 15% would be fair, given my contributions and market rates.",
+        "vi": "Khoảng 15% là hợp lý, dựa trên đóng góp và mặt bằng thị trường."
+      },
+      {
+        "role": "Manager",
+        "en": "That's a bit high. Let me see what we can do. I'll need to get approval from HR.",
+        "vi": "Hơi cao đấy. Để tôi xem có thể làm gì. Tôi cần xin phép HR."
+      },
+      {
+        "role": "Employee",
+        "en": "I understand. I just feel that my efforts should be recognized financially.",
+        "vi": "Tôi hiểu. Tôi chỉ cảm thấy nỗ lực của mình nên được ghi nhận về mặt tài chính."
+      },
+      {
+        "role": "Manager",
+        "en": "You've made a strong case. I'll support your request.",
+        "vi": "Anh đã đưa ra lý lẽ thuyết phục. Tôi sẽ ủng hộ yêu cầu của anh."
+      },
+      {
+        "role": "Employee",
+        "en": "Thank you. I really appreciate that.",
+        "vi": "Cảm ơn anh. Tôi rất trân trọng điều đó."
+      },
+      {
+        "role": "Manager",
+        "en": "Let's follow up next week. Keep up the good work!",
+        "vi": "Tuần sau chúng ta sẽ theo dõi tiếp. Hãy tiếp tục phát huy nhé!"
+      },
+      {
+        "role": "Employee",
+        "en": "Will do. Thanks again.",
+        "vi": "Vâng ạ. Cảm ơn lần nữa."
+      }
+    ],
+    "key_phrases": [
+      "exceeded my targets",
+      "deserve a raise",
+      "market rates",
+      "made a strong case"
+    ],
+    "key_vocab": [
+      "compensation",
+      "raise",
+      "contributions",
+      "approval",
+      "recognized"
+    ],
+    "grammar_points": [
+      "present perfect (have exceeded)",
+      "conditional (would be)"
+    ],
+    "level": "b1"
+  },
+  {
+    "scenario": "Networking at a company event",
+    "scenario_vi": "Giao lưu kết nối tại sự kiện công ty",
+    "category": "work_and_jobs",
+    "roles": [
+      "Employee",
+      "Colleague from another department"
+    ],
+    "dialogue": [
+      {
+        "role": "Employee",
+        "en": "Hi, I don't think we've met. I'm Linh from marketing.",
+        "vi": "Chào, hình như chưa gặp nhau. Tôi là Linh bên marketing."
+      },
+      {
+        "role": "Colleague from another department",
+        "en": "Nice to meet you! I'm Minh from IT. Enjoying the event?",
+        "vi": "Rất vui được gặp bạn! Tôi là Minh bên IT. Bạn có thích sự kiện không?"
+      },
+      {
+        "role": "Employee",
+        "en": "Yeah, it's great. I'm learning a lot about the new projects.",
+        "vi": "Ừ, tuyệt lắm. Tôi đang học được nhiều về các dự án mới."
+      },
+      {
+        "role": "Colleague from another department",
+        "en": "Same here. I'm working on the new CRM system. It's been quite a challenge.",
+        "vi": "Tôi cũng vậy. Tôi đang làm hệ thống CRM mới. Khá là thử thách."
+      },
+      {
+        "role": "Employee",
+        "en": "Oh, I've heard about that. How's it going so far?",
+        "vi": "Ồ, tôi có nghe nói. Dạo này thế nào rồi?"
+      },
+      {
+        "role": "Colleague from another department",
+        "en": "We're ironing out some bugs, but it should be ready next month.",
+        "vi": "Chúng tôi đang sửa vài lỗi, nhưng dự kiến hoàn thành tháng sau."
+      },
+      {
+        "role": "Employee",
+        "en": "That's good to hear. Maybe we can collaborate once it's live.",
+        "vi": "Nghe tốt đấy. Có lẽ chúng ta có thể hợp tác khi nó chạy."
+      },
+      {
+        "role": "Colleague from another department",
+        "en": "Absolutely! I'd love to see how marketing can leverage it.",
+        "vi": "Chắc chắn rồi! Tôi rất muốn xem marketing tận dụng nó thế nào."
+      },
+      {
+        "role": "Employee",
+        "en": "Let's exchange contact info. We can grab coffee sometime.",
+        "vi": "Đổi thông tin liên lạc nhé. Hôm nào cà phê nói chuyện."
+      },
+      {
+        "role": "Colleague from another department",
+        "en": "Sounds good. I'll send you an invite for a demo next week.",
+        "vi": "Tuyệt đấy. Tôi sẽ gửi bạn lời mời xem demo tuần sau."
+      },
+      {
+        "role": "Employee",
+        "en": "Perfect. Looking forward to it!",
+        "vi": "Hoàn hảo. Rất mong chờ!"
+      },
+      {
+        "role": "Colleague from another department",
+        "en": "Same here. See you around!",
+        "vi": "Tôi cũng vậy. Hẹn gặp lại!"
+      }
+    ],
+    "key_phrases": [
+      "don't think we've met",
+      "ironing out some bugs",
+      "exchange contact info",
+      "grab coffee sometime"
+    ],
+    "key_vocab": [
+      "networking",
+      "projects",
+      "CRM",
+      "bugs",
+      "demo",
+      "collaborate"
+    ],
+    "grammar_points": [
+      "present continuous (am working)",
+      "present perfect (have heard)"
+    ],
+    "level": "b1"
+  }
+]
