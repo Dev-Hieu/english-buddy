@@ -65,6 +65,7 @@ export function DashboardPage({ students, onBackHome }: DashboardPageProps) {
   const [skillResults, setSkillResults] = useState<SkillTestResult[]>([]);
   const [info, setInfo] = useState<Student | null>(null);
   const [expandedSection, setExpandedSection] = useState<string | null>(null);
+  const [copied, setCopied] = useState(false);
 
   const student = students[0];
 
@@ -112,7 +113,6 @@ export function DashboardPage({ students, onBackHome }: DashboardPageProps) {
   const toggle = (key: string) => setExpandedSection(expandedSection === key ? null : key);
 
   // Share progress
-  const [copied, setCopied] = useState(false);
   const badgeCount = countEarnedBadgesInline(student, learnedIds.size);
   const shareText = `English Buddy\n${student.name}: ${levelLabel(xp)} · ${xp} XP · ${streak} ngay\n${learnedIds.size} tu da hoc\n${badgeCount} huy hieu\nen.vev.vn`;
 
