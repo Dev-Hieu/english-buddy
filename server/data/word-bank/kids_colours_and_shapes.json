@@ -1,0 +1,874 @@
+[
+  {
+    "id": "wb_kids_colours_and_shapes_001",
+    "word": "red",
+    "phonetic": "/rɛd/",
+    "meaning_vi": "màu đỏ",
+    "meaning_en": "the color of a strawberry",
+    "pos": "adjective",
+    "level": "kids",
+    "categories": [
+      "colours_and_shapes"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "The apple is red.",
+        "vi": "Trái táo màu đỏ."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "red apple",
+      "red car"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "a red ...",
+      "the red ..."
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_colours_and_shapes_002",
+    "word": "blue",
+    "phonetic": "/bluː/",
+    "meaning_vi": "màu xanh dương",
+    "meaning_en": "the color of the sky",
+    "pos": "adjective",
+    "level": "kids",
+    "categories": [
+      "colours_and_shapes"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "The sky is blue.",
+        "vi": "Bầu trời màu xanh dương."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "blue sky",
+      "blue water"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "a blue ...",
+      "the blue ..."
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_colours_and_shapes_003",
+    "word": "green",
+    "phonetic": "/ɡriːn/",
+    "meaning_vi": "màu xanh lá",
+    "meaning_en": "the color of grass",
+    "pos": "adjective",
+    "level": "kids",
+    "categories": [
+      "colours_and_shapes"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "The grass is green.",
+        "vi": "Cỏ màu xanh lá."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "green grass",
+      "green tree"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "a green ...",
+      "the green ..."
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_colours_and_shapes_004",
+    "word": "yellow",
+    "phonetic": "/ˈjɛloʊ/",
+    "meaning_vi": "màu vàng",
+    "meaning_en": "the color of the sun",
+    "pos": "adjective",
+    "level": "kids",
+    "categories": [
+      "colours_and_shapes"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "The sun is yellow.",
+        "vi": "Mặt trời màu vàng."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "yellow sun",
+      "yellow banana"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "a yellow ...",
+      "the yellow ..."
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_colours_and_shapes_005",
+    "word": "pink",
+    "phonetic": "/pɪŋk/",
+    "meaning_vi": "màu hồng",
+    "meaning_en": "the color of a flower",
+    "pos": "adjective",
+    "level": "kids",
+    "categories": [
+      "colours_and_shapes"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "The flower is pink.",
+        "vi": "Bông hoa màu hồng."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "pink flower",
+      "pink dress"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "a pink ...",
+      "the pink ..."
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_colours_and_shapes_006",
+    "word": "orange",
+    "phonetic": "/ˈɔrɪndʒ/",
+    "meaning_vi": "màu cam",
+    "meaning_en": "the color of an orange fruit",
+    "pos": "adjective",
+    "level": "kids",
+    "categories": [
+      "colours_and_shapes"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "The orange is orange.",
+        "vi": "Trái cam màu cam."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "orange juice",
+      "orange ball"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "an orange ...",
+      "the orange ..."
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_colours_and_shapes_007",
+    "word": "purple",
+    "phonetic": "/ˈpɜrpəl/",
+    "meaning_vi": "màu tím",
+    "meaning_en": "the color of a grape",
+    "pos": "adjective",
+    "level": "kids",
+    "categories": [
+      "colours_and_shapes"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "The grape is purple.",
+        "vi": "Trái nho màu tím."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "purple grape",
+      "purple flower"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "a purple ...",
+      "the purple ..."
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_colours_and_shapes_008",
+    "word": "white",
+    "phonetic": "/waɪt/",
+    "meaning_vi": "màu trắng",
+    "meaning_en": "the color of snow",
+    "pos": "adjective",
+    "level": "kids",
+    "categories": [
+      "colours_and_shapes"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "The snow is white.",
+        "vi": "Tuyết màu trắng."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "white snow",
+      "white paper"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "a white ...",
+      "the white ..."
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_colours_and_shapes_009",
+    "word": "black",
+    "phonetic": "/blæk/",
+    "meaning_vi": "màu đen",
+    "meaning_en": "the color of night",
+    "pos": "adjective",
+    "level": "kids",
+    "categories": [
+      "colours_and_shapes"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "The cat is black.",
+        "vi": "Con mèo màu đen."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "black cat",
+      "black hat"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "a black ...",
+      "the black ..."
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_colours_and_shapes_010",
+    "word": "brown",
+    "phonetic": "/braʊn/",
+    "meaning_vi": "màu nâu",
+    "meaning_en": "the color of chocolate",
+    "pos": "adjective",
+    "level": "kids",
+    "categories": [
+      "colours_and_shapes"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "The dog is brown.",
+        "vi": "Con chó màu nâu."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "brown dog",
+      "brown bear"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "a brown ...",
+      "the brown ..."
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_colours_and_shapes_011",
+    "word": "circle",
+    "phonetic": "/ˈsɜrkəl/",
+    "meaning_vi": "hình tròn",
+    "meaning_en": "a round shape like a ball",
+    "pos": "noun",
+    "level": "kids",
+    "categories": [
+      "colours_and_shapes"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "I draw a circle.",
+        "vi": "Con vẽ một hình tròn."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "a circle",
+      "big circle"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "a circle",
+      "the circle"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_colours_and_shapes_012",
+    "word": "square",
+    "phonetic": "/skwɛr/",
+    "meaning_vi": "hình vuông",
+    "meaning_en": "a shape with four equal sides",
+    "pos": "noun",
+    "level": "kids",
+    "categories": [
+      "colours_and_shapes"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "The box is a square.",
+        "vi": "Cái hộp là hình vuông."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "a square",
+      "red square"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "a square",
+      "the square"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_colours_and_shapes_013",
+    "word": "triangle",
+    "phonetic": "/ˈtraɪæŋɡəl/",
+    "meaning_vi": "hình tam giác",
+    "meaning_en": "a shape with three sides",
+    "pos": "noun",
+    "level": "kids",
+    "categories": [
+      "colours_and_shapes"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "I see a triangle.",
+        "vi": "Con thấy một hình tam giác."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "a triangle",
+      "blue triangle"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "a triangle",
+      "the triangle"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_colours_and_shapes_014",
+    "word": "star",
+    "phonetic": "/stɑr/",
+    "meaning_vi": "hình ngôi sao",
+    "meaning_en": "a shape with five points",
+    "pos": "noun",
+    "level": "kids",
+    "categories": [
+      "colours_and_shapes"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "The star is yellow.",
+        "vi": "Hình ngôi sao màu vàng."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "a star",
+      "yellow star"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "a star",
+      "the star"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_colours_and_shapes_015",
+    "word": "heart",
+    "phonetic": "/hɑrt/",
+    "meaning_vi": "hình trái tim",
+    "meaning_en": "a shape like love",
+    "pos": "noun",
+    "level": "kids",
+    "categories": [
+      "colours_and_shapes"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "I draw a heart.",
+        "vi": "Con vẽ một hình trái tim."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "a heart",
+      "red heart"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "a heart",
+      "the heart"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_colours_and_shapes_016",
+    "word": "rectangle",
+    "phonetic": "/ˈrɛktæŋɡəl/",
+    "meaning_vi": "hình chữ nhật",
+    "meaning_en": "a shape with four sides, two long",
+    "pos": "noun",
+    "level": "kids",
+    "categories": [
+      "colours_and_shapes"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "The door is a rectangle.",
+        "vi": "Cái cửa là hình chữ nhật."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "a rectangle",
+      "big rectangle"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "a rectangle",
+      "the rectangle"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_colours_and_shapes_017",
+    "word": "oval",
+    "phonetic": "/ˈoʊvəl/",
+    "meaning_vi": "hình bầu dục",
+    "meaning_en": "a shape like an egg",
+    "pos": "noun",
+    "level": "kids",
+    "categories": [
+      "colours_and_shapes"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "The egg is an oval.",
+        "vi": "Quả trứng là hình bầu dục."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "an oval",
+      "white oval"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "an oval",
+      "the oval"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_colours_and_shapes_018",
+    "word": "diamond",
+    "phonetic": "/ˈdaɪəmənd/",
+    "meaning_vi": "hình thoi",
+    "meaning_en": "a shape with four pointed sides",
+    "pos": "noun",
+    "level": "kids",
+    "categories": [
+      "colours_and_shapes"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "The kite is a diamond.",
+        "vi": "Cái diều là hình thoi."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "a diamond",
+      "blue diamond"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "a diamond",
+      "the diamond"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_colours_and_shapes_019",
+    "word": "big",
+    "phonetic": "/bɪɡ/",
+    "meaning_vi": "to",
+    "meaning_en": "large in size",
+    "pos": "adjective",
+    "level": "kids",
+    "categories": [
+      "colours_and_shapes"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "The ball is big.",
+        "vi": "Quả bóng to."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "big ball",
+      "big house"
+    ],
+    "synonyms": [
+      "large"
+    ],
+    "antonyms": [
+      "small"
+    ],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "a big ...",
+      "the big ..."
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_colours_and_shapes_020",
+    "word": "small",
+    "phonetic": "/smɔl/",
+    "meaning_vi": "nhỏ",
+    "meaning_en": "little in size",
+    "pos": "adjective",
+    "level": "kids",
+    "categories": [
+      "colours_and_shapes"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "The bug is small.",
+        "vi": "Con bọ nhỏ."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "small bug",
+      "small toy"
+    ],
+    "synonyms": [
+      "little"
+    ],
+    "antonyms": [
+      "big"
+    ],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "a small ...",
+      "the small ..."
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_colours_and_shapes_021",
+    "word": "round",
+    "phonetic": "/raʊnd/",
+    "meaning_vi": "tròn",
+    "meaning_en": "shaped like a circle",
+    "pos": "adjective",
+    "level": "kids",
+    "categories": [
+      "colours_and_shapes"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "The ball is round.",
+        "vi": "Quả bóng tròn."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "round ball",
+      "round table"
+    ],
+    "synonyms": [
+      "circular"
+    ],
+    "antonyms": [
+      "square"
+    ],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "a round ...",
+      "the round ..."
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_colours_and_shapes_022",
+    "word": "long",
+    "phonetic": "/lɔŋ/",
+    "meaning_vi": "dài",
+    "meaning_en": "measuring a lot from end to end",
+    "pos": "adjective",
+    "level": "kids",
+    "categories": [
+      "colours_and_shapes"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "The snake is long.",
+        "vi": "Con rắn dài."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "long snake",
+      "long road"
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "short"
+    ],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "a long ...",
+      "the long ..."
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_colours_and_shapes_023",
+    "word": "short",
+    "phonetic": "/ʃɔrt/",
+    "meaning_vi": "ngắn",
+    "meaning_en": "not long; little length",
+    "pos": "adjective",
+    "level": "kids",
+    "categories": [
+      "colours_and_shapes"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "The pencil is short.",
+        "vi": "Cây bút chì ngắn."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "short pencil",
+      "short hair"
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "long"
+    ],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "a short ...",
+      "the short ..."
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_colours_and_shapes_024",
+    "word": "tall",
+    "phonetic": "/tɔl/",
+    "meaning_vi": "cao",
+    "meaning_en": "high in height",
+    "pos": "adjective",
+    "level": "kids",
+    "categories": [
+      "colours_and_shapes"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "The tree is tall.",
+        "vi": "Cái cây cao."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "tall tree",
+      "tall man"
+    ],
+    "synonyms": [
+      "high"
+    ],
+    "antonyms": [
+      "short"
+    ],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "a tall ...",
+      "the tall ..."
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_colours_and_shapes_025",
+    "word": "wide",
+    "phonetic": "/waɪd/",
+    "meaning_vi": "rộng",
+    "meaning_en": "big from side to side",
+    "pos": "adjective",
+    "level": "kids",
+    "categories": [
+      "colours_and_shapes"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "The road is wide.",
+        "vi": "Con đường rộng."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "wide road",
+      "wide door"
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "narrow"
+    ],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "a wide ...",
+      "the wide ..."
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  }
+]

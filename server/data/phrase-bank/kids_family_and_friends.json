@@ -1,0 +1,252 @@
+[
+  {
+    "phrase": "Hello",
+    "meaning_vi": "Xin chào",
+    "type": "greeting",
+    "level": "kids",
+    "category": "family_and_friends",
+    "examples": [
+      {
+        "en": "Hello, Mom!",
+        "vi": "Xin chào mẹ!"
+      }
+    ],
+    "collocations": [],
+    "response": "Hello!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Hello!"
+      },
+      {
+        "speaker": "B",
+        "text": "Hello, friend!"
+      }
+    ]
+  },
+  {
+    "phrase": "I love you",
+    "meaning_vi": "Con yêu bạn",
+    "type": "expression",
+    "level": "kids",
+    "category": "family_and_friends",
+    "examples": [
+      {
+        "en": "I love you, Dad!",
+        "vi": "Con yêu bố!"
+      }
+    ],
+    "collocations": [],
+    "response": "I love you too!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I love you!"
+      },
+      {
+        "speaker": "B",
+        "text": "I love you too!"
+      }
+    ]
+  },
+  {
+    "phrase": "Thank you",
+    "meaning_vi": "Cảm ơn bạn",
+    "type": "expression",
+    "level": "kids",
+    "category": "family_and_friends",
+    "examples": [
+      {
+        "en": "Thank you, Grandma!",
+        "vi": "Cảm ơn bà!"
+      }
+    ],
+    "collocations": [],
+    "response": "You're welcome!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Thank you!"
+      },
+      {
+        "speaker": "B",
+        "text": "You're welcome!"
+      }
+    ]
+  },
+  {
+    "phrase": "Let's play",
+    "meaning_vi": "Chơi đi",
+    "type": "request",
+    "level": "kids",
+    "category": "family_and_friends",
+    "examples": [
+      {
+        "en": "Let's play, friend!",
+        "vi": "Chơi đi, bạn!"
+      }
+    ],
+    "collocations": [],
+    "response": "Yes, let's play!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Let's play!"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, let's play!"
+      }
+    ]
+  },
+  {
+    "phrase": "How are you?",
+    "meaning_vi": "Bạn khỏe không?",
+    "type": "question",
+    "level": "kids",
+    "category": "family_and_friends",
+    "examples": [
+      {
+        "en": "How are you, Mom?",
+        "vi": "Mẹ khỏe không?"
+      }
+    ],
+    "collocations": [],
+    "response": "I'm fine, thank you!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How are you?"
+      },
+      {
+        "speaker": "B",
+        "text": "I'm fine, thank you!"
+      }
+    ]
+  },
+  {
+    "phrase": "Goodbye",
+    "meaning_vi": "Tạm biệt",
+    "type": "greeting",
+    "level": "kids",
+    "category": "family_and_friends",
+    "examples": [
+      {
+        "en": "Goodbye, teacher!",
+        "vi": "Tạm biệt cô giáo!"
+      }
+    ],
+    "collocations": [],
+    "response": "Goodbye!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Goodbye!"
+      },
+      {
+        "speaker": "B",
+        "text": "Goodbye, see you!"
+      }
+    ]
+  },
+  {
+    "phrase": "My friend",
+    "meaning_vi": "Bạn của con",
+    "type": "expression",
+    "level": "kids",
+    "category": "family_and_friends",
+    "examples": [
+      {
+        "en": "This is my friend.",
+        "vi": "Đây là bạn của con."
+      }
+    ],
+    "collocations": [],
+    "response": "Nice to meet you!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "This is my friend."
+      },
+      {
+        "speaker": "B",
+        "text": "Nice to meet you!"
+      }
+    ]
+  },
+  {
+    "phrase": "Come here",
+    "meaning_vi": "Lại đây",
+    "type": "request",
+    "level": "kids",
+    "category": "family_and_friends",
+    "examples": [
+      {
+        "en": "Come here, Mom!",
+        "vi": "Lại đây mẹ!"
+      }
+    ],
+    "collocations": [],
+    "response": "I'm coming!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Come here!"
+      },
+      {
+        "speaker": "B",
+        "text": "I'm coming!"
+      }
+    ]
+  },
+  {
+    "phrase": "I'm sorry",
+    "meaning_vi": "Con xin lỗi",
+    "type": "expression",
+    "level": "kids",
+    "category": "family_and_friends",
+    "examples": [
+      {
+        "en": "I'm sorry, Dad.",
+        "vi": "Con xin lỗi bố."
+      }
+    ],
+    "collocations": [],
+    "response": "It's okay!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I'm sorry."
+      },
+      {
+        "speaker": "B",
+        "text": "It's okay!"
+      }
+    ]
+  },
+  {
+    "phrase": "Where is my mom?",
+    "meaning_vi": "Mẹ con ở đâu?",
+    "type": "question",
+    "level": "kids",
+    "category": "family_and_friends",
+    "examples": [
+      {
+        "en": "Where is my mom?",
+        "vi": "Mẹ con ở đâu?"
+      }
+    ],
+    "collocations": [],
+    "response": "She is there!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Where is my mom?"
+      },
+      {
+        "speaker": "B",
+        "text": "She is there!"
+      }
+    ]
+  }
+]

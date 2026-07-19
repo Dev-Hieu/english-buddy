@@ -1,0 +1,252 @@
+[
+  {
+    "phrase": "I am sick",
+    "meaning_vi": "Con bị ốm",
+    "type": "expression",
+    "level": "kids",
+    "category": "health_and_body",
+    "examples": [
+      {
+        "en": "I am sick.",
+        "vi": "Con bị ốm."
+      }
+    ],
+    "collocations": [],
+    "response": "Oh no! Get well soon!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I am sick."
+      },
+      {
+        "speaker": "B",
+        "text": "Oh no! Get well soon!"
+      }
+    ]
+  },
+  {
+    "phrase": "My head hurts",
+    "meaning_vi": "Đầu của con đau",
+    "type": "expression",
+    "level": "kids",
+    "category": "health_and_body",
+    "examples": [
+      {
+        "en": "My head hurts.",
+        "vi": "Đầu của con đau."
+      }
+    ],
+    "collocations": [],
+    "response": "Let me check your temperature.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "My head hurts."
+      },
+      {
+        "speaker": "B",
+        "text": "Let me check your temperature."
+      }
+    ]
+  },
+  {
+    "phrase": "I have a cough",
+    "meaning_vi": "Con bị ho",
+    "type": "expression",
+    "level": "kids",
+    "category": "health_and_body",
+    "examples": [
+      {
+        "en": "I have a cough.",
+        "vi": "Con bị ho."
+      }
+    ],
+    "collocations": [],
+    "response": "Drink some warm water.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I have a cough."
+      },
+      {
+        "speaker": "B",
+        "text": "Drink some warm water."
+      }
+    ]
+  },
+  {
+    "phrase": "I feel hot",
+    "meaning_vi": "Con thấy nóng",
+    "type": "expression",
+    "level": "kids",
+    "category": "health_and_body",
+    "examples": [
+      {
+        "en": "I feel hot.",
+        "vi": "Con thấy nóng."
+      }
+    ],
+    "collocations": [],
+    "response": "Let me take your temperature.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I feel hot."
+      },
+      {
+        "speaker": "B",
+        "text": "Let me take your temperature."
+      }
+    ]
+  },
+  {
+    "phrase": "I need a bandage",
+    "meaning_vi": "Con cần băng cá nhân",
+    "type": "request",
+    "level": "kids",
+    "category": "health_and_body",
+    "examples": [
+      {
+        "en": "I need a bandage.",
+        "vi": "Con cần băng cá nhân."
+      }
+    ],
+    "collocations": [],
+    "response": "Here you go.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I need a bandage."
+      },
+      {
+        "speaker": "B",
+        "text": "Here you go."
+      }
+    ]
+  },
+  {
+    "phrase": "Wash your hands",
+    "meaning_vi": "Rửa tay đi",
+    "type": "request",
+    "level": "kids",
+    "category": "health_and_body",
+    "examples": [
+      {
+        "en": "Wash your hands.",
+        "vi": "Rửa tay đi."
+      }
+    ],
+    "collocations": [],
+    "response": "Okay, I will.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Wash your hands."
+      },
+      {
+        "speaker": "B",
+        "text": "Okay, I will."
+      }
+    ]
+  },
+  {
+    "phrase": "I am tired",
+    "meaning_vi": "Con mệt",
+    "type": "expression",
+    "level": "kids",
+    "category": "health_and_body",
+    "examples": [
+      {
+        "en": "I am tired.",
+        "vi": "Con mệt."
+      }
+    ],
+    "collocations": [],
+    "response": "Take a rest.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I am tired."
+      },
+      {
+        "speaker": "B",
+        "text": "Take a rest."
+      }
+    ]
+  },
+  {
+    "phrase": "Do I have a fever?",
+    "meaning_vi": "Con có bị sốt không?",
+    "type": "question",
+    "level": "kids",
+    "category": "health_and_body",
+    "examples": [
+      {
+        "en": "Do I have a fever?",
+        "vi": "Con có bị sốt không?"
+      }
+    ],
+    "collocations": [],
+    "response": "Let me check.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do I have a fever?"
+      },
+      {
+        "speaker": "B",
+        "text": "Let me check."
+      }
+    ]
+  },
+  {
+    "phrase": "I feel better",
+    "meaning_vi": "Con thấy khỏe hơn",
+    "type": "expression",
+    "level": "kids",
+    "category": "health_and_body",
+    "examples": [
+      {
+        "en": "I feel better.",
+        "vi": "Con thấy khỏe hơn."
+      }
+    ],
+    "collocations": [],
+    "response": "That's great!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I feel better."
+      },
+      {
+        "speaker": "B",
+        "text": "That's great!"
+      }
+    ]
+  },
+  {
+    "phrase": "Brush your teeth",
+    "meaning_vi": "Đánh răng đi",
+    "type": "request",
+    "level": "kids",
+    "category": "health_and_body",
+    "examples": [
+      {
+        "en": "Brush your teeth.",
+        "vi": "Đánh răng đi."
+      }
+    ],
+    "collocations": [],
+    "response": "Okay, I will.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Brush your teeth."
+      },
+      {
+        "speaker": "B",
+        "text": "Okay, I will."
+      }
+    ]
+  }
+]

@@ -1627,11 +1627,229 @@ const LESSONS: IntegratedLesson[] = [
       },
     ],
   },
+  // ── Kids Lessons (Pre-A1) ──
+  {
+    id: "il_29",
+    title: "My ABC",
+    titleVi: "Bảng chữ cái của con",
+    level: "kids",
+    topic: "education",
+    steps: [
+      {
+        type: "vocab",
+        title: "School Words",
+        content: "Learn these school words.",
+        words: [
+          { en: "book", vi: "quyển sách" },
+          { en: "pen", vi: "cây bút" },
+          { en: "school", vi: "trường học" },
+          { en: "teacher", vi: "cô giáo / thầy giáo" },
+          { en: "bag", vi: "cái túi / cặp sách" },
+          { en: "desk", vi: "cái bàn học" },
+        ],
+      },
+      {
+        type: "listen",
+        title: "Listen: At School",
+        content: "Listen and answer the questions.",
+        passage: "My name is Lily. I go to school. I have a bag. In my bag I have a book and a pen. My teacher is kind. I love school!",
+        questions: [
+          { q: "What is in Lily's bag?", options: ["a toy and a ball", "a book and a pen", "a cake and a cup"], answer: 1 },
+          { q: "How is Lily's teacher?", options: ["sad", "kind", "tired"], answer: 1 },
+        ],
+      },
+      {
+        type: "read",
+        title: "Read: My Classroom",
+        content: "Read and answer.",
+        passage: "This is my classroom. I have a desk. My book is on the desk. My pen is red. My bag is blue. I like my school.",
+        questions: [
+          { q: "Where is the book?", options: ["in the bag", "on the desk", "on the floor"], answer: 1 },
+          { q: "What color is the pen?", options: ["blue", "green", "red"], answer: 2 },
+        ],
+      },
+      {
+        type: "speak",
+        title: "Say It!",
+        content: "Practice saying this sentence.",
+        phrase: "I have a book and a pen.",
+      },
+      {
+        type: "write",
+        title: "Write School Words",
+        content: "Copy these words in your notebook.",
+        prompt: "Write these words: book, pen, bag, school. Example: This is my book.",
+      },
+    ],
+  },
+  {
+    id: "il_30",
+    title: "Colors & Shapes",
+    titleVi: "Màu sắc và hình dạng",
+    level: "kids",
+    topic: "colours_and_shapes",
+    steps: [
+      {
+        type: "vocab",
+        title: "Colors and Shapes",
+        content: "Learn these color and shape words.",
+        words: [
+          { en: "red", vi: "màu đỏ" },
+          { en: "blue", vi: "màu xanh dương" },
+          { en: "yellow", vi: "màu vàng" },
+          { en: "circle", vi: "hình tròn" },
+          { en: "square", vi: "hình vuông" },
+          { en: "star", vi: "ngôi sao" },
+        ],
+      },
+      {
+        type: "listen",
+        title: "Listen: My Favorite Colors",
+        content: "Listen and answer the questions.",
+        passage: "I like colors! My favorite color is blue. The sky is blue. The sun is yellow. An apple is red. I can draw a big red circle and a yellow star.",
+        questions: [
+          { q: "What is the child's favorite color?", options: ["red", "yellow", "blue"], answer: 2 },
+          { q: "What color is the sun?", options: ["red", "yellow", "blue"], answer: 1 },
+        ],
+      },
+      {
+        type: "read",
+        title: "Read: Shapes Around Us",
+        content: "Read and answer.",
+        passage: "Look around you! The sun is a circle. A box is a square. A cookie can be a star. I can see red, blue, and yellow things. Colors and shapes are fun!",
+        questions: [
+          { q: "What shape is the sun?", options: ["square", "star", "circle"], answer: 2 },
+          { q: "What shape can a cookie be?", options: ["circle", "star", "square"], answer: 1 },
+        ],
+      },
+      {
+        type: "speak",
+        title: "Say It!",
+        content: "Practice saying this sentence.",
+        phrase: "I see a big red circle.",
+      },
+      {
+        type: "write",
+        title: "Write Colors",
+        content: "Copy these color words.",
+        prompt: "Write these words: red, blue, yellow, green. Example: The apple is red.",
+      },
+    ],
+  },
+  {
+    id: "il_31",
+    title: "Animals I Know",
+    titleVi: "Các con vật con biết",
+    level: "kids",
+    topic: "animals_and_nature",
+    steps: [
+      {
+        type: "vocab",
+        title: "Animal Words",
+        content: "Learn these animal words.",
+        words: [
+          { en: "cat", vi: "con mèo" },
+          { en: "dog", vi: "con chó" },
+          { en: "bird", vi: "con chim" },
+          { en: "fish", vi: "con cá" },
+          { en: "rabbit", vi: "con thỏ" },
+          { en: "duck", vi: "con vịt" },
+        ],
+      },
+      {
+        type: "listen",
+        title: "Listen: My Pets",
+        content: "Listen and answer the questions.",
+        passage: "I have two pets. I have a cat and a fish. My cat is black. My fish is orange. I love my cat. It is soft and cute. My fish lives in a bowl.",
+        questions: [
+          { q: "What color is the cat?", options: ["orange", "black", "white"], answer: 1 },
+          { q: "Where does the fish live?", options: ["in a box", "in a bowl", "in a bag"], answer: 1 },
+        ],
+      },
+      {
+        type: "read",
+        title: "Read: Animals on the Farm",
+        content: "Read and answer.",
+        passage: "On the farm there are many animals. I can see a dog, a duck, and a rabbit. The dog says woof! The duck says quack! The rabbit is white and soft. I like animals.",
+        questions: [
+          { q: "What does the dog say?", options: ["quack", "woof", "meow"], answer: 1 },
+          { q: "What color is the rabbit?", options: ["black", "orange", "white"], answer: 2 },
+        ],
+      },
+      {
+        type: "speak",
+        title: "Say It!",
+        content: "Practice saying this sentence.",
+        phrase: "I have a cat. It is soft and cute.",
+      },
+      {
+        type: "write",
+        title: "Write Animal Names",
+        content: "Copy these animal words.",
+        prompt: "Write these words: cat, dog, bird, fish. Example: I see a dog.",
+      },
+    ],
+  },
+  {
+    id: "il_32",
+    title: "Yummy Food",
+    titleVi: "Thức ăn ngon",
+    level: "kids",
+    topic: "food_and_drink",
+    steps: [
+      {
+        type: "vocab",
+        title: "Food Words",
+        content: "Learn these food words.",
+        words: [
+          { en: "apple", vi: "quả táo" },
+          { en: "milk", vi: "sữa" },
+          { en: "cake", vi: "bánh ngọt" },
+          { en: "banana", vi: "quả chuối" },
+          { en: "water", vi: "nước" },
+          { en: "egg", vi: "quả trứng" },
+        ],
+      },
+      {
+        type: "listen",
+        title: "Listen: My Lunch",
+        content: "Listen and answer the questions.",
+        passage: "It is lunchtime! I am hungry. I eat rice and an egg. I drink milk. My mom gives me a banana. It is sweet and yummy! I love lunch.",
+        questions: [
+          { q: "What does the child drink?", options: ["water", "juice", "milk"], answer: 2 },
+          { q: "What does mom give the child?", options: ["cake", "banana", "apple"], answer: 1 },
+        ],
+      },
+      {
+        type: "read",
+        title: "Read: My Favorite Food",
+        content: "Read and answer.",
+        passage: "I like fruit. I eat an apple every day. Apples are red. I also like bananas. Bananas are yellow and sweet. I drink water with my food. Water is good for me!",
+        questions: [
+          { q: "What color are apples?", options: ["yellow", "green", "red"], answer: 2 },
+          { q: "What do apples and bananas have in common?", options: ["they are both vegetables", "they are both fruit", "they are both drinks"], answer: 1 },
+        ],
+      },
+      {
+        type: "speak",
+        title: "Say It!",
+        content: "Practice saying this sentence.",
+        phrase: "I like apples. They are red and yummy.",
+      },
+      {
+        type: "write",
+        title: "Write Food Words",
+        content: "Copy these food words.",
+        prompt: "Write these words: apple, milk, cake, egg. Example: I eat an egg.",
+      },
+    ],
+  },
 ];
 
 // ── Level badge colors ──
 
 const LEVEL_COLORS: Record<string, string> = {
+  kids: "bg-pink-100 text-pink-700 border-pink-200",
   a1: "bg-green-100 text-green-700 border-green-200",
   a2: "bg-blue-100 text-blue-700 border-blue-200",
   b1: "bg-purple-100 text-purple-700 border-purple-200",
@@ -1672,7 +1890,7 @@ export function IntegratedLessonPage({ student, onBackHome }: Props) {
 
   // Filter lessons appropriate for student level
   const filteredLessons = useMemo(() => {
-    const levelOrder = ["a1", "a2", "b1", "b2"];
+    const levelOrder = ["kids", "a1", "a2", "b1", "b2", "c1"];
     const studentIdx = levelOrder.indexOf(student.level);
     if (studentIdx < 0) return LESSONS; // show all if level not in list
     return LESSONS.filter((l) => {

@@ -1,0 +1,2502 @@
+[
+  {
+    "phrase": "Look at the bird",
+    "meaning_vi": "Nhìn con chim kìa",
+    "type": "request",
+    "level": "kids",
+    "category": "animals_and_nature",
+    "examples": [
+      {
+        "en": "Look at the bird!",
+        "vi": "Nhìn con chim kìa!"
+      }
+    ],
+    "collocations": [],
+    "response": "Yes, I see it!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Look at the bird!"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I see it!"
+      }
+    ]
+  },
+  {
+    "phrase": "I like cats",
+    "meaning_vi": "Con thích mèo",
+    "type": "expression",
+    "level": "kids",
+    "category": "animals_and_nature",
+    "examples": [
+      {
+        "en": "I like cats.",
+        "vi": "Con thích mèo."
+      }
+    ],
+    "collocations": [],
+    "response": "Cats are fun!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I like cats."
+      },
+      {
+        "speaker": "B",
+        "text": "Cats are fun!"
+      }
+    ]
+  },
+  {
+    "phrase": "The flower is pretty",
+    "meaning_vi": "Bông hoa đẹp quá",
+    "type": "expression",
+    "level": "kids",
+    "category": "animals_and_nature",
+    "examples": [
+      {
+        "en": "The flower is pretty.",
+        "vi": "Bông hoa đẹp quá."
+      }
+    ],
+    "collocations": [],
+    "response": "Yes, it is!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "The flower is pretty."
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, it is!"
+      }
+    ]
+  },
+  {
+    "phrase": "Can I pet the dog?",
+    "meaning_vi": "Con có thể vuốt ve con chó không?",
+    "type": "question",
+    "level": "kids",
+    "category": "animals_and_nature",
+    "examples": [
+      {
+        "en": "Can I pet the dog?",
+        "vi": "Con có thể vuốt ve con chó không?"
+      }
+    ],
+    "collocations": [],
+    "response": "Yes, gently!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Can I pet the dog?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, gently!"
+      }
+    ]
+  },
+  {
+    "phrase": "The sun is hot",
+    "meaning_vi": "Mặt trời nóng quá",
+    "type": "expression",
+    "level": "kids",
+    "category": "animals_and_nature",
+    "examples": [
+      {
+        "en": "The sun is hot.",
+        "vi": "Mặt trời nóng quá."
+      }
+    ],
+    "collocations": [],
+    "response": "Wear a hat!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "The sun is hot."
+      },
+      {
+        "speaker": "B",
+        "text": "Wear a hat!"
+      }
+    ]
+  },
+  {
+    "phrase": "Where is the fish?",
+    "meaning_vi": "Con cá ở đâu?",
+    "type": "question",
+    "level": "kids",
+    "category": "animals_and_nature",
+    "examples": [
+      {
+        "en": "Where is the fish?",
+        "vi": "Con cá ở đâu?"
+      }
+    ],
+    "collocations": [],
+    "response": "In the water!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Where is the fish?"
+      },
+      {
+        "speaker": "B",
+        "text": "In the water!"
+      }
+    ]
+  },
+  {
+    "phrase": "I see a tree",
+    "meaning_vi": "Con nhìn thấy một cái cây",
+    "type": "expression",
+    "level": "kids",
+    "category": "animals_and_nature",
+    "examples": [
+      {
+        "en": "I see a tree.",
+        "vi": "Con nhìn thấy một cái cây."
+      }
+    ],
+    "collocations": [],
+    "response": "It is tall!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I see a tree."
+      },
+      {
+        "speaker": "B",
+        "text": "It is tall!"
+      }
+    ]
+  },
+  {
+    "phrase": "The rabbit is cute",
+    "meaning_vi": "Con thỏ dễ thương quá",
+    "type": "expression",
+    "level": "kids",
+    "category": "animals_and_nature",
+    "examples": [
+      {
+        "en": "The rabbit is cute.",
+        "vi": "Con thỏ dễ thương quá."
+      }
+    ],
+    "collocations": [],
+    "response": "Yes, very cute!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "The rabbit is cute."
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, very cute!"
+      }
+    ]
+  },
+  {
+    "phrase": "Let's go outside",
+    "meaning_vi": "Chúng ta ra ngoài đi",
+    "type": "request",
+    "level": "kids",
+    "category": "animals_and_nature",
+    "examples": [
+      {
+        "en": "Let's go outside.",
+        "vi": "Chúng ta ra ngoài đi."
+      }
+    ],
+    "collocations": [],
+    "response": "Okay, let's go!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Let's go outside."
+      },
+      {
+        "speaker": "B",
+        "text": "Okay, let's go!"
+      }
+    ]
+  },
+  {
+    "phrase": "Goodbye, butterfly",
+    "meaning_vi": "Tạm biệt, con bướm",
+    "type": "greeting",
+    "level": "kids",
+    "category": "animals_and_nature",
+    "examples": [
+      {
+        "en": "Goodbye, butterfly!",
+        "vi": "Tạm biệt, con bướm!"
+      }
+    ],
+    "collocations": [],
+    "response": "Bye bye!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Goodbye, butterfly!"
+      },
+      {
+        "speaker": "B",
+        "text": "Bye bye!"
+      }
+    ]
+  },
+  {
+    "phrase": "Put on your shoes",
+    "meaning_vi": "Con mang giày vào",
+    "type": "request",
+    "level": "kids",
+    "category": "clothes_and_accessories",
+    "examples": [
+      {
+        "en": "Put on your shoes, please.",
+        "vi": "Con mang giày vào nhé."
+      }
+    ],
+    "collocations": [],
+    "response": "Okay, I will.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Put on your shoes."
+      },
+      {
+        "speaker": "B",
+        "text": "Okay, I will."
+      }
+    ]
+  },
+  {
+    "phrase": "I want my hat",
+    "meaning_vi": "Con muốn cái mũ của con",
+    "type": "expression",
+    "level": "kids",
+    "category": "clothes_and_accessories",
+    "examples": [
+      {
+        "en": "I want my hat, mom.",
+        "vi": "Con muốn cái mũ của con, mẹ ơi."
+      }
+    ],
+    "collocations": [],
+    "response": "Here is your hat.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I want my hat."
+      },
+      {
+        "speaker": "B",
+        "text": "Here is your hat."
+      }
+    ]
+  },
+  {
+    "phrase": "Where is my coat?",
+    "meaning_vi": "Cái áo khoác của con ở đâu?",
+    "type": "question",
+    "level": "kids",
+    "category": "clothes_and_accessories",
+    "examples": [
+      {
+        "en": "Where is my coat?",
+        "vi": "Cái áo khoác của con ở đâu?"
+      }
+    ],
+    "collocations": [],
+    "response": "It's on the chair.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Where is my coat?"
+      },
+      {
+        "speaker": "B",
+        "text": "It's on the chair."
+      }
+    ]
+  },
+  {
+    "phrase": "I like your dress",
+    "meaning_vi": "Bạn thích cái váy của bạn",
+    "type": "expression",
+    "level": "kids",
+    "category": "clothes_and_accessories",
+    "examples": [
+      {
+        "en": "I like your dress!",
+        "vi": "Mình thích cái váy của bạn!"
+      }
+    ],
+    "collocations": [],
+    "response": "Thank you!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I like your dress!"
+      },
+      {
+        "speaker": "B",
+        "text": "Thank you!"
+      }
+    ]
+  },
+  {
+    "phrase": "Take off your socks",
+    "meaning_vi": "Con cởi tất ra",
+    "type": "request",
+    "level": "kids",
+    "category": "clothes_and_accessories",
+    "examples": [
+      {
+        "en": "Take off your socks, please.",
+        "vi": "Con cởi tất ra nhé."
+      }
+    ],
+    "collocations": [],
+    "response": "Okay, I'm doing it.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Take off your socks."
+      },
+      {
+        "speaker": "B",
+        "text": "Okay, I'm doing it."
+      }
+    ]
+  },
+  {
+    "phrase": "My shoes are new",
+    "meaning_vi": "Đôi giày của con mới",
+    "type": "expression",
+    "level": "kids",
+    "category": "clothes_and_accessories",
+    "examples": [
+      {
+        "en": "My shoes are new!",
+        "vi": "Đôi giày của con mới!"
+      }
+    ],
+    "collocations": [],
+    "response": "They look nice!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "My shoes are new!"
+      },
+      {
+        "speaker": "B",
+        "text": "They look nice!"
+      }
+    ]
+  },
+  {
+    "phrase": "Can you help me?",
+    "meaning_vi": "Bạn có thể giúp con không?",
+    "type": "question",
+    "level": "kids",
+    "category": "clothes_and_accessories",
+    "examples": [
+      {
+        "en": "Can you help me with my jacket?",
+        "vi": "Bạn có thể giúp con mặc áo khoác không?"
+      }
+    ],
+    "collocations": [],
+    "response": "Yes, I can.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Can you help me?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I can."
+      }
+    ]
+  },
+  {
+    "phrase": "I lost my scarf",
+    "meaning_vi": "Con bị mất khăn quàng cổ",
+    "type": "expression",
+    "level": "kids",
+    "category": "clothes_and_accessories",
+    "examples": [
+      {
+        "en": "I lost my scarf.",
+        "vi": "Con bị mất khăn quàng cổ."
+      }
+    ],
+    "collocations": [],
+    "response": "Let's find it.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I lost my scarf."
+      },
+      {
+        "speaker": "B",
+        "text": "Let's find it."
+      }
+    ]
+  },
+  {
+    "phrase": "Your hat is cute",
+    "meaning_vi": "Cái mũ của bạn dễ thương",
+    "type": "expression",
+    "level": "kids",
+    "category": "clothes_and_accessories",
+    "examples": [
+      {
+        "en": "Your hat is cute!",
+        "vi": "Cái mũ của bạn dễ thương!"
+      }
+    ],
+    "collocations": [],
+    "response": "Thanks!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Your hat is cute!"
+      },
+      {
+        "speaker": "B",
+        "text": "Thanks!"
+      }
+    ]
+  },
+  {
+    "phrase": "I need my gloves",
+    "meaning_vi": "Con cần găng tay của con",
+    "type": "expression",
+    "level": "kids",
+    "category": "clothes_and_accessories",
+    "examples": [
+      {
+        "en": "I need my gloves.",
+        "vi": "Con cần găng tay của con."
+      }
+    ],
+    "collocations": [],
+    "response": "Here you go.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I need my gloves."
+      },
+      {
+        "speaker": "B",
+        "text": "Here you go."
+      }
+    ]
+  },
+  {
+    "phrase": "Red ball",
+    "meaning_vi": "Quả bóng màu đỏ",
+    "type": "expression",
+    "level": "kids",
+    "category": "colours_and_shapes",
+    "examples": [
+      {
+        "en": "I see a red ball.",
+        "vi": "Con thấy một quả bóng màu đỏ."
+      }
+    ],
+    "collocations": [],
+    "response": "Yes, a red ball!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Red ball."
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, it's red."
+      }
+    ]
+  },
+  {
+    "phrase": "Blue square",
+    "meaning_vi": "Hình vuông màu xanh",
+    "type": "expression",
+    "level": "kids",
+    "category": "colours_and_shapes",
+    "examples": [
+      {
+        "en": "This is a blue square.",
+        "vi": "Đây là hình vuông màu xanh."
+      }
+    ],
+    "collocations": [],
+    "response": "That's a blue square.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Blue square."
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, it's blue."
+      }
+    ]
+  },
+  {
+    "phrase": "Yellow star",
+    "meaning_vi": "Ngôi sao màu vàng",
+    "type": "expression",
+    "level": "kids",
+    "category": "colours_and_shapes",
+    "examples": [
+      {
+        "en": "I have a yellow star.",
+        "vi": "Con có một ngôi sao màu vàng."
+      }
+    ],
+    "collocations": [],
+    "response": "Nice yellow star!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Yellow star."
+      },
+      {
+        "speaker": "B",
+        "text": "It's pretty."
+      }
+    ]
+  },
+  {
+    "phrase": "Green triangle",
+    "meaning_vi": "Hình tam giác màu xanh lá",
+    "type": "expression",
+    "level": "kids",
+    "category": "colours_and_shapes",
+    "examples": [
+      {
+        "en": "Look at the green triangle.",
+        "vi": "Nhìn hình tam giác màu xanh lá kìa."
+      }
+    ],
+    "collocations": [],
+    "response": "Yes, a green triangle.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Green triangle."
+      },
+      {
+        "speaker": "B",
+        "text": "I see it."
+      }
+    ]
+  },
+  {
+    "phrase": "What color?",
+    "meaning_vi": "Màu gì?",
+    "type": "question",
+    "level": "kids",
+    "category": "colours_and_shapes",
+    "examples": [
+      {
+        "en": "What color is this?",
+        "vi": "Cái này màu gì?"
+      }
+    ],
+    "collocations": [],
+    "response": "It's red.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What color?"
+      },
+      {
+        "speaker": "B",
+        "text": "It's blue."
+      }
+    ]
+  },
+  {
+    "phrase": "It's a circle",
+    "meaning_vi": "Nó là hình tròn",
+    "type": "expression",
+    "level": "kids",
+    "category": "colours_and_shapes",
+    "examples": [
+      {
+        "en": "It's a circle.",
+        "vi": "Nó là hình tròn."
+      }
+    ],
+    "collocations": [],
+    "response": "Yes, a circle.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "It's a circle."
+      },
+      {
+        "speaker": "B",
+        "text": "Right!"
+      }
+    ]
+  },
+  {
+    "phrase": "Purple heart",
+    "meaning_vi": "Trái tim màu tím",
+    "type": "expression",
+    "level": "kids",
+    "category": "colours_and_shapes",
+    "examples": [
+      {
+        "en": "I love the purple heart.",
+        "vi": "Con thích trái tim màu tím."
+      }
+    ],
+    "collocations": [],
+    "response": "It's lovely.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Purple heart."
+      },
+      {
+        "speaker": "B",
+        "text": "So pretty!"
+      }
+    ]
+  },
+  {
+    "phrase": "Orange diamond",
+    "meaning_vi": "Hình thoi màu cam",
+    "type": "expression",
+    "level": "kids",
+    "category": "colours_and_shapes",
+    "examples": [
+      {
+        "en": "Draw an orange diamond.",
+        "vi": "Vẽ một hình thoi màu cam."
+      }
+    ],
+    "collocations": [],
+    "response": "Okay, an orange diamond.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Orange diamond."
+      },
+      {
+        "speaker": "B",
+        "text": "I will draw it."
+      }
+    ]
+  },
+  {
+    "phrase": "Pink oval",
+    "meaning_vi": "Hình bầu dục màu hồng",
+    "type": "expression",
+    "level": "kids",
+    "category": "colours_and_shapes",
+    "examples": [
+      {
+        "en": "This is a pink oval.",
+        "vi": "Đây là hình bầu dục màu hồng."
+      }
+    ],
+    "collocations": [],
+    "response": "A pink oval.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Pink oval."
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, it's pink."
+      }
+    ]
+  },
+  {
+    "phrase": "What shape?",
+    "meaning_vi": "Hình gì?",
+    "type": "question",
+    "level": "kids",
+    "category": "colours_and_shapes",
+    "examples": [
+      {
+        "en": "What shape is this?",
+        "vi": "Cái này hình gì?"
+      }
+    ],
+    "collocations": [],
+    "response": "It's a square.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What shape?"
+      },
+      {
+        "speaker": "B",
+        "text": "It's a triangle."
+      }
+    ]
+  },
+  {
+    "phrase": "Good morning",
+    "meaning_vi": "Chào buổi sáng",
+    "type": "greeting",
+    "level": "kids",
+    "category": "daily_life",
+    "examples": [
+      {
+        "en": "Good morning, mom!",
+        "vi": "Chào buổi sáng, mẹ!"
+      }
+    ],
+    "collocations": [],
+    "response": "Good morning!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Good morning!"
+      },
+      {
+        "speaker": "B",
+        "text": "Good morning! How are you?"
+      }
+    ]
+  },
+  {
+    "phrase": "I'm hungry",
+    "meaning_vi": "Con đói bụng",
+    "type": "expression",
+    "level": "kids",
+    "category": "daily_life",
+    "examples": [
+      {
+        "en": "I'm hungry now.",
+        "vi": "Con đói bụng rồi."
+      }
+    ],
+    "collocations": [],
+    "response": "Let's eat!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I'm hungry."
+      },
+      {
+        "speaker": "B",
+        "text": "Let's have a snack."
+      }
+    ]
+  },
+  {
+    "phrase": "I'm tired",
+    "meaning_vi": "Con mệt",
+    "type": "expression",
+    "level": "kids",
+    "category": "daily_life",
+    "examples": [
+      {
+        "en": "I'm tired, daddy.",
+        "vi": "Con mệt, bố ạ."
+      }
+    ],
+    "collocations": [],
+    "response": "Time to rest.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I'm tired."
+      },
+      {
+        "speaker": "B",
+        "text": "Let's take a nap."
+      }
+    ]
+  },
+  {
+    "phrase": "Can I go out?",
+    "meaning_vi": "Con có thể ra ngoài chơi không?",
+    "type": "request",
+    "level": "kids",
+    "category": "daily_life",
+    "examples": [
+      {
+        "en": "Can I go out to play?",
+        "vi": "Con có thể ra ngoài chơi không?"
+      }
+    ],
+    "collocations": [],
+    "response": "Yes, you can.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Can I go out?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, but be careful."
+      }
+    ]
+  },
+  {
+    "phrase": "I want water",
+    "meaning_vi": "Con muốn uống nước",
+    "type": "request",
+    "level": "kids",
+    "category": "daily_life",
+    "examples": [
+      {
+        "en": "I want water, please.",
+        "vi": "Con muốn uống nước."
+      }
+    ],
+    "collocations": [],
+    "response": "Here you go.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I want water."
+      },
+      {
+        "speaker": "B",
+        "text": "Here you are."
+      }
+    ]
+  },
+  {
+    "phrase": "What is this?",
+    "meaning_vi": "Đây là cái gì?",
+    "type": "question",
+    "level": "kids",
+    "category": "daily_life",
+    "examples": [
+      {
+        "en": "What is this, mom?",
+        "vi": "Đây là cái gì, mẹ?"
+      }
+    ],
+    "collocations": [],
+    "response": "This is a book.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What is this?"
+      },
+      {
+        "speaker": "B",
+        "text": "This is a toy."
+      }
+    ]
+  },
+  {
+    "phrase": "Where is my bag?",
+    "meaning_vi": "Cặp của con đâu?",
+    "type": "question",
+    "level": "kids",
+    "category": "daily_life",
+    "examples": [
+      {
+        "en": "Where is my bag?",
+        "vi": "Cặp của con đâu?"
+      }
+    ],
+    "collocations": [],
+    "response": "It's over there.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Where is my bag?"
+      },
+      {
+        "speaker": "B",
+        "text": "It's on the chair."
+      }
+    ]
+  },
+  {
+    "phrase": "I need help",
+    "meaning_vi": "Con cần giúp đỡ",
+    "type": "request",
+    "level": "kids",
+    "category": "daily_life",
+    "examples": [
+      {
+        "en": "I need help, please.",
+        "vi": "Con cần giúp đỡ."
+      }
+    ],
+    "collocations": [],
+    "response": "I'm coming.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I need help."
+      },
+      {
+        "speaker": "B",
+        "text": "What do you need?"
+      }
+    ]
+  },
+  {
+    "phrase": "I love you",
+    "meaning_vi": "Con yêu bạn / Con yêu ba mẹ",
+    "type": "expression",
+    "level": "kids",
+    "category": "daily_life",
+    "examples": [
+      {
+        "en": "I love you, mom.",
+        "vi": "Con yêu mẹ."
+      }
+    ],
+    "collocations": [],
+    "response": "I love you too.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I love you."
+      },
+      {
+        "speaker": "B",
+        "text": "I love you too, sweetie."
+      }
+    ]
+  },
+  {
+    "phrase": "Good night",
+    "meaning_vi": "Chúc ngủ ngon",
+    "type": "greeting",
+    "level": "kids",
+    "category": "daily_life",
+    "examples": [
+      {
+        "en": "Good night, daddy.",
+        "vi": "Chúc bố ngủ ngon."
+      }
+    ],
+    "collocations": [],
+    "response": "Good night! Sleep well.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Good night."
+      },
+      {
+        "speaker": "B",
+        "text": "Good night! Sweet dreams."
+      }
+    ]
+  },
+  {
+    "phrase": "Let's learn",
+    "meaning_vi": "Hãy cùng học",
+    "type": "expression",
+    "level": "kids",
+    "category": "education",
+    "examples": [
+      {
+        "en": "Let's learn numbers!",
+        "vi": "Hãy cùng học số nào!"
+      }
+    ],
+    "collocations": [],
+    "response": "Yes, let's learn!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Let's learn!"
+      },
+      {
+        "speaker": "B",
+        "text": "Okay!"
+      }
+    ]
+  },
+  {
+    "phrase": "I have a book",
+    "meaning_vi": "Con có một quyển sách",
+    "type": "expression",
+    "level": "kids",
+    "category": "education",
+    "examples": [
+      {
+        "en": "I have a book.",
+        "vi": "Con có một quyển sách."
+      }
+    ],
+    "collocations": [],
+    "response": "That's nice!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I have a book."
+      },
+      {
+        "speaker": "B",
+        "text": "Can I see it?"
+      }
+    ]
+  },
+  {
+    "phrase": "What is this?",
+    "meaning_vi": "Đây là gì?",
+    "type": "question",
+    "level": "kids",
+    "category": "education",
+    "examples": [
+      {
+        "en": "What is this?",
+        "vi": "Đây là gì?"
+      }
+    ],
+    "collocations": [],
+    "response": "This is a pencil.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What is this?"
+      },
+      {
+        "speaker": "B",
+        "text": "This is a crayon."
+      }
+    ]
+  },
+  {
+    "phrase": "I can read",
+    "meaning_vi": "Con có thể đọc",
+    "type": "expression",
+    "level": "kids",
+    "category": "education",
+    "examples": [
+      {
+        "en": "I can read.",
+        "vi": "Con có thể đọc."
+      }
+    ],
+    "collocations": [],
+    "response": "Great job!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I can read!"
+      },
+      {
+        "speaker": "B",
+        "text": "Very good!"
+      }
+    ]
+  },
+  {
+    "phrase": "Please help me",
+    "meaning_vi": "Làm ơn giúp con",
+    "type": "request",
+    "level": "kids",
+    "category": "education",
+    "examples": [
+      {
+        "en": "Please help me.",
+        "vi": "Làm ơn giúp con."
+      }
+    ],
+    "collocations": [],
+    "response": "Of course!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Please help me."
+      },
+      {
+        "speaker": "B",
+        "text": "Sure, what do you need?"
+      }
+    ]
+  },
+  {
+    "phrase": "I like school",
+    "meaning_vi": "Con thích trường học",
+    "type": "expression",
+    "level": "kids",
+    "category": "education",
+    "examples": [
+      {
+        "en": "I like school.",
+        "vi": "Con thích trường học."
+      }
+    ],
+    "collocations": [],
+    "response": "That's wonderful!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I like school."
+      },
+      {
+        "speaker": "B",
+        "text": "Me too!"
+      }
+    ]
+  },
+  {
+    "phrase": "Can I draw?",
+    "meaning_vi": "Con có thể vẽ không?",
+    "type": "request",
+    "level": "kids",
+    "category": "education",
+    "examples": [
+      {
+        "en": "Can I draw?",
+        "vi": "Con có thể vẽ không?"
+      }
+    ],
+    "collocations": [],
+    "response": "Yes, you can.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Can I draw?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, here is paper."
+      }
+    ]
+  },
+  {
+    "phrase": "I am a student",
+    "meaning_vi": "Con là học sinh",
+    "type": "expression",
+    "level": "kids",
+    "category": "education",
+    "examples": [
+      {
+        "en": "I am a student.",
+        "vi": "Con là học sinh."
+      }
+    ],
+    "collocations": [],
+    "response": "Yes, you are!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I am a student."
+      },
+      {
+        "speaker": "B",
+        "text": "You learn well."
+      }
+    ]
+  },
+  {
+    "phrase": "Let's count",
+    "meaning_vi": "Hãy cùng đếm",
+    "type": "expression",
+    "level": "kids",
+    "category": "education",
+    "examples": [
+      {
+        "en": "Let's count to ten.",
+        "vi": "Hãy cùng đếm đến mười."
+      }
+    ],
+    "collocations": [],
+    "response": "One, two, three!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Let's count!"
+      },
+      {
+        "speaker": "B",
+        "text": "One, two, three!"
+      }
+    ]
+  },
+  {
+    "phrase": "I finished my work",
+    "meaning_vi": "Con đã làm xong bài",
+    "type": "expression",
+    "level": "kids",
+    "category": "education",
+    "examples": [
+      {
+        "en": "I finished my work.",
+        "vi": "Con đã làm xong bài."
+      }
+    ],
+    "collocations": [],
+    "response": "Well done!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I finished my work."
+      },
+      {
+        "speaker": "B",
+        "text": "Excellent!"
+      }
+    ]
+  },
+  {
+    "phrase": "Hello",
+    "meaning_vi": "Xin chào",
+    "type": "greeting",
+    "level": "kids",
+    "category": "family_and_friends",
+    "examples": [
+      {
+        "en": "Hello, Mom!",
+        "vi": "Xin chào mẹ!"
+      }
+    ],
+    "collocations": [],
+    "response": "Hello!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Hello!"
+      },
+      {
+        "speaker": "B",
+        "text": "Hello, friend!"
+      }
+    ]
+  },
+  {
+    "phrase": "I love you",
+    "meaning_vi": "Con yêu bạn",
+    "type": "expression",
+    "level": "kids",
+    "category": "family_and_friends",
+    "examples": [
+      {
+        "en": "I love you, Dad!",
+        "vi": "Con yêu bố!"
+      }
+    ],
+    "collocations": [],
+    "response": "I love you too!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I love you!"
+      },
+      {
+        "speaker": "B",
+        "text": "I love you too!"
+      }
+    ]
+  },
+  {
+    "phrase": "Thank you",
+    "meaning_vi": "Cảm ơn bạn",
+    "type": "expression",
+    "level": "kids",
+    "category": "family_and_friends",
+    "examples": [
+      {
+        "en": "Thank you, Grandma!",
+        "vi": "Cảm ơn bà!"
+      }
+    ],
+    "collocations": [],
+    "response": "You're welcome!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Thank you!"
+      },
+      {
+        "speaker": "B",
+        "text": "You're welcome!"
+      }
+    ]
+  },
+  {
+    "phrase": "Let's play",
+    "meaning_vi": "Chơi đi",
+    "type": "request",
+    "level": "kids",
+    "category": "family_and_friends",
+    "examples": [
+      {
+        "en": "Let's play, friend!",
+        "vi": "Chơi đi, bạn!"
+      }
+    ],
+    "collocations": [],
+    "response": "Yes, let's play!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Let's play!"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, let's play!"
+      }
+    ]
+  },
+  {
+    "phrase": "How are you?",
+    "meaning_vi": "Bạn khỏe không?",
+    "type": "question",
+    "level": "kids",
+    "category": "family_and_friends",
+    "examples": [
+      {
+        "en": "How are you, Mom?",
+        "vi": "Mẹ khỏe không?"
+      }
+    ],
+    "collocations": [],
+    "response": "I'm fine, thank you!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "How are you?"
+      },
+      {
+        "speaker": "B",
+        "text": "I'm fine, thank you!"
+      }
+    ]
+  },
+  {
+    "phrase": "Goodbye",
+    "meaning_vi": "Tạm biệt",
+    "type": "greeting",
+    "level": "kids",
+    "category": "family_and_friends",
+    "examples": [
+      {
+        "en": "Goodbye, teacher!",
+        "vi": "Tạm biệt cô giáo!"
+      }
+    ],
+    "collocations": [],
+    "response": "Goodbye!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Goodbye!"
+      },
+      {
+        "speaker": "B",
+        "text": "Goodbye, see you!"
+      }
+    ]
+  },
+  {
+    "phrase": "My friend",
+    "meaning_vi": "Bạn của con",
+    "type": "expression",
+    "level": "kids",
+    "category": "family_and_friends",
+    "examples": [
+      {
+        "en": "This is my friend.",
+        "vi": "Đây là bạn của con."
+      }
+    ],
+    "collocations": [],
+    "response": "Nice to meet you!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "This is my friend."
+      },
+      {
+        "speaker": "B",
+        "text": "Nice to meet you!"
+      }
+    ]
+  },
+  {
+    "phrase": "Come here",
+    "meaning_vi": "Lại đây",
+    "type": "request",
+    "level": "kids",
+    "category": "family_and_friends",
+    "examples": [
+      {
+        "en": "Come here, Mom!",
+        "vi": "Lại đây mẹ!"
+      }
+    ],
+    "collocations": [],
+    "response": "I'm coming!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Come here!"
+      },
+      {
+        "speaker": "B",
+        "text": "I'm coming!"
+      }
+    ]
+  },
+  {
+    "phrase": "I'm sorry",
+    "meaning_vi": "Con xin lỗi",
+    "type": "expression",
+    "level": "kids",
+    "category": "family_and_friends",
+    "examples": [
+      {
+        "en": "I'm sorry, Dad.",
+        "vi": "Con xin lỗi bố."
+      }
+    ],
+    "collocations": [],
+    "response": "It's okay!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I'm sorry."
+      },
+      {
+        "speaker": "B",
+        "text": "It's okay!"
+      }
+    ]
+  },
+  {
+    "phrase": "Where is my mom?",
+    "meaning_vi": "Mẹ con ở đâu?",
+    "type": "question",
+    "level": "kids",
+    "category": "family_and_friends",
+    "examples": [
+      {
+        "en": "Where is my mom?",
+        "vi": "Mẹ con ở đâu?"
+      }
+    ],
+    "collocations": [],
+    "response": "She is there!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Where is my mom?"
+      },
+      {
+        "speaker": "B",
+        "text": "She is there!"
+      }
+    ]
+  },
+  {
+    "phrase": "I want milk",
+    "meaning_vi": "Con muốn uống sữa",
+    "type": "request",
+    "level": "kids",
+    "category": "food_and_drink",
+    "examples": [
+      {
+        "en": "I want milk, please.",
+        "vi": "Con muốn uống sữa ạ."
+      }
+    ],
+    "collocations": [],
+    "response": "Here is your milk.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I want milk."
+      },
+      {
+        "speaker": "B",
+        "text": "Here is your milk."
+      }
+    ]
+  },
+  {
+    "phrase": "Can I have juice?",
+    "meaning_vi": "Bạn có thể cho mình uống nước ép không?",
+    "type": "request",
+    "level": "kids",
+    "category": "food_and_drink",
+    "examples": [
+      {
+        "en": "Can I have juice?",
+        "vi": "Bạn có thể cho mình uống nước ép không?"
+      }
+    ],
+    "collocations": [],
+    "response": "Yes, here you go.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Can I have juice?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, here you go."
+      }
+    ]
+  },
+  {
+    "phrase": "Yummy!",
+    "meaning_vi": "Ngon quá!",
+    "type": "expression",
+    "level": "kids",
+    "category": "food_and_drink",
+    "examples": [
+      {
+        "en": "This cake is yummy!",
+        "vi": "Cái bánh này ngon quá!"
+      }
+    ],
+    "collocations": [],
+    "response": "I'm glad you like it.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Yummy!"
+      },
+      {
+        "speaker": "B",
+        "text": "Do you want more?"
+      }
+    ]
+  },
+  {
+    "phrase": "I am hungry",
+    "meaning_vi": "Con đói bụng",
+    "type": "expression",
+    "level": "kids",
+    "category": "food_and_drink",
+    "examples": [
+      {
+        "en": "Mom, I am hungry.",
+        "vi": "Mẹ ơi, con đói bụng."
+      }
+    ],
+    "collocations": [],
+    "response": "Let's eat something.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I am hungry."
+      },
+      {
+        "speaker": "B",
+        "text": "Let's have a snack."
+      }
+    ]
+  },
+  {
+    "phrase": "I am thirsty",
+    "meaning_vi": "Con khát nước",
+    "type": "expression",
+    "level": "kids",
+    "category": "food_and_drink",
+    "examples": [
+      {
+        "en": "I am thirsty, please.",
+        "vi": "Con khát nước ạ."
+      }
+    ],
+    "collocations": [],
+    "response": "Drink some water.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I am thirsty."
+      },
+      {
+        "speaker": "B",
+        "text": "Here is some water."
+      }
+    ]
+  },
+  {
+    "phrase": "More, please",
+    "meaning_vi": "Cho con thêm ạ",
+    "type": "request",
+    "level": "kids",
+    "category": "food_and_drink",
+    "examples": [
+      {
+        "en": "More rice, please.",
+        "vi": "Cho con thêm cơm ạ."
+      }
+    ],
+    "collocations": [],
+    "response": "Of course, here you are.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "More, please."
+      },
+      {
+        "speaker": "B",
+        "text": "Here you are."
+      }
+    ]
+  },
+  {
+    "phrase": "I like apples",
+    "meaning_vi": "Con thích táo",
+    "type": "expression",
+    "level": "kids",
+    "category": "food_and_drink",
+    "examples": [
+      {
+        "en": "I like apples.",
+        "vi": "Con thích táo."
+      }
+    ],
+    "collocations": [],
+    "response": "Apples are healthy.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I like apples."
+      },
+      {
+        "speaker": "B",
+        "text": "Me too!"
+      }
+    ]
+  },
+  {
+    "phrase": "All done",
+    "meaning_vi": "Con ăn xong rồi",
+    "type": "expression",
+    "level": "kids",
+    "category": "food_and_drink",
+    "examples": [
+      {
+        "en": "All done, Mom.",
+        "vi": "Con ăn xong rồi mẹ ơi."
+      }
+    ],
+    "collocations": [],
+    "response": "Good job!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "All done."
+      },
+      {
+        "speaker": "B",
+        "text": "Good job!"
+      }
+    ]
+  },
+  {
+    "phrase": "Is it hot?",
+    "meaning_vi": "Nó có nóng không?",
+    "type": "question",
+    "level": "kids",
+    "category": "food_and_drink",
+    "examples": [
+      {
+        "en": "Is the soup hot?",
+        "vi": "Súp có nóng không?"
+      }
+    ],
+    "collocations": [],
+    "response": "Yes, be careful.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Is it hot?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, blow on it."
+      }
+    ]
+  },
+  {
+    "phrase": "I want water",
+    "meaning_vi": "Con muốn uống nước",
+    "type": "request",
+    "level": "kids",
+    "category": "food_and_drink",
+    "examples": [
+      {
+        "en": "I want water, please.",
+        "vi": "Con muốn uống nước ạ."
+      }
+    ],
+    "collocations": [],
+    "response": "Here is your water.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I want water."
+      },
+      {
+        "speaker": "B",
+        "text": "Here you go."
+      }
+    ]
+  },
+  {
+    "phrase": "I am sick",
+    "meaning_vi": "Con bị ốm",
+    "type": "expression",
+    "level": "kids",
+    "category": "health_and_body",
+    "examples": [
+      {
+        "en": "I am sick.",
+        "vi": "Con bị ốm."
+      }
+    ],
+    "collocations": [],
+    "response": "Oh no! Get well soon!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I am sick."
+      },
+      {
+        "speaker": "B",
+        "text": "Oh no! Get well soon!"
+      }
+    ]
+  },
+  {
+    "phrase": "My head hurts",
+    "meaning_vi": "Đầu của con đau",
+    "type": "expression",
+    "level": "kids",
+    "category": "health_and_body",
+    "examples": [
+      {
+        "en": "My head hurts.",
+        "vi": "Đầu của con đau."
+      }
+    ],
+    "collocations": [],
+    "response": "Let me check your temperature.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "My head hurts."
+      },
+      {
+        "speaker": "B",
+        "text": "Let me check your temperature."
+      }
+    ]
+  },
+  {
+    "phrase": "I have a cough",
+    "meaning_vi": "Con bị ho",
+    "type": "expression",
+    "level": "kids",
+    "category": "health_and_body",
+    "examples": [
+      {
+        "en": "I have a cough.",
+        "vi": "Con bị ho."
+      }
+    ],
+    "collocations": [],
+    "response": "Drink some warm water.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I have a cough."
+      },
+      {
+        "speaker": "B",
+        "text": "Drink some warm water."
+      }
+    ]
+  },
+  {
+    "phrase": "I feel hot",
+    "meaning_vi": "Con thấy nóng",
+    "type": "expression",
+    "level": "kids",
+    "category": "health_and_body",
+    "examples": [
+      {
+        "en": "I feel hot.",
+        "vi": "Con thấy nóng."
+      }
+    ],
+    "collocations": [],
+    "response": "Let me take your temperature.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I feel hot."
+      },
+      {
+        "speaker": "B",
+        "text": "Let me take your temperature."
+      }
+    ]
+  },
+  {
+    "phrase": "I need a bandage",
+    "meaning_vi": "Con cần băng cá nhân",
+    "type": "request",
+    "level": "kids",
+    "category": "health_and_body",
+    "examples": [
+      {
+        "en": "I need a bandage.",
+        "vi": "Con cần băng cá nhân."
+      }
+    ],
+    "collocations": [],
+    "response": "Here you go.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I need a bandage."
+      },
+      {
+        "speaker": "B",
+        "text": "Here you go."
+      }
+    ]
+  },
+  {
+    "phrase": "Wash your hands",
+    "meaning_vi": "Rửa tay đi",
+    "type": "request",
+    "level": "kids",
+    "category": "health_and_body",
+    "examples": [
+      {
+        "en": "Wash your hands.",
+        "vi": "Rửa tay đi."
+      }
+    ],
+    "collocations": [],
+    "response": "Okay, I will.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Wash your hands."
+      },
+      {
+        "speaker": "B",
+        "text": "Okay, I will."
+      }
+    ]
+  },
+  {
+    "phrase": "I am tired",
+    "meaning_vi": "Con mệt",
+    "type": "expression",
+    "level": "kids",
+    "category": "health_and_body",
+    "examples": [
+      {
+        "en": "I am tired.",
+        "vi": "Con mệt."
+      }
+    ],
+    "collocations": [],
+    "response": "Take a rest.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I am tired."
+      },
+      {
+        "speaker": "B",
+        "text": "Take a rest."
+      }
+    ]
+  },
+  {
+    "phrase": "Do I have a fever?",
+    "meaning_vi": "Con có bị sốt không?",
+    "type": "question",
+    "level": "kids",
+    "category": "health_and_body",
+    "examples": [
+      {
+        "en": "Do I have a fever?",
+        "vi": "Con có bị sốt không?"
+      }
+    ],
+    "collocations": [],
+    "response": "Let me check.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do I have a fever?"
+      },
+      {
+        "speaker": "B",
+        "text": "Let me check."
+      }
+    ]
+  },
+  {
+    "phrase": "I feel better",
+    "meaning_vi": "Con thấy khỏe hơn",
+    "type": "expression",
+    "level": "kids",
+    "category": "health_and_body",
+    "examples": [
+      {
+        "en": "I feel better.",
+        "vi": "Con thấy khỏe hơn."
+      }
+    ],
+    "collocations": [],
+    "response": "That's great!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I feel better."
+      },
+      {
+        "speaker": "B",
+        "text": "That's great!"
+      }
+    ]
+  },
+  {
+    "phrase": "Brush your teeth",
+    "meaning_vi": "Đánh răng đi",
+    "type": "request",
+    "level": "kids",
+    "category": "health_and_body",
+    "examples": [
+      {
+        "en": "Brush your teeth.",
+        "vi": "Đánh răng đi."
+      }
+    ],
+    "collocations": [],
+    "response": "Okay, I will.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Brush your teeth."
+      },
+      {
+        "speaker": "B",
+        "text": "Okay, I will."
+      }
+    ]
+  },
+  {
+    "phrase": "Let's play",
+    "meaning_vi": "Chúng ta chơi đi",
+    "type": "request",
+    "level": "kids",
+    "category": "hobbies_and_leisure",
+    "examples": [
+      {
+        "en": "Let's play outside!",
+        "vi": "Chúng ta chơi ngoài trời đi!"
+      }
+    ],
+    "collocations": [],
+    "response": "Okay!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Let's play!"
+      },
+      {
+        "speaker": "B",
+        "text": "Okay! Let's play with the ball."
+      }
+    ]
+  },
+  {
+    "phrase": "I like drawing",
+    "meaning_vi": "Con thích vẽ",
+    "type": "expression",
+    "level": "kids",
+    "category": "hobbies_and_leisure",
+    "examples": [
+      {
+        "en": "I like drawing cats.",
+        "vi": "Con thích vẽ mèo."
+      }
+    ],
+    "collocations": [],
+    "response": "That's nice!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I like drawing."
+      },
+      {
+        "speaker": "B",
+        "text": "That's nice! Draw a flower."
+      }
+    ]
+  },
+  {
+    "phrase": "Can I play?",
+    "meaning_vi": "Con có thể chơi không?",
+    "type": "question",
+    "level": "kids",
+    "category": "hobbies_and_leisure",
+    "examples": [
+      {
+        "en": "Can I play with you?",
+        "vi": "Con có thể chơi với bạn không?"
+      }
+    ],
+    "collocations": [],
+    "response": "Yes, you can!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Can I play?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, you can! Come here."
+      }
+    ]
+  },
+  {
+    "phrase": "Let's sing",
+    "meaning_vi": "Chúng ta hát đi",
+    "type": "request",
+    "level": "kids",
+    "category": "hobbies_and_leisure",
+    "examples": [
+      {
+        "en": "Let's sing a song!",
+        "vi": "Chúng ta hát một bài hát đi!"
+      }
+    ],
+    "collocations": [],
+    "response": "Okay! Let's sing.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Let's sing!"
+      },
+      {
+        "speaker": "B",
+        "text": "Okay! Let's sing 'Twinkle Twinkle'."
+      }
+    ]
+  },
+  {
+    "phrase": "I want to dance",
+    "meaning_vi": "Con muốn nhảy",
+    "type": "expression",
+    "level": "kids",
+    "category": "hobbies_and_leisure",
+    "examples": [
+      {
+        "en": "I want to dance now.",
+        "vi": "Con muốn nhảy bây giờ."
+      }
+    ],
+    "collocations": [],
+    "response": "Great! Let's dance!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I want to dance."
+      },
+      {
+        "speaker": "B",
+        "text": "Great! Let's dance together!"
+      }
+    ]
+  },
+  {
+    "phrase": "Do you like toys?",
+    "meaning_vi": "Bạn có thích đồ chơi không?",
+    "type": "question",
+    "level": "kids",
+    "category": "hobbies_and_leisure",
+    "examples": [
+      {
+        "en": "Do you like toys?",
+        "vi": "Bạn có thích đồ chơi không?"
+      }
+    ],
+    "collocations": [],
+    "response": "Yes, I do!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you like toys?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I do! I like cars."
+      }
+    ]
+  },
+  {
+    "phrase": "Let's ride bikes",
+    "meaning_vi": "Chúng ta đạp xe đi",
+    "type": "request",
+    "level": "kids",
+    "category": "hobbies_and_leisure",
+    "examples": [
+      {
+        "en": "Let's ride bikes outside!",
+        "vi": "Chúng ta đạp xe ngoài trời đi!"
+      }
+    ],
+    "collocations": [],
+    "response": "Okay! Let's go!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Let's ride bikes!"
+      },
+      {
+        "speaker": "B",
+        "text": "Okay! Let's go to the park."
+      }
+    ]
+  },
+  {
+    "phrase": "I love reading",
+    "meaning_vi": "Con thích đọc sách",
+    "type": "expression",
+    "level": "kids",
+    "category": "hobbies_and_leisure",
+    "examples": [
+      {
+        "en": "I love reading books.",
+        "vi": "Con thích đọc sách."
+      }
+    ],
+    "collocations": [],
+    "response": "That's wonderful!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I love reading."
+      },
+      {
+        "speaker": "B",
+        "text": "That's wonderful! What book do you like?"
+      }
+    ]
+  },
+  {
+    "phrase": "Let's play hide and seek",
+    "meaning_vi": "Chúng ta chơi trốn tìm đi",
+    "type": "request",
+    "level": "kids",
+    "category": "hobbies_and_leisure",
+    "examples": [
+      {
+        "en": "Let's play hide and seek!",
+        "vi": "Chúng ta chơi trốn tìm đi!"
+      }
+    ],
+    "collocations": [],
+    "response": "Okay! I'll count.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Let's play hide and seek!"
+      },
+      {
+        "speaker": "B",
+        "text": "Okay! I'll count to ten."
+      }
+    ]
+  },
+  {
+    "phrase": "What do you want to do?",
+    "meaning_vi": "Bạn muốn làm gì?",
+    "type": "question",
+    "level": "kids",
+    "category": "hobbies_and_leisure",
+    "examples": [
+      {
+        "en": "What do you want to do?",
+        "vi": "Bạn muốn làm gì?"
+      }
+    ],
+    "collocations": [],
+    "response": "I want to play.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What do you want to do?"
+      },
+      {
+        "speaker": "B",
+        "text": "I want to play with blocks."
+      }
+    ]
+  },
+  {
+    "phrase": "I'm home",
+    "meaning_vi": "Con đã về nhà",
+    "type": "expression",
+    "level": "kids",
+    "category": "house_and_home",
+    "examples": [
+      {
+        "en": "I'm home, Mom!",
+        "vi": "Con đã về nhà, mẹ ơi!"
+      }
+    ],
+    "collocations": [],
+    "response": "Welcome home!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I'm home!"
+      },
+      {
+        "speaker": "B",
+        "text": "Welcome home, sweetie!"
+      }
+    ]
+  },
+  {
+    "phrase": "Where is my toy?",
+    "meaning_vi": "Đồ chơi của con ở đâu?",
+    "type": "question",
+    "level": "kids",
+    "category": "house_and_home",
+    "examples": [
+      {
+        "en": "Where is my toy?",
+        "vi": "Đồ chơi của con ở đâu?"
+      }
+    ],
+    "collocations": [],
+    "response": "It's in your room.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Where is my toy?"
+      },
+      {
+        "speaker": "B",
+        "text": "It's in your room."
+      }
+    ]
+  },
+  {
+    "phrase": "I want water",
+    "meaning_vi": "Con muốn uống nước",
+    "type": "request",
+    "level": "kids",
+    "category": "house_and_home",
+    "examples": [
+      {
+        "en": "I want water, please.",
+        "vi": "Con muốn uống nước, làm ơn."
+      }
+    ],
+    "collocations": [],
+    "response": "Here you are.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I want water."
+      },
+      {
+        "speaker": "B",
+        "text": "Here you are."
+      }
+    ]
+  },
+  {
+    "phrase": "Good night",
+    "meaning_vi": "Chúc ngủ ngon",
+    "type": "greeting",
+    "level": "kids",
+    "category": "house_and_home",
+    "examples": [
+      {
+        "en": "Good night, Dad!",
+        "vi": "Chúc ngủ ngon, bố!"
+      }
+    ],
+    "collocations": [],
+    "response": "Good night, sleep tight!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Good night!"
+      },
+      {
+        "speaker": "B",
+        "text": "Good night, sweet dreams!"
+      }
+    ]
+  },
+  {
+    "phrase": "I'm hungry",
+    "meaning_vi": "Con đói bụng",
+    "type": "expression",
+    "level": "kids",
+    "category": "house_and_home",
+    "examples": [
+      {
+        "en": "I'm hungry, Mom.",
+        "vi": "Con đói bụng, mẹ ơi."
+      }
+    ],
+    "collocations": [],
+    "response": "Let's eat dinner.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I'm hungry."
+      },
+      {
+        "speaker": "B",
+        "text": "Let's eat dinner."
+      }
+    ]
+  },
+  {
+    "phrase": "Can I play?",
+    "meaning_vi": "Con có thể chơi không?",
+    "type": "request",
+    "level": "kids",
+    "category": "house_and_home",
+    "examples": [
+      {
+        "en": "Can I play outside?",
+        "vi": "Con có thể chơi ngoài sân không?"
+      }
+    ],
+    "collocations": [],
+    "response": "Yes, you can.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Can I play?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, you can."
+      }
+    ]
+  },
+  {
+    "phrase": "I love my home",
+    "meaning_vi": "Con yêu nhà của con",
+    "type": "expression",
+    "level": "kids",
+    "category": "house_and_home",
+    "examples": [
+      {
+        "en": "I love my home.",
+        "vi": "Con yêu nhà của con."
+      }
+    ],
+    "collocations": [],
+    "response": "That's nice!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I love my home."
+      },
+      {
+        "speaker": "B",
+        "text": "That's nice!"
+      }
+    ]
+  },
+  {
+    "phrase": "Where is the bathroom?",
+    "meaning_vi": "Phòng tắm ở đâu?",
+    "type": "question",
+    "level": "kids",
+    "category": "house_and_home",
+    "examples": [
+      {
+        "en": "Where is the bathroom?",
+        "vi": "Phòng tắm ở đâu?"
+      }
+    ],
+    "collocations": [],
+    "response": "It's over there.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Where is the bathroom?"
+      },
+      {
+        "speaker": "B",
+        "text": "It's over there."
+      }
+    ]
+  },
+  {
+    "phrase": "Let's clean up",
+    "meaning_vi": "Hãy dọn dẹp nào",
+    "type": "request",
+    "level": "kids",
+    "category": "house_and_home",
+    "examples": [
+      {
+        "en": "Let's clean up the toys.",
+        "vi": "Hãy dọn dẹp đồ chơi nào."
+      }
+    ],
+    "collocations": [],
+    "response": "Okay, I help.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Let's clean up."
+      },
+      {
+        "speaker": "B",
+        "text": "Okay, I help."
+      }
+    ]
+  },
+  {
+    "phrase": "This is my bed",
+    "meaning_vi": "Đây là giường của con",
+    "type": "expression",
+    "level": "kids",
+    "category": "house_and_home",
+    "examples": [
+      {
+        "en": "This is my bed.",
+        "vi": "Đây là giường của con."
+      }
+    ],
+    "collocations": [],
+    "response": "It's cozy.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "This is my bed."
+      },
+      {
+        "speaker": "B",
+        "text": "It's cozy."
+      }
+    ]
+  }
+]

@@ -1,0 +1,144 @@
+[
+  {
+    "scenario": "Eating lunch",
+    "scenario_vi": "Ăn trưa",
+    "category": "daily_routine",
+    "level": "kids",
+    "roles": [
+      "Child",
+      "Mom"
+    ],
+    "dialogue": [
+      {
+        "role": "Child",
+        "en": "Mom, this is good.",
+        "vi": "Mẹ ơi, món này ngon."
+      },
+      {
+        "role": "Mom",
+        "en": "Eat more vegetables.",
+        "vi": "Ăn thêm rau đi con."
+      },
+      {
+        "role": "Child",
+        "en": "I don't like carrots.",
+        "vi": "Con không thích cà rốt."
+      },
+      {
+        "role": "Mom",
+        "en": "Just a little bite.",
+        "vi": "Chỉ một miếng nhỏ thôi."
+      }
+    ],
+    "key_phrases": [
+      "This is good.",
+      "Eat more...",
+      "I don't like...",
+      "Just a little."
+    ],
+    "key_vocab": [
+      "good",
+      "vegetables",
+      "carrots",
+      "little"
+    ],
+    "grammar_points": [
+      "I don't like...",
+      "This is..."
+    ]
+  },
+  {
+    "scenario": "Going to bed",
+    "scenario_vi": "Đi ngủ",
+    "category": "daily_routine",
+    "level": "kids",
+    "roles": [
+      "Child",
+      "Mom"
+    ],
+    "dialogue": [
+      {
+        "role": "Child",
+        "en": "Mom, I am sleepy.",
+        "vi": "Mẹ ơi, con buồn ngủ."
+      },
+      {
+        "role": "Mom",
+        "en": "Time for bed now.",
+        "vi": "Đến giờ đi ngủ rồi."
+      },
+      {
+        "role": "Child",
+        "en": "Read me a story?",
+        "vi": "Mẹ đọc truyện cho con nhé?"
+      },
+      {
+        "role": "Mom",
+        "en": "Okay, a short one.",
+        "vi": "Được, một câu chuyện ngắn."
+      }
+    ],
+    "key_phrases": [
+      "I am sleepy.",
+      "Time for bed.",
+      "Read me a story?"
+    ],
+    "key_vocab": [
+      "sleepy",
+      "bed",
+      "story",
+      "short"
+    ],
+    "grammar_points": [
+      "I am...",
+      "Time for..."
+    ]
+  },
+  {
+    "scenario": "Shopping with mom",
+    "scenario_vi": "Đi mua sắm với mẹ",
+    "category": "daily_routine",
+    "level": "kids",
+    "roles": [
+      "Child",
+      "Mom"
+    ],
+    "dialogue": [
+      {
+        "role": "Child",
+        "en": "Mom, I want candy.",
+        "vi": "Mẹ ơi, con muốn kẹo."
+      },
+      {
+        "role": "Mom",
+        "en": "No, it is not good.",
+        "vi": "Không, nó không tốt."
+      },
+      {
+        "role": "Child",
+        "en": "Please, just one?",
+        "vi": "Làm ơn, chỉ một cái thôi?"
+      },
+      {
+        "role": "Mom",
+        "en": "Okay, one piece only.",
+        "vi": "Được, chỉ một viên thôi."
+      }
+    ],
+    "key_phrases": [
+      "I want...",
+      "Please, just one?",
+      "One piece only."
+    ],
+    "key_vocab": [
+      "candy",
+      "want",
+      "please",
+      "piece"
+    ],
+    "grammar_points": [
+      "I want...",
+      "Just one..."
+    ]
+  }
+]

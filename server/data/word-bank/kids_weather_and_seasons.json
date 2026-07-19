@@ -1,0 +1,722 @@
+[
+  {
+    "id": "wb_kids_weather_and_seasons_001",
+    "word": "hot",
+    "phonetic": "/hɒt/",
+    "meaning_vi": "nóng",
+    "meaning_en": "having a high temperature",
+    "pos": "adjective",
+    "level": "kids",
+    "categories": [
+      "weather_and_seasons"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "The sun is hot.",
+        "vi": "Mặt trời nóng."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "hot day",
+      "hot sun"
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "cold"
+    ],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "a hot day",
+      "it is hot"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_weather_and_seasons_002",
+    "word": "cold",
+    "phonetic": "/kəʊld/",
+    "meaning_vi": "lạnh",
+    "meaning_en": "having a low temperature",
+    "pos": "adjective",
+    "level": "kids",
+    "categories": [
+      "weather_and_seasons"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "The ice is cold.",
+        "vi": "Cục đá lạnh."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "cold day",
+      "cold water"
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "hot"
+    ],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "a cold day",
+      "it is cold"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_weather_and_seasons_003",
+    "word": "rain",
+    "phonetic": "/reɪn/",
+    "meaning_vi": "mưa",
+    "meaning_en": "water falling from clouds",
+    "pos": "noun",
+    "level": "kids",
+    "categories": [
+      "weather_and_seasons"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "I see rain.",
+        "vi": "Con thấy mưa."
+      }
+    ],
+    "word_family": [
+      "rainy"
+    ],
+    "collocations": [
+      "heavy rain",
+      "in the rain"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "the rain",
+      "it is rain"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_weather_and_seasons_004",
+    "word": "sun",
+    "phonetic": "/sʌn/",
+    "meaning_vi": "mặt trời",
+    "meaning_en": "the bright star in the sky",
+    "pos": "noun",
+    "level": "kids",
+    "categories": [
+      "weather_and_seasons"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "The sun is yellow.",
+        "vi": "Mặt trời màu vàng."
+      }
+    ],
+    "word_family": [
+      "sunny"
+    ],
+    "collocations": [
+      "the sun",
+      "sun shines"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "the sun",
+      "in the sun"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_weather_and_seasons_005",
+    "word": "cloud",
+    "phonetic": "/klaʊd/",
+    "meaning_vi": "đám mây",
+    "meaning_en": "a white or gray thing in the sky",
+    "pos": "noun",
+    "level": "kids",
+    "categories": [
+      "weather_and_seasons"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "I see a cloud.",
+        "vi": "Con thấy một đám mây."
+      }
+    ],
+    "word_family": [
+      "cloudy"
+    ],
+    "collocations": [
+      "white cloud",
+      "big cloud"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "a cloud",
+      "the cloud"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_weather_and_seasons_006",
+    "word": "wind",
+    "phonetic": "/wɪnd/",
+    "meaning_vi": "gió",
+    "meaning_en": "moving air",
+    "pos": "noun",
+    "level": "kids",
+    "categories": [
+      "weather_and_seasons"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "The wind blows.",
+        "vi": "Gió thổi."
+      }
+    ],
+    "word_family": [
+      "windy"
+    ],
+    "collocations": [
+      "strong wind",
+      "in the wind"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "the wind",
+      "a wind"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_weather_and_seasons_007",
+    "word": "snow",
+    "phonetic": "/snəʊ/",
+    "meaning_vi": "tuyết",
+    "meaning_en": "white frozen water from the sky",
+    "pos": "noun",
+    "level": "kids",
+    "categories": [
+      "weather_and_seasons"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "The snow is white.",
+        "vi": "Tuyết màu trắng."
+      }
+    ],
+    "word_family": [
+      "snowy"
+    ],
+    "collocations": [
+      "white snow",
+      "in the snow"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "the snow",
+      "snow falls"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_weather_and_seasons_008",
+    "word": "warm",
+    "phonetic": "/wɔːm/",
+    "meaning_vi": "ấm",
+    "meaning_en": "a little hot, comfortable",
+    "pos": "adjective",
+    "level": "kids",
+    "categories": [
+      "weather_and_seasons"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "The blanket is warm.",
+        "vi": "Cái chăn ấm."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "warm day",
+      "warm sun"
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "cool"
+    ],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "a warm day",
+      "it is warm"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_weather_and_seasons_009",
+    "word": "umbrella",
+    "phonetic": "/ʌmˈbrelə/",
+    "meaning_vi": "cái ô",
+    "meaning_en": "a thing to keep you dry from rain",
+    "pos": "noun",
+    "level": "kids",
+    "categories": [
+      "weather_and_seasons"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "I have an umbrella.",
+        "vi": "Con có một cái ô."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "red umbrella",
+      "open umbrella"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "an umbrella",
+      "the umbrella"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_weather_and_seasons_010",
+    "word": "rainbow",
+    "phonetic": "/ˈreɪnbəʊ/",
+    "meaning_vi": "cầu vồng",
+    "meaning_en": "colors in the sky after rain",
+    "pos": "noun",
+    "level": "kids",
+    "categories": [
+      "weather_and_seasons"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "I see a rainbow.",
+        "vi": "Con thấy cầu vồng."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "beautiful rainbow",
+      "rainbow colors"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "a rainbow",
+      "the rainbow"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_weather_and_seasons_011",
+    "word": "storm",
+    "phonetic": "/stɔːm/",
+    "meaning_vi": "bão",
+    "meaning_en": "strong wind and rain",
+    "pos": "noun",
+    "level": "kids",
+    "categories": [
+      "weather_and_seasons"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "The storm is loud.",
+        "vi": "Cơn bão ồn ào."
+      }
+    ],
+    "word_family": [
+      "stormy"
+    ],
+    "collocations": [
+      "big storm",
+      "in the storm"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "a storm",
+      "the storm"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_weather_and_seasons_012",
+    "word": "fog",
+    "phonetic": "/fɒɡ/",
+    "meaning_vi": "sương mù",
+    "meaning_en": "thick cloud near the ground",
+    "pos": "noun",
+    "level": "kids",
+    "categories": [
+      "weather_and_seasons"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "I see fog.",
+        "vi": "Con thấy sương mù."
+      }
+    ],
+    "word_family": [
+      "foggy"
+    ],
+    "collocations": [
+      "thick fog",
+      "in the fog"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "the fog",
+      "fog is here"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_weather_and_seasons_013",
+    "word": "spring",
+    "phonetic": "/sprɪŋ/",
+    "meaning_vi": "mùa xuân",
+    "meaning_en": "season after winter",
+    "pos": "noun",
+    "level": "kids",
+    "categories": [
+      "weather_and_seasons"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "Spring is warm.",
+        "vi": "Mùa xuân ấm."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "in spring",
+      "spring flowers"
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "autumn"
+    ],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "in spring",
+      "spring comes"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_weather_and_seasons_014",
+    "word": "summer",
+    "phonetic": "/ˈsʌmə/",
+    "meaning_vi": "mùa hè",
+    "meaning_en": "hot season",
+    "pos": "noun",
+    "level": "kids",
+    "categories": [
+      "weather_and_seasons"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "Summer is hot.",
+        "vi": "Mùa hè nóng."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "in summer",
+      "summer sun"
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "winter"
+    ],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "in summer",
+      "summer is here"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_weather_and_seasons_015",
+    "word": "autumn",
+    "phonetic": "/ˈɔːtəm/",
+    "meaning_vi": "mùa thu",
+    "meaning_en": "season after summer",
+    "pos": "noun",
+    "level": "kids",
+    "categories": [
+      "weather_and_seasons"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "Autumn is cool.",
+        "vi": "Mùa thu mát."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "in autumn",
+      "autumn leaves"
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "spring"
+    ],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "in autumn",
+      "autumn comes"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_weather_and_seasons_016",
+    "word": "winter",
+    "phonetic": "/ˈwɪntə/",
+    "meaning_vi": "mùa đông",
+    "meaning_en": "cold season",
+    "pos": "noun",
+    "level": "kids",
+    "categories": [
+      "weather_and_seasons"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "Winter is cold.",
+        "vi": "Mùa đông lạnh."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "in winter",
+      "winter snow"
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "summer"
+    ],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "in winter",
+      "winter is here"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_weather_and_seasons_017",
+    "word": "sunny",
+    "phonetic": "/ˈsʌni/",
+    "meaning_vi": "nắng",
+    "meaning_en": "when the sun shines",
+    "pos": "adjective",
+    "level": "kids",
+    "categories": [
+      "weather_and_seasons"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "It is sunny today.",
+        "vi": "Hôm nay nắng."
+      }
+    ],
+    "word_family": [
+      "sun"
+    ],
+    "collocations": [
+      "sunny day",
+      "sunny weather"
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "rainy"
+    ],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "a sunny day",
+      "it is sunny"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_weather_and_seasons_018",
+    "word": "rainy",
+    "phonetic": "/ˈreɪni/",
+    "meaning_vi": "mưa",
+    "meaning_en": "when it rains",
+    "pos": "adjective",
+    "level": "kids",
+    "categories": [
+      "weather_and_seasons"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "It is rainy today.",
+        "vi": "Hôm nay mưa."
+      }
+    ],
+    "word_family": [
+      "rain"
+    ],
+    "collocations": [
+      "rainy day",
+      "rainy weather"
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "sunny"
+    ],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "a rainy day",
+      "it is rainy"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_weather_and_seasons_019",
+    "word": "windy",
+    "phonetic": "/ˈwɪndi/",
+    "meaning_vi": "gió",
+    "meaning_en": "when the wind blows",
+    "pos": "adjective",
+    "level": "kids",
+    "categories": [
+      "weather_and_seasons"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "It is windy today.",
+        "vi": "Hôm nay gió."
+      }
+    ],
+    "word_family": [
+      "wind"
+    ],
+    "collocations": [
+      "windy day",
+      "windy weather"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "a windy day",
+      "it is windy"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_weather_and_seasons_020",
+    "word": "cool",
+    "phonetic": "/kuːl/",
+    "meaning_vi": "mát",
+    "meaning_en": "a little cold, pleasant",
+    "pos": "adjective",
+    "level": "kids",
+    "categories": [
+      "weather_and_seasons"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "The breeze is cool.",
+        "vi": "Gió nhẹ mát."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "cool day",
+      "cool weather"
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "warm"
+    ],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "a cool day",
+      "it is cool"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  }
+]

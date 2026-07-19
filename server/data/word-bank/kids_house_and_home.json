@@ -1,0 +1,682 @@
+[
+  {
+    "id": "wb_kids_house_and_home_001",
+    "word": "bed",
+    "phonetic": "/bɛd/",
+    "meaning_vi": "cái giường",
+    "meaning_en": "a piece of furniture to sleep on",
+    "pos": "noun",
+    "level": "kids",
+    "categories": [
+      "house_and_home"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "I sleep on my bed.",
+        "vi": "Con ngủ trên giường của con."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "a bed",
+      "my bed"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "a bed",
+      "the bed"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_house_and_home_002",
+    "word": "door",
+    "phonetic": "/dɔːr/",
+    "meaning_vi": "cái cửa",
+    "meaning_en": "a thing you open to go in or out",
+    "pos": "noun",
+    "level": "kids",
+    "categories": [
+      "house_and_home"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "Open the door, please.",
+        "vi": "Con mở cửa ra nhé."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "the door",
+      "open the door"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "the door",
+      "a door"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_house_and_home_003",
+    "word": "table",
+    "phonetic": "/ˈteɪ.bəl/",
+    "meaning_vi": "cái bàn",
+    "meaning_en": "a flat surface with legs for eating or working",
+    "pos": "noun",
+    "level": "kids",
+    "categories": [
+      "house_and_home"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "Put the cup on the table.",
+        "vi": "Con đặt cái cốc lên bàn."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "on the table",
+      "a table"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "the table",
+      "a table"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_house_and_home_004",
+    "word": "chair",
+    "phonetic": "/tʃɛr/",
+    "meaning_vi": "cái ghế",
+    "meaning_en": "a seat for one person",
+    "pos": "noun",
+    "level": "kids",
+    "categories": [
+      "house_and_home"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "Sit on the chair.",
+        "vi": "Con ngồi lên ghế."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "a chair",
+      "on the chair"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "the chair",
+      "a chair"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_house_and_home_005",
+    "word": "window",
+    "phonetic": "/ˈwɪn.doʊ/",
+    "meaning_vi": "cửa sổ",
+    "meaning_en": "a hole in the wall with glass to see outside",
+    "pos": "noun",
+    "level": "kids",
+    "categories": [
+      "house_and_home"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "Look out the window.",
+        "vi": "Con nhìn ra ngoài cửa sổ."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "the window",
+      "open the window"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "the window",
+      "a window"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_house_and_home_006",
+    "word": "room",
+    "phonetic": "/ruːm/",
+    "meaning_vi": "căn phòng",
+    "meaning_en": "a part of a house with walls",
+    "pos": "noun",
+    "level": "kids",
+    "categories": [
+      "house_and_home"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "This is my room.",
+        "vi": "Đây là phòng của con."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "my room",
+      "a room"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "the room",
+      "a room"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_house_and_home_007",
+    "word": "kitchen",
+    "phonetic": "/ˈkɪtʃ.ɪn/",
+    "meaning_vi": "nhà bếp",
+    "meaning_en": "a room where you cook food",
+    "pos": "noun",
+    "level": "kids",
+    "categories": [
+      "house_and_home"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "Mom is in the kitchen.",
+        "vi": "Mẹ đang ở trong bếp."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "in the kitchen",
+      "the kitchen"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "the kitchen",
+      "a kitchen"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_house_and_home_008",
+    "word": "bathroom",
+    "phonetic": "/ˈbæθ.ruːm/",
+    "meaning_vi": "phòng tắm",
+    "meaning_en": "a room with a bath or toilet",
+    "pos": "noun",
+    "level": "kids",
+    "categories": [
+      "house_and_home"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "I wash in the bathroom.",
+        "vi": "Con rửa mặt trong phòng tắm."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "the bathroom",
+      "in the bathroom"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "the bathroom",
+      "a bathroom"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_house_and_home_009",
+    "word": "sofa",
+    "phonetic": "/ˈsoʊ.fə/",
+    "meaning_vi": "ghế sô pha",
+    "meaning_en": "a long soft seat for many people",
+    "pos": "noun",
+    "level": "kids",
+    "categories": [
+      "house_and_home"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "Sit on the sofa.",
+        "vi": "Con ngồi lên ghế sô pha."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "the sofa",
+      "on the sofa"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "the sofa",
+      "a sofa"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_house_and_home_010",
+    "word": "lamp",
+    "phonetic": "/læmp/",
+    "meaning_vi": "cái đèn",
+    "meaning_en": "a thing that gives light",
+    "pos": "noun",
+    "level": "kids",
+    "categories": [
+      "house_and_home"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "Turn on the lamp.",
+        "vi": "Con bật đèn lên."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "the lamp",
+      "a lamp"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "the lamp",
+      "a lamp"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_house_and_home_011",
+    "word": "floor",
+    "phonetic": "/flɔːr/",
+    "meaning_vi": "sàn nhà",
+    "meaning_en": "the flat part you walk on inside a house",
+    "pos": "noun",
+    "level": "kids",
+    "categories": [
+      "house_and_home"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "The toy is on the floor.",
+        "vi": "Đồ chơi ở trên sàn nhà."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "the floor",
+      "on the floor"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "the floor",
+      "a floor"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_house_and_home_012",
+    "word": "wall",
+    "phonetic": "/wɔːl/",
+    "meaning_vi": "bức tường",
+    "meaning_en": "a side of a room or building",
+    "pos": "noun",
+    "level": "kids",
+    "categories": [
+      "house_and_home"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "The picture is on the wall.",
+        "vi": "Bức tranh ở trên tường."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "the wall",
+      "on the wall"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "the wall",
+      "a wall"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_house_and_home_013",
+    "word": "roof",
+    "phonetic": "/ruːf/",
+    "meaning_vi": "mái nhà",
+    "meaning_en": "the top part of a house",
+    "pos": "noun",
+    "level": "kids",
+    "categories": [
+      "house_and_home"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "The bird is on the roof.",
+        "vi": "Con chim ở trên mái nhà."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "the roof",
+      "on the roof"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "the roof",
+      "a roof"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_house_and_home_014",
+    "word": "garden",
+    "phonetic": "/ˈɡɑːr.dən/",
+    "meaning_vi": "khu vườn",
+    "meaning_en": "a place outside with flowers and plants",
+    "pos": "noun",
+    "level": "kids",
+    "categories": [
+      "house_and_home"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "I play in the garden.",
+        "vi": "Con chơi trong vườn."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "the garden",
+      "in the garden"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "the garden",
+      "a garden"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_house_and_home_015",
+    "word": "stairs",
+    "phonetic": "/stɛrz/",
+    "meaning_vi": "cầu thang",
+    "meaning_en": "steps to go up or down in a house",
+    "pos": "noun",
+    "level": "kids",
+    "categories": [
+      "house_and_home"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "Go up the stairs.",
+        "vi": "Con đi lên cầu thang."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "the stairs",
+      "up the stairs"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "the stairs",
+      "stairs"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_house_and_home_016",
+    "word": "toilet",
+    "phonetic": "/ˈtɔɪ.lɪt/",
+    "meaning_vi": "bồn cầu",
+    "meaning_en": "a thing you sit on to go to the bathroom",
+    "pos": "noun",
+    "level": "kids",
+    "categories": [
+      "house_and_home"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "I need the toilet.",
+        "vi": "Con cần đi vệ sinh."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "the toilet",
+      "go to the toilet"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "the toilet",
+      "a toilet"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_house_and_home_017",
+    "word": "bath",
+    "phonetic": "/bæθ/",
+    "meaning_vi": "bồn tắm",
+    "meaning_en": "a big tub to wash your body",
+    "pos": "noun",
+    "level": "kids",
+    "categories": [
+      "house_and_home"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "I take a bath.",
+        "vi": "Con đi tắm."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "a bath",
+      "take a bath"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "a bath",
+      "the bath"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_house_and_home_018",
+    "word": "cup",
+    "phonetic": "/kʌp/",
+    "meaning_vi": "cái cốc",
+    "meaning_en": "a small container to drink from",
+    "pos": "noun",
+    "level": "kids",
+    "categories": [
+      "house_and_home"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "Drink from the cup.",
+        "vi": "Con uống bằng cốc."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "a cup",
+      "the cup"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "the cup",
+      "a cup"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_house_and_home_019",
+    "word": "plate",
+    "phonetic": "/pleɪt/",
+    "meaning_vi": "cái đĩa",
+    "meaning_en": "a flat dish to eat food from",
+    "pos": "noun",
+    "level": "kids",
+    "categories": [
+      "house_and_home"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "Put food on the plate.",
+        "vi": "Con để thức ăn lên đĩa."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "a plate",
+      "the plate"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "the plate",
+      "a plate"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_house_and_home_020",
+    "word": "spoon",
+    "phonetic": "/spuːn/",
+    "meaning_vi": "cái thìa",
+    "meaning_en": "a tool to eat soup or food",
+    "pos": "noun",
+    "level": "kids",
+    "categories": [
+      "house_and_home"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "Eat with a spoon.",
+        "vi": "Con ăn bằng thìa."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "a spoon",
+      "the spoon"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "the spoon",
+      "a spoon"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  }
+]

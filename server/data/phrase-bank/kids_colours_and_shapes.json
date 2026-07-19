@@ -1,0 +1,252 @@
+[
+  {
+    "phrase": "Red ball",
+    "meaning_vi": "Quả bóng màu đỏ",
+    "type": "expression",
+    "level": "kids",
+    "category": "colours_and_shapes",
+    "examples": [
+      {
+        "en": "I see a red ball.",
+        "vi": "Con thấy một quả bóng màu đỏ."
+      }
+    ],
+    "collocations": [],
+    "response": "Yes, a red ball!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Red ball."
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, it's red."
+      }
+    ]
+  },
+  {
+    "phrase": "Blue square",
+    "meaning_vi": "Hình vuông màu xanh",
+    "type": "expression",
+    "level": "kids",
+    "category": "colours_and_shapes",
+    "examples": [
+      {
+        "en": "This is a blue square.",
+        "vi": "Đây là hình vuông màu xanh."
+      }
+    ],
+    "collocations": [],
+    "response": "That's a blue square.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Blue square."
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, it's blue."
+      }
+    ]
+  },
+  {
+    "phrase": "Yellow star",
+    "meaning_vi": "Ngôi sao màu vàng",
+    "type": "expression",
+    "level": "kids",
+    "category": "colours_and_shapes",
+    "examples": [
+      {
+        "en": "I have a yellow star.",
+        "vi": "Con có một ngôi sao màu vàng."
+      }
+    ],
+    "collocations": [],
+    "response": "Nice yellow star!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Yellow star."
+      },
+      {
+        "speaker": "B",
+        "text": "It's pretty."
+      }
+    ]
+  },
+  {
+    "phrase": "Green triangle",
+    "meaning_vi": "Hình tam giác màu xanh lá",
+    "type": "expression",
+    "level": "kids",
+    "category": "colours_and_shapes",
+    "examples": [
+      {
+        "en": "Look at the green triangle.",
+        "vi": "Nhìn hình tam giác màu xanh lá kìa."
+      }
+    ],
+    "collocations": [],
+    "response": "Yes, a green triangle.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Green triangle."
+      },
+      {
+        "speaker": "B",
+        "text": "I see it."
+      }
+    ]
+  },
+  {
+    "phrase": "What color?",
+    "meaning_vi": "Màu gì?",
+    "type": "question",
+    "level": "kids",
+    "category": "colours_and_shapes",
+    "examples": [
+      {
+        "en": "What color is this?",
+        "vi": "Cái này màu gì?"
+      }
+    ],
+    "collocations": [],
+    "response": "It's red.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What color?"
+      },
+      {
+        "speaker": "B",
+        "text": "It's blue."
+      }
+    ]
+  },
+  {
+    "phrase": "It's a circle",
+    "meaning_vi": "Nó là hình tròn",
+    "type": "expression",
+    "level": "kids",
+    "category": "colours_and_shapes",
+    "examples": [
+      {
+        "en": "It's a circle.",
+        "vi": "Nó là hình tròn."
+      }
+    ],
+    "collocations": [],
+    "response": "Yes, a circle.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "It's a circle."
+      },
+      {
+        "speaker": "B",
+        "text": "Right!"
+      }
+    ]
+  },
+  {
+    "phrase": "Purple heart",
+    "meaning_vi": "Trái tim màu tím",
+    "type": "expression",
+    "level": "kids",
+    "category": "colours_and_shapes",
+    "examples": [
+      {
+        "en": "I love the purple heart.",
+        "vi": "Con thích trái tim màu tím."
+      }
+    ],
+    "collocations": [],
+    "response": "It's lovely.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Purple heart."
+      },
+      {
+        "speaker": "B",
+        "text": "So pretty!"
+      }
+    ]
+  },
+  {
+    "phrase": "Orange diamond",
+    "meaning_vi": "Hình thoi màu cam",
+    "type": "expression",
+    "level": "kids",
+    "category": "colours_and_shapes",
+    "examples": [
+      {
+        "en": "Draw an orange diamond.",
+        "vi": "Vẽ một hình thoi màu cam."
+      }
+    ],
+    "collocations": [],
+    "response": "Okay, an orange diamond.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Orange diamond."
+      },
+      {
+        "speaker": "B",
+        "text": "I will draw it."
+      }
+    ]
+  },
+  {
+    "phrase": "Pink oval",
+    "meaning_vi": "Hình bầu dục màu hồng",
+    "type": "expression",
+    "level": "kids",
+    "category": "colours_and_shapes",
+    "examples": [
+      {
+        "en": "This is a pink oval.",
+        "vi": "Đây là hình bầu dục màu hồng."
+      }
+    ],
+    "collocations": [],
+    "response": "A pink oval.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Pink oval."
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, it's pink."
+      }
+    ]
+  },
+  {
+    "phrase": "What shape?",
+    "meaning_vi": "Hình gì?",
+    "type": "question",
+    "level": "kids",
+    "category": "colours_and_shapes",
+    "examples": [
+      {
+        "en": "What shape is this?",
+        "vi": "Cái này hình gì?"
+      }
+    ],
+    "collocations": [],
+    "response": "It's a square.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What shape?"
+      },
+      {
+        "speaker": "B",
+        "text": "It's a triangle."
+      }
+    ]
+  }
+]

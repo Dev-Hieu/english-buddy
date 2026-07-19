@@ -1,0 +1,694 @@
+[
+  {
+    "id": "wb_kids_daily_life_001",
+    "word": "hello",
+    "phonetic": "/həˈloʊ/",
+    "meaning_vi": "xin chào",
+    "meaning_en": "a greeting",
+    "pos": "interjection",
+    "level": "kids",
+    "categories": [
+      "daily_life"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "I say hello.",
+        "vi": "Con nói xin chào."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "say hello",
+      "hello mom"
+    ],
+    "synonyms": [
+      "hi"
+    ],
+    "antonyms": [
+      "bye"
+    ],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "say hello"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_daily_life_002",
+    "word": "bye",
+    "phonetic": "/baɪ/",
+    "meaning_vi": "tạm biệt",
+    "meaning_en": "a farewell",
+    "pos": "interjection",
+    "level": "kids",
+    "categories": [
+      "daily_life"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "I say bye.",
+        "vi": "Con nói tạm biệt."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "say bye",
+      "bye mom"
+    ],
+    "synonyms": [
+      "goodbye"
+    ],
+    "antonyms": [
+      "hello"
+    ],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "say bye"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_daily_life_003",
+    "word": "eat",
+    "phonetic": "/iːt/",
+    "meaning_vi": "ăn",
+    "meaning_en": "to take food in",
+    "pos": "verb",
+    "level": "kids",
+    "categories": [
+      "daily_life"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "I eat rice.",
+        "vi": "Con ăn cơm."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "eat food",
+      "eat lunch"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "eat + food"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_daily_life_004",
+    "word": "sleep",
+    "phonetic": "/sliːp/",
+    "meaning_vi": "ngủ",
+    "meaning_en": "to rest with eyes closed",
+    "pos": "verb",
+    "level": "kids",
+    "categories": [
+      "daily_life"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "I sleep at night.",
+        "vi": "Con ngủ ban đêm."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "go to sleep",
+      "sleep well"
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "wake"
+    ],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "sleep + time"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_daily_life_005",
+    "word": "play",
+    "phonetic": "/pleɪ/",
+    "meaning_vi": "chơi",
+    "meaning_en": "to have fun",
+    "pos": "verb",
+    "level": "kids",
+    "categories": [
+      "daily_life"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "I play with toys.",
+        "vi": "Con chơi với đồ chơi."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "play outside",
+      "play games"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "play + activity"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_daily_life_006",
+    "word": "go",
+    "phonetic": "/ɡoʊ/",
+    "meaning_vi": "đi",
+    "meaning_en": "to move to a place",
+    "pos": "verb",
+    "level": "kids",
+    "categories": [
+      "daily_life"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "I go to school.",
+        "vi": "Con đi học."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "go home",
+      "go out"
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "come"
+    ],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "go + to + place"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_daily_life_007",
+    "word": "come",
+    "phonetic": "/kʌm/",
+    "meaning_vi": "đến",
+    "meaning_en": "to move towards",
+    "pos": "verb",
+    "level": "kids",
+    "categories": [
+      "daily_life"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "Come here, please.",
+        "vi": "Con đến đây."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "come here",
+      "come home"
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "go"
+    ],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "come + here/there"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_daily_life_008",
+    "word": "sit",
+    "phonetic": "/sɪt/",
+    "meaning_vi": "ngồi",
+    "meaning_en": "to rest on a chair",
+    "pos": "verb",
+    "level": "kids",
+    "categories": [
+      "daily_life"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "Sit on the chair.",
+        "vi": "Con ngồi trên ghế."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "sit down",
+      "sit up"
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "stand"
+    ],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "sit + on + object"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_daily_life_009",
+    "word": "stand",
+    "phonetic": "/stænd/",
+    "meaning_vi": "đứng",
+    "meaning_en": "to be on your feet",
+    "pos": "verb",
+    "level": "kids",
+    "categories": [
+      "daily_life"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "Stand up, please.",
+        "vi": "Con đứng lên."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "stand up",
+      "stand still"
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "sit"
+    ],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "stand + adverb"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_daily_life_010",
+    "word": "run",
+    "phonetic": "/rʌn/",
+    "meaning_vi": "chạy",
+    "meaning_en": "to move fast on feet",
+    "pos": "verb",
+    "level": "kids",
+    "categories": [
+      "daily_life"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "I run fast.",
+        "vi": "Con chạy nhanh."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "run outside",
+      "run away"
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "walk"
+    ],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "run + adverb"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_daily_life_011",
+    "word": "wash",
+    "phonetic": "/wɑːʃ/",
+    "meaning_vi": "rửa",
+    "meaning_en": "to clean with water",
+    "pos": "verb",
+    "level": "kids",
+    "categories": [
+      "daily_life"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "I wash my hands.",
+        "vi": "Con rửa tay."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "wash hands",
+      "wash face"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "wash + body part"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_daily_life_012",
+    "word": "brush",
+    "phonetic": "/brʌʃ/",
+    "meaning_vi": "chải",
+    "meaning_en": "to clean with a brush",
+    "pos": "verb",
+    "level": "kids",
+    "categories": [
+      "daily_life"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "I brush my teeth.",
+        "vi": "Con chải răng."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "brush teeth",
+      "brush hair"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "brush + object"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_daily_life_013",
+    "word": "wake",
+    "phonetic": "/weɪk/",
+    "meaning_vi": "thức dậy",
+    "meaning_en": "to stop sleeping",
+    "pos": "verb",
+    "level": "kids",
+    "categories": [
+      "daily_life"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "I wake up early.",
+        "vi": "Con thức dậy sớm."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "wake up",
+      "wake me"
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "sleep"
+    ],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "wake + up"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_daily_life_014",
+    "word": "drink",
+    "phonetic": "/drɪŋk/",
+    "meaning_vi": "uống",
+    "meaning_en": "to take liquid in",
+    "pos": "verb",
+    "level": "kids",
+    "categories": [
+      "daily_life"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "I drink water.",
+        "vi": "Con uống nước."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "drink milk",
+      "drink juice"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "drink + liquid"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_daily_life_015",
+    "word": "talk",
+    "phonetic": "/tɔːk/",
+    "meaning_vi": "nói chuyện",
+    "meaning_en": "to speak with someone",
+    "pos": "verb",
+    "level": "kids",
+    "categories": [
+      "daily_life"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "I talk to mom.",
+        "vi": "Con nói chuyện với mẹ."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "talk to",
+      "talk about"
+    ],
+    "synonyms": [
+      "speak"
+    ],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "talk + to + person"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_daily_life_016",
+    "word": "walk",
+    "phonetic": "/wɔːk/",
+    "meaning_vi": "đi bộ",
+    "meaning_en": "to move on feet slowly",
+    "pos": "verb",
+    "level": "kids",
+    "categories": [
+      "daily_life"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "I walk to school.",
+        "vi": "Con đi bộ đến trường."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "walk home",
+      "walk fast"
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "run"
+    ],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "walk + to + place"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_daily_life_017",
+    "word": "smile",
+    "phonetic": "/smaɪl/",
+    "meaning_vi": "cười",
+    "meaning_en": "to show happiness",
+    "pos": "verb",
+    "level": "kids",
+    "categories": [
+      "daily_life"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "I smile at you.",
+        "vi": "Con cười với bạn."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "smile big",
+      "smile at"
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "cry"
+    ],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "smile + at + person"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_daily_life_018",
+    "word": "open",
+    "phonetic": "/ˈoʊpən/",
+    "meaning_vi": "mở",
+    "meaning_en": "to make not closed",
+    "pos": "verb",
+    "level": "kids",
+    "categories": [
+      "daily_life"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "Open the door.",
+        "vi": "Con mở cửa."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "open door",
+      "open book"
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "close"
+    ],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "open + object"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_daily_life_019",
+    "word": "close",
+    "phonetic": "/kloʊz/",
+    "meaning_vi": "đóng",
+    "meaning_en": "to make shut",
+    "pos": "verb",
+    "level": "kids",
+    "categories": [
+      "daily_life"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "Close the window.",
+        "vi": "Con đóng cửa sổ."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "close door",
+      "close eyes"
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "open"
+    ],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "close + object"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_daily_life_020",
+    "word": "help",
+    "phonetic": "/hɛlp/",
+    "meaning_vi": "giúp",
+    "meaning_en": "to do something for someone",
+    "pos": "verb",
+    "level": "kids",
+    "categories": [
+      "daily_life"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "Help me, please.",
+        "vi": "Con giúp con với."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "help mom",
+      "help me"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "help + person"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  }
+]

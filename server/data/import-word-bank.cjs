@@ -19,7 +19,7 @@ const tx = db.transaction(() => {
   const wordBankDir = path.join(__dirname, "word-bank");
   const files = fs.readdirSync(wordBankDir).filter(f => f.endsWith(".json"));
 
-  for (const level of ["a1", "a2", "b1", "b2", "c1"]) {
+  for (const level of ["kids", "a1", "a2", "b1", "b2", "c1"]) {
     // Use topic-specific files (e.g. a1_daily_life.json) to preserve category info
     const topicFiles = files.filter(f => f.startsWith(level + "_"));
 

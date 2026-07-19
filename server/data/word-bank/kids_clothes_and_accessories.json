@@ -1,0 +1,782 @@
+[
+  {
+    "id": "wb_kids_clothes_and_accessories_001",
+    "word": "shirt",
+    "phonetic": "/ʃɜːrt/",
+    "meaning_vi": "áo sơ mi",
+    "meaning_en": "a piece of clothing for the top part of the body",
+    "pos": "noun",
+    "level": "kids",
+    "categories": [
+      "clothes_and_accessories"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "I wear a shirt.",
+        "vi": "Con mặc áo sơ mi."
+      },
+      {
+        "en": "My shirt is blue.",
+        "vi": "Áo sơ mi của con màu xanh."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "a shirt",
+      "my shirt",
+      "blue shirt"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "a shirt",
+      "the shirt"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_clothes_and_accessories_002",
+    "word": "shoes",
+    "phonetic": "/ʃuːz/",
+    "meaning_vi": "giày",
+    "meaning_en": "coverings for the feet",
+    "pos": "noun",
+    "level": "kids",
+    "categories": [
+      "clothes_and_accessories"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "I put on shoes.",
+        "vi": "Con mang giày."
+      },
+      {
+        "en": "My shoes are new.",
+        "vi": "Giày của con mới."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "my shoes",
+      "new shoes",
+      "put on shoes"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "shoes",
+      "the shoes"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_clothes_and_accessories_003",
+    "word": "hat",
+    "phonetic": "/hæt/",
+    "meaning_vi": "mũ",
+    "meaning_en": "a covering for the head",
+    "pos": "noun",
+    "level": "kids",
+    "categories": [
+      "clothes_and_accessories"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "I have a hat.",
+        "vi": "Con có một cái mũ."
+      },
+      {
+        "en": "The hat is red.",
+        "vi": "Cái mũ màu đỏ."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "a hat",
+      "my hat",
+      "red hat"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "a hat",
+      "the hat"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_clothes_and_accessories_004",
+    "word": "pants",
+    "phonetic": "/pænts/",
+    "meaning_vi": "quần dài",
+    "meaning_en": "a piece of clothing for the legs and lower body",
+    "pos": "noun",
+    "level": "kids",
+    "categories": [
+      "clothes_and_accessories"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "I wear pants.",
+        "vi": "Con mặc quần dài."
+      },
+      {
+        "en": "My pants are black.",
+        "vi": "Quần của con màu đen."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "my pants",
+      "black pants",
+      "wear pants"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "pants",
+      "the pants"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_clothes_and_accessories_005",
+    "word": "dress",
+    "phonetic": "/dres/",
+    "meaning_vi": "váy",
+    "meaning_en": "a one-piece garment for girls",
+    "pos": "noun",
+    "level": "kids",
+    "categories": [
+      "clothes_and_accessories"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "I like my dress.",
+        "vi": "Con thích váy của con."
+      },
+      {
+        "en": "The dress is pretty.",
+        "vi": "Cái váy đẹp."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "a dress",
+      "my dress",
+      "pretty dress"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "a dress",
+      "the dress"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_clothes_and_accessories_006",
+    "word": "socks",
+    "phonetic": "/sɒks/",
+    "meaning_vi": "vớ/tất",
+    "meaning_en": "coverings for the feet and lower legs",
+    "pos": "noun",
+    "level": "kids",
+    "categories": [
+      "clothes_and_accessories"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "I put on socks.",
+        "vi": "Con mang vớ."
+      },
+      {
+        "en": "My socks are white.",
+        "vi": "Vớ của con màu trắng."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "my socks",
+      "white socks",
+      "put on socks"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "socks",
+      "the socks"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_clothes_and_accessories_007",
+    "word": "bag",
+    "phonetic": "/bæɡ/",
+    "meaning_vi": "cặp/túi",
+    "meaning_en": "a container for carrying things",
+    "pos": "noun",
+    "level": "kids",
+    "categories": [
+      "clothes_and_accessories"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "I have a bag.",
+        "vi": "Con có một cái cặp."
+      },
+      {
+        "en": "My bag is big.",
+        "vi": "Cặp của con to."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "a bag",
+      "my bag",
+      "big bag"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "a bag",
+      "the bag"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_clothes_and_accessories_008",
+    "word": "coat",
+    "phonetic": "/koʊt/",
+    "meaning_vi": "áo khoác dài",
+    "meaning_en": "a warm outer garment",
+    "pos": "noun",
+    "level": "kids",
+    "categories": [
+      "clothes_and_accessories"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "I wear a coat.",
+        "vi": "Con mặc áo khoác."
+      },
+      {
+        "en": "The coat is warm.",
+        "vi": "Áo khoác ấm."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "a coat",
+      "my coat",
+      "warm coat"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "a coat",
+      "the coat"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_clothes_and_accessories_009",
+    "word": "gloves",
+    "phonetic": "/ɡlʌvz/",
+    "meaning_vi": "găng tay",
+    "meaning_en": "coverings for the hands",
+    "pos": "noun",
+    "level": "kids",
+    "categories": [
+      "clothes_and_accessories"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "I put on gloves.",
+        "vi": "Con mang găng tay."
+      },
+      {
+        "en": "My gloves are soft.",
+        "vi": "Găng tay của con mềm."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "my gloves",
+      "put on gloves",
+      "soft gloves"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "gloves",
+      "the gloves"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_clothes_and_accessories_010",
+    "word": "scarf",
+    "phonetic": "/skɑːrf/",
+    "meaning_vi": "khăn quàng",
+    "meaning_en": "a piece of cloth worn around the neck",
+    "pos": "noun",
+    "level": "kids",
+    "categories": [
+      "clothes_and_accessories"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "I wear a scarf.",
+        "vi": "Con quàng khăn."
+      },
+      {
+        "en": "The scarf is red.",
+        "vi": "Cái khăn màu đỏ."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "a scarf",
+      "my scarf",
+      "red scarf"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "a scarf",
+      "the scarf"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_clothes_and_accessories_011",
+    "word": "jacket",
+    "phonetic": "/ˈdʒækɪt/",
+    "meaning_vi": "áo khoác ngắn",
+    "meaning_en": "a short coat",
+    "pos": "noun",
+    "level": "kids",
+    "categories": [
+      "clothes_and_accessories"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "I have a jacket.",
+        "vi": "Con có một cái áo khoác."
+      },
+      {
+        "en": "My jacket is blue.",
+        "vi": "Áo khoác của con màu xanh."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "a jacket",
+      "my jacket",
+      "blue jacket"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "a jacket",
+      "the jacket"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_clothes_and_accessories_012",
+    "word": "skirt",
+    "phonetic": "/skɜːrt/",
+    "meaning_vi": "váy ngắn",
+    "meaning_en": "a garment worn from the waist down",
+    "pos": "noun",
+    "level": "kids",
+    "categories": [
+      "clothes_and_accessories"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "I wear a skirt.",
+        "vi": "Con mặc váy ngắn."
+      },
+      {
+        "en": "The skirt is pink.",
+        "vi": "Cái váy màu hồng."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "a skirt",
+      "my skirt",
+      "pink skirt"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "a skirt",
+      "the skirt"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_clothes_and_accessories_013",
+    "word": "boots",
+    "phonetic": "/buːts/",
+    "meaning_vi": "ủng",
+    "meaning_en": "strong shoes that cover the ankle",
+    "pos": "noun",
+    "level": "kids",
+    "categories": [
+      "clothes_and_accessories"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "I put on boots.",
+        "vi": "Con mang ủng."
+      },
+      {
+        "en": "My boots are brown.",
+        "vi": "Ủng của con màu nâu."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "my boots",
+      "brown boots",
+      "put on boots"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "boots",
+      "the boots"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_clothes_and_accessories_014",
+    "word": "sandals",
+    "phonetic": "/ˈsændlz/",
+    "meaning_vi": "dép xăng-đan",
+    "meaning_en": "open shoes worn in warm weather",
+    "pos": "noun",
+    "level": "kids",
+    "categories": [
+      "clothes_and_accessories"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "I wear sandals.",
+        "vi": "Con mang dép xăng-đan."
+      },
+      {
+        "en": "My sandals are blue.",
+        "vi": "Dép của con màu xanh."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "my sandals",
+      "blue sandals",
+      "wear sandals"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "sandals",
+      "the sandals"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_clothes_and_accessories_015",
+    "word": "button",
+    "phonetic": "/ˈbʌtn/",
+    "meaning_vi": "cúc áo",
+    "meaning_en": "a small round fastener on clothes",
+    "pos": "noun",
+    "level": "kids",
+    "categories": [
+      "clothes_and_accessories"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "I see a button.",
+        "vi": "Con thấy một cái cúc."
+      },
+      {
+        "en": "The button is round.",
+        "vi": "Cái cúc tròn."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "a button",
+      "the button",
+      "round button"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "a button",
+      "the button"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_clothes_and_accessories_016",
+    "word": "zip",
+    "phonetic": "/zɪp/",
+    "meaning_vi": "khóa kéo",
+    "meaning_en": "a fastener with two rows of teeth",
+    "pos": "noun",
+    "level": "kids",
+    "categories": [
+      "clothes_and_accessories"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "I pull the zip.",
+        "vi": "Con kéo khóa."
+      },
+      {
+        "en": "The zip is broken.",
+        "vi": "Khóa kéo bị hỏng."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "the zip",
+      "pull the zip",
+      "broken zip"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "the zip",
+      "a zip"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_clothes_and_accessories_017",
+    "word": "pocket",
+    "phonetic": "/ˈpɒkɪt/",
+    "meaning_vi": "túi áo/quần",
+    "meaning_en": "a small bag sewn into clothing",
+    "pos": "noun",
+    "level": "kids",
+    "categories": [
+      "clothes_and_accessories"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "I have a pocket.",
+        "vi": "Con có một cái túi."
+      },
+      {
+        "en": "My pocket is big.",
+        "vi": "Túi của con to."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "a pocket",
+      "my pocket",
+      "big pocket"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "a pocket",
+      "the pocket"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_clothes_and_accessories_018",
+    "word": "sleeve",
+    "phonetic": "/sliːv/",
+    "meaning_vi": "tay áo",
+    "meaning_en": "the part of a shirt that covers the arm",
+    "pos": "noun",
+    "level": "kids",
+    "categories": [
+      "clothes_and_accessories"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "The sleeve is long.",
+        "vi": "Tay áo dài."
+      },
+      {
+        "en": "I roll up my sleeve.",
+        "vi": "Con xắn tay áo lên."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "the sleeve",
+      "long sleeve",
+      "roll up sleeve"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "the sleeve",
+      "a sleeve"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_clothes_and_accessories_019",
+    "word": "hood",
+    "phonetic": "/hʊd/",
+    "meaning_vi": "mũ trùm",
+    "meaning_en": "a part of a coat that covers the head",
+    "pos": "noun",
+    "level": "kids",
+    "categories": [
+      "clothes_and_accessories"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "I put up the hood.",
+        "vi": "Con trùm mũ lên."
+      },
+      {
+        "en": "The hood is warm.",
+        "vi": "Cái mũ trùm ấm."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "the hood",
+      "put up the hood",
+      "warm hood"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "the hood",
+      "a hood"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_clothes_and_accessories_020",
+    "word": "uniform",
+    "phonetic": "/ˈjuːnɪfɔːrm/",
+    "meaning_vi": "đồng phục",
+    "meaning_en": "special clothes worn by a group",
+    "pos": "noun",
+    "level": "kids",
+    "categories": [
+      "clothes_and_accessories"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "I wear a uniform.",
+        "vi": "Con mặc đồng phục."
+      },
+      {
+        "en": "My uniform is clean.",
+        "vi": "Đồng phục của con sạch."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "a uniform",
+      "my uniform",
+      "clean uniform"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "a uniform",
+      "the uniform"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  }
+]

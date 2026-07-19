@@ -1,0 +1,252 @@
+[
+  {
+    "phrase": "Look at the bird",
+    "meaning_vi": "Nhìn con chim kìa",
+    "type": "request",
+    "level": "kids",
+    "category": "animals_and_nature",
+    "examples": [
+      {
+        "en": "Look at the bird!",
+        "vi": "Nhìn con chim kìa!"
+      }
+    ],
+    "collocations": [],
+    "response": "Yes, I see it!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Look at the bird!"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I see it!"
+      }
+    ]
+  },
+  {
+    "phrase": "I like cats",
+    "meaning_vi": "Con thích mèo",
+    "type": "expression",
+    "level": "kids",
+    "category": "animals_and_nature",
+    "examples": [
+      {
+        "en": "I like cats.",
+        "vi": "Con thích mèo."
+      }
+    ],
+    "collocations": [],
+    "response": "Cats are fun!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I like cats."
+      },
+      {
+        "speaker": "B",
+        "text": "Cats are fun!"
+      }
+    ]
+  },
+  {
+    "phrase": "The flower is pretty",
+    "meaning_vi": "Bông hoa đẹp quá",
+    "type": "expression",
+    "level": "kids",
+    "category": "animals_and_nature",
+    "examples": [
+      {
+        "en": "The flower is pretty.",
+        "vi": "Bông hoa đẹp quá."
+      }
+    ],
+    "collocations": [],
+    "response": "Yes, it is!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "The flower is pretty."
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, it is!"
+      }
+    ]
+  },
+  {
+    "phrase": "Can I pet the dog?",
+    "meaning_vi": "Con có thể vuốt ve con chó không?",
+    "type": "question",
+    "level": "kids",
+    "category": "animals_and_nature",
+    "examples": [
+      {
+        "en": "Can I pet the dog?",
+        "vi": "Con có thể vuốt ve con chó không?"
+      }
+    ],
+    "collocations": [],
+    "response": "Yes, gently!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Can I pet the dog?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, gently!"
+      }
+    ]
+  },
+  {
+    "phrase": "The sun is hot",
+    "meaning_vi": "Mặt trời nóng quá",
+    "type": "expression",
+    "level": "kids",
+    "category": "animals_and_nature",
+    "examples": [
+      {
+        "en": "The sun is hot.",
+        "vi": "Mặt trời nóng quá."
+      }
+    ],
+    "collocations": [],
+    "response": "Wear a hat!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "The sun is hot."
+      },
+      {
+        "speaker": "B",
+        "text": "Wear a hat!"
+      }
+    ]
+  },
+  {
+    "phrase": "Where is the fish?",
+    "meaning_vi": "Con cá ở đâu?",
+    "type": "question",
+    "level": "kids",
+    "category": "animals_and_nature",
+    "examples": [
+      {
+        "en": "Where is the fish?",
+        "vi": "Con cá ở đâu?"
+      }
+    ],
+    "collocations": [],
+    "response": "In the water!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Where is the fish?"
+      },
+      {
+        "speaker": "B",
+        "text": "In the water!"
+      }
+    ]
+  },
+  {
+    "phrase": "I see a tree",
+    "meaning_vi": "Con nhìn thấy một cái cây",
+    "type": "expression",
+    "level": "kids",
+    "category": "animals_and_nature",
+    "examples": [
+      {
+        "en": "I see a tree.",
+        "vi": "Con nhìn thấy một cái cây."
+      }
+    ],
+    "collocations": [],
+    "response": "It is tall!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I see a tree."
+      },
+      {
+        "speaker": "B",
+        "text": "It is tall!"
+      }
+    ]
+  },
+  {
+    "phrase": "The rabbit is cute",
+    "meaning_vi": "Con thỏ dễ thương quá",
+    "type": "expression",
+    "level": "kids",
+    "category": "animals_and_nature",
+    "examples": [
+      {
+        "en": "The rabbit is cute.",
+        "vi": "Con thỏ dễ thương quá."
+      }
+    ],
+    "collocations": [],
+    "response": "Yes, very cute!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "The rabbit is cute."
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, very cute!"
+      }
+    ]
+  },
+  {
+    "phrase": "Let's go outside",
+    "meaning_vi": "Chúng ta ra ngoài đi",
+    "type": "request",
+    "level": "kids",
+    "category": "animals_and_nature",
+    "examples": [
+      {
+        "en": "Let's go outside.",
+        "vi": "Chúng ta ra ngoài đi."
+      }
+    ],
+    "collocations": [],
+    "response": "Okay, let's go!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Let's go outside."
+      },
+      {
+        "speaker": "B",
+        "text": "Okay, let's go!"
+      }
+    ]
+  },
+  {
+    "phrase": "Goodbye, butterfly",
+    "meaning_vi": "Tạm biệt, con bướm",
+    "type": "greeting",
+    "level": "kids",
+    "category": "animals_and_nature",
+    "examples": [
+      {
+        "en": "Goodbye, butterfly!",
+        "vi": "Tạm biệt, con bướm!"
+      }
+    ],
+    "collocations": [],
+    "response": "Bye bye!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Goodbye, butterfly!"
+      },
+      {
+        "speaker": "B",
+        "text": "Bye bye!"
+      }
+    ]
+  }
+]

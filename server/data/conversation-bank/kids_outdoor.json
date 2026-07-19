@@ -1,0 +1,96 @@
+[
+  {
+    "scenario": "At the park",
+    "scenario_vi": "Ở công viên",
+    "category": "outdoor",
+    "level": "kids",
+    "roles": [
+      "Child",
+      "Mom"
+    ],
+    "dialogue": [
+      {
+        "role": "Child",
+        "en": "Mom, I see a bird!",
+        "vi": "Mẹ ơi, con thấy con chim!"
+      },
+      {
+        "role": "Mom",
+        "en": "It is very pretty.",
+        "vi": "Nó rất đẹp."
+      },
+      {
+        "role": "Child",
+        "en": "Can I feed it?",
+        "vi": "Con cho nó ăn được không?"
+      },
+      {
+        "role": "Mom",
+        "en": "No, let it fly.",
+        "vi": "Không, để nó bay đi."
+      }
+    ],
+    "key_phrases": [
+      "I see...",
+      "Can I...?",
+      "Let it fly."
+    ],
+    "key_vocab": [
+      "bird",
+      "pretty",
+      "feed",
+      "fly"
+    ],
+    "grammar_points": [
+      "I see...",
+      "Can I...?"
+    ]
+  },
+  {
+    "scenario": "At the zoo",
+    "scenario_vi": "Ở sở thú",
+    "category": "outdoor",
+    "level": "kids",
+    "roles": [
+      "Child",
+      "Mom"
+    ],
+    "dialogue": [
+      {
+        "role": "Child",
+        "en": "Mom, look at the lion!",
+        "vi": "Mẹ ơi, nhìn con sư tử kìa!"
+      },
+      {
+        "role": "Mom",
+        "en": "It is very big.",
+        "vi": "Nó rất to."
+      },
+      {
+        "role": "Child",
+        "en": "Is it scary?",
+        "vi": "Nó có đáng sợ không?"
+      },
+      {
+        "role": "Mom",
+        "en": "No, it is sleeping.",
+        "vi": "Không, nó đang ngủ."
+      }
+    ],
+    "key_phrases": [
+      "Look at...",
+      "It is...",
+      "Is it scary?"
+    ],
+    "key_vocab": [
+      "lion",
+      "big",
+      "scary",
+      "sleeping"
+    ],
+    "grammar_points": [
+      "Look at...",
+      "Is it...?"
+    ]
+  }
+]

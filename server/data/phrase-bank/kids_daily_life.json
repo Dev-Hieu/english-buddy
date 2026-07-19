@@ -1,0 +1,252 @@
+[
+  {
+    "phrase": "Good morning",
+    "meaning_vi": "Chào buổi sáng",
+    "type": "greeting",
+    "level": "kids",
+    "category": "daily_life",
+    "examples": [
+      {
+        "en": "Good morning, mom!",
+        "vi": "Chào buổi sáng, mẹ!"
+      }
+    ],
+    "collocations": [],
+    "response": "Good morning!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Good morning!"
+      },
+      {
+        "speaker": "B",
+        "text": "Good morning! How are you?"
+      }
+    ]
+  },
+  {
+    "phrase": "I'm hungry",
+    "meaning_vi": "Con đói bụng",
+    "type": "expression",
+    "level": "kids",
+    "category": "daily_life",
+    "examples": [
+      {
+        "en": "I'm hungry now.",
+        "vi": "Con đói bụng rồi."
+      }
+    ],
+    "collocations": [],
+    "response": "Let's eat!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I'm hungry."
+      },
+      {
+        "speaker": "B",
+        "text": "Let's have a snack."
+      }
+    ]
+  },
+  {
+    "phrase": "I'm tired",
+    "meaning_vi": "Con mệt",
+    "type": "expression",
+    "level": "kids",
+    "category": "daily_life",
+    "examples": [
+      {
+        "en": "I'm tired, daddy.",
+        "vi": "Con mệt, bố ạ."
+      }
+    ],
+    "collocations": [],
+    "response": "Time to rest.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I'm tired."
+      },
+      {
+        "speaker": "B",
+        "text": "Let's take a nap."
+      }
+    ]
+  },
+  {
+    "phrase": "Can I go out?",
+    "meaning_vi": "Con có thể ra ngoài chơi không?",
+    "type": "request",
+    "level": "kids",
+    "category": "daily_life",
+    "examples": [
+      {
+        "en": "Can I go out to play?",
+        "vi": "Con có thể ra ngoài chơi không?"
+      }
+    ],
+    "collocations": [],
+    "response": "Yes, you can.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Can I go out?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, but be careful."
+      }
+    ]
+  },
+  {
+    "phrase": "I want water",
+    "meaning_vi": "Con muốn uống nước",
+    "type": "request",
+    "level": "kids",
+    "category": "daily_life",
+    "examples": [
+      {
+        "en": "I want water, please.",
+        "vi": "Con muốn uống nước."
+      }
+    ],
+    "collocations": [],
+    "response": "Here you go.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I want water."
+      },
+      {
+        "speaker": "B",
+        "text": "Here you are."
+      }
+    ]
+  },
+  {
+    "phrase": "What is this?",
+    "meaning_vi": "Đây là cái gì?",
+    "type": "question",
+    "level": "kids",
+    "category": "daily_life",
+    "examples": [
+      {
+        "en": "What is this, mom?",
+        "vi": "Đây là cái gì, mẹ?"
+      }
+    ],
+    "collocations": [],
+    "response": "This is a book.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What is this?"
+      },
+      {
+        "speaker": "B",
+        "text": "This is a toy."
+      }
+    ]
+  },
+  {
+    "phrase": "Where is my bag?",
+    "meaning_vi": "Cặp của con đâu?",
+    "type": "question",
+    "level": "kids",
+    "category": "daily_life",
+    "examples": [
+      {
+        "en": "Where is my bag?",
+        "vi": "Cặp của con đâu?"
+      }
+    ],
+    "collocations": [],
+    "response": "It's over there.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Where is my bag?"
+      },
+      {
+        "speaker": "B",
+        "text": "It's on the chair."
+      }
+    ]
+  },
+  {
+    "phrase": "I need help",
+    "meaning_vi": "Con cần giúp đỡ",
+    "type": "request",
+    "level": "kids",
+    "category": "daily_life",
+    "examples": [
+      {
+        "en": "I need help, please.",
+        "vi": "Con cần giúp đỡ."
+      }
+    ],
+    "collocations": [],
+    "response": "I'm coming.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I need help."
+      },
+      {
+        "speaker": "B",
+        "text": "What do you need?"
+      }
+    ]
+  },
+  {
+    "phrase": "I love you",
+    "meaning_vi": "Con yêu bạn / Con yêu ba mẹ",
+    "type": "expression",
+    "level": "kids",
+    "category": "daily_life",
+    "examples": [
+      {
+        "en": "I love you, mom.",
+        "vi": "Con yêu mẹ."
+      }
+    ],
+    "collocations": [],
+    "response": "I love you too.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I love you."
+      },
+      {
+        "speaker": "B",
+        "text": "I love you too, sweetie."
+      }
+    ]
+  },
+  {
+    "phrase": "Good night",
+    "meaning_vi": "Chúc ngủ ngon",
+    "type": "greeting",
+    "level": "kids",
+    "category": "daily_life",
+    "examples": [
+      {
+        "en": "Good night, daddy.",
+        "vi": "Chúc bố ngủ ngon."
+      }
+    ],
+    "collocations": [],
+    "response": "Good night! Sleep well.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Good night."
+      },
+      {
+        "speaker": "B",
+        "text": "Good night! Sweet dreams."
+      }
+    ]
+  }
+]

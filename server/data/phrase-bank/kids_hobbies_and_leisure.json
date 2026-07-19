@@ -1,0 +1,252 @@
+[
+  {
+    "phrase": "Let's play",
+    "meaning_vi": "Chúng ta chơi đi",
+    "type": "request",
+    "level": "kids",
+    "category": "hobbies_and_leisure",
+    "examples": [
+      {
+        "en": "Let's play outside!",
+        "vi": "Chúng ta chơi ngoài trời đi!"
+      }
+    ],
+    "collocations": [],
+    "response": "Okay!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Let's play!"
+      },
+      {
+        "speaker": "B",
+        "text": "Okay! Let's play with the ball."
+      }
+    ]
+  },
+  {
+    "phrase": "I like drawing",
+    "meaning_vi": "Con thích vẽ",
+    "type": "expression",
+    "level": "kids",
+    "category": "hobbies_and_leisure",
+    "examples": [
+      {
+        "en": "I like drawing cats.",
+        "vi": "Con thích vẽ mèo."
+      }
+    ],
+    "collocations": [],
+    "response": "That's nice!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I like drawing."
+      },
+      {
+        "speaker": "B",
+        "text": "That's nice! Draw a flower."
+      }
+    ]
+  },
+  {
+    "phrase": "Can I play?",
+    "meaning_vi": "Con có thể chơi không?",
+    "type": "question",
+    "level": "kids",
+    "category": "hobbies_and_leisure",
+    "examples": [
+      {
+        "en": "Can I play with you?",
+        "vi": "Con có thể chơi với bạn không?"
+      }
+    ],
+    "collocations": [],
+    "response": "Yes, you can!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Can I play?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, you can! Come here."
+      }
+    ]
+  },
+  {
+    "phrase": "Let's sing",
+    "meaning_vi": "Chúng ta hát đi",
+    "type": "request",
+    "level": "kids",
+    "category": "hobbies_and_leisure",
+    "examples": [
+      {
+        "en": "Let's sing a song!",
+        "vi": "Chúng ta hát một bài hát đi!"
+      }
+    ],
+    "collocations": [],
+    "response": "Okay! Let's sing.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Let's sing!"
+      },
+      {
+        "speaker": "B",
+        "text": "Okay! Let's sing 'Twinkle Twinkle'."
+      }
+    ]
+  },
+  {
+    "phrase": "I want to dance",
+    "meaning_vi": "Con muốn nhảy",
+    "type": "expression",
+    "level": "kids",
+    "category": "hobbies_and_leisure",
+    "examples": [
+      {
+        "en": "I want to dance now.",
+        "vi": "Con muốn nhảy bây giờ."
+      }
+    ],
+    "collocations": [],
+    "response": "Great! Let's dance!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I want to dance."
+      },
+      {
+        "speaker": "B",
+        "text": "Great! Let's dance together!"
+      }
+    ]
+  },
+  {
+    "phrase": "Do you like toys?",
+    "meaning_vi": "Bạn có thích đồ chơi không?",
+    "type": "question",
+    "level": "kids",
+    "category": "hobbies_and_leisure",
+    "examples": [
+      {
+        "en": "Do you like toys?",
+        "vi": "Bạn có thích đồ chơi không?"
+      }
+    ],
+    "collocations": [],
+    "response": "Yes, I do!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Do you like toys?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I do! I like cars."
+      }
+    ]
+  },
+  {
+    "phrase": "Let's ride bikes",
+    "meaning_vi": "Chúng ta đạp xe đi",
+    "type": "request",
+    "level": "kids",
+    "category": "hobbies_and_leisure",
+    "examples": [
+      {
+        "en": "Let's ride bikes outside!",
+        "vi": "Chúng ta đạp xe ngoài trời đi!"
+      }
+    ],
+    "collocations": [],
+    "response": "Okay! Let's go!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Let's ride bikes!"
+      },
+      {
+        "speaker": "B",
+        "text": "Okay! Let's go to the park."
+      }
+    ]
+  },
+  {
+    "phrase": "I love reading",
+    "meaning_vi": "Con thích đọc sách",
+    "type": "expression",
+    "level": "kids",
+    "category": "hobbies_and_leisure",
+    "examples": [
+      {
+        "en": "I love reading books.",
+        "vi": "Con thích đọc sách."
+      }
+    ],
+    "collocations": [],
+    "response": "That's wonderful!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I love reading."
+      },
+      {
+        "speaker": "B",
+        "text": "That's wonderful! What book do you like?"
+      }
+    ]
+  },
+  {
+    "phrase": "Let's play hide and seek",
+    "meaning_vi": "Chúng ta chơi trốn tìm đi",
+    "type": "request",
+    "level": "kids",
+    "category": "hobbies_and_leisure",
+    "examples": [
+      {
+        "en": "Let's play hide and seek!",
+        "vi": "Chúng ta chơi trốn tìm đi!"
+      }
+    ],
+    "collocations": [],
+    "response": "Okay! I'll count.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Let's play hide and seek!"
+      },
+      {
+        "speaker": "B",
+        "text": "Okay! I'll count to ten."
+      }
+    ]
+  },
+  {
+    "phrase": "What do you want to do?",
+    "meaning_vi": "Bạn muốn làm gì?",
+    "type": "question",
+    "level": "kids",
+    "category": "hobbies_and_leisure",
+    "examples": [
+      {
+        "en": "What do you want to do?",
+        "vi": "Bạn muốn làm gì?"
+      }
+    ],
+    "collocations": [],
+    "response": "I want to play.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What do you want to do?"
+      },
+      {
+        "speaker": "B",
+        "text": "I want to play with blocks."
+      }
+    ]
+  }
+]

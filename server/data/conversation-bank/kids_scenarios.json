@@ -1,0 +1,474 @@
+[
+  {
+    "scenario": "Greeting a friend at school",
+    "scenario_vi": "Chào bạn ở trường",
+    "category": "education",
+    "level": "kids",
+    "roles": [
+      "Child A",
+      "Child B"
+    ],
+    "dialogue": [
+      {
+        "role": "Child A",
+        "en": "Hello!",
+        "vi": "Xin chào!"
+      },
+      {
+        "role": "Child B",
+        "en": "Hello! How are you?",
+        "vi": "Xin chào! Bạn khỏe không?"
+      },
+      {
+        "role": "Child A",
+        "en": "I am fine. And you?",
+        "vi": "Mình khỏe. Còn bạn?"
+      },
+      {
+        "role": "Child B",
+        "en": "I am fine too.",
+        "vi": "Mình cũng khỏe."
+      }
+    ],
+    "key_phrases": [
+      "Hello!",
+      "How are you?",
+      "I am fine.",
+      "And you?"
+    ],
+    "key_vocab": [
+      "hello",
+      "how",
+      "fine",
+      "you"
+    ],
+    "grammar_points": [
+      "I am...",
+      "How are you?"
+    ]
+  },
+  {
+    "scenario": "Asking the teacher a question",
+    "scenario_vi": "Hỏi cô giáo một câu hỏi",
+    "category": "education",
+    "level": "kids",
+    "roles": [
+      "Child",
+      "Teacher"
+    ],
+    "dialogue": [
+      {
+        "role": "Child",
+        "en": "Teacher, can I go?",
+        "vi": "Thưa cô, con đi được không?"
+      },
+      {
+        "role": "Teacher",
+        "en": "Yes, you can go.",
+        "vi": "Được, con có thể đi."
+      },
+      {
+        "role": "Child",
+        "en": "Thank you, teacher!",
+        "vi": "Cảm ơn cô!"
+      },
+      {
+        "role": "Teacher",
+        "en": "You are welcome.",
+        "vi": "Không có gì."
+      }
+    ],
+    "key_phrases": [
+      "Can I go?",
+      "Thank you!",
+      "You are welcome."
+    ],
+    "key_vocab": [
+      "teacher",
+      "go",
+      "thank",
+      "welcome"
+    ],
+    "grammar_points": [
+      "Can I...?",
+      "Thank you."
+    ]
+  },
+  {
+    "scenario": "Talking with mom at home",
+    "scenario_vi": "Nói chuyện với mẹ ở nhà",
+    "category": "family",
+    "level": "kids",
+    "roles": [
+      "Child",
+      "Mom"
+    ],
+    "dialogue": [
+      {
+        "role": "Child",
+        "en": "Mom, I am hungry.",
+        "vi": "Mẹ ơi, con đói."
+      },
+      {
+        "role": "Mom",
+        "en": "Do you want a snack?",
+        "vi": "Con muốn ăn nhẹ không?"
+      },
+      {
+        "role": "Child",
+        "en": "Yes, please!",
+        "vi": "Có ạ!"
+      },
+      {
+        "role": "Mom",
+        "en": "Here you are.",
+        "vi": "Của con đây."
+      }
+    ],
+    "key_phrases": [
+      "I am hungry.",
+      "Do you want...?",
+      "Here you are."
+    ],
+    "key_vocab": [
+      "mom",
+      "hungry",
+      "snack",
+      "want"
+    ],
+    "grammar_points": [
+      "I am...",
+      "Do you...?"
+    ]
+  },
+  {
+    "scenario": "Playing with friends",
+    "scenario_vi": "Chơi với bạn bè",
+    "category": "play",
+    "level": "kids",
+    "roles": [
+      "Child A",
+      "Child B"
+    ],
+    "dialogue": [
+      {
+        "role": "Child A",
+        "en": "Let's play ball!",
+        "vi": "Chơi bóng đi!"
+      },
+      {
+        "role": "Child B",
+        "en": "Okay! I throw it.",
+        "vi": "Được! Mình ném nhé."
+      },
+      {
+        "role": "Child A",
+        "en": "Catch the ball!",
+        "vi": "Bắt bóng kìa!"
+      },
+      {
+        "role": "Child B",
+        "en": "Good catch!",
+        "vi": "Bắt giỏi quá!"
+      }
+    ],
+    "key_phrases": [
+      "Let's play!",
+      "Catch the ball!",
+      "Good catch!"
+    ],
+    "key_vocab": [
+      "play",
+      "ball",
+      "throw",
+      "catch"
+    ],
+    "grammar_points": [
+      "Let's...",
+      "Good..."
+    ]
+  },
+  {
+    "scenario": "Eating lunch",
+    "scenario_vi": "Ăn trưa",
+    "category": "daily_routine",
+    "level": "kids",
+    "roles": [
+      "Child",
+      "Mom"
+    ],
+    "dialogue": [
+      {
+        "role": "Child",
+        "en": "Mom, this is good.",
+        "vi": "Mẹ ơi, món này ngon."
+      },
+      {
+        "role": "Mom",
+        "en": "Eat more vegetables.",
+        "vi": "Ăn thêm rau đi con."
+      },
+      {
+        "role": "Child",
+        "en": "I don't like carrots.",
+        "vi": "Con không thích cà rốt."
+      },
+      {
+        "role": "Mom",
+        "en": "Just a little bite.",
+        "vi": "Chỉ một miếng nhỏ thôi."
+      }
+    ],
+    "key_phrases": [
+      "This is good.",
+      "Eat more...",
+      "I don't like...",
+      "Just a little."
+    ],
+    "key_vocab": [
+      "good",
+      "vegetables",
+      "carrots",
+      "little"
+    ],
+    "grammar_points": [
+      "I don't like...",
+      "This is..."
+    ]
+  },
+  {
+    "scenario": "At the park",
+    "scenario_vi": "Ở công viên",
+    "category": "outdoor",
+    "level": "kids",
+    "roles": [
+      "Child",
+      "Mom"
+    ],
+    "dialogue": [
+      {
+        "role": "Child",
+        "en": "Mom, I see a bird!",
+        "vi": "Mẹ ơi, con thấy con chim!"
+      },
+      {
+        "role": "Mom",
+        "en": "It is very pretty.",
+        "vi": "Nó rất đẹp."
+      },
+      {
+        "role": "Child",
+        "en": "Can I feed it?",
+        "vi": "Con cho nó ăn được không?"
+      },
+      {
+        "role": "Mom",
+        "en": "No, let it fly.",
+        "vi": "Không, để nó bay đi."
+      }
+    ],
+    "key_phrases": [
+      "I see...",
+      "Can I...?",
+      "Let it fly."
+    ],
+    "key_vocab": [
+      "bird",
+      "pretty",
+      "feed",
+      "fly"
+    ],
+    "grammar_points": [
+      "I see...",
+      "Can I...?"
+    ]
+  },
+  {
+    "scenario": "Going to bed",
+    "scenario_vi": "Đi ngủ",
+    "category": "daily_routine",
+    "level": "kids",
+    "roles": [
+      "Child",
+      "Mom"
+    ],
+    "dialogue": [
+      {
+        "role": "Child",
+        "en": "Mom, I am sleepy.",
+        "vi": "Mẹ ơi, con buồn ngủ."
+      },
+      {
+        "role": "Mom",
+        "en": "Time for bed now.",
+        "vi": "Đến giờ đi ngủ rồi."
+      },
+      {
+        "role": "Child",
+        "en": "Read me a story?",
+        "vi": "Mẹ đọc truyện cho con nhé?"
+      },
+      {
+        "role": "Mom",
+        "en": "Okay, a short one.",
+        "vi": "Được, một câu chuyện ngắn."
+      }
+    ],
+    "key_phrases": [
+      "I am sleepy.",
+      "Time for bed.",
+      "Read me a story?"
+    ],
+    "key_vocab": [
+      "sleepy",
+      "bed",
+      "story",
+      "short"
+    ],
+    "grammar_points": [
+      "I am...",
+      "Time for..."
+    ]
+  },
+  {
+    "scenario": "Shopping with mom",
+    "scenario_vi": "Đi mua sắm với mẹ",
+    "category": "daily_routine",
+    "level": "kids",
+    "roles": [
+      "Child",
+      "Mom"
+    ],
+    "dialogue": [
+      {
+        "role": "Child",
+        "en": "Mom, I want candy.",
+        "vi": "Mẹ ơi, con muốn kẹo."
+      },
+      {
+        "role": "Mom",
+        "en": "No, it is not good.",
+        "vi": "Không, nó không tốt."
+      },
+      {
+        "role": "Child",
+        "en": "Please, just one?",
+        "vi": "Làm ơn, chỉ một cái thôi?"
+      },
+      {
+        "role": "Mom",
+        "en": "Okay, one piece only.",
+        "vi": "Được, chỉ một viên thôi."
+      }
+    ],
+    "key_phrases": [
+      "I want...",
+      "Please, just one?",
+      "One piece only."
+    ],
+    "key_vocab": [
+      "candy",
+      "want",
+      "please",
+      "piece"
+    ],
+    "grammar_points": [
+      "I want...",
+      "Just one..."
+    ]
+  },
+  {
+    "scenario": "At the zoo",
+    "scenario_vi": "Ở sở thú",
+    "category": "outdoor",
+    "level": "kids",
+    "roles": [
+      "Child",
+      "Mom"
+    ],
+    "dialogue": [
+      {
+        "role": "Child",
+        "en": "Mom, look at the lion!",
+        "vi": "Mẹ ơi, nhìn con sư tử kìa!"
+      },
+      {
+        "role": "Mom",
+        "en": "It is very big.",
+        "vi": "Nó rất to."
+      },
+      {
+        "role": "Child",
+        "en": "Is it scary?",
+        "vi": "Nó có đáng sợ không?"
+      },
+      {
+        "role": "Mom",
+        "en": "No, it is sleeping.",
+        "vi": "Không, nó đang ngủ."
+      }
+    ],
+    "key_phrases": [
+      "Look at...",
+      "It is...",
+      "Is it scary?"
+    ],
+    "key_vocab": [
+      "lion",
+      "big",
+      "scary",
+      "sleeping"
+    ],
+    "grammar_points": [
+      "Look at...",
+      "Is it...?"
+    ]
+  },
+  {
+    "scenario": "Birthday party",
+    "scenario_vi": "Tiệc sinh nhật",
+    "category": "celebrations",
+    "level": "kids",
+    "roles": [
+      "Child A",
+      "Child B"
+    ],
+    "dialogue": [
+      {
+        "role": "Child A",
+        "en": "Happy birthday!",
+        "vi": "Chúc mừng sinh nhật!"
+      },
+      {
+        "role": "Child B",
+        "en": "Thank you! I am 6.",
+        "vi": "Cảm ơn! Mình 6 tuổi."
+      },
+      {
+        "role": "Child A",
+        "en": "Here is a gift.",
+        "vi": "Đây là quà cho bạn."
+      },
+      {
+        "role": "Child B",
+        "en": "I love it! Thanks!",
+        "vi": "Mình thích nó! Cảm ơn!"
+      }
+    ],
+    "key_phrases": [
+      "Happy birthday!",
+      "Here is a gift.",
+      "I love it!"
+    ],
+    "key_vocab": [
+      "birthday",
+      "gift",
+      "love",
+      "thanks"
+    ],
+    "grammar_points": [
+      "I am...",
+      "Here is..."
+    ]
+  }
+]

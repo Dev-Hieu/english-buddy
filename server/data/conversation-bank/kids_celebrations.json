@@ -1,0 +1,49 @@
+[
+  {
+    "scenario": "Birthday party",
+    "scenario_vi": "Tiệc sinh nhật",
+    "category": "celebrations",
+    "level": "kids",
+    "roles": [
+      "Child A",
+      "Child B"
+    ],
+    "dialogue": [
+      {
+        "role": "Child A",
+        "en": "Happy birthday!",
+        "vi": "Chúc mừng sinh nhật!"
+      },
+      {
+        "role": "Child B",
+        "en": "Thank you! I am 6.",
+        "vi": "Cảm ơn! Mình 6 tuổi."
+      },
+      {
+        "role": "Child A",
+        "en": "Here is a gift.",
+        "vi": "Đây là quà cho bạn."
+      },
+      {
+        "role": "Child B",
+        "en": "I love it! Thanks!",
+        "vi": "Mình thích nó! Cảm ơn!"
+      }
+    ],
+    "key_phrases": [
+      "Happy birthday!",
+      "Here is a gift.",
+      "I love it!"
+    ],
+    "key_vocab": [
+      "birthday",
+      "gift",
+      "love",
+      "thanks"
+    ],
+    "grammar_points": [
+      "I am...",
+      "Here is..."
+    ]
+  }
+]

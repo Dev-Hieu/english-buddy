@@ -1,0 +1,252 @@
+[
+  {
+    "phrase": "Put on your shoes",
+    "meaning_vi": "Con mang giày vào",
+    "type": "request",
+    "level": "kids",
+    "category": "clothes_and_accessories",
+    "examples": [
+      {
+        "en": "Put on your shoes, please.",
+        "vi": "Con mang giày vào nhé."
+      }
+    ],
+    "collocations": [],
+    "response": "Okay, I will.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Put on your shoes."
+      },
+      {
+        "speaker": "B",
+        "text": "Okay, I will."
+      }
+    ]
+  },
+  {
+    "phrase": "I want my hat",
+    "meaning_vi": "Con muốn cái mũ của con",
+    "type": "expression",
+    "level": "kids",
+    "category": "clothes_and_accessories",
+    "examples": [
+      {
+        "en": "I want my hat, mom.",
+        "vi": "Con muốn cái mũ của con, mẹ ơi."
+      }
+    ],
+    "collocations": [],
+    "response": "Here is your hat.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I want my hat."
+      },
+      {
+        "speaker": "B",
+        "text": "Here is your hat."
+      }
+    ]
+  },
+  {
+    "phrase": "Where is my coat?",
+    "meaning_vi": "Cái áo khoác của con ở đâu?",
+    "type": "question",
+    "level": "kids",
+    "category": "clothes_and_accessories",
+    "examples": [
+      {
+        "en": "Where is my coat?",
+        "vi": "Cái áo khoác của con ở đâu?"
+      }
+    ],
+    "collocations": [],
+    "response": "It's on the chair.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Where is my coat?"
+      },
+      {
+        "speaker": "B",
+        "text": "It's on the chair."
+      }
+    ]
+  },
+  {
+    "phrase": "I like your dress",
+    "meaning_vi": "Bạn thích cái váy của bạn",
+    "type": "expression",
+    "level": "kids",
+    "category": "clothes_and_accessories",
+    "examples": [
+      {
+        "en": "I like your dress!",
+        "vi": "Mình thích cái váy của bạn!"
+      }
+    ],
+    "collocations": [],
+    "response": "Thank you!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I like your dress!"
+      },
+      {
+        "speaker": "B",
+        "text": "Thank you!"
+      }
+    ]
+  },
+  {
+    "phrase": "Take off your socks",
+    "meaning_vi": "Con cởi tất ra",
+    "type": "request",
+    "level": "kids",
+    "category": "clothes_and_accessories",
+    "examples": [
+      {
+        "en": "Take off your socks, please.",
+        "vi": "Con cởi tất ra nhé."
+      }
+    ],
+    "collocations": [],
+    "response": "Okay, I'm doing it.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Take off your socks."
+      },
+      {
+        "speaker": "B",
+        "text": "Okay, I'm doing it."
+      }
+    ]
+  },
+  {
+    "phrase": "My shoes are new",
+    "meaning_vi": "Đôi giày của con mới",
+    "type": "expression",
+    "level": "kids",
+    "category": "clothes_and_accessories",
+    "examples": [
+      {
+        "en": "My shoes are new!",
+        "vi": "Đôi giày của con mới!"
+      }
+    ],
+    "collocations": [],
+    "response": "They look nice!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "My shoes are new!"
+      },
+      {
+        "speaker": "B",
+        "text": "They look nice!"
+      }
+    ]
+  },
+  {
+    "phrase": "Can you help me?",
+    "meaning_vi": "Bạn có thể giúp con không?",
+    "type": "question",
+    "level": "kids",
+    "category": "clothes_and_accessories",
+    "examples": [
+      {
+        "en": "Can you help me with my jacket?",
+        "vi": "Bạn có thể giúp con mặc áo khoác không?"
+      }
+    ],
+    "collocations": [],
+    "response": "Yes, I can.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Can you help me?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, I can."
+      }
+    ]
+  },
+  {
+    "phrase": "I lost my scarf",
+    "meaning_vi": "Con bị mất khăn quàng cổ",
+    "type": "expression",
+    "level": "kids",
+    "category": "clothes_and_accessories",
+    "examples": [
+      {
+        "en": "I lost my scarf.",
+        "vi": "Con bị mất khăn quàng cổ."
+      }
+    ],
+    "collocations": [],
+    "response": "Let's find it.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I lost my scarf."
+      },
+      {
+        "speaker": "B",
+        "text": "Let's find it."
+      }
+    ]
+  },
+  {
+    "phrase": "Your hat is cute",
+    "meaning_vi": "Cái mũ của bạn dễ thương",
+    "type": "expression",
+    "level": "kids",
+    "category": "clothes_and_accessories",
+    "examples": [
+      {
+        "en": "Your hat is cute!",
+        "vi": "Cái mũ của bạn dễ thương!"
+      }
+    ],
+    "collocations": [],
+    "response": "Thanks!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Your hat is cute!"
+      },
+      {
+        "speaker": "B",
+        "text": "Thanks!"
+      }
+    ]
+  },
+  {
+    "phrase": "I need my gloves",
+    "meaning_vi": "Con cần găng tay của con",
+    "type": "expression",
+    "level": "kids",
+    "category": "clothes_and_accessories",
+    "examples": [
+      {
+        "en": "I need my gloves.",
+        "vi": "Con cần găng tay của con."
+      }
+    ],
+    "collocations": [],
+    "response": "Here you go.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I need my gloves."
+      },
+      {
+        "speaker": "B",
+        "text": "Here you go."
+      }
+    ]
+  }
+]

@@ -1,0 +1,252 @@
+[
+  {
+    "phrase": "Let's learn",
+    "meaning_vi": "Hãy cùng học",
+    "type": "expression",
+    "level": "kids",
+    "category": "education",
+    "examples": [
+      {
+        "en": "Let's learn numbers!",
+        "vi": "Hãy cùng học số nào!"
+      }
+    ],
+    "collocations": [],
+    "response": "Yes, let's learn!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Let's learn!"
+      },
+      {
+        "speaker": "B",
+        "text": "Okay!"
+      }
+    ]
+  },
+  {
+    "phrase": "I have a book",
+    "meaning_vi": "Con có một quyển sách",
+    "type": "expression",
+    "level": "kids",
+    "category": "education",
+    "examples": [
+      {
+        "en": "I have a book.",
+        "vi": "Con có một quyển sách."
+      }
+    ],
+    "collocations": [],
+    "response": "That's nice!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I have a book."
+      },
+      {
+        "speaker": "B",
+        "text": "Can I see it?"
+      }
+    ]
+  },
+  {
+    "phrase": "What is this?",
+    "meaning_vi": "Đây là gì?",
+    "type": "question",
+    "level": "kids",
+    "category": "education",
+    "examples": [
+      {
+        "en": "What is this?",
+        "vi": "Đây là gì?"
+      }
+    ],
+    "collocations": [],
+    "response": "This is a pencil.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "What is this?"
+      },
+      {
+        "speaker": "B",
+        "text": "This is a crayon."
+      }
+    ]
+  },
+  {
+    "phrase": "I can read",
+    "meaning_vi": "Con có thể đọc",
+    "type": "expression",
+    "level": "kids",
+    "category": "education",
+    "examples": [
+      {
+        "en": "I can read.",
+        "vi": "Con có thể đọc."
+      }
+    ],
+    "collocations": [],
+    "response": "Great job!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I can read!"
+      },
+      {
+        "speaker": "B",
+        "text": "Very good!"
+      }
+    ]
+  },
+  {
+    "phrase": "Please help me",
+    "meaning_vi": "Làm ơn giúp con",
+    "type": "request",
+    "level": "kids",
+    "category": "education",
+    "examples": [
+      {
+        "en": "Please help me.",
+        "vi": "Làm ơn giúp con."
+      }
+    ],
+    "collocations": [],
+    "response": "Of course!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Please help me."
+      },
+      {
+        "speaker": "B",
+        "text": "Sure, what do you need?"
+      }
+    ]
+  },
+  {
+    "phrase": "I like school",
+    "meaning_vi": "Con thích trường học",
+    "type": "expression",
+    "level": "kids",
+    "category": "education",
+    "examples": [
+      {
+        "en": "I like school.",
+        "vi": "Con thích trường học."
+      }
+    ],
+    "collocations": [],
+    "response": "That's wonderful!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I like school."
+      },
+      {
+        "speaker": "B",
+        "text": "Me too!"
+      }
+    ]
+  },
+  {
+    "phrase": "Can I draw?",
+    "meaning_vi": "Con có thể vẽ không?",
+    "type": "request",
+    "level": "kids",
+    "category": "education",
+    "examples": [
+      {
+        "en": "Can I draw?",
+        "vi": "Con có thể vẽ không?"
+      }
+    ],
+    "collocations": [],
+    "response": "Yes, you can.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Can I draw?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, here is paper."
+      }
+    ]
+  },
+  {
+    "phrase": "I am a student",
+    "meaning_vi": "Con là học sinh",
+    "type": "expression",
+    "level": "kids",
+    "category": "education",
+    "examples": [
+      {
+        "en": "I am a student.",
+        "vi": "Con là học sinh."
+      }
+    ],
+    "collocations": [],
+    "response": "Yes, you are!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I am a student."
+      },
+      {
+        "speaker": "B",
+        "text": "You learn well."
+      }
+    ]
+  },
+  {
+    "phrase": "Let's count",
+    "meaning_vi": "Hãy cùng đếm",
+    "type": "expression",
+    "level": "kids",
+    "category": "education",
+    "examples": [
+      {
+        "en": "Let's count to ten.",
+        "vi": "Hãy cùng đếm đến mười."
+      }
+    ],
+    "collocations": [],
+    "response": "One, two, three!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Let's count!"
+      },
+      {
+        "speaker": "B",
+        "text": "One, two, three!"
+      }
+    ]
+  },
+  {
+    "phrase": "I finished my work",
+    "meaning_vi": "Con đã làm xong bài",
+    "type": "expression",
+    "level": "kids",
+    "category": "education",
+    "examples": [
+      {
+        "en": "I finished my work.",
+        "vi": "Con đã làm xong bài."
+      }
+    ],
+    "collocations": [],
+    "response": "Well done!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I finished my work."
+      },
+      {
+        "speaker": "B",
+        "text": "Excellent!"
+      }
+    ]
+  }
+]

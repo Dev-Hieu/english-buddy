@@ -1,0 +1,252 @@
+[
+  {
+    "phrase": "I'm home",
+    "meaning_vi": "Con đã về nhà",
+    "type": "expression",
+    "level": "kids",
+    "category": "house_and_home",
+    "examples": [
+      {
+        "en": "I'm home, Mom!",
+        "vi": "Con đã về nhà, mẹ ơi!"
+      }
+    ],
+    "collocations": [],
+    "response": "Welcome home!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I'm home!"
+      },
+      {
+        "speaker": "B",
+        "text": "Welcome home, sweetie!"
+      }
+    ]
+  },
+  {
+    "phrase": "Where is my toy?",
+    "meaning_vi": "Đồ chơi của con ở đâu?",
+    "type": "question",
+    "level": "kids",
+    "category": "house_and_home",
+    "examples": [
+      {
+        "en": "Where is my toy?",
+        "vi": "Đồ chơi của con ở đâu?"
+      }
+    ],
+    "collocations": [],
+    "response": "It's in your room.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Where is my toy?"
+      },
+      {
+        "speaker": "B",
+        "text": "It's in your room."
+      }
+    ]
+  },
+  {
+    "phrase": "I want water",
+    "meaning_vi": "Con muốn uống nước",
+    "type": "request",
+    "level": "kids",
+    "category": "house_and_home",
+    "examples": [
+      {
+        "en": "I want water, please.",
+        "vi": "Con muốn uống nước, làm ơn."
+      }
+    ],
+    "collocations": [],
+    "response": "Here you are.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I want water."
+      },
+      {
+        "speaker": "B",
+        "text": "Here you are."
+      }
+    ]
+  },
+  {
+    "phrase": "Good night",
+    "meaning_vi": "Chúc ngủ ngon",
+    "type": "greeting",
+    "level": "kids",
+    "category": "house_and_home",
+    "examples": [
+      {
+        "en": "Good night, Dad!",
+        "vi": "Chúc ngủ ngon, bố!"
+      }
+    ],
+    "collocations": [],
+    "response": "Good night, sleep tight!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Good night!"
+      },
+      {
+        "speaker": "B",
+        "text": "Good night, sweet dreams!"
+      }
+    ]
+  },
+  {
+    "phrase": "I'm hungry",
+    "meaning_vi": "Con đói bụng",
+    "type": "expression",
+    "level": "kids",
+    "category": "house_and_home",
+    "examples": [
+      {
+        "en": "I'm hungry, Mom.",
+        "vi": "Con đói bụng, mẹ ơi."
+      }
+    ],
+    "collocations": [],
+    "response": "Let's eat dinner.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I'm hungry."
+      },
+      {
+        "speaker": "B",
+        "text": "Let's eat dinner."
+      }
+    ]
+  },
+  {
+    "phrase": "Can I play?",
+    "meaning_vi": "Con có thể chơi không?",
+    "type": "request",
+    "level": "kids",
+    "category": "house_and_home",
+    "examples": [
+      {
+        "en": "Can I play outside?",
+        "vi": "Con có thể chơi ngoài sân không?"
+      }
+    ],
+    "collocations": [],
+    "response": "Yes, you can.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Can I play?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, you can."
+      }
+    ]
+  },
+  {
+    "phrase": "I love my home",
+    "meaning_vi": "Con yêu nhà của con",
+    "type": "expression",
+    "level": "kids",
+    "category": "house_and_home",
+    "examples": [
+      {
+        "en": "I love my home.",
+        "vi": "Con yêu nhà của con."
+      }
+    ],
+    "collocations": [],
+    "response": "That's nice!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I love my home."
+      },
+      {
+        "speaker": "B",
+        "text": "That's nice!"
+      }
+    ]
+  },
+  {
+    "phrase": "Where is the bathroom?",
+    "meaning_vi": "Phòng tắm ở đâu?",
+    "type": "question",
+    "level": "kids",
+    "category": "house_and_home",
+    "examples": [
+      {
+        "en": "Where is the bathroom?",
+        "vi": "Phòng tắm ở đâu?"
+      }
+    ],
+    "collocations": [],
+    "response": "It's over there.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Where is the bathroom?"
+      },
+      {
+        "speaker": "B",
+        "text": "It's over there."
+      }
+    ]
+  },
+  {
+    "phrase": "Let's clean up",
+    "meaning_vi": "Hãy dọn dẹp nào",
+    "type": "request",
+    "level": "kids",
+    "category": "house_and_home",
+    "examples": [
+      {
+        "en": "Let's clean up the toys.",
+        "vi": "Hãy dọn dẹp đồ chơi nào."
+      }
+    ],
+    "collocations": [],
+    "response": "Okay, I help.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Let's clean up."
+      },
+      {
+        "speaker": "B",
+        "text": "Okay, I help."
+      }
+    ]
+  },
+  {
+    "phrase": "This is my bed",
+    "meaning_vi": "Đây là giường của con",
+    "type": "expression",
+    "level": "kids",
+    "category": "house_and_home",
+    "examples": [
+      {
+        "en": "This is my bed.",
+        "vi": "Đây là giường của con."
+      }
+    ],
+    "collocations": [],
+    "response": "It's cozy.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "This is my bed."
+      },
+      {
+        "speaker": "B",
+        "text": "It's cozy."
+      }
+    ]
+  }
+]

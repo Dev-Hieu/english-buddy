@@ -1,0 +1,97 @@
+[
+  {
+    "scenario": "Greeting a friend at school",
+    "scenario_vi": "Chào bạn ở trường",
+    "category": "education",
+    "level": "kids",
+    "roles": [
+      "Child A",
+      "Child B"
+    ],
+    "dialogue": [
+      {
+        "role": "Child A",
+        "en": "Hello!",
+        "vi": "Xin chào!"
+      },
+      {
+        "role": "Child B",
+        "en": "Hello! How are you?",
+        "vi": "Xin chào! Bạn khỏe không?"
+      },
+      {
+        "role": "Child A",
+        "en": "I am fine. And you?",
+        "vi": "Mình khỏe. Còn bạn?"
+      },
+      {
+        "role": "Child B",
+        "en": "I am fine too.",
+        "vi": "Mình cũng khỏe."
+      }
+    ],
+    "key_phrases": [
+      "Hello!",
+      "How are you?",
+      "I am fine.",
+      "And you?"
+    ],
+    "key_vocab": [
+      "hello",
+      "how",
+      "fine",
+      "you"
+    ],
+    "grammar_points": [
+      "I am...",
+      "How are you?"
+    ]
+  },
+  {
+    "scenario": "Asking the teacher a question",
+    "scenario_vi": "Hỏi cô giáo một câu hỏi",
+    "category": "education",
+    "level": "kids",
+    "roles": [
+      "Child",
+      "Teacher"
+    ],
+    "dialogue": [
+      {
+        "role": "Child",
+        "en": "Teacher, can I go?",
+        "vi": "Thưa cô, con đi được không?"
+      },
+      {
+        "role": "Teacher",
+        "en": "Yes, you can go.",
+        "vi": "Được, con có thể đi."
+      },
+      {
+        "role": "Child",
+        "en": "Thank you, teacher!",
+        "vi": "Cảm ơn cô!"
+      },
+      {
+        "role": "Teacher",
+        "en": "You are welcome.",
+        "vi": "Không có gì."
+      }
+    ],
+    "key_phrases": [
+      "Can I go?",
+      "Thank you!",
+      "You are welcome."
+    ],
+    "key_vocab": [
+      "teacher",
+      "go",
+      "thank",
+      "welcome"
+    ],
+    "grammar_points": [
+      "Can I...?",
+      "Thank you."
+    ]
+  }
+]

@@ -1,0 +1,49 @@
+[
+  {
+    "scenario": "Talking with mom at home",
+    "scenario_vi": "Nói chuyện với mẹ ở nhà",
+    "category": "family",
+    "level": "kids",
+    "roles": [
+      "Child",
+      "Mom"
+    ],
+    "dialogue": [
+      {
+        "role": "Child",
+        "en": "Mom, I am hungry.",
+        "vi": "Mẹ ơi, con đói."
+      },
+      {
+        "role": "Mom",
+        "en": "Do you want a snack?",
+        "vi": "Con muốn ăn nhẹ không?"
+      },
+      {
+        "role": "Child",
+        "en": "Yes, please!",
+        "vi": "Có ạ!"
+      },
+      {
+        "role": "Mom",
+        "en": "Here you are.",
+        "vi": "Của con đây."
+      }
+    ],
+    "key_phrases": [
+      "I am hungry.",
+      "Do you want...?",
+      "Here you are."
+    ],
+    "key_vocab": [
+      "mom",
+      "hungry",
+      "snack",
+      "want"
+    ],
+    "grammar_points": [
+      "I am...",
+      "Do you...?"
+    ]
+  }
+]

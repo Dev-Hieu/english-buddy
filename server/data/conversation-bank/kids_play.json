@@ -1,0 +1,49 @@
+[
+  {
+    "scenario": "Playing with friends",
+    "scenario_vi": "Chơi với bạn bè",
+    "category": "play",
+    "level": "kids",
+    "roles": [
+      "Child A",
+      "Child B"
+    ],
+    "dialogue": [
+      {
+        "role": "Child A",
+        "en": "Let's play ball!",
+        "vi": "Chơi bóng đi!"
+      },
+      {
+        "role": "Child B",
+        "en": "Okay! I throw it.",
+        "vi": "Được! Mình ném nhé."
+      },
+      {
+        "role": "Child A",
+        "en": "Catch the ball!",
+        "vi": "Bắt bóng kìa!"
+      },
+      {
+        "role": "Child B",
+        "en": "Good catch!",
+        "vi": "Bắt giỏi quá!"
+      }
+    ],
+    "key_phrases": [
+      "Let's play!",
+      "Catch the ball!",
+      "Good catch!"
+    ],
+    "key_vocab": [
+      "play",
+      "ball",
+      "throw",
+      "catch"
+    ],
+    "grammar_points": [
+      "Let's...",
+      "Good..."
+    ]
+  }
+]

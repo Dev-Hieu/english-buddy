@@ -1,0 +1,252 @@
+[
+  {
+    "phrase": "I want milk",
+    "meaning_vi": "Con muốn uống sữa",
+    "type": "request",
+    "level": "kids",
+    "category": "food_and_drink",
+    "examples": [
+      {
+        "en": "I want milk, please.",
+        "vi": "Con muốn uống sữa ạ."
+      }
+    ],
+    "collocations": [],
+    "response": "Here is your milk.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I want milk."
+      },
+      {
+        "speaker": "B",
+        "text": "Here is your milk."
+      }
+    ]
+  },
+  {
+    "phrase": "Can I have juice?",
+    "meaning_vi": "Bạn có thể cho mình uống nước ép không?",
+    "type": "request",
+    "level": "kids",
+    "category": "food_and_drink",
+    "examples": [
+      {
+        "en": "Can I have juice?",
+        "vi": "Bạn có thể cho mình uống nước ép không?"
+      }
+    ],
+    "collocations": [],
+    "response": "Yes, here you go.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Can I have juice?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, here you go."
+      }
+    ]
+  },
+  {
+    "phrase": "Yummy!",
+    "meaning_vi": "Ngon quá!",
+    "type": "expression",
+    "level": "kids",
+    "category": "food_and_drink",
+    "examples": [
+      {
+        "en": "This cake is yummy!",
+        "vi": "Cái bánh này ngon quá!"
+      }
+    ],
+    "collocations": [],
+    "response": "I'm glad you like it.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Yummy!"
+      },
+      {
+        "speaker": "B",
+        "text": "Do you want more?"
+      }
+    ]
+  },
+  {
+    "phrase": "I am hungry",
+    "meaning_vi": "Con đói bụng",
+    "type": "expression",
+    "level": "kids",
+    "category": "food_and_drink",
+    "examples": [
+      {
+        "en": "Mom, I am hungry.",
+        "vi": "Mẹ ơi, con đói bụng."
+      }
+    ],
+    "collocations": [],
+    "response": "Let's eat something.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I am hungry."
+      },
+      {
+        "speaker": "B",
+        "text": "Let's have a snack."
+      }
+    ]
+  },
+  {
+    "phrase": "I am thirsty",
+    "meaning_vi": "Con khát nước",
+    "type": "expression",
+    "level": "kids",
+    "category": "food_and_drink",
+    "examples": [
+      {
+        "en": "I am thirsty, please.",
+        "vi": "Con khát nước ạ."
+      }
+    ],
+    "collocations": [],
+    "response": "Drink some water.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I am thirsty."
+      },
+      {
+        "speaker": "B",
+        "text": "Here is some water."
+      }
+    ]
+  },
+  {
+    "phrase": "More, please",
+    "meaning_vi": "Cho con thêm ạ",
+    "type": "request",
+    "level": "kids",
+    "category": "food_and_drink",
+    "examples": [
+      {
+        "en": "More rice, please.",
+        "vi": "Cho con thêm cơm ạ."
+      }
+    ],
+    "collocations": [],
+    "response": "Of course, here you are.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "More, please."
+      },
+      {
+        "speaker": "B",
+        "text": "Here you are."
+      }
+    ]
+  },
+  {
+    "phrase": "I like apples",
+    "meaning_vi": "Con thích táo",
+    "type": "expression",
+    "level": "kids",
+    "category": "food_and_drink",
+    "examples": [
+      {
+        "en": "I like apples.",
+        "vi": "Con thích táo."
+      }
+    ],
+    "collocations": [],
+    "response": "Apples are healthy.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I like apples."
+      },
+      {
+        "speaker": "B",
+        "text": "Me too!"
+      }
+    ]
+  },
+  {
+    "phrase": "All done",
+    "meaning_vi": "Con ăn xong rồi",
+    "type": "expression",
+    "level": "kids",
+    "category": "food_and_drink",
+    "examples": [
+      {
+        "en": "All done, Mom.",
+        "vi": "Con ăn xong rồi mẹ ơi."
+      }
+    ],
+    "collocations": [],
+    "response": "Good job!",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "All done."
+      },
+      {
+        "speaker": "B",
+        "text": "Good job!"
+      }
+    ]
+  },
+  {
+    "phrase": "Is it hot?",
+    "meaning_vi": "Nó có nóng không?",
+    "type": "question",
+    "level": "kids",
+    "category": "food_and_drink",
+    "examples": [
+      {
+        "en": "Is the soup hot?",
+        "vi": "Súp có nóng không?"
+      }
+    ],
+    "collocations": [],
+    "response": "Yes, be careful.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "Is it hot?"
+      },
+      {
+        "speaker": "B",
+        "text": "Yes, blow on it."
+      }
+    ]
+  },
+  {
+    "phrase": "I want water",
+    "meaning_vi": "Con muốn uống nước",
+    "type": "request",
+    "level": "kids",
+    "category": "food_and_drink",
+    "examples": [
+      {
+        "en": "I want water, please.",
+        "vi": "Con muốn uống nước ạ."
+      }
+    ],
+    "collocations": [],
+    "response": "Here is your water.",
+    "example_dialogue": [
+      {
+        "speaker": "A",
+        "text": "I want water."
+      },
+      {
+        "speaker": "B",
+        "text": "Here you go."
+      }
+    ]
+  }
+]

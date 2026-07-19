@@ -8,7 +8,7 @@ const Database = require("better-sqlite3");
 const DB_PATH = path.join(__dirname, "..", "data.db");
 const CONV_BANK_DIR = path.join(__dirname, "conversation-bank");
 
-const LEVELS = ["a1", "a2", "b1", "b2", "c1"];
+const LEVELS = ["kids", "a1", "a2", "b1", "b2", "c1"];
 
 const db = new Database(DB_PATH);
 

@@ -1,0 +1,682 @@
+[
+  {
+    "id": "wb_kids_family_and_friends_001",
+    "word": "mom",
+    "phonetic": "/mɒm/",
+    "meaning_vi": "mẹ",
+    "meaning_en": "a mother",
+    "pos": "noun",
+    "level": "kids",
+    "categories": [
+      "family_and_friends"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "I love my mom.",
+        "vi": "Con yêu mẹ."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "my mom",
+      "mom and dad"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "my mom",
+      "the mom"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_family_and_friends_002",
+    "word": "dad",
+    "phonetic": "/dæd/",
+    "meaning_vi": "bố",
+    "meaning_en": "a father",
+    "pos": "noun",
+    "level": "kids",
+    "categories": [
+      "family_and_friends"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "My dad is tall.",
+        "vi": "Bố con cao."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "my dad",
+      "dad and mom"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "my dad",
+      "the dad"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_family_and_friends_003",
+    "word": "sister",
+    "phonetic": "/ˈsɪstər/",
+    "meaning_vi": "chị/em gái",
+    "meaning_en": "a female sibling",
+    "pos": "noun",
+    "level": "kids",
+    "categories": [
+      "family_and_friends"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "My sister is kind.",
+        "vi": "Chị con tốt bụng."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "my sister",
+      "little sister"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "my sister",
+      "a sister"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_family_and_friends_004",
+    "word": "brother",
+    "phonetic": "/ˈbrʌðər/",
+    "meaning_vi": "anh/em trai",
+    "meaning_en": "a male sibling",
+    "pos": "noun",
+    "level": "kids",
+    "categories": [
+      "family_and_friends"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "My brother plays ball.",
+        "vi": "Anh con chơi bóng."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "my brother",
+      "big brother"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "my brother",
+      "a brother"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_family_and_friends_005",
+    "word": "friend",
+    "phonetic": "/frend/",
+    "meaning_vi": "bạn",
+    "meaning_en": "a person you like",
+    "pos": "noun",
+    "level": "kids",
+    "categories": [
+      "family_and_friends"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "She is my friend.",
+        "vi": "Bạn ấy là bạn con."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "my friend",
+      "best friend"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "my friend",
+      "a friend"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_family_and_friends_006",
+    "word": "baby",
+    "phonetic": "/ˈbeɪbi/",
+    "meaning_vi": "em bé",
+    "meaning_en": "a very young child",
+    "pos": "noun",
+    "level": "kids",
+    "categories": [
+      "family_and_friends"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "The baby is cute.",
+        "vi": "Em bé dễ thương."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "a baby",
+      "baby sister"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "a baby",
+      "the baby"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_family_and_friends_007",
+    "word": "grandma",
+    "phonetic": "/ˈɡrænmɑː/",
+    "meaning_vi": "bà",
+    "meaning_en": "a grandmother",
+    "pos": "noun",
+    "level": "kids",
+    "categories": [
+      "family_and_friends"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "I love grandma.",
+        "vi": "Con yêu bà."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "my grandma",
+      "grandma and grandpa"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "my grandma",
+      "the grandma"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_family_and_friends_008",
+    "word": "grandpa",
+    "phonetic": "/ˈɡrænpɑː/",
+    "meaning_vi": "ông",
+    "meaning_en": "a grandfather",
+    "pos": "noun",
+    "level": "kids",
+    "categories": [
+      "family_and_friends"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "Grandpa tells stories.",
+        "vi": "Ông kể chuyện."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "my grandpa",
+      "grandpa and grandma"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "my grandpa",
+      "the grandpa"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_family_and_friends_009",
+    "word": "uncle",
+    "phonetic": "/ˈʌŋkəl/",
+    "meaning_vi": "chú/bác",
+    "meaning_en": "a brother of a parent",
+    "pos": "noun",
+    "level": "kids",
+    "categories": [
+      "family_and_friends"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "Uncle is funny.",
+        "vi": "Chú vui tính."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "my uncle",
+      "Uncle John"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "my uncle",
+      "an uncle"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_family_and_friends_010",
+    "word": "aunt",
+    "phonetic": "/ænt/",
+    "meaning_vi": "cô/dì",
+    "meaning_en": "a sister of a parent",
+    "pos": "noun",
+    "level": "kids",
+    "categories": [
+      "family_and_friends"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "Aunt gives candy.",
+        "vi": "Cô cho kẹo."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "my aunt",
+      "Aunt Mary"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "my aunt",
+      "an aunt"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_family_and_friends_011",
+    "word": "family",
+    "phonetic": "/ˈfæməli/",
+    "meaning_vi": "gia đình",
+    "meaning_en": "a group of related people",
+    "pos": "noun",
+    "level": "kids",
+    "categories": [
+      "family_and_friends"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "My family is big.",
+        "vi": "Gia đình con đông."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "my family",
+      "family time"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "my family",
+      "a family"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_family_and_friends_012",
+    "word": "love",
+    "phonetic": "/lʌv/",
+    "meaning_vi": "yêu",
+    "meaning_en": "to like very much",
+    "pos": "verb",
+    "level": "kids",
+    "categories": [
+      "family_and_friends"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "I love my dog.",
+        "vi": "Con yêu chó con."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "love you",
+      "love mom"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "love + noun",
+      "I love"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_family_and_friends_013",
+    "word": "hug",
+    "phonetic": "/hʌɡ/",
+    "meaning_vi": "ôm",
+    "meaning_en": "to hold tightly with arms",
+    "pos": "verb",
+    "level": "kids",
+    "categories": [
+      "family_and_friends"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "I hug my mom.",
+        "vi": "Con ôm mẹ."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "give a hug",
+      "hug me"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "hug + noun",
+      "hug me"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_family_and_friends_014",
+    "word": "kiss",
+    "phonetic": "/kɪs/",
+    "meaning_vi": "hôn",
+    "meaning_en": "to touch with lips",
+    "pos": "verb",
+    "level": "kids",
+    "categories": [
+      "family_and_friends"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "I kiss grandma.",
+        "vi": "Con hôn bà."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "give a kiss",
+      "kiss me"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "kiss + noun",
+      "kiss me"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_family_and_friends_015",
+    "word": "child",
+    "phonetic": "/tʃaɪld/",
+    "meaning_vi": "đứa trẻ",
+    "meaning_en": "a young person",
+    "pos": "noun",
+    "level": "kids",
+    "categories": [
+      "family_and_friends"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "The child plays.",
+        "vi": "Đứa trẻ chơi."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "a child",
+      "my child"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "a child",
+      "the child"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_family_and_friends_016",
+    "word": "boy",
+    "phonetic": "/bɔɪ/",
+    "meaning_vi": "con trai",
+    "meaning_en": "a male child",
+    "pos": "noun",
+    "level": "kids",
+    "categories": [
+      "family_and_friends"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "The boy runs.",
+        "vi": "Con trai chạy."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "a boy",
+      "little boy"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "a boy",
+      "the boy"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_family_and_friends_017",
+    "word": "girl",
+    "phonetic": "/ɡɜːrl/",
+    "meaning_vi": "con gái",
+    "meaning_en": "a female child",
+    "pos": "noun",
+    "level": "kids",
+    "categories": [
+      "family_and_friends"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "The girl sings.",
+        "vi": "Con gái hát."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "a girl",
+      "little girl"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "a girl",
+      "the girl"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_family_and_friends_018",
+    "word": "son",
+    "phonetic": "/sʌn/",
+    "meaning_vi": "con trai (của bố mẹ)",
+    "meaning_en": "a male child of parents",
+    "pos": "noun",
+    "level": "kids",
+    "categories": [
+      "family_and_friends"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "My son is smart.",
+        "vi": "Con trai con thông minh."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "my son",
+      "son and daughter"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "my son",
+      "a son"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_family_and_friends_019",
+    "word": "daughter",
+    "phonetic": "/ˈdɔːtər/",
+    "meaning_vi": "con gái (của bố mẹ)",
+    "meaning_en": "a female child of parents",
+    "pos": "noun",
+    "level": "kids",
+    "categories": [
+      "family_and_friends"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "My daughter is kind.",
+        "vi": "Con gái con tốt bụng."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "my daughter",
+      "daughter and son"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "my daughter",
+      "a daughter"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  },
+  {
+    "id": "wb_kids_family_and_friends_020",
+    "word": "cousin",
+    "phonetic": "/ˈkʌzən/",
+    "meaning_vi": "anh/chị/em họ",
+    "meaning_en": "a child of an aunt or uncle",
+    "pos": "noun",
+    "level": "kids",
+    "categories": [
+      "family_and_friends"
+    ],
+    "frequency": 1,
+    "examples": [
+      {
+        "en": "My cousin plays with me.",
+        "vi": "Anh họ chơi với con."
+      }
+    ],
+    "word_family": [],
+    "collocations": [
+      "my cousin",
+      "cousin and friend"
+    ],
+    "synonyms": [],
+    "antonyms": [],
+    "common_mistakes": [],
+    "grammar_patterns": [
+      "my cousin",
+      "a cousin"
+    ],
+    "image": "",
+    "audio": "",
+    "created_at": 1721433600000
+  }
+]
