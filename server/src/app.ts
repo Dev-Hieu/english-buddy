@@ -1027,14 +1027,14 @@ export function createApp() {
   // Kho CHỜ THI (đã báo thuộc, chưa thi). Đủ 10 -> client nhắc thi.
   app.get("/api/students/:id/pending", requireAuth, (req, res) => {
     if (!canAccessStudent(req, res, req.params.id)) return;
-    const rows = db.prepare("SELECT wordId FROM progress WHERE studentId=? AND status='pending_test' AND (wordId IN (SELECT id FROM vocabulary) OR wordId IN (SELECT id FROM word_bank)) ORDER BY lastReviewedAt").all(req.params.id) as any[];
+    const rows = db.prepare("SELECT wordId FROM progress WHERE studentId=? AND status='pending_test' ORDER BY lastReviewedAt").all(req.params.id) as any[];
     res.json({ words: rows.map((r) => r.wordId), count: rows.length });
   });
 
   // Kho CẦN ÔN (bấm cần ôn / sai / rớt thi lại) — lặp học đến khi báo thuộc.
   app.get("/api/students/:id/relearn", requireAuth, (req, res) => {
     if (!canAccessStudent(req, res, req.params.id)) return;
-    const rows = db.prepare("SELECT wordId FROM progress WHERE studentId=? AND status='relearn' AND wordId IN (SELECT id FROM vocabulary) ORDER BY lastReviewedAt").all(req.params.id) as any[];
+    const rows = db.prepare("SELECT wordId FROM progress WHERE studentId=? AND status='relearn' ORDER BY lastReviewedAt").all(req.params.id) as any[];
     res.json({ words: rows.map((r) => r.wordId), count: rows.length });
   });
 
@@ -1055,20 +1055,35 @@ export function createApp() {
     const mode = req.body?.mode === "review" ? "review" : "new";
     const now = Date.now();
     const picked = mode === "review"
-      ? db.prepare("SELECT wordId FROM progress WHERE studentId=? AND status='scored' AND nextReviewAt<=? AND (wordId IN (SELECT id FROM vocabulary) OR wordId IN (SELECT id FROM word_bank)) ORDER BY nextReviewAt LIMIT 10").all(studentId, now) as any[]
-      : db.prepare("SELECT wordId FROM progress WHERE studentId=? AND status='pending_test' AND (wordId IN (SELECT id FROM vocabulary) OR wordId IN (SELECT id FROM word_bank)) ORDER BY lastReviewedAt LIMIT 10").all(studentId) as any[];
+      ? db.prepare("SELECT wordId FROM progress WHERE studentId=? AND status='scored' AND nextReviewAt<=? ORDER BY nextReviewAt LIMIT 10").all(studentId, now) as any[]
+      : db.prepare("SELECT wordId FROM progress WHERE studentId=? AND status='pending_test' ORDER BY lastReviewedAt LIMIT 10").all(studentId) as any[];
     if (!picked.length) return res.status(400).json({ error: "chưa có từ để thi" });
     const ids = picked.map((r) => r.wordId);
-    // Try word_bank first, fall back to vocabulary
+    // Try word_bank first, then vocabulary, then lookup by word text
     let rows = db.prepare(`SELECT id, word, phonetic, meaning_vi, image AS imageUrl, '' AS audioUrl FROM word_bank WHERE id IN (${ids.map(() => "?").join(",")})`).all(...ids) as any[];
-    if (rows.length < ids.length) {
-      const bankIds = new Set(rows.map((r: any) => r.id));
-      const missingIds = ids.filter((id) => !bankIds.has(id));
-      if (missingIds.length) {
-        const fallback = db.prepare(`SELECT * FROM vocabulary WHERE id IN (${missingIds.map(() => "?").join(",")})`).all(...missingIds) as any[];
-        rows = [...rows, ...fallback];
+    const foundIds = new Set(rows.map((r: any) => r.id));
+    const missingIds = ids.filter((id) => !foundIds.has(id));
+    if (missingIds.length) {
+      const vocabRows = db.prepare(`SELECT * FROM vocabulary WHERE id IN (${missingIds.map(() => "?").join(",")})`).all(...missingIds) as any[];
+      rows = [...rows, ...vocabRows];
+      vocabRows.forEach((r: any) => foundIds.add(r.id));
+    }
+    // For IDs still not found (orphan progress records), try extracting word from ID and looking up
+    const stillMissing = ids.filter((id) => !foundIds.has(id));
+    if (stillMissing.length) {
+      for (const id of stillMissing) {
+        // Extract word from ID patterns like "word_a2f_between" or "a2_animals_and_nature_dog"
+        const parts = id.split("_");
+        const word = parts[parts.length - 1];
+        const found = db.prepare("SELECT id, word, phonetic, meaning_vi, image AS imageUrl, '' AS audioUrl FROM word_bank WHERE LOWER(word) = LOWER(?) LIMIT 1").get(word) as any;
+        if (found) { rows.push({ ...found, id }); foundIds.add(id); }
+        else {
+          const fromVocab = db.prepare("SELECT id, word, phonetic, meaning_vi, imageUrl, audioUrl FROM vocabulary WHERE LOWER(word) = LOWER(?) LIMIT 1").get(word) as any;
+          if (fromVocab) { rows.push({ ...fromVocab, id }); foundIds.add(id); }
+        }
       }
     }
+    if (!rows.length) return res.status(400).json({ error: "chưa có từ để thi" });
     const allWords = (db.prepare("SELECT word FROM word_bank UNION SELECT word FROM vocabulary").all() as any[]).map((r) => r.word);
     const skills = skillsForLevel(student.level);
     const needOptions = skills.some((s) => s === "listen_word" || s === "image_word");
