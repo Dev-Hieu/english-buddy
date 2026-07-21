@@ -192,7 +192,7 @@ export function BadgesPage({ student, onBackHome }: BadgesPageProps) {
             <div className="mb-5">
               <h3 className="mb-3 flex items-center gap-2 text-sm font-extrabold">
                 <Award className="h-4 w-4 text-amber-500" />
-                Ch\u1EE9ng ch\u1EC9 \u0111\u00E3 \u0111\u1EA1t
+                Chứng chỉ đã đạt
               </h3>
               <div className="space-y-2">
                 {certificates.map((cert) => (
@@ -216,11 +216,11 @@ export function BadgesPage({ student, onBackHome }: BadgesPageProps) {
                           {cert.level}
                         </span>
                         <span className="text-xs font-bold text-foreground">
-                          {cert.type === "placement" ? "X\u1EBFp l\u1EDBp" : "Ch\u1EE9ng ch\u1EC9"}
+                          {cert.type === "placement" ? "Xếp lớp" : "Chứng chỉ"}
                         </span>
                       </div>
                       <p className="mt-0.5 text-[10px] text-muted-foreground">
-                        {cert.score}% \u2022 {cert.totalQuestions} c\u00E2u \u2022 {new Date(cert.createdAt).toLocaleDateString("vi-VN")}
+                        {cert.score}% · {cert.totalQuestions} câu · {new Date(cert.createdAt).toLocaleDateString("vi-VN")}
                       </p>
                     </div>
                     <p className="text-[9px] font-mono text-muted-foreground">{cert.certId}</p>

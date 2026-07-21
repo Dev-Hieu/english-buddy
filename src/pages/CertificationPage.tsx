@@ -580,6 +580,12 @@ interface SectionScore { type: string; correct: number; total: number }
 
 export function CertificationPage({ student, onBackHome, onLevelUp }: { student: Student; onBackHome: () => void; onLevelUp?: (newLevel: string) => void }) {
   const [phase, setPhase] = useState<Phase>("select");
+  const [earnedCerts, setEarnedCerts] = useState<{ level: string; score: number; certId: string; createdAt: number }[]>([]);
+  useEffect(() => {
+    import("@/services/certificateService").then(({ getCertificates }) => {
+      getCertificates(student.id).then(setEarnedCerts).catch(() => {});
+    });
+  }, [student.id]);
   const [selectedExam, setSelectedExam] = useState<CertExam | null>(null);
   const [answers, setAnswers] = useState<Record<number, number>>({});
   const [currentSection, setCurrentSection] = useState(0);
@@ -744,6 +750,41 @@ export function CertificationPage({ student, onBackHome, onLevelUp }: { student:
         <SessionHeader title="Chứng chỉ CEFR" icon={<Award className="h-4 w-4" />} iconBg="bg-red-500" onClose={onBackHome} />
 
         <p className="mb-4 text-sm text-muted-foreground">Chọn cấp độ để thi lấy chứng chỉ. Hoàn thành bài thi để nhận chứng chỉ CEFR.</p>
+
+        {/* Earned certificates */}
+        {earnedCerts.length > 0 && (
+          <div className="mb-5 rounded-2xl border border-amber-200 bg-amber-50/50 dark:border-amber-800 dark:bg-amber-950/20 p-4">
+            <h3 className="mb-2 text-sm font-extrabold flex items-center gap-2">
+              <Award className="h-4 w-4 text-amber-500" /> Chứng chỉ đã đạt
+            </h3>
+            <div className="space-y-2">
+              {earnedCerts.map((cert) => (
+                <div key={cert.certId} className="flex items-center justify-between rounded-xl bg-white dark:bg-card p-2.5 border border-border/40">
+                  <div className="flex items-center gap-2">
+                    <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-green-100 text-green-700 text-xs font-black">{cert.level.toUpperCase()}</span>
+                    <div>
+                      <p className="text-xs font-bold">{cert.score}% · {new Date(cert.createdAt).toLocaleDateString("vi-VN")}</p>
+                      <p className="text-[9px] text-muted-foreground font-mono">{cert.certId}</p>
+                    </div>
+                  </div>
+                  <button type="button" onClick={() => {
+                    // View certificate by simulating exam completion
+                    const exam = EXAMS.find(e => e.level.toLowerCase() === cert.level.toLowerCase());
+                    if (exam) {
+                      setSelectedExam(exam);
+                      setTotalCorrect(Math.round(cert.score / 100 * exam.sections.reduce((s, sec) => s + sec.questions.length, 0)));
+                      setTotalQuestions(exam.sections.reduce((s, sec) => s + sec.questions.length, 0));
+                      setPassed(true);
+                      setPhase("certificate");
+                    }
+                  }} className="rounded-lg bg-primary/10 px-3 py-1.5 text-[10px] font-bold text-primary hover:bg-primary/20 transition-colors">
+                    <Printer className="inline h-3 w-3 mr-1" />Xem & In
+                  </button>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
 
         <div className="space-y-3">
           {EXAMS.map((exam) => {
