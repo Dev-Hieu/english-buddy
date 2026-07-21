@@ -164,8 +164,8 @@ export function ReviewPage({ student, onBackHome }: ReviewPageProps) {
   const hasWeak = weakWords && weakWords.length > 0;
   const smartDueCount = smartDue?.length ?? 0;
 
-  // No weak words and smart has no due — just show DeckRunner directly (preserve original behavior)
-  if (!hasWeak && tab === "review" && smartDueCount === 0 && summary === null) {
+  // No data at all — just show simple DeckRunner (no tabs needed)
+  if (!hasWeak && tab === "review" && smartDueCount === 0 && summary !== null && summary.total === 0 && (words === null || words.length === 0)) {
     return (
       <DeckRunner
         title="Cần ôn"
