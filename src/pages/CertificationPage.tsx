@@ -1287,7 +1287,7 @@ export function CertificationPage({ student, onBackHome, onLevelUp }: { student:
         {/* Print CSS */}
         <style>{`
           @media print {
-            * { margin: 0 !important; }
+            body > *:not(main) { display: none !important; }
             body { background: white !important; padding: 0 !important; }
             header, footer, nav, .print\\:hidden, [class*="TabBar"], [class*="tabbar"] { display: none !important; }
             main { background: white !important; box-shadow: none !important; border: none !important; min-height: auto !important; height: auto !important; padding: 0 !important; margin: 0 !important; max-width: 100% !important; overflow: visible !important; border-radius: 0 !important; }
