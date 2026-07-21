@@ -1152,13 +1152,26 @@ export function CertificationPage({ student, onBackHome, onLevelUp }: { student:
           </button>
           <button
             type="button"
-            onClick={() => {
-              alert("Nhấn Ctrl+P (hoặc ⌘+P trên Mac) → Chọn 'Save as PDF' → Lưu");
-              setTimeout(() => window.print(), 500);
+            onClick={async () => {
+              const cert = document.querySelector(".cert-print") as HTMLElement;
+              if (!cert) return;
+              try {
+                const html2canvas = (await import("html2canvas")).default;
+                const { jsPDF } = await import("jspdf");
+                const canvas = await html2canvas(cert, { scale: 2, backgroundColor: "#ffffff", useCORS: true });
+                const pdf = new jsPDF({ orientation: "portrait", unit: "mm", format: "a4" });
+                const imgW = 190;
+                const imgH = (canvas.height * imgW) / canvas.width;
+                pdf.addImage(canvas.toDataURL("image/png"), "PNG", 10, 10, imgW, Math.min(imgH, 277));
+                pdf.save(`Chung_chi_${student.name.replace(/\s+/g, "_")}_${selectedExam?.level || "CEFR"}.pdf`);
+              } catch {
+                // Fallback if libraries fail
+                window.print();
+              }
             }}
             className="flex items-center gap-1.5 rounded-xl border border-primary/30 bg-primary/10 px-4 py-2 text-xs font-bold text-primary shadow-sm transition-all active:scale-[0.97]"
           >
-            <Download className="h-4 w-4" /> Lưu PDF
+            <Download className="h-4 w-4" /> Tải PDF
           </button>
         </div>
 
@@ -1274,22 +1287,26 @@ export function CertificationPage({ student, onBackHome, onLevelUp }: { student:
         {/* Print CSS */}
         <style>{`
           @media print {
-            header, footer, nav, .print\\:hidden, [class*="TabBar"], [class*="tabbar"], [class*="SessionHeader"] { display: none !important; }
-            body, main { background: white !important; box-shadow: none !important; border: none !important; min-height: auto !important; padding: 0 !important; margin: 0 !important; max-width: 100% !important; overflow: visible !important; }
+            * { margin: 0 !important; }
+            body { background: white !important; padding: 0 !important; }
+            header, footer, nav, .print\\:hidden, [class*="TabBar"], [class*="tabbar"] { display: none !important; }
+            main { background: white !important; box-shadow: none !important; border: none !important; min-height: auto !important; height: auto !important; padding: 0 !important; margin: 0 !important; max-width: 100% !important; overflow: visible !important; border-radius: 0 !important; }
+            main > * { display: none !important; }
+            main > .cert-print { display: block !important; }
             .cert-print {
-              display: block !important;
               width: 190mm !important;
-              min-height: 267mm !important;
-              height: auto !important;
+              height: 267mm !important;
               max-width: none !important;
               aspect-ratio: auto !important;
               margin: 0 auto !important;
+              padding: 0 !important;
               box-shadow: none !important;
               border-radius: 0 !important;
-              overflow: visible !important;
+              overflow: hidden !important;
               -webkit-print-color-adjust: exact !important;
               print-color-adjust: exact !important;
               page-break-inside: avoid !important;
+              page-break-after: avoid !important;
             }
             @page { size: A4 portrait; margin: 10mm; }
           }
