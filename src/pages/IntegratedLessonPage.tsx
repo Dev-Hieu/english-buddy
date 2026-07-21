@@ -1887,6 +1887,7 @@ export function IntegratedLessonPage({ student, onBackHome }: Props) {
   const [selectedLesson, setSelectedLesson] = useState<IntegratedLesson | null>(null);
   const [stepIndex, setStepIndex] = useState(0);
   const [completed, setCompleted] = useState(false);
+  const [stepScores, setStepScores] = useState<Record<number, number>>({});
 
   // Filter lessons appropriate for student level
   const filteredLessons = useMemo(() => {
@@ -1903,21 +1904,36 @@ export function IntegratedLessonPage({ student, onBackHome }: Props) {
     setSelectedLesson(lesson);
     setStepIndex(0);
     setCompleted(false);
+    setStepScores({});
   }, []);
 
-  const nextStep = useCallback(() => {
+  const nextStep = useCallback((score?: number) => {
     if (!selectedLesson) return;
+    if (score !== undefined) {
+      setStepScores((prev) => ({ ...prev, [stepIndex]: score }));
+    }
     if (stepIndex < selectedLesson.steps.length - 1) {
       setStepIndex((i) => i + 1);
     } else {
       setCompleted(true);
+      // Save result to DB
+      const allScores = { ...stepScores, ...(score !== undefined ? { [stepIndex]: score } : {}) };
+      const scored = Object.values(allScores);
+      const avg = scored.length > 0 ? Math.round(scored.reduce((a, b) => a + b, 0) / scored.length) : 0;
+      import("@/services/api").then(({ apiRequest }) => {
+        apiRequest(`/api/students/${student.id}/word-progress`, {
+          method: "POST",
+          body: { wordId: `il_${selectedLesson.id}`, skill: "reading", correct: avg >= 60, sourceType: "core", sourceRef: selectedLesson.title },
+        }).catch(() => {});
+      });
     }
-  }, [selectedLesson, stepIndex]);
+  }, [selectedLesson, stepIndex, stepScores, student.id]);
 
   const exitLesson = useCallback(() => {
     setSelectedLesson(null);
     setStepIndex(0);
     setCompleted(false);
+    setStepScores({});
   }, []);
 
   // ── Lesson list ──
@@ -1979,20 +1995,40 @@ export function IntegratedLessonPage({ student, onBackHome }: Props) {
     return (
       <main className="mx-auto w-full max-w-md sm:max-w-lg lg:max-w-2xl overflow-x-hidden h-[100dvh] overflow-y-auto bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:h-[calc(100dvh-2rem)] sm:border sm:border-border/40">
         <div className="flex flex-col items-center justify-center gap-6 px-6 py-20 text-center">
-          <div className="flex h-20 w-20 items-center justify-center rounded-full bg-green-100">
-            <CheckCircle2 className="h-10 w-10 text-green-600" />
-          </div>
+          {(() => {
+            const scored = Object.values(stepScores);
+            const avg = scored.length > 0 ? Math.round(scored.reduce((a, b) => a + b, 0) / scored.length) : 100;
+            const grade = avg >= 90 ? "A+" : avg >= 80 ? "A" : avg >= 70 ? "B" : avg >= 60 ? "C" : avg >= 50 ? "D" : "F";
+            const gc = avg >= 80 ? "text-green-600" : avg >= 60 ? "text-amber-600" : "text-red-600";
+            const rc = avg >= 80 ? "border-green-500" : avg >= 60 ? "border-amber-500" : "border-red-500";
+            return (
+              <div className={cn("flex h-24 w-24 items-center justify-center rounded-full border-4", rc)}>
+                <div className="text-center">
+                  <p className={cn("text-2xl font-black", gc)}>{grade}</p>
+                  <p className="text-xs font-bold text-muted-foreground">{avg}%</p>
+                </div>
+              </div>
+            );
+          })()}
           <h2 className="text-2xl font-black">Hoàn thành!</h2>
-          <p className="text-muted-foreground">Bạn đã hoàn thành bài học <span className="font-bold text-foreground">{selectedLesson.title}</span></p>
+          <p className="text-muted-foreground">Bài <span className="font-bold text-foreground">{selectedLesson.title}</span></p>
           <div className="rounded-2xl border border-border/60 bg-muted/50 p-4 w-full max-w-xs">
-            <p className="text-sm font-bold mb-2">Tóm tắt:</p>
-            <ul className="space-y-1 text-sm text-left">
-              {selectedLesson.steps.map((step, i) => (
-                <li key={i} className="flex items-center gap-2">
-                  <CheckCircle2 className="h-4 w-4 text-green-500 shrink-0" />
-                  <span>{step.title}</span>
-                </li>
-              ))}
+            <p className="text-sm font-bold mb-2">Chi tiết:</p>
+            <ul className="space-y-1.5 text-sm text-left">
+              {selectedLesson.steps.map((step, i) => {
+                const s = stepScores[i];
+                return (
+                  <li key={i} className="flex items-center justify-between gap-2">
+                    <div className="flex items-center gap-2 min-w-0">
+                      <CheckCircle2 className="h-4 w-4 text-green-500 shrink-0" />
+                      <span className="truncate">{step.title}</span>
+                    </div>
+                    {s !== undefined && (
+                      <span className={cn("text-xs font-bold", s >= 80 ? "text-green-600" : s >= 60 ? "text-amber-600" : "text-red-600")}>{s}%</span>
+                    )}
+                  </li>
+                );
+              })}
             </ul>
           </div>
           <div className="flex gap-3">
@@ -2029,9 +2065,9 @@ export function IntegratedLessonPage({ student, onBackHome }: Props) {
 
 // ── Step Renderers ──
 
-function StepRenderer({ step, onNext }: { step: LessonStep; onNext: () => void }) {
+function StepRenderer({ step, onNext }: { step: LessonStep; onNext: (score?: number) => void }) {
   switch (step.type) {
-    case "vocab": return <VocabStep step={step} onNext={onNext} />;
+    case "vocab": return <VocabStep step={step} onNext={() => onNext(100)} />;
     case "listen": return <ListenStep step={step} onNext={onNext} />;
     case "read": return <ReadStep step={step} onNext={onNext} />;
     case "grammar": return <GrammarStep step={step} onNext={onNext} />;
@@ -2043,7 +2079,7 @@ function StepRenderer({ step, onNext }: { step: LessonStep; onNext: () => void }
 
 // ── Vocab Step (flashcards) ──
 
-function VocabStep({ step, onNext }: { step: LessonStep; onNext: () => void }) {
+function VocabStep({ step, onNext }: { step: LessonStep; onNext: (score?: number) => void }) {
   const [cardIndex, setCardIndex] = useState(0);
   const [flipped, setFlipped] = useState(false);
   const words = step.words || [];
@@ -2097,7 +2133,7 @@ function VocabStep({ step, onNext }: { step: LessonStep; onNext: () => void }) {
             {flipped ? "Từ tiếp" : "Lật"} <ArrowRight className="h-4 w-4" />
           </Button>
         ) : (
-          <Button onClick={onNext}>
+          <Button onClick={() => onNext(100)}>
             Tiếp theo <ArrowRight className="h-4 w-4" />
           </Button>
         )}
@@ -2108,7 +2144,7 @@ function VocabStep({ step, onNext }: { step: LessonStep; onNext: () => void }) {
 
 // ── Listen Step ──
 
-function ListenStep({ step, onNext }: { step: LessonStep; onNext: () => void }) {
+function ListenStep({ step, onNext }: { step: LessonStep; onNext: (score?: number) => void }) {
   const [answers, setAnswers] = useState<Record<number, number>>({});
   const [checked, setChecked] = useState(false);
   const [showText, setShowText] = useState(false);
@@ -2186,7 +2222,7 @@ function ListenStep({ step, onNext }: { step: LessonStep; onNext: () => void }) 
             ) : (
               <div className="flex items-center gap-3 w-full justify-between">
                 <span className="text-sm font-bold">{score}/{questions.length} đúng</span>
-                <Button onClick={onNext}>Tiếp theo <ArrowRight className="h-4 w-4" /></Button>
+                <Button onClick={() => onNext(questions.length ? Math.round(score / questions.length * 100) : 100)}>Tiếp theo <ArrowRight className="h-4 w-4" /></Button>
               </div>
             )}
           </div>
@@ -2198,7 +2234,7 @@ function ListenStep({ step, onNext }: { step: LessonStep; onNext: () => void }) 
 
 // ── Read Step ──
 
-function ReadStep({ step, onNext }: { step: LessonStep; onNext: () => void }) {
+function ReadStep({ step, onNext }: { step: LessonStep; onNext: (score?: number) => void }) {
   const [answers, setAnswers] = useState<Record<number, number>>({});
   const [checked, setChecked] = useState(false);
   const questions = step.questions || [];
@@ -2256,7 +2292,7 @@ function ReadStep({ step, onNext }: { step: LessonStep; onNext: () => void }) {
         ) : (
           <div className="flex items-center gap-3 w-full justify-between">
             <span className="text-sm font-bold">{score}/{questions.length} đúng</span>
-            <Button onClick={onNext}>Tiếp theo <ArrowRight className="h-4 w-4" /></Button>
+            <Button onClick={() => onNext(questions.length ? Math.round(score / questions.length * 100) : 100)}>Tiếp theo <ArrowRight className="h-4 w-4" /></Button>
           </div>
         )}
       </div>
@@ -2266,7 +2302,7 @@ function ReadStep({ step, onNext }: { step: LessonStep; onNext: () => void }) {
 
 // ── Grammar Step ──
 
-function GrammarStep({ step, onNext }: { step: LessonStep; onNext: () => void }) {
+function GrammarStep({ step, onNext }: { step: LessonStep; onNext: (score?: number) => void }) {
   const [answers, setAnswers] = useState<Record<number, number>>({});
   const [checked, setChecked] = useState(false);
   const exercises = step.exercises || [];
@@ -2326,7 +2362,7 @@ function GrammarStep({ step, onNext }: { step: LessonStep; onNext: () => void })
         ) : (
           <div className="flex items-center gap-3 w-full justify-between">
             <span className="text-sm font-bold">{score}/{exercises.length} đúng</span>
-            <Button onClick={onNext}>Tiếp theo <ArrowRight className="h-4 w-4" /></Button>
+            <Button onClick={() => onNext(exercises.length ? Math.round(score / exercises.length * 100) : 100)}>Tiếp theo <ArrowRight className="h-4 w-4" /></Button>
           </div>
         )}
       </div>
@@ -2336,7 +2372,7 @@ function GrammarStep({ step, onNext }: { step: LessonStep; onNext: () => void })
 
 // ── Speak Step ──
 
-function SpeakStep({ step, onNext }: { step: LessonStep; onNext: () => void }) {
+function SpeakStep({ step, onNext }: { step: LessonStep; onNext: (score?: number) => void }) {
   const [phase, setPhase] = useState<"idle" | "recording" | "scoring" | "result">("idle");
   const [score, setScore] = useState<number | null>(null);
   const phrase = step.phrase || "";
@@ -2431,7 +2467,7 @@ function SpeakStep({ step, onNext }: { step: LessonStep; onNext: () => void }) {
       </div>
 
       <div className="flex justify-end">
-        <Button onClick={onNext}>Tiếp theo <ArrowRight className="h-4 w-4" /></Button>
+        <Button onClick={() => onNext(score ?? undefined)}>Tiếp theo <ArrowRight className="h-4 w-4" /></Button>
       </div>
     </div>
   );
@@ -2439,7 +2475,7 @@ function SpeakStep({ step, onNext }: { step: LessonStep; onNext: () => void }) {
 
 // ── Write Step ──
 
-function WriteStep({ step, onNext }: { step: LessonStep; onNext: () => void }) {
+function WriteStep({ step, onNext }: { step: LessonStep; onNext: (score?: number) => void }) {
   const [text, setText] = useState("");
   const [grading, setGrading] = useState(false);
   const [feedback, setFeedback] = useState<{ score: number; feedback: string; corrections: string[] } | null>(null);
@@ -2492,7 +2528,7 @@ function WriteStep({ step, onNext }: { step: LessonStep; onNext: () => void }) {
             {grading ? <><RotateCcw className="h-4 w-4 animate-spin" /> Đang chấm...</> : <><CheckCircle2 className="h-4 w-4" /> Chấm bài</>}
           </Button>
         ) : (
-          <Button onClick={onNext}>Tiếp theo <ArrowRight className="h-4 w-4" /></Button>
+          <Button onClick={() => onNext(feedback?.score)}>Tiếp theo <ArrowRight className="h-4 w-4" /></Button>
         )}
       </div>
 
