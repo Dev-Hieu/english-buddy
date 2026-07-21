@@ -1229,15 +1229,15 @@ export function CertificationPage({ student, onBackHome, onLevelUp }: { student:
                 </div>
               </div>
 
-              {/* Gold divider */}
-              <div className="mx-auto mb-3 flex items-center gap-2">
+              {/* Gold divider before signature */}
+              <div className="mx-auto mb-2 flex items-center gap-2">
                 <div className="h-px flex-1 bg-gradient-to-r from-transparent to-amber-400" />
                 <div className="h-2 w-2 rotate-45 bg-amber-400" />
                 <div className="h-px flex-1 bg-gradient-to-l from-transparent to-amber-400" />
               </div>
 
               {/* Signature area */}
-              <div className="grid grid-cols-3 gap-2 text-center mb-3 relative z-10">
+              <div className="grid grid-cols-3 gap-2 text-center mb-1 relative z-10">
                 <div>
                   <div className="mx-auto mb-1 h-px w-16 bg-gray-400" />
                   <p className="text-[8px] text-gray-500">Ngày cấp / Date</p>
@@ -1257,7 +1257,7 @@ export function CertificationPage({ student, onBackHome, onLevelUp }: { student:
               </div>
 
               {/* Footer */}
-              <div className="flex items-center justify-between text-[8px] text-gray-400 border-t border-amber-200 pt-2 relative z-10">
+              <div className="mt-auto flex items-center justify-between text-[8px] text-gray-400 border-t border-amber-200 pt-1 relative z-10">
                 <div>
                   <p>Certificate ID: {certId}</p>
                   <p>Verify at: en.vev.vn</p>
