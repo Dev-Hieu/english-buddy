@@ -13,6 +13,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { SessionHeader } from "@/components/layout/SessionHeader";
 import { cn } from "@/components/ui/cn";
+import { apiRequest } from "@/services/api";
 
 interface Props { student: Student; topicId?: string; onBackHome: () => void; }
 
@@ -370,9 +371,9 @@ export function ListeningPage({ student, topicId, onBackHome }: Props) {
 
   return (
     <main className="mx-auto w-full max-w-md sm:max-w-lg lg:max-w-2xl overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
-      {mode === "word-image" && <WordImageGame topicId={topicId} level={level} onClose={() => setMode(null)} />}
-      {mode === "sentence" && <SentenceGame topicId={topicId} level={level} onClose={() => setMode(null)} />}
-      {mode === "stories" && <StoriesView level={level} onClose={() => setMode(null)} />}
+      {mode === "word-image" && <WordImageGame topicId={topicId} level={level} student={student} onClose={() => setMode(null)} />}
+      {mode === "sentence" && <SentenceGame topicId={topicId} level={level} student={student} onClose={() => setMode(null)} />}
+      {mode === "stories" && <StoriesView level={level} student={student} onClose={() => setMode(null)} />}
     </main>
   );
 }
@@ -381,7 +382,7 @@ export function ListeningPage({ student, topicId, onBackHome }: Props) {
 // Mode 1: Nghe từ chọn ảnh
 // ════════════════════════════════════════════
 
-function WordImageGame({ topicId, level, onClose }: { topicId?: string; level: Level; onClose: () => void }) {
+function WordImageGame({ topicId, level, student, onClose }: { topicId?: string; level: Level; student: Student; onClose: () => void }) {
   const categoryId = topicId?.startsWith("topic_") ? TOPIC_TO_CATEGORY[topicId] : topicId;
   const [bankWords, setBankWords] = useState<BankWord[]>([]);
   useEffect(() => {
@@ -433,6 +434,19 @@ function WordImageGame({ topicId, level, onClose }: { topicId?: string; level: L
     if (target) speakText(target.word, target.audioUrl);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [n]);
+
+  const [scoreSaved, setScoreSaved] = useState(false);
+  const gameFinished = n >= targets.length;
+  useEffect(() => {
+    if (!gameFinished || scoreSaved) return;
+    setScoreSaved(true);
+    const pct = Math.round((score / targets.length) * 100);
+    apiRequest(`/api/students/${student.id}/word-progress`, {
+      method: "POST",
+      body: { wordId: `listening_wi_${Date.now()}`, skill: "listening", correct: pct >= 60, sourceType: "game" },
+    }).catch(() => {});
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [gameFinished]);
 
   if (!target) {
     return (
@@ -515,7 +529,7 @@ function buildSentenceQuestion(target: VocabularyWord, pool: VocabularyWord[]): 
   };
 }
 
-function SentenceGame({ topicId, level, onClose }: { topicId?: string; level: Level; onClose: () => void }) {
+function SentenceGame({ topicId, level, student, onClose }: { topicId?: string; level: Level; student: Student; onClose: () => void }) {
   const categoryId = topicId?.startsWith("topic_") ? TOPIC_TO_CATEGORY[topicId] : topicId;
   const [bankWords, setBankWords] = useState<BankWord[]>([]);
   useEffect(() => {
@@ -563,6 +577,19 @@ function SentenceGame({ topicId, level, onClose }: { topicId?: string; level: Le
     if (q) speakText(q.sentence);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [n]);
+
+  const [scoreSaved, setScoreSaved] = useState(false);
+  const sgFinished = n >= questions.length;
+  useEffect(() => {
+    if (!sgFinished || scoreSaved) return;
+    setScoreSaved(true);
+    const pct = Math.round((score / questions.length) * 100);
+    apiRequest(`/api/students/${student.id}/word-progress`, {
+      method: "POST",
+      body: { wordId: `listening_sg_${Date.now()}`, skill: "listening", correct: pct >= 60, sourceType: "game" },
+    }).catch(() => {});
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [sgFinished]);
 
   if (!q) {
     return (
@@ -623,11 +650,12 @@ function SentenceGame({ topicId, level, onClose }: { topicId?: string; level: Le
 
 type StoryScreen = "list" | "listening" | "quiz" | "result";
 
-function StoriesView({ level, onClose }: { level: Level; onClose: () => void }) {
+function StoriesView({ level, student, onClose }: { level: Level; student: Student; onClose: () => void }) {
   const [screen, setScreen] = useState<StoryScreen>("list");
   const [activeStory, setActiveStory] = useState<StoryItem | null>(null);
   const [answers, setAnswers] = useState<(number | null)[]>([]);
   const [submitted, setSubmitted] = useState(false);
+  const [scoreSavedForStory, setSavedForStory] = useState<string | null>(null);
 
   const filtered = useMemo(() => {
     const result = LISTENING_STORIES.filter((s) => matchesLevel(s.level, level));
@@ -644,6 +672,7 @@ function StoriesView({ level, onClose }: { level: Level; onClose: () => void }) 
     setScreen("listening");
     setAnswers(s.questions.map(() => null));
     setSubmitted(false);
+    setSavedForStory(null);
   }
 
   function selectAnswer(qi: number, oi: number) {
@@ -651,7 +680,22 @@ function StoriesView({ level, onClose }: { level: Level; onClose: () => void }) 
     setAnswers((prev) => prev.map((a, i) => (i === qi ? oi : a)));
   }
 
-  function submitQuiz() { setSubmitted(true); setScreen("result"); }
+  function submitQuiz() {
+    setSubmitted(true);
+    setScreen("result");
+  }
+
+  // Save score once when result screen appears for the current story
+  useEffect(() => {
+    if (screen !== "result" || !activeStory || scoreSavedForStory === activeStory.id) return;
+    const pct = Math.round((score / activeStory.questions.length) * 100);
+    setSavedForStory(activeStory.id);
+    apiRequest(`/api/students/${student.id}/word-progress`, {
+      method: "POST",
+      body: { wordId: `listening_story_${activeStory.id}`, skill: "listening", correct: pct >= 60, sourceType: "quiz" },
+    }).catch(() => {});
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [screen, activeStory?.id]);
 
   function backToList() { setScreen("list"); setActiveStory(null); }
 
@@ -767,21 +811,21 @@ function StoriesView({ level, onClose }: { level: Level; onClose: () => void }) 
   }
 
   // ─── Result Screen ───
+  const storyPct = Math.round((score / activeStory.questions.length) * 100);
+  const storyGrade = gradeLabel(storyPct);
   return (
     <>
       <SessionHeader title={activeStory.title} onClose={backToList} />
       <Card className="animate-pop">
         <CardContent className="flex flex-col items-center gap-4 p-8 text-center">
-          <span className={cn("flex h-16 w-16 items-center justify-center rounded-full", score >= activeStory.questions.length * 0.8 ? "bg-success/20" : "bg-orange-100")}>
-            {score >= activeStory.questions.length * 0.8
-              ? <CheckCircle2 className="h-8 w-8 text-success" />
-              : <RotateCcw className="h-8 w-8 text-orange-500" />}
-          </span>
+          <div className={cn("flex h-20 w-20 items-center justify-center rounded-full border-4", storyPct >= 80 ? "border-green-500 bg-green-50 text-green-600" : storyPct >= 60 ? "border-amber-500 bg-amber-50 text-amber-600" : "border-red-500 bg-red-50 text-red-600")}>
+            <span className="text-2xl font-black">{storyGrade}</span>
+          </div>
           <p className="text-3xl font-black text-primary">{score}/{activeStory.questions.length}</p>
-          <p className={cn("text-sm font-extrabold", score >= activeStory.questions.length * 0.8 ? "text-success" : "text-orange-500")}>
-            {score >= activeStory.questions.length * 0.8 ? "Xuất sắc!" : "Cố gắng hơn nhé!"}
+          <p className={cn("text-sm font-extrabold", storyPct >= 80 ? "text-green-600" : storyPct >= 60 ? "text-amber-600" : "text-red-600")}>
+            {storyPct >= 80 ? "Xuất sắc!" : storyPct >= 60 ? "Khá tốt!" : "Cố gắng hơn nhé!"}
           </p>
-          <p className="text-xs text-muted-foreground">Đúng {Math.round((score / activeStory.questions.length) * 100)}% câu hỏi</p>
+          <p className="text-xs text-muted-foreground">Đúng {storyPct}% câu hỏi</p>
         </CardContent>
       </Card>
 
@@ -819,26 +863,39 @@ function StoriesView({ level, onClose }: { level: Level; onClose: () => void }) 
 }
 
 // ════════════════════════════════════════════
+// Shared helpers
+// ════════════════════════════════════════════
+
+function gradeLabel(pct: number): string {
+  if (pct >= 90) return "A+";
+  if (pct >= 80) return "A";
+  if (pct >= 70) return "B";
+  if (pct >= 60) return "C";
+  if (pct >= 50) return "D";
+  return "F";
+}
+
+// ════════════════════════════════════════════
 // Shared: Score card
 // ════════════════════════════════════════════
 
 function ScoreCard({ score, total, onClose }: { score: number; total: number; onClose: () => void }) {
   const pct = Math.round((score / total) * 100);
-  const great = pct >= 80;
+  const grade = gradeLabel(pct);
+  const colorClass = pct >= 80 ? "border-green-500 bg-green-50 text-green-600" : pct >= 60 ? "border-amber-500 bg-amber-50 text-amber-600" : "border-red-500 bg-red-50 text-red-600";
+  const textClass = pct >= 80 ? "text-green-600" : pct >= 60 ? "text-amber-600" : "text-red-600";
 
   return (
     <Card className="animate-pop">
       <CardContent className="flex flex-col items-center gap-4 p-8 text-center">
-        <span className={cn("flex h-16 w-16 items-center justify-center rounded-full", great ? "bg-success/20" : "bg-orange-100")}>
-          {great
-            ? <CheckCircle2 className="h-8 w-8 text-success" />
-            : <RotateCcw className="h-8 w-8 text-orange-500" />}
-        </span>
+        <div className={cn("flex h-20 w-20 items-center justify-center rounded-full border-4", colorClass)}>
+          <span className="text-2xl font-black">{grade}</span>
+        </div>
         <p className="text-3xl font-black text-primary">{score}/{total}</p>
-        <p className={cn("text-sm font-extrabold", great ? "text-success" : "text-orange-500")}>
-          {great ? "Xuất sắc!" : "Cố gắng hơn nhé!"}
+        <p className={cn("text-sm font-extrabold", textClass)}>
+          {pct >= 80 ? "Xuất sắc!" : pct >= 60 ? "Khá tốt!" : "Cố gắng hơn nhé!"}
         </p>
-        <p className="text-xs text-muted-foreground">Đúng {pct}% câu hỏi</p>
+        <p className="text-xs text-muted-foreground">Hoàn thành: {score}/{total} đúng · {pct}%</p>
         <Button type="button" size="lg" className="w-full" onClick={onClose}>
           <RotateCcw className="h-4 w-4" /> Chơi lại
         </Button>

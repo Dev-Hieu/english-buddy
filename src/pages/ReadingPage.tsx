@@ -6,6 +6,7 @@ import { SessionHeader } from "@/components/layout/SessionHeader";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/components/ui/cn";
 import { speakText } from "@/services/speechService";
+import { apiRequest } from "@/services/api";
 
 interface Props { student: Student; topicId?: string; onBackHome: () => void; }
 
@@ -670,6 +671,7 @@ export function ReadingPage({ student, topicId, onBackHome }: Props) {
 
   const [answers, setAnswers] = useState<(number | null)[]>([]);
   const [submitted, setSubmitted] = useState(false);
+  const [scoreSavedFor, setScoreSavedFor] = useState<string | null>(null);
 
   const filtered = useMemo(() => {
     let result = STORIES.filter((s) => s.level === level);
@@ -687,12 +689,27 @@ export function ReadingPage({ student, topicId, onBackHome }: Props) {
   }, [answers, activeStory]);
 
   /* helpers */
+  // Save score once when result appears
+  useEffect(() => {
+    if (screen !== "result" || !activeStory || scoreSavedFor === activeStory.id) return;
+    setScoreSavedFor(activeStory.id);
+    const total = activeStory.questions.length;
+    const correct = answers.reduce<number>((acc, a, i) => acc + (a === activeStory.questions[i].answer ? 1 : 0), 0);
+    const pct = Math.round((correct / total) * 100);
+    apiRequest(`/api/students/${student.id}/word-progress`, {
+      method: "POST",
+      body: { wordId: `reading_${activeStory.id}`, skill: "reading", correct: pct >= 60, sourceType: "quiz" },
+    }).catch(() => {});
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [screen, activeStory?.id]);
+
   function openStory(s: Story) {
     setActiveStory(s);
     setScreen("reading");
     setTappedWord(null);
     setAnswers(s.questions.map(() => null));
     setSubmitted(false);
+    setScoreSavedFor(null);
   }
 
   function goToQuiz() { setScreen("quiz"); setTappedWord(null); }
@@ -912,6 +929,9 @@ export function ReadingPage({ student, topicId, onBackHome }: Props) {
   /* ─── Result Screen ─── */
   const total = activeStory.questions.length;
   const pct = Math.round((score / total) * 100);
+  const grade = pct >= 90 ? "A+" : pct >= 80 ? "A" : pct >= 70 ? "B" : pct >= 60 ? "C" : pct >= 50 ? "D" : "F";
+  const gradeColor = pct >= 80 ? "border-green-500 bg-green-50 text-green-600" : pct >= 60 ? "border-amber-500 bg-amber-50 text-amber-600" : "border-red-500 bg-red-50 text-red-600";
+  const gradeTextColor = pct >= 80 ? "text-green-600" : pct >= 60 ? "text-amber-600" : "text-red-600";
 
   return (
     <main className="mx-auto w-full max-w-md sm:max-w-lg lg:max-w-2xl overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
@@ -919,16 +939,14 @@ export function ReadingPage({ student, topicId, onBackHome }: Props) {
 
       <Card>
         <CardContent className="p-6 text-center space-y-3">
-          <span className={cn(
-            "mx-auto flex h-16 w-16 items-center justify-center rounded-2xl",
-            pct >= 75 ? "bg-green-100 text-green-600" : pct >= 50 ? "bg-yellow-100 text-yellow-600" : "bg-red-100 text-red-600",
-          )}>
-            {pct >= 75 ? <CheckCircle className="h-8 w-8" /> : <BookOpen className="h-8 w-8" />}
-          </span>
+          <div className={cn("mx-auto flex h-20 w-20 items-center justify-center rounded-full border-4", gradeColor)}>
+            <span className="text-2xl font-black">{grade}</span>
+          </div>
           <h2 className="text-2xl font-black">{score}/{total}</h2>
-          <p className="text-sm font-bold text-muted-foreground">
-            {pct >= 75 ? "Xuất sắc! Bạn hiểu bài rất tốt!" : pct >= 50 ? "Khá tốt! Hãy cố gắng hơn nhé!" : "Hãy đọc lại bài và thử lại nhé!"}
+          <p className={cn("text-sm font-bold", gradeTextColor)}>
+            {pct >= 80 ? "Xuất sắc! Bạn hiểu bài rất tốt!" : pct >= 60 ? "Khá tốt! Hãy cố gắng hơn nhé!" : "Hãy đọc lại bài và thử lại nhé!"}
           </p>
+          <p className="text-xs text-muted-foreground">Đúng {score}/{total} câu · {pct}%</p>
         </CardContent>
       </Card>
 
