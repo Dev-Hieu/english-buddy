@@ -1027,7 +1027,7 @@ export function createApp() {
   // Kho CHỜ THI (đã báo thuộc, chưa thi). Đủ 10 -> client nhắc thi.
   app.get("/api/students/:id/pending", requireAuth, (req, res) => {
     if (!canAccessStudent(req, res, req.params.id)) return;
-    const rows = db.prepare("SELECT wordId FROM progress WHERE studentId=? AND status='pending_test' AND wordId IN (SELECT id FROM vocabulary) ORDER BY lastReviewedAt").all(req.params.id) as any[];
+    const rows = db.prepare("SELECT wordId FROM progress WHERE studentId=? AND status='pending_test' AND (wordId IN (SELECT id FROM vocabulary) OR wordId IN (SELECT id FROM word_bank)) ORDER BY lastReviewedAt").all(req.params.id) as any[];
     res.json({ words: rows.map((r) => r.wordId), count: rows.length });
   });
 
@@ -1055,12 +1055,21 @@ export function createApp() {
     const mode = req.body?.mode === "review" ? "review" : "new";
     const now = Date.now();
     const picked = mode === "review"
-      ? db.prepare("SELECT wordId FROM progress WHERE studentId=? AND status='scored' AND nextReviewAt<=? AND wordId IN (SELECT id FROM vocabulary) ORDER BY nextReviewAt LIMIT 10").all(studentId, now) as any[]
-      : db.prepare("SELECT wordId FROM progress WHERE studentId=? AND status='pending_test' AND wordId IN (SELECT id FROM vocabulary) ORDER BY lastReviewedAt LIMIT 10").all(studentId) as any[];
+      ? db.prepare("SELECT wordId FROM progress WHERE studentId=? AND status='scored' AND nextReviewAt<=? AND (wordId IN (SELECT id FROM vocabulary) OR wordId IN (SELECT id FROM word_bank)) ORDER BY nextReviewAt LIMIT 10").all(studentId, now) as any[]
+      : db.prepare("SELECT wordId FROM progress WHERE studentId=? AND status='pending_test' AND (wordId IN (SELECT id FROM vocabulary) OR wordId IN (SELECT id FROM word_bank)) ORDER BY lastReviewedAt LIMIT 10").all(studentId) as any[];
     if (!picked.length) return res.status(400).json({ error: "chưa có từ để thi" });
     const ids = picked.map((r) => r.wordId);
-    const rows = db.prepare(`SELECT * FROM vocabulary WHERE id IN (${ids.map(() => "?").join(",")})`).all(...ids) as any[];
-    const allWords = (db.prepare("SELECT word FROM vocabulary").all() as any[]).map((r) => r.word);
+    // Try word_bank first, fall back to vocabulary
+    let rows = db.prepare(`SELECT id, word, phonetic, meaning_vi, image AS imageUrl, '' AS audioUrl FROM word_bank WHERE id IN (${ids.map(() => "?").join(",")})`).all(...ids) as any[];
+    if (rows.length < ids.length) {
+      const bankIds = new Set(rows.map((r: any) => r.id));
+      const missingIds = ids.filter((id) => !bankIds.has(id));
+      if (missingIds.length) {
+        const fallback = db.prepare(`SELECT * FROM vocabulary WHERE id IN (${missingIds.map(() => "?").join(",")})`).all(...missingIds) as any[];
+        rows = [...rows, ...fallback];
+      }
+    }
+    const allWords = (db.prepare("SELECT word FROM word_bank UNION SELECT word FROM vocabulary").all() as any[]).map((r) => r.word);
     const skills = skillsForLevel(student.level);
     const needOptions = skills.some((s) => s === "listen_word" || s === "image_word");
     const items = rows.map((w) => ({
