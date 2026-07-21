@@ -1263,16 +1263,23 @@ export function CertificationPage({ student, onBackHome, onLevelUp }: { student:
         <style>{`
           @media print {
             body * { visibility: hidden !important; }
-            .cert-print, .cert-print * { visibility: visible !important; }
+            .cert-print, .cert-print * { visibility: visible !important; color-adjust: exact !important; -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
             .cert-print {
-              position: fixed !important;
-              left: 50% !important;
-              top: 50% !important;
-              transform: translate(-50%, -50%) !important;
-              width: 600px !important;
+              position: absolute !important;
+              left: 0 !important;
+              top: 0 !important;
+              transform: none !important;
+              width: 100% !important;
+              max-width: 100% !important;
+              height: auto !important;
+              aspect-ratio: auto !important;
               box-shadow: none !important;
               border-radius: 0 !important;
+              margin: 0 !important;
+              padding: 10mm !important;
+              page-break-inside: avoid !important;
             }
+            @page { size: A4 portrait; margin: 0; }
           }
         `}</style>
       </main>
