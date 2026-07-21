@@ -1163,15 +1163,15 @@ export function CertificationPage({ student, onBackHome, onLevelUp }: { student:
         </div>
 
         {/* Certificate — International standard design */}
-        <div className="cert-print mx-auto max-w-lg bg-white shadow-xl dark:bg-white overflow-hidden" style={{ aspectRatio: "1/1.414" }}>
+        <div className="cert-print mx-auto max-w-lg bg-white shadow-xl dark:bg-white" style={{ aspectRatio: "1/1.414" }}>
           {/* Outer gold border */}
           <div className="h-full border-[6px] border-amber-500 p-1">
             {/* Inner ornamental border */}
             <div className="relative h-full border-2 border-amber-300 px-6 py-5 sm:px-8 sm:py-7 flex flex-col">
 
               {/* Watermark background */}
-              <div className="absolute inset-0 flex items-center justify-center opacity-[0.03] pointer-events-none">
-                <Award className="h-64 w-64 text-amber-800" />
+              <div className="absolute inset-0 flex items-center justify-center opacity-[0.03] pointer-events-none" style={{ top: "30%" }}>
+                <Award className="h-48 w-48 text-amber-800" />
               </div>
 
               {/* Corner ornaments */}
@@ -1257,7 +1257,7 @@ export function CertificationPage({ student, onBackHome, onLevelUp }: { student:
               </div>
 
               {/* Footer */}
-              <div className="mt-auto flex items-center justify-between text-[8px] text-gray-400 border-t border-amber-200 pt-1 relative z-10">
+              <div className="mt-auto shrink-0 flex items-center justify-between text-[8px] text-gray-400 border-t border-amber-200 pt-1 relative z-10">
                 <div>
                   <p>Certificate ID: {certId}</p>
                   <p>Verify at: en.vev.vn</p>
