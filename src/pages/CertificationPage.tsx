@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef, useCallback } from "react";
-import { Award, CheckCircle, XCircle, Clock, Lock, ChevronRight, Printer, Volume2, ChevronLeft, ChevronDown } from "lucide-react";
+import { Award, CheckCircle, XCircle, Clock, Lock, ChevronRight, Printer, Volume2, ChevronLeft, ChevronDown, Download } from "lucide-react";
 import type { Student } from "@/types";
 import { SessionHeader } from "@/components/layout/SessionHeader";
 import { speakText } from "@/services/speechService";
@@ -1139,14 +1139,61 @@ export function CertificationPage({ student, onBackHome, onLevelUp }: { student:
       <main className="mx-auto w-full max-w-md sm:max-w-lg lg:max-w-2xl overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
         <SessionHeader title="Chứng chỉ" icon={<Award className="h-4 w-4" />} iconBg="bg-red-500" onClose={() => setPhase("result")} />
 
-        {/* Print button */}
-        <div className="mb-4 flex justify-end print:hidden">
+        {/* Print + Download buttons */}
+        <div className="mb-4 flex justify-end gap-2 print:hidden">
           <button
             type="button"
-            onClick={() => window.print()}
+            onClick={() => {
+              const cert = document.querySelector(".cert-print") as HTMLElement;
+              if (!cert) return;
+              const w = window.open("", "_blank");
+              if (!w) return;
+              w.document.write(`<!DOCTYPE html><html><head><title>Chứng chỉ - ${student.name}</title><style>
+                * { margin: 0; padding: 0; box-sizing: border-box; }
+                body { display: flex; justify-content: center; align-items: flex-start; min-height: 100vh; background: white; padding: 0; }
+                .cert-container { width: 190mm; margin: 5mm auto; }
+                @page { size: A4 portrait; margin: 10mm; }
+                @media print { body { padding: 0; } .cert-container { width: 190mm; margin: 0 auto; } .no-print { display: none !important; } }
+              </style></head><body>
+                <div class="no-print" style="position:fixed;top:10px;right:10px;z-index:999">
+                  <button onclick="window.print()" style="padding:8px 16px;background:#0ea5e9;color:white;border:none;border-radius:8px;cursor:pointer;font-weight:bold">In chứng chỉ</button>
+                </div>
+                <div class="cert-container">${cert.outerHTML}</div>
+              </body></html>`);
+              w.document.close();
+            }}
             className="flex items-center gap-1.5 rounded-xl bg-primary px-4 py-2 text-xs font-bold text-white shadow-md transition-all active:scale-[0.97]"
           >
             <Printer className="h-4 w-4" /> In chứng chỉ
+          </button>
+          <button
+            type="button"
+            onClick={() => {
+              const cert = document.querySelector(".cert-print") as HTMLElement;
+              if (!cert) return;
+              const w = window.open("", "_blank");
+              if (!w) return;
+              w.document.write(`<!DOCTYPE html><html><head><title>Chứng chỉ - ${student.name}</title><style>
+                * { margin: 0; padding: 0; box-sizing: border-box; }
+                body { display: flex; flex-direction: column; align-items: center; min-height: 100vh; background: white; padding: 20px; font-family: sans-serif; }
+                .cert-container { width: 190mm; }
+                .actions { margin-bottom: 15px; display: flex; gap: 10px; }
+                .actions button { padding: 8px 16px; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; font-size: 14px; }
+                .btn-print { background: #0ea5e9; color: white; }
+                .btn-save { background: #10b981; color: white; }
+                @media print { .actions { display: none !important; } .cert-container { width: 190mm; margin: 0 auto; } @page { size: A4 portrait; margin: 10mm; } }
+              </style></head><body>
+                <div class="actions">
+                  <button class="btn-print" onclick="window.print()">🖨️ In chứng chỉ</button>
+                  <button class="btn-save" onclick="alert('Nhấn Ctrl+P → chọn Save as PDF')">📄 Lưu PDF (Ctrl+P)</button>
+                </div>
+                <div class="cert-container">${cert.outerHTML}</div>
+              </body></html>`);
+              w.document.close();
+            }}
+            className="flex items-center gap-1.5 rounded-xl border border-primary/30 bg-primary/10 px-4 py-2 text-xs font-bold text-primary shadow-sm transition-all active:scale-[0.97]"
+          >
+            <Download className="h-4 w-4" /> Tải xuống
           </button>
         </div>
 
@@ -1262,16 +1309,17 @@ export function CertificationPage({ student, onBackHome, onLevelUp }: { student:
         {/* Print CSS */}
         <style>{`
           @media print {
-            /* Hide everything except the certificate */
-            header, footer, nav, .print\\:hidden, [class*="TabBar"], [class*="tabbar"] { display: none !important; }
-            main { background: white !important; box-shadow: none !important; border: none !important; min-height: auto !important; padding: 0 !important; margin: 0 !important; max-width: 100% !important; }
+            header, footer, nav, .print\\:hidden, [class*="TabBar"], [class*="tabbar"], [class*="SessionHeader"] { display: none !important; }
+            body, main { background: white !important; box-shadow: none !important; border: none !important; min-height: auto !important; padding: 0 !important; margin: 0 !important; max-width: 100% !important; overflow: visible !important; }
             .cert-print {
-              width: 100% !important;
-              max-width: 180mm !important;
-              margin: 10mm auto !important;
+              display: block !important;
+              width: 190mm !important;
+              height: 268mm !important;
+              max-width: none !important;
+              aspect-ratio: auto !important;
+              margin: 0 auto !important;
               box-shadow: none !important;
               border-radius: 0 !important;
-              aspect-ratio: auto !important;
               -webkit-print-color-adjust: exact !important;
               print-color-adjust: exact !important;
             }
