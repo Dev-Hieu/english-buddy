@@ -214,7 +214,7 @@ export function ReviewPage({ student, onBackHome }: ReviewPageProps) {
     return (
       <>
         {masteryDashboard}
-        {hasWeak && tabBar}
+        {tabBar}
         <DeckRunner
           title="Cần ôn"
           studentId={student.id}
