@@ -1262,24 +1262,20 @@ export function CertificationPage({ student, onBackHome, onLevelUp }: { student:
         {/* Print CSS */}
         <style>{`
           @media print {
-            body * { visibility: hidden !important; }
-            .cert-print, .cert-print * { visibility: visible !important; color-adjust: exact !important; -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+            /* Hide everything except the certificate */
+            header, footer, nav, .print\\:hidden, [class*="TabBar"], [class*="tabbar"] { display: none !important; }
+            main { background: white !important; box-shadow: none !important; border: none !important; min-height: auto !important; padding: 0 !important; margin: 0 !important; max-width: 100% !important; }
             .cert-print {
-              position: absolute !important;
-              left: 0 !important;
-              top: 0 !important;
-              transform: none !important;
               width: 100% !important;
-              max-width: 100% !important;
-              height: auto !important;
-              aspect-ratio: auto !important;
+              max-width: 180mm !important;
+              margin: 10mm auto !important;
               box-shadow: none !important;
               border-radius: 0 !important;
-              margin: 0 !important;
-              padding: 10mm !important;
-              page-break-inside: avoid !important;
+              aspect-ratio: auto !important;
+              -webkit-print-color-adjust: exact !important;
+              print-color-adjust: exact !important;
             }
-            @page { size: A4 portrait; margin: 0; }
+            @page { size: A4 portrait; margin: 10mm; }
           }
         `}</style>
       </main>
