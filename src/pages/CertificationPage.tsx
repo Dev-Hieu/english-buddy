@@ -1137,7 +1137,9 @@ export function CertificationPage({ student, onBackHome, onLevelUp }: { student:
     const dateStr = new Date().toLocaleDateString("vi-VN", { year: "numeric", month: "long", day: "numeric" });
     return (
       <main className="mx-auto w-full max-w-md sm:max-w-lg lg:max-w-2xl overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
-        <SessionHeader title="Chứng chỉ" icon={<Award className="h-4 w-4" />} iconBg="bg-red-500" onClose={() => setPhase("result")} />
+        <div className="print:hidden">
+          <SessionHeader title="Chứng chỉ" icon={<Award className="h-4 w-4" />} iconBg="bg-red-500" onClose={() => setPhase("result")} />
+        </div>
 
         {/* Print + Download buttons */}
         <div className="mb-4 flex justify-end gap-2 print:hidden">
@@ -1277,14 +1279,17 @@ export function CertificationPage({ student, onBackHome, onLevelUp }: { student:
             .cert-print {
               display: block !important;
               width: 190mm !important;
-              height: 268mm !important;
+              min-height: 267mm !important;
+              height: auto !important;
               max-width: none !important;
               aspect-ratio: auto !important;
               margin: 0 auto !important;
               box-shadow: none !important;
               border-radius: 0 !important;
+              overflow: visible !important;
               -webkit-print-color-adjust: exact !important;
               print-color-adjust: exact !important;
+              page-break-inside: avoid !important;
             }
             @page { size: A4 portrait; margin: 10mm; }
           }
