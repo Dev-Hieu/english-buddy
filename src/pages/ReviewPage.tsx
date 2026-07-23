@@ -102,8 +102,23 @@ export function ReviewPage({ student, onBackHome }: ReviewPageProps) {
           .filter((p) => p.wrongCount > 0 || p.mastery < 3)
           .filter((p) => p.status !== "new")
           .sort((a, b) => b.wrongCount - a.wrongCount || a.mastery - b.mastery)
-          .map((p) => ({ progress: p, vocab: byId.get(p.wordId)! }))
-          .filter((w) => w.vocab);
+          .map((p) => {
+            let vocab = byId.get(p.wordId);
+            if (!vocab) {
+              // Extract word text from ID: "word_a2f_left" → "left", "word_cooking" → "cooking"
+              const parts = p.wordId.split("_");
+              const wordText = parts[parts.length - 1];
+              // Try to find by word text in bank
+              for (const [, v] of byId) {
+                if (v.word.toLowerCase() === wordText.toLowerCase()) { vocab = v; break; }
+              }
+              // Still not found — create placeholder
+              if (!vocab) {
+                vocab = { id: p.wordId, word: wordText, phonetic: "", meaning_vi: "", meaning_en: "", topicIds: [], level: "a1", imageUrl: "", source: "seed" as const, createdAt: 0 };
+              }
+            }
+            return { progress: p, vocab };
+          });
         setWeakWords(weak);
       })
       .catch(() => alive && setWeakWords([]));
