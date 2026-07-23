@@ -57,8 +57,14 @@ export function SmartReview({ studentId, onNavigate }: SmartReviewProps) {
           .filter((p) => p.status !== "new")
           .sort((a, b) => b.wrongCount - a.wrongCount || a.mastery - b.mastery)
           .slice(0, 5)
-          .map((p) => ({ progress: p, vocab: vocabMap.get(p.wordId)! }))
-          .filter((w) => w.vocab);
+          .map((p) => {
+            let vocab = vocabMap.get(p.wordId);
+            if (!vocab) {
+              const wordText = p.wordId.split("_").pop() || p.wordId;
+              vocab = { id: p.wordId, word: wordText, phonetic: "", meaning_vi: "", meaning_en: "", topicIds: [], level: "a1" as any, imageUrl: "", source: "seed" as const, createdAt: 0 };
+            }
+            return { progress: p, vocab };
+          });
         setWeakWords(weak);
         setLoading(false);
       })

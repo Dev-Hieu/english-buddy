@@ -221,7 +221,11 @@ function ResultView({ data, answers, bankWords, onDone }: { data: { results: Ski
   const wordText = (id: string) => {
     const fromBank = bankWords?.find((bw) => bw.id === id);
     if (fromBank) return fromBank.word;
-    return SEED_VOCABULARY.find((w) => w.id === id)?.word ?? id;
+    const fromSeed = SEED_VOCABULARY.find((w) => w.id === id);
+    if (fromSeed) return fromSeed.word;
+    // Extract word from ID: "a2_weather_and_seasons_windy" → "windy", "word_cooking" → "cooking"
+    const parts = id.split("_");
+    return parts[parts.length - 1];
   };
   const totalSkills = data.results.reduce((s, r) => s + r.passed.length + r.lost.length, 0);
   const passedSkills = data.results.reduce((s, r) => s + r.passed.length, 0);

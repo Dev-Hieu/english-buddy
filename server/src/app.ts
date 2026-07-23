@@ -1080,6 +1080,11 @@ export function createApp() {
         else {
           const fromVocab = db.prepare("SELECT id, word, phonetic, meaning_vi, imageUrl, audioUrl FROM vocabulary WHERE LOWER(word) = LOWER(?) LIMIT 1").get(word) as any;
           if (fromVocab) { rows.push({ ...fromVocab, id }); foundIds.add(id); }
+          else {
+            // Last resort: create placeholder from extracted word
+            rows.push({ id, word, phonetic: "", meaning_vi: "", imageUrl: "", audioUrl: "" });
+            foundIds.add(id);
+          }
         }
       }
     }

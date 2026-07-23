@@ -240,7 +240,8 @@ export function DashboardPage({ students, onBackHome }: DashboardPageProps) {
                           <div className="flex flex-wrap gap-1">
                             {weakWords.map((w) => {
                               const word = wordById.get(w.wordId);
-                              return <span key={w.wordId} className="rounded-lg bg-red-100 px-2 py-0.5 text-[10px] font-bold text-red-700">{word?.word ?? w.wordId} ({w.wrongCount})</span>;
+                              const displayWord = word?.word ?? w.wordId.split("_").pop() ?? w.wordId;
+                              return <span key={w.wordId} className="rounded-lg bg-red-100 px-2 py-0.5 text-[10px] font-bold text-red-700">{displayWord} ({w.wrongCount})</span>;
                             })}
                           </div>
                         </div>
