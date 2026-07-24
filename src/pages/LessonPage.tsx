@@ -172,10 +172,24 @@ export function LessonPage({
   }
 
   const isLast = currentIndex === words.length - 1;
-  // Use seed topic name if available, otherwise fall back to categoryId
+  // Use seed topic name if available, otherwise format categoryId nicely
+  const CATEGORY_NAMES: Record<string, string> = {
+    animals_and_nature: "🐾 Animals · Động vật", clothes_and_accessories: "👔 Clothes · Quần áo",
+    colours_and_shapes: "🎨 Colours · Màu sắc", communication_and_technology: "📱 Technology · Công nghệ",
+    daily_life: "☀️ Daily Life · Sinh hoạt", education: "📚 Education · Giáo dục",
+    entertainment_and_media: "🎬 Entertainment · Giải trí", environment: "🌍 Environment · Môi trường",
+    family_and_friends: "👨‍👩‍👧 Family · Gia đình", feelings_and_opinions: "😊 Feelings · Cảm xúc",
+    food_and_drink: "🍽️ Food · Đồ ăn", health_and_body: "🏥 Health · Sức khỏe",
+    hobbies_and_leisure: "⚽ Hobbies · Sở thích", house_and_home: "🏠 Home · Nhà ở",
+    measurements_and_numbers: "🔢 Numbers · Số", places: "🏛️ Places · Địa điểm",
+    services: "🏪 Services · Dịch vụ", shopping: "🛒 Shopping · Mua sắm",
+    society_and_community: "🤝 Society · Xã hội", sport: "🏆 Sport · Thể thao",
+    science_and_research: "🔬 Science · Khoa học", travel_and_transport: "✈️ Travel · Du lịch",
+    weather_and_seasons: "🌤️ Weather · Thời tiết", work_and_jobs: "💼 Work · Công việc",
+  };
   const sessionTitle = topic
     ? `${topicEmoji(topic.id)} ${topic.name} · ${topic.name_vi}`
-    : categoryId;
+    : CATEGORY_NAMES[categoryId] || categoryId.replace(/_/g, " ");
 
   return (
     <main className="mx-auto w-full max-w-md sm:max-w-lg lg:max-w-2xl overflow-x-hidden min-h-[100dvh] bg-card/80 backdrop-blur-sm shadow-soft sm:my-4 sm:rounded-3xl sm:min-h-0 sm:border sm:border-border/40 px-4 pt-4 pb-6">
